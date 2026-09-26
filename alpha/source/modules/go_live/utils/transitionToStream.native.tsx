@@ -1,14 +1,14 @@
-// Module ID: 5031
-// Function ID: 5032
+// Module ID: 5038
+// Function ID: 5039
 // Name: transitionToStream
-// Dependencies: [2044, 4796, 5032, 5036, 2]
+// Dependencies: [2045, 4800, 5039, 5043, 2]
 // Exports: default
 
-// Module 5031 (transitionToStream)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5036 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 5038 (transitionToStream)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5043 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 const size = fn(2);

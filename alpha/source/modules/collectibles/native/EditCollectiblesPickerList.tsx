@@ -1,11 +1,11 @@
-// Module ID: 12732
-// Function ID: 12733
+// Module ID: 12749
+// Function ID: 12750
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4829, 12727, 4825, 12, 8171, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 12744, 4832, 12, 8179, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 12732 (EditCollectiblesPickerList)
-import Text_Text from "Text/Text" /* 4825 */;
+// Module 12749 (EditCollectiblesPickerList)
+import Text_Text from "Text/Text" /* 4832 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,8 +13,8 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
-let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" }, header: { paddingHorizontal: fn(12727).GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 } };
+const createStyles = fn(4836);
+let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" }, header: { paddingHorizontal: fn(12744).GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 } };
 let closure_7 = createStyles.createStyles(obj);
 let closure_8 = noop.memo((children) => <hasOwnProperty style={closure_7().header}>{jsx(Text_Text.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: arg0.header })}</hasOwnProperty>);
 const size = fn(2);
@@ -52,7 +52,7 @@ export const EditCollectiblesPickerList = function EditCollectiblesPickerList(se
         items.push({ type: "header", key: "header-" + header.section, header: header.header });
         const obj = { type: "header", key: "header-" + header.section, header: header.header };
         const obj2 = items(12);
-        const item = items(12).chunk(header.items, items(12727).ROW_SIZE).forEach((items, index) => {
+        const item = items(12).chunk(header.items, items(12744).ROW_SIZE).forEach((items, index) => {
           items.push({ type: "row", key: "row-" + header.section + "-" + index, items });
         });
       });

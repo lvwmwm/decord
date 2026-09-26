@@ -1,9 +1,9 @@
-// Module ID: 4732
-// Function ID: 4733
+// Module ID: 4736
+// Function ID: 4737
 // Name: APIError
 // Dependencies: [1074, 1271, 1115, 2]
 
-// Module 4732 (APIError)
+// Module 4736 (APIError)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;

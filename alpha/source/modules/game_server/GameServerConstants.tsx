@@ -1,12 +1,12 @@
-// Module ID: 4721
-// Function ID: 4722
+// Module ID: 4725
+// Function ID: 4726
 // Name: GameServerConstants
-// Dependencies: [1384, 4722, 2]
+// Dependencies: [1384, 4726, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4721 (GameServerConstants)
+// Module 4725 (GameServerConstants)
 import UserStoreConstants from "UserStoreConstants" /* 1384 */;
-import GameServerProviderType from "GameServerProviderType" /* 4722 */;
+import GameServerProviderType from "GameServerProviderType" /* 4726 */;
 import size from "module_2" /* 2 */;
 
 const obj = { SELECT_GAME: "select-game", SERVER_SETTINGS: "server-settings" };

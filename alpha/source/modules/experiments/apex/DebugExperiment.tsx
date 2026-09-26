@@ -1,11 +1,11 @@
-// Module ID: 13218
-// Function ID: 13219
+// Module ID: 13235
+// Function ID: 13236
 // Name: DebugExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useDebugExperiment
 
-// Module 13218 (DebugExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13235 (DebugExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: null };

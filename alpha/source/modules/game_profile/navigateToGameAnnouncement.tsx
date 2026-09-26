@@ -1,12 +1,12 @@
-// Module ID: 8216
-// Function ID: 8217
+// Module ID: 8224
+// Function ID: 8225
 // Name: navigateToGameAnnouncement
-// Dependencies: [5, 2066, 1074, 38, 6754, 7818, 1101, 2]
+// Dependencies: [5, 2067, 1074, 38, 6759, 7826, 1101, 2]
 // Exports: default
 
-// Module 8216 (navigateToGameAnnouncement)
+// Module 8224 (navigateToGameAnnouncement)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = fn;
 let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {

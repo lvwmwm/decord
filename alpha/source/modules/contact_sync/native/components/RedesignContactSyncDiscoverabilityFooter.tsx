@@ -1,16 +1,16 @@
-// Module ID: 12165
-// Function ID: 12166
+// Module ID: 12183
+// Function ID: 12184
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [1074, 21, 5994, 1115, 2110, 6616, 2]
+// Dependencies: [1074, 21, 5999, 1115, 2111, 6621, 2]
 // Exports: default
 
-// Module 12165 (RedesignContactSyncDiscoverabilityFooter)
+// Module 12183 (RedesignContactSyncDiscoverabilityFooter)
 import jsxProd from "jsxProd" /* 21 */;
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import TableRowGroup from "TableRowGroup" /* 5994 */;
-import TableSwitchRow from "TableSwitchRow" /* 6616 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import TableRowGroup from "TableRowGroup" /* 5999 */;
+import TableSwitchRow from "TableSwitchRow" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;

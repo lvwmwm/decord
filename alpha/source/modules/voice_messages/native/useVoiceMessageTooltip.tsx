@@ -1,19 +1,19 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 11740
+// Function ID: 11741
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1480, 11428, 1115, 6038, 10579, 2]
+// Dependencies: [19, 1481, 11442, 1115, 6043, 10590, 2]
 // Exports: default
 
-// Module 11726 (useVoiceMessageTooltip)
+// Module 11740 (useVoiceMessageTooltip)
 import util from "util" /* 1115 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6038 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6043 */;
 import noop from "module_19" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1480 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1481 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VoiceMessagesUIStore = fn(11428);
+const VoiceMessagesUIStore = fn(11442);
 ({ hideVoiceMessagesTooltip: closure_4, showVoiceMessagesTooltip: hasOwnProperty, useVoiceMessagesUIStore: metroRequire } = VoiceMessagesUIStore);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_messages/native/useVoiceMessageTooltip.tsx");

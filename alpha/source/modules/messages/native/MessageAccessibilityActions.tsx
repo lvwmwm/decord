@@ -1,13 +1,13 @@
-// Module ID: 7404
-// Function ID: 7405
+// Module ID: 7409
+// Function ID: 7410
 // Name: MessageAccessibilityActions
-// Dependencies: [2020, 7405, 1115, 7408, 7413, 2]
+// Dependencies: [2021, 7410, 1115, 7413, 7418, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 7404 (MessageAccessibilityActions)
+// Module 7409 (MessageAccessibilityActions)
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2020 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7408 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7413 */;
 import size from "module_2" /* 2 */;
 
 const MessageAccessibilityAction = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm", OPEN_PINS: "open_pins", JUMP_TO_MESSAGE: "jump_to_message" };
@@ -39,13 +39,13 @@ export const getMessageAccessibilityActionFromLabel = function getMessageAccessi
   let formatToPlainStringResult = null;
   if (true !== disableDoubleTap) {
     if (null != setting) {
-      const result = tmp(7405).disambiguatedEmojiFromSettingsValue(setting);
+      const result = tmp(7410).disambiguatedEmojiFromSettingsValue(setting);
       if (null != result) {
         const intl9 = tmp(1115).intl;
         const obj2 = { emojiName: result.name };
         formatToPlainStringResult = intl9.formatToPlainString(tmp(1115).t.eQIttH, obj2);
       }
-      const tmpResult = tmp(7405);
+      const tmpResult = tmp(7410);
     }
     const intl8 = tmp(1115).intl;
     formatToPlainStringResult = intl8.formatToPlainString(tmp(1115).t.eQIttH, { emojiName: "heart" });
@@ -70,7 +70,7 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
       obj.label = intl.string(tmp10(1115).t.lfIHs4);
       obj.name = tmp12.ADD_REACTION;
       items.push(obj);
-      const DoubleTapReactionEmoji = tmp10(2020).DoubleTapReactionEmoji;
+      const DoubleTapReactionEmoji = tmp10(2021).DoubleTapReactionEmoji;
       const setting = DoubleTapReactionEmoji.getSetting();
       let disableDoubleTap;
       if (setting != null) {
@@ -79,13 +79,13 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
       let formatToPlainStringResult = null;
       if (true !== disableDoubleTap) {
         if (null != setting) {
-          const result = tmp10(7405).disambiguatedEmojiFromSettingsValue(setting);
+          const result = tmp10(7410).disambiguatedEmojiFromSettingsValue(setting);
           if (null != result) {
             const intl3 = tmp10(1115).intl;
             const obj3 = { emojiName: result.name };
             formatToPlainStringResult = intl3.formatToPlainString(tmp10(1115).t.eQIttH, obj3);
           }
-          const tmp10Result = tmp10(7405);
+          const tmp10Result = tmp10(7410);
         }
         const intl2 = tmp10(1115).intl;
         formatToPlainStringResult = intl2.formatToPlainString(tmp10(1115).t.eQIttH, { emojiName: "heart" });

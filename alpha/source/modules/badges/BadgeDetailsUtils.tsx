@@ -1,16 +1,16 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10667
+// Function ID: 10668
 // Name: BadgeDetailsUtils
-// Dependencies: [7630, 1374, 7622, 1115, 7631, 10648, 2010, 2]
+// Dependencies: [7637, 1374, 7629, 1115, 7638, 10659, 2011, 2]
 // Exports: getBadgeArtUrls, getBadgeCtaVariant, getBadgeDescriptionText, getBadgeProgressDisplay, getBadgeStatusText, getBadgeTitle, isLegacyDisplayBadge, isUpgradeableNitroViewer, shouldShowLegacyUnavailableNotice
 
-// Module 10654 (BadgeDetailsUtils)
+// Module 10667 (BadgeDetailsUtils)
 import util from "util" /* 1115 */;
 import PremiumConstants from "PremiumConstants" /* 1374 */;
-import BadgeId from "BadgeId" /* 7622 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7630 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7631 */;
-import BadgeUtils from "BadgeUtils" /* 10648 */;
+import BadgeId from "BadgeId" /* 7629 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7638 */;
+import BadgeUtils from "BadgeUtils" /* 10659 */;
 import size from "module_2" /* 2 */;
 
 const getObtainedAtFromBadge = BadgeDirectoryStore.getObtainedAtFromBadge;
@@ -113,9 +113,9 @@ export const getBadgeStatusText = function getBadgeStatusText(badge, arg1) {
       v5LcHT0 = tmp4(1115).t["5LcHT0"];
       let stringResult = intl4.string(v5LcHT0);
     } else {
-      let tmp6 = tmp4(7631).isLegacyBadgeId(badge.badge_id) && !badge.is_earnable;
+      let tmp6 = tmp4(7638).isLegacyBadgeId(badge.badge_id) && !badge.is_earnable;
       if (tmp6) {
-        tmp6 = badge.badge_id !== tmp4(7622).BadgeId.STAFF;
+        tmp6 = badge.badge_id !== tmp4(7629).BadgeId.STAFF;
       }
       if (tmp6) {
         stringResult = arg1;
@@ -130,7 +130,7 @@ export const getBadgeStatusText = function getBadgeStatusText(badge, arg1) {
       const date = new Date(tmp);
       obj.date = date;
       stringResult1 = intl3.formatToPlainString(tmp4(1115).t.XmaiRQ, obj);
-      const tmp4Result = tmp4(7631);
+      const tmp4Result = tmp4(7638);
     }
   } else {
     const intl = util.intl;

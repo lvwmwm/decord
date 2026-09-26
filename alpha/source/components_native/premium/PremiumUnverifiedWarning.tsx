@@ -1,9 +1,9 @@
-// Module ID: 13095
-// Function ID: 13096
+// Module ID: 13112
+// Function ID: 13113
 // Name: PremiumUnverifiedWarning
-// Dependencies: [19, 1372, 21, 4829, 576, 4537, 1177, 1115, 504, 2]
+// Dependencies: [19, 1372, 21, 4836, 576, 4540, 1177, 1115, 504, 2]
 
-// Module 13095 (PremiumUnverifiedWarning)
+// Module 13112 (PremiumUnverifiedWarning)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -13,7 +13,7 @@ import initialize from "initialize" /* 504 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 const obj2 = { warning: { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 } };
 let closure_4 = createStyles.createLegacyClassComponentStyles(obj2);
 const PureComponent = noop.PureComponent;
@@ -31,7 +31,7 @@ PremiumUnverifiedWarning.prototype["render"] = function render() {
   }
   return tmp3;
 };
-PremiumUnverifiedWarning.contextType = fn(4537).ThemeContext;
+PremiumUnverifiedWarning.contextType = fn(4540).ThemeContext;
 let items = [UserStore];
 const obj3 = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 };
 const size = fn(2);

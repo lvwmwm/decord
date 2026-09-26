@@ -1,20 +1,20 @@
-// Module ID: 12047
-// Function ID: 12048
+// Module ID: 12065
+// Function ID: 12066
 // Name: GuildPowerupsPerksSection
-// Dependencies: [17, 21, 4829, 576, 12030, 1115, 2518, 12048, 12050, 12052, 2]
+// Dependencies: [17, 21, 4836, 576, 12048, 1115, 2519, 12066, 12068, 12070, 2]
 // Exports: default
 
-// Module 12047 (GuildPowerupsPerksSection)
+// Module 12065 (GuildPowerupsPerksSection)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2518 from "module_2518" /* 2518 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 12030 */;
-import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 12048 */;
-import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 12050 */;
-import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 12052 */;
+import _modDef2519 from "module_2519" /* 2519 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 12048 */;
+import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 12066 */;
+import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 12068 */;
+import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 12070 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4829 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;
@@ -29,9 +29,9 @@ export default function GuildPowerupPerksSection(arg0) {
   let obj2 = { title: null, description: null };
   const tmp = closure_7();
   const intl = util.intl;
-  obj2.title = intl.string(_modDef2518.TV3Vm8);
+  obj2.title = intl.string(_modDef2519.TV3Vm8);
   const intl2 = util.intl;
-  obj2.description = intl2.string(_modDef2518.STx9hp);
+  obj2.description = intl2.string(_modDef2519.STx9hp);
   const items = [closure_4(GuildPowerupsSectionHeaderDefault, obj2), ];
   items[1] = closure_4(View, {
     style: tmp.container,

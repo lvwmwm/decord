@@ -1,11 +1,11 @@
-// Module ID: 5318
-// Function ID: 5319
+// Module ID: 5325
+// Function ID: 5326
 // Name: SoundmojiRenderingExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: getSoundmojiRenderingExperiment, useSoundmojiRenderingExperiment
 
-// Module 5318 (SoundmojiRenderingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 5325 (SoundmojiRenderingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-soundmoji-rendering", kind: "user", defaultConfig: { enabled: false }, variations: null };

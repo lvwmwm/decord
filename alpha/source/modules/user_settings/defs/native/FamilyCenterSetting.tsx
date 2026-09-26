@@ -1,26 +1,26 @@
-// Module ID: 14376
-// Function ID: 14377
+// Module ID: 14401
+// Function ID: 14402
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1074, 21, 14377, 14378, 8040, 576, 1115, 2486, 10993, 5396, 14381, 2]
+// Dependencies: [19, 1074, 21, 14402, 14403, 8048, 576, 1115, 2487, 11006, 5403, 14406, 2]
 
-// Module 14376 (FamilyCenterSetting)
+// Module 14401 (FamilyCenterSetting)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2486 from "module_2486" /* 2486 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 14377 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 14378 */;
+import _modDef2487 from "module_2487" /* 2487 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 14402 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 14403 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(10993);
+const SettingBuilders = fn(11006);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2486.RZqaJn);
+    return intl.string(_modDef2487.RZqaJn);
   },
   parent: null,
-  IconComponent: fn(5396).GroupIcon,
+  IconComponent: fn(5403).GroupIcon,
   useTrailing: function useFamilyCenterTrailing() {
     const isParentalConsentBannerActive = useIsParentalConsentBannerActive.useIsParentalConsentBannerActive();
     const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
@@ -39,8 +39,8 @@ const route = SettingBuilders.createRoute({
         if (daysRemaining >= 0) {
           const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null };
           const intl = tmp(1115).intl;
-          obj3.accessibilityLabel = intl.string(_modDef2486.wucWfE);
-          tmp6 = jsx(tmp(8040).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
+          obj3.accessibilityLabel = intl.string(_modDef2487.wucWfE);
+          tmp6 = jsx(tmp(8048).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
         }
       }
     }

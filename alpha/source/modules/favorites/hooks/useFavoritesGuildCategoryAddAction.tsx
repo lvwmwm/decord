@@ -1,12 +1,12 @@
-// Module ID: 10427
-// Function ID: 10428
+// Module ID: 10438
+// Function ID: 10439
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 1074, 10428, 2069, 1115, 3360, 2]
+// Dependencies: [19, 1074, 10439, 2070, 1115, 3361, 2]
 // Exports: default
 
-// Module 10427 (useFavoritesGuildCategoryAddAction)
-import _modDef3360 from "module_3360" /* 3360 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 10428 */;
+// Module 10438 (useFavoritesGuildCategoryAddAction)
+import _modDef3361 from "module_3361" /* 3361 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 10439 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ export default function useFavoritesGuildCategoryAddAction(id) {
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
       const obj2 = { label: null, perform: null };
       const intl = require("util").intl;
-      obj2.label = intl.string(_modDef3360["1QJmIL"]);
+      obj2.label = intl.string(_modDef3361["1QJmIL"]);
       obj2.perform = callback;
       tmp4 = obj2;
     }

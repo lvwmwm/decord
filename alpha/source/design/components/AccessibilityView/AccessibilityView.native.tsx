@@ -1,12 +1,12 @@
-// Module ID: 5256
-// Function ID: 5257
+// Module ID: 5263
+// Function ID: 5264
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 5257, 4563, 2]
+// Dependencies: [19, 17, 21, 5264, 4566, 2]
 
-// Module 5256 (AccessibilityView)
-import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 5257 */;
+// Module 5263 (AccessibilityView)
+import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 5264 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;

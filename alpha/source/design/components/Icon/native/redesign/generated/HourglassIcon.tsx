@@ -1,13 +1,13 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 12456
+// Function ID: 12457
 // Name: HourglassIcon
-// Dependencies: [19, 21, 576, 4527, 12439, 2]
+// Dependencies: [19, 21, 576, 4530, 12457, 2]
 // Exports: HourglassIcon
 
-// Module 12438 (HourglassIcon)
+// Module 12456 (HourglassIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod12439 from "module_12439" /* 12439 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod12457 from "module_12457" /* 12457 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const HourglassIcon = function HourglassIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12439, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12457, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

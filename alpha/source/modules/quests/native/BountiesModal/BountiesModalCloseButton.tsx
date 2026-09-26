@@ -1,19 +1,19 @@
-// Module ID: 14565
-// Function ID: 14566
+// Module ID: 14590
+// Function ID: 14591
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4829, 576, 5428, 1115, 5987, 2]
+// Dependencies: [19, 21, 4836, 576, 5435, 1115, 5992, 2]
 // Exports: default
 
-// Module 14565 (BountiesModalCloseButton)
+// Module 14590 (BountiesModalCloseButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5428 */;
-import XSmallIcon from "XSmallIcon" /* 5987 */;
+import Pressables from "Pressables" /* 5435 */;
+import XSmallIcon from "XSmallIcon" /* 5992 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_4 = createStyles.createStyles(() => {
   const obj = { closeButton: null };
   const size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32 };

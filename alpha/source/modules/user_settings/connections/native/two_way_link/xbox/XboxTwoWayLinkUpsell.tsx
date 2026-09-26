@@ -1,24 +1,24 @@
-// Module ID: 14477
-// Function ID: 14478
+// Module ID: 14502
+// Function ID: 14503
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1074, 21, 4829, 2110, 14478, 1115, 5894, 14479, 2028, 8521, 2]
+// Dependencies: [19, 1074, 21, 4836, 2111, 14503, 1115, 5899, 14504, 2029, 8529, 2]
 // Exports: XboxTwoWayLinkUpsell
 
-// Module 14477 (XboxTwoWayLinkUpsell)
+// Module 14502 (XboxTwoWayLinkUpsell)
 import util from "util" /* 1115 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import FastImageDefault from "FastImage" /* 5894 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8521 */;
-import OneWayToTwoWayLinkUpsell from "OneWayToTwoWayLinkUpsell" /* 14478 */;
-import _modDef14479 from "module_14479" /* 14479 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8529 */;
+import OneWayToTwoWayLinkUpsell from "OneWayToTwoWayLinkUpsell" /* 14503 */;
+import _modDef14504 from "module_14504" /* 14504 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ HelpdeskArticles: c3, AnalyticsLocations: closure_4 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxTwoWayLinkUpsell.tsx");
@@ -32,7 +32,7 @@ export const XboxTwoWayLinkUpsell = function XboxTwoWayLinkUpsell() {
   const intl2 = util.intl;
   obj2.body = intl2.format(util.t.OnERSS, { help_article: articleURL });
   const obj3 = { style: tmp.upsellImage, source: null, resizeMode: "contain" };
-  obj3.source = _modDef14479;
+  obj3.source = _modDef14504;
   obj2.img = jsx(FastImageDefault, { style: tmp.upsellImage, source: null, resizeMode: "contain" });
   obj2.newIndicatorDismissibleContent = dismissible_content.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
   obj2.onPress = function onPress() {

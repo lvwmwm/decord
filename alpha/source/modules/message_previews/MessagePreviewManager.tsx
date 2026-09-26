@@ -1,22 +1,22 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 14868
+// Function ID: 14869
 // Name: MessagePreviewManager
-// Dependencies: [32, 5, 5584, 2048, 502, 2044, 13246, 1074, 3, 6534, 12, 2073, 573, 1271, 14841, 2]
+// Dependencies: [32, 5, 5589, 2049, 502, 2045, 13263, 1074, 3, 6539, 12, 2074, 573, 1271, 14869, 2]
 
-// Module 14840 (MessagePreviewManager)
+// Module 14868 (MessagePreviewManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import RemoteFetchData from "RemoteFetchData" /* 14841 */;
+import RemoteFetchData from "RemoteFetchData" /* 14869 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13246 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13263 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
-const isThread = fn(2048).isThread;
+const isThread = fn(2049).isThread;
 const Endpoints = fn(1074).Endpoints;
 let closure_11 = new LoggerDefault("MessagePreviewManager");
 class MessagePreviewManager extends tmp3 {

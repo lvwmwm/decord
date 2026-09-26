@@ -1,13 +1,13 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14138
+// Function ID: 14139
 // Name: SafeAreaProvider
-// Dependencies: [19, 17, 21, 1609, 1614, 1364, 1613, 1624, 1248, 1615, 1481, 2]
+// Dependencies: [19, 17, 21, 1610, 1615, 1364, 1614, 1625, 1248, 1616, 1482, 2]
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 14113 (SafeAreaProvider)
+// Module 14138 (SafeAreaProvider)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import SafeAreaConstants from "SafeAreaConstants" /* 1614 */;
-import _mod1615 from "module_1615" /* 1615 */;
+import SafeAreaConstants from "SafeAreaConstants" /* 1615 */;
+import _mod1616 from "module_1616" /* 1616 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,9 +18,9 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/safe_area/SafeAreaProvider.native.tsx");
 
 export const SafeAreaReporter = function SafeAreaReporter() {
-  safeAreaInsets = safeAreaInsets(1615).useSafeAreaInsets();
-  let obj = safeAreaInsets(1615);
-  const appEntryKey = safeAreaInsets(1481).useAppEntryKey();
+  safeAreaInsets = safeAreaInsets(1616).useSafeAreaInsets();
+  let obj = safeAreaInsets(1616);
+  const appEntryKey = safeAreaInsets(1482).useAppEntryKey();
   const items = [safeAreaInsets, appEntryKey];
   const layoutEffect = noop.useLayoutEffect(() => {
     closure_0 = safeAreaInsets;
@@ -69,7 +69,7 @@ export const SafeAreaReporter = function SafeAreaReporter() {
   }, items);
   dependencyMap = noop.useRef(false);
   const items1 = [safeAreaInsets, appEntryKey];
-  let obj2 = safeAreaInsets(1481);
+  let obj2 = safeAreaInsets(1482);
   return <View style={style} onLayout={noop.useCallback(() => {
     if (!ref.current) {
       tmp.current = true;
@@ -121,5 +121,5 @@ export const SafeAreaReporter = function SafeAreaReporter() {
 };
 export const SafeAreaProvider = function SafeAreaProvider(arg0) {
   ({ children, style } = arg0);
-  return jsx(_mod1615.SafeAreaProvider, { initialMetrics: SafeAreaConstants.INITIAL_SAFE_AREA_METRICS, children, style });
+  return jsx(_mod1616.SafeAreaProvider, { initialMetrics: SafeAreaConstants.INITIAL_SAFE_AREA_METRICS, children, style });
 };

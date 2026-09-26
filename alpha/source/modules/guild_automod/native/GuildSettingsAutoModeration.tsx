@@ -1,27 +1,27 @@
-// Module ID: 17271
-// Function ID: 17272
+// Module ID: 17301
+// Function ID: 17302
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 17272, 17274, 1074, 21, 4829, 576, 17276, 1115, 1484, 17279, 17287, 8045, 5272, 4825, 2110, 5884, 5994, 6456, 2]
+// Dependencies: [32, 19, 17302, 17304, 1074, 21, 4836, 576, 17306, 1115, 1485, 17309, 17317, 8053, 5279, 4832, 2111, 5889, 5999, 6461, 2]
 // Exports: default
 
-// Module 17271 (GuildSettingsAutoModeration)
+// Module 17301 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 576 */;
-import TableRowGroup from "TableRowGroup" /* 5994 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17276 */;
+import TableRowGroup from "TableRowGroup" /* 5999 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17306 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AutomodStore = fn(17272);
+const AutomodStore = fn(17302);
 ({ useAutomodRulesList: closure_4, useSyncAutomodRulesEffect: hasOwnProperty } = AutomodStore);
-let closure_6 = fn(17274).useAutomodEditingRuleState;
+let closure_6 = fn(17304).useAutomodEditingRuleState;
 const Constants = fn(1074);
 ({ GuildSettingsSections: closure_7, HelpdeskArticles: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { stack: { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING }, loading: null };
 let obj3 = { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 obj2.loading = { paddingVertical: nativeDefault.space.PX_24 };
@@ -140,7 +140,7 @@ export default function GuildSettingsAutoModeration(contentContainerStyle) {
         if (AutomodTriggerConfigs.AutomodTriggerCategory.MEMBERS === tmp) {
           const intl2 = tmp6(1115).intl;
           let stringResult = intl2.string(tmp6(1115).t.sx4E5v);
-        } else if (tmp6(17276).AutomodTriggerCategory.CONTENT === tmp) {
+        } else if (tmp6(17306).AutomodTriggerCategory.CONTENT === tmp) {
           const intl = tmp6(1115).intl;
           stringResult = intl.string(tmp6(1115).t.fphZb0);
         }

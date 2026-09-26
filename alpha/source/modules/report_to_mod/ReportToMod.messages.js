@@ -1,17 +1,17 @@
-// Module ID: 2618
-// Function ID: 2619
-// Dependencies: [1119, 2619, 1154, 2]
+// Module ID: 2619
+// Function ID: 2620
+// Dependencies: [1119, 2620, 1154, 2]
 
-// Module 2618
+// Module 2619
 import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod2619 from "module_2619" /* 2619 */;
+import _mod2620 from "module_2620" /* 2620 */;
 import module_1154_mod from "module_1154" /* 1154 */;
 import size from "module_2" /* 2 */;
 
 let module_1154 = module_1154_mod;
 const loader = module_1154.createLoader({
   () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2619);
+    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2620);
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");

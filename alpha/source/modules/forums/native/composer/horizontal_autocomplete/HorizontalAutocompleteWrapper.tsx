@@ -1,11 +1,11 @@
-// Module ID: 9873
-// Function ID: 9874
+// Module ID: 9884
+// Function ID: 9885
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 17, 1074, 21, 9874, 10076, 4563, 4830, 2]
+// Dependencies: [19, 17, 1074, 21, 9885, 10087, 4566, 4837, 2]
 // Exports: default
 
-// Module 9873 (HorizontalAutocompleteWrapper)
-import timing from "timing" /* 4830 */;
+// Module 9884 (HorizontalAutocompleteWrapper)
+import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

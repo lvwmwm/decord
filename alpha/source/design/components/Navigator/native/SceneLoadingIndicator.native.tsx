@@ -1,19 +1,19 @@
-// Module ID: 6455
-// Function ID: 6456
+// Module ID: 6460
+// Function ID: 6461
 // Name: SceneLoadingIndicator
-// Dependencies: [19, 17, 21, 4829, 5884, 6456, 2]
+// Dependencies: [19, 17, 21, 4836, 5889, 6461, 2]
 // Exports: SceneLoadingIndicator
 
-// Module 6455 (SceneLoadingIndicator)
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5884 */;
-import NavScrim from "NavScrim" /* 6456 */;
+// Module 6460 (SceneLoadingIndicator)
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5889 */;
+import NavScrim from "NavScrim" /* 6461 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles({ loadingContainer: { flex: 1, paddingTop: 40 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Navigator/native/SceneLoadingIndicator.native.tsx");

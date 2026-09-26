@@ -1,23 +1,23 @@
-// Module ID: 6016
-// Function ID: 6017
+// Module ID: 6021
+// Function ID: 6022
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 5930, 21, 1484, 1094, 6017, 6014, 1115, 2]
+// Dependencies: [5, 19, 5935, 21, 1485, 1094, 6022, 6019, 1115, 2]
 // Exports: default
 
-// Module 6016 (ConfirmEmailChangeCode)
+// Module 6021 (ConfirmEmailChangeCode)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const setEmailToken = fn(5930).setEmailToken;
+const setEmailToken = fn(5935).setEmailToken;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
 
 export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  const navigation = isChangeEmail(1484).useNavigation();
+  const navigation = isChangeEmail(1485).useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = noop.useCallback((arg0) => {
     let tmp = arg0;
@@ -34,7 +34,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
     }
   }, items);
   const obj2 = { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null };
-  let obj = isChangeEmail(1484);
+  let obj = isChangeEmail(1485);
   closure_129_0 = asyncGeneratorStep(async (arg0) => {
     await closure_0(c2[7]).confirmEmailChange(closure_0);
     return arg1;
@@ -101,5 +101,5 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj2.headerText = intl.string(isChangeEmail(1115).t["2x/2Uo"]);
   const intl2 = isChangeEmail(1115).intl;
   obj2.confirmButtonText = intl2.string(isChangeEmail(1115).t.PDTjLN);
-  return jsx(navigation(6017), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  return jsx(navigation(6022), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

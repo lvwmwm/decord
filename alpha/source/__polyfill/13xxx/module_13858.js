@@ -1,16 +1,8 @@
 // Module ID: 13858
 // Function ID: 13859
-// Dependencies: [13859]
+// Dependencies: [17]
 
 // Module 13858
-import _mod13859 from "module_13859" /* 13859 */;
+import _mod17 from "module_17" /* 17 */;
 
-
-export default (obj) => {
-  if (typeof obj === "object") {
-    let tmp2 = null !== obj;
-  } else {
-    tmp2 = _mod13859(obj);
-  }
-  return tmp2;
-};
+const parsed = parseInt(_mod17.Platform.Version, 10);

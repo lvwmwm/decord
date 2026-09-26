@@ -1,14 +1,14 @@
-// Module ID: 11640
-// Function ID: 11641
+// Module ID: 11654
+// Function ID: 11655
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1375, 21, 4829, 576, 10772, 1978, 9730, 11637, 8704, 1177, 11641, 1364, 11642, 1875, 10572, 2]
+// Dependencies: [32, 19, 17, 1375, 21, 4836, 576, 10785, 1979, 9741, 11651, 8712, 1177, 11655, 1364, 11656, 1876, 10583, 2]
 // Exports: default
 
-// Module 11640 (AppLauncherTextInputOption)
+// Module 11654 (AppLauncherTextInputOption)
 import nativeDefault from "native" /* 576 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9730 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10572 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9741 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10583 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ const View = fn(17).View;
 const EmojiIntention = fn(1375).EmojiIntention;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 const obj2 = { container: { width: "100%", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, padding: 14, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" }, hasError: null, stringOptionInput: null, expressionButton: null };
 let obj3 = { width: "100%", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, padding: 14, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
 obj2.hasError = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL };
@@ -51,7 +51,7 @@ export default function AppLauncherTextInputOption(guildId) {
   noop = tmp2[1];
   noop.useRef({ start: 0, end: 0 });
   const ref = noop.useRef(null);
-  let tmp14Result = option.type === onChangeText(1978).ApplicationCommandOptionType.STRING;
+  let tmp14Result = option.type === onChangeText(1979).ApplicationCommandOptionType.STRING;
   closure_7 = tmp14Result;
   const items = [onChangeText];
   onChangeText = noop.useCallback((arg0) => {
@@ -101,17 +101,17 @@ export default function AppLauncherTextInputOption(guildId) {
       const result = TopEmojisUtils.maybeFetchTopEmojisByGuild(guildId);
     }
   }, items2);
-  let obj = onChangeText(10772);
-  const animationDelayedAutoFocus = onChangeText(11637).useAnimationDelayedAutoFocus(autoFocus, () => {
+  let obj = onChangeText(10785);
+  const animationDelayedAutoFocus = onChangeText(11651).useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(8704).AppLauncherEntrypoint.VOICE) {
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(8712).AppLauncherEntrypoint.VOICE) {
     let TextInput = tmp4(1177).TextInput;
   } else {
-    TextInput = guildId(11641);
+    TextInput = guildId(11655);
   }
   const items3 = [tmp.container, , ];
   if (hasError) {
@@ -122,7 +122,7 @@ export default function AppLauncherTextInputOption(guildId) {
   items3[2] = style;
   const obj4 = { ref, autoFocus: false, value, style: tmp.stringOptionInput, maxLength: null, autoComplete: "off", onChangeText: null, onSelectionChange: null, onFocus: null, onEndEditing: null, textAlignVertical: "center", returnKeyType: "default", multiline: true, keyboardType: null, onPressIn: null };
   let maxLength;
-  if (option.type === onChangeText(1978).ApplicationCommandOptionType.STRING) {
+  if (option.type === onChangeText(1979).ApplicationCommandOptionType.STRING) {
     maxLength = option.maxLength;
   }
   obj4.maxLength = maxLength;
@@ -132,7 +132,7 @@ export default function AppLauncherTextInputOption(guildId) {
   };
   obj4.onFocus = onFocus;
   obj4.onEndEditing = onEndEditing;
-  if (option.type === onChangeText(1978).ApplicationCommandOptionType.INTEGER) {
+  if (option.type === onChangeText(1979).ApplicationCommandOptionType.INTEGER) {
     let str2 = "numbers-and-punctuation";
     if (tmp4Result.isAndroid()) {
       str2 = "numeric";
@@ -153,7 +153,7 @@ export default function AppLauncherTextInputOption(guildId) {
           const result1 = openEmojiPickerActionSheet.openEmojiPickerActionSheet({ pickerIntention: EmojiIntention.CHAT, autoFocus: false, startExpanded: false, onPressEmoji, guildId, onClose });
         }
     };
-    tmp14Result = tmp14(guildId(11642), obj5);
+    tmp14Result = tmp14(guildId(11656), obj5);
   }
   items4[1] = tmp14Result;
   obj3.children = items4;

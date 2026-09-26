@@ -1,10 +1,10 @@
-// Module ID: 17160
-// Function ID: 17161
+// Module ID: 17190
+// Function ID: 17191
 // Name: MetricKitManager
-// Dependencies: [6534, 2]
+// Dependencies: [6539, 2]
 
-// Module 17160 (MetricKitManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+// Module 17190 (MetricKitManager)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 class MetricKitManager extends tmp2 {
 }

@@ -1,21 +1,21 @@
-// Module ID: 11511
-// Function ID: 11512
+// Module ID: 11525
+// Function ID: 11526
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 2044, 4750, 1372, 11512, 11513, 5298, 1091, 504, 11, 2028, 6801, 4651, 2]
+// Dependencies: [32, 2045, 4754, 1372, 11526, 11527, 5305, 1091, 504, 11, 2029, 6806, 4654, 2]
 // Exports: default
 
-// Module 11511 (useCanShowAppLauncherOnboarding)
+// Module 11525 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4750 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
 import UserStore from "UserStore" /* 1372 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11512 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11513 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11526 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11527 */;
 
 const require = fn;
-const BuiltInSectionId = fn(5298).BuiltInSectionId;
+const BuiltInSectionId = fn(5305).BuiltInSectionId;
 let result = 5 * DurationsDefault.Millis.SECOND;
 let c10 = result;
 let closure_11 = 5 * DurationsDefault.Millis.SECOND;
@@ -64,11 +64,11 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   }
   const items4 = [];
   if (!tmp16) {
-    items4.push(tmp2(2028).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
+    items4.push(tmp2(2029).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
   }
   const tmp14 = AppLauncherOnboardingPersistedStore;
   const tmp2Result10 = channelId(504);
-  const tmp2Result11 = channelId(6801);
+  const tmp2Result11 = channelId(6806);
   const items5 = [AppLauncherOnboardingStore];
   const stateFromStoresObject = channelId(504).useStateFromStoresObject(items5, () => ({ recentMessageMetadata: AppLauncherOnboardingStore.getRecentMessageMetadata(), recentApplicationCommandMetadata: AppLauncherOnboardingStore.getRecentApplicationCommandMetadata() }));
   ({ recentMessageMetadata, recentApplicationCommandMetadata } = stateFromStoresObject);
@@ -101,12 +101,12 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
     const applicationId = recentApplicationCommandMetadata.applicationId;
   }
   const tmp2Result13 = channelId(504);
-  result = channelId(4651).useIsDismissibleContentDismissed_UNSAFE(tmp2(2028).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-  const tmp2Result14 = channelId(4651);
-  let result1 = channelId(4651).useIsDismissibleContentDismissed_UNSAFE(tmp2(2028).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-  const tmp2Result15 = channelId(4651);
+  result = channelId(4654).useIsDismissibleContentDismissed_UNSAFE(tmp2(2029).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  const tmp2Result14 = channelId(4654);
+  let result1 = channelId(4654).useIsDismissibleContentDismissed_UNSAFE(tmp2(2029).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  const tmp2Result15 = channelId(4654);
   let tmp30 = null != stateFromStores4;
-  const result2 = channelId(4651).useIsDismissibleContentDismissed_UNSAFE(tmp2(2028).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const result2 = channelId(4654).useIsDismissibleContentDismissed_UNSAFE(tmp2(2029).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp30) {
     tmp30 = stateFromStores4.channelId === channelId;
   }
@@ -148,7 +148,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
       obj2.canShowOnboarding = true;
       obj2.canShowAppsOrActivitiesBanner = true;
     }
-    if (_slicedToArray(tmp2Result11.useSelectedDismissibleContent(items4), 1)[0] === tmp2(2028).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING) {
+    if (_slicedToArray(tmp2Result11.useSelectedDismissibleContent(items4), 1)[0] === tmp2(2029).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING) {
       obj2.willShowGlobalSearchOnboarding = true;
       obj2.canShowOnboarding = true;
     }

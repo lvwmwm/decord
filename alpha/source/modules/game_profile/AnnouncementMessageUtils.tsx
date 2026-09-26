@@ -1,13 +1,13 @@
-// Module ID: 8206
-// Function ID: 8207
+// Module ID: 8214
+// Function ID: 8215
 // Name: AnnouncementMessageUtils
-// Dependencies: [4477, 1978, 5059, 4979, 8207, 5051, 8208, 1115, 1366, 2]
+// Dependencies: [4480, 1979, 5066, 4986, 8215, 5058, 8216, 1115, 1366, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8206 (AnnouncementMessageUtils)
+// Module 8214 (AnnouncementMessageUtils)
 import URLUtilsDefault from "URLUtils" /* 1366 */;
-import MessageRecord from "MessageRecord" /* 4477 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8208 */;
+import MessageRecord from "MessageRecord" /* 4480 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8216 */;
 import size from "module_2" /* 2 */;
 
 const isMessageComponentsV2 = MessageRecord.isMessageComponentsV2;

@@ -1,17 +1,17 @@
-// Module ID: 6732
-// Function ID: 6733
+// Module ID: 6737
+// Function ID: 6738
 // Name: SimpleLoadingModalUI
-// Dependencies: [19, 17, 21, 4829, 5884, 2]
+// Dependencies: [19, 17, 21, 4836, 5889, 2]
 // Exports: default
 
-// Module 6732 (SimpleLoadingModalUI)
+// Module 6737 (SimpleLoadingModalUI)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ Modal: c3, View: closure_4 } = get_ActivityIndicator);
 let jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ modalBackground: { flex: 1, alignItems: "center", flexDirection: "column", justifyContent: "center" } });
 let closure_7 = { OPENING: 0, [0]: "OPENING", SHOWN: 1, [1]: "SHOWN", DISMISSED: 2, [2]: "DISMISSED" };
 const size = fn(2);

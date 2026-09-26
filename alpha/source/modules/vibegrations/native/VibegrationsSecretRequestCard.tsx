@@ -1,14 +1,14 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16381
+// Function ID: 16382
 // Name: VibegrationsSecretRequestCard
-// Dependencies: [19, 17, 21, 4829, 576, 4796, 16354, 4825, 1115, 3714, 5274, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4800, 16382, 4832, 1115, 3715, 5281, 2]
 // Exports: default
 
-// Module 16353 (VibegrationsSecretRequestCard)
+// Module 16381 (VibegrationsSecretRequestCard)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4796 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 16354 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 16382 */;
 import noop from "module_19" /* 19 */;
 
 const VibegrationsSecretsSheetDefault = VibegrationsSecretsSheet;
@@ -17,7 +17,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, chips: null, chip: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.chips = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
@@ -40,8 +40,8 @@ export default function VibegrationsSecretRequestCard(projectId) {
   }, items);
   let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: null };
   const intl = projectId(1115).intl;
-  obj2.children = intl.string(request(3714)["/e28TK"]);
-  const items1 = [closure_5(projectId(4825).Text, obj2), , , ];
+  obj2.children = intl.string(request(3715)["/e28TK"]);
+  const items1 = [closure_5(projectId(4832).Text, obj2), , , ];
   if (null != request.note) {
     if ("" !== request.note) {
       let note = request.note;
@@ -57,11 +57,11 @@ export default function VibegrationsSecretRequestCard(projectId) {
     items1[2] = tmp5(tmp4, obj4);
     const obj5 = { variant: "secondary", size: "sm", onPress: callback, text: null };
     const intl3 = tmp6(1115).intl;
-    obj5.text = intl3.string(tmp8(3714)["gVV+HX"]);
-    items1[3] = tmp5(tmp6(5274).Button, obj5);
+    obj5.text = intl3.string(tmp8(3715)["gVV+HX"]);
+    items1[3] = tmp5(tmp6(5281).Button, obj5);
     obj.children = items1;
     return closure_6(tmp4, obj);
   }
   const intl2 = tmp6(1115).intl;
-  note = intl2.string(tmp8(3714).jxvtin);
+  note = intl2.string(tmp8(3715).jxvtin);
 };

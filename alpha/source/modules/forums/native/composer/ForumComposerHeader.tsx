@@ -1,17 +1,17 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9729
+// Function ID: 9730
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4829, 576, 4982, 5428, 1115, 5987, 5395, 4825, 5382, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4989, 5435, 1115, 5992, 5402, 4832, 5389, 2]
 // Exports: default
 
-// Module 9718 (ForumComposerHeader)
+// Module 9729 (ForumComposerHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import useChannelNameDefault from "useChannelName" /* 4982 */;
-import ForumIcon from "ForumIcon" /* 5395 */;
-import Pressables from "Pressables" /* 5428 */;
-import XSmallIcon from "XSmallIcon" /* 5987 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useChannelNameDefault from "useChannelName" /* 4989 */;
+import ForumIcon from "ForumIcon" /* 5402 */;
+import Pressables from "Pressables" /* 5435 */;
+import XSmallIcon from "XSmallIcon" /* 5992 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_7 = createStyles.createStyles((height) => {
   const obj = { headerBar: { height, flexDirection: "row", alignItems: "center" }, headerBarContent: { flexDirection: "row", alignItems: "center", flex: 1 }, headerBarText: { marginHorizontal: nativeDefault.space.PX_16 }, headerBarSeparator: null, button: null };
   const obj4 = {};
@@ -75,8 +75,8 @@ export default function ForumComposerHeader(height) {
     obj5.accessibilityLabel = intl3.string(tmp7(1115).t.yR6HwZ);
     obj5.style = tmp.button;
     obj5.onPress = onGuidelinesPress;
-    obj5.children = tmp6(tmp7(5382).BookCheckIcon, {});
-    tmp6Result = tmp6(tmp7(5428).PressableOpacity, obj5);
+    obj5.children = tmp6(tmp7(5389).BookCheckIcon, {});
+    tmp6Result = tmp6(tmp7(5435).PressableOpacity, obj5);
   }
   items[2] = tmp6Result;
   items[3] = hasOwnProperty(React4, { style: tmp.headerBarSeparator });

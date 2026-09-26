@@ -1,11 +1,11 @@
-// Module ID: 12859
-// Function ID: 12860
+// Module ID: 12876
+// Function ID: 12877
 // Name: PremiumOfferReminderExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isPremiumOfferReminderExperimentEnabled
 
-// Module 12859 (PremiumOfferReminderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12876 (PremiumOfferReminderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-02-premium-offer-reminder-xp", kind: "user", defaultConfig: { enabled: false }, variations: null };

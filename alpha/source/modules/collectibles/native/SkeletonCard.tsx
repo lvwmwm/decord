@@ -1,20 +1,20 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 8337
+// Function ID: 8338
 // Name: SkeletonCard
-// Dependencies: [19, 21, 4829, 576, 8218, 4563, 4830, 2]
+// Dependencies: [19, 21, 4836, 576, 8226, 4566, 4837, 2]
 // Exports: default
 
-// Module 8329 (SkeletonCard)
+// Module 8337 (SkeletonCard)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import timing from "timing" /* 4830 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles((width, height) => {
   const obj = { skeletonCard: null };
   const size = { width, height, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm };
@@ -28,21 +28,21 @@ let result = size.fileFinishedImporting("modules/collectibles/native/SkeletonCar
 export default function _default(width) {
   let COLLECTIBLES_SHOP_CARD_WIDTH = width.width;
   if (COLLECTIBLES_SHOP_CARD_WIDTH === undefined) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(8218).COLLECTIBLES_SHOP_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(8226).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   let COLLECTIBLES_SHOP_CARD_HEIGHT = width.height;
   sharedValue = undefined;
   if (COLLECTIBLES_SHOP_CARD_HEIGHT == null) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(8218).COLLECTIBLES_SHOP_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(8226).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   const tmp3Result = closure_5(COLLECTIBLES_SHOP_CARD_WIDTH, COLLECTIBLES_SHOP_CARD_HEIGHT);
-  sharedValue = sharedValue(4563).useSharedValue(0.3);
+  sharedValue = sharedValue(4566).useSharedValue(0.3);
   const items = [sharedValue];
   const effect = noop.useEffect(() => {
     const obj = ReanimatedRexport;
     const result = sharedValue.set(obj.withRepeat(timing.withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  let obj = sharedValue(4563);
+  let obj = sharedValue(4566);
   class C {
     constructor() {
       obj = { opacity: closure_0.get() };
@@ -52,7 +52,7 @@ export default function _default(width) {
   C.__closure = { opacity: sharedValue };
   C.__workletHash = 5620456625640;
   C.__initData = __initData;
-  const animatedStyle = sharedValue(4563).useAnimatedStyle(C);
+  const animatedStyle = sharedValue(4566).useAnimatedStyle(C);
   const obj3 = { style: null };
   const items1 = [tmp3Result.skeletonCard, width.style, animatedStyle];
   obj3.style = items1;

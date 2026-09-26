@@ -1,10 +1,10 @@
-// Module ID: 6979
-// Function ID: 6980
+// Module ID: 6984
+// Function ID: 6985
 // Name: CollectiblesMarketingBadgeRecord
-// Dependencies: [6980, 2]
+// Dependencies: [6985, 2]
 
-// Module 6979 (CollectiblesMarketingBadgeRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 6980 */;
+// Module 6984 (CollectiblesMarketingBadgeRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 6985 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function CollectiblesMarketingBadgeRecord(arg0) {

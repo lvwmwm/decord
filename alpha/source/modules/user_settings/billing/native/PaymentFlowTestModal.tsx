@@ -1,19 +1,19 @@
-// Module ID: 15267
-// Function ID: 15268
+// Module ID: 15295
+// Function ID: 15296
 // Name: PaymentFlowTestModal
-// Dependencies: [19, 21, 7334, 6416, 7283, 10375, 15268, 2]
+// Dependencies: [19, 21, 7339, 6421, 7288, 10386, 15296, 2]
 
-// Module 15267 (PaymentFlowTestModal)
-import HeaderShared from "HeaderShared" /* 7283 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10375 */;
-import PaymentFlowTestDefault from "PaymentFlowTest" /* 15268 */;
+// Module 15295 (PaymentFlowTestModal)
+import HeaderShared from "HeaderShared" /* 7288 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10386 */;
+import PaymentFlowTestDefault from "PaymentFlowTest" /* 15296 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(7334);
+const NativeStackNavigator = fn(7339);
 let closure_4 = NativeStackNavigator.createNativeStackNavigator();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTestModal.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 1995
-// Function ID: 1996
+// Module ID: 1996
+// Function ID: 1997
 // Name: VoiceEngine
-// Dependencies: [17, 4, 1996, 2]
+// Dependencies: [17, 4, 1997, 2]
 
-// Module 1995 (VoiceEngine)
+// Module 1996 (VoiceEngine)
 import logger_Logger from "logger/Logger" /* 4 */;
 import _mod17 from "module_17" /* 17 */;
-import VoiceEngineModule from "VoiceEngineModule" /* 1996 */;
+import VoiceEngineModule from "VoiceEngineModule" /* 1997 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

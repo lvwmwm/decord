@@ -1,21 +1,21 @@
-// Module ID: 10755
-// Function ID: 10756
+// Module ID: 10768
+// Function ID: 10769
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 10648, 10753, 5402, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 10659, 10766, 5409, 2]
 // Exports: default
 
-// Module 10755 (BadgeTierGrid)
+// Module 10768 (BadgeTierGrid)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import BadgeUtils from "BadgeUtils" /* 10648 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 10753 */;
+import BadgeUtils from "BadgeUtils" /* 10659 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 10766 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { section: { gap: nativeDefault.space.PX_16 }, grid: null, item: null, progressLabel: null, icon: null, dimmedIcon: null, subtitleRow: null, centeredText: null };
 let obj3 = { gap: nativeDefault.space.PX_16 };
 obj2.grid = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 };
@@ -47,7 +47,7 @@ export default function BadgeTierGrid(badge) {
     let intl = badge(1115).intl;
     let obj3 = { username: targetUsername };
     obj2.children = intl.formatToPlainString(badge(1115).t.KyTwIh, obj3);
-    isViewingOtherUser = closure_4(badge(4825).Text, obj2);
+    isViewingOtherUser = closure_4(badge(4832).Text, obj2);
   }
   let items = [isViewingOtherUser, ];
   let obj4 = { style: tmp.grid, accessibilityRole: "list", children: null };
@@ -96,7 +96,7 @@ export default function BadgeTierGrid(badge) {
         str = "text-default";
       }
       const obj5 = { variant: "text-sm/semibold", color: str, style: tmp7.centeredText, children: owned.name };
-      tmp13Result = React4(tmp2(4825).Text, obj5);
+      tmp13Result = React4(tmp2(4832).Text, obj5);
     }
     items2[1] = tmp13Result;
     let tmp5Result = "" !== tierRowSubtitle;
@@ -105,7 +105,7 @@ export default function BadgeTierGrid(badge) {
       let tmp15 = !owned;
       if (!owned) {
         const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_MUTED };
-        tmp15 = React4(tmp2(5402).LockIcon, obj7);
+        tmp15 = React4(tmp2(5409).LockIcon, obj7);
       }
       const items3 = [tmp15, ];
       let str2 = "text-muted";
@@ -113,7 +113,7 @@ export default function BadgeTierGrid(badge) {
         str2 = "text-default";
       }
       const obj8 = { variant: "text-sm/normal", color: str2, style: tmp7.centeredText, children: tierRowSubtitle };
-      items3[1] = React4(tmp2(4825).Text, obj8);
+      items3[1] = React4(tmp2(4832).Text, obj8);
       obj6.children = items3;
       tmp5Result = tmp5(tmp6, obj6);
     }

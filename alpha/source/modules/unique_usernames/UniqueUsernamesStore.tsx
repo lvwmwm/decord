@@ -1,16 +1,16 @@
-// Module ID: 14243
-// Function ID: 14244
+// Module ID: 14268
+// Function ID: 14269
 // Name: UniqueUsernamesStore
-// Dependencies: [1438, 1091, 504, 573, 2]
+// Dependencies: [1439, 1091, 504, 573, 2]
 
-// Module 14243 (UniqueUsernamesStore)
+// Module 14268 (UniqueUsernamesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import privDefault from "priv" /* 1438 */;
+import privDefault from "priv" /* 1439 */;
 
 let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
-let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "flex", fetched: null } } };
+let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "__initData" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "__initData" }, source: "flex", fetched: null } } };
 const Store = initializeDefault.Store;
 class UniqueUsernamesStore extends Store {
 }
@@ -83,8 +83,8 @@ const uniqueUsernamesStore = new UniqueUsernamesStore(DispatcherDefault, {
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
-    obj.suggestions.migration = { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.registration = { suggestion: { username: "r" }, source: "flex", fetched: null };
+    obj.suggestions.migration = { suggestion: { username: "__initData" }, fetched: false, usernameSuggestionLoading: false };
+    obj.suggestions.registration = { suggestion: { username: "__initData" }, source: "flex", fetched: null };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;

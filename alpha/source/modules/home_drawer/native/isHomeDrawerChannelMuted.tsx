@@ -1,16 +1,16 @@
-// Module ID: 15928
-// Function ID: 15929
+// Module ID: 15956
+// Function ID: 15957
 // Name: isHomeDrawerChannelMuted
-// Dependencies: [4468, 2048, 5010, 504, 2]
+// Dependencies: [4471, 2049, 5017, 504, 2]
 // Exports: useIsHomeDrawerChannelMuted
 
-// Module 15928 (isHomeDrawerChannelMuted)
+// Module 15956 (isHomeDrawerChannelMuted)
 import initialize from "initialize" /* 504 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4468 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
 require = fn;
-const isThread = fn(2048).isThread;
+const isThread = fn(2049).isThread;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelMuted.tsx");
 

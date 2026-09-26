@@ -1,13 +1,13 @@
-// Module ID: 5451
-// Function ID: 5452
+// Module ID: 5458
+// Function ID: 5459
 // Name: mobile/NativePermissionUtils
-// Dependencies: [5, 19, 17, 5038, 21, 1364, 1609, 5448, 3, 5452, 5454, 1980, 5198, 1115, 2]
+// Dependencies: [5, 19, 17, 5045, 21, 1364, 1610, 5455, 3, 5459, 5461, 1981, 5205, 1115, 2]
 
-// Module 5451 (mobile/NativePermissionUtils)
+// Module 5458 (mobile/NativePermissionUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import util from "util" /* 1115 */;
-import useAlertStore from "useAlertStore" /* 5198 */;
-import openPrivacySettingsDefault from "openPrivacySettings" /* 5452 */;
+import useAlertStore from "useAlertStore" /* 5205 */;
+import openPrivacySettingsDefault from "openPrivacySettings" /* 5459 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -103,7 +103,7 @@ let closure_9 = async function _combineStatuses(arg0) {
 };
 get_ActivityIndicator = fn(17);
 const NativeModules = get_ActivityIndicator.NativeModules;
-const NativePermissionConstants = fn(5038);
+const NativePermissionConstants = fn(5045);
 ({ NativePermissionTypes, NativePermissionStatus: metroRequire } = NativePermissionConstants);
 const jsx = fn(21).jsx;
 let PlatformUtils = fn(1364);
@@ -111,7 +111,7 @@ PlatformUtils = PlatformUtils.isAndroid();
 if (PlatformUtils) {
   PlatformUtils = get_ActivityIndicator.Platform.constants.Version <= 28;
 }
-let MetaQuestUtils = fn(1609);
+let MetaQuestUtils = fn(1610);
 MetaQuestUtils = MetaQuestUtils.isMetaQuest();
 if (PlatformUtils) {
   let items = [NativeModules.NativePermissionManager.requestExternalStorageAuthorization];
@@ -144,7 +144,7 @@ if (MetaQuestUtils) {
 }
 HermesBuiltin.arraySpread(items9, tmp8);
 let NativePermissionIOSUtils;
-const NativePermissionBaseUtils = fn(5448).NativePermissionBaseUtils;
+const NativePermissionBaseUtils = fn(5455).NativePermissionBaseUtils;
 class NativePermissionIOSUtils extends NativePermissionBaseUtils {
 }
 const prototype = NativePermissionIOSUtils.prototype;

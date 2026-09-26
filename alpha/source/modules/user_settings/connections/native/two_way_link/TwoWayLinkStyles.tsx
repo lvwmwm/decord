@@ -1,11 +1,11 @@
-// Module ID: 8530
-// Function ID: 8531
+// Module ID: 8538
+// Function ID: 8539
 // Name: TwoWayLinkStyles
-// Dependencies: [4829, 576, 2]
+// Dependencies: [4836, 576, 2]
 
-// Module 8530 (TwoWayLinkStyles)
+// Module 8538 (TwoWayLinkStyles)
 import nativeDefault from "native" /* 576 */;
-import createStyles from "createStyles" /* 4829 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const obj = { container: { flex: 1, alignItems: "stretch", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, navHeader: null, content: null, title: null, stepHeader: null, body: null, bodyContent: null, footerContainer: null, footerButton: null };

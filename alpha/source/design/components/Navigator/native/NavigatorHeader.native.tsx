@@ -1,18 +1,18 @@
-// Module ID: 5931
-// Function ID: 5932
+// Module ID: 5936
+// Function ID: 5937
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1074, 21, 4829, 576, 4825, 5932, 5935, 1485, 5937, 1115, 5938, 5987, 1364, 1612, 5989, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4832, 5937, 5940, 1486, 5942, 1115, 5943, 5992, 1364, 1613, 5994, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5931 (NavigatorHeader)
+// Module 5936 (NavigatorHeader)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5932 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5935 */;
-import _mod5938 from "module_5938" /* 5938 */;
-import XSmallIcon from "XSmallIcon" /* 5987 */;
-import NavigatorConstants from "NavigatorConstants" /* 5989 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5937 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5940 */;
+import _mod5943 from "module_5943" /* 5943 */;
+import XSmallIcon from "XSmallIcon" /* 5992 */;
+import NavigatorConstants from "NavigatorConstants" /* 5994 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -54,12 +54,12 @@ function CloseButton(onPress) {
     return timestampProducer(XSmallIcon.XSmallIcon, obj);
   };
   obj2.accessibilityLabel = stringResult;
-  return closure_6(require("module_5938").HeaderBackButton, obj2);
+  return closure_6(require("module_5943").HeaderBackButton, obj2);
 }
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  onPress(5937).useNavigatorBackPressHandler(() => {
+  onPress(5942).useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
     }
@@ -72,7 +72,7 @@ function CustomHeaderBackButton(onPress) {
   obj2.backImage = function backImage() {
     return closure_1_6(HeaderBackImage, {});
   };
-  return closure_6(onPress(5938).HeaderBackButton, obj2);
+  return closure_6(onPress(5943).HeaderBackButton, obj2);
 }
 function HeaderTextButton(text) {
   text = text.text;
@@ -94,16 +94,16 @@ function HeaderTextButton(text) {
     tmp5 = text;
   }
   obj2.accessibilityLabel = tmp5;
-  return timestampProducer(_mod5938.HeaderBackButton, obj2);
+  return timestampProducer(_mod5943.HeaderBackButton, obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { fauxHeaderWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" }, headerTitle: null, headerBackTitleStyle: null, navigatorHeaderTitleContainer: null, navigatorHeaderContainer: null, navigatorHeaderSubtitle: null, headerButtonIcon: null, submittingIndicator: null };
 let obj4 = {};
-let merged = Object.assign(fn(4825).TextStyleSheet["redesign/heading-18/bold"]);
+let merged = Object.assign(fn(4832).TextStyleSheet["redesign/heading-18/bold"]);
 obj4.color = nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY;
 obj2.headerTitle = obj4;
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };

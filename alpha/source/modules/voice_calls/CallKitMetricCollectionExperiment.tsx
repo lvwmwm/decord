@@ -1,10 +1,10 @@
-// Module ID: 15017
-// Function ID: 15018
+// Module ID: 15045
+// Function ID: 15046
 // Name: CallKitMetricCollectionExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 15017 (CallKitMetricCollectionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 15045 (CallKitMetricCollectionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-02-callkit-metric-collection", kind: "user", defaultConfig: { enabled: true }, variations: null };

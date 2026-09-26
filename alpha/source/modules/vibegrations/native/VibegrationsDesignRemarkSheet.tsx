@@ -1,23 +1,23 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16291
+// Function ID: 16292
 // Name: VibegrationsDesignRemarkSheet
-// Dependencies: [32, 19, 17, 12607, 21, 4829, 576, 4796, 16214, 6613, 6565, 6501, 1115, 3714, 5274, 2]
+// Dependencies: [32, 19, 17, 12624, 21, 4836, 576, 4800, 16242, 6618, 6570, 6506, 1115, 3715, 5281, 2]
 // Exports: default
 
-// Module 16263 (VibegrationsDesignRemarkSheet)
+// Module 16291 (VibegrationsDesignRemarkSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16214 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16242 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const sendUserMessage = fn(12607).sendUserMessage;
+const sendUserMessage = fn(12624).sendUserMessage;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const VibegrationsDesignRemarkSheet = "VibegrationsDesignRemarkSheet";
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { content: { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, actions: null };
 let obj3 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.actions = { flexDirection: "row", gap: nativeDefault.space.PX_8 };

@@ -1,11 +1,11 @@
-// Module ID: 6707
-// Function ID: 6708
+// Module ID: 6712
+// Function ID: 6713
 // Name: SensitiveContentSelfHarmExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled
 
-// Module 6707 (SensitiveContentSelfHarmExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 6712 (SensitiveContentSelfHarmExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-09-sensitive-content-self-harm", kind: "user", defaultConfig: { enabled: false }, variations: null };

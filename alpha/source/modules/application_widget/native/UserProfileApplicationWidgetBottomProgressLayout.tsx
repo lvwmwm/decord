@@ -1,12 +1,12 @@
-// Module ID: 8475
-// Function ID: 8476
+// Module ID: 8483
+// Function ID: 8484
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 4829, 576, 8382, 8470, 4825, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8390, 8478, 4832, 2]
 // Exports: default
 
-// Module 8475 (UserProfileApplicationWidgetBottomProgressLayout)
+// Module 8483 (UserProfileApplicationWidgetBottomProgressLayout)
 import nativeDefault from "native" /* 576 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8382 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8390 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,7 +14,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { root: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, image: null, content: null, progressContainer: null, progress: null, textContent: null, textLeft: null, progressText: null };
 let size = { width: 48, height: 48, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj2.image = size;
@@ -68,7 +68,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
     let tmp15 = React4;
   } else {
     const obj6 = { style: tmp.image };
-    tmp14 = React4(tmp3(8470).ImageSkeleton, obj6);
+    tmp14 = React4(tmp3(8478).ImageSkeleton, obj6);
     tmp15 = React4;
   }
   const items3 = [tmp14, ];
@@ -103,16 +103,16 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   const obj12 = { style: tmp.textLeft, children: null };
   if ("value" === singleStringOrSkeleton.status) {
     const obj13 = { variant: "heading-sm/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    let tmp15Result = tmp15(tmp3(4825).Text, obj13);
+    let tmp15Result = tmp15(tmp3(4832).Text, obj13);
   } else {
-    tmp15Result = tmp15(tmp3(8470).TextSkeleton, { variant: "heading-sm/medium" });
+    tmp15Result = tmp15(tmp3(8478).TextSkeleton, { variant: "heading-sm/medium" });
   }
   const items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj14 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    let tmp15Result3 = tmp15(tmp3(4825).Text, obj14);
+    let tmp15Result3 = tmp15(tmp3(4832).Text, obj14);
   } else {
-    tmp15Result3 = tmp15(tmp3(8470).TextSkeleton, { variant: "text-xs/medium" });
+    tmp15Result3 = tmp15(tmp3(8478).TextSkeleton, { variant: "text-xs/medium" });
   }
   items6[1] = tmp15Result3;
   obj12.children = items6;
@@ -126,13 +126,13 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
       let iter2Result = iter2(iter.value, "/", iter);
     } else {
       const _HermesInternal = HermesInternal;
-      iter2Result = "" + tmp3(8382).decimalToClampedPercentage(iter.value) + "%";
-      const tmp3Result2 = tmp3(8382);
+      iter2Result = "" + tmp3(8390).decimalToClampedPercentage(iter.value) + "%";
+      const tmp3Result2 = tmp3(8390);
     }
     obj15.children = iter2Result;
-    tmp15(tmp3(4825).Text, obj15);
+    tmp15(tmp3(4832).Text, obj15);
   } else {
-    items7[1] = tmp15(tmp3(8470).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    items7[1] = tmp15(tmp3(8478).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
     obj11.children = items7;
     items5[1] = tmp11(tmp12, obj11);
     obj7.children = items5;

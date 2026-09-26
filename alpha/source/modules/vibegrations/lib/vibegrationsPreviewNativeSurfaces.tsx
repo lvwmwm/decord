@@ -1,12 +1,12 @@
-// Module ID: 12429
-// Function ID: 12430
+// Module ID: 12447
+// Function ID: 12448
 // Name: vibegrationsPreviewNativeSurfaces
-// Dependencies: [1074, 12430, 2]
+// Dependencies: [1074, 12448, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 12429 (vibegrationsPreviewNativeSurfaces)
+// Module 12447 (vibegrationsPreviewNativeSurfaces)
 import Constants from "Constants" /* 1074 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 12430 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 12448 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -181,8 +181,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: "findInvoiceItemByPlanId" }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: "findInvoiceItemByPlanId" })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: "<string:39611713>" }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: "<string:39611713>" })
 };
 let closure_5 = {
   drain() {
@@ -221,8 +221,8 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj3);
     }
     if (1 === arr.length) {
-      let result = obj3(12430).setRpcCommandInterceptor(answerFor);
-      const obj2 = obj3(12430);
+      let result = obj3(12448).setRpcCommandInterceptor(answerFor);
+      const obj2 = obj3(12448);
     }
     const obj4 = {
       iframeId,

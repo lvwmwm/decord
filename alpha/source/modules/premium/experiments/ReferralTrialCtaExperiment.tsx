@@ -1,11 +1,11 @@
-// Module ID: 8664
-// Function ID: 8665
+// Module ID: 8672
+// Function ID: 8673
 // Name: ReferralTrialCtaExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: getReferralTrialCtaExperimentEnabled
 
-// Module 8664 (ReferralTrialCtaExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 8672 (ReferralTrialCtaExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const config = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-09-referral-trial-cta", defaultConfig: false, variations: { 0: false, 1: true } });

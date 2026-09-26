@@ -1,14 +1,14 @@
-// Module ID: 17607
-// Function ID: 17608
+// Module ID: 17637
+// Function ID: 17638
 // Name: QuestFetchManager
-// Dependencies: [7111, 1091, 6534, 10669, 1231, 10670, 1364, 10691, 17608, 2]
+// Dependencies: [7116, 1091, 6539, 10682, 1231, 10683, 1364, 10704, 17638, 2]
 
-// Module 17607 (QuestFetchManager)
+// Module 17637 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1091 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import QuestsEligibility from "QuestsEligibility" /* 10669 */;
-import QuestStore from "QuestStore" /* 7111 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+import QuestsEligibility from "QuestsEligibility" /* 10682 */;
+import QuestStore from "QuestStore" /* 7116 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 const DAY = DurationsDefault.Millis.DAY;
@@ -43,8 +43,8 @@ class QuestFetchManager extends tmp2 {
       applyArgumentsResult.hasHandledConnectionOpen = true;
       if (applyArgumentsResult.hasHandledConnectionOpen) {
         if (isEligibleForQuests) {
-          let DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(17608).getQuestFetchReconnectJitterConfig({ location: "QuestFetchManager" });
-          const tmp5Result = tmp5(17608);
+          let DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(17638).getQuestFetchReconnectJitterConfig({ location: "QuestFetchManager" });
+          const tmp5Result = tmp5(17638);
         }
         const _Math = Math;
         const _Math2 = Math;
@@ -68,7 +68,7 @@ class QuestFetchManager extends tmp2 {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(17608).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(17638).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 
@@ -120,11 +120,11 @@ QuestFetchManager.prototype["_fetch"] = function _fetch(callerSource) {
     obj3.data = obj4;
     SentryUtilsDefault.addBreadcrumb(obj3);
     const tmp6 = importDefault;
-    const currentQuests = tmp(10670).fetchCurrentQuests();
-    const tmpResult = tmp(10670);
+    const currentQuests = tmp(10683).fetchCurrentQuests();
+    const tmpResult = tmp(10683);
     if (tmpResult2.isMac()) {
-      const state = tmp6(10691).getState();
-      const tmp6Result = tmp6(10691);
+      const state = tmp6(10704).getState();
+      const tmp6Result = tmp6(10704);
     }
     tmpResult2 = tmp(1364);
   }

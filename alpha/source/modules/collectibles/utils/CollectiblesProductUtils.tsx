@@ -1,15 +1,15 @@
-// Module ID: 6968
-// Function ID: 6969
+// Module ID: 6973
+// Function ID: 6974
 // Name: CollectiblesProductUtils
-// Dependencies: [32, 6963, 1074, 1973, 2]
+// Dependencies: [32, 6968, 1074, 1974, 2]
 // Exports: getHasNonOrbPrice, getHasOrbPrice, getIsVariantProduct, getProductFiatPrice, getProductOrbPrice, getProductSkuIds, getProductType, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 6968 (CollectiblesProductUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
+// Module 6973 (CollectiblesProductUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
-const isProfileEffectRecord = fn(6963).isProfileEffectRecord;
+const isProfileEffectRecord = fn(6968).isProfileEffectRecord;
 const Constants = fn(1074);
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
 const size = fn(2);

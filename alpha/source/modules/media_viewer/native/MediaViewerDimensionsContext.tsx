@@ -1,12 +1,12 @@
-// Module ID: 7733
-// Function ID: 7734
+// Module ID: 7741
+// Function ID: 7742
 // Name: MediaViewerDimensionsContext
-// Dependencies: [19, 21, 1478, 38, 2]
+// Dependencies: [19, 21, 1479, 38, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 7733 (MediaViewerDimensionsContext)
+// Module 7741 (MediaViewerDimensionsContext)
 import _modDef38 from "module_38" /* 38 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

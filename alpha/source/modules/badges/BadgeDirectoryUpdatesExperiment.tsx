@@ -1,11 +1,11 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10654
+// Function ID: 10655
 // Name: BadgeDirectoryUpdatesExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useIsBadgeDirectoryUpdatesEnabled
 
-// Module 10643 (BadgeDirectoryUpdatesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 10654 (BadgeDirectoryUpdatesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-10-badge-directory-updates", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

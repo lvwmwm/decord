@@ -1,33 +1,33 @@
-// Module ID: 9387
-// Function ID: 9388
+// Module ID: 9398
+// Function ID: 9399
 // Name: MessageManager
-// Dependencies: [32, 4845, 5584, 2048, 6693, 2044, 2066, 4844, 2098, 4652, 1074, 2051, 1091, 3, 5579, 9388, 4759, 7814, 6871, 9389, 510, 4657, 1101, 6695, 5196, 1115, 573, 6534, 2]
+// Dependencies: [32, 4852, 5589, 2049, 6698, 2045, 2067, 4851, 2099, 4655, 1074, 2052, 1091, 3, 5584, 9399, 4763, 7822, 6876, 9400, 510, 4660, 1101, 6700, 5203, 1115, 573, 6539, 2]
 
-// Module 9387 (MessageManager)
+// Module 9398 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import router_utils from "router_utils" /* 1101 */;
 import util from "util" /* 1115 */;
-import matchPathCompat from "matchPathCompat" /* 4657 */;
-import Client from "Client" /* 4759 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5196 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 5579 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6695 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6871 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9388 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9389 */;
+import matchPathCompat from "matchPathCompat" /* 4660 */;
+import Client from "Client" /* 4763 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 5584 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6700 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9399 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9400 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6693 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import ReadStateStore from "ReadStateStore" /* 4844 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6698 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import ReadStateStore from "ReadStateStore" /* 4851 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 function fetchMessages(arg0) {
@@ -49,31 +49,31 @@ function fetchMessages(arg0) {
           let orCreate1 = orCreate;
           if (orCreate.some(AttachmentUrlUtilsAll.messageHasExpiredAttachmentUrl)) {
             logger.log("Found expired attachment link, clearing messages");
-            tmp9(5579).clear(channelId);
-            const tmp9Result = tmp9(5579);
-            orCreate1 = tmp9(5579).getOrCreate(channelId);
-            const tmp9Result9 = tmp9(5579);
+            tmp9(5584).clear(channelId);
+            const tmp9Result = tmp9(5584);
+            orCreate1 = tmp9(5584).getOrCreate(channelId);
+            const tmp9Result9 = tmp9(5584);
           }
           let obj7 = orCreate1;
           if (tmp15) {
             const obj = { jumpTargetId: null, jumped: false, jumpType: Client.JumpType.ANIMATED };
             const mutation = orCreate1.mutate(obj);
-            tmp9(5579).commit(mutation);
+            tmp9(5584).commit(mutation);
             obj7 = mutation;
-            const tmp9Result10 = tmp9(5579);
+            const tmp9Result10 = tmp9(5584);
           }
           let obj10 = obj7;
           if (tmp19) {
             const mutation1 = obj7.mutate({ focusTargetId: null });
-            tmp9(5579).commit(mutation1);
+            tmp9(5584).commit(mutation1);
             obj10 = mutation1;
-            const tmp9Result11 = tmp9(5579);
+            const tmp9Result11 = tmp9(5584);
           }
           if (isPreload) {
             if (!GatewayConnectionStore.isConnected()) {
               let flag = true;
             }
-            let hasUnreadResult = tmp9(7814)(channelId);
+            let hasUnreadResult = tmp9(7822)(channelId);
             if (hasUnreadResult) {
               hasUnreadResult = ReadStateStore.hasUnread(channelId);
             }
@@ -81,7 +81,7 @@ function fetchMessages(arg0) {
               flag = true;
             }
             if (flag) {
-              tmp9(5579).commit(obj10.mutate({ loadingMore: true }));
+              tmp9(5584).commit(obj10.mutate({ loadingMore: true }));
               if (null == messageId) {
                 let isThreadResult;
                 if (channel != null) {
@@ -120,7 +120,7 @@ function fetchMessages(arg0) {
                     const _HermesInternal2 = HermesInternal;
                     logger.log("Jumping to start of thread " + channel.id);
                     const obj4 = { channelId, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
-                    const tmp9Result13 = tmp9(6871);
+                    const tmp9Result13 = tmp9(6876);
                     obj4.limit = getAdaptiveMessageLimit.getMessageLimit("MessageManager.threadStart");
                     const obj5 = { messageId: channelId, flash: false };
                     obj4.jump = obj5;
@@ -142,7 +142,7 @@ function fetchMessages(arg0) {
                       const _HermesInternal = HermesInternal;
                       logger.log("Jumping to most recent message in thread " + channel.id + " - " + trackedAckMessageId);
                       const obj6 = { channelId, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
-                      const tmp9Result14 = tmp9(6871);
+                      const tmp9Result14 = tmp9(6876);
                       obj6.limit = getAdaptiveMessageLimit.getMessageLimit("MessageManager.threadUnread");
                       const obj8 = { messageId: trackedAckMessageId, flash: false, offset: 1 };
                       obj6.jump = obj8;
@@ -156,7 +156,7 @@ function fetchMessages(arg0) {
                   obj16 = ReadStateStore;
                 }
                 const obj9 = { channelId, limit: null, isPreload: null, skipLocalFetch: null, jump: null, avoidInitialScroll: null, fetchKey: null };
-                const tmp9Result15 = tmp9(6871);
+                const tmp9Result15 = tmp9(6876);
                 obj9.limit = getAdaptiveMessageLimit.getMessageLimit("MessageManager.initialFetch");
                 obj9.isPreload = isPreload;
                 obj9.skipLocalFetch = skipLocalFetch;
@@ -167,10 +167,10 @@ function fetchMessages(arg0) {
                 return tmp9Result15.fetchMessages(obj9);
               } else {
                 const obj12 = { channelId, messageId, flash: true, isPreload, skipLocalFetch, jumpType: tmp3, avoidInitialScroll };
-                tmp9(6871).jumpToMessage(obj12);
-                const tmp9Result16 = tmp9(6871);
+                tmp9(6876).jumpToMessage(obj12);
+                const tmp9Result16 = tmp9(6876);
               }
-              const tmp9Result12 = tmp9(5579);
+              const tmp9Result12 = tmp9(5584);
             }
           }
           if (!obj10.loadingMore) {
@@ -417,10 +417,10 @@ function handleAppWillBecomeActive() {
     const newLocalMessages = MessageActionCreatorsDefault.fetchNewLocalMessages(channelId, closure_1_14);
   }
 }
-const isTextChannel = fn(2048).isTextChannel;
+const isTextChannel = fn(2049).isTextChannel;
 const Constants = fn(1074);
 ({ MAX_MESSAGES_PER_CHANNEL: closure_14, CURRENT_APP_CONTEXT: closure_15, ChannelTypes: closure_16, AbortCodes: closure_17, Routes: closure_18, ChannelTypesSets: closure_19 } = Constants);
-const isStaticChannelRoute = fn(2051).isStaticChannelRoute;
+const isStaticChannelRoute = fn(2052).isStaticChannelRoute;
 let closure_21 = 10 * DurationsDefault.Millis.SECOND;
 const logger = new LoggerDefault("MessageManager");
 let closure_25 = 90 * DurationsDefault.Millis.DAY;

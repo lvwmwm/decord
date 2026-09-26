@@ -1,20 +1,20 @@
-// Module ID: 13166
-// Function ID: 13167
+// Module ID: 13183
+// Function ID: 13184
 // Name: GatewaySocketDispatcher
-// Dependencies: [32, 13167, 3, 13168, 13171, 4858, 13172, 13170, 13173, 504, 13174, 2]
+// Dependencies: [32, 13184, 3, 13185, 13188, 4865, 13189, 13187, 13190, 504, 13191, 2]
 
-// Module 13166 (GatewaySocketDispatcher)
+// Module 13183 (GatewaySocketDispatcher)
 import LoggerDefault from "Logger" /* 3 */;
-import TimeUtils from "TimeUtils" /* 4858 */;
-import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 13170 */;
-import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 13171 */;
-import VoiceServerUpdateImmediateExperiment from "VoiceServerUpdateImmediateExperiment" /* 13172 */;
-import ConnectionStateDefault from "ConnectionState" /* 13173 */;
-import ActionBatcherDefault from "ActionBatcher" /* 13174 */;
+import TimeUtils from "TimeUtils" /* 4865 */;
+import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 13187 */;
+import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 13188 */;
+import VoiceServerUpdateImmediateExperiment from "VoiceServerUpdateImmediateExperiment" /* 13189 */;
+import ConnectionStateDefault from "ConnectionState" /* 13190 */;
+import ActionBatcherDefault from "ActionBatcher" /* 13191 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
-let closure_4 = fn(13167).DISPATCHER_IDEAL_TIME_LIMIT_MS;
+let closure_4 = fn(13184).DISPATCHER_IDEAL_TIME_LIMIT_MS;
 let closure_5 = new LoggerDefault("GatewaySocket");
 const set = new Set(["INITIAL_GUILD", "READY"]);
 const set1 = new Set(["READY", "INITIAL_GUILD"]);
@@ -304,7 +304,7 @@ prototype["dispatchMultiple"] = function dispatchMultiple(items, arg1) {
       }
       if (closure_5.length > 0) {
         let telemetry = self.scheduler.telemetry;
-        telemetry.measure(tmp21(13170).WorkSchedulerTelemetryMeasurement.COUNT_DISPATCHES_LEFT_AFTER_YIELD, closure_5.length);
+        telemetry.measure(tmp21(13187).WorkSchedulerTelemetryMeasurement.COUNT_DISPATCHES_LEFT_AFTER_YIELD, closure_5.length);
         const queue = self.queue;
         const unshift = queue.unshift;
         items = [];
@@ -329,7 +329,7 @@ prototype["dispatchOne"] = function dispatchOne(arg0) {
   ({ data, type, compressionAnalytics, preloadedData, receivedAt } = arg0);
   const nowResult = performance.now();
   if (this.socket.connectionState !== ConnectionStateDefault.RESUMING) {
-    tmp2(13174).flush(type, data);
+    tmp2(13191).flush(type, data);
     if ("READY" === type) {
       const readyPayloadByteSizeAnalytics = GatewaySocketAnalytics.getReadyPayloadByteSizeAnalytics(data);
       const dispatchHandler = self.getDispatchHandler(type);
@@ -353,7 +353,7 @@ prototype["dispatchOne"] = function dispatchOne(arg0) {
         dispatchHandler2.dispatch(data, type, preloadedData, receivedAt);
       }
     }
-    if (self.socket.connectionState === tmp2(13173).RESUMING) {
+    if (self.socket.connectionState === tmp2(13190).RESUMING) {
       const resumeAnalytics3 = self.resumeAnalytics;
       const _performance = performance;
       resumeAnalytics3.dispatchTime = resumeAnalytics3.dispatchTime + (performance.now() - nowResult);

@@ -1,12 +1,12 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14161
+// Function ID: 14162
 // Name: UserProfileEditFormSharedStyles
-// Dependencies: [6624, 4829, 576, 2]
+// Dependencies: [6629, 4836, 576, 2]
 
-// Module 14136 (UserProfileEditFormSharedStyles)
+// Module 14161 (UserProfileEditFormSharedStyles)
 import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 6624 */;
-import createStyles from "createStyles" /* 4829 */;
+import Constants from "Constants" /* 6629 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 ({ ARBITRARY_LARGE_OFFSET, FLOATING_UPSELL_HEIGHT } = Constants);

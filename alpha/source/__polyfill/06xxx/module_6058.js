@@ -1,19 +1,11 @@
 // Module ID: 6058
 // Function ID: 6059
-// Dependencies: []
-// Exports: normalizeSnapPoint
+// Dependencies: [19]
 
 // Module 6058
-const fn = function n(str, arg1) {
-  let result = str;
-  if (typeof str === "string") {
-    const _Number = Number;
-    result = Number(str.split("%")[0]) * arg1 / 100;
-  }
-  return Math.max(0, arg1 - result);
-};
-fn.__closure = {};
-fn.__workletHash = 14612470006791;
-fn.__initData = { code: "function pnpm_normalizeSnapPointTs1(snapPoint,containerHeight){let normalizedSnapPoint=snapPoint;if(typeof normalizedSnapPoint==='string'){normalizedSnapPoint=Number(normalizedSnapPoint.split('%')[0])*containerHeight/100;}return Math.max(0,containerHeight-normalizedSnapPoint);}" };
+import _mod19 from "module_19" /* 19 */;
 
-export const normalizeSnapPoint = fn;
+const context = _mod19.createContext(null);
+
+export const BottomSheetModalContext = context;
+export const BottomSheetModalProvider = context.Provider;

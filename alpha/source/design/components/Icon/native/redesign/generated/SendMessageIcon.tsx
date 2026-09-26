@@ -1,13 +1,13 @@
-// Module ID: 4773
-// Function ID: 4774
+// Module ID: 4777
+// Function ID: 4778
 // Name: SendMessageIcon
-// Dependencies: [19, 21, 576, 4527, 4774, 2]
+// Dependencies: [19, 21, 576, 4530, 4778, 2]
 // Exports: SendMessageIcon
 
-// Module 4773 (SendMessageIcon)
+// Module 4777 (SendMessageIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod4774 from "module_4774" /* 4774 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod4778 from "module_4778" /* 4778 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SendMessageIcon = function SendMessageIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4774, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4778, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,18 +1,18 @@
-// Module ID: 16310
-// Function ID: 16311
+// Module ID: 16338
+// Function ID: 16339
 // Name: VibegrationsMessageAuthor
-// Dependencies: [19, 17, 1372, 21, 4829, 576, 16307, 16311, 504, 16312, 4825, 5428, 1115, 4675, 16313, 3714, 1177, 5367, 2]
+// Dependencies: [19, 17, 1372, 21, 4836, 576, 16335, 16339, 504, 16340, 4832, 5435, 1115, 4678, 16341, 3715, 1177, 5374, 2]
 // Exports: VibegrationsConjureAvatar, VibegrationsConjureHeader, VibegrationsUserAvatar, VibegrationsUserHeader, useMessageAuthorUser
 
-// Module 16310 (VibegrationsMessageAuthor)
+// Module 16338 (VibegrationsMessageAuthor)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import AppsIcon from "AppsIcon" /* 5367 */;
-import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 16311 */;
-import VibegrationsMessageTime from "VibegrationsMessageTime" /* 16312 */;
-import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 16313 */;
+import _modDef3715 from "module_3715" /* 3715 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import AppsIcon from "AppsIcon" /* 5374 */;
+import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 16339 */;
+import VibegrationsMessageTime from "VibegrationsMessageTime" /* 16340 */;
+import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 16341 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -64,9 +64,9 @@ class VibegrationsMessageHeader {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { header: { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: null };
-let size = { width: fn(16307).MESSAGE_AVATAR_SIZE, height: fn(16307).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
+let size = { width: fn(16335).MESSAGE_AVATAR_SIZE, height: fn(16335).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
 obj2.conjureTile = size;
 const React6 = createStyles.createStyles(obj2);
 size = fn(2);
@@ -103,7 +103,7 @@ export const VibegrationsUserHeader = function VibegrationsUserHeader(userId) {
     return vibegrationsMessageAuthors.resolveMessageAuthor(stateFromStores, user, UserStore.getCurrentUser());
   }, items2);
   let obj = stateFromStores(504);
-  const name = stateFromStores(4675).useName(stateFromStores);
+  const name = stateFromStores(4678).useName(stateFromStores);
   [][0] = stateFromStores;
   let tmp5 = null;
   if (null != stateFromStores) {
@@ -118,7 +118,7 @@ export const VibegrationsUserHeader = function VibegrationsUserHeader(userId) {
 export const VibegrationsConjureHeader = function VibegrationsConjureHeader(arg0) {
   const obj = { name: null, color: "text-brand", at: null };
   const intl = util.intl;
-  obj.name = intl.string(_modDef3714.Xmvb23);
+  obj.name = intl.string(_modDef3715.Xmvb23);
   obj.at = arg0.at;
   return timestampProducer(VibegrationsMessageHeader, obj);
 };
@@ -153,7 +153,7 @@ export const VibegrationsUserAvatar = function VibegrationsUserAvatar(arg0) {
     obj2.accessibilityLabel = intl.string(tmp4(1115).t.iXAna6);
     const obj3 = { size, user: stateFromStores, guildId: "Array" };
     obj2.children = closure_6(tmp4(1177).Avatar, obj3);
-    tmp8 = closure_6(tmp4(5428).PressableOpacity, obj2);
+    tmp8 = closure_6(tmp4(5435).PressableOpacity, obj2);
   }
   return tmp8;
 };

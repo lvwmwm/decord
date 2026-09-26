@@ -1,10 +1,10 @@
-// Module ID: 12558
-// Function ID: 12559
+// Module ID: 12575
+// Function ID: 12576
 // Name: getActivityPlatformDisplayName
-// Dependencies: [1074, 1115, 12557, 2]
+// Dependencies: [1074, 1115, 12574, 2]
 // Exports: default
 
-// Module 12558 (getActivityPlatformDisplayName)
+// Module 12575 (getActivityPlatformDisplayName)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;

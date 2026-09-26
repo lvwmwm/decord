@@ -1,9 +1,0 @@
-// Module ID: 15425
-// Function ID: 15426
-// Dependencies: [1121]
-
-// Module 15425
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/collectibles/native/images", width: 375, height: 162, scales: [1], hash: "bda37cc0de8c36fb8217439574ac2fe2", name: "featured_page_footer_light", type: "png" });

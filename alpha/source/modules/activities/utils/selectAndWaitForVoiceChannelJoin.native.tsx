@@ -1,12 +1,12 @@
-// Module ID: 8796
-// Function ID: 8797
+// Module ID: 8804
+// Function ID: 8805
 // Name: selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 2098, 5718, 2]
+// Dependencies: [5, 2099, 5723, 2]
 // Exports: default
 
-// Module 8796 (selectAndWaitForVoiceChannelJoin)
+// Module 8804 (selectAndWaitForVoiceChannelJoin)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 let closure_5 = async function _selectAndWaitForVoiceChannelJoin(arg0, value) {
   if (c6 === 2) {

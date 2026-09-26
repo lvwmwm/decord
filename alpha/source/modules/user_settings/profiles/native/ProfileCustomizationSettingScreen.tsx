@@ -1,23 +1,23 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14145
+// Function ID: 14146
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 9216, 7598, 1084, 1074, 21, 4829, 1115, 14121, 14179, 4528, 576, 1484, 6410, 9072, 10373, 6400, 4697, 14137, 14180, 563, 5009, 9218, 5931, 7283, 1485, 12093, 12095, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9227, 7605, 1084, 1074, 21, 4836, 1115, 14146, 14204, 4531, 576, 1485, 6415, 9083, 10384, 6405, 4701, 14162, 14205, 563, 5016, 9229, 5936, 7288, 1486, 12111, 12113, 2]
 
-// Module 14120 (ProfileCustomizationSettingScreen)
+// Module 14145 (ProfileCustomizationSettingScreen)
 import util from "util" /* 1115 */;
-import ChatInputUtils from "ChatInputUtils" /* 4697 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6400 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9218 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10373 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14121 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14179 */;
+import ChatInputUtils from "ChatInputUtils" /* 4701 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6405 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9229 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10384 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14146 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14204 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9216 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7598 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9227 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
 
 const require = globalThis.__r;
 
@@ -30,7 +30,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: map1, AnalyticsSections: closure_14 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_17 = createStyles.createStyles({ container: { height: "100%" }, controls: { paddingTop: 4 } });
 let items = [
   {

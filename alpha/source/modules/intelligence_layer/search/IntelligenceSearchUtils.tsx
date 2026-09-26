@@ -1,16 +1,16 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 11849
+// Function ID: 11850
 // Name: IntelligenceSearchUtils
-// Dependencies: [4476, 11832, 11833, 1074, 7298, 11815, 11809, 5051, 11834, 2]
+// Dependencies: [4479, 11846, 11847, 1074, 7303, 11829, 11823, 5058, 11848, 2]
 // Exports: getIntelligenceSearchCitationsCount, getIntelligenceSearchQuery, getIntelligenceSearchStatus, hydrateAndFilterCitations, isIntelligenceSearchActive, isIntelligenceSearchEmptyOrErrored, isSupportedSearchContext, parseConversationId, resolveSearchStatus
 
-// Module 11835 (IntelligenceSearchUtils)
-import MessageRecordUtils from "MessageRecordUtils" /* 5051 */;
-import SearchUtils from "SearchUtils" /* 11809 */;
-import QueryTokenizer from "QueryTokenizer" /* 11815 */;
-import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11834 */;
-import RelationshipStore from "RelationshipStore" /* 4476 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11832 */;
+// Module 11849 (IntelligenceSearchUtils)
+import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
+import SearchUtils from "SearchUtils" /* 11823 */;
+import QueryTokenizer from "QueryTokenizer" /* 11829 */;
+import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11848 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
 
 require = fn;
 function isUnsupportedFilterToken(type) {
@@ -20,10 +20,10 @@ function isUnsupportedFilterToken(type) {
   }
   return tmp;
 }
-const MAX_PRESENTED_CITATIONS = fn(11833).MAX_PRESENTED_CITATIONS;
+const MAX_PRESENTED_CITATIONS = fn(11847).MAX_PRESENTED_CITATIONS;
 const Constants = fn(1074);
 ({ SearchTokenTypes, SearchTypes: hasOwnProperty } = Constants);
-const SearchTabs = fn(7298).SearchTabs;
+const SearchTabs = fn(7303).SearchTabs;
 const items = [, ];
 ({ FILTER_IN: arr[0], ANSWER_IN: arr[1] } = SearchTokenTypes);
 const set = new Set(items);

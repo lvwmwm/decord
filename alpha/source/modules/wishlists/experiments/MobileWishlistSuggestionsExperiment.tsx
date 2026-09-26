@@ -1,11 +1,11 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 12659
+// Function ID: 12660
 // Name: MobileWishlistSuggestionsExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: getIsMobileWishlistSuggestionsEnabled, useIsMobileWishlistSuggestionsEnabled
 
-// Module 12642 (MobileWishlistSuggestionsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12659 (MobileWishlistSuggestionsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-07-smag-mobile-wishlist-suggestions", kind: "user", defaultConfig: { isEnabled: false }, variations: { 0: { isEnabled: false }, 1: { isEnabled: true } } });

@@ -1,18 +1,18 @@
-// Module ID: 14715
-// Function ID: 14716
+// Module ID: 14743
+// Function ID: 14744
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 4821, 5751, 14599, 21, 4829, 14711, 14596, 8263, 14716, 504, 1364, 5894, 4537, 10674, 2]
+// Dependencies: [19, 17, 4825, 5756, 14624, 21, 4836, 14739, 14621, 8271, 14744, 504, 1364, 5899, 4540, 10687, 2]
 
-// Module 14715 (QuestDockBountyIllustration)
+// Module 14743 (QuestDockBountyIllustration)
 import initialize from "initialize" /* 504 */;
-import native from "native" /* 4537 */;
-import APNGPlayer from "APNGPlayer" /* 8263 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 10674 */;
-import QuestDockHooks from "QuestDockHooks" /* 14596 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 14711 */;
-import _modDef14716 from "module_14716" /* 14716 */;
+import native from "native" /* 4540 */;
+import APNGPlayer from "APNGPlayer" /* 8271 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 10687 */;
+import QuestDockHooks from "QuestDockHooks" /* 14621 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 14739 */;
+import _modDef14744 from "module_14744" /* 14744 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;
 function useRivePlaybackGateRef() {
@@ -89,7 +89,7 @@ function QuestDock3DOrbsAPNGPlayer(shouldAnimate) {
       obj.pause();
     }
   }, items);
-  return jsx(APNGPlayer.APNGPlayer, { ref, url: _modDef14716, style: tmp.fill, autoplay: false });
+  return jsx(APNGPlayer.APNGPlayer, { ref, url: _modDef14744, style: tmp.fill, autoplay: false });
 }
 function QuestDock3DOrbsIllustration() {
   const tmp = closure_8();
@@ -109,13 +109,13 @@ function QuestDock3DOrbsIllustration() {
     let tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
   } else {
     const obj4 = { source: null, style: null, resizeMode: "contain", enableAnimation: null, paused: null, accessible: false };
-    const obj5 = { uri: tmp5(14716) };
+    const obj5 = { uri: tmp5(14744) };
     obj4.source = obj5;
     obj4.style = tmp.fill;
     obj4.enableAnimation = !stateFromStores;
     obj4.paused = !tmp7;
-    tmp8Result = tmp8(tmp5(5894), obj4);
-    const tmp5Result = tmp5(5894);
+    tmp8Result = tmp8(tmp5(5899), obj4);
+    const tmp5Result = tmp5(5899);
   }
   return tmp8Result;
 }
@@ -126,11 +126,11 @@ function QuestDockOrbHandsIllustration() {
   return jsx(native.OrbsIllustration_HandsRive, { ref: useRivePlaybackGateRef(), stateMachine: "State Machine 1", fit: "contain" });
 }
 const View = fn(17).View;
-const QuestsExperimentLocations = fn(5751).QuestsExperimentLocations;
-const QuestDockConstants = fn(14599);
+const QuestsExperimentLocations = fn(5756).QuestsExperimentLocations;
+const QuestDockConstants = fn(14624);
 ({ QUEST_DOCK_COLLAPSED_HEIGHT, QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT } = QuestDockConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { frame: { marginRight: -QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT + 5 }, hands: null, orbs: null, fill: { flex: 1 } };
 let size = { width: 124, height: QUEST_DOCK_COLLAPSED_HEIGHT, transform: null };
 let items = [{ translateY: -2 }];
@@ -149,10 +149,10 @@ export default noop.memo(function QuestDockBountyIllustration() {
   if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_2 === illustration) {
     const obj2 = { style: tmp.orbs, children: <QuestDock2DOrbsIllustration /> };
     return <IllustrationFrame style={tmp.orbs}><QuestDock2DOrbsIllustration /></IllustrationFrame>;
-  } else if (tmp2(10674).BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
+  } else if (tmp2(10687).BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
     const obj3 = { style: tmp.hands, children: <QuestDockOrbHandsIllustration /> };
     return <IllustrationFrame style={tmp.hands}><QuestDockOrbHandsIllustration /></IllustrationFrame>;
-  } else if (tmp2(10674).BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
+  } else if (tmp2(10687).BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
     const obj4 = { style: tmp.orbs, children: <QuestDock3DOrbsIllustration /> };
     return <IllustrationFrame style={tmp.orbs}><QuestDock3DOrbsIllustration /></IllustrationFrame>;
   }

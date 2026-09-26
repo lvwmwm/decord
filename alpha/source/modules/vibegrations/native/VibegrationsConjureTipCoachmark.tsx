@@ -1,12 +1,12 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 16401
+// Function ID: 16402
 // Name: VibegrationsConjureTipCoachmark
-// Dependencies: [19, 1115, 3714, 10578, 2]
+// Dependencies: [19, 1115, 3715, 10589, 2]
 // Exports: default
 
-// Module 16372 (VibegrationsConjureTipCoachmark)
+// Module 16401 (VibegrationsConjureTipCoachmark)
 import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
+import _modDef3715 from "module_3715" /* 3715 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,21 +20,21 @@ export default function VibegrationsConjureTipCoachmark(visible) {
   const memo = noop.useMemo(() => {
     const obj = { visible, position: "top", title: null, description: null, buttonLabel: null, buttonVariant: "secondary", onButtonPress: null, onDismiss: null };
     let intl = util.intl;
-    obj.title = intl.string(_modDef3714.n8wtkv);
+    obj.title = intl.string(_modDef3715.n8wtkv);
     const intl2 = util.intl;
-    const items = [intl2.string(_modDef3714.cK0dk1)];
-    const items1 = [_modDef3714.ZK2O25, _modDef3714["122Ir6"], _modDef3714["9KCASa"]];
+    const items = [intl2.string(_modDef3715.cK0dk1)];
+    const items1 = [_modDef3715.ZK2O25, _modDef3715["122Ir6"], _modDef3715["9KCASa"]];
     HermesBuiltin.arraySpread(items1.map((item) => {
       const intl = visible(closure_1_2[1]).intl;
       return "\u2022 " + intl.string(item);
     }), 1);
     obj.description = items.join("\n");
     const intl3 = util.intl;
-    obj.buttonLabel = intl3.string(_modDef3714.sZCqrE);
+    obj.buttonLabel = intl3.string(_modDef3715.sZCqrE);
     obj.onButtonPress = onDismiss;
     obj.onDismiss = onDismiss;
     return obj;
   }, items);
-  const coachmark = visible(10578).useCoachmark(visible.targetRef, memo);
+  const coachmark = visible(10589).useCoachmark(visible.targetRef, memo);
   return null;
 };

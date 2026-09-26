@@ -1,11 +1,11 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 14681
+// Function ID: 14682
 // Name: QuestGameLogotype
-// Dependencies: [32, 19, 17, 21, 5277, 4829, 576, 4563, 5273, 7901, 5894, 2]
+// Dependencies: [32, 19, 17, 21, 5284, 4836, 576, 4566, 5280, 7909, 5899, 2]
 
-// Module 14656 (QuestGameLogotype)
+// Module 14681 (QuestGameLogotype)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5273 */;
+import spring from "spring" /* 5280 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,9 +14,9 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
 let SPRING_CONFIG = {};
-const merged = Object.assign(fn(5277).springSlow);
+const merged = Object.assign(fn(5284).springSlow);
 SPRING_CONFIG.overshootClamping = true;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 const obj2 = { logo: { marginBottom: nativeDefault.space.PX_4 } };
 let closure_9 = createStyles.createStyles(obj2);
 const __initData = { code: "function QuestGameLogotypeTsx1(){const{withSpring,logoDimensionStyles,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(logoDimensionStyles==null?0:1,SPRING_CONFIG,'animate-always')};}" };

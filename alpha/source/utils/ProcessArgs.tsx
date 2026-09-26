@@ -1,10 +1,10 @@
-// Module ID: 5446
-// Function ID: 5447
+// Module ID: 5453
+// Function ID: 5454
 // Name: ProcessArgs
-// Dependencies: [4447, 2]
+// Dependencies: [4450, 2]
 
-// Module 5446 (ProcessArgs)
-import DiscordNativeDefault from "DiscordNative" /* 4447 */;
+// Module 5453 (ProcessArgs)
+import DiscordNativeDefault from "DiscordNative" /* 4450 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function ProcessArgs() {

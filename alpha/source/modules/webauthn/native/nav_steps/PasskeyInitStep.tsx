@@ -1,17 +1,17 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14227
+// Function ID: 14228
 // Name: PasskeyInitStep
-// Dependencies: [32, 19, 17, 14190, 14191, 21, 4829, 576, 504, 14203, 4825, 1115, 5740, 7358, 4786, 4796, 14205, 1980, 9702, 5994, 5912, 14206, 1484, 6009, 6365, 6790, 8045, 2]
+// Dependencies: [32, 19, 17, 14215, 14216, 21, 4836, 576, 504, 14228, 4832, 1115, 5745, 7363, 4790, 4800, 14230, 1981, 9713, 5999, 5917, 14231, 1485, 6014, 6370, 6795, 8053, 2]
 // Exports: default
 
-// Module 14202 (PasskeyInitStep)
+// Module 14227 (PasskeyInitStep)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6009 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6014 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14190 */;
+import WebAuthnStore from "WebAuthnStore" /* 14215 */;
 
 require = fn;
 function CredentialList(navigation) {
@@ -26,11 +26,11 @@ function CredentialList(navigation) {
   [c2, c3] = noop.useState(false);
   if (0 === credentials.length) {
     let obj2 = { style: tmp3.upsellContainer, children: null };
-    const items1 = [closure_8(tmp(14203).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    const items1 = [closure_8(tmp(14228).PasskeysSpotIllustration, { scale: 0.6 }), ];
     let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: null };
     let intl2 = tmp(1115).intl;
     obj3.children = intl2.string(tmp(1115).t.FSNwFW);
-    items1[1] = closure_8(tmp(4825).Text, obj3);
+    items1[1] = closure_8(tmp(4832).Text, obj3);
     obj2.children = items1;
     return closure_9(View, obj2);
   } else {
@@ -47,7 +47,7 @@ function CredentialList(navigation) {
       obj3.disabled = _undefined;
       obj3.loading = _undefined;
       obj3.onPress = function onPress() {
-        return ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14205, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", { credential, deleting, setDeleting });
+        return ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14230, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", { credential, deleting, setDeleting });
       };
       const items = [closure_1_8(navigation(_undefined[13]).IconButton, obj3), ];
       const obj5 = { variant: "secondary", icon: closure_1_8(navigation(_undefined[18]).PencilIcon, {}), accessibilityLabel: null, size: "sm", disabled: null, loading: null, onPress: null };
@@ -71,15 +71,15 @@ function CredentialList(navigation) {
       obj.subLabel = formatResult;
       return closure_1_8(navigation(_undefined[20]).TableRow, obj, label.id);
     });
-    return closure_8(tmp(5994).TableRowGroup, obj4);
+    return closure_8(tmp(5999).TableRowGroup, obj4);
   }
   const tmp4 = _slicedToArray(noop.useState(false), 2);
 }
 const View = fn(17).View;
-const WebAuthnScreens = fn(14191).WebAuthnScreens;
+const WebAuthnScreens = fn(14216).WebAuthnScreens;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "space-between", marginLeft: nativeDefault.space.PX_16, marginRight: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8 }, upsellContainer: null, upsellText: null, iconButtonGroup: null, headerAddButton: null };
 let obj3 = { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "space-between", marginLeft: nativeDefault.space.PX_16, marginRight: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8 };
 obj2.upsellContainer = { marginTop: nativeDefault.space.PX_16, alignItems: "center" };

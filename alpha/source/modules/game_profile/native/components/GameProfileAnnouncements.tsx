@@ -1,22 +1,22 @@
-// Module ID: 8204
-// Function ID: 8205
+// Module ID: 8212
+// Function ID: 8213
 // Name: GameProfileAnnouncements
-// Dependencies: [19, 17, 8159, 21, 1364, 5294, 1115, 4829, 576, 8187, 6359, 8186, 8205, 8206, 4825, 8209, 4509, 8211, 6578, 8213, 8131, 8125, 8216, 8172, 2]
+// Dependencies: [19, 17, 8167, 21, 1364, 5301, 1115, 4836, 576, 8195, 6364, 8194, 8213, 8214, 4832, 8217, 4512, 8219, 6583, 8221, 8139, 8133, 8224, 8180, 2]
 // Exports: default
 
-// Module 8204 (GameProfileAnnouncements)
+// Module 8212 (GameProfileAnnouncements)
 import nativeDefault from "native" /* 576 */;
-import DateUtils from "DateUtils" /* 4509 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import CustomMarkupAll from "CustomMarkup" /* 5294 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6359 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8125 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8131 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8187 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 8205 */;
-import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 8206 */;
-import ImageWithPlaceholder from "ImageWithPlaceholder" /* 8209 */;
-import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 8216 */;
+import DateUtils from "DateUtils" /* 4512 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import CustomMarkupAll from "CustomMarkup" /* 5301 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6364 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8133 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8195 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 8213 */;
+import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 8214 */;
+import ImageWithPlaceholder from "ImageWithPlaceholder" /* 8217 */;
+import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 8224 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -143,7 +143,7 @@ function EmbedAnnouncementCard(message) {
     if (tmp13Result2) {
       const obj21 = { style: tmp.reactionInfo, children: null };
       const obj22 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const items6 = [tmp11(tmp34(8211).ReactionIcon, obj22), ];
+      const items6 = [tmp11(tmp34(8219).ReactionIcon, obj22), ];
       let tmp45 = null != obj15;
       if (tmp45) {
         tmp45 = obj15.locale === tmp34(1115).intl.currentLocale;
@@ -158,7 +158,7 @@ function EmbedAnnouncementCard(message) {
       const obj24 = { variant: "text-xs/medium", color: "text-muted", children: null };
       const format = obj15.format;
       obj24.children = format.format(message.reactionCount);
-      items6[1] = tmp11(tmp34(4825).Text, obj24);
+      items6[1] = tmp11(tmp34(4832).Text, obj24);
       obj21.children = items6;
       tmp13Result2 = tmp13(tmp14, obj21);
     }
@@ -244,7 +244,7 @@ function MessageAnnouncementCard(message) {
   if (tmp10Result) {
     const obj13 = { style: tmp.reactionInfo, children: null };
     const obj14 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-    const items3 = [tmp26(tmp27(8211).ReactionIcon, obj14), ];
+    const items3 = [tmp26(tmp27(8219).ReactionIcon, obj14), ];
     let tmp33 = null != obj15;
     if (tmp33) {
       tmp33 = obj15.locale === tmp27(1115).intl.currentLocale;
@@ -258,7 +258,7 @@ function MessageAnnouncementCard(message) {
     const obj16 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const format = obj15.format;
     obj16.children = format.format(message.reactionCount);
-    items3[1] = tmp26(tmp27(4825).Text, obj16);
+    items3[1] = tmp26(tmp27(4832).Text, obj16);
     obj13.children = items3;
     tmp10Result = tmp10(tmp17, obj13);
   }
@@ -293,7 +293,7 @@ function PollAnnouncementCard(message) {
     };
     const obj3 = { style: tmp.cardBody, children: null };
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-    const items = [closure_9(message(4825).Text, obj4), , ];
+    const items = [closure_9(message(4832).Text, obj4), , ];
     const obj5 = { style: tmp.pollAnswers, children: null };
     const items1 = [
       substr.map((poll_media) => {
@@ -313,7 +313,7 @@ function PollAnnouncementCard(message) {
       const intl = tmp13(1115).intl;
       const obj6 = { count: diff };
       obj.children = intl.format(tmp13(1115).t["mv/nIa"], obj6);
-      tmp9Result = tmp9(tmp13(4825).Text, obj);
+      tmp9Result = tmp9(tmp13(4832).Text, obj);
     }
     items1[1] = tmp9Result;
     obj5.children = items1;
@@ -325,9 +325,9 @@ function PollAnnouncementCard(message) {
     const _Date = Date;
     const date = new Date(message.timestamp);
     obj9.createdAt = date;
-    obj9.expiryLabel = message(8206).getPollExpiryLabel(poll);
+    obj9.expiryLabel = message(8214).getPollExpiryLabel(poll);
     obj8.children = intl2.format(message(1115).t.t0FTsH, obj9);
-    obj7.children = closure_9(message(4825).Text, obj8);
+    obj7.children = closure_9(message(4832).Text, obj8);
     items[2] = closure_9(closure_6, obj7);
     obj3.children = items;
     obj2.children = closure_10(closure_6, obj3);
@@ -336,12 +336,12 @@ function PollAnnouncementCard(message) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire, Pressable: closure_7 } = get_ActivityIndicator);
-const MAX_VISIBLE_ANNOUNCEMENTS = fn(8159).MAX_VISIBLE_ANNOUNCEMENTS;
+const MAX_VISIBLE_ANNOUNCEMENTS = fn(8167).MAX_VISIBLE_ANNOUNCEMENTS;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const PlatformUtils = fn(1364);
 let closure_12 = null;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { smallCardsScroller: { marginHorizontal: -nativeDefault.space.PX_16, overflow: "visible" }, skeletonCardsScroller: null, smallCardsContainer: null, skeletonCardsContainer: null, card: null, cardBody: null, smallCardMedia: null, mediaImage: null, metadataRow: null, reactionInfo: null, embedContentArea: null, embedAuthorRow: null, embedAuthorIcon: null, embedProviderIcon: null, embedMedia: null, pollAnswers: null, pollAnswerOption: null, pollMoreOptions: null, skeletonCard: null, skeletonCardLarge: null, skeletonAnimationRoot: null, skeletonCardImage: null, skeletonCardBody: null, skeletonCardContent: null, skeletonCardMetadata: null };
 let obj4 = { marginHorizontal: -nativeDefault.space.PX_16, overflow: "visible" };
 obj.skeletonCardsScroller = { marginHorizontal: -nativeDefault.space.PX_16 };

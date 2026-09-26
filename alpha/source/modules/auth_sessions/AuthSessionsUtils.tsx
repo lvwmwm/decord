@@ -1,15 +1,15 @@
-// Module ID: 14206
-// Function ID: 14207
+// Module ID: 14231
+// Function ID: 14232
 // Name: AuthSessionsUtils
-// Dependencies: [19, 502, 14207, 504, 1115, 4418, 2]
+// Dependencies: [19, 502, 14232, 504, 1115, 4421, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 14206 (AuthSessionsUtils)
+// Module 14231 (AuthSessionsUtils)
 import util from "util" /* 1115 */;
-import _modDef4418 from "module_4418" /* 4418 */;
+import _modDef4421 from "module_4421" /* 4421 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AuthSessionsStore from "AuthSessionsStore" /* 14207 */;
+import AuthSessionsStore from "AuthSessionsStore" /* 14232 */;
 
 require = fn;
 const size = fn(2);
@@ -44,8 +44,8 @@ export const formatDate = function formatDate(arg0) {
     const intl = util.intl;
     let stringResult = intl.string(util.t.TXCmfL);
   } else {
-    stringResult = _modDef4418(arg0).fromNow();
-    const obj = _modDef4418(arg0);
+    stringResult = _modDef4421(arg0).fromNow();
+    const obj = _modDef4421(arg0);
   }
   return stringResult;
 };

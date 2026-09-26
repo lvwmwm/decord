@@ -1,11 +1,11 @@
 // Module ID: 4213
 // Function ID: 4214
-// Dependencies: [3915, 3916]
+// Dependencies: [3918, 3919]
 // Exports: default
 
 // Module 4213
-import _typeof_mod from "module_3915" /* 3915 */;
-import requiredArgs_mod from "requiredArgs" /* 3916 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,8 +24,10 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isFirstDayOfMonth(arg0) {
-  requiredArgs.default(1, arguments);
-  return 1 === _typeof.default(arg0).getDate();
+export default function isBefore(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const time = defaultResult1.getTime();
+  return time < _typeof.default(arg1).getTime();
 };
 export default exports.default;

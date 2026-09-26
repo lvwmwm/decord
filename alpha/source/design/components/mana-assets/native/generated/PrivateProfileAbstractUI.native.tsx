@@ -1,13 +1,13 @@
-// Module ID: 15977
-// Function ID: 15978
+// Module ID: 16005
+// Function ID: 16006
 // Name: PrivateProfileAbstractUI
-// Dependencies: [21, 5894, 15978, 2]
+// Dependencies: [21, 5899, 16006, 2]
 // Exports: PrivateProfileAbstractUI
 
-// Module 15977 (PrivateProfileAbstractUI)
+// Module 16005 (PrivateProfileAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5894 */;
-import _modDef15978 from "module_15978" /* 15978 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef16006 from "module_16006" /* 16006 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const PrivateProfileAbstractUI = function PrivateProfileAbstractUI(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef15978 };
+  const obj2 = { uri: _modDef16006 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,12 +1,12 @@
-// Module ID: 5279
-// Function ID: 5280
+// Module ID: 5286
+// Function ID: 5287
 // Name: ButtonConstants
-// Dependencies: [5276, 576, 2]
+// Dependencies: [5283, 576, 2]
 // Exports: getButtonBorderRadius, getButtonDefaultTextVariant, getButtonPadding
 
-// Module 5279 (ButtonConstants)
+// Module 5286 (ButtonConstants)
 import nativeDefault from "native" /* 576 */;
-import Icon_mod from "Icon" /* 5276 */;
+import Icon_mod from "Icon" /* 5283 */;
 import size from "module_2" /* 2 */;
 
 const SMALL = Icon.IconSizes.SMALL;

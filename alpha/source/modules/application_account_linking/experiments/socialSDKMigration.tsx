@@ -1,10 +1,10 @@
-// Module ID: 2007
-// Function ID: 2008
+// Module ID: 2008
+// Function ID: 2009
 // Name: socialSDKMigration
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 2007 (socialSDKMigration)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 2008 (socialSDKMigration)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-battlenet-social-sdk-migration", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

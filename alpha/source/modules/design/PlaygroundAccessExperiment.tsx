@@ -1,15 +1,15 @@
-// Module ID: 10440
-// Function ID: 10441
+// Module ID: 10451
+// Function ID: 10452
 // Name: PlaygroundAccessExperiment
-// Dependencies: [1372, 1434, 504, 2]
+// Dependencies: [1372, 1435, 504, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment, useHasPlaygroundAccess, usePlaygroundAccessExperiment
 
-// Module 10440 (PlaygroundAccessExperiment)
+// Module 10451 (PlaygroundAccessExperiment)
 import initialize from "initialize" /* 504 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const ApexExperiment = fn(1434);
+const ApexExperiment = fn(1435);
 const obj2 = { name: "2026-02-mana-playground-access", kind: "user", defaultConfig: { enabled: false }, variations: null };
 const obj3 = { 1: null };
 obj3[1] = { enabled: true };

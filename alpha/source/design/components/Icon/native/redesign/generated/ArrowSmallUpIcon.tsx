@@ -1,13 +1,13 @@
-// Module ID: 15323
-// Function ID: 15324
+// Module ID: 15350
+// Function ID: 15351
 // Name: ArrowSmallUpIcon
-// Dependencies: [19, 21, 576, 4527, 15324, 2]
+// Dependencies: [19, 21, 576, 4530, 15351, 2]
 // Exports: ArrowSmallUpIcon
 
-// Module 15323 (ArrowSmallUpIcon)
+// Module 15350 (ArrowSmallUpIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod15324 from "module_15324" /* 15324 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod15351 from "module_15351" /* 15351 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ArrowSmallUpIcon = function ArrowSmallUpIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15324, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15351, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

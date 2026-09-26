@@ -1,18 +1,18 @@
-// Module ID: 7240
-// Function ID: 7241
+// Module ID: 7245
+// Function ID: 7246
 // Name: BurstReactionAnimation
-// Dependencies: [19, 4821, 21, 4829, 7198, 504, 7241, 5836, 2]
+// Dependencies: [19, 4825, 21, 4836, 7203, 504, 7246, 5841, 2]
 // Exports: default
 
-// Module 7240 (BurstReactionAnimation)
+// Module 7245 (BurstReactionAnimation)
 import initialize from "initialize" /* 504 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7198 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7203 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles({ content: { width: "100%" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimation.tsx");
@@ -46,6 +46,6 @@ export default function BurstReactionAnimation(arg0) {
     const merged1 = Object.assign(merged);
     const merged2 = Object.assign(obj3);
     obj4.source = burstReactionAnimationSource;
-    return jsx(importDefault(withFadeOut ? 7241 : 5836), { style: tmp2.content, loop: false, speed: null });
+    return jsx(importDefault(withFadeOut ? 7246 : 5841), { style: tmp2.content, loop: false, speed: null });
   }
 };

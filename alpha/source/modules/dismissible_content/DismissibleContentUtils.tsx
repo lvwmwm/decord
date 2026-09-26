@@ -1,27 +1,27 @@
-// Module ID: 2030
-// Function ID: 2031
+// Module ID: 2031
+// Function ID: 2032
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1220, 2031, 2032, 2034, 2041, 1074, 2029, 2042, 11, 2025, 4673, 504, 2028, 573, 9689, 1241, 2033, 2]
+// Dependencies: [32, 5, 1220, 2032, 2033, 2035, 2042, 1074, 2030, 2043, 11, 2026, 4676, 504, 2029, 573, 9700, 1241, 2034, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
-// Module 2030 (DismissibleContentUtils)
+// Module 2031 (DismissibleContentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2025 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2029 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2033 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4673 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 9689 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2026 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2030 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2034 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4676 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 9700 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2032 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2033 */;
 
 const require = globalThis.__r;
 
-const VersionedDismissibleContentUtils = tmp(2042);
+const VersionedDismissibleContentUtils = tmp(2043);
 require = fn;
 function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed) {
   const obj2 = { lastDismissedVersion: versionedDismissibleContentCurrentVersion, lastDismissedAtMs: null, lastDismissedObjectId: "0", numTimesDismissed: null };
@@ -432,13 +432,13 @@ function trackDismissibleContentDismissed(arg0, guildId) {
   obj2.snowflake_id = snowflakeId;
   AnalyticsUtilsDefault.track(AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED, obj2);
 }
-const DCFEventTypes = fn(2031).DCFEventTypes;
-const DismissibleContentShownStateStore = fn(2034);
+const DCFEventTypes = fn(2032).DCFEventTypes;
+const DismissibleContentShownStateStore = fn(2035);
 ({ addCandidateContent: closure_8, removeCandidateContent: closure_9, isContentShown: c10, getCurrentlyShownCounts: closure_11 } = DismissibleContentShownStateStore);
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let c14 = 2592000000;
-let items = [fn(2028).DismissibleContent.ACCOUNT_LINK_INVITE_FRIENDS, fn(2028).DismissibleContent.AUTOCLIPPING_ACCOUNT_PANEL_COACHMARK];
+let items = [fn(2029).DismissibleContent.ACCOUNT_LINK_INVITE_FRIENDS, fn(2029).DismissibleContent.AUTOCLIPPING_ACCOUNT_PANEL_COACHMARK];
 const set = new Set(items);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentUtils.tsx");
@@ -452,8 +452,8 @@ export const getDismissedRecurringDismissibleContentState = function getDismisse
   }
   let num = 0;
   if (obj.isVersionedDismissibleContent(id)) {
-    num = tmp2(2042).getVersionedDismissibleContentCurrentVersion(id);
-    const tmp2Result = tmp2(2042);
+    num = tmp2(2043).getVersionedDismissibleContentCurrentVersion(id);
+    const tmp2Result = tmp2(2043);
   }
   const obj2 = { lastDismissedVersion: num, lastDismissedAtMs: null, lastDismissedObjectId: null, numTimesDismissed: null };
   obj = DismissibleContentTypes;

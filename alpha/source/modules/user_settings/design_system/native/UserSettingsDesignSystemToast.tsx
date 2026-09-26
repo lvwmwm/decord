@@ -1,15 +1,15 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15388
+// Function ID: 15389
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 4829, 2]
+// Dependencies: [19, 17, 21, 4836, 2]
 // Exports: default
 
-// Module 15361 (UserSettingsDesignSystemToast)
+// Module 15388 (UserSettingsDesignSystemToast)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_2 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemToast.tsx");

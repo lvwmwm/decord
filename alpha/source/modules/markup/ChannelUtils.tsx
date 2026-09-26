@@ -1,11 +1,11 @@
-// Module ID: 5308
-// Function ID: 5309
+// Module ID: 5315
+// Function ID: 5316
 // Name: markup/ChannelUtils
-// Dependencies: [2048, 2]
+// Dependencies: [2049, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 5308 (markup/ChannelUtils)
-import ChannelRecord from "ChannelRecord" /* 2048 */;
+// Module 5315 (markup/ChannelUtils)
+import ChannelRecord from "ChannelRecord" /* 2049 */;
 import size from "module_2" /* 2 */;
 
 ({ isGuildSelectableChannelType: closure_0, isGuildVocalChannelType: closure_1 } = ChannelRecord);

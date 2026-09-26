@@ -1,15 +1,15 @@
-// Module ID: 6662
-// Function ID: 6663
+// Module ID: 6667
+// Function ID: 6668
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 6512, 2044, 2101, 2066, 1074, 2051, 5363, 6663, 6672, 6642, 6675, 6677, 6638, 6678, 6679, 4743, 6680, 6640, 1370, 6727, 4842, 6728, 2]
+// Dependencies: [5, 6517, 2045, 2102, 2067, 1074, 2052, 5370, 6668, 6677, 6647, 6680, 6682, 6643, 6683, 6684, 4747, 6685, 6645, 1370, 6732, 4849, 6733, 2]
 // Exports: default
 
-// Module 6662 (isAccessibleChannelOrThreadPath)
+// Module 6667 (isAccessibleChannelOrThreadPath)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6512 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6517 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = fn;
 let closure_12 = async function _isAccessibleChannelOrThreadPath(arg0, value) {
@@ -238,7 +238,7 @@ let closure_12 = async function _isAccessibleChannelOrThreadPath(arg0, value) {
 };
 const Constants = fn(1074);
 ({ GuildFeatures: closure_8, ME: closure_9 } = Constants);
-const ChannelConstants = fn(2051);
+const ChannelConstants = fn(2052);
 ({ isStaticChannelRoute: c10, StaticChannelRoute: closure_11 } = ChannelConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/links/isAccessibleChannelOrThreadPath.tsx");

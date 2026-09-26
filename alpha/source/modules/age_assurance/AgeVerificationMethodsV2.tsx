@@ -1,10 +1,10 @@
-// Module ID: 7880
-// Function ID: 7881
+// Module ID: 7888
+// Function ID: 7889
 // Name: AgeVerificationMethodsV2
 // Dependencies: [5, 502, 1074, 1271, 2]
 // Exports: fetchAgeVerificationMethodsV2, fetchAgeVerificationMethodsV2SuspendedUser
 
-// Module 7880 (AgeVerificationMethodsV2)
+// Module 7888 (AgeVerificationMethodsV2)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

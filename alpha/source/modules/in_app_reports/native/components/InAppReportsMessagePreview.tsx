@@ -1,23 +1,23 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 8111
+// Function ID: 8112
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 4829, 576, 7369, 4680, 4825, 1115, 8104, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 7374, 4683, 4832, 1115, 8112, 2]
 // Exports: default
 
-// Module 8103 (InAppReportsMessagePreview)
+// Module 8111 (InAppReportsMessagePreview)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ColorUtils from "ColorUtils" /* 4680 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import RowGeneratorDefault from "RowGenerator" /* 7369 */;
-import ChatItemDefault from "ChatItem" /* 8104 */;
+import ColorUtils from "ColorUtils" /* 4683 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import RowGeneratorDefault from "RowGenerator" /* 7374 */;
+import ChatItemDefault from "ChatItem" /* 8112 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { lineHeight: 16, marginBottom: 8 }, chatItemContainer: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.chatItemContainer = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };

@@ -1,9 +1,9 @@
-// Module ID: 11834
-// Function ID: 11835
+// Module ID: 11848
+// Function ID: 11849
 // Name: IntelligenceSearchTypes
 // Dependencies: [2]
 
-// Module 11834 (IntelligenceSearchTypes)
+// Module 11848 (IntelligenceSearchTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/IntelligenceSearchTypes.tsx");

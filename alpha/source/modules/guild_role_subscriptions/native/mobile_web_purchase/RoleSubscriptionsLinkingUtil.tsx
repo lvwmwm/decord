@@ -1,9 +1,9 @@
-// Module ID: 6729
-// Function ID: 6730
+// Module ID: 6734
+// Function ID: 6735
 // Name: RoleSubscriptionsLinkingUtil
-// Dependencies: [5, 1074, 2051, 6730, 1980, 3, 6734, 2]
+// Dependencies: [5, 1074, 2052, 6735, 1981, 3, 6739, 2]
 
-// Module 6729 (RoleSubscriptionsLinkingUtil)
+// Module 6734 (RoleSubscriptionsLinkingUtil)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -288,7 +288,7 @@ let closure_12 = async function _performDeveloperPortalRedirectWithTokenHandoff(
 };
 const Constants = fn(1074);
 ({ RelativeMarketingURLs: closure_4, Routes: hasOwnProperty } = Constants);
-const StaticChannelRoute = fn(2051).StaticChannelRoute;
+const StaticChannelRoute = fn(2052).StaticChannelRoute;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/mobile_web_purchase/RoleSubscriptionsLinkingUtil.tsx");
 

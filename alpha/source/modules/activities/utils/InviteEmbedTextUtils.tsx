@@ -1,13 +1,13 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12806
+// Function ID: 12807
 // Name: InviteEmbedTextUtils
-// Dependencies: [1372, 1074, 1115, 2972, 4981, 2]
+// Dependencies: [1372, 1074, 1115, 2973, 4988, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 12789 (InviteEmbedTextUtils)
+// Module 12806 (InviteEmbedTextUtils)
 import util from "util" /* 1115 */;
-import _modDef2972 from "module_2972" /* 2972 */;
-import NicknameUtils from "NicknameUtils" /* 4981 */;
+import _modDef2973 from "module_2973" /* 2973 */;
+import NicknameUtils from "NicknameUtils" /* 4988 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -76,7 +76,7 @@ export const getHeaderText = function getHeaderText(name, arg1, arg2) {
     return stringResult;
   } else if (tmp.STREAM_REQUEST === arg1) {
     const intl2 = util.intl;
-    return intl2.string(_modDef2972.DKHhec);
+    return intl2.string(_modDef2973.DKHhec);
   } else {
     const JOIN_REQUEST = tmp.JOIN_REQUEST;
     const intl = util.intl;
@@ -86,11 +86,11 @@ export const getHeaderText = function getHeaderText(name, arg1, arg2) {
 export const getRequestToStreamText = function getRequestToStreamText(author, guild_id, id) {
   if (author.author.id === id) {
     const intl2 = util.intl;
-    let stringResult = intl2.string(_modDef2972["8B3U5O"]);
+    let stringResult = intl2.string(_modDef2973["8B3U5O"]);
   } else {
     const intl = util.intl;
     const obj = { username: NicknameUtils.getName(guild_id.guild_id, guild_id.id, author.author) };
-    stringResult = intl.formatToPlainString(_modDef2972["d/qbC0"], obj);
+    stringResult = intl.formatToPlainString(_modDef2973["d/qbC0"], obj);
   }
   return stringResult;
 };
@@ -107,11 +107,11 @@ export const getDeadGameInviteText = function getDeadGameInviteText(activity, na
         if (tmp2.STREAM_REQUEST === type) {
           if (activity.author.id === id2) {
             const intl2 = util.intl;
-            let stringResult = intl2.string(_modDef2972["8B3U5O"]);
+            let stringResult = intl2.string(_modDef2973["8B3U5O"]);
           } else {
             const intl = util.intl;
             const obj = { username: NicknameUtils.getName(guild_id.guild_id, guild_id.id, activity.author) };
-            stringResult = intl.formatToPlainString(_modDef2972["d/qbC0"], obj);
+            stringResult = intl.formatToPlainString(_modDef2973["d/qbC0"], obj);
           }
           return stringResult;
         } else {

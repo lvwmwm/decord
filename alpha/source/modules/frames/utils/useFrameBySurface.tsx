@@ -1,11 +1,11 @@
-// Module ID: 16253
-// Function ID: 16254
+// Module ID: 16281
+// Function ID: 16282
 // Name: useFrameBySurface
-// Dependencies: [8491, 504, 2]
+// Dependencies: [8499, 504, 2]
 // Exports: default
 
-// Module 16253 (useFrameBySurface)
-import FramesStore from "FramesStore" /* 8491 */;
+// Module 16281 (useFrameBySurface)
+import FramesStore from "FramesStore" /* 8499 */;
 
 const require = globalThis.__r;
 

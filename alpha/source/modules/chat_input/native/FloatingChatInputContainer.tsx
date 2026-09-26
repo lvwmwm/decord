@@ -1,25 +1,25 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 11900
+// Function ID: 11901
 // Name: FloatingChatInputContainer
-// Dependencies: [32, 19, 21, 4563, 4528, 576, 1626, 4699, 1610, 4830, 4833, 2]
+// Dependencies: [32, 19, 21, 4566, 4531, 576, 1627, 4703, 1611, 4837, 4840, 2]
 // Exports: default
 
-// Module 11882 (FloatingChatInputContainer)
+// Module 11900 (FloatingChatInputContainer)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4699 */;
-import timing from "timing" /* 4830 */;
-import timingPresets from "timingPresets" /* 4833 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4703 */;
+import timing from "timing" /* 4837 */;
+import timingPresets from "timingPresets" /* 4840 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function useKeyboardOpenPaddingStyle() {
-  token = token(4528).useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
-  let obj = token(4528);
+  token = token(4531).useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
+  let obj = token(4531);
   const obj2 = noop;
   [tmp5, importDefault] = sharedValue(noop.useState(() => {
-    const KeyboardController = token(1626).KeyboardController;
+    const KeyboardController = token(1627).KeyboardController;
     const stateResult = KeyboardController.state();
     let num;
     if (stateResult != null) {
@@ -31,9 +31,9 @@ function useKeyboardOpenPaddingStyle() {
     return num > 0;
   }), 2);
   const effect = noop.useEffect(() => {
-    const KeyboardEvents = token(1626).KeyboardEvents;
+    const KeyboardEvents = token(1627).KeyboardEvents;
     closure_0 = KeyboardEvents.addListener("keyboardWillShow", () => closure_1(true));
-    const KeyboardEvents2 = token(1626).KeyboardEvents;
+    const KeyboardEvents2 = token(1627).KeyboardEvents;
     closure_1 = KeyboardEvents2.addListener("keyboardWillHide", () => closure_1(false));
     return () => {
       closure_0.remove();
@@ -41,7 +41,7 @@ function useKeyboardOpenPaddingStyle() {
     };
   }, []);
   const tmp4 = sharedValue(noop.useState(() => {
-    const KeyboardController = token(1626).KeyboardController;
+    const KeyboardController = token(1627).KeyboardController;
     const stateResult = KeyboardController.state();
     let num;
     if (stateResult != null) {
@@ -52,12 +52,12 @@ function useKeyboardOpenPaddingStyle() {
     }
     return num > 0;
   }), 2);
-  const obj3 = token(4699);
+  const obj3 = token(4703);
   if (!tmp5) {
-    tmp5 = true === obj3.useKeyboardContextForType(token(1610).KeyboardTypes.SYSTEM).keyboardWillOpen;
+    tmp5 = true === obj3.useKeyboardContextForType(token(1611).KeyboardTypes.SYSTEM).keyboardWillOpen;
   }
   if (!tmp5) {
-    tmp5 = tmp7 !== token(1610).KeyboardTypes.SYSTEM;
+    tmp5 = tmp7 !== token(1611).KeyboardTypes.SYSTEM;
   }
   dependencyMap = tmp5;
   tmp7 = useKeyboardTypeDefault();
@@ -65,7 +65,7 @@ function useKeyboardOpenPaddingStyle() {
   if (tmp5) {
     num = token;
   }
-  sharedValue = token(4563).useSharedValue(num);
+  sharedValue = token(4566).useSharedValue(num);
   const items = [tmp5, token, sharedValue];
   const effect1 = obj2.useEffect(() => {
     let num = 0;
@@ -75,17 +75,17 @@ function useKeyboardOpenPaddingStyle() {
     const obj = timing;
     const result = sharedValue.set(obj.withTiming(num, { duration: timingPresets.timingStandardDuration, easing }));
   }, items);
-  const tmpResult = token(4563);
+  const tmpResult = token(4566);
   const fn = function b() {
     return { paddingBottom: sharedValue.get() };
   };
   fn.__closure = { paddingSV: sharedValue };
   fn.__workletHash = 5673482424037;
   fn.__initData = __initData;
-  return token(4563).useAnimatedStyle(fn);
+  return token(4566).useAnimatedStyle(fn);
 }
 const jsx = fn(21).jsx;
-const Easing = fn(4563).Easing;
+const Easing = fn(4566).Easing;
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);
 const __initData = { code: "function FloatingChatInputContainerTsx1(){const{paddingSV}=this.__closure;return{paddingBottom:paddingSV.get()};}" };
 const size = fn(2);

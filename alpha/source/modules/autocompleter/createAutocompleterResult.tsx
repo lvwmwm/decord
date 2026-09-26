@@ -1,11 +1,11 @@
-// Module ID: 9286
-// Function ID: 9287
+// Module ID: 9297
+// Function ID: 9298
 // Name: AutocompleterConstants
-// Dependencies: [5822, 2]
+// Dependencies: [5827, 2]
 // Exports: createHeaderResult
 
-// Module 9286 (AutocompleterConstants)
-import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5822 */;
+// Module 9297 (AutocompleterConstants)
+import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5827 */;
 import size from "module_2" /* 2 */;
 
 ({ HeaderRecord: closure_0, AutocompleterResultTypes: closure_1 } = AutocompleterConstants);

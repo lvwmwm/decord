@@ -1,14 +1,14 @@
-// Module ID: 6469
-// Function ID: 6470
+// Module ID: 6474
+// Function ID: 6475
 // Name: ViewEmptyState
-// Dependencies: [19, 17, 1074, 21, 4829, 5831, 576, 1177, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 5836, 576, 1177, 2]
 // Exports: default
 
-// Module 6469 (ViewEmptyState)
+// Module 6474 (ViewEmptyState)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5831 */;
+import TextStyles from "TextStyles" /* 5836 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 const Fonts = fn(1074).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { emptyContainer: { flex: 1, justifyContent: "center", alignItems: "center", marginHorizontal: 36 }, emptyImage: { width: 170, height: 130 }, fixOpticalIllusion: { marginTop: -50, alignItems: "center" }, emptyLabel: null, emptyText: null };
 const obj3 = {};
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));

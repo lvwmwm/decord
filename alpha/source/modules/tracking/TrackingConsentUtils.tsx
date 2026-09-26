@@ -1,9 +1,9 @@
-// Module ID: 13728
-// Function ID: 13729
+// Module ID: 13684
+// Function ID: 13685
 // Name: TrackingConsentUtils
 // Dependencies: [2]
 
-// Module 13728 (TrackingConsentUtils)
+// Module 13684 (TrackingConsentUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tracking/TrackingConsentUtils.tsx");

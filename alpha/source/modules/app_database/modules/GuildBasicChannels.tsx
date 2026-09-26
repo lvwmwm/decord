@@ -1,22 +1,22 @@
-// Module ID: 7056
-// Function ID: 7057
+// Module ID: 7061
+// Function ID: 7062
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5584, 2048, 502, 2044, 2101, 2066, 4466, 2045, 3, 2073, 7057, 1086, 4475, 2]
+// Dependencies: [32, 5, 5589, 2049, 502, 2045, 2102, 2067, 4469, 2046, 3, 2074, 7062, 1086, 4478, 2]
 
-// Module 7056 (GuildBasicChannels)
+// Module 7061 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4475 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4478 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2046 */;
 
 const require = fn;
 function hasBasicChannelChanged(basicChannel, nextResult) {
@@ -27,8 +27,8 @@ function hasBasicChannelChanged(basicChannel, nextResult) {
   }
   return tmp;
 }
-let closure_7 = fn(2048).createChannelRecordFromServer;
-const ChannelLoader = fn(2044).ChannelLoader;
+let closure_7 = fn(2049).createChannelRecordFromServer;
+const ChannelLoader = fn(2045).ChannelLoader;
 let closure_15 = new LoggerDefault("GuildBasicChannels");
 class GuildBasicChannels {
   constructor() {
@@ -84,9 +84,9 @@ prototype["getAsync"] = function getAsync(arg0) {
     closure_0 = tmp2;
     const _performance2 = performance;
     closure_128_0 = performance.now();
-    let items = [tmp3(2073).basicChannels(closure_0).getKvEntries(), ];
-    tmp3(2073).basicChannels(closure_0);
-    items[1] = tmp3(2073).syncedBasicChannels(closure_0).getKvEntries();
+    let items = [tmp3(2074).basicChannels(closure_0).getKvEntries(), ];
+    tmp3(2074).basicChannels(closure_0);
+    items[1] = tmp3(2074).syncedBasicChannels(closure_0).getKvEntries();
     closure_128_1 = await Promise.all(items);
     closure_128_2 = _slicedToArray(closure_128_1, 2);
     closure_128_3 = closure_128_2[0];
@@ -299,7 +299,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                             closure_129_1 = closure_3;
                             closure_2_15.warn("couldn't optimstically write basic_channel:", closure_129_1);
                             c6 = 3;
-                            const obj5 = { value: { v: "r" }, done: true };
+                            const obj5 = { value: { v: "__initData" }, done: true };
                             return obj5;
                           } else if (2 === tmp7) {
                             if (arg0 === 1) {

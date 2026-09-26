@@ -1,12 +1,12 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 12591
+// Function ID: 12592
 // Name: isActivityJoinableOnCurrentPlatform
-// Dependencies: [1074, 1365, 1609, 6726, 2]
+// Dependencies: [1074, 1365, 1610, 6731, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 12574 (isActivityJoinableOnCurrentPlatform)
+// Module 12591 (isActivityJoinableOnCurrentPlatform)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import hasFlagDefault from "hasFlag" /* 6726 */;
+import hasFlagDefault from "hasFlag" /* 6731 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ export default function isActivityJoinableOnCurrentPlatform(type) {
         }
         tmp6Result2 = tmp6(1365);
       }
-      tmp6Result = tmp6(1609);
+      tmp6Result = tmp6(1610);
     }
     let platform;
     if (type != null) {
@@ -76,7 +76,7 @@ export const getCurrentActivityGamePlatform = function getCurrentActivityGamePla
       META_QUEST = tmp(1365).isAndroid() ? tmp3.ANDROID : tmp3.DESKTOP;
       const tmpResult2 = tmp(1365);
     }
-    tmpResult = tmp(1609);
+    tmpResult = tmp(1610);
   }
   return META_QUEST;
 };

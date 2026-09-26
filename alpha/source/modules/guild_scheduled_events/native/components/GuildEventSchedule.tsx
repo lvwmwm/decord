@@ -1,11 +1,11 @@
-// Module ID: 8976
-// Function ID: 8977
+// Module ID: 8987
+// Function ID: 8988
 // Name: GuildEventSchedule
-// Dependencies: [19, 21, 4418, 8935, 8977, 1115, 2]
+// Dependencies: [19, 21, 4421, 8946, 8988, 1115, 2]
 // Exports: default
 
-// Module 8976 (GuildEventSchedule)
-import _modDef4418 from "module_4418" /* 4418 */;
+// Module 8987 (GuildEventSchedule)
+import _modDef4421 from "module_4421" /* 4421 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -18,15 +18,15 @@ export default function GuildEventSchedule(schedule) {
   schedule = schedule.schedule;
   const onChange = schedule.onChange;
   ({ guildEvent, recurrenceId } = schedule);
-  const tmp2 = onChange(4418)();
-  const addResult = onChange(4418)().add(schedule(8935).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  const tmp2 = onChange(4421)();
+  const addResult = onChange(4421)().add(schedule(8946).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   const items = [schedule.startDate];
-  const memo = noop.useMemo(() => _modDef4418(schedule.startDate).add(15, "minutes"), items);
-  let obj = onChange(4418)();
-  const addResult1 = onChange(4418)().add(schedule(8935).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const memo = noop.useMemo(() => _modDef4421(schedule.startDate).add(15, "minutes"), items);
+  let obj = onChange(4421)();
+  const addResult1 = onChange(4421)().add(schedule(8946).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    addResult.add(tmp3(8935).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
-    addResult1.add(tmp3(8935).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult.add(tmp3(8946).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult1.add(tmp3(8946).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   const obj2 = {
     date: schedule.startDate,
@@ -45,7 +45,7 @@ export default function GuildEventSchedule(schedule) {
   obj2.dateLabel = intl.string(schedule(1115).t.kKOIwJ);
   const intl2 = tmp3(1115).intl;
   obj2.timeLabel = intl2.string(schedule(1115).t["6dGmCD"]);
-  const children = [closure_4(schedule(8977).GuildEventDatetime, obj2), ];
+  const children = [closure_4(schedule(8988).GuildEventDatetime, obj2), ];
   let tmp9Result = null != guildEvent.scheduled_end_time;
   if (tmp9Result) {
     const obj4 = {
@@ -65,7 +65,7 @@ export default function GuildEventSchedule(schedule) {
     obj4.dateLabel = intl3.string(tmp3(1115).t.CTLgZJ);
     const intl4 = tmp3(1115).intl;
     obj4.timeLabel = intl4.string(tmp3(1115).t.j2RuXF);
-    tmp9Result = closure_4(tmp3(8977).GuildEventDatetime, obj4);
+    tmp9Result = closure_4(tmp3(8988).GuildEventDatetime, obj4);
   }
   children[1] = tmp9Result;
   return closure_6(closure_5, { children });

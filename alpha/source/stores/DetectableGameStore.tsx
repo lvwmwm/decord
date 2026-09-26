@@ -1,9 +1,9 @@
-// Module ID: 2016
-// Function ID: 2017
+// Module ID: 2017
+// Function ID: 2018
 // Name: DetectableGameStore
-// Dependencies: [2002, 1074, 1349, 1091, 2017, 510, 1364, 2019, 504, 11, 1370, 1978, 1241, 2020, 573, 2]
+// Dependencies: [2003, 1074, 1349, 1091, 2018, 510, 1364, 2020, 504, 11, 1370, 1979, 1241, 2021, 573, 2]
 
-// Module 2016 (DetectableGameStore)
+// Module 2017 (DetectableGameStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
@@ -13,10 +13,10 @@ import DurationsDefault from "Durations" /* 1091 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ApplicationConstants from "ApplicationConstants" /* 1349 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2017 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2019 */;
-import UserSettings from "UserSettings" /* 2020 */;
+import ApplicationRecord from "ApplicationRecord" /* 2003 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2018 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2020 */;
+import UserSettings from "UserSettings" /* 2021 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 

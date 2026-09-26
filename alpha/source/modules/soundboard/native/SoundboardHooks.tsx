@@ -1,20 +1,20 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16889
+// Function ID: 16890
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 4821, 1182, 16852, 6567, 1478, 504, 4682, 2025, 6751, 2]
+// Dependencies: [5, 19, 4825, 1182, 16881, 6572, 1479, 504, 4685, 2026, 6756, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 16860 (SoundboardHooks)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+// Module 16889 (SoundboardHooks)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 const require = fn;
-const SoundboardStyleConstants = fn(16852);
+const SoundboardStyleConstants = fn(16881);
 ({ SOUNDS_PER_ROW: closure_7, SOUND_ROW_PADDING: closure_8 } = SoundboardStyleConstants);
-const ACTION_SHEET_MAX_WIDTH = fn(6567).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(6572).ACTION_SHEET_MAX_WIDTH;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/soundboard/native/SoundboardHooks.tsx");
 
@@ -54,11 +54,11 @@ export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSou
               const obj4 = { value, done: true };
               return obj4;
             } else if (c0) {
-              const FrecencyUserSettingsActionCreators = shouldFetch(2025).FrecencyUserSettingsActionCreators;
+              const FrecencyUserSettingsActionCreators = shouldFetch(2026).FrecencyUserSettingsActionCreators;
               const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
               c1 = 1;
               c0 = 1;
-              const obj5 = { value: shouldFetch(6751).maybeFetchSoundboardSounds(), done: false };
+              const obj5 = { value: shouldFetch(6756).maybeFetchSoundboardSounds(), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {

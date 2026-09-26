@@ -1,17 +1,17 @@
-// Module ID: 6819
-// Function ID: 6820
+// Module ID: 6824
+// Function ID: 6825
 // Name: PremiumManagementUtils
-// Dependencies: [1074, 1085, 21, 3, 5197, 1115, 1364, 1609, 6820, 6823, 2]
+// Dependencies: [1074, 1085, 21, 3, 5204, 1115, 1364, 1610, 6825, 6828, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 6819 (PremiumManagementUtils)
+// Module 6824 (PremiumManagementUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import jsxProd from "jsxProd" /* 21 */;
 import Constants from "Constants" /* 1074 */;
 import Constants2 from "Constants" /* 1085 */;
 import util from "util" /* 1115 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5197 */;
-import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 6820 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 6825 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,7 +67,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
             str = "Meta Quest";
           }
           str2 = str;
-          tmp13Result = tmp13(1609);
+          tmp13Result = tmp13(1610);
         }
         if (null === tmp12.IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY) {
           if (null != subscription) {
@@ -82,7 +82,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
           if (null != tmp) {
             if (tmp.shouldAllowExternalManagement) {
               if ("iOS" !== str2) {
-                const tmp13Result2 = tmp13(1609);
+                const tmp13Result2 = tmp13(1610);
               }
               let status;
               if (subscription != null) {
@@ -106,7 +106,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                 const intl3 = tmp13(1115).intl;
                 const t = tmp13(1115).t;
                 obj2.text = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
-                jsx(tmp13(6823).LinkButton, {
+                jsx(tmp13(6828).LinkButton, {
                   containerStyle: { justifyContent: "flex-start" },
                   onPress() {
                                   if (null != c0) {

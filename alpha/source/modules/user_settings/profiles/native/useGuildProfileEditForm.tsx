@@ -1,22 +1,22 @@
-// Module ID: 14180
-// Function ID: 14181
+// Module ID: 14205
+// Function ID: 14206
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 7598, 7030, 2066, 5745, 1372, 1074, 504, 11336, 2039, 573, 9218, 14181, 10540, 6404, 14138, 7605, 4731, 1115, 2]
+// Dependencies: [109, 5, 19, 7605, 7035, 2067, 5750, 1372, 1074, 504, 11350, 2040, 573, 9229, 14206, 10551, 6409, 14163, 7612, 4735, 1115, 2]
 // Exports: default
 
-// Module 14180 (useGuildProfileEditForm)
+// Module 14205 (useGuildProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7598 */;
-import UserProfileStore from "UserProfileStore" /* 7030 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import SortedGuildStore from "SortedGuildStore" /* 5745 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
+import UserProfileStore from "UserProfileStore" /* 7035 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 let closure_3 = ["bannerOriginalMd5"];
-const IGNORE_GUILD_IDS = fn(7598).IGNORE_GUILD_IDS;
+const IGNORE_GUILD_IDS = fn(7605).IGNORE_GUILD_IDS;
 const FormStates = fn(1074).FormStates;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/profiles/native/useGuildProfileEditForm.tsx");
@@ -68,7 +68,7 @@ export default function useGuildProfileEditForm() {
   const merged1 = Object.assign(stateFromStoresObject.errors);
   const memo = pendingThemeColors.useMemo(() => {
     const delayedCall = new stateFromStores(pendingNickname[11]).DelayedCall(200, () => {
-      pendingAvatar(573).wait(stateFromStores(9218).resetAllPending);
+      pendingAvatar(573).wait(stateFromStores(9229).resetAllPending);
     });
     return delayedCall;
   }, []);

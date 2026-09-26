@@ -1,0 +1,13 @@
+// Module ID: 4465
+// Function ID: 4466
+// Name: sortedIndexBy
+// Dependencies: [4466, 584]
+
+// Module 4465 (sortedIndexBy)
+import baseIteratee from "baseIteratee" /* 584 */;
+import baseSortedIndexBy from "baseSortedIndexBy" /* 4466 */;
+
+
+export default function sortedIndexBy(arg0, arg1, arg2) {
+  return baseSortedIndexBy(arg0, arg1, baseIteratee(arg2, 2));
+};

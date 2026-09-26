@@ -1,12 +1,12 @@
-// Module ID: 13219
-// Function ID: 13220
+// Module ID: 13236
+// Function ID: 13237
 // Name: ConnectionOpenTriggerPoint
-// Dependencies: [4747, 13220, 10259, 2]
+// Dependencies: [4751, 13237, 10271, 2]
 
-// Module 13219 (ConnectionOpenTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 4747 */;
-import Helpers from "Helpers" /* 10259 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13220 */;
+// Module 13236 (ConnectionOpenTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 4751 */;
+import Helpers from "Helpers" /* 10271 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13237 */;
 import size from "module_2" /* 2 */;
 
 const items = [ContentInventoryExperiments.HotwheelsActivityFeedNvidiaExperiment];

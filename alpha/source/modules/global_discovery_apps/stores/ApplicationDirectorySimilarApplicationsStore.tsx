@@ -1,12 +1,12 @@
-// Module ID: 11542
-// Function ID: 11543
+// Module ID: 11556
+// Function ID: 11557
 // Name: ApplicationDirectorySimilarApplicationsStore
-// Dependencies: [1438, 504, 573, 2]
+// Dependencies: [1439, 504, 573, 2]
 
-// Module 11542 (ApplicationDirectorySimilarApplicationsStore)
+// Module 11556 (ApplicationDirectorySimilarApplicationsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import privDefault from "priv" /* 1438 */;
+import privDefault from "priv" /* 1439 */;
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", ERROR: 3, [3]: "ERROR" };
 let closure_1 = new privDefault({ max: 20 });

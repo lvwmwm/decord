@@ -1,13 +1,13 @@
-// Module ID: 5850
-// Function ID: 5851
+// Module ID: 5855
+// Function ID: 5856
 // Name: GuildJoinRequestAnalyticUtils
-// Dependencies: [502, 2107, 1074, 1241, 2]
+// Dependencies: [502, 2108, 1074, 1241, 2]
 // Exports: trackMemberApplicationAction, trackMemberApplicationInterviewMessage, trackMemberApplicationViewed, trackMemberVerificationApplicationViewed
 
-// Module 5850 (GuildJoinRequestAnalyticUtils)
+// Module 5855 (GuildJoinRequestAnalyticUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);

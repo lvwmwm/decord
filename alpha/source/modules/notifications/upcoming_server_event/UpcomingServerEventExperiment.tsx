@@ -1,11 +1,11 @@
-// Module ID: 15037
-// Function ID: 15038
+// Module ID: 15065
+// Function ID: 15066
 // Name: UpcomingServerEventExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isEligibleForUpcomingServerEventNotifications, useUpcomingServerEventExperiment
 
-// Module 15037 (UpcomingServerEventExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 15065 (UpcomingServerEventExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-04-upcoming-server-event", defaultConfig: { showSettingsToggle: false }, variations: null };

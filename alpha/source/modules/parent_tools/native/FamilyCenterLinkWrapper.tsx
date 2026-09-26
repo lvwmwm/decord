@@ -1,17 +1,17 @@
-// Module ID: 14431
-// Function ID: 14432
+// Module ID: 14456
+// Function ID: 14457
 // Name: FamilyCenterLinkWrapper
-// Dependencies: [19, 21, 4829, 576, 6578, 5428, 7617, 2]
+// Dependencies: [19, 21, 4836, 576, 6583, 5435, 7624, 2]
 // Exports: default
 
-// Module 14431 (FamilyCenterLinkWrapper)
+// Module 14456 (FamilyCenterLinkWrapper)
 import nativeDefault from "native" /* 576 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7617 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 const obj2 = { container: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12 } };
 let closure_4 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCen
 export default function FamilyCenterLinkRowWrapper(userId) {
   userId = userId.userId;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(6578)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6583)().analyticsLocations;
   let tmp3 = null;
   if (undefined !== userId) {
     const obj = {
@@ -30,7 +30,7 @@ export default function FamilyCenterLinkRowWrapper(userId) {
         },
       children: userId.children
     };
-    tmp3 = jsx(userId(5428).PressableOpacity, {
+    tmp3 = jsx(userId(5435).PressableOpacity, {
       style: tmp.container,
       onPress() {
           showUserProfileActionSheetDefault({ userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations });

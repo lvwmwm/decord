@@ -1,35 +1,35 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14072
+// Function ID: 14073
 // Name: activities
-// Dependencies: [5, 1074, 14014, 14001, 8767, 8313, 8762, 14009, 8774, 2]
+// Dependencies: [5, 1074, 14039, 14026, 8775, 8321, 8770, 14034, 8782, 2]
 
-// Module 14047 (activities)
-import RPCHelpers from "RPCHelpers" /* 8767 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14001 */;
+// Module 14072 (activities)
+import RPCHelpers from "RPCHelpers" /* 8775 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14026 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ RPCCommands, RPCErrors: closure_4, ApplicationFlags: hasOwnProperty } = Constants);
 let obj = {};
-let CONTEXT_MENU_ICON_NAMES = fn(14014);
+let CONTEXT_MENU_ICON_NAMES = fn(14039);
 obj[RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, {
-  scope: fn(14001).activityInstanceConnectedParticipantsScope,
+  scope: fn(14026).activityInstanceConnectedParticipantsScope,
   handler(socket) {
     const result = RPCHelpers.validatePostMessageTransport(socket.socket.transport);
     return activityInstanceConnectedParticipants.activityInstanceConnectedParticipants();
   }
 });
-CONTEXT_MENU_ICON_NAMES = fn(14014);
+CONTEXT_MENU_ICON_NAMES = fn(14039);
 let obj3 = {
-  scope: fn(14001).activityInstanceConnectedParticipantsScope,
+  scope: fn(14026).activityInstanceConnectedParticipantsScope,
   handler(socket) {
     const result = RPCHelpers.validatePostMessageTransport(socket.socket.transport);
     return activityInstanceConnectedParticipants.activityInstanceConnectedParticipants();
   }
 };
 obj[RPCCommands.REQUEST_PROXY_TICKET_REFRESH] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.REQUEST_PROXY_TICKET_REFRESH, {
-  scope: fn(14001).activityInstanceConnectedParticipantsScope,
+  scope: fn(14026).activityInstanceConnectedParticipantsScope,
   handler(socket) {
     socket = socket.socket;
     return (async (arg0, value) => {

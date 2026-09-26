@@ -1,15 +1,15 @@
-// Module ID: 10189
-// Function ID: 10190
+// Module ID: 10201
+// Function ID: 10202
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 4746, 6957, 1076, 504, 7003, 6956, 2]
+// Dependencies: [32, 19, 4750, 6962, 1076, 504, 7008, 6961, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 10189 (useMaybeFetchCollectiblesCategoriesShared)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6956 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7003 */;
+// Module 10201 (useMaybeFetchCollectiblesCategoriesShared)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7008 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4746 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
+import ExperimentStore from "ExperimentStore" /* 4750 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 
 const require = globalThis.__r;
 
@@ -75,8 +75,8 @@ export const useMaybeFetchCollectiblesCategoriesShared = function useMaybeFetchC
               tmp19 = Date.now() - closure_8 < React5;
             }
             if (!tmp19) {
-              const collectiblesCategories = tmp11(6956).fetchCollectiblesCategories(obj, closure_1, closure_2);
-              const tmp11Result = tmp11(6956);
+              const collectiblesCategories = tmp11(6961).fetchCollectiblesCategories(obj, closure_1, closure_2);
+              const tmp11Result = tmp11(6961);
             }
             tmp11 = require;
             const tmp16 = !result;

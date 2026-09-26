@@ -1,15 +1,15 @@
-// Module ID: 13498
-// Function ID: 13499
+// Module ID: 13516
+// Function ID: 13517
 // Name: useGuildHeaderCounts
-// Dependencies: [19, 4750, 13499, 12, 573, 504, 2]
+// Dependencies: [19, 4754, 13517, 12, 573, 504, 2]
 // Exports: useGuildHeaderCounts
 
-// Module 13498 (useGuildHeaderCounts)
+// Module 13516 (useGuildHeaderCounts)
 import _mod12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4750 */;
-import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 13499 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
+import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 13517 */;
 
 const require = globalThis.__r;
 

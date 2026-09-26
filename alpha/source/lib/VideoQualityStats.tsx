@@ -1,13 +1,13 @@
-// Module ID: 7155
-// Function ID: 7156
+// Module ID: 7160
+// Function ID: 7161
 // Name: VideoQualityStats
-// Dependencies: [32, 7156, 7162, 4858, 2]
+// Dependencies: [32, 7161, 7167, 4865, 2]
 // Exports: parseCodecType
 
-// Module 7155 (VideoQualityStats)
-import TimeUtils from "TimeUtils" /* 4858 */;
-import Histogram from "Histogram" /* 7156 */;
-import SystemResourcesDefault from "SystemResources" /* 7162 */;
+// Module 7160 (VideoQualityStats)
+import TimeUtils from "TimeUtils" /* 4865 */;
+import Histogram from "Histogram" /* 7161 */;
+import SystemResourcesDefault from "SystemResources" /* 7167 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

@@ -1,15 +1,15 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 16982
+// Function ID: 16983
 // Name: useVoiceChannelGames
-// Dependencies: [19, 502, 4869, 5586, 1372, 504, 9181, 9182, 5416, 2]
+// Dependencies: [19, 502, 4876, 5591, 1372, 504, 9192, 9193, 5423, 2]
 // Exports: default
 
-// Module 16954 (useVoiceChannelGames)
-import useGameProfileObscured from "useGameProfileObscured" /* 5416 */;
+// Module 16982 (useVoiceChannelGames)
+import useGameProfileObscured from "useGameProfileObscured" /* 5423 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 4869 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5586 */;
+import PresenceStore from "PresenceStore" /* 4876 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

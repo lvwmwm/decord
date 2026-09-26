@@ -1,11 +1,11 @@
-// Module ID: 4613
-// Function ID: 4614
+// Module ID: 4616
+// Function ID: 4617
 // Name: BoostThisServerRive
-// Dependencies: [109, 19, 21, 4557, 4614, 4612, 2]
+// Dependencies: [109, 19, 21, 4560, 4617, 4615, 2]
 
-// Module 4613 (BoostThisServerRive)
-import BaseRive from "BaseRive" /* 4557 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4612 */;
+// Module 4616 (BoostThisServerRive)
+import BaseRive from "BaseRive" /* 4560 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4615 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,18 +1,9 @@
 // Module ID: 13955
 // Function ID: 13956
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 13955
+import registerAsset from "module_1121" /* 1121 */;
 
-export default () => (arg0) => {
-  closure_0 = arg0;
-  return {
-    features: {
-      image(dependencyMap) {
-        const size = { uri: dependencyMap.uri, preview: dependencyMap.preview, filename: dependencyMap.filename, width: dependencyMap.width, height: dependencyMap.height, caption: dependencyMap.caption };
-        return closure_0.send("image", size);
-      }
-    }
-  };
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "e2ea348445c8a662d796c112d980d074", name: "Microphone", type: "lottie" });

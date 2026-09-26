@@ -1,16 +1,15 @@
 // Module ID: 1548
 // Function ID: 1549
 // Dependencies: []
-// Exports: isArrayEqual
 
 // Module 1548
 
-export const isArrayEqual = function isArrayEqual(arr, arg1) {
-  closure_0 = arg1;
-  let tmp = arr === arg1;
-  if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every((item, index) => Object.is(item, closure_0[index]));
-    const tmp2 = arr.length === arg1.length && arr.every((item, index) => Object.is(item, closure_0[index]));
+export default (str) => {
+  if (typeof str !== "string") {
+    const _TypeError = TypeError;
+    const typeError = new TypeError("Expected a string");
+    throw typeError;
+  } else {
+    return str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&").replace(/-/g, "\\x2d");
   }
-  return tmp;
 };

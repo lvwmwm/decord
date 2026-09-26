@@ -1,11 +1,11 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11335
+// Function ID: 11336
 // Name: KickConfirmModal
-// Dependencies: [19, 21, 10372, 10374, 1115, 11314, 2]
+// Dependencies: [19, 21, 10383, 10385, 1115, 11328, 2]
 // Exports: default
 
-// Module 11321 (KickConfirmModal)
-import KickConfirmDefault from "KickConfirm" /* 11314 */;
+// Module 11335 (KickConfirmModal)
+import KickConfirmDefault from "KickConfirm" /* 11328 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

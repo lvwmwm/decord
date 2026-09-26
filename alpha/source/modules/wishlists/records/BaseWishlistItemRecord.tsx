@@ -1,11 +1,11 @@
-// Module ID: 8233
-// Function ID: 8234
+// Module ID: 8241
+// Function ID: 8242
 // Name: BaseWishlistItemRecord
-// Dependencies: [1387, 5818, 2]
+// Dependencies: [1387, 5823, 2]
 
-// Module 8233 (BaseWishlistItemRecord)
+// Module 8241 (BaseWishlistItemRecord)
 import Record from "Record" /* 1387 */;
-import SKURecord from "SKURecord" /* 5818 */;
+import SKURecord from "SKURecord" /* 5823 */;
 
 const prototype = function BaseWishlistItemRecord(arg0) {
   const tmp = new prototype(new.target, new.target);

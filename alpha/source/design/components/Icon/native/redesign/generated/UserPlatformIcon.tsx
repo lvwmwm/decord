@@ -1,13 +1,13 @@
-// Module ID: 4767
-// Function ID: 4768
+// Module ID: 4771
+// Function ID: 4772
 // Name: UserPlatformIcon
-// Dependencies: [19, 21, 576, 4527, 4768, 2]
+// Dependencies: [19, 21, 576, 4530, 4772, 2]
 // Exports: UserPlatformIcon
 
-// Module 4767 (UserPlatformIcon)
+// Module 4771 (UserPlatformIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod4768 from "module_4768" /* 4768 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod4772 from "module_4772" /* 4772 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const UserPlatformIcon = function UserPlatformIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4768, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4772, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

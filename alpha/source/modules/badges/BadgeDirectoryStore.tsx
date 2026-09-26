@@ -1,17 +1,17 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 7637
+// Function ID: 7638
 // Name: BadgeDirectoryStore
-// Dependencies: [1372, 1091, 1438, 7631, 559, 7635, 504, 573, 2]
+// Dependencies: [1372, 1091, 1439, 7638, 559, 7642, 504, 573, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 7630 (BadgeDirectoryStore)
+// Module 7637 (BadgeDirectoryStore)
 import initializeDefault from "initialize" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import privDefault from "priv" /* 1438 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7631 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7635 */;
+import privDefault from "priv" /* 1439 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7638 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7642 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

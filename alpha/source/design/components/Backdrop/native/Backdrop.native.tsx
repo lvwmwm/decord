@@ -1,14 +1,14 @@
-// Module ID: 5260
-// Function ID: 5261
+// Module ID: 5267
+// Function ID: 5268
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4829, 576, 1115, 4537, 1612, 4563, 5261, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1115, 4540, 1613, 4566, 5268, 2]
 // Exports: Backdrop
 
-// Module 5260 (Backdrop)
+// Module 5267 (Backdrop)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 let closure_6 = {};
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { fill: StyleSheet.absoluteFillObject, backdrop: { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM }, backdropOpaque: null, accessibilityDismiss: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 obj2.backdropOpaque = { backgroundColor: nativeDefault.colors.MOBILE_BACKGROUND_SCRIM_OPAQUE };

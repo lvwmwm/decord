@@ -1,31 +1,31 @@
-// Module ID: 9704
-// Function ID: 9705
+// Module ID: 9715
+// Function ID: 9716
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 8955, 2044, 5193, 5192, 6690, 21, 4829, 576, 1875, 5197, 1115, 7191, 8600, 6578, 504, 9705, 9703, 1482, 1610, 11, 7181, 5937, 9706, 2]
+// Dependencies: [19, 17, 8966, 2045, 5200, 5199, 6695, 21, 4836, 576, 1876, 5204, 1115, 7196, 8608, 6583, 504, 9716, 9714, 1483, 1611, 11, 7186, 5942, 9717, 2]
 // Exports: default
 
-// Module 9704 (ForumComposerModal)
+// Module 9715 (ForumComposerModal)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5197 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7191 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8600 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9703 */;
+import KeyboardTypes from "KeyboardTypes" /* 1611 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7196 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8608 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9714 */;
 import noop from "module_19" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 8955 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import DraftStore from "DraftStore" /* 5193 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5192 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6690 */;
+import NativeMenuStore from "NativeMenuStore" /* 8966 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import DraftStore from "DraftStore" /* 5200 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5199 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6695 */;
 
 require = fn;
 const View = fn(17).View;
-const DraftType = fn(5193).DraftType;
+const DraftType = fn(5200).DraftType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW } };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -41,14 +41,14 @@ export default function ForumComposerModal(parentChannelId) {
   function handleClose(arg0) {
     if (null != stateFromStores) {
       if (arg0) {
-        let result = tmp52(9703).closeCreateForumPostModal();
-        const tmp52Result = tmp52(9703);
+        let result = tmp52(9714).closeCreateForumPostModal();
+        const tmp52Result = tmp52(9714);
         DraftActionCreatorsDefault.clearDraft(parentChannelId, DraftType.ThreadSettings);
         DraftActionCreatorsDefault.clearDraft(parentChannelId, DraftType.ChannelMessage);
         UploadAttachmentActionCreatorsDefault.clearAll(parentChannelId, DraftType.ChannelMessage);
       } else {
         let obj = { type: KeyboardTypes.KeyboardTypes.SYSTEM };
-        tmp52(1482).setKeyboardType(obj);
+        tmp52(1483).setKeyboardType(obj);
         const draft = DraftStore.getDraft(parentChannelId, DraftType.ChannelMessage);
         let threadSettings = DraftStore.getThreadSettings(parentChannelId);
         if (threadSettings == null) {
@@ -99,7 +99,7 @@ export default function ForumComposerModal(parentChannelId) {
           actions_AlertActionCreatorsDefault.show(obj2);
         }
         obj3 = DraftStore;
-        const tmp52Result2 = tmp52(1482);
+        const tmp52Result2 = tmp52(1483);
       }
     }
   }

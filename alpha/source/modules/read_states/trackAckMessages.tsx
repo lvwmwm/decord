@@ -1,15 +1,15 @@
-// Module ID: 13366
-// Function ID: 13367
+// Module ID: 13384
+// Function ID: 13385
 // Name: trackAckMessages
-// Dependencies: [2044, 7045, 2066, 5010, 1074, 5009, 2]
+// Dependencies: [2045, 7050, 2067, 5017, 1074, 5016, 2]
 // Exports: default
 
-// Module 13366 (trackAckMessages)
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7045 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
+// Module 13384 (trackAckMessages)
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

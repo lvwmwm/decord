@@ -1,17 +1,17 @@
-// Module ID: 5324
-// Function ID: 5325
+// Module ID: 5331
+// Function ID: 5332
 // Name: MarkupHeadingRule
-// Dependencies: [1929, 2]
+// Dependencies: [1930, 2]
 
-// Module 5324 (MarkupHeadingRule)
-import _mod1929 from "module_1929" /* 1929 */;
+// Module 5331 (MarkupHeadingRule)
+import _mod1930 from "module_1930" /* 1930 */;
 
-const _modDef1929 = _mod1929;
+const _modDef1930 = _mod1930;
 
 require = fn;
 const re2 = /\n$/;
 let obj = {};
-const merged = Object.assign(_modDef1929.defaultRules.heading);
+const merged = Object.assign(_modDef1930.defaultRules.heading);
 obj.requiredFirstCharacters = [" ", "#"];
 obj.match = function match(arg0, allowHeading, str) {
   let tmp = null;
@@ -21,7 +21,7 @@ obj.match = function match(arg0, allowHeading, str) {
         tmp = null;
       }
     }
-    tmp = _mod1929.anyScopeRegex(/^ *(#{1,3})(?:\s+)((?!\s*#{1,3}\s)[^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
+    tmp = _mod1930.anyScopeRegex(/^ *(#{1,3})(?:\s+)((?!\s*#{1,3}\s)[^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
   }
   return tmp;
 };

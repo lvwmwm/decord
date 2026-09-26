@@ -1,15 +1,15 @@
-// Module ID: 12435
-// Function ID: 12436
+// Module ID: 12453
+// Function ID: 12454
 // Name: refreshApplicationWidget
-// Dependencies: [5, 1074, 8484, 1271, 2]
+// Dependencies: [5, 1074, 8492, 1271, 2]
 // Exports: refreshApplicationWidget
 
-// Module 12435 (refreshApplicationWidget)
+// Module 12453 (refreshApplicationWidget)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
 const Endpoints = fn(1074).Endpoints;
-const promiseDeduper = new fn(8484).PromiseDeduper();
+const promiseDeduper = new fn(8492).PromiseDeduper();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_widget/refreshApplicationWidget.tsx");
 

@@ -1,9 +1,9 @@
 // Module ID: 9966
 // Function ID: 9967
-// Dependencies: [41, 42, 93, 95, 98, 9898]
+// Dependencies: [41, 42, 93, 95, 98, 9913]
 
 // Module 9966
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 9898 */;
+import _mod9913 from "module_9913" /* 9913 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -30,12 +30,27 @@ function _isNativeReflectConstruct() {
   }
 }
 let _classCallCheck = _classCallCheck_mod;
-class PTTimeExpressionParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    if (!__esModule) {
+      const obj = { default: __esModule };
+      let tmp = obj;
+    } else {
+      tmp = __esModule;
+    }
+    return tmp;
+  };
+}
+class JPMergeDateRangeRefiner {
   constructor() {
     self = this;
-    tmp = closure_0(this, PTTimeExpressionParser);
+    tmp = closure_0(this, JPMergeDateRangeRefiner);
     tmp2 = c2;
-    obj = c2(PTTimeExpressionParser);
+    obj = c2(JPMergeDateRangeRefiner);
     tmp3 = closure_1;
     if (closure_3()) {
       tmp7 = globalThis;
@@ -50,22 +65,14 @@ class PTTimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = PTTimeExpressionParser;
-_inherits(PTTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_classCallCheck = JPMergeDateRangeRefiner;
+_inherits(JPMergeDateRangeRefiner, fn(_mod9913).default);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:ao?|\u00E0s?|das|da|de|do)\\s*)?";
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(から|－|ー|-|～|~)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:o)?|\\?)\\s*";
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(PTTimeExpressionParser, items);
+export default _createClass(JPMergeDateRangeRefiner, items);

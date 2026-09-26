@@ -1,18 +1,18 @@
-// Module ID: 8703
-// Function ID: 8704
+// Module ID: 8711
+// Function ID: 8712
 // Name: AppLauncherStore
-// Dependencies: [8704, 504, 573, 2]
+// Dependencies: [8712, 504, 573, 2]
 
-// Module 8703 (AppLauncherStore)
+// Module 8711 (AppLauncherStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8704 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8712 */;
 
 require = fn;
 function handleDismissWithDismissed() {
   let DISMISSED = AppLauncherTypes.AppLauncherCloseReason.DISMISSED;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(8704).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(8712).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherTypes.AppLauncherEntrypoint.NONE;
@@ -23,7 +23,7 @@ function handleDismissWithDismissed() {
 function handleSetActiveCommand() {
   let DISMISSED = AppLauncherTypes.AppLauncherCloseReason.COMMAND;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(8704).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(8712).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherTypes.AppLauncherEntrypoint.NONE;
@@ -31,7 +31,7 @@ function handleSetActiveCommand() {
   obj.initialState = undefined;
   obj.activeChannelId = null;
 }
-const obj = { show: false, entrypoint: fn(8704).AppLauncherEntrypoint.NONE, lastShownEntrypoint: fn(8704).AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: fn(8704).AppLauncherCloseReason.DISMISSED, initialState: "paddingHorizontal" };
+const obj = { show: false, entrypoint: fn(8712).AppLauncherEntrypoint.NONE, lastShownEntrypoint: fn(8712).AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: fn(8712).AppLauncherCloseReason.DISMISSED, initialState: "round" };
 const Store = initializeDefault.Store;
 class AppLauncherStore extends Store {
 }

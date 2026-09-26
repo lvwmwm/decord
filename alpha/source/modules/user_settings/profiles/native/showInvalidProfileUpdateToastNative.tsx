@@ -1,22 +1,22 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14163
+// Function ID: 14164
 // Name: showInvalidProfileUpdateToastNative
-// Dependencies: [4525, 6408, 576, 2]
+// Dependencies: [4528, 6413, 576, 2]
 // Exports: showGenericGuildProfileUpdateFailureToast, showGenericProfileUpdateFailureToast
 
-// Module 14138 (showInvalidProfileUpdateToastNative)
+// Module 14163 (showInvalidProfileUpdateToastNative)
 import nativeDefault from "native" /* 576 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
-import _modDef6408 from "module_6408" /* 6408 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import _modDef6413 from "module_6413" /* 6413 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/showInvalidProfileUpdateToastNative.tsx");
 
 export const showGenericProfileUpdateFailureToast = function showGenericProfileUpdateFailureToast(avatar) {
   const obj = ToastActionCreatorsDefault;
-  obj.open({ key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: _modDef6408, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, recolorLegacyIcon: true });
+  obj.open({ key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: _modDef6413, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, recolorLegacyIcon: true });
 };
 export const showGenericGuildProfileUpdateFailureToast = function showGenericGuildProfileUpdateFailureToast(avatar) {
   const obj = ToastActionCreatorsDefault;
-  obj.open({ key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: _modDef6408, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, recolorLegacyIcon: true });
+  obj.open({ key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: _modDef6413, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, recolorLegacyIcon: true });
 };

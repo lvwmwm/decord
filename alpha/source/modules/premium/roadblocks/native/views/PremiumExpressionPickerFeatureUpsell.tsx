@@ -1,20 +1,20 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 9788
+// Function ID: 9789
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 4829, 576, 1612, 6038, 1094, 4563, 9409, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1613, 6043, 1094, 4566, 9420, 2]
 // Exports: default
 
-// Module 9777 (PremiumExpressionPickerFeatureUpsell)
+// Module 9788 (PremiumExpressionPickerFeatureUpsell)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 6038 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 6043 */;
 import noop from "module_19" /* 19 */;
 
-const PremiumFeatureUpsellDefault = tmp(9409);
+const PremiumFeatureUpsellDefault = tmp(9420);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles((arg0) => {
   const obj = { container: null };
   const rect = { position: "absolute", bottom: arg0 + nativeDefault.space.PX_12, left: 0, right: 0 };

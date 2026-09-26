@@ -1,11 +1,11 @@
-// Module ID: 13103
-// Function ID: 13104
+// Module ID: 13120
+// Function ID: 13121
 // Name: GuildBoostingMarketingStars
-// Dependencies: [19, 21, 7901, 2]
+// Dependencies: [19, 21, 7909, 2]
 // Exports: default
 
-// Module 13103 (GuildBoostingMarketingStars)
-import inlineStyles from "inlineStyles" /* 7901 */;
+// Module 13120 (GuildBoostingMarketingStars)
+import inlineStyles from "inlineStyles" /* 7909 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

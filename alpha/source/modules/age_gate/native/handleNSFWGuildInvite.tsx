@@ -1,19 +1,19 @@
-// Module ID: 9219
-// Function ID: 9220
+// Module ID: 9230
+// Function ID: 9231
 // Name: handleNSFWGuildInvite
-// Dependencies: [2066, 1074, 9220, 1364, 5032, 9221, 1980, 5730, 9224, 9225, 2]
+// Dependencies: [2067, 1074, 9231, 1364, 5039, 9232, 1981, 5735, 9235, 9236, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 9219 (handleNSFWGuildInvite)
+// Module 9230 (handleNSFWGuildInvite)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const GuildNSFWContentLevel = fn(1074).GuildNSFWContentLevel;
-let closure_5 = fn(9220).TINY_BRONCO_NSFW_SERVER_LOCATION;
+let closure_5 = fn(9231).TINY_BRONCO_NSFW_SERVER_LOCATION;
 const items = [, ];
 ({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
 const set = new Set(items);
@@ -56,7 +56,7 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
     if (null == GuildStore.getGuild(id)) {
       if (obj7.isIOS()) {
         const obj = { guildId: id };
-        ModalActionCreatorsDefault.pushLazy(tmp10(1980)(9221, tmp11.paths), obj);
+        ModalActionCreatorsDefault.pushLazy(tmp10(1981)(9232, tmp11.paths), obj);
         if (onCancel != null) {
           onCancel();
         }
@@ -78,16 +78,16 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
                           }
                         }
             };
-            const result = tmp10(9225).showNsfwServerInviteWarningAlert(obj2);
+            const result = tmp10(9236).showNsfwServerInviteWarningAlert(obj2);
             return true;
           } else {
             return false;
           }
-          tmp10Result3 = tmp10(9224);
+          tmp10Result3 = tmp10(9235);
         } else {
           return false;
         }
-        tmp10Result = tmp10(5730);
+        tmp10Result = tmp10(5735);
       }
       obj7 = PlatformUtils;
       tmp11 = dependencyMap;

@@ -1,8 +1,8 @@
-// Module ID: 5001
-// Function ID: 5002
+// Module ID: 5008
+// Function ID: 5009
 // Dependencies: [2]
 
-// Module 5001
+// Module 5008
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/guild-room-note-pad.png.js");

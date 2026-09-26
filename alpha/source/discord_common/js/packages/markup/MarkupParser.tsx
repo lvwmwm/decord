@@ -1,10 +1,10 @@
-// Module ID: 7424
-// Function ID: 7425
+// Module ID: 7429
+// Function ID: 7430
 // Name: MarkupParser
-// Dependencies: [7425, 2, 7426, 7427]
+// Dependencies: [7430, 2, 7431, 7432]
 
-// Module 7424 (MarkupParser)
-import markup_MarkupParser from "markup/MarkupParser" /* 7425 */;
+// Module 7429 (MarkupParser)
+import markup_MarkupParser from "markup/MarkupParser" /* 7430 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,17 +1,17 @@
-// Module ID: 7604
-// Function ID: 7605
+// Module ID: 7611
+// Function ID: 7612
 // Name: ProfileCustomizationUtils
-// Dependencies: [19, 7598, 7030, 2107, 504, 4682, 1115, 2]
+// Dependencies: [19, 7605, 7035, 2108, 504, 4685, 1115, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 7604 (ProfileCustomizationUtils)
+// Module 7611 (ProfileCustomizationUtils)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import shared from "shared" /* 4682 */;
+import shared from "shared" /* 4685 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7598 */;
-import UserProfileStore from "UserProfileStore" /* 7030 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7605 */;
+import UserProfileStore from "UserProfileStore" /* 7035 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 
 const require = globalThis.__r;
 

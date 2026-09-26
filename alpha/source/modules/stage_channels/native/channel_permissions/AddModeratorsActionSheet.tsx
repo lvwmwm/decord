@@ -1,21 +1,21 @@
-// Module ID: 16613
-// Function ID: 16614
+// Module ID: 16642
+// Function ID: 16643
 // Name: AddModeratorsActionSheet
-// Dependencies: [5, 32, 19, 17, 2066, 7841, 21, 4829, 576, 504, 4982, 5722, 1978, 9006, 4524, 4796, 6566, 6565, 1115, 5274, 9034, 2052, 2]
+// Dependencies: [5, 32, 19, 17, 2067, 7849, 21, 4836, 576, 504, 4989, 5727, 1979, 9017, 4527, 4800, 6571, 6570, 1115, 5281, 9045, 2053, 2]
 // Exports: default
 
-// Module 16613 (AddModeratorsActionSheet)
+// Module 16642 (AddModeratorsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = fn;
 const View = fn(17).View;
-const RowType = fn(7841).RowType;
+const RowType = fn(7849).RowType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 } };
 let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -35,12 +35,12 @@ export default function AddModeratorsActionSheet(channel) {
         row = row.row;
         if (row.rowType === constants.ROLE) {
           closure_1 = closure_1 + 1;
-          let moderatorOverwrite = channel(5722).createModeratorOverwrite(row.id, channel(1978).PermissionOverwriteType.ROLE, closure_0);
-          const obj2 = channel(5722);
+          let moderatorOverwrite = channel(5727).createModeratorOverwrite(row.id, channel(1979).PermissionOverwriteType.ROLE, closure_0);
+          const obj2 = channel(5727);
         } else {
           closure_0 = closure_0 + 1;
-          moderatorOverwrite = channel(5722).createModeratorOverwrite(row.id, channel(1978).PermissionOverwriteType.MEMBER, closure_0);
-          const obj = channel(5722);
+          moderatorOverwrite = channel(5727).createModeratorOverwrite(row.id, channel(1979).PermissionOverwriteType.MEMBER, closure_0);
+          const obj = channel(5727);
         }
         return moderatorOverwrite;
       });
@@ -80,7 +80,7 @@ export default function AddModeratorsActionSheet(channel) {
     }
     return GuildStore.getGuild(guildId);
   });
-  let str = pendingAdditions(4982)(channel, true);
+  let str = pendingAdditions(4989)(channel, true);
   if (str == null) {
     str = "";
   }
@@ -105,12 +105,12 @@ export default function AddModeratorsActionSheet(channel) {
       }
       const obj4 = { scrollable: true, header: null, startExpanded: true, children: null };
       obj2.trailing = tmp12(tmp13, obj7);
-      obj4.header = tmp12(tmp4(6565).BottomSheetTitleHeader, obj2);
+      obj4.header = tmp12(tmp4(6570).BottomSheetTitleHeader, obj2);
       const obj5 = { style: tmp.container, children: null };
-      const obj6 = { inActionSheet: true, channel, guild: stateFromStores, permission: tmp4(2052).MODERATE_STAGE_CHANNEL_PERMISSIONS, pendingAdditions, setPendingAdditions: tmp2[1] };
-      obj5.children = tmp12(pendingAdditions(9034), obj6);
+      const obj6 = { inActionSheet: true, channel, guild: stateFromStores, permission: tmp4(2053).MODERATE_STAGE_CHANNEL_PERMISSIONS, pendingAdditions, setPendingAdditions: tmp2[1] };
+      obj5.children = tmp12(pendingAdditions(9045), obj6);
       obj4.children = tmp12(View, obj5);
-      return tmp12(tmp4(6566).BottomSheet, obj4);
+      return tmp12(tmp4(6571).BottomSheet, obj4);
     }
     obj7 = { size: "sm", disabled: tmp11, text: null, onPress: null };
     const intl = tmp4(1115).intl;

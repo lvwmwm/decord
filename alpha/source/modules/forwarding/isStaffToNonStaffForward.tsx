@@ -1,12 +1,12 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11182
+// Function ID: 11183
 // Name: isStaffToNonStaffForward
-// Dependencies: [2044, 2066, 1372, 1074, 2]
+// Dependencies: [2045, 2067, 1372, 1074, 2]
 // Exports: default
 
-// Module 11168 (isStaffToNonStaffForward)
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 11182 (isStaffToNonStaffForward)
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const GuildFeatures = fn(1074).GuildFeatures;

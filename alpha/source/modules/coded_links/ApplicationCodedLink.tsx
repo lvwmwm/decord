@@ -1,12 +1,12 @@
-// Module ID: 7098
-// Function ID: 7099
+// Module ID: 7103
+// Function ID: 7104
 // Name: ApplicationCodedLink
-// Dependencies: [4817, 1370, 7099, 7100, 2]
+// Dependencies: [4821, 1370, 7104, 7105, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7098 (ApplicationCodedLink)
+// Module 7103 (ApplicationCodedLink)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import CodedLink from "CodedLink" /* 4817 */;
+import CodedLink from "CodedLink" /* 4821 */;
 import size from "module_2" /* 2 */;
 
 const items = [CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE, CodedLink.CodedLinkType.ACTIVITY_BOOKMARK, CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT, CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, CodedLink.CodedLinkType.APP_OAUTH2_LINK];
@@ -25,10 +25,10 @@ export const isApplicationCodedLinkMobileSupported = function isApplicationCoded
 };
 export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
   if (CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-    if (tmp(4817).CodedLinkType.APP_OAUTH2_LINK !== type) {
-      if (tmp(4817).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-        if (tmp(4817).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          const result = tmp(7099).parseStorefrontSkuCodedLink(code);
+    if (tmp(4821).CodedLinkType.APP_OAUTH2_LINK !== type) {
+      if (tmp(4821).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+        if (tmp(4821).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
+          const result = tmp(7104).parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
             const obj2 = { type, applicationId: null, skuId: null };
@@ -36,8 +36,8 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
             tmp5 = obj2;
           }
           return tmp5;
-        } else if (tmp(4817).CodedLinkType.ACTIVITY_BOOKMARK === type) {
-          const obj = { type, applicationId: code, params: tmp(7100).extractActivityBookmarkParams(url) };
+        } else if (tmp(4821).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+          const obj = { type, applicationId: code, params: tmp(7105).extractActivityBookmarkParams(url) };
           return obj;
         }
       }

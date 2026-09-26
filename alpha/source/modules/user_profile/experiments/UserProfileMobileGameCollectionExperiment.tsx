@@ -1,11 +1,11 @@
-// Module ID: 12441
-// Function ID: 12442
+// Module ID: 12459
+// Function ID: 12460
 // Name: UserProfileMobileGameCollectionExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useIsMobileGameCollectionExperimentEnabled
 
-// Module 12441 (UserProfileMobileGameCollectionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12459 (UserProfileMobileGameCollectionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-07-mobile-game-collection", kind: "user", defaultConfig: { enabled: false }, variations: null };

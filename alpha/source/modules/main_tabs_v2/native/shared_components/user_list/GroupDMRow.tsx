@@ -1,18 +1,18 @@
-// Module ID: 10359
-// Function ID: 10360
+// Module ID: 10370
+// Function ID: 10371
 // Name: GroupDMRow
-// Dependencies: [19, 10308, 21, 4982, 10360, 1177, 10361, 4825, 5911, 5912, 2]
+// Dependencies: [19, 10320, 21, 4989, 10371, 1177, 10372, 4832, 5916, 5917, 2]
 // Exports: default
 
-// Module 10359 (GroupDMRow)
+// Module 10370 (GroupDMRow)
 import native from "native" /* 1177 */;
-import useChannelNameDefault from "useChannelName" /* 4982 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10360 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 10361 */;
+import useChannelNameDefault from "useChannelName" /* 4989 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10371 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 10372 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const UserRowModes = fn(10308).UserRowModes;
+const UserRowModes = fn(10320).UserRowModes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/GroupDMRow.tsx");
@@ -49,7 +49,7 @@ export default function GroupDMRow(channel) {
   let tmp5Result;
   if (null != recipientsLabel) {
     const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp5Result = tmp5(tmp7(4825).Text, obj4);
+    tmp5Result = tmp5(tmp7(4832).Text, obj4);
   }
   obj3.subLabel = tmp5Result;
   obj3.icon = tmp8;
@@ -64,11 +64,11 @@ export default function GroupDMRow(channel) {
     const obj5 = {};
     const merged2 = Object.assign(obj3);
     obj5.checked = flag;
-    let tmp5Result2 = tmp5(tmp7(5911).TableCheckboxRow, obj5);
+    let tmp5Result2 = tmp5(tmp7(5916).TableCheckboxRow, obj5);
   } else {
     const obj6 = {};
     const merged3 = Object.assign(obj3);
-    tmp5Result2 = tmp5(tmp7(5912).TableRow, obj6);
+    tmp5Result2 = tmp5(tmp7(5917).TableRow, obj6);
   }
   return tmp5Result2;
 };

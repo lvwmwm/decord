@@ -1,39 +1,34 @@
 // Module ID: 12381
 // Function ID: 12382
-// Dependencies: [12293, 12296, 12295, 12301]
-// Exports: addConsoleInstrumentationHandler
+// Dependencies: []
+// Exports: isSentryRequestUrl
 
 // Module 12381
-import _mod12293 from "module_12293" /* 12293 */;
-import _mod12295 from "module_12295" /* 12295 */;
-import _mod12296 from "module_12296" /* 12296 */;
 
-require = arg1;
-const dependencyMap = arg6;
-function instrumentConsole() {
-  if ("console" in _mod12296.GLOBAL_OBJ) {
-    const CONSOLE_LEVELS = _mod12295.CONSOLE_LEVELS;
-    const item = CONSOLE_LEVELS.forEach((item) => {
-      closure_0 = item;
-      if (item in closure_0(12296).GLOBAL_OBJ.console) {
-        tmp(12301).fill(tmp(12296).GLOBAL_OBJ.console, item, (arg0) => {
-          _mod12295.originalConsoleMethods[level] = arg0;
-          return () => {
-            const items = [...arguments];
-            level(12293).triggerHandlers("console", { args: items, level });
-            const obj3 = level(12295).originalConsoleMethods[level];
-            if (obj3) {
-              obj3.apply(level(12296).GLOBAL_OBJ.console, items);
-            }
-          };
-        });
-        const tmpResult = tmp(12301);
-      }
-    });
+export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  let dsn = getDsn;
+  if (getDsn) {
+    dsn = getDsn.getDsn();
   }
-}
-
-export const addConsoleInstrumentationHandler = function addConsoleInstrumentationHandler(arg0) {
-  _mod12293.addHandler("console", arg0);
-  _mod12293.maybeInstrument("console", instrumentConsole);
+  let tunnel = getDsn;
+  if (getDsn) {
+    tunnel = getDsn.getOptions().tunnel;
+  }
+  let tmp2 = dsn && arr.includes(dsn.host);
+  if (!tmp2) {
+    let flag = false;
+    if (tunnel) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
+      }
+      let substr1 = tunnel;
+      if ("/" === tunnel[tunnel.length - 1]) {
+        substr1 = tunnel.slice(0, -1);
+      }
+      flag = substr === substr1;
+    }
+    tmp2 = flag;
+  }
+  return tmp2;
 };

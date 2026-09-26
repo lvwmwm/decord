@@ -1,15 +1,15 @@
-// Module ID: 15492
-// Function ID: 15493
+// Module ID: 15521
+// Function ID: 15522
 // Name: ParentalControlsGoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [6952, 7412, 14329, 7015, 14333, 14338, 1115, 1186, 10993, 2]
+// Dependencies: [6957, 7417, 14354, 7020, 14358, 14363, 1115, 1186, 11006, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 15492 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
+// Module 15521 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
 import util from "util" /* 1115 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7015 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14329 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 14333 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6952 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7020 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14354 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 14358 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
 
 require = fn;
 function useGoreContentNonFriendsDmSettingValue() {
@@ -28,7 +28,7 @@ function useGoreContentNonFriendsDmSettingValue() {
 function onGoreContentNonFriendsDmOnPress() {
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   if (null != selectedTeenId) {
-    const obj = selectedTeenId(14333);
+    const obj = selectedTeenId(14358);
     const obj3 = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
     const intl = selectedTeenId(1115).intl;
     obj3.title = intl.string(selectedTeenId(1115).t["16/3Bi"]);
@@ -40,17 +40,17 @@ function onGoreContentNonFriendsDmOnPress() {
     obj3.currentValue = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
     const items = [selectedTeenId(1186).ExplicitContentRedaction.SHOW];
     obj3.excluded = items;
-    const result = selectedTeenId(14338).handleSensitiveMediaFilterPress(obj3);
-    const obj2 = selectedTeenId(14338);
+    const result = selectedTeenId(14363).handleSensitiveMediaFilterPress(obj3);
+    const obj2 = selectedTeenId(14363);
   }
 }
-const SettingBuilders = fn(10993);
+const SettingBuilders = fn(11006);
 const pressable = SettingBuilders.createPressable({
   useTitle: function getTitle() {
     const intl = util.intl;
     return intl.string(util.t["Yh+HX1"]);
   },
-  parent: fn(7412).MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
+  parent: fn(7417).MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: useGoreContentNonFriendsDmSettingValue,
   onPress: onGoreContentNonFriendsDmOnPress,
   unsearchable: true

@@ -1,17 +1,17 @@
-// Module ID: 12775
-// Function ID: 12776
+// Module ID: 12792
+// Function ID: 12793
 // Name: GuildTemplateEmbed
-// Dependencies: [17, 6872, 6739, 7150, 7382, 1115, 7373, 576, 4682, 11272, 11273, 12776, 2]
+// Dependencies: [17, 6877, 6744, 7155, 7387, 1115, 7378, 576, 4685, 11286, 11287, 12793, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 12775 (GuildTemplateEmbed)
+// Module 12792 (GuildTemplateEmbed)
 import _mod17 from "module_17" /* 17 */;
 import util from "util" /* 1115 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 6739 */;
-import Constants from "Constants" /* 7150 */;
-import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 7373 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7382 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 6872 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 6744 */;
+import Constants from "Constants" /* 7155 */;
+import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 7378 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7387 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 6877 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -42,9 +42,9 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     const intl2 = util.intl;
     obj.titleText = intl2.string(util.t.A6MwXE);
     if (obj3.isThemeDark(arg1)) {
-      let tmpResult = tmp(11272);
+      let tmpResult = tmp(11286);
     } else {
-      tmpResult = tmp(11273);
+      tmpResult = tmp(11287);
     }
     obj.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
     obj.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
@@ -63,7 +63,7 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj10.titleColor = colors.titleColor;
     obj10.subtitle = formatToPlainStringResult;
     obj10.subtitleColor = colors.subtitleColor;
-    obj10.thumbnailUrl = Image.resolveAssetSource(tmp(12776)).uri;
+    obj10.thumbnailUrl = Image.resolveAssetSource(tmp(12793)).uri;
     ({ acceptLabelGreenColor: obj6.acceptLabelColor, acceptLabelGreenBackgroundColor: obj6.acceptLabelBackgroundColor } = colors);
     const intl6 = util.intl;
     obj10.acceptLabelText = intl6.string(util.t["a3Gl+e"]);

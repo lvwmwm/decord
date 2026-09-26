@@ -1,24 +1,24 @@
-// Module ID: 16923
-// Function ID: 16924
+// Module ID: 16951
+// Function ID: 16952
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 4845, 11741, 11739, 16880, 11744, 4850, 21, 16924, 4563, 8845, 11740, 4528, 576, 11745, 10445, 5273, 16883, 5893, 6489, 5227, 16873, 504, 12, 4538, 1115, 4537, 2]
+// Dependencies: [32, 19, 17, 4852, 11755, 11753, 16909, 11758, 4857, 21, 16952, 4566, 8853, 11754, 4531, 576, 11759, 10456, 5280, 16912, 5898, 6494, 5234, 16902, 504, 12, 4541, 1115, 4540, 2]
 
-// Module 16923 (VoicePanelCardView)
+// Module 16951 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
-import native from "native" /* 4537 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4538 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import Suspender from "Suspender" /* 5227 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6489 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11745 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 16924 */;
+import native from "native" /* 4540 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import Suspender from "Suspender" /* 5234 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6494 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11759 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 16952 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 
-const spring = tmp23(5273);
-const roundToNearestPixelDefault = tmp3(10445);
+const spring = tmp23(5280);
+const roundToNearestPixelDefault = tmp3(10456);
 require = fn;
 function getCardKey(type) {
   return "" + type.type + "-" + type.id;
@@ -162,12 +162,12 @@ function CardContentFreezer(children) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const VoicePanelConstants = fn(11741);
+const VoicePanelConstants = fn(11755);
 ({ LAYOUT_PHYSICS: closure_8, VoicePanelModes: closure_9, UI_SHOW_HIDE_PHYSICS, VOICE_PANEL_CHUNK_DIVISOR } = VoicePanelConstants);
-const VoicePanelControlsModes = fn(11739).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(16880).VoicePanelPIPModes;
-const EDGE_GUTTER = fn(11744).EDGE_GUTTER;
-const isUserParticipant = fn(4850).isUserParticipant;
+const VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;
+const VoicePanelPIPModes = fn(16909).VoicePanelPIPModes;
+const EDGE_GUTTER = fn(11758).EDGE_GUTTER;
+const isUserParticipant = fn(4857).isUserParticipant;
 const jsx = fn(21).jsx;
 let SCALE_PHYSICS = {};
 const merged = Object.assign(UI_SHOW_HIDE_PHYSICS);

@@ -1,25 +1,25 @@
-// Module ID: 6540
-// Function ID: 6541
+// Module ID: 6545
+// Function ID: 6546
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 5766, 5879, 2066, 6516, 6513, 1375, 21, 4829, 5989, 576, 1484, 504, 1612, 4528, 672, 6539, 5908, 4825, 1115, 5274, 5854, 5286, 1094, 6522, 6541, 6542, 6546, 1397, 4796, 6551, 1980, 5428, 6574, 2]
+// Dependencies: [32, 19, 17, 5771, 5884, 2067, 6521, 6518, 1375, 21, 4836, 5994, 576, 1485, 504, 1613, 4531, 672, 6544, 5913, 4832, 1115, 5281, 5859, 5293, 1094, 6527, 6546, 6547, 6551, 1397, 4800, 6556, 1981, 5435, 6579, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 6540 (GuildOnboardingPrompt)
+// Module 6545 (GuildOnboardingPrompt)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5854 */;
-import TermsFieldListDefault from "TermsFieldList" /* 5908 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6522 */;
-import EmojiDefault from "Emoji" /* 6546 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5859 */;
+import TermsFieldListDefault from "TermsFieldList" /* 5913 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6527 */;
+import EmojiDefault from "Emoji" /* 6551 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5766 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5879 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6516 */;
+import EmojiStore from "EmojiStore" /* 5771 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5884 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
 
 const require = globalThis.__r;
 
@@ -46,7 +46,7 @@ function PromptHeader(currentPrompt) {
     const obj6 = { variant: "text-sm/medium", color: "text-brand", children: null };
     const intl2 = tmp6(1115).intl;
     obj6.children = intl2.string(tmp6(1115).t.Ur8Vrt);
-    items1[1] = tmp5(tmp6(4825).Text, obj6);
+    items1[1] = tmp5(tmp6(4832).Text, obj6);
     obj4.children = items1;
     tmp2Result = tmp2(tmp3, obj4);
   }
@@ -218,19 +218,19 @@ function DropdownOption(option) {
   }
   obj4.name = str;
   obj3.children = closure_15(EmojiDefault, obj4);
-  const items1 = [closure_15(closure_6, obj3), closure_15(tmp2(4825).Text, { variant: "text-md/semibold", children: option.title })];
+  const items1 = [closure_15(closure_6, obj3), closure_15(tmp2(4832).Text, { variant: "text-md/semibold", children: option.title })];
   obj2.children = items1;
   return tmp5(closure_6, obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire, ScrollView: closure_7, FlatList: closure_8 } = get_ActivityIndicator);
-let closure_13 = fn(6513).GuildOnboardingModalStates;
+let closure_13 = fn(6518).GuildOnboardingModalStates;
 const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-const createStyles = fn(4829);
-let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5989).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollContainer: null, scrollContainerGradient: null, promptHeader: null, requiredSeparator: null, countText: null, title: null, helpText: null, footer: null, footerText: null, footerContent: null, optionTextEmoji: null, optionImageEmoji: null, emojiContainer: null, dropdownContainer: null, emptyDropdownText: null, dropdownPill: null, dropdownIconContainer: null, dropdownIcon: null };
-let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5989).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+const createStyles = fn(4836);
+let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5994).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollContainer: null, scrollContainerGradient: null, promptHeader: null, requiredSeparator: null, countText: null, title: null, helpText: null, footer: null, footerText: null, footerContent: null, optionTextEmoji: null, optionImageEmoji: null, emojiContainer: null, dropdownContainer: null, emptyDropdownText: null, dropdownPill: null, dropdownIconContainer: null, dropdownIcon: null };
+let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5994).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollContainer = { display: "flex", flexGrow: 1, justifyContent: "center", paddingHorizontal: 16, paddingTop: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollContainerGradient = { position: "absolute", height: 48, width: "100%", left: 0, top: -48 };
 obj2.promptHeader = { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 };
@@ -467,7 +467,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
   items3[1] = { paddingBottom: 64 + currentPrompt(selectOption[15])().bottom + 48 + 48, position: "relative" };
   obj2.contentContainerStyle = items3;
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(6551, dependencyMap.paths), "DropdownOptions", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(6556, dependencyMap.paths), "DropdownOptions", {
       guildId,
       promptId: currentPrompt.id,
       onSelect(id, arg1) {

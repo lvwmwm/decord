@@ -1,17 +1,17 @@
-// Module ID: 7134
-// Function ID: 7135
+// Module ID: 7139
+// Function ID: 7140
 // Name: StreamPermissionUtils
-// Dependencies: [4846, 2048, 4464, 2066, 4466, 4848, 1074, 5723, 4974, 5039, 504, 2]
+// Dependencies: [4853, 2049, 4467, 2067, 4469, 4855, 1074, 5728, 4981, 5046, 504, 2]
 // Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 7134 (StreamPermissionUtils)
-import ChannelUtils from "ChannelUtils" /* 4974 */;
-import AgeGateUtils from "AgeGateUtils" /* 5039 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5723 */;
-import GameConsoleStore from "GameConsoleStore" /* 4846 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
-import VoiceStateStore from "VoiceStateStore" /* 4848 */;
+// Module 7139 (StreamPermissionUtils)
+import ChannelUtils from "ChannelUtils" /* 4981 */;
+import AgeGateUtils from "AgeGateUtils" /* 5046 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5728 */;
+import GameConsoleStore from "GameConsoleStore" /* 4853 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 const require = globalThis.__r;
 
@@ -108,8 +108,8 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     return items1;
   }
 }
-const ChannelRecordBase = fn(2048).ChannelRecordBase;
-const GUILD_VOCAL_CHANNELS_KEY = fn(4464).GUILD_VOCAL_CHANNELS_KEY;
+const ChannelRecordBase = fn(2049).ChannelRecordBase;
+const GUILD_VOCAL_CHANNELS_KEY = fn(4467).GUILD_VOCAL_CHANNELS_KEY;
 const Permissions = fn(1074).Permissions;
 const StreamUnavailableReasons = { REMOTE_MODE: 0, [0]: "REMOTE_MODE", CHANNEL_FULL: 1, [1]: "CHANNEL_FULL", NO_PERMISSION: 2, [2]: "NO_PERMISSION", AGE_RESTRICTED: 3, [3]: "AGE_RESTRICTED" };
 const size = fn(2);

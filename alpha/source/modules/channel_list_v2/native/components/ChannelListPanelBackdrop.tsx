@@ -1,14 +1,14 @@
-// Module ID: 15658
-// Function ID: 15659
+// Module ID: 15686
+// Function ID: 15687
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 15629, 1612, 14595, 15659, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 15657, 1613, 14620, 15687, 2]
 // Exports: default
 
-// Module 15658 (ChannelListPanelBackdrop)
+// Module 15686 (ChannelListPanelBackdrop)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import QuestHooks from "QuestHooks" /* 14595 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15629 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import QuestHooks from "QuestHooks" /* 14620 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15657 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 const DM_WIDTH = fn(1074).DM_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, position: "relative", overflow: "hidden" }, panelTint: null, listWrapper: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

@@ -1,17 +1,17 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9710
+// Function ID: 9711
 // Name: markUnread
-// Dependencies: [5, 4468, 2044, 5049, 4844, 1372, 1074, 3, 11, 7179, 1271, 2]
+// Dependencies: [5, 4471, 2045, 5056, 4851, 1372, 1074, 3, 11, 7184, 1271, 2]
 // Exports: default
 
-// Module 9699 (markUnread)
+// Module 9710 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7179 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4468 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import MessageStore from "MessageStore" /* 5049 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MessageStore from "MessageStore" /* 5056 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
@@ -126,7 +126,7 @@ let closure_11 = async function _markUnread(arg0, value) {
     }
   }
 };
-const shouldBadgeMessage = fn(4844).shouldBadgeMessage;
+const shouldBadgeMessage = fn(4851).shouldBadgeMessage;
 const Endpoints = fn(1074).Endpoints;
 let closure_10 = new LoggerDefault("markUnread");
 const size = fn(2);

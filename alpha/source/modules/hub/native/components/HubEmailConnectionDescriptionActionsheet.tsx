@@ -1,20 +1,20 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12249
+// Function ID: 12250
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 4829, 6566, 6565, 1115, 4825, 2]
+// Dependencies: [19, 21, 4836, 6571, 6570, 1115, 4832, 2]
 // Exports: default
 
-// Module 12231 (HubEmailConnectionDescriptionActionsheet)
+// Module 12249 (HubEmailConnectionDescriptionActionsheet)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6566 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c2, jsxs: c3 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_4 = createStyles.createStyles({ description: { marginBottom: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionDescriptionActionsheet.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 17275
-// Function ID: 17276
+// Module ID: 17305
+// Function ID: 17306
 // Name: AutomodRuleUtils
-// Dependencies: [502, 17272, 11327, 1370, 17276, 17277, 1115, 7376, 6936, 2]
+// Dependencies: [502, 17302, 11341, 1370, 17306, 17307, 1115, 7381, 6941, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, getRulesFromTriggerTypeMap, isBackendPersistedRule, isRegexSupported, isRuleApplicationFilter, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, isValidMentionSpamLimit, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 17275 (AutomodRuleUtils)
+// Module 17305 (AutomodRuleUtils)
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6936 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 7376 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17276 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 17277 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 7381 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17306 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 17307 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const getRuleCountByTriggerType = fn(17272).getRuleCountByTriggerType;
-const Constants = fn(11327);
+const getRuleCountByTriggerType = fn(17302).getRuleCountByTriggerType;
+const Constants = fn(11341);
 ({ AutomodTriggerType: closure_4, MAX_KEYWORDS_PER_KEYWORD_FILTER: hasOwnProperty, MAX_REGEX_PATTERNS_PER_KEYWORD_FILTER: metroRequire, MAX_CHARACTERS_PER_KEYWORD: closure_7, MIN_CHARACTERS_PER_KEYWORD: closure_8, MIN_REGEX_PATTERN_LENGTH: closure_9, MAX_REGEX_PATTERN_LENGTH: c10, AutomodActionType: closure_11, AutomodEventType: closure_12, MAX_MENTION_SPAM_LIMIT: map1, MIN_MENTION_SPAM_LIMIT: closure_14 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodRuleUtils.tsx");

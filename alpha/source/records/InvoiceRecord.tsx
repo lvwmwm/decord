@@ -1,10 +1,10 @@
-// Module ID: 4494
-// Function ID: 4495
+// Module ID: 4497
+// Function ID: 4498
 // Name: InvoiceRecord
-// Dependencies: [1387, 4495, 2]
+// Dependencies: [1387, 4498, 2]
 
-// Module 4494 (InvoiceRecord)
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4495 */;
+// Module 4497 (InvoiceRecord)
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4498 */;
 import Record from "Record" /* 1387 */;
 
 require = fn;

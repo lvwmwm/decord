@@ -1,24 +1,24 @@
-// Module ID: 10526
-// Function ID: 10527
+// Module ID: 10537
+// Function ID: 10538
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 10117, 2041, 21, 4829, 576, 1612, 10151, 38, 10527, 10205, 10186, 504, 2030, 2028, 10528, 10529, 10530, 2]
+// Dependencies: [19, 17, 10128, 2042, 21, 4836, 576, 1613, 10162, 38, 10538, 10217, 10198, 504, 2031, 2029, 10539, 10540, 10541, 2]
 // Exports: default
 
-// Module 10526 (PremiumGiftSuccess)
+// Module 10537 (PremiumGiftSuccess)
 import nativeDefault from "native" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2030 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
 import noop from "module_19" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10117 */;
+import PromotionsStore from "PromotionsStore" /* 10128 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles((arg0) => {
   const obj = { bodyContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16, flex: 1, alignContent: "center", justifyContent: "center", flexGrow: 1 }, actionContainer: null };
   const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16, flex: 1, alignContent: "center", justifyContent: "center", flexGrow: 1 };

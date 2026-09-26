@@ -1,10 +1,10 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17151
+// Function ID: 17152
 // Name: IAPManager
-// Dependencies: [6534, 2]
+// Dependencies: [6539, 2]
 
-// Module 17123 (IAPManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+// Module 17151 (IAPManager)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 const prototype = function IAPManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

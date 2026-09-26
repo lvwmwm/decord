@@ -1,13 +1,13 @@
-// Module ID: 10906
-// Function ID: 10907
+// Module ID: 10919
+// Function ID: 10920
 // Name: SafetyBookletSpotIllustration
-// Dependencies: [21, 5894, 10907, 2]
+// Dependencies: [21, 5899, 10920, 2]
 // Exports: SafetyBookletSpotIllustration
 
-// Module 10906 (SafetyBookletSpotIllustration)
+// Module 10919 (SafetyBookletSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5894 */;
-import _modDef10907 from "module_10907" /* 10907 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef10920 from "module_10920" /* 10920 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const SafetyBookletSpotIllustration = function SafetyBookletSpotIllustrat
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef10907 };
+  const obj2 = { uri: _modDef10920 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,15 +1,15 @@
-// Module ID: 13402
-// Function ID: 13403
+// Module ID: 13420
+// Function ID: 13421
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 4829, 576, 13403, 13405, 8498, 8539, 13406, 8509, 13407, 5894, 13408, 13412, 13413, 1397, 13414, 6539, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 13421, 13423, 8506, 8547, 13424, 8517, 13425, 5899, 13426, 13430, 13431, 1397, 13432, 6544, 2]
 // Exports: ActivateDevice
 
-// Module 13402 (ActivateDevice)
+// Module 13420 (ActivateDevice)
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5894 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 8539 */;
-import _modDef13406 from "module_13406" /* 13406 */;
-import _modDef13407 from "module_13407" /* 13407 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 8547 */;
+import _modDef13424 from "module_13424" /* 13424 */;
+import _modDef13425 from "module_13425" /* 13425 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ImageBackground: metroRequire, ActivityIndicator: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { background: { flex: 1 }, imageStyle: { marginVertical: 0, resizeMode: "cover", backgroundColor: nativeDefault.colors.TEXT_BRAND }, safeArea: { flex: 1, justifyContent: "center", alignItems: "center" }, content: null, scroller: null, scrollerContent: null };
 let obj3 = { marginVertical: 0, resizeMode: "cover", backgroundColor: nativeDefault.colors.TEXT_BRAND };
 obj2.content = { maxWidth: 480, backgroundColor: nativeDefault.colors.PANEL_BG, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.lg, padding: 24, marginHorizontal: 24, marginVertical: 36, shadowColor: nativeDefault.colors.BLACK, shadowOpacity: 0.2, shadowOffset: { width: 0, height: 4 }, shadowRadius: 4 };
@@ -76,11 +76,11 @@ export const ActivateDevice = (onClose) => {
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef13406);
+        closure_3(_modDef13424);
       } else {
         const scopes = userCodeData.scopes;
         if (scopes.some((item) => first(first1[11]).isSocialLayerUmbrellaScope(item))) {
-          closure_3(_modDef13407);
+          closure_3(_modDef13425);
         }
       }
     }
@@ -113,7 +113,7 @@ export const ActivateDevice = (onClose) => {
   }
   const obj6 = { source: null, imageStyle: null, style: null, children: null };
   const obj2 = first(first1[7]);
-  obj6.source = first(first1[17]).makeSource(require("module_13414"));
+  obj6.source = first(first1[17]).makeSource(require("module_13432"));
   obj6.imageStyle = tmp.imageStyle;
   const items6 = [tmp.background];
   obj6.style = items6;

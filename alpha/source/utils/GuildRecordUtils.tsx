@@ -1,17 +1,17 @@
-// Module ID: 2058
-// Function ID: 2059
+// Module ID: 2059
+// Function ID: 2060
 // Name: GuildRecordUtils
-// Dependencies: [2059, 2062, 1074, 2061, 2064, 38, 2065, 2]
+// Dependencies: [2060, 2063, 1074, 2062, 2065, 38, 2066, 2]
 // Exports: attachSerializedData, constructFromPartialGuildRecord, dangerouslyConstructGuildRecordFromUntypedObject, fromBackgroundSync, fromClientDiscoverableGuild, fromDirectoryGuild, fromGuild, fromGuildBasic, fromGuildDirectoryEntry, fromGuildProfile, fromInviteGuild, fromSerializedGuildRecord, fromServer, fromStoreListingGuild, fromVerificationGateGuild, isGuildRecord, toGuildProperties
 
-// Module 2058 (GuildRecordUtils)
+// Module 2059 (GuildRecordUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1074 */;
-import SetUtils from "SetUtils" /* 2061 */;
-import guildIncidentsSerialization from "guildIncidentsSerialization" /* 2064 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 2065 */;
-import PlainRecord from "PlainRecord" /* 2059 */;
-import GuildRecord from "GuildRecord" /* 2062 */;
+import SetUtils from "SetUtils" /* 2062 */;
+import guildIncidentsSerialization from "guildIncidentsSerialization" /* 2065 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 2066 */;
+import PlainRecord from "PlainRecord" /* 2060 */;
+import GuildRecord from "GuildRecord" /* 2063 */;
 import size from "module_2" /* 2 */;
 
 function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildTheme) {
@@ -176,12 +176,12 @@ function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildThem
   } else {
     tmp35 = null;
     if (null != theme) {
-      let fromServerGuildThemeResult = tmp8(2065).fromServerGuildTheme(theme);
+      let fromServerGuildThemeResult = tmp8(2066).fromServerGuildTheme(theme);
       if (fromServerGuildThemeResult == null) {
         fromServerGuildThemeResult = { enabled: false, themeSettings: null };
       }
       tmp35 = fromServerGuildThemeResult;
-      const tmp8Result = tmp8(2065);
+      const tmp8Result = tmp8(2066);
     }
   }
   obj.guildTheme = tmp35;

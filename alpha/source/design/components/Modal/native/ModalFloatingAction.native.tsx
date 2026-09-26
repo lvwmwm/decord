@@ -1,13 +1,13 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10458
+// Function ID: 10459
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 4829, 4563, 4547, 1612, 5273, 5277, 5286, 672, 10448, 2]
+// Dependencies: [19, 17, 21, 4836, 4566, 4550, 1613, 5280, 5284, 5293, 672, 10459, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 10447 (ModalFloatingAction)
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import spring from "spring" /* 5273 */;
-import springPresets from "springPresets" /* 5277 */;
+// Module 10458 (ModalFloatingAction)
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import spring from "spring" /* 5280 */;
+import springPresets from "springPresets" /* 5284 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_8 = createStyles.createStyles({ floating: { position: "absolute", bottom: 0, width: "100%", paddingHorizontal: 16 }, spacer: { height: 96 } });
 const __initData = { code: "function ModalFloatingActionNativeTsx1(){const{interpolate,sharedValue,floatingBackgroundColor,useReducedMotion}=this.__closure;return{opacity:interpolate(sharedValue.get(),[0,1],[0,1]),borderBottomColor:floatingBackgroundColor,borderBottomWidth:16,transform:[{translateY:interpolate(sharedValue.get(),[useReducedMotion?0.999999:0,1],[32,0])}]};}" };
 const size = fn(2);

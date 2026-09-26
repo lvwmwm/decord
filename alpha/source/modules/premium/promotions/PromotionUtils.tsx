@@ -1,20 +1,20 @@
-// Module ID: 12946
-// Function ID: 12947
+// Module ID: 12963
+// Function ID: 12964
 // Name: PromotionUtils
-// Dependencies: [5, 1220, 10118, 10117, 1374, 1074, 2004, 4682, 1271, 1364, 1241, 1385, 2028, 11, 2030, 10149, 2]
+// Dependencies: [5, 1220, 10129, 10128, 1374, 1074, 2005, 4685, 1271, 1364, 1241, 1385, 2029, 11, 2031, 10160, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 12946 (PromotionUtils)
+// Module 12963 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2030 */;
-import constants from "constants" /* 10149 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2031 */;
+import constants from "constants" /* 10160 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import PromotionRecord from "PromotionRecord" /* 10118 */;
-import PromotionsStore from "PromotionsStore" /* 10117 */;
+import PromotionRecord from "PromotionRecord" /* 10129 */;
+import PromotionsStore from "PromotionsStore" /* 10128 */;
 
 require = fn;
 function claimedOutboundPromotionCodeFromServer(code) {
@@ -117,7 +117,7 @@ let closure_12 = async function _claimOutboundPromotion(arg0, value) {
 const PromotionFlags = fn(1374).PromotionFlags;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, Endpoints: closure_9, Platforms: c10 } = Constants);
-const ActivityPlatform = fn(2004).ActivityPlatform;
+const ActivityPlatform = fn(2005).ActivityPlatform;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/promotions/PromotionUtils.tsx");
 

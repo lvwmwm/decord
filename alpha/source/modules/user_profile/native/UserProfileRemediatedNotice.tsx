@@ -1,23 +1,23 @@
-// Module ID: 12678
-// Function ID: 12679
+// Module ID: 12695
+// Function ID: 12696
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4476, 1074, 21, 4829, 576, 7679, 563, 4825, 1115, 9184, 2]
+// Dependencies: [19, 17, 4479, 1074, 21, 4836, 576, 7687, 563, 4832, 1115, 9195, 2]
 // Exports: default
 
-// Module 12678 (UserProfileRemediatedNotice)
+// Module 12695 (UserProfileRemediatedNotice)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7679 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9184 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4476 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 
 require = fn;
 const View = fn(17).View;
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -38,7 +38,7 @@ export default function RemediatedUserNotice(user) {
       const obj3 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl = tmp4(1115).intl;
       obj3.children = intl.string(tmp4(1115).t["oC/fU6"]);
-      isBlocked = closure_6(tmp4(4825).Text, obj3);
+      isBlocked = closure_6(tmp4(4832).Text, obj3);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
@@ -46,7 +46,7 @@ export default function RemediatedUserNotice(user) {
       const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl2 = tmp4(1115).intl;
       obj5.children = intl2.string(tmp4(1115).t.HXz5An);
-      const items3 = [closure_6(tmp4(4825).Text, obj5), closure_6(tmp4(4825).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const items3 = [closure_6(tmp4(4832).Text, obj5), closure_6(tmp4(4832).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1115).intl;
       const obj6 = {
         unignoreHook(children) {

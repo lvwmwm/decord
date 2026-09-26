@@ -1,27 +1,27 @@
-// Module ID: 16008
-// Function ID: 16009
+// Module ID: 16036
+// Function ID: 16037
 // Name: YouBarFloatingShade
-// Dependencies: [19, 17, 4650, 14602, 15892, 21, 4829, 504, 4528, 576, 14604, 1478, 4691, 15626, 4649, 1092, 5286, 2]
+// Dependencies: [19, 17, 4653, 14627, 15920, 21, 4836, 504, 4531, 576, 14629, 1479, 4695, 15654, 4652, 1092, 5293, 2]
 
-// Module 16008 (YouBarFloatingShade)
+// Module 16036 (YouBarFloatingShade)
 import initialize from "initialize" /* 504 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import useToken from "useToken" /* 4528 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4649 */;
-import useChatLayoutDefault from "useChatLayout" /* 4691 */;
-import LinearGradientDefault from "LinearGradient" /* 5286 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14604 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
+import useToken from "useToken" /* 4531 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4652 */;
+import useChatLayoutDefault from "useChatLayout" /* 4695 */;
+import LinearGradientDefault from "LinearGradient" /* 5293 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14629 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4650 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4653 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(14602).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
-const GUILD_LIST_WIDTH = fn(15892).GUILD_LIST_WIDTH;
+let closure_5 = fn(14627).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
+const GUILD_LIST_WIDTH = fn(15920).GUILD_LIST_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles({ container: { position: "absolute", bottom: 0, left: 0, right: 0 } });
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarFloatingShade.tsx");
@@ -34,7 +34,7 @@ export default noop.memo(function YouBarFloatingShade() {
   if (useChatLayoutDefault().isChatBesideChannelList) {
     width = tmp7 + GUILD_LIST_WIDTH;
   }
-  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp2(4649).GradientPercentage.END);
+  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp2(4652).GradientPercentage.END);
   const tmp2Result = client_themes_ClientThemesUtils;
   const token = useToken.useToken(tmp6(576).colors.BACKGROUND_BASE_LOWER);
   const tmp2Result6 = useToken;

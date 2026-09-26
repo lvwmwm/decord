@@ -1,13 +1,13 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16628
+// Function ID: 16629
 // Name: RegionStore
-// Dependencies: [2066, 12, 504, 573, 2]
+// Dependencies: [2067, 12, 504, 573, 2]
 
-// Module 16599 (RegionStore)
+// Module 16628 (RegionStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 let c3 = null;
 let closure_4 = {};

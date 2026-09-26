@@ -1,15 +1,15 @@
-// Module ID: 8979
-// Function ID: 8980
+// Module ID: 8990
+// Function ID: 8991
 // Name: useGuildsUserCanStartStageIn
-// Dependencies: [4464, 4466, 2052, 504, 2]
+// Dependencies: [4467, 4469, 2053, 504, 2]
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 8979 (useGuildsUserCanStartStageIn)
-import GuildChannelStore from "GuildChannelStore" /* 4464 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
+// Module 8990 (useGuildsUserCanStartStageIn)
+import GuildChannelStore from "GuildChannelStore" /* 4467 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 const require = fn;
-const GUILD_VOCAL_CHANNELS_KEY = fn(4464).GUILD_VOCAL_CHANNELS_KEY;
+const GUILD_VOCAL_CHANNELS_KEY = fn(4467).GUILD_VOCAL_CHANNELS_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx");
 

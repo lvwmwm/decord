@@ -1,10 +1,10 @@
-// Module ID: 8316
-// Function ID: 8317
+// Module ID: 8324
+// Function ID: 8325
 // Name: OrbRedemptionOrdersExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 8316 (OrbRedemptionOrdersExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 8324 (OrbRedemptionOrdersExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-12-orb-redemption-thru-orders", kind: "user", defaultConfig: { enabled: false }, variations: null };

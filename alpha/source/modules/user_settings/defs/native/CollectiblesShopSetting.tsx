@@ -1,15 +1,15 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15419
+// Function ID: 15420
 // Name: CollectiblesShopSetting
-// Dependencies: [1074, 10993, 1115, 11606, 15391, 6956, 6598, 2]
+// Dependencies: [1074, 11006, 1115, 11620, 15420, 6961, 6603, 2]
 
-// Module 15390 (CollectiblesShopSetting)
+// Module 15419 (CollectiblesShopSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6598 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6956 */;
-import ShopIcon from "ShopIcon" /* 11606 */;
-import SettingBuilders from "SettingBuilders" /* 10993 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
+import ShopIcon from "ShopIcon" /* 11620 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

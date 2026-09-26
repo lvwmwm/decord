@@ -1,12 +1,12 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14407
+// Function ID: 14408
 // Name: useUserAgeGroup
-// Dependencies: [6952, 504, 2]
+// Dependencies: [6957, 504, 2]
 // Exports: default
 
-// Module 14382 (useUserAgeGroup)
+// Module 14407 (useUserAgeGroup)
 import initialize from "initialize" /* 504 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6952 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
 
 require = fn;
 const size = fn(2);

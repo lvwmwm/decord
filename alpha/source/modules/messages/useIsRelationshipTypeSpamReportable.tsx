@@ -1,11 +1,11 @@
-// Module ID: 12072
-// Function ID: 12073
+// Module ID: 12090
+// Function ID: 12091
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [4476, 1074, 504, 2]
+// Dependencies: [4479, 1074, 504, 2]
 // Exports: useIsRelationshipTypeSpamReportable
 
-// Module 12072 (useIsRelationshipTypeSpamReportable)
-import RelationshipStore from "RelationshipStore" /* 4476 */;
+// Module 12090 (useIsRelationshipTypeSpamReportable)
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 
 const require = globalThis.__r;
 

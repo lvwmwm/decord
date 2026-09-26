@@ -1,12 +1,12 @@
-// Module ID: 7691
-// Function ID: 7692
+// Module ID: 7699
+// Function ID: 7700
 // Name: useVideoTileGradientColors
-// Dependencies: [19, 1074, 7667, 1092, 2]
+// Dependencies: [19, 1074, 7675, 1092, 2]
 // Exports: useVideoTileGradientColors
 
-// Module 7691 (useVideoTileGradientColors)
+// Module 7699 (useVideoTileGradientColors)
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7667 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7675 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,12 +1,12 @@
-// Module ID: 7271
-// Function ID: 7272
+// Module ID: 7276
+// Function ID: 7277
 // Name: hasForLaterPremiumType
-// Dependencies: [1372, 1374, 1969, 504, 2]
+// Dependencies: [1372, 1374, 1970, 504, 2]
 // Exports: default, useHasForLaterPremiumType
 
-// Module 7271 (hasForLaterPremiumType)
+// Module 7276 (hasForLaterPremiumType)
 import initialize from "initialize" /* 504 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

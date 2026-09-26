@@ -1,15 +1,15 @@
-// Module ID: 8737
-// Function ID: 8738
+// Module ID: 8745
+// Function ID: 8746
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 4829, 576, 1478, 1612, 5885, 8156, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 1479, 1613, 5890, 8164, 2]
 // Exports: default
 
-// Module 8737 (OAuth2AuthorizeContent)
+// Module 8745 (OAuth2AuthorizeContent)
 import nativeDefault from "native" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5885 */;
-import ObscuredSurfaceDefault from "ObscuredSurface" /* 8156 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5890 */;
+import ObscuredSurfaceDefault from "ObscuredSurface" /* 8164 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { fill: { flex: 1 }, scrollView: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 }, scrollViewContentLandscape: { flexDirection: "row", alignItems: "center", width: "100%", flexGrow: 1, gap: 16 }, scrollViewContentPortrait: { flexDirection: "column", width: "100%", flexGrow: 1, gap: 16 }, header: { paddingTop: 24 }, bodyContainer: { flexDirection: "column", gap: 16, padding: 16 }, bodyContainerBackground: null, footerPortrait: null, separator: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 };
 obj2.bodyContainerBackground = { marginHorizontal: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };

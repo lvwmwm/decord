@@ -1,10 +1,10 @@
-// Module ID: 7547
-// Function ID: 7548
+// Module ID: 7555
+// Function ID: 7556
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 5295, 4824, 5427, 7548, 7549, 7550, 7552, 2]
+// Dependencies: [32, 5302, 4831, 5434, 7556, 7557, 7558, 7560, 2]
 
-// Module 7547 (transformNativeMarkupNode)
-import MarkupTypes from "MarkupTypes" /* 5295 */;
+// Module 7555 (transformNativeMarkupNode)
+import MarkupTypes from "MarkupTypes" /* 5302 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -76,7 +76,7 @@ function transformNode(type, channelId) {
         obj18.inQuote = true;
         let arr2 = transformNativeBlocks(type.value, obj18, "quote");
         if (arr2.length <= 0) {
-          const obj19 = { type: tmp51(5295).AST_KEY.TEXT, content: " " };
+          const obj19 = { type: tmp51(5302).AST_KEY.TEXT, content: " " };
           const items1 = [obj19];
           arr2 = items1;
         }
@@ -189,7 +189,7 @@ function transformNativeBlocks(value, channelId, quote) {
   return items;
 }
 const set = new Set(["paragraph", "quote"]);
-const regExp = new RegExp(fn(4824).ANSI_CONTROL_SEQUENCE_RE, "g");
+const regExp = new RegExp(fn(4831).ANSI_CONTROL_SEQUENCE_RE, "g");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupNode.tsx");
 

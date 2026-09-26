@@ -1,16 +1,16 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15447
+// Function ID: 15448
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 17, 6957, 1076, 1074, 21, 4829, 1484, 8221, 504, 15406, 15413, 5428, 1115, 576, 1241, 6956, 6598, 6969, 8285, 2]
+// Dependencies: [19, 17, 6962, 1076, 1074, 21, 4836, 1485, 8229, 504, 15435, 15442, 5435, 1115, 576, 1241, 6961, 6603, 6974, 8293, 2]
 // Exports: default
 
-// Module 15418 (FeaturedCategorySubblock)
+// Module 15447 (FeaturedCategorySubblock)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6956 */;
-import VisibilitySensorDefault from "VisibilitySensor" /* 15413 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
+import VisibilitySensorDefault from "VisibilitySensor" /* 15442 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 
 require = fn;
 const Image = fn(17).Image;
@@ -19,7 +19,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, UserSettingsSections: closure_7 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles({ container: { position: "relative" }, bannerImage: { width: "100%", aspectRatio: 2.237580993520518, resizeMode: "contain" }, limitedTimeBadge: { position: "absolute", bottom: "68%", left: "3%", zIndex: 1 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/native/FeaturedCategorySubblock.tsx");
@@ -27,11 +27,11 @@ let result = size.fileFinishedImporting("modules/collectibles/native/FeaturedCat
 export default function _default(subblock) {
   subblock = subblock.subblock;
   const tmp = closure_10();
-  importDefault = subblock(1484).useNavigation();
-  const obj = subblock(1484);
-  dependencyMap = subblock(8221).useCollectiblesAnalyticsContext();
+  importDefault = subblock(1485).useNavigation();
+  const obj = subblock(1485);
+  dependencyMap = subblock(8229).useCollectiblesAnalyticsContext();
   const assetUrl = subblock.assetUrl;
-  let obj2 = subblock(8221);
+  let obj2 = subblock(8229);
   let items = [CollectiblesCategoryStore];
   const stateFromStores = subblock(504).useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
   let obj3 = subblock(504);
@@ -48,8 +48,8 @@ export default function _default(subblock) {
     const _Date = Date;
     date = new Date(unpublishedAt);
   }
-  let obj5 = { onChange: subblock(15406).useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange, children: null };
-  let obj4 = subblock(15406);
+  let obj5 = { onChange: subblock(15435).useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange, children: null };
+  let obj4 = subblock(15435);
   const obj6 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, activeOpacity: 0.8, androidRippleConfig: null, hitSlop: 8, onPress: null, style: null, children: null };
   const intl = tmp2(1115).intl;
   obj6.accessibilityLabel = intl.formatToPlainString(subblock(1115).t.FNtLb3, { category: subblock.name });
@@ -84,9 +84,9 @@ export default function _default(subblock) {
     if (null != stateFromStores) {
       if (tmp9.isOrbsExclusive) {
         const obj3 = { analyticsLocations: null, analyticsSource: null, screen: null };
-        const items = [tmp(6598).COLLECTIBLES_SHOP];
+        const items = [tmp(6603).COLLECTIBLES_SHOP];
         obj3.analyticsLocations = items;
-        obj3.analyticsSource = tmp(6598).COLLECTIBLES_SHOP;
+        obj3.analyticsSource = tmp(6603).COLLECTIBLES_SHOP;
         obj3.screen = constants.ORBS;
         const result = CollectiblesActionCreators.openCollectiblesShopMobile(obj3);
       } else {
@@ -106,13 +106,13 @@ export default function _default(subblock) {
   }
   const items1 = [tmp11Result, ];
   const obj8 = { radius: nativeDefault.radii.lg };
-  let result = subblock(6969).shouldShowLimitedTimeBadge(date);
+  let result = subblock(6974).shouldShowLimitedTimeBadge(date);
   if (result) {
     const obj11 = { style: tmp.limitedTimeBadge };
-    result = tmp11(tmp2(8285).LimitedTimeBadge, obj11);
+    result = tmp11(tmp2(8293).LimitedTimeBadge, obj11);
   }
   items1[1] = result;
   obj6.children = items1;
-  obj5.children = tmp13(subblock(5428).PressableOpacity, obj6);
+  obj5.children = tmp13(subblock(5435).PressableOpacity, obj6);
   return closure_8(tmp12, obj5);
 };

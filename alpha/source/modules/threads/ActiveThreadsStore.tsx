@@ -1,15 +1,15 @@
-// Module ID: 5814
-// Function ID: 5815
+// Module ID: 5819
+// Function ID: 5820
 // Name: ActiveThreadsStore
-// Dependencies: [2048, 2044, 12, 504, 11, 573, 2]
+// Dependencies: [2049, 2045, 12, 504, 11, 573, 2]
 
-// Module 5814 (ActiveThreadsStore)
+// Module 5819 (ActiveThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelRecord from "ChannelRecord" /* 2048 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 import size from "module_2" /* 2 */;
 
 function handleThreadCreateOrUpdate(channel) {

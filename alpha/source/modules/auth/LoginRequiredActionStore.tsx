@@ -1,9 +1,9 @@
-// Module ID: 2035
-// Function ID: 2036
+// Module ID: 2036
+// Function ID: 2037
 // Name: LoginRequiredActionStore
 // Dependencies: [504, 573, 2]
 
-// Module 2035 (LoginRequiredActionStore)
+// Module 2036 (LoginRequiredActionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

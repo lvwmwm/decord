@@ -1,15 +1,15 @@
-// Module ID: 11510
-// Function ID: 11511
+// Module ID: 11524
+// Function ID: 11525
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 8312, 2004, 504, 2]
+// Dependencies: [19, 8320, 2005, 504, 2]
 // Exports: useDeveloperActivityShelfItems
 
-// Module 11510 (useDeveloperActivityShelfItems)
+// Module 11524 (useDeveloperActivityShelfItems)
 import noop from "module_19" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8312 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8320 */;
 
 const require = fn;
-let closure_4 = fn(2004).DEFAULT_EMBEDDED_ACTIVITY_CONFIG;
+let closure_4 = fn(2005).DEFAULT_EMBEDDED_ACTIVITY_CONFIG;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/useDeveloperActivityShelfItems.tsx");
 

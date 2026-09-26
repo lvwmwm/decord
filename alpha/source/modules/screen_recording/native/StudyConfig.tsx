@@ -1,10 +1,10 @@
-// Module ID: 15532
-// Function ID: 15533
+// Module ID: 15561
+// Function ID: 15562
 // Name: StudyConfig
 // Dependencies: [2]
 // Exports: getAvailableSurveys, getSurveyConfig, getSurveyConfigSafe
 
-// Module 15532 (StudyConfig)
+// Module 15561 (StudyConfig)
 import size from "module_2" /* 2 */;
 
 const SURVEY_CONFIGS = {};

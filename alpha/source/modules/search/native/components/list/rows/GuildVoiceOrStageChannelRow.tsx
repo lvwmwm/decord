@@ -1,19 +1,19 @@
-// Module ID: 16438
-// Function ID: 16439
+// Module ID: 16467
+// Function ID: 16468
 // Name: GuildVoiceOrStageChannelRow
-// Dependencies: [19, 17, 2049, 7298, 21, 9569, 4675, 1115, 4829, 504, 16439, 5738, 5732, 16440, 16442, 11760, 2]
+// Dependencies: [19, 17, 2050, 7303, 21, 9580, 4678, 1115, 4836, 504, 16468, 5743, 5737, 16469, 16471, 11774, 2]
 
-// Module 16438 (GuildVoiceOrStageChannelRow)
+// Module 16467 (GuildVoiceOrStageChannelRow)
 import util from "util" /* 1115 */;
-import UserUtilsDefault from "UserUtils" /* 4675 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5738 */;
-import ChannelListLayout from "ChannelListLayout" /* 9569 */;
-import renderChannelBadge from "renderChannelBadge" /* 11760 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 16439 */;
-import guild_channels_VoiceOrStageSummaryRowDefault from "guild_channels/VoiceOrStageSummaryRow" /* 16440 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 16442 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5743 */;
+import ChannelListLayout from "ChannelListLayout" /* 9580 */;
+import renderChannelBadge from "renderChannelBadge" /* 11774 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 16468 */;
+import guild_channels_VoiceOrStageSummaryRowDefault from "guild_channels/VoiceOrStageSummaryRow" /* 16469 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 16471 */;
 import noop from "module_19" /* 19 */;
-import StageInstanceStore from "StageInstanceStore" /* 2049 */;
+import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 
 require = fn;
 function GuildVoiceChannelSubtitle(channel) {
@@ -159,9 +159,9 @@ function GuildVoiceChannelExtras(arg0) {
   return <View style={tmp.subtitle}>{null}</View>;
 }
 const View = fn(17).View;
-const layout = fn(7298).CHANNEL_LIST_SEARCH_LAYOUT;
+const layout = fn(7303).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_8 = createStyles.createStyles({ users: { marginTop: 4 }, subtitle: { marginEnd: 16 }, trailing: { paddingVertical: 4, alignItems: "center", alignSelf: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");

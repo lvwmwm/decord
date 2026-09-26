@@ -1,16 +1,16 @@
-// Module ID: 6961
-// Function ID: 6962
+// Module ID: 6966
+// Function ID: 6967
 // Name: CollectiblesItemRecord
-// Dependencies: [6962, 1971, 6963, 6964, 6965, 1074, 1973, 2]
+// Dependencies: [6967, 1972, 6968, 6969, 6970, 1074, 1974, 2]
 // Exports: createCollectiblesItemsFromServerResponse, transformProductToCollectiblesItem
 
-// Module 6961 (CollectiblesItemRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6962 */;
-import NameplateRecord from "NameplateRecord" /* 1971 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 6963 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 6964 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 6965 */;
+// Module 6966 (CollectiblesItemRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6967 */;
+import NameplateRecord from "NameplateRecord" /* 1972 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 6968 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 6969 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 6970 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -63,14 +63,14 @@ function transformSKUToCollectiblesItem(productLine) {
           const tmp28 = new AvatarDecorationRecord(obj7);
           obj5.item = tmp28;
           return obj5;
-        } else if (tmp4(1973).CollectiblesItemType.NAMEPLATE === type) {
+        } else if (tmp4(1974).CollectiblesItemType.NAMEPLATE === type) {
           const obj9 = { type: "single", item: null };
           const obj17 = { skuId: productLine.id, type: null, asset: null, label: null, palette: null };
           ({ type: obj6.type, asset: obj6.asset, label: obj6.label, palette: obj6.palette } = item);
           const tmp22 = new NameplateRecord(obj17);
           obj9.item = tmp22;
           return obj9;
-        } else if (tmp4(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
+        } else if (tmp4(1974).CollectiblesItemType.PROFILE_EFFECT === type) {
           const obj18 = { skuId: productLine.id, type: null, title: null, description: null, thumbnailPreviewSrc: null, reducedMotionSrc: null, effects: null, accessibilityLabel: null, animationType: null, staticFrameSrc: null };
           ({ type: obj3.type, title: obj3.title, description: obj3.description, thumbnailPreviewSrc: obj3.thumbnailPreviewSrc, reducedMotionSrc: obj3.reducedMotionSrc, effects } = item);
           if (effects == null) {
@@ -82,7 +82,7 @@ function transformSKUToCollectiblesItem(productLine) {
           const tmp122 = new ProfileEffectRecord(obj18);
           obj19.item = tmp122;
           return obj19;
-        } else if (tmp4(1973).CollectiblesItemType.PROFILE_FRAME === type) {
+        } else if (tmp4(1974).CollectiblesItemType.PROFILE_FRAME === type) {
           const obj = { type: "single", item: null };
           const obj20 = { skuId: productLine.id, type: null, label: null, layers: null, innerWidth: null, overflowTop: null, overflowBottom: null, overflowHorizontal: null };
           ({ type: obj2.type, label: obj2.label, layers: obj2.layers, innerWidth: obj2.innerWidth, overflowTop: obj2.overflowTop, overflowBottom: obj2.overflowBottom, overflowHorizontal: obj2.overflowHorizontal } = item);

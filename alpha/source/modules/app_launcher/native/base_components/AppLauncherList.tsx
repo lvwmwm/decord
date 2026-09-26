@@ -1,15 +1,15 @@
-// Module ID: 11635
-// Function ID: 11636
+// Module ID: 11649
+// Function ID: 11650
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 4829, 1612, 11570, 4533, 1177, 11636, 1115, 6466, 2]
+// Dependencies: [19, 17, 21, 4836, 1613, 11584, 4536, 1177, 11650, 1115, 6471, 2]
 // Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 11635 (AppLauncherList)
+// Module 11649 (AppLauncherList)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import mergeProps from "mergeProps" /* 4533 */;
-import SearchField from "SearchField" /* 6466 */;
-import _modDef11636 from "module_11636" /* 11636 */;
+import mergeProps from "mergeProps" /* 4536 */;
+import SearchField from "SearchField" /* 6471 */;
+import _modDef11650 from "module_11650" /* 11650 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,14 +17,14 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
 
 export const AppLauncherList = noop.forwardRef((contentContainerStyle, arg1) => {
   _require = arg1;
-  const bottom = appLauncherFlashListProps(1612)().bottom;
+  const bottom = appLauncherFlashListProps(1613)().bottom;
   appLauncherFlashListProps = require("AppLauncherFlashList").useAppLauncherFlashListProps();
   const items = [appLauncherFlashListProps.scrollerRef, arg1];
   const memo = noop.useMemo(() => mergeProps.mergeRefs(appLauncherFlashListProps.scrollerRef, closure_0), items);
@@ -34,16 +34,16 @@ export const AppLauncherList = noop.forwardRef((contentContainerStyle, arg1) => 
   const obj = require("AppLauncherFlashList");
   const merged = Object.assign(contentContainerStyle);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
-  return jsx(appLauncherFlashListProps(11570), { contentContainerStyle: null, scrollIndicatorInsets: { bottom }, ref: memo });
+  return jsx(appLauncherFlashListProps(11584), { contentContainerStyle: null, scrollIndicatorInsets: { bottom }, ref: memo });
 });
 export const AppLauncherListEmptyState = function AppLauncherListEmptyState() {
   const tmp = closure_6();
-  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef11636, darkSource: _modDef11636, title: null, body: null };
+  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef11650, darkSource: _modDef11650, title: null, body: null };
   const intl = util.intl;
   obj.title = intl.string(util.t.vYocDz);
   const intl2 = util.intl;
   obj.body = intl2.string(util.t.V6nAfF);
-  return jsx(native.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef11636, darkSource: _modDef11636, title: null, body: null });
+  return jsx(native.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef11650, darkSource: _modDef11650, title: null, body: null });
 };
 export const AppLauncherListSearchBar = function AppLauncherListSearchBar(arg0) {
   const obj = { style: closure_6().searchBarContainer, children: null };

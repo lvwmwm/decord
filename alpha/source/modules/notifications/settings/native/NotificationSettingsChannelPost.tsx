@@ -1,13 +1,13 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9629
+// Function ID: 9630
 // Name: NotificationSettingsChannelPost
-// Dependencies: [19, 17, 5010, 21, 504, 5994, 1115, 5911, 6535, 2]
+// Dependencies: [19, 17, 5017, 21, 504, 5999, 1115, 5916, 6540, 2]
 // Exports: NotificationSettingsChannelPost
 
-// Module 9618 (NotificationSettingsChannelPost)
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6535 */;
+// Module 9629 (NotificationSettingsChannelPost)
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
 const require = globalThis.__r;
 

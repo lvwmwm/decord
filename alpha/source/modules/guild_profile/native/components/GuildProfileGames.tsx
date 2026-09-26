@@ -1,17 +1,17 @@
-// Module ID: 9203
-// Function ID: 9204
+// Module ID: 9214
+// Function ID: 9215
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 4829, 576, 8120, 8131, 9204, 4825, 9208, 4525, 4796, 9209, 1980, 5428, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8128, 8139, 9215, 4832, 9219, 4528, 4800, 9220, 1981, 5435, 2]
 // Exports: default
 
-// Module 9203 (GuildProfileGames)
+// Module 9214 (GuildProfileGames)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8120 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8131 */;
-import components_GameIconDefault from "components/GameIcon" /* 9204 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8128 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
+import components_GameIconDefault from "components/GameIcon" /* 9215 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -45,7 +45,7 @@ function FavoriteGame(activityLevel) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { display: "flex", flexDirection: "row", gap: 8 }, favoriteGame: { display: "flex", flexDirection: "row", alignItems: "center", gap: 8 }, lastItem: { position: "relative", width: 32, height: 32 }, lastItemOverlay: null, lastItemImage: null, lastItemText: null };
 const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.xs };
 obj2.lastItemOverlay = rect;

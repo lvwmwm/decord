@@ -1,15 +1,15 @@
-// Module ID: 11950
-// Function ID: 11951
+// Module ID: 11968
+// Function ID: 11969
 // Name: GuildProgressStore
-// Dependencies: [502, 2044, 2066, 11944, 11, 504, 573, 2]
+// Dependencies: [502, 2045, 2067, 11962, 11, 504, 573, 2]
 
-// Module 11950 (GuildProgressStore)
+// Module 11968 (GuildProgressStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 function completeStep(guild_id, CHANNEL) {
   let tmp = null != obj;
@@ -26,7 +26,7 @@ function completeStep(guild_id, CHANNEL) {
   }
   return tmp;
 }
-const Steps = fn(11944).Steps;
+const Steps = fn(11962).Steps;
 const dependencyMap = {};
 const PersistedStore = initializeDefault.PersistedStore;
 class GuildProgressStore extends PersistedStore {

@@ -1,17 +1,17 @@
-// Module ID: 10891
-// Function ID: 10892
+// Module ID: 10904
+// Function ID: 10905
 // Name: ChatViewStickyHeader
-// Dependencies: [32, 19, 10892, 21, 10893, 10421, 10896, 10897, 10912, 10918, 10942, 10944, 10948, 10951, 2]
+// Dependencies: [32, 19, 10905, 21, 10906, 10432, 10909, 10910, 10925, 10931, 10955, 10957, 10961, 10964, 2]
 
-// Module 10891 (ChatViewStickyHeader)
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10421 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10893 */;
-import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10896 */;
-import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10897 */;
-import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10912 */;
-import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10918 */;
-import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10942 */;
-import ChatBannerDefault from "ChatBanner" /* 10951 */;
+// Module 10904 (ChatViewStickyHeader)
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10432 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10906 */;
+import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10909 */;
+import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10910 */;
+import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10925 */;
+import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10931 */;
+import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10955 */;
+import ChatBannerDefault from "ChatBanner" /* 10964 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -36,7 +36,7 @@ function ChatViewStickyHeaderAccountSafetyWarnings(arg0) {
   }
   return tmp5;
 }
-const LOCATION_CONTEXT_MOBILE = fn(10892).LOCATION_CONTEXT_MOBILE;
+const LOCATION_CONTEXT_MOBILE = fn(10905).LOCATION_CONTEXT_MOBILE;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
 const size = fn(2);
@@ -59,7 +59,7 @@ export default noop.memo(noop.forwardRef((handleScrollToNewMessages, ref) => {
     tmp8 = null;
     if (tmp[0]) {
       const obj = { channel };
-      tmp8 = timestampProducer(tmp2(10944), obj);
+      tmp8 = timestampProducer(tmp2(10957), obj);
     }
   }
   const items = [tmp8, , , ];
@@ -72,7 +72,7 @@ export default noop.memo(noop.forwardRef((handleScrollToNewMessages, ref) => {
   let tmp13 = null;
   if (showUnreadsNotice) {
     const obj3 = { channel, clearUnreadsNotice };
-    tmp13 = timestampProducer(tmp2(10948), obj3);
+    tmp13 = timestampProducer(tmp2(10961), obj3);
   }
   const obj4 = { children: null };
   items[2] = tmp13;

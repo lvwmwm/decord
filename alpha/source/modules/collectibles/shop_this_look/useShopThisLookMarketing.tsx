@@ -1,15 +1,15 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 12679
+// Function ID: 12680
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 7653, 6801, 2028, 2]
+// Dependencies: [32, 7660, 6806, 2029, 2]
 // Exports: useShopThisLookMarketing
 
-// Module 12662 (useShopThisLookMarketing)
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6801 */;
-import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 7653 */;
+// Module 12679 (useShopThisLookMarketing)
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6806 */;
+import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 7660 */;
 import _slicedToArray from "module_32" /* 32 */;
 
-const dismissible_content = tmp(2028);
+const dismissible_content = tmp(2029);
 require = fn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/shop_this_look/useShopThisLookMarketing.tsx");

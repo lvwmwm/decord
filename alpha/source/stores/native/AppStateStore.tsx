@@ -1,14 +1,14 @@
-// Module ID: 1979
-// Function ID: 1980
+// Module ID: 1980
+// Function ID: 1981
 // Name: AppStateStore
-// Dependencies: [17, 1074, 504, 1241, 1980, 573, 2]
+// Dependencies: [17, 1074, 504, 1241, 1981, 573, 2]
 
-// Module 1979 (AppStateStore)
+// Module 1980 (AppStateStore)
 import _mod17 from "module_17" /* 17 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import size from "module_2" /* 2 */;
 
 const AppStates = Constants.AppStates;

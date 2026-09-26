@@ -1,12 +1,12 @@
-// Module ID: 14279
-// Function ID: 14280
+// Module ID: 14304
+// Function ID: 14305
 // Name: useSafetyHubLoading
-// Dependencies: [7873, 504, 2]
+// Dependencies: [7881, 504, 2]
 // Exports: default
 
-// Module 14279 (useSafetyHubLoading)
+// Module 14304 (useSafetyHubLoading)
 import initialize from "initialize" /* 504 */;
-import SafetyHubStore from "SafetyHubStore" /* 7873 */;
+import SafetyHubStore from "SafetyHubStore" /* 7881 */;
 
 require = fn;
 const size = fn(2);

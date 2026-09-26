@@ -1,14 +1,14 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8368
+// Function ID: 8369
 // Name: GameAutocompleteActionCreators
-// Dependencies: [5, 5413, 1074, 5414, 573, 1271, 2]
+// Dependencies: [5, 5420, 1074, 5421, 573, 1271, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 8360 (GameAutocompleteActionCreators)
+// Module 8368 (GameAutocompleteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5414 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5421 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5413 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5420 */;
 
 require = fn;
 let closure_6 = async function _fetchGameAutocomplete(arg0, value) {
@@ -80,7 +80,7 @@ let closure_6 = async function _fetchGameAutocomplete(arg0, value) {
         if (body == null) {
           importDefault = [];
         }
-        closure_130_1 = importDefault.map((id) => ({ id: String(id.id), name: id.name, icon: id.icon }));
+        closure_130_1 = importDefault.map((id) => ({ id: String(id.id), name: id.name, icon: id.icon, platformAvailability: id.platform_availability }));
         const obj10 = { type: "GAME_AUTOCOMPLETE_FETCH_SUCCESS", query: closure_130_0, results: closure_130_1 };
         closure_131_1(closure_131_2[4]).dispatch(obj10);
         c5 = 0;

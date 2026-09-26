@@ -1,13 +1,13 @@
-// Module ID: 14181
-// Function ID: 14182
+// Module ID: 14206
+// Function ID: 14207
 // Name: useTabSelectedGuildId
-// Dependencies: [4652, 5745, 563, 2]
+// Dependencies: [4655, 5750, 563, 2]
 // Exports: default
 
-// Module 14181 (useTabSelectedGuildId)
+// Module 14206 (useTabSelectedGuildId)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
-import SortedGuildStore from "SortedGuildStore" /* 5745 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 
 require = fn;
 const size = fn(2);

@@ -1,11 +1,11 @@
-// Module ID: 6474
-// Function ID: 6475
+// Module ID: 6479
+// Function ID: 6480
 // Name: useFastestListUnexpectedItemSizeCallback
-// Dependencies: [19, 6475, 2]
+// Dependencies: [19, 6480, 2]
 // Exports: default
 
-// Module 6474 (useFastestListUnexpectedItemSizeCallback)
-import FastestListLogger from "FastestListLogger" /* 6475 */;
+// Module 6479 (useFastestListUnexpectedItemSizeCallback)
+import FastestListLogger from "FastestListLogger" /* 6480 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

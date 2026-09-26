@@ -1,21 +1,21 @@
-// Module ID: 12239
-// Function ID: 12240
+// Module ID: 12257
+// Function ID: 12258
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 12215, 21, 4829, 576, 12240, 4825, 1115, 1484, 5824, 1612, 12228, 4731, 5931, 6789, 1177, 12235, 2]
+// Dependencies: [5, 32, 19, 17, 12233, 21, 4836, 576, 12258, 4832, 1115, 1485, 5829, 1613, 12246, 4735, 5936, 6794, 1177, 12253, 2]
 // Exports: default
 
-// Module 12239 (HubEmailConnectionGuildSelectSearch)
+// Module 12257 (HubEmailConnectionGuildSelectSearch)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import useNavigation from "useNavigation" /* 1484 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5824 */;
-import NavigatorHeader from "NavigatorHeader" /* 5931 */;
-import SearchBarNavDefault from "SearchBarNav" /* 6789 */;
-import HubActionCreatorsDefault from "HubActionCreators" /* 12228 */;
-import _modDef12240 from "module_12240" /* 12240 */;
+import useNavigation from "useNavigation" /* 1485 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import SearchBarNavDefault from "SearchBarNav" /* 6794 */;
+import HubActionCreatorsDefault from "HubActionCreators" /* 12246 */;
+import _modDef12258 from "module_12258" /* 12258 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -26,7 +26,7 @@ require = fn;
 function EmptyState() {
   const tmp = closure_13();
   const obj = { style: tmp.emptyWrapper, children: null };
-  const items = [closure_1_10(React5, { style: tmp.emptyStateImage, source: _modDef12240 }), ];
+  const items = [closure_1_10(React5, { style: tmp.emptyStateImage, source: _modDef12258 }), ];
   const obj3 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["6HXiuE"]);
@@ -36,10 +36,10 @@ function EmptyState() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Image: closure_7, FlatList: closure_8 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12215).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12233).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { scrollContainer: { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, fauxHeader: { paddingHorizontal: 0 }, emptyWrapper: { flex: 1, alignItems: "center", justifyContent: "center", marginTop: 64, paddingHorizontal: 16 }, emptyStateImage: { marginBottom: 24 }, emptyStateTitle: { marginBottom: 4, textAlign: "center" }, error: null };
 let obj3 = { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.error = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginBottom: 8 };
@@ -140,7 +140,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                 if (2 === tmp8) {
                   c3 = 1;
                   closure_128_0 = closure_2;
-                  const aPIError = new id(4731).APIError(closure_128_0);
+                  const aPIError = new id(4735).APIError(closure_128_0);
                   v3(aPIError);
                   c3 = 0;
                   closure_1_7(false);

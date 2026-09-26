@@ -1,11 +1,11 @@
-// Module ID: 14690
-// Function ID: 14691
+// Module ID: 14715
+// Function ID: 14716
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: [19, 14603, 4563, 2]
+// Dependencies: [19, 14628, 4566, 2]
 // Exports: default
 
-// Module 14690 (useQuestDockAnimatedBorderRadius)
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+// Module 14715 (useQuestDockAnimatedBorderRadius)
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

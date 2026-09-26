@@ -1,13 +1,13 @@
-// Module ID: 14924
-// Function ID: 14925
+// Module ID: 14952
+// Function ID: 14953
 // Name: EmojiRollingOnTheFloorLaughingIcon
-// Dependencies: [19, 21, 576, 4527, 14925, 2]
+// Dependencies: [19, 21, 576, 4530, 14953, 2]
 // Exports: EmojiRollingOnTheFloorLaughingIcon
 
-// Module 14924 (EmojiRollingOnTheFloorLaughingIcon)
+// Module 14952 (EmojiRollingOnTheFloorLaughingIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod14925 from "module_14925" /* 14925 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod14953 from "module_14953" /* 14953 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmojiRollingOnTheFloorLaughingIcon = function EmojiRollingOnTheFloo
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod14925, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod14953, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

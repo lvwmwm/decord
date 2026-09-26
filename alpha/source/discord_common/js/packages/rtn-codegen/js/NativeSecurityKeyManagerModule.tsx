@@ -1,9 +1,9 @@
-// Module ID: 6012
-// Function ID: 6013
+// Module ID: 6017
+// Function ID: 6018
 // Name: NativeSecurityKeyManagerModule
 // Dependencies: [17, 2]
 
-// Module 6012 (NativeSecurityKeyManagerModule)
+// Module 6017 (NativeSecurityKeyManagerModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

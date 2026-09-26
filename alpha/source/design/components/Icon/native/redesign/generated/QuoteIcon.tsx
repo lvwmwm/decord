@@ -1,13 +1,13 @@
-// Module ID: 8377
-// Function ID: 8378
+// Module ID: 8385
+// Function ID: 8386
 // Name: QuoteIcon
-// Dependencies: [19, 21, 576, 4527, 8378, 2]
+// Dependencies: [19, 21, 576, 4530, 8386, 2]
 // Exports: QuoteIcon
 
-// Module 8377 (QuoteIcon)
+// Module 8385 (QuoteIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod8378 from "module_8378" /* 8378 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod8386 from "module_8386" /* 8386 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const QuoteIcon = function QuoteIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8378, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8386, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

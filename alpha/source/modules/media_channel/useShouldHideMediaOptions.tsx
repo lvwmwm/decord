@@ -1,16 +1,16 @@
-// Module ID: 11143
-// Function ID: 11144
+// Module ID: 11157
+// Function ID: 11158
 // Name: useShouldHideMediaOptions
-// Dependencies: [2044, 2051, 563, 2]
+// Dependencies: [2045, 2052, 563, 2]
 // Exports: default
 
-// Module 11143 (useShouldHideMediaOptions)
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 11157 (useShouldHideMediaOptions)
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ChannelFlags = fn(2051).ChannelFlags;
+const ChannelFlags = fn(2052).ChannelFlags;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_channel/useShouldHideMediaOptions.tsx");
 

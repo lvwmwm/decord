@@ -1,18 +1,18 @@
-// Module ID: 9260
-// Function ID: 9261
+// Module ID: 9271
+// Function ID: 9272
 // Name: FormHeader
-// Dependencies: [19, 1085, 21, 4829, 5831, 576, 1177, 2]
+// Dependencies: [19, 1085, 21, 4836, 5836, 576, 1177, 2]
 // Exports: default
 
-// Module 9260 (FormHeader)
+// Module 9271 (FormHeader)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5831 */;
+import TextStyles from "TextStyles" /* 5836 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 const obj2 = { fieldHeader: null };
 const obj3 = {};
 let merged = Object.assign(TextStyles(fn(1085).Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.TEXT_SUBTLE, 12, { uppercase: true }));

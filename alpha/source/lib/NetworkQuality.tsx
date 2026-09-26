@@ -1,11 +1,11 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13363
+// Function ID: 13364
 // Name: NetworkQuality
-// Dependencies: [4878, 1074, 4858, 2]
+// Dependencies: [4885, 1074, 4865, 2]
 
-// Module 13345 (NetworkQuality)
-import TimeUtils from "TimeUtils" /* 4858 */;
-import NetworkStore from "NetworkStore" /* 4878 */;
+// Module 13363 (NetworkQuality)
+import TimeUtils from "TimeUtils" /* 4865 */;
+import NetworkStore from "NetworkStore" /* 4885 */;
 
 require = fn;
 const Constants = fn(1074);

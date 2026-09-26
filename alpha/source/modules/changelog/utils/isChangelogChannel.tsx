@@ -1,13 +1,13 @@
-// Module ID: 7814
-// Function ID: 7815
+// Module ID: 7822
+// Function ID: 7823
 // Name: isChangelogChannel
-// Dependencies: [2044, 2097, 2]
+// Dependencies: [2045, 2098, 2]
 // Exports: default
 
-// Module 7814 (isChangelogChannel)
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 7822 (isChangelogChannel)
+import ChannelStore from "ChannelStore" /* 2045 */;
 
-const SYSTEM_UPDATES_USER_ID = fn(2097).SYSTEM_UPDATES_USER_ID;
+const SYSTEM_UPDATES_USER_ID = fn(2098).SYSTEM_UPDATES_USER_ID;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/changelog/utils/isChangelogChannel.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 15253
-// Function ID: 15254
+// Module ID: 15281
+// Function ID: 15282
 // Name: CheckpointPressable
-// Dependencies: [17, 5054, 21, 4829, 2]
+// Dependencies: [17, 5061, 21, 4836, 2]
 // Exports: default
 
-// Module 15253 (CheckpointPressable)
-import CheckpointConstants from "CheckpointConstants" /* 5054 */;
+// Module 15281 (CheckpointPressable)
+import CheckpointConstants from "CheckpointConstants" /* 5061 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4829 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 ({ Pressable: closure_0, View: closure_1 } = get_ActivityIndicator);

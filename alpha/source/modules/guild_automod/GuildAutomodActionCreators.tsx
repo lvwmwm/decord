@@ -1,21 +1,21 @@
-// Module ID: 11332
-// Function ID: 11333
+// Module ID: 11346
+// Function ID: 11347
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 2101, 2066, 4466, 1074, 11333, 1370, 11, 1271, 11326, 5009, 6933, 573, 2]
+// Dependencies: [5, 2102, 2067, 4469, 1074, 11347, 1370, 11, 1271, 11340, 5016, 6938, 573, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11332 (GuildAutomodActionCreators)
+// Module 11346 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import AutomodFeedback from "AutomodFeedback" /* 6933 */;
-import DataUtils from "DataUtils" /* 11333 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+import AutomodFeedback from "AutomodFeedback" /* 6938 */;
+import DataUtils from "DataUtils" /* 11347 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 const require = globalThis.__r;
 

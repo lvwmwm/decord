@@ -1,10 +1,10 @@
-// Module ID: 4545
-// Function ID: 4546
+// Module ID: 4548
+// Function ID: 4549
 // Name: useA11yRolesNative
 // Dependencies: [17, 2]
 // Exports: useCheckboxA11yNative, useRadioA11yNative
 
-// Module 4545 (useA11yRolesNative)
+// Module 4548 (useA11yRolesNative)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 6969
-// Function ID: 6970
+// Module ID: 6974
+// Function ID: 6975
 // Name: CollectiblesUtils
-// Dependencies: [6962, 1971, 6963, 6964, 6970, 1076, 1074, 1085, 4485, 1378, 1380, 6650, 1364, 1973, 12, 1115, 6968, 2]
+// Dependencies: [6967, 1972, 6968, 6969, 6975, 1076, 1074, 1085, 4488, 1378, 1380, 6655, 1364, 1974, 12, 1115, 6973, 2]
 // Exports: canActionOnProduct, extendVariantsProducts, extractPriceByPurchaseTypes, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getAvatarDecorationsFromCategories, getAvatarDecorationsFromPurchases, getBundleItemsPriceSum, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getDaysRemaining, getDefaultPriceSetAssignmentPurchaseType, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getNameplatesFromCategories, getNameplatesFromPurchases, getPriceForCollectiblesProduct, getProductDiscount, getProductTypeNameForLogging, getProductsFromCategories, getProfileEffects, getProfileEffectsFromCategories, getProfileEffectsFromPurchases, getProfileFrames, getProfileFramesFromCategories, getProfileFramesFromPurchases, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isBundleProduct, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 6969 (CollectiblesUtils)
+// Module 6974 (CollectiblesUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import PerksStateUtils from "PerksStateUtils" /* 1378 */;
-import NameplateRecord from "NameplateRecord" /* 1971 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4485 */;
-import PriceUtils from "PriceUtils" /* 6650 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6962 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 6963 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 6964 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6968 */;
-import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 6970 */;
+import NameplateRecord from "NameplateRecord" /* 1972 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
+import PriceUtils from "PriceUtils" /* 6655 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6967 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 6968 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 6969 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6973 */;
+import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 6975 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
@@ -32,21 +32,21 @@ function getItemRecordsFromPurchases(arr, PROFILE_EFFECT) {
     const found = tmp(12).flatMap(items, "items").filter(isAvatarDecorationRecord);
     const flatMapResult = tmp(12).flatMap(items, "items");
     return tmp(12).uniqBy(found, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.NAMEPLATE) {
+  } else if (PROFILE_EFFECT === tmp(1974).CollectiblesItemType.NAMEPLATE) {
     const items1 = [];
     HermesBuiltin.arraySpread(arr.values(), 0);
     const tmpResult9 = tmp(12);
     const found1 = tmp(12).flatMap(items1, "items").filter(isNameplateRecord);
     const flatMapResult1 = tmp(12).flatMap(items1, "items");
     return tmp(12).uniqBy(found1, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.PROFILE_EFFECT) {
+  } else if (PROFILE_EFFECT === tmp(1974).CollectiblesItemType.PROFILE_EFFECT) {
     const items2 = [];
     HermesBuiltin.arraySpread(arr.values(), 0);
     const tmpResult11 = tmp(12);
     const found2 = tmp(12).flatMap(items2, "items").filter(isProfileEffectRecord);
     const flatMapResult2 = tmp(12).flatMap(items2, "items");
     return tmp(12).uniqBy(found2, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.PROFILE_FRAME) {
+  } else if (PROFILE_EFFECT === tmp(1974).CollectiblesItemType.PROFILE_FRAME) {
     const items3 = [];
     HermesBuiltin.arraySpread(arr.values(), 0);
     const tmpResult13 = tmp(12);
@@ -87,17 +87,17 @@ function getItemRecordsFromCategories(arr, PROFILE_EFFECT) {
     const found = tmp(12).flatMap(uniqByResult, "items").filter(isAvatarDecorationRecord);
     const flatMapResult1 = tmp(12).flatMap(uniqByResult, "items");
     return tmp(12).uniqBy(found, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.NAMEPLATE) {
+  } else if (PROFILE_EFFECT === tmp(1974).CollectiblesItemType.NAMEPLATE) {
     const tmpResult9 = tmp(12);
     const found1 = tmp(12).flatMap(uniqByResult, "items").filter(isNameplateRecord);
     const flatMapResult2 = tmp(12).flatMap(uniqByResult, "items");
     return tmp(12).uniqBy(found1, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.PROFILE_EFFECT) {
+  } else if (PROFILE_EFFECT === tmp(1974).CollectiblesItemType.PROFILE_EFFECT) {
     const tmpResult11 = tmp(12);
     const found2 = tmp(12).flatMap(uniqByResult, "items").filter(isProfileEffectRecord);
     const flatMapResult3 = tmp(12).flatMap(uniqByResult, "items");
     return tmp(12).uniqBy(found2, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.PROFILE_FRAME) {
+  } else if (PROFILE_EFFECT === tmp(1974).CollectiblesItemType.PROFILE_FRAME) {
     const tmpResult13 = tmp(12);
     const found3 = tmp(12).flatMap(uniqByResult, "items").filter(isProfileFrameRecord);
     const flatMapResult4 = tmp(12).flatMap(uniqByResult, "items");
@@ -553,13 +553,13 @@ export const getCollectibleTypeLabel = function getCollectibleTypeLabel(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl4 = tmp(1115).intl;
     return intl4.string(tmp(1115).t["7v0T9P"]);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (tmp(1974).CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl3 = tmp(1115).intl;
     return intl3.string(tmp(1115).t.wR5wOo);
-  } else if (tmp(1973).CollectiblesItemType.NAMEPLATE === type) {
+  } else if (tmp(1974).CollectiblesItemType.NAMEPLATE === type) {
     const intl2 = tmp(1115).intl;
     return intl2.string(tmp(1115).t.x5CoXR);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (tmp(1974).CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1115).intl;
     return intl.string(tmp(1115).t.GWrZOd);
   } else {
@@ -820,15 +820,15 @@ export const canActionOnProduct = function canActionOnProduct(arg0) {
 export const getProductTypeNameForLogging = function getProductTypeNameForLogging(arg0, arg1) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === arg0) {
     return "avatar decoration";
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === arg0) {
+  } else if (tmp(1974).CollectiblesItemType.PROFILE_EFFECT === arg0) {
     return "profile effect";
-  } else if (tmp(1973).CollectiblesItemType.NAMEPLATE === arg0) {
+  } else if (tmp(1974).CollectiblesItemType.NAMEPLATE === arg0) {
     return "nameplate";
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === arg0) {
+  } else if (tmp(1974).CollectiblesItemType.PROFILE_FRAME === arg0) {
     return "profile frame";
-  } else if (tmp(1973).CollectiblesItemType.BUNDLE === arg0) {
+  } else if (tmp(1974).CollectiblesItemType.BUNDLE === arg0) {
     return "bundle";
-  } else if (tmp(1973).CollectiblesItemType.EXTERNAL_SKU === arg0) {
+  } else if (tmp(1974).CollectiblesItemType.EXTERNAL_SKU === arg0) {
     let str3 = "3-day nitro credit";
     if (arg1 !== constants.FRACTIONAL_PREMIUM) {
       let str4 = "1-day nitro credit";
@@ -842,7 +842,7 @@ export const getProductTypeNameForLogging = function getProductTypeNameForLoggin
       str3 = str4;
     }
     return str3;
-  } else if (tmp(1973).CollectiblesItemType.VARIANTS_GROUP === arg0) {
+  } else if (tmp(1974).CollectiblesItemType.VARIANTS_GROUP === arg0) {
     return "variants group";
   } else {
     return "unknown";

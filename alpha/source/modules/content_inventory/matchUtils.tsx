@@ -1,15 +1,15 @@
-// Module ID: 7777
-// Function ID: 7778
+// Module ID: 7785
+// Function ID: 7786
 // Name: matchUtils
-// Dependencies: [1074, 7778, 7780, 7781, 7783, 7784, 7584, 2]
+// Dependencies: [1074, 7786, 7788, 7789, 7791, 7792, 7592, 2]
 // Exports: findMatchingEntry, isCrunchyrollEntry, isMatchingApplicationActivity, isMatchingWatchActivity, isSpotifyEntry
 
-// Module 7777 (matchUtils)
+// Module 7785 (matchUtils)
 import Constants from "Constants" /* 1074 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 7778 */;
-import SpotifyConstants from "SpotifyConstants" /* 7780 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 7781 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 7784 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 7786 */;
+import SpotifyConstants from "SpotifyConstants" /* 7788 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 7789 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 7792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,13 +24,13 @@ function isMatchingListeningActivity(extra, party) {
         provider = media.provider;
       }
     }
-    let isTopArtistEntryResult = provider === tmp(7783).ContentInventoryListenedMediaProvider.SPOTIFY;
+    let isTopArtistEntryResult = provider === tmp(7791).ContentInventoryListenedMediaProvider.SPOTIFY;
   } else {
-    isTopArtistEntryResult = tmp(7781).isTopArtistEntry(extra);
+    isTopArtistEntryResult = tmp(7789).isTopArtistEntry(extra);
     if (isTopArtistEntryResult) {
-      isTopArtistEntryResult = extra.extra.media.provider === tmp(7783).ContentInventoryListenedMediaProvider.SPOTIFY;
+      isTopArtistEntryResult = extra.extra.media.provider === tmp(7791).ContentInventoryListenedMediaProvider.SPOTIFY;
     }
-    const tmpResult = tmp(7781);
+    const tmpResult = tmp(7789);
   }
   let tmp9Result = isTopArtistEntryResult;
   if (tmp9Result) {
@@ -58,13 +58,13 @@ export const isSpotifyEntry = function isSpotifyEntry(extra) {
         provider = media.provider;
       }
     }
-    let isTopArtistEntryResult = provider === tmp(7783).ContentInventoryListenedMediaProvider.SPOTIFY;
+    let isTopArtistEntryResult = provider === tmp(7791).ContentInventoryListenedMediaProvider.SPOTIFY;
   } else {
-    isTopArtistEntryResult = tmp(7781).isTopArtistEntry(extra);
+    isTopArtistEntryResult = tmp(7789).isTopArtistEntry(extra);
     if (isTopArtistEntryResult) {
-      isTopArtistEntryResult = extra.extra.media.provider === tmp(7783).ContentInventoryListenedMediaProvider.SPOTIFY;
+      isTopArtistEntryResult = extra.extra.media.provider === tmp(7791).ContentInventoryListenedMediaProvider.SPOTIFY;
     }
-    const tmpResult = tmp(7781);
+    const tmpResult = tmp(7789);
   }
   return isTopArtistEntryResult;
 };
@@ -113,7 +113,7 @@ export const findMatchingEntry = function findMatchingEntry(entries, activity) {
   _require = activity;
   const found = entries.filter(require("utils").isEntryActive);
   if (activity.type === ActivityTypes.PLAYING) {
-    const found1 = found.filter(tmp(7781).isGamingLikeEntry);
+    const found1 = found.filter(tmp(7789).isGamingLikeEntry);
     let found2 = found1.find((extra) => {
       let name = closure_0;
       let game_name = extra.extra;
@@ -132,10 +132,10 @@ export const findMatchingEntry = function findMatchingEntry(entries, activity) {
       return tmp;
     });
   } else if (activity.type === tmp3.LISTENING) {
-    const found3 = found.filter(tmp(7781).isListenedSessionEntry);
+    const found3 = found.filter(tmp(7789).isListenedSessionEntry);
     found2 = found3.find((item) => isMatchingListeningActivity(item, closure_0));
   } else if (activity.type === tmp3.WATCHING) {
-    const found4 = entries.filter(tmp(7781).isWatchedMediaEntry);
+    const found4 = entries.filter(tmp(7789).isWatchedMediaEntry);
     found2 = found4.find((extra) => {
       const tmp3 = isCrunchyrollActivityDefault(activity);
       let tmp4 = !tmp3;

@@ -1,12 +1,12 @@
-// Module ID: 12518
-// Function ID: 12519
+// Module ID: 12535
+// Function ID: 12536
 // Name: MediaModalSpoilerOverlay
-// Dependencies: [32, 19, 17, 21, 4829, 576, 1364, 4528, 12503, 4563, 5262, 5388, 4825, 1115, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 1364, 4531, 12520, 4566, 5269, 5395, 4832, 1115, 2]
 
-// Module 12518 (MediaModalSpoilerOverlay)
+// Module 12535 (MediaModalSpoilerOverlay)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4528 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12503 */;
+import useToken from "useToken" /* 4531 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12520 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { spoilerOverlayContainer: { justifyContent: "center", alignContent: "center", flex: 1 }, obscureContentContainer: { gap: nativeDefault.space.PX_4, justifyContent: "center", alignItems: "center", alignSelf: "center" }, spoilerOverlayBackground: null };
 let obj4 = { paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, height: nativeDefault.space.PX_32, backgroundColor: null, flexGrow: 0, justifyContent: "center", alignItems: "center", alignSelf: "center" };
 let PlatformUtils = fn(1364);
@@ -47,17 +47,17 @@ export default noop.memo(function MediaModalSpoilerOverlay(source) {
       const tmpResult = tmp(1364);
     }
     const obj4 = { blurTheme: str, android_fallbackColor: token, style: absoluteFill.absoluteFill };
-    const items1 = [timestampProducer(tmp3(5262), obj4), ];
+    const items1 = [timestampProducer(tmp3(5269), obj4), ];
     let obj5 = { style: items2.spoilerOverlayContainer, children: null };
     const obj6 = { style: null, children: null };
     if (source.obscure) {
       obj6.style = items2.obscureContentContainer;
-      items2 = [tmp9(tmp(5388).ImageWarningIcon, { size: "lg", color: "white" }), ];
+      items2 = [tmp9(tmp(5395).ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl2 = tmp(1115).intl;
       stringResult = intl2.string(tmp(1115).t.SpxcUR);
       obj7.children = stringResult;
-      items2[1] = tmp9(tmp(4825).Text, obj7);
+      items2[1] = tmp9(tmp(4832).Text, obj7);
       obj6.children = items2;
       let tmp9Result = tmp7(tmp11, obj6);
     } else {
@@ -65,7 +65,7 @@ export default noop.memo(function MediaModalSpoilerOverlay(source) {
       const obj8 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl = tmp(1115).intl;
       obj8.children = intl.string(tmp(1115).t["F+x38C"]).toUpperCase();
-      obj6.children = tmp9(tmp(4825).Text, obj8);
+      obj6.children = tmp9(tmp(4832).Text, obj8);
       tmp9Result = tmp9(tmp11, obj6);
       const str2 = intl.string(tmp(1115).t["F+x38C"]);
     }
@@ -73,7 +73,7 @@ export default noop.memo(function MediaModalSpoilerOverlay(source) {
     obj5 = tmp9(tmp11, obj5);
     items1[1] = obj5;
     obj3.children = items1;
-    React5(tmp3(4563).View, obj3);
-    const tmp3Result = tmp3(5262);
+    React5(tmp3(4566).View, obj3);
+    const tmp3Result = tmp3(5269);
   }
 });

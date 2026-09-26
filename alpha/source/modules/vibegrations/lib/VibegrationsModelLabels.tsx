@@ -1,36 +1,36 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16250
+// Function ID: 16251
 // Name: VibegrationsModelLabels
-// Dependencies: [3714, 1115, 2]
+// Dependencies: [3715, 1115, 2]
 // Exports: modelTierMessage, tierTooltip
 
-// Module 16222 (VibegrationsModelLabels)
+// Module 16250 (VibegrationsModelLabels)
 import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
+import _modDef3715 from "module_3715" /* 3715 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsModelLabels.tsx");
 
 export const modelTierMessage = function modelTierMessage(value) {
   if ("simple" === value) {
-    return _modDef3714["5DOL2g"];
+    return _modDef3715["5DOL2g"];
   } else if ("balanced" === value) {
-    return _modDef3714["5I6PKl"];
+    return _modDef3715["5I6PKl"];
   } else if ("complex" === value) {
-    return _modDef3714.OJIfkn;
+    return _modDef3715.OJIfkn;
   } else {
     return null;
   }
 };
 export const tierTooltip = function tierTooltip(title, arg1) {
   if ("simple" === arg1) {
-    let v5DOL2g = _modDef3714["5DOL2g"];
+    let v5DOL2g = _modDef3715["5DOL2g"];
   } else if ("balanced" === arg1) {
-    v5DOL2g = _modDef3714["5I6PKl"];
+    v5DOL2g = _modDef3715["5I6PKl"];
   } else {
     v5DOL2g = null;
     if ("complex" === arg1) {
-      v5DOL2g = _modDef3714.OJIfkn;
+      v5DOL2g = _modDef3715.OJIfkn;
     }
   }
   if (null != v5DOL2g) {

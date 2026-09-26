@@ -1,13 +1,13 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16424
+// Function ID: 16425
 // Name: VibegrationsChannelChatToasts
-// Dependencies: [19, 17, 21, 4829, 576, 1115, 4675, 5914, 1177, 4825, 16396, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1115, 4678, 5919, 1177, 4832, 16425, 2]
 // Exports: default
 
-// Module 16395 (VibegrationsChannelChatToasts)
+// Module 16424 (VibegrationsChannelChatToasts)
 import nativeDefault from "native" /* 576 */;
-import UserUtils from "UserUtils" /* 4675 */;
-import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 16396 */;
+import UserUtils from "UserUtils" /* 4678 */;
+import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 16425 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,13 +26,13 @@ function ChatToast(message) {
     const items1 = [hasOwnProperty(tmp2(1177).Avatar, obj4), ];
     const obj5 = { style: tmp.body, children: null };
     const obj6 = { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name };
-    const items2 = [hasOwnProperty(tmp2(4825).Text, obj6), ];
+    const items2 = [hasOwnProperty(tmp2(4832).Text, obj6), ];
     const obj7 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed };
-    items2[1] = hasOwnProperty(tmp2(4825).Text, obj7);
+    items2[1] = hasOwnProperty(tmp2(4832).Text, obj7);
     obj5.children = items2;
     items1[1] = timestampProducer(View, obj5);
     obj3.children = items1;
-    obj2.children = timestampProducer(tmp2(5914).Card, obj3);
+    obj2.children = timestampProducer(tmp2(5919).Card, obj3);
     return hasOwnProperty(View, obj2);
   } else if (message.stickerItems.length > 0) {
     const intl2 = tmp2(1115).intl;
@@ -45,7 +45,7 @@ function ChatToast(message) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { column: null, opaque: null, card: null, body: null };
 const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, alignItems: "flex-end", gap: nativeDefault.space.PX_8 };
 obj2.column = rect;

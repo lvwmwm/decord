@@ -1,19 +1,19 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12253
+// Function ID: 12254
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 12215, 21, 4829, 576, 8045, 5891, 2058, 4825, 1115, 1612, 5274, 1177, 1484, 6790, 6467, 12228, 4731, 12223, 2]
+// Dependencies: [5, 32, 19, 17, 12233, 21, 4836, 576, 8053, 5896, 2059, 4832, 1115, 1613, 5281, 1177, 1485, 6795, 6472, 12246, 4735, 12241, 2]
 // Exports: default
 
-// Module 12235 (HubEmailConnectionGuildSelect)
+// Module 12253 (HubEmailConnectionGuildSelect)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2058 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5274 */;
-import GuildIconDefault from "GuildIcon" /* 5891 */;
-import Form from "Form" /* 8045 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import GuildIconDefault from "GuildIcon" /* 5896 */;
+import Form from "Form" /* 8053 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -75,10 +75,10 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12215).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12233).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { rowContainer: { marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, guildIcon: null, separator: null, header: null, title: null, footerSafeAreaContainer: null, footerContainer: null, error: null };
 let obj3 = { marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 obj2.guildIcon = { borderRadius: nativeDefault.radii.sm };
@@ -170,7 +170,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                   c3 = 2;
                   c4 = 3;
                   v3 = 1;
-                  const obj5 = { value: email(12228).sendVerificationEmail(email, true, id), done: false };
+                  const obj5 = { value: email(12246).sendVerificationEmail(email, true, id), done: false };
                   return obj5;
                 }
               } else if (1 === tmp8) {
@@ -181,7 +181,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 if (2 === tmp8) {
                   c3 = 1;
                   closure_128_0 = closure_2;
-                  const aPIError = new id(4731).APIError(closure_128_0);
+                  const aPIError = new id(4735).APIError(closure_128_0);
                   v3(aPIError);
                   c3 = 0;
                   closure_1_7(false);

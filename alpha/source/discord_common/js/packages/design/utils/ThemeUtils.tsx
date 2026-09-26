@@ -1,10 +1,10 @@
-// Module ID: 4549
-// Function ID: 4550
+// Module ID: 4552
+// Function ID: 4553
 // Name: ThemeUtils
 // Dependencies: [577, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 4549 (ThemeUtils)
+// Module 4552 (ThemeUtils)
 import ThemeTypes from "ThemeTypes" /* 577 */;
 import size from "module_2" /* 2 */;
 

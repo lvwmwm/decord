@@ -1,16 +1,16 @@
-// Module ID: 15440
-// Function ID: 15441
+// Module ID: 15469
+// Function ID: 15470
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1372, 1074, 21, 4829, 576, 504, 15441, 4675, 7619, 6578, 7617, 5912, 1177, 1115, 5919, 4528, 1484, 15439, 4825, 8171, 9152, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 15470, 4678, 7626, 6583, 7624, 5917, 1177, 1115, 5924, 4531, 1485, 15468, 4832, 8179, 9163, 2]
 // Exports: default
 
-// Module 15440 (SettingsSecureFramesScreen)
+// Module 15469 (SettingsSecureFramesScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7617 */;
-import UserActionCreators from "UserActionCreators" /* 7619 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9152 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
+import UserActionCreators from "UserActionCreators" /* 7626 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9163 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -109,7 +109,7 @@ const View = fn(17).View;
 const UserSettingsSections = fn(1074).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { flexGrow: 1, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 }, header: null, list: null };
 let obj3 = { flexGrow: 1, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
 obj2.header = { marginTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_8 };

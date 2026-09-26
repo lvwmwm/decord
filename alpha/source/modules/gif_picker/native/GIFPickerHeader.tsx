@@ -1,13 +1,13 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 9835
+// Function ID: 9836
 // Name: GIFPickerHeader
-// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 9819, 6035, 4563, 4830, 4833, 7358, 6468, 1115, 6466, 9817, 5428, 9825, 4825, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 9830, 6040, 4566, 4837, 4840, 7363, 6473, 1115, 6471, 9828, 5435, 9836, 4832, 2]
 
-// Module 9824 (GIFPickerHeader)
+// Module 9835 (GIFPickerHeader)
 import nativeDefault from "native" /* 576 */;
-import timing from "timing" /* 4830 */;
-import timingPresets from "timingPresets" /* 4833 */;
-import GifProvider from "GifProvider" /* 9817 */;
+import timing from "timing" /* 4837 */;
+import timingPresets from "timingPresets" /* 4840 */;
+import GifProvider from "GifProvider" /* 9828 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -121,17 +121,17 @@ const View = fn(17).View;
 fn(1074).GIFPickerResultTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { container: { paddingVertical: nativeDefault.space.PX_8 }, headerContainer: null, header: null, favoritesSearch: null };
 let obj3 = { paddingVertical: nativeDefault.space.PX_8 };
-obj.headerContainer = { flexDirection: "row", justifyContent: "space-between", gap: fn(9819).GIF_PICKER_GUTTER_SPACING };
-let obj4 = { flexDirection: "row", justifyContent: "space-between", gap: fn(9819).GIF_PICKER_GUTTER_SPACING };
-obj.header = { borderWidth: 1, borderColor: "transparent", paddingHorizontal: nativeDefault.space.PX_8, height: fn(6035).InputHeights.MD, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj.headerContainer = { flexDirection: "row", justifyContent: "space-between", gap: fn(9830).GIF_PICKER_GUTTER_SPACING };
+let obj4 = { flexDirection: "row", justifyContent: "space-between", gap: fn(9830).GIF_PICKER_GUTTER_SPACING };
+obj.header = { borderWidth: 1, borderColor: "transparent", paddingHorizontal: nativeDefault.space.PX_8, height: fn(6040).InputHeights.MD, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj.favoritesSearch = { position: "absolute", top: 0, end: 0, overflow: "hidden" };
 let closure_10 = createStyles.createStyles(obj);
 const __initData = { code: "function GIFPickerHeaderTsx1(){const{progress}=this.__closure;return{opacity:1-progress.get()};}" };
 const __initData2 = { code: "function GIFPickerHeaderTsx2(){const{progress,columnWidth}=this.__closure;return{width:progress.get()*columnWidth,opacity:progress.get()};}" };
-let obj5 = { borderWidth: 1, borderColor: "transparent", paddingHorizontal: nativeDefault.space.PX_8, height: fn(6035).InputHeights.MD, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let obj5 = { borderWidth: 1, borderColor: "transparent", paddingHorizontal: nativeDefault.space.PX_8, height: fn(6040).InputHeights.MD, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerHeader.tsx");
 
@@ -143,7 +143,7 @@ export default noop.memo(function GIFPickerHeader(arg0) {
   const obj = { style: tmp.container, children: null };
   if (categoryType === GIFPickerResultTypes.SEARCH) {
     const obj2 = { size: "md", onChange: onQueryChange, placeholder: tmp5, onClear: onQueryClear, ref: searchInputRef, round: true };
-    let tmp13Result = tmp6(tmp2(6466).SearchField, obj2);
+    let tmp13Result = tmp6(tmp2(6471).SearchField, obj2);
   } else {
     const obj3 = { style: tmp.headerContainer, children: null };
     const obj4 = { style: tmp.header, accessibilityRole: "button", onPress: onQueryClear, accessibilityLabel: null, children: null };
@@ -153,7 +153,7 @@ export default noop.memo(function GIFPickerHeader(arg0) {
     obj5.destination = intl5.string(tmp2(1115).t.ffgJrs);
     obj4.accessibilityLabel = intl4.formatToPlainString(tmp2(1115).t.UTypEu, obj5);
     const obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const items = [tmp6(tmp2(9825).ChevronLargeLeftIcon, obj6), ];
+    const items = [tmp6(tmp2(9836).ChevronLargeLeftIcon, obj6), ];
     if (categoryType === tmp8.TRENDING_GIFS) {
       const intl3 = tmp2(1115).intl;
       let stringResult = intl3.string(tmp2(1115).t.TsWCdW);
@@ -165,9 +165,9 @@ export default noop.memo(function GIFPickerHeader(arg0) {
       stringResult = intl.string(tmp2(1115).t["5h0QOP"]);
     }
     const obj7 = { variant: "text-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2, children: stringResult };
-    items[1] = tmp6(tmp2(4825).Text, obj7);
+    items[1] = tmp6(tmp2(4832).Text, obj7);
     obj4.children = items;
-    const items1 = [React7(tmp2(5428).PressableOpacity, obj4), ];
+    const items1 = [React7(tmp2(5435).PressableOpacity, obj4), ];
     let tmp6Result2 = categoryType === tmp8.FAVORITES;
     if (tmp6Result2) {
       const obj8 = { columnWidth, onQueryChange: onFavoritesQueryChange };

@@ -1,12 +1,12 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16279
+// Function ID: 16280
 // Name: useVibegrationsPublishedChannelId
-// Dependencies: [4464, 504, 5363, 2]
+// Dependencies: [4467, 504, 5370, 2]
 // Exports: default
 
-// Module 16251 (useVibegrationsPublishedChannelId)
-import VibegrationsUtils from "VibegrationsUtils" /* 5363 */;
-import GuildChannelStore from "GuildChannelStore" /* 4464 */;
+// Module 16279 (useVibegrationsPublishedChannelId)
+import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
+import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 
 const require = globalThis.__r;
 

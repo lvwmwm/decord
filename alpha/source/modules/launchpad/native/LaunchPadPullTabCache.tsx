@@ -1,14 +1,14 @@
-// Module ID: 16759
-// Function ID: 16760
+// Module ID: 16788
+// Function ID: 16789
 // Name: LaunchPadPullTabCache
-// Dependencies: [10989, 510, 1364, 5453, 1478, 2]
+// Dependencies: [11002, 510, 1364, 5460, 1479, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, getLaunchPadPullTabPositionCached, persistLaunchPadPullTabPosition, setLaunchPadPullTabPositionCached
 
-// Module 16759 (LaunchPadPullTabCache)
+// Module 16788 (LaunchPadPullTabCache)
 import Storage2 from "Storage" /* 510 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5453 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 10989 */;
+import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5460 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11002 */;
 import size from "module_2" /* 2 */;
 
 function setLaunchPadPullTabExclusionRect(arg0) {
@@ -22,9 +22,9 @@ function setLaunchPadPullTabExclusionRect(arg0) {
     tmp = value;
   }
   if (obj.isAndroid()) {
-    const diff = tmp7(1478).getWindowDimensions().width - hasOwnProperty;
-    const tmp7Result = tmp7(1478);
-    const width = tmp7(1478).getWindowDimensions().width;
+    const diff = tmp7(1479).getWindowDimensions().width - hasOwnProperty;
+    const tmp7Result = tmp7(1479);
+    const width = tmp7(1479).getWindowDimensions().width;
     const sum = tmp + React3;
     let left;
     if (_undefined != null) {
@@ -58,7 +58,7 @@ function setLaunchPadPullTabExclusionRect(arg0) {
       const items = [_undefined];
       const result = NativeDeviceSettingsModuleDefault.setSystemGestureExclusionRects(items);
     }
-    const tmp7Result2 = tmp7(1478);
+    const tmp7Result2 = tmp7(1479);
   }
 }
 ({ LAUNCH_PAD_PULL_TAB_HEIGHT: c3, LAUNCH_PAD_PULL_TAB_INITIAL_POSITION: closure_4, LAUNCH_PAD_PULL_TAB_WIDTH: hasOwnProperty } = LaunchPadConstants);

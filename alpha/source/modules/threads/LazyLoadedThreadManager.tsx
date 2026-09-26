@@ -1,13 +1,13 @@
-// Module ID: 6727
-// Function ID: 6728
+// Module ID: 6732
+// Function ID: 6733
 // Name: LazyLoadedThreadManager
-// Dependencies: [5584, 2048, 2044, 2098, 1074, 2051, 573, 6637, 4657, 4670, 1271, 2]
+// Dependencies: [5589, 2049, 2045, 2099, 1074, 2052, 573, 6642, 4660, 4673, 1271, 2]
 
-// Module 6727 (LazyLoadedThreadManager)
+// Module 6732 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const require = fn;
 function initialize() {
@@ -58,9 +58,9 @@ function loadThread(channelId) {
       } else {
         const _location = location;
         let obj2 = { path: null, exact: true };
-        const RouteParam = tmp13(4670).RouteParam;
-        const tmp13Result = tmp13(4657);
-        const RouteParam2 = tmp13(4670).RouteParam;
+        const RouteParam = tmp13(4673).RouteParam;
+        const tmp13Result = tmp13(4660);
+        const RouteParam2 = tmp13(4673).RouteParam;
         obj2.path = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         importDefault = tmp13Result.matchPath(location.pathname, obj2);
         const HTTP = tmp13(1271).HTTP;
@@ -106,11 +106,11 @@ function loadThread(channelId) {
     }
   }
 }
-const ChannelRecord = fn(2048);
+const ChannelRecord = fn(2049);
 ({ createChannelRecordFromServer: closure_4, THREAD_CHANNEL_TYPES: hasOwnProperty } = ChannelRecord);
 const Constants = fn(1074);
 ({ Endpoints: closure_8, Routes: closure_9 } = Constants);
-const isStaticChannelRoute = fn(2051).isStaticChannelRoute;
+const isStaticChannelRoute = fn(2052).isStaticChannelRoute;
 const dependencyMap = {};
 let c12 = false;
 const size = fn(2);
@@ -134,7 +134,7 @@ export default {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp9 = nextResult;
-        if (nextResult !== items1(6637).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(6642).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp9)) {
             if (null == ChannelStore.getChannel(tmp9)) {
               let tmp18 = dependencyMap[tmp9];

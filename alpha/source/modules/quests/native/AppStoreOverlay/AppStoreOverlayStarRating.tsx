@@ -1,13 +1,13 @@
-// Module ID: 10715
-// Function ID: 10716
+// Module ID: 10728
+// Function ID: 10729
 // Name: AppStoreOverlayStarRating
-// Dependencies: [19, 17, 21, 4829, 576, 9693, 9687, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 9704, 9698, 2]
 // Exports: default
 
-// Module 10715 (AppStoreOverlayStarRating)
+// Module 10728 (AppStoreOverlayStarRating)
 import nativeDefault from "native" /* 576 */;
-import StarIcon from "StarIcon" /* 9687 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9693 */;
+import StarIcon from "StarIcon" /* 9698 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9704 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -34,7 +34,7 @@ function FractionalStar(fillAmount) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 const obj2 = { row: { flexDirection: "row", alignItems: "center", gap: 2 }, star: null, starIcon: null, starFillMask: null };
 let size = { width: nativeDefault.space.PX_10, height: nativeDefault.space.PX_10, position: "relative" };
 obj2.star = size;

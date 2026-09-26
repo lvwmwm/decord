@@ -1,17 +1,17 @@
-// Module ID: 11990
-// Function ID: 11991
+// Module ID: 12008
+// Function ID: 12009
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [19, 2066, 4719, 11976, 2028, 1115, 2518, 504, 11991, 4723, 11977, 2]
+// Dependencies: [19, 2067, 4723, 11994, 2029, 1115, 2519, 504, 12009, 4727, 11995, 2]
 // Exports: default
 
-// Module 11990 (useGuildPowerupRollbackModalConfig)
+// Module 12008 (useGuildPowerupRollbackModalConfig)
 import util from "util" /* 1115 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import _modDef2518 from "module_2518" /* 2518 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 11976 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import _modDef2519 from "module_2519" /* 2519 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 11994 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4719 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;
 
 const require = globalThis.__r;
 
@@ -27,11 +27,11 @@ function getGuildThemeRollbackModalConfig(storeRemovalDate) {
       const intl = util.intl;
       const obj2 = { dateString: tmp3 };
       const _HermesInternal = HermesInternal;
-      obj.header = "" + storeRemovalDate.title + " " + intl.formatToPlainString(_modDef2518["6e2ry1"], obj2);
+      obj.header = "" + storeRemovalDate.title + " " + intl.formatToPlainString(_modDef2519["6e2ry1"], obj2);
       const intl2 = util.intl;
       const obj5 = { startDate: tmp3, endDate: tmp3, perkName: null, boostCount: null };
       ({ title: obj3.perkName, cost: obj3.boostCount } = storeRemovalDate);
-      const items = [intl2.formatToPlainString(_modDef2518.jd8fki, obj5)];
+      const items = [intl2.formatToPlainString(_modDef2519.jd8fki, obj5)];
       obj.bodies = items;
       return obj;
     }

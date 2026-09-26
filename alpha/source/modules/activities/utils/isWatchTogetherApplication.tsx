@@ -1,11 +1,11 @@
-// Module ID: 8860
-// Function ID: 8861
+// Module ID: 8868
+// Function ID: 8869
 // Name: isWatchTogetherApplication
-// Dependencies: [2004, 2]
+// Dependencies: [2005, 2]
 // Exports: default
 
-// Module 8860 (isWatchTogetherApplication)
-import Constants from "Constants" /* 2004 */;
+// Module 8868 (isWatchTogetherApplication)
+import Constants from "Constants" /* 2005 */;
 import size from "module_2" /* 2 */;
 
 ({ WATCH_YOUTUBE_DEV_APP_ID: closure_0, WATCH_YOUTUBE_PROD_APP_ID: closure_1, WATCH_YOUTUBE_QA_APP_ID: c2 } = Constants);

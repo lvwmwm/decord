@@ -1,23 +1,23 @@
-// Module ID: 8477
-// Function ID: 8478
+// Module ID: 8485
+// Function ID: 8486
 // Name: useApplicationWidgetLayoutRendererProps
-// Dependencies: [32, 19, 8478, 8479, 2111, 8480, 504, 8481, 8382, 1370, 8485, 2]
+// Dependencies: [32, 19, 8486, 8487, 2112, 8488, 504, 8489, 8390, 1370, 8493, 2]
 // Exports: default
 
-// Module 8477 (useApplicationWidgetLayoutRendererProps)
+// Module 8485 (useApplicationWidgetLayoutRendererProps)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8382 */;
-import ApplicationAssetV2Utils from "ApplicationAssetV2Utils" /* 8485 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 8390 */;
+import ApplicationAssetV2Utils from "ApplicationAssetV2Utils" /* 8493 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationAssetsV2Store from "ApplicationAssetsV2Store" /* 8478 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 8479 */;
-import LocaleStore from "LocaleStore" /* 2111 */;
+import ApplicationAssetsV2Store from "ApplicationAssetsV2Store" /* 8486 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 8487 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const FetchState = fn(8479).FetchState;
+const FetchState = fn(8487).FetchState;
 const localizedStrings = [];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetLayoutRendererProps.tsx");

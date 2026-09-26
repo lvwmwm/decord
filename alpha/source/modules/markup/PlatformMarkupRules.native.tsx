@@ -1,21 +1,21 @@
-// Module ID: 5327
-// Function ID: 5328
+// Module ID: 5334
+// Function ID: 5335
 // Name: PlatformMarkupRules
-// Dependencies: [17, 5328, 5412, 2009, 1115, 4480, 1929, 5427, 5305, 1397, 5306, 5309, 2]
+// Dependencies: [17, 5335, 5419, 2010, 1115, 4483, 1930, 5434, 5312, 1397, 5313, 5316, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 5327 (PlatformMarkupRules)
+// Module 5334 (PlatformMarkupRules)
 import _mod17 from "module_17" /* 17 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import _modDef1929 from "module_1929" /* 1929 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2009 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4480 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5305 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5306 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5309 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5328 */;
-import useGameMentionData from "useGameMentionData" /* 5412 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5427 */;
+import _modDef1930 from "module_1930" /* 1930 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2010 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5312 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5313 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5316 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
+import useGameMentionData from "useGameMentionData" /* 5419 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5434 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -54,7 +54,7 @@ let obj = {
   silentPrefix: null
 };
 let obj2 = {};
-let merged = Object.assign(_modDef1929.defaultRules.escape);
+let merged = Object.assign(_modDef1930.defaultRules.escape);
 obj2.requiredFirstCharacters = undefined;
 obj2.match = function match(arg0) {
   const INVISIBLE_CHAR_REGEX = MarkupInvisibleUnicode.INVISIBLE_CHAR_REGEX;

@@ -1,14 +1,14 @@
-// Module ID: 6657
-// Function ID: 6658
+// Module ID: 6662
+// Function ID: 6663
 // Name: OrbCheckoutUtils
-// Dependencies: [1074, 1076, 6658, 1115, 6659, 4507, 2]
+// Dependencies: [1074, 1076, 6663, 1115, 6664, 4510, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 6657 (OrbCheckoutUtils)
+// Module 6662 (OrbCheckoutUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
 import util from "util" /* 1115 */;
-import OrderConstants from "OrderConstants" /* 6658 */;
-import OrderActionCreators from "OrderActionCreators" /* 6659 */;
+import OrderConstants from "OrderConstants" /* 6663 */;
+import OrderActionCreators from "OrderActionCreators" /* 6664 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -65,16 +65,16 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
     let keFvXM = dependencyMap;
     let OrderSigningFailedWithConstraintsError = OrderActionCreators.OrderSigningFailedWithConstraintsError;
     if (!(code instanceof OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof tmp(6659).OrderProcessingPendingError) {
+      if (code instanceof tmp(6664).OrderProcessingPendingError) {
         const intl5 = tmp(1115).intl;
         let stringResult = intl5.string(tmp(1115).t["2BmwgV"]);
-      } else if (code.code === tmp(4507).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+      } else if (code.code === tmp(4510).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
         const intl4 = tmp(1115).intl;
         stringResult = intl4.string(tmp(1115).t.keFvXM);
-      } else if (code.code === tmp(4507).ErrorCodes.ALREADY_PURCHASED) {
+      } else if (code.code === tmp(4510).ErrorCodes.ALREADY_PURCHASED) {
         const intl3 = tmp(1115).intl;
         stringResult = intl3.string(tmp(1115).t.m371Mx);
-      } else if (code.code === tmp(4507).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+      } else if (code.code === tmp(4510).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
         const intl2 = tmp(1115).intl;
         stringResult = intl2.string(tmp(1115).t.ZHgEG7);
       } else {

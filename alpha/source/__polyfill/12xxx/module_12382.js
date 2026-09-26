@@ -1,20 +1,16 @@
 // Module ID: 12382
 // Function ID: 12383
 // Dependencies: []
-// Exports: severityLevelFromString
+// Exports: parameterize
 
 // Module 12382
 
-export const severityLevelFromString = function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
-    }
-    str = str2;
-  }
-  return str;
+export const parameterize = function parameterize(join) {
+  const substr = [...arguments].slice();
+  const items = [join, ...substr];
+  const string = new String(String.raw.apply(items));
+  const str = join.join("\0");
+  string.__sentry_template_string__ = join.join("\0").replace(/%/g, "%%").replace(/\0/g, "%s");
+  string.__sentry_template_values__ = substr;
+  return string;
 };
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];

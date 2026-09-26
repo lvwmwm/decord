@@ -1,9 +1,9 @@
-// Module ID: 6904
-// Function ID: 6905
+// Module ID: 6909
+// Function ID: 6910
 // Name: UserSettingsProto
-// Dependencies: [5, 1220, 502, 3, 2073, 2090, 12, 2]
+// Dependencies: [5, 1220, 502, 3, 2074, 2091, 12, 2]
 
-// Module 6904 (UserSettingsProto)
+// Module 6909 (UserSettingsProto)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
@@ -36,7 +36,7 @@ class UserSettingsProto {
       if (databaseResult != null) {
         databaseResult.transaction((database) => {
           const state = closure_1_3.computeState();
-          const result = closure_1_0(2073).userSettingsTransaction(database);
+          const result = closure_1_0(2074).userSettingsTransaction(database);
           for (const key10014 in state) {
             obj2 = { id: null, value: null };
             let _Number = Number;
@@ -53,8 +53,8 @@ class UserSettingsProto {
           if (num == null) {
             num = -1;
           }
-          obj = closure_1_0(2073);
-          const result1 = closure_1_0(2073).nonGuildVersionsTransaction(database);
+          obj = closure_1_0(2074);
+          const result1 = closure_1_0(2074).nonGuildVersionsTransaction(database);
           result1.put({ id: "user_settings_version", version: num });
         }, "handleUserSettingsProtoChange");
       }
@@ -170,7 +170,7 @@ obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
   if (databaseResult != null) {
     databaseResult.transaction((database) => {
       const state = closure_1_3.computeState();
-      const result = closure_1_0(2073).userSettingsTransaction(database);
+      const result = closure_1_0(2074).userSettingsTransaction(database);
       for (const key10014 in state) {
         obj2 = { id: null, value: null };
         let _Number = Number;
@@ -187,8 +187,8 @@ obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
       if (num == null) {
         num = -1;
       }
-      obj = closure_1_0(2073);
-      const result1 = closure_1_0(2073).nonGuildVersionsTransaction(database);
+      obj = closure_1_0(2074);
+      const result1 = closure_1_0(2074).nonGuildVersionsTransaction(database);
       result1.put({ id: "user_settings_version", version: num });
     }, "handleUserSettingsProtoChange");
   }

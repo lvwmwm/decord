@@ -1,25 +1,25 @@
-// Module ID: 9437
-// Function ID: 9438
+// Module ID: 9448
+// Function ID: 9449
 // Name: UserSettingsVoiceProcessing
-// Dependencies: [19, 17, 1992, 21, 4829, 576, 504, 9438, 9439, 9093, 5992, 1115, 5995, 4825, 9442, 9423, 6616, 2]
+// Dependencies: [19, 17, 1993, 21, 4836, 576, 504, 9449, 9450, 9104, 5997, 1115, 6000, 4832, 9453, 9434, 6621, 2]
 // Exports: default
 
-// Module 9437 (UserSettingsVoiceProcessing)
+// Module 9448 (UserSettingsVoiceProcessing)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9093 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9438 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 9439 */;
-import KrispLogoDefault from "KrispLogo" /* 9442 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9449 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 9450 */;
+import KrispLogoDefault from "KrispLogo" /* 9453 */;
 import noop from "module_19" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 
 const util = EUNgko(1115);
-const Text_Text = EUNgko(4825);
-const TableRadioGroup = EUNgko(5992);
-const TableRadioRow = EUNgko(5995);
-const TableSwitchRow = EUNgko(6616);
-const UserSettingsVoice = EUNgko(9423);
+const Text_Text = EUNgko(4832);
+const TableRadioGroup = EUNgko(5997);
+const TableRadioRow = EUNgko(6000);
+const TableSwitchRow = EUNgko(6621);
+const UserSettingsVoice = EUNgko(9434);
 require = fn;
 class VoiceProcessingOptions {
   constructor() {
@@ -124,7 +124,7 @@ class VoiceProcessingOptions {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { optionsParentContainer: { marginTop: 12 }, optionsDescriptionContainer: { paddingTop: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 }, krisp: { marginStart: -20 } };
 const React6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -163,7 +163,7 @@ export default function UserSettingsVoiceProcessing() {
     obj5.onValueChange = function onValueChange(vadUseKrisp) {
       return AudioActionCreatorsDefault.setMode(require, { vadUseKrisp });
     };
-    advancedVoiceActivitySupported = closure_5(tmp(6616).TableSwitchRow, obj5);
+    advancedVoiceActivitySupported = closure_5(tmp(6621).TableSwitchRow, obj5);
   }
   const obj6 = { children: null };
   items2[1] = advancedVoiceActivitySupported;

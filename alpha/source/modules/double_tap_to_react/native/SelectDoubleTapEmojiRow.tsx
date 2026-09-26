@@ -1,25 +1,25 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 11871
+// Function ID: 11872
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 4821, 6567, 1375, 21, 4829, 1364, 576, 504, 5428, 6546, 1397, 9737, 1478, 4484, 7405, 10572, 7177, 8211, 2]
+// Dependencies: [19, 17, 4825, 6572, 1375, 21, 4836, 1364, 576, 504, 5435, 6551, 1397, 9748, 1479, 4487, 7410, 10583, 7182, 8219, 2]
 
-// Module 11857 (SelectDoubleTapEmojiRow)
+// Module 11871 (SelectDoubleTapEmojiRow)
 import nativeDefault from "native" /* 576 */;
-import EmojiDefault from "Emoji" /* 6546 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7177 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10572 */;
+import EmojiDefault from "Emoji" /* 6551 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7182 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10583 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 const AvatarUtilsDefault = tmp8(1397);
 require = fn;
 const View = fn(17).View;
-const ACTION_SHEET_MAX_WIDTH = fn(6567).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(6572).ACTION_SHEET_MAX_WIDTH;
 const EmojiConstants = fn(1375);
 ({ EMOJI_URL_BASE_SIZE: closure_7, EmojiIntention: closure_8 } = EmojiConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { emoji: { width: 24, height: 24 }, customEmoji: { width: 24, height: 24 }, textEmoji: null, emojiRow: null, emojiPressable: null, selectedEmojiPressable: null, emojiWrapper: null, selectedEmojiWrapper: null, chooseEmojiButton: null, customReactionOverlay: null, selectedCustomReactionIcon: null };
 let PlatformUtils = fn(1364);
 let num = 20;
@@ -104,7 +104,7 @@ let closure_13 = noop.memo((emoji) => {
   obj4.src = url;
   obj3.children = closure_9(EmojiDefault, obj4);
   obj2.children = closure_9(tmp6, obj3);
-  return closure_9(emoji(5428).PressableOpacity, obj2);
+  return closure_9(emoji(5435).PressableOpacity, obj2);
 });
 const obj11 = { color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT };
 size = fn(2);

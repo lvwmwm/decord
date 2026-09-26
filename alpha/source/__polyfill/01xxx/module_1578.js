@@ -1,55 +1,18 @@
 // Module ID: 1578
 // Function ID: 1579
-// Dependencies: [32, 19, 1493, 1527, 1524, 1579, 1506]
-// Exports: usePreventRemove
+// Dependencies: [19, 1511]
+// Exports: useNavigationContainerRef
 
 // Module 1578
-import _slicedToArray from "module_32" /* 32 */;
+import NOT_INITIALIZED_ERROR from "NOT_INITIALIZED_ERROR" /* 1511 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
+require = arg1;
 
-const require = arg1;
-
-export const usePreventRemove = function usePreventRemove(stateFromStores, arg1) {
-  _require = stateFromStores;
-  importDefault = arg1;
-  const first = navigation(key.useState(() => stateFromStores(first[2]).nanoid()), 1)[0];
-  navigation = require("module_1527").useNavigation();
-  let obj = require("module_1527");
-  key = require("module_1524").useRoute().key;
-  const obj2 = require("module_1524");
-  const preventRemoveContext = require("module_1579").usePreventRemoveContext();
-  const setPreventRemove = preventRemoveContext.setPreventRemove;
-  const notifyPreventRemove = preventRemoveContext.notifyPreventRemove;
-  const items = [setPreventRemove, first, key, stateFromStores];
-  const insertionEffect = key.useInsertionEffect(() => {
-    setPreventRemove(first, key, closure_0);
-    return () => {
-      setPreventRemove(first, key, false);
-    };
-  }, items);
-  const items1 = [first, key, stateFromStores, notifyPreventRemove];
-  const effect = key.useEffect(() => {
-    notifyPreventRemove();
-    return () => {
-      notifyPreventRemove();
-    };
-  }, items1);
-  const tmp6 = require("module_1506")((preventDefault) => {
-    if (closure_0) {
-      preventDefault.preventDefault();
-      const obj = { data: preventDefault.data };
-      closure_1(obj);
-    }
-  });
-  closure_7 = tmp6;
-  const items2 = [navigation, tmp6];
-  const effect1 = key.useEffect(() => {
-    let addListenerResult;
-    if (navigation != null) {
-      addListenerResult = navigation.addListener("beforeRemove", closure_7);
-    }
-    return addListenerResult;
-  }, items2);
+export const useNavigationContainerRef = function useNavigationContainerRef() {
+  const ref = noop.useRef(null);
+  if (null == ref.current) {
+    ref.current = NOT_INITIALIZED_ERROR.createNavigationContainerRef();
+  }
+  return ref.current;
 };

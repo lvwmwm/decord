@@ -1,9 +1,9 @@
-// Module ID: 8089
-// Function ID: 8090
+// Module ID: 8097
+// Function ID: 8098
 // Name: MenuConstants
 // Dependencies: [2]
 
-// Module 8089 (MenuConstants)
+// Module 8097 (MenuConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/in_app_reports/MenuConstants.tsx");

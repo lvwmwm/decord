@@ -1,12 +1,12 @@
-// Module ID: 7380
-// Function ID: 7381
+// Module ID: 7385
+// Function ID: 7386
 // Name: useIsFirstMessageInMediaPost
-// Dependencies: [2044, 563, 11, 2]
+// Dependencies: [2045, 563, 11, 2]
 // Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost, useIsFirstMessageInMediaPost
 
-// Module 7380 (useIsFirstMessageInMediaPost)
+// Module 7385 (useIsFirstMessageInMediaPost)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = globalThis.__r;
 

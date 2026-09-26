@@ -1,16 +1,16 @@
-// Module ID: 8471
-// Function ID: 8472
+// Module ID: 8479
+// Function ID: 8480
 // Name: ApplicationWidgetMarkupUtils
-// Dependencies: [5296, 12, 5297, 8472, 4820, 7424, 2]
+// Dependencies: [5303, 12, 5304, 8480, 4824, 7429, 2]
 // Exports: parseApplicationWidgetText, parseApplicationWidgetTextToAST
 
-// Module 8471 (ApplicationWidgetMarkupUtils)
-import MarkupReactRulesDefault from "MarkupReactRules" /* 4820 */;
-import MarkupRulesDefault from "MarkupRules" /* 5297 */;
-import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 8472 */;
-import combineMarkupRules from "combineMarkupRules" /* 5296 */;
+// Module 8479 (ApplicationWidgetMarkupUtils)
+import MarkupReactRulesDefault from "MarkupReactRules" /* 4824 */;
+import MarkupRulesDefault from "MarkupRules" /* 5304 */;
+import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 8480 */;
+import combineMarkupRules from "combineMarkupRules" /* 5303 */;
 import apply from "module_12" /* 12 */;
-import MarkupParser_mod from "MarkupParser" /* 7424 */;
+import MarkupParser_mod from "MarkupParser" /* 7429 */;
 
 const items = ["text", "link", "emoji"];
 const items1 = [apply.pick(MarkupRulesDefault.RULES, items), { image: MarkupLiteralImageRuleDefault }, MarkupReactRulesDefault()];

@@ -1,12 +1,12 @@
-// Module ID: 6730
-// Function ID: 6731
+// Module ID: 6735
+// Function ID: 6736
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1074, 5032, 6731, 6733, 1241, 1254, 6734, 1366, 4522, 2]
+// Dependencies: [5, 502, 1074, 5039, 6736, 6738, 1241, 1254, 6739, 1366, 4525, 2]
 
-// Module 6730 (MobileWebHandoffLinking)
+// Module 6735 (MobileWebHandoffLinking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FingerprintUtils from "FingerprintUtils" /* 1254 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 6733 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 6738 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 

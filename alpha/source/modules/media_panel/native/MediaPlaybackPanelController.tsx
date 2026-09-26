@@ -1,21 +1,21 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17041
+// Function ID: 17042
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 4821, 2043, 5037, 14074, 8494, 11742, 21, 4563, 1612, 16801, 14073, 504, 17014, 2]
+// Dependencies: [32, 19, 4825, 2044, 5044, 14099, 8502, 11756, 21, 4566, 1613, 16830, 14098, 504, 17042, 2]
 // Exports: default
 
-// Module 17013 (MediaPlaybackPanelController)
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14073 */;
+// Module 17041 (MediaPlaybackPanelController)
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14098 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
-import VoicePanelStore from "VoicePanelStore" /* 5037 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import VoicePanelStore from "VoicePanelStore" /* 5044 */;
 
 const require = fn;
-const MediaPlaybackPanelModes = fn(14074).MediaPlaybackPanelModes;
-const ActivityPanelModes = fn(8494).ActivityPanelModes;
-let MorphablePanelModes = fn(11742).MorphablePanelModes;
+const MediaPlaybackPanelModes = fn(14099).MediaPlaybackPanelModes;
+const ActivityPanelModes = fn(8502).ActivityPanelModes;
+let MorphablePanelModes = fn(11756).MorphablePanelModes;
 const jsx = fn(21).jsx;
 let __initData = { code: "function MediaPlaybackPanelControllerTsx1(){const{mode,MediaPlaybackPanelModes,MorphablePanelModes}=this.__closure;switch(mode.get()){case MediaPlaybackPanelModes.PIP:{return MorphablePanelModes.PIP;}default:{return MorphablePanelModes.UNDEFINED;}}}" };
 const size = fn(2);

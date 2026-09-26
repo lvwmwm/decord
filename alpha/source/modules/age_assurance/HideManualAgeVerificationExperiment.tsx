@@ -1,11 +1,11 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8035
+// Function ID: 8036
 // Name: HideManualAgeVerificationExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isManualAgeVerificationHidden, useIsManualAgeVerificationHidden
 
-// Module 8027 (HideManualAgeVerificationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 8035 (HideManualAgeVerificationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2025-11-hide-manual-link", defaultConfig: { isHidden: false }, variations: null };

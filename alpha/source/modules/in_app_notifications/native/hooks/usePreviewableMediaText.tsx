@@ -1,12 +1,12 @@
-// Module ID: 9584
-// Function ID: 9585
+// Module ID: 9595
+// Function ID: 9596
 // Name: usePreviewableMediaText
-// Dependencies: [19, 9579, 1115, 2]
+// Dependencies: [19, 9590, 1115, 2]
 // Exports: usePreviewableMediaText
 
-// Module 9584 (usePreviewableMediaText)
+// Module 9595 (usePreviewableMediaText)
 import util from "util" /* 1115 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 9579 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 9590 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

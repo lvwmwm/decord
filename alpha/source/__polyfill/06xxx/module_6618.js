@@ -1,9 +1,0 @@
-// Module ID: 6618
-// Function ID: 6619
-// Dependencies: [1121]
-
-// Module 6618
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8ed6e9444f1466c0eafe89d2eb1484b1", name: "XSmallBoldIcon", type: "png" });

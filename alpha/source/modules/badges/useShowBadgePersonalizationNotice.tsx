@@ -1,13 +1,13 @@
-// Module ID: 10653
-// Function ID: 10654
+// Module ID: 10666
+// Function ID: 10667
 // Name: useShowBadgePersonalizationNotice
-// Dependencies: [6007, 1074, 504, 10648, 2]
+// Dependencies: [6012, 1074, 504, 10659, 2]
 // Exports: default
 
-// Module 10653 (useShowBadgePersonalizationNotice)
+// Module 10666 (useShowBadgePersonalizationNotice)
 import initialize from "initialize" /* 504 */;
-import BadgeUtils from "BadgeUtils" /* 10648 */;
-import ConsentStore from "ConsentStore" /* 6007 */;
+import BadgeUtils from "BadgeUtils" /* 10659 */;
+import ConsentStore from "ConsentStore" /* 6012 */;
 
 require = fn;
 const Consents = fn(1074).Consents;

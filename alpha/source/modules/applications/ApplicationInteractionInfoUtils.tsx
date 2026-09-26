@@ -1,11 +1,11 @@
-// Module ID: 11100
-// Function ID: 11101
+// Module ID: 11114
+// Function ID: 11115
 // Name: ApplicationInteractionInfoUtils
-// Dependencies: [1978, 2]
+// Dependencies: [1979, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 11100 (ApplicationInteractionInfoUtils)
-import Server from "Server" /* 1978 */;
+// Module 11114 (ApplicationInteractionInfoUtils)
+import Server from "Server" /* 1979 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");

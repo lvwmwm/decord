@@ -1,12 +1,12 @@
-// Module ID: 7746
-// Function ID: 7747
+// Module ID: 7754
+// Function ID: 7755
 // Name: MediaModalWebVideoFile
-// Dependencies: [32, 19, 21, 7737, 7712, 7701, 7703, 2]
+// Dependencies: [32, 19, 21, 7745, 7720, 7709, 7711, 2]
 // Exports: createWebFileVideoControls
 
-// Module 7746 (MediaModalWebVideoFile)
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7701 */;
-import MediaModalWebView from "MediaModalWebView" /* 7737 */;
+// Module 7754 (MediaModalWebVideoFile)
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7709 */;
+import MediaModalWebView from "MediaModalWebView" /* 7745 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

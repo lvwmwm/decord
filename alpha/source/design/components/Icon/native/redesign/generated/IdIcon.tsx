@@ -1,13 +1,13 @@
-// Module ID: 10081
-// Function ID: 10082
+// Module ID: 10092
+// Function ID: 10093
 // Name: IdIcon
-// Dependencies: [19, 21, 576, 4527, 10082, 2]
+// Dependencies: [19, 21, 576, 4530, 10093, 2]
 // Exports: IdIcon
 
-// Module 10081 (IdIcon)
+// Module 10092 (IdIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod10082 from "module_10082" /* 10082 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod10093 from "module_10093" /* 10093 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const IdIcon = function IdIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10082, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10093, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

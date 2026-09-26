@@ -1,11 +1,11 @@
-// Module ID: 16881
-// Function ID: 16882
+// Module ID: 16910
+// Function ID: 16911
 // Name: useExternalPipAspectRatioUpdater
-// Dependencies: [19, 8878, 2]
+// Dependencies: [19, 8886, 2]
 // Exports: default
 
-// Module 16881 (useExternalPipAspectRatioUpdater)
-import ExternalPipDefault from "ExternalPip" /* 8878 */;
+// Module 16910 (useExternalPipAspectRatioUpdater)
+import ExternalPipDefault from "ExternalPip" /* 8886 */;
 import noop from "module_19" /* 19 */;
 
 let size = fn(2);

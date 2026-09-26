@@ -1,13 +1,13 @@
-// Module ID: 2081
-// Function ID: 2082
+// Module ID: 2082
+// Function ID: 2083
 // Name: Database
-// Dependencies: [5, 2082, 2080, 2083, 10, 2]
+// Dependencies: [5, 2083, 2081, 2084, 10, 2]
 
-// Module 2081 (Database)
+// Module 2082 (Database)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import TableId from "TableId" /* 2080 */;
-import Host2 from "Host" /* 2082 */;
-import Runtime2 from "Runtime" /* 2083 */;
+import TableId from "TableId" /* 2081 */;
+import Host2 from "Host" /* 2083 */;
+import Runtime2 from "Runtime" /* 2084 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -47,9 +47,9 @@ Database["openSyncUnsafe"] = function openSyncUnsafe(arg0, arg1) {
     const obj = Object.create(tmp.prototype);
     obj.raw = openSyncUnsafeResult;
     obj.name = openSyncUnsafeResult.name;
-    obj.lastState = tmp2(2080).DatabaseState.Open;
+    obj.lastState = tmp2(2081).DatabaseState.Open;
     obj.handle = openSyncUnsafeResult.handle;
-    const Runtime = tmp2(2083).Runtime;
+    const Runtime = tmp2(2084).Runtime;
     obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
       if (obj.handle === arg0) {
         tmp.lastState = lastState;

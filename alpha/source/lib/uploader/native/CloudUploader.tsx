@@ -1,19 +1,19 @@
-// Module ID: 7253
-// Function ID: 7254
+// Module ID: 7258
+// Function ID: 7259
 // Name: CloudUploader
-// Dependencies: [5, 1074, 4822, 3, 7254, 7169, 1115, 7255, 5482, 7256, 7257, 5432, 5433, 5474, 12, 2]
+// Dependencies: [5, 1074, 4829, 3, 7259, 7174, 1115, 7260, 5488, 7261, 7262, 5439, 5440, 1427, 12, 2]
 
-// Module 7253 (CloudUploader)
+// Module 7258 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import Upload from "Upload" /* 5433 */;
+import Upload from "Upload" /* 5440 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UploaderBase from "UploaderBase" /* 7254 */;
+import UploaderBase from "UploaderBase" /* 7259 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AbortCodes: closure_4, NOOP: hasOwnProperty } = Constants);
-const FileUploadErrorTypes = fn(4822).FileUploadErrorTypes;
+const FileUploadErrorTypes = fn(4829).FileUploadErrorTypes;
 let closure_7 = new LoggerDefault("CloudUploader(Native).tsx");
 class CloudUploader extends tmp4 {
   constructor() {
@@ -66,7 +66,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
             closure_130_4 = undefined;
             closure_130_5 = undefined;
             let uploadTarget;
-            closure_130_0 = files(7169).backgroundTaskIdentifierInvalid;
+            closure_130_0 = files(7174).backgroundTaskIdentifierInvalid;
             self.once("start", tmp4(function*(arg0, value) {
               if (c2 === 2) {
                 c2 = 3;
@@ -99,7 +99,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
                       const obj5 = { count: length.length };
                       obj4.content = intl2.formatToPlainString(closure_2_0(1115).t.D0noUt, obj5);
                       c2 = 1;
-                      const obj7 = { value: files(7169).startBackgroundTask(obj4), done: false };
+                      const obj7 = { value: files(7174).startBackgroundTask(obj4), done: false };
                       return obj7;
                     }
                   } else if (arg0 === 1) {
@@ -112,8 +112,8 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
                   } else {
                     closure_128_0 = value;
                     if (tmp2._aborted) {
-                      files(7169).endBackgroundTask(closure_128_0);
-                      const obj = files(7169);
+                      files(7174).endBackgroundTask(closure_128_0);
+                      const obj = files(7174);
                     }
                     c2 = 3;
                     return { value: "HermesInternal", done: null };
@@ -195,7 +195,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
           closure_130_3 = closure_130_3 + closure_130_5;
           closure_131_0._file.totalPreCompressionSize = closure_130_3;
           closure_131_0._file.currentSize = closure_130_3;
-          uploadTarget = _self(5482).getUploadTarget(closure_130_4.item.target);
+          uploadTarget = _self(5488).getUploadTarget(closure_130_4.item.target);
           if (closure_130_5 > uploadTarget.getMaxFileSize(closure_130_4.channelId)) {
             const obj6 = { code: tmp61.ENTITY_TOO_LARGE, reason: null };
             let obj7 = { type: constants.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE };
@@ -223,7 +223,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
             if (_self === undefined) {
               const _HermesInternal2 = HermesInternal;
               logger.log("" + closure_131_0.id + " queued");
-              files(7256).enqueue(() => {
+              files(7261).enqueue(() => {
                 closure_1_0.startUpload();
                 return closure_1_0;
               });
@@ -236,11 +236,11 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
               closure_130_4 = tmp47;
               constants = 3;
               logger = 1;
-              const obj14 = { value: _self(7255).getPreCompressionFileSize(closure_130_4.item), done: false };
+              const obj14 = { value: _self(7260).getPreCompressionFileSize(closure_130_4.item), done: false };
               return obj14;
             }
           }
-          const obj15 = _self(5482);
+          const obj15 = _self(5488);
         }
       } catch (tmp61) {
         if (tmp5 === c5) {
@@ -411,7 +411,7 @@ prototype["observeCompressionProgress"] = function observeCompressionProgress(fi
     }
   });
   let mediaEventSubscriptions = this.mediaEventSubscriptions;
-  let result = mediaEventSubscriptions.set(this._file.id, self(5474).onCompressionProgress((uri) => {
+  let result = mediaEventSubscriptions.set(this._file.id, self(1427).onCompressionProgress((uri) => {
     uri = uri.uri;
     const uploadItems = self.uploadItems;
     if (uploadItems.has(uri)) {

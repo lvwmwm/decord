@@ -1,19 +1,19 @@
-// Module ID: 10734
-// Function ID: 10735
+// Module ID: 10747
+// Function ID: 10748
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7111, 5751, 21, 4829, 576, 1612, 504, 10735, 4525, 1115, 5904, 4796, 10681, 6605, 4775, 10737, 6566, 6565, 4825, 4819, 5994, 5912, 5274, 10740, 2]
+// Dependencies: [19, 17, 7116, 5756, 21, 4836, 576, 1613, 504, 10748, 4528, 1115, 5909, 4800, 10694, 6610, 4779, 10750, 6571, 6570, 4832, 4823, 5999, 5917, 5281, 10753, 2]
 // Exports: default
 
-// Module 10734 (QuestRewardCodeClaimBottomSheet)
+// Module 10747 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import _modDef5904 from "module_5904" /* 5904 */;
-import ClipboardUtils from "ClipboardUtils" /* 6605 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10681 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import _modDef5909 from "module_5909" /* 5909 */;
+import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10694 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7111 */;
+import QuestStore from "QuestStore" /* 7116 */;
 
 const require = globalThis.__r;
 
@@ -41,7 +41,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
       const obj2 = { key: "CLAIM_QUEST_REWARD_ERROR", content: null, icon: null };
       const intl = util.intl;
       obj2.content = intl.string(util.t.CKsXk3);
-      obj2.icon = _modDef5904;
+      obj2.icon = _modDef5909;
       ToastActionCreatorsDefault.open(obj2);
       ActionSheetActionCreatorsDefault.hideActionSheet();
     }
@@ -107,7 +107,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
         obj2.icon = function icon() {
           return closure_1_8(closure_1_0(dependencyMap[16]).CopyIcon, {});
         };
-        return rewardCode(4525).open(obj2);
+        return rewardCode(4528).open(obj2);
       });
     }
   }, items4);
@@ -202,10 +202,10 @@ function QuestRewardCodeClaimBottomSheet(quest) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const REWARD_CODE_PLACEHOLDER = fn(5751).REWARD_CODE_PLACEHOLDER;
+const REWARD_CODE_PLACEHOLDER = fn(5756).REWARD_CODE_PLACEHOLDER;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles((paddingBottom) => {
   const obj = { wrapper: { display: "flex", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 }, footer: { paddingBottom }, claimingIndicator: { position: "absolute", left: "50%", top: "50%", marginLeft: -12, marginTop: -12 }, codeCopyWrapperLoading: { opacity: 0.5 }, redemptionInstructions: { marginBottom: 24 } };
   return obj;

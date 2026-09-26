@@ -1,29 +1,29 @@
-// Module ID: 8806
-// Function ID: 8807
+// Module ID: 8814
+// Function ID: 8815
 // Name: LocalActivityStore
-// Dependencies: [32, 2043, 5056, 1999, 8807, 5587, 1220, 4851, 2044, 2016, 8810, 2098, 4847, 1074, 2020, 8811, 12, 8812, 4959, 1331, 8813, 1385, 504, 573, 2]
+// Dependencies: [32, 2044, 5063, 2000, 8815, 5592, 1220, 4858, 2045, 2017, 8818, 2099, 4854, 1074, 2021, 8819, 12, 8820, 4966, 1331, 8821, 1385, 504, 573, 2]
 
-// Module 8806 (LocalActivityStore)
+// Module 8814 (LocalActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef1331 from "module_1331" /* 1331 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2020 */;
-import ActivityFlagUtils from "ActivityFlagUtils" /* 8813 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import ActivityFlagUtils from "ActivityFlagUtils" /* 8821 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
-import ApplicationStore from "ApplicationStore" /* 5056 */;
-import RunningGameStore from "RunningGameStore" /* 1999 */;
-import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 8807 */;
-import SpotifyStore from "SpotifyStore" /* 5587 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ApplicationStore from "ApplicationStore" /* 5063 */;
+import RunningGameStore from "RunningGameStore" /* 2000 */;
+import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 8815 */;
+import SpotifyStore from "SpotifyStore" /* 5592 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import DetectableGameStore from "DetectableGameStore" /* 2016 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 8810 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SessionsStore from "SessionsStore" /* 4847 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import DetectableGameStore from "DetectableGameStore" /* 2017 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 8818 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SessionsStore from "SessionsStore" /* 4854 */;
 
 require = fn;
 function updateActivities() {
@@ -45,8 +45,8 @@ function updateActivities() {
     tmp4 = tmp5;
   }
   if (tmp4) {
-    items.push(tmp(8811).getActivityFromCustomStatus(setting));
-    const tmpResult = tmp(8811);
+    items.push(tmp(8819).getActivityFromCustomStatus(setting));
+    const tmpResult = tmp(8819);
   }
   const items1 = [...FirstPartyRichPresenceStore.getActivities()];
   items.push.apply(items1);
@@ -120,7 +120,7 @@ function updateActivities() {
     let hasItem = set.has(tmp26.name);
     if (!hasItem) {
       const items2 = [];
-      const tmpResult3 = tmp(8812);
+      const tmpResult3 = tmp(8820);
       HermesBuiltin.arraySpread(SessionsStore.getRemoteActivities(), HermesBuiltin.arraySpread(items, 0));
       hasItem = tmpResult3.doesGameHaveRichPresence(tmp26, items2);
       const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
@@ -148,9 +148,9 @@ function updateActivities() {
           }
           const obj3 = { start: start2 };
           obj2.timestamps = obj3;
-          const merged1 = Object.assign(tmp(4959).maybeAddAdditionalGameMetadata(tmp26));
+          const merged1 = Object.assign(tmp(4966).maybeAddAdditionalGameMetadata(tmp26));
           items.push(obj2);
-          const tmpResult4 = tmp(4959);
+          const tmpResult4 = tmp(4966);
         }
       }
     }
@@ -347,7 +347,7 @@ const localActivityStore = new LocalActivityStore(DispatcherDefault, {
           num2 = 0;
         }
         let hasFlagResult = obj3.hasFlag(num2, constants.INSTANCE);
-        let tmp13Result = tmp13(8813);
+        let tmp13Result = tmp13(8821);
         let activityFlags = obj2.computeActivityFlags(tmp15, hasFlagResult, tmp10.platform === constants2.EMBEDDED, tmp13Result.isContextlessEmbeddedActivity(tmp10), tmp11);
         if (activityFlags !== tmp12) {
           items = [tmp8, , ];

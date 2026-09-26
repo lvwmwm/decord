@@ -1,13 +1,13 @@
-// Module ID: 8037
-// Function ID: 8038
+// Module ID: 8045
+// Function ID: 8046
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 5202, 1115, 3102, 5202, 2]
+// Dependencies: [19, 21, 5209, 1115, 3103, 5209, 2]
 // Exports: default
 
-// Module 8037 (ManualReviewPendingAlertModal)
+// Module 8045 (ManualReviewPendingAlertModal)
 import util from "util" /* 1115 */;
-import _modDef3102 from "module_3102" /* 3102 */;
-import AlertModal from "AlertModal" /* 5202 */;
+import _modDef3103 from "module_3103" /* 3103 */;
+import AlertModal from "AlertModal" /* 5209 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,9 +18,9 @@ const result = size.fileFinishedImporting("modules/age_assurance/native/ManualRe
 export default function ManualReviewPendingAlertModal() {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
-  obj.title = intl.string(_modDef3102.CNm4w6);
+  obj.title = intl.string(_modDef3103.CNm4w6);
   const intl2 = util.intl;
-  obj.content = intl2.string(_modDef3102["14Fje3"]);
+  obj.content = intl2.string(_modDef3103["14Fje3"]);
   const obj2 = { children: null };
   const obj3 = { text: null };
   const intl3 = util.intl;

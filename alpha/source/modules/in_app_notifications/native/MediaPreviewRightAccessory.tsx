@@ -1,29 +1,29 @@
-// Module ID: 9623
-// Function ID: 9624
+// Module ID: 9634
+// Function ID: 9635
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 4821, 9544, 21, 4829, 576, 7714, 4825, 4528, 1364, 5262, 5388, 6384, 563, 7015, 9624, 9579, 7574, 7705, 1477, 5894, 6705, 6710, 7747, 9625, 1177, 8268, 2]
+// Dependencies: [19, 17, 4825, 9555, 21, 4836, 576, 7722, 4832, 4531, 1364, 5269, 5395, 6389, 563, 7020, 9635, 9590, 7582, 7713, 1478, 5899, 6710, 6715, 7755, 9636, 1177, 8276, 2]
 // Exports: MediaPreviewRightAccessory
 
-// Module 9623 (MediaPreviewRightAccessory)
+// Module 9634 (MediaPreviewRightAccessory)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import useToken from "useToken" /* 4528 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import FastImageDefault from "FastImage" /* 5894 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7015 */;
-import PlayIcon from "PlayIcon" /* 7714 */;
-import common_VideoDefault from "common/Video" /* 7747 */;
-import ClipView from "ClipView" /* 8268 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 9579 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 9624 */;
-import StickerDefault from "Sticker" /* 9625 */;
+import useToken from "useToken" /* 4531 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7020 */;
+import PlayIcon from "PlayIcon" /* 7722 */;
+import common_VideoDefault from "common/Video" /* 7755 */;
+import ClipView from "ClipView" /* 8276 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 9590 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 9635 */;
+import StickerDefault from "Sticker" /* 9636 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 const ClipViewDefault = ClipView;
 
-const VisualEffectViewDefault = tmp4(5262);
+const VisualEffectViewDefault = tmp4(5269);
 require = fn;
 function VideoBadge() {
   const tmp = closure_11();
@@ -61,9 +61,9 @@ function ObscuredMediaOverlay(isSpoiler) {
   items[2] = tmp11;
   const obj4 = { style: tmp.spoilerIconContainer, children: null };
   if (isObscured) {
-    let tmp14Result = tmp14(tmp2(5388).ImageWarningIcon, { size: "sm", color: "white" });
+    let tmp14Result = tmp14(tmp2(5395).ImageWarningIcon, { size: "sm", color: "white" });
   } else {
-    const obj5 = { style: tmp.spoilerPill, children: tmp14(tmp2(6384).EyeIcon, { size: "sm", color: "white" }) };
+    const obj5 = { style: tmp.spoilerPill, children: tmp14(tmp2(6389).EyeIcon, { size: "sm", color: "white" }) };
     tmp14Result = tmp14(tmp15, obj5);
   }
   const obj6 = { children: null };
@@ -87,11 +87,11 @@ function SinglePreviewableMedia(arg0) {
     obj4.children = icon;
     return React6(View, obj4);
   } else {
-    if (tmp2(9579).PreviewableMediaTypes.AUDIO !== type) {
-      if (tmp2(9579).PreviewableMediaTypes.FILE !== type) {
-        if (tmp2(9579).PreviewableMediaTypes.IMAGE !== type) {
-          if (tmp2(9579).PreviewableMediaTypes.VIDEO !== type) {
-            if (tmp2(9579).PreviewableMediaTypes.GIF === type) {
+    if (tmp2(9590).PreviewableMediaTypes.AUDIO !== type) {
+      if (tmp2(9590).PreviewableMediaTypes.FILE !== type) {
+        if (tmp2(9590).PreviewableMediaTypes.IMAGE !== type) {
+          if (tmp2(9590).PreviewableMediaTypes.VIDEO !== type) {
+            if (tmp2(9590).PreviewableMediaTypes.GIF === type) {
               const video = media.video;
               if (video != null) {
                 const url = video.url;
@@ -105,11 +105,11 @@ function SinglePreviewableMedia(arg0) {
                 if (author != null) {
                   id = author.id;
                 }
-                const enabledHarmTypesForChannelAndAuthorId = tmp2(6705).getEnabledHarmTypesForChannelAndAuthorId(message.channel_id, id);
-                const tmp2Result = tmp2(6705);
+                const enabledHarmTypesForChannelAndAuthorId = tmp2(6710).getEnabledHarmTypesForChannelAndAuthorId(message.channel_id, id);
+                const tmp2Result = tmp2(6710);
                 const obj5 = { type: null, media: null };
-                const getMediaObscuredReasonFromBitmask = tmp2(6705).getMediaObscuredReasonFromBitmask;
-                obj5.type = tmp2(6710).ObscuredMediaTypes.Embed;
+                const getMediaObscuredReasonFromBitmask = tmp2(6710).getMediaObscuredReasonFromBitmask;
+                obj5.type = tmp2(6715).ObscuredMediaTypes.Embed;
                 obj5.media = media;
                 if (null != thumbnail.proxyURL) {
                   if ("" !== thumbnail.proxyURL) {
@@ -142,9 +142,9 @@ function SinglePreviewableMedia(arg0) {
                   tmp16Result = tmp16(FastImageDefault, obj9);
                 }
                 url2 = thumbnail.url;
-                const tmp2Result5 = tmp2(6705);
+                const tmp2Result5 = tmp2(6710);
               }
-            } else if (tmp2(9579).PreviewableMediaTypes.STICKER === type) {
+            } else if (tmp2(9590).PreviewableMediaTypes.STICKER === type) {
               const obj11 = { style: null, children: null };
               const items2 = [tmp.mediaThumbnailContainer, ];
               const size4 = { width: size, height: size };
@@ -164,13 +164,13 @@ function SinglePreviewableMedia(arg0) {
             if (null != height) {
               if (height > 0) {
                 const obj13 = { attachment: media, shouldObscureSpoiler: true, enabledContentHarmTypeFlags: enabledHarmTypesBitmaskForMessage, shouldAgeVerify: shouldAgeVerifyForExplicitMedia };
-                const attachmentObscurityProps = tmp2(7574).getAttachmentObscurityProps(obj13);
-                const tmp2Result6 = tmp2(7574);
-                const attachmentUrl = tmp2(7705).getAttachmentUrl(media);
-                const tmp2Result7 = tmp2(7705);
+                const attachmentObscurityProps = tmp2(7582).getAttachmentObscurityProps(obj13);
+                const tmp2Result6 = tmp2(7582);
+                const attachmentUrl = tmp2(7713).getAttachmentUrl(media);
+                const tmp2Result7 = tmp2(7713);
                 const obj14 = { src: attachmentUrl, sourceWidth: width, sourceHeight: height, targetWidth: 2 * size, targetHeight: 2 * size, animated: false, format: null };
                 let str3;
-                if (type === tmp2(9579).PreviewableMediaTypes.VIDEO) {
+                if (type === tmp2(9590).PreviewableMediaTypes.VIDEO) {
                   str3 = "png";
                 }
                 obj14.format = str3;
@@ -181,14 +181,14 @@ function SinglePreviewableMedia(arg0) {
                 obj15.style = items3;
                 const obj16 = { isObscured: null, isSpoiler: null, children: null };
                 ({ obscure: obj17.isObscured, isSpoiler: obj17.isSpoiler } = attachmentObscurityProps);
-                const srcWithWidthAndHeight = tmp2(1477).getSrcWithWidthAndHeight(obj14);
+                const srcWithWidthAndHeight = tmp2(1478).getSrcWithWidthAndHeight(obj14);
                 const obj18 = { source: null, style: null, resizeMode: "cover" };
                 const obj19 = { uri: srcWithWidthAndHeight };
                 obj18.source = obj19;
                 obj18.style = tmp.mediaThumbnail;
                 const items4 = [React6(FastImageDefault, obj18), ];
                 let tmp24Result = null;
-                if (type === tmp2(9579).PreviewableMediaTypes.VIDEO) {
+                if (type === tmp2(9590).PreviewableMediaTypes.VIDEO) {
                   tmp24Result = tmp24(VideoBadge, {});
                 }
                 items4[1] = tmp24Result;
@@ -247,18 +247,18 @@ get_ActivityIndicator = fn(17);
 const View = get_ActivityIndicator.View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-let createStyles = fn(4829);
+let createStyles = fn(4836);
 let obj2 = { badge: null, icon: null };
 let size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.xs, width: 16, height: 16, position: "absolute", bottom: 4, left: 4 };
 obj2.badge = size;
 obj2.icon = { width: 10, height: 10 };
 let closure_11 = createStyles.createStyles(obj2);
-createStyles = fn(4829);
+createStyles = fn(4836);
 let obj3 = { badge: null };
 let size1 = { width: 20, height: 20, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", position: "absolute", right: -5, top: -5 };
 obj3.badge = size1;
 let closure_12 = createStyles.createStyles(obj3);
-createStyles = fn(4829);
+createStyles = fn(4836);
 let obj5 = { mediaThumbnailContainer: { borderRadius: nativeDefault.radii.sm, overflow: "hidden" }, mediaThumbnail: { width: "100%", height: "100%" }, iconContainer: null, obscureBackground: null, spoilerIconContainer: null, spoilerPill: null };
 let obj6 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj5.iconContainer = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.sm };
@@ -274,11 +274,11 @@ obj5.spoilerIconContainer = obj10;
 let obj8 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.sm };
 obj5.spoilerPill = { padding: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
 let closure_13 = createStyles.createStyles(obj5);
-createStyles = fn(4829);
+createStyles = fn(4836);
 let closure_14 = createStyles.createStyles({ container: { overflow: "visible" } });
-createStyles = fn(4829);
+createStyles = fn(4836);
 let obj11 = { padding: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, justifyContent: "center", alignItems: "center" };
-let closure_15 = createStyles.createStyles({ rightAccessoryContainer: { marginLeft: fn(9544).RIGHT_ACCESSORY_LEFT_MARGIN } });
+let closure_15 = createStyles.createStyles({ rightAccessoryContainer: { marginLeft: fn(9555).RIGHT_ACCESSORY_LEFT_MARGIN } });
 size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/MediaPreviewRightAccessory.tsx");
 

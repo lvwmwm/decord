@@ -1,9 +1,7 @@
 // Module ID: 9332
 // Function ID: 9333
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 9332
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "bc9640d059e4504fae6e197e103e15f0", name: "whatsapp", type: "png" });
+export default "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";

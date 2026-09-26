@@ -1,13 +1,13 @@
-// Module ID: 8709
-// Function ID: 8710
+// Module ID: 8717
+// Function ID: 8718
 // Name: ApplicationCommandChoiceUtils
-// Dependencies: [7193, 5298, 2]
+// Dependencies: [7198, 5305, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, findChoiceNumberValue, findChoiceStringValue, toChoiceBooleanValue
 
-// Module 8709 (ApplicationCommandChoiceUtils)
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7193 */;
+// Module 8717 (ApplicationCommandChoiceUtils)
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7198 */;
 
-const ApplicationCommandConstants = fn(5298);
+const ApplicationCommandConstants = fn(5305);
 ({ FALSE_OPTION_NAME: closure_1, TRUE_OPTION_NAME: c2 } = ApplicationCommandConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandChoiceUtils.tsx");

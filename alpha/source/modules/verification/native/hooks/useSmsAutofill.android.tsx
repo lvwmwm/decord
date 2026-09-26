@@ -1,10 +1,10 @@
-// Module ID: 6495
-// Function ID: 6496
+// Module ID: 6500
+// Function ID: 6501
 // Name: useSmsAutofill
 // Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 6495 (useSmsAutofill)
+// Module 6500 (useSmsAutofill)
 import noop from "module_19" /* 19 */;
 
 get_ActivityIndicator = fn(17);

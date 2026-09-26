@@ -1,14 +1,14 @@
-// Module ID: 14083
-// Function ID: 14084
+// Module ID: 14108
+// Function ID: 14109
 // Name: CollectiblesMarketingManager
-// Dependencies: [4828, 1982, 573, 6956, 7005, 2]
+// Dependencies: [4835, 1983, 573, 6961, 7010, 2]
 
-// Module 14083 (CollectiblesMarketingManager)
+// Module 14108 (CollectiblesMarketingManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6956 */;
-import CollectiblesMarketingReleaseType2 from "CollectiblesMarketingReleaseType" /* 7005 */;
-import DevSettingsStore from "DevSettingsStore" /* 4828 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
+import CollectiblesMarketingReleaseType2 from "CollectiblesMarketingReleaseType" /* 7010 */;
+import DevSettingsStore from "DevSettingsStore" /* 4835 */;
+import LifecycleManager from "LifecycleManager" /* 1983 */;
 
 require = fn;
 class CollectiblesMarketingManager extends tmp2 {

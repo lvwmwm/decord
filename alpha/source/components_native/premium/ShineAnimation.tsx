@@ -1,12 +1,12 @@
-// Module ID: 10184
-// Function ID: 10185
+// Module ID: 10196
+// Function ID: 10197
 // Name: ShineAnimation
-// Dependencies: [19, 17, 21, 4829, 576, 4563, 4830, 672, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4566, 4837, 672, 2]
 
-// Module 10184 (ShineAnimation)
+// Module 10196 (ShineAnimation)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import timing from "timing" /* 4830 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const ShineAnimationConfig = Object.freeze({ FLASH_TIME_PERCENT: 0.72, FLASH_DURATION_PERCENT: 0.08 });
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { container: { overflow: "hidden" }, shineContainer: null, shine: null, shineInner: null };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.shineContainer = {};

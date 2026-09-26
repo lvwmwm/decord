@@ -1,12 +1,12 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17375
+// Function ID: 17376
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 10371, 10374, 1115, 17346, 2]
+// Dependencies: [19, 21, 10382, 10385, 1115, 17376, 2]
 // Exports: default
 
-// Module 17345 (GuildSettingsStickerCreateModal)
+// Module 17375 (GuildSettingsStickerCreateModal)
 import util from "util" /* 1115 */;
-import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 17346 */;
+import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 17376 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,8 +18,8 @@ export default function GuildSettingsStickerCreateModal(arg0) {
   ({ guildId: require, stickerId } = arg0);
   dependencyMap = undefined;
   c3 = undefined;
-  ({ onGoBack: c2, ref: c3 } = stickerId(10371)());
-  const tmp2 = stickerId(10371)();
+  ({ onGoBack: c2, ref: c3 } = stickerId(10382)());
+  const tmp2 = stickerId(10382)();
   const tmp3 = c3;
   const intl = util.intl;
   if (null != stickerId) {
@@ -27,7 +27,7 @@ export default function GuildSettingsStickerCreateModal(arg0) {
   } else {
     tdhW5b = tmp5(1115).t["3DzNjU"];
   }
-  const tmp4 = stickerId(10374);
+  const tmp4 = stickerId(10385);
   return tmp3(tmp4, {
     screenKey: "guild-settings-sticker-create",
     title: intl.string(tdhW5b),

@@ -1,10 +1,10 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14601
+// Function ID: 14602
 // Name: usePopularOrbShopProducts
-// Dependencies: [5, 32, 19, 1076, 1091, 1079, 14577, 14578, 1080, 8331, 14579, 2]
+// Dependencies: [5, 32, 19, 1076, 1091, 1079, 14602, 14603, 1080, 8339, 14604, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 14576 (usePopularOrbShopProducts)
+// Module 14601 (usePopularOrbShopProducts)
 import DurationsDefault from "Durations" /* 1091 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -74,11 +74,11 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
                 closure_1 = tmp8;
                 closure_129_0 = undefined;
                 let v0 = 2;
-                const obj4 = { item_types: [], colors: [], themes: [], orbs_eligible: true, currency: _true(14578).CollectibleSearchCurrencyFilter.ORBS, offset: 0, limit: 10, sort_type, sort_direction: _true(1080).CollectibleSearchSortDirection.DESC };
+                const obj4 = { item_types: [], colors: [], themes: [], orbs_eligible: true, currency: _true(14603).CollectibleSearchCurrencyFilter.ORBS, offset: 0, limit: 10, sort_type, sort_direction: _true(1080).CollectibleSearchSortDirection.DESC };
                 const obj6 = { timeout };
                 c5 = 3;
                 sort_type = 1;
-                const obj7 = { value: _true(14577).search(obj4, obj6), done: false };
+                const obj7 = { value: _true(14602).search(obj4, obj6), done: false };
                 return obj7;
               }
             } else if (1 === tmp8) {

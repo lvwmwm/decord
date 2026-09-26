@@ -1,18 +1,18 @@
-// Module ID: 14145
-// Function ID: 14146
+// Module ID: 14170
+// Function ID: 14171
 // Name: EditIcon
-// Dependencies: [19, 17, 21, 4829, 576, 9702, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 9713, 2]
 // Exports: default
 
-// Module 14145 (EditIcon)
+// Module 14170 (EditIcon)
 import nativeDefault from "native" /* 576 */;
-import PencilIcon from "PencilIcon" /* 9702 */;
+import PencilIcon from "PencilIcon" /* 9713 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 const obj2 = { editIcon: { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, xs: null, sm: null };
 let size = { width: 24, height: 24, borderRadius: nativeDefault.radii.md };
 obj2.xs = size;

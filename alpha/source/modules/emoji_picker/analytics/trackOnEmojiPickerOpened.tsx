@@ -1,18 +1,18 @@
-// Module ID: 9732
-// Function ID: 9733
+// Module ID: 9743
+// Function ID: 9744
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 5766, 2044, 2098, 1074, 1375, 1218, 9733, 9734, 5009, 4484, 2]
+// Dependencies: [19, 5771, 2045, 2099, 1074, 1375, 1218, 9744, 9745, 5016, 4487, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 9732 (trackOnEmojiPickerOpened)
-import EmojiUtilsDefault from "EmojiUtils" /* 4484 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
-import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9733 */;
-import useEmojiHotrail from "useEmojiHotrail" /* 9734 */;
+// Module 9743 (trackOnEmojiPickerOpened)
+import EmojiUtilsDefault from "EmojiUtils" /* 4487 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
+import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9744 */;
+import useEmojiHotrail from "useEmojiHotrail" /* 9745 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5766 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import EmojiStore from "EmojiStore" /* 5771 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
 function trackOnEmojiPickerOpened(current) {

@@ -1,14 +1,14 @@
-// Module ID: 15761
-// Function ID: 15762
+// Module ID: 15789
+// Function ID: 15790
 // Name: LurkerServerPreviewJoinButton
-// Dependencies: [5, 32, 19, 2044, 4467, 1074, 21, 9274, 1186, 5827, 5274, 1115, 2]
+// Dependencies: [5, 32, 19, 2045, 4470, 1074, 21, 9285, 1186, 5832, 5281, 1115, 2]
 
-// Module 15761 (LurkerServerPreviewJoinButton)
+// Module 15789 (LurkerServerPreviewJoinButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import LurkingStore from "LurkingStore" /* 4467 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import LurkingStore from "LurkingStore" /* 4470 */;
 
 const require = fn;
 const JoinGuildSources = fn(1074).JoinGuildSources;

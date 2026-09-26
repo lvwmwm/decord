@@ -1,15 +1,15 @@
-// Module ID: 15250
-// Function ID: 15251
+// Module ID: 15278
+// Function ID: 15279
 // Name: CheckpointHeaderButton
-// Dependencies: [17, 5054, 21, 4829, 576, 2]
+// Dependencies: [17, 5061, 21, 4836, 576, 2]
 // Exports: default
 
-// Module 15250 (CheckpointHeaderButton)
+// Module 15278 (CheckpointHeaderButton)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5054 */;
-import createStyles from "createStyles" /* 4829 */;
+import CheckpointConstants from "CheckpointConstants" /* 5061 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const Pressable = _mod17.Pressable;

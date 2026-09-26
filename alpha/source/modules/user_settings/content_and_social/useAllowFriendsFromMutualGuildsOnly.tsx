@@ -1,11 +1,11 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15497
+// Function ID: 15498
 // Name: useAllowFriendsFromMutualGuildsOnly
-// Dependencies: [19, 2020, 6411, 2]
+// Dependencies: [19, 2021, 6416, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 15468 (useAllowFriendsFromMutualGuildsOnly)
-import UserSettingsUtils from "UserSettingsUtils" /* 6411 */;
+// Module 15497 (useAllowFriendsFromMutualGuildsOnly)
+import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -13,7 +13,7 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/useAllowFriendsFromMutualGuildsOnly.tsx");
 
 export const useAllowFriendsFromMutualGuildsOnly = function useAllowFriendsFromMutualGuildsOnly() {
-  const FriendSourceFlagsSetting = setting(2020).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(2021).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = noop.useMemo(() => UserSettingsUtils.computeFlags(setting), items);

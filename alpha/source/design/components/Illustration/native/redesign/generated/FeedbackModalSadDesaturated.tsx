@@ -1,12 +1,12 @@
-// Module ID: 11113
-// Function ID: 11114
+// Module ID: 11127
+// Function ID: 11128
 // Name: FeedbackModalSadDesaturated
-// Dependencies: [19, 17, 21, 7671, 11114, 11115, 11116, 4682, 2]
+// Dependencies: [19, 17, 21, 7679, 11128, 11129, 11130, 4685, 2]
 // Exports: FeedbackModalSadDesaturated, getFeedbackModalSadDesaturatedSource, useFeedbackModalSadDesaturatedSource
 
-// Module 11113 (FeedbackModalSadDesaturated)
-import shared from "shared" /* 4682 */;
-import _mod7671 from "module_7671" /* 7671 */;
+// Module 11127 (FeedbackModalSadDesaturated)
+import shared from "shared" /* 4685 */;
+import _mod7679 from "module_7679" /* 7679 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/FeedbackModalSadDesaturated.tsx");
 
 export const getFeedbackModalSadDesaturatedSource = function getFeedbackModalSadDesaturatedSource(theme) {
-  return _mod7671.getIllustrationSource(theme, {
+  return _mod7679.getIllustrationSource(theme, {
     dark() {
-      return require("module_11114");
+      return require("module_11128");
     },
     darker() {
-      return require("module_11115");
+      return require("module_11129");
     },
     light() {
-      return require("module_11116");
+      return require("module_11130");
     }
   });
 };
 export const useFeedbackModalSadDesaturatedSource = function useFeedbackModalSadDesaturatedSource() {
   const obj = shared;
-  return _mod7671.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_11114");
+      return require("module_11128");
     },
     darker() {
-      return require("module_11115");
+      return require("module_11129");
     },
     light() {
-      return require("module_11116");
+      return require("module_11130");
     }
   });
 };
 export const FeedbackModalSadDesaturated = function FeedbackModalSadDesaturated(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod7671.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_11114");
+      return require("module_11128");
     },
     darker() {
-      return require("module_11115");
+      return require("module_11129");
     },
     light() {
-      return require("module_11116");
+      return require("module_11130");
     }
   });
   const merged = Object.assign(arg0);

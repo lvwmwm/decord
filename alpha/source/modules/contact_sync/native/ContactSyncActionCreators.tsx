@@ -1,11 +1,11 @@
-// Module ID: 12163
-// Function ID: 12164
+// Module ID: 12181
+// Function ID: 12182
 // Name: ContactSyncActionCreators
-// Dependencies: [5, 5588, 1074, 2020, 1385, 1241, 12159, 5713, 2]
+// Dependencies: [5, 5593, 1074, 2021, 1385, 1241, 12177, 5718, 2]
 
-// Module 12163 (ContactSyncActionCreators)
+// Module 12181 (ContactSyncActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5588 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
 
 const require = globalThis.__r;
 
@@ -44,7 +44,7 @@ let closure_8 = async function _updateDiscoverability(arg0, value) {
           closure_131_0 = phone;
           const email = closure_0.email;
           closure_131_1 = email;
-          const FriendDiscoverySettings2 = React(2020).FriendDiscoverySettings;
+          const FriendDiscoverySettings2 = React(2021).FriendDiscoverySettings;
           const setting = FriendDiscoverySettings2.getSetting();
           closure_131_2 = setting;
           localAccount = localAccount.getLocalAccount(constants2.CONTACTS);
@@ -63,7 +63,7 @@ let closure_8 = async function _updateDiscoverability(arg0, value) {
             setFlagResult1 = React(1385).setFlag(setFlagResult, constants.FIND_BY_EMAIL, email);
             const obj6 = React(1385);
           }
-          const FriendDiscoverySettings = React(2020).FriendDiscoverySettings;
+          const FriendDiscoverySettings = React(2021).FriendDiscoverySettings;
           c5 = 1;
           c6 = 1;
           const obj8 = { value: FriendDiscoverySettings.updateSetting(setFlagResult1), done: false };

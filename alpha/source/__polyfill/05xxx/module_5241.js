@@ -1,13 +1,13 @@
 // Module ID: 5241
 // Function ID: 5242
-// Dependencies: [19, 21]
+// Dependencies: [17, 65]
 
 // Module 5241
-import noop from "module_19" /* 19 */;
+import _mod17 from "module_17" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
-const jsxProd = fn(21);
-({ Fragment: closure_0, jsx: closure_1 } = jsxProd);
-const context = noop.createContext((children) => framebus(React, { children: children.children }));
+const codegenNativeComponent = _mod17.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenStackHeaderSubview", validAttributes: { type: true, hidesSharedBackground: true, synchronousShadowStateUpdatesEnabled: true } };
 
-export const GHContext = context;
-export const RNSScreensRefContext = noop.createContext(null);
+export default module_65.get("RNSScreenStackHeaderSubview", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

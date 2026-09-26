@@ -1,11 +1,11 @@
-// Module ID: 11553
-// Function ID: 11554
+// Module ID: 11567
+// Function ID: 11568
 // Name: BrokenImage
-// Dependencies: [19, 21, 7901, 2]
+// Dependencies: [19, 21, 7909, 2]
 // Exports: default
 
-// Module 11553 (BrokenImage)
-import inlineStyles from "inlineStyles" /* 7901 */;
+// Module 11567 (BrokenImage)
+import inlineStyles from "inlineStyles" /* 7909 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

@@ -1,21 +1,21 @@
-// Module ID: 15402
-// Function ID: 15403
+// Module ID: 15431
+// Function ID: 15432
 // Name: CollectiblesShopFeaturedPage
-// Dependencies: [19, 17, 1076, 21, 4829, 1177, 7670, 1115, 15403, 2]
+// Dependencies: [19, 17, 1076, 21, 4836, 1177, 7678, 1115, 15432, 2]
 // Exports: default
 
-// Module 15402 (CollectiblesShopFeaturedPage)
+// Module 15431 (CollectiblesShopFeaturedPage)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import generated_NoResults from "generated/NoResults" /* 7670 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 15403 */;
+import generated_NoResults from "generated/NoResults" /* 7678 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 15432 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const constants = fn(1076).CollectiblesMobileShopScreen;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopFeaturedPage.tsx");

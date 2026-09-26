@@ -1,29 +1,29 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 10777
+// Function ID: 10778
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2111, 2107, 2066, 6624, 1074, 1483, 21, 4829, 4528, 576, 4825, 1115, 10765, 504, 5714, 11, 10266, 5891, 10766, 1177, 7810, 6578, 7628, 10767, 4796, 4689, 1101, 6454, 4697, 1610, 7617, 10768, 5274, 6623, 2]
+// Dependencies: [19, 17, 2112, 2108, 2067, 6629, 1074, 1484, 21, 4836, 4531, 576, 4832, 1115, 10778, 504, 5719, 11, 10278, 5896, 10779, 1177, 7818, 6583, 7635, 10780, 4800, 4693, 1101, 6459, 4701, 1611, 7624, 10781, 5281, 6628, 2]
 // Exports: default
 
-// Module 10764 (UserProfileAboutMeCard)
+// Module 10777 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import useToken from "useToken" /* 4528 */;
-import ChatInputUtils from "ChatInputUtils" /* 4697 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6623 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7810 */;
-import BioTextDefault from "BioText" /* 10765 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 10766 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10768 */;
+import KeyboardTypes from "KeyboardTypes" /* 1611 */;
+import useToken from "useToken" /* 4531 */;
+import ChatInputUtils from "ChatInputUtils" /* 4701 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import UserProfileCardDefault from "UserProfileCard" /* 6628 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7818 */;
+import BioTextDefault from "BioText" /* 10778 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 10779 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10781 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2111 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
-const GuildIconDefault = tmp9(5891);
+const GuildIconDefault = tmp9(5896);
 require = fn;
 function Heading(children) {
   const themeType = children.themeType;
@@ -122,13 +122,13 @@ function MemberJoinDates(userId) {
     return member;
   });
   const obj3 = userId(504);
-  const obj4 = userId(5714);
+  const obj4 = userId(5719);
   const createdAtDate = obj4.getCreatedAtDate(SnowflakeUtilsDefault.extractTimestamp(userId), stateFromStores);
   let joinedAt;
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
-  const createdAtDate1 = userId(5714).getCreatedAtDate(joinedAt, stateFromStores);
+  const createdAtDate1 = userId(5719).getCreatedAtDate(joinedAt, stateFromStores);
   const obj7 = { themeType, children: null };
   const intl = tmp4(1115).intl;
   obj7.children = intl.string(userId(1115).t.a6XYD9);
@@ -136,7 +136,7 @@ function MemberJoinDates(userId) {
   const obj8 = { style: null, children: null };
   const items4 = [tmp.memberJoinDates, { columnGap }];
   obj8.style = items4;
-  const obj9 = { themeType, icon: closure_11(userId(10266).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  const obj9 = { themeType, icon: closure_11(userId(10278).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
   const intl2 = tmp4(1115).intl;
   obj9.accessibilityLabel = intl2.formatToPlainString(userId(1115).t["9t7w53"], { date: createdAtDate });
   obj9.children = createdAtDate;
@@ -145,9 +145,9 @@ function MemberJoinDates(userId) {
   if (tmp13Result) {
     const obj10 = { children: null };
     const obj11 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    const items6 = [tmp15(tmp4(4825).Text, obj11), ];
+    const items6 = [tmp15(tmp4(4832).Text, obj11), ];
     const obj12 = { themeType, icon: null, accessibilityLabel: null, children: null };
-    const obj13 = { guild: stateFromStores1, size: tmp4(5891).GuildIconSizes.XXSMALL };
+    const obj13 = { guild: stateFromStores1, size: tmp4(5896).GuildIconSizes.XXSMALL };
     obj12.icon = tmp15(GuildIconDefault, obj13);
     const intl3 = tmp4(1115).intl;
     const obj14 = { guildName: stateFromStores1.name, date: createdAtDate1 };
@@ -183,7 +183,7 @@ function FriendsSinceDate(themeType) {
     obj3.children = intl.string(tmp3(1115).t.wlTO8v);
     const items = [closure_1_11(Heading, obj3), ];
     const obj4 = { variant: tmp.textVariant, color: "text-default", children: friendsSinceDate };
-    items[1] = closure_1_11(tmp3(4825).Text, obj4);
+    items[1] = closure_1_11(tmp3(4832).Text, obj4);
     obj2.children = items;
     tmp6 = closure_1_12(View, obj2);
   }
@@ -285,15 +285,15 @@ function BotSlashCommands(channel) {
   return tmp8Result;
 }
 const View = fn(17).View;
-const Constants = fn(6624);
+const Constants = fn(6629);
 ({ DIVIDER_DOT: closure_8, UserProfileThemeTypes } = Constants);
 const Routes = fn(1074).Routes;
-const AppLauncherRouteName = fn(1483).AppLauncherRouteName;
+const AppLauncherRouteName = fn(1484).AppLauncherRouteName;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 let closure_14 = { headingVariant: "text-sm/semibold", textVariant: "text-md/normal", headingSpacing: 8, rowGap: 24, columnGap: 6 };
 const dependencyMap = { [UserProfileThemeTypes.PREVIEW]: { headingVariant: "text-xs/semibold", textVariant: "text-sm/normal", headingSpacing: 4, rowGap: 12, columnGap: 3 } };
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_16 = createStyles.createStyles({ card: { flexDirection: "column" }, textWithIcon: { flexDirection: "row", alignItems: "center" }, memberJoinDates: { flexDirection: "row", flexWrap: "wrap" }, slashCommands: { flex: 1, flexDirection: "row", flexWrap: "wrap", marginBottom: 12 }, policyLinks: { rowGap: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 14178
-// Function ID: 14179
+// Module ID: 14203
+// Function ID: 14204
 // Name: MobileNitroPreviewDirectCheckoutExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useMobileNitroPreviewDirectCheckoutEnabled
 
-// Module 14178 (MobileNitroPreviewDirectCheckoutExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14203 (MobileNitroPreviewDirectCheckoutExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-09-mobile-nitro-preview-direct-checkout", kind: "user", defaultConfig: false, variations: { 0: false, 1: true } });

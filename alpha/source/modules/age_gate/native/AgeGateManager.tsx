@@ -1,16 +1,16 @@
-// Module ID: 17052
-// Function ID: 17053
+// Module ID: 17080
+// Function ID: 17081
 // Name: AgeGateManager
-// Dependencies: [5, 2044, 2098, 4652, 1099, 1074, 6534, 5039, 5032, 17053, 1980, 1094, 2]
+// Dependencies: [5, 2045, 2099, 4655, 1099, 1074, 6539, 5046, 5039, 17081, 1981, 1094, 2]
 
-// Module 17052 (AgeGateManager)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import AgeGateUtils from "AgeGateUtils" /* 5039 */;
+// Module 17080 (AgeGateManager)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import AgeGateUtils from "AgeGateUtils" /* 5046 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 const AgeGateConstants = fn(1099);

@@ -1,14 +1,14 @@
-// Module ID: 14050
-// Function ID: 14051
+// Module ID: 14075
+// Function ID: 14076
 // Name: toggleVoiceChannelChat
-// Dependencies: [2044, 4852, 4845, 5030, 2]
+// Dependencies: [2045, 4859, 4852, 5037, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 14050 (toggleVoiceChannelChat)
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5030 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
+// Module 14075 (toggleVoiceChannelChat)
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/toggleVoiceChannelChat.tsx");

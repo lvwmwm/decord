@@ -1,14 +1,14 @@
-// Module ID: 2059
-// Function ID: 2060
+// Module ID: 2060
+// Function ID: 2061
 // Name: PlainRecord
-// Dependencies: [2060, 38, 2061, 558, 2]
+// Dependencies: [2061, 38, 2062, 558, 2]
 // Exports: constructInPlace, copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord
 
-// Module 2059 (PlainRecord)
+// Module 2060 (PlainRecord)
 import _modDef38 from "module_38" /* 38 */;
 import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
-import SetUtils from "SetUtils" /* 2061 */;
-import PlainRecord from "js_shim/PlainRecord" /* 2060 */;
+import SetUtils from "SetUtils" /* 2062 */;
+import PlainRecord from "js_shim/PlainRecord" /* 2061 */;
 
 const discord_common_shallowEqualDefault = discord_common_shallowEqual;
 
@@ -70,7 +70,7 @@ function isPlainRecordDataEqual(arg0, arg1) {
     return true;
   }
 }
-const TypeTag = fn(2060).TypeTag;
+const TypeTag = fn(2061).TypeTag;
 const size = fn(2);
 const result = size.fileFinishedImporting("lib/PlainRecord.tsx");
 

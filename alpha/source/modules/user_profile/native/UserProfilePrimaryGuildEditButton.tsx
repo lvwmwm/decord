@@ -1,20 +1,20 @@
-// Module ID: 14173
-// Function ID: 14174
+// Module ID: 14198
+// Function ID: 14199
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2066, 7381, 21, 4829, 576, 504, 14174, 7603, 7602, 1115, 1364, 4825, 14151, 4796, 14175, 1980, 5891, 9194, 2]
+// Dependencies: [19, 2067, 7386, 21, 4836, 576, 504, 14199, 7610, 7609, 1115, 1364, 4832, 14176, 4800, 14200, 1981, 5896, 9205, 2]
 // Exports: default
 
-// Module 14173 (UserProfilePrimaryGuildEditButton)
+// Module 14198 (UserProfilePrimaryGuildEditButton)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
-const GuildTagBadgeSize = fn(7381).GuildTagBadgeSize;
+const GuildTagBadgeSize = fn(7386).GuildTagBadgeSize;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { tag: { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: nativeDefault.radii.sm } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -115,7 +115,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     const obj5 = { text: combined };
     obj4.accessibilityValue = obj5;
     obj4.onPress = function onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14175, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14200, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild });
     };
     let tmp23Result = null;
     if (null != stateFromStores) {

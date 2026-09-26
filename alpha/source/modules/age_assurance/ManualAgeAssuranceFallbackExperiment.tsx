@@ -1,14 +1,14 @@
-// Module ID: 7879
-// Function ID: 7880
+// Module ID: 7887
+// Function ID: 7888
 // Name: ManualAgeAssuranceFallbackExperiment
-// Dependencies: [7873, 1434, 7859, 2]
+// Dependencies: [7881, 1435, 7867, 2]
 // Exports: isManualAgeAssuranceFallbackEnabled
 
-// Module 7879 (ManualAgeAssuranceFallbackExperiment)
-import SafetyHubStore from "SafetyHubStore" /* 7873 */;
+// Module 7887 (ManualAgeAssuranceFallbackExperiment)
+import SafetyHubStore from "SafetyHubStore" /* 7881 */;
 
 const require = fn;
-const ApexExperiment = fn(1434);
+const ApexExperiment = fn(1435);
 let obj2 = { kind: "user", name: "2026-07-manual-age-assurance-fallback", defaultConfig: { enabled: false }, variations: null };
 const obj3 = { 1: null };
 obj3[1] = { enabled: true };

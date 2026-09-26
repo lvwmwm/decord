@@ -1,22 +1,22 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10824
+// Function ID: 10825
 // Name: reactions/ReactionUtils
-// Dependencies: [2044, 5049, 4652, 1372, 1074, 1375, 21, 4478, 4797, 4798, 7178, 4485, 4796, 10587, 1980, 4697, 10572, 7177, 5009, 10812, 10824, 10825, 10826, 8211, 8668, 5196, 1115, 4825, 2]
+// Dependencies: [2045, 5056, 4655, 1372, 1074, 1375, 21, 4481, 4801, 4802, 7183, 4488, 4800, 10598, 1981, 4701, 10583, 7182, 5016, 10825, 10837, 10838, 10839, 8219, 8676, 5203, 1115, 4832, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 10811 (reactions/ReactionUtils)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ReactionUtils from "ReactionUtils" /* 4478 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4798 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5196 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7178 */;
-import _modDef10825 from "module_10825" /* 10825 */;
-import _modDef10826 from "module_10826" /* 10826 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import MessageStore from "MessageStore" /* 5049 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
+// Module 10824 (reactions/ReactionUtils)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ReactionUtils from "ReactionUtils" /* 4481 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7183 */;
+import _modDef10838 from "module_10838" /* 10838 */;
+import _modDef10839 from "module_10839" /* 10839 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MessageStore from "MessageStore" /* 5056 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -27,11 +27,11 @@ const Constants = fn(1074);
 const EmojiIntention = fn(1375).EmojiIntention;
 const jsx = fn(21).jsx;
 let obj = {};
-obj[fn(7177).ReactionTypes.NORMAL] = _modDef10825;
-obj[fn(7177).ReactionTypes.BURST] = _modDef10826;
+obj[fn(7182).ReactionTypes.NORMAL] = _modDef10838;
+obj[fn(7182).ReactionTypes.BURST] = _modDef10839;
 let obj2 = {};
-obj2[fn(7177).ReactionTypes.NORMAL] = fn(8211).ReactionIcon;
-obj2[fn(7177).ReactionTypes.BURST] = fn(8668).SuperReactionIcon;
+obj2[fn(7182).ReactionTypes.NORMAL] = fn(8219).ReactionIcon;
+obj2[fn(7182).ReactionTypes.BURST] = fn(8676).SuperReactionIcon;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/reactions/native/ReactionUtils.tsx");
 
@@ -41,7 +41,7 @@ export const handleOutOfSuperReactions = function handleOutOfSuperReactions(onDi
     let openLazyResult;
     if (!obj.isPremium(currentUser)) {
       const obj3 = { onDismiss };
-      openLazyResult = ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10587, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj3);
+      openLazyResult = ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10598, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj3);
     }
     return openLazyResult;
   }
@@ -67,7 +67,7 @@ export const handleAddNewReactions = function handleAddNewReactions(channel, id,
       const currentUser1 = UserStore.getCurrentUser();
       if (null != currentUser1) {
         if (!tmp13Result.isPremium(currentUser1)) {
-          require("ActionSheetActionCreators").openLazy(tmp13(ReactionTypes[14])(ReactionTypes[13], ReactionTypes.paths), "SuperReactionUpsellActionSheet", { onDismiss: "r" });
+          require("ActionSheetActionCreators").openLazy(tmp13(ReactionTypes[14])(ReactionTypes[13], ReactionTypes.paths), "SuperReactionUpsellActionSheet", { onDismiss: "__initData" });
           const obj3 = require("ActionSheetActionCreators");
         }
         tmp13Result = tmp13(ReactionTypes[11]);
@@ -86,8 +86,8 @@ export const handleAddNewReactions = function handleAddNewReactions(channel, id,
           if (null != byName) {
             const toReactionEmojiResult = ReactionUtils.toReactionEmoji(byName);
             if (!obj.burst) {
-              const result = tmp3(4797).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-              const tmp3Result = tmp3(4797);
+              const result = tmp3(4801).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+              const tmp3Result = tmp3(4801);
             }
             const tmp3Result2 = ReactionActionCreators;
             tmp3Result2.addReaction(id, tmp, toReactionEmojiResult, tmp2, obj);
@@ -150,12 +150,12 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     const obj4 = { messageId, channelId, emoji: isPoll.emoji };
     const obj6 = ActionSheetActionCreatorsDefault;
     const merged2 = Object.assign(merged);
-    obj6.openLazy(asyncRequireImpl(10812, dependencyMap.paths), "MessageReactions", obj4);
+    obj6.openLazy(asyncRequireImpl(10825, dependencyMap.paths), "MessageReactions", obj4);
   }
   FORUM_CHANNEL_POST = constants2.FORUM_CHANNEL_POST;
 };
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10824, dependencyMap.paths), "MessagePreviewReactions", { messageId: id2, channelId: id, emoji });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10837, dependencyMap.paths), "MessagePreviewReactions", { messageId: id2, channelId: id, emoji });
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj2;

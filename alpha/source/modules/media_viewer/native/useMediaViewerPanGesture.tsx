@@ -1,15 +1,15 @@
-// Module ID: 12520
-// Function ID: 12521
+// Module ID: 12537
+// Function ID: 12538
 // Name: useMediaViewerPanGesture
-// Dependencies: [19, 4563, 7702, 7701, 5273, 6378, 6068, 2]
+// Dependencies: [19, 4566, 7710, 7709, 5280, 6383, 6073, 2]
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 12520 (useMediaViewerPanGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import spring from "spring" /* 5273 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6068 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7701 */;
-import useVideoControls from "useVideoControls" /* 7702 */;
+// Module 12537 (useMediaViewerPanGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import spring from "spring" /* 5280 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 7709 */;
+import useVideoControls from "useVideoControls" /* 7710 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

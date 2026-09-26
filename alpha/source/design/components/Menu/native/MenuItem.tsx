@@ -1,18 +1,18 @@
-// Module ID: 13657
-// Function ID: 13658
+// Module ID: 13934
+// Function ID: 13935
 // Name: MenuItem
-// Dependencies: [19, 21, 4829, 13655, 5276, 6553, 6555, 2]
+// Dependencies: [19, 21, 4836, 13932, 5283, 6558, 6560, 2]
 
-// Module 13657 (MenuItem)
-import IconDefault from "Icon" /* 5276 */;
-import FormRowDefault from "FormRow" /* 6553 */;
-import FormLabelDefault from "FormLabel" /* 6555 */;
-import Menu from "Menu" /* 13655 */;
+// Module 13934 (MenuItem)
+import IconDefault from "Icon" /* 5283 */;
+import FormRowDefault from "FormRow" /* 6558 */;
+import FormLabelDefault from "FormLabel" /* 6560 */;
+import Menu from "Menu" /* 13932 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");

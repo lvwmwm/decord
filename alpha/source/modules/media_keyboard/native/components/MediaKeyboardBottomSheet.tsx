@@ -1,16 +1,16 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16299
+// Function ID: 16300
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1608, 1074, 21, 1609, 1364, 4829, 576, 1115, 11548, 4537, 4684, 6040, 4564, 4797, 4798, 1241, 5259, 5268, 4563, 5291, 1612, 5256, 4697, 2]
+// Dependencies: [32, 19, 17, 1609, 1074, 21, 1610, 1364, 4836, 576, 1115, 11562, 4540, 4688, 6045, 4567, 4801, 4802, 1241, 5266, 5275, 4566, 5298, 1613, 5263, 4701, 2]
 
-// Module 16271 (MediaKeyboardBottomSheet)
+// Module 16299 (MediaKeyboardBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import ChatInputUtils from "ChatInputUtils" /* 4697 */;
-import HapticUtils from "HapticUtils" /* 4797 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4798 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import ChatInputUtils from "ChatInputUtils" /* 4701 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -25,16 +25,16 @@ function MediaKeyboardBackground(arg0) {
   return React7(View, obj);
 }
 const View = fn(17).View;
-const MediaKeyboardConstants = fn(1608);
+const MediaKeyboardConstants = fn(1609);
 ({ HEADER_HANDLE_HEIGHT: metroRequire, MediaPickerActionSheetEngagedActions: closure_7 } = MediaKeyboardConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const MetaQuestUtils = fn(1609);
+const MetaQuestUtils = fn(1610);
 let closure_11 = MetaQuestUtils.isMetaQuest();
 const PlatformUtils = fn(1364);
 const IS_IOS = PlatformUtils.isIOS();
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { background: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, borderRadius: nativeDefault.modules.mobile.MOBILE_MEDIA_KEYBOARD_TOP_BORDER_RADIUS } };
 let closure_13 = createStyles.createStyles(obj);
 const __initData = { code: "function MediaKeyboardBottomSheetTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get()>=0;}" };

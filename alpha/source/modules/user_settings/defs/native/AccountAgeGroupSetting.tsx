@@ -1,24 +1,24 @@
-// Module ID: 14249
-// Function ID: 14250
+// Module ID: 14274
+// Function ID: 14275
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 7412, 1074, 21, 4829, 576, 14250, 14251, 14258, 2028, 5912, 10993, 1115, 14259, 14219, 14260, 2]
+// Dependencies: [17, 7417, 1074, 21, 4836, 576, 14275, 14276, 14283, 2029, 5917, 11006, 1115, 14284, 14244, 14285, 2]
 
-// Module 14249 (AccountAgeGroupSetting)
+// Module 14274 (AccountAgeGroupSetting)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import TableRow from "TableRow" /* 5912 */;
-import SettingsConstants from "SettingsConstants" /* 7412 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14219 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14250 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 14251 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14258 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import TableRow from "TableRow" /* 5917 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14244 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14275 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 14276 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14283 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4829 */;
-import SettingBuilders from "SettingBuilders" /* 10993 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14259 */;
+import createStyles from "createStyles" /* 4836 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14284 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ let obj3 = {
     const obj3 = { style: tmp.trailing, children: null };
     let tmp8 = shouldShowAgeNotice;
     if (shouldShowAgeNotice) {
-      const obj4 = { dismissibleContent: tmp2(2028).DismissibleContent.TINY_BRONCO_SETTINGS, containerStyle: tmp.badge, noGradient: true };
+      const obj4 = { dismissibleContent: tmp2(2029).DismissibleContent.TINY_BRONCO_SETTINGS, containerStyle: tmp.badge, noGradient: true };
       tmp8 = React4(DismissiblePremiumNewBadgeDefault, obj4);
     }
     const items = [tmp8, React4(TableRow.TableRow.TrailingText, { text: ageGroupValueLabel })];

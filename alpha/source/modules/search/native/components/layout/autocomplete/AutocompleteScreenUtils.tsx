@@ -1,21 +1,21 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 16548
+// Function ID: 16549
 // Name: AutocompleteScreenUtils
-// Dependencies: [2107, 4476, 1372, 11808, 7298, 1074, 1115, 11171, 4771, 8726, 10090, 9560, 9558, 5394, 12006, 9562, 11289, 8730, 16520, 11809, 4675, 2]
+// Dependencies: [2108, 4479, 1372, 11822, 7303, 1074, 1115, 11185, 4775, 8734, 10101, 9571, 9569, 5401, 12024, 9573, 11303, 8738, 16549, 11823, 4678, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 16519 (AutocompleteScreenUtils)
+// Module 16548 (AutocompleteScreenUtils)
 import util from "util" /* 1115 */;
-import UserUtilsDefault from "UserUtils" /* 4675 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 11171 */;
-import SearchUtils from "SearchUtils" /* 11809 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import RelationshipStore from "RelationshipStore" /* 4476 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 11185 */;
+import SearchUtils from "SearchUtils" /* 11823 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
-import SearchQueryStore from "SearchQueryStore" /* 11808 */;
+import SearchQueryStore from "SearchQueryStore" /* 11822 */;
 
 require = fn;
-const SearchListItemTypes = fn(7298).SearchListItemTypes;
+const SearchListItemTypes = fn(7303).SearchListItemTypes;
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/AutocompleteScreenUtils.tsx");
@@ -43,35 +43,35 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   } else {
     const intl3 = tmp(1115).intl;
     if (intl3.string(tmp(1115).t.ZNR2fi) === text) {
-      return tmp(4771).LinkIcon;
+      return tmp(4775).LinkIcon;
     } else {
       const intl4 = tmp(1115).intl;
       if (intl4.string(tmp(1115).t["20uQR3"]) === text) {
-        return tmp(8726).EmbedIcon;
+        return tmp(8734).EmbedIcon;
       } else {
         const intl5 = tmp(1115).intl;
         if (intl5.string(tmp(1115).t.L4lxyE) === text) {
-          return tmp(10090).PollsIcon;
+          return tmp(10101).PollsIcon;
         } else {
           const intl6 = tmp(1115).intl;
           if (intl6.string(tmp(1115).t["AV/v6i"]) === text) {
-            return tmp(9560).AttachmentIcon;
+            return tmp(9571).AttachmentIcon;
           } else {
             const intl7 = tmp(1115).intl;
             if (intl7.string(tmp(1115).t.XM9XGP) === text) {
-              return tmp(9558).VideoIcon;
+              return tmp(9569).VideoIcon;
             } else {
               const intl8 = tmp(1115).intl;
               if (intl8.string(tmp(1115).t.TNLcpx) === text) {
-                return tmp(5394).ImageIcon;
+                return tmp(5401).ImageIcon;
               } else {
                 const intl9 = tmp(1115).intl;
                 if (intl9.string(tmp(1115).t.F8Wf0e) === text) {
-                  return tmp(12006).SoundboardIcon;
+                  return tmp(12024).SoundboardIcon;
                 } else {
                   const intl2 = tmp(1115).intl;
                   if (intl2.string(tmp(1115).t.PJgX2h) === text) {
-                    return tmp(9562).StickerIcon;
+                    return tmp(9573).StickerIcon;
                   }
                 }
               }
@@ -85,15 +85,15 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = util.intl;
   if (intl.string(util.t.tPZo4p) === text) {
-    return tmp(11289).UserIcon;
+    return tmp(11303).UserIcon;
   } else {
     const intl3 = tmp(1115).intl;
     if (intl3.string(tmp(1115).t.JL7sRS) === text) {
-      return tmp(8730).RobotIcon;
+      return tmp(8738).RobotIcon;
     } else {
       const intl2 = tmp(1115).intl;
       if (intl2.string(tmp(1115).t.WjkIKU) === text) {
-        return tmp(16520).WebhookIcon;
+        return tmp(16549).WebhookIcon;
       }
     }
   }

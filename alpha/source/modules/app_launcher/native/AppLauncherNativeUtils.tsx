@@ -1,30 +1,30 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11533
+// Function ID: 11534
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 2044, 1372, 1483, 1074, 5298, 5009, 6938, 11520, 6936, 1978, 7192, 1968, 8582, 1397, 10772, 8887, 11525, 6584, 8757, 4797, 2]
+// Dependencies: [19, 2045, 1372, 1484, 1074, 5305, 5016, 6943, 11534, 6941, 1979, 7197, 1969, 8590, 1397, 10785, 8895, 11539, 6589, 8765, 4801, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11519 (AppLauncherNativeUtils)
+// Module 11533 (AppLauncherNativeUtils)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import _modDef1968 from "module_1968" /* 1968 */;
-import Server from "Server" /* 1978 */;
-import HapticUtils from "HapticUtils" /* 4797 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6936 */;
-import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 7192 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8582 */;
-import FrecencySection from "FrecencySection" /* 11520 */;
+import _modDef1969 from "module_1969" /* 1969 */;
+import Server from "Server" /* 1979 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
+import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 7197 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8590 */;
+import FrecencySection from "FrecencySection" /* 11534 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AppLauncherNativeConstants = fn(1483);
+const AppLauncherNativeConstants = fn(1484);
 ({ APP_LAUNCHER_BUILT_IN_SECTION_ICON: closure_7, AppLauncherRouteName: closure_8 } = AppLauncherNativeConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const BuiltInSectionId = fn(5298).BuiltInSectionId;
+const BuiltInSectionId = fn(5305).BuiltInSectionId;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherNativeUtils.tsx");
 
@@ -37,9 +37,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   entrypoint = entrypoint.entrypoint;
   const obj2 = { location: _location, section: null, application_id: null, section_name: null, query: null, search_results_position: null, source: null };
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    let APP = tmp(6938).ApplicationCommandTriggerSections.BUILT_IN;
+    let APP = tmp(6943).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(6938).ApplicationCommandTriggerSections.APP;
+    APP = tmp(6943).ApplicationCommandTriggerSections.APP;
   }
   obj2.section = APP;
   let id = application.id;
@@ -117,10 +117,10 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
     }
     return items1;
   } else {
-    if (tmp2(1978).ApplicationCommandOptionType.STRING !== type) {
-      if (tmp2(1978).ApplicationCommandOptionType.INTEGER !== type) {
-        if (tmp2(1978).ApplicationCommandOptionType.NUMBER !== type) {
-          if (tmp2(1978).ApplicationCommandOptionType.CHANNEL === type) {
+    if (tmp2(1979).ApplicationCommandOptionType.STRING !== type) {
+      if (tmp2(1979).ApplicationCommandOptionType.INTEGER !== type) {
+        if (tmp2(1979).ApplicationCommandOptionType.NUMBER !== type) {
+          if (tmp2(1979).ApplicationCommandOptionType.CHANNEL === type) {
             if (null != found) {
               const _String5 = String;
               if (null != ChannelStore.getChannel(String(found.value))) {
@@ -133,7 +133,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               return items3;
             }
             items3 = [{ type: "text", text: "" }];
-          } else if (tmp2(1978).ApplicationCommandOptionType.USER === type) {
+          } else if (tmp2(1979).ApplicationCommandOptionType.USER === type) {
             if (null != found) {
               const _String3 = String;
               if (null != UserStore.getUser(String(found.value))) {
@@ -146,7 +146,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               return items5;
             }
             items5 = [{ type: "text", text: "" }];
-          } else if (tmp2(1978).ApplicationCommandOptionType.ROLE === type) {
+          } else if (tmp2(1979).ApplicationCommandOptionType.ROLE === type) {
             if (null != found) {
               if (typeof found.value === "string") {
                 if (found.value in roles) {
@@ -158,7 +158,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
             }
             items7 = [{ type: "text", text: "" }];
-          } else if (tmp2(1978).ApplicationCommandOptionType.MENTIONABLE === type) {
+          } else if (tmp2(1979).ApplicationCommandOptionType.MENTIONABLE === type) {
             if (null != found) {
               if (found.value === option.guildId) {
                 const items8 = [{ type: "textMention", text: "@everyone" }];
@@ -214,7 +214,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
 };
 export const getAppLauncherIconSource = function getAppLauncherIconSource(application) {
   if (null == application) {
-    let applicationIconSource = _modDef1968;
+    let applicationIconSource = _modDef1969;
   } else {
     const obj2 = AvatarUtilsDefault;
     if (isRealApplicationResult) {

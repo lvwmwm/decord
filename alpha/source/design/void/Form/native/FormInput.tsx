@@ -1,23 +1,23 @@
-// Module ID: 8053
-// Function ID: 8054
+// Module ID: 8061
+// Function ID: 8062
 // Name: FormInput
-// Dependencies: [19, 1074, 21, 4829, 576, 1364, 4537, 4682, 5993, 6501, 6019, 1177, 2]
+// Dependencies: [19, 1074, 21, 4836, 576, 1364, 4540, 4685, 5998, 6506, 6024, 1177, 2]
 
-// Module 8053 (FormInput)
+// Module 8061 (FormInput)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import native2 from "native" /* 4537 */;
+import native2 from "native" /* 4540 */;
 import noop from "module_19" /* 19 */;
 
 const native = TextArea(1177);
-const shared = TextArea(4682);
-const RedesignCompat = TextArea(5993);
-const TextInput = TextArea(6019);
-const TextArea2 = TextArea(6501);
+const shared = TextArea(4685);
+const RedesignCompat = TextArea(5998);
+const TextInput = TextArea(6024);
+const TextArea2 = TextArea(6506);
 require = fn;
 const KeyboardThemes = fn(1074).KeyboardThemes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { inputViewContainer: { paddingVertical: 13, paddingHorizontal: 15 }, placeholderText: { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT }, inputText: null };
 let obj3 = { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.inputText = { color: nativeDefault.colors.TEXT_DEFAULT };

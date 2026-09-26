@@ -1,12 +1,12 @@
-// Module ID: 12434
-// Function ID: 12435
+// Module ID: 12452
+// Function ID: 12453
 // Name: useApplicationWidgetRefresh
-// Dependencies: [32, 19, 12435, 12436, 2]
+// Dependencies: [32, 19, 12453, 12454, 2]
 // Exports: default
 
-// Module 12434 (useApplicationWidgetRefresh)
-import refreshApplicationWidget from "refreshApplicationWidget" /* 12435 */;
-import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 12436 */;
+// Module 12452 (useApplicationWidgetRefresh)
+import refreshApplicationWidget from "refreshApplicationWidget" /* 12453 */;
+import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 12454 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 6700
-// Function ID: 6701
+// Module ID: 6705
+// Function ID: 6706
 // Name: GuildThreadSubscriptions
-// Dependencies: [1438, 2]
+// Dependencies: [1439, 2]
 
-// Module 6700 (GuildThreadSubscriptions)
-import privDefault from "priv" /* 1438 */;
+// Module 6705 (GuildThreadSubscriptions)
+import privDefault from "priv" /* 1439 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("lib/guild/GuildThreadSubscriptions.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 9040
-// Function ID: 9041
+// Module ID: 9051
+// Function ID: 9052
 // Name: GuildSettingsServerTagUtils
-// Dependencies: [2066, 4466, 1074, 9041, 7603, 2]
+// Dependencies: [2067, 4469, 1074, 9052, 7610, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 9040 (GuildSettingsServerTagUtils)
-import GuildTagUtils from "GuildTagUtils" /* 7603 */;
-import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 9041 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
+// Module 9051 (GuildSettingsServerTagUtils)
+import GuildTagUtils from "GuildTagUtils" /* 7610 */;
+import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 9052 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 require = fn;
 const Permissions = fn(1074).Permissions;

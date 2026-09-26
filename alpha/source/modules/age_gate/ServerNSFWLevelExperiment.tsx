@@ -1,11 +1,11 @@
-// Module ID: 2063
-// Function ID: 2064
+// Module ID: 2064
+// Function ID: 2065
 // Name: ServerNSFWLevelExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isServerNSFWLevelEnabled
 
-// Module 2063 (ServerNSFWLevelExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 2064 (ServerNSFWLevelExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-09-server-nsfw-level", kind: "user", defaultConfig: { enabled: false }, variations: null };

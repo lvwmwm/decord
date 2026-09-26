@@ -1,12 +1,12 @@
-// Module ID: 2110
-// Function ID: 2111
+// Module ID: 2111
+// Function ID: 2112
 // Name: HelpdeskUtils
-// Dependencies: [2111, 1074, 4448, 1364, 2]
+// Dependencies: [2112, 1074, 4451, 1364, 2]
 
-// Module 2110 (HelpdeskUtils)
+// Module 2111 (HelpdeskUtils)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4448 */;
-import LocaleStore from "LocaleStore" /* 2111 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4451 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 
 require = fn;
 const Constants = fn(1074);

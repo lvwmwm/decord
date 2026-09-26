@@ -1,26 +1,26 @@
-// Module ID: 7266
-// Function ID: 7267
+// Module ID: 7271
+// Function ID: 7272
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4821, 1182, 4852, 4652, 1372, 1374, 1074, 4876, 7267, 7261, 21, 4829, 576, 4528, 4485, 7268, 5467, 5439, 7269, 7270, 7272, 7273, 1115, 7275, 7277, 7278, 4796, 7265, 7279, 7280, 12853, 12854, 11679, 11688, 12857, 1094, 1364, 8263, 5894, 5286, 504, 6578, 8606, 9410, 6862, 8663, 8614, 1241, 9411, 4697, 6613, 12858, 4825, 5274, 7489, 2]
+// Dependencies: [19, 17, 4825, 1182, 4859, 4655, 1372, 1374, 1074, 4883, 7272, 7266, 21, 4836, 576, 4531, 4488, 7273, 5474, 5446, 7274, 7275, 7277, 7278, 1115, 7280, 7282, 7283, 4800, 7270, 7284, 7285, 12870, 12871, 11693, 11702, 12874, 1094, 1364, 8271, 5899, 5293, 504, 6583, 8614, 9421, 6867, 8671, 8622, 1241, 9422, 4701, 6618, 12875, 4832, 5281, 7495, 2]
 // Exports: default
 
-// Module 7266 (PremiumUpsellActionSheet)
+// Module 7271 (PremiumUpsellActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PremiumUtils from "PremiumUtils" /* 4485 */;
-import ChatInputUtils from "ChatInputUtils" /* 4697 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import LinearGradientDefault from "LinearGradient" /* 5286 */;
-import FastImageDefault from "FastImage" /* 5894 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 7265 */;
-import showForLaterModal from "showForLaterModal" /* 7279 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7280 */;
-import APNGPlayer from "APNGPlayer" /* 8263 */;
+import PremiumUtils from "PremiumUtils" /* 4488 */;
+import ChatInputUtils from "ChatInputUtils" /* 4701 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import LinearGradientDefault from "LinearGradient" /* 5293 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 7270 */;
+import showForLaterModal from "showForLaterModal" /* 7284 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7285 */;
+import APNGPlayer from "APNGPlayer" /* 8271 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -73,13 +73,13 @@ const PremiumConstants = fn(1374);
 ({ PremiumSubscriptionSKUs: c10, PremiumTypes: closure_11, PremiumUpsellTypes: closure_12 } = PremiumConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ThemeTypes: closure_15 } = Constants);
-const ApplicationStreamFPS = fn(4876).ApplicationStreamFPS;
-const SavedMessagesConstants = fn(7267);
+const ApplicationStreamFPS = fn(4883).ApplicationStreamFPS;
+const SavedMessagesConstants = fn(7272);
 ({ SAVED_BOOKMARKS_MAX: closure_17, SAVED_REMINDERS_MAX: closure_18 } = SavedMessagesConstants);
-const premiumMax = fn(7261).MAX_SCHEDULED_MESSAGES_PER_USER;
+const premiumMax = fn(7266).MAX_SCHEDULED_MESSAGES_PER_USER;
 const jsxProd = fn(21);
 ({ jsx: closure_20, Fragment: closure_21, jsxs: closure_22 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { hero: { alignSelf: "center", marginTop: nativeDefault.space.PX_16 }, image: { width: 240, height: 144 }, text: { alignSelf: "center", textAlign: "center" }, betaTag: { marginLeft: 0 }, description: null, textContainer: null, buttonContainer: null, imageGradientBackgroundContainer: null, imageGradientBackground: null, imageInGradientBackground: null };
 let obj3 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 obj2.description = { marginHorizontal: nativeDefault.space.PX_16 };

@@ -1,10 +1,10 @@
-// Module ID: 8916
-// Function ID: 8917
+// Module ID: 8927
+// Function ID: 8928
 // Name: getIFrameAllowAttributes
 // Dependencies: [2]
 // Exports: default
 
-// Module 8916 (getIFrameAllowAttributes)
+// Module 8927 (getIFrameAllowAttributes)
 import size from "module_2" /* 2 */;
 
 let closure_0 = ["autoplay", "encrypted-media"];

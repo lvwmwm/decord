@@ -1,12 +1,12 @@
-// Module ID: 14522
-// Function ID: 14523
+// Module ID: 14547
+// Function ID: 14548
 // Name: useBountyRecurringSwipeUpNux
-// Dependencies: [32, 6801, 2028, 2]
+// Dependencies: [32, 6806, 2029, 2]
 // Exports: useBountyRecurringSwipeUpNux
 
-// Module 14522 (useBountyRecurringSwipeUpNux)
-import dismissible_content from "dismissible_content" /* 2028 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6801 */;
+// Module 14547 (useBountyRecurringSwipeUpNux)
+import dismissible_content from "dismissible_content" /* 2029 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6806 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/u
 export const useBountyRecurringSwipeUpNux = function useBountyRecurringSwipeUpNux(isEligible) {
   let prop = null;
   if (isEligible.isEligible) {
-    prop = tmp(2028).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+    prop = tmp(2029).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
   }
   const tmp4 = _slicedToArray(useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 86400000 }), 2);
   [tmp5, tmp6] = tmp4;

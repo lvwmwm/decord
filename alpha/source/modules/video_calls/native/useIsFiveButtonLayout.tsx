@@ -1,12 +1,12 @@
-// Module ID: 8850
-// Function ID: 8851
+// Module ID: 8858
+// Function ID: 8859
 // Name: useIsFiveButtonLayout
-// Dependencies: [2044, 2066, 504, 8825, 8851, 8852, 6684, 2]
+// Dependencies: [2045, 2067, 504, 8833, 8859, 8860, 6689, 2]
 // Exports: useIsFiveButtonLayout
 
-// Module 8850 (useIsFiveButtonLayout)
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 8858 (useIsFiveButtonLayout)
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
@@ -40,8 +40,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp6 = guild_id(8851);
-  const tmp6Result = guild_id(8851)(guild_id1, id);
+  const tmp6 = guild_id(8859);
+  const tmp6Result = guild_id(8859)(guild_id1, id);
   const items1 = [GuildStore];
   const items2 = [guild_id];
   const stateFromStores1 = tmp(504).useStateFromStores(items1, () => GuildStore.getGuild(guild_id), items2);
@@ -60,8 +60,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
-  const tmp5Result = guild_id(8852);
-  const tmp5ResultResult = guild_id(8852)(id1);
+  const tmp5Result = guild_id(8860);
+  const tmp5ResultResult = guild_id(8860)(id1);
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp6Result;
   }

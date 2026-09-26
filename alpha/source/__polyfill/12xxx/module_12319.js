@@ -1,211 +1,271 @@
 // Module ID: 12319
 // Function ID: 12320
-// Dependencies: [41, 42, 12302]
-// Exports: rejectedSyncPromise, resolvedSyncPromise
+// Dependencies: [12312, 12313, 12320, 12321, 12322]
+// Exports: dropUndefinedKeys, extractExceptionKeysForMessage, fill, getOriginalFunction, objectify, urlEncode
 
 // Module 12319
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod12312 from "module_12312" /* 12312 */;
+import _mod12320 from "module_12320" /* 12320 */;
+import _mod12321 from "module_12321" /* 12321 */;
+import _mod12322 from "module_12322" /* 12322 */;
 
-const SyncPromise = require;
-const obj = { PENDING: 0 };
-obj[0] = "PENDING";
-obj.RESOLVED = 1;
-obj[1] = "RESOLVED";
-obj.REJECTED = 2;
-obj[2] = "REJECTED";
-class SyncPromise {
-  constructor(arg0) {
-    self = this;
-    tmp = SyncPromise;
-    tmp2 = closure_3(this, SyncPromise);
-    __init = SyncPromise.prototype.__init;
-    call = __init.call;
-    if (typeof call === "unknown") {
-      __initResult = __init();
-    } else {
-      callResult = call(self);
+require = arg1;
+const dependencyMap = arg6;
+function addNonEnumerableProperty(arg0, arg1, value) {
+  try {
+    const _Object = Object;
+    const obj = { value, writable: true, configurable: true };
+    Object.defineProperty(arg0, arg1, obj);
+  } catch (err) {
+    if (_mod12312.DEBUG_BUILD) {
+      const logger = tmp6(12313).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("Failed to add non-enumerable property \"" + tmp2 + "\" to object", tmp);
     }
-    __init2 = tmp.prototype.__init2;
-    call2 = __init2.call;
-    if (typeof call2 === "unknown") {
-      __init2Result = __init2();
-    } else {
-      call2Result = call2(self);
-    }
-    __init3 = tmp.prototype.__init3;
-    call3 = __init3.call;
-    if (typeof call3 === "unknown") {
-      __init3Result = __init3();
-    } else {
-      call3Result = call3(self);
-    }
-    __init4 = tmp.prototype.__init4;
-    call4 = __init4.call;
-    if (typeof call4 === "unknown") {
-      __init4 = __init4();
-    } else {
-      call4Result = call4(self);
-    }
-    self._state = c2.PENDING;
-    self._handlers = [];
-    return;
+    tmp6 = require;
   }
 }
-const entry = {
-  key: "then",
-  value: function then(arg0, arg1) {
-    const self = this;
-    closure_1 = arg0;
-    closure_0 = arg1;
-    SyncPromise((arg0, arg1) => {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      const _handlers = self._handlers;
-      const items = [
-        false,
-        (arg0) => {
-          if (closure_1) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
+function markFunctionWrapped(arg0, arg1) {
+  try {
+    let prototype = arg1.prototype;
+    if (!prototype) {
+      prototype = {};
+    }
+    arg1.prototype = prototype;
+    arg0.prototype = prototype;
+    addNonEnumerableProperty(arg0, "__sentry_original__", arg1);
+  } catch (err) {
+  }
+}
+function convertToPlainObject(type) {
+  if (obj.isError(type)) {
+    const error = { message: null, name: null, stack: null };
+    ({ message: obj6.message, name: obj6.name, stack: obj6.stack } = type);
+    if (typeof type === "object") {
+      if (null !== type) {
+        const obj2 = {};
+        let obj3 = obj2;
+        const keys = Object.keys();
+        if (keys !== undefined) {
+          obj3 = obj2;
+          while (keys[tmp] !== undefined) {
+            let _Object2 = Object;
+            let call2 = hasOwnProperty2.call;
+            if (!(typeof call2 === "unknown" ? hasOwnProperty2(tmp17) : call2(type, tmp17))) {
+              continue;
+            } else {
+              obj2[tmp17] = type[tmp17];
+              continue;
             }
-          } else {
-            closure_0(arg0);
-          }
-        },
-        (arg0) => {
-          if (closure_0) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_1(arg0);
+            continue;
           }
         }
-      ];
-      _handlers.push(items);
-      self._executeHandlers();
-    });
-    return Object.create(SyncPromise.prototype);
-  }
-};
-let items = [
-  entry,
-  {
-    key: "catch",
-    value: function _catch(arg0) {
-      return this.then((result) => result, arg0);
+      }
+      const merged = Object.assign(obj3);
+      return error;
     }
-  },
-  {
-    key: "finally",
-    value: function _finally(arg0) {
-      const self = this;
-      closure_0 = arg0;
-      SyncPromise((arg0, arg1) => {
-        closure_0 = arg0;
-        _self = arg1;
-        return _self.then((result) => {
-          c3 = false;
-          closure_2 = result;
-          if (closure_0) {
-            tmp();
+    obj3 = {};
+  } else {
+    if (tmp2Result.isEvent(type)) {
+      const obj4 = { type: type.type, target: serializeEventTarget(type.target), currentTarget: serializeEventTarget(type.currentTarget) };
+      if (typeof type === "object") {
+        if (null !== type) {
+          const obj5 = {};
+          let obj7 = obj5;
+          const keys1 = Object.keys();
+          if (keys1 !== undefined) {
+            obj7 = obj5;
+            while (keys1[tmp] !== undefined) {
+              let _Object = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              let call = hasOwnProperty.call;
+              if (!(typeof call === "unknown" ? hasOwnProperty(tmp8) : call(type, tmp8))) {
+                continue;
+              } else {
+                obj5[tmp8] = type[tmp8];
+                continue;
+              }
+              continue;
+            }
           }
-        }, (arg0) => {
-          c3 = true;
-          closure_2 = arg0;
-          if (closure_0) {
-            tmp();
-          }
-        }).then(() => {
-          if (c3) {
-            closure_1(closure_2);
-          } else {
-            closure_0(closure_2);
-          }
+        }
+        const merged1 = Object.assign(obj7);
+        let isInstanceOfResult = typeof globalThis.CustomEvent !== "undefined";
+        if (typeof globalThis.CustomEvent !== "undefined") {
+          isInstanceOfResult = tmp2(12320).isInstanceOf(type, globalThis.CustomEvent);
+          const tmp2Result2 = tmp2(12320);
+        }
+        if (isInstanceOfResult) {
+          obj4.detail = type.detail;
+        }
+        return obj4;
+      }
+      obj7 = {};
+    } else {
+      return type;
+    }
+    tmp2Result = tmp2(12320);
+  }
+}
+function serializeEventTarget(arg0) {
+  try {
+    if (obj.isElement(arg0)) {
+      let htmlTreeAsStringResult = _mod12321.htmlTreeAsString(arg0);
+      const tmp2Result = _mod12321;
+    } else {
+      const _Object = Object;
+      const call = toString.call;
+      if (typeof call === "unknown") {
+        htmlTreeAsStringResult = toString();
+      } else {
+        htmlTreeAsStringResult = call(arg0);
+      }
+    }
+    return htmlTreeAsStringResult;
+  } catch (err) {
+    return "<unknown>";
+  }
+}
+function _dropUndefinedKeys(arr, map) {
+  if ((function isPojo(arr) {
+    if (obj.isPlainObject(arr)) {
+      try {
+        const _Object = Object;
+        const name = Object.getPrototypeOf(arr).constructor.name;
+        let tmp3 = !name;
+        if (name) {
+          tmp3 = "Object" === tmp2;
+        }
+        return tmp3;
+      } catch (err) {
+        return true;
+      }
+    } else {
+      return false;
+    }
+  })(arr)) {
+    value = map.get(arr);
+    if (undefined !== value) {
+      return value;
+    } else {
+      const obj = {};
+      const result = map.set(arr, obj);
+      let _Object = Object;
+      const ownPropertyNames = Object.getOwnPropertyNames(arr);
+      for (const item10030 of ownPropertyNames) {
+        let tmp11 = item10030;
+        if (undefined !== arg0[item10030]) {
+          obj[tmp11] = _dropUndefinedKeys(arg0[tmp11], arg1);
+        }
+        continue;
+      }
+      return obj;
+    }
+  } else {
+    const _Array = Array;
+    if (Array.isArray(arr)) {
+      value2 = map.get(arr);
+      if (undefined !== value2) {
+        return value2;
+      } else {
+        const items = [];
+        const result1 = map.set(arr, items);
+        const item = arr.forEach((item) => {
+          items.push(_dropUndefinedKeys(item, closure_0));
         });
-      });
-      return Object.create(SyncPromise.prototype);
-    }
-  },
-  {
-    key: "__init",
-    value: function __init() {
-      const self = this;
-      this._resolve = (arg0) => {
-        self._setResult(obj.RESOLVED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init2",
-    value: function __init2() {
-      const self = this;
-      this._reject = (arg0) => {
-        self._setResult(obj.REJECTED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init3",
-    value: function __init3() {
-      const self = this;
-      this._setResult = (_state, _value) => {
-        if (self._state === self.PENDING) {
-          if (obj2.isThenable(_value)) {
-            _value.then(obj._resolve, obj._reject);
-          } else {
-            obj._state = _state;
-            obj._value = _value;
-            obj._executeHandlers();
-          }
-          obj2 = SyncPromise(12302);
-        }
-      };
-    }
-  },
-  {
-    key: "__init4",
-    value: function __init4() {
-      const self = this;
-      this._executeHandlers = () => {
-        if (self._state !== obj.PENDING) {
-          const _handlers = tmp._handlers;
-          const substr = _handlers.slice();
-          tmp._handlers = [];
-          const item = substr.forEach((item) => {
-            if (!item[0]) {
-              if (_state._state === constants.RESOLVED) {
-                item[1](tmp._value);
-              }
-              if (_state._state === tmp2.REJECTED) {
-                item[2](tmp._value);
-              }
-              item[0] = true;
-              tmp2 = constants;
-            }
-          });
-        }
-      };
+        return items;
+      }
+    } else {
+      return arr;
     }
   }
-];
-const _moduleResult = _createClass(SyncPromise, items);
+}
 
-export const SyncPromise = _moduleResult;
-export const rejectedSyncPromise = function rejectedSyncPromise(arg0) {
-  closure_0 = arg0;
-  return new _moduleResult((arg0, fn) => {
-    fn(closure_0);
-  });
+export { addNonEnumerableProperty };
+export { convertToPlainObject };
+export const dropUndefinedKeys = function dropUndefinedKeys(arr) {
+  return _dropUndefinedKeys(arr, new Map());
 };
-export const resolvedSyncPromise = function resolvedSyncPromise(arg0) {
-  closure_0 = arg0;
-  return new _moduleResult((fn) => {
-    fn(closure_0);
+export const extractExceptionKeysForMessage = function extractExceptionKeysForMessage(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 40;
+  }
+  const keys = Object.keys(convertToPlainObject(arg0));
+  const sorted = keys.sort();
+  const first = keys[0];
+  if (first) {
+    if (first.length >= num) {
+      return _mod12322.truncate(first, num);
+    } else {
+      let length = keys.length;
+      if (length > 0) {
+        const substr = keys.slice(0, length);
+        const joined = substr.join(", ");
+        while (joined.length > num) {
+          length = length - 1;
+        }
+        let truncateResult = joined;
+        if (length !== keys.length) {
+          truncateResult = _mod12322.truncate(joined, num);
+        }
+        return truncateResult;
+      }
+      return "";
+    }
+  } else {
+    return "[object has no keys]";
+  }
+};
+export const fill = function fill(arg0, arg1, fn) {
+  if (arg1 in arg0) {
+    const tmp6 = fn(arg0[arg1]);
+    if (typeof tmp6 === "function") {
+      markFunctionWrapped(tmp6, tmp5);
+    }
+    try {
+      arg0[arg1] = tmp6;
+    } catch (err) {
+      if (_mod12312.DEBUG_BUILD) {
+        const logger = tmp7(12313).logger;
+        const _HermesInternal = HermesInternal;
+        logger.log("Failed to replace method \"" + tmp3 + "\" in object", tmp2);
+      }
+      tmp7 = require;
+    }
+  }
+};
+export const getOriginalFunction = function getOriginalFunction(__sentry_original__) {
+  return __sentry_original__.__sentry_original__;
+};
+export { markFunctionWrapped };
+export const objectify = function objectify(arg0) {
+  if (null == arg0 === true) {
+    const _String = String;
+    let string = new String(arg0);
+  } else {
+    let tmp = typeof arg0 === "symbol";
+    if (typeof arg0 !== "symbol") {
+      tmp = typeof arg0 === "bigint";
+    }
+    if (tmp === true) {
+      const _Object = Object;
+      string = Object(arg0);
+    } else {
+      string = arg0;
+      if (obj.isPrimitive(arg0) === true) {
+        string = new arg0.constructor(arg0);
+      }
+      obj = _mod12320;
+    }
+  }
+  return string;
+};
+export const urlEncode = function urlEncode(arg0) {
+  const entries = Object.entries(arg0);
+  const mapped = entries.map((item) => {
+    [tmp, tmp2] = item;
+    return "" + encodeURIComponent(tmp) + "=" + encodeURIComponent(tmp2);
   });
+  return mapped.join("&");
 };

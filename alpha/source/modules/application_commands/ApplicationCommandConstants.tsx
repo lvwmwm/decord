@@ -1,12 +1,12 @@
-// Module ID: 5298
-// Function ID: 5299
+// Module ID: 5305
+// Function ID: 5306
 // Name: ApplicationCommandConstants
-// Dependencies: [1115, 1978, 2]
+// Dependencies: [1115, 1979, 2]
 // Exports: getValidationErrorText
 
-// Module 5298 (ApplicationCommandConstants)
+// Module 5305 (ApplicationCommandConstants)
 import util from "util" /* 1115 */;
-import Server from "Server" /* 1978 */;
+import Server from "Server" /* 1979 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];
@@ -40,22 +40,22 @@ export const getValidationErrorText = function getValidationErrorText(option) {
     if (Server.ApplicationCommandOptionType.BOOLEAN === type) {
       const intl8 = tmp3(1115).intl;
       return intl8.string(tmp3(1115).t.ATIx6O);
-    } else if (tmp3(1978).ApplicationCommandOptionType.CHANNEL === type) {
+    } else if (tmp3(1979).ApplicationCommandOptionType.CHANNEL === type) {
       const intl7 = tmp3(1115).intl;
       return intl7.string(tmp3(1115).t.Q0z2Gx);
-    } else if (tmp3(1978).ApplicationCommandOptionType.INTEGER === type) {
+    } else if (tmp3(1979).ApplicationCommandOptionType.INTEGER === type) {
       const intl6 = tmp3(1115).intl;
       return intl6.string(tmp3(1115).t["d/9Rk4"]);
-    } else if (tmp3(1978).ApplicationCommandOptionType.NUMBER === type) {
+    } else if (tmp3(1979).ApplicationCommandOptionType.NUMBER === type) {
       const intl5 = tmp3(1115).intl;
       return intl5.string(tmp3(1115).t["FDyk/V"]);
-    } else if (tmp3(1978).ApplicationCommandOptionType.ROLE === type) {
+    } else if (tmp3(1979).ApplicationCommandOptionType.ROLE === type) {
       const intl4 = tmp3(1115).intl;
       return intl4.string(tmp3(1115).t.vrRQn0);
-    } else if (tmp3(1978).ApplicationCommandOptionType.USER === type) {
+    } else if (tmp3(1979).ApplicationCommandOptionType.USER === type) {
       const intl3 = tmp3(1115).intl;
       return intl3.string(tmp3(1115).t.i2r7j5);
-    } else if (tmp3(1978).ApplicationCommandOptionType.MENTIONABLE === type) {
+    } else if (tmp3(1979).ApplicationCommandOptionType.MENTIONABLE === type) {
       const intl2 = tmp3(1115).intl;
       return intl2.string(tmp3(1115).t.I7imec);
     } else {

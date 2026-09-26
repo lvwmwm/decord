@@ -1,28 +1,28 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15124
+// Function ID: 15125
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 5584, 21, 4796, 4525, 4783, 1115, 504, 2020, 15097, 6613, 6565, 5994, 5912, 15065, 15100, 15098, 9582, 5884, 15101, 4793, 10993, 2]
+// Dependencies: [5, 32, 19, 5589, 21, 4800, 4528, 4787, 1115, 504, 2021, 15125, 6618, 6570, 5999, 5917, 15093, 15128, 15126, 9593, 5889, 15129, 4797, 11006, 2]
 
-// Module 15096 (CacheActionsSetting)
+// Module 15124 (CacheActionsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2020 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4783 */;
-import BrowserManager from "BrowserManager" /* 4793 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import TableRow from "TableRow" /* 5912 */;
-import TableRowGroup from "TableRowGroup" /* 5994 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
-import ActionSheet from "ActionSheet" /* 6613 */;
-import FileUpIcon from "FileUpIcon" /* 15065 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15097 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15098 */;
-import CacheActionCreators from "CacheActionCreators" /* 15100 */;
-import FileWarningIcon from "FileWarningIcon" /* 15101 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;
+import BrowserManager from "BrowserManager" /* 4797 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import TableRow from "TableRow" /* 5917 */;
+import TableRowGroup from "TableRowGroup" /* 5999 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
+import ActionSheet from "ActionSheet" /* 6618 */;
+import FileUpIcon from "FileUpIcon" /* 15093 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15125 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15126 */;
+import CacheActionCreators from "CacheActionCreators" /* 15128 */;
+import FileWarningIcon from "FileWarningIcon" /* 15129 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 
 const CacheActionsDiskUsageSectionDefault = CacheActionsDiskUsageSection;
 
@@ -116,20 +116,20 @@ function CacheActionsActionSheet() {
   const items = [React5(TableRow.TableRow, obj4), , ];
   let tmp7Result3 = null != DiskUsageManagerDefault.calculateSize;
   if (tmp7Result3) {
-    let obj5 = { icon: tmp7(tmp(9582).FileIcon, {}), label: null, trailing: null, disabled: null, accessibilityState: null, onPress: null };
+    let obj5 = { icon: tmp7(tmp(9593).FileIcon, {}), label: null, trailing: null, disabled: null, accessibilityState: null, onPress: null };
     const intl4 = tmp(1115).intl;
     const t = tmp(1115).t;
     obj5.label = intl4.string(isCalculating ? t.Ynmbie : t.iAFGRu);
     let tmp7Result = null;
     if (isCalculating) {
-      tmp7Result = tmp7(tmp(5884).ActivityIndicator, { size: "small", accessible: false });
+      tmp7Result = tmp7(tmp(5889).ActivityIndicator, { size: "small", accessible: false });
     }
     obj5.trailing = tmp7Result;
     obj5.disabled = first;
     let obj6 = { busy: isCalculating, disabled: first };
     obj5.accessibilityState = obj6;
     obj5.onPress = diskUsageMeasurement.handleCalculateSize;
-    tmp7Result3 = tmp7(tmp(5912).TableRow, obj5);
+    tmp7Result3 = tmp7(tmp(5917).TableRow, obj5);
   }
   let obj7 = { hasIcons: true, children: null };
   items[1] = tmp7Result3;
@@ -205,14 +205,14 @@ const useState = fn(19).useState;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 CacheActionsActionSheet = "CacheActionsActionSheet";
-const SettingBuilders = fn(10993);
+const SettingBuilders = fn(11006);
 const pressable = SettingBuilders.createPressable({
   useTitle: function useCacheActionsTitle() {
     const intl = util.intl;
     return intl.string(util.t.ZVZVwR);
   },
   parent: null,
-  IconComponent: fn(15101).FileWarningIcon,
+  IconComponent: fn(15129).FileWarningIcon,
   onPress: function handleCacheActionsPress() {
     ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: CacheActionsActionSheet }), CacheActionsActionSheet);
   },

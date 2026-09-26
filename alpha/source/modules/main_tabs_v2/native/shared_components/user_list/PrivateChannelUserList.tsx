@@ -1,19 +1,19 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11668
+// Function ID: 11669
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 2044, 4476, 1372, 1074, 21, 6578, 504, 12, 1370, 11070, 11073, 11072, 4528, 576, 11655, 1115, 8114, 11656, 7617, 10314, 2]
+// Dependencies: [32, 19, 17, 2045, 4479, 1372, 1074, 21, 6583, 504, 12, 1370, 11084, 11087, 11086, 4531, 576, 11669, 1115, 8122, 11670, 7624, 10326, 2]
 
-// Module 11654 (PrivateChannelUserList)
+// Module 11668 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7617 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8114 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11656 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11670 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import RelationshipStore from "RelationshipStore" /* 4476 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

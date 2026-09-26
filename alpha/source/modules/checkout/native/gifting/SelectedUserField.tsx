@@ -1,14 +1,14 @@
-// Module ID: 10305
-// Function ID: 10306
+// Module ID: 10317
+// Function ID: 10318
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4829, 576, 6034, 1115, 4675, 6467, 1177, 4825, 6029, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6039, 1115, 4678, 6472, 1177, 4832, 6034, 2]
 // Exports: default
 
-// Module 10305 (SelectedUserField)
+// Module 10317 (SelectedUserField)
 import nativeDefault from "native" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4675 */;
-import InputFieldContainer from "InputFieldContainer" /* 6034 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6467 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
+import InputFieldContainer from "InputFieldContainer" /* 6039 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6472 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_16 }, content: { flexDirection: "row", overflow: "hidden", alignItems: "center", display: "flex" }, opener: null, openerWithClearButton: null, searchIcon: null, userPill: null, userPillText: null, clearButton: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
 obj2.opener = { flexDirection: "row", alignItems: "center", flex: 1, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: 6 };
@@ -65,14 +65,14 @@ export default function SelectedUserField(onPress) {
     const obj7 = { user: selectedUser, guildId: "Array", size: tmp4(1177).AvatarSizes.XSMALL_20 };
     const items2 = [tmp2(tmp4(1177).Avatar, obj7), ];
     const obj8 = { variant: "text-md/medium", style: tmp.userPillText, children: UserUtilsDefault.getName(selectedUser) };
-    items2[1] = tmp2(tmp4(4825).Text, obj8);
+    items2[1] = tmp2(tmp4(4832).Text, obj8);
     obj6.children = items2;
     let tmp2Result1 = tmp6(tmp3, obj6);
   } else {
     const obj9 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: null };
     const intl4 = tmp4(1115).intl;
     obj9.children = intl4.string(tmp4(1115).t.R0vK0N);
-    tmp2Result1 = tmp2(tmp4(4825).Text, obj9);
+    tmp2Result1 = tmp2(tmp4(4832).Text, obj9);
   }
   items1[1] = tmp2Result1;
   obj3.children = items1;
@@ -91,7 +91,7 @@ export default function SelectedUserField(onPress) {
     const intl5 = tmp4(1115).intl;
     const obj12 = { text: UserUtilsDefault.getName(selectedUser) };
     obj11.accessibilityLabel = intl5.formatToPlainString(tmp4(1115).t["0Vb9FQ"], obj12);
-    obj11.children = tmp2(tmp4(6029).CircleXIcon, { size: "xs" });
+    obj11.children = tmp2(tmp4(6034).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj11);
   }
   items3[1] = tmp2Result;

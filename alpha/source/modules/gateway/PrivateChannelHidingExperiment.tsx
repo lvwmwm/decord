@@ -1,12 +1,12 @@
-// Module ID: 13196
-// Function ID: 13197
+// Module ID: 13213
+// Function ID: 13214
 // Name: PrivateChannelHidingExperiment
-// Dependencies: [1434, 2, 13197]
+// Dependencies: [1435, 2, 13214]
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled, useIsChannelMetadataObfuscationEnabled
 
-// Module 13196 (PrivateChannelHidingExperiment)
-import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 13197 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13213 (PrivateChannelHidingExperiment)
+import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 13214 */;
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-02-private-channel-hiding", kind: "user", defaultConfig: { enableObfuscation: false, enableIntegrityCheck: false }, variations: null };

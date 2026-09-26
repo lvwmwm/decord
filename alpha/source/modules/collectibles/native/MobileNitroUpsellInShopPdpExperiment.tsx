@@ -1,10 +1,10 @@
-// Module ID: 12707
-// Function ID: 12708
+// Module ID: 12724
+// Function ID: 12725
 // Name: MobileNitroUpsellInShopPdpExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 12707 (MobileNitroUpsellInShopPdpExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12724 (MobileNitroUpsellInShopPdpExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-mobile-nitro-upsell-in-shop-pdp", kind: "user", defaultConfig: { enabled: false, showActionSheet: false }, variations: null };

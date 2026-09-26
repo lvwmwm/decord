@@ -1,22 +1,22 @@
-// Module ID: 16659
-// Function ID: 16660
+// Module ID: 16688
+// Function ID: 16689
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4829, 576, 5912, 12, 1115, 11699, 5894, 1978, 4773, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 5917, 12, 1115, 11713, 5899, 1979, 4777, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 16659 (ContextMenuCommandItem)
+// Module 16688 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import FastImageDefault from "FastImage" /* 5894 */;
-import TableRow from "TableRow" /* 5912 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11699 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import TableRow from "TableRow" /* 5917 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11713 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { commandIcon: null, loadingIcon: null, loadingName: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg };
 obj2.commandIcon = size;
@@ -48,18 +48,18 @@ export default function ContextMenuCommandItem(item) {
   }, items);
   const tmp = closure_6();
   const tmp5 = item;
-  const applicationCommandsIconSource = item(11699).getApplicationCommandsIconSource(section);
+  const applicationCommandsIconSource = item(11713).getApplicationCommandsIconSource(section);
   const obj2 = { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null };
   let tmp8Result = null != applicationCommandsIconSource;
   if (tmp8Result) {
     const obj3 = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp8Result = tmp8(section(5894), obj3);
+    tmp8Result = tmp8(section(5899), obj3);
   }
   obj2.icon = tmp8Result;
-  obj2.trailing = jsx(tmp5(4773).SendMessageIcon, {});
+  obj2.trailing = jsx(tmp5(4777).SendMessageIcon, {});
   obj2.start = start;
   obj2.end = end;
-  return jsx(item(5912).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
+  return jsx(item(5917).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
 };
 export const ContextMenuCommandLoadingItem = function ContextMenuCommandLoadingItem(arg0) {
   ({ start, end } = arg0);

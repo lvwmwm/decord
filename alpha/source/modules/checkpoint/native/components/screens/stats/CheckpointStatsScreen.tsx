@@ -1,16 +1,16 @@
-// Module ID: 15239
-// Function ID: 15240
+// Module ID: 15267
+// Function ID: 15268
 // Name: CheckpointStatsScreen
-// Dependencies: [17, 21, 4829, 576, 15234, 15236, 2]
+// Dependencies: [17, 21, 4836, 576, 15262, 15264, 2]
 // Exports: default
 
-// Module 15239 (CheckpointStatsScreen)
+// Module 15267 (CheckpointStatsScreen)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 15234 */;
-import CheckpointTextDefault from "CheckpointText" /* 15236 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 15262 */;
+import CheckpointTextDefault from "CheckpointText" /* 15264 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4829 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

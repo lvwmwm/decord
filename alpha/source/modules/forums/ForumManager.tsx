@@ -1,15 +1,15 @@
-// Module ID: 17101
-// Function ID: 17102
+// Module ID: 17129
+// Function ID: 17130
 // Name: ForumManager
-// Dependencies: [2044, 2051, 6534, 6717, 2]
+// Dependencies: [2045, 2052, 6539, 6722, 2]
 
-// Module 17101 (ForumManager)
-import ForumPostDataLoader from "ForumPostDataLoader" /* 6717 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+// Module 17129 (ForumManager)
+import ForumPostDataLoader from "ForumPostDataLoader" /* 6722 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
-const isStaticChannelRoute = fn(2051).isStaticChannelRoute;
+const isStaticChannelRoute = fn(2052).isStaticChannelRoute;
 class ForumManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

@@ -1,9 +1,16 @@
 // Module ID: 7749
 // Function ID: 7750
-// Dependencies: [7750]
+// Dependencies: []
 
 // Module 7749
-import _modDef7750 from "module_7750" /* 7750 */;
+const re0 = /[|\\{}()[\]^$+*?.-]/g;
 
-
-export default _modDef7750({ contain: null, cover: null, stretch: null });
+export default (str) => {
+  if (typeof str !== "string") {
+    const _TypeError = TypeError;
+    const typeError = new TypeError("Expected a string");
+    throw typeError;
+  } else {
+    return str.replace(re0, "\\$&");
+  }
+};

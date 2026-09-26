@@ -1,13 +1,13 @@
-// Module ID: 6413
-// Function ID: 6414
+// Module ID: 6418
+// Function ID: 6419
 // Name: Tracking
-// Dependencies: [1074, 1241, 6412, 2]
+// Dependencies: [1074, 1241, 6417, 2]
 // Exports: trackSettingSearchClosed, trackSettingSearchInputFocused, trackSettingSearchQueryEntered, trackSettingSearchResultPress
 
-// Module 6413 (Tracking)
+// Module 6418 (Tracking)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6412 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6417 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

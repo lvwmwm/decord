@@ -1,16 +1,16 @@
-// Module ID: 11651
-// Function ID: 11652
+// Module ID: 11665
+// Function ID: 11666
 // Name: AppLauncherRoleOption
-// Dependencies: [32, 19, 2101, 21, 563, 11644, 4796, 11649, 1980, 11649, 2]
+// Dependencies: [32, 19, 2102, 21, 563, 11658, 4800, 11663, 1981, 11663, 2]
 // Exports: default
 
-// Module 11651 (AppLauncherRoleOption)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 11649 */;
+// Module 11665 (AppLauncherRoleOption)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 11663 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 
 const require = globalThis.__r;
 
@@ -72,7 +72,7 @@ export default function AppLauncherRoleOption(option) {
       tmp();
     }
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(11649, dependencyMap.paths), AppLauncherRoleListActionSheet.APP_LAUNCHER_ROLE_LIST_ACTION_SHEET_KEY, {
+    obj.openLazy(asyncRequireImpl(11663, dependencyMap.paths), AppLauncherRoleListActionSheet.APP_LAUNCHER_ROLE_LIST_ACTION_SHEET_KEY, {
       option,
       channel,
       onRolePress(role) {

@@ -1,18 +1,18 @@
-// Module ID: 14147
-// Function ID: 14148
+// Module ID: 14172
+// Function ID: 14173
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1074, 2041, 21, 4829, 576, 1484, 9178, 6801, 2028, 7604, 5077, 10349, 1391, 1241, 1115, 14148, 1177, 12729, 10346, 14149, 14151, 2876, 2]
+// Dependencies: [32, 19, 17, 1074, 2042, 21, 4836, 576, 1485, 9189, 6806, 2029, 7611, 5084, 10360, 1391, 1241, 1115, 14173, 1177, 12746, 10357, 14174, 14176, 2877, 2]
 // Exports: default
 
-// Module 14147 (UserProfileDisplayNameStylesEditButton)
+// Module 14172 (UserProfileDisplayNameStylesEditButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10346 */;
-import _modDef12729 from "module_12729" /* 12729 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14148 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14149 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10357 */;
+import _modDef12746 from "module_12746" /* 12746 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14173 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14174 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -21,9 +21,9 @@ const noop = fn(19);
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { ggContainer: null, noneIcon: null };
 let size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", paddingBottom: 4 };
 obj2.ggContainer = size;
@@ -97,8 +97,8 @@ export default function UserProfileDisplayNameStylesEditButton(user) {
   }, items2);
   const tmp16 = nativeStackNavigation(() => {
     if (null == closure_6) {
-      const obj2 = { source: _modDef12729, style: closure_3.noneIcon };
-      let tmp10 = jsx(native.Icon, { source: _modDef12729, style: closure_3.noneIcon });
+      const obj2 = { source: _modDef12746, style: closure_3.noneIcon };
+      let tmp10 = jsx(native.Icon, { source: _modDef12746, style: closure_3.noneIcon });
     } else {
       const obj = { style: closure_3.ggContainer, children: null };
       const obj3 = { userId: user.id, guildId, userName: "Gg", pendingDisplayNameStyles: tmp, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };

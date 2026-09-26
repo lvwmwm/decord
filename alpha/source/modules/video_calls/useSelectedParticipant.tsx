@@ -1,11 +1,11 @@
-// Module ID: 8824
-// Function ID: 8825
+// Module ID: 8832
+// Function ID: 8833
 // Name: useSelectedParticipant
-// Dependencies: [4845, 504, 2]
+// Dependencies: [4852, 504, 2]
 // Exports: default
 
-// Module 8824 (useSelectedParticipant)
-import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
+// Module 8832 (useSelectedParticipant)
+import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 
 const require = globalThis.__r;
 

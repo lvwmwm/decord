@@ -1,196 +1,67 @@
 // Module ID: 12384
 // Function ID: 12385
-// Dependencies: [12323, 12295, 12351, 12298]
+// Dependencies: [12309, 12312, 12341, 12327, 12340, 12361, 12331, 12332, 12318, 12349, 12326, 12325, 12313]
+// Exports: getTraceData
 
 // Module 12384
-import _mod12295 from "module_12295" /* 12295 */;
-import stackParserFromStackParserOptions from "stackParserFromStackParserOptions" /* 12298 */;
-import _mod12323 from "module_12323" /* 12323 */;
-import setupIntegration from "module_12351" /* 12351 */;
+import errorCallback from "errorCallback" /* 12309 */;
+import _mod12340 from "module_12340" /* 12340 */;
+import "module_12312";
+import __SENTRY_DEBUG__ from "module_12341" /* 12341 */;
+import dateTimestampInSeconds from "module_12327" /* 12327 */;
 
-function _shouldDropEvent(message, message2) {
-  let tmp = message2;
-  if (tmp) {
-    message = message.message;
-    message2 = message2.message;
-    if (message) {
-      if (!message) {
-        if (message) {
-          let flag = false;
-          if (message === message2) {
-            flag = false;
-            if (_isSameFingerprint(message, message2)) {
-              const framesFromEvent = stackParserFromStackParserOptions.getFramesFromEvent(message);
-              const framesFromEvent1 = stackParserFromStackParserOptions.getFramesFromEvent(message2);
-              if (framesFromEvent) {
-                if (!framesFromEvent) {
-                  if (framesFromEvent) {
-                    let flag2 = false;
-                    if (framesFromEvent1.length === framesFromEvent.length) {
-                      let num = 0;
-                      flag2 = true;
-                      if (0 < framesFromEvent1.length) {
-                        flag2 = false;
-                        while (framesFromEvent1[num].filename === framesFromEvent[num].filename) {
-                          flag2 = false;
-                          if (tmp5.lineno !== tmp6.lineno) {
-                            break;
-                          } else {
-                            flag2 = false;
-                            if (tmp5.colno !== tmp6.colno) {
-                              break;
-                            } else {
-                              flag2 = false;
-                              if (tmp5.function !== tmp6.function) {
-                                break;
-                              } else {
-                                let sum = num + 1;
-                                num = sum;
-                                flag2 = true;
-                                if (sum >= framesFromEvent1.length) {
-                                  break;
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  } else {
-                    flag2 = false;
-                  }
-                } else {
-                  flag2 = false;
-                }
-              } else {
-                flag2 = true;
-              }
-              flag = false;
-              if (flag2) {
-                flag = true;
-              }
-            }
-          }
-        } else {
-          flag = false;
-        }
+errorCallback;
+
+export const getTraceData = function getTraceData() {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  const client = _mod12340.getClient();
+  if (obj3.isEnabled()) {
+    if (client) {
+      const mainCarrier = tmp(12331).getMainCarrier();
+      const tmpResult = tmp(12331);
+      const asyncContextStrategy = tmp(12332).getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
       } else {
-        flag = false;
-      }
-    } else {
-      flag = false;
-    }
-    let tmp9 = flag;
-    if (!tmp9) {
-      let flag3 = false;
-      if (message2.exception && message2.exception.values && message2.exception.values[0]) {
-        flag3 = false;
-        if (iter2) {
-          flag3 = false;
-          if (iter.type === iter2.type) {
-            flag3 = false;
-            if (iter.value === iter2.value) {
-              flag3 = false;
-              if (_isSameFingerprint(message, message2)) {
-                const framesFromEvent2 = stackParserFromStackParserOptions.getFramesFromEvent(message);
-                const framesFromEvent3 = stackParserFromStackParserOptions.getFramesFromEvent(message2);
-                if (framesFromEvent2) {
-                  if (!framesFromEvent2) {
-                    if (framesFromEvent2) {
-                      let flag4 = false;
-                      if (framesFromEvent3.length === framesFromEvent2.length) {
-                        let num2 = 0;
-                        flag4 = true;
-                        if (0 < framesFromEvent3.length) {
-                          flag4 = false;
-                          while (framesFromEvent3[num2].filename === framesFromEvent2[num2].filename) {
-                            flag4 = false;
-                            if (tmp12.lineno !== tmp13.lineno) {
-                              break;
-                            } else {
-                              flag4 = false;
-                              if (tmp12.colno !== tmp13.colno) {
-                                break;
-                              } else {
-                                flag4 = false;
-                                if (tmp12.function !== tmp13.function) {
-                                  break;
-                                } else {
-                                  let sum1 = num2 + 1;
-                                  num2 = sum1;
-                                  flag4 = true;
-                                  if (sum1 >= framesFromEvent3.length) {
-                                    break;
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    } else {
-                      flag4 = false;
-                    }
-                  } else {
-                    flag4 = false;
-                  }
-                } else {
-                  flag4 = true;
-                }
-                flag3 = false;
-                if (flag4) {
-                  flag3 = true;
-                }
-              }
-            }
-          }
+        const currentScope = tmp(12340).getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          span = tmp(12318).getActiveSpan();
+          const tmpResult10 = tmp(12318);
         }
-      }
-      tmp9 = flag3;
-    }
-    tmp = tmp9;
-  }
-  return tmp;
-}
-function _isSameFingerprint(fingerprint, fingerprint2) {
-  fingerprint = fingerprint.fingerprint;
-  fingerprint2 = fingerprint2.fingerprint;
-  if (!fingerprint) {
-    if (!fingerprint2) {
-      return true;
-    }
-  }
-  if (!fingerprint) {
-    try {
-      const joined = fingerprint.join("");
-      return joined === fingerprint2.join("");
-    } catch (err) {
-      return false;
-    }
-  }
-  return false;
-}
-
-export { _shouldDropEvent };
-export const dedupeIntegration = setupIntegration.defineIntegration(() => ({
-  name: "Dedupe",
-  processEvent(type) {
-    if (type.type) {
-      return type;
-    } else {
-      try {
-        if (_shouldDropEvent(type, closure_0)) {
-          if (_mod12323.DEBUG_BUILD) {
-            const logger = _mod12295.logger;
-            logger.warn("Event dropped due to being a duplicate of previously captured event.");
-          }
-          return null;
+        if (span) {
+          let spanToTraceHeaderResult = tmp(12318).spanToTraceHeader(span);
+          const tmpResult11 = tmp(12318);
         } else {
-          closure_0 = type;
-          return type;
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          spanToTraceHeaderResult = tmp(12325).generateSentryTraceHeader(traceId, spanId, sampled);
+          const tmpResult12 = tmp(12325);
         }
-      } catch (err) {
+        const tmpResult13 = tmp(12349);
+        if (span) {
+          let dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
+        }
+        const tmpResult9 = tmp(12340);
+        const result = tmp(12326).dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(12325).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          let obj5 = obj4;
+        } else {
+          const logger = tmp(12313).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
       }
+      const tmpResult8 = tmp(12332);
     }
   }
-}));
+  return {};
+};

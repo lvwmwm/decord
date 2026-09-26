@@ -1,16 +1,12 @@
 // Module ID: 13574
 // Function ID: 13575
-// Dependencies: [13571]
+// Dependencies: [13560]
 
 // Module 13574
-import _mod13571 from "module_13571" /* 13571 */;
+import _mod13560 from "module_13560" /* 13560 */;
 
 
-export default (arg0, arg1) => {
-  const tmp = new _mod13571(arg0, arg1);
-  return new _mod13571(arg0, arg1).set.map((arr) => {
-    const mapped = arr.map((value) => value.value);
-    const str = mapped.join(" ");
-    return mapped.join(" ").trim().split(" ");
-  });
+export default (arg0, arg1, arg2) => {
+  const obj = new _mod13560(arg0, arg2);
+  return obj.compare(new _mod13560(arg1, arg2));
 };

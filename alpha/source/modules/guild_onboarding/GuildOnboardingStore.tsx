@@ -1,14 +1,14 @@
-// Module ID: 6512
-// Function ID: 6513
+// Module ID: 6517
+// Function ID: 6518
 // Name: GuildOnboardingStore
-// Dependencies: [1074, 504, 2069, 573, 2]
+// Dependencies: [1074, 504, 2070, 573, 2]
 // Exports: isOnboarding
 
-// Module 6512 (GuildOnboardingStore)
+// Module 6517 (GuildOnboardingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
-import FavoritesUtils from "FavoritesUtils" /* 2069 */;
+import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

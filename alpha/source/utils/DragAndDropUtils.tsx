@@ -1,10 +1,10 @@
-// Module ID: 11891
-// Function ID: 11892
+// Module ID: 11909
+// Function ID: 11910
 // Name: DragAndDropUtils
 // Dependencies: [3, 12, 2]
 // Exports: getPositionUpdates, moveItemFromTo
 
-// Module 11891 (DragAndDropUtils)
+// Module 11909 (DragAndDropUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 

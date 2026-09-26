@@ -1,21 +1,21 @@
-// Module ID: 13323
-// Function ID: 13324
+// Module ID: 13340
+// Function ID: 13341
 // Name: CallStateHooks
-// Dependencies: [4845, 502, 5585, 4852, 1074, 4850, 504, 8951, 2]
+// Dependencies: [4852, 502, 5590, 4859, 1074, 4857, 504, 8962, 2]
 // Exports: default
 
-// Module 13323 (CallStateHooks)
-import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
+// Module 13340 (CallStateHooks)
+import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5585 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
+import CallStore from "CallStore" /* 5590 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const Constants = fn(1074);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_7, RTCConnectionStates: closure_8 } = Constants);
-const ParticipantTypes = fn(4850).ParticipantTypes;
+const ParticipantTypes = fn(4857).ParticipantTypes;
 let obj = {};
 const merged = Object.assign({ initialized: false, callId: "r" });
 let obj2 = { DISCONNECTED: "disconneted", DISCONNECTING: "disconnecting", CONNECTING: "connecting", RINGING: "ringing", CONNECTED: "connected" };
@@ -64,7 +64,7 @@ export default function _default() {
     }
     return tmp;
   });
-  const tmp3 = id(8951)();
+  const tmp3 = id(8962)();
   dependencyMap = tmp3;
   obj2 = require("initialize");
   const items2 = [RTCConnectionStore];

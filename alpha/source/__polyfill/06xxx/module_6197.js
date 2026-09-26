@@ -1,6 +1,6 @@
 // Module ID: 6197
 // Function ID: 6198
-// Dependencies: [41, 42, 93, 95, 96, 98, 6089]
+// Dependencies: [41, 42, 93, 95, 96, 98, 6094]
 
 // Module 6197
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
@@ -30,18 +30,26 @@ function _isNativeReflectConstruct() {
   }
 }
 let _classCallCheck = _classCallCheck_mod;
-function changeEventCalculator(arg0, arg1) {
-  return arg0;
+function changeEventCalculator(rotation, rotation2) {
+  if (undefined === rotation2) {
+    const obj2 = { rotationChange: rotation.rotation };
+    let obj = obj2;
+  } else {
+    obj = { rotationChange: rotation.rotation - rotation2.rotation };
+  }
+  const merged = Object.assign(rotation);
+  const merged1 = Object.assign(obj);
+  return {};
 }
 changeEventCalculator.__closure = {};
-changeEventCalculator.__workletHash = 12945462865583;
-changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_manualGestureTs1(current,_previous){return current;}" };
-class ManualGesture {
+changeEventCalculator.__workletHash = 11988645380499;
+changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_rotationGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={rotationChange:current.rotation};}else{changePayload={rotationChange:current.rotation-previous.rotation};}return{...current,...changePayload};}" };
+class RotationGesture {
   constructor() {
     self = this;
-    tmp = closure_0(this, ManualGesture);
+    tmp = closure_0(this, RotationGesture);
     tmp2 = c2;
-    obj = c2(ManualGesture);
+    obj = c2(RotationGesture);
     tmp3 = closure_1;
     if (closure_4()) {
       tmp5 = globalThis;
@@ -51,12 +59,12 @@ class ManualGesture {
       constructResult = obj.apply(self, undefined);
     }
     tmp3Result = tmp3(self, constructResult);
-    tmp3Result.handlerName = "ManualGestureHandler";
+    tmp3Result.handlerName = "RotationGestureHandler";
     return tmp3Result;
   }
 }
-_classCallCheck = ManualGesture;
-_inherits(ManualGesture, fn(6089).ContinousBaseGesture);
+_classCallCheck = RotationGesture;
+_inherits(RotationGesture, fn(6094).ContinousBaseGesture);
 const entry = {
   key: "onChange",
   value: function onChange(arg0) {
@@ -72,4 +80,4 @@ const entry = {
 };
 let items = [entry];
 
-export const ManualGesture = _createClass(ManualGesture, items);
+export const RotationGesture = _createClass(RotationGesture, items);

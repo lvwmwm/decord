@@ -1,12 +1,12 @@
-// Module ID: 6363
-// Function ID: 6364
+// Module ID: 6368
+// Function ID: 6369
 // Name: NativeCeremonies
-// Dependencies: [5, 3, 6012, 6009, 1115, 1364, 6364, 6365, 1609, 2]
+// Dependencies: [5, 3, 6017, 6014, 1115, 1364, 6369, 6370, 1610, 2]
 
-// Module 6363 (NativeCeremonies)
+// Module 6368 (NativeCeremonies)
 import LoggerDefault from "Logger" /* 3 */;
 import util from "util" /* 1115 */;
-import NativeSecurityKeyManagerModuleDefault from "NativeSecurityKeyManagerModule" /* 6012 */;
+import NativeSecurityKeyManagerModuleDefault from "NativeSecurityKeyManagerModule" /* 6017 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -216,7 +216,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
   });
 };
 obj.registerAndroidCredentialManagerPasskey = function registerAndroidCredentialManagerPasskey(setError) {
-  setRegistering(6012).registerPasskey;
+  setRegistering(6017).registerPasskey;
   setError = undefined;
   setError = setError.setError;
   setRegistering = setError.setRegistering;
@@ -269,7 +269,7 @@ obj.registerAndroidCredentialManagerPasskey = function registerAndroidCredential
   }).finally(() => setRegistering(false));
 };
 obj.registerAndroidDevicePasskey = function registerAndroidDevicePasskey(setError) {
-  setRegistering(6012).register;
+  setRegistering(6017).register;
   setError = undefined;
   setError = setError.setError;
   setRegistering = setError.setRegistering;
@@ -323,7 +323,7 @@ obj.registerAndroidDevicePasskey = function registerAndroidDevicePasskey(setErro
 };
 obj.registerPasskey = function registerPasskey(setError) {
   const obj = setError(1364);
-  const tmp2 = setRegistering(6012);
+  const tmp2 = setRegistering(6017);
   if (isAndroidResult) {
     setError = undefined;
     const setError2 = setError.setError;
@@ -465,7 +465,7 @@ obj.registerPasskey = function registerPasskey(setError) {
 obj.registerSecurityKey = function registerSecurityKey(setError, fn) {
   let register = fn;
   if (fn === undefined) {
-    register = setRegistering(6012).register;
+    register = setRegistering(6017).register;
   }
   setError = undefined;
   setError = setError.setError;

@@ -1,14 +1,14 @@
-// Module ID: 7193
-// Function ID: 7194
+// Module ID: 7198
+// Function ID: 7199
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [7194, 1074, 1364, 1978, 5009, 504, 573, 2]
+// Dependencies: [7199, 1074, 1364, 1979, 5016, 504, 573, 2]
 
-// Module 7193 (ApplicationCommandAutocompleteStore)
+// Module 7198 (ApplicationCommandAutocompleteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import Server from "Server" /* 1978 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7194 */;
+import Server from "Server" /* 1979 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7199 */;
 
 require = fn;
 function handleInit() {

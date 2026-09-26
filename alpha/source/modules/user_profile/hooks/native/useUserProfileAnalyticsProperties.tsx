@@ -1,13 +1,13 @@
-// Module ID: 7637
-// Function ID: 7638
+// Module ID: 7644
+// Function ID: 7645
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [19, 7621, 2]
+// Dependencies: [19, 7628, 2]
 // Exports: default
 
-// Module 7637 (useUserProfileAnalyticsProperties)
+// Module 7644 (useUserProfileAnalyticsProperties)
 import noop from "module_19" /* 19 */;
 
-const UserProfileAnalyticsTypes = fn(7621).UserProfileAnalyticsTypes;
+const UserProfileAnalyticsTypes = fn(7628).UserProfileAnalyticsTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileAnalyticsProperties.tsx");
 

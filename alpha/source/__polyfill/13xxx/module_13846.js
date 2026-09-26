@@ -1,37 +1,47 @@
 // Module ID: 13846
 // Function ID: 13847
-// Dependencies: [13847, 13858, 13860, 13863, 13866, 13867]
+// Dependencies: [13815, 13847, 13790, 13843]
 
 // Module 13846
-import withoutSetter from "withoutSetter" /* 13847 */;
-import _mod13858 from "module_13858" /* 13858 */;
+import _mod13815 from "module_13815" /* 13815 */;
 
-let closure_3 = withoutSetter("toPrimitive");
 
-export default (arg0, arg1) => {
-  if (_mod13858(arg0)) {
-    if (!tmp(13860)(arg0)) {
-      let str = arg1;
-      const tmp4 = tmp(13863)(arg0, closure_3);
-      if (tmp4) {
-        if (undefined === str) {
-          str = "default";
+export default (arg0, arg1, value, arg3) => {
+  let obj = arg3;
+  if (!arg3) {
+    obj = {};
+  }
+  let flag = obj.enumerable;
+  let name = arg1;
+  if (undefined !== obj.name) {
+    name = obj.name;
+  }
+  if (_mod13815(value)) {
+    tmp3(13847)(value, name, obj);
+  }
+  if (obj.global) {
+    if (flag) {
+      arg0[arg1] = value;
+    } else {
+      tmp3(13790)(arg1, value);
+    }
+  } else {
+    try {
+      if (obj.unsafe) {
+        if (arg0[arg1]) {
+          flag = true;
         }
-        const tmp5 = tmp(13866)(tmp4, arg0, str);
-        if (tmp(13858)(tmp5)) {
-          if (!tmp(13860)(tmp5)) {
-            const tmp9 = new TypeError("Can't convert object to primitive value");
-            throw tmp9;
-          }
-        }
-        return tmp5;
       } else {
-        let str2 = str;
-        if (undefined === str) {
-          str2 = "number";
-        }
-        return tmp(13867)(arg0, str2);
+        delete tmp[tmp2];
       }
+      if (flag) {
+        arg0[arg1] = value;
+      } else {
+        const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
+        tmp3(13843).f(arg0, arg1, obj2);
+        const tmp3Result = tmp3(13843);
+      }
+    } catch (err) {
     }
   }
   return arg0;

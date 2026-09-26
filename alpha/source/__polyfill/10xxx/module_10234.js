@@ -1,20 +1,36 @@
 // Module ID: 10234
 // Function ID: 10235
-// Dependencies: [19]
-// Exports: useUpdateGestureConfig
+// Dependencies: [19, 10235]
+// Exports: useLayoutConfig
 
 // Module 10234
-import _mod19 from "module_19" /* 19 */;
+import Layouts5 from "Layouts" /* 10235 */;
+import noop from "module_19" /* 19 */;
 
-const useEffect = _mod19.useEffect;
+require = arg1;
 
-export const useUpdateGestureConfig = (arg0, enabled) => {
-  closure_0 = arg0;
-  enabled = enabled.enabled;
-  const items = [enabled, arg0];
-  useEffect(() => {
-    if (undefined !== enabled) {
-      closure_0.enabled(tmp);
+export const useLayoutConfig = function useLayoutConfig(size) {
+  size = size.size;
+  const vertical = size.vertical;
+  const items = [, , , ];
+  ({ mode: arr[0], modeConfig: arr[1] } = size);
+  items[2] = size;
+  items[3] = vertical;
+  return vertical.useMemo(() => {
+    const obj = { size, vertical };
+    const mode = size.mode;
+    if ("parallax" === mode) {
+      const Layouts4 = Layouts5.Layouts;
+      return Layouts4.parallax(obj, tmp.modeConfig);
+    } else if ("horizontal-stack" === mode) {
+      const Layouts3 = Layouts5.Layouts;
+      return Layouts3.horizontalStack(tmp.modeConfig);
+    } else if ("vertical-stack" === mode) {
+      const Layouts2 = Layouts5.Layouts;
+      return Layouts2.verticalStack(tmp.modeConfig);
+    } else {
+      const Layouts = Layouts5.Layouts;
+      return Layouts.normal(obj);
     }
   }, items);
 };

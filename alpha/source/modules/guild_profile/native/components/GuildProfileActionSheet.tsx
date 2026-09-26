@@ -1,25 +1,25 @@
-// Module ID: 9195
-// Function ID: 9196
+// Module ID: 9206
+// Function ID: 9207
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 9017, 9196, 1074, 21, 4829, 576, 4763, 9018, 504, 4528, 7608, 6578, 6598, 9019, 9197, 5274, 1115, 9211, 9198, 9212, 672, 6566, 5286, 6040, 6570, 2]
+// Dependencies: [19, 17, 9028, 9207, 1074, 21, 4836, 576, 4767, 9029, 504, 4531, 7615, 6583, 6603, 9030, 9208, 5281, 1115, 9222, 9209, 9223, 672, 6571, 5293, 6045, 6575, 2]
 // Exports: default
 
-// Module 9195 (GuildProfileActionSheet)
+// Module 9206 (GuildProfileActionSheet)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9019 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9030 */;
 import noop from "module_19" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 9017 */;
+import GuildProfileStore from "GuildProfileStore" /* 9028 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);
-const GuildProfileFetchStatus = fn(9017).GuildProfileFetchStatus;
-const INVALID_ACCESS_ERROR_CODE = fn(9196).INVALID_ACCESS_ERROR_CODE;
+const GuildProfileFetchStatus = fn(9028).GuildProfileFetchStatus;
+const INVALID_ACCESS_ERROR_CODE = fn(9207).INVALID_ACCESS_ERROR_CODE;
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { loadingContainer: { paddingTop: 40 }, footerContainer: { paddingHorizontal: 16, paddingVertical: 40 }, scrollView: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW } };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);

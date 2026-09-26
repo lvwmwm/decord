@@ -1,16 +1,16 @@
-// Module ID: 7444
-// Function ID: 7445
+// Module ID: 7450
+// Function ID: 7451
 // Name: GuildStreamSystemMessage
-// Dependencies: [4871, 7417, 7397, 7399, 1115, 7401, 2]
+// Dependencies: [4878, 7422, 7402, 7404, 1115, 7406, 2]
 // Exports: createGuildStreamSystemMessage
 
-// Module 7444 (GuildStreamSystemMessage)
+// Module 7450 (GuildStreamSystemMessage)
 import util from "util" /* 1115 */;
-import Constants from "Constants" /* 4871 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7397 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7399 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7401 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7417 */;
+import Constants from "Constants" /* 4878 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7406 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7422 */;
 import size from "module_2" /* 2 */;
 
 const StreamTypes = Constants.StreamTypes;

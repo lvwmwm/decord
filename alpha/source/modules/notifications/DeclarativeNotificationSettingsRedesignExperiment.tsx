@@ -1,11 +1,11 @@
-// Module ID: 13989
-// Function ID: 13990
+// Module ID: 14014
+// Function ID: 14015
 // Name: DeclarativeNotificationSettingsRedesignExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isDeclarativeNotificationSettingsRedesignEnabled, useIsDeclarativeNotificationSettingsRedesignEnabled
 
-// Module 13989 (DeclarativeNotificationSettingsRedesignExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14014 (DeclarativeNotificationSettingsRedesignExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-09-declarative-notification-settings-redesign", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

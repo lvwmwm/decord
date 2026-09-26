@@ -1,13 +1,13 @@
-// Module ID: 10426
-// Function ID: 10427
+// Module ID: 10437
+// Function ID: 10438
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 2107, 2047, 9674, 2069, 504, 9692, 2]
+// Dependencies: [502, 2108, 2048, 9685, 2070, 504, 9703, 2]
 // Exports: default
 
-// Module 10426 (useFavoritesGuildChannelActions)
+// Module 10437 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import FavoriteStore from "FavoriteStore" /* 2047 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 const require = globalThis.__r;
 
@@ -49,6 +49,6 @@ export default function useFavoritesGuildChannelActions(channelId, FavoritesGuil
   if (tmp7) {
     tmp7 = !isFavoritesGuildSelected;
   }
-  const favoritesBetaTagDismissibleContent = tmp(9692).useFavoritesBetaTagDismissibleContent(tmp7);
+  const favoritesBetaTagDismissibleContent = tmp(9703).useFavoritesBetaTagDismissibleContent(tmp7);
   return { isExperimentEnabled, hasFavoritesAccess: hasAccess, canFavoriteChannel: isFavoritableChannelResult, isChannelInFavorites: stateFromStores, isFavoritesGuild: isFavoritesGuildSelected, channelId: channelId.id, shouldShowBetaTag: favoritesBetaTagDismissibleContent.shouldShowBetaTag, dismissBetaTag: favoritesBetaTagDismissibleContent.dismissBetaTag };
 };

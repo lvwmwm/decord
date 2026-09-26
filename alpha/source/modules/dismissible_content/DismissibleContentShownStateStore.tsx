@@ -1,17 +1,17 @@
-// Module ID: 2034
-// Function ID: 2035
+// Module ID: 2035
+// Function ID: 2036
 // Name: DismissibleContentShownStateStore
-// Dependencies: [5, 2035, 2036, 2037, 1074, 559, 1243, 2033, 2038, 1271, 2039, 1248, 504, 2040, 573, 2]
+// Dependencies: [5, 2036, 2037, 2038, 1074, 559, 1243, 2034, 2039, 1271, 2040, 1248, 504, 2041, 573, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
 
-// Module 2034 (DismissibleContentShownStateStore)
+// Module 2035 (DismissibleContentShownStateStore)
 import initializeDefault from "initialize" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import isActionRequiredDefault from "isActionRequired" /* 2040 */;
+import isActionRequiredDefault from "isActionRequired" /* 2041 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2035 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2036 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2036 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
 
 function withContent(currentlyShown, content) {
   let tmp = arg2;
@@ -32,7 +32,7 @@ function withContent(currentlyShown, content) {
       const currentlyShownGroup = currentlyShown.currentlyShownGroup;
       currentlyShownGroup.add(content.groupName);
     }
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = content(2033).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = content(2034).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content)) {
       currentlyShown.shownFatigableCandidate = content;
       const prevFatigableCandidate = currentlyShown.prevFatigableCandidate;
@@ -343,7 +343,7 @@ function isInCooldown() {
 }
 const Constants = fn(1074);
 ({ Endpoints: metroRequire, NOOP: closure_7 } = Constants);
-let set = new Set(fn(2037).SERVER_ARBITRATION_CANDIDATES);
+let set = new Set(fn(2038).SERVER_ARBITRATION_CANDIDATES);
 let closure_9 = new BackoffDefault(1000, 60000);
 let closure_10 = {};
 let c11 = null;
@@ -570,7 +570,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
     }
   }
 });
-const batchInvocationManager = new fn(2039).BatchInvocationManager(function() {
+const batchInvocationManager = new fn(2040).BatchInvocationManager(function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {
@@ -647,7 +647,7 @@ export const isStateInCooldown = function isStateInCooldown(shownFatigableCandid
 };
 export const addCandidateContent = function addCandidateContent(content) {
   closure_0 = content;
-  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = closure_0(2033).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = closure_0(2034).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
   closure_1 = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content);
   dependencyMap = null;
   closure_0(1248).batchUpdates(() => {

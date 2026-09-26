@@ -1,15 +1,15 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16478
+// Function ID: 16479
 // Name: renderChannelContent
-// Dependencies: [19, 17, 9566, 5011, 21, 4829, 1364, 16446, 5366, 16450, 4825, 5402, 8040, 15724, 2]
+// Dependencies: [19, 17, 9577, 5018, 21, 4836, 1364, 16475, 5373, 16479, 4832, 5409, 8048, 15752, 2]
 // Exports: default
 
-// Module 16449 (renderChannelContent)
-import Text_Text from "Text/Text" /* 4825 */;
-import LockIcon from "LockIcon" /* 5402 */;
-import WarningIcon from "WarningIcon" /* 8040 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16446 */;
-import ChannelTitleDefault from "ChannelTitle" /* 16450 */;
+// Module 16478 (renderChannelContent)
+import Text_Text from "Text/Text" /* 4832 */;
+import LockIcon from "LockIcon" /* 5409 */;
+import WarningIcon from "WarningIcon" /* 8048 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16475 */;
+import ChannelTitleDefault from "ChannelTitle" /* 16479 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ function ChannelContent(arg0) {
   let tmp9Result5 = null != channel;
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(5366)(channel);
+      locked = tmp2(5373)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -90,7 +90,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(15724), obj12);
+      isSubscriptionGated = tmp9(tmp2(15752), obj12);
     }
     items3[2] = isSubscriptionGated;
     obj8.children = items3;
@@ -152,11 +152,11 @@ function ChannelContent(arg0) {
   return React5(View, obj2);
 }
 const View = fn(17).View;
-const SUBTITLE_OPACITY_NORMAL = fn(9566).SUBTITLE_OPACITY_NORMAL;
-const UnreadSetting = fn(5011).UnreadSetting;
+const SUBTITLE_OPACITY_NORMAL = fn(9577).SUBTITLE_OPACITY_NORMAL;
+const UnreadSetting = fn(5018).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let PlatformUtils = fn(1364);
 let num = -1;
 if (PlatformUtils.isIOS()) {

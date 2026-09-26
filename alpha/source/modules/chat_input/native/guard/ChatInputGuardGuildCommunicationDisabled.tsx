@@ -1,17 +1,17 @@
-// Module ID: 11936
-// Function ID: 11937
+// Module ID: 11954
+// Function ID: 11955
 // Name: ChatInputGuardGuildCommunicationDisabled
-// Dependencies: [19, 2109, 21, 11937, 11923, 11318, 1115, 2]
+// Dependencies: [19, 2110, 21, 11955, 11941, 11332, 1115, 2]
 
-// Module 11936 (ChatInputGuardGuildCommunicationDisabled)
+// Module 11954 (ChatInputGuardGuildCommunicationDisabled)
 import util from "util" /* 1115 */;
-import ClockWarningIcon from "ClockWarningIcon" /* 11318 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 11923 */;
-import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 11937 */;
+import ClockWarningIcon from "ClockWarningIcon" /* 11332 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 11941 */;
+import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 11955 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const link = fn(2109).GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK;
+const link = fn(2110).GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildCommunicationDisabled.tsx");

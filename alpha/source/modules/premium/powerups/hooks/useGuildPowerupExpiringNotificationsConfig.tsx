@@ -1,14 +1,14 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12053
+// Function ID: 12054
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [12036, 12037, 1115, 2940, 4723, 2518, 2]
+// Dependencies: [12054, 12055, 1115, 2941, 4727, 2519, 2]
 // Exports: default
 
-// Module 12035 (useGuildPowerupExpiringNotificationsConfig)
+// Module 12053 (useGuildPowerupExpiringNotificationsConfig)
 import util from "util" /* 1115 */;
-import Powerups from "Powerups" /* 4723 */;
-import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12036 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12037 */;
+import Powerups from "Powerups" /* 4727 */;
+import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12054 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12055 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
@@ -20,7 +20,7 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     let stringResult;
     if (arr2.length > 0) {
       const intl = util.intl;
-      stringResult = intl.string(tmp(2940)["B3OfL/"]);
+      stringResult = intl.string(tmp(2941)["B3OfL/"]);
     }
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(arr.map((title) => title.title), 0);
@@ -34,11 +34,11 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     const items3 = [];
     if (arr.some((skuId) => skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID)) {
       const intl2 = util.intl;
-      items3.push(intl2.string(tmp(2518).Sfr0Jw));
+      items3.push(intl2.string(tmp(2519).Sfr0Jw));
     }
     if (arr2.length > 0) {
       const intl3 = util.intl;
-      items3.push(intl3.string(tmp(2940).wiungr));
+      items3.push(intl3.string(tmp(2941).wiungr));
     }
     const obj2 = { shouldShow: tmp3, expiringPowerups: arr, expiringPowerupNames: items, warnings: items3 };
     return obj2;

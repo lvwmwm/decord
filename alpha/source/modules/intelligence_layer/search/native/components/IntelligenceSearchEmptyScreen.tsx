@@ -1,22 +1,22 @@
-// Module ID: 16420
-// Function ID: 16421
+// Module ID: 16449
+// Function ID: 16450
 // Name: IntelligenceSearchEmptyScreen
-// Dependencies: [19, 17, 21, 4829, 576, 6397, 4538, 1115, 4825, 3876, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6402, 4541, 1115, 4832, 3877, 2]
 
-// Module 16420 (IntelligenceSearchEmptyScreen)
+// Module 16449 (IntelligenceSearchEmptyScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef3876 from "module_3876" /* 3876 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4538 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6397 */;
+import _modDef3877 from "module_3877" /* 3877 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { container: { flex: 1, gap: nativeDefault.space.PX_8 }, copy: null };
 let obj3 = { flex: 1, gap: nativeDefault.space.PX_8 };
 obj.copy = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_4 };
@@ -38,11 +38,11 @@ export default noop.memo(() => {
   const obj2 = { style: tmp.copy, children: null };
   const obj3 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: null };
   let intl = util.intl;
-  obj3.children = intl.string(_modDef3876["0Vo35I"]);
+  obj3.children = intl.string(_modDef3877["0Vo35I"]);
   const items1 = [hasOwnProperty(Text_Text.Text, obj3), ];
   const obj4 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: null };
   const intl2 = util.intl;
-  obj4.children = intl2.string(_modDef3876.njrqqv);
+  obj4.children = intl2.string(_modDef3877.njrqqv);
   items1[1] = hasOwnProperty(Text_Text.Text, obj4);
   obj2.children = items1;
   obj.children = timestampProducer(View, obj2);

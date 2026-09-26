@@ -1,13 +1,13 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12528
+// Function ID: 12529
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 672, 4528, 576, 2]
+// Dependencies: [32, 672, 4531, 576, 2]
 // Exports: default
 
-// Module 12511 (useMediaModalFooterBackground)
+// Module 12528 (useMediaModalFooterBackground)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import useToken from "useToken" /* 4528 */;
+import useToken from "useToken" /* 4531 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

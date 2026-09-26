@@ -1,9 +1,9 @@
-// Module ID: 4565
-// Function ID: 4566
+// Module ID: 4568
+// Function ID: 4569
 // Name: ReanimatedViewNativeComponent
 // Dependencies: [65, 2]
 
-// Module 4565 (ReanimatedViewNativeComponent)
+// Module 4568 (ReanimatedViewNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

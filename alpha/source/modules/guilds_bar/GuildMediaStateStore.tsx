@@ -1,28 +1,28 @@
-// Module ID: 13236
-// Function ID: 13237
+// Module ID: 13253
+// Function ID: 13254
 // Name: GuildMediaStateStore
-// Dependencies: [2043, 1235, 6941, 2049, 2048, 4851, 502, 2044, 2066, 4466, 4476, 2098, 5010, 4848, 1074, 13237, 1095, 4455, 13238, 8932, 11, 5723, 8781, 504, 558, 573, 2]
+// Dependencies: [2044, 1235, 6946, 2050, 2049, 4858, 502, 2045, 2067, 4469, 4479, 2099, 5017, 4855, 1074, 13254, 1095, 4458, 13255, 8943, 11, 5728, 8789, 504, 558, 573, 2]
 
-// Module 13236 (GuildMediaStateStore)
+// Module 13253 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4455 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6941 */;
-import StageInstanceStore from "StageInstanceStore" /* 2049 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
+import StageInstanceStore from "StageInstanceStore" /* 2050 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
-import RelationshipStore from "RelationshipStore" /* 4476 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
-import VoiceStateStore from "VoiceStateStore" /* 4848 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 require = fn;
 function markAllStale() {
@@ -117,7 +117,7 @@ function computeGuildMediaState(guildId) {
       }
       continue;
     }
-    obj = { skipMutedVcs: guildId(13237).getIsDontBadgeMutedVcsEnabled("GuildMediaStateStore"), currentUserId: id.getId(), selectedVoiceChannelId: voiceChannelId, selectedVoiceGuildId: null, selectedVoiceChannelHasVideo: null, isSelectedVoiceChannelStage: null, blockedOrIgnoredUserIds: null, streamChannelIdsByGuild: null };
+    obj = { skipMutedVcs: guildId(13254).getIsDontBadgeMutedVcsEnabled("GuildMediaStateStore"), currentUserId: id.getId(), selectedVoiceChannelId: voiceChannelId, selectedVoiceGuildId: null, selectedVoiceChannelHasVideo: null, isSelectedVoiceChannelStage: null, blockedOrIgnoredUserIds: null, streamChannelIdsByGuild: null };
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
@@ -160,8 +160,8 @@ function computeGuildMediaState(guildId) {
       if (!tmp7) {
         const items = [];
         HermesBuiltin.arraySpread(location.userIds, 0);
-        tmp7 = !tmp(13238).hasBlockedOrIgnoredUserIds(items, tmp6.blockedOrIgnoredUserIds);
-        const tmpResult = tmp(13238);
+        tmp7 = !tmp(13255).hasBlockedOrIgnoredUserIds(items, tmp6.blockedOrIgnoredUserIds);
+        const tmpResult = tmp(13255);
       }
       tmp5 = tmp7;
     }
@@ -237,7 +237,7 @@ function computeGuildMediaState(guildId) {
           const basicChannel = ChannelStore.getBasicChannel(item);
           let tmp2 = null != basicChannel;
           if (tmp2) {
-            tmp2 = closure_1(5723)(basicChannel, PermissionStore);
+            tmp2 = closure_1(5728)(basicChannel, PermissionStore);
           }
           return tmp2;
         });
@@ -248,12 +248,12 @@ function computeGuildMediaState(guildId) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = obj5.getEmbeddedActivityLocationChannelId(_location);
-        let tmp34Result = tmp34(8781);
+        let tmp34Result = tmp34(8789);
         if (tmp34Result.isActivitiesInTextEnabled(ChannelStore.getChannel(embeddedActivityLocationChannelId))) {
           let someResult2 = found.length > 0;
         } else {
           someResult2 = found.some((location) => {
-            const channel = ChannelStore.getChannel(guildId(4455).getEmbeddedActivityLocationChannelId(location.location));
+            const channel = ChannelStore.getChannel(guildId(4458).getEmbeddedActivityLocationChannelId(location.location));
             let tmp2 = null != channel;
             if (tmp2) {
               tmp2 = isVoiceChannel(channel.type);
@@ -262,7 +262,7 @@ function computeGuildMediaState(guildId) {
           });
         }
         let obj4 = { audio: flag2, video: flag, screenshare: someResult, liveStage: someResult1, activeEvent: null, activity: null, isCurrentUserConnected: false };
-        let tmp34Result2 = tmp34(8932);
+        let tmp34Result2 = tmp34(8943);
         obj4.activeEvent = null != tmp34Result2.getGuildActiveEvent(arg0);
         obj4.activity = someResult2;
         return obj4;
@@ -281,7 +281,7 @@ function handleGuildCreateOrDelete(guild) {
   map.delete(guild.guild.id);
   return flag;
 }
-const isVoiceChannel = fn(2048).isVoiceChannel;
+const isVoiceChannel = fn(2049).isVoiceChannel;
 const Constants = fn(1074);
 ({ BasicPermissions: closure_17, ME: closure_18 } = Constants);
 let closure_19 = Object.freeze({ audio: false, video: false, screenshare: false, liveStage: false, activeEvent: false, activity: false, isCurrentUserConnected: false });

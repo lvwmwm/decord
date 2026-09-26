@@ -1,21 +1,21 @@
-// Module ID: 16932
-// Function ID: 16933
+// Module ID: 16960
+// Function ID: 16961
 // Name: VoicePanelCTACardCallerDisconnected
-// Dependencies: [32, 19, 502, 2044, 1372, 21, 4829, 576, 11740, 504, 4981, 5896, 5894, 4825, 1115, 2]
+// Dependencies: [32, 19, 502, 2045, 1372, 21, 4836, 576, 11754, 504, 4988, 5901, 5899, 4832, 1115, 2]
 
-// Module 16932 (VoicePanelCTACardCallerDisconnected)
+// Module 16960 (VoicePanelCTACardCallerDisconnected)
 import nativeDefault from "native" /* 576 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { container: null, avatarContainer: null, avatarWrapper: null, avatar: null, disconnectedAvatar: null, textContainer: null, text: null };
 let size = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.container = size;

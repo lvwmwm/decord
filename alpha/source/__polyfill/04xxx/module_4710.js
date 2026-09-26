@@ -1,21 +1,43 @@
 // Module ID: 4710
 // Function ID: 4711
-// Dependencies: [19, 4707]
-// Exports: usePortalState
+// Dependencies: [19, 4711, 4712]
+// Exports: usePortal
 
 // Module 4710
-import _mod19 from "module_19" /* 19 */;
-import _mod4707 from "module_4707" /* 4707 */;
+import ACTIONS from "ACTIONS" /* 4712 */;
+import noop from "module_19" /* 19 */;
 
-const useContext = _mod19.useContext;
+({ useCallback: c2, useContext: c3 } = noop);
 
-export const usePortalState = (arg0) => {
-  const tmp = useContext(_mod4707.PortalStateContext);
+export const usePortal = () => {
+  let str = arg0;
+  if (arg0 === undefined) {
+    str = "root";
+  }
+  const tmp = closure_3(str(4711).PortalDispatchContext);
+  dependencyMap = tmp;
   if (null === tmp) {
     const _Error = Error;
-    const error = new Error("'PortalStateContext' cannot be null, please add 'PortalProvider' to the root component.");
+    const error = new Error("'PortalDispatchContext' cannot be null, please add 'PortalProvider' to the root component.");
     throw error;
   } else {
-    return tmp[arg0] || [];
+    const tmp3 = closure_2(() => {
+      closure_1({ type: ACTIONS.ACTIONS.REGISTER_HOST, hostName: str });
+    }, []);
+    const tmp5 = closure_2((portalName, node) => {
+      closure_1({ type: ACTIONS.ACTIONS.ADD_UPDATE_PORTAL, hostName: str, portalName, node });
+    }, []);
+    const obj = {
+      registerHost: tmp3,
+      deregisterHost: closure_2(() => {
+          closure_1({ type: ACTIONS.ACTIONS.DEREGISTER_HOST, hostName: str });
+        }, []),
+      addPortal: tmp5,
+      updatePortal: tmp5,
+      removePortal: closure_2((portalName) => {
+          closure_1({ type: ACTIONS.ACTIONS.REMOVE_PORTAL, hostName: str, portalName });
+        }, [])
+    };
+    return obj;
   }
 };

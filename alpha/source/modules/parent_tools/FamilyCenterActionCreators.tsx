@@ -1,13 +1,13 @@
-// Module ID: 6954
-// Function ID: 6955
+// Module ID: 6959
+// Function ID: 6960
 // Name: FamilyCenterActionCreators
-// Dependencies: [5, 6955, 6953, 1074, 6956, 573, 1271, 1241, 2026, 1186, 1222, 2]
+// Dependencies: [5, 6960, 6958, 1074, 6961, 573, 1271, 1241, 2027, 1186, 1222, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 6954 (FamilyCenterActionCreators)
+// Module 6959 (FamilyCenterActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 6955 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 6960 */;
 
 const require = globalThis.__r;
 
@@ -382,7 +382,7 @@ let closure_15 = async function _shareIarWithParents(arg0, value) {
     }
   }
 };
-const FamilyCenterAction = fn(6953).FamilyCenterAction;
+const FamilyCenterAction = fn(6958).FamilyCenterAction;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7 } = Constants);
 const size = fn(2);
@@ -955,13 +955,13 @@ export default {
               return obj3;
             } else {
               let settings2;
-              const protoFieldClass = tmp5(2026).getProtoFieldClass(tmp5(1186).PreloadedUserSettings, tmp2);
+              const protoFieldClass = tmp5(2027).getProtoFieldClass(tmp5(1186).PreloadedUserSettings, tmp2);
               settings = settings.getSettings(tmp5);
               let tmp13;
               if (settings != null) {
                 tmp13 = settings[tmp36];
               }
-              const tmp33Result = tmp5(2026);
+              const tmp33Result = tmp5(2027);
               const modifiedProto = tmp33Result.createModifiedProto(tmp13, closure_2, protoFieldClass, tmp33(1186).PreloadedUserSettings, tmp36);
               if (null != modifiedProto) {
                 const HTTP = tmp33(1271).HTTP;
@@ -977,7 +977,7 @@ export default {
               } else {
                 c3 = 3;
               }
-              const obj12 = tmp5(2026);
+              const obj12 = tmp5(2027);
             }
           } else if (arg0 === 1) {
             c3 = 3;

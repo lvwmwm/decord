@@ -1,12 +1,12 @@
-// Module ID: 6963
-// Function ID: 6964
+// Module ID: 6968
+// Function ID: 6969
 // Name: ProfileEffectRecord
-// Dependencies: [1972, 1973, 2]
+// Dependencies: [1973, 1974, 2]
 // Exports: isProfileEffectRecord
 
-// Module 6963 (ProfileEffectRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1972 */;
+// Module 6968 (ProfileEffectRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1973 */;
 
 require = fn;
 const prototype = function ProfileEffectRecord(arg0) {

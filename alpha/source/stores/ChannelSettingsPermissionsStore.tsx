@@ -1,18 +1,18 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16640
+// Function ID: 16641
 // Name: ChannelSettingsPermissionsStore
-// Dependencies: [5056, 8078, 2044, 1074, 7841, 510, 4471, 11091, 12, 504, 573, 2]
+// Dependencies: [5063, 8086, 2045, 1074, 7849, 510, 4474, 11105, 12, 504, 573, 2]
 
-// Module 16611 (ChannelSettingsPermissionsStore)
+// Module 16640 (ChannelSettingsPermissionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4471 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11091 */;
-import ApplicationStore from "ApplicationStore" /* 5056 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8078 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11105 */;
+import ApplicationStore from "ApplicationStore" /* 5063 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8086 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 function init() {
@@ -91,7 +91,7 @@ function syncChannelUpdates(id) {
           }
           const obj5 = PermissionUtilsAll;
           tmp = null != guildId1 && null == obj2[guildId1];
-          closure_4 = obj5.areChannelsLocked(channel, category, obj4(11091).getAppChannelBotUserId(channel));
+          closure_4 = obj5.areChannelsLocked(channel, category, obj4(11105).getAppChannelBotUserId(channel));
           return true;
         }
       }
@@ -101,7 +101,7 @@ function syncChannelUpdates(id) {
 }
 const Constants = fn(1074);
 ({ ChannelSettingsSections: closure_9, ChannelTypes: c10, FormStates } = Constants);
-const ADVANCED_MODE_ON_KEY = fn(7841).ADVANCED_MODE_ON_KEY;
+const ADVANCED_MODE_ON_KEY = fn(7849).ADVANCED_MODE_ON_KEY;
 const set = new Set();
 let CLOSED = FormStates.CLOSED;
 let c15 = false;

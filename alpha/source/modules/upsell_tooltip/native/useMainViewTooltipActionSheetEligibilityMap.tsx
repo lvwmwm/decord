@@ -1,29 +1,29 @@
-// Module ID: 16744
-// Function ID: 16745
+// Module ID: 16773
+// Function ID: 16774
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 16721, 10117, 1220, 2036, 1074, 1374, 1084, 504, 16745, 1609, 7498, 6862, 16746, 12943, 10191, 10190, 10196, 4651, 2028, 16747, 16750, 16719, 16731, 9178, 11435, 2]
+// Dependencies: [32, 16750, 10128, 1220, 2037, 1074, 1374, 1084, 504, 16774, 1610, 7504, 6867, 16775, 12960, 10203, 10202, 10208, 4654, 2029, 16776, 16779, 16748, 16760, 9189, 11449, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 16744 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 16773 (useMainViewTooltipActionSheetEligibilityMap)
 import initialize from "initialize" /* 504 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6862 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7498 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9178 */;
-import MarketingComponentType from "MarketingComponentType" /* 10191 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10196 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11435 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 12943 */;
-import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 16719 */;
-import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 16731 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 16745 */;
-import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 16750 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6867 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7504 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9189 */;
+import MarketingComponentType from "MarketingComponentType" /* 10203 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10208 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11449 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 12960 */;
+import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 16748 */;
+import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 16760 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 16774 */;
+import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 16779 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 16721 */;
-import PromotionsStore from "PromotionsStore" /* 10117 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 16750 */;
+import PromotionsStore from "PromotionsStore" /* 10128 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2036 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
 
-const useGiftingPromotionAssetsReadyDefault = tmp4(16747);
+const useGiftingPromotionAssetsReadyDefault = tmp4(16776);
 require = fn;
 const PlatformTypes = fn(1074).PlatformTypes;
 const PremiumConstants = fn(1374);
@@ -49,8 +49,8 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     stateFromStores = !stateFromStores1;
   }
   if (stateFromStores) {
-    stateFromStores = !tmp(1609).isMetaQuest();
-    const tmpResult = tmp(1609);
+    stateFromStores = !tmp(1610).isMetaQuest();
+    const tmpResult = tmp(1610);
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult18 = initialize;
@@ -67,9 +67,9 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   const premiumDiscountOffer = usePremiumDiscountOffer.usePremiumDiscountOffer();
   const tmpResult19 = usePremiumDiscountOffer;
   const premiumTrialOffer = usePremiumTrialOffer.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16746).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16775).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const tmpResult20 = usePremiumTrialOffer;
-  const promotionMarketingComponent = usePromotionMarketingComponent.usePromotionMarketingComponent(tmp(10191).MarketingComponentType.MOBILE_BOTTOM_SHEET);
+  const promotionMarketingComponent = usePromotionMarketingComponent.usePromotionMarketingComponent(tmp(10203).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
   if (promotionMarketingComponent != null) {
     oneofKind = promotionMarketingComponent.properties.properties.oneofKind;
@@ -114,18 +114,18 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     return prop;
   });
-  const GiftPromotionReminderExperiment = tmp(10190).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10202).GiftPromotionReminderExperiment;
   const tmpResult24 = initialize;
   const giftingBadgeCoachmarkVariant = GiftingBadgesUtils.useGiftingBadgeCoachmarkVariant({ platform: "native", location: tmp5 });
   let isDismissed = null != stateFromStores2;
   if (isDismissed) {
-    isDismissed = tmp(4651).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2028).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores2).isDismissed;
-    const tmpResult26 = tmp(4651);
+    isDismissed = tmp(4654).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores2).isDismissed;
+    const tmpResult26 = tmp(4654);
   }
   let isDismissed2 = null != stateFromStores2;
   if (isDismissed2) {
-    isDismissed2 = tmp(4651).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2028).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores2).isDismissed;
-    const tmpResult27 = tmp(4651);
+    isDismissed2 = tmp(4654).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2029).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores2).isDismissed;
+    const tmpResult27 = tmp(4654);
   }
   let tmp20 = null;
   const tmpResult25 = GiftingBadgesUtils;
@@ -166,7 +166,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     obj7.newSnowflakeId = priceChangeId;
     obj7.actionSheetProperties = {};
-    obj6[tmp(2028).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET] = obj7;
+    obj6[tmp(2029).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET] = obj7;
     let tmp35 = null != premiumDiscountOffer;
     if (tmp35) {
       tmp35 = null == premiumDiscountOffer.expiresAt;
@@ -184,7 +184,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
       obj10 = {};
     }
     obj8.actionSheetProperties = obj10;
-    obj6[tmp(2028).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET] = obj8;
+    obj6[tmp(2029).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET] = obj8;
     let hasItem = null != premiumTrialOffer;
     if (hasItem) {
       hasItem = null == premiumTrialOffer.expiresAt;
@@ -208,12 +208,12 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
       obj13 = {};
     }
     obj11.actionSheetProperties = obj13;
-    obj6[tmp(2028).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET] = obj11;
+    obj6[tmp(2029).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET] = obj11;
     let dismissibleContent;
     if (mobileBottomSheet != null) {
       dismissibleContent = mobileBottomSheet.dismissibleContent;
     }
-    const obj14 = { isEligible: dismissibleContent === tmp(2028).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, newSnowflakeId: null, actionSheetProperties: null };
+    const obj14 = { isEligible: dismissibleContent === tmp(2029).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, newSnowflakeId: null, actionSheetProperties: null };
     let promotionId;
     if (promotionMarketingComponent != null) {
       promotionId = promotionMarketingComponent.promotionId;
@@ -231,12 +231,12 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     obj15.promotionId = promotionId1;
     obj14.actionSheetProperties = obj15;
-    obj6[tmp(2028).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL] = obj14;
+    obj6[tmp(2029).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL] = obj14;
     let dismissibleContent1;
     if (mobileBottomSheet != null) {
       dismissibleContent1 = mobileBottomSheet.dismissibleContent;
     }
-    const obj16 = { isEligible: dismissibleContent1 === tmp(2028).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, newSnowflakeId: null, actionSheetProperties: null };
+    const obj16 = { isEligible: dismissibleContent1 === tmp(2029).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, newSnowflakeId: null, actionSheetProperties: null };
     let promotionId2;
     if (promotionMarketingComponent != null) {
       promotionId2 = promotionMarketingComponent.promotionId;
@@ -254,7 +254,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     }
     obj17.promotionId = promotionId3;
     obj16.actionSheetProperties = obj17;
-    obj6[tmp(2028).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL] = obj16;
+    obj6[tmp(2029).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL] = obj16;
     let tmp48 = tmp32;
     if (tmp32) {
       tmp48 = isGiftCoachmarkAssetReady;
@@ -262,7 +262,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     const obj18 = { isEligible: tmp48, newSnowflakeId: stateFromStores2, actionSheetProperties: null };
     const obj19 = { coachmarkComponent: stateFromStores3 };
     obj18.actionSheetProperties = obj19;
-    obj6[tmp(2028).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET] = obj18;
+    obj6[tmp(2029).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET] = obj18;
     let tmp49 = !tmp32;
     if (tmp32) {
       tmp49 = null == stateFromStores4;
@@ -286,35 +286,35 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
     const obj20 = { isEligible: enabled, newSnowflakeId: stateFromStores2, actionSheetProperties: null };
     const obj21 = { coachmarkComponent: stateFromStores4 };
     obj20.actionSheetProperties = obj21;
-    obj6[tmp(2028).DismissibleContent.GIFTING_PROMOTION_REMINDER] = obj20;
+    obj6[tmp(2029).DismissibleContent.GIFTING_PROMOTION_REMINDER] = obj20;
     const obj22 = { isEligible: null != giftingBadgeCoachmarkVariant, actionSheetProperties: null };
     const obj23 = { variant: giftingBadgeCoachmarkVariant };
     obj22.actionSheetProperties = obj23;
-    obj6[tmp(2028).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK] = obj22;
+    obj6[tmp(2029).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK] = obj22;
     const obj24 = { isEligible: true, actionSheetProperties: {} };
-    obj6[tmp(2028).DismissibleContent.CUSTOM_APP_ICONS_COACHMARK] = obj24;
+    obj6[tmp(2029).DismissibleContent.CUSTOM_APP_ICONS_COACHMARK] = obj24;
     const obj25 = { isEligible: shouldShowRobloxConnectionCoachmark, actionSheetProperties: {} };
-    obj6[tmp(2028).DismissibleContent.ROBLOX_CONNECTION_COACHMARK] = obj25;
+    obj6[tmp(2029).DismissibleContent.ROBLOX_CONNECTION_COACHMARK] = obj25;
     const obj26 = { isEligible: isDisplayNameStylesFlywheelSettersEnabled, actionSheetProperties: {} };
-    obj6[tmp(2028).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK] = obj26;
+    obj6[tmp(2029).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK] = obj26;
     const obj27 = { isEligible: shouldShowConnectionDeprecationBottomSheet, actionSheetProperties: null };
     const obj28 = { platformTypes: items6 };
     obj27.actionSheetProperties = obj28;
-    obj6[tmp(2028).DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE] = obj27;
+    obj6[tmp(2029).DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE] = obj27;
     const obj29 = { isEligible: shouldShowConnectionDeprecationBottomSheet1, actionSheetProperties: null };
     const obj30 = { platformTypes: null };
     const items8 = [tmp26.BATTLENET];
     obj30.platformTypes = items8;
     obj29.actionSheetProperties = obj30;
-    obj6[tmp(2028).DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE] = obj29;
+    obj6[tmp(2029).DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE] = obj29;
     const obj31 = { isEligible: true, actionSheetProperties: {} };
-    obj6[tmp(2028).DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT] = obj31;
+    obj6[tmp(2029).DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT] = obj31;
     const obj32 = { isEligible: nitroFileUploadAnnouncementEligible, actionSheetProperties: {} };
-    obj6[tmp(2028).DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT] = obj32;
+    obj6[tmp(2029).DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT] = obj32;
     const obj33 = { isEligible: nitroFileUploadUpsellEligible, actionSheetProperties: {} };
-    obj6[tmp(2028).DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL] = obj33;
+    obj6[tmp(2029).DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL] = obj33;
     const obj34 = { isEligible: tmp31, actionSheetProperties: {} };
-    obj6[tmp(2028).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK] = obj34;
+    obj6[tmp(2029).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK] = obj34;
     let tmp33 = obj6;
   } else {
     tmp33 = obj6;

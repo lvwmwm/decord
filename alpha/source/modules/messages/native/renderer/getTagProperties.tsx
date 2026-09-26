@@ -1,13 +1,13 @@
-// Module ID: 7471
-// Function ID: 7472
+// Module ID: 7477
+// Function ID: 7478
 // Name: getTagProperties
-// Dependencies: [17, 4822, 7472, 1115, 7474, 7476, 2]
+// Dependencies: [17, 4829, 7478, 1115, 7480, 7482, 2]
 // Exports: default
 
-// Module 7471 (getTagProperties)
+// Module 7477 (getTagProperties)
 import _mod17 from "module_17" /* 17 */;
-import MessageConstants from "MessageConstants" /* 4822 */;
-import isCrosspostDefault from "isCrosspost" /* 7474 */;
+import MessageConstants from "MessageConstants" /* 4829 */;
+import isCrosspostDefault from "isCrosspost" /* 7480 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -36,7 +36,7 @@ export default function getTagProperties(arg0) {
           const intl = tmp2(1115).intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(7476)).uri;
+            uri = Image.resolveAssetSource(tmp4(7482)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = intl.string(tmp2(1115).t["9RNkeF"]);
@@ -64,7 +64,7 @@ export default function getTagProperties(arg0) {
         const intl6 = tmp2(1115).intl;
         stringResult2 = intl6.string(tmp2(1115).t.fyE8sH);
       }
-      const obj2 = { tagText: stringResult, tagAccessibilityLabel: null, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "channel", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult2, opTagTextColor: "allRoleIds", opTagBackgroundColor: "Array" };
+      const obj2 = { tagText: stringResult, tagAccessibilityLabel: null, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "ix", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult2, opTagTextColor: null, opTagBackgroundColor: null };
       ({ opTagTextColor: obj3.opTagTextColor, opTagBackgroundColor: obj3.opTagBackgroundColor } = colors);
       return obj2;
     } else {
@@ -85,7 +85,7 @@ export default function getTagProperties(arg0) {
       }
       const intl5 = tmp2(1115).intl;
       stringResult3 = intl5.string(tmp2(1115).t["7s687k"]);
-      tmp2Result = tmp2(7472);
+      tmp2Result = tmp2(7478);
     }
   }
   const intl3 = tmp2(1115).intl;

@@ -1,11 +1,11 @@
-// Module ID: 5075
-// Function ID: 5076
+// Module ID: 5082
+// Function ID: 5083
 // Name: CheckpointExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: getIsCheckpointEnabled, useIsCheckpointEnabled
 
-// Module 5075 (CheckpointExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 5082 (CheckpointExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-09-build-a-bear", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

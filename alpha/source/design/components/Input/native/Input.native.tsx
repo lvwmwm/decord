@@ -1,20 +1,20 @@
-// Module ID: 6020
-// Function ID: 6021
+// Module ID: 6025
+// Function ID: 6026
 // Name: Input
-// Dependencies: [19, 17, 21, 4829, 576, 6021, 4530, 4825, 6022, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6026, 4533, 4832, 6027, 2]
 // Exports: Input
 
-// Module 6020 (Input)
+// Module 6025 (Input)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4530 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6021 */;
+import native from "native" /* 4533 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6026 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 const obj2 = { inputRow: { flexDirection: "row", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_4 }, labelWrapper: null, label: null, description: null, error: null };
 let obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_4 };
 obj2.labelWrapper = { marginBottom: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center" };
@@ -42,13 +42,13 @@ export const Input = function Input(arg0) {
     let tmp11Result = null;
     if (null != description) {
       const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.description, children: description };
-      tmp11Result = tmp11(tmp2(4825).Text, obj5);
+      tmp11Result = tmp11(tmp2(4832).Text, obj5);
     }
     items[2] = tmp11Result;
     let tmp11Result2 = null;
     if (null != errorMessage) {
       const obj6 = { style: tmp.error, children: errorMessage };
-      tmp11Result2 = tmp11(tmp2(6022).ErrorText, obj6);
+      tmp11Result2 = tmp11(tmp2(6027).ErrorText, obj6);
     }
     items[3] = tmp11Result2;
     obj3.children = items;
@@ -56,7 +56,7 @@ export const Input = function Input(arg0) {
   } else if (null != labelTrailing) {
     const obj7 = { style: tmp.labelWrapper, children: null };
     const obj8 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: labelId, accessibilityLabel: requiredFieldA11yName, children: label };
-    const items1 = [React3(tmp2(4825).Text, obj8), labelTrailing];
+    const items1 = [React3(tmp2(4832).Text, obj8), labelTrailing];
     obj7.children = items1;
     let tmp5Result = tmp5(tmp6, obj7);
   } else {
@@ -65,10 +65,10 @@ export const Input = function Input(arg0) {
     let tmp5Result2 = null;
     if (required) {
       const obj10 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: [" ", "*"] };
-      tmp5Result2 = tmp5(tmp2(4825).Text, obj10);
+      tmp5Result2 = tmp5(tmp2(4832).Text, obj10);
     }
     items2[1] = tmp5Result2;
     obj9.children = items2;
-    tmp5Result = tmp5(tmp2(4825).Text, obj9);
+    tmp5Result = tmp5(tmp2(4832).Text, obj9);
   }
 };

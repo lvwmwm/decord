@@ -1,9 +1,9 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16735
+// Function ID: 16736
 // Name: ModalRegistry
 // Dependencies: [2]
 
-// Module 16706 (ModalRegistry)
+// Module 16735 (ModalRegistry)
 import size from "module_2" /* 2 */;
 
 class ModalRegistry {

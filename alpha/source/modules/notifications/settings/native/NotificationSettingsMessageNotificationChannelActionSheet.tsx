@@ -1,21 +1,21 @@
-// Module ID: 9611
-// Function ID: 9612
+// Module ID: 9622
+// Function ID: 9623
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 5010, 1074, 5011, 1084, 21, 9596, 9610, 1115, 9597, 6535, 6530, 2]
+// Dependencies: [19, 5017, 1074, 5018, 1084, 21, 9607, 9621, 1115, 9608, 6540, 6535, 2]
 // Exports: default
 
-// Module 9611 (NotificationSettingsMessageNotificationChannelActionSheet)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6530 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6535 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9597 */;
+// Module 9622 (NotificationSettingsMessageNotificationChannelActionSheet)
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9608 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const UserNotificationSettings = fn(1074).UserNotificationSettings;
-const UnreadSetting = fn(5011).UnreadSetting;
+const UnreadSetting = fn(5018).UnreadSetting;
 let closure_6 = fn(1084).ChannelNotificationSettingsFlags;
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -51,5 +51,5 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     obj4.label = NotificationLabel.notifications(message_notifications);
     const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(obj4);
   };
-  return tmp4(unread(9610), obj2);
+  return tmp4(unread(9621), obj2);
 };

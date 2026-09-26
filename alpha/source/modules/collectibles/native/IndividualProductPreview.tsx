@@ -1,18 +1,18 @@
-// Module ID: 12693
-// Function ID: 12694
+// Module ID: 12710
+// Function ID: 12711
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1076, 21, 4829, 576, 5286, 7616, 10560, 10776, 12694, 12695, 1973, 1077, 12696, 12699, 2]
+// Dependencies: [19, 17, 1076, 21, 4836, 576, 5293, 7623, 10571, 10789, 12711, 12712, 1974, 1077, 12713, 12716, 2]
 // Exports: IndividualProductPreview
 
-// Module 12693 (IndividualProductPreview)
+// Module 12710 (IndividualProductPreview)
 import nativeDefault from "native" /* 576 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import LinearGradientDefault from "LinearGradient" /* 5286 */;
-import useCurrentUser from "useCurrentUser" /* 7616 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10560 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10776 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12694 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12695 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+import LinearGradientDefault from "LinearGradient" /* 5293 */;
+import useCurrentUser from "useCurrentUser" /* 7623 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10571 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10789 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12711 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12712 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -82,7 +82,7 @@ const CollectiblesShopConstants = fn(1076);
 ({ EXTERNAL_PRODUCT_SKU_IDS: hasOwnProperty, ShopCtaEnum: metroRequire } = CollectiblesShopConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { collectiblePreview: { marginTop: nativeDefault.space.PX_12, position: "relative", height: 280 }, profilePreviewContainer: { position: "relative", flex: 1, alignItems: "center", overflow: "hidden" }, profilePreview: { width: "66%" }, profilePreviewGradient: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -101,23 +101,23 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
     const obj2 = { product, avatarDecorationOverride };
     return React5(NameplatePreview, obj2);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (tmp(1974).CollectiblesItemType.PROFILE_EFFECT === type) {
     const obj3 = { profileEffect: product.items[0], width, avatarDecorationOverride, profileFrameOverride, handlePreviewPress, onTrackPress };
     return React5(ProfileEffectPreview, obj3);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (tmp(1974).CollectiblesItemType.PROFILE_FRAME === type) {
     const obj4 = { profileFrame: product.items[0], width, avatarDecorationOverride, profileEffectOverride, handlePreviewPress, onTrackPress };
     return React5(ProfileFramePreview, obj4);
-  } else if (tmp(1973).CollectiblesItemType.AVATAR_DECORATION === type) {
+  } else if (tmp(1974).CollectiblesItemType.AVATAR_DECORATION === type) {
     const obj = { product, handlePreviewPress, onTrackPress };
     return React5(AvatarDecorationPreview, obj);
-  } else if (tmp(1973).CollectiblesItemType.EXTERNAL_SKU === type) {
+  } else if (tmp(1974).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(1077).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = React5(tmp(12696).FractionalNitroPreview, {});
+      let tmp5 = React5(tmp(12713).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = React5(tmp(12699).OrbBadgePreview, {});
+        tmp5 = React5(tmp(12716).OrbBadgePreview, {});
       }
     }
     return tmp5;

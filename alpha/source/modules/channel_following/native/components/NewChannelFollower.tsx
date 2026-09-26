@@ -1,23 +1,23 @@
-// Module ID: 10855
-// Function ID: 10856
+// Module ID: 10868
+// Function ID: 10869
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 2048, 2044, 4464, 2066, 4466, 5745, 1074, 21, 4829, 576, 7608, 4763, 504, 4982, 5291, 4682, 10856, 10857, 6566, 6040, 5891, 1177, 5328, 4825, 1115, 5272, 5994, 5912, 4796, 8721, 1980, 10858, 8045, 5740, 5274, 10861, 6570, 2]
+// Dependencies: [32, 19, 17, 2049, 2045, 4467, 2067, 4469, 5750, 1074, 21, 4836, 576, 7615, 4767, 504, 4989, 5298, 4685, 10869, 10870, 6571, 6045, 5896, 1177, 5335, 4832, 1115, 5279, 5999, 5917, 4800, 8729, 1981, 10871, 8053, 5745, 5281, 10874, 6575, 2]
 // Exports: default
 
-// Module 10855 (NewChannelFollower)
+// Module 10868 (NewChannelFollower)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import openChannelPickerDefault from "openChannelPicker" /* 10858 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 10861 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import openChannelPickerDefault from "openChannelPicker" /* 10871 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 10874 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildChannelStore from "GuildChannelStore" /* 4464 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
-import SortedGuildStore from "SortedGuildStore" /* 5745 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 4467 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 
 const require = globalThis.__r;
 
@@ -32,13 +32,13 @@ function canFollowIntoChannel(channel) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ImageBackground: metroRequire } = get_ActivityIndicator);
-fn(2048).GUILD_FOLLOW_DESTINATION_CHANNEL_TYPES;
-let closure_10 = fn(4464).GUILD_SELECTABLE_CHANNELS_KEY;
+fn(2049).GUILD_FOLLOW_DESTINATION_CHANNEL_TYPES;
+let closure_10 = fn(4467).GUILD_SELECTABLE_CHANNELS_KEY;
 const Constants = fn(1074);
 ({ AbortCodes: closure_14, Permissions: closure_15 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 24 }, header: { flex: 1, flexDirection: "row", justifyContent: "center", alignItems: "center", height: 96 }, headerGuildIcon: { width: 40, marginRight: 16 }, headerChannelContainer: { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 32 }, headerChannel: null, headerChannelIcon: null, ctaHeader: null, ctaSubhead: null, channelIcon: null };
 let obj3 = { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 32 };
 obj2.headerChannel = { flex: 1, flexDirection: "row", minWidth: 160, paddingHorizontal: 8, paddingVertical: 6, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
@@ -168,7 +168,7 @@ export default function NewChannelFollower(targetChannelId) {
     obj2.onClose = function onClose() {
       closure_1_4(targetGuildId, targetChannelId);
     };
-    obj.openLazy(asyncRequireImpl(8721, dependencyMap.paths), "NewChannelFollowerGuildPicker", obj2);
+    obj.openLazy(asyncRequireImpl(8729, dependencyMap.paths), "NewChannelFollowerGuildPicker", obj2);
   };
   obj14.children = closure_16(require("TableRow").TableRow, obj15);
   const items6 = [closure_16(require("TableRowGroup").TableRowGroup, obj14), ];

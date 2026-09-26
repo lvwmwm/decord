@@ -1,10 +1,10 @@
-// Module ID: 15584
-// Function ID: 15585
+// Module ID: 15612
+// Function ID: 15613
 // Name: RegistrationEmailOptInCopyExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 15584 (RegistrationEmailOptInCopyExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 15612 (RegistrationEmailOptInCopyExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "installation", name: "2026-09-registration-email-opt-in-copy", defaultConfig: { trackingCopy: false }, variations: null };

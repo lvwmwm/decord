@@ -1,12 +1,11 @@
 // Module ID: 4216
 // Function ID: 4217
-// Dependencies: [4217, 4097, 3916]
+// Dependencies: [3918, 3919]
 // Exports: default
 
 // Module 4216
-import _typeof_mod from "module_4217" /* 4217 */;
-import module_4097_mod from "module_4097" /* 4097 */;
-import requiredArgs_mod from "requiredArgs" /* 3916 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -16,25 +15,17 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let module_4097 = module_4097_mod;
-if (!module_4097) {
-  const obj2 = { default: module_4097 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_4097;
-}
-module_4097 = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
+requiredArgs = tmp5;
 
-export default function isMatch(arg0, arg1, arg2) {
-  requiredArgs.default(2, arguments);
-  return module_4097.default(_typeof.default(arg0, arg1, new Date(), arg2));
+export default function isFirstDayOfMonth(arg0) {
+  requiredArgs.default(1, arguments);
+  return 1 === _typeof.default(arg0).getDate();
 };
 export default exports.default;

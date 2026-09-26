@@ -1,10 +1,10 @@
-// Module ID: 4854
-// Function ID: 4855
+// Module ID: 4861
+// Function ID: 4862
 // Name: Constants
-// Dependencies: [2, 4855]
+// Dependencies: [2, 4862]
 
-// Module 4854 (Constants)
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4855 */;
+// Module 4861 (Constants)
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");

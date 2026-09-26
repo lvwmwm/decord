@@ -1,17 +1,17 @@
-// Module ID: 9230
-// Function ID: 9231
+// Module ID: 9241
+// Function ID: 9242
 // Name: useOnConnectToConsole
-// Dependencies: [19, 1074, 4651, 2028, 8521, 8552, 9231, 2]
+// Dependencies: [19, 1074, 4654, 2029, 8529, 8560, 9242, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
-// Module 9230 (useOnConnectToConsole)
-import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8521 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 8552 */;
+// Module 9241 (useOnConnectToConsole)
+import dismissible_content from "dismissible_content" /* 2029 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8529 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 8560 */;
 import noop from "module_19" /* 19 */;
 
-const beginConsoleTransfer = tmp(9231);
+const beginConsoleTransfer = tmp(9242);
 require = fn;
 const Constants = fn(1074);
 ({ AnalyticsLocations: closure_4, PlatformTypes: hasOwnProperty } = Constants);

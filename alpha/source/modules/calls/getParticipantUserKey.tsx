@@ -1,10 +1,10 @@
-// Module ID: 5735
-// Function ID: 5736
+// Module ID: 5740
+// Function ID: 5741
 // Name: getParticipantUserKey
 // Dependencies: [2]
 // Exports: default
 
-// Module 5735 (getParticipantUserKey)
+// Module 5740 (getParticipantUserKey)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/calls/getParticipantUserKey.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17448
+// Function ID: 17449
 // Name: GuildTemplateSettingsUtils
-// Dependencies: [5, 32, 19, 2044, 4466, 6872, 1074, 504, 6737, 4731, 2]
+// Dependencies: [5, 32, 19, 2045, 4469, 6877, 1074, 504, 6742, 4735, 2]
 // Exports: isGuildTemplateNameValid, useCanViewAllChannels, useGuildTemplate
 
-// Module 17418 (GuildTemplateSettingsUtils)
+// Module 17448 (GuildTemplateSettingsUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 6872 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 6877 */;
 
 const require = globalThis.__r;
 
@@ -45,11 +45,11 @@ export const useGuildTemplate = function useGuildTemplate(guildId) {
     closure_0 = async function _fetchGuildTemplate(arg0, arg1) {
       closure_129_0 = closure_0;
       tmp3(null);
-      await closure_2_1(6737).loadTemplatesForGuild(closure_0);
+      await closure_2_1(6742).loadTemplatesForGuild(closure_0);
       if (1 === tmp7) {
         c4 = 0;
         closure_129_1 = closure_3;
-        const aPIError = new guildId(4731).APIError(closure_129_1);
+        const aPIError = new guildId(4735).APIError(closure_129_1);
         tmp3(aPIError);
         closure_1(closure_129_0);
         c6 = 3;

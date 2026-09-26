@@ -1,12 +1,12 @@
-// Module ID: 16167
-// Function ID: 16168
+// Module ID: 16195
+// Function ID: 16196
 // Name: GuildRoleSubscriptionSettingsUtils
-// Dependencies: [4459, 5085, 2]
+// Dependencies: [4462, 5092, 2]
 // Exports: getCoverImageURI
 
-// Module 16167 (GuildRoleSubscriptionSettingsUtils)
-import StoreUtils from "StoreUtils" /* 5085 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4459 */;
+// Module 16195 (GuildRoleSubscriptionSettingsUtils)
+import StoreUtils from "StoreUtils" /* 5092 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
 
 require = fn;
 const size = fn(2);

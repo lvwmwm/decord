@@ -1,9 +1,9 @@
-// Module ID: 1997
-// Function ID: 1998
+// Module ID: 1998
+// Function ID: 1999
 // Name: NativeMediaEngineModule
 // Dependencies: [17, 2]
 
-// Module 1997 (NativeMediaEngineModule)
+// Module 1998 (NativeMediaEngineModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

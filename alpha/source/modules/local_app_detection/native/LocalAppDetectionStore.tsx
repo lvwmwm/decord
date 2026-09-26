@@ -1,15 +1,15 @@
-// Module ID: 13240
-// Function ID: 13241
+// Module ID: 13257
+// Function ID: 13258
 // Name: LocalAppDetectionStore
-// Dependencies: [32, 6007, 1074, 504, 573, 13241, 13242, 2]
+// Dependencies: [32, 6012, 1074, 504, 573, 13258, 13259, 2]
 
-// Module 13240 (LocalAppDetectionStore)
+// Module 13257 (LocalAppDetectionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 13241 */;
-import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 13242 */;
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 13258 */;
+import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 13259 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ConsentStore from "ConsentStore" /* 6007 */;
+import ConsentStore from "ConsentStore" /* 6012 */;
 
 require = fn;
 const Consents = fn(1074).Consents;

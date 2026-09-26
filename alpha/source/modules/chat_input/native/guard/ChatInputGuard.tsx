@@ -1,26 +1,26 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11941
+// Function ID: 11942
 // Name: ChatInputGuard
-// Dependencies: [19, 17, 8835, 21, 4829, 576, 670, 7293, 11729, 11728, 5430, 1364, 11735, 5912, 7358, 10385, 10380, 4825, 5274, 5740, 8362, 2]
+// Dependencies: [19, 17, 8843, 21, 4836, 576, 670, 7298, 11743, 11742, 5437, 1364, 11749, 5917, 7363, 10396, 10391, 4832, 5281, 5745, 8370, 2]
 // Exports: ChatInputGuardContainer, default
 
-// Module 11923 (ChatInputGuard)
+// Module 11941 (ChatInputGuard)
 import nativeDefault from "native" /* 576 */;
 import Radius from "Radius" /* 670 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5274 */;
-import ButtonGroup from "ButtonGroup" /* 5740 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7293 */;
-import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 11728 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import ButtonGroup from "ButtonGroup" /* 5745 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7298 */;
+import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 11742 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-let closure_6 = fn(8835).updateChatInputContainerHeight;
+let closure_6 = fn(8843).updateChatInputContainerHeight;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { container: { paddingHorizontal: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_8 }, content: null, underlay: null, wrapper: null, floating: null, text: null, subtext: null, spacing: null };
   let lg;
@@ -64,15 +64,15 @@ export default function ChatInputGuard(type) {
         const obj4 = { accessibilityLabel: actionLabel, icon: null, size: "sm", onPress: null };
         if (actionIcon == null) {
           const obj5 = { color: tmp(576).colors.WHITE };
-          actionIcon = tmp7(tmp9(10385).ArrowSmallRightIcon, obj5);
+          actionIcon = tmp7(tmp9(10396).ArrowSmallRightIcon, obj5);
         }
         obj4.icon = actionIcon;
         obj4.onPress = actionOnPress;
-        let tmp7Result = tmp7(tmp9(7358).IconButton, obj4);
+        let tmp7Result = tmp7(tmp9(7363).IconButton, obj4);
       }
       obj3.trailing = tmp7Result;
       const obj6 = { variant: "text-sm/semibold", children: message };
-      obj3.label = tmp7(tmp9(4825).Text, obj6);
+      obj3.label = tmp7(tmp9(4832).Text, obj6);
       obj3.subLabel = subtext;
       obj2.children = tmp7(tmp10, obj3);
       return tmp7(tmp8, obj2);
@@ -84,7 +84,7 @@ export default function ChatInputGuard(type) {
       ({ text: arr3[0], spacing: arr3[1] } = tmp3);
       obj7.style = items;
       obj7.deadline = countdown;
-      tmp7Result = tmp7(tmp(10380), obj7);
+      tmp7Result = tmp7(tmp(10391), obj7);
     }
     tmp8 = hasOwnProperty;
   } else {
@@ -102,7 +102,7 @@ export default function ChatInputGuard(type) {
         tmp13Result = null;
         if (subtext2.length > 0) {
           const obj = { style: tmp3.subtext, variant: "text-xs/medium", color: "text-muted", children: subtext2 };
-          tmp13Result = tmp13(tmp14(4825).Text, obj);
+          tmp13Result = tmp13(tmp14(4832).Text, obj);
         }
       }
     }
@@ -114,9 +114,9 @@ export default function ChatInputGuard(type) {
         const obj11 = { children: null };
         const items2 = [tmp15, ];
         const obj12 = { disabled: buttonSecondaryDisabled, loading: buttonSecondaryLoading, text: buttonSecondaryText, onPress: buttonSecondaryOnPress, variant: "secondary", size: "sm" };
-        items2[1] = tmp13(tmp14(5274).Button, obj12);
+        items2[1] = tmp13(tmp14(5281).Button, obj12);
         obj11.children = items2;
-        tmp16Result = tmp16(tmp14(8362).TwinButtons, obj11);
+        tmp16Result = tmp16(tmp14(8370).TwinButtons, obj11);
       }
     }
     const obj13 = { children: tmp16Result };
@@ -128,7 +128,7 @@ export default function ChatInputGuard(type) {
       ({ text: arr2[0], spacing: arr2[1] } = tmp3);
       obj14.style = items3;
       obj14.deadline = countdown2;
-      tmp13Result2 = tmp13(tmp(10380), obj14);
+      tmp13Result2 = tmp13(tmp(10391), obj14);
     }
     items1[3] = tmp13Result2;
     obj9.children = items1;
@@ -140,7 +140,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   const channelId = screenIndex.channelId;
   ({ onJumpToPresent, children } = screenIndex);
   const tmp3 = useIsUsingClientThemeDefault();
-  const chatInputFloatingOverlayStyle = screenIndex(11729).useChatInputFloatingOverlayStyle();
+  const chatInputFloatingOverlayStyle = screenIndex(11743).useChatInputFloatingOverlayStyle();
   const tmp6 = closure_9(tmp3);
   const items = [screenIndex];
   const obj2 = { style: null, onLayout: null, collapsable: false, children: null };
@@ -150,7 +150,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   const items1 = [getChatInputPositionStyleDefault({ isCreatingThread: false }), chatInputFloatingOverlayStyle];
   obj2.style = items1;
   obj2.onLayout = callback;
-  const items2 = [closure_7(screenIndex(11729).ChatInputScrimGradient, {}), ];
+  const items2 = [closure_7(screenIndex(11743).ChatInputScrimGradient, {}), ];
   const obj3 = { style: tmp6.container, children: null };
   let tmp10Result = null;
   if (!tmp3) {
@@ -161,18 +161,18 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   const obj5 = { style: tmp6.content, children: null };
   let tmp10Result3 = null;
   if (tmp3) {
-    tmp10Result3 = tmp10(tmp(5430), { absolute: true, wide: true, tall: true, mix: true });
+    tmp10Result3 = tmp10(tmp(5437), { absolute: true, wide: true, tall: true, mix: true });
   }
   const items4 = [tmp10Result3, children];
   obj5.children = items4;
   items3[1] = closure_8(closure_5, obj5);
-  const obj = screenIndex(11729);
+  const obj = screenIndex(11743);
   let tmp10Result4 = null;
   if (tmp4Result.isIOS()) {
     tmp10Result4 = null;
     if (null != channelId) {
       const obj6 = { channelId, screenIndex, onJumpToPresent };
-      tmp10Result4 = tmp10(tmp(11735), obj6);
+      tmp10Result4 = tmp10(tmp(11749), obj6);
     }
   }
   items3[2] = tmp10Result4;

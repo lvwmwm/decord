@@ -1,17 +1,17 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 15987
+// Function ID: 15988
 // Name: GuildsBarFooterWrapper
-// Dependencies: [15892, 21, 4829, 576, 4528, 15629, 5896, 2]
+// Dependencies: [15920, 21, 4836, 576, 4531, 15657, 5901, 2]
 // Exports: default
 
-// Module 15959 (GuildsBarFooterWrapper)
+// Module 15987 (GuildsBarFooterWrapper)
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4528 */;
-import NativeViewDefault from "NativeView" /* 5896 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15629 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 15892 */;
-import createStyles from "createStyles" /* 4829 */;
+import useToken from "useToken" /* 4531 */;
+import NativeViewDefault from "NativeView" /* 5901 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15657 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 15920 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_ITEM_HIT_SLOP = GuildsBarConstants.GUILD_ITEM_HIT_SLOP;

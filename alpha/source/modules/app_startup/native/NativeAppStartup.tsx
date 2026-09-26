@@ -1,23 +1,23 @@
-// Module ID: 17022
-// Function ID: 17023
+// Module ID: 17050
+// Function ID: 17051
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 17023, 17025, 17, 17047, 2112, 2098, 1979, 6875, 17048, 1074, 9, 3, 17687, 6907, 17688, 11255, 504, 1248, 1233, 17690, 1983, 1364, 10, 17691, 8744, 573, 17692, 6890, 1231, 17693, 17694, 8738, 510, 1241, 13165, 2090, 8586, 2123, 1154, 17695, 1980, 7772, 17697, 13926, 7082, 17714, 17715, 17716, 9387, 6903, 6891, 4690, 1182, 4821, 13975, 16755, 16756, 1100, 13727, 6874, 13980, 13994, 7045, 17717, 6068, 6876, 6891, 2]
+// Dependencies: [32, 5, 17051, 17053, 17, 17075, 2113, 2099, 1980, 6880, 17076, 1074, 9, 3, 17717, 6912, 17718, 11269, 504, 1248, 1233, 17720, 1984, 1364, 10, 17721, 8752, 573, 17722, 6895, 1231, 17723, 17724, 8746, 510, 1241, 13182, 2091, 8594, 2124, 1154, 17725, 1981, 7780, 17727, 13882, 7087, 17744, 17745, 17746, 9398, 6908, 6896, 4694, 1182, 4825, 14000, 16784, 16785, 1100, 13683, 6879, 14005, 14019, 7050, 17747, 6073, 6881, 6896, 2]
 // Exports: init, initHeadlessTask
 
-// Module 17022 (NativeAppStartup)
+// Module 17050 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Storage4 from "Storage" /* 510 */;
 import TokenManagerAll from "TokenManager" /* 1100 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2090 */;
-import timeRequireDefault from "timeRequire" /* 6907 */;
-import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13165 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2091 */;
+import timeRequireDefault from "timeRequire" /* 6912 */;
+import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13182 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import AppStateStore from "AppStateStore" /* 1980 */;
 
 require = fn;
 function linkFromAppsFlyer(arg0) {
@@ -616,11 +616,11 @@ let closure_38 = async function _init(_payload, value) {
         promise = new Promise((arg0) => {
           closure_0 = arg0;
           closure_0(paths[42])(paths[52], paths.paths).then((result) => result.default.loadCacheAsync(closure_2_4(closure_2_0(paths[53]).computeInitialNavigationState(), 1)[0], async () => {
-            closure_0(13975).updateSaturation(closure_0(4821).default.saturation);
-            obj = closure_0(13975);
-            closure_0(16755).updateVisualRefresh(true);
-            const obj2 = closure_0(16755);
-            closure_0(16756).updateTheme(closure_0(1182).default.theme);
+            closure_0(14000).updateSaturation(closure_0(4825).default.saturation);
+            obj = closure_0(14000);
+            closure_0(16784).updateVisualRefresh(true);
+            const obj2 = closure_0(16784);
+            closure_0(16785).updateTheme(closure_0(1182).default.theme);
             closure_1_0();
           }));
         });
@@ -765,14 +765,14 @@ function initializeTokenStorage() {
   obj.verbose("Token manager has initialized", { storageHasToken: null != Storage3.get(closure_1_17), tokenManagerHasToken: null != TokenManagerAll.getToken() });
   global();
 }
-const module_17023 = fn(17023);
-const superagentPatch = fn(17025);
+const module_17051 = fn(17051);
+const superagentPatch = fn(17053);
 get_ActivityIndicator = fn(17);
 ({ AppState: metroRequire, NativeEventEmitter: closure_7, Linking: closure_8, LogBox: closure_9, NativeModules: c10 } = get_ActivityIndicator);
-const logThirdPartyImportsDone = fn(17047);
-let closure_11 = fn(2112).subscribeToIntlLoadingSuccess;
-const AnalyticsTrackingStore = fn(6875);
-const ManagerRegistry = fn(17048);
+const logThirdPartyImportsDone = fn(17075);
+let closure_11 = fn(2113).subscribeToIntlLoadingSuccess;
+const AnalyticsTrackingStore = fn(6880);
+const ManagerRegistry = fn(17076);
 const Constants = fn(1074);
 ({ AppStates: closure_14, AnalyticEvents: closure_15, FIRST_RUN_DATE_KEY: closure_16, TOKEN_KEY: closure_17, STORAGE_SECURE_KEYS: closure_18, Platforms: closure_19 } = Constants);
 const loadImports = TTITrackerDefault.loadImports;
@@ -780,7 +780,7 @@ loadImports.recordEnd();
 let closure_20 = new LoggerDefault("index.native.tsx");
 let c21 = false;
 let c25 = null;
-const future = new fn(8586).Future();
+const future = new fn(8594).Future();
 let obj = { None: 0, [0]: "None", HeadlessRan: 1, [1]: "HeadlessRan", Full: 2, [2]: "Full" };
 const None = obj.None;
 let promise = new Promise((arg0) => {

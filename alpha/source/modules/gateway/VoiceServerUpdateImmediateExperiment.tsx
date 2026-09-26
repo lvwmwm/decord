@@ -1,11 +1,11 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13189
+// Function ID: 13190
 // Name: VoiceServerUpdateImmediateExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isVoiceServerUpdateImmediateEnabled
 
-// Module 13172 (VoiceServerUpdateImmediateExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13189 (VoiceServerUpdateImmediateExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-voice-server-update-immediate-mobile", kind: "user", defaultConfig: { enabled: false }, variations: null };

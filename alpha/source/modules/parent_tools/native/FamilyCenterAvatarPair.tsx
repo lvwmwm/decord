@@ -1,10 +1,10 @@
-// Module ID: 14434
-// Function ID: 14435
+// Module ID: 14459
+// Function ID: 14460
 // Name: FamilyCenterAvatarPair
-// Dependencies: [19, 17, 1372, 21, 4829, 576, 563, 1177, 2]
+// Dependencies: [19, 17, 1372, 21, 4836, 576, 563, 1177, 2]
 // Exports: default
 
-// Module 14434 (FamilyCenterAvatarPair)
+// Module 14459 (FamilyCenterAvatarPair)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { avatars: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.round, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 8 }, icon: { height: 24, width: 24, marginHorizontal: 16 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

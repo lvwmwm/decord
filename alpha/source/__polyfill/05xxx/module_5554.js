@@ -1,14 +1,18 @@
 // Module ID: 5554
 // Function ID: 5555
-// Dependencies: []
+// Dependencies: [5551]
 
 // Module 5554
+import _mod5551 from "module_5551" /* 5551 */;
 
-export default {
-  get() {
-    if (typeof TextDecoder !== "undefined") {
-      const _TextDecoder = TextDecoder;
-      return TextDecoder;
-    }
+require = arg1;
+const dependencyMap = arg6;
+const obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
+obj[45056] = {
+  name: "MPFVersion",
+  description(value) {
+    return _mod5551.getStringValue(value);
   }
 };
+
+export default obj;

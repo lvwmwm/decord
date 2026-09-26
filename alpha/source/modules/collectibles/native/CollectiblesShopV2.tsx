@@ -1,27 +1,27 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15422
+// Function ID: 15423
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 4828, 1182, 1372, 6957, 1076, 1074, 2041, 21, 4829, 6598, 12981, 15394, 504, 5905, 1255, 10186, 15395, 1364, 6968, 8659, 7616, 8230, 4682, 6578, 1484, 8305, 4498, 15397, 4651, 2028, 4485, 15398, 1241, 7004, 7625, 15399, 15400, 15402, 15427, 1231, 8221, 10270, 15430, 15431, 15405, 15432, 5173, 2]
+// Dependencies: [32, 19, 17, 4835, 1182, 1372, 6962, 1076, 1074, 2042, 21, 4836, 6603, 12998, 15423, 504, 5910, 1255, 10198, 15424, 1364, 6973, 8667, 7623, 8238, 4685, 6583, 1485, 8313, 4501, 15426, 4654, 2029, 4488, 15427, 1241, 7009, 7632, 15428, 15429, 15431, 15456, 1231, 8229, 10282, 15459, 15460, 15434, 15461, 5180, 2]
 
-// Module 15393 (CollectiblesShopV2)
+// Module 15422 (CollectiblesShopV2)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7004 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7625 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8305 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 8659 */;
-import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 15398 */;
-import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 15399 */;
-import ShopCategory from "ShopCategory" /* 15400 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15402 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7009 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8313 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 8667 */;
+import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 15427 */;
+import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 15428 */;
+import ShopCategory from "ShopCategory" /* 15429 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15431 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4828 */;
+import DevSettingsStore from "DevSettingsStore" /* 4835 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UserStore from "UserStore" /* 1372 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 
 const SentryUtilsDefault = tmp(1231);
 require = fn;
@@ -101,10 +101,10 @@ const CollectiblesShopConstants = fn(1076);
 ({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: closure_11, CollectiblesMobileShopScreen: closure_12, CollectibleShopTab: map1 } = CollectiblesShopConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_14, PaymentGateways: closure_15 } = Constants);
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_19 = createStyles.createStyles({ rootContainer: { height: "100%", width: "100%" }, spinner: { position: "absolute", top: "50%", left: "50%", marginTop: -8, marginLeft: -8 } });
 let closure_20 = { CATEGORY: "category", NITRO_UPSELL: "nitro_upsell" };
 function CollectiblesShopInternal(analyticsSource) {
@@ -382,7 +382,7 @@ function CollectiblesShopInternal(analyticsSource) {
       const obj2 = { isDarkTheme: stateFromStores, dismiss, buttonVariant: null };
       let GET_NITRO = constants;
       if (constants == null) {
-        GET_NITRO = tmp18(15398).NitroUpsellBannerButtonVariant.GET_NITRO;
+        GET_NITRO = tmp18(15427).NitroUpsellBannerButtonVariant.GET_NITRO;
       }
       obj2.buttonVariant = GET_NITRO;
       let tmp17Result = closure_2_17(ShopNitroUpsellBanner.ShopNitroUpsellBanner, obj2);

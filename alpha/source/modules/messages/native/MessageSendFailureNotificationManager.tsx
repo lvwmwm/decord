@@ -1,18 +1,18 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 17640
+// Function ID: 17641
 // Name: MessageSendFailureNotificationManager
-// Dependencies: [2098, 4652, 1372, 1979, 1074, 8496, 9543, 9545, 8738, 1115, 6534, 2]
+// Dependencies: [2099, 4655, 1372, 1980, 1074, 8504, 9554, 9556, 8746, 1115, 6539, 2]
 
-// Module 17610 (MessageSendFailureNotificationManager)
+// Module 17640 (MessageSendFailureNotificationManager)
 import util from "util" /* 1115 */;
-import PushNotificationDefault from "PushNotification" /* 8738 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 9543 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9545 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
+import PushNotificationDefault from "PushNotification" /* 8746 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 9554 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9556 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+import AppStateStore from "AppStateStore" /* 1980 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 function handleMessageSendFailure(shouldNotify) {
@@ -79,7 +79,7 @@ function handleMessageCreate(message) {
 }
 const Constants = fn(1074);
 ({ InAppNotificationTypes: closure_7, MessageStates: closure_8 } = Constants);
-const LocalNotificationTypes = fn(8496).LocalNotificationTypes;
+const LocalNotificationTypes = fn(8504).LocalNotificationTypes;
 const prototype = function MessageSendFailureNotificationManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { MESSAGE_CREATE: handleMessageCreate, MESSAGE_SEND_FAILED: handleMessageSendFailure };

@@ -1,16 +1,16 @@
-// Module ID: 7894
-// Function ID: 7895
+// Module ID: 7902
+// Function ID: 7903
 // Name: ShowExpressiveModalSubtitleAltFlag
-// Dependencies: [7873, 1434, 7859, 504, 2]
+// Dependencies: [7881, 1435, 7867, 504, 2]
 // Exports: shouldShowExpressiveModalSubtitleAlt, useShouldShowExpressiveModalSubtitleAlt
 
-// Module 7894 (ShowExpressiveModalSubtitleAltFlag)
+// Module 7902 (ShowExpressiveModalSubtitleAltFlag)
 import initialize from "initialize" /* 504 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7859 */;
-import SafetyHubStore from "SafetyHubStore" /* 7873 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7867 */;
+import SafetyHubStore from "SafetyHubStore" /* 7881 */;
 
 require = fn;
-const ApexExperiment = fn(1434);
+const ApexExperiment = fn(1435);
 let obj2 = { kind: "user", name: "2026-08-show-expressive-modal-subtitle-alt", defaultConfig: { enabled: false }, variations: null };
 const obj3 = { 1: null };
 obj3[1] = { enabled: true };

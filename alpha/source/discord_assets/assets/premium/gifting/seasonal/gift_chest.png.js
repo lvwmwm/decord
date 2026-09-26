@@ -1,8 +1,8 @@
-// Module ID: 10479
-// Function ID: 10480
+// Module ID: 10490
+// Function ID: 10491
 // Dependencies: [2]
 
-// Module 10479
+// Module 10490
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/gifting/seasonal/gift_chest.png.js");

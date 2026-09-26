@@ -1,13 +1,13 @@
-// Module ID: 10728
-// Function ID: 10729
+// Module ID: 10741
+// Function ID: 10742
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 2044, 1372, 8785, 8819, 8756, 10729, 8774, 2]
+// Dependencies: [5, 2045, 1372, 8793, 8827, 8764, 10742, 8782, 2]
 // Exports: default
 
-// Module 10728 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 8785 */;
+// Module 10741 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 8793 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;

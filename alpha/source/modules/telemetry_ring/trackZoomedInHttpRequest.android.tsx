@@ -1,12 +1,12 @@
-// Module ID: 17031
-// Function ID: 17032
+// Module ID: 17059
+// Function ID: 17060
 // Name: trackZoomedInHttpRequest
-// Dependencies: [1074, 1983, 2]
+// Dependencies: [1074, 1984, 2]
 // Exports: default
 
-// Module 17031 (trackZoomedInHttpRequest)
+// Module 17059 (trackZoomedInHttpRequest)
 import Constants from "Constants" /* 1074 */;
-import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1983 */;
+import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1984 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

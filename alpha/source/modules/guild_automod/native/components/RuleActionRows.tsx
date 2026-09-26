@@ -1,14 +1,14 @@
-// Module ID: 17300
-// Function ID: 17301
+// Module ID: 17330
+// Function ID: 17331
 // Name: RuleActionRows
-// Dependencies: [19, 2044, 4464, 11327, 21, 4829, 576, 17277, 10858, 1115, 4796, 17301, 1980, 17302, 17280, 5912, 5272, 4825, 5924, 17276, 5994, 2]
+// Dependencies: [19, 2045, 4467, 11341, 21, 4836, 576, 17307, 10871, 1115, 4800, 17331, 1981, 17332, 17310, 5917, 5279, 4832, 5929, 17306, 5999, 2]
 // Exports: default
 
-// Module 17300 (RuleActionRows)
+// Module 17330 (RuleActionRows)
 import nativeDefault from "native" /* 576 */;
-import getActionInfo from "getActionInfo" /* 17280 */;
+import getActionInfo from "getActionInfo" /* 17310 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 function RuleActionRow(onPress) {
@@ -22,7 +22,7 @@ function RuleActionRow(onPress) {
   } else {
     const obj2 = { icon: null, label: null, subLabel: null, trailing: null, accessibilityValue: null, disabled: null, onPress: null, arrow: true };
     const obj3 = { IconComponent: actionInfo.icon };
-    obj2.icon = timestampProducer(tmp3(5912).TableRow.Icon, obj3);
+    obj2.icon = timestampProducer(tmp3(5917).TableRow.Icon, obj3);
     obj2.label = actionInfo.headerText;
     const obj4 = { spacing: nativeDefault.space.PX_4, style: tmp.subLabel, children: null };
     const items = [actionInfo.descriptionText, ];
@@ -31,15 +31,15 @@ function RuleActionRow(onPress) {
       const obj5 = { variant: "text-xs/medium", color: "text-subtle", children: null };
       const items1 = [" ", actionInfo.helperText];
       obj5.children = items1;
-      tmp9Result = tmp9(tmp3(4825).Text, obj5);
+      tmp9Result = tmp9(tmp3(4832).Text, obj5);
     }
     const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: null };
     items[1] = tmp9Result;
     obj6.children = items;
-    obj4.children = React5(tmp3(4825).Text, obj6);
-    obj2.subLabel = timestampProducer(tmp3(5272).Stack, obj4);
+    obj4.children = React5(tmp3(4832).Text, obj6);
+    obj2.subLabel = timestampProducer(tmp3(5279).Stack, obj4);
     const obj7 = { checked: null != found };
-    obj2.trailing = timestampProducer(tmp3(5924).FormCheckbox, obj7);
+    obj2.trailing = timestampProducer(tmp3(5929).FormCheckbox, obj7);
     const intl = tmp3(1115).intl;
     if (null != found) {
       let Yl1D84 = tmp3(1115).t.G00RI5;
@@ -50,14 +50,14 @@ function RuleActionRow(onPress) {
     obj2.accessibilityValue = obj8;
     obj2.disabled = !actionInfo.isEditable;
     obj2.onPress = onPress.onPress;
-    return timestampProducer(tmp3(5912).TableRow, obj2);
+    return timestampProducer(tmp3(5917).TableRow, obj2);
   }
 }
-let closure_4 = fn(4464).GUILD_SELECTABLE_CHANNELS_KEY;
-const AutomodActionType = fn(11327).AutomodActionType;
+let closure_4 = fn(4467).GUILD_SELECTABLE_CHANNELS_KEY;
+const AutomodActionType = fn(11341).AutomodActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { subLabel: { marginTop: nativeDefault.space.PX_4 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -66,7 +66,7 @@ const result = size.fileFinishedImporting("modules/guild_automod/native/componen
 export default function RuleActionRows(rule) {
   rule = rule.rule;
   const onChangeRule = rule.onChangeRule;
-  const availableActionTypes = rule(17276).getAvailableActionTypes(rule.triggerType);
+  const availableActionTypes = rule(17306).getAvailableActionTypes(rule.triggerType);
   let tmp3 = null;
   if (0 !== availableActionTypes.length) {
     let obj2 = { title: null, hasIcons: true, children: null };
@@ -174,7 +174,7 @@ export default function RuleActionRows(rule) {
         }
       }, actionType);
     });
-    tmp3 = closure_6(tmp(5994).TableRowGroup, obj2);
+    tmp3 = closure_6(tmp(5999).TableRowGroup, obj2);
   }
   return tmp3;
 };

@@ -1,16 +1,16 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15630
+// Function ID: 15631
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1074, 21, 3, 4829, 576, 1485, 4691, 11008, 11007, 15603, 4697, 15604, 4689, 4840, 1110, 15605, 4842, 15608, 4563, 5933, 7294, 15609, 15610, 15611, 6068, 15618, 15619, 16144, 16145, 16146, 16528, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 3, 4836, 576, 1486, 4695, 11021, 11020, 15631, 4701, 15632, 4693, 4847, 1110, 15633, 4849, 15636, 4566, 5938, 7299, 15637, 15638, 15639, 6073, 15646, 15647, 16172, 16173, 16174, 16557, 2]
 
-// Module 15602 (MainTabsNavigatorPanel)
+// Module 15630 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
-import RootNavigationRef from "RootNavigationRef" /* 4689 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4842 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 15603 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 15604 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 15608 */;
+import RootNavigationRef from "RootNavigationRef" /* 4693 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 15631 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 15632 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 15636 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ const Constants = fn(1074);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let closure_12 = new LoggerDefault("MainTabsNavigatorPanel");
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { container: { flex: 1 }, containerBackground: null, tabsContainer: null };
 const tmp5 = new LoggerDefault("MainTabsNavigatorPanel");
 obj.containerBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -50,11 +50,11 @@ export default noop.memo(function MainTabsNavigatorPanel() {
       let obj = require;
       let result = dependencyMap;
       if (tmp2) {
-        obj = obj(15603);
+        obj = obj(15631);
         result = obj.convertPortraitToLandscapeScreens();
       } else {
-        obj(4697).dismissKeyboard();
-        const objResult = obj(4697);
+        obj(4701).dismissKeyboard();
+        const objResult = obj(4701);
         const result1 = PanelsNavigationUtils.convertLandscapeToPortraitScreens();
       }
       closure_4.current = true;
@@ -153,8 +153,8 @@ export default noop.memo(function MainTabsNavigatorPanel() {
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            tmp15(4840).transitionToChannel(tmp6.current.channelId);
-            const tmp15Result = tmp15(4840);
+            tmp15(4847).transitionToChannel(tmp6.current.channelId);
+            const tmp15Result = tmp15(4847);
           }
           tmp15 = require;
         }
@@ -247,8 +247,8 @@ export default noop.memo(function MainTabsNavigatorPanel() {
           movePanel(true, false, 0, true);
         }
       } else if (movePanel(false, false, 0, false)) {
-        tmp4(4697).dismissKeyboard();
-        const tmp4Result = tmp4(4697);
+        tmp4(4701).dismissKeyboard();
+        const tmp4Result = tmp4(4701);
       }
       tmp4 = require;
     }

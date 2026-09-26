@@ -1,11 +1,11 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 15438
+// Function ID: 15439
 // Name: FeaturedFirstCardCoachmarkAnchor
-// Dependencies: [19, 17, 21, 15410, 2]
+// Dependencies: [19, 17, 21, 15439, 2]
 // Exports: default
 
-// Module 15409 (FeaturedFirstCardCoachmarkAnchor)
-import WishlistButtonCoachmarkDefault from "WishlistButtonCoachmark" /* 15410 */;
+// Module 15438 (FeaturedFirstCardCoachmarkAnchor)
+import WishlistButtonCoachmarkDefault from "WishlistButtonCoachmark" /* 15439 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

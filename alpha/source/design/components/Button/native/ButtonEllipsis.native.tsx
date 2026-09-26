@@ -1,13 +1,13 @@
-// Module ID: 5290
-// Function ID: 5291
+// Module ID: 5297
+// Function ID: 5298
 // Name: ButtonEllipsis
-// Dependencies: [19, 21, 4563, 4829, 576, 4830, 5280, 5291, 2]
+// Dependencies: [19, 21, 4566, 4836, 576, 4837, 5287, 5298, 2]
 // Exports: Ellipsis
 
-// Module 5290 (ButtonEllipsis)
+// Module 5297 (ButtonEllipsis)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import timing from "timing" /* 4830 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -31,9 +31,9 @@ function EllipsisCircle(offset) {
       tmp2(obj.withDelay(result, obj2.withRepeat(timing.withTiming(1, obj, "animate-always"), -1, true)));
       if (typeof tmp3 === "function") {
         const result1 = 166.66666666666666 * tmp4;
-        const tmp5Result = tmp5(4563);
-        const tmp5Result3 = tmp5(4563);
-        tmp11(tmp5Result.withDelay(result1, tmp5Result3.withRepeat(tmp5(4830).withTiming(1, tmp8, "animate-always"), -1, true)));
+        const tmp5Result = tmp5(4566);
+        const tmp5Result3 = tmp5(4566);
+        tmp11(tmp5Result.withDelay(result1, tmp5Result3.withRepeat(tmp5(4837).withTiming(1, tmp8, "animate-always"), -1, true)));
         return () => {
           offset(sharedValue1[2]).cancelAnimation(sharedValue);
           const obj = offset(sharedValue1[2]);
@@ -66,9 +66,9 @@ function EllipsisCircle(offset) {
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
 const ELLIPSIS_APPEAR_TIMING = { duration: 500, easing: null };
-const Easing = fn(4563).Easing;
-ELLIPSIS_APPEAR_TIMING.easing = Easing.inOut(fn(4563).Easing.quad);
-const createStyles = fn(4829);
+const Easing = fn(4566).Easing;
+ELLIPSIS_APPEAR_TIMING.easing = Easing.inOut(fn(4566).Easing.quad);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles((arg0, arg1, backgroundColor) => {
   if ("lg" === arg0) {
     let num = 4;
@@ -101,7 +101,7 @@ function withEllipsisAnimation(arg0, value) {
   const obj2 = ReanimatedRexport;
   return obj.withDelay(result, obj2.withRepeat(timing.withTiming(value, obj, "animate-always"), -1, true));
 }
-withEllipsisAnimation.__closure = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: fn(4563).withDelay, withRepeat: fn(4563).withRepeat, withTiming: fn(4830).withTiming, ELLIPSIS_APPEAR_TIMING };
+withEllipsisAnimation.__closure = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: fn(4566).withDelay, withRepeat: fn(4566).withRepeat, withTiming: fn(4837).withTiming, ELLIPSIS_APPEAR_TIMING };
 withEllipsisAnimation.__workletHash = 2181731162311;
 withEllipsisAnimation.__initData = { code: "function withEllipsisAnimation_ButtonEllipsisNativeTsx1(offset,value){const{ELLIPSIS_APPEAR_DURATION,withDelay,withRepeat,withTiming,ELLIPSIS_APPEAR_TIMING}=this.__closure;const animationTimeMs=ELLIPSIS_APPEAR_DURATION;const animationStaggerTimeMs=animationTimeMs/3;return withDelay(offset*animationStaggerTimeMs,withRepeat(withTiming(value,ELLIPSIS_APPEAR_TIMING,'animate-always'),-1,true));}" };
 const __initData = { code: "function ButtonEllipsisNativeTsx2(){const{opacity,scale}=this.__closure;return{opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };

@@ -1,18 +1,18 @@
-// Module ID: 9612
-// Function ID: 9613
+// Module ID: 9623
+// Function ID: 9624
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [19, 17, 21, 4829, 576, 9606, 4825, 1115, 5428, 9613, 9604, 4796, 9615, 1980, 9596, 9617, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 9617, 4832, 1115, 5435, 9624, 9615, 4800, 9626, 1981, 9607, 9628, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 9612 (NotificationSettingsMessageUnread)
+// Module 9623 (NotificationSettingsMessageUnread)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import Pressables from "Pressables" /* 5428 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 9606 */;
-import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 9613 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import Pressables from "Pressables" /* 5435 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 9617 */;
+import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 9624 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function NotificationSettingsMessageUnread(onPress) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: 20, borderWidth: 1, padding: 14 }, cta: { marginTop: 4, textAlign: "center" }, label: { marginTop: 8, textAlign: "center" }, header: { marginBottom: 8 }, headerTitle: { marginBottom: 4 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -75,7 +75,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
     style: style.style,
     setting: require("notificationSettingsGuildFlagUtils").useGuildPresetSettings(style.guildId).unread,
     onCustomize() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9615, dependencyMap.paths), "MessageUnreadActionSheet", { guildId: style.guildId });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9626, dependencyMap.paths), "MessageUnreadActionSheet", { guildId: style.guildId });
     }
   };
   return closure_4(NotificationSettingsMessageUnread, obj);
@@ -86,7 +86,7 @@ export const NotificationSettingsChannelMessageUnread = function NotificationSet
     style: style.style,
     setting: require("notficationSettingsChannelFlagUtils").useChannelPresetSettings(style.channel).unread,
     onCustomize() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9617, dependencyMap.paths), "MessageUnreadActionSheet", { channel: style.channel });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9628, dependencyMap.paths), "MessageUnreadActionSheet", { channel: style.channel });
     }
   };
   return closure_4(NotificationSettingsMessageUnread, obj);

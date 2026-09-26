@@ -1,15 +1,15 @@
-// Module ID: 5897
-// Function ID: 5898
+// Module ID: 5902
+// Function ID: 5903
 // Name: GuildBadge
-// Dependencies: [19, 1074, 21, 5898, 5899, 5900, 5901, 2058, 1177, 2]
+// Dependencies: [19, 1074, 21, 5903, 5904, 5905, 5906, 2059, 1177, 2]
 
-// Module 5897 (GuildBadge)
+// Module 5902 (GuildBadge)
 import native from "native" /* 1177 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2058 */;
-import _modDef5898 from "module_5898" /* 5898 */;
-import _modDef5899 from "module_5899" /* 5899 */;
-import _modDef5900 from "module_5900" /* 5900 */;
-import _modDef5901 from "module_5901" /* 5901 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
+import _modDef5903 from "module_5903" /* 5903 */;
+import _modDef5904 from "module_5904" /* 5904 */;
+import _modDef5905 from "module_5905" /* 5905 */;
+import _modDef5906 from "module_5906" /* 5906 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -100,7 +100,7 @@ class GuildBadge {
 const GuildFeatures = fn(1074).GuildFeatures;
 const jsx = fn(21).jsx;
 let obj = { PARTNERED: 0, [0]: "PARTNERED", VERIFIED: 1, [1]: "VERIFIED", PARTNERED_BLACK: 2, [2]: "PARTNERED_BLACK", VERIFIED_BLACK: 3, [3]: "VERIFIED_BLACK", NONE: 4, [4]: "NONE" };
-let obj2 = { [VERIFIED]: _modDef5898, [PARTNERED]: _modDef5899, [VERIFIED_BLACK]: _modDef5900, [PARTNERED_BLACK]: _modDef5901, [obj.NONE]: null };
+let obj2 = { [VERIFIED]: _modDef5903, [PARTNERED]: _modDef5904, [VERIFIED_BLACK]: _modDef5905, [PARTNERED_BLACK]: _modDef5906, [obj.NONE]: null };
 ({ VERIFIED, PARTNERED, VERIFIED_BLACK, PARTNERED_BLACK } = obj);
 GuildBadge.Sizes = fn(1177).Icon.Sizes;
 const size = fn(2);

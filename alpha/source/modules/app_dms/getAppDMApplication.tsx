@@ -1,12 +1,12 @@
-// Module ID: 11664
-// Function ID: 11665
+// Module ID: 11678
+// Function ID: 11679
 // Name: getAppDMApplication
-// Dependencies: [5056, 7030, 1372, 2]
+// Dependencies: [5063, 7035, 1372, 2]
 // Exports: getAppDMApplication
 
-// Module 11664 (getAppDMApplication)
-import ApplicationStore from "ApplicationStore" /* 5056 */;
-import UserProfileStore from "UserProfileStore" /* 7030 */;
+// Module 11678 (getAppDMApplication)
+import ApplicationStore from "ApplicationStore" /* 5063 */;
+import UserProfileStore from "UserProfileStore" /* 7035 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const size = fn(2);

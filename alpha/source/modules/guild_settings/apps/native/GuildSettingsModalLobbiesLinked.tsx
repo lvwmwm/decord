@@ -1,12 +1,12 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17397
+// Function ID: 17398
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4476, 1372, 1074, 21, 1484, 6584, 5994, 5912, 4982, 5328, 4528, 576, 17260, 12, 8045, 5272, 6456, 2]
+// Dependencies: [19, 4479, 1372, 1074, 21, 1485, 6589, 5999, 5917, 4989, 5335, 4531, 576, 17290, 12, 8053, 5279, 6461, 2]
 // Exports: default
 
-// Module 17367 (GuildSettingsModalLobbiesLinked)
+// Module 17397 (GuildSettingsModalLobbiesLinked)
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4476 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -15,10 +15,10 @@ const require = fn;
 function SyncingToGamesItem(channels) {
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
-  dependencyMap = channels(1484).useNavigation();
-  let obj = channels(1484);
+  dependencyMap = channels(1485).useNavigation();
+  let obj = channels(1485);
   const tmp = channels;
-  const getOrFetchApplication = channels(6584).useGetOrFetchApplication(channels.applicationId);
+  const getOrFetchApplication = channels(6589).useGetOrFetchApplication(channels.applicationId);
   let tmp5Result = null;
   if (0 !== channels.length) {
     let name;
@@ -30,11 +30,11 @@ function SyncingToGamesItem(channels) {
       hasIcons: true,
       children: channels.map((id) => {
           const channel = id;
-          let obj = { label: channels(4982).computeChannelName(id, UserStore, RelationshipStore), icon: null, arrow: true, onPress: null };
+          let obj = { label: channels(4989).computeChannelName(id, UserStore, RelationshipStore), icon: null, arrow: true, onPress: null };
           const obj3 = { IconComponent: null };
-          const obj2 = channels(4982);
-          obj3.IconComponent = channels(5328).getChannelIconComponent(id);
-          obj.icon = closure_1_6(channels(5912).TableRow.Icon, obj3);
+          const obj2 = channels(4989);
+          obj3.IconComponent = channels(5335).getChannelIconComponent(id);
+          obj.icon = closure_1_6(channels(5917).TableRow.Icon, obj3);
           obj.onPress = function onPress() {
             const obj = { channel, numScreensToPop: null };
             let num = 1;
@@ -47,10 +47,10 @@ function SyncingToGamesItem(channels) {
             obj.numScreensToPop = num;
             closure_2.push(GuildSettingsSections.EDIT_LINKED_LOBBY, obj);
           };
-          return closure_1_6(channels(5912).TableRow, obj, id.id);
+          return closure_1_6(channels(5917).TableRow, obj, id.id);
         })
     };
-    tmp5Result = closure_6(tmp(5994).TableRowGroup, obj3);
+    tmp5Result = closure_6(tmp(5999).TableRowGroup, obj3);
   }
   return tmp5Result;
 }

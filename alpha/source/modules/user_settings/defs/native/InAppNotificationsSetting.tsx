@@ -1,19 +1,19 @@
-// Module ID: 15011
-// Function ID: 15012
+// Module ID: 15039
+// Function ID: 15040
 // Name: InAppNotificationsSetting
-// Dependencies: [7412, 1074, 2020, 9539, 1115, 2812, 1241, 10993, 13987, 15012, 2]
+// Dependencies: [7417, 1074, 2021, 9550, 1115, 2813, 1241, 11006, 14012, 15040, 2]
 
-// Module 15011 (InAppNotificationsSetting)
+// Module 15039 (InAppNotificationsSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2020 */;
-import _modDef2812 from "module_2812" /* 2812 */;
-import SettingsConstants from "SettingsConstants" /* 7412 */;
-import FocusModeUtils from "FocusModeUtils" /* 9539 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 13987 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15012 */;
-import SettingBuilders_mod from "SettingBuilders" /* 10993 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import _modDef2813 from "module_2813" /* 2813 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import FocusModeUtils from "FocusModeUtils" /* 9550 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14012 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15040 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -60,7 +60,7 @@ const obj3 = {};
 const merged1 = Object.assign(obj);
 obj3.useTitle = function useTitle() {
   const intl = util.intl;
-  return intl.string(_modDef2812.sH5mu9);
+  return intl.string(_modDef2813.sH5mu9);
 };
 obj3.useDescription = function useRedesignInAppNotificationsDescription() {
   const focusModeEnabled = FocusModeUtils.useFocusModeEnabled();
@@ -69,7 +69,7 @@ obj3.useDescription = function useRedesignInAppNotificationsDescription() {
   if (focusModeEnabled) {
     let stringResult = string(util.t.cIRG0s);
   } else {
-    stringResult = string(_modDef2812["T/zMdV"]);
+    stringResult = string(_modDef2813["T/zMdV"]);
   }
   return stringResult;
 };

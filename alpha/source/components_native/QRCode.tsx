@@ -1,24 +1,24 @@
-// Module ID: 9308
-// Function ID: 9309
+// Module ID: 9319
+// Function ID: 9320
 // Name: components_native/QRCode
-// Dependencies: [109, 19, 17, 21, 4829, 576, 4537, 9309, 5262, 9323, 7683, 2]
+// Dependencies: [109, 19, 17, 21, 4836, 576, 4540, 9320, 5269, 9334, 7691, 2]
 
-// Module 9308 (components_native/QRCode)
+// Module 9319 (components_native/QRCode)
 import nativeDefault from "native" /* 576 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 7683 */;
-import QRCodeDefault from "QRCode" /* 9309 */;
-import _mod9323 from "module_9323" /* 9323 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 7691 */;
+import QRCodeDefault from "QRCode" /* 9320 */;
+import _mod9334 from "module_9334" /* 9334 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
-const VisualEffectViewDefault = tmp7(5262);
+const VisualEffectViewDefault = tmp7(5269);
 require = fn;
 let closure_3 = ["style", "text", "blur", "accessibilityLabel"];
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, StyleSheet: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { qrCode: { display: "flex", alignSelf: "flex-start", padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs }, qrCodeContainer: { display: "flex", alignSelf: "flex-start", alignItems: "center", justifyContent: "center", position: "relative" }, qrCodeOverlay: { display: "flex", alignItems: "center", justifyContent: "center" }, "size-40": { width: 40, height: 40 }, "size-60": { width: 60, height: 60 } };
 let closure_10 = createStyles.createLegacyClassComponentStyles(obj2);
 let obj4 = { SIZE_40: "SIZE_40", SIZE_60: "SIZE_60" };
@@ -50,7 +50,7 @@ QRCode.prototype["render"] = function render() {
   obj.children = tmp6(hasOwnProperty, obj2);
   return React6(hasOwnProperty, obj);
 };
-QRCode.contextType = fn(4537).ThemeContext;
+QRCode.contextType = fn(4540).ThemeContext;
 QRCode.defaultProps = { size: 128, bgColor: "#ffffff", fgColor: "#000000" };
 const PureComponent2 = noop.PureComponent;
 class QRCodeWithOverlay extends PureComponent2 {
@@ -70,7 +70,7 @@ QRCodeWithOverlay.prototype["render"] = function render() {
   const obj3 = { style: null, children: null };
   const items1 = [tmp.qrCodeOverlay, React5.absoluteFill];
   obj3.style = items1;
-  obj4 = { style: tmp[frozen[SIZE_40]], source: _mod9323 };
+  obj4 = { style: tmp[frozen[SIZE_40]], source: _mod9334 };
   obj3.children = React6(timestampProducer, obj4);
   items[1] = React6(hasOwnProperty, obj3);
   let tmp6Result = null;
@@ -82,7 +82,7 @@ QRCodeWithOverlay.prototype["render"] = function render() {
   obj.children = items;
   return React7(hasOwnProperty, obj);
 };
-QRCodeWithOverlay.contextType = fn(4537).ThemeContext;
+QRCodeWithOverlay.contextType = fn(4540).ThemeContext;
 QRCodeWithOverlay.defaultProps = { size: 144, bgColor: "#ffffff", fgColor: "#000000" };
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/QRCode.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 10535
-// Function ID: 10536
+// Module ID: 10546
+// Function ID: 10547
 // Name: useAvatarDecorationPreviewSizes
-// Dependencies: [1478, 8265, 2]
+// Dependencies: [1479, 8273, 2]
 // Exports: useAvatarDecorationPreviewSizes
 
-// Module 10535 (useAvatarDecorationPreviewSizes)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 8265 */;
+// Module 10546 (useAvatarDecorationPreviewSizes)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 8273 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/native/useAvatarDecorationPreviewSizes.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 10807
-// Function ID: 10808
+// Module ID: 10820
+// Function ID: 10821
 // Name: TagsIcon
-// Dependencies: [19, 21, 576, 4527, 10808, 2]
+// Dependencies: [19, 21, 576, 4530, 10821, 2]
 // Exports: TagsIcon
 
-// Module 10807 (TagsIcon)
+// Module 10820 (TagsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod10808 from "module_10808" /* 10808 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod10821 from "module_10821" /* 10821 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const TagsIcon = function TagsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10808, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10821, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

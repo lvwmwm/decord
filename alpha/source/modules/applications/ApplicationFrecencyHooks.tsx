@@ -1,13 +1,13 @@
-// Module ID: 11589
-// Function ID: 11590
+// Module ID: 11603
+// Function ID: 11604
 // Name: ApplicationFrecencyHooks
-// Dependencies: [19, 8584, 1084, 2025, 504, 11, 6936, 2]
+// Dependencies: [19, 8592, 1084, 2026, 504, 11, 6941, 2]
 // Exports: useSortApplicationsViaFrecency
 
-// Module 11589 (ApplicationFrecencyHooks)
+// Module 11603 (ApplicationFrecencyHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import noop from "module_19" /* 19 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 8584 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 8592 */;
 
 const require = globalThis.__r;
 

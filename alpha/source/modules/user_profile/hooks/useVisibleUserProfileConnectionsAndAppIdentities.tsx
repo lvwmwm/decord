@@ -1,10 +1,10 @@
-// Module ID: 12637
-// Function ID: 12638
+// Module ID: 12654
+// Function ID: 12655
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 12638, 12639, 6584, 1370, 5590, 2]
+// Dependencies: [19, 12655, 12656, 6589, 1370, 5595, 2]
 // Exports: default
 
-// Module 12637 (useVisibleUserProfileConnectionsAndAppIdentities)
+// Module 12654 (useVisibleUserProfileConnectionsAndAppIdentities)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

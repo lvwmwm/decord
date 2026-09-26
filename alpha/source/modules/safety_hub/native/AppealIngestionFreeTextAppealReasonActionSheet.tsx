@@ -1,20 +1,20 @@
-// Module ID: 11367
-// Function ID: 11368
+// Module ID: 11381
+// Function ID: 11382
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 7873, 21, 4829, 576, 504, 1115, 6566, 5272, 5428, 5987, 11351, 6501, 4825, 5274, 2]
+// Dependencies: [32, 19, 17, 7881, 21, 4836, 576, 504, 1115, 6571, 5279, 5435, 5992, 11365, 6506, 4832, 5281, 2]
 // Exports: default
 
-// Module 11367 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 11381 (AppealIngestionFreeTextAppealReasonActionSheet)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7873 */;
+import SafetyHubStore from "SafetyHubStore" /* 7881 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { footerText: { textAlign: "center" }, textArea: { marginTop: -16, marginBottom: 36 }, separator: { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: -16 }, closeIcon: { alignSelf: "flex-end", flexDirection: "row", marginBottom: -26 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);

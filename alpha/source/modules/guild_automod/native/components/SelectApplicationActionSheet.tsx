@@ -1,40 +1,32 @@
-// Module ID: 17298
-// Function ID: 17299
+// Module ID: 17328
+// Function ID: 17329
 // Name: SelectApplicationActionSheet
-// Dependencies: [19, 21, 4829, 576, 1115, 6613, 6565, 5992, 4796, 5995, 5894, 1397, 2]
+// Dependencies: [19, 21, 1115, 6618, 6570, 5997, 4800, 6000, 9023, 2]
 // Exports: default
 
-// Module 17298 (SelectApplicationActionSheet)
-import nativeDefault from "native" /* 576 */;
+// Module 17328 (SelectApplicationActionSheet)
 import util from "util" /* 1115 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import FastImageDefault from "FastImage" /* 5894 */;
-import TableRadioGroup from "TableRadioGroup" /* 5992 */;
-import TableRadioRow from "TableRadioRow" /* 5995 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
-import ActionSheet from "ActionSheet" /* 6613 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import TableRadioGroup from "TableRadioGroup" /* 5997 */;
+import TableRadioRow from "TableRadioRow" /* 6000 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
+import ActionSheet from "ActionSheet" /* 6618 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9023 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
-let obj2 = { icon: null };
-let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.md };
-obj2.icon = size;
-let closure_4 = createStyles.createStyles(obj2);
-size = fn(2);
+const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/SelectApplicationActionSheet.tsx");
 
 export default function SelectApplicationActionSheet(arg0) {
   ({ applications, selectedApplicationId, onSelectApplication: require } = arg0);
-  const icon = closure_4();
   const intl = util.intl;
   const stringResult = intl.string(util.t.FKSiso);
   let obj = { header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }), children: null };
-  let obj2 = {
+  const obj2 = {
     hasIcons: true,
     accessibilityLabel: stringResult,
     defaultValue: selectedApplicationId,
@@ -42,16 +34,9 @@ export default function SelectApplicationActionSheet(arg0) {
       ActionSheetActionCreatorsDefault.hideActionSheet();
       require(arg0);
     },
-    children: applications.map((id) => {
-      const obj = { value: id.id, label: id.name, icon: null };
-      const obj2 = { source: null, style: null };
-      const obj4 = {};
-      const merged = Object.assign(id);
-      obj4.size = 32;
-      obj2.source = AvatarUtilsDefault.getApplicationIconSource(obj4);
-      obj2.style = icon.icon;
-      obj.icon = <tmp source={null} style={null} />;
-      return jsx(TableRadioRow.TableRadioRow, { value: id.id, label: id.name, icon: null }, id.id);
+    children: applications.map((application) => {
+      const obj = { value: application.id, label: application.name, icon: jsx(TableRowApplicationIconDefault, { application }) };
+      return jsx(TableRadioRow.TableRadioRow, { value: application.id, label: application.name, icon: jsx(TableRowApplicationIconDefault, { application }) }, application.id);
     })
   };
   obj.children = jsx(TableRadioGroup.TableRadioGroup, {
@@ -62,16 +47,9 @@ export default function SelectApplicationActionSheet(arg0) {
       ActionSheetActionCreatorsDefault.hideActionSheet();
       require(arg0);
     },
-    children: applications.map((id) => {
-      const obj = { value: id.id, label: id.name, icon: null };
-      const obj2 = { source: null, style: null };
-      const obj4 = {};
-      const merged = Object.assign(id);
-      obj4.size = 32;
-      obj2.source = AvatarUtilsDefault.getApplicationIconSource(obj4);
-      obj2.style = icon.icon;
-      obj.icon = <tmp source={null} style={null} />;
-      return jsx(TableRadioRow.TableRadioRow, { value: id.id, label: id.name, icon: null }, id.id);
+    children: applications.map((application) => {
+      const obj = { value: application.id, label: application.name, icon: jsx(TableRowApplicationIconDefault, { application }) };
+      return jsx(TableRadioRow.TableRadioRow, { value: application.id, label: application.name, icon: jsx(TableRowApplicationIconDefault, { application }) }, application.id);
     })
   });
   return jsx(ActionSheet.ActionSheet, { header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }), children: null });

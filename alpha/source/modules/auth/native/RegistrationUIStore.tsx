@@ -1,10 +1,10 @@
-// Module ID: 15543
-// Function ID: 15544
+// Module ID: 15572
+// Function ID: 15573
 // Name: RegistrationUIStore
 // Dependencies: [560, 1248, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 15543 (RegistrationUIStore)
+// Module 15572 (RegistrationUIStore)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;

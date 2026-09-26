@@ -1,19 +1,19 @@
-// Module ID: 8063
-// Function ID: 8064
+// Module ID: 8071
+// Function ID: 8072
 // Name: CardSection
-// Dependencies: [19, 17, 1074, 21, 4829, 5831, 576, 8064, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 5836, 576, 8072, 2]
 // Exports: default
 
-// Module 8063 (CardSection)
+// Module 8071 (CardSection)
 import nativeDefault from "native" /* 576 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8064 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8072 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5831 */;
+import TextStyles from "TextStyles" /* 5836 */;
 
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { paddingTop: 16, paddingHorizontal: 16 }, title: null, card: null };
 obj2.title = TextStyles(fn(1074).Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.TEXT_SUBTLE, 12, { uppercase: true, marginBottom: 6 });
 obj2.card = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };

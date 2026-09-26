@@ -1,10 +1,10 @@
-// Module ID: 5577
-// Function ID: 5578
+// Module ID: 5582
+// Function ID: 5583
 // Name: StickersSuggestionUtils
 // Dependencies: [2]
 // Exports: getQueriesFromUserInput, removePunctuation
 
-// Module 5577 (StickersSuggestionUtils)
+// Module 5582 (StickersSuggestionUtils)
 import size from "module_2" /* 2 */;
 
 const re0 = /(!|\.|;|,|-|—|–|\?|"|')/g;

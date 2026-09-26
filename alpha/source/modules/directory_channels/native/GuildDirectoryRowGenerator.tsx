@@ -1,11 +1,11 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12167
+// Function ID: 12168
 // Name: GuildDirectoryRowGenerator
-// Dependencies: [11774, 11773, 1115, 2]
+// Dependencies: [11788, 11787, 1115, 2]
 // Exports: generateDirectoryRows
 
-// Module 12149 (GuildDirectoryRowGenerator)
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 11774 */;
+// Module 12167 (GuildDirectoryRowGenerator)
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 11788 */;
 import size from "module_2" /* 2 */;
 
 const DirectoryEntryCategories = GuildDirectoryConstants.DirectoryEntryCategories;
@@ -23,11 +23,11 @@ export const generateDirectoryRows = function generateDirectoryRows(arg0, arr, c
   if (0 === arr.length) {
     return [];
   } else if (currentCategoryId !== DirectoryEntryCategories.ALL) {
-    const obj4 = set(11773);
-    return set(11773).rankGuildEntries(arr).map((entry) => ({ type: constants.ENTRY, entry }));
+    const obj4 = set(11787);
+    return set(11787).rankGuildEntries(arr).map((entry) => ({ type: constants.ENTRY, entry }));
   } else {
     const items = [];
-    const rankByDateAddedResult = set(11773).rankByDateAdded(arr);
+    const rankByDateAddedResult = set(11787).rankByDateAdded(arr);
     const _Set = Set;
     set = new Set(rankByDateAddedResult.map((guildId) => guildId.guildId));
     let combined = items;
@@ -40,8 +40,8 @@ export const generateDirectoryRows = function generateDirectoryRows(arg0, arr, c
       combined = items.concat(rankByDateAddedResult.map((entry) => ({ type: constants.ENTRY, entry })));
     }
     const found = arr.filter((guildId) => !set.has(guildId.guildId));
-    const obj5 = set(11773);
-    const result = set(11773).orderByTotalMemberCount(found);
+    const obj5 = set(11787);
+    const result = set(11787).orderByTotalMemberCount(found);
     let combined1 = combined;
     if (result.length > 0) {
       const obj2 = { type: obj.HEADER, header: null };

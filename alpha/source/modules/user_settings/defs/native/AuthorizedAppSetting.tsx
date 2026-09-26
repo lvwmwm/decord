@@ -1,12 +1,12 @@
-// Module ID: 14451
-// Function ID: 14452
+// Module ID: 14476
+// Function ID: 14477
 // Name: AuthorizedAppSetting
-// Dependencies: [7412, 1074, 10993, 14452, 2]
+// Dependencies: [7417, 1074, 11006, 14477, 2]
 
-// Module 14451 (AuthorizedAppSetting)
+// Module 14476 (AuthorizedAppSetting)
 import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7412 */;
-import SettingBuilders from "SettingBuilders" /* 10993 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

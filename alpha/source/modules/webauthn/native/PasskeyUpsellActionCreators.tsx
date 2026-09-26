@@ -1,13 +1,13 @@
-// Module ID: 14197
-// Function ID: 14198
+// Module ID: 14222
+// Function ID: 14223
 // Name: PasskeyUpsellActionCreators
-// Dependencies: [4651, 2028, 2030, 5032, 14198, 1980, 4796, 14199, 14201, 2]
+// Dependencies: [4654, 2029, 2031, 5039, 14223, 1981, 4800, 14224, 14226, 2]
 
-// Module 14197 (PasskeyUpsellActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
+// Module 14222 (PasskeyUpsellActionCreators)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import size from "module_2" /* 2 */;
 
 const PASSKEY_UPSELL_KEY = "PASSKEY_UPSELL_KEY";
@@ -17,24 +17,24 @@ export default {
   openPasskeyUpsell() {
     if (!obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.PASSWORDLESS_UPSELL)) {
       const self = this;
-      const markDismissibleContentAsShown = tmp(2030).requestMarkDismissibleContentAsShown(tmp(2028).DismissibleContent.PASSWORDLESS_UPSELL);
+      const markDismissibleContentAsShown = tmp(2031).requestMarkDismissibleContentAsShown(tmp(2029).DismissibleContent.PASSWORDLESS_UPSELL);
       const result = this.openPasskeyUpsellPromoSheet();
-      const tmpResult = tmp(2030);
+      const tmpResult = tmp(2031);
     }
   },
   openPasskeyUpsellModal() {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14198, dependencyMap.paths), undefined, PASSKEY_UPSELL_KEY);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14223, dependencyMap.paths), undefined, PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellModal() {
     ModalActionCreatorsDefault.popWithKey(PASSKEY_UPSELL_KEY);
   },
   openPasskeyUpsellPromoSheet() {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14199, dependencyMap.paths), PASSKEY_UPSELL_KEY);
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14224, dependencyMap.paths), PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellPromoSheet() {
     ActionSheetActionCreatorsDefault.hideActionSheet(PASSKEY_UPSELL_KEY);
   },
   openPasskeyUpsellPromoModal(merged) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14201, dependencyMap.paths), merged, PASSKEY_UPSELL_KEY);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14226, dependencyMap.paths), merged, PASSKEY_UPSELL_KEY);
   }
 };

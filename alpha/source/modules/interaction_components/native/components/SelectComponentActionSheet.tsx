@@ -1,17 +1,17 @@
-// Module ID: 11286
-// Function ID: 11287
+// Module ID: 11300
+// Function ID: 11301
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2044, 2098, 6567, 21, 4829, 576, 6565, 1115, 5274, 9025, 4545, 5912, 5924, 8734, 6397, 4538, 1612, 1478, 5989, 504, 4796, 6566, 6040, 2]
+// Dependencies: [19, 17, 2045, 2099, 6572, 21, 4836, 576, 6570, 1115, 5281, 9036, 4548, 5917, 5929, 8742, 6402, 4541, 1613, 1479, 5994, 504, 4800, 6571, 6045, 2]
 // Exports: default
 
-// Module 11286 (SelectComponentActionSheet)
+// Module 11300 (SelectComponentActionSheet)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4545 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import TableRow from "TableRow" /* 5912 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import TableRow from "TableRow" /* 5917 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
 function SelectionHeader(renderIcon) {
@@ -67,10 +67,10 @@ function SelectionHeader(renderIcon) {
     const obj3 = { size: "sm", variant: str, disabled: selectButtonDisabled, onPress: renderIcon.submitSelection, text: null };
     const intl3 = tmp6(1115).intl;
     obj3.text = intl3.string(tmp6(1115).t.XqMe3N);
-    tmp5Result = tmp5(tmp6(5274).Button, obj3);
+    tmp5Result = tmp5(tmp6(5281).Button, obj3);
   }
   obj.trailing = tmp5Result;
-  const children = [closure_8(renderIcon(6565).BottomSheetTitleHeader, obj), ];
+  const children = [closure_8(renderIcon(6570).BottomSheetTitleHeader, obj), ];
   let tmp5Result4 = null;
   if (null != onQueryChange) {
     tmp5Result4 = null;
@@ -104,8 +104,8 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp5Result4 = tmp5(selectedOptions(9025), obj4);
-      const tmp13 = selectedOptions(9025);
+      tmp5Result4 = tmp5(selectedOptions(9036), obj4);
+      const tmp13 = selectedOptions(9036);
     }
   }
   children[1] = tmp5Result4;
@@ -168,11 +168,11 @@ function SelectionOptionItem(item) {
       selected = false;
     }
     const obj5 = { checked: selected };
-    let tmp6Result2 = tmp6(tmp2(5924).FormCheckbox, obj5);
+    let tmp6Result2 = tmp6(tmp2(5929).FormCheckbox, obj5);
   } else {
     tmp6Result2 = null;
     if (true === selected) {
-      tmp6Result2 = tmp6(tmp2(8734).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp6Result2 = tmp6(tmp2(8742).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp6Result2;
@@ -181,10 +181,10 @@ function SelectionOptionItem(item) {
   return React6(TableRow.TableRow, obj2);
 }
 const View = fn(17).View;
-let closure_7 = fn(6567).ACTION_SHEET_START_HEIGHT_RATIO;
+let closure_7 = fn(6572).ACTION_SHEET_START_HEIGHT_RATIO;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { selectionOptionItemIconWrapper: { width: nativeDefault.space.PX_32, alignItems: "center" }, tagListIconWrapper: null, tagListIcon: null, textInputWrapper: null };
 let size = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16 };
 obj2.tagListIconWrapper = size;

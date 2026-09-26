@@ -1,9 +1,9 @@
-// Module ID: 2067
-// Function ID: 2068
+// Module ID: 2068
+// Function ID: 2069
 // Name: LibdiscoreStore
-// Dependencies: [3, 504, 573, 2068, 2]
+// Dependencies: [3, 504, 573, 2069, 2]
 
-// Module 2067 (LibdiscoreStore)
+// Module 2068 (LibdiscoreStore)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

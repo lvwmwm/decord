@@ -1,13 +1,13 @@
-// Module ID: 14252
-// Function ID: 14253
+// Module ID: 14277
+// Function ID: 14278
 // Name: TinyBroncoNoticeVisibility
-// Dependencies: [1372, 1978, 5730, 5731, 504, 2]
+// Dependencies: [1372, 1979, 5735, 5736, 504, 2]
 // Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
-// Module 14252 (TinyBroncoNoticeVisibility)
-import Server from "Server" /* 1978 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5730 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5731 */;
+// Module 14277 (TinyBroncoNoticeVisibility)
+import Server from "Server" /* 1979 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5736 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -22,8 +22,8 @@ export const shouldShowAgeNotice = function shouldShowAgeNotice() {
     if (currentUser != null) {
       prop = currentUser.ageVerificationStatus;
     }
-    isFeatureAgeGatedResult = null != prop && prop !== tmp(1978).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== tmp(1978).AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
-    const tmp8 = null != prop && prop !== tmp(1978).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== tmp(1978).AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
+    isFeatureAgeGatedResult = null != prop && prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
+    const tmp8 = null != prop && prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
   }
   return isFeatureAgeGatedResult;
 };

@@ -1,15 +1,15 @@
-// Module ID: 6400
-// Function ID: 6401
+// Module ID: 6405
+// Function ID: 6406
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1074, 6008, 573, 1271, 6005, 1101, 1393, 510, 5476, 6401, 6404, 6406, 2]
+// Dependencies: [5, 1074, 6013, 573, 1271, 6010, 1101, 1393, 510, 5482, 6406, 6409, 6411, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 6400 (UserSettingsAccountActionCreators)
+// Module 6405 (UserSettingsAccountActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
-import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6404 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
+import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6409 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -128,7 +128,7 @@ let closure_11 = async function _saveProfileAndAccountRequest(arg0, value) {
 };
 const Constants = fn(1074);
 ({ Endpoints: closure_4, Routes: hasOwnProperty, DEVICE_TOKEN: metroRequire, DEVICE_VOIP_TOKEN: closure_7 } = Constants);
-const PushNotificationConstants = fn(6008);
+const PushNotificationConstants = fn(6013);
 ({ DEVICE_PUSH_VOIP_PROVIDER: closure_8, getDevicePushProvider: closure_9 } = PushNotificationConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/UserSettingsAccountActionCreators.tsx");
@@ -152,7 +152,7 @@ export { saveProfileAndAccountRequest };
 export const saveProfileAndAccountChanges = function saveProfileAndAccountChanges(accountUpdateForUpdateRequest) {
   const avatar = accountUpdateForUpdateRequest.avatar;
   const avatarId = accountUpdateForUpdateRequest.avatarId;
-  ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, typingIndicatorStyle } = accountUpdateForUpdateRequest);
+  ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, vadColors, typingIndicatorStyle } = accountUpdateForUpdateRequest);
   ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = accountUpdateForUpdateRequest);
   avatarId(573).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
   const user = { username, email, email_token: emailToken, password, avatar, avatar_description: avatarDescription, avatar_id: avatarId, discriminator, global_name: globalName, legacy_username: legacyUsername, new_password: newPassword };
@@ -186,6 +186,9 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.display_name_effect_id = null;
     user.display_name_colors = null;
   }
+  if (undefined !== vadColors) {
+    user.vad_colors = vadColors;
+  }
   if (undefined !== typingIndicatorStyle) {
     let result = null;
     if (null != typingIndicatorStyle) {
@@ -215,8 +218,8 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   const obj = avatarId(573);
   tmp13 = null != tmp12 && null != value;
   tmp15 = closure_8;
-  obj4.headers = avatarId(5476).buildHeadersForMd5({ [avatar(6401).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
-  let tmpResult = avatarId(5476);
+  obj4.headers = avatarId(5482).buildHeadersForMd5({ [avatar(6406).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
+  let tmpResult = avatarId(5482);
   return saveProfileAndAccountRequest(user, obj4).then((result) => {
     DispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
     let tmp4 = null == avatar;
@@ -330,8 +333,8 @@ export const saveAccountChanges = function saveAccountChanges(user, close) {
       const tmp3Result4 = tmp3(573);
     }
     if (close) {
-      tmp3(6406).close();
-      const tmp3Result5 = tmp3(6406);
+      tmp3(6411).close();
+      const tmp3Result5 = tmp3(6411);
     } else {
       tmp3(573).dispatch({ type: "USER_SETTINGS_MODAL_SUBMIT_COMPLETE" });
       const tmp3Result6 = tmp3(573);

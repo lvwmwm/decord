@@ -1,16 +1,16 @@
-// Module ID: 16604
-// Function ID: 16605
+// Module ID: 16633
+// Function ID: 16634
 // Name: ThreadAutoArchiveBottomSheet
-// Dependencies: [19, 2051, 21, 8599, 5992, 1115, 5995, 2]
+// Dependencies: [19, 2052, 21, 8607, 5997, 1115, 6000, 2]
 
-// Module 16604 (ThreadAutoArchiveBottomSheet)
-import TableRadioRow from "TableRadioRow" /* 5995 */;
+// Module 16633 (ThreadAutoArchiveBottomSheet)
+import TableRadioRow from "TableRadioRow" /* 6000 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ChannelFlags = fn(2051).ChannelFlags;
+const ChannelFlags = fn(2052).ChannelFlags;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/threads/native/components/ThreadAutoArchiveBottomSheet.tsx");

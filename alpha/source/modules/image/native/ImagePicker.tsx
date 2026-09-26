@@ -1,15 +1,15 @@
-// Module ID: 5455
-// Function ID: 5456
+// Module ID: 5462
+// Function ID: 5463
 // Name: ImagePicker
-// Dependencies: [1182, 1085, 1364, 5456, 5457, 576, 5459, 1115, 2]
+// Dependencies: [1182, 1085, 1364, 5463, 5464, 576, 5466, 1115, 2]
 
-// Module 5455 (ImagePicker)
+// Module 5462 (ImagePicker)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 5456 */;
-import launchCamera from "launchCamera" /* 5457 */;
-import openPickerDefault from "openPicker" /* 5459 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 5463 */;
+import launchCamera from "launchCamera" /* 5464 */;
+import openPickerDefault from "openPicker" /* 5466 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
@@ -123,5 +123,8 @@ export default {
     const intl6 = util.intl;
     size.cropperClampButtonAccessibilityLabel = intl6.string(util.t.QHvDTL);
     return openPickerDefault.openCropper(size);
+  },
+  cleanSingle(path) {
+    return openPickerDefault.cleanSingle(path);
   }
 };

@@ -1,11 +1,11 @@
-// Module ID: 6832
-// Function ID: 6833
+// Module ID: 6837
+// Function ID: 6838
 // Name: BlockedPaymentsCountryExperiment
-// Dependencies: [1434, 6833, 2]
+// Dependencies: [1435, 6838, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 6832 (BlockedPaymentsCountryExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 6837 (BlockedPaymentsCountryExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-block-purchases", kind: "user", defaultConfig: { enabled: false }, variations: null };

@@ -1,21 +1,21 @@
-// Module ID: 14552
-// Function ID: 14553
+// Module ID: 14577
+// Function ID: 14578
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 4821, 5751, 21, 4563, 4829, 576, 4830, 4833, 14553, 10676, 5280, 10698, 10706, 5758, 7136, 5756, 8048, 5894, 4825, 5274, 14520, 504, 14521, 9413, 2]
+// Dependencies: [109, 19, 17, 4825, 5756, 21, 4566, 4836, 576, 4837, 4840, 14578, 10689, 5287, 10711, 10719, 5763, 7141, 5761, 8056, 5899, 4832, 5281, 14545, 504, 14546, 9424, 2]
 // Exports: default
 
-// Module 14552 (BountiesModalAdvertiserCta)
+// Module 14577 (BountiesModalAdvertiserCta)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4563 */;
-import timing from "timing" /* 4830 */;
-import timingPresets from "timingPresets" /* 4833 */;
-import QuestContent from "QuestContent" /* 5756 */;
-import AdCreativeType from "AdCreativeType" /* 5758 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7136 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10706 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
+import timingPresets from "timingPresets" /* 4840 */;
+import QuestContent from "QuestContent" /* 5761 */;
+import AdCreativeType from "AdCreativeType" /* 5763 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7141 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10719 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
@@ -83,11 +83,11 @@ function BountiesModalAdvertiserCtaContent(bounty) {
 let closure_3 = ["style"];
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: metroRequire, View: closure_7, Pressable } = get_ActivityIndicator);
-const QuestsExperimentLocations = fn(5751).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5756).QuestsExperimentLocations;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let closure_12 = ReanimatedRexport.createAnimatedComponent(Pressable);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_13 = createStyles.createStyles(() => {
   const obj = { outerContainer: null, ctaPressable: null, cta: null, ctaLogoContainer: null, ctaLogo: null, ctaInfo: null };
   const rect = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, alignItems: "center" };
@@ -112,15 +112,15 @@ let entering = function n(value) {
   const obj = { opacity: timing.withTiming(value, timingPresets.timingStandard, "respect-motion-settings") };
   return obj;
 };
-entering.__closure = { withTiming: fn(4830).withTiming, timingStandard: fn(4833).timingStandard };
+entering.__closure = { withTiming: fn(4837).withTiming, timingStandard: fn(4840).timingStandard };
 entering.__workletHash = 2981824910249;
 entering.__initData = { code: "function BountiesModalAdvertiserCtaTsx1(visible){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};}" };
 const fn2 = function s(value, fn2) {
   const obj = { opacity: timing.withTiming(value, timingPresets.timingFast, "respect-motion-settings", fn2) };
   return obj;
 };
-let obj = { withTiming: fn(4830).withTiming, timingStandard: fn(4833).timingStandard };
-fn2.__closure = { withTiming: fn(4830).withTiming, timingFast: fn(4833).timingFast };
+let obj = { withTiming: fn(4837).withTiming, timingStandard: fn(4840).timingStandard };
+fn2.__closure = { withTiming: fn(4837).withTiming, timingFast: fn(4840).timingFast };
 fn2.__workletHash = 15850601331978;
 fn2.__initData = { code: "function BountiesModalAdvertiserCtaTsx2(visible,cleanUp){const{withTiming,timingFast}=this.__closure;return{opacity:withTiming(visible,timingFast,'respect-motion-settings',cleanUp)};}" };
 const __initData = { code: "function BountiesModalAdvertiserCtaTsx3(){const{withTiming,interpolate,visibility,visible,timingStandard,timingFast}=this.__closure;return{transform:[{translateY:withTiming(interpolate(visibility,[0,1],[8,0]),visible?timingStandard:timingFast)}]};}" };

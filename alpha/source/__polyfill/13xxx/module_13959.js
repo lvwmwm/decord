@@ -1,17 +1,9 @@
 // Module ID: 13959
 // Function ID: 13960
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 13959
+import registerAsset from "module_1121" /* 1121 */;
 
-export default () => (arg0) => {
-  closure_0 = arg0;
-  return {
-    features: {
-      clear() {
-        return closure_0.send("clear");
-      }
-    }
-  };
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "bc4f103d29d98767eb7ae693f67ae198", name: "NitroGem2", type: "lottie" });

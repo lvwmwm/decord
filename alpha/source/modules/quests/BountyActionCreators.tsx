@@ -1,22 +1,22 @@
-// Module ID: 10731
-// Function ID: 10732
+// Module ID: 10744
+// Function ID: 10745
 // Name: BountyActionCreators
-// Dependencies: [5, 7108, 4878, 7110, 7111, 1074, 3, 573, 5758, 10675, 7109, 4732, 6876, 7129, 1271, 5754, 7107, 2]
+// Dependencies: [5, 7113, 4885, 7115, 7116, 1074, 3, 573, 5763, 10688, 7114, 4736, 6881, 7134, 1271, 5759, 7112, 2]
 // Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchDockCreativePreview, fetchQuestHomeBounties, resetCreativePreviewDeliveryState, resetPreviewDeliveryStateLookback, setBountyVideoProgress
 
-// Module 10731 (BountyActionCreators)
+// Module 10744 (BountyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import QuestTypes from "QuestTypes" /* 5754 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6876 */;
-import QuestDataUtils from "QuestDataUtils" /* 7107 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7129 */;
+import QuestTypes from "QuestTypes" /* 5759 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6881 */;
+import QuestDataUtils from "QuestDataUtils" /* 7112 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7134 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7108 */;
-import NetworkStore from "NetworkStore" /* 4878 */;
-import BountyStore from "BountyStore" /* 7110 */;
-import QuestStore from "QuestStore" /* 7111 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7113 */;
+import NetworkStore from "NetworkStore" /* 4885 */;
+import BountyStore from "BountyStore" /* 7115 */;
+import QuestStore from "QuestStore" /* 7116 */;
 
 require = fn;
 function fetchBountiesAndDispatch() {
@@ -105,8 +105,8 @@ let closure_12 = async function _fetchQuestHomeBounties(arg0, value) {
           c1 = 1;
           const obj4 = {
             value: fetchBountiesAndDispatch(tmp5, asyncGeneratorStep(async () => {
-                      closure_128_0 = await tmp2(6876).getSession();
-                      const orRefreshAdSession = tmp2(7129).getOrRefreshAdSession();
+                      closure_128_0 = await tmp2(6881).getSession();
+                      const orRefreshAdSession = tmp2(7134).getOrRefreshAdSession();
                       const HTTP = tmp2(1271).HTTP;
                       const request = { url: constants.QUESTS_GET_DECISIONS, query: null, rejectWithError: false, context: null };
                       const obj7 = { placement: closure_129_0, client_ad_session_id: orRefreshAdSession.uuid, client_heartbeat_session_id: null, num_decisions_requested: 5 };
@@ -584,11 +584,11 @@ let closure_16 = async function _dismissAdContent(arg0, value) {
               const obj5 = { type: "AD_CONTENT_DISMISS_BEGIN", adCreativeType, adCreativeId };
               DispatcherDefault.dispatch(obj5);
               c5 = 1;
-              const adMetadataSealed = tmp55(7107).getAdMetadataSealed(tmp54, adCreativeId);
-              const tmp55Result = tmp55(7107);
-              const adTrafficMetadataSealed = tmp55(7107).getAdTrafficMetadataSealed(tmp54, undefined, adCreativeId);
-              const tmp55Result3 = tmp55(7107);
-              const questPlacementFromQuestContent = tmp55(7107).getQuestPlacementFromQuestContent(tmp54);
+              const adMetadataSealed = tmp55(7112).getAdMetadataSealed(tmp54, adCreativeId);
+              const tmp55Result = tmp55(7112);
+              const adTrafficMetadataSealed = tmp55(7112).getAdTrafficMetadataSealed(tmp54, undefined, adCreativeId);
+              const tmp55Result3 = tmp55(7112);
+              const questPlacementFromQuestContent = tmp55(7112).getQuestPlacementFromQuestContent(tmp54);
               const HTTP = tmp55(1271).HTTP;
               const request = { url: Endpoints.QUESTS_CREATIVES_DISMISS(adCreativeId), body: null, rejectWithError: false };
               let tmp42 = null;

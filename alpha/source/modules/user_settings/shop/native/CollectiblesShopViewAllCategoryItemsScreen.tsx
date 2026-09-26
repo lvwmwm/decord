@@ -1,13 +1,13 @@
-// Module ID: 15434
-// Function ID: 15435
+// Module ID: 15463
+// Function ID: 15464
 // Name: CollectiblesShopViewAllCategoryItemsScreen
-// Dependencies: [19, 21, 6410, 1484, 15435, 2]
+// Dependencies: [19, 21, 6415, 1485, 15464, 2]
 // Exports: default
 
-// Module 15434 (CollectiblesShopViewAllCategoryItemsScreen)
-import useNavigation from "useNavigation" /* 1484 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6410 */;
-import CollectiblesShopViewAllCategoryItemsDefault from "CollectiblesShopViewAllCategoryItems" /* 15435 */;
+// Module 15463 (CollectiblesShopViewAllCategoryItemsScreen)
+import useNavigation from "useNavigation" /* 1485 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6415 */;
+import CollectiblesShopViewAllCategoryItemsDefault from "CollectiblesShopViewAllCategoryItems" /* 15464 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 16978
+// Function ID: 16979
 // Name: GameTagOnVoiceTileExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1436, 2]
 
-// Module 16950 (GameTagOnVoiceTileExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 16978 (GameTagOnVoiceTileExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
 
 const obj = { kind: "user", name: "2026-08-game-tag-on-mobile-voice-call-tiles", defaultConfig: { showGameTag: false }, variations: null };
 const obj2 = { 1: null };

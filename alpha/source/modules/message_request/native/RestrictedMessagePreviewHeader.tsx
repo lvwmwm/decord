@@ -1,24 +1,24 @@
-// Module ID: 16686
-// Function ID: 16687
+// Module ID: 16715
+// Function ID: 16716
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 11918, 21, 4829, 576, 6578, 4675, 7617, 6605, 4524, 4796, 12080, 1980, 7629, 6755, 5032, 5428, 1115, 1177, 4825, 16669, 5891, 16687, 2]
+// Dependencies: [19, 17, 11936, 21, 4836, 576, 6583, 4678, 7624, 6610, 4527, 4800, 12098, 1981, 7636, 6760, 5039, 5435, 1115, 1177, 4832, 16698, 5896, 16716, 2]
 // Exports: default
 
-// Module 16686 (RestrictedMessagePreviewHeader)
+// Module 16715 (RestrictedMessagePreviewHeader)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ToastUtils from "ToastUtils" /* 4524 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import ClipboardUtils from "ClipboardUtils" /* 6605 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7617 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ToastUtils from "ToastUtils" /* 4527 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(11918).MOBILE_MESSAGE_REQUESTS_MODAL_KEY;
+let closure_5 = fn(11936).MOBILE_MESSAGE_REQUESTS_MODAL_KEY;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { alignItems: "flex-start", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 }, avatar: null };
 let obj3 = { alignItems: "flex-start", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 };
 obj2.avatar = { marginBottom: nativeDefault.space.PX_4 };
@@ -47,16 +47,16 @@ export default function RestrictedMessagePreviewHeader(channel) {
   }, items1);
   let obj3 = { style: tmp.container, children: null };
   const callback2 = userTag.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12080, dependencyMap.paths), "MutualGuildsActionSheet", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12098, dependencyMap.paths), "MutualGuildsActionSheet", {
       user,
       onPressMutualGuild(arg0) {
-        const result = channel(7629).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
-        const obj = channel(7629);
-        channel(6755).transitionToGuild(arg0);
-        const obj2 = channel(6755);
-        user(4796).hideActionSheet();
-        const obj3 = user(4796);
-        user(5032).popWithKey(closure_1_5);
+        const result = channel(7636).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
+        const obj = channel(7636);
+        channel(6760).transitionToGuild(arg0);
+        const obj2 = channel(6760);
+        user(4800).hideActionSheet();
+        const obj3 = user(4800);
+        user(5039).popWithKey(closure_1_5);
       }
     });
   }, items2);

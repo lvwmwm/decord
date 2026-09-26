@@ -1,9 +1,0 @@
-// Module ID: 11607
-// Function ID: 11608
-// Dependencies: [1121]
-
-// Module 11607
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c5aa55bc0a42077cb2682a6e299457fd", name: "ShopIcon", type: "png" });

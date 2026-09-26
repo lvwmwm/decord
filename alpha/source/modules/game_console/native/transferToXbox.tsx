@@ -1,11 +1,11 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 9255
+// Function ID: 9256
 // Name: transferToXbox
-// Dependencies: [5, 19, 17, 1074, 21, 9235, 9232, 9245, 5197, 9246, 1980, 9238, 4971, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 9246, 9243, 9256, 5204, 9257, 1981, 9249, 4978, 2]
 // Exports: default
 
-// Module 9244 (transferToXbox)
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9235 */;
+// Module 9255 (transferToXbox)
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9246 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

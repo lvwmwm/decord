@@ -1,16 +1,34 @@
 // Module ID: 6281
 // Function ID: 6282
-// Dependencies: [6282, 6283]
+// Dependencies: [6282]
 
 // Module 6281
 import _mod6282 from "module_6282" /* 6282 */;
 
 
-export default function toPropertyKey(arg0) {
-  const tmp = _mod6282(arg0, "string");
-  let text = tmp;
-  if ("symbol" != obj.default(tmp)) {
-    text = `${tmp}`;
+export default function _objectWithoutProperties(arg0, arr) {
+  if (null == arg0) {
+    return {};
+  } else {
+    const tmp8 = _mod6282(arg0, arr);
+    const _Object2 = Object;
+    if (Object.getOwnPropertySymbols) {
+      const _Object = Object;
+      const ownPropertySymbols = Object.getOwnPropertySymbols(arg0);
+      let num = 0;
+      if (0 < ownPropertySymbols.length) {
+        const tmp2 = -1 === arr.indexOf(ownPropertySymbols[num]);
+        while (!tmp2) {
+          if (tmp2) {
+            tmp8[tmp] = arg0[tmp];
+          }
+          num = num + 1;
+        }
+        const propertyIsEnumerable = {}.propertyIsEnumerable;
+        const call = propertyIsEnumerable.call;
+        typeof call === "unknown" ? propertyIsEnumerable(ownPropertySymbols[num]) : call(arg0, ownPropertySymbols[num]);
+      }
+    }
+    return tmp8;
   }
-  return text;
 };

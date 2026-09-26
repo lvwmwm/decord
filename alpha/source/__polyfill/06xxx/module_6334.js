@@ -1,27 +1,11 @@
 // Module ID: 6334
 // Function ID: 6335
-// Dependencies: []
-// Exports: useDataMultiplier
+// Dependencies: [17, 6273]
 
 // Module 6334
+import _mod17 from "module_17" /* 17 */;
+import FlashList from "FlashList" /* 6273 */;
 
-export const useDataMultiplier = function useDataMultiplier(arg0, arg1) {
-  const array = new Array(arg1);
-  let flag = false;
-  if (typeof arg0[0] === "object") {
-    flag = true;
-  }
-  for (let num = 0; num < arg1; num = num + 1) {
-    let tmp3 = arg0[num % tmp];
-    if (flag) {
-      let obj = {};
-      let merged = Object.assign(tmp3);
-      let tmp5 = obj;
-    } else {
-      tmp5 = tmp3;
-    }
-    array[num] = tmp5;
-  }
-  const items = [array];
-  return items;
-};
+const Animated = _mod17.Animated;
+
+export default Animated.createAnimatedComponent(FlashList.FlashList);

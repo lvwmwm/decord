@@ -1,13 +1,13 @@
-// Module ID: 15730
-// Function ID: 15731
+// Module ID: 15758
+// Function ID: 15759
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4829, 5077, 9177, 4825, 4675, 1115, 15731, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 5084, 9188, 4832, 4678, 1115, 15759, 2]
 // Exports: default
 
-// Module 15730 (VoiceUserNameItem)
-import Text_Text from "Text/Text" /* 4825 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5077 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9177 */;
+// Module 15758 (VoiceUserNameItem)
+import Text_Text from "Text/Text" /* 4832 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5084 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9188 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: metroRequire, jsx: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_8 = createStyles.createStyles({ container: { marginLeft: 8, flex: 1, flexDirection: "row" }, tag: { flexDirection: "row", alignItems: "center", paddingLeft: 8 }, measuringTag: { opacity: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUserNameItem.tsx");
@@ -68,8 +68,8 @@ export default function VoiceUserNameItem(arg0) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = tmp2(4675).getName(user);
-    const tmp2Result = tmp2(4675);
+    nick = tmp2(4678).getName(user);
+    const tmp2Result = tmp2(4678);
   }
   const items1 = [nick, ];
   if (isGuest) {
@@ -77,7 +77,7 @@ export default function VoiceUserNameItem(arg0) {
     const intl = tmp5(1115).intl;
     const items2 = ["\u00A0", intl.string(tmp5(1115).t["pFO/Ph"])];
     obj6.children = items2;
-    isGuest = tmp18(tmp5(4825).Text, obj6);
+    isGuest = tmp18(tmp5(4832).Text, obj6);
   }
   items1[1] = isGuest;
   obj4.children = items1;
@@ -89,7 +89,7 @@ export default function VoiceUserNameItem(arg0) {
   if (tmp12) {
     const obj7 = { onLayout: callback2, style: tmp.tag, children: null };
     const obj8 = { userId: user.id };
-    obj7.children = React5(tmp2(15731), obj8);
+    obj7.children = React5(tmp2(15759), obj8);
     tmp12 = React5(tmp19, obj7);
   }
   items3[1] = tmp12;

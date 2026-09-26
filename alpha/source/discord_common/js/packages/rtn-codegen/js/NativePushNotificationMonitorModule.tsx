@@ -1,9 +1,9 @@
-// Module ID: 8740
-// Function ID: 8741
+// Module ID: 8748
+// Function ID: 8749
 // Name: NativePushNotificationMonitorModule
 // Dependencies: [17, 2]
 
-// Module 8740 (NativePushNotificationMonitorModule)
+// Module 8748 (NativePushNotificationMonitorModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

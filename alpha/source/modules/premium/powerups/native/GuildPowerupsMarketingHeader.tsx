@@ -1,18 +1,18 @@
-// Module ID: 13100
-// Function ID: 13101
+// Module ID: 13117
+// Function ID: 13118
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 4719, 21, 4829, 576, 672, 4825, 13101, 11966, 11991, 1115, 2518, 13102, 2]
+// Dependencies: [19, 17, 4723, 21, 4836, 576, 672, 4832, 13118, 11984, 12009, 1115, 2519, 13119, 2]
 // Exports: default
 
-// Module 13100 (GuildPowerupsMarketingHeader)
+// Module 13117 (GuildPowerupsMarketingHeader)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 11966 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 11991 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13101 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 11984 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12009 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13118 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4719 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;
 
 require = fn;
 function PerkText(children) {
@@ -20,7 +20,7 @@ function PerkText(children) {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: null, text: null };
 let obj3 = { padding: nativeDefault.space.PX_12, backgroundColor: null };
 let obj4 = _modDef672("#000000");
@@ -61,7 +61,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str2 = "";
         if (0 !== arr.length) {
-          let first = tmp2(13102)(arr);
+          let first = tmp2(13119)(arr);
           if (1 === first.length) {
             const obj3 = { powerup: null };
             first = first[0];
@@ -74,13 +74,13 @@ export default function GuildPowerupsMarketingHeader(guild) {
             obj4.perk1 = tmp6(PerkText, obj5);
             const obj6 = { powerup: first[1] };
             obj4.perk2 = tmp6(PerkText, obj6);
-            formatResult = intl2.format(tmp2(2518).MNO3sG, obj4);
+            formatResult = intl2.format(tmp2(2519).MNO3sG, obj4);
           }
         }
       }
       const obj7 = { perks: str2 };
-      obj2.children = intl.format(tmp2(2518)["7lwpzR"], obj7);
-      obj.children = jsx(guild(4825).Text, { style: tmp.text, variant: "text-sm/semibold", children: null });
+      obj2.children = intl.format(tmp2(2519)["7lwpzR"], obj7);
+      obj.children = jsx(guild(4832).Text, { style: tmp.text, variant: "text-sm/semibold", children: null });
       return <View style={tmp.container}>{null}</View>;
     }
   }

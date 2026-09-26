@@ -1,17 +1,17 @@
-// Module ID: 5439
-// Function ID: 5440
+// Module ID: 5446
+// Function ID: 5447
 // Name: FileUtils
-// Dependencies: [2066, 1372, 1074, 1374, 12, 5440, 4485, 5434, 4727, 1115, 2]
+// Dependencies: [2067, 1372, 1074, 1374, 12, 5447, 4488, 5441, 4731, 1115, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 5439 (FileUtils)
+// Module 5446 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4485 */;
-import FileSizeUtils from "FileSizeUtils" /* 4727 */;
-import UploadUtils from "UploadUtils" /* 5434 */;
-import noConflictDefault from "noConflict" /* 5440 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import PremiumUtils from "PremiumUtils" /* 4488 */;
+import FileSizeUtils from "FileSizeUtils" /* 4731 */;
+import UploadUtils from "UploadUtils" /* 5441 */;
+import noConflictDefault from "noConflict" /* 5447 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const PremiumUtilsDefault = PremiumUtils;

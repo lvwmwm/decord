@@ -1,10 +1,10 @@
-// Module ID: 6986
-// Function ID: 6987
+// Module ID: 6991
+// Function ID: 6992
 // Name: CountdownTimerBlockRecord
-// Dependencies: [6987, 2]
+// Dependencies: [6992, 2]
 
-// Module 6986 (CountdownTimerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 6987 */;
+// Module 6991 (CountdownTimerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 6992 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function CountdownTimerBlockRecord(end_time) {

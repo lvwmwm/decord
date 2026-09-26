@@ -1,10 +1,10 @@
-// Module ID: 5181
-// Function ID: 5182
+// Module ID: 5188
+// Function ID: 5189
 // Name: StripeActionCreators
 // Dependencies: [5, 1074, 1271, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 5181 (StripeActionCreators)
+// Module 5188 (StripeActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

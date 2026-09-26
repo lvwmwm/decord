@@ -1,16 +1,16 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 17178
+// Function ID: 17179
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 6872, 2044, 4813, 4812, 4817, 17151, 7818, 6737, 11539, 6534, 17158, 2]
+// Dependencies: [5, 6877, 2045, 4817, 4816, 4821, 17179, 7826, 6742, 17186, 11553, 6539, 17188, 2]
 
-// Module 17150 (MessageCodedLinkManager)
-import findCodedLinksDefault from "findCodedLinks" /* 4812 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17158 */;
+// Module 17178 (MessageCodedLinkManager)
+import findCodedLinksDefault from "findCodedLinks" /* 4816 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17188 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 6872 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import InviteStore from "InviteStore" /* 4813 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 6877 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import InviteStore from "InviteStore" /* 4817 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 const require = fn;
 function resolveMessageCodedLinks(content) {
@@ -137,20 +137,20 @@ function resolveMessageCodedLinks(content) {
                 if (tmp(tmp2[5]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
                   if (tmp(tmp2[5]).CodedLinkType.GUILD_PRODUCT !== type) {
                     if (tmp(tmp2[5]).CodedLinkType.SERVER_SHOP !== type) {
-                      if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                        if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                          if (tmp(tmp2[5]).CodedLinkType.QUESTS_EMBED !== type) {
-                            if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                              if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                if (tmp(tmp2[5]).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                                  if (tmp(tmp2[5]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                                    if (tmp(tmp2[5]).CodedLinkType.EXPERIMENT !== type) {
-                                      if (tmp(tmp2[5]).CodedLinkType.GAME_PROFILE !== type) {
-                                        if (tmp(tmp2[5]).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                          if (tmp(tmp2[5]).CodedLinkType.USER_PROFILE !== type) {
+                      if (tmp(tmp2[5]).CodedLinkType.QUESTS_EMBED !== type) {
+                        if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                          if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                            if (tmp(tmp2[5]).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                              if (tmp(tmp2[5]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                                if (tmp(tmp2[5]).CodedLinkType.EXPERIMENT !== type) {
+                                  if (tmp(tmp2[5]).CodedLinkType.GAME_PROFILE !== type) {
+                                    if (tmp(tmp2[5]).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                      if (tmp(tmp2[5]).CodedLinkType.USER_PROFILE !== type) {
+                                        if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                                          if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
                                             if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
-                                              const embedApplication = tmp(tmp2[9]).getEmbedApplication(code);
-                                              const tmpResult4 = tmp(tmp2[9]);
+                                              const embedApplication = tmp(tmp2[10]).getEmbedApplication(code);
+                                              const tmpResult4 = tmp(tmp2[10]);
                                             } else {
                                               const _Error = Error;
                                               const _HermesInternal = HermesInternal;
@@ -158,6 +158,7 @@ function resolveMessageCodedLinks(content) {
                                             }
                                           }
                                         }
+                                        closure_1(tmp2[9])(type, code);
                                       }
                                     }
                                   }
@@ -298,20 +299,20 @@ function resolveMessageCodedLinks(content) {
                     if (tmp(tmp2[5]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
                       if (tmp(tmp2[5]).CodedLinkType.GUILD_PRODUCT !== type) {
                         if (tmp(tmp2[5]).CodedLinkType.SERVER_SHOP !== type) {
-                          if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                            if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                              if (tmp(tmp2[5]).CodedLinkType.QUESTS_EMBED !== type) {
-                                if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                                  if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                    if (tmp(tmp2[5]).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                                      if (tmp(tmp2[5]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                                        if (tmp(tmp2[5]).CodedLinkType.EXPERIMENT !== type) {
-                                          if (tmp(tmp2[5]).CodedLinkType.GAME_PROFILE !== type) {
-                                            if (tmp(tmp2[5]).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                              if (tmp(tmp2[5]).CodedLinkType.USER_PROFILE !== type) {
+                          if (tmp(tmp2[5]).CodedLinkType.QUESTS_EMBED !== type) {
+                            if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                              if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                if (tmp(tmp2[5]).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                                  if (tmp(tmp2[5]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                                    if (tmp(tmp2[5]).CodedLinkType.EXPERIMENT !== type) {
+                                      if (tmp(tmp2[5]).CodedLinkType.GAME_PROFILE !== type) {
+                                        if (tmp(tmp2[5]).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                          if (tmp(tmp2[5]).CodedLinkType.USER_PROFILE !== type) {
+                                            if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                                              if (tmp(tmp2[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
                                                 if (tmp(tmp2[5]).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
-                                                  const embedApplication = tmp(tmp2[9]).getEmbedApplication(code);
-                                                  const tmpResult4 = tmp(tmp2[9]);
+                                                  const embedApplication = tmp(tmp2[10]).getEmbedApplication(code);
+                                                  const tmpResult4 = tmp(tmp2[10]);
                                                 } else {
                                                   const _Error = Error;
                                                   const _HermesInternal = HermesInternal;
@@ -319,6 +320,7 @@ function resolveMessageCodedLinks(content) {
                                                 }
                                               }
                                             }
+                                            closure_1(tmp2[9])(type, code);
                                           }
                                         }
                                       }
@@ -344,7 +346,7 @@ function resolveMessageCodedLinks(content) {
 class MessageCodedLinkManager extends tmp7 {
   constructor() {
     tmp3 = new MessageCodedLinkManager(tmp2, tmp, new.target);
-    tmp4 = closure_1(closure_2[11])(tmp3, resolveMessageCodedLinks);
+    tmp4 = closure_1(closure_2[12])(tmp3, resolveMessageCodedLinks);
     return tmp3;
   }
 }

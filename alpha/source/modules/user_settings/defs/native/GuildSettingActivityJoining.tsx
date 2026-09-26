@@ -1,15 +1,15 @@
-// Module ID: 15473
-// Function ID: 15474
+// Module ID: 15502
+// Function ID: 15503
 // Name: GuildSettingActivityJoining
-// Dependencies: [15459, 7412, 2020, 6411, 10993, 1115, 2]
+// Dependencies: [15488, 7417, 2021, 6416, 11006, 1115, 2]
 
-// Module 15473 (GuildSettingActivityJoining)
+// Module 15502 (GuildSettingActivityJoining)
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2020 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6411 */;
-import SettingsConstants from "SettingsConstants" /* 7412 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15459 */;
-import SettingBuilders from "SettingBuilders" /* 10993 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15488 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 ({ getSelectedGuildId: c2, useUserSafetySettingsSelectedGuildStore: c3 } = UserSettingsSafetySelectedGuildStore);

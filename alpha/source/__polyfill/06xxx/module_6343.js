@@ -1,9 +1,5 @@
 // Module ID: 6343
 // Function ID: 6344
-// Dependencies: [6344]
+// Dependencies: []
 
 // Module 6343
-import _modDef6344 from "module_6344" /* 6344 */;
-
-
-export default _modDef6344;

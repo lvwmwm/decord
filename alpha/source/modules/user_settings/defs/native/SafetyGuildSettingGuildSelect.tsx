@@ -1,23 +1,23 @@
-// Module ID: 15458
-// Function ID: 15459
+// Module ID: 15487
+// Function ID: 15488
 // Name: SafetyGuildSettingGuildSelect
-// Dependencies: [19, 5745, 14225, 15459, 7412, 4796, 15460, 1980, 15461, 1115, 10993, 2]
+// Dependencies: [19, 5750, 14250, 15488, 7417, 4800, 15489, 1981, 15490, 1115, 11006, 2]
 
-// Module 15458 (SafetyGuildSettingGuildSelect)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 15461 */;
+// Module 15487 (SafetyGuildSettingGuildSelect)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 15490 */;
 import noop from "module_19" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 5745 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14225 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14250 */;
 
 require = fn;
-const UserSettingsSafetySelectedGuildStore = fn(15459);
+const UserSettingsSafetySelectedGuildStore = fn(15488);
 ({ getSelectedGuildId: metroRequire, GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_7, setSelectedGuildId: closure_8, useUserSafetySettingsSelectedGuildStore: closure_9 } = UserSettingsSafetySelectedGuildStore);
-const MobileUserSettings = fn(7412).MobileUserSettings;
+const MobileUserSettings = fn(7417).MobileUserSettings;
 let items = [, ];
 ({ GUILD_SETTING_ACTIVITY_STATUS: arr[0], GUILD_SETTING_ACTIVITY_JOINING: arr[1] } = MobileUserSettings);
-const SettingBuilders = fn(10993);
+const SettingBuilders = fn(11006);
 const guildSelector = SettingBuilders.createGuildSelector({
   unsearchable: true,
   useSelectedGuildId() {
@@ -50,7 +50,7 @@ const guildSelector = SettingBuilders.createGuildSelector({
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15460, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15489, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 });
 const size = fn(2);

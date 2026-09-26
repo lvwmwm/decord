@@ -1,18 +1,18 @@
-// Module ID: 9346
-// Function ID: 9347
+// Module ID: 9357
+// Function ID: 9358
 // Name: SoundUtils
-// Dependencies: [9347, 4676, 9095, 3, 9349, 9350, 2]
+// Dependencies: [9358, 4679, 9106, 3, 9360, 9361, 2]
 // Exports: createSound, createSoundForPack, playSound
 
-// Module 9346 (SoundUtils)
+// Module 9357 (SoundUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import getSoundsForPackDefault from "getSoundsForPack" /* 9349 */;
-import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 9350 */;
-import SoundpackStore from "SoundpackStore" /* 9347 */;
-import StreamerModeStore from "StreamerModeStore" /* 4676 */;
+import getSoundsForPackDefault from "getSoundsForPack" /* 9360 */;
+import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 9361 */;
+import SoundpackStore from "SoundpackStore" /* 9358 */;
+import StreamerModeStore from "StreamerModeStore" /* 4679 */;
 
 require = fn;
-const SoundOutputChannel = fn(9095).SoundOutputChannel;
+const SoundOutputChannel = fn(9106).SoundOutputChannel;
 const logger = new LoggerDefault("SoundUtils");
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/sound_playback/SoundUtils.tsx");

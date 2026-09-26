@@ -1,19 +1,19 @@
-// Module ID: 15403
-// Function ID: 15404
+// Module ID: 15432
+// Function ID: 15433
 // Name: ShopBlockItem
-// Dependencies: [19, 17, 6957, 21, 4829, 576, 504, 6987, 8221, 15404, 15417, 15419, 15426, 2]
+// Dependencies: [19, 17, 6962, 21, 4836, 576, 504, 6992, 8229, 15433, 15446, 15448, 15455, 2]
 // Exports: default
 
-// Module 15403 (ShopBlockItem)
+// Module 15432 (ShopBlockItem)
 import nativeDefault from "native" /* 576 */;
-import ShopBlockType from "ShopBlockType" /* 6987 */;
+import ShopBlockType from "ShopBlockType" /* 6992 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { shopBlockSpacing: { marginTop: nativeDefault.space.PX_16 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

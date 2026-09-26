@@ -1,9 +1,9 @@
-// Module ID: 5310
-// Function ID: 5311
+// Module ID: 5317
+// Function ID: 5318
 // Name: AttachmentUrlConstants
 // Dependencies: [2]
 
-// Module 5310 (AttachmentUrlConstants)
+// Module 5317 (AttachmentUrlConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/AttachmentUrlConstants.tsx");

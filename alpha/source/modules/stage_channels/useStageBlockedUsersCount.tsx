@@ -1,12 +1,12 @@
-// Module ID: 8072
-// Function ID: 8073
+// Module ID: 8080
+// Function ID: 8081
 // Name: useStageBlockedUsersCount
-// Dependencies: [5725, 504, 5732, 2]
+// Dependencies: [5730, 504, 5737, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 8072 (useStageBlockedUsersCount)
-import StageChannelParticipants from "StageChannelParticipants" /* 5732 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5725 */;
+// Module 8080 (useStageBlockedUsersCount)
+import StageChannelParticipants from "StageChannelParticipants" /* 5737 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5730 */;
 
 const require = globalThis.__r;
 

@@ -1,22 +1,22 @@
-// Module ID: 10754
-// Function ID: 10755
+// Module ID: 10767
+// Function ID: 10768
 // Name: BadgeProgressSection
-// Dependencies: [19, 17, 21, 4829, 576, 10654, 4825, 1115, 10753, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 10667, 4832, 1115, 10766, 2]
 // Exports: default
 
-// Module 10754 (BadgeProgressSection)
+// Module 10767 (BadgeProgressSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import BadgeDetailsUtils from "BadgeDetailsUtils" /* 10654 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 10753 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import BadgeDetailsUtils from "BadgeDetailsUtils" /* 10667 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 10766 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { section: { gap: nativeDefault.space.PX_12 }, row: null, content: null, track: null, fill: null };
 let obj3 = { gap: nativeDefault.space.PX_12 };
 obj2.row = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
@@ -65,7 +65,7 @@ export default function BadgeProgressSection(arg0) {
   let tmp7Result4 = null != helperText;
   if (tmp7Result4) {
     const obj7 = { variant: "text-sm/medium", "aria-hidden": null != threshold, children: helperText };
-    tmp7Result4 = tmp7(tmp2(4825).Text, obj7);
+    tmp7Result4 = tmp7(tmp2(4832).Text, obj7);
   }
   const items2 = [tmp7Result4, ];
   let tmp7Result5 = null != threshold;

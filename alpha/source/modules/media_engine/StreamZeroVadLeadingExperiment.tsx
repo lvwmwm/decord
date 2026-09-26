@@ -1,10 +1,10 @@
-// Module ID: 13529
-// Function ID: 13530
+// Module ID: 13547
+// Function ID: 13548
 // Name: StreamZeroVadLeadingExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 13529 (StreamZeroVadLeadingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13547 (StreamZeroVadLeadingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-stream-zero-vad-leading", kind: "user", defaultConfig: { enabled: false }, variations: null };

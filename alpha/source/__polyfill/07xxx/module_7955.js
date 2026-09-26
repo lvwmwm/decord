@@ -1,19 +1,16 @@
 // Module ID: 7955
 // Function ID: 7956
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7956, 7939, 7940]
+// Dependencies: [41, 42, 93, 95, 98, 7925, 7948]
 
 // Module 7955
-import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef7939 from "module_7939" /* 7939 */;
-import _modDef7940 from "module_7940" /* 7940 */;
-import _modDef7956 from "module_7956" /* 7956 */;
+import _modDef7948 from "module_7948" /* 7948 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
 
-const FeFlood = fn;
+const FeDiffuseLighting = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,16 +30,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-_possibleConstructorReturnDefault;
-const jsx = fn(21).jsx;
-class FeFlood {
+class FeDiffuseLighting {
   constructor() {
     self = this;
-    tmp = closure_3(this, FeFlood);
-    tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(FeFlood);
-    tmp3 = closure_4;
-    if (closure_7()) {
+    tmp = c2(this, FeDiffuseLighting);
+    tmp2 = closure_4;
+    obj = closure_4(FeDiffuseLighting);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -55,30 +50,18 @@ class FeFlood {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeFlood, _modDef7940);
+_inherits(FeDiffuseLighting, _modDef7948);
 const entry = {
   key: "render",
   value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    };
-    const merged = Object.assign(FeFlood(7939).extractFilter(this.props));
-    const merged1 = Object.assign(_modDef7939(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+    const result = FeDiffuseLighting(7925).warnUnimplementedFilter();
+    return null;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FeFlood, items);
-importDefaultResultResult.displayName = "FeFlood";
-let obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.floodColor = "black";
-obj.floodOpacity = 1;
-importDefaultResultResult.defaultProps = obj;
+const importDefaultResultResult = _createClass(FeDiffuseLighting, items);
+importDefaultResultResult.displayName = "FeDiffuseLighting";
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

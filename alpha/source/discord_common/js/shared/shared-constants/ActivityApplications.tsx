@@ -1,9 +1,9 @@
-// Module ID: 2005
-// Function ID: 2006
+// Module ID: 2006
+// Function ID: 2007
 // Name: ActivityApplications
 // Dependencies: [2]
 
-// Module 2005 (ActivityApplications)
+// Module 2006 (ActivityApplications)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ActivityApplications.tsx");

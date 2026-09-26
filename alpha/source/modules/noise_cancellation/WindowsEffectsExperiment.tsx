@@ -1,15 +1,15 @@
-// Module ID: 9441
-// Function ID: 9442
+// Module ID: 9452
+// Function ID: 9453
 // Name: WindowsEffectsExperiment
-// Dependencies: [1235, 1434, 504, 2]
+// Dependencies: [1235, 1435, 504, 2]
 // Exports: getWindowsAudioEffectsExperimentConfig, useWindowsAudioEffectsExperimentConfig
 
-// Module 9441 (WindowsEffectsExperiment)
+// Module 9452 (WindowsEffectsExperiment)
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 const require = fn;
 const obj = { preferSystemEffects: false };
-const ApexExperiment = fn(1434);
+const ApexExperiment = fn(1435);
 const obj3 = { name: "2025-12-windows-audio-effects", kind: "user", defaultConfig: obj, variations: null };
 const obj4 = { 1: null };
 const obj5 = {};

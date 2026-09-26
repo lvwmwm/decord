@@ -1,9 +1,9 @@
-// Module ID: 2047
-// Function ID: 2048
+// Module ID: 2048
+// Function ID: 2049
 // Name: FavoriteStore
-// Dependencies: [1220, 2048, 2057, 1074, 1186, 12, 504, 573, 2]
+// Dependencies: [1220, 2049, 2058, 1074, 1186, 12, 504, 573, 2]
 
-// Module 2047 (FavoriteStore)
+// Module 2048 (FavoriteStore)
 import _mod12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -97,8 +97,8 @@ function initializeFromUserSettings() {
   }
   return flag3;
 }
-const createChannelRecord = fn(2048).createChannelRecord;
-let closure_5 = fn(2057).FAVORITES_UNCATEGORIZED_PARENT_ID;
+const createChannelRecord = fn(2049).createChannelRecord;
+let closure_5 = fn(2058).FAVORITES_UNCATEGORIZED_PARENT_ID;
 const Constants = fn(1074);
 ({ ChannelTypes: metroRequire, FAVORITES: closure_7 } = Constants);
 let closure_12 = false;

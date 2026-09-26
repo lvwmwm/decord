@@ -1,11 +1,11 @@
-// Module ID: 4836
-// Function ID: 4837
+// Module ID: 4843
+// Function ID: 4844
 // Name: typographyVariantRemap
-// Dependencies: [32, 4837, 2]
+// Dependencies: [32, 4844, 2]
 // Exports: remapTypographyVariant
 
-// Module 4836 (typographyVariantRemap)
-import TypographyVariantRemap from "TypographyVariantRemap" /* 4837 */;
+// Module 4843 (typographyVariantRemap)
+import TypographyVariantRemap from "TypographyVariantRemap" /* 4844 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

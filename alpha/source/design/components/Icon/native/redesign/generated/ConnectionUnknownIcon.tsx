@@ -1,13 +1,13 @@
-// Module ID: 16010
-// Function ID: 16011
+// Module ID: 16038
+// Function ID: 16039
 // Name: ConnectionUnknownIcon
-// Dependencies: [19, 21, 576, 4527, 16011, 2]
+// Dependencies: [19, 21, 576, 4530, 16039, 2]
 // Exports: ConnectionUnknownIcon
 
-// Module 16010 (ConnectionUnknownIcon)
+// Module 16038 (ConnectionUnknownIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod16011 from "module_16011" /* 16011 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod16039 from "module_16039" /* 16039 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ConnectionUnknownIcon = function ConnectionUnknownIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16011, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16039, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

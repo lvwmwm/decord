@@ -1,11 +1,11 @@
-// Module ID: 8262
-// Function ID: 8263
+// Module ID: 8270
+// Function ID: 8271
 // Name: ProfileEffectLayer
-// Dependencies: [19, 17, 21, 8263, 8259, 2]
+// Dependencies: [19, 17, 21, 8271, 8267, 2]
 
-// Module 8262 (ProfileEffectLayer)
-import ProfileEffectUtils from "ProfileEffectUtils" /* 8259 */;
-import APNGPlayer from "APNGPlayer" /* 8263 */;
+// Module 8270 (ProfileEffectLayer)
+import ProfileEffectUtils from "ProfileEffectUtils" /* 8267 */;
+import APNGPlayer from "APNGPlayer" /* 8271 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

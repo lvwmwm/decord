@@ -1,10 +1,10 @@
-// Module ID: 10844
-// Function ID: 10845
+// Module ID: 10857
+// Function ID: 10858
 // Name: parseReactionPermissions
 // Dependencies: [2]
 // Exports: default
 
-// Module 10844 (parseReactionPermissions)
+// Module 10857 (parseReactionPermissions)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");
@@ -12,6 +12,7 @@ const result = size.fileFinishedImporting("modules/messages/parseReactionPermiss
 export default function parseReactionPermissions(arg0) {
   ({ channel, canChat, isLurking, isActiveChannelOrUnarchivableThread, renderReactions, canAddNewReactions, communicationDisabled, isAutomodQuarantined } = arg0);
   const isPrivateResult = channel.isPrivate();
+  let isSystemDMResult = channel.isSystemDM();
   const isMediaThreadResult = channel.isMediaThread();
   if (!canChat) {
     canChat = isPrivateResult;
@@ -32,15 +33,18 @@ export default function parseReactionPermissions(arg0) {
     const tmp5 = (true === canAddNewReactions || isPrivateResult) && !isSystemDMResult && isActiveChannelOrUnarchivableThread && !isMediaThreadResult;
   }
   obj.disableReactionCreates = tmp4;
-  if (!isLurking) {
-    isLurking = !canChat;
+  if (!isSystemDMResult) {
+    isSystemDMResult = isLurking;
   }
-  if (!isLurking) {
-    isLurking = true === communicationDisabled;
+  if (!isSystemDMResult) {
+    isSystemDMResult = !canChat;
   }
-  if (!isLurking) {
-    isLurking = true === isAutomodQuarantined;
+  if (!isSystemDMResult) {
+    isSystemDMResult = true === communicationDisabled;
   }
-  obj.disableReactionUpdates = isLurking;
+  if (!isSystemDMResult) {
+    isSystemDMResult = true === isAutomodQuarantined;
+  }
+  obj.disableReactionUpdates = isSystemDMResult;
   return obj;
 };

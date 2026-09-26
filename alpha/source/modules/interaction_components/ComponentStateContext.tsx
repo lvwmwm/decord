@@ -1,38 +1,38 @@
-// Module ID: 7561
-// Function ID: 7562
+// Module ID: 7569
+// Function ID: 7570
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 7378, 4467, 2044, 2107, 5720, 1372, 7562, 21, 1978, 5060, 5058, 504, 7414, 6682, 7564, 7565, 573, 5291, 5053, 2]
+// Dependencies: [32, 19, 7383, 4470, 2045, 2108, 5725, 1372, 7570, 21, 1979, 5067, 5065, 504, 7419, 6687, 7572, 7573, 573, 5298, 5060, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 7561 (ComponentStateContext)
+// Module 7569 (ComponentStateContext)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import Server from "Server" /* 1978 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5060 */;
-import useMountEffectDefault from "useMountEffect" /* 5291 */;
-import InteractionUtils from "InteractionUtils" /* 7565 */;
+import Server from "Server" /* 1979 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5067 */;
+import useMountEffectDefault from "useMountEffect" /* 5298 */;
+import InteractionUtils from "InteractionUtils" /* 7573 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import InteractionStore from "InteractionStore" /* 7378 */;
-import LurkingStore from "LurkingStore" /* 4467 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5720 */;
+import InteractionStore from "InteractionStore" /* 7383 */;
+import LurkingStore from "LurkingStore" /* 4470 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5725 */;
 import UserStore from "UserStore" /* 1372 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7562 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7570 */;
 
 require = fn;
 function isInteractionComponent(type) {
   type = type.type;
   if (Server.ComponentType.BUTTON === type) {
-    return type.style !== tmp(1978).ButtonStyle.LINK;
+    return type.style !== tmp(1979).ButtonStyle.LINK;
   } else {
-    if (tmp(1978).ComponentType.STRING_SELECT !== type) {
-      if (tmp(1978).ComponentType.USER_SELECT !== type) {
-        if (tmp(1978).ComponentType.ROLE_SELECT !== type) {
-          if (tmp(1978).ComponentType.MENTIONABLE_SELECT !== type) {
-            if (tmp(1978).ComponentType.CHANNEL_SELECT !== type) {
-              if (tmp(1978).ComponentType.ACTION_ROW !== type) {
-                const TEXT_INPUT = tmp(1978).ComponentType.TEXT_INPUT;
+    if (tmp(1979).ComponentType.STRING_SELECT !== type) {
+      if (tmp(1979).ComponentType.USER_SELECT !== type) {
+        if (tmp(1979).ComponentType.ROLE_SELECT !== type) {
+          if (tmp(1979).ComponentType.MENTIONABLE_SELECT !== type) {
+            if (tmp(1979).ComponentType.CHANNEL_SELECT !== type) {
+              if (tmp(1979).ComponentType.ACTION_ROW !== type) {
+                const TEXT_INPUT = tmp(1979).ComponentType.TEXT_INPUT;
               }
               return false;
             }
@@ -51,7 +51,7 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   let LOADING = InteractionComponentTypes.ActionComponentState.NORMAL;
   let tmp3 = null != interaction;
   if (tmp3) {
-    tmp3 = interaction.state !== tmp(5058).InteractionState.FAILED;
+    tmp3 = interaction.state !== tmp(5065).InteractionState.FAILED;
   }
   let DISABLED = LOADING;
   if (!tmp3) {
@@ -59,16 +59,16 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
       flag = isInteractionComponent(id);
     }
     if (flag) {
-      DISABLED = tmp(5060).ActionComponentState.DISABLED;
+      DISABLED = tmp(5067).ActionComponentState.DISABLED;
     }
     return DISABLED;
   } else {
-    if (interaction.data.interactionType !== tmp(1978).InteractionTypes.MESSAGE_COMPONENT) {
+    if (interaction.data.interactionType !== tmp(1979).InteractionTypes.MESSAGE_COMPONENT) {
       if (isInteractionComponent(id)) {
-        LOADING = tmp(5060).ActionComponentState.DISABLED;
+        LOADING = tmp(5067).ActionComponentState.DISABLED;
       }
     }
-    LOADING = tmp(5060).ActionComponentState.LOADING;
+    LOADING = tmp(5067).ActionComponentState.LOADING;
   }
 }
 function useShouldDisableInteractiveComponents(channel_id) {
@@ -134,11 +134,11 @@ function useShouldDisableInteractiveComponents(channel_id) {
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const obj5 = channel(7414);
-  const isThreadModerator = channel(6682).useIsThreadModerator(channel);
-  const tmpResult = channel(6682);
+  const obj5 = channel(7419);
+  const isThreadModerator = channel(6687).useIsThreadModerator(channel);
+  const tmpResult = channel(6687);
   let tmp9 = !stateFromStores;
-  const canUnarchiveThread = channel(6682).useCanUnarchiveThread(channel);
+  const canUnarchiveThread = channel(6687).useCanUnarchiveThread(channel);
   if (stateFromStores) {
     tmp9 = stateFromStores1;
   }

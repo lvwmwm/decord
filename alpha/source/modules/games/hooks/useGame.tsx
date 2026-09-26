@@ -1,15 +1,15 @@
-// Module ID: 6722
-// Function ID: 6723
+// Module ID: 6727
+// Function ID: 6728
 // Name: useGame
-// Dependencies: [5, 19, 2000, 1074, 504, 1091, 6723, 2]
+// Dependencies: [5, 19, 2001, 1074, 504, 1091, 6728, 2]
 // Exports: useGames
 
-// Module 6722 (useGame)
+// Module 6727 (useGame)
 import DurationsDefault from "Durations" /* 1091 */;
-import GameActionCreators from "GameActionCreators" /* 6723 */;
+import GameActionCreators from "GameActionCreators" /* 6728 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GameStore from "GameStore" /* 2000 */;
+import GameStore from "GameStore" /* 2001 */;
 
 require = fn;
 const initialize = fn(504);

@@ -1,19 +1,19 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12817
+// Function ID: 12818
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 4828, 2044, 2066, 4652, 1372, 10957, 4977, 4983, 1115, 7397, 7399, 576, 4979, 12801, 7015, 5041, 4978, 2]
+// Dependencies: [17, 4835, 2045, 2067, 4655, 1372, 10970, 4984, 4990, 1115, 7402, 7404, 576, 4986, 12818, 7020, 5048, 4985, 2]
 // Exports: default
 
-// Module 12800 (createMediaPostPreviewEmbedContent)
+// Module 12817 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 576 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4977 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7399 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 10957 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4984 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 10970 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 4828 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
+import DevSettingsStore from "DevSettingsStore" /* 4835 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 
@@ -50,25 +50,25 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
         let canViewChannelResult = null != channel;
         const guildId = SelectedGuildStore.getGuildId();
         if (canViewChannelResult) {
-          canViewChannelResult = tmp(4983).canViewChannel(channel);
-          const tmpResult = tmp(4983);
+          canViewChannelResult = tmp(4990).canViewChannel(channel);
+          const tmpResult = tmp(4990);
         }
         const obj2 = { mediaPostEmbedData: media, guild, parentChannel: channel, postThread: channel1, user, selectedGuildId: guildId, canAccess: canViewChannelResult };
-        const mediaPostEmbedCommonData = tmp(4977).getMediaPostEmbedCommonData(obj2);
+        const mediaPostEmbedCommonData = tmp(4984).getMediaPostEmbedCommonData(obj2);
         if (null == mediaPostEmbedCommonData) {
           return null;
         } else {
           if (null != mediaPostEmbedCommonData.authorName) {
             if (null != mediaPostEmbedCommonData.channelName) {
               if (null != user) {
-                const userAuthorWithProcessedColor = tmp(7397).getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
+                const userAuthorWithProcessedColor = tmp(7402).getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
                 const intl6 = tmp(1115).intl;
                 const obj3 = { username: mediaPostEmbedCommonData.authorName, usernameOnClick: null, channelName: null };
                 const obj4 = { userId: user.id, message, author: userAuthorWithProcessedColor, roleStyle, messageChannelId: mediaPostEmbedCommonData.threadId };
                 obj3.usernameOnClick = formatUsernameOnClickDefault(obj4);
                 obj3.channelName = mediaPostEmbedCommonData.channelName;
                 let formatToPartsResult = intl6.formatToParts(tmp(1115).t.mCytFr, obj3);
-                const tmpResult9 = tmp(7397);
+                const tmpResult9 = tmp(7402);
               }
               if (false === mediaPostEmbedCommonData.canAccess) {
                 let tmp11 = React4(nativeDefault.unsafe_rawColors.TEAL_430);
@@ -79,8 +79,8 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
               }
               let isAnimatedImageUrlResult = null != mediaPostEmbedCommonData.coverImage;
               if (isAnimatedImageUrlResult) {
-                isAnimatedImageUrlResult = tmp(4979).isAnimatedImageUrl(mediaPostEmbedCommonData.coverImage);
-                const tmpResult10 = tmp(4979);
+                isAnimatedImageUrlResult = tmp(4986).isAnimatedImageUrl(mediaPostEmbedCommonData.coverImage);
+                const tmpResult10 = tmp(4986);
               }
               if (tmp15) {
                 const _HermesInternal = HermesInternal;
@@ -89,7 +89,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
                 const obj5 = {};
                 const merged = Object.assign(mediaPostEmbedCommonData);
-                obj5.blurredCoverImage = React3.resolveAssetSource(tmp10(12801)).uri;
+                obj5.blurredCoverImage = React3.resolveAssetSource(tmp10(12818)).uri;
                 obj5.footer = formatToPartsResult;
                 obj5.ctaButtonColor = tmp11;
                 return obj5;
@@ -101,16 +101,16 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 if (!value) {
                   value = obj7.get("obscure_blur_effect_self_harm_content_enabled");
                 }
-                const isPendingScanVersionResult = tmp(7015).isPendingScanVersion(mediaPostEmbedCommonData.contentScanVersion);
+                const isPendingScanVersionResult = tmp(7020).isPendingScanVersion(mediaPostEmbedCommonData.contentScanVersion);
                 let result = value;
                 if (value) {
-                  result = tmp(7015).shouldAgeVerifyForExplicitMedia();
-                  const tmpResult12 = tmp(7015);
+                  result = tmp(7020).shouldAgeVerifyForExplicitMedia();
+                  const tmpResult12 = tmp(7020);
                 }
                 let isVerifiedTeenResult = value;
                 if (value) {
-                  isVerifiedTeenResult = tmp(5041).isVerifiedTeen();
-                  const tmpResult13 = tmp(5041);
+                  isVerifiedTeenResult = tmp(5048).isVerifiedTeen();
+                  const tmpResult13 = tmp(5048);
                 }
                 if (mediaPostEmbedCommonData.shouldContainMediaWithBackground) {
                   if (null != mediaPostEmbedCommonData.coverImage) {
@@ -135,9 +135,9 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                     obj6.obscureHideControls = isVerifiedTeenResult;
                     obj6.obscureIsOpaque = value;
                     obj6.ctaButtonColor = tmp11;
-                    obj6.backgroundImage = tmp(4978).getBackgroundImageUrl(mediaPostEmbedCommonData.coverImage);
+                    obj6.backgroundImage = tmp(4985).getBackgroundImageUrl(mediaPostEmbedCommonData.coverImage);
                     let obj8 = obj6;
-                    const tmpResult14 = tmp(4978);
+                    const tmpResult14 = tmp(4985);
                   }
                   return obj8;
                 }
@@ -162,7 +162,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 obj8.obscureHideControls = isVerifiedTeenResult;
                 obj8.obscureIsOpaque = value;
                 obj8.ctaButtonColor = tmp11;
-                const tmpResult11 = tmp(7015);
+                const tmpResult11 = tmp(7020);
               }
               tmp15 = null != mediaPostEmbedCommonData.coverImage && !mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage && isAnimatedImageUrlResult && flag;
             }
@@ -171,7 +171,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
           const obj9 = { guildName: mediaPostEmbedCommonData.guildName };
           formatToPartsResult = intl.formatToParts(tmp(1115).t.p4VdWJ, obj9);
         }
-        const tmpResult8 = tmp(4977);
+        const tmpResult8 = tmp(4984);
       }
     }
     obj15 = MediaPostEmbedStore;

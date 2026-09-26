@@ -1,11 +1,11 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 8931
+// Function ID: 8932
 // Name: allowPopups
-// Dependencies: [2004, 2]
+// Dependencies: [2005, 2]
 // Exports: allowPopups
 
-// Module 8920 (allowPopups)
-import Constants from "Constants" /* 2004 */;
+// Module 8931 (allowPopups)
+import Constants from "Constants" /* 2005 */;
 import size from "module_2" /* 2 */;
 
 Constants.APPLICATIONS_WITH_ALLOWED_POPUPS;

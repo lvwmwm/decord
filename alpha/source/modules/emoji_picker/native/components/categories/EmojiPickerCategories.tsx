@@ -1,25 +1,25 @@
-// Module ID: 9797
-// Function ID: 9798
+// Module ID: 9808
+// Function ID: 9809
 // Name: EmojiPickerCategories
-// Dependencies: [19, 5770, 1074, 1218, 21, 4829, 576, 4563, 1241, 4797, 4798, 9798, 9808, 6068, 9809, 6471, 9810, 9811, 2]
+// Dependencies: [19, 5775, 1074, 1218, 21, 4836, 576, 4566, 1241, 4801, 4802, 9809, 9819, 6073, 9820, 6476, 9821, 9822, 2]
 
-// Module 9797 (EmojiPickerCategories)
+// Module 9808 (EmojiPickerCategories)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import HapticUtils from "HapticUtils" /* 4797 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4798 */;
-import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 9798 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
+import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 9809 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const EmojiCategoryTypes = fn(5770).EmojiCategoryTypes;
+const EmojiCategoryTypes = fn(5775).EmojiCategoryTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, AnalyticsPages: metroRequire, CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT } = Constants);
 let ExpressionPickerViewType = fn(1218).ExpressionPickerViewType;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { list: { flex: 1, height: EXPRESSION_FOOTER_HEIGHT }, listPlaceholder: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED }, item: { height: EXPRESSION_FOOTER_HEIGHT, width: EXPRESSION_FOOTER_HEIGHT, justifyContent: "center", alignItems: "center" }, keyboardItem: { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE } };
 let closure_12 = createStyles.createStyles(obj);
 let closure_13 = { code: "function EmojiPickerCategoriesTsx1(){const{categoryIndexActive}=this.__closure;return categoryIndexActive.get();}" };

@@ -1,21 +1,21 @@
-// Module ID: 8967
-// Function ID: 8968
+// Module ID: 8978
+// Function ID: 8979
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 32, 19, 17, 21, 4829, 576, 1612, 8939, 8935, 8968, 1875, 8969, 5274, 1115, 8974, 8971, 8975, 8976, 4825, 6416, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4836, 576, 1613, 8950, 8946, 8979, 1876, 8980, 5281, 1115, 8985, 8982, 8986, 8987, 4832, 6421, 2]
 // Exports: default
 
-// Module 8967 (EditGuildEventRecurrenceModal)
+// Module 8978 (EditGuildEventRecurrenceModal)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import useEventExceptionDefault from "useEventException" /* 8939 */;
-import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8968 */;
-import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 8969 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8971 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8974 */;
-import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 8975 */;
-import GuildEventScheduleDefault from "GuildEventSchedule" /* 8976 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useEventExceptionDefault from "useEventException" /* 8950 */;
+import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8979 */;
+import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 8980 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8982 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8985 */;
+import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 8986 */;
+import GuildEventScheduleDefault from "GuildEventSchedule" /* 8987 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -24,7 +24,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, cardStyle: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.cardStyle = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -110,10 +110,10 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
   const tmp3 = useEventExceptionDefault(recurrenceId, guildEvent.id);
   dependencyMap = tmp3;
   const tmp2 = useSafeAreaInsetsDefault();
-  const baseScheduleForRecurrence = guildEvent(8935).getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  let obj = guildEvent(8935);
-  const scheduleForRecurrenceWithException = guildEvent(8935).getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp3);
-  let obj2 = guildEvent(8935);
+  const baseScheduleForRecurrence = guildEvent(8946).getBaseScheduleForRecurrence(recurrenceId, guildEvent);
+  let obj = guildEvent(8946);
+  const scheduleForRecurrenceWithException = guildEvent(8946).getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp3);
+  let obj2 = guildEvent(8946);
   [c5, c6] = noop.useState(scheduleForRecurrenceWithException);
   [first, closure_8] = noop.useState(null);
   const tmp9 = _slicedToArray(LazyAPIPromiseDefault(() => {
@@ -147,10 +147,10 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     return applyArgumentsResult;
   };
   obj3.disabled = null != first;
-  const action = closure_8(guildEvent(5274).Button, obj3);
+  const action = closure_8(guildEvent(5281).Button, obj3);
   let obj5 = {
     style: null,
-    children: closure_8(guildEvent(6416).Navigator, {
+    children: closure_8(guildEvent(6421).Navigator, {
       screens: {
         [closure_11.TIME]: {
           title: "",

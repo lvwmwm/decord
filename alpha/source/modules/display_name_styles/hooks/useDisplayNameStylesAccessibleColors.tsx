@@ -1,12 +1,12 @@
-// Module ID: 10348
-// Function ID: 10349
+// Module ID: 10359
+// Function ID: 10360
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4821, 504, 1391, 10349, 4680, 672, 2]
+// Dependencies: [19, 4825, 504, 1391, 10360, 4683, 672, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 10348 (useDisplayNameStylesAccessibleColors)
+// Module 10359 (useDisplayNameStylesAccessibleColors)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 const require = fn;
 const size = fn(2);

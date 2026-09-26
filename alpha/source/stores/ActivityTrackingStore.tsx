@@ -1,22 +1,22 @@
-// Module ID: 13271
-// Function ID: 13272
+// Module ID: 13288
+// Function ID: 13289
 // Name: ActivityTrackingStore
-// Dependencies: [1999, 1220, 502, 2016, 6812, 4852, 2098, 1074, 1091, 510, 6814, 10997, 2039, 4958, 504, 573, 2]
+// Dependencies: [2000, 1220, 502, 2017, 6817, 4859, 2099, 1074, 1091, 510, 6819, 11010, 2040, 4965, 504, 573, 2]
 
-// Module 13271 (ActivityTrackingStore)
+// Module 13288 (ActivityTrackingStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4958 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 10997 */;
-import RunningGameStore from "RunningGameStore" /* 1999 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4965 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11010 */;
+import RunningGameStore from "RunningGameStore" /* 2000 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DetectableGameStore from "DetectableGameStore" /* 2016 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 6812 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import DetectableGameStore from "DetectableGameStore" /* 2017 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 6817 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
 function stopActivity(applicationId, flag) {
@@ -72,7 +72,7 @@ function updateActivity(applicationId) {
   ActivitiesActionCreatorsDefault.updateActivity(obj3);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
-    const interval = new tmp3(2039).Interval();
+    const interval = new tmp3(2040).Interval();
     tmp11[applicationId.applicationId] = interval;
     interval.start(closure_12, () => {
       updateActivity(closure_0);

@@ -1,13 +1,13 @@
-// Module ID: 10798
-// Function ID: 10799
+// Module ID: 10811
+// Function ID: 10812
 // Name: generated/SpoilerIcon
-// Dependencies: [19, 21, 576, 4527, 10799, 2]
+// Dependencies: [19, 21, 576, 4530, 10812, 2]
 // Exports: SpoilerIcon
 
-// Module 10798 (generated/SpoilerIcon)
+// Module 10811 (generated/SpoilerIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod10799 from "module_10799" /* 10799 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod10812 from "module_10812" /* 10812 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SpoilerIcon = function SpoilerIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10799, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10812, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,16 +1,16 @@
-// Module ID: 2100
-// Function ID: 2101
+// Module ID: 2101
+// Function ID: 2102
 // Name: ImpersonateStore
-// Dependencies: [2101, 2066, 1074, 1084, 11, 2106, 1385, 504, 2018, 573, 2]
+// Dependencies: [2102, 2067, 1074, 1084, 11, 2107, 1385, 504, 2019, 573, 2]
 
-// Module 2100 (ImpersonateStore)
+// Module 2101 (ImpersonateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FunctionUtils from "FunctionUtils" /* 2018 */;
-import ImpersonateTypes from "ImpersonateTypes" /* 2106 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import FunctionUtils from "FunctionUtils" /* 2019 */;
+import ImpersonateTypes from "ImpersonateTypes" /* 2107 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 const GuildSettingsSections = fn(1074).GuildSettingsSections;
@@ -149,8 +149,8 @@ prototype["getBackNavigationSection"] = function getBackNavigationSection(arg0) 
   } else {
     const type = tmp6.type;
     if (ImpersonateTypes.ImpersonateType.ROLES !== type) {
-      if (tmp7(2106).ImpersonateType.SERVER_SHOP !== type) {
-        if (tmp7(2106).ImpersonateType.NEW_MEMBER === type) {
+      if (tmp7(2107).ImpersonateType.SERVER_SHOP !== type) {
+        if (tmp7(2107).ImpersonateType.NEW_MEMBER === type) {
           return GuildSettingsSections.ONBOARDING;
         } else {
           return GuildSettingsSections.ROLES;
@@ -193,7 +193,7 @@ const impersonateStore = new ImpersonateStore(DispatcherDefault, {
     if (null != guildId) {
       if (null != dependencyMap[guildId]) {
         if (null != dependencyMap[guildId]) {
-          if (tmp6.type === overrides(2106).ImpersonateType.NEW_MEMBER) {
+          if (tmp6.type === overrides(2107).ImpersonateType.NEW_MEMBER) {
             optInChannels = tmp6.optInChannels;
             if (optInChannels == null) {
               const _Set = Set;
@@ -272,7 +272,7 @@ const impersonateStore = new ImpersonateStore(DispatcherDefault, {
         }
         let tmp3 = null != flags;
         if (tmp3) {
-          tmp3 = tmp2.type === guildId(2106).ImpersonateType.NEW_MEMBER;
+          tmp3 = tmp2.type === guildId(2107).ImpersonateType.NEW_MEMBER;
         }
         flag = true;
         if (tmp3) {

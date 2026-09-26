@@ -1,13 +1,13 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 15866
+// Function ID: 15867
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 4829, 576, 6588, 4825, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6593, 4832, 2]
 // Exports: default
 
-// Module 15838 (ChannelItemEmbeddedActivities)
+// Module 15866 (ChannelItemEmbeddedActivities)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import GameIcon from "GameIcon" /* 6588 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import GameIcon from "GameIcon" /* 6593 */;
 import noop from "module_19" /* 19 */;
 
 const GameIconDefault = GameIcon;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { overflow: { lineHeight: 16, textAlign: "center", textAlignVertical: "center", padding: 4 }, overflowContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, display: "flex", alignItems: "center", justifyContent: "center" }, container: { display: "flex", flexDirection: "row" }, modeMuted: { opacity: 0.3 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

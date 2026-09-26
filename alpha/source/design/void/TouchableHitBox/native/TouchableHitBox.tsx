@@ -1,18 +1,18 @@
-// Module ID: 9192
-// Function ID: 9193
+// Module ID: 9203
+// Function ID: 9204
 // Name: TouchableHitBox
-// Dependencies: [19, 17, 21, 4829, 576, 4537, 1177, 5428, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4540, 1177, 5435, 2]
 
-// Module 9192 (TouchableHitBox)
+// Module 9203 (TouchableHitBox)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5428 */;
+import Pressables from "Pressables" /* 5435 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
 const jsx = fn(21).jsx;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { button: { flexGrow: 0, flexShrink: 1, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", alignSelf: "flex-start", borderRadius: nativeDefault.radii.sm }, buttonText: { lineHeight: 24, margin: 10, maxWidth: 60, fontSize: 16 }, buttonIcon: { margin: 10 }, buttonSpinner: { margin: 12 }, buttonDisabled: { opacity: 0.6 } };
 let closure_4 = createStyles.createLegacyClassComponentStyles(obj2);
 const PureComponent = noop.PureComponent;
@@ -93,7 +93,7 @@ TouchableHitBox.prototype["render"] = function render() {
   obj6.children = tmp8Result;
   return jsx(Pressables.PressableOpacity, { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: null, disabled: null, children: null });
 };
-TouchableHitBox.contextType = fn(4537).ThemeContext;
+TouchableHitBox.contextType = fn(4540).ThemeContext;
 TouchableHitBox.defaultProps = {
   onPress() {
 

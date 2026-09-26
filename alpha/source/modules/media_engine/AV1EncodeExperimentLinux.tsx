@@ -1,11 +1,11 @@
-// Module ID: 13585
-// Function ID: 13586
+// Module ID: 13603
+// Function ID: 13604
 // Name: AV1EncodeExperimentLinux
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: getAV1EncodeExperimentLinuxConfig
 
-// Module 13585 (AV1EncodeExperimentLinux)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13603 (AV1EncodeExperimentLinux)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-av1-encode-linux", kind: "user", defaultConfig: { enabled: false }, variations: null };

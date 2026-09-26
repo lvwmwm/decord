@@ -1,11 +1,11 @@
-// Module ID: 10607
-// Function ID: 10608
+// Module ID: 10618
+// Function ID: 10619
 // Name: useIsPremiumSubscriber
-// Dependencies: [1372, 1374, 504, 1969, 2]
+// Dependencies: [1372, 1374, 504, 1970, 2]
 // Exports: useIsPremiumSubscriber
 
-// Module 10607 (useIsPremiumSubscriber)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+// Module 10618 (useIsPremiumSubscriber)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

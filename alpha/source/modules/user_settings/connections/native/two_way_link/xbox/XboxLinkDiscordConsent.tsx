@@ -1,16 +1,16 @@
-// Module ID: 8536
-// Function ID: 8537
+// Module ID: 8544
+// Function ID: 8545
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 8523, 1074, 8537, 21, 1484, 8538, 8539, 2]
+// Dependencies: [19, 8531, 1074, 8545, 21, 1485, 8546, 8547, 2]
 // Exports: default
 
-// Module 8536 (XboxLinkDiscordConsent)
+// Module 8544 (XboxLinkDiscordConsent)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const XboxLinkModalScenes = fn(8523).XboxLinkModalScenes;
+const XboxLinkModalScenes = fn(8531).XboxLinkModalScenes;
 const PlatformTypes = fn(1074).PlatformTypes;
-const XBOX_CLIENT_SCOPES = fn(8537).XBOX_CLIENT_SCOPES;
+const XBOX_CLIENT_SCOPES = fn(8545).XBOX_CLIENT_SCOPES;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkDiscordConsent.tsx");
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 export default function XboxLinkDiscordConsent(arg0) {
   let navigation;
   ({ callbackCode, callbackState } = arg0);
-  navigation = navigation(1484).useNavigation();
+  navigation = navigation(1485).useNavigation();
   const items = [navigation];
   const items1 = [navigation];
   const callback = noop.useCallback(() => {
@@ -27,6 +27,6 @@ export default function XboxLinkDiscordConsent(arg0) {
   const callback1 = noop.useCallback(() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
-  const obj = navigation(1484);
-  return jsx(navigation(8538).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(8539).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: callback, onError: callback1 });
+  const obj = navigation(1485);
+  return jsx(navigation(8546).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(8547).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: callback, onError: callback1 });
 };

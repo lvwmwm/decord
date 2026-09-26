@@ -1,12 +1,12 @@
-// Module ID: 11308
-// Function ID: 11309
+// Module ID: 11322
+// Function ID: 11323
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1372, 2109, 1074, 21, 4829, 7414, 5291, 1241, 11307, 4525, 1115, 8802, 5293, 4825, 4981, 10380, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 2110, 1074, 21, 4836, 7419, 5298, 1241, 11321, 4528, 1115, 8810, 5300, 4832, 4988, 10391, 2]
 // Exports: default
 
-// Module 11308 (GuildEnableCommunicationAlert)
+// Module 11322 (GuildEnableCommunicationAlert)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CountDownDefault from "CountDown" /* 10380 */;
+import CountDownDefault from "CountDown" /* 10391 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -14,13 +14,13 @@ import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 const View = fn(17).View;
-const GuildDisableCommunicationConstants = fn(2109);
+const GuildDisableCommunicationConstants = fn(2110);
 ({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: closure_7, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: closure_8 } = GuildDisableCommunicationConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_12 = createStyles.createStyles({ wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, cta: { paddingTop: 8 }, countdown: { fontFamily: Fonts.PRIMARY_SEMIBOLD } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx");
@@ -56,7 +56,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           } else {
             v1 = 1;
             dependencyMap = 1;
-            const obj5 = { value: v1(11307).setCommunicationDisabledDuration(guildId, userId), done: false };
+            const obj5 = { value: v1(11321).setCommunicationDisabledDuration(guildId, userId), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -70,8 +70,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
           const obj7 = { key: "GUILD_ENABLE_COMMUNICATION_SUCCESS", content: null, icon: null };
           const intl = tmp4(1115).intl;
           obj7.content = intl.string(tmp4(1115).t["/Mmbfv"]);
-          obj7.icon = v1(8802);
-          v1(4525).open(obj7);
+          obj7.icon = v1(8810);
+          v1(4528).open(obj7);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -83,8 +83,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   };
   const tmp2 = closure_12();
   dependencyMap = tmp2;
-  closure_3 = _slicedToArray(userId(7414)(userId, guildId), 1)[0];
-  userId(5291)(() => {
+  closure_3 = _slicedToArray(userId(7419)(userId, guildId), 1)[0];
+  userId(5298)(() => {
     AnalyticsUtilsDefault.track(constants.OPEN_MODAL, { type, guild_id: guildId, other_user_id: userId });
   });
   let obj = {};
@@ -118,8 +118,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const user = UserStore.getUser(userId);
   const tmp11 = closure_11;
   const tmp12 = View;
-  const tmp7 = userId(5293);
-  let str = userId(4981).getName(guildId, null, user);
+  const tmp7 = userId(5300);
+  let str = userId(4988).getName(guildId, null, user);
   if (str == null) {
     str = "";
   }
@@ -134,14 +134,14 @@ export default function GuildEnableCommunicationAlert(guildId) {
       return closure_2_10(CountDownDefault, { style: countdown.countdown, deadline: num, withUnits: true });
     }
   });
-  const items = [closure_10(guildId(4825).Text, obj3), ];
+  const items = [closure_10(guildId(4832).Text, obj3), ];
   let obj5 = { style: null, variant: "text-sm/medium", children: null };
   const items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
   obj5.style = items1;
   const intl5 = tmp9(1115).intl;
   obj5.children = intl5.format(guildId(1115).t.KtENkK, { link });
-  items[1] = closure_10(guildId(4825).Text, obj5);
+  items[1] = closure_10(guildId(4832).Text, obj5);
   obj2.children = items;
   obj.children = tmp11(tmp12, obj2);
   return closure_10(tmp7, obj);

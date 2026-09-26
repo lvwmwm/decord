@@ -1,15 +1,15 @@
-// Module ID: 14152
-// Function ID: 14153
+// Module ID: 14177
+// Function ID: 14178
 // Name: UserProfileBadgesEditButton
-// Dependencies: [32, 19, 17, 2041, 21, 4829, 576, 10642, 6578, 6801, 2028, 4796, 14153, 1980, 14151, 1115, 4825, 10648, 10641, 2]
+// Dependencies: [32, 19, 17, 2042, 21, 4836, 576, 10653, 6583, 6806, 2029, 4800, 14178, 1981, 14176, 1115, 4832, 10659, 10652, 2]
 // Exports: default
 
-// Module 14152 (UserProfileBadgesEditButton)
+// Module 14177 (UserProfileBadgesEditButton)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10641 */;
-import BadgeUtils from "BadgeUtils" /* 10648 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10652 */;
+import BadgeUtils from "BadgeUtils" /* 10659 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,10 +18,10 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { content: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, badge: { width: 32, height: 32 }, overflowCount: { marginLeft: 2 } };
 let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -61,7 +61,7 @@ export default function UserProfileBadgesEditButton(arg0) {
   closure_5 = tmp8;
   const items2 = [analyticsLocations, tmp8, tmp6[1]];
   onPress = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14153, dependencyMap.paths), "Customize Badges", { analyticsLocations });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14178, dependencyMap.paths), "Customize Badges", { analyticsLocations });
     if (closure_5) {
       closure_4(ContentDismissActionType.TAKE_ACTION);
     }

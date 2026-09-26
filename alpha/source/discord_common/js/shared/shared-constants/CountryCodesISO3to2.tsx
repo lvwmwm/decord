@@ -1,9 +1,9 @@
-// Module ID: 5047
-// Function ID: 5048
+// Module ID: 5054
+// Function ID: 5055
 // Name: CountryCodesISO3to2
 // Dependencies: [2]
 
-// Module 5047 (CountryCodesISO3to2)
+// Module 5054 (CountryCodesISO3to2)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CountryCodesISO3to2.tsx");

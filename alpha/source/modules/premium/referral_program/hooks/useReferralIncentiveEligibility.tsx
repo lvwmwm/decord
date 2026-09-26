@@ -1,14 +1,14 @@
-// Module ID: 12963
-// Function ID: 12964
+// Module ID: 12980
+// Function ID: 12981
 // Name: useReferralIncentiveEligibility
-// Dependencies: [4491, 7494, 12961, 504, 2]
+// Dependencies: [4494, 7500, 12978, 504, 2]
 // Exports: useReferralIncentiveEligibility
 
-// Module 12963 (useReferralIncentiveEligibility)
+// Module 12980 (useReferralIncentiveEligibility)
 import initialize from "initialize" /* 504 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 7494 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 12961 */;
-import SubscriptionStore from "SubscriptionStore" /* 4491 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 7500 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 12978 */;
+import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 
 require = fn;
 const size = fn(2);
@@ -27,10 +27,10 @@ export const useReferralIncentiveEligibility = function useReferralIncentiveElig
   let tmp8 = true === isEligibleSenderForReferralProgram;
   let isEligibleForIncentive = tmp8;
   if (tmp8) {
-    isEligibleForIncentive = referralRewardType === tmp(12961).ReferralRewardType.ORBS;
+    isEligibleForIncentive = referralRewardType === tmp(12978).ReferralRewardType.ORBS;
   }
   if (tmp8) {
-    tmp8 = referralRewardType === tmp(12961).ReferralRewardType.DISCOUNT;
+    tmp8 = referralRewardType === tmp(12978).ReferralRewardType.DISCOUNT;
   }
   if (tmp8) {
     tmp8 = tmp6;

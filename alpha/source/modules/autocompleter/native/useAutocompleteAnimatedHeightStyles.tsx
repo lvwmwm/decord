@@ -1,12 +1,12 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11886
+// Function ID: 11887
 // Name: useAutocompleteAnimatedHeightStyles
-// Dependencies: [4698, 4563, 4830, 4833, 2]
+// Dependencies: [4702, 4566, 4837, 4840, 2]
 // Exports: default
 
-// Module 11868 (useAutocompleteAnimatedHeightStyles)
-import timing from "timing" /* 4830 */;
-import timingPresets from "timingPresets" /* 4833 */;
+// Module 11886 (useAutocompleteAnimatedHeightStyles)
+import timing from "timing" /* 4837 */;
+import timingPresets from "timingPresets" /* 4840 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

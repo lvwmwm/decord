@@ -1,13 +1,13 @@
-// Module ID: 6386
-// Function ID: 6387
+// Module ID: 6391
+// Function ID: 6392
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 4829, 576, 6358, 6387, 6388, 6389, 6392, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6363, 6392, 6393, 6394, 6397, 2]
 // Exports: default
 
-// Module 6386 (AuthFormView)
+// Module 6391 (AuthFormView)
 import nativeDefault from "native" /* 576 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6358 */;
-import WideAuthScrollContext from "WideAuthScrollContext" /* 6387 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6363 */;
+import WideAuthScrollContext from "WideAuthScrollContext" /* 6392 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_8 = createStyles.createStyles((arg0) => {
   const obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, flex: { flex: 1 }, content: null, subHeader: null };
   let num = 0;
@@ -75,7 +75,7 @@ export default function AuthFormView(arg0) {
     let tmp15 = null;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp15 = timestampProducer(tmp(6388), obj3);
+      tmp15 = timestampProducer(tmp(6393), obj3);
     }
     const items1 = [tmp15, , ];
     let tmp17 = null;
@@ -93,7 +93,7 @@ export default function AuthFormView(arg0) {
     ({ container: arr[0], flex: arr[1] } = tmp4);
     obj.style = items2;
     const obj5 = { backgroundImageSource, backgroundImageCover };
-    const items3 = [timestampProducer(tmp(6389), obj5), timestampProducer(tmp(6392), {}), ];
+    const items3 = [timestampProducer(tmp(6394), obj5), timestampProducer(tmp(6397), {}), ];
     const obj6 = { contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp4.flex, contentContainerStyle: null, children: null };
     const items4 = [, , ];
     ({ content: arr3[0], flex: arr3[1] } = tmp4);
@@ -102,7 +102,7 @@ export default function AuthFormView(arg0) {
     let tmp7Result = null;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp7Result = tmp7(tmp(6388), obj7);
+      tmp7Result = tmp7(tmp(6393), obj7);
     }
     const items5 = [tmp7Result, , ];
     let tmp7Result2 = null;

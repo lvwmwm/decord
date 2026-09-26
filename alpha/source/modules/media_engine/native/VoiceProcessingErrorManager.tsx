@@ -1,10 +1,10 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17270
+// Function ID: 17271
 // Name: VoiceProcessingErrorManager
-// Dependencies: [6534, 4524, 2]
+// Dependencies: [6539, 4527, 2]
 
-// Module 17240 (VoiceProcessingErrorManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+// Module 17270 (VoiceProcessingErrorManager)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 let require = fn;
 const prototype = function VoiceProcessingErrorManager() {
@@ -19,10 +19,10 @@ const prototype = function VoiceProcessingErrorManager() {
     }
   };
   applyArgumentsResult.handleNoiseCancellationError = function handleNoiseCancellationError() {
-    const result = applyArgumentsResult(4524).presentNoiseCancellationError();
+    const result = applyArgumentsResult(4527).presentNoiseCancellationError();
   };
   applyArgumentsResult.handleVoiceActivityDetectionError = function handleVoiceActivityDetectionError() {
-    const result = applyArgumentsResult(4524).presentVoiceActivityDetectionError();
+    const result = applyArgumentsResult(4527).presentVoiceActivityDetectionError();
   };
   return applyArgumentsResult;
 }.prototype;

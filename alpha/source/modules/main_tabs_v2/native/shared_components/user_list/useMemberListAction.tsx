@@ -1,16 +1,16 @@
-// Module ID: 11070
-// Function ID: 11071
+// Module ID: 11084
+// Function ID: 11085
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2044, 4466, 4476, 1372, 9663, 1074, 21, 4829, 563, 9005, 6465, 11071, 11080, 11081, 1115, 9480, 9481, 4651, 2028, 11083, 11088, 6793, 11089, 1875, 9264, 8047, 2]
+// Dependencies: [32, 19, 17, 2045, 4469, 4479, 1372, 9674, 1074, 21, 4836, 563, 9016, 6470, 11085, 11094, 11095, 1115, 9491, 9492, 4654, 2029, 11097, 11102, 6798, 11103, 1876, 9275, 8055, 2]
 // Exports: default
 
-// Module 11070 (useMemberListAction)
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11071 */;
+// Module 11084 (useMemberListAction)
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11085 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
-import RelationshipStore from "RelationshipStore" /* 4476 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -20,9 +20,9 @@ const View = fn(17).View;
 const Constants = fn(1074);
 ({ Permissions: c10, AnalyticsSections: closure_11, InstantInviteSources: closure_12 } = Constants);
 const jsx = fn(21).jsx;
-let closure_14 = { listActionRenderer: "isArray", listActionHeight: "paddingHorizontal" };
-const createStyles = fn(4829);
-let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(9663).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
+let closure_14 = { listActionRenderer: "Array", listActionHeight: "paddingHorizontal" };
+const createStyles = fn(4836);
+let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(9674).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 

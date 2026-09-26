@@ -1,10 +1,10 @@
-// Module ID: 13602
-// Function ID: 13603
+// Module ID: 13620
+// Function ID: 13621
 // Name: VideoCaptureDeviceNoReuse
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 13602 (VideoCaptureDeviceNoReuse)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13620 (VideoCaptureDeviceNoReuse)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-video-capture-device-no-reuse", kind: "user", defaultConfig: { overrideDeviceReuse: false }, variations: null };

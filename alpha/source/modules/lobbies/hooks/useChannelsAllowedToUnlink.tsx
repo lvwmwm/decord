@@ -1,17 +1,17 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17290
+// Function ID: 17291
 // Name: useChannelsAllowedToUnlink
-// Dependencies: [4464, 4466, 10383, 504, 2]
+// Dependencies: [4467, 4469, 10394, 504, 2]
 // Exports: getChannelsAllowedToUnlink, useChannelsAllowedToUnlink
 
-// Module 17260 (useChannelsAllowedToUnlink)
-import GuildChannelStore from "GuildChannelStore" /* 4464 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
+// Module 17290 (useChannelsAllowedToUnlink)
+import GuildChannelStore from "GuildChannelStore" /* 4467 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-let closure_3 = fn(4464).GUILD_SELECTABLE_CHANNELS_KEY;
+let closure_3 = fn(4467).GUILD_SELECTABLE_CHANNELS_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
 

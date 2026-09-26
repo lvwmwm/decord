@@ -1,9 +1,9 @@
-// Module ID: 5080
-// Function ID: 5081
+// Module ID: 5087
+// Function ID: 5088
 // Name: GuildIDContext
 // Dependencies: [19, 2]
 
-// Module 5080 (GuildIDContext)
+// Module 5087 (GuildIDContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext(undefined);

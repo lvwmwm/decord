@@ -1,34 +1,34 @@
-// Module ID: 8234
-// Function ID: 8235
+// Module ID: 8242
+// Function ID: 8243
 // Name: CollectiblesWishlistItemRecord
-// Dependencies: [6962, 6961, 1971, 6963, 6964, 5818, 8233, 1074, 1973, 2]
+// Dependencies: [6967, 6966, 1972, 6968, 6969, 5823, 8241, 1074, 1974, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 8234 (CollectiblesWishlistItemRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6962 */;
-import NameplateRecord from "NameplateRecord" /* 1971 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 6963 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 6964 */;
-import SKURecord from "SKURecord" /* 5818 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8233 */;
+// Module 8242 (CollectiblesWishlistItemRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6967 */;
+import NameplateRecord from "NameplateRecord" /* 1972 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 6968 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 6969 */;
+import SKURecord from "SKURecord" /* 5823 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8241 */;
 
 require = fn;
 function createCollectiblesItemFromServerResponse(collectibles_item) {
   const type = collectibles_item.type;
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     return AvatarDecorationRecord.fromServer(collectibles_item);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (tmp(1974).CollectiblesItemType.PROFILE_EFFECT === type) {
     return ProfileEffectRecord.fromServer(collectibles_item);
-  } else if (tmp(1973).CollectiblesItemType.NAMEPLATE === type) {
+  } else if (tmp(1974).CollectiblesItemType.NAMEPLATE === type) {
     return NameplateRecord.fromServer(collectibles_item);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (tmp(1974).CollectiblesItemType.PROFILE_FRAME === type) {
     return ProfileFrameRecord.fromServer(collectibles_item);
   } else {
     return null;
   }
 }
-let closure_3 = fn(6961).transformSKUToCollectiblesItem;
+let closure_3 = fn(6966).transformSKUToCollectiblesItem;
 const SKUProductLines = fn(1074).SKUProductLines;
 const prototype = function CollectiblesWishlistItemRecord(bundle_items) {
   const tmp2 = new prototype(bundle_items, tmp);
@@ -85,18 +85,18 @@ prototype["fromSKU"] = function fromSKU(id) {
     return null;
   } else {
     const obj = { sku_id: id.id, sku_product_line: SKUProductLines.COLLECTIBLES, sku_name: id.name, sku: id, skipValidation: true };
-    const tmp8 = new prototype(obj);
+    const tmp6 = new prototype(obj);
     let item;
     if ("single" === tmp.type) {
       item = tmp.item;
     }
-    tmp8.collectiblesItem = item;
+    tmp6.collectiblesItem = item;
     let items;
     if ("bundle" === tmp.type) {
       items = tmp.items;
     }
-    tmp8.bundleItems = items;
-    return tmp8;
+    tmp6.bundleItems = items;
+    return tmp6;
   }
 };
 const size = fn(2);

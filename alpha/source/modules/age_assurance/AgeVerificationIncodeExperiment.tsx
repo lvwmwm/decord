@@ -1,11 +1,11 @@
-// Module ID: 7870
-// Function ID: 7871
+// Module ID: 7878
+// Function ID: 7879
 // Name: AgeVerificationIncodeExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isAgeVerificationIncodeEnabled, useIsAgeVerificationIncodeEnabled
 
-// Module 7870 (AgeVerificationIncodeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 7878 (AgeVerificationIncodeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-06-age-verification-incode", defaultConfig: { enabled: false }, variations: null };

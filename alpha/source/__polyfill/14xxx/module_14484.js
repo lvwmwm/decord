@@ -1,0 +1,9 @@
+// Module ID: 14484
+// Function ID: 14485
+// Dependencies: [1121]
+
+// Module 14484
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c8ba289430cf44af74e8a6dfe840935f", name: "LaptopPhoneIcon", type: "png" });

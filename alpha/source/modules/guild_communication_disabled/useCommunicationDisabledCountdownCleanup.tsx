@@ -1,10 +1,10 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 11955
+// Function ID: 11956
 // Name: useCommunicationDisabledCountdownCleanup
-// Dependencies: [19, 6854, 11938, 2]
+// Dependencies: [19, 6859, 11956, 2]
 // Exports: useCommunicationDisabledCountdownCleanup
 
-// Module 11937 (useCommunicationDisabledCountdownCleanup)
+// Module 11955 (useCommunicationDisabledCountdownCleanup)
 import noop from "module_19" /* 19 */;
 import size from "module_2" /* 2 */;
 

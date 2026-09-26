@@ -1,14 +1,14 @@
-// Module ID: 15773
-// Function ID: 15774
+// Module ID: 15801
+// Function ID: 15802
 // Name: useIsCurrentUserEligibleForPowerupUpsells
-// Dependencies: [2107, 5745, 1372, 4725, 1374, 1969, 504, 2]
+// Dependencies: [2108, 5750, 1372, 4729, 1374, 1970, 504, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 15773 (useIsCurrentUserEligibleForPowerupUpsells)
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import SortedGuildStore from "SortedGuildStore" /* 5745 */;
+// Module 15801 (useIsCurrentUserEligibleForPowerupUpsells)
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4725 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4729 */;
 
 const require = fn;
 const PremiumTypes = fn(1374).PremiumTypes;
@@ -38,7 +38,7 @@ export default function useIsCurrentUserEligibleForPowerupUpsells() {
     const isPremiumGroupMemberResult = stateFromStores.isPremiumGroupMember();
     let tmp5 = !isPremiumGroupMemberResult;
     if (!isPremiumGroupMemberResult) {
-      let isPremiumResult = tmp(1969).isPremium(stateFromStores, PremiumTypes.TIER_2);
+      let isPremiumResult = tmp(1970).isPremium(stateFromStores, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
         isPremiumResult = stateFromStoresArray.some((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription) || stateFromStores1.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
@@ -58,7 +58,7 @@ export default function useIsCurrentUserEligibleForPowerupUpsells() {
         });
       }
       tmp5 = isPremiumResult;
-      const tmpResult = tmp(1969);
+      const tmpResult = tmp(1970);
     }
     tmp3 = tmp5;
   }
@@ -78,7 +78,7 @@ export const getIsCurrentUserEligibleForPowerupUpsells = function getIsCurrentUs
     const isPremiumGroupMemberResult = currentUser.isPremiumGroupMember();
     let tmp5 = !isPremiumGroupMemberResult;
     if (!isPremiumGroupMemberResult) {
-      let isPremiumResult = currentUser(1969).isPremium(currentUser, PremiumTypes.TIER_2);
+      let isPremiumResult = currentUser(1970).isPremium(currentUser, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
         isPremiumResult = items.some((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription) || flattenedGuildIds.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
@@ -98,7 +98,7 @@ export const getIsCurrentUserEligibleForPowerupUpsells = function getIsCurrentUs
         });
       }
       tmp5 = isPremiumResult;
-      const obj3 = currentUser(1969);
+      const obj3 = currentUser(1970);
     }
     tmp3 = tmp5;
   }

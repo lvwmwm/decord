@@ -1,9 +1,9 @@
-// Module ID: 11730
-// Function ID: 11731
+// Module ID: 11744
+// Function ID: 11745
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 5259, 1364, 1115, 2]
+// Dependencies: [19, 17, 21, 5266, 1364, 1115, 2]
 
-// Module 11730 (ChatInputAccessibilityDivider)
+// Module 11744 (ChatInputAccessibilityDivider)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

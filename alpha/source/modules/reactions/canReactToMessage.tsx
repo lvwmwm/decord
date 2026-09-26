@@ -1,16 +1,16 @@
-// Module ID: 7407
-// Function ID: 7408
+// Module ID: 7412
+// Function ID: 7413
 // Name: canReactToMessage
-// Dependencies: [2107, 5720, 4466, 1372, 1074, 7408, 1385, 4453, 504, 2]
+// Dependencies: [2108, 5725, 4469, 1372, 1074, 7413, 1385, 4456, 504, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 7407 (canReactToMessage)
+// Module 7412 (canReactToMessage)
 import FlagUtils from "FlagUtils" /* 1385 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4453 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7408 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5720 */;
-import PermissionStore from "PermissionStore" /* 4466 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4456 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7413 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5725 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 10753
-// Function ID: 10754
+// Module ID: 10766
+// Function ID: 10767
 // Name: BadgeArtImage
-// Dependencies: [19, 17, 21, 1364, 8263, 5894, 7901, 2]
+// Dependencies: [19, 17, 21, 1364, 8271, 5899, 7909, 2]
 // Exports: default
 
-// Module 10753 (BadgeArtImage)
+// Module 10766 (BadgeArtImage)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import FastImageDefault from "FastImage" /* 5894 */;
+import FastImageDefault from "FastImage" /* 5899 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,7 +50,7 @@ export default function BadgeArtImage(style) {
       } else {
         const APNGPlayerResult = APNGPlayer(1364);
       }
-      APNGPlayer = APNGPlayer(8263).APNGPlayer;
+      APNGPlayer = APNGPlayer(8271).APNGPlayer;
       obj5 = { url: fallbackUrl, style: size, autoplay: true };
       tmpResult2 = tmp(APNGPlayer, obj5);
     }
@@ -58,7 +58,7 @@ export default function BadgeArtImage(style) {
     if (animated) {
       if (obj4.isAndroid()) {
         const obj6 = { url, style: size, autoplay: true };
-        tmpResult = tmp(tmp3(8263).APNGPlayer, obj6);
+        tmpResult = tmp(tmp3(8271).APNGPlayer, obj6);
       }
       obj4 = PlatformUtils;
       tmp3 = require;

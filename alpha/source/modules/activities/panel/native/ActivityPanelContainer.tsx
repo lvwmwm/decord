@@ -1,16 +1,16 @@
-// Module ID: 16797
-// Function ID: 16798
+// Module ID: 16826
+// Function ID: 16827
 // Name: ActivityPanelContainer
-// Dependencies: [19, 2044, 2098, 2043, 21, 504, 4455, 1095, 16798, 16807, 2]
+// Dependencies: [19, 2045, 2099, 2044, 21, 504, 4458, 1095, 16827, 16836, 2]
 
-// Module 16797 (ActivityPanelContainer)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4455 */;
-import ActivityPanelControllerDefault from "ActivityPanelController" /* 16798 */;
-import ActivityPanelUIDefault from "ActivityPanelUI" /* 16807 */;
+// Module 16826 (ActivityPanelContainer)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
+import ActivityPanelControllerDefault from "ActivityPanelController" /* 16827 */;
+import ActivityPanelUIDefault from "ActivityPanelUI" /* 16836 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 require = fn;
 const jsx = fn(21).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 5768
-// Function ID: 5769
+// Module ID: 5773
+// Function ID: 5774
 // Name: RawGuildEmojiStore
-// Dependencies: [32, 2060, 2067, 4483, 2070, 2]
+// Dependencies: [32, 2061, 2068, 4486, 2071, 2]
 
-// Module 5768 (RawGuildEmojiStore)
-import EmojiTypes from "EmojiTypes" /* 4483 */;
+// Module 5773 (RawGuildEmojiStore)
+import EmojiTypes from "EmojiTypes" /* 4486 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -50,8 +50,8 @@ function syncEmojis(id, emojis, setPartition) {
     }
   }
 }
-const TypeTag = fn(2060).TypeTag;
-const LibdiscoreStore = fn(2067).LibdiscoreStore;
+const TypeTag = fn(2061).TypeTag;
+const LibdiscoreStore = fn(2068).LibdiscoreStore;
 class RawGuildEmojiStore extends LibdiscoreStore {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -68,7 +68,7 @@ prototype["getGuildEmojis"] = function getGuildEmojis(guildId) {
   return database.getNullablePartition(guildId);
 };
 RawGuildEmojiStore.displayName = "RawGuildEmojiStore";
-const LibdiscoreBatchStoreRefactorExperiment = fn(2070).LibdiscoreBatchStoreRefactorExperiment;
+const LibdiscoreBatchStoreRefactorExperiment = fn(2071).LibdiscoreBatchStoreRefactorExperiment;
 const rawGuildEmojiStore = new RawGuildEmojiStore({
   LOGOUT(arg0, clear) {
     return clear.clear();

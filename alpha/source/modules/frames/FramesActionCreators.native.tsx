@@ -1,12 +1,12 @@
-// Module ID: 8752
-// Function ID: 8753
+// Module ID: 8760
+// Function ID: 8761
 // Name: FramesActionCreators
-// Dependencies: [5, 4848, 8753, 8754, 2]
+// Dependencies: [5, 4855, 8761, 8762, 2]
 
-// Module 8752 (FramesActionCreators)
-import _launchFrameAll from "_launchFrame" /* 8754 */;
+// Module 8760 (FramesActionCreators)
+import _launchFrameAll from "_launchFrame" /* 8762 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import VoiceStateStore from "VoiceStateStore" /* 4848 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 let closure_5 = async function _launchFrameOnNative() {
   closure_129_0 = await _launchFrameAll.launchFrame(closure_0);

@@ -1,19 +1,19 @@
-// Module ID: 6537
-// Function ID: 6538
+// Module ID: 6542
+// Function ID: 6543
 // Name: GuildOnboardingModal
-// Dependencies: [19, 5879, 2044, 2066, 2098, 6516, 6513, 1074, 21, 1101, 6538, 5931, 6575, 6522, 6599, 6540, 504, 6521, 5854, 6416, 1115, 2]
+// Dependencies: [19, 5884, 2045, 2067, 2099, 6521, 6518, 1074, 21, 1101, 6543, 5936, 6580, 6527, 6604, 6545, 504, 6526, 5859, 6421, 1115, 2]
 // Exports: default
 
-// Module 6537 (GuildOnboardingModal)
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5854 */;
-import NavigatorHeader from "NavigatorHeader" /* 5931 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6521 */;
+// Module 6542 (GuildOnboardingModal)
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5859 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6526 */;
 import noop from "module_19" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5879 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6516 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5884 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
 
 require = fn;
 function headerTitle() {
@@ -22,7 +22,7 @@ function headerTitle() {
 function headerRight() {
   return null;
 }
-let closure_9 = fn(6513).GuildOnboardingModalStates;
+let closure_9 = fn(6518).GuildOnboardingModalStates;
 const Constants = fn(1074);
 ({ GuildFeatures: c10, Routes: closure_11 } = Constants);
 const jsx = fn(21).jsx;

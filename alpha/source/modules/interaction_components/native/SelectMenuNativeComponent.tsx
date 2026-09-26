@@ -1,11 +1,11 @@
-// Module ID: 15288
-// Function ID: 15289
+// Module ID: 15315
+// Function ID: 15316
 // Name: SelectMenuNativeComponent
-// Dependencies: [19, 21, 15289, 2]
+// Dependencies: [19, 21, 15316, 2]
 // Exports: default
 
-// Module 15288 (SelectMenuNativeComponent)
-import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 15289 */;
+// Module 15315 (SelectMenuNativeComponent)
+import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 15316 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

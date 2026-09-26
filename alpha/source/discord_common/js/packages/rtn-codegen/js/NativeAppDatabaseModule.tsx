@@ -1,9 +1,9 @@
-// Module ID: 2092
-// Function ID: 2093
+// Module ID: 2093
+// Function ID: 2094
 // Name: NativeAppDatabaseModule
 // Dependencies: [17, 2]
 
-// Module 2092 (NativeAppDatabaseModule)
+// Module 2093 (NativeAppDatabaseModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

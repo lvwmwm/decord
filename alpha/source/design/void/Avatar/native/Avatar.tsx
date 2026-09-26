@@ -1,35 +1,35 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13657
+// Function ID: 13658
 // Name: Avatar
-// Dependencies: [19, 17, 1074, 1178, 21, 4829, 576, 12567, 13628, 13629, 8268, 7595, 13640, 8267, 13630, 5276, 8895, 8896, 2]
+// Dependencies: [19, 17, 1074, 1178, 21, 4836, 576, 12584, 13646, 13647, 8276, 7602, 13658, 8275, 13648, 5283, 8906, 8907, 2]
 
-// Module 13639 (Avatar)
+// Module 13657 (Avatar)
 import nativeDefault from "native" /* 576 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7595 */;
-import ClipView from "ClipView" /* 8268 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12567 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 13628 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13629 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 7602 */;
+import ClipView from "ClipView" /* 8276 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12584 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 13646 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 13647 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function getStatusSize(arg0) {
   if (CutoutableAvatarImage.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(12567).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(12567).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(12567).AvatarSizes.SMALL !== arg0) {
-          if (tmp(12567).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+    if (tmp(12584).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(12584).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(12584).AvatarSizes.SMALL !== arg0) {
+          if (tmp(12584).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return React5.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(12567).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(12567).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(12567).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(12567).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(12567).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(12567).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(12567).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(12567).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(12567).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(12584).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(12584).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(12584).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(12584).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(12584).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(12584).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(12584).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(12584).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(12584).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -55,7 +55,7 @@ const StatusConstants = fn(1178);
 ({ STATUS_PADDING: metroRequire, StatusSizes: closure_7 } = StatusConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles((NORMAL) => {
   const obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: null, stageSpeaking: null, voiceStatus: null, decoration: null, container: null };
   const rect = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: nativeDefault.colors.STATUS_SPEAKING };
@@ -101,7 +101,7 @@ export default noop.memo((isMobileOnline) => {
   if (flag4 === undefined) {
     flag4 = false;
   }
-  ({ avatarDecoration, cutout } = isMobileOnline);
+  ({ speakingColor, avatarDecoration, cutout } = isMobileOnline);
   const autoStatusCutout = isMobileOnline.autoStatusCutout;
   ({ isStageCall, mute, deaf, statusStyle, avatarStyle, style } = isMobileOnline);
   if (isStageCall === undefined) {
@@ -207,22 +207,22 @@ export default noop.memo((isMobileOnline) => {
       if (null == user) {
         if (null == channel) {
           items2[1] = null;
-          let tmp33 = null;
+          let tmp34 = null;
           if (null != avatarDecoration) {
             let obj3 = { size: null, avatarDecoration: null, decorationStyle: null, animate: null, cutout: null };
-            const tmp36 = flag2(tmp7[13]);
+            const tmp37 = flag2(tmp7[13]);
             obj3.size = StatusWithTyping(tmp7[11]).getDecorationSizeForAvatarSize(NORMAL);
             obj3.avatarDecoration = avatarDecoration;
             obj3.decorationStyle = tmp3.decoration;
             obj3.animate = flag3;
             obj3.cutout = decorationCutout;
-            tmp33 = decoration(tmp36, obj3, avatarDecoration.asset);
+            tmp34 = decoration(tmp37, obj3, avatarDecoration.asset);
             const StatusWithTypingResult = StatusWithTyping(tmp7[11]);
           }
-          items2[2] = tmp33;
-          let tmp37 = null;
+          items2[2] = tmp34;
+          let tmp38 = null;
           if (null != status) {
-            tmp37 = null;
+            tmp38 = null;
             if (status !== autoStatusCutout.UNKNOWN) {
               if (statusSizeOverride == null) {
                 statusSizeOverride = getStatusSize(NORMAL);
@@ -235,13 +235,13 @@ export default noop.memo((isMobileOnline) => {
                 merged1 = obj4;
               }
               if (null == merged1) {
-                tmp37 = null;
+                tmp38 = null;
               } else {
                 if (!typing) {
                   let obj5 = {};
                   const merged = Object.assign(merged1);
-                  let tmp48 = decoration(flag2(tmp7[14]), obj5);
-                  const tmp44 = flag2(tmp7[14]);
+                  let tmp49 = decoration(flag2(tmp7[14]), obj5);
+                  const tmp45 = flag2(tmp7[14]);
                 }
                 StatusWithTyping = StatusWithTyping(tmp7[14]).StatusWithTyping;
                 let obj6 = {};
@@ -249,31 +249,31 @@ export default noop.memo((isMobileOnline) => {
                 obj6.typing = typing;
                 user = user.id;
                 obj6.userId = user;
-                tmp48 = decoration(StatusWithTyping, obj6);
+                tmp49 = decoration(StatusWithTyping, obj6);
               }
             }
           }
-          items2[3] = tmp37;
+          items2[3] = tmp38;
           if (deaf) {
             let obj7 = { style: null, children: null };
             const items4 = [, ];
-            ({ status: arr8[0], voiceStatus: arr8[1] } = tmp3);
+            ({ status: arr7[0], voiceStatus: arr7[1] } = tmp3);
             obj7.style = items4;
             const obj8 = { size: flag2(tmp7[15]).Sizes.REFRESH_SMALL_16, source: flag2(tmp7[16]), color: flag2(tmp7[6]).unsafe_rawColors.WHITE };
             obj7.children = decoration(flag2(tmp7[15]), obj8);
-            let tmp53 = decoration(tmp6, obj7);
-            const tmp59 = flag2(tmp7[15]);
+            let tmp54 = decoration(tmp6, obj7);
+            const tmp60 = flag2(tmp7[15]);
           } else if (mute) {
             let obj9 = { style: null, children: null };
             const items5 = [, ];
-            ({ status: arr7[0], voiceStatus: arr7[1] } = tmp3);
+            ({ status: arr6[0], voiceStatus: arr6[1] } = tmp3);
             obj9.style = items5;
             const obj10 = { size: flag2(tmp7[15]).Sizes.REFRESH_SMALL_16, source: flag2(tmp7[17]), color: flag2(tmp7[6]).unsafe_rawColors.WHITE };
             obj9.children = decoration(flag2(tmp7[15]), obj10);
-            tmp53 = decoration(tmp6, obj9);
-            const tmp56 = flag2(tmp7[15]);
+            tmp54 = decoration(tmp6, obj9);
+            const tmp57 = flag2(tmp7[15]);
           }
-          items2[4] = tmp53;
+          items2[4] = tmp54;
           obj.children = items2;
           return closure_9(tmp6, obj);
         }
@@ -282,36 +282,43 @@ export default noop.memo((isMobileOnline) => {
     if (null != source) {
       const obj11 = { source, size: NORMAL, animate: flag3 };
       obj2 = Object.assign(obj2);
-      let tmp14 = decoration(flag2(tmp7[7]), obj11);
-      let tmp29 = flag2(tmp7[7]);
+      let tmp15 = decoration(flag2(tmp7[7]), obj11);
+      const tmp30 = flag2(tmp7[7]);
     } else if (null != user) {
       let obj12 = { user, guildId, size: NORMAL, animate: flag3 };
       const merged2 = Object.assign(obj2);
-      tmp14 = decoration(flag2(tmp7[7]), obj12);
-      const tmp23 = flag2(tmp7[7]);
+      tmp15 = decoration(flag2(tmp7[7]), obj12);
+      const tmp24 = flag2(tmp7[7]);
     } else if (null != channel) {
       const obj13 = { channel, size: NORMAL, animate: flag3 };
       const merged3 = Object.assign(obj2);
-      tmp14 = decoration(flag2(tmp7[7]), obj13);
-      const tmp17 = flag2(tmp7[7]);
+      tmp15 = decoration(flag2(tmp7[7]), obj13);
+      const tmp18 = flag2(tmp7[7]);
     }
   } else {
     let sum = StatusWithTyping(tmp7[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
-    const obj14 = { style: null };
     if (isStageCall) {
-      const items6 = [tmp3.stageSpeaking, ];
+      const obj14 = { color: speakingColor, style: null };
+      speakingColor = [tmp3.stageSpeaking, ];
       let size = { width: sum, height: sum, borderRadius: sum / 2 };
-      items6[1] = size;
-      obj14.style = items6;
+      speakingColor[1] = size;
+      obj14.style = speakingColor;
       let tmp9Result = tmp9(flag2(tmp7[12]), obj14);
     } else {
-      const items7 = [tmp3.speaking, ];
+      const items6 = [tmp3.speaking, , ];
       let size1 = { width: sum, height: sum, borderRadius: sum / 2 };
-      items7[1] = size1;
-      obj14.style = items7;
-      tmp9Result = tmp9(tmp6, obj14);
+      items6[1] = size1;
+      let tmp10 = null;
+      if (null != speakingColor) {
+        const obj15 = { borderColor: speakingColor };
+        tmp10 = obj15;
+      }
+      const obj16 = { style: null };
+      items6[2] = tmp10;
+      obj16.style = items6;
+      tmp9Result = tmp9(tmp6, obj16);
     }
   }
 });
-export const AvatarSizes = fn(12567).AvatarSizes;
+export const AvatarSizes = fn(12584).AvatarSizes;
 export { getStatusSize };

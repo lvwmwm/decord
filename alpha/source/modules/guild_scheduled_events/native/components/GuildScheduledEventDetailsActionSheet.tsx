@@ -1,25 +1,25 @@
-// Module ID: 9070
-// Function ID: 9071
+// Module ID: 9081
+// Function ID: 9082
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 2066, 6941, 2050, 21, 4829, 576, 1115, 6578, 6598, 504, 9060, 9071, 8968, 9061, 1612, 9072, 9051, 9073, 6566, 6040, 9075, 9081, 2]
+// Dependencies: [32, 19, 17, 2067, 6946, 2051, 21, 4836, 576, 1115, 6583, 6603, 504, 9071, 9082, 8979, 9072, 1613, 9083, 9062, 9084, 6571, 6045, 9086, 9092, 2]
 // Exports: default
 
-// Module 9070 (GuildScheduledEventDetailsActionSheet)
+// Module 9081 (GuildScheduledEventDetailsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9061 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9072 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6941 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
 
 require = fn;
 const View = fn(17).View;
-const GuildScheduledEventsConstants = fn(2050);
+const GuildScheduledEventsConstants = fn(2051);
 ({ EventDetailSections: closure_8, MAX_RSVP_USER_DISPLAY_COUNT: closure_9 } = GuildScheduledEventsConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { segmentedControl: { paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12 }, header: { flexDirection: "column" } };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);

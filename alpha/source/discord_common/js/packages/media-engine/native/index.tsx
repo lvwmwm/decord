@@ -1,26 +1,26 @@
-// Module ID: 4885
-// Function ID: 4886
+// Module ID: 4892
+// Function ID: 4893
 // Name: destroy
-// Dependencies: [32, 5, 4854, 4886, 4887, 4888, 4892, 4, 1994, 4884, 4893, 1340, 1365, 4895, 4955, 2]
+// Dependencies: [32, 5, 4861, 4893, 4894, 4895, 4899, 4, 1995, 4891, 4900, 1340, 1365, 4902, 4962, 2]
 
-// Module 4885 (destroy)
+// Module 4892 (destroy)
 import formatDefault from "format" /* 1340 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import inject from "inject" /* 1994 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4884 */;
-import VideoDefault from "Video" /* 4888 */;
-import CameraDefault from "Camera" /* 4892 */;
-import ConnectionDefault from "Connection" /* 4895 */;
-import Devices from "Devices" /* 4955 */;
+import inject from "inject" /* 1995 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
+import VideoDefault from "Video" /* 4895 */;
+import CameraDefault from "Camera" /* 4899 */;
+import ConnectionDefault from "Connection" /* 4902 */;
+import Devices from "Devices" /* 4962 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4887 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4894 */;
 
-const pollConnectionStatsDefault = tmp10(4893);
+const pollConnectionStatsDefault = tmp10(4900);
 require = fn;
-let Constants = fn(4854);
+let Constants = fn(4861);
 ({ QUEUE_METRICS_INTERVAL_MS: hasOwnProperty, SIDECHAIN_COMPRESSION_MAX_RATIO: metroRequire, SIDECHAIN_COMPRESSION_MAX_THRESHOLD: closure_7, SIDECHAIN_COMPRESSION_MIN_RATIO: closure_8, SIDECHAIN_COMPRESSION_MIN_THRESHOLD: closure_9, ProcessPriority: c10 } = Constants);
-Constants = fn(4886);
+Constants = fn(4893);
 ({ ClipsRecordingEvent: closure_11, DEFAULT_VOLUME: closure_12, DeviceTypes: map1, DISABLED_DEVICE_ID: closure_14, Features: closure_15, MediaEngineContextTypes: closure_16, NativeFeatures: closure_17, WATCHDOG_TIMEOUT_MS: closure_18 } = Constants);
 class MediaEngineNative extends tmp4 {
   constructor() {
@@ -118,15 +118,15 @@ class MediaEngineNative extends tmp4 {
     obj.handleRemoveListener = function handleRemoveListener(arg0) {
       if (arg0 === BaseConnectionEvent.MediaEngineEvent.VoiceActivity) {
         if (null != tmpResult.getVoiceEngine().setEmitVADLevel2) {
-          const voiceEngine = tmp(1994).getVoiceEngine();
-          voiceEngine.setEmitVADLevel2(obj.listenerCount(tmp(4884).MediaEngineEvent.VoiceActivity) > 0);
-          const tmpResult3 = tmp(1994);
+          const voiceEngine = tmp(1995).getVoiceEngine();
+          voiceEngine.setEmitVADLevel2(obj.listenerCount(tmp(4891).MediaEngineEvent.VoiceActivity) > 0);
+          const tmpResult3 = tmp(1995);
         } else {
-          const voiceEngine1 = tmp(1994).getVoiceEngine();
-          voiceEngine1.setEmitVADLevel(obj.listenerCount(tmp(4884).MediaEngineEvent.VoiceActivity) > 0, false, {});
-          const tmpResult4 = tmp(1994);
+          const voiceEngine1 = tmp(1995).getVoiceEngine();
+          voiceEngine1.setEmitVADLevel(obj.listenerCount(tmp(4891).MediaEngineEvent.VoiceActivity) > 0, false, {});
+          const tmpResult4 = tmp(1995);
         }
-        tmpResult = tmp(1994);
+        tmpResult = tmp(1995);
       }
     };
     obj.handleVideoInputInitialization = function handleVideoInputInitialization(arg0) {
@@ -285,7 +285,7 @@ class MediaEngineNative extends tmp4 {
               if (importDefault) {
                 c3 = 3;
               } else {
-                voiceEngine = v0(1994).getVoiceEngine();
+                voiceEngine = v0(1995).getVoiceEngine();
                 const promise = new Promise((arg0) => {
                   closure_0 = arg0;
                   pollQueueMetrics = pollQueueMetrics.pollQueueMetrics;
@@ -307,7 +307,7 @@ class MediaEngineNative extends tmp4 {
           } else if (arg0 !== 2) {
             closure_128_1 = value;
             closure_128_1.periodMs = periodMs;
-            closure_129_0.emit(v0(4884).MediaEngineEvent.VoiceQueueMetrics, closure_128_1);
+            closure_129_0.emit(v0(4891).MediaEngineEvent.VoiceQueueMetrics, closure_128_1);
             const _setTimeout = setTimeout;
             const timerId = setTimeout(closure_129_2, periodMs);
           }
@@ -405,12 +405,12 @@ prototype["supports"] = function supports(arg0) {
         } else if (tmp.VIDEO_BACKGROUND_FILTER === arg0) {
           let isDesktopResult = utils_PlatformUtils.isDesktop();
           if (isDesktopResult) {
-            isDesktopResult = tmp50(1994).supportsFeature(constants5.MEDIAPIPE);
-            const tmp50Result = tmp50(1994);
+            isDesktopResult = tmp50(1995).supportsFeature(constants5.MEDIAPIPE);
+            const tmp50Result = tmp50(1995);
           }
           if (!isDesktopResult) {
-            isDesktopResult = tmp50(1994).supportsFeature(constants5.VIDEO_BACKGROUND_FILTER);
-            const tmp50Result2 = tmp50(1994);
+            isDesktopResult = tmp50(1995).supportsFeature(constants5.VIDEO_BACKGROUND_FILTER);
+            const tmp50Result2 = tmp50(1995);
           }
           return isDesktopResult;
         } else if (tmp.FIXED_KEYFRAME_INTERVAL === arg0) {
@@ -510,7 +510,7 @@ prototype["connect"] = function connect(arg0, arg1, videoSupported) {
   if (!obj.supportsFeature(constants5.EXPERIMENT_CONFIG)) {
     videoSupported.experiments = undefined;
   }
-  obj = obj3(1994);
+  obj = obj3(1995);
   let flag = videoSupported.videoSupported;
   if (flag == null) {
     flag = true;
@@ -518,8 +518,8 @@ prototype["connect"] = function connect(arg0, arg1, videoSupported) {
   if (flag) {
     flag = self.supports(constants3.VIDEO);
   }
-  obj3 = self(4895).create(arg0, arg1, videoSupported, flag);
-  obj3.on(obj3(4884).BaseConnectionEvent.Destroy, (arg0) => {
+  obj3 = self(4902).create(arg0, arg1, videoSupported, flag);
+  obj3.on(obj3(4891).BaseConnectionEvent.Destroy, (arg0) => {
     const connections = self.connections;
     connections.delete(arg0);
     if (self.connectionsEmpty()) {
@@ -531,29 +531,29 @@ prototype["connect"] = function connect(arg0, arg1, videoSupported) {
       }
     }
   });
-  obj3.on(obj3(4884).BaseConnectionEvent.Connected, () => {
+  obj3.on(obj3(4891).BaseConnectionEvent.Connected, () => {
     obj3.setVideoBroadcast(self.shouldConnectionBroadcastVideo(obj3));
   });
-  obj3.on(obj3(4884).BaseConnectionEvent.Silence, (arg0) => {
+  obj3.on(obj3(4891).BaseConnectionEvent.Silence, (arg0) => {
     self.emit(BaseConnectionEvent.MediaEngineEvent.Silence, arg0);
   });
   let connections = self.connections;
   connections.add(obj3);
-  let obj2 = self(4895);
+  let obj2 = self(4902);
   let HIGH = videoSupported.processPriority;
   if (HIGH == null) {
     HIGH = constants.HIGH;
   }
-  obj3(1994).setProcessPriority(HIGH);
+  obj3(1995).setProcessPriority(HIGH);
   if (null != videoSupported.threadPriorityConfiguration) {
-    let voiceEngine = tmp(1994).getVoiceEngine();
+    let voiceEngine = tmp(1995).getVoiceEngine();
     let setNativeThreadsPriority = voiceEngine.setNativeThreadsPriority;
     if (setNativeThreadsPriority != null) {
       let result = setNativeThreadsPriority(videoSupported.threadPriorityConfiguration);
     }
-    const tmpResult2 = tmp(1994);
+    const tmpResult2 = tmp(1995);
   }
-  self.emit(obj3(4884).MediaEngineEvent.Connection, obj3);
+  self.emit(obj3(4891).MediaEngineEvent.Connection, obj3);
   return obj3;
 };
 prototype["shouldConnectionBroadcastVideo"] = function shouldConnectionBroadcastVideo(context) {
@@ -634,11 +634,11 @@ prototype["setAudioInputDevice"] = function setAudioInputDevice(audioInputDevice
   _require = audioInputDeviceId;
   this.audioInputDeviceId = audioInputDeviceId;
   if (obj.supportsFeature(constants5.SET_AUDIO_DEVICE_BY_ID)) {
-    let voiceEngine = tmp(1994).getVoiceEngine();
+    let voiceEngine = tmp(1995).getVoiceEngine();
     voiceEngine.setInputDevice(audioInputDeviceId);
-    const tmpResult = tmp(1994);
+    const tmpResult = tmp(1995);
   } else {
-    const audioInputDevices = tmp(4955).getAudioInputDevices();
+    const audioInputDevices = tmp(4962).getAudioInputDevices();
     audioInputDevices.then((arr) => {
       let found = arr.find((id) => id.id === audioInputDeviceId);
       if (found == null) {
@@ -649,7 +649,7 @@ prototype["setAudioInputDevice"] = function setAudioInputDevice(audioInputDevice
         voiceEngine.setInputDevice(found.index);
       }
     });
-    const tmpResult2 = tmp(4955);
+    const tmpResult2 = tmp(4962);
   }
   self.emit(require("BaseConnectionEvent").MediaEngineEvent.SelectedDeviceChange, constants2.AUDIO_INPUT, this.audioInputDeviceId, audioInputDeviceId);
 };
@@ -661,11 +661,11 @@ prototype["setAudioOutputDevice"] = function setAudioOutputDevice(audioOutputDev
   _require = audioOutputDeviceId;
   this.audioOutputDeviceId = audioOutputDeviceId;
   if (obj.supportsFeature(constants5.SET_AUDIO_DEVICE_BY_ID)) {
-    let voiceEngine = tmp(1994).getVoiceEngine();
+    let voiceEngine = tmp(1995).getVoiceEngine();
     voiceEngine.setOutputDevice(audioOutputDeviceId);
-    const tmpResult = tmp(1994);
+    const tmpResult = tmp(1995);
   } else {
-    const audioOutputDevices = tmp(4955).getAudioOutputDevices();
+    const audioOutputDevices = tmp(4962).getAudioOutputDevices();
     audioOutputDevices.then((arr) => {
       let found = arr.find((id) => id.id === audioOutputDeviceId);
       if (found == null) {
@@ -676,7 +676,7 @@ prototype["setAudioOutputDevice"] = function setAudioOutputDevice(audioOutputDev
         voiceEngine.setOutputDevice(found.index);
       }
     });
-    const tmpResult2 = tmp(4955);
+    const tmpResult2 = tmp(4962);
   }
   self.emit(require("BaseConnectionEvent").MediaEngineEvent.SelectedDeviceChange, constants2.AUDIO_OUTPUT, this.audioOutputDeviceId, audioOutputDeviceId);
 };
@@ -742,7 +742,7 @@ prototype["setVideoInputDevice"] = function setVideoInputDevice(arg0) {
           } else {
             closure_129_1.videoInputDeviceId = closure_128_1;
             if (!obj9.supportsFeature(constants.SET_VIDEO_DEVICE_BY_ID)) {
-              const voiceEngine = tmp2(1994).getVoiceEngine();
+              const voiceEngine = tmp2(1995).getVoiceEngine();
               let num3 = -1;
               if (forEach != closure_128_0) {
                 num3 = closure_128_0.index;
@@ -751,19 +751,19 @@ prototype["setVideoInputDevice"] = function setVideoInputDevice(arg0) {
               const connections = closure_129_1.connections;
               forEach = connections.forEach;
               const item = forEach((setVideoBroadcast) => setVideoBroadcast.setVideoBroadcast(closure_1_1.shouldConnectionBroadcastVideo(setVideoBroadcast)));
-              const obj = tmp2(1994);
+              const obj = tmp2(1995);
             }
             if (forEach == closure_128_0) {
               closure_128_2 = closure_1_14;
-              const voiceEngine1 = tmp2(1994).getVoiceEngine();
+              const voiceEngine1 = tmp2(1995).getVoiceEngine();
               voiceEngine1.setVideoInputDevice(closure_128_2);
-              const obj3 = tmp2(1994);
+              const obj3 = tmp2(1995);
             }
             if (forEach == closure_128_0.originalId) {
               const id2 = closure_128_0.id;
             }
             const originalId = closure_128_0.originalId;
-            obj9 = tmp2(1994);
+            obj9 = tmp2(1995);
           }
         }
       } catch (tmp42) {
@@ -965,7 +965,7 @@ prototype["hasClipsV3Support"] = function hasClipsV3Support() {
 };
 prototype["registerClipsRecordingEventHandler"] = function registerClipsRecordingEventHandler() {
   const self = this;
-  const voiceEngine = self(1994).getVoiceEngine();
+  const voiceEngine = self(1995).getVoiceEngine();
   if (!tmp) {
     self.clipsRecordingEventHandlerRegistered = true;
     const result = voiceEngine.setOnClipsRecordingEvent((arg0, arg1) => {
@@ -1392,7 +1392,7 @@ prototype["setDebugLogging"] = function setDebugLogging(arg0) {
 prototype["setLoopback"] = function setLoopback(arg0, arg1) {
   let tmp = arg0;
   if (null != obj.getVoiceEngine().setLoopback) {
-    const voiceEngine = tmp2(1994).getVoiceEngine();
+    const voiceEngine = tmp2(1995).getVoiceEngine();
     const obj2 = { echoCancellation: null, noiseSuppression: null, automaticGainControl: null, automaticGainControlConfig: null, noiseCancellation: null, noiseCancellationDuringProcessing: null };
     ({ echoCancellation: obj4.echoCancellation, noiseSuppression: obj4.noiseSuppression, automaticGainControlConfig } = arg1);
     let enabled;
@@ -1402,22 +1402,22 @@ prototype["setLoopback"] = function setLoopback(arg0, arg1) {
     obj2.automaticGainControl = enabled;
     ({ automaticGainControlConfig: obj4.automaticGainControlConfig, noiseCancellation: obj4.noiseCancellation, noiseCancellationDuringProcessing: obj4.noiseCancellationDuringProcessing } = arg1);
     voiceEngine.setLoopback(tmp, obj2);
-    const tmp2Result = tmp2(1994);
+    const tmp2Result = tmp2(1995);
   }
   const self = this;
   obj = inject;
   if (null != tmp2Result4.getVoiceEngine().setEmitVADLevel2) {
-    const voiceEngine1 = tmp2(1994).getVoiceEngine();
+    const voiceEngine1 = tmp2(1995).getVoiceEngine();
     if (!tmp) {
-      tmp = self.listenerCount(tmp2(4884).MediaEngineEvent.VoiceActivity) > 0;
+      tmp = self.listenerCount(tmp2(4891).MediaEngineEvent.VoiceActivity) > 0;
     }
     voiceEngine1.setEmitVADLevel2(tmp);
-    const tmp2Result5 = tmp2(1994);
+    const tmp2Result5 = tmp2(1995);
   } else {
-    const voiceEngine2 = tmp2(1994).getVoiceEngine();
+    const voiceEngine2 = tmp2(1995).getVoiceEngine();
     let tmp6 = tmp;
     if (!tmp) {
-      tmp6 = self.listenerCount(tmp2(4884).MediaEngineEvent.VoiceActivity) > 0;
+      tmp6 = self.listenerCount(tmp2(4891).MediaEngineEvent.VoiceActivity) > 0;
     }
     const obj3 = { echoCancellation: null, noiseSuppression: null, automaticGainControl: null, noiseCancellation: null, noiseCancellationDuringProcessing: null };
     ({ echoCancellation: obj6.echoCancellation, noiseSuppression: obj6.noiseSuppression, automaticGainControlConfig: automaticGainControlConfig2 } = arg1);
@@ -1428,7 +1428,7 @@ prototype["setLoopback"] = function setLoopback(arg0, arg1) {
     obj3.automaticGainControl = enabled1;
     ({ noiseCancellation: obj6.noiseCancellation, noiseCancellationDuringProcessing: obj6.noiseCancellationDuringProcessing } = arg1);
     voiceEngine2.setEmitVADLevel(tmp6, tmp, obj3);
-    const tmp2Result6 = tmp2(1994);
+    const tmp2Result6 = tmp2(1995);
   }
 };
 prototype["getLoopback"] = function getLoopback() {
@@ -1529,7 +1529,7 @@ prototype["createReplayConnection"] = function createReplayConnection(arg0, arg1
   const replay = ConnectionDefault.createReplay(arg0, arg1);
   let tmp2 = null;
   if (null != replay) {
-    replay.on(self(4884).BaseConnectionEvent.Destroy, (arg0) => {
+    replay.on(self(4891).BaseConnectionEvent.Destroy, (arg0) => {
       const connections = self.connections;
       connections.delete(arg0);
       if (self.connectionsEmpty()) {
@@ -1538,10 +1538,10 @@ prototype["createReplayConnection"] = function createReplayConnection(arg0, arg1
     });
     let connections = self.connections;
     connections.add(replay);
-    self(1994).setProcessPriority(constants.HIGH);
-    self.emit(self(4884).MediaEngineEvent.Connection, replay);
+    self(1995).setProcessPriority(constants.HIGH);
+    self.emit(self(4891).MediaEngineEvent.Connection, replay);
     tmp2 = replay;
-    const obj3 = self(1994);
+    const obj3 = self(1995);
   }
   return tmp2;
 };
@@ -1602,15 +1602,15 @@ prototype["stopLocalAudioRecording"] = function stopLocalAudioRecording(arg0) {
       closure_0(arg0, arg1);
     });
   }
-  let tmp5 = this.listenerCount(tmp(4884).MediaEngineEvent.VoiceActivity) > 0;
+  let tmp5 = this.listenerCount(tmp(4891).MediaEngineEvent.VoiceActivity) > 0;
   if (tmp5) {
-    tmp5 = null != tmp(1994).getVoiceEngine().setEmitVADLevel2;
-    const tmpResult = tmp(1994);
+    tmp5 = null != tmp(1995).getVoiceEngine().setEmitVADLevel2;
+    const tmpResult = tmp(1995);
   }
   if (tmp5) {
-    const voiceEngine1 = tmp(1994).getVoiceEngine();
+    const voiceEngine1 = tmp(1995).getVoiceEngine();
     voiceEngine1.setEmitVADLevel2(true);
-    const tmpResult2 = tmp(1994);
+    const tmpResult2 = tmp(1995);
   }
 };
 prototype["setHasFullbandPerformance"] = function setHasFullbandPerformance(arg0) {

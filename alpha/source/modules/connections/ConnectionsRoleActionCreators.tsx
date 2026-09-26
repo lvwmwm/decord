@@ -1,10 +1,10 @@
-// Module ID: 11054
-// Function ID: 11055
+// Module ID: 11068
+// Function ID: 11069
 // Name: ConnectionsRoleActionCreators
-// Dependencies: [5, 1074, 1271, 573, 6545, 2]
+// Dependencies: [5, 1074, 1271, 573, 6550, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 11054 (ConnectionsRoleActionCreators)
+// Module 11068 (ConnectionsRoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

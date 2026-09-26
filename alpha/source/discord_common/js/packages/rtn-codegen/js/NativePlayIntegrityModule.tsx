@@ -1,9 +1,9 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8027
+// Function ID: 8028
 // Name: NativePlayIntegrityModule
 // Dependencies: [17, 2]
 
-// Module 8019 (NativePlayIntegrityModule)
+// Module 8027 (NativePlayIntegrityModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

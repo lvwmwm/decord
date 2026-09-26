@@ -1,9 +1,9 @@
 // Module ID: 10031
 // Function ID: 10032
-// Dependencies: [41, 42, 93, 95, 98, 9902]
+// Dependencies: [41, 42, 93, 95, 98, 9916]
 
 // Module 10031
-import _mod9902 from "module_9902" /* 9902 */;
+import _mod9916 from "module_9916" /* 9916 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -45,12 +45,12 @@ if (!fn) {
     return tmp;
   };
 }
-class ESMergeDateRangeRefiner {
+class RUMergeDateTimeRefiner {
   constructor() {
     self = this;
-    tmp = closure_0(this, ESMergeDateRangeRefiner);
+    tmp = closure_0(this, RUMergeDateTimeRefiner);
     tmp2 = c2;
-    obj = c2(ESMergeDateRangeRefiner);
+    obj = c2(RUMergeDateTimeRefiner);
     tmp3 = closure_1;
     if (closure_3()) {
       tmp7 = globalThis;
@@ -65,14 +65,15 @@ class ESMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = ESMergeDateRangeRefiner;
-_inherits(ESMergeDateRangeRefiner, fn(_mod9902).default);
+_classCallCheck = RUMergeDateTimeRefiner;
+_inherits(RUMergeDateTimeRefiner, fn(_mod9916).default);
 const entry = {
   key: "patternBetween",
   value: function patternBetween() {
-    return /^\s*(?:-)\s*$/i;
+    const regExp = new RegExp("^\\s*(T|\u0432|,|-)?\\s*$");
+    return regExp;
   }
 };
 const items = [entry];
 
-export default _createClass(ESMergeDateRangeRefiner, items);
+export default _createClass(RUMergeDateTimeRefiner, items);

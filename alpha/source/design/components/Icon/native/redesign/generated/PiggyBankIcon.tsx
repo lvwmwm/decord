@@ -1,13 +1,13 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11403
+// Function ID: 11404
 // Name: PiggyBankIcon
-// Dependencies: [19, 21, 576, 4527, 11390, 2]
+// Dependencies: [19, 21, 576, 4530, 11404, 2]
 // Exports: PiggyBankIcon
 
-// Module 11389 (PiggyBankIcon)
+// Module 11403 (PiggyBankIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4527 */;
-import _mod11390 from "module_11390" /* 11390 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod11404 from "module_11404" /* 11404 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PiggyBankIcon = function PiggyBankIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11390, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11404, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,24 +1,24 @@
-// Module ID: 9758
-// Function ID: 9759
+// Module ID: 9769
+// Function ID: 9770
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 9742, 21, 4829, 576, 1177, 7594, 4825, 1115, 9756, 2]
+// Dependencies: [19, 17, 9753, 21, 4836, 576, 1177, 7601, 4832, 1115, 9767, 2]
 
-// Module 9758 (EmojiPickerListComponents)
+// Module 9769 (EmojiPickerListComponents)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import _modDef7594 from "module_7594" /* 7594 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9756 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import _modDef7601 from "module_7601" /* 7601 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9767 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const EmojiPickerListConstants = fn(9742);
+const EmojiPickerListConstants = fn(9753);
 ({ LABEL_BOTTOM_PADDING, LABEL_TOP_PADDING, NSFW_ROW_HEIGHT } = EmojiPickerListConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj = { section: { justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingTop: LABEL_TOP_PADDING, paddingBottom: LABEL_BOTTOM_PADDING }, nsfwContainer: null, nsfwText: null };
 let obj3 = { justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingTop: LABEL_TOP_PADDING, paddingBottom: LABEL_BOTTOM_PADDING };
 obj.nsfwContainer = { flexDirection: "row", height: NSFW_ROW_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
@@ -28,7 +28,7 @@ const obj4 = { flexDirection: "row", height: NSFW_ROW_HEIGHT, alignItems: "cente
 const memoResult = noop.memo(() => {
   const tmp = closure_6();
   const obj = { style: tmp.nsfwContainer, children: null };
-  const items = [React4(native.Icon, { source: _modDef7594, size: native.Icon.Sizes.SMALL }), ];
+  const items = [React4(native.Icon, { source: _modDef7601, size: native.Icon.Sizes.SMALL }), ];
   const obj3 = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.SLzV5z);

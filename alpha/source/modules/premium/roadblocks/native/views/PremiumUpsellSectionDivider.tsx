@@ -1,24 +1,24 @@
-// Module ID: 9755
-// Function ID: 9756
+// Module ID: 9766
+// Function ID: 9767
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 6847, 21, 4829, 576, 9756, 5286, 1094, 5402, 2]
+// Dependencies: [19, 17, 6852, 21, 4836, 576, 9767, 5293, 1094, 5409, 2]
 // Exports: default
 
-// Module 9755 (PremiumUpsellSectionDivider)
+// Module 9766 (PremiumUpsellSectionDivider)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import LinearGradientDefault from "LinearGradient" /* 5286 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9756 */;
+import LinearGradientDefault from "LinearGradient" /* 5293 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9767 */;
 import noop from "module_19" /* 19 */;
 
-const LockIcon2 = LockIcon(5402);
+const LockIcon2 = LockIcon(5409);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const Gradients = fn(6847).Gradients;
+const Gradients = fn(6852).Gradients;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_8 = createStyles.createStyles((arg0) => {
   let num;
   if (arg0 === obj2.START) {
@@ -86,10 +86,10 @@ export default function PremiumUpsellSectionDivider(arg0) {
     lock = lock.lock;
     obj6.style = lock;
     obj5.children = tmp3(LockIcon, obj6);
-    obj5 = tmp3(tmp4(5286), obj5);
+    obj5 = tmp3(tmp4(5293), obj5);
     obj4.children = obj5;
     tmp3(tmp2, obj4);
-    const tmp4Result = tmp4(5286);
+    const tmp4Result = tmp4(5293);
   }
 };
 export const PREMIUM_UPSELL_SECTION_DIVIDER_HEIGHT = 28;

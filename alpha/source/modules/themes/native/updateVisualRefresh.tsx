@@ -1,12 +1,12 @@
-// Module ID: 16755
-// Function ID: 16756
+// Module ID: 16784
+// Function ID: 16785
 // Name: updateVisualRefresh
-// Dependencies: [17, 1364, 13976, 2]
+// Dependencies: [17, 1364, 14001, 2]
 // Exports: updateVisualRefresh
 
-// Module 16755 (updateVisualRefresh)
+// Module 16784 (updateVisualRefresh)
 import _mod17 from "module_17" /* 17 */;
-import NativeThemeModuleDefault from "NativeThemeModule" /* 13976 */;
+import NativeThemeModuleDefault from "NativeThemeModule" /* 14001 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;

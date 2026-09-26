@@ -1,14 +1,14 @@
-// Module ID: 6861
-// Function ID: 6862
+// Module ID: 6866
+// Function ID: 6867
 // Name: MobileTrialUtils
-// Dependencies: [1374, 6862, 4651, 2028, 12860, 4485, 1115, 2]
+// Dependencies: [1374, 6867, 4654, 2029, 12877, 4488, 1115, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 6861 (MobileTrialUtils)
+// Module 6866 (MobileTrialUtils)
 import PremiumConstants from "PremiumConstants" /* 1374 */;
-import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6862 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6867 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = PremiumConstants.PremiumSubscriptionSKUToPremiumType;
@@ -53,13 +53,13 @@ export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_p
     const obj2 = { location: user_profile_premium_upsell_card };
     if (tmpResult.isAndroidTwoWeekTrialsTrialCTAEnabled(obj2)) {
       ({ interval: obj3.intervalType, intervalCount: obj3.intervalCount } = subscriptionTrial);
-      const result = tmp(4485).formatIntervalDuration({ intervalType: null, intervalCount: null });
+      const result = tmp(4488).formatIntervalDuration({ intervalType: null, intervalCount: null });
       const intl = tmp(1115).intl;
       const obj5 = { duration: result };
       return intl.formatToPlainString(tmp(1115).t["6xpY54"], obj5);
     } else {
       return null;
     }
-    tmpResult = tmp(12860);
+    tmpResult = tmp(12877);
   }
 };

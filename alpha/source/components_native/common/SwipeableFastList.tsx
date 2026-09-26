@@ -1,10 +1,10 @@
-// Module ID: 10820
-// Function ID: 10821
+// Module ID: 10833
+// Function ID: 10834
 // Name: SwipeableFastList
-// Dependencies: [19, 21, 10821, 6488, 2]
+// Dependencies: [19, 21, 10834, 6493, 2]
 
-// Module 10820 (SwipeableFastList)
-import FastListDefault from "FastList" /* 6488 */;
+// Module 10833 (SwipeableFastList)
+import FastListDefault from "FastList" /* 6493 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

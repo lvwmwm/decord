@@ -1,11 +1,11 @@
-// Module ID: 11532
-// Function ID: 11533
+// Module ID: 11546
+// Function ID: 11547
 // Name: OnboardingAppsRocket
-// Dependencies: [19, 21, 7901, 2]
+// Dependencies: [19, 21, 7909, 2]
 // Exports: default
 
-// Module 11532 (OnboardingAppsRocket)
-import inlineStyles from "inlineStyles" /* 7901 */;
+// Module 11546 (OnboardingAppsRocket)
+import inlineStyles from "inlineStyles" /* 7909 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

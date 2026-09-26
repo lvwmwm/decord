@@ -1,10 +1,10 @@
-// Module ID: 5317
-// Function ID: 5318
+// Module ID: 5324
+// Function ID: 5325
 // Name: SoundboardFavoritesExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 5317 (SoundboardFavoritesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 5324 (SoundboardFavoritesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-09-soundboard-favorites", defaultConfig: { sortOrder: "creation-date", allowReordering: false }, variations: null };

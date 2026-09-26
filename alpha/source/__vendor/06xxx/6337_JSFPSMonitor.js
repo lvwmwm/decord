@@ -1,0 +1,91 @@
+// Module ID: 6337
+// Function ID: 6338
+// Name: JSFPSMonitor
+// Dependencies: [6284, 6285, 6272, 6338]
+
+// Module 6337 (JSFPSMonitor)
+import _modDef6285 from "module_6285" /* 6285 */;
+import _classCallCheck from "module_6284" /* 6284 */;
+
+const JSFPSMonitor = arg1;
+class JSFPSMonitor {
+  constructor() {
+    self = this;
+    tmp = c2(this, JSFPSMonitor);
+    this.startTime = 0;
+    this.frameCount = 0;
+    this.timeWindow = { frameCount: 0, startTime: 0 };
+    this.minFPS = Number.MAX_SAFE_INTEGER;
+    this.maxFPS = 0;
+    this.averageFPS = 0;
+    this.clearAnimationNumber = 0;
+    this.updateLoopCompute = () => {
+      self.frameCount = self.frameCount + 1;
+      const result = (Date.now() - self.startTime) / 1000;
+      let num = 0;
+      if (0 < result) {
+        num = obj.frameCount / result;
+      }
+      self.averageFPS = num;
+      const timeWindow = obj.timeWindow;
+      timeWindow.frameCount = timeWindow.frameCount + 1;
+      const result1 = (Date.now() - obj.timeWindow.startTime) / 1000;
+      if (1 <= result1) {
+        const result2 = obj.timeWindow.frameCount / result1;
+        const _Math = Math;
+        obj.minFPS = Math.min(obj.minFPS, result2);
+        const _Math2 = Math;
+        obj.maxFPS = Math.max(obj.maxFPS, result2);
+        obj.timeWindow.frameCount = 0;
+        const _Date = Date;
+        obj.timeWindow.startTime = Date.now();
+      }
+      self.measureLoop();
+    };
+    return;
+  }
+}
+const entry = {
+  key: "measureLoop",
+  value: function measureLoop() {
+    this.clearAnimationNumber = requestAnimationFrame(this.updateLoopCompute);
+  }
+};
+const items = [
+  entry,
+  {
+    key: "startTracking",
+    value: function startTracking() {
+      const self = this;
+      if (0 !== this.startTime) {
+        const _Error = Error;
+        const error = new Error(JSFPSMonitor(6272).ErrorMessages.fpsMonitorAlreadyRunning);
+        throw error;
+      } else {
+        const _Date = Date;
+        self.startTime = Date.now();
+        const _Date2 = Date;
+        self.timeWindow.startTime = Date.now();
+        self.measureLoop();
+      }
+    }
+  },
+  {
+    key: "stopAndGetData",
+    value: function stopAndGetData() {
+      const self = this;
+      cancelAnimationFrame(this.clearAnimationNumber);
+      if (this.minFPS === Number.MAX_SAFE_INTEGER) {
+        ({ averageFPS: self.minFPS, averageFPS: self.maxFPS } = self);
+      }
+      const obj = { minFPS: JSFPSMonitor(6338).roundToDecimalPlaces(self.minFPS, 1), maxFPS: null, averageFPS: null };
+      const obj2 = JSFPSMonitor(6338);
+      obj.maxFPS = JSFPSMonitor(6338).roundToDecimalPlaces(self.maxFPS, 1);
+      const obj3 = JSFPSMonitor(6338);
+      obj.averageFPS = JSFPSMonitor(6338).roundToDecimalPlaces(self.averageFPS, 1);
+      return obj;
+    }
+  }
+];
+
+export const JSFPSMonitor = _modDef6285(JSFPSMonitor, items);

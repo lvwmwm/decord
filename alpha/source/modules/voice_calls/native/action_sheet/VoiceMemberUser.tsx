@@ -1,24 +1,24 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 13331
+// Function ID: 13332
 // Name: VoiceMemberUser
-// Dependencies: [19, 17, 1182, 502, 5585, 2044, 2107, 1992, 4869, 1074, 21, 4829, 576, 8799, 504, 4682, 13315, 13316, 1177, 13317, 13318, 13319, 13320, 8894, 4825, 1115, 8045, 7152, 9507, 4688, 5036, 4796, 5428, 9183, 4981, 9176, 4675, 2]
+// Dependencies: [19, 17, 1182, 502, 5590, 2045, 2108, 1993, 4876, 1074, 21, 4836, 576, 8807, 8902, 504, 4685, 13332, 13333, 1177, 13334, 13335, 13336, 13337, 8905, 4832, 1115, 8053, 7157, 9518, 4692, 5043, 4800, 5435, 9194, 4988, 9187, 4678, 2]
 
-// Module 13314 (VoiceMemberUser)
+// Module 13331 (VoiceMemberUser)
 import nativeDefault from "native" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4675 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4688 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5036 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7152 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 9183 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5043 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7157 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 9194 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5585 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import PresenceStore from "PresenceStore" /* 4869 */;
+import CallStore from "CallStore" /* 5590 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import PresenceStore from "PresenceStore" /* 4876 */;
 
 require = fn;
 function StreamingUserRow(user) {
@@ -46,7 +46,7 @@ function StreamingUserRow(user) {
       labelCallScreen = tmp2.labelCallScreen;
     }
     obj3.style = labelCallScreen;
-    obj2.subLabel = closure_11(tmp3(8045).FormSubLabel, obj3);
+    obj2.subLabel = closure_11(tmp3(8053).FormSubLabel, obj3);
     const items1 = [closure_11(closure_16, obj2), ];
     let tmp10Result = user.id !== AuthenticationStore.getId();
     if (tmp10Result) {
@@ -71,9 +71,9 @@ function StreamingUserRow(user) {
               }
             }
       };
-      obj4.children = tmp10(channel(9507), obj5);
+      obj4.children = tmp10(channel(9518), obj5);
       tmp10Result = tmp10(closure_3, obj4);
-      const tmp20 = channel(9507);
+      const tmp20 = channel(9518);
     }
     const obj6 = { children: null };
     items1[1] = tmp10Result;
@@ -106,7 +106,7 @@ function RingButton(channelId) {
       obj2.children = stringResult;
       tmp4Result = tmp4(tmp5(1177).LegacyText, obj2);
       obj.children = tmp4Result;
-      closure_11(channelId(5428).PressableOpacity, obj);
+      closure_11(channelId(5435).PressableOpacity, obj);
     }
   }
   return tmp3;
@@ -136,7 +136,7 @@ function StopRingButton(channelId) {
       obj2.children = stringResult;
       tmp4Result = tmp4(tmp5(1177).LegacyText, obj2);
       obj.children = tmp4Result;
-      closure_11(channelId(5428).PressableOpacity, obj);
+      closure_11(channelId(5435).PressableOpacity, obj);
     }
   }
   return tmp3;
@@ -146,7 +146,7 @@ get_ActivityIndicator = fn(17);
 const Fonts = fn(1074).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-let createStyles = fn(4829);
+let createStyles = fn(4836);
 let obj = { row: { flexDirection: "row" }, voiceStatusIcon: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 }, voiceStatusIconMargin: { marginLeft: 8 }, streamPreview: { marginHorizontal: 16, marginBottom: 16, alignItems: "center", flex: 1 }, ringingButton: null, ringingButtonLabel: null, autoDisabledVideo: null, autoDisabledVideoLabel: null };
 let obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
 obj.ringingButton = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, height: 32, alignItems: "center", justifyContent: "center" };
@@ -155,7 +155,7 @@ obj.ringingButtonLabel = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lin
 obj.autoDisabledVideo = { flexDirection: "row", alignItems: "center" };
 obj.autoDisabledVideoLabel = { marginLeft: 4 };
 let closure_14 = createStyles.createStyles(obj);
-createStyles = fn(4829);
+createStyles = fn(4836);
 let obj6 = { labelCallScreen: null, voiceStatusIcon: null, ringingButton: null, ringingButtonLabel: null };
 let obj5 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj6.labelCallScreen = { fontFamily: Fonts.PRIMARY_MEDIUM, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -180,10 +180,18 @@ let closure_16 = noop.memo((user) => {
   const id = AuthenticationStore.getId();
   let obj = AuthenticationStore;
   const obj2 = { userId: user.id };
-  const tmp7 = channel(8799)({ userId: user.id });
+  const tmp7 = channel(8807)({ userId: user.id });
+  const obj4 = { userId: user.id, guildId: null };
+  let guild_id;
+  if (channel != null) {
+    guild_id = channel.guild_id;
+  }
+  obj4.guildId = guild_id;
+  const avatarSpeakingColor = user(8902).useAvatarSpeakingColor(obj4);
+  const obj3 = user(8902);
   const items = [ThemeStore];
   const stateFromStores = user(504).useStateFromStores(items, () => theme.theme);
-  const obj3 = user(504);
+  const tmp8Result = user(504);
   const items1 = [MediaEngineStore];
   const stateFromStoresObject = user(504).useStateFromStoresObject(items1, () => {
     let isVideoEnabledResult = id === user.id;
@@ -206,9 +214,9 @@ let closure_16 = noop.memo((user) => {
     return obj;
   });
   ({ localMute, localDeaf, localVideo, localVideoDisabled, isSelfMute, localVideoAutoDisabled } = stateFromStoresObject);
-  const obj4 = user(504);
+  const tmp8Result4 = user(504);
   const items2 = [GuildMemberStore];
-  let tmp12 = localMute;
+  let tmp14 = localMute;
   const stateFromStores1 = user(504).useStateFromStores(items2, () => {
     let guild_id;
     if (channel != null) {
@@ -217,15 +225,15 @@ let closure_16 = noop.memo((user) => {
     return GuildMemberStore.isGuestOrLurker(guild_id, user.id);
   });
   if (!localMute) {
-    tmp12 = isSelfMute;
+    tmp14 = isSelfMute;
   }
   if (!localVideo) {
     localVideo = localVideoDisabled;
   }
   let flag = false;
-  let tmp13 = localVideo;
-  let tmp14 = localDeaf;
-  let tmp15 = tmp12;
+  let tmp15 = localVideo;
+  let tmp16 = localDeaf;
+  let tmp17 = tmp14;
   let flag2 = false;
   let flag3 = false;
   let flag4 = false;
@@ -233,8 +241,8 @@ let closure_16 = noop.memo((user) => {
     if (withStream) {
       withStream = voiceState.selfStream;
     }
-    let isVoiceMutedResult = tmp12;
-    if (!tmp12) {
+    let isVoiceMutedResult = tmp14;
+    if (!tmp14) {
       isVoiceMutedResult = voiceState.isVoiceMuted();
     }
     let isVoiceDeafenedResult = localDeaf;
@@ -246,17 +254,17 @@ let closure_16 = noop.memo((user) => {
       selfVideo = voiceState.selfVideo;
     }
     const sessionId = voiceState.sessionId;
-    const tmp18 = null != sessionId && id === user.id && sessionId !== obj.getSessionId();
+    const tmp20 = null != sessionId && id === user.id && sessionId !== obj.getSessionId();
     flag3 = true;
-    flag = tmp18;
-    tmp13 = selfVideo;
-    tmp14 = isVoiceDeafenedResult;
-    tmp15 = isVoiceMutedResult;
+    flag = tmp20;
+    tmp15 = selfVideo;
+    tmp16 = isVoiceDeafenedResult;
+    tmp17 = isVoiceMutedResult;
     flag2 = withStream;
-    flag4 = tmp18;
+    flag4 = tmp20;
   }
-  const tmp19 = isActionSheet ? tmp3.voiceStatusIcon : tmp2.voiceStatusIcon;
-  const obj6 = {
+  const tmp21 = isActionSheet ? tmp3.voiceStatusIcon : tmp2.voiceStatusIcon;
+  const obj5 = {
     onPress() {
       return dependencyMap(user);
     },
@@ -264,100 +272,101 @@ let closure_16 = noop.memo((user) => {
     leading: null,
     trailing: null
   };
-  const obj7 = { user, guildId: null, size: null, speaking: null };
-  let guild_id;
+  const obj6 = { user, guildId: null, size: null, speaking: null, speakingColor: null };
+  let guild_id1;
   if (channel != null) {
-    guild_id = channel.guild_id;
+    guild_id1 = channel.guild_id;
   }
-  obj7.guildId = guild_id;
-  obj7.size = user(1177).AvatarSizes.REFRESH_MEDIUM_32;
-  obj7.speaking = tmp7;
-  obj6.leading = closure_11(user(1177).Avatar, obj7);
-  let tmp23Result = null;
+  obj6.guildId = guild_id1;
+  obj6.size = user(1177).AvatarSizes.REFRESH_MEDIUM_32;
+  obj6.speaking = tmp7;
+  obj6.speakingColor = avatarSpeakingColor;
+  obj5.leading = closure_11(user(1177).Avatar, obj6);
+  let tmp25Result = null;
   if (flag3) {
-    tmp23Result = null;
+    tmp25Result = null;
     if (!flag) {
-      const obj8 = { style: tmp2.row, children: null };
-      let tmp20Result = null;
+      const obj7 = { style: tmp2.row, children: null };
+      let tmp22Result = null;
       if (user.isSpectating) {
-        const obj9 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13320), style: tmp19 };
-        tmp20Result = tmp20(tmp8(1177).Icon, obj9);
+        const obj8 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13337), style: tmp21 };
+        tmp22Result = tmp22(tmp8(1177).Icon, obj8);
       }
-      const items3 = [tmp20Result, , , , ];
-      if (!tmp15) {
+      const items3 = [tmp22Result, , , , ];
+      if (!tmp17) {
         items3[1] = null;
-        let tmp20Result5 = null;
-        if (tmp14) {
-          const obj10 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13317), style: tmp19 };
-          tmp20Result5 = tmp20(tmp8(1177).Icon, obj10);
+        let tmp22Result5 = null;
+        if (tmp16) {
+          const obj9 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13334), style: tmp21 };
+          tmp22Result5 = tmp22(tmp8(1177).Icon, obj9);
         }
-        items3[2] = tmp20Result5;
-        if (!tmp13) {
+        items3[2] = tmp22Result5;
+        if (!tmp15) {
           items3[3] = null;
-          let tmp20Result6 = null;
+          let tmp22Result6 = null;
           if (flag2) {
-            const obj11 = { style: tmp19 };
-            tmp20Result6 = tmp20(tmp8(1177).LiveTag, obj11);
+            const obj10 = { style: tmp21 };
+            tmp22Result6 = tmp22(tmp8(1177).LiveTag, obj10);
           }
-          items3[4] = tmp20Result6;
-          obj8.children = items3;
-          tmp23Result = tmp23(tmp24, obj8);
+          items3[4] = tmp22Result6;
+          obj7.children = items3;
+          tmp25Result = tmp25(tmp26, obj7);
         } else {
           if (localVideoDisabled) {
-            const obj12 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13318), style: tmp2.voiceStatusIconMargin, disableColor: true };
-            let obj13 = obj12;
+            const obj11 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13335), style: tmp2.voiceStatusIconMargin, disableColor: true };
+            let obj12 = obj11;
           } else {
-            obj13 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13319), style: tmp19 };
+            obj12 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13336), style: tmp21 };
           }
-          tmp20(tmp8(1177).Icon, obj13);
+          tmp22(tmp8(1177).Icon, obj12);
         }
       } else {
-        if (tmp8Result.isThemeDark(stateFromStores)) {
-          let tmp5Result = tmp5(13315);
+        if (tmp8Result6.isThemeDark(stateFromStores)) {
+          let tmp5Result = tmp5(13332);
         } else {
-          tmp5Result = tmp5(13316);
+          tmp5Result = tmp5(13333);
         }
-        const obj14 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp19.tintColor, disableColor: localMute };
-        tmp20(tmp8(1177).Icon, obj14);
-        tmp8Result = tmp8(4682);
+        const obj13 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp21.tintColor, disableColor: localMute };
+        tmp22(tmp8(1177).Icon, obj13);
+        tmp8Result6 = tmp8(4685);
       }
-      tmp23 = closure_12;
-      tmp24 = id;
+      tmp25 = closure_12;
+      tmp26 = id;
     }
   }
-  obj6.trailing = tmp23Result;
-  const obj15 = { disabled: flag4 };
+  obj5.trailing = tmp25Result;
+  const obj14 = { disabled: flag4 };
   const merged1 = Object.assign(merged);
-  const merged2 = Object.assign(obj6);
-  let tmp35 = name;
+  const merged2 = Object.assign(obj5);
+  let tmp37 = name;
   if (stateFromStores1) {
-    const obj16 = { children: null };
+    const obj15 = { children: null };
     const items4 = [name, ];
-    const obj17 = { variant: "text-md/semibold", lineClamp: 1, color: "status-positive", children: null };
+    const obj16 = { variant: "text-md/semibold", lineClamp: 1, color: "status-positive", children: null };
     const intl = tmp8(1115).intl;
     const items5 = ["\u00A0", intl.string(tmp8(1115).t["pFO/Ph"])];
-    obj17.children = items5;
-    items4[1] = closure_12(tmp8(4825).Text, obj17);
-    obj16.children = items4;
-    tmp35 = closure_12(closure_13, obj16);
+    obj16.children = items5;
+    items4[1] = closure_12(tmp8(4832).Text, obj16);
+    obj15.children = items4;
+    tmp37 = closure_12(closure_13, obj15);
   }
-  const obj18 = { text: tmp35, style: null };
+  const obj17 = { text: tmp37, style: null };
   let labelCallScreen = null;
   if (isActionSheet) {
     labelCallScreen = tmp3.labelCallScreen;
   }
-  obj18.style = labelCallScreen;
-  obj15.label = closure_11(user(8045).FormRow.Label, obj18);
+  obj17.style = labelCallScreen;
+  obj14.label = closure_11(user(8053).FormRow.Label, obj17);
   if (localVideoAutoDisabled) {
-    const obj19 = { style: tmp2.autoDisabledVideo, children: null };
-    const obj20 = { source: tmp5(8894), size: tmp8(1177).Icon.Sizes.EXTRA_SMALL, disableColor: true };
-    const items6 = [tmp20(tmp8(1177).Icon, obj20), ];
-    const obj21 = { variant: "text-xs/medium", color: "text-default", style: tmp2.autoDisabledVideoLabel, children: null };
+    const obj18 = { style: tmp2.autoDisabledVideo, children: null };
+    const obj19 = { source: tmp5(8905), size: tmp8(1177).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const items6 = [tmp22(tmp8(1177).Icon, obj19), ];
+    const obj20 = { variant: "text-xs/medium", color: "text-default", style: tmp2.autoDisabledVideoLabel, children: null };
     const intl3 = tmp8(1115).intl;
-    obj21.children = intl3.string(tmp8(1115).t.m2Hyj0);
-    items6[1] = tmp20(tmp8(4825).Text, obj21);
-    obj19.children = items6;
-    let stringResult = closure_12(id, obj19);
+    obj20.children = intl3.string(tmp8(1115).t.m2Hyj0);
+    items6[1] = tmp22(tmp8(4832).Text, obj20);
+    obj18.children = items6;
+    let stringResult = closure_12(id, obj18);
   } else {
     stringResult = null;
     if (flag) {
@@ -365,8 +374,8 @@ let closure_16 = noop.memo((user) => {
       stringResult = intl2.string(tmp8(1115).t.IyYqqY);
     }
   }
-  obj15.subLabel = stringResult;
-  return closure_11(user(8045).FormRow, obj15);
+  obj14.subLabel = stringResult;
+  return closure_11(user(8053).FormRow, obj14);
 });
 let obj11 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 const memoResult = noop.memo(function DisconnectedUserRow(user) {
@@ -386,8 +395,8 @@ const memoResult = noop.memo(function DisconnectedUserRow(user) {
     return hasItem;
   }, items1);
   const obj = id(504);
-  const name = id2(4981).getName(id2.guild_id, id2.id, id);
-  const obj2 = id2(4981);
+  const name = id2(4988).getName(id2.guild_id, id2.id, id);
+  const obj2 = id2(4988);
   const obj4 = {
     onPress() {
       return dependencyMap(id);
@@ -396,21 +405,21 @@ const memoResult = noop.memo(function DisconnectedUserRow(user) {
     leading: null,
     trailing: null
   };
-  const canRing = id(9176).useCanRing(id);
+  const canRing = id(9187).useCanRing(id);
   const obj5 = { text: name, style: null };
   let labelCallScreen = null;
   if (isActionSheet) {
     labelCallScreen = tmp.labelCallScreen;
   }
   obj5.style = labelCallScreen;
-  obj4.label = closure_11(id(8045).FormRow.Label, obj5);
-  const obj3 = id(9176);
+  obj4.label = closure_11(id(8053).FormRow.Label, obj5);
+  const obj3 = id(9187);
   obj4.leading = closure_11(id(1177).Avatar, { user: id, guildId: id2.guild_id, size: id(1177).AvatarSizes.REFRESH_MEDIUM_32 });
   if (!canRing) {
     obj4.trailing = null;
     const obj7 = {};
     const merged = Object.assign(obj4);
-    return tmp7(tmp2(8045).FormRow, obj7);
+    return tmp7(tmp2(8053).FormRow, obj7);
   } else {
     const obj8 = { channelId: null, userId: null, isActionSheet: null };
     id2 = id2.id;

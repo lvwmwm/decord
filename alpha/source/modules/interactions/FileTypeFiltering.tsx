@@ -1,15 +1,15 @@
-// Module ID: 11626
-// Function ID: 11627
+// Module ID: 11640
+// Function ID: 11641
 // Name: FileTypeFiltering
-// Dependencies: [32, 19, 2111, 1364, 1115, 504, 5196, 2]
+// Dependencies: [32, 19, 2112, 1364, 1115, 504, 5203, 2]
 // Exports: getFileTypeFiltering, useFileTypeFiltering, useFileTypesFormattedString
 
-// Module 11626 (FileTypeFiltering)
+// Module 11640 (FileTypeFiltering)
 import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5196 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2111 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 
 const require = globalThis.__r;
 

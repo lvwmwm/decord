@@ -1,30 +1,30 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11365
+// Function ID: 11366
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7873, 7860, 1074, 21, 4829, 576, 4825, 504, 11345, 1484, 7861, 11350, 11346, 7859, 6539, 1115, 5274, 5931, 11352, 1249, 11366, 11368, 11370, 11372, 11373, 5905, 6416, 2]
+// Dependencies: [5, 32, 19, 17, 7881, 7868, 1074, 21, 4836, 576, 4832, 504, 11359, 1485, 7869, 11364, 11360, 7867, 6544, 1115, 5281, 5936, 11366, 1249, 11380, 11382, 11384, 11386, 11387, 5910, 6421, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11351 (AppealIngestionModal)
+// Module 11365 (AppealIngestionModal)
 import nativeDefault from "native" /* 576 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import Text_Text from "Text/Text" /* 4825 */;
-import NavigatorHeader from "NavigatorHeader" /* 5931 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11350 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11364 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7873 */;
+import SafetyHubStore from "SafetyHubStore" /* 7881 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const SafetyHubConstants = fn(7860);
+const SafetyHubConstants = fn(7868);
 ({ APPEAL_INGESTION_IMPRESSION_PROPERTIES: closure_9, AppealIngestionSections: c10 } = SafetyHubConstants);
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, headerContainer: { alignSelf: "stretch", marginTop: 16, marginBottom: 8, paddingHorizontal: 16 }, header: { marginBottom: 8, textAlign: "center" }, subheader: { lineHeight: 20, marginBottom: 8, textAlign: "center" }, separator: null, footerContainer: null, footerText: null, footerButton: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.separator = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 24 };
@@ -284,7 +284,7 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
               v2("");
               v2 = 2;
               c5 = 1;
-              const obj6 = { value: tmp27(11346).requestReview(tmp35, safetyHubAppealSignal, stateFromStores1), done: false };
+              const obj6 = { value: tmp27(11360).requestReview(tmp35, safetyHubAppealSignal, stateFromStores1), done: false };
               return obj6;
             }
           }
@@ -297,8 +297,8 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
             if (body != null) {
               code = body.code;
             }
-            closure_129_4(safetyHubAppealSignal(7859).getRequestReviewErrorFromCode(code));
-            const obj2 = safetyHubAppealSignal(7859);
+            closure_129_4(safetyHubAppealSignal(7867).getRequestReviewErrorFromCode(code));
+            const obj2 = safetyHubAppealSignal(7867);
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;

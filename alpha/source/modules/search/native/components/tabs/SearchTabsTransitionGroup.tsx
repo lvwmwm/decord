@@ -1,15 +1,15 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16541
+// Function ID: 16542
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 2020, 12093, 4563, 4537, 5273, 5277, 16402, 12093, 2]
+// Dependencies: [19, 21, 2021, 12111, 4566, 4540, 5280, 5284, 16431, 2]
 // Exports: default
 
-// Module 16512 (SearchTabsTransitionGroup)
-import native from "native" /* 4537 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import spring from "spring" /* 5273 */;
-import springPresets from "springPresets" /* 5277 */;
-import Tabs_Tabs from "Tabs/Tabs" /* 12093 */;
+// Module 16541 (SearchTabsTransitionGroup)
+import native from "native" /* 4540 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import spring from "spring" /* 5280 */;
+import springPresets from "springPresets" /* 5284 */;
+import Tabs_Tabs from "Tabs/Tabs" /* 12111 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -128,7 +128,7 @@ function AnimatedTabs(state) {
     tmp13 = callback1;
   }
   obj4.onEndDrag = tmp13;
-  obj3.children = context(state(cleanUp[9]).Tabs, obj4);
+  obj3.children = context(state(cleanUp[3]).Tabs, obj4);
   return context(transitionState(cleanUp[4]).View, obj3);
 }
 function renderItem(arg0, state, transitionState, cleanUp) {

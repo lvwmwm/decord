@@ -1,21 +1,21 @@
-// Module ID: 17290
-// Function ID: 17291
+// Module ID: 17320
+// Function ID: 17321
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 11327, 21, 4829, 9548, 1115, 5994, 4825, 5912, 6026, 17275, 5911, 2]
+// Dependencies: [32, 19, 17, 11341, 21, 4836, 9559, 1115, 5999, 4832, 5917, 6031, 17305, 5916, 2]
 // Exports: default
 
-// Module 17290 (MentionSpamTriggerFields)
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17275 */;
+// Module 17320 (MentionSpamTriggerFields)
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17305 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(11327);
+const Constants = fn(11341);
 ({ MAX_MENTION_SPAM_LIMIT: hasOwnProperty, MIN_MENTION_SPAM_LIMIT: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles({ limitField: { width: 52 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_automod/native/components/MentionSpamTriggerFields.tsx");
@@ -26,10 +26,10 @@ export default function MentionSpamTriggerFields(rule) {
   noop = undefined;
   ({ mentionTotalLimit, mentionRaidProtectionEnabled } = rule.triggerMetadata);
   const tmp = closure_9();
-  let isMentionRaidExperimentEnabled = rule(9548).useIsMentionRaidExperimentEnabled(rule.guildId, false);
+  let isMentionRaidExperimentEnabled = rule(9559).useIsMentionRaidExperimentEnabled(rule.guildId, false);
   const intl = rule(1115).intl;
   const stringResult = intl.string(rule(1115).t["s/26oQ"]);
-  let obj = rule(9548);
+  let obj = rule(9559);
   [tmp7, c3] = noop.useState(true);
   let obj2 = { title: null, hasIcons: false, helperText: null, children: null };
   const intl2 = rule(1115).intl;
@@ -40,7 +40,7 @@ export default function MentionSpamTriggerFields(rule) {
     const intl3 = tmp2(1115).intl;
     const obj4 = { minimum, maximum };
     obj3.children = intl3.formatToPlainString(tmp2(1115).t["8Y5zsp"], obj4);
-    tmp9 = closure_7(tmp2(4825).Text, obj3);
+    tmp9 = closure_7(tmp2(4832).Text, obj3);
   }
   obj2.helperText = tmp9;
   const obj5 = { label: stringResult, subLabel: null, trailing: null };
@@ -80,9 +80,9 @@ export default function MentionSpamTriggerFields(rule) {
     status: "error",
     accessibilityLabel: stringResult
   };
-  obj6.children = closure_7(rule(6026).TextField, obj7);
+  obj6.children = closure_7(rule(6031).TextField, obj7);
   obj5.trailing = closure_7(View, obj6);
-  const items = [closure_7(rule(5912).TableRow, obj5), ];
+  const items = [closure_7(rule(5917).TableRow, obj5), ];
   if (isMentionRaidExperimentEnabled) {
     const obj8 = { label: null, subLabel: null, checked: null, onPress: null };
     const intl5 = tmp2(1115).intl;
@@ -99,9 +99,9 @@ export default function MentionSpamTriggerFields(rule) {
       obj.triggerMetadata = obj2;
       return dependencyMap(obj);
     };
-    isMentionRaidExperimentEnabled = tmp13(tmp2(5911).TableCheckboxRow, obj8);
+    isMentionRaidExperimentEnabled = tmp13(tmp2(5916).TableCheckboxRow, obj8);
   }
   items[1] = isMentionRaidExperimentEnabled;
   obj2.children = items;
-  return closure_8(rule(5994).TableRowGroup, obj2);
+  return closure_8(rule(5999).TableRowGroup, obj2);
 };

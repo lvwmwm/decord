@@ -1,10 +1,10 @@
-// Module ID: 1877
-// Function ID: 1878
+// Module ID: 1878
+// Function ID: 1879
 // Name: readAppEntryWindowMetrics
 // Dependencies: [1342, 2]
 // Exports: readScreenSizeForAppEntry, readWindowSizeForAppEntry
 
-// Module 1877 (readAppEntryWindowMetrics)
+// Module 1878 (readAppEntryWindowMetrics)
 import NativeDeviceModuleDefault from "NativeDeviceModule" /* 1342 */;
 import size from "module_2" /* 2 */;
 

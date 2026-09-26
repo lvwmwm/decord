@@ -1,12 +1,12 @@
-// Module ID: 6641
-// Function ID: 6642
+// Module ID: 6646
+// Function ID: 6647
 // Name: GuildSpaceExperiment
-// Dependencies: [1074, 1434, 2]
+// Dependencies: [1074, 1435, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 6641 (GuildSpaceExperiment)
+// Module 6646 (GuildSpaceExperiment)
 import Constants from "Constants" /* 1074 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;

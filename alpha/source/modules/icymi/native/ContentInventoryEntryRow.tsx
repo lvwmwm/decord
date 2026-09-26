@@ -1,14 +1,14 @@
-// Module ID: 16115
-// Function ID: 16116
+// Module ID: 16143
+// Function ID: 16144
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 4476, 21, 504, 7579, 16116, 16125, 2]
+// Dependencies: [19, 4479, 21, 504, 7587, 16144, 16153, 2]
 // Exports: default
 
-// Module 16115 (ContentInventoryEntryRow)
-import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 16116 */;
-import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 16125 */;
+// Module 16143 (ContentInventoryEntryRow)
+import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 16144 */;
+import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 16153 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4476 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -27,9 +27,9 @@ export default function ContentInventoryEntryRow(content) {
     return null;
   } else {
     const content_type = content.content_type;
-    if (tmp(7579).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (tmp(7579).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (tmp(7579).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (tmp(7587).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (tmp(7587).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (tmp(7587).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           const obj2 = { content, renderForScreenshot: flag, visible: null };
           if (flag2 == null) {
             flag2 = false;

@@ -1,9 +1,9 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15615
+// Function ID: 15616
 // Name: typing
 // Dependencies: [2]
 
-// Module 15587 (typing)
+// Module 15615 (typing)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/remote_auth/typing.tsx");

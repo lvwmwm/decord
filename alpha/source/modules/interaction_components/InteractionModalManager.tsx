@@ -1,16 +1,16 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 17152
+// Function ID: 17153
 // Name: InteractionModalManager
-// Dependencies: [5, 5056, 7378, 1074, 1978, 17125, 1980, 1241, 2070, 1231, 17136, 17139, 6534, 2]
+// Dependencies: [5, 5063, 7383, 1074, 1979, 17153, 1981, 1241, 2071, 1231, 17164, 17167, 6539, 2]
 
-// Module 17124 (InteractionModalManager)
+// Module 17152 (InteractionModalManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17136 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17139 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17164 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17167 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5056 */;
-import InteractionStore from "InteractionStore" /* 7378 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
+import ApplicationStore from "ApplicationStore" /* 5063 */;
+import InteractionStore from "InteractionStore" /* 7383 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 let require = fn;
 let closure_8 = async function _handleInteractionModalCreate(arg0, value) {

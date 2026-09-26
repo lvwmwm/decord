@@ -1,15 +1,15 @@
-// Module ID: 10144
-// Function ID: 10145
+// Module ID: 10155
+// Function ID: 10156
 // Name: admin_editor_test_component
-// Dependencies: [32, 1187, 10122, 10132, 10123, 10124, 10130, 2]
+// Dependencies: [32, 1187, 10133, 10143, 10134, 10135, 10141, 2]
 
-// Module 10144 (admin_editor_test_component)
+// Module 10155 (admin_editor_test_component)
 import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 10122 */;
-import help_article from "help_article" /* 10123 */;
-import cta_button from "cta_button" /* 10124 */;
-import gradient from "gradient" /* 10130 */;
-import theme_aware_asset from "theme_aware_asset" /* 10132 */;
+import localized_string from "localized_string" /* 10133 */;
+import help_article from "help_article" /* 10134 */;
+import cta_button from "cta_button" /* 10135 */;
+import gradient from "gradient" /* 10141 */;
+import theme_aware_asset from "theme_aware_asset" /* 10143 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

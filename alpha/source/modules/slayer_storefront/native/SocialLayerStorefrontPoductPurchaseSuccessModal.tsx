@@ -1,28 +1,28 @@
-// Module ID: 10460
-// Function ID: 10461
+// Module ID: 10471
+// Function ID: 10472
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 718, 19, 17, 4821, 5817, 6645, 1074, 21, 4829, 576, 4563, 5273, 4830, 4797, 1478, 504, 5431, 6642, 4825, 5274, 1115, 5286, 6539, 5938, 5987, 8280, 6584, 6581, 10461, 6598, 1241, 5291, 10250, 3584, 8189, 4675, 2]
+// Dependencies: [32, 718, 19, 17, 4825, 5822, 6650, 1074, 21, 4836, 576, 4566, 5280, 4837, 4801, 1479, 504, 5438, 6647, 4832, 5281, 1115, 5293, 6544, 5943, 5992, 8288, 6589, 6586, 10472, 6603, 1241, 5298, 10262, 3585, 8197, 4678, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 10460 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 10471 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef3584 from "module_3584" /* 3584 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
-import UserUtilsDefault from "UserUtils" /* 4675 */;
-import HapticUtils from "HapticUtils" /* 4797 */;
-import timing from "timing" /* 4830 */;
-import spring from "spring" /* 5273 */;
-import XSmallIcon from "XSmallIcon" /* 5987 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6598 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6642 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10250 */;
+import _modDef3585 from "module_3585" /* 3585 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import timing from "timing" /* 4837 */;
+import spring from "spring" /* 5280 */;
+import XSmallIcon from "XSmallIcon" /* 5992 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6647 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10262 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _toArray from "_toArray" /* 718 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4821 */;
-import SKUStore from "SKUStore" /* 5817 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import SKUStore from "SKUStore" /* 5822 */;
 
 const require = globalThis.__r;
 
@@ -311,12 +311,12 @@ function PurchaseSuccessModalBase(sku) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, ScrollView: closure_7, View: closure_8 } = get_ActivityIndicator);
-const numDays = fn(6645).SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM;
+const numDays = fn(6650).SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, HorizontalGradient: map1, VerticalGradient: closure_14 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-let createStyles = fn(4829);
+let createStyles = fn(4836);
 let obj2 = { root: { flex: 1, backgroundColor: nativeDefault.colors.BLACK }, backdropImage: { position: "absolute", inset: 0, opacity: 0.45 }, backdropGradient: { position: "absolute", inset: 0 }, curtain: null, main: null, header: null, closeButtonIcon: null, scroll: null, body: null, bodyLandscape: null, preview: null, previewLandscape: null, messages: null, messagesLandscape: null, contentColumnLandscape: null, title: null, description: null, textLandscape: null, footer: null, footerLandscape: null, cta: null, ctaLandscape: null, finePrint: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BLACK };
 obj2.curtain = { position: "absolute", inset: 0, backgroundColor: nativeDefault.colors.BLACK };
@@ -351,7 +351,7 @@ obj2.ctaLandscape = { marginHorizontal: nativeDefault.space.PX_16 };
 let obj14 = { marginHorizontal: nativeDefault.space.PX_16 };
 obj2.finePrint = { textAlign: "center", marginHorizontal: nativeDefault.space.PX_24, marginBottom: nativeDefault.space.PX_12 };
 let closure_17 = createStyles.createStyles(obj2);
-createStyles = fn(4829);
+createStyles = fn(4836);
 let obj17 = { linkAccountIcon: null };
 let obj15 = { textAlign: "center", marginHorizontal: nativeDefault.space.PX_24, marginBottom: nativeDefault.space.PX_12 };
 obj17.linkAccountIcon = { marginRight: nativeDefault.space.PX_4 };
@@ -530,7 +530,7 @@ export const SocialLayerStorefrontProductSelfPurchaseSuccessModal = function Soc
           str = "";
         }
         const obj = { applicationName: str };
-        formatToPlainStringResult = formatToPlainString(_modDef3584.eNNnIG, obj);
+        formatToPlainStringResult = formatToPlainString(_modDef3585.eNNnIG, obj);
       }
     }
     return formatToPlainStringResult;

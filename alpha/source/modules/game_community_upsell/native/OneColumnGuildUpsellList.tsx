@@ -1,20 +1,20 @@
-// Module ID: 15877
-// Function ID: 15878
+// Module ID: 15905
+// Function ID: 15906
 // Name: OneColumnGuildUpsellList
-// Dependencies: [32, 19, 15150, 21, 4829, 8222, 1249, 1485, 504, 6578, 6598, 15878, 8171, 2]
+// Dependencies: [32, 19, 15178, 21, 4836, 8230, 1249, 1486, 504, 6583, 6603, 15906, 8179, 2]
 // Exports: OneColumnGuildUpsellList
 
-// Module 15877 (OneColumnGuildUpsellList)
-import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 15878 */;
+// Module 15905 (OneColumnGuildUpsellList)
+import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 15906 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15150 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15178 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
 const viewabilityConfig = { itemVisiblePercentThreshold: 50, minimumViewTime: 500 };
 let c8 = 0;
-const createStyles = fn(4829);
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles({ hidden: { opacity: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_community_upsell/native/OneColumnGuildUpsellList.tsx");

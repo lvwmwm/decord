@@ -1,25 +1,25 @@
-// Module ID: 15894
-// Function ID: 15895
+// Module ID: 15922
+// Function ID: 15923
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 2066, 5745, 15895, 15892, 4563, 551, 4797, 4682, 12, 1231, 1115, 6488, 15629, 4528, 576, 4449, 10445, 1248, 5827, 8651, 7354, 1364, 1612, 5259, 15896, 15897, 14603, 6068, 2]
+// Dependencies: [5, 19, 17, 2067, 5750, 15923, 15920, 4566, 551, 4801, 4685, 12, 1231, 1115, 6493, 15657, 4531, 576, 4452, 10456, 1248, 5832, 8659, 7359, 1364, 1613, 5266, 15924, 15925, 7359, 14628, 6073, 2]
 // Exports: default
 
-// Module 15894 (useGuildsBarGesture)
+// Module 15922 (useGuildsBarGesture)
 import util from "util" /* 1115 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4563 */;
-import shared from "shared" /* 4682 */;
-import HapticUtils from "HapticUtils" /* 4797 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5259 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6068 */;
-import FastList from "FastList" /* 6488 */;
-import ContextMenuState from "ContextMenuState" /* 7354 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10445 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
+import shared from "shared" /* 4685 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
+import FastList from "FastList" /* 6493 */;
+import ContextMenuState from "ContextMenuState" /* 7359 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import SortedGuildStore from "SortedGuildStore" /* 5745 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 15895 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 15923 */;
 import debounce from "debounce" /* 551 */;
 
 const require = globalThis.__r;
@@ -263,7 +263,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
       if (null != GUILDS) {
         const type = item.type;
         if (FastList.FastListItemTypes.SECTION !== type) {
-          if (tmp9(6488).FastListItemTypes.ITEM === type) {
+          if (tmp9(6493).FastListItemTypes.ITEM === type) {
             if (GUILDS.type !== GuildsNodeType.ROOT) {
               let tmp12 = GUILDS;
               if (GUILDS.type !== tmp11.FOLDER) {
@@ -279,19 +279,19 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
   }
 }
 const Dimensions = fn(17).Dimensions;
-const GuildsNodeType = fn(5745).GuildsNodeType;
-const GuildsBarConstants = fn(15892);
+const GuildsNodeType = fn(5750).GuildsNodeType;
+const GuildsBarConstants = fn(15920);
 ({ FastListRenderSections: c10, useGuildWrapperSize: closure_11 } = GuildsBarConstants);
 let c12 = 160;
 let c13 = 16.666666666666668;
 let __closure = { pan: null, itemMeasurements: null, activeIndex: null };
-let ReanimatedRexport = fn(4563);
+let ReanimatedRexport = fn(4566);
 __closure.pan = ReanimatedRexport.makeMutable(-1);
-ReanimatedRexport = fn(4563);
+ReanimatedRexport = fn(4566);
 __closure.itemMeasurements = ReanimatedRexport.makeMutable([]);
-ReanimatedRexport = fn(4563);
+ReanimatedRexport = fn(4566);
 __closure.activeIndex = ReanimatedRexport.makeMutable(-1);
-let closure_16 = debounce(fn(4797).triggerHapticFeedback, 16);
+let closure_16 = debounce(fn(4801).triggerHapticFeedback, 16);
 let closure_17 = debounce((intl) => {
   const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(intl);
@@ -468,7 +468,7 @@ export default function useGuildsBarGesture() {
           const type2 = item2.type;
           if (FastList.FastListItemTypes.SECTION === type2) {
             const type = item3.type;
-            if (tmp34(6488).FastListItemTypes.SECTION === type) {
+            if (tmp34(6493).FastListItemTypes.SECTION === type) {
               let str = "before";
               let str2 = "before";
               if (item3.section >= item2.section) {
@@ -605,7 +605,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state1.setStateShallow({ dragSpecs: "isArray", overSpecs: "paddingHorizontal" });
+    state1.setStateShallow({ dragSpecs: "Array", overSpecs: "paddingHorizontal" });
     value = gestureState.get();
     if (null != value.mode) {
       const obj11 = {};
@@ -788,10 +788,10 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(7354).ContextMenuStore;
+        const ContextMenuStore = tmp66(7359).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
-          tmp66(7354).hideContextMenu();
-          const tmp66Result = tmp66(7354);
+          tmp66(7359).hideContextMenu();
+          const tmp66Result = tmp66(7359);
         }
         node2 = node;
         overPercentage2 = overPercentage;
@@ -828,9 +828,9 @@ export default function useGuildsBarGesture() {
                 str3 = "self";
                 if (node3.id !== node2.id) {
                   const type2 = item3.type;
-                  if (tmp66(6488).FastListItemTypes.SECTION === type2) {
+                  if (tmp66(6493).FastListItemTypes.SECTION === type2) {
                     let type = item2.type;
-                    if (tmp66(6488).FastListItemTypes.SECTION === type) {
+                    if (tmp66(6493).FastListItemTypes.SECTION === type) {
                       const str5 = "self";
                       if (item2.recyclerKey !== item3.recyclerKey) {
                         let str6 = "after";
@@ -1004,7 +1004,7 @@ export default function useGuildsBarGesture() {
   }, items2);
   let obj7 = { gestureState, pushScrollAccumulatedTime: sharedValue1, MS_PER_FRAME_60FPS: frameCallback, pushScroll: sharedValue, scrollTo: gesture(token[7]).scrollTo, scrollerRef, roundToNearestPixel: require("roundToNearestPixel"), scrollPosition };
   const items3 = [callback4];
-  const onFastListScrollWorklet = gesture(token[29]).useExternalScrollEventHandler({ id: "guilds" });
+  const onFastListScrollWorklet = gesture(token[30]).useExternalScrollEventHandler({ id: "guilds" });
   const items4 = [dragDropInProgress, dragRegion, gestureState, callback3, handleGestureEnd, callback4, callback2, callback1, listInsets, scrollPosition, scrollerRef, windowSize, gesture];
   const onFastListScroll = fastListRef.useCallback(() => {
     gestureState = GuildsBarDnDStore.getState().gestureState;

@@ -1,15 +1,15 @@
-// Module ID: 6711
-// Function ID: 6712
+// Module ID: 6716
+// Function ID: 6717
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1372, 2022, 1186, 5730, 6712, 2020, 6713, 2]
+// Dependencies: [1372, 2023, 1186, 5735, 6717, 2021, 6718, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 6711 (SensitiveMediaExplicitRedactionSettingsUtils)
+// Module 6716 (SensitiveMediaExplicitRedactionSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import UserSettings from "UserSettings" /* 2020 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5730 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6712 */;
-import SensitiveMediaRedactionSettingUtils from "SensitiveMediaRedactionSettingUtils" /* 6713 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6717 */;
+import SensitiveMediaRedactionSettingUtils from "SensitiveMediaRedactionSettingUtils" /* 6718 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -61,7 +61,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
       if (!flag5) {
         const BLUR = tmp4(1186).ExplicitContentRedaction.BLUR;
       }
-      const ExplicitContentFilter2 = tmp4(2020).ExplicitContentFilter;
+      const ExplicitContentFilter2 = tmp4(2021).ExplicitContentFilter;
       const setting1 = ExplicitContentFilter2.getSetting();
     } else {
       let flag3 = isDm;
@@ -73,7 +73,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         flag4 = false;
       }
       if (flag3) {
-        const ExplicitContentFilter = tmp4(2020).ExplicitContentFilter;
+        const ExplicitContentFilter = tmp4(2021).ExplicitContentFilter;
         const setting2 = ExplicitContentFilter.getSetting();
         if (flag4) {
           let SHOW = obj[setting2];
@@ -87,7 +87,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
     }
   }
 }
-const ExplicitContentFilterTypes = fn(2022).ExplicitContentFilterTypes;
+const ExplicitContentFilterTypes = fn(2023).ExplicitContentFilterTypes;
 let obj = {};
 const DISABLED = ExplicitContentFilterTypes.DISABLED;
 obj[DISABLED.valueOf()] = fn(1186).ExplicitContentRedaction.SHOW;
@@ -143,7 +143,7 @@ export const resolveSettingWithDefaultsForTeen = function resolveSettingWithDefa
     flag2 = false;
   }
   if (flag) {
-    const ExplicitContentFilter = tmp(2020).ExplicitContentFilter;
+    const ExplicitContentFilter = tmp(2021).ExplicitContentFilter;
     const setting = ExplicitContentFilter.getSetting();
     if (flag2) {
       let tmp5 = obj3[setting];

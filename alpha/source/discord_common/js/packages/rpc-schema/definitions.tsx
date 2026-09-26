@@ -1,12 +1,12 @@
-// Module ID: 14015
-// Function ID: 14016
+// Module ID: 14040
+// Function ID: 14041
 // Name: definitions
-// Dependencies: [14016, 7779, 14017, 2]
+// Dependencies: [14041, 7787, 14042, 2]
 
-// Module 14015 (definitions)
-import OAuth2Scopes from "OAuth2Scopes" /* 7779 */;
-import helpers from "helpers" /* 14016 */;
-import contextMenuIcons from "contextMenuIcons" /* 14017 */;
+// Module 14040 (definitions)
+import OAuth2Scopes from "OAuth2Scopes" /* 7787 */;
+import helpers from "helpers" /* 14041 */;
+import contextMenuIcons from "contextMenuIcons" /* 14042 */;
 import size from "module_2" /* 2 */;
 
 function VoiceCapabilities(boolean) {

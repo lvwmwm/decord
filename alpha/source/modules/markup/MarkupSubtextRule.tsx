@@ -1,20 +1,20 @@
-// Module ID: 5326
-// Function ID: 5327
+// Module ID: 5333
+// Function ID: 5334
 // Name: MarkupSubtextRule
-// Dependencies: [1929, 2]
+// Dependencies: [1930, 2]
 
-// Module 5326 (MarkupSubtextRule)
-import _mod1929 from "module_1929" /* 1929 */;
+// Module 5333 (MarkupSubtextRule)
+import _mod1930 from "module_1930" /* 1930 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1929 = _mod1929;
+const _modDef1930 = _mod1930;
 
 const re2 = /\n$/;
 const re3 = /^ *-# +((?!-#)[^\n]+)(?:\n|$)/;
 const result = size.fileFinishedImporting("modules/markup/MarkupSubtextRule.tsx");
 
 export default {
-  order: _modDef1929.defaultRules.heading.order,
+  order: _modDef1930.defaultRules.heading.order,
   requiredFirstCharacters: ["-"],
   match(arg0, allowSubtext, str) {
     let tmp = null;
@@ -25,7 +25,7 @@ export default {
         }
         tmp = tmp4;
       }
-      tmp4 = _mod1929.anyScopeRegex(re3)(arg0, allowSubtext, str);
+      tmp4 = _mod1930.anyScopeRegex(re3)(arg0, allowSubtext, str);
     }
     return tmp;
   },
@@ -35,7 +35,7 @@ export default {
     const trimmed = arg0[1].trim();
     const merged = Object.assign(arg2);
     obj3.allowSubtext = false;
-    obj.content = _mod1929.parseInline(fn, trimmed, obj3);
+    obj.content = _mod1930.parseInline(fn, trimmed, obj3);
     return obj;
   }
 };

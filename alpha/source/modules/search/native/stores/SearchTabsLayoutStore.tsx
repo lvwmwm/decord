@@ -1,21 +1,21 @@
-// Module ID: 11831
-// Function ID: 11832
+// Module ID: 11845
+// Function ID: 11846
 // Name: SearchTabsLayoutStore
-// Dependencies: [11832, 2044, 6694, 11836, 11837, 11838, 11808, 7298, 558, 11809, 11835, 11834, 504, 573, 2]
+// Dependencies: [11846, 2045, 6699, 11850, 11851, 11852, 11822, 7303, 558, 11823, 11849, 11848, 504, 573, 2]
 
-// Module 11831 (SearchTabsLayoutStore)
+// Module 11845 (SearchTabsLayoutStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SearchUtils from "SearchUtils" /* 11809 */;
-import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11834 */;
-import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 11835 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11832 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SearchMessageStore from "SearchMessageStore" /* 6694 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11836 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 11837 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11838 */;
-import SearchQueryStore from "SearchQueryStore" /* 11808 */;
+import SearchUtils from "SearchUtils" /* 11823 */;
+import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11848 */;
+import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 11849 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SearchMessageStore from "SearchMessageStore" /* 6699 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11850 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 11851 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 11852 */;
+import SearchQueryStore from "SearchQueryStore" /* 11822 */;
 
 require = fn;
 function handleSearchQuery(searchContext) {
@@ -94,8 +94,8 @@ function computeLayoutForState(value) {
         const totalCount = SearchMessageStore.getTotalCount(SearchUtils.getSearchTabFetchId(searchContext, item, searchResultsQuery));
         let sum = null;
         if (null != totalCount) {
-          sum = totalCount + tmp8(11835).getIntelligenceSearchCitationsCount(tmp10, tmp11, totalCount > 0);
-          const tmp8Result = tmp8(11835);
+          sum = totalCount + tmp8(11849).getIntelligenceSearchCitationsCount(tmp10, tmp11, totalCount > 0);
+          const tmp8Result = tmp8(11849);
         }
         acc[item] = sum;
         tmp10 = searchContext;
@@ -194,7 +194,7 @@ function computeLayoutForAll() {
   }
   return flag;
 }
-const SearchConstants = fn(7298);
+const SearchConstants = fn(7303);
 ({ SearchTabs: c10, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: closure_11, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: closure_12 } = SearchConstants);
 let closure_13 = [];
 const map = new Map();

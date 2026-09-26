@@ -1,13 +1,13 @@
-// Module ID: 5431
-// Function ID: 5432
+// Module ID: 5438
+// Function ID: 5439
 // Name: useIsScreenLandscape
-// Dependencies: [19, 1479, 1481, 2]
+// Dependencies: [19, 1480, 1482, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 5431 (useIsScreenLandscape)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
+// Module 5438 (useIsScreenLandscape)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
 import noop from "module_19" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1479 */;
+import DimensionsStore from "DimensionsStore" /* 1480 */;
 
 require = fn;
 const size = fn(2);
