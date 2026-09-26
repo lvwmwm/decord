@@ -1,88 +1,21 @@
-// Module ID: 15607
-// Function ID: 15608
+// Module ID: 15611
+// Function ID: 15612
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 1078, 558, 568, 1395, 8473, 8470, 1245, 1396, 2]
+// Dependencies: [19, 1074, 1391, 8468, 8465, 1241, 1392, 2]
+// Exports: useDisplayNameStylesHandleApply
 
-// Module 15607 (useDisplayNameStylesHandleApply)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1395 */;
-import DisplayNameFont from "DisplayNameFont" /* 1396 */;
+// Module 15611 (useDisplayNameStylesHandleApply)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
+import DisplayNameFont from "DisplayNameFont" /* 1392 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const ReactCompilerGating = fn(558);
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
-export const useDisplayNameStylesHandleApply = ReactCompilerGating.isReactCompilerEnabled() ? ((hasChanges) => {
-  const cResult = hasChanges(selectedEffectId[3]).c(9);
-  hasChanges = hasChanges.hasChanges;
-  const selectedFontId = hasChanges.selectedFontId;
-  selectedEffectId = hasChanges.selectedEffectId;
-  const selectedColors = hasChanges.selectedColors;
-  const defaultColor = hasChanges.defaultColor;
-  const guildId = hasChanges.guildId;
-  const isTryItOut = hasChanges.isTryItOut;
-  const onClose = hasChanges.onClose;
-  if (cResult[0] === defaultColor) {
-    if (cResult[1] === guildId) {
-      if (cResult[2] === hasChanges) {
-        if (cResult[3] === isTryItOut) {
-          if (cResult[4] === onClose) {
-            if (cResult[5] === selectedColors) {
-              if (cResult[6] === selectedEffectId) {
-                if (cResult[7] === selectedFontId) {
-                  let tmp2 = cResult[8];
-                }
-                return tmp2;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  const fn = function l() {
-    if (hasChanges) {
-      let tmp4 = selectedEffectId === DisplayNameEffect.DisplayNameEffect.SOLID;
-      if (tmp4) {
-        tmp4 = arr.length > 0;
-      }
-      if (tmp4) {
-        tmp4 = arr[0] === defaultColor;
-      }
-      let items = arr;
-      if (tmp4) {
-        items = [];
-      }
-      const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
-      if (isTryItOut) {
-        const result = tmp2(8473).setTryItOutDisplayNameStyles(obj);
-        const tmp2Result = tmp2(8473);
-      } else {
-        const obj2 = { guildId, displayNameStyles: obj };
-        tmp2(8470).setPendingChanges(obj2);
-        const tmp2Result2 = tmp2(8470);
-      }
-      const obj3 = { font_name: DisplayNameFont.DisplayNameFont[selectedFontId], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
-      AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED, obj3);
-      if (onClose != null) {
-        onClose();
-      }
-    }
-  };
-  cResult[0] = defaultColor;
-  cResult[1] = guildId;
-  cResult[2] = hasChanges;
-  cResult[3] = isTryItOut;
-  cResult[4] = onClose;
-  cResult[5] = selectedColors;
-  cResult[6] = selectedEffectId;
-  cResult[7] = selectedFontId;
-  cResult[8] = fn;
-  tmp2 = fn;
-}) : ((hasChanges) => {
+export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;
   const selectedFontId = hasChanges.selectedFontId;
   const selectedEffectId = hasChanges.selectedEffectId;
@@ -107,12 +40,12 @@ export const useDisplayNameStylesHandleApply = ReactCompilerGating.isReactCompil
       }
       const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
       if (isTryItOut) {
-        const result = tmp2(8473).setTryItOutDisplayNameStyles(obj);
-        const tmp2Result = tmp2(8473);
+        const result = tmp2(8468).setTryItOutDisplayNameStyles(obj);
+        const tmp2Result = tmp2(8468);
       } else {
         const obj2 = { guildId, displayNameStyles: obj };
-        tmp2(8470).setPendingChanges(obj2);
-        const tmp2Result2 = tmp2(8470);
+        tmp2(8465).setPendingChanges(obj2);
+        const tmp2Result2 = tmp2(8465);
       }
       const obj3 = { font_name: DisplayNameFont.DisplayNameFont[selectedFontId], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
       AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED, obj3);
@@ -121,4 +54,4 @@ export const useDisplayNameStylesHandleApply = ReactCompilerGating.isReactCompil
       }
     }
   }, items);
-});
+};

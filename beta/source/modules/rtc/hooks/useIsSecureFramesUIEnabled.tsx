@@ -1,76 +1,48 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 10022
+// Function ID: 10023
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [2045, 4813, 9982, 558, 568, 504, 2]
+// Dependencies: [2041, 4811, 10004, 504, 2]
+// Exports: useIsSecureFramesUIEnabled
 
-// Module 10000 (useIsSecureFramesUIEnabled)
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+// Module 10022 (useIsSecureFramesUIEnabled)
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
 
 const require = fn;
-function isSecureFramesUIEnabled(isCallRTCConnectionEmpty, items) {
-  [obj, obj2] = items;
-  if (null == isCallRTCConnectionEmpty) {
-    return false;
-  } else if (obj.getChannelId() !== isCallRTCConnectionEmpty) {
-    return false;
-  } else {
-    const channel = obj2.getChannel(isCallRTCConnectionEmpty);
-    if (null != channel) {
-      if (!channel.isGuildStageVoice()) {
-        const secureFramesState = obj.getSecureFramesState();
-        let version;
-        if (secureFramesState != null) {
-          version = secureFramesState.version;
-        }
-        let tmp3 = null != version;
-        if (tmp3) {
-          tmp3 = version !== closure_4;
-        }
-        return tmp3;
-      }
-    }
-    return false;
-  }
-}
-let closure_4 = fn(9982).END_TO_END_ENCRYPTION_DISABLED;
-const ReactCompilerGating = fn(558);
+let closure_4 = fn(10004).END_TO_END_ENCRYPTION_DISABLED;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesUIEnabled.tsx");
 
-export const useIsSecureFramesUIEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  const cResult = channelId(568).c(4);
-  channelId = channelId.channelId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [RTCConnectionStore, ChannelStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    const fn = function l() {
-      const items = [RTCConnectionStore, ChannelStore];
-      return isSecureFramesUIEnabled(channelId, items);
-    };
-    const items1 = [channelId];
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp8 = items1;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const obj = channelId(568);
-  return channelId(504).useStateFromStores(first, tmp7, tmp8);
-}) : ((channelId) => {
+export const useIsSecureFramesUIEnabled = function useIsSecureFramesUIEnabled(channelId) {
   channelId = channelId.channelId;
   let items = [RTCConnectionStore, ChannelStore];
   const items1 = [channelId];
   return channelId(504).useStateFromStores(items, () => {
     const items = [RTCConnectionStore, ChannelStore];
-    return isSecureFramesUIEnabled(channelId, items);
+    [obj, obj2] = items;
+    let flag = false;
+    if (null != channelId) {
+      flag = false;
+      if (obj.getChannelId() === tmp) {
+        const channel = obj2.getChannel(tmp);
+        flag = false;
+        if (null != channel) {
+          flag = false;
+          if (!channel.isGuildStageVoice()) {
+            const secureFramesState = obj.getSecureFramesState();
+            let version;
+            if (secureFramesState != null) {
+              version = secureFramesState.version;
+            }
+            let tmp4 = null != version;
+            if (tmp4) {
+              tmp4 = version !== closure_4;
+            }
+            flag = tmp4;
+          }
+        }
+      }
+    }
+    return flag;
   }, items1);
-});
+};

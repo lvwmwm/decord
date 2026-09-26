@@ -1,9 +1,9 @@
 // Module ID: 11623
 // Function ID: 11624
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 11623
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 200, height: 104, scales: [1, 2, 3], hash: "2cffa7810dfc86e71c6793911cc4d14b", name: "img_invalid_link_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "bc68703a8162a8cd77c8d9dee0d592a8", name: "ic_input_clear_24px", type: "png" });

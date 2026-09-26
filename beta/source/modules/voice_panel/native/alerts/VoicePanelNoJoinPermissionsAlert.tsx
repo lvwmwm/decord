@@ -1,60 +1,21 @@
-// Module ID: 17621
-// Function ID: 17622
+// Module ID: 17656
+// Function ID: 17657
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 558, 568, 5148, 17622, 1119, 5148, 2]
+// Dependencies: [19, 21, 5146, 5146, 17657, 1115, 2]
+// Exports: default
 
-// Module 17621 (VoicePanelNoJoinPermissionsAlert)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5148 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17622 */;
+// Module 17656 (VoicePanelNoJoinPermissionsAlert)
+import util from "util" /* 1115 */;
+import AlertModal from "AlertModal" /* 5146 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17657 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNoJoinPermissionsAlert.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(6);
-  const dismissModalCallback = AlertModal.useDismissModalCallback();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp10 = jsx(VoicePanelLockedIconDefault, {});
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t["7/2/3M"]);
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t.xsenup);
-    cResult[0] = tmp10;
-    cResult[1] = stringResult;
-    cResult[2] = stringResult1;
-    tmp5 = tmp10;
-    tmp6 = stringResult;
-    tmp7 = stringResult1;
-  } else {
-    [tmp5, tmp6, tmp7] = cResult;
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1119).intl;
-    const stringResult2 = intl3.string(tmp(1119).t["NX+WJN"]);
-    cResult[3] = stringResult2;
-    let tmp13 = stringResult2;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] !== dismissModalCallback) {
-    const obj3 = { header: tmp5, title: tmp6, content: tmp7, actions: null };
-    const obj4 = { variant: "secondary", text: tmp13, onPress: dismissModalCallback };
-    obj3.actions = jsx(tmp(5148).AlertActionButton, { variant: "secondary", text: tmp13, onPress: dismissModalCallback });
-    const tmp17 = jsx(tmp(5148).AlertModal, { header: tmp5, title: tmp6, content: tmp7, actions: null });
-    cResult[4] = dismissModalCallback;
-    cResult[5] = tmp17;
-    let tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[5];
-  }
-  return tmp15;
-}) : (() => {
+export default function VoicePanelNoJoinPermissionsAlert() {
   const obj2 = { header: jsx(VoicePanelLockedIconDefault, {}), title: null, content: null, actions: null };
   const intl = util.intl;
   obj2.title = intl.string(util.t["7/2/3M"]);
@@ -66,5 +27,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj3.onPress = AlertModal.useDismissModalCallback();
   obj2.actions = jsx(AlertModal.AlertActionButton, { variant: "secondary", text: null, onPress: null });
   return jsx(AlertModal.AlertModal, { header: jsx(VoicePanelLockedIconDefault, {}), title: null, content: null, actions: null });
-});
+};
 export const VOICE_PANEL_NO_JOIN_PERMS_KEY = "voice-panel-no-join-perms";

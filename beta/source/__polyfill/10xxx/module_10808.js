@@ -1,16 +1,18 @@
 // Module ID: 10808
 // Function ID: 10809
-// Dependencies: [41, 42, 93, 95, 96, 98, 10778]
+// Dependencies: [41, 42, 93, 95, 98, 10728, 10809, 10755, 10735]
 
 // Module 10808
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10778 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10728 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import _mod10809 from "module_10809" /* 10809 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
+const PTWeekdayParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,15 +32,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let _classCallCheck = _classCallCheck_mod;
-class DETimeExpressionParser {
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(este|esta|passado|pr[o\u00F3]ximo)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10809.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(este|esta|passado|pr[\u00F3o]ximo)\\s*semana)?(?=\\W|\\d|$)", "i");
+class PTWeekdayParser {
   constructor() {
     self = this;
-    tmp = closure_0(this, DETimeExpressionParser);
-    tmp2 = c2;
-    obj = c2(DETimeExpressionParser);
-    tmp3 = closure_1;
-    if (closure_4()) {
+    tmp = c2(this, PTWeekdayParser);
+    tmp2 = closure_4;
+    obj = closure_4(PTWeekdayParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -51,38 +53,42 @@ class DETimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = DETimeExpressionParser;
-_inherits(DETimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(PTWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:um|von)\\s*)?";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|bis)\\s*";
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      let fnResult = null;
-      if (!str.match(/^\s*\d{4}\s*$/)) {
-        const self = this;
-        let fn = _get(_getPrototypeOf(_classCallCheck.prototype), "extractPrimaryTimeComponents", this);
-        if (typeof fn === "function") {
-          fn = (items) => fn.apply(self, items);
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const formatted = arg1[2].toLowerCase();
+      const tmp4 = PTWeekdayParser(10809).WEEKDAY_DICTIONARY[formatted];
+      if (undefined === tmp4) {
+        return null;
+      } else {
+        const formatted1 = arg1[1] || arg1[3] || "".toLowerCase();
+        let str5 = "this";
+        if ("passado" != formatted1) {
+          str5 = "next";
+          if ("pr\u00F3ximo" != formatted1) {
+            str5 = "next";
+            if ("proximo" != formatted1) {
+              str5 = null;
+              if ("este" == formatted1) {
+                str5 = "this";
+              }
+            }
+          }
         }
-        const items = [arg0, arg1];
-        fnResult = fn(items);
+        return tmp2(10755).createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
       }
-      return fnResult;
+      tmp2 = PTWeekdayParser;
     }
   }
 ];
 
-export default _createClass(DETimeExpressionParser, items);
+export default _createClass(PTWeekdayParser, items);

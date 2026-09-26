@@ -1,11 +1,11 @@
-// Module ID: 4643
-// Function ID: 4644
+// Module ID: 4640
+// Function ID: 4641
 // Name: design/shared
-// Dependencies: [2, 4504, 4513, 4514, 4515, 4510, 4518, 4519, 4520]
+// Dependencies: [2, 4499, 4508, 4509, 4510, 4505, 4513, 4514, 4515]
 
-// Module 4643 (design/shared)
+// Module 4640 (design/shared)
 import size from "module_2" /* 2 */;
-import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 4514 */;
+import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 4509 */;
 
 const require = globalThis.__r;
 

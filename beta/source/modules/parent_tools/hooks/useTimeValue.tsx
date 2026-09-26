@@ -1,52 +1,26 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15216
+// Function ID: 15217
 // Name: useTimeValue
-// Dependencies: [19, 558, 568, 2, 12986]
+// Dependencies: [19, 2, 10379]
+// Exports: default
 
-// Module 15212 (useTimeValue)
-import c from "c" /* 568 */;
+// Module 15216 (useTimeValue)
 import noop from "module_19" /* 19 */;
 
-require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useTimeValue.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((initial) => {
-  const cResult = c.c(3);
-  initial = initial.initial;
-  const defaultValue = initial.defaultValue;
-  if (cResult[0] === defaultValue) {
-    if (cResult[1] === initial) {
-      let tmp2 = cResult[2];
-    }
-    return noop.useState(tmp2);
-  }
-  const fn = function n() {
-    if (null != initial) {
-      const time = { hours: null, minutes: null };
-      ({ hours: obj.hours, minutes: obj.minutes } = initial);
-      let tmp2 = time;
-    } else {
-      tmp2 = defaultValue;
-    }
-    return tmp2;
-  };
-  cResult[0] = defaultValue;
-  cResult[1] = initial;
-  cResult[2] = fn;
-  tmp2 = fn;
-}) : ((arg0) => {
-  ({ initial: require, defaultValue: dependencyMap } = arg0);
+export default function useTimeValue(arg0) {
+  ({ initial: noop, defaultValue: closure_1 } = arg0);
   return noop.useState(() => {
-    if (null != require) {
+    if (null != noop) {
       const time = { hours: null, minutes: null };
-      ({ hours: obj.hours, minutes: obj.minutes } = require);
+      ({ hours: obj.hours, minutes: obj.minutes } = noop);
       let tmp2 = time;
     } else {
-      tmp2 = dependencyMap;
+      tmp2 = closure_1_1;
     }
     return tmp2;
   });
-});
-export const timeToMinutes = fn(12986).timeToMinutes;
+};
+export const timeToMinutes = fn(10379).timeToMinutes;

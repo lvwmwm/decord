@@ -1,79 +1,21 @@
-// Module ID: 17720
-// Function ID: 17721
+// Module ID: 17711
+// Function ID: 17712
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 1078, 558, 568, 5116, 5235, 1245, 2]
+// Dependencies: [19, 1074, 5235, 5114, 1241, 2]
+// Exports: default
 
-// Module 17720 (useCaptchaModalEffects)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+// Module 17711 (useCaptchaModalEffects)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const ReactCompilerGating = fn(558);
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/captcha/useCaptchaModalEffects.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
-  const cResult = onReject(568).c(6);
-  onReject = onReject.onReject;
-  const analyticsType = onReject.analyticsType;
-  let str = "Guild Join Captcha";
-  if (undefined !== analyticsType) {
-    str = analyticsType;
-  }
-  dependencyMap = noop.useRef(true);
-  if (cResult[0] !== onReject) {
-    const fn = function u() {
-      return () => {
-        if (ref.current) {
-          if (closure_1_0 != null) {
-            tmp(onReject(ref[4]).CaptchaError.CANCEL);
-          }
-        }
-      };
-    };
-    cResult[0] = onReject;
-    cResult[1] = fn;
-    let tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  str(5235)(tmp3);
-  if (cResult[2] !== str) {
-    const fn2 = function o() {
-      AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_MODAL, { type: str });
-      return () => {
-        if (ref.current) {
-          const obj2 = { type };
-          str(ref[6]).track(constants.MODAL_DISMISSED, obj2);
-          const obj = str(ref[6]);
-        }
-      };
-    };
-    const items = [str];
-    cResult[2] = str;
-    cResult[3] = fn2;
-    cResult[4] = items;
-    let tmp6 = items;
-    let tmp5 = fn2;
-  } else {
-    tmp5 = cResult[3];
-    tmp6 = cResult[4];
-  }
-  const effect = noop.useEffect(tmp5, tmp6);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function s() {
-      closure_2.current = false;
-    };
-    cResult[5] = fn3;
-    let tmp8 = fn3;
-  } else {
-    tmp8 = cResult[5];
-  }
-  return tmp8;
-}) : ((arg0) => {
+export default function useCaptchaModalEffects(arg0) {
   ({ onReject: require, analyticsType } = arg0);
   if (analyticsType === undefined) {
     analyticsType = "Guild Join Captcha";
@@ -92,12 +34,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
     return () => {
       if (ref.current) {
         const obj2 = { type };
-        analyticsType(ref[6]).track(constants.MODAL_DISMISSED, obj2);
-        const obj = analyticsType(ref[6]);
+        analyticsType(ref[4]).track(constants.MODAL_DISMISSED, obj2);
+        const obj = analyticsType(ref[4]);
       }
     };
   }, items);
   return () => {
     closure_2.current = false;
   };
-});
+};

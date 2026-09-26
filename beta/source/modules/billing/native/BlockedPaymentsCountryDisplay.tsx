@@ -1,98 +1,30 @@
-// Module ID: 11603
-// Function ID: 11604
+// Module ID: 11727
+// Function ID: 11728
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 4725, 1119, 1181, 2112, 4642, 11604, 11605, 2]
+// Dependencies: [19, 17, 1074, 21, 4788, 576, 4722, 1177, 1115, 2108, 4639, 11728, 11729, 2]
+// Exports: default
 
-// Module 11603 (BlockedPaymentsCountryDisplay)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import useThemeDefault from "useTheme" /* 4725 */;
+// Module 11727 (BlockedPaymentsCountryDisplay)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import useThemeDefault from "useTheme" /* 4722 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const HelpdeskArticles = fn(1078).HelpdeskArticles;
+const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { alignItems: "center" }, header: { fontSize: 20, fontWeight: "700", color: nativeDefault.colors.TEXT_SUBTLE, marginBottom: 16 }, image: { marginTop: 38 } };
 let closure_8 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj3 = { fontSize: 20, fontWeight: "700", color: nativeDefault.colors.TEXT_SUBTLE, marginBottom: 16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryDisplay.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(11);
-  const tmp4 = closure_8();
-  ({ container, header } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.vwMEHS);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.header) {
-    const obj2 = { style: header, children: first };
-    const tmp11 = timestampProducer(tmp(1181).LegacyText, obj2);
-    cResult[1] = tmp4.header;
-    cResult[2] = tmp11;
-    let tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { children: null };
-    const intl2 = tmp(1119).intl;
-    const obj4 = { helpdeskArticle: tmp5(2112).getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS) };
-    obj3.children = intl2.format(tmp(1119).t.IHxEJU, obj4);
-    const tmp15 = timestampProducer(tmp(1181).LegacyText, obj3);
-    cResult[3] = tmp15;
-    let tmp12 = tmp15;
-    const tmp5Result = tmp5(2112);
-  } else {
-    tmp12 = cResult[3];
-  }
-  const tmp6 = useThemeDefault();
-  if (tmpResult.isThemeDark(tmp6)) {
-    let tmp5Result2 = tmp5(11604);
-  } else {
-    tmp5Result2 = tmp5(11605);
-  }
-  if (cResult[4] === tmp4.image) {
-    if (cResult[5] === tmp5Result2) {
-      let tmp17 = cResult[6];
-    }
-    if (cResult[7] === tmp4.container) {
-      if (cResult[8] === tmp9) {
-        if (cResult[9] === tmp17) {
-          let tmp19 = cResult[10];
-        }
-        return tmp19;
-      }
-    }
-    const obj5 = { style: container, children: null };
-    const items = [tmp9, tmp12, tmp17];
-    obj5.children = items;
-    const tmp22 = React5(React3, obj5);
-    cResult[7] = tmp4.container;
-    cResult[8] = tmp9;
-    cResult[9] = tmp17;
-    cResult[10] = tmp22;
-    tmp19 = tmp22;
-  }
-  const tmp18 = timestampProducer(React4, { style: tmp4.image, source: tmp5Result2 });
-  cResult[4] = tmp4.image;
-  cResult[5] = tmp5Result2;
-  cResult[6] = tmp18;
-  tmp17 = tmp18;
-}) : (() => {
+export default function BlockedPaymentsCountryDisplay() {
   const tmp = closure_8();
   const obj = { style: tmp.container, children: null };
   const obj2 = { style: tmp.header, children: null };
@@ -112,12 +44,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj6 = { style: tmp.image, source: null };
   const tmp8 = React4;
   if (obj7.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11604);
+    let tmp2Result = tmp2(11728);
   } else {
-    tmp2Result = tmp2(11605);
+    tmp2Result = tmp2(11729);
   }
   obj6.source = tmp2Result;
   items[2] = tmp7(tmp8, obj6);
   obj.children = items;
   return tmp5(tmp6, obj);
-});
+};

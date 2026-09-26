@@ -1,83 +1,19 @@
 // Module ID: 6911
 // Function ID: 6912
-// Dependencies: [19, 1641, 6896, 6912]
-// Exports: useScrollable
+// Dependencies: [19, 6912]
+// Exports: useBottomSheetModal
 
 // Module 6911
-import normalizeSnapPoint from "normalizeSnapPoint" /* 6912 */;
-import noop from "module_19" /* 19 */;
+import _mod19 from "module_19" /* 19 */;
+import BottomSheetContext from "BottomSheetContext" /* 6912 */;
 
-const require = globalThis.__r;
+const useContext = _mod19.useContext;
 
-({ useCallback: c2, useRef: c3 } = noop);
-
-export const useScrollable = () => {
-  const tmp = closure_3(null);
-  _require = tmp;
-  dependencyMap = closure_3(null);
-  const sharedValue = require("cancelAnimation").useSharedValue(require("value2").SCROLLABLE_TYPE.UNDETERMINED);
-  const obj = require("cancelAnimation");
-  const sharedValue1 = require("cancelAnimation").useSharedValue(0);
-  const obj2 = require("cancelAnimation");
-  const sharedValue2 = require("cancelAnimation").useSharedValue(require("value2").SCROLLABLE_STATE.UNDETERMINED);
-  const obj3 = require("cancelAnimation");
-  const sharedValue3 = require("cancelAnimation").useSharedValue(false);
-  const obj4 = require("cancelAnimation");
-  const tmp6 = closure_2((id) => {
-    const current = ref.current;
-    id = undefined;
-    if (current != null) {
-      id = current.id;
-    }
-    if (id == null) {
-      id = null;
-    }
-    if (id !== id.id) {
-      if (tmp.current) {
-        closure_1.current = tmp.current;
-      }
-      tmp.current = id;
-    }
-  }, []);
-  return {
-    scrollableRef: tmp,
-    animatedScrollableType: sharedValue,
-    animatedScrollableContentOffsetY: sharedValue1,
-    animatedScrollableOverrideState: sharedValue2,
-    isScrollableRefreshable: sharedValue3,
-    setScrollableRef: closure_2((id) => {
-      const current = ref.current;
-      id = undefined;
-      if (current != null) {
-        id = current.id;
-      }
-      if (id == null) {
-        id = null;
-      }
-      if (id !== id.id) {
-        if (tmp.current) {
-          closure_1.current = tmp.current;
-        }
-        tmp.current = id;
-      }
-    }, []),
-    removeScrollableRef: closure_2((current) => {
-      try {
-        const findNodeHandleResult = normalizeSnapPoint.findNodeHandle(current.current);
-        current = ref.current;
-        let id;
-        if (current != null) {
-          id = current.id;
-        }
-        if (id == null) {
-          id = null;
-        }
-        if (findNodeHandleResult === id) {
-          ref.current = ref2.current;
-        }
-      } catch (err) {
-        return tmp;
-      }
-    }, [])
-  };
+export const useBottomSheetModal = () => {
+  const tmp = useContext(BottomSheetContext.BottomSheetModalContext);
+  if (null === tmp) {
+    throw "'BottomSheetModalContext' cannot be null!";
+  } else {
+    return tmp;
+  }
 };

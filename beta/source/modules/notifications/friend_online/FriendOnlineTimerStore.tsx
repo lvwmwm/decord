@@ -1,12 +1,12 @@
-// Module ID: 18281
-// Function ID: 18282
+// Module ID: 18272
+// Function ID: 18273
 // Name: FriendOnlineTimerStore
-// Dependencies: [1095, 504, 577, 2]
+// Dependencies: [1091, 504, 573, 2]
 
-// Module 18281 (FriendOnlineTimerStore)
+// Module 18272 (FriendOnlineTimerStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
 
 const HOUR = DurationsDefault.Millis.HOUR;
 const obj = { lastReportedAtMs: null };

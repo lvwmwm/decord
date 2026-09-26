@@ -1,9 +1,9 @@
 // Module ID: 3133
 // Function ID: 3134
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 3133
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/age_assurance", scales: [1], hash: "086e74643ecd0fece4104dc167969a56", name: "ManualReview.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hcHBsaWNhdGlvbl9hY2NvdW50X2xpbmtpbmc=", scales: [1], hash: "0751b35513d5b5e27c24453a1a147837", name: "da.messages.0751b35513d5b5e27c24453a1a147837.compiled.messages", type: "jsona" });

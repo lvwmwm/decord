@@ -1,9 +1,0 @@
-// Module ID: 14096
-// Function ID: 14097
-// Dependencies: [1125]
-
-// Module 14096
-import registerAsset from "module_1125" /* 1125 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "d8c1977b6a087b3b59e64fe8d7b24249", name: "ic_mic_muted_light_24px", type: "png" });

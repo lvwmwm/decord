@@ -1,11 +1,11 @@
-// Module ID: 17554
-// Function ID: 17555
+// Module ID: 17593
+// Function ID: 17594
 // Name: activityPlatformToConnectedAccountType
-// Dependencies: [1078, 2]
+// Dependencies: [1074, 2]
 // Exports: default
 
-// Module 17554 (activityPlatformToConnectedAccountType)
-import Constants from "Constants" /* 1078 */;
+// Module 17593 (activityPlatformToConnectedAccountType)
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ ActivityGamePlatforms: closure_0, PlatformTypes: closure_1 } = Constants);

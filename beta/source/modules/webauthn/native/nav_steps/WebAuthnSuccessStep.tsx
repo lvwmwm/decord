@@ -1,58 +1,22 @@
-// Module ID: 14980
-// Function ID: 14981
+// Module ID: 14984
+// Function ID: 14985
 // Name: WebAuthnSuccessStep
-// Dependencies: [19, 21, 558, 568, 1488, 5871, 14966, 14981, 1119, 2]
+// Dependencies: [19, 21, 1484, 5873, 14970, 14985, 1115, 2]
+// Exports: default
 
-// Module 14980 (WebAuthnSuccessStep)
-import NavigatorHeader from "NavigatorHeader" /* 5871 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14966 */;
-import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 14981 */;
+// Module 14984 (WebAuthnSuccessStep)
+import NavigatorHeader from "NavigatorHeader" /* 5873 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14970 */;
+import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 14985 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnSuccessStep.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = navigation(568).c(4);
-  let obj = navigation(568);
-  navigation = navigation(1488).useNavigation();
-  if (cResult[0] !== navigation) {
-    const fn = function s() {
-      const obj = {
-        headerLeft: NavigatorHeader.getHeaderCloseButton(() => {
-          navigation.popToTop();
-          const result = PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal();
-        })
-      };
-      navigation.setOptions(obj);
-    };
-    const items = [navigation];
-    cResult[0] = navigation;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp6 = items;
-    let tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  const layoutEffect = noop.useLayoutEffect(tmp5, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { onGenerate: null, headerLabel: null };
-    const intl = tmp(1119).intl;
-    obj3.headerLabel = intl.format(tmp(1119).t.iVTs6i, {});
-    const tmp12 = jsx(UserSettingsAccountBackupCodesDefault, { onGenerate: null, headerLabel: null });
-    cResult[3] = tmp12;
-    let tmp8 = tmp12;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (() => {
-  navigation = navigation(1488).useNavigation();
+export default function WebAuthnSuccessStep() {
+  navigation = navigation(1484).useNavigation();
   const items = [navigation];
   const layoutEffect = noop.useLayoutEffect(() => {
     const obj = {
@@ -64,8 +28,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     navigation.setOptions(obj);
   }, items);
   const obj2 = { onGenerate: null, headerLabel: null };
-  let obj = navigation(1488);
-  const intl = navigation(1119).intl;
-  obj2.headerLabel = intl.format(navigation(1119).t.iVTs6i, {});
+  let obj = navigation(1484);
+  const intl = navigation(1115).intl;
+  obj2.headerLabel = intl.format(navigation(1115).t.iVTs6i, {});
   return jsx(UserSettingsAccountBackupCodesDefault, { onGenerate: null, headerLabel: null });
-});
+};

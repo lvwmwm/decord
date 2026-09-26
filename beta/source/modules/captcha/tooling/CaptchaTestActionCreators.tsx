@@ -1,11 +1,11 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16002
+// Function ID: 16003
 // Name: CaptchaTestActionCreators
-// Dependencies: [5, 1078, 1275, 2]
+// Dependencies: [5, 1074, 1271, 2]
 // Exports: testCaptcha
 
-// Module 15998 (CaptchaTestActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 16002 (CaptchaTestActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -23,7 +23,7 @@ let closure_4 = async function _testCaptcha(decider, options) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -55,7 +55,7 @@ let closure_4 = async function _testCaptcha(decider, options) {
           return obj;
         } else {
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c2 = tmp;
@@ -64,7 +64,7 @@ let closure_4 = async function _testCaptcha(decider, options) {
     }
   })();
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/captcha/tooling/CaptchaTestActionCreators.tsx");
 

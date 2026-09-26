@@ -1,16 +1,16 @@
-// Module ID: 18313
-// Function ID: 18314
+// Module ID: 18304
+// Function ID: 18305
 // Name: AVErrorStreamBadNetworkQuality
-// Dependencies: [4829, 1078, 9713, 18306, 1374, 2]
+// Dependencies: [4827, 1074, 9718, 18297, 1370, 2]
 
-// Module 18313 (AVErrorStreamBadNetworkQuality)
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import AVError from "AVError" /* 9713 */;
-import AVErrorContext from "AVErrorContext" /* 18306 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4829 */;
+// Module 18304 (AVErrorStreamBadNetworkQuality)
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import AVError from "AVError" /* 9718 */;
+import AVErrorContext from "AVErrorContext" /* 18297 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4827 */;
 
 require = fn;
-const RTCConnectionQuality = fn(1078).RTCConnectionQuality;
+const RTCConnectionQuality = fn(1074).RTCConnectionQuality;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamBadNetworkQuality.tsx");
 

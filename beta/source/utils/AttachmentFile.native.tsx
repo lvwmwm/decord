@@ -1,14 +1,14 @@
-// Module ID: 5387
-// Function ID: 5388
+// Module ID: 5385
+// Function ID: 5386
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 5378, 5388, 5379, 2]
+// Dependencies: [5, 3, 38, 5376, 5386, 5377, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 5387 (AttachmentFile)
+// Module 5385 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import Upload from "Upload" /* 5378 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5388 */;
+import Upload from "Upload" /* 5376 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5386 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -29,7 +29,7 @@ let closure_5 = async function _getAttachmentFile(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -136,7 +136,7 @@ let closure_6 = async function _cancelGetAttachmentFile(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -164,7 +164,7 @@ let closure_6 = async function _cancelGetAttachmentFile(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp8) {
       c1 = tmp;

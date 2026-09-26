@@ -1,10 +1,10 @@
-// Module ID: 1330
-// Function ID: 1331
+// Module ID: 1326
+// Function ID: 1327
 // Name: convertSkemaError
 // Dependencies: [2]
 // Exports: convertSkemaError
 
-// Module 1330 (convertSkemaError)
+// Module 1326 (convertSkemaError)
 import size from "module_2" /* 2 */;
 
 const _errors = "_errors";

@@ -1,16 +1,16 @@
-// Module ID: 4679
-// Function ID: 4680
+// Module ID: 4676
+// Function ID: 4677
 // Name: GuildPowerupsStore
-// Dependencies: [32, 2067, 4680, 1078, 504, 577, 2]
+// Dependencies: [32, 2063, 4677, 1074, 504, 573, 2]
 
-// Module 4679 (GuildPowerupsStore)
+// Module 4676 (GuildPowerupsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 function calculateAppliedBoosts(guildId) {
-  guild = GuildStore.getGuild(guildId);
+  const guild = GuildStore.getGuild(guildId);
   let hasItem;
   if (guild != null) {
     const features = guild.features;
@@ -71,9 +71,9 @@ function calculateAppliedBoosts(guildId) {
   }
   return sum;
 }
-const GuildPowerupsConstants = fn(4680);
+const GuildPowerupsConstants = fn(4677);
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_PURCHASABLE_FEATURES: c2, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: c3 } = GuildPowerupsConstants);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_4, BoostedGuildTiers: hasOwnProperty, GuildFeatures: metroRequire } = Constants);
 const PersistedStore = initializeDefault.PersistedStore;
 class GuildPowerupsStore extends PersistedStore {

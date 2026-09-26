@@ -1,21 +1,20 @@
-// Module ID: 16203
-// Function ID: 16204
+// Module ID: 16207
+// Function ID: 16208
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [2067, 16193, 8270, 11631, 558, 568, 16204, 15094, 2023, 5142, 1119, 5239, 16205, 8719, 8721, 7273, 16196, 11630, 2]
+// Dependencies: [2063, 16197, 8265, 11755, 16208, 15098, 2019, 5140, 1115, 5237, 16209, 8714, 8716, 7272, 16200, 11754, 2]
 
-// Module 16203 (SafetyGuildSettingMessageRequests)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
-import common_AlertDefault from "common/Alert" /* 5239 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15094 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16196 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16204 */;
-import GuildStore from "GuildStore" /* 2067 */;
+// Module 16207 (SafetyGuildSettingMessageRequests)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8714 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8716 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16200 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16208 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 function showMessageRequestRestrictionModal(arg0) {
@@ -47,138 +46,10 @@ function showMessageRequestRestrictionModal(arg0) {
   };
   AlertActionCreatorsDefault.show(obj2);
 }
-const UserSettingsSafetySelectedGuildStore = fn(16193);
+const UserSettingsSafetySelectedGuildStore = fn(16197);
 ({ getSelectedGuildId: closure_4, useUserSafetySettingsSelectedGuildStore: hasOwnProperty } = UserSettingsSafetySelectedGuildStore);
-let closure_6 = fn(11631).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
-fn(558);
-const ReactCompilerGating = fn(558);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const defaultGuildsRestricted = DefultGuildsRestrictedSetting.useDefaultGuildsRestricted();
-  const selectedGuildId = hasOwnProperty().selectedGuildId;
-  const RestrictedGuildIds = UserSettings.RestrictedGuildIds;
-  const setting = RestrictedGuildIds.useSetting();
-  if (cResult[0] === selectedGuildId) {
-    if (cResult[1] === setting) {
-      let tmp5 = cResult[2];
-    }
-    const isParentallyControlled = tmp(15094).useIsParentallyControlled();
-    const tmpResult = tmp(15094);
-    let shouldDisableMessageRequestSettings = tmp(16204).useShouldDisableMessageRequestSettings();
-    if (!shouldDisableMessageRequestSettings) {
-      let tmp10 = selectedGuildId !== closure_6;
-      if (!tmp10) {
-        tmp10 = !isParentallyControlled;
-      }
-      let tmp11 = !tmp10;
-      if (tmp10) {
-        if (selectedGuildId === tmp9) {
-          tmp5 = defaultGuildsRestricted;
-        }
-        tmp11 = tmp5;
-      }
-      shouldDisableMessageRequestSettings = tmp11;
-      tmp9 = closure_6;
-    }
-    return shouldDisableMessageRequestSettings;
-  }
-  const hasItem = setting.includes(selectedGuildId);
-  cResult[0] = selectedGuildId;
-  cResult[1] = setting;
-  cResult[2] = hasItem;
-  tmp5 = hasItem;
-}) : (() => {
-  const defaultGuildsRestricted = DefultGuildsRestrictedSetting.useDefaultGuildsRestricted();
-  const selectedGuildId = hasOwnProperty().selectedGuildId;
-  const RestrictedGuildIds = UserSettings.RestrictedGuildIds;
-  const setting = RestrictedGuildIds.useSetting();
-  let hasItem = setting.includes(selectedGuildId);
-  const isParentallyControlled = useParentalControlSettings.useIsParentallyControlled();
-  let shouldDisableMessageRequestSettings = useShouldDisableMessageRequestSettings.useShouldDisableMessageRequestSettings();
-  if (!shouldDisableMessageRequestSettings) {
-    let tmp6 = selectedGuildId !== closure_6;
-    if (!tmp6) {
-      tmp6 = !isParentallyControlled;
-    }
-    let tmp7 = !tmp6;
-    if (tmp6) {
-      if (selectedGuildId === tmp5) {
-        hasItem = defaultGuildsRestricted;
-      }
-      tmp7 = hasItem;
-    }
-    shouldDisableMessageRequestSettings = tmp7;
-    tmp5 = closure_6;
-  }
-  return shouldDisableMessageRequestSettings;
-});
-let closure_8 = tmp4;
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const selectedGuildId = hasOwnProperty().selectedGuildId;
-  const tmp2 = closure_8();
-  const shouldDisableMessageRequestSettings = useShouldDisableMessageRequestSettings.useShouldDisableMessageRequestSettings();
-  const isParentallyControlled = useParentalControlSettings.useIsParentallyControlled();
-  const MessageRequestRestrictedDefault = UserSettings.MessageRequestRestrictedDefault;
-  let tmp5 = !MessageRequestRestrictedDefault.useSetting();
-  const MessageRequestRestrictedGuildIds = UserSettings.MessageRequestRestrictedGuildIds;
-  const setting = MessageRequestRestrictedGuildIds.useSetting();
-  if (cResult[0] === selectedGuildId) {
-    if (cResult[1] === setting) {
-      let tmp6 = cResult[2];
-    }
-    let tmp8 = shouldDisableMessageRequestSettings;
-    if (!tmp8) {
-      if (selectedGuildId !== closure_6) {
-        let tmp12 = !tmp2;
-        if (!tmp2) {
-          if (!tmp10) {
-            tmp5 = !tmp6;
-          }
-          tmp12 = tmp5;
-        }
-        let tmp11 = tmp12;
-      } else {
-        tmp11 = tmp5;
-      }
-      tmp8 = tmp11;
-    }
-    return tmp8;
-  }
-  const hasItem = setting.includes(selectedGuildId);
-  cResult[0] = selectedGuildId;
-  cResult[1] = setting;
-  cResult[2] = hasItem;
-  tmp6 = hasItem;
-}) : (() => {
-  const selectedGuildId = hasOwnProperty().selectedGuildId;
-  const tmp = closure_8();
-  const shouldDisableMessageRequestSettings = useShouldDisableMessageRequestSettings.useShouldDisableMessageRequestSettings();
-  const isParentallyControlled = useParentalControlSettings.useIsParentallyControlled();
-  const MessageRequestRestrictedDefault = UserSettings.MessageRequestRestrictedDefault;
-  const tmp4 = !MessageRequestRestrictedDefault.useSetting();
-  const MessageRequestRestrictedGuildIds = UserSettings.MessageRequestRestrictedGuildIds;
-  const setting = MessageRequestRestrictedGuildIds.useSetting();
-  let tmp5 = !setting.includes(selectedGuildId);
-  let tmp6 = shouldDisableMessageRequestSettings;
-  if (!tmp6) {
-    if (selectedGuildId !== closure_6) {
-      let tmp10 = !tmp;
-      if (!tmp) {
-        if (tmp8) {
-          tmp5 = tmp4;
-        }
-        tmp10 = tmp5;
-      }
-      let tmp9 = tmp10;
-    } else {
-      tmp9 = tmp4;
-    }
-    tmp6 = tmp9;
-  }
-  return tmp6;
-});
+let closure_6 = fn(11755).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -188,73 +59,82 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.o5fjz6);
   },
-  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(3);
+  parent: fn(8265).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue() {
     const selectedGuildId = hasOwnProperty().selectedGuildId;
-    const tmp2 = closure_8();
-    const shouldDisableMessageRequestSettings = useShouldDisableMessageRequestSettings.useShouldDisableMessageRequestSettings();
+    const defaultGuildsRestricted = DefultGuildsRestrictedSetting.useDefaultGuildsRestricted();
+    const selectedGuildId2 = hasOwnProperty().selectedGuildId;
+    const RestrictedGuildIds = UserSettings.RestrictedGuildIds;
+    const setting = RestrictedGuildIds.useSetting();
+    let hasItem = setting.includes(selectedGuildId2);
     const isParentallyControlled = useParentalControlSettings.useIsParentallyControlled();
-    const MessageRequestRestrictedDefault = UserSettings.MessageRequestRestrictedDefault;
-    let tmp5 = !MessageRequestRestrictedDefault.useSetting();
-    const MessageRequestRestrictedGuildIds = UserSettings.MessageRequestRestrictedGuildIds;
-    const setting = MessageRequestRestrictedGuildIds.useSetting();
-    if (cResult[0] === selectedGuildId) {
-      if (cResult[1] === setting) {
-        let tmp6 = cResult[2];
-      }
-      let tmp8 = shouldDisableMessageRequestSettings;
+    let shouldDisableMessageRequestSettings1 = useShouldDisableMessageRequestSettings.useShouldDisableMessageRequestSettings();
+    if (!shouldDisableMessageRequestSettings1) {
+      let tmp8 = selectedGuildId2 !== closure_6;
       if (!tmp8) {
-        if (selectedGuildId !== closure_6) {
-          let tmp12 = !tmp2;
-          if (!tmp2) {
-            if (!tmp10) {
-              tmp5 = !tmp6;
-            }
-            tmp12 = tmp5;
-          }
-          let tmp11 = tmp12;
-        } else {
-          tmp11 = tmp5;
-        }
-        tmp8 = tmp11;
+        tmp8 = !isParentallyControlled;
       }
-      return tmp8;
+      let tmp9 = !tmp8;
+      if (tmp8) {
+        if (selectedGuildId2 === tmp7) {
+          hasItem = defaultGuildsRestricted;
+        }
+        tmp9 = hasItem;
+      }
+      shouldDisableMessageRequestSettings1 = tmp9;
+      tmp7 = closure_6;
     }
-    const hasItem = setting.includes(selectedGuildId);
-    cResult[0] = selectedGuildId;
-    cResult[1] = setting;
-    cResult[2] = hasItem;
-    tmp6 = hasItem;
-  }) : (() => {
-    const selectedGuildId = hasOwnProperty().selectedGuildId;
-    const tmp = closure_8();
     const shouldDisableMessageRequestSettings = useShouldDisableMessageRequestSettings.useShouldDisableMessageRequestSettings();
-    const isParentallyControlled = useParentalControlSettings.useIsParentallyControlled();
-    const MessageRequestRestrictedDefault = UserSettings.MessageRequestRestrictedDefault;
-    const tmp4 = !MessageRequestRestrictedDefault.useSetting();
-    const MessageRequestRestrictedGuildIds = UserSettings.MessageRequestRestrictedGuildIds;
-    const setting = MessageRequestRestrictedGuildIds.useSetting();
-    let tmp5 = !setting.includes(selectedGuildId);
-    let tmp6 = shouldDisableMessageRequestSettings;
-    if (!tmp6) {
+    const tmpResult = useShouldDisableMessageRequestSettings;
+    const isParentallyControlled1 = useParentalControlSettings.useIsParentallyControlled();
+    const MessageRequestRestrictedDefault = tmp(2019).MessageRequestRestrictedDefault;
+    const tmp12 = !MessageRequestRestrictedDefault.useSetting();
+    const MessageRequestRestrictedGuildIds = tmp(2019).MessageRequestRestrictedGuildIds;
+    const setting1 = MessageRequestRestrictedGuildIds.useSetting();
+    let tmp13 = !setting1.includes(selectedGuildId);
+    let tmp14 = shouldDisableMessageRequestSettings;
+    if (!tmp14) {
       if (selectedGuildId !== closure_6) {
-        let tmp10 = !tmp;
-        if (!tmp) {
-          if (tmp8) {
-            tmp5 = tmp4;
+        let tmp18 = !shouldDisableMessageRequestSettings1;
+        if (!shouldDisableMessageRequestSettings1) {
+          if (tmp16) {
+            tmp13 = tmp12;
           }
-          tmp10 = tmp5;
+          tmp18 = tmp13;
         }
-        let tmp9 = tmp10;
+        let tmp17 = tmp18;
       } else {
-        tmp9 = tmp4;
+        tmp17 = tmp12;
       }
-      tmp6 = tmp9;
+      tmp14 = tmp17;
     }
-    return tmp6;
-  }),
-  useIsDisabled: tmp4,
+    return tmp14;
+  },
+  useIsDisabled() {
+    const defaultGuildsRestricted = DefultGuildsRestrictedSetting.useDefaultGuildsRestricted();
+    const selectedGuildId = hasOwnProperty().selectedGuildId;
+    const RestrictedGuildIds = UserSettings.RestrictedGuildIds;
+    const setting = RestrictedGuildIds.useSetting();
+    let hasItem = setting.includes(selectedGuildId);
+    const isParentallyControlled = useParentalControlSettings.useIsParentallyControlled();
+    let shouldDisableMessageRequestSettings = useShouldDisableMessageRequestSettings.useShouldDisableMessageRequestSettings();
+    if (!shouldDisableMessageRequestSettings) {
+      let tmp6 = selectedGuildId !== closure_6;
+      if (!tmp6) {
+        tmp6 = !isParentallyControlled;
+      }
+      let tmp7 = !tmp6;
+      if (tmp6) {
+        if (selectedGuildId === tmp5) {
+          hasItem = defaultGuildsRestricted;
+        }
+        tmp7 = hasItem;
+      }
+      shouldDisableMessageRequestSettings = tmp7;
+      tmp5 = closure_6;
+    }
+    return shouldDisableMessageRequestSettings;
+  },
   onValueChange: function onAllowMessageRequestsFromServerMembersValueChange(arg0) {
     if (!arg0) {
       if (obj.shouldAgeVerifyForDMDefaultOff()) {

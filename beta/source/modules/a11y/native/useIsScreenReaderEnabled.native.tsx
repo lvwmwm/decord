@@ -1,13 +1,12 @@
-// Module ID: 5205
-// Function ID: 5206
+// Module ID: 5203
+// Function ID: 5204
 // Name: useIsScreenReaderEnabled
-// Dependencies: [17, 510, 562, 1252, 558, 2]
+// Dependencies: [17, 510, 560, 1248, 2]
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled
 
-// Module 5205 (useIsScreenReaderEnabled)
+// Module 5203 (useIsScreenReaderEnabled)
 import _mod17 from "module_17" /* 17 */;
-import module_562 from "module_562" /* 562 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,11 +16,11 @@ function SCREEN_READER_ENABLED_GETTER(screenReaderEnabled) {
   return screenReaderEnabled.screenReaderEnabled;
 }
 let screenReaderEnabled = "screenReaderEnabled";
-let closure_5 = module_562.create((arg0) => {
+let closure_5 = module_560.create((arg0) => {
   _require = arg0;
   function updateScreenReaderEnabled(event) {
     closure_0 = event;
-    closure_0(1252).batchUpdates(() => closure_0((screenReaderEnabled) => {
+    closure_0(1248).batchUpdates(() => closure_0((screenReaderEnabled) => {
       let tmp = screenReaderEnabled;
       if (screenReaderEnabled.screenReaderEnabled !== closure_1_0) {
         const Storage = closure_0(510).Storage;
@@ -35,7 +34,7 @@ let closure_5 = module_562.create((arg0) => {
   let result = AccessibilityInfo.isScreenReaderEnabled();
   result.then(updateScreenReaderEnabled).catch(() => {
     c0 = false;
-    closure_0(1252).batchUpdates(() => closure_0((screenReaderEnabled) => {
+    closure_0(1248).batchUpdates(() => closure_0((screenReaderEnabled) => {
       let tmp = screenReaderEnabled;
       if (screenReaderEnabled.screenReaderEnabled !== closure_1_0) {
         const Storage = closure_0(510).Storage;
@@ -54,9 +53,7 @@ let closure_5 = module_562.create((arg0) => {
   }
   return { screenReaderEnabled };
 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
+let result = size.fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
 
 export const addScreenReaderEnabledListener = function addScreenReaderEnabledListener(arg0) {
   closure_0 = arg0;
@@ -67,4 +64,6 @@ export const addScreenReaderEnabledListener = function addScreenReaderEnabledLis
 export const getIsScreenReaderEnabled = function getIsScreenReaderEnabled() {
   return closure_5.getState().screenReaderEnabled;
 };
-export const useIsScreenReaderEnabled = () => closure_5(SCREEN_READER_ENABLED_GETTER);
+export const useIsScreenReaderEnabled = function useIsScreenReaderEnabled() {
+  return closure_5(SCREEN_READER_ENABLED_GETTER);
+};

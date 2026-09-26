@@ -1,14 +1,9 @@
 // Module ID: 6925
 // Function ID: 6926
-// Dependencies: [6926]
-// Exports: initialize
+// Dependencies: [17]
 
 // Module 6925
-import _mod6926 from "module_6926" /* 6926 */;
+import _mod17 from "module_17" /* 17 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const initialize = function initialize() {
-  _mod6926.startListening();
-};
+export const findNodeHandle = _mod17.findNodeHandle;

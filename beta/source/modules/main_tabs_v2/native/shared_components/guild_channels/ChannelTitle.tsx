@@ -1,82 +1,27 @@
-// Module ID: 17145
-// Function ID: 17146
+// Module ID: 17135
+// Function ID: 17136
 // Name: guild_channels/ChannelTitle
-// Dependencies: [19, 4972, 21, 4790, 580, 558, 568, 12250, 4786, 2]
+// Dependencies: [19, 4970, 21, 4788, 576, 10416, 4784, 2]
 
-// Module 17145 (guild_channels/ChannelTitle)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4786 */;
+// Module 17135 (guild_channels/ChannelTitle)
+import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
-const UnreadSetting = fn(4972).UnreadSetting;
+const require = fn;
+const UnreadSetting = fn(4970).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_5 = createStyles.createStyleProperties({ muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT });
-const ReactCompilerGating = fn(558);
 const obj = { muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelTitle.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(8);
-  ({ title, unread, layout, muted, resolvedUnreadSetting, connected } = arg0);
-  if (cResult[0] !== layout) {
-    const layoutStyles = tmp(12250).getLayoutStyles(layout);
-    cResult[0] = layout;
-    cResult[1] = layoutStyles;
-    let tmp4 = layoutStyles;
-    const tmpResult = tmp(12250);
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmp6 = closure_5();
-  let unreadOrConnected = tmp6.normal;
-  if (muted) {
-    unreadOrConnected = tmp6.muted;
-  } else {
-    if (unread) {
-      unread = resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES;
-    }
-    if (!unread) {
-      unread = connected;
-    }
-    if (unread) {
-      unreadOrConnected = tmp6.unreadOrConnected;
-    }
-  }
-  if (cResult[2] !== unreadOrConnected) {
-    const obj2 = { color: unreadOrConnected, paddingRight: 4, flexShrink: 1 };
-    cResult[2] = unreadOrConnected;
-    cResult[3] = obj2;
-    let tmp8 = obj2;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (title == null) {
-    title = "";
-  }
-  if (cResult[4] === tmp4.channelName.text.variant) {
-    if (cResult[5] === tmp8) {
-      if (cResult[6] === title) {
-        let tmp9 = cResult[7];
-      }
-      return tmp9;
-    }
-  }
-  const tmp10 = jsx(Text_Text.Text, { variant: tmp4.channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: tmp8, children: title });
-  cResult[4] = tmp4.channelName.text.variant;
-  cResult[5] = tmp8;
-  cResult[6] = title;
-  cResult[7] = tmp10;
-  tmp9 = tmp10;
-}) : ((unread) => {
+export default noop.memo(function ChannelTitle(unread) {
   ({ title, muted } = unread);
   unread = unread.unread;
   const resolvedUnreadSetting = unread.resolvedUnreadSetting;
   const connected = unread.connected;
-  const layoutStyles = muted(unread[7]).getLayoutStyles(unread.layout);
+  const layoutStyles = muted(unread[5]).getLayoutStyles(unread.layout);
   let tmp2 = closure_5();
   const normal = tmp2;
   const items = [unread, tmp2, connected, muted, resolvedUnreadSetting];
@@ -103,5 +48,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     title = "";
   }
   obj2.children = title;
-  return normal(muted(unread[8]).Text, obj2);
-}));
+  return normal(muted(unread[6]).Text, obj2);
+});

@@ -1,18 +1,18 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17009
+// Function ID: 17010
 // Name: FeedbackActionSheetV2
-// Dependencies: [32, 19, 17, 11784, 21, 4790, 580, 4757, 12, 8580, 5235, 4993, 11806, 1984, 1119, 4786, 11788, 5851, 5935, 5854, 5220, 1616, 7429, 7428, 7476, 6895, 2]
+// Dependencies: [32, 19, 17, 11906, 21, 4788, 576, 4755, 12, 8575, 5235, 4991, 11928, 1980, 1115, 4784, 11910, 5853, 5936, 5854, 5218, 1612, 7427, 7426, 7475, 6901, 2]
 // Exports: default
 
-// Module 17019 (FeedbackActionSheetV2)
+// Module 17009 (FeedbackActionSheetV2)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
 import useMountEffectDefault from "useMountEffect" /* 5235 */;
-import usePreviousDefault from "usePrevious" /* 8580 */;
+import usePreviousDefault from "usePrevious" /* 8575 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,10 +21,10 @@ function closeActionSheet() {
   ActionSheetActionCreatorsDefault.hideActionSheet();
 }
 const View = fn(17).View;
-const FeedbackRating = fn(11784).FeedbackRating;
+const FeedbackRating = fn(11906).FeedbackRating;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { padding: nativeDefault.space.PX_16 }, ratingsBody: { textAlign: "center" }, problemsList: null };
 let obj3 = { padding: nativeDefault.space.PX_16 };
 obj2.problemsList = { marginBottom: nativeDefault.space.PX_16 };
@@ -130,7 +130,7 @@ export default function FeedbackActionSheetV2(optionsTree) {
         problemsHeader = iter.problemsHeader;
       }
       obj4.titleLabel = problemsHeader;
-      const intl = tmp10(1119).intl;
+      const intl = tmp10(1115).intl;
       obj4.descriptionLabel = intl.string(util.t.h95hcn);
       let hideHelpdeskLink;
       if (first4 != null) {
@@ -140,8 +140,8 @@ export default function FeedbackActionSheetV2(optionsTree) {
         }
       }
       obj4.hideHelpdeskLink = hideHelpdeskLink;
-      obj2.pushLazy(asyncRequireImpl(11806, dependencyMap.paths), obj4);
-      const tmp11 = asyncRequireImpl(11806, dependencyMap.paths);
+      obj2.pushLazy(asyncRequireImpl(11928, dependencyMap.paths), obj4);
+      const tmp11 = asyncRequireImpl(11928, dependencyMap.paths);
     } else {
       let obj = { rating: first2, category: null, reason: null, dontShowAgain: null, feedback: "" };
       value2 = undefined;
@@ -200,20 +200,20 @@ export default function FeedbackActionSheetV2(optionsTree) {
     let tmp35 = null;
     if (null != ratingBody) {
       let obj4 = { style: tmp.ratingsBody, variant: "text-md/medium", color: "text-default", children: ratingBody };
-      tmp35 = closure_7(tmp20(4786).Text, obj4);
+      tmp35 = closure_7(tmp20(4784).Text, obj4);
     }
     const items2 = [tmp35, , ];
     const obj5 = { ratingOptions, selectedRating: first2, onChangeRating: callback };
-    items2[1] = closure_7(tmp3(11788), obj5);
+    items2[1] = closure_7(tmp3(11910), obj5);
     let tmp37Result = null;
     if (!hideDontShowAgainCheckbox) {
       const obj6 = { start: true, end: true, checked: first1, label: null, onPress: null };
-      const intl3 = tmp20(1119).intl;
-      obj6.label = intl3.string(tmp20(1119).t["5E9SB9"]);
+      const intl3 = tmp20(1115).intl;
+      obj6.label = intl3.string(tmp20(1115).t["5E9SB9"]);
       obj6.onPress = function onPress() {
         return closure_9(!first1);
       };
-      tmp37Result = tmp37(tmp20(5851).TableCheckboxRow, obj6);
+      tmp37Result = tmp37(tmp20(5853).TableCheckboxRow, obj6);
     }
     const obj7 = { children: null };
     items2[2] = tmp37Result;
@@ -239,15 +239,15 @@ export default function FeedbackActionSheetV2(optionsTree) {
                   }, index);
                 })
         };
-        obj9.children = closure_7(tmp20(5935).TableRowGroup, obj10);
+        obj9.children = closure_7(tmp20(5936).TableRowGroup, obj10);
         const items3 = [closure_7(closure_5, obj9), ];
         const obj11 = { variant: "secondary", size: "sm", text: null, onPress: null };
-        const intl2 = tmp20(1119).intl;
-        obj11.text = intl2.string(tmp20(1119).t["13/7kX"]);
+        const intl2 = tmp20(1115).intl;
+        obj11.text = intl2.string(tmp20(1115).t["13/7kX"]);
         obj11.onPress = function onPress() {
           return closure_11(null);
         };
-        items3[1] = closure_7(tmp20(5220).Button, obj11);
+        items3[1] = closure_7(tmp20(5218).Button, obj11);
         obj8.children = items3;
         tmp33Result = closure_9(first1, obj8);
         problemsHeader = categoriesHeader;
@@ -270,11 +270,11 @@ export default function FeedbackActionSheetV2(optionsTree) {
           }
         }, index);
       });
-      obj13.children = closure_7(tmp20(5935).TableRowGroup, obj14);
+      obj13.children = closure_7(tmp20(5936).TableRowGroup, obj14);
       const items4 = [closure_7(closure_5, obj13), ];
       const obj15 = { variant: "secondary", size: "sm", text: null, onPress: null };
-      let intl = tmp20(1119).intl;
-      obj15.text = intl.string(tmp20(1119).t["13/7kX"]);
+      let intl = tmp20(1115).intl;
+      obj15.text = intl.string(tmp20(1115).t["13/7kX"]);
       obj15.onPress = function onPress() {
         if (1 === first.length) {
           let tmp3 = closure_11(null);
@@ -283,13 +283,13 @@ export default function FeedbackActionSheetV2(optionsTree) {
         }
         return tmp3;
       };
-      items4[1] = closure_7(tmp20(5220).Button, obj15);
+      items4[1] = closure_7(tmp20(5218).Button, obj15);
       obj12.children = items4;
       tmp33Result = closure_9(first1, obj12);
     }
     tmp23 = null != first4 && null == first5;
   }
-  const bottom = tmp3(1616)().bottom;
+  const bottom = tmp3(1612)().bottom;
   let num = 48;
   if (hideDontShowAgainCheckbox) {
     num = 0;
@@ -305,13 +305,13 @@ export default function FeedbackActionSheetV2(optionsTree) {
   let tmp40Result = null;
   if (showHeaderCloseButton) {
     const obj18 = { onPress };
-    tmp40Result = tmp40(tmp20(7476).ActionSheetCloseButton, obj18);
+    tmp40Result = tmp40(tmp20(7475).ActionSheetCloseButton, obj18);
   }
   obj17.trailing = tmp40Result;
-  obj16.header = closure_7(optionsTree(7428).BottomSheetTitleHeader, obj17);
+  obj16.header = closure_7(optionsTree(7426).BottomSheetTitleHeader, obj17);
   const obj19 = { contentContainerStyle: null, children: tmp33Result };
   const items5 = [tmp.container, { paddingBottom: tmp.container.padding + bottom }];
   obj19.contentContainerStyle = items5;
-  obj16.children = closure_7(optionsTree(6895).BottomSheetScrollView, obj19);
-  return closure_7(optionsTree(7429).BottomSheet, obj16);
+  obj16.children = closure_7(optionsTree(6901).BottomSheetScrollView, obj19);
+  return closure_7(optionsTree(7427).BottomSheet, obj16);
 };

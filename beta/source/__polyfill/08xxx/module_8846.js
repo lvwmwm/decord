@@ -1,19 +1,17 @@
 // Module ID: 8846
 // Function ID: 8847
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8843, 8847, 8848, 8780, 8789]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8768, 8838, 8847, 8773, 8784]
 
 // Module 8846
-import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef8789 from "module_8789" /* 8789 */;
-import unitsDefault from "units" /* 8843 */;
-import _modDef8848 from "module_8848" /* 8848 */;
+import _modDef8784 from "module_8784" /* 8784 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const Mask = fn;
+const Pattern = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,16 +31,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-_possibleConstructorReturnDefault;
 const jsx = fn(21).jsx;
-class Mask {
+class Pattern {
   constructor() {
     self = this;
-    tmp = closure_3(this, Mask);
-    tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(Mask);
-    tmp3 = closure_4;
-    if (closure_7()) {
+    tmp = c2(this, Pattern);
+    tmp2 = closure_4;
+    obj = closure_4(Pattern);
+    tmp3 = closure_3;
+    if (metroRequire()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -55,55 +52,54 @@ class Mask {
     return tmp3(self, constructResult);
   }
 }
-_inherits(Mask, _modDef8789);
+_inherits(Pattern, _modDef8784);
 const entry = {
   key: "render",
   value: function render() {
     const self = this;
     const props = this.props;
-    ({ maskUnits, maskContentUnits, style } = props);
-    const size = { x: props.x, y: props.y, width: props.width, height: props.height, maskUnits: null, maskContentUnits: null, maskType: null };
-    let num = 0;
-    if (undefined !== maskUnits) {
-      num = unitsDefault[maskUnits];
+    ({ patternTransform, patternUnits, patternContentUnits } = props);
+    ({ transform, id, x, y, width, height, children, viewBox, preserveAspectRatio } = props);
+    if (!patternTransform) {
+      patternTransform = transform;
     }
-    size.maskUnits = num;
+    if (!patternTransform) {
+      patternTransform = props;
+    }
+    const tmp3Result = Pattern(8768)(patternTransform);
+    const size = { x, y, width, height, name: id, matrix: tmp3Result, patternTransform: tmp3Result, patternUnits: null, patternContentUnits: null };
+    let num = patternUnits;
+    if (patternUnits) {
+      num = tmp(8838)[patternUnits];
+    }
+    if (!num) {
+      num = 0;
+    }
+    size.patternUnits = num;
     let num2 = 1;
-    if (undefined !== maskContentUnits) {
-      num2 = unitsDefault[maskContentUnits];
+    if (patternContentUnits) {
+      num2 = tmp(8838)[patternContentUnits];
     }
-    size.maskContentUnits = num2;
-    let str;
-    if (props != null) {
-      str = props.maskType;
-    }
-    if (!str) {
-      let maskType;
-      if (style != null) {
-        maskType = style.maskType;
-      }
-      str = maskType;
-    }
-    if (!str) {
-      str = "luminance";
-    }
-    size.maskType = Mask(8847).maskType[str];
+    size.patternContentUnits = num2;
     const obj = {
       ref(arg0) {
         return self.refMethod(arg0);
       }
     };
-    const merged = Object.assign(Mask(8780).withoutXY(this, props));
-    const merged1 = Object.assign(size);
-    obj.children = props.children;
-    return <tmp8 ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+    const tmp3 = Pattern(8768);
+    const merged = Object.assign(size);
+    const merged1 = Object.assign(tmp(8773)({ viewBox, preserveAspectRatio }));
+    obj.children = children;
+    return jsx(Pattern(8847), {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    });
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(Mask, items);
-importDefaultResultResult.displayName = "Mask";
+const importDefaultResultResult = _createClass(Pattern, items);
+importDefaultResultResult.displayName = "Pattern";
 importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
 
 export default importDefaultResultResult;

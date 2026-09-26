@@ -1,9 +1,9 @@
 // Module ID: 2843
 // Function ID: 2844
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 2843
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/notifications", scales: [1], hash: "0048348a6c7e0009789fbf925b49e62d", name: "NotificationSettings.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ub3RpZmljYXRpb25zX2luYm94", scales: [1], hash: "088db829e529e7f77b3a1547f785c610", name: "da.messages.088db829e529e7f77b3a1547f785c610.compiled.messages", type: "jsona" });

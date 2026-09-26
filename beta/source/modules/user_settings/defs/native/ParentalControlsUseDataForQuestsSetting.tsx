@@ -1,56 +1,27 @@
-// Module ID: 16229
-// Function ID: 16230
+// Module ID: 16233
+// Function ID: 16234
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [7816, 8270, 558, 568, 15095, 1119, 2486, 11630, 2]
+// Dependencies: [7811, 8265, 15099, 1115, 2482, 11754, 2]
 
-// Module 16229 (ParentalControlsUseDataForQuestsSetting)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import _modDef2486 from "module_2486" /* 2486 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15095 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
+// Module 16233 (ParentalControlsUseDataForQuestsSetting)
+import util from "util" /* 1115 */;
+import _modDef2482 from "module_2482" /* 2482 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15099 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11630);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
-    cResult[0] = selectedTeenId;
-    let first = selectedTeenId;
-  } else {
-    first = cResult[0];
-  }
-  const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
-  return !ParentalControlledDropsOptedOut.useControlledSetting(first);
-}) : (() => {
-  const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
-  const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
-  return !ParentalControlledDropsOptedOut.useControlledSetting(selectedTeenId);
-});
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle: function useDataForQuestsSettingTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2486.ZhaNu8);
+    return intl.string(_modDef2482.ZhaNu8);
   },
-  parent: fn(8270).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(1);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
-      cResult[0] = selectedTeenId;
-      let first = selectedTeenId;
-    } else {
-      first = cResult[0];
-    }
-    const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
-    return !ParentalControlledDropsOptedOut.useControlledSetting(first);
-  }) : (() => {
+  parent: fn(8265).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  useValue: function useDataToSupportQuestsSettingValue() {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
     return !ParentalControlledDropsOptedOut.useControlledSetting(selectedTeenId);
-  }),
+  },
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;

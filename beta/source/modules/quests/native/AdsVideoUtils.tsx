@@ -1,11 +1,11 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 15304
+// Function ID: 15305
 // Name: AdsVideoUtils
-// Dependencies: [1368, 2]
+// Dependencies: [1364, 2]
 // Exports: isSourceError
 
-// Module 15300 (AdsVideoUtils)
-import PlatformUtils from "PlatformUtils" /* 1368 */;
+// Module 15304 (AdsVideoUtils)
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = [-1000, -1003, -1004, -1008];

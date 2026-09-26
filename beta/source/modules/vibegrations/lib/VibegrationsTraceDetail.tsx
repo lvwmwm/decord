@@ -1,10 +1,10 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 17079
+// Function ID: 17080
 // Name: VibegrationsTraceDetail
-// Dependencies: [5, 13402, 2]
+// Dependencies: [5, 13392, 2]
 // Exports: cachedTraceDetail, clearTraceDetailCache, fetchTraceDetail
 
-// Module 17089 (VibegrationsTraceDetail)
+// Module 17079 (VibegrationsTraceDetail)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_7 = async function _fetchTraceDetail(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -71,7 +71,7 @@ let closure_7 = async function _fetchTraceDetail(arg0, value) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -245,8 +245,8 @@ let c6 = 0;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTraceDetail.tsx");
 
-export const cachedTraceDetail = function cachedTraceDetail(arg0) {
-  return map.get(arg0);
+export const cachedTraceDetail = function cachedTraceDetail(detailId) {
+  return map.get(detailId);
 };
 export const fetchTraceDetail = function fetchTraceDetail() {
   const self = this;

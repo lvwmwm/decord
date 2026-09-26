@@ -1,11 +1,11 @@
-// Module ID: 2078
-// Function ID: 2079
+// Module ID: 2074
+// Function ID: 2075
 // Name: Dao
-// Dependencies: [2079, 2081, 2]
+// Dependencies: [2075, 2077, 2]
 
-// Module 2078 (Dao)
-import Table from "Table" /* 2079 */;
-import TableId from "TableId" /* 2081 */;
+// Module 2074 (Dao)
+import Table from "Table" /* 2075 */;
+import TableId from "TableId" /* 2077 */;
 import size from "module_2" /* 2 */;
 
 let Dao;

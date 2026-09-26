@@ -1,18 +1,18 @@
-// Module ID: 8422
-// Function ID: 8423
+// Module ID: 8417
+// Function ID: 8418
 // Name: InteractionUtils
-// Dependencies: [5, 502, 8236, 1078, 11, 8044, 8423, 1982, 1275, 7735, 8424, 577, 5019, 2, 5016]
+// Dependencies: [5, 502, 8231, 1074, 11, 8039, 8418, 1978, 1271, 7730, 8419, 573, 5017, 2, 5014]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8422 (InteractionUtils)
+// Module 8417 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import Server from "Server" /* 1982 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8423 */;
-import SkemaUtils from "SkemaUtils" /* 8424 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import Server from "Server" /* 1978 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 8418 */;
+import SkemaUtils from "SkemaUtils" /* 8419 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 8236 */;
+import InteractionStore from "InteractionStore" /* 8231 */;
 
 require = fn;
 let closure_10 = async function _executeMessageComponentInteraction(arg0, value) {
@@ -37,7 +37,7 @@ let closure_10 = async function _executeMessageComponentInteraction(arg0, value)
   } else if (2 === tmp7) {
     c3 = 0;
     c5 = 3;
-    return { value: "IconComponent", done: null };
+    return { value: "HermesInternal", done: null };
   } else if (3 === tmp7) {
     if (arg0 === 1) {
       c5 = 3;
@@ -90,10 +90,10 @@ let closure_10 = async function _executeMessageComponentInteraction(arg0, value)
     c5 = 3;
     return { value, done: true };
   }
-  await "IconComponent";
+  await "HermesInternal";
   closure_2 = tmp3;
   ({ componentType: closure_129_0, messageId: closure_129_1, messageFlags: closure_129_2, customId: closure_129_3, componentId: closure_129_4, applicationId: closure_129_5, channelId: closure_129_6, guildId: closure_129_7, localState: closure_129_8 } = closure_0);
-  return "Set";
+  return "PX_16";
 };
 function mapMessageComponentLocalStateForAPI(type) {
   if (null == type) {
@@ -101,17 +101,17 @@ function mapMessageComponentLocalStateForAPI(type) {
   } else {
     type = type.type;
     if (Server.ComponentType.TEXT_INPUT !== type) {
-      if (tmp(1982).ComponentType.FILE_UPLOAD !== type) {
-        if (tmp(1982).ComponentType.RADIO_GROUP !== type) {
-          if (tmp(1982).ComponentType.CHECKBOX_GROUP !== type) {
-            if (tmp(1982).ComponentType.CHECKBOX !== type) {
-              if (tmp(1982).ComponentType.STRING_SELECT === type) {
+      if (tmp(1978).ComponentType.FILE_UPLOAD !== type) {
+        if (tmp(1978).ComponentType.RADIO_GROUP !== type) {
+          if (tmp(1978).ComponentType.CHECKBOX_GROUP !== type) {
+            if (tmp(1978).ComponentType.CHECKBOX !== type) {
+              if (tmp(1978).ComponentType.STRING_SELECT === type) {
                 return type;
               } else {
-                if (tmp(1982).ComponentType.USER_SELECT !== type) {
-                  if (tmp(1982).ComponentType.ROLE_SELECT !== type) {
-                    if (tmp(1982).ComponentType.MENTIONABLE_SELECT !== type) {
-                      if (tmp(1982).ComponentType.CHANNEL_SELECT !== type) {
+                if (tmp(1978).ComponentType.USER_SELECT !== type) {
+                  if (tmp(1978).ComponentType.ROLE_SELECT !== type) {
+                    if (tmp(1978).ComponentType.MENTIONABLE_SELECT !== type) {
+                      if (tmp(1978).ComponentType.CHANNEL_SELECT !== type) {
                         return null;
                       }
                     }
@@ -190,7 +190,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
     }
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: metroRequire, AbortCodes: closure_7, MessageStates: closure_8, MessageFlags: closure_9 } = Constants);
 const InteractionStatusViewState = { SENDING: 0, [0]: "SENDING", CREATED: 1, [1]: "CREATED", FAILED: 2, [2]: "FAILED", TIMED_OUT: 3, [3]: "TIMED_OUT", EPHEMERAL_SUCCESS: 4, [4]: "EPHEMERAL_SUCCESS" };
 const size = fn(2);
@@ -301,7 +301,7 @@ export const getInteractionStatusViewState = function getInteractionStatusViewSt
   }
 };
 export const canRetryInteractionData = function canRetryInteractionData(interactionData) {
-  options = interactionData.options;
+  const options = interactionData.options;
   let length;
   if (options != null) {
     length = options.length;
@@ -327,7 +327,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
           } else {
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== tmp7(1982).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== tmp7(1978).ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }
@@ -351,4 +351,4 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
   }
   return true;
 };
-export const interactionCallbackErrorReason = fn(5016).interactionCallbackErrorReason;
+export const interactionCallbackErrorReason = fn(5014).interactionCallbackErrorReason;

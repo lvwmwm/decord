@@ -1,33 +1,11 @@
 // Module ID: 14606
 // Function ID: 14607
-// Dependencies: [14521, 14607]
-// Exports: getSupportedNumberingSystems
+// Dependencies: [14607, 14672]
 
 // Module 14606
-const require = globalThis.__r;
+import _mod14672 from "module_14672" /* 14672 */;
+import module_14607 from "module_14607" /* 14607 */;
 
-const require = arg1;
-const dependencyMap = arg6;
-
-export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
-  _require = locale;
-  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
-  return numberingSystemNames.filter((item) => (function isSupportedNumberingSystem(item, arg1) {
-    let str = arg1;
-    if (undefined === arg1) {
-      str = "en";
-    }
-    try {
-      const concat = "".concat;
-      const combined = "".concat(str, "-u-nu-");
-      const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(combined.concat(item));
-      if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
-        if ("123" === memoizedNumberFormat.format(123)) {
-          return false;
-        }
-      }
-      return true;
-    } catch (err) {
-    }
-  })(item, closure_0));
-};
+const obj = { target: "Object", stat: true, arity: 2, forced: null };
+obj.forced = Object.assign !== _mod14672;
+module_14607(obj, { assign: _mod14672 });

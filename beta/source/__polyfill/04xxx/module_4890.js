@@ -1,14 +1,14 @@
 // Module ID: 4890
 // Function ID: 4891
-// Dependencies: [661, 4875, 4873]
+// Dependencies: [4891, 4895, 4897]
 
 // Module 4890
-import baseGetAllKeys from "baseGetAllKeys" /* 661 */;
-import _mod4873 from "module_4873" /* 4873 */;
-import keysIn from "keysIn" /* 4875 */;
+import shortOut from "shortOut" /* 4891 */;
+import overRest from "overRest" /* 4895 */;
+import flatten from "flatten" /* 4897 */;
 
 
-export default function getAllKeysIn(arg0) {
-  const tmp = baseGetAllKeys;
-  return tmp(arg0, keysIn, _mod4873);
+export default function flatRest(arg0) {
+  const tmp = shortOut;
+  return tmp(overRest(arg0, undefined, flatten), "" + arg0);
 };

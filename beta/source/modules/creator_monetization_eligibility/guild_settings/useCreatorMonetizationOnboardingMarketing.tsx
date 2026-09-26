@@ -1,11 +1,11 @@
-// Module ID: 18189
-// Function ID: 18190
+// Module ID: 18180
+// Function ID: 18181
 // Name: useCreatorMonetizationOnboardingMarketing
-// Dependencies: [5, 32, 19, 18158, 4691, 2]
+// Dependencies: [5, 32, 19, 18149, 4688, 2]
 // Exports: default
 
-// Module 18189 (useCreatorMonetizationOnboardingMarketing)
-import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 18158 */;
+// Module 18180 (useCreatorMonetizationOnboardingMarketing)
+import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 18149 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -31,7 +31,7 @@ export default function useCreatorMonetizationOnboardingMarketing(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ export default function useCreatorMonetizationOnboardingMarketing(arg0) {
           if (2 === tmp8) {
             c4 = 1;
             closure_129_1 = tmp45;
-            const aPIError = new closure_0(4691).APIError(closure_129_1);
+            const aPIError = new closure_0(4688).APIError(closure_129_1);
             tmp4(aPIError);
             c4 = 0;
             closure_1(false);

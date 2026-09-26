@@ -1,19 +1,19 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14031
+// Function ID: 14032
 // Name: SharedSpacesWarningManager
-// Dependencies: [2045, 4813, 4441, 14042, 14040, 1095, 14043, 1098, 14047, 7397, 2]
+// Dependencies: [2041, 4811, 4437, 14032, 14030, 1091, 14033, 1094, 14037, 7395, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 14041 (SharedSpacesWarningManager)
-import DurationsDefault from "Durations" /* 1095 */;
-import ConstantsIOS from "ConstantsIOS" /* 1098 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 14043 */;
-import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 14047 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 14040 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 14031 (SharedSpacesWarningManager)
+import DurationsDefault from "Durations" /* 1091 */;
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 14033 */;
+import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 14037 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 14030 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 function handleChannelSelect(channelId) {
@@ -53,7 +53,7 @@ function handleAppStateChanged(state) {
       const blockedUsersForVoiceChannel = VoiceChannelBlockedUserStore.getBlockedUsersForVoiceChannel(channelId);
       const ignoredUsersForVoiceChannel = VoiceChannelBlockedUserStore.getIgnoredUsersForVoiceChannel(channelId);
       if (blockedUsersForVoiceChannel.size > 0) {
-        if (closure_1_8()) {
+        if (React6()) {
           const _Set = Set;
           const items = [];
           HermesBuiltin.arraySpread(ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(blockedUsersForVoiceChannel, 0));
@@ -88,13 +88,13 @@ function handleAppStateChanged(state) {
           }
         }
       }
-      options();
+      React7();
     } else {
-      options();
+      React7();
     }
   }
 }
-const SharedSpacesWarningStore = fn(14042);
+const SharedSpacesWarningStore = fn(14032);
 ({ getChannelDismissTimestamp: hasOwnProperty, getUserDismissTimestamp: metroRequire, getGlobalDismissTimestamp: closure_7, isBlockedWarningQueued: closure_8, dequeueBlockWarning: closure_9 } = SharedSpacesWarningStore);
 let closure_11 = 3 * DurationsDefault.Millis.DAY;
 let closure_12 = 2 * DurationsDefault.Millis.DAY;

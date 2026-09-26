@@ -1,20 +1,20 @@
 // Module ID: 4229
 // Function ID: 4230
-// Dependencies: [4040, 3882]
+// Dependencies: [4089, 3878]
 // Exports: default
 
 // Module 4229
-import startOfWeek_mod from "startOfWeek" /* 4040 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import startOfQuarter_mod from "startOfQuarter" /* 4089 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let startOfWeek = startOfWeek_mod;
-if (!startOfWeek) {
-  const obj = { default: startOfWeek };
+let startOfQuarter = startOfQuarter_mod;
+if (!startOfQuarter) {
+  const obj = { default: startOfQuarter };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfWeek;
+  tmp3 = startOfQuarter;
 }
-startOfWeek = tmp3;
+startOfQuarter = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,10 +24,10 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isSameWeek(arg0, arg1, arg2) {
+export default function isSameQuarter(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfWeek.default(arg0, arg2);
+  const defaultResult1 = startOfQuarter.default(arg0);
   const time = defaultResult1.getTime();
-  return time === startOfWeek.default(arg1, arg2).getTime();
+  return time === startOfQuarter.default(arg1).getTime();
 };
 export default exports.default;

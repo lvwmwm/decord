@@ -1,15 +1,14 @@
-// Module ID: 9993
-// Function ID: 9994
+// Module ID: 10015
+// Function ID: 10016
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 4790, 558, 568, 9994, 1119, 1181, 2]
+// Dependencies: [17, 21, 4788, 10016, 1177, 1115, 2]
+// Exports: default
 
-// Module 9993 (SecureFramesExistingVerificationsHelpMessage)
+// Module 10015 (SecureFramesExistingVerificationsHelpMessage)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import c from "c" /* 568 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9994 */;
-import createStyles from "createStyles" /* 4790 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 10016 */;
+import createStyles from "createStyles" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;
@@ -17,63 +16,7 @@ const jsx = jsxProd.jsx;
 let closure_4 = createStyles.createStyles({ container: { width: "100%" } });
 const result = size.fileFinishedImporting("modules/rtc/native/SecureFramesExistingVerificationsHelpMessage.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(13);
-  ({ style, userId, userKey } = arg0);
-  const tmp4 = closure_4();
-  if (cResult[0] === userId) {
-    if (cResult[1] === userKey) {
-      let tmp5 = cResult[2];
-    }
-    const secureFramesUserVerifiedKeysCount = tmp(9994).useSecureFramesUserVerifiedKeysCount(tmp5);
-    if (0 === secureFramesUserVerifiedKeysCount) {
-      return null;
-    } else {
-      if (cResult[3] === style) {
-        if (cResult[4] === tmp4.container) {
-          let tmp8 = cResult[5];
-        }
-        if (cResult[6] !== secureFramesUserVerifiedKeysCount) {
-          const intl = tmp(1119).intl;
-          const obj2 = { count: secureFramesUserVerifiedKeysCount };
-          const formatResult = intl.format(tmp(1119).t.uZDkz0, obj2);
-          cResult[6] = secureFramesUserVerifiedKeysCount;
-          cResult[7] = formatResult;
-          let tmp9 = formatResult;
-        } else {
-          tmp9 = cResult[7];
-        }
-        if (cResult[8] !== tmp9) {
-          const obj3 = { messageType: tmp(1181).HelpMessageTypes.INFO, children: tmp9 };
-          const tmp13 = jsx(tmp(1181).HelpMessage, { messageType: tmp(1181).HelpMessageTypes.INFO, children: tmp9 });
-          cResult[8] = tmp9;
-          cResult[9] = tmp13;
-          let tmp11 = tmp13;
-        } else {
-          tmp11 = cResult[9];
-        }
-        if (cResult[10] === tmp8) {
-        }
-        const obj4 = { style: tmp8, children: tmp11 };
-        const tmp17 = <View style={tmp8}>{tmp11}</View>;
-        cResult[10] = tmp8;
-        cResult[11] = tmp11;
-        cResult[12] = tmp17;
-      }
-      const items = [tmp4.container, style];
-      cResult[3] = style;
-      cResult[4] = tmp4.container;
-      cResult[5] = items;
-      tmp8 = items;
-    }
-    const tmpResult = tmp(9994);
-  }
-  const obj5 = { userId, keyToOmit: userKey };
-  cResult[0] = userId;
-  cResult[1] = userKey;
-  cResult[2] = obj5;
-  tmp5 = obj5;
-}) : ((arg0) => {
+export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
   ({ style, userId, userKey } = arg0);
   const tmp = closure_4();
   const secureFramesUserVerifiedKeysCount = useSecureFramesUserVerifiedKeysCount.useSecureFramesUserVerifiedKeysCount({ userId, keyToOmit: userKey });
@@ -82,12 +25,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { style: null, children: null };
     const items = [tmp.container, style];
     obj2.style = items;
-    const obj3 = { messageType: tmp2(1181).HelpMessageTypes.INFO, children: null };
-    const intl = tmp2(1119).intl;
+    const obj3 = { messageType: tmp2(1177).HelpMessageTypes.INFO, children: null };
+    const intl = tmp2(1115).intl;
     const obj4 = { count: secureFramesUserVerifiedKeysCount };
-    obj3.children = intl.format(tmp2(1119).t.uZDkz0, obj4);
-    obj2.children = jsx(tmp2(1181).HelpMessage, { messageType: tmp2(1181).HelpMessageTypes.INFO, children: null });
+    obj3.children = intl.format(tmp2(1115).t.uZDkz0, obj4);
+    obj2.children = jsx(tmp2(1177).HelpMessage, { messageType: tmp2(1177).HelpMessageTypes.INFO, children: null });
     tmp5 = <View style={null}>{null}</View>;
   }
   return tmp5;
-});
+};

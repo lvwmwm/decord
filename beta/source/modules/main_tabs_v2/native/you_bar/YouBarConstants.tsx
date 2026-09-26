@@ -1,12 +1,12 @@
-// Module ID: 15364
-// Function ID: 15365
+// Module ID: 15368
+// Function ID: 15369
 // Name: YouBarConstants
-// Dependencies: [17, 580, 1181, 2]
+// Dependencies: [17, 576, 1177, 2]
 
-// Module 15364 (YouBarConstants)
+// Module 15368 (YouBarConstants)
 import _mod17 from "module_17" /* 17 */;
-import nativeDefault from "native" /* 580 */;
-import native from "native" /* 1181 */;
+import nativeDefault from "native" /* 576 */;
+import native from "native" /* 1177 */;
 import size from "module_2" /* 2 */;
 
 const PixelRatio = _mod17.PixelRatio;

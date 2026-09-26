@@ -1,9 +1,9 @@
 // Module ID: 5635
 // Function ID: 5636
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 5635
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "409fe2e37775c47f20538750422d7e2c", name: "img_account_sync_instagram_light_and_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 1005, height: 1005, scales: [1], hash: "3810c84a1fa3c892d5176145d44c5346", name: "img_account_sync_instagram_light_and_dark", type: "svg" });

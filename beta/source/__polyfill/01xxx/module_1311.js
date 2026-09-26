@@ -4,4 +4,4 @@
 
 // Module 1311
 
-export default Math.floor;
+export default Math.round;

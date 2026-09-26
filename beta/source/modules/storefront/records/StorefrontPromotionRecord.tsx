@@ -1,13 +1,13 @@
-// Module ID: 9098
-// Function ID: 9099
+// Module ID: 9100
+// Function ID: 9101
 // Name: StorefrontPromotionRecord
-// Dependencies: [32, 1391, 9099, 2]
+// Dependencies: [32, 1387, 9101, 2]
 // Exports: getCollectiblesCollectAndClaim, getCollectiblesTargetedOffer
 
-// Module 9098 (StorefrontPromotionRecord)
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9099 */;
+// Module 9100 (StorefrontPromotionRecord)
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9101 */;
 import _slicedToArray from "module_32" /* 32 */;
-import Record from "Record" /* 1391 */;
+import Record from "Record" /* 1387 */;
 
 require = fn;
 function parseSkuIds(sku_ids) {
@@ -103,8 +103,8 @@ prototype["createFromServer"] = function createFromServer(display_name) {
       let obj31 = require;
       let tmp35 = dependencyMap;
       if (StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM === type) {
-        if (collectibles.subtype === obj31(9099).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER) {
-          const obj7 = { type: obj31(9099).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: obj31(9099).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER, collectionId: collectibles.collection_id, shopHome: null, indexPage: null, shared: null };
+        if (collectibles.subtype === obj31(9101).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER) {
+          const obj7 = { type: obj31(9101).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: obj31(9101).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER, collectionId: collectibles.collection_id, shopHome: null, indexPage: null, shared: null };
           const obj8 = { title: collectibles.shop_home.title, description: collectibles.shop_home.description, rewardStates: null, style: null };
           const reward_states2 = collectibles.shop_home.reward_states;
           const obj9 = { inProgress: null, earned: null, consumed: null };
@@ -208,7 +208,7 @@ prototype["createFromServer"] = function createFromServer(display_name) {
           collectibles.helpCenter = tmp35;
           obj7.shared = collectibles;
         }
-      } else if (obj31(9099).StorefrontPromotionCollectiblesType.TARGETED_OFFER === type) {
+      } else if (obj31(9101).StorefrontPromotionCollectiblesType.TARGETED_OFFER === type) {
         const reward = collectibles.reward;
         let nagbar;
         if (reward != tmp14) {
@@ -245,13 +245,13 @@ prototype["createFromServer"] = function createFromServer(display_name) {
           if (tmp14 == offer_notice) {
             if (tmp14 == tmp39) {
               if (tmp14 == flavor) {
-                const obj33 = { type: obj31(9099).StorefrontPromotionCollectiblesType.TARGETED_OFFER };
+                const obj33 = { type: obj31(9101).StorefrontPromotionCollectiblesType.TARGETED_OFFER };
                 let obj34 = obj33;
               }
             }
           }
         }
-        obj34 = { type: obj31(9099).StorefrontPromotionCollectiblesType.TARGETED_OFFER, reward: null };
+        obj34 = { type: obj31(9101).StorefrontPromotionCollectiblesType.TARGETED_OFFER, reward: null };
         let tmp41;
         if (tmp14 != nagbar) {
           const header_text = nagbar.header_text;

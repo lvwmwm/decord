@@ -1,40 +1,23 @@
-// Module ID: 16520
-// Function ID: 16521
+// Module ID: 16513
+// Function ID: 16514
 // Name: GuildPowerupsBoostToUnlockCoachmark
-// Dependencies: [19, 558, 568, 12694, 16521, 2]
+// Dependencies: [19, 12778, 16514, 2]
+// Exports: default
 
-// Module 16520 (GuildPowerupsBoostToUnlockCoachmark)
-import c from "c" /* 568 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12694 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 16521 */;
+// Module 16513 (GuildPowerupsBoostToUnlockCoachmark)
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12778 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostToUnlockCoachmark.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(3);
-  ({ powerup, markAsDismissed } = arg0);
-  if (cResult[0] === markAsDismissed) {
-    if (cResult[1] === powerup) {
-      let tmp6 = cResult[2];
-    }
-    useGuildPowerupsCoachmarkDefault(tmp5, tmp4, tmp6);
-    return null;
-  }
-  const obj2 = { type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed };
-  cResult[0] = markAsDismissed;
-  cResult[1] = powerup;
-  cResult[2] = obj2;
-  tmp6 = obj2;
-}) : ((powerup) => {
+export default function GuildPowerupsBoostToUnlockCoachmark(powerup) {
   powerup = powerup.powerup;
   const markAsDismissed = powerup.markAsDismissed;
   const items = [powerup, markAsDismissed];
   ({ guildId, targetRef } = powerup);
   const memo = noop.useMemo(() => ({ type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed }), items);
-  markAsDismissed(16521)(targetRef, guildId, memo);
+  markAsDismissed(16514)(targetRef, guildId, memo);
   return null;
-});
+};

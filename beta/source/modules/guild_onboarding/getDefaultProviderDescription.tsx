@@ -1,12 +1,12 @@
-// Module ID: 7458
-// Function ID: 7459
+// Module ID: 7456
+// Function ID: 7457
 // Name: getDefaultProviderDescription
-// Dependencies: [1078, 1119, 2]
+// Dependencies: [1074, 1115, 2]
 // Exports: default
 
-// Module 7458 (getDefaultProviderDescription)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
+// Module 7456 (getDefaultProviderDescription)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

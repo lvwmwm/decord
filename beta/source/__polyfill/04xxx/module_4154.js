@@ -1,43 +1,65 @@
 // Module ID: 4154
 // Function ID: 4155
-// Dependencies: [4042, 4049, 3882]
+// Dependencies: [3877, 3878]
 // Exports: default
 
 // Module 4154
-import startOfISOWeekYear_mod from "startOfISOWeekYear" /* 4042 */;
-import module_4049_mod from "module_4049" /* 4049 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let startOfISOWeekYear = startOfISOWeekYear_mod;
-if (!startOfISOWeekYear) {
-  const obj = { default: startOfISOWeekYear };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  let obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfISOWeekYear;
+  tmp3 = _typeof;
 }
-startOfISOWeekYear = tmp3;
-let module_4049 = module_4049_mod;
-if (!module_4049) {
-  const obj2 = { default: module_4049 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_4049;
-}
-module_4049 = tmp5;
+_typeof = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  let obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
-let c3 = 604800000;
+requiredArgs = tmp5;
+let c2 = 86400000;
 
-export default function getISOWeeksInYear(arg0) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = startOfISOWeekYear.default(arg0);
-  const defaultResult2 = startOfISOWeekYear.default(module_4049.default(defaultResult1, 60));
-  return Math.round((startOfISOWeekYear.default(module_4049.default(defaultResult1, 60)).valueOf() - defaultResult1.valueOf()) / c3);
+export default function getOverlappingDaysInIntervals(arg0, arg1) {
+  let obj = arg0;
+  requiredArgs.default(2, arguments);
+  if (!arg0) {
+    obj = {};
+  }
+  let obj2 = arg1;
+  if (!arg1) {
+    obj2 = {};
+  }
+  const time = _typeof.default(obj.start).getTime();
+  const defaultResult1 = _typeof.default(obj.start);
+  const time1 = _typeof.default(obj.end).getTime();
+  const defaultResult2 = _typeof.default(obj.end);
+  let time2 = _typeof.default(obj2.start).getTime();
+  const defaultResult3 = _typeof.default(obj2.start);
+  let time3 = _typeof.default(obj2.end).getTime();
+  if (time <= time1) {
+    if (time2 <= time3) {
+      if (time < time3) {
+        if (time2 < time1) {
+          if (time3 > time1) {
+            time3 = time1;
+          }
+          if (time2 < time) {
+            time2 = time;
+          }
+          const _Math = Math;
+          return Math.ceil((time3 - time2) / c2);
+        }
+      }
+      return 0;
+    }
+  }
+  const rangeError = new RangeError("Invalid interval");
+  throw rangeError;
 };
 export default exports.default;

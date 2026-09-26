@@ -1,10 +1,10 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9891
+// Function ID: 9892
 // Name: MobileServerTagExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 9869 (MobileServerTagExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 9891 (MobileServerTagExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-mobile-server-tag", kind: "user", defaultConfig: { enabled: false }, variations: null };

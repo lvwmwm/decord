@@ -1,9 +1,9 @@
-// Module ID: 8030
-// Function ID: 8031
+// Module ID: 8025
+// Function ID: 8026
 // Name: constants/DeviceState
 // Dependencies: [2]
 
-// Module 8030 (constants/DeviceState)
+// Module 8025 (constants/DeviceState)
 import size from "module_2" /* 2 */;
 
 const obj = { NOMINAL: "NOMINAL", FAIR: "FAIR", SERIOUS: "SERIOUS", CRITICAL: "CRITICAL", UNKNOWN: "UNKNOWN" };

@@ -1,9 +1,9 @@
 // Module ID: 15642
 // Function ID: 15643
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 15642
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "0450d9d5bb66be25511dd04ee055abfd", name: "EmojiDisguisedFaceIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e323f4aa14afd6838a1b0bdf3903e8c5", name: "EmojiCowboyHatFaceIcon", type: "png" });

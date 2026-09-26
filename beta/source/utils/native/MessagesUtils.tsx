@@ -1,13 +1,13 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12238
+// Function ID: 12239
 // Name: MessagesUtils
-// Dependencies: [1078, 7602, 4778, 8171, 4938, 2]
+// Dependencies: [1074, 7600, 4776, 8166, 4936, 2]
 
-// Module 12121 (MessagesUtils)
-import CodedLink from "CodedLink" /* 4778 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4938 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7602 */;
-import Constants from "Constants" /* 1078 */;
+// Module 12238 (MessagesUtils)
+import CodedLink from "CodedLink" /* 4776 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4936 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7600 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ InviteStates: c2, MessageEmbedTypes: c3 } = Constants);
@@ -34,9 +34,9 @@ export default {
         someResult = codedLinks.some((item) => {
           ({ type, code } = item);
           if (CodedLink.CodedLinkType.BUILD_OVERRIDE !== type) {
-            if (tmp(4778).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-              if (tmp(4778).CodedLinkType.EXPERIMENT === type) {
-                const experimentFromEmbedURL = tmp(8171).getExperimentFromEmbedURL(code);
+            if (tmp(4776).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+              if (tmp(4776).CodedLinkType.EXPERIMENT === type) {
+                const experimentFromEmbedURL = tmp(8166).getExperimentFromEmbedURL(code);
                 let tmp48 = null != experimentFromEmbedURL;
                 if (tmp48) {
                   const legacyExperiments = props.experimentEmbeds.legacyExperiments;
@@ -92,12 +92,12 @@ export default {
                   tmp48 = tmp53;
                 }
                 return tmp48;
-              } else if (tmp(4778).CodedLinkType.INVITE === type) {
+              } else if (tmp(4776).CodedLinkType.INVITE === type) {
                 const invites3 = props.invites;
                 value = invites3.get(code);
                 const invites4 = invites2.invites;
                 const value6 = invites4.get(code);
-                state = undefined;
+                let state;
                 if (value != null) {
                   state = value.state;
                 }
@@ -117,7 +117,7 @@ export default {
                   tmp43 = props.applicationAssetFetchingIds !== invites2.applicationAssetFetchingIds;
                 }
                 return tmp43;
-              } else if (tmp(4778).CodedLinkType.TEMPLATE === type) {
+              } else if (tmp(4776).CodedLinkType.TEMPLATE === type) {
                 const guildTemplates = props.guildTemplates;
                 const value7 = guildTemplates.get(code);
                 const guildTemplates2 = invites2.guildTemplates;
@@ -140,9 +140,9 @@ export default {
                 }
                 return tmp33;
               } else {
-                if (tmp(4778).CodedLinkType.EVENT !== type) {
-                  if (tmp(4778).CodedLinkType.CHANNEL_LINK !== type) {
-                    if (tmp(4778).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
+                if (tmp(4776).CodedLinkType.EVENT !== type) {
+                  if (tmp(4776).CodedLinkType.CHANNEL_LINK !== type) {
+                    if (tmp(4776).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
                       const invalidAppDirectoryEmbedApplicationIds = props.invalidAppDirectoryEmbedApplicationIds;
                       const invalidAppDirectoryEmbedApplicationIds2 = invites2.invalidAppDirectoryEmbedApplicationIds;
                       const hasItem = invalidAppDirectoryEmbedApplicationIds.has(code);
@@ -154,9 +154,9 @@ export default {
                         tmp25 = props.appDirectoryEmbedApplicationFetchStates[code] !== invites2.appDirectoryEmbedApplicationFetchStates[code];
                       }
                       return tmp25;
-                    } else if (tmp(4778).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+                    } else if (tmp(4776).CodedLinkType.ACTIVITY_BOOKMARK === type) {
                       return props.activityParticipants !== invites2.activityParticipants || props.invalidApplicationIds !== invites2.invalidApplicationIds || props.applicationAssetFetchingIds !== invites2.applicationAssetFetchingIds;
-                    } else if (tmp(4778).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
+                    } else if (tmp(4776).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
                       const invites = props.invites;
                       const value9 = invites.get(code);
                       invites2 = invites2.invites;
@@ -183,22 +183,22 @@ export default {
                       }
                       return tmp12;
                     } else {
-                      if (tmp(4778).CodedLinkType.GUILD_PRODUCT !== type) {
-                        if (tmp(4778).CodedLinkType.SERVER_SHOP !== type) {
-                          if (tmp(4778).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                            if (tmp(4778).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                              if (tmp(4778).CodedLinkType.QUESTS_EMBED === type) {
+                      if (tmp(4776).CodedLinkType.GUILD_PRODUCT !== type) {
+                        if (tmp(4776).CodedLinkType.SERVER_SHOP !== type) {
+                          if (tmp(4776).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                            if (tmp(4776).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                              if (tmp(4776).CodedLinkType.QUESTS_EMBED === type) {
                                 return props.quests !== invites2.quests || props.isFetchingCurrentQuests !== tmp6.isFetchingCurrentQuests;
                               } else {
-                                if (tmp(4778).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                                  if (tmp(4778).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                    if (tmp(4778).CodedLinkType.APP_OAUTH2_LINK === type) {
+                                if (tmp(4776).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                                  if (tmp(4776).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                    if (tmp(4776).CodedLinkType.APP_OAUTH2_LINK === type) {
                                       return props.applicationAssetFetchingIds !== invites2.applicationAssetFetchingIds || props.invalidApplicationIds !== tmp4.invalidApplicationIds;
                                     } else {
-                                      if (tmp(4778).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                                        if (tmp(4778).CodedLinkType.GAME_PROFILE !== type) {
-                                          if (tmp(4778).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                                            if (tmp(4778).CodedLinkType.USER_PROFILE !== type) {
+                                      if (tmp(4776).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                                        if (tmp(4776).CodedLinkType.GAME_PROFILE !== type) {
+                                          if (tmp(4776).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                                            if (tmp(4776).CodedLinkType.USER_PROFILE !== type) {
                                               const _Error = Error;
                                               const _HermesInternal = HermesInternal;
                                               throw Error("Unknown coded link type: " + type);

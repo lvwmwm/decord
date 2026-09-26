@@ -1,15 +1,9 @@
 // Module ID: 15819
 // Function ID: 15820
-// Dependencies: [8587, 15820, 15823, 15824]
+// Dependencies: [1121]
 
 // Module 15819
-import _mod15824 from "module_15824" /* 15824 */;
-import module_8587 from "module_8587" /* 8587 */;
-
-const require = globalThis.__r;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export const getYoutubeMeta = require("module_15820").getYoutubeMeta;
-export const PLAYER_STATES = require("PLAY_MODE").PLAYER_STATES_NAMES;
-export const PLAYER_ERRORS = require("PLAY_MODE").PLAYER_ERROR_NAMES;
-export default module_8587(_mod15824).default;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "0182b31d51043571e01025e7bba542aa", name: "FileUpIcon", type: "png" });

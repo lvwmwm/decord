@@ -1,118 +1,30 @@
-// Module ID: 7356
-// Function ID: 7357
+// Module ID: 7354
+// Function ID: 7355
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 4790, 558, 568, 5143, 1119, 4786, 5239, 2]
+// Dependencies: [19, 21, 4788, 5237, 1115, 5141, 4784, 2]
+// Exports: default
 
-// Module 7356 (SMSBackupWarningAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
-import common_AlertDefault from "common/Alert" /* 5239 */;
+// Module 7354 (SMSBackupWarningAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_5 = createStyles.createStyles({ title: { textAlign: "center" }, body: { marginTop: 8, textAlign: "center", lineHeight: 18 } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/account/native/SMSBackupWarningAlert.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
-  const cResult = onConfirm(568).c(15);
-  onConfirm = onConfirm.onConfirm;
-  const tmp4 = closure_5();
-  if (cResult[0] !== onConfirm) {
-    const fn = function c() {
-      onConfirm();
-      actions_AlertActionCreatorsDefault.close();
-    };
-    cResult[0] = onConfirm;
-    cResult[1] = fn;
-    let tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t["ETE/oC"]);
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t.N86XcP);
-    cResult[2] = stringResult;
-    cResult[3] = stringResult1;
-    let tmp7 = stringResult1;
-    let tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function h() {
-      return actions_AlertActionCreatorsDefault.close();
-    };
-    cResult[4] = fn2;
-    let tmp10 = fn2;
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1119).intl;
-    const stringResult2 = intl3.string(tmp(1119).t.Ed4XQB);
-    cResult[5] = stringResult2;
-    let tmp11 = stringResult2;
-  } else {
-    tmp11 = cResult[5];
-  }
-  if (cResult[6] !== tmp4.title) {
-    const obj2 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp11 };
-    const tmp15 = closure_3(tmp(4786).Text, obj2);
-    cResult[6] = tmp4.title;
-    cResult[7] = tmp15;
-    let tmp13 = tmp15;
-  } else {
-    tmp13 = cResult[7];
-  }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1119).intl;
-    const stringResult3 = intl4.string(tmp(1119).t.EDU2Eg);
-    cResult[8] = stringResult3;
-    let tmp16 = stringResult3;
-  } else {
-    tmp16 = cResult[8];
-  }
-  if (cResult[9] !== tmp4.body) {
-    const obj3 = { style: tmp4.body, variant: "text-sm/medium", color: "text-default", children: tmp16 };
-    const tmp20 = closure_3(tmp(4786).Text, obj3);
-    cResult[9] = tmp4.body;
-    cResult[10] = tmp20;
-    let tmp18 = tmp20;
-  } else {
-    tmp18 = cResult[10];
-  }
-  if (cResult[11] === tmp5) {
-    if (cResult[12] === tmp18) {
-      if (cResult[13] === tmp13) {
-        let tmp21 = cResult[14];
-      }
-      return tmp21;
-    }
-  }
-  const obj4 = { cancelText: tmp6, confirmText: tmp7, onConfirm: tmp5, onCancel: tmp10, children: null };
-  const items = [tmp13, tmp18];
-  obj4.children = items;
-  const tmp22 = closure_4(common_AlertDefault, obj4);
-  cResult[11] = tmp5;
-  cResult[12] = tmp18;
-  cResult[13] = tmp13;
-  cResult[14] = tmp22;
-  tmp21 = tmp22;
-}) : ((onConfirm) => {
+export default function SMSBackupWarningAlert(onConfirm) {
   onConfirm = onConfirm.onConfirm;
   const tmp = closure_5();
   const obj = { cancelText: null, confirmText: null, onConfirm: null, onCancel: null, children: null };
-  const intl = onConfirm(1119).intl;
-  obj.cancelText = intl.string(onConfirm(1119).t["ETE/oC"]);
-  const intl2 = onConfirm(1119).intl;
-  obj.confirmText = intl2.string(onConfirm(1119).t.N86XcP);
+  const intl = onConfirm(1115).intl;
+  obj.cancelText = intl.string(onConfirm(1115).t["ETE/oC"]);
+  const intl2 = onConfirm(1115).intl;
+  obj.confirmText = intl2.string(onConfirm(1115).t.N86XcP);
   obj.onConfirm = function onConfirm() {
     onConfirm();
     actions_AlertActionCreatorsDefault.close();
@@ -121,13 +33,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     return actions_AlertActionCreatorsDefault.close();
   };
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl3 = onConfirm(1119).intl;
-  obj2.children = intl3.string(onConfirm(1119).t.Ed4XQB);
-  const items = [closure_3(onConfirm(4786).Text, obj2), ];
+  const intl3 = onConfirm(1115).intl;
+  obj2.children = intl3.string(onConfirm(1115).t.Ed4XQB);
+  const items = [closure_3(onConfirm(4784).Text, obj2), ];
   const obj3 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl4 = onConfirm(1119).intl;
-  obj3.children = intl4.string(onConfirm(1119).t.EDU2Eg);
-  items[1] = closure_3(onConfirm(4786).Text, obj3);
+  const intl4 = onConfirm(1115).intl;
+  obj3.children = intl4.string(onConfirm(1115).t.EDU2Eg);
+  items[1] = closure_3(onConfirm(4784).Text, obj3);
   obj.children = items;
   return closure_4(common_AlertDefault, obj);
-});
+};

@@ -1,10 +1,10 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16419
+// Function ID: 16420
 // Name: EmojiSourceUtils
-// Dependencies: [5, 17, 4449, 1401, 2]
+// Dependencies: [5, 17, 4445, 1397, 2]
 // Exports: getEmojiSource
 
-// Module 16424 (EmojiSourceUtils)
+// Module 16419 (EmojiSourceUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_4 = async function _getEmojiSource(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -46,7 +46,7 @@ let closure_4 = async function _getEmojiSource(arg0, value) {
           closure_132_3 = undefined;
           c6 = 1;
           c7 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

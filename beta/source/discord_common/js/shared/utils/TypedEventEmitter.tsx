@@ -1,10 +1,10 @@
-// Module ID: 4848
-// Function ID: 4849
+// Module ID: 4846
+// Function ID: 4847
 // Name: TypedEventEmitter
-// Dependencies: [572, 2]
+// Dependencies: [568, 2]
 
-// Module 4848 (TypedEventEmitter)
-import _mod572 from "module_572" /* 572 */;
+// Module 4846 (TypedEventEmitter)
+import _mod568 from "module_568" /* 568 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/TypedEventEmitter.tsx");

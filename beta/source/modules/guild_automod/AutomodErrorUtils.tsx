@@ -1,12 +1,12 @@
-// Module ID: 8234
-// Function ID: 8235
+// Module ID: 8229
+// Function ID: 8230
 // Name: AutomodErrorUtils
-// Dependencies: [2045, 1078, 1119, 8113, 2]
+// Dependencies: [2041, 1074, 1115, 8108, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 8234 (AutomodErrorUtils)
-import util from "util" /* 1119 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 8229 (AutomodErrorUtils)
+import util from "util" /* 1115 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
@@ -58,16 +58,16 @@ function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
 function getAutomodErrorMessageFromMessageData(message) {
   const channel = ChannelStore.getChannel(message.message.channelId);
   if (obj2.isMessageDataEdit(message)) {
-    const intl4 = tmp(1119).intl;
-    let stringResult = intl4.string(tmp(1119).t.bU6o0z);
+    const intl4 = tmp(1115).intl;
+    let stringResult = intl4.string(tmp(1115).t.bU6o0z);
   } else {
     let isThreadResult;
     if (channel != null) {
       isThreadResult = channel.isThread();
     }
     if (isThreadResult) {
-      const intl3 = tmp(1119).intl;
-      stringResult = intl3.string(tmp(1119).t.DVdG9E);
+      const intl3 = tmp(1115).intl;
+      stringResult = intl3.string(tmp(1115).t.DVdG9E);
     } else {
       let isForumPostResult;
       if (channel != null) {
@@ -79,17 +79,17 @@ function getAutomodErrorMessageFromMessageData(message) {
           isForumLikeChannelResult = channel.isForumLikeChannel();
         }
         if (!isForumLikeChannelResult) {
-          const intl = tmp(1119).intl;
-          stringResult = intl.string(tmp(1119).t.zQ69pv);
+          const intl = tmp(1115).intl;
+          stringResult = intl.string(tmp(1115).t.zQ69pv);
         }
       }
-      const intl2 = tmp(1119).intl;
-      stringResult = intl2.string(tmp(1119).t.ipgKDg);
+      const intl2 = tmp(1115).intl;
+      stringResult = intl2.string(tmp(1115).t.ipgKDg);
     }
   }
   return stringResult;
 }
-const AbortCodes = fn(1078).AbortCodes;
+const AbortCodes = fn(1074).AbortCodes;
 class InvalidKeywordError extends Error {
 }
 const prototype = function InvalidRegexPatternError() {

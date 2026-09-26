@@ -1,114 +1,25 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9412
+// Function ID: 9413
 // Name: PlayStationLinkDiscordConsent
-// Dependencies: [19, 9405, 1078, 9388, 21, 558, 568, 1488, 9390, 9411, 9389, 2]
+// Dependencies: [19, 9407, 1074, 9390, 21, 1484, 9392, 9413, 9391, 2]
+// Exports: PlayStationLinkDiscordConsent
 
-// Module 9410 (PlayStationLinkDiscordConsent)
+// Module 9412 (PlayStationLinkDiscordConsent)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const constants = fn(9405).PlayStationLinkModalScenes;
-const PlatformTypes = fn(1078).PlatformTypes;
-const PLAYSTATION_CLIENT_SCOPES = fn(9388).PLAYSTATION_CLIENT_SCOPES;
+let closure_3 = fn(9407).PlayStationLinkModalScenes;
+const PlatformTypes = fn(1074).PlatformTypes;
+const PLAYSTATION_CLIENT_SCOPES = fn(9390).PLAYSTATION_CLIENT_SCOPES;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkDiscordConsent.tsx");
 
-export const PlayStationLinkDiscordConsent = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = navigation(568).c(12);
-  ({ callbackCode, callbackState, platformType } = arg0);
-  const obj = navigation(568);
-  const tmp = navigation;
-  navigation = navigation(1488).useNavigation();
-  if (cResult[0] !== navigation) {
-    const fn = function s() {
-      navigation.push(constants.SUCCESS);
-    };
-    cResult[0] = navigation;
-    cResult[1] = fn;
-    let tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== navigation) {
-    class N {
-      constructor(arg0) {
-        obj = { errorCode: arg0 };
-        arr = closure_0.push(closure_3.ERROR, obj);
-        return;
-      }
-    }
-    cResult[2] = navigation;
-    cResult[3] = N;
-  } else {
-    class N {
-      constructor(arg0) {
-        obj = { errorCode: arg0 };
-        arr = closure_0.push(closure_3.ERROR, obj);
-        return;
-      }
-    }
-  }
-  if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    class N {
-      constructor(arg0) {
-        obj = { errorCode: arg0 };
-        arr = closure_0.push(closure_3.ERROR, obj);
-        return;
-      }
-    }
-  } else {
-    class N {
-      constructor(arg0) {
-        obj = { errorCode: arg0 };
-        arr = closure_0.push(closure_3.ERROR, obj);
-        return;
-      }
-    }
-  }
-  if (platformType === tmp7.PLAYSTATION_STAGING) {
-    class N {
-      constructor(arg0) {
-        obj = { errorCode: arg0 };
-        arr = closure_0.push(closure_3.ERROR, obj);
-        return;
-      }
-    }
-  } else {
-    class N {
-      constructor(arg0) {
-        obj = { errorCode: arg0 };
-        arr = closure_0.push(closure_3.ERROR, obj);
-        return;
-      }
-    }
-  }
-  if (cResult[4] === callbackCode) {
-    class N {
-      constructor(arg0) {
-        obj = { errorCode: arg0 };
-        arr = closure_0.push(closure_3.ERROR, obj);
-        return;
-      }
-    }
-  }
-  const obj2 = navigation(1488);
-  const obj3 = { platformType, callbackCode, callbackState, clientId: tmp8, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: tmp5, onError: tmp6, redirectUri: tmp9 };
-  tmp7 = PlatformTypes;
-  cResult[4] = callbackCode;
-  cResult[5] = callbackState;
-  cResult[6] = tmp8;
-  cResult[7] = tmp6;
-  cResult[8] = tmp5;
-  cResult[9] = platformType;
-  cResult[10] = tmp9;
-  cResult[11] = jsx(tmp(9389).TwoWayLinkDiscordConsent, { platformType, callbackCode, callbackState, clientId: tmp8, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: tmp5, onError: tmp6, redirectUri: tmp9 });
-}) : ((platformType) => {
+export const PlayStationLinkDiscordConsent = function PlayStationLinkDiscordConsent(platformType) {
   platformType = platformType.platformType;
   let navigation;
   ({ callbackCode, callbackState } = platformType);
-  navigation = navigation(1488).useNavigation();
+  navigation = navigation(1484).useNavigation();
   const items = [navigation];
   const items1 = [navigation];
   const callback = noop.useCallback(() => {
@@ -118,14 +29,14 @@ export const PlayStationLinkDiscordConsent = ReactCompilerGating.isReactCompiler
     navigation.push(constants.ERROR, { errorCode });
   }, items1);
   if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    let PLAYSTATION_APPLICATION_ID = tmp(9390).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
+    let PLAYSTATION_APPLICATION_ID = tmp(9392).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
   } else {
-    PLAYSTATION_APPLICATION_ID = tmp(9390).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
+    PLAYSTATION_APPLICATION_ID = tmp(9392).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
   }
   if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    let PLAYSTATION = tmp(9411).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
+    let PLAYSTATION = tmp(9413).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
   } else {
-    PLAYSTATION = tmp(9411).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
+    PLAYSTATION = tmp(9413).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
   }
-  return jsx(navigation(9389).TwoWayLinkDiscordConsent, { platformType, callbackCode, callbackState, clientId: PLAYSTATION_APPLICATION_ID, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: callback, onError: callback1, redirectUri: PLAYSTATION });
-});
+  return jsx(navigation(9391).TwoWayLinkDiscordConsent, { platformType, callbackCode, callbackState, clientId: PLAYSTATION_APPLICATION_ID, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: callback, onError: callback1, redirectUri: PLAYSTATION });
+};

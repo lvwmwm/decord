@@ -1,9 +1,9 @@
 // Module ID: 10203
 // Function ID: 10204
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 10203
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "bb061f50f0c26bcf1817896eee7a9443", name: "ic_raised_hand_list", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "1f11c88bfa9d7d98913e00d032cd6bd3", name: "ic_stage_music", type: "png" });

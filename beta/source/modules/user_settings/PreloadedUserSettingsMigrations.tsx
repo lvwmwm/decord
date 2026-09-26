@@ -1,17 +1,17 @@
-// Module ID: 14776
-// Function ID: 14777
+// Module ID: 14766
+// Function ID: 14767
 // Name: PreloadedUserSettingsMigrations
-// Dependencies: [2045, 1078, 1190, 2030, 7492, 510, 1226, 504, 1221, 2031, 7800, 2]
+// Dependencies: [2041, 1074, 1186, 2026, 7490, 510, 1222, 504, 1217, 2027, 7795, 2]
 
-// Module 14776 (PreloadedUserSettingsMigrations)
+// Module 14766 (PreloadedUserSettingsMigrations)
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
-import wrappers from "wrappers" /* 1221 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1226 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
-import HotspotStore2 from "HotspotStore" /* 7492 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import wrappers from "wrappers" /* 1217 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1222 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import HotspotStore2 from "HotspotStore" /* 7490 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 function migrateHotspotLocation(userContent, HUB_LINK_CHANNEL_NOTICE, CHANNEL_NOTICE_HUBLINK) {
@@ -19,7 +19,7 @@ function migrateHotspotLocation(userContent, HUB_LINK_CHANNEL_NOTICE, CHANNEL_NO
   let hasHiddenHotspotResult = HotspotStore.hasHiddenHotspot(HUB_LINK_CHANNEL_NOTICE);
   if (hasHiddenHotspotResult) {
     if (null == userContent.userContent) {
-      const UserContentSettings = tmp(1190).UserContentSettings;
+      const UserContentSettings = tmp(1186).UserContentSettings;
       userContent.userContent = UserContentSettings.create();
     }
     if (null == userContent.userContent.dismissedContents) {
@@ -29,16 +29,16 @@ function migrateHotspotLocation(userContent, HUB_LINK_CHANNEL_NOTICE, CHANNEL_NO
     }
     let flag = false;
     if (!tmpResult.hasBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_HUBLINK)) {
-      userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_HUBLINK);
+      userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_HUBLINK);
       flag = true;
-      const tmpResult2 = tmp(2030);
+      const tmpResult2 = tmp(2026);
     }
     hasHiddenHotspotResult = flag;
-    tmpResult = tmp(2030);
+    tmpResult = tmp(2026);
   }
   return hasHiddenHotspotResult;
 }
-const ChannelNoticeTypes = fn(1078).ChannelNoticeTypes;
+const ChannelNoticeTypes = fn(1074).ChannelNoticeTypes;
 let items = [
   {
     version: 2,
@@ -96,9 +96,9 @@ let items = [
           return tmp4;
         } else {
           if (value === { Mentions: "Recent Mentions", Unreads: "Inbox" }.Mentions) {
-            let UNREADS = tmp16(1190).InboxTab.MENTIONS;
+            let UNREADS = tmp16(1186).InboxTab.MENTIONS;
           } else {
-            UNREADS = tmp16(1190).InboxTab.UNREADS;
+            UNREADS = tmp16(1186).InboxTab.UNREADS;
           }
           obj.currentTab = UNREADS;
         }
@@ -124,7 +124,7 @@ let items = [
           return { diversitySurrogate };
         }
       ];
-      state = PersistedStore.migrateAndReadStoreState("EmojiStore", items).state;
+      const state = PersistedStore.migrateAndReadStoreState("EmojiStore", items).state;
       if (null == state) {
         return false;
       } else {
@@ -198,25 +198,25 @@ let items = [
       }
       let flag = false;
       if (typeof obj.useRichChatTextBox === "boolean") {
-        const BoolValue = tmp13(1221).BoolValue;
+        const BoolValue = tmp13(1217).BoolValue;
         const obj2 = { value: obj.useRichChatTextBox };
         textAndImages.textAndImages.useRichChatInput = BoolValue.create(obj2);
         flag = true;
       }
       if (typeof obj.renderSpoilers === "string") {
-        const StringValue = tmp13(1221).StringValue;
+        const StringValue = tmp13(1217).StringValue;
         const obj3 = { value: obj.renderSpoilers };
         textAndImages.textAndImages.renderSpoilers = StringValue.create(obj3);
         flag = true;
       }
       if (typeof obj.useThreadSidebar === "boolean") {
-        const BoolValue2 = tmp13(1221).BoolValue;
+        const BoolValue2 = tmp13(1217).BoolValue;
         const obj4 = { value: obj.useThreadSidebar };
         textAndImages.textAndImages.useThreadSidebar = BoolValue2.create(obj4);
         flag = true;
       }
       if (typeof obj.showInAppNotifications === "boolean") {
-        const BoolValue3 = tmp13(1221).BoolValue;
+        const BoolValue3 = tmp13(1217).BoolValue;
         const obj5 = { value: obj.showInAppNotifications };
         textAndImages.notifications.showInAppNotifications = BoolValue3.create(obj5);
         flag = true;
@@ -230,55 +230,55 @@ let items = [
         flag = true;
       }
       if (typeof obj.viewImageDescriptions === "boolean") {
-        const BoolValue4 = tmp13(1221).BoolValue;
+        const BoolValue4 = tmp13(1217).BoolValue;
         const obj6 = { value: obj.viewImageDescriptions };
         textAndImages.textAndImages.viewImageDescriptions = BoolValue4.create(obj6);
         flag = true;
       }
       if (typeof obj.showCommandSuggestions === "boolean") {
-        const BoolValue5 = tmp13(1221).BoolValue;
+        const BoolValue5 = tmp13(1217).BoolValue;
         const obj7 = { value: obj.showCommandSuggestions };
         textAndImages.textAndImages.showCommandSuggestions = BoolValue5.create(obj7);
         flag = true;
       }
       if (typeof obj.alwaysPreviewVideo === "boolean") {
-        const BoolValue6 = tmp13(1221).BoolValue;
+        const BoolValue6 = tmp13(1217).BoolValue;
         const obj8 = { value: obj.alwaysPreviewVideo };
         textAndImages.voiceAndVideo.alwaysPreviewVideo = BoolValue6.create(obj8);
         flag = true;
       }
       if (typeof obj.notifyFriendsOnGoLive === "boolean") {
-        const BoolValue7 = tmp13(1221).BoolValue;
+        const BoolValue7 = tmp13(1217).BoolValue;
         const obj9 = { value: obj.notifyFriendsOnGoLive };
         textAndImages.notifications.notifyFriendsOnGoLive = BoolValue7.create(obj9);
         flag = true;
       }
       if (typeof obj.installShortcutDesktop === "boolean") {
-        const BoolValue8 = tmp13(1221).BoolValue;
+        const BoolValue8 = tmp13(1217).BoolValue;
         const obj10 = { value: obj.installShortcutDesktop };
         textAndImages.gameLibrary.installShortcutDesktop = BoolValue8.create(obj10);
         flag = true;
       }
       if (typeof obj.installShortcutStartMenu === "boolean") {
-        const BoolValue9 = tmp13(1221).BoolValue;
+        const BoolValue9 = tmp13(1217).BoolValue;
         const obj11 = { value: obj.installShortcutStartMenu };
         textAndImages.gameLibrary.installShortcutStartMenu = BoolValue9.create(obj11);
         flag = true;
       }
       if (typeof obj.allowActivityPartyPrivacyFriends === "boolean") {
-        const BoolValue10 = tmp13(1221).BoolValue;
+        const BoolValue10 = tmp13(1217).BoolValue;
         const obj12 = { value: obj.allowActivityPartyPrivacyFriends };
         textAndImages.privacy.allowActivityPartyPrivacyFriends = BoolValue10.create(obj12);
         flag = true;
       }
       if (typeof obj.allowActivityPartyPrivacyVoiceChannel === "boolean") {
-        const BoolValue11 = tmp13(1221).BoolValue;
+        const BoolValue11 = tmp13(1217).BoolValue;
         const obj13 = { value: obj.allowActivityPartyPrivacyVoiceChannel };
         textAndImages.privacy.allowActivityPartyPrivacyVoiceChannel = BoolValue11.create(obj13);
         flag = true;
       }
       if (typeof obj.rtcPanelShowVoiceStates === "boolean") {
-        const BoolValue12 = tmp13(1221).BoolValue;
+        const BoolValue12 = tmp13(1217).BoolValue;
         const obj14 = { value: obj.rtcPanelShowVoiceStates };
         textAndImages.debug.rtcPanelShowVoiceStates = BoolValue12.create(obj14);
         flag = true;
@@ -300,9 +300,9 @@ let items = [
       }
       let tmp4 = false === obj[ChannelNoticeTypes.INVITE];
       if (tmp4) {
-        const CHANNEL_NOTICE_INVITE = tmp(2031).DismissibleContent.CHANNEL_NOTICE_INVITE;
+        const CHANNEL_NOTICE_INVITE = tmp(2027).DismissibleContent.CHANNEL_NOTICE_INVITE;
         if (null == userContent.userContent) {
-          const UserContentSettings = tmp(1190).UserContentSettings;
+          const UserContentSettings = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -312,21 +312,21 @@ let items = [
         }
         let flag2 = false;
         if (!tmpResult.hasBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_INVITE)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_INVITE);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_INVITE);
           flag2 = true;
-          const tmpResult6 = tmp(2030);
+          const tmpResult6 = tmp(2026);
         }
         tmp4 = flag2;
-        tmpResult = tmp(2030);
+        tmpResult = tmp(2026);
       }
       if (tmp4) {
         flag = true;
       }
       let tmp10 = false === obj[tmp3.QUICKSWITCHER];
       if (tmp10) {
-        const CHANNEL_NOTICE_QUICKSWITCHER = tmp(2031).DismissibleContent.CHANNEL_NOTICE_QUICKSWITCHER;
+        const CHANNEL_NOTICE_QUICKSWITCHER = tmp(2027).DismissibleContent.CHANNEL_NOTICE_QUICKSWITCHER;
         if (null == userContent.userContent) {
-          const UserContentSettings2 = tmp(1190).UserContentSettings;
+          const UserContentSettings2 = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings2.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -336,21 +336,21 @@ let items = [
         }
         let flag3 = false;
         if (!tmpResult7.hasBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_QUICKSWITCHER)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_QUICKSWITCHER);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_QUICKSWITCHER);
           flag3 = true;
-          const tmpResult8 = tmp(2030);
+          const tmpResult8 = tmp(2026);
         }
         tmp10 = flag3;
-        tmpResult7 = tmp(2030);
+        tmpResult7 = tmp(2026);
       }
       if (tmp10) {
         flag = true;
       }
       let tmp16 = false === obj[tmp3.GUILD_BOOSTING];
       if (tmp16) {
-        const CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = tmp(2031).DismissibleContent.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION;
+        const CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = tmp(2027).DismissibleContent.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION;
         if (null == userContent.userContent) {
-          const UserContentSettings3 = tmp(1190).UserContentSettings;
+          const UserContentSettings3 = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings3.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -360,12 +360,12 @@ let items = [
         }
         let flag4 = false;
         if (!tmpResult9.hasBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION);
           flag4 = true;
-          const tmpResult10 = tmp(2030);
+          const tmpResult10 = tmp(2026);
         }
         tmp16 = flag4;
-        tmpResult9 = tmp(2030);
+        tmpResult9 = tmp(2026);
       }
       if (tmp16) {
         flag = true;
@@ -383,9 +383,9 @@ let items = [
       const Storage = Storage4.Storage;
       value = Storage.get("hideNag");
       if (value) {
-        const NAGBAR_NOTICE_DOWNLOAD = tmp(2031).DismissibleContent.NAGBAR_NOTICE_DOWNLOAD;
+        const NAGBAR_NOTICE_DOWNLOAD = tmp(2027).DismissibleContent.NAGBAR_NOTICE_DOWNLOAD;
         if (null == userContent.userContent) {
-          const UserContentSettings = tmp(1190).UserContentSettings;
+          const UserContentSettings = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -395,23 +395,23 @@ let items = [
         }
         let flag = false;
         if (!tmpResult.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_DOWNLOAD)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_DOWNLOAD);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_DOWNLOAD);
           flag = true;
-          const tmpResult6 = tmp(2030);
+          const tmpResult6 = tmp(2026);
         }
         value = flag;
-        tmpResult = tmp(2030);
+        tmpResult = tmp(2026);
       }
       let flag2 = false;
       if (value) {
         flag2 = true;
       }
       const Storage2 = tmp(510).Storage;
-      value3 = Storage2.get("hideConnectSpotify");
+      let value3 = Storage2.get("hideConnectSpotify");
       if (value3) {
-        const NAGBAR_NOTICE_CONNECT_SPOTIFY = tmp(2031).DismissibleContent.NAGBAR_NOTICE_CONNECT_SPOTIFY;
+        const NAGBAR_NOTICE_CONNECT_SPOTIFY = tmp(2027).DismissibleContent.NAGBAR_NOTICE_CONNECT_SPOTIFY;
         if (null == userContent.userContent) {
-          const UserContentSettings2 = tmp(1190).UserContentSettings;
+          const UserContentSettings2 = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings2.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -421,12 +421,12 @@ let items = [
         }
         let flag3 = false;
         if (!tmpResult7.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_SPOTIFY)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_SPOTIFY);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_SPOTIFY);
           flag3 = true;
-          const tmpResult8 = tmp(2030);
+          const tmpResult8 = tmp(2026);
         }
         value3 = flag3;
-        tmpResult7 = tmp(2030);
+        tmpResult7 = tmp(2026);
       }
       if (value3) {
         flag2 = true;
@@ -434,9 +434,9 @@ let items = [
       const Storage3 = tmp(510).Storage;
       let value4 = Storage3.get("hideConnectPlayStation");
       if (value4) {
-        const NAGBAR_NOTICE_CONNECT_PLAYSTATION = tmp(2031).DismissibleContent.NAGBAR_NOTICE_CONNECT_PLAYSTATION;
+        const NAGBAR_NOTICE_CONNECT_PLAYSTATION = tmp(2027).DismissibleContent.NAGBAR_NOTICE_CONNECT_PLAYSTATION;
         if (null == userContent.userContent) {
-          const UserContentSettings3 = tmp(1190).UserContentSettings;
+          const UserContentSettings3 = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings3.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -446,12 +446,12 @@ let items = [
         }
         let flag4 = false;
         if (!tmpResult9.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_PLAYSTATION)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_PLAYSTATION);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_CONNECT_PLAYSTATION);
           flag4 = true;
-          const tmpResult10 = tmp(2030);
+          const tmpResult10 = tmp(2026);
         }
         value4 = flag4;
-        tmpResult9 = tmp(2030);
+        tmpResult9 = tmp(2026);
       }
       if (value4) {
         flag2 = true;
@@ -473,9 +473,9 @@ let items = [
       const Storage = Storage4.Storage;
       value = Storage.get("hidePremiumPromo");
       if (value) {
-        const NAGBAR_NOTICE_PREMIUM_PROMO = tmp(2031).DismissibleContent.NAGBAR_NOTICE_PREMIUM_PROMO;
+        const NAGBAR_NOTICE_PREMIUM_PROMO = tmp(2027).DismissibleContent.NAGBAR_NOTICE_PREMIUM_PROMO;
         if (null == userContent.userContent) {
-          const UserContentSettings = tmp(1190).UserContentSettings;
+          const UserContentSettings = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -485,23 +485,23 @@ let items = [
         }
         let flag = false;
         if (!tmpResult.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_PROMO)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_PROMO);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_PROMO);
           flag = true;
-          const tmpResult6 = tmp(2030);
+          const tmpResult6 = tmp(2026);
         }
         value = flag;
-        tmpResult = tmp(2030);
+        tmpResult = tmp(2026);
       }
       let flag2 = false;
       if (value) {
         flag2 = true;
       }
       const Storage2 = tmp(510).Storage;
-      value3 = Storage2.get("hidePremiumTier2TrialEnding");
+      let value3 = Storage2.get("hidePremiumTier2TrialEnding");
       if (value3) {
-        const NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = tmp(2031).DismissibleContent.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING;
+        const NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = tmp(2027).DismissibleContent.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING;
         if (null == userContent.userContent) {
-          const UserContentSettings2 = tmp(1190).UserContentSettings;
+          const UserContentSettings2 = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings2.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -511,12 +511,12 @@ let items = [
         }
         let flag3 = false;
         if (!tmpResult7.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING);
           flag3 = true;
-          const tmpResult8 = tmp(2030);
+          const tmpResult8 = tmp(2026);
         }
         value3 = flag3;
-        tmpResult7 = tmp(2030);
+        tmpResult7 = tmp(2026);
       }
       if (value3) {
         flag2 = true;
@@ -524,9 +524,9 @@ let items = [
       const Storage3 = tmp(510).Storage;
       let value4 = Storage3.get("hidePremiumReactivateNotice");
       if (value4) {
-        const NAGBAR_NOTICE_PREMIUM_REACTIVATE = tmp(2031).DismissibleContent.NAGBAR_NOTICE_PREMIUM_REACTIVATE;
+        const NAGBAR_NOTICE_PREMIUM_REACTIVATE = tmp(2027).DismissibleContent.NAGBAR_NOTICE_PREMIUM_REACTIVATE;
         if (null == userContent.userContent) {
-          const UserContentSettings3 = tmp(1190).UserContentSettings;
+          const UserContentSettings3 = tmp(1186).UserContentSettings;
           userContent.userContent = UserContentSettings3.create();
         }
         if (null == userContent.userContent.dismissedContents) {
@@ -536,12 +536,12 @@ let items = [
         }
         let flag4 = false;
         if (!tmpResult9.hasBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_REACTIVATE)) {
-          userContent.userContent.dismissedContents = tmp(2030).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_REACTIVATE);
+          userContent.userContent.dismissedContents = tmp(2026).addBit(userContent.userContent.dismissedContents, NAGBAR_NOTICE_PREMIUM_REACTIVATE);
           flag4 = true;
-          const tmpResult10 = tmp(2030);
+          const tmpResult10 = tmp(2026);
         }
         value4 = flag4;
-        tmpResult9 = tmp(2030);
+        tmpResult9 = tmp(2026);
       }
       if (value4) {
         flag2 = true;
@@ -578,13 +578,13 @@ let items = [
         let flag = null != lastDismissedOutboundPromotionStartDate;
         if (flag) {
           if (null == userContent.userContent) {
-            const UserContentSettings = tmp(1190).UserContentSettings;
+            const UserContentSettings = tmp(1186).UserContentSettings;
             userContent.userContent = UserContentSettings.create();
           }
           flag = null == userContent.userContent.lastDismissedOutboundPromotionStartDate;
         }
         if (flag) {
-          const StringValue = tmp(1221).StringValue;
+          const StringValue = tmp(1217).StringValue;
           const obj = { value: lastDismissedOutboundPromotionStartDate };
           userContent.userContent.lastDismissedOutboundPromotionStartDate = StringValue.create(obj);
           flag = true;
@@ -600,7 +600,7 @@ let items = [
     version: 17,
     run(textAndImages) {
       const PersistedStore = initializeDefault.PersistedStore;
-      state = PersistedStore.migrateAndReadStoreState("ExpressionSuggestionsPersistedStore", null).state;
+      const state = PersistedStore.migrateAndReadStoreState("ExpressionSuggestionsPersistedStore", null).state;
       if (null == state) {
         return false;
       } else {
@@ -637,7 +637,7 @@ let items = [
       } else {
         if (tmpResult.isSnowflake(value)) {
           if (null == userContent.userContent) {
-            const UserContentSettings = tmp(1190).UserContentSettings;
+            const UserContentSettings = tmp(1186).UserContentSettings;
             userContent.userContent = UserContentSettings.create();
           } else if (null != userContent.userContent) {
             if (null != userContent.userContent.lastReceivedChangelogId) {
@@ -655,7 +655,7 @@ let items = [
           Storage2.remove("lastChangeLogId");
           return false;
         }
-        tmpResult = tmp(7800);
+        tmpResult = tmp(7795);
       }
     },
     cleanup() {

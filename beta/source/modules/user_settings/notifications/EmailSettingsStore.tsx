@@ -1,11 +1,11 @@
-// Module ID: 14050
-// Function ID: 14051
+// Module ID: 14040
+// Function ID: 14041
 // Name: EmailSettingsStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 14050 (EmailSettingsStore)
+// Module 14040 (EmailSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 function reset() {
   c1 = null;

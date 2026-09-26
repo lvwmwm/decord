@@ -1,19 +1,18 @@
-// Module ID: 15764
-// Function ID: 15765
+// Module ID: 15768
+// Function ID: 15769
 // Name: CustomStatusNotificationSettings
-// Dependencies: [8270, 1078, 4444, 2023, 1190, 1245, 558, 11630, 1119, 2]
+// Dependencies: [8265, 1074, 4440, 2019, 1186, 1241, 11754, 1115, 2]
 // Exports: onChange
 
-// Module 15764 (CustomStatusNotificationSettings)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import NotificationConstants from "NotificationConstants" /* 4444 */;
-import SettingsConstants from "SettingsConstants" /* 8270 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
+// Module 15768 (CustomStatusNotificationSettings)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import NotificationConstants from "NotificationConstants" /* 4440 */;
+import SettingsConstants from "SettingsConstants" /* 8265 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
 import size from "module_2" /* 2 */;
 
 function onChange(custom_status_push_notifications) {
@@ -24,8 +23,6 @@ function onChange(custom_status_push_notifications) {
 }
 const AnalyticEvents = Constants.AnalyticEvents;
 const constants = NotificationConstants.NotificationSettingsUpdateType;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -36,14 +33,14 @@ const toggle = SettingBuilders.createToggle({
     return intl.string(util.t["/+OQEs"]);
   },
   parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
-  useValue: () => {
+  useValue() {
     const CustomStatusPushNotifications = UserSettings.CustomStatusPushNotifications;
     const setting = CustomStatusPushNotifications.useSetting();
     return setting !== preloaded_user_settings.CustomStatusPushNotificationType.STATUS_PUSH_DISABLED;
   },
   onValueChange: onChange
 });
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/CustomStatusNotificationSettings.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/CustomStatusNotificationSettings.tsx");
 
 export default toggle;
 export { onChange };

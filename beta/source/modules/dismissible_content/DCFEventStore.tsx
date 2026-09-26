@@ -1,11 +1,11 @@
-// Module ID: 2034
-// Function ID: 2035
+// Module ID: 2030
+// Function ID: 2031
 // Name: DCFEventStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 2034 (DCFEventStore)
+// Module 2030 (DCFEventStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const DCFEventTypes = { DC_SHOWN: 0, [0]: "DC_SHOWN", DC_SHOW_REQUEST: 1, [1]: "DC_SHOW_REQUEST", DC_DISMISSED: 2, [2]: "DC_DISMISSED" };
 let closure_1 = [];

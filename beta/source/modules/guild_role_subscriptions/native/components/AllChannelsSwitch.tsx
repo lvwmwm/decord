@@ -1,144 +1,24 @@
-// Module ID: 18234
-// Function ID: 18235
+// Module ID: 18225
+// Function ID: 18226
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 15497, 1078, 21, 4790, 580, 5775, 558, 568, 4511, 1181, 10056, 1119, 18235, 18236, 2]
+// Dependencies: [19, 17, 15501, 1074, 21, 4788, 576, 5773, 4506, 10043, 1177, 18226, 1115, 18227, 2]
+// Exports: default
 
-// Module 18234 (AllChannelsSwitch)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10056 */;
-import _modDef18235 from "module_18235" /* 18235 */;
-import _modDef18236 from "module_18236" /* 18236 */;
+// Module 18225 (AllChannelsSwitch)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4506 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10043 */;
+import _modDef18226 from "module_18226" /* 18226 */;
+import _modDef18227 from "module_18227" /* 18227 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5775 */;
+import TextStyles_mod from "TextStyles" /* 5773 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const View = fn(17).View;
-const AllChannelAccessOptions = fn(15497).AllChannelAccessOptions;
-const Fonts = fn(1078).Fonts;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm }, row: { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 }, rowLabel: null, rowLabelSelected: null, rowIndicator: null, separator: null };
-let obj4 = {};
-let TextStyles = TextStyles_mod;
-const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
-obj4.flexShrink = 1;
-obj4.marginHorizontal = 16;
-obj2.rowLabel = obj4;
-let TextStyles = TextStyles_mod;
-const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
-obj2.rowLabelSelected = {};
-obj2.rowIndicator = { marginStart: "auto" };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
-let obj5 = {};
-obj2.separator = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
-let closure_7 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(23);
-  ({ icon, label, onPress, selected, disabled } = arg0);
-  const tmp5 = closure_7();
-  if (cResult[0] === (undefined !== disabled && disabled)) {
-    if (cResult[1] === selected) {
-      let tmp6 = cResult[2];
-    }
-    const radioA11yNative = tmp(4511).useRadioA11yNative(tmp6);
-    ({ accessibilityRole, accessibilityState } = radioA11yNative);
-    let tmp8 = selected;
-    if (!selected) {
-      tmp8 = tmp4;
-    }
-    if (cResult[3] !== icon) {
-      const obj2 = { size: tmp(1181).Icon.Sizes.MEDIUM, source: icon };
-      const tmp11 = hasOwnProperty(tmp(1181).Icon, obj2);
-      cResult[3] = icon;
-      cResult[4] = tmp11;
-      let tmp9 = tmp11;
-    } else {
-      tmp9 = cResult[4];
-    }
-    let rowLabelSelected = selected;
-    if (selected) {
-      rowLabelSelected = tmp5.rowLabelSelected;
-    }
-    if (cResult[5] === tmp5.rowLabel) {
-      if (cResult[6] === rowLabelSelected) {
-        let tmp12 = cResult[7];
-      }
-      if (cResult[8] === label) {
-        if (cResult[9] === tmp12) {
-          let tmp13 = cResult[10];
-        }
-        if (cResult[11] === selected) {
-          if (cResult[12] === tmp5.rowIndicator) {
-            let tmp16 = cResult[13];
-          }
-          if (cResult[14] === accessibilityRole) {
-            if (cResult[15] === accessibilityState) {
-              if (cResult[16] === onPress) {
-                if (cResult[17] === tmp5.row) {
-                  if (cResult[18] === tmp8) {
-                    if (cResult[19] === tmp9) {
-                      if (cResult[20] === tmp13) {
-                        if (cResult[21] === tmp16) {
-                          let tmp19 = cResult[22];
-                        }
-                        return tmp19;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          const obj3 = { style: tmp5.row, accessibilityRole, accessibilityState, disabled: tmp8, onPress, children: null };
-          const items = [tmp9, tmp13, tmp16];
-          obj3.children = items;
-          const tmp22 = timestampProducer(TouchableHitBoxDefault, obj3);
-          cResult[14] = accessibilityRole;
-          cResult[15] = accessibilityState;
-          cResult[16] = onPress;
-          cResult[17] = tmp5.row;
-          cResult[18] = tmp8;
-          cResult[19] = tmp9;
-          cResult[20] = tmp13;
-          cResult[21] = tmp16;
-          cResult[22] = tmp22;
-          tmp19 = tmp22;
-        }
-        const obj4 = { style: tmp5.rowIndicator, active: selected };
-        const tmp18 = hasOwnProperty(tmp(1181).RadioIndicator, obj4);
-        cResult[11] = selected;
-        cResult[12] = tmp5.rowIndicator;
-        cResult[13] = tmp18;
-        tmp16 = tmp18;
-      }
-      const obj5 = { style: tmp12, numberOfLines: 1, ellipsizeMode: "tail", children: label };
-      const tmp15 = hasOwnProperty(tmp(1181).LegacyText, obj5);
-      cResult[8] = label;
-      cResult[9] = tmp12;
-      cResult[10] = tmp15;
-      tmp13 = tmp15;
-    }
-    const items1 = [tmp5.rowLabel, rowLabelSelected];
-    cResult[5] = tmp5.rowLabel;
-    cResult[6] = rowLabelSelected;
-    cResult[7] = items1;
-    tmp12 = items1;
-    const tmpResult = tmp(4511);
-  }
-  const obj6 = { selected, disabled: undefined !== disabled && disabled };
-  cResult[0] = undefined !== disabled && disabled;
-  cResult[1] = selected;
-  cResult[2] = obj6;
-  tmp6 = obj6;
-}) : ((arg0) => {
+function Row(arg0) {
   ({ selected, disabled } = arg0);
   ({ icon, label, onPress } = arg0);
   if (disabled === undefined) {
@@ -167,135 +47,32 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[2] = hasOwnProperty(native.RadioIndicator, { style: tmp.rowIndicator, active: selected });
   obj2.children = items;
   return tmp5(tmp6, obj2);
-});
-ReactCompilerGating = fn(558);
-let obj6 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
+}
+const View = fn(17).View;
+const AllChannelAccessOptions = fn(15501).AllChannelAccessOptions;
+const Fonts = fn(1074).Fonts;
+const jsxProd = fn(21);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const createStyles = fn(4788);
+let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm }, row: { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 }, rowLabel: null, rowLabelSelected: null, rowIndicator: null, separator: null };
+let obj4 = {};
+let TextStyles = TextStyles_mod;
+const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
+obj4.flexShrink = 1;
+obj4.marginHorizontal = 16;
+obj2.rowLabel = obj4;
+let TextStyles = TextStyles_mod;
+const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
+obj2.rowLabelSelected = {};
+obj2.rowIndicator = { marginStart: "auto" };
+const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
+const obj5 = {};
+obj2.separator = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
+let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = setChannelAccessFormat(568).c(27);
-  ({ channelAccessFormat, setChannelAccessFormat } = arg0);
-  ({ style, disabled } = arg0);
-  const tmp5 = closure_7();
-  if (cResult[0] === style) {
-    if (cResult[1] === tmp5.container) {
-      let tmp6 = cResult[2];
-    }
-    if (cResult[3] !== tmp4) {
-      const obj2 = { disabled: tmp4 };
-      cResult[3] = tmp4;
-      cResult[4] = obj2;
-      let tmp7 = obj2;
-    } else {
-      tmp7 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t["vs2T+B"]);
-      cResult[5] = stringResult;
-      let tmp9 = stringResult;
-    } else {
-      tmp9 = cResult[5];
-    }
-    if (cResult[6] !== setChannelAccessFormat) {
-      const fn = function w() {
-        return setChannelAccessFormat(AllChannelAccessOptions.SOME_CHANNELS_ACCESS);
-      };
-      cResult[6] = setChannelAccessFormat;
-      cResult[7] = fn;
-      let tmp12 = fn;
-    } else {
-      tmp12 = cResult[7];
-    }
-    if (cResult[8] === tmp4) {
-      if (cResult[9] === tmp13) {
-        if (cResult[10] === tmp12) {
-          let tmp14 = cResult[11];
-        }
-        if (cResult[12] !== tmp5.separator) {
-          const obj3 = { style: tmp5.separator };
-          const tmp22 = closure_5(View, obj3);
-          cResult[12] = tmp5.separator;
-          cResult[13] = tmp22;
-          let tmp19 = tmp22;
-        } else {
-          tmp19 = cResult[13];
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1119).intl;
-          const stringResult1 = intl2.string(tmp(1119).t.l4Tr7X);
-          cResult[14] = stringResult1;
-          let tmp23 = stringResult1;
-        } else {
-          tmp23 = cResult[14];
-        }
-        if (cResult[15] !== setChannelAccessFormat) {
-          const fn2 = function f() {
-            return setChannelAccessFormat(AllChannelAccessOptions.ALL_CHANNELS_ACCESS);
-          };
-          cResult[15] = setChannelAccessFormat;
-          cResult[16] = fn2;
-          let tmp25 = fn2;
-        } else {
-          tmp25 = cResult[16];
-        }
-        if (cResult[17] === tmp4) {
-          if (cResult[18] === tmp26) {
-            if (cResult[19] === tmp25) {
-              let tmp27 = cResult[20];
-            }
-            if (cResult[21] === tmp27) {
-              if (cResult[22] === tmp6) {
-                if (cResult[23] === tmp7) {
-                  if (cResult[24] === tmp14) {
-                    if (cResult[25] === tmp19) {
-                      let tmp32 = cResult[26];
-                    }
-                    return tmp32;
-                  }
-                }
-              }
-            }
-            const obj4 = { style: tmp6, accessibilityRole: "radiogroup", accessibilityState: tmp7, children: null };
-            const items = [tmp14, tmp19, tmp27];
-            obj4.children = items;
-            const tmp35 = closure_6(View, obj4);
-            cResult[21] = tmp27;
-            cResult[22] = tmp6;
-            cResult[23] = tmp7;
-            cResult[24] = tmp14;
-            cResult[25] = tmp19;
-            cResult[26] = tmp35;
-            tmp32 = tmp35;
-          }
-        }
-        const obj5 = { icon: _modDef18236, label: tmp23, selected: channelAccessFormat === tmp11.ALL_CHANNELS_ACCESS, onPress: tmp25, disabled: tmp4 };
-        const tmp31 = closure_5(closure_8, obj5);
-        cResult[17] = tmp4;
-        cResult[18] = channelAccessFormat === tmp11.ALL_CHANNELS_ACCESS;
-        cResult[19] = tmp25;
-        cResult[20] = tmp31;
-        tmp27 = tmp31;
-      }
-    }
-    const obj6 = { icon: _modDef18235, label: tmp9, selected: channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS, onPress: tmp12, disabled: tmp4 };
-    const tmp18 = closure_5(closure_8, obj6);
-    cResult[8] = tmp4;
-    cResult[9] = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
-    cResult[10] = tmp12;
-    cResult[11] = tmp18;
-    tmp14 = tmp18;
-    tmp11 = AllChannelAccessOptions;
-  }
-  const items1 = [tmp5.container, style];
-  cResult[0] = style;
-  cResult[1] = tmp5.container;
-  cResult[2] = items1;
-  tmp6 = items1;
-}) : ((style) => {
+export default function AllChannelsSwitch(style) {
   ({ channelAccessFormat, setChannelAccessFormat: require, disabled } = style);
   if (disabled === undefined) {
     disabled = false;
@@ -304,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { style: null, accessibilityRole: "radiogroup", accessibilityState: { disabled }, children: null };
   const items = [tmp.container, style.style];
   obj.style = items;
-  const obj2 = { icon: _modDef18235, label: null, selected: null, onPress: null, disabled: null };
+  const obj2 = { icon: _modDef18226, label: null, selected: null, onPress: null, disabled: null };
   const intl = util.intl;
   obj2.label = intl.string(util.t["vs2T+B"]);
   obj2.selected = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
@@ -312,8 +89,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return require(AllChannelAccessOptions.SOME_CHANNELS_ACCESS);
   };
   obj2.disabled = disabled;
-  const items1 = [closure_5(closure_8, obj2), closure_5(View, { style: tmp.separator }), ];
-  const obj4 = { icon: _modDef18236, label: null, selected: null, onPress: null, disabled: null };
+  const items1 = [closure_5(Row, obj2), closure_5(View, { style: tmp.separator }), ];
+  const obj4 = { icon: _modDef18227, label: null, selected: null, onPress: null, disabled: null };
   const intl2 = util.intl;
   obj4.label = intl2.string(util.t.l4Tr7X);
   obj4.selected = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;
@@ -321,7 +98,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return require(AllChannelAccessOptions.ALL_CHANNELS_ACCESS);
   };
   obj4.disabled = disabled;
-  items1[2] = closure_5(closure_8, obj4);
+  items1[2] = closure_5(Row, obj4);
   obj.children = items1;
   return closure_6(View, obj);
-});
+};

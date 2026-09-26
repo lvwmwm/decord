@@ -1,9 +1,9 @@
 // Module ID: 10174
 // Function ID: 10175
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 10174
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "640773adfa92ac6570f53272a991a094", name: "ic_move_to_audience", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/auth", width: 100, height: 100, scales: [1], hash: "2466a8cae3eebcc6d13072f6ff1957c4", name: "img-auth-qrcode-overlay", type: "png" });

@@ -1,90 +1,24 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15178
+// Function ID: 15179
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1376, 21, 4790, 558, 568, 7871, 5854, 4635, 1181, 1119, 2486, 4786, 5935, 7481, 2]
+// Dependencies: [19, 1372, 21, 4788, 7866, 5854, 4632, 1177, 7474, 4784, 1115, 2482, 5936, 2]
+// Exports: default
 
-// Module 15174 (FamilyCenterTopUsersBottomSheet)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import _modDef2486 from "module_2486" /* 2486 */;
-import UserUtilsDefault from "UserUtils" /* 4635 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import TableRow2 from "TableRow" /* 5854 */;
-import TableRowGroup from "TableRowGroup" /* 5935 */;
-import ActionSheet from "ActionSheet" /* 7481 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7871 */;
+// Module 15178 (FamilyCenterTopUsersBottomSheet)
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import _modDef2482 from "module_2482" /* 2482 */;
+import UserUtilsDefault from "UserUtils" /* 4632 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5936 */;
+import ActionSheet from "ActionSheet" /* 7474 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7866 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4790);
-let closure_6 = createStyles.createStyles({ header: { textAlign: "center" } });
-let ReactCompilerGating = fn(558);
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userActivity) => {
-  const cResult = c.c(18);
-  userActivity = userActivity.userActivity;
-  if (cResult[0] === userActivity.call_count) {
-    if (cResult[1] === userActivity.dms_sent) {
-      if (cResult[2] === userActivity.user_id) {
-        let tmp7 = cResult[6];
-        let tmp8 = cResult[7];
-      }
-      const _Symbol = Symbol;
-      if (tmp7 !== Symbol.for("react.early_return_sentinel")) {
-        return tmp7;
-      } else {
-        if (cResult[11] !== tmp8) {
-          const obj2 = { size: tmp(1181).AvatarSizes.SMALL, user: tmp8, guildId: "Array" };
-          const tmp20 = React4(tmp(1181).Avatar, obj2);
-          cResult[11] = tmp8;
-          cResult[12] = tmp20;
-          let tmp18 = tmp20;
-        } else {
-          tmp18 = cResult[12];
-        }
-        if (cResult[13] === tmp4) {
-          if (cResult[14] === tmp5) {
-            if (cResult[15] === tmp6) {
-            }
-          }
-        }
-        const obj4 = { label: tmp6, subLabel: tmp5, icon: tmp18 };
-        const tmp23 = React4(tmp4, obj4);
-        cResult[13] = tmp4;
-        cResult[14] = tmp5;
-        cResult[15] = tmp6;
-        cResult[16] = tmp18;
-        cResult[17] = tmp23;
-      }
-    }
-  }
-  const user = UserStore.getUser(userActivity.user_id);
-  if (null == user) {
-    cResult[0] = userActivity.call_count;
-    cResult[1] = userActivity.dms_sent;
-    cResult[2] = userActivity.user_id;
-    cResult[3] = undefined;
-    cResult[4] = undefined;
-    cResult[5] = undefined;
-    cResult[6] = null;
-    cResult[7] = user;
-    tmp7 = null;
-    tmp8 = user;
-  } else {
-    if (cResult[8] === userActivity.call_count) {
-      const TableRow = tmp(5854).TableRow;
-      const name = UserUtilsDefault.getName(user);
-    }
-    const topUserOrGuildDescription = tmp(7871).getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
-    cResult[8] = userActivity.call_count;
-    cResult[9] = userActivity.dms_sent;
-    cResult[10] = topUserOrGuildDescription;
-    const tmpResult = tmp(7871);
-  }
-}) : ((userActivity) => {
+function UserRow(userActivity) {
   userActivity = userActivity.userActivity;
   const user = UserStore.getUser(userActivity.user_id);
   if (null == user) {
@@ -96,82 +30,25 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userActivity) =
     obj2.subLabel = topUserOrGuildDescription;
     const obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
     obj2.icon = React4(native.Avatar, obj4);
-    return React4(TableRow2.TableRow, obj2);
+    return React4(TableRow.TableRow, obj2);
   }
-});
-ReactCompilerGating = fn(558);
+}
+const jsxProd = fn(21);
+({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
+const createStyles = fn(4788);
+let closure_6 = createStyles.createStyles({ header: { textAlign: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterTopUsersBottomSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((topUserActivities) => {
-  const cResult = c.c(11);
-  topUserActivities = topUserActivities.topUserActivities;
-  const tmp4 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(_modDef2486.BxbvS7);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.header) {
-    const obj2 = { variant: "text-md/bold", style: tmp4.header, children: first };
-    const tmp10 = React4(tmp(4786).Text, obj2);
-    cResult[1] = tmp4.header;
-    cResult[2] = tmp10;
-    let tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== topUserActivities) {
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function v(userActivity) {
-        return closure_1_4(closure_1_7, { userActivity }, userActivity.user_id);
-      };
-      cResult[5] = fn;
-      let tmp12 = fn;
-    } else {
-      tmp12 = cResult[5];
-    }
-    const mapped = topUserActivities.map(tmp12);
-    cResult[3] = topUserActivities;
-    cResult[4] = mapped;
-  } else {
-    if (cResult[6] !== cResult[4]) {
-      const obj3 = { hasIcons: true, children: tmp11 };
-      const tmp17 = React4(tmp(5935).TableRowGroup, obj3);
-      cResult[6] = tmp11;
-      cResult[7] = tmp17;
-      let tmp15 = tmp17;
-    } else {
-      tmp15 = cResult[7];
-    }
-    if (cResult[8] === tmp8) {
-      if (cResult[9] === tmp15) {
-        let tmp18 = cResult[10];
-      }
-      return tmp18;
-    }
-    const obj4 = { children: null };
-    const items = [tmp8, tmp15];
-    obj4.children = items;
-    const tmp20 = hasOwnProperty(tmp(7481).ActionSheet, obj4);
-    cResult[8] = tmp8;
-    cResult[9] = tmp15;
-    cResult[10] = tmp20;
-    tmp18 = tmp20;
-  }
-}) : ((topUserActivities) => {
+export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   topUserActivities = topUserActivities.topUserActivities;
   const obj = { children: null };
   const obj2 = { variant: "text-md/bold", style: closure_6().header, children: null };
   const intl = util.intl;
-  obj2.children = intl.string(_modDef2486.BxbvS7);
+  obj2.children = intl.string(_modDef2482.BxbvS7);
   const items = [React4(Text_Text.Text, obj2), ];
   const tmp = closure_6();
-  items[1] = React4(TableRowGroup.TableRowGroup, { hasIcons: true, children: topUserActivities.map((userActivity) => closure_1_4(closure_1_7, { userActivity }, userActivity.user_id)) });
+  items[1] = React4(TableRowGroup.TableRowGroup, { hasIcons: true, children: topUserActivities.map((userActivity) => closure_1_4(UserRow, { userActivity }, userActivity.user_id)) });
   obj.children = items;
   return hasOwnProperty(ActionSheet.ActionSheet, obj);
-});
+};

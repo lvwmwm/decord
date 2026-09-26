@@ -1,25 +1,27 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15078
+// Function ID: 15079
 // Name: AccountWebAuthnViewSetting
-// Dependencies: [19, 14959, 1376, 8270, 1078, 558, 568, 5142, 1119, 6868, 504, 11630, 14962, 2]
+// Dependencies: [19, 14963, 1372, 8265, 1074, 5140, 1115, 6870, 504, 11754, 14966, 2]
 
-// Module 15074 (AccountWebAuthnViewSetting)
+// Module 15078 (AccountWebAuthnViewSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6868 */;
+import util from "util" /* 1115 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6870 */;
 import noop from "module_19" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14959 */;
-import UserStore from "UserStore" /* 1376 */;
+import WebAuthnStore from "WebAuthnStore" /* 14963 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-fn(558);
-const ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+const SettingBuilders = fn(11754);
+const route = SettingBuilders.createRoute({
+  useTitle() {
+    const intl = util.intl;
+    return intl.string(util.t.y7SXYX);
+  },
+  parent: fn(8265).MobileUserSettings.ACCOUNT,
+  usePreNavigationAction: function useAccountCanUseWebAuthnView() {
+    return noop.useCallback(() => {
       currentUser = currentUser.getCurrentUser();
       let flag;
       if (currentUser != null) {
@@ -37,93 +39,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         AlertActionCreatorsDefault.show(obj2);
       }
       return flag;
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => noop.useCallback(() => {
-  currentUser = currentUser.getCurrentUser();
-  let flag;
-  if (currentUser != null) {
-    flag = currentUser.verified;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  if (!flag) {
-    const obj2 = { title: null, body: null };
-    const intl = util.intl;
-    obj2.title = intl.string(util.t.v740sh);
-    const intl2 = util.intl;
-    obj2.body = intl2.string(util.t.uggF7o);
-    AlertActionCreatorsDefault.show(obj2);
-  }
-  return flag;
-}, []));
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (!WebAuthnStore.hasFetchedCredentials()) {
-    const webAuthnCredentials = tmp(6868).fetchWebAuthnCredentials();
-    const tmpResult = tmp(6868);
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [tmp4];
-    const fn = function s() {
-      const intl = util.intl;
-      return intl.formatToPlainString(util.t.n8mZ0X, { count: credentials.getCredentials().length });
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  tmp4 = WebAuthnStore;
-  return initialize.useStateFromStores(tmp6, tmp7);
-}) : (() => {
-  if (!WebAuthnStore.hasFetchedCredentials()) {
-    const webAuthnCredentials = WebAuthnActionCreators.fetchWebAuthnCredentials();
-  }
-  const items = [WebAuthnStore];
-  return initialize.useStateFromStores(items, () => {
-    const intl = util.intl;
-    return intl.formatToPlainString(util.t.n8mZ0X, { count: credentials.getCredentials().length });
-  });
-});
-const route = SettingBuilders.createRoute({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.y7SXYX);
+    }, []);
   },
-  parent: fn(8270).MobileUserSettings.ACCOUNT,
-  usePreNavigationAction: tmp2,
-  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(2);
-    if (!WebAuthnStore.hasFetchedCredentials()) {
-      const webAuthnCredentials = tmp(6868).fetchWebAuthnCredentials();
-      const tmpResult = tmp(6868);
-    }
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [tmp4];
-      const fn = function s() {
-        const intl = util.intl;
-        return intl.formatToPlainString(util.t.n8mZ0X, { count: credentials.getCredentials().length });
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp6 = items;
-      tmp7 = fn;
-    } else {
-      [tmp6, tmp7] = cResult;
-    }
-    tmp4 = WebAuthnStore;
-    return initialize.useStateFromStores(tmp6, tmp7);
-  }) : (() => {
+  useTrailing: function useAccountSecurityKeysSettingTrailing() {
     if (!WebAuthnStore.hasFetchedCredentials()) {
       const webAuthnCredentials = WebAuthnActionCreators.fetchWebAuthnCredentials();
     }
@@ -132,10 +50,10 @@ const route = SettingBuilders.createRoute({
       const intl = util.intl;
       return intl.formatToPlainString(util.t.n8mZ0X, { count: credentials.getCredentials().length });
     });
-  }),
+  },
   unsearchable: true,
   screen: {
-    route: fn(1078).UserSettingsSections.WEBAUTHN_VIEW,
+    route: fn(1074).UserSettingsSections.WEBAUTHN_VIEW,
     getComponent() {
       return require("UserSettingsWebAuthn").default;
     }

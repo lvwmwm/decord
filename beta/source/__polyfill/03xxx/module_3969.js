@@ -1,46 +1,32 @@
 // Module ID: 3969
 // Function ID: 3970
-// Dependencies: [3970, 3971, 3972, 3973, 3974]
+// Dependencies: [2117]
 
 // Module 3969
-import module_3970 from "module_3970" /* 3970 */;
-import module_3971 from "module_3971" /* 3971 */;
-import module_3972 from "module_3972" /* 3972 */;
-import date_mod from "module_3973" /* 3973 */;
-import date_mod from "module_3974" /* 3974 */;
+import module_2117 from "module_2117" /* 2117 */;
 
-if (!module_3970) {
-  const obj = { default: module_3970 };
-  let tmp3 = obj;
+if (!module_2117) {
+  const obj2 = { default: module_2117 };
+  let obj = obj2;
 } else {
-  tmp3 = module_3970;
+  obj = module_2117;
 }
-if (!module_3971) {
-  const obj2 = { default: module_3971 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3971;
-}
-if (!module_3972) {
-  const obj3 = { default: module_3972 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3972;
-}
-let date = date_mod;
-if (!date) {
-  const obj4 = { default: date };
-  let tmp9 = obj4;
-} else {
-  tmp9 = date;
-}
-let date = date_mod;
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
+const date = {
+  ordinalNumber(arg0, arg1) {
+    return Number(arg0) + "e";
+  },
+  era: obj.default({ values: { narrow: ["v.C.", "n.C."], abbreviated: ["v.Chr.", "n.Chr."], wide: ["voor Christus", "na Christus"] }, defaultWidth: "wide" }),
+  quarter: obj.default({
+    values: { narrow: ["1", "2", "3", "4"], abbreviated: ["K1", "K2", "K3", "K4"], wide: ["1e kwartaal", "2e kwartaal", "3e kwartaal", "4e kwartaal"] },
+    defaultWidth: "wide",
+    argumentCallback(arg0) {
+      return arg0 - 1;
+    }
+  }),
+  month: obj.default({ values: { narrow: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], abbreviated: ["jan.", "feb.", "mrt.", "apr.", "mei", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."], wide: ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"] }, defaultWidth: "wide" }),
+  day: obj.default({ values: { narrow: ["Z", "M", "D", "W", "D", "V", "Z"], short: ["zo", "ma", "di", "wo", "do", "vr", "za"], abbreviated: ["zon", "maa", "din", "woe", "don", "vri", "zat"], wide: ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"] }, defaultWidth: "wide" }),
+  dayPeriod: obj.default({ values: { narrow: { am: "AM", pm: "PM", midnight: "middernacht", noon: "het middaguur", morning: "'s ochtends", afternoon: "'s middags", evening: "'s avonds", night: "'s nachts" }, abbreviated: { am: "AM", pm: "PM", midnight: "middernacht", noon: "het middaguur", morning: "'s ochtends", afternoon: "'s middags", evening: "'s avonds", night: "'s nachts" }, wide: { am: "AM", pm: "PM", midnight: "middernacht", noon: "het middaguur", morning: "'s ochtends", afternoon: "'s middags", evening: "'s avonds", night: "'s nachts" } }, defaultWidth: "wide" })
+};
 
-export default { code: "nl", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default date;
 export default exports.default;

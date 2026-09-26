@@ -1,15 +1,15 @@
-// Module ID: 8059
-// Function ID: 8060
+// Module ID: 8054
+// Function ID: 8055
 // Name: ApplicationCommandStore
-// Dependencies: [32, 7556, 2099, 7800, 504, 577, 2]
+// Dependencies: [32, 7554, 2095, 7795, 504, 573, 2]
 
-// Module 8059 (ApplicationCommandStore)
+// Module 8054 (ApplicationCommandStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7800 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7795 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7556 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7554 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
 function handleInit() {
@@ -57,7 +57,7 @@ function handleSetActiveCommand(arg0) {
     tmp2.commandOrigin = commandOrigin;
     tmp2.source = source;
     obj2 = {};
-    options = undefined;
+    let options;
     if (command != null) {
       options = command.options;
     }
@@ -137,7 +137,7 @@ function handleUpdateOptionStates(channelId) {
           }
         }
       } else {
-        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "IconComponent" };
+        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "HermesInternal" };
         if (tmp.activeOptionName === tmp9) {
           tmp.activeOptionName = null;
         }
@@ -208,7 +208,7 @@ prototype["getActiveOption"] = function getActiveOption(channelId) {
   const activeCommand = tmp2.activeCommand;
   let found;
   if (activeCommand != null) {
-    options = activeCommand.options;
+    const options = activeCommand.options;
     if (options != null) {
       found = options.find((name) => name.name === activeOptionName.activeOptionName);
     }
@@ -262,7 +262,7 @@ prototype["getOption"] = function getOption(arg0, arg1) {
   const activeCommand = dependencyMap[arg0].activeCommand;
   let found;
   if (activeCommand != null) {
-    options = activeCommand.options;
+    const options = activeCommand.options;
     if (options != null) {
       found = options.find((name) => name.name === closure_0);
     }

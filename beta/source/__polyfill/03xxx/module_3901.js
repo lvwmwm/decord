@@ -1,46 +1,33 @@
 // Module ID: 3901
 // Function ID: 3902
-// Dependencies: [3902, 3903, 3904, 3905, 3906]
+// Dependencies: [2117]
 
 // Module 3901
-import module_3902 from "module_3902" /* 3902 */;
-import module_3903 from "module_3903" /* 3903 */;
-import module_3904 from "module_3904" /* 3904 */;
-import date_mod from "module_3905" /* 3905 */;
-import date_mod from "module_3906" /* 3906 */;
+import module_2117 from "module_2117" /* 2117 */;
 
-if (!module_3902) {
-  const obj = { default: module_3902 };
-  let tmp3 = obj;
+if (!module_2117) {
+  const obj2 = { default: module_2117 };
+  let obj = obj2;
 } else {
-  tmp3 = module_3902;
+  obj = module_2117;
 }
-if (!module_3903) {
-  const obj2 = { default: module_3903 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3903;
-}
-if (!module_3904) {
-  const obj3 = { default: module_3904 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3904;
-}
-let date = date_mod;
-if (!date) {
-  const obj4 = { default: date };
-  let tmp9 = obj4;
-} else {
-  tmp9 = date;
-}
-let date = date_mod;
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
+const obj3 = { narrow: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], abbreviated: ["Jan", "Feb", "M\u00E4r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"], wide: ["Januar", "Februar", "M\u00E4rz", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"] };
+const date = {
+  ordinalNumber(arg0) {
+    return Number(arg0) + ".";
+  },
+  era: obj.default({ values: { narrow: ["v.Chr.", "n.Chr."], abbreviated: ["v.Chr.", "n.Chr."], wide: ["vor Christus", "nach Christus"] }, defaultWidth: "wide" }),
+  quarter: obj.default({
+    values: { narrow: ["1", "2", "3", "4"], abbreviated: ["Q1", "Q2", "Q3", "Q4"], wide: ["1. Quartal", "2. Quartal", "3. Quartal", "4. Quartal"] },
+    defaultWidth: "wide",
+    argumentCallback(arg0) {
+      return arg0 - 1;
+    }
+  }),
+  month: obj.default({ values: obj3, formattingValues: { narrow: obj3.narrow, abbreviated: ["Jan.", "Feb.", "M\u00E4rz", "Apr.", "Mai", "Juni", "Juli", "Aug.", "Sep.", "Okt.", "Nov.", "Dez."], wide: obj3.wide }, defaultWidth: "wide" }),
+  day: obj.default({ values: { narrow: ["S", "M", "D", "M", "D", "F", "S"], short: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"], abbreviated: ["So.", "Mo.", "Di.", "Mi.", "Do.", "Fr.", "Sa."], wide: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"] }, defaultWidth: "wide" }),
+  dayPeriod: obj.default({ values: { narrow: { am: "vm.", pm: "nm.", midnight: "Mitternacht", noon: "Mittag", morning: "Morgen", afternoon: "Nachm.", evening: "Abend", night: "Nacht" }, abbreviated: { am: "vorm.", pm: "nachm.", midnight: "Mitternacht", noon: "Mittag", morning: "Morgen", afternoon: "Nachmittag", evening: "Abend", night: "Nacht" }, wide: { am: "vormittags", pm: "nachmittags", midnight: "Mitternacht", noon: "Mittag", morning: "Morgen", afternoon: "Nachmittag", evening: "Abend", night: "Nacht" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "vm.", pm: "nm.", midnight: "Mitternacht", noon: "Mittag", morning: "morgens", afternoon: "nachm.", evening: "abends", night: "nachts" }, abbreviated: { am: "vorm.", pm: "nachm.", midnight: "Mitternacht", noon: "Mittag", morning: "morgens", afternoon: "nachmittags", evening: "abends", night: "nachts" }, wide: { am: "vormittags", pm: "nachmittags", midnight: "Mitternacht", noon: "Mittag", morning: "morgens", afternoon: "nachmittags", evening: "abends", night: "nachts" } }, defaultFormattingWidth: "wide" })
+};
 
-export default { code: "de", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default date;
 export default exports.default;

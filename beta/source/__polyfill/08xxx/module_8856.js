@@ -1,9 +1,9 @@
 // Module ID: 8856
 // Function ID: 8857
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8857, 8842, 8789]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8857, 8773, 8784]
 
 // Module 8856
-import _modDef8789 from "module_8789" /* 8789 */;
+import _modDef8784 from "module_8784" /* 8784 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -11,7 +11,7 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const RadialGradient = importDefault;
+const Symbol = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,12 +32,12 @@ function _isNativeReflectConstruct() {
   }
 }
 const jsx = fn(21).jsx;
-class RadialGradient {
+class Symbol {
   constructor() {
     self = this;
-    tmp = c2(this, RadialGradient);
+    tmp = c2(this, Symbol);
     tmp2 = closure_4;
-    obj = closure_4(RadialGradient);
+    obj = closure_4(Symbol);
     tmp3 = closure_3;
     if (metroRequire()) {
       tmp7 = globalThis;
@@ -52,35 +52,21 @@ class RadialGradient {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RadialGradient, _modDef8789);
+_inherits(Symbol, _modDef8784);
 const entry = {
   key: "render",
   value: function render() {
     const self = this;
     const props = this.props;
-    ({ rx, ry, r, cx, cy, fx } = props);
-    if (undefined === fx) {
-      fx = cx;
-    }
-    let fy = props.fy;
-    const obj = { fx, fy: null, rx: null, ry: null, cx: null, cy: null };
-    if (undefined === fy) {
-      fy = cy;
-    }
-    obj.fy = fy;
-    if (!rx) {
-      rx = r;
-    }
-    obj.rx = rx;
-    if (!ry) {
-      ry = r;
-    }
-    obj.ry = ry;
-    obj.cx = cx;
-    obj.cy = cy;
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(RadialGradient(8842)(props, this));
-    return jsx(RadialGradient(8857), {
+    const obj2 = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const merged = Object.assign({ name: props.id });
+    const merged1 = Object.assign(Symbol(8773)(props));
+    obj2.children = props.children;
+    return jsx(Symbol(8857), {
       ref(arg0) {
         return self.refMethod(arg0);
       }
@@ -88,8 +74,7 @@ const entry = {
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(RadialGradient, items);
-importDefaultResultResult.displayName = "RadialGradient";
-importDefaultResultResult.defaultProps = { cx: "50%", cy: "50%", r: "50%" };
+const importDefaultResultResult = _createClass(Symbol, items);
+importDefaultResultResult.displayName = "Symbol";
 
 export default importDefaultResultResult;

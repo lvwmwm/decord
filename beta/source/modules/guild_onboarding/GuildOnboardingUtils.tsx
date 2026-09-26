@@ -1,21 +1,21 @@
-// Module ID: 7385
-// Function ID: 7386
+// Module ID: 7383
+// Function ID: 7384
 // Name: GuildOnboardingUtils
-// Dependencies: [2045, 5532, 2100, 2067, 4431, 7380, 1078, 4418, 558, 568, 504, 1389, 5311, 7381, 4436, 1374, 560, 2013, 7386, 2]
-// Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding
+// Dependencies: [2041, 5530, 2096, 2063, 4427, 7378, 1074, 4414, 504, 1385, 5309, 7379, 4432, 1370, 558, 2009, 7384, 2]
+// Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 7385 (GuildOnboardingUtils)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import FlagUtilsAll from "FlagUtils" /* 1389 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5311 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 7381 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
-import GuildChannelStore from "GuildChannelStore" /* 2100 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+// Module 7383 (GuildOnboardingUtils)
+import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import FlagUtilsAll from "FlagUtils" /* 1385 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5309 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 7379 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 
@@ -82,55 +82,21 @@ function areStatesEqual(arg0, arg1) {
   }
   return tmp;
 }
-let closure_7 = fn(2100).GUILD_SELECTABLE_CHANNELS_KEY;
-const OnboardingConnectionType = fn(7380).OnboardingConnectionType;
-const Constants = fn(1078);
+let closure_7 = fn(2096).GUILD_SELECTABLE_CHANNELS_KEY;
+const OnboardingConnectionType = fn(7378).OnboardingConnectionType;
+const Constants = fn(1074);
 ({ GuildFeatures: closure_11, Permissions: closure_12 } = Constants);
-const GuildMemberFlags = fn(4418).GuildMemberFlags;
+const GuildMemberFlags = fn(4414).GuildMemberFlags;
 let date = new Date(1682488800000);
-fn(558);
-let ReactCompilerGating = fn(558);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore, PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      guild = GuildStore.getGuild(closure_0);
-      let hasItem;
-      if (guild != null) {
-        const features = guild.features;
-        hasItem = features.has(constants.COMMUNITY);
-      }
-      let tmp4 = hasItem;
-      const canResult = PermissionStore.can(constants2.MANAGE_GUILD, guild);
-      if (tmp4) {
-        tmp4 = canResult;
-      }
-      if (tmp4) {
-        tmp4 = canResult1;
-      }
-      return tmp4;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/guild_onboarding/GuildOnboardingUtils.tsx");
+
+export const ONBOARDING_EPOCH = date;
+export const useGuildOnboardingSettingsAvailable = function useGuildOnboardingSettingsAvailable(arg0) {
   _require = arg0;
   const items = [GuildStore, PermissionStore];
   return require("initialize").useStateFromStores(items, () => {
-    guild = GuildStore.getGuild(closure_0);
+    const guild = GuildStore.getGuild(closure_0);
     let hasItem;
     if (guild != null) {
       const features = guild.features;
@@ -146,234 +112,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp4;
   });
-});
-ReactCompilerGating = fn(558);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr, arr2) => {
-  _require = arg0;
-  const cResult = require("c").c(8);
-  let filter = globalThis;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildChannelStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function h() {
-      return GuildChannelStore.getChannels(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  arr2 = require("initialize").useStateFromStores(first, tmp6)[closure_7];
-  if (cResult[3] === arr2) {
-    if (cResult[4] === arr) {
-      if (cResult[5] === arr2) {
-        return cResult[6];
-      }
-    }
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function f(channel) {
-      return channel.channel;
-    };
-    cResult[7] = fn2;
-    let tmp7 = fn2;
-  } else {
-    tmp7 = cResult[7];
-  }
-  const mapped = arr2.map(tmp7);
-  const tmpResult = require("initialize");
-  closure_129_0 = new filter.Set();
-  const item = arr.forEach((options) => {
-    options = options.options;
-    let item = options.forEach((channelIds) => {
-      if (channelIds != null) {
-        channelIds = channelIds.channelIds;
-        if (channelIds != null) {
-          const item = channelIds.forEach((item) => {
-            set.add(item);
-          });
-        }
-      }
-    });
-  });
-  const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter((isCategory) => {
-    const isCategoryResult = isCategory.isCategory();
-    let tmp2 = !isCategoryResult;
-    if (!isCategoryResult) {
-      tmp2 = !isCategory.isThread();
-    }
-    if (tmp2) {
-      tmp2 = !isRoleRequiredDefault(isCategory);
-    }
-    return tmp2;
-  });
-  const items1 = [
-    found.filter((id) => {
-      let hasItem = set.has(id.id);
-      if (!hasItem) {
-        hasItem = null != id.parent_id && set.has(id.parent_id);
-        const tmp3 = null != id.parent_id && set.has(id.parent_id);
-      }
-      return hasItem;
-    }),
-
-  ];
-  filter = found.filter;
-  items1[1] = filter((id) => {
-    let hasItem = set.has(id.id);
-    if (!hasItem) {
-      hasItem = null != id.parent_id && set.has(id.parent_id);
-      const tmp3 = null != id.parent_id && set.has(id.parent_id);
-    }
-    return !hasItem;
-  });
-  cResult[3] = arr2;
-  cResult[4] = arr;
-  cResult[5] = arr2;
-  cResult[6] = items1;
-}) : ((arg0, arr, arr2) => {
-  _require = arg0;
-  const items = [GuildChannelStore];
-  const obj = require("initialize");
-  const mapped = require("initialize").useStateFromStores(items, () => GuildChannelStore.getChannels(closure_0))[closure_7].map((channel) => channel.channel);
-  arr2 = require("initialize").useStateFromStores(items, () => GuildChannelStore.getChannels(closure_0))[closure_7];
-  closure_129_0 = new Set();
-  const item = arr.forEach((options) => {
-    options = options.options;
-    let item = options.forEach((channelIds) => {
-      if (channelIds != null) {
-        channelIds = channelIds.channelIds;
-        if (channelIds != null) {
-          const item = channelIds.forEach((item) => {
-            set.add(item);
-          });
-        }
-      }
-    });
-  });
-  const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter((isCategory) => {
-    const isCategoryResult = isCategory.isCategory();
-    let tmp2 = !isCategoryResult;
-    if (!isCategoryResult) {
-      tmp2 = !isCategory.isThread();
-    }
-    if (tmp2) {
-      tmp2 = !isRoleRequiredDefault(isCategory);
-    }
-    return tmp2;
-  });
-  const items1 = [
-    found.filter((id) => {
-      let hasItem = set.has(id.id);
-      if (!hasItem) {
-        hasItem = null != id.parent_id && set.has(id.parent_id);
-        const tmp3 = null != id.parent_id && set.has(id.parent_id);
-      }
-      return hasItem;
-    }),
-    found.filter((id) => {
-      let hasItem = set.has(id.id);
-      if (!hasItem) {
-        hasItem = null != id.parent_id && set.has(id.parent_id);
-        const tmp3 = null != id.parent_id && set.has(id.parent_id);
-      }
-      return !hasItem;
-    })
-  ];
-  return items1;
-});
-ReactCompilerGating = fn(558);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const channel = ChannelStore.getChannel(closure_0);
-      let isNotNullishResult = GlobalUtils.isNotNullish(channel);
-      if (isNotNullishResult) {
-        let tmp5 = null != channel;
-        if (tmp5) {
-          const canChannelBeDefaultResult = DefaultChannelUtils.canChannelBeDefault(channel.guild_id, channel.id);
-          if (!canChannelBeDefaultResult) {
-            tmp5 = canChannelBeDefaultResult;
-          } else {
-            const isForumChannelResult = channel.isForumChannel();
-            const canEveryoneRole = PermissionUtilsAll.canEveryoneRole;
-            let SEND_MESSAGES_IN_THREADS = constants2;
-            if (isForumChannelResult) {
-              SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
-              let canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS, channel);
-            } else {
-              canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
-            }
-          }
-          const tmpResult = DefaultChannelUtils;
-        }
-        isNotNullishResult = tmp5;
-      }
-      return isNotNullishResult;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp6);
-}) : ((arg0) => {
-  _require = arg0;
-  const items = [ChannelStore];
-  return require("initialize").useStateFromStores(items, () => {
-    const channel = ChannelStore.getChannel(closure_0);
-    let isNotNullishResult = GlobalUtils.isNotNullish(channel);
-    if (isNotNullishResult) {
-      let tmp5 = null != channel;
-      if (tmp5) {
-        const canChannelBeDefaultResult = DefaultChannelUtils.canChannelBeDefault(channel.guild_id, channel.id);
-        if (!canChannelBeDefaultResult) {
-          tmp5 = canChannelBeDefaultResult;
-        } else {
-          const isForumChannelResult = channel.isForumChannel();
-          const canEveryoneRole = PermissionUtilsAll.canEveryoneRole;
-          let SEND_MESSAGES_IN_THREADS = constants2;
-          if (isForumChannelResult) {
-            SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
-            let canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS, channel);
-          } else {
-            canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
-          }
-        }
-        const tmpResult = DefaultChannelUtils;
-      }
-      isNotNullishResult = tmp5;
-    }
-    return isNotNullishResult;
-  });
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_onboarding/GuildOnboardingUtils.tsx");
-
-export const ONBOARDING_EPOCH = date;
-export const useGuildOnboardingSettingsAvailable = tmp4;
+};
 export const isGuildOnboardingSettingsAvailable = function isGuildOnboardingSettingsAvailable(id) {
-  guild = GuildStore.getGuild(id);
+  const guild = GuildStore.getGuild(id);
   let hasItem;
   if (guild != null) {
     const features = guild.features;
@@ -437,7 +178,7 @@ export const showRulesInOnboarding = function showRulesInOnboarding(stateFromSto
 export const getChannelCoverageForOnboarding = function getChannelCoverageForOnboarding(guildId, arr, defaultChannelIds) {
   const mapped = GuildChannelStore.getChannels(guildId)[closure_7].map((channel) => channel.channel);
   const set = new Set();
-  let item = arr.forEach((options) => {
+  const item = arr.forEach((options) => {
     options = options.options;
     let item = options.forEach((channelIds) => {
       if (channelIds != null) {
@@ -482,7 +223,58 @@ export const getChannelCoverageForOnboarding = function getChannelCoverageForOnb
   ];
   return items;
 };
-export const useChannelCoverageForOnboarding = tmp5;
+export const useChannelCoverageForOnboarding = function useChannelCoverageForOnboarding(arg0, arr, arr2) {
+  _require = arg0;
+  const items = [GuildChannelStore];
+  const obj = require("initialize");
+  const mapped = require("initialize").useStateFromStores(items, () => GuildChannelStore.getChannels(closure_0))[closure_7].map((channel) => channel.channel);
+  arr2 = require("initialize").useStateFromStores(items, () => GuildChannelStore.getChannels(closure_0))[closure_7];
+  closure_129_0 = new Set();
+  let item = arr.forEach((options) => {
+    options = options.options;
+    let item = options.forEach((channelIds) => {
+      if (channelIds != null) {
+        channelIds = channelIds.channelIds;
+        if (channelIds != null) {
+          const item = channelIds.forEach((item) => {
+            set.add(item);
+          });
+        }
+      }
+    });
+  });
+  const item1 = arr2.forEach((item) => set.add(item));
+  const found = mapped.filter((isCategory) => {
+    const isCategoryResult = isCategory.isCategory();
+    let tmp2 = !isCategoryResult;
+    if (!isCategoryResult) {
+      tmp2 = !isCategory.isThread();
+    }
+    if (tmp2) {
+      tmp2 = !isRoleRequiredDefault(isCategory);
+    }
+    return tmp2;
+  });
+  const items1 = [
+    found.filter((id) => {
+      let hasItem = set.has(id.id);
+      if (!hasItem) {
+        hasItem = null != id.parent_id && set.has(id.parent_id);
+        const tmp3 = null != id.parent_id && set.has(id.parent_id);
+      }
+      return hasItem;
+    }),
+    found.filter((id) => {
+      let hasItem = set.has(id.id);
+      if (!hasItem) {
+        hasItem = null != id.parent_id && set.has(id.parent_id);
+        const tmp3 = null != id.parent_id && set.has(id.parent_id);
+      }
+      return !hasItem;
+    })
+  ];
+  return items1;
+};
 export const isChattableChannelId = function isChattableChannelId(arg0) {
   const channel = ChannelStore.getChannel(arg0);
   let tmp = null != channel;
@@ -505,7 +297,36 @@ export const isChattableChannelId = function isChattableChannelId(arg0) {
   return tmp;
 };
 export { isChattableChannel };
-export const useIsChattableChannel = tmp6;
+export const useIsChattableChannel = function useIsChattableChannel(arg0) {
+  _require = arg0;
+  const items = [ChannelStore];
+  return require("initialize").useStateFromStores(items, () => {
+    const channel = ChannelStore.getChannel(closure_0);
+    let isNotNullishResult = GlobalUtils.isNotNullish(channel);
+    if (isNotNullishResult) {
+      let tmp5 = null != channel;
+      if (tmp5) {
+        const canChannelBeDefaultResult = DefaultChannelUtils.canChannelBeDefault(channel.guild_id, channel.id);
+        if (!canChannelBeDefaultResult) {
+          tmp5 = canChannelBeDefaultResult;
+        } else {
+          const isForumChannelResult = channel.isForumChannel();
+          const canEveryoneRole = PermissionUtilsAll.canEveryoneRole;
+          let SEND_MESSAGES_IN_THREADS = constants2;
+          if (isForumChannelResult) {
+            SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
+            let canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS, channel);
+          } else {
+            canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
+          }
+        }
+        const tmpResult = DefaultChannelUtils;
+      }
+      isNotNullishResult = tmp5;
+    }
+    return isNotNullishResult;
+  });
+};
 export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultChannelIds(arg0, arr, arr, arg3) {
   closure_0 = arg0;
   let fn = arg3;
@@ -526,7 +347,7 @@ export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultC
       if (channelIds == null) {
         channelIds = [];
       }
-      options = required.options;
+      const options = required.options;
       const push = navigation.push;
       const items = [];
       HermesBuiltin.arraySpread(options.reduce((acc, channelIds) => {
@@ -594,74 +415,7 @@ export const getChattableDefaultChannels = function getChattableDefaultChannels(
   ];
   return items;
 };
-export const useChattableDefaultChannels = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  const cResult = require("c").c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GuildChannelStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    if (cResult[2] === arg0) {
-      let tmp6 = cResult[3];
-      let tmp7 = cResult[4];
-    }
-    const tmpResult = require("initialize");
-    return tmpResult.useStateFromStores(first, tmp6, tmp7, areStatesEqual);
-  }
-  const fn = function s() {
-    const items = [];
-    const items1 = [];
-    const iter = GuildChannelStore.getChannels(closure_0)[closure_7][Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp2 = nextResult;
-      let obj = DefaultChannelUtils;
-      let canChannelBeDefaultResult = obj.canChannelBeDefault(nextResult.channel.guild_id, nextResult.channel.id);
-      if (canChannelBeDefaultResult) {
-        let obj2 = set;
-        let hasItem = set.has(tmp2.channel.id);
-        if (hasItem) {
-          let channel = tmp2.channel;
-          hasItem = !channel.isCategory();
-        }
-        if (!hasItem) {
-          let channel2 = tmp2.channel;
-          let isThreadResult = channel2.isThread();
-          let hasItem1 = !isThreadResult;
-          if (!isThreadResult) {
-            hasItem1 = null != tmp2.channel.parent_id;
-          }
-          if (hasItem1) {
-            hasItem1 = obj2.has(tmp2.channel.parent_id);
-          }
-          hasItem = hasItem1;
-        }
-        canChannelBeDefaultResult = hasItem;
-      }
-      if (canChannelBeDefaultResult) {
-        {}[tmp2.channel.id] = tmp2;
-        let arr = items.push(tmp2.channel);
-        if (isChattableChannel(tmp2.channel)) {
-          let arr2 = items1.push(tmp2.channel.id);
-        }
-      }
-      continue;
-    }
-    const items2 = [items1, items];
-    return items2;
-  };
-  let items1 = [arg0, arg1];
-  cResult[1] = arg1;
-  cResult[2] = arg0;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp7 = items1;
-  tmp6 = fn;
-}) : ((arg0, arg1) => {
+export const useChattableDefaultChannels = function useChattableDefaultChannels(arg0, arg1) {
   _require = arg0;
   let items = [GuildChannelStore];
   let items1 = [arg0, arg1];
@@ -707,14 +461,14 @@ export const useChattableDefaultChannels = ReactCompilerGating.isReactCompilerEn
     const items2 = [items1, items];
     return items2;
   }, items1, areStatesEqual);
-});
-export const getSelectedRoleIds = function getSelectedRoleIds(found) {
-  const mapped = found.map((roleIds) => roleIds.roleIds);
+};
+export const getSelectedRoleIds = function getSelectedRoleIds(selectedOptions) {
+  const mapped = selectedOptions.map((roleIds) => roleIds.roleIds);
   const flatResult = mapped.flat();
   return new Set(mapped.flat().filter(GlobalUtils.isNotNullish));
 };
-export const getSelectedChannelIds = function getSelectedChannelIds(found) {
-  const mapped = found.map((channelIds) => channelIds.channelIds);
+export const getSelectedChannelIds = function getSelectedChannelIds(selectedOptions) {
+  const mapped = selectedOptions.map((channelIds) => channelIds.channelIds);
   const flatResult = mapped.flat();
   return new Set(mapped.flat().filter(GlobalUtils.isNotNullish));
 };
@@ -754,8 +508,8 @@ export const getApplicationConnectionState = function getApplicationConnectionSt
   });
   const connected = [];
   const notConnected = [];
-  const authStore = connected(FetchState[18]).default;
-  FetchState = connected(FetchState[18]).FetchState;
+  const authStore = connected(FetchState[16]).default;
+  FetchState = connected(FetchState[16]).FetchState;
   const item = found.forEach((application_id) => {
     application_id = application_id.application_id;
     if (!obj.isNullOrEmpty(application_id)) {

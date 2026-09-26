@@ -1,12 +1,12 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 10511
+// Function ID: 10512
 // Name: BugReportManager
-// Dependencies: [5, 17, 1350, 1078, 4999, 1368, 12995, 12997, 1259, 7397, 13059, 2]
+// Dependencies: [5, 17, 1346, 1074, 4997, 1364, 10390, 10392, 1255, 7395, 10512, 2]
 
-// Module 13058 (BugReportManager)
+// Module 10511 (BugReportManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1350 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 const require = fn;
 function showNotification(uri) {
@@ -21,7 +21,7 @@ function showNotification(uri) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ function showNotification(uri) {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         c3 = tmp;
@@ -87,7 +87,7 @@ function showNotification(uri) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -126,15 +126,15 @@ function showNotification(uri) {
                 };
                 return obj10;
               }
-              obj2 = tmp2(1368);
+              obj2 = tmp2(1364);
             }
             closure_128_0 = tmp7;
             BUG_REPORTER = constants.BUG_REPORTER;
-            notificationDuration = tmp2(12995).getNotificationDuration(BUG_REPORTER);
-            const obj5 = tmp2(12995);
+            notificationDuration = tmp2(10390).getNotificationDuration(BUG_REPORTER);
+            const obj5 = tmp2(10390);
             const obj11 = { type: BUG_REPORTER, duration: notificationDuration, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
-            const obj6 = tmp3(12997);
-            obj11.key = tmp2(1259).v4();
+            const obj6 = tmp3(10392);
+            obj11.key = tmp2(1255).v4();
             obj11.image = closure_128_0;
             uri = undefined;
             if (closure_128_0 != null) {
@@ -144,11 +144,11 @@ function showNotification(uri) {
             obj11.onDismiss = function onDismiss() {
               closure_1_1(dependencyMap[7]).clearNotification();
             };
-            const obj8 = tmp2(1259);
-            obj11.inAppNotificationId = tmp2(1259).v4();
+            const obj8 = tmp2(1255);
+            obj11.inAppNotificationId = tmp2(1255).v4();
             obj6.enqueueNotification(obj11);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -170,8 +170,8 @@ function showNotification(uri) {
 }
 get_ActivityIndicator = fn(17);
 const NativeModules = get_ActivityIndicator.NativeModules;
-const InAppNotificationTypes = fn(1078).InAppNotificationTypes;
-const NativePermissionStatus = fn(4999).NativePermissionStatus;
+const InAppNotificationTypes = fn(1074).InAppNotificationTypes;
+const NativePermissionStatus = fn(4997).NativePermissionStatus;
 const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(NativeModules.ScreenshotHelper);
 class BugReportManager extends tmp4 {
 }
@@ -197,7 +197,7 @@ prototype["initBugReporter"] = function initBugReporter() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -255,7 +255,7 @@ prototype["initBugReporter"] = function initBugReporter() {
             })();
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;

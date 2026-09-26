@@ -1,34 +1,18 @@
-// Module ID: 15044
-// Function ID: 15045
+// Module ID: 15048
+// Function ID: 15049
 // Name: useSafetyHubLoading
-// Dependencies: [8739, 558, 568, 504, 2]
+// Dependencies: [8734, 504, 2]
+// Exports: default
 
-// Module 15044 (useSafetyHubLoading)
+// Module 15048 (useSafetyHubLoading)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import SafetyHubStore from "SafetyHubStore" /* 8739 */;
+import SafetyHubStore from "SafetyHubStore" /* 8734 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubLoading.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SafetyHubStore];
-    const fn = function n() {
-      return fetching.isFetching();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+export default function useIsSafetyHubLoading() {
   const items = [SafetyHubStore];
   return initialize.useStateFromStores(items, () => fetching.isFetching());
-});
+};

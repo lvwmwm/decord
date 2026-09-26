@@ -1,57 +1,19 @@
-// Module ID: 16141
-// Function ID: 16142
+// Module ID: 16145
+// Function ID: 16146
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 7821, 558, 568, 504, 16142, 2]
+// Dependencies: [19, 7816, 504, 16146, 2]
+// Exports: default
 
-// Module 16141 (useGetProductsFromSkus)
+// Module 16145 (useGetProductsFromSkus)
 import _mod19 from "module_19" /* 19 */;
-import uniqByDefault from "uniqBy" /* 16142 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import uniqByDefault from "uniqBy" /* 16146 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
 import size from "module_2" /* 2 */;
 
 _mod19.useCallback;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useGetProductsFromSkus.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = stateFromStores(568).c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CollectiblesCategoryStore];
-    const fn = function n() {
-      return productByStoreListingId.products;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const obj = stateFromStores(568);
-  stateFromStores = stateFromStores(504).useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const fn2 = function s(arr) {
-      const mapped = arr.map((item) => {
-        value = stateFromStores.get(item);
-        productByStoreListingId = value;
-        if (null != value) {
-          productByStoreListingId = value;
-          if (null != value.variantGroupStoreListingId) {
-            productByStoreListingId = productByStoreListingId.getProductByStoreListingId(value.variantGroupStoreListingId);
-          }
-        }
-        return productByStoreListingId;
-      });
-      return uniqByDefault(mapped.filter((item) => null != item), "storeListingId");
-    };
-    cResult[2] = stateFromStores;
-    cResult[3] = fn2;
-    let tmp8 = fn2;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (() => {
+export default function useGetProductsFromSkus() {
   const items = [CollectiblesCategoryStore];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => productByStoreListingId.products);
   const items1 = [stateFromStores];
@@ -69,4 +31,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     });
     return uniqByDefault(mapped.filter((item) => null != item), "storeListingId");
   }, items1);
-});
+};

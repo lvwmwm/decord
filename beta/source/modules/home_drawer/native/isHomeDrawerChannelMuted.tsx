@@ -1,52 +1,20 @@
-// Module ID: 16669
-// Function ID: 16670
+// Module ID: 16660
+// Function ID: 16661
 // Name: isHomeDrawerChannelMuted
-// Dependencies: [4433, 2049, 4971, 558, 568, 504, 2]
+// Dependencies: [4429, 2045, 4969, 504, 2]
+// Exports: useIsHomeDrawerChannelMuted
 
-// Module 16669 (isHomeDrawerChannelMuted)
+// Module 16660 (isHomeDrawerChannelMuted)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4433 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 require = fn;
-const isThread = fn(2049).isThread;
-const ReactCompilerGating = fn(558);
+const isThread = fn(2045).isThread;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelMuted.tsx");
 
-export const useIsHomeDrawerChannelMuted = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [JoinedThreadsStore, UserGuildSettingsStore];
-    const fn = function s() {
-      return (type) => {
-        const tmp = closure_1_3(type.type);
-        if (tmp) {
-          if (muted.isMuted(type.id)) {
-            return true;
-          }
-        }
-        const tmp3 = tmp ? type.parent_id : type.id;
-        let result = null != tmp3;
-        if (result) {
-          result = guildOrCategoryOrChannelMuted.isGuildOrCategoryOrChannelMuted(type.guild_id, tmp3);
-        }
-        return result;
-      };
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp4 = items;
-    tmp5 = fn;
-    tmp6 = items1;
-  } else {
-    [tmp4, tmp5, tmp6] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5, tmp6, initialize.statesWillNeverBeEqual);
-}) : (() => {
+export const useIsHomeDrawerChannelMuted = function useIsHomeDrawerChannelMuted() {
   const items = [JoinedThreadsStore, UserGuildSettingsStore];
   return initialize.useStateFromStores(items, () => (type) => {
     const tmp = closure_1_3(type.type);
@@ -62,4 +30,4 @@ export const useIsHomeDrawerChannelMuted = ReactCompilerGating.isReactCompilerEn
     }
     return result;
   }, [], initialize.statesWillNeverBeEqual);
-});
+};

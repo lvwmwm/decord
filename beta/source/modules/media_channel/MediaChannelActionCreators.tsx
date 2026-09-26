@@ -1,12 +1,12 @@
-// Module ID: 12042
-// Function ID: 12043
+// Module ID: 12159
+// Function ID: 12160
 // Name: MediaChannelActionCreators
-// Dependencies: [5, 1078, 577, 1275, 4691, 2]
+// Dependencies: [5, 1074, 573, 1271, 4688, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 12042 (MediaChannelActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 12159 (MediaChannelActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -52,7 +52,7 @@ let closure_6 = async function _unfurlEmbedUrl(urls) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -97,11 +97,11 @@ let closure_6 = async function _unfurlEmbedUrl(urls) {
           const obj = { value: value.body, done: true };
           return obj;
         }
-      } catch (tmp19) {
-        closure_3 = tmp19;
+      } catch (tmp23) {
+        closure_3 = tmp23;
         if (tmp4 === c4) {
           c6 = tmp2;
-          throw tmp19;
+          throw tmp23;
         } else {
           c5 = tmp;
         }
@@ -109,7 +109,7 @@ let closure_6 = async function _unfurlEmbedUrl(urls) {
     }
   })();
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_channel/MediaChannelActionCreators.tsx");
 

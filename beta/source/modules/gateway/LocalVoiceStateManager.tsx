@@ -1,19 +1,19 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 13967
+// Function ID: 13968
 // Name: LocalVoiceStateManager
-// Dependencies: [2045, 1996, 4840, 1078, 13975, 2023, 1389, 13978, 2]
+// Dependencies: [2041, 1992, 4838, 1074, 13965, 2019, 1385, 13968, 2]
 
-// Module 13977 (LocalVoiceStateManager)
-import FlagUtils from "FlagUtils" /* 1389 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import isClipsEnabled from "isClipsEnabled" /* 13978 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import RTCRegionStore from "RTCRegionStore" /* 4840 */;
-import StateManager from "StateManager" /* 13975 */;
+// Module 13967 (LocalVoiceStateManager)
+import FlagUtils from "FlagUtils" /* 1385 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import isClipsEnabled from "isClipsEnabled" /* 13968 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import RTCRegionStore from "RTCRegionStore" /* 4838 */;
+import StateManager from "StateManager" /* 13965 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelTypes: hasOwnProperty, VoiceFlags: metroRequire } = Constants);
 class LocalVoiceStateManager extends tmp3 {
   constructor(arg0) {

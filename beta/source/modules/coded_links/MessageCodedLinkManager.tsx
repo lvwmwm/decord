@@ -1,16 +1,16 @@
-// Module ID: 17834
-// Function ID: 17835
+// Module ID: 17825
+// Function ID: 17826
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7736, 2045, 4774, 4773, 4778, 17835, 8686, 7600, 12237, 7397, 17842, 2]
+// Dependencies: [5, 7731, 2041, 4772, 4771, 4776, 17826, 8681, 7598, 12353, 7395, 17833, 2]
 
-// Module 17834 (MessageCodedLinkManager)
-import findCodedLinksDefault from "findCodedLinks" /* 4773 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17842 */;
+// Module 17825 (MessageCodedLinkManager)
+import findCodedLinksDefault from "findCodedLinks" /* 4771 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17833 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7736 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import InviteStore from "InviteStore" /* 4774 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7731 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import InviteStore from "InviteStore" /* 4772 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 const require = fn;
 function resolveMessageCodedLinks(content) {
@@ -39,7 +39,7 @@ function resolveMessageCodedLinks(content) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -70,7 +70,7 @@ function resolveMessageCodedLinks(content) {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             } catch (tmp10) {
               c0 = tmp;
               throw tmp10;
@@ -90,7 +90,7 @@ function resolveMessageCodedLinks(content) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -121,7 +121,7 @@ function resolveMessageCodedLinks(content) {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             } catch (tmp10) {
               c0 = tmp;
               throw tmp10;
@@ -200,7 +200,7 @@ function resolveMessageCodedLinks(content) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -231,7 +231,7 @@ function resolveMessageCodedLinks(content) {
                     return obj;
                   }
                   c0 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 } catch (tmp10) {
                   c0 = tmp;
                   throw tmp10;
@@ -251,7 +251,7 @@ function resolveMessageCodedLinks(content) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -282,7 +282,7 @@ function resolveMessageCodedLinks(content) {
                     return obj;
                   }
                   c0 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 } catch (tmp10) {
                   c0 = tmp;
                   throw tmp10;

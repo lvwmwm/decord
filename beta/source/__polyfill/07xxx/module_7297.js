@@ -1,20 +1,26 @@
 // Module ID: 7297
 // Function ID: 7298
-// Dependencies: [7298]
-// Exports: getDistanceForDirection
+// Dependencies: []
+// Exports: getInvertedMultiplier
 
 // Module 7297
-import _mod7298 from "module_7298" /* 7298 */;
 
-require = arg1;
-const dependencyMap = arg6;
-
-export const getDistanceForDirection = function getDistanceForDirection(layout, gestureDirection, arg2) {
-  const invertedMultiplier = _mod7298.getInvertedMultiplier(gestureDirection, arg2);
-  if ("vertical" !== gestureDirection) {
-    if ("vertical-inverted" !== gestureDirection) {
-      return layout.width * invertedMultiplier;
+export function getInvertedMultiplier(gestureDirection, arg1) {
+  if ("vertical" === gestureDirection) {
+    return 1;
+  } else if ("vertical-inverted" === gestureDirection) {
+    return -1;
+  } else if ("horizontal" === gestureDirection) {
+    let num2 = 1;
+    if (arg1) {
+      num2 = -1;
     }
+    return num2;
+  } else if ("horizontal-inverted" === gestureDirection) {
+    let num = -1;
+    if (arg1) {
+      num = 1;
+    }
+    return num;
   }
-  return layout.height * invertedMultiplier;
-};
+}

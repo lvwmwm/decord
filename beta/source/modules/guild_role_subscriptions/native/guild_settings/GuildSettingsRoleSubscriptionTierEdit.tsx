@@ -1,48 +1,105 @@
-// Module ID: 18247
-// Function ID: 18248
+// Module ID: 18238
+// Function ID: 18239
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4425, 18202, 15474, 1078, 2042, 21, 4790, 580, 558, 568, 1488, 18222, 18210, 7529, 10090, 4786, 1181, 18248, 5220, 7403, 18242, 18240, 18216, 15481, 18197, 12405, 1119, 18249, 15496, 4489, 5871, 7653, 9900, 2031, 18250, 1984, 10957, 10958, 9901, 2]
+// Dependencies: [32, 19, 17, 4421, 18193, 15478, 1074, 2038, 21, 4788, 576, 1484, 18205, 18201, 7527, 10111, 4784, 5218, 1177, 18239, 7400, 18233, 18231, 18208, 15485, 18188, 12505, 18240, 1115, 15500, 4485, 5873, 7651, 9922, 2027, 18241, 1980, 10921, 10922, 9923, 2]
 // Exports: default
 
-// Module 18247 (GuildSettingsRoleSubscriptionTierEdit)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import native from "native" /* 1181 */;
-import useNavigation from "useNavigation" /* 1488 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
-import ToastUtils from "ToastUtils" /* 4489 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7529 */;
-import FormHeaderDefault from "FormHeader" /* 10090 */;
-import DismissibleActionSheet from "DismissibleActionSheet" /* 10958 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12405 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15481 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18197 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18210 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18216 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18222 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18240 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18242 */;
-import _modDef18248 from "module_18248" /* 18248 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 18249 */;
+// Module 18238 (GuildSettingsRoleSubscriptionTierEdit)
+import nativeDefault from "native" /* 576 */;
+import native from "native" /* 1177 */;
+import useNavigation from "useNavigation" /* 1484 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import ToastUtils from "ToastUtils" /* 4485 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7400 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7527 */;
+import FormHeaderDefault from "FormHeader" /* 10111 */;
+import DismissibleActionSheet from "DismissibleActionSheet" /* 10922 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12505 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15485 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18188 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18201 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18205 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18208 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18231 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18233 */;
+import _modDef18239 from "module_18239" /* 18239 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 18240 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4425 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18202 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4421 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18193 */;
 
-const util = Spacer(1119);
+const util = Spacer(1115);
 require = fn;
+function ArchiveOrDeleteTierSection() {
+  const tmp = closure_17();
+  const navigation = useNavigation.useNavigation();
+  const editStateContext = EditStateContextProvider.useEditStateContext();
+  const guildId = editStateContext.guildId;
+  ({ groupListingId, editStateId } = editStateContext);
+  ({ buttonText, descriptionText, handleArchiveOrDelete, deleting, archiving } = useArchiveOrDeleteDefault(guildId, groupListingId, editStateId, navigation));
+  const tmp4 = useArchiveOrDeleteDefault(guildId, groupListingId, editStateId, navigation);
+  const allowSelfRemoveMonetization = CreatorMonetizationRestrictionsHooks.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).allowSelfRemoveMonetization;
+  items = [closure_1_14(FormHeaderDefault, { style: tmp.actionHeader, children: buttonText }), closure_1_14(Text_Text.Text, { style: tmp.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText }), ];
+  const obj6 = { style: tmp.actionButton, children: null };
+  const obj7 = { variant: "destructive", grow: true, icon: null, onPress: null, disabled: null, text: null };
+  const obj4 = { style: tmp.actionHeader, children: buttonText };
+  const obj5 = { style: tmp.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
+  const tmp5 = value2;
+  const tmp6 = __initData;
+  const tmp8 = timestampProducer;
+  obj7.icon = closure_1_14(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef18239 });
+  obj7.onPress = handleArchiveOrDelete;
+  let tmp9 = !allowSelfRemoveMonetization;
+  if (allowSelfRemoveMonetization) {
+    tmp9 = deleting;
+  }
+  if (!tmp9) {
+    tmp9 = archiving;
+  }
+  const obj9 = { children: null };
+  obj7.disabled = tmp9;
+  obj7.text = buttonText;
+  obj6.children = closure_1_14(components_Button_Button.Button, obj7);
+  items[2] = closure_1_14(tmp8, obj6);
+  obj9.children = items;
+  return tmp5(tmp6, obj9);
+}
+function TabContent(selectedTab) {
+  selectedTab = selectedTab.selectedTab;
+  const tmp = closure_17();
+  if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
+    const obj2 = { style: tmp.tabContent, children: null };
+    const obj3 = { bottom: true, children: null };
+    items = [closure_1_14(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), closure_1_14(ArchiveOrDeleteTierSection, {})];
+    obj3.children = items;
+    obj2.children = value2(common_SafeAreaView.SafeAreaPaddingView, obj3);
+    return closure_1_14(React5, obj2);
+  } else if (tmp2.DESIGN === selectedTab) {
+    const obj = { style: tmp.tabContent, children: null };
+    const obj4 = { bottom: true, children: closure_1_14(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
+    obj.children = closure_1_14(common_SafeAreaView.SafeAreaPaddingView, obj4);
+    return closure_1_14(React5, obj);
+  } else if (tmp2.BENEFITS === selectedTab) {
+    return closure_1_14(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
+  } else {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const error = new Error("Unsupported scene: " + selectedTab);
+    throw error;
+  }
+}
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const FetchState = fn(4425).FetchState;
-const GuildRoleSubscriptionsTierScenes = fn(15474).GuildRoleSubscriptionsTierScenes;
-const GuildSettingsSections = fn(1078).GuildSettingsSections;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const FetchState = fn(4421).FetchState;
+const GuildRoleSubscriptionsTierScenes = fn(15478).GuildRoleSubscriptionsTierScenes;
+const GuildSettingsSections = fn(1074).GuildSettingsSections;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1 }, tabsContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16 }, tabsContainerWithDraft: { paddingBottom: 0 }, actionButton: { alignSelf: "stretch", margin: 16, marginTop: 0 }, tabContent: null, actionHeader: null, actionDescription: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16 };
 obj2.tabContent = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -55,343 +112,7 @@ const dependencyMap = items.reduce((acc, item, index) => {
   acc[item] = index;
   return acc;
 }, {});
-let ReactCompilerGating = fn(558);
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(18);
-  const tmp4 = closure_17();
-  const navigation = useNavigation.useNavigation();
-  const editStateContext = EditStateContextProvider.useEditStateContext();
-  const guildId = editStateContext.guildId;
-  ({ groupListingId, editStateId } = editStateContext);
-  ({ buttonText, descriptionText, handleArchiveOrDelete, deleting, archiving } = useArchiveOrDeleteDefault(guildId, groupListingId, editStateId, navigation));
-  const tmp8 = useArchiveOrDeleteDefault(guildId, groupListingId, editStateId, navigation);
-  const allowSelfRemoveMonetization = CreatorMonetizationRestrictionsHooks.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).allowSelfRemoveMonetization;
-  if (cResult[0] === buttonText) {
-    if (cResult[1] === tmp4.actionHeader) {
-      let tmp9 = cResult[2];
-    }
-    if (cResult[3] === descriptionText) {
-      if (cResult[4] === tmp4.actionDescription) {
-        let tmp11 = cResult[5];
-      }
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj5 = { size: tmp(1181).Icon.Sizes.SMALL, disableColor: true, source: tmp7(18248) };
-        const tmp17 = state(tmp(1181).Icon, obj5);
-        cResult[6] = tmp17;
-        let tmp15 = tmp17;
-      } else {
-        tmp15 = cResult[6];
-      }
-      let tmp18 = !allowSelfRemoveMonetization;
-      if (allowSelfRemoveMonetization) {
-        tmp18 = deleting;
-      }
-      if (!tmp18) {
-        tmp18 = archiving;
-      }
-      if (cResult[7] === buttonText) {
-        if (cResult[8] === handleArchiveOrDelete) {
-          if (cResult[9] === tmp18) {
-            let tmp19 = cResult[10];
-          }
-          if (cResult[11] === tmp4.actionButton) {
-            if (cResult[12] === tmp19) {
-              let tmp22 = cResult[13];
-            }
-            if (cResult[14] === tmp9) {
-              if (cResult[15] === tmp11) {
-                if (cResult[16] === tmp22) {
-                  let tmp26 = cResult[17];
-                }
-                return tmp26;
-              }
-            }
-            const obj6 = { children: null };
-            items = [tmp9, tmp11, tmp22];
-            obj6.children = items;
-            const tmp29 = value2(closure_1_15, obj6);
-            cResult[14] = tmp9;
-            cResult[15] = tmp11;
-            cResult[16] = tmp22;
-            cResult[17] = tmp29;
-            tmp26 = tmp29;
-          }
-          const obj7 = { style: tmp4.actionButton, children: tmp19 };
-          const tmp25 = state(timestampProducer, obj7);
-          cResult[11] = tmp4.actionButton;
-          cResult[12] = tmp19;
-          cResult[13] = tmp25;
-          tmp22 = tmp25;
-        }
-      }
-      const obj8 = { variant: "destructive", grow: true, icon: tmp15, onPress: handleArchiveOrDelete, disabled: tmp18, text: buttonText };
-      const tmp21 = state(tmp(5220).Button, obj8);
-      cResult[7] = buttonText;
-      cResult[8] = handleArchiveOrDelete;
-      cResult[9] = tmp18;
-      cResult[10] = tmp21;
-      tmp19 = tmp21;
-    }
-    const obj9 = { style: tmp4.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
-    const tmp13 = state(tmp(4786).Text, obj9);
-    cResult[3] = descriptionText;
-    cResult[4] = tmp4.actionDescription;
-    cResult[5] = tmp13;
-    tmp11 = tmp13;
-  }
-  const tmp10 = state(FormHeaderDefault, { style: tmp4.actionHeader, children: buttonText });
-  cResult[0] = buttonText;
-  cResult[1] = tmp4.actionHeader;
-  cResult[2] = tmp10;
-  tmp9 = tmp10;
-}) : (() => {
-  const tmp = closure_17();
-  const navigation = useNavigation.useNavigation();
-  const editStateContext = EditStateContextProvider.useEditStateContext();
-  const guildId = editStateContext.guildId;
-  ({ groupListingId, editStateId } = editStateContext);
-  ({ buttonText, descriptionText, handleArchiveOrDelete, deleting, archiving } = useArchiveOrDeleteDefault(guildId, groupListingId, editStateId, navigation));
-  const tmp4 = useArchiveOrDeleteDefault(guildId, groupListingId, editStateId, navigation);
-  const allowSelfRemoveMonetization = CreatorMonetizationRestrictionsHooks.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).allowSelfRemoveMonetization;
-  items = [state(FormHeaderDefault, { style: tmp.actionHeader, children: buttonText }), state(Text_Text.Text, { style: tmp.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText }), ];
-  const obj6 = { style: tmp.actionButton, children: null };
-  const obj7 = { variant: "destructive", grow: true, icon: null, onPress: null, disabled: null, text: null };
-  const obj4 = { style: tmp.actionHeader, children: buttonText };
-  const obj5 = { style: tmp.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
-  const tmp5 = value2;
-  const tmp6 = closure_1_15;
-  const tmp8 = timestampProducer;
-  obj7.icon = state(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef18248 });
-  obj7.onPress = handleArchiveOrDelete;
-  let tmp9 = !allowSelfRemoveMonetization;
-  if (allowSelfRemoveMonetization) {
-    tmp9 = deleting;
-  }
-  if (!tmp9) {
-    tmp9 = archiving;
-  }
-  const obj9 = { children: null };
-  obj7.disabled = tmp9;
-  obj7.text = buttonText;
-  obj6.children = state(components_Button_Button.Button, obj7);
-  items[2] = state(tmp8, obj6);
-  obj9.children = items;
-  return tmp5(tmp6, obj9);
-});
-ReactCompilerGating = fn(558);
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTab) => {
-  const cResult = c.c(7);
-  selectedTab = selectedTab.selectedTab;
-  const tmp4 = closure_17();
-  if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
-    const _Symbol3 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { bottom: true, children: null };
-      items = [state(tmp(18242).GuildRoleSubscriptionTierDetailsTab, {}), state(closure_20, {})];
-      obj2.children = items;
-      const tmp28 = value2(tmp(7403).SafeAreaPaddingView, obj2);
-      cResult[0] = tmp28;
-      let first = tmp28;
-    } else {
-      first = cResult[0];
-    }
-    if (cResult[1] !== tmp4.tabContent) {
-      const obj3 = { style: tmp4.tabContent, children: first };
-      const tmp32 = state(React5, obj3);
-      cResult[1] = tmp4.tabContent;
-      cResult[2] = tmp32;
-      let tmp29 = tmp32;
-    } else {
-      tmp29 = cResult[2];
-    }
-    return tmp29;
-  } else if (tmp5.DESIGN === selectedTab) {
-    const _Symbol2 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { bottom: true, children: state(tmp(18240).GuildRoleSubscriptionTierDesignTab, {}) };
-      const tmp18 = state(tmp(7403).SafeAreaPaddingView, obj4);
-      cResult[3] = tmp18;
-      let tmp16 = tmp18;
-    } else {
-      tmp16 = cResult[3];
-    }
-    if (cResult[4] !== tmp4.tabContent) {
-      const obj5 = { style: tmp4.tabContent, children: tmp16 };
-      const tmp22 = state(React5, obj5);
-      cResult[4] = tmp4.tabContent;
-      cResult[5] = tmp22;
-      let tmp19 = tmp22;
-    } else {
-      tmp19 = cResult[5];
-    }
-    return tmp19;
-  } else if (tmp5.BENEFITS === selectedTab) {
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp14 = state(tmp(18216).GuildRoleSubscriptionTierBenefitsTab, {});
-      cResult[6] = tmp14;
-      let tmp12 = tmp14;
-    } else {
-      tmp12 = cResult[6];
-    }
-    return tmp12;
-  } else {
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const error = new Error("Unsupported scene: " + selectedTab);
-    throw error;
-  }
-}) : ((selectedTab) => {
-  selectedTab = selectedTab.selectedTab;
-  const tmp = closure_17();
-  if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
-    const obj2 = { style: tmp.tabContent, children: null };
-    const obj3 = { bottom: true, children: null };
-    items = [state(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), state(closure_20, {})];
-    obj3.children = items;
-    obj2.children = value2(common_SafeAreaView.SafeAreaPaddingView, obj3);
-    return state(React5, obj2);
-  } else if (tmp2.DESIGN === selectedTab) {
-    const obj = { style: tmp.tabContent, children: null };
-    const obj4 = { bottom: true, children: state(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
-    obj.children = state(common_SafeAreaView.SafeAreaPaddingView, obj4);
-    return state(React5, obj);
-  } else if (tmp2.BENEFITS === selectedTab) {
-    return state(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
-  } else {
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const error = new Error("Unsupported scene: " + selectedTab);
-    throw error;
-  }
-});
-ReactCompilerGating = fn(558);
-let closure_22 = fn(19).forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
-  const cResult = c.c(21);
-  const editStateContext = EditStateContextProvider.useEditStateContext();
-  const guildId = editStateContext.guildId;
-  const groupListingId = editStateContext.groupListingId;
-  const publishSubscriptionListing1 = GuildRoleSubscriptionsHooks.usePublishSubscriptionListing();
-  ({ error, submitting, publishSubscriptionListing } = publishSubscriptionListing1);
-  const clearError = publishSubscriptionListing1.clearError;
-  const subscriptionListing = GuildRoleSubscriptionsHooks.useSubscriptionListing(editStateContext.editStateId);
-  const roleSubscriptionSettingsDisabled = RoleSubscriptionSettingsDisabledContext.useRoleSubscriptionSettingsDisabled();
-  if (cResult[0] !== clearError) {
-    const fn = function o() {
-      return { dismissError: clearError };
-    };
-    cResult[0] = clearError;
-    cResult[1] = fn;
-    let tmp8 = fn;
-  } else {
-    tmp8 = cResult[1];
-  }
-  const imperativeHandle = noop.useImperativeHandle(ref, tmp8);
-  if (null != groupListingId) {
-    if (null != subscriptionListing) {
-      if (!subscriptionListing.published) {
-        if (cResult[2] === groupListingId) {
-          if (cResult[3] === guildId) {
-            if (cResult[4] === subscriptionListing) {
-              if (cResult[5] === publishSubscriptionListing) {
-                let tmp10 = cResult[6];
-              }
-              if (null != error) {
-                const _Symbol = Symbol;
-                if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp22 = state(tmp(1181).Spacer, { size: 16 });
-                  cResult[7] = tmp22;
-                  let tmp20 = tmp22;
-                } else {
-                  tmp20 = cResult[7];
-                }
-                if (cResult[8] !== error) {
-                  const anyErrorMessage = error.getAnyErrorMessage();
-                  cResult[8] = error;
-                  cResult[9] = anyErrorMessage;
-                  let tmp23 = anyErrorMessage;
-                } else {
-                  tmp23 = cResult[9];
-                }
-                if (cResult[10] !== tmp23) {
-                  const obj6 = { children: tmp23 };
-                  const tmp28 = state(ErrorBlockDefault, obj6);
-                  cResult[10] = tmp23;
-                  cResult[11] = tmp28;
-                  let tmp25 = tmp28;
-                } else {
-                  tmp25 = cResult[11];
-                }
-                const _Symbol2 = Symbol;
-                if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp31 = state(tmp(1181).Spacer, { size: 16 });
-                  cResult[12] = tmp31;
-                  let tmp29 = tmp31;
-                } else {
-                  tmp29 = cResult[12];
-                }
-                if (cResult[13] !== tmp25) {
-                  const obj7 = { children: null };
-                  items = [tmp20, tmp25, tmp29];
-                  obj7.children = items;
-                  const tmp35 = value2(closure_1_15, obj7);
-                  cResult[13] = tmp25;
-                  cResult[14] = tmp35;
-                }
-              } else {
-                const _Symbol3 = Symbol;
-                if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl = tmp(1119).intl;
-                  const stringResult = intl.string(tmp(1119).t.V5mSpz);
-                  const intl2 = tmp(1119).intl;
-                  const stringResult1 = intl2.string(tmp(1119).t.Lj6R5m);
-                  cResult[15] = stringResult;
-                  cResult[16] = stringResult1;
-                  let tmp12 = stringResult1;
-                  let tmp11 = stringResult;
-                } else {
-                  tmp11 = cResult[15];
-                  tmp12 = cResult[16];
-                }
-                if (cResult[17] === tmp10) {
-                  if (cResult[18] === roleSubscriptionSettingsDisabled) {
-                    if (cResult[19] === submitting) {
-                      let tmp15 = cResult[20];
-                    }
-                    return tmp15;
-                  }
-                }
-                const obj8 = { message: tmp11, ctaMessage: tmp12, onClick: tmp10, submitting, disabled: roleSubscriptionSettingsDisabled };
-                const tmp18 = state(ActionableNoticeDefault, obj8);
-                cResult[17] = tmp10;
-                cResult[18] = roleSubscriptionSettingsDisabled;
-                cResult[19] = submitting;
-                cResult[20] = tmp18;
-                tmp15 = tmp18;
-              }
-            }
-          }
-        }
-        const fn2 = function l() {
-          if (null != groupListingId) {
-            if (null != subscriptionListing) {
-              const obj = { guildId, groupListingId: tmp, listingId: tmp2.id };
-              return publishSubscriptionListing(obj);
-            }
-          }
-        };
-        cResult[2] = groupListingId;
-        cResult[3] = guildId;
-        cResult[4] = subscriptionListing;
-        cResult[5] = publishSubscriptionListing;
-        cResult[6] = fn2;
-        tmp10 = fn2;
-      }
-    }
-  }
-  return null;
-}) : ((arg0, ref) => {
+let closure_22 = fn(19).forwardRef((arg0, ref) => {
   let Spacer = require;
   let tmp = dependencyMap;
   const editStateContext = EditStateContextProvider.useEditStateContext();
@@ -409,14 +130,14 @@ let closure_22 = fn(19).forwardRef(ReactCompilerGating.isReactCompilerEnabled() 
       if (!subscriptionListing.published) {
         if (null != error) {
           const obj5 = { children: null };
-          items = [state(native.Spacer, { size: 16 }), , ];
+          items = [closure_1_14(native.Spacer, { size: 16 }), , ];
           const obj6 = { children: error.getAnyErrorMessage() };
-          items[1] = state(ErrorBlockDefault, obj6);
+          items[1] = closure_1_14(ErrorBlockDefault, obj6);
           Spacer = native.Spacer;
-          tmp = state(Spacer, { size: 16 });
+          tmp = closure_1_14(Spacer, { size: 16 });
           items[2] = tmp;
           obj5.children = items;
-          let tmp13 = value2(closure_1_15, obj5);
+          let tmp13 = value2(__initData, obj5);
         } else {
           const obj7 = { message: null, ctaMessage: null, onClick: null, submitting: null, disabled: null };
           const intl = util.intl;
@@ -433,13 +154,13 @@ let closure_22 = fn(19).forwardRef(ReactCompilerGating.isReactCompilerEnabled() 
           };
           obj7.submitting = submitting;
           obj7.disabled = roleSubscriptionSettingsDisabled;
-          tmp13 = state(ActionableNoticeDefault, obj7);
+          tmp13 = closure_1_14(ActionableNoticeDefault, obj7);
         }
       }
     }
   }
   return tmp7;
-}));
+});
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionTierEdit.tsx");
 
@@ -459,16 +180,16 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let callback;
   c14 = undefined;
   function GuildRoleSubscriptionsTierTemplateSelectedActionSheetImporter() {
-    return guildId(first[38])(first[37], first.paths);
+    return guildId(first[36])(first[35], first.paths);
   }
   const tmp = closure_17();
   [editStateId, _slicedToArray] = navigation.useState(guildId.initialEditStateId);
-  navigation = guildId(editStateId[13]).useNavigation();
-  let obj2 = guildId(editStateId[13]);
+  navigation = guildId(editStateId[11]).useNavigation();
+  let obj2 = guildId(editStateId[11]);
   const tmp2 = _slicedToArray;
-  const subscriptionListing = guildId(editStateId[26]).useSubscriptionListing(editStateId);
-  const obj3 = guildId(editStateId[26]);
-  const first1 = _slicedToArray(onBeforeDispatchNewListing(editStateId[31]).useName(editStateId), 1)[0];
+  const subscriptionListing = guildId(editStateId[24]).useSubscriptionListing(editStateId);
+  const obj3 = guildId(editStateId[24]);
+  const first1 = _slicedToArray(onBeforeDispatchNewListing(editStateId[29]).useName(editStateId), 1)[0];
   let flag;
   if (subscriptionListing != null) {
     flag = subscriptionListing.published;
@@ -476,13 +197,13 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   if (flag == null) {
     flag = false;
   }
-  const obj4 = onBeforeDispatchNewListing(editStateId[31]);
-  removeEditStateId = onBeforeDispatchNewListing(editStateId[31]).useEditStateIds(groupListingId, guildId).removeEditStateId;
+  const obj4 = onBeforeDispatchNewListing(editStateId[29]);
+  removeEditStateId = onBeforeDispatchNewListing(editStateId[29]).useEditStateIds(groupListingId, guildId).removeEditStateId;
   ref = obj.useRef(null);
-  const tmp9Result = onBeforeDispatchNewListing(editStateId[31]);
-  hasChanges = onBeforeDispatchNewListing(editStateId[31]).useHasChanges(editStateId);
-  const tmp9Result3 = onBeforeDispatchNewListing(editStateId[31]);
-  const createOrUpdateListingFromEditState = onBeforeDispatchNewListing(editStateId[31]).useCreateOrUpdateListingFromEditState();
+  const tmp9Result = onBeforeDispatchNewListing(editStateId[29]);
+  hasChanges = onBeforeDispatchNewListing(editStateId[29]).useHasChanges(editStateId);
+  const tmp9Result3 = onBeforeDispatchNewListing(editStateId[29]);
+  const createOrUpdateListingFromEditState = onBeforeDispatchNewListing(editStateId[29]).useCreateOrUpdateListingFromEditState();
   loading = createOrUpdateListingFromEditState.loading;
   handleCreateOrUpdateFromEditState = createOrUpdateListingFromEditState.handleCreateOrUpdateFromEditState;
   error = createOrUpdateListingFromEditState.error;
@@ -502,13 +223,13 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
     if (null != error) {
       let anyErrorMessage = error.getAnyErrorMessage();
       if (anyErrorMessage == null) {
-        const intl = tmp(1119).intl;
-        anyErrorMessage = intl.string(tmp(1119).t.R0RpRX);
+        const intl = tmp(1115).intl;
+        anyErrorMessage = intl.string(tmp(1115).t.R0RpRX);
       }
       ToastUtils.presentError(anyErrorMessage);
     }
   }, items1);
-  const tmp9Result4 = onBeforeDispatchNewListing(editStateId[31]);
+  const tmp9Result4 = onBeforeDispatchNewListing(editStateId[29]);
   [tmp17, c14] = tmp2(loading.useRoleTierEditStore((currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
@@ -520,19 +241,19 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   const items2 = [navigation, hasChanges, first1, loading, callback];
   const layoutEffect1 = obj.useLayoutEffect(() => {
     navigation.setOptions({
-      headerRight: loading ? (() => _undefined(guildId(editStateId[33]).HeaderSubmittingIndicator, {})) : (() => {
+      headerRight: loading ? (() => _undefined(guildId(editStateId[31]).HeaderSubmittingIndicator, {})) : (() => {
         const obj = { text: null, onPress: null, disabled: null };
-        const intl = guildId(first[29]).intl;
-        obj.text = intl.string(guildId(first[29]).t["R3BPH+"]);
+        const intl = guildId(first[28]).intl;
+        obj.text = intl.string(guildId(first[28]).t["R3BPH+"]);
         obj.onPress = onPress;
         obj.disabled = !hasChanges;
-        return c14(guildId(first[34]).HeaderActionButton, obj);
+        return c14(guildId(first[32]).HeaderActionButton, obj);
       }),
       headerTitle() {
         const obj = { title, subtitle: null };
-        const intl = guildId(first[29]).intl;
-        obj.subtitle = intl.string(guildId(first[29]).t.t94EHg);
-        return c14(guildId(first[33]).NavigatorHeader, obj);
+        const intl = guildId(first[28]).intl;
+        obj.subtitle = intl.string(guildId(first[28]).t.t94EHg);
+        return c14(guildId(first[31]).NavigatorHeader, obj);
       }
     });
   }, items2);
@@ -552,13 +273,13 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       tmp8 = name !== GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_EDIT || subscriptionGroupListingsForGuildFetchState === FetchState.FETCHING;
     }
   }, items3);
-  guildId(editStateId[35]);
-  let intl = tmp5(tmp6[29]).intl;
-  const items4 = [intl.string(guildId(editStateId[29]).t.f7rGug), , ];
-  const intl2 = tmp5(tmp6[29]).intl;
-  items4[1] = intl2.string(guildId(editStateId[29]).t.YCpDtS);
-  const intl3 = tmp5(tmp6[29]).intl;
-  items4[2] = intl3.string(guildId(editStateId[29]).t.MpDNxN);
+  guildId(editStateId[33]);
+  let intl = tmp5(tmp6[28]).intl;
+  const items4 = [intl.string(guildId(editStateId[28]).t.f7rGug), , ];
+  const intl2 = tmp5(tmp6[28]).intl;
+  items4[1] = intl2.string(guildId(editStateId[28]).t.YCpDtS);
+  const intl3 = tmp5(tmp6[28]).intl;
+  items4[2] = intl3.string(guildId(editStateId[28]).t.MpDNxN);
   {
     pageWidth: 0,
     defaultIndex: dependencyMap[tmp17],
@@ -577,7 +298,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
     return null;
   } else {
     if (undefined === subscriptionListing) {
-      const items5 = [tmp5(tmp6[36]).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES];
+      const items5 = [tmp5(tmp6[34]).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES];
       let items6 = items5;
     } else {
       items6 = [];
@@ -598,12 +319,12 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
               actionSheetKey: "TierTemplateSelected",
               importer: GuildRoleSubscriptionsTierTemplateSelectedActionSheetImporter
             };
-            tmp3 = state(DismissibleActionSheet.DismissibleActionSheet, obj);
+            tmp3 = closure_2_14(DismissibleActionSheet.DismissibleActionSheet, obj);
           }
           return tmp3;
         }
     };
-    const items7 = [c14(groupListingId(tmp6[39]), obj9), , ];
+    const items7 = [c14(groupListingId(tmp6[37]), obj9), , ];
     const items8 = [tmp.tabsContainer, ];
     let prop = null;
     if (!flag) {
@@ -613,17 +334,17 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
     items8[1] = prop;
     obj10.style = items8;
     const obj11 = { state: tmp21 };
-    const items9 = [c14(tmp5(tmp6[41]).SegmentedControl, obj11), ];
+    const items9 = [c14(tmp5(tmp6[39]).SegmentedControl, obj11), ];
     const obj12 = { ref };
     items9[1] = c14(closure_22, obj12);
     obj10.children = items9;
     items7[1] = closure_16(first1, obj10);
     const obj13 = { selectedTab: tmp17 };
-    items7[2] = c14(closure_21, obj13);
+    items7[2] = c14(TabContent, obj13);
     obj8.children = items7;
     obj7.children = closure_16(first1, obj8);
-    obj6.children = c14(tmp5(tmp6[27]).RoleSubscriptionSettingsDisabledContextProvider, obj7);
-    return c14(tmp5(tmp6[14]).EditStateContextProvider, obj6);
+    obj6.children = c14(tmp5(tmp6[25]).RoleSubscriptionSettingsDisabledContextProvider, obj7);
+    return c14(tmp5(tmp6[12]).EditStateContextProvider, obj6);
   }
   const obj5 = {
     pageWidth: 0,

@@ -1,42 +1,25 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17180
+// Function ID: 17181
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 8159, 558, 568, 2]
+// Dependencies: [19, 8154, 2]
+// Exports: useFileOrLinkImageDimensions
 
-// Module 17190 (useFileOrLinkImageDimensions)
-import c from "c" /* 568 */;
+// Module 17180 (useFileOrLinkImageDimensions)
 import noop from "module_19" /* 19 */;
 
-require = fn;
-const SearchConstants = fn(8159);
-({ FILES_OR_LINKS_GAP_WIDTH: c3, FILES_OR_LINKS_NUM_COLUMNS: closure_4, FILE_OR_LINK_IMAGE_RATIO: hasOwnProperty, SEARCH_LIST_HORIZONTAL_PADDING: metroRequire } = SearchConstants);
-const ReactCompilerGating = fn(558);
+const SearchConstants = fn(8154);
+({ FILES_OR_LINKS_GAP_WIDTH: closure_1, FILES_OR_LINKS_NUM_COLUMNS: c2, FILE_OR_LINK_IMAGE_RATIO: c3, SEARCH_LIST_HORIZONTAL_PADDING: closure_4 } = SearchConstants);
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/hooks/useFileOrLinkImageDimensions.tsx");
 
-export const useFileOrLinkImageDimensions = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(3);
-  const diff = (arg0 - 2 * timestampProducer - (React4 - 1) * React3) / React4 - 2;
-  const result = diff * hasOwnProperty;
-  if (cResult[0] === result) {
-    if (cResult[1] === diff) {
-      let tmp4 = cResult[2];
-    }
-    return tmp4;
-  }
-  const size = { width: diff, height: result };
-  cResult[0] = result;
-  cResult[1] = diff;
-  cResult[2] = size;
-  tmp4 = size;
-}) : ((arg0) => {
-  const diff = (arg0 - 2 * timestampProducer - (React4 - 1) * React3) / React4 - 2;
-  require = diff;
-  const result = diff * hasOwnProperty;
-  dependencyMap = result;
+export const useFileOrLinkImageDimensions = function useFileOrLinkImageDimensions(width) {
+  const diff = (width - 2 * React4 - (React2 - 1) * framebus) / React2 - 2;
+  noop = diff;
+  const result = diff * React3;
+  closure_1 = result;
   const items = [result, diff];
   return noop.useMemo(() => {
     const size = { width: diff, height: result };
     return size;
   }, items);
-});
+};

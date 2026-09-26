@@ -1,16 +1,17 @@
 // Module ID: 10905
 // Function ID: 10906
-// Dependencies: [41, 42, 93, 95, 98, 10893, 10766, 10767, 10895]
+// Dependencies: [41, 42, 93, 95, 98, 10897, 10731, 10735]
 
 // Module 10905
-import _mod10895 from "module_10895" /* 10895 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import _mod10897 from "module_10897" /* 10897 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const RUTimeUnitCasualRelativeFormatParser = require;
+const ENTimeUnitLaterFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,31 +31,32 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUTimeUnitCasualRelativeFormatParser {
-  constructor() {
+const regExp = new RegExp("(" + _mod10897.TIME_UNITS_PATTERN + ")\\s{0,5}(?:dopo|pi\u00F9 tardi|da adesso|avanti|oltre|a seguire)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + _mod10897.TIME_UNITS_PATTERN + ")(dopo|pi\u00F9 tardi)(?=(?:\\W|$))", "i");
+class ENTimeUnitLaterFormatParser {
+  constructor(arg0) {
     self = this;
-    tmp = c2(this, RUTimeUnitCasualRelativeFormatParser);
+    tmp = c2(this, ENTimeUnitLaterFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(RUTimeUnitCasualRelativeFormatParser);
+    obj = closure_4(ENTimeUnitLaterFormatParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
-      tmp7 = globalThis;
+      tmp5 = globalThis;
       _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = global;
+    return tmp3Result;
   }
 }
-_inherits(RUTimeUnitCasualRelativeFormatParser, _mod10895.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(ENTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(\u044D\u0442\u0438|\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435|\u043F\u0440\u043E\u0448\u043B\u044B\u0435|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435|\u043F\u043E\u0441\u043B\u0435|\u0441\u043F\u0443\u0441\u0442\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + RUTimeUnitCasualRelativeFormatParser(10893).TIME_UNITS_PATTERN + ")";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return this.strictMode ? regExp1 : regExp;
   }
 };
 const items = [
@@ -62,18 +64,10 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const formatted = arg1[1].toLowerCase();
-      const parseDurationResult = RUTimeUnitCasualRelativeFormatParser(10893).parseDuration(arg1[2]);
-      if ("\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435" !== formatted) {
-        if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0435" !== formatted) {
-          let reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(10767).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-      }
-      reverseDurationResult = tmp2(10766).reverseDuration(parseDurationResult);
+      const ParsingComponents = ENTimeUnitLaterFormatParser(10731).ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, ENTimeUnitLaterFormatParser(10897).parseDuration(arg1[1]));
     }
   }
 ];
 
-export default _createClass(RUTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(ENTimeUnitLaterFormatParser, items);

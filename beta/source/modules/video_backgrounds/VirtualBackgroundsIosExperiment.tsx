@@ -1,10 +1,10 @@
-// Module ID: 9940
-// Function ID: 9941
+// Module ID: 9962
+// Function ID: 9963
 // Name: VirtualBackgroundsIosExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 9940 (VirtualBackgroundsIosExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 9962 (VirtualBackgroundsIosExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-virtual-backgrounds-ios", kind: "user", defaultConfig: { enabled: false }, variations: null };

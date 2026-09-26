@@ -1,25 +1,24 @@
-// Module ID: 17163
-// Function ID: 17164
+// Module ID: 17153
+// Function ID: 17154
 // Name: LinkGridItem
-// Dependencies: [32, 19, 17, 2045, 7557, 8159, 21, 4790, 504, 1119, 8169, 17164, 4786, 5323, 12522, 4732, 11772, 17156, 5373, 558, 568, 17154, 38, 8678, 2]
+// Dependencies: [32, 19, 17, 2041, 7555, 8154, 21, 4788, 504, 1115, 8164, 17154, 4784, 5321, 12621, 4730, 11894, 17146, 5371, 17144, 38, 8673, 2]
 
-// Module 17163 (LinkGridItem)
+// Module 17153 (LinkGridItem)
 import _modDef38 from "module_38" /* 38 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import LinkIcon from "LinkIcon" /* 4732 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import ChatIcon from "ChatIcon" /* 5323 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8169 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8678 */;
-import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 11772 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12522 */;
-import SearchMediaImage from "SearchMediaImage" /* 17154 */;
-import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 17164 */;
+import util from "util" /* 1115 */;
+import LinkIcon from "LinkIcon" /* 4730 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import ChatIcon from "ChatIcon" /* 5321 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8164 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8673 */;
+import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 11894 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12621 */;
+import SearchMediaImage from "SearchMediaImage" /* 17144 */;
+import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 17154 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SearchMessageStore from "SearchMessageStore" /* 7557 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SearchMessageStore from "SearchMessageStore" /* 7555 */;
 
 require = fn;
 function getLinkNodeAtIndex(content, diff, fn) {
@@ -4742,230 +4741,7 @@ function LinkParsedGridItem(author) {
   obj4.children = items10;
   return postProcessor(author(channelId[17]).SearchListCardContainer, obj4);
 }
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, useWindowDimensions: metroRequire } = get_ActivityIndicator);
-const SearchConstants = fn(8159);
-({ FILE_OR_LINK_IMAGE_BUFFER: closure_9, SearchLinkTypes: c10 } = SearchConstants);
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4790);
-let closure_13 = createStyles.createStyles({ iconContainer: { alignItems: "center", justifyContent: "center" }, tapToSee: { fontStyle: "italic" } });
-let ReactCompilerGating = fn(558);
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  const cResult = author(messageId[20]).c(60);
-  ({ embed, sources, author } = channelId);
-  channelId = channelId.channelId;
-  messageId = channelId.messageId;
-  const onPressSearchLink = channelId.onPressSearchLink;
-  const onPress = channelId.onPress;
-  const imageStyle = channelId.imageStyle;
-  const tmp4 = closure_13();
-  iconContainer = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [url];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== messageId) {
-    const fn = function l() {
-      return SearchMessageStore.getMessage(messageId);
-    };
-    cResult[1] = messageId;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  let obj = author(messageId[20]);
-  const stateFromStores = author(messageId[8]).useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [stateFromStores1];
-    cResult[3] = items1;
-    let tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== channelId) {
-    const fn2 = function _() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[4] = channelId;
-    cResult[5] = fn2;
-    let tmp11 = fn2;
-  } else {
-    tmp11 = cResult[5];
-  }
-  const tmpResult = author(messageId[8]);
-  stateFromStores1 = author(messageId[8]).useStateFromStores(tmp9, tmp11);
-  const scale = iconContainer().scale;
-  url = embed.url;
-  let url2 = embed.rawTitle;
-  if (url2 == null) {
-    const author2 = embed.author;
-    let name;
-    if (author2 != null) {
-      name = author2.name;
-    }
-    url2 = name;
-  }
-  if (url2 == null) {
-    url2 = embed.url;
-  }
-  if (cResult[6] === imageStyle) {
-    if (cResult[7] === tmp4.iconContainer) {
-      let tmp14 = cResult[8];
-    }
-    const sum = imageStyle.height + url2;
-    const sum1 = imageStyle.width + url2;
-    if (cResult[9] === author.id) {
-      if (cResult[10] === channelId) {
-        if (cResult[11] === embed) {
-          if (cResult[12] === imageStyle) {
-            if (cResult[13] === messageId) {
-              if (cResult[14] === scale) {
-                if (cResult[15] === sources) {
-                  if (cResult[16] === tmp14) {
-                    if (cResult[17] === sum) {
-                      if (cResult[18] === sum1) {
-                        let tmp18 = cResult[19];
-                      }
-                      if (cResult[20] === author) {
-                        let guild_id;
-                        if (stateFromStores1 != null) {
-                          guild_id = stateFromStores1.guild_id;
-                        }
-                        if (cResult[21] === guild_id) {
-                          let tmp22 = cResult[22];
-                        }
-                        if (cResult[23] !== tmp22) {
-                          const tmp22Result = tmp22();
-                          cResult[23] = tmp22;
-                          cResult[24] = tmp22Result;
-                        }
-                        if (cResult[25] === channelId) {
-                          if (cResult[26] === url2) {
-                            if (cResult[27] === url) {
-                              if (cResult[28] === messageId) {
-                                if (cResult[31] === channelId) {
-                                  if (cResult[32] === messageId) {
-                                    if (cResult[35] !== tmp18) {
-                                      class D {
-                                        constructor() {
-                                          obj = { channelId, messageId };
-                                          tmp = onPress(obj);
-                                          return;
-                                        }
-                                      }
-                                      const tmp30 = closure_11(tmp(tmp2[17]).SearchListCardThumbnail, { thumbnail: null });
-                                      cResult[35] = tmp18;
-                                      cResult[36] = tmp30;
-                                      const obj2 = { thumbnail: null };
-                                    }
-                                    class D {
-                                      constructor() {
-                                        obj = { channelId, messageId };
-                                        tmp = onPress(obj);
-                                        return;
-                                      }
-                                    }
-                                    if (null == stateFromStores) {
-                                      const string = tmp(tmp2[9]).intl.string;
-                                      class D {
-                                        constructor() {
-                                          obj = { channelId, messageId };
-                                          tmp = onPress(obj);
-                                          return;
-                                        }
-                                      }
-                                    }
-                                    cResult[37] = url2;
-                                    cResult[38] = stateFromStores;
-                                    cResult[39] = url2;
-                                  }
-                                }
-                                class D {
-                                  constructor() {
-                                    obj = { channelId, messageId };
-                                    tmp = onPress(obj);
-                                    return;
-                                  }
-                                }
-                                cResult[31] = channelId;
-                                cResult[32] = messageId;
-                                cResult[33] = onPress;
-                                cResult[34] = D;
-                              }
-                            }
-                          }
-                        }
-                        const fn4 = function q() {
-                          _modDef38(null != url, "[LinkGridItem] Embed url cannot be null");
-                          const obj = { url, trusted: MaskedLinkUtils.isLinkTrusted(url, url2), messageId, channelId };
-                          onPressSearchLink(obj);
-                        };
-                        cResult[25] = channelId;
-                        cResult[26] = url2;
-                        cResult[27] = url;
-                        cResult[28] = messageId;
-                        cResult[29] = onPressSearchLink;
-                        cResult[30] = fn4;
-                      }
-                      cResult[20] = author;
-                      let guild_id1;
-                      if (stateFromStores1 != null) {
-                        guild_id1 = stateFromStores1.guild_id;
-                      }
-                      const fn3 = function j() {
-                        let guild_id;
-                        if (stateFromStores1 != null) {
-                          guild_id = stateFromStores1.guild_id;
-                        }
-                        return author.getAvatarSource(guild_id);
-                      };
-                      cResult[21] = guild_id1;
-                      cResult[22] = fn3;
-                      tmp22 = fn3;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    const obj3 = { messageId, channelId, authorId: author.id, sources, embed, containerStyle: imageStyle, renderFallback: tmp14, scale, containerHeight: sum, containerWidth: sum1 };
-    const tmp20 = closure_11(tmp(tmp2[21]).SearchEmbedMediaImage, obj3);
-    cResult[9] = author.id;
-    cResult[10] = channelId;
-    cResult[11] = embed;
-    cResult[12] = imageStyle;
-    cResult[13] = messageId;
-    cResult[14] = scale;
-    cResult[15] = sources;
-    cResult[16] = tmp14;
-    cResult[17] = sum;
-    cResult[18] = sum1;
-    cResult[19] = tmp20;
-    tmp18 = tmp20;
-  }
-  class G {
-    constructor() {
-      obj = { style: null, children: jsx(closure_0(closure_2[15]).LinkIcon, { size: "md" }) };
-      items = [, ];
-      items[0] = closure_6.iconContainer;
-      items[1] = imageStyle;
-      obj.style = items;
-      return jsx(View, obj);
-    }
-  }
-  cResult[6] = imageStyle;
-  cResult[7] = tmp4.iconContainer;
-  cResult[8] = G;
-  tmp14 = G;
-}) : ((containerStyle) => {
+function LinkEmbedGridItem(containerStyle) {
   const embed = containerStyle.embed;
   const sources = containerStyle.sources;
   const author = containerStyle.author;
@@ -5012,8 +4788,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       return url(onPressSearchLink, obj);
     },
     scale,
-    containerHeight: imageStyle.height + options,
-    containerWidth: imageStyle.width + options
+    containerHeight: imageStyle.height + React7,
+    containerWidth: imageStyle.width + React7
   }), items2);
   if (stateFromStores1 != null) {
     guild_id = stateFromStores1.guild_id;
@@ -5054,101 +4830,19 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   items6[2] = url(embed(author[18]).PressableHighlight, { onPress: callback1, children: url(embed(author[17]).SearchListCardFooter, { author, avatarSource: memo1, channel: stateFromStores1 }) });
   obj4.children = items6;
   return tmp12(embed(author[17]).SearchListCardContainer, obj4);
-});
-ReactCompilerGating = fn(558);
+}
+get_ActivityIndicator = fn(17);
+({ View: hasOwnProperty, useWindowDimensions: metroRequire } = get_ActivityIndicator);
+const SearchConstants = fn(8154);
+({ FILE_OR_LINK_IMAGE_BUFFER: closure_9, SearchLinkTypes: c10 } = SearchConstants);
+const jsxProd = fn(21);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+const createStyles = fn(4788);
+let closure_13 = createStyles.createStyles({ iconContainer: { alignItems: "center", justifyContent: "center" }, tapToSee: { fontStyle: "italic" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/LinkGridItem.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(21);
-  ({ data, onPressSearchLink, onPressGuildVoiceChannelMention, onPress, imageStyle, containerStyle } = arg0);
-  const type = data.type;
-  if (constants.EMBED === type) {
-    if (cResult[0] === containerStyle) {
-      if (cResult[1] === data.author) {
-        if (cResult[2] === data.channelId) {
-          if (cResult[3] === data.embed) {
-            if (cResult[4] === data.linkIndex) {
-              if (cResult[5] === data.messageId) {
-                if (cResult[6] === data.sources) {
-                  if (cResult[7] === imageStyle) {
-                    if (cResult[8] === onPress) {
-                      if (cResult[9] === onPressSearchLink) {
-                        let tmp8 = cResult[10];
-                      }
-                      return tmp8;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    const obj5 = { embed: null, sources: null, messageId: null, channelId: null, author: null, linkIndex: null, onPressSearchLink: null, onPress: null, imageStyle: null, containerStyle: null };
-    ({ embed: obj3.embed, sources: obj3.sources, messageId: obj3.messageId, channelId: obj3.channelId, author: obj3.author, linkIndex: obj3.linkIndex } = data);
-    obj5.onPressSearchLink = onPressSearchLink;
-    obj5.onPress = onPress;
-    obj5.imageStyle = imageStyle;
-    obj5.containerStyle = containerStyle;
-    const tmp11 = closure_1_11(closure_16, obj5);
-    cResult[0] = containerStyle;
-    cResult[1] = data.author;
-    cResult[2] = data.channelId;
-    cResult[3] = data.embed;
-    cResult[4] = data.linkIndex;
-    cResult[5] = data.messageId;
-    cResult[6] = data.sources;
-    cResult[7] = imageStyle;
-    cResult[8] = onPress;
-    cResult[9] = onPressSearchLink;
-    cResult[10] = tmp11;
-    tmp8 = tmp11;
-  } else if (tmp2.TEXT === type) {
-    if (cResult[11] === containerStyle) {
-      if (cResult[12] === data.author) {
-        if (cResult[13] === data.channelId) {
-          if (cResult[14] === data.linkIndex) {
-            if (cResult[15] === data.messageId) {
-              if (cResult[16] === imageStyle) {
-                if (cResult[17] === onPress) {
-                  if (cResult[18] === onPressGuildVoiceChannelMention) {
-                    if (cResult[19] === onPressSearchLink) {
-                      let tmp4 = cResult[20];
-                    }
-                    return tmp4;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    const obj6 = { messageId: null, channelId: null, author: null, linkIndex: null, onPressSearchLink: null, onPressGuildVoiceChannelMention: null, onPress: null, imageStyle: null, containerStyle: null };
-    ({ messageId: obj2.messageId, channelId: obj2.channelId, author: obj2.author, linkIndex: obj2.linkIndex } = data);
-    obj6.onPressSearchLink = onPressSearchLink;
-    obj6.onPressGuildVoiceChannelMention = onPressGuildVoiceChannelMention;
-    obj6.onPress = onPress;
-    obj6.imageStyle = imageStyle;
-    obj6.containerStyle = containerStyle;
-    const tmp7 = closure_1_11(LinkParsedGridItem, obj6);
-    cResult[11] = containerStyle;
-    cResult[12] = data.author;
-    cResult[13] = data.channelId;
-    cResult[14] = data.linkIndex;
-    cResult[15] = data.messageId;
-    cResult[16] = imageStyle;
-    cResult[17] = onPress;
-    cResult[18] = onPressGuildVoiceChannelMention;
-    cResult[19] = onPressSearchLink;
-    cResult[20] = tmp7;
-    tmp4 = tmp7;
-  } else {
-    return null;
-  }
-}) : ((arg0) => {
+export default noop.memo(function LinkGridItem(arg0) {
   ({ data, onPressSearchLink, onPress, imageStyle, containerStyle } = arg0);
   const type = data.type;
   if (constants.EMBED === type) {
@@ -5158,7 +4852,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     obj3.onPress = onPress;
     obj3.imageStyle = imageStyle;
     obj3.containerStyle = containerStyle;
-    return closure_1_11(closure_16, obj3);
+    return closure_1_11(LinkEmbedGridItem, obj3);
   } else if (tmp2.TEXT === type) {
     const obj = { messageId: null, channelId: null, author: null, linkIndex: null, onPressSearchLink: null, onPressGuildVoiceChannelMention: null, onPress: null, imageStyle: null, containerStyle: null };
     ({ messageId: obj.messageId, channelId: obj.channelId, author: obj.author, linkIndex: obj.linkIndex } = data);
@@ -5171,4 +4865,4 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   } else {
     return null;
   }
-}));
+});

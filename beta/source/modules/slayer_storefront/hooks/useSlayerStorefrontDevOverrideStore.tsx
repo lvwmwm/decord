@@ -1,15 +1,15 @@
-// Module ID: 9104
-// Function ID: 9105
+// Module ID: 9106
+// Function ID: 9107
 // Name: useSlayerStorefrontDevOverrideStore
-// Dependencies: [562, 2]
+// Dependencies: [560, 2]
 
-// Module 9104 (useSlayerStorefrontDevOverrideStore)
-import module_562 from "module_562" /* 562 */;
+// Module 9106 (useSlayerStorefrontDevOverrideStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/slayer_storefront/hooks/useSlayerStorefrontDevOverrideStore.tsx");
 
-export const useSlayerStorefrontDevOverrideStore = module_562.create()((arg0) => {
+export const useSlayerStorefrontDevOverrideStore = module_560.create()((arg0) => {
   closure_0 = arg0;
   return {
     overrideApplicationId: null,

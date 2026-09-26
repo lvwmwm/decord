@@ -1,17 +1,17 @@
-// Module ID: 18299
-// Function ID: 18300
+// Module ID: 18290
+// Function ID: 18291
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 14009, 9867, 1078, 7397, 18300, 577, 1275, 1476, 18301, 7617, 2]
+// Dependencies: [5, 13999, 9889, 1074, 7395, 18291, 573, 1271, 1472, 18292, 7615, 2]
 
-// Module 18299 (GlobalDiscoveryServersFeaturedSearchManager)
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 14009 */;
+// Module 18290 (GlobalDiscoveryServersFeaturedSearchManager)
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13999 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 let require = fn;
 GlobalDiscoveryServersSearchResultsStoreDefault;
-let closure_6 = fn(9867).DISCOVERY_ALL_CATEGORIES_ID;
-const Endpoints = fn(1078).Endpoints;
+let closure_6 = fn(9889).DISCOVERY_ALL_CATEGORIES_ID;
+const Endpoints = fn(1074).Endpoints;
 const prototype = function GlobalDiscoveryServersFeaturedSearchManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   require = applyArgumentsResult;
@@ -46,7 +46,7 @@ const prototype = function GlobalDiscoveryServersFeaturedSearchManager() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -159,7 +159,7 @@ const prototype = function GlobalDiscoveryServersFeaturedSearchManager() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ const prototype = function GlobalDiscoveryServersFeaturedSearchManager() {
             closure_129_5 = undefined;
             lastFetchTimestamp = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         } else {
           if (1 === tmp7) {

@@ -1,11 +1,11 @@
-// Module ID: 11679
-// Function ID: 11680
+// Module ID: 11803
+// Function ID: 11804
 // Name: DeveloperActivityShelfActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 // Exports: markActivityUsed, setActivityUrlOverride, toggleUseActivityUrlOverride, updateFilter
 
-// Module 11679 (DeveloperActivityShelfActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 11803 (DeveloperActivityShelfActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/DeveloperActivityShelfActionCreators.tsx");

@@ -1,33 +1,33 @@
-// Module ID: 4940
-// Function ID: 4941
+// Module ID: 4938
+// Function ID: 4939
 // Name: MediaFormatTesters
-// Dependencies: [32, 1368, 4941, 2]
+// Dependencies: [32, 1364, 4939, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 4940 (MediaFormatTesters)
-import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 4941 */;
+// Module 4938 (MediaFormatTesters)
+import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 4939 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
 const re3 = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i;
 const re4 = /\.(webp|gif|avif)$/i;
-let PlatformUtils = fn(1368);
+let PlatformUtils = fn(1364);
 if (PlatformUtils.isIOS()) {
   let tmp2 = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
 } else {
-  tmp2 = fn(1368).isAndroid() ? /\.(mp3|m4a|wav|ogg|opus|flac)$/i : /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
-  let obj2 = fn(1368);
+  tmp2 = fn(1364).isAndroid() ? /\.(mp3|m4a|wav|ogg|opus|flac)$/i : /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
+  let obj2 = fn(1364);
 }
 const regex = tmp2;
 const re6 = /\.(webm)$/i;
 const re7 = /\.(riv)$/i;
-PlatformUtils = fn(1368);
+PlatformUtils = fn(1364);
 if (PlatformUtils.isIOS()) {
   let tmp4 = /\.(mp4|mov|qt)$/i;
 } else {
-  fn(1368).isAndroid();
+  fn(1364).isAndroid();
   tmp4 = /\.(mp4|webm|mov|qt)$/i;
-  const obj4 = fn(1368);
+  const obj4 = fn(1364);
 }
 const re8 = tmp4;
 function urlMatchesFileExtension(sourceURI, GIF_RE_IOS) {
@@ -104,18 +104,18 @@ export const isAudioFile = function isAudioFile(filename) {
   return isMatch;
 };
 export { isWebPlayerVideoUrl };
-export const isVideoUrl = function isVideoUrl(proxyURL) {
+export const isVideoUrl = function isVideoUrl(url) {
   let flag = false;
-  if (null != proxyURL) {
-    const tmp2 = _slicedToArray(proxyURL.split(/\?/, 1), 2);
+  if (null != url) {
+    const tmp2 = _slicedToArray(url.split(/\?/, 1), 2);
     flag = re8.test(tmp2[0]);
   }
   if (!flag) {
     let isIOSWithWebMResult = WebViewWebmSupportTest.isIOSWithWebM();
     if (isIOSWithWebMResult) {
       let flag2 = false;
-      if (null != proxyURL) {
-        const tmp8 = _slicedToArray(proxyURL.split(/\?/, 1), 2);
+      if (null != url) {
+        const tmp8 = _slicedToArray(url.split(/\?/, 1), 2);
         flag2 = obj3.test(tmp8[0]);
       }
       isIOSWithWebMResult = flag2;

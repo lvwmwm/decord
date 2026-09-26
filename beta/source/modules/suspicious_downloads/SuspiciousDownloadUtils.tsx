@@ -1,14 +1,14 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 8428
+// Function ID: 8429
 // Name: SuspiciousDownloadUtils
-// Dependencies: [8434, 1370, 2]
+// Dependencies: [8429, 1366, 2]
 // Exports: isSuspiciousDownload
 
-// Module 8433 (SuspiciousDownloadUtils)
-import URLUtilsDefault from "URLUtils" /* 1370 */;
-import _modDef8434 from "module_8434" /* 8434 */;
+// Module 8428 (SuspiciousDownloadUtils)
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import _modDef8429 from "module_8429" /* 8429 */;
 
-const set = new Set(_modDef8434);
+const set = new Set(_modDef8429);
 let obj = { "github.com": null, "bitbucket.org": null, "gitlab.com": null };
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 obj["github.com"] = regExp;

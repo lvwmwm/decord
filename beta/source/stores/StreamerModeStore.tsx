@@ -1,17 +1,17 @@
-// Module ID: 4636
-// Function ID: 4637
+// Module ID: 4633
+// Function ID: 4634
 // Name: StreamerModeStore
-// Dependencies: [502, 1078, 1245, 504, 4637, 577, 2]
+// Dependencies: [502, 1074, 1241, 504, 4634, 573, 2]
 
-// Module 4636 (StreamerModeStore)
+// Module 4633 (StreamerModeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import OverlayV3Experiment from "OverlayV3Experiment" /* 4637 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import OverlayV3Experiment from "OverlayV3Experiment" /* 4634 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 let obj = { enabled: false, autoToggle: true, hideInstantInvites: true, hidePersonalInformation: true, disableSounds: true, disableNotifications: true, disabledOverlayWidgets: [], enableContentProtection: false };
 let closure_6 = {};
 let obj2 = {};

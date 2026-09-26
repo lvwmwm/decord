@@ -1,50 +1,20 @@
-// Module ID: 7220
-// Function ID: 7221
+// Module ID: 7222
+// Function ID: 7223
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
-// Dependencies: [19, 21, 558, 568, 1119, 5148, 5148, 2]
+// Dependencies: [19, 21, 5146, 1115, 5146, 2]
+// Exports: default
 
-// Module 7220 (OneTimeLoginForgotPasswordConfirmAlertModal)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5148 */;
+// Module 7222 (OneTimeLoginForgotPasswordConfirmAlertModal)
+import util from "util" /* 1115 */;
+import AlertModal from "AlertModal" /* 5146 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/OneTimeLoginForgotPasswordConfirmAlertModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t["6Ecyts"]);
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t.iAcrqV);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp4 = stringResult;
-    tmp5 = stringResult1;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: tmp4, content: tmp5, actions: null };
-    const obj3 = { children: null };
-    const obj4 = { text: null };
-    const intl3 = tmp(1119).intl;
-    obj4.text = intl3.string(tmp(1119).t.BddRzS);
-    obj3.children = jsx(tmp(5148).AlertActionButton, { text: null }, "okay");
-    obj2.actions = jsx(tmp(5148).AlertActions, { children: null });
-    const tmp10 = jsx(tmp(5148).AlertModal, { title: tmp4, content: tmp5, actions: null });
-    cResult[2] = tmp10;
-    let tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[2];
-  }
-  return tmp8;
-}) : (() => {
+export default function OneTimeLoginForgotPasswordConfirmAlertModal() {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
   obj.title = intl.string(util.t["6Ecyts"]);
@@ -57,4 +27,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2.children = jsx(AlertModal.AlertActionButton, { text: null }, "okay");
   obj.actions = jsx(AlertModal.AlertActions, { children: null });
   return jsx(AlertModal.AlertModal, { title: null, content: null, actions: null });
-});
+};

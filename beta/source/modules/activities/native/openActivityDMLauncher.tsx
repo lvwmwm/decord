@@ -1,10 +1,10 @@
-// Module ID: 14289
-// Function ID: 14290
+// Module ID: 14279
+// Function ID: 14280
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1487, 7442, 4803, 13272, 11678, 7461, 7802, 4657, 1614, 2]
+// Dependencies: [5, 1483, 7440, 4801, 13262, 11802, 7459, 7797, 4654, 1610, 2]
 // Exports: default
 
-// Module 14289 (openActivityDMLauncher)
+// Module 14279 (openActivityDMLauncher)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_5 = async function _openActivityDMLauncher(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -51,7 +51,7 @@ let closure_5 = async function _openActivityDMLauncher(arg0, value) {
           let customId;
           c7 = 1;
           c8 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -156,7 +156,7 @@ let closure_5 = async function _openActivityDMLauncher(arg0, value) {
     }
   }
 };
-const AppLauncherRouteName = fn(1487).AppLauncherRouteName;
+const AppLauncherRouteName = fn(1483).AppLauncherRouteName;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/native/openActivityDMLauncher.tsx");
 

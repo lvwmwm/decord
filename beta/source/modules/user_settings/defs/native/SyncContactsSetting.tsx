@@ -1,60 +1,28 @@
-// Module ID: 15120
-// Function ID: 15121
+// Module ID: 15124
+// Function ID: 15125
 // Name: SyncContactsSetting
-// Dependencies: [5532, 1376, 8270, 1078, 558, 568, 12863, 15121, 11630, 1119, 2]
+// Dependencies: [5530, 1372, 8265, 1074, 12962, 15125, 11754, 1115, 2]
 
-// Module 15120 (SyncContactsSetting)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
-import ContactSyncSettings from "ContactSyncSettings" /* 15121 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 15124 (SyncContactsSetting)
+import util from "util" /* 1115 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12962 */;
+import ContactSyncSettings from "ContactSyncSettings" /* 15125 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const PlatformTypes = fn(1078).PlatformTypes;
-const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11630);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const contactSyncAccount = ContactSyncUtils.useContactSyncAccount();
-  if (cResult[0] !== contactSyncAccount) {
-    const isContactSyncEnabledResult = ContactSyncUtils.isContactSyncEnabled(contactSyncAccount);
-    cResult[0] = contactSyncAccount;
-    cResult[1] = isContactSyncEnabledResult;
-    let tmp5 = isContactSyncEnabledResult;
-    const tmpResult = ContactSyncUtils;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (() => {
-  const contactSyncAccount = ContactSyncUtils.useContactSyncAccount();
-  return ContactSyncUtils.isContactSyncEnabled(contactSyncAccount);
-});
+const PlatformTypes = fn(1074).PlatformTypes;
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.uSvEy7);
   },
-  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(2);
-    const contactSyncAccount = ContactSyncUtils.useContactSyncAccount();
-    if (cResult[0] !== contactSyncAccount) {
-      const isContactSyncEnabledResult = ContactSyncUtils.isContactSyncEnabled(contactSyncAccount);
-      cResult[0] = contactSyncAccount;
-      cResult[1] = isContactSyncEnabledResult;
-      let tmp5 = isContactSyncEnabledResult;
-      const tmpResult = ContactSyncUtils;
-    } else {
-      tmp5 = cResult[1];
-    }
-    return tmp5;
-  }) : (() => {
+  parent: fn(8265).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: function useContactSyncSettingValue() {
     const contactSyncAccount = ContactSyncUtils.useContactSyncAccount();
     return ContactSyncUtils.isContactSyncEnabled(contactSyncAccount);
-  }),
+  },
   onValueChange: function onContactSyncSettingValueChange(arg0) {
     const localAccount = ConnectedAccountsStore.getLocalAccount(PlatformTypes.CONTACTS);
     const currentUser = UserStore.getCurrentUser();

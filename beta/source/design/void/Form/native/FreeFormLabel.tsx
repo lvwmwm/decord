@@ -1,37 +1,19 @@
-// Module ID: 7211
-// Function ID: 7212
+// Module ID: 7213
+// Function ID: 7214
 // Name: FreeFormLabel
-// Dependencies: [19, 21, 558, 568, 4786, 2]
+// Dependencies: [19, 21, 4784, 2]
+// Exports: default
 
-// Module 7211 (FreeFormLabel)
-import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4786 */;
+// Module 7213 (FreeFormLabel)
+import Text_Text from "Text/Text" /* 4784 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FreeFormLabel.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(4);
-  ({ children, style, nativeID } = arg0);
-  if (cResult[0] === children) {
-    if (cResult[1] === nativeID) {
-      if (cResult[2] === style) {
-        let tmp4 = cResult[3];
-      }
-      return tmp4;
-    }
-  }
-  const tmp5 = jsx(Text_Text.Text, { style, variant: "text-sm/semibold", color: "text-muted", nativeID, children });
-  cResult[0] = children;
-  cResult[1] = nativeID;
-  cResult[2] = style;
-  cResult[3] = tmp5;
-  tmp4 = tmp5;
-}) : ((arg0) => {
+export default function FreeFormLabel(arg0) {
   ({ children, style, nativeID } = arg0);
   return jsx(Text_Text.Text, { style, variant: "text-sm/semibold", color: "text-muted", nativeID, children });
-});
+};

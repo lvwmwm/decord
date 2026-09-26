@@ -4,4 +4,4 @@
 
 // Module 1310
 
-export default Math.abs;
+export default Math.pow;

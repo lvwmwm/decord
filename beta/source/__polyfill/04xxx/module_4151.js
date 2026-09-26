@@ -1,11 +1,11 @@
 // Module ID: 4151
 // Function ID: 4152
-// Dependencies: [3881, 3882]
+// Dependencies: [3877, 3878]
 // Exports: default
 
 // Module 4151
-import _typeof_mod from "module_3881" /* 3881 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function getHours(arg0) {
+export default function getMilliseconds(arg0) {
   requiredArgs.default(1, arguments);
-  return _typeof.default(arg0).getHours();
+  return _typeof.default(arg0).getMilliseconds();
 };
 export default exports.default;

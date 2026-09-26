@@ -1,10 +1,10 @@
-// Module ID: 7355
-// Function ID: 7356
+// Module ID: 7353
+// Function ID: 7354
 // Name: PhoneVerificationActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 
-// Module 7355 (PhoneVerificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 7353 (PhoneVerificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");

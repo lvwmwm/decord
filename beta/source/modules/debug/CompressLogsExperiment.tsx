@@ -1,10 +1,10 @@
-// Module ID: 13049
-// Function ID: 13050
+// Module ID: 10485
+// Function ID: 10486
 // Name: CompressLogsExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 13049 (CompressLogsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 10485 (CompressLogsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-08-compress-logs", defaultConfig: { enabled: false }, variations: null };

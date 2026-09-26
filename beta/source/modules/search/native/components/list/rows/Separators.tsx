@@ -1,67 +1,27 @@
-// Module ID: 17133
-// Function ID: 17134
+// Module ID: 17123
+// Function ID: 17124
 // Name: Separators
-// Dependencies: [19, 17, 8159, 21, 4790, 558, 568, 2]
+// Dependencies: [19, 17, 8154, 21, 4788, 2]
+// Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 17133 (Separators)
-import c from "c" /* 568 */;
+// Module 17123 (Separators)
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const View = fn(17).View;
-const SearchConstants = fn(8159);
+const SearchConstants = fn(8154);
 ({ MEDIA_ITEM_GAP_WIDTH, FILES_OR_LINKS_GAP_WIDTH } = SearchConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let closure_4 = createStyles.createStyles({ filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } });
-fn(558);
-let ReactCompilerGating = fn(558);
-let obj2 = { filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const tmp2 = closure_4();
-  if (cResult[0] !== tmp2.messageSeparator) {
-    const obj2 = { style: tmp2.messageSeparator };
-    const tmp6 = <View style={tmp2.messageSeparator} />;
-    cResult[0] = tmp2.messageSeparator;
-    cResult[1] = tmp6;
-    let tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (() => <View style={closure_4().messageSeparator} />);
-ReactCompilerGating = fn(558);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const tmp2 = closure_4();
-  if (cResult[0] !== tmp2.mediaSeparator) {
-    const obj2 = { style: tmp2.mediaSeparator };
-    const tmp6 = <View style={tmp2.mediaSeparator} />;
-    cResult[0] = tmp2.mediaSeparator;
-    cResult[1] = tmp6;
-    let tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (() => <View style={closure_4().mediaSeparator} />);
+const createStyles = fn(4788);
+let closure_2 = createStyles.createStyles({ filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/Separators.tsx");
 
-export const MessageVerticalSeparator = tmp4;
-export const MediaVerticalSeparator = tmp5;
-export const CardVerticalSeparator = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const tmp2 = closure_4();
-  if (cResult[0] !== tmp2.filesOrLinksSeparator) {
-    const obj2 = { style: tmp2.filesOrLinksSeparator };
-    const tmp6 = <View style={tmp2.filesOrLinksSeparator} />;
-    cResult[0] = tmp2.filesOrLinksSeparator;
-    cResult[1] = tmp6;
-    let tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (() => <View style={closure_4().filesOrLinksSeparator} />);
+export const MessageVerticalSeparator = function MessageVerticalSeparator() {
+  return <View style={closure_2().messageSeparator} />;
+};
+export const MediaVerticalSeparator = function MediaVerticalSeparator() {
+  return <View style={closure_2().mediaSeparator} />;
+};
+export const CardVerticalSeparator = function CardVerticalSeparator() {
+  return <View style={closure_2().filesOrLinksSeparator} />;
+};

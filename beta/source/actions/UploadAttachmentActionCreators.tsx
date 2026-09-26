@@ -1,10 +1,10 @@
-// Module ID: 9451
-// Function ID: 9452
+// Module ID: 9453
+// Function ID: 9454
 // Name: UploadAttachmentActionCreators
-// Dependencies: [577, 9452, 2]
+// Dependencies: [573, 9454, 2]
 
-// Module 9451 (UploadAttachmentActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 9453 (UploadAttachmentActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("actions/UploadAttachmentActionCreators.tsx");
@@ -16,16 +16,16 @@ export default {
   addFiles(draftType) {
     ({ files, channelId } = draftType);
     draftType = draftType.draftType;
-    if (files.some(channelId(9452).itemNeedsImagePreConversion)) {
+    if (files.some(channelId(9454).itemNeedsImagePreConversion)) {
       function dispatch(files) {
         DispatcherDefault.dispatch({ type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files, draftType });
       }
-      Promise.all(files.map(channelId(9452).maybePreConvertImageItem)).then(dispatch);
-      const allPromises = Promise.all(files.map(channelId(9452).maybePreConvertImageItem));
+      Promise.all(files.map(channelId(9454).maybePreConvertImageItem)).then(dispatch);
+      const allPromises = Promise.all(files.map(channelId(9454).maybePreConvertImageItem));
     } else {
       const obj2 = { type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files, draftType };
-      draftType(577).dispatch(obj2);
-      const obj = draftType(577);
+      draftType(573).dispatch(obj2);
+      const obj = draftType(573);
     }
   },
   addFile(draftType) {

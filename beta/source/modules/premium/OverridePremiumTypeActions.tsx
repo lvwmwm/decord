@@ -1,30 +1,29 @@
-// Module ID: 15963
-// Function ID: 15964
+// Module ID: 15967
+// Function ID: 15968
 // Name: OverridePremiumTypeActions
-// Dependencies: [1376, 577, 8031, 2]
+// Dependencies: [1372, 573, 8026, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 15963 (OverridePremiumTypeActions)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import createMessage from "createMessage" /* 8031 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 15967 (OverridePremiumTypeActions)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import createMessage from "createMessage" /* 8026 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/OverridePremiumTypeActions.tsx");
 
-export const updateClientPremiumTypeOverride = function updateClientPremiumTypeOverride(premiumType, stateFromStores) {
-  let currentUser = stateFromStores;
+export const updateClientPremiumTypeOverride = function updateClientPremiumTypeOverride(premiumType, currentUser) {
   DispatcherDefault.dispatch({ type: "SET_PREMIUM_TYPE_OVERRIDE", premiumType });
-  if (stateFromStores == null) {
+  if (currentUser == null) {
     currentUser = UserStore.getCurrentUser();
   }
   if (null != currentUser) {
     const obj3 = { type: "UPDATE_CLIENT_PREMIUM_TYPE", user: currentUser };
-    tmp2(577).dispatch(obj3);
-    const tmp2Result = tmp2(577);
+    tmp2(573).dispatch(obj3);
+    const tmp2Result = tmp2(573);
     const obj4 = { type: "CURRENT_USER_UPDATE", user: null };
-    const tmp2Result2 = tmp2(577);
+    const tmp2Result2 = tmp2(573);
     obj4.user = createMessage.userRecordToServer(currentUser);
     tmp2Result2.dispatch(obj4);
   }

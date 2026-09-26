@@ -1,14 +1,14 @@
-// Module ID: 11004
-// Function ID: 11005
+// Module ID: 10966
+// Function ID: 10967
 // Name: localized_string
-// Dependencies: [32, 1191, 2]
+// Dependencies: [32, 1187, 2]
 
-// Module 11004 (localized_string)
-import _mod1191 from "module_1191" /* 1191 */;
+// Module 10966 (localized_string)
+import _mod1187 from "module_1187" /* 1187 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
-const MessageType = fn(1191).MessageType;
+const MessageType = fn(1187).MessageType;
 class LocalizedString$Type extends MessageType {
   constructor() {
     items = [, ];
@@ -22,10 +22,10 @@ const prototype = LocalizedString$Type.prototype;
 prototype["create"] = function create(arr) {
   const obj = { default: "", localizations: {} };
   const _Object = Object;
-  _Object.defineProperty(obj, _mod1191.MESSAGE_TYPE, { enumerable: false, value: this });
+  _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, { enumerable: false, value: this });
   if (undefined !== arr) {
-    const result = _mod1191.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1191;
+    const result = _mod1187.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1187;
   }
   return obj;
 };
@@ -61,7 +61,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
           let skipResult = pos.skip(tmp6);
           if (false !== onRead) {
             if (true === onRead) {
-              onRead = _mod1191.UnknownFieldHandler.onRead;
+              onRead = _mod1187.UnknownFieldHandler.onRead;
             }
             let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
@@ -107,18 +107,18 @@ prototype["binaryReadMap2"] = function binaryReadMap2(arg0, pos) {
 };
 prototype["internalBinaryWrite"] = function internalBinaryWrite(localizations, tag, writeUnknownFields) {
   if ("" !== localizations.default) {
-    tag.tag(1, _mod1191.WireType.LengthDelimited).string(localizations.default);
-    const tagResult = tag.tag(1, _mod1191.WireType.LengthDelimited);
+    tag.tag(1, _mod1187.WireType.LengthDelimited).string(localizations.default);
+    const tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
   }
   const keys = Object.keys(localizations.localizations);
   const iter = keys[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
-    let tagResult1 = tag.tag(2, _mod1191.WireType.LengthDelimited);
+    let tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
     let forkResult = tagResult1.fork();
-    let tagResult2 = forkResult.tag(1, _mod1191.WireType.LengthDelimited);
+    let tagResult2 = forkResult.tag(1, _mod1187.WireType.LengthDelimited);
     let stringResult1 = tagResult2.string(nextResult);
-    let tagResult3 = stringResult1.tag(2, _mod1191.WireType.LengthDelimited);
+    let tagResult3 = stringResult1.tag(2, _mod1187.WireType.LengthDelimited);
     let stringResult2 = tagResult3.string(localizations.localizations[nextResult]);
     let joined = stringResult2.join();
     continue;
@@ -126,7 +126,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(localizations, t
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1191.UnknownFieldHandler.onWrite;
+      onWrite = _mod1187.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, localizations, tag);
@@ -135,7 +135,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(localizations, t
 };
 let items = [{ no: 1, name: "default", kind: "scalar", T: 9 }, { no: 2, name: "localizations", kind: "map", K: 9, V: { kind: "scalar", T: 9 } }];
 const object = new Object("discord_protos.common.v1.LocalizedString", items, tmp2, "create", "internalBinaryRead", "binaryReadMap2", tmp, "internalBinaryWrite");
-const MessageType2 = fn(1191).MessageType;
+const MessageType2 = fn(1187).MessageType;
 class LocalizedSnowflake$Type extends MessageType2 {
   constructor() {
     items = [, ];
@@ -149,10 +149,10 @@ const prototype2 = LocalizedSnowflake$Type.prototype;
 prototype2["create"] = function create(arr) {
   const obj = { default: "0", localizations: {} };
   const _Object = Object;
-  _Object.defineProperty(obj, _mod1191.MESSAGE_TYPE, { enumerable: false, value: this });
+  _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, { enumerable: false, value: this });
   if (undefined !== arr) {
-    const result = _mod1191.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1191;
+    const result = _mod1187.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1187;
   }
   return obj;
 };
@@ -189,7 +189,7 @@ prototype2["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUn
           let skipResult = pos.skip(tmp6);
           if (false !== onRead) {
             if (true === onRead) {
-              onRead = _mod1191.UnknownFieldHandler.onRead;
+              onRead = _mod1187.UnknownFieldHandler.onRead;
             }
             let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
@@ -236,18 +236,18 @@ prototype2["binaryReadMap2"] = function binaryReadMap2(arg0, pos) {
 };
 prototype2["internalBinaryWrite"] = function internalBinaryWrite(localizations, tag, writeUnknownFields) {
   if ("0" !== localizations.default) {
-    tag.tag(1, _mod1191.WireType.Bit64).fixed64(localizations.default);
-    const tagResult = tag.tag(1, _mod1191.WireType.Bit64);
+    tag.tag(1, _mod1187.WireType.Bit64).fixed64(localizations.default);
+    const tagResult = tag.tag(1, _mod1187.WireType.Bit64);
   }
   const keys = Object.keys(localizations.localizations);
   const iter = keys[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
-    let tagResult1 = tag.tag(2, _mod1191.WireType.LengthDelimited);
+    let tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
     let forkResult = tagResult1.fork();
-    let tagResult2 = forkResult.tag(1, _mod1191.WireType.LengthDelimited);
+    let tagResult2 = forkResult.tag(1, _mod1187.WireType.LengthDelimited);
     let stringResult = tagResult2.string(nextResult);
-    let tagResult3 = stringResult.tag(2, _mod1191.WireType.Bit64);
+    let tagResult3 = stringResult.tag(2, _mod1187.WireType.Bit64);
     let fixed64Result1 = tagResult3.fixed64(localizations.localizations[nextResult]);
     let joined = fixed64Result1.join();
     continue;
@@ -255,7 +255,7 @@ prototype2["internalBinaryWrite"] = function internalBinaryWrite(localizations, 
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1191.UnknownFieldHandler.onWrite;
+      onWrite = _mod1187.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, localizations, tag);

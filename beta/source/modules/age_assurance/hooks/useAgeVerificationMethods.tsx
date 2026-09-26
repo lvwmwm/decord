@@ -1,570 +1,41 @@
-// Module ID: 8896
-// Function ID: 8897
+// Module ID: 8891
+// Function ID: 8892
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 8762, 8720, 558, 568, 504, 8721, 5002, 8749, 5118, 5123, 8897, 8726, 1119, 2]
+// Dependencies: [5, 32, 19, 8757, 8715, 504, 5000, 8716, 8744, 5116, 5121, 8892, 8721, 1115, 2]
+// Exports: default
 
-// Module 8896 (useAgeVerificationMethods)
-import util from "util" /* 1119 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5118 */;
-import MetricEvents from "MetricEvents" /* 5123 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8726 */;
+// Module 8891 (useAgeVerificationMethods)
+import util from "util" /* 1115 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5116 */;
+import MetricEvents from "MetricEvents" /* 5121 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8721 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8762 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8757 */;
 
 require = fn;
-const AgeVerificationConstants = fn(8720);
+const AgeVerificationConstants = fn(8715);
 ({ VERIFICATION_METHOD_TITLE_MAP: closure_7, VerificationMethod: closure_8 } = AgeVerificationConstants);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/age_assurance/hooks/useAgeVerificationMethods.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = onGoogleWalletSelect(initiateAgeVerification[6]).c(22);
-  ({ onClose, classificationId, onGoogleWalletSelect } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [AgeVerificationStore];
-    const fn = function u() {
-      return { methods: AgeVerificationStore.methods, loading: AgeVerificationStore.loading };
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  let obj = onGoogleWalletSelect(initiateAgeVerification[6]);
-  const stateFromStoresObject = onGoogleWalletSelect(initiateAgeVerification[7]).useStateFromStoresObject(tmp4, tmp5);
-  const methods = stateFromStoresObject.methods;
-  if (cResult[2] === classificationId) {
-    if (cResult[3] === onClose) {
-      let tmp8 = cResult[4];
-    }
-    initiateAgeVerification = tmp(tmp2[9]).useInitiateAgeVerification(tmp8).initiateAgeVerification;
-    const tmpResult2 = tmp(tmp2[9]);
-    [tmp11, asyncGeneratorStep] = noop.useState(false);
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
-        constructor() {
-          c0 = false;
-          obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-          result = obj.checkGoogleWalletAvailable();
-          nextPromise = result.then((result) => {
-            if (!c0) {
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-              const _HermesInternal = HermesInternal;
-              const items = ["available:" + result];
-              obj2.tags = items;
-              MonitoringAgentDefault.increment(obj2);
-              if (result) {
-                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8897);
-              }
-              asyncGeneratorStep(result);
-              tmp4 = require;
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-      const items1 = [];
-      cResult[5] = S;
-      cResult[6] = items1;
-      let tmp13 = items1;
-      const tmp12 = S;
-    } else {
-      class S {
-        constructor() {
-          c0 = false;
-          obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-          result = obj.checkGoogleWalletAvailable();
-          nextPromise = result.then((result) => {
-            if (!c0) {
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-              const _HermesInternal = HermesInternal;
-              const items = ["available:" + result];
-              obj2.tags = items;
-              MonitoringAgentDefault.increment(obj2);
-              if (result) {
-                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8897);
-              }
-              asyncGeneratorStep(result);
-              tmp4 = require;
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-      tmp13 = cResult[6];
-    }
-    const effect = obj5.useEffect(tmp12, tmp13);
-    if (cResult[7] !== methods) {
-      class S {
-        constructor() {
-          c0 = false;
-          obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-          result = obj.checkGoogleWalletAvailable();
-          nextPromise = result.then((result) => {
-            if (!c0) {
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-              const _HermesInternal = HermesInternal;
-              const items = ["available:" + result];
-              obj2.tags = items;
-              MonitoringAgentDefault.increment(obj2);
-              if (result) {
-                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8897);
-              }
-              asyncGeneratorStep(result);
-              tmp4 = require;
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-      const items2 = [methods];
-      cResult[7] = methods;
-      cResult[8] = tmp17;
-      cResult[9] = items2;
-      let tmp16 = items2;
-      const tmp15 = tmp17;
-    } else {
-      class S {
-        constructor() {
-          c0 = false;
-          obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-          result = obj.checkGoogleWalletAvailable();
-          nextPromise = result.then((result) => {
-            if (!c0) {
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-              const _HermesInternal = HermesInternal;
-              const items = ["available:" + result];
-              obj2.tags = items;
-              MonitoringAgentDefault.increment(obj2);
-              if (result) {
-                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8897);
-              }
-              asyncGeneratorStep(result);
-              tmp4 = require;
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-      tmp16 = cResult[9];
-    }
-    const effect1 = obj5.useEffect(tmp15, tmp16);
-    if (cResult[10] === initiateAgeVerification) {
-      class S {
-        constructor() {
-          c0 = false;
-          obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-          result = obj.checkGoogleWalletAvailable();
-          nextPromise = result.then((result) => {
-            if (!c0) {
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-              const _HermesInternal = HermesInternal;
-              const items = ["available:" + result];
-              obj2.tags = items;
-              MonitoringAgentDefault.increment(obj2);
-              if (result) {
-                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8897);
-              }
-              asyncGeneratorStep(result);
-              tmp4 = require;
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-    }
-    let found;
-    if (methods != null) {
-      class S {
-        constructor() {
-          c0 = false;
-          obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-          result = obj.checkGoogleWalletAvailable();
-          nextPromise = result.then((result) => {
-            if (!c0) {
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-              const _HermesInternal = HermesInternal;
-              const items = ["available:" + result];
-              obj2.tags = items;
-              MonitoringAgentDefault.increment(obj2);
-              if (result) {
-                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8897);
-              }
-              asyncGeneratorStep(result);
-              tmp4 = require;
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-      const mapped = arr4.map((id) => {
-        if (null == dependencyMap[id]) {
-          return null;
-        } else {
-          let obj = { id, title: null, description: null, onClick: null };
-          ({ title, description } = tmp);
-          const intl = onGoogleWalletSelect(initiateAgeVerification[15]).intl;
-          obj.title = intl.string(title);
-          const intl2 = onGoogleWalletSelect(initiateAgeVerification[15]).intl;
-          obj.description = intl2.string(description);
-          closure_1 = asyncGeneratorStep(async (arg0, value) => {
-            if (c1 === 2) {
-              c1 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c1 = 2;
-                if (0 === v1) {
-                  if (arg0 === 1) {
-                    c1 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c1 = 3;
-                    const obj3 = { value, done: true };
-                    return obj3;
-                  } else {
-                    const obj5 = id(8721);
-                    const result = obj5.trackAgeVerificationModalClicked(id, id(8721).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8721).AgeVerificationModalCta.METHOD_SELECT, id);
-                    v1 = 1;
-                    c1 = 1;
-                    const obj4 = { value: v1(id), done: false };
-                    return obj4;
-                  }
-                } else if (arg0 === 1) {
-                  c1 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c1 = 3;
-                  const obj = { value, done: true };
-                  return obj;
-                } else {
-                  c1 = 3;
-                  return { value: "IconComponent", done: null };
-                }
-              } catch (tmp5) {
-                c1 = tmp;
-                throw tmp5;
-              }
-            }
-          });
-          obj.onClick = function() {
-            const self = this;
-            const apply = closure_1.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          };
-          return obj;
-        }
-      });
-      found = mapped.filter((item) => null != item);
-    }
-    if (found == null) {
-      class S {
-        constructor() {
-          c0 = false;
-          obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-          result = obj.checkGoogleWalletAvailable();
-          nextPromise = result.then((result) => {
-            if (!c0) {
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-              const _HermesInternal = HermesInternal;
-              const items = ["available:" + result];
-              obj2.tags = items;
-              MonitoringAgentDefault.increment(obj2);
-              if (result) {
-                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8897);
-              }
-              asyncGeneratorStep(result);
-              tmp4 = require;
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-    }
-    let tmp22 = found;
-    if (tmp11) {
-      class S {
-        constructor() {
-          c0 = false;
-          obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-          result = obj.checkGoogleWalletAvailable();
-          nextPromise = result.then((result) => {
-            if (!c0) {
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-              const _HermesInternal = HermesInternal;
-              const items = ["available:" + result];
-              obj2.tags = items;
-              MonitoringAgentDefault.increment(obj2);
-              if (result) {
-                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8897);
-              }
-              asyncGeneratorStep(result);
-              tmp4 = require;
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-      if (null != onGoogleWalletSelect) {
-        class S {
-          constructor() {
-            c0 = false;
-            obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-            result = obj.checkGoogleWalletAvailable();
-            nextPromise = result.then((result) => {
-              if (!c0) {
-                const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-                const _HermesInternal = HermesInternal;
-                const items = ["available:" + result];
-                obj2.tags = items;
-                MonitoringAgentDefault.increment(obj2);
-                if (result) {
-                  result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                  const tmp4Result = tmp4(8897);
-                }
-                asyncGeneratorStep(result);
-                tmp4 = require;
-              }
-            });
-            return () => {
-              c0 = true;
-            };
-          }
-        }
-        let GOOGLE_WALLET = constants;
-        tmp22 = found;
-        if (null != dependencyMap[constants.GOOGLE_WALLET]) {
-          class S {
-            constructor() {
-              c0 = false;
-              obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-              result = obj.checkGoogleWalletAvailable();
-              nextPromise = result.then((result) => {
-                if (!c0) {
-                  const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-                  const _HermesInternal = HermesInternal;
-                  const items = ["available:" + result];
-                  obj2.tags = items;
-                  MonitoringAgentDefault.increment(obj2);
-                  if (result) {
-                    result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                    const tmp4Result = tmp4(8897);
-                  }
-                  asyncGeneratorStep(result);
-                  tmp4 = require;
-                }
-              });
-              return () => {
-                c0 = true;
-              };
-            }
-          }
-          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            class S {
-              constructor() {
-                c0 = false;
-                obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-                result = obj.checkGoogleWalletAvailable();
-                nextPromise = result.then((result) => {
-                  if (!c0) {
-                    const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-                    const _HermesInternal = HermesInternal;
-                    const items = ["available:" + result];
-                    obj2.tags = items;
-                    MonitoringAgentDefault.increment(obj2);
-                    if (result) {
-                      result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                      const tmp4Result = tmp4(8897);
-                    }
-                    asyncGeneratorStep(result);
-                    tmp4 = require;
-                  }
-                });
-                return () => {
-                  c0 = true;
-                };
-              }
-            }
-            const stringResult = obj6.string(tmp32.title);
-            let intl = tmp(tmp2[15]).intl;
-            const stringResult1 = intl.string(tmp32.description);
-            cResult[15] = stringResult1;
-            cResult[16] = stringResult;
-            let tmp24 = stringResult;
-            const tmp23 = stringResult1;
-          } else {
-            class S {
-              constructor() {
-                c0 = false;
-                obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-                result = obj.checkGoogleWalletAvailable();
-                nextPromise = result.then((result) => {
-                  if (!c0) {
-                    const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-                    const _HermesInternal = HermesInternal;
-                    const items = ["available:" + result];
-                    obj2.tags = items;
-                    MonitoringAgentDefault.increment(obj2);
-                    if (result) {
-                      result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                      const tmp4Result = tmp4(8897);
-                    }
-                    asyncGeneratorStep(result);
-                    tmp4 = require;
-                  }
-                });
-                return () => {
-                  c0 = true;
-                };
-              }
-            }
-            tmp24 = cResult[16];
-          }
-          if (cResult[17] !== onGoogleWalletSelect) {
-            class S {
-              constructor() {
-                c0 = false;
-                obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-                result = obj.checkGoogleWalletAvailable();
-                nextPromise = result.then((result) => {
-                  if (!c0) {
-                    const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-                    const _HermesInternal = HermesInternal;
-                    const items = ["available:" + result];
-                    obj2.tags = items;
-                    MonitoringAgentDefault.increment(obj2);
-                    if (result) {
-                      result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                      const tmp4Result = tmp4(8897);
-                    }
-                    asyncGeneratorStep(result);
-                    tmp4 = require;
-                  }
-                });
-                return () => {
-                  c0 = true;
-                };
-              }
-            }
-            GOOGLE_WALLET = GOOGLE_WALLET.GOOGLE_WALLET;
-            tmp28[0] = GOOGLE_WALLET;
-            tmp28[1] = tmp24;
-            tmp28[2] = tmp23;
-            tmp28[3] = function onClick(modalSessionId) {
-              const obj = MonitoringAgentDefault;
-              obj.increment({ name: MetricEvents.MetricEvents.GOOGLE_WALLET_METHOD_SELECTED });
-              const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_METHOD_SELECTED };
-              const result = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.METHOD_SELECT, constants.GOOGLE_WALLET);
-              onGoogleWalletSelect();
-            };
-            cResult[17] = onGoogleWalletSelect;
-            cResult[18] = tmp28;
-            const tmp27 = tmp28;
-          } else {
-            class S {
-              constructor() {
-                c0 = false;
-                obj = onGoogleWalletSelect(initiateAgeVerification[10]);
-                result = obj.checkGoogleWalletAvailable();
-                nextPromise = result.then((result) => {
-                  if (!c0) {
-                    const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
-                    const _HermesInternal = HermesInternal;
-                    const items = ["available:" + result];
-                    obj2.tags = items;
-                    MonitoringAgentDefault.increment(obj2);
-                    if (result) {
-                      result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-                      const tmp4Result = tmp4(8897);
-                    }
-                    asyncGeneratorStep(result);
-                    tmp4 = require;
-                  }
-                });
-                return () => {
-                  c0 = true;
-                };
-              }
-            }
-          }
-          const items3 = [];
-          items3[HermesBuiltin.arraySpread(found, 0)] = tmp27;
-        }
-      }
-    }
-    cResult[10] = initiateAgeVerification;
-    cResult[11] = methods;
-    cResult[12] = onGoogleWalletSelect;
-    cResult[13] = tmp11;
-    cResult[14] = tmp22;
-    const tmp10 = _slicedToArray(noop.useState(false), 2);
-  }
-  let obj2 = { onComplete: onClose, entryPoint: onGoogleWalletSelect(initiateAgeVerification[8]).AgeVerificationModalEntryPoint.EXPRESSIVE_GET_STARTED, shouldShowExpressiveModal: true, classificationId };
-  cResult[2] = classificationId;
-  cResult[3] = onClose;
-  cResult[4] = obj2;
-  tmp8 = obj2;
-}) : ((onGoogleWalletSelect) => {
+export default function useAgeVerificationMethods(onGoogleWalletSelect) {
   onGoogleWalletSelect = onGoogleWalletSelect.onGoogleWalletSelect;
   let initiateAgeVerification;
   first = undefined;
   _slicedToArray = undefined;
   ({ onClose, classificationId } = onGoogleWalletSelect);
   let items = [AgeVerificationStore];
-  const stateFromStoresObject = onGoogleWalletSelect(initiateAgeVerification[7]).useStateFromStoresObject(items, () => ({ methods: AgeVerificationStore.methods, loading: AgeVerificationStore.loading }));
+  const stateFromStoresObject = onGoogleWalletSelect(initiateAgeVerification[5]).useStateFromStoresObject(items, () => ({ methods: AgeVerificationStore.methods, loading: AgeVerificationStore.loading }));
   const methods = stateFromStoresObject.methods;
-  let obj = onGoogleWalletSelect(initiateAgeVerification[7]);
-  let obj2 = onGoogleWalletSelect(initiateAgeVerification[9]);
-  initiateAgeVerification = obj2.useInitiateAgeVerification({ onComplete: onClose, entryPoint: onGoogleWalletSelect(initiateAgeVerification[8]).AgeVerificationModalEntryPoint.EXPRESSIVE_GET_STARTED, shouldShowExpressiveModal: true, classificationId }).initiateAgeVerification;
+  let obj = onGoogleWalletSelect(initiateAgeVerification[5]);
+  let obj2 = onGoogleWalletSelect(initiateAgeVerification[6]);
+  initiateAgeVerification = obj2.useInitiateAgeVerification({ onComplete: onClose, entryPoint: onGoogleWalletSelect(initiateAgeVerification[7]).AgeVerificationModalEntryPoint.EXPRESSIVE_GET_STARTED, shouldShowExpressiveModal: true, classificationId }).initiateAgeVerification;
   [first, _slicedToArray] = noop.useState(false);
   const effect = noop.useEffect(() => {
     c0 = false;
-    let result = onGoogleWalletSelect(initiateAgeVerification[10]).checkGoogleWalletAvailable();
+    let result = onGoogleWalletSelect(initiateAgeVerification[8]).checkGoogleWalletAvailable();
     result.then((result) => {
       if (!c0) {
         const obj2 = { name: MetricEvents.MetricEvents.GOOGLE_WALLET_AVAILABILITY_CHECK, tags: null };
@@ -573,8 +44,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj2.tags = items;
         MonitoringAgentDefault.increment(obj2);
         if (result) {
-          result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
-          const tmp4Result = tmp4(8897);
+          result = tmp4(8892).isGoogleWalletEnabled("age_verification_methods");
+          const tmp4Result = tmp4(8892);
         }
         closure_4(result);
         tmp4 = require;
@@ -591,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }, items1);
   const items2 = [methods, first, onGoogleWalletSelect, initiateAgeVerification];
-  let obj3 = { onComplete: onClose, entryPoint: onGoogleWalletSelect(initiateAgeVerification[8]).AgeVerificationModalEntryPoint.EXPRESSIVE_GET_STARTED, shouldShowExpressiveModal: true, classificationId };
+  let obj3 = { onComplete: onClose, entryPoint: onGoogleWalletSelect(initiateAgeVerification[7]).AgeVerificationModalEntryPoint.EXPRESSIVE_GET_STARTED, shouldShowExpressiveModal: true, classificationId };
   return {
     ageVerificationMethods: noop.useMemo(() => {
       let found1;
@@ -603,9 +74,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           } else {
             let obj = { id, title: null, description: null, onClick: null };
             ({ title, description } = tmp);
-            const intl = onGoogleWalletSelect(1119).intl;
+            const intl = onGoogleWalletSelect(1115).intl;
             obj.title = intl.string(title);
-            const intl2 = onGoogleWalletSelect(1119).intl;
+            const intl2 = onGoogleWalletSelect(1115).intl;
             obj.description = intl2.string(description);
             closure_1 = first(function*(arg0, value) {
               if (c1 === 2) {
@@ -618,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -632,8 +103,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      const obj5 = id(8721);
-                      const result = obj5.trackAgeVerificationModalClicked(id, id(8721).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8721).AgeVerificationModalCta.METHOD_SELECT, id);
+                      const obj5 = id(8716);
+                      const result = obj5.trackAgeVerificationModalClicked(id, id(8716).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8716).AgeVerificationModalCta.METHOD_SELECT, id);
                       v1 = 1;
                       c1 = 1;
                       const obj4 = { value: v1(id), done: false };
@@ -648,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     return obj;
                   } else {
                     c1 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp5) {
                   c1 = tmp;
@@ -676,17 +147,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (first) {
         if (null != onGoogleWalletSelect) {
-          if (null != dependencyMap[constants.GOOGLE_WALLET]) {
+          if (null != React5[constants.GOOGLE_WALLET]) {
             let obj = { id: tmp3.GOOGLE_WALLET, title: null, description: null, onClick: null };
             let intl = util.intl;
             obj.title = intl.string(tmp4.title);
             let intl2 = util.intl;
             obj.description = intl2.string(tmp4.description);
             obj.onClick = function onClick(modalSessionId) {
-              const obj = methods(initiateAgeVerification[11]);
-              obj.increment({ name: onGoogleWalletSelect(initiateAgeVerification[12]).MetricEvents.GOOGLE_WALLET_METHOD_SELECTED });
-              const obj2 = { name: onGoogleWalletSelect(initiateAgeVerification[12]).MetricEvents.GOOGLE_WALLET_METHOD_SELECTED };
-              const result = onGoogleWalletSelect(initiateAgeVerification[8]).trackAgeVerificationModalClicked(modalSessionId, onGoogleWalletSelect(initiateAgeVerification[8]).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, onGoogleWalletSelect(initiateAgeVerification[8]).AgeVerificationModalCta.METHOD_SELECT, constants.GOOGLE_WALLET);
+              const obj = methods(initiateAgeVerification[9]);
+              obj.increment({ name: onGoogleWalletSelect(initiateAgeVerification[10]).MetricEvents.GOOGLE_WALLET_METHOD_SELECTED });
+              const obj2 = { name: onGoogleWalletSelect(initiateAgeVerification[10]).MetricEvents.GOOGLE_WALLET_METHOD_SELECTED };
+              const result = onGoogleWalletSelect(initiateAgeVerification[7]).trackAgeVerificationModalClicked(modalSessionId, onGoogleWalletSelect(initiateAgeVerification[7]).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, onGoogleWalletSelect(initiateAgeVerification[7]).AgeVerificationModalCta.METHOD_SELECT, constants.GOOGLE_WALLET);
               closure_1_0();
             };
             const items = [];
@@ -699,4 +170,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }, items2),
     loading: stateFromStoresObject.loading
   };
-});
+};

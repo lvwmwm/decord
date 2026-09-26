@@ -1,29 +1,29 @@
-// Module ID: 16289
-// Function ID: 16290
+// Module ID: 16279
+// Function ID: 16280
 // Name: RegistrationStepsUtils
-// Dependencies: [5, 19, 15008, 6865, 16290, 16291, 1078, 21, 1253, 16292, 16298, 16299, 16311, 16312, 16318, 7215, 16320, 16321, 7327, 7324, 16325, 16326, 16330, 16331, 1489, 2013, 16301, 4691, 7221, 16338, 2]
+// Dependencies: [5, 19, 15012, 6867, 16280, 16281, 1074, 21, 1249, 16282, 16288, 16289, 16301, 16302, 16308, 7217, 16310, 16311, 7325, 7322, 16315, 16316, 16320, 16321, 1485, 2009, 16291, 4688, 7223, 16328, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
-// Module 16289 (RegistrationStepsUtils)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import Link from "Link" /* 1489 */;
-import LoginDefault from "Login" /* 7215 */;
-import WelcomeDefault from "Welcome" /* 16292 */;
-import RegistrationUtils from "RegistrationUtils" /* 16298 */;
-import RegisterIdentity from "RegisterIdentity" /* 16299 */;
-import auth_register from "auth/register" /* 16301 */;
-import RegisterDisplayNameDefault from "RegisterDisplayName" /* 16311 */;
-import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 16312 */;
-import components_VerifyPhoneDefault from "components/VerifyPhone" /* 16318 */;
-import components_MFADefault from "components/MFA" /* 16320 */;
-import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 16321 */;
-import ExternalLinkDefault from "ExternalLink" /* 16325 */;
-import RegisterAgeGateDefault from "RegisterAgeGate" /* 16326 */;
-import AgeGateUnderageDefault from "AgeGateUnderage" /* 16330 */;
-import CompanionRemoteAuth from "CompanionRemoteAuth" /* 16331 */;
+// Module 16279 (RegistrationStepsUtils)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import Link from "Link" /* 1485 */;
+import LoginDefault from "Login" /* 7217 */;
+import WelcomeDefault from "Welcome" /* 16282 */;
+import RegistrationUtils from "RegistrationUtils" /* 16288 */;
+import RegisterIdentity from "RegisterIdentity" /* 16289 */;
+import auth_register from "auth/register" /* 16291 */;
+import RegisterDisplayNameDefault from "RegisterDisplayName" /* 16301 */;
+import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 16302 */;
+import components_VerifyPhoneDefault from "components/VerifyPhone" /* 16308 */;
+import components_MFADefault from "components/MFA" /* 16310 */;
+import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 16311 */;
+import ExternalLinkDefault from "ExternalLink" /* 16315 */;
+import RegisterAgeGateDefault from "RegisterAgeGate" /* 16316 */;
+import AgeGateUnderageDefault from "AgeGateUnderage" /* 16320 */;
+import CompanionRemoteAuth from "CompanionRemoteAuth" /* 16321 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 15008 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 15012 */;
 
 require = fn;
 function headerTitle() {
@@ -48,7 +48,7 @@ let closure_19 = async function _handleNextOrSubmitRegistration(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -62,10 +62,10 @@ let closure_19 = async function _handleNextOrSubmitRegistration(arg0, value) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          options();
+          React7();
           const tmp22 = getNextAuthState(closure_0);
           if (null != tmp22) {
-            const obj4 = { step: v65535(tmp17), toStep: v65535(tmp22), actionType: constants.SUCCESS };
+            const obj4 = { step: closure_2_10(tmp17), toStep: closure_2_10(tmp22), actionType: constants.SUCCESS };
             tmp18(obj4);
             const StackActions = Link.StackActions;
             obj6.dispatch(StackActions.push(tmp22));
@@ -85,7 +85,7 @@ let closure_19 = async function _handleNextOrSubmitRegistration(arg0, value) {
         return obj;
       }
       c3 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp12) {
       c3 = tmp;
       throw tmp12;
@@ -139,7 +139,7 @@ let closure_21 = async function _handleRegistrationSubmit(arg0, arg1) {
       closure_132_0(closure_132_2[28]);
     } else {
       c8 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else if (arg0 === 1) {
     c8 = 3;
@@ -152,12 +152,12 @@ let closure_21 = async function _handleRegistrationSubmit(arg0, arg1) {
   }
   return arg1;
 };
-const usePromoEmailConsentStore = fn(6865).usePromoEmailConsentStore;
-const RegistrationUIStore = fn(16290);
+const usePromoEmailConsentStore = fn(6867).usePromoEmailConsentStore;
+const RegistrationUIStore = fn(16280);
 ({ setRegistrationErrors: metroRequire, setSubmitting: closure_7, useRegistrationUIStore: closure_8, clearRegistrationErrorMessage: closure_9 } = RegistrationUIStore);
-const RegistrationConstants = fn(16291);
+const RegistrationConstants = fn(16281);
 ({ authStateToRegisterTransitionStep: c10, RegisterTransitionSteps: closure_11, RegistrationSteps: closure_12, RegistrationTransitionActionTypes: map1 } = RegistrationConstants);
-const AuthStates = fn(1078).AuthStates;
+const AuthStates = fn(1074).AuthStates;
 const jsx = fn(21).jsx;
 const items = [, , , , ];
 ({ WELCOME: arr[0], REGISTER_IDENTITY: arr[1], REGISTER_DISPLAY_NAME: arr[2], REGISTER_ACCOUNT_INFORMATION: arr[3], AGE_GATE: arr[4] } = AuthStates);
@@ -309,7 +309,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     render(arg0, arg1) {
       closure_0 = arg1;
-      return closure_15(closure_1(7327), {
+      return closure_15(closure_1(7325), {
         onClose() {
           return closure_0.pop();
         },
@@ -426,7 +426,7 @@ export const getPreviousRegistrationTransitionStep = function getPreviousRegistr
     }
   }
   if (null != tmp3) {
-    return v65535(tmp3);
+    return closure_1_10(tmp3);
   }
   tmp = items;
 };
@@ -439,7 +439,7 @@ export const getNextRegistrationTransitionStep = function getNextRegistrationTra
     }
   }
   if (null != tmp2) {
-    return v65535(tmp2);
+    return closure_1_10(tmp2);
   }
 };
 export const handleNextOrSubmitRegistration = function handleNextOrSubmitRegistration() {

@@ -1,14 +1,14 @@
-// Module ID: 8170
-// Function ID: 8171
+// Module ID: 8165
+// Function ID: 8166
 // Name: MarkupPostProcessors
-// Dependencies: [1078, 1379, 5135, 1365, 8171, 4773, 1235, 2]
+// Dependencies: [1074, 1375, 5133, 1361, 8166, 4771, 1231, 2]
 // Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 8170 (MarkupPostProcessors)
-import EmojiConstants from "EmojiConstants" /* 1379 */;
-import findCodedLinks from "findCodedLinks" /* 4773 */;
-import EmbedUtils from "EmbedUtils" /* 5135 */;
-import Constants from "Constants" /* 1078 */;
+// Module 8165 (MarkupPostProcessors)
+import EmojiConstants from "EmojiConstants" /* 1375 */;
+import findCodedLinks from "findCodedLinks" /* 4771 */;
+import EmbedUtils from "EmbedUtils" /* 5133 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41003,8 +41003,8 @@ export const removeBuildOverrideLinks = function removeBuildOverrideLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !closure_0(1365).isBuildOverrideLink(type.target);
-      const obj = closure_0(1365);
+      tmp = !closure_0(1361).isBuildOverrideLink(type.target);
+      const obj = closure_0(1361);
     }
     return tmp;
   });
@@ -41013,8 +41013,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !closure_0(8171).isExperimentEmbedURL(type.target);
-      const obj = closure_0(8171);
+      tmp = !closure_0(8166).isExperimentEmbedURL(type.target);
+      const obj = closure_0(8166);
     }
     return tmp;
   });
@@ -41265,16 +41265,16 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     const found = arr4.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !closure_0(1365).isBuildOverrideLink(type.target);
-        const obj = closure_0(1365);
+        tmp = !closure_0(1361).isBuildOverrideLink(type.target);
+        const obj = closure_0(1361);
       }
       return tmp;
     });
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !closure_0(8171).isExperimentEmbedURL(type.target);
-        const obj = closure_0(8171);
+        tmp = !closure_0(8166).isExperimentEmbedURL(type.target);
+        const obj = closure_0(8166);
       }
       return tmp;
     });

@@ -1,21 +1,21 @@
-// Module ID: 12602
-// Function ID: 12603
+// Module ID: 12700
+// Function ID: 12701
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 12598, 1078, 3, 1104, 577, 1275, 1245, 6864, 2]
+// Dependencies: [5, 502, 12696, 1074, 3, 1100, 573, 1271, 1241, 6866, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 12602 (MultiAccountActionCreators)
+// Module 12700 (MultiAccountActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import TokenManagerAll from "TokenManager" /* 1104 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import TokenManagerAll from "TokenManager" /* 1100 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MultiAccountStore from "MultiAccountStore" /* 12598 */;
+import MultiAccountStore from "MultiAccountStore" /* 12696 */;
 
 const require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, Endpoints: closure_8 } = Constants);
 const logger = new LoggerDefault("MultiAccountActionCreators");
 const size = fn(2);
@@ -35,7 +35,7 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -60,7 +60,7 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
             closure_130_5 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         } else {
           if (1 === tmp7) {
@@ -78,7 +78,7 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
                   const obj8 = { type: "MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST", userId: id2 };
                   DispatcherDefault.dispatch(obj8);
                   c5 = 1;
-                  const HTTP = closure_0(1275).HTTP;
+                  const HTTP = closure_0(1271).HTTP;
                   const obj9 = { url: constants2.ME, headers: null, retries: 3, rejectWithError: false };
                   const obj10 = { authorization: token };
                   obj9.headers = obj10;

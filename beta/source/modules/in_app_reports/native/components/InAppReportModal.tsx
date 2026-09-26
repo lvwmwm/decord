@@ -1,22 +1,22 @@
-// Module ID: 8942
-// Function ID: 8943
+// Module ID: 8944
+// Function ID: 8945
 // Name: InAppReportModal
-// Dependencies: [5, 32, 19, 8943, 21, 7653, 7270, 1119, 8944, 5235, 7871, 8941, 8939, 7278, 2]
+// Dependencies: [5, 32, 19, 8945, 21, 7651, 7269, 1115, 8946, 5235, 7866, 8943, 8941, 7277, 2]
 // Exports: default
 
-// Module 8942 (InAppReportModal)
-import util from "util" /* 1119 */;
-import Navigator from "Navigator" /* 7278 */;
-import HeaderActionButton from "HeaderActionButton" /* 7653 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7871 */;
-import showReportModal from "showReportModal" /* 8939 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8941 */;
+// Module 8944 (InAppReportModal)
+import util from "util" /* 1115 */;
+import Navigator from "Navigator" /* 7277 */;
+import HeaderActionButton from "HeaderActionButton" /* 7651 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7866 */;
+import showReportModal from "showReportModal" /* 8941 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8943 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const IN_APP_REPORTS_NODE = fn(8943).IN_APP_REPORTS_NODE;
+const IN_APP_REPORTS_NODE = fn(8945).IN_APP_REPORTS_NODE;
 let jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportModal.tsx");
@@ -78,7 +78,7 @@ export default function InAppReportModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -128,7 +128,7 @@ export default function InAppReportModal(arg0) {
               tmp5();
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           c4 = tmp;
@@ -144,8 +144,8 @@ export default function InAppReportModal(arg0) {
       showReportModal.hideReportModal();
       const item = _undefined2.forEach((fn) => fn());
       if (successNodeId) {
-        const result1 = tmp3(8941).showInAppReportsFeedbackModal(tmp5, tmp7);
-        const tmp3Result = tmp3(8941);
+        const result1 = tmp3(8943).showInAppReportsFeedbackModal(tmp5, tmp7);
+        const tmp3Result = tmp3(8943);
       }
       return {};
     } else {
@@ -183,7 +183,7 @@ export default function InAppReportModal(arg0) {
       const obj6 = {};
       const obj7 = {
         headerRight() {
-            const obj = { source: menu(7270), onPress, accessibilityLabel: null };
+            const obj = { source: menu(7269), onPress, accessibilityLabel: null };
             const intl = util.intl;
             obj.accessibilityLabel = intl.string(util.t.cpT0Cq);
             return addOnCloseCallback(HeaderActionButton.HeaderActionButton, obj);

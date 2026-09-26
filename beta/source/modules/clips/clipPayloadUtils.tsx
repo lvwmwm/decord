@@ -1,19 +1,19 @@
-// Module ID: 5381
-// Function ID: 5382
+// Module ID: 5379
+// Function ID: 5380
 // Name: clipPayloadUtils
-// Dependencies: [32, 5382, 1078, 4815, 5383, 1245, 2]
+// Dependencies: [32, 5380, 1074, 4813, 5381, 1241, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds, getClipSyncTimestamp
 
-// Module 5381 (clipPayloadUtils)
+// Module 5379 (clipPayloadUtils)
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ClipsConstants = fn(5382);
+const ClipsConstants = fn(5380);
 ({ CLIPS_MAX_PARTICIPANTS: closure_4, CLIPS_MAX_TIMELINE_EVENTS: hasOwnProperty, ClipSignalTypes: metroRequire, GameEventType: closure_7, CLIP_RUNTIME: closure_8 } = ClipsConstants);
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const SpeakingFlags = fn(4815).SpeakingFlags;
+const AnalyticEvents = fn(1074).AnalyticEvents;
+const SpeakingFlags = fn(4813).SpeakingFlags;
 const ServerClipGameEventType = { UNKNOWN: 0, [0]: "UNKNOWN", KILL: 1, [1]: "KILL", MULTIKILL: 2, [2]: "MULTIKILL", DEATH: 3, [3]: "DEATH" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/clips/clipPayloadUtils.tsx");

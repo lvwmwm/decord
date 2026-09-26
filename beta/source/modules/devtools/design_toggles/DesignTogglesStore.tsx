@@ -1,11 +1,11 @@
-// Module ID: 5874
-// Function ID: 5875
+// Module ID: 5876
+// Function ID: 5877
 // Name: DesignTogglesStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 5874 (DesignTogglesStore)
+// Module 5876 (DesignTogglesStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const toggles = { enable_recently_active: "Enable recently active channels", theme_setting_in_account_sheet: "Show theme settings in the Account action sheet", nav_experiment_server_drawer_enabled: "[NavI] Enable expandable server drawer", show_icymi_debug_scores: "Show ICYMI debug scores", channel_list_scrim: "Dim the channel list when chat appears", mana_radio_large_variant: "Larger Radio", mana_checkbox_large_variant: "Larger Checkbox", mana_switch_large_variant: "Larger Switch", show_header_debug_info: "Show header component debug overlays" };
 let toggleStates = {};

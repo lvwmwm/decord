@@ -1,27 +1,30 @@
 // Module ID: 1713
 // Function ID: 1714
-// Dependencies: [1714, 1715, 1720, 1721, 1722, 1723, 1680, 1692, 1681]
+// Dependencies: [1640]
+// Exports: isValidRubberBandConfig
 
 // Module 1713
-import resolvePath from "resolvePath" /* 1680 */;
-import _mod1681 from "module_1681" /* 1681 */;
-import _mod1692 from "module_1692" /* 1692 */;
-import _mod1714 from "module_1714" /* 1714 */;
-import validateConfig from "validateConfig" /* 1715 */;
-import _mod1720 from "module_1720" /* 1720 */;
-import _mod1721 from "module_1721" /* 1721 */;
-import _mod1722 from "module_1722" /* 1722 */;
-import _mod1723 from "module_1723" /* 1723 */;
+import module_1640 from "module_1640" /* 1640 */;
 
+let num = 1;
+if (module_1640.isWeb()) {
+  num = 0.05;
+}
+function isValidRubberBandConfig(rubberBandEffect) {
+  let isArray = rubberBandEffect.rubberBandEffect;
+  if (isArray) {
+    const _Array = Array;
+    isArray = Array.isArray(rubberBandEffect.clamp);
+  }
+  if (isArray) {
+    isArray = 2 === rubberBandEffect.clamp.length;
+  }
+  return isArray;
+}
+isValidRubberBandConfig.__closure = {};
+isValidRubberBandConfig.__workletHash = 5674674993606;
+isValidRubberBandConfig.__initData = { code: "function isValidRubberBandConfig_Pnpm_utilsTs1(config){return!!config.rubberBandEffect&&Array.isArray(config.clamp)&&config.clamp.length===2;}" };
 
-export const withClamp = _mod1714.withClamp;
-export const withDecay = validateConfig.withDecay;
-export const withDelay = _mod1720.withDelay;
-export const withRepeat = _mod1721.withRepeat;
-export const withSequence = _mod1722.withSequence;
-export const withSpring = _mod1723.withSpring;
-export const withStyleAnimation = resolvePath.withStyleAnimation;
-export const withTiming = _mod1692.withTiming;
-export const cancelAnimation = _mod1681.cancelAnimation;
-export const defineAnimation = _mod1681.defineAnimation;
-export const initialUpdaterRun = _mod1681.initialUpdaterRun;
+export const VELOCITY_EPS = num;
+export const SLOPE_FACTOR = 0.1;
+export { isValidRubberBandConfig };

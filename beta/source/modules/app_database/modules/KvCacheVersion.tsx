@@ -1,11 +1,11 @@
-// Module ID: 7927
-// Function ID: 7928
+// Module ID: 7922
+// Function ID: 7923
 // Name: KvCacheVersion
-// Dependencies: [5, 499, 3, 2074, 2]
+// Dependencies: [5, 499, 3, 2070, 2]
 
-// Module 7927 (KvCacheVersion)
+// Module 7922 (KvCacheVersion)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const KvCacheVersionConstants = fn(499);
@@ -64,7 +64,7 @@ prototype["doesDatabaseVersionMatchJsConstants"] = function doesDatabaseVersionM
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

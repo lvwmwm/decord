@@ -1,284 +1,75 @@
-// Module ID: 13774
-// Function ID: 13775
+// Module ID: 13764
+// Function ID: 13765
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1078, 7708, 1378, 21, 580, 4790, 558, 568, 5230, 1098, 4786, 5834, 1119, 13775, 13776, 13777, 13778, 5205, 1613, 11092, 1181, 7441, 1482, 1245, 2]
+// Dependencies: [32, 19, 17, 1074, 7706, 1374, 21, 576, 4788, 5230, 1094, 4784, 5836, 1115, 13765, 13766, 13767, 13768, 5203, 1609, 11053, 1177, 7439, 1478, 1241, 2]
+// Exports: default
 
-// Module 13774 (PremiumFeaturesCarouselSection)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import ConstantsIOS from "ConstantsIOS" /* 1098 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5205 */;
+// Module 13764 (PremiumFeaturesCarouselSection)
+import nativeDefault from "native" /* 576 */;
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import Text_Text from "Text/Text" /* 4784 */;
 import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import FastImageDefault from "FastImage" /* 5834 */;
-import PaginationDefault from "Pagination" /* 11092 */;
-import _modDef13775 from "module_13775" /* 13775 */;
-import _modDef13776 from "module_13776" /* 13776 */;
-import _modDef13777 from "module_13777" /* 13777 */;
-import _modDef13778 from "module_13778" /* 13778 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef13765 from "module_13765" /* 13765 */;
+import _modDef13766 from "module_13766" /* 13766 */;
+import _modDef13767 from "module_13767" /* 13767 */;
+import _modDef13768 from "module_13768" /* 13768 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const native = tmp2(1181);
 require = fn;
-get_ActivityIndicator = fn(17);
-({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const Gradients = fn(7708).Gradients;
-const PremiumTypes = fn(1378).PremiumTypes;
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-let c12 = 0.85;
-const PX_12 = nativeDefault.space.PX_12;
-let createStyles = fn(4790);
-let obj2 = { container: { flex: 1 }, headerText: { textAlign: "center" }, carouselContainer: { flex: 1, marginTop: nativeDefault.space.PX_16 }, carousel: { flex: 1, minHeight: 262 }, indicators: null };
-let obj3 = { flex: 1, marginTop: nativeDefault.space.PX_16 };
-obj2.indicators = { marginBottom: -nativeDefault.space.PX_48 };
-let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4790);
-let obj6 = { cardContainer: { flex: 1 }, card: null, image: null, cardTitle: null };
-let obj4 = { marginBottom: -nativeDefault.space.PX_48 };
-obj6.card = { flex: 1, alignSelf: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
-obj6.image = { alignSelf: "center" };
-let obj7 = { flex: 1, alignSelf: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
-obj6.cardTitle = { marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_24 };
-let closure_15 = createStyles.createStyles(obj6);
-createStyles = fn(4790);
-let closure_16 = createStyles.createStyles({ emojiImage: { alignSelf: "flex-end" } });
-let ReactCompilerGating = fn(558);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(9);
-  ({ style, children } = arg0);
-  const tmp4 = closure_15();
-  if (cResult[0] === style) {
-    if (cResult[1] === tmp4.card) {
-      let tmp5 = cResult[2];
-    }
-    if (cResult[3] === children) {
-      if (cResult[4] === tmp5) {
-        let tmp6 = cResult[5];
-      }
-      if (cResult[6] === tmp4.cardContainer) {
-        if (cResult[7] === tmp6) {
-          let tmp12 = cResult[8];
-        }
-        return tmp12;
-      }
-      const obj2 = { style: tmp4.cardContainer, children: tmp6 };
-      const tmp15 = v65535(timestampProducer, obj2);
-      cResult[6] = tmp4.cardContainer;
-      cResult[7] = tmp6;
-      cResult[8] = tmp15;
-      tmp12 = tmp15;
-    }
-    const obj3 = { style: tmp5, start: tmp(1098).VerticalGradient.START, end: tmp(1098).VerticalGradient.END, colors: Gradients.PREMIUM_TIER_0_PERK_CARD, children };
-    const tmp11 = v65535(LinearGradientDefault, obj3);
-    cResult[3] = children;
-    cResult[4] = tmp5;
-    cResult[5] = tmp11;
-    tmp6 = tmp11;
+class PremiumFeaturesCardBackground {
+  constructor(arg0) {
+    ({ style, children } = global);
+    tmp = closure_15();
+    obj = { style: tmp.cardContainer, children: null };
+    obj1 = { style: null, start: null, end: null, colors: null, children: null };
+    items = [, ];
+    items[0] = tmp.card;
+    items[1] = style;
+    obj1.style = items;
+    tmp2 = closure_1(closure_2[9]);
+    obj1.start = closure_0(closure_2[10]).VerticalGradient.START;
+    obj1.end = closure_0(closure_2[10]).VerticalGradient.END;
+    obj1.colors = Gradients.PREMIUM_TIER_0_PERK_CARD;
+    obj1.children = children;
+    obj.children = jsx(tmp2, obj1);
+    return jsx(View, obj);
   }
-  const items = [tmp4.card, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.card;
-  cResult[2] = items;
-  tmp5 = items;
-}) : ((arg0) => {
-  ({ style, children } = arg0);
-  const tmp = closure_15();
-  const obj = { style: tmp.cardContainer, children: null };
-  const obj2 = { style: null, start: ConstantsIOS.VerticalGradient.START, end: ConstantsIOS.VerticalGradient.END, colors: Gradients.PREMIUM_TIER_0_PERK_CARD, children };
-  const items = [tmp.card, style];
-  obj2.style = items;
-  obj.children = v65535(LinearGradientDefault, obj2);
-  return v65535(timestampProducer, obj);
-});
-let closure_17 = tmp4;
-ReactCompilerGating = fn(558);
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(13);
-  ({ style, title, imageSrc, imageStyle } = arg0);
-  const tmp4 = closure_15();
-  if (cResult[0] === tmp4.cardTitle) {
-    if (cResult[1] === title) {
-      let tmp5 = cResult[2];
-    }
-    if (cResult[3] === imageStyle) {
-      if (cResult[4] === tmp4.image) {
-        let tmp7 = cResult[5];
-      }
-      if (cResult[6] === imageSrc) {
-        if (cResult[7] === tmp7) {
-          let tmp8 = cResult[8];
-        }
-        if (cResult[9] === style) {
-          if (cResult[10] === tmp5) {
-            if (cResult[11] === tmp8) {
-              let tmp12 = cResult[12];
-            }
-            return tmp12;
-          }
-        }
-        const obj2 = { style, children: null };
-        const items = [tmp5, tmp8];
-        obj2.children = items;
-        const tmp15 = closure_1_11(closure_17, obj2);
-        cResult[9] = style;
-        cResult[10] = tmp5;
-        cResult[11] = tmp8;
-        cResult[12] = tmp15;
-        tmp12 = tmp15;
-      }
-      const obj3 = { source: imageSrc, style: tmp7, resizeMode: "contain" };
-      const tmp11 = v65535(FastImageDefault, obj3);
-      cResult[6] = imageSrc;
-      cResult[7] = tmp7;
-      cResult[8] = tmp11;
-      tmp8 = tmp11;
-    }
-    const items1 = [tmp4.image, imageStyle];
-    cResult[3] = imageStyle;
-    cResult[4] = tmp4.image;
-    cResult[5] = items1;
-    tmp7 = items1;
-  }
-  const tmp6 = v65535(Text_Text.Text, { variant: "heading-md/extrabold", color: "text-overlay-light", style: tmp4.cardTitle, children: title });
-  cResult[0] = tmp4.cardTitle;
-  cResult[1] = title;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : ((arg0) => {
+}
+function CarouselCard(arg0) {
   ({ style, title, imageSrc, imageStyle } = arg0);
   const tmp = closure_15();
   const obj = { style, children: null };
-  const items = [v65535(Text_Text.Text, { variant: "heading-md/extrabold", color: "text-overlay-light", style: tmp.cardTitle, children: title }), ];
+  const items = [closure_1_10(Text_Text.Text, { variant: "heading-md/extrabold", color: "text-overlay-light", style: tmp.cardTitle, children: title }), ];
   const obj3 = { source: imageSrc, style: null, resizeMode: "contain" };
   const items1 = [tmp.image, imageStyle];
   obj3.style = items1;
-  items[1] = v65535(FastImageDefault, obj3);
+  items[1] = closure_1_10(FastImageDefault, obj3);
   obj.children = items;
-  return closure_1_11(closure_17, obj);
-});
-ReactCompilerGating = fn(558);
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(15);
-  const tmp4 = closure_16();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t["3cyhe3"]);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const _Set = Set;
-    const items = [, ];
-    ({ TIER_0: arr[0], TIER_2: arr[1] } = PremiumTypes);
-    const set = new Set(items);
-    cResult[1] = set;
-    let tmp7 = set;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.emojiImage) {
-    const obj2 = { title: first, imageSrc: _modDef13775, imageStyle: tmp4.emojiImage, premiumTypes: tmp7 };
-    cResult[2] = tmp4.emojiImage;
-    cResult[3] = obj2;
-    let tmp14 = obj2;
-  } else {
-    tmp14 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t["8AhJqy"]);
-    cResult[4] = stringResult1;
-    let tmp16 = stringResult1;
-  } else {
-    tmp16 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { title: tmp16, imageSrc: _modDef13776, premiumTypes: null };
-    const _Set2 = Set;
-    const items1 = [, ];
-    ({ TIER_0: arr2[0], TIER_2: arr2[1] } = PremiumTypes);
-    const set1 = new Set(items1);
-    obj3.premiumTypes = set1;
-    const intl3 = tmp(1119).intl;
-    const stringResult2 = intl3.string(tmp(1119).t["t/Mvdj"]);
-    cResult[5] = obj3;
-    cResult[6] = stringResult2;
-    let tmp19 = stringResult2;
-    let tmp18 = obj3;
-  } else {
-    tmp18 = cResult[5];
-    tmp19 = cResult[6];
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { title: tmp19, imageSrc: _modDef13777, premiumTypes: null };
-    const _Set3 = Set;
-    const items2 = [PremiumTypes.TIER_2];
-    const set2 = new Set(items2);
-    obj4.premiumTypes = set2;
-    const intl4 = tmp(1119).intl;
-    const stringResult3 = intl4.string(tmp(1119).t["n+DGY/"]);
-    cResult[7] = obj4;
-    cResult[8] = stringResult3;
-    let tmp29 = stringResult3;
-    let tmp28 = obj4;
-  } else {
-    tmp28 = cResult[7];
-    tmp29 = cResult[8];
-  }
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { title: tmp29, imageSrc: _modDef13778, premiumTypes: null };
-    const _Set4 = Set;
-    const items3 = [PremiumTypes.TIER_2];
-    const set3 = new Set(items3);
-    obj5.premiumTypes = set3;
-    cResult[9] = obj5;
-    let tmp38 = obj5;
-  } else {
-    tmp38 = cResult[9];
-  }
-  if (cResult[10] !== tmp14) {
-    const items4 = [tmp14, tmp18, tmp28, tmp38];
-    cResult[10] = tmp14;
-    cResult[11] = items4;
-    let arr5 = items4;
-  } else {
-    arr5 = cResult[11];
-  }
-  if (cResult[12] === arr5) {
-    if (cResult[13] === arg0) {
-      let tmp46 = cResult[14];
-    }
-    return tmp46;
-  }
-  const mapped = arr5.map((item, index) => {
-    const obj = { style: { width: closure_0 * c12 } };
-    const merged = Object.assign(item);
-    return v65535(closure_18, obj, index);
-  });
-  cResult[12] = arr5;
-  cResult[13] = arg0;
-  cResult[14] = mapped;
-  tmp46 = mapped;
-}) : ((arg0) => {
-  closure_0 = arg0;
-  const tmp = closure_16();
-  const emojiImage = tmp;
-  let items = [tmp];
+  return closure_1_11(PremiumFeaturesCardBackground, obj);
+}
+function PremiumFeaturesCarousel(arg0) {
+  ({ width, onEndReached } = arg0);
+  let mapped;
+  noop = undefined;
+  const tmp = closure_14();
+  const isScreenReaderEnabled = onEndReached(5203).useIsScreenReaderEnabled();
+  const tmp5 = mapped(noop.useState(0), 2);
+  const currentIndex = tmp5[0];
+  dependencyMap = tmp7;
+  closure_129_0 = width;
+  const tmp8 = closure_16();
+  closure_129_1 = tmp8;
+  let items = [tmp8];
   const memo = noop.useMemo(() => {
     const obj = { title: null, imageSrc: null, imageStyle: null, premiumTypes: null };
     const intl = util.intl;
     obj.title = intl.string(util.t["3cyhe3"]);
-    obj.imageSrc = _modDef13775;
-    obj.imageStyle = emojiImage.emojiImage;
+    obj.imageSrc = _modDef13765;
+    obj.imageStyle = first.emojiImage;
     const items = [, ];
     ({ TIER_0: arr[0], TIER_2: arr[1] } = PremiumTypes);
     obj.premiumTypes = new Set(items);
@@ -286,7 +77,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { title: null, imageSrc: null, premiumTypes: null };
     const intl2 = util.intl;
     obj2.title = intl2.string(util.t["8AhJqy"]);
-    obj2.imageSrc = _modDef13776;
+    obj2.imageSrc = _modDef13766;
     const items2 = [, ];
     ({ TIER_0: arr3[0], TIER_2: arr3[1] } = PremiumTypes);
     const set = new Set(items);
@@ -295,7 +86,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { title: null, imageSrc: null, premiumTypes: null };
     const intl3 = util.intl;
     obj3.title = intl3.string(util.t["t/Mvdj"]);
-    obj3.imageSrc = _modDef13777;
+    obj3.imageSrc = _modDef13767;
     const items3 = [PremiumTypes.TIER_2];
     const set1 = new Set(items2);
     obj3.premiumTypes = new Set(items3);
@@ -303,183 +94,41 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { title: null, imageSrc: null, premiumTypes: null };
     const intl4 = util.intl;
     obj4.title = intl4.string(util.t["n+DGY/"]);
-    obj4.imageSrc = _modDef13778;
+    obj4.imageSrc = _modDef13768;
     const items4 = [PremiumTypes.TIER_2];
     const set2 = new Set(items3);
     obj4.premiumTypes = new Set(items4);
     items1[3] = obj4;
     return items1;
   }, items);
-  return memo.map((item, index) => {
-    const obj = { style: { width: closure_0 * c12 } };
+  mapped = memo.map((item, index) => {
+    const obj = { style: { width: onEndReached * c12 } };
     const merged = Object.assign(item);
-    return v65535(closure_18, obj, index);
+    return closure_2_10(CarouselCard, obj, index);
   });
-});
-ReactCompilerGating = fn(558);
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(24);
-  ({ width, onEndReached } = arg0);
-  const tmp4 = closure_14();
-  const isScreenReaderEnabled = useIsScreenReaderEnabled.useIsScreenReaderEnabled();
-  [currentIndex] = noop.useState(0);
-  closure_2 = tmp8;
-  const children = closure_19(width);
-  if (cResult[0] === children.length) {
-    if (cResult[1] === currentIndex) {
-      if (cResult[2] === onEndReached) {
-        let tmp9 = cResult[3];
-        let tmp10 = cResult[4];
-      }
-      const effect = noop.useEffect(tmp9, tmp10);
-      const result = width * c12;
-      const sum = result + PX_12;
-      noop = sum;
-      const _Math = Math;
-      let carousel = Math.max(0, (width - result) / 2);
-      if (cResult[5] === children.length) {
-        if (cResult[6] === sum) {
-          let tmp17 = cResult[7];
-        }
-        if (cResult[8] === children) {
-          if (cResult[9] === tmp17) {
-            if (cResult[10] === isScreenReaderEnabled) {
-              if (cResult[11] === sum) {
-                if (cResult[12] === carousel) {
-                  if (cResult[13] === tmp4.carousel) {
-                    if (cResult[14] === width) {
-                      if (cResult[16] === children.length) {
-                        if (cResult[17] === currentIndex) {
-                          if (cResult[18] === tmp4.indicators) {
-                            let tmp25 = cResult[19];
-                          }
-                          if (cResult[20] === tmp4.carouselContainer) {
-                            if (cResult[21] === tmp18) {
-                              if (cResult[22] === tmp25) {
-                                let tmp28 = cResult[23];
-                              }
-                              return tmp28;
-                            }
-                          }
-                          const obj4 = { style: tmp4.carouselContainer, children: null };
-                          const items = [tmp18, tmp25];
-                          obj4.children = items;
-                          const tmp31 = closure_1_11(timestampProducer, obj4);
-                          cResult[20] = tmp4.carouselContainer;
-                          cResult[21] = tmp18;
-                          cResult[22] = tmp25;
-                          cResult[23] = tmp31;
-                          tmp28 = tmp31;
-                        }
-                      }
-                      const obj5 = { containerStyle: tmp4.indicators, numberOfItems: children.length, currentIndex };
-                      const tmp27 = v65535(tmp(1181).CarouselPagination, obj5);
-                      cResult[16] = children.length;
-                      cResult[17] = currentIndex;
-                      cResult[18] = tmp4.indicators;
-                      cResult[19] = tmp27;
-                      tmp25 = tmp27;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        if (!tmp(1613).isThumbstickScrollDevice) {
-          if (!isScreenReaderEnabled) {
-            const obj6 = {
-              style: tmp4.carousel,
-              data: children,
-              renderItem(item) {
-                          return item.item;
-                        },
-              width,
-              loop: false,
-              onConfigurePanGesture(activeOffsetX) {
-                          activeOffsetX.activeOffsetX([-10, 10]);
-                        },
-              scrollAnimationDuration: 200,
-              mode: "parallax",
-              modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
-              onSnapToItem: tmp8
-            };
-            let tmp21 = v65535(PaginationDefault, obj6);
-          }
-          cResult[8] = children;
-          cResult[9] = tmp17;
-          cResult[10] = isScreenReaderEnabled;
-          cResult[11] = sum;
-          cResult[12] = carousel;
-          carousel = tmp4.carousel;
-          cResult[13] = carousel;
-          cResult[14] = width;
-          cResult[15] = tmp21;
-        }
-        const obj7 = { style: tmp4.carousel, contentContainerStyle: null, horizontal: true, showsHorizontalScrollIndicator: false, decelerationRate: "fast", snapToOffsets: null, scrollEventThrottle: 100, onScroll: null, children: null };
-        const obj8 = { paddingHorizontal: carousel, gap: tmp14 };
-        obj7.contentContainerStyle = obj8;
-        obj7.snapToOffsets = children.map((item, index) => index * sum);
-        obj7.onScroll = tmp17;
-        obj7.children = children;
-        tmp21 = v65535(hasOwnProperty, obj7);
-      }
-      const fn2 = function w(nativeEvent) {
-        closure_2(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / sum))));
-      };
-      cResult[5] = children.length;
-      cResult[6] = sum;
-      cResult[7] = fn2;
-      tmp17 = fn2;
-      tmp14 = PX_12;
-    }
-  }
-  const fn = function o() {
-    if (first === arr.length - 1) {
-      if (onEndReached != null) {
-        tmp();
-      }
-    }
-  };
-  const items1 = [currentIndex, children.length, onEndReached];
-  cResult[0] = children.length;
-  cResult[1] = currentIndex;
-  cResult[2] = onEndReached;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp10 = items1;
-  tmp9 = fn;
-}) : ((arg0) => {
-  ({ width, onEndReached } = arg0);
-  currentIndex = undefined;
-  const tmp = closure_14();
-  const isScreenReaderEnabled = useIsScreenReaderEnabled.useIsScreenReaderEnabled();
-  [currentIndex] = noop.useState(0);
-  closure_2 = tmp7;
-  const children = closure_19(width);
-  const items = [currentIndex, children.length, onEndReached];
+  let items1 = [currentIndex, mapped.length, onEndReached];
   const effect = noop.useEffect(() => {
-    if (first === arr.length - 1) {
+    if (first === mapped.length - 1) {
       if (onEndReached != null) {
         tmp();
       }
     }
-  }, items);
+  }, items1);
   const result = width * c12;
   const sum = result + PX_12;
-  c4 = sum;
-  const items1 = [sum, children.length];
+  noop = sum;
+  let items2 = [sum, mapped.length];
   const bound = Math.max(0, (width - result) / 2);
-  const obj2 = { style: tmp.carouselContainer, children: null };
+  let obj2 = { style: tmp.carouselContainer, children: null };
   const callback = noop.useCallback((nativeEvent) => {
-    closure_2(Math.max(0, Math.min(arr.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / c4))));
-  }, items1);
-  if (!MetaQuestUtils.isThumbstickScrollDevice) {
+    closure_2(Math.max(0, Math.min(mapped.length - 1, Math.round(nativeEvent.nativeEvent.contentOffset.x / c4))));
+  }, items2);
+  if (!onEndReached(1609).isThumbstickScrollDevice) {
     if (!isScreenReaderEnabled) {
-      let tmp16 = v65535;
-      const obj3 = {
+      let tmp17 = closure_10;
+      let obj3 = {
         style: tmp.carousel,
-        data: children,
+        data: mapped,
         renderItem(item) {
               return item.item;
             },
@@ -493,162 +142,56 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
         onSnapToItem: tmp7
       };
-      let tmp18 = v65535(PaginationDefault, obj3);
+      let tmp19 = closure_10(currentIndex(11053), obj3);
     }
-    const items2 = [tmp18, ];
-    const obj4 = { containerStyle: tmp.indicators, numberOfItems: children.length, currentIndex };
-    items2[1] = tmp16(native.CarouselPagination, obj4);
-    obj2.children = items2;
-    return tmp14(tmp15, obj2);
+    let items3 = [tmp19, ];
+    let obj4 = { containerStyle: tmp.indicators, numberOfItems: mapped.length, currentIndex };
+    items3[1] = tmp17(tmp2(1177).CarouselPagination, obj4);
+    obj2.children = items3;
+    return tmp15(tmp16, obj2);
   }
-  tmp14 = closure_1_11;
-  tmp15 = timestampProducer;
-  tmp18 = v65535(hasOwnProperty, { style: tmp.carousel, contentContainerStyle: { paddingHorizontal: bound, gap: PX_12 }, horizontal: true, showsHorizontalScrollIndicator: false, decelerationRate: "fast", snapToOffsets: children.map((item, index) => index * c4), scrollEventThrottle: 100, onScroll: callback, children });
-  tmp16 = v65535;
-});
-ReactCompilerGating = fn(558);
-let obj8 = { marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_24 };
+  let obj = onEndReached(5203);
+  tmp15 = closure_11;
+  tmp16 = closure_6;
+  tmp2 = onEndReached;
+  tmp19 = closure_10(closure_5, { style: tmp.carousel, contentContainerStyle: { paddingHorizontal: bound, gap: PX_12 }, horizontal: true, showsHorizontalScrollIndicator: false, decelerationRate: "fast", snapToOffsets: mapped.map((item, index) => index * c4), scrollEventThrottle: 100, onScroll: callback, children: mapped });
+  tmp17 = closure_10;
+}
+get_ActivityIndicator = fn(17);
+({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
+const AnalyticEvents = fn(1074).AnalyticEvents;
+const Gradients = fn(7706).Gradients;
+const PremiumTypes = fn(1374).PremiumTypes;
+const jsxProd = fn(21);
+({ jsx: c10, jsxs: closure_11 } = jsxProd);
+let c12 = 0.85;
+const PX_12 = nativeDefault.space.PX_12;
+let createStyles = fn(4788);
+let obj2 = { container: { flex: 1 }, headerText: { textAlign: "center" }, carouselContainer: { flex: 1, marginTop: nativeDefault.space.PX_16 }, carousel: { flex: 1, minHeight: 262 }, indicators: null };
+let obj3 = { flex: 1, marginTop: nativeDefault.space.PX_16 };
+obj2.indicators = { marginBottom: -nativeDefault.space.PX_48 };
+let closure_14 = createStyles.createStyles(obj2);
+createStyles = fn(4788);
+const obj6 = { cardContainer: { flex: 1 }, card: null, image: null, cardTitle: null };
+let obj4 = { marginBottom: -nativeDefault.space.PX_48 };
+obj6.card = { flex: 1, alignSelf: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+obj6.image = { alignSelf: "center" };
+const obj7 = { flex: 1, alignSelf: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+obj6.cardTitle = { marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_24 };
+const __initData = createStyles.createStyles(obj6);
+createStyles = fn(4788);
+let closure_16 = createStyles.createStyles({ emojiImage: { alignSelf: "flex-end" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesCarouselSection.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
-  const cResult = analyticsLocations(568).c(18);
-  style = style.style;
-  const tmp4 = closure_14();
-  analyticsLocations = first(7441)().analyticsLocations;
-  [first, dependencyMap] = noop.useState(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const windowDimensions = tmp(1482).getWindowDimensions();
-    cResult[0] = windowDimensions;
-    let first1 = windowDimensions;
-    const tmpResult = tmp(1482);
-  } else {
-    first1 = cResult[0];
-  }
-  let obj = analyticsLocations(568);
-  [tmp11, _slicedToArray] = noop.useState(first1.width);
-  if (cResult[1] === analyticsLocations) {
-    if (cResult[2] === first) {
-      let tmp12 = cResult[3];
-    }
-    if (cResult[4] === style) {
-      if (cResult[5] === tmp4.container) {
-        let tmp13 = cResult[6];
-      }
-      const _Symbol = Symbol;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-        cResult[7] = M;
-        const tmp14 = M;
-      } else {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-        const stringResult = obj4.string(tmp(1119).t.RGadQR);
-        cResult[8] = stringResult;
-        const tmp15 = stringResult;
-      } else {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-      }
-      if (cResult[9] !== tmp4.headerText) {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-        const obj3 = { style: tmp4.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp15 };
-        const tmp18 = closure_10(tmp(4786).Text, obj3);
-        cResult[9] = tmp4.headerText;
-        cResult[10] = tmp18;
-      } else {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-      }
-      if (cResult[11] === tmp11) {
-        class M {
-          constructor(arg0) {
-            return closure_3(style.nativeEvent.layout.width);
-          }
-        }
-        if (cResult[14] === tmp13) {
-          class M {
-            constructor(arg0) {
-              return closure_3(style.nativeEvent.layout.width);
-            }
-          }
-        }
-        const obj5 = { style: tmp13, onLayout: tmp14, children: null };
-        const items = [tmp17, tmp19];
-        obj5.children = items;
-        const tmp26 = closure_11(closure_6, obj5);
-        cResult[14] = tmp13;
-        cResult[15] = tmp17;
-        cResult[16] = tmp19;
-        cResult[17] = tmp26;
-      }
-      const obj6 = { width: tmp11, onEndReached: tmp12 };
-      const tmp22 = closure_10(closure_20, obj6);
-      cResult[11] = tmp11;
-      cResult[12] = tmp12;
-      cResult[13] = tmp22;
-    }
-    const items1 = [tmp4.container, style];
-    cResult[4] = style;
-    cResult[5] = tmp4.container;
-    cResult[6] = items1;
-    tmp13 = items1;
-  }
-  class E {
-    constructor() {
-      if (!closure_1) {
-        tmp = closure_1;
-        tmp2 = closure_2;
-        obj = closure_1(closure_2[26]);
-        tmp3 = AnalyticEvents;
-        obj1 = { location_stack: null };
-        tmp4 = analyticsLocations;
-        obj1.location_stack = analyticsLocations;
-        trackResult = obj.track(AnalyticEvents.PREMIUM_MARKETING_SCROLLED_TO_LAST, obj1);
-        tmp6 = closure_2;
-        flag = true;
-        tmp7 = closure_2(true);
-      }
-      return;
-    }
-  }
-  cResult[1] = analyticsLocations;
-  cResult[2] = first;
-  cResult[3] = E;
-  tmp12 = E;
-}) : ((style) => {
+export default function PremiumFeaturesCarouselSection(style) {
   first = undefined;
   dependencyMap = undefined;
   _slicedToArray = undefined;
   const tmp = closure_14();
-  const analyticsLocations = first(7441)().analyticsLocations;
+  const analyticsLocations = first(7439)().analyticsLocations;
   [first, dependencyMap] = noop.useState(false);
-  const tmp4 = _slicedToArray(noop.useState(analyticsLocations(1482).getWindowDimensions().width), 2);
+  const tmp4 = _slicedToArray(noop.useState(analyticsLocations(1478).getWindowDimensions().width), 2);
   _slicedToArray = tmp4[1];
   const items = [analyticsLocations, first];
   let obj2 = {
@@ -668,11 +211,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
   }, items);
   const obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
-  const intl = analyticsLocations(1119).intl;
-  obj3.children = intl.string(analyticsLocations(1119).t.RGadQR);
-  const items2 = [closure_10(analyticsLocations(4786).Text, obj3), closure_10(closure_20, { width: tmp4[0], onEndReached: callback })];
+  const intl = analyticsLocations(1115).intl;
+  obj3.children = intl.string(analyticsLocations(1115).t.RGadQR);
+  const items2 = [closure_10(analyticsLocations(4784).Text, obj3), closure_10(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
   obj2.children = items2;
   return closure_11(closure_6, obj2);
-});
+};
 export const PREMIUM_FEATURES_PROPORTIONAL_CARD_WIDTH = 0.85;
-export const PremiumFeaturesCardBackground = tmp4;
+export { PremiumFeaturesCardBackground };

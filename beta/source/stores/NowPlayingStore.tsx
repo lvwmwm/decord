@@ -1,15 +1,15 @@
-// Module ID: 14055
-// Function ID: 14056
+// Module ID: 14045
+// Function ID: 14046
 // Name: NowPlayingStore
-// Dependencies: [7932, 4830, 1376, 1078, 14056, 504, 577, 2]
+// Dependencies: [7927, 4828, 1372, 1074, 14046, 504, 573, 2]
 
-// Module 14055 (NowPlayingStore)
+// Module 14045 (NowPlayingStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 14056 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7932 */;
-import PresenceStore from "PresenceStore" /* 4830 */;
-import UserStore from "UserStore" /* 1376 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 14046 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
+import PresenceStore from "PresenceStore" /* 4828 */;
+import UserStore from "UserStore" /* 1372 */;
 
 function _handlePresenceUpdate(user) {
   user = user.user;
@@ -134,7 +134,7 @@ function handleUserAffinitiesV2StoreUpdate() {
   closure_6 = !UserAffinitiesV2Store.shouldFetch();
   return flag;
 }
-const ActivityTypes = fn(1078).ActivityTypes;
+const ActivityTypes = fn(1074).ActivityTypes;
 let c6 = false;
 const Store = initializeDefault.Store;
 class NowPlayingStore extends Store {

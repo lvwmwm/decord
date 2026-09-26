@@ -1,112 +1,31 @@
-// Module ID: 12183
-// Function ID: 12184
+// Module ID: 12299
+// Function ID: 12300
 // Name: ForumPostGridFooter
-// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 12132, 12184, 12185, 10633, 2]
+// Dependencies: [19, 17, 1074, 21, 4788, 576, 12248, 12300, 12301, 11706, 2]
+// Exports: default
 
-// Module 12183 (ForumPostGridFooter)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12132 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12184 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12185 */;
+// Module 12299 (ForumPostGridFooter)
+import nativeDefault from "native" /* 576 */;
+import ForumPostReactions from "ForumPostReactions" /* 11706 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 12248 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12300 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12301 */;
 import noop from "module_19" /* 19 */;
 
-const ForumPostReactions = tmp(10633);
 require = fn;
 const View = fn(17).View;
-const AnalyticsObjects = fn(1078).AnalyticsObjects;
+const AnalyticsObjects = fn(1074).AnalyticsObjects;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", marginTop: 12 }, dot: null };
 let size = { height: 4, width: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: 8 };
 obj2.dot = size;
 let closure_8 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridFooter.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(18);
-  ({ thread, firstMessage, hasUnreads, parentChannel } = arg0);
-  const tmp4 = closure_8();
-  const typingUserIds = useTypingUsersIds.useTypingUserIds(thread.id);
-  if (cResult[0] === hasUnreads) {
-    if (cResult[1] === thread) {
-      let tmp6 = cResult[2];
-    }
-    if (cResult[3] === hasUnreads) {
-      if (cResult[4] === tmp5) {
-        if (cResult[5] === tmp4.dot) {
-          if (cResult[6] === thread) {
-            if (cResult[7] === typingUserIds) {
-              let tmp8 = cResult[8];
-            }
-            if (cResult[9] === firstMessage) {
-              if (cResult[10] === parentChannel) {
-                if (cResult[11] === thread) {
-                  let tmp15 = cResult[12];
-                }
-                if (cResult[13] === tmp4.footer) {
-                  if (cResult[14] === tmp6) {
-                    if (cResult[15] === tmp8) {
-                      if (cResult[16] === tmp15) {
-                        let tmp20 = cResult[17];
-                      }
-                      return tmp20;
-                    }
-                  }
-                }
-                const obj3 = { style: tmp4.footer, children: null };
-                const items = [tmp6, tmp8, tmp15];
-                obj3.children = items;
-                const tmp23 = React5(View, obj3);
-                cResult[13] = tmp4.footer;
-                cResult[14] = tmp6;
-                cResult[15] = tmp8;
-                cResult[16] = tmp15;
-                cResult[17] = tmp23;
-                tmp20 = tmp23;
-              }
-            }
-            let tmp17 = null != firstMessage;
-            if (tmp17) {
-              const obj4 = { thread, firstMessage, parentChannel, locationAnalyticsObject: AnalyticsObjects.FORUM_GRID_ITEM_FOOTER };
-              tmp17 = hasOwnProperty(ForumPostReactions.MostCommonForumPostReaction, obj4);
-            }
-            cResult[9] = firstMessage;
-            cResult[10] = parentChannel;
-            cResult[11] = thread;
-            cResult[12] = tmp17;
-            tmp15 = tmp17;
-          }
-        }
-      }
-    }
-    let tmp9 = tmp5;
-    if (tmp5) {
-      const obj5 = { children: null };
-      const obj6 = { style: tmp4.dot };
-      const items1 = [hasOwnProperty(View, obj6), ];
-      const obj7 = { thread, typingUserIds, hasUnreads };
-      items1[1] = hasOwnProperty(ForumPostTypingUsersDefault, obj7);
-      obj5.children = items1;
-      tmp9 = React5(timestampProducer, obj5);
-    }
-    cResult[3] = hasUnreads;
-    cResult[4] = tmp5;
-    cResult[5] = tmp4.dot;
-    cResult[6] = thread;
-    cResult[7] = typingUserIds;
-    cResult[8] = tmp9;
-    tmp8 = tmp9;
-  }
-  const tmp7 = hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads });
-  cResult[0] = hasUnreads;
-  cResult[1] = thread;
-  cResult[2] = tmp7;
-  tmp6 = tmp7;
-}) : ((parentChannel) => {
+export default function ForumPostGridFooter(parentChannel) {
   ({ thread, firstMessage, hasUnreads } = parentChannel);
   const tmp = closure_8();
   const typingUserIds = useTypingUsersIds.useTypingUserIds(thread.id);
@@ -131,4 +50,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[2] = tmp7Result;
   obj2.children = items;
   return React5(View, obj2);
-});
+};

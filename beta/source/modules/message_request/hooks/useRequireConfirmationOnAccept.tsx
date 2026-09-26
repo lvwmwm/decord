@@ -1,16 +1,15 @@
-// Module ID: 12629
-// Function ID: 12630
+// Module ID: 12727
+// Function ID: 12728
 // Name: useRequireConfirmationOnAccept
-// Dependencies: [558, 12630, 2]
+// Dependencies: [12728, 2]
 // Exports: default
 
-// Module 12629 (useRequireConfirmationOnAccept)
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 12630 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 12727 (useRequireConfirmationOnAccept)
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 12728 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/message_request/hooks/useRequireConfirmationOnAccept.tsx");
+const result = size.fileFinishedImporting("modules/message_request/hooks/useRequireConfirmationOnAccept.tsx");
 
-export default () => useIsStricterMessageRequestsDefault();
+export default function useRequireConfirmationOnAccept() {
+  return useIsStricterMessageRequestsDefault();
+};

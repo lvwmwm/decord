@@ -1,162 +1,30 @@
-// Module ID: 14189
-// Function ID: 14190
+// Module ID: 14179
+// Function ID: 14180
 // Name: UserCodeInput
-// Dependencies: [32, 19, 17, 14190, 21, 4790, 558, 568, 14191, 1119, 4786, 14192, 6878, 5220, 2]
+// Dependencies: [32, 19, 17, 14180, 21, 4788, 14181, 14182, 4784, 1115, 6880, 5218, 2]
+// Exports: UserCodeInput
 
-// Module 14189 (UserCodeInput)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import TextInput from "TextInput" /* 6878 */;
-import useUserCodeSubmit from "useUserCodeSubmit" /* 14191 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14192 */;
+// Module 14179 (UserCodeInput)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import TextInput from "TextInput" /* 6880 */;
+import useUserCodeSubmit from "useUserCodeSubmit" /* 14181 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14182 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const OAuthConstants = fn(14190).OAuthConstants;
+const OAuthConstants = fn(14180).OAuthConstants;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_10 = createStyles.createStyles({ text: { textAlign: "center" } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activate_device/native/UserCodeInput.tsx");
 
-export const UserCodeInput = ReactCompilerGating.isReactCompilerEnabled() ? ((prefilledUserCode) => {
-  const cResult = c.c(23);
-  let str = prefilledUserCode.prefilledUserCode;
-  ({ onClose, onUserCodeAccepted } = prefilledUserCode);
-  const tmp4 = closure_10();
-  if (str == null) {
-    str = "";
-  }
-  [arr, require] = noop.useState(str);
-  const tmp6 = _slicedToArray(noop.useState(str), 2);
-  const userCodeSubmit = useUserCodeSubmit.useUserCodeSubmit(arr, onUserCodeAccepted, onClose);
-  ({ manualSubmit, error, submitting } = userCodeSubmit);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.KYPNUv);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.text) {
-    const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp4.text, children: first };
-    const tmp12 = React5(tmp(4786).Text, obj2);
-    cResult[1] = tmp4.text;
-    cResult[2] = tmp12;
-    let tmp10 = tmp12;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t.xRHk7f);
-    cResult[3] = stringResult1;
-    let tmp13 = stringResult1;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.text) {
-    const obj3 = { variant: "text-md/medium", color: "text-default", style: tmp4.text, children: tmp13 };
-    const tmp17 = React5(tmp(4786).Text, obj3);
-    cResult[4] = tmp4.text;
-    cResult[5] = tmp17;
-    let tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[5];
-  }
-  if (cResult[6] === tmp10) {
-    const _Symbol = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor(arg0) {
-          return closure_0(prefilledUserCode);
-        }
-      }
-      cResult[9] = G;
-      const tmp20 = G;
-    } else {
-      class G {
-        constructor(arg0) {
-          return closure_0(prefilledUserCode);
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor(arg0) {
-          return closure_0(prefilledUserCode);
-        }
-      }
-      const obj4 = { number: OAuthConstants.USER_CODE_LENGTH };
-      const formatToPlainStringResult = obj6.formatToPlainString(tmp(1119).t["0tbz6x"], obj4);
-      cResult[10] = formatToPlainStringResult;
-      const tmp21 = formatToPlainStringResult;
-    } else {
-      class G {
-        constructor(arg0) {
-          return closure_0(prefilledUserCode);
-        }
-      }
-    }
-    if (cResult[11] === error) {
-      class G {
-        constructor(arg0) {
-          return closure_0(prefilledUserCode);
-        }
-      }
-      const _Symbol3 = Symbol;
-      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        class G {
-          constructor(arg0) {
-            return closure_0(prefilledUserCode);
-          }
-        }
-        const stringResult2 = obj9.string(tmp(1119).t["3PatSz"]);
-        cResult[14] = stringResult2;
-        const tmp28 = stringResult2;
-      } else {
-        class G {
-          constructor(arg0) {
-            return closure_0(prefilledUserCode);
-          }
-        }
-      }
-      if (cResult[15] === manualSubmit) {
-        class G {
-          constructor(arg0) {
-            return closure_0(prefilledUserCode);
-          }
-        }
-      }
-      const obj5 = { size: "lg", text: tmp28, onPress: manualSubmit, loading: submitting, disabled: arr.length !== OAuthConstants.USER_CODE_LENGTH, grow: true };
-      const tmp34 = React5(tmp(5220).Button, obj5);
-      cResult[15] = manualSubmit;
-      cResult[16] = submitting;
-      cResult[17] = arr.length !== OAuthConstants.USER_CODE_LENGTH;
-      cResult[18] = tmp34;
-    }
-    const obj7 = { onChange: tmp20, maxLength: OAuthConstants.USER_CODE_LENGTH, value: arr, autoFocus: true, autoComplete: "off", placeholder: tmp21, errorMessage: error };
-    const tmp27 = React5(tmp(6878).TextInput, obj7);
-    cResult[11] = error;
-    cResult[12] = arr;
-    cResult[13] = tmp27;
-  }
-  const obj8 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: null };
-  const items = [tmp10, tmp15];
-  obj8.children = items;
-  const tmpResult = useUserCodeSubmit;
-  cResult[6] = tmp10;
-  cResult[7] = tmp15;
-  cResult[8] = closure_1_8(View, obj8);
-}) : ((prefilledUserCode) => {
+export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   let str = prefilledUserCode.prefilledUserCode;
   c0 = undefined;
   ({ onClose, onUserCodeAccepted } = prefilledUserCode);
@@ -179,7 +47,7 @@ export const UserCodeInput = ReactCompilerGating.isReactCompilerEnabled() ? ((pr
   obj5.children = intl2.string(util.t.xRHk7f);
   items[1] = React5(Text_Text.Text, obj5);
   obj3.children = items;
-  const items1 = [closure_1_8(View, obj3), , ];
+  const items1 = [React6(View, obj3), , ];
   const obj6 = {
     onChange(arg0) {
       return _undefined(arg0);
@@ -203,5 +71,5 @@ export const UserCodeInput = ReactCompilerGating.isReactCompilerEnabled() ? ((pr
   obj8.disabled = arr.length !== OAuthConstants.USER_CODE_LENGTH;
   items1[2] = React5(components_Button_Button.Button, obj8);
   obj2.children = items1;
-  return closure_1_8(options, obj2);
-});
+  return React6(React7, obj2);
+};

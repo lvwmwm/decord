@@ -1,16 +1,16 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9368
+// Function ID: 9369
 // Name: oauth2/actions
-// Dependencies: [5, 2045, 2099, 1078, 1275, 6864, 1087, 2]
+// Dependencies: [5, 2041, 2095, 1074, 1271, 6866, 1083, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9366 (oauth2/actions)
-import utils_PathUtils from "utils/PathUtils" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
+// Module 9368 (oauth2/actions)
+import utils_PathUtils from "utils/PathUtils" /* 1083 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
 function getLocationContextServer() {
@@ -52,7 +52,7 @@ let closure_9 = async function _authorize(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -85,7 +85,7 @@ let closure_9 = async function _authorize(arg0, value) {
           ({ authorize: closure_129_0, clientId: closure_129_1, scopes: closure_129_2, responseType: closure_129_3, redirectUri: closure_129_4, codeChallenge: closure_129_5, codeChallengeMethod: closure_129_6, state: closure_129_7, permissions: closure_129_8, guildId: closure_129_9, channelId: closure_129_10, integrationType: closure_129_11, connectedAccountProvider: closure_129_12, nonce: closure_129_13 } = closure_0);
           c3 = 1;
           c4 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -156,7 +156,7 @@ let closure_10 = async function _fetchAuthorization(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -186,7 +186,7 @@ let closure_10 = async function _fetchAuthorization(arg0, value) {
           ({ clientId: closure_129_0, scopes: closure_129_1, responseType: closure_129_2, redirectUri: closure_129_3, codeChallenge: closure_129_4, codeChallengeMethod: closure_129_5, state: closure_129_6, integrationType: closure_129_7, connectedAccountProvider: closure_129_8, nonce: closure_129_9, signal: closure_129_10 } = closure_0);
           c3 = 1;
           c4 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -241,7 +241,7 @@ let closure_11 = async function _startSamsungAuthorization(client_id, arg1, resp
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -274,7 +274,7 @@ let closure_11 = async function _startSamsungAuthorization(client_id, arg1, resp
           return obj;
         } else {
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         c5 = tmp;
@@ -323,7 +323,7 @@ let closure_15 = async function _finishUserCodeTwoWayLinkError(user_code, error_
     return value;
   })();
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelTypes: metroRequire, Endpoints: closure_7 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/oauth2/actions.tsx");

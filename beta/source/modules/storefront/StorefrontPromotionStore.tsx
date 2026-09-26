@@ -1,11 +1,11 @@
-// Module ID: 9097
-// Function ID: 9098
+// Module ID: 9099
+// Function ID: 9100
 // Name: StorefrontPromotionStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 9097 (StorefrontPromotionStore)
+// Module 9099 (StorefrontPromotionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 function handleReset() {
 
@@ -16,14 +16,14 @@ class StorefrontPromotionStore extends Store {
 }
 const prototype = StorefrontPromotionStore.prototype;
 prototype["getFetchState"] = function getFetchState(arg0) {
-  state = undefined;
+  let state;
   if (obj[arg0] != null) {
     state = tmp.state;
   }
   return state;
 };
 prototype["getFetchedAt"] = function getFetchedAt(arg0) {
-  state = undefined;
+  let state;
   if (obj[arg0] != null) {
     state = tmp.state;
   }
@@ -36,7 +36,7 @@ prototype["getFetchedAt"] = function getFetchedAt(arg0) {
   return obj[arg0].fetchedAt;
 };
 prototype["getPromotionsForApplication"] = function getPromotionsForApplication(arg0) {
-  state = undefined;
+  let state;
   if (obj[arg0] != null) {
     state = tmp.state;
   }
@@ -63,7 +63,7 @@ obj = {
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp3 = obj[nextResult];
-      state = undefined;
+      let state;
       let tmp4 = tmp3;
       let tmp5 = obj;
       if (tmp3 != null) {
@@ -95,7 +95,7 @@ obj = {
     while (iter !== undefined) {
       let applicationId = nextResult.applicationId;
       let tmp6 = obj[applicationId];
-      state = undefined;
+      let state;
       let tmp4 = nextResult;
       let tmp5 = applicationId;
       if (tmp6 != null) {

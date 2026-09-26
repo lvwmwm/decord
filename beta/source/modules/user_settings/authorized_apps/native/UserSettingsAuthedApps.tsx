@@ -1,789 +1,38 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15219
+// Function ID: 15220
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7386, 1078, 21, 580, 4790, 558, 568, 9363, 9198, 9573, 4744, 1616, 504, 1488, 7449, 1489, 4786, 1119, 5935, 1401, 5854, 12222, 7268, 7273, 2]
+// Dependencies: [19, 17, 7384, 1074, 21, 576, 4788, 9365, 9200, 9577, 4742, 1612, 504, 1484, 1485, 7447, 4784, 1115, 5936, 1397, 5854, 12338, 7267, 7272, 2]
+// Exports: DisclosureIcon, default
 
-// Module 15215 (UserSettingsAuthedApps)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import TableRowGroup from "TableRowGroup" /* 5935 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
-import applications from "applications" /* 9363 */;
+// Module 15219 (UserSettingsAuthedApps)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import TableRowGroup from "TableRowGroup" /* 5936 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7267 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
+import applications from "applications" /* 9365 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7386 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7384 */;
 
 const require = globalThis.__r;
 
-const CircleInformationIcon = GlobeEarthIcon(4744);
-const GlobeEarthIcon2 = GlobeEarthIcon(9198);
-const EmbedIcon = GlobeEarthIcon(9573);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const FetchState = fn(7386).FetchState;
-const Constants = fn(1078);
+const FetchState = fn(7384).FetchState;
+const Constants = fn(1074);
 ({ AnalyticsPages: closure_9, UserSettingsSections: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const PX_24 = nativeDefault.space.PX_24;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { spinner: { padding: 16 }, emptyText: { marginTop: 24 }, emptyContainer: { padding: 16 }, container: { paddingHorizontal: 16, paddingTop: nativeDefault.space.PX_24 }, headerDescription: { marginTop: 12 }, appListHeader: { marginTop: 24 } };
 let closure_15 = createStyles.createStyles(obj2);
-fn(558);
-let obj3 = { paddingHorizontal: 16, paddingTop: nativeDefault.space.PX_24 };
-const ReactCompilerGating = fn(558);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let GlobeEarthIcon = require;
-  let tmp = dependencyMap;
-  const cResult = c.c(6);
-  ({ disclosure, style } = arg0);
-  if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
-    if (cResult[0] !== style) {
-      GlobeEarthIcon = GlobeEarthIcon2.GlobeEarthIcon;
-      const obj2 = { style, size: "xs" };
-      tmp = closure_1_11(GlobeEarthIcon, obj2);
-      cResult[0] = style;
-      cResult[1] = tmp;
-    }
-  } else {
-    if (applications.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
-      if (cResult[2] !== style) {
-        const obj3 = { style, size: "xs" };
-        const tmp8 = closure_1_11(EmbedIcon.EmbedIcon, obj3);
-        cResult[2] = style;
-        cResult[3] = tmp8;
-        let tmp6 = tmp8;
-      } else {
-        tmp6 = cResult[3];
-      }
-      let tmp3 = tmp6;
-    } else if (cResult[4] !== style) {
-      const obj4 = { style, size: "xs" };
-      const tmp5 = closure_1_11(CircleInformationIcon.CircleInformationIcon, obj4);
-      cResult[4] = style;
-      cResult[5] = tmp5;
-      tmp3 = tmp5;
-    } else {
-      tmp3 = cResult[5];
-    }
-    return tmp3;
-  }
-}) : ((disclosure) => {
-  disclosure = disclosure.disclosure;
-  const style = disclosure.style;
-  const items = [disclosure, style];
-  return noop.useMemo(() => {
-    if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
-      const obj2 = { style, size: "xs" };
-      return closure_2_11(tmp2(9198).GlobeEarthIcon, obj2);
-    } else if (tmp2(9363).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
-      const obj3 = { style, size: "xs" };
-      return closure_2_11(tmp2(9573).EmbedIcon, obj3);
-    } else {
-      const obj = { style, size: "xs" };
-      return closure_2_11(tmp2(4744).CircleInformationIcon, obj);
-    }
-    tmp = disclosure;
-  }, items);
-});
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedApps.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = require("c").c(37);
-  const tmp4 = closure_15();
-  _require = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [AuthorizedAppsStore];
-    const fn = function n() {
-      return { fetchState: authStore.getFetchState(), appAuthTokens: authStore.getNewestTokensForNonChildrenApplications() };
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  let obj = require("c");
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(tmp5, tmp6);
-  const appAuthTokens = stateFromStoresObject.appAuthTokens;
-  const tmpResult = require("initialize");
-  navigation = require("useNavigation").useNavigation();
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function x() {
-      return appAuthTokens(navigation[16]).fetch();
-    };
-    cResult[2] = fn2;
-    let tmp10 = fn2;
-  } else {
-    tmp10 = cResult[2];
-  }
-  const tmpResult3 = require("useNavigation");
-  const focusEffect = require("Link").useFocusEffect(tmp10);
-  if (cResult[3] === tmp4.appListHeader) {
-    if (cResult[4] === tmp4.headerDescription) {
-      let tmp12 = cResult[5];
-    }
-    if (cResult[6] !== navigation) {
-      class D {
-        constructor(arg0) {
-          item = arg0.item;
-          index = arg0.index;
-          obj = appAuthTokens(closure_2[21]);
-          obj1 = { id: item.application.id, icon: item.application.icon };
-          applicationIconSource = obj.getApplicationIconSource(obj1);
-          obj4 = {
-            icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-            label: item.application.name,
-            onPress() {
-                      UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                      const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                      const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                      navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                    },
-            arrow: true,
-            start: 0 === index,
-            end: index === arg0.numItems - 1
-          };
-          return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-        }
-      }
-      cResult[6] = navigation;
-      cResult[7] = D;
-    } else {
-      class D {
-        constructor(arg0) {
-          item = arg0.item;
-          index = arg0.index;
-          obj = appAuthTokens(closure_2[21]);
-          obj1 = { id: item.application.id, icon: item.application.icon };
-          applicationIconSource = obj.getApplicationIconSource(obj1);
-          obj4 = {
-            icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-            label: item.application.name,
-            onPress() {
-                      UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                      const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                      const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                      navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                    },
-            arrow: true,
-            start: 0 === index,
-            end: index === arg0.numItems - 1
-          };
-          return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-        }
-      }
-    }
-    noop = tmp13;
-    if (null != appAuthTokens) {
-      class D {
-        constructor(arg0) {
-          item = arg0.item;
-          index = arg0.index;
-          obj = appAuthTokens(closure_2[21]);
-          obj1 = { id: item.application.id, icon: item.application.icon };
-          applicationIconSource = obj.getApplicationIconSource(obj1);
-          obj4 = {
-            icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-            label: item.application.name,
-            onPress() {
-                      UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                      const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                      const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                      navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                    },
-            arrow: true,
-            start: 0 === index,
-            end: index === arg0.numItems - 1
-          };
-          return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-        }
-      }
-      if (stateFromStoresObject.fetchState === FetchState.FETCHED) {
-        class D {
-          constructor(arg0) {
-            item = arg0.item;
-            index = arg0.index;
-            obj = appAuthTokens(closure_2[21]);
-            obj1 = { id: item.application.id, icon: item.application.icon };
-            applicationIconSource = obj.getApplicationIconSource(obj1);
-            obj4 = {
-              icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-              label: item.application.name,
-              onPress() {
-                          UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                          const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                          const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                          navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                        },
-              arrow: true,
-              start: 0 === index,
-              end: index === arg0.numItems - 1
-            };
-            return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-          }
-        }
-        if (0 === appAuthTokens.length) {
-          class D {
-            constructor(arg0) {
-              item = arg0.item;
-              index = arg0.index;
-              obj = appAuthTokens(closure_2[21]);
-              obj1 = { id: item.application.id, icon: item.application.icon };
-              applicationIconSource = obj.getApplicationIconSource(obj1);
-              obj4 = {
-                icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                label: item.application.name,
-                onPress() {
-                              UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                              const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                              const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                              navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                            },
-                arrow: true,
-                start: 0 === index,
-                end: index === arg0.numItems - 1
-              };
-              return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-            }
-          }
-          if (cResult[10] !== tmp12) {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-            cResult[10] = tmp12;
-            cResult[11] = tmp29;
-          } else {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-          }
-          const _Symbol = Symbol;
-          if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-            const stringResult = obj6.string(tmp(tmp2[19]).t["E+SM6T"]);
-            cResult[12] = stringResult;
-            const tmp30 = stringResult;
-          } else {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-          }
-          if (cResult[13] !== tmp4.emptyText) {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-            let obj2 = { color: "mobile-text-heading-primary", style: tmp4.emptyText, variant: "heading-md/extrabold", children: tmp30 };
-            const tmp33 = closure_11(tmp(tmp2[18]).Text, obj2);
-            cResult[13] = tmp4.emptyText;
-            cResult[14] = tmp33;
-          } else {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-          }
-          if (cResult[15] === tmp4.emptyContainer) {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-          }
-          let obj3 = { style: tmp27, children: null };
-          let items1 = [tmp28, tmp32];
-          obj3.children = items1;
-          const tmp37 = closure_12(closure_4, obj3);
-          cResult[15] = tmp4.emptyContainer;
-          cResult[16] = tmp28;
-          cResult[17] = tmp32;
-          cResult[18] = tmp37;
-        } else {
-          class D {
-            constructor(arg0) {
-              item = arg0.item;
-              index = arg0.index;
-              obj = appAuthTokens(closure_2[21]);
-              obj1 = { id: item.application.id, icon: item.application.icon };
-              applicationIconSource = obj.getApplicationIconSource(obj1);
-              obj4 = {
-                icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                label: item.application.name,
-                onPress() {
-                              UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                              const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                              const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                              navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                            },
-                arrow: true,
-                start: 0 === index,
-                end: index === arg0.numItems - 1
-              };
-              return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-            }
-          }
-          const sum = appAuthTokens(navigation[13])().bottom + PX_24;
-          if (cResult[19] !== sum) {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-            tmp16[0] = sum;
-            cResult[19] = sum;
-            cResult[20] = tmp16;
-          } else {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-          }
-          if (cResult[21] === tmp4.container) {
-            class D {
-              constructor(arg0) {
-                item = arg0.item;
-                index = arg0.index;
-                obj = appAuthTokens(closure_2[21]);
-                obj1 = { id: item.application.id, icon: item.application.icon };
-                applicationIconSource = obj.getApplicationIconSource(obj1);
-                obj4 = {
-                  icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                  label: item.application.name,
-                  onPress() {
-                                  UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                  const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                  const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                  navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                },
-                  arrow: true,
-                  start: 0 === index,
-                  end: index === arg0.numItems - 1
-                };
-                return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-              }
-            }
-            if (cResult[24] !== tmp12) {
-              class D {
-                constructor(arg0) {
-                  item = arg0.item;
-                  index = arg0.index;
-                  obj = appAuthTokens(closure_2[21]);
-                  obj1 = { id: item.application.id, icon: item.application.icon };
-                  applicationIconSource = obj.getApplicationIconSource(obj1);
-                  obj4 = {
-                    icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                    label: item.application.name,
-                    onPress() {
-                                      UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                      const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                      const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                      navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                    },
-                    arrow: true,
-                    start: 0 === index,
-                    end: index === arg0.numItems - 1
-                  };
-                  return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-                }
-              }
-              cResult[24] = tmp12;
-              class M {
-                constructor(arg0) {
-                  obj = { item: arg0.item, index: arg0.index, numItems: appAuthTokens.length };
-                  return closure_3(obj);
-                }
-              }
-              cResult[25] = tmp19;
-            } else {
-              class D {
-                constructor(arg0) {
-                  item = arg0.item;
-                  index = arg0.index;
-                  obj = appAuthTokens(closure_2[21]);
-                  obj1 = { id: item.application.id, icon: item.application.icon };
-                  applicationIconSource = obj.getApplicationIconSource(obj1);
-                  obj4 = {
-                    icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                    label: item.application.name,
-                    onPress() {
-                                      UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                      const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                      const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                      navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                    },
-                    arrow: true,
-                    start: 0 === index,
-                    end: index === arg0.numItems - 1
-                  };
-                  return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-                }
-              }
-            }
-            if (cResult[26] === appAuthTokens.length) {
-              class D {
-                constructor(arg0) {
-                  item = arg0.item;
-                  index = arg0.index;
-                  obj = appAuthTokens(closure_2[21]);
-                  obj1 = { id: item.application.id, icon: item.application.icon };
-                  applicationIconSource = obj.getApplicationIconSource(obj1);
-                  obj4 = {
-                    icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                    label: item.application.name,
-                    onPress() {
-                                      UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                      const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                      const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                      navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                    },
-                    arrow: true,
-                    start: 0 === index,
-                    end: index === arg0.numItems - 1
-                  };
-                  return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-                }
-              }
-              if (cResult[29] !== appAuthTokens) {
-                class D {
-                  constructor(arg0) {
-                    item = arg0.item;
-                    index = arg0.index;
-                    obj = appAuthTokens(closure_2[21]);
-                    obj1 = { id: item.application.id, icon: item.application.icon };
-                    applicationIconSource = obj.getApplicationIconSource(obj1);
-                    obj4 = {
-                      icon: closure_1_11(appAuthTokens(closure_2[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
-                      label: item.application.name,
-                      onPress() {
-                                          UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
-                                          const obj3 = { destinationPane: constants2.AUTHORIZED_APP, source: { page: constants.USER_SETTINGS }, applicationId: item.application.id };
-                                          const result = UserSettingsUtils.trackUserSettingsPaneViewed(obj3);
-                                          navigation.push(constants2.AUTHORIZED_APP, { oauth2Token: item });
-                                        },
-                      arrow: true,
-                      start: 0 === index,
-                      end: index === arg0.numItems - 1
-                    };
-                    return closure_1_11(closure_0(closure_2[22]).TableRow, obj4, item.id);
-                  }
-                }
-                if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-                  class V {
-                    constructor(arg0, arg1) {
-                      NumberResult = Number(arg1.id);
-                      return NumberResult - Number(arg0.id);
-                    }
-                  }
-                  cResult[31] = V;
-                  class M {
-                    constructor(arg0) {
-                      obj = { item: arg0.item, index: arg0.index, numItems: appAuthTokens.length };
-                      return closure_3(obj);
-                    }
-                  }
-                } else {
-                  class V {
-                    constructor(arg0, arg1) {
-                      NumberResult = Number(arg1.id);
-                      return NumberResult - Number(arg0.id);
-                    }
-                  }
-                }
-                class M {
-                  constructor(arg0) {
-                    obj = { item: arg0.item, index: arg0.index, numItems: appAuthTokens.length };
-                    return closure_3(obj);
-                  }
-                }
-                cResult[29] = appAuthTokens;
-                cResult[30] = tmp22;
-              } else {
-                class V {
-                  constructor(arg0, arg1) {
-                    NumberResult = Number(arg1.id);
-                    return NumberResult - Number(arg0.id);
-                  }
-                }
-                if (cResult[32] === tmp21) {
-                  class V {
-                    constructor(arg0, arg1) {
-                      NumberResult = Number(arg1.id);
-                      return NumberResult - Number(arg0.id);
-                    }
-                  }
-                }
-                class M {
-                  constructor(arg0) {
-                    obj = { item: arg0.item, index: arg0.index, numItems: appAuthTokens.length };
-                    return closure_3(obj);
-                  }
-                }
-                let obj4 = { contentContainerStyle: tmp17, ListHeaderComponent: tmp18, renderItem: tmp20, data: tmp21 };
-                const tmp26 = closure_11(closure_6, obj4);
-                cResult[32] = tmp21;
-                cResult[33] = tmp17;
-                cResult[34] = tmp18;
-                cResult[35] = tmp20;
-                cResult[36] = tmp26;
-              }
-            }
-            class M {
-              constructor(arg0) {
-                obj = { item: arg0.item, index: arg0.index, numItems: appAuthTokens.length };
-                return closure_3(obj);
-              }
-            }
-            cResult[26] = appAuthTokens.length;
-            cResult[27] = tmp13;
-            cResult[28] = M;
-          }
-          const items2 = [tmp4.container, tmp15];
-          cResult[21] = tmp4.container;
-          cResult[22] = tmp15;
-          cResult[23] = items2;
-        }
-      }
-    }
-    if (cResult[8] !== tmp4.spinner) {
-      class V {
-        constructor(arg0, arg1) {
-          NumberResult = Number(arg1.id);
-          return NumberResult - Number(arg0.id);
-        }
-      }
-      class M {
-        constructor(arg0) {
-          obj = { item: arg0.item, index: arg0.index, numItems: appAuthTokens.length };
-          return closure_3(obj);
-        }
-      }
-      const tmp40 = closure_11(closure_5, { style: null, animating: true, size: "large" });
-      cResult[8] = tmp4.spinner;
-      cResult[9] = tmp40;
-      let obj5 = { style: null, animating: true, size: "large" };
-      const tmp38 = tmp40;
-    } else {
-      class V {
-        constructor(arg0, arg1) {
-          NumberResult = Number(arg1.id);
-          return NumberResult - Number(arg0.id);
-        }
-      }
-    }
-    return tmp38;
-  }
-  class E {
-    constructor() {
-      obj = { children: null };
-      obj1 = { children: null };
-      obj7 = { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: null };
-      intl = closure_0(closure_2[19]).intl;
-      obj7.children = intl.string(closure_0(closure_2[19]).t.HU3RFw);
-      items = [, ];
-      items[0] = jsx(closure_0(closure_2[18]).Text, obj7);
-      obj8 = { style: closure_0.headerDescription, variant: "heading-sm/medium", children: null };
-      intl2 = closure_0(closure_2[19]).intl;
-      obj8.children = intl2.string(closure_0(closure_2[19]).t.Nu5Yi0);
-      items[1] = jsx(closure_0(closure_2[18]).Text, obj8);
-      obj1.children = items;
-      items1 = [, ];
-      items1[0] = jsxs(View, obj1);
-      obj9 = { style: closure_0.appListHeader, children: null };
-      obj10 = { title: null };
-      intl3 = closure_0(closure_2[19]).intl;
-      obj10.title = intl3.string(closure_0(closure_2[19]).t.PHjkRE);
-      obj9.children = jsx(closure_0(closure_2[20]).TableRowGroupTitle, obj10);
-      items1[1] = jsx(View, obj9);
-      obj.children = items1;
-      return jsxs(Fragment, obj);
-    }
-  }
-  cResult[3] = tmp4.appListHeader;
-  cResult[4] = tmp4.headerDescription;
-  cResult[5] = E;
-  tmp12 = E;
-}) : (() => {
+export default function UserSettingsAuthedApps() {
   const tmp = closure_15();
   _require = tmp;
   let items = [AuthorizedAppsStore];
@@ -792,16 +41,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = require("initialize");
   navigation = require("useNavigation").useNavigation();
   let obj2 = require("useNavigation");
-  const focusEffect = require("Link").useFocusEffect(noop.useCallback(() => appAuthTokens(navigation[16]).fetch(), []));
+  const focusEffect = require("Link").useFocusEffect(noop.useCallback(() => appAuthTokens(navigation[15]).fetch(), []));
   let items1 = [navigation];
   noop = noop.useCallback((item) => {
     item = item.item;
     const index = item.index;
-    const applicationIconSource = appAuthTokens(navigation[21]).getApplicationIconSource({ id: item.application.id, icon: item.application.icon });
-    let obj = appAuthTokens(navigation[21]);
+    const applicationIconSource = appAuthTokens(navigation[19]).getApplicationIconSource({ id: item.application.id, icon: item.application.icon });
+    let obj = appAuthTokens(navigation[19]);
     const obj2 = { id: item.application.id, icon: item.application.icon };
-    return closure_1_11(closure_0(navigation[22]).TableRow, {
-      icon: closure_1_11(appAuthTokens(navigation[23]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
+    return closure_1_11(closure_0(navigation[20]).TableRow, {
+      icon: closure_1_11(appAuthTokens(navigation[21]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
       label: item.application.name,
       onPress() {
         UserSettingsModalActionCreatorsDefault.setSection(constants2.AUTHORIZED_APP);
@@ -828,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         obj4.children = intl2.string(util.t.Nu5Yi0);
         items[1] = closure_2_11(Text_Text.Text, obj4);
         obj2.children = items;
-        const items1 = [__initData(React4, obj2), ];
+        const items1 = [closure_2_12(React4, obj2), ];
         const obj5 = { style: closure_0.appListHeader, children: null };
         const obj6 = { title: null };
         const intl3 = util.intl;
@@ -836,21 +85,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         obj5.children = closure_2_11(TableRowGroup.TableRowGroupTitle, obj6);
         items1[1] = closure_2_11(React4, obj5);
         obj.children = items1;
-        return __initData(__initData2, obj);
+        return closure_2_12(map1, obj);
       }
       if (0 === appAuthTokens.length) {
         let obj4 = { style: tmp.emptyContainer, children: null };
         const items2 = [renderHeader(), ];
         let obj5 = { color: "mobile-text-heading-primary", style: tmp.emptyText, variant: "heading-md/extrabold", children: null };
-        let intl = tmp3(tmp2[19]).intl;
-        obj5.children = intl.string(tmp3(tmp2[19]).t["E+SM6T"]);
-        items2[1] = closure_11(tmp3(tmp2[18]).Text, obj5);
+        let intl = tmp3(tmp2[17]).intl;
+        obj5.children = intl.string(tmp3(tmp2[17]).t["E+SM6T"]);
+        items2[1] = closure_11(tmp3(tmp2[16]).Text, obj5);
         obj4.children = items2;
         let tmp10 = closure_12(closure_4, obj4);
       } else {
         let obj6 = { contentContainerStyle: null, ListHeaderComponent: null, renderItem: null, data: null };
         const items3 = [tmp.container, ];
-        const obj7 = { paddingBottom: appAuthTokens(navigation[13])().bottom + PX_24 };
+        const obj7 = { paddingBottom: appAuthTokens(navigation[11])().bottom + PX_24 };
         items3[1] = obj7;
         obj6.contentContainerStyle = items3;
         obj6.ListHeaderComponent = renderHeader();
@@ -864,5 +113,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp10;
   }
   tmp10 = closure_11(closure_5, { style: tmp.spinner, animating: true, size: "large" });
-});
-export const DisclosureIcon = tmp5;
+};
+export const DisclosureIcon = function DisclosureIcon(disclosure) {
+  disclosure = disclosure.disclosure;
+  const style = disclosure.style;
+  const items = [disclosure, style];
+  return noop.useMemo(() => {
+    if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
+      const obj2 = { style, size: "xs" };
+      return closure_2_11(tmp2(9200).GlobeEarthIcon, obj2);
+    } else if (tmp2(9365).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
+      const obj3 = { style, size: "xs" };
+      return closure_2_11(tmp2(9577).EmbedIcon, obj3);
+    } else {
+      const obj = { style, size: "xs" };
+      return closure_2_11(tmp2(4742).CircleInformationIcon, obj);
+    }
+    tmp = disclosure;
+  }, items);
+};

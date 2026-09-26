@@ -1,13 +1,13 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 17888
+// Function ID: 17889
 // Name: SavedMessagesManager
-// Dependencies: [5, 8135, 11867, 17898, 7397, 2]
+// Dependencies: [5, 8130, 11987, 17889, 7395, 2]
 
-// Module 17897 (SavedMessagesManager)
-import ForLaterExperiment from "ForLaterExperiment" /* 8135 */;
-import SavedMessagesActions from "SavedMessagesActions" /* 11867 */;
+// Module 17888 (SavedMessagesManager)
+import ForLaterExperiment from "ForLaterExperiment" /* 8130 */;
+import SavedMessagesActions from "SavedMessagesActions" /* 11987 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 let closure_3 = async function _refreshSavedMessages(arg0, value) {
@@ -21,7 +21,7 @@ let closure_3 = async function _refreshSavedMessages(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

@@ -1,14 +1,14 @@
-// Module ID: 16511
-// Function ID: 16512
+// Module ID: 16504
+// Function ID: 16505
 // Name: GuildThemeNuxUtils
-// Dependencies: [5, 1224, 4721, 2028, 2]
+// Dependencies: [5, 1220, 4718, 2024, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 16511 (GuildThemeNuxUtils)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2028 */;
-import Client from "Client" /* 4721 */;
+// Module 16504 (GuildThemeNuxUtils)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2024 */;
+import Client from "Client" /* 4718 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
 let closure_4 = async function _saveGuildThemeNuxPreference(arg0, value) {
@@ -22,7 +22,7 @@ let closure_4 = async function _saveGuildThemeNuxPreference(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -73,7 +73,7 @@ let closure_4 = async function _saveGuildThemeNuxPreference(arg0, value) {
         return obj;
       } else {
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp14) {
       c5 = tmp;
@@ -87,9 +87,9 @@ let result = size.fileFinishedImporting("modules/guild_themes/GuildThemeNuxUtils
 export const getInitialGuildThemeNuxSelection = function getInitialGuildThemeNuxSelection() {
   const defaultGuildThemePreference = UserSettingsProtoStore.getDefaultGuildThemePreference();
   if (defaultGuildThemePreference === Client.GuildThemeSourcePreference.PERSONAL) {
-    let GUILD = tmp2(4721).GuildThemeSourcePreference.PERSONAL;
+    let GUILD = tmp2(4718).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(4721).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(4718).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 };

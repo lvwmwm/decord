@@ -1,66 +1,66 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14839
+// Function ID: 14840
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [2045, 2100, 2067, 1996, 4431, 4813, 4441, 5670, 1376, 4809, 10273, 1078, 14850, 14851, 14852, 14853, 7270, 14095, 14854, 14855, 13253, 1119, 14856, 10284, 8035, 4943, 5693, 1245, 4970, 1986, 2]
+// Dependencies: [2041, 2096, 2063, 1992, 4427, 4811, 4437, 5668, 1372, 4807, 10276, 1074, 14840, 14841, 14842, 14843, 7269, 14085, 14844, 14845, 8933, 1115, 14846, 10287, 8030, 4941, 5691, 1241, 4968, 1982, 2]
 
-// Module 14849 (MobileVoiceOverlayLifecycleManager)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import useChannelName from "useChannelName" /* 4943 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5693 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8035 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10284 */;
-import NativeMobileVoiceOverlayModuleDefault from "NativeMobileVoiceOverlayModule" /* 14856 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import SpeakingStore from "SpeakingStore" /* 5670 */;
-import UserStore from "UserStore" /* 1376 */;
-import VoiceStateStore from "VoiceStateStore" /* 4809 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10273 */;
-import LifecycleManager from "LifecycleManager" /* 1986 */;
+// Module 14839 (MobileVoiceOverlayLifecycleManager)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import useChannelName from "useChannelName" /* 4941 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5691 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8030 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10287 */;
+import NativeMobileVoiceOverlayModuleDefault from "NativeMobileVoiceOverlayModule" /* 14846 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import SpeakingStore from "SpeakingStore" /* 5668 */;
+import UserStore from "UserStore" /* 1372 */;
+import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10276 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 require = fn;
-const GUILD_VOCAL_CHANNELS_KEY = fn(2100).GUILD_VOCAL_CHANNELS_KEY;
-const Constants = fn(1078);
+const GUILD_VOCAL_CHANNELS_KEY = fn(2096).GUILD_VOCAL_CHANNELS_KEY;
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_14, Permissions: closure_15 } = Constants);
-fn(14850);
-fn(14851);
-fn(14852);
-fn(14853);
-fn(7270);
-fn(14095);
-fn(14854);
-fn(14855);
-const registerAsset = fn(13253);
+fn(14840);
+fn(14841);
+fn(14842);
+fn(14843);
+fn(7269);
+fn(14085);
+fn(14844);
+fn(14845);
+const registerAsset = fn(8933);
 let items = [VoiceStateStore, RTCConnectionStore, MediaEngineStore];
-const constants = { DISABLED: 0, [0]: "DISABLED", NOT_SHOWING: 1, [1]: "NOT_SHOWING", WAITING_FOR_SERVICE: 2, [2]: "WAITING_FOR_SERVICE", SHOWING: 3, [3]: "SHOWING" };
+const constants3 = { DISABLED: 0, [0]: "DISABLED", NOT_SHOWING: 1, [1]: "NOT_SHOWING", WAITING_FOR_SERVICE: 2, [2]: "WAITING_FOR_SERVICE", SHOWING: 3, [3]: "SHOWING" };
 let obj = { useSpeaker: null, mute: null, disconnectFromVoice: null, getInvite: null, switchChannels: null, openDiscord: null, inviteLinkCopied: null, channelSelect: null, closeWindow: null, searchChannels: null, noResults: null };
-const intl = fn(1119).intl;
-obj.useSpeaker = intl.string(fn(1119).t.CVxXDM);
-const intl2 = fn(1119).intl;
-obj.mute = intl2.string(fn(1119).t.w4m945);
-const intl3 = fn(1119).intl;
-obj.disconnectFromVoice = intl3.string(fn(1119).t["/lEZpt"]);
-const intl4 = fn(1119).intl;
-obj.getInvite = intl4.string(fn(1119).t.JYzIWe);
-const intl5 = fn(1119).intl;
-obj.switchChannels = intl5.string(fn(1119).t.zJvWqU);
-const intl6 = fn(1119).intl;
-obj.openDiscord = intl6.string(fn(1119).t["G/Ez6p"]);
-const intl7 = fn(1119).intl;
-obj.inviteLinkCopied = intl7.string(fn(1119).t.OhctG7);
-const intl8 = fn(1119).intl;
-obj.channelSelect = intl8.string(fn(1119).t.r2ptsz);
-const intl9 = fn(1119).intl;
-obj.closeWindow = intl9.string(fn(1119).t.gaifwY);
-const intl10 = fn(1119).intl;
-obj.searchChannels = intl10.string(fn(1119).t.wM7uRI);
-const intl11 = fn(1119).intl;
-obj.noResults = intl11.string(fn(1119).t.wk3qsA);
+const intl = fn(1115).intl;
+obj.useSpeaker = intl.string(fn(1115).t.CVxXDM);
+const intl2 = fn(1115).intl;
+obj.mute = intl2.string(fn(1115).t.w4m945);
+const intl3 = fn(1115).intl;
+obj.disconnectFromVoice = intl3.string(fn(1115).t["/lEZpt"]);
+const intl4 = fn(1115).intl;
+obj.getInvite = intl4.string(fn(1115).t.JYzIWe);
+const intl5 = fn(1115).intl;
+obj.switchChannels = intl5.string(fn(1115).t.zJvWqU);
+const intl6 = fn(1115).intl;
+obj.openDiscord = intl6.string(fn(1115).t["G/Ez6p"]);
+const intl7 = fn(1115).intl;
+obj.inviteLinkCopied = intl7.string(fn(1115).t.OhctG7);
+const intl8 = fn(1115).intl;
+obj.channelSelect = intl8.string(fn(1115).t.r2ptsz);
+const intl9 = fn(1115).intl;
+obj.closeWindow = intl9.string(fn(1115).t.gaifwY);
+const intl10 = fn(1115).intl;
+obj.searchChannels = intl10.string(fn(1115).t.wM7uRI);
+const intl11 = fn(1115).intl;
+obj.noResults = intl11.string(fn(1115).t.wk3qsA);
 class MobileVoiceOverlayManager {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -252,7 +252,7 @@ class MobileVoiceOverlayManager {
                         let obj5 = { users: items, channelName: null, guildName: null, guildId: null, channelId: null, extraUsers: null, deafened: null, muted: null, connectionQuality: null, canGenerateInvite: null, channelSelectorResults: null };
                         let obj6 = useChannelName;
                         obj5.channelName = obj6.computeChannelName(channel, UserStore, RelationshipStore);
-                        guild = GuildStore.getGuild(currentGuildId);
+                        let guild = GuildStore.getGuild(currentGuildId);
                         let str2;
                         if (guild != null) {
                           str2 = guild.name;

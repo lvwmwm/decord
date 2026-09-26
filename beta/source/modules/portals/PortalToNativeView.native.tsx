@@ -1,40 +1,20 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 7347
+// Function ID: 7348
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4788, 2]
+// Exports: default
 
-// Module 7349 (PortalToNativeView)
-import c from "c" /* 568 */;
+// Module 7347 (PortalToNativeView)
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const jsx = fn(21).jsx;
-let closure_3 = fn(17).requireNativeComponent("PortalToNativeView");
-const createStyles = fn(4790);
-let closure_4 = createStyles.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, right: 0, left: 0, top: 0 } });
-const ReactCompilerGating = fn(558);
+let closure_1 = fn(17).requireNativeComponent("PortalToNativeView");
+const createStyles = fn(4788);
+let closure_2 = createStyles.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, right: 0, left: 0, top: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/portals/PortalToNativeView.native.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(4);
+export default function PortalToNativeView(arg0) {
   ({ portalId, children } = arg0);
-  const tmp2 = closure_4();
-  if (cResult[0] === children) {
-    if (cResult[1] === portalId) {
-      if (cResult[2] === tmp2.portal) {
-        let tmp3 = cResult[3];
-      }
-      return tmp3;
-    }
-  }
-  const tmp4 = <closure_3 pointerEvents="none" portalId={portalId} style={tmp2.portal}>{children}</closure_3>;
-  cResult[0] = children;
-  cResult[1] = portalId;
-  cResult[2] = tmp2.portal;
-  cResult[3] = tmp4;
-  tmp3 = tmp4;
-}) : ((arg0) => {
-  ({ portalId, children } = arg0);
-  return <closure_3 pointerEvents="none" portalId={portalId} style={closure_4().portal}>{children}</closure_3>;
-});
+  return <closure_1 pointerEvents="none" portalId={portalId} style={closure_2().portal}>{children}</closure_1>;
+};

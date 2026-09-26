@@ -1,16 +1,20 @@
-// Module ID: 1888
-// Function ID: 1889
+// Module ID: 1884
+// Function ID: 1885
 // Name: i18n/i18n
-// Dependencies: [1889, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 572, 1930, 1931, 1341, 2]
+// Dependencies: [1885, 1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 568, 1926, 1927, 1337, 2]
 
-// Module 1888 (i18n/i18n)
-import getSystemLocale from "getSystemLocale" /* 1341 */;
-import _modDef1889 from "module_1889" /* 1889 */;
-import _mod1930 from "module_1930" /* 1930 */;
-import parse from "parse" /* 1931 */;
+// Module 1884 (i18n/i18n)
+import getSystemLocale from "getSystemLocale" /* 1337 */;
+import _modDef1885 from "module_1885" /* 1885 */;
+import _mod1926 from "module_1926" /* 1926 */;
+import parse from "parse" /* 1927 */;
 
 require = fn;
-global.IntlMessageFormat = _modDef1889;
+global.IntlMessageFormat = _modDef1885;
+const module_1894 = fn(1894);
+const module_1895 = fn(1895);
+const module_1896 = fn(1896);
+const module_1897 = fn(1897);
 const module_1898 = fn(1898);
 const module_1899 = fn(1899);
 const module_1900 = fn(1900);
@@ -35,13 +39,9 @@ const module_1918 = fn(1918);
 const module_1919 = fn(1919);
 const module_1920 = fn(1920);
 const module_1921 = fn(1921);
-const module_1922 = fn(1922);
-const module_1923 = fn(1923);
-const module_1924 = fn(1924);
-const module_1925 = fn(1925);
 delete tmp2[tmp];
 if (typeof Intl === "undefined") {
-  fn(1926);
+  fn(1922);
 }
 const React2 = "en-US";
 class Provider {
@@ -123,7 +123,7 @@ ProxyProvider.prototype["refresh"] = function refresh(arg0) {
     delete tmp2[tmp];
   });
 };
-const EventEmitter = fn(572).EventEmitter;
+const EventEmitter = fn(568).EventEmitter;
 _instance_members_initializer_I18N_ = function() {
   const self = this;
   this.loadPromise = Promise.resolve();
@@ -139,10 +139,10 @@ _instance_members_initializer_I18N_ = function() {
       return _createProxy(obj3);
     } else {
       try {
-        return self(1931).getMessage(tmp4, locale);
+        return self(1927).getMessage(tmp4, locale);
       } catch (err) {
         if (typeof tmp3[tmp2] === "string") {
-          return self(1931).getMessage(tmp7, tmp);
+          return self(1927).getMessage(tmp7, tmp);
         } else {
           return "";
         }
@@ -342,5 +342,5 @@ prototype["_fetchMessages"] = function _fetchMessages(c2) {
 const size = fn(2);
 let result = size.fileFinishedImporting("../discord_common/js/packages/i18n/i18n.tsx");
 
-export const getSystemLocale = fn(1341).getSystemLocale;
+export const getSystemLocale = fn(1337).getSystemLocale;
 export { I18N };

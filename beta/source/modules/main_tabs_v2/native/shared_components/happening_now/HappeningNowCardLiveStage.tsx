@@ -1,20 +1,102 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16412
+// Function ID: 16413
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 15565, 1078, 21, 4790, 580, 1245, 13215, 1984, 16418, 16419, 16420, 15566, 5349, 1181, 16429, 558, 568, 4943, 1119, 4942, 2]
+// Dependencies: [19, 17, 15569, 1074, 21, 4788, 576, 1241, 13209, 1980, 16413, 16414, 16415, 15570, 5347, 1177, 16424, 4941, 1115, 4940, 2]
 
-// Module 16417 (HappeningNowCardLiveStage)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
-import HappeningNowCard from "HappeningNowCard" /* 15566 */;
-import useLiveStageData from "useLiveStageData" /* 16418 */;
+// Module 16412 (HappeningNowCardLiveStage)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
+import HappeningNowCard from "HappeningNowCard" /* 15570 */;
+import useLiveStageData from "useLiveStageData" /* 16413 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
+class HappeningNowLiveStageContent {
+  constructor(arg0) {
+    ({ stage, streamingUser, guildId } = global);
+    tmp2 = closure_0;
+    tmp3 = closure_2;
+    tmp = closure_9();
+    obj = closure_0(closure_2[10]);
+    liveStageData = obj.useLiveStageData(stage);
+    ({ speakers, friends } = liveStageData);
+    tmp5 = closure_1(closure_2[17])(liveStageData.channel);
+    if ("guild" === global.renderingContext) {
+      num = 0;
+      if (speakers.length > 0) {
+        tmp15 = null;
+        tmp14 = getUsersSubtitle;
+        if (null != streamingUser) {
+          items = [];
+          items[0] = streamingUser;
+          speakers = items;
+        }
+        obj1 = { users: null, action: null, guildId: null };
+        obj1.users = speakers;
+        if (null != streamingUser) {
+          tmp17 = closure_11;
+          ON_STAGE2 = closure_11.SHARING;
+        } else {
+          tmp16 = closure_11;
+          ON_STAGE2 = closure_11.ON_STAGE;
+        }
+        obj1.action = ON_STAGE2;
+        obj1.guildId = guildId;
+        tmp14Result = tmp14(obj1);
+      }
+    }
+    if (friends.length > 0) {
+      obj7 = { users: null, action: null, guildId: null };
+      obj7.users = friends;
+      tmp11 = null;
+      tmp10 = getUsersSubtitle;
+      if (null != streamingUser) {
+        tmp13 = closure_11;
+        LISTENING = closure_11.WATCHING;
+      } else {
+        tmp12 = closure_11;
+        LISTENING = closure_11.LISTENING;
+      }
+      obj7.action = LISTENING;
+      obj7.guildId = guildId;
+      tmp10Result = tmp10(obj7);
+    } else {
+      tmp10Result = tmp5;
+      if (speakers.length > 0) {
+        tmp20 = null;
+        tmp7 = speakers;
+        tmp19 = getUsersSubtitle;
+        if (null != streamingUser) {
+          items1 = [];
+          items1[0] = streamingUser;
+          tmp7 = items1;
+        }
+        obj8 = { users: null, action: null, guildId: null };
+        obj8.users = tmp7;
+        if (null != streamingUser) {
+          tmp9 = closure_11;
+          ON_STAGE = closure_11.SHARING;
+        } else {
+          tmp8 = closure_11;
+          ON_STAGE = closure_11.ON_STAGE;
+        }
+        obj8.action = ON_STAGE;
+        obj8.guildId = guildId;
+        tmp10Result = tmp19(obj8);
+      }
+    }
+    obj9 = { style: tmp.content, children: null };
+    obj10 = { lineClamp: 3, children: stage.topic };
+    items2 = [, ];
+    items2[0] = jsx(tmp2(tmp3[13]).HappeningNowCardHeader, obj10);
+    items2[1] = jsx(tmp2(tmp3[13]).HappeningNowCardSubtitle, { lineClamp: 1, children: tmp10Result });
+    obj9.children = items2;
+    return jsxs(View, obj9);
+  }
+}
 function getUsersSubtitle(arg0) {
   ({ users, action, guildId } = arg0);
   if (0 === users.length) {
@@ -97,194 +179,20 @@ function getUsersSubtitle(arg0) {
   }
 }
 const View = fn(17).View;
-const HappeningNowConstants = fn(15565);
+const HappeningNowConstants = fn(15569);
 ({ HappeningNowCardTrackingType: hasOwnProperty, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, HAPPENING_NOW_STAGE_PREVIEW_WIDTH } = HappeningNowConstants);
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { content: { flexShrink: 1, gap: 2 }, stagePreviewContainer: { marginRight: 12, flexDirection: "column", justifyContent: "space-between", height: "100%", width: HAPPENING_NOW_STAGE_PREVIEW_WIDTH }, stagePreviewBackground: { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, alignItems: "center", paddingTop: 6 }, stagePreviewBackgroundNoAudience: null, avatarStackContainer: null };
 let obj3 = { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, alignItems: "center", paddingTop: 6 };
 obj.stagePreviewBackgroundNoAudience = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, justifyContent: "center", alignItems: "center" };
 let obj4 = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, justifyContent: "center", alignItems: "center" };
 obj.avatarStackContainer = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
-let closure_9 = createStyles.createStyles(obj);
-let obj5 = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
-const ReactCompilerGating = fn(558);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderingContext) => {
-  const cResult = c.c(20);
-  ({ stage, streamingUser, guildId } = renderingContext);
-  const tmp4 = closure_9();
-  const liveStageData = useLiveStageData.useLiveStageData(stage);
-  ({ speakers, friends } = liveStageData);
-  if ("guild" === renderingContext.renderingContext) {
-    let num = 0;
-    if (speakers.length > 0) {
-      let tmp22 = speakers;
-      if (null != streamingUser) {
-        const items = [streamingUser];
-        tmp22 = items;
-      }
-      let obj3 = { users: tmp22, action: null, guildId: null };
-      if (null != streamingUser) {
-        let ON_STAGE2 = constants2.SHARING;
-      } else {
-        ON_STAGE2 = constants2.ON_STAGE;
-      }
-      obj3.action = ON_STAGE2;
-      obj3.guildId = guildId;
-      obj3 = getUsersSubtitle(obj3);
-      cResult[num] = guildId;
-      cResult[1] = speakers;
-      cResult[2] = streamingUser;
-      num = 3;
-      cResult[3] = obj3;
-    }
-  }
-  if (friends.length > 0) {
-    if (null != streamingUser) {
-      let LISTENING = constants2.WATCHING;
-    } else {
-      LISTENING = constants2.LISTENING;
-    }
-    if (cResult[4] === friends) {
-      if (cResult[5] === guildId) {
-        if (cResult[6] === LISTENING) {
-          let tmp17 = cResult[7];
-        }
-        let tmp13 = tmp17;
-      }
-    }
-    const obj4 = { users: friends, action: LISTENING, guildId };
-    const tmp19 = getUsersSubtitle(obj4);
-    cResult[4] = friends;
-    cResult[5] = guildId;
-    cResult[6] = LISTENING;
-    cResult[7] = tmp19;
-    tmp17 = tmp19;
-  } else {
-    tmp13 = tmp6;
-    if (speakers.length > 0) {
-      if (cResult[8] === guildId) {
-        if (cResult[9] === speakers) {
-          if (cResult[10] === streamingUser) {
-            tmp13 = cResult[11];
-          }
-        }
-      }
-      let tmp9 = speakers;
-      if (null != streamingUser) {
-        const items1 = [streamingUser];
-        tmp9 = items1;
-      }
-      let obj5 = { users: tmp9, action: null, guildId: null };
-      if (null != streamingUser) {
-        let ON_STAGE = constants2.SHARING;
-      } else {
-        ON_STAGE = constants2.ON_STAGE;
-      }
-      obj5.action = ON_STAGE;
-      obj5.guildId = guildId;
-      obj5 = getUsersSubtitle(obj5);
-      cResult[8] = guildId;
-      cResult[9] = speakers;
-      cResult[10] = streamingUser;
-      cResult[11] = obj5;
-    }
-  }
-  if (cResult[12] !== stage.topic) {
-    const obj6 = { lineClamp: 3, children: stage.topic };
-    const tmp29 = React5(tmp(15566).HappeningNowCardHeader, obj6);
-    cResult[12] = stage.topic;
-    cResult[13] = tmp29;
-    let tmp27 = tmp29;
-  } else {
-    tmp27 = cResult[13];
-  }
-  if (cResult[14] !== tmp13) {
-    const obj7 = { lineClamp: 1, children: tmp13 };
-    const tmp32 = React5(tmp(15566).HappeningNowCardSubtitle, obj7);
-    cResult[14] = tmp13;
-    cResult[15] = tmp32;
-    let tmp30 = tmp32;
-  } else {
-    tmp30 = cResult[15];
-  }
-  if (cResult[16] === tmp4.content) {
-    if (cResult[17] === tmp27) {
-      if (cResult[18] === tmp30) {
-        let tmp33 = cResult[19];
-      }
-      return tmp33;
-    }
-  }
-  const obj8 = { style: tmp4.content, children: null };
-  const items2 = [tmp27, tmp30];
-  obj8.children = items2;
-  const tmp34 = closure_1_8(View, obj8);
-  cResult[16] = tmp4.content;
-  cResult[17] = tmp27;
-  cResult[18] = tmp30;
-  cResult[19] = tmp34;
-  tmp33 = tmp34;
-}) : ((renderingContext) => {
-  ({ stage, streamingUser, guildId } = renderingContext);
-  const tmp = closure_9();
-  const liveStageData = useLiveStageData.useLiveStageData(stage);
-  ({ speakers, friends } = liveStageData);
-  if ("guild" === renderingContext.renderingContext) {
-    if (speakers.length > 0) {
-      if (null != streamingUser) {
-        const items = [streamingUser];
-        speakers = items;
-      }
-      const obj2 = { users: speakers, action: null, guildId: null };
-      if (null != streamingUser) {
-        let ON_STAGE2 = constants2.SHARING;
-      } else {
-        ON_STAGE2 = constants2.ON_STAGE;
-      }
-      obj2.action = ON_STAGE2;
-      obj2.guildId = guildId;
-      getUsersSubtitle(obj2);
-    }
-  }
-  if (friends.length > 0) {
-    const obj3 = { users: friends, action: null, guildId: null };
-    if (null != streamingUser) {
-      let LISTENING = constants2.WATCHING;
-    } else {
-      LISTENING = constants2.LISTENING;
-    }
-    obj3.action = LISTENING;
-    obj3.guildId = guildId;
-    let tmp19Result = getUsersSubtitle(obj3);
-  } else {
-    tmp19Result = tmp5;
-    if (speakers.length > 0) {
-      let tmp7 = speakers;
-      if (null != streamingUser) {
-        const items1 = [streamingUser];
-        tmp7 = items1;
-      }
-      const obj4 = { users: tmp7, action: null, guildId: null };
-      if (null != streamingUser) {
-        let ON_STAGE = constants2.SHARING;
-      } else {
-        ON_STAGE = constants2.ON_STAGE;
-      }
-      obj4.action = ON_STAGE;
-      obj4.guildId = guildId;
-      tmp19Result = getUsersSubtitle(obj4);
-    }
-  }
-  const obj5 = { style: tmp.content, children: null };
-  const items2 = [React5(HappeningNowCard.HappeningNowCardHeader, { lineClamp: 3, children: stage.topic }), React5(HappeningNowCard.HappeningNowCardSubtitle, { lineClamp: 1, children: tmp19Result })];
-  obj5.children = items2;
-  return closure_1_8(View, obj5);
-});
-let closure_10 = tmp5;
+const React7 = createStyles.createStyles(obj);
 const constants2 = { LISTENING: 0, [0]: "LISTENING", WATCHING: 1, [1]: "WATCHING", ON_STAGE: 2, [2]: "ON_STAGE", SHARING: 3, [3]: "SHARING" };
+let obj5 = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardLiveStage.tsx");
 
@@ -301,7 +209,7 @@ export default noop.memo((arg0) => {
   const callback = noop.useCallback(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, { order: index, guild_id, type: constants.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id });
     const obj2 = { order: index, guild_id, type: constants.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
-    asyncRequireImpl(13215, dependencyMap.paths).then((result) => {
+    asyncRequireImpl(13209, dependencyMap.paths).then((result) => {
       result.default(channel_id, true);
     });
   }, items);
@@ -353,11 +261,11 @@ export default noop.memo((arg0) => {
       tmp12 = guild_id;
     }
     obj10.guildId = tmp12;
-    items2[1] = closure_7(closure_10, obj10);
+    items2[1] = closure_7(HappeningNowLiveStageContent, obj10);
     obj4.children = items2;
     tmp16Result = tmp16(channel_id(tmp4[13]), obj4);
     const tmp18 = channel_id(tmp4[13]);
   }
   return tmp16Result;
 });
-export const HappeningNowLiveStageContent = tmp5;
+export { HappeningNowLiveStageContent };

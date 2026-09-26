@@ -1,7 +1,7 @@
 // Module ID: 14600
 // Function ID: 14601
-// Dependencies: [14521, 14601]
-// Exports: getSupportedCalendars
+// Dependencies: [14511, 14601]
+// Exports: getSupportedUnits
 
 // Module 14600
 const require = globalThis.__r;
@@ -9,25 +9,20 @@ const require = globalThis.__r;
 const require = arg1;
 const dependencyMap = arg6;
 
-export const getSupportedCalendars = function getSupportedCalendars(locale) {
+export const getSupportedUnits = function getSupportedUnits(locale) {
   _require = locale;
-  const calendars = require("module_14601").calendars;
-  return calendars.filter((item) => (function isSupportedCalendar(item, arg1) {
+  const units = require("module_14601").units;
+  return units.filter((item) => (function isSupported(unit, arg1) {
     let str = arg1;
     if (undefined === arg1) {
       str = "en";
     }
     try {
-      const concat = "".concat;
-      const combined = "".concat(str, "-u-ca-");
-      const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(combined.concat(item));
-      if ("gregory" === item) {
-        if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
-          return false;
-        }
-      }
-      return true;
+      const obj = { style: "unit", unit };
+      const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
+      return memoizedNumberFormat.resolvedOptions().unit === unit;
     } catch (err) {
+      return false;
     }
   })(item, closure_0));
 };

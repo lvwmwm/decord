@@ -1,11 +1,12 @@
 // Module ID: 4034
 // Function ID: 4035
-// Dependencies: [3881, 3882]
+// Dependencies: [3877, 4035, 3878]
 // Exports: default
 
 // Module 4034
-import _typeof_mod from "module_3881" /* 3881 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import startOfISOWeek_mod from "startOfISOWeek" /* 4035 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -15,17 +16,44 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+let startOfISOWeek = startOfISOWeek_mod;
+if (!startOfISOWeek) {
+  const obj2 = { default: startOfISOWeek };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = startOfISOWeek;
 }
-requiredArgs = tmp5;
+startOfISOWeek = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
 
-export default function isSaturday(arg0) {
+export default function getISOWeekYear(arg0) {
   requiredArgs.default(1, arguments);
-  return 6 === _typeof.default(arg0).getDay();
+  const defaultResult1 = _typeof.default(arg0);
+  const fullYear = defaultResult1.getFullYear();
+  const date = new Date(0);
+  date.setFullYear(fullYear + 1, 0, 4);
+  date.setHours(0, 0, 0, 0);
+  const date1 = new Date(0);
+  date1.setFullYear(fullYear, 0, 4);
+  date1.setHours(0, 0, 0, 0);
+  const defaultResult2 = startOfISOWeek.default(date);
+  const time = defaultResult1.getTime();
+  if (time >= defaultResult2.getTime()) {
+    let sum = fullYear + 1;
+  } else {
+    const time1 = defaultResult1.getTime();
+    sum = fullYear;
+    if (time1 < defaultResult3.getTime()) {
+      sum = fullYear - 1;
+    }
+  }
+  return sum;
 };
 export default exports.default;

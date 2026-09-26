@@ -1,19 +1,19 @@
-// Module ID: 5031
-// Function ID: 5032
+// Module ID: 5029
+// Function ID: 5030
 // Name: StoreUtils
-// Dependencies: [5, 502, 4452, 4453, 4456, 1078, 5032, 5030, 5111, 1435, 5113, 1275, 1368, 1119, 2]
+// Dependencies: [5, 502, 4448, 4449, 4452, 1074, 5030, 5028, 5109, 1431, 5111, 1271, 1364, 1115, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 5031 (StoreUtils)
-import util from "util" /* 1119 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1435 */;
+// Module 5029 (StoreUtils)
+import util from "util" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 4452 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4453 */;
-import SubscriptionStore from "SubscriptionStore" /* 4456 */;
-import allSettled_mod from "allSettled" /* 5032 */;
+import BillingInfoStore from "BillingInfoStore" /* 4448 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4449 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
+import allSettled_mod from "allSettled" /* 5030 */;
 
 require = fn;
 let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
@@ -27,7 +27,7 @@ let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -58,7 +58,7 @@ let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
           closure_133_7 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -99,7 +99,7 @@ let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -242,18 +242,18 @@ let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: closure_7, OperatingSystems: closure_8 } = Constants);
 let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
-const isMobile = fn(5030).isMobile;
+const isMobile = fn(5028).isMobile;
 let tmp4 = !isMobile;
 if (!isMobile) {
-  tmp4 = !fn(5030).isTablet;
+  tmp4 = !fn(5028).isTablet;
 }
 if (tmp4) {
-  tmp4 = -1 !== fn(5111).getChromeVersion();
-  let obj2 = fn(5111);
+  tmp4 = -1 !== fn(5109).getChromeVersion();
+  let obj2 = fn(5109);
 }
 let closure_9 = tmp4;
 const size = fn(2);
@@ -307,9 +307,9 @@ export const httpGetWithCountryCodeQuery = function httpGetWithCountryCodeQuery(
 export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTypeToSKUOperatingSystem(platform) {
   if (PlatformUtils.PlatformTypes.WINDOWS === platform) {
     return constants.WINDOWS;
-  } else if (tmp(1368).PlatformTypes.OSX === platform) {
+  } else if (tmp(1364).PlatformTypes.OSX === platform) {
     return constants.MACOS;
-  } else if (tmp(1368).PlatformTypes.LINUX === platform) {
+  } else if (tmp(1364).PlatformTypes.LINUX === platform) {
     return constants.LINUX;
   } else {
     return null;

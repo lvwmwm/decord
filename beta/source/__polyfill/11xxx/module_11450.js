@@ -1,9 +1,9 @@
 // Module ID: 11450
 // Function ID: 11451
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 11450
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 57, height: 56.666666666666664, scales: [3], hash: "1df6ee7cceb670ae2dfd3feed8d2acfc", name: "asset_bronze_badge_small", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5b035d589db27733a20b85bf911f23f4", name: "ChevronSmallDownIcon", type: "png" });

@@ -1,119 +1,27 @@
-// Module ID: 17111
-// Function ID: 17112
+// Module ID: 17101
+// Function ID: 17102
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 4790, 558, 568, 4499, 6893, 1879, 17112, 17114, 17119, 2]
+// Dependencies: [19, 17, 21, 4788, 4494, 6899, 1875, 17102, 17104, 17109, 2]
 
-// Module 17111 (SearchScreenSearchBar)
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1879 */;
-import mergeProps from "mergeProps" /* 4499 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6893 */;
-import layout_SearchBarDefault from "layout/SearchBar" /* 17112 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 17114 */;
-import SearchFilterButtonDefault from "SearchFilterButton" /* 17119 */;
+// Module 17101 (SearchScreenSearchBar)
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
+import mergeProps from "mergeProps" /* 4494 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6899 */;
+import layout_SearchBarDefault from "layout/SearchBar" /* 17102 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 17104 */;
+import SearchFilterButtonDefault from "SearchFilterButton" /* 17109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/components/layout/SearchScreenSearchBar.tsx");
 
-export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
-  const cResult = ref(568).c(36);
-  ({ searchContext, onSuggestionsLayoutMesure, suggestionsDismissed, setSuggestionsDismissed, backButton } = arg0);
-  const tmp4 = closure_7();
-  ref = noop.useRef(null);
-  if (cResult[0] !== ref) {
-    const mergeRefsResult = ref(4499).mergeRefs(ref, ref);
-    cResult[0] = ref;
-    cResult[1] = mergeRefsResult;
-    let tmp6 = mergeRefsResult;
-    const tmpResult = ref(4499);
-  } else {
-    tmp6 = cResult[1];
-  }
-  importDefault = noop.useRef(false);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        obj = closure_0(closure_2[7]);
-        closure_1.current = obj.getKeyboardIsOpen();
-        obj2 = closure_0(closure_2[8]);
-        result = obj2.dismissGlobalKeyboard();
-        return;
-      }
-    }
-    cResult[2] = R;
-  } else {
-    class R {
-      constructor() {
-        obj = closure_0(closure_2[7]);
-        closure_1.current = obj.getKeyboardIsOpen();
-        obj2 = closure_0(closure_2[8]);
-        result = obj2.dismissGlobalKeyboard();
-        return;
-      }
-    }
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        obj = closure_0(closure_2[7]);
-        closure_1.current = obj.getKeyboardIsOpen();
-        obj2 = closure_0(closure_2[8]);
-        result = obj2.dismissGlobalKeyboard();
-        return;
-      }
-    }
-    cResult[3] = tmp10;
-  } else {
-    class R {
-      constructor() {
-        obj = closure_0(closure_2[7]);
-        closure_1.current = obj.getKeyboardIsOpen();
-        obj2 = closure_0(closure_2[8]);
-        result = obj2.dismissGlobalKeyboard();
-        return;
-      }
-    }
-  }
-  if (cResult[4] === tmp4.header) {
-    class R {
-      constructor() {
-        obj = closure_0(closure_2[7]);
-        closure_1.current = obj.getKeyboardIsOpen();
-        obj2 = closure_0(closure_2[8]);
-        result = obj2.dismissGlobalKeyboard();
-        return;
-      }
-    }
-    if (cResult[7] === tmp6) {
-      class R {
-        constructor() {
-          obj = closure_0(closure_2[7]);
-          closure_1.current = obj.getKeyboardIsOpen();
-          obj2 = closure_0(closure_2[8]);
-          result = obj2.dismissGlobalKeyboard();
-          return;
-        }
-      }
-    }
-    const obj3 = { ref: tmp6, searchContext, setSuggestionsDismissed };
-    const tmp15 = closure_5(layout_SearchBarDefault, obj3);
-    cResult[7] = tmp6;
-    cResult[8] = searchContext;
-    cResult[9] = setSuggestionsDismissed;
-    cResult[10] = tmp15;
-  }
-  const items = [tmp4.header, null != backButton && tmp4.headerWithBackButton];
-  cResult[4] = tmp4.header;
-  cResult[5] = null != backButton && tmp4.headerWithBackButton;
-  cResult[6] = items;
-}) : ((arg0, arg1) => {
+export default noop.memo(noop.forwardRef((arg0, arg1) => {
   ({ searchContext, backButton } = arg0);
   closure_0 = arg1;
   ({ onSuggestionsLayoutMesure, suggestionsDismissed, setSuggestionsDismissed } = arg0);
@@ -167,4 +75,4 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   items2[2] = closure_5(View, { style: tmp.headerControlsRight, children: closure_5(SearchFilterButtonDefault, { searchContext, onOpen: callback, onClose: callback1 }) });
   obj.children = items2;
   return closure_6(View, obj);
-})));
+}));

@@ -1,14 +1,14 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9214
+// Function ID: 9215
 // Name: GameAutocompleteActionCreators
-// Dependencies: [5, 5358, 1078, 5359, 577, 1275, 2]
+// Dependencies: [5, 5356, 1074, 5357, 573, 1271, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 9212 (GameAutocompleteActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5359 */;
+// Module 9214 (GameAutocompleteActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5357 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5358 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5356 */;
 
 require = fn;
 let closure_6 = async function _fetchGameAutocomplete(arg0, value) {
@@ -22,7 +22,7 @@ let closure_6 = async function _fetchGameAutocomplete(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -52,7 +52,7 @@ let closure_6 = async function _fetchGameAutocomplete(arg0, value) {
               const obj6 = { type: "GAME_AUTOCOMPLETE_FETCH", query: result };
               dispatch(obj6);
               c5 = 1;
-              const HTTP = tmp38(1275).HTTP;
+              const HTTP = tmp38(1271).HTTP;
               const request = { url: constants.GAMES_AUTOCOMPLETE, query: null, rejectWithError: false };
               const obj7 = { q: result };
               request.query = obj7;
@@ -101,7 +101,7 @@ let closure_6 = async function _fetchGameAutocomplete(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteActionCreators.tsx");
 

@@ -1,17 +1,17 @@
-// Module ID: 10978
-// Function ID: 10979
+// Module ID: 10940
+// Function ID: 10941
 // Name: DeviceMedia
-// Dependencies: [1078, 562, 1245, 1252, 10979, 1368, 2]
+// Dependencies: [1074, 560, 1241, 1248, 10941, 1364, 2]
 
-// Module 10978 (DeviceMedia)
-import Constants from "Constants" /* 1078 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10979 */;
-import module_562 from "module_562" /* 562 */;
+// Module 10940 (DeviceMedia)
+import Constants from "Constants" /* 1074 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10941 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let state = module_562.create(() => ({ assets: null, page: 0, hasReachedEnd: false, lastAssetIndex: 0 }));
+let state = module_560.create(() => ({ assets: null, page: 0, hasReachedEnd: false, lastAssetIndex: 0 }));
 const result = size.fileFinishedImporting("modules/device/native/DeviceMedia.tsx");
 
 export default {
@@ -95,9 +95,9 @@ export default {
                     lastAssetIndex(page[2]).track(constants.MEDIA_PICKER_INFINITE_SCROLL_PAGED, { page, has_reached_end: tmp12 });
                   }
           };
-          lastAssetIndex(10979)(obj2);
+          lastAssetIndex(10941)(obj2);
         }
-        obj = assets(1368);
+        obj = assets(1364);
       }
     }
   },
@@ -154,7 +154,7 @@ export default {
           obj2.num_assets = length;
           AnalyticsUtilsDefault.track(constants.MEDIA_PICKER_ASSETS_DEBUG, obj2);
         }
-        batchSize(1252).batchUpdates(() => {
+        batchSize(1248).batchUpdates(() => {
           const obj = { assets, page: 0, lastAssetIndex: batchSize, endCursor: null, hasReachedEnd: null };
           let end_cursor;
           if (assets != null) {

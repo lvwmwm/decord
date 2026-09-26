@@ -1,20 +1,20 @@
 // Module ID: 4234
 // Function ID: 4235
-// Dependencies: [4235, 3882]
+// Dependencies: [4224, 3878]
 // Exports: default
 
 // Module 4234
-import startOfSecond_mod from "startOfSecond" /* 4235 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import module_4224_mod from "module_4224" /* 4224 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let startOfSecond = startOfSecond_mod;
-if (!startOfSecond) {
-  const obj = { default: startOfSecond };
+let module_4224 = module_4224_mod;
+if (!module_4224) {
+  const obj = { default: module_4224 };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfSecond;
+  tmp3 = module_4224;
 }
-startOfSecond = tmp3;
+module_4224 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,10 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isSameSecond(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfSecond.default(arg0);
-  const time = defaultResult1.getTime();
-  return time === startOfSecond.default(arg1).getTime();
+export default function isThisISOWeek(arg0) {
+  requiredArgs.default(1, arguments);
+  return module_4224.default(arg0, Date.now());
 };
 export default exports.default;

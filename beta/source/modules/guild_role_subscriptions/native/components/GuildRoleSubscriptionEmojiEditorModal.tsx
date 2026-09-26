@@ -1,30 +1,27 @@
-// Module ID: 18232
-// Function ID: 18233
+// Module ID: 18223
+// Function ID: 18224
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5711, 21, 4790, 580, 558, 568, 18223, 504, 5142, 1119, 5239, 5834, 1401, 8908, 18218, 4786, 18229, 2]
+// Dependencies: [5, 32, 19, 17, 5709, 21, 4788, 576, 18214, 504, 5836, 1397, 18220, 1115, 5140, 5237, 8903, 18210, 4784, 2]
+// Exports: default
 
-// Module 18232 (GuildRoleSubscriptionEmojiEditorModal)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
-import common_AlertDefault from "common/Alert" /* 5239 */;
-import FastImageDefault from "FastImage" /* 5834 */;
-import EmojiAliasDefault from "EmojiAlias" /* 18218 */;
+// Module 18223 (GuildRoleSubscriptionEmojiEditorModal)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import EmojiAliasDefault from "EmojiAlias" /* 18210 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5711 */;
-
-const require = globalThis.__r;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5709 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, SectionList: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100%" }, emojiList: null, row: null, emojiImage: null, emojiAlias: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100%" };
 obj2.emojiList = { flexGrow: 0, marginVertical: 24, marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
@@ -32,147 +29,10 @@ obj2.row = { alignItems: "flex-start", paddingTop: 16, paddingBottom: 14 };
 obj2.emojiImage = { width: 24, height: 24, marginBottom: 2 };
 obj2.emojiAlias = { marginBottom: 2 };
 let closure_12 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { flexGrow: 0, marginVertical: 24, marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionEmojiEditorModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
-  const cResult = require("c").c(49);
-  guildId = guildId.guildId;
-  _require = guildId;
-  const subscriptionRoleId = guildId.subscriptionRoleId;
-  ({ listingId, onClose } = guildId);
-  const onSave = guildId.onSave;
-  let obj = require("c");
-  let tmp = _require;
-  const tmp2 = onClose;
-  _slicedToArray = closure_12();
-  subscriptionRoleId(onClose[10])(guildId);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SubscriptionRoleStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    class S {
-      constructor() {
-        return closure_8.getSubscriptionRoles(closure_0);
-      }
-    }
-    cResult[1] = guildId;
-    cResult[2] = S;
-    const tmp8 = S;
-  } else {
-    class S {
-      constructor() {
-        return closure_8.getSubscriptionRoles(closure_0);
-      }
-    }
-  }
-  const tmp4 = closure_12();
-  const stateFromStores = tmp(tmp2[11]).useStateFromStores(first, tmp8);
-  [first1, closure_7] = stateFromStores.useState(guildId.initialTierEmojiIds);
-  if (null != subscriptionRoleId) {
-    class S {
-      constructor() {
-        return closure_8.getSubscriptionRoles(closure_0);
-      }
-    }
-    if (cResult[9] === stateFromStores) {
-      class S {
-        constructor() {
-          return closure_8.getSubscriptionRoles(closure_0);
-        }
-      }
-    }
-    class D {
-      constructor(arg0) {
-        closure_0 = guildId;
-        roles = guildId.roles;
-        return 0 === roles.filter((item) => {
-          let tmp = item === subscriptionRoleId;
-          if (tmp) {
-            tmp = !first1.has(id.id);
-          }
-          let hasItem = !tmp;
-          if (!tmp) {
-            hasItem = stateFromStores.has(item);
-          }
-          return hasItem;
-        }).length;
-      }
-    }
-    cResult[9] = stateFromStores;
-    cResult[10] = subscriptionRoleId;
-    cResult[11] = first1;
-    cResult[12] = D;
-  } else {
-    class S {
-      constructor() {
-        return closure_8.getSubscriptionRoles(closure_0);
-      }
-    }
-    class D {
-      constructor(arg0) {
-        closure_0 = guildId;
-        roles = guildId.roles;
-        return 0 === roles.filter((item) => {
-          let tmp = item === subscriptionRoleId;
-          if (tmp) {
-            tmp = !first1.has(id.id);
-          }
-          let hasItem = !tmp;
-          if (!tmp) {
-            hasItem = stateFromStores.has(item);
-          }
-          return hasItem;
-        }).length;
-      }
-    }
-    SubscriptionRoleStore = tmp13;
-    if (cResult[14] === onClose) {
-      class S {
-        constructor() {
-          return closure_8.getSubscriptionRoles(closure_0);
-        }
-      }
-    }
-    _require = onSave(function*() {
-      closure_0 = tmp3;
-      let v0 = 1;
-      yield v0(first1);
-      if (1 === tmp7) {
-        v0 = 0;
-        c4 = 3;
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        tmp14();
-        v0 = 0;
-      }
-      v0 = 0;
-      return arg1;
-    });
-    function handleSave() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    }
-    cResult[14] = onClose;
-    cResult[15] = onSave;
-    cResult[16] = first1;
-    cResult[17] = handleSave;
-  }
-}) : ((guildId) => {
+export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
   guildId = guildId.guildId;
   const subscriptionRoleId = guildId.subscriptionRoleId;
   const onClose = guildId.onClose;
@@ -189,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     return applyArgumentsResult;
   }
-  closure_11 = async function _handleSave2(stateFromStores, arg1) {
+  closure_11 = async function _handleSave(stateFromStores, arg1) {
     closure_0 = tmp3;
     await onSave(first);
     if (1 === tmp7) {
@@ -207,10 +67,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   ({ initialTierEmojiIds, listingId } = guildId);
   let tmp = closure_12();
   _slicedToArray = tmp;
-  let tmp2 = subscriptionRoleId(onClose[10])(guildId);
+  let tmp2 = subscriptionRoleId(onClose[8])(guildId);
   noop = tmp2;
   const items = [closure_8];
-  const stateFromStores = guildId(onClose[11]).useStateFromStores(items, () => SubscriptionRoleStore.getSubscriptionRoles(guildId));
+  const stateFromStores = guildId(onClose[9]).useStateFromStores(items, () => SubscriptionRoleStore.getSubscriptionRoles(guildId));
   [first, closure_8] = noop.useState(initialTierEmojiIds);
   let items1 = [stateFromStores, tmp2, subscriptionRoleId, first];
   let set = noop.useMemo(() => {
@@ -241,7 +101,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }, items1);
   let obj2 = { style: tmp.container, children: null };
   let obj3 = { title: null, onClose: null, onSave: null, listingId: null, canSave: true };
-  let obj = guildId(onClose[11]);
+  let obj = guildId(onClose[9]);
   let intl = guildId(onClose[13]).intl;
   obj3.title = intl.string(guildId(onClose[13]).t.W4XhnR);
   obj3.onClose = onClose;
@@ -265,7 +125,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
   };
   obj3.listingId = listingId;
-  const items2 = [set(subscriptionRoleId(onClose[20]), obj3), ];
+  const items2 = [set(subscriptionRoleId(onClose[12]), obj3), ];
   let obj4 = {
     style: tmp.emojiList,
     renderItem(item) {
@@ -275,12 +135,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const obj = { style: emojiAlias.row, leading: null, label: null, onPress: null, trailing: null };
       let obj2 = { style: emojiAlias.emojiImage, source: null };
       let obj3 = { uri: null };
-      const tmp2 = subscriptionRoleId(onClose[15]);
-      obj3.uri = subscriptionRoleId(onClose[16]).getEmojiURL({ id: item.id, animated: item.animated, size: 48 });
+      const tmp2 = subscriptionRoleId(onClose[10]);
+      obj3.uri = subscriptionRoleId(onClose[11]).getEmojiURL({ id: item.id, animated: item.animated, size: 48 });
       obj2.source = obj3;
       obj.leading = set(tmp2, obj2);
       obj.label = function label() {
-        const children = [options(EmojiAliasDefault, { name: item.name, style: emojiAlias.emojiAlias }), ];
+        const children = [React7(EmojiAliasDefault, { name: item.name, style: emojiAlias.emojiAlias }), ];
         let tmpResult = closure_1;
         if (closure_1) {
           const obj2 = { children: null };
@@ -296,7 +156,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           tmpResult = tmp(tmp2, obj2);
         }
         children[1] = tmpResult;
-        return closure_3_11(v65535, { children });
+        return closure_3_11(closure_3_10, { children });
       };
       obj.onPress = function onPress() {
         const id = item.id;
@@ -308,8 +168,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
         closure_8(set);
       };
-      obj.trailing = set(guildId(onClose[17]).FormRow.Checkbox, { selected: hasItem });
-      return set(guildId(onClose[17]).FormRow, obj);
+      obj.trailing = set(guildId(onClose[16]).FormRow.Checkbox, { selected: hasItem });
+      return set(guildId(onClose[16]).FormRow, obj);
     },
     sections: null,
     ItemSeparatorComponent: null,
@@ -322,9 +182,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items3 = [obj5];
   obj4.sections = items3;
   obj4.ItemSeparatorComponent = function ItemSeparatorComponent() {
-    return set(guildId(onClose[17]).FormDivider, { iconPush: true });
+    return set(guildId(onClose[16]).FormDivider, { iconPush: true });
   };
   items2[1] = set(first, obj4);
   obj2.children = items2;
   return closure_11(stateFromStores, obj2);
-});
+};

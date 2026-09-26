@@ -1,22 +1,97 @@
 // Module ID: 7016
 // Function ID: 7017
-// Dependencies: [6991, 7006, 6982]
-// Exports: useManualGesture
+// Dependencies: [19, 6972, 7015]
+// Exports: useReanimatedEventHandler
 
 // Module 7016
-import ComposedGestureName from "ComposedGestureName" /* 6982 */;
-import DEFAULT_PROPS_TRANSFORMER from "DEFAULT_PROPS_TRANSFORMER" /* 6991 */;
-import _mod7006 from "module_7006" /* 7006 */;
+import _mod6972 from "module_6972" /* 6972 */;
+import eventHandler from "eventHandler" /* 7015 */;
+import noop from "module_19" /* 19 */;
 
-require = arg1;
-const dependencyMap = arg6;
-let closure_2 = {};
+const require = globalThis.__r;
 
-export const useManualGesture = function useManualGesture(cResult) {
-  let tmp = cResult;
-  if (cResult === undefined) {
-    tmp = closure_2;
+({ useEffect: c2, useMemo: c3, useRef: closure_4 } = noop);
+let closure_5 = ["onGestureHandlerReanimatedEvent", "onGestureHandlerReanimatedStateChange", "onGestureHandlerReanimatedTouchEvent"];
+const onUpdate = function n() {
+
+};
+onUpdate.__closure = {};
+onUpdate.__workletHash = 763644533783;
+onUpdate.__initData = { code: "function pnpm_useReanimatedEventHandlerTs1(){}" };
+let Reanimated = _mod6972.Reanimated;
+let mutable;
+if (Reanimated != null) {
+  mutable = Reanimated.makeMutable({});
+}
+function deleteHandlerEventEntry(arg0) {
+  delete tmp2[tmp];
+}
+deleteHandlerEventEntry.__closure = { lastUpdateEventMap: mutable };
+deleteHandlerEventEntry.__workletHash = 8348834805583;
+deleteHandlerEventEntry.__initData = { code: "function deleteHandlerEventEntry_Pnpm_useReanimatedEventHandlerTs2(handlerTag){const{lastUpdateEventMap}=this.__closure;delete lastUpdateEventMap.value[handlerTag];}" };
+const __initData = { code: "function pnpm_useReanimatedEventHandlerTs3(event){const{lastUpdateEventMap,eventHandler,handlerTag,workletizedHandlers,changeEventCalculator,fillInDefaultValues}=this.__closure;let context=lastUpdateEventMap.value[event.handlerTag];if(context===undefined){context={lastUpdateEvent:undefined};lastUpdateEventMap.value[event.handlerTag]=context;}eventHandler(handlerTag,event,workletizedHandlers,changeEventCalculator,context,false,fillInDefaultValues);}" };
+
+export const useReanimatedEventHandler = function useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, changeEventCalculator, fillInDefaultValues) {
+  _require = handlerTag;
+  dependencyMap = memoizedGestureCallbacks;
+  closure_2 = changeEventCalculator;
+  closure_3 = fillInDefaultValues;
+  const items = [memoizedGestureCallbacks];
+  let tmp = closure_3(() => {
+    const Reanimated = _mod6972.Reanimated;
+    let isWorkletFunctionResult;
+    if (Reanimated != null) {
+      isWorkletFunctionResult = Reanimated.isWorkletFunction(memoizedGestureCallbacks.onUpdate);
+    }
+    if (isWorkletFunctionResult) {
+      let obj = tmp3;
+    } else {
+      obj = {};
+      const merged = Object.assign(tmp3);
+      obj.onUpdate = onUpdate;
+    }
+    return obj;
+  }, items);
+  closure_4 = tmp;
+  const fn = function h(handlerTag) {
+    let tmp = mutable.value[handlerTag.handlerTag];
+    if (undefined === tmp) {
+      const obj = { lastUpdateEvent: "r" };
+      iter.value[handlerTag.handlerTag] = obj;
+      tmp = obj;
+    }
+    eventHandler.eventHandler(closure_0, handlerTag, closure_4, closure_2, tmp, false, closure_3);
+  };
+  fn.__closure = { lastUpdateEventMap: mutable, eventHandler: require("eventHandler").eventHandler, handlerTag, workletizedHandlers: tmp, changeEventCalculator, fillInDefaultValues };
+  fn.__workletHash = 3272953373395;
+  fn.__initData = __initData;
+  const tmp2 = closure_4(handlerTag);
+  closure_5 = tmp2;
+  const items1 = [handlerTag];
+  closure_2(() => {
+    closure_5.current = current;
+    return () => {
+      const Reanimated = closure_0(closure_1[1]).Reanimated;
+      if (Reanimated != null) {
+        const runOnUI = Reanimated.runOnUI;
+        if (runOnUI != null) {
+          runOnUI(deleteHandlerEventEntry)(current);
+        }
+      }
+    };
+  }, items1);
+  let Reanimated = require("module_6972").Reanimated;
+  let event;
+  if (Reanimated != null) {
+    let tmp5 = tmp2.current !== handlerTag;
+    if (!tmp5) {
+      let doDependenciesDiffer;
+      if (handler != null) {
+        doDependenciesDiffer = handler.doDependenciesDiffer;
+      }
+      tmp5 = doDependenciesDiffer;
+    }
+    event = Reanimated.useEvent(fn, closure_5, tmp5);
   }
-  const clonedAndRemappedConfig = DEFAULT_PROPS_TRANSFORMER.useClonedAndRemappedConfig(tmp);
-  return _mod7006.useGesture(ComposedGestureName.SingleGestureName.Manual, clonedAndRemappedConfig);
+  return event;
 };

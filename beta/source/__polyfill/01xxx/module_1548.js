@@ -1,23 +1,16 @@
 // Module ID: 1548
 // Function ID: 1549
 // Dependencies: []
+// Exports: isArrayEqual
 
 // Module 1548
 
-export default (arg0, arr) => {
-  const obj = {};
-  const keys = Object.keys(arg0);
-  for (let num = 0; num < keys.length; num = num + 1) {
-    let tmp2 = keys[num];
-    let tmp3 = arg0[tmp2];
-    if (tmp) {
-      let tmp5 = -1 !== arr.indexOf(tmp2);
-    } else {
-      tmp5 = arr(tmp2, tmp3, arg0);
-    }
-    if (tmp5) {
-      obj[tmp2] = tmp3;
-    }
+export const isArrayEqual = function isArrayEqual(arr, arg1) {
+  closure_0 = arg1;
+  let tmp = arr === arg1;
+  if (!tmp) {
+    tmp = arr.length === arg1.length && arr.every((item, index) => Object.is(item, closure_0[index]));
+    const tmp2 = arr.length === arg1.length && arr.every((item, index) => Object.is(item, closure_0[index]));
   }
-  return obj;
+  return tmp;
 };

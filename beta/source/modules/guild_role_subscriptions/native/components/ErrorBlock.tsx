@@ -1,35 +1,21 @@
-// Module ID: 12405
-// Function ID: 12406
+// Module ID: 12505
+// Function ID: 12506
 // Name: ErrorBlock
-// Dependencies: [19, 21, 558, 568, 12406, 2]
+// Dependencies: [19, 21, 12506, 2]
+// Exports: default
 
-// Module 12405 (ErrorBlock)
-import c from "c" /* 568 */;
-import MessageBlock from "MessageBlock" /* 12406 */;
+// Module 12505 (ErrorBlock)
+import MessageBlock from "MessageBlock" /* 12506 */;
 import noop from "module_19" /* 19 */;
 
 const MessageBlockDefault = MessageBlock;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/ErrorBlock.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
-  const cResult = c.c(2);
-  children = children.children;
-  if (cResult[0] !== children) {
-    const obj2 = { color: MessageBlock.MessageBlockColors.RED, children };
-    const tmp8 = jsx(MessageBlockDefault, { color: MessageBlock.MessageBlockColors.RED, children });
-    cResult[0] = children;
-    cResult[1] = tmp8;
-    let tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : ((children) => {
+export default function ErrorBlock(children) {
   const obj = { color: MessageBlock.MessageBlockColors.RED, children: children.children };
   return jsx(MessageBlockDefault, { color: MessageBlock.MessageBlockColors.RED, children: children.children });
-});
+};

@@ -1,28 +1,19 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 13374
+// Function ID: 13375
 // Name: useNote
-// Dependencies: [5, 19, 13385, 1078, 558, 568, 504, 577, 1275, 2]
+// Dependencies: [5, 19, 13375, 1074, 504, 573, 1271, 2]
+// Exports: default
 
-// Module 13384 (useNote)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 13374 (useNote)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import NoteStore from "NoteStore" /* 13385 */;
+import NoteStore from "NoteStore" /* 13375 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-function fetchNote() {
-  const self = this;
-  const apply = closure_8.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-}
-let closure_8 = async function _fetchNote(userId) {
+let closure_7 = async function _fetchNote(userId) {
   c5 = 0;
   c6 = 0;
   c4 = 0;
@@ -37,7 +28,7 @@ let closure_8 = async function _fetchNote(userId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -69,9 +60,9 @@ let closure_8 = async function _fetchNote(userId) {
           if (1 === tmp7) {
             c4 = 0;
             const obj8 = { type: "USER_NOTE_UPDATE", id: closure_129_0 };
-            closure_130_1(closure_130_2[7]).dispatch(obj8);
+            closure_130_1(closure_130_2[5]).dispatch(obj8);
             c6 = 3;
-            const obj4 = closure_130_1(closure_130_2[7]);
+            const obj4 = closure_130_1(closure_130_2[5]);
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -84,9 +75,9 @@ let closure_8 = async function _fetchNote(userId) {
             body = value.body;
             if (body.note_user_id === closure_129_0) {
               const obj11 = { type: "USER_NOTE_UPDATE", id: closure_129_0, note: body.note };
-              closure_130_1(closure_130_2[7]).dispatch(obj11);
+              closure_130_1(closure_130_2[5]).dispatch(obj11);
               c4 = 0;
-              const obj = closure_130_1(closure_130_2[7]);
+              const obj = closure_130_1(closure_130_2[5]);
             }
           }
           const _Error = Error;
@@ -105,76 +96,31 @@ let closure_8 = async function _fetchNote(userId) {
     }
   })();
 };
-const Endpoints = fn(1078).Endpoints;
-const ReactCompilerGating = fn(558);
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useNote.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [NoteStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      return NoteStore.getNote(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
-  if (cResult[3] === stateFromStores) {
-    if (cResult[4] === arg0) {
-      let tmp8 = cResult[5];
-      let tmp9 = cResult[6];
-    }
-    const effect = noop.useEffect(tmp8, tmp9);
-    if (cResult[7] !== stateFromStores) {
-      let obj2 = stateFromStores;
-      if (stateFromStores == null) {
-        obj2 = { loading: true, note: null };
-      }
-      cResult[7] = stateFromStores;
-      cResult[8] = obj2;
-      let tmp12 = obj2;
-    } else {
-      tmp12 = cResult[8];
-    }
-    return tmp12;
-  }
-  const fn2 = function c() {
-    if (null == stateFromStores) {
-      fetchNote(closure_0);
-    }
-  };
-  const items1 = [stateFromStores, arg0];
-  cResult[3] = stateFromStores;
-  cResult[4] = arg0;
-  cResult[5] = fn2;
-  cResult[6] = items1;
-  tmp9 = items1;
-  tmp8 = fn2;
-}) : ((arg0) => {
+export default function useNote(arg0) {
   _require = arg0;
   const items = [NoteStore];
   let stateFromStores = require("initialize").useStateFromStores(items, () => NoteStore.getNote(closure_0));
   const items1 = [stateFromStores, arg0];
   const effect = noop.useEffect(() => {
     if (null == stateFromStores) {
-      fetchNote(closure_0);
+      (function fetchNote() {
+        const self = this;
+        const apply = closure_1_7.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })(closure_0);
     }
   }, items1);
   if (stateFromStores == null) {
     stateFromStores = { loading: true, note: null };
   }
   return stateFromStores;
-});
+};

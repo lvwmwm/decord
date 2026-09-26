@@ -1,16 +1,16 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8123
+// Function ID: 8124
 // Name: ScheduledMessageNotifications
-// Dependencies: [1078, 4490, 1119, 4752, 6883, 8125, 8129, 7461, 5142, 4993, 12394, 1984, 2]
+// Dependencies: [1074, 4486, 1115, 4750, 6890, 8120, 8124, 7459, 5140, 4991, 12494, 1980, 2]
 // Exports: handleScheduleMessageError, showScheduleMessageDeleteFailureToast, showScheduleMessageDeleteSuccessToast, showScheduleMessageFailureToast, showScheduleMessageSentNowFailureToast, showScheduleMessageSentNowSuccessToast, showScheduleMessageSuccessToast, showScheduledMessageEditFailureToast, showScheduledMessageEditSuccessToast
 
-// Module 8128 (ScheduledMessageNotifications)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
-import ClockIcon from "ClockIcon" /* 4752 */;
-import CircleXIcon from "CircleXIcon" /* 6883 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8125 */;
+// Module 8123 (ScheduledMessageNotifications)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import ClockIcon from "ClockIcon" /* 4750 */;
+import CircleXIcon from "CircleXIcon" /* 6890 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8120 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,25 +44,25 @@ export const handleScheduleMessageError = function handleScheduleMessageError(bo
   if (code === AbortCodes.TOO_MANY_SCHEDULED_MESSAGES) {
     const scheduledMessagesLimit = ScheduledMessageUtils.getScheduledMessagesLimit("ScheduledMessagesCreateRoadblock");
     if (scheduledMessagesLimit.isUpgradable) {
-      const items = [tmp11(7461).SCHEDULED_MESSAGES_ROADBLOCK];
-      tmp11(8129)(items);
-      const tmp11Result = tmp11(8129);
+      const items = [tmp11(7459).SCHEDULED_MESSAGES_ROADBLOCK];
+      tmp11(8124)(items);
+      const tmp11Result = tmp11(8124);
     } else {
       const obj2 = { title: null, body: null, confirmText: null, cancelText: null, onCancel: null, isDismissable: false };
-      const intl2 = tmp7(1119).intl;
-      obj2.title = intl2.string(tmp7(1119).t.RLdUVh);
-      const intl3 = tmp7(1119).intl;
+      const intl2 = tmp7(1115).intl;
+      obj2.title = intl2.string(tmp7(1115).t.RLdUVh);
+      const intl3 = tmp7(1115).intl;
       const obj3 = { max: tmp10 };
-      obj2.body = intl3.formatToPlainString(tmp7(1119).t["3AMt7r"], obj3);
-      const intl4 = tmp7(1119).intl;
-      obj2.confirmText = intl4.string(tmp7(1119).t.BddRzS);
-      const intl5 = tmp7(1119).intl;
-      obj2.cancelText = intl5.string(tmp7(1119).t.lv6bDa);
+      obj2.body = intl3.formatToPlainString(tmp7(1115).t["3AMt7r"], obj3);
+      const intl4 = tmp7(1115).intl;
+      obj2.confirmText = intl4.string(tmp7(1115).t.BddRzS);
+      const intl5 = tmp7(1115).intl;
+      obj2.cancelText = intl5.string(tmp7(1115).t.lv6bDa);
       obj2.onCancel = function onCancel() {
         return require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[10], paths.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
       };
-      tmp11(5142).show(obj2);
-      const tmp11Result2 = tmp11(5142);
+      tmp11(5140).show(obj2);
+      const tmp11Result2 = tmp11(5140);
     }
   } else {
     const body2 = body.body;

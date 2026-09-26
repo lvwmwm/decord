@@ -1,17 +1,17 @@
-// Module ID: 13561
-// Function ID: 13562
+// Module ID: 13551
+// Function ID: 13552
 // Name: GuildTemplateEmbed
-// Dependencies: [17, 7736, 7602, 8015, 8240, 1119, 8231, 580, 4642, 11973, 11974, 13562, 2]
+// Dependencies: [17, 7731, 7600, 8010, 8235, 1115, 8226, 576, 4639, 12091, 12092, 13552, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 13561 (GuildTemplateEmbed)
+// Module 13551 (GuildTemplateEmbed)
 import _mod17 from "module_17" /* 17 */;
-import util from "util" /* 1119 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7602 */;
-import Constants from "Constants" /* 8015 */;
-import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 8231 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8240 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7736 */;
+import util from "util" /* 1115 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7600 */;
+import Constants from "Constants" /* 8010 */;
+import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 8226 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8235 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7731 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -38,13 +38,13 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     const intl = util.intl;
     obj.headerText = intl.string(util.t.C7ZRNw).toUpperCase();
     const str = intl.string(util.t.C7ZRNw);
-    obj.titleColor = RowGeneratorStyleSheet.processColorOrThrow(tmp(580).unsafe_rawColors.RED_400);
+    obj.titleColor = RowGeneratorStyleSheet.processColorOrThrow(tmp(576).unsafe_rawColors.RED_400);
     const intl2 = util.intl;
     obj.titleText = intl2.string(util.t.A6MwXE);
     if (obj3.isThemeDark(arg1)) {
-      let tmpResult = tmp(11973);
+      let tmpResult = tmp(12091);
     } else {
-      tmpResult = tmp(11974);
+      tmpResult = tmp(12092);
     }
     obj.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
     obj.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
@@ -63,7 +63,7 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj10.titleColor = colors.titleColor;
     obj10.subtitle = formatToPlainStringResult;
     obj10.subtitleColor = colors.subtitleColor;
-    obj10.thumbnailUrl = Image.resolveAssetSource(tmp(13562)).uri;
+    obj10.thumbnailUrl = Image.resolveAssetSource(tmp(13552)).uri;
     ({ acceptLabelGreenColor: obj6.acceptLabelColor, acceptLabelGreenBackgroundColor: obj6.acceptLabelBackgroundColor } = colors);
     const intl6 = util.intl;
     obj10.acceptLabelText = intl6.string(util.t["a3Gl+e"]);

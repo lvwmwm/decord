@@ -1,22 +1,22 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11106
+// Function ID: 11107
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 7700, 1376, 1078, 7517, 3, 11037, 5845, 1245, 577, 7705, 4465, 2013, 11151, 1259, 2]
+// Dependencies: [5, 19, 7698, 1372, 1074, 7515, 3, 10999, 5847, 1241, 573, 7703, 4461, 2009, 11107, 1255, 2]
 // Exports: default
 
-// Module 11150 (useMobilePurchaseSKU)
+// Module 11106 (useMobilePurchaseSKU)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-let closure_5 = fn(7700).useNativeCheckoutStoreOrNull;
-const CurrencyCodes = fn(1078).CurrencyCodes;
-fn(7517).GPlayBillingResult;
+let closure_5 = fn(7698).useNativeCheckoutStoreOrNull;
+const CurrencyCodes = fn(1074).CurrencyCodes;
+fn(7515).GPlayBillingResult;
 let closure_9 = new LoggerDefault("useMobilePurchaseSKU.android");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/billing/native/hooks/useMobilePurchaseSKU.android.tsx");
@@ -112,7 +112,7 @@ export default function useMobilePurchaseSKU(skuId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -226,7 +226,7 @@ export default function useMobilePurchaseSKU(skuId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -361,10 +361,10 @@ export default function useMobilePurchaseSKU(skuId) {
           }
           c4 = 0;
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
         const obj15 = { productId: closure_130_1, skuId: closure_130_0, isOneTimePurchase: true, analyticsLoadId: closure_130_3, analyticsLocations: closure_130_2, analyticsData: closure_130_4, isGift: closure_130_18, giftInfoOptions: null, onPurchaseError: null };
-        options = undefined;
+        let options;
         if (closure_130_9 != null) {
           options = closure_130_9.options;
         }

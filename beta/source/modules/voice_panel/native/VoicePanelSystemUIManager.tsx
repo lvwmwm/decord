@@ -1,23 +1,23 @@
-// Module ID: 17500
-// Function ID: 17501
+// Module ID: 17565
+// Function ID: 17566
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 4806, 12456, 12454, 4811, 21, 12455, 1252, 1368, 551, 4529, 9692, 9678, 9680, 2]
+// Dependencies: [32, 19, 4804, 12555, 12553, 4809, 21, 12554, 1248, 1364, 551, 4524, 9696, 9682, 9684, 2]
 
-// Module 17500 (VoicePanelSystemUIManager)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+// Module 17565 (VoicePanelSystemUIManager)
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
 
 require = fn;
-const VoicePanelModes = fn(12456).VoicePanelModes;
-const VoicePanelControlsModes = fn(12454).VoicePanelControlsModes;
-const ParticipantTypes = fn(4811).ParticipantTypes;
+const VoicePanelModes = fn(12555).VoicePanelModes;
+const VoicePanelControlsModes = fn(12553).VoicePanelControlsModes;
+const ParticipantTypes = fn(4809).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
 const __initData = { code: "function VoicePanelSystemUIManagerTsx1(){const{focused,mode,controlsSpecs,windowDimensions}=this.__closure;var _focused$get;return{focusedId:(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,mode:mode.get(),controlsMode:controlsSpecs.get().mode,landscape:windowDimensions.get().landscape};}" };
-const __initData2 = { code: "function VoicePanelSystemUIManagerTsx2(props_0,previous){const{cheapWorkletShallowEqual,runOnJS,handleStateChange}=this.__closure;if(cheapWorkletShallowEqual(props_0,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(handleStateChange)(props_0);}" };
+const __initData2 = { code: "function VoicePanelSystemUIManagerTsx2(props,previous){const{cheapWorkletShallowEqual,runOnJS,handleStateChange}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(handleStateChange)(props);}" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/VoicePanelSystemUIManager.tsx");
 
@@ -128,15 +128,15 @@ export default noop.memo(function VoicePanelSystemUIManager() {
   fn.__closure = { focused, mode, controlsSpecs, windowDimensions };
   fn.__workletHash = 2478376475717;
   fn.__initData = __initData;
-  const fn2 = function u(safeAreaState, safeAreaState2) {
-    if (!obj.cheapWorkletShallowEqual(safeAreaState, safeAreaState2)) {
+  const fn2 = function u(safeAreaState, current) {
+    if (!obj.cheapWorkletShallowEqual(safeAreaState, current)) {
       ReanimatedRexport.runOnJS(handleStateChange)(safeAreaState);
       const tmp2Result = ReanimatedRexport;
     }
   };
   let obj = focused(mode[11]);
   fn2.__closure = { cheapWorkletShallowEqual: focused(mode[12]).cheapWorkletShallowEqual, runOnJS: focused(mode[11]).runOnJS, handleStateChange };
-  fn2.__workletHash = 9238710291709;
+  fn2.__workletHash = 3592680244658;
   fn2.__initData = __initData2;
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   let tmp15 = null;

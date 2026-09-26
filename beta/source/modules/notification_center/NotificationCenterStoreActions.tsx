@@ -1,11 +1,11 @@
-// Module ID: 16769
-// Function ID: 16770
+// Module ID: 16759
+// Function ID: 16760
 // Name: NotificationCenterStoreActions
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 // Exports: clearNotificationGuildMentions, refreshNotifications, setTab
 
-// Module 16769 (NotificationCenterStoreActions)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 16759 (NotificationCenterStoreActions)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notification_center/NotificationCenterStoreActions.tsx");

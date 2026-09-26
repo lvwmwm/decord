@@ -1,51 +1,140 @@
 // Module ID: 10837
 // Function ID: 10838
-// Dependencies: [41, 42, 10834, 10791]
+// Dependencies: [41, 42, 93, 95, 98, 10836, 10730, 10735]
 
 // Module 10837
-import alphaNum from "alphaNum" /* 10834 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import NUMBER from "NUMBER" /* 10836 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const JPWeekdayParser = require;
-const keys = Object.keys(alphaNum.WEEKDAY_OFFSET);
-const regExp = new RegExp("((?<prefix>\u524D\u306E|\u6B21\u306E|\u4ECA\u9031))?(?<weekday>" + keys.join("|") + ")(?:\u66DC\u65E5|\u66DC)", "i");
-class JPWeekdayParser {
-  constructor() {
-    tmp = c2(this, JPWeekdayParser);
-    return;
+const ZHHansDeadlineFormatParser = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+const keys = Object.keys(NUMBER.NUMBER);
+const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u51E0)(?:\\s*)(?:\u4E2A)?(\u79D2(?:\u949F)?|\u5206\u949F|\u5C0F\u65F6|\u949F|\u65E5|\u5929|\u661F\u671F|\u793C\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u8FC7)?\u540E|(?:\u4E4B)?\u5185)", "i");
+class ZHHansDeadlineFormatParser {
+  constructor() {
+    self = this;
+    tmp = c2(this, ZHHansDeadlineFormatParser);
+    tmp2 = closure_4;
+    obj = closure_4(ZHHansDeadlineFormatParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ZHHansDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
+  key: "innerPattern",
+  value: function innerPattern() {
     return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "extract",
-    value: function extract(reference, groups) {
-      const tmp3 = JPWeekdayParser(10834).WEEKDAY_OFFSET[groups.groups.weekday];
-      if (undefined === tmp3) {
-        return null;
-      } else {
-        let str2 = "last";
-        if (!groups.groups.prefix || "".match(/前の/)) {
-          str2 = "next";
-          if (!str.match(/次の/)) {
-            str2 = null;
-            if (str.match(/今週/)) {
-              str2 = "this";
-            }
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      let num = parseInt(index[1]);
+      if (isNaN(num)) {
+        num = ZHHansDeadlineFormatParser(10836).zhStringToNumber(index[1]);
+      }
+      if (isNaN(num)) {
+        num = 3;
+        if ("\u51E0" !== index[1]) {
+          num = 0.5;
+          if ("\u534A" !== tmp4) {
+            return null;
           }
         }
-        return tmp(10791).createParsingComponentsAtWeekday(reference.reference, tmp3, str2);
       }
-      tmp = JPWeekdayParser;
+      const obj = {};
+      if (index[2][0].match(/[日天星礼月年]/)) {
+        if ("\u65E5" != str3) {
+          if ("\u5929" != str3) {
+            if ("\u661F" != str3) {
+              if ("\u793C" != str3) {
+                if ("\u6708" == str3) {
+                  obj.month = num;
+                } else if ("\u5E74" == str3) {
+                  obj.year = num;
+                }
+              }
+            }
+            obj.week = num;
+          }
+          const addDurationResult = ZHHansDeadlineFormatParser(10730).addDuration(createParsingResult.refDate, obj);
+          const start7 = parsingResult.start;
+          start7.assign("year", addDurationResult.getFullYear());
+          const start8 = parsingResult.start;
+          start8.assign("month", addDurationResult.getMonth() + 1);
+          const start9 = parsingResult.start;
+          start9.assign("day", addDurationResult.getDate());
+          return parsingResult;
+        }
+        obj.day = num;
+      } else {
+        if ("\u79D2" == str3) {
+          obj.second = num;
+        } else if ("\u5206" == str3) {
+          obj.minute = num;
+        } else {
+          let tmp6 = "\u5C0F" != str3;
+          if (tmp6) {
+            tmp6 = "\u949F" != str3;
+          }
+          if (!tmp6) {
+            obj.hour = num;
+          }
+        }
+        const addDurationResult1 = ZHHansDeadlineFormatParser(10730).addDuration(createParsingResult.refDate, obj);
+        const start = parsingResult.start;
+        start.imply("year", addDurationResult1.getFullYear());
+        const start2 = parsingResult.start;
+        start2.imply("month", addDurationResult1.getMonth() + 1);
+        const start3 = parsingResult.start;
+        start3.imply("day", addDurationResult1.getDate());
+        const start4 = parsingResult.start;
+        start4.assign("hour", addDurationResult1.getHours());
+        const start5 = parsingResult.start;
+        start5.assign("minute", addDurationResult1.getMinutes());
+        const start6 = parsingResult.start;
+        start6.assign("second", addDurationResult1.getSeconds());
+        return parsingResult;
+      }
     }
   }
 ];
 
-export default _createClass(JPWeekdayParser, items);
+export default _createClass(ZHHansDeadlineFormatParser, items);

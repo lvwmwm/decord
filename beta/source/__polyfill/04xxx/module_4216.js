@@ -1,9 +1,9 @@
 // Module ID: 4216
 // Function ID: 4217
-// Dependencies: [4189, 4190, 4187]
+// Dependencies: [4185, 4186, 4183]
 
 // Module 4216
-import Parser2 from "Parser" /* 4187 */;
+import Parser2 from "Parser" /* 4183 */;
 
 function _typeof(arg0) {
   if (typeof Symbol === "function") {
@@ -30,15 +30,15 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(Hour1To24Parser, Parser) {
+function _setPrototypeOf(ISOTimezoneWithZParser, Parser) {
   _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(Hour1To24Parser, Parser) {
-      Hour1To24Parser.__proto__ = Parser;
-      return Hour1To24Parser;
+    _setPrototypeOf = function _setPrototypeOf(ISOTimezoneWithZParser, Parser) {
+      ISOTimezoneWithZParser.__proto__ = Parser;
+      return ISOTimezoneWithZParser;
     };
   }
-  return _setPrototypeOf(Hour1To24Parser, Parser);
+  return _setPrototypeOf(ISOTimezoneWithZParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -58,7 +58,7 @@ function _getPrototypeOf(arg0) {
 }
 const Parser = Parser2.Parser;
 let _createSuperInternal;
-class Hour1To24Parser {
+class ISOTimezoneWithZParser {
   constructor() {
     if (this instanceof closure_1) {
       length = arguments.length;
@@ -94,10 +94,10 @@ class Hour1To24Parser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 70, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 10, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 70;
-          applyResult.priority = 70;
+          num3 = 10;
+          applyResult.priority = 10;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -108,7 +108,7 @@ class Hour1To24Parser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["a", "b", "h", "H", "K", "t", "T"];
+          items1 = ["t", "T", "x"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -132,7 +132,7 @@ class Hour1To24Parser {
     }
   }
 }
-let dependencyMap = Hour1To24Parser;
+let dependencyMap = ISOTimezoneWithZParser;
 if (typeof Parser !== "function") {
   if (null !== Parser) {
     let _TypeError = TypeError;
@@ -144,9 +144,9 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-Hour1To24Parser.prototype = Object.create(prototype, { constructor: { value: Hour1To24Parser, writable: true, configurable: true } });
+ISOTimezoneWithZParser.prototype = Object.create(prototype, { constructor: { value: ISOTimezoneWithZParser, writable: true, configurable: true } });
 if (Parser) {
-  _setPrototypeOf(Hour1To24Parser, Parser);
+  _setPrototypeOf(ISOTimezoneWithZParser, Parser);
 }
 let num = 0;
 dependencyMap = (function _isNativeReflectConstruct() {
@@ -207,37 +207,31 @@ _createSuperInternal = function _createSuperInternal() {
 };
 const entry = {
   key: "parse",
-  value: function parse(arg0, arg1, ordinalNumber) {
-    if ("k" === arg1) {
-      return _createSuperInternal(4189).parseNumericPattern(_createSuperInternal(4190).numericPatterns.hour24h, arg0);
-    } else if ("ko" === arg1) {
-      return ordinalNumber.ordinalNumber(arg0, { unit: "hour" });
+  value: function parse(arg0, arg1) {
+    if ("X" === arg1) {
+      return _createSuperInternal(4185).parseTimezonePattern(_createSuperInternal(4186).timezonePatterns.basicOptionalMinutes, arg0);
+    } else if ("XX" === arg1) {
+      return _createSuperInternal(4185).parseTimezonePattern(_createSuperInternal(4186).timezonePatterns.basic, arg0);
+    } else if ("XXXX" === arg1) {
+      return _createSuperInternal(4185).parseTimezonePattern(_createSuperInternal(4186).timezonePatterns.basicOptionalSeconds, arg0);
+    } else if ("XXXXX" === arg1) {
+      return _createSuperInternal(4185).parseTimezonePattern(_createSuperInternal(4186).timezonePatterns.extendedOptionalSeconds, arg0);
     } else {
-      return _createSuperInternal(4189).parseNDigits(arg1.length, arg0);
+      return _createSuperInternal(4185).parseTimezonePattern(_createSuperInternal(4186).timezonePatterns.extended, arg0);
     }
   }
 };
 let items = [
   entry,
   {
-    key: "validate",
-    value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 1;
-      if (tmp) {
-        tmp = arg1 <= 24;
-      }
-      return tmp;
-    }
-  },
-  {
     key: "set",
-    value: function set(setUTCHours, arg1, arg2) {
-      let result = arg2;
-      if (arg2 <= 24) {
-        result = arg2 % 24;
+    value: function set(getTime, timestampIsSet, arg2) {
+      let date = getTime;
+      if (!timestampIsSet.timestampIsSet) {
+        const _Date = Date;
+        date = new Date(getTime.getTime() - arg2);
       }
-      setUTCHours.setUTCHours(result, 0, 0, 0);
-      return setUTCHours;
+      return date;
     }
   }
 ];
@@ -259,4 +253,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { Hour1To24Parser };
+export { ISOTimezoneWithZParser };

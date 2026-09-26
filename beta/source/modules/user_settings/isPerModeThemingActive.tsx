@@ -1,14 +1,14 @@
-// Module ID: 4638
-// Function ID: 4639
+// Module ID: 4635
+// Function ID: 4636
 // Name: isPerModeThemingActive
-// Dependencies: [1186, 1188, 1189, 2]
+// Dependencies: [1182, 1184, 1185, 2]
 // Exports: isPerModeThemingActive
 
-// Module 4638 (isPerModeThemingActive)
-import ThemeStore from "ThemeStore" /* 1186 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
+// Module 4635 (isPerModeThemingActive)
+import ThemeStore from "ThemeStore" /* 1182 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 
-const SystemThemeState = fn(1189).SystemThemeState;
+const SystemThemeState = fn(1185).SystemThemeState;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/isPerModeThemingActive.tsx");
 

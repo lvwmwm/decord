@@ -1,11 +1,11 @@
-// Module ID: 8399
-// Function ID: 8400
+// Module ID: 8394
+// Function ID: 8395
 // Name: MarkdownParseSampleExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 // Exports: getMarkdownParseSampleRate
 
-// Module 8399 (MarkdownParseSampleExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 8394 (MarkdownParseSampleExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-09-markdown-parse-sample", defaultConfig: { sampleRate: 0 }, variations: { 0: { sampleRate: 0.001 }, 1: { sampleRate: 0.0001 }, 2: { sampleRate: 0.01 } } });

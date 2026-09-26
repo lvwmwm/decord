@@ -6,16 +6,11 @@
 import _mod14634 from "module_14634" /* 14634 */;
 
 
-export default (arg0, arg1) => {
-  let tmp3 = _mod14634[arg0];
-  if (!tmp3) {
-    let obj = arg1;
-    if (!arg1) {
-      obj = {};
-    }
-    _mod14634[arg0] = obj;
-    tmp3 = obj;
-    const tmpResult = _mod14634;
+export default (obj) => {
+  if (typeof obj === "object") {
+    let tmp2 = null !== obj;
+  } else {
+    tmp2 = _mod14634(obj);
   }
-  return tmp3;
+  return tmp2;
 };

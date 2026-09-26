@@ -1,19 +1,19 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17165
+// Function ID: 17166
 // Name: ThreadChannelUserList
-// Dependencies: [19, 2045, 2109, 2067, 1376, 1078, 21, 7441, 504, 17176, 7328, 550, 7588, 4635, 8485, 11204, 2]
+// Dependencies: [19, 2041, 2105, 2063, 1372, 1074, 21, 7439, 504, 17166, 7326, 550, 7586, 4632, 8480, 11157, 2]
 
-// Module 17175 (ThreadChannelUserList)
+// Module 17165 (ThreadChannelUserList)
 import throttleDefault from "throttle" /* 550 */;
-import UserUtilsDefault from "UserUtils" /* 4635 */;
+import UserUtilsDefault from "UserUtils" /* 4632 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1376 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
-const RelationshipTypes = fn(1078).RelationshipTypes;
+const RelationshipTypes = fn(1074).RelationshipTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/ThreadChannelUserList.tsx");

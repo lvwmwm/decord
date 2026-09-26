@@ -1,17 +1,17 @@
-// Module ID: 5393
-// Function ID: 5394
+// Module ID: 5391
+// Function ID: 5392
 // Name: NativePermissionBaseUtils
-// Dependencies: [5, 5394, 4999, 1078, 1245, 5395, 1119, 2]
+// Dependencies: [5, 5392, 4997, 1074, 1241, 5393, 1115, 2]
 
-// Module 5393 (NativePermissionBaseUtils)
-import util from "util" /* 1119 */;
+// Module 5391 (NativePermissionBaseUtils)
+import util from "util" /* 1115 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import NativePermissionStore from "NativePermissionStore" /* 5394 */;
+import NativePermissionStore from "NativePermissionStore" /* 5392 */;
 
 require = fn;
-const NativePermissionConstants = fn(4999);
+const NativePermissionConstants = fn(4997);
 ({ NativePermissionTypes: hasOwnProperty, NativePermissionStates: metroRequire, NativePermissionStatus: closure_7 } = NativePermissionConstants);
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 let NativePermissionBaseUtils;
 class NativePermissionBaseUtils {
   constructor() {
@@ -35,7 +35,7 @@ prototype["requestAuthorization"] = function requestAuthorization(arg0, hasPermi
       const error = new Error("requestAuthorization: Was provided with not a function for " + type + ".");
       throw error;
     }
-    tmp5(1245).track(constants2.PERMISSIONS_REQUESTED, { type });
+    tmp5(1241).track(constants2.PERMISSIONS_REQUESTED, { type });
     closure_128_0 = yield tmp45();
     let tmp10 = closure_128_0 === constants.AUTHORIZED;
     if (!tmp10) {
@@ -48,7 +48,7 @@ prototype["requestAuthorization"] = function requestAuthorization(arg0, hasPermi
       DENIED = tmp14.DENIED;
     }
     closure_128_2 = DENIED;
-    tmp5(5395).setPermission(closure_129_0, closure_128_2);
+    tmp5(5393).setPermission(closure_129_0, closure_128_2);
     let showAuthorizationError = !closure_128_1;
     if (!closure_128_1) {
       showAuthorizationError = closure_129_2.showAuthorizationError;
@@ -90,16 +90,16 @@ prototype["showAlert"] = function showAlert(arg0) {
   obj[constants.CONTACTS] = "" + intl9.string(util.t.kTtf7o) + ". " + intl10.string(util.t["5Jvu1R"]);
   if (null != obj[arg0]) {
     const obj2 = { title: null, body: null, onConfirm: null, cancelText: null, confirmText: null };
-    const intl11 = tmp(1119).intl;
-    obj2.title = intl11.string(tmp(1119).t.u1Gxpu);
+    const intl11 = tmp(1115).intl;
+    obj2.title = intl11.string(tmp(1115).t.u1Gxpu);
     obj2.body = tmp9;
     obj2.onConfirm = function onConfirm() {
       return self.openSettings(closure_0);
     };
-    const intl12 = tmp(1119).intl;
-    obj2.cancelText = intl12.string(tmp(1119).t["ETE/oC"]);
-    const intl13 = tmp(1119).intl;
-    obj2.confirmText = intl13.string(tmp(1119).t["XgZk+u"]);
+    const intl12 = tmp(1115).intl;
+    obj2.cancelText = intl12.string(tmp(1115).t["ETE/oC"]);
+    const intl13 = tmp(1115).intl;
+    obj2.confirmText = intl13.string(tmp(1115).t["XgZk+u"]);
     self.openAlertModal(obj2);
   }
 };

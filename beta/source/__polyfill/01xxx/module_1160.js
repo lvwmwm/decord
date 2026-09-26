@@ -1,21 +1,13 @@
 // Module ID: 1160
 // Function ID: 1161
-// Dependencies: []
-// Exports: resolveFormatConfigOptions
+// Dependencies: [1161, 1162, 1163]
 
 // Module 1160
+import _mod1162 from "module_1162" /* 1162 */;
+import _mod1163 from "module_1163" /* 1163 */;
+import e_mod from "e" /* 1161 */;
 
-export const resolveFormatConfigOptions = function resolveFormatConfigOptions(list, format) {
-  format = undefined;
-  if (null != format) {
-    format = format.format;
-  }
-  if (typeof format === "string") {
-    const _Object = Object;
-    const _Object2 = Object;
-    return Object.assign(Object.assign({}, list[format.format]), format);
-  } else {
-    return format;
-  }
-};
-export const DEFAULT_FORMAT_CONFIG = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { month: "numeric", day: "numeric", year: "2-digit" }, medium: { month: "short", day: "numeric", year: "numeric" }, long: { month: "long", day: "numeric", year: "numeric" }, full: { weekday: "long", month: "long", day: "numeric", year: "numeric" } }, time: { short: { hour: "numeric", minute: "numeric" }, medium: { hour: "numeric", minute: "numeric", second: "numeric" }, long: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" }, full: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" } } };
+let e = e_mod;
+e.__exportStar(_mod1162, exports);
+let e = e_mod;
+e.__exportStar(_mod1163, exports);

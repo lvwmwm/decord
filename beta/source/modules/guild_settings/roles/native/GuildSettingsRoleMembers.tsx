@@ -1,34 +1,34 @@
-// Module ID: 18084
-// Function ID: 18085
+// Module ID: 18075
+// Function ID: 18076
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7407, 1078, 21, 4790, 580, 4490, 5844, 1119, 18062, 7587, 504, 5142, 9865, 1181, 1245, 4757, 18063, 1984, 11284, 8210, 6883, 7329, 4744, 4786, 5854, 11494, 2]
+// Dependencies: [32, 19, 17, 7405, 1074, 21, 4788, 576, 4486, 5846, 1115, 18053, 7585, 504, 5140, 9887, 1177, 1241, 4755, 18054, 1980, 11236, 8211, 6890, 7327, 4742, 4784, 5854, 11499, 2]
 // Exports: default
 
-// Module 18084 (GuildSettingsRoleMembers)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import _modDef5844 from "module_5844" /* 5844 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
+// Module 18075 (GuildSettingsRoleMembers)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import _modDef5846 from "module_5846" /* 5846 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9887 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7407 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7405 */;
 
 require = fn;
 function onMembersLoadFail() {
-  const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: _modDef5844, content: null };
+  const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: _modDef5846, content: null };
   const intl = util.intl;
   obj2.content = intl.string(util.t.fEptJP);
   ToastActionCreatorsDefault.open(obj2);
 }
 const View = fn(17).View;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 }, containerSearchBar: null, missingMembers: null, missingMembersText: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
 obj2.containerSearchBar = { paddingBottom: nativeDefault.space.PX_12 };
@@ -85,10 +85,10 @@ export default function GuildSettingsRoleMembers(guild) {
         const items = [role.id];
         GuildSettingsActionCreatorsDefault.updateMemberRoles(guild.id, name.id, found, [], items).catch(() => {
           const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", content: null, icon: null };
-          const intl = name(1119).intl;
-          obj2.content = intl.string(name(1119).t.fEptJP);
-          obj2.icon = found(5844);
-          found(4490).open(obj2);
+          const intl = name(1115).intl;
+          obj2.content = intl.string(name(1115).t.fEptJP);
+          obj2.icon = found(5846);
+          found(4486).open(obj2);
         });
       };
       obj2.confirmColor = guild(locked[16]).ButtonColors.RED;
@@ -101,7 +101,7 @@ export default function GuildSettingsRoleMembers(guild) {
   const callback1 = found.useCallback(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Add Role Members", location_page: "Role Settings", location_section: "Members" });
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequireImpl(18063, dependencyMap.paths), "role-add-members-" + guild.id + "-" + role.id, { guild, role });
+    obj2.openLazy(asyncRequireImpl(18054, dependencyMap.paths), "role-add-members-" + guild.id + "-" + role.id, { guild, role });
   }, items3);
   closure_6 = found.useCallback((item) => {
     item = item.item;

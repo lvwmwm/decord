@@ -1,13 +1,13 @@
-// Module ID: 5140
-// Function ID: 5141
+// Module ID: 5138
+// Function ID: 5139
 // Name: GuildAvailabilityStore
-// Dependencies: [2067, 3, 504, 577, 2]
+// Dependencies: [2063, 3, 504, 573, 2]
 
-// Module 5140 (GuildAvailabilityStore)
+// Module 5138 (GuildAvailabilityStore)
 import LoggerDefault from "Logger" /* 3 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 function handleConnectionOpen(unavailableGuilds) {
   set = new Set(unavailableGuilds.unavailableGuilds);
@@ -67,7 +67,7 @@ const guildAvailabilityStore = new GuildAvailabilityStore(DispatcherDefault, {
     if (set.has(guildId.guildId)) {
       return false;
     } else {
-      guild = GuildStore.getGuild(guildId.guildId);
+      const guild = GuildStore.getGuild(guildId.guildId);
       let str = "???";
       if (tmp4) {
         str = guild.name;

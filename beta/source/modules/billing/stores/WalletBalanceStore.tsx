@@ -1,11 +1,11 @@
-// Module ID: 7662
-// Function ID: 7663
+// Module ID: 7660
+// Function ID: 7661
 // Name: WalletBalanceStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7662 (WalletBalanceStore)
+// Module 7660 (WalletBalanceStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let closure_0 = {};
 let set = new Set();

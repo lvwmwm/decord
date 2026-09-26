@@ -1,18 +1,15 @@
-// Module ID: 11684
-// Function ID: 11685
+// Module ID: 11808
+// Function ID: 11809
 // Name: useDrawerWidth
-// Dependencies: [1078, 4653, 4651, 558, 568, 2]
-// Exports: getDrawerWidth
+// Dependencies: [1074, 4650, 4648, 2]
+// Exports: getDrawerWidth, useDrawerWidth
 
-// Module 11684 (useDrawerWidth)
-import c from "c" /* 568 */;
-import Constants from "Constants" /* 1078 */;
-import useChatLayout from "useChatLayout" /* 4651 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4653 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11808 (useDrawerWidth)
+import Constants from "Constants" /* 1074 */;
+import useChatLayout from "useChatLayout" /* 4648 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4650 */;
 import size from "module_2" /* 2 */;
 
-const useChatLayoutDefault = useChatLayout;
 const useBaseAppContainerDimensionsDefault = useBaseAppContainerDimensions;
 
 const DM_WIDTH = Constants.DM_WIDTH;
@@ -34,25 +31,7 @@ export const getDrawerWidth = function getDrawerWidth() {
     bound = Math.min(closure_4, width - 32);
   }
 };
-export const useDrawerWidth = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const width = useBaseAppContainerDimensionsDefault().width;
-  const tmp2 = useChatLayoutDefault();
-  const isChatLockedOpen = tmp2.isChatLockedOpen;
-  if (!tmp2.isChatBesideChannelList) {
-    return width;
-  } else {
-    if (isChatLockedOpen) {
-      let bound = sum;
-    } else {
-      const _Math = Math;
-      bound = Math.min(closure_4, width - 32);
-    }
-    cResult[0] = isChatLockedOpen;
-    cResult[1] = width;
-    cResult[2] = bound;
-  }
-}) : (() => {
+export const useDrawerWidth = function useDrawerWidth() {
   const width = useBaseAppContainerDimensionsDefault().width;
   if (!tmp.isChatBesideChannelList) {
     return width;
@@ -62,4 +41,4 @@ export const useDrawerWidth = ReactCompilerGating.isReactCompilerEnabled() ? (()
     const _Math = Math;
     bound = Math.min(closure_4, width - 32);
   }
-});
+};

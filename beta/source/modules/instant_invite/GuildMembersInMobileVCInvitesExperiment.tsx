@@ -1,11 +1,11 @@
-// Module ID: 10120
-// Function ID: 10121
+// Module ID: 10141
+// Function ID: 10142
 // Name: GuildMembersInMobileVCInvitesExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 // Exports: getGuildMembersInMobileVCInvitesExperiment
 
-// Module 10120 (GuildMembersInMobileVCInvitesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 10141 (GuildMembersInMobileVCInvitesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-guild-members-in-mobile-vc-invites", kind: "guild", defaultConfig: { enabled: false }, variations: null };

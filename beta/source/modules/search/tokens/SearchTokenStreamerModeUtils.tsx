@@ -1,12 +1,12 @@
-// Module ID: 12529
-// Function ID: 12530
+// Module ID: 12628
+// Function ID: 12629
 // Name: SearchTokenStreamerModeUtils
-// Dependencies: [4636, 1078, 12524, 2]
+// Dependencies: [4633, 1074, 12623, 2]
 // Exports: getValidFilterTokens, isFromUserFilterSupported, isInChannelFilterSupported, isMentionsUserFilterSupported
 
-// Module 12529 (SearchTokenStreamerModeUtils)
-import SearchUtils from "SearchUtils" /* 12524 */;
-import StreamerModeStore from "StreamerModeStore" /* 4636 */;
+// Module 12628 (SearchTokenStreamerModeUtils)
+import SearchUtils from "SearchUtils" /* 12623 */;
+import StreamerModeStore from "StreamerModeStore" /* 4633 */;
 
 require = fn;
 function getValidOrderedFilterTokens(type, items) {
@@ -39,7 +39,7 @@ function getValidOrderedFilterTokens(type, items) {
   items1.push(constants.FILTER_AUTHOR_TYPE);
   return items1;
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ SearchTokenTypes: c3, SearchTypes: closure_4 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/tokens/SearchTokenStreamerModeUtils.tsx");

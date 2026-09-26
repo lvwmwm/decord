@@ -1,111 +1,22 @@
-// Module ID: 10295
-// Function ID: 10296
+// Module ID: 10298
+// Function ID: 10299
 // Name: ChannelCallMicButton
-// Dependencies: [19, 4807, 21, 558, 568, 7621, 504, 10296, 10297, 1119, 10300, 10301, 580, 9694, 2]
+// Dependencies: [19, 4805, 21, 7619, 504, 10299, 10300, 9698, 1115, 10303, 10304, 576, 2]
+// Exports: ChannelCallMicButton
 
-// Module 10295 (ChannelCallMicButton)
-import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import useMuteStatesDefault from "useMuteStates" /* 7621 */;
-import CallBarActionAll from "CallBarAction" /* 9694 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 10296 */;
-import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 10297 */;
+// Module 10298 (ChannelCallMicButton)
+import useMuteStatesDefault from "useMuteStates" /* 7619 */;
+import CallBarActionAll from "CallBarAction" /* 9698 */;
+import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 10300 */;
 import noop from "module_19" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4807 */;
+import GameConsoleStore from "GameConsoleStore" /* 4805 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallMicButton.tsx");
 
-export const ChannelCallMicButton = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = c.c(16);
-  ({ isSmallSize, disableTint } = channel);
-  let tmp4 = undefined !== disableTint;
-  if (tmp4) {
-    tmp4 = disableTint;
-  }
-  const tmp6 = useMuteStatesDefault(channel.channel);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameConsoleStore];
-    const fn = function s() {
-      return null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp7 = items;
-    tmp8 = fn;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp7, tmp8);
-  if (cResult[2] === stateFromStores) {
-    if (cResult[3] === tmp6) {
-      let tmp11 = cResult[4];
-    }
-    ({ mute, onPress } = tmp11);
-    if (cResult[5] !== mute) {
-      const obj2 = { muted: mute };
-      const tmp15 = jsx(tmp(10297).VoicePanelRiveMicButton, { muted: mute });
-      cResult[5] = mute;
-      cResult[6] = tmp15;
-      let tmp13 = tmp15;
-    } else {
-      tmp13 = cResult[6];
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t.B3zz0G);
-      cResult[7] = stringResult;
-      let tmp16 = stringResult;
-    } else {
-      tmp16 = cResult[7];
-    }
-    const tmp5Result = tmp5(mute ? 10300 : 10301);
-    if (!tmp4) {
-      tmp4 = mute;
-    }
-    let RED_400;
-    if (mute) {
-      RED_400 = tmp5(580).unsafe_rawColors.RED_400;
-    }
-    if (cResult[8] === stateFromStores) {
-      if (cResult[9] === isSmallSize) {
-        if (cResult[10] === tmp13) {
-          if (cResult[11] === onPress) {
-            if (cResult[12] === tmp5Result) {
-              if (cResult[13] === tmp4) {
-                if (cResult[14] === RED_400) {
-                  let tmp20 = cResult[15];
-                }
-                return tmp20;
-              }
-            }
-          }
-        }
-      }
-    }
-    const obj3 = { appearsDisabled: stateFromStores, accessibilityLabel: tmp16, onPress, source: tmp5Result, isActive: tmp4, isSmallSize, lottieComponent: tmp13, tintColor: RED_400 };
-    const tmp23 = jsx(CallBarActionAll.ToggledActionButton, { appearsDisabled: stateFromStores, accessibilityLabel: tmp16, onPress, source: tmp5Result, isActive: tmp4, isSmallSize, lottieComponent: tmp13, tintColor: RED_400 });
-    cResult[8] = stateFromStores;
-    cResult[9] = isSmallSize;
-    cResult[10] = tmp13;
-    cResult[11] = onPress;
-    cResult[12] = tmp5Result;
-    cResult[13] = tmp4;
-    cResult[14] = RED_400;
-    cResult[15] = tmp23;
-    tmp20 = tmp23;
-  }
-  const tmpResult = initialize;
-  const muteHandler = VoiceActionUtils.createMuteHandler(tmp6, stateFromStores);
-  cResult[2] = stateFromStores;
-  cResult[3] = tmp6;
-  cResult[4] = muteHandler;
-  tmp11 = muteHandler;
-}) : ((disableTint) => {
+export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
   let flag = disableTint.disableTint;
   ({ channel, isSmallSize } = disableTint);
   if (flag === undefined) {
@@ -116,15 +27,15 @@ export const ChannelCallMicButton = ReactCompilerGating.isReactCompilerEnabled()
   const items = [GameConsoleStore];
   const stateFromStores = mute(504).useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
   const obj = mute(504);
-  const muteHandler = mute(10296).createMuteHandler(tmp3, stateFromStores);
+  const muteHandler = mute(10299).createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
   const memo = noop.useMemo(() => jsx(VoicePanelRiveMicButton.VoicePanelRiveMicButton, { muted: mute }), items1);
   const obj3 = { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null };
-  const intl = mute(1119).intl;
-  obj3.accessibilityLabel = intl.string(mute(1119).t.B3zz0G);
+  const intl = mute(1115).intl;
+  obj3.accessibilityLabel = intl.string(mute(1115).t.B3zz0G);
   obj3.onPress = muteHandler.onPress;
-  obj3.source = importDefault(mute ? 10300 : 10301);
+  obj3.source = importDefault(mute ? 10303 : 10304);
   if (!flag) {
     flag = mute;
   }
@@ -133,8 +44,8 @@ export const ChannelCallMicButton = ReactCompilerGating.isReactCompilerEnabled()
   obj3.lottieComponent = memo;
   let RED_400;
   if (mute) {
-    RED_400 = tmp(580).unsafe_rawColors.RED_400;
+    RED_400 = tmp(576).unsafe_rawColors.RED_400;
   }
   obj3.tintColor = RED_400;
   return jsx(CallBarActionAll.ToggledActionButton, { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null });
-});
+};

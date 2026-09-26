@@ -1,16 +1,16 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 16365
+// Function ID: 16366
 // Name: HomeDrawerSubtitleStore
-// Dependencies: [562, 2]
+// Dependencies: [560, 2]
 
-// Module 16372 (HomeDrawerSubtitleStore)
-import module_562 from "module_562" /* 562 */;
+// Module 16365 (HomeDrawerSubtitleStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 let c0 = null;
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerSubtitleStore.tsx");
 
-export default module_562.create((arg0, arg1) => {
+export default module_560.create((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   return {

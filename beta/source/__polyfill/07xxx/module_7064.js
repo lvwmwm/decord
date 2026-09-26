@@ -1,104 +1,123 @@
 // Module ID: 7064
 // Function ID: 7065
-// Dependencies: [1641, 6923, 6896]
-// Exports: useGestureHandler
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 7062]
 
 // Module 7064
-import value2 from "value2" /* 6896 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import _modDef7062 from "module_7062" /* 7062 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import metroRequire from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
-require = arg1;
-let dependencyMap = arg6;
-let __initData = { code: "function pnpm_useGestureHandlerTs1(event){const{state,State,gestureSource,source,onStart}=this.__closure;state.value=State.BEGAN;gestureSource.value=source;onStart(source,event);return;}" };
-let __initData2 = { code: "function pnpm_useGestureHandlerTs2(event){const{gestureSource,source,state,onChange}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;onChange(source,event);}" };
-let __initData3 = { code: "function pnpm_useGestureHandlerTs3(event){const{gestureSource,source,state,GESTURE_SOURCE,onEnd}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;gestureSource.value=GESTURE_SOURCE.UNDETERMINED;onEnd(source,event);}" };
-let __initData4 = { code: "function pnpm_useGestureHandlerTs4(event){const{gestureSource,source,state,GESTURE_SOURCE,onFinalize}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;gestureSource.value=GESTURE_SOURCE.UNDETERMINED;onFinalize(source,event);}" };
-
-export const useGestureHandler = (source, state, gestureSource, onStart, onChange, onEnd, onFinalize) => {
-  const _require = source;
-  dependencyMap = state;
-  __initData = gestureSource;
-  __initData2 = onStart;
-  __initData3 = onChange;
-  __initData4 = onEnd;
-  const obj = { handleOnStart: null, handleOnChange: null, handleOnEnd: null, handleOnFinalize: null };
-  class R {
-    constructor(arg0) {
-      closure_1.value = closure_0(closure_1[1]).State.BEGAN;
-      closure_2.value = closure_0;
-      tmp = closure_3(closure_0, source);
-      return;
+const TouchableOpacity = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const obj2 = require("cancelAnimation");
-  R.__closure = { state, State: require("LegacyBaseButton").State, gestureSource, source, onStart };
-  R.__workletHash = 16113572067379;
-  R.__initData = __initData;
-  const items = [state, gestureSource, source, onStart];
-  obj.handleOnStart = obj2.useWorkletCallback(R, items);
-  const obj3 = { state, State: require("LegacyBaseButton").State, gestureSource, source, onStart };
-  class U {
-    constructor(arg0) {
-      if (closure_2.value === closure_0) {
-        tmp2 = source;
-        tmp3 = closure_1;
-        closure_1.value = source.state;
-        tmp4 = closure_4;
-        tmp5 = closure_4(tmp, source);
+}
+let closure_3 = ["style"];
+get_ActivityIndicator = fn(17);
+({ Animated: closure_8, Easing: closure_9, StyleSheet: c10, View: closure_11 } = get_ActivityIndicator);
+const jsx = fn(21).jsx;
+class TouchableOpacity {
+  constructor() {
+    self = this;
+    items = [...arguments];
+    closure_0 = undefined;
+    tmp = hasOwnProperty(this, TouchableOpacity);
+    items1 = [...items];
+    tmp2 = closure_7;
+    obj = closure_7(TouchableOpacity);
+    tmp3 = metroRequire;
+    if (closure_13()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.getChildStyleOpacityWithDefault = () => {
+      const tmp = closure_2_10.flatten(closure_0.props.style) || {};
+      let num = 1;
+      if (null != tmp.opacity) {
+        const opacity = tmp.opacity;
+        num = opacity.valueOf();
       }
-      return;
-    }
-  }
-  U.__closure = { gestureSource, source, state, onChange };
-  U.__workletHash = 9050442757159;
-  U.__initData = __initData2;
-  const items1 = [state, gestureSource, source, onChange];
-  obj.handleOnChange = require("cancelAnimation").useWorkletCallback(U, items1);
-  const obj4 = require("cancelAnimation");
-  class C {
-    constructor(arg0) {
-      if (closure_2.value === closure_0) {
-        tmp3 = source;
-        tmp4 = closure_1;
-        closure_1.value = source.state;
-        tmp5 = closure_0;
-        tmp6 = closure_1;
-        tmp.value = closure_0(closure_1[2]).GESTURE_SOURCE.UNDETERMINED;
-        tmp7 = closure_5;
-        tmp8 = closure_5(tmp2, source);
+      return num;
+    };
+    value = new closure_8.Value(tmp3Result.getChildStyleOpacityWithDefault());
+    tmp3Result.opacity = value;
+    tmp3Result.setOpacityTo = (toValue, duration) => {
+      const obj = { toValue, duration, easing: React7.inOut(React7.quad), useNativeDriver: null };
+      let flag = closure_0.props.useNativeAnimations;
+      if (flag == null) {
+        flag = true;
       }
-      return;
-    }
-  }
-  const obj5 = require("cancelAnimation");
-  C.__closure = { gestureSource, source, state, GESTURE_SOURCE: require("value2").GESTURE_SOURCE, onEnd };
-  C.__workletHash = 10682034812271;
-  C.__initData = __initData3;
-  const items2 = [state, gestureSource, source, onEnd];
-  obj.handleOnEnd = obj5.useWorkletCallback(C, items2);
-  const obj6 = { gestureSource, source, state, GESTURE_SOURCE: require("value2").GESTURE_SOURCE, onEnd };
-  class T {
-    constructor(arg0) {
-      if (closure_2.value === closure_0) {
-        tmp3 = source;
-        tmp4 = closure_1;
-        closure_1.value = source.state;
-        tmp5 = closure_0;
-        tmp6 = closure_1;
-        tmp.value = closure_0(closure_1[2]).GESTURE_SOURCE.UNDETERMINED;
-        tmp7 = closure_6;
-        tmp8 = closure_6(tmp2, source);
+      obj.useNativeDriver = flag;
+      React6.timing(closure_0.opacity, obj).start();
+    };
+    tmp3Result.onStateChange = (arg0, arg1) => {
+      if (arg1 === TouchableOpacity(7062).TOUCHABLE_STATE.BEGAN) {
+        closure_0.setOpacityTo(closure_0.props.activeOpacity, 0);
+      } else {
+        if (!tmp3) {
+          closure_0.setOpacityTo(closure_0.getChildStyleOpacityWithDefault(), 150);
+        }
+        tmp3 = arg1 !== tmp(7062).TOUCHABLE_STATE.UNDETERMINED && arg1 !== tmp(7062).TOUCHABLE_STATE.MOVED_OUTSIDE;
       }
-      return;
-    }
+    };
+    return tmp3Result;
   }
-  const obj7 = require("cancelAnimation");
-  T.__closure = { gestureSource, source, state, GESTURE_SOURCE: require("value2").GESTURE_SOURCE, onFinalize };
-  T.__workletHash = 9696716573416;
-  T.__initData = __initData4;
-  const items3 = [state, gestureSource, source, onFinalize];
-  obj.handleOnFinalize = obj7.useWorkletCallback(T, items3);
-  return obj;
+}
+_inherits(TouchableOpacity, fn(19).Component);
+const entry = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const props = this.props;
+    let style = props.style;
+    if (undefined === style) {
+      style = {};
+    }
+    const obj = {};
+    const tmp = _objectWithoutProperties(props, closure_3);
+    const merged = Object.assign(tmp);
+    const items = [style, { opacity: self.opacity }];
+    obj.style = items;
+    obj.onStateChange = self.onStateChange;
+    if (self.props.children) {
+      let children = self.props.children;
+    } else {
+      children = tmp2(closure_1_11, {});
+    }
+    obj.children = children;
+    return jsx(_modDef7062, {});
+  }
 };
+let items = [entry];
+const importDefaultResultResult = _createClass(TouchableOpacity, items);
+let obj = {};
+let merged = Object.assign(_modDef7062.defaultProps);
+obj.activeOpacity = 0.2;
+importDefaultResultResult.defaultProps = obj;
+
+export default importDefaultResultResult;

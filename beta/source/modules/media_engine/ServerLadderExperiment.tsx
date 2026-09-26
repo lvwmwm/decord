@@ -1,10 +1,10 @@
-// Module ID: 14121
-// Function ID: 14122
+// Module ID: 14111
+// Function ID: 14112
 // Name: ServerLadderExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 14121 (ServerLadderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 14111 (ServerLadderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-server-ladder", kind: "user", defaultConfig: { bitrate: 9000000, enabled: false }, variations: null };

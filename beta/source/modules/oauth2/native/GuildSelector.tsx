@@ -1,22 +1,22 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9571
+// Function ID: 9572
 // Name: GuildSelector
-// Dependencies: [19, 17, 1078, 21, 4790, 580, 4757, 9568, 1984, 1119, 1090, 4786, 1181, 8908, 2]
+// Dependencies: [19, 17, 1074, 21, 4788, 576, 4755, 9572, 1980, 1115, 1086, 4784, 1177, 8903, 2]
 // Exports: default
 
-// Module 9567 (GuildSelector)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+// Module 9571 (GuildSelector)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Permissions = fn(1078).Permissions;
+const Permissions = fn(1074).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { selectorGroup: { display: "flex", flexDirection: "column", gap: 8 }, select: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: nativeDefault.radii.xs }, label: null, error: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, borderRadius: nativeDefault.radii.xs };
 obj2.label = { color: nativeDefault.colors.TEXT_SUBTLE, fontWeight: "500" };
@@ -45,20 +45,20 @@ export default function GuildSelector(disabled) {
       onGuildChange(dependencyMap[6]).hideActionSheet(GuildSelector);
     };
     obj2.selectedItem = selectedGuildId;
-    obj.openLazy(asyncRequireImpl(9568, dependencyMap.paths), GuildSelector, obj2);
+    obj.openLazy(asyncRequireImpl(9572, dependencyMap.paths), GuildSelector, obj2);
   }, items);
   let found = guilds.find((id) => id.id === selectedGuildId);
   let obj = { style: tmp.selectorGroup, children: null };
   let obj2 = { variant: "eyebrow", color: "text-default", children: null };
-  let intl = selectedGuildId(1119).intl;
-  obj2.children = intl.string(selectedGuildId(1119).t["1DXFFd"]);
-  const items1 = [closure_7(selectedGuildId(4786).Text, obj2), , , ];
+  let intl = selectedGuildId(1115).intl;
+  obj2.children = intl.string(selectedGuildId(1115).t["1DXFFd"]);
+  const items1 = [closure_7(selectedGuildId(4784).Text, obj2), , , ];
   let tmp6Result = null;
   if (null != error) {
     tmp6Result = null;
     if ("" !== error) {
       const obj3 = { style: tmp.error, children: error };
-      tmp6Result = tmp6(tmp7(1181).LegacyText, obj3);
+      tmp6Result = tmp6(tmp7(1177).LegacyText, obj3);
     }
   }
   items1[1] = tmp6Result;
@@ -67,14 +67,14 @@ export default function GuildSelector(disabled) {
     name = found.name;
   }
   if (name == null) {
-    const intl2 = tmp7(1119).intl;
-    name = intl2.string(tmp7(1119).t.oM4E1A);
+    const intl2 = tmp7(1115).intl;
+    name = intl2.string(tmp7(1115).t.oM4E1A);
   }
-  items1[2] = closure_7(selectedGuildId(8908).FormRow, { label: name, disabled: disabled.disabled, trailing: closure_7(selectedGuildId(8908).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
+  items1[2] = closure_7(selectedGuildId(8903).FormRow, { label: name, disabled: disabled.disabled, trailing: closure_7(selectedGuildId(8903).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
   const obj5 = { style: tmp.label, children: null };
-  const intl3 = tmp7(1119).intl;
-  obj5.children = intl3.format(selectedGuildId(1119).t.t9Jm9o, {});
-  items1[3] = closure_7(selectedGuildId(1181).LegacyText, obj5);
+  const intl3 = tmp7(1115).intl;
+  obj5.children = intl3.format(selectedGuildId(1115).t.t9Jm9o, {});
+  items1[3] = closure_7(selectedGuildId(1177).LegacyText, obj5);
   obj.children = items1;
   return closure_8(View, obj);
 };

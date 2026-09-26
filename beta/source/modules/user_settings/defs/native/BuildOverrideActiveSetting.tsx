@@ -1,25 +1,28 @@
-// Module ID: 16062
-// Function ID: 16063
+// Module ID: 16066
+// Function ID: 16067
 // Name: BuildOverrideActiveSetting
-// Dependencies: [11593, 21, 14885, 558, 568, 11954, 504, 15119, 16056, 11630, 15424, 2]
+// Dependencies: [11717, 21, 14889, 504, 12072, 15123, 16060, 11754, 15428, 2]
 
-// Module 16062 (BuildOverrideActiveSetting)
+// Module 16066 (BuildOverrideActiveSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11954 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14885 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15119 */;
-import DevToolsContent from "DevToolsContent" /* 16056 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11593 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12072 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14889 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15123 */;
+import DevToolsContent from "DevToolsContent" /* 16060 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11717 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-let ReactCompilerGating = fn(558);
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+const SettingBuilders = fn(11754);
+const pressable = SettingBuilders.createPressable({
+  useTitle() {
+    return "Build Override Active";
+  },
+  parent: null,
+  IconComponent: fn(15428).RefreshIcon,
+  useDescription: function useBuildOverrideActiveDescription() {
     const items = [BuildOverrideStore];
-    const fn = function l() {
+    const stateFromStores = initialize.useStateFromStores(items, () => {
       const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
       let id;
       if (overrides != null) {
@@ -29,96 +32,29 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       return id;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
-  const items = [BuildOverrideStore];
-  return initialize.useStateFromStores(items, () => {
-    const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
-    let id;
-    if (overrides != null) {
-      const tmp4 = overrides[build_overrides_BuildOverrideUtils.DEVICE_FIELD];
-      if (tmp4 != null) {
-        id = tmp4.id;
-      }
+    });
+    let tmp4;
+    if (null != stateFromStores) {
+      const obj2 = { label: "Build override: ", value: stateFromStores };
+      tmp4 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Build override: ", value: stateFromStores });
     }
-    return id;
-  });
-});
-fn(558);
-ReactCompilerGating = fn(558);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-  return null != closure_4() && staffOrDeveloperSettingPredicate;
-}) : (() => {
-  const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-  return null != closure_4() && staffOrDeveloperSettingPredicate;
-});
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const tmp4 = closure_4();
-  if (cResult[0] !== tmp4) {
-    let tmp7;
-    if (null != tmp4) {
-      const obj2 = { label: "Build override: ", value: tmp4 };
-      tmp7 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Build override: ", value: tmp4 });
-    }
-    cResult[0] = tmp4;
-    cResult[1] = tmp7;
-    let tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (() => {
-  const tmp = closure_4();
-  let tmp2;
-  if (null != tmp) {
-    const obj = { label: "Build override: ", value: tmp };
-    tmp2 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Build override: ", value: tmp });
-  }
-  return tmp2;
-});
-const pressable = SettingBuilders.createPressable({
-  useTitle() {
-    return "Build Override Active";
+    return tmp4;
   },
-  parent: null,
-  IconComponent: fn(15424).RefreshIcon,
-  useDescription: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(2);
-    const tmp4 = closure_4();
-    if (cResult[0] !== tmp4) {
-      let tmp7;
-      if (null != tmp4) {
-        const obj2 = { label: "Build override: ", value: tmp4 };
-        tmp7 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Build override: ", value: tmp4 });
+  usePredicate: function useHasBuildOverrideActive() {
+    const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
+    const items = [BuildOverrideStore];
+    return null != initialize.useStateFromStores(items, () => {
+      const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+      let id;
+      if (overrides != null) {
+        const tmp4 = overrides[build_overrides_BuildOverrideUtils.DEVICE_FIELD];
+        if (tmp4 != null) {
+          id = tmp4.id;
+        }
       }
-      cResult[0] = tmp4;
-      cResult[1] = tmp7;
-      let tmp5 = tmp7;
-    } else {
-      tmp5 = cResult[1];
-    }
-    return tmp5;
-  }) : (() => {
-    const tmp = closure_4();
-    let tmp2;
-    if (null != tmp) {
-      const obj = { label: "Build override: ", value: tmp };
-      tmp2 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Build override: ", value: tmp });
-    }
-    return tmp2;
-  }),
-  usePredicate: tmp2,
+      return id;
+    }) && staffOrDeveloperSettingPredicate;
+  },
   onPress: function handleBuildOverrideActivePress() {
     DevToolsNavigator.navigateToDevTools({ screenKey: "buildOverride" });
   },

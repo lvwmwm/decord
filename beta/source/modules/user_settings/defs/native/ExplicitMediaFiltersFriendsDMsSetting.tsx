@@ -1,65 +1,32 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15105
+// Function ID: 15106
 // Name: ExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [8270, 558, 568, 15102, 7879, 7574, 1119, 15103, 11630, 15105, 2]
+// Dependencies: [8265, 15106, 7874, 7572, 1115, 15107, 11754, 15109, 2]
 
-// Module 15101 (ExplicitMediaFiltersFriendsDMsSetting)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7574 */;
-import SettingsConstants from "SettingsConstants" /* 8270 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15102 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15103 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15105 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
+// Module 15105 (ExplicitMediaFiltersFriendsDMsSetting)
+import util from "util" /* 1115 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7572 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7874 */;
+import SettingsConstants from "SettingsConstants" /* 8265 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15106 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15107 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15109 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
 import size from "module_2" /* 2 */;
 
-const ExplicitMediaRedactionUtils = tmp(7879);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-function getTitle() {
-  const intl = util.intl;
-  return intl.string(util.t["+uI23H"]);
-}
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const explicitContentFriendDm = useExplicitContentSettingsOrDefault.useExplicitContentSettingOrDefault().explicitContentFriendDm;
-  if (cResult[0] !== explicitContentFriendDm) {
-    const tmp5 = ExplicitMediaRedactionUtils.redactionSettingToRenderedString(explicitContentFriendDm)();
-    cResult[0] = explicitContentFriendDm;
-    cResult[1] = tmp5;
-    let tmp4 = tmp5;
-    const tmpResult = ExplicitMediaRedactionUtils;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (() => {
-  const obj = useExplicitContentSettingsOrDefault;
-  return ExplicitMediaRedactionUtils.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentFriendDm)();
-});
 const pressable = SettingBuilders.createPressable({
-  useTitle: getTitle,
+  useTitle: function getTitle() {
+    const intl = util.intl;
+    return intl.string(util.t["+uI23H"]);
+  },
   parent() {
     return MobileUserSettings.SENSITIVE_CONTENT_FILTERS;
   },
-  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(2);
-    const explicitContentFriendDm = useExplicitContentSettingsOrDefault.useExplicitContentSettingOrDefault().explicitContentFriendDm;
-    if (cResult[0] !== explicitContentFriendDm) {
-      const tmp5 = ExplicitMediaRedactionUtils.redactionSettingToRenderedString(explicitContentFriendDm)();
-      cResult[0] = explicitContentFriendDm;
-      cResult[1] = tmp5;
-      let tmp4 = tmp5;
-      const tmpResult = ExplicitMediaRedactionUtils;
-    } else {
-      tmp4 = cResult[1];
-    }
-    return tmp4;
-  }) : (() => {
+  useTrailing: function useObscuredContentFriendsDmSettingValue() {
     const obj = useExplicitContentSettingsOrDefault;
     return ExplicitMediaRedactionUtils.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentFriendDm)();
-  }),
+  },
   onPress: function onObscuredContentFriendsDmOnPress() {
     const intl = util.intl;
     const obj = SensitiveMediaExplicitRedactionSettingsUtils;

@@ -1,311 +1,29 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13276
+// Function ID: 13277
 // Name: MaskedLinkModal
-// Dependencies: [17, 21, 4790, 580, 558, 568, 13283, 1119, 5148, 5148, 4786, 8908, 5218, 2]
+// Dependencies: [17, 21, 4788, 576, 13273, 5146, 1115, 5146, 5216, 8903, 4784, 2]
+// Exports: default
 
-// Module 13286 (MaskedLinkModal)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import AlertModal from "AlertModal" /* 5148 */;
-import Stack_Stack from "Stack/Stack" /* 5218 */;
-import Form from "Form" /* 8908 */;
-import SharedStateUtils from "SharedStateUtils" /* 13283 */;
+// Module 13276 (MaskedLinkModal)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import AlertModal from "AlertModal" /* 5146 */;
+import Stack_Stack from "Stack/Stack" /* 5216 */;
+import Form from "Form" /* 8903 */;
+import SharedStateUtils from "SharedStateUtils" /* 13273 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4790 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 ({ View: c2, ScrollView: c3 } = get_ActivityIndicator);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 const obj = { linkCalloutContainer: { maxHeight: 250 }, emphasis: { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_6 = createStyles.createStyles(obj);
-let obj2 = { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 const result = size.fileFinishedImporting("modules/masked_link/components/native/MaskedLinkModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(60);
-  ({ url, trustUrl, isProtocol, onConfirm, onCancel } = arg0);
-  const tmp4 = closure_6();
-  if (cResult[0] === onCancel) {
-    if (cResult[1] === onConfirm) {
-      if (cResult[2] === trustUrl) {
-        if (cResult[3] === url) {
-          let tmp5 = cResult[4];
-        }
-        const modalState = tmp(13283).useModalState(tmp5);
-        ({ protocol, authorityPrefix, hostname, theRestOfTheUrl, shouldTrustUrl } = modalState);
-        const setShouldTrustUrl = modalState.setShouldTrustUrl;
-        ({ handleConfirm, handleCancel } = modalState);
-        const _Symbol = Symbol;
-        if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1119).intl;
-          const stringResult = intl.string(tmp(1119).t["3w1QGl"]);
-          cResult[5] = stringResult;
-          let tmp8 = stringResult;
-        } else {
-          tmp8 = cResult[5];
-        }
-        if (cResult[6] !== isProtocol) {
-          const intl2 = tmp(1119).intl;
-          if (isProtocol) {
-            let formatResult = intl2.format(tmp(1119).t.aCYv1z, {});
-          } else {
-            formatResult = intl2.string(tmp(1119).t.soRxRe);
-          }
-          cResult[6] = isProtocol;
-          cResult[7] = formatResult;
-        } else if (cResult[8] !== isProtocol) {
-          const intl3 = tmp(1119).intl;
-          const string = intl3.string;
-          let COq6kk = tmp(1119).t;
-          if (isProtocol) {
-            COq6kk = COq6kk.COq6kk;
-            let stringResult1 = string(COq6kk);
-          } else {
-            stringResult1 = string(COq6kk.NcJfJG);
-          }
-          cResult[8] = isProtocol;
-          cResult[9] = stringResult1;
-        } else {
-          if (cResult[10] === handleConfirm) {
-            if (cResult[11] === tmp13) {
-              let tmp16 = cResult[12];
-            }
-            const _Symbol2 = Symbol;
-            if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl4 = tmp(1119).intl;
-              const stringResult2 = intl4.string(tmp(1119).t["/g10LC"]);
-              cResult[13] = stringResult2;
-              let tmp19 = stringResult2;
-            } else {
-              tmp19 = cResult[13];
-            }
-            if (cResult[14] !== handleCancel) {
-              const obj2 = { onPress: handleCancel, variant: "secondary", text: tmp19 };
-              const tmp23 = React4(tmp(5148).AlertActionButton, obj2, "cancel");
-              cResult[14] = handleCancel;
-              cResult[15] = tmp23;
-              let tmp21 = tmp23;
-            } else {
-              tmp21 = cResult[15];
-            }
-            if (cResult[16] === tmp16) {
-              if (cResult[17] === tmp21) {
-                let tmp24 = cResult[18];
-              }
-              let str5 = "text-md/normal";
-              if (isProtocol) {
-                str5 = "text-md/semibold";
-              }
-              let str7 = "text-muted";
-              if (isProtocol) {
-                str7 = "text-default";
-              }
-              if (cResult[19] === authorityPrefix) {
-                if (cResult[20] === protocol) {
-                  if (cResult[21] === str7) {
-                    if (cResult[22] === str5) {
-                      let tmp27 = cResult[23];
-                    }
-                    let str8 = "text-md/semibold";
-                    if (isProtocol) {
-                      str8 = "text-md/normal";
-                    }
-                    let str9 = "text-default";
-                    if (isProtocol) {
-                      str9 = "text-muted";
-                    }
-                    if (cResult[24] === hostname) {
-                      if (cResult[25] === str8) {
-                        if (cResult[26] === str9) {
-                          let tmp30 = cResult[27];
-                        }
-                        if (cResult[28] !== theRestOfTheUrl) {
-                          const obj3 = { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl };
-                          const tmp35 = React4(tmp(4786).Text, obj3);
-                          cResult[28] = theRestOfTheUrl;
-                          cResult[29] = tmp35;
-                          let tmp33 = tmp35;
-                        } else {
-                          tmp33 = cResult[29];
-                        }
-                        if (cResult[30] === tmp27) {
-                          if (cResult[31] === tmp30) {
-                            if (cResult[32] === tmp33) {
-                              let tmp36 = cResult[33];
-                            }
-                            if (cResult[34] === tmp4.linkCalloutContainer) {
-                              if (cResult[35] === tmp36) {
-                                let tmp39 = cResult[36];
-                              }
-                              if (cResult[37] === tmp4.emphasis) {
-                                if (cResult[38] === tmp39) {
-                                  let tmp43 = cResult[39];
-                                }
-                                if (cResult[40] === setShouldTrustUrl) {
-                                  if (cResult[41] === shouldTrustUrl) {
-                                    let tmp47 = cResult[42];
-                                  }
-                                  if (cResult[43] === hostname) {
-                                    if (cResult[44] === isProtocol) {
-                                      if (cResult[45] === protocol) {
-                                        if (cResult[47] !== cResult[46]) {
-                                          const obj4 = { variant: "text-md/medium", children: tmp48 };
-                                          const tmp53 = React4(tmp(4786).Text, obj4);
-                                          cResult[47] = tmp48;
-                                          cResult[48] = tmp53;
-                                          let tmp51 = tmp53;
-                                        } else {
-                                          tmp51 = cResult[48];
-                                        }
-                                        if (cResult[49] === shouldTrustUrl) {
-                                          if (cResult[50] === tmp47) {
-                                            if (cResult[51] === tmp51) {
-                                              let tmp54 = cResult[52];
-                                            }
-                                            if (cResult[53] === tmp43) {
-                                              if (cResult[54] === tmp54) {
-                                                let tmp57 = cResult[55];
-                                              }
-                                              if (cResult[56] === tmp57) {
-                                                if (cResult[57] === tmp10) {
-                                                  if (cResult[58] === tmp24) {
-                                                    let tmp60 = cResult[59];
-                                                  }
-                                                  return tmp60;
-                                                }
-                                              }
-                                              const obj5 = { title: tmp8, content: tmp10, actions: tmp24, extraContent: tmp57 };
-                                              const tmp62 = React4(tmp(5148).AlertModal, obj5);
-                                              cResult[56] = tmp57;
-                                              cResult[57] = tmp10;
-                                              cResult[58] = tmp24;
-                                              cResult[59] = tmp62;
-                                              tmp60 = tmp62;
-                                            }
-                                            const obj6 = { spacing: 16, children: null };
-                                            const items = [tmp43, tmp54];
-                                            obj6.children = items;
-                                            const tmp59 = hasOwnProperty(tmp(5218).Stack, obj6);
-                                            cResult[53] = tmp43;
-                                            cResult[54] = tmp54;
-                                            cResult[55] = tmp59;
-                                            tmp57 = tmp59;
-                                          }
-                                        }
-                                        const obj7 = { start: true, end: true, selected: shouldTrustUrl, onPress: tmp47, label: tmp51 };
-                                        const tmp56 = React4(tmp(8908).FormCheckboxRow, obj7);
-                                        cResult[49] = shouldTrustUrl;
-                                        cResult[50] = tmp47;
-                                        cResult[51] = tmp51;
-                                        cResult[52] = tmp56;
-                                        tmp54 = tmp56;
-                                      }
-                                    }
-                                  }
-                                  const intl5 = tmp(1119).intl;
-                                  const format = intl5.format;
-                                  let t = tmp(1119).t;
-                                  if (isProtocol) {
-                                    t = { protocol: protocol.replace(":", "") };
-                                    let formatResult1 = format(t["haA+Xw"], t);
-                                  } else {
-                                    const obj8 = { domain: hostname };
-                                    formatResult1 = format(t.ZgXDsI, obj8);
-                                  }
-                                  cResult[43] = hostname;
-                                  cResult[44] = isProtocol;
-                                  cResult[45] = protocol;
-                                  cResult[46] = formatResult1;
-                                }
-                                const fn = function z() {
-                                  return setShouldTrustUrl(!shouldTrustUrl);
-                                };
-                                cResult[40] = setShouldTrustUrl;
-                                cResult[41] = shouldTrustUrl;
-                                cResult[42] = fn;
-                                tmp47 = fn;
-                              }
-                              const obj9 = { style: tmp4.emphasis, children: tmp39 };
-                              const tmp46 = React4(React2, obj9);
-                              cResult[37] = tmp4.emphasis;
-                              cResult[38] = tmp39;
-                              cResult[39] = tmp46;
-                              tmp43 = tmp46;
-                            }
-                            const obj10 = { start: true, end: true, label: null };
-                            const obj11 = { style: tmp4.linkCalloutContainer, children: tmp36 };
-                            obj10.label = React4(React3, obj11);
-                            const tmp42 = React4(tmp(8908).FormRow, obj10);
-                            cResult[34] = tmp4.linkCalloutContainer;
-                            cResult[35] = tmp36;
-                            cResult[36] = tmp42;
-                            tmp39 = tmp42;
-                          }
-                        }
-                        const obj12 = { variant: "text-md/normal", children: null };
-                        const items1 = [tmp27, tmp30, tmp33];
-                        obj12.children = items1;
-                        const tmp38 = hasOwnProperty(tmp(4786).Text, obj12);
-                        cResult[30] = tmp27;
-                        cResult[31] = tmp30;
-                        cResult[32] = tmp33;
-                        cResult[33] = tmp38;
-                        tmp36 = tmp38;
-                      }
-                    }
-                    const obj13 = { variant: str8, color: str9, children: hostname };
-                    const tmp32 = React4(tmp(4786).Text, obj13);
-                    cResult[24] = hostname;
-                    cResult[25] = str8;
-                    cResult[26] = str9;
-                    cResult[27] = tmp32;
-                    tmp30 = tmp32;
-                  }
-                }
-              }
-              const obj14 = { variant: str5, color: str7, children: null };
-              const items2 = [protocol, authorityPrefix];
-              obj14.children = items2;
-              const tmp29 = hasOwnProperty(tmp(4786).Text, obj14);
-              cResult[19] = authorityPrefix;
-              cResult[20] = protocol;
-              cResult[21] = str7;
-              cResult[22] = str5;
-              cResult[23] = tmp29;
-              tmp27 = tmp29;
-            }
-            const obj15 = { children: null };
-            const items3 = [tmp16, tmp21];
-            obj15.children = items3;
-            const tmp26 = hasOwnProperty(tmp(5148).AlertActions, obj15);
-            cResult[16] = tmp16;
-            cResult[17] = tmp21;
-            cResult[18] = tmp26;
-            tmp24 = tmp26;
-          }
-          const obj16 = { variant: "primary", onPress: handleConfirm, text: cResult[9] };
-          const tmp18 = React4(tmp(5148).AlertActionButton, obj16, "confirm");
-          cResult[10] = handleConfirm;
-          cResult[11] = cResult[9];
-          cResult[12] = tmp18;
-          tmp16 = tmp18;
-        }
-        const tmpResult = tmp(13283);
-      }
-    }
-  }
-  const obj17 = { url, trustUrl, onConfirm, onCancel };
-  cResult[0] = onCancel;
-  cResult[1] = onConfirm;
-  cResult[2] = trustUrl;
-  cResult[3] = url;
-  cResult[4] = obj17;
-  tmp5 = obj17;
-}) : ((isProtocol) => {
+export default function MaskedLinkModal(isProtocol) {
   isProtocol = isProtocol.isProtocol;
   shouldTrustUrl = undefined;
   ({ url, trustUrl, onConfirm, onCancel } = isProtocol);
@@ -319,15 +37,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2.title = intl.string(util.t["3w1QGl"]);
   const intl2 = util.intl;
   if (isProtocol) {
-    let formatResult = intl2.format(tmp2(1119).t.aCYv1z, {});
+    let formatResult = intl2.format(tmp2(1115).t.aCYv1z, {});
   } else {
-    formatResult = intl2.string(tmp2(1119).t.soRxRe);
+    formatResult = intl2.string(tmp2(1115).t.soRxRe);
   }
   obj2.content = formatResult;
   const obj3 = { variant: "primary", onPress: handleConfirm, text: null };
-  const intl3 = tmp2(1119).intl;
+  const intl3 = tmp2(1115).intl;
   const string = intl3.string;
-  const t = tmp2(1119).t;
+  const t = tmp2(1115).t;
   if (isProtocol) {
     let stringResult = string(t.COq6kk);
   } else {
@@ -337,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj3.text = stringResult;
   const items = [React4(AlertModal.AlertActionButton, obj3, "confirm"), ];
   const obj5 = { onPress: handleCancel, variant: "secondary", text: null };
-  const intl4 = tmp2(1119).intl;
+  const intl4 = tmp2(1115).intl;
   obj5.text = intl4.string(util.t["/g10LC"]);
   items[1] = React4(AlertModal.AlertActionButton, obj5, "cancel");
   obj4.children = items;
@@ -386,9 +104,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     },
     label: null
   };
-  const intl5 = tmp2(1119).intl;
+  const intl5 = tmp2(1115).intl;
   const format = intl5.format;
-  const t2 = tmp2(1119).t;
+  const t2 = tmp2(1115).t;
   if (isProtocol) {
     const obj13 = { protocol: protocol.replace(":", "") };
     let formatResult1 = format(t2["haA+Xw"], obj13);
@@ -402,4 +120,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj15.children = items3;
   obj2.extraContent = hasOwnProperty(Stack_Stack.Stack, obj15);
   return React4(AlertModal.AlertModal, obj2);
-});
+};

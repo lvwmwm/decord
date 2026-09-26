@@ -6,29 +6,29 @@
 import _mod7138 from "module_7138" /* 7138 */;
 
 
-export default function toPrimitive(arg0, arg1) {
-  if ("object" == obj.default(arg0)) {
-    if (arg0) {
-      let str = arg1;
-      const _Symbol = Symbol;
-      if (undefined !== arg0[Symbol.toPrimitive]) {
-        const call = tmp4.call;
-        if (!str) {
-          str = "default";
+export default function _objectWithoutProperties(arg0, arr) {
+  if (null == arg0) {
+    return {};
+  } else {
+    const tmp8 = _mod7138(arg0, arr);
+    const _Object2 = Object;
+    if (Object.getOwnPropertySymbols) {
+      const _Object = Object;
+      const ownPropertySymbols = Object.getOwnPropertySymbols(arg0);
+      let num = 0;
+      if (0 < ownPropertySymbols.length) {
+        const tmp2 = -1 === arr.indexOf(ownPropertySymbols[num]);
+        while (!tmp2) {
+          if (tmp2) {
+            tmp8[tmp] = arg0[tmp];
+          }
+          num = num + 1;
         }
-        const tmp5 = typeof call === "unknown" ? tmp4(str) : call(arg0, str);
-        if ("object" != tmpResult.default(tmp5)) {
-          return tmp5;
-        } else {
-          const _TypeError = TypeError;
-          const typeError = new TypeError("@@toPrimitive must return a primitive value.");
-          throw typeError;
-        }
-        tmpResult = _mod7138;
-      } else {
-        return "string" === str ? String : Number(arg0);
+        const propertyIsEnumerable = {}.propertyIsEnumerable;
+        const call = propertyIsEnumerable.call;
+        typeof call === "unknown" ? propertyIsEnumerable(ownPropertySymbols[num]) : call(arg0, ownPropertySymbols[num]);
       }
     }
+    return tmp8;
   }
-  return arg0;
 };

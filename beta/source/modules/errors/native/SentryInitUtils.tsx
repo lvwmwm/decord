@@ -1,17 +1,17 @@
-// Module ID: 1236
-// Function ID: 1237
+// Module ID: 1232
+// Function ID: 1233
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1078, 1089, 679, 3, 1237, 1105, 1245, 14392, 5118, 5123, 1361, 1235, 1367, 5119, 1368, 4769, 1613, 1362, 1348, 558, 2]
+// Dependencies: [5, 17, 1074, 1085, 675, 3, 1233, 1101, 1241, 14382, 5116, 5121, 1357, 1231, 1363, 5117, 1364, 4767, 1609, 1358, 1344, 2]
 // Exports: initSentry
 
-// Module 1236 (SentryInitUtils)
+// Module 1232 (SentryInitUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import router_utils from "router_utils" /* 1105 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1237 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1367 */;
-import MetricEvents from "MetricEvents" /* 5123 */;
+import router_utils from "router_utils" /* 1101 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1233 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
+import MetricEvents from "MetricEvents" /* 5121 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let closure_15 = async function _maybeBackfillMissingBreadcrumbsFromTelemetryRin
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -539,10 +539,10 @@ function trackCrash(event, hint, arg2) {
     tmp39 = 0 !== event_id2.length;
   }
   if (tmp39) {
-    tmp25(1235).markCrashHandled(event_id2);
-    const tmp25Result = tmp25(1235);
+    tmp25(1231).markCrashHandled(event_id2);
+    const tmp25Result = tmp25(1231);
   }
-  const AppCrashedReasons = tmp11(14392).AppCrashedReasons;
+  const AppCrashedReasons = tmp11(14382).AppCrashedReasons;
   const tmp41 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
   const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: null };
   items = ["reason:" + tmp41, ];
@@ -551,13 +551,13 @@ function trackCrash(event, hint, arg2) {
   }
   items[1] = "level:" + level;
   obj6.tags = items;
-  tmp26(5118).increment(obj6, true);
+  tmp26(5116).increment(obj6, true);
 }
 const NativeModules = fn(17).NativeModules;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints } = Constants);
-const PRIMARY_DOMAIN = fn(1089).PRIMARY_DOMAIN;
-let registerSpanErrorInstrumentation = fn(679);
+const PRIMARY_DOMAIN = fn(1085).PRIMARY_DOMAIN;
+let registerSpanErrorInstrumentation = fn(675);
 registerSpanErrorInstrumentation = registerSpanErrorInstrumentation.reactNavigationIntegration();
 const regExp = new RegExp("/v" + window.GLOBAL_ENV.API_VERSION + Endpoints.METRICS, "g");
 let items = [regExp, , ];
@@ -570,7 +570,7 @@ let closure_11 = ["The operation couldn\u2019t be completed. (com.apple.CallKit.
 let c12 = 0.05;
 let c13 = 0.005;
 let c14 = false;
-const CommonSentryInitUtils = fn(1361);
+const CommonSentryInitUtils = fn(1357);
 let closure_20 = CommonSentryInitUtils.filterThrottle({ maxBudgetMinute: 1, maxBudgetHour: 15 });
 const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/errors/native/SentryInitUtils.tsx");
@@ -588,22 +588,22 @@ export const initSentry = function initSentry() {
           const isStable = require("ReleaseChannelUtils").isStable;
           const obj2 = { releaseChannel: ReleaseChannel, isProductionChannel: isStable };
           logger.verbose("Initialize", obj2);
-          if (obj18.isAndroid()) {
+          if (obj15.isAndroid()) {
             if (isStable) {
-              const device = tmp15(tmp[17]).getDevice();
-              const tmp15Result = tmp15(tmp[17]);
+              const device = tmp14(tmp[17]).getDevice();
+              const tmp14Result = tmp14(tmp[17]);
             }
           }
           c12 = 0.05;
           const SentryDsn = constants.SentryDsn;
           if (isStable) {
             let SentryStaffDsn = SentryDsn;
-            if (tmp15Result12.isMetaQuest()) {
+            if (tmp14Result9.isMetaQuest()) {
               c12 = 1;
               c13 = 1;
               SentryStaffDsn = SentryDsn;
             }
-            tmp15Result12 = tmp15(tmp[18]);
+            tmp14Result9 = tmp14(tmp[18]);
           } else {
             c12 = 1;
             SentryStaffDsn = constants.SentryAlphaBetaDsn;
@@ -612,7 +612,7 @@ export const initSentry = function initSentry() {
             SentryStaffDsn = constants.SentryStaffDsn;
             c12 = 1;
           }
-          obj18 = require("PlatformUtils");
+          obj15 = require("PlatformUtils");
           const lastCrashReport = require("SentryUtils").getLastCrashReport();
           const obj4 = require("SentryUtils");
           lastCrashReport.then((result) => {
@@ -627,25 +627,25 @@ export const initSentry = function initSentry() {
               closure_1_19(result, { crash_event_source: "startup_reconcile" });
             }
           });
-          const tmp15Result13 = require("module_679");
+          const tmp14Result10 = require("module_675");
           let str2 = "ios";
-          if (tmp15Result14.isAndroid()) {
+          if (tmp14Result11.isAndroid()) {
             str2 = "android";
           }
-          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6505", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@347.10.0-1+347110", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
+          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6513", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@347.11.0-1+347111", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
           items = [PRIMARY_DOMAIN];
           obj3.tracePropagationTargets = items;
           const items1 = [registerSpanErrorInstrumentation, , ];
-          tmp15Result14 = require("PlatformUtils");
-          items1[1] = require("module_679").featureFlagsIntegration();
-          const tmp15Result15 = require("module_679");
+          tmp14Result11 = require("PlatformUtils");
+          items1[1] = require("module_675").featureFlagsIntegration();
+          const tmp14Result12 = require("module_675");
           const obj5 = {
             shouldCreateSpanForRequest(arg0) {
                   closure_0 = arg0;
                   return !closure_1_9.some((item) => null != closure_0.match(item));
                 }
           };
-          items1[2] = require("module_679").reactNativeTracingIntegration(obj5);
+          items1[2] = require("module_675").reactNativeTracingIntegration(obj5);
           obj3.integrations = items1;
           obj3.beforeBreadcrumb = function beforeBreadcrumb(data) {
             if (null == data.data) {
@@ -662,25 +662,15 @@ export const initSentry = function initSentry() {
             }
             return data;
           };
-          tmp15Result13.init(obj3);
-          const tmp15Result16 = require("module_679");
-          require("module_679").setTag("buildNumber", "6505");
-          const tmp15Result17 = require("module_679");
-          require("module_679").setTag("appVersion", constants.Version);
-          const tmp15Result18 = require("module_679");
+          tmp14Result10.init(obj3);
+          const tmp14Result13 = require("module_675");
+          require("module_675").setTag("buildNumber", "6513");
+          const tmp14Result14 = require("module_675");
+          require("module_675").setTag("appVersion", constants.Version);
+          const tmp14Result15 = require("module_675");
           const _HermesInternal = HermesInternal;
-          require("module_679").setTag("design_id", "" + require("DesignIds").DesignIds.DESIGN_TABS_IA);
-          const tmp15Result19 = require("module_679");
-          if (tmp15Result20.isReactCompilerBuild()) {
-            const tmp15Result21 = tmp15(tmp[4]);
-            let str9 = "unoptimized";
-            if (tmp15Result22.isReactCompilerEnabled()) {
-              str9 = "optimized";
-            }
-            tmp15Result21.setTag("react_compiler", str9);
-            tmp15Result22 = tmp15(tmp[21]);
-          }
-          tmp15Result20 = require("ReactCompilerGating");
+          require("module_675").setTag("design_id", "" + require("DesignIds").DesignIds.DESIGN_TABS_IA);
+          const tmp14Result16 = require("module_675");
         }
       }
     });

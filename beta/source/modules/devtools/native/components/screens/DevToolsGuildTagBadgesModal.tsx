@@ -1,77 +1,24 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16020
+// Function ID: 16021
 // Name: DevToolsGuildTagBadgesModal
-// Dependencies: [109, 19, 21, 8194, 558, 568, 7278, 8144, 11266, 16017, 2]
+// Dependencies: [19, 21, 8189, 7277, 8139, 11218, 16021, 2]
 
-// Module 16016 (DevToolsGuildTagBadgesModal)
-import HeaderShared from "HeaderShared" /* 8144 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11266 */;
-import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 16017 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 16020 (DevToolsGuildTagBadgesModal)
+import HeaderShared from "HeaderShared" /* 8139 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11218 */;
+import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 16021 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_3 = ["children"];
 const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(8194);
-let closure_6 = NativeStackNavigator.createNativeStackNavigator();
-const ReactCompilerGating = fn(558);
+const NativeStackNavigator = fn(8189);
+let closure_4 = NativeStackNavigator.createNativeStackNavigator();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = accessibilityNativeStackOptions(568).c(5);
-  let obj = accessibilityNativeStackOptions(568);
-  accessibilityNativeStackOptions = accessibilityNativeStackOptions(7278).useAccessibilityNativeStackOptions();
-  if (cResult[0] !== accessibilityNativeStackOptions) {
-    const fn = function o(navigation) {
-      const obj = {
-        headerTitle(children) {
-          const merged = Object.assign(closure_1_4(children, closure_1_3));
-          return closure_1_5(accessibilityNativeStackOptions(closure_1_2[7]).GenericHeaderTitle, { title: children.children });
-        },
-        headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
-        headerTitleAlign: "center"
-      };
-      let merged = Object.assign(accessibilityNativeStackOptions);
-      const merged1 = Object.assign(getNavigationModalPresentationDefault());
-      return obj;
-    };
-    cResult[0] = accessibilityNativeStackOptions;
-    cResult[1] = fn;
-    let tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = {
-      name: "DevToolsGuildTagBadges",
-      options() {
-          return { title: "Guild Tag Badges" };
-        },
-      component: DevToolsGuildTagBadgesScreenDefault
-    };
-    const tmp9 = <closure_6.Screen name="DevToolsGuildTagBadges" options={function options() {
-      return { title: "Guild Tag Badges" };
-    }} component={DevToolsGuildTagBadgesScreenDefault} />;
-    cResult[2] = tmp9;
-    let tmp5 = tmp9;
-  } else {
-    tmp5 = cResult[2];
-  }
-  if (cResult[3] !== tmp4) {
-    const obj4 = { screenOptions: tmp4, children: tmp5 };
-    const tmp13 = <closure_6.Navigator screenOptions={tmp4}>{tmp5}</closure_6.Navigator>;
-    cResult[3] = tmp4;
-    cResult[4] = tmp13;
-    let tmp10 = tmp13;
-  } else {
-    tmp10 = cResult[4];
-  }
-  return tmp10;
-}) : (() => {
+export default noop.memo(function DevToolsGuildTagBadgesModal() {
   _require = require("Navigator").useAccessibilityNativeStackOptions();
   const obj2 = {
     screenOptions(navigation) {
@@ -79,7 +26,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         headerTitle(children) {
           const merged = Object.assign(children, Object.assign({ children: 0 }));
           const merged1 = Object.assign(merged);
-          return closure_1_5(closure_1_0(closure_1_2[7]).GenericHeaderTitle, { title: children.children });
+          return closure_1_3(closure_1_0(closure_1_2[4]).GenericHeaderTitle, { title: children.children });
         },
         headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
         headerTitleAlign: "center"
@@ -91,7 +38,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     children: null
   };
   let obj = require("Navigator");
-  ({ Navigator, Screen } = closure_6);
+  ({ Navigator, Screen } = closure_4);
   obj2.children = <Screen name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
   }} component={DevToolsGuildTagBadgesScreenDefault} />;
@@ -100,7 +47,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       headerTitle(children) {
         const merged = Object.assign(children, Object.assign({ children: 0 }));
         const merged1 = Object.assign(merged);
-        return closure_1_5(closure_1_0(closure_1_2[7]).GenericHeaderTitle, { title: children.children });
+        return closure_1_3(closure_1_0(closure_1_2[4]).GenericHeaderTitle, { title: children.children });
       },
       headerLeft: HeaderShared.getRenderModalCloseImage(navigation.navigation),
       headerTitleAlign: "center"
@@ -109,4 +56,4 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let merged1 = Object.assign(getNavigationModalPresentationDefault());
     return obj;
   }}>{null}</Navigator>;
-}));
+});

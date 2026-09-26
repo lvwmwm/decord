@@ -1,97 +1,30 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14886
+// Function ID: 14887
 // Name: ThemedStatusBar
-// Dependencies: [19, 1186, 502, 21, 558, 568, 504, 4648, 4642, 10220, 9678, 2]
+// Dependencies: [19, 1182, 502, 21, 504, 4645, 4639, 9799, 9682, 2]
+// Exports: default
 
-// Module 14882 (ThemedStatusBar)
+// Module 14886 (ThemedStatusBar)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
-import StatusBarDefault from "StatusBar" /* 9678 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10220 */;
+import shared from "shared" /* 4639 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
+import StatusBarDefault from "StatusBar" /* 9682 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 9799 */;
 import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1186 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-
-const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/status_bar/native/components/ThemedStatusBar.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AuthenticationStore];
-    const fn = function c() {
-      return authenticated.isAuthenticated();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-  const tmpResult = initialize;
-  const isModalOpen = NavigationRouteUtils.useIsModalOpen();
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ThemeStore];
-    class S {
-      constructor() {
-        obj = closure_1_0(closure_1_2[8]);
-        return obj.isThemeDark(closure_1_3.theme);
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = S;
-    let tmp10 = S;
-    let tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult4 = NavigationRouteUtils;
-  const stateFromStores1 = initialize.useStateFromStores(tmp9, tmp10);
-  const tmpResult5 = initialize;
-  const globalStatusIndicatorState = useGlobalStatusIndicatorState.useGlobalStatusIndicatorState();
-  if (!stateFromStores) {
-    if (cResult[4] !== "light-content") {
-      class S {
-        constructor() {
-          obj = closure_1_0(closure_1_2[8]);
-          return obj.isThemeDark(closure_1_3.theme);
-        }
-      }
-      const tmp18 = jsx(StatusBarDefault, { barStyle: null });
-      cResult[4] = "light-content";
-      cResult[5] = tmp18;
-      let tmp15 = tmp18;
-      const obj2 = { barStyle: null };
-    } else {
-      tmp15 = cResult[5];
-    }
-    return tmp15;
-  } else if (isModalOpen) {
-    let str2 = "dark-content";
-    if (stateFromStores1) {
-      str2 = "light-content";
-    }
-  } else {
-    if (!globalStatusIndicatorState.isVisible) {
-      let str = "dark-content";
-    }
-    str = "light-content";
-  }
-}) : (() => {
+export default function ThemedStatusBar() {
   const items = [AuthenticationStore];
   const stateFromStores = initialize.useStateFromStores(items, () => authenticated.isAuthenticated());
   const isModalOpen = NavigationRouteUtils.useIsModalOpen();
   const items1 = [ThemeStore];
-  const stateFromStores1 = initialize.useStateFromStores(items1, () => require("shared").isThemeDark(theme.theme));
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => shared.isThemeDark(theme.theme));
   const globalStatusIndicatorState = useGlobalStatusIndicatorState.useGlobalStatusIndicatorState();
   if (!stateFromStores) {
     const obj5 = { barStyle: "light-content" };
@@ -107,4 +40,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     str = "light-content";
   }
-});
+};

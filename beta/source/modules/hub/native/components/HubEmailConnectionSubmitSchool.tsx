@@ -1,19 +1,19 @@
-// Module ID: 12921
-// Function ID: 12922
+// Module ID: 13018
+// Function ID: 13019
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12902, 1078, 21, 4790, 580, 1488, 7256, 12917, 4691, 12912, 1181, 1119, 4786, 6877, 5220, 2]
+// Dependencies: [5, 32, 19, 17, 13001, 1074, 21, 4788, 576, 1484, 7258, 13014, 4688, 13009, 1177, 1115, 4784, 6879, 5218, 2]
 // Exports: default
 
-// Module 12921 (HubEmailConnectionSubmitSchool)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import useNavigation from "useNavigation" /* 1488 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6877 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12912 */;
+// Module 13018 (HubEmailConnectionSubmitSchool)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useNavigation from "useNavigation" /* 1484 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6879 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7258 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13009 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -21,12 +21,12 @@ import noop from "module_19" /* 19 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12902).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(13001).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { container: { paddingHorizontal: 16 }, title: { fontFamily: fn(1078).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 24 }, scrollViewContainer: { flexGrow: 2 }, input: { marginBottom: 8 }, redesignTextInput: null, redesignGrowSpacing: null, redesignSubmit: null };
-let obj3 = { fontFamily: fn(1078).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
+const createStyles = fn(4788);
+let obj2 = { container: { paddingHorizontal: 16 }, title: { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 24 }, scrollViewContainer: { flexGrow: 2 }, input: { marginBottom: 8 }, redesignTextInput: null, redesignGrowSpacing: null, redesignSubmit: null };
+let obj3 = { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
 obj2.redesignTextInput = { borderRadius: nativeDefault.radii.lg };
 let obj4 = { borderRadius: nativeDefault.radii.lg };
 obj2.redesignGrowSpacing = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
@@ -52,7 +52,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -172,7 +172,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   const items2 = [closure_10(value, obj5), closure_9(value, { style: tmp.redesignGrowSpacing }), ];
   const obj12 = { style: tmp.redesignSubmit, children: null };
   const obj22 = { size: "lg", loading: tmp4[0], text: null, onPress: null };
-  const intl5 = tmp2(1119).intl;
+  const intl5 = tmp2(1115).intl;
   obj22.text = intl5.string(util.t.PDsYAo);
   obj22.onPress = function submitWaitlist() {
     const self = this;

@@ -1,102 +1,21 @@
-// Module ID: 11137
-// Function ID: 11138
+// Module ID: 11098
+// Function ID: 11099
 // Name: StorefrontNativeUtils
-// Dependencies: [19, 558, 568, 9511, 7516, 504, 2]
+// Dependencies: [19, 9513, 504, 7514, 2]
+// Exports: useFormattedSKUPrice
 
-// Module 11137 (StorefrontNativeUtils)
-import IAPStoreDefault from "IAPStore" /* 7516 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9511 */;
+// Module 11098 (StorefrontNativeUtils)
+import IAPStoreDefault from "IAPStore" /* 7514 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9513 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
 
-export const useFormattedSKUPrice = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
-  const cResult = require("c").c(10);
-  sku = sku.sku;
-  let tmp5;
-  if (sku != null) {
-    const googleSkuIds = sku.googleSkuIds;
-    if (googleSkuIds != null) {
-      tmp5 = googleSkuIds[tmp4];
-    }
-  }
-  if (tmp5 == null) {
-    tmp5 = null;
-  }
-  _require = tmp5;
-  if (cResult[0] !== tmp5) {
-    const fn = function t() {
-      if (null != c0) {
-        const items = [tmp];
-        const inAppSkus = GPlayActionCreators.loadInAppSkus(items);
-      }
-    };
-    let items = [tmp5];
-    cResult[0] = tmp5;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp7 = items;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-    tmp7 = cResult[2];
-  }
-  const effect = noop.useEffect(tmp6, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [IAPStoreDefault];
-    cResult[3] = items1;
-    let tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== tmp5) {
-    const fn2 = function o() {
-      let product = null;
-      if (null != c0) {
-        product = IAPStoreDefault.getProduct(tmp);
-      }
-      return product;
-    };
-    const items2 = [tmp5];
-    cResult[4] = tmp5;
-    cResult[5] = fn2;
-    cResult[6] = items2;
-    let tmp12 = items2;
-    let tmp11 = fn2;
-  } else {
-    tmp11 = cResult[5];
-    tmp12 = cResult[6];
-  }
-  let obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(tmp9, tmp11, tmp12);
-  let priceString;
-  if (stateFromStores != null) {
-    priceString = stateFromStores.priceString;
-  }
-  if (null == priceString) {
-    const _Symbol = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
-      cResult[9] = obj2;
-    }
-  } else {
-    if (cResult[7] !== stateFromStores.priceString) {
-      const obj4 = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
-      ({ priceString: obj3.normalPrice, priceString: obj3.userPrice } = stateFromStores);
-      cResult[7] = stateFromStores.priceString;
-      cResult[8] = obj4;
-      let tmp15 = obj4;
-    } else {
-      tmp15 = cResult[8];
-    }
-    return tmp15;
-  }
-}) : ((sku) => {
+export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   sku = sku.sku;
   _require = undefined;
   let stateFromStores;
@@ -118,7 +37,7 @@ export const useFormattedSKUPrice = ReactCompilerGating.isReactCompilerEnabled()
       const inAppSkus = GPlayActionCreators.loadInAppSkus(items);
     }
   }, items);
-  const items1 = [stateFromStores(7516)];
+  const items1 = [stateFromStores(7514)];
   const items2 = [tmp2];
   stateFromStores = require("initialize").useStateFromStores(items1, () => {
     let product = null;
@@ -142,4 +61,4 @@ export const useFormattedSKUPrice = ReactCompilerGating.isReactCompilerEnabled()
     }
     return obj;
   }, items3);
-});
+};

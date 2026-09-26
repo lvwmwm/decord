@@ -1,31 +1,109 @@
 // Module ID: 1769
 // Function ID: 1770
-// Dependencies: [1770, 1771, 1772, 1773, 1774, 1775]
+// Dependencies: [41, 42, 93, 95, 98, 1709, 1689, 1707]
 
 // Module 1769
-const require = globalThis.__r;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-for (const key10013 in require("module_1770")) {
-  arg5[key10013] = require("module_1770")[key10013];
-  continue;
+const JumpingTransition = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
 }
-for (const key10017 in require("module_1771")) {
-  arg5[key10017] = require("module_1771")[key10017];
-  continue;
+let closure_6 = { code: "function pnpm_JumpingTransitionTs1(values){const{delayFunction,delay,withTiming,config,withSequence,halfDuration,Easing,callback}=this.__closure;const d=Math.max(Math.abs(values.targetOriginX-values.currentOriginX),Math.abs(values.targetOriginY-values.currentOriginY));return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,withTiming(values.targetOriginX,config)),originY:delayFunction(delay,withSequence(withTiming(Math.min(values.targetOriginY,values.currentOriginY)-d,{duration:halfDuration,easing:Easing.out(Easing.exp)}),withTiming(values.targetOriginY,{...config,duration:halfDuration,easing:Easing.bounce}))),width:delayFunction(delay,withTiming(values.targetWidth,config)),height:delayFunction(delay,withTiming(values.targetHeight,config))},callback:callback};}" };
+class JumpingTransition {
+  constructor() {
+    self = this;
+    items = [...arguments];
+    closure_0 = undefined;
+    tmp = c2(this, JumpingTransition);
+    items1 = [...items];
+    tmp2 = closure_4;
+    obj = closure_4(JumpingTransition);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.build = () => {
+      delayFunction = delayFunction.getDelayFunction();
+      const callbackV = delayFunction.callbackV;
+      const delay = delayFunction.getDelay();
+      let num = delayFunction.durationV;
+      if (num == null) {
+        num = 300;
+      }
+      const result = num / 2;
+      closure_3 = result;
+      const config = { duration: num };
+      const fn = function n(originX) {
+        const absolute = Math.abs(originX.targetOriginX - originX.currentOriginX);
+        const obj = { initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: null, callback: null };
+        const size = { originX: null, originY: null, width: null, height: null };
+        const bound = Math.max(absolute, Math.abs(originX.targetOriginY - originX.currentOriginY));
+        size.originX = delayFunction(delay, delayFunction(1709).withTiming(originX.targetOriginX, obj));
+        const obj3 = delayFunction(1709);
+        const obj4 = delayFunction(1709);
+        const obj2 = { duration: result, easing: null };
+        const diff = Math.min(originX.targetOriginY, originX.currentOriginY) - bound;
+        const Easing = delayFunction(1689).Easing;
+        obj2.easing = Easing.out(delayFunction(1689).Easing.exp);
+        const obj5 = delayFunction(1709);
+        const withTimingResult = delayFunction(1709).withTiming(diff, obj2);
+        const obj6 = {};
+        const merged = Object.assign(obj);
+        obj6.duration = result;
+        obj6.easing = delayFunction(1689).Easing.bounce;
+        size.originY = delayFunction(delay, obj4.withSequence(withTimingResult, delayFunction(1709).withTiming(originX.targetOriginY, obj6)));
+        const obj7 = delayFunction(1709);
+        size.width = delayFunction(delay, delayFunction(1709).withTiming(originX.targetWidth, obj));
+        const obj9 = delayFunction(1709);
+        size.height = delayFunction(delay, delayFunction(1709).withTiming(originX.targetHeight, obj));
+        obj.animations = size;
+        obj.callback = callbackV;
+        return obj;
+      };
+      fn.__closure = { delayFunction, delay, withTiming: JumpingTransition(1709).withTiming, config, withSequence: JumpingTransition(1709).withSequence, halfDuration: result, Easing: JumpingTransition(1689).Easing, callback: callbackV };
+      fn.__workletHash = 11549153259849;
+      fn.__initData = __initData;
+      return fn;
+    };
+    return tmp3Result;
+  }
 }
-for (const key10021 in require("module_1772")) {
-  arg5[key10021] = require("module_1772")[key10021];
-  continue;
-}
-for (const key10025 in require("module_1773")) {
-  arg5[key10025] = require("module_1773")[key10025];
-  continue;
-}
-for (const key10029 in require("module_1774")) {
-  arg5[key10029] = require("module_1774")[key10029];
-  continue;
-}
-for (const key10033 in require("module_1775")) {
-  arg5[key10033] = require("module_1775")[key10033];
-  continue;
-}
+_inherits(JumpingTransition, fn(1707).BaseAnimationBuilder);
+const entry = {
+  key: "createInstance",
+  value: function createInstance() {
+    return JumpingTransition();
+  }
+};
+let items = [entry];
+const importDefaultResultResult = _createClass(JumpingTransition, null, items);
+importDefaultResultResult.presetName = "JumpingTransition";
+
+export const JumpingTransition = importDefaultResultResult;

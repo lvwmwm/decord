@@ -1,26 +1,26 @@
-// Module ID: 14814
-// Function ID: 14815
+// Module ID: 14804
+// Function ID: 14805
 // Name: setActivity
-// Dependencies: [5017, 4695, 1078, 8647, 9612, 11229, 14783, 9609, 577, 9660, 9622, 12, 1095, 8445, 1245, 2]
+// Dependencies: [5015, 4692, 1074, 8642, 9616, 11180, 14773, 9613, 573, 9664, 9626, 12, 1091, 8440, 1241, 2]
 
-// Module 14814 (setActivity)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9612 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 11229 */;
-import ApplicationStore from "ApplicationStore" /* 5017 */;
+// Module 14804 (setActivity)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9616 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 11180 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
 
 require = fn;
-let Constants = fn(4695);
+let Constants = fn(4692);
 const RPC_LOCAL_SCOPE = Constants.RPC_LOCAL_SCOPE;
 ({ TransportTypes: hasOwnProperty, RPC_SCOPE_CONFIG, RPC_EMBEDDED_APP_SCOPE } = Constants);
-Constants = fn(1078);
+Constants = fn(1074);
 ({ ActivityGamePlatforms: metroRequire, ActivityPartyPrivacy: closure_7, ActivityTypes: closure_8, AnalyticEvents: closure_9, RPCErrors: c10 } = Constants);
 let closure_11 = ["1402418171662569542"];
 let obj = {};
 let obj2 = { scope: null, validation: null, handler: null };
 let obj3 = {};
-let items = [fn(8647).OAuth2Scopes.RPC, fn(8647).OAuth2Scopes.RPC_ACTIVITIES_WRITE, RPC_LOCAL_SCOPE, RPC_EMBEDDED_APP_SCOPE];
+let items = [fn(8642).OAuth2Scopes.RPC, fn(8642).OAuth2Scopes.RPC_ACTIVITIES_WRITE, RPC_LOCAL_SCOPE, RPC_EMBEDDED_APP_SCOPE];
 obj3[RPC_SCOPE_CONFIG.ANY] = items;
 obj2.scope = obj3;
 obj2.validation = function validation(number) {

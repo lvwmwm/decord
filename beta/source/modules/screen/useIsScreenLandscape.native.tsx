@@ -1,17 +1,15 @@
-// Module ID: 5376
-// Function ID: 5377
+// Module ID: 5374
+// Function ID: 5375
 // Name: useIsScreenLandscape
-// Dependencies: [19, 1483, 558, 568, 1485, 2]
-// Exports: getIsScreenLandscape
+// Dependencies: [19, 1479, 1481, 2]
+// Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 5376 (useIsScreenLandscape)
-import c from "c" /* 568 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1485 */;
+// Module 5374 (useIsScreenLandscape)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
 import noop from "module_19" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1483 */;
+import DimensionsStore from "DimensionsStore" /* 1479 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");
 
@@ -22,22 +20,8 @@ export const getIsScreenLandscape = function getIsScreenLandscape() {
   }
   return DimensionsStore.getState().byAppEntry[str].screenIsLandscape;
 };
-export const useIsScreenLandscape = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const appEntryKey = AppEntryKeyContext.useAppEntryKey();
-  if (cResult[0] !== appEntryKey) {
-    const fn = function n(arg0) {
-      return arg0.byAppEntry[appEntryKey].screenIsLandscape;
-    };
-    cResult[0] = appEntryKey;
-    cResult[1] = fn;
-    let tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return DimensionsStore(tmp3);
-}) : (() => {
+export const useIsScreenLandscape = function useIsScreenLandscape() {
   const appEntryKey = AppEntryKeyContext.useAppEntryKey();
   const items = [appEntryKey];
   return DimensionsStore(noop.useCallback((arg0) => arg0.byAppEntry[appEntryKey].screenIsLandscape, items));
-});
+};

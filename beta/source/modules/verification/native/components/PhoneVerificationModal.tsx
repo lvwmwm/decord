@@ -1,227 +1,27 @@
-// Module ID: 7321
-// Function ID: 7322
+// Module ID: 7319
+// Function ID: 7320
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 1078, 7322, 21, 5871, 7323, 7324, 4993, 1253, 7357, 7271, 558, 568, 1119, 7278, 2]
+// Dependencies: [5, 19, 1074, 7320, 21, 5873, 7321, 7322, 4991, 1249, 7355, 7270, 7277, 1115, 2]
+// Exports: default
 
-// Module 7321 (PhoneVerificationModal)
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7271 */;
-import AddPhoneDefault from "AddPhone" /* 7323 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7324 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 7357 */;
+// Module 7319 (PhoneVerificationModal)
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7270 */;
+import AddPhoneDefault from "AddPhone" /* 7321 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7322 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 7355 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const VerificationModalScenes = fn(1078).VerificationModalScenes;
-let closure_5 = fn(7322).PHONE_VERIFICATION_MODAL_KEY;
+const VerificationModalScenes = fn(1074).VerificationModalScenes;
+let closure_5 = fn(7320).PHONE_VERIFICATION_MODAL_KEY;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/PhoneVerificationModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
-  const cResult = require("c").c(5);
-  if (cResult[0] !== onClose) {
-    _require = onClose;
-    const obj2 = {};
-    const obj3 = { headerTitle: tmp(5871).getHeaderNoTitle(), headerLeft: null, render: null };
-    const tmpResult = tmp(5871);
-    obj3.headerLeft = tmp(5871).getHeaderCloseButton(onClose.onClose);
-    obj3.render = function render(reason, arg1) {
-      onClose = reason;
-      closure_1 = arg1;
-      const obj = {};
-      const merged = Object.assign(reason);
-      reason = undefined;
-      if (reason != null) {
-        reason = reason.reason;
-      }
-      if (reason == null) {
-        reason = onClose.reason;
-      }
-      obj.reason = reason;
-      obj.onComplete = function onComplete(phone) {
-        return closure_1.push(VerificationModalScenes.VERIFY_PHONE, {
-          phone,
-          onVerified(arg0) {
-            reason = arg0;
-            closure_1.push(constants.VERIFY_PASSWORD, {
-              hideUnverifiedBanner: true,
-              onSubmit(password) {
-                reason = undefined;
-                if (reason != null) {
-                  reason = reason.reason;
-                }
-                if (reason == null) {
-                  reason = reason.reason;
-                }
-                return PhoneActionCreatorsDefault.addPhone(reason, password, reason);
-              },
-              onSuccess() {
-                closure_1_1(closure_1_2[8]).popWithKey(closure_1_5);
-              }
-            });
-          }
-        });
-      };
-      let fn = null;
-      if (onClose.allowDeletePhone) {
-        fn = () => {
-          closure_1.push(VerificationModalScenes.VERIFY_PASSWORD, {
-            hideUnverifiedBanner: true,
-            onSubmit(password) {
-              reason = undefined;
-              if (closure_1_0 != null) {
-                reason = closure_1_0.reason;
-              }
-              if (reason == null) {
-                reason = closure_0.reason;
-              }
-              return PhoneActionCreatorsDefault.removePhone(password, reason);
-            },
-            onSuccess() {
-              closure_1_1(closure_1_2[8]).pop();
-            }
-          });
-        };
-      }
-      obj.onDeletePhone = fn;
-      return jsx(AddPhoneDefault, {});
-    };
-    obj2[VerificationModalScenes.ADD_PHONE] = obj3;
-    const obj4 = { headerTitle: null, impressionName: null, render: null };
-    const tmpResult4 = tmp(5871);
-    obj4.headerTitle = tmp(5871).getHeaderNoTitle();
-    obj4.impressionName = tmp(1253).ImpressionNames.USER_VERIFY_PHONE;
-    obj4.render = function render(arg0, arg1) {
-      closure_0 = arg1;
-      let obj = {};
-      const merged = Object.assign(arg0);
-      obj.disableKeyboardAvoidingView = true;
-      obj.onVerified = function onVerified(arg0) {
-        closure_0 = arg0;
-        let obj = { hideUnverifiedBanner: true, onSubmit: null, onSuccess: null };
-        closure_1 = asyncGeneratorStep(async (arg0) => {
-          const reason = arg0;
-          c2 = 0;
-          c1 = 0;
-          c4 = 0;
-          return (async (arg0, value) => {
-            if (c1 === 2) {
-              c1 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp5 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c1 = 2;
-                if (0 === c2) {
-                  if (arg0 === 1) {
-                    c1 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c1 = 3;
-                    const obj3 = { value, done: true };
-                    return obj3;
-                  } else {
-                    c4 = 1;
-                    c2 = 2;
-                    c1 = 1;
-                    const obj5 = { value: v3(7324).addPhone(reason, reason, reason.reason), done: false };
-                    return obj5;
-                  }
-                } else if (1 === tmp6) {
-                  c4 = 0;
-                  c1 = 3;
-                  const obj6 = { value, done: true };
-                  return obj6;
-                } else if (arg0 === 1) {
-                  c1 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 0;
-                  c1 = 3;
-                  const obj7 = { value, done: true };
-                  return obj7;
-                } else {
-                  c4 = 0;
-                  c1 = 3;
-                  const obj = { value, done: true };
-                  return obj;
-                }
-              } catch (tmp13) {
-                value = tmp13;
-                if (tmp3 === c4) {
-                  c1 = tmp2;
-                  throw tmp13;
-                } else {
-                  c2 = tmp;
-                }
-              }
-            }
-          })();
-        });
-        obj.onSubmit = function() {
-          const self = this;
-          const apply = closure_1.apply;
-          if (typeof apply === "unknown") {
-            let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-          } else {
-            applyArgumentsResult = apply(self, arguments);
-          }
-          return applyArgumentsResult;
-        };
-        obj.onSuccess = function onSuccess() {
-          closure_1(4993).popWithKey(closure_1_5);
-        };
-        closure_0.push(VerificationModalScenes.VERIFY_PASSWORD, obj);
-      };
-      return jsx(VerifyPhoneDefault, {});
-    };
-    obj2[VerificationModalScenes.VERIFY_PHONE] = obj4;
-    const obj5 = { headerTitle: null, render: null };
-    const tmpResult5 = tmp(5871);
-    obj5.headerTitle = tmp(5871).getHeaderNoTitle();
-    obj5.render = function render(arg0) {
-      const merged = Object.assign(arg0);
-      return jsx(UserSettingsConfirmPasswordDefault, {});
-    };
-    obj2[VerificationModalScenes.VERIFY_PASSWORD] = obj5;
-    cResult[0] = onClose;
-    cResult[1] = obj2;
-    let tmp4 = obj2;
-    const tmpResult6 = tmp(5871);
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t["13/7kX"]);
-    cResult[2] = stringResult;
-    let tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== tmp4) {
-    const obj6 = { screens: tmp4, initialRouteName: VerificationModalScenes.ADD_PHONE, headerBackTitle: tmp6 };
-    const tmp11 = jsx(tmp(7278).Navigator, { screens: tmp4, initialRouteName: VerificationModalScenes.ADD_PHONE, headerBackTitle: tmp6 });
-    cResult[3] = tmp4;
-    cResult[4] = tmp11;
-    let tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[4];
-  }
-  return tmp8;
-}) : ((onClose) => {
+export default function PhoneVerificationModal(onClose) {
   let obj = { screens: null, initialRouteName: null, headerBackTitle: null };
   _require = onClose;
   let obj2 = {};
@@ -318,7 +118,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -335,7 +135,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
                   c4 = 1;
                   c2 = 2;
                   c1 = 1;
-                  const obj5 = { value: v3(7324).addPhone(reason, reason, reason.reason), done: false };
+                  const obj5 = { value: v3(7322).addPhone(reason, reason, reason.reason), done: false };
                   return obj5;
                 }
               } else if (1 === tmp6) {
@@ -380,7 +180,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         return applyArgumentsResult;
       };
       obj.onSuccess = function onSuccess() {
-        closure_1(4993).popWithKey(closure_1_5);
+        closure_1(4991).popWithKey(closure_1_5);
       };
       closure_0.push(VerificationModalScenes.VERIFY_PASSWORD, obj);
     };
@@ -400,4 +200,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const intl = require("util").intl;
   obj.headerBackTitle = intl.string(require("util").t["13/7kX"]);
   return jsx(require("Navigator").Navigator, { screens: null, initialRouteName: null, headerBackTitle: null });
-});
+};

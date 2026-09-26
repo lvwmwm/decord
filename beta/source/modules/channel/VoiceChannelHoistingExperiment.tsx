@@ -1,13 +1,12 @@
-// Module ID: 17770
-// Function ID: 17771
+// Module ID: 17761
+// Function ID: 17762
 // Name: VoiceChannelHoistingExperiment
-// Dependencies: [4707, 4704, 558, 568, 2]
+// Dependencies: [4704, 4701, 2]
+// Exports: useVoiceChannelHoistingExperiment
 
-// Module 17770 (VoiceChannelHoistingExperiment)
-import c from "c" /* 568 */;
-import ExperimentConstants from "ExperimentConstants" /* 4707 */;
-import createExperiment from "module_4704" /* 4704 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17761 (VoiceChannelHoistingExperiment)
+import ExperimentConstants from "ExperimentConstants" /* 4704 */;
+import createExperiment from "module_4701" /* 4701 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2025-12_voice_channel_hoisting", label: "Voice Channel Hoisting", commonTriggerPoint: ExperimentConstants.CommonTriggerPoints.VOICE_CALL, defaultConfig: { enableWaveformIcon: false, enableHighlight: false }, treatments: null };
@@ -17,25 +16,6 @@ const experiment = createExperiment.createExperiment(obj);
 const result = size.fileFinishedImporting("modules/channel/VoiceChannelHoistingExperiment.tsx");
 
 export const VoiceChannelHoistingExperiment = experiment;
-export const useVoiceChannelHoistingExperiment = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
-  const cResult = c.c(4);
-  if (cResult[0] === guildId) {
-    if (cResult[1] === location) {
-      let tmp2 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { autoTrackExposure: false };
-      cResult[3] = obj2;
-      let tmp4 = obj2;
-    } else {
-      tmp4 = cResult[3];
-    }
-    return experiment.useExperiment(tmp2, tmp4);
-  }
-  const obj3 = { guildId, location };
-  cResult[0] = guildId;
-  cResult[1] = location;
-  cResult[2] = obj3;
-  tmp2 = obj3;
-}) : ((guildId, location) => experiment.useExperiment({ guildId, location }, { autoTrackExposure: false }));
+export const useVoiceChannelHoistingExperiment = function useVoiceChannelHoistingExperiment(guildId, location) {
+  return experiment.useExperiment({ guildId, location }, { autoTrackExposure: false });
+};

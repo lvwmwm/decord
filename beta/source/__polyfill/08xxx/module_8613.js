@@ -1,35 +1,26 @@
 // Module ID: 8613
 // Function ID: 8614
-// Dependencies: [17]
+// Dependencies: []
 
 // Module 8613
-import get_ActivityIndicator from "module_17" /* 17 */;
 
-const NativeModules = get_ActivityIndicator.NativeModules;
-const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(undefined);
-class WebViewProxy {
-  constructor(arg0) {
-    this.webViewKey = global;
-    return;
-  }
-  injectJavaScript(arg0) {
-    RNCWebView = NativeModules.RNCWebView;
-    return RNCWebView.injectJavaScriptWithWebViewKey(this.webViewKey, global);
-  }
-  addOnMessageListener(arg0) {
-    closure_0 = global;
-    self = this;
-    return closure_1.addListener("ReactNativeWebViewOnMessageWithWebViewKey", (webViewKey) => {
-      if (webViewKey.webViewKey === self.webViewKey) {
-        closure_0(webViewKey);
+export default (obj) => {
+  if (obj instanceof Object) {
+    const _Array = Array;
+    if (!Array.isArray(obj)) {
+      obj = {};
+      for (const key10010 in arg0) {
+        if (!arg0.hasOwnProperty(key10010)) {
+          continue;
+        } else {
+          obj[key10010] = key10010;
+          continue;
+        }
+        continue;
       }
-    });
+      return obj;
+    }
   }
-  releaseWebView() {
-    RNCWebView = NativeModules.RNCWebView;
-    releaseWebViewResult = RNCWebView.releaseWebView(this.webViewKey);
-    return;
-  }
-}
-
-export default WebViewProxy;
+  const error = new Error("keyMirror(...): Argument must be an object.");
+  throw error;
+};

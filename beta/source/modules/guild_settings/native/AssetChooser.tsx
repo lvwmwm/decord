@@ -1,24 +1,24 @@
-// Module ID: 17949
-// Function ID: 17950
+// Module ID: 17940
+// Function ID: 17941
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1078, 21, 4790, 580, 4503, 5388, 5373, 1119, 17950, 17951, 1181, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4788, 576, 4498, 5386, 5371, 1115, 17941, 17942, 1177, 2]
 
-// Module 17949 (AssetChooser)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Pressables from "Pressables" /* 5373 */;
-import _modDef17950 from "module_17950" /* 17950 */;
-import _modDef17951 from "module_17951" /* 17951 */;
+// Module 17940 (AssetChooser)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Pressables from "Pressables" /* 5371 */;
+import _modDef17941 from "module_17941" /* 17941 */;
+import _modDef17942 from "module_17942" /* 17942 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty, ImageBackground: metroRequire, TouchableWithoutFeedback: closure_7 } = get_ActivityIndicator);
-const UPLOAD_MEDIUM_SIZE = fn(1078).UPLOAD_MEDIUM_SIZE;
+const UPLOAD_MEDIUM_SIZE = fn(1074).UPLOAD_MEDIUM_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { assetWrapper: { width: "100%", alignItems: "center" }, asset: null, uploadIconWrapper: null, uploadIcon: null, remove: null };
 let size = { width: "100%", height: 192, borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.asset = size;
@@ -44,7 +44,7 @@ class AssetChooser extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -91,7 +91,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c3 = tmp;
@@ -132,35 +132,35 @@ prototype["render"] = function render() {
   obj.disabled = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = _modDef17950;
+    tmp9 = _modDef17941;
   }
   const obj2 = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
   if (!disabled) {
     const obj3 = { style: tmp.uploadIconWrapper, children: null };
-    const obj4 = { style: tmp.uploadIcon, source: _modDef17951 };
+    const obj4 = { style: tmp.uploadIcon, source: _modDef17942 };
     obj3.children = tmp5(hasOwnProperty, obj4);
     tmp5Result = tmp5(React4, obj3);
   }
   obj2.children = tmp5Result;
-  obj.children = options(timestampProducer, obj2);
-  const children = [options(Pressables.PressableOpacity, obj), ];
+  obj.children = React7(timestampProducer, obj2);
+  const children = [React7(Pressables.PressableOpacity, obj), ];
   let tmp5Result2 = null;
   if (null != source) {
     tmp5Result2 = null;
     if (!disabled) {
       const obj5 = { accessibilityRole: "button", onPress: this.handleRemoveAsset, children: null };
       const obj6 = { style: tmp.remove, children: null };
-      const intl2 = tmp6(1119).intl;
-      obj6.children = intl2.string(tmp6(1119).t.N86XcP);
-      obj5.children = tmp5(tmp6(1181).LegacyText, obj6);
+      const intl2 = tmp6(1115).intl;
+      obj6.children = intl2.string(tmp6(1115).t.N86XcP);
+      obj5.children = tmp5(tmp6(1177).LegacyText, obj6);
       tmp5Result2 = tmp5(React5, obj5);
     }
   }
   children[1] = tmp5Result2;
-  return closure_1_11(v65535, { children });
+  return closure_1_11(closure_1_10, { children });
 };
-AssetChooser.contextType = fn(4503).ThemeContext;
+AssetChooser.contextType = fn(4498).ThemeContext;
 size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/native/AssetChooser.tsx");
 

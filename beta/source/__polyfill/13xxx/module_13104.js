@@ -1,26 +1,48 @@
 // Module ID: 13104
 // Function ID: 13105
-// Dependencies: [13103, 13105]
-// Exports: getAsyncContextStrategy, setAsyncContextStrategy
+// Dependencies: []
 
 // Module 13104
-import _mod13103 from "module_13103" /* 13103 */;
-import _mod13105 from "module_13105" /* 13105 */;
-
-require = arg1;
-const dependencyMap = arg6;
-
-export const getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
-  const sentryCarrier = _mod13103.getSentryCarrier(arg0);
-  if (sentryCarrier.acs) {
-    let acs = sentryCarrier.acs;
-  } else {
-    acs = _mod13105.getStackAsyncContextStrategy();
-    const tmpResult = _mod13105;
+function merge(arg0, obj) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 2;
   }
-  return acs;
-};
-export const setAsyncContextStrategy = function setAsyncContextStrategy(acs) {
-  const mainCarrier = _mod13103.getMainCarrier();
-  _mod13103.getSentryCarrier(mainCarrier).acs = acs;
-};
+  if (obj) {
+    if (typeof obj === "object") {
+      if (num > 0) {
+        if (arg0) {
+          if (obj) {
+            const _Object = Object;
+            if (0 === Object.keys(obj).length) {
+              return arg0;
+            }
+          }
+        }
+        obj = {};
+        const merged = Object.assign(arg0);
+        for (const key10016 in arg1) {
+          let _Object2 = Object;
+          hasOwnProperty = Object.prototype.hasOwnProperty;
+          let call = hasOwnProperty.call;
+          if (typeof call === "unknown") {
+            let hasOwnPropertyResult = hasOwnProperty(key10016);
+          } else {
+            hasOwnPropertyResult = call(arg1, key10016);
+          }
+          if (!hasOwnPropertyResult) {
+            continue;
+          } else {
+            obj[key10016] = merge(obj[key10016], arg1[key10016], num - 1);
+            continue;
+          }
+          continue;
+        }
+        return obj;
+      }
+    }
+  }
+  return obj;
+}
+
+export { merge };

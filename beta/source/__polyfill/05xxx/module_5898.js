@@ -1,6 +1,6 @@
 // Module ID: 5898
 // Function ID: 5899
-// Dependencies: [32, 19, 17, 21, 1489]
+// Dependencies: [32, 19, 17, 21, 1485]
 
 // Module 5898
 import _slicedToArray from "module_32" /* 32 */;
@@ -137,7 +137,7 @@ const forwardRefResult = noop.forwardRef(function PlatformPressableInternal(disa
   if (!disabled) {
     const obj4 = {};
     const merged3 = Object.assign(hoverEffect);
-    tmp13 = closure_6(f38319, obj4);
+    tmp13 = closure_6(f37847, obj4);
   }
   const items3 = [tmp13, children];
   obj2.children = items3;
@@ -145,7 +145,7 @@ const forwardRefResult = noop.forwardRef(function PlatformPressableInternal(disa
 });
 forwardRefResult.displayName = "PlatformPressable";
 String.raw(HermesBuiltin.getTemplateObject(true, "\n  .", " {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    border-radius: inherit;\n    background-color: var(--overlay-color);\n    opacity: 0;\n    transition: opacity 0.15s;\n    pointer-events: none;\n  }\n\n  a:hover > .", ", button:hover > .", " {\n    opacity: var(--overlay-hover-opacity);\n  }\n\n  a:active > .", ", button:active > .", " {\n    opacity: var(--overlay-active-opacity);\n  }\n"), "__react-navigation_elements_Pressable_hover", "__react-navigation_elements_Pressable_hover", "__react-navigation_elements_Pressable_hover", "__react-navigation_elements_Pressable_hover", "__react-navigation_elements_Pressable_hover");
-const f38319 = (arg0) => {
+const f37847 = (arg0) => {
   ({ color, hoverOpacity, activeOpacity } = arg0);
   return null;
 };

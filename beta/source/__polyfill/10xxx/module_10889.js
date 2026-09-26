@@ -1,9 +1,9 @@
 // Module ID: 10889
 // Function ID: 10890
-// Dependencies: [41, 42, 93, 95, 98, 10782]
+// Dependencies: [41, 42, 93, 95, 98, 10749]
 
 // Module 10889
-import _mod10782 from "module_10782" /* 10782 */;
+import _mod10749 from "module_10749" /* 10749 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -45,12 +45,12 @@ if (!fn) {
     return tmp;
   };
 }
-class ZHHansMergeDateRangeRefiner {
+class UKMergeDateTimeRefiner {
   constructor() {
     self = this;
-    tmp = closure_0(this, ZHHansMergeDateRangeRefiner);
+    tmp = closure_0(this, UKMergeDateTimeRefiner);
     tmp2 = c2;
-    obj = c2(ZHHansMergeDateRangeRefiner);
+    obj = c2(UKMergeDateTimeRefiner);
     tmp3 = closure_1;
     if (closure_3()) {
       tmp7 = globalThis;
@@ -65,14 +65,15 @@ class ZHHansMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = ZHHansMergeDateRangeRefiner;
-_inherits(ZHHansMergeDateRangeRefiner, fn(_mod10782).default);
+_classCallCheck = UKMergeDateTimeRefiner;
+_inherits(UKMergeDateTimeRefiner, fn(_mod10749).default);
 const entry = {
   key: "patternBetween",
   value: function patternBetween() {
-    return /^\s*(至|到|-|~|～|－|ー)\s*$/i;
+    const regExp = new RegExp("^\\s*(T|\u0432|\u0443|\u043E|,|-)?\\s*$");
+    return regExp;
   }
 };
 const items = [entry];
 
-export default _createClass(ZHHansMergeDateRangeRefiner, items);
+export default _createClass(UKMergeDateTimeRefiner, items);

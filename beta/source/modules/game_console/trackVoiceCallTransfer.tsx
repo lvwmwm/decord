@@ -1,16 +1,16 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 10089
+// Function ID: 10090
 // Name: trackVoiceCallTransfer
-// Dependencies: [2045, 4813, 4808, 1078, 1245, 2]
+// Dependencies: [2041, 4811, 4806, 1074, 1241, 2]
 // Exports: default
 
-// Module 10068 (trackVoiceCallTransfer)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import SessionsStore from "SessionsStore" /* 4808 */;
+// Module 10089 (trackVoiceCallTransfer)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import SessionsStore from "SessionsStore" /* 4806 */;
 
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_console/trackVoiceCallTransfer.tsx");
 

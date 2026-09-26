@@ -1,9 +1,9 @@
-// Module ID: 10536
-// Function ID: 10537
+// Module ID: 10619
+// Function ID: 10620
 // Name: EmojiPickerNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 10536 (EmojiPickerNativeComponent)
+// Module 10619 (EmojiPickerNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;
@@ -21,9 +21,9 @@ export const Commands = {
   refreshEmojis(current) {
     renderElement.dispatchCommand(current, "refreshEmojis", []);
   },
-  scrollingEnabled(arg0, arg1) {
+  scrollingEnabled(current, arg1) {
     const items = [arg1];
-    renderElement.dispatchCommand(arg0, "scrollingEnabled", items);
+    renderElement.dispatchCommand(current, "scrollingEnabled", items);
   },
   scrollToHeaderIndex(arg0, arg1, arg2) {
     const items = [arg1, arg2];

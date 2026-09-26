@@ -1,11 +1,11 @@
-// Module ID: 5433
-// Function ID: 5434
+// Module ID: 5431
+// Function ID: 5432
 // Name: DiscordImageFactory
-// Dependencies: [5434, 5461, 2]
+// Dependencies: [5432, 5459, 2]
 
-// Module 5433 (DiscordImageFactory)
-import detectFile from "detectFile" /* 5434 */;
-import DiscordImagePng2 from "DiscordImagePng" /* 5461 */;
+// Module 5431 (DiscordImageFactory)
+import detectFile from "detectFile" /* 5432 */;
+import DiscordImagePng2 from "DiscordImagePng" /* 5459 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 13225
-// Function ID: 13226
+// Module ID: 13219
+// Function ID: 13220
 // Name: refreshApplicationWidget
-// Dependencies: [5, 1078, 9336, 1275, 2]
+// Dependencies: [5, 1074, 9338, 1271, 2]
 // Exports: refreshApplicationWidget
 
-// Module 13225 (refreshApplicationWidget)
+// Module 13219 (refreshApplicationWidget)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
-const Endpoints = fn(1078).Endpoints;
-const promiseDeduper = new fn(9336).PromiseDeduper();
+const Endpoints = fn(1074).Endpoints;
+const promiseDeduper = new fn(9338).PromiseDeduper();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_widget/refreshApplicationWidget.tsx");
 
@@ -26,7 +26,7 @@ export const refreshApplicationWidget = function refreshApplicationWidget(play) 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

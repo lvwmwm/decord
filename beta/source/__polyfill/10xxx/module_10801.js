@@ -1,82 +1,51 @@
 // Module ID: 10801
 // Function ID: 10802
-// Dependencies: [41, 42, 10768]
+// Dependencies: [41, 42, 10798, 10755]
 
 // Module 10801
+import alphaNum from "alphaNum" /* 10798 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-const ExtractTimezoneAbbrRefiner = require;
-const regExp = new RegExp("^\\s*,?\\s*\\(?([A-Z]{2,4})\\)?(?=\\W|$)", "i");
-class ExtractTimezoneAbbrRefiner {
-  constructor(arg0) {
-    tmp = c2(this, ExtractTimezoneAbbrRefiner);
-    this.timezoneOverrides = global;
+const JPWeekdayParser = require;
+const keys = Object.keys(alphaNum.WEEKDAY_OFFSET);
+const regExp = new RegExp("((?<prefix>\u524D\u306E|\u6B21\u306E|\u4ECA\u9031))?(?<weekday>" + keys.join("|") + ")(?:\u66DC\u65E5|\u66DC)", "i");
+class JPWeekdayParser {
+  constructor() {
+    tmp = c2(this, JPWeekdayParser);
     return;
   }
 }
 const entry = {
-  key: "refine",
-  value: function refine(option, arr) {
-    let self = this;
-    let timezones = option.option.timezones;
-    if (null === timezones) {
-      timezones = {};
-    }
-    let item = arr.forEach((item) => {
-      const match = regExp.exec(option.text.substring(item.index + item.text.length));
-      if (match) {
-        const formatted = match[1].toUpperCase();
-        const start = item.start;
-        let refDate = start.date();
-        if (null === refDate) {
-          refDate = item.refDate;
-        }
-        if (null === refDate) {
-          const _Date = Date;
-          refDate = new Date();
-        }
-        const _Object = Object;
-        const _Object2 = Object;
-        const merged = Object.assign(Object.assign({}, self.timezoneOverrides), timezones);
-        const toTimezoneOffsetResult = ExtractTimezoneAbbrRefiner(10768).toTimezoneOffset(formatted, refDate, merged);
-        self = toTimezoneOffsetResult;
-        if (null != toTimezoneOffsetResult) {
-          option.debug(() => {
-            console.log("Extracting timezone: '" + formatted + "' into: " + toTimezoneOffsetResult + " for: " + item.start);
-          });
-          const start6 = item.start;
-          value = start6.get("timezoneOffset");
-          if (null !== value) {
-            if (toTimezoneOffsetResult != value) {
-              const start2 = item.start;
-            }
-          }
-          const start3 = item.start;
-          if (!tmp14) {
-            item.text = item.text + match[0];
-            const start4 = item.start;
-            if (!start4.isCertain("timezoneOffset")) {
-              const start5 = item.start;
-              start5.assign("timezoneOffset", toTimezoneOffsetResult);
-            }
-            let isCertainResult = null == item.end;
-            if (!isCertainResult) {
-              const end = item.end;
-              isCertainResult = end.isCertain("timezoneOffset");
-            }
-            if (!isCertainResult) {
-              const end2 = item.end;
-              end2.assign("timezoneOffset", toTimezoneOffsetResult);
-            }
-          }
-          tmp14 = start3.isOnlyDate() && formatted != match[1];
-        }
-      }
-    });
-    return arr;
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(reference, groups) {
+      const tmp3 = JPWeekdayParser(10798).WEEKDAY_OFFSET[groups.groups.weekday];
+      if (undefined === tmp3) {
+        return null;
+      } else {
+        let str2 = "last";
+        if (!groups.groups.prefix || "".match(/前の/)) {
+          str2 = "next";
+          if (!str.match(/次の/)) {
+            str2 = null;
+            if (str.match(/今週/)) {
+              str2 = "this";
+            }
+          }
+        }
+        return tmp(10755).createParsingComponentsAtWeekday(reference.reference, tmp3, str2);
+      }
+      tmp = JPWeekdayParser;
+    }
+  }
+];
 
-export default _createClass(ExtractTimezoneAbbrRefiner, items);
+export default _createClass(JPWeekdayParser, items);

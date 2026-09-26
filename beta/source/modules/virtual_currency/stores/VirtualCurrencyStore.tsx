@@ -1,11 +1,11 @@
-// Module ID: 9161
-// Function ID: 9162
+// Module ID: 9163
+// Function ID: 9164
 // Name: VirtualCurrencyStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 9161 (VirtualCurrencyStore)
+// Module 9163 (VirtualCurrencyStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const Store = initializeDefault.Store;
 class VirtualCurrencyStore extends Store {

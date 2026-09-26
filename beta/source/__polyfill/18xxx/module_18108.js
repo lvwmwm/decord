@@ -1,9 +1,9 @@
 // Module ID: 18108
 // Function ID: 18109
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 18108
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 375, height: 212, scales: [2, 3], hash: "94dc9b38f111b503d8ad130993060a96", name: "intro_header_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "b14cf67ed38d1ab1d1a28d6633250b87", name: "safety_check_light", type: "png" });

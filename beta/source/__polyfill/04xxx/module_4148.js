@@ -1,11 +1,11 @@
 // Module ID: 4148
 // Function ID: 4149
-// Dependencies: [3881, 3882]
+// Dependencies: [3877, 3878]
 // Exports: default
 
 // Module 4148
-import _typeof_mod from "module_3881" /* 3881 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,19 +24,12 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isLeapYear(arg0) {
+export default function getISODay(arg0) {
   requiredArgs.default(1, arguments);
-  const fullYear = _typeof.default(arg0).getFullYear();
-  const result = fullYear % 400;
-  let tmp4 = result === 0;
-  if (result !== 0) {
-    const result1 = fullYear % 4;
-    let tmp6 = result1 === 0;
-    if (result1 === 0) {
-      tmp6 = fullYear % 100 !== 0;
-    }
-    tmp4 = tmp6;
+  let num = _typeof.default(arg0).getDay();
+  if (0 === num) {
+    num = 7;
   }
-  return tmp4;
+  return num;
 };
 export default exports.default;

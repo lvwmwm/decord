@@ -1,37 +1,18 @@
-// Module ID: 8536
-// Function ID: 8537
+// Module ID: 8531
+// Function ID: 8532
 // Name: useUserProfileBannerHeight
-// Dependencies: [7487, 558, 568, 1482, 2]
+// Dependencies: [7485, 1478, 2]
+// Exports: default
 
-// Module 8536 (useUserProfileBannerHeight)
-import c from "c" /* 568 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import Constants from "Constants" /* 7487 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8531 (useUserProfileBannerHeight)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import Constants from "Constants" /* 7485 */;
 import size from "module_2" /* 2 */;
 
 const BANNER_ASPECT_RATIO = Constants.BANNER_ASPECT_RATIO;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileBannerHeight.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(2);
-  const width = useWindowDimensionsDefault().width;
-  let bound = width;
-  if (null != arg0) {
-    const _Math = Math;
-    bound = Math.min(width, arg0);
-  }
-  if (cResult[0] !== bound) {
-    const _Math2 = Math;
-    const rounded = Math.round(bound / BANNER_ASPECT_RATIO);
-    cResult[0] = bound;
-    cResult[1] = rounded;
-    let tmp4 = rounded;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : ((arg0) => {
+export default function useUserProfileBannerHeight(arg0) {
   const width = useWindowDimensionsDefault().width;
   let bound = width;
   if (null != arg0) {
@@ -39,4 +20,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     bound = Math.min(width, arg0);
   }
   return Math.round(bound / BANNER_ASPECT_RATIO);
-});
+};

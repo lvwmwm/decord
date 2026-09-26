@@ -1,506 +1,173 @@
-// Module ID: 16194
-// Function ID: 16195
+// Module ID: 16198
+// Function ID: 16199
 // Name: SettingsPrivacyAndSafetyGuildSelectActionSheet
-// Dependencies: [32, 19, 2067, 5689, 16193, 21, 4790, 580, 5021, 2059, 1119, 558, 568, 504, 4757, 14991, 5831, 11987, 5693, 2]
+// Dependencies: [32, 19, 2063, 5687, 16197, 21, 4788, 576, 5019, 2055, 1115, 504, 4755, 12105, 14995, 5833, 5691, 2]
+// Exports: default
 
-// Module 16194 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5021 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5693 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11987 */;
+// Module 16198 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
+import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5689 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SortedGuildStore from "SortedGuildStore" /* 5687 */;
 
-const require = globalThis.__r;
-
-require = fn;
-function queryGuilds(query) {
-  let obj = { type: InteractionComponentTypes.SelectOptionType.GUILD, guild: null, label: null, value: null };
-  const obj3 = { id: value, name: null };
-  const intl = util.intl;
-  obj3.name = intl.string(util.t["32u1Dx"]);
-  obj.guild = GuildRecordUtils.dangerouslyConstructGuildRecordFromUntypedObject(obj3);
-  const intl2 = util.intl;
-  obj.label = intl2.string(util.t["32u1Dx"]);
-  obj.value = value;
-  const items = [obj];
-  if (0 === query.length) {
-    const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
-    let reduced = flattenedGuildIds.reduce((arr, item) => {
-      guild = guild.getGuild(item);
-      if (null != guild) {
-        const obj = { type: require("InteractionComponentTypes").SelectOptionType.GUILD, value: null, label: null, guild: null };
-        ({ id: obj.value, name: obj.label } = guild);
-        obj.guild = guild;
-        arr.push(obj);
-      }
-      return arr;
-    }, items);
-  } else {
-    const obj5 = { query };
-    reduced = AutocompleteUtilsDefault.queryGuilds(obj5).map((record) => {
-      record = record.record;
-      return { type: require("InteractionComponentTypes").SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
-    });
-    const queryGuildsResult = AutocompleteUtilsDefault.queryGuilds(obj5);
-  }
-  return reduced;
-}
-const UserSettingsSafetySelectedGuildStore = fn(16193);
+const require = fn;
+const UserSettingsSafetySelectedGuildStore = fn(16197);
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_7, setSelectedGuildId: closure_8, useUserSafetySettingsSelectedGuildStore: closure_9 } = UserSettingsSafetySelectedGuildStore);
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { iconContainer: { marginRight: nativeDefault.space.PX_12 } };
 let closure_11 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let stringResult = dependencyMap;
-  const cResult = selectedGuildId(568).c(6);
-  selectedGuildId = closure_9().selectedGuildId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== selectedGuildId) {
-    const fn = function n() {
-      return GuildStore.getGuild(selectedGuildId);
-    };
-    cResult[1] = selectedGuildId;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = selectedGuildId(568);
-  const stateFromStores = selectedGuildId(504).useStateFromStores(first, tmp6);
-  if (selectedGuildId !== closure_7) {
-    if (null != stateFromStores) {
-      if (cResult[4] !== stateFromStores) {
-        const obj2 = { type: tmp(5021).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
-        ({ name: obj3.label, id: obj3.value } = stateFromStores);
-        cResult[4] = stateFromStores;
-        cResult[5] = obj2;
-        let tmp10 = obj2;
-      } else {
-        tmp10 = cResult[5];
-      }
-      return tmp10;
-    }
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { type: tmp(5021).SelectOptionType.GUILD, guild: null, label: null, value: null };
-    const obj5 = { id: tmp8, name: null };
-    const intl = tmp(1119).intl;
-    obj5.name = intl.string(tmp(1119).t["32u1Dx"]);
-    obj4.guild = tmp(2059).dangerouslyConstructGuildRecordFromUntypedObject(obj5);
-    const intl2 = tmp(1119).intl;
-    stringResult = intl2.string(tmp(1119).t["32u1Dx"]);
-    obj4.label = stringResult;
-    obj4.value = tmp8;
-    cResult[3] = obj4;
-    const tmpResult2 = tmp(2059);
-  }
-}) : (() => {
-  const selectedGuildId = closure_9().selectedGuildId;
-  const items = [GuildStore];
-  const stateFromStores = selectedGuildId(504).useStateFromStores(items, () => GuildStore.getGuild(selectedGuildId));
-  if (selectedGuildId !== value) {
-    if (null != stateFromStores) {
-      let obj3 = { type: tmp(5021).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
-      ({ name: obj2.label, id: obj2.value } = stateFromStores);
-    }
-    return obj3;
-  }
-  const obj4 = { type: selectedGuildId(5021).SelectOptionType.GUILD, guild: null, label: null, value: null };
-  const obj = selectedGuildId(504);
-  const obj5 = { id: value, name: null };
-  const intl = tmp(1119).intl;
-  obj5.name = intl.string(selectedGuildId(1119).t["32u1Dx"]);
-  obj4.guild = selectedGuildId(2059).dangerouslyConstructGuildRecordFromUntypedObject(obj5);
-  const intl2 = tmp(1119).intl;
-  obj4.label = intl2.string(selectedGuildId(1119).t["32u1Dx"]);
-  obj4.value = value;
-  obj3 = obj4;
-});
-ReactCompilerGating = fn(558);
-let obj3 = { marginRight: nativeDefault.space.PX_12 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsPrivacyAndSafetyGuildSelectActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = iter(568).c(18);
-  let tmp4 = closure_11();
-  const tmp5 = _slicedToArray(noop.useState(""), 2);
-  const first = tmp5[0];
-  iter = closure_12();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { maxValues: 1, minValues: 1, placeholder: null };
-    const intl = tmp(1119).intl;
-    obj2.placeholder = intl.string(tmp(1119).t["ZImm/x"]);
-    cResult[0] = obj2;
-    let first1 = obj2;
-  } else {
-    first1 = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h(arg0) {
-      return queryGuilds(arg0);
-    };
-    cResult[1] = fn;
-    let tmp8 = fn;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== first) {
-    const tmp8Result = tmp8(first);
-    cResult[2] = first;
-    cResult[3] = tmp8Result;
-    let tmp9 = tmp8Result;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        obj = closure_1(closure_1_2[14]);
-        return obj.hideActionSheet();
-      }
-    }
-    cResult[4] = L;
-  } else {
-    class L {
-      constructor() {
-        obj = closure_1(closure_1_2[14]);
-        return obj.hideActionSheet();
-      }
-    }
-  }
-  importDefault = tmp11;
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        obj = closure_1(closure_1_2[14]);
-        return obj.hideActionSheet();
-      }
-    }
-    cResult[5] = tmp13;
-    const tmp12 = tmp13;
-  } else {
-    class L {
-      constructor() {
-        obj = closure_1(closure_1_2[14]);
-        return obj.hideActionSheet();
-      }
-    }
-  }
-  if (cResult[6] !== iter.value) {
-    class L {
-      constructor() {
-        obj = closure_1(closure_1_2[14]);
-        return obj.hideActionSheet();
-      }
-    }
-    cResult[6] = iter.value;
-    cResult[7] = tmp15;
-  } else {
-    class L {
-      constructor() {
-        obj = closure_1(closure_1_2[14]);
-        return obj.hideActionSheet();
-      }
-    }
-  }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor(arg0) {
-        return arg0.label;
-      }
-    }
-    cResult[8] = T;
-    const tmp16 = T;
-  } else {
-    class T {
-      constructor(arg0) {
-        return arg0.label;
-      }
-    }
-  }
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
-      constructor(arg0) {
-        if (arg0.value === closure_1_7) {
-          tmp7 = closure_1_10;
-          tmp8 = closure_0;
-          tmp9 = closure_1_2;
-          tmp6 = closure_1_10(closure_0(closure_1_2[15]).GuildSelectDefaultIcon, {});
-        } else {
-          tmp = closure_1_10;
-          tmp2 = closure_1;
-          tmp3 = closure_1_2;
-          obj = { guild: null, size: null };
-          obj.guild = arg0.guild;
-          tmp5 = closure_0;
-          tmp4 = closure_1(closure_1_2[16]);
-          obj.size = closure_0(closure_1_2[16]).GuildIconSizes.SMALL_32;
-          tmp6 = closure_1_10(tmp4, obj);
-        }
-        return tmp6;
-      }
-    }
-    cResult[9] = U;
-    const tmp17 = U;
-  } else {
-    class U {
-      constructor(arg0) {
-        if (arg0.value === closure_1_7) {
-          tmp7 = closure_1_10;
-          tmp8 = closure_0;
-          tmp9 = closure_1_2;
-          tmp6 = closure_1_10(closure_0(closure_1_2[15]).GuildSelectDefaultIcon, {});
-        } else {
-          tmp = closure_1_10;
-          tmp2 = closure_1;
-          tmp3 = closure_1_2;
-          obj = { guild: null, size: null };
-          obj.guild = arg0.guild;
-          tmp5 = closure_0;
-          tmp4 = closure_1(closure_1_2[16]);
-          obj.size = closure_0(closure_1_2[16]).GuildIconSizes.SMALL_32;
-          tmp6 = closure_1_10(tmp4, obj);
-        }
-        return tmp6;
-      }
-    }
-  }
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor(arg0) {
-        if (arg0.value === closure_1_7) {
-          tmp7 = closure_1_10;
-          tmp8 = closure_0;
-          tmp9 = closure_1_2;
-          tmp6 = closure_1_10(closure_0(closure_1_2[15]).GuildSelectDefaultIcon, { size: "xs" });
-        } else {
-          tmp = closure_1_10;
-          tmp2 = closure_1;
-          tmp3 = closure_1_2;
-          obj = { guild: null, size: null };
-          obj.guild = arg0.guild;
-          tmp5 = closure_0;
-          tmp4 = closure_1(closure_1_2[16]);
-          obj.size = closure_0(closure_1_2[16]).GuildIconSizes.XSMALL;
-          tmp6 = closure_1_10(tmp4, obj);
-        }
-        return tmp6;
-      }
-    }
-    cResult[10] = P;
-    const tmp18 = P;
-  } else {
-    class P {
-      constructor(arg0) {
-        if (arg0.value === closure_1_7) {
-          tmp7 = closure_1_10;
-          tmp8 = closure_0;
-          tmp9 = closure_1_2;
-          tmp6 = closure_1_10(closure_0(closure_1_2[15]).GuildSelectDefaultIcon, { size: "xs" });
-        } else {
-          tmp = closure_1_10;
-          tmp2 = closure_1;
-          tmp3 = closure_1_2;
-          obj = { guild: null, size: null };
-          obj.guild = arg0.guild;
-          tmp5 = closure_0;
-          tmp4 = closure_1(closure_1_2[16]);
-          obj.size = closure_0(closure_1_2[16]).GuildIconSizes.XSMALL;
-          tmp6 = closure_1_10(tmp4, obj);
-        }
-        return tmp6;
-      }
-    }
-  }
-  if (cResult[11] !== iter) {
-    class P {
-      constructor(arg0) {
-        if (arg0.value === closure_1_7) {
-          tmp7 = closure_1_10;
-          tmp8 = closure_0;
-          tmp9 = closure_1_2;
-          tmp6 = closure_1_10(closure_0(closure_1_2[15]).GuildSelectDefaultIcon, { size: "xs" });
-        } else {
-          tmp = closure_1_10;
-          tmp2 = closure_1;
-          tmp3 = closure_1_2;
-          obj = { guild: null, size: null };
-          obj.guild = arg0.guild;
-          tmp5 = closure_0;
-          tmp4 = closure_1(closure_1_2[16]);
-          obj.size = closure_0(closure_1_2[16]).GuildIconSizes.XSMALL;
-          tmp6 = closure_1_10(tmp4, obj);
-        }
-        return tmp6;
-      }
-    }
-    tmp20[0] = iter;
-    cResult[11] = iter;
-    cResult[12] = tmp20;
-  } else {
-    class P {
-      constructor(arg0) {
-        if (arg0.value === closure_1_7) {
-          tmp7 = closure_1_10;
-          tmp8 = closure_0;
-          tmp9 = closure_1_2;
-          tmp6 = closure_1_10(closure_0(closure_1_2[15]).GuildSelectDefaultIcon, { size: "xs" });
-        } else {
-          tmp = closure_1_10;
-          tmp2 = closure_1;
-          tmp3 = closure_1_2;
-          obj = { guild: null, size: null };
-          obj.guild = arg0.guild;
-          tmp5 = closure_0;
-          tmp4 = closure_1(closure_1_2[16]);
-          obj.size = closure_0(closure_1_2[16]).GuildIconSizes.XSMALL;
-          tmp6 = closure_1_10(tmp4, obj);
-        }
-        return tmp6;
-      }
-    }
-  }
-  if (cResult[13] === tmp14) {
-    class P {
-      constructor(arg0) {
-        if (arg0.value === closure_1_7) {
-          tmp7 = closure_1_10;
-          tmp8 = closure_0;
-          tmp9 = closure_1_2;
-          tmp6 = closure_1_10(closure_0(closure_1_2[15]).GuildSelectDefaultIcon, { size: "xs" });
-        } else {
-          tmp = closure_1_10;
-          tmp2 = closure_1;
-          tmp3 = closure_1_2;
-          obj = { guild: null, size: null };
-          obj.guild = arg0.guild;
-          tmp5 = closure_0;
-          tmp4 = closure_1(closure_1_2[16]);
-          obj.size = closure_0(closure_1_2[16]).GuildIconSizes.XSMALL;
-          tmp6 = closure_1_10(tmp4, obj);
-        }
-        return tmp6;
-      }
-    }
-  }
-  let obj = iter(568);
-  const obj3 = { onPressOptionItem: tmp12, renderHeaderIcon: tmp18, renderIcon: tmp17, iconContainerStyle: tmp4.iconContainer, selectionActionComponent: first1, options: tmp9, selectedCount: 1, selectedOptions: tmp19, isSelected: tmp14, submitSelection: tmp11, onQueryChange: tmp5[1], itemAccessibilityLabel: tmp16, allowEmpty: false, expanded: true };
-  cResult[13] = tmp14;
-  cResult[14] = tmp9;
-  cResult[15] = tmp4.iconContainer;
-  cResult[16] = tmp19;
-  cResult[17] = jsx(SelectComponentActionSheetDefault, { onPressOptionItem: tmp12, renderHeaderIcon: tmp18, renderIcon: tmp17, iconContainerStyle: tmp4.iconContainer, selectionActionComponent: first1, options: tmp9, selectedCount: 1, selectedOptions: tmp19, isSelected: tmp14, submitSelection: tmp11, onQueryChange: tmp5[1], itemAccessibilityLabel: tmp16, allowEmpty: false, expanded: true });
-}) : (() => {
+export default function SettingsPrivacyAndSafetyGuildSelectActionSheet() {
   const tmp2 = _slicedToArray(noop.useState(""), 2);
   const first = tmp2[0];
-  let tmp4 = closure_12();
-  importDefault = tmp4;
-  let obj = { maxValues: 1, minValues: 1, placeholder: null };
-  const intl = first(callback[10]).intl;
-  obj.placeholder = intl.string(first(callback[10]).t["ZImm/x"]);
-  callback = noop.useCallback((arg0) => queryGuilds(arg0), []);
-  const items = [first, callback];
-  const memo = noop.useMemo(() => callback(first), items);
-  const obj2 = {
-    onPressOptionItem(arg0, guild) {
-      closure_1_8(guild.guild.id);
-      closure_1(callback[14]).hideActionSheet();
-    },
-    renderHeaderIcon(value) {
-      if (value.value === closure_1_7) {
-        let tmp6 = jsx(first(callback[15]).GuildSelectDefaultIcon, { size: "xs" });
+  const selectedGuildId = closure_9().selectedGuildId;
+  closure_129_0 = selectedGuildId;
+  const tmp = closure_11();
+  let items = [GuildStore];
+  const stateFromStores = first(callback[11]).useStateFromStores(items, () => GuildStore.getGuild(first));
+  if (selectedGuildId !== value) {
+    if (null != stateFromStores) {
+      let obj4 = { type: tmp4(tmp5[8]).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
+      ({ name: obj3.label, id: obj3.value } = stateFromStores);
+    }
+    let obj5 = { maxValues: 1, minValues: 1, placeholder: null };
+    function submitSelection() {
+      return obj4(callback[12]).hideActionSheet();
+    }
+    const intl3 = tmp4(tmp5[10]).intl;
+    obj5.placeholder = intl3.string(tmp4(tmp5[10]).t["ZImm/x"]);
+    callback = obj.useCallback((query) => {
+      let obj = { type: first(callback[8]).SelectOptionType.GUILD, guild: null, label: null, value: null };
+      const obj3 = { id: value, name: null };
+      const intl = first(callback[10]).intl;
+      obj3.name = intl.string(first(callback[10]).t["32u1Dx"]);
+      obj.guild = first(callback[9]).dangerouslyConstructGuildRecordFromUntypedObject(obj3);
+      const intl2 = first(callback[10]).intl;
+      obj.label = intl2.string(first(callback[10]).t["32u1Dx"]);
+      obj.value = value;
+      const items = [obj];
+      if (0 === query.length) {
+        flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+        let reduced = flattenedGuildIds.reduce((arr, item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            const obj = { type: first(5019).SelectOptionType.GUILD, value: null, label: null, guild: null };
+            ({ id: obj.value, name: obj.label } = guild);
+            obj.guild = guild;
+            arr.push(obj);
+          }
+          return arr;
+        }, items);
       } else {
-        const obj = { guild: value.guild, size: first(callback[16]).GuildIconSizes.XSMALL };
-        tmp6 = jsx(closure_1(callback[16]), { guild: value.guild, size: first(callback[16]).GuildIconSizes.XSMALL });
-        const tmp4 = closure_1(callback[16]);
+        obj4 = obj4(callback[16]);
+        const obj5 = { query };
+        reduced = obj4.queryGuilds(obj5).map((record) => {
+          record = record.record;
+          return { type: first(5019).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+        });
+        const queryGuildsResult = obj4.queryGuilds(obj5);
       }
-      return tmp6;
-    },
-    renderIcon(value) {
-      if (value.value === closure_1_7) {
-        let tmp6 = jsx(first(callback[15]).GuildSelectDefaultIcon, {});
-      } else {
-        const obj = { guild: value.guild, size: first(callback[16]).GuildIconSizes.SMALL_32 };
-        tmp6 = jsx(closure_1(callback[16]), { guild: value.guild, size: first(callback[16]).GuildIconSizes.SMALL_32 });
-        const tmp4 = closure_1(callback[16]);
-      }
-      return tmp6;
-    },
-    iconContainerStyle: closure_11().iconContainer,
-    selectionActionComponent: obj,
-    options: memo,
-    selectedCount: 1,
-    selectedOptions: null,
-    isSelected(value) {
-      return value.value === closure_1.value;
-    },
-    submitSelection() {
-      return closure_1(callback[14]).hideActionSheet();
-    },
-    onQueryChange: tmp2[1],
-    itemAccessibilityLabel(label) {
+      return reduced;
+    }, []);
+    const items1 = [first, callback];
+    const memo = obj.useMemo(() => callback(first), items1);
+    const obj6 = {
+      onPressOptionItem(arg0, guild) {
+          closure_1_8(guild.guild.id);
+          obj4(callback[12]).hideActionSheet();
+        },
+      renderHeaderIcon(value) {
+          if (value.value === closure_1_7) {
+            let tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, { size: "xs" });
+          } else {
+            const obj = { guild: value.guild, size: first(callback[15]).GuildIconSizes.XSMALL };
+            tmp6 = jsx(obj4(callback[15]), { guild: value.guild, size: first(callback[15]).GuildIconSizes.XSMALL });
+            const tmp4 = obj4(callback[15]);
+          }
+          return tmp6;
+        },
+      renderIcon(value) {
+          if (value.value === closure_1_7) {
+            let tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, {});
+          } else {
+            const obj = { guild: value.guild, size: first(callback[15]).GuildIconSizes.SMALL_32 };
+            tmp6 = jsx(obj4(callback[15]), { guild: value.guild, size: first(callback[15]).GuildIconSizes.SMALL_32 });
+            const tmp4 = obj4(callback[15]);
+          }
+          return tmp6;
+        },
+      iconContainerStyle: tmp.iconContainer,
+      selectionActionComponent: obj5,
+      options: memo,
+      selectedCount: 1,
+      selectedOptions: null,
+      isSelected: null,
+      submitSelection: null,
+      onQueryChange: null,
+      itemAccessibilityLabel: null,
+      allowEmpty: false,
+      expanded: true
+    };
+    const items2 = [obj4];
+    obj6.selectedOptions = items2;
+    obj6.isSelected = function isSelected(value) {
+      return value.value === obj4.value;
+    };
+    obj6.submitSelection = submitSelection;
+    obj6.onQueryChange = tmp2[1];
+    obj6.itemAccessibilityLabel = function itemAccessibilityLabel(label) {
       return label.label;
-    },
-    allowEmpty: false,
-    expanded: true
-  };
-  const items1 = [tmp4];
-  obj2.selectedOptions = items1;
-  return jsx(require("SelectComponentActionSheet"), {
-    onPressOptionItem(arg0, guild) {
-      closure_1_8(guild.guild.id);
-      closure_1(callback[14]).hideActionSheet();
-    },
-    renderHeaderIcon(value) {
-      if (value.value === closure_1_7) {
-        let tmp6 = jsx(first(callback[15]).GuildSelectDefaultIcon, { size: "xs" });
-      } else {
-        const obj = { guild: value.guild, size: first(callback[16]).GuildIconSizes.XSMALL };
-        tmp6 = jsx(closure_1(callback[16]), { guild: value.guild, size: first(callback[16]).GuildIconSizes.XSMALL });
-        const tmp4 = closure_1(callback[16]);
-      }
-      return tmp6;
-    },
-    renderIcon(value) {
-      if (value.value === closure_1_7) {
-        let tmp6 = jsx(first(callback[15]).GuildSelectDefaultIcon, {});
-      } else {
-        const obj = { guild: value.guild, size: first(callback[16]).GuildIconSizes.SMALL_32 };
-        tmp6 = jsx(closure_1(callback[16]), { guild: value.guild, size: first(callback[16]).GuildIconSizes.SMALL_32 });
-        const tmp4 = closure_1(callback[16]);
-      }
-      return tmp6;
-    },
-    iconContainerStyle: closure_11().iconContainer,
-    selectionActionComponent: obj,
-    options: memo,
-    selectedCount: 1,
-    selectedOptions: null,
-    isSelected(value) {
-      return value.value === closure_1.value;
-    },
-    submitSelection() {
-      return closure_1(callback[14]).hideActionSheet();
-    },
-    onQueryChange: tmp2[1],
-    itemAccessibilityLabel(label) {
-      return label.label;
-    },
-    allowEmpty: false,
-    expanded: true
-  });
-});
+    };
+    return jsx(obj4(tmp5[13]), {
+      onPressOptionItem(arg0, guild) {
+          closure_1_8(guild.guild.id);
+          obj4(callback[12]).hideActionSheet();
+        },
+      renderHeaderIcon(value) {
+          if (value.value === closure_1_7) {
+            let tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, { size: "xs" });
+          } else {
+            const obj = { guild: value.guild, size: first(callback[15]).GuildIconSizes.XSMALL };
+            tmp6 = jsx(obj4(callback[15]), { guild: value.guild, size: first(callback[15]).GuildIconSizes.XSMALL });
+            const tmp4 = obj4(callback[15]);
+          }
+          return tmp6;
+        },
+      renderIcon(value) {
+          if (value.value === closure_1_7) {
+            let tmp6 = jsx(first(callback[14]).GuildSelectDefaultIcon, {});
+          } else {
+            const obj = { guild: value.guild, size: first(callback[15]).GuildIconSizes.SMALL_32 };
+            tmp6 = jsx(obj4(callback[15]), { guild: value.guild, size: first(callback[15]).GuildIconSizes.SMALL_32 });
+            const tmp4 = obj4(callback[15]);
+          }
+          return tmp6;
+        },
+      iconContainerStyle: tmp.iconContainer,
+      selectionActionComponent: obj5,
+      options: memo,
+      selectedCount: 1,
+      selectedOptions: null,
+      isSelected: null,
+      submitSelection: null,
+      onQueryChange: null,
+      itemAccessibilityLabel: null,
+      allowEmpty: false,
+      expanded: true
+    });
+  }
+  const obj7 = { type: first(callback[8]).SelectOptionType.GUILD, guild: null, label: null, value: null };
+  const obj2 = first(callback[11]);
+  const obj8 = { id: value, name: null };
+  let intl = tmp4(tmp5[10]).intl;
+  obj8.name = intl.string(first(callback[10]).t["32u1Dx"]);
+  obj7.guild = first(callback[9]).dangerouslyConstructGuildRecordFromUntypedObject(obj8);
+  let intl2 = tmp4(tmp5[10]).intl;
+  obj7.label = intl2.string(first(callback[10]).t["32u1Dx"]);
+  obj7.value = value;
+  obj4 = obj7;
+};

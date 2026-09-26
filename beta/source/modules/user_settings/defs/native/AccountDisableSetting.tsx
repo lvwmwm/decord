@@ -1,13 +1,13 @@
-// Module ID: 15087
-// Function ID: 15088
+// Module ID: 15091
+// Function ID: 15092
 // Name: AccountDisableSetting
-// Dependencies: [8270, 15086, 11630, 1119, 2]
+// Dependencies: [8265, 15090, 11754, 1115, 2]
 
-// Module 15087 (AccountDisableSetting)
-import util from "util" /* 1119 */;
-import SettingsConstants from "SettingsConstants" /* 8270 */;
-import handleDisableAccountDefault from "handleDisableAccount" /* 15086 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
+// Module 15091 (AccountDisableSetting)
+import util from "util" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 8265 */;
+import handleDisableAccountDefault from "handleDisableAccount" /* 15090 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
 import size from "module_2" /* 2 */;
 
 const pressable = SettingBuilders.createPressable({

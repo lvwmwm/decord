@@ -1,11 +1,11 @@
-// Module ID: 8315
-// Function ID: 8316
+// Module ID: 8310
+// Function ID: 8311
 // Name: getRoleIcon
-// Dependencies: [7465, 1119, 2]
+// Dependencies: [7463, 1115, 2]
 // Exports: getRoleIcon
 
-// Module 8315 (getRoleIcon)
-import useRoleIconProps from "useRoleIconProps" /* 7465 */;
+// Module 8310 (getRoleIcon)
+import useRoleIconProps from "useRoleIconProps" /* 7463 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/getRoleIcon.tsx");
@@ -25,9 +25,9 @@ export const getRoleIcon = function getRoleIcon(size) {
       surrogates = unicodeEmoji.surrogates;
     }
     obj4.unicodeEmoji = surrogates;
-    const intl = tmp(1119).intl;
+    const intl = tmp(1115).intl;
     const obj6 = { name: roleIconProps.name };
-    obj4.alt = intl.formatToPlainString(tmp(1119).t["9+YWrE"], obj6);
+    obj4.alt = intl.formatToPlainString(tmp(1115).t["9+YWrE"], obj6);
     return obj4;
   }
 };

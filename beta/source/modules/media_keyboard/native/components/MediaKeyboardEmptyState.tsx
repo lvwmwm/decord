@@ -1,103 +1,49 @@
-// Module ID: 10992
-// Function ID: 10993
+// Module ID: 10954
+// Function ID: 10955
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 4999, 21, 4790, 580, 558, 568, 4786, 5220, 7656, 1119, 10993, 10987, 10994, 2]
+// Dependencies: [19, 17, 4997, 21, 4788, 576, 4784, 5218, 7654, 1115, 10955, 10949, 10956, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10992 (MediaKeyboardEmptyState)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import SettingsIcon from "SettingsIcon" /* 7656 */;
-import CameraIcon from "CameraIcon" /* 10987 */;
-import _modDef10993 from "module_10993" /* 10993 */;
-import _modDef10994 from "module_10994" /* 10994 */;
+// Module 10954 (MediaKeyboardEmptyState)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import SettingsIcon from "SettingsIcon" /* 7654 */;
+import CameraIcon from "CameraIcon" /* 10949 */;
+import _modDef10955 from "module_10955" /* 10955 */;
+import _modDef10956 from "module_10956" /* 10956 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
+class MediaKeyboardEmptyState {
+  constructor(arg0) {
+    ({ actionIcon, actionLabel, actionPress, imageSource, label } = global);
+    tmp = closure_8();
+    obj = { style: tmp.container, children: null };
+    items = [, , ];
+    items[0] = jsx(Image, { source: imageSource });
+    obj1 = { variant: "text-sm/semibold", color: "text-muted", style: tmp.label, children: label };
+    items[1] = jsx(closure_0(closure_2[6]).Text, obj1);
+    items[2] = jsx(closure_0(closure_2[7]).Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
+    obj.children = items;
+    return jsxs(View, obj);
+  }
+}
 get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const NativePermissionStatus = fn(4999).NativePermissionStatus;
+const NativePermissionStatus = fn(4997).NativePermissionStatus;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" }, label: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" };
 obj2.label = { textAlign: "center", marginVertical: nativeDefault.space.PX_16 };
-let closure_8 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(14);
-  ({ actionIcon, actionLabel, actionPress, imageSource, label } = arg0);
-  const tmp4 = closure_8();
-  if (cResult[0] !== imageSource) {
-    const obj2 = { source: imageSource };
-    const tmp8 = timestampProducer(React3, obj2);
-    cResult[0] = imageSource;
-    cResult[1] = tmp8;
-    let tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === label) {
-    if (cResult[3] === tmp4.label) {
-      let tmp9 = cResult[4];
-    }
-    if (cResult[5] === actionIcon) {
-      if (cResult[6] === actionLabel) {
-        if (cResult[7] === actionPress) {
-          let tmp11 = cResult[8];
-        }
-        if (cResult[9] === tmp4.container) {
-          if (cResult[10] === tmp5) {
-            if (cResult[11] === tmp9) {
-              if (cResult[12] === tmp11) {
-                let tmp14 = cResult[13];
-              }
-              return tmp14;
-            }
-          }
-        }
-        const obj3 = { style: tmp4.container, children: null };
-        const items = [tmp5, tmp9, tmp11];
-        obj3.children = items;
-        const tmp17 = React5(React4, obj3);
-        cResult[9] = tmp4.container;
-        cResult[10] = tmp5;
-        cResult[11] = tmp9;
-        cResult[12] = tmp11;
-        cResult[13] = tmp17;
-        tmp14 = tmp17;
-      }
-    }
-    const obj4 = { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress };
-    const tmp13 = timestampProducer(tmp(5220).Button, obj4);
-    cResult[5] = actionIcon;
-    cResult[6] = actionLabel;
-    cResult[7] = actionPress;
-    cResult[8] = tmp13;
-    tmp11 = tmp13;
-  }
-  const tmp10 = timestampProducer(Text_Text.Text, { variant: "text-sm/semibold", color: "text-muted", style: tmp4.label, children: label });
-  cResult[2] = label;
-  cResult[3] = tmp4.label;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : ((arg0) => {
-  ({ actionIcon, actionLabel, actionPress, imageSource, label } = arg0);
-  const tmp = closure_8();
-  const obj = { style: tmp.container, children: null };
-  const items = [timestampProducer(React3, { source: imageSource }), timestampProducer(Text_Text.Text, { variant: "text-sm/semibold", color: "text-muted", style: tmp.label, children: label }), timestampProducer(components_Button_Button.Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress })];
-  obj.children = items;
-  return React5(React4, obj);
-});
-let closure_9 = tmp5;
+const React6 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardEmptyState.tsx");
 
-export default tmp5;
+export default MediaKeyboardEmptyState;
 export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComponentOrNull(photosEmpty) {
   ({ photoPermissionStatus, showCameraButton } = photosEmpty);
   if (showCameraButton === undefined) {
@@ -111,19 +57,19 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl3 = util.intl;
           obj2.actionLabel = intl3.string(util.t.JuXTi6);
           obj2.actionPress = tmp2;
-          obj2.imageSource = _modDef10993;
+          obj2.imageSource = _modDef10955;
           const intl4 = util.intl;
           obj2.label = intl4.string(util.t["5g7NcN"]);
-          return timestampProducer(closure_9, obj2);
+          return timestampProducer(MediaKeyboardEmptyState, obj2);
         } else if (showCameraButton) {
           const obj = { actionIcon: timestampProducer(CameraIcon.CameraIcon, { color: "white", size: "sm" }), actionLabel: null, actionPress: null, imageSource: null, label: null };
           const intl = util.intl;
           obj.actionLabel = intl.string(util.t.tpoWUd);
           obj.actionPress = tmp;
-          obj.imageSource = _modDef10994;
+          obj.imageSource = _modDef10956;
           const intl2 = util.intl;
           obj.label = intl2.string(util.t.YOvRBZ);
-          return timestampProducer(closure_9, obj);
+          return timestampProducer(MediaKeyboardEmptyState, obj);
         }
       }
     }
@@ -132,8 +78,8 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
   const intl5 = util.intl;
   obj3.actionLabel = intl5.string(util.t["457oeG"]);
   obj3.actionPress = photosEmpty.onPressPrivacySettings;
-  obj3.imageSource = _modDef10993;
+  obj3.imageSource = _modDef10955;
   const intl6 = util.intl;
   obj3.label = intl6.string(util.t["8p9jGu"]);
-  return timestampProducer(closure_9, obj3);
+  return timestampProducer(MediaKeyboardEmptyState, obj3);
 };

@@ -1,13 +1,13 @@
-// Module ID: 10396
-// Function ID: 10397
+// Module ID: 11208
+// Function ID: 11209
 // Name: ChannelSafetyWarningsStore
-// Dependencies: [2045, 1095, 504, 577, 2]
+// Dependencies: [2041, 1091, 504, 573, 2]
 
-// Module 10396 (ChannelSafetyWarningsStore)
+// Module 11208 (ChannelSafetyWarningsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 function handleConnectionOpen() {
   closure_4 = {};

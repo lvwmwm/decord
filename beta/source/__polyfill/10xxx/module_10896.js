@@ -1,16 +1,17 @@
 // Module ID: 10896
 // Function ID: 10897
-// Dependencies: [41, 42, 93, 95, 98, 10764, 10893, 10765, 10895]
+// Dependencies: [41, 42, 93, 95, 98, 10897, 10731, 10735]
 
 // Module 10896
-import _mod10895 from "module_10895" /* 10895 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import _mod10897 from "module_10897" /* 10897 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const RUMonthNameParser = require;
+const ENTimeUnitWithinFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,12 +31,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUMonthNameParser {
+const regExp = new RegExp("(?:within|in|for)\\s*(?:(?:pi\u00F9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(" + _mod10897.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(?:(?:pi\u00F9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(" + _mod10897.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitWithinFormatParser {
   constructor() {
     self = this;
-    tmp = c2(this, RUMonthNameParser);
+    tmp = c2(this, ENTimeUnitWithinFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(RUMonthNameParser);
+    obj = closure_4(ENTimeUnitWithinFormatParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -50,40 +53,22 @@ class RUMonthNameParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMonthNameParser, _mod10895.AbstractParserWithLeftBoundaryChecking);
+_inherits(ENTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "((?:\u0432)\\s*)?(" + RUMonthNameParser(10764).matchAnyPattern(RUMonthNameParser(10893).MONTH_DICTIONARY) + ")\\s*(?:[,-]?\\s*(" + RUMonthNameParser(10893).YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)";
+  key: "innerPattern",
+  value: function innerPattern(option) {
+    return option.option.forwardDate ? regExp1 : regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const formatted = index[2].toLowerCase();
-      if (index[0].length <= 3) {
-        if (!RUMonthNameParser(10893).FULL_MONTH_NAME_DICTIONARY[formatted]) {
-          return null;
-        }
-      }
-      const parsingResult = createParsingResult.createParsingResult(index.index, index.index + index[0].length);
-      const start = parsingResult.start;
-      start.imply("day", 1);
-      const tmp9 = RUMonthNameParser(10893).MONTH_DICTIONARY[formatted];
-      const start2 = parsingResult.start;
-      start2.assign("month", tmp9);
-      if (index[3]) {
-        const start4 = parsingResult.start;
-        start4.assign("year", tmp7(10893).parseYear(index[3]));
-      } else {
-        const start3 = parsingResult.start;
-        start3.imply("year", tmp7(10765).findYearClosestToRef(createParsingResult.refDate, 1, tmp9));
-      }
-      return parsingResult;
+    value: function innerExtract(reference, arg1) {
+      const ParsingComponents = ENTimeUnitWithinFormatParser(10731).ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, ENTimeUnitWithinFormatParser(10897).parseDuration(arg1[1]));
     }
   }
 ];
 
-export default _createClass(RUMonthNameParser, items);
+export default _createClass(ENTimeUnitWithinFormatParser, items);

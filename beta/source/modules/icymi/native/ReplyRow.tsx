@@ -1,21 +1,21 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 16852
+// Function ID: 16853
 // Name: ReplyRow
-// Dependencies: [19, 17, 21, 16805, 580, 558, 568, 4786, 9067, 5373, 2]
+// Dependencies: [19, 17, 21, 16795, 576, 5371, 4784, 9069, 2]
+// Exports: ContentInventoryReplyRow
 
-// Module 16862 (ReplyRow)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import Pressables from "Pressables" /* 5373 */;
-import ReactionIcon from "ReactionIcon" /* 9067 */;
+// Module 16852 (ReplyRow)
+import nativeDefault from "native" /* 576 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Pressables from "Pressables" /* 5371 */;
+import ReactionIcon from "ReactionIcon" /* 9069 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createICYMIStyles = fn(16805);
+const createICYMIStyles = fn(16795);
 let closure_6 = createICYMIStyles.createICYMIStyles((marginLeft) => {
   const obj = { separator: null, container: null, buttonContainer: null, feedbackContainer: null, icon: null, feedbackButtonIcon: null, input: null, contentInventoryPressable: null, contentInventoryContainer: null, contentInventoryText: null, replyContainer: null };
   const size = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: marginLeft.margin, width: "100%" };
@@ -38,79 +38,10 @@ let closure_6 = createICYMIStyles.createICYMIStyles((marginLeft) => {
   obj.replyContainer = { flexDirection: "row", alignItems: "center", marginLeft: marginLeft.inset, marginTop: marginLeft.margin };
   return obj;
 });
-const ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/icymi/native/ReplyRow.tsx");
 
-export const ContentInventoryReplyRow = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(17);
-  ({ reactText, onReply } = arg0);
-  const tmp4 = closure_6();
-  if (cResult[0] === reactText) {
-    if (cResult[1] === tmp4.contentInventoryText) {
-      let tmp5 = cResult[2];
-    }
-    if (cResult[3] !== tmp4.icon) {
-      const obj2 = { style: tmp4.icon, size: "custom" };
-      const tmp9 = React4(tmp(9067).ReactionIcon, obj2);
-      cResult[3] = tmp4.icon;
-      cResult[4] = tmp9;
-      let tmp7 = tmp9;
-    } else {
-      tmp7 = cResult[4];
-    }
-    if (cResult[5] === tmp4.contentInventoryContainer) {
-      if (cResult[6] === tmp5) {
-        if (cResult[7] === tmp7) {
-          let tmp10 = cResult[8];
-        }
-        if (cResult[9] === onReply) {
-          if (cResult[10] === reactText) {
-            if (cResult[11] === tmp4.contentInventoryPressable) {
-              if (cResult[12] === tmp10) {
-                let tmp14 = cResult[13];
-              }
-              if (cResult[14] === tmp4.replyContainer) {
-                if (cResult[15] === tmp14) {
-                  let tmp17 = cResult[16];
-                }
-                return tmp17;
-              }
-              const obj3 = { style: tmp4.replyContainer, children: tmp14 };
-              const tmp20 = React4(View, obj3);
-              cResult[14] = tmp4.replyContainer;
-              cResult[15] = tmp14;
-              cResult[16] = tmp20;
-              tmp17 = tmp20;
-            }
-          }
-        }
-        const obj4 = { accessibilityRole: "button", onPress: onReply, style: tmp4.contentInventoryPressable, accessibilityLabel: reactText, pointerEvents: "box-only", children: tmp10 };
-        const tmp16 = React4(tmp(5373).PressableOpacity, obj4);
-        cResult[9] = onReply;
-        cResult[10] = reactText;
-        cResult[11] = tmp4.contentInventoryPressable;
-        cResult[12] = tmp10;
-        cResult[13] = tmp16;
-        tmp14 = tmp16;
-      }
-    }
-    const obj5 = { style: tmp4.contentInventoryContainer, children: null };
-    const items = [tmp5, tmp7];
-    obj5.children = items;
-    const tmp13 = hasOwnProperty(View, obj5);
-    cResult[5] = tmp4.contentInventoryContainer;
-    cResult[6] = tmp5;
-    cResult[7] = tmp7;
-    cResult[8] = tmp13;
-    tmp10 = tmp13;
-  }
-  const tmp6 = React4(Text_Text.Text, { variant: "text-md/medium", color: "input-placeholder-text-default", lineClamp: 1, style: tmp4.contentInventoryText, children: reactText });
-  cResult[0] = reactText;
-  cResult[1] = tmp4.contentInventoryText;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : ((onPress) => {
+export const ContentInventoryReplyRow = function ContentInventoryReplyRow(onPress) {
   const reactText = onPress.reactText;
   const tmp = closure_6();
   const obj = { style: tmp.replyContainer, children: null };
@@ -121,4 +52,4 @@ export const ContentInventoryReplyRow = ReactCompilerGating.isReactCompilerEnabl
   obj2.children = hasOwnProperty(View, obj3);
   obj.children = React4(Pressables.PressableOpacity, obj2);
   return React4(View, obj);
-});
+};

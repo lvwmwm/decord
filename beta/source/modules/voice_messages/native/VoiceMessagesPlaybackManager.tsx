@@ -1,17 +1,17 @@
-// Module ID: 14863
-// Function ID: 14864
+// Module ID: 14853
+// Function ID: 14854
 // Name: VoiceMessagesPlaybackManager
-// Dependencies: [17, 4782, 2099, 1368, 14864, 1986, 577, 5146, 2]
+// Dependencies: [17, 4780, 2095, 1364, 14854, 1982, 573, 5144, 2]
 // Exports: handleVoiceMessageDeleted, pauseCurrentAudioPlayer, playCurrentAudioPlayer
 
-// Module 14863 (VoiceMessagesPlaybackManager)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5146 */;
-import NativeAudioPlayerModuleDefault from "NativeAudioPlayerModule" /* 14864 */;
+// Module 14853 (VoiceMessagesPlaybackManager)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5144 */;
+import NativeAudioPlayerModuleDefault from "NativeAudioPlayerModule" /* 14854 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4782 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import LifecycleManager from "LifecycleManager" /* 1986 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 import size from "module_2" /* 2 */;
 
 ({ AppState: c3, NativeModules: closure_4 } = get_ActivityIndicator);
@@ -34,7 +34,7 @@ class VoiceMessagesPlaybackManager extends tmp3 {
             const result1 = DCDAudioPlayerManager.handleVoiceMessageDeleted(id);
           }
         }
-        obj = applyArgumentsResult(1368);
+        obj = applyArgumentsResult(1364);
       }
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
@@ -62,7 +62,7 @@ class VoiceMessagesPlaybackManager extends tmp3 {
                 const result1 = DCDAudioPlayerManager2.maybePlayCurrentPlayer();
               }
             }
-            tmpResult = tmp(1368);
+            tmpResult = tmp(1364);
           }
         }
         if (tmp4) {
@@ -74,7 +74,7 @@ class VoiceMessagesPlaybackManager extends tmp3 {
               DCDAudioPlayerManager.pauseCurrentPlayer(true);
             }
           }
-          tmpResult2 = tmp(1368);
+          tmpResult2 = tmp(1364);
         }
         tmp4 = "active" !== state && "active" === appState;
       }

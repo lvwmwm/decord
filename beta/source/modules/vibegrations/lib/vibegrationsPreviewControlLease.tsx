@@ -1,15 +1,12 @@
-// Module ID: 13218
-// Function ID: 13219
+// Module ID: 13212
+// Function ID: 13213
 // Name: vibegrationsPreviewControlLease
-// Dependencies: [19, 558, 568, 2]
-// Exports: acquireVibegrationsControlLease, beginVibegrationsControlOperation, endVibegrationsControlOperation, getVibegrationsControlActiveProjectIds, isVibegrationsControlActive, releaseVibegrationsControlLeases
+// Dependencies: [19, 2]
+// Exports: acquireVibegrationsControlLease, beginVibegrationsControlOperation, endVibegrationsControlOperation, getVibegrationsControlActiveProjectIds, isVibegrationsControlActive, releaseVibegrationsControlLeases, useVibegrationsControlActive
 
-// Module 13218 (vibegrationsPreviewControlLease)
+// Module 13212 (vibegrationsPreviewControlLease)
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
-const require = fn;
 function emit() {
   const items = [...set];
   const iter = items[Symbol.iterator]();
@@ -30,10 +27,12 @@ function subscribeVibegrationsControl(arg0) {
 const map = new Map();
 let set = new Set();
 const map1 = new Map();
-const ReactCompilerGating = fn(558);
-function acquireVibegrationsControlLease(arg0) {
+const size = fn(2);
+let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPreviewControlLease.tsx");
+
+export const acquireVibegrationsControlLease = function acquireVibegrationsControlLease(arg0) {
   closure_0 = arg0;
-  value = timerId.get(arg0);
+  value = map.get(arg0);
   if (value == null) {
     const obj2 = { holders: 0, timers: null };
     const _Set = Set;
@@ -41,14 +40,13 @@ function acquireVibegrationsControlLease(arg0) {
     obj2.timers = set;
     value = obj2;
   }
-  dependencyMap = value;
   value.holders = value.holders + 1;
   function release() {
     if (!c2) {
       c2 = true;
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_1_3);
-      if (map.get(closure_0) === dependencyMap) {
+      if (map.get(closure_0) === closure_1_1) {
         const timers = tmp5.timers;
         timers.delete(tmp2);
         tmp5.holders = tmp5.holders - 1;
@@ -62,14 +60,14 @@ function acquireVibegrationsControlLease(arg0) {
       tmp4 = closure_0;
     }
   }
-  const result = timerId.set(arg0, value);
+  const result = map.set(arg0, value);
   c2 = false;
-  timerId = setTimeout(() => {
+  const timerId = setTimeout(() => {
     if (!c2) {
       c2 = true;
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_1_3);
-      if (map.get(closure_0) === dependencyMap) {
+      if (map.get(closure_0) === closure_1_1) {
         const timers = tmp5.timers;
         timers.delete(tmp2);
         tmp5.holders = tmp5.holders - 1;
@@ -85,33 +83,9 @@ function acquireVibegrationsControlLease(arg0) {
   }, 35000);
   const timers = value.timers;
   timers.add(timerId);
-  emit();
+  timerId();
   return release;
-}
-function endVibegrationsControlOperation(openResult) {
-  value = map1.get(openResult);
-  if (null != value) {
-    map1.delete(openResult);
-    const _clearTimeout = clearTimeout;
-    clearTimeout(value.timer);
-    value.release();
-  }
-}
-function isVibegrationsControlActive(openResult) {
-  value = map.get(openResult);
-  let num;
-  if (value != null) {
-    num = value.holders;
-  }
-  if (num == null) {
-    num = 0;
-  }
-  return num > 0;
-}
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPreviewControlLease.tsx");
-
-export { acquireVibegrationsControlLease };
+};
 export const CONTROL_OPERATION_IDLE_MS = 20000;
 export const beginVibegrationsControlOperation = function beginVibegrationsControlOperation(TableRowGroup) {
   closure_0 = TableRowGroup;
@@ -132,7 +106,7 @@ export const beginVibegrationsControlOperation = function beginVibegrationsContr
     closure_130_1 = undefined;
     closure_130_2 = undefined;
     closure_130_3 = undefined;
-    value3 = map.get(TableRowGroup);
+    let value3 = map.get(TableRowGroup);
     if (value3 == null) {
       const obj2 = { holders: 0, timers: null };
       const _Set2 = Set;
@@ -147,7 +121,7 @@ export const beginVibegrationsControlOperation = function beginVibegrationsContr
         c2 = true;
         const _clearTimeout = clearTimeout;
         clearTimeout(closure_1_3);
-        if (map.get(closure_0) === dependencyMap) {
+        if (map.get(closure_0) === closure_1_1) {
           const timers = tmp5.timers;
           timers.delete(tmp2);
           tmp5.holders = tmp5.holders - 1;
@@ -169,7 +143,7 @@ export const beginVibegrationsControlOperation = function beginVibegrationsContr
         c2 = true;
         const _clearTimeout = clearTimeout;
         clearTimeout(closure_1_3);
-        if (map.get(closure_0) === dependencyMap) {
+        if (map.get(closure_0) === closure_1_1) {
           const timers = tmp5.timers;
           timers.delete(tmp2);
           tmp5.holders = tmp5.holders - 1;
@@ -211,7 +185,7 @@ export const beginVibegrationsControlOperation = function beginVibegrationsContr
         c2 = true;
         const _clearTimeout = clearTimeout;
         clearTimeout(closure_1_3);
-        if (map.get(closure_0) === dependencyMap) {
+        if (map.get(closure_0) === closure_1_1) {
           const timers = tmp5.timers;
           timers.delete(tmp2);
           tmp5.holders = tmp5.holders - 1;
@@ -233,7 +207,7 @@ export const beginVibegrationsControlOperation = function beginVibegrationsContr
         c2 = true;
         const _clearTimeout = clearTimeout;
         clearTimeout(closure_1_3);
-        if (map.get(closure_0) === dependencyMap) {
+        if (map.get(closure_0) === closure_1_1) {
           const timers = tmp5.timers;
           timers.delete(tmp2);
           tmp5.holders = tmp5.holders - 1;
@@ -256,7 +230,15 @@ export const beginVibegrationsControlOperation = function beginVibegrationsContr
     const result3 = obj.set(TableRowGroup, obj6);
   }
 };
-export { endVibegrationsControlOperation };
+export const endVibegrationsControlOperation = function endVibegrationsControlOperation(openResult) {
+  value = map1.get(openResult);
+  if (null != value) {
+    map1.delete(openResult);
+    const _clearTimeout = clearTimeout;
+    clearTimeout(value.timer);
+    value.release();
+  }
+};
 export const releaseVibegrationsControlLeases = function releaseVibegrationsControlLeases(projectId) {
   value = map1.get(projectId);
   if (null != value) {
@@ -277,41 +259,25 @@ export const releaseVibegrationsControlLeases = function releaseVibegrationsCont
     emit();
   }
 };
-export { isVibegrationsControlActive };
+export const isVibegrationsControlActive = function isVibegrationsControlActive(openResult) {
+  value = map.get(openResult);
+  let num;
+  if (value != null) {
+    num = value.holders;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num > 0;
+};
 export const getVibegrationsControlActiveProjectIds = function getVibegrationsControlActiveProjectIds() {
   const items = [...map.keys()];
   return items;
 };
 export { subscribeVibegrationsControl };
-export const useVibegrationsControlActive = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function n() {
-      let tmp2 = null != closure_0;
-      if (tmp2) {
-        value = map.get(tmp);
-        let num;
-        if (value != null) {
-          num = value.holders;
-        }
-        if (num == null) {
-          num = 0;
-        }
-        tmp2 = num > 0;
-      }
-      return tmp2;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    let tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return noop.useSyncExternalStore(subscribeVibegrationsControl, tmp2, tmp2);
-}) : ((arg0) => {
-  closure_0 = arg0;
-  const items = [arg0];
+export const useVibegrationsControlActive = function useVibegrationsControlActive(projectId) {
+  noop = projectId;
+  const items = [projectId];
   const callback = noop.useCallback(() => {
     let tmp2 = null != closure_0;
     if (tmp2) {
@@ -328,4 +294,4 @@ export const useVibegrationsControlActive = ReactCompilerGating.isReactCompilerE
     return tmp2;
   }, items);
   return noop.useSyncExternalStore(subscribeVibegrationsControl, callback, callback);
-});
+};

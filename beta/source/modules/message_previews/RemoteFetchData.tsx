@@ -1,9 +1,9 @@
-// Module ID: 15591
-// Function ID: 15592
+// Module ID: 15595
+// Function ID: 15596
 // Name: RemoteFetchData
 // Dependencies: [5, 2]
 
-// Module 15591 (RemoteFetchData)
+// Module 15595 (RemoteFetchData)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const FetchStatus = { Pending: 0, [0]: "Pending", Fetching: 1, [1]: "Fetching" };
@@ -105,7 +105,7 @@ prototype["try"] = function try(nextWantsResult, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

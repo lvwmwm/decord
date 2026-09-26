@@ -1,9 +1,9 @@
 // Module ID: 13891
 // Function ID: 13892
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 13891
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ffb75c82f97e39285286ef89f1767a3c", name: "ServerGridIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 34, height: 34, scales: [2, 3], hash: "36d299b9a20b89def78675ec02a95049", name: "badge_2", type: "png" });

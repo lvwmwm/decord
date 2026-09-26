@@ -1,12 +1,12 @@
-// Module ID: 17394
-// Function ID: 17395
+// Module ID: 17384
+// Function ID: 17385
 // Name: showLaunchPad
-// Dependencies: [1078, 1114, 2]
+// Dependencies: [1074, 1110, 2]
 // Exports: default
 
-// Module 17394 (showLaunchPad)
-import Constants from "Constants" /* 1078 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
+// Module 17384 (showLaunchPad)
+import Constants from "Constants" /* 1074 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import size from "module_2" /* 2 */;
 
 const ComponentActions = Constants.ComponentActions;

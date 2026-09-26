@@ -1,14 +1,14 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18276
+// Function ID: 18277
 // Name: QuestFetchManager
-// Dependencies: [7976, 1095, 7397, 11644, 1235, 10600, 1368, 10621, 18286, 2]
+// Dependencies: [7971, 1091, 7395, 11768, 1231, 11571, 1364, 11592, 18277, 2]
 
-// Module 18285 (QuestFetchManager)
-import DurationsDefault from "Durations" /* 1095 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import QuestsEligibility from "QuestsEligibility" /* 11644 */;
-import QuestStore from "QuestStore" /* 7976 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 18276 (QuestFetchManager)
+import DurationsDefault from "Durations" /* 1091 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import QuestsEligibility from "QuestsEligibility" /* 11768 */;
+import QuestStore from "QuestStore" /* 7971 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 const DAY = DurationsDefault.Millis.DAY;
@@ -43,8 +43,8 @@ class QuestFetchManager extends tmp2 {
       applyArgumentsResult.hasHandledConnectionOpen = true;
       if (applyArgumentsResult.hasHandledConnectionOpen) {
         if (isEligibleForQuests) {
-          let DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18286).getQuestFetchReconnectJitterConfig({ location: "QuestFetchManager" });
-          const tmp5Result = tmp5(18286);
+          let DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18277).getQuestFetchReconnectJitterConfig({ location: "QuestFetchManager" });
+          const tmp5Result = tmp5(18277);
         }
         const _Math = Math;
         const _Math2 = Math;
@@ -68,7 +68,7 @@ class QuestFetchManager extends tmp2 {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18286).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18277).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 
@@ -106,27 +106,27 @@ class QuestFetchManager extends tmp2 {
     return applyArgumentsResult;
   }
 }
-QuestFetchManager.prototype["_fetch"] = function _fetch(post_connect_initial) {
+QuestFetchManager.prototype["_fetch"] = function _fetch(callerSource) {
   let isEligibleForQuests = QuestsEligibility.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     isEligibleForQuests = !QuestStore.isFetchingCurrentQuests;
   }
   if (isEligibleForQuests) {
     const obj3 = { category: "quests.fetch", message: "QuestFetchManager._fetch triggered", data: null };
-    const obj4 = { callerSource: post_connect_initial, storeSize: QuestStore.quests.size, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests, msSinceLastFetch: null, isFetchingCurrentQuests: null };
+    const obj4 = { callerSource, storeSize: QuestStore.quests.size, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests, msSinceLastFetch: null, isFetchingCurrentQuests: null };
     const _Date = Date;
     obj4.msSinceLastFetch = Date.now() - QuestStore.lastFetchedCurrentQuests;
     obj4.isFetchingCurrentQuests = QuestStore.isFetchingCurrentQuests;
     obj3.data = obj4;
     SentryUtilsDefault.addBreadcrumb(obj3);
     const tmp6 = importDefault;
-    const currentQuests = tmp(10600).fetchCurrentQuests();
-    const tmpResult = tmp(10600);
+    const currentQuests = tmp(11571).fetchCurrentQuests();
+    const tmpResult = tmp(11571);
     if (tmpResult2.isMac()) {
-      state = tmp6(10621).getState();
-      const tmp6Result = tmp6(10621);
+      const state = tmp6(11592).getState();
+      const tmp6Result = tmp6(11592);
     }
-    tmpResult2 = tmp(1368);
+    tmpResult2 = tmp(1364);
   }
 };
 const questFetchManager = new QuestFetchManager();

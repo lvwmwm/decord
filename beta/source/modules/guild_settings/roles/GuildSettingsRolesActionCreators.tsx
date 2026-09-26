@@ -1,11 +1,11 @@
-// Module ID: 18072
-// Function ID: 18073
+// Module ID: 18063
+// Function ID: 18064
 // Name: GuildSettingsRolesActionCreators
-// Dependencies: [5, 1078, 577, 5771, 11729, 1114, 2]
+// Dependencies: [5, 1074, 573, 5769, 11853, 1110, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 18072 (GuildSettingsRolesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 18063 (GuildSettingsRolesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -103,7 +103,7 @@ let closure_7 = async function _saveRoleSettings(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -142,7 +142,7 @@ let closure_7 = async function _saveRoleSettings(arg0, value) {
             closure_145_14 = undefined;
             c20 = 1;
             c21 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         break;
         case 1:
@@ -204,7 +204,7 @@ let closure_7 = async function _saveRoleSettings(arg0, value) {
           ComponentDispatch.dispatch(closure_144_4.EMPHASIZE_NOTICE);
           if (!closure_145_5.throwErr) {
             c21 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           } else {
             throw closure_145_15;
           }
@@ -379,7 +379,7 @@ let closure_7 = async function _saveRoleSettings(arg0, value) {
             c21 = 3;
             throw value;
           } else {
-            value3 = value;
+            const value3 = value;
             if (arg0 === 2) {
               c18 = 6;
               let tmp75 = closure_145_9;
@@ -631,7 +631,7 @@ let closure_7 = async function _saveRoleSettings(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ComponentActions: closure_4, DEFAULT_ROLE_COLOR: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesActionCreators.tsx");

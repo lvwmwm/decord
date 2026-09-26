@@ -1,62 +1,24 @@
-// Module ID: 17248
-// Function ID: 17249
+// Module ID: 17238
+// Function ID: 17239
 // Name: useUserRowWithSubLabelHeight
-// Dependencies: [558, 568, 4494, 580, 11327, 5227, 16795, 11329, 2]
-// Exports: getUserRowWithSubLabelHeight
+// Dependencies: [4489, 576, 10414, 5225, 11288, 16785, 2]
+// Exports: getUserRowWithSubLabelHeight, useUserRowWithSubLabelHeight
 
-// Module 17248 (useUserRowWithSubLabelHeight)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4494 */;
-import useFontScale from "useFontScale" /* 5227 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11327 */;
-import ActionStatusSubLabel from "ActionStatusSubLabel" /* 16795 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17238 (useUserRowWithSubLabelHeight)
+import nativeDefault from "native" /* 576 */;
+import useToken from "useToken" /* 4489 */;
+import useFontScale from "useFontScale" /* 5225 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10414 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11288 */;
+import ActionStatusSubLabel from "ActionStatusSubLabel" /* 16785 */;
 import size from "module_2" /* 2 */;
 
-const roundToNearestPixelDefault = tmp4(11329);
-function getUserRowWithSubLabelHeight(rowHeight) {
-  return Math.max(rowHeight.rowHeight, 2 * rowHeight.rowPadding + rowHeight.labelLineHeight + rowHeight.subLabelLines * rowHeight.subLabelLineHeight);
-}
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserRowWithSubLabelHeight.tsx");
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserRowWithSubLabelHeight.tsx");
 
-export { getUserRowWithSubLabelHeight };
-export const useUserRowWithSubLabelHeight = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(6);
-  let num = 1;
-  if (undefined !== arg0) {
-    num = arg0;
-  }
-  const token = useToken.useToken(nativeDefault.modules.mobile.TABLE_ROW_HEIGHT);
-  const tmpResult = useToken;
-  const token1 = useToken.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
-  const tmpResult4 = useToken;
-  const scaledTextLineHeight = useScaledTextLineHeight.useScaledTextLineHeight("text-md/semibold");
-  const tmpResult5 = useScaledTextLineHeight;
-  const fontScale = useFontScale.useFontScale();
-  const result = tmp(16795).ACTION_STATUS_SUB_LABEL_LINE_HEIGHT * fontScale;
-  if (cResult[0] === scaledTextLineHeight) {
-    if (cResult[1] === token) {
-      if (cResult[2] === token1) {
-        if (cResult[3] === result) {
-          if (cResult[4] === num) {
-            let tmp10 = cResult[5];
-          }
-          return tmp10;
-        }
-      }
-    }
-  }
-  const tmpResult6 = useFontScale;
-  const tmp4ResultResult = roundToNearestPixelDefault(Math.max(token, 2 * token1 + scaledTextLineHeight + num * result));
-  cResult[0] = scaledTextLineHeight;
-  cResult[1] = token;
-  cResult[2] = token1;
-  cResult[3] = result;
-  cResult[4] = num;
-  cResult[5] = tmp4ResultResult;
-  tmp10 = tmp4ResultResult;
-}) : (() => {
+export const getUserRowWithSubLabelHeight = function getUserRowWithSubLabelHeight(rowHeight) {
+  return Math.max(rowHeight.rowHeight, 2 * rowHeight.rowPadding + rowHeight.labelLineHeight + rowHeight.subLabelLines * rowHeight.subLabelLineHeight);
+};
+export const useUserRowWithSubLabelHeight = function useUserRowWithSubLabelHeight(arg0) {
   let num = arg0;
   if (arg0 === undefined) {
     num = 1;
@@ -66,4 +28,4 @@ export const useUserRowWithSubLabelHeight = ReactCompilerGating.isReactCompilerE
   const scaledTextLineHeight = useScaledTextLineHeight.useScaledTextLineHeight("text-md/semibold");
   const fontScale = useFontScale.useFontScale();
   return roundToNearestPixelDefault(Math.max(token, 2 * token1 + scaledTextLineHeight + num * (ActionStatusSubLabel.ACTION_STATUS_SUB_LABEL_LINE_HEIGHT * fontScale)));
-});
+};

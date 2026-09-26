@@ -1,12 +1,12 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9362
+// Function ID: 9363
 // Name: scopes
-// Dependencies: [1119, 8647, 2]
+// Dependencies: [1115, 8642, 2]
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 9360 (scopes)
-import util from "util" /* 1119 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8647 */;
+// Module 9362 (scopes)
+import util from "util" /* 1115 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8642 */;
 import size from "module_2" /* 2 */;
 
 let items = [
@@ -277,18 +277,18 @@ export const isSocialLayerUmbrellaScope = function isSocialLayerUmbrellaScope(it
 };
 export const getSecurityMessage = function getSecurityMessage(scopes) {
   if (!scopes.includes(OAuth2Scopes.OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE)) {
-    if (!scopes.includes(tmp(8647).OAuth2Scopes.SDK_SOCIAL_LAYER)) {
-      if (!scopes.includes(tmp(8647).OAuth2Scopes.MESSAGES_READ)) {
-        if (!scopes.includes(tmp(8647).OAuth2Scopes.DM_CHANNELS_MESSAGES_READ)) {
-          const intl = tmp(1119).intl;
-          let formatResult = intl.format(tmp(1119).t["TeL+Ct"], {});
+    if (!scopes.includes(tmp(8642).OAuth2Scopes.SDK_SOCIAL_LAYER)) {
+      if (!scopes.includes(tmp(8642).OAuth2Scopes.MESSAGES_READ)) {
+        if (!scopes.includes(tmp(8642).OAuth2Scopes.DM_CHANNELS_MESSAGES_READ)) {
+          const intl = tmp(1115).intl;
+          let formatResult = intl.format(tmp(1115).t["TeL+Ct"], {});
         }
       }
-      const intl2 = tmp(1119).intl;
-      formatResult = intl2.format(tmp(1119).t.Soy7jJ, {});
+      const intl2 = tmp(1115).intl;
+      formatResult = intl2.format(tmp(1115).t.Soy7jJ, {});
     }
     return formatResult;
   }
-  const intl3 = tmp(1119).intl;
-  formatResult = intl3.format(tmp(1119).t.o0GMBD, {});
+  const intl3 = tmp(1115).intl;
+  formatResult = intl3.format(tmp(1115).t.o0GMBD, {});
 };

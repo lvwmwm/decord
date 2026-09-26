@@ -1,15 +1,15 @@
-// Module ID: 9680
-// Function ID: 9681
+// Module ID: 9684
+// Function ID: 9685
 // Name: HomeIndicator
-// Dependencies: [19, 17, 562, 1252, 1368, 1628, 2]
+// Dependencies: [19, 17, 560, 1248, 1364, 1624, 2]
 
-// Module 9680 (HomeIndicator)
+// Module 9684 (HomeIndicator)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const NativeModules = fn(17).NativeModules;
-const module_562 = fn(562);
-const obj3 = module_562.create(() => ({ autoHideHomeIndicator: false }));
+const module_560 = fn(560);
+const obj3 = module_560.create(() => ({ autoHideHomeIndicator: false }));
 let HomeIndicator;
 const Component = noop.Component;
 class HomeIndicator extends Component {
@@ -62,12 +62,12 @@ HomeIndicator["_updatePropsStack"] = function _updatePropsStack() {
     const prefersHidden = obj.prefersHidden;
     const autoHideHomeIndicator = tmp;
     const prefersDeferringSystemGestures = obj.prefersDeferringSystemGestures;
-    autoHideHomeIndicator(1252).batchUpdates(() => state.setState({ autoHideHomeIndicator }));
-    const obj2 = autoHideHomeIndicator(1252);
+    autoHideHomeIndicator(1248).batchUpdates(() => state.setState({ autoHideHomeIndicator }));
+    const obj2 = autoHideHomeIndicator(1248);
     const tmp2 = undefined !== prefersDeferringSystemGestures && prefersDeferringSystemGestures;
     if (obj3.isAndroid()) {
-      const result = closure_1(1628).setNavigationBarVisible(!tmp);
-      const obj4 = closure_1(1628);
+      const result = closure_1(1624).setNavigationBarVisible(!tmp);
+      const obj4 = closure_1(1624);
     } else if (DCDHomeIndicator.DCDHomeIndicator) {
       DCDHomeIndicator = tmp5.DCDHomeIndicator;
       DCDHomeIndicator.setPrefersAutoHidden(tmp);

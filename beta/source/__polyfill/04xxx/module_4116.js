@@ -1,11 +1,12 @@
 // Module ID: 4116
 // Function ID: 4117
-// Dependencies: [3881, 3882]
+// Dependencies: [3877, 3878, 4114]
 // Exports: default
 
 // Module 4116
-import _typeof_mod from "module_3881" /* 3881 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
+import startOfUTCISOWeek_mod from "startOfUTCISOWeek" /* 4114 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -23,14 +24,36 @@ if (!requiredArgs) {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
-let c2 = 86400000;
+let startOfUTCISOWeek = startOfUTCISOWeek_mod;
+if (!startOfUTCISOWeek) {
+  const obj3 = { default: startOfUTCISOWeek };
+  let tmp7 = obj3;
+} else {
+  tmp7 = startOfUTCISOWeek;
+}
+startOfUTCISOWeek = tmp7;
 
-export default function getUTCDayOfYear(arg0) {
+export default function getUTCISOWeekYear(arg0) {
   requiredArgs.default(1, arguments);
   const defaultResult1 = _typeof.default(arg0);
+  const uTCFullYear = defaultResult1.getUTCFullYear();
+  const date = new Date(0);
+  date.setUTCFullYear(uTCFullYear + 1, 0, 4);
+  date.setUTCHours(0, 0, 0, 0);
+  const date1 = new Date(0);
+  date1.setUTCFullYear(uTCFullYear, 0, 4);
+  date1.setUTCHours(0, 0, 0, 0);
+  const defaultResult2 = startOfUTCISOWeek.default(date);
   const time = defaultResult1.getTime();
-  defaultResult1.setUTCMonth(0, 1);
-  defaultResult1.setUTCHours(0, 0, 0, 0);
-  return Math.floor((time - defaultResult1.getTime()) / c2) + 1;
+  if (time >= defaultResult2.getTime()) {
+    let sum = uTCFullYear + 1;
+  } else {
+    const time1 = defaultResult1.getTime();
+    sum = uTCFullYear;
+    if (time1 < defaultResult3.getTime()) {
+      sum = uTCFullYear - 1;
+    }
+  }
+  return sum;
 };
 export default exports.default;

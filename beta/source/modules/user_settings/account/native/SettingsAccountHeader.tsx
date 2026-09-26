@@ -1,49 +1,22 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 14989
+// Function ID: 14990
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4441, 1376, 1078, 8707, 21, 4790, 580, 558, 568, 7658, 14986, 1119, 504, 7276, 5868, 5854, 5220, 2]
+// Dependencies: [19, 17, 4437, 1372, 1074, 8702, 21, 4788, 576, 14990, 1115, 7656, 504, 7275, 5870, 5854, 5218, 2]
 
-// Module 14985 (SettingsAccountHeader)
+// Module 14989 (SettingsAccountHeader)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5868 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7276 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14986 */;
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5870 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7275 */;
+import openUserSettings from "openUserSettings" /* 7656 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14990 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const View = fn(17).View;
-const AnalyticsSections = fn(1078).AnalyticsSections;
-const SafetySettingsNoticeType = fn(8707).SafetySettingsNoticeType;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
-let obj = { header: { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 } };
-let closure_11 = createStyles.createStyles(obj);
-let ReactCompilerGating = fn(558);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = {
-      label: util.t.zqv4nV,
-      labelHook() {
-          openUserSettings.openUserSettings({ screen: constants.SETTINGS_CONTENT_AND_SOCIAL });
-        },
-      noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
-    };
-    const tmp9 = options(SafetySettingsNoticeDefault, obj2);
-    cResult[0] = tmp9;
-    let first = tmp9;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => {
+function RestrictedAccountRedirect() {
   const obj = {
     label: util.t.zqv4nV,
     labelHook() {
@@ -51,172 +24,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     },
     noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   };
-  return options(SafetySettingsNoticeDefault, obj);
-});
-ReactCompilerGating = fn(558);
-let obj3 = { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
+  return React7(SafetySettingsNoticeDefault, obj);
+}
+const View = fn(17).View;
+const AnalyticsSections = fn(1074).AnalyticsSections;
+const SafetySettingsNoticeType = fn(8702).SafetySettingsNoticeType;
+const jsxProd = fn(21);
+({ jsx: closure_9, jsxs: c10 } = jsxProd);
+const createStyles = fn(4788);
+let obj = { header: { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 } };
+let closure_11 = createStyles.createStyles(obj);
+const obj3 = { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(15);
-  let header = closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function o() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const bannerText = tmp(7276).getBannerText(stateFromStores);
-    cResult[2] = stateFromStores;
-    cResult[3] = bannerText;
-    let tmp8 = bannerText;
-    const tmpResult3 = tmp(7276);
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [RelationshipStore];
-    const fn2 = function p() {
-      return blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().size > 0;
-    };
-    cResult[4] = items1;
-    cResult[5] = fn2;
-    let tmp11 = fn2;
-    let tmp10 = items1;
-  } else {
-    tmp10 = cResult[4];
-    tmp11 = cResult[5];
-  }
-  const tmpResult = initialize;
-  const stateFromStores1 = initialize.useStateFromStores(tmp10, tmp11);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
-      constructor() {
-        obj = closure_1_1(closure_1_2[16]);
-        openResult = obj.open();
-        return;
-      }
-    }
-    cResult[6] = N;
-  } else {
-    class N {
-      constructor() {
-        obj = closure_1_1(closure_1_2[16]);
-        openResult = obj.open();
-        return;
-      }
-    }
-  }
-  if (null == tmp8) {
-    class N {
-      constructor() {
-        obj = closure_1_1(closure_1_2[16]);
-        openResult = obj.open();
-        return;
-      }
-    }
-    if (!stateFromStores1) {
-      class N {
-        constructor() {
-          obj = closure_1_1(closure_1_2[16]);
-          openResult = obj.open();
-          return;
-        }
-      }
-    }
-  }
-  if (cResult[7] !== stateFromStores1) {
-    class N {
-      constructor() {
-        obj = closure_1_1(closure_1_2[16]);
-        openResult = obj.open();
-        return;
-      }
-    }
-    if (stateFromStores1) {
-      class N {
-        constructor() {
-          obj = closure_1_1(closure_1_2[16]);
-          openResult = obj.open();
-          return;
-        }
-      }
-      const tmp16 = options(closure_12, {});
-    }
-    cResult[7] = stateFromStores1;
-    cResult[8] = tmp16;
-  } else {
-    class N {
-      constructor() {
-        obj = closure_1_1(closure_1_2[16]);
-        openResult = obj.open();
-        return;
-      }
-    }
-  }
-  if (cResult[9] !== tmp8) {
-    class N {
-      constructor() {
-        obj = closure_1_1(closure_1_2[16]);
-        openResult = obj.open();
-        return;
-      }
-    }
-    if (null != tmp8) {
-      class N {
-        constructor() {
-          obj = closure_1_1(closure_1_2[16]);
-          openResult = obj.open();
-          return;
-        }
-      }
-      const obj2 = { onPress: tmp14, variant: "danger", label: null, accessibilityLabel: null, trailing: null, start: true, end: true };
-      ({ title: obj5.label, title: obj5.accessibilityLabel } = tmp8);
-      const obj3 = { text: null, accessibilityLabel: null, onPress: null };
-      ({ button: obj6.text, button: obj6.accessibilityLabel } = tmp8);
-      obj3.onPress = tmp14;
-      obj2.trailing = options(tmp(5220).Button, obj3);
-      const tmp19 = options(tmp(5854).TableRow, obj2);
-    }
-    cResult[9] = tmp8;
-    cResult[10] = tmp19;
-  } else {
-    class N {
-      constructor() {
-        obj = closure_1_1(closure_1_2[16]);
-        openResult = obj.open();
-        return;
-      }
-    }
-  }
-  if (cResult[11] === header.header) {
-    class N {
-      constructor() {
-        obj = closure_1_1(closure_1_2[16]);
-        openResult = obj.open();
-        return;
-      }
-    }
-  }
-  const obj4 = { style: header.header, children: null };
-  const items2 = [tmp15, tmp18];
-  obj4.children = items2;
-  const tmpResult4 = initialize;
-  header = header.header;
-  cResult[11] = header;
-  cResult[12] = tmp15;
-  cResult[13] = tmp18;
-  cResult[14] = v65535(View, obj4);
-}) : (() => {
+export default noop.memo(() => {
   const tmp = closure_11();
   const items = [UserStore];
   const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
@@ -230,7 +52,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { style: tmp.header, children: null };
     let tmp11 = null;
     if (stateFromStores1) {
-      tmp11 = options(closure_12, {});
+      tmp11 = React7(RestrictedAccountRedirect, {});
     }
     const items2 = [tmp11, ];
     let tmp14 = null;
@@ -240,14 +62,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj10 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       obj10.onPress = callback;
-      obj9.trailing = options(tmp2(5220).Button, obj10);
-      tmp14 = options(tmp2(5854).TableRow, obj9);
+      obj9.trailing = React7(tmp2(5218).Button, obj10);
+      tmp14 = React7(tmp2(5854).TableRow, obj9);
     }
     items2[1] = tmp14;
     obj4.children = items2;
-    let tmp9Result = v65535(View, obj4);
+    let tmp9Result = closure_1_10(View, obj4);
   } else {
     tmp9Result = null;
   }
   return tmp9Result;
-}));
+});

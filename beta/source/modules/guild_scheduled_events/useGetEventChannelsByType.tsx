@@ -1,13 +1,14 @@
-// Module ID: 9821
-// Function ID: 9822
+// Module ID: 9843
+// Function ID: 9844
 // Name: useGetEventChannelsByType
-// Dependencies: [2050, 2100, 4431, 9788, 558, 568, 504, 9787, 2]
+// Dependencies: [2046, 2096, 4427, 9792, 504, 9791, 2]
+// Exports: useCanCreateEventInStageChannel, useCanCreateEventInVoiceChannel, useGetEventChannelsByType
 
-// Module 9821 (useGetEventChannelsByType)
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9787 */;
-import StageInstanceStore from "StageInstanceStore" /* 2050 */;
-import GuildChannelStore from "GuildChannelStore" /* 2100 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+// Module 9843 (useGetEventChannelsByType)
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9791 */;
+import StageInstanceStore from "StageInstanceStore" /* 2046 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 
@@ -54,84 +55,14 @@ function getEventChannelsByType(id, channelTypeFromEntity, items) {
     return items1;
   }
 }
-const GUILD_VOCAL_CHANNELS_KEY = fn(2100).GUILD_VOCAL_CHANNELS_KEY;
-const PermissionsConstants = fn(9788);
+const GUILD_VOCAL_CHANNELS_KEY = fn(2096).GUILD_VOCAL_CHANNELS_KEY;
+const PermissionsConstants = fn(9792);
 ({ CREATE_GUILD_EVENT_VOICE_CHANNEL_PERMISSIONS: metroRequire, CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS: closure_7 } = PermissionsConstants);
-fn(558);
-let ReactCompilerGating = fn(558);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
-  const _require = id;
-  const cResult = require("c").c(11);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id) {
-    const fn = function l() {
-      return PermissionStore.can(React5, closure_0);
-    };
-    const items1 = [id];
-    cResult[1] = id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp7 = items1;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [StageInstanceStore];
-    cResult[4] = items2;
-    let tmp9 = items2;
-  } else {
-    tmp9 = cResult[4];
-  }
-  if (cResult[5] !== id.id) {
-    class C {
-      constructor() {
-        return closure_2.getStageInstanceByChannel(closure_0.id);
-      }
-    }
-    cResult[5] = id.id;
-    cResult[6] = C;
-    const tmp11 = C;
-  } else {
-    class C {
-      constructor() {
-        return closure_2.getStageInstanceByChannel(closure_0.id);
-      }
-    }
-  }
-  const tmpResult = require("initialize");
-  const stateFromStores1 = require("initialize").useStateFromStores(tmp9, tmp11);
-  if (cResult[7] === id) {
-    class C {
-      constructor() {
-        return closure_2.getStageInstanceByChannel(closure_0.id);
-      }
-    }
-  }
-  let tmp13 = id.isGuildStageVoice() && stateFromStores;
-  if (tmp13) {
-    class C {
-      constructor() {
-        return closure_2.getStageInstanceByChannel(closure_0.id);
-      }
-    }
-    tmp13 = null == stateFromStores1;
-  }
-  cResult[7] = id;
-  cResult[8] = stateFromStores;
-  cResult[9] = stateFromStores1;
-  cResult[10] = tmp13;
-}) : ((isGuildStageVoice) => {
-  const _require = isGuildStageVoice;
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/useGetEventChannelsByType.tsx");
+
+export const useCanCreateEventInStageChannel = function useCanCreateEventInStageChannel(isGuildStageVoice) {
+  _require = isGuildStageVoice;
   const items = [PermissionStore];
   const items1 = [isGuildStageVoice];
   const stateFromStores = require("initialize").useStateFromStores(items, () => PermissionStore.can(React5, closure_0), items1);
@@ -143,95 +74,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp3 = null == stateFromStores1;
   }
   return tmp3;
-});
-ReactCompilerGating = fn(558);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildVoice) => {
-  const _require = isGuildVoice;
-  const cResult = require("c").c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== isGuildVoice) {
-    const fn = function s() {
-      return PermissionStore.can(timestampProducer, closure_0);
-    };
-    const items1 = [isGuildVoice];
-    cResult[1] = isGuildVoice;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp7 = items1;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] === isGuildVoice) {
-    if (cResult[5] === stateFromStores) {
-      let tmp9 = cResult[6];
-    }
-    return tmp9;
-  }
-  const tmp10 = isGuildVoice.isGuildVoice() && stateFromStores;
-  cResult[4] = isGuildVoice;
-  cResult[5] = stateFromStores;
-  cResult[6] = tmp10;
-  tmp9 = tmp10;
-}) : ((isGuildVoice) => {
-  const _require = isGuildVoice;
+};
+export const useCanCreateEventInVoiceChannel = function useCanCreateEventInVoiceChannel(isGuildVoice) {
+  _require = isGuildVoice;
   const items = [PermissionStore];
   const items1 = [isGuildVoice];
   const stateFromStores = require("initialize").useStateFromStores(items, () => PermissionStore.can(timestampProducer, closure_0), items1);
   const obj = require("initialize");
   return isGuildVoice.isGuildVoice() && stateFromStores;
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/useGetEventChannelsByType.tsx");
-
-export const useCanCreateEventInStageChannel = tmp3;
-export const useCanCreateEventInVoiceChannel = tmp4;
+};
 export { getEventChannelsByType };
-export const useGetEventChannelsByType = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  const _require = arg0;
-  dependencyMap = arg1;
-  const cResult = require("c").c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GuildChannelStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    if (cResult[2] === arg0) {
-      let tmp6 = cResult[3];
-      let tmp7 = cResult[4];
-    }
-    return require("initialize").useStateFromStoresArray(first, tmp6, tmp7);
-  }
-  const fn = function l() {
-    const items = [GuildChannelStore];
-    return getEventChannelsByType(closure_0, closure_1, items);
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg1;
-  cResult[2] = arg0;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp7 = items1;
-  tmp6 = fn;
-}) : ((arg0, arg1) => {
-  const _require = arg0;
-  dependencyMap = arg1;
+export const useGetEventChannelsByType = function useGetEventChannelsByType(id, channelType) {
+  _require = id;
+  dependencyMap = channelType;
   let items = [GuildChannelStore];
-  const items1 = [arg0, arg1];
+  const items1 = [id, channelType];
   return require("initialize").useStateFromStoresArray(items, () => {
     const items = [GuildChannelStore];
     return getEventChannelsByType(closure_0, closure_1, items);
   }, items1);
-});
+};

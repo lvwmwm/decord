@@ -1,10 +1,10 @@
-// Module ID: 14313
-// Function ID: 14314
+// Module ID: 14303
+// Function ID: 14304
 // Name: PTTEducationExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 14313 (PTTEducationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 14303 (PTTEducationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { showPTTJoinTooltip: false, showPTTIconIndicator: false, showPTTNoKeybindWarning: false, showPTTSpeakingIndicator: false };

@@ -1,46 +1,46 @@
-// Module ID: 13826
-// Function ID: 13827
+// Module ID: 13816
+// Function ID: 13817
 // Name: GuildBoostingUpsell
-// Dependencies: [19, 17, 5689, 1378, 21, 4790, 580, 13805, 1119, 9519, 13827, 13828, 13830, 9850, 13831, 9067, 13832, 12732, 13833, 12729, 13834, 9515, 13835, 10551, 558, 568, 504, 13706, 13836, 4725, 13674, 4642, 13683, 13684, 4786, 9533, 13840, 13841, 13842, 2]
+// Dependencies: [19, 17, 5687, 1374, 21, 4788, 576, 13795, 1115, 9521, 13817, 13818, 13820, 9872, 13821, 9069, 13822, 10409, 13823, 12813, 13824, 9517, 13825, 10532, 504, 13696, 13826, 4722, 13664, 4639, 13673, 13674, 4784, 9537, 13830, 13831, 13832, 2]
+// Exports: default
 
-// Module 13826 (GuildBoostingUpsell)
+// Module 13816 (GuildBoostingUpsell)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import shared from "shared" /* 4642 */;
-import useThemeDefault from "useTheme" /* 4725 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import ReactionIcon from "ReactionIcon" /* 9067 */;
-import UploadIcon from "UploadIcon" /* 9515 */;
-import BoostGemIcon from "BoostGemIcon" /* 9519 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9533 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9850 */;
-import StarIcon from "StarIcon" /* 10551 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12729 */;
-import StickerIcon from "StickerIcon" /* 12732 */;
-import _modDef13674 from "module_13674" /* 13674 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13706 */;
-import _modDef13805 from "module_13805" /* 13805 */;
-import _modDef13827 from "module_13827" /* 13827 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13828 */;
-import _modDef13830 from "module_13830" /* 13830 */;
-import _modDef13831 from "module_13831" /* 13831 */;
-import _modDef13832 from "module_13832" /* 13832 */;
-import _modDef13833 from "module_13833" /* 13833 */;
-import _modDef13834 from "module_13834" /* 13834 */;
-import _modDef13835 from "module_13835" /* 13835 */;
-import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 13836 */;
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import shared from "shared" /* 4639 */;
+import useThemeDefault from "useTheme" /* 4722 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import ReactionIcon from "ReactionIcon" /* 9069 */;
+import UploadIcon from "UploadIcon" /* 9517 */;
+import BoostGemIcon from "BoostGemIcon" /* 9521 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9537 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9872 */;
+import StickerIcon from "StickerIcon" /* 10409 */;
+import StarIcon from "StarIcon" /* 10532 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12813 */;
+import _modDef13664 from "module_13664" /* 13664 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13696 */;
+import _modDef13795 from "module_13795" /* 13795 */;
+import _modDef13817 from "module_13817" /* 13817 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 13818 */;
+import _modDef13820 from "module_13820" /* 13820 */;
+import _modDef13821 from "module_13821" /* 13821 */;
+import _modDef13822 from "module_13822" /* 13822 */;
+import _modDef13823 from "module_13823" /* 13823 */;
+import _modDef13824 from "module_13824" /* 13824 */;
+import _modDef13825 from "module_13825" /* 13825 */;
+import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 13826 */;
 import noop from "module_19" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 5689 */;
+import SortedGuildStore from "SortedGuildStore" /* 5687 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, StyleSheet } = get_ActivityIndicator);
-const FractionalPremiumStates = fn(1378).FractionalPremiumStates;
+const FractionalPremiumStates = fn(1374).FractionalPremiumStates;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { root: { paddingHorizontal: 16, paddingVertical: 32 }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" }, guildList: { marginTop: 16 }, logoPremiumGuild: { resizeMode: "contain", width: "100%", height: 34, maxWidth: 320, marginTop: 16 }, imgPremiumGuild: { width: 95, height: 65 }, imgNoGuilds: { width: 178, height: 112, marginTop: 32 }, header: { alignItems: "center" }, upsell: { marginTop: 32, paddingTop: 16, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE }, subscriptionUpsell: { marginTop: 32 } };
 let closure_9 = createStyles.createStyles(obj2);
 class FEATURES_PREMIUM_GUILD_USER {
@@ -71,366 +71,10 @@ class FEATURES_PREMIUM_GUILD_USER {
     return items;
   }
 }
-function FEATURES_PREMIUM_GUILD() {
-  const obj = { icon: _modDef13831, label: null, IconComponent: null, color: null };
-  const intl = util.intl;
-  obj.label = intl.string(util.t.Ts7BVI);
-  obj.IconComponent = ReactionIcon.ReactionIcon;
-  obj.color = nativeDefault.unsafe_rawColors.PREMIUM_PERK_YELLOW;
-  const items = [obj, , , , ];
-  const obj2 = { icon: _modDef13832, label: null, IconComponent: null, color: null };
-  const intl2 = util.intl;
-  obj2.label = intl2.string(util.t.QcJbt6);
-  obj2.IconComponent = StickerIcon.StickerIcon;
-  obj2.color = nativeDefault.unsafe_rawColors.PREMIUM_PERK_PURPLE;
-  items[1] = obj2;
-  const obj3 = { icon: _modDef13833, label: null, color: "#4173da", IconComponent: null };
-  const intl3 = util.intl;
-  obj3.label = intl3.string(util.t.rFNkf5);
-  obj3.IconComponent = HeadphonesIcon.HeadphonesIcon;
-  items[2] = obj3;
-  const obj4 = { icon: _modDef13834, label: null, IconComponent: null, color: null };
-  const intl4 = util.intl;
-  obj4.label = intl4.string(util.t["BpjjS/"]);
-  obj4.IconComponent = UploadIcon.UploadIcon;
-  obj4.color = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK;
-  items[3] = obj4;
-  const obj5 = { icon: _modDef13835, label: null, IconComponent: null, color: null };
-  const intl5 = util.intl;
-  obj5.label = intl5.string(util.t["9g5Lgb"]);
-  obj5.IconComponent = StarIcon.StarIcon;
-  obj5.color = nativeDefault.unsafe_rawColors.PREMIUM_PERK_GOLD;
-  items[4] = obj5;
-  return items;
-}
-const ReactCompilerGating = fn(558);
-let obj3 = { marginTop: 32, paddingTop: 16, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/premium/GuildBoostingUpsell.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) => {
-  const cResult = c.c(58);
-  ({ onLearnMorePremium, fractionalState, isInReverseTrial } = hasAvailableSlots);
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SortedGuildStore];
-    const fn = function u() {
-      return flattenedGuildIds.getFlattenedGuildIds().length > 0;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp5, tmp6);
-  const tmpResult = initialize;
-  const subscriptionPlansLoaded = useSubscriptionPlansLoaded.useSubscriptionPlansLoaded();
-  const tmpResult4 = useSubscriptionPlansLoaded;
-  const guildSubscriptionNoGuildsSource = GuildSubscriptionNoGuilds.useGuildSubscriptionNoGuildsSource();
-  const tmpResult5 = GuildSubscriptionNoGuilds;
-  if (fractionalState !== FractionalPremiumStates.NONE) {
-    if (!isInReverseTrial) {
-      if (!hasAvailableSlots.hasAvailableSlots) {
-        return null;
-      }
-    }
-  }
-  ({ root, header } = tmp4);
-  if (cResult[2] !== tmp4.imgPremiumGuild) {
-    const obj2 = { style: tmp4.imgPremiumGuild, source: tmp11(13674) };
-    const tmp18 = React5(React4, obj2);
-    cResult[2] = tmp4.imgPremiumGuild;
-    cResult[3] = tmp18;
-    let tmp15 = tmp18;
-  } else {
-    tmp15 = cResult[3];
-  }
-  const tmp12 = useThemeDefault();
-  const tmp13 = FractionalPremiumStates;
-  if (tmpResult6.isThemeDark(tmp12)) {
-    let tmp11Result = tmp11(13683);
-  } else {
-    tmp11Result = tmp11(13684);
-  }
-  if (cResult[4] === tmp4.logoPremiumGuild) {
-    if (cResult[5] === tmp11Result) {
-      let tmp20 = cResult[6];
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t.hw6WTd);
-      cResult[7] = stringResult;
-      let tmp22 = stringResult;
-    } else {
-      tmp22 = cResult[7];
-    }
-    if (cResult[8] !== tmp4.title) {
-      const obj3 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp22 };
-      const tmp26 = React5(tmp(4786).Text, obj3);
-      cResult[8] = tmp4.title;
-      cResult[9] = tmp26;
-      let tmp24 = tmp26;
-    } else {
-      tmp24 = cResult[9];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1119).intl;
-      const stringResult1 = intl2.string(tmp(1119).t.K5jBdG);
-      cResult[10] = stringResult1;
-      let tmp27 = stringResult1;
-    } else {
-      tmp27 = cResult[10];
-    }
-    if (cResult[11] !== tmp4.cardText) {
-      const obj4 = { style: tmp4.cardText, variant: "text-md/medium", children: tmp27 };
-      const tmp31 = React5(tmp(4786).Text, obj4);
-      cResult[11] = tmp4.cardText;
-      cResult[12] = tmp31;
-      let tmp29 = tmp31;
-    } else {
-      tmp29 = cResult[12];
-    }
-    if (cResult[13] === tmp4.header) {
-      if (cResult[14] === tmp24) {
-        if (cResult[15] === tmp29) {
-          if (cResult[16] === tmp15) {
-            if (cResult[17] === tmp20) {
-              let tmp32 = cResult[18];
-            }
-            const _Symbol3 = Symbol;
-            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl3 = tmp(1119).intl;
-              const stringResult2 = intl3.string(tmp(1119).t.RvfRTB);
-              cResult[19] = stringResult2;
-              let tmp36 = stringResult2;
-            } else {
-              tmp36 = cResult[19];
-            }
-            if (cResult[20] !== tmp4.title) {
-              const obj5 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp36 };
-              const tmp40 = React5(tmp(4786).Text, obj5);
-              cResult[20] = tmp4.title;
-              cResult[21] = tmp40;
-              let tmp38 = tmp40;
-            } else {
-              tmp38 = cResult[21];
-            }
-            const _Symbol4 = Symbol;
-            if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp43 = FEATURES_PREMIUM_GUILD_USER();
-              cResult[22] = tmp43;
-              let tmp41 = tmp43;
-            } else {
-              tmp41 = cResult[22];
-            }
-            if (cResult[23] !== tmp4.features) {
-              const obj6 = { style: tmp4.features, features: tmp41 };
-              const tmp46 = React5(tmp11(9533), obj6);
-              cResult[23] = tmp4.features;
-              cResult[24] = tmp46;
-              let tmp44 = tmp46;
-            } else {
-              tmp44 = cResult[24];
-            }
-            const _Symbol5 = Symbol;
-            if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl4 = tmp(1119).intl;
-              const stringResult3 = intl4.string(tmp(1119).t["/pVhjb"]);
-              cResult[25] = stringResult3;
-              let tmp47 = stringResult3;
-            } else {
-              tmp47 = cResult[25];
-            }
-            if (cResult[26] !== tmp4.title) {
-              const obj7 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp47 };
-              const tmp51 = React5(tmp(4786).Text, obj7);
-              cResult[26] = tmp4.title;
-              cResult[27] = tmp51;
-              let tmp49 = tmp51;
-            } else {
-              tmp49 = cResult[27];
-            }
-            const _Symbol6 = Symbol;
-            if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp54 = FEATURES_PREMIUM_GUILD();
-              cResult[28] = tmp54;
-              let tmp52 = tmp54;
-            } else {
-              tmp52 = cResult[28];
-            }
-            if (cResult[29] !== tmp4.features) {
-              const obj8 = { style: tmp4.features, features: tmp52 };
-              const tmp57 = React5(tmp11(9533), obj8);
-              cResult[29] = tmp4.features;
-              cResult[30] = tmp57;
-              let tmp55 = tmp57;
-            } else {
-              tmp55 = cResult[30];
-            }
-            if (cResult[31] === fractionalState) {
-              if (cResult[32] === subscriptionPlansLoaded) {
-                let tmp58 = cResult[33];
-              }
-              if (cResult[34] === stateFromStores) {
-                if (cResult[35] === isInReverseTrial) {
-                  if (cResult[36] === guildSubscriptionNoGuildsSource) {
-                    if (cResult[37] === tmp4.cardText) {
-                      if (cResult[38] === tmp4.guildList) {
-                        if (cResult[39] === tmp4.imgNoGuilds) {
-                          let tmp61 = cResult[40];
-                        }
-                        if (cResult[41] === subscriptionPlansLoaded) {
-                          if (cResult[42] === onLearnMorePremium) {
-                            if (cResult[43] === tmp4.subscriptionUpsell) {
-                              let tmp69 = cResult[44];
-                            }
-                            if (cResult[45] === tmp4.upsell) {
-                              if (cResult[46] === tmp58) {
-                                if (cResult[47] === tmp61) {
-                                  if (cResult[48] === tmp69) {
-                                    let tmp72 = cResult[49];
-                                  }
-                                  if (cResult[50] === tmp4.root) {
-                                    if (cResult[51] === tmp32) {
-                                      if (cResult[52] === tmp38) {
-                                        if (cResult[53] === tmp44) {
-                                          if (cResult[54] === tmp49) {
-                                            if (cResult[55] === tmp55) {
-                                              if (cResult[56] === tmp72) {
-                                                let tmp76 = cResult[57];
-                                              }
-                                              return tmp76;
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                  const obj9 = { style: root, children: null };
-                                  const items1 = [tmp32, tmp38, tmp44, tmp49, tmp55, tmp72];
-                                  obj9.children = items1;
-                                  const tmp79 = closure_1_8(React3, obj9);
-                                  cResult[50] = tmp4.root;
-                                  cResult[51] = tmp32;
-                                  cResult[52] = tmp38;
-                                  cResult[53] = tmp44;
-                                  cResult[54] = tmp49;
-                                  cResult[55] = tmp55;
-                                  cResult[56] = tmp72;
-                                  cResult[57] = tmp79;
-                                  tmp76 = tmp79;
-                                }
-                              }
-                            }
-                            const obj10 = { style: tmp4.upsell, children: null };
-                            const items2 = [tmp58, tmp61, tmp69];
-                            obj10.children = items2;
-                            const tmp75 = closure_1_8(React3, obj10);
-                            cResult[45] = tmp4.upsell;
-                            cResult[46] = tmp58;
-                            cResult[47] = tmp61;
-                            cResult[48] = tmp69;
-                            cResult[49] = tmp75;
-                            tmp72 = tmp75;
-                          }
-                        }
-                        let tmp70 = null;
-                        if (subscriptionPlansLoaded) {
-                          const obj11 = { onLearnMorePremium, style: tmp4.subscriptionUpsell };
-                          tmp70 = React5(tmp11(13842), obj11);
-                        }
-                        cResult[41] = subscriptionPlansLoaded;
-                        cResult[42] = onLearnMorePremium;
-                        cResult[43] = tmp4.subscriptionUpsell;
-                        cResult[44] = tmp70;
-                        tmp69 = tmp70;
-                      }
-                    }
-                  }
-                }
-              }
-              if (isInReverseTrial) {
-                cResult[34] = stateFromStores;
-                cResult[35] = isInReverseTrial;
-                cResult[36] = guildSubscriptionNoGuildsSource;
-                cResult[37] = tmp4.cardText;
-                cResult[38] = tmp4.guildList;
-                cResult[39] = tmp4.imgNoGuilds;
-                cResult[40] = null;
-                tmp61 = null;
-              } else {
-                const obj12 = { children: null };
-                if (stateFromStores) {
-                  const obj13 = { style: tmp4.cardText, variant: "text-md/medium", children: null };
-                  const intl7 = tmp(1119).intl;
-                  obj13.children = intl7.string(tmp(1119).t.WRzob8);
-                  const items3 = [tmp65(tmp(4786).Text, obj13), , ];
-                  const obj14 = { style: null, variant: "text-md/bold", children: null };
-                  const items4 = [tmp4.cardText];
-                  obj14.style = items4;
-                  const intl8 = tmp(1119).intl;
-                  obj14.children = intl8.string(tmp(1119).t.j4bXcm);
-                  items3[1] = tmp65(tmp(4786).Text, obj14);
-                  const obj15 = { style: tmp4.guildList };
-                  items3[2] = tmp65(tmp11(13841), obj15);
-                  obj12.children = items3;
-                  let tmp67 = obj12;
-                } else {
-                  const obj16 = { style: tmp4.imgNoGuilds, source: guildSubscriptionNoGuildsSource };
-                  const items5 = [tmp65(React4, obj16), , ];
-                  const obj17 = { style: null, variant: "text-md/bold", children: null };
-                  const items6 = [tmp4.cardText];
-                  obj17.style = items6;
-                  const intl5 = tmp(1119).intl;
-                  obj17.children = intl5.string(tmp(1119).t.FHm4bZ);
-                  items5[1] = tmp65(tmp(4786).Text, obj17);
-                  const obj18 = { style: tmp4.cardText, variant: "text-md/medium", children: null };
-                  const intl6 = tmp(1119).intl;
-                  obj18.children = intl6.string(tmp(1119).t.PSLiiu);
-                  items5[2] = tmp65(tmp(4786).Text, obj18);
-                  obj12.children = items5;
-                  tmp67 = obj12;
-                }
-                closure_1_8(React3, tmp67);
-              }
-            }
-            let tmp59 = null;
-            if (subscriptionPlansLoaded) {
-              tmp59 = null;
-              if (fractionalState === tmp13.NONE) {
-                tmp59 = React5(tmp11(13840), {});
-              }
-            }
-            cResult[31] = fractionalState;
-            cResult[32] = subscriptionPlansLoaded;
-            cResult[33] = tmp59;
-            tmp58 = tmp59;
-          }
-        }
-      }
-    }
-    const obj19 = { style: header, children: null };
-    const items7 = [tmp15, tmp20, tmp24, tmp29];
-    obj19.children = items7;
-    const tmp35 = closure_1_8(React3, obj19);
-    cResult[13] = tmp4.header;
-    cResult[14] = tmp24;
-    cResult[15] = tmp29;
-    cResult[16] = tmp15;
-    cResult[17] = tmp20;
-    cResult[18] = tmp35;
-    tmp32 = tmp35;
-  }
-  const tmp21 = React5(React4, { style: tmp4.logoPremiumGuild, source: tmp11Result });
-  cResult[4] = tmp4.logoPremiumGuild;
-  cResult[5] = tmp11Result;
-  cResult[6] = tmp21;
-  tmp20 = tmp21;
-}) : ((arg0) => {
+export default function GuildBoostingUpsell(arg0) {
   ({ fractionalState, isInReverseTrial } = arg0);
   ({ onLearnMorePremium, hasAvailableSlots } = arg0);
   const tmp = closure_9();
@@ -448,28 +92,28 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
   const obj5 = { style: tmp.header, children: null };
   const tmp8 = useThemeDefault();
   const tmp9 = FractionalPremiumStates;
-  const items1 = [React5(React4, { style: tmp.imgPremiumGuild, source: _modDef13674 }), , , ];
+  const items1 = [React5(React4, { style: tmp.imgPremiumGuild, source: _modDef13664 }), , , ];
   const obj7 = { style: tmp.logoPremiumGuild, source: null };
-  const obj6 = { style: tmp.imgPremiumGuild, source: _modDef13674 };
+  const obj6 = { style: tmp.imgPremiumGuild, source: _modDef13664 };
   if (tmp2Result.isThemeDark(tmp8)) {
-    let tmp7Result = tmp7(13683);
+    let tmp7Result = tmp7(13673);
   } else {
-    tmp7Result = tmp7(13684);
+    tmp7Result = tmp7(13674);
   }
   obj7.source = tmp7Result;
   items1[1] = React5(React4, obj7);
   const obj8 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = tmp2(1119).intl;
+  const intl = tmp2(1115).intl;
   obj8.children = intl.string(util.t.hw6WTd);
   items1[2] = React5(Text_Text.Text, obj8);
   const obj9 = { style: tmp.cardText, variant: "text-md/medium", children: null };
-  const intl2 = tmp2(1119).intl;
+  const intl2 = tmp2(1115).intl;
   obj9.children = intl2.string(util.t.K5jBdG);
   items1[3] = React5(Text_Text.Text, obj9);
   obj5.children = items1;
-  const items2 = [closure_1_8(React3, obj5), , , , , ];
+  const items2 = [React6(React3, obj5), , , , , ];
   const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl3 = tmp2(1119).intl;
+  const intl3 = tmp2(1115).intl;
   obj10.children = intl3.string(util.t.RvfRTB);
   items2[1] = React5(Text_Text.Text, obj10);
   const obj11 = { style: tmp.features, features: null };
@@ -477,68 +121,98 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
   obj11.features = FEATURES_PREMIUM_GUILD_USER();
   items2[2] = React5(PremiumFeatureListDefault, obj11);
   const obj12 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl4 = tmp2(1119).intl;
+  const intl4 = tmp2(1115).intl;
   obj12.children = intl4.string(util.t["/pVhjb"]);
   items2[3] = React5(Text_Text.Text, obj12);
   const obj13 = { style: tmp.features, features: null };
+  const obj14 = { icon: null, label: null, IconComponent: null, color: null };
   const tmp7Result3 = PremiumFeatureListDefault;
-  obj13.features = FEATURES_PREMIUM_GUILD();
+  obj14.icon = _modDef13821;
+  const intl5 = tmp2(1115).intl;
+  obj14.label = intl5.string(util.t.Ts7BVI);
+  obj14.IconComponent = ReactionIcon.ReactionIcon;
+  obj14.color = nativeDefault.unsafe_rawColors.PREMIUM_PERK_YELLOW;
+  const items3 = [obj14, , , , ];
+  const obj15 = { icon: _modDef13822, label: null, IconComponent: null, color: null };
+  const intl6 = tmp2(1115).intl;
+  obj15.label = intl6.string(util.t.QcJbt6);
+  obj15.IconComponent = StickerIcon.StickerIcon;
+  obj15.color = nativeDefault.unsafe_rawColors.PREMIUM_PERK_PURPLE;
+  items3[1] = obj15;
+  const obj16 = { icon: _modDef13823, label: null, color: "#4173da", IconComponent: null };
+  const intl7 = tmp2(1115).intl;
+  obj16.label = intl7.string(util.t.rFNkf5);
+  obj16.IconComponent = HeadphonesIcon.HeadphonesIcon;
+  items3[2] = obj16;
+  const obj17 = { icon: _modDef13824, label: null, IconComponent: null, color: null };
+  const intl8 = tmp2(1115).intl;
+  obj17.label = intl8.string(util.t["BpjjS/"]);
+  obj17.IconComponent = UploadIcon.UploadIcon;
+  obj17.color = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK;
+  items3[3] = obj17;
+  const obj18 = { icon: _modDef13825, label: null, IconComponent: null, color: null };
+  const intl9 = tmp2(1115).intl;
+  obj18.label = intl9.string(util.t["9g5Lgb"]);
+  obj18.IconComponent = StarIcon.StarIcon;
+  obj18.color = nativeDefault.unsafe_rawColors.PREMIUM_PERK_GOLD;
+  items3[4] = obj18;
+  obj13.features = items3;
   items2[4] = React5(PremiumFeatureListDefault, obj13);
-  const obj14 = { style: tmp.upsell, children: null };
+  const obj19 = { style: tmp.upsell, children: null };
   let tmp13Result = null;
   if (subscriptionPlansLoaded) {
     tmp13Result = null;
     if (fractionalState === tmp9.NONE) {
-      tmp13Result = tmp13(tmp7(13840), {});
+      tmp13Result = tmp13(tmp7(13830), {});
     }
   }
-  const items3 = [tmp13Result, , ];
+  const items4 = [tmp13Result, , ];
   if (isInReverseTrial) {
-    items3[1] = null;
+    items4[1] = null;
     let tmp13Result2 = null;
     if (subscriptionPlansLoaded) {
-      const obj15 = { onLearnMorePremium, style: tmp.subscriptionUpsell };
-      tmp13Result2 = tmp13(tmp7(13842), obj15);
+      const obj20 = { onLearnMorePremium, style: tmp.subscriptionUpsell };
+      tmp13Result2 = tmp13(tmp7(13832), obj20);
     }
-    items3[2] = tmp13Result2;
-    obj14.children = items3;
-    items2[5] = tmp11(tmp12, obj14);
+    items4[2] = tmp13Result2;
+    obj19.children = items4;
+    items2[5] = tmp11(tmp12, obj19);
     obj4.children = items2;
     tmp11Result = tmp11(tmp12, obj4);
   } else {
-    const obj16 = { children: null };
+    const obj21 = { children: null };
     if (stateFromStores) {
-      const obj17 = { style: tmp.cardText, variant: "text-md/medium", children: null };
-      const intl7 = tmp2(1119).intl;
-      obj17.children = intl7.string(tmp2(1119).t.WRzob8);
-      const items4 = [tmp13(tmp2(4786).Text, obj17), , ];
-      const obj18 = { style: null, variant: "text-md/bold", children: null };
-      const items5 = [tmp.cardText];
-      obj18.style = items5;
-      const intl8 = tmp2(1119).intl;
-      obj18.children = intl8.string(tmp2(1119).t.j4bXcm);
-      items4[1] = tmp13(tmp2(4786).Text, obj18);
-      const obj19 = { style: tmp.guildList };
-      items4[2] = tmp13(tmp7(13841), obj19);
-      obj16.children = items4;
-      let tmp19 = obj16;
-    } else {
-      const obj20 = { style: tmp.imgNoGuilds, source: guildSubscriptionNoGuildsSource };
-      const items6 = [tmp13(tmp14, obj20), , ];
-      const obj21 = { style: null, variant: "text-md/bold", children: null };
-      const items7 = [tmp.cardText];
-      obj21.style = items7;
-      const intl5 = tmp2(1119).intl;
-      obj21.children = intl5.string(tmp2(1119).t.FHm4bZ);
-      items6[1] = tmp13(tmp2(4786).Text, obj21);
       const obj22 = { style: tmp.cardText, variant: "text-md/medium", children: null };
-      const intl6 = tmp2(1119).intl;
-      obj22.children = intl6.string(tmp2(1119).t.PSLiiu);
-      items6[2] = tmp13(tmp2(4786).Text, obj22);
-      obj16.children = items6;
-      tmp19 = obj16;
+      const intl12 = tmp2(1115).intl;
+      obj22.children = intl12.string(tmp2(1115).t.WRzob8);
+      const items5 = [tmp13(tmp2(4784).Text, obj22), , ];
+      const obj23 = { style: null, variant: "text-md/bold", children: null };
+      const items6 = [tmp.cardText];
+      obj23.style = items6;
+      const intl13 = tmp2(1115).intl;
+      obj23.children = intl13.string(tmp2(1115).t.j4bXcm);
+      items5[1] = tmp13(tmp2(4784).Text, obj23);
+      const obj24 = { style: tmp.guildList };
+      items5[2] = tmp13(tmp7(13831), obj24);
+      obj21.children = items5;
+      let tmp19 = obj21;
+    } else {
+      const obj25 = { style: tmp.imgNoGuilds, source: guildSubscriptionNoGuildsSource };
+      const items7 = [tmp13(tmp14, obj25), , ];
+      const obj26 = { style: null, variant: "text-md/bold", children: null };
+      const items8 = [tmp.cardText];
+      obj26.style = items8;
+      const intl10 = tmp2(1115).intl;
+      obj26.children = intl10.string(tmp2(1115).t.FHm4bZ);
+      items7[1] = tmp13(tmp2(4784).Text, obj26);
+      const obj27 = { style: tmp.cardText, variant: "text-md/medium", children: null };
+      const intl11 = tmp2(1115).intl;
+      obj27.children = intl11.string(tmp2(1115).t.PSLiiu);
+      items7[2] = tmp13(tmp2(4784).Text, obj27);
+      obj21.children = items7;
+      tmp19 = obj21;
     }
     tmp11(tmp12, tmp19);
   }
-});
+};
 export { FEATURES_PREMIUM_GUILD_USER };

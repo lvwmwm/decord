@@ -1,11 +1,11 @@
-// Module ID: 5431
-// Function ID: 5432
+// Module ID: 5429
+// Function ID: 5430
 // Name: ImageAttachmentMezzanineV2Experiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 // Exports: getImageAttachmentMezzanineV2Config
 
-// Module 5431 (ImageAttachmentMezzanineV2Experiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 5429 (ImageAttachmentMezzanineV2Experiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const config = ApexExperiment.createApexExperiment({ name: "2025-09-image-attachment-mezzanine-v2", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, maxFileSizeBytes: 524288 }, 2: { enabled: true, maxFileSizeBytes: 262144 } } });

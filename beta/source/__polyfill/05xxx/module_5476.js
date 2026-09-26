@@ -1,30 +1,24 @@
 // Module ID: 5476
 // Function ID: 5477
-// Dependencies: [5473]
+// Dependencies: [5462]
 
 // Module 5476
-import findOffsets from "findOffsets" /* 5473 */;
+import _mod5462 from "module_5462" /* 5462 */;
 
 require = arg1;
 const dependencyMap = arg6;
+let c2 = 6;
+let closure_3 = ["GIF87a", "GIF89a"];
 
 export default {
-  isAvifFile(getUint32) {
-    if (getUint32) {
-      try {
-        let parseBoxResult = findOffsets.parseBox(getUint32, 0);
-        if (parseBoxResult) {
-          parseBoxResult = "avif" === parseBoxResult.majorBrand;
-        }
-        return parseBoxResult;
-      } catch (err) {
-        return false;
-      }
-    } else {
-      return false;
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      hasItem = closure_3.includes(_mod5462.getStringFromDataView(dataView, 0, c2));
     }
+    return hasItem;
   },
-  findAvifOffsets(byteLength) {
-    return findOffsets.findOffsets(byteLength);
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
   }
 };

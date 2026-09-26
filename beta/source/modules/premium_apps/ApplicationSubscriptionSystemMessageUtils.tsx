@@ -1,11 +1,11 @@
-// Module ID: 8290
-// Function ID: 8291
+// Module ID: 8285
+// Function ID: 8286
 // Name: ApplicationSubscriptionSystemMessageUtils
-// Dependencies: [1119, 2]
+// Dependencies: [1115, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 8290 (ApplicationSubscriptionSystemMessageUtils)
-import util from "util" /* 1119 */;
+// Module 8285 (ApplicationSubscriptionSystemMessageUtils)
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");

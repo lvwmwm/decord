@@ -1,18 +1,15 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16624
+// Function ID: 16625
 // Name: GuildsBarConstants
-// Dependencies: [558, 4494, 580, 2]
+// Dependencies: [4489, 576, 2]
 // Exports: useGuildWrapperSize
 
-// Module 16633 (GuildsBarConstants)
-import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4494 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 16624 (GuildsBarConstants)
+import nativeDefault from "native" /* 576 */;
+import useToken from "useToken" /* 4489 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
+const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
 
 export const GUILD_ITEM_SIZE = 48;
 export const GUILD_LIST_WIDTH = 72;
@@ -20,7 +17,7 @@ export const GUILD_ITEM_EMPTY_SRC = { uri: "invalid" };
 export const GUILD_ITEM_HIT_SLOP = { top: 4, left: 12, bottom: 4, right: 12 };
 export const GUILD_ITEM_BADGE_SIZE = 16;
 export const GUILD_ITEM_INSET_LEFT = 12;
-export const useGuildWrapperSize = () => {
+export const useGuildWrapperSize = function useGuildWrapperSize() {
   const token = useToken.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   return token + 2 * useToken.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN);
 };

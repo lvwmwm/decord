@@ -1,53 +1,36 @@
-// Module ID: 15682
-// Function ID: 15683
+// Module ID: 15686
+// Function ID: 15687
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [4782, 8270, 558, 568, 504, 14758, 11630, 1119, 2]
-// Exports: onShowLinkDecorationsValueChange
+// Dependencies: [4780, 8265, 504, 14748, 11754, 1115, 2]
+// Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 15682 (ShowLinkDecorationsSetting)
+// Module 15686 (ShowLinkDecorationsSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14758 */;
-import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import util from "util" /* 1115 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function t() {
-      return AccessibilityStore.alwaysShowLinkDecorations;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+function useShowLinkDecorationsSettingValue() {
   const items = [AccessibilityStore];
   return initialize.useStateFromStores(items, () => AccessibilityStore.alwaysShowLinkDecorations);
-});
+}
 function onShowLinkDecorationsValueChange(alwaysShowLinkDecorations) {
   const result = AccessibilityActionCreators.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
 }
-const SettingBuilders = fn(11630);
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.OLZFB8);
   },
-  parent: fn(8270).MobileUserSettings.ACCESSIBILITY,
-  useValue: tmp2,
+  parent: fn(8265).MobileUserSettings.ACCESSIBILITY,
+  useValue: useShowLinkDecorationsSettingValue,
   onValueChange: onShowLinkDecorationsValueChange
 });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ShowLinkDecorationsSetting.tsx");
 
 export default toggle;
-export const useShowLinkDecorationsSettingValue = tmp2;
+export { useShowLinkDecorationsSettingValue };
 export { onShowLinkDecorationsValueChange };

@@ -4,4 +4,4 @@
 
 // Module 1306
 
-export default ReferenceError;
+export default Math.abs;

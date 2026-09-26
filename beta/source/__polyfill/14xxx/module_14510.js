@@ -1,9 +1,25 @@
 // Module ID: 14510
 // Function ID: 14511
-// Dependencies: [1125]
+// Dependencies: []
+// Exports: default
 
 // Module 14510
-import registerAsset from "module_1125" /* 1125 */;
+const weakMap = new WeakMap();
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/intl/messages", scales: [1], hash: "b076f35cb059256a96b9ed5a60c93c6b", name: "international.compiled.messages", type: "jsona" });
+export default function getInternalSlots(arg0, arg1) {
+  let items = arg1;
+  if (undefined === arg1) {
+    items = [];
+  }
+  value = weakMap.get(arg0);
+  if (!value) {
+    const _Object = Object;
+    const obj2 = Object.create(null, items.reduce((acc, item) => {
+      acc[item] = { enumerable: false, writable: true, configurable: true };
+      return acc;
+    }, {}));
+    const result = weakMap.set(arg0, obj2);
+    value = obj2;
+  }
+  return value;
+};

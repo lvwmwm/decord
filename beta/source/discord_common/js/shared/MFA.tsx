@@ -1,10 +1,10 @@
-// Module ID: 15956
-// Function ID: 15957
+// Module ID: 15960
+// Function ID: 15961
 // Name: MFA
-// Dependencies: [5, 1275, 2]
+// Dependencies: [5, 1271, 2]
 // Exports: trySubmit
 
-// Module 15956 (MFA)
+// Module 15960 (MFA)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -29,7 +29,7 @@ let closure_4 = async function _finishMFACheck(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -57,7 +57,7 @@ let closure_4 = async function _finishMFACheck(arg0, value) {
           closure_130_3 = num7;
           c6 = 1;
           c7 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {

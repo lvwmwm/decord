@@ -1,84 +1,22 @@
-// Module ID: 16841
-// Function ID: 16842
+// Module ID: 16831
+// Function ID: 16832
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [19, 558, 568, 8667, 2]
+// Dependencies: [19, 8662, 2]
+// Exports: useICYMIEmptyLoadingAnalytics
 
-// Module 16841 (useICYMIEmptyLoadingAnalytics)
-import ICYMIAnalytics3 from "ICYMIAnalytics" /* 8667 */;
+// Module 16831 (useICYMIEmptyLoadingAnalytics)
+import ICYMIAnalytics3 from "ICYMIAnalytics" /* 8662 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/icymi/useICYMIEmptyLoadingAnalytics.tsx");
 
-export const useICYMIEmptyLoadingAnalytics = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  dependencyMap = arg1;
-  const cResult = require("c").c(7);
+export const useICYMIEmptyLoadingAnalytics = function useICYMIEmptyLoadingAnalytics(loading, isFocused) {
+  closure_0 = loading;
+  closure_1 = isFocused;
   noop = noop.useRef(null);
-  if (cResult[0] === arg1) {
-    if (cResult[1] === arg0) {
-      let tmp2 = cResult[2];
-      let tmp3 = cResult[3];
-    }
-    const effect = obj2.useEffect(tmp2, tmp3);
-    if (cResult[4] !== arg1) {
-      const fn2 = function s() {
-        if (!closure_1) {
-          if (null != ref.current) {
-            const _Date = Date;
-            const diff = Date.now() - tmp.current;
-            const ICYMIAnalytics = ICYMIAnalytics3.ICYMIAnalytics;
-            const obj = { dwellTimeMs: diff };
-            const result = ICYMIAnalytics.trackFeedEmptyLoadingAbandoned(obj);
-            tmp.current = null;
-          }
-        }
-      };
-      const items = [arg1];
-      cResult[4] = arg1;
-      cResult[5] = fn2;
-      cResult[6] = items;
-      let tmp6 = items;
-      let tmp5 = fn2;
-    } else {
-      tmp5 = cResult[5];
-      tmp6 = cResult[6];
-    }
-    const effect1 = obj2.useEffect(tmp5, tmp6);
-  }
-  const fn = function c() {
-    if (closure_1) {
-      if (closure_0) {
-        const _Date = Date;
-        tmp2.current = Date.now();
-        const ICYMIAnalytics = ICYMIAnalytics3.ICYMIAnalytics;
-        const result = ICYMIAnalytics.trackFeedEmptyLoadingSeen();
-      } else if (null != tmp2.current) {
-        const _Date2 = Date;
-        const diff = Date.now() - tmp2.current;
-        const ICYMIAnalytics2 = ICYMIAnalytics3.ICYMIAnalytics;
-        const obj = { dwellTimeMs: diff };
-        const result1 = ICYMIAnalytics2.trackFeedEmptyLoadingComplete(obj);
-        tmp2.current = null;
-      }
-    }
-  };
-  const items1 = [arg0, arg1];
-  cResult[0] = arg1;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  cResult[3] = items1;
-  tmp3 = items1;
-  tmp2 = fn;
-}) : ((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  noop = noop.useRef(null);
-  const items = [arg0, arg1];
+  const items = [loading, isFocused];
   const effect = noop.useEffect(() => {
     if (closure_1) {
       if (closure_0) {
@@ -96,7 +34,7 @@ export const useICYMIEmptyLoadingAnalytics = ReactCompilerGating.isReactCompiler
       }
     }
   }, items);
-  const items1 = [arg1];
+  const items1 = [isFocused];
   const effect1 = noop.useEffect(() => {
     if (!closure_1) {
       if (null != ref.current) {
@@ -109,4 +47,4 @@ export const useICYMIEmptyLoadingAnalytics = ReactCompilerGating.isReactCompiler
       }
     }
   }, items1);
-});
+};

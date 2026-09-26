@@ -1,17 +1,17 @@
-// Module ID: 9340
-// Function ID: 9341
+// Module ID: 9342
+// Function ID: 9343
 // Name: VibegrationsActionCreators
-// Dependencies: [5, 9339, 1078, 577, 9341, 9342, 1275, 5309, 13223, 7442, 9335, 2]
+// Dependencies: [5, 9341, 1074, 573, 9343, 9344, 1271, 5307, 13217, 7440, 9337, 2]
 // Exports: createProject, deleteProject, markLogsSeen, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 9340 (VibegrationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5309 */;
-import VibegrationsAnalytics from "VibegrationsAnalytics" /* 9341 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9342 */;
+// Module 9342 (VibegrationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5307 */;
+import VibegrationsAnalytics from "VibegrationsAnalytics" /* 9343 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9344 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9341 */;
 
 require = fn;
 function reloadVibegrationsAppFrames(application_id) {
@@ -38,7 +38,7 @@ let closure_10 = async function _listProjects(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -186,7 +186,7 @@ let closure_13 = async function _createProject(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -292,7 +292,7 @@ let closure_16 = async function _setProjectIcon(arg0, icon) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -390,7 +390,7 @@ let closure_18 = async function _refreshPublishedProject(arg0, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -416,7 +416,7 @@ let closure_18 = async function _refreshPublishedProject(arg0, arg1) {
             closure_130_6 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -513,7 +513,7 @@ let closure_18 = async function _refreshPublishedProject(arg0, arg1) {
   iter.next();
   return iter;
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 let c7 = null;
 let c8 = null;
 const size = fn(2);

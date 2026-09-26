@@ -1,17 +1,17 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 11766
+// Function ID: 11767
 // Name: ApexActionCreators
-// Dependencies: [109, 5, 1239, 1078, 1275, 577, 8174, 1441, 504, 2]
+// Dependencies: [109, 5, 1235, 1074, 1271, 573, 8169, 1437, 504, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 11642 (ApexActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import apex_ApexTypes from "apex/ApexTypes" /* 1441 */;
-import experiment from "experiment" /* 8174 */;
+// Module 11766 (ApexActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import apex_ApexTypes from "apex/ApexTypes" /* 1437 */;
+import experiment from "experiment" /* 8169 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 require = fn;
 let closure_8 = async function _fetchApexExperimentsMetadata(surface) {
@@ -57,7 +57,7 @@ let closure_9 = async function _fetchUserExperimentAssignments(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -143,7 +143,7 @@ let closure_10 = async function _fetchInstallationExperiments(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -236,7 +236,7 @@ let closure_10 = async function _fetchInstallationExperiments(arg0, value) {
   }
 };
 let closure_3 = ["installation"];
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/apex/ApexActionCreators.tsx");
 

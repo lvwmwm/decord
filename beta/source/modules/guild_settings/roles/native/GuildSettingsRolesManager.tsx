@@ -1,16 +1,16 @@
-// Module ID: 18054
-// Function ID: 18055
+// Module ID: 18045
+// Function ID: 18046
 // Name: GuildSettingsRolesManager
-// Dependencies: [562, 1252, 2]
+// Dependencies: [560, 1248, 2]
 // Exports: setRoleJustCreated
 
-// Module 18054 (GuildSettingsRolesManager)
-import module_562 from "module_562" /* 562 */;
+// Module 18045 (GuildSettingsRolesManager)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const useGuildSettingsRolesManagerState = module_562.create(() => ({ roleJustCreated: false }));
+const useGuildSettingsRolesManagerState = module_560.create(() => ({ roleJustCreated: false }));
 const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRolesManager.tsx");
 
 export const setRoleJustCreated = function setRoleJustCreated(roleJustCreated) {

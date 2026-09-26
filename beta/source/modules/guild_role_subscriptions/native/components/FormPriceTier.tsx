@@ -1,20 +1,20 @@
-// Module ID: 18243
-// Function ID: 18244
+// Module ID: 18234
+// Function ID: 18235
 // Name: FormPriceTier
-// Dependencies: [19, 18202, 1078, 21, 1119, 14204, 7513, 38, 4757, 9568, 1984, 2]
+// Dependencies: [19, 18193, 1074, 21, 1115, 14194, 7511, 38, 4755, 9572, 1980, 2]
 // Exports: default
 
-// Module 18243 (FormPriceTier)
+// Module 18234 (FormPriceTier)
 import _modDef38 from "module_38" /* 38 */;
-import util from "util" /* 1119 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const RoleTierEditStore = fn(18202);
+const RoleTierEditStore = fn(18193);
 ({ LoadingState: c3, usePriceTiersAvailableInGuild: closure_4 } = RoleTierEditStore);
-const CurrencyCodes = fn(1078).CurrencyCodes;
+const CurrencyCodes = fn(1074).CurrencyCodes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormPriceTier.tsx");
@@ -79,7 +79,7 @@ export default function FormPriceTier(guildId) {
             price(onChange[8]).hideActionSheet();
           };
           obj2.selectedItem = price;
-          obj.openLazy(asyncRequireImpl(9568, dependencyMap.paths), "GuildRoleSubscriptionPriceTierSelect", obj2);
+          obj.openLazy(asyncRequireImpl(9572, dependencyMap.paths), "GuildRoleSubscriptionPriceTierSelect", obj2);
         },
       placeholder: null
     };
@@ -105,7 +105,7 @@ export default function FormPriceTier(guildId) {
             price(onChange[8]).hideActionSheet();
           };
           obj2.selectedItem = price;
-          obj.openLazy(asyncRequireImpl(9568, dependencyMap.paths), "GuildRoleSubscriptionPriceTierSelect", obj2);
+          obj.openLazy(asyncRequireImpl(9572, dependencyMap.paths), "GuildRoleSubscriptionPriceTierSelect", obj2);
         },
       placeholder: null
     });

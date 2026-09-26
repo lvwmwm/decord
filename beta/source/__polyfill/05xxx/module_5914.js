@@ -69,9 +69,9 @@ const entry = {
       const obj2 = {};
       const merged = Object.assign(tmp);
       const obj3 = { pointerEvents: "none", style: absoluteFill.absoluteFill, children: maskElement };
-      const items = [closure_1_8(timestampProducer, obj3), children];
+      const items = [React6(timestampProducer, obj3), children];
       obj2.children = items;
-      let tmp9 = options(closure_11, obj2);
+      let tmp9 = React7(closure_11, obj2);
     } else {
       if (!self._hasWarnedInvalidRenderMask) {
         const _console = console;
@@ -81,7 +81,7 @@ const entry = {
       const obj = {};
       const merged1 = Object.assign(tmp);
       obj.children = children;
-      tmp9 = closure_1_8(timestampProducer, obj);
+      tmp9 = React6(timestampProducer, obj);
     }
     return tmp9;
   }

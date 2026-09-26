@@ -1,55 +1,18 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15514
+// Function ID: 15515
 // Name: useEmojiByIdOrName
-// Dependencies: [5710, 558, 568, 504, 2]
+// Dependencies: [5708, 504, 2]
+// Exports: default, useEmojiByIdOrName
 
-// Module 15510 (useEmojiByIdOrName)
-import EmojiStore from "EmojiStore" /* 5710 */;
+// Module 15514 (useEmojiByIdOrName)
+import EmojiStore from "EmojiStore" /* 5708 */;
 
 const require = fn;
-const ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  dependencyMap = arg1;
-  const cResult = require("c").c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [EmojiStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    if (cResult[2] === arg1) {
-      let tmp6 = cResult[3];
-      let tmp7 = cResult[4];
-    }
-    return require("initialize").useStateFromStores(first, tmp6, tmp7);
-  }
-  const fn = function l() {
-    if (null == closure_1) {
-      return null;
-    } else {
-      const disambiguatedEmojiContext = EmojiStore.getDisambiguatedEmojiContext(closure_0);
-      let byId = disambiguatedEmojiContext.getById(tmp);
-      if (byId == null) {
-        byId = disambiguatedEmojiContext.getByName(tmp);
-      }
-      return byId;
-    }
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp7 = items1;
-  tmp6 = fn;
-}) : ((arg0, arg1) => {
-  _require = arg0;
-  dependencyMap = arg1;
+function useEmojiByIdOrName(guildId, emojiId) {
+  _require = guildId;
+  dependencyMap = emojiId;
   const items = [EmojiStore];
-  const items1 = [arg0, arg1];
+  const items1 = [guildId, emojiId];
   return require("initialize").useStateFromStores(items, () => {
     if (null == closure_1) {
       return null;
@@ -62,9 +25,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       return byId;
     }
   }, items1);
-});
+}
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useEmojiByIdOrName.tsx");
 
-export default tmp2;
-export const useEmojiByIdOrName = tmp2;
+export default useEmojiByIdOrName;
+export { useEmojiByIdOrName };

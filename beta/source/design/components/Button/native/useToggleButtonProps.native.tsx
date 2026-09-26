@@ -1,24 +1,24 @@
-// Module ID: 14485
-// Function ID: 14486
+// Module ID: 14475
+// Function ID: 14476
 // Name: useToggleButtonProps
 // Dependencies: [2]
 // Exports: useToggleButtonProps, useToggleIconButtonProps
 
-// Module 14485 (useToggleButtonProps)
+// Module 14475 (useToggleButtonProps)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Button/native/useToggleButtonProps.native.tsx");
 
-export const useToggleButtonProps = function useToggleButtonProps(cResult, cResult2) {
+export const useToggleButtonProps = function useToggleButtonProps(on, pressed) {
   const obj = {};
-  const merged = Object.assign(cResult2 ? cResult.on : cResult.off);
+  const merged = Object.assign(pressed ? on.on : on.off);
   obj.accessibilityRole = "togglebutton";
-  obj.accessibilityState = { checked: cResult2 };
+  obj.accessibilityState = { checked: pressed };
   return obj;
 };
-export const useToggleIconButtonProps = function useToggleIconButtonProps(first1, flag) {
+export const useToggleIconButtonProps = function useToggleIconButtonProps(on, flag) {
   const obj = {};
-  const merged = Object.assign(flag ? first1.on : first1.off);
+  const merged = Object.assign(flag ? on.on : on.off);
   obj.accessibilityRole = "togglebutton";
   obj.accessibilityState = { checked: flag };
   return obj;

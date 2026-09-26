@@ -1,18 +1,33 @@
 // Module ID: 1566
 // Function ID: 1567
-// Dependencies: [19]
+// Dependencies: [19, 1514]
+// Exports: useOnRouteFocus
 
 // Module 1566
+import NavigationBuilderContext from "NavigationBuilderContext" /* 1514 */;
 import noop from "module_19" /* 19 */;
 
-if (typeof document !== "undefined") {
-  let useEffect = noop.useLayoutEffect;
-} else {
-  const _navigator = navigator;
-  if (typeof navigator !== "undefined") {
-    const _navigator2 = navigator;
-  }
-  useEffect = noop.useEffect;
-}
+require = arg1;
 
-export const useClientLayoutEffect = useEffect;
+export const useOnRouteFocus = function useOnRouteFocus(router) {
+  router = router.router;
+  const getState = router.getState;
+  const key = router.key;
+  const setState = router.setState;
+  const onRouteFocus = noop.useContext(NavigationBuilderContext.NavigationBuilderContext).onRouteFocus;
+  const items = [getState, onRouteFocus, router, setState, key];
+  return noop.useCallback((arg0) => {
+    const tmp = getState();
+    const stateForRouteFocus = router.getStateForRouteFocus(tmp, arg0);
+    if (stateForRouteFocus !== tmp) {
+      setState(stateForRouteFocus);
+    }
+    let tmp6 = undefined !== onRouteFocus;
+    if (tmp6) {
+      tmp6 = undefined !== key;
+    }
+    if (tmp6) {
+      onRouteFocus(key);
+    }
+  }, items);
+};

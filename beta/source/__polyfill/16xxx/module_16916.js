@@ -1,9 +1,9 @@
 // Module ID: 16916
 // Function ID: 16917
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 16916
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_home/native/images", width: 1100, height: 275, scales: [2, 3], hash: "ba87a4f1a3775c9189bf0599d24fcb24", name: "dark_home_header_placeholder", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "d69183c841a46891894e3608d083bf5f", name: "ic_radio_circle", type: "png" });

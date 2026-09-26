@@ -1,10 +1,9 @@
 // Module ID: 1125
 // Function ID: 1126
-// Dependencies: [84]
+// Dependencies: [1121]
 
 // Module 1125
-import _mod84 from "module_84" /* 84 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export const registerAsset = _mod84.registerAsset;
-export const getAssetByID = _mod84.getAssetByID;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/aW50bA==", scales: [1], hash: "e8f6ee77f7b33b83c979db3057f80e49", name: "el.messages.e8f6ee77f7b33b83c979db3057f80e49.compiled.messages", type: "jsona" });

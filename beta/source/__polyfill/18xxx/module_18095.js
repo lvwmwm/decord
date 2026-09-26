@@ -1,9 +1,9 @@
 // Module ID: 18095
 // Function ID: 18096
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 18095
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 165, height: 178, scales: [2, 3], hash: "b685c2aca3ddb21997a856f7601ff6ad", name: "img_vanity_urls", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 250, height: 200, scales: [2, 3], hash: "3c95b7ec7d2eb4c8fde35f37e918dd98", name: "img_bans_empty_light", type: "png" });

@@ -1,18 +1,18 @@
-// Module ID: 17879
-// Function ID: 17880
+// Module ID: 17870
+// Function ID: 17871
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1376, 1078, 8883, 8748, 1235, 1368, 8880, 8882, 1245, 5674, 4819, 2]
+// Dependencies: [32, 5, 1372, 1074, 8878, 8743, 1231, 1364, 8875, 8877, 1241, 5672, 4817, 2]
 // Exports: beginAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 17879 (AppStoreAgeSignalReport)
-import TimeUtils from "TimeUtils" /* 4819 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8748 */;
-import AppStoreAgeSignalAttestation from "AppStoreAgeSignalAttestation" /* 8880 */;
-import AppStoreAgeAssurance from "AppStoreAgeAssurance" /* 8883 */;
+// Module 17870 (AppStoreAgeSignalReport)
+import TimeUtils from "TimeUtils" /* 4817 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5672 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8743 */;
+import AppStoreAgeSignalAttestation from "AppStoreAgeSignalAttestation" /* 8875 */;
+import AppStoreAgeAssurance from "AppStoreAgeAssurance" /* 8878 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function collectAgeSignal() {
@@ -36,7 +36,7 @@ let closure_10 = async function _collectAgeSignal(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -166,7 +166,7 @@ let closure_12 = async function _settleAppStoreAgeSignalReport(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -179,7 +179,7 @@ let closure_12 = async function _settleAppStoreAgeSignalReport(arg0, value) {
           c0 = 3;
           const obj4 = { value, done: true };
           return obj4;
-        } else if (null != closure_2_8) {
+        } else if (null != React6) {
           const items = [tmp13, TimeUtils.sleep(15000)];
           c1 = 1;
           c0 = 1;
@@ -195,14 +195,14 @@ let closure_12 = async function _settleAppStoreAgeSignalReport(arg0, value) {
         return obj;
       }
       c0 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp8) {
       c0 = tmp;
       throw tmp8;
     }
   }
 };
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 let c7 = false;
 let closure_8 = null;
 const size = fn(2);

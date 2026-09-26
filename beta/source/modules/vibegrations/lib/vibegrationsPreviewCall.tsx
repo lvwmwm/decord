@@ -1,10 +1,10 @@
-// Module ID: 9589
-// Function ID: 9590
+// Module ID: 9593
+// Function ID: 9594
 // Name: vibegrationsPreviewCall
 // Dependencies: [2]
 // Exports: controlAnswerTimeoutMs, isResultEnvelope, previewCallTypes
 
-// Module 9589 (vibegrationsPreviewCall)
+// Module 9593 (vibegrationsPreviewCall)
 import size from "module_2" /* 2 */;
 
 const prototype = function PreviewFrameCallTimeout(arg0, timeoutMs) {

@@ -1,63 +1,24 @@
-// Module ID: 17508
-// Function ID: 17509
+// Module ID: 17572
+// Function ID: 17573
 // Name: useVoicePanelNavArrowPressed
-// Dependencies: [19, 12454, 558, 568, 12455, 2]
+// Dependencies: [19, 12553, 12554, 2]
+// Exports: default
 
-// Module 17508 (useVoicePanelNavArrowPressed)
+// Module 17572 (useVoicePanelNavArrowPressed)
 import noop from "module_19" /* 19 */;
 
-const require = fn;
-const VoicePanelControlsModes = fn(12454).VoicePanelControlsModes;
-const ReactCompilerGating = fn(558);
+const VoicePanelControlsModes = fn(12553).VoicePanelControlsModes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelNavArrowPressed.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = focused(dismissPanel[3]).c(5);
-  const context = controlsSpecs.useContext(setFocused(dismissPanel[4]));
+export default function useVoicePanelNavArrowPressed() {
+  const context = dismissPanel.useContext(focused(setFocused[2]));
   focused = context.focused;
   setFocused = context.setFocused;
   dismissPanel = context.dismissPanel;
-  controlsSpecs = context.controlsSpecs;
-  if (cResult[0] === controlsSpecs) {
-    if (cResult[1] === dismissPanel) {
-      if (cResult[2] === focused) {
-        if (cResult[3] === setFocused) {
-          let tmp3 = cResult[4];
-        }
-        return tmp3;
-      }
-    }
-  }
-  const fn = function n() {
-    value = focused.get();
-    let id;
-    if (value != null) {
-      id = value.id;
-    }
-    if (null != id) {
-      if (controlsSpecs.get().mode !== VoicePanelControlsModes.DRAWER) {
-        setFocused(null);
-        let flag = true;
-      }
-      return flag;
-    }
-    flag = dismissPanel();
-  };
-  cResult[0] = controlsSpecs;
-  cResult[1] = dismissPanel;
-  cResult[2] = focused;
-  cResult[3] = setFocused;
-  cResult[4] = fn;
-  tmp3 = fn;
-}) : (() => {
-  const context = controlsSpecs.useContext(setFocused(dismissPanel[4]));
-  const focused = context.focused;
-  setFocused = context.setFocused;
-  dismissPanel = context.dismissPanel;
-  controlsSpecs = context.controlsSpecs;
+  const controlsSpecs = context.controlsSpecs;
   const items = [focused, controlsSpecs, dismissPanel, setFocused];
-  return controlsSpecs.useCallback(() => {
+  return dismissPanel.useCallback(() => {
     value = focused.get();
     let id;
     if (value != null) {
@@ -72,4 +33,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     flag = dismissPanel();
   }, items);
-});
+};

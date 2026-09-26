@@ -1,14 +1,14 @@
-// Module ID: 7764
-// Function ID: 7765
+// Module ID: 7759
+// Function ID: 7760
 // Name: isLimitedChannel
-// Dependencies: [2045, 4710, 1078, 2]
+// Dependencies: [2041, 4707, 1074, 2]
 // Exports: isLimitedChannel, isLimitedChannelId
 
-// Module 7764 (isLimitedChannel)
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
+// Module 7759 (isLimitedChannel)
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
 
-const ChannelTypes = fn(1078).ChannelTypes;
+const ChannelTypes = fn(1074).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_database/modules/messages/isLimitedChannel.tsx");
 

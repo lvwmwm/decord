@@ -1,26 +1,26 @@
-// Module ID: 7881
-// Function ID: 7882
+// Module ID: 7876
+// Function ID: 7877
 // Name: ExplicitMediaManager
-// Dependencies: [7872, 502, 7556, 2045, 5010, 2099, 4612, 7882, 1078, 1088, 7879, 7568, 7571, 7573, 577, 7883, 5118, 5123, 7884, 7885, 11, 5012, 4899, 7397, 2]
+// Dependencies: [7867, 502, 7554, 2041, 5008, 2095, 4609, 7877, 1074, 1084, 7874, 7566, 7569, 7571, 573, 7878, 5116, 5121, 7879, 7880, 11, 5010, 4897, 7395, 2]
 
-// Module 7881 (ExplicitMediaManager)
+// Module 7876 (ExplicitMediaManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import flattenDefault from "flatten" /* 4899 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7568 */;
-import HarmTypeConfiguration from "HarmTypeConfiguration" /* 7571 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7573 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7879 */;
-import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 7883 */;
-import uniqWithDefault from "uniqWith" /* 7885 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7872 */;
+import flattenDefault from "flatten" /* 4897 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7566 */;
+import HarmTypeConfiguration from "HarmTypeConfiguration" /* 7569 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7571 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7874 */;
+import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 7878 */;
+import uniqWithDefault from "uniqWith" /* 7880 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7867 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7556 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5010 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import ExplicitMediaSearchStore from "ExplicitMediaSearchStore" /* 7882 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7554 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 5008 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import ExplicitMediaSearchStore from "ExplicitMediaSearchStore" /* 7877 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 function resetManager() {
@@ -60,8 +60,8 @@ function maybeCancelTimeout(message1, UPDATE) {
           obj.numOfEmbeds = embeds.length;
           obj.numOfExplicitAttachments = found.length;
           obj.numOfExplicitEmbeds = found1.length;
-          const result = tmp5(7879).trackExplicitMediaScanComplete(obj);
-          const tmp5Result = tmp5(7879);
+          const result = tmp5(7874).trackExplicitMediaScanComplete(obj);
+          const tmp5Result = tmp5(7874);
         }
         ExplicitMediaRedactionUtils.trackScanTiming(setAt, UPDATE);
         const _clearTimeout = clearTimeout;
@@ -93,50 +93,50 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
   const filter = found2.filter;
   if (isMessageUpdate) {
     let found = filter((message) => {
-      let result = found1(7568).isEligibleForScanning(message);
+      let result = found1(7566).isEligibleForScanning(message);
       if (result) {
-        result = found1(7568).hasUnscannedMedia(message);
-        const tmpResult = found1(7568);
+        result = found1(7566).hasUnscannedMedia(message);
+        const tmpResult = found1(7566);
       }
       return result;
     });
     let found1 = found.filter(withoutScheduledTimeout);
   } else {
-    found2 = filter((components) => found1(7568).isEligibleForScanning(components));
+    found2 = filter((components) => found1(7566).isEligibleForScanning(components));
     found1 = found2.filter(withoutScheduledTimeout);
   }
   const item = found1.forEach((channel_id) => {
     closure_0 = channel_id;
     const combined = "" + channel_id.channel_id + ":" + channel_id.id;
     if (null == closure_14[combined]) {
-      let obj2 = { name: closure_0(5123).MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE };
-      closure_1(5118).increment(obj2);
+      let obj2 = { name: closure_0(5121).MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE };
+      closure_1(5116).increment(obj2);
       const obj3 = { setAt: null, timeout: null };
       const _Date = Date;
       obj3.setAt = Date.now();
       const _setTimeout = setTimeout;
       obj3.timeout = setTimeout(() => {
-        if (maybeCancelTimeout(closure_0, found1(7879).TimeoutCancelSource.TIMEOUT)) {
+        if (maybeCancelTimeout(closure_0, found1(7874).TimeoutCancelSource.TIMEOUT)) {
           message = message.getMessage(tmp.channel_id, tmp.id);
           if (null != message) {
-            const unscannedMediaIds = tmp2(7568).getUnscannedMediaIds(message);
+            const unscannedMediaIds = tmp2(7566).getUnscannedMediaIds(message);
             ({ attachmentIds, embedIds } = unscannedMediaIds);
-            const tmp2Result = tmp2(7568);
+            const tmp2Result = tmp2(7566);
             const obj = { channelId: null, messageId: null, attachmentIds: null, embedIds: null };
             ({ channel_id: obj3.channelId, id: obj3.messageId } = tmp);
             obj.attachmentIds = attachmentIds;
             obj.embedIds = embedIds;
-            const result = tmp2(7879).trackScanningTimedOut(obj);
-            const tmp2Result2 = tmp2(7879);
+            const result = tmp2(7874).trackScanningTimedOut(obj);
+            const tmp2Result2 = tmp2(7874);
           }
           ({ id: obj5.messageId, channel_id: obj5.channelId } = tmp);
-          closure_1(577).dispatch({ type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT", messageId: null, channelId: null });
+          closure_1(573).dispatch({ type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT", messageId: null, channelId: null });
           const obj2 = { type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT", messageId: null, channelId: null };
-          const obj4 = closure_1(577);
+          const obj4 = closure_1(573);
         }
       }, 3000);
       closure_14[combined] = obj3;
-      let obj = closure_1(5118);
+      let obj = closure_1(5116);
     }
   });
   if (!tmp) {
@@ -160,7 +160,7 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
       }
     }, 800 * Math.random());
   } else if (0 !== found1.length) {
-    let obj2 = found1(7883);
+    let obj2 = found1(7878);
     if (tmp) {
       let result = obj2.sendMultiChannelMessagesForScanning(found1);
     } else {
@@ -170,9 +170,9 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
 }
 function processMessagesFromAction(firstMessages, isMessageUpdate) {
   const found = firstMessages.filter((item) => {
-    obj = obj(7884);
+    obj = obj(7879);
     let result = obj.hasAttachmentsEmbedsComponentsOrSnapshots(item);
-    obj(7568);
+    obj(7566);
     if (result) {
       result = 0 !== tmp3;
     }
@@ -182,12 +182,12 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     if (null != referenced_message) {
       if ("referenced_message" in referenced_message) {
         if (null != referenced_message.referenced_message) {
-          obj = obj(7884);
+          obj = obj(7879);
           if (obj.hasAttachmentsEmbedsComponentsOrSnapshots(referenced_message.referenced_message)) {
             if (0 !== tmpResult.getEnabledHarmTypesForMessage(referenced_message.referenced_message)) {
               return referenced_message.referenced_message;
             }
-            tmpResult = tmp(7568);
+            tmpResult = tmp(7566);
           }
           tmp = obj;
         }
@@ -201,9 +201,9 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     HermesBuiltin.arraySpread(found1, HermesBuiltin.arraySpread(found, 0));
     tmp2 = items;
   }
-  const arr4 = obj2(7885)(tmp2, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+  const arr4 = obj2(7880)(tmp2, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
   const found2 = arr4.filter((item) => {
-    obj = obj(7568);
+    obj = obj(7566);
     return obj.hasUnscannedMedia(item);
   });
   let obj = {};
@@ -244,8 +244,8 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     let num3;
     if (attachments1 != null) {
       num3 = attachments1.filter((media) => {
-        obj = closure_1_0(7568);
-        return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.EXPLICIT, { type: closure_1_0(7573).ObscuredMediaTypes.Attachment, media });
+        obj = closure_1_0(7566);
+        return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.EXPLICIT, { type: closure_1_0(7571).ObscuredMediaTypes.Attachment, media });
       }).length;
     }
     if (num3 == null) {
@@ -256,8 +256,8 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     let num4;
     if (embeds1 != null) {
       num4 = embeds1.filter((media) => {
-        obj = closure_1_0(7568);
-        return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.EXPLICIT, { type: closure_1_0(7573).ObscuredMediaTypes.Embed, media });
+        obj = closure_1_0(7566);
+        return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.EXPLICIT, { type: closure_1_0(7571).ObscuredMediaTypes.Embed, media });
       }).length;
     }
     if (num4 == null) {
@@ -268,8 +268,8 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     let num5;
     if (attachments2 != null) {
       num5 = attachments2.filter((media) => {
-        obj = closure_1_0(7568);
-        return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.GORE, { type: closure_1_0(7573).ObscuredMediaTypes.Attachment, media });
+        obj = closure_1_0(7566);
+        return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.GORE, { type: closure_1_0(7571).ObscuredMediaTypes.Attachment, media });
       }).length;
     }
     if (num5 == null) {
@@ -280,8 +280,8 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     let num6;
     if (embeds2 != null) {
       num6 = embeds2.filter((media) => {
-        obj = closure_1_0(7568);
-        return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.GORE, { type: closure_1_0(7573).ObscuredMediaTypes.Embed, media });
+        obj = closure_1_0(7566);
+        return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.GORE, { type: closure_1_0(7571).ObscuredMediaTypes.Embed, media });
       }).length;
     }
     if (num6 == null) {
@@ -292,8 +292,8 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     let num7;
     if (attachments3 != null) {
       num7 = attachments3.filter((media) => {
-        obj = closure_1_0(7568);
-        return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.SELF_HARM, { type: closure_1_0(7573).ObscuredMediaTypes.Attachment, media });
+        obj = closure_1_0(7566);
+        return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.SELF_HARM, { type: closure_1_0(7571).ObscuredMediaTypes.Attachment, media });
       }).length;
     }
     if (num7 == null) {
@@ -304,8 +304,8 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     let num8;
     if (embeds3 != null) {
       num8 = embeds3.filter((media) => {
-        obj = closure_1_0(7568);
-        return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.SELF_HARM, { type: closure_1_0(7573).ObscuredMediaTypes.Embed, media });
+        obj = closure_1_0(7566);
+        return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.SELF_HARM, { type: closure_1_0(7571).ObscuredMediaTypes.Embed, media });
       }).length;
     }
     if (num8 == null) {
@@ -316,14 +316,14 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
   const entries = obj2(11).entries(obj);
   const item1 = entries.forEach((item) => {
     [tmp, tmp2] = item;
-    obj = obj(7879);
+    obj = obj(7874);
     const result = obj.trackExplicitMediaRedactableMessagedLoaded({ channelId: tmp, numOfAttachments: tmp2.numOfAttachments, numOfAttachmentsPendingScan: tmp2.numOfAttachmentsPendingScan, numOfEmbeds: tmp2.numOfEmbeds, numOfEmbedsPendingScan: tmp2.numOfEmbedsPendingScan });
   });
   const obj3 = obj2(11);
   const entries1 = obj2(11).entries(obj2);
   const item2 = entries1.forEach((item) => {
     [tmp, tmp2] = item;
-    obj = obj(7879);
+    obj = obj(7874);
     const result = obj.trackRedactableMessageLoaded({ messageId: tmp, channelId: tmp2.channelId, numOfAttachments: tmp2.numOfAttachments, numOfGoreAttachments: tmp2.numOfGoreAttachments, numOfExplicitAttachments: tmp2.numOfExplicitAttachments, numOfSelfHarmAttachments: tmp2.numOfSelfHarmAttachments, numOfEmbeds: tmp2.numOfEmbeds, numOfGoreEmbeds: tmp2.numOfGoreEmbeds, numOfExplicitEmbeds: tmp2.numOfExplicitEmbeds, numOfSelfHarmEmbeds: tmp2.numOfSelfHarmEmbeds });
   });
   let flag = found2.length > 0;
@@ -343,7 +343,7 @@ function handleMessageUpdate(message) {
             if (!tmp20Result.hasMessageSnapshotsWithAttachmentsOrEmbeds(message)) {
               return false;
             }
-            tmp20Result = tmp20(7879);
+            tmp20Result = tmp20(7874);
           }
         }
         const embeds = message.embeds;
@@ -361,7 +361,7 @@ function handleMessageUpdate(message) {
             if (!tmp20Result5.hasMessageSnapshotsWithAttachmentsOrEmbeds(message)) {
               return false;
             }
-            tmp20Result5 = tmp20(7879);
+            tmp20Result5 = tmp20(7874);
           }
         }
         if (!tmp20Result6.hasUnscannedMedia(message)) {
@@ -379,12 +379,12 @@ function handleMessageUpdate(message) {
           }
           let hasUnscannedMediaResult = null == message1;
           if (!hasUnscannedMediaResult) {
-            const tmp20Result7 = tmp20(7568);
-            hasUnscannedMediaResult = tmp20Result7.hasUnscannedMedia(tmp20(5012).updateMessageRecord(message1, message));
-            const tmp20Result8 = tmp20(5012);
+            const tmp20Result7 = tmp20(7566);
+            hasUnscannedMediaResult = tmp20Result7.hasUnscannedMedia(tmp20(5010).updateMessageRecord(message1, message));
+            const tmp20Result8 = tmp20(5010);
           }
           if (!hasUnscannedMediaResult) {
-            maybeCancelTimeout(message1, tmp20(7879).TimeoutCancelSource.UPDATE);
+            maybeCancelTimeout(message1, tmp20(7874).TimeoutCancelSource.UPDATE);
           }
         }
         const channelId = SelectedChannelStore.getChannelId();
@@ -548,11 +548,11 @@ function maybeScanMessagesForChannelId(channelId) {
   let tmp = 0 !== messages.length;
   if (tmp) {
     const found = messages.filter((item) => {
-      obj = obj(7884);
+      obj = obj(7879);
       let result = obj.hasAttachmentsEmbedsComponentsOrSnapshots(item);
       if (result) {
-        result = 0 !== obj(7568).getEnabledHarmTypesForMessage(item);
-        const tmpResult = obj(7568);
+        result = 0 !== obj(7566).getEnabledHarmTypesForMessage(item);
+        const tmpResult = obj(7566);
       }
       return result;
     });
@@ -562,12 +562,12 @@ function maybeScanMessagesForChannelId(channelId) {
           messageByReference = messageByReference.getMessageByReference(type.messageReference);
           if (messageByReference.state === constants.LOADED) {
             if (null != messageByReference.message) {
-              obj = obj(7884);
+              obj = obj(7879);
               if (obj.hasAttachmentsEmbedsComponentsOrSnapshots(messageByReference.message)) {
                 if (0 !== tmp5Result.getEnabledHarmTypesForMessage(messageByReference.message)) {
                   return messageByReference.message;
                 }
-                tmp5Result = tmp5(7568);
+                tmp5Result = tmp5(7566);
               }
               tmp5 = obj;
             }
@@ -582,9 +582,9 @@ function maybeScanMessagesForChannelId(channelId) {
       HermesBuiltin.arraySpread(found1, HermesBuiltin.arraySpread(found, 0));
       tmp3 = items;
     }
-    const arr5 = obj2(7885)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+    const arr5 = obj2(7880)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
     const found2 = arr5.filter((item) => {
-      obj = obj(7568);
+      obj = obj(7566);
       return obj.hasUnscannedMedia(item);
     });
     let obj = {};
@@ -625,8 +625,8 @@ function maybeScanMessagesForChannelId(channelId) {
       let num3;
       if (attachments1 != null) {
         num3 = attachments1.filter((media) => {
-          obj = closure_1_0(7568);
-          return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.EXPLICIT, { type: closure_1_0(7573).ObscuredMediaTypes.Attachment, media });
+          obj = closure_1_0(7566);
+          return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.EXPLICIT, { type: closure_1_0(7571).ObscuredMediaTypes.Attachment, media });
         }).length;
       }
       if (num3 == null) {
@@ -637,8 +637,8 @@ function maybeScanMessagesForChannelId(channelId) {
       let num4;
       if (embeds1 != null) {
         num4 = embeds1.filter((media) => {
-          obj = closure_1_0(7568);
-          return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.EXPLICIT, { type: closure_1_0(7573).ObscuredMediaTypes.Embed, media });
+          obj = closure_1_0(7566);
+          return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.EXPLICIT, { type: closure_1_0(7571).ObscuredMediaTypes.Embed, media });
         }).length;
       }
       if (num4 == null) {
@@ -649,8 +649,8 @@ function maybeScanMessagesForChannelId(channelId) {
       let num5;
       if (attachments2 != null) {
         num5 = attachments2.filter((media) => {
-          obj = closure_1_0(7568);
-          return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.GORE, { type: closure_1_0(7573).ObscuredMediaTypes.Attachment, media });
+          obj = closure_1_0(7566);
+          return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.GORE, { type: closure_1_0(7571).ObscuredMediaTypes.Attachment, media });
         }).length;
       }
       if (num5 == null) {
@@ -661,8 +661,8 @@ function maybeScanMessagesForChannelId(channelId) {
       let num6;
       if (embeds2 != null) {
         num6 = embeds2.filter((media) => {
-          obj = closure_1_0(7568);
-          return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.GORE, { type: closure_1_0(7573).ObscuredMediaTypes.Embed, media });
+          obj = closure_1_0(7566);
+          return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.GORE, { type: closure_1_0(7571).ObscuredMediaTypes.Embed, media });
         }).length;
       }
       if (num6 == null) {
@@ -673,8 +673,8 @@ function maybeScanMessagesForChannelId(channelId) {
       let num7;
       if (attachments3 != null) {
         num7 = attachments3.filter((media) => {
-          obj = closure_1_0(7568);
-          return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.SELF_HARM, { type: closure_1_0(7573).ObscuredMediaTypes.Attachment, media });
+          obj = closure_1_0(7566);
+          return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.SELF_HARM, { type: closure_1_0(7571).ObscuredMediaTypes.Attachment, media });
         }).length;
       }
       if (num7 == null) {
@@ -685,8 +685,8 @@ function maybeScanMessagesForChannelId(channelId) {
       let num8;
       if (embeds3 != null) {
         num8 = embeds3.filter((media) => {
-          obj = closure_1_0(7568);
-          return obj.isMediaFlaggedForHarmType(closure_1_0(7571).ContentHarmType.SELF_HARM, { type: closure_1_0(7573).ObscuredMediaTypes.Embed, media });
+          obj = closure_1_0(7566);
+          return obj.isMediaFlaggedForHarmType(closure_1_0(7569).ContentHarmType.SELF_HARM, { type: closure_1_0(7571).ObscuredMediaTypes.Embed, media });
         }).length;
       }
       if (num8 == null) {
@@ -697,14 +697,14 @@ function maybeScanMessagesForChannelId(channelId) {
     const entries = obj2(11).entries(obj);
     const item1 = entries.forEach((item) => {
       [tmp, tmp2] = item;
-      obj = obj(7879);
+      obj = obj(7874);
       const result = obj.trackExplicitMediaRedactableMessagedLoaded({ channelId: tmp, numOfAttachments: tmp2.numOfAttachments, numOfAttachmentsPendingScan: tmp2.numOfAttachmentsPendingScan, numOfEmbeds: tmp2.numOfEmbeds, numOfEmbedsPendingScan: tmp2.numOfEmbedsPendingScan });
     });
     const obj3 = obj2(11);
     const entries1 = obj2(11).entries(obj2);
     const item2 = entries1.forEach((item) => {
       [tmp, tmp2] = item;
-      obj = obj(7879);
+      obj = obj(7874);
       const result = obj.trackRedactableMessageLoaded({ messageId: tmp, channelId: tmp2.channelId, numOfAttachments: tmp2.numOfAttachments, numOfGoreAttachments: tmp2.numOfGoreAttachments, numOfSelfHarmAttachments: tmp2.numOfSelfHarmAttachments, numOfExplicitAttachments: tmp2.numOfExplicitAttachments, numOfEmbeds: tmp2.numOfEmbeds, numOfGoreEmbeds: tmp2.numOfGoreEmbeds, numOfExplicitEmbeds: tmp2.numOfExplicitEmbeds, numOfSelfHarmEmbeds: tmp2.numOfSelfHarmEmbeds });
     });
     let flag = found2.length > 0;
@@ -717,9 +717,9 @@ function maybeScanMessagesForChannelId(channelId) {
   }
   return tmp;
 }
-const ReferencedMessageState = fn(7872).ReferencedMessageState;
-let closure_12 = fn(1078).MessageTypesWithLazyLoadedReferences;
-const UserSettingsTypes = fn(1088).UserSettingsTypes;
+const ReferencedMessageState = fn(7867).ReferencedMessageState;
+let closure_12 = fn(1074).MessageTypesWithLazyLoadedReferences;
+const UserSettingsTypes = fn(1084).UserSettingsTypes;
 const dependencyMap = {};
 const prototype = function ExplicitMediaManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

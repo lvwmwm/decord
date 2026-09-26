@@ -1,60 +1,25 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 8479
+// Function ID: 8480
 // Name: useCurrentUser
-// Dependencies: [1376, 558, 568, 504, 38, 2]
+// Dependencies: [1372, 504, 38, 2]
+// Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 8484 (useCurrentUser)
+// Module 8479 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-fn(558);
-const ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-  _modDef38(null != stateFromStores, "user has to be signed in before accessing shop");
-  return stateFromStores;
-}) : (() => {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");
+
+export const useCurrentUser = function useCurrentUser() {
   const items = [UserStore];
   const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
   _modDef38(null != stateFromStores, "user has to be signed in before accessing shop");
   return stateFromStores;
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");
-
-export const useCurrentUser = tmp2;
-export const useCurrentUserIfAvailable = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+};
+export const useCurrentUserIfAvailable = function useCurrentUserIfAvailable() {
   const items = [UserStore];
   return initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-});
+};

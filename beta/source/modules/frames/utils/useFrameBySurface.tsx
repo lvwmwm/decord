@@ -1,49 +1,19 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 16969
+// Function ID: 16970
 // Name: useFrameBySurface
-// Dependencies: [9343, 558, 568, 504, 2]
+// Dependencies: [9345, 504, 2]
+// Exports: default
 
-// Module 16979 (useFrameBySurface)
-import FramesStore from "FramesStore" /* 9343 */;
+// Module 16969 (useFrameBySurface)
+import FramesStore from "FramesStore" /* 9345 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/frames/utils/useFrameBySurface.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  dependencyMap = arg1;
-  const cResult = require("c").c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    if (cResult[2] === arg1) {
-      let tmp6 = cResult[3];
-      let tmp7 = cResult[4];
-    }
-    return require("initialize").useStateFromStores(first, tmp6, tmp7);
-  }
-  const fn = function s() {
-    if (null != closure_0) {
-      return FramesStore.getFrameBySurface(tmp, closure_1);
-    }
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp7 = items1;
-  tmp6 = fn;
-}) : ((arg0, arg1) => {
+export default function useFrameBySurface(arg0, arg1) {
   _require = arg0;
   dependencyMap = arg1;
   const items = [FramesStore];
@@ -53,4 +23,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       return FramesStore.getFrameBySurface(tmp, closure_1);
     }
   }, items1);
-});
+};

@@ -1,18 +1,16 @@
 // Module ID: 10867
 // Function ID: 10868
-// Dependencies: [41, 42, 93, 95, 98, 10764, 10858, 10767, 10771]
+// Dependencies: [41, 42, 93, 95, 98, 10728, 10857, 10755, 10859]
 
 // Module 10867
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10764 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10771 */;
-import _mod10858 from "module_10858" /* 10858 */;
+import _mod10859 from "module_10859" /* 10859 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const NLRelativeDateFormatParser = require;
+const RUWeekdayParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,13 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(dit|deze|(?:aan)?komend|volgend|afgelopen|vorig)e?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10858.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
-class NLRelativeDateFormatParser {
+class RUWeekdayParser {
   constructor() {
     self = this;
-    tmp = c2(this, NLRelativeDateFormatParser);
+    tmp = c2(this, RUWeekdayParser);
     tmp2 = closure_4;
-    obj = closure_4(NLRelativeDateFormatParser);
+    obj = closure_4(RUWeekdayParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -53,62 +50,62 @@ class NLRelativeDateFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLRelativeDateFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(RUWeekdayParser, _mod10859.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:(\u044D\u0442\u0443|\u044D\u0442\u043E\u0442|\u043F\u0440\u043E\u0448\u043B\u044B\u0439|\u043F\u0440\u043E\u0448\u043B\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E)\\s*)?(" + RUWeekdayParser(10728).matchAnyPattern(RUWeekdayParser(10857).WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*\u043D\u0430\\s*(\u044D\u0442\u043E\u0439|\u043F\u0440\u043E\u0448\u043B\u043E\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439)\\s*\u043D\u0435\u0434\u0435\u043B\u0435)?";
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const formatted = arg1[1].toLowerCase();
-      const str3 = arg1[2].toLowerCase();
-      const tmp4 = NLRelativeDateFormatParser(10858).TIME_UNIT_DICTIONARY[str3];
-      if ("volgend" != formatted) {
-        if ("komend" != formatted) {
-          if ("aankomend" != formatted) {
-            if ("afgelopen" != formatted) {
-              if ("vorig" != formatted) {
-                const parsingComponents = createParsingComponents.createParsingComponents();
-                const _Date = Date;
-                const instant = createParsingComponents.reference.instant;
-                const date = new Date(instant.getTime());
-                if (str3.match(/week/i)) {
-                  date.setDate(date.getDate() - date.getDay());
-                  parsingComponents.imply("day", date.getDate());
-                  parsingComponents.imply("month", date.getMonth() + 1);
-                  parsingComponents.imply("year", date.getFullYear());
-                  const date1 = date.getDate();
-                } else if (str3.match(/maand/i)) {
-                  date.setDate(1);
-                  parsingComponents.imply("day", date.getDate());
-                  parsingComponents.assign("year", date.getFullYear());
-                  parsingComponents.assign("month", date.getMonth() + 1);
-                } else if (str3.match(/jaar/i)) {
-                  date.setDate(1);
-                  date.setMonth(0);
-                  parsingComponents.imply("day", date.getDate());
-                  parsingComponents.imply("month", date.getMonth() + 1);
-                  parsingComponents.assign("year", date.getFullYear());
+    value: function innerExtract(reference, arg1) {
+      const formatted = arg1[2].toLowerCase();
+      let str2 = arg1[1];
+      if (!str2) {
+        str2 = arg1[3];
+      }
+      if (!str2) {
+        str2 = "";
+      }
+      const formatted1 = str2.toLowerCase();
+      let str3 = "last";
+      if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0439" != formatted1) {
+        str3 = "last";
+        if ("\u043F\u0440\u043E\u0448\u043B\u0443\u044E" != formatted1) {
+          str3 = "last";
+          if ("\u043F\u0440\u043E\u0448\u043B\u043E\u0439" != formatted1) {
+            str3 = "next";
+            if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439" != formatted1) {
+              str3 = "next";
+              if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E" != formatted1) {
+                str3 = "next";
+                if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439" != formatted1) {
+                  str3 = "next";
+                  if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E" != formatted1) {
+                    let tmp5 = "\u044D\u0442\u043E\u0442" != formatted1;
+                    if (tmp5) {
+                      tmp5 = "\u044D\u0442\u0443" != formatted1;
+                    }
+                    if (tmp5) {
+                      tmp5 = "\u044D\u0442\u043E\u0439" != formatted1;
+                    }
+                    str3 = null;
+                    if (!tmp5) {
+                      str3 = "this";
+                    }
+                  }
                 }
-                return parsingComponents;
               }
             }
-            const obj = {};
-            obj[tmp4] = -1;
-            const ParsingComponents = tmp2(10767).ParsingComponents;
-            return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj);
           }
         }
       }
-      const ParsingComponents2 = tmp2(10767).ParsingComponents;
-      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [tmp4]: 1 });
+      return RUWeekdayParser(10755).createParsingComponentsAtWeekday(reference.reference, RUWeekdayParser(10857).WEEKDAY_DICTIONARY[formatted], str3);
     }
   }
 ];
 
-export default _createClass(NLRelativeDateFormatParser, items);
+export default _createClass(RUWeekdayParser, items);

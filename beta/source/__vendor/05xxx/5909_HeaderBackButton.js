@@ -1,11 +1,11 @@
 // Module ID: 5909
 // Function ID: 5910
 // Name: HeaderBackButton
-// Dependencies: [32, 19, 17, 21, 1489, 5910, 5881, 5911, 5882, 5915]
+// Dependencies: [32, 19, 17, 21, 1485, 5910, 5881, 5911, 5882, 5915]
 // Exports: HeaderBackButton
 
 // Module 5909 (HeaderBackButton)
-import Link from "Link" /* 1489 */;
+import Link from "Link" /* 1485 */;
 import _modDef5881 from "module_5881" /* 5881 */;
 import HeaderButton from "HeaderButton" /* 5915 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -165,6 +165,6 @@ export const HeaderBackButton = function HeaderBackButton(accessibilityLabel) {
     tmp11Result = tmp11(timestampProducer, obj6);
   }
   items2[1] = tmp11Result;
-  obj3.children = closure_1_8(noop.Fragment, { children: items2 });
+  obj3.children = React6(noop.Fragment, { children: items2 });
   return React5(HeaderButton.HeaderButton, obj3);
 };

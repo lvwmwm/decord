@@ -1,139 +1,35 @@
-// Module ID: 10966
-// Function ID: 10967
+// Module ID: 10930
+// Function ID: 10931
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 5139, 7430, 21, 4790, 580, 558, 568, 38, 5378, 1482, 1616, 5235, 4757, 9451, 5400, 10967, 4490, 7208, 5388, 11543, 11544, 4786, 1368, 8615, 10985, 5935, 5854, 11545, 11547, 1119, 5851, 11549, 5339, 11551, 5220, 4747, 5218, 6895, 7429, 2]
+// Dependencies: [32, 19, 17, 5137, 7428, 21, 4788, 576, 38, 5376, 1478, 1612, 5235, 4755, 5398, 10931, 4486, 6884, 5386, 11530, 11531, 7427, 6901, 5216, 4784, 1364, 8610, 10947, 5936, 5854, 11532, 11534, 1115, 5853, 11536, 9453, 5337, 11538, 5218, 4745, 2]
+// Exports: default
 
-// Module 10966 (UploadPreviewActionSheet)
-import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5388 */;
-import ImagePickerDefault from "ImagePicker" /* 5400 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9451 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11547 */;
+// Module 10930 (UploadPreviewActionSheet)
+import nativeDefault from "native" /* 576 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5386 */;
+import ImagePickerDefault from "ImagePicker" /* 5398 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9453 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11534 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const DraftType = fn(5139).DraftType;
-const ACTION_SHEET_MAX_WIDTH = fn(7430).ACTION_SHEET_MAX_WIDTH;
+const DraftType = fn(5137).DraftType;
+const ACTION_SHEET_MAX_WIDTH = fn(7428).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { contentContainer: { padding: 16 }, imageWrap: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, width: "100%" }, imageContainer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, width: "100%" };
 obj2.imageContainer = { overflow: "hidden", alignSelf: "center", borderRadius: nativeDefault.radii.md - nativeDefault.space.PX_4 };
 let closure_11 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { overflow: "hidden", alignSelf: "center", borderRadius: nativeDefault.radii.md - nativeDefault.space.PX_4 };
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/media_uploads/native/UploadPreviewActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
-  const cResult = onAdd(onRemove[9]).c(77);
-  onAdd = onAdd.onAdd;
-  const onEdit = onAdd.onEdit;
-  onRemove = onAdd.onRemove;
-  const channelId = onAdd.channelId;
-  const onClose = onAdd.onClose;
-  ({ disableAddDescription, upload } = onAdd);
-  let tmp4 = undefined !== disableAddDescription;
-  if (tmp4) {
-    tmp4 = disableAddDescription;
-  }
-  const tmp5 = closure_11();
-  const id = upload.id;
-  ({ isVideo, isImage, isThumbnail, item } = upload);
-  const spoiler = upload.spoiler;
-  let obj = onAdd(onRemove[9]);
-  const tmp = onAdd;
-  const tmp6 = onEdit;
-  onEdit(onRemove[10])(item.platform === tmp(onRemove[11]).UploadPlatform.REACT_NATIVE, "Upload must be a React Native upload item.");
-  const bottom = onEdit(tmp2[13])().bottom;
-  if (cResult[0] !== onClose) {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-    cResult[0] = onClose;
-    cResult[1] = O;
-    const tmp9 = O;
-  } else {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-  }
-  tmp6(onRemove[14])(tmp9);
-  ({ height, width } = item);
-  const diff = Math.min(onEdit(tmp2[12])().width, ACTION_SHEET_MAX_WIDTH) - 2 * tmp5.contentContainer.padding - 2 * tmp5.imageWrap.padding;
-  if (null != height) {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-    if (cResult[8] === channelId) {
-      class O {
-        constructor() {
-          return () => {
-            if (onClose != null) {
-              tmp();
-            }
-          };
-        }
-      }
-    }
-    const fn = function z() {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-      UploadAttachmentActionCreatorsDefault.update(channelId, id, DraftType.ChannelMessage, { spoiler: !spoiler });
-    };
-    cResult[8] = channelId;
-    cResult[9] = spoiler;
-    cResult[10] = id;
-    cResult[11] = fn;
-  }
-  if (cResult[6] !== diff) {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-    tmp13[0] = diff;
-    tmp13[1] = diff;
-    cResult[6] = diff;
-    cResult[7] = tmp13;
-  } else {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-  }
-}) : ((onAdd) => {
+export default function UploadPreviewActionSheet(onAdd) {
   onAdd = onAdd.onAdd;
   const onEdit = onAdd.onEdit;
   const onRemove = onAdd.onRemove;
@@ -151,10 +47,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
   ({ isImage, isThumbnail } = upload);
   const item = upload.item;
   const spoiler = upload.spoiler;
-  onEdit(onRemove[10])(item.platform === onAdd(onRemove[11]).UploadPlatform.REACT_NATIVE, "Upload must be a React Native upload item.");
-  const width = onEdit(onRemove[12])().width;
-  const bottom = onEdit(onRemove[13])().bottom;
-  onEdit(onRemove[14])(() => () => {
+  onEdit(onRemove[8])(item.platform === onAdd(onRemove[9]).UploadPlatform.REACT_NATIVE, "Upload must be a React Native upload item.");
+  const width = onEdit(onRemove[10])().width;
+  const bottom = onEdit(onRemove[11])().bottom;
+  onEdit(onRemove[12])(() => () => {
     if (closure_1_4 != null) {
       tmp();
     }
@@ -211,14 +107,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
     const launchCropperResult = ImagePickerDefault.launchCropper(size);
     ImagePickerDefault.launchCropper(size).then((result) => {
       if (onEdit != null) {
-        tmp(onAdd(onRemove[18]).cropResultToUploadItem(result));
-        const obj = onAdd(onRemove[18]);
+        tmp(onAdd(onRemove[15]).cropResultToUploadItem(result));
+        const obj = onAdd(onRemove[15]);
       }
     }).catch((error) => {
       if ("E_PICKER_CANCELLED" !== error.code) {
-        const obj2 = { key: "CROP_ERROR", IconComponent: onAdd(7208).CircleErrorIcon, content: error.message };
-        onEdit(4490).open(obj2);
-        const obj = onEdit(4490);
+        const obj2 = { key: "CROP_ERROR", IconComponent: onAdd(6884).CircleErrorIcon, content: error.message };
+        onEdit(4486).open(obj2);
+        const obj = onEdit(4486);
       }
     });
   }, items3);
@@ -234,10 +130,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
   if (!(undefined !== isThumbnail && isThumbnail)) {
     tmp14 = !onAdd.disableSpoiler;
   }
-  let tmp22Result11 = tmp3(tmp4[22])(channelId, upload);
+  let tmp22Result11 = tmp3(tmp4[19])(channelId, upload);
   let obj = noop;
-  const tmp5 = onEdit(onRemove[10]);
-  const tmp16 = onEdit(onRemove[23])(channelId, upload);
+  const tmp5 = onEdit(onRemove[8]);
+  const tmp16 = onEdit(onRemove[20])(channelId, upload);
   [tmp18, c11] = channelId(obj.useState(undefined), 2);
   let sum2;
   if (null != tmp18) {
@@ -298,11 +194,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
           }
           items5[2] = tmp23Result;
           if (null != onRemove) {
-            const obj13 = { icon: tmp22(tmp6(tmp4[38]).TrashIcon, { size: "sm", color: "control-primary-text-default" }), text: null, onPress: null, variant: "destructive" };
+            const obj13 = { icon: tmp22(tmp6(tmp4[39]).TrashIcon, { size: "sm", color: "control-primary-text-default" }), text: null, onPress: null, variant: "destructive" };
             const intl6 = tmp6(tmp4[32]).intl;
             obj13.text = intl6.string(tmp6(tmp4[32]).t["40jBO/"]);
             obj13.onPress = callback;
-            let tmp22Result8 = tmp22(tmp6(tmp4[37]).Button, obj13);
+            let tmp22Result8 = tmp22(tmp6(tmp4[38]).Button, obj13);
           } else {
             tmp22Result8 = null;
             if (null != onAdd) {
@@ -310,14 +206,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
               const intl5 = tmp6(tmp4[32]).intl;
               obj14.text = intl5.string(tmp6(tmp4[32]).t.s7oPyG);
               obj14.onPress = callback1;
-              tmp22Result8 = tmp22(tmp6(tmp4[37]).Button, obj14);
+              tmp22Result8 = tmp22(tmp6(tmp4[38]).Button, obj14);
             }
           }
           items5[3] = tmp22Result8;
           obj5.children = items5;
-          obj3.children = tmp23(tmp6(tmp4[39]).Stack, obj5);
-          obj2.children = tmp22(tmp6(tmp4[40]).BottomSheetScrollView, obj3);
-          return tmp22(tmp6(tmp4[41]).BottomSheet, obj2);
+          obj3.children = tmp23(tmp6(tmp4[23]).Stack, obj5);
+          obj2.children = tmp22(tmp6(tmp4[22]).BottomSheetScrollView, obj3);
+          return tmp22(tmp6(tmp4[21]).BottomSheet, obj2);
         }
       }
       let tmp22Result9 = null;
@@ -353,7 +249,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
       }
       items8[1] = tmp22Result10;
       if (tmp22Result11) {
-        const obj17 = { icon: tmp22(tmp6(tmp4[35]).ImageIcon, {}), label: null, onPress: null, checked: null };
+        const obj17 = { icon: tmp22(tmp6(tmp4[36]).ImageIcon, {}), label: null, onPress: null, checked: null };
         const intl3 = tmp6(tmp4[32]).intl;
         obj17.label = intl3.string(tmp6(tmp4[32]).t.ews2pj);
         obj17.onPress = tmp16;
@@ -363,7 +259,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
       items8[2] = tmp22Result11;
       let tmp22Result12 = null;
       if (isImage) {
-        const obj18 = { icon: tmp22(tmp6(tmp4[36]).PencilSparkleIcon, {}), onPress: callback2, label: null, arrow: true };
+        const obj18 = { icon: tmp22(tmp6(tmp4[37]).PencilSparkleIcon, {}), onPress: callback2, label: null, arrow: true };
         const intl4 = tmp6(tmp4[32]).intl;
         obj18.label = intl4.string(tmp6(tmp4[32]).t.b0y3DL);
         tmp22Result12 = tmp22(tmp6(tmp4[29]).TableRow, obj18);
@@ -375,4 +271,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
     }
   }
   tmp22Result = tmp22(closure_5, { style: { width: size.width, height: size.height }, source: item });
-});
+};

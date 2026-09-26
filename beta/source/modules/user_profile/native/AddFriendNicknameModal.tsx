@@ -1,27 +1,27 @@
-// Module ID: 13473
-// Function ID: 13474
+// Module ID: 13451
+// Function ID: 13452
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 4441, 1376, 21, 4790, 580, 11268, 504, 1119, 4993, 10048, 7319, 5239, 4786, 6880, 4635, 2]
+// Dependencies: [5, 32, 19, 17, 4437, 1372, 21, 4788, 576, 11220, 504, 1115, 4991, 10035, 5827, 5237, 4784, 6887, 4632, 2]
 // Exports: default
 
-// Module 13473 (AddFriendNicknameModal)
+// Module 13451 (AddFriendNicknameModal)
 import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import TextField from "TextField" /* 6880 */;
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import TextField from "TextField" /* 6887 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" }, title: { textAlign: "center" }, description: { marginTop: 8, marginBottom: 16, textAlign: "center", lineHeight: 18 } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -44,7 +44,7 @@ export default function AddFriendNicknameModal(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -131,7 +131,7 @@ export default function AddFriendNicknameModal(arg0) {
   };
   const tmp = closure_11();
   [c2, c3] = noop.useState(false);
-  _slicedToArray = showUserProfile(11268)();
+  _slicedToArray = showUserProfile(11220)();
   const tmp2 = _slicedToArray(noop.useState(false), 2);
   const items = [closure_7];
   const stateFromStores = initialize.useStateFromStores(items, () => RelationshipStore.getNickname(require));
@@ -146,11 +146,11 @@ export default function AddFriendNicknameModal(arg0) {
   const items1 = [UserStore];
   const stateFromStores1 = initialize.useStateFromStores(items1, () => UserStore.getUser(require));
   if (null == stateFromStores) {
-    let intl2 = tmp5(1119).intl;
-    let stringResult = intl2.string(tmp5(1119).t.BGYkaH);
+    let intl2 = tmp5(1115).intl;
+    let stringResult = intl2.string(tmp5(1115).t.BGYkaH);
   } else {
-    let intl = tmp5(1119).intl;
-    stringResult = intl.string(tmp5(1119).t["8pOYUE"]);
+    let intl = tmp5(1115).intl;
+    stringResult = intl.string(tmp5(1115).t["8pOYUE"]);
   }
   const items2 = [showUserProfile];
   callback1 = obj.useCallback(() => {
@@ -163,8 +163,8 @@ export default function AddFriendNicknameModal(arg0) {
   const obj4 = { children: null };
   const tmp5Result = initialize;
   let obj5 = { confirmText: null, onConfirm: null, cancelText: null, onCancel: null, children: null };
-  const tmp3Result = showUserProfile(7319);
-  const intl3 = tmp5(1119).intl;
+  const tmp3Result = showUserProfile(5827);
+  const intl3 = tmp5(1115).intl;
   obj5.confirmText = intl3.string(util.t["R3BPH+"]);
   obj5.onConfirm = function handleSubmit() {
     const self = this;
@@ -176,20 +176,20 @@ export default function AddFriendNicknameModal(arg0) {
     }
     return applyArgumentsResult;
   };
-  const intl4 = tmp5(1119).intl;
+  const intl4 = tmp5(1115).intl;
   obj5.cancelText = intl4.string(util.t["ETE/oC"]);
   obj5.onCancel = callback1;
   const items3 = [closure_9(Text_Text.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult }), , ];
   let obj7 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl5 = tmp5(1119).intl;
+  const intl5 = tmp5(1115).intl;
   obj7.children = intl5.string(util.t["NdQ+lP"]);
   items3[1] = closure_9(Text_Text.Text, obj7);
   const obj8 = { onChange: callback, autoFocus: true, accessibilityLabel: null, placeholder: null, defaultValue: null, maxLength: 32, clearable: true };
-  const intl6 = tmp5(1119).intl;
+  const intl6 = tmp5(1115).intl;
   obj8.accessibilityLabel = intl6.string(util.t.pqG6GS);
   let obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  const tmp3Result3 = showUserProfile(5239);
-  obj8.placeholder = showUserProfile(4635).getName(stateFromStores1);
+  const tmp3Result3 = showUserProfile(5237);
+  obj8.placeholder = showUserProfile(4632).getName(stateFromStores1);
   obj8.defaultValue = stateFromStores;
   items3[2] = closure_9(TextField.TextField, obj8);
   obj5.children = items3;

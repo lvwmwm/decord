@@ -1,17 +1,17 @@
-// Module ID: 10373
-// Function ID: 10374
+// Module ID: 11635
+// Function ID: 11636
 // Name: isSelectedFromHomeChannel
-// Dependencies: [7556, 2099, 2052, 4649, 4648, 2]
+// Dependencies: [7554, 2095, 2048, 4646, 4645, 2]
 // Exports: default
 
-// Module 10373 (isSelectedFromHomeChannel)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7556 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+// Module 11635 (isSelectedFromHomeChannel)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7554 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
-const isGuildHomeChannel = fn(2052).isGuildHomeChannel;
+const isGuildHomeChannel = fn(2048).isGuildHomeChannel;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/isSelectedFromHomeChannel.native.tsx");
 
@@ -28,7 +28,7 @@ export default function isSelectedFromHomeChannel(id) {
         if (null == coerceMainRouteResult) {
           return false;
         } else {
-          state = coerceMainRouteResult.state;
+          const state = coerceMainRouteResult.state;
           if (null == state) {
             return false;
           } else {
@@ -42,7 +42,7 @@ export default function isSelectedFromHomeChannel(id) {
                   let coerceChannelRouteResult = obj3.coerceChannelRoute(tmp4);
                   if (null != coerceChannelRouteResult) {
                     if (coerceChannelRouteResult.params.channelId === id.id) {
-                      let tmp6Result = tmp6(4648);
+                      let tmp6Result = tmp6(4645);
                       coerceChannelRouteResult1 = tmp6Result.coerceChannelRoute(state.routes[index - 1]);
                       if (null != coerceChannelRouteResult1) {
                         break;

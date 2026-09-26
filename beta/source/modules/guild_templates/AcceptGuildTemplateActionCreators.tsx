@@ -1,23 +1,23 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 12088
+// Function ID: 12089
 // Name: AcceptGuildTemplateActionCreators
-// Dependencies: [5528, 2067, 1078, 577, 1275, 7618, 2]
+// Dependencies: [5526, 2063, 1074, 573, 1271, 7616, 2]
 
-// Module 11960 (AcceptGuildTemplateActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import transitionToGuild from "transitionToGuild" /* 7618 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
-import GuildStore from "GuildStore" /* 2067 */;
+// Module 12088 (AcceptGuildTemplateActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import transitionToGuild from "transitionToGuild" /* 7616 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_templates/AcceptGuildTemplateActionCreators.tsx");
 
 export default {
-  acceptGuildTemplate(code, first1, first12) {
-    importDefault = first1;
-    dependencyMap = first12;
+  acceptGuildTemplate(code, name, first1) {
+    importDefault = name;
+    dependencyMap = first1;
     DispatcherDefault.dispatch({ type: "GUILD_TEMPLATE_ACCEPT", code });
     const obj2 = { type: "GUILD_TEMPLATE_ACCEPT", code };
     return new Promise((code, arg1) => {

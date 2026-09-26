@@ -1,34 +1,34 @@
-// Module ID: 12916
-// Function ID: 12917
+// Module ID: 13013
+// Function ID: 13014
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 2045, 12902, 1078, 21, 4790, 580, 1488, 7256, 12917, 4691, 1119, 12912, 5939, 4786, 4757, 12918, 1984, 6877, 1181, 5220, 2]
+// Dependencies: [5, 32, 19, 17, 2041, 13001, 1074, 21, 4788, 576, 1484, 7258, 13014, 4688, 1115, 13009, 5941, 4784, 4755, 13015, 1980, 6879, 1177, 5218, 2]
 // Exports: default
 
-// Module 12916 (HubEmailConnectionContent)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import useNavigation from "useNavigation" /* 1488 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import native2 from "native" /* 5939 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12912 */;
+// Module 13013 (HubEmailConnectionContent)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useNavigation from "useNavigation" /* 1484 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import native2 from "native" /* 5941 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13009 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const HubConstants = fn(12902);
+const HubConstants = fn(13001);
 ({ HubEmailConnectionSteps: closure_9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);
-const MarketingURLs = fn(1078).MarketingURLs;
+const MarketingURLs = fn(1074).MarketingURLs;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { paddingHorizontal: 16 }, header: { marginTop: 16, marginBottom: 16, alignSelf: "center" }, scrollViewContainer: { flexGrow: 2 }, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 24 }, input: { marginBottom: 32 }, textInput: { borderRadius: nativeDefault.radii.lg }, growSpacing: null, buttonContainer: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg };
 obj2.growSpacing = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
@@ -54,7 +54,7 @@ export default function HubEmailConnectionContent(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -77,7 +77,7 @@ export default function HubEmailConnectionContent(arg0) {
             c5 = 2;
             let id;
             if (invite != null) {
-              guild = tmp104.guild;
+              const guild = tmp104.guild;
               if (guild != null) {
                 id = guild.id;
               }
@@ -193,7 +193,7 @@ export default function HubEmailConnectionContent(arg0) {
   const ref = noop.useRef(null);
   const intl = util.intl;
   const stringResult = intl.string(util.t.H1jCHH);
-  guild = undefined;
+  let guild;
   if (invite != null) {
     guild = invite.guild;
   }
@@ -207,23 +207,23 @@ export default function HubEmailConnectionContent(arg0) {
       }
       formatToPlainStringResult = stringResult;
       if (null != prop) {
-        const intl2 = tmp2(1119).intl;
+        const intl2 = tmp2(1115).intl;
         let obj3 = { guildName: invite.guild.name, count: invite.approximate_member_count };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1119).t["4T4+p1"], obj3);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t["4T4+p1"], obj3);
       }
     }
   }
   const obj4 = { ref, contentContainerStyle: null, children: null };
   const items = [tmp.scrollViewContainer, ];
   const tmp7 = _slicedToArray(noop.useState(null), 2);
-  items[1] = { paddingBottom: invite(7256)().insets.bottom + invite(580).space.PX_16 };
+  items[1] = { paddingBottom: invite(7258)().insets.bottom + invite(576).space.PX_16 };
   obj4.contentContainerStyle = items;
   let obj6 = { style: tmp.container, children: null };
-  let obj5 = { paddingBottom: invite(7256)().insets.bottom + invite(580).space.PX_16 };
+  let obj5 = { paddingBottom: invite(7258)().insets.bottom + invite(576).space.PX_16 };
   const tmp16 = closure_7;
   const items1 = [closure_12(ref, { style: tmp.header, children: closure_12(native2.InkQuillSpotIllustration, { scale: 0.75 }) }), closure_12(Text_Text.Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult }), , ];
   let obj9 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl3 = tmp2(1119).intl;
+  const intl3 = tmp2(1115).intl;
   obj9.children = intl3.format(util.t["6kzaqs"], {
     onClick() {
       invite(paths[18]).openLazy(require("asyncRequireImpl")(paths[19], paths.paths), "HubEmailConnectionDescriptionActionsheet");
@@ -238,12 +238,12 @@ export default function HubEmailConnectionContent(arg0) {
   };
   let obj7 = { style: tmp.header, children: closure_12(native2.InkQuillSpotIllustration, { scale: 0.75 }) };
   let obj8 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult };
-  const intl4 = tmp2(1119).intl;
+  const intl4 = tmp2(1115).intl;
   obj11.label = intl4.string(util.t["K/7rLI"]);
-  const intl5 = tmp2(1119).intl;
+  const intl5 = tmp2(1115).intl;
   obj11.placeholder = intl5.string(util.t.ImAOh5);
   obj11.value = value;
-  const intl6 = tmp2(1119).intl;
+  const intl6 = tmp2(1115).intl;
   obj11.hint = intl6.format(util.t.RPT0vj, { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY });
   obj11.textStyle = tmp.textInput;
   obj11.style = tmp.input;
@@ -270,12 +270,12 @@ export default function HubEmailConnectionContent(arg0) {
       }
     }, 100);
   };
-  items1[3] = closure_12(invite(6877), obj11);
+  items1[3] = closure_12(invite(6879), obj11);
   obj6.children = items1;
   const items2 = [closure_13(ref, obj6), closure_12(ref, { style: tmp.growSpacing }), ];
   const obj15 = { style: tmp.buttonContainer, children: null };
   const obj16 = { size: "lg", text: null, onPress: null, loading: null };
-  const intl7 = tmp2(1119).intl;
+  const intl7 = tmp2(1115).intl;
   obj16.text = intl7.string(util.t["8vmKO0"]);
   obj16.onPress = function signup() {
     const self = this;

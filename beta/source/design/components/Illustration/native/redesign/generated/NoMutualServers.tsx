@@ -1,97 +1,64 @@
-// Module ID: 12803
-// Function ID: 12804
+// Module ID: 12886
+// Function ID: 12887
 // Name: NoMutualServers
-// Dependencies: [19, 17, 21, 8539, 12804, 12805, 12806, 558, 568, 4642, 2]
-// Exports: getNoMutualServersSource
+// Dependencies: [19, 17, 21, 8534, 12887, 12888, 12889, 4639, 2]
+// Exports: NoMutualServers, getNoMutualServersSource, useNoMutualServersSource
 
-// Module 12803 (NoMutualServers)
-import c from "c" /* 568 */;
-import shared from "shared" /* 4642 */;
-import _mod8539 from "module_8539" /* 8539 */;
+// Module 12886 (NoMutualServers)
+import shared from "shared" /* 4639 */;
+import _mod8534 from "module_8534" /* 8534 */;
 import noop from "module_19" /* 19 */;
+
+const require = globalThis.__r;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-let ReactCompilerGating = fn(558);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const theme = shared.useThemeContext().theme;
-  if (cResult[0] !== theme) {
-    const obj3 = {
-      dark() {
-          return require("module_12804");
-        },
-      darker() {
-          return require("module_12805");
-        },
-      light() {
-          return require("module_12806");
-        }
-    };
-    const illustrationSource = _mod8539.getIllustrationSource(theme, obj3);
-    cResult[0] = theme;
-    cResult[1] = illustrationSource;
-    let tmp4 = illustrationSource;
-    const tmpResult = _mod8539;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (() => {
-  const obj = shared;
-  return _mod8539.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_12804");
-    },
-    darker() {
-      return require("module_12805");
-    },
-    light() {
-      return require("module_12806");
-    }
-  });
-});
-let closure_4 = tmp3;
-ReactCompilerGating = fn(558);
-function getNoMutualServersSource(theme) {
-  return _mod8539.getIllustrationSource(theme, {
-    dark() {
-      return require("module_12804");
-    },
-    darker() {
-      return require("module_12805");
-    },
-    light() {
-      return require("module_12806");
-    }
-  });
-}
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoMutualServers.tsx");
 
-export { getNoMutualServersSource };
-export const useNoMutualServersSource = tmp3;
-export const NoMutualServers = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(3);
-  const tmp2 = closure_4();
-  if (cResult[0] === arg0) {
-    if (cResult[1] === tmp2) {
-      let tmp3 = cResult[2];
+export const getNoMutualServersSource = function getNoMutualServersSource(theme) {
+  return _mod8534.getIllustrationSource(theme, {
+    dark() {
+      return require("module_12887");
+    },
+    darker() {
+      return require("module_12888");
+    },
+    light() {
+      return require("module_12889");
     }
-    return tmp3;
-  }
-  const obj2 = {};
+  });
+};
+export const useNoMutualServersSource = function useNoMutualServersSource() {
+  const obj = shared;
+  return _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+    dark() {
+      return require("module_12887");
+    },
+    darker() {
+      return require("module_12888");
+    },
+    light() {
+      return require("module_12889");
+    }
+  });
+};
+export const NoMutualServers = function NoMutualServers(arg0) {
+  const obj = shared;
+  const obj4 = {};
+  const illustrationSource = _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+    dark() {
+      return require("module_12887");
+    },
+    darker() {
+      return require("module_12888");
+    },
+    light() {
+      return require("module_12889");
+    }
+  });
   const merged = Object.assign(arg0);
-  obj2.source = tmp2;
-  const tmp5 = <Image />;
-  cResult[0] = arg0;
-  cResult[1] = tmp2;
-  cResult[2] = tmp5;
-  tmp3 = tmp5;
-}) : ((arg0) => {
-  const obj = {};
-  const merged = Object.assign(arg0);
-  obj.source = closure_4();
+  obj4.source = illustrationSource;
   return <Image />;
-});
+};

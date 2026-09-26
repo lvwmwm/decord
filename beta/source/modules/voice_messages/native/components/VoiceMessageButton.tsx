@@ -1,29 +1,32 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 12537
+// Function ID: 12538
 // Name: VoiceMessageButton
-// Dependencies: [5, 32, 19, 17, 4483, 7953, 2045, 5139, 12126, 12127, 1078, 4783, 4999, 21, 4790, 580, 558, 568, 8268, 4648, 4997, 12439, 4529, 11683, 1482, 12040, 5377, 5378, 7735, 9453, 11827, 1114, 4490, 1119, 12377, 4649, 5389, 4489, 9857, 6923, 12441, 12421, 10298, 2]
+// Dependencies: [5, 32, 19, 17, 4479, 7948, 2041, 5137, 12242, 12243, 1074, 4781, 4997, 21, 4788, 576, 8263, 4645, 4995, 12538, 4524, 11807, 1478, 12157, 5375, 5376, 7730, 9455, 11949, 1110, 4486, 1115, 10385, 4646, 5387, 4485, 9879, 6929, 12540, 12521, 10301, 2]
 
-// Module 12438 (VoiceMessageButton)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
-import XSmallBoldIcon from "XSmallBoldIcon" /* 8268 */;
-import isChannelFocused from "isChannelFocused" /* 12377 */;
-import VoiceMessageUtils from "VoiceMessageUtils" /* 12439 */;
+// Module 12537 (VoiceMessageButton)
+import nativeDefault from "native" /* 576 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6929 */;
+import XSmallBoldIcon from "XSmallBoldIcon" /* 8263 */;
+import isChannelFocused from "isChannelFocused" /* 10385 */;
+import VoiceMessageUtils from "VoiceMessageUtils" /* 12538 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4483 */;
-import PendingReplyStore from "PendingReplyStore" /* 7953 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import DraftStore from "DraftStore" /* 5139 */;
+import ActionSheetStore from "ActionSheetStore" /* 4479 */;
+import PendingReplyStore from "PendingReplyStore" /* 7948 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import DraftStore from "DraftStore" /* 5137 */;
 
 const require = globalThis.__r;
 
 require = fn;
+function VoiceMessageRecordingCancelledToastIcon() {
+  const obj = { style: closure_27().icon, "aria-hidden": true, children: jsx(XSmallBoldIcon.XSmallBoldIcon, { color: nativeDefault.colors.WHITE, size: "xs" }) };
+  return <timestampProducer style={closure_27().icon} aria-hidden>{jsx(XSmallBoldIcon.XSmallBoldIcon, { color: nativeDefault.colors.WHITE, size: "xs" })}</timestampProducer>;
+}
 function triggerHapticGuarded() {
   if (value2.getState().showRecordingOverlay) {
     VoiceMessageUtils.triggerHaptic();
@@ -31,89 +34,22 @@ function triggerHapticGuarded() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, AppState: closure_7 } = get_ActivityIndicator);
-const VoiceMessagesUIStore = fn(12126);
+const VoiceMessagesUIStore = fn(12242);
 ({ setIsVoiceMessageButtonMounted: closure_12, setIsUsingHoldGesture: map1, setVoiceMessageAnimationState: closure_14, showVoiceMessagesTooltip: closure_15, useVoiceMessagesUIStore: closure_16, setShowRecordingOverlay: closure_17, hideVoiceMessagesTooltip: closure_18 } = VoiceMessagesUIStore);
-const VoiceMessageConstants = fn(12127);
+const VoiceMessageConstants = fn(12243);
 ({ VoiceMessageAnimationState: closure_19, VOICE_RECORDING_MIN_DURATION_MILLIS: closure_20 } = VoiceMessageConstants);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ComponentActions: closure_21, ComponentActionsKeyed: closure_22, MessageFlags: closure_23 } = Constants);
-const MessageSendLocation = fn(4783).MessageSendLocation;
-const NativePermissionTypes = fn(4999).NativePermissionTypes;
+const MessageSendLocation = fn(4781).MessageSendLocation;
+const NativePermissionTypes = fn(4997).NativePermissionTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { icon: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.round, padding: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_4 } };
 let closure_27 = createStyles.createStyles(obj);
-let ReactCompilerGating = fn(558);
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const tmp4 = closure_27();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { color: nativeDefault.colors.WHITE, size: "xs" };
-    const tmp8 = jsx(XSmallBoldIcon.XSmallBoldIcon, { color: nativeDefault.colors.WHITE, size: "xs" });
-    cResult[0] = tmp8;
-    let first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.icon) {
-    const obj3 = { style: tmp4.icon, "aria-hidden": true, children: first };
-    const tmp12 = <timestampProducer style={tmp4.icon} aria-hidden>{first}</timestampProducer>;
-    cResult[1] = tmp4.icon;
-    cResult[2] = tmp12;
-    let tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[2];
-  }
-  return tmp9;
-}) : (() => {
-  const obj = { style: closure_27().icon, "aria-hidden": true, children: jsx(XSmallBoldIcon.XSmallBoldIcon, { color: nativeDefault.colors.WHITE, size: "xs" }) };
-  return <timestampProducer style={closure_27().icon} aria-hidden>{jsx(XSmallBoldIcon.XSmallBoldIcon, { color: nativeDefault.colors.WHITE, size: "xs" })}</timestampProducer>;
-});
-ReactCompilerGating = fn(558);
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(5);
-  const ref = noop.useRef(false);
-  const sharedValue = ReanimatedRexport.useSharedValue(false);
-  if (cResult[0] !== sharedValue) {
-    const fn = function e(current) {
-      ref.current = current;
-      const result = sharedValue.set(current);
-    };
-    cResult[0] = sharedValue;
-    cResult[1] = fn;
-    let tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === sharedValue) {
-    if (cResult[3] === tmp4) {
-      let tmp5 = cResult[4];
-    }
-    return tmp5;
-  }
-  const items = [ref, sharedValue, tmp4];
-  cResult[2] = sharedValue;
-  cResult[3] = tmp4;
-  cResult[4] = items;
-  tmp5 = items;
-}) : (() => {
-  const ref = noop.useRef(false);
-  const sharedValue = ReanimatedRexport.useSharedValue(false);
-  const items = [ref, sharedValue];
-  const items1 = [
-    ref,
-    sharedValue,
-    noop.useCallback((current) => {
-      ref.current = current;
-      const result = sharedValue.set(current);
-    }, items)
-  ];
-  return items1;
-});
 const __initData = { code: "function VoiceMessageButtonTsx1(newValue){const{voiceMessageAnimationState,runOnJS,triggerHapticGuarded}=this.__closure;if(voiceMessageAnimationState.get()[1]===newValue)return;const prevValue=voiceMessageAnimationState.get()[1];voiceMessageAnimationState.set([prevValue,newValue]);runOnJS(triggerHapticGuarded)();}" };
-let closure_32 = { code: "function VoiceMessageButtonTsx2(){const{runOnJS,handleFinalize}=this.__closure;runOnJS(handleFinalize)();}" };
-let closure_33 = { code: "function VoiceMessageButtonTsx3(e_1){const{isGestureActiveValue,LOCK_THRESHOLD,cancelThresholdX,handleUpdateValue,VoiceMessageAnimationState}=this.__closure;if(!isGestureActiveValue.get())return;if(e_1.translationY<=-LOCK_THRESHOLD&&e_1.absoluteX>=cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.LOCKING);}else if(e_1.absoluteX<cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.CANCELLING);}else if(e_1.absoluteX>=cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.SENDING);}}" };
-let closure_34 = { code: "function VoiceMessageButtonTsx4(e_0){const{isGestureActiveValue,runOnJS,setIsUsingHoldGesture,voiceMessageAnimationState,VoiceMessageAnimationState,startRecording}=this.__closure;if(e_0.numberOfTouches>1)return;if(isGestureActiveValue.get())return;runOnJS(setIsUsingHoldGesture)(true);voiceMessageAnimationState.set([VoiceMessageAnimationState.SENDING,VoiceMessageAnimationState.SENDING]);runOnJS(startRecording)();}" };
+let closure_31 = { code: "function VoiceMessageButtonTsx2(){const{runOnJS,handleFinalize}=this.__closure;runOnJS(handleFinalize)();}" };
+let closure_32 = { code: "function VoiceMessageButtonTsx3(e){const{isGestureActiveValue,LOCK_THRESHOLD,cancelThresholdX,handleUpdateValue,VoiceMessageAnimationState}=this.__closure;if(!isGestureActiveValue.get())return;if(e.translationY<=-LOCK_THRESHOLD&&e.absoluteX>=cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.LOCKING);}else if(e.absoluteX<cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.CANCELLING);}else if(e.absoluteX>=cancelThresholdX){handleUpdateValue(VoiceMessageAnimationState.SENDING);}}" };
+let closure_33 = { code: "function VoiceMessageButtonTsx4(e){const{isGestureActiveValue,runOnJS,setIsUsingHoldGesture,voiceMessageAnimationState,VoiceMessageAnimationState,startRecording}=this.__closure;if(e.numberOfTouches>1)return;if(isGestureActiveValue.get())return;runOnJS(setIsUsingHoldGesture)(true);voiceMessageAnimationState.set([VoiceMessageAnimationState.SENDING,VoiceMessageAnimationState.SENDING]);runOnJS(startRecording)();}" };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.round, padding: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_4 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageButton.tsx");
@@ -123,42 +59,56 @@ export default noop.memo((disabled) => {
   _require = disabled;
   const channelId = disabled.channelId;
   let first;
+  noop = undefined;
   let callback2;
   let callback3;
   c14 = undefined;
   const tmp = closure_16((voiceMessageAnimationState) => voiceMessageAnimationState.voiceMessageAnimationState);
   dependencyMap = tmp;
   const sharedValue = require("ReanimatedRexport").useSharedValue(0);
-  const tmp3 = first(closure_30(), 3);
-  first = tmp3[0];
-  noop = tmp5;
-  closure_6 = tmp6;
+  const ref = noop.useRef(false);
+  _require = ref;
+  let obj = require("ReanimatedRexport");
+  const sharedValue1 = require("ReanimatedRexport").useSharedValue(false);
+  let items = [ref, sharedValue1];
+  const items1 = [
+    ref,
+    sharedValue1,
+    noop.useCallback((current) => {
+      closure_0.current = current;
+      const result = sharedValue1.set(current);
+    }, items)
+  ];
+  let tmp5 = first(items1, 3);
+  first = tmp5[0];
+  noop = tmp7;
+  closure_6 = tmp8;
   currentState = noop.useRef(true);
   closure_8 = noop.useRef(currentState.currentState);
   closure_9 = noop.useRef(null);
-  const tmp7 = channelId(11683)();
+  const tmp9 = sharedValue1(11807)();
   _require = sharedValue(function*(arg0) {
-    closure_129_2 = yield closure_0(12439).endAudioRecording();
+    closure_129_2 = yield closure_0(12538).endAudioRecording();
     const data = closure_129_2.data;
     const startTimeMillis = closure_129_2.startTimeMillis;
     closure_1_6(false);
     if (closure_129_0) {
       closure_1_9.current = closure_129_1;
-      let result = closure_0(12439).emitVoiceMessageRecorded(closure_129_1, data.durationSecs, startTimeMillis);
+      let result = closure_0(12538).emitVoiceMessageRecorded(closure_129_1, data.durationSecs, startTimeMillis);
     }
     if (data.durationSecs < closure_2_20 / 1000) {
-      const result1 = closure_0(12439).emitVoiceMessageRecorded(closure_0(12040).VoiceMessageRecordingResult.CANCELLED_DURATION, data.durationSecs, startTimeMillis);
-      closure_2_15();
+      const result1 = closure_0(12538).emitVoiceMessageRecorded(closure_0(12157).VoiceMessageRecordingResult.CANCELLED_DURATION, data.durationSecs, startTimeMillis);
+      __initData();
     }
-    const result2 = closure_0(12439).emitVoiceMessageRecorded(closure_0(12040).VoiceMessageRecordingResult.SENT, data.durationSecs, startTimeMillis);
+    const result2 = closure_0(12538).emitVoiceMessageRecorded(closure_0(12157).VoiceMessageRecordingResult.SENT, data.durationSecs, startTimeMillis);
     const channel = callback.getChannel(closure_1);
     if (null != channel) {
-      const cloudUpload = new closure_0(5377).CloudUpload({ uri: data.filename, originalUri: data.filename, mimeType: "audio/ogg", filename: "voice-message.ogg", platform: closure_0(5378).UploadPlatform.REACT_NATIVE, durationSecs: data.durationSecs, waveform: data.waveform }, channel.id);
+      const cloudUpload = new closure_0(5375).CloudUpload({ uri: data.filename, originalUri: data.filename, mimeType: "audio/ogg", filename: "voice-message.ogg", platform: closure_0(5376).UploadPlatform.REACT_NATIVE, durationSecs: data.durationSecs, waveform: data.waveform }, channel.id);
       const items = [cloudUpload];
       closure_129_6 = items;
       const pendingReply2 = pendingReply.getPendingReply(closure_1);
-      const sendMessageOptionsForReply = channelId(7735).getSendMessageOptionsForReply(pendingReply2);
-      { uri: data.filename, originalUri: data.filename, mimeType: "audio/ogg", filename: "voice-message.ogg", platform: closure_0(5378).UploadPlatform.REACT_NATIVE, durationSecs: data.durationSecs, waveform: data.waveform };
+      const sendMessageOptionsForReply = sharedValue1(7730).getSendMessageOptionsForReply(pendingReply2);
+      { uri: data.filename, originalUri: data.filename, mimeType: "audio/ogg", filename: "voice-message.ogg", platform: closure_0(5376).UploadPlatform.REACT_NATIVE, durationSecs: data.durationSecs, waveform: data.waveform };
       const id = channel.id;
       const obj17 = { flags: constants3.IS_VOICE_MESSAGE, location: constants4.VOICE_MESSAGE, attachmentsToUpload: closure_129_6, scheduledTimestamp: null, onAttachmentUploadError: null };
       const scheduledMessage = callback1.getScheduledMessage(closure_1);
@@ -168,26 +118,26 @@ export default noop.memo((disabled) => {
       }
       obj17.scheduledTimestamp = scheduledTimestamp;
       obj17.onAttachmentUploadError = function onAttachmentUploadError(file, code, reason) {
-        const obj = closure_0(closure_2[29]);
+        const obj = closure_0(closure_2[27]);
         const result = obj.handleUploadMessageAttachmentsErrors({ file, guildId: guildId.getGuildId(), analyticsLocations: [], code, reason });
       };
       const merged = Object.assign(sendMessageOptionsForReply);
-      channelId(7735).sendMessage(id, { content: "", tts: false, invalidEmojis: [], validNonShortcutEmojis: [] }, undefined, obj17);
-      channelId(7735);
-      closure_0(11827).deletePendingReply(closure_1);
-      closure_0(11827);
-      channelId(7735);
+      sharedValue1(7730).sendMessage(id, { content: "", tts: false, invalidEmojis: [], validNonShortcutEmojis: [] }, undefined, obj17);
+      sharedValue1(7730);
+      closure_0(11949).deletePendingReply(closure_1);
+      closure_0(11949);
+      sharedValue1(7730);
     }
-    yield "IconComponent";
+    yield "HermesInternal";
     closure_1 = tmp2;
     ({ isCancelling: closure_129_0, cancelReason } = closure_0);
     if (cancelReason === undefined) {
-      cancelReason = closure_0(12040).VoiceMessageRecordingResult.CANCELLED_USER_REQUESTED;
+      cancelReason = closure_0(12157).VoiceMessageRecordingResult.CANCELLED_USER_REQUESTED;
     }
     closure_129_1 = cancelReason;
-    return "Set";
+    return "PX_16";
   });
-  let items = [channelId, tmp3[2]];
+  const items2 = [channelId, tmp5[2]];
   const callback = noop.useCallback(function() {
     const self = this;
     const apply = closure_0.apply;
@@ -197,16 +147,16 @@ export default noop.memo((disabled) => {
       applyArgumentsResult = apply(self, arguments);
     }
     return applyArgumentsResult;
-  }, items);
-  const items1 = [channelId, callback];
+  }, items2);
+  const items3 = [channelId, callback];
   const effect = noop.useEffect(() => {
     let ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-    ComponentDispatch.subscribeKeyed(constants.VOICE_MESSAGE_SEND, channelId, callback);
+    ComponentDispatch.subscribeKeyed(constants.VOICE_MESSAGE_SEND, sharedValue1, callback);
     return () => {
-      const ComponentDispatch = closure_0(closure_2[31]).ComponentDispatch;
-      ComponentDispatch.unsubscribeKeyed(constants2.VOICE_MESSAGE_SEND, channelId, callback);
+      const ComponentDispatch = closure_0(closure_2[29]).ComponentDispatch;
+      ComponentDispatch.unsubscribeKeyed(constants2.VOICE_MESSAGE_SEND, sharedValue1, callback);
     };
-  }, items1);
+  }, items3);
   const effect1 = noop.useEffect(() => {
     callback2(true);
     return () => {
@@ -225,18 +175,18 @@ export default noop.memo((disabled) => {
         tmp5 = tmp6;
       }
       if (!tmp5) {
-        tmp5 = ref2.current !== closure_0(closure_2[25]).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND;
+        tmp5 = ref2.current !== closure_0(closure_2[23]).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND;
       }
       if (!tmp5) {
         const obj2 = { key: "VOICE_MESSAGE_CANCELLED_ON_BACKGROUND", content: null, icon: null, position: "bottom" };
-        const intl = tmp3(tmp4[33]).intl;
-        obj2.content = intl.string(tmp3(tmp4[33]).t.JM7Y2D);
+        const intl = tmp3(tmp4[31]).intl;
+        obj2.content = intl.string(tmp3(tmp4[31]).t.JM7Y2D);
         obj2.icon = function icon() {
           return closure_1_26(closure_1_28, {});
         };
-        channelId(tmp4[32]).open(obj2);
+        sharedValue1(tmp4[30]).open(obj2);
         ref2.current = null;
-        const obj = channelId(tmp4[32]);
+        const obj = sharedValue1(tmp4[30]);
       }
       ref.current = event;
     });
@@ -244,13 +194,13 @@ export default noop.memo((disabled) => {
       closure_0.remove();
     };
   }, []);
-  const items2 = [first, tmp3[2]];
+  const items4 = [first, tmp5[2]];
   const effect3 = noop.useEffect(() => {
     closure_7.current = true;
     const current = first.current;
     return () => {
       closure_7.current = false;
-      state = value2.getState();
+      const state = value2.getState();
       let showRecordingOverlay = state.showRecordingOverlay;
       if (!showRecordingOverlay) {
         showRecordingOverlay = null != state.recordingStatus;
@@ -263,9 +213,9 @@ export default noop.memo((disabled) => {
         VoiceMessageUtils.endAudioRecording();
       }
     };
-  }, items2);
-  let obj = require("ReanimatedRexport");
-  const items3 = [first, tmp3[2], channelId];
+  }, items4);
+  let obj2 = require("ReanimatedRexport");
+  const items5 = [first, tmp5[2], channelId];
   const isModalOpen = require("NavigationRouteUtils").useIsModalOpen();
   const effect4 = noop.useEffect(() => {
     function cancel() {
@@ -289,7 +239,7 @@ export default noop.memo((disabled) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -317,7 +267,7 @@ export default noop.memo((disabled) => {
               closure_1_6(false);
               c2 = 1;
               c3 = 1;
-              const obj5 = { value: cancel(12439).endAudioRecording(), done: false };
+              const obj5 = { value: cancel(12538).endAudioRecording(), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -325,8 +275,8 @@ export default noop.memo((disabled) => {
             throw value;
           } else if (arg0 !== 2) {
             closure_128_0 = value;
-            const result = cancel(12439).emitVoiceMessageRecorded(cancel(12040).VoiceMessageRecordingResult.CANCELLED_GESTURE_CONFLICT, closure_128_0.data.durationSecs, closure_128_0.startTimeMillis);
-            const obj = cancel(12439);
+            const result = cancel(12538).emitVoiceMessageRecorded(cancel(12157).VoiceMessageRecordingResult.CANCELLED_GESTURE_CONFLICT, closure_128_0.data.durationSecs, closure_128_0.startTimeMillis);
+            const obj = cancel(12538);
           }
           c3 = 3;
           const obj6 = { value, done: true };
@@ -345,7 +295,7 @@ export default noop.memo((disabled) => {
     function handleNavigationChange() {
       const focusedChannelId = isChannelFocused.getFocusedChannelId();
       if (null != focusedChannelId) {
-        if (focusedChannelId !== channelId) {
+        if (focusedChannelId !== sharedValue1) {
           cancel();
         }
       } else {
@@ -354,7 +304,7 @@ export default noop.memo((disabled) => {
     }
     cancel();
     let result = closure_8.addReactChangeListener(handleActionSheetChange);
-    let rootNavigationRef = closure_0(voiceMessageAnimationState[35]).getRootNavigationRef();
+    let rootNavigationRef = closure_0(voiceMessageAnimationState[33]).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.addListener("state", handleNavigationChange);
     }
@@ -365,12 +315,12 @@ export default noop.memo((disabled) => {
         rootNavigationRef.removeListener("state", handleNavigationChange);
       }
     };
-  }, items3);
-  const items4 = [sharedValue, isModalOpen];
+  }, items5);
+  const items6 = [sharedValue, isModalOpen];
   const effect5 = noop.useEffect(() => {
-    state({ currWaveHeight: sharedValue });
-  }, items4);
-  const items5 = [first, tmp3[2], channelId];
+    closure_2_14({ currWaveHeight: sharedValue });
+  }, items6);
+  const items7 = [first, tmp5[2], channelId];
   const callback1 = noop.useCallback(sharedValue(function*(arg0, value) {
     if (c5 === 2) {
       c5 = 3;
@@ -382,7 +332,7 @@ export default noop.memo((disabled) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -401,27 +351,27 @@ export default noop.memo((disabled) => {
             let state2;
             if (!(function isNormalModalOpen() {
               if (obj.isModalOpen()) {
-                const openModalKey = tmp(tmp2[19]).getOpenModalKey();
+                const openModalKey = tmp(tmp2[17]).getOpenModalKey();
                 let tmp5 = null == openModalKey;
                 if (!tmp5) {
-                  tmp5 = !tmp(tmp2[20]).isVoiceChannelModalKey(openModalKey);
-                  const tmpResult2 = tmp(tmp2[20]);
+                  tmp5 = !tmp(tmp2[18]).isVoiceChannelModalKey(openModalKey);
+                  const tmpResult2 = tmp(tmp2[18]);
                 }
                 return tmp5;
               } else {
                 return false;
               }
-              obj = closure_1_0(closure_1_2[19]);
+              obj = closure_1_0(closure_1_2[17]);
             })()) {
               if (ref.current) {
                 if (!open.isOpen()) {
-                  if (null != channel.getChannel(channelId)) {
+                  if (null != channel.getChannel(sharedValue1)) {
                     closure_6(true);
-                    const ComponentDispatch = closure_0(tmp54[31]).ComponentDispatch;
+                    const ComponentDispatch = closure_0(tmp54[29]).ComponentDispatch;
                     ComponentDispatch.dispatch(constants2.VOICE_MESSAGE_BUTTON_PRESSED);
                     c4 = 2;
                     c5 = 1;
-                    const obj6 = { value: tmp3(tmp54[36]).requestPermission(constants3.AUDIO), done: false };
+                    const obj6 = { value: tmp3(tmp54[34]).requestPermission(constants3.AUDIO), done: false };
                     return obj6;
                   }
                 }
@@ -431,7 +381,7 @@ export default noop.memo((disabled) => {
         } else if (1 === tmp7) {
           c3 = 0;
           closure_129_6(false);
-          const result = closure_0(tmp54[37]).showVoiceRecordingFailed();
+          const result = closure_0(tmp54[35]).showVoiceRecordingFailed();
           c5 = 3;
           const obj8 = { value: undefined, done: true };
           return obj8;
@@ -452,7 +402,7 @@ export default noop.memo((disabled) => {
               c3 = 1;
               c4 = 3;
               c5 = 1;
-              const obj11 = { value: closure_0(tmp54[21]).startAudioRecording(closure_128_0), done: false };
+              const obj11 = { value: closure_0(tmp54[19]).startAudioRecording(closure_128_0), done: false };
               return obj11;
             }
           }
@@ -475,13 +425,13 @@ export default noop.memo((disabled) => {
             }
             if (tmp8 !== constants.LOCKED) {
               if (!closure_129_4.current) {
-                closure_0(tmp54[21]).endAudioRecording();
-                let obj = closure_0(tmp54[21]);
+                closure_0(tmp54[19]).endAudioRecording();
+                let obj = closure_0(tmp54[19]);
               }
             }
           }
-          closure_0(tmp54[21]).triggerHaptic();
-          const obj2 = closure_0(tmp54[21]);
+          closure_0(tmp54[19]).triggerHaptic();
+          const obj2 = closure_0(tmp54[19]);
         }
         c5 = 3;
       } catch (tmp54) {
@@ -493,8 +443,8 @@ export default noop.memo((disabled) => {
         }
       }
     }
-  }), items5);
-  class Q {
+  }), items7);
+  class W {
     constructor(arg0) {
       obj = closure_2;
       if (closure_2.get()[1] !== disabled) {
@@ -504,20 +454,20 @@ export default noop.memo((disabled) => {
         result = obj.set(items);
         tmp2 = closure_0;
         tmp3 = closure_2;
-        obj2 = closure_0(closure_2[22]);
+        obj2 = closure_0(closure_2[20]);
         tmp4 = triggerHapticGuarded;
         tmp5 = obj2.runOnJS(triggerHapticGuarded)();
       }
       return;
     }
   }
-  let obj2 = require("NavigationRouteUtils");
-  Q.__closure = { voiceMessageAnimationState: tmp, runOnJS: require("ReanimatedRexport").runOnJS, triggerHapticGuarded };
-  Q.__workletHash = 9127775028714;
-  Q.__initData = __initData;
-  const items6 = [tmp];
-  callback2 = noop.useCallback(Q, items6);
-  const items7 = [tmp, first, callback, tmp3[2]];
+  let obj3 = require("NavigationRouteUtils");
+  W.__closure = { voiceMessageAnimationState: tmp, runOnJS: require("ReanimatedRexport").runOnJS, triggerHapticGuarded };
+  W.__workletHash = 9127775028714;
+  W.__initData = __initData;
+  const items8 = [tmp];
+  callback2 = noop.useCallback(W, items8);
+  const items9 = [tmp, first, callback, tmp5[2]];
   callback3 = noop.useCallback(() => {
     if (first.current) {
       closure_6(false);
@@ -539,11 +489,11 @@ export default noop.memo((disabled) => {
     } else {
       VoiceMessageUtils.endAudioRecording();
     }
-  }, items7);
-  let obj3 = { voiceMessageAnimationState: tmp, runOnJS: require("ReanimatedRexport").runOnJS, triggerHapticGuarded };
-  const tmp19 = channelId(9857);
+  }, items9);
+  let obj4 = { voiceMessageAnimationState: tmp, runOnJS: require("ReanimatedRexport").runOnJS, triggerHapticGuarded };
+  const tmp21 = sharedValue1(9879);
   let intl = require("util").intl;
-  const tmp20 = sharedValue(function*(arg0, value) {
+  const tmp22 = sharedValue(function*(arg0, value) {
     if (c2 === 2) {
       c2 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -554,7 +504,7 @@ export default noop.memo((disabled) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -587,7 +537,7 @@ export default noop.memo((disabled) => {
           ({ LOCKED: arr[0], LOCKED: arr[1] } = constants);
           const result = closure_128_2.set(items);
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c2 = tmp;
@@ -595,10 +545,10 @@ export default noop.memo((disabled) => {
       }
     }
   });
-  const sum = 0.5 * tmp7 + (channelId(1482)().width - tmp7);
+  const sum = 0.5 * tmp9 + (sharedValue1(1478)().width - tmp9);
   c14 = sum;
-  const items8 = [disabled, tmp3[1], tmp, callback1, sum, callback2, callback3];
-  ({ accessibilityActions, onAccessibilityAction } = tmp19(sharedValue(function*(arg0, value) {
+  const items10 = [disabled, tmp5[1], tmp, callback1, sum, callback2, callback3];
+  ({ accessibilityActions, onAccessibilityAction } = tmp21(sharedValue(function*(arg0, value) {
     if (c2 === 2) {
       c2 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -609,7 +559,7 @@ export default noop.memo((disabled) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -642,7 +592,7 @@ export default noop.memo((disabled) => {
           ({ LOCKED: arr[0], LOCKED: arr[1] } = constants);
           const result = closure_128_2.set(items);
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c2 = tmp;
@@ -660,18 +610,18 @@ export default noop.memo((disabled) => {
         value = isGestureActiveValue.get();
       }
       if (!value) {
-        closure_0(dependencyMap[22]).runOnJS(callback3)(true);
+        closure_0(dependencyMap[20]).runOnJS(callback3)(true);
         const items = [, ];
         ({ SENDING: arr[0], SENDING: arr[1] } = constants);
         const result = voiceMessageAnimationState.set(items);
-        const obj = closure_0(dependencyMap[22]);
-        closure_0(dependencyMap[22]).runOnJS(callback1)();
-        const obj2 = closure_0(dependencyMap[22]);
+        const obj = closure_0(dependencyMap[20]);
+        closure_0(dependencyMap[20]).runOnJS(callback1)();
+        const obj2 = closure_0(dependencyMap[20]);
       }
     };
     const minDistanceResult = Gesture.Pan().enabled(!closure_0).minDistance(0);
     fn.__closure = { isGestureActiveValue, runOnJS: ReanimatedRexport.runOnJS, setIsUsingHoldGesture, voiceMessageAnimationState, VoiceMessageAnimationState, startRecording: callback1 };
-    fn.__workletHash = 10355730278260;
+    fn.__workletHash = 15771181123252;
     fn.__initData = __initData3;
     let obj = { isGestureActiveValue, runOnJS: ReanimatedRexport.runOnJS, setIsUsingHoldGesture, voiceMessageAnimationState, VoiceMessageAnimationState, startRecording: callback1 };
     const fn2 = function t(translationY) {
@@ -689,22 +639,22 @@ export default noop.memo((disabled) => {
       }
     };
     fn2.__closure = { isGestureActiveValue, LOCK_THRESHOLD: 40, cancelThresholdX, handleUpdateValue: callback2, VoiceMessageAnimationState };
-    fn2.__workletHash = 17157839009657;
+    fn2.__workletHash = 9262214665783;
     fn2.__initData = __initData2;
     let obj2 = { isGestureActiveValue, LOCK_THRESHOLD: 40, cancelThresholdX, handleUpdateValue: callback2, VoiceMessageAnimationState };
     const onTouchesDownResult = minDistanceResult.onTouchesDown(fn);
     const fn3 = function e() {
-      closure_0(dependencyMap[22]).runOnJS(callback3)();
+      closure_0(dependencyMap[20]).runOnJS(callback3)();
     };
     const onUpdateResult = minDistanceResult.onTouchesDown(fn).onUpdate(fn2);
     fn3.__closure = { runOnJS: ReanimatedRexport.runOnJS, handleFinalize: callback3 };
     fn3.__workletHash = 2411654680943;
     fn3.__initData = __initData;
     return onUpdateResult.onFinalize(fn3);
-  }, items8);
-  let obj4 = { gesture: memo, children: null };
-  let obj5 = { ref: channelId(12441)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null };
-  const tmp19Result = tmp19(sharedValue(function*(arg0, value) {
+  }, items10);
+  let obj5 = { gesture: memo, children: null };
+  let obj6 = { ref: sharedValue1(12540)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null };
+  const tmp21Result = tmp21(sharedValue(function*(arg0, value) {
     if (c2 === 2) {
       c2 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -715,7 +665,7 @@ export default noop.memo((disabled) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -748,7 +698,7 @@ export default noop.memo((disabled) => {
           ({ LOCKED: arr[0], LOCKED: arr[1] } = constants);
           const result = closure_128_2.set(items);
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c2 = tmp;
@@ -756,12 +706,12 @@ export default noop.memo((disabled) => {
       }
     }
   }), intl.string(require("util").t.lwy6aX));
-  obj5.IconComponent = require("MicrophoneIcon").MicrophoneIcon;
+  obj6.IconComponent = require("MicrophoneIcon").MicrophoneIcon;
   const intl2 = require("util").intl;
-  obj5.accessibilityLabel = intl2.string(require("util").t.lwy6aX);
-  obj5.accessibilityActions = accessibilityActions;
-  obj5.onAccessibilityAction = onAccessibilityAction;
-  obj5.disabled = disabled;
-  obj4.children = jsx(channelId(12421), { ref: channelId(12441)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null });
+  obj6.accessibilityLabel = intl2.string(require("util").t.lwy6aX);
+  obj6.accessibilityActions = accessibilityActions;
+  obj6.onAccessibilityAction = onAccessibilityAction;
+  obj6.disabled = disabled;
+  obj5.children = jsx(sharedValue1(12521), { ref: sharedValue1(12540)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null });
   return jsx(require("LegacyBaseButton").GestureDetector, { gesture: memo, children: null });
 });

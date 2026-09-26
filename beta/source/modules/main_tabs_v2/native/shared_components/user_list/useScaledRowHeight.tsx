@@ -1,47 +1,27 @@
-// Module ID: 7328
-// Function ID: 7329
+// Module ID: 7326
+// Function ID: 7327
 // Name: useScaledRowHeight
-// Dependencies: [558, 568, 5227, 4494, 580, 2]
-// Exports: default
+// Dependencies: [5225, 4489, 576, 2]
+// Exports: default, useScaledRowHeightData
 
-// Module 7328 (useScaledRowHeight)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4494 */;
-import useFontScale from "useFontScale" /* 5227 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 7326 (useScaledRowHeight)
+import nativeDefault from "native" /* 576 */;
+import useToken from "useToken" /* 4489 */;
+import useFontScale from "useFontScale" /* 5225 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx");
+
+export default function useScaledRowHeight() {
   const fontScale = useFontScale.useFontScale();
   const token = useToken.useToken(nativeDefault.modules.mobile.TABLE_ROW_HEIGHT);
   const token1 = useToken.useToken(nativeDefault.modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
-  const result = fontScale * token1;
-  const sum = token + Math.max(result - token1, 0);
-  if (cResult[0] === result) {
-    if (cResult[1] === sum) {
-      let tmp7 = cResult[2];
-    }
-    return tmp7;
-  }
-  const obj5 = { rowHeight: sum, rowContentHeight: result };
-  cResult[0] = result;
-  cResult[1] = sum;
-  cResult[2] = obj5;
-  tmp7 = obj5;
-}) : (() => {
+  return token + Math.max(fontScale * token1 - token1, 0);
+};
+export const useScaledRowHeightData = function useScaledRowHeightData() {
   const fontScale = useFontScale.useFontScale();
   const token = useToken.useToken(nativeDefault.modules.mobile.TABLE_ROW_HEIGHT);
   const token1 = useToken.useToken(nativeDefault.modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
   const result = fontScale * token1;
   return { rowHeight: token + Math.max(result - token1, 0), rowContentHeight: result };
-});
-let closure_3 = tmp2;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx");
-
-export default () => closure_3().rowHeight;
-export const useScaledRowHeightData = tmp2;
+};

@@ -1,55 +1,27 @@
-// Module ID: 13414
-// Function ID: 13415
+// Module ID: 13404
+// Function ID: 13405
 // Name: useIsGameFriends
-// Dependencies: [32, 7931, 1078, 558, 568, 504, 5683, 2]
+// Dependencies: [32, 7926, 1074, 504, 5681, 2]
+// Exports: useIsGameFriends
 
-// Module 13414 (useIsGameFriends)
+// Module 13404 (useIsGameFriends)
 import _slicedToArray from "module_32" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7931 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7926 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const RelationshipTypes = fn(1078).RelationshipTypes;
-const ReactCompilerGating = fn(558);
+const RelationshipTypes = fn(1074).RelationshipTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_relationships/hooks/useIsGameFriends.tsx");
 
-export const useIsGameFriends = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GameRelationshipStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(closure_0, RelationshipTypes.FRIEND);
-      const items = [gameRelationshipsForUserByType.length > 0, GameRelationshipStore.getGameRelationshipsVersion()];
-      return items;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp7 = items1;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const obj = require("c");
-  return _slicedToArray(require("initialize").useStateFromStores(first, tmp6, tmp7, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
-}) : ((arg0) => {
-  _require = arg0;
+export const useIsGameFriends = function useIsGameFriends(id) {
+  _require = id;
   let items = [GameRelationshipStore];
-  const items1 = [arg0];
+  const items1 = [id];
   return _slicedToArray(require("initialize").useStateFromStores(items, () => {
     const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(closure_0, RelationshipTypes.FRIEND);
     const items = [gameRelationshipsForUserByType.length > 0, GameRelationshipStore.getGameRelationshipsVersion()];
     return items;
   }, items1, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
-});
+};

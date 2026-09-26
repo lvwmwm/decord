@@ -1,13 +1,13 @@
-// Module ID: 11657
-// Function ID: 11658
+// Module ID: 11781
+// Function ID: 11782
 // Name: AppStoreOverlayTelemetryManager
-// Dependencies: [1078, 7397, 1368, 1098, 2]
+// Dependencies: [1074, 7395, 1364, 1094, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 11657 (AppStoreOverlayTelemetryManager)
-import Constants from "Constants" /* 1078 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 11781 (AppStoreOverlayTelemetryManager)
+import Constants from "Constants" /* 1074 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -33,9 +33,9 @@ AppStoreOverlayTelemetryManager.prototype["handleAppStateUpdate"] = function han
   } else {
     let flag = null != _null;
     if (flag) {
-      if (state !== tmp(1098).AppStates.ACTIVE) {
+      if (state !== tmp(1094).AppStates.ACTIVE) {
         flag = false;
-        if (state === tmp(1098).AppStates.BACKGROUND) {
+        if (state === tmp(1094).AppStates.BACKGROUND) {
           _null.trackOverlayEvent(AnalyticEvents.QUEST_APP_STORE_OVERLAY_BACKGROUNDED);
           const _Date = Date;
           c4 = Date.now();

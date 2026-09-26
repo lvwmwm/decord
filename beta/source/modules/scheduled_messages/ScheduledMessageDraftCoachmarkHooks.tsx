@@ -1,126 +1,33 @@
-// Module ID: 12152
-// Function ID: 12153
+// Module ID: 12268
+// Function ID: 12269
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 19, 5528, 5139, 2042, 2031, 558, 568, 4611, 504, 2033, 2]
+// Dependencies: [32, 19, 5526, 5137, 2038, 2027, 4608, 504, 2029, 2]
+// Exports: useScheduledMessageDraftCoachmarkState
 
-// Module 12152 (ScheduledMessageDraftCoachmarkHooks)
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2033 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
+// Module 12268 (ScheduledMessageDraftCoachmarkHooks)
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4608 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
-import DraftStore from "DraftStore" /* 5139 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
+import DraftStore from "DraftStore" /* 5137 */;
 
 require = fn;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-let closure_7 = fn(2031).DismissibleContent.SCHEDULED_MESSAGES_DRAFT_COACHMARK;
-const ReactCompilerGating = fn(558);
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
+let closure_7 = fn(2027).DismissibleContent.SCHEDULED_MESSAGES_DRAFT_COACHMARK;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageDraftCoachmarkHooks.tsx");
 
-export const useScheduledMessageDraftCoachmarkState = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = channel(568).c(25);
-  channel = channel.channel;
-  ({ draftText, isEligible } = channel);
-  let obj = channel(568);
-  let result = channel(4611).useIsDismissibleContentDismissed_UNSAFE(closure_7);
-  dependencyMap = result;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [DraftStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel.id) {
-    class C {
-      constructor() {
-        return null != closure_5.getScheduledMessage(channel.id);
-      }
-    }
-    cResult[1] = channel.id;
-    cResult[2] = C;
-    const tmp7 = C;
-  } else {
-    class C {
-      constructor() {
-        return null != closure_5.getScheduledMessage(channel.id);
-      }
-    }
-  }
-  let obj2 = channel(4611);
-  const stateFromStores = channel(504).useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        return null != closure_5.getScheduledMessage(channel.id);
-      }
-    }
-    const items1 = [GatewayConnectionStore];
-    class E {
-      constructor() {
-        return closure_4.isConnected();
-      }
-    }
-    cResult[3] = items1;
-    cResult[4] = E;
-    let tmp10 = E;
-    const tmp9 = items1;
-  } else {
-    class C {
-      constructor() {
-        return null != closure_5.getScheduledMessage(channel.id);
-      }
-    }
-    tmp10 = cResult[4];
-  }
-  const tmpResult = channel(504);
-  const stateFromStores1 = channel(504).useStateFromStores(tmp9, tmp10);
-  if (cResult[5] === draftText) {
-    class C {
-      constructor() {
-        return null != closure_5.getScheduledMessage(channel.id);
-      }
-    }
-  }
-  let tmp12 = isEligible;
-  if (isEligible) {
-    class C {
-      constructor() {
-        return null != closure_5.getScheduledMessage(channel.id);
-      }
-    }
-    tmp12 = draftText.trim().length > 10;
-  }
-  if (tmp12) {
-    class C {
-      constructor() {
-        return null != closure_5.getScheduledMessage(channel.id);
-      }
-    }
-  }
-  if (tmp12) {
-    class C {
-      constructor() {
-        return null != closure_5.getScheduledMessage(channel.id);
-      }
-    }
-  }
-  cResult[5] = draftText;
-  cResult[6] = stateFromStores;
-  cResult[7] = stateFromStores1;
-  cResult[8] = isEligible;
-  cResult[9] = tmp12;
-}) : ((channel) => {
+export const useScheduledMessageDraftCoachmarkState = function useScheduledMessageDraftCoachmarkState(channel) {
   channel = channel.channel;
   ({ draftText, isEligible } = channel);
   isEligible = undefined;
   let first;
   let connected;
   let isCoachmarkVisible;
-  let result = channel(4611).useIsDismissibleContentDismissed_UNSAFE(closure_7);
+  let result = channel(4608).useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
-  let obj = channel(4611);
+  let obj = channel(4608);
   const items = [isCoachmarkVisible];
   const stateFromStores = channel(504).useStateFromStores(items, () => null != DraftStore.getScheduledMessage(channel.id));
   let obj2 = channel(504);
@@ -183,4 +90,4 @@ export const useScheduledMessageDraftCoachmarkState = ReactCompilerGating.isReac
     }
   }, items3);
   return { isCoachmarkVisible, dismissCoachmark };
-});
+};

@@ -1,14 +1,14 @@
-// Module ID: 13993
-// Function ID: 13994
+// Module ID: 13983
+// Function ID: 13984
 // Name: ExperimentTriggerPointStore
-// Dependencies: [4706, 1239, 13994, 13995, 504, 577, 2]
+// Dependencies: [4703, 1235, 13984, 13985, 504, 573, 2]
 
-// Module 13993 (ExperimentTriggerPointStore)
+// Module 13983 (ExperimentTriggerPointStore)
 import initializeDefault from "initialize" /* 504 */;
-import Dispatcher2 from "Dispatcher" /* 577 */;
-import ConnectionOpenTriggerPoint2 from "ConnectionOpenTriggerPoint" /* 13995 */;
-import ExperimentStore from "ExperimentStore" /* 4706 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
+import Dispatcher2 from "Dispatcher" /* 573 */;
+import ConnectionOpenTriggerPoint2 from "ConnectionOpenTriggerPoint" /* 13985 */;
+import ExperimentStore from "ExperimentStore" /* 4703 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 const Dispatcher = Dispatcher2;
 
@@ -17,7 +17,7 @@ function handleConnectionOpen() {
   const ConnectionOpenTriggerPoint = ConnectionOpenTriggerPoint2.ConnectionOpenTriggerPoint;
   ConnectionOpenTriggerPoint.trigger();
 }
-const DebugExperiment = fn(13994);
+const DebugExperiment = fn(13984);
 const Store = initializeDefault.Store;
 class ExperimentTriggerPointStore extends Store {
   constructor() {
@@ -36,4 +36,4 @@ let obj = { CONNECTION_OPEN: handleConnectionOpen };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/ExperimentTriggerPointStore.tsx");
 
-export default new "initialize"(Dispatcher, obj, fn(577).DispatchBand.Early, prototype, ExperimentTriggerPointStore, "initialize", Dispatcher, obj);
+export default new "initialize"(Dispatcher, obj, fn(573).DispatchBand.Early, prototype, ExperimentTriggerPointStore, "initialize", Dispatcher, obj);

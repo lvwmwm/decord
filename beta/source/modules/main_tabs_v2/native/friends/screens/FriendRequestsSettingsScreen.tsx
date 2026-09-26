@@ -1,63 +1,29 @@
-// Module ID: 17256
-// Function ID: 17257
+// Module ID: 17246
+// Function ID: 17247
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5375, 17257, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 5373, 17247, 2]
+// Exports: default
 
-// Module 17256 (FriendRequestsSettingsScreen)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5375 */;
-import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 17257 */;
+// Module 17246 (FriendRequestsSettingsScreen)
+import nativeDefault from "native" /* 576 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5373 */;
+import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 17247 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1, paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 } };
-let closure_7 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1, paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
+({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
+const createStyles = fn(4788);
+const obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1, paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 } };
+let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendRequestsSettingsScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  const tmp3 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = React4(ThemedGradientDefault, { absolute: true });
-    cResult[0] = tmp7;
-    let first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = React4(UserSettingsFriendRequestsDefault, {});
-    cResult[1] = tmp11;
-    let tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== tmp3.container) {
-    const obj2 = { children: null };
-    const items = [first, ];
-    const obj3 = { style: tmp3.container, children: tmp8 };
-    items[1] = React4(ScrollView, obj3);
-    obj2.children = items;
-    const tmp17 = timestampProducer(hasOwnProperty, obj2);
-    cResult[2] = tmp3.container;
-    cResult[3] = tmp17;
-    let tmp12 = tmp17;
-  } else {
-    tmp12 = cResult[3];
-  }
-  return tmp12;
-}) : (() => {
+export default function FriendRequestsSettingsScreen() {
   const obj = { children: null };
-  const items = [React4(ThemedGradientDefault, { absolute: true }), ];
-  const tmp = closure_7();
-  items[1] = React4(ScrollView, { style: closure_7().container, children: React4(UserSettingsFriendRequestsDefault, {}) });
+  const items = [React3(ThemedGradientDefault, { absolute: true }), ];
+  const tmp = closure_6();
+  items[1] = React3(ScrollView, { style: closure_6().container, children: React3(UserSettingsFriendRequestsDefault, {}) });
   obj.children = items;
-  return timestampProducer(hasOwnProperty, obj);
-});
+  return hasOwnProperty(React4, obj);
+};

@@ -1,15 +1,18 @@
 // Module ID: 10813
 // Function ID: 10814
-// Dependencies: [41, 42, 93, 95, 98, 10785]
+// Dependencies: [41, 42, 93, 95, 98, 10728, 10809, 10729, 10735]
 
 // Module 10813
-import _mod10785 from "module_10785" /* 10785 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10728 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import _mod10809 from "module_10809" /* 10809 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+const PTMonthNameLittleEndianParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,30 +32,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let _classCallCheck = _classCallCheck_mod;
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: __esModule };
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-class DEMergeDateTimeRefiner {
+const regExp = new RegExp("([0-9]{1,2})(?:\u00BA|\u00AA|\u00B0)?(?:\\s*(?:desde|de|\\-|\\\u2013|ao?|\\s)\\s*([0-9]{1,2})(?:\u00BA|\u00AA|\u00B0)?)?\\s*(?:de)?\\s*(?:-|/|\\s*(?:de|,)?\\s*)(" + repeatedTimeunitPattern.matchAnyPattern(_mod10809.MONTH_DICTIONARY) + ")(?:\\s*(?:de|,)?\\s*(" + _mod10809.YEAR_PATTERN + "))?(?=\\W|$)", "i");
+class PTMonthNameLittleEndianParser {
   constructor() {
     self = this;
-    tmp = closure_0(this, DEMergeDateTimeRefiner);
-    tmp2 = c2;
-    obj = c2(DEMergeDateTimeRefiner);
-    tmp3 = closure_1;
-    if (closure_3()) {
+    tmp = c2(this, PTMonthNameLittleEndianParser);
+    tmp2 = closure_4;
+    obj = closure_4(PTMonthNameLittleEndianParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -65,15 +53,48 @@ class DEMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = DEMergeDateTimeRefiner;
-_inherits(DEMergeDateTimeRefiner, fn(_mod10785).default);
+_inherits(PTMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(T|um|am|,|-)?\\s*$");
+  key: "innerPattern",
+  value: function innerPattern() {
     return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = PTMonthNameLittleEndianParser(10809).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const parsed = parseInt(index[1]);
+      if (parsed > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", parsed);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", tmp2(10809).parseYear(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", tmp2(10729).findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
+        }
+        if (index[2]) {
+          const _parseInt = parseInt;
+          const start3 = parsingResult.start;
+          const parsed1 = parseInt(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", parsed1);
+        }
+        return parsingResult;
+      }
+    }
+  }
+];
 
-export default _createClass(DEMergeDateTimeRefiner, items);
+export default _createClass(PTMonthNameLittleEndianParser, items);

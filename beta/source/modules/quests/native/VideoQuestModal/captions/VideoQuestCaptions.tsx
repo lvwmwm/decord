@@ -1,21 +1,19 @@
-// Module ID: 15410
-// Function ID: 15411
+// Module ID: 15414
+// Function ID: 15415
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4790, 580, 676, 558, 568, 15411, 15413, 4786, 5208, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 672, 15415, 15417, 5206, 4784, 2]
+// Exports: VideoQuestCaptions
 
-// Module 15410 (VideoQuestCaptions)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5208 */;
-import useVideoQuestCaptions from "useVideoQuestCaptions" /* 15411 */;
-import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 15413 */;
+// Module 15414 (VideoQuestCaptions)
+import nativeDefault from "native" /* 576 */;
+import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 15417 */;
 import noop from "module_19" /* 19 */;
-import n from "module_676" /* 676 */;
+import n from "module_672" /* 672 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: null, captionBox: null, captionText: null };
 const rect = { position: "absolute", bottom: nativeDefault.space.PX_32, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, alignItems: "center", justifyContent: "flex-end" };
 obj2.container = rect;
@@ -28,81 +26,10 @@ obj2.captionBox = obj3;
 const alphaResult = n(nativeDefault.unsafe_rawColors.BLACK).alpha(0.35);
 obj2.captionText = { color: nativeDefault.colors.WHITE, textAlign: "center" };
 let closure_6 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { color: nativeDefault.colors.WHITE, textAlign: "center" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VideoQuestCaptions.tsx");
 
-export const VideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
-  const cResult = c.c(15);
-  ({ currentTime, style, visible } = quest);
-  let tmp4 = undefined === visible;
-  if (!tmp4) {
-    tmp4 = visible;
-  }
-  const tmp5 = closure_6();
-  const videoQuestCaptions = useVideoQuestCaptions.useVideoQuestCaptions(quest.quest);
-  const captions = videoQuestCaptions.captions;
-  let tmp7 = null;
-  if (null != captions) {
-    tmp7 = null;
-    if (tmp4) {
-      if (cResult[0] === captions) {
-      }
-      const findActiveCaptionResult = tmp(15413).findActiveCaption(captions, currentTime);
-      cResult[0] = captions;
-      cResult[1] = currentTime;
-      cResult[2] = findActiveCaptionResult;
-      const tmpResult2 = tmp(15413);
-    }
-  }
-  let tmp11 = null;
-  if ("success" === videoQuestCaptions.status) {
-    tmp11 = null;
-    if (null != tmp7) {
-      if (cResult[3] === style) {
-        if (cResult[4] === tmp5.container) {
-          let tmp12 = cResult[5];
-        }
-        if (cResult[6] === tmp7.text) {
-          if (cResult[7] === tmp5.captionText) {
-            let tmp13 = cResult[8];
-          }
-          if (cResult[9] === tmp5.captionBox) {
-            if (cResult[10] === tmp13) {
-              let tmp16 = cResult[11];
-            }
-            if (cResult[12] === tmp12) {
-            }
-            const obj2 = { style: tmp12, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", accessible: false, children: tmp16 };
-            const tmp23 = <View style={tmp12} importantForAccessibility="no-hide-descendants" accessibilityRole="none" accessible={false}>{tmp16}</View>;
-            cResult[12] = tmp12;
-            cResult[13] = tmp16;
-            cResult[14] = tmp23;
-          }
-          const obj3 = { style: tmp5.captionBox, blurTheme: "dark", blurStyle: "default", blurAmount: 0.2, children: tmp13 };
-          const tmp19 = jsx(VisualEffectViewDefault, { style: tmp5.captionBox, blurTheme: "dark", blurStyle: "default", blurAmount: 0.2, children: tmp13 });
-          cResult[9] = tmp5.captionBox;
-          cResult[10] = tmp13;
-          cResult[11] = tmp19;
-          tmp16 = tmp19;
-        }
-        const obj4 = { variant: "heading-sm/medium", style: tmp5.captionText, children: tmp7.text };
-        const tmp15 = jsx(tmp(4786).Text, { variant: "heading-sm/medium", style: tmp5.captionText, children: tmp7.text });
-        cResult[6] = tmp7.text;
-        cResult[7] = tmp5.captionText;
-        cResult[8] = tmp15;
-        tmp13 = tmp15;
-      }
-      const items = [tmp5.container, style];
-      cResult[3] = style;
-      cResult[4] = tmp5.container;
-      cResult[5] = items;
-      tmp12 = items;
-    }
-  }
-  return tmp11;
-}) : ((currentTime) => {
+export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
   currentTime = currentTime.currentTime;
   let flag = currentTime.visible;
   ({ quest, style } = currentTime);
@@ -111,7 +38,7 @@ export const VideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled() ?
   }
   let captions;
   const tmp = closure_6();
-  const videoQuestCaptions = currentTime(captions[8]).useVideoQuestCaptions(quest);
+  const videoQuestCaptions = currentTime(captions[6]).useVideoQuestCaptions(quest);
   captions = videoQuestCaptions.captions;
   const items = [captions, currentTime, flag];
   const memo = noop.useMemo(() => {
@@ -133,11 +60,11 @@ export const VideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled() ?
       obj2.style = items1;
       const obj3 = { style: tmp.captionBox, blurTheme: "dark", blurStyle: "default", blurAmount: 0.2, children: null };
       const obj4 = { variant: "heading-sm/medium", style: tmp.captionText, children: memo.text };
-      obj3.children = jsx(currentTime(tmp3[10]).Text, { variant: "heading-sm/medium", style: tmp.captionText, children: memo.text });
-      obj2.children = jsx(flag(tmp3[11]), { style: tmp.captionBox, blurTheme: "dark", blurStyle: "default", blurAmount: 0.2, children: null });
+      obj3.children = jsx(currentTime(tmp3[9]).Text, { variant: "heading-sm/medium", style: tmp.captionText, children: memo.text });
+      obj2.children = jsx(flag(tmp3[8]), { style: tmp.captionBox, blurTheme: "dark", blurStyle: "default", blurAmount: 0.2, children: null });
       tmp6 = <View style={null} importantForAccessibility="no-hide-descendants" accessibilityRole="none" accessible={false}>{null}</View>;
-      const tmp10 = flag(tmp3[11]);
+      const tmp10 = flag(tmp3[8]);
     }
   }
   return tmp6;
-});
+};

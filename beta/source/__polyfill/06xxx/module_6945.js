@@ -1,12 +1,14 @@
 // Module ID: 6945
 // Function ID: 6946
-// Dependencies: []
-// Exports: getNextHandlerTag
+// Dependencies: [106, 65]
 
 // Module 6945
-let closure_0 = 1;
+import weakSet from "weakSet" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-export const getNextHandlerTag = function getNextHandlerTag() {
-  closure_0 = tmp + 1;
-  return +closure_0;
-};
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerDetector", directEventTypes: { topGestureHandlerEvent: { registrationName: "onGestureHandlerEvent" }, topGestureHandlerStateChange: { registrationName: "onGestureHandlerStateChange" }, topGestureHandlerTouchEvent: { registrationName: "onGestureHandlerTouchEvent" }, topGestureHandlerReanimatedEvent: { registrationName: "onGestureHandlerReanimatedEvent" }, topGestureHandlerReanimatedStateChange: { registrationName: "onGestureHandlerReanimatedStateChange" }, topGestureHandlerReanimatedTouchEvent: { registrationName: "onGestureHandlerReanimatedTouchEvent" }, topGestureHandlerAnimatedEvent: { registrationName: "onGestureHandlerAnimatedEvent" } }, validAttributes: null };
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onGestureHandlerEvent: true, onGestureHandlerStateChange: true, onGestureHandlerTouchEvent: true, onGestureHandlerReanimatedEvent: true, onGestureHandlerReanimatedStateChange: true, onGestureHandlerReanimatedTouchEvent: true, onGestureHandlerAnimatedEvent: true }));
+__INTERNAL_VIEW_CONFIG.validAttributes = { handlerTags: true, moduleId: true, virtualChildren: true, pointerEvents: true };
+
+export default module_65.get("RNGestureHandlerDetector", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,11 +1,11 @@
-// Module ID: 7567
-// Function ID: 7568
+// Module ID: 7565
+// Function ID: 7566
 // Name: SelfModUtils
-// Dependencies: [1376, 2]
+// Dependencies: [1372, 2]
 // Exports: isCurrentUserTeen
 
-// Module 7567 (SelfModUtils)
-import UserStore from "UserStore" /* 1376 */;
+// Module 7565 (SelfModUtils)
+import UserStore from "UserStore" /* 1372 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/SelfModUtils.tsx");

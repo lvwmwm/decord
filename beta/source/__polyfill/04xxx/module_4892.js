@@ -1,14 +1,25 @@
 // Module ID: 4892
 // Function ID: 4893
-// Dependencies: [4893, 4897, 4899]
+// Dependencies: []
 
 // Module 4892
-import shortOut from "shortOut" /* 4893 */;
-import overRest from "overRest" /* 4897 */;
-import flatten from "flatten" /* 4899 */;
 
-
-export default function flatRest(arg0) {
-  const tmp = shortOut;
-  return tmp(overRest(arg0, undefined, flatten), "" + arg0);
+export default function shortOut(arg0) {
+  closure_0 = arg0;
+  c1 = 0;
+  closure_2 = 0;
+  return () => {
+    const tmp = now();
+    closure_2 = tmp;
+    if (0 < 16 - (tmp - closure_2)) {
+      const sum = c1 + 1;
+      c1 = sum;
+      if (800 <= sum) {
+        return arguments[0];
+      }
+    } else {
+      c1 = 0;
+    }
+    return closure_0(...arguments);
+  };
 };

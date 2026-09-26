@@ -1,199 +1,24 @@
-// Module ID: 11418
-// Function ID: 11419
+// Module ID: 11380
+// Function ID: 11381
 // Name: useHandleUseNow
-// Dependencies: [19, 11419, 558, 568, 4757, 4993, 4649, 4490, 1119, 11420, 11423, 10033, 2]
+// Dependencies: [19, 11381, 4755, 4991, 4646, 4486, 1115, 11382, 11385, 10066, 2]
+// Exports: useHandleUseNow
 
-// Module 11418 (useHandleUseNow)
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import CollectiblePreviewSession from "CollectiblePreviewSession" /* 11423 */;
+// Module 11380 (useHandleUseNow)
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import CollectiblePreviewSession from "CollectiblePreviewSession" /* 11385 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const RootNavigatorScreen = fn(11419).RootNavigatorScreen;
-const ReactCompilerGating = fn(558);
+const RootNavigatorScreen = fn(11381).RootNavigatorScreen;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/native/useHandleUseNow.tsx");
 
-export const useHandleUseNow = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
-  const cResult = require("c").c(22);
-  product = product.product;
-  require = product;
-  const onSuccess = product.onSuccess;
-  ({ analyticsLocations, stageCollectibleChangeForEditProfile } = product);
-  if (cResult[0] === onSuccess) {
-    if (cResult[1] === stageCollectibleChangeForEditProfile) {
-      let tmp4 = cResult[2];
-    }
-    noop = tmp4;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function v() {
-        const obj2 = { key: "collectible shop apply error", content: null };
-        const intl = product(stageCollectibleChangeForEditProfile[8]).intl;
-        obj2.content = intl.string(product(stageCollectibleChangeForEditProfile[8]).t.CKsXk3);
-        onSuccess(stageCollectibleChangeForEditProfile[7]).open(obj2);
-      };
-      cResult[3] = fn2;
-      let tmp6 = fn2;
-    } else {
-      tmp6 = cResult[3];
-    }
-    if (cResult[4] === tmp4) {
-      if (cResult[5] === product) {
-        let tmp7 = cResult[6];
-      }
-      const handleUseNow1 = require("hooks/useHandleUseNow").useHandleUseNow(tmp7);
-      const handleUseNow = handleUseNow1.handleUseNow;
-      ({ isApplying, canUseNow } = handleUseNow1);
-      if (cResult[7] === tmp4) {
-        if (cResult[8] === product) {
-          if (cResult[9] === handleUseNow) {
-            if (cResult[10] === stageCollectibleChangeForEditProfile) {
-              let tmp10 = cResult[11];
-            }
-            if (cResult[12] !== analyticsLocations) {
-              let obj2 = { analyticsLocations };
-              cResult[12] = analyticsLocations;
-              cResult[13] = obj2;
-              let tmp11 = obj2;
-            } else {
-              tmp11 = cResult[13];
-            }
-            const tmp13 = onSuccess(tmp2[11])(tmp11);
-            closure_5 = tmp13;
-            if (cResult[14] === onSuccess) {
-              if (cResult[15] === tmp13) {
-                let tmp14 = cResult[16];
-              }
-              if (cResult[17] === canUseNow) {
-                if (cResult[18] === tmp14) {
-                  if (cResult[19] === tmp10) {
-                    if (cResult[20] === isApplying) {
-                      let tmp15 = cResult[21];
-                    }
-                    return tmp15;
-                  }
-                }
-              }
-              let obj3 = { handleUseNow: tmp10, isApplying, canUseNow, handleEditProfile: tmp14 };
-              class A {
-                constructor() {
-                  if (null != closure_2) {
-                    tmp4 = closure_0;
-                    tmp5 = closure_2;
-                    obj = closure_0(closure_2[10]);
-                    result = obj.commitCollectiblePreview();
-                    tmp7 = product;
-                    tmpResult = tmp(product);
-                    tmp9 = closure_3;
-                    tmp10 = closure_3();
-                    return;
-                  } else {
-                    tmp2 = handleUseNow;
-                    tmp3 = handleUseNow();
-                    return;
-                  }
-                }
-              }
-              cResult[18] = tmp14;
-              cResult[19] = tmp10;
-              cResult[20] = isApplying;
-              cResult[21] = obj3;
-              tmp15 = obj3;
-            }
-            const fn3 = function k() {
-              closure_5();
-              if (null == onSuccess) {
-                ActionSheetActionCreatorsDefault.hideAllActionSheets();
-                ModalActionCreatorsDefault.popAll();
-              } else {
-                tmp2();
-              }
-            };
-            class A {
-              constructor() {
-                if (null != closure_2) {
-                  tmp4 = closure_0;
-                  tmp5 = closure_2;
-                  obj = closure_0(closure_2[10]);
-                  result = obj.commitCollectiblePreview();
-                  tmp7 = product;
-                  tmpResult = tmp(product);
-                  tmp9 = closure_3;
-                  tmp10 = closure_3();
-                  return;
-                } else {
-                  tmp2 = handleUseNow;
-                  tmp3 = handleUseNow();
-                  return;
-                }
-              }
-            }
-            cResult[15] = tmp13;
-            cResult[16] = fn3;
-            tmp14 = fn3;
-          }
-        }
-      }
-      class A {
-        constructor() {
-          if (null != closure_2) {
-            tmp4 = closure_0;
-            tmp5 = closure_2;
-            obj = closure_0(closure_2[10]);
-            result = obj.commitCollectiblePreview();
-            tmp7 = product;
-            tmpResult = tmp(product);
-            tmp9 = closure_3;
-            tmp10 = closure_3();
-            return;
-          } else {
-            tmp2 = handleUseNow;
-            tmp3 = handleUseNow();
-            return;
-          }
-        }
-      }
-      cResult[7] = tmp4;
-      cResult[8] = product;
-      cResult[9] = handleUseNow;
-      cResult[10] = stageCollectibleChangeForEditProfile;
-      cResult[11] = A;
-      tmp10 = A;
-      const tmpResult = require("hooks/useHandleUseNow");
-    }
-    tmp8[0] = product;
-    tmp8[1] = tmp4;
-    tmp8[2] = tmp6;
-    cResult[4] = tmp4;
-    cResult[5] = product;
-    cResult[6] = tmp8;
-    tmp7 = tmp8;
-  }
-  const fn = function n() {
-    if (null == onSuccess) {
-      ActionSheetActionCreatorsDefault.hideAllActionSheets();
-      ModalActionCreatorsDefault.popAll();
-      if (null == stageCollectibleChangeForEditProfile) {
-        const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
-        if (tmp9) {
-          rootNavigationRef.navigate(RootNavigatorScreen.YOU);
-        }
-        tmp9 = null != rootNavigationRef && rootNavigationRef.isReady();
-      }
-    } else {
-      tmp();
-    }
-  };
-  cResult[0] = onSuccess;
-  cResult[1] = stageCollectibleChangeForEditProfile;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : ((analyticsLocations) => {
+export const useHandleUseNow = function useHandleUseNow(analyticsLocations) {
   const product = analyticsLocations.product;
-  const require = product;
+  require = product;
   const stageCollectibleChangeForEditProfile = analyticsLocations.stageCollectibleChangeForEditProfile;
   let onSuccess;
   const items = [onSuccess, stageCollectibleChangeForEditProfile];
@@ -214,9 +39,9 @@ export const useHandleUseNow = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }, items);
   const callback1 = onSuccess.useCallback(() => {
     const obj2 = { key: "collectible shop apply error", content: null };
-    const intl = product(stageCollectibleChangeForEditProfile[8]).intl;
-    obj2.content = intl.string(product(stageCollectibleChangeForEditProfile[8]).t.CKsXk3);
-    onSuccess(stageCollectibleChangeForEditProfile[7]).open(obj2);
+    const intl = product(stageCollectibleChangeForEditProfile[6]).intl;
+    obj2.content = intl.string(product(stageCollectibleChangeForEditProfile[6]).t.CKsXk3);
+    onSuccess(stageCollectibleChangeForEditProfile[5]).open(obj2);
   }, []);
   const handleUseNow1 = require("hooks/useHandleUseNow").useHandleUseNow({ product, onSuccess, onError: callback1 });
   const handleUseNow = handleUseNow1.handleUseNow;
@@ -231,7 +56,7 @@ export const useHandleUseNow = ReactCompilerGating.isReactCompilerEnabled() ? ((
       handleUseNow();
     }
   }, items1);
-  const tmp5 = onSuccess(stageCollectibleChangeForEditProfile[11])({ analyticsLocations: analyticsLocations.analyticsLocations });
+  const tmp5 = onSuccess(stageCollectibleChangeForEditProfile[9])({ analyticsLocations: analyticsLocations.analyticsLocations });
   closure_5 = tmp5;
   let obj2 = { handleUseNow: callback2, isApplying, canUseNow, handleEditProfile: null };
   const items2 = [tmp5, onSuccess];
@@ -245,4 +70,4 @@ export const useHandleUseNow = ReactCompilerGating.isReactCompilerEnabled() ? ((
     }
   }, items2);
   return obj2;
-});
+};

@@ -1,15 +1,15 @@
-// Module ID: 11831
-// Function ID: 11832
+// Module ID: 11624
+// Function ID: 11625
 // Name: ChannelFollowerActionCreators
-// Dependencies: [5, 1078, 1275, 577, 2]
+// Dependencies: [5, 1074, 1271, 573, 2]
 
-// Module 11831 (ChannelFollowerActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 11624 (ChannelFollowerActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/ChannelFollowerActionCreators.tsx");
 

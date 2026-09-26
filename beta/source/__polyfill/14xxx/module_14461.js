@@ -1,9 +1,9 @@
 // Module ID: 14461
 // Function ID: 14462
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 14461
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "76c09ebc2fd9700ae36ec8729cee1e9d", name: "NotificationsTab", type: "lottie" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "42a20b8c34f5da51714fe4afb6b4ab7f", name: "NitroGem6", type: "lottie" });

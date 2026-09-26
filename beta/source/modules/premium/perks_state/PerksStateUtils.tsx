@@ -1,13 +1,13 @@
-// Module ID: 1382
-// Function ID: 1383
+// Module ID: 1378
+// Function ID: 1379
 // Name: PerksStateUtils
-// Dependencies: [32, 1383, 1090, 1384, 2]
+// Dependencies: [32, 1379, 1086, 1380, 2]
 // Exports: getPerkConfig, hasPerk, parseServerPerks
 
-// Module 1382 (PerksStateUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import types from "types" /* 1383 */;
-import user from "user" /* 1384 */;
+// Module 1378 (PerksStateUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
+import types from "types" /* 1379 */;
+import user from "user" /* 1380 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -15,10 +15,10 @@ function parseServerPerkConfigKind(kind) {
   if (null != kind.kind) {
     const type = kind.kind.type;
     if (types.PerkConfigType.INCREASED_FILE_UPLOAD_SIZE === type) {
-      const obj2 = { type: tmp(1383).PerkConfigType.INCREASED_FILE_UPLOAD_SIZE, maxSize: kind.kind.max_size };
+      const obj2 = { type: tmp(1379).PerkConfigType.INCREASED_FILE_UPLOAD_SIZE, maxSize: kind.kind.max_size };
       return obj2;
-    } else if (tmp(1383).PerkConfigType.INCREASED_GUILD_LIMIT === type) {
-      const obj = { type: tmp(1383).PerkConfigType.INCREASED_GUILD_LIMIT, maxGuilds: kind.kind.max_guilds };
+    } else if (tmp(1379).PerkConfigType.INCREASED_GUILD_LIMIT === type) {
+      const obj = { type: tmp(1379).PerkConfigType.INCREASED_GUILD_LIMIT, maxGuilds: kind.kind.max_guilds };
       return obj;
     }
   }

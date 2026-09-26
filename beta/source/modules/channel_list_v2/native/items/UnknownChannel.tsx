@@ -1,16 +1,16 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16566
+// Function ID: 16567
 // Name: UnknownChannel
-// Dependencies: [19, 12249, 4972, 21, 4790, 580, 4490, 1119, 4744, 558, 568, 4943, 11255, 16477, 2]
+// Dependencies: [19, 10413, 4970, 21, 4788, 576, 4486, 1115, 4742, 4941, 11206, 16458, 2]
 
-// Module 16574 (UnknownChannel)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4744 */;
-import useChannelNameDefault from "useChannelName" /* 4943 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11255 */;
-import ChannelItemDefault from "ChannelItem" /* 16477 */;
+// Module 16566 (UnknownChannel)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4742 */;
+import useChannelNameDefault from "useChannelName" /* 4941 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11206 */;
+import ChannelItemDefault from "ChannelItem" /* 16458 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,74 +21,16 @@ function handlePress() {
   obj2.IconComponent = CircleInformationIcon.CircleInformationIcon;
   ToastActionCreatorsDefault.open(obj2);
 }
-const UnreadSetting = fn(4972).UnreadSetting;
+const UnreadSetting = fn(4970).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let obj = { container: { marginVertical: fn(12249).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+const createStyles = fn(4788);
+let obj = { container: { marginVertical: fn(10413).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
 let closure_6 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
-let obj3 = { marginVertical: fn(12249).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
+const obj3 = { marginVertical: fn(10413).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = channel(568).c(13);
-  channel = channel.channel;
-  const selected = channel.selected;
-  const tmp4 = closure_6();
-  const tmp6 = useChannelNameDefault(channel);
-  if (cResult[0] !== channel.id) {
-    const fn = function t() {
-      const result = openChannelLongPressActionSheet.openChannelLongPressActionSheet(channel.id);
-    };
-    cResult[0] = channel.id;
-    cResult[1] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== tmp6) {
-    const intl = tmp(1119).intl;
-    const obj2 = { channelName: tmp6 };
-    const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t.yjQ9P8, obj2);
-    cResult[2] = tmp6;
-    cResult[3] = formatToPlainStringResult;
-    let tmp8 = formatToPlainStringResult;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== selected) {
-    const obj3 = { selected };
-    cResult[4] = selected;
-    cResult[5] = obj3;
-    let tmp10 = obj3;
-  } else {
-    tmp10 = cResult[5];
-  }
-  if (cResult[6] === channel) {
-    if (cResult[7] === tmp7) {
-      if (cResult[8] === selected) {
-        if (cResult[9] === tmp4.container) {
-          if (cResult[10] === tmp8) {
-            if (cResult[11] === tmp10) {
-              let tmp11 = cResult[12];
-            }
-            return tmp11;
-          }
-        }
-      }
-    }
-  }
-  const tmp12 = jsx(ChannelItemDefault, { onPress: handlePress, onLongPress: tmp7, style: tmp4.container, accessible: true, accessibilityLabel: tmp8, accessibilityState: tmp10, channel, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS });
-  cResult[6] = channel;
-  cResult[7] = tmp7;
-  cResult[8] = selected;
-  cResult[9] = tmp4.container;
-  cResult[10] = tmp8;
-  cResult[11] = tmp10;
-  cResult[12] = tmp12;
-  tmp11 = tmp12;
-}) : ((channel) => {
+export default noop.memo((channel) => {
   channel = channel.channel;
   const selected = channel.selected;
   const items = [channel.id];
@@ -98,11 +40,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   }, items);
   const obj = { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
   const tmp2 = useChannelNameDefault(channel);
-  const intl = channel(1119).intl;
-  obj.accessibilityLabel = intl.formatToPlainString(channel(1119).t.yjQ9P8, { channelName: tmp2 });
+  const intl = channel(1115).intl;
+  obj.accessibilityLabel = intl.formatToPlainString(channel(1115).t.yjQ9P8, { channelName: tmp2 });
   obj.accessibilityState = { selected };
   obj.channel = channel;
   obj.selected = selected;
   obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
   return jsx(ChannelItemDefault, { onPress: handlePress, onLongPress: callback, style: tmp.container, accessible: true, accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
-}));
+});

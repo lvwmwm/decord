@@ -1,49 +1,20 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 14992
+// Function ID: 14993
 // Name: SettingLayout
-// Dependencies: [19, 11631, 21, 558, 568, 14989, 15002, 2]
+// Dependencies: [19, 11755, 21, 14993, 15006, 2]
 
-// Module 14988 (SettingLayout)
-import c from "c" /* 568 */;
-import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 15002 */;
+// Module 14992 (SettingLayout)
+import SettingListRenderer from "SettingListRenderer" /* 14993 */;
+import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 15006 */;
 import noop from "module_19" /* 19 */;
 
-const SettingListRenderer = tmp(14989);
 require = fn;
-const NodeType = fn(11631).NodeType;
+const NodeType = fn(11755).NodeType;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
-  const cResult = c.c(4);
-  node = node.node;
-  const type = node.type;
-  if (NodeType.LIST === type) {
-    if (cResult[0] !== node) {
-      const obj2 = { node };
-      const tmp11 = jsx(SettingListRenderer.SettingsList, { node });
-      cResult[0] = node;
-      cResult[1] = tmp11;
-      let tmp9 = tmp11;
-    } else {
-      tmp9 = cResult[1];
-    }
-    return tmp9;
-  } else if (tmp4.SEGMENTED_CONTROL === type) {
-    if (cResult[2] !== node) {
-      const obj3 = { node };
-      const tmp8 = jsx(SettingSegmentedControlRendererDefault, { node });
-      cResult[2] = node;
-      cResult[3] = tmp8;
-      let tmp5 = tmp8;
-    } else {
-      tmp5 = cResult[3];
-    }
-    return tmp5;
-  }
-}) : ((node) => {
+export default noop.memo(function SettingLayout(node) {
   node = node.node;
   const type = node.type;
   if (NodeType.LIST === type) {
@@ -53,4 +24,4 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((node) 
     const obj = { node };
     return jsx(SettingSegmentedControlRendererDefault, { node });
   }
-}));
+});

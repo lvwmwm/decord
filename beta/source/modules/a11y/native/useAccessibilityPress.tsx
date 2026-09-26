@@ -1,63 +1,19 @@
-// Module ID: 9857
-// Function ID: 9858
+// Module ID: 9879
+// Function ID: 9880
 // Name: useAccessibilityPress
-// Dependencies: [19, 558, 568, 2]
+// Dependencies: [19, 2]
+// Exports: default
 
-// Module 9857 (useAccessibilityPress)
-import c from "c" /* 568 */;
+// Module 9879 (useAccessibilityPress)
 import noop from "module_19" /* 19 */;
 
-require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/a11y/native/useAccessibilityPress.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, label) => {
-  const current = cResult;
-  cResult = c.c(6);
-  noop.useRef(cResult);
-  if (cResult[0] !== cResult) {
-    const fn = function s() {
-      closure_1.current = current;
-    };
-    const items = [cResult];
-    cResult[0] = cResult;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp3 = items;
-    let tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
-  }
-  const effect = noop.useEffect(tmp2, tmp3);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function u(nativeEvent) {
-      if ("activate" === nativeEvent.nativeEvent.actionName) {
-        ref.current();
-      }
-    };
-    cResult[3] = fn2;
-    let tmp5 = fn2;
-  } else {
-    tmp5 = cResult[3];
-  }
-  if (cResult[4] !== label) {
-    const obj3 = { onAccessibilityAction: tmp5, accessibilityActions: null };
-    const obj4 = { name: "activate", label };
-    const items1 = [obj4];
-    obj3.accessibilityActions = items1;
-    cResult[4] = label;
-    cResult[5] = obj3;
-    let tmp6 = obj3;
-  } else {
-    tmp6 = cResult[5];
-  }
-  return tmp6;
-}) : ((cResult, label) => {
-  const current = cResult;
-  closure_2 = noop.useRef(cResult);
-  let items = [cResult];
+export default function useAccessibilityPress(set, label) {
+  const current = set;
+  closure_2 = noop.useRef(set);
+  let items = [set];
   const effect = noop.useEffect(() => {
     closure_2.current = current;
   }, items);
@@ -75,4 +31,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, label) 
     obj.accessibilityActions = items;
     return obj;
   }, items1);
-});
+};

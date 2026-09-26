@@ -1,16 +1,16 @@
-// Module ID: 13699
-// Function ID: 13700
+// Module ID: 13689
+// Function ID: 13690
 // Name: BillingInformation
-// Dependencies: [5, 1078, 4450, 1369, 1119, 11383, 2]
+// Dependencies: [5, 1074, 4446, 1365, 1115, 11345, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 13699 (BillingInformation)
+// Module 13689 (BillingInformation)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const SubscriptionStatusTypes = fn(1078).SubscriptionStatusTypes;
+const SubscriptionStatusTypes = fn(1074).SubscriptionStatusTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/billing/native/subscription/BillingInformation.tsx");
 
@@ -30,7 +30,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
     tmp5 = subscription.status === SubscriptionStatusTypes.ACTIVE;
   }
   if (tmp5) {
-    const intl = tmp2(1119).intl;
+    const intl = tmp2(1115).intl;
     let obj3 = { renewalDate: subscriptionPeriodStart.subscriptionPeriodStart, onSubscriptionManagementClick: null };
     _require = asyncGeneratorStep(async (arg0, value) => {
       if (v3 === 2) {
@@ -43,7 +43,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
             return obj;
           } else {
             v3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           v3 = tmp;
@@ -89,7 +89,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
       }
       return applyArgumentsResult;
     };
-    billingInformationString = intl.format(tmp2(1119).t.gknRR3, obj3);
+    billingInformationString = intl.format(tmp2(1115).t.gknRR3, obj3);
   }
   return billingInformationString;
 };

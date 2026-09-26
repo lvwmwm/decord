@@ -1,488 +1,43 @@
-// Module ID: 10637
-// Function ID: 10638
+// Module ID: 10516
+// Function ID: 10517
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 4483, 2045, 4441, 1376, 7553, 7584, 1078, 1118, 558, 568, 8042, 38, 4943, 5273, 1370, 8178, 10236, 8567, 1368, 4758, 4759, 8046, 4801, 4657, 10638, 10464, 10462, 2]
+// Dependencies: [19, 4479, 2041, 4437, 1372, 7551, 7582, 1074, 1114, 8037, 38, 4941, 5271, 1366, 8173, 10239, 8562, 1364, 4756, 4757, 8041, 4799, 4654, 10517, 11549, 11547, 2]
+// Exports: default
 
-// Module 10637 (useNativeForumPostHandlers)
+// Module 10516 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ChatInputUtils from "ChatInputUtils" /* 4657 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4759 */;
-import transitionToChannel from "transitionToChannel" /* 4801 */;
-import useChannelName from "useChannelName" /* 4943 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8042 */;
-import tracking_Tracking from "tracking/Tracking" /* 8046 */;
-import openMediaModal from "openMediaModal" /* 8567 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10462 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10464 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10638 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import ChatInputUtils from "ChatInputUtils" /* 4654 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4757 */;
+import transitionToChannel from "transitionToChannel" /* 4799 */;
+import useChannelName from "useChannelName" /* 4941 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5271 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8037 */;
+import tracking_Tracking from "tracking/Tracking" /* 8041 */;
+import openMediaModal from "openMediaModal" /* 8562 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10517 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 11547 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 11549 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4483 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7553 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7584 */;
+import ActionSheetStore from "ActionSheetStore" /* 4479 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7551 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7582 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticsObjectTypes: closure_11, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
-const constants4 = fn(1118).OpenThreadAnalyticsLocations;
-const ReactCompilerGating = fn(558);
+let closure_15 = fn(1114).OpenThreadAnalyticsLocations;
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/forums/native/posts/hooks/useNativeForumPostHandlers.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
-  const cResult = threadId(568).c(27);
-  threadId = threadId.threadId;
-  let NORMAL = threadId.reactionType;
-  if (undefined === NORMAL) {
-    NORMAL = threadId(8042).ReactionTypes.NORMAL;
-  }
-  if (cResult[0] !== threadId) {
-    const fn = function h(containerRef) {
-      ({ messageId: threadId, mediaItems, initialIndex } = containerRef);
-      let num = 0;
-      if (undefined !== initialIndex) {
-        num = initialIndex;
-      }
-      const channel = ChannelStore.getChannel(threadId);
-      _modDef38(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-      const channelName = useChannelName.computeChannelName(channel, UserStore, RelationshipStore, false);
-      const channelIcon = utils_ChannelUtils.getChannelIcon(channel);
-      const mapped = mediaItems.map((src) => {
-        src = src.src;
-        const str = NORMAL(1370).toURLSafe(src);
-        let tmp = null != str;
-        if (src.srcIsAnimated) {
-          if (tmp) {
-            const formatted = str.pathname.toLowerCase();
-            let endsWithResult = formatted.endsWith(".webp");
-            if (!endsWithResult) {
-              const formatted1 = str.pathname.toLowerCase();
-              endsWithResult = formatted1.endsWith(".avif");
-            }
-            tmp = endsWithResult;
-          }
-          if (tmp) {
-            let isAttachmentPathUrlResult = src.type === threadId(8178).ForumPostMediaTypes.ATTACHMENT;
-            if (isAttachmentPathUrlResult) {
-              isAttachmentPathUrlResult = closure_2(10236).isAttachmentPathUrl(str);
-              const obj5 = closure_2(10236);
-            }
-            if (!isAttachmentPathUrlResult) {
-              let result = src.type === tmp6(8178).ForumPostMediaTypes.EMBED;
-              if (result) {
-                result = closure_2(10236).isExternalProxiedAttachmentUrl(str);
-                const obj6 = closure_2(10236);
-              }
-              isAttachmentPathUrlResult = result;
-            }
-            tmp = isAttachmentPathUrlResult;
-            tmp6 = threadId;
-          }
-          let str1 = src;
-          if (tmp) {
-            const searchParams2 = str.searchParams;
-            const result1 = searchParams2.set("animated", "true");
-            const formatted2 = str.pathname.toLowerCase();
-            if (formatted2.endsWith(".avif")) {
-              const searchParams3 = str.searchParams;
-              const result2 = searchParams3.set("format", "webp");
-            }
-            str1 = str.toString();
-          }
-        } else {
-          let endsWithResult1 = tmp;
-          if (tmp) {
-            const formatted3 = str.pathname.toLowerCase();
-            endsWithResult1 = formatted3.endsWith(".avif");
-          }
-          str1 = src;
-          if (endsWithResult1) {
-            const searchParams = str.searchParams;
-            const result3 = searchParams.set("format", "webp");
-            str1 = str.toString();
-          }
-        }
-        const size = { uri: str1, guildId: channel.guild_id, messageId: null, channelId: null, mediaIndex: null, width: null, height: null, accessoryType: null, attachmentId: null };
-        let tmp18 = closure_1_0;
-        if (closure_1_0 == null) {
-          tmp18 = closure_2_14;
-        }
-        size.messageId = tmp18;
-        size.channelId = channel.id;
-        ({ mediaIndex: obj8.mediaIndex, width: obj8.width, height: obj8.height, type: obj8.accessoryType, attachmentId: obj8.attachmentId } = src);
-        return size;
-      });
-      openMediaModal.openMediaModal({ initialIndex: num, initialSources: mapped, channelId: channel.id, contextName: channelName, contextIcon: channelIcon, originViewOrOriginLayout: containerRef.containerRef.current });
-    };
-    cResult[0] = threadId;
-    cResult[1] = fn;
-    let tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] !== threadId) {
-    class F {
-      constructor() {
-        tmp = closure_0;
-        tmp2 = closure_3;
-        obj = closure_0(closure_3[19]);
-        if (obj.isAndroid()) {
-          tmpResult = tmp(tmp2[20]);
-          tmp3 = closure_1;
-          result = tmpResult.triggerHapticFeedback(closure_1(tmp2[21]).IMPACT_LIGHT);
-        }
-        channel = closure_6.getChannel(threadId);
-        tmp6 = closure_1(tmp2[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-        channel1 = closure_6.getChannel(channel.parent_id);
-        tmp8 = closure_1(tmp2[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-        tmpResult1 = tmp(tmp2[22]);
-        obj1 = { guildId: channel1.guild_id, channelId: channel1.id, postId: threadId, location: null };
-        obj8 = { page: AnalyticsPages.GUILD_CHANNEL, section: AnalyticsSections.FORUM_CHANNEL_POST };
-        obj1.location = obj8;
-        result1 = tmpResult1.trackForumPostClicked(obj1);
-        tmpResult2 = tmp(tmp2[23]);
-        obj9 = { source: closure_15.FORUM, navigationReplace: false };
-        transitionToThreadResult = tmpResult2.transitionToThread(channel, obj9);
-        return;
-      }
-    }
-    cResult[2] = threadId;
-    cResult[3] = F;
-  } else {
-    class F {
-      constructor() {
-        tmp = closure_0;
-        tmp2 = closure_3;
-        obj = closure_0(closure_3[19]);
-        if (obj.isAndroid()) {
-          tmpResult = tmp(tmp2[20]);
-          tmp3 = closure_1;
-          result = tmpResult.triggerHapticFeedback(closure_1(tmp2[21]).IMPACT_LIGHT);
-        }
-        channel = closure_6.getChannel(threadId);
-        tmp6 = closure_1(tmp2[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-        channel1 = closure_6.getChannel(channel.parent_id);
-        tmp8 = closure_1(tmp2[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-        tmpResult1 = tmp(tmp2[22]);
-        obj1 = { guildId: channel1.guild_id, channelId: channel1.id, postId: threadId, location: null };
-        obj8 = { page: AnalyticsPages.GUILD_CHANNEL, section: AnalyticsSections.FORUM_CHANNEL_POST };
-        obj1.location = obj8;
-        result1 = tmpResult1.trackForumPostClicked(obj1);
-        tmpResult2 = tmp(tmp2[23]);
-        obj9 = { source: closure_15.FORUM, navigationReplace: false };
-        transitionToThreadResult = tmpResult2.transitionToThread(channel, obj9);
-        return;
-      }
-    }
-  }
-  importAll = tmp5;
-  if (cResult[4] === tmp5) {
-    class F {
-      constructor() {
-        tmp = closure_0;
-        tmp2 = closure_3;
-        obj = closure_0(closure_3[19]);
-        if (obj.isAndroid()) {
-          tmpResult = tmp(tmp2[20]);
-          tmp3 = closure_1;
-          result = tmpResult.triggerHapticFeedback(closure_1(tmp2[21]).IMPACT_LIGHT);
-        }
-        channel = closure_6.getChannel(threadId);
-        tmp6 = closure_1(tmp2[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-        channel1 = closure_6.getChannel(channel.parent_id);
-        tmp8 = closure_1(tmp2[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-        tmpResult1 = tmp(tmp2[22]);
-        obj1 = { guildId: channel1.guild_id, channelId: channel1.id, postId: threadId, location: null };
-        obj8 = { page: AnalyticsPages.GUILD_CHANNEL, section: AnalyticsSections.FORUM_CHANNEL_POST };
-        obj1.location = obj8;
-        result1 = tmpResult1.trackForumPostClicked(obj1);
-        tmpResult2 = tmp(tmp2[23]);
-        obj9 = { source: closure_15.FORUM, navigationReplace: false };
-        transitionToThreadResult = tmpResult2.transitionToThread(channel, obj9);
-        return;
-      }
-    }
-    if (cResult[7] !== threadId) {
-      class L {
-        constructor() {
-          channel = closure_6.getChannel(threadId);
-          tmp3 = closure_3;
-          tmp2 = closure_1;
-          tmp4 = closure_1(closure_3[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-          channel1 = closure_6.getChannel(channel.parent_id);
-          tmp5 = closure_1(closure_3[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-          tmp6 = closure_1(closure_3[12]);
-          tmp6Result = tmp6(channel1.isForumLikeChannel(), "Forum parents must be forum channels");
-          tmp8 = null != closure_5.getContent();
-          if (!tmp8) {
-            tmp8 = null == closure_8.getUser(channel.ownerId);
-          }
-          if (!tmp8) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp3[24]);
-            dismissKeyboardResult = obj2.dismissKeyboard();
-            tmp11 = tmp2(tmp3[25])(channel, channel1);
-          }
-          return;
-        }
-      }
-      cResult[7] = threadId;
-      cResult[8] = L;
-    } else {
-      class L {
-        constructor() {
-          channel = closure_6.getChannel(threadId);
-          tmp3 = closure_3;
-          tmp2 = closure_1;
-          tmp4 = closure_1(closure_3[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-          channel1 = closure_6.getChannel(channel.parent_id);
-          tmp5 = closure_1(closure_3[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-          tmp6 = closure_1(closure_3[12]);
-          tmp6Result = tmp6(channel1.isForumLikeChannel(), "Forum parents must be forum channels");
-          tmp8 = null != closure_5.getContent();
-          if (!tmp8) {
-            tmp8 = null == closure_8.getUser(channel.ownerId);
-          }
-          if (!tmp8) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp3[24]);
-            dismissKeyboardResult = obj2.dismissKeyboard();
-            tmp11 = tmp2(tmp3[25])(channel, channel1);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[9] !== threadId) {
-      class L {
-        constructor() {
-          channel = closure_6.getChannel(threadId);
-          tmp3 = closure_3;
-          tmp2 = closure_1;
-          tmp4 = closure_1(closure_3[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-          channel1 = closure_6.getChannel(channel.parent_id);
-          tmp5 = closure_1(closure_3[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-          tmp6 = closure_1(closure_3[12]);
-          tmp6Result = tmp6(channel1.isForumLikeChannel(), "Forum parents must be forum channels");
-          tmp8 = null != closure_5.getContent();
-          if (!tmp8) {
-            tmp8 = null == closure_8.getUser(channel.ownerId);
-          }
-          if (!tmp8) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp3[24]);
-            dismissKeyboardResult = obj2.dismissKeyboard();
-            tmp11 = tmp2(tmp3[25])(channel, channel1);
-          }
-          return;
-        }
-      }
-      cResult[9] = threadId;
-      cResult[10] = tmp9;
-    } else {
-      class L {
-        constructor() {
-          channel = closure_6.getChannel(threadId);
-          tmp3 = closure_3;
-          tmp2 = closure_1;
-          tmp4 = closure_1(closure_3[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-          channel1 = closure_6.getChannel(channel.parent_id);
-          tmp5 = closure_1(closure_3[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-          tmp6 = closure_1(closure_3[12]);
-          tmp6Result = tmp6(channel1.isForumLikeChannel(), "Forum parents must be forum channels");
-          tmp8 = null != closure_5.getContent();
-          if (!tmp8) {
-            tmp8 = null == closure_8.getUser(channel.ownerId);
-          }
-          if (!tmp8) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp3[24]);
-            dismissKeyboardResult = obj2.dismissKeyboard();
-            tmp11 = tmp2(tmp3[25])(channel, channel1);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[11] !== threadId) {
-      class N {
-        constructor(arg0) {
-          firstMessage = closure_9.getMessage(threadId).firstMessage;
-          tmp = closure_1(closure_3[12])(null != firstMessage, "[Forum Post Handlers] Message cannot be null.");
-          obj = closure_0(closure_3[26]);
-          obj1 = { messageId: firstMessage.id, channelId: threadId, emoji: threadId.emoji, reactions: firstMessage.reactions };
-          handleViewReactionsResult = obj.handleViewReactions(obj1);
-          return;
-        }
-      }
-      cResult[11] = threadId;
-      cResult[12] = N;
-    } else {
-      class N {
-        constructor(arg0) {
-          firstMessage = closure_9.getMessage(threadId).firstMessage;
-          tmp = closure_1(closure_3[12])(null != firstMessage, "[Forum Post Handlers] Message cannot be null.");
-          obj = closure_0(closure_3[26]);
-          obj1 = { messageId: firstMessage.id, channelId: threadId, emoji: threadId.emoji, reactions: firstMessage.reactions };
-          handleViewReactionsResult = obj.handleViewReactions(obj1);
-          return;
-        }
-      }
-    }
-    if (cResult[13] !== threadId) {
-      class U {
-        constructor() {
-          firstMessage = closure_9.getMessage(threadId).firstMessage;
-          tmp = closure_1(closure_3[12])(null != firstMessage, "[Forum Post Handlers] Message cannot be null.");
-          obj = closure_0(closure_3[26]);
-          obj1 = { messageId: firstMessage.id, channelId: threadId, reactions: firstMessage.reactions };
-          handleViewReactionsResult = obj.handleViewReactions(obj1);
-          return;
-        }
-      }
-      cResult[13] = threadId;
-      cResult[14] = U;
-    } else {
-      class U {
-        constructor() {
-          firstMessage = closure_9.getMessage(threadId).firstMessage;
-          tmp = closure_1(closure_3[12])(null != firstMessage, "[Forum Post Handlers] Message cannot be null.");
-          obj = closure_0(closure_3[26]);
-          obj1 = { messageId: firstMessage.id, channelId: threadId, reactions: firstMessage.reactions };
-          handleViewReactionsResult = obj.handleViewReactions(obj1);
-          return;
-        }
-      }
-    }
-    if (cResult[15] === NORMAL) {
-      class U {
-        constructor() {
-          firstMessage = closure_9.getMessage(threadId).firstMessage;
-          tmp = closure_1(closure_3[12])(null != firstMessage, "[Forum Post Handlers] Message cannot be null.");
-          obj = closure_0(closure_3[26]);
-          obj1 = { messageId: firstMessage.id, channelId: threadId, reactions: firstMessage.reactions };
-          handleViewReactionsResult = obj.handleViewReactions(obj1);
-          return;
-        }
-      }
-      if (cResult[18] === tmp7) {
-        class U {
-          constructor() {
-            firstMessage = closure_9.getMessage(threadId).firstMessage;
-            tmp = closure_1(closure_3[12])(null != firstMessage, "[Forum Post Handlers] Message cannot be null.");
-            obj = closure_0(closure_3[26]);
-            obj1 = { messageId: firstMessage.id, channelId: threadId, reactions: firstMessage.reactions };
-            handleViewReactionsResult = obj.handleViewReactions(obj1);
-            return;
-          }
-        }
-      }
-      let obj2 = { onTapMedia: tmp4, onTapPost: tmp5, onLongTapPost: tmp7, onTapReaction: tmp8, onLongTapReaction: tmp10, onTapReactionCount: tmp11, onTapAddReaction: tmp12, onTapMostRecentMessage: tmp6 };
-      cResult[18] = tmp7;
-      cResult[19] = tmp10;
-      class H {
-        constructor() {
-          tmp = threadId;
-          channel = closure_6.getChannel(threadId);
-          tmp3 = closure_3;
-          tmp4 = closure_1(closure_3[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-          channel1 = closure_6.getChannel(channel.parent_id);
-          tmp6 = closure_1(closure_3[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-          messageState = closure_10.getMessageState(threadId);
-          message = messageState.message;
-          if (messageState.loaded) {
-            if (null != message) {
-              tmp9 = closure_0;
-              obj = closure_0(tmp3[22]);
-              obj1 = { guildId: null, channelId: null, postId: null, location: null };
-              ({ guild_id: obj2.guildId, id: obj2.channelId } = channel1);
-              obj1.postId = tmp;
-              obj6 = { page: null, section: null };
-              tmp10 = AnalyticsPages;
-              obj6.page = AnalyticsPages.GUILD_CHANNEL;
-              tmp11 = AnalyticsSections;
-              obj6.section = AnalyticsSections.FORUM_CHANNEL_POST;
-              obj1.location = obj6;
-              result = obj.trackForumPostClicked(obj1);
-              obj4 = closure_0(tmp3[23]);
-              obj7 = { source: null, navigationReplace: false };
-              tmp13 = closure_15;
-              obj7.source = closure_15.FORUM;
-              result1 = obj4.transitionToThreadMessage(channel, message.id, obj7);
-            }
-            return;
-          }
-          tmp8 = closure_2();
-          return;
-        }
-      }
-      cResult[21] = tmp4;
-      cResult[22] = tmp6;
-      cResult[23] = tmp5;
-      cResult[24] = tmp8;
-      cResult[25] = tmp11;
-      cResult[26] = obj2;
-    }
-    const fn2 = function k() {
-      const channel = ChannelStore.getChannel(threadId);
-      _modDef38(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-      const firstMessage = ForumPostMessagesStore.getMessage(threadId).firstMessage;
-      _modDef38(null != firstMessage, "[Forum Post Handlers] Message cannot be null.");
-      const result = messages_MessagesUtils.handleAddOrRemoveReaction(firstMessage.id, channel, null, NORMAL === MessageReactionsTypes.ReactionTypes.BURST);
-    };
-    cResult[15] = NORMAL;
-    cResult[16] = threadId;
-    cResult[17] = fn2;
-    tmp12 = fn2;
-  }
-  class H {
-    constructor() {
-      tmp = threadId;
-      channel = closure_6.getChannel(threadId);
-      tmp3 = closure_3;
-      tmp4 = closure_1(closure_3[12])(null != channel, "[Forum Post Handlers] Thread cannot be null.");
-      channel1 = closure_6.getChannel(channel.parent_id);
-      tmp6 = closure_1(closure_3[12])(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
-      messageState = closure_10.getMessageState(threadId);
-      message = messageState.message;
-      if (messageState.loaded) {
-        if (null != message) {
-          tmp9 = closure_0;
-          obj = closure_0(tmp3[22]);
-          obj1 = { guildId: null, channelId: null, postId: null, location: null };
-          ({ guild_id: obj2.guildId, id: obj2.channelId } = channel1);
-          obj1.postId = tmp;
-          obj6 = { page: null, section: null };
-          tmp10 = AnalyticsPages;
-          obj6.page = AnalyticsPages.GUILD_CHANNEL;
-          tmp11 = AnalyticsSections;
-          obj6.section = AnalyticsSections.FORUM_CHANNEL_POST;
-          obj1.location = obj6;
-          result = obj.trackForumPostClicked(obj1);
-          obj4 = closure_0(tmp3[23]);
-          obj7 = { source: null, navigationReplace: false };
-          tmp13 = closure_15;
-          obj7.source = closure_15.FORUM;
-          result1 = obj4.transitionToThreadMessage(channel, message.id, obj7);
-        }
-        return;
-      }
-      tmp8 = closure_2();
-      return;
-    }
-  }
-  cResult[4] = tmp5;
-  cResult[5] = threadId;
-  cResult[6] = H;
-}) : ((threadId) => {
+export default function useNativeForumPostHandlers(threadId) {
   threadId = threadId.threadId;
   let NORMAL = threadId.reactionType;
   if (NORMAL === undefined) {
-    NORMAL = threadId(8042).ReactionTypes.NORMAL;
+    NORMAL = threadId(8037).ReactionTypes.NORMAL;
   }
   const items = [threadId];
   const items1 = [threadId];
@@ -497,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
     const channelIcon = utils_ChannelUtils.getChannelIcon(channel);
     const mapped = mediaItems.map((src) => {
       src = src.src;
-      const str = NORMAL(1370).toURLSafe(src);
+      const str = NORMAL(1366).toURLSafe(src);
       let tmp = null != str;
       if (src.srcIsAnimated) {
         if (tmp) {
@@ -510,16 +65,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
           tmp = endsWithResult;
         }
         if (tmp) {
-          let isAttachmentPathUrlResult = src.type === threadId(8178).ForumPostMediaTypes.ATTACHMENT;
+          let isAttachmentPathUrlResult = src.type === threadId(8173).ForumPostMediaTypes.ATTACHMENT;
           if (isAttachmentPathUrlResult) {
-            isAttachmentPathUrlResult = callback1(10236).isAttachmentPathUrl(str);
-            const obj5 = callback1(10236);
+            isAttachmentPathUrlResult = callback1(10239).isAttachmentPathUrl(str);
+            const obj5 = callback1(10239);
           }
           if (!isAttachmentPathUrlResult) {
-            let result = src.type === tmp6(8178).ForumPostMediaTypes.EMBED;
+            let result = src.type === tmp6(8173).ForumPostMediaTypes.EMBED;
             if (result) {
-              result = callback1(10236).isExternalProxiedAttachmentUrl(str);
-              const obj6 = callback1(10236);
+              result = callback1(10239).isExternalProxiedAttachmentUrl(str);
+              const obj6 = callback1(10239);
             }
             isAttachmentPathUrlResult = result;
           }
@@ -564,8 +119,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
   }, items);
   const callback1 = noop.useCallback(() => {
     if (obj.isAndroid()) {
-      const result = tmp(4758).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-      const tmpResult = tmp(4758);
+      const result = tmp(4756).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+      const tmpResult = tmp(4756);
     }
     const channel = ChannelStore.getChannel(threadId);
     _modDef38(null != channel, "[Forum Post Handlers] Thread cannot be null.");
@@ -667,4 +222,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
     }, items7),
     onTapMostRecentMessage: callback2
   };
-});
+};

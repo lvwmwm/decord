@@ -1,15 +1,15 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 9164
+// Function ID: 9165
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 5761, 1078, 3, 577, 1275, 4691, 9163, 1235, 2]
+// Dependencies: [5, 5759, 1074, 3, 573, 1271, 4688, 9165, 1231, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9162 (VirtualCurrencyActionCreators)
+// Module 9164 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SKUStore from "SKUStore" /* 5761 */;
+import SKUStore from "SKUStore" /* 5759 */;
 
 require = fn;
 function fetchVirtualCurrencyBalance() {
@@ -33,7 +33,7 @@ let closure_8 = async function _fetchVirtualCurrencyBalance(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -116,7 +116,7 @@ let closure_9 = async function _redeemVirtualCurrencyForSKU(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -153,7 +153,7 @@ let closure_9 = async function _redeemVirtualCurrencyForSKU(arg0, value) {
           closure_129_13 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -213,7 +213,7 @@ let closure_9 = async function _redeemVirtualCurrencyForSKU(arg0, value) {
           tmp69(closure_129_13);
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       } else if (arg0 === 1) {
         c6 = 3;
         throw value;
@@ -261,7 +261,7 @@ let closure_9 = async function _redeemVirtualCurrencyForSKU(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 let closure_6 = new LoggerDefault("VirtualCurrencyActionCreators");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/virtual_currency/VirtualCurrencyActionCreators.tsx");

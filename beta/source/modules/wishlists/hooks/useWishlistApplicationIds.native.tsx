@@ -1,29 +1,19 @@
-// Module ID: 11129
-// Function ID: 11130
+// Module ID: 11090
+// Function ID: 11091
 // Name: useWishlistApplicationIds
-// Dependencies: [19, 1078, 558, 568, 2]
+// Dependencies: [19, 1074, 2]
+// Exports: useWishlistApplicationIds
 
-// Module 11129 (useWishlistApplicationIds)
-import c from "c" /* 568 */;
+// Module 11090 (useWishlistApplicationIds)
 import noop from "module_19" /* 19 */;
 
-require = fn;
-let closure_3 = fn(1078).COLLECTIBLES_APPLICATION_ID;
-const ReactCompilerGating = fn(558);
+let closure_1 = fn(1074).COLLECTIBLES_APPLICATION_ID;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/wishlists/hooks/useWishlistApplicationIds.native.tsx");
 
-export const useWishlistApplicationIds = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [closure_3];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => noop.useMemo(() => {
-  const items = [closure_1_3];
-  return items;
-}, []));
+export const useWishlistApplicationIds = function useWishlistApplicationIds() {
+  return noop.useMemo(() => {
+    const items = [closure_1_1];
+    return items;
+  }, []);
+};

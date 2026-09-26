@@ -1,12 +1,12 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15871
+// Function ID: 15872
 // Name: GeneratedTestUsersStore
-// Dependencies: [1390, 504, 577, 2]
+// Dependencies: [1386, 504, 573, 2]
 
-// Module 15867 (GeneratedTestUsersStore)
+// Module 15871 (GeneratedTestUsersStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import UserRecord from "UserRecord" /* 1390 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import UserRecord from "UserRecord" /* 1386 */;
 
 function handleAddUser(id) {
   if (null == closure_1.users) {
@@ -33,7 +33,7 @@ prototype["initialize"] = function initialize(pools) {
     if (null != pools.users) {
       const _Map2 = Map;
       const _Object2 = Object;
-      const map1 = new Map(Object.entries(pools.users));
+      map1 = new Map(Object.entries(pools.users));
       closure_1.users = map1;
     }
   }

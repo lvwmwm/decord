@@ -1,44 +1,22 @@
-// Module ID: 15260
-// Function ID: 15261
+// Module ID: 15264
+// Function ID: 15265
 // Name: PremiumSettingScreen
-// Dependencies: [19, 21, 558, 568, 7272, 1488, 7268, 7689, 2]
+// Dependencies: [19, 21, 7271, 1484, 7267, 7687, 2]
+// Exports: default
 
-// Module 15260 (PremiumSettingScreen)
-import c from "c" /* 568 */;
-import useNavigation from "useNavigation" /* 1488 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7272 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7689 */;
+// Module 15264 (PremiumSettingScreen)
+import useNavigation from "useNavigation" /* 1484 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7267 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7271 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7687 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumSettingScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  const stackNavigation = useNavigation.useStackNavigation();
-  let close;
-  if (!stackNavigation.canGoBack()) {
-    close = UserSettingsModalActionCreatorsDefault.close;
-  }
-  if (cResult[0] === close) {
-    if (cResult[1] === settingNavigationRoute.params) {
-      let tmp6 = cResult[2];
-    }
-    return tmp6;
-  }
-  const obj4 = { onClose: close };
-  const merged = Object.assign(settingNavigationRoute.params);
-  const tmp9 = jsx(UserSettingsPremiumDefault, { onClose: close });
-  cResult[0] = close;
-  cResult[1] = settingNavigationRoute.params;
-  cResult[2] = tmp9;
-  tmp6 = tmp9;
-}) : (() => {
+export default function PremiumScreen() {
   const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
   const stackNavigation = useNavigation.useStackNavigation();
   let close;
@@ -48,4 +26,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { onClose: close };
   const merged = Object.assign(settingNavigationRoute.params);
   return jsx(UserSettingsPremiumDefault, { onClose: close });
-});
+};

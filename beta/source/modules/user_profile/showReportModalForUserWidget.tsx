@@ -1,12 +1,12 @@
-// Module ID: 8974
-// Function ID: 8975
+// Module ID: 8976
+// Function ID: 8977
 // Name: showReportModalForUserWidget
-// Dependencies: [5017, 7906, 8937, 7442, 2]
+// Dependencies: [5015, 7901, 8939, 7440, 2]
 // Exports: showReportModalForUserWidget
 
-// Module 8974 (showReportModalForUserWidget)
-import ReportModals from "ReportModals" /* 8937 */;
-import ApplicationStore from "ApplicationStore" /* 5017 */;
+// Module 8976 (showReportModalForUserWidget)
+import ReportModals from "ReportModals" /* 8939 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
 
 const require = globalThis.__r;
 
@@ -16,11 +16,11 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/showReportModalForUserWidget.tsx");
 
 export const USER_PROFILE_WIDGET_REPORT_ENTRYPOINT = "user_profile_widget";
-export const showReportModalForUserWidget = function showReportModalForUserWidget(userId, widget) {
-  _require = userId;
-  importDefault = widget;
-  if (widget instanceof require("UserProfileApplicationWidgetTypes").ApplicationWidget) {
-    applicationId = widget.applicationId;
+export const showReportModalForUserWidget = function showReportModalForUserWidget(user_id, applicationId) {
+  _require = user_id;
+  importDefault = applicationId;
+  if (applicationId instanceof require("UserProfileApplicationWidgetTypes").ApplicationWidget) {
+    applicationId = applicationId.applicationId;
     if (ApplicationStore.isHydrated(applicationId)) {
       let application = obj2.getApplication(applicationId);
       let prop;
@@ -32,7 +32,7 @@ export const showReportModalForUserWidget = function showReportModalForUserWidge
         let result = tmp(tmp2[2]).showReportModalForApp(obj);
         const tmpResult = tmp(tmp2[2]);
       } else {
-        let result1 = tmp(tmp2[2]).showReportModalForWidget(userId, widget);
+        let result1 = tmp(tmp2[2]).showReportModalForWidget(user_id, applicationId);
         const tmpResult3 = tmp(tmp2[2]);
       }
     } else {
@@ -67,7 +67,7 @@ export const showReportModalForUserWidget = function showReportModalForUserWidge
     }
     obj2 = ApplicationStore;
   } else {
-    const result2 = tmp(tmp2[2]).showReportModalForWidget(userId, widget);
+    const result2 = tmp(tmp2[2]).showReportModalForWidget(user_id, applicationId);
     const tmpResult4 = tmp(tmp2[2]);
   }
 };

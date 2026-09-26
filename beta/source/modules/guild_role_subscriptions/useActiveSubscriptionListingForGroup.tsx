@@ -1,267 +1,25 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16890
+// Function ID: 16891
 // Name: useActiveSubscriptionListingForGroup
-// Dependencies: [19, 4455, 4456, 4425, 1078, 558, 568, 504, 15483, 7533, 2]
+// Dependencies: [19, 4451, 4452, 4421, 1074, 504, 15487, 7531, 2]
+// Exports: default
 
-// Module 16900 (useActiveSubscriptionListingForGroup)
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7533 */;
-import subscriptionUtils from "subscriptionUtils" /* 15483 */;
+// Module 16890 (useActiveSubscriptionListingForGroup)
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7531 */;
+import subscriptionUtils from "subscriptionUtils" /* 15487 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4455 */;
-import SubscriptionStore from "SubscriptionStore" /* 4456 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4425 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4451 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4421 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SubscriptionTypes = fn(1078).SubscriptionTypes;
-const ReactCompilerGating = fn(558);
+const SubscriptionTypes = fn(1074).SubscriptionTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useActiveSubscriptionListingForGroup.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(21);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [stateFromStores1];
-    class S {
-      constructor() {
-        return closure_4.getSubscriptions();
-      }
-    }
-    cResult[0] = items;
-    cResult[1] = S;
-    tmp6 = items;
-    tmp7 = S;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  let obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(tmp6, tmp7);
-  if (null != stateFromStores) {
-    if (cResult[3] !== stateFromStores) {
-      let obj2 = {};
-      const _Object = Object;
-      const values = Object.values(stateFromStores);
-      class S {
-        constructor() {
-          return closure_4.getSubscriptions();
-        }
-      }
-      for (const item10048 of values) {
-        let tmp14 = item10048;
-        if (item10048.type === SubscriptionTypes.GUILD) {
-          class S {
-            constructor() {
-              return closure_4.getSubscriptions();
-            }
-          }
-          let obj5 = require("subscriptionUtils");
-          obj2[obj5.getRoleSubscriptionPlanId(tmp14)] = tmp14;
-        }
-        class S {
-          constructor() {
-            return closure_4.getSubscriptions();
-          }
-        }
-      }
-      cResult[3] = stateFromStores;
-      cResult[4] = obj2;
-    }
-  } else {
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      cResult[2] = {};
-      class S {
-        constructor() {
-          return closure_4.getSubscriptions();
-        }
-      }
-      const obj3 = {};
-    }
-    class S {
-      constructor() {
-        return closure_4.getSubscriptions();
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const items1 = [c5];
-      class S {
-        constructor() {
-          return closure_4.getSubscriptions();
-        }
-      }
-      cResult[5] = items1;
-      let tmp21 = items1;
-    } else {
-      tmp21 = cResult[5];
-    }
-    if (cResult[6] === arg0) {
-      if (cResult[7] === tmp10) {
-        let tmp23 = cResult[8];
-      }
-      class S {
-        constructor() {
-          return closure_4.getSubscriptions();
-        }
-      }
-      const stateFromStoresObject = require("initialize").useStateFromStoresObject(tmp21, tmp23);
-      ({ activeSubscription, activeSubscriptionListing } = stateFromStoresObject);
-      let first;
-      if (activeSubscriptionListing != null) {
-        first = activeSubscriptionListing.subscription_plans[0];
-      }
-      let id;
-      if (first != null) {
-        id = first.id;
-      }
-      let sku_id;
-      if (first != null) {
-        sku_id = first.sku_id;
-      }
-      const _Symbol3 = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const items2 = [sku_id];
-        class S {
-          constructor() {
-            return closure_4.getSubscriptions();
-          }
-        }
-        cResult[9] = items2;
-        let tmp32 = items2;
-      } else {
-        tmp32 = cResult[9];
-      }
-      if (cResult[10] !== id) {
-        class U {
-          constructor() {
-            value = null;
-            if (null != id) {
-              tmp3 = closure_3;
-              value = closure_3.get(tmp);
-            }
-            return value;
-          }
-        }
-        cResult[10] = id;
-        class S {
-          constructor() {
-            return closure_4.getSubscriptions();
-          }
-        }
-        cResult[11] = U;
-        const tmp34 = U;
-      } else {
-        class U {
-          constructor() {
-            value = null;
-            if (null != id) {
-              tmp3 = closure_3;
-              value = closure_3.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      const obj6 = require("initialize");
-      stateFromStores1 = tmp24(504).useStateFromStores(tmp32, tmp34);
-      if (activeSubscriptionListing != null) {
-        class U {
-          constructor() {
-            value = null;
-            if (null != id) {
-              tmp3 = closure_3;
-              value = closure_3.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      c5 = tmp36;
-      if (cResult[12] === undefined) {
-        class U {
-          constructor() {
-            value = null;
-            if (null != id) {
-              tmp3 = closure_3;
-              value = closure_3.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      class E {
-        constructor() {
-          isFetchingForSKUResult = null != closure_4;
-          if (!isFetchingForSKUResult) {
-            tmp2 = sku_id;
-            isFetchingForSKUResult = null == sku_id;
-          }
-          if (!isFetchingForSKUResult) {
-            tmp3 = closure_3;
-            tmp4 = sku_id;
-            isFetchingForSKUResult = closure_3.isFetchingForSKU(sku_id);
-          }
-          if (!isFetchingForSKUResult) {
-            tmp5 = closure_0;
-            tmp6 = closure_1;
-            obj = closure_0(closure_1[9]);
-            tmp7 = sku_id;
-            tmp8 = soft_deleted;
-            tmp9 = obj;
-            subscriptionPlansForSKU = obj.fetchSubscriptionPlansForSKU(sku_id, undefined, undefined, soft_deleted);
-          }
-          return;
-        }
-      }
-      const items3 = [stateFromStores1, sku_id, undefined];
-      cResult[12] = undefined;
-      cResult[13] = stateFromStores1;
-      cResult[14] = sku_id;
-      cResult[15] = E;
-      cResult[16] = items3;
-      const tmp24Result = tmp24(504);
-    }
-    const fn = function h() {
-      let tmp2 = null;
-      let subscriptionGroupListing = null;
-      if (null != closure_0) {
-        subscriptionGroupListing = GuildRoleSubscriptionsStore.getSubscriptionGroupListing(tmp3);
-      }
-      let prop;
-      if (subscriptionGroupListing != null) {
-        prop = subscriptionGroupListing.subscription_listings_ids;
-      }
-      if (prop == null) {
-        prop = [];
-      }
-      for (const item10017 of prop) {
-        let subscriptionListing = GuildRoleSubscriptionsStore.getSubscriptionListing(item10017);
-        id = undefined;
-        if (subscriptionListing != null) {
-          id = subscriptionListing.subscription_plans[0].id;
-        }
-        if (null != id) {
-          let tmp13 = dependencyMap[tmp10];
-          if (null != tmp13) {
-            tmp2 = tmp13;
-            let tmp = subscriptionListing;
-            obj.return();
-            break;
-          }
-          let obj2 = { activeSubscription: tmp2, activeSubscriptionListing: tmp };
-          return obj2;
-        }
-        continue;
-      }
-    };
-    cResult[6] = arg0;
-    cResult[7] = tmp10;
-    cResult[8] = fn;
-    tmp23 = fn;
-  }
-}) : ((arg0) => {
+export default function useActiveSubscriptionListingForGroup(arg0) {
   _require = arg0;
   const items = [sku_id];
   stateFromStores = require("initialize").useStateFromStores(items, () => sku_id.getSubscriptions());
@@ -337,7 +95,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj3 = require("initialize");
   const items3 = [id];
-  activeSubscriptionPlanFromStore = tmp(tmp2[7]).useStateFromStores(items3, () => {
+  activeSubscriptionPlanFromStore = tmp(tmp2[5]).useStateFromStores(items3, () => {
     value = null;
     if (null != id) {
       value = SubscriptionPlanStore.get(tmp);
@@ -363,4 +121,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }, items4);
   return { activeSubscription: activeSubscription.activeSubscription, activeSubscriptionListing, activeSubscriptionPlanFromStore };
-});
+};

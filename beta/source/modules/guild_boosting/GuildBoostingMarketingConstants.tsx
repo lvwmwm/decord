@@ -1,13 +1,13 @@
-// Module ID: 12766
-// Function ID: 12767
+// Module ID: 12849
+// Function ID: 12850
 // Name: GuildBoostingMarketingConstants
-// Dependencies: [1078, 1378, 4684, 1119, 2]
+// Dependencies: [1074, 1374, 4681, 1115, 2]
 
-// Module 12766 (GuildBoostingMarketingConstants)
-import util from "util" /* 1119 */;
-import PremiumConstants from "PremiumConstants" /* 1378 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4684 */;
-import Constants from "Constants" /* 1078 */;
+// Module 12849 (GuildBoostingMarketingConstants)
+import util from "util" /* 1115 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4681 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const BoostedGuildTiers = Constants.BoostedGuildTiers;

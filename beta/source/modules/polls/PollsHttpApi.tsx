@@ -1,10 +1,10 @@
-// Module ID: 11888
-// Function ID: 11889
+// Module ID: 12008
+// Function ID: 12009
 // Name: PollsHttpApi
-// Dependencies: [5, 1078, 1275, 4691, 2]
+// Dependencies: [5, 1074, 1271, 4688, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 11888 (PollsHttpApi)
+// Module 12008 (PollsHttpApi)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_4 = async function _submitPollVote(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -41,7 +41,7 @@ let closure_4 = async function _submitPollVote(arg0, value) {
           ({ channelId: closure_129_0, messageId: closure_129_1, answerIds: closure_129_2 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {
@@ -78,7 +78,7 @@ let closure_4 = async function _submitPollVote(arg0, value) {
       } else {
         c4 = 0;
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp21) {
       closure_3 = tmp21;
@@ -102,7 +102,7 @@ let closure_5 = async function _endPollEarly(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -123,7 +123,7 @@ let closure_5 = async function _endPollEarly(arg0, value) {
           ({ channelId: closure_129_0, messageId: closure_129_1 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {
@@ -158,7 +158,7 @@ let closure_5 = async function _endPollEarly(arg0, value) {
       } else {
         c4 = 0;
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp28) {
       closure_3 = tmp28;
@@ -171,7 +171,7 @@ let closure_5 = async function _endPollEarly(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/polls/PollsHttpApi.tsx");
 

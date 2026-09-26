@@ -1,93 +1,111 @@
 // Module ID: 5480
 // Function ID: 5481
-// Dependencies: [5481]
+// Dependencies: [5479]
 
 // Module 5480
-import _modDef5481 from "module_5481" /* 5481 */;
+import _modDef5479 from "module_5479" /* 5479 */;
 
 importDefault = arg2;
 const dependencyMap = arg6;
 
 export default {
-  read(dataView, sum) {
-    const shortAt = _modDef5481.getShortAt(dataView, sum);
-    let tmp4;
-    if (8 <= shortAt) {
-      const byteAt = tmp(5481).getByteAt(dataView, sum + 7);
-      const obj2 = { value: byteAt, description: "" + byteAt };
-      tmp4 = obj2;
-      const tmpResult = tmp(5481);
-    }
+  read(buffer, sum) {
+    const shortAt = _modDef5479.getShortAt(buffer, sum);
     let tmp6;
-    if (3 <= shortAt) {
-      const byteAt1 = tmp(5481).getByteAt(dataView, sum + 2);
-      const obj3 = { value: byteAt1, description: "" + byteAt1 };
-      tmp6 = obj3;
-      const tmpResult4 = tmp(5481);
-    }
-    const obj4 = { "Bits Per Sample": tmp6, "Image Height": null, "Image Width": null, "Color Components": null, Subsampling: null };
-    let tmp8;
-    if (5 <= shortAt) {
-      const shortAt1 = tmp(5481).getShortAt(dataView, sum + 3);
-      const obj5 = { value: shortAt1, description: null };
+    if (15 <= shortAt) {
+      const byteAt = tmp3(5479).getByteAt(buffer, sum + 14);
+      const obj2 = { value: byteAt, description: null };
       const _HermesInternal = HermesInternal;
-      obj5.description = "" + shortAt1 + "px";
-      tmp8 = obj5;
-      const tmpResult5 = tmp(5481);
+      obj2.description = "" + byteAt + "px";
+      tmp6 = obj2;
+      const tmp3Result = tmp3(5479);
     }
-    obj4["Image Height"] = tmp8;
-    let tmp11;
-    if (7 <= shortAt) {
-      const shortAt2 = tmp(5481).getShortAt(dataView, sum + 5);
-      const obj6 = { value: shortAt2, description: null };
+    let tmp9;
+    if (16 <= shortAt) {
+      const byteAt1 = tmp3(5479).getByteAt(buffer, sum + 15);
+      const obj3 = { value: byteAt1, description: null };
       const _HermesInternal2 = HermesInternal;
-      obj6.description = "" + shortAt2 + "px";
-      tmp11 = obj6;
-      const tmpResult6 = tmp(5481);
+      obj3.description = "" + byteAt1 + "px";
+      tmp9 = obj3;
+      const tmp3Result7 = tmp3(5479);
     }
-    obj4["Image Width"] = tmp11;
-    obj4["Color Components"] = tmp4;
-    let tmp14 = tmp4;
-    if (tmp4) {
-      value = tmp4.value;
-      let tmp15;
-      if (8 + 3 * value <= shortAt) {
-        const items = [];
-        for (let num6 = 0; num6 < value; num6 = num6 + 1) {
-          sum = sum + 8 + 3 * num6;
-          let obj11 = _modDef5481;
-          let items1 = [obj11.getByteAt(dataView, sum), , ];
-          let obj12 = _modDef5481;
-          items1[1] = obj12.getByteAt(dataView, sum + 1);
-          let obj13 = _modDef5481;
-          items1[2] = obj13.getByteAt(dataView, sum + 2);
-          let arr = items.push(items1);
-        }
-        const obj7 = { value: items, description: null };
-        let str6 = "";
-        if (items.length > 1) {
-          closure_0 = { 1: "Y", 2: "Cb", 3: "Cr", 4: "I", 5: "Q" };
-          const mapped = items.map((item) => closure_0[item[0]]);
-          let str7 = "";
-          const joined = mapped.join("");
-          if (0 !== items.length) {
-            str7 = "";
-            if (undefined !== items[0][1]) {
-              const obj8 = { 17: "4:4:4 (1 1)", 18: "4:4:0 (1 2)", 20: "4:4:1 (1 4)", 33: "4:2:2 (2 1)", 34: "4:2:0 (2 2)", 36: "4:2:1 (2 4)", 65: "4:1:1 (4 1)", 66: "4:1:0 (4 2)" };
-              str7 = "";
-              if (undefined !== obj8[items[0][1]]) {
-                str7 = obj8[items[0][1]];
-              }
-            }
+    let tmp12;
+    if (9 <= shortAt) {
+      const byteAt2 = tmp3(5479).getByteAt(buffer, sum + 7);
+      const tmp3Result8 = tmp3(5479);
+      const byteAt3 = tmp3(5479).getByteAt(buffer, sum + 7 + 1);
+      const obj4 = { value: 256 * byteAt2 + byteAt3, description: `${tmp13}.${tmp14}` };
+      tmp12 = obj4;
+      const tmp3Result9 = tmp3(5479);
+    }
+    const obj5 = { "JFIF Version": tmp12, "Resolution Unit": null, XResolution: null, YResolution: null, "JFIF Thumbnail Width": null, "JFIF Thumbnail Height": null };
+    let tmp15;
+    if (10 <= shortAt) {
+      const byteAt4 = tmp3(5479).getByteAt(buffer, sum + 9);
+      const obj6 = { value: byteAt4, description: null };
+      let str6 = "None";
+      if (0 !== byteAt4) {
+        let str7 = "inches";
+        if (1 !== byteAt4) {
+          let str8 = "Unknown";
+          if (2 === byteAt4) {
+            str8 = "cm";
           }
-          str6 = joined + str7;
+          str7 = str8;
         }
-        obj7.description = str6;
-        tmp15 = obj7;
+        str6 = str7;
       }
-      tmp14 = tmp15;
+      obj6.description = str6;
+      tmp15 = obj6;
+      const tmp3Result10 = tmp3(5479);
     }
-    obj4.Subsampling = tmp14;
-    return obj4;
+    obj5["Resolution Unit"] = tmp15;
+    let tmp17;
+    if (12 <= shortAt) {
+      const shortAt1 = tmp3(5479).getShortAt(buffer, sum + 10);
+      const obj7 = { value: shortAt1, description: "" + shortAt1 };
+      tmp17 = obj7;
+      const tmp3Result11 = tmp3(5479);
+    }
+    obj5.XResolution = tmp17;
+    let tmp19;
+    if (14 <= shortAt) {
+      const shortAt2 = tmp3(5479).getShortAt(buffer, sum + 12);
+      const obj8 = { value: shortAt2, description: "" + shortAt2 };
+      tmp19 = obj8;
+      const tmp3Result12 = tmp3(5479);
+    }
+    obj5.YResolution = tmp19;
+    obj5["JFIF Thumbnail Width"] = tmp6;
+    obj5["JFIF Thumbnail Height"] = tmp9;
+    if (undefined !== tmp6) {
+      if (undefined !== tmp9) {
+        const result = 3 * tmp6.value * tmp9.value;
+        let tmp22;
+        if (0 !== result) {
+          if (16 + result <= shortAt) {
+            buffer = buffer.buffer;
+            const obj9 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
+            tmp22 = obj9;
+          }
+        }
+        if (tmp22) {
+          obj5["JFIF Thumbnail"] = tmp22;
+        }
+      }
+    }
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      while (keys[16] !== undefined) {
+        if (undefined !== obj5[tmp24]) {
+          continue;
+        } else {
+          delete tmp[tmp2];
+          continue;
+        }
+        continue;
+      }
+    }
+    return obj5;
   }
 };

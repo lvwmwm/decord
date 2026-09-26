@@ -1,10 +1,10 @@
-// Module ID: 14304
-// Function ID: 14305
+// Module ID: 14294
+// Function ID: 14295
 // Name: DistributedClipsExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 14304 (DistributedClipsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 14294 (DistributedClipsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-05-distributed-clips", defaultConfig: { enableDistributedClips: false }, variations: null };

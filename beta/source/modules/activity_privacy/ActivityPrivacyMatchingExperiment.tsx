@@ -1,41 +1,24 @@
-// Module ID: 16233
-// Function ID: 16234
+// Module ID: 16237
+// Function ID: 16238
 // Name: ActivityPrivacyMatchingExperiment
-// Dependencies: [1438, 558, 568, 13425, 2]
-// Exports: getIsInActivityPrivacyUpsellExperiment
+// Dependencies: [1434, 13415, 2]
+// Exports: getIsInActivityPrivacyUpsellExperiment, useIsInActivityPrivacyCopyExperiment
 
-// Module 16233 (ActivityPrivacyMatchingExperiment)
-import c from "c" /* 568 */;
-import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 13425 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16237 (ActivityPrivacyMatchingExperiment)
+import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 13415 */;
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ApexExperiment.createApexExperiment({ name: "2026-02-activity-privacy-matching", kind: "user", defaultConfig: { copyChanges: false, upsell: false }, variations: { 0: { copyChanges: false, upsell: false }, 1: { copyChanges: true, upsell: false }, 2: { copyChanges: true, upsell: true } } });
 const result = size.fileFinishedImporting("modules/activity_privacy/ActivityPrivacyMatchingExperiment.tsx");
 
-export const useIsInActivityPrivacyCopyExperiment = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  let copyChanges = PrivateProfilesExperiment.useIsInPrivateProfilesExperiment(location);
-  if (cResult[0] !== location) {
-    const obj3 = { location };
-    cResult[0] = location;
-    cResult[1] = obj3;
-    let tmp2 = obj3;
-  } else {
-    tmp2 = cResult[1];
-  }
-  if (!copyChanges) {
-    copyChanges = closure_2.useConfig(tmp2).copyChanges;
-  }
-  return copyChanges;
-}) : ((location) => {
-  let copyChanges = PrivateProfilesExperiment.useIsInPrivateProfilesExperiment(location);
+export const useIsInActivityPrivacyCopyExperiment = function useIsInActivityPrivacyCopyExperiment(ActivityPrivacyDefaultSharingSetting) {
+  let copyChanges = PrivateProfilesExperiment.useIsInPrivateProfilesExperiment(ActivityPrivacyDefaultSharingSetting);
   if (!copyChanges) {
     copyChanges = closure_2.useConfig(obj2).copyChanges;
   }
   return copyChanges;
-});
+};
 export const getIsInActivityPrivacyUpsellExperiment = function getIsInActivityPrivacyUpsellExperiment(ActivityPrivacyDefaultSharingSetting) {
   let upsell = PrivateProfilesExperiment.getIsInPrivateProfilesExperiment(ActivityPrivacyDefaultSharingSetting);
   if (!upsell) {

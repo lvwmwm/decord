@@ -1,14 +1,14 @@
-// Module ID: 7960
-// Function ID: 7961
+// Module ID: 7955
+// Function ID: 7956
 // Name: SlowmodeStore
-// Dependencies: [2045, 4431, 7961, 2040, 577, 1095, 504, 2]
+// Dependencies: [2041, 4427, 7956, 2036, 573, 1091, 504, 2]
 
-// Module 7960 (SlowmodeStore)
+// Module 7955 (SlowmodeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = fn;
 function setCooldown(channel, SendMessage, cooldownMs) {
@@ -53,9 +53,9 @@ const prototype = SlowmodeStore.prototype;
 prototype["initialize"] = function initialize() {
   this.waitFor(ChannelStore, PermissionStore);
 };
-prototype["getSlowmodeCooldownGuess"] = function getSlowmodeCooldownGuess(id, slowmodeType) {
-  let SendMessage = slowmodeType;
-  if (slowmodeType == null) {
+prototype["getSlowmodeCooldownGuess"] = function getSlowmodeCooldownGuess(id, CreateThread) {
+  let SendMessage = CreateThread;
+  if (CreateThread == null) {
     SendMessage = obj.SendMessage;
   }
   let num = 0;
@@ -64,8 +64,8 @@ prototype["getSlowmodeCooldownGuess"] = function getSlowmodeCooldownGuess(id, sl
   }
   return num;
 };
-prototype["isChannelOnCooldown"] = function isChannelOnCooldown(channel, slowmodeType) {
-  return this.getSlowmodeCooldownGuess(channel.id, slowmodeType) > 0 && channel.rateLimitPerUser > 0;
+prototype["isChannelOnCooldown"] = function isChannelOnCooldown(channel, CreateThread) {
+  return this.getSlowmodeCooldownGuess(channel.id, CreateThread) > 0 && channel.rateLimitPerUser > 0;
 };
 SlowmodeStore.displayName = "SlowmodeStore";
 const slowmodeStore = new SlowmodeStore(DispatcherDefault, {

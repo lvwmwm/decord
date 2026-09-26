@@ -1,15 +1,14 @@
-// Module ID: 16894
-// Function ID: 16895
+// Module ID: 16884
+// Function ID: 16885
 // Name: NavigationTTIRegionHierarchy
-// Dependencies: [32, 19, 3, 558, 568, 2]
+// Dependencies: [32, 19, 3, 2]
+// Exports: useNavigationTTIRegionHierarchy
 
-// Module 16894 (NavigationTTIRegionHierarchy)
+// Module 16884 (NavigationTTIRegionHierarchy)
 import LoggerDefault from "Logger" /* 3 */;
-import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
 function getNavigationTTIRegionHierarchyViolation(arg0, arg1, arg2, arg3, arg4) {
   if ("include" === arg0) {
     if (arg3 > 0) {
@@ -63,191 +62,16 @@ function getNavigationTTIRegionHierarchyViolation(arg0, arg1, arg2, arg3, arg4) 
 let obj2 = new LoggerDefault("NavTTIVisualizer");
 obj2.enableNativeLogger(true);
 let context = noop.createContext(null);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/debug/NavigationTTIRegionHierarchy.tsx");
 
 export const NavigationTTIRegionHierarchyContext = context;
 export { getNavigationTTIRegionHierarchyViolation };
-export const useNavigationTTIRegionHierarchy = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(17);
-  ({ name: require, tracking, descendantTracking, hasChildren } = arg0);
-  dependencyMap = noop.useId();
-  context = noop.useContext(c5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o() {
-      return new Map();
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  let num2 = 2;
-  [obj3, noop] = context(noop.useState(first), 2);
-  const tmp4 = context(noop.useState(first), 2);
-  [r10041, obj2] = context(noop.useState(false), 2);
-  let num3;
-  if (context != null) {
-    num3 = context.depth;
-  }
-  if (num3 == null) {
-    num3 = -1;
-  }
-  const sum = num3 + 1;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor(arg0, arg1) {
-        closure_0 = arg0;
-        closure_1 = arg1;
-        tmp = closure_3((get) => {
-          value = get.get(closure_0);
-          if (null == closure_1) {
-            if (null == value) {
-              return get;
-            }
-          }
-          if (null != closure_1) {
-            let included;
-            if (value != null) {
-              included = value.included;
-            }
-            if (included === tmp3.included) {
-              if (value.excluded === tmp3.excluded) {
-                return get;
-              }
-            }
-          }
-          const map = new Map(get);
-          if (null == closure_1) {
-            map.delete(tmp);
-          } else {
-            const result = map.set(tmp, tmp3);
-          }
-          return map;
-        });
-        return;
-      }
-    }
-    cResult[1] = C;
-    let num4 = C;
-  } else {
-    class C {
-      constructor(arg0, arg1) {
-        closure_0 = arg0;
-        closure_1 = arg1;
-        tmp = closure_3((get) => {
-          value = get.get(closure_0);
-          if (null == closure_1) {
-            if (null == value) {
-              return get;
-            }
-          }
-          if (null != closure_1) {
-            let included;
-            if (value != null) {
-              included = value.included;
-            }
-            if (included === tmp3.included) {
-              if (value.excluded === tmp3.excluded) {
-                return get;
-              }
-            }
-          }
-          const map = new Map(get);
-          if (null == closure_1) {
-            map.delete(tmp);
-          } else {
-            const result = map.set(tmp, tmp3);
-          }
-          return map;
-        });
-        return;
-      }
-    }
-  }
-  if (cResult[2] !== sum) {
-    class C {
-      constructor(arg0, arg1) {
-        closure_0 = arg0;
-        closure_1 = arg1;
-        tmp = closure_3((get) => {
-          value = get.get(closure_0);
-          if (null == closure_1) {
-            if (null == value) {
-              return get;
-            }
-          }
-          if (null != closure_1) {
-            let included;
-            if (value != null) {
-              included = value.included;
-            }
-            if (included === tmp3.included) {
-              if (value.excluded === tmp3.excluded) {
-                return get;
-              }
-            }
-          }
-          const map = new Map(get);
-          if (null == closure_1) {
-            map.delete(tmp);
-          } else {
-            const result = map.set(tmp, tmp3);
-          }
-          return map;
-        });
-        return;
-      }
-    }
-    tmp7[0] = num4;
-    tmp7[1] = sum;
-    cResult[num2] = sum;
-    cResult[3] = tmp7;
-  } else {
-    class C {
-      constructor(arg0, arg1) {
-        closure_0 = arg0;
-        closure_1 = arg1;
-        tmp = closure_3((get) => {
-          value = get.get(closure_0);
-          if (null == closure_1) {
-            if (null == value) {
-              return get;
-            }
-          }
-          if (null != closure_1) {
-            let included;
-            if (value != null) {
-              included = value.included;
-            }
-            if (included === tmp3.included) {
-              if (value.excluded === tmp3.excluded) {
-                return get;
-              }
-            }
-          }
-          const map = new Map(get);
-          if (null == closure_1) {
-            map.delete(tmp);
-          } else {
-            const result = map.set(tmp, tmp3);
-          }
-          return map;
-        });
-        return;
-      }
-    }
-  }
-  num4 = 0;
-  c5 = 0;
-  c6 = 0;
-  num2 = obj3.values();
-  const tmp5 = context(noop.useState(false), 2);
-}) : ((name) => {
+export const useNavigationTTIRegionHierarchy = function useNavigationTTIRegionHierarchy(name) {
   name = name.name;
   ({ tracking, descendantTracking, hasChildren } = name);
-  noop = undefined;
+  let regionId;
+  c3 = undefined;
   let depth;
   let updateChild;
   let sum1;
@@ -255,11 +79,11 @@ export const useNavigationTTIRegionHierarchy = ReactCompilerGating.isReactCompil
   let num4;
   let num5;
   let violation;
-  const regionId = noop.useId();
-  context = noop.useContext(depth);
-  [obj2, c3] = context(noop.useState(() => new Map()), 2);
-  const tmp4 = context(noop.useState(false), 2);
-  closure_4 = tmp4[1];
+  regionId = regionId.useId();
+  context = regionId.useContext(c3);
+  [obj2, c3] = name(regionId.useState(() => new Map()), 2);
+  const tmp4 = name(regionId.useState(false), 2);
+  getNavigationTTIRegionHierarchyViolation = tmp4[1];
   let num;
   if (context != null) {
     num = context.depth;
@@ -321,7 +145,7 @@ export const useNavigationTTIRegionHierarchy = ReactCompilerGating.isReactCompil
     num5 = 1;
   }
   const items1 = [excludedDescendants, includedDescendants, num5, num4, context, regionId];
-  const effect = noop.useEffect(() => {
+  const effect = regionId.useEffect(() => {
     if (context != null) {
       obj2 = { included: num4 + sum1, excluded: num5 + sum2 };
       context.updateChild(regionId, obj2);
@@ -334,15 +158,15 @@ export const useNavigationTTIRegionHierarchy = ReactCompilerGating.isReactCompil
       return updateChildResult;
     };
   }, items1);
-  const effect1 = noop.useEffect(() => {
+  const effect1 = regionId.useEffect(() => {
     closure_0 = requestAnimationFrame(() => closure_1_4(true));
     return () => cancelAnimationFrame(closure_0);
   }, []);
   violation = null;
   if (tmp4[0]) {
-    violation = updateChild(tracking, descendantTracking, hasChildren, includedDescendants, excludedDescendants);
+    violation = getNavigationTTIRegionHierarchyViolation(tracking, descendantTracking, hasChildren, includedDescendants, excludedDescendants);
   }
-  noop.useRef(null);
+  regionId.useRef(null);
   const items2 = [name, violation];
   const effect2 = obj3.useEffect(() => {
     let tmp2 = null != violation;
@@ -356,4 +180,4 @@ export const useNavigationTTIRegionHierarchy = ReactCompilerGating.isReactCompil
     }
   }, items2);
   return { regionId, contextValue, includedDescendants, excludedDescendants, depth, violation };
-});
+};

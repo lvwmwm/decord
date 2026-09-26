@@ -1,158 +1,86 @@
 // Module ID: 8803
 // Function ID: 8804
-// Dependencies: [19, 17, 8783, 8771]
-// Exports: default, extractFeBlend, extractFeColorMatrix, extractFeComposite, extractFeGaussianBlur, extractFeMerge, extractFilter, extractIn
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8804, 8798, 8799]
 
 // Module 8803
-import extractOpacityDefault from "extractOpacity" /* 8771 */;
-import extractBrushDefault from "extractBrush" /* 8783 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef8799 from "module_8799" /* 8799 */;
+import _modDef8804 from "module_8804" /* 8804 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const re3 = /\s+/;
-const action = { type: 0, payload: fn(17).processColor("black") };
-
-export default function extractFeFlood(arg0) {
-  ({ floodColor, floodOpacity } = arg0);
-  if (null == floodColor) {
-    let tmp = action;
-  } else {
-    tmp = extractBrushDefault(floodColor);
-  }
-  const obj = { floodColor: tmp };
-  if (null != floodOpacity) {
-    obj.floodOpacity = extractOpacityDefault(floodOpacity);
-  }
-  return obj;
-};
-export const extractFilter = (arg0) => {
-  const size = { x: arg0.x, y: arg0.y, width: arg0.width, height: arg0.height, result: arg0.result };
-  return size;
-};
-export const extractIn = (arg0) => {
-  if (arg0.in) {
-    const obj2 = { in1: arg0.in };
-    let obj = obj2;
-  } else {
-    obj = {};
-  }
-  return obj;
-};
-export const extractFeBlend = (in2) => {
-  const obj = {};
-  if (in2.in2) {
-    obj.in2 = in2.in2;
-  }
-  if (in2.mode) {
-    obj.mode = in2.mode;
-  }
-  return obj;
-};
-export const extractFeColorMatrix = (type) => {
-  const obj = {};
-  if (undefined !== type.values) {
-    const _Array = Array;
-    const values = type.values;
-    if (Array.isArray(type.values)) {
-      obj.values = values.map((item) => {
-        let parsed = item;
-        if (typeof item !== "number") {
-          const _parseFloat = parseFloat;
-          parsed = parseFloat(item);
-        }
-        return parsed;
-      });
-    } else if (typeof values === "number") {
-      const items = [type.values];
-      obj.values = items;
-    } else if (typeof type.values === "string") {
-      const parts = type.values.split(re3);
-      let _parseFloat = parseFloat;
-      const mapped = parts.map(parseFloat);
-      obj.values = mapped.filter((item) => !isNaN(item));
+const FeComposite = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
     } else {
-      const _console = console;
-      console.warn("Invalid value for FeColorMatrix `values` prop");
+      callResult = call(constructResult);
     }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  if (type.type) {
-    obj.type = type.type;
-  }
-  return obj;
-};
-export const extractFeComposite = (arg0) => {
-  closure_0 = arg0;
-  const obj = { in1: arg0.in || "", in2: arg0.in2 || "", operator1: arg0.operator || "over" };
-  const items = ["k1", "k2", "k3", "k4"];
-  const item = items.forEach((item) => {
-    if (undefined !== closure_0[item]) {
-      const _Number = Number;
-      obj[item] = Number(tmp[item]) || 0;
-      const tmp4 = Number(tmp[item]) || 0;
+}
+_possibleConstructorReturnDefault;
+const jsx = fn(21).jsx;
+class FeComposite {
+  constructor() {
+    self = this;
+    tmp = closure_3(this, FeComposite);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(FeComposite);
+    tmp3 = closure_4;
+    if (closure_7()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-  });
-  return obj;
-};
-export const extractFeGaussianBlur = (stdDeviation) => {
-  const obj = {};
-  if (Array.isArray(stdDeviation.stdDeviation)) {
-    const _Number5 = Number;
-    obj.stdDeviationX = Number(stdDeviation.stdDeviation[0]) || 0;
-    const _Number6 = Number;
-    const tmp7 = Number(stdDeviation.stdDeviation[0]) || 0;
-    obj.stdDeviationY = Number(stdDeviation.stdDeviation[1]) || 0;
-    const tmp8 = Number(stdDeviation.stdDeviation[1]) || 0;
-  } else {
-    if (typeof stdDeviation.stdDeviation === "string") {
-      if (str2.match(re3)) {
-        const parts = stdDeviation.stdDeviation.split(tmp9);
-        const _Number3 = Number;
-        obj.stdDeviationX = Number(parts[0]) || 0;
-        const _Number4 = Number;
-        const tmp5 = Number(parts[0]) || 0;
-        obj.stdDeviationY = Number(parts[1]) || 0;
-        const tmp6 = Number(parts[1]) || 0;
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(FeComposite, _modDef8799);
+const entry = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
       }
-      str2 = stdDeviation.stdDeviation;
-      tmp9 = re3;
-    }
-    stdDeviation = stdDeviation.stdDeviation;
-    let tmp = typeof stdDeviation === "number";
-    if (typeof stdDeviation !== "number") {
-      const stdDeviation2 = stdDeviation.stdDeviation;
-      let tmp10 = typeof stdDeviation2 === "string";
-      if (typeof stdDeviation2 === "string") {
-        tmp10 = !stdDeviation.stdDeviation.match(re3);
-      }
-      tmp = tmp10;
-    }
-    if (tmp) {
-      const _Number = Number;
-      obj.stdDeviationX = Number(stdDeviation.stdDeviation) || 0;
-      const _Number2 = Number;
-      const tmp2 = Number(stdDeviation.stdDeviation) || 0;
-      obj.stdDeviationY = Number(stdDeviation.stdDeviation) || 0;
-      const tmp3 = Number(stdDeviation.stdDeviation) || 0;
-    }
+    };
+    const merged = Object.assign(FeComposite(8798).extractFilter(this.props));
+    const obj2 = FeComposite(8798);
+    const merged1 = Object.assign(FeComposite(8798).extractFeComposite(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
-  if (stdDeviation.edgeMode) {
-    obj.edgeMode = stdDeviation.edgeMode;
-  }
-  return obj;
 };
-export const extractFeMerge = (children, parent) => {
-  if (children.children) {
-    const Children = noop.Children;
-    let mapped = Children.map(children.children, (arg0) => noop.cloneElement(arg0, { parent }));
-  } else {
-    mapped = [];
-  }
-  const nodes = [];
-  for (let num = 0; num < length; num = num + 1) {
-    let str = mapped[num].props.in;
-    if (!str) {
-      str = "";
-    }
-    let arr = nodes.push(str);
-  }
-  return { nodes };
-};
+const items = [entry];
+const importDefaultResultResult = _createClass(FeComposite, items);
+importDefaultResultResult.displayName = "FeComposite";
+let obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.k1 = 0;
+obj.k2 = 0;
+obj.k3 = 0;
+obj.k4 = 0;
+importDefaultResultResult.defaultProps = obj;
+
+export default importDefaultResultResult;

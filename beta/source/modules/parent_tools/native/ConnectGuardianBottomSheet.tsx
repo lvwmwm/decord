@@ -1,233 +1,41 @@
-// Module ID: 15156
-// Function ID: 15157
+// Module ID: 15160
+// Function ID: 15161
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7816, 7817, 21, 4790, 580, 558, 568, 565, 4757, 15157, 1119, 2486, 4786, 15158, 5220, 7429, 2]
+// Dependencies: [19, 17, 7811, 7812, 21, 4788, 576, 563, 4755, 15161, 7427, 4784, 1115, 2482, 15162, 5218, 2]
+// Exports: default
 
-// Module 15156 (ConnectGuardianBottomSheet)
-import useStateFromStores from "useStateFromStores" /* 565 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import _modDef2486 from "module_2486" /* 2486 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15157 */;
-import ConnectGuardianCard from "ConnectGuardianCard" /* 15158 */;
+// Module 15160 (ConnectGuardianBottomSheet)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import nativeDefault from "native" /* 576 */;
+import _modDef2482 from "module_2482" /* 2482 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15161 */;
+import ConnectGuardianCard from "ConnectGuardianCard" /* 15162 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7817).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
+let closure_6 = fn(7812).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let c9 = "https://support.discord.com/hc/articles/14155060633623";
-const createStyles = fn(4790);
-let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 }, info: null, centered: null, cardContainer: null };
+const createStyles = fn(4788);
+const obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 }, info: null, centered: null, cardContainer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 obj2.info = { alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj2.centered = { textAlign: "center" };
 obj2.cardContainer = { alignItems: "center" };
-let closure_10 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(31);
-  ({ onRefresh, title, body } = arg0);
-  ({ linkCode, expiresAt } = arg0);
-  const tmp4 = closure_10();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FamilyCenterStore];
-    const fn = function p() {
-      return FamilyCenterStore.getLinkCode();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const stateFromStores = useStateFromStores.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [FamilyCenterStore];
-    class A {
-      constructor() {
-        return closure_1_5.getLinkCodeExpiresAt();
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = A;
-    let tmp10 = A;
-    let tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult = useStateFromStores;
-  let stateFromStores1 = useStateFromStores.useStateFromStores(tmp9, tmp10);
-  if (stateFromStores1 == null) {
-    stateFromStores1 = expiresAt;
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-    cResult[4] = R;
-    class A {
-      constructor() {
-        return closure_1_5.getLinkCodeExpiresAt();
-      }
-    }
-  } else {
-    class R {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-  }
-  useOnNewPendingRequestDefault(tmp14);
-  if (cResult[5] !== title) {
-    class R {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-    if (title == null) {
-      class R {
-        constructor() {
-          obj = closure_1_1(closure_1_2[10]);
-          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-          return;
-        }
-      }
-      const stringResult = obj4.string(tmp15(2486).aCUVfL);
-    }
-    class A {
-      constructor() {
-        return closure_1_5.getLinkCodeExpiresAt();
-      }
-    }
-    cResult[6] = stringResult;
-  } else {
-    class R {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-  }
-  if (cResult[7] === tmp4.centered) {
-    class R {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-    if (cResult[10] !== body) {
-      class R {
-        constructor() {
-          obj = closure_1_1(closure_1_2[10]);
-          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-          return;
-        }
-      }
-      if (body == null) {
-        class R {
-          constructor() {
-            obj = closure_1_1(closure_1_2[10]);
-            hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-            return;
-          }
-        }
-        const obj2 = { link: null };
-        class A {
-          constructor() {
-            return closure_1_5.getLinkCodeExpiresAt();
-          }
-        }
-        obj2.link = link;
-        const formatResult = obj6.format(tmp15(2486)["2O6ltn"], obj2);
-      }
-      class A {
-        constructor() {
-          return closure_1_5.getLinkCodeExpiresAt();
-        }
-      }
-      cResult[11] = formatResult;
-    } else {
-      class R {
-        constructor() {
-          obj = closure_1_1(closure_1_2[10]);
-          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-          return;
-        }
-      }
-    }
-    if (cResult[12] === tmp4.centered) {
-      class R {
-        constructor() {
-          obj = closure_1_1(closure_1_2[10]);
-          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-          return;
-        }
-      }
-      if (cResult[15] === tmp4.info) {
-        class R {
-          constructor() {
-            obj = closure_1_1(closure_1_2[10]);
-            hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-            return;
-          }
-        }
-      }
-      class A {
-        constructor() {
-          return closure_1_5.getLinkCodeExpiresAt();
-        }
-      }
-      const obj3 = { style: tmp4.info, children: null };
-      const items2 = [tmp19, tmp23];
-      obj3.children = items2;
-      const tmp27 = closure_1_8(View, obj3);
-      cResult[15] = tmp4.info;
-      cResult[16] = tmp19;
-      cResult[17] = tmp23;
-      cResult[18] = tmp27;
-    }
-    class A {
-      constructor() {
-        return closure_1_5.getLinkCodeExpiresAt();
-      }
-    }
-    const obj5 = { style: tmp4.centered, variant: "text-md/medium", color: "text-default", children: tmp21 };
-    const tmp24 = React5(tmp(4786).Text, obj5);
-    cResult[12] = tmp4.centered;
-    cResult[13] = tmp21;
-    cResult[14] = tmp24;
-  }
-  const tmp20 = React5(Text_Text.Text, { style: tmp4.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp17 });
-  cResult[7] = tmp4.centered;
-  cResult[8] = tmp17;
-  cResult[9] = tmp20;
-}) : ((arg0) => {
+export default function ConnectGuardianBottomSheet(arg0) {
   ({ title, body } = arg0);
   ({ linkCode, expiresAt, onRefresh } = arg0);
-  const tmp = closure_10();
+  const tmp = closure_9();
   const items = [FamilyCenterStore];
   let stateFromStores = useStateFromStores.useStateFromStores(items, () => FamilyCenterStore.getLinkCode());
   const items1 = [FamilyCenterStore];
@@ -240,40 +48,39 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj4 = { style: tmp.info, children: null };
   const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   if (title == null) {
-    const intl = tmp2(1119).intl;
-    title = intl.string(tmp7(2486).aCUVfL);
+    const intl = tmp2(1115).intl;
+    title = intl.string(tmp7(2482).aCUVfL);
   }
   obj5.children = title;
   const items2 = [React5(Text_Text.Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: null };
   if (body == null) {
-    const intl2 = tmp2(1119).intl;
-    const obj7 = { link };
-    body = intl2.format(tmp7(2486)["2O6ltn"], obj7);
+    const intl2 = tmp2(1115).intl;
+    body = intl2.format(tmp7(2482)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
   obj6.children = body;
   items2[1] = React5(Text_Text.Text, obj6);
   obj4.children = items2;
-  const items3 = [closure_1_8(View, obj4), , ];
-  const obj8 = { style: tmp.cardContainer, children: null };
+  const items3 = [React6(View, obj4), , ];
+  const obj7 = { style: tmp.cardContainer, children: null };
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }
-  const obj9 = { linkCode: stateFromStores, expiresAt: null, onRefresh: null };
+  const obj8 = { linkCode: stateFromStores, expiresAt: null, onRefresh: null };
   if (stateFromStores1 == null) {
     stateFromStores1 = expiresAt;
   }
-  const obj10 = { startExpanded: true, children: null };
-  obj9.expiresAt = stateFromStores1;
-  obj9.onRefresh = onRefresh;
-  obj8.children = React5(ConnectGuardianCard.ConnectGuardianCard, obj9);
-  items3[1] = React5(View, obj8);
-  const obj11 = { variant: "secondary", size: "md", text: null, onPress: null };
-  const intl3 = tmp2(1119).intl;
-  obj11.text = intl3.string(_modDef2486.Hsm5IF);
-  obj11.onPress = callback;
-  items3[2] = React5(components_Button_Button.Button, obj11);
+  const obj9 = { startExpanded: true, children: null };
+  obj8.expiresAt = stateFromStores1;
+  obj8.onRefresh = onRefresh;
+  obj7.children = React5(ConnectGuardianCard.ConnectGuardianCard, obj8);
+  items3[1] = React5(View, obj7);
+  const obj10 = { variant: "secondary", size: "md", text: null, onPress: null };
+  const intl3 = tmp2(1115).intl;
+  obj10.text = intl3.string(_modDef2482.Hsm5IF);
+  obj10.onPress = callback;
+  items3[2] = React5(components_Button_Button.Button, obj10);
   obj3.children = items3;
-  obj10.children = closure_1_8(View, obj3);
-  return React5(Sheet_BottomSheet.BottomSheet, obj10);
-});
+  obj9.children = React6(View, obj3);
+  return React5(Sheet_BottomSheet.BottomSheet, obj9);
+};

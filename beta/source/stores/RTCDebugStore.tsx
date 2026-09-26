@@ -1,16 +1,16 @@
-// Module ID: 10331
-// Function ID: 10332
+// Module ID: 10334
+// Function ID: 10335
 // Name: RTCDebugStore
-// Dependencies: [32, 1996, 1376, 1078, 4815, 10332, 4845, 577, 504, 2]
+// Dependencies: [32, 1992, 1372, 1074, 4813, 10335, 4843, 573, 504, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 10331 (RTCDebugStore)
+// Module 10334 (RTCDebugStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10332 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10335 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import UserStore from "UserStore" /* 1376 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 function updateStats(arr, arg1, timestamp) {
@@ -82,10 +82,10 @@ function updateStats(arr, arg1, timestamp) {
   }
   return obj2;
 }
-const Constants = fn(4815);
+const Constants = fn(4813);
 const MediaEngineContextTypes = Constants.MediaEngineContextTypes;
 ({ Features: closure_8, SimulcastOverrideQuality: closure_9 } = Constants);
-let combined = "" + MediaEngineContextTypes.DEFAULT + ":" + fn(1078).RTCDebugSections.TRANSPORT + ":" + 0;
+let combined = "" + MediaEngineContextTypes.DEFAULT + ":" + fn(1074).RTCDebugSections.TRANSPORT + ":" + 0;
 let section = combined;
 let closure_12 = {};
 const map = new Map();
@@ -101,7 +101,7 @@ class RTCDebugVideoOutputMap {
 const prototype = RTCDebugVideoOutputMap.prototype;
 RTCDebugVideoOutputMap["empty"] = function empty() {
   if (typeof RTCDebugVideoOutputMap === "function") {
-    state = {};
+    const state = {};
     const obj2 = Object.create(tmp.prototype);
     obj2.state = state;
     return obj2;
@@ -125,7 +125,7 @@ prototype["put"] = function put(arg0, arg1, arg2, arg3) {
       throw new TypeError("Trying to call a non-function");
     }
   } else {
-    state = {};
+    const state = {};
     const _HermesInternal = HermesInternal;
     state["" + arg0 + ":" + arg1 + ":" + arg2] = arg3;
     const merged1 = Object.assign(self.state);
@@ -182,7 +182,7 @@ prototype2["getInboundStats"] = function getInboundStats(arg0, context) {
   if (found != null) {
     name = found.codec.name;
   }
-  obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: true };
+  obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: null };
   let resolution;
   if (found != null) {
     resolution = found.resolution;
@@ -317,7 +317,7 @@ const rTCDebugStore = new RTCDebugStore(DispatcherDefault, {
       if (0 !== path.length) {
         replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
         if (null != replayConnection) {
-          replayConnection.on(replayConnection(4845).BaseConnectionEvent.Video, (userId, arg1, arg2, arg3) => {
+          replayConnection.on(replayConnection(4843).BaseConnectionEvent.Video, (userId, arg1, arg2, arg3) => {
             let num = arg3;
             const obj2 = { type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT", mediaEngineConnectionId: replayConnection.mediaEngineConnectionId, userId, videoSsrc: null, streamId: null };
             if (arg3 == null) {

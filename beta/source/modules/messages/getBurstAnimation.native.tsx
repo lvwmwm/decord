@@ -1,13 +1,38 @@
-// Module ID: 8064
-// Function ID: 8065
+// Module ID: 8059
+// Function ID: 8060
 // Name: getBurstAnimation
-// Dependencies: [5, 8065, 8066, 8067, 8068, 8069, 8070, 8071, 8072, 8073, 8074, 8075, 8076, 8077, 8078, 8079, 8080, 8081, 8082, 8083, 8084, 8085, 8086, 8087, 8088, 8089, 8090, 8091, 8092, 8093, 8094, 8095, 8096, 8097, 8098, 8099, 8100, 8101, 2]
+// Dependencies: [5, 8060, 8061, 8062, 8063, 8064, 8065, 8066, 8067, 8068, 8069, 8070, 8071, 8072, 8073, 8074, 8075, 8076, 8077, 8078, 8079, 8080, 8081, 8082, 8083, 8084, 8085, 8086, 8087, 8088, 8089, 8090, 8091, 8092, 8093, 8094, 8095, 8096, 2]
 // Exports: getBurstAnimation
 
-// Module 8064 (getBurstAnimation)
+// Module 8059 (getBurstAnimation)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 const items = [
+  {
+    load() {
+      return closure_0(8060);
+    }
+  },
+  {
+    load() {
+      return closure_0(8061);
+    }
+  },
+  {
+    load() {
+      return closure_0(8062);
+    }
+  },
+  {
+    load() {
+      return closure_0(8063);
+    }
+  },
+  {
+    load() {
+      return closure_0(8064);
+    }
+  },
   {
     load() {
       return closure_0(8065);
@@ -72,7 +97,9 @@ const items = [
     load() {
       return closure_0(8077);
     }
-  },
+  }
+];
+const items1 = [
   {
     load() {
       return closure_0(8078);
@@ -97,9 +124,7 @@ const items = [
     load() {
       return closure_0(8082);
     }
-  }
-];
-const items1 = [
+  },
   {
     load() {
       return closure_0(8083);
@@ -164,31 +189,6 @@ const items1 = [
     load() {
       return closure_0(8095);
     }
-  },
-  {
-    load() {
-      return closure_0(8096);
-    }
-  },
-  {
-    load() {
-      return closure_0(8097);
-    }
-  },
-  {
-    load() {
-      return closure_0(8098);
-    }
-  },
-  {
-    load() {
-      return closure_0(8099);
-    }
-  },
-  {
-    load() {
-      return closure_0(8100);
-    }
   }
 ];
 let closure_0 = asyncGeneratorStepDefault(function*(arg0, value, arg2) {
@@ -202,7 +202,7 @@ let closure_0 = asyncGeneratorStepDefault(function*(arg0, value, arg2) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -230,7 +230,7 @@ let closure_0 = asyncGeneratorStepDefault(function*(arg0, value, arg2) {
           let burstAnimationHash;
           c6 = 1;
           c7 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (arg0 === 1) {
         c7 = 3;

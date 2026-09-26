@@ -1,53 +1,21 @@
 // Module ID: 1561
 // Function ID: 1562
-// Dependencies: [19, 1531]
-// Exports: useFocusEffect
+// Dependencies: [19, 1514, 1562]
+// Exports: useScheduleUpdate
 
 // Module 1561
-import _mod1531 from "module_1531" /* 1531 */;
+import NavigationBuilderContext from "NavigationBuilderContext" /* 1514 */;
+import _mod1562 from "module_1562" /* 1562 */;
 import noop from "module_19" /* 19 */;
 
 require = arg1;
 
-export const useFocusEffect = function useFocusEffect(cResult) {
-  let navigation = _mod1531.useNavigation();
-  if (undefined !== arguments[1]) {
-    const _console = console;
-    console.error("You passed a second argument to 'useFocusEffect', but it only accepts one argument. If you want to pass a dependency array, you can use 'React.useCallback':\n\nuseFocusEffect(\n  React.useCallback(() => {\n    // Your code here\n  }, [depA, depB])\n);\n\nSee usage guide: https://reactnavigation.org/docs/use-focus-effect");
-  }
-  const items = [cResult, navigation];
-  const effect = noop.useEffect(() => {
-    navigation = false;
-    if (navigation.isFocused()) {
-      const tmp2 = cResult();
-      navigation = true;
-    }
-    closure_2 = obj.addListener("focus", () => {
-      if (!c1) {
-        if (undefined !== _undefined) {
-          _undefined();
-        }
-        const tmp3 = _undefined();
-        if (undefined === tmp3) {
-          const tmp4 = tmp3;
-        }
-        _undefined = tmp4;
-        c1 = true;
-      }
-    });
-    closure_3 = obj.addListener("blur", () => {
-      if (undefined !== _undefined) {
-        _undefined();
-      }
-      _undefined = undefined;
-      c1 = false;
-    });
-    return () => {
-      if (undefined !== _undefined) {
-        _undefined();
-      }
-      closure_2();
-      closure_3();
-    };
-  }, items);
+export const useScheduleUpdate = function useScheduleUpdate(arg0) {
+  closure_0 = arg0;
+  const context = noop.useContext(NavigationBuilderContext.NavigationBuilderContext);
+  ({ scheduleUpdate: dependencyMap, flushUpdates } = context);
+  const insertionEffect = noop.useInsertionEffect(() => {
+    dependencyMap(closure_0);
+  });
+  const clientLayoutEffect = _mod1562.useClientLayoutEffect(flushUpdates);
 };

@@ -3,30 +3,33 @@
 // Dependencies: []
 
 // Module 7138
-function _typeof(arg0) {
-  if (typeof Symbol === "function") {
-    let _Symbol = Symbol;
-    if (typeof Symbol.iterator === "symbol") {
-      exports = (arg0) => typeof arg0;
-    }
-    tmp.exports = exports;
-    return exports(arg0);
-  }
-  exports = (arg0) => {
-    if (arg0) {
-      const _Symbol = Symbol;
-      if (typeof Symbol === "function") {
-        const _Symbol3 = Symbol;
-        if (arg0.constructor === Symbol) {
-          const _Symbol2 = Symbol;
-          let str = "symbol";
-        }
-        return str;
-      }
-    }
-    str = typeof arg0;
-  };
-}
-let exports = _typeof;
 
-export default _typeof;
+export default function _objectWithoutPropertiesLoose(obj, arr) {
+  if (null == obj) {
+    return {};
+  } else {
+    obj = {};
+    for (const key10007 in arg0) {
+      hasOwnProperty = {}.hasOwnProperty;
+      let call = hasOwnProperty.call;
+      if (typeof call === "unknown") {
+        let hasOwnPropertyResult = hasOwnProperty(key10007);
+      } else {
+        hasOwnPropertyResult = call(arg0, key10007);
+      }
+      if (!hasOwnPropertyResult) {
+        continue;
+      } else {
+        if (-1 !== arg1.indexOf(key10007)) {
+          continue;
+        } else {
+          obj[key10007] = arg0[key10007];
+          continue;
+        }
+        continue;
+      }
+      continue;
+    }
+    return obj;
+  }
+};

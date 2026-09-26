@@ -1,13 +1,13 @@
-// Module ID: 5823
-// Function ID: 5824
+// Module ID: 5821
+// Function ID: 5822
 // Name: MemberVerificationFormStore
-// Dependencies: [504, 12, 4615, 577, 2]
+// Dependencies: [504, 12, 4612, 573, 2]
 
-// Module 5823 (MemberVerificationFormStore)
+// Module 5821 (MemberVerificationFormStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
 
 require = fn;
 const NO_MEMBER_VERIFICATION_FORM = { version: "", description: "", formFields: [] };

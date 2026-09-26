@@ -1,12 +1,12 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 16946
+// Function ID: 16947
 // Name: VibegrationsArchivePicker
-// Dependencies: [5, 13400, 11531, 5309, 1119, 3714, 2]
+// Dependencies: [5, 13390, 11518, 5307, 1115, 3710, 2]
 // Exports: describeVibegrationsArchiveRejection, pickVibegrationsArchive, sendVibegrationsArchiveImport
 
-// Module 16956 (VibegrationsArchivePicker)
-import _modDef3714 from "module_3714" /* 3714 */;
-import FilePickerUtils from "FilePickerUtils" /* 11531 */;
+// Module 16946 (VibegrationsArchivePicker)
+import _modDef3710 from "module_3710" /* 3710 */;
+import FilePickerUtils from "FilePickerUtils" /* 11518 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -50,7 +50,7 @@ let closure_9 = async function _sendVibegrationsArchiveImport(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -87,7 +87,7 @@ let closure_9 = async function _sendVibegrationsArchiveImport(arg0, value) {
         const items = [closure_131_2];
         closure_132_5(closure_131_0, closure_131_1, items);
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp21) {
       c6 = tmp;
@@ -95,7 +95,7 @@ let closure_9 = async function _sendVibegrationsArchiveImport(arg0, value) {
     }
   }
 };
-const VibegrationsConnectionStore = fn(13400);
+const VibegrationsConnectionStore = fn(13390);
 ({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty, uploadAttachmentBytes: metroRequire } = VibegrationsConnectionStore);
 let closure_7 = ["zip", "tar", "gz", "tgz", "rar"];
 const size = fn(2);
@@ -114,12 +114,12 @@ export const pickVibegrationsArchive = function pickVibegrationsArchive() {
 export const describeVibegrationsArchiveRejection = function describeVibegrationsArchiveRejection(bytes) {
   let formatToPlainStringResult = null;
   if (!obj.isVibegrationsAttachmentWithinLimit(bytes.bytes.size, bytes.contentType)) {
-    const intl = tmp(1119).intl;
+    const intl = tmp(1115).intl;
     const obj2 = { size: null };
-    const tmpResult = tmp(5309);
-    obj2.size = tmpResult.formatVibegrationsAttachmentLimit(tmp(5309).vibegrationsAttachmentLimit(bytes.contentType));
-    formatToPlainStringResult = intl.formatToPlainString(_modDef3714.AzziHF, obj2);
-    const tmpResult2 = tmp(5309);
+    const tmpResult = tmp(5307);
+    obj2.size = tmpResult.formatVibegrationsAttachmentLimit(tmp(5307).vibegrationsAttachmentLimit(bytes.contentType));
+    formatToPlainStringResult = intl.formatToPlainString(_modDef3710.AzziHF, obj2);
+    const tmpResult2 = tmp(5307);
   }
   return formatToPlainStringResult;
 };

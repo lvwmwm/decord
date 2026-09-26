@@ -1,20 +1,20 @@
-// Module ID: 2002
-// Function ID: 2003
+// Module ID: 1998
+// Function ID: 1999
 // Name: ClipsStore
-// Dependencies: [5, 2003, 502, 5382, 1078, 4837, 4413, 14300, 14301, 1389, 14302, 14304, 14305, 504, 1996, 577, 2]
+// Dependencies: [5, 1999, 502, 5380, 1074, 4835, 4409, 14290, 14291, 1385, 14292, 14294, 14295, 504, 1992, 573, 2]
 
-// Module 2002 (ClipsStore)
+// Module 1998 (ClipsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import FlagUtils from "FlagUtils" /* 1389 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import DiscordNativeDefault from "DiscordNative" /* 4413 */;
-import ClipsSession from "ClipsSession" /* 14301 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 14302 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14304 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14305 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import DiscordNativeDefault from "DiscordNative" /* 4409 */;
+import ClipsSession from "ClipsSession" /* 14291 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14292 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14294 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14295 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2003 */;
+import RunningGameStore from "RunningGameStore" /* 1999 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -29,7 +29,7 @@ let closure_36 = async function _migrateDefaultStorage(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -224,7 +224,7 @@ function trackClipMessage(message) {
         if (items1 == null) {
           items1 = [];
         }
-        value3 = map2.get(message_id1);
+        let value3 = map2.get(message_id1);
         if (value3 == null) {
           value3 = [];
         }
@@ -245,11 +245,11 @@ function trackClipMessage(message) {
   }
   obj = DistributedClipsExperimentDefault;
 }
-const ClipsConstants = fn(5382);
+const ClipsConstants = fn(5380);
 ({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: metroRequire, ClipSaveTypes: closure_7, ClipsUserEducationType: closure_8, ClipsLogger: closure_9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: closure_11, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, DEFAULT_CLIPS_BITRATE_PERCENT } = ClipsConstants);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);
-const StreamSettingsConstants = fn(4837);
+const StreamSettingsConstants = fn(4835);
 let c16 = "default";
 let c17 = "Discord Clips";
 const dependencyMap = {};
@@ -269,7 +269,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_33 = [];
-let obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Set", showPovClipsInGallery: true };
+let obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "PX_16", showPovClipsInGallery: true };
 obj = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
 class ClipsStoreClass extends DeviceSettingsStore {
@@ -367,7 +367,7 @@ prototype["getHardwareClassificationVersion"] = function getHardwareClassificati
   return obj.hardwareClassificationVersion;
 };
 prototype["getIsAtMaxSaveClipOperations"] = function getIsAtMaxSaveClipOperations() {
-  return closure_21 >= v65535;
+  return closure_21 >= closure_1_10;
 };
 prototype["getLastClipsError"] = function getLastClipsError() {
   return c26;

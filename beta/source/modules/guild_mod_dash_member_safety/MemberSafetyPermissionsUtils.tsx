@@ -1,175 +1,37 @@
-// Module ID: 7541
-// Function ID: 7542
+// Module ID: 7539
+// Function ID: 7540
 // Name: MemberSafetyPermissionsUtils
-// Dependencies: [32, 2063, 2067, 4431, 1376, 4435, 1078, 1090, 4436, 558, 568, 504, 2]
-// Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions
+// Dependencies: [32, 2059, 2063, 4427, 1372, 4431, 1074, 1086, 4432, 504, 2]
+// Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanAccessMemberSafetyPage, useCanBulkBanUser
 
-// Module 7541 (MemberSafetyPermissionsUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+// Module 7539 (MemberSafetyPermissionsUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import UserStore from "UserStore" /* 1376 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const isGuildOwner = fn(2063).isGuildOwner;
-let closure_8 = fn(4435).MemberSafetyPagePermissions;
-const Constants = fn(1078);
+const isGuildOwner = fn(2059).isGuildOwner;
+let closure_8 = fn(4431).MemberSafetyPagePermissions;
+const Constants = fn(1074);
 ({ GuildFeatures: closure_9, Permissions: c10 } = Constants);
-let ReactCompilerGating = fn(558);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GuildStore, UserStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      const items = [GuildStore, UserStore];
-      [obj, obj2] = items;
-      guild = obj.getGuild(closure_0);
-      const currentUser = obj2.getCurrentUser();
-      return false;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp8 = items1;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
-  _require = arg0;
-  let items = [GuildStore, UserStore];
-  const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
-    const items = [GuildStore, UserStore];
-    [obj, obj2] = items;
-    guild = obj.getGuild(closure_0);
-    const currentUser = obj2.getCurrentUser();
-    return false;
-  }, items1);
-});
-let closure_11 = tmp3;
-fn(558);
-ReactCompilerGating = fn(558);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  let stateFromStores = closure_11(arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GuildStore, UserStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      const items = [GuildStore, UserStore];
-      [obj, obj2] = items;
-      guild = obj.getGuild(closure_0);
-      const currentUser = obj2.getCurrentUser();
-      return false;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp9 = items1;
-    let tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const obj = require("c");
-  if (stateFromStores) {
-    stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
-  }
-  return stateFromStores;
-}) : ((arg0) => {
-  _require = arg0;
-  let stateFromStores = closure_11(arg0);
-  let items = [GuildStore, UserStore];
-  const items1 = [arg0];
-  if (stateFromStores) {
-    stateFromStores = obj.useStateFromStores(items, () => {
-      const items = [GuildStore, UserStore];
-      [obj, obj2] = items;
-      guild = obj.getGuild(closure_0);
-      const currentUser = obj2.getCurrentUser();
-      return false;
-    }, items1);
-  }
-  return stateFromStores;
-});
-ReactCompilerGating = fn(558);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore, PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      guild = GuildStore.getGuild(closure_0);
-      let canResult = null != guild;
-      if (canResult) {
-        canResult = PermissionStore.can(constants2.MANAGE_GUILD, guild);
-      }
-      return canResult;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp8 = items1;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
-  _require = arg0;
-  const items = [GuildStore, PermissionStore];
-  const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
-    guild = GuildStore.getGuild(closure_0);
-    let canResult = null != guild;
-    if (canResult) {
-      canResult = PermissionStore.can(constants2.MANAGE_GUILD, guild);
-    }
-    return canResult;
-  }, items1);
-});
-function getContextForPermission(arg0, items) {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPermissionsUtils.tsx");
+
+export const getContextForPermission = function getContextForPermission(arg0, items) {
   let tmp = items;
   if (items === undefined) {
     items = [UserStore, closure_8];
     tmp = items;
   }
   [obj, obj2] = tmp;
-  guild = obj.getGuild(arg0);
+  const guild = obj.getGuild(arg0);
   const currentUser = obj2.getCurrentUser();
-}
-function canAccessMemberSafetyPage(arg0) {
+};
+export const canAccessMemberSafetyPage = function canAccessMemberSafetyPage(arg0) {
   let tmp = arg1;
   if (arg1 === undefined) {
     const items = [GuildStore, UserStore];
@@ -180,11 +42,11 @@ function canAccessMemberSafetyPage(arg0) {
     tmp = items1;
   }
   [obj, obj2] = tmp;
-  guild = obj.getGuild(arg0);
+  const guild = obj.getGuild(arg0);
   const currentUser = obj2.getCurrentUser();
   return false;
-}
-function hasBulkBanningPermissions(arg0) {
+};
+export const hasBulkBanningPermissions = function hasBulkBanningPermissions(arg0) {
   let tmp = arg1;
   if (arg1 === undefined) {
     const items = [GuildStore, UserStore];
@@ -195,16 +57,10 @@ function hasBulkBanningPermissions(arg0) {
     tmp = items1;
   }
   [obj, obj2] = tmp;
-  guild = obj.getGuild(arg0);
+  const guild = obj.getGuild(arg0);
   const currentUser = obj2.getCurrentUser();
   return false;
-}
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPermissionsUtils.tsx");
-
-export { getContextForPermission };
-export { canAccessMemberSafetyPage };
-export { hasBulkBanningPermissions };
+};
 export const canPruneGuildMembers = function canPruneGuildMembers(guild, currentUser, PermissionStore) {
   let obj = PermissionStore;
   if (PermissionStore === undefined) {
@@ -222,58 +78,65 @@ export const canPruneGuildMembers = function canPruneGuildMembers(guild, current
   }
   return canResult1;
 };
-export const useCanAccessMemberSafetyPage = tmp3;
-export const useCanAccessBulkBanningFeature = tmp4;
-export const useCanAccessInviteCodeFeature = tmp5;
-export const useCanBulkBanUser = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+export const useCanAccessMemberSafetyPage = function useCanAccessMemberSafetyPage(id) {
+  _require = id;
+  const items = [GuildStore, UserStore];
+  const items1 = [id];
+  return require("initialize").useStateFromStores(items, () => {
+    const items = [GuildStore, UserStore];
+    [obj, obj2] = items;
+    const guild = obj.getGuild(closure_0);
+    const currentUser = obj2.getCurrentUser();
+    return false;
+  }, items1);
+};
+export const useCanAccessBulkBanningFeature = function useCanAccessBulkBanningFeature(arg0) {
   _require = arg0;
-  closure_1 = arg1;
-  dependencyMap = arg2;
-  const cResult = require("c").c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore, GuildStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
+  closure_129_0 = arg0;
+  let items = [GuildStore, UserStore];
+  const items1 = [arg0];
+  let stateFromStores = require("initialize").useStateFromStores(items, () => {
+    const items = [GuildStore, UserStore];
+    [obj, obj2] = items;
+    const guild = obj.getGuild(closure_0);
+    const currentUser = obj2.getCurrentUser();
+    return false;
+  }, items1);
+  const obj = require("initialize");
+  const items2 = [GuildStore, UserStore];
+  const items3 = [arg0];
+  if (stateFromStores) {
+    stateFromStores = obj2.useStateFromStores(items2, () => {
+      const items = [GuildStore, UserStore];
+      [obj, obj2] = items;
+      const guild = obj.getGuild(closure_0);
+      const currentUser = obj2.getCurrentUser();
+      return false;
+    }, items3);
   }
-  if (cResult[1] === arg1) {
-    if (cResult[2] === arg0) {
-      if (cResult[3] === arg2) {
-        let tmp7 = cResult[4];
-        let tmp8 = cResult[5];
-      }
-      return require("initialize").useStateFromStores(first, tmp7, tmp8);
+  return stateFromStores;
+};
+export const useCanAccessInviteCodeFeature = function useCanAccessInviteCodeFeature(arg0) {
+  _require = arg0;
+  const items = [GuildStore, PermissionStore];
+  const items1 = [arg0];
+  return require("initialize").useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(closure_0);
+    let canResult = null != guild;
+    if (canResult) {
+      canResult = PermissionStore.can(constants2.MANAGE_GUILD, guild);
     }
-  }
-  const fn = function l() {
-    guild = GuildStore.getGuild(closure_0);
-    let tmp2 = null != guild;
-    if (tmp2) {
-      let canManageUserResult = closure_1;
-      if (closure_1) {
-        canManageUserResult = PermissionStore.canManageUser(constants2.BAN_MEMBERS, closure_2, guild);
-      }
-      tmp2 = canManageUserResult;
-    }
-    return tmp2;
-  };
-  const items1 = [arg1, arg0, arg2];
-  cResult[1] = arg1;
-  cResult[2] = arg0;
-  cResult[3] = arg2;
-  cResult[4] = fn;
-  cResult[5] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : ((arg0, arg1, arg2) => {
+    return canResult;
+  }, items1);
+};
+export const useCanBulkBanUser = function useCanBulkBanUser(arg0, arg1, arg2) {
   _require = arg0;
   closure_1 = arg1;
   dependencyMap = arg2;
   const items = [PermissionStore, GuildStore];
   const items1 = [arg1, arg0, arg2];
   return require("initialize").useStateFromStores(items, () => {
-    guild = GuildStore.getGuild(closure_0);
+    const guild = GuildStore.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
       let canManageUserResult = closure_1;
@@ -284,9 +147,9 @@ export const useCanBulkBanUser = ReactCompilerGating.isReactCompilerEnabled() ? 
     }
     return tmp2;
   }, items1);
-});
+};
 export const canBulkBanUser = function canBulkBanUser(arg0, arg1, user) {
-  guild = GuildStore.getGuild(arg0);
+  const guild = GuildStore.getGuild(arg0);
   let tmp2 = null != guild;
   if (tmp2) {
     let canManageUserResult = arg1;

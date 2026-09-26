@@ -1,12 +1,12 @@
-// Module ID: 8289
-// Function ID: 8290
+// Module ID: 8284
+// Function ID: 8285
 // Name: GuildProductSystemMessageUtils
-// Dependencies: [1078, 1119, 2]
+// Dependencies: [1074, 1115, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 8289 (GuildProductSystemMessageUtils)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
+// Module 8284 (GuildProductSystemMessageUtils)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const NOOP = Constants.NOOP;

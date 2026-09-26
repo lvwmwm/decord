@@ -1,12 +1,12 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8327
+// Function ID: 8328
 // Name: isCrosspost
-// Dependencies: [1078, 1389, 2]
+// Dependencies: [1074, 1385, 2]
 // Exports: default
 
-// Module 8332 (isCrosspost)
-import FlagUtils from "FlagUtils" /* 1389 */;
-import Constants from "Constants" /* 1078 */;
+// Module 8327 (isCrosspost)
+import FlagUtils from "FlagUtils" /* 1385 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ MessageFlags: c2, MessageReferenceTypes: c3, MessageTypes: closure_4 } = Constants);

@@ -1,8 +1,8 @@
-// Module ID: 4604
-// Function ID: 4605
+// Module ID: 4601
+// Function ID: 4602
 // Dependencies: [2]
 
-// Module 4604
+// Module 4601
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/TeenScreenTime.riv.js");

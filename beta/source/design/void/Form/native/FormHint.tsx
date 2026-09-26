@@ -1,88 +1,24 @@
-// Module ID: 8915
-// Function ID: 8916
+// Module ID: 8910
+// Function ID: 8911
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5934, 4786, 1181, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 5935, 4784, 1177, 2]
+// Exports: default
 
-// Module 8915 (FormHint)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import RedesignCompat from "RedesignCompat" /* 5934 */;
+// Module 8910 (FormHint)
+import nativeDefault from "native" /* 576 */;
+import RedesignCompat from "RedesignCompat" /* 5935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Platform = fn(17).Platform;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { formHintText: { fontSize: 14, marginBottom: 0, color: nativeDefault.colors.TEXT_MUTED }, redesignHorizontalPadding: { paddingHorizontal: 12 }, horizonatalPadding: { paddingHorizontal: 16 } };
 let closure_4 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj3 = { fontSize: 14, marginBottom: 0, color: nativeDefault.colors.TEXT_MUTED };
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FormHint.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(13);
-  ({ inset, style, children } = arg0);
-  const tmp5 = closure_4();
-  let redesignHorizontalPadding = !tmp4;
-  if (noop.useContext(RedesignCompat.RedesignCompatContext)) {
-    if (!tmp4) {
-      redesignHorizontalPadding = tmp5.redesignHorizontalPadding;
-    }
-    if (cResult[0] === style) {
-      if (cResult[1] === redesignHorizontalPadding) {
-        let tmp10 = cResult[2];
-      }
-      if (cResult[3] === children) {
-        if (cResult[4] === tmp10) {
-          let tmp11 = cResult[5];
-        }
-        return tmp11;
-      }
-      const obj2 = { variant: "text-sm/medium", color: "text-muted", style: tmp10, children };
-      const tmp13 = jsx(tmp(4786).Text, { variant: "text-sm/medium", color: "text-muted", style: tmp10, children });
-      cResult[3] = children;
-      cResult[4] = tmp10;
-      cResult[5] = tmp13;
-      tmp11 = tmp13;
-    }
-    const items = [redesignHorizontalPadding, style];
-    cResult[0] = style;
-    cResult[1] = redesignHorizontalPadding;
-    cResult[2] = items;
-    tmp10 = items;
-  } else {
-    let horizonatalPadding = redesignHorizontalPadding;
-    if (!tmp4) {
-      horizonatalPadding = tmp5.horizonatalPadding;
-    }
-    if (cResult[6] === style) {
-      if (cResult[7] === tmp5.formHintText) {
-        if (cResult[8] === horizonatalPadding) {
-          let tmp6 = cResult[9];
-        }
-        if (cResult[10] === children) {
-          if (cResult[11] === tmp6) {
-            let tmp7 = cResult[12];
-          }
-          return tmp7;
-        }
-        const obj3 = { style: tmp6, children };
-        const tmp9 = jsx(tmp(1181).LegacyText, { style: tmp6, children });
-        cResult[10] = children;
-        cResult[11] = tmp6;
-        cResult[12] = tmp9;
-        tmp7 = tmp9;
-      }
-    }
-    const items1 = [tmp5.formHintText, horizonatalPadding, style];
-    cResult[6] = style;
-    cResult[7] = tmp5.formHintText;
-    cResult[8] = horizonatalPadding;
-    cResult[9] = items1;
-    tmp6 = items1;
-  }
-}) : ((inset) => {
+export default function FormHint(inset) {
   let flag = inset.inset;
   if (flag === undefined) {
     flag = false;
@@ -98,7 +34,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [redesignHorizontalPadding, style];
     obj2.style = items;
     obj2.children = children;
-    let tmp4Result = tmp4(tmp2(4786).Text, obj2);
+    let tmp4Result = tmp4(tmp2(4784).Text, obj2);
   } else {
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;
@@ -110,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items1[2] = style;
     obj.style = items1;
     obj.children = children;
-    tmp4Result = tmp4(tmp2(1181).LegacyText, obj);
+    tmp4Result = tmp4(tmp2(1177).LegacyText, obj);
   }
   return tmp4Result;
-});
+};

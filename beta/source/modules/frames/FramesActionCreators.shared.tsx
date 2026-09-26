@@ -1,16 +1,16 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9605
+// Function ID: 9606
 // Name: _launchFrame
-// Dependencies: [5, 9343, 9344, 9345, 9602, 577, 9621, 9603, 9650, 9651, 2]
+// Dependencies: [5, 9345, 9346, 9347, 9606, 573, 9625, 9607, 9654, 9655, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 9601 (_launchFrame)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9602 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9621 */;
-import getFramesManagerDefault from "getFramesManager" /* 9651 */;
+// Module 9605 (_launchFrame)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9606 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9625 */;
+import getFramesManagerDefault from "getFramesManager" /* 9655 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FramesStore from "FramesStore" /* 9343 */;
+import FramesStore from "FramesStore" /* 9345 */;
 
 require = fn;
 let closure_11 = async function _launchFrame(arg0, value) {
@@ -24,7 +24,7 @@ let closure_11 = async function _launchFrame(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -54,7 +54,7 @@ let closure_11 = async function _launchFrame(arg0, value) {
           closure_129_10 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -215,7 +215,7 @@ let closure_16 = async function _refreshProxyTicket(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -320,9 +320,9 @@ let closure_16 = async function _refreshProxyTicket(arg0, value) {
     }
   }
 };
-const FramesConstants = fn(9344);
+const FramesConstants = fn(9346);
 ({ FrameIntent: hasOwnProperty, FrameLayoutModes: metroRequire, getChannelIdForSurface: closure_7, getFrameIntentForSurface: closure_8, makeFrameId: closure_9 } = FramesConstants);
-const ActivityPanelModes = fn(9345).ActivityPanelModes;
+const ActivityPanelModes = fn(9347).ActivityPanelModes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 

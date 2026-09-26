@@ -1,24 +1,24 @@
-// Module ID: 6876
-// Function ID: 6877
+// Module ID: 6878
+// Function ID: 6879
 // Name: ConfirmEmailCode
-// Dependencies: [5, 32, 19, 17, 1376, 5870, 21, 4790, 580, 504, 4692, 4786, 1119, 6877, 7215, 4490, 5220, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 5872, 21, 4788, 576, 504, 4689, 4784, 1115, 6879, 7217, 4486, 5218, 2]
 // Exports: default
 
-// Module 6876 (ConfirmEmailCode)
-import nativeDefault from "native" /* 580 */;
+// Module 6878 (ConfirmEmailCode)
+import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const ChangeEmailStore = fn(5870);
+const ChangeEmailStore = fn(5872);
 ({ useChangeEmailError: closure_9, ChangeEmailFields: c10 } = ChangeEmailStore);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { background: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 }, title: { textAlign: "center" }, prompt: { marginTop: 8, lineHeight: 18, textAlign: "center" }, input: null, contentContainer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.input = { marginTop: nativeDefault.space.PX_24 };
@@ -56,7 +56,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

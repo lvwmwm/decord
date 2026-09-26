@@ -1,27 +1,28 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 10280
+// Function ID: 10281
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 1996, 5670, 1983, 1078, 4999, 21, 4790, 580, 4640, 558, 568, 1482, 504, 5389, 4845, 4504, 1119, 1181, 8908, 1368, 8586, 2]
+// Dependencies: [5, 32, 19, 17, 1992, 5668, 1979, 1074, 4997, 21, 4788, 576, 4637, 1478, 504, 5387, 4843, 4499, 1115, 1177, 8903, 8581, 1364, 2]
+// Exports: default
 
-// Module 10277 (VoiceSensitivity)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4845 */;
+// Module 10280 (VoiceSensitivity)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4499 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import SpeakingStore from "SpeakingStore" /* 5670 */;
-import AppStateStore from "AppStateStore" /* 1983 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import SpeakingStore from "SpeakingStore" /* 5668 */;
+import AppStateStore from "AppStateStore" /* 1979 */;
 
 require = fn;
 const View = fn(17).View;
-const AppStates = fn(1078).AppStates;
-const NativePermissionTypes = fn(4999).NativePermissionTypes;
+const AppStates = fn(1074).AppStates;
+const NativePermissionTypes = fn(4997).NativePermissionTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { sensitivity: { position: "relative", height: 20 }, sensitivityBar: { position: "absolute", top: 7, left: 0, right: 0, bottom: 7, flexDirection: "row" }, sensitivityFill: null, sensitivityCommon: null, sensitivityMin: null, sensitivityMax: null, sensitivityDefault: null, sensitivitySpeaking: null, sensitivitySlider: null };
 const rect = { position: "absolute", backgroundColor: nativeDefault.unsafe_rawColors.WHITE, opacity: 0.5, top: 7, left: 0, right: 0, bottom: 7 };
 obj2.sensitivityFill = rect;
@@ -30,564 +31,23 @@ obj2.sensitivityMin = { backgroundColor: nativeDefault.unsafe_rawColors.YELLOW_3
 let obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.YELLOW_300 };
 obj2.sensitivityMax = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 let obj5 = { flex: 1, backgroundColor: null };
-const ColorUtils = fn(4640);
+const ColorUtils = fn(4637);
 obj5.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.PRIMARY_400, 0.6);
 obj2.sensitivityDefault = obj5;
 let obj4 = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 obj2.sensitivitySpeaking = { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 obj2.sensitivitySlider = { flex: 1, backgroundColor: "transparent", marginVertical: -10 };
 let closure_14 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj6 = { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 const size = fn(2);
-let result = size.fileFinishedImporting("components_native/common/VoiceSensitivity.tsx");
+const result = size.fileFinishedImporting("components_native/common/VoiceSensitivity.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
-  const cResult = auto(first1[14]).c(75);
-  auto = auto.auto;
-  const onThresholdChange = auto.onThresholdChange;
-  const tmp4 = closure_14();
-  const sum = auto.threshold + 100;
-  let ref = stateFromStores.useRef(null);
-  stateFromStores.useRef(null);
-  stateFromStores.useRef(null);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const result = first3.isCurrentUserSpeaking();
-    cResult[0] = result;
-    let first = result;
-  } else {
-    first = cResult[0];
-  }
-  const tmp13 = width(stateFromStores.useState(first), 2);
-  first1 = tmp13[0];
-  asyncGeneratorStep = tmp13[1];
-  width = onThresholdChange(tmp2[15])().width;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [state];
-    const fn = function w() {
-      return state.getState();
-    };
-    const items1 = [];
-    cResult[1] = items;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp17 = items1;
-    let tmp16 = fn;
-    let tmp15 = items;
-  } else {
-    tmp15 = cResult[1];
-    tmp16 = cResult[2];
-    tmp17 = cResult[3];
-  }
-  let obj = auto(first1[14]);
-  stateFromStores = auto(first1[16]).useStateFromStores(tmp15, tmp16, tmp17);
-  const tmp12Result = width(stateFromStores.useState(0), 2);
-  const first2 = tmp12Result[0];
-  MediaEngineStore = tmp12Result[1];
-  const tmp12Result4 = width(stateFromStores.useState(sum), 2);
-  first3 = tmp12Result4[0];
-  state = tmp12Result4[1];
-  const tmpResult = auto(first1[16]);
-  [tmp25, AppStates] = width(stateFromStores.useState(first3 / 100), 2);
-  const tmp12Result5 = width(stateFromStores.useState(first3 / 100), 2);
-  [r10089, NativePermissionTypes] = width(stateFromStores.useState(width * (1 - first2 / -100)), 2);
-  if (cResult[4] === auto) {
-    if (cResult[5] === first3) {
-      let tmp27 = cResult[6];
-      let tmp28 = cResult[7];
-    }
-    const effect = obj2.useEffect(tmp27, tmp28);
-    if (cResult[8] === auto) {
-      if (cResult[9] === first2) {
-        if (cResult[10] === width) {
-          let tmp30 = cResult[11];
-          let tmp31 = cResult[12];
-        }
-        const effect1 = obj2.useEffect(tmp30, tmp31);
-        const _Symbol = Symbol;
-        class D {
-          constructor() {
-            if (!auto) {
-              tmp = closure_11;
-              tmp2 = width;
-              tmp3 = closure_6;
-              num = -100;
-              num2 = 1;
-              tmp4 = closure_11(width * (1 - closure_6 / -100));
-            }
-            return;
-          }
-        }
-        if (tmp33 === Symbol.for("react.memo_cache_sentinel")) {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-          cResult[13] = U;
-          class D {
-            constructor() {
-              if (!auto) {
-                tmp = closure_11;
-                tmp2 = width;
-                tmp3 = closure_6;
-                num = -100;
-                num2 = 1;
-                tmp4 = closure_11(width * (1 - closure_6 / -100));
-              }
-              return;
-            }
-          }
-        } else {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-        }
-        closure_12 = tmp34;
-        const _Symbol2 = Symbol;
-        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-          cResult[14] = tmp35;
-          class D {
-            constructor() {
-              if (!auto) {
-                tmp = closure_11;
-                tmp2 = width;
-                tmp3 = closure_6;
-                num = -100;
-                num2 = 1;
-                tmp4 = closure_11(width * (1 - closure_6 / -100));
-              }
-              return;
-            }
-          }
-        } else {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-        }
-        if (cResult[15] !== onThresholdChange) {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-          cResult[15] = onThresholdChange;
-          class D {
-            constructor() {
-              if (!auto) {
-                tmp = closure_11;
-                tmp2 = width;
-                tmp3 = closure_6;
-                num = -100;
-                num2 = 1;
-                tmp4 = closure_11(width * (1 - closure_6 / -100));
-              }
-              return;
-            }
-          }
-          cResult[16] = tmp37;
-        } else {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-        }
-        if (cResult[17] !== stateFromStores) {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-          const items2 = [tmp34, ];
-          class D {
-            constructor() {
-              if (!auto) {
-                tmp = closure_11;
-                tmp2 = width;
-                tmp3 = closure_6;
-                num = -100;
-                num2 = 1;
-                tmp4 = closure_11(width * (1 - closure_6 / -100));
-              }
-              return;
-            }
-          }
-          cResult[17] = stateFromStores;
-          cResult[18] = tmp40;
-          cResult[19] = items2;
-          let tmp39 = items2;
-          const tmp38 = tmp40;
-        } else {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-          tmp39 = cResult[19];
-        }
-        const effect2 = obj2.useEffect(tmp38, tmp39);
-        ref = obj2.useRef(false);
-        closure_14 = obj2.useRef(false);
-        obj2.useRef(null);
-        if (cResult[20] === auto) {
-          class U {
-            constructor(arg0, arg1) {
-              tmp = closure_3(arg1);
-              tmp2 = closure_7(auto);
-              return;
-            }
-          }
-          const effect3 = obj2.useEffect(tmp42, tmp43);
-          if (auto) {
-            class U {
-              constructor(arg0, arg1) {
-                tmp = closure_3(arg1);
-                tmp2 = closure_7(auto);
-                return;
-              }
-            }
-            const _Symbol3 = Symbol;
-            class D {
-              constructor() {
-                if (!auto) {
-                  tmp = closure_11;
-                  tmp2 = width;
-                  tmp3 = closure_6;
-                  num = -100;
-                  num2 = 1;
-                  tmp4 = closure_11(width * (1 - closure_6 / -100));
-                }
-                return;
-              }
-            }
-            if (first1) {
-              class U {
-                constructor(arg0, arg1) {
-                  tmp = closure_3(arg1);
-                  tmp2 = closure_7(auto);
-                  return;
-                }
-              }
-            }
-            if (cResult[25] !== first1) {
-              class U {
-                constructor(arg0, arg1) {
-                  tmp = closure_3(arg1);
-                  tmp2 = closure_7(auto);
-                  return;
-                }
-              }
-              const string = tmp54.string;
-              const t = tmp(tmp2[20]).t;
-              class D {
-                constructor() {
-                  if (!auto) {
-                    tmp = closure_11;
-                    tmp2 = width;
-                    tmp3 = closure_6;
-                    num = -100;
-                    num2 = 1;
-                    tmp4 = closure_11(width * (1 - closure_6 / -100));
-                  }
-                  return;
-                }
-              }
-              cResult[25] = first1;
-              cResult[26] = tmp55;
-            } else {
-              class U {
-                constructor(arg0, arg1) {
-                  tmp = closure_3(arg1);
-                  tmp2 = closure_7(auto);
-                  return;
-                }
-              }
-              const _Symbol4 = Symbol;
-              class D {
-                constructor() {
-                  if (!auto) {
-                    tmp = closure_11;
-                    tmp2 = width;
-                    tmp3 = closure_6;
-                    num = -100;
-                    num2 = 1;
-                    tmp4 = closure_11(width * (1 - closure_6 / -100));
-                  }
-                  return;
-                }
-              }
-              if (cResult[29] === tmp50) {
-                class U {
-                  constructor(arg0, arg1) {
-                    tmp = closure_3(arg1);
-                    tmp2 = closure_7(auto);
-                    return;
-                  }
-                }
-                if (cResult[32] === tmp4.sensitivityBar) {
-                  class U {
-                    constructor(arg0, arg1) {
-                      tmp = closure_3(arg1);
-                      tmp2 = closure_7(auto);
-                      return;
-                    }
-                  }
-                  if (cResult[35] === tmp4.sensitivity) {
-                    class U {
-                      constructor(arg0, arg1) {
-                        tmp = closure_3(arg1);
-                        tmp2 = closure_7(auto);
-                        return;
-                      }
-                    }
-                  }
-                  class D {
-                    constructor() {
-                      if (!auto) {
-                        tmp = closure_11;
-                        tmp2 = width;
-                        tmp3 = closure_6;
-                        num = -100;
-                        num2 = 1;
-                        tmp4 = closure_11(width * (1 - closure_6 / -100));
-                      }
-                      return;
-                    }
-                  }
-                  tmp69[2] = tmp52;
-                  tmp69[3] = num25;
-                  tmp69[6] = tmp53;
-                  tmp69[7] = tmp58;
-                  tmp69[8] = tmp59;
-                  tmp69[9] = tmp4.sensitivity;
-                  tmp69[10] = tmp64;
-                  const tmp70 = closure_12(tmp(tmp2[21]).AccessibilityFocusView, tmp69);
-                  cResult[35] = tmp4.sensitivity;
-                  cResult[36] = num25;
-                  cResult[37] = tmp53;
-                  cResult[38] = tmp64;
-                  cResult[39] = tmp70;
-                }
-                class D {
-                  constructor() {
-                    if (!auto) {
-                      tmp = closure_11;
-                      tmp2 = width;
-                      tmp3 = closure_6;
-                      num = -100;
-                      num2 = 1;
-                      tmp4 = closure_11(width * (1 - closure_6 / -100));
-                    }
-                    return;
-                  }
-                }
-                const obj3 = { style: tmp4.sensitivityBar, children: tmp60 };
-                const tmp66 = closure_12(first2, obj3);
-                cResult[32] = tmp4.sensitivityBar;
-                cResult[33] = tmp60;
-                cResult[34] = tmp66;
-              }
-              let obj4 = { style: null };
-              const items3 = [tmp4.sensitivityCommon, tmp50];
-              obj4.style = items3;
-              const tmp63 = closure_12(first2, obj4);
-              cResult[29] = tmp50;
-              cResult[30] = tmp4.sensitivityCommon;
-              cResult[31] = tmp63;
-            }
-          } else {
-            class U {
-              constructor(arg0, arg1) {
-                tmp = closure_3(arg1);
-                tmp2 = closure_7(auto);
-                return;
-              }
-            }
-            if (cResult[43] !== tmp25) {
-              class U {
-                constructor(arg0, arg1) {
-                  tmp = closure_3(arg1);
-                  tmp2 = closure_7(auto);
-                  return;
-                }
-              }
-              tmp46[0] = tmp25;
-              class D {
-                constructor() {
-                  if (!auto) {
-                    tmp = closure_11;
-                    tmp2 = width;
-                    tmp3 = closure_6;
-                    num = -100;
-                    num2 = 1;
-                    tmp4 = closure_11(width * (1 - closure_6 / -100));
-                  }
-                  return;
-                }
-              }
-              cResult[44] = tmp46;
-            } else {
-              class U {
-                constructor(arg0, arg1) {
-                  tmp = closure_3(arg1);
-                  tmp2 = closure_7(auto);
-                  return;
-                }
-              }
-            }
-            if (cResult[45] === tmp4.sensitivityCommon) {
-              class U {
-                constructor(arg0, arg1) {
-                  tmp = closure_3(arg1);
-                  tmp2 = closure_7(auto);
-                  return;
-                }
-              }
-            }
-            class D {
-              constructor() {
-                if (!auto) {
-                  tmp = closure_11;
-                  tmp2 = width;
-                  tmp3 = closure_6;
-                  num = -100;
-                  num2 = 1;
-                  tmp4 = closure_11(width * (1 - closure_6 / -100));
-                }
-                return;
-              }
-            }
-            let obj5 = { ref, style: null };
-            const items4 = [, , ];
-            ({ sensitivityCommon: arr7[0], sensitivityMin: arr7[1] } = tmp4);
-            items4[2] = tmp45;
-            obj5.style = items4;
-            const tmp49 = closure_12(first2, obj5);
-            cResult[45] = tmp4.sensitivityCommon;
-            cResult[46] = tmp4.sensitivityMin;
-            cResult[47] = tmp45;
-            cResult[48] = tmp49;
-          }
-        }
-        function ve() {
-          if (ref.current) {
-            if (auto) {
-              if (tmp3.current) {
-                if (first1) {
-                  if (null != tmp5.current) {
-                    let _clearTimeout = clearTimeout;
-                    clearTimeout(tmp5.current);
-                    tmp5.current = null;
-                  }
-                  let AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                  let intl = util.intl;
-                  AccessibilityAnnouncer.announce(intl.string(util.t.haLKZ0));
-                } else {
-                  const _setTimeout = setTimeout;
-                  tmp5.current = setTimeout(() => {
-                    ref.current = null;
-                    const AccessibilityAnnouncer = auto(first1[19]).AccessibilityAnnouncer;
-                    const intl = auto(first1[20]).intl;
-                    AccessibilityAnnouncer.announce(intl.string(auto(first1[20]).t.X2hJL7));
-                  }, 1000);
-                }
-                return () => {
-                  if (null != ref.current) {
-                    const _clearTimeout = clearTimeout;
-                    clearTimeout(tmp.current);
-                    tmp.current = null;
-                  }
-                };
-              }
-            } else {
-              tmp3.current = false;
-            }
-          } else {
-            tmp.current = true;
-          }
-        }
-        const items5 = [auto, first1];
-        cResult[20] = auto;
-        cResult[21] = first1;
-        cResult[22] = ve;
-        cResult[23] = items5;
-        tmp42 = ve;
-        tmp43 = items5;
-      }
-    }
-    class D {
-      constructor() {
-        if (!auto) {
-          tmp = closure_11;
-          tmp2 = width;
-          tmp3 = closure_6;
-          num = -100;
-          num2 = 1;
-          tmp4 = closure_11(width * (1 - closure_6 / -100));
-        }
-        return;
-      }
-    }
-    const items6 = [auto, first2, width];
-    cResult[8] = auto;
-    cResult[9] = first2;
-    cResult[10] = width;
-    cResult[11] = D;
-    cResult[12] = items6;
-    tmp31 = items6;
-    tmp30 = D;
-  }
-  class W {
-    constructor() {
-      if (!auto) {
-        tmp = closure_10;
-        tmp2 = closure_8;
-        num = 100;
-        tmp3 = closure_10(closure_8 / 100);
-      }
-      return;
-    }
-  }
-  const items7 = [auto, first3];
-  cResult[4] = auto;
-  cResult[5] = first3;
-  cResult[6] = W;
-  cResult[7] = items7;
-  tmp28 = items7;
-  tmp27 = W;
-}) : ((auto) => {
+export default function VoiceSensitivity(auto) {
   auto = auto.auto;
   const onThresholdChange = auto.onThresholdChange;
   let width;
   let stateFromStores;
   let first2;
-  state = undefined;
+  let state;
   c10 = undefined;
   closure_14 = undefined;
   const tmp = closure_14();
@@ -597,18 +57,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
   const tmp6 = width(stateFromStores.useState(first2.isCurrentUserSpeaking()), 2);
   const first = tmp6[0];
   closure_3 = tmp6[1];
-  width = onThresholdChange(first[15])().width;
+  width = onThresholdChange(first[13])().width;
   const ref1 = stateFromStores.useRef(null);
   const tmp8 = onThresholdChange;
   const items = [state];
-  stateFromStores = auto(first[16]).useStateFromStores(items, () => state.getState(), []);
+  stateFromStores = auto(first[14]).useStateFromStores(items, () => state.getState(), []);
   const tmp12 = width(stateFromStores.useState(0), 2);
   const first1 = tmp12[0];
   closure_7 = tmp12[1];
   const tmp14 = width(stateFromStores.useState(sum), 2);
   first2 = tmp14[0];
   state = tmp14[1];
-  let obj = auto(first[16]);
+  let obj = auto(first[14]);
   [tmp17, c10] = width(stateFromStores.useState(first2 / 100), 2);
   const tmp18 = width(stateFromStores.useState(width * (1 - first1 / -100)), 2);
   closure_11 = tmp18[1];
@@ -633,7 +93,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
     state(arg0);
   }, []);
   const effect2 = stateFromStores.useEffect(() => {
-    closure_1 = async function _listenOnlyIfWeHavePermission2(arg0, value) {
+    closure_1 = async function _listenOnlyIfWeHavePermission(arg0, value) {
       if (c2 === 2) {
         c2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -644,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
           const obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -661,7 +121,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
               closure_0 = tmp4;
               c1 = 1;
               c2 = 1;
-              const obj4 = { value: onThresholdChange(5389).hasPermission(constants.AUDIO, { showAuthorizationError: false }), done: false };
+              const obj4 = { value: onThresholdChange(5387).hasPermission(constants.AUDIO, { showAuthorizationError: false }), done: false };
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -678,10 +138,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
             }
             if (tmp5) {
               mediaEngine = mediaEngine.getMediaEngine();
-              mediaEngine.on(auto(4845).MediaEngineEvent.VoiceActivity, callback);
+              mediaEngine.on(auto(4843).MediaEngineEvent.VoiceActivity, callback);
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c2 = tmp;
@@ -729,9 +189,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
             const _setTimeout = setTimeout;
             tmp5.current = setTimeout(() => {
               ref.current = null;
-              const AccessibilityAnnouncer = auto(first[19]).AccessibilityAnnouncer;
-              const intl = auto(first[20]).intl;
-              AccessibilityAnnouncer.announce(intl.string(auto(first[20]).t.X2hJL7));
+              const AccessibilityAnnouncer = auto(first[17]).AccessibilityAnnouncer;
+              const intl = auto(first[18]).intl;
+              AccessibilityAnnouncer.announce(intl.string(auto(first[18]).t.X2hJL7));
             }, 1000);
           }
           return () => {
@@ -751,16 +211,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
   }, items4);
   if (auto) {
     let obj2 = { accessible: true, role: "meter", "aria-label": null, "aria-valuenow": null, "aria-valuemin": 0, "aria-valuemax": 100, "aria-valuetext": null, onAccessibilityFocus: null, onAccessibilityBlur: null, style: null, children: null };
-    const intl2 = tmp10(tmp9[20]).intl;
-    obj2["aria-label"] = intl2.string(tmp10(tmp9[20]).t.yZcOjo);
+    const intl2 = tmp10(tmp9[18]).intl;
+    obj2["aria-label"] = intl2.string(tmp10(tmp9[18]).t.yZcOjo);
     let num = 0;
     if (first) {
       num = 100;
     }
     obj2["aria-valuenow"] = num;
-    const intl3 = tmp10(tmp9[20]).intl;
+    const intl3 = tmp10(tmp9[18]).intl;
     const string = intl3.string;
-    const t = tmp10(tmp9[20]).t;
+    const t = tmp10(tmp9[18]).t;
     if (first) {
       let stringResult = string(t.haLKZ0);
     } else {
@@ -786,11 +246,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
     obj5.style = items5;
     obj4.children = callback(first1, obj5);
     obj2.children = callback(first1, obj4);
-    const items6 = [callback(tmp10(tmp9[21]).AccessibilityFocusView, obj2), ];
+    const items6 = [callback(tmp10(tmp9[19]).AccessibilityFocusView, obj2), ];
     const obj6 = { inset: true, children: null };
-    const intl4 = tmp10(tmp9[20]).intl;
-    obj6.children = intl4.string(tmp10(tmp9[20]).t.W3K5Im);
-    items6[1] = callback(tmp10(tmp9[22]).FormHint, obj6);
+    const intl4 = tmp10(tmp9[18]).intl;
+    obj6.children = intl4.string(tmp10(tmp9[18]).t.W3K5Im);
+    items6[1] = callback(tmp10(tmp9[20]).FormHint, obj6);
     obj3.children = items6;
     return ref(first1, obj3);
   } else {
@@ -819,8 +279,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
     obj13.style = items11;
     items10[1] = callback(first1, obj13);
     const obj15 = { style: tmp.sensitivitySlider, value: sum, minimumValue: 0, maximumValue: 100, minimumTrackTintColor: "transparent", maximumTrackTintColor: "transparent", accessibilityLabel: null, onValueChange: null, onSlidingComplete: null, onResponderGrant: null };
-    let intl = tmp10(tmp9[20]).intl;
-    obj15.accessibilityLabel = intl.string(tmp10(tmp9[20]).t["sqUm+k"]);
+    let intl = tmp10(tmp9[18]).intl;
+    obj15.accessibilityLabel = intl.string(tmp10(tmp9[18]).t["sqUm+k"]);
     obj15.onValueChange = callback1;
     obj15.onSlidingComplete = function handleSlidingComplete(arg0) {
       onThresholdChange(-1 * (100 - arg0));
@@ -828,7 +288,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
     const tmp25 = ref;
     const tmp26 = first1;
     const tmp27 = callback;
-    const tmp8Result = tmp8(tmp9[24]);
+    const tmp8Result = tmp8(tmp9[21]);
     let fn;
     if (tmp10Result.isAndroid()) {
       fn = () => true;
@@ -839,4 +299,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
     return tmp25(tmp26, obj7);
   }
   const tmp16 = width(stateFromStores.useState(first2 / 100), 2);
-});
+};

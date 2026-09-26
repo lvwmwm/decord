@@ -1,18 +1,18 @@
-// Module ID: 9346
-// Function ID: 9347
+// Module ID: 9348
+// Function ID: 9349
 // Name: getURLForApplication
-// Dependencies: [9166, 9164, 2]
+// Dependencies: [9168, 9166, 2]
 // Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 9346 (getURLForApplication)
-import TestModeStore from "TestModeStore" /* 9166 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9164 */;
+// Module 9348 (getURLForApplication)
+import TestModeStore from "TestModeStore" /* 9168 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9166 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/getURLForApplication.tsx");
 
 export default function getURLForApplication(arg0) {
-  state = DeveloperActivityShelfStore.getState();
+  const state = DeveloperActivityShelfStore.getState();
   let useActivityUrlOverride = state.useActivityUrlOverride;
   if (useActivityUrlOverride) {
     useActivityUrlOverride = null != state.activityUrlOverride;
@@ -66,7 +66,7 @@ export const getNonTestModeUrlForApplication = function getNonTestModeUrlForAppl
   }
 };
 export const isUsingDevShelfActivityUrlOverride = function isUsingDevShelfActivityUrlOverride() {
-  state = DeveloperActivityShelfStore.getState();
+  const state = DeveloperActivityShelfStore.getState();
   let useActivityUrlOverride = state.useActivityUrlOverride;
   if (useActivityUrlOverride) {
     useActivityUrlOverride = null != state.activityUrlOverride;

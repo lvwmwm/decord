@@ -1,11 +1,11 @@
-// Module ID: 17457
-// Function ID: 17458
+// Module ID: 17481
+// Function ID: 17482
 // Name: useActivityWebViewLockManager
-// Dependencies: [32, 19, 4529, 4503, 2]
+// Dependencies: [32, 19, 4524, 4498, 2]
 // Exports: default, useLockedWebView
 
-// Module 17457 (useActivityWebViewLockManager)
-import native from "native" /* 4503 */;
+// Module 17481 (useActivityWebViewLockManager)
+import native from "native" /* 4498 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 5259
-// Function ID: 5260
+// Module ID: 5257
+// Function ID: 5258
 // Name: TopSoundboardSoundStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 5259 (TopSoundboardSoundStore)
+// Module 5257 (TopSoundboardSoundStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const obj = { topSoundboardSoundsByGuildId: {} };
 let closure_1 = obj;

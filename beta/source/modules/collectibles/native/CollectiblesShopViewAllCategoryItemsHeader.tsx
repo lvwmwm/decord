@@ -1,15 +1,15 @@
-// Module ID: 16171
-// Function ID: 16172
+// Module ID: 16175
+// Function ID: 16176
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 4790, 558, 1488, 13763, 8144, 8147, 1119, 2]
+// Dependencies: [19, 17, 21, 4788, 1484, 13753, 8139, 8143, 1115, 2]
 // Exports: default
 
-// Module 16171 (CollectiblesShopViewAllCategoryItemsHeader)
-import util from "util" /* 1119 */;
-import useNavigation from "useNavigation" /* 1488 */;
-import HeaderShared from "HeaderShared" /* 8144 */;
-import _modDef8147 from "module_8147" /* 8147 */;
-import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13763 */;
+// Module 16175 (CollectiblesShopViewAllCategoryItemsHeader)
+import util from "util" /* 1115 */;
+import useNavigation from "useNavigation" /* 1484 */;
+import HeaderShared from "HeaderShared" /* 8139 */;
+import _modDef8143 from "module_8143" /* 8143 */;
+import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13753 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,14 +17,12 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_7 = createStyles.createStyles({ headerContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: 12, paddingLeft: 8 }, backButton: { flex: 1 }, logo: { flex: 2, height: 36 }, dummyRightButton: { flex: 1 } });
-let ReactCompilerGating = fn(558);
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-const result1 = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopViewAllCategoryItemsHeader.tsx");
+const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopViewAllCategoryItemsHeader.tsx");
 
-export default function CollectiblesShopViewAllCategoryItemsHeader_unoptimized(arg0) {
+export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   ({ logoUrl, buttonColor, categoryName } = arg0);
   const navigation = useNavigation.useStackNavigation();
   const tmp = closure_7();
@@ -35,7 +33,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader_unoptimized(a
   obj4.paddingTop = youBarSettingsCustomHeaderPaddingTop;
   obj3.style = obj4;
   const obj5 = { style: tmp.backButton, children: null };
-  const obj6 = { source: _modDef8147, color: buttonColor, accessibilityLabel: null, onPress: null };
+  const obj6 = { source: _modDef8143, color: buttonColor, accessibilityLabel: null, onPress: null };
   const intl = util.intl;
   obj6.accessibilityLabel = intl.string(util.t["13/7kX"]);
   obj6.onPress = function onPress() {

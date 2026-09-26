@@ -1,10 +1,10 @@
-// Module ID: 16578
-// Function ID: 16579
+// Module ID: 16570
+// Function ID: 16571
 // Name: showChannelBadge
 // Dependencies: [2]
 // Exports: default
 
-// Module 16578 (showChannelBadge)
+// Module 16570 (showChannelBadge)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_sidebar/showChannelBadge.tsx");

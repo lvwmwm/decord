@@ -1,11 +1,11 @@
-// Module ID: 12672
-// Function ID: 12673
+// Module ID: 12756
+// Function ID: 12757
 // Name: LayerStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 12672 (LayerStore)
+// Module 12756 (LayerStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 function handlePopAllLayers() {
   closure_0 = [];

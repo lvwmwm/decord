@@ -1,14 +1,14 @@
-// Module ID: 7683
-// Function ID: 7684
+// Module ID: 7681
+// Function ID: 7682
 // Name: BillingStandaloneUtils
-// Dependencies: [1078, 1370, 1259, 1275, 2]
+// Dependencies: [1074, 1366, 1255, 1271, 2]
 // Exports: goToBillingStandalonePageWithHandoff, goToStandalonePremiumCheckoutWeb
 
-// Module 7683 (BillingStandaloneUtils)
-import v1 from "v1" /* 1259 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import URLUtilsDefault from "URLUtils" /* 1370 */;
-import Constants from "Constants" /* 1078 */;
+// Module 7681 (BillingStandaloneUtils)
+import v1 from "v1" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 function goToStandalonePremiumCheckout(planId, arg1, arg2) {

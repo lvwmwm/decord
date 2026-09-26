@@ -1,14 +1,14 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17230
+// Function ID: 17231
 // Name: getFriendStatusCounts
-// Dependencies: [4830, 4441, 1078, 2]
+// Dependencies: [4828, 4437, 1074, 2]
 // Exports: default
 
-// Module 17240 (getFriendStatusCounts)
-import PresenceStore from "PresenceStore" /* 4830 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
+// Module 17230 (getFriendStatusCounts)
+import PresenceStore from "PresenceStore" /* 4828 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
-const StatusTypes = fn(1078).StatusTypes;
+const StatusTypes = fn(1074).StatusTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/friends/getFriendStatusCounts.tsx");
 

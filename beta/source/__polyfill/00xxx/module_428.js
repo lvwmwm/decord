@@ -279,7 +279,7 @@ let items = [
       }
       const obj2 = { accessible: false !== self.props.accessible, accessibilityLabel, accessibilityHint: self.props.accessibilityHint, accessibilityLanguage: self.props.accessibilityLanguage, accessibilityRole: self.props.accessibilityRole, accessibilityState, accessibilityValue: range, accessibilityActions: self.props.accessibilityActions, onAccessibilityAction: self.props.onAccessibilityAction, importantForAccessibility: null, accessibilityViewIsModal: null, accessibilityLiveRegion: null, accessibilityElementsHidden: null, style: null, onLayout: null, hitSlop: null, hasTVPreferredFocus: null, nextFocusDown: null, nextFocusForward: null, nextFocusLeft: null, nextFocusRight: null, nextFocusUp: null, focusable: null, nativeID: null, testID: null, ref: null };
       let str2 = "no-hide-descendants";
-      const tmp14 = v65535;
+      const tmp14 = closure_1_10;
       const tmp3 = _objectWithoutProperties(eventHandlers, closure_2);
       if (true !== self.props["aria-hidden"]) {
         str2 = self.props.importantForAccessibility;

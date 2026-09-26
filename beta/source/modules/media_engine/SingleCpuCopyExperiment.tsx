@@ -1,10 +1,10 @@
-// Module ID: 14123
-// Function ID: 14124
+// Module ID: 14113
+// Function ID: 14114
 // Name: SingleCpuCopyExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 14123 (SingleCpuCopyExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 14113 (SingleCpuCopyExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-single-cpu-copy", kind: "user", defaultConfig: { enabled: false }, variations: null };

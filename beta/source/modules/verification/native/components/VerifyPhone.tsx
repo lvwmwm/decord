@@ -1,10 +1,10 @@
-// Module ID: 7357
-// Function ID: 7358
+// Module ID: 7355
+// Function ID: 7356
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 21, 7324, 7358, 7359, 1119, 2]
+// Dependencies: [5, 32, 19, 21, 7322, 7356, 7357, 1115, 2]
 // Exports: default
 
-// Module 7357 (VerifyPhone)
+// Module 7355 (VerifyPhone)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -42,7 +42,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -97,7 +97,7 @@ export default function VerifyPhone(phone) {
           } else if (value) {
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
           c4 = 0;
           c6 = 3;
@@ -140,7 +140,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -171,7 +171,7 @@ export default function VerifyPhone(phone) {
         } else {
           closure_1_4(false);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;

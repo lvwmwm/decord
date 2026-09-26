@@ -1,12 +1,12 @@
-// Module ID: 18262
-// Function ID: 18263
+// Module ID: 18253
+// Function ID: 18254
 // Name: GuildRoleSubscriptionTierTemplateActionCreators
-// Dependencies: [5, 1078, 577, 1275, 2]
+// Dependencies: [5, 1074, 573, 1271, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 18262 (GuildRoleSubscriptionTierTemplateActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 18253 (GuildRoleSubscriptionTierTemplateActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let closure_5 = async function _getTemplates(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -61,7 +61,7 @@ let closure_5 = async function _getTemplates(arg0, value) {
           const obj = closure_130_1(closure_130_2[2]);
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp16) {
       c4 = tmp;
@@ -69,7 +69,7 @@ let closure_5 = async function _getTemplates(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplateActionCreators.tsx");
 

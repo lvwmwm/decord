@@ -1,59 +1,23 @@
-// Module ID: 15467
-// Function ID: 15468
+// Module ID: 15471
+// Function ID: 15472
 // Name: QuestDockUnenrolledBackground
-// Dependencies: [19, 15361, 21, 558, 568, 15368, 15357, 4494, 580, 15468, 2]
+// Dependencies: [19, 15365, 21, 15372, 15361, 4489, 576, 15472, 2]
 
-// Module 15467 (QuestDockUnenrolledBackground)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4494 */;
-import QuestHooks from "QuestHooks" /* 15357 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15368 */;
-import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 15468 */;
+// Module 15471 (QuestDockUnenrolledBackground)
+import nativeDefault from "native" /* 576 */;
+import useToken from "useToken" /* 4489 */;
+import QuestHooks from "QuestHooks" /* 15361 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15372 */;
+import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 15472 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const expandedHeight = fn(15361).QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
+const expandedHeight = fn(15365).QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockUnenrolledBackground.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(5);
-  const questDockQuest = QuestDockCreativeContext.useQuestDockQuest();
-  const questDockHeroAsset = QuestHooks.useQuestDockHeroAsset(questDockQuest);
-  ({ staticUrl, videoAsset } = questDockHeroAsset);
-  const token = useToken.useToken(nativeDefault.colors.CARD_BACKGROUND_DEFAULT);
-  let url;
-  if (videoAsset != null) {
-    url = videoAsset.url;
-  }
-  let mimetype;
-  if (videoAsset != null) {
-    mimetype = videoAsset.mimetype;
-  }
-  if (mimetype == null) {
-    mimetype = null;
-  }
-  if (cResult[0] === token) {
-    if (cResult[1] === staticUrl) {
-      if (cResult[2] === url) {
-        if (cResult[3] === mimetype) {
-          let tmp9 = cResult[4];
-        }
-        return tmp9;
-      }
-    }
-  }
-  const tmp10 = jsx(QuestDockVideoBackgroundDefault, { expandedHeight, imageUrl: staticUrl, videoUrl: url, videoMimetype: mimetype, gradientBaseColor: token });
-  cResult[0] = token;
-  cResult[1] = staticUrl;
-  cResult[2] = url;
-  cResult[3] = mimetype;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (() => {
+export default noop.memo(function QuestDockUnenrolledBackground() {
   const questDockQuest = QuestDockCreativeContext.useQuestDockQuest();
   const questDockHeroAsset = QuestHooks.useQuestDockHeroAsset(questDockQuest);
   ({ videoAsset, staticUrl } = questDockHeroAsset);
@@ -75,4 +39,4 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj4.videoMimetype = mimetype;
   obj4.gradientBaseColor = token;
   return tmp4(QuestDockVideoBackgroundDefault, obj4);
-}));
+});

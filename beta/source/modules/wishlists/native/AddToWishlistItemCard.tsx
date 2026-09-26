@@ -1,23 +1,23 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13435
+// Function ID: 13436
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1078, 21, 4790, 580, 13444, 9082, 9149, 1245, 9093, 4490, 1119, 9083, 9079, 2]
+// Dependencies: [5, 32, 19, 17, 1074, 21, 4788, 576, 13433, 9084, 9151, 1241, 9095, 4486, 1115, 9085, 9081, 2]
 // Exports: default
 
-// Module 13445 (AddToWishlistItemCard)
-import nativeDefault from "native" /* 580 */;
-import SKUPreviewDefault from "SKUPreview" /* 9082 */;
-import HeartOutlineIcon from "HeartOutlineIcon" /* 9149 */;
+// Module 13435 (AddToWishlistItemCard)
+import nativeDefault from "native" /* 576 */;
+import SKUPreviewDefault from "SKUPreview" /* 9084 */;
+import HeartOutlineIcon from "HeartOutlineIcon" /* 9151 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { heartOverlay: null };
 const rect = { position: "absolute", top: nativeDefault.space.PX_4, right: nativeDefault.space.PX_4, zIndex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
 obj2.heartOverlay = rect;
@@ -39,11 +39,11 @@ export default function AddToWishlistItemCard(sku) {
   let items = [sku, tmp2.heartOverlay, merged.size];
   const callback = wishlistAnalyticsContext.useCallback(() => {
     const obj = { children: null };
-    const items = [closure_2_8(SKUPreviewDefault, { sku, size: merged.size }), ];
-    const obj3 = { style: heartOverlay.heartOverlay, pointerEvents: "none", children: closure_2_8(HeartOutlineIcon.HeartOutlineIcon, { size: "sm", color: nativeDefault.colors.ICON_OVERLAY_LIGHT }) };
-    items[1] = closure_2_8(View, obj3);
+    const items = [React6(SKUPreviewDefault, { sku, size: merged.size }), ];
+    const obj3 = { style: heartOverlay.heartOverlay, pointerEvents: "none", children: React6(HeartOutlineIcon.HeartOutlineIcon, { size: "sm", color: nativeDefault.colors.ICON_OVERLAY_LIGHT }) };
+    items[1] = React6(View, obj3);
     obj.children = items;
-    return v65535(options, obj);
+    return closure_2_10(React7, obj);
   }, items);
   const items1 = [first, wishlistAnalyticsContext, , , , ];
   ({ id: arr2[2], productLine: arr2[3] } = sku);
@@ -60,7 +60,7 @@ export default function AddToWishlistItemCard(sku) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

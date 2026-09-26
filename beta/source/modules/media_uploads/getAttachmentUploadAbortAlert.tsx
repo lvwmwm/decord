@@ -1,12 +1,12 @@
-// Module ID: 9535
-// Function ID: 9536
+// Module ID: 9539
+// Function ID: 9540
 // Name: getAttachmentUploadAbortAlert
-// Dependencies: [1078, 1119, 5379, 2]
+// Dependencies: [1074, 1115, 5377, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 9535 (getAttachmentUploadAbortAlert)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
+// Module 9539 (getAttachmentUploadAbortAlert)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -17,19 +17,19 @@ export const getAttachmentUploadAbortAlertContent = function getAttachmentUpload
   const stringResult = intl.string(util.t.B3vFdU);
   if (AbortCodes.TOTAL_ATTACHMENT_SIZE_TOO_LARGE === code) {
     const obj2 = { title: stringResult, body: null };
-    const intl4 = tmp(1119).intl;
-    const obj3 = { maxSizeMb: tmp(5379).MAX_TOTAL_ATTACHMENT_SIZE_MB };
-    obj2.body = intl4.formatToPlainString(tmp(1119).t.DYFPg2, obj3);
+    const intl4 = tmp(1115).intl;
+    const obj3 = { maxSizeMb: tmp(5377).MAX_TOTAL_ATTACHMENT_SIZE_MB };
+    obj2.body = intl4.formatToPlainString(tmp(1115).t.DYFPg2, obj3);
     return obj2;
   } else if (tmp4.CLOUD_UPLOAD_NOT_FOUND === code) {
     const obj4 = { title: stringResult, body: null };
-    const intl3 = tmp(1119).intl;
-    obj4.body = intl3.string(tmp(1119).t.bQldfH);
+    const intl3 = tmp(1115).intl;
+    obj4.body = intl3.string(tmp(1115).t.bQldfH);
     return obj4;
   } else if (tmp4.INVALID_PERMISSIONS === code) {
     const obj = { title: stringResult, body: null };
-    const intl2 = tmp(1119).intl;
-    obj.body = intl2.string(tmp(1119).t.zl4Weq);
+    const intl2 = tmp(1115).intl;
+    obj.body = intl2.string(tmp(1115).t.zl4Weq);
     return obj;
   } else {
     return null;

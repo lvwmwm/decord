@@ -1,50 +1,20 @@
-// Module ID: 7329
-// Function ID: 7330
+// Module ID: 7327
+// Function ID: 7328
 // Name: SearchField
-// Dependencies: [19, 21, 558, 568, 1119, 6880, 7330, 2]
+// Dependencies: [19, 21, 6887, 1115, 7328, 2]
 
-// Module 7329 (SearchField)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import TextField from "TextField" /* 6880 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7330 */;
+// Module 7327 (SearchField)
+import util from "util" /* 1115 */;
+import TextField from "TextField" /* 6887 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7328 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
 
-export const SearchField = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
-  const cResult = c.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t["5h0QOP"]);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    if (cResult[2] === ref) {
-      let tmp6 = cResult[3];
-    }
-    return tmp6;
-  }
-  const obj2 = { placeholder: first, returnKeyType: "search", ref };
-  const merged = Object.assign(arg0);
-  obj2.autoCorrect = false;
-  obj2.autoCapitalize = "none";
-  obj2.accessibilityRole = "search";
-  obj2.leadingIcon = MagnifyingGlassIcon.MagnifyingGlassIcon;
-  obj2.clearable = true;
-  const tmp8 = jsx(TextField.TextField, { placeholder: first, returnKeyType: "search", ref });
-  cResult[1] = arg0;
-  cResult[2] = ref;
-  cResult[3] = tmp8;
-  tmp6 = tmp8;
-}) : ((arg0, ref) => {
+export const SearchField = noop.forwardRef((arg0, ref) => {
   const obj = { placeholder: null, returnKeyType: "search", ref: null };
   const intl = util.intl;
   obj.placeholder = intl.string(util.t["5h0QOP"]);
@@ -56,4 +26,4 @@ export const SearchField = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
   obj.leadingIcon = MagnifyingGlassIcon.MagnifyingGlassIcon;
   obj.clearable = true;
   return jsx(TextField.TextField, { placeholder: null, returnKeyType: "search", ref: null });
-}));
+});

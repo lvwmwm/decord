@@ -1,31 +1,35 @@
 // Module ID: 5035
 // Function ID: 5036
-// Dependencies: [5033, 1459, 1285, 5036, 5039, 5042, 5109]
+// Dependencies: [5036]
 
 // Module 5035
-import _mod1285 from "module_1285" /* 1285 */;
-import requirePromise from "requirePromise" /* 5033 */;
-import callBind_mod from "callBind" /* 1459 */;
+import _mod5036 from "module_5036" /* 5036 */;
 
-requirePromise();
-let callBind = callBind_mod;
-let closure_2 = callBind(_mod1285("%Promise.all%"));
-let callBind = callBind_mod;
-let closure_3 = callBind(_mod1285("%Promise.reject%"));
 
-export default function allSettled(arg0) {
-  const self = this;
-  if ("Object" !== self(5036)(this)) {
-    const _TypeError = TypeError;
-    const typeError = new TypeError("`this` value must be an object");
-    throw typeError;
-  } else {
-    return closure_2(this, tmp(5042)(tmp(5039)(arg0), (arg0) => {
-      try {
-        return promise.then((value) => ({ status: "fulfilled", value }), (reason) => ({ status: "rejected", reason }));
-      } catch (tmp3) {
-        return closure_3(tmp, tmp3);
+export default function Type(num) {
+  let str = "Null";
+  if (null !== num) {
+    let str2 = "Undefined";
+    if (undefined !== num) {
+      let str3 = "Object";
+      if (!_mod5036(num)) {
+        let str4 = "Number";
+        if (typeof num !== "number") {
+          let str5 = "Boolean";
+          if (typeof num !== "boolean") {
+            let str6;
+            if (typeof num === "string") {
+              str6 = "String";
+            }
+            str5 = str6;
+          }
+          str4 = str5;
+        }
+        str3 = str4;
       }
-    }));
+      str2 = str3;
+    }
+    str = str2;
   }
+  return str;
 };

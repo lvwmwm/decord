@@ -1,11 +1,11 @@
-// Module ID: 7864
-// Function ID: 7865
+// Module ID: 7859
+// Function ID: 7860
 // Name: CollectiblesShopHomeStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7864 (CollectiblesShopHomeStore)
+// Module 7859 (CollectiblesShopHomeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let closure_0 = [];
 const map = new Map();

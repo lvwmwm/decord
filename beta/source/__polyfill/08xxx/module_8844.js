@@ -1,17 +1,18 @@
 // Module ID: 8844
 // Function ID: 8845
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8845, 8778, 8789]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8775, 8845, 8784]
 
 // Module 8844
-import _modDef8789 from "module_8789" /* 8789 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef8784 from "module_8784" /* 8784 */;
+import _modDef8845 from "module_8845" /* 8845 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const Marker = importDefault;
+const Path = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,15 +32,16 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
+_possibleConstructorReturnDefault;
 const jsx = fn(21).jsx;
-class Marker {
+class Path {
   constructor() {
     self = this;
-    tmp = c2(this, Marker);
-    tmp2 = closure_4;
-    obj = closure_4(Marker);
-    tmp3 = closure_3;
-    if (metroRequire()) {
+    tmp = closure_3(this, Path);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(Path);
+    tmp3 = closure_4;
+    if (closure_7()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -52,23 +54,23 @@ class Marker {
     return tmp3(self, constructResult);
   }
 }
-_inherits(Marker, _modDef8789);
+_inherits(Path, _modDef8784);
 const entry = {
   key: "render",
   value: function render() {
     const self = this;
     const props = this.props;
-    ({ viewBox, preserveAspectRatio, markerWidth, markerHeight, children } = props);
-    const obj2 = {
+    const obj = {};
+    const merged = Object.assign(Path(8775).extract(this, props));
+    obj.d = props.d;
+    const obj2 = Path(8775);
+    const obj3 = {
       ref(arg0) {
         return self.refMethod(arg0);
       }
     };
-    const obj = { name: props.id, refX: props.refX, refY: props.refY, markerUnits: props.markerUnits, orient: String(props.orient), markerWidth, markerHeight };
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(Marker(8778)({ viewBox, preserveAspectRatio }));
-    obj2.children = children;
-    return jsx(Marker(8845), {
+    const merged1 = Object.assign(obj);
+    return jsx(_modDef8845, {
       ref(arg0) {
         return self.refMethod(arg0);
       }
@@ -76,8 +78,7 @@ const entry = {
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(Marker, items);
-importDefaultResultResult.displayName = "Marker";
-importDefaultResultResult.defaultProps = { refX: 0, refY: 0, orient: "0", markerWidth: 3, markerHeight: 3, markerUnits: "strokeWidth" };
+const importDefaultResultResult = _createClass(Path, items);
+importDefaultResultResult.displayName = "Path";
 
 export default importDefaultResultResult;

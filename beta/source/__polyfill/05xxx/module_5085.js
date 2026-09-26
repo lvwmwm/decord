@@ -1,13 +1,9 @@
 // Module ID: 5085
 // Function ID: 5086
-// Dependencies: []
+// Dependencies: [1281]
 
 // Module 5085
+import _mod1281 from "module_1281" /* 1281 */;
 
-export default function isPropertyKey(str) {
-  let tmp = typeof str === "string";
-  if (typeof str !== "string") {
-    tmp = typeof str === "symbol";
-  }
-  return tmp;
-};
+
+export default _mod1281;

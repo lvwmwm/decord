@@ -1,139 +1,17 @@
-// Module ID: 17098
-// Function ID: 17099
+// Module ID: 17088
+// Function ID: 17089
 // Name: VibegrationsChannelChatToasts
-// Dependencies: [19, 17, 21, 4790, 580, 1119, 558, 568, 4635, 1181, 4786, 5856, 17099, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 1115, 4632, 5856, 1177, 4784, 17089, 2]
+// Exports: default
 
-// Module 17098 (VibegrationsChannelChatToasts)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import UserUtils from "UserUtils" /* 4635 */;
-import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 17099 */;
+// Module 17088 (VibegrationsChannelChatToasts)
+import nativeDefault from "native" /* 576 */;
+import UserUtils from "UserUtils" /* 4632 */;
+import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 17089 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { column: null, opaque: null, card: null, body: null };
-const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, alignItems: "flex-end", gap: nativeDefault.space.PX_8 };
-obj2.column = rect;
-obj2.opaque = { width: 304, maxWidth: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
-let obj3 = { width: 304, maxWidth: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
-obj2.card = { padding: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.body = { flex: 1 };
-let closure_7 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
-  const cResult = c.c(23);
-  message = message.message;
-  const onOpenChat = message.onOpenChat;
-  const tmp4 = closure_7();
-  const name = UserUtils.useName(message.author);
-  if (cResult[0] !== message) {
-    const trimmed = message.content.replace(/\s+/g, " ").trim();
-    if ("" !== trimmed) {
-      cResult[0] = message;
-      cResult[1] = trimmed;
-      let tmp6 = trimmed;
-    } else if (message.stickerItems.length > 0) {
-      const intl2 = tmp(1119).intl;
-      let stringResult = intl2.string(tmp(1119).t.kHdYCW);
-    } else {
-      const intl = tmp(1119).intl;
-      stringResult = intl.string(tmp(1119).t["6hGo0c"]);
-    }
-    const str3 = message.content.replace(/\s+/g, " ");
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === message) {
-    if (cResult[3] === onOpenChat) {
-      let tmp10 = cResult[4];
-    }
-    if (cResult[5] !== message.author) {
-      const obj3 = { size: tmp(1181).AvatarSizes.SMALL, user: message.author, guildId: "Array" };
-      const tmp13 = hasOwnProperty(tmp(1181).Avatar, obj3);
-      cResult[5] = message.author;
-      cResult[6] = tmp13;
-      let tmp11 = tmp13;
-    } else {
-      tmp11 = cResult[6];
-    }
-    if (cResult[7] !== name) {
-      const obj4 = { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name };
-      const tmp16 = hasOwnProperty(tmp(4786).Text, obj4);
-      cResult[7] = name;
-      cResult[8] = tmp16;
-      let tmp14 = tmp16;
-    } else {
-      tmp14 = cResult[8];
-    }
-    if (cResult[9] !== tmp6) {
-      const obj5 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: tmp6 };
-      const tmp19 = hasOwnProperty(tmp(4786).Text, obj5);
-      cResult[9] = tmp6;
-      cResult[10] = tmp19;
-      let tmp17 = tmp19;
-    } else {
-      tmp17 = cResult[10];
-    }
-    if (cResult[11] === tmp4.body) {
-      if (cResult[12] === tmp14) {
-        if (cResult[13] === tmp17) {
-          let tmp20 = cResult[14];
-        }
-        if (cResult[15] === tmp10) {
-          if (cResult[16] === tmp4.card) {
-            if (cResult[17] === tmp11) {
-              if (cResult[18] === tmp20) {
-                let tmp24 = cResult[19];
-              }
-              if (cResult[20] === tmp4.opaque) {
-                if (cResult[21] === tmp24) {
-                  let tmp27 = cResult[22];
-                }
-                return tmp27;
-              }
-              const obj6 = { style: tmp4.opaque, children: tmp24 };
-              const tmp30 = hasOwnProperty(View, obj6);
-              cResult[20] = tmp4.opaque;
-              cResult[21] = tmp24;
-              cResult[22] = tmp30;
-              tmp27 = tmp30;
-            }
-          }
-        }
-        const obj7 = { variant: "primary", shadow: "high", border: "subtle", style: tmp4.card, onPress: tmp10, children: null };
-        const items = [tmp11, tmp20];
-        obj7.children = items;
-        const tmp26 = timestampProducer(tmp(5856).Card, obj7);
-        cResult[15] = tmp10;
-        cResult[16] = tmp4.card;
-        cResult[17] = tmp11;
-        cResult[18] = tmp20;
-        cResult[19] = tmp26;
-        tmp24 = tmp26;
-      }
-    }
-    const obj8 = { style: tmp4.body, children: null };
-    const items1 = [tmp14, tmp17];
-    obj8.children = items1;
-    const tmp23 = timestampProducer(View, obj8);
-    cResult[11] = tmp4.body;
-    cResult[12] = tmp14;
-    cResult[13] = tmp17;
-    cResult[14] = tmp23;
-    tmp20 = tmp23;
-  }
-  const fn = function x() {
-    return onOpenChat(message);
-  };
-  cResult[2] = message;
-  cResult[3] = onOpenChat;
-  cResult[4] = fn;
-  tmp10 = fn;
-}) : ((message) => {
+function ChatToast(message) {
   message = message.message;
   const onOpenChat = message.onOpenChat;
   const tmp = closure_7();
@@ -144,79 +22,48 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     const obj2 = { style: tmp.opaque, children: null };
     const callback = noop.useCallback(() => onOpenChat(message), items);
     const obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: null };
-    const obj4 = { size: tmp2(1181).AvatarSizes.SMALL, user: message.author, guildId: "Array" };
-    const items1 = [hasOwnProperty(tmp2(1181).Avatar, obj4), ];
+    const obj4 = { size: tmp2(1177).AvatarSizes.SMALL, user: message.author, guildId: "Array" };
+    const items1 = [hasOwnProperty(tmp2(1177).Avatar, obj4), ];
     const obj5 = { style: tmp.body, children: null };
     const obj6 = { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name };
-    const items2 = [hasOwnProperty(tmp2(4786).Text, obj6), ];
+    const items2 = [hasOwnProperty(tmp2(4784).Text, obj6), ];
     const obj7 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed };
-    items2[1] = hasOwnProperty(tmp2(4786).Text, obj7);
+    items2[1] = hasOwnProperty(tmp2(4784).Text, obj7);
     obj5.children = items2;
     items1[1] = timestampProducer(View, obj5);
     obj3.children = items1;
     obj2.children = timestampProducer(tmp2(5856).Card, obj3);
     return hasOwnProperty(View, obj2);
   } else if (message.stickerItems.length > 0) {
-    const intl2 = tmp2(1119).intl;
-    let stringResult = intl2.string(tmp2(1119).t.kHdYCW);
+    const intl2 = tmp2(1115).intl;
+    let stringResult = intl2.string(tmp2(1115).t.kHdYCW);
   } else {
-    const intl = tmp2(1119).intl;
-    stringResult = intl.string(tmp2(1119).t["6hGo0c"]);
+    const intl = tmp2(1115).intl;
+    stringResult = intl.string(tmp2(1115).t["6hGo0c"]);
   }
-});
-ReactCompilerGating = fn(558);
-let obj4 = { padding: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+}
+const View = fn(17).View;
+const jsxProd = fn(21);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const createStyles = fn(4788);
+let obj2 = { column: null, opaque: null, card: null, body: null };
+const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, alignItems: "flex-end", gap: nativeDefault.space.PX_8 };
+obj2.column = rect;
+obj2.opaque = { width: 304, maxWidth: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
+let obj3 = { width: 304, maxWidth: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS };
+obj2.card = { padding: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj2.body = { flex: 1 };
+let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsChannelChatToasts.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onOpenChat) => {
-  const cResult = onOpenChat(568).c(8);
-  onOpenChat = onOpenChat.onOpenChat;
-  const tmp2 = closure_7();
-  const arr = useVibegrationsChatToastMessagesDefault(onOpenChat.channelId, true);
-  let num = 0;
-  if (0 === arr.length) {
-    return null;
-  } else {
-    if (cResult[0] === arr) {
-      if (cResult[1] === onOpenChat) {
-        if (cResult[5] === tmp2.column) {
-          if (cResult[6] === tmp3) {
-            let tmp7 = cResult[7];
-          }
-          return tmp7;
-        }
-        const obj2 = { style: tmp12, pointerEvents: "box-none", accessibilityLiveRegion: "polite", children: cResult[2] };
-        const tmp10 = closure_5(View, obj2);
-        cResult[5] = tmp2.column;
-        cResult[6] = cResult[2];
-        cResult[7] = tmp10;
-        tmp7 = tmp10;
-      }
-    }
-    if (cResult[3] !== onOpenChat) {
-      const fn = function x(message) {
-        return hasOwnProperty(closure_8, { message, onOpenChat }, message.id);
-      };
-      cResult[3] = onOpenChat;
-      cResult[4] = fn;
-      let tmp4 = fn;
-    } else {
-      tmp4 = cResult[4];
-    }
-    const mapped = arr.map(tmp4);
-    cResult[num] = arr;
-    cResult[1] = onOpenChat;
-    num = 2;
-    cResult[2] = mapped;
-  }
-}) : ((onOpenChat) => {
+export default function VibegrationsChannelChatToasts(onOpenChat) {
   onOpenChat = onOpenChat.onOpenChat;
   const arr = useVibegrationsChatToastMessagesDefault(onOpenChat.channelId, true);
   let tmp2 = null;
   if (0 !== arr.length) {
-    const obj = { style: tmp.column, pointerEvents: "box-none", accessibilityLiveRegion: "polite", children: arr.map((message) => hasOwnProperty(closure_8, { message, onOpenChat }, message.id)) };
+    const obj = { style: tmp.column, pointerEvents: "box-none", accessibilityLiveRegion: "polite", children: arr.map((message) => hasOwnProperty(ChatToast, { message, onOpenChat }, message.id)) };
     tmp2 = closure_5(View, obj);
   }
   return tmp2;
-});
+};

@@ -1,25 +1,24 @@
-// Module ID: 5128
-// Function ID: 5129
+// Module ID: 5126
+// Function ID: 5127
 // Name: StripeUtils
-// Dependencies: [5, 32, 2113, 1078, 3, 5129, 1275, 558, 568, 504, 2]
-// Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, validateExpiry
+// Dependencies: [5, 32, 2109, 1074, 3, 5127, 1271, 504, 2]
+// Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 5128 (StripeUtils)
+// Module 5126 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import _mod5129 from "module_5129" /* 5129 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import _mod5127 from "module_5127" /* 5127 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2113 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
 
 require = fn;
 function getStripe() {
   if (null != React2) {
     let resolved = Promise.resolve(React2);
   } else {
-    const stripe = _mod5129.loadStripe(constants.STRIPE.KEY);
+    const stripe = _mod5127.loadStripe(constants.STRIPE.KEY);
     resolved = stripe.then((result) => {
       closure_2 = result;
       return result;
@@ -38,7 +37,7 @@ let closure_11 = async function _authenticatePaymentIntentForPaymentId(arg0, val
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -205,20 +204,11 @@ let closure_11 = async function _authenticatePaymentIntentForPaymentId(arg0, val
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: metroRequire, PaymentSettings: closure_7 } = Constants);
 const logger = new LoggerDefault("StripeUtils");
 let closure_9 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
 let closure_12 = { "en-US": "en", "zh-CN": "zh", "sv-SE": "sv" };
-const ReactCompilerGating = fn(558);
-let tmp3 = new LoggerDefault("StripeUtils");
-function getStripeElementLocale(arg0) {
-  let tmp = closure_12[arg0];
-  if (tmp == null) {
-    tmp = arg0;
-  }
-  return tmp;
-}
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/StripeUtils.tsx");
 
@@ -366,28 +356,14 @@ export const authenticatePaymentIntentForPaymentId = function authenticatePaymen
   }
   return applyArgumentsResult;
 };
-export { getStripeElementLocale };
-export const useStripeLocale = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LocaleStore];
-    const fn = function t() {
-      locale = locale.locale;
-      let tmp = closure_1_12[locale];
-      if (tmp == null) {
-        tmp = locale;
-      }
-      return tmp;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
+export const getStripeElementLocale = function getStripeElementLocale(arg0) {
+  let tmp = closure_12[arg0];
+  if (tmp == null) {
+    tmp = arg0;
   }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+  return tmp;
+};
+export const useStripeLocale = function useStripeLocale() {
   const items = [LocaleStore];
   return initialize.useStateFromStores(items, () => {
     locale = locale.locale;
@@ -397,4 +373,4 @@ export const useStripeLocale = ReactCompilerGating.isReactCompilerEnabled() ? ((
     }
     return tmp;
   });
-});
+};

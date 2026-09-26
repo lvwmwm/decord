@@ -1,20 +1,19 @@
 // Module ID: 5103
 // Function ID: 5104
-// Dependencies: [1285, 5051]
+// Dependencies: [5035]
 
 // Module 5103
-import _mod1285 from "module_1285" /* 1285 */;
-import _mod5051 from "module_5051" /* 5051 */;
+import _mod5035 from "module_5035" /* 5035 */;
 
-let closure_2 = _mod1285("%Object.isExtensible%", true);
 
-export default _mod1285("%Object.preventExtensions%", true) ? (function IsExtensible(arg0) {
-  const tmp = _mod5051(arg0);
-  let tmp2 = !tmp;
-  if (!tmp) {
-    tmp2 = closure_2(arg0);
+export default function Type(arg0) {
+  let str = "Symbol";
+  if (typeof arg0 !== "symbol") {
+    let str2 = "BigInt";
+    if (typeof arg0 !== "bigint") {
+      str2 = _mod5035(arg0);
+    }
+    str = str2;
   }
-  return tmp2;
-}) : (function IsExtensible(arg0) {
-  return !_mod5051(arg0);
-});
+  return str;
+};

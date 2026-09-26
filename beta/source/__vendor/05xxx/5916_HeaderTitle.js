@@ -1,12 +1,12 @@
 // Module ID: 5916
 // Function ID: 5917
 // Name: HeaderTitle
-// Dependencies: [17, 21, 1489]
+// Dependencies: [17, 21, 1485]
 // Exports: HeaderTitle
 
 // Module 5916 (HeaderTitle)
 import jsxProd from "jsxProd" /* 21 */;
-import Link from "Link" /* 1489 */;
+import Link from "Link" /* 1485 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 
 ({ Animated: c2, Platform, StyleSheet } = get_ActivityIndicator);

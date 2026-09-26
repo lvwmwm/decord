@@ -1,117 +1,28 @@
-// Module ID: 7369
-// Function ID: 7370
+// Module ID: 7367
+// Function ID: 7368
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 1078, 21, 4790, 558, 568, 1119, 4487, 7370, 4786, 5239, 2]
+// Dependencies: [19, 17, 1074, 21, 4788, 5237, 1115, 4483, 7368, 4784, 2]
+// Exports: default
 
-// Module 7369 (MemberVerificationAlertUpdate)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import LinkingDefault from "Linking" /* 4487 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import common_AlertDefault from "common/Alert" /* 5239 */;
-import _modDef7370 from "module_7370" /* 7370 */;
+// Module 7367 (MemberVerificationAlertUpdate)
+import util from "util" /* 1115 */;
+import LinkingDefault from "Linking" /* 4483 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import _modDef7368 from "module_7368" /* 7368 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
-const DownloadLinks = fn(1078).DownloadLinks;
+const DownloadLinks = fn(1074).DownloadLinks;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_7 = createStyles.createStyles({ headerImage: { marginLeft: "auto", marginRight: "auto", marginTop: 8 }, header: { marginTop: 24, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertUpdate.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
-  const cResult = c.c(16);
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.b8siyY);
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t["ETE/oC"]);
-    const fn = function u() {
-      return LinkingDefault.openURL(constants.IOS);
-    };
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    cResult[2] = fn;
-    tmp5 = stringResult;
-    tmp6 = stringResult1;
-    tmp7 = fn;
-  } else {
-    [tmp5, tmp6, tmp7] = cResult;
-  }
-  if (cResult[3] !== tmp4.headerImage) {
-    const obj2 = { source: _modDef7370, style: tmp4.headerImage };
-    const tmp14 = hasOwnProperty(Image, obj2);
-    cResult[3] = tmp4.headerImage;
-    cResult[4] = tmp14;
-    let tmp10 = tmp14;
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1119).intl;
-    const stringResult2 = intl3.string(tmp(1119).t.kkjNHU);
-    cResult[5] = stringResult2;
-    let tmp15 = stringResult2;
-  } else {
-    tmp15 = cResult[5];
-  }
-  if (cResult[6] !== tmp4.header) {
-    const obj3 = { style: tmp4.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = hasOwnProperty(tmp(4786).Text, obj3);
-    cResult[6] = tmp4.header;
-    cResult[7] = tmp19;
-    let tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[7];
-  }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1119).intl;
-    const stringResult3 = intl4.string(tmp(1119).t.gnkqzQ);
-    cResult[8] = stringResult3;
-    let tmp20 = stringResult3;
-  } else {
-    tmp20 = cResult[8];
-  }
-  if (cResult[9] !== tmp4.text) {
-    const obj4 = { style: tmp4.text, variant: "text-sm/medium", color: "text-default", children: tmp20 };
-    const tmp24 = hasOwnProperty(tmp(4786).Text, obj4);
-    cResult[9] = tmp4.text;
-    cResult[10] = tmp24;
-    let tmp22 = tmp24;
-  } else {
-    tmp22 = cResult[10];
-  }
-  if (cResult[11] === onClose) {
-    if (cResult[12] === tmp22) {
-      if (cResult[13] === tmp10) {
-        if (cResult[14] === tmp17) {
-          let tmp25 = cResult[15];
-        }
-        return tmp25;
-      }
-    }
-  }
-  const obj5 = {};
-  const merged = Object.assign(onClose);
-  obj5.confirmText = tmp5;
-  obj5.cancelText = tmp6;
-  obj5.onConfirm = tmp7;
-  obj5.onCancel = onClose.onClose;
-  const items = [tmp10, tmp17, tmp22];
-  obj5.children = items;
-  const tmp28 = timestampProducer(common_AlertDefault, obj5);
-  cResult[11] = onClose;
-  cResult[12] = tmp22;
-  cResult[13] = tmp10;
-  cResult[14] = tmp17;
-  cResult[15] = tmp28;
-  tmp25 = tmp28;
-}) : ((onClose) => {
+export default function MemberVerificationAlertUpdate(onClose) {
   const tmp = closure_7();
   const obj = {};
   const merged = Object.assign(onClose);
@@ -124,7 +35,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   };
   obj.onCancel = onClose.onClose;
   const tmp2 = common_AlertDefault;
-  const items = [hasOwnProperty(Image, { source: _modDef7370, style: tmp.headerImage }), , ];
+  const items = [hasOwnProperty(Image, { source: _modDef7368, style: tmp.headerImage }), , ];
   const obj3 = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = util.intl;
   obj3.children = intl3.string(util.t.kkjNHU);
@@ -135,4 +46,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   items[2] = hasOwnProperty(Text_Text.Text, obj4);
   obj.children = items;
   return timestampProducer(tmp2, obj);
-});
+};

@@ -1,9 +1,9 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 12916
+// Function ID: 12917
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 4790, 8476, 5792, 4615, 4490, 1119, 6883, 580, 4757, 7429, 7403, 7364, 5684, 5220, 2]
+// Dependencies: [5, 32, 19, 21, 4788, 8471, 5790, 4612, 4486, 1115, 6890, 576, 4755, 7427, 7400, 7362, 5682, 5218, 2]
 
-// Module 12834 (JoinRequestRejectionReasonActionSheet)
+// Module 12916 (JoinRequestRejectionReasonActionSheet)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -46,7 +46,7 @@ class JoinRequestRejectionReasonActionSheet {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ class JoinRequestRejectionReasonActionSheet {
               const intl = tmp4(tmp24[9]).intl;
               obj6.content = intl.string(tmp4(tmp24[9]).t["TQY/Rd"]);
               obj6.icon = function icon() {
-                return closure_1_6(closure_1_0(6883).CircleXIcon, { color: closure_1_1(580).colors.BACKGROUND_FEEDBACK_CRITICAL, secondaryColor: closure_1_1(580).colors.ICON_FEEDBACK_CRITICAL });
+                return closure_1_6(closure_1_0(6890).CircleXIcon, { color: closure_1_1(576).colors.BACKGROUND_FEEDBACK_CRITICAL, secondaryColor: closure_1_1(576).colors.ICON_FEEDBACK_CRITICAL });
               };
               tmp42(tmp24[8]).open(obj6);
               const obj5 = tmp42(tmp24[8]);
@@ -145,8 +145,8 @@ class JoinRequestRejectionReasonActionSheet {
 }
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4790);
-let closure_8 = createStyles.createStyles({ container: { padding: 20 }, buttonGroup: { marginTop: 16 } });
+const createStyles = fn(4788);
+const React6 = createStyles.createStyles({ container: { padding: 20 }, buttonGroup: { marginTop: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestRejectionReasonActionSheet.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 14413
-// Function ID: 14414
+// Module ID: 14403
+// Function ID: 14404
 // Name: Status/StatusUtils
-// Dependencies: [1182, 14414, 2]
+// Dependencies: [1178, 14404, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 14413 (Status/StatusUtils)
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14414 */;
-import StatusConstants from "StatusConstants" /* 1182 */;
+// Module 14403 (Status/StatusUtils)
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14404 */;
+import StatusConstants from "StatusConstants" /* 1178 */;
 import size from "module_2" /* 2 */;
 
 ({ STATUS_PADDING: c2, StatusSizes: c3 } = StatusConstants);
@@ -15,22 +15,22 @@ const result = size.fileFinishedImporting("design/void/Status/native/StatusUtils
 export const getAnimatedTypingTranslateX = function getAnimatedTypingTranslateX(width) {
   return width / 2 - 6;
 };
-export const getMobileStatusContainerRect = function getMobileStatusContainerRect(statusSizeOverride) {
+export const getMobileStatusContainerRect = function getMobileStatusContainerRect(items) {
   const size = { width: null, height: null, cornerRadius: null };
-  const sum = statusSizeOverride + 2 * React2;
+  const sum = items + 2 * React2;
   size.width = sum;
   size.height = 1.4 * sum;
   size.cornerRadius = sum / 4;
   return size;
 };
-export const getVRStatusContainerRect = function getVRStatusContainerRect(statusSizeOverride) {
-  const size = getStatusContainerStyleDefault(statusSizeOverride, false, true);
+export const getVRStatusContainerRect = function getVRStatusContainerRect(items) {
+  const size = getStatusContainerStyleDefault(items, false, true);
   const size1 = { width: size.width, height: size.height, cornerRadius: size.borderRadius };
   return size1;
 };
-export const getStatusTypingDimensions = function getStatusTypingDimensions(statusSizeOverride) {
-  if (constants.SMALL !== statusSizeOverride) {
-    if (tmp.XSMALL !== statusSizeOverride) {
+export const getStatusTypingDimensions = function getStatusTypingDimensions(items) {
+  if (constants.SMALL !== items) {
+    if (tmp.XSMALL !== items) {
       let num = 6;
       let num2 = 28;
     }

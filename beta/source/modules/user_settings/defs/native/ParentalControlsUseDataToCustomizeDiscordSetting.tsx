@@ -1,26 +1,26 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16232
+// Function ID: 16233
 // Name: ParentalControlsUseDataToCustomizeDiscordSetting
-// Dependencies: [7816, 8270, 1078, 558, 15094, 7818, 11630, 1119, 2]
+// Dependencies: [7811, 8265, 1074, 15098, 7813, 11754, 1115, 2]
 
-// Module 16228 (ParentalControlsUseDataToCustomizeDiscordSetting)
-import util from "util" /* 1119 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7818 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15094 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
+// Module 16232 (ParentalControlsUseDataToCustomizeDiscordSetting)
+import util from "util" /* 1115 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7813 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
 
 require = fn;
-const Consents = fn(1078).Consents;
-let ReactCompilerGating = fn(558);
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const SettingBuilders = fn(11630);
+const Consents = fn(1074).Consents;
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.MNKzyg);
   },
-  parent: fn(8270).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: () => useParentalControlSettings.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented,
+  parent: fn(8265).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  useValue: function useDataToCustomizeDiscordSettingValue() {
+    return useParentalControlSettings.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
+  },
   onValueChange: function handlePersonalizationChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
@@ -40,6 +40,6 @@ const toggle = SettingBuilders.createToggle({
   }
 });
 const size = fn(2);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToCustomizeDiscordSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToCustomizeDiscordSetting.tsx");
 
 export default toggle;

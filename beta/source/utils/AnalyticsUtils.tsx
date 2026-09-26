@@ -1,22 +1,22 @@
-// Module ID: 1245
-// Function ID: 1246
+// Module ID: 1241
+// Function ID: 1242
 // Name: AnalyticsUtils
-// Dependencies: [109, 19, 1246, 1350, 1078, 1352, 1353, 1354, 1360, 1253, 1361, 1235, 577, 1362, 1119, 7, 1259, 2, 1364]
+// Dependencies: [109, 19, 1242, 1346, 1074, 1348, 1349, 1350, 1356, 1249, 1357, 1231, 573, 1358, 1115, 7, 1255, 2, 1360]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
-// Module 1245 (AnalyticsUtils)
+// Module 1241 (AnalyticsUtils)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import util from "util" /* 1119 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import v1 from "v1" /* 1259 */;
-import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1361 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1362 */;
-import utils_AnalyticsSchemaAll from "utils/AnalyticsSchema" /* 1364 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import util from "util" /* 1115 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import v1 from "v1" /* 1255 */;
+import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1357 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
+import utils_AnalyticsSchemaAll from "utils/AnalyticsSchema" /* 1360 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1350 */;
-import AnalyticsUtils_mod from "discord_common/AnalyticsUtils" /* 1253 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
+import AnalyticsUtils_mod from "discord_common/AnalyticsUtils" /* 1249 */;
 
 require = fn;
 function expandEventProperties(arg0) {
@@ -92,24 +92,24 @@ function expandEventProperties(arg0) {
 }
 let closure_4 = ["location"];
 let closure_5 = ["source"];
-const ImpressionStore = fn(1246);
+const ImpressionStore = fn(1242);
 ({ setDebugTrackedData: closure_7, getLocation: closure_8 } = ImpressionStore);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents, AnalyticsObjectTypes: c10, AnalyticsSections: closure_11 } = Constants);
-const AccessibilityFeatureFlags = fn(1352).AccessibilityFeatureFlags;
-const ApplicationTypes = fn(1353).ApplicationTypes;
+const AccessibilityFeatureFlags = fn(1348).AccessibilityFeatureFlags;
+const ApplicationTypes = fn(1349).ApplicationTypes;
 let global = {};
 let c15 = 1000;
 let c16 = 60000;
 let c17 = 900000;
 const context = noop.createContext({ location: {} });
 let closure_18 = performance.now();
-const shim = fn(1354);
+const shim = fn(1350);
 let launchSignature = null;
 if (shim.isLibdiscoreInitialized()) {
-  let obj3 = fn(1354);
-  launchSignature = obj3.generateLaunchSignature(fn(1360).getGlobalObject());
-  let obj4 = fn(1360);
+  let obj3 = fn(1350);
+  launchSignature = obj3.generateLaunchSignature(fn(1356).getGlobalObject());
+  let obj4 = fn(1356);
 }
 function addBreadcrumb(message) {
   const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = CommonSentryInitUtils.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
@@ -186,8 +186,8 @@ let obj = {
   [AnalyticEvents.RPC_SUBSCRIPTION_REQUESTED]: obj29,
   [AnalyticEvents.ACTIVITY_HANDSHAKE]: obj30,
   [AnalyticEvents.CHANNEL_BANNER_VIEWED]: obj31,
-  [fn(1253).ImpressionNames.GUILD_HANGOUT_WINDOW]: obj32,
-  [fn(1253).ImpressionNames.GUILD_HANGOUT_WINDOW_ENTRY_POINT]: obj33,
+  [fn(1249).ImpressionNames.GUILD_HANGOUT_WINDOW]: obj32,
+  [fn(1249).ImpressionNames.GUILD_HANGOUT_WINDOW_ENTRY_POINT]: obj33,
   [AnalyticEvents.PREMIUM_UPSELL_VIEWED]: obj34,
   [AnalyticEvents.FORUM_CHANNEL_SEARCHED]: obj35,
   [AnalyticEvents.FORUM_CHANNEL_SCROLLED]: obj36,
@@ -235,11 +235,11 @@ let obj = {
 global = function getAccessibilityFeatures() {
   return AccessibilityFeatureFlags.NONE;
 };
-AnalyticsUtils = fn(1253);
+AnalyticsUtils = fn(1249);
 let closure_22 = AnalyticsUtils.trackMaker({ addBreadcrumb, analyticEventConfigs: obj, dispatcher: DispatcherDefault, TRACK_ACTION_NAME: "TRACK" });
 let c24 = false;
 let closure_25 = {};
-AnalyticsUtils = fn(1253);
+AnalyticsUtils = fn(1249);
 obj10 = {
   throttlePeriod: 900000,
   throttleKeys(server) {
@@ -665,7 +665,7 @@ obj9 = {
 let closure_26 = AnalyticsUtils.trackMaker({ addBreadcrumb, analyticEventConfigs: obj, dispatcher: DispatcherDefault, TRACK_ACTION_NAME: "TRACK" });
 const obj66 = {};
 AnalyticsUtils = Object.assign(AnalyticsUtils);
-obj66.getCampaignParams = fn(1253).getCampaignParams;
+obj66.getCampaignParams = fn(1249).getCampaignParams;
 obj66.setSystemAccessibilityFeatures = function setSystemAccessibilityFeatures(getActiveFeatures) {
   global = getActiveFeatures;
 };
@@ -743,11 +743,11 @@ export const isGameApplicationType = function isGameApplicationType(arg0) {
 };
 export const trackNetworkAction = function trackNetworkAction(event, arg1) {
   const merged = Object.assign(arg1);
-  const obj = { location: closure_1_8() };
+  const obj = { location: React6() };
   const obj2 = { type: "action" };
   const merged1 = Object.assign(arg1);
   React5(event, obj2);
-  const tmp2 = expandEventProperties({ location: closure_1_8() });
+  const tmp2 = expandEventProperties({ location: React6() });
   LogAggregatorAll.report("Analytics", event);
   closure_26(event, tmp2);
 };

@@ -1,245 +1,28 @@
-// Module ID: 13252
-// Function ID: 13253
+// Module ID: 13246
+// Function ID: 13247
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1089, 21, 4790, 580, 558, 568, 1119, 2618, 4786, 5220, 1181, 2]
+// Dependencies: [19, 17, 1085, 21, 4788, 576, 1115, 2614, 4784, 5218, 1177, 2]
+// Exports: default
 
-// Module 13252 (InAppReportsBottomButton)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import _modDef2618 from "module_2618" /* 2618 */;
+// Module 13246 (InAppReportsBottomButton)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import _modDef2614 from "module_2614" /* 2614 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", paddingBottom: 12 }, paddingHorizontal: { paddingHorizontal: 16 }, divider: { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 }, descriptionText: { lineHeight: 16, textAlign: "center", marginBottom: 12 }, errorText: null };
 let obj3 = { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 };
-obj2.errorText = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: fn(1089).Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
+obj2.errorText = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: fn(1085).Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
 let closure_6 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: fn(1089).Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBottomButton.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
-  const cResult = c.c(34);
-  button = button.button;
-  const onPress = button.onPress;
-  ({ disabled, hasError, isModeratorReport } = button);
-  const tmp4 = closure_6();
-  if (null == button) {
-    return null;
-  } else {
-    const _Symbol5 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t.i4jeWR);
-      cResult[0] = stringResult;
-      let first = stringResult;
-    } else {
-      first = cResult[0];
-    }
-    if ("submit" === button.type) {
-      if (!isModeratorReport) {
-        const _Symbol2 = Symbol;
-        if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl4 = tmp(1119).intl;
-          const stringResult1 = intl4.string(tmp(1119).t["G+vU89"]);
-          cResult[2] = stringResult1;
-        }
-        const _Symbol3 = Symbol;
-        if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl5 = tmp(1119).intl;
-          const formatResult = intl5.format(tmp(1119).t.Q0tSKT, {});
-          cResult[3] = formatResult;
-        }
-      }
-      const _Symbol4 = Symbol;
-      if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl6 = tmp(1119).intl;
-        const stringResult2 = intl6.string(_modDef2618.ZUyreS);
-        cResult[1] = stringResult2;
-      }
-    } else {
-      if ("next" === button.type) {
-        const _Symbol = Symbol;
-        if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1119).intl;
-          const stringResult3 = intl3.string(tmp(1119).t.PDTjLN);
-          cResult[4] = stringResult3;
-          let tmp10 = stringResult3;
-        } else {
-          tmp10 = cResult[4];
-        }
-        first = tmp10;
-      } else if ("cancel" === button.type) {
-        const _Symbol6 = Symbol;
-        if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1119).intl;
-          const stringResult4 = intl2.string(tmp(1119).t["ETE/oC"]);
-          cResult[5] = stringResult4;
-          let tmp8 = stringResult4;
-        } else {
-          tmp8 = cResult[5];
-        }
-        first = tmp8;
-      }
-      if (cResult[6] !== isModeratorReport) {
-        const intl7 = tmp(1119).intl;
-        const string = intl7.string;
-        if (isModeratorReport) {
-          let stringResult5 = string(_modDef2618.psKFdJ);
-        } else {
-          stringResult5 = string(tmp(1119).t.h6D8Vy);
-        }
-        cResult[6] = isModeratorReport;
-        cResult[7] = stringResult5;
-      } else {
-        if (cResult[8] !== tmp4.divider) {
-          const obj2 = { style: tmp4.divider };
-          const tmp29 = React4(View, obj2);
-          cResult[8] = tmp4.divider;
-          cResult[9] = tmp29;
-          let tmp26 = tmp29;
-        } else {
-          tmp26 = cResult[9];
-        }
-        if (cResult[10] === tmp7) {
-          if (cResult[11] === tmp4.descriptionText) {
-            let tmp30 = cResult[12];
-          }
-          if (cResult[13] === button) {
-            if (cResult[14] === onPress) {
-              let tmp33 = cResult[15];
-            }
-            if (cResult[16] === first) {
-              if (cResult[17] === str3) {
-                if (cResult[18] === disabled) {
-                  if (cResult[19] === tmp33) {
-                    let tmp34 = cResult[20];
-                  }
-                  if (cResult[21] === tmp22) {
-                    if (cResult[22] === hasError) {
-                      if (cResult[23] === tmp4.errorText) {
-                        let tmp36 = cResult[24];
-                      }
-                      if (cResult[25] === tmp4.paddingHorizontal) {
-                        if (cResult[26] === tmp30) {
-                          if (cResult[27] === tmp34) {
-                            if (cResult[28] === tmp36) {
-                              let tmp39 = cResult[29];
-                            }
-                            if (cResult[30] === tmp4.container) {
-                              if (cResult[31] === tmp26) {
-                                if (cResult[32] === tmp39) {
-                                  let tmp42 = cResult[33];
-                                }
-                                return tmp42;
-                              }
-                            }
-                            class D {
-                              constructor() {
-                                return onPress(button);
-                              }
-                            }
-                            const obj3 = { style: tmp4.container, children: null };
-                            const items = [tmp26, tmp39];
-                            obj3.children = items;
-                            const tmp44 = hasOwnProperty(View, obj3);
-                            cResult[30] = tmp4.container;
-                            cResult[31] = tmp26;
-                            cResult[32] = tmp39;
-                            cResult[33] = tmp44;
-                            tmp42 = tmp44;
-                          }
-                        }
-                      }
-                      class D {
-                        constructor() {
-                          return onPress(button);
-                        }
-                      }
-                      const obj4 = { style: tmp4.paddingHorizontal, children: null };
-                      const items1 = [tmp30, tmp34, tmp36];
-                      obj4.children = items1;
-                      const tmp41 = hasOwnProperty(View, obj4);
-                      cResult[25] = tmp4.paddingHorizontal;
-                      cResult[26] = tmp30;
-                      cResult[27] = tmp34;
-                      cResult[28] = tmp36;
-                      cResult[29] = tmp41;
-                      tmp39 = tmp41;
-                    }
-                  }
-                  class D {
-                    constructor() {
-                      return onPress(button);
-                    }
-                  }
-                  if (hasError) {
-                    const obj5 = { style: null, children: null };
-                    class D {
-                      constructor() {
-                        return onPress(button);
-                      }
-                    }
-                    obj5.children = tmp22;
-                    const tmp37 = React4(tmp(1181).LegacyText, obj5);
-                  }
-                  cResult[21] = tmp22;
-                  cResult[22] = hasError;
-                  cResult[23] = tmp4.errorText;
-                  cResult[24] = tmp37;
-                  tmp36 = tmp37;
-                }
-              }
-            }
-            class D {
-              constructor() {
-                return onPress(button);
-              }
-            }
-            const obj6 = { disabled, onPress: tmp33, text: first, variant: str3 };
-            const tmp35 = React4(tmp(5220).Button, obj6);
-            cResult[16] = first;
-            cResult[17] = str3;
-            cResult[18] = disabled;
-            cResult[19] = tmp33;
-            cResult[20] = tmp35;
-            tmp34 = tmp35;
-          }
-          class D {
-            constructor() {
-              return onPress(button);
-            }
-          }
-          cResult[13] = button;
-          cResult[14] = onPress;
-          cResult[15] = D;
-          tmp33 = D;
-        }
-        let tmp31 = null;
-        if (null != tmp7) {
-          const obj7 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
-          class D {
-            constructor() {
-              return onPress(button);
-            }
-          }
-          obj7.children = tmp7;
-          tmp31 = React4(tmp(4786).Text, obj7);
-        }
-        cResult[10] = tmp7;
-        cResult[11] = tmp4.descriptionText;
-        cResult[12] = tmp31;
-        tmp30 = tmp31;
-      }
-    }
-  }
-}) : ((button) => {
+export default function InAppReportsBottomButton(button) {
   button = button.button;
   ({ onPress: importDefault, isModeratorReport } = button);
   ({ disabled, hasError } = button);
@@ -249,33 +32,33 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
   } else {
     const string3 = util.intl.string;
     if ("submit" === button.type) {
-      const intl2 = tmp17(1119).intl;
+      const intl2 = tmp17(1115).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        let stringResult = string(_modDef2618.ZUyreS);
+        let stringResult = string(_modDef2614.ZUyreS);
       } else {
-        const intl3 = tmp17(1119).intl;
-        const stringResult1 = string(tmp17(1119).t["G+vU89"]);
+        const intl3 = tmp17(1115).intl;
+        const stringResult1 = string(tmp17(1115).t["G+vU89"]);
         stringResult = stringResult1;
-        const formatResult = intl3.format(tmp17(1119).t.Q0tSKT, {});
+        const formatResult = intl3.format(tmp17(1115).t.Q0tSKT, {});
       }
     } else {
       if ("next" === button.type) {
-        const intl = tmp17(1119).intl;
-        let stringResult2 = intl.string(tmp17(1119).t.PDTjLN);
+        const intl = tmp17(1115).intl;
+        let stringResult2 = intl.string(tmp17(1115).t.PDTjLN);
       } else {
         stringResult2 = tmp19;
         if ("cancel" === button.type) {
-          const intl5 = tmp17(1119).intl;
-          stringResult2 = intl5.string(tmp17(1119).t["ETE/oC"]);
+          const intl5 = tmp17(1115).intl;
+          stringResult2 = intl5.string(tmp17(1115).t["ETE/oC"]);
         }
       }
-      const intl4 = tmp17(1119).intl;
+      const intl4 = tmp17(1115).intl;
       const string2 = intl4.string;
       if (isModeratorReport) {
-        let string2Result = string2(_modDef2618.psKFdJ);
+        let string2Result = string2(_modDef2614.psKFdJ);
       } else {
-        string2Result = string2(tmp17(1119).t.h6D8Vy);
+        string2Result = string2(tmp17(1115).t.h6D8Vy);
       }
       const obj = { style: tmp.container, children: null };
       const obj2 = { style: tmp.divider };
@@ -284,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
       let tmp14Result = null;
       if (null != tmp3) {
         const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-        tmp14Result = tmp14(tmp17(4786).Text, obj4);
+        tmp14Result = tmp14(tmp17(4784).Text, obj4);
       }
       const items1 = [tmp14Result, , ];
       const obj5 = {
@@ -295,11 +78,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
         text: stringResult2,
         variant: str2
       };
-      items1[1] = React4(tmp17(5220).Button, obj5);
+      items1[1] = React4(tmp17(5218).Button, obj5);
       let tmp14Result2 = null;
       if (hasError) {
         const obj6 = { style: tmp.errorText, children: string2Result };
-        tmp14Result2 = tmp14(tmp17(1181).LegacyText, obj6);
+        tmp14Result2 = tmp14(tmp17(1177).LegacyText, obj6);
       }
       items1[2] = tmp14Result2;
       obj3.children = items1;
@@ -308,4 +91,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
       return hasOwnProperty(View, obj);
     }
   }
-});
+};

@@ -1,16 +1,16 @@
-// Module ID: 14377
-// Function ID: 14378
+// Module ID: 14367
+// Function ID: 14368
 // Name: KeyboardLayoutMapUtils
-// Dependencies: [32, 5, 1350, 7783, 3, 1368, 14376, 510, 2]
+// Dependencies: [32, 5, 1346, 7778, 3, 1364, 14366, 510, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 14377 (KeyboardLayoutMapUtils)
+// Module 14367 (KeyboardLayoutMapUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import keyCodeDefault from "keyCode" /* 14376 */;
+import keyCodeDefault from "keyCode" /* 14366 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1350 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
 
 require = fn;
 function normalizeKey(toLocaleLowerCase) {
@@ -41,7 +41,7 @@ let closure_12 = async function _syncKeyboardLayoutMap(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -156,7 +156,7 @@ function getKeyboardMapper() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -200,7 +200,7 @@ function getKeyboardMapper() {
               });
               closure_129_0();
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             c4 = tmp;
@@ -236,7 +236,7 @@ let closure_20 = async function _resetKeyboardMapper(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -269,7 +269,7 @@ let closure_20 = async function _resetKeyboardMapper(arg0, value) {
           obj.reset();
         }
         c2 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp10) {
       c2 = tmp;
@@ -301,7 +301,7 @@ function reverseLookupCodeFromKey(toLocaleLowerCase) {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -345,7 +345,7 @@ function reverseLookupCodeFromKey(toLocaleLowerCase) {
                 });
                 closure_129_0();
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp17) {
               c4 = tmp;
@@ -400,7 +400,7 @@ function getExactKeyboardEventMatchFromAny(key) {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -444,7 +444,7 @@ function getExactKeyboardEventMatchFromAny(key) {
                 });
                 closure_129_0();
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp17) {
               c4 = tmp;
@@ -478,20 +478,20 @@ function getExactKeyboardEventMatchFromAny(key) {
   }
   return tmp4;
 }
-const KeyboardConstants = fn(7783);
+const KeyboardConstants = fn(7778);
 ({ LinuxKeyToCode, MacosKeyToCode, WindowsKeyToCode } = KeyboardConstants);
 const logger = new LoggerDefault("KeyboardLayoutMapUtils");
-const PlatformUtils = fn(1368);
+const PlatformUtils = fn(1364);
 if (!PlatformUtils.isLinux()) {
   if (!obj2.isMac()) {
     if (!obj3.isWindows()) {
       WindowsKeyToCode = keyCodeDefault.codes;
     }
     MacosKeyToCode = WindowsKeyToCode;
-    obj3 = fn(1368);
+    obj3 = fn(1364);
   }
   LinuxKeyToCode = MacosKeyToCode;
-  obj2 = fn(1368);
+  obj2 = fn(1364);
 }
 function initializeKeyboardMapper() {
   if (null == promise) {
@@ -506,7 +506,7 @@ function initializeKeyboardMapper() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -550,7 +550,7 @@ function initializeKeyboardMapper() {
             });
             closure_129_0();
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c4 = tmp;
@@ -1212,7 +1212,7 @@ export const getLayoutMap = function getLayoutMap() {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -1256,7 +1256,7 @@ export const getLayoutMap = function getLayoutMap() {
                 });
                 closure_129_0();
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp17) {
               c4 = tmp;
@@ -1310,7 +1310,7 @@ export const getKeyboardEventShapeFromAny = function getKeyboardEventShapeFromAn
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -1354,7 +1354,7 @@ export const getKeyboardEventShapeFromAny = function getKeyboardEventShapeFromAn
                 });
                 closure_129_0();
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp17) {
               c4 = tmp;

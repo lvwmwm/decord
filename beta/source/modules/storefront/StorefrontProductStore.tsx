@@ -1,11 +1,11 @@
-// Module ID: 8525
-// Function ID: 8526
+// Module ID: 8520
+// Function ID: 8521
 // Name: StorefrontProductStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 8525 (StorefrontProductStore)
+// Module 8520 (StorefrontProductStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const dependencyMap = {};
 const dependencyMap2 = {};
@@ -16,7 +16,7 @@ const prototype = StorefrontProductStore.prototype;
 prototype["getFetchState"] = function getFetchState(arg0) {
   let tmp;
   if (null != arg0) {
-    state = undefined;
+    let state;
     if (dependencyMap[arg0] != null) {
       state = tmp3.state;
     }
@@ -27,7 +27,7 @@ prototype["getFetchState"] = function getFetchState(arg0) {
 prototype["getFetchStateForSku"] = function getFetchStateForSku(item10006) {
   let tmp;
   if (null != item10006) {
-    state = undefined;
+    let state;
     if (dependencyMap2[item10006] != null) {
       state = tmp3.state;
     }
@@ -86,7 +86,7 @@ prototype["getProduct"] = function getProduct(arg0) {
   }
   let product = null;
   if (null != tmp) {
-    state = undefined;
+    let state;
     if (tmp != null) {
       state = tmp.state;
     }
@@ -100,11 +100,11 @@ prototype["getProduct"] = function getProduct(arg0) {
   }
   return product;
 };
-prototype["getProductsForSku"] = function getProductsForSku(skuId) {
+prototype["getProductsForSku"] = function getProductsForSku(nextResult) {
   let tmp;
-  if (null != skuId) {
+  if (null != nextResult) {
     let products;
-    if (dependencyMap2[skuId] != null) {
+    if (dependencyMap2[nextResult] != null) {
       products = tmp3.products;
     }
     tmp = products;
@@ -208,7 +208,7 @@ const storefrontProductStore = new StorefrontProductStore(DispatcherDefault, {
       let item = products.forEach((id) => {
         includePricing = id;
         if (!includePricing) {
-          state = undefined;
+          let state;
           if (tmp3 != null) {
             state = tmp3.state;
           }
@@ -241,7 +241,7 @@ const storefrontProductStore = new StorefrontProductStore(DispatcherDefault, {
       products = products.products;
       const item = products.forEach((id) => {
         if (!includePricing) {
-          state = undefined;
+          let state;
           if (tmp3 != null) {
             state = tmp3.state;
           }

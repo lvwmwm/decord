@@ -1,9 +1,17 @@
 // Module ID: 18122
 // Function ID: 18123
-// Dependencies: [1125]
+// Dependencies: [18123, 18131]
 
 // Module 18122
-import registerAsset from "module_1125" /* 1125 */;
+import _mod18123 from "module_18123" /* 18123 */;
+import capitalize from "capitalize" /* 18131 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "0b8a6fa235bbde823695fe5cdeccf7e4", name: "channel_setup_light", type: "png" });
+export default _mod18123((arg0, str, arg2) => {
+  const formatted = str.toLowerCase();
+  let tmp2 = formatted;
+  if (arg2) {
+    tmp2 = capitalize(formatted);
+  }
+  return arg0 + tmp2;
+});

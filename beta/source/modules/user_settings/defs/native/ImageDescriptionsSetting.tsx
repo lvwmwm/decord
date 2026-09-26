@@ -1,36 +1,34 @@
-// Module ID: 15734
-// Function ID: 15735
+// Module ID: 15738
+// Function ID: 15739
 // Name: ImageDescriptionsSetting
-// Dependencies: [1188, 8270, 558, 2023, 15735, 11630, 1119, 2]
+// Dependencies: [1184, 8265, 2019, 15739, 11754, 1115, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 15734 (ImageDescriptionsSetting)
-import util from "util" /* 1119 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import UserSettingsText from "UserSettingsText" /* 15735 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
+// Module 15738 (ImageDescriptionsSetting)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import UserSettingsText from "UserSettingsText" /* 15739 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 
 require = fn;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
   UserSettingsText.setImageDescriptions({ videoUploadQuality: UnsyncedUserSettingsStore.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: UnsyncedUserSettingsStore.lowQualityImageMode, dataSavingMode: UnsyncedUserSettingsStore.dataSavingMode });
 }
-let ReactCompilerGating = fn(558);
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const SettingBuilders = fn(11630);
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["w8j+yW"]);
   },
-  parent: fn(8270).MobileUserSettings.CHAT,
-  useValue: () => {
+  parent: fn(8265).MobileUserSettings.CHAT,
+  useValue: function useImageDescriptionSettingValue() {
     const ViewImageDescriptions = UserSettings.ViewImageDescriptions;
     return ViewImageDescriptions.useSetting();
   },
   onValueChange: onImageDescriptionSettingValueChange
 });
 const size = fn(2);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ImageDescriptionsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/ImageDescriptionsSetting.tsx");
 
 export default toggle;
 export { onImageDescriptionSettingValueChange };

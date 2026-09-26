@@ -1,13 +1,13 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 12034
+// Function ID: 12035
 // Name: UserActivityActionCreators
-// Dependencies: [5, 4830, 1078, 577, 11913, 1275, 2]
+// Dependencies: [5, 4828, 1074, 573, 12031, 1271, 2]
 // Exports: getMetadata, play, sync
 
-// Module 11916 (UserActivityActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 12034 (UserActivityActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import PresenceStore from "PresenceStore" /* 4830 */;
+import PresenceStore from "PresenceStore" /* 4828 */;
 
 const require = globalThis.__r;
 
@@ -45,7 +45,7 @@ let closure_6 = async function _getMetadata(arg0, arg1) {
     return body;
   })();
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/UserActivityActionCreators.tsx");
 

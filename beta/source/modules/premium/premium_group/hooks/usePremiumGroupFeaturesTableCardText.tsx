@@ -1,158 +1,55 @@
-// Module ID: 13789
-// Function ID: 13790
+// Module ID: 13779
+// Function ID: 13780
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [4456, 4464, 1119, 3198, 1384, 8345, 558, 568, 13790, 504, 2]
+// Dependencies: [4452, 4460, 1115, 3194, 1380, 8340, 13780, 504, 2]
+// Exports: default
 
-// Module 13789 (usePremiumGroupFeaturesTableCardText)
+// Module 13779 (usePremiumGroupFeaturesTableCardText)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import user from "user" /* 1384 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13790 */;
-import SubscriptionStore from "SubscriptionStore" /* 4456 */;
+import user from "user" /* 1380 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13780 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
 
-const util = intl(1119);
-const _modDef3198 = tmp6(3198);
-const PremiumGroupUtils = intl(8345);
 require = fn;
-const PremiumGroupConstants = fn(4464);
+const PremiumGroupConstants = fn(4460);
 ({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: hasOwnProperty } = PremiumGroupConstants);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupFeaturesTableCardText.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  const cResult = c.c(14);
-  const tmp4 = arg0 === user.PremiumSubscriptionGroupRole.MEMBER;
-  if (cResult[0] !== tmp4) {
-    const obj2 = { useCachedData: true, fetch: tmp4 };
-    cResult[0] = tmp4;
-    cResult[1] = obj2;
-    let tmp5 = obj2;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmp7 = usePremiumGroupPrimaryNameDefault(tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SubscriptionStore];
-    class S {
-      constructor() {
-        return closure_1_3.getPremiumGroupSubscription();
-      }
-    }
-    cResult[2] = items;
-    cResult[3] = S;
-    let tmp9 = S;
-    let tmp8 = items;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp8, tmp9);
-  if (arg0 === user.PremiumSubscriptionGroupRole.UNSPECIFIED) {
-    return null;
-  } else {
-    if (cResult[4] === tmp7) {
-      if (cResult[5] === arg0) {
-        if (cResult[6] === stateFromStores) {
-          let tmp12 = cResult[7];
-        }
-        if (cResult[8] === arg0) {
-          if (cResult[9] === arg1) {
-            if (cResult[11] === cResult[10]) {
-              if (cResult[12] === tmp12) {
-                let tmp21 = cResult[13];
-              }
-              return tmp21;
-            }
-            const obj3 = { subheaderString: null, bodyString: null };
-            class S {
-              constructor() {
-                return closure_1_3.getPremiumGroupSubscription();
-              }
-            }
-            obj3.bodyString = cResult[10];
-            cResult[11] = cResult[10];
-            cResult[12] = tmp12;
-            cResult[13] = obj3;
-            tmp21 = obj3;
-          }
-        }
-        class S {
-          constructor() {
-            return closure_1_3.getPremiumGroupSubscription();
-          }
-        }
-        cResult[8] = arg0;
-        cResult[9] = arg1;
-        cResult[10] = tmp19;
-      }
-    }
-    if (arg0 === tmp(1384).PremiumSubscriptionGroupRole.PRIMARY) {
-      let priceString = tmp(8345).getPriceString(stateFromStores, { withIntervals: true });
-      const tmpResult2 = tmp(8345);
-    } else {
-      priceString = null;
-      if (null != tmp7) {
-        const intl = tmp(1119).intl;
-        const obj4 = { primaryName: null, premiumGroupProductName: null };
-        class S {
-          constructor() {
-            return closure_1_3.getPremiumGroupSubscription();
-          }
-        }
-        obj4.premiumGroupProductName = React4();
-        priceString = intl.format(_modDef3198.Nu9LNm, obj4);
-      }
-    }
-    class S {
-      constructor() {
-        return closure_1_3.getPremiumGroupSubscription();
-      }
-    }
-    cResult[4] = tmp7;
-    cResult[5] = arg0;
-    cResult[6] = stateFromStores;
-    cResult[7] = tmp16;
-    tmp12 = tmp16;
-  }
-}) : ((arg0, arg1) => {
-  let intl = require;
-  let obj = dependencyMap;
-  let prop = importDefault;
-  const tmp2 = usePremiumGroupPrimaryNameDefault({ useCachedData: true, fetch: arg0 === user.PremiumSubscriptionGroupRole.MEMBER });
-  const obj2 = { useCachedData: true, fetch: arg0 === user.PremiumSubscriptionGroupRole.MEMBER };
+export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
+  const tmp4 = usePremiumGroupPrimaryNameDefault({ useCachedData: true, fetch: arg0 === user.PremiumSubscriptionGroupRole.MEMBER });
+  const obj = { useCachedData: true, fetch: arg0 === user.PremiumSubscriptionGroupRole.MEMBER };
   const items = [SubscriptionStore];
   const stateFromStores = initialize.useStateFromStores(items, () => premiumGroupSubscription.getPremiumGroupSubscription());
   if (arg0 === user.PremiumSubscriptionGroupRole.UNSPECIFIED) {
     return null;
   } else {
-    if (arg0 === user.PremiumSubscriptionGroupRole.PRIMARY) {
-      let priceString = PremiumGroupUtils.getPriceString(stateFromStores, { withIntervals: true });
-      const intlResult = PremiumGroupUtils;
+    if (arg0 === tmp(1380).PremiumSubscriptionGroupRole.PRIMARY) {
+      let priceString = tmp(8340).getPriceString(stateFromStores, { withIntervals: true });
+      const tmpResult = tmp(8340);
     } else {
       priceString = null;
-      if (null != tmp2) {
-        const intl2 = util.intl;
-        const obj4 = { primaryName: tmp2, premiumGroupProductName: React4() };
-        priceString = intl2.format(_modDef3198.Nu9LNm, obj4);
+      if (null != tmp4) {
+        const intl = tmp(1115).intl;
+        const obj3 = { primaryName: tmp4, premiumGroupProductName: React4() };
+        priceString = intl.format(tmp3(3194).Nu9LNm, obj3);
       }
     }
     let str = "...";
     if (null != priceString) {
       str = priceString;
     }
-    const obj5 = { subheaderString: str, bodyString: null };
-    if (arg0 === user.PremiumSubscriptionGroupRole.PRIMARY) {
-      intl = util.intl;
-      prop = _modDef3198["+R/K74"];
-      obj = { helpCenterLink, premiumGroupProductName: React4() };
-      let formatResult = intl.format(prop, obj);
+    if (arg0 === tmp(1380).PremiumSubscriptionGroupRole.PRIMARY) {
+      const intl3 = tmp(1115).intl;
+      const obj4 = { helpCenterLink, premiumGroupProductName: React4() };
+      let formatResult = intl3.format(tmp3(3194)["+R/K74"], obj4);
     } else {
-      const intl3 = util.intl;
-      const propResult = _modDef3198;
-      const obj6 = { helpCenterLink };
-      formatResult = intl3.format(arg1 ? propResult["xF+upx"] : propResult.qqfnOm, obj6);
+      const intl2 = tmp(1115).intl;
+      const tmp3Result = tmp3(3194);
+      const obj5 = { helpCenterLink };
+      formatResult = intl2.format(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj5);
     }
-    obj5.bodyString = formatResult;
+    const obj6 = { subheaderString: str, bodyString: formatResult };
+    return obj6;
   }
-});
+};

@@ -1,34 +1,35 @@
 // Module ID: 13153
 // Function ID: 13154
-// Dependencies: []
-// Exports: isSentryRequestUrl
+// Dependencies: [13085, 13106, 13135]
 
 // Module 13153
+import setupIntegration from "module_13135" /* 13135 */;
 
-export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
-  let dsn = getDsn;
-  if (getDsn) {
-    dsn = getDsn.getDsn();
-  }
-  let tunnel = getDsn;
-  if (getDsn) {
-    tunnel = getDsn.getOptions().tunnel;
-  }
-  let tmp2 = dsn && arr.includes(dsn.host);
-  if (!tmp2) {
-    let flag = false;
-    if (tunnel) {
-      let substr = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr = arr.slice(0, -1);
-      }
-      let substr1 = tunnel;
-      if ("/" === tunnel[tunnel.length - 1]) {
-        substr1 = tunnel.slice(0, -1);
-      }
-      flag = substr === substr1;
+const weakMap = new WeakMap();
+
+export const functionToStringIntegration = setupIntegration.defineIntegration(() => ({
+  name: "FunctionToString",
+  setupOnce() {
+    toString = Function.prototype.toString;
+    try {
+      const _Function = Function;
+      Function.prototype.toString = function() {
+        const items = [...arguments];
+        const originalFunction = closure_1_0(13085).getOriginalFunction(this);
+        const obj = closure_1_0(13085);
+        let self = this;
+        if (set.has(obj2.getClient())) {
+          self = this;
+          if (undefined !== originalFunction) {
+            self = originalFunction;
+          }
+        }
+        return toString.apply(self, items);
+      };
+    } catch (err) {
     }
-    tmp2 = flag;
+  },
+  setup(arg0) {
+    const result = weakMap.set(arg0, true);
   }
-  return tmp2;
-};
+}));

@@ -1,9 +1,9 @@
 // Module ID: 11563
 // Function ID: 11564
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 11563
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "5740634dc33de72534d208b361b37df5", name: "ic_file_small_sketch", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 18, height: 18, scales: [2, 3], hash: "36e39be8b33ba48e0db05b6e6fe9d9e1", name: "ic_add_reaction_v2", type: "png" });

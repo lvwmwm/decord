@@ -1,11 +1,11 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14042
+// Function ID: 14043
 // Name: ChannelSKUStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 14052 (ChannelSKUStore)
+// Module 14042 (ChannelSKUStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let closure_0 = {};
 const Store = initializeDefault.Store;

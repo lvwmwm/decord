@@ -1,23 +1,23 @@
-// Module ID: 11074
-// Function ID: 11075
+// Module ID: 11037
+// Function ID: 11038
 // Name: PremiumGiftingIntentActionCreators
-// Dependencies: [7932, 502, 5010, 1378, 1078, 1275, 577, 1235, 1245, 2]
+// Dependencies: [7927, 502, 5008, 1374, 1074, 1271, 573, 1231, 1241, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 11074 (PremiumGiftingIntentActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7932 */;
+// Module 11037 (PremiumGiftingIntentActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 5010 */;
+import MessageStore from "MessageStore" /* 5008 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GiftIntentType = fn(1378).GiftIntentType;
-const Constants = fn(1078);
+const GiftIntentType = fn(1374).GiftIntentType;
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, Endpoints: closure_8 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/gifting/PremiumGiftingIntentActionCreators.tsx");
@@ -39,9 +39,9 @@ export const fetchAndReconcileGiftIntentDismissals = function fetchAndReconcileG
       DispatcherDefault.dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
     }
   }, (arg0) => {
-    closure_1(1235).captureException(arg0, { tags: { feature: "gift_intent" } });
-    const obj = closure_1(1235);
-    closure_1(577).dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
+    closure_1(1231).captureException(arg0, { tags: { feature: "gift_intent" } });
+    const obj = closure_1(1231);
+    closure_1(573).dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
   });
 };
 export const logFriendsListGiftIntentsShown = function logFriendsListGiftIntentsShown() {

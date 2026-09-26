@@ -1,252 +1,29 @@
-// Module ID: 10278
-// Function ID: 10279
+// Module ID: 10281
+// Function ID: 10282
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4812, 502, 1996, 4815, 21, 4790, 558, 568, 504, 38, 9921, 1119, 10279, 5854, 10272, 2]
+// Dependencies: [19, 17, 4810, 502, 1992, 4813, 21, 4788, 504, 38, 9943, 10275, 1115, 5854, 10282, 2]
+// Exports: default
 
-// Module 10278 (UserSettingsVoiceOutputOptions)
+// Module 10281 (UserSettingsVoiceOutputOptions)
 import _modDef38 from "module_38" /* 38 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10279 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10282 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 const require = fn;
 const View = fn(17).View;
-const MediaEngineContextTypes = fn(4815).MediaEngineContextTypes;
+const MediaEngineContextTypes = fn(4813).MediaEngineContextTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_11 = createStyles.createStyles({ slider: { marginTop: 4 } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOutputOptions.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = stateFromStores1(568).c(27);
-  const tmp4 = closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function c() {
-      return outputVolume.getOutputVolume();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const obj = stateFromStores1(568);
-  const stateFromStores = stateFromStores1(504).useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ApplicationStreamingStore, AuthenticationStore];
-    const fn2 = function p() {
-      lastActiveStream = lastActiveStream.getLastActiveStream();
-      let tmp2 = null;
-      if (null != lastActiveStream) {
-        tmp2 = null;
-        if (lastActiveStream.ownerId !== id.getId()) {
-          tmp2 = lastActiveStream;
-        }
-      }
-      return tmp2;
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    let tmp10 = fn2;
-    let tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult = stateFromStores1(504);
-  stateFromStores1 = stateFromStores1(504).useStateFromStores(tmp9, tmp10);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [MediaEngineStore];
-    cResult[4] = items2;
-    let tmp14 = items2;
-  } else {
-    tmp14 = cResult[4];
-  }
-  if (cResult[5] !== stateFromStores1) {
-    class L {
-      constructor() {
-        num = 0;
-        if (null != closure_0) {
-          tmp2 = closure_7;
-          tmp3 = MediaEngineContextTypes;
-          num = closure_7.getLocalVolume(tmp.ownerId, MediaEngineContextTypes.STREAM);
-        }
-        return num;
-      }
-    }
-    cResult[5] = stateFromStores1;
-    cResult[6] = L;
-    const tmp16 = L;
-  } else {
-    class L {
-      constructor() {
-        num = 0;
-        if (null != closure_0) {
-          tmp2 = closure_7;
-          tmp3 = MediaEngineContextTypes;
-          num = closure_7.getLocalVolume(tmp.ownerId, MediaEngineContextTypes.STREAM);
-        }
-        return num;
-      }
-    }
-  }
-  const tmpResult3 = stateFromStores1(504);
-  const stateFromStores2 = stateFromStores1(504).useStateFromStores(tmp14, tmp16);
-  if (cResult[7] !== stateFromStores1) {
-    class T {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[11])(null != closure_0, "Can not set stream volume without active stream");
-        obj = closure_1(closure_2[12]);
-        setLocalVolumeResult = obj.setLocalVolume(closure_0.ownerId, arg0, MediaEngineContextTypes.STREAM);
-        return;
-      }
-    }
-    cResult[7] = stateFromStores1;
-    cResult[8] = T;
-  } else {
-    class T {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[11])(null != closure_0, "Can not set stream volume without active stream");
-        obj = closure_1(closure_2[12]);
-        setLocalVolumeResult = obj.setLocalVolume(closure_0.ownerId, arg0, MediaEngineContextTypes.STREAM);
-        return;
-      }
-    }
-  }
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[11])(null != closure_0, "Can not set stream volume without active stream");
-        obj = closure_1(closure_2[12]);
-        setLocalVolumeResult = obj.setLocalVolume(closure_0.ownerId, arg0, MediaEngineContextTypes.STREAM);
-        return;
-      }
-    }
-    const stringResult = obj5.string(tmp(1119).t.UXxPGB);
-    cResult[9] = stringResult;
-  } else {
-    class T {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[11])(null != closure_0, "Can not set stream volume without active stream");
-        obj = closure_1(closure_2[12]);
-        setLocalVolumeResult = obj.setLocalVolume(closure_0.ownerId, arg0, MediaEngineContextTypes.STREAM);
-        return;
-      }
-    }
-  }
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[11])(null != closure_0, "Can not set stream volume without active stream");
-        obj = closure_1(closure_2[12]);
-        setLocalVolumeResult = obj.setLocalVolume(closure_0.ownerId, arg0, MediaEngineContextTypes.STREAM);
-        return;
-      }
-    }
-    const stringResult1 = obj6.string(tmp(1119).t.xPHVBs);
-    cResult[10] = stringResult1;
-    const tmp21 = stringResult1;
-  } else {
-    class T {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[11])(null != closure_0, "Can not set stream volume without active stream");
-        obj = closure_1(closure_2[12]);
-        setLocalVolumeResult = obj.setLocalVolume(closure_0.ownerId, arg0, MediaEngineContextTypes.STREAM);
-        return;
-      }
-    }
-  }
-  ({ slider, slider: slider2 } = tmp4);
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor(arg0) {
-        obj = closure_1_1(closure_1_2[12]);
-        return obj.setOutputVolume(arg0);
-      }
-    }
-    const intl = tmp(1119).intl;
-    const stringResult2 = intl.string(tmp(1119).t.xPHVBs);
-    cResult[11] = E;
-    cResult[12] = stringResult2;
-    let tmp24 = stringResult2;
-    const tmp23 = E;
-  } else {
-    class E {
-      constructor(arg0) {
-        obj = closure_1_1(closure_1_2[12]);
-        return obj.setOutputVolume(arg0);
-      }
-    }
-    tmp24 = cResult[12];
-  }
-  if (cResult[13] === stateFromStores) {
-    class E {
-      constructor(arg0) {
-        obj = closure_1_1(closure_1_2[12]);
-        return obj.setOutputVolume(arg0);
-      }
-    }
-    if (cResult[16] === tmp4.slider) {
-      class E {
-        constructor(arg0) {
-          obj = closure_1_1(closure_1_2[12]);
-          return obj.setOutputVolume(arg0);
-        }
-      }
-      if (cResult[19] === stateFromStores1) {
-        class E {
-          constructor(arg0) {
-            obj = closure_1_1(closure_1_2[12]);
-            return obj.setOutputVolume(arg0);
-          }
-        }
-      }
-      let tmp34 = null != stateFromStores1;
-      if (tmp34) {
-        class E {
-          constructor(arg0) {
-            obj = closure_1_1(closure_1_2[12]);
-            return obj.setOutputVolume(arg0);
-          }
-        }
-        const obj2 = { label: null, subLabel: null };
-        const intl2 = tmp(1119).intl;
-        obj2.label = intl2.string(tmp(1119).t.pEAl4b);
-        const obj3 = { style: tmp4.slider, children: null };
-        const obj4 = { value: stateFromStores2, onValueChange: tmp18, accessibilityLabel: null };
-        const intl3 = tmp(1119).intl;
-        obj4.accessibilityLabel = intl3.string(tmp(1119).t.pEAl4b);
-        obj3.children = closure_9(VolumeSliderDefault, obj4);
-        obj2.subLabel = closure_9(View, obj3);
-        tmp34 = closure_9(tmp(5854).TableRow, obj2);
-      }
-      cResult[19] = stateFromStores1;
-      cResult[20] = tmp18;
-      cResult[21] = stateFromStores2;
-      cResult[22] = tmp4.slider;
-      cResult[23] = tmp34;
-    }
-    const obj7 = { label: tmp21, subLabel: null };
-    const obj8 = { style: slider, children: tmp26 };
-    obj7.subLabel = closure_9(View, obj8);
-    const tmp31 = closure_9(tmp(5854).TableRow, obj7);
-    cResult[16] = tmp4.slider;
-    cResult[17] = tmp26;
-    cResult[18] = tmp31;
-  }
-  const tmp27 = closure_9(VolumeSliderDefault, { style: slider2, value: stateFromStores, onValueChange: tmp23, accessibilityLabel: tmp24 });
-  cResult[13] = stateFromStores;
-  cResult[14] = tmp4.slider;
-  cResult[15] = tmp27;
-}) : (() => {
+export default function UserSettingsVoiceOutputOptions() {
   const tmp = closure_11();
   const items = [MediaEngineStore];
   const stateFromStores = stateFromStores1(504).useStateFromStores(items, () => outputVolume.getOutputVolume());
@@ -278,11 +55,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     AudioActionCreatorsDefault.setLocalVolume(stateFromStores1.ownerId, arg0, MediaEngineContextTypes.STREAM);
   }, items3);
   const obj4 = { title: null, hasIcons: false, children: null };
-  const intl = stateFromStores1(1119).intl;
-  obj4.title = intl.string(stateFromStores1(1119).t.UXxPGB);
+  const intl = stateFromStores1(1115).intl;
+  obj4.title = intl.string(stateFromStores1(1115).t.UXxPGB);
   const obj5 = { label: null, subLabel: null };
-  const intl2 = stateFromStores1(1119).intl;
-  obj5.label = intl2.string(stateFromStores1(1119).t.xPHVBs);
+  const intl2 = stateFromStores1(1115).intl;
+  obj5.label = intl2.string(stateFromStores1(1115).t.xPHVBs);
   const obj6 = { style: tmp.slider, children: null };
   const obj7 = {
     style: tmp.slider,
@@ -295,20 +72,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = stateFromStores1(504);
   const tmp10 = View;
   const tmp8 = closure_10;
-  const intl3 = stateFromStores1(1119).intl;
-  obj7.accessibilityLabel = intl3.string(stateFromStores1(1119).t.xPHVBs);
+  const intl3 = stateFromStores1(1115).intl;
+  obj7.accessibilityLabel = intl3.string(stateFromStores1(1115).t.xPHVBs);
   obj6.children = closure_9(VolumeSliderDefault, obj7);
   obj5.subLabel = closure_9(View, obj6);
   const items4 = [closure_9(stateFromStores1(5854).TableRow, obj5), ];
   let tmp9Result = null != stateFromStores1;
   if (tmp9Result) {
     const obj8 = { label: null, subLabel: null };
-    const intl4 = tmp2(1119).intl;
-    obj8.label = intl4.string(tmp2(1119).t.pEAl4b);
+    const intl4 = tmp2(1115).intl;
+    obj8.label = intl4.string(tmp2(1115).t.pEAl4b);
     const obj9 = { style: tmp.slider, children: null };
     const obj10 = { value: stateFromStores2, onValueChange: callback, accessibilityLabel: null };
-    const intl5 = tmp2(1119).intl;
-    obj10.accessibilityLabel = intl5.string(tmp2(1119).t.pEAl4b);
+    const intl5 = tmp2(1115).intl;
+    obj10.accessibilityLabel = intl5.string(tmp2(1115).t.pEAl4b);
     obj9.children = tmp9(VolumeSliderDefault, obj10);
     obj8.subLabel = tmp9(tmp10, obj9);
     tmp9Result = tmp9(tmp2(5854).TableRow, obj8);
@@ -316,5 +93,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   items4[1] = tmp9Result;
   obj4.children = items4;
-  return tmp8(stateFromStores1(10272).UserSettingsTableRowGroup, obj4);
-});
+  return tmp8(stateFromStores1(10275).UserSettingsTableRowGroup, obj4);
+};

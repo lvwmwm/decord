@@ -1,14 +1,14 @@
-// Module ID: 7758
-// Function ID: 7759
+// Module ID: 7753
+// Function ID: 7754
 // Name: FileSystemStore
-// Dependencies: [5, 3, 1095, 504, 577, 2074, 2]
+// Dependencies: [5, 3, 1091, 504, 573, 2070, 2]
 
-// Module 7758 (FileSystemStore)
+// Module 7753 (FileSystemStore)
 import LoggerDefault from "Logger" /* 3 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 let closure_3 = new LoggerDefault("FileSystemStore");
@@ -59,7 +59,7 @@ function refresh() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -137,7 +137,7 @@ function refresh() {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp38) {
         c3 = tmp;

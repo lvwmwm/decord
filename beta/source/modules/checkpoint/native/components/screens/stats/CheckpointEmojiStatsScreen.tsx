@@ -1,26 +1,17 @@
-// Module ID: 15982
-// Function ID: 15983
+// Module ID: 15986
+// Function ID: 15987
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [21, 558, 568, 15979, 2]
+// Dependencies: [21, 15983, 2]
+// Exports: default
 
-// Module 15982 (CheckpointEmojiStatsScreen)
+// Module 15986 (CheckpointEmojiStatsScreen)
 import jsxProd from "jsxProd" /* 21 */;
-import c from "c" /* 568 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15979 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15983 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointEmojiStatsScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = jsx(CheckpointStatsScreenDefault, { name: "Emoji" });
-    cResult[0] = tmp6;
-    let first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => jsx(CheckpointStatsScreenDefault, { name: "Emoji" }));
+export default function CheckpointEmojiStatsScreen() {
+  return jsx(CheckpointStatsScreenDefault, { name: "Emoji" });
+};

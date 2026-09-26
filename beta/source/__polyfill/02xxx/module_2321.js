@@ -1,9 +1,9 @@
 // Module ID: 2321
 // Function ID: 2322
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 2321
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/go_live/web/modal", scales: [1], hash: "cd2d5c0ef187afb877c9d94c96dd5098", name: "GoLiveModal.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", scales: [1], hash: "955eed7cc4876c0375acb05d74c44ea7", name: "da.messages.955eed7cc4876c0375acb05d74c44ea7.compiled.messages", type: "jsona" });

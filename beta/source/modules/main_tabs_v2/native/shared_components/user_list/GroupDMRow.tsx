@@ -1,154 +1,23 @@
-// Module ID: 11251
-// Function ID: 11252
+// Module ID: 11202
+// Function ID: 11203
 // Name: GroupDMRow
-// Dependencies: [109, 19, 11198, 21, 558, 568, 4943, 11252, 1181, 11253, 4786, 5851, 5854, 2]
+// Dependencies: [19, 11151, 21, 4941, 11203, 1177, 11204, 4784, 5853, 5854, 2]
+// Exports: default
 
-// Module 11251 (GroupDMRow)
-import c from "c" /* 568 */;
-import useChannelNameDefault from "useChannelName" /* 4943 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11252 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 11202 (GroupDMRow)
+import native from "native" /* 1177 */;
+import useChannelNameDefault from "useChannelName" /* 4941 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11203 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 11204 */;
 import noop from "module_19" /* 19 */;
 
-const native = TableCheckboxRow(1181);
-const Text_Text = TableCheckboxRow(4786);
-const TableCheckboxRow2 = TableCheckboxRow(5851);
-const TableRow = TableCheckboxRow(5854);
-const useRecipientsLabel = TableCheckboxRow(11253);
 require = fn;
-let closure_3 = ["channel", "mode", "selected", "disabled", "onPress"];
-const UserRowModes = fn(11198).UserRowModes;
+const UserRowModes = fn(11151).UserRowModes;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/GroupDMRow.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  let TableCheckboxRow = require;
-  let tmp = dependencyMap;
-  const cResult = c.c(26);
-  if (cResult[0] !== channel) {
-    channel = channel.channel;
-    closure_0 = channel;
-    ({ mode, selected, disabled, onPress } = channel);
-    closure_1 = onPress;
-    const tmp10 = _objectWithoutProperties(channel, closure_3);
-    cResult[0] = channel;
-    cResult[1] = channel;
-    cResult[2] = onPress;
-    cResult[3] = tmp10;
-    cResult[4] = mode;
-    cResult[5] = selected;
-    cResult[6] = disabled;
-    let NONE = mode;
-    let tmp5 = tmp10;
-  } else {
-    closure_0 = cResult[1];
-    closure_1 = cResult[2];
-    tmp5 = cResult[3];
-    NONE = cResult[4];
-  }
-  if (undefined === NONE) {
-    NONE = UserRowModes.NONE;
-  }
-  const tmp15 = useChannelNameDefault(tmp3);
-  if (cResult[7] === tmp3) {
-    if (cResult[8] === tmp4) {
-      let tmp16 = cResult[9];
-    }
-    if (cResult[10] !== tmp3) {
-      const obj2 = { size: native.AvatarSizes.REFRESH_MEDIUM_32, channel: tmp3 };
-      const tmp20 = jsx(GroupDMAvatarDefault, { size: native.AvatarSizes.REFRESH_MEDIUM_32, channel: tmp3 });
-      cResult[10] = tmp3;
-      cResult[11] = tmp20;
-      let tmp17 = tmp20;
-      const tmp14Result = GroupDMAvatarDefault;
-    } else {
-      tmp17 = cResult[11];
-    }
-    const recipientsLabel = useRecipientsLabel.useRecipientsLabel(tmp3);
-    if (cResult[12] !== recipientsLabel) {
-      let tmp24;
-      if (null != recipientsLabel) {
-        const obj3 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-        tmp24 = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
-      }
-      cResult[12] = recipientsLabel;
-      cResult[13] = tmp24;
-      let tmp22 = tmp24;
-    } else {
-      tmp22 = cResult[13];
-    }
-    let str = tmp15;
-    if (tmp15 == null) {
-      str = "";
-    }
-    if (cResult[14] === tmp13) {
-      if (cResult[15] === tmp16) {
-        if (cResult[16] === tmp17) {
-          if (cResult[17] === tmp5) {
-            if (cResult[18] === tmp22) {
-              if (cResult[19] === str) {
-                let tmp27 = cResult[20];
-              }
-              if (NONE === UserRowModes.TOGGLE) {
-                if (cResult[21] === tmp12) {
-                }
-                TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
-                const obj4 = {};
-                const merged = Object.assign(tmp27);
-                obj4.checked = tmp12;
-                tmp = <TableCheckboxRow />;
-                cResult[21] = tmp12;
-                cResult[22] = tmp27;
-                cResult[23] = tmp;
-              } else {
-                if (cResult[24] !== tmp27) {
-                  const obj5 = {};
-                  const merged1 = Object.assign(tmp27);
-                  const tmp37 = jsx(TableRow.TableRow, {});
-                  cResult[24] = tmp27;
-                  cResult[25] = tmp37;
-                  let tmp32 = tmp37;
-                } else {
-                  tmp32 = cResult[25];
-                }
-                return tmp32;
-              }
-            }
-          }
-        }
-      }
-    }
-    const obj6 = {};
-    const merged2 = Object.assign(tmp5);
-    obj6.disabled = tmp13;
-    obj6.subLabel = tmp22;
-    obj6.icon = tmp17;
-    obj6.onPress = tmp16;
-    obj6.label = str;
-    obj6.labelLineClamp = 1;
-    obj6.height = "100%";
-    cResult[14] = tmp13;
-    cResult[15] = tmp16;
-    cResult[16] = tmp17;
-    cResult[17] = tmp5;
-    cResult[18] = tmp22;
-    cResult[19] = str;
-    cResult[20] = obj6;
-    tmp27 = obj6;
-    const TableCheckboxRowResult = useRecipientsLabel;
-  }
-  const fn = function _() {
-    if (closure_1 != null) {
-      tmp(closure_0);
-    }
-  };
-  cResult[7] = tmp3;
-  cResult[8] = tmp4;
-  cResult[9] = fn;
-  tmp16 = fn;
-}) : ((channel) => {
+export default function GroupDMRow(channel) {
   channel = channel.channel;
   let NONE = channel.mode;
   if (NONE === undefined) {
@@ -180,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let tmp5Result;
   if (null != recipientsLabel) {
     const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp5Result = tmp5(tmp7(4786).Text, obj4);
+    tmp5Result = tmp5(tmp7(4784).Text, obj4);
   }
   obj3.subLabel = tmp5Result;
   obj3.icon = tmp8;
@@ -195,11 +64,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj5 = {};
     const merged2 = Object.assign(obj3);
     obj5.checked = flag;
-    let tmp5Result2 = tmp5(tmp7(5851).TableCheckboxRow, obj5);
+    let tmp5Result2 = tmp5(tmp7(5853).TableCheckboxRow, obj5);
   } else {
     const obj6 = {};
     const merged3 = Object.assign(obj3);
     tmp5Result2 = tmp5(tmp7(5854).TableRow, obj6);
   }
   return tmp5Result2;
-});
+};

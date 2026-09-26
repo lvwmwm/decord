@@ -1,15 +1,14 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11773
+// Function ID: 11774
 // Name: apexExperiment
-// Dependencies: [1438, 558, 568, 10613, 10614, 11650, 2]
+// Dependencies: [1434, 11584, 11585, 11774, 2]
+// Exports: useQuestOrbsMultiplierMarketing
 
-// Module 11649 (apexExperiment)
-import c from "c" /* 568 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 10613 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10614 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 11650 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1438 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11773 (apexExperiment)
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 11584 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 11585 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 11774 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 let ApexExperiment = ApexExperiment_mod;
@@ -19,7 +18,7 @@ obj2[1] = { enabled: true };
 obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 let ApexExperiment = ApexExperiment_mod;
-let obj3 = { name: "2026-05-app-store-overlay-feature-gate", kind: "user", defaultConfig: { enabled: false }, variations: null };
+const obj3 = { name: "2026-05-app-store-overlay-feature-gate", kind: "user", defaultConfig: { enabled: false }, variations: null };
 const obj4 = { 1: null };
 obj4[1] = { enabled: true };
 obj3.variations = obj4;
@@ -66,33 +65,12 @@ export const CustomAppStoreOverlayExperiment = apexExperiment2;
 export const IosAttributionFeatureGate = apexExperiment3;
 export const MutedVideoQuestNewDefaultsVariant = obj9;
 export const MutedVideoQuestNewDefaultsExperiment = apexExperiment4;
-export const useQuestOrbsMultiplierMarketing = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(4);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    let tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const questOrbMultiplierEligibility = QuestOrbMultiplierHooks.useQuestOrbMultiplierEligibility();
-  const tmp6 = questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS && closure_2.useConfig(tmp4).enabled;
-  if (cResult[2] !== tmp6) {
-    const obj3 = { shouldShowBonusOrbsUX: tmp6, multiplier: tmp(11650).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
-    cResult[2] = tmp6;
-    cResult[3] = obj3;
-    let tmp7 = obj3;
-  } else {
-    tmp7 = cResult[3];
-  }
-  return tmp7;
-}) : ((location) => {
+export const useQuestOrbsMultiplierMarketing = function useQuestOrbsMultiplierMarketing(location) {
   const questOrbMultiplierEligibility = QuestOrbMultiplierHooks.useQuestOrbMultiplierEligibility();
   const obj = { location };
   const tmp4 = questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS && closure_2.useConfig({ location }).enabled;
   return { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS && closure_2.useConfig({ location }).enabled, multiplier: QuestOrbsMultiplier.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
-});
+};
 export const ComposedQuestPlayerExperiment = apexExperiment5;
 export const MobileQuestHomeRedDotNotificationExperiment = apexExperiment6;
 export const QuestHomeTileRedesignExperiment = apexExperiment7;

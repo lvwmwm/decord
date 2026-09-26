@@ -1,87 +1,26 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 11905
+// Function ID: 11906
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 2067, 4971, 1078, 11784, 21, 4790, 580, 558, 568, 5831, 4786, 11785, 565, 1119, 11786, 1616, 2112, 4529, 5856, 8908, 7398, 7393, 4757, 6895, 7429, 2]
+// Dependencies: [32, 19, 17, 2063, 4969, 1074, 11906, 21, 4788, 576, 5833, 4784, 11907, 563, 1115, 11908, 1612, 7427, 6901, 2108, 4524, 5856, 8903, 7396, 7391, 4755, 2]
+// Exports: default
 
-// Module 11783 (GuildHighlightsNotificationsActionSheet)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import GuildIcon from "GuildIcon" /* 5831 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7393 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7398 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 11785 */;
+// Module 11905 (GuildHighlightsNotificationsActionSheet)
+import nativeDefault from "native" /* 576 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import GuildIcon from "GuildIcon" /* 5833 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 11907 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 const GuildIconDefault = GuildIcon;
 
 require = fn;
-const View = fn(17).View;
-const Constants = fn(1078);
-({ HelpdeskArticles: closure_8, HighlightSettings: closure_9 } = Constants);
-const FeedbackRating = fn(11784).FeedbackRating;
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let createStyles = fn(4790);
-let obj2 = { contentContainer: { padding: 24, alignItems: "center", justifyContent: "center" }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginBottom: 4 }, centerText: { textAlign: "center" }, feedback: { marginTop: 16, alignItems: "stretch", alignSelf: "stretch", paddingBottom: 16 }, thanks: { height: 40, textAlign: "center", textAlignVertical: "center" }, settings: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginVertical: 8, padding: 0 } };
-let closure_13 = createStyles.createStyles(obj2);
-createStyles = fn(4790);
-let obj5 = { guildPill: null, guildName: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginVertical: 8, padding: 0 };
-const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-obj5.guildPill = { flexDirection: "row", padding: 8, marginBottom: 16, backgroundColor: nativeDefault.colors.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round };
-obj5.guildName = { paddingHorizontal: 8 };
-let closure_14 = createStyles.createStyles(obj5);
-let ReactCompilerGating = fn(558);
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
-  const cResult = c.c(9);
-  guild = guild.guild;
-  const tmp4 = closure_14();
-  if (cResult[0] !== guild) {
-    const obj2 = { guild, size: tmp(5831).GuildIconSizes.SMALL_32, animate: true };
-    const tmp9 = closure_1_11(GuildIconDefault, obj2);
-    cResult[0] = guild;
-    cResult[1] = tmp9;
-    let tmp5 = tmp9;
-  } else {
-    tmp5 = cResult[1];
-  }
-  let name;
-  if (guild != null) {
-    name = guild.name;
-  }
-  if (cResult[2] === tmp4.guildName) {
-    if (cResult[3] === name) {
-      let tmp11 = cResult[4];
-    }
-    if (cResult[5] === tmp4.guildPill) {
-      if (cResult[6] === tmp5) {
-        if (cResult[7] === tmp11) {
-          let tmp13 = cResult[8];
-        }
-        return tmp13;
-      }
-    }
-    const obj3 = { style: tmp4.guildPill, children: null };
-    const items = [tmp5, tmp11];
-    obj3.children = items;
-    const tmp16 = __initData(View, obj3);
-    cResult[5] = tmp4.guildPill;
-    cResult[6] = tmp5;
-    cResult[7] = tmp11;
-    cResult[8] = tmp16;
-    tmp13 = tmp16;
-  }
-  const tmp12 = closure_1_11(Text_Text.Text, { style: tmp4.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: name });
-  cResult[2] = tmp4.guildName;
-  cResult[3] = name;
-  cResult[4] = tmp12;
-  tmp11 = tmp12;
-}) : ((guild) => {
+function GuildPill(guild) {
   guild = guild.guild;
   const tmp = closure_14();
   const obj = { style: tmp.guildPill, children: null };
@@ -95,365 +34,28 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   obj3.children = name;
   items[1] = closure_1_11(Text_Text.Text, obj3);
   obj.children = items;
-  return __initData(View, obj);
-});
-ReactCompilerGating = fn(558);
-let obj6 = { flexDirection: "row", padding: 8, marginBottom: 16, backgroundColor: nativeDefault.colors.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round };
+  return closure_1_12(View, obj);
+}
+const View = fn(17).View;
+const Constants = fn(1074);
+({ HelpdeskArticles: closure_8, HighlightSettings: closure_9 } = Constants);
+const FeedbackRating = fn(11906).FeedbackRating;
+const jsxProd = fn(21);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+let createStyles = fn(4788);
+let obj2 = { contentContainer: { padding: 24, alignItems: "center", justifyContent: "center" }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginBottom: 4 }, centerText: { textAlign: "center" }, feedback: { marginTop: 16, alignItems: "stretch", alignSelf: "stretch", paddingBottom: 16 }, thanks: { height: 40, textAlign: "center", textAlignVertical: "center" }, settings: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginVertical: 8, padding: 0 } };
+let closure_13 = createStyles.createStyles(obj2);
+createStyles = fn(4788);
+let obj5 = { guildPill: null, guildName: null };
+let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginVertical: 8, padding: 0 };
+const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
+obj5.guildPill = { flexDirection: "row", padding: 8, marginBottom: 16, backgroundColor: nativeDefault.colors.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round };
+obj5.guildName = { paddingHorizontal: 8 };
+let closure_14 = createStyles.createStyles(obj5);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/native/GuildHighlightsNotificationsActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
-  const cResult = guildId(ref[11]).c(61);
-  guildId = guildId.guildId;
-  const feedbackSettings = guildId.feedbackSettings;
-  let tmp4 = closure_13();
-  ref = noop.useRef(null);
-  const tmp6 = first(noop.useState(undefined), 2);
-  first = tmp6[0];
-  noop = tmp6[1];
-  const tmp8 = first(noop.useState(false), 2);
-  const first1 = tmp8[0];
-  GuildStore = tmp8[1];
-  let obj = guildId(ref[11]);
-  const obj2 = noop;
-  UserGuildSettingsStore = first(noop.useState(false), 2)[1];
-  if (cResult[0] === feedbackSettings) {
-    if (cResult[1] === first1) {
-      let tmp11 = cResult[2];
-    }
-    closure_8 = tmp11;
-    if (cResult[3] === first) {
-      if (cResult[4] === tmp11) {
-        let tmp12 = cResult[5];
-        let tmp13 = cResult[6];
-      }
-      const effect = obj2.useEffect(tmp12, tmp13);
-      if (cResult[7] !== tmp11) {
-        class V {
-          constructor(arg0) {
-            tmp = closure_4(guildId);
-            obj = guildId;
-            if (guildId == null) {
-              obj = {};
-            }
-            tmp2 = obj.rating === FeedbackRating.GOOD || null != obj.reason;
-            if (tmp2) {
-              tmp5 = closure_8;
-              tmp6 = closure_8(guildId);
-              tmp7 = closure_7;
-              flag2 = false;
-              tmp8 = closure_7(false);
-            } else {
-              tmp3 = closure_7;
-              flag = true;
-              tmp4 = closure_7(true);
-            }
-            obj2 = closure_0(closure_2[14]);
-            handleSurveyCleanupResult = obj2.handleSurveyCleanup();
-            return;
-          }
-        }
-        cResult[7] = tmp11;
-        class E {
-          constructor() {
-            return () => {
-              closure_1_8(first);
-            };
-          }
-        }
-        cResult[8] = V;
-      } else {
-        class V {
-          constructor(arg0) {
-            tmp = closure_4(guildId);
-            obj = guildId;
-            if (guildId == null) {
-              obj = {};
-            }
-            tmp2 = obj.rating === FeedbackRating.GOOD || null != obj.reason;
-            if (tmp2) {
-              tmp5 = closure_8;
-              tmp6 = closure_8(guildId);
-              tmp7 = closure_7;
-              flag2 = false;
-              tmp8 = closure_7(false);
-            } else {
-              tmp3 = closure_7;
-              flag = true;
-              tmp4 = closure_7(true);
-            }
-            obj2 = closure_0(closure_2[14]);
-            handleSurveyCleanupResult = obj2.handleSurveyCleanup();
-            return;
-          }
-        }
-      }
-      class E {
-        constructor() {
-          return () => {
-            closure_1_8(first);
-          };
-        }
-      }
-      const _Symbol = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class U {
-          constructor() {
-            current = closure_2.current;
-            if (current != null) {
-              expandActionSheetResult = current.expandActionSheet();
-            }
-            tmp2 = closure_7(false);
-            return;
-          }
-        }
-        cResult[9] = U;
-        class E {
-          constructor() {
-            return () => {
-              closure_1_8(first);
-            };
-          }
-        }
-      } else {
-        class U {
-          constructor() {
-            current = closure_2.current;
-            if (current != null) {
-              expandActionSheetResult = current.expandActionSheet();
-            }
-            tmp2 = closure_7(false);
-            return;
-          }
-        }
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class U {
-          constructor() {
-            current = closure_2.current;
-            if (current != null) {
-              expandActionSheetResult = current.expandActionSheet();
-            }
-            tmp2 = closure_7(false);
-            return;
-          }
-        }
-        const items = [UserGuildSettingsStore, ];
-        class E {
-          constructor() {
-            return () => {
-              closure_1_8(first);
-            };
-          }
-        }
-        items[1] = GuildStore;
-        cResult[10] = items;
-        const tmp16 = items;
-      } else {
-        class U {
-          constructor() {
-            current = closure_2.current;
-            if (current != null) {
-              expandActionSheetResult = current.expandActionSheet();
-            }
-            tmp2 = closure_7(false);
-            return;
-          }
-        }
-      }
-      if (cResult[11] !== guildId) {
-        class P {
-          constructor() {
-            obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-            return obj;
-          }
-        }
-        const items1 = [guildId];
-        class E {
-          constructor() {
-            return () => {
-              closure_1_8(first);
-            };
-          }
-        }
-        cResult[11] = guildId;
-        cResult[12] = P;
-        cResult[13] = items1;
-        let tmp18 = items1;
-        const tmp17 = P;
-      } else {
-        class P {
-          constructor() {
-            obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-            return obj;
-          }
-        }
-        tmp18 = cResult[13];
-      }
-      const stateFromStoresObject = tmp(tmp2[15]).useStateFromStoresObject(tmp16, tmp17, tmp18);
-      ({ guild, muted, notifyHighlights } = stateFromStoresObject);
-      if (feedbackSettings != null) {
-        class P {
-          constructor() {
-            obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-            return obj;
-          }
-        }
-      }
-      if (cResult[14] === first) {
-        class P {
-          constructor() {
-            obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-            return obj;
-          }
-        }
-      }
-      if (null == undefined) {
-        class P {
-          constructor() {
-            obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-            return obj;
-          }
-        }
-        cResult[14] = first;
-        class E {
-          constructor() {
-            return () => {
-              closure_1_8(first);
-            };
-          }
-        }
-        cResult[16] = tmp21;
-        cResult[17] = tmp15;
-        cResult[18] = tmp4.centerText;
-        cResult[19] = tmp4.thanks;
-        cResult[20] = null;
-      } else {
-        class P {
-          constructor() {
-            obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-            return obj;
-          }
-        }
-        if (first == null) {
-          class P {
-            constructor() {
-              obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-              return obj;
-            }
-          }
-        }
-        class E {
-          constructor() {
-            return () => {
-              closure_1_8(first);
-            };
-          }
-        }
-        if (tmp25) {
-          class P {
-            constructor() {
-              obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-              return obj;
-            }
-          }
-          const items2 = [tmp4.centerText, ];
-          class E {
-            constructor() {
-              return () => {
-                closure_1_8(first);
-              };
-            }
-          }
-          tmp31[0] = items2;
-          const intl2 = tmp(tmp2[16]).intl;
-          tmp31[3] = intl2.string(tmp(tmp2[16]).t.kZbFIO);
-          let tmp26Result = tmp26(tmp(tmp2[13]).Text, tmp31);
-        } else {
-          class P {
-            constructor() {
-              obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-              return obj;
-            }
-          }
-          class E {
-            constructor() {
-              return () => {
-                closure_1_8(first);
-              };
-            }
-          }
-          tmp27[0] = tmp28(tmp(tmp2[16]).t.Yzl7Or);
-          const intl = tmp(tmp2[16]).intl;
-          tmp27[1] = intl.string(tmp(tmp2[16]).t.g1q5fr);
-          if (feedbackSettings != null) {
-            class P {
-              constructor() {
-                obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-                return obj;
-              }
-            }
-          }
-          if (undefined == null) {
-            class P {
-              constructor() {
-                obj = { guild: closure_6.getGuild(guildId), muted: closure_7.isMuted(guildId), notifyHighlights: closure_7.getNotifyHighlights(guildId) };
-                return obj;
-              }
-            }
-          }
-          tmp27[2] = undefined;
-          tmp27[3] = null != feedbackSettings ? feedbackSettings.onFeedbackShown : (() => {
-
-          });
-          tmp27[4] = tmp15;
-          tmp26Result = tmp26(tmp(tmp2[17]).FeedbackForm, tmp27);
-        }
-      }
-      const tmpResult = tmp(tmp2[15]);
-    }
-    class E {
-      constructor() {
-        return () => {
-          closure_1_8(first);
-        };
-      }
-    }
-    const items3 = [first, tmp11];
-    cResult[3] = first;
-    cResult[4] = tmp11;
-    cResult[5] = E;
-    cResult[6] = items3;
-    tmp13 = items3;
-    tmp12 = E;
-  }
-  const fn = function b(rating) {
-    let tmp = first1;
-    if (!first1) {
-      rating = undefined;
-      if (rating != null) {
-        rating = rating.rating;
-      }
-      tmp = null == rating;
-    }
-    if (!tmp) {
-      if (feedbackSettings != null) {
-        const onFeedbackCompleted = tmp4.onFeedbackCompleted;
-        if (onFeedbackCompleted != null) {
-          onFeedbackCompleted(rating);
-        }
-      }
-      PushFeedbackActions.handleSurveyCleanup();
-      closure_6(true);
-      tmp4 = feedbackSettings;
-    }
-  };
-  cResult[0] = feedbackSettings;
-  cResult[1] = first1;
-  cResult[2] = fn;
-  tmp11 = fn;
-}) : ((guildId) => {
+export default function SummaryFeedbackActionSheet(guildId) {
   guildId = guildId.guildId;
   const feedbackSettings = guildId.feedbackSettings;
   let first;
@@ -517,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }, []);
   const items3 = [closure_7, closure_6];
   const items4 = [guildId];
-  const stateFromStoresObject = guildId(ref[15]).useStateFromStoresObject(items3, () => ({ guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) }), items4);
+  const stateFromStoresObject = guildId(ref[13]).useStateFromStoresObject(items3, () => ({ guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) }), items4);
   let muted = stateFromStoresObject.muted;
   let reasons;
   ({ guild, notifyHighlights } = stateFromStoresObject);
@@ -533,7 +135,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       num = num2;
     }
-    const sum = 316 + num + feedbackSettings(tmp12[18])().bottom;
+    const sum = 316 + num + feedbackSettings(tmp12[16])().bottom;
     let tmp23 = !tmp15;
     if (tmp15) {
       let obj = first;
@@ -565,16 +167,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     obj4.onLayout = tmp29;
     const obj5 = { style: tmp.header, children: null };
     const obj6 = { guild };
-    const items5 = [closure_11(closure_15, obj6), , ];
+    const items5 = [closure_11(GuildPill, obj6), , ];
     const obj7 = { style: tmp.headerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
-    const intl4 = tmp11(tmp12[16]).intl;
-    obj7.children = intl4.string(tmp11(tmp12[16]).t.o8Bypv);
-    items5[1] = closure_11(tmp11(tmp12[13]).Text, obj7);
+    const intl4 = tmp11(tmp12[14]).intl;
+    obj7.children = intl4.string(tmp11(tmp12[14]).t.o8Bypv);
+    items5[1] = closure_11(tmp11(tmp12[11]).Text, obj7);
     const obj8 = { style: tmp.centerText, variant: "text-md/medium", color: "text-default", children: null };
-    const intl5 = tmp11(tmp12[16]).intl;
+    const intl5 = tmp11(tmp12[14]).intl;
     const obj9 = { helpUrl: feedbackSettings(tmp12[19]).getArticleURL(callback.HIGHLIGHTS_NOTIFICATIONS) };
-    obj8.children = intl5.format(tmp11(tmp12[16]).t.enfuur, obj9);
-    items5[2] = closure_11(tmp11(tmp12[13]).Text, obj8);
+    obj8.children = intl5.format(tmp11(tmp12[14]).t.enfuur, obj9);
+    items5[2] = closure_11(tmp11(tmp12[11]).Text, obj8);
     obj5.children = items5;
     const items6 = [closure_12(first1, obj5), , , ];
     let tmp27Result = null != null;
@@ -590,8 +192,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (first.rating !== FeedbackRating.GOOD) {
       const obj11 = { style: tmp.settings, shadow: "low", border: "subtle", children: null };
       const obj12 = { disabled: muted, label: null, value: null, onValueChange: null };
-      const intl6 = tmp11(tmp12[16]).intl;
-      obj12.label = intl6.string(tmp11(tmp12[16]).t.MVi7LQ);
+      const intl6 = tmp11(tmp12[14]).intl;
+      obj12.label = intl6.string(tmp11(tmp12[14]).t.MVi7LQ);
       if (!muted) {
         muted = notifyHighlights === constants.DISABLED;
       }
@@ -606,19 +208,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj13 = { children: null };
     items6[2] = tmp27Result2;
     const obj14 = { style: tmp.centerText, variant: "text-sm/medium", color: "text-default", children: null };
-    const intl7 = tmp11(tmp12[16]).intl;
+    const intl7 = tmp11(tmp12[14]).intl;
     const obj15 = {
       notifSettingsHook() {
           ActionSheetActionCreatorsDefault.hideActionSheet();
           NotificationSettingsModalActionCreatorsDefault.open(guildId);
         }
     };
-    obj14.children = intl7.format(tmp11(tmp12[16]).t.F9rfLX, obj15);
-    items6[3] = closure_11(tmp11(tmp12[13]).Text, obj14);
+    obj14.children = intl7.format(tmp11(tmp12[14]).t.F9rfLX, obj15);
+    items6[3] = closure_11(tmp11(tmp12[11]).Text, obj14);
     obj13.children = items6;
     obj4.children = closure_12(first1, obj13);
-    obj3.children = closure_11(tmp11(tmp12[26]).BottomSheetScrollView, obj4);
-    return closure_11(tmp11(tmp12[27]).BottomSheet, obj3);
+    obj3.children = closure_11(tmp11(tmp12[18]).BottomSheetScrollView, obj4);
+    return closure_11(tmp11(tmp12[17]).BottomSheet, obj3);
   } else {
     let obj16 = first;
     if (first == null) {
@@ -629,15 +231,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const items7 = [, ];
       ({ centerText: arr7[0], thanks: arr7[1] } = tmp);
       obj17.style = items7;
-      const intl3 = tmp11(tmp12[16]).intl;
-      obj17.children = intl3.string(tmp11(tmp12[16]).t.kZbFIO);
-      let tmp18Result = tmp18(tmp11(tmp12[13]).Text, obj17);
+      const intl3 = tmp11(tmp12[14]).intl;
+      obj17.children = intl3.string(tmp11(tmp12[14]).t.kZbFIO);
+      let tmp18Result = tmp18(tmp11(tmp12[11]).Text, obj17);
     } else {
       const obj18 = { ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, trackOpen: null, onFeedbackChanged: null };
-      const intl = tmp11(tmp12[16]).intl;
-      obj18.ratingsBodyLabel = intl.string(tmp11(tmp12[16]).t.Yzl7Or);
-      const intl2 = tmp11(tmp12[16]).intl;
-      obj18.reasonsHeaderLabel = intl2.string(tmp11(tmp12[16]).t.g1q5fr);
+      const intl = tmp11(tmp12[14]).intl;
+      obj18.ratingsBodyLabel = intl.string(tmp11(tmp12[14]).t.Yzl7Or);
+      const intl2 = tmp11(tmp12[14]).intl;
+      obj18.reasonsHeaderLabel = intl2.string(tmp11(tmp12[14]).t.g1q5fr);
       let reasons1;
       if (feedbackSettings != null) {
         reasons1 = feedbackSettings.reasons;
@@ -650,8 +252,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
 
       });
       obj18.onFeedbackChanged = callback1;
-      tmp18Result = tmp18(tmp11(tmp12[17]).FeedbackForm, obj18);
+      tmp18Result = tmp18(tmp11(tmp12[15]).FeedbackForm, obj18);
     }
     tmp17 = obj16.rating === FeedbackRating.GOOD || null != obj16.reason;
   }
-});
+};

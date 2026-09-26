@@ -1,12 +1,12 @@
-// Module ID: 8293
-// Function ID: 8294
+// Module ID: 8288
+// Function ID: 8289
 // Name: transformSticker
-// Dependencies: [2026, 5137, 8294, 8246, 1119, 2023, 2]
+// Dependencies: [2022, 5135, 8289, 8241, 1115, 2019, 2]
 // Exports: transformSticker
 
-// Module 8293 (transformSticker)
-import util from "util" /* 1119 */;
-import StickersConstants from "StickersConstants" /* 2026 */;
+// Module 8288 (transformSticker)
+import util from "util" /* 1115 */;
+import StickersConstants from "StickersConstants" /* 2022 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ export const transformSticker = function transformSticker(tmp5Result8) {
     str2 = "";
   }
   obj.url = str2;
-  const NativeLottieRenderMode = tmp(8294).NativeLottieRenderMode;
+  const NativeLottieRenderMode = tmp(8289).NativeLottieRenderMode;
   obj.renderMode = setting === StickerAnimationSettings.ALWAYS_ANIMATE ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
   const obj2 = { isPreview: setting !== StickerAnimationSettings.ALWAYS_ANIMATE };
   const tmpResult = require("StickersUtils");
@@ -41,10 +41,10 @@ export const transformSticker = function transformSticker(tmp5Result8) {
     },
     cheap: null
   };
-  let intl = tmp(1119).intl;
+  let intl = tmp(1115).intl;
   obj3.cheap = intl.string(require("util").t["fT+Yjp"]);
   obj.accessibilityLabel = require("getAccessibilityLabelOrCheapFallbackUnsafe").getAccessibilityLabelOrCheapFallbackUnsafe(obj3);
-  const intl2 = tmp(1119).intl;
+  const intl2 = tmp(1115).intl;
   obj.accessibilityHint = intl2.string(require("util").t.GCEruV);
   return obj;
 };

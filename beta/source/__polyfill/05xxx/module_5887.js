@@ -1,10 +1,10 @@
 // Module ID: 5887
 // Function ID: 5888
-// Dependencies: [19, 17, 21, 1489]
+// Dependencies: [19, 17, 21, 1485]
 // Exports: Background
 
 // Module 5887
-import Link from "Link" /* 1489 */;
+import Link from "Link" /* 1485 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,11 +1,11 @@
-// Module ID: 13553
-// Function ID: 13554
+// Module ID: 13543
+// Function ID: 13544
 // Name: getHeaderTextForInvite
-// Dependencies: [1119, 2]
+// Dependencies: [1115, 2]
 // Exports: getHeaderTextForInvite
 
-// Module 13553 (getHeaderTextForInvite)
-import util from "util" /* 1119 */;
+// Module 13543 (getHeaderTextForInvite)
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/getHeaderTextForInvite.tsx");

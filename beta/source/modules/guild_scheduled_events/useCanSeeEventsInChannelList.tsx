@@ -1,17 +1,17 @@
-// Module ID: 12556
-// Function ID: 12557
+// Module ID: 12655
+// Function ID: 12656
 // Name: useCanSeeEventsInChannelList
-// Dependencies: [558, 9789, 9778, 12557, 2]
+// Dependencies: [9793, 9782, 12656, 2]
+// Exports: default
 
-// Module 12556 (useCanSeeEventsInChannelList)
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9789 */;
-import useIsHubForGuildDefault from "useIsHubForGuild" /* 12557 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12655 (useCanSeeEventsInChannelList)
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9793 */;
+import useIsHubForGuildDefault from "useIsHubForGuild" /* 12656 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useCanSeeEventsInChannelList.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+export default function useCanSeeEventsInChannelList(arg0) {
   let tmp = useCanCreateAnEventDefault(arg0);
   const tmp2 = useIsHubForGuildDefault(arg0);
   let tmp3 = !tmp2;
@@ -22,15 +22,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = tmp;
   }
   return tmp3;
-}) : ((arg0) => {
-  let tmp = useCanCreateAnEventDefault(arg0);
-  const tmp2 = useIsHubForGuildDefault(arg0);
-  let tmp3 = !tmp2;
-  if (!tmp2) {
-    if (!tmp) {
-      tmp = arr.length > 0;
-    }
-    tmp3 = tmp;
-  }
-  return tmp3;
-});
+};

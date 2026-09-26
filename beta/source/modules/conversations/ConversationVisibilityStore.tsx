@@ -1,11 +1,11 @@
-// Module ID: 7878
-// Function ID: 7879
+// Module ID: 7873
+// Function ID: 7874
 // Name: ConversationVisibilityStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7878 (ConversationVisibilityStore)
+// Module 7873 (ConversationVisibilityStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const highlightingEnabled = true;
 const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;

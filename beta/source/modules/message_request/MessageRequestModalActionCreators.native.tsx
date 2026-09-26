@@ -1,18 +1,18 @@
-// Module ID: 12631
-// Function ID: 12632
+// Module ID: 12729
+// Function ID: 12730
 // Name: MessageRequestModalActionCreators
-// Dependencies: [12628, 1078, 1245, 5143, 1119, 5239, 4757, 12632, 1984, 2]
+// Dependencies: [12726, 1074, 1241, 5141, 1115, 5237, 4755, 12730, 1980, 2]
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 12631 (MessageRequestModalActionCreators)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
-import common_AlertDefault from "common/Alert" /* 5239 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 12628 */;
+// Module 12729 (MessageRequestModalActionCreators)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 12726 */;
 import size from "module_2" /* 2 */;
 
 const type = MessageRequestConstants.MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL;
@@ -39,5 +39,5 @@ export const openAcceptMessageRequestConfirmModal = function openAcceptMessageRe
 };
 export const onMarkAsNotSpamConfirmationModal = function onMarkAsNotSpamConfirmationModal(arg0) {
   ({ onConfirm, onCancel, channel } = arg0);
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12632, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12730, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
 };

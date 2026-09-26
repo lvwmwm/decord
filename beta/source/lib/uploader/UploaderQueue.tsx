@@ -1,9 +1,9 @@
-// Module ID: 8121
-// Function ID: 8122
+// Module ID: 8116
+// Function ID: 8117
 // Name: UploaderQueue
 // Dependencies: [5, 3, 2]
 
-// Module 8121 (UploaderQueue)
+// Module 8116 (UploaderQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -42,7 +42,7 @@ prototype["drainQueue"] = function drainQueue() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -67,7 +67,7 @@ prototype["drainQueue"] = function drainQueue() {
               tmp3.log("drainQueue() - No uploads left, setting drainingQueue to false");
               self.drainingQueue = false;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             } else {
               c3 = 1;
               tmp3.log("drainQueue() - start uploader");

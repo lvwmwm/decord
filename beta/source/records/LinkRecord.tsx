@@ -1,12 +1,12 @@
-// Module ID: 10112
-// Function ID: 10113
+// Module ID: 10133
+// Function ID: 10134
 // Name: LinkRecord
-// Dependencies: [1391, 1078, 2]
+// Dependencies: [1387, 1074, 2]
 
-// Module 10112 (LinkRecord)
-import Record from "Record" /* 1391 */;
+// Module 10133 (LinkRecord)
+import Record from "Record" /* 1387 */;
 
-const Routes = fn(1078).Routes;
+const Routes = fn(1074).Routes;
 const prototype = function LinkRecord(arg0) {
   const tmp = new prototype(new.target, new.target);
   ({ id: tmp.id, path: tmp.path, inviteCode: tmp.inviteCode } = arg0);

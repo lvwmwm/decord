@@ -1,62 +1,21 @@
-// Module ID: 10736
-// Function ID: 10737
+// Module ID: 10700
+// Function ID: 10701
 // Name: StickerOptionsActionSheet
-// Dependencies: [19, 21, 558, 568, 7468, 4489, 4757, 4732, 1119, 7481, 5935, 5854, 2]
+// Dependencies: [19, 21, 7466, 4485, 4755, 7474, 5936, 5854, 4730, 1115, 2]
+// Exports: default
 
-// Module 10736 (StickerOptionsActionSheet)
-import ToastUtils from "ToastUtils" /* 4489 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+// Module 10700 (StickerOptionsActionSheet)
+import ToastUtils from "ToastUtils" /* 4485 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import ClipboardUtils from "ClipboardUtils" /* 7466 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stickers/native/StickerOptionsActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((stickerUrl) => {
-  const cResult = stickerUrl(568).c(6);
-  stickerUrl = stickerUrl.stickerUrl;
-  if (cResult[0] !== stickerUrl) {
-    const fn = function t() {
-      ClipboardUtils.copy(stickerUrl);
-      const result = ToastUtils.presentCopiedToClipboard();
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-    };
-    cResult[0] = stickerUrl;
-    cResult[1] = fn;
-    let tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = jsx(tmp(4732).LinkIcon, {});
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.B1ubHx);
-    cResult[2] = tmp8;
-    cResult[3] = stringResult;
-    let tmp6 = stringResult;
-    let tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-  }
-  if (cResult[4] !== tmp4) {
-    let obj2 = { children: null };
-    const obj3 = { hasIcons: true, children: null };
-    const obj4 = { icon: tmp5, label: tmp6, onPress: tmp4 };
-    obj3.children = jsx(tmp(5854).TableRow, { icon: tmp5, label: tmp6, onPress: tmp4 });
-    obj2.children = jsx(tmp(5935).TableRowGroup, { hasIcons: true, children: null });
-    const tmp12 = jsx(tmp(7481).ActionSheet, { children: null });
-    cResult[4] = tmp4;
-    cResult[5] = tmp12;
-    let tmp10 = tmp12;
-  } else {
-    tmp10 = cResult[5];
-  }
-  return tmp10;
-}) : ((stickerUrl) => {
+export default function StickerOptionsActionSheet(stickerUrl) {
   stickerUrl = stickerUrl.stickerUrl;
   const items = [stickerUrl];
   const callback = noop.useCallback(() => {
@@ -66,11 +25,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stickerUrl) => {
   }, items);
   let obj = { children: null };
   let obj2 = { hasIcons: true, children: null };
-  const obj3 = { icon: jsx(stickerUrl(4732).LinkIcon, {}), label: null, onPress: null };
-  const intl = stickerUrl(1119).intl;
-  obj3.label = intl.string(stickerUrl(1119).t.B1ubHx);
+  const obj3 = { icon: jsx(stickerUrl(4730).LinkIcon, {}), label: null, onPress: null };
+  const intl = stickerUrl(1115).intl;
+  obj3.label = intl.string(stickerUrl(1115).t.B1ubHx);
   obj3.onPress = callback;
-  obj2.children = jsx(stickerUrl(5854).TableRow, { icon: jsx(stickerUrl(4732).LinkIcon, {}), label: null, onPress: null });
-  obj.children = jsx(stickerUrl(5935).TableRowGroup, { hasIcons: true, children: null });
-  return jsx(stickerUrl(7481).ActionSheet, { children: null });
-});
+  obj2.children = jsx(stickerUrl(5854).TableRow, { icon: jsx(stickerUrl(4730).LinkIcon, {}), label: null, onPress: null });
+  obj.children = jsx(stickerUrl(5936).TableRowGroup, { hasIcons: true, children: null });
+  return jsx(stickerUrl(7474).ActionSheet, { children: null });
+};

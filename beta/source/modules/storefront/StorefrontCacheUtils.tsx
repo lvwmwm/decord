@@ -1,11 +1,11 @@
-// Module ID: 8526
-// Function ID: 8527
+// Module ID: 8521
+// Function ID: 8522
 // Name: StorefrontCacheUtils
-// Dependencies: [1095, 2]
+// Dependencies: [1091, 2]
 // Exports: shouldRefetchEntry
 
-// Module 8526 (StorefrontCacheUtils)
-import DurationsDefault from "Durations" /* 1095 */;
+// Module 8521 (StorefrontCacheUtils)
+import DurationsDefault from "Durations" /* 1091 */;
 
 const result = 12 * DurationsDefault.Millis.HOUR;
 const result1 = 10 * DurationsDefault.Millis.MINUTE;

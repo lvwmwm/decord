@@ -1,81 +1,35 @@
-// Module ID: 13484
-// Function ID: 13485
+// Module ID: 13474
+// Function ID: 13475
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4790, 558, 568, 8484, 8477, 1119, 1181, 2]
+// Dependencies: [19, 17, 21, 4788, 8479, 8472, 1115, 1177, 2]
+// Exports: default
 
-// Module 13484 (AvatarDecorationProductPreview)
-import c from "c" /* 568 */;
-import useShopProductItems from "useShopProductItems" /* 8477 */;
-import useCurrentUser from "useCurrentUser" /* 8484 */;
+// Module 13474 (AvatarDecorationProductPreview)
+import useShopProductItems from "useShopProductItems" /* 8472 */;
+import useCurrentUser from "useCurrentUser" /* 8479 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_4 = createStyles.createStyles({ fullSizePreview: { flex: 1, alignItems: "center", justifyContent: "center" } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/AvatarDecorationProductPreview.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
-  const cResult = c.c(9);
-  const tmp4 = closure_4();
-  const currentUser = useCurrentUser.useCurrentUser();
-  const firstAvatarDecoration = useShopProductItems.useShopProductItems(product.product).firstAvatarDecoration;
-  if (null == firstAvatarDecoration) {
-    return null;
-  } else {
-    if (cResult[0] !== firstAvatarDecoration.label) {
-      const intl = tmp(1119).intl;
-      const obj4 = { a11y_text: firstAvatarDecoration.label };
-      const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t.Do2lxE, obj4);
-      cResult[0] = firstAvatarDecoration.label;
-      cResult[1] = formatToPlainStringResult;
-      let tmp6 = formatToPlainStringResult;
-    } else {
-      tmp6 = cResult[1];
-    }
-    if (cResult[2] === firstAvatarDecoration) {
-      if (cResult[3] === currentUser) {
-        let tmp8 = cResult[4];
-      }
-      if (cResult[5] === tmp4.fullSizePreview) {
-        if (cResult[6] === tmp6) {
-          if (cResult[7] === tmp8) {
-            let tmp11 = cResult[8];
-          }
-          return tmp11;
-        }
-      }
-      const obj5 = { style: tmp4.fullSizePreview, pointerEvents: "box-none", accessibilityLabel: tmp6, accessibilityRole: "image", accessible: true, children: tmp8 };
-      const tmp14 = <View style={tmp4.fullSizePreview} pointerEvents="box-none" accessibilityLabel={tmp6} accessibilityRole="image" accessible>{tmp8}</View>;
-      cResult[5] = tmp4.fullSizePreview;
-      cResult[6] = tmp6;
-      cResult[7] = tmp8;
-      cResult[8] = tmp14;
-      tmp11 = tmp14;
-    }
-    const obj6 = { user: currentUser, guildId: "r", size: tmp(1181).AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: null };
-    const tmp10 = jsx(tmp(1181).Avatar, { user: currentUser, guildId: "r", size: tmp(1181).AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: null });
-    cResult[2] = firstAvatarDecoration;
-    cResult[3] = currentUser;
-    cResult[4] = tmp10;
-    tmp8 = tmp10;
-  }
-}) : ((product) => {
+export default function AvatarDecorationProductPreview(product) {
   const tmp = closure_4();
   const currentUser = useCurrentUser.useCurrentUser();
   const firstAvatarDecoration = useShopProductItems.useShopProductItems(product.product).firstAvatarDecoration;
   let tmp5 = null;
   if (null != firstAvatarDecoration) {
     const obj3 = { style: tmp.fullSizePreview, pointerEvents: "box-none", accessibilityLabel: null, accessibilityRole: "image", accessible: true, children: null };
-    const intl = tmp2(1119).intl;
+    const intl = tmp2(1115).intl;
     const obj4 = { a11y_text: firstAvatarDecoration.label };
-    obj3.accessibilityLabel = intl.formatToPlainString(tmp2(1119).t.Do2lxE, obj4);
-    const obj5 = { user: currentUser, guildId: "r", size: tmp2(1181).AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: null };
-    obj3.children = jsx(tmp2(1181).Avatar, { user: currentUser, guildId: "r", size: tmp2(1181).AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: null });
+    obj3.accessibilityLabel = intl.formatToPlainString(tmp2(1115).t.Do2lxE, obj4);
+    const obj5 = { user: currentUser, guildId: "r", size: tmp2(1177).AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: null };
+    obj3.children = jsx(tmp2(1177).Avatar, { user: currentUser, guildId: "r", size: tmp2(1177).AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: null });
     tmp5 = <View style={tmp.fullSizePreview} pointerEvents="box-none" accessibilityLabel={null} accessibilityRole="image" accessible>{null}</View>;
   }
   return tmp5;
-});
+};

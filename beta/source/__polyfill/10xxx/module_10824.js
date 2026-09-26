@@ -1,15 +1,18 @@
 // Module ID: 10824
 // Function ID: 10825
-// Dependencies: [41, 42, 93, 95, 98, 10782]
+// Dependencies: [41, 42, 93, 95, 98, 10822, 10728, 10729, 10735]
 
 // Module 10824
-import _mod10782 from "module_10782" /* 10782 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10728 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import _mod10822 from "module_10822" /* 10822 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+const NLMonthNameMiddleEndianParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,30 +32,17 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let _classCallCheck = _classCallCheck_mod;
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: __esModule };
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-class FRMergeDateRangeRefiner {
+const combined = "(?:on\\s*?)?(" + _mod10822.ORDINAL_NUMBER_PATTERN + ")(?:\\s*(?:tot|\\-|\\\u2013|until|through|till|\\s)\\s*(" + _mod10822.ORDINAL_NUMBER_PATTERN + "))?(?:-|/|\\s*(?:of)?\\s*)(";
+const sum = combined + repeatedTimeunitPattern.matchAnyPattern(_mod10822.MONTH_DICTIONARY);
+const regExp = new RegExp(sum + ")(?:(?:-|/|,?\\s*)" + "(" + _mod10822.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
+class NLMonthNameMiddleEndianParser {
   constructor() {
     self = this;
-    tmp = closure_0(this, FRMergeDateRangeRefiner);
-    tmp2 = c2;
-    obj = c2(FRMergeDateRangeRefiner);
-    tmp3 = closure_1;
-    if (closure_3()) {
+    tmp = c2(this, NLMonthNameMiddleEndianParser);
+    tmp2 = closure_4;
+    obj = closure_4(NLMonthNameMiddleEndianParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -65,14 +55,45 @@ class FRMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = FRMergeDateRangeRefiner;
-_inherits(FRMergeDateRangeRefiner, fn(_mod10782).default);
+_inherits(NLMonthNameMiddleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(à|a|au|-)\s*$/i;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, index) {
+      const tmp3 = NLMonthNameMiddleEndianParser(10822).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = NLMonthNameMiddleEndianParser(10822).parseOrdinalNumberPattern(index[1]);
+      if (result > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const date = { day: result, month: tmp3 };
+        const parsingComponents = createParsingComponents.createParsingComponents(date);
+        if (index[4]) {
+          parsingComponents.assign("year", tmp(10822).parseYear(index[4]));
+        } else {
+          parsingComponents.imply("year", tmp(10729).findYearClosestToRef(createParsingComponents.refDate, result, tmp3));
+        }
+        if (index[2]) {
+          const result1 = tmp(10822).parseOrdinalNumberPattern(index[2]);
+          const parsingResult = createParsingComponents.createParsingResult(index.index, index[0]);
+          parsingResult.start = parsingComponents;
+          parsingResult.end = parsingComponents.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+          return parsingResult;
+        } else {
+          return parsingComponents;
+        }
+      }
+    }
+  }
+];
 
-export default _createClass(FRMergeDateRangeRefiner, items);
+export default _createClass(NLMonthNameMiddleEndianParser, items);

@@ -1,67 +1,111 @@
 // Module ID: 13156
 // Function ID: 13157
-// Dependencies: [13081, 13084, 13113, 13099, 13112, 13133, 13103, 13104, 13090, 13121, 13098, 13097, 13085]
-// Exports: getTraceData
+// Dependencies: [13086, 13088]
+// Exports: applyAggregateErrorsToEvent
 
 // Module 13156
-import errorCallback from "errorCallback" /* 13081 */;
-import _mod13112 from "module_13112" /* 13112 */;
-import "module_13084";
-import __SENTRY_DEBUG__ from "module_13113" /* 13113 */;
-import dateTimestampInSeconds from "module_13099" /* 13099 */;
+import _mod13088 from "module_13088" /* 13088 */;
 
-errorCallback;
-
-export const getTraceData = function getTraceData() {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+require = arg1;
+let dependencyMap = arg6;
+function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
+  _require = fn;
+  dependencyMap = arg1;
+  aggregateExceptionsFromError = arg2;
+  closure_3 = source;
+  if (arg5.length >= arg2 + 1) {
+    return arg5;
+  } else {
+    let items = [];
+    HermesBuiltin.arraySpread(arg5, 0);
+    length = items;
+    const _Error = Error;
+    if (obj3.isInstanceOf(errors[source], Error)) {
+      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+      const obj = {};
+      let merged = Object.assign(mechanism.mechanism);
+      const tmp3 = "AggregateError" === mechanism.type && { is_exception_group: true };
+      let merged1 = Object.assign(tmp3);
+      obj.exception_id = exception_id;
+      mechanism.mechanism = obj;
+      const tmp7 = fn(arg1, errors[source]);
+      length = length.length;
+      tmp7.mechanism = tmp7.mechanism || { type: "generic", handled: true };
+      let obj2 = {};
+      let merged2 = Object.assign(tmp7.mechanism);
+      obj2.type = "chained";
+      obj2.source = source;
+      obj2.exception_id = length;
+      obj2.parent_id = exception_id;
+      tmp7.mechanism = obj2;
+      const items1 = [tmp7];
+      HermesBuiltin.arraySpread(length, 1);
+      length = aggregateExceptionsFromError(fn, arg1, arg2, errors[source], source, items1, tmp7, length);
+    }
+    const _Array = Array;
+    if (Array.isArray(errors.errors)) {
+      errors = errors.errors;
+      const item = errors.forEach((item, index) => {
+        if (obj.isInstanceOf(item, Error)) {
+          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+          const obj2 = {};
+          const merged = Object.assign(tmp.mechanism);
+          const tmp5 = "AggregateError" === mechanism.type && { is_exception_group: true };
+          const merged1 = Object.assign(tmp5);
+          obj2.exception_id = exception_id;
+          mechanism.mechanism = obj2;
+          const tmp12 = closure_0(closure_1, item);
+          length = length.length;
+          const _HermesInternal = HermesInternal;
+          mechanism = tmp12.mechanism;
+          const combined = "errors[" + index + "]";
+          if (!mechanism) {
+            mechanism = { type: "generic", handled: true };
+          }
+          tmp12.mechanism = mechanism;
+          const obj3 = {};
+          const merged2 = Object.assign(tmp12.mechanism);
+          obj3.type = "chained";
+          obj3.source = combined;
+          obj3.exception_id = length;
+          obj3.parent_id = exception_id;
+          tmp12.mechanism = obj3;
+          const items = [tmp12];
+          HermesBuiltin.arraySpread(length, 1);
+          length = aggregateExceptionsFromError(tmp10, tmp11, closure_2, item, closure_3, items, tmp12, length);
+        }
+      });
+    }
+    return length;
   }
-  const client = _mod13112.getClient();
-  if (obj3.isEnabled()) {
-    if (client) {
-      const mainCarrier = tmp(13103).getMainCarrier();
-      const tmpResult = tmp(13103);
-      const asyncContextStrategy = tmp(13104).getAsyncContextStrategy(mainCarrier);
-      if (asyncContextStrategy.getTraceData) {
-        return asyncContextStrategy.getTraceData(obj);
-      } else {
-        const currentScope = tmp(13112).getCurrentScope();
-        let span = obj.span;
-        if (!span) {
-          span = tmp(13090).getActiveSpan();
-          const tmpResult10 = tmp(13090);
+}
+
+export const applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 250;
+  }
+  if (exception.exception) {
+    if (exception.exception.values) {
+      if (originalException) {
+        const _Error = Error;
+        if (obj.isInstanceOf(originalException.originalException, Error)) {
+          let tmp5;
+          if (exception.exception.values.length > 0) {
+            tmp5 = exception.exception.values[exception.exception.values.length - 1];
+          }
+          if (tmp5) {
+            exception.exception.values = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0).map((value) => {
+              if (value.value) {
+                value.value = _mod13088.truncate(value.value, num);
+              }
+              return value;
+            });
+            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
+          }
         }
-        if (span) {
-          let spanToTraceHeaderResult = tmp(13090).spanToTraceHeader(span);
-          const tmpResult11 = tmp(13090);
-        } else {
-          const propagationContext = currentScope.getPropagationContext();
-          ({ traceId, sampled, spanId } = propagationContext);
-          spanToTraceHeaderResult = tmp(13097).generateSentryTraceHeader(traceId, spanId, sampled);
-          const tmpResult12 = tmp(13097);
-        }
-        const tmpResult13 = tmp(13121);
-        if (span) {
-          let dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
-        } else {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
-        }
-        const tmpResult9 = tmp(13112);
-        const result = tmp(13098).dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
-        const TRACEPARENT_REGEXP = tmp(13097).TRACEPARENT_REGEXP;
-        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
-          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-          let obj5 = obj4;
-        } else {
-          const logger = tmp(13085).logger;
-          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
-          obj5 = {};
-        }
-        return obj5;
+        obj = num(13086);
       }
-      const tmpResult8 = tmp(13104);
     }
   }
-  return {};
 };

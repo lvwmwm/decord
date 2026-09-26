@@ -1,12 +1,11 @@
 // Module ID: 4142
 // Function ID: 4143
-// Dependencies: [3881, 3885, 3882]
+// Dependencies: [3877, 3878]
 // Exports: default
 
 // Module 4142
-import _typeof_mod from "module_3881" /* 3881 */;
-import module_3885_mod from "module_3885" /* 3885 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -16,25 +15,23 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let module_3885 = module_3885_mod;
-if (!module_3885) {
-  const obj2 = { default: module_3885 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3885;
-}
-module_3885 = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
+requiredArgs = tmp5;
 
-export default function fromUnixTime(arg0) {
+export default function getDaysInMonth(arg0) {
   requiredArgs.default(1, arguments);
-  return _typeof.default(1000 * module_3885.default(arg0));
+  const defaultResult1 = _typeof.default(arg0);
+  const fullYear = defaultResult1.getFullYear();
+  const month = defaultResult1.getMonth();
+  const date = new Date(0);
+  date.setFullYear(fullYear, month + 1, 0);
+  date.setHours(0, 0, 0, 0);
+  return date.getDate();
 };
 export default exports.default;

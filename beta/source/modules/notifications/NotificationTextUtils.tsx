@@ -1,46 +1,45 @@
-// Module ID: 12988
-// Function ID: 12989
+// Module ID: 10381
+// Function ID: 10382
 // Name: NotificationTextUtils
-// Dependencies: [2044, 4432, 7498, 4433, 4998, 2049, 2045, 2067, 4813, 4441, 2099, 4612, 5530, 4971, 2039, 1376, 12989, 1078, 9345, 1118, 5000, 2023, 1389, 12990, 11580, 5027, 4649, 12377, 7958, 4943, 1119, 8574, 4942, 7546, 8281, 3, 7578, 4635, 1982, 7955, 12991, 558, 568, 504, 2]
-// Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel
+// Dependencies: [2040, 4428, 7496, 4429, 4996, 2045, 2041, 2063, 4811, 4437, 2095, 4609, 5528, 4969, 2035, 1372, 10382, 1074, 9347, 1114, 4998, 2019, 1385, 10383, 10384, 5025, 4646, 10385, 7953, 4941, 1115, 8569, 4940, 7544, 8276, 3, 7576, 4632, 1978, 7950, 10386, 504, 2]
+// Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 12988 (NotificationTextUtils)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import FlagUtils from "FlagUtils" /* 1389 */;
-import Server from "Server" /* 1982 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
-import useChannelName from "useChannelName" /* 4943 */;
-import AgeGateUtils from "AgeGateUtils" /* 5000 */;
-import isMessageMentioned from "isMessageMentioned" /* 5027 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7546 */;
-import isForwardMessage from "isForwardMessage" /* 7578 */;
-import IsolateString from "IsolateString" /* 7958 */;
-import ThreadNotificationSettings from "ThreadNotificationSettings" /* 11580 */;
-import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 12990 */;
-import FocusModeUtils from "FocusModeUtils" /* 12991 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import LurkingStore from "LurkingStore" /* 4432 */;
-import MessageRequestStore from "MessageRequestStore" /* 7498 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4433 */;
-import VoicePanelStore from "VoicePanelStore" /* 4998 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
-import UserStore from "UserStore" /* 1376 */;
-import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 12989 */;
+// Module 10381 (NotificationTextUtils)
+import initialize from "initialize" /* 504 */;
+import util from "util" /* 1115 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import Server from "Server" /* 1978 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
+import useChannelName from "useChannelName" /* 4941 */;
+import AgeGateUtils from "AgeGateUtils" /* 4998 */;
+import isMessageMentioned from "isMessageMentioned" /* 5025 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7544 */;
+import isForwardMessage from "isForwardMessage" /* 7576 */;
+import IsolateString from "IsolateString" /* 7953 */;
+import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 10383 */;
+import ThreadNotificationSettings from "ThreadNotificationSettings" /* 10384 */;
+import FocusModeUtils from "FocusModeUtils" /* 10386 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import LurkingStore from "LurkingStore" /* 4428 */;
+import MessageRequestStore from "MessageRequestStore" /* 7496 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
+import VoicePanelStore from "VoicePanelStore" /* 4996 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
+import UserStore from "UserStore" /* 1372 */;
+import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 10382 */;
 
 const require = globalThis.__r;
 
-const initialize = tmp(504);
 require = fn;
 function shouldNotifyBase(currentUser, user, channel, arg3) {
   let obj = arg3;
@@ -78,7 +77,7 @@ function shouldNotifyBase(currentUser, user, channel, arg3) {
             }
             let tmp17 = !tmp14;
             if (!tmp14) {
-              const FocusMode = tmp2(2023).FocusMode;
+              const FocusMode = tmp2(2019).FocusMode;
               const setting = FocusMode.getSetting();
               let tmp19 = !setting;
               if (!setting) {
@@ -110,10 +109,10 @@ function renderTitle(channelName, channel, channel) {
   const tmp5 = RelationshipStore;
   let str = "";
   if (null != channel) {
-    const tmpResult = tmp(7958);
+    const tmpResult = tmp(7953);
     const _HermesInternal = HermesInternal;
-    str = ", " + tmpResult.isolate(tmp(4943).computeChannelName(channel, tmp4, tmp5));
-    const tmpResult2 = tmp(4943);
+    str = ", " + tmpResult.isolate(tmp(4941).computeChannelName(channel, tmp4, tmp5));
+    const tmpResult2 = tmp(4941);
   }
   return "" + isolateResult + " (" + obj2.isolate(useChannelName.computeChannelName(channel, UserStore, RelationshipStore, true)) + str + ")";
 }
@@ -158,13 +157,12 @@ function getInviteEmbedFormatString(type, _TD0la, _TD0la2, _TD0la3) {
     return _TD0la;
   }
 }
-const ChannelRecord = fn(2049);
+const ChannelRecord = fn(2045);
 ({ GUILD_VOCAL_CHANNEL_TYPES: closure_8, THREAD_CHANNEL_TYPES: closure_9 } = ChannelRecord);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ActivityActionTypes: closure_21, ChannelTypes: closure_22, MessageFlags: closure_23, MessageTypes: closure_24, MessageTypesSets: closure_25, StatusTypes: closure_26, UserFlags: closure_27 } = Constants);
-const ActivityPanelModes = fn(9345).ActivityPanelModes;
-const ThreadMemberFlags = fn(1118).ThreadMemberFlags;
-const ReactCompilerGating = fn(558);
+const ActivityPanelModes = fn(9347).ActivityPanelModes;
+const ThreadMemberFlags = fn(1114).ThreadMemberFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/NotificationTextUtils.tsx");
 
@@ -416,15 +414,15 @@ export const shouldNotifyForReaction = function shouldNotifyForReaction(arg0) {
   return tmp5;
 };
 export const shouldIncludeSelectedChannel = function shouldIncludeSelectedChannel() {
-  state = VoicePanelStore.getState();
+  const state = VoicePanelStore.getState();
   let flag = true;
   if (!state.isVoicePanelFullscreen()) {
     if (null == EmbeddedActivitiesStore.getConnectedActivityLocation()) {
       const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
       let tmp5 = null == rootNavigationRef || !rootNavigationRef.isReady();
       if (!tmp5) {
-        tmp5 = !tmp3(12377).isChannelFocused();
-        const tmp3Result = tmp3(12377);
+        tmp5 = !tmp3(10385).isChannelFocused();
+        const tmp3Result = tmp3(10385);
       }
       flag = tmp5;
       tmp3 = require;
@@ -458,8 +456,8 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                 }
               }
               let content1 = content.content;
-              if (tmp(7546)(content)) {
-                content1 = tmp(8281).stringify(content, getGuildId);
+              if (tmp(7544)(content)) {
+                content1 = tmp(8276).stringify(content, getGuildId);
                 if (null == content1) {
                   const obj15 = new tmp(3)("NotificationTextUtils");
                   const obj4 = { message: content };
@@ -468,7 +466,7 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                   const error = new Error("failed to stringify system message");
                   throw error;
                 }
-                const tmpResult = tmp(8281);
+                const tmpResult = tmp(8276);
               }
               if ("sticker_items" in content) {
                 let sticker_items = content.sticker_items;
@@ -478,7 +476,7 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
               if ("message_reference" in content) {
                 let result = isForwardMessage.isForwardServerMessage(content);
               } else {
-                result = tmp(7578)(content);
+                result = tmp(7576)(content);
               }
               const items = [];
               if (result) {
@@ -523,10 +521,10 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                 }
                 if (content.type === constants4.PREMIUM_REFERRAL) {
                   const intl4 = util.intl;
-                  const obj10 = { username: tmp(4635).getName(bot) };
+                  const obj10 = { username: tmp(4632).getName(bot) };
                   stringResult = intl4.formatToPlainString(util.t.lieTqU, obj10);
                   tmp26 = items;
-                  const tmpResult3 = tmp(4635);
+                  const tmpResult3 = tmp(4632);
                 } else if (null != content.poll) {
                   const intl3 = util.intl;
                   const obj11 = { question: content.poll.question.text };
@@ -554,14 +552,14 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                   if (null != content.components) {
                     if (content.components.length > 0) {
                       if (content.components[0].type === Server.ComponentType.CHECKPOINT_CARD) {
-                        let intl = tmp24(1119).intl;
-                        stringResult = intl.string(tmp24(1119).t.HWnMTQ);
+                        let intl = tmp24(1115).intl;
+                        stringResult = intl.string(tmp24(1115).t.HWnMTQ);
                         tmp26 = items;
                       }
                     }
                   }
-                  const tmpResult4 = tmp(7955);
-                  ({ content, emoji } = tmp(7955).unparseWithMeta(content1, getGuildId.id, true));
+                  const tmpResult4 = tmp(7950);
+                  ({ content, emoji } = tmp(7950).unparseWithMeta(content1, getGuildId.id, true));
                   tmp26 = emoji;
                   stringResult = content;
                   if (0 !== content1.length) {
@@ -588,7 +586,7 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                       }
                     }
                   }
-                  const unparseWithMetaResult = tmp(7955).unparseWithMeta(content1, getGuildId.id, true);
+                  const unparseWithMetaResult = tmp(7950).unparseWithMeta(content1, getGuildId.id, true);
                 }
               }
               if (0 === stringResult.length) {
@@ -670,33 +668,7 @@ export const allowInAppNotifications = function allowInAppNotifications() {
     return setting;
   }
 };
-export const useAllowInAppNotifications = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const ShowInAppNotifications = UserSettings.ShowInAppNotifications;
-  const setting = ShowInAppNotifications.useSetting();
-  const focusModeEnabled = FocusModeUtils.useFocusModeEnabled();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserRequiredActionStore];
-    const fn = function t() {
-      return UserRequiredActionStore.hasAction();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp6, tmp7);
-  let tmp10 = !stateFromStores;
-  if (!stateFromStores) {
-    tmp10 = setting;
-  }
-  if (tmp10) {
-    tmp10 = !focusModeEnabled;
-  }
-  return tmp10;
-}) : (() => {
+export const useAllowInAppNotifications = function useAllowInAppNotifications() {
   const ShowInAppNotifications = UserSettings.ShowInAppNotifications;
   const setting = ShowInAppNotifications.useSetting();
   const focusModeEnabled = FocusModeUtils.useFocusModeEnabled();
@@ -710,4 +682,4 @@ export const useAllowInAppNotifications = ReactCompilerGating.isReactCompilerEna
     tmp4 = !focusModeEnabled;
   }
   return tmp4;
-});
+};

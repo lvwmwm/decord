@@ -1,31 +1,89 @@
 // Module ID: 4134
 // Function ID: 4135
-// Dependencies: [4132, 3882]
+// Dependencies: [3878]
 // Exports: default
 
 // Module 4134
-import module_4132_mod from "module_4132" /* 4132 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let module_4132 = module_4132_mod;
-if (!module_4132) {
-  const obj = { default: module_4132 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_4132;
+function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      _typeof = function _typeof(arg0) {
+        return typeof arg0;
+      };
+    }
+    return _typeof(arg0);
+  }
+  _typeof = function _typeof(arg0) {
+    if (arg0) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          let str = "symbol";
+        }
+        return str;
+      }
+    }
+    str = typeof arg0;
+  };
 }
-module_4132 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
-  let tmp5 = obj2;
+  const obj = { default: requiredArgs };
+  let tmp3 = obj;
 } else {
-  tmp5 = requiredArgs;
+  tmp3 = requiredArgs;
 }
-requiredArgs = tmp5;
+requiredArgs = tmp3;
 
-export default function formatDistanceToNowStrict(arg0, arg1) {
+export default function formatISODuration(years) {
   requiredArgs.default(1, arguments);
-  return module_4132.default(arg0, Date.now(), arg1);
+  if ("object" !== _typeof(years)) {
+    const _Error = Error;
+    const error = new Error("Duration must be an object");
+    throw error;
+  } else {
+    years = years.years;
+    let num = 0;
+    if (undefined !== years) {
+      num = years;
+    }
+    const months = years.months;
+    let num2 = 0;
+    if (undefined !== months) {
+      num2 = months;
+    }
+    const days = years.days;
+    let num3 = 0;
+    if (undefined !== days) {
+      num3 = days;
+    }
+    const hours = years.hours;
+    let num4 = 0;
+    if (undefined !== hours) {
+      num4 = hours;
+    }
+    const minutes = years.minutes;
+    let num5 = 0;
+    if (undefined !== minutes) {
+      num5 = minutes;
+    }
+    const seconds = years.seconds;
+    let num6 = 0;
+    if (undefined !== seconds) {
+      num6 = seconds;
+    }
+    const concat = "P".concat;
+    const combined = "P".concat(num, "Y");
+    const combined1 = combined.concat(num2, "M");
+    const combined2 = combined1.concat(num3, "DT");
+    const combined3 = combined2.concat(num4, "H");
+    const combined4 = combined3.concat(num5, "M");
+    return combined4.concat(num6, "S");
+  }
 };
 export default exports.default;

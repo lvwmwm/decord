@@ -1,13 +1,13 @@
-// Module ID: 10436
-// Function ID: 10437
+// Module ID: 11254
+// Function ID: 11255
 // Name: MessageRequestActionCreators
-// Dependencies: [5, 1078, 1275, 10437, 577, 6864, 2]
+// Dependencies: [5, 1074, 1271, 11255, 573, 6866, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10436 (MessageRequestActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
-import MessageRequestTypes from "MessageRequestTypes" /* 10437 */;
+// Module 11254 (MessageRequestActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
+import MessageRequestTypes from "MessageRequestTypes" /* 11255 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -22,7 +22,7 @@ let closure_5 = async function _acceptMessageRequest(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -60,7 +60,7 @@ let closure_5 = async function _acceptMessageRequest(arg0, value) {
         const obj7 = { type: "MESSAGE_REQUEST_ACCEPT_OPTIMISTIC", channelId: closure_129_0 };
         closure_130_1(closure_130_2[4]).dispatch(obj7);
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp12) {
       c4 = tmp;
@@ -68,7 +68,7 @@ let closure_5 = async function _acceptMessageRequest(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestActionCreators.tsx");
 

@@ -1,20 +1,20 @@
 // Module ID: 4224
 // Function ID: 4225
-// Dependencies: [3881, 3882]
+// Dependencies: [4225, 3878]
 // Exports: default
 
 // Module 4224
-import _typeof_mod from "module_3881" /* 3881 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import module_4225_mod from "module_4225" /* 4225 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let module_4225 = module_4225_mod;
+if (!module_4225) {
+  const obj = { default: module_4225 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_4225;
 }
-_typeof = tmp3;
+module_4225 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isMonday(arg0) {
-  requiredArgs.default(1, arguments);
-  return 1 === _typeof.default(arg0).getDay();
+export default function isSameISOWeek(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  return module_4225.default(arg0, arg1, { weekStartsOn: 1 });
 };
 export default exports.default;

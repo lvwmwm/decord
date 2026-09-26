@@ -1,18 +1,18 @@
-// Module ID: 12548
-// Function ID: 12549
+// Module ID: 12647
+// Function ID: 12648
 // Name: SearchMemberTabStore
-// Dependencies: [2045, 1078, 10109, 4436, 5770, 504, 577, 2]
+// Dependencies: [2041, 1074, 10130, 4432, 5768, 504, 573, 2]
 
-// Module 12548 (SearchMemberTabStore)
+// Module 12647 (SearchMemberTabStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
-import GuildUtilsDefault from "GuildUtils" /* 5770 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 10109 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
+import GuildUtilsDefault from "GuildUtils" /* 5768 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 10130 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = fn;
-const Permissions = fn(1078).Permissions;
+const Permissions = fn(1074).Permissions;
 let closure_6 = [];
 class GuildMemberSearchManager {
   constructor() {
@@ -162,7 +162,7 @@ const searchGuildMemberTabStoreImpl = new SearchGuildMemberTabStoreImpl(Dispatch
             searchGuildMemberTabStoreImpl.emitChange();
           }
         };
-        let items = [obj2(10109).AutocompleterResultTypes.USER];
+        let items = [obj2(10130).AutocompleterResultTypes.USER];
         const tmp42 = new sortByMatchScoreDefault(obj2.onAutocompleterResultsChange, items, 50);
         obj2.autocompleter = tmp42;
         const autocompleter = obj2.autocompleter;

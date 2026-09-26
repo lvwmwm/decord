@@ -1,42 +1,76 @@
 // Module ID: 7119
 // Function ID: 7120
-// Dependencies: [109, 19, 21, 7120, 7117]
+// Dependencies: [19, 17, 21, 1637, 6913, 6906, 6902, 6929]
 
 // Module 7119
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _mod17 from "module_17" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import value2 from "value2" /* 6902 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6929 */;
 import noop_mod from "module_19" /* 19 */;
+import cancelAnimation from "cancelAnimation" /* 1637 */;
 
-let closure_2 = ["focusHook", "scrollEventsHandlersHook", "enableFooterMarginAdjustment"];
-let noop = fn(19);
-const forwardRef = noop.forwardRef;
-({ useMemo: metroRequire, memo } = noop);
 let noop = noop_mod;
-const jsx = fn(21).jsx;
-try {
-  const FlashList = fn(7120);
-  const memoResult = memo(forwardRef((focusHook, ref) => {
-    focusHook = focusHook.focusHook;
-    const scrollEventsHandlersHook = focusHook.scrollEventsHandlersHook;
-    const enableFooterMarginAdjustment = focusHook.enableFooterMarginAdjustment;
-    closure_6(() => {
-      if (!FlashList) {
-        throw "You need to install FlashList first, `yarn install @shopify/flash-list`";
-      }
-    }, []);
-    const items = [focusHook, scrollEventsHandlersHook, enableFooterMarginAdjustment];
-    const tmp = _objectWithoutProperties(focusHook, enableFooterMarginAdjustment);
-    let merged = Object.assign(tmp);
-    return <FlashList.FlashList ref={arg1} renderScrollComponent={closure_6(() => forwardRef((arg0, ref) => {
-      const merged = Object.assign(arg0, Object.assign({ data: 0 }));
-      const obj = { ref };
-      const merged1 = Object.assign(merged);
-      obj.focusHook = focusHook;
-      obj.scrollEventsHandlersHook = scrollEventsHandlersHook;
-      obj.enableFooterMarginAdjustment = enableFooterMarginAdjustment;
-      return jsx(focusHook(scrollEventsHandlersHook[4]), { ref });
-    }), items)} />;
-  }));
-  exports.default = memoResult;
-  exports.BottomSheetFlashList = memoResult;
-} catch (err) {
-}
+({ useContext: c2, useMemo: c3, memo } = noop);
+let noop = noop_mod;
+const jsx = jsxProd.jsx;
+let closure_5 = cancelAnimation.createAnimatedComponent(_mod17.RefreshControl);
+const __initData = { code: "function pnpm_BottomSheetRefreshControlAndroidTsx1(){const{animatedScrollableState,SCROLLABLE_STATE}=this.__closure;return{enabled:animatedScrollableState.value===SCROLLABLE_STATE.UNLOCKED};}" };
+const memoResult = memo(function BottomSheetRefreshControlComponent(arg0) {
+  ({ onRefresh, scrollableGesture } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ onRefresh: 0, scrollableGesture: 0 }));
+  let iter;
+  const tmp4 = iter(scrollableGesture(6913).BottomSheetDraggableContext);
+  dependencyMap = tmp4;
+  const bottomSheetInternal = scrollableGesture(6906).useBottomSheetInternal();
+  iter = bottomSheetInternal.animatedScrollableState;
+  if (!tmp4) {
+    if (bottomSheetInternal.enableContentPanningGesture) {
+      throw "'BottomSheetRefreshControl' cannot be used out of the BottomSheet!";
+    }
+  }
+  const obj = scrollableGesture(6906);
+  const fn = function f() {
+    return { enabled: iter.value === value2.SCROLLABLE_STATE.UNLOCKED };
+  };
+  const tmp2Result = scrollableGesture(1637);
+  fn.__closure = { animatedScrollableState: iter, SCROLLABLE_STATE: scrollableGesture(6902).SCROLLABLE_STATE };
+  fn.__workletHash = 8403038560398;
+  fn.__initData = __initData;
+  let items = [iter.value];
+  const animatedProps = tmp2Result.useAnimatedProps(fn, items);
+  const items1 = [tmp4, scrollableGesture];
+  const tmp7 = closure_3(() => {
+    let result;
+    if (closure_1) {
+      const Gesture = LegacyBaseButton.Gesture;
+      const NativeResult = Gesture.Native();
+      const simultaneousWithExternalGesture = NativeResult.simultaneousWithExternalGesture;
+      const items = [];
+      HermesBuiltin.arraySpread(scrollableGesture.toGestureArray(), HermesBuiltin.arraySpread(closure_1.toGestureArray(), 0));
+      const arraySpreadResult = HermesBuiltin.arraySpread(closure_1.toGestureArray(), 0);
+      result = HermesBuiltin.apply(items, NativeResult).shouldCancelWhenOutside(true);
+      const applyResult = HermesBuiltin.apply(items, NativeResult);
+    }
+    return result;
+  }, items1);
+  if (tmp7) {
+    const obj3 = { gesture: tmp7, children: null };
+    const obj4 = {};
+    const merged1 = Object.assign(merged);
+    obj4.onRefresh = onRefresh;
+    obj4.animatedProps = animatedProps;
+    obj3.children = tmp8(closure_5, obj4);
+    let tmp8Result = tmp8(tmp2(6929).GestureDetector, obj3);
+  } else {
+    const obj5 = {};
+    const merged2 = Object.assign(merged);
+    obj5.onRefresh = onRefresh;
+    obj5.animatedProps = animatedProps;
+    tmp8Result = tmp8(closure_5, obj5);
+  }
+  return tmp8Result;
+});
+memoResult.displayName = "BottomSheetRefreshControl";
+
+export default memoResult;

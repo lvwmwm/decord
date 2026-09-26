@@ -1,11 +1,11 @@
-// Module ID: 2009
-// Function ID: 2010
+// Module ID: 2005
+// Function ID: 2006
 // Name: UserApplicationIdentityConstants
-// Dependencies: [2010, 2]
+// Dependencies: [2006, 2]
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 2009 (UserApplicationIdentityConstants)
-import socialSDKMigration from "socialSDKMigration" /* 2010 */;
+// Module 2005 (UserApplicationIdentityConstants)
+import socialSDKMigration from "socialSDKMigration" /* 2006 */;
 import size from "module_2" /* 2 */;
 
 const obj = { RIOT_GAMES: "1443033465766281327", LEAGUE_OF_LEGENDS: "1443349464290168976", VALORANT: "1443350165678198935", BATTLENET: "1356665549089800303", WORLD_OF_WARCRAFT: "1384671873593512078" };

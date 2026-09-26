@@ -1,58 +1,12 @@
 // Module ID: 14335
 // Function ID: 14336
-// Dependencies: [14325]
+// Dependencies: [14333]
 
 // Module 14335
-import _mod14325 from "module_14325" /* 14325 */;
+import _mod14333 from "module_14333" /* 14333 */;
 
 
-export default (arg0, arg1) => {
-  const obj = _mod14325(arg0, null, true);
-  const tmp = _mod14325(arg1, null, true);
-  const compareResult = obj.compare(tmp);
-  if (0 === compareResult) {
-    return null;
-  } else {
-    let tmp3 = tmp;
-    if (compareResult > 0) {
-      tmp3 = obj;
-    }
-    let tmp4 = obj;
-    if (compareResult > 0) {
-      tmp4 = tmp;
-    }
-    if (tmp4.prerelease.length) {
-      if (!length) {
-        if (tmp4.patch) {
-          let str2 = "patch";
-          if (!tmp3.patch) {
-            let str3 = "major";
-            if (tmp3.minor) {
-              str3 = "minor";
-            }
-            str2 = str3;
-          }
-          let str = str2;
-        } else {
-          str = "major";
-        }
-        return str;
-      }
-    }
-    let str4 = "";
-    if (tmp3.prerelease.length) {
-      str4 = "pre";
-    }
-    if (obj.major !== tmp.major) {
-      let str5 = `${str4}major`;
-    } else if (obj.minor !== tmp.minor) {
-      str5 = `${str4}minor`;
-    } else {
-      str5 = "prerelease";
-      if (obj.patch !== tmp.patch) {
-        str5 = `${str4}patch`;
-      }
-    }
-    return str5;
-  }
+export default (arr, arg1) => {
+  closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod14333(arg1, arg0, closure_0));
 };

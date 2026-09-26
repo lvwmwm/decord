@@ -1,23 +1,23 @@
-// Module ID: 15590
-// Function ID: 15591
+// Module ID: 15594
+// Function ID: 15595
 // Name: MessagePreviewManager
-// Dependencies: [32, 5, 5528, 2049, 502, 2045, 14026, 1078, 3, 7397, 12, 2074, 577, 1275, 15591, 2]
+// Dependencies: [32, 5, 5526, 2045, 502, 2041, 14016, 1074, 3, 7395, 12, 2070, 573, 1271, 15595, 2]
 
-// Module 15590 (MessagePreviewManager)
+// Module 15594 (MessagePreviewManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import RemoteFetchData from "RemoteFetchData" /* 15591 */;
+import RemoteFetchData from "RemoteFetchData" /* 15595 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 14026 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 14016 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const isThread = fn(2049).isThread;
-const Endpoints = fn(1078).Endpoints;
+const isThread = fn(2045).isThread;
+const Endpoints = fn(1074).Endpoints;
 let closure_11 = new LoggerDefault("MessagePreviewManager");
 class MessagePreviewManager extends tmp3 {
   constructor() {
@@ -77,7 +77,7 @@ class MessagePreviewManager extends tmp3 {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -106,7 +106,7 @@ class MessagePreviewManager extends tmp3 {
               closure_131_4 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp4) {
@@ -220,7 +220,7 @@ prototype["fetchLocal"] = function fetchLocal(guild_id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -350,7 +350,7 @@ prototype["fetchDms"] = function fetchDms(nextWants) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -367,7 +367,7 @@ prototype["fetchDms"] = function fetchDms(nextWants) {
               let body;
               const _HermesInternal = HermesInternal;
               closure_1_11.verbose("fetching dm previews (via: http, channel_ids: " + nextWantsResult.join(", ") + ")");
-              const HTTP = tmp2(1275).HTTP;
+              const HTTP = tmp2(1271).HTTP;
               const request = { url: constants.MESSAGE_PREVIEWS, body: null, rejectWithError: false };
               const obj4 = { channel_ids: nextWantsResult };
               request.body = obj4;
@@ -386,9 +386,9 @@ prototype["fetchDms"] = function fetchDms(nextWants) {
           } else {
             body = value.body;
             const obj7 = { type: "MESSAGE_PREVIEWS_LOADED", guildId: null, messages: body };
-            tmp5(577).dispatch(obj7);
+            tmp5(573).dispatch(obj7);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;

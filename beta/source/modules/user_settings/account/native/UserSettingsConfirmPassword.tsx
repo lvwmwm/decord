@@ -1,28 +1,28 @@
-// Module ID: 7271
-// Function ID: 7272
+// Module ID: 7270
+// Function ID: 7271
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1376, 1078, 21, 4790, 580, 558, 568, 7272, 504, 7273, 4691, 1235, 1119, 7276, 4786, 6877, 7214, 5220, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4788, 576, 7271, 504, 7272, 4688, 1231, 1115, 7275, 4784, 6879, 7216, 5218, 2]
+// Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 7271 (UserSettingsConfirmPassword)
+// Module 7270 (UserSettingsConfirmPassword)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6877 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7272 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7276 */;
+import nativeDefault from "native" /* 576 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6879 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7271 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const UserSettingsSections = fn(1078).UserSettingsSections;
+const UserSettingsSections = fn(1074).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { background: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: { paddingVertical: 12, paddingHorizontal: 16 }, title: { textAlign: "center" }, prompt: { marginTop: 8, lineHeight: 18, textAlign: "center" }, input: { marginTop: 24 }, redesignInput: null, button: null, hint: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.redesignInput = { borderRadius: nativeDefault.radii.lg };
@@ -30,8 +30,6 @@ obj.button = { marginTop: 16 };
 let obj4 = { borderRadius: nativeDefault.radii.lg };
 obj.hint = { color: nativeDefault.unsafe_rawColors.RED_400 };
 let closure_12 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
-let obj5 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 const forwardRefResult = noop.forwardRef((arg0, ref) => {
   ({ onSubmit: require, onSuccess: importDefault, onError: dependencyMap, parentLoading } = arg0);
   if (parentLoading === undefined) {
@@ -55,7 +53,7 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -86,16 +84,16 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
           if (2 === tmp8) {
             c3 = 1;
             closure_128_1 = tmp75;
-            tmp4(tmp75[15]).captureException(closure_128_1);
-            const intl = closure_0(tmp75[16]).intl;
-            if (closure_128_1.message !== intl.string(closure_0(tmp75[16]).t.N2yb9a)) {
-              const v6OrEarlierAPIError = new closure_0(tmp75[14]).V6OrEarlierAPIError(closure_128_1);
+            tmp4(tmp75[13]).captureException(closure_128_1);
+            const intl = closure_0(tmp75[14]).intl;
+            if (closure_128_1.message !== intl.string(closure_0(tmp75[14]).t.N2yb9a)) {
+              const v6OrEarlierAPIError = new closure_0(tmp75[12]).V6OrEarlierAPIError(closure_128_1);
               closure_129_5(v6OrEarlierAPIError);
             }
             if (closure_129_2 != null) {
               closure_129_2();
             }
-            const obj4 = tmp4(tmp75[15]);
+            const obj4 = tmp4(tmp75[13]);
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -121,7 +119,7 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
                 closure_129_1();
                 c3 = 1;
               }
-              const v6OrEarlierAPIError1 = new closure_0(tmp75[14]).V6OrEarlierAPIError(closure_128_0);
+              const v6OrEarlierAPIError1 = new closure_0(tmp75[12]).V6OrEarlierAPIError(closure_128_0);
               closure_129_5(v6OrEarlierAPIError1);
               if (closure_129_2 != null) {
                 closure_129_2();
@@ -183,17 +181,17 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
     const items2 = [tmp15, ];
     let obj4 = { style: tmp.container, children: null };
     let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-    let intl = tmp3(1119).intl;
-    obj5.children = intl.string(tmp3(1119).t["x+d9t3"]);
-    const items3 = [closure_10(tmp3(4786).Text, obj5), , , , ];
+    let intl = tmp3(1115).intl;
+    obj5.children = intl.string(tmp3(1115).t["x+d9t3"]);
+    const items3 = [closure_10(tmp3(4784).Text, obj5), , , , ];
     let obj6 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default", children: null };
-    const intl2 = tmp3(1119).intl;
-    obj6.children = intl2.string(tmp3(1119).t.vaZmAx);
-    items3[1] = closure_10(tmp3(4786).Text, obj6);
+    const intl2 = tmp3(1115).intl;
+    obj6.children = intl2.string(tmp3(1115).t.vaZmAx);
+    items3[1] = closure_10(tmp3(4784).Text, obj6);
     const obj8 = { style: null, textStyle: null, label: null, textContentType: "password", keyboardType: "default", secureTextEntry: true, value: null, onChangeText: null, onSubmitEditing: null, error: null, returnKeyType: "done", autoCapitalize: "none", autoFocus: true };
     ({ input: obj7.style, redesignInput: obj7.textStyle } = tmp);
-    const intl3 = tmp3(1119).intl;
-    obj8.label = intl3.string(tmp3(1119).t["CIGa+7"]);
+    const intl3 = tmp3(1115).intl;
+    obj8.label = intl3.string(tmp3(1115).t["CIGa+7"]);
     obj8.value = value;
     obj8.onChangeText = tmp8[1];
     obj8.onSubmitEditing = handleSubmit;
@@ -208,17 +206,17 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
       tmp19Result = null;
       if (null == obj2.getFieldMessage("password")) {
         const obj9 = { style: tmp.hint, children: obj2.message };
-        tmp19Result = tmp19(tmp20(7214), obj9);
+        tmp19Result = tmp19(tmp20(7216), obj9);
       }
     }
     items3[3] = tmp19Result;
     const obj10 = { style: tmp.button, children: null };
     const obj18 = { variant: "primary", size: "lg", text: null, onPress: null, loading: null };
-    const intl4 = tmp3(1119).intl;
-    obj18.text = intl4.string(tmp3(1119).t.i4jeWR);
+    const intl4 = tmp3(1115).intl;
+    obj18.text = intl4.string(tmp3(1115).t.i4jeWR);
     obj18.onPress = handleSubmit;
     obj18.loading = tmp7;
-    obj10.children = closure_10(tmp3(5220).Button, obj18);
+    obj10.children = closure_10(tmp3(5218).Button, obj18);
     items3[4] = closure_10(closure_6, obj10);
     obj4.children = items3;
     items2[1] = closure_11(closure_6, obj4);
@@ -232,21 +230,7 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsConfirmPassword.tsx");
 
 export default forwardRefResult;
-export const UserSettingsConfirmPasswordWrapped = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  if (cResult[0] !== settingNavigationRoute.params) {
-    const obj3 = {};
-    const merged = Object.assign(settingNavigationRoute.params);
-    const tmp8 = v65535(forwardRefResult, obj3);
-    cResult[0] = settingNavigationRoute.params;
-    cResult[1] = tmp8;
-    let tmp3 = tmp8;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (() => {
+export const UserSettingsConfirmPasswordWrapped = function UserSettingsConfirmPasswordWrapped() {
   const merged = Object.assign(useSettingNavigationRoute.useSettingNavigationRoute().params);
-  return v65535(forwardRefResult, {});
-});
+  return closure_1_10(forwardRefResult, {});
+};

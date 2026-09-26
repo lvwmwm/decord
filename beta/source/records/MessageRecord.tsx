@@ -1,18 +1,18 @@
-// Module ID: 4442
-// Function ID: 4443
+// Module ID: 4438
+// Function ID: 4439
 // Name: MessageRecord
-// Dependencies: [1391, 1078, 1389, 4443, 7578, 8042, 9348, 2]
+// Dependencies: [1387, 1074, 1385, 4439, 7576, 8037, 9350, 2]
 // Exports: isMessageComponentsV2
 
-// Module 4442 (MessageRecord)
-import FlagUtils from "FlagUtils" /* 1389 */;
-import ReactionUtils from "ReactionUtils" /* 4443 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7578 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9348 */;
-import Record from "Record" /* 1391 */;
+// Module 4438 (MessageRecord)
+import FlagUtils from "FlagUtils" /* 1385 */;
+import ReactionUtils from "ReactionUtils" /* 4439 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7576 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9350 */;
+import Record from "Record" /* 1387 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ MessageFlags: c3, MessageStates: closure_4, MessageTypes: hasOwnProperty } = Constants);
 class MinimalMessageRecord extends tmp2 {
   constructor(arg0) {
@@ -270,7 +270,7 @@ prototype["addReaction"] = function addReaction(emoji) {
           return emoji;
         }
       }
-      if (NORMAL === tmp(8042).ReactionTypes.BURST) {
+      if (NORMAL === tmp(8037).ReactionTypes.BURST) {
         if (flag) {
           if (emoji.me_burst) {
             return emoji;
@@ -294,7 +294,7 @@ prototype["addReaction"] = function addReaction(emoji) {
         }
         burst_colors = colors;
         tmp28 = flag;
-      } else if (tmp12 === tmp(8042).ReactionTypes.VOTE) {
+      } else if (tmp12 === tmp(8037).ReactionTypes.VOTE) {
         const count_details2 = emoji.count_details;
         let num7;
         if (count_details2 != null) {
@@ -378,7 +378,7 @@ prototype["removeReaction"] = function removeReaction(arg0) {
     if (!obj.emojiEquals(emoji.emoji, closure_0)) {
       return merged1;
     } else {
-      if (NORMAL === tmp2(8042).ReactionTypes.BURST) {
+      if (NORMAL === tmp2(8037).ReactionTypes.BURST) {
         if (flag) {
           if (!merged1.me_burst) {
             let burst_count = merged1.burst_count;
@@ -399,7 +399,7 @@ prototype["removeReaction"] = function removeReaction(arg0) {
           closure_3 = index;
         }
         burst_count = merged1.burst_count - 1;
-      } else if (tmp4 !== tmp2(8042).ReactionTypes.VOTE) {
+      } else if (tmp4 !== tmp2(8037).ReactionTypes.VOTE) {
         if (flag) {
           if (!merged1.me) {
             let count = merged1.count;

@@ -1,43 +1,19 @@
-// Module ID: 14950
-// Function ID: 14951
+// Module ID: 14954
+// Function ID: 14955
 // Name: useTabSelectedGuildId
-// Dependencies: [4612, 5689, 558, 568, 565, 2]
+// Dependencies: [4609, 5687, 563, 2]
+// Exports: default
 
-// Module 14950 (useTabSelectedGuildId)
-import useStateFromStores from "useStateFromStores" /* 565 */;
-import c from "c" /* 568 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import SortedGuildStore from "SortedGuildStore" /* 5689 */;
+// Module 14954 (useTabSelectedGuildId)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import SortedGuildStore from "SortedGuildStore" /* 5687 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/useTabSelectedGuildId.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectedGuildStore, SortedGuildStore];
-    const fn = function n() {
-      let guildId = SelectedGuildStore.getGuildId();
-      const lastSelectedGuildId = SelectedGuildStore.getLastSelectedGuildId();
-      if (guildId == null) {
-        guildId = lastSelectedGuildId;
-      }
-      if (guildId == null) {
-        guildId = flattenedGuildIds.getFlattenedGuildIds()[0];
-      }
-      return guildId;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return useStateFromStores.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+export default function useTabSelectedGuildId() {
   const items = [SelectedGuildStore, SortedGuildStore];
   return useStateFromStores.useStateFromStores(items, () => {
     let guildId = SelectedGuildStore.getGuildId();
@@ -50,4 +26,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return guildId;
   });
-});
+};

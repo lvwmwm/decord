@@ -1,10 +1,10 @@
-// Module ID: 8021
-// Function ID: 8022
+// Module ID: 8016
+// Function ID: 8017
 // Name: Histogram
-// Dependencies: [8022, 2]
+// Dependencies: [8017, 2]
 
-// Module 8021 (Histogram)
-import TDigest from "TDigest" /* 8022 */;
+// Module 8016 (Histogram)
+import TDigest from "TDigest" /* 8017 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/Histogram.tsx");

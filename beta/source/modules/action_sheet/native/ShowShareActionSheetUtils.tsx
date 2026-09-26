@@ -1,15 +1,15 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 8666
+// Function ID: 8667
 // Name: ShowShareActionSheetUtils
-// Dependencies: [1078, 8672, 1245, 8673, 1370, 1368, 5819, 2]
+// Dependencies: [1074, 8667, 1241, 8668, 1366, 1364, 5817, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8671 (ShowShareActionSheetUtils)
-import Constants from "Constants" /* 1078 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import URLUtilsDefault from "URLUtils" /* 1370 */;
-import FileExtensionUtils from "FileExtensionUtils" /* 5819 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8672 */;
+// Module 8666 (ShowShareActionSheetUtils)
+import Constants from "Constants" /* 1074 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import FileExtensionUtils from "FileExtensionUtils" /* 5817 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8667 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -33,7 +33,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
           }
           ({ videoURI, contentType } = source);
           if (null != videoURI) {
-            const decideFileExtensionResult = tmp(5819).decideFileExtension(videoURI, contentType, true);
+            const decideFileExtensionResult = tmp(5817).decideFileExtension(videoURI, contentType, true);
             const obj3 = { mediaFallbackUrl: videoURI, mediaStagingOptions: null };
             let tmp11;
             if (null != decideFileExtensionResult) {
@@ -44,7 +44,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
             obj3.mediaStagingOptions = tmp11;
             return obj3;
           } else {
-            const decideFileExtensionResult1 = tmp(5819).decideFileExtension(source.uri, contentType, true);
+            const decideFileExtensionResult1 = tmp(5817).decideFileExtension(source.uri, contentType, true);
             const obj5 = { mediaFallbackUrl: source.shareURI, mediaStagingOptions: null };
             let tmp6;
             if (null != decideFileExtensionResult1) {
@@ -55,7 +55,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
             obj5.mediaStagingOptions = tmp6;
             return obj5;
           }
-          tmpResult = tmp(1368);
+          tmpResult = tmp(1364);
         } else {
           const obj7 = { mediaFallbackUrl: source.shareURI };
           return obj7;

@@ -1,30 +1,35 @@
 // Module ID: 14742
 // Function ID: 14743
-// Dependencies: []
+// Dependencies: [14725]
 // Exports: default
 
 // Module 14742
+import emptyPromise from "emptyPromise" /* 14725 */;
+
+require = arg1;
+const dependencyMap = arg6;
 
 export default () => (arg0) => {
+  const result = emptyPromise.assertHasLoggerPlugin(arg0);
   closure_0 = arg0;
   return {
-    features: {
-      apiResponse(request, response, tmp4Result) {
-        let status = response;
-        if (response) {
-          status = response.status;
-        }
-        if (status) {
-          status = typeof response.status === "number";
-        }
-        if (status) {
-          status = response.status >= 200;
-        }
-        if (status) {
-          status = response.status <= 299;
-        }
-        closure_0.send("api.response", { request, response, duration: tmp4Result }, !status);
-      }
+    onConnect() {
+      console.log = () => {
+        const items = [...arguments];
+        log(...items);
+        const items1 = [...items];
+        log.log.apply(items1);
+      };
+      console.warn = () => {
+        const items = [...arguments];
+        warn(...items);
+        log.warn(items[0]);
+      };
+      console.debug = () => {
+        const items = [...arguments];
+        debug(...items);
+        log.debug(items[0]);
+      };
     }
   };
 };

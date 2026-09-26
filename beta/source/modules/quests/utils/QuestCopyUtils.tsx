@@ -1,14 +1,14 @@
-// Module ID: 10616
-// Function ID: 10617
+// Module ID: 11587
+// Function ID: 11588
 // Name: QuestCopyUtils
-// Dependencies: [5695, 1119, 5702, 8002, 8003, 8013, 7991, 7468, 2]
+// Dependencies: [5693, 1115, 5700, 7997, 7998, 8008, 7986, 7466, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 10616 (QuestCopyUtils)
-import util from "util" /* 1119 */;
-import ClipboardUtils from "ClipboardUtils" /* 7468 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 8002 */;
-import QuestConstants from "QuestConstants" /* 5695 */;
+// Module 11587 (QuestCopyUtils)
+import util from "util" /* 1115 */;
+import ClipboardUtils from "ClipboardUtils" /* 7466 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7997 */;
+import QuestConstants from "QuestConstants" /* 5693 */;
 import size from "module_2" /* 2 */;
 
 ({ QuestHomeSortMethods: c2, RewardFilterTypes: c3, TaskFilterTypes: closure_4 } = QuestConstants);
@@ -69,28 +69,28 @@ export const getDisclosureText = function getDisclosureText(arg0) {
   const stringResult = intl.string(util.t.fEbrT8);
   if (isTargetedDisclosure) {
     if (isContextualDisclosure) {
-      const intl5 = tmp(1119).intl;
-      nPg6f1 = tmp(1119).t.nPg6f1;
+      const intl5 = tmp(1115).intl;
+      nPg6f1 = tmp(1115).t.nPg6f1;
       let stringResult1 = intl5.string(nPg6f1);
     } else {
       if (null == cosponsorName) {
-        const intl4 = tmp(1119).intl;
+        const intl4 = tmp(1115).intl;
         const obj = { gamePublisher };
-        let formatToPlainStringResult = intl4.formatToPlainString(tmp(1119).t.Piihy1, obj);
+        let formatToPlainStringResult = intl4.formatToPlainString(tmp(1115).t.Piihy1, obj);
       } else {
-        const intl3 = tmp(1119).intl;
+        const intl3 = tmp(1115).intl;
         const obj2 = { gamePublisher, cosponsorName };
-        formatToPlainStringResult = intl3.formatToPlainString(tmp(1119).t.DV47Gy, obj2);
+        formatToPlainStringResult = intl3.formatToPlainString(tmp(1115).t.DV47Gy, obj2);
       }
       const _HermesInternal = HermesInternal;
       stringResult1 = "" + formatToPlainStringResult + " " + stringResult;
     }
-  } else if (adCreativeType !== tmp(5702).AdCreativeType.QUEST) {
+  } else if (adCreativeType !== tmp(5700).AdCreativeType.QUEST) {
     return stringResult;
   } else {
-    const intl2 = tmp(1119).intl;
+    const intl2 = tmp(1115).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    let t = tmp(1119).t;
+    let t = tmp(1115).t;
     if (isVideoQuest) {
       t = { gamePublisher };
       let formatToPlainStringResult1 = formatToPlainString(t.rctMRl, t);
@@ -158,15 +158,15 @@ export const getCtaLink = function getCtaLink(config) {
 export const copyShareLink = function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
   if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
-    const obj2 = { type: tmp(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5702).AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
+    const obj2 = { type: tmp(8008).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5700).AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
     ({ content: obj5.surfaceId, sourceQuestContent: obj5.sourceQuestContent, position: obj5.questContentPosition, impressionId: obj5.impressionId } = ctaContent);
-    tmp(8003).captureAdUserAction(obj2);
-    const tmpResult = tmp(8003);
+    tmp(7998).captureAdUserAction(obj2);
+    const tmpResult = tmp(7998);
   } else {
     const obj4 = { questId: id, questContent: ctaContent.content, questContentCTA: ctaContent, questContentPosition: null, impressionId: null, sourceQuestContent: null };
     ({ position: obj3.questContentPosition, impressionId: obj3.impressionId, sourceQuestContent: obj3.sourceQuestContent } = ctaContent);
-    const result = tmp(7991).trackQuestContentClicked(obj4);
-    const tmpResult3 = tmp(7991);
+    const result = tmp(7986).trackQuestContentClicked(obj4);
+    const tmpResult3 = tmp(7986);
   }
   obj = AdAnalyticsInterfaceExperiment;
   ClipboardUtils.copy("" + location.protocol + "//" + location.host + "/quests/" + id);

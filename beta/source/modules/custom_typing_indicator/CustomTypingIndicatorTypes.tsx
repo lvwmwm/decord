@@ -1,11 +1,11 @@
-// Module ID: 1397
-// Function ID: 1398
+// Module ID: 1393
+// Function ID: 1394
 // Name: CustomTypingIndicatorTypes
-// Dependencies: [1384, 2]
+// Dependencies: [1380, 2]
 // Exports: getEffectiveCustomTypingIndicatorAnimation, hasCustomTypingIndicatorEmojis, isValidCustomTypingIndicatorEmojiSelection, parseServerTypingIndicatorStyle, serializeTypingIndicatorStyle
 
-// Module 1397 (CustomTypingIndicatorTypes)
-import user from "user" /* 1384 */;
+// Module 1393 (CustomTypingIndicatorTypes)
+import user from "user" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorTypes.tsx");
@@ -22,9 +22,9 @@ export const isValidCustomTypingIndicatorEmojiSelection = function isValidCustom
   }
   return tmp;
 };
-export const getEffectiveCustomTypingIndicatorAnimation = function getEffectiveCustomTypingIndicatorAnimation(emojis) {
-  if (3 === emojis.emojis.length) {
-    let UNSPECIFIED = emojis.animation;
+export const getEffectiveCustomTypingIndicatorAnimation = function getEffectiveCustomTypingIndicatorAnimation(map) {
+  if (3 === map.emojis.length) {
+    let UNSPECIFIED = map.animation;
   } else {
     UNSPECIFIED = user.TypingIndicatorAnimation.UNSPECIFIED;
   }

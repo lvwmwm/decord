@@ -1,10 +1,10 @@
-// Module ID: 8056
-// Function ID: 8057
+// Module ID: 8051
+// Function ID: 8052
 // Name: DraftActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 
-// Module 8056 (DraftActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 8051 (DraftActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/DraftActionCreators.tsx");

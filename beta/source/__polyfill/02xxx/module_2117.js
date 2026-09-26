@@ -1,16 +1,50 @@
 // Module ID: 2117
 // Function ID: 2118
-// Dependencies: [2118]
+// Dependencies: []
+// Exports: default
 
 // Module 2117
-import module_2118 from "module_2118" /* 2118 */;
 
-if (!module_2118) {
-  const obj2 = { default: module_2118 };
-  let obj = obj2;
-} else {
-  obj = module_2118;
-}
-
-export default { date: obj.default({ formats: { full: "EEEE, MMMM do, y", long: "MMMM do, y", medium: "MMM d, y", short: "MM/dd/yyyy" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "h:mm:ss a zzzz", long: "h:mm:ss a z", medium: "h:mm:ss a", short: "h:mm a" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'at' {{time}}", long: "{{date}} 'at' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
+export default function buildLocalizeFn(arg0) {
+  const formattingValues = arg0;
+  return (arg0, context) => {
+    let str = "standalone";
+    if (null != context) {
+      str = "standalone";
+      if (context.context) {
+        const _String = String;
+        str = String(context.context);
+      }
+    }
+    if ("formatting" === str) {
+      if (formattingValues.formattingValues) {
+        let StringResult = tmp6;
+        if (null != context) {
+          StringResult = tmp6;
+          if (context.width) {
+            const _String3 = String;
+            StringResult = String(context.width);
+          }
+        }
+        let tmp5 = tmp2.formattingValues[StringResult] || tmp2.formattingValues[tmp2.defaultFormattingWidth || tmp2.defaultWidth];
+        let obj = tmp2;
+        const tmp9 = tmp2.formattingValues[StringResult] || tmp2.formattingValues[tmp2.defaultFormattingWidth || tmp2.defaultWidth];
+      }
+      let argumentCallbackResult = arg0;
+      if (obj.argumentCallback) {
+        argumentCallbackResult = obj.argumentCallback(arg0);
+      }
+      return tmp5[argumentCallbackResult];
+    }
+    obj = formattingValues;
+    if (null != context) {
+      if (context.width) {
+        const _String2 = String;
+        let defaultWidth = String(context.width);
+      }
+      tmp5 = obj.values[defaultWidth] || obj.values[tmp3];
+    }
+    defaultWidth = obj.defaultWidth;
+  };
+};
 export default exports.default;

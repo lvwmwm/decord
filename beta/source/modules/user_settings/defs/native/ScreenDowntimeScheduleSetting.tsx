@@ -1,30 +1,16 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15796
+// Function ID: 15797
 // Name: ScreenDowntimeScheduleSetting
-// Dependencies: [8270, 558, 15188, 8953, 11630, 1119, 2023, 2]
+// Dependencies: [8265, 15192, 8955, 11754, 1115, 2019, 2]
 
-// Module 15792 (ScreenDowntimeScheduleSetting)
-import util from "util" /* 1119 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import SettingsConstants from "SettingsConstants" /* 8270 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15188 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
+// Module 15796 (ScreenDowntimeScheduleSetting)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import SettingsConstants from "SettingsConstants" /* 8265 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15192 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
-  if (hasActiveParentLinks) {
-    hasActiveParentLinks = obj.useHasActiveParentLinks();
-  }
-  return hasActiveParentLinks;
-}) : (() => {
-  let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
-  if (hasActiveParentLinks) {
-    hasActiveParentLinks = obj.useHasActiveParentLinks();
-  }
-  return hasActiveParentLinks;
-});
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -40,19 +26,13 @@ const toggle = SettingBuilders.createToggle({
     const EnableScreenDowntimeScheduleNotifications = UserSettings.EnableScreenDowntimeScheduleNotifications;
     return EnableScreenDowntimeScheduleNotifications.updateSetting(arg0);
   },
-  usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  usePredicate() {
     let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
     if (hasActiveParentLinks) {
       hasActiveParentLinks = obj.useHasActiveParentLinks();
     }
     return hasActiveParentLinks;
-  }) : (() => {
-    let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
-    if (hasActiveParentLinks) {
-      hasActiveParentLinks = obj.useHasActiveParentLinks();
-    }
-    return hasActiveParentLinks;
-  })
+  }
 });
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ScreenDowntimeScheduleSetting.tsx");
 

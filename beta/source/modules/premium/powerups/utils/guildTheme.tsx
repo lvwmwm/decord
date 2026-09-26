@@ -1,19 +1,21 @@
-// Module ID: 12698
-// Function ID: 12699
+// Module ID: 12782
+// Function ID: 12783
 // Name: guildTheme
-// Dependencies: [4679, 4680, 558, 568, 504, 4683, 12699, 4719, 2]
-// Exports: shouldShowGuildThemeRollback
+// Dependencies: [4676, 4677, 504, 4680, 12783, 4716, 2]
+// Exports: shouldShowGuildThemeRollback, useShouldShowGuildThemeRollback
 
-// Module 12698 (guildTheme)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12699 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
+// Module 12782 (guildTheme)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12783 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4676 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const PowerupActiveStatusType = fn(4680).PowerupActiveStatusType;
-const ReactCompilerGating = fn(558);
-function shouldShowGuildThemeRollback(arg0, storeRemovalDate, arg2) {
+const PowerupActiveStatusType = fn(4677).PowerupActiveStatusType;
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/premium/powerups/utils/guildTheme.tsx");
+
+export const shouldShowGuildThemeRollback = function shouldShowGuildThemeRollback(arg0, storeRemovalDate, arg2) {
   let tmp = arg0;
   if (arg0) {
     tmp = null != storeRemovalDate;
@@ -25,74 +27,18 @@ function shouldShowGuildThemeRollback(arg0, storeRemovalDate, arg2) {
     tmp = arg2 === PowerupActiveStatusType.POWERUP_ACTIVATED;
   }
   return tmp;
-}
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/powerups/utils/guildTheme.tsx");
-
-export { shouldShowGuildThemeRollback };
-export const useShouldShowGuildThemeRollback = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  const cResult = require("c").c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildPowerupsStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      return GuildPowerupsStore.getStateForGuild(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
-  let tmp8;
-  if (stateFromStores != null) {
-    tmp8 = stateFromStores.allPowerups[tmp(undefined, 4683).GUILD_POWERUP_GUILD_THEME_SKU_ID];
-  }
-  const tmp9 = usePowerupActiveStatusDefault(arg0, tmp8);
-  const tmpResult = require("initialize");
-  const serverThemeRollbackEnabled = require("ServerThemeExperiment").useServerThemeRollbackEnabled(arg0, arg1);
-  if (cResult[3] === tmp9.type) {
-    if (cResult[4] === tmp8) {
-      if (cResult[5] === serverThemeRollbackEnabled) {
-        let tmp11 = cResult[6];
-      }
-      return tmp11;
-    }
-  }
-  let tmp12 = serverThemeRollbackEnabled;
-  if (serverThemeRollbackEnabled) {
-    tmp12 = null != tmp8;
-  }
-  if (tmp12) {
-    tmp12 = null != tmp8.storeRemovalDate;
-  }
-  if (tmp12) {
-    tmp12 = tmp9.type === PowerupActiveStatusType.POWERUP_ACTIVATED;
-  }
-  cResult[3] = tmp9.type;
-  cResult[4] = tmp8;
-  cResult[5] = serverThemeRollbackEnabled;
-  cResult[6] = tmp12;
-  tmp11 = tmp12;
-}) : ((arg0, arg1) => {
-  _require = arg0;
+};
+export const useShouldShowGuildThemeRollback = function useShouldShowGuildThemeRollback(guildId, useGuildPowerupNewPerkMarketingVersion) {
+  _require = guildId;
   const items = [GuildPowerupsStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
   let tmp4;
   if (stateFromStores != null) {
-    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4683).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4680).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const obj = require("initialize");
-  const tmp5 = usePowerupActiveStatusDefault(arg0, tmp4);
-  let serverThemeRollbackEnabled = require("ServerThemeExperiment").useServerThemeRollbackEnabled(arg0, arg1);
+  const tmp5 = usePowerupActiveStatusDefault(guildId, tmp4);
+  let serverThemeRollbackEnabled = require("ServerThemeExperiment").useServerThemeRollbackEnabled(guildId, useGuildPowerupNewPerkMarketingVersion);
   if (serverThemeRollbackEnabled) {
     serverThemeRollbackEnabled = null != tmp4;
   }
@@ -103,4 +49,4 @@ export const useShouldShowGuildThemeRollback = ReactCompilerGating.isReactCompil
     serverThemeRollbackEnabled = tmp5.type === PowerupActiveStatusType.POWERUP_ACTIVATED;
   }
   return serverThemeRollbackEnabled;
-});
+};

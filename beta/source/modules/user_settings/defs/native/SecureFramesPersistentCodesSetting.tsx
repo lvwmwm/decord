@@ -1,37 +1,16 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 16180
+// Function ID: 16181
 // Name: SecureFramesPersistentCodesSetting
-// Dependencies: [9981, 8270, 558, 568, 504, 9983, 11630, 1119, 2]
+// Dependencies: [10003, 8265, 504, 10005, 11754, 1115, 2]
 
-// Module 16176 (SecureFramesPersistentCodesSetting)
+// Module 16180 (SecureFramesPersistentCodesSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9983 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9981 */;
+import util from "util" /* 1115 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 10005 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 10003 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11630);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SecureFramesPersistedStore];
-    const fn = function n() {
-      return persistentCodesEnabled.getPersistentCodesEnabled();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
-  const items = [SecureFramesPersistedStore];
-  return initialize.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
-});
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -41,26 +20,11 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.opw5ls);
   },
-  parent: fn(8270).MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(2);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [SecureFramesPersistedStore];
-      const fn = function n() {
-        return persistentCodesEnabled.getPersistentCodesEnabled();
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp4 = items;
-      tmp5 = fn;
-    } else {
-      [tmp4, tmp5] = cResult;
-    }
-    return initialize.useStateFromStores(tmp4, tmp5);
-  }) : (() => {
+  parent: fn(8265).MobileUserSettings.DATA_AND_PRIVACY,
+  useValue: function useSecureFramesPersistentCodesValue() {
     const items = [SecureFramesPersistedStore];
     return initialize.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
-  }),
+  },
   onValueChange: function handleSecureFramesPersistentCodesToggle(arg0) {
     const result = SecureFramesActionCreatorsDefault.updatePersistentCodesEnabled(arg0);
   }

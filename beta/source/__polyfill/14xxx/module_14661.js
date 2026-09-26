@@ -4,4 +4,4 @@
 
 // Module 14661
 
-export default ["constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"];
+export const f = Object.getOwnPropertySymbols;

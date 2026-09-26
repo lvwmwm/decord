@@ -1,11 +1,11 @@
-// Module ID: 17100
-// Function ID: 17101
+// Module ID: 17090
+// Function ID: 17091
 // Name: CallChatToastsStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 17100 (CallChatToastsStore)
+// Module 17090 (CallChatToastsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const obj = { toastsEnabledForChannel: {} };
 let closure_1 = obj;

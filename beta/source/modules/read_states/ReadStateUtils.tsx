@@ -1,18 +1,17 @@
-// Module ID: 10119
-// Function ID: 10120
+// Module ID: 10140
+// Function ID: 10141
 // Name: ReadStateUtils
-// Dependencies: [4805, 4971, 4972, 558, 568, 504, 2]
-// Exports: getHasImportantUnread
+// Dependencies: [4803, 4969, 4970, 504, 2]
+// Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 10119 (ReadStateUtils)
-import ReadStateStore from "ReadStateStore" /* 4805 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+// Module 10140 (ReadStateUtils)
+import ReadStateStore from "ReadStateStore" /* 4803 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const UnreadSetting = fn(4972).UnreadSetting;
-const ReactCompilerGating = fn(558);
+const UnreadSetting = fn(4970).UnreadSetting;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
 
@@ -23,33 +22,7 @@ export const getHasImportantUnread = function getHasImportantUnread(channel) {
   }
   return hasUnreadResult;
 };
-export const useHasImportantUnread = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ReadStateStore, UserGuildSettingsStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      let hasUnreadResult = ReadStateStore.hasUnread(id.id);
-      if (hasUnreadResult) {
-        hasUnreadResult = UserGuildSettingsStore.resolveUnreadSetting(id) === UnreadSetting.ALL_MESSAGES;
-      }
-      return hasUnreadResult;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+export const useHasImportantUnread = function useHasImportantUnread(arg0) {
   _require = arg0;
   const items = [ReadStateStore, UserGuildSettingsStore];
   return require("initialize").useStateFromStores(items, () => {
@@ -59,4 +32,4 @@ export const useHasImportantUnread = ReactCompilerGating.isReactCompilerEnabled(
     }
     return hasUnreadResult;
   });
-});
+};

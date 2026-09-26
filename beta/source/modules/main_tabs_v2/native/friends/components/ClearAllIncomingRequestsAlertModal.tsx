@@ -1,13 +1,13 @@
-// Module ID: 17259
-// Function ID: 17260
+// Module ID: 17249
+// Function ID: 17250
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 10048, 558, 568, 1119, 5148, 5148, 2]
+// Dependencies: [5, 19, 21, 10035, 5146, 1115, 5146, 2]
+// Exports: default
 
-// Module 17259 (ClearAllIncomingRequestsAlertModal)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5148 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10048 */;
+// Module 17249 (ClearAllIncomingRequestsAlertModal)
+import util from "util" /* 1115 */;
+import AlertModal from "AlertModal" /* 5146 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10035 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -33,7 +33,7 @@ let closure_7 = async function _handleConfirm(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -61,7 +61,7 @@ let closure_7 = async function _handleConfirm(arg0, value) {
         return obj;
       } else {
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp7) {
       c0 = tmp;
@@ -71,66 +71,10 @@ let closure_7 = async function _handleConfirm(arg0, value) {
 };
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((incomingRequestCount) => {
-  const cResult = c.c(7);
-  incomingRequestCount = incomingRequestCount.incomingRequestCount;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.z2pFjo);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== incomingRequestCount) {
-    const intl2 = tmp(1119).intl;
-    const obj2 = { incomingRequestCount };
-    const formatToPlainStringResult = intl2.formatToPlainString(tmp(1119).t["0nTvEw"], obj2);
-    cResult[1] = incomingRequestCount;
-    cResult[2] = formatToPlainStringResult;
-    let tmp6 = formatToPlainStringResult;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "destructive", onPress: handleConfirm, text: null };
-    const intl3 = tmp(1119).intl;
-    obj3.text = intl3.string(tmp(1119).t["cY+Oob"]);
-    const tmp11 = React4(tmp(5148).AlertActionButton, obj3, "confirm");
-    cResult[3] = tmp11;
-    let tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { children: null };
-    const items = [tmp8, ];
-    const obj5 = { variant: "secondary", text: null };
-    const intl4 = tmp(1119).intl;
-    obj5.text = intl4.string(tmp(1119).t["ETE/oC"]);
-    items[1] = React4(tmp(5148).AlertActionButton, obj5, "cancel");
-    obj4.children = items;
-    const tmp15 = hasOwnProperty(tmp(5148).AlertActions, obj4);
-    cResult[4] = tmp15;
-    let tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] !== tmp6) {
-    const obj6 = { title: first, content: tmp6, actions: tmp12 };
-    const tmp18 = React4(tmp(5148).AlertModal, obj6);
-    cResult[5] = tmp6;
-    cResult[6] = tmp18;
-    let tmp16 = tmp18;
-  } else {
-    tmp16 = cResult[6];
-  }
-  return tmp16;
-}) : ((incomingRequestCount) => {
+export default function ClearAllIncomingRequestsAlertModal(incomingRequestCount) {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
   obj.title = intl.string(util.t.z2pFjo);
@@ -148,4 +92,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((incomingRequestC
   obj2.children = items;
   obj.actions = hasOwnProperty(AlertModal.AlertActions, obj2);
   return React4(AlertModal.AlertModal, obj);
-});
+};

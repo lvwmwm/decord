@@ -1,10 +1,10 @@
-// Module ID: 15097
-// Function ID: 15098
+// Module ID: 15101
+// Function ID: 15102
 // Name: SpendingLimitUtils
 // Dependencies: [2]
 // Exports: getCurrencySymbol, getNextRenewalDateLabel, sanitizeAmountInput, spendingLimitEqual
 
-// Module 15097 (SpendingLimitUtils)
+// Module 15101 (SpendingLimitUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/SpendingLimitUtils.tsx");

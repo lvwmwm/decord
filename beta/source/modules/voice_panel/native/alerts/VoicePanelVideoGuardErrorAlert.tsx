@@ -1,74 +1,22 @@
-// Module ID: 13609
-// Function ID: 13610
+// Module ID: 13599
+// Function ID: 13600
 // Name: VoicePanelVideoGuardErrorAlert
-// Dependencies: [19, 21, 558, 568, 5148, 1119, 4786, 13607, 5148, 2]
+// Dependencies: [19, 21, 5146, 5146, 1115, 4784, 13597, 2]
+// Exports: default
 
-// Module 13609 (VoicePanelVideoGuardErrorAlert)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import AlertModal from "AlertModal" /* 5148 */;
-import VideoGuardExperiment from "VideoGuardExperiment" /* 13607 */;
+// Module 13599 (VoicePanelVideoGuardErrorAlert)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import AlertModal from "AlertModal" /* 5146 */;
+import VideoGuardExperiment from "VideoGuardExperiment" /* 13597 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelVideoGuardErrorAlert.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
-  const cResult = c.c(8);
-  title = title.title;
-  const dismissModalCallback = AlertModal.useDismissModalCallback();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.UoW002);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: null };
-    const intl2 = tmp(1119).intl;
-    const obj4 = { helpdeskArticle: tmp(13607).VIDEO_GUARD_BLOG_POST_URL };
-    obj3.children = intl2.format(tmp(1119).t.BPDKoA, obj4);
-    const tmp9 = jsx(tmp(4786).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
-    cResult[1] = tmp9;
-    let tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1119).intl;
-    const stringResult1 = intl3.string(tmp(1119).t["NX+WJN"]);
-    cResult[2] = stringResult1;
-    let tmp10 = stringResult1;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] !== dismissModalCallback) {
-    const obj5 = { variant: "secondary", text: tmp10, onPress: dismissModalCallback };
-    const tmp14 = jsx(tmp(5148).AlertActionButton, { variant: "secondary", text: tmp10, onPress: dismissModalCallback });
-    cResult[3] = dismissModalCallback;
-    cResult[4] = tmp14;
-    let tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] === tmp12) {
-    if (cResult[6] === title) {
-      let tmp15 = cResult[7];
-    }
-    return tmp15;
-  }
-  const tmp16 = jsx(AlertModal.AlertModal, { title, content: first, extraContent: tmp7, actions: tmp12 });
-  cResult[5] = tmp12;
-  cResult[6] = title;
-  cResult[7] = tmp16;
-  tmp15 = tmp16;
-}) : ((title) => {
+export default function VoicePanelVideoGuardErrorAlert(title) {
   const obj2 = { title: title.title, content: null, extraContent: null, actions: null };
   const intl = util.intl;
   obj2.content = intl.string(util.t.UoW002);
@@ -83,5 +31,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   obj5.onPress = dismissModalCallback;
   obj2.actions = jsx(AlertModal.AlertActionButton, { variant: "secondary", text: null, onPress: null });
   return jsx(AlertModal.AlertModal, { title: title.title, content: null, extraContent: null, actions: null });
-});
+};
 export const VOICE_PANEL_VIDEO_GUARD_ERROR_KEY = "voice-panel-video-guard-error";

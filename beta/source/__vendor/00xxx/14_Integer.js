@@ -3049,7 +3049,7 @@ function gcd(absResult, absResult1) {
     let obj12 = obj6;
     if (obj6.isEven()) {
       do {
-        value3 = iter3.value;
+        let value3 = iter3.value;
         if (typeof value3 === "number") {
           let tmp22 = value3 | c21;
         } else if (typeof value3 === "bigint") {

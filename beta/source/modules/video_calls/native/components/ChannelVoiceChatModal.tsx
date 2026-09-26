@@ -1,81 +1,23 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11260
+// Function ID: 11261
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 558, 568, 4943, 4991, 5349, 4674, 10369, 11265, 2]
+// Dependencies: [19, 21, 4941, 4989, 11217, 5347, 4671, 10372, 2]
+// Exports: default
 
-// Module 11305 (ChannelVoiceChatModal)
-import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4674 */;
-import useChannelNameDefault from "useChannelName" /* 4943 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
-import ChannelVoiceChatDefault from "ChannelVoiceChat" /* 10369 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11265 */;
+// Module 11260 (ChannelVoiceChatModal)
+import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4671 */;
+import useChannelNameDefault from "useChannelName" /* 4941 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
+import ChannelVoiceChatDefault from "ChannelVoiceChat" /* 10372 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11217 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChatModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = channel(568).c(9);
-  channel = channel.channel;
-  const tmp5 = useChannelNameDefault(channel);
-  if (cResult[0] !== channel.id) {
-    const fn = function c() {
-      ChannelRTCActionCreatorsDefault.updateChatOpen(channel.id, true);
-      return () => {
-        ChannelRTCActionCreatorsDefault.updateChatOpen(id.id, false);
-      };
-    };
-    const items = [channel.id];
-    cResult[0] = channel.id;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp7 = items;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-    tmp7 = cResult[2];
-  }
-  const effect = noop.useEffect(tmp6, tmp7);
-  let str = tmp5;
-  if (tmp5 == null) {
-    str = "";
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = jsx(channel(5349).StageIcon, { size: "sm" });
-    cResult[3] = tmp11;
-    let tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== channel) {
-    const fn2 = function f() {
-      let guild_id = channel.guild_id;
-      if (guild_id == null) {
-        guild_id = null;
-      }
-      return jsx(GuildThemeGuildIdOverrideContextDefault.Provider, { value: guild_id, children: jsx(ChannelVoiceChatDefault, { channel, inModal: true }) });
-    };
-    cResult[4] = channel;
-    cResult[5] = fn2;
-    let tmp12 = fn2;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] === str) {
-    if (cResult[7] === tmp12) {
-      let tmp13 = cResult[8];
-    }
-    return tmp13;
-  }
-  const tmp14 = jsx(ModalStackNavigatorDefault, { screenKey: "StageVoiceChat", title: str, titleIcon: tmp9, render: tmp12 });
-  cResult[6] = str;
-  cResult[7] = tmp12;
-  cResult[8] = tmp14;
-  tmp13 = tmp14;
-}) : ((channel) => {
+export default function ChannelVoiceChatModal(channel) {
   channel = channel.channel;
   const tmp2 = useChannelNameDefault(channel);
   const items = [channel.id];
@@ -89,11 +31,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (tmp2 == null) {
     str = "";
   }
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5349).StageIcon, { size: "sm" })} render={function render() {
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5347).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     if (guild_id == null) {
       guild_id = null;
     }
     return jsx(GuildThemeGuildIdOverrideContextDefault.Provider, { value: guild_id, children: jsx(ChannelVoiceChatDefault, { channel, inModal: true }) });
   }} />;
-});
+};

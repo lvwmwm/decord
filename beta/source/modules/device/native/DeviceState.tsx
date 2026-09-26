@@ -1,10 +1,10 @@
-// Module ID: 8029
-// Function ID: 8030
+// Module ID: 8024
+// Function ID: 8025
 // Name: device/DeviceState
-// Dependencies: [5, 17, 3, 8030, 2]
+// Dependencies: [5, 17, 3, 8025, 2]
 // Exports: getDeviceState
 
-// Module 8029 (device/DeviceState)
+// Module 8024 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -20,7 +20,7 @@ let closure_5 = async function _getDeviceState(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -44,7 +44,7 @@ let closure_5 = async function _getDeviceState(arg0, value) {
           fallback = obj4.fallback;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {

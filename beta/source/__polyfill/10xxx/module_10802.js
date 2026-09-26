@@ -1,60 +1,55 @@
 // Module ID: 10802
 // Function ID: 10803
-// Dependencies: [41, 42]
+// Dependencies: [41, 42, 10798, 10729]
 
 // Module 10802
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let _classCallCheck = _classCallCheck_mod;
-const regExp = new RegExp("^\\s*(?:\\(?(?:GMT|UTC)\\s?)?([+-])(\\d{1,2})(?::?(\\d{2}))?\\)?", "i");
-class ExtractTimezoneOffsetRefiner {
+const JPSlashDateFormatParser = require;
+const regExp = new RegExp("([0-9\uFF10-\uFF19]{4}[\\/|\\\uFF0F])?([0-1\uFF10-\uFF11]{0,1}[0-9\uFF10-\uFF19]{1})(?:[\\/|\\\uFF0F]([0-3\uFF10-\uFF13]{0,1}[0-9\uFF10-\uFF19]{1}))", "i");
+class JPSlashDateFormatParser {
   constructor() {
-    tmp = closure_0(this, ExtractTimezoneOffsetRefiner);
+    tmp = c2(this, JPSlashDateFormatParser);
     return;
   }
 }
-_classCallCheck = ExtractTimezoneOffsetRefiner;
 const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
-    let text = arg0;
-    const item = arr.forEach((start) => {
-      text = start;
-      start = start.start;
-      if (!start.isCertain("timezoneOffset")) {
-        const match = regExp.exec(text.text.substring(start.index + start.text.length));
-        if (match) {
-          obj.debug(() => {
-            console.log("Extracting timezone: '" + match[0] + "' into : " + closure_0);
-          });
-          const _parseInt = parseInt;
-          let str2 = match[3];
-          const result = 60 * parseInt(match[2]);
-          if (!str2) {
-            str2 = "0";
-          }
-          const sum = result + parseInt(str2);
-          if (sum <= 840) {
-            let tmp7 = sum;
-            if ("-" === match[1]) {
-              tmp7 = -sum;
-            }
-            if (null != start.end) {
-              const end = start.end;
-              end.assign("timezoneOffset", tmp7);
-            }
-            const start2 = start.start;
-            start2.assign("timezoneOffset", tmp7);
-            start.text = start.text + match[0];
-          }
-        }
-        obj = text;
-      }
-    });
-    return arr;
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(createParsingComponents, arg1) {
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const parsed = parseInt(JPSlashDateFormatParser(10798).toHankaku(arg1[2]));
+      const parsed1 = parseInt(JPSlashDateFormatParser(10798).toHankaku(arg1[3]));
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          if (parsed1 >= 1) {
+            if (parsed1 <= 31) {
+              parsingComponents.assign("day", parsed1);
+              parsingComponents.assign("month", parsed);
+              if (arg1[1]) {
+                const _parseInt = parseInt;
+                const parsed2 = parseInt(tmp(10798).toHankaku(arg1[1]));
+                parsingComponents.assign("year", tmp(10729).findMostLikelyADYear(parsed2));
+              } else {
+                parsingComponents.imply("year", tmp(10729).findYearClosestToRef(createParsingComponents.reference.instant, parsed1, parsed));
+              }
+              return parsingComponents;
+            }
+          }
+          return null;
+        }
+      }
+      return null;
+    }
+  }
+];
 
-export default _createClass(ExtractTimezoneOffsetRefiner, items);
+export default _createClass(JPSlashDateFormatParser, items);

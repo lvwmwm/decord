@@ -1,13 +1,13 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 17959
+// Function ID: 17960
 // Name: BaseRuleInfo
-// Dependencies: [12029, 17958, 17957, 1119, 2]
+// Dependencies: [12146, 17949, 17948, 1115, 2]
 // Exports: getBaseRuleInfo
 
-// Module 17968 (BaseRuleInfo)
-import Constants from "Constants" /* 12029 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17957 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17958 */;
+// Module 17959 (BaseRuleInfo)
+import Constants from "Constants" /* 12146 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17948 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17949 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
@@ -42,43 +42,43 @@ export const getBaseRuleInfo = function getBaseRuleInfo(triggerType, rule) {
                 if (obj3.isBackendPersistedRule(length)) {
                   if (tmp5Result.isRuleKeywordFilter(length)) {
                     if (length.triggerMetadata.regexPatterns.length > 0) {
-                      const intl2 = tmp5(1119).intl;
+                      const intl2 = tmp5(1115).intl;
                       const obj4 = { keywordCount: length.triggerMetadata.keywordFilter.length, regexPatternCount: null };
                       length = length.triggerMetadata.regexPatterns.length;
                       obj4.regexPatternCount = length;
-                      let formatToPlainStringResult = intl2.formatToPlainString(tmp5(1119).t.xZUvxR, obj4);
+                      let formatToPlainStringResult = intl2.formatToPlainString(tmp5(1115).t.xZUvxR, obj4);
                     } else {
-                      const intl = tmp5(1119).intl;
+                      const intl = tmp5(1115).intl;
                       const obj5 = { keywordCount: length.triggerMetadata.keywordFilter.length };
-                      formatToPlainStringResult = intl.formatToPlainString(tmp5(1119).t.dJN7Lk, obj5);
+                      formatToPlainStringResult = intl.formatToPlainString(tmp5(1115).t.dJN7Lk, obj5);
                     }
                   }
-                  tmp5Result = tmp5(17957);
+                  tmp5Result = tmp5(17948);
                 }
                 if (str2 == null) {
                   str2 = "";
                 }
                 obj2.headerSubtext = str2;
                 if (tmp2.KEYWORD === triggerType) {
-                  const intl7 = tmp5(1119).intl;
-                  let str3 = intl7.string(tmp5(1119).t.TzvaeK);
+                  const intl7 = tmp5(1115).intl;
+                  let str3 = intl7.string(tmp5(1115).t.TzvaeK);
                 } else if (tmp2.ML_SPAM === triggerType) {
-                  const intl6 = tmp5(1119).intl;
-                  str3 = intl6.string(tmp5(1119).t.jBZSQl);
+                  const intl6 = tmp5(1115).intl;
+                  str3 = intl6.string(tmp5(1115).t.jBZSQl);
                 } else if (tmp2.DEFAULT_KEYWORD_LIST === triggerType) {
-                  const intl5 = tmp5(1119).intl;
-                  str3 = intl5.string(tmp5(1119).t.Drc8ft);
+                  const intl5 = tmp5(1115).intl;
+                  str3 = intl5.string(tmp5(1115).t.Drc8ft);
                 } else if (tmp2.MENTION_SPAM === triggerType) {
-                  const intl4 = tmp5(1119).intl;
-                  str3 = intl4.string(tmp5(1119).t.flhXO4);
+                  const intl4 = tmp5(1115).intl;
+                  str3 = intl4.string(tmp5(1115).t.flhXO4);
                 } else if (tmp2.USER_PROFILE === triggerType) {
-                  const intl3 = tmp5(1119).intl;
-                  str3 = intl3.string(tmp5(1119).t.A35LyL);
+                  const intl3 = tmp5(1115).intl;
+                  str3 = intl3.string(tmp5(1115).t.A35LyL);
                 } else {
                   str3 = null;
                   if (tmp2.APPLICATION === triggerType) {
-                    const intl9 = tmp5(1119).intl;
-                    str3 = intl9.string(tmp5(1119).t.kHNeDa);
+                    const intl9 = tmp5(1115).intl;
+                    str3 = intl9.string(tmp5(1115).t.kHNeDa);
                   }
                 }
                 if (str3 == null) {
@@ -87,8 +87,8 @@ export const getBaseRuleInfo = function getBaseRuleInfo(triggerType, rule) {
                 obj2.descriptionText = str3;
                 let str4;
                 if (triggerType === tmp2.KEYWORD) {
-                  const intl8 = tmp5(1119).intl;
-                  str4 = intl8.formatToPlainString(tmp5(1119).t.yNec2m, {});
+                  const intl8 = tmp5(1115).intl;
+                  str4 = intl8.formatToPlainString(tmp5(1115).t.yNec2m, {});
                 }
                 if (str4 == null) {
                   str4 = "";

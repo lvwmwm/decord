@@ -1,20 +1,20 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11783
+// Function ID: 11784
 // Name: AppStoreMetadataActionCreators
-// Dependencies: [5, 1078, 1095, 577, 1275, 561, 2]
+// Dependencies: [5, 1074, 1091, 573, 1271, 559, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 11659 (AppStoreMetadataActionCreators)
-import DurationsDefault from "Durations" /* 1095 */;
+// Module 11783 (AppStoreMetadataActionCreators)
+import DurationsDefault from "Durations" /* 1091 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import Dispatcher from "Dispatcher" /* 577 */;
+import Dispatcher from "Dispatcher" /* 573 */;
 
 const require = fn;
 function clearRetryState(arg0) {
   map2.delete(arg0);
   map3.delete(arg0);
 }
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 let closure_5 = 10 * DurationsDefault.Millis.SECOND;
 let closure_6 = 5 * DurationsDefault.Millis.MINUTE;
 const map = new Map();
@@ -43,7 +43,7 @@ export const fetchAppStoreMetadata = function fetchAppStoreMetadata(os) {
     }
     return Promise.resolve(value);
   } else {
-    value3 = map1.get(combined);
+    const value3 = map1.get(combined);
     if (null != value3) {
       return value3;
     } else {
@@ -65,7 +65,7 @@ export const fetchAppStoreMetadata = function fetchAppStoreMetadata(os) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

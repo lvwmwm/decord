@@ -1,10 +1,10 @@
-// Module ID: 4439
-// Function ID: 4440
+// Module ID: 4435
+// Function ID: 4436
 // Name: ThreadActionUtils
 // Dependencies: [502, 2]
 // Exports: doesThreadMembersActionAffectMe
 
-// Module 4439 (ThreadActionUtils)
+// Module 4435 (ThreadActionUtils)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const size = fn(2);

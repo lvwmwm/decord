@@ -1,29 +1,29 @@
-// Module ID: 4650
-// Function ID: 4651
+// Module ID: 4647
+// Function ID: 4648
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 4616, 2099, 1078, 3, 4651, 1105, 4617, 4630, 4654, 2]
+// Dependencies: [32, 502, 4613, 2095, 1074, 3, 4648, 1101, 4614, 4627, 4651, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 4650 (getInitialNavigationState)
+// Module 4647 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
-import router_utils from "router_utils" /* 1105 */;
-import matchPathCompat from "matchPathCompat" /* 4617 */;
-import RouteUtils from "RouteUtils" /* 4630 */;
-import useChatLayout from "useChatLayout" /* 4651 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4654 */;
+import router_utils from "router_utils" /* 1101 */;
+import matchPathCompat from "matchPathCompat" /* 4614 */;
+import RouteUtils from "RouteUtils" /* 4627 */;
+import useChatLayout from "useChatLayout" /* 4648 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4651 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4616 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4613 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
-function getInitialGuildState(id, channelId, flag, flag2) {
+function getInitialGuildState(guildId, channelId, flag, flag2) {
   flag = flag2;
   if (flag2 === undefined) {
     flag = false;
   }
   if (channelId == null) {
-    channelId = SelectedChannelStore.getChannelId(id);
+    channelId = SelectedChannelStore.getChannelId(guildId);
   }
   const isChatLockedOpen = useChatLayout.getChatLayout().isChatLockedOpen;
   if (flag) {
@@ -35,14 +35,14 @@ function getInitialGuildState(id, channelId, flag, flag2) {
           const obj3 = { name: "tabs", state: null };
           const obj4 = { routes: null, index: 0 };
           const obj5 = { name: "guilds", params: null };
-          const obj6 = { guildId: id, channelId };
+          const obj6 = { guildId, channelId };
           obj5.params = obj6;
           const items1 = [obj5];
           obj4.routes = items1;
           obj3.state = obj4;
           const items2 = [obj3, ];
           const obj7 = { name: "channel", params: null };
-          const obj8 = { guildId: id, channelId };
+          const obj8 = { guildId, channelId };
           obj7.params = obj8;
           items2[1] = obj7;
           const obj9 = { name: "main", state: null };
@@ -60,7 +60,7 @@ function getInitialGuildState(id, channelId, flag, flag2) {
   const obj11 = { index: 0, routes: null };
   const obj12 = { name: "tabs", state: null };
   const obj13 = { routes: null, index: 0 };
-  const items5 = [{ name: "guilds", params: { guildId: id, channelId, drawerOpen: flag } }];
+  const items5 = [{ name: "guilds", params: { guildId, channelId, drawerOpen: flag } }];
   obj13.routes = items5;
   obj12.state = obj13;
   const items6 = [obj12];
@@ -84,9 +84,9 @@ function computeInitialNavigationStateWithoutLogging() {
     const tmp5 = MobileHomeDrawerExperiment.getConfig({ location: "app-start" }).landOnHome && null == matchPathResult;
     if (null == matchPathResult) {
       const obj6 = { path: null };
-      const RouteParam3 = tmp(4630).RouteParam;
-      const tmpResult = tmp(4617);
-      const RouteParam4 = tmp(4630).RouteParam;
+      const RouteParam3 = tmp(4627).RouteParam;
+      const tmpResult = tmp(4614);
+      const RouteParam4 = tmp(4627).RouteParam;
       obj6.path = obj5.CHANNEL(RouteParam3.guildId(), RouteParam4.channelId({ optional: true }), ":messageId?");
       let matchPathResult1 = tmpResult.matchPath(DefaultRouteStore.lastNonVoiceRoute, obj6);
       let flag = false;
@@ -147,7 +147,7 @@ function computeInitialNavigationStateWithoutLogging() {
     return items3;
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ME: metroRequire, Routes: closure_7 } = Constants);
 const logger = new LoggerDefault("getInitialNavigationState");
 const size = fn(2);

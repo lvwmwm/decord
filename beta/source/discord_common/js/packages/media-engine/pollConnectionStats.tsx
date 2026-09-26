@@ -1,10 +1,10 @@
-// Module ID: 4854
-// Function ID: 4855
+// Module ID: 4852
+// Function ID: 4853
 // Name: pollConnectionStats
-// Dependencies: [5, 4845, 4855, 2]
+// Dependencies: [5, 4843, 4853, 2]
 // Exports: default
 
-// Module 4854 (pollConnectionStats)
+// Module 4852 (pollConnectionStats)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ export default function pollConnectionStats(on) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -64,7 +64,7 @@ export default function pollConnectionStats(on) {
               on = items[Symbol.iterator]();
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp5) {
           c5 = 0;

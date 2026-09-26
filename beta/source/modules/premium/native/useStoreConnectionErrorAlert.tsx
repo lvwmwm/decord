@@ -1,58 +1,20 @@
-// Module ID: 7690
-// Function ID: 7691
+// Module ID: 7688
+// Function ID: 7689
 // Name: useStoreConnectionErrorAlert
-// Dependencies: [19, 7516, 558, 568, 504, 5142, 1119, 2]
+// Dependencies: [19, 7514, 504, 5140, 1115, 2]
+// Exports: default
 
-// Module 7690 (useStoreConnectionErrorAlert)
-import util from "util" /* 1119 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+// Module 7688 (useStoreConnectionErrorAlert)
+import util from "util" /* 1115 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7516 */;
+import IAPStore from "IAPStore" /* 7514 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/useStoreConnectionErrorAlert.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = stateFromStores(568).c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [IAPStore];
-    const fn = function s() {
-      return IAPStore.hasConnectionError();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  let obj = stateFromStores(568);
-  stateFromStores = stateFromStores(504).useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const fn2 = function c() {
-      if (stateFromStores) {
-        const obj2 = { title: null, body: null };
-        const intl = util.intl;
-        obj2.title = intl.string(util.t["U+H+kd"]);
-        const intl2 = util.intl;
-        obj2.body = intl2.string(util.t.Q9OYlM);
-        AlertActionCreatorsDefault.show(obj2);
-      }
-    };
-    const items1 = [stateFromStores];
-    cResult[2] = stateFromStores;
-    cResult[3] = fn2;
-    cResult[4] = items1;
-    let tmp9 = items1;
-    let tmp8 = fn2;
-  } else {
-    tmp8 = cResult[3];
-    tmp9 = cResult[4];
-  }
-  const effect = noop.useEffect(tmp8, tmp9);
-}) : (() => {
+export default function useStoreConnectionErrorAlert() {
   const items = [IAPStore];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => IAPStore.hasConnectionError());
   const items1 = [stateFromStores];
@@ -66,4 +28,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       AlertActionCreatorsDefault.show(obj2);
     }
   }, items1);
-});
+};

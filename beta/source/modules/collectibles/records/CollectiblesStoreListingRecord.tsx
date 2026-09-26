@@ -1,12 +1,12 @@
-// Module ID: 7830
-// Function ID: 7831
+// Module ID: 7825
+// Function ID: 7826
 // Name: CollectiblesStoreListingRecord
-// Dependencies: [1391, 7831, 1096, 2]
+// Dependencies: [1387, 7826, 1092, 2]
 
-// Module 7830 (CollectiblesStoreListingRecord)
-import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
-import tinycolorDefault from "tinycolor" /* 7831 */;
-import Record from "Record" /* 1391 */;
+// Module 7825 (CollectiblesStoreListingRecord)
+import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
+import tinycolorDefault from "tinycolor" /* 7826 */;
+import Record from "Record" /* 1387 */;
 
 require = fn;
 const prototype = function CollectiblesStoreListingRecord(styles) {

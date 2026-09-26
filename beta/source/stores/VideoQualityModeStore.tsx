@@ -1,12 +1,12 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14297
+// Function ID: 14298
 // Name: VideoQualityModeStore
-// Dependencies: [1078, 504, 577, 2]
+// Dependencies: [1074, 504, 573, 2]
 
-// Module 14307 (VideoQualityModeStore)
+// Module 14297 (VideoQualityModeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import Constants from "Constants" /* 1078 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 let mode = Constants.VideoQualityMode.AUTO;

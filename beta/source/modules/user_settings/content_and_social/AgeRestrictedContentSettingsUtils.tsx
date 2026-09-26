@@ -1,80 +1,22 @@
-// Module ID: 9440
-// Function ID: 9441
+// Module ID: 9442
+// Function ID: 9443
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1376, 558, 568, 2023, 5002, 9441, 5674, 5675, 2]
-// Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults
+// Dependencies: [1372, 2019, 5000, 9443, 5672, 5673, 2]
+// Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 9440 (AgeRestrictedContentSettingsUtils)
-import c from "c" /* 568 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5002 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5675 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 9441 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 9442 (AgeRestrictedContentSettingsUtils)
+import UserSettings from "UserSettings" /* 2019 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5000 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5672 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5673 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 9443 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-fn(558);
-const ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(5);
-  const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
-  const setting = ViewNsfwCommands.useSetting();
-  const isAgeVerified = AgeVerificationUtils.useIsAgeVerified();
-  const nSFWAllowed = useNSFWAllowed.useNSFWAllowed();
-  const isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE);
-  if (cResult[0] === isFeatureAgeGated) {
-    if (cResult[1] === setting) {
-      if (cResult[2] === isAgeVerified) {
-        if (cResult[3] === nSFWAllowed) {
-          let tmp6 = cResult[4];
-        }
-        return tmp6;
-      }
-    }
-  }
-  let tmp7 = isFeatureAgeGated;
-  if (isFeatureAgeGated) {
-    tmp7 = !isAgeVerified;
-  }
-  let tmp8 = !tmp7;
-  if (!tmp7) {
-    let tmp9 = false !== nSFWAllowed;
-    if (tmp9) {
-      let flag2 = setting;
-      if (setting == null) {
-        flag2 = false;
-      }
-      tmp9 = flag2;
-    }
-    tmp8 = tmp9;
-  }
-  cResult[0] = isFeatureAgeGated;
-  cResult[1] = setting;
-  cResult[2] = isAgeVerified;
-  cResult[3] = nSFWAllowed;
-  cResult[4] = tmp8;
-  tmp6 = tmp8;
-}) : (() => {
-  const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
-  let flag = ViewNsfwCommands.useSetting();
-  const isAgeVerified = AgeVerificationUtils.useIsAgeVerified();
-  const nSFWAllowed = useNSFWAllowed.useNSFWAllowed();
-  const tmp3 = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE) && !isAgeVerified;
-  let tmp4 = !tmp3;
-  if (!tmp3) {
-    let tmp5 = false !== nSFWAllowed;
-    if (tmp5) {
-      if (flag == null) {
-        flag = false;
-      }
-      tmp5 = flag;
-    }
-    tmp4 = tmp5;
-  }
-  return tmp4;
-});
-function resolveNsfwTogglesWithDefaults(arg0, arg1, arg2, arg3) {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/user_settings/content_and_social/AgeRestrictedContentSettingsUtils.tsx");
+
+export const resolveNsfwTogglesWithDefaults = function resolveNsfwTogglesWithDefaults(arg0, arg1, arg2, arg3) {
   let tmp = arg1;
   if (arg1) {
     tmp = !arg3;
@@ -92,52 +34,27 @@ function resolveNsfwTogglesWithDefaults(arg0, arg1, arg2, arg3) {
     tmp3 = tmp5;
   }
   return tmp3;
-}
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/content_and_social/AgeRestrictedContentSettingsUtils.tsx");
-
-export { resolveNsfwTogglesWithDefaults };
-export const useViewNsfwCommandsOrDefault = tmp2;
-export const useViewNsfwGuildsOrDefault = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(5);
-  const ViewNsfwGuilds = UserSettings.ViewNsfwGuilds;
-  const setting = ViewNsfwGuilds.useSetting();
+};
+export const useViewNsfwCommandsOrDefault = function useViewNsfwCommandsOrDefault() {
+  const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
+  let flag = ViewNsfwCommands.useSetting();
   const isAgeVerified = AgeVerificationUtils.useIsAgeVerified();
   const nSFWAllowed = useNSFWAllowed.useNSFWAllowed();
-  const isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE);
-  if (cResult[0] === isFeatureAgeGated) {
-    if (cResult[1] === setting) {
-      if (cResult[2] === isAgeVerified) {
-        if (cResult[3] === nSFWAllowed) {
-          let tmp6 = cResult[4];
-        }
-        return tmp6;
+  const tmp3 = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE) && !isAgeVerified;
+  let tmp4 = !tmp3;
+  if (!tmp3) {
+    let tmp5 = false !== nSFWAllowed;
+    if (tmp5) {
+      if (flag == null) {
+        flag = false;
       }
+      tmp5 = flag;
     }
+    tmp4 = tmp5;
   }
-  let tmp7 = isFeatureAgeGated;
-  if (isFeatureAgeGated) {
-    tmp7 = !isAgeVerified;
-  }
-  let tmp8 = !tmp7;
-  if (!tmp7) {
-    let tmp9 = false !== nSFWAllowed;
-    if (tmp9) {
-      let flag2 = setting;
-      if (setting == null) {
-        flag2 = false;
-      }
-      tmp9 = flag2;
-    }
-    tmp8 = tmp9;
-  }
-  cResult[0] = isFeatureAgeGated;
-  cResult[1] = setting;
-  cResult[2] = isAgeVerified;
-  cResult[3] = nSFWAllowed;
-  cResult[4] = tmp8;
-  tmp6 = tmp8;
-}) : (() => {
+  return tmp4;
+};
+export const useViewNsfwGuildsOrDefault = function useViewNsfwGuildsOrDefault() {
   const ViewNsfwGuilds = UserSettings.ViewNsfwGuilds;
   let flag = ViewNsfwGuilds.useSetting();
   const isAgeVerified = AgeVerificationUtils.useIsAgeVerified();
@@ -155,7 +72,7 @@ export const useViewNsfwGuildsOrDefault = ReactCompilerGating.isReactCompilerEna
     tmp4 = tmp5;
   }
   return tmp4;
-});
+};
 export const getViewNsfwCommandsOrDefault = function getViewNsfwCommandsOrDefault() {
   const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
   let flag = ViewNsfwCommands.getSetting();

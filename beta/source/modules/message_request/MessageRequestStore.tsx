@@ -1,11 +1,11 @@
-// Module ID: 7498
-// Function ID: 7499
+// Module ID: 7496
+// Function ID: 7497
 // Name: MessageRequestStore
-// Dependencies: [2045, 1077, 2]
+// Dependencies: [2041, 1073, 2]
 
-// Module 7498 (MessageRequestStore)
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1077 */;
+// Module 7496 (MessageRequestStore)
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
 
 function processChannel(isMessageRequest) {
   let tmp = isMessageRequest.isMessageRequest && !isMessageRequest.isSpam;

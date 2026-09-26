@@ -1,124 +1,28 @@
-// Module ID: 16481
-// Function ID: 16482
+// Module ID: 16474
+// Function ID: 16475
 // Name: useChannelListSpecs
-// Dependencies: [19, 12249, 558, 568, 16482, 1482, 16369, 5227, 1616, 11329, 2]
+// Dependencies: [19, 10413, 16475, 1478, 16361, 5225, 1612, 11288, 2]
+// Exports: default
 
-// Module 16481 (useChannelListSpecs)
-import c from "c" /* 568 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11329 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 16369 */;
-import RedesignGuildHeader from "RedesignGuildHeader" /* 16482 */;
+// Module 16474 (useChannelListSpecs)
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11288 */;
 import noop from "module_19" /* 19 */;
 
-const useFontScale = tmp(5227);
-require = fn;
-const RedesignChannelListConstants = fn(12249);
+const require = fn;
+const RedesignChannelListConstants = fn(10413);
 ({ STICKY_BANNER_ASPECT_RATIO: closure_4, BANNER_MAX_HEIGHT_PERCENTAGE: hasOwnProperty } = RedesignChannelListConstants);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/hooks/useChannelListSpecs.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((banner) => {
-  const cResult = c.c(19);
-  const redesignGuildHeaderHeight = RedesignGuildHeader.useRedesignGuildHeaderHeight(banner);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { ignoreKeyboard: true };
-    cResult[0] = obj3;
-    let first = obj3;
-  } else {
-    first = cResult[0];
-  }
-  const height = useWindowDimensionsDefault(first).height;
-  const tmp7 = useChannelListWidthDefault();
-  const fontScale = useFontScale.useFontScale();
-  let num2 = 0;
-  if (tmp9) {
-    const _Math = Math;
-    num2 = Math.min(tmp7 / React4, height * hasOwnProperty);
-  }
-  const diff = height - useSafeAreaInsetsDefault().top;
-  if (cResult[1] !== num2) {
-    const tmp14 = tmp6(11329)(num2);
-    cResult[1] = num2;
-    cResult[2] = tmp14;
-    let tmp13 = tmp14;
-  } else {
-    tmp13 = cResult[2];
-  }
-  if (cResult[3] !== tmp7) {
-    const tmp16 = tmp6(11329)(tmp7);
-    cResult[3] = tmp7;
-    cResult[4] = tmp16;
-    let tmp15 = tmp16;
-  } else {
-    tmp15 = cResult[4];
-  }
-  if (cResult[5] !== redesignGuildHeaderHeight) {
-    const tmp18 = tmp6(11329)(redesignGuildHeaderHeight);
-    cResult[5] = redesignGuildHeaderHeight;
-    cResult[6] = tmp18;
-    let tmp17 = tmp18;
-  } else {
-    tmp17 = cResult[6];
-  }
-  const sum = num2 + redesignGuildHeaderHeight;
-  if (cResult[7] !== sum) {
-    const tmp21 = tmp6(11329)(sum);
-    cResult[7] = sum;
-    cResult[8] = tmp21;
-    let tmp20 = tmp21;
-  } else {
-    tmp20 = cResult[8];
-  }
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = tmp6(11329)(24);
-    cResult[9] = tmp23;
-    let tmp22 = tmp23;
-  } else {
-    tmp22 = cResult[9];
-  }
-  if (cResult[10] !== diff) {
-    const tmp25 = tmp6(11329)(diff);
-    cResult[10] = diff;
-    cResult[11] = tmp25;
-    let tmp24 = tmp25;
-  } else {
-    tmp24 = cResult[11];
-  }
-  if (cResult[12] === fontScale) {
-    if (cResult[13] === tmp13) {
-      if (cResult[14] === tmp15) {
-        if (cResult[15] === tmp17) {
-          if (cResult[16] === tmp20) {
-            if (cResult[17] === tmp24) {
-              let tmp26 = cResult[18];
-            }
-            return tmp26;
-          }
-        }
-      }
-    }
-  }
-  const obj4 = { bannerHeight: tmp13, bannerWidth: tmp15, headerHeight: tmp17, fontScale, listTop: tmp20, listBottom: 0, listPaddingBottom: tmp22, listViewportHeight: tmp24 };
-  cResult[12] = fontScale;
-  cResult[13] = tmp13;
-  cResult[14] = tmp15;
-  cResult[15] = tmp17;
-  cResult[16] = tmp20;
-  cResult[17] = tmp24;
-  cResult[18] = obj4;
-  tmp26 = obj4;
-}) : ((banner) => {
-  redesignGuildHeaderHeight = redesignGuildHeaderHeight(16482).useRedesignGuildHeaderHeight(banner);
-  height = height(1482)({ ignoreKeyboard: true }).height;
-  const tmp2 = height(16369)();
+export default function useChannelListSpecs(banner) {
+  redesignGuildHeaderHeight = redesignGuildHeaderHeight(16475).useRedesignGuildHeaderHeight(banner);
+  height = height(1478)({ ignoreKeyboard: true }).height;
+  const tmp2 = height(16361)();
   dependencyMap = tmp2;
-  const obj = redesignGuildHeaderHeight(16482);
-  const fontScale = redesignGuildHeaderHeight(5227).useFontScale();
+  const obj = redesignGuildHeaderHeight(16475);
+  const fontScale = redesignGuildHeaderHeight(5225).useFontScale();
   closure_4 = tmp4;
-  const top = height(1616)().top;
+  const top = height(1612)().top;
   const items = [null != banner.banner, tmp2, height, redesignGuildHeaderHeight, top, fontScale];
   return fontScale.useMemo(() => {
     let num = 0;
@@ -128,4 +32,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((banner) => {
     }
     return { bannerHeight: roundToNearestPixelDefault(num), bannerWidth: roundToNearestPixelDefault(closure_2), headerHeight: roundToNearestPixelDefault(redesignGuildHeaderHeight), fontScale, listTop: roundToNearestPixelDefault(num + redesignGuildHeaderHeight), listBottom: 0, listPaddingBottom: roundToNearestPixelDefault(24), listViewportHeight: roundToNearestPixelDefault(height - top) };
   }, items);
-});
+};

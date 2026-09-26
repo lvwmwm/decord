@@ -1,40 +1,23 @@
-// Module ID: 10058
-// Function ID: 10059
+// Module ID: 10080
+// Function ID: 10081
 // Name: useGameConsoleAccounts
-// Dependencies: [5532, 1078, 558, 568, 1374, 504, 2]
+// Dependencies: [5530, 1074, 504, 1370, 2]
+// Exports: default
 
-// Module 10058 (useGameConsoleAccounts)
+// Module 10080 (useGameConsoleAccounts)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
 
 require = fn;
-const PlatformTypes = fn(1078).PlatformTypes;
-const ReactCompilerGating = fn(558);
+const PlatformTypes = fn(1074).PlatformTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [ConnectedAccountsStore];
-    const fn = function o() {
-      const items = [ConnectedAccountsStore.getAccount(null, constants.XBOX), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION_STAGING)];
-      return items.filter(GlobalUtils.isNotNullish);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStoresArray(tmp4, tmp5);
-}) : (() => {
+export default function useGameConsoleAccounts() {
   let items = [ConnectedAccountsStore];
   return initialize.useStateFromStoresArray(items, () => {
     const items = [ConnectedAccountsStore.getAccount(null, constants.XBOX), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION_STAGING)];
     return items.filter(GlobalUtils.isNotNullish);
   });
-});
+};

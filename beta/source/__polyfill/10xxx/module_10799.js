@@ -1,9 +1,9 @@
 // Module ID: 10799
 // Function ID: 10800
-// Dependencies: [41, 42, 93, 95, 98, 10783]
+// Dependencies: [41, 42, 93, 95, 98, 10746]
 
 // Module 10799
-import Filter from "Filter" /* 10783 */;
+import _mod10746 from "module_10746" /* 10746 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -30,61 +30,49 @@ function _isNativeReflectConstruct() {
   }
 }
 let _classCallCheck = _classCallCheck_mod;
-class ENUnlikelyFormatFilter {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    if (!__esModule) {
+      const obj = { default: __esModule };
+      let tmp = obj;
+    } else {
+      tmp = __esModule;
+    }
+    return tmp;
+  };
+}
+class JPMergeDateRangeRefiner {
   constructor() {
     self = this;
-    tmp = closure_0(this, ENUnlikelyFormatFilter);
+    tmp = closure_0(this, JPMergeDateRangeRefiner);
     tmp2 = c2;
-    obj = c2(ENUnlikelyFormatFilter);
+    obj = c2(JPMergeDateRangeRefiner);
     tmp3 = closure_1;
     if (closure_3()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = ENUnlikelyFormatFilter;
-_inherits(ENUnlikelyFormatFilter, Filter.Filter);
+_classCallCheck = JPMergeDateRangeRefiner;
+_inherits(JPMergeDateRangeRefiner, fn(_mod10746).default);
 const entry = {
-  key: "isValid",
-  value: function isValid(text, text2) {
-    closure_0 = text2;
-    const str2 = text2.text.trim();
-    if (str2 === str3.trim()) {
-      return true;
-    } else {
-      if ("may" === str2.toLowerCase()) {
-        const str5 = text.text.substring(0, text2.index);
-        if (!str6.match(/\b(in)$/i)) {
-          text.debug(() => {
-            console.log("Removing unlikely result: " + closure_0);
-          });
-          return false;
-        }
-        str6 = text.text.substring(0, text2.index).trim();
-      }
-      const formatted = str2.toLowerCase();
-      const endsWithResult = formatted.endsWith("the second");
-      let flag2 = !endsWithResult;
-      if (endsWithResult) {
-        flag2 = false;
-        if (str9.trim().length > 0) {
-          text.debug(() => {
-            console.log("Removing unlikely result: " + closure_0);
-          });
-          flag2 = false;
-        }
-        str9 = text.text.substring(text2.index + text2.text.length);
-      }
-      return flag2;
-    }
-    str3 = text.text;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(から|－|ー|-|～|~)\s*$/i;
   }
 };
 const items = [entry];
 
-export default _createClass(ENUnlikelyFormatFilter, items);
+export default _createClass(JPMergeDateRangeRefiner, items);

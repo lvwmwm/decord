@@ -1,86 +1,28 @@
-// Module ID: 16743
-// Function ID: 16744
+// Module ID: 16733
+// Function ID: 16734
 // Name: YouBarICYMIButton
-// Dependencies: [19, 15364, 21, 4790, 580, 558, 568, 16744, 13343, 4649, 1119, 16745, 2]
+// Dependencies: [19, 15368, 21, 4788, 576, 16734, 16735, 13333, 4646, 1115, 2]
 
-// Module 16743 (YouBarICYMIButton)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import FlashIcon from "FlashIcon" /* 13343 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16744 */;
-import YouBarButtonDefault from "YouBarButton" /* 16745 */;
+// Module 16733 (YouBarICYMIButton)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import FlashIcon from "FlashIcon" /* 13333 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16734 */;
+import YouBarButtonDefault from "YouBarButton" /* 16735 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const YOU_BAR_BUTTON_ICON_SIZE = fn(15364).YOU_BAR_BUTTON_ICON_SIZE;
+const YOU_BAR_BUTTON_ICON_SIZE = fn(15368).YOU_BAR_BUTTON_ICON_SIZE;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, badge: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
 let closure_4 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
 const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarICYMIButton.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((hasNameplate) => {
-  const cResult = c.c(10);
-  hasNameplate = hasNameplate.hasNameplate;
-  const tmp4 = closure_4();
-  const showDot = useICYMITabBadgeDefault().showDot;
-  let str;
-  if (hasNameplate) {
-    str = "white";
-  }
-  if (cResult[0] === tmp4.icon) {
-    if (cResult[1] === str) {
-      let tmp6 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function v() {
-        const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
-        if (null != rootNavigationRef) {
-          const obj2 = { screen: "icymi-screen", params: { inNestedNavigator: true } };
-          rootNavigationRef.navigate("icymi", obj2);
-        }
-      };
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t["jnXV/V"]);
-      cResult[3] = fn;
-      cResult[4] = stringResult;
-      let tmp10 = stringResult;
-      let tmp9 = fn;
-    } else {
-      tmp9 = cResult[3];
-      tmp10 = cResult[4];
-    }
-    if (cResult[5] === showDot) {
-      if (cResult[6] === hasNameplate) {
-        if (cResult[7] === tmp4.badge) {
-          if (cResult[8] === tmp6) {
-            let tmp12 = cResult[9];
-          }
-          return tmp12;
-        }
-      }
-    }
-    let obj2 = { hasNameplate, icon: tmp6, hasBadge: showDot, badgeStyle: tmp4.badge, onPress: tmp9, accessibilityLabel: tmp10 };
-    const tmp14 = jsx(YouBarButtonDefault, { hasNameplate, icon: tmp6, hasBadge: showDot, badgeStyle: tmp4.badge, onPress: tmp9, accessibilityLabel: tmp10 });
-    cResult[5] = showDot;
-    cResult[6] = hasNameplate;
-    cResult[7] = tmp4.badge;
-    cResult[8] = tmp6;
-    cResult[9] = tmp14;
-    tmp12 = tmp14;
-  }
-  const tmp7 = jsx(FlashIcon.FlashIcon, { size: "custom", style: tmp4.icon, color: str });
-  cResult[0] = tmp4.icon;
-  cResult[1] = str;
-  cResult[2] = tmp7;
-  tmp6 = tmp7;
-}) : ((hasNameplate) => {
+export default noop.memo(function YouBarICYMIButton(hasNameplate) {
   hasNameplate = hasNameplate.hasNameplate;
   const tmp = closure_4();
   const obj = { hasNameplate, icon: null, hasBadge: null, badgeStyle: null, onPress: null, accessibilityLabel: null };
@@ -100,7 +42,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((hasNam
       rootNavigationRef.navigate("icymi", obj2);
     }
   };
-  const intl = tmp5(1119).intl;
+  const intl = tmp5(1115).intl;
   obj.accessibilityLabel = intl.string(util.t["jnXV/V"]);
   return jsx(YouBarButtonDefault, { hasNameplate, icon: null, hasBadge: null, badgeStyle: null, onPress: null, accessibilityLabel: null });
-}));
+});

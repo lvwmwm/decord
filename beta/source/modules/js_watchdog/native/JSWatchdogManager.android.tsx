@@ -1,18 +1,18 @@
-// Module ID: 17831
-// Function ID: 17832
+// Module ID: 17822
+// Function ID: 17823
 // Name: JSWatchdogManager
-// Dependencies: [5, 1078, 3, 1095, 7397, 17832, 1235, 1245, 7754, 7750, 7740, 2]
+// Dependencies: [5, 1074, 3, 1091, 7395, 17823, 1231, 1241, 7749, 7745, 7735, 2]
 
-// Module 17831 (JSWatchdogManager)
+// Module 17822 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7754 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7749 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AppStates: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
 const logger = new LoggerDefault("JSWatchdogManager");
 const HALF_SECOND = DurationsDefault.Millis.HALF_SECOND;
@@ -69,7 +69,7 @@ prototype["ping"] = function ping() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -209,7 +209,7 @@ prototype["startWatchdog"] = function startWatchdog() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -227,7 +227,7 @@ prototype["startWatchdog"] = function startWatchdog() {
             closure_128_0 = undefined;
             closure_128_1 = undefined;
             if (null == self._timeoutId) {
-              if (null != tmp2(17832)) {
+              if (null != tmp2(17823)) {
                 dependencyMap = 1;
                 c3 = 1;
                 const obj4 = { value: self.getCurrentSessionId(), done: false };
@@ -247,7 +247,7 @@ prototype["startWatchdog"] = function startWatchdog() {
               closure_129_0._enabled = true;
               if (closure_129_0._pingCompleted) {
                 let checkForStallReportResult;
-                const obj = tmp2(17832);
+                const obj = tmp2(17823);
                 if (obj != null) {
                   checkForStallReportResult = obj.checkForStallReport();
                 }
@@ -305,7 +305,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -326,11 +326,11 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
                 const uuid = closure_129_0._cachedSession.uuid;
                 c3 = 3;
               }
-              obj2 = tmp2(7750);
+              obj2 = tmp2(7745);
             }
             dependencyMap = 1;
             c3 = 1;
-            const obj6 = { value: tmp2(7740).getSession(), done: false };
+            const obj6 = { value: tmp2(7735).getSession(), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {

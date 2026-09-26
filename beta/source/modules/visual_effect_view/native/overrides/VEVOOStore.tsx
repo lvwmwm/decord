@@ -1,24 +1,23 @@
-// Module ID: 5209
-// Function ID: 5210
+// Module ID: 5207
+// Function ID: 5208
 // Name: VEVOOStore
-// Dependencies: [562, 558, 1252, 2]
+// Dependencies: [560, 1248, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 5209 (VEVOOStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
-import module_562 from "module_562" /* 562 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 5207 (VEVOOStore)
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let closure_2 = {};
-const state = module_562.create(() => closure_2);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
+const state = module_560.create(() => closure_2);
+const result = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
 
-export const useVisualEffectViewOverrides = () => state();
+export const useVisualEffectViewOverrides = function useVisualEffectViewOverrides() {
+  return state();
+};
 export const getVisualEffectViewOverrides = function getVisualEffectViewOverrides() {
   return state.getState();
 };

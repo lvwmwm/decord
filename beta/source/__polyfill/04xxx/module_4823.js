@@ -1,32 +1,28 @@
 // Module ID: 4823
 // Function ID: 4824
-// Dependencies: [4824, 4826, 588]
+// Dependencies: [552]
 
 // Module 4823
-import baseIteratee from "baseIteratee" /* 588 */;
-import _mod4824 from "module_4824" /* 4824 */;
-import baseFindIndex from "baseFindIndex" /* 4826 */;
+import _mod552 from "module_552" /* 552 */;
 
 
-export default function findLastIndex(arg0, arg1, arg2) {
-  let num = 0;
-  if (null != arg0) {
-    num = arg0.length;
-  }
-  if (num) {
-    const diff = num - 1;
-    if (undefined === arg2) {
-      return baseFindIndex(arg0, baseIteratee(arg1, 3), diff, true);
-    } else {
-      let sum = _mod4824(arg2);
-      if (arg2 < 0) {
-        sum = num + sum;
-        let tmp7 = max(sum, 0);
-      } else {
-        tmp7 = min(sum, num - 1);
+export default function toFinite(arg0) {
+  if (arg0) {
+    const tmp3 = _mod552(arg0);
+    if (tmp3 !== Infinity) {
+      if (tmp3 !== -Infinity) {
       }
     }
+    let num6 = 1;
+    if (tmp3 < 0) {
+      num6 = -1;
+    }
+    const num4 = 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 * num6;
   } else {
-    return -1;
+    let num = 0;
+    if (0 === arg0) {
+      num = arg0;
+    }
+    return num;
   }
 };

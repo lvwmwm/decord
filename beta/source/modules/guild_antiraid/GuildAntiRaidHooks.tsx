@@ -1,21 +1,21 @@
-// Module ID: 12998
-// Function ID: 12999
+// Module ID: 10393
+// Function ID: 10394
 // Name: GuildAntiRaidHooks
-// Dependencies: [1224, 2067, 4431, 4612, 1376, 11699, 8311, 1078, 558, 568, 565, 11, 8310, 1090, 4436, 12999, 2]
-// Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar
+// Dependencies: [1220, 2063, 4427, 4609, 1372, 10376, 8306, 1074, 563, 11, 8305, 1086, 4432, 10394, 2]
+// Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 12998 (GuildAntiRaidHooks)
+// Module 10393 (GuildAntiRaidHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8310 */;
-import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 12999 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import UserStore from "UserStore" /* 1376 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11699 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8305 */;
+import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 10394 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import UserStore from "UserStore" /* 1372 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10376 */;
 
 const require = globalThis.__r;
 
@@ -36,7 +36,7 @@ function getFirstGuildIncidentId(guildId) {
         let tmp19 = require;
         let obj7 = GuildAntiRaidUtils;
         if (obj7.hasDetectedActivity(tmp18)) {
-          let tmp19Result = tmp19(8310);
+          let tmp19Result = tmp19(8305);
           if (!tmp19Result.isUnderLockdown(tmp18)) {
             let obj4 = BigFlagUtilsAll;
             let obj5 = PermissionUtilsAll;
@@ -48,7 +48,7 @@ function getFirstGuildIncidentId(guildId) {
             }
           }
         } else {
-          let tmp19Result2 = tmp19(8310);
+          let tmp19Result2 = tmp19(8305);
         }
       }
     }
@@ -56,113 +56,21 @@ function getFirstGuildIncidentId(guildId) {
   }
   return null;
 }
-let closure_10 = fn(8311).IncidentAlertModeratorPermissions;
-const Constants = fn(1078);
+let closure_10 = fn(8306).IncidentAlertModeratorPermissions;
+const Constants = fn(1074);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_11, GuildFeatures: closure_12 } = Constants);
-fn(558);
-let ReactCompilerGating = fn(558);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = stateFromStores1(568).c(11);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function l() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const obj = stateFromStores1(568);
-  const stateFromStores = stateFromStores1(565).useStateFromStores(tmp6, tmp7);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildIncidentsStore];
-    class S {
-      constructor() {
-        return closure_1_9.getIncidentsByGuild();
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = S;
-    let tmp11 = S;
-    let tmp10 = items1;
-  } else {
-    tmp10 = cResult[2];
-    tmp11 = cResult[3];
-  }
-  const tmp2Result = stateFromStores1(565);
-  stateFromStores1 = stateFromStores1(565).useStateFromStores(tmp10, tmp11);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [GuildStore];
-    class S {
-      constructor() {
-        return closure_1_9.getIncidentsByGuild();
-      }
-    }
-    cResult[4] = items2;
-    let tmp14 = items2;
-  } else {
-    tmp14 = cResult[4];
-  }
-  if (cResult[5] !== stateFromStores1) {
-    const fn2 = function b() {
-      const keys = SnowflakeUtilsDefault.keys(stateFromStores1);
-      return keys.map((item) => guild.getGuild(item));
-    };
-    cResult[5] = stateFromStores1;
-    class S {
-      constructor() {
-        return closure_1_9.getIncidentsByGuild();
-      }
-    }
-    cResult[6] = fn2;
-    let tmp16 = fn2;
-  } else {
-    tmp16 = cResult[6];
-  }
-  const tmp2Result3 = stateFromStores1(565);
-  const stateFromStoresArray = stateFromStores1(565).useStateFromStoresArray(tmp14, tmp16);
-  if (cResult[7] === stateFromStores) {
-    if (cResult[8] === stateFromStoresArray) {
-      if (cResult[9] === stateFromStores1) {
-        const _Symbol = Symbol;
-        class S {
-          constructor() {
-            return closure_1_9.getIncidentsByGuild();
-          }
-        }
-        let tmp23 = null;
-        if (cResult[10] !== Symbol.for("react.early_return_sentinel")) {
-          tmp23 = tmp18;
-        }
-        return tmp23;
-      }
-    }
-  }
-  Symbol.for("react.early_return_sentinel");
-  const iter = stateFromStoresArray[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    if (null != nextResult) {
-      class S {
-        constructor() {
-          return closure_1_9.getIncidentsByGuild();
-        }
-      }
-    }
-    continue;
-  }
-}) : (() => {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
+
+export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
   const items = [UserStore];
-  const stateFromStores = stateFromStores1(565).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = stateFromStores1(565);
+  const stateFromStores = stateFromStores1(563).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = stateFromStores1(563);
   const items1 = [GuildIncidentsStore];
-  stateFromStores1 = stateFromStores1(565).useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
-  const obj2 = stateFromStores1(565);
+  stateFromStores1 = stateFromStores1(563).useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
+  const obj2 = stateFromStores1(563);
   const items2 = [GuildStore];
-  const stateFromStoresArray = stateFromStores1(565).useStateFromStoresArray(items2, () => {
+  const stateFromStoresArray = stateFromStores1(563).useStateFromStoresArray(items2, () => {
     const keys = SnowflakeUtilsDefault.keys(stateFromStores1);
     return keys.map((item) => guild.getGuild(item));
   });
@@ -175,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp16 = tmp15;
       if (null != tmp15) {
         let tmp18 = stateFromStores1;
-        let obj8 = stateFromStores1(8310);
+        let obj8 = stateFromStores1(8305);
         if (obj8.hasDetectedActivity(tmp16)) {
           let obj5 = BigFlagUtilsAll;
           let obj6 = PermissionUtilsAll;
@@ -186,101 +94,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return nextResult.id;
           }
         } else {
-          let tmp18Result = tmp18(8310);
+          let tmp18Result = tmp18(8305);
         }
       }
     }
     continue;
   }
   return null;
-});
-ReactCompilerGating = fn(558);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(12);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore, PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      guild = GuildStore.getGuild(closure_0);
-      if (null == guild) {
-        return false;
-      } else {
-        const guildPermissions = PermissionStore.getGuildPermissions(guild);
-        let hasAnyResult = null != guildPermissions;
-        if (hasAnyResult) {
-          hasAnyResult = BigFlagUtilsAll.hasAny(guildPermissions, closure_10);
-        }
-        return hasAnyResult;
-      }
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  let obj = require("c");
-  const stateFromStores = require("useStateFromStores").useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildIncidentsStore];
-    cResult[3] = items1;
-    let tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== arg0) {
-    const fn2 = function v() {
-      let guildIncident = null;
-      if (null != closure_0) {
-        guildIncident = GuildIncidentsStore.getGuildIncident(tmp);
-      }
-      return guildIncident;
-    };
-    cResult[4] = arg0;
-    cResult[5] = fn2;
-    let tmp11 = fn2;
-  } else {
-    tmp11 = cResult[5];
-  }
-  const tmpResult = require("useStateFromStores");
-  const stateFromStores1 = require("useStateFromStores").useStateFromStores(tmp9, tmp11);
-  if (cResult[6] !== stateFromStores1) {
-    let isUnderLockdownResult = null != stateFromStores1;
-    if (isUnderLockdownResult) {
-      isUnderLockdownResult = tmp(8310).isUnderLockdown(stateFromStores1);
-      const tmpResult4 = tmp(8310);
-    }
-    cResult[6] = stateFromStores1;
-    cResult[7] = isUnderLockdownResult;
-    let tmp13 = isUnderLockdownResult;
-  } else {
-    tmp13 = cResult[7];
-  }
-  if (cResult[8] === stateFromStores) {
-    if (cResult[9] === stateFromStores1) {
-      if (cResult[10] === tmp13) {
-        let tmp16 = cResult[11];
-      }
-      return tmp16;
-    }
-  }
-  const obj2 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: tmp13 };
-  cResult[8] = stateFromStores;
-  cResult[9] = stateFromStores1;
-  cResult[10] = tmp13;
-  cResult[11] = obj2;
-  tmp16 = obj2;
-}) : ((arg0) => {
-  _require = arg0;
+};
+export const useGuildIncidentsState = function useGuildIncidentsState(id) {
+  _require = id;
   const items = [GuildStore, PermissionStore];
   const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => {
-    guild = GuildStore.getGuild(closure_0);
+    const guild = GuildStore.getGuild(closure_0);
     if (null == guild) {
       return false;
     } else {
@@ -305,180 +131,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: null };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = tmp(8310).isUnderLockdown(stateFromStores1);
-    const tmpResult = tmp(8310);
+    isUnderLockdownResult = tmp(8305).isUnderLockdown(stateFromStores1);
+    const tmpResult = tmp(8305);
   }
   obj3.isUnderLockdown = isUnderLockdownResult;
   return obj3;
-});
-ReactCompilerGating = fn(558);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
-  const cResult = id(568).c(13);
-  id = undefined;
-  if (id != null) {
-    id = id.id;
-  }
-  if (id == null) {
-    id = closure_11;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildIncidentsStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id) {
-    const fn = function l() {
-      return GuildIncidentsStore.getGuildIncident(id);
-    };
-    const items1 = [id];
-    cResult[1] = id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp8 = items1;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const obj = id(568);
-  const stateFromStores = id(565).useStateFromStores(first, tmp7, tmp8);
-  if (null == id) {
-    const _Symbol = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { dmsDisabled: false, invitesDisabled: false };
-      cResult[4] = obj2;
-      let tmp37 = obj2;
-    } else {
-      tmp37 = cResult[4];
-    }
-    return tmp37;
-  } else {
-    let features1;
-    if (id != null) {
-      features1 = id.features;
-    }
-    if (cResult[5] === features1) {
-      if (cResult[6] === stateFromStores) {
-        let tmp11 = cResult[7];
-      }
-      if (cResult[8] !== stateFromStores) {
-        let dmsDisabledUntil;
-        if (stateFromStores != null) {
-          dmsDisabledUntil = stateFromStores.dmsDisabledUntil;
-        }
-        let tmp27 = null != dmsDisabledUntil;
-        if (tmp27) {
-          const _Date3 = Date;
-          const date = new Date(stateFromStores.dmsDisabledUntil);
-          const _Date4 = Date;
-          const date1 = new Date();
-          tmp27 = date > date1;
-        }
-        cResult[8] = stateFromStores;
-        cResult[9] = tmp27;
-        let tmp25 = tmp27;
-      } else {
-        tmp25 = cResult[9];
-      }
-      if (cResult[10] === tmp25) {
-        if (cResult[11] === tmp11) {
-          let tmp36 = cResult[12];
-        }
-        return tmp36;
-      }
-      const obj3 = { invitesDisabled: tmp11, dmsDisabled: tmp25 };
-      cResult[10] = tmp25;
-      cResult[11] = tmp11;
-      cResult[12] = obj3;
-      tmp36 = obj3;
-    }
-    let hasItem;
-    if (id != null) {
-      const features = id.features;
-      hasItem = features.has(constants.INVITES_DISABLED);
-    }
-    if (!hasItem) {
-      let invitesDisabledUntil;
-      if (stateFromStores != null) {
-        invitesDisabledUntil = stateFromStores.invitesDisabledUntil;
-      }
-      let tmp15 = null != invitesDisabledUntil;
-      if (tmp15) {
-        const _Date = Date;
-        const date2 = new Date(stateFromStores.invitesDisabledUntil);
-        const _Date2 = Date;
-        const date3 = new Date();
-        tmp15 = date2 > date3;
-      }
-      hasItem = tmp15;
-    }
-    let features2;
-    if (id != null) {
-      features2 = id.features;
-    }
-    cResult[5] = features2;
-    cResult[6] = stateFromStores;
-    cResult[7] = hasItem;
-    tmp11 = hasItem;
-  }
-}) : ((id) => {
-  id = undefined;
-  if (id != null) {
-    id = id.id;
-  }
-  if (id == null) {
-    id = closure_11;
-  }
-  const items = [GuildIncidentsStore];
-  const items1 = [id];
-  const stateFromStores = id(565).useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(id), items1);
-  if (null == id) {
-    let obj2 = { dmsDisabled: false, invitesDisabled: false };
-  } else {
-    let hasItem;
-    if (id != null) {
-      const features = id.features;
-      hasItem = features.has(constants.INVITES_DISABLED);
-    }
-    if (!hasItem) {
-      let invitesDisabledUntil;
-      if (stateFromStores != null) {
-        invitesDisabledUntil = stateFromStores.invitesDisabledUntil;
-      }
-      let tmp6 = null != invitesDisabledUntil;
-      if (tmp6) {
-        const _Date = Date;
-        const date = new Date(stateFromStores.invitesDisabledUntil);
-        const _Date2 = Date;
-        const date1 = new Date();
-        tmp6 = date > date1;
-      }
-      hasItem = tmp6;
-    }
-    obj2 = { invitesDisabled: hasItem, dmsDisabled: null };
-    let dmsDisabledUntil;
-    if (stateFromStores != null) {
-      dmsDisabledUntil = stateFromStores.dmsDisabledUntil;
-    }
-    let tmp17 = null != dmsDisabledUntil;
-    if (tmp17) {
-      const _Date3 = Date;
-      const date2 = new Date(stateFromStores.dmsDisabledUntil);
-      const _Date4 = Date;
-      const date3 = new Date();
-      tmp17 = date2 > date3;
-    }
-    obj2.dmsDisabled = tmp17;
-  }
-  return obj2;
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
-
-export const useFirstGuildIncidentId = tmp3;
-export const useGuildIncidentsState = tmp4;
+};
 export const shouldShowRaidNotificationNagbar = function shouldShowRaidNotificationNagbar() {
   const guildId = getFirstGuildIncidentId(SelectedGuildStore.getGuildId());
   let guildsProto = UserSettingsProtoStore.getGuildsProto();
@@ -555,35 +213,62 @@ export const getDisabledActions = function getDisabledActions(id) {
     return obj;
   }
 };
-export const useDisabledActions = tmp5;
-export const useShowAntiRaidInGuildNotifSettings = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore, GuildStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
+export const useDisabledActions = function useDisabledActions(id) {
+  id = undefined;
+  if (id != null) {
+    id = id.id;
   }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      guild = GuildStore.getGuild(closure_0);
-      return GuildAntiRaidPermissionsUtils.canReportRaid(guild, PermissionStore);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
+  if (id == null) {
+    id = closure_11;
   }
-  const obj = require("c");
-  return require("useStateFromStores").useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+  const items = [GuildIncidentsStore];
+  const items1 = [id];
+  const stateFromStores = id(563).useStateFromStores(items, () => GuildIncidentsStore.getGuildIncident(id), items1);
+  if (null == id) {
+    let obj2 = { dmsDisabled: false, invitesDisabled: false };
+  } else {
+    let hasItem;
+    if (id != null) {
+      const features = id.features;
+      hasItem = features.has(constants.INVITES_DISABLED);
+    }
+    if (!hasItem) {
+      let invitesDisabledUntil;
+      if (stateFromStores != null) {
+        invitesDisabledUntil = stateFromStores.invitesDisabledUntil;
+      }
+      let tmp6 = null != invitesDisabledUntil;
+      if (tmp6) {
+        const _Date = Date;
+        const date = new Date(stateFromStores.invitesDisabledUntil);
+        const _Date2 = Date;
+        const date1 = new Date();
+        tmp6 = date > date1;
+      }
+      hasItem = tmp6;
+    }
+    obj2 = { invitesDisabled: hasItem, dmsDisabled: null };
+    let dmsDisabledUntil;
+    if (stateFromStores != null) {
+      dmsDisabledUntil = stateFromStores.dmsDisabledUntil;
+    }
+    let tmp17 = null != dmsDisabledUntil;
+    if (tmp17) {
+      const _Date3 = Date;
+      const date2 = new Date(stateFromStores.dmsDisabledUntil);
+      const _Date4 = Date;
+      const date3 = new Date();
+      tmp17 = date2 > date3;
+    }
+    obj2.dmsDisabled = tmp17;
+  }
+  return obj2;
+};
+export const useShowAntiRaidInGuildNotifSettings = function useShowAntiRaidInGuildNotifSettings(arg0) {
   _require = arg0;
   const items = [PermissionStore, GuildStore];
   return require("useStateFromStores").useStateFromStores(items, () => {
-    guild = GuildStore.getGuild(closure_0);
+    const guild = GuildStore.getGuild(closure_0);
     return GuildAntiRaidPermissionsUtils.canReportRaid(guild, PermissionStore);
   });
-});
+};

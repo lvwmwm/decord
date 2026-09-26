@@ -1,20 +1,20 @@
-// Module ID: 11042
-// Function ID: 11043
+// Module ID: 11004
+// Function ID: 11005
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7696, 7697, 502, 4456, 7516, 9512, 7517, 1078, 4772, 1378, 21, 3, 7519, 577, 9511, 1244, 4384, 7705, 4465, 5113, 1245, 5143, 1119, 11043, 1984, 4993, 7688, 2]
+// Dependencies: [109, 5, 19, 17, 7694, 7695, 502, 4452, 7514, 9514, 7515, 1074, 4770, 1374, 21, 3, 7517, 573, 9513, 1240, 4380, 7703, 4461, 5111, 1241, 5141, 1115, 11005, 1980, 4991, 7686, 2]
 
-// Module 11042 (GPlayManager)
+// Module 11004 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5113 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9511 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5111 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9513 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7696 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7694 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4456 */;
-import IAPStore from "IAPStore" /* 7516 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
+import IAPStore from "IAPStore" /* 7514 */;
 
 require = fn;
 function handleConnectionStateUpdated(connectionState) {
@@ -58,7 +58,7 @@ let closure_35 = async function _handlePurchaseUpdated(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ let closure_35 = async function _handlePurchaseUpdated(arg0) {
               closure_130_11 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "PX_16", done: true };
             }
           break;
           case 1:
@@ -103,7 +103,7 @@ let closure_35 = async function _handlePurchaseUpdated(arg0) {
               return obj6;
             } else if (closure_131_11.isPurchasingProduct(purchase2.productId)) {
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             } else {
               closure_130_1 = closure_131_12.getState().analyticsByProductId[purchase2.productId];
               giftOptionsForKey = closure_131_25[purchase2.productId];
@@ -149,7 +149,7 @@ let closure_35 = async function _handlePurchaseUpdated(arg0) {
                 const obj17 = { type: "GPLAY_VERIFICATION_END", productId: purchase2.productId };
                 closure_131_1(closure_131_2[17]).dispatch(obj17);
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 c6 = 7;
                 c7 = 1;
@@ -422,9 +422,9 @@ let closure_37 = async function _handleDowngradeCommand(arg0) {
       c4 = 3;
       return { value, done: true };
     }
-    await "IconComponent";
+    await "HermesInternal";
     downgradeCommand2 = downgradeCommand.downgradeCommand;
-    return "Set";
+    return "PX_16";
   })();
   iter.next();
   return iter;
@@ -440,7 +440,7 @@ let closure_38 = async function _executePendingDowngrade(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -569,7 +569,7 @@ let closure_41 = async function _fetchAndAlertActiveSubscription(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -626,7 +626,7 @@ let closure_41 = async function _fetchAndAlertActiveSubscription(arg0, value) {
             });
           });
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       }
     } catch (tmp24) {
@@ -646,7 +646,7 @@ function handleAppStateUpdated() {
   return applyArgumentsResult;
 }
 let closure_43 = async function _handleAppStateUpdated(arg0) {
-  state = arg0;
+  let state = arg0;
   c5 = 0;
   c6 = 0;
   c4 = 0;
@@ -661,7 +661,7 @@ let closure_43 = async function _handleAppStateUpdated(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -681,7 +681,7 @@ let closure_43 = async function _handleAppStateUpdated(arg0) {
             state2 = state.state;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         } else {
           if (1 === tmp8) {
@@ -738,15 +738,15 @@ let closure_43 = async function _handleAppStateUpdated(arg0) {
 let closure_3 = ["succeededOnlyFields"];
 get_ActivityIndicator = fn(17);
 ({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
-const PremiumPlanPurchasedStore = fn(7697);
+const PremiumPlanPurchasedStore = fn(7695);
 ({ setPaymentSuccess: closure_7, showOldPaymentFlowSuccess: closure_8 } = PremiumPlanPurchasedStore);
-const useGPlayAnalyticsStore = fn(9512).useGPlayAnalyticsStore;
-let Constants = fn(7517);
+const useGPlayAnalyticsStore = fn(9514).useGPlayAnalyticsStore;
+let Constants = fn(7515);
 ({ GPlayConnectionState: map1, GPlayDowngradeCommand: closure_14, GPlayPurchaseState: closure_15 } = Constants);
-Constants = fn(1078);
+Constants = fn(1074);
 ({ AnalyticEvents: closure_16, AppStates: closure_17, PaymentGateways: closure_18 } = Constants);
-const OrderStatus = fn(4772).OrderStatus;
-const SubscriptionPlanInfo = fn(1378).SubscriptionPlanInfo;
+const OrderStatus = fn(4770).OrderStatus;
+const SubscriptionPlanInfo = fn(1374).SubscriptionPlanInfo;
 const jsx = fn(21).jsx;
 let closure_22 = new LoggerDefault("GPlayManager.android");
 const BillingManager = NativeModules.BillingManager;
@@ -756,7 +756,7 @@ let closure_26 = null;
 let closure_27 = null;
 let closure_28 = null;
 let closure_29 = null;
-const items = [fn(7519).ProductIds.PREMIUM_TIER_2_MONTHLY];
+const items = [fn(7517).ProductIds.PREMIUM_TIER_2_MONTHLY];
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/gplay/native/GPlayManager.android.tsx");
 

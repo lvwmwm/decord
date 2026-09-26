@@ -1,17 +1,17 @@
-// Module ID: 5219
-// Function ID: 5220
+// Module ID: 5217
+// Function ID: 5218
 // Name: spring
-// Dependencies: [4792, 4793, 4529, 2]
+// Dependencies: [4790, 4791, 4524, 2]
 // Exports: withSpring
 
-// Module 5219 (spring)
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 4792 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4793 */;
+// Module 5217 (spring)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 4790 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4791 */;
 import size from "module_2" /* 2 */;
 
 const CONFIG_NEVER_ANIMATE = ReanimatedConstants.CONFIG_NEVER_ANIMATE;
-function withSpring(value, SUBTLE_SPRING, fn, fn2) {
+function withSpring(targetHeight, SUBTLE_SPRING, fn, fn2) {
   let str = fn;
   if (fn === undefined) {
     str = "respect-motion-settings";
@@ -26,14 +26,14 @@ function withSpring(value, SUBTLE_SPRING, fn, fn2) {
       }
       const obj2 = {};
       const merged = Object.assign(obj);
-      obj2.reduceMotion = tmp(4529).ReduceMotion.Never;
+      obj2.reduceMotion = tmp(4524).ReduceMotion.Never;
       tmp7 = obj2;
     }
     let tmp5 = tmp7;
   } else {
     tmp5 = CONFIG_NEVER_ANIMATE;
   }
-  return ReanimatedRexport.withSpring(value, tmp5, fn2);
+  return ReanimatedRexport.withSpring(targetHeight, tmp5, fn2);
 }
 withSpring.__closure = { accessibilityPreferencesSharedValue: reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE, ReduceMotion: ReanimatedRexport.ReduceMotion, REAwithSpring: ReanimatedRexport.withSpring };
 withSpring.__workletHash = 14783154107972;

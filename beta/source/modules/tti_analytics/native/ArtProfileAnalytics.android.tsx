@@ -1,12 +1,12 @@
-// Module ID: 7949
-// Function ID: 7950
+// Module ID: 7944
+// Function ID: 7945
 // Name: ArtProfileAnalytics
-// Dependencies: [32, 5, 1078, 7947, 2040, 1245, 2]
+// Dependencies: [32, 5, 1074, 7942, 2036, 1241, 2]
 // Exports: trackAndroidArtProfileSnapshot
 
-// Module 7949 (ArtProfileAnalytics)
-import Timers from "Timers" /* 2040 */;
-import NativeTTIModuleDefault from "NativeTTIModule" /* 7947 */;
+// Module 7944 (ArtProfileAnalytics)
+import Timers from "Timers" /* 2036 */;
+import NativeTTIModuleDefault from "NativeTTIModule" /* 7942 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -22,7 +22,7 @@ let closure_7 = async function _trackAndroidArtProfileSnapshotAsync(arg0, value)
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -84,7 +84,7 @@ let closure_7 = async function _trackAndroidArtProfileSnapshotAsync(arg0, value)
         closure_130_6 = obj5;
         closure_131_1(closure_131_2[5]).track(closure_131_5.ANDROID_ART_PROFILE_SNAPSHOT, closure_130_6, { logEventProperties: true });
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp6) {
       c5 = tmp;
@@ -92,7 +92,7 @@ let closure_7 = async function _trackAndroidArtProfileSnapshotAsync(arg0, value)
     }
   }
 };
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const UNKNOWN_STATUS = "UNKNOWN_STATUS";
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/tti_analytics/native/ArtProfileAnalytics.android.tsx");

@@ -1,23 +1,24 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15324
+// Function ID: 15325
 // Name: BountiesEndCardPressableCta
-// Dependencies: [19, 17, 15303, 21, 4790, 580, 558, 568, 11646, 15304, 10606, 11656, 5702, 5700, 8001, 5834, 4786, 2]
+// Dependencies: [19, 17, 15325, 21, 4788, 576, 11770, 15321, 11577, 11780, 5700, 5698, 7996, 5836, 4784, 2]
+// Exports: default
 
-// Module 15302 (BountiesEndCardPressableCta)
-import nativeDefault from "native" /* 580 */;
-import QuestContent from "QuestContent" /* 5700 */;
-import AdCreativeType from "AdCreativeType" /* 5702 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8001 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11656 */;
+// Module 15324 (BountiesEndCardPressableCta)
+import nativeDefault from "native" /* 576 */;
+import QuestContent from "QuestContent" /* 5698 */;
+import AdCreativeType from "AdCreativeType" /* 5700 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7996 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 11780 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const END_CARD_IMAGE_SIZE = fn(15303).END_CARD_IMAGE_SIZE;
+const END_CARD_IMAGE_SIZE = fn(15325).END_CARD_IMAGE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_9 = createStyles.createStyles(() => {
   const obj = { image: null, info: null, ctaContainer: null };
   const size = { width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE, borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
@@ -26,132 +27,10 @@ let closure_9 = createStyles.createStyles(() => {
   obj.ctaContainer = { position: "relative", alignItems: "center" };
   return obj;
 });
-const ReactCompilerGating = fn(558);
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesEndCardPressableCta.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
-  const cResult = bounty(getQuestImpressionId[7]).c(28);
-  bounty = bounty.bounty;
-  const sourceQuestContent = bounty.sourceQuestContent;
-  const disabled = bounty.disabled;
-  const tmp5 = closure_9();
-  let obj = bounty(getQuestImpressionId[7]);
-  getQuestImpressionId = bounty(getQuestImpressionId[8]).useGetQuestImpressionId();
-  if (cResult[0] !== bounty) {
-    const bountyCtaInfo = tmp(tmp2[9]).getBountyCtaInfo(bounty);
-    let scaledImageUrl;
-    if (null != bountyCtaInfo.iconImageUri) {
-      const size = { assetUrl: bountyCtaInfo.iconImageUri, width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE };
-      scaledImageUrl = tmp(tmp2[10]).getScaledImageUrl(size);
-      const tmpResult4 = tmp(tmp2[10]);
-    }
-    cResult[0] = bounty;
-    cResult[1] = bountyCtaInfo;
-    cResult[2] = scaledImageUrl;
-    let tmp8 = scaledImageUrl;
-    let tmp7 = bountyCtaInfo;
-    const tmpResult3 = tmp(tmp2[9]);
-  } else {
-    tmp7 = cResult[1];
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] === bounty.cta) {
-    if (cResult[4] === bounty.id) {
-      if (cResult[5] === getQuestImpressionId) {
-        if (cResult[8] !== tmp8) {
-          let obj2 = { uri: tmp8 };
-          cResult[8] = tmp8;
-          cResult[9] = obj2;
-          let tmp15 = obj2;
-        } else {
-          tmp15 = cResult[9];
-        }
-        if (cResult[10] === tmp5.image) {
-          if (cResult[11] === tmp15) {
-            let tmp16 = cResult[12];
-          }
-          if (cResult[13] !== tmp7.label) {
-            const obj3 = { variant: "text-md/semibold", color: "text-strong", children: tmp7.label };
-            const tmp22 = closure_7(tmp(tmp2[16]).Text, obj3);
-            cResult[13] = tmp7.label;
-            cResult[14] = tmp22;
-            let tmp20 = tmp22;
-          } else {
-            tmp20 = cResult[14];
-          }
-          if (cResult[15] !== tmp7.subtext) {
-            const obj4 = { variant: "text-sm/medium", color: "text-default", children: tmp7.subtext };
-            const tmp25 = closure_7(tmp(tmp2[16]).Text, obj4);
-            cResult[15] = tmp7.subtext;
-            cResult[16] = tmp25;
-            let tmp23 = tmp25;
-          } else {
-            tmp23 = cResult[16];
-          }
-          if (cResult[17] === tmp5.info) {
-            if (cResult[18] === tmp20) {
-              if (cResult[19] === tmp23) {
-                let tmp26 = cResult[20];
-              }
-              if (cResult[21] === tmp7.label) {
-                if (cResult[22] === tmp4) {
-                  if (cResult[23] === tmp5.ctaContainer) {
-                    if (cResult[24] === tmp14) {
-                      if (cResult[25] === tmp16) {
-                        if (cResult[26] === tmp26) {
-                          let tmp30 = cResult[27];
-                        }
-                        return tmp30;
-                      }
-                    }
-                  }
-                }
-              }
-              const obj5 = { onPress: tmp14, disabled: tmp4, hitSlop: 16, accessibilityRole: "button", accessibilityLabel: tmp7.label, style: tmp5.ctaContainer, children: null };
-              const items = [tmp16, tmp26];
-              obj5.children = items;
-              const tmp33 = closure_8(closure_4, obj5);
-              cResult[21] = tmp7.label;
-              cResult[22] = tmp4;
-              cResult[23] = tmp5.ctaContainer;
-              cResult[24] = tmp14;
-              cResult[25] = tmp16;
-              cResult[26] = tmp26;
-              cResult[27] = tmp33;
-              tmp30 = tmp33;
-            }
-          }
-          const obj6 = { style: tmp5.info, children: null };
-          const items1 = [tmp20, tmp23];
-          obj6.children = items1;
-          const tmp29 = closure_8(closure_5, obj6);
-          cResult[17] = tmp5.info;
-          cResult[18] = tmp20;
-          cResult[19] = tmp23;
-          cResult[20] = tmp29;
-          tmp26 = tmp29;
-        }
-        const obj7 = { source: tmp15, style: tmp5.image };
-        const tmp19 = closure_7(sourceQuestContent(tmp2[15]), obj7);
-        cResult[10] = tmp5.image;
-        cResult[11] = tmp15;
-        cResult[12] = tmp19;
-        tmp16 = tmp19;
-      }
-    }
-  }
-  const fn = function f() {
-    const obj = QuestPlatformUtils;
-    const obj2 = { adContentId: bounty.id, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, cta: bounty.cta };
-    const result = obj.openAdGameLinkDirectly(obj2, { content: QuestContent.QuestContent.VIDEO_MODAL_ICON_END_CARD, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent });
-  };
-  cResult[3] = bounty.cta;
-  cResult[4] = bounty.id;
-  cResult[5] = getQuestImpressionId;
-  cResult[6] = sourceQuestContent;
-  cResult[7] = fn;
-}) : ((bounty) => {
+export default function BountiesEndCardPressableCta(bounty) {
   bounty = bounty.bounty;
   const sourceQuestContent = bounty.sourceQuestContent;
   let flag = bounty.disabled;
@@ -160,14 +39,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   }
   let getQuestImpressionId;
   const tmp = closure_9();
-  getQuestImpressionId = bounty(getQuestImpressionId[8]).useGetQuestImpressionId();
-  let obj = bounty(getQuestImpressionId[8]);
-  const bountyCtaInfo = bounty(getQuestImpressionId[9]).getBountyCtaInfo(bounty);
+  getQuestImpressionId = bounty(getQuestImpressionId[6]).useGetQuestImpressionId();
+  let obj = bounty(getQuestImpressionId[6]);
+  const bountyCtaInfo = bounty(getQuestImpressionId[7]).getBountyCtaInfo(bounty);
   let scaledImageUrl;
   if (null != bountyCtaInfo.iconImageUri) {
     const size = { assetUrl: bountyCtaInfo.iconImageUri, width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE };
-    scaledImageUrl = tmp2(tmp3[10]).getScaledImageUrl(size);
-    const tmp2Result = tmp2(tmp3[10]);
+    scaledImageUrl = tmp2(tmp3[8]).getScaledImageUrl(size);
+    const tmp2Result = tmp2(tmp3[8]);
   }
   const items = [, , , ];
   ({ id: arr[0], cta: arr[1] } = bounty);
@@ -182,11 +61,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
     }, items);
   }
   const obj3 = { onPress: callback, disabled: flag, hitSlop: 16, accessibilityRole: "button", accessibilityLabel: bountyCtaInfo.label, style: tmp.ctaContainer, children: null };
-  const items1 = [closure_7(sourceQuestContent(getQuestImpressionId[15]), { source: { uri: scaledImageUrl }, style: tmp.image }), ];
+  const items1 = [closure_7(sourceQuestContent(getQuestImpressionId[13]), { source: { uri: scaledImageUrl }, style: tmp.image }), ];
   const obj5 = { style: tmp.info, children: null };
-  const items2 = [closure_7(bounty(getQuestImpressionId[16]).Text, { variant: "text-md/semibold", color: "text-strong", children: bountyCtaInfo.label }), closure_7(bounty(getQuestImpressionId[16]).Text, { variant: "text-sm/medium", color: "text-default", children: bountyCtaInfo.subtext })];
+  const items2 = [closure_7(bounty(getQuestImpressionId[14]).Text, { variant: "text-md/semibold", color: "text-strong", children: bountyCtaInfo.label }), closure_7(bounty(getQuestImpressionId[14]).Text, { variant: "text-sm/medium", color: "text-default", children: bountyCtaInfo.subtext })];
   obj5.children = items2;
   items1[1] = closure_8(closure_5, obj5);
   obj3.children = items1;
   return closure_8(closure_4, obj3);
-});
+};

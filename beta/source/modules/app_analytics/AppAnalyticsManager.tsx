@@ -1,24 +1,24 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17736
+// Function ID: 17737
 // Name: AppAnalyticsManager
-// Dependencies: [2003, 1996, 4813, 5530, 5670, 4814, 1078, 1095, 7397, 2040, 4970, 17231, 4920, 2]
+// Dependencies: [1999, 1992, 4811, 5528, 5668, 4812, 1074, 1091, 7395, 2036, 4968, 17221, 4918, 2]
 
-// Module 17745 (AppAnalyticsManager)
-import DurationsDefault from "Durations" /* 1095 */;
-import Timers from "Timers" /* 2040 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4920 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
-import getGamePlatformDefault from "getGamePlatform" /* 17231 */;
-import RunningGameStore from "RunningGameStore" /* 2003 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
-import SpeakingStore from "SpeakingStore" /* 5670 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4814 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 17736 (AppAnalyticsManager)
+import DurationsDefault from "Durations" /* 1091 */;
+import Timers from "Timers" /* 2036 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4918 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+import getGamePlatformDefault from "getGamePlatform" /* 17221 */;
+import RunningGameStore from "RunningGameStore" /* 1999 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
+import SpeakingStore from "SpeakingStore" /* 5668 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4812 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, ActivityTypes: c10 } = Constants);
 const MINUTE = DurationsDefault.Millis.MINUTE;
 class AppAnalyticsManager extends tmp3 {

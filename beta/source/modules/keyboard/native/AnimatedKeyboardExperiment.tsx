@@ -1,12 +1,12 @@
-// Module ID: 10380
-// Function ID: 10381
+// Module ID: 11642
+// Function ID: 11643
 // Name: AnimatedKeyboardExperiment
-// Dependencies: [1438, 1368, 2]
+// Dependencies: [1434, 1364, 2]
 // Exports: isAnimatedAndroidKeyboard
 
-// Module 10380 (AnimatedKeyboardExperiment)
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 11642 (AnimatedKeyboardExperiment)
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2025-08-animated-keyboard-android", kind: "user", defaultConfig: { enabled: false }, variations: null };

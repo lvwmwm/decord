@@ -1,11 +1,11 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 8177
+// Function ID: 8178
 // Name: AnalyticsFeedItemSeenManager
-// Dependencies: [5, 38, 577, 2]
+// Dependencies: [5, 38, 573, 2]
 
-// Module 8182 (AnalyticsFeedItemSeenManager)
+// Module 8177 (AnalyticsFeedItemSeenManager)
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const ForceFlushType = { IMMEDIATE: 0, [0]: "IMMEDIATE", IMMEDIATE_WITH_COOLDOWN: 1, [1]: "IMMEDIATE_WITH_COOLDOWN", IMMEDIATE_WITH_DELAY: 2, [2]: "IMMEDIATE_WITH_DELAY" };
@@ -277,7 +277,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -306,7 +306,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
                 } else {
                   closure_128_0();
                   c2 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp9) {
                 c2 = tmp;
@@ -328,7 +328,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
           } else {
             closure_129_0();
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c3 = tmp;

@@ -1,116 +1,31 @@
-// Module ID: 13617
-// Function ID: 13618
+// Module ID: 13607
+// Function ID: 13608
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4441, 1376, 21, 4790, 580, 558, 568, 1368, 5373, 11238, 4786, 1181, 13618, 11252, 4494, 5273, 7255, 13619, 1119, 4943, 2]
+// Dependencies: [32, 19, 17, 4437, 1372, 21, 4788, 576, 5371, 1364, 11189, 4784, 1177, 13608, 11203, 4489, 5271, 7257, 13609, 1115, 4941, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 13617 (ChannelHeaderShared)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import useToken from "useToken" /* 4494 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import useChannelName from "useChannelName" /* 4943 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
-import Pressables from "Pressables" /* 5373 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11238 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11252 */;
-import _modDef13618 from "module_13618" /* 13618 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13619 */;
+// Module 13607 (ChannelHeaderShared)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import useToken from "useToken" /* 4489 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import useChannelName from "useChannelName" /* 4941 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5271 */;
+import Pressables from "Pressables" /* 5371 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7257 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11189 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11203 */;
+import _modDef13608 from "module_13608" /* 13608 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13609 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4790);
-let closure_11 = createStyles.createStyles(() => {
-  const obj = { wrapper: { flex: 1, alignItems: "center", flexShrink: 1, flexDirection: "row", paddingEnd: 8 }, channelContent: { flex: 1, flexShrink: 1, justifyContent: "center", marginTop: 4 }, nameWithArrow: { flexDirection: "row", alignItems: "center", flexShrink: 1 }, channelNameContainer: { flexShrink: 1 }, channelName: { flexShrink: 1 }, arrowIcon: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0, flexGrow: 0, marginTop: 2, marginLeft: 2 }, channelIcon: { marginRight: 12, flexShrink: 0 }, channelIconWrapper: { width: 32, height: 32, justifyContent: "center", alignItems: "center" }, guildChannelIcon: null, subTitleContainer: null, parentChannelName: null };
-  const obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0, flexGrow: 0, marginTop: 2, marginLeft: 2 };
-  obj.guildChannelIcon = { tintColor: nativeDefault.colors.TEXT_STRONG };
-  obj.subTitleContainer = { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 };
-  obj.parentChannelName = { lineHeight: 20, flexShrink: 1 };
-  return obj;
-});
-let ReactCompilerGating = fn(558);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(14);
-  ({ children, onPress, headerAccessibilityLabel, titleContentHeight } = arg0);
-  let wrapper = closure_11();
-  [tmp5, require] = noop.useState(undefined);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c(nativeEvent) {
-      require({ borderless: true, radius: nativeEvent.nativeEvent.layout.width });
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (null == titleContentHeight) {
-    if (null == onPress) {
-      if (cResult[3] === children) {
-      }
-      const obj2 = { style: wrapper.wrapper, accessibilityRole: "header", children };
-      const tmp18 = closure_1_8(View, obj2);
-      cResult[3] = children;
-      wrapper = wrapper.wrapper;
-      cResult[4] = wrapper;
-      cResult[5] = tmp18;
-    } else {
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        let tmp11;
-        if (tmpResult.isAndroid()) {
-          tmp11 = first;
-        }
-        cResult[6] = tmp11;
-        let tmp10 = tmp11;
-        tmpResult = tmp(1368);
-      } else {
-        tmp10 = cResult[6];
-      }
-      if (cResult[7] === tmp5) {
-        if (cResult[8] === children) {
-          if (cResult[9] === headerAccessibilityLabel) {
-            if (cResult[10] === onPress) {
-              if (cResult[11] === wrapper.wrapper) {
-                if (cResult[12] === undefined) {
-                  let tmp12 = cResult[13];
-                }
-                return tmp12;
-              }
-            }
-          }
-        }
-      }
-      const obj3 = { onLayout: tmp10, onPress, androidRippleConfig: tmp5, accessibilityRole: "header", accessibilityLabel: headerAccessibilityLabel, hitSlop: undefined, style: wrapper.wrapper, children };
-      const tmp14 = closure_1_8(tmp(5373).PressableOpacity, obj3);
-      cResult[7] = tmp5;
-      cResult[8] = children;
-      cResult[9] = headerAccessibilityLabel;
-      cResult[10] = onPress;
-      cResult[11] = wrapper.wrapper;
-      cResult[12] = undefined;
-      cResult[13] = tmp14;
-      tmp12 = tmp14;
-    }
-  } else {
-    const _Math = Math;
-    const bound = Math.max(0, (64 - titleContentHeight) / 2);
-    if (cResult[1] !== bound) {
-      const rect = { top: bound, bottom: bound };
-      cResult[1] = bound;
-      cResult[2] = rect;
-    }
-  }
-}) : ((headerAccessibilityLabel) => {
+function TitleWrapper(headerAccessibilityLabel) {
   ({ children, onPress, titleContentHeight } = headerAccessibilityLabel);
   c1 = undefined;
   const tmp = closure_11();
@@ -121,120 +36,19 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, []);
   if (null == onPress) {
     const obj2 = { style: tmp.wrapper, accessibilityRole: "header", children };
-    let tmp6Result = closure_1_8(View, obj2);
+    let tmp6Result = React6(View, obj2);
   } else {
     let tmp9;
     if (obj.isAndroid()) {
       tmp9 = callback;
     }
     const obj3 = { onLayout: tmp9, onPress, androidRippleConfig: tmp3, accessibilityRole: "header", accessibilityLabel: headerAccessibilityLabel.headerAccessibilityLabel, hitSlop: tmp5, style: tmp.wrapper, children };
-    tmp6Result = closure_1_8(Pressables.PressableOpacity, obj3);
+    tmp6Result = React6(Pressables.PressableOpacity, obj3);
     obj = PlatformUtils;
   }
   return tmp6Result;
-});
-ReactCompilerGating = fn(558);
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(22);
-  ({ title, accessibleTitle, subtitle, disableArrow, userId, guildId: channelNameContainer, icon } = arg0);
-  const tmp5 = closure_11();
-  let tmp6 = null;
-  if (null != icon) {
-    tmp6 = icon;
-  }
-  if (cResult[0] === accessibleTitle) {
-    if (cResult[1] === channelNameContainer) {
-      if (cResult[2] === tmp5.channelName) {
-        if (cResult[3] === tmp5.channelNameContainer) {
-          if (cResult[4] === title) {
-            if (cResult[5] === userId) {
-              if (cResult[7] === tmp4) {
-                if (cResult[8] === tmp5.arrowIcon) {
-                  let tmp12 = cResult[9];
-                }
-                if (cResult[10] === tmp5.nameWithArrow) {
-                  if (cResult[11] === tmp6) {
-                    if (cResult[12] === tmp7) {
-                      if (cResult[13] === tmp12) {
-                        let tmp16 = cResult[14];
-                      }
-                      if (cResult[15] === tmp5.subTitleContainer) {
-                        if (cResult[16] === subtitle) {
-                          let tmp20 = cResult[17];
-                        }
-                        if (cResult[18] === tmp5.channelContent) {
-                          if (cResult[19] === tmp16) {
-                            if (cResult[20] === tmp20) {
-                              let tmp24 = cResult[21];
-                            }
-                            return tmp24;
-                          }
-                        }
-                        const obj2 = { style: tmp5.channelContent, children: null };
-                        const items = [tmp16, tmp20];
-                        obj2.children = items;
-                        const tmp27 = options(View, obj2);
-                        cResult[18] = tmp5.channelContent;
-                        cResult[19] = tmp16;
-                        cResult[20] = tmp20;
-                        cResult[21] = tmp27;
-                        tmp24 = tmp27;
-                      }
-                      let tmp21 = null != subtitle;
-                      if (tmp21) {
-                        const obj4 = { style: tmp5.subTitleContainer, children: subtitle };
-                        tmp21 = closure_1_8(View, obj4);
-                      }
-                      cResult[15] = tmp5.subTitleContainer;
-                      cResult[16] = subtitle;
-                      cResult[17] = tmp21;
-                      tmp20 = tmp21;
-                    }
-                  }
-                }
-                const obj5 = { style: tmp5.nameWithArrow, children: null };
-                const items1 = [tmp6, tmp7, tmp12];
-                obj5.children = items1;
-                const tmp19 = options(View, obj5);
-                cResult[10] = tmp5.nameWithArrow;
-                cResult[11] = tmp6;
-                cResult[12] = tmp7;
-                cResult[13] = tmp12;
-                cResult[14] = tmp19;
-                tmp16 = tmp19;
-              }
-              let tmp13 = !tmp4;
-              if (!tmp4) {
-                const obj6 = { source: _modDef13618, size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, style: tmp5.arrowIcon };
-                tmp13 = closure_1_8(tmp(1181).Icon, obj6);
-              }
-              cResult[7] = tmp4;
-              cResult[8] = tmp5.arrowIcon;
-              cResult[9] = tmp13;
-              tmp12 = tmp13;
-            }
-          }
-        }
-      }
-    }
-  }
-  if (null != userId) {
-    const obj7 = { userId, guildId: channelNameContainer, userName: title, variant: "redesign/heading-18/semibold", defaultColor: "mobile-text-heading-primary", lineClamp: 1, style: null, containerStyle: null, accessibilityLabel: null, accessibilityRole: "header", maxFontSizeMultiplier: 2 };
-    ({ channelName: obj3.style, channelNameContainer: obj3.containerStyle } = tmp5);
-    obj7.accessibilityLabel = accessibleTitle;
-    let tmp9 = closure_1_8(UsernameWithEffectsDefault, obj7);
-  } else {
-    const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = closure_1_8(tmp(4786).Text, obj13);
-  }
-  cResult[0] = accessibleTitle;
-  cResult[1] = channelNameContainer;
-  ({ channelName: tmp3[2], channelNameContainer } = tmp5);
-  cResult[3] = channelNameContainer;
-  cResult[4] = title;
-  cResult[5] = userId;
-  cResult[6] = tmp9;
-}) : ((guildId) => {
+}
+function ChannelTitle(guildId) {
   ({ title, accessibleTitle, subtitle, disableArrow } = guildId);
   if (disableArrow === undefined) {
     disableArrow = false;
@@ -252,22 +66,22 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { userId, guildId: guildId.guildId, userName: title, variant: "redesign/heading-18/semibold", defaultColor: "mobile-text-heading-primary", lineClamp: 1, style: null, containerStyle: null, accessibilityLabel: null, accessibilityRole: "header", maxFontSizeMultiplier: 2 };
     ({ channelName: obj4.style, channelNameContainer: obj4.containerStyle } = tmp);
     obj3.accessibilityLabel = accessibleTitle;
-    let tmp8 = closure_1_8(UsernameWithEffectsDefault, obj3);
-    let tmp5 = closure_1_8;
+    let tmp8 = React6(UsernameWithEffectsDefault, obj3);
+    let tmp5 = React6;
   } else {
-    tmp5 = closure_1_8;
+    tmp5 = React6;
     const obj5 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp8 = closure_1_8(Text_Text.Text, obj5);
+    tmp8 = React6(Text_Text.Text, obj5);
   }
   items[1] = tmp8;
   let tmp5Result = !disableArrow;
   if (!disableArrow) {
-    const obj6 = { source: _modDef13618, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp.arrowIcon };
+    const obj6 = { source: _modDef13608, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp.arrowIcon };
     tmp5Result = tmp5(native.Icon, obj6);
   }
   items[2] = tmp5Result;
   obj2.children = items;
-  const items1 = [options(View, obj2), ];
+  const items1 = [React7(View, obj2), ];
   let tmp5Result2 = null != subtitle;
   if (tmp5Result2) {
     const obj11 = { style: tmp.subTitleContainer, children: subtitle };
@@ -275,60 +89,16 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   items1[1] = tmp5Result2;
   obj.children = items1;
-  return options(View, obj);
-});
-ReactCompilerGating = fn(558);
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = c.c(2);
-  channel = channel.channel;
-  if (cResult[0] !== channel) {
-    const obj2 = { size: native.AvatarSizes.REFRESH_MEDIUM_32, channel };
-    const tmp8 = closure_1_8(GroupDMAvatarDefault, obj2);
-    cResult[0] = channel;
-    cResult[1] = tmp8;
-    let tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : ((channel) => {
+  return React7(View, obj);
+}
+function GroupDMIcon(channel) {
   const obj = { size: native.AvatarSizes.REFRESH_MEDIUM_32, channel: channel.channel };
-  return closure_1_8(GroupDMAvatarDefault, obj);
-});
-ReactCompilerGating = fn(558);
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
-  const cResult = c.c(6);
-  ({ user, isMobileOnline, isVROnline } = status);
-  const tmp4 = closure_11();
-  status = null;
-  if (!user.isSystemUser()) {
-    status = status.status;
-  }
-  if (cResult[0] === isMobileOnline) {
-    if (cResult[1] === isVROnline) {
-      if (cResult[2] === tmp4.channelIcon) {
-        if (cResult[3] === status) {
-          if (cResult[4] === user) {
-            let tmp6 = cResult[5];
-          }
-          return tmp6;
-        }
-      }
-    }
-  }
-  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: false };
-  const tmp7 = closure_1_8(native.Avatar, obj2);
-  cResult[0] = isMobileOnline;
-  cResult[1] = isVROnline;
-  cResult[2] = tmp4.channelIcon;
-  cResult[3] = status;
-  cResult[4] = user;
-  cResult[5] = tmp7;
-  tmp6 = tmp7;
-}) : ((user) => {
+  return React6(GroupDMAvatarDefault, obj);
+}
+function UserAvatar(user) {
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: false, isMobileOnline: null, isVROnline: true, style: null, autoStatusCutout: false };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: null, isMobileOnline: null, isVROnline: null, style: null, autoStatusCutout: null };
   let tmp3 = null;
   if (!user.isSystemUser()) {
     tmp3 = status;
@@ -337,110 +107,21 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   obj.isMobileOnline = isMobileOnline;
   obj.isVROnline = isVROnline;
   obj.style = closure_11().channelIcon;
-  return closure_1_8(native.Avatar, obj);
-});
-ReactCompilerGating = fn(558);
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(5);
-  ({ icon, IconComponent } = arg0);
-  const token = useToken.useToken(nativeDefault.modules.mobile.CHANNEL_HEADER_ICON_SIZE);
-  const tmp5 = closure_11();
-  if (cResult[0] === IconComponent) {
-    if (cResult[1] === icon) {
-      if (cResult[2] === token) {
-        if (cResult[3] === tmp5) {
-          return cResult[4];
-        }
-      }
-    }
-  }
-  if (null != IconComponent) {
-    const obj3 = { size: token, color: "icon-strong", style: { marginEnd: 4 } };
-    let tmp7 = closure_1_8(IconComponent, obj3);
-  } else {
-    const obj4 = { size: tmp(1181).Icon.Sizes.SMALL_20, source: icon, color: tmp5.guildChannelIcon.tintColor };
-    tmp7 = closure_1_8(tmp(1181).Icon, obj4);
-  }
-  cResult[0] = IconComponent;
-  cResult[1] = icon;
-  cResult[2] = token;
-  cResult[3] = tmp5;
-  cResult[4] = tmp7;
-}) : ((IconComponent) => {
+  return React6(native.Avatar, obj);
+}
+function ChannelIconRaw(IconComponent) {
   IconComponent = IconComponent.IconComponent;
   const token = useToken.useToken(nativeDefault.modules.mobile.CHANNEL_HEADER_ICON_SIZE);
   if (null != IconComponent) {
     const obj2 = { size: token, color: "icon-strong", style: { marginEnd: 4 } };
-    let tmp6 = closure_1_8(IconComponent, obj2);
+    let tmp6 = React6(IconComponent, obj2);
   } else {
-    const obj3 = { size: tmp(1181).Icon.Sizes.SMALL_20, source: IconComponent.icon, color: tmp4.guildChannelIcon.tintColor };
-    tmp6 = closure_1_8(tmp(1181).Icon, obj3);
+    const obj3 = { size: tmp(1177).Icon.Sizes.SMALL_20, source: IconComponent.icon, color: tmp4.guildChannelIcon.tintColor };
+    tmp6 = React6(tmp(1177).Icon, obj3);
   }
   return tmp6;
-});
-ReactCompilerGating = fn(558);
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(11);
-  ({ presenceCount, memberCount, withSeparator, leadingAccessoryWidth } = arg0);
-  let str = "online";
-  if (0 === presenceCount) {
-    str = "online";
-    if (null !== memberCount) {
-      str = "total";
-    }
-  }
-  let str2 = "text-sm/normal";
-  if (tmpResult.useManaTypeConsolidationExperiment("ChannelHeaderMemberCount")) {
-    str2 = "text-xs/normal";
-  }
-  if ("online" === str) {
-    memberCount = presenceCount;
-  }
-  if (cResult[0] === leadingAccessoryWidth) {
-    if (cResult[1] === memberCount) {
-      if (cResult[2] === str2) {
-        if (cResult[3] === str) {
-          let tmp5 = cResult[4];
-        }
-        if (cResult[5] === str2) {
-          if (cResult[6] === withSeparator) {
-            let tmp7 = cResult[7];
-          }
-          if (cResult[8] === tmp5) {
-            if (cResult[9] === tmp7) {
-              let tmp10 = cResult[10];
-            }
-            return tmp10;
-          }
-          const obj2 = { children: null };
-          const items = [tmp5, tmp7];
-          obj2.children = items;
-          const tmp13 = options(v65535, obj2);
-          cResult[8] = tmp5;
-          cResult[9] = tmp7;
-          cResult[10] = tmp13;
-          tmp10 = tmp13;
-        }
-        let tmp8 = null;
-        if (withSeparator) {
-          const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = closure_1_8(tmp(4786).Text, obj3);
-        }
-        cResult[5] = str2;
-        cResult[6] = withSeparator;
-        cResult[7] = tmp8;
-        tmp7 = tmp8;
-      }
-    }
-  }
-  const tmp6 = closure_1_8(GuildActionSheetMemberCountDefault, { type: str, count: memberCount, color: "text-subtle", dotContainerWidth: leadingAccessoryWidth, textVariant: str2 });
-  cResult[0] = leadingAccessoryWidth;
-  cResult[1] = memberCount;
-  cResult[2] = str2;
-  cResult[3] = str;
-  cResult[4] = tmp6;
-  tmp5 = tmp6;
-}) : ((arg0) => {
+}
+function MemberCountText(arg0) {
   ({ presenceCount, memberCount } = arg0);
   let str = "online";
   ({ withSeparator, leadingAccessoryWidth } = arg0);
@@ -456,15 +137,15 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj2 = { type: str, count: null, color: "text-subtle", dotContainerWidth: null, textVariant: null };
   obj = ManaTypeConsolidationExperiment;
-  const tmp4 = options;
-  const tmp5 = v65535;
+  const tmp4 = React7;
+  const tmp5 = closure_1_10;
   if ("online" === str) {
     memberCount = presenceCount;
   }
   obj2.count = memberCount;
   obj2.dotContainerWidth = leadingAccessoryWidth;
   obj2.textVariant = str2;
-  const children = [closure_1_8(GuildActionSheetMemberCountDefault, obj2), ];
+  const children = [React6(GuildActionSheetMemberCountDefault, obj2), ];
   let tmp6Result = null;
   if (withSeparator) {
     const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
@@ -472,47 +153,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   children[1] = tmp6Result;
   return tmp4(tmp5, { children });
-});
-ReactCompilerGating = fn(558);
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = c.c(8);
-  channel = channel.channel;
-  const tmp4 = closure_11();
-  if (cResult[0] !== channel) {
-    const intl = tmp(1119).intl;
-    const obj2 = { channelName: tmp(4943).computeChannelName(channel, UserStore, RelationshipStore) };
-    const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t.BjYvHO, obj2);
-    cResult[0] = channel;
-    cResult[1] = formatToPlainStringResult;
-    let tmp5 = formatToPlainStringResult;
-    const tmpResult = tmp(4943);
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== channel) {
-    const channelName = tmp(4943).computeChannelName(channel, UserStore, RelationshipStore);
-    cResult[2] = channel;
-    cResult[3] = channelName;
-    let tmp9 = channelName;
-    const tmpResult2 = tmp(4943);
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === tmp4.parentChannelName) {
-    if (cResult[5] === tmp5) {
-      if (cResult[6] === tmp9) {
-        let tmp13 = cResult[7];
-      }
-      return tmp13;
-    }
-  }
-  const tmp14 = closure_1_8(Text_Text.Text, { lineClamp: 1, accessibilityLabel: tmp5, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-subtle", style: tmp4.parentChannelName, children: tmp9 });
-  cResult[4] = tmp4.parentChannelName;
-  cResult[5] = tmp5;
-  cResult[6] = tmp9;
-  cResult[7] = tmp14;
-  tmp13 = tmp14;
-}) : ((channel) => {
+}
+function ParentChannelSubTitle(channel) {
   channel = channel.channel;
   const obj = { lineClamp: 1, accessibilityLabel: null, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-subtle", style: null, children: null };
   const intl = util.intl;
@@ -522,33 +164,30 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   obj.accessibilityLabel = intl.formatToPlainString(util.t.BjYvHO, obj2);
   obj.style = tmp.parentChannelName;
   obj.children = useChannelName.computeChannelName(channel, UserStore, RelationshipStore);
-  return closure_1_8(Text_Text.Text, obj);
-});
-ReactCompilerGating = fn(558);
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const tmp2 = closure_11();
-  if (cResult[0] !== tmp2.channelIconWrapper) {
-    const obj2 = { style: tmp2.channelIconWrapper };
-    const tmp6 = closure_1_8(View, obj2);
-    cResult[0] = tmp2.channelIconWrapper;
-    cResult[1] = tmp6;
-    let tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (() => closure_1_8(View, { style: closure_11().channelIconWrapper }));
-function renderChannelIconRaw(icon, IconComponent) {
-  return closure_1_8(closure_16, { icon, IconComponent });
+  return React6(Text_Text.Text, obj);
 }
+function EmptyIcon() {
+  return React6(View, { style: closure_11().channelIconWrapper });
+}
+const View = fn(17).View;
+const jsxProd = fn(21);
+({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
+const createStyles = fn(4788);
+let closure_11 = createStyles.createStyles(() => {
+  const obj = { wrapper: { flex: 1, alignItems: "center", flexShrink: 1, flexDirection: "row", paddingEnd: 8 }, channelContent: { flex: 1, flexShrink: 1, justifyContent: "center", marginTop: 4 }, nameWithArrow: { flexDirection: "row", alignItems: "center", flexShrink: 1 }, channelNameContainer: { flexShrink: 1 }, channelName: { flexShrink: 1 }, arrowIcon: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0, flexGrow: 0, marginTop: 2, marginLeft: 2 }, channelIcon: { marginRight: 12, flexShrink: 0 }, channelIconWrapper: { width: 32, height: 32, justifyContent: "center", alignItems: "center" }, guildChannelIcon: null, subTitleContainer: null, parentChannelName: null };
+  const obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0, flexGrow: 0, marginTop: 2, marginLeft: 2 };
+  obj.guildChannelIcon = { tintColor: nativeDefault.colors.TEXT_STRONG };
+  obj.subTitleContainer = { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 };
+  obj.parentChannelName = { lineHeight: 20, flexShrink: 1 };
+  return obj;
+});
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ChannelHeaderShared.tsx");
 
-export const renderTitleWrapper = function renderTitleWrapper(tmp11Result, callback, combined, titleContentHeight) {
-  return closure_1_8(closure_12, { onPress: callback, headerAccessibilityLabel: combined, titleContentHeight, children: tmp11Result });
+export const renderTitleWrapper = function renderTitleWrapper(tmp33Result, callback, combined, titleContentHeight) {
+  return React6(TitleWrapper, { onPress: callback, headerAccessibilityLabel: combined, titleContentHeight, children: tmp33Result });
 };
-export const renderChannelTitle = function renderChannelTitle(visibleChannelName, arg1) {
+export const renderChannelTitle = function renderChannelTitle(channelName, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -559,15 +198,17 @@ export const renderChannelTitle = function renderChannelTitle(visibleChannelName
   if (tmp) {
     tmp = disableArrow;
   }
-  return closure_1_8(closure_13, { title: visibleChannelName, accessibleTitle, subtitle, disableArrow: tmp, userId: obj.userId, guildId: obj.guildId, icon: obj.icon });
+  return React6(ChannelTitle, { title: channelName, accessibleTitle, subtitle, disableArrow: tmp, userId: obj.userId, guildId: obj.guildId, icon: obj.icon });
 };
 export const renderGroupDMIcon = function renderGroupDMIcon(stateFromStores) {
-  return closure_1_8(closure_14, { channel: stateFromStores });
+  return React6(GroupDMIcon, { channel: stateFromStores });
 };
 export const renderUserAvatar = function renderUserAvatar(stateFromStores1, status, isMobileOnline, isVROnline) {
-  return closure_1_8(closure_15, { user: stateFromStores1, status, isMobileOnline, isVROnline });
+  return React6(UserAvatar, { user: stateFromStores1, status, isMobileOnline, isVROnline });
 };
-export { renderChannelIconRaw };
+export const renderChannelIconRaw = function renderChannelIconRaw(icon, IconComponent) {
+  return React6(ChannelIconRaw, { icon, IconComponent });
+};
 export const renderChannelIcon = function renderChannelIcon(stateFromStores, stateFromStores3) {
   const channelIconWithGuild = utils_ChannelUtils.getChannelIconWithGuild(stateFromStores, stateFromStores3);
   let rulesChannelId;
@@ -575,23 +216,23 @@ export const renderChannelIcon = function renderChannelIcon(stateFromStores, sta
     rulesChannelId = stateFromStores3.rulesChannelId;
   }
   const obj3 = { isRulesChannel: rulesChannelId === stateFromStores.id };
-  return closure_1_8(closure_16, { icon: channelIconWithGuild, IconComponent: utils_ChannelUtils.getChannelIconComponent(stateFromStores, { isRulesChannel: rulesChannelId === stateFromStores.id }) });
+  return React6(ChannelIconRaw, { icon: channelIconWithGuild, IconComponent: utils_ChannelUtils.getChannelIconComponent(stateFromStores, { isRulesChannel: rulesChannelId === stateFromStores.id }) });
 };
-export const renderMemberCountText = function renderMemberCountText(online, total, flag, leadingAccessoryWidth) {
+export const renderMemberCountText = function renderMemberCountText(online, memberCount, flag, leadingAccessoryWidth) {
   if (flag === undefined) {
     flag = false;
   }
   if (null != online) {
-    const obj = { presenceCount: online, memberCount: total, withSeparator: flag, leadingAccessoryWidth };
-    let tmp = closure_1_8(closure_17, obj);
+    const obj = { presenceCount: online, memberCount, withSeparator: flag, leadingAccessoryWidth };
+    let tmp = React6(MemberCountText, obj);
   } else {
     tmp = null;
   }
   return tmp;
 };
-export const renderParentChannelSubTitle = function renderParentChannelSubTitle(parentChannel) {
-  return closure_1_8(closure_18, { channel: parentChannel });
+export const renderParentChannelSubTitle = function renderParentChannelSubTitle(stateFromStores2) {
+  return React6(ParentChannelSubTitle, { channel: stateFromStores2 });
 };
 export const renderEmptyIcon = function renderEmptyIcon() {
-  return closure_1_8(closure_19, {});
+  return React6(EmptyIcon, {});
 };

@@ -1,9 +1,0 @@
-// Module ID: 9131
-// Function ID: 9132
-// Dependencies: [1125]
-
-// Module 9131
-import registerAsset from "module_1125" /* 1125 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 128, height: 128, scales: [1], hash: "dd1fce0fb6695abbba4a340bc5cd823e", name: "nameplate_avatar_placeholder_dark_mode", type: "png" });

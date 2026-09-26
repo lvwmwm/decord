@@ -1,17 +1,19 @@
 // Module ID: 8814
 // Function ID: 8815
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8815, 8817, 8819, 8808, 8821, 8823, 8804]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8815, 8798, 8799]
 
 // Module 8814
-import _modDef8804 from "module_8804" /* 8804 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef8798 from "module_8798" /* 8798 */;
+import _modDef8799 from "module_8799" /* 8799 */;
+import _modDef8815 from "module_8815" /* 8815 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const FeDropShadow = importDefault;
+const FeFlood = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,16 +33,16 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-class FeDropShadow {
+_possibleConstructorReturnDefault;
+const jsx = fn(21).jsx;
+class FeFlood {
   constructor() {
     self = this;
-    tmp = c2(this, FeDropShadow);
-    tmp2 = closure_4;
-    obj = closure_4(FeDropShadow);
-    tmp3 = closure_3;
-    if (closure_8()) {
+    tmp = closure_3(this, FeFlood);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(FeFlood);
+    tmp3 = closure_4;
+    if (closure_7()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -53,32 +55,30 @@ class FeDropShadow {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeDropShadow, _modDef8804);
+_inherits(FeFlood, _modDef8799);
 const entry = {
   key: "render",
   value: function render() {
     const self = this;
-    const props = this.props;
-    const _in = props.in;
-    let str = "SourceGraphic";
-    if (undefined !== _in) {
-      str = _in;
-    }
-    const obj = { children: null };
-    ({ dx, dy, result } = props);
-    const items = [timestampProducer(FeDropShadow(8815), { in: str, stdDeviation: props.stdDeviation }), timestampProducer(FeDropShadow(8817), { dx, dy, result: "offsetblur" }), timestampProducer(FeDropShadow(8819), { floodColor: self.props.floodColor, floodOpacity: self.props.floodOpacity }), timestampProducer(FeDropShadow(8808), { in2: "offsetblur", operator: "in" }), ];
-    const obj3 = { result, children: null };
-    const items1 = [timestampProducer(FeDropShadow(8823), {}), timestampProducer(FeDropShadow(8823), { in: str })];
-    obj3.children = items1;
-    items[4] = React5(FeDropShadow(8821), obj3);
-    obj.children = items;
-    return React5(noop.Fragment, obj);
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const merged = Object.assign(FeFlood(8798).extractFilter(this.props));
+    const merged1 = Object.assign(_modDef8798(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
 };
-let items = [entry];
-const importDefaultResultResult = _createClass(FeDropShadow, items);
-importDefaultResultResult.displayName = "FeDropShadow";
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = {};
+const items = [entry];
+const importDefaultResultResult = _createClass(FeFlood, items);
+importDefaultResultResult.displayName = "FeFlood";
+let obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.floodColor = "black";
+obj.floodOpacity = 1;
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

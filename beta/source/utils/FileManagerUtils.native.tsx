@@ -1,12 +1,12 @@
-// Module ID: 8511
-// Function ID: 8512
+// Module ID: 8506
+// Function ID: 8507
 // Name: FileManagerUtils
-// Dependencies: [5, 3, 1155, 1368, 2]
+// Dependencies: [5, 3, 1151, 1364, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8511 (FileManagerUtils)
+// Module 8506 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import NativeFileModuleDefault from "NativeFileModule" /* 1155 */;
+import NativeFileModuleDefault from "NativeFileModule" /* 1151 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -21,7 +21,7 @@ let closure_5 = async function _readFile(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -43,16 +43,16 @@ let closure_5 = async function _readFile(arg0, value) {
           const tmp41 = (function getBaseDirectory(arg0) {
             if ("shared" === arg0) {
               if (!obj.isAndroid()) {
-                return closure_1_1(1155).getConstants().SharedDirPath;
+                return closure_1_1(1151).getConstants().SharedDirPath;
               }
-              obj = closure_1_0(1368);
+              obj = closure_1_0(1364);
             }
             if ("cache" === arg0) {
-              let DocumentsDirPath = closure_1_1(1155).getConstants().CacheDirPath;
-              const obj4 = closure_1_1(1155);
+              let DocumentsDirPath = closure_1_1(1151).getConstants().CacheDirPath;
+              const obj4 = closure_1_1(1151);
             } else {
-              DocumentsDirPath = closure_1_1(1155).getConstants().DocumentsDirPath;
-              const obj3 = closure_1_1(1155);
+              DocumentsDirPath = closure_1_1(1151).getConstants().DocumentsDirPath;
+              const obj3 = closure_1_1(1151);
             }
           })(closure_0);
           closure_131_2 = tmp41;

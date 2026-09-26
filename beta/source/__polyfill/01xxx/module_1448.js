@@ -1,100 +1,59 @@
 // Module ID: 1448
 // Function ID: 1449
-// Dependencies: [1449, 1319]
+// Dependencies: [1445, 1315, 1283, 1314]
 
 // Module 1448
-import callBoundIntrinsic from "callBoundIntrinsic" /* 1319 */;
-import _mod1449 from "module_1449" /* 1449 */;
+import _mod1283 from "module_1283" /* 1283 */;
+import _mod1314 from "module_1314" /* 1314 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1315 */;
 
-let closure_0 = _mod1449();
-let closure_1 = callBoundIntrinsic("Object.prototype.toString");
-function isArguments(obj) {
-  let tmp = closure_0;
-  if (closure_0) {
-    tmp = obj;
+if (tmp) {
+  let closure_2 = callBoundIntrinsic("RegExp.prototype.exec");
+  let closure_3 = {};
+  function throwRegexMarker() {
+    throw closure_3;
   }
-  if (tmp) {
-    tmp = typeof obj === "object";
+  const obj = { toString: throwRegexMarker, valueOf: throwRegexMarker };
+  const _Symbol = Symbol;
+  if (typeof Symbol.toPrimitive === "symbol") {
+    const _Symbol2 = Symbol;
+    obj[Symbol.toPrimitive] = throwRegexMarker;
   }
-  if (tmp) {
-    const _Symbol = Symbol;
-    tmp = Symbol.toStringTag in obj;
+  function isRegex(obj) {
+    if (obj) {
+      if (typeof obj === "object") {
+        const tmp8 = _mod1283(obj, "lastIndex");
+        if (tmp8) {
+          if (_mod1314(tmp8, "value")) {
+            try {
+              closure_2(obj, obj);
+            } catch (tmp4) {
+              return tmp4 === closure_3;
+            }
+          }
+        }
+        return false;
+      }
+    }
+    return false;
   }
-  let tmp3 = !tmp;
-  if (!tmp) {
-    tmp3 = "[object Arguments]" === closure_1(obj);
-  }
-  return tmp3;
-}
-let isArguments2 = function isArguments(callee) {
-  if (typeof isArguments === "function") {
-    let tmp2 = closure_0;
-    if (closure_0) {
-      tmp2 = callee;
-    }
-    if (tmp2) {
-      tmp2 = typeof callee === "object";
-    }
-    if (tmp2) {
-      const _Symbol = Symbol;
-      tmp2 = Symbol.toStringTag in callee;
-    }
-    let tmp4 = !tmp2;
-    if (!tmp2) {
-      tmp4 = "[object Arguments]" === closure_1(callee);
-    }
-    let tmp6 = tmp4;
-    if (!tmp6) {
-      let tmp8 = null !== callee && typeof callee === "object";
-      if (tmp8) {
-        tmp8 = "length" in callee;
+} else {
+  let closure_5 = callBoundIntrinsic("Object.prototype.toString");
+  isRegex = function isRegex(obj) {
+    let tmp = !obj;
+    if (obj) {
+      let tmp2 = typeof obj !== "object";
+      if (typeof obj !== "object") {
+        tmp2 = typeof obj !== "function";
       }
-      if (tmp8) {
-        tmp8 = typeof callee.length === "number";
-      }
-      if (tmp8) {
-        tmp8 = callee.length >= 0;
-      }
-      if (tmp8) {
-        tmp8 = "[object Array]" !== closure_1(callee);
-      }
-      if (tmp8) {
-        tmp8 = "callee" in callee;
-      }
-      if (tmp8) {
-        tmp8 = "[object Function]" === closure_1(callee.callee);
-      }
-      tmp6 = tmp8;
+      tmp = tmp2;
     }
-    return tmp6;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-isArguments.isLegacyArguments = isArguments2;
-if ((() => {
-  if (typeof isArguments === "function") {
-    let tmp = closure_0;
-    if (closure_0) {
-      tmp = arguments;
-    }
-    if (tmp) {
-      tmp = typeof arguments === "object";
-    }
-    if (tmp) {
-      const _Symbol = Symbol;
-      tmp = Symbol.toStringTag in arguments;
-    }
-    let tmp9 = !tmp;
+    let tmp3 = !tmp;
     if (!tmp) {
-      tmp9 = "[object Arguments]" === closure_1(arguments);
+      tmp3 = "[object RegExp]" === closure_5(obj);
     }
-    return tmp9;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-})()) {
-  isArguments2 = isArguments;
+    return tmp3;
+  };
 }
 
-export default isArguments2;
+export default isRegex;

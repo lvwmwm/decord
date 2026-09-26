@@ -1,99 +1,32 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 16615
+// Function ID: 16616
 // Name: FavoritesGuildSuggestionsLoader
-// Dependencies: [19, 16551, 21, 558, 568, 16624, 2]
+// Dependencies: [19, 16544, 21, 16616, 2]
 
-// Module 16623 (FavoritesGuildSuggestionsLoader)
-import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 16624 */;
+// Module 16615 (FavoritesGuildSuggestionsLoader)
+import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 16616 */;
 import noop from "module_19" /* 19 */;
 
-const require = fn;
-const FavoritesGuildSuggestionsStore = fn(16551);
-({ NO_SUGGESTIONS: closure_4, setFavoritesGuildSuggestions: hasOwnProperty, useFavoritesGuildSuggestionsVisibility: metroRequire } = FavoritesGuildSuggestionsStore);
-const jsx = fn(21).jsx;
-let ReactCompilerGating = fn(558);
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = require("c").c(3);
-  const tmp2 = useFavoritesGuildSuggestionCandidatesDefault(4);
-  _require = tmp2;
-  if (cResult[0] !== tmp2) {
-    const fn = function u() {
-      hasOwnProperty(closure_0);
-    };
-    const items = [tmp2];
-    cResult[0] = tmp2;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp4 = items;
-    let tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
-  }
-  const layoutEffect = noop.useLayoutEffect(tmp3, tmp4);
-  return null;
-}) : (() => {
+function FavoritesGuildSuggestionsLoaderInner() {
   const tmp = useFavoritesGuildSuggestionCandidatesDefault(4);
-  closure_0 = tmp;
+  importDefault = tmp;
   const items = [tmp];
   const layoutEffect = noop.useLayoutEffect(() => {
-    hasOwnProperty(closure_0);
+    React4(closure_0);
   }, items);
   return null;
-});
-ReactCompilerGating = fn(558);
+}
+const FavoritesGuildSuggestionsStore = fn(16544);
+({ NO_SUGGESTIONS: c3, setFavoritesGuildSuggestions: closure_4, useFavoritesGuildSuggestionsVisibility: hasOwnProperty } = FavoritesGuildSuggestionsStore);
+const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsLoader.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = isEligible(568).c(5);
-  let tmp2 = closure_6();
-  isEligible = tmp2.isEligible;
-  const isSelected = tmp2.isSelected;
-  dependencyMap = noop.useRef(false);
-  if (cResult[0] === isEligible) {
-    if (cResult[1] === isSelected) {
-      let tmp3 = cResult[2];
-      let tmp4 = cResult[3];
-    }
-    const layoutEffect = noop.useLayoutEffect(tmp3, tmp4);
-    if (!isSelected) {
-      return null;
-    } else {
-      const _Symbol = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp11 = <closure_8 />;
-        cResult[4] = tmp11;
-      }
-    }
-  }
-  const fn = function u() {
-    if (isSelected) {
-      tmp.current = true;
-    } else {
-      const current = tmp.current;
-      let tmp2 = !current;
-      if (!current) {
-        tmp2 = isEligible;
-      }
-      if (!tmp2) {
-        tmp.current = false;
-        hasOwnProperty(React4);
-      }
-    }
-  };
-  const items = [isEligible, isSelected];
-  cResult[0] = isEligible;
-  cResult[1] = isSelected;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp4 = items;
-  tmp3 = fn;
-}) : (() => {
-  const tmp = closure_6();
+export default noop.memo(function FavoritesGuildSuggestionsLoader() {
+  const tmp = closure_5();
   const isEligible = tmp.isEligible;
   const isSelected = tmp.isSelected;
-  closure_2 = noop.useRef(false);
+  noop = noop.useRef(false);
   const items = [isEligible, isSelected];
   const layoutEffect = noop.useLayoutEffect(() => {
     if (isSelected) {
@@ -106,13 +39,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       if (!tmp2) {
         tmp.current = false;
-        hasOwnProperty(React4);
+        React4(React3);
       }
     }
   }, items);
   let tmp3 = null;
   if (isSelected) {
-    tmp3 = <closure_8 />;
+    tmp3 = <FavoritesGuildSuggestionsLoaderInner />;
   }
   return tmp3;
-}));
+});

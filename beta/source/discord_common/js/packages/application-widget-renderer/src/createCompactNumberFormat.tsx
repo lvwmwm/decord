@@ -1,10 +1,10 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9237
+// Function ID: 9238
 // Name: createCompactNumberFormat
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 9235 (createCompactNumberFormat)
+// Module 9237 (createCompactNumberFormat)
 import size from "module_2" /* 2 */;
 
 function toAsciiDigits(arg0, get) {
@@ -34,7 +34,7 @@ export const createCompactNumberFormat = function createCompactNumberFormat(stat
     num = num + 1;
   } while (num <= 9);
   const numberFormat1 = new Intl.NumberFormat(stateFromStores, { notation: "compact", compactDisplay: "short" });
-  const map1 = new Map();
+  map1 = new Map();
   return {
     format(arg0) {
       let tmp10;

@@ -1,14 +1,14 @@
-// Module ID: 10236
-// Function ID: 10237
+// Module ID: 10239
+// Function ID: 10240
 // Name: AttachmentUrlUtils
-// Dependencies: [5, 5256, 1078, 1095, 2018, 2017, 1370, 1275, 2]
+// Dependencies: [5, 5254, 1074, 1091, 2014, 2013, 1366, 1271, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentPathUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 10236 (AttachmentUrlUtils)
-import DurationsDefault from "Durations" /* 1095 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import URLUtilsDefault from "URLUtils" /* 1370 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2017 */;
+// Module 10239 (AttachmentUrlUtils)
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2013 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -234,7 +234,7 @@ let closure_14 = async function _maybeRefreshAttachmentUrl(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -302,8 +302,8 @@ let closure_14 = async function _maybeRefreshAttachmentUrl(arg0, value) {
     }
   }
 };
-const ATTACHMENT_PATH_PREFIXES = fn(5256).ATTACHMENT_PATH_PREFIXES;
-const Endpoints = fn(1078).Endpoints;
+const ATTACHMENT_PATH_PREFIXES = fn(5254).ATTACHMENT_PATH_PREFIXES;
+const Endpoints = fn(1074).Endpoints;
 const HOUR = DurationsDefault.Millis.HOUR;
 let items = [window.GLOBAL_ENV.CDN_HOST, ];
 let substr;
@@ -363,7 +363,7 @@ function getSignedAttachmentExpiration(searchParams) {
   }
   return result;
 }
-const mapped = items.map(fn(2018).getHostWithoutPort);
+const mapped = items.map(fn(2014).getHostWithoutPort);
 let closure_7 = mapped.filter((item) => {
   let tmp = null != item;
   if (tmp) {

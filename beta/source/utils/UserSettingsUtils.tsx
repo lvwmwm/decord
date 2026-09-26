@@ -1,20 +1,20 @@
-// Module ID: 7273
-// Function ID: 7274
+// Module ID: 7272
+// Function ID: 7273
 // Name: UserSettingsUtils
-// Dependencies: [5140, 2067, 1078, 2023, 4970, 7274, 1119, 1114, 2]
+// Dependencies: [5138, 2063, 1074, 2019, 4968, 7273, 1115, 1110, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 7273 (UserSettingsUtils)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import util from "util" /* 1119 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7274 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5140 */;
-import GuildStore from "GuildStore" /* 2067 */;
+// Module 7272 (UserSettingsUtils)
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7273 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5138 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, FriendSourceFlags: metroRequire, AllFriendSourceFlags: closure_7, ComponentActions: closure_8 } = Constants);
 const NonSpamRetrainingOptInOptions = { UNDECIDED: 0, [0]: "UNDECIDED", OPTIN: 1, [1]: "OPTIN", OPTOUT: 2, [2]: "OPTOUT" };
 const size = fn(2);

@@ -1,14 +1,14 @@
-// Module ID: 4455
-// Function ID: 4456
+// Module ID: 4451
+// Function ID: 4452
 // Name: SubscriptionPlanStore
-// Dependencies: [4451, 1078, 1378, 2021, 504, 11, 577, 2]
+// Dependencies: [4447, 1074, 1374, 2017, 504, 11, 573, 2]
 
-// Module 4455 (SubscriptionPlanStore)
+// Module 4451 (SubscriptionPlanStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import FunctionUtils from "FunctionUtils" /* 2021 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4451 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import FunctionUtils from "FunctionUtils" /* 2017 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4447 */;
 
 require = fn;
 function addSubscriptionPlan(fromServer) {
@@ -56,9 +56,9 @@ function reset() {
     addSubscriptionPlan(SubscriptionPlanRecord.createFromServer({ id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 }));
   });
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
-const PremiumConstants = fn(1378);
+const PremiumConstants = fn(1374);
 ({ SubscriptionIntervalTypes, SubscriptionPlanInfo } = PremiumConstants);
 const SubscriptionPlans = PremiumConstants.SubscriptionPlans;
 ({ PremiumSubscriptionSKUs: closure_8, ACTIVE_PREMIUM_SKUS: closure_9 } = PremiumConstants);
@@ -153,11 +153,11 @@ prototype["isLoadedForSKUs"] = function isLoadedForSKUs(items) {
 };
 prototype["isFetchingForPremiumSKUs"] = function isFetchingForPremiumSKUs() {
   const self = this;
-  return options.some((item) => self.isFetchingForSKU(item));
+  return React7.some((item) => self.isFetchingForSKU(item));
 };
 prototype["isLoadedForPremiumSKUs"] = function isLoadedForPremiumSKUs() {
   const self = this;
-  return options.every((item) => self.isLoadedForSKU(item));
+  return React7.every((item) => self.isLoadedForSKU(item));
 };
 prototype["ignoreSKUFetch"] = function ignoreSKUFetch(arg0) {
   set1.add(arg0);

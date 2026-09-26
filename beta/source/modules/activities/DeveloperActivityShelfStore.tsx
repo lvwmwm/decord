@@ -1,14 +1,14 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9166
+// Function ID: 9167
 // Name: DeveloperActivityShelfStore
-// Dependencies: [1078, 9165, 504, 2023, 577, 2]
+// Dependencies: [1074, 9167, 504, 2019, 573, 2]
 
-// Module 9164 (DeveloperActivityShelfStore)
+// Module 9166 (DeveloperActivityShelfStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import Constants from "Constants" /* 1078 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9165 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9167 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationFlags = Constants.ApplicationFlags;

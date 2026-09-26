@@ -1,17 +1,17 @@
-// Module ID: 8441
-// Function ID: 8442
+// Module ID: 8436
+// Function ID: 8437
 // Name: utils
-// Dependencies: [1095, 11, 1119, 4384, 8442, 4027, 8436, 2]
+// Dependencies: [1091, 11, 1115, 4380, 8437, 4023, 8431, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8441 (utils)
+// Module 8436 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import util from "util" /* 1119 */;
-import _mod4027 from "module_4027" /* 4027 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8436 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8442 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import util from "util" /* 1115 */;
+import _mod4023 from "module_4023" /* 4023 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8431 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8437 */;
 import size from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -92,7 +92,7 @@ function formatTimestampToA11yLabel(time) {
   items.push(intl3.formatToPlainString(util.t.geSp4K, { seconds }));
   return items.join(", ");
 }
-function formatEndedTimestamp(entry, stateFromStores, timestamp, arg3) {
+function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   let obj = arg3;
   if (arg3 === undefined) {
     obj = {};
@@ -101,27 +101,27 @@ function formatEndedTimestamp(entry, stateFromStores, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef4384(timestamp);
-  const tmp3 = _modDef4384;
+  const obj2 = _modDef4380(timestamp);
+  const tmp3 = _modDef4380;
   const diffResult = obj2.diff(tmp3(SnowflakeUtilsDefault.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
   if (absolute < DurationsDefault.Seconds.MINUTE) {
     return formatSet.secondsAgo(diffResult);
-  } else if (absolute < tmp(1095).Seconds.HOUR) {
+  } else if (absolute < tmp(1091).Seconds.HOUR) {
     const _Math5 = Math;
-    return formatSet.minutesAgo(Math.round(diffResult / tmp(1095).Seconds.MINUTE));
-  } else if (absolute < 12 * tmp(1095).Seconds.HOUR) {
+    return formatSet.minutesAgo(Math.round(diffResult / tmp(1091).Seconds.MINUTE));
+  } else if (absolute < 12 * tmp(1091).Seconds.HOUR) {
     const _Math4 = Math;
-    return formatSet.hoursAgo(Math.round(diffResult / tmp(1095).Seconds.HOUR));
-  } else if (absolute < 9 * tmp(1095).Seconds.DAY) {
+    return formatSet.hoursAgo(Math.round(diffResult / tmp(1091).Seconds.HOUR));
+  } else if (absolute < 9 * tmp(1091).Seconds.DAY) {
     const _Math3 = Math;
-    return formatSet.daysAgo(Math.round(diffResult / tmp(1095).Seconds.DAY));
-  } else if (absolute < 4 * tmp(1095).Seconds.WEEK) {
+    return formatSet.daysAgo(Math.round(diffResult / tmp(1091).Seconds.DAY));
+  } else if (absolute < 4 * tmp(1091).Seconds.WEEK) {
     const _Math2 = Math;
-    return formatSet.weeksAgo(Math.round(diffResult / (7 * tmp(1095).Seconds.DAY)));
+    return formatSet.weeksAgo(Math.round(diffResult / (7 * tmp(1091).Seconds.DAY)));
   } else {
     const _Math = Math;
-    return formatSet.monthsAgo(Math.round(diffResult / tmp(1095).Seconds.DAYS_30));
+    return formatSet.monthsAgo(Math.round(diffResult / tmp(1091).Seconds.DAYS_30));
   }
 }
 let closure_6 = {
@@ -379,9 +379,9 @@ export const isEntryMarathon = function isEntryMarathon(entry) {
   }
   return marathon;
 };
-export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastPlayTime(traits) {
+export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastPlayTime(entry) {
   const RESURRECTED = ContentInventoryTraitType.ContentInventoryTraitType.RESURRECTED;
-  traits = traits.traits;
+  const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let prop;
   if (found != null) {
@@ -396,7 +396,7 @@ export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastP
 };
 export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(start) {
   const obj2 = { start, end: null };
-  const obj = _mod4027;
+  const obj = _mod4023;
   obj2.end = new Date();
   const intervalToDurationResult = obj.intervalToDuration(obj2);
   const months = intervalToDurationResult.months;
@@ -414,7 +414,7 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
   if (undefined !== days) {
     num3 = days;
   }
-  const intl = tmp(1119).intl;
+  const intl = tmp(1115).intl;
   const obj3 = { months: num, weeks: null, days: null };
   let num4 = 0;
   if (num <= 0) {
@@ -554,22 +554,22 @@ export const getMarathonDescription = function getMarathonDescription(entry) {
       let obj = { text: null, tooltipText: null, a11yText: null };
     } else {
       obj = { text: null, tooltipText: null, a11yText: null };
-      const intl = tmp(1119).intl;
+      const intl = tmp(1115).intl;
       const obj2 = { hours: rounded };
-      obj.text = intl.formatToPlainString(tmp(1119).t.vZaMem, obj2);
-      const intl2 = tmp(1119).intl;
+      obj.text = intl.formatToPlainString(tmp(1115).t.vZaMem, obj2);
+      const intl2 = tmp(1115).intl;
       const obj3 = { hours: rounded };
-      obj.tooltipText = intl2.formatToPlainString(tmp(1119).t.S5F485, obj3);
-      const intl3 = tmp(1119).intl;
+      obj.tooltipText = intl2.formatToPlainString(tmp(1115).t.S5F485, obj3);
+      const intl3 = tmp(1115).intl;
       const obj4 = { hours: rounded };
-      obj.a11yText = intl3.formatToPlainString(tmp(1119).t["RZY+tX"], obj4);
+      obj.a11yText = intl3.formatToPlainString(tmp(1115).t["RZY+tX"], obj4);
     }
     return obj;
   }
 };
-export const getTrendingType = function getTrendingType(traits) {
+export const getTrendingType = function getTrendingType(entry) {
   const TRENDING_CONTENT = ContentInventoryTraitType.ContentInventoryTraitType.TRENDING_CONTENT;
-  traits = traits.traits;
+  const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let trending;
   if (found != null) {

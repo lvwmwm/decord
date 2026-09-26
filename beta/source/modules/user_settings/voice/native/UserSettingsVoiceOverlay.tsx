@@ -1,73 +1,24 @@
-// Module ID: 10283
-// Function ID: 10284
+// Module ID: 10286
+// Function ID: 10287
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 10273, 21, 558, 568, 565, 1119, 10272, 7478, 10284, 2]
+// Dependencies: [19, 10276, 21, 563, 10275, 1115, 7477, 10287, 2]
+// Exports: default
 
-// Module 10283 (UserSettingsVoiceOverlay)
-import useStateFromStores from "useStateFromStores" /* 565 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import TableSwitchRow from "TableSwitchRow" /* 7478 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 10272 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10284 */;
+// Module 10286 (UserSettingsVoiceOverlay)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import util from "util" /* 1115 */;
+import TableSwitchRow from "TableSwitchRow" /* 7477 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 10275 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10287 */;
 import noop from "module_19" /* 19 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10273 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10276 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOverlay.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MobileVoiceOverlayStore];
-    const fn = function s() {
-      return enabled.getEnabled();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = useStateFromStores.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.bNqkD9);
-    cResult[2] = stringResult;
-    let tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t["9CSZJm"]);
-    const intl3 = tmp(1119).intl;
-    const stringResult2 = intl3.string(tmp(1119).t.Wfoivk);
-    cResult[3] = stringResult1;
-    cResult[4] = stringResult2;
-    let tmp11 = stringResult2;
-    let tmp10 = stringResult1;
-  } else {
-    tmp10 = cResult[3];
-    tmp11 = cResult[4];
-  }
-  if (cResult[5] !== stateFromStores) {
-    const obj2 = { title: tmp8, hasIcons: false, children: null };
-    const obj3 = { label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled };
-    obj2.children = jsx(tmp(7478).TableSwitchRow, { label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
-    const tmp17 = jsx(tmp(10272).UserSettingsTableRowGroup, { title: tmp8, hasIcons: false, children: null });
-    cResult[5] = stateFromStores;
-    cResult[6] = tmp17;
-    let tmp14 = tmp17;
-  } else {
-    tmp14 = cResult[6];
-  }
-  return tmp14;
-}) : (() => {
+export default function UserSettingsVoiceOverlay() {
   const items = [MobileVoiceOverlayStore];
   const stateFromStores = useStateFromStores.useStateFromStores(items, () => enabled.getEnabled());
   const obj2 = { title: null, hasIcons: false, children: null };
@@ -82,4 +33,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj3.onValueChange = MobileVoiceOverlayActionCreatorsDefault.setEnabled;
   obj2.children = jsx(TableSwitchRow.TableSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null });
   return jsx(UserSettingsVoice.UserSettingsTableRowGroup, { title: null, hasIcons: false, children: null });
-});
+};

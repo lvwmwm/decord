@@ -1,19 +1,19 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15047
+// Function ID: 15048
 // Name: useShouldShowInitialGoogleWalletBanner
-// Dependencies: [5, 32, 19, 8739, 8728, 504, 1368, 8727, 8746, 1384, 8749, 2]
+// Dependencies: [5, 32, 19, 8734, 8723, 504, 1364, 8722, 8741, 1380, 8744, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 15043 (useShouldShowInitialGoogleWalletBanner)
+// Module 15047 (useShouldShowInitialGoogleWalletBanner)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8739 */;
+import SafetyHubStore from "SafetyHubStore" /* 8734 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AgeCheckStatus = fn(8728).AgeCheckStatus;
+const AgeCheckStatus = fn(8723).AgeCheckStatus;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useShouldShowInitialGoogleWalletBanner.tsx");
 
@@ -52,7 +52,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -73,7 +73,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
                 c2 = 1;
                 c3 = 2;
                 c4 = 1;
-                const obj6 = { value: _true(8746).fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
+                const obj6 = { value: _true(8741).fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
                 return obj6;
               }
             } else {
@@ -121,7 +121,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
               }
               c3 = 3;
               c4 = 1;
-              const obj8 = { value: _true(8749).checkGoogleWalletAvailable(), done: false };
+              const obj8 = { value: _true(8744).checkGoogleWalletAvailable(), done: false };
               return obj8;
             }
           } catch (tmp27) {

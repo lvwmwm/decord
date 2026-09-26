@@ -1,39 +1,18 @@
-// Module ID: 8952
-// Function ID: 8953
+// Module ID: 8954
+// Function ID: 8955
 // Name: useUserIsTeen
-// Dependencies: [1376, 558, 568, 504, 2]
+// Dependencies: [1372, 504, 2]
+// Exports: useUserIsTeen
 
-// Module 8952 (useUserIsTeen)
+// Module 8954 (useUserIsTeen)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/hooks/useUserIsTeen.tsx");
 
-export const useUserIsTeen = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      currentUser = currentUser.getCurrentUser();
-      let nsfwAllowed;
-      if (currentUser != null) {
-        nsfwAllowed = currentUser.nsfwAllowed;
-      }
-      return nsfwAllowed;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return false === initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+export const useUserIsTeen = function useUserIsTeen() {
   const items = [UserStore];
   return false === initialize.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
@@ -43,4 +22,4 @@ export const useUserIsTeen = ReactCompilerGating.isReactCompilerEnabled() ? (() 
     }
     return nsfwAllowed;
   });
-});
+};

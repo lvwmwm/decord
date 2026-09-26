@@ -1,9 +1,19 @@
 // Module ID: 18123
 // Function ID: 18124
-// Dependencies: [1125]
+// Dependencies: [4910, 18124, 18128]
 
 // Module 18123
-import registerAsset from "module_1125" /* 1125 */;
+import arrayReduce from "arrayReduce" /* 4910 */;
+import words from "words" /* 18124 */;
+import deburr from "deburr" /* 18128 */;
 
+let closure_2 = RegExp("['\u2019]", "g");
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "bfb98edbbbdba844f1779b23cfef0afa", name: "finishing_touches_light", type: "png" });
+export default function createCompounder(arg0) {
+  closure_0 = arg0;
+  return (arg0) => {
+    const tmp = arrayReduce;
+    const tmp2 = words;
+    return tmp(tmp2(deburr(arg0).replace(closure_2, "")), closure_0, "");
+  };
+};

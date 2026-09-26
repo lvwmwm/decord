@@ -1,13 +1,11 @@
-// Module ID: 7504
-// Function ID: 7505
+// Module ID: 7502
+// Function ID: 7503
 // Name: GuildSpaceExperiment
-// Dependencies: [4704, 558, 568, 2]
-// Exports: getGuildSpaceExperimentEnabled
+// Dependencies: [4701, 2]
+// Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 7504 (GuildSpaceExperiment)
-import c from "c" /* 568 */;
-import createExperiment from "module_4704" /* 4704 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7502 (GuildSpaceExperiment)
+import createExperiment from "module_4701" /* 4701 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2026-06_guild_spaces", label: "Guild Space", defaultConfig: { enabled: false }, treatments: null };
@@ -20,25 +18,6 @@ export const GuildSpaceExperiment = experiment;
 export const getGuildSpaceExperimentEnabled = function getGuildSpaceExperimentEnabled(guildId, location) {
   return experiment.getCurrentConfig({ guildId, location }, { autoTrackExposure: false }).enabled;
 };
-export const useGuildSpaceExperimentEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
-  const cResult = c.c(4);
-  if (cResult[0] === guildId) {
-    if (cResult[1] === location) {
-      let tmp2 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { autoTrackExposure: false };
-      cResult[3] = obj2;
-      let tmp4 = obj2;
-    } else {
-      tmp4 = cResult[3];
-    }
-    return experiment.useExperiment(tmp2, tmp4).enabled;
-  }
-  const obj3 = { guildId, location };
-  cResult[0] = guildId;
-  cResult[1] = location;
-  cResult[2] = obj3;
-  tmp2 = obj3;
-}) : ((guildId, location) => experiment.useExperiment({ guildId, location }, { autoTrackExposure: false }).enabled);
+export const useGuildSpaceExperimentEnabled = function useGuildSpaceExperimentEnabled(guildId, location) {
+  return experiment.useExperiment({ guildId, location }, { autoTrackExposure: false }).enabled;
+};

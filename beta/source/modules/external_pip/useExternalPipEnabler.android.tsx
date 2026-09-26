@@ -1,62 +1,20 @@
-// Module ID: 17445
-// Function ID: 17446
+// Module ID: 17469
+// Function ID: 17470
 // Name: useExternalPipEnabler
-// Dependencies: [4806, 502, 4813, 558, 568, 17446, 504, 2]
+// Dependencies: [4804, 502, 4811, 504, 17470, 2]
+// Exports: default
 
-// Module 17445 (useExternalPipEnabler)
-import ExternalPipEnablerState from "ExternalPipEnablerState" /* 17446 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
+// Module 17469 (useExternalPipEnabler)
+import ExternalPipEnablerState from "ExternalPipEnablerState" /* 17470 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/external_pip/useExternalPipEnabler.android.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
-  const cResult = disabled(568).c(4);
-  disabled = disabled.disabled;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelRTCStore, RTCConnectionStore, AuthenticationStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== disabled) {
-    const fn = function o() {
-      const channelId = RTCConnectionStore.getChannelId();
-      if (null != channelId) {
-        if (!disabled) {
-          const videoParticipants = ChannelRTCStore.getVideoParticipants(channelId);
-          let tmp2 = videoParticipants.filter((localVideoDisabled) => !localVideoDisabled.localVideoDisabled).length > 0;
-          if (!tmp2) {
-            const streamParticipants = ChannelRTCStore.getStreamParticipants(channelId);
-            const found = streamParticipants.filter((user) => user.user.id !== id.getId());
-            tmp2 = null != found.find((streamId) => null != streamId.streamId);
-          }
-          const obj2 = {};
-          const merged = Object.assign(ExternalPipEnablerState.DEFAULT_STATE);
-          obj2.externalPipEnabled = tmp2;
-          return obj2;
-        }
-      }
-      return ExternalPipEnablerState.DEFAULT_STATE;
-    };
-    const items1 = [disabled];
-    cResult[1] = disabled;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp9 = items1;
-    let tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const obj = disabled(568);
-  return disabled(504).useStateFromStoresObject(first, tmp8, tmp9);
-}) : ((disabled) => {
+export default function useExternalPIPEnabler(disabled) {
   disabled = disabled.disabled;
   const items = [ChannelRTCStore, RTCConnectionStore, AuthenticationStore];
   const items1 = [disabled];
@@ -79,4 +37,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     }
     return ExternalPipEnablerState.DEFAULT_STATE;
   }, items1);
-});
+};

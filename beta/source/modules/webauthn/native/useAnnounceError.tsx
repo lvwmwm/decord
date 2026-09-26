@@ -1,45 +1,18 @@
-// Module ID: 14977
-// Function ID: 14978
+// Module ID: 14981
+// Function ID: 14982
 // Name: useAnnounceError
-// Dependencies: [19, 558, 568, 4504, 2]
+// Dependencies: [19, 4499, 2]
+// Exports: useAnnounceError
 
-// Module 14977 (useAnnounceError)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+// Module 14981 (useAnnounceError)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4499 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/webauthn/native/useAnnounceError.tsx");
 
-export const useAnnounceError = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] !== arg0) {
-    const fn = function c() {
-      let tmp2 = null != closure_0;
-      if (tmp2) {
-        tmp2 = "" !== tmp;
-      }
-      if (tmp2) {
-        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-        AccessibilityAnnouncer.announce(tmp);
-      }
-    };
-    const items = [arg0];
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp3 = items;
-    let tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
-  }
-  const effect = noop.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+export const useAnnounceError = function useAnnounceError(arg0) {
   closure_0 = arg0;
   const items = [arg0];
   const effect = noop.useEffect(() => {
@@ -52,4 +25,4 @@ export const useAnnounceError = ReactCompilerGating.isReactCompilerEnabled() ? (
       AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
-});
+};

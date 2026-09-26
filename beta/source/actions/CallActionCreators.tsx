@@ -1,24 +1,24 @@
-// Module ID: 10047
-// Function ID: 10048
+// Module ID: 10034
+// Function ID: 10035
 // Name: CallActionCreators
-// Dependencies: [2045, 4441, 1376, 1078, 5662, 1275, 1245, 5142, 1119, 10048, 10004, 577, 2]
+// Dependencies: [2041, 4437, 1372, 1074, 5660, 1271, 1241, 5140, 1115, 10035, 10026, 573, 2]
 
-// Module 10047 (CallActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5662 */;
-import useCanRing from "useCanRing" /* 10004 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 10034 (CallActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5660 */;
+import useCanRing from "useCanRing" /* 10026 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: metroRequire, AnalyticEvents: closure_7, ChannelTypesSets: closure_8, ChannelTypes: closure_9 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/CallActionCreators.tsx");
@@ -60,9 +60,9 @@ export default {
             str = user.username;
           }
           obj3.body = intl2.format(util.t.IdKo2z, { username: str });
-          const intl3 = tmp3(1119).intl;
+          const intl3 = tmp3(1115).intl;
           obj3.confirmText = intl3.string(util.t["PMsq/b"]);
-          const intl4 = tmp3(1119).intl;
+          const intl4 = tmp3(1115).intl;
           obj3.cancelText = intl4.string(util.t.BddRzS);
           obj3.onConfirm = function onConfirm() {
             closure_1(closure_2[9]).addRelationship({ userId, context: { location: "Call" } });
@@ -80,15 +80,15 @@ export default {
       }
     }
   },
-  ring(channelId, items, voice_panel_floating_cta) {
+  ring(channelId, items, gdm_invite) {
     const channel = ChannelStore.getChannel(channelId);
     if (null != channel) {
       const CALLABLE = constants2.CALLABLE;
       const result = useCanRing.canRingUsersInChannel(channel);
       if (result) {
-        const HTTP = tmp3(1275).HTTP;
+        const HTTP = tmp3(1271).HTTP;
         const request = { url: timestampProducer.CALL_RING(channelId), body: null, oldFormErrors: true, rejectWithError: true };
-        const obj3 = { recipients: items, analytics_location: voice_panel_floating_cta };
+        const obj3 = { recipients: items, analytics_location: gdm_invite };
         request.body = obj3;
         HTTP.post(request);
         if (tmp14) {

@@ -1,10 +1,10 @@
-// Module ID: 5030
-// Function ID: 5031
+// Module ID: 5028
+// Function ID: 5029
 // Name: shared/PlatformUtils
-// Dependencies: [1344, 2]
+// Dependencies: [1340, 2]
 
-// Module 5030 (shared/PlatformUtils)
-import format_mod from "format" /* 1344 */;
+// Module 5028 (shared/PlatformUtils)
+import format_mod from "format" /* 1340 */;
 
 const set1 = new Set(["Android", "iOS", "Windows Phone"]);
 let platform;

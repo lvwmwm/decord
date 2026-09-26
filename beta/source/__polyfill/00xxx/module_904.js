@@ -1,12 +1,10 @@
 // Module ID: 904
 // Function ID: 905
-// Dependencies: []
+// Dependencies: [682]
 
 // Module 904
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let __SENTRY_DEBUG__ = typeof globalThis.__SENTRY_DEBUG__ === "undefined";
-if (typeof globalThis.__SENTRY_DEBUG__ !== "undefined") {
-  __SENTRY_DEBUG__ = globalThis.__SENTRY_DEBUG__;
-}
+import _mod682 from "module_682" /* 682 */;
 
-export const DEBUG_BUILD = __SENTRY_DEBUG__;
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const WINDOW = _mod682.GLOBAL_OBJ;

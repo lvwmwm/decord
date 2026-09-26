@@ -1,22 +1,22 @@
-// Module ID: 18369
-// Function ID: 18370
+// Module ID: 18360
+// Function ID: 18361
 // Name: handleAppStateChanged
-// Dependencies: [502, 1983, 1078, 3, 10, 577, 4813, 18368, 7754, 4639, 9, 1245, 2]
+// Dependencies: [502, 1979, 1074, 3, 10, 573, 4811, 18359, 7749, 4636, 9, 1241, 2]
 // Exports: default
 
-// Module 18369 (handleAppStateChanged)
+// Module 18360 (handleAppStateChanged)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4639 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7754 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4636 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7749 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AppStateStore from "AppStateStore" /* 1983 */;
+import AppStateStore from "AppStateStore" /* 1979 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, AppStates: metroRequire } = Constants);
 let closure_7 = new LoggerDefault("index.native.tsx");
 const size = fn(2);
@@ -35,8 +35,8 @@ export default function handleAppStateChanged(state) {
     const _default = RTCConnectionStore.default;
   }
   if (isAuthenticatedResult) {
-    tmp2(18368).deferUpdate();
-    const tmp2Result = tmp2(18368);
+    tmp2(18359).deferUpdate();
+    const tmp2Result = tmp2(18359);
   }
   if (state === constants2.ACTIVE) {
     TTIAnalyticsUtils.trackAppOpened("launcher");
@@ -46,7 +46,7 @@ export default function handleAppStateChanged(state) {
   const tmp8 = state === constants2.ACTIVE && state !== constants2.ACTIVE;
   TTITrackerDefault.appStateChanged(state);
   if (tmp8) {
-    tmp2(1245).track(constants.APP_BACKGROUND, {});
-    const tmp2Result4 = tmp2(1245);
+    tmp2(1241).track(constants.APP_BACKGROUND, {});
+    const tmp2Result4 = tmp2(1241);
   }
 };

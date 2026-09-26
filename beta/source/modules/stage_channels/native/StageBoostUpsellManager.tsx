@@ -1,19 +1,19 @@
-// Module ID: 17904
-// Function ID: 17905
+// Module ID: 17895
+// Function ID: 17896
 // Name: StageBoostUpsellManager
-// Dependencies: [4483, 2045, 4431, 2099, 5665, 7397, 4757, 5668, 9920, 2053, 5681, 1984, 2]
+// Dependencies: [4479, 2041, 4427, 2095, 5663, 7395, 4755, 5666, 9942, 2049, 5679, 1980, 2]
 
-// Module 17904 (StageBoostUpsellManager)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import StageMediaHooks from "StageMediaHooks" /* 5668 */;
-import ActionSheetStore from "ActionSheetStore" /* 4483 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 17895 (StageBoostUpsellManager)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import StageMediaHooks from "StageMediaHooks" /* 5666 */;
+import ActionSheetStore from "ActionSheetStore" /* 4479 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const STAGE_BOOSTING_SHEET_KEY = fn(5665).STAGE_BOOSTING_SHEET_KEY;
+const STAGE_BOOSTING_SHEET_KEY = fn(5663).STAGE_BOOSTING_SHEET_KEY;
 let c8 = false;
 class StageBoostUpsellManager extends tmp2 {
   constructor() {
@@ -45,13 +45,13 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
         if (isGuildStageVoiceResult) {
           if (obj.getStageHasMedia(channel.id)) {
             if (tmp5Result.getChannelVideoLimit(channel).reachedLimit) {
-              if (PermissionStore.can(tmp5(2053).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
+              if (PermissionStore.can(tmp5(2049).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                 const obj2 = { channel };
-                ActionSheetActionCreatorsDefault.openLazy(tmp5(1984)(5681, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
+                ActionSheetActionCreatorsDefault.openLazy(tmp5(1980)(5679, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
                 c8 = true;
               }
             }
-            tmp5Result = tmp5(9920);
+            tmp5Result = tmp5(9942);
           }
           obj = StageMediaHooks;
           tmp6 = dependencyMap;

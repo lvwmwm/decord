@@ -1,10 +1,10 @@
-// Module ID: 8241
-// Function ID: 8242
+// Module ID: 8236
+// Function ID: 8237
 // Name: renderer/EmbedUtils
 // Dependencies: [17, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 8241 (renderer/EmbedUtils)
+// Module 8236 (renderer/EmbedUtils)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 7648
-// Function ID: 7649
+// Module ID: 7646
+// Function ID: 7647
 // Name: trackSoundPlayed
-// Dependencies: [2003, 2045, 4813, 2099, 5260, 1078, 1378, 1245, 2]
+// Dependencies: [1999, 2041, 4811, 2095, 5258, 1074, 1374, 1241, 2]
 // Exports: default
 
-// Module 7648 (trackSoundPlayed)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import RunningGameStore from "RunningGameStore" /* 2003 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+// Module 7646 (trackSoundPlayed)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import RunningGameStore from "RunningGameStore" /* 1999 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
-const DEFAULT_SOUND_GUILD_ID = fn(5260).DEFAULT_SOUND_GUILD_ID;
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const PremiumConstants = fn(1378);
+const DEFAULT_SOUND_GUILD_ID = fn(5258).DEFAULT_SOUND_GUILD_ID;
+const AnalyticEvents = fn(1074).AnalyticEvents;
+const PremiumConstants = fn(1374);
 ({ AnalyticsPremiumFeatureNames: closure_8, AnalyticsPremiumFeatureTiers: closure_9 } = PremiumConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/soundboard/trackSoundPlayed.tsx");
@@ -43,7 +43,7 @@ export default function trackSoundPlayed(location_stack, in_overlay, guildId, so
     }
     str = str2;
   }
-  const obj = { feature_name: constants.SOUNDBOARD_PLAY, feature_tier: tmp6 ? options.PREMIUM_STANDARD : options.FREE, guild_id: guildId, home_guild_id: guildId.guildId, location_stack, rtc_connection_id: rTCConnectionId, media_session_id: mediaSessionId, in_overlay, application_name: name, emoji_count: null, feature_selection: null, feature_selection_id: null, sound_type: null, sequence_number: null };
+  const obj = { feature_name: constants.SOUNDBOARD_PLAY, feature_tier: tmp6 ? React7.PREMIUM_STANDARD : React7.FREE, guild_id: guildId, home_guild_id: guildId.guildId, location_stack, rtc_connection_id: rTCConnectionId, media_session_id: mediaSessionId, in_overlay, application_name: name, emoji_count: null, feature_selection: null, feature_selection_id: null, sound_type: null, sequence_number: null };
   if (null != guildId.emojiId) {
     let num = 1;
   } else {

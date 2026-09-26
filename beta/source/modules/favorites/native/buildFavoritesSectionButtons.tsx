@@ -1,18 +1,18 @@
-// Module ID: 10640
-// Function ID: 10641
+// Module ID: 10519
+// Function ID: 10520
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 21, 10641, 1984, 4757, 10646, 10645, 1119, 3360, 8970, 10551, 10553, 1181, 2]
+// Dependencies: [5, 21, 10520, 1980, 4755, 10525, 10524, 1115, 3356, 8972, 10532, 10538, 1177, 2]
 // Exports: default
 
-// Module 10640 (buildFavoritesSectionButtons)
-import util from "util" /* 1119 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import _modDef3360 from "module_3360" /* 3360 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8970 */;
-import StarIcon from "StarIcon" /* 10551 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10553 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10645 */;
+// Module 10519 (buildFavoritesSectionButtons)
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import _modDef3356 from "module_3356" /* 3356 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8972 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10524 */;
+import StarIcon from "StarIcon" /* 10532 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10538 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -27,7 +27,7 @@ let closure_5 = async function _addChannelToFavorites(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -61,7 +61,7 @@ let closure_5 = async function _addChannelToFavorites(arg0, value) {
         obj.channelIds = items;
         value.addFavoriteChannels(obj);
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp12) {
       c3 = tmp;
@@ -80,7 +80,7 @@ let closure_6 = async function _removeChannelFromFavorites(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -111,7 +111,7 @@ let closure_6 = async function _removeChannelFromFavorites(arg0, value) {
       } else {
         const result = value.removeFavoriteChannel(closure_129_0);
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp12) {
       c3 = tmp;
@@ -121,7 +121,7 @@ let closure_6 = async function _removeChannelFromFavorites(arg0, value) {
 };
 function openNoAccessUpsell() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequireImpl(10646, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
+  obj.openLazy(asyncRequireImpl(10525, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
 }
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -136,14 +136,14 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
       if (!tmp) {
         const obj = { label: null, IconComponent: null, onPress: null };
         const intl = util.intl;
-        obj.label = intl.string(_modDef3360.G9fGlP);
+        obj.label = intl.string(_modDef3356.G9fGlP);
         obj.IconComponent = NitroWheelIcon.NitroWheelIcon;
         obj.onPress = openNoAccessUpsell;
       }
       if (tmp3) {
         const obj2 = { label: null, IconComponent: null, isDestructive: true, onPress: null };
         const intl3 = util.intl;
-        obj2.label = intl3.string(_modDef3360.TN4nAX);
+        obj2.label = intl3.string(_modDef3356.TN4nAX);
         obj2.IconComponent = StarIcon.StarIcon;
         obj2.onPress = function onPress() {
           return (function removeChannelFromFavorites() {
@@ -160,12 +160,12 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
       } else if (!tmp4) {
         const obj3 = { label: null, IconComponent: null, trailing: null, onPress: null };
         const intl2 = util.intl;
-        obj3.label = intl2.string(_modDef3360.G9fGlP);
+        obj3.label = intl2.string(_modDef3356.G9fGlP);
         obj3.IconComponent = StarOutlineIcon.StarOutlineIcon;
         let tmp15;
         if (tmp5) {
-          const obj4 = { size: tmp12(1181).BetaSizes.SMALL };
-          tmp15 = jsx(tmp12(1181).BetaTag, { size: tmp12(1181).BetaSizes.SMALL });
+          const obj4 = { size: tmp12(1177).BetaSizes.SMALL };
+          tmp15 = jsx(tmp12(1177).BetaTag, { size: tmp12(1177).BetaSizes.SMALL });
         }
         obj3.trailing = tmp15;
         obj3.onPress = function onPress() {

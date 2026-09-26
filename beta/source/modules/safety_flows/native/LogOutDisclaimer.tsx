@@ -1,51 +1,30 @@
-// Module ID: 18343
-// Function ID: 18344
+// Module ID: 18334
+// Function ID: 18335
 // Name: LogOutDisclaimer
-// Dependencies: [21, 558, 568, 14497, 4786, 1119, 2780, 6864, 2]
+// Dependencies: [21, 14487, 4784, 1115, 2776, 6866, 2]
+// Exports: default
 
-// Module 18343 (LogOutDisclaimer)
+// Module 18334 (LogOutDisclaimer)
 import jsxProd from "jsxProd" /* 21 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import _modDef2780 from "module_2780" /* 2780 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 14497 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import util from "util" /* 1115 */;
+import _modDef2776 from "module_2776" /* 2776 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 14487 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { children: null };
-    const obj3 = { variant: "text-xs/medium", children: null };
-    const intl = tmp(1119).intl;
-    const obj4 = {
-      handleLogOut() {
-          AuthenticationActionCreatorsDefault.logout("safety_flows_enter_email_screen");
-        }
-    };
-    obj3.children = intl.format(_modDef2780["0DHxym"], obj4);
-    obj2.children = jsx(tmp(4786).Text, { variant: "text-xs/medium", children: null });
-    const tmp7 = jsx(tmp(14497).ModalDisclaimer, { children: null });
-    cResult[0] = tmp7;
-    let first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => {
+export default function LogOutDisclaimer() {
   const obj = { children: null };
   const obj2 = { variant: "text-xs/medium", children: null };
   const intl = util.intl;
-  obj2.children = intl.format(_modDef2780["0DHxym"], {
+  obj2.children = intl.format(_modDef2776["0DHxym"], {
     handleLogOut() {
       AuthenticationActionCreatorsDefault.logout("safety_flows_enter_email_screen");
     }
   });
   obj.children = jsx(Text_Text.Text, { variant: "text-xs/medium", children: null });
   return jsx(ModalDisclaimer.ModalDisclaimer, { children: null });
-});
+};

@@ -1,9 +1,9 @@
 // Module ID: 4214
 // Function ID: 4215
-// Dependencies: [4189, 4190, 4187]
+// Dependencies: [4185, 4186, 4183]
 
 // Module 4214
-import Parser2 from "Parser" /* 4187 */;
+import Parser2 from "Parser" /* 4183 */;
 
 function _typeof(arg0) {
   if (typeof Symbol === "function") {
@@ -30,15 +30,15 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(Hour0to23Parser, Parser) {
+function _setPrototypeOf(SecondParser, Parser) {
   _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(Hour0to23Parser, Parser) {
-      Hour0to23Parser.__proto__ = Parser;
-      return Hour0to23Parser;
+    _setPrototypeOf = function _setPrototypeOf(SecondParser, Parser) {
+      SecondParser.__proto__ = Parser;
+      return SecondParser;
     };
   }
-  return _setPrototypeOf(Hour0to23Parser, Parser);
+  return _setPrototypeOf(SecondParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -58,7 +58,7 @@ function _getPrototypeOf(arg0) {
 }
 const Parser = Parser2.Parser;
 let _createSuperInternal;
-class Hour0to23Parser {
+class SecondParser {
   constructor() {
     if (this instanceof closure_1) {
       length = arguments.length;
@@ -94,10 +94,10 @@ class Hour0to23Parser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 70, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 50, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 70;
-          applyResult.priority = 70;
+          num3 = 50;
+          applyResult.priority = 50;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -108,7 +108,7 @@ class Hour0to23Parser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["a", "b", "h", "K", "k", "t", "T"];
+          items1 = ["t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -132,7 +132,7 @@ class Hour0to23Parser {
     }
   }
 }
-let dependencyMap = Hour0to23Parser;
+let dependencyMap = SecondParser;
 if (typeof Parser !== "function") {
   if (null !== Parser) {
     let _TypeError = TypeError;
@@ -144,9 +144,9 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-Hour0to23Parser.prototype = Object.create(prototype, { constructor: { value: Hour0to23Parser, writable: true, configurable: true } });
+SecondParser.prototype = Object.create(prototype, { constructor: { value: SecondParser, writable: true, configurable: true } });
 if (Parser) {
-  _setPrototypeOf(Hour0to23Parser, Parser);
+  _setPrototypeOf(SecondParser, Parser);
 }
 let num = 0;
 dependencyMap = (function _isNativeReflectConstruct() {
@@ -208,12 +208,12 @@ _createSuperInternal = function _createSuperInternal() {
 const entry = {
   key: "parse",
   value: function parse(arg0, arg1, ordinalNumber) {
-    if ("H" === arg1) {
-      return _createSuperInternal(4189).parseNumericPattern(_createSuperInternal(4190).numericPatterns.hour23h, arg0);
-    } else if ("Ho" === arg1) {
-      return ordinalNumber.ordinalNumber(arg0, { unit: "hour" });
+    if ("s" === arg1) {
+      return _createSuperInternal(4185).parseNumericPattern(_createSuperInternal(4186).numericPatterns.second, arg0);
+    } else if ("so" === arg1) {
+      return ordinalNumber.ordinalNumber(arg0, { unit: "second" });
     } else {
-      return _createSuperInternal(4189).parseNDigits(arg1.length, arg0);
+      return _createSuperInternal(4185).parseNDigits(arg1.length, arg0);
     }
   }
 };
@@ -224,16 +224,16 @@ let items = [
     value: function validate(arg0, arg1) {
       let tmp = arg1 >= 0;
       if (tmp) {
-        tmp = arg1 <= 23;
+        tmp = arg1 <= 59;
       }
       return tmp;
     }
   },
   {
     key: "set",
-    value: function set(setUTCHours, arg1, arg2) {
-      setUTCHours.setUTCHours(arg2, 0, 0, 0);
-      return setUTCHours;
+    value: function set(setUTCSeconds, arg1, arg2) {
+      setUTCSeconds.setUTCSeconds(arg2, 0);
+      return setUTCSeconds;
     }
   }
 ];
@@ -255,4 +255,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { Hour0to23Parser };
+export { SecondParser };

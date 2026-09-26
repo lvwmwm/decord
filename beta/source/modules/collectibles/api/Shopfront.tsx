@@ -1,10 +1,10 @@
-// Module ID: 15339
-// Function ID: 15340
+// Module ID: 15343
+// Function ID: 15344
 // Name: Shopfront
-// Dependencies: [5, 1078, 1275, 1329, 7615, 2]
+// Dependencies: [5, 1074, 1271, 1325, 7613, 2]
 // Exports: search
 
-// Module 15339 (Shopfront)
+// Module 15343 (Shopfront)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_4 = async function _search(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -45,7 +45,7 @@ let closure_4 = async function _search(arg0, value) {
           closure_130_2 = undefined;
           c6 = 1;
           c7 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -96,7 +96,7 @@ let closure_4 = async function _search(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/api/Shopfront.tsx");
 

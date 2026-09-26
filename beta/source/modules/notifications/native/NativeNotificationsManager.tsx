@@ -1,16 +1,16 @@
-// Module ID: 18278
-// Function ID: 18279
+// Module ID: 18269
+// Function ID: 18270
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 7909, 4805, 1078, 3, 18279, 9585, 11, 7397, 1368, 8511, 1245, 2]
+// Dependencies: [5, 17, 7904, 4803, 1074, 3, 18270, 9589, 11, 7395, 1364, 8506, 1241, 2]
 
-// Module 18278 (NativeNotificationsManager)
+// Module 18269 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
-import PushNotificationDefault from "PushNotification" /* 9585 */;
-import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 18279 */;
+import PushNotificationDefault from "PushNotification" /* 9589 */;
+import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 18270 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7909 */;
-import ReadStateStore from "ReadStateStore" /* 4805 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7904 */;
+import ReadStateStore from "ReadStateStore" /* 4803 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 function getDeliveredNotifications() {
@@ -34,7 +34,7 @@ let closure_11 = async function _getDeliveredNotifications(arg0, value) {
       const obj4 = { value, done: true };
       return obj4;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -96,7 +96,7 @@ let closure_13 = async function _updateAndClearStaleNotifications(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -172,7 +172,7 @@ let closure_13 = async function _updateAndClearStaleNotifications(arg0, value) {
           }
         })();
         c2 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp8) {
       c2 = tmp;
@@ -181,7 +181,7 @@ let closure_13 = async function _updateAndClearStaleNotifications(arg0, value) {
   }
 };
 const NativeModules = fn(17).NativeModules;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 let closure_8 = new LoggerDefault("NativeNotificationsManager");
 let closure_9 = [];
 const prototype = function NativeNotificationsManager() {
@@ -210,7 +210,7 @@ const prototype = function NativeNotificationsManager() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -307,7 +307,7 @@ const prototype = function NativeNotificationsManager() {
                 return rounded;
               }
             };
-            obj14 = applyArgumentsResult(1368);
+            obj14 = applyArgumentsResult(1364);
             let str2 = "cache";
             if (obj8.isIOS()) {
               str2 = "shared";
@@ -341,7 +341,7 @@ const prototype = function NativeNotificationsManager() {
                 if (null == closure_131_3) {
                   c6 = 0;
                   logger = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   const _Map = Map;
                   const map = new Map();
@@ -358,7 +358,7 @@ const prototype = function NativeNotificationsManager() {
                     applyArgumentsResult = closure_131_6[Symbol.iterator]();
                     const str = closure_131_3.trim();
                   }
-                  obj13 = applyArgumentsResult(1368);
+                  obj13 = applyArgumentsResult(1364);
                 }
               }
             } else if (3 === tmp9) {
@@ -391,7 +391,7 @@ const prototype = function NativeNotificationsManager() {
                   const obj9 = { value, done: true };
                   return obj9;
                 } else {
-                  const obj12 = applyArgumentsResult(1368);
+                  const obj12 = applyArgumentsResult(1364);
                 }
               } else if (arg0 === 1) {
                 logger = 3;
@@ -411,7 +411,7 @@ const prototype = function NativeNotificationsManager() {
           }
           c7 = 6;
           logger = 1;
-          const obj11 = { value: applyArgumentsResult(8511).removeFile(closure_131_0, closure_131_2), done: false };
+          const obj11 = { value: applyArgumentsResult(8506).removeFile(closure_131_0, closure_131_2), done: false };
           return obj11;
         }
       } catch (tmp41) {

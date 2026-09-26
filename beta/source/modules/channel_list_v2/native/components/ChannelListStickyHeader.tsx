@@ -1,24 +1,25 @@
-// Module ID: 16484
-// Function ID: 16485
+// Module ID: 16477
+// Function ID: 16478
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 1078, 21, 4529, 4790, 580, 558, 568, 16453, 2070, 1119, 16485, 14216, 16483, 5859, 4494, 10551, 4786, 9050, 1181, 7488, 16499, 12481, 16504, 16505, 2]
+// Dependencies: [19, 17, 1074, 21, 4524, 4788, 576, 16446, 2066, 1115, 16478, 14206, 16476, 5859, 4489, 10532, 4784, 9052, 1177, 7486, 16492, 12580, 16497, 16498, 2]
+// Exports: default
 
-// Module 16484 (ChannelListStickyHeader)
-import nativeDefault from "native" /* 580 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 9050 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16453 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16483 */;
+// Module 16477 (ChannelListStickyHeader)
+import nativeDefault from "native" /* 576 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 9052 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16446 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16476 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Pressable } = get_ActivityIndicator);
-const JoinGuildSources = fn(1078).JoinGuildSources;
+const JoinGuildSources = fn(1074).JoinGuildSources;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let closure_8 = ReanimatedRexport.createAnimatedComponent(Pressable);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_9 = createStyles.createStyles(() => {
   let flag = arg0;
   if (arg0 === undefined) {
@@ -28,7 +29,7 @@ let closure_9 = createStyles.createStyles(() => {
   const obj2 = { gap: nativeDefault.space.PX_8, paddingTop: nativeDefault.space.PX_16, paddingBottom: null, zIndex: 1 };
   let num = 0;
   if (!flag) {
-    num = tmp(580).space.PX_12;
+    num = tmp(576).space.PX_12;
   }
   obj2.paddingBottom = num;
   obj.container = obj2;
@@ -46,370 +47,16 @@ let closure_9 = createStyles.createStyles(() => {
   obj.headerIcon = { marginRight: nativeDefault.space.PX_4 };
   const obj7 = { marginRight: nativeDefault.space.PX_4 };
   obj.subheader = { flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
-  const size = { width: 4, height: 4, backgroundColor: tmp(580).colors.TEXT_SUBTLE, borderRadius: tmp(580).radii.round };
+  const size = { width: 4, height: 4, backgroundColor: tmp(576).colors.TEXT_SUBTLE, borderRadius: tmp(576).radii.round };
   obj.ellipse = size;
   const obj8 = { flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
   obj.joinButton = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8 };
   return obj;
 });
-const ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/ChannelListStickyHeader.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
-  const cResult = guild(568).c(76);
-  guild = guild.guild;
-  ({ showExtraButtons, canOpenGuildActionSheet, showCoachmarks } = guild);
-  let tmp5 = undefined === canOpenGuildActionSheet || canOpenGuildActionSheet;
-  const tmp7 = closure_9(undefined === showExtraButtons || showExtraButtons);
-  const tmp9 = useIsGameCommunityServerPreviewDefault(guild.id);
-  const ref = noop.useRef(null);
-  if (cResult[0] !== guild.id) {
-    const isFavoritesGuildIdResult = tmp(2070).isFavoritesGuildId(guild.id);
-    cResult[0] = guild.id;
-    cResult[1] = isFavoritesGuildIdResult;
-    let tmp11 = isFavoritesGuildIdResult;
-    const tmpResult = tmp(2070);
-  } else {
-    tmp11 = cResult[1];
-  }
-  importDefault = tmp11;
-  if (!tmp5) {
-    tmp5 = tmp11;
-  }
-  const t = tmp(1119).t;
-  const tmp13 = tmp11 ? t.hW8QDk : t["Gpyp/e"];
-  if (cResult[2] === guild) {
-    const tmp15 = tmp8(16483)(guild);
-    const iOSPressEffects = tmp(5859).useIOSPressEffects(4);
-    ({ pressableStyles, onPressIn, onPressOut } = iOSPressEffects);
-    if (cResult[5] !== guild) {
-      const favoritesAwareGuildName = tmp(2070).getFavoritesAwareGuildName(guild);
-      cResult[5] = guild;
-      cResult[6] = favoritesAwareGuildName;
-      let tmp17 = favoritesAwareGuildName;
-      const tmpResult6 = tmp(2070);
-    } else {
-      tmp17 = cResult[6];
-    }
-    const tmpResult5 = tmp(5859);
-    const token = tmp(4494).useToken(tmp8(580).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
-    const tmpResult7 = tmp(4494);
-    const token1 = tmp(4494).useToken(tmp8(580).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
-    if (cResult[7] === pressableStyles) {
-      if (cResult[8] === tmp7.headerRowTitle) {
-        let tmp21 = cResult[9];
-      }
-      let str = "header";
-      if (tmp5) {
-        str = "button";
-      }
-      if (cResult[10] === tmp13) {
-        if (cResult[11] === tmp5) {
-          let tmp25 = cResult[12];
-        }
-        if (cResult[13] === tmp11) {
-          if (cResult[14] === tmp7.headerIcon) {
-            let tmp27 = cResult[15];
-          }
-          if (cResult[16] === tmp17) {
-            if (cResult[17] === token) {
-              let tmp30 = cResult[18];
-            }
-            if (cResult[19] === tmp7.flex) {
-              if (cResult[20] === tmp30) {
-                let tmp33 = cResult[21];
-              }
-              if (cResult[22] === guild) {
-                if (cResult[23] === tmp7.guildBadge) {
-                  let tmp37 = cResult[24];
-                }
-                if (cResult[25] === tmp5) {
-                  if (cResult[26] === tmp7.chevron) {
-                    let tmp41 = cResult[27];
-                  }
-                  if (cResult[28] === tmp7.header) {
-                    if (cResult[29] === tmp27) {
-                      if (cResult[30] === tmp33) {
-                        if (cResult[31] === tmp37) {
-                          if (cResult[32] === tmp41) {
-                            let tmp44 = cResult[33];
-                          }
-                          if (cResult[34] === tmp15) {
-                            if (cResult[35] === tmp7.ellipse) {
-                              if (cResult[36] === tmp7.subheader) {
-                                if (cResult[37] === token1) {
-                                  let tmp48 = cResult[38];
-                                }
-                                if (cResult[39] === tmp24) {
-                                  if (cResult[40] === str) {
-                                    if (cResult[41] === tmp25) {
-                                      if (cResult[42] === tmp44) {
-                                        if (cResult[43] === tmp48) {
-                                          if (cResult[44] === tmp21) {
-                                            if (cResult[45] === tmp22) {
-                                              if (cResult[46] === tmp23) {
-                                                let tmp53 = cResult[47];
-                                              }
-                                              let headerRowInset = null;
-                                              if (tmp11) {
-                                                headerRowInset = tmp7.headerRowInset;
-                                              }
-                                              if (cResult[48] === tmp7.headerRow) {
-                                                if (cResult[49] === headerRowInset) {
-                                                  let tmp58 = cResult[50];
-                                                }
-                                                if (cResult[51] !== tmp11) {
-                                                  let tmp60 = null;
-                                                  if (tmp11) {
-                                                    tmp60 = closure_6(tmp(16499).FavoritesGuildHeaderActionButton, {});
-                                                  }
-                                                  cResult[51] = tmp11;
-                                                  cResult[52] = tmp60;
-                                                  let tmp59 = tmp60;
-                                                } else {
-                                                  tmp59 = cResult[52];
-                                                }
-                                                if (cResult[53] === tmp53) {
-                                                  if (cResult[54] === tmp58) {
-                                                    if (cResult[55] === tmp59) {
-                                                      let tmp62 = cResult[56];
-                                                    }
-                                                    if (cResult[57] === guild) {
-                                                      if (cResult[58] === tmp4) {
-                                                        let tmp66 = cResult[59];
-                                                      }
-                                                      if (cResult[60] === guild.id) {
-                                                        if (cResult[61] === tmp9) {
-                                                          if (cResult[62] === tmp7.joinButton) {
-                                                            let tmp69 = cResult[63];
-                                                          }
-                                                          if (cResult[64] !== tmp7.divider) {
-                                                            const obj2 = { style: tmp7.divider };
-                                                            const tmp77 = closure_6(closure_4, obj2);
-                                                            cResult[64] = tmp7.divider;
-                                                            cResult[65] = tmp77;
-                                                            let tmp74 = tmp77;
-                                                          } else {
-                                                            tmp74 = cResult[65];
-                                                          }
-                                                          if (cResult[66] === guild) {
-                                                            if (cResult[67] === tmp6) {
-                                                              let tmp78 = cResult[68];
-                                                            }
-                                                            if (cResult[69] === tmp7.container) {
-                                                              if (cResult[70] === tmp62) {
-                                                                if (cResult[71] === tmp66) {
-                                                                  if (cResult[72] === tmp69) {
-                                                                    if (cResult[73] === tmp74) {
-                                                                      if (cResult[74] === tmp78) {
-                                                                        let tmp81 = cResult[75];
-                                                                      }
-                                                                      return tmp81;
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                            const obj3 = { style: tmp7.container, children: null };
-                                                            const items = [tmp62, tmp66, tmp69, tmp74, tmp78];
-                                                            obj3.children = items;
-                                                            const tmp84 = closure_7(closure_4, obj3);
-                                                            cResult[69] = tmp7.container;
-                                                            cResult[70] = tmp62;
-                                                            cResult[71] = tmp66;
-                                                            cResult[72] = tmp69;
-                                                            cResult[73] = tmp74;
-                                                            cResult[74] = tmp78;
-                                                            cResult[75] = tmp84;
-                                                            tmp81 = tmp84;
-                                                          }
-                                                          let tmp79 = null;
-                                                          if (tmp6) {
-                                                            const obj4 = { targetRef: ref, guild };
-                                                            tmp79 = closure_6(tmp8(16505), obj4);
-                                                          }
-                                                          cResult[66] = guild;
-                                                          cResult[67] = tmp6;
-                                                          cResult[68] = tmp79;
-                                                          tmp78 = tmp79;
-                                                        }
-                                                      }
-                                                      let tmp70 = tmp9;
-                                                      if (tmp9) {
-                                                        const obj5 = { style: tmp7.joinButton, children: null };
-                                                        const obj6 = { guildId: guild.id, joinSource: JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER };
-                                                        obj5.children = closure_6(tmp8(16504), obj6);
-                                                        tmp70 = closure_6(closure_4, obj5);
-                                                      }
-                                                      cResult[60] = guild.id;
-                                                      cResult[61] = tmp9;
-                                                      cResult[62] = tmp7.joinButton;
-                                                      cResult[63] = tmp70;
-                                                      tmp69 = tmp70;
-                                                    }
-                                                    let tmp67 = null;
-                                                    if (tmp4) {
-                                                      const obj7 = { guild, useButtonComponent: true, useEventsButton: true };
-                                                      tmp67 = closure_6(tmp8(12481), obj7);
-                                                    }
-                                                    cResult[57] = guild;
-                                                    cResult[58] = tmp4;
-                                                    cResult[59] = tmp67;
-                                                    tmp66 = tmp67;
-                                                  }
-                                                }
-                                                const obj8 = { style: tmp58, children: null };
-                                                const items1 = [tmp53, tmp59];
-                                                obj8.children = items1;
-                                                const tmp65 = closure_7(closure_4, obj8);
-                                                cResult[53] = tmp53;
-                                                cResult[54] = tmp58;
-                                                cResult[55] = tmp59;
-                                                cResult[56] = tmp65;
-                                                tmp62 = tmp65;
-                                              }
-                                              const items2 = [tmp7.headerRow, headerRowInset];
-                                              cResult[48] = tmp7.headerRow;
-                                              cResult[49] = headerRowInset;
-                                              cResult[50] = items2;
-                                              tmp58 = items2;
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                                const obj9 = { style: tmp21, onPress: tmp22, onPressIn: tmp23, onPressOut: tmp24, accessible: true, accessibilityRole: str, accessibilityHint: tmp25, children: null };
-                                const items3 = [tmp44, tmp48];
-                                obj9.children = items3;
-                                const tmp56 = closure_7(closure_8, obj9);
-                                cResult[39] = tmp24;
-                                cResult[40] = str;
-                                cResult[41] = tmp25;
-                                cResult[42] = tmp44;
-                                cResult[43] = tmp48;
-                                cResult[44] = tmp21;
-                                cResult[45] = tmp22;
-                                cResult[46] = tmp23;
-                                cResult[47] = tmp56;
-                                tmp53 = tmp56;
-                              }
-                            }
-                          }
-                          let tmp49 = null;
-                          if (null != tmp15) {
-                            tmp49 = null;
-                            if (tmp15 > 0) {
-                              const obj10 = { style: tmp7.subheader, children: null };
-                              const obj11 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1, children: null };
-                              const intl2 = tmp(1119).intl;
-                              const obj12 = { count: tmp15 };
-                              obj11.children = intl2.format(tmp(1119).t.zRl6XR, obj12);
-                              const items4 = [closure_6(tmp(4786).Text, obj11), , ];
-                              const obj13 = { style: tmp7.ellipse };
-                              items4[1] = closure_6(closure_4, obj13);
-                              const obj14 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1, children: null };
-                              const intl3 = tmp(1119).intl;
-                              obj14.children = intl3.string(tmp(1119).t["1g9A/f"]);
-                              items4[2] = closure_6(tmp(4786).Text, obj14);
-                              obj10.children = items4;
-                              tmp49 = closure_7(closure_4, obj10);
-                            }
-                          }
-                          cResult[34] = tmp15;
-                          cResult[35] = tmp7.ellipse;
-                          cResult[36] = tmp7.subheader;
-                          cResult[37] = token1;
-                          cResult[38] = tmp49;
-                          tmp48 = tmp49;
-                        }
-                      }
-                    }
-                  }
-                  const obj15 = { style: tmp7.header, children: null };
-                  const items5 = [tmp27, tmp33, tmp37, tmp41];
-                  obj15.children = items5;
-                  const tmp47 = closure_7(closure_4, obj15);
-                  cResult[28] = tmp7.header;
-                  cResult[29] = tmp27;
-                  cResult[30] = tmp33;
-                  cResult[31] = tmp37;
-                  cResult[32] = tmp41;
-                  cResult[33] = tmp47;
-                  tmp44 = tmp47;
-                }
-                let tmp42 = null;
-                if (tmp5) {
-                  const obj16 = { size: "xxs", color: tmp8(580).colors.TEXT_SUBTLE, style: tmp7.chevron };
-                  tmp42 = closure_6(tmp(7488).ChevronSmallRightIcon, obj16);
-                }
-                cResult[25] = tmp5;
-                cResult[26] = tmp7.chevron;
-                cResult[27] = tmp42;
-                tmp41 = tmp42;
-              }
-              const obj17 = { guild, size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, style: tmp7.guildBadge };
-              const tmp40 = closure_6(tmp8(9050), obj17);
-              cResult[22] = guild;
-              cResult[23] = tmp7.guildBadge;
-              cResult[24] = tmp40;
-              tmp37 = tmp40;
-              const tmp8Result = tmp8(9050);
-            }
-            const obj18 = { ref, collapsable: false, style: tmp7.flex, children: tmp30 };
-            const tmp36 = closure_6(closure_4, obj18);
-            cResult[19] = tmp7.flex;
-            cResult[20] = tmp30;
-            cResult[21] = tmp36;
-            tmp33 = tmp36;
-          }
-          const obj19 = { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: tmp17 };
-          const tmp32 = closure_6(tmp(4786).Text, obj19);
-          cResult[16] = tmp17;
-          cResult[17] = token;
-          cResult[18] = tmp32;
-          tmp30 = tmp32;
-        }
-        let tmp28 = null;
-        if (tmp11) {
-          const obj20 = { style: tmp7.headerIcon, size: "sm", color: tmp8(580).colors.MOBILE_TEXT_HEADING_PRIMARY };
-          tmp28 = closure_6(tmp(10551).StarIcon, obj20);
-        }
-        cResult[13] = tmp11;
-        cResult[14] = tmp7.headerIcon;
-        cResult[15] = tmp28;
-        tmp27 = tmp28;
-      }
-      let stringResult;
-      if (tmp5) {
-        const intl = tmp(1119).intl;
-        stringResult = intl.string(tmp13);
-      }
-      cResult[10] = tmp13;
-      cResult[11] = tmp5;
-      cResult[12] = stringResult;
-      tmp25 = stringResult;
-    }
-    const items6 = [pressableStyles, tmp7.headerRowTitle];
-    cResult[7] = pressableStyles;
-    cResult[8] = tmp7.headerRowTitle;
-    cResult[9] = items6;
-    tmp21 = items6;
-    const tmpResult8 = tmp(4494);
-  }
-  const fn = function b() {
-    if (closure_1) {
-      tmp(16485)();
-    } else {
-      tmp(14216)(guild);
-    }
-  };
-  cResult[2] = guild;
-  cResult[3] = tmp11;
-  cResult[4] = fn;
-}) : ((guild) => {
+export default function ChannelListStickyHeader(guild) {
   guild = guild.guild;
   let flag = guild.showExtraButtons;
   if (flag === undefined) {
@@ -426,31 +73,31 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp = closure_9(flag);
   let tmp24Result7 = useIsGameCommunityServerPreviewDefault(guild.id);
   const ref = noop.useRef(null);
-  const isFavoritesGuildIdResult = guild(2070).isFavoritesGuildId(guild.id);
+  const isFavoritesGuildIdResult = guild(2066).isFavoritesGuildId(guild.id);
   importDefault = isFavoritesGuildIdResult;
   if (!flag2) {
     flag2 = isFavoritesGuildIdResult;
   }
-  const t = tmp6(1119).t;
+  const t = tmp6(1115).t;
   const items = [guild, isFavoritesGuildIdResult];
   const callback = noop.useCallback(() => {
     if (c1) {
-      tmp(16485)();
+      tmp(16478)();
     } else {
-      tmp(14216)(guild);
+      tmp(14206)(guild);
     }
   }, items);
   const tmp10 = useStickyServerHeaderSubtitleDefault(guild);
-  const obj2 = guild(2070);
+  const obj2 = guild(2066);
   const tmp8 = isFavoritesGuildIdResult ? t.hW8QDk : t["Gpyp/e"];
   const iOSPressEffects = guild(5859).useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
   const tmp6Result = guild(5859);
-  const favoritesAwareGuildName = guild(2070).getFavoritesAwareGuildName(guild);
-  const tmp6Result4 = guild(2070);
-  const token = guild(4494).useToken(tmp2(580).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
-  const tmp6Result5 = guild(4494);
-  const token1 = guild(4494).useToken(tmp2(580).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
+  const favoritesAwareGuildName = guild(2066).getFavoritesAwareGuildName(guild);
+  const tmp6Result4 = guild(2066);
+  const token = guild(4489).useToken(tmp2(576).modules.mobile.CHANNEL_LIST_TITLE_TEXT_STYLE);
+  const tmp6Result5 = guild(4489);
+  const token1 = guild(4489).useToken(tmp2(576).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   const obj3 = { style: null, onPress: null, onPressIn: null, onPressOut: null, accessible: true, accessibilityRole: null, accessibilityHint: null, children: null };
   const items1 = [pressableStyles, tmp.headerRowTitle];
   obj3.style = items1;
@@ -476,29 +123,29 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   obj3.accessibilityRole = str;
   let stringResult;
   if (flag2) {
-    const intl = tmp6(1119).intl;
+    const intl = tmp6(1115).intl;
     stringResult = intl.string(tmp8);
   }
   obj3.accessibilityHint = stringResult;
   const obj4 = { style: tmp.header, children: null };
   let tmp22 = null;
   if (isFavoritesGuildIdResult) {
-    const obj5 = { style: tmp.headerIcon, size: "sm", color: tmp2(580).colors.MOBILE_TEXT_HEADING_PRIMARY };
-    tmp22 = closure_6(tmp6(10551).StarIcon, obj5);
+    const obj5 = { style: tmp.headerIcon, size: "sm", color: tmp2(576).colors.MOBILE_TEXT_HEADING_PRIMARY };
+    tmp22 = closure_6(tmp6(10532).StarIcon, obj5);
   }
   const items2 = [tmp22, , , ];
   const tmp16 = closure_8;
-  const tmp6Result6 = guild(4494);
-  items2[1] = closure_6(closure_4, { ref, collapsable: false, style: tmp.flex, children: closure_6(guild(4786).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) });
+  const tmp6Result6 = guild(4489);
+  items2[1] = closure_6(closure_4, { ref, collapsable: false, style: tmp.flex, children: closure_6(guild(4784).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) });
   const obj7 = { guild, size: null, style: null };
-  const obj6 = { ref, collapsable: false, style: tmp.flex, children: closure_6(guild(4786).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
-  obj7.size = guild(1181).Icon.Sizes.REFRESH_SMALL_16;
+  const obj6 = { ref, collapsable: false, style: tmp.flex, children: closure_6(guild(4784).Text, { experimental_useNativeText: true, color: "mobile-text-heading-primary", variant: token, lineClamp: 1, children: favoritesAwareGuildName }) };
+  obj7.size = guild(1177).Icon.Sizes.REFRESH_SMALL_16;
   obj7.style = tmp.guildBadge;
   items2[2] = closure_6(GuildBadgeV2Default, obj7);
   let tmp24Result = null;
   if (flag2) {
-    const obj8 = { size: "xxs", color: tmp2(580).colors.TEXT_SUBTLE, style: tmp.chevron };
-    tmp24Result = tmp24(tmp6(7488).ChevronSmallRightIcon, obj8);
+    const obj8 = { size: "xxs", color: tmp2(576).colors.TEXT_SUBTLE, style: tmp.chevron };
+    tmp24Result = tmp24(tmp6(7486).ChevronSmallRightIcon, obj8);
   }
   items2[3] = tmp24Result;
   obj4.children = items2;
@@ -509,16 +156,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     if (tmp10 > 0) {
       const obj9 = { style: tmp.subheader, children: null };
       const obj10 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1, children: null };
-      const intl2 = tmp6(1119).intl;
+      const intl2 = tmp6(1115).intl;
       const obj11 = { count: tmp10 };
-      obj10.children = intl2.format(tmp6(1119).t.zRl6XR, obj11);
-      const items4 = [tmp24(tmp6(4786).Text, obj10), , ];
+      obj10.children = intl2.format(tmp6(1115).t.zRl6XR, obj11);
+      const items4 = [tmp24(tmp6(4784).Text, obj10), , ];
       const obj12 = { style: tmp.ellipse };
       items4[1] = tmp24(tmp21, obj12);
       const obj13 = { experimental_useNativeText: true, color: "text-muted", variant: token1, lineClamp: 1, children: null };
-      const intl3 = tmp6(1119).intl;
-      obj13.children = intl3.string(tmp6(1119).t["1g9A/f"]);
-      items4[2] = tmp24(tmp6(4786).Text, obj13);
+      const intl3 = tmp6(1115).intl;
+      obj13.children = intl3.string(tmp6(1115).t["1g9A/f"]);
+      items4[2] = tmp24(tmp6(4784).Text, obj13);
       obj9.children = items4;
       tmp15Result = tmp15(tmp21, obj9);
     }
@@ -537,7 +184,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const items6 = [closure_7(tmp16, obj3), ];
   let tmp24Result5 = null;
   if (isFavoritesGuildIdResult) {
-    tmp24Result5 = tmp24(tmp6(16499).FavoritesGuildHeaderActionButton, {});
+    tmp24Result5 = tmp24(tmp6(16492).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp24Result5;
   obj15.children = items6;
@@ -545,13 +192,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp24Result6 = null;
   if (flag) {
     const obj16 = { guild, useButtonComponent: true, useEventsButton: true };
-    tmp24Result6 = tmp24(tmp2(12481), obj16);
+    tmp24Result6 = tmp24(tmp2(12580), obj16);
   }
   items7[1] = tmp24Result6;
   if (tmp24Result7) {
     const obj17 = { style: tmp.joinButton, children: null };
     const obj18 = { guildId: guild.id, joinSource: JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER };
-    obj17.children = tmp24(tmp2(16504), obj18);
+    obj17.children = tmp24(tmp2(16497), obj18);
     tmp24Result7 = tmp24(tmp21, obj17);
   }
   items7[2] = tmp24Result7;
@@ -559,9 +206,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp24Result8 = null;
   if (flag3) {
     const obj20 = { targetRef: ref, guild };
-    tmp24Result8 = tmp24(tmp2(16505), obj20);
+    tmp24Result8 = tmp24(tmp2(16498), obj20);
   }
   items7[4] = tmp24Result8;
   obj14.children = items7;
   return closure_7(closure_4, obj14);
-});
+};

@@ -1,33 +1,42 @@
-// Module ID: 13925
-// Function ID: 13926
+// Module ID: 13915
+// Function ID: 13916
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 2067, 7708, 21, 4790, 580, 558, 568, 13926, 13927, 504, 4725, 1119, 5143, 5685, 4642, 13928, 13929, 5230, 1098, 4786, 5239, 2]
+// Dependencies: [32, 19, 17, 2063, 7706, 21, 4788, 576, 13916, 13917, 504, 4722, 5237, 1115, 5141, 5683, 5230, 1094, 4639, 13918, 13919, 4784, 2]
+// Exports: default
 
-// Module 13925 (SubscribeModalSuccessAlert)
+// Module 13915 (SubscribeModalSuccessAlert)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import ConstantsIOS from "ConstantsIOS" /* 1098 */;
-import util from "util" /* 1119 */;
-import useThemeDefault from "useTheme" /* 4725 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import nativeDefault from "native" /* 576 */;
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+import util from "util" /* 1115 */;
+import useThemeDefault from "useTheme" /* 4722 */;
+import Text_Text from "Text/Text" /* 4784 */;
 import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import common_AlertDefault from "common/Alert" /* 5239 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5685 */;
-import _mod13926 from "module_13926" /* 13926 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13927 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5683 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13916 */;
+import _mod13917 from "module_13917" /* 13917 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
+class PremiumPaymentGuildAnimation {
+  constructor(arg0) {
+    ({ nextScene, onSceneComplete, loop } = global);
+    tmp = closure_11();
+    obj = { nextScene, onSceneComplete, loop, sceneSegments: closure_12, style: tmp.animation, source: null };
+    tmp2 = closure_1(closure_2[8]);
+    obj.source = closure_0(closure_2[9]);
+    return jsx(tmp2, obj);
+  }
+}
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
-const Gradients = fn(7708).Gradients;
+const Gradients = fn(7706).Gradients;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { wrapper: { paddingHorizontal: 24, paddingBottom: 16, paddingTop: 4, alignItems: "stretch" }, animation: { width: "auto", height: 112, alignSelf: "center" }, text: { lineHeight: 18, textAlign: "center" }, activated: { padding: 2, borderRadius: nativeDefault.radii.xs, marginTop: 8 }, activatedBackground: null, activatedImage: null, successInfo: null };
 let obj3 = { padding: 2, borderRadius: nativeDefault.radii.xs, marginTop: 8 };
 obj2.activatedBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
@@ -36,219 +45,11 @@ obj2.successInfo = { marginTop: 24 };
 let closure_11 = createStyles.createStyles(obj2);
 let obj5 = { ENTRY: "entry", IDLE: "idle" };
 const sceneSegments = { [obj5.ENTRY]: { BEG: 0, END: 180 }, [obj5.IDLE]: { BEG: 180, END: 360 } };
-let ReactCompilerGating = fn(558);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(6);
-  ({ nextScene, onSceneComplete, loop } = arg0);
-  const tmp4 = closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = _mod13926;
-    cResult[0] = tmpResult;
-    let first = tmpResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === loop) {
-    if (cResult[2] === nextScene) {
-      if (cResult[3] === onSceneComplete) {
-        if (cResult[4] === tmp4.animation) {
-          let tmp7 = cResult[5];
-        }
-        return tmp7;
-      }
-    }
-  }
-  const tmp8 = options(SequencedLottieAnimationViewDefault, { nextScene, onSceneComplete, loop, sceneSegments, style: tmp4.animation, source: first });
-  cResult[1] = loop;
-  cResult[2] = nextScene;
-  cResult[3] = onSceneComplete;
-  cResult[4] = tmp4.animation;
-  cResult[5] = tmp8;
-  tmp7 = tmp8;
-}) : ((arg0) => {
-  ({ nextScene, onSceneComplete, loop } = arg0);
-  const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_11().animation, source: null };
-  const tmp = closure_11();
-  obj.source = _mod13926;
-  return options(SequencedLottieAnimationViewDefault, obj);
-});
-let closure_13 = tmp4;
-tmp4.Scenes = obj5;
-ReactCompilerGating = fn(558);
-let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
+PremiumPaymentGuildAnimation.Scenes = obj5;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
-  const cResult = guildId(568).c(42);
-  guildId = guildId.guildId;
-  const guildBoostSlots = guildId.guildBoostSlots;
-  const tmp4 = closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function x() {
-      return GuildStore.getGuild(guildId);
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  let obj = guildId(568);
-  const stateFromStores = guildId(504).useStateFromStores(first, tmp7);
-  if (cResult[3] !== guildBoostSlots) {
-    const tmp11 = null != guildBoostSlots && guildBoostSlots.some((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription);
-    cResult[3] = guildBoostSlots;
-    cResult[4] = tmp11;
-  }
-  let num6;
-  if (guildBoostSlots != null) {
-    num6 = guildBoostSlots.length;
-  }
-  if (num6 == null) {
-    num6 = 1;
-  }
-  const tmp12 = Scenes;
-  const tmpResult = guildId(504);
-  [tmp14, importDefault] = noop.useState(Scenes.Scenes.ENTRY);
-  const tmp13 = _slicedToArray(noop.useState(Scenes.Scenes.ENTRY), 2);
-  [tmp16, dependencyMap] = noop.useState(false);
-  const tmp15 = _slicedToArray(noop.useState(false), 2);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.YKxJCI);
-    class G {
-      constructor() {
-        obj = closure_1(closure_2[15]);
-        closeResult = obj.close();
-        obj2 = guildId(closure_2[16]);
-        closeApplyBoostModalResult = obj2.closeApplyBoostModal();
-        return;
-      }
-    }
-    cResult[5] = stringResult;
-    cResult[6] = G;
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor(arg0) {
-        tmp = f64532;
-        if (f64532.Scenes.ENTRY === guildId) {
-          tmp3 = closure_1;
-          return closure_1(tmp.Scenes.IDLE);
-        } else if (tmp.Scenes.IDLE === guildId) {
-          tmp2 = closure_2;
-          flag = true;
-          return closure_2(true);
-        } else {
-          return;
-        }
-      }
-    }
-    cResult[7] = R;
-    class G {
-      constructor() {
-        obj = closure_1(closure_2[15]);
-        closeResult = obj.close();
-        obj2 = guildId(closure_2[16]);
-        closeApplyBoostModalResult = obj2.closeApplyBoostModal();
-        return;
-      }
-    }
-  } else {
-    class R {
-      constructor(arg0) {
-        tmp = f64532;
-        if (f64532.Scenes.ENTRY === guildId) {
-          tmp3 = closure_1;
-          return closure_1(tmp.Scenes.IDLE);
-        } else if (tmp.Scenes.IDLE === guildId) {
-          tmp2 = closure_2;
-          flag = true;
-          return closure_2(true);
-        } else {
-          return;
-        }
-      }
-    }
-  }
-  if (cResult[8] === tmp14) {
-    class R {
-      constructor(arg0) {
-        tmp = f64532;
-        if (f64532.Scenes.ENTRY === guildId) {
-          tmp3 = closure_1;
-          return closure_1(tmp.Scenes.IDLE);
-        } else if (tmp.Scenes.IDLE === guildId) {
-          tmp2 = closure_2;
-          flag = true;
-          return closure_2(true);
-        } else {
-          return;
-        }
-      }
-    }
-    if (tmpResult2.isThemeLight(tmp17)) {
-      class R {
-        constructor(arg0) {
-          tmp = f64532;
-          if (f64532.Scenes.ENTRY === guildId) {
-            tmp3 = closure_1;
-            return closure_1(tmp.Scenes.IDLE);
-          } else if (tmp.Scenes.IDLE === guildId) {
-            tmp2 = closure_2;
-            flag = true;
-            return closure_2(true);
-          } else {
-            return;
-          }
-        }
-      }
-    } else {
-      class R {
-        constructor(arg0) {
-          tmp = f64532;
-          if (f64532.Scenes.ENTRY === guildId) {
-            tmp3 = closure_1;
-            return closure_1(tmp.Scenes.IDLE);
-          } else if (tmp.Scenes.IDLE === guildId) {
-            tmp2 = closure_2;
-            flag = true;
-            return closure_2(true);
-          } else {
-            return;
-          }
-        }
-      }
-    }
-    class G {
-      constructor() {
-        obj = closure_1(closure_2[15]);
-        closeResult = obj.close();
-        obj2 = guildId(closure_2[16]);
-        closeApplyBoostModalResult = obj2.closeApplyBoostModal();
-        return;
-      }
-    }
-    const obj2 = { style: tmp4.activatedImage, source: tmp23 };
-    const tmp27 = closure_9(closure_6, obj2);
-    cResult[11] = tmp4.activatedImage;
-    cResult[12] = tmp23;
-    cResult[13] = tmp27;
-    tmpResult2 = tmp(4642);
-  }
-  tmp17 = useThemeDefault();
-  cResult[8] = tmp14;
-  cResult[9] = tmp16;
-  cResult[10] = closure_9(tmp12, { nextScene: tmp14, loop: tmp16, onSceneComplete: tmp21 });
-}) : ((arg0) => {
+export default function SubscribeModalSuccessAlert(arg0) {
   ({ guildId: require, guildBoostSlots } = arg0);
   importDefault = undefined;
   dependencyMap = undefined;
@@ -266,25 +67,25 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (num == null) {
     num = 1;
   }
-  const tmp6 = _slicedToArray(noop.useState(Scenes.Scenes.ENTRY), 2);
+  const tmp6 = _slicedToArray(noop.useState(PremiumPaymentGuildAnimation.Scenes.ENTRY), 2);
   importDefault = tmp6[1];
   const tmp7 = _slicedToArray(noop.useState(false), 2);
   dependencyMap = tmp7[1];
   const obj2 = { style: tmp.wrapper, confirmText: null, onConfirm: null, children: null };
   const tmp9 = useThemeDefault();
-  const intl = tmp2(1119).intl;
+  const intl = tmp2(1115).intl;
   obj2.confirmText = intl.string(util.t.YKxJCI);
   obj2.onConfirm = function onConfirm() {
-    closure_1(5143).close();
-    const obj = closure_1(5143);
+    closure_1(5141).close();
+    const obj = closure_1(5141);
     actions_BoostingActionCreators.closeApplyBoostModal();
   };
   const items1 = [
-    closure_9(Scenes, {
+    closure_9(PremiumPaymentGuildAnimation, {
       nextScene: tmp6[0],
       loop: tmp7[0],
       onSceneComplete(currentScene) {
-        if (Scenes.Scenes.ENTRY === currentScene) {
+        if (PremiumPaymentGuildAnimation.Scenes.ENTRY === currentScene) {
           return closure_1(tmp.Scenes.IDLE);
         } else if (tmp.Scenes.IDLE === currentScene) {
           return dependencyMap(true);
@@ -298,7 +99,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     nextScene: tmp6[0],
     loop: tmp7[0],
     onSceneComplete(currentScene) {
-      if (Scenes.Scenes.ENTRY === currentScene) {
+      if (PremiumPaymentGuildAnimation.Scenes.ENTRY === currentScene) {
         return closure_1(tmp.Scenes.IDLE);
       } else if (tmp.Scenes.IDLE === currentScene) {
         return dependencyMap(true);
@@ -314,9 +115,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmp14 = LinearGradientDefault;
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(13928);
+    let tmp8Result = tmp8(13918);
   } else {
-    tmp8Result = tmp8(13929);
+    tmp8Result = tmp8(13919);
   }
   obj6.source = tmp8Result;
   obj5.children = closure_9(tmp15, obj6);
@@ -324,9 +125,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items2 = [closure_9(tmp14, obj4), ];
   const obj7 = { style: tmp.successInfo, children: null };
   const obj8 = { style: tmp.text, variant: "text-sm/medium", children: null };
-  const intl2 = tmp2(1119).intl;
+  const intl2 = tmp2(1115).intl;
   const string = intl2.string;
-  const t = tmp2(1119).t;
+  const t = tmp2(1115).t;
   if (someResult) {
     let stringResult = string(t.RMmWY3);
   } else {
@@ -336,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   obj8.children = stringResult;
   const items3 = [closure_9(Text_Text.Text, obj8), ];
   const obj10 = { style: tmp.text, variant: "text-sm/medium", children: null };
-  const intl3 = tmp2(1119).intl;
+  const intl3 = tmp2(1115).intl;
   obj10.children = intl3.format(util.t.r0IGsP, { guildName: stateFromStores.name, guildSubscriptionQuantity: num });
   items3[1] = closure_9(Text_Text.Text, obj10);
   obj7.children = items3;
@@ -345,4 +146,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   items1[1] = closure_10(closure_5, obj9);
   obj2.children = items1;
   return closure_10(tmp11, obj2);
-});
+};

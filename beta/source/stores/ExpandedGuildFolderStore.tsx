@@ -1,12 +1,12 @@
-// Module ID: 5690
-// Function ID: 5691
+// Module ID: 5688
+// Function ID: 5689
 // Name: ExpandedGuildFolderStore
-// Dependencies: [1224, 504, 577, 2]
+// Dependencies: [1220, 504, 573, 2]
 
-// Module 5690 (ExpandedGuildFolderStore)
+// Module 5688 (ExpandedGuildFolderStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 let set = new Set();
 const PersistedStore = initializeDefault.PersistedStore;
@@ -26,8 +26,8 @@ prototype["getState"] = function getState() {
 prototype["getExpandedFolders"] = function getExpandedFolders() {
   return set;
 };
-prototype["isFolderExpanded"] = function isFolderExpanded(PENDING_JOIN_REQUESTS_FOLDER) {
-  return set.has(PENDING_JOIN_REQUESTS_FOLDER);
+prototype["isFolderExpanded"] = function isFolderExpanded(folderId) {
+  return set.has(folderId);
 };
 ExpandedGuildFolderStore.displayName = "ExpandedGuildFolderStore";
 ExpandedGuildFolderStore.persistKey = "ExpandedGuildFolderStore";

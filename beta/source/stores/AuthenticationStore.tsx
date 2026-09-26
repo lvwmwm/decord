@@ -1,29 +1,29 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1077, 1078, 1103, 3, 1104, 510, 1105, 1245, 14511, 577, 14512, 7221, 4692, 1258, 14513, 1235, 12600, 504, 11642, 14514, 7941, 1982, 2]
+// Dependencies: [503, 1073, 1074, 1099, 3, 1100, 510, 1101, 1241, 14501, 573, 14502, 7223, 4689, 1254, 14503, 1231, 12698, 504, 11766, 14504, 7936, 1978, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage6 from "Storage" /* 510 */;
-import TokenManagerAll from "TokenManager" /* 1104 */;
-import router_utils from "router_utils" /* 1105 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import FingerprintUtils from "FingerprintUtils" /* 1258 */;
-import Server from "Server" /* 1982 */;
-import APIErrorDefault from "APIError" /* 4692 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7221 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7941 */;
-import ApexActionCreators from "ApexActionCreators" /* 11642 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12600 */;
-import fetchExperiments from "fetchExperiments" /* 14511 */;
-import awaitExperiments from "awaitExperiments" /* 14512 */;
-import ClientStateStoreStorage from "ClientStateStoreStorage" /* 14514 */;
+import TokenManagerAll from "TokenManager" /* 1100 */;
+import router_utils from "router_utils" /* 1101 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import Server from "Server" /* 1978 */;
+import APIErrorDefault from "APIError" /* 4689 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7223 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7936 */;
+import ApexActionCreators from "ApexActionCreators" /* 11766 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12698 */;
+import fetchExperiments from "fetchExperiments" /* 14501 */;
+import awaitExperiments from "awaitExperiments" /* 14502 */;
+import ClientStateStoreStorage from "ClientStateStoreStorage" /* 14504 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1077 */;
-import Dispatcher from "Dispatcher" /* 577 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
+import Dispatcher from "Dispatcher" /* 573 */;
 
 require = fn;
 function fetchFingerprint(arg0) {
@@ -74,8 +74,8 @@ function fetchFingerprint(arg0) {
           }
           const obj3 = { withGuildExperiments: true, headers: obj2, context: null };
           const obj5 = { location: null };
-          const tmpResult3 = tmp(14511);
-          obj5.location = tmp(1105).getFingerprintLocation();
+          const tmpResult3 = tmp(14501);
+          obj5.location = tmp(1101).getFingerprintLocation();
           obj3.context = obj5;
           const experiments = tmpResult3.fetchExperiments(obj3);
           let nextPromise = experiments.then((body) => {
@@ -102,24 +102,24 @@ function fetchFingerprint(arg0) {
             Dispatcher.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
           });
           closure_33 = nextPromise;
-          const tmpResult4 = tmp(1105);
+          const tmpResult4 = tmp(1101);
         }
         return nextPromise;
       }
     }
     nextPromise = Promise.resolve();
-    tmpResult = tmp(1105);
+    tmpResult = tmp(1101);
   }
 }
 function handleLogout(isSwitchingAccount) {
   const Storage = Storage6.Storage;
   const tmp2 = null != TokenManagerAll.getToken();
-  closure_13.verbose("handleLogout called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) });
-  const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) };
+  closure_13.verbose("handleLogout called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) });
+  const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) };
   const Storage2 = Storage6.Storage;
   const tmp5 = null != TokenManagerAll.getToken();
-  closure_13.verbose("removeAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(__initData) });
-  const obj4 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(__initData) };
+  closure_13.verbose("removeAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(closure_1_12) });
+  const obj4 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(closure_1_12) };
   TokenManagerAll.removeAnalyticsToken();
   let flag;
   if (isSwitchingAccount != null) {
@@ -179,10 +179,10 @@ function handleLogout(isSwitchingAccount) {
     items.push({ type: "sms" });
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, LoginStates } = Constants);
 ({ Platforms: c10, Routes: closure_11, TOKEN_KEY: closure_12 } = Constants);
-const AgeGateConstants = fn(1103);
+const AgeGateConstants = fn(1099);
 ({ EXISTING_USER_AGE_GATE_MODAL_KEY, NEW_USER_AGE_GATE_MODAL_KEY } = AgeGateConstants);
 let closure_13 = new LoggerDefault("AuthenticationStore");
 let fingerprint = "fingerprint";
@@ -325,8 +325,8 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
     ({ sessionId, authSessionIdHash, staticAuthSessionId } = arg0);
     const Storage = Storage6.Storage;
     const tmp3 = null != TokenManagerAll.getToken();
-    closure_13.verbose("handleConnectionOpen called", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) });
-    const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) };
+    closure_13.verbose("handleConnectionOpen called", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) });
+    const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) };
     ({ id, username, email } = user);
     SentryUtilsDefault.setUser(id, username, email, isStaffFromRawUserDefault(user));
     TokenManagerAll.setAnalyticsToken(analyticsToken);
@@ -347,16 +347,16 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
           const Storage3 = tmp4(510).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
         }
-        tmp6Result = tmp6(14513);
+        tmp6Result = tmp6(14503);
       }
     }
     const Storage4 = tmp4(510).Storage;
     if (Storage4.get(constants.APP_FIRST_LOGIN, true)) {
       const obj4 = { platform: constants2.IOS };
-      tmp6(1245).track(tmp15.APP_FIRST_LOGIN, obj4);
+      tmp6(1241).track(tmp15.APP_FIRST_LOGIN, obj4);
       const Storage5 = tmp4(510).Storage;
       const result2 = Storage5.set(tmp15.APP_FIRST_LOGIN, false);
-      const tmp6Result2 = tmp6(1245);
+      const tmp6Result2 = tmp6(1241);
     }
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(arg0) {
@@ -367,20 +367,20 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
     const id2 = user.id;
     const Storage = Storage6.Storage;
     const tmp5 = null != TokenManagerAll.getToken();
-    closure_13.verbose("setAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) });
+    closure_13.verbose("setAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) });
     let tmp8 = null != id2;
     if (tmp8) {
       tmp8 = id2 === id;
     }
     if (!tmp8) {
-      tmp4(1104).removeAnalyticsToken();
-      const tmp4Result = tmp4(1104);
+      tmp4(1100).removeAnalyticsToken();
+      const tmp4Result = tmp4(1100);
     }
-    const obj3 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) };
+    const obj3 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) };
     TokenManagerAll.setToken(token, id2);
     if (null != analyticsToken) {
-      tmp4(1104).setAnalyticsToken(analyticsToken);
-      const tmp4Result4 = tmp4(1104);
+      tmp4(1100).setAnalyticsToken(analyticsToken);
+      const tmp4Result4 = tmp4(1100);
     }
     closure_22 = c21;
     c21 = null;
@@ -395,7 +395,7 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
     const combined = "handleConnectionClosed called with code " + code + ".";
     const Storage = Storage6.Storage;
     const tmp3 = null != TokenManagerAll.getToken();
-    closure_13.verbose(combined, { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) });
+    closure_13.verbose(combined, { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) });
     if (4004 === code) {
       if (c26) {
         c26 = true;
@@ -429,8 +429,8 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
     NONE = LoginStates.NONE;
     const Storage = Storage6.Storage;
     const tmp = null != TokenManagerAll.getToken();
-    closure_13.verbose("setAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) });
-    const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) };
+    closure_13.verbose("setAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) });
+    const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) };
     TokenManagerAll.removeAnalyticsToken();
     TokenManagerAll.setToken(token.token, undefined);
     closure_22 = c21;
@@ -542,7 +542,7 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
         items.push({ type: "sms" });
       }
       const Storage = Storage6.Storage;
-      const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) };
+      const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) };
       closure_13.verbose("removeAuthToken called.", obj2);
       const tmp9 = null != TokenManagerAll.getToken();
       TokenManagerAll.removeAnalyticsToken();
@@ -607,8 +607,8 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
   REGISTER_SUCCESS: function handleRegisterSuccess(token) {
     const Storage = Storage6.Storage;
     const tmp = null != TokenManagerAll.getToken();
-    closure_13.verbose("setAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) });
-    const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) };
+    closure_13.verbose("setAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) });
+    const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) };
     TokenManagerAll.removeAnalyticsToken();
     TokenManagerAll.setToken(token.token, undefined);
     closure_22 = c21;
@@ -626,20 +626,20 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
     userId = userId.userId;
     const Storage = Storage6.Storage;
     const tmp3 = null != TokenManagerAll.getToken();
-    closure_13.verbose("handleUpdateToken called", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) });
-    const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(__initData) };
+    closure_13.verbose("handleUpdateToken called", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) });
+    const obj2 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) };
     const Storage2 = Storage6.Storage;
     const tmp6 = null != TokenManagerAll.getToken();
-    closure_13.verbose("setAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(__initData) });
+    closure_13.verbose("setAuthToken called.", { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(closure_1_12) });
     let tmp8 = null != userId;
     if (tmp8) {
       tmp8 = userId === id;
     }
     if (!tmp8) {
-      tmp(1104).removeAnalyticsToken();
-      const tmpResult = tmp(1104);
+      tmp(1100).removeAnalyticsToken();
+      const tmpResult = tmp(1100);
     }
-    const obj4 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(__initData) };
+    const obj4 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(closure_1_12) };
     TokenManagerAll.setToken(userId.token, userId);
     closure_22 = c21;
     c21 = null;
@@ -731,7 +731,7 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
   PASSWORDLESS_START: function handlePasswordlessStart() {
     c35 = true;
   }
-}, fn(577).DispatchBand.Early);
+}, fn(573).DispatchBand.Early);
 const size = fn(2);
 let result = size.fileFinishedImporting("stores/AuthenticationStore.tsx");
 

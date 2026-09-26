@@ -1,37 +1,23 @@
-// Module ID: 15578
-// Function ID: 15579
+// Module ID: 15582
+// Function ID: 15583
 // Name: SettingsAppearanceDarkModeThemePickerScreen
-// Dependencies: [19, 1189, 21, 558, 568, 15537, 1119, 2]
+// Dependencies: [19, 1185, 21, 15541, 1115, 2]
+// Exports: default
 
-// Module 15578 (SettingsAppearanceDarkModeThemePickerScreen)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import SettingsAppearanceThemePickerScreenDefault from "SettingsAppearanceThemePickerScreen" /* 15537 */;
+// Module 15582 (SettingsAppearanceDarkModeThemePickerScreen)
+import util from "util" /* 1115 */;
+import SettingsAppearanceThemePickerScreenDefault from "SettingsAppearanceThemePickerScreen" /* 15541 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SystemTheme = fn(1189).SystemTheme;
+const SystemTheme = fn(1185).SystemTheme;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceDarkModeThemePickerScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { mode: SystemTheme.DARK, themeSelector: "nitro", headerTitle: null };
-    const intl = tmp(1119).intl;
-    obj2.headerTitle = intl.string(tmp(1119).t["EgvHH/"]);
-    const tmp9 = jsx(SettingsAppearanceThemePickerScreenDefault, { mode: SystemTheme.DARK, themeSelector: "nitro", headerTitle: null });
-    cResult[0] = tmp9;
-    let first = tmp9;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => {
+export default function SettingsAppearanceDarkModeThemePickerScreen() {
   const obj = { mode: SystemTheme.DARK, themeSelector: "nitro", headerTitle: null };
   const intl = util.intl;
   obj.headerTitle = intl.string(util.t["EgvHH/"]);
   return jsx(SettingsAppearanceThemePickerScreenDefault, { mode: SystemTheme.DARK, themeSelector: "nitro", headerTitle: null });
-});
+};

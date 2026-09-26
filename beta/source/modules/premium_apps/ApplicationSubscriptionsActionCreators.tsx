@@ -1,12 +1,12 @@
-// Module ID: 14817
-// Function ID: 14818
+// Module ID: 14807
+// Function ID: 14808
 // Name: ApplicationSubscriptionsActionCreators
-// Dependencies: [5, 1078, 577, 9633, 7533, 2]
+// Dependencies: [5, 1074, 573, 9637, 7531, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 14817 (ApplicationSubscriptionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 9633 */;
+// Module 14807 (ApplicationSubscriptionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 9637 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 function transformSubscriptionListingToSku(id) {
@@ -48,7 +48,7 @@ let closure_9 = async function _fetchAllSubscriptionListingsDataForApplication(a
     DispatcherDefault.dispatch({ type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS", applicationId, groupListingId });
     await ApplicationSubscriptionsHttpApiAll.getApplicationSubscriptionGroupListingsForApplication(applicationId, groupListingId);
     closure_132_0(closure_132_2[2]).dispatch({ type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE", applicationId: closure_131_0 });
-    closure_131_1 = await "IconComponent";
+    closure_131_1 = await "HermesInternal";
     closure_132_0(closure_132_2[2]).dispatch({ type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS", applicationId: closure_131_0, groupListing: closure_131_1 });
     const subscription_listings = closure_131_1.subscription_listings;
     closure_2 = subscription_listings;
@@ -106,7 +106,7 @@ let closure_12 = async function _fetchSubscriptionListingForPlan(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -133,7 +133,7 @@ let closure_12 = async function _fetchSubscriptionListingForPlan(arg0, value) {
           closure_131_3 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -224,7 +224,7 @@ let closure_12 = async function _fetchSubscriptionListingForPlan(arg0, value) {
           return obj;
         }
         c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp33) {
       closure_5 = tmp33;
@@ -237,7 +237,7 @@ let closure_12 = async function _fetchSubscriptionListingForPlan(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ SKUProductLines: closure_4, SKUTypes: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsActionCreators.tsx");

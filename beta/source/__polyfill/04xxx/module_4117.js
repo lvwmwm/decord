@@ -1,13 +1,13 @@
 // Module ID: 4117
 // Function ID: 4118
-// Dependencies: [3881, 4118, 4119, 3882]
+// Dependencies: [3877, 3880, 4118, 3878]
 // Exports: default
 
 // Module 4117
-import _typeof_mod from "module_3881" /* 3881 */;
-import startOfUTCISOWeek_mod from "startOfUTCISOWeek" /* 4118 */;
-import startOfUTCISOWeekYear_mod from "startOfUTCISOWeekYear" /* 4119 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import startOfUTCWeek_mod from "startOfUTCWeek" /* 3880 */;
+import startOfUTCWeekYear_mod from "startOfUTCWeekYear" /* 4118 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -17,22 +17,22 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let startOfUTCISOWeek = startOfUTCISOWeek_mod;
-if (!startOfUTCISOWeek) {
-  const obj2 = { default: startOfUTCISOWeek };
+let startOfUTCWeek = startOfUTCWeek_mod;
+if (!startOfUTCWeek) {
+  const obj2 = { default: startOfUTCWeek };
   let tmp5 = obj2;
 } else {
-  tmp5 = startOfUTCISOWeek;
+  tmp5 = startOfUTCWeek;
 }
-startOfUTCISOWeek = tmp5;
-let startOfUTCISOWeekYear = startOfUTCISOWeekYear_mod;
-if (!startOfUTCISOWeekYear) {
-  const obj3 = { default: startOfUTCISOWeekYear };
+startOfUTCWeek = tmp5;
+let startOfUTCWeekYear = startOfUTCWeekYear_mod;
+if (!startOfUTCWeekYear) {
+  const obj3 = { default: startOfUTCWeekYear };
   let tmp7 = obj3;
 } else {
-  tmp7 = startOfUTCISOWeekYear;
+  tmp7 = startOfUTCWeekYear;
 }
-startOfUTCISOWeekYear = tmp7;
+startOfUTCWeekYear = tmp7;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj4 = { default: requiredArgs };
@@ -43,11 +43,11 @@ if (!requiredArgs) {
 requiredArgs = tmp9;
 let c4 = 604800000;
 
-export default function getUTCISOWeek(arg0) {
+export default function getUTCWeek(arg0, arg1) {
   requiredArgs.default(1, arguments);
   const defaultResult1 = _typeof.default(arg0);
-  const time = startOfUTCISOWeek.default(defaultResult1).getTime();
-  const defaultResult2 = startOfUTCISOWeek.default(defaultResult1);
-  return Math.round((time - startOfUTCISOWeekYear.default(defaultResult1).getTime()) / c4) + 1;
+  const time = startOfUTCWeek.default(defaultResult1, arg1).getTime();
+  const defaultResult2 = startOfUTCWeek.default(defaultResult1, arg1);
+  return Math.round((time - startOfUTCWeekYear.default(defaultResult1, arg1).getTime()) / c4) + 1;
 };
 export default exports.default;

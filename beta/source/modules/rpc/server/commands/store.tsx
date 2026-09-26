@@ -1,12 +1,12 @@
-// Module ID: 14816
-// Function ID: 14817
+// Module ID: 14806
+// Function ID: 14807
 // Name: merged14
-// Dependencies: [5, 4695, 1078, 14817, 14818, 9609, 9163, 11151, 14819, 7676, 2]
+// Dependencies: [5, 4692, 1074, 14807, 14808, 9613, 9165, 11107, 14809, 7674, 2]
 
-// Module 14816 (merged14)
-import EntitlementActionCreatorsAll from "EntitlementActionCreators" /* 7676 */;
-import RPCErrorDefault from "RPCError" /* 9609 */;
-import validateTransportType from "validateTransportType" /* 14818 */;
+// Module 14806 (merged14)
+import EntitlementActionCreatorsAll from "EntitlementActionCreators" /* 7674 */;
+import RPCErrorDefault from "RPCError" /* 9613 */;
+import validateTransportType from "validateTransportType" /* 14808 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -112,7 +112,7 @@ let closure_11 = async function _getSkusHandler(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -136,7 +136,7 @@ let closure_11 = async function _getSkusHandler(arg0) {
             closure_132_4 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -257,9 +257,9 @@ function getEntitlementsHandler(socket) {
     return EntitlementActionCreatorsAll.fetchUserEntitlementsForApplication(id);
   }
 }
-let Constants = fn(4695);
+let Constants = fn(4692);
 ({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = Constants);
-Constants = fn(1078);
+Constants = fn(1074);
 ({ CurrencyCodes: hasOwnProperty, RPCCommands, RPCErrors: metroRequire, SKUTypes: closure_7 } = Constants);
 let items = [RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE];
 let items1 = [RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE];

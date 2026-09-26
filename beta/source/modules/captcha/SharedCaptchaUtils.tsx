@@ -1,12 +1,12 @@
-// Module ID: 5116
-// Function ID: 5117
+// Module ID: 5114
+// Function ID: 5115
 // Name: SharedCaptchaUtils
-// Dependencies: [5117, 5124, 2]
+// Dependencies: [5115, 5122, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 5116 (SharedCaptchaUtils)
-import CaptchaConstants from "CaptchaConstants" /* 5124 */;
-import CaptchaStore from "CaptchaStore" /* 5117 */;
+// Module 5114 (SharedCaptchaUtils)
+import CaptchaConstants from "CaptchaConstants" /* 5122 */;
+import CaptchaStore from "CaptchaStore" /* 5115 */;
 import size from "module_2" /* 2 */;
 
 ({ incrementCaptchaServeVolume: closure_0, flushCaptchaServeVolume: closure_1, isCaptchaStoreVolumeEmpty: c2 } = CaptchaStore);
@@ -31,11 +31,11 @@ export const extractCaptchaPropsFromResponse = function extractCaptchaPropsFromR
   obj.options = obj2;
   return obj;
 };
-export const emitCaptchaDistributionMetric = function emitCaptchaDistributionMetric(userflow) {
+export const emitCaptchaDistributionMetric = function emitCaptchaDistributionMetric(arg0) {
   if (React2()) {
     const _setTimeout = setTimeout;
     const timerId = setTimeout(() => closure_1_1(), closure_3);
   }
-  React(userflow);
+  React(arg0);
 };
 export const CaptchaCancelError = prototype;

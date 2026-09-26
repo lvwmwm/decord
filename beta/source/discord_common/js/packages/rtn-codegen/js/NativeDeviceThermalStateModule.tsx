@@ -1,9 +1,9 @@
-// Module ID: 9598
-// Function ID: 9599
+// Module ID: 9602
+// Function ID: 9603
 // Name: NativeDeviceThermalStateModule
 // Dependencies: [17, 2]
 
-// Module 9598 (NativeDeviceThermalStateModule)
+// Module 9602 (NativeDeviceThermalStateModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,20 @@
-// Module ID: 9661
-// Function ID: 9662
+// Module ID: 9665
+// Function ID: 9666
 // Name: getApplicationIdsForGame
-// Dependencies: [5017, 2004, 558, 568, 504, 2]
-// Exports: default
+// Dependencies: [5015, 2000, 504, 2]
+// Exports: default, useApplicationIdsForGame
 
-// Module 9661 (getApplicationIdsForGame)
-import ApplicationStore from "ApplicationStore" /* 5017 */;
-import GameStore from "GameStore" /* 2004 */;
+// Module 9665 (getApplicationIdsForGame)
+import ApplicationStore from "ApplicationStore" /* 5015 */;
+import GameStore from "GameStore" /* 2000 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ReactCompilerGating = fn(558);
-function getApplicationIdsForGame(gameId) {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/games/utils/getApplicationIdsForGame.tsx");
+
+export default function getApplicationIdsForGame(gameId) {
   const set = new Set();
   if (null != gameId) {
     set.add(gameId);
@@ -41,68 +43,11 @@ function getApplicationIdsForGame(gameId) {
     }
   }
   return set;
-}
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/games/utils/getApplicationIdsForGame.tsx");
-
-export default getApplicationIdsForGame;
-export const useApplicationIdsForGame = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameStore, ApplicationStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      const set = new Set();
-      if (null != closure_0) {
-        set.add(tmp);
-        const game = GameStore.getGame(tmp);
-        if (game != null) {
-          const linkedApplications = game.linkedApplications;
-          if (linkedApplications != null) {
-            const item = linkedApplications.forEach((id) => set.add(id.id));
-          }
-        }
-        const application = ApplicationStore.getApplication(tmp);
-        if (application != null) {
-          const linkedGames = application.linkedGames;
-          if (linkedGames != null) {
-            const item1 = linkedGames.forEach((id) => {
-              set.add(id.id);
-              game = game.getGame(id.id);
-              if (game != null) {
-                const linkedApplications = game.linkedApplications;
-                if (linkedApplications != null) {
-                  const item = linkedApplications.forEach((id) => set.add(id.id));
-                }
-              }
-            });
-          }
-        }
-      }
-      return Array.from(set);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp8 = items1;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStoresArray(first, tmp7, tmp8);
-}) : ((arg0) => {
-  _require = arg0;
+};
+export const useApplicationIdsForGame = function useApplicationIdsForGame(gameId) {
+  _require = gameId;
   const items = [GameStore, ApplicationStore];
-  const items1 = [arg0];
+  const items1 = [gameId];
   return require("initialize").useStateFromStoresArray(items, () => {
     const set = new Set();
     if (null != closure_0) {
@@ -133,4 +78,4 @@ export const useApplicationIdsForGame = ReactCompilerGating.isReactCompilerEnabl
     }
     return Array.from(set);
   }, items1);
-});
+};

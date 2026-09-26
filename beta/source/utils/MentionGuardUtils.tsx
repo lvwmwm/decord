@@ -1,14 +1,14 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 10555
+// Function ID: 10556
 // Name: MentionGuardUtils
-// Dependencies: [32, 7555, 4431, 1078, 38, 7955, 2]
+// Dependencies: [32, 7553, 4427, 1074, 38, 7950, 2]
 
-// Module 10671 (MentionGuardUtils)
+// Module 10555 (MentionGuardUtils)
 import _modDef38 from "module_38" /* 38 */;
-import MessageParserDefault from "MessageParser" /* 7955 */;
+import MessageParserDefault from "MessageParser" /* 7950 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7555 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7553 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 function parsedItemUsesEveryoneRole(content) {
   if (typeof content.content === "string") {
@@ -41,7 +41,7 @@ function parsedItemUsesEveryoneRole(content) {
   }
   return null;
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Permissions: hasOwnProperty, StatusTypes: metroRequire } = Constants);
 const regExp = new RegExp(/@(:?everyone|here)/);
 const size = fn(2);

@@ -1,11 +1,11 @@
-// Module ID: 4483
-// Function ID: 4484
+// Module ID: 4479
+// Function ID: 4480
 // Name: ActionSheetStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 4483 (ActionSheetStore)
+// Module 4479 (ActionSheetStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const array = new Array();
 let found = array;

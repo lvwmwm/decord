@@ -1,16 +1,16 @@
 // Module ID: 8826
 // Function ID: 8827
-// Dependencies: [41, 42, 93, 95, 98, 8781, 8804]
+// Dependencies: [41, 42, 93, 95, 98, 8776, 8799]
 
 // Module 8826
-import _modDef8804 from "module_8804" /* 8804 */;
+import _modDef8799 from "module_8799" /* 8799 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FeMorphology = arg1;
+const FeTurbulence = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,12 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeMorphology {
+class FeTurbulence {
   constructor() {
     self = this;
-    tmp = c2(this, FeMorphology);
+    tmp = c2(this, FeTurbulence);
     tmp2 = closure_4;
-    obj = closure_4(FeMorphology);
+    obj = closure_4(FeTurbulence);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -50,17 +50,17 @@ class FeMorphology {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeMorphology, _modDef8804);
+_inherits(FeTurbulence, _modDef8799);
 const entry = {
   key: "render",
   value: function render() {
-    const result = FeMorphology(8781).warnUnimplementedFilter();
+    const result = FeTurbulence(8776).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FeMorphology, items);
-importDefaultResultResult.displayName = "FeMorphology";
+const importDefaultResultResult = _createClass(FeTurbulence, items);
+importDefaultResultResult.displayName = "FeTurbulence";
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = {};
 

@@ -1,55 +1,71 @@
 // Module ID: 1582
 // Function ID: 1583
-// Dependencies: [32, 19, 1497, 1531, 1528, 1583, 1510]
-// Exports: usePreventRemove
+// Dependencies: [109, 19, 21, 1487, 1583, 1585]
+// Exports: createStandardNavigationFactories
 
 // Module 1582
-import _slicedToArray from "module_32" /* 32 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1487 */;
+import _mod1583 from "module_1583" /* 1583 */;
+import _mod1585 from "module_1585" /* 1585 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const require = arg1;
+require = fn;
+let closure_2 = ["children", "id", "initialRouteName", "layout", "screenLayout", "screenListeners", "screenOptions", "UNSTABLE_routeNamesChangeBehavior", "UNSTABLE_router"];
+const jsx = fn(21).jsx;
 
-export const usePreventRemove = function usePreventRemove(stateFromStores, arg1) {
-  _require = stateFromStores;
-  importDefault = arg1;
-  const first = navigation(key.useState(() => stateFromStores(first[2]).nanoid()), 1)[0];
-  navigation = require("module_1531").useNavigation();
-  let obj = require("module_1531");
-  key = require("module_1528").useRoute().key;
-  const obj2 = require("module_1528");
-  const preventRemoveContext = require("module_1583").usePreventRemoveContext();
-  const setPreventRemove = preventRemoveContext.setPreventRemove;
-  const notifyPreventRemove = preventRemoveContext.notifyPreventRemove;
-  const items = [setPreventRemove, first, key, stateFromStores];
-  const insertionEffect = key.useInsertionEffect(() => {
-    setPreventRemove(first, key, closure_0);
-    return () => {
-      setPreventRemove(first, key, false);
-    };
-  }, items);
-  const items1 = [first, key, stateFromStores, notifyPreventRemove];
-  const effect = key.useEffect(() => {
-    notifyPreventRemove();
-    return () => {
-      notifyPreventRemove();
-    };
-  }, items1);
-  const tmp6 = require("module_1510")((preventDefault) => {
-    if (closure_0) {
-      preventDefault.preventDefault();
-      const obj = { data: preventDefault.data };
-      closure_1(obj);
+export const createStandardNavigationFactories = function createStandardNavigationFactories(arg0, arg1, arg2) {
+  _require = arg1;
+  dependencyMap = arg2;
+  ({ type, version, NavigatorContent: closure_2 } = arg0);
+  if ("standard" !== type) {
+    let str3 = "unknown type.";
+    if (typeof type === "string") {
+      const _HermesInternal2 = HermesInternal;
+      str3 = "type \"" + type + "\".";
     }
-  });
-  closure_7 = tmp6;
-  const items2 = [navigation, tmp6];
-  const effect1 = key.useEffect(() => {
-    let addListenerResult;
-    if (navigation != null) {
-      addListenerResult = navigation.addListener("beforeRemove", closure_7);
-    }
-    return addListenerResult;
-  }, items2);
+    const error = new Error("createStandardNavigationFactories only works with standard navigator objects, but got navigator of " + str3);
+    throw error;
+  } else if (1 !== version) {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const error1 = new Error("createStandardNavigationFactories only works with version 1 of standard navigator objects, but got version " + version + ".");
+    throw error1;
+  } else {
+    let obj = {
+      createNavigator: require("BaseNavigationContainer").createNavigatorFactory(function StandardNavigationNavigator(UNSTABLE_routeNamesChangeBehavior) {
+          const navigationBuilder = BaseNavigationContainer.useNavigationBuilder(closure_0, UNSTABLE_routeNamesChangeBehavior);
+          closure_1 = _mod1583.useBuildHref();
+          let tmp2 = _mod1585;
+          let flag = tmp2.useMemoArray;
+          if (!("preloadedRoutes" in navigationBuilder.state)) {
+            let routes1 = navigationBuilder.state.routes;
+            const flagResult = flag(routes1.map((key) => {
+              const tmp = closure_1(key.name, key.params);
+              const items = [{ key: key.key, name: key.name, params: key.params, href: tmp }, ];
+              const items1 = [, , , ];
+              ({ key: arr2[0], name: arr2[1], params: arr2[2] } = key);
+              items1[3] = tmp;
+              items[1] = items1;
+              return items;
+            }));
+            closure_2 = flagResult;
+            let items = [navigationBuilder.state.index, flagResult];
+            const routes2 = noop.useMemo(() => ({ index: navigationBuilder.state.index, routes: flagResult }), items).routes;
+            tmp2 = routes2[Symbol.iterator]();
+            flag = true;
+          } else {
+            const _Array = Array;
+          }
+          const routes = navigationBuilder.state.routes;
+          routes1 = routes.concat(navigationBuilder.state.preloadedRoutes);
+        }),
+      createScreen: null
+    };
+    const obj2 = require("BaseNavigationContainer");
+    obj.createScreen = require("BaseNavigationContainer").createScreenFactory();
+    return obj;
+  }
 };

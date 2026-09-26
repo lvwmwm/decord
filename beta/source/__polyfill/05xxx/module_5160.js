@@ -1,17 +1,117 @@
 // Module ID: 5160
 // Function ID: 5161
-// Dependencies: [17, 26, 106, 65]
+// Dependencies: [109, 19, 17, 21, 5161, 5162, 5163]
+// Exports: default
 
 // Module 5160
-import _mod17 from "module_17" /* 17 */;
-import _mod26 from "module_26" /* 26 */;
-import weakSet from "weakSet" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import _mod5161 from "module_5161" /* 5161 */;
+import _modDef5162 from "module_5162" /* 5162 */;
+import _mod5163 from "module_5163" /* 5163 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import noop from "module_19" /* 19 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSTabsHostAndroid", directEventTypes: { topTabSelected: { registrationName: "onTabSelected" }, topTabSelectionRejected: { registrationName: "onTabSelectionRejected" }, topTabSelectionPrevented: { registrationName: "onTabSelectionPrevented" } }, validAttributes: null };
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onTabSelected: true, onTabSelectionRejected: true, onTabSelectionPrevented: true }));
-__INTERNAL_VIEW_CONFIG.validAttributes = { navStateRequest: true, rejectStaleNavStateUpdates: true, tabBarHidden: true, nativeContainerBackgroundColor: _mod26.colorAttribute, colorScheme: true, tabBarRespectsIMEInsets: true };
+require = fn;
+let closure_3 = ["android", "ios"];
+let closure_4 = ["onDidAppear", "onDidDisappear", "onWillAppear", "onWillDisappear", "children", "style"];
+let closure_5 = ["tabBarBackgroundColor", "tabBarItemRippleColor", "normal", "selected", "focused", "disabled", "tabBarItemActiveIndicatorColor", "tabBarItemTitleFontWeight", "tabBarItemBadgeBackgroundColor", "tabBarItemBadgeTextColor"];
+let closure_6 = ["tabBarItemTitleFontColor", "tabBarItemIconColor"];
+get_ActivityIndicator = fn(17);
+({ StyleSheet, processColor: closure_9 } = get_ActivityIndicator);
+const jsx = fn(21).jsx;
+const fillParent = StyleSheet.create({ fillParent: { position: "absolute", flex: 1, width: "100%", height: "100%" } });
 
-export default module_65.get("RNSTabsHostAndroid", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function TabsScreen(arg0) {
+  ({ android, ios } = arg0);
+  const tmp2 = _objectWithoutProperties(arg0, closure_3);
+  const ref = noop.useRef(null);
+  ({ onDidAppear, onDidDisappear, onWillAppear, onWillDisappear, children, style } = tmp2);
+  const tmp4 = _objectWithoutProperties(tmp2, closure_4);
+  let icon;
+  if (android != null) {
+    icon = android.icon;
+  }
+  let selectedIcon;
+  if (android != null) {
+    selectedIcon = android.selectedIcon;
+  }
+  const obj = _mod5161;
+  const obj2 = { componentNodeRef: ref, onDidAppear, onDidDisappear, onWillAppear, onWillDisappear, screenKey: tmp4.screenKey };
+  const result = _mod5163.parseAndroidIconToNativeProps(icon);
+  const tmp5Result = _mod5163;
+  const result1 = _mod5163.parseAndroidIconToNativeProps(selectedIcon);
+  const obj4 = { collapsable: false, style: null, ref };
+  const items = [style, fillParent.fillParent];
+  obj4.style = items;
+  const obj3 = { imageIconResource: result.imageIconResource, drawableIconResourceName: result.drawableIconResourceName, selectedImageIconResource: result1.imageIconResource, selectedDrawableIconResourceName: result1.drawableIconResourceName };
+  const tmp11 = jsx;
+  const tmp5Result2 = _mod5163;
+  const merged = Object.assign(obj.useTabsScreen(obj2).lifecycleCallbacks);
+  const merged1 = Object.assign(obj3);
+  const merged2 = Object.assign(tmp4);
+  let standardAppearance;
+  if (android != null) {
+    standardAppearance = android.standardAppearance;
+  }
+  let tmp17;
+  if (standardAppearance) {
+    ({ normal, selected, focused, disabled, tabBarItemTitleFontWeight } = standardAppearance);
+    const obj5 = {};
+    ({ tabBarBackgroundColor, tabBarItemRippleColor, tabBarItemActiveIndicatorColor, tabBarItemBadgeBackgroundColor, tabBarItemBadgeTextColor } = standardAppearance);
+    const merged3 = Object.assign(tmp(standardAppearance, closure_5));
+    obj5.tabBarBackgroundColor = React7(tabBarBackgroundColor);
+    obj5.tabBarItemRippleColor = React7(tabBarItemRippleColor);
+    let tmp22;
+    if (normal) {
+      const obj6 = {};
+      ({ tabBarItemTitleFontColor, tabBarItemIconColor } = normal);
+      const merged4 = Object.assign(tmp(normal, closure_6));
+      obj6.tabBarItemTitleFontColor = tmp21(tabBarItemTitleFontColor);
+      obj6.tabBarItemIconColor = tmp21(tabBarItemIconColor);
+      tmp22 = obj6;
+    }
+    obj5.normal = tmp22;
+    let tmp26;
+    if (selected) {
+      const obj7 = {};
+      ({ tabBarItemTitleFontColor: tabBarItemTitleFontColor2, tabBarItemIconColor: tabBarItemIconColor2 } = selected);
+      const merged5 = Object.assign(tmp(selected, closure_6));
+      obj7.tabBarItemTitleFontColor = tmp21(tabBarItemTitleFontColor2);
+      obj7.tabBarItemIconColor = tmp21(tabBarItemIconColor2);
+      tmp26 = obj7;
+    }
+    obj5.selected = tmp26;
+    let tmp30;
+    if (focused) {
+      const obj8 = {};
+      ({ tabBarItemTitleFontColor: tabBarItemTitleFontColor3, tabBarItemIconColor: tabBarItemIconColor3 } = focused);
+      const merged6 = Object.assign(tmp(focused, closure_6));
+      obj8.tabBarItemTitleFontColor = tmp21(tabBarItemTitleFontColor3);
+      obj8.tabBarItemIconColor = tmp21(tabBarItemIconColor3);
+      tmp30 = obj8;
+    }
+    obj5.focused = tmp30;
+    let tmp34;
+    if (disabled) {
+      const obj9 = {};
+      ({ tabBarItemTitleFontColor: tabBarItemTitleFontColor4, tabBarItemIconColor: tabBarItemIconColor4 } = disabled);
+      const merged7 = Object.assign(tmp(disabled, closure_6));
+      obj9.tabBarItemTitleFontColor = tmp21(tabBarItemTitleFontColor4);
+      obj9.tabBarItemIconColor = tmp21(tabBarItemIconColor4);
+      tmp34 = obj9;
+    }
+    obj5.disabled = tmp34;
+    obj5.tabBarItemActiveIndicatorColor = React7(tabBarItemActiveIndicatorColor);
+    let StringResult;
+    if (undefined !== tabBarItemTitleFontWeight) {
+      const _String = String;
+      StringResult = String(tabBarItemTitleFontWeight);
+    }
+    obj5.tabBarItemTitleFontWeight = StringResult;
+    obj5.tabBarItemBadgeBackgroundColor = React7(tabBarItemBadgeBackgroundColor);
+    obj5.tabBarItemBadgeTextColor = React7(tabBarItemBadgeTextColor);
+    tmp17 = obj5;
+  }
+  obj4.standardAppearance = tmp17;
+  obj4.children = children;
+  return tmp11(_modDef5162, obj4);
+};

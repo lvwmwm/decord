@@ -1,17 +1,17 @@
-// Module ID: 18300
-// Function ID: 18301
+// Module ID: 18291
+// Function ID: 18292
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2113, 14009, 9867, 1078, 1119, 1374, 7617, 1245, 18299, 1259, 2]
+// Dependencies: [5, 2109, 13999, 9889, 1074, 1115, 1370, 7615, 1241, 18290, 1255, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 18300 (GlobalDiscoveryServersUtils)
-import util from "util" /* 1119 */;
-import v1 from "v1" /* 1259 */;
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 14009 */;
-import GlobalDiscoveryServersFeaturedSearchManagerDefault from "GlobalDiscoveryServersFeaturedSearchManager" /* 18299 */;
+// Module 18291 (GlobalDiscoveryServersUtils)
+import util from "util" /* 1115 */;
+import v1 from "v1" /* 1255 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13999 */;
+import GlobalDiscoveryServersFeaturedSearchManagerDefault from "GlobalDiscoveryServersFeaturedSearchManager" /* 18290 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2113 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
 
 require = fn;
 let closure_15 = async function _navigateToGuild() {
@@ -21,15 +21,15 @@ let closure_15 = async function _navigateToGuild() {
   closure_129_6 = obj6;
   await closure_130_2(closure_130_3[7]).startLurking(closure_129_1, closure_129_4, closure_129_6);
   closure_130_1(closure_130_3[8]).track(closure_130_14.GUILD_DISCOVERY_GUILD_SELECTED, { guild_id: closure_129_1, load_id: closure_129_0, card_index: closure_129_2, category_id: closure_129_3, location: closure_129_4 });
-  await "IconComponent";
+  await "HermesInternal";
   closure_1 = tmp2;
   ({ loadId: closure_129_0, guildId: closure_129_1, index: closure_129_2, categoryId: closure_129_3, analyticsLocation: closure_129_4, options: closure_129_5 } = closure_0);
-  return "Set";
+  return "PX_16";
 };
 GlobalDiscoveryServersSearchResultsStoreDefault;
-const GlobalDiscoveryServersConstants = fn(9867);
+const GlobalDiscoveryServersConstants = fn(9889);
 ({ GlobalDiscoveryServerTab: closure_7, FEATURED_GUILDS_CACHE_DURATION: closure_8, FEATURED_GUILDS_SEARCH_OPTIONS: closure_9, CategoryId: c10, DISCOVERY_ALL_CATEGORIES_ID: closure_11, getLanguageOptions: closure_12, HUBS_CATEGORY_ID: map1 } = GlobalDiscoveryServersConstants);
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersUtils.tsx");
 
@@ -142,17 +142,17 @@ export const getCategoryIdFromServerTab = function getCategoryIdFromServerTab(ar
   if (constants.FEATURED === arg0) {
     return closure_1_11;
   } else if (tmp.GAMING === arg0) {
-    return v65535.Activity;
+    return closure_1_10.Activity;
   } else if (tmp.MUSIC === arg0) {
-    return v65535.Music;
+    return closure_1_10.Music;
   } else if (tmp.ENTERTAINMENT === arg0) {
-    return v65535.Television;
+    return closure_1_10.Television;
   } else if (tmp.TECH === arg0) {
-    return v65535.Science;
+    return closure_1_10.Science;
   } else if (tmp.EDUCATION === arg0) {
-    return v65535.Education;
+    return closure_1_10.Education;
   } else if (tmp.HUBS === arg0) {
-    return __initData2;
+    return map1;
   } else {
     GlobalUtils.assertNever(arg0);
   }
@@ -161,7 +161,7 @@ export const isStaleFeaturedGuilds = function isStaleFeaturedGuilds(arg0) {
   let tmp = null == arg0;
   if (!tmp) {
     const _Date = Date;
-    tmp = Date.now() - arg0 > closure_1_8;
+    tmp = Date.now() - arg0 > React6;
   }
   return tmp;
 };
@@ -171,7 +171,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "applicationId", discoverySplash: true, emojis: true };
+  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "channel", discoverySplash: "variant", emojis: "height" };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   obj.emojis = [];
   return obj;
@@ -183,7 +183,7 @@ export const getLanguageCodeFallback = function getLanguageCodeFallback() {
     tmp = items;
   }
   [tmp3] = tmp;
-  const arr2 = __initData();
+  const arr2 = closure_1_12();
   locale = tmp3.locale;
   let found = arr2.find((code) => code.code === locale);
   if (found == null) {
@@ -202,9 +202,9 @@ export const navigateToGuild = function navigateToGuild() {
   return applyArgumentsResult;
 };
 export const handleTabPressPrefetch = function handleTabPressPrefetch() {
-  const error = GlobalDiscoveryServersSearchResultsStore.getError(options);
-  const isFetching = GlobalDiscoveryServersSearchResultsStore.getIsFetching(options);
-  let isInitialFetchComplete = GlobalDiscoveryServersSearchResultsStore.getIsInitialFetchComplete(options);
+  const error = GlobalDiscoveryServersSearchResultsStore.getError(React7);
+  const isFetching = GlobalDiscoveryServersSearchResultsStore.getIsFetching(React7);
+  let isInitialFetchComplete = GlobalDiscoveryServersSearchResultsStore.getIsInitialFetchComplete(React7);
   if (!isInitialFetchComplete) {
     if (!isFetching) {
       const featuredGuilds = GlobalDiscoveryServersFeaturedSearchManagerDefault.fetchFeaturedGuilds();

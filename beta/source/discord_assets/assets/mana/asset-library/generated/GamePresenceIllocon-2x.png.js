@@ -1,8 +1,8 @@
-// Module ID: 6359
-// Function ID: 6360
+// Module ID: 6361
+// Function ID: 6362
 // Dependencies: [2]
 
-// Module 6359
+// Module 6361
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GamePresenceIllocon-2x.png.js");

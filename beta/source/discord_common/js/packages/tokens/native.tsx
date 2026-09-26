@@ -1,20 +1,20 @@
-// Module ID: 580
-// Function ID: 581
+// Module ID: 576
+// Function ID: 577
 // Name: native
-// Dependencies: [581, 582, 583, 584, 585, 586, 587, 674, 675, 676, 677, 2]
+// Dependencies: [577, 578, 579, 580, 581, 582, 583, 670, 671, 672, 673, 2]
 
-// Module 580 (native)
-import ThemeTypes from "ThemeTypes" /* 581 */;
+// Module 576 (native)
+import ThemeTypes from "ThemeTypes" /* 577 */;
+import _mod578 from "module_578" /* 578 */;
+import _mod579 from "module_579" /* 579 */;
+import _mod580 from "module_580" /* 580 */;
+import _mod581 from "module_581" /* 581 */;
 import _mod582 from "module_582" /* 582 */;
-import _mod583 from "module_583" /* 583 */;
-import _mod584 from "module_584" /* 584 */;
-import _mod585 from "module_585" /* 585 */;
-import _mod586 from "module_586" /* 586 */;
-import mapValuesDefault from "mapValues" /* 587 */;
-import Radius from "Radius" /* 674 */;
-import Layout from "Layout" /* 675 */;
-import _modDef676 from "module_676" /* 676 */;
-import transforms from "transforms" /* 677 */;
+import mapValuesDefault from "mapValues" /* 583 */;
+import Radius from "Radius" /* 670 */;
+import Layout from "Layout" /* 671 */;
+import _modDef672 from "module_672" /* 672 */;
+import transforms from "transforms" /* 673 */;
 import size from "module_2" /* 2 */;
 
 function sanitizeTheme(theme) {
@@ -27,10 +27,10 @@ function sanitizeTheme(theme) {
     throw error;
   }
 }
-const SemanticColors = _mod582._private.SemanticColors;
-const SemanticColorExperiments = _mod583._private.SemanticColorExperiments;
-const RawColors = _mod584._private.RawColors;
-const Shadows = _mod586._private.Shadows;
+const SemanticColors = _mod578._private.SemanticColors;
+const SemanticColorExperiments = _mod579._private.SemanticColorExperiments;
+const RawColors = _mod580._private.RawColors;
+const Shadows = _mod582._private.Shadows;
 let closure_6 = Symbol("semanticColor");
 const set = new Set(Object.values(ThemeTypes._private.Themes));
 let result = size.fileFinishedImporting("../discord_common/js/packages/tokens/native.tsx");
@@ -40,47 +40,47 @@ export default {
   colors: mapValuesDefault(SemanticColors, (arg0, arg1) => ({ [closure_1_6]: arg1 })),
   unsafe_rawColors: RawColors,
   shadows: mapValuesDefault(Shadows, (arg0) => {
-    let f81410 = (shadowOffset, arg1) => {
+    let f72219 = (shadowOffset, arg1) => {
       shadowOffset = undefined;
       if (!arg1) {
         shadowOffset = shadowOffset.shadowOffset;
       }
       return shadowOffset;
     };
-    f81410 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
-    f81410 = (shadowOpacity) => shadowOpacity.shadowOpacity;
-    f81410 = (shadowRadius) => shadowRadius.shadowRadius;
-    f81410 = (elevation) => elevation.elevation;
+    f72219 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
+    f72219 = (shadowOpacity) => shadowOpacity.shadowOpacity;
+    f72219 = (shadowRadius) => shadowRadius.shadowRadius;
+    f72219 = (elevation) => elevation.elevation;
     return {
       shadowOffset: {
         resolve(isAndroid) {
-          return f81410(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+          return f72219(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
         }
       },
       shadowColor: {
         resolve(isAndroid) {
-          return f81410(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+          return f72219(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
         }
       },
       shadowOpacity: {
         resolve(isAndroid) {
-          return f81410(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+          return f72219(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
         }
       },
       shadowRadius: {
         resolve(isAndroid) {
-          return f81410(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+          return f72219(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
         }
       },
       elevation: {
         resolve(isAndroid) {
-          return f81410(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+          return f72219(require[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
         }
       }
     };
   }),
   radii: Radius.Radius,
-  modules: mapValuesDefault(_mod585._private.Modules, (arg0) => mapValuesDefault(arg0, (arg0) => {
+  modules: mapValuesDefault(_mod581._private.Modules, (arg0) => mapValuesDefault(arg0, (arg0) => {
     closure_0 = arg0;
     return {
       resolve(arg0) {
@@ -99,13 +99,13 @@ export default {
   })),
   space: Layout.SpacePx,
   internal: {
-    isSemanticColor(BACKGROUND_BASE_LOW) {
-      let tmp = typeof BACKGROUND_BASE_LOW === "object";
-      if (typeof BACKGROUND_BASE_LOW === "object") {
-        tmp = null !== BACKGROUND_BASE_LOW;
+    isSemanticColor(backgroundColor) {
+      let tmp = typeof backgroundColor === "object";
+      if (typeof backgroundColor === "object") {
+        tmp = null !== backgroundColor;
       }
       if (tmp) {
-        tmp = closure_6 in BACKGROUND_BASE_LOW;
+        tmp = closure_6 in backgroundColor;
       }
       return tmp;
     },
@@ -190,9 +190,9 @@ export default {
         if (1 === opacity) {
           let hexResult = result;
         } else {
-          const obj8 = _modDef676(result);
-          hexResult = _modDef676(result).alpha(opacity).hex();
-          const alphaResult = _modDef676(result).alpha(opacity);
+          const obj8 = _modDef672(result);
+          hexResult = _modDef672(result).alpha(opacity).hex();
+          const alphaResult = _modDef672(result).alpha(opacity);
         }
         return hexResult;
       }
@@ -246,7 +246,7 @@ export default {
           } else if (semanticColorContextFromThemeContext != null) {
             tmp38 = semanticColorContextFromThemeContext.gradient.colors[tmp36.color];
           }
-          const tmp61Result = _modDef676(tmp38);
+          const tmp61Result = _modDef672(tmp38);
           let result1 = tmp61Result;
           if ("saturation" in tmp36) {
             result1 = tmp61Result.set("hsl.s", tmp36.saturation);

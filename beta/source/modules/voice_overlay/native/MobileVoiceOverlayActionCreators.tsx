@@ -1,10 +1,10 @@
-// Module ID: 10284
-// Function ID: 10285
+// Module ID: 10287
+// Function ID: 10288
 // Name: MobileVoiceOverlayActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 
-// Module 10284 (MobileVoiceOverlayActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 10287 (MobileVoiceOverlayActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_overlay/native/MobileVoiceOverlayActionCreators.tsx");

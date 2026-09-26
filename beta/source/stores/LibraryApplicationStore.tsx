@@ -1,15 +1,15 @@
-// Module ID: 7673
-// Function ID: 7674
+// Module ID: 7671
+// Function ID: 7672
 // Name: LibraryApplicationStore
-// Dependencies: [7674, 502, 1078, 510, 7675, 1389, 504, 12, 577, 2]
+// Dependencies: [7672, 502, 1074, 510, 7673, 1385, 504, 12, 573, 2]
 
-// Module 7673 (LibraryApplicationStore)
+// Module 7671 (LibraryApplicationStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage6 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import FlagUtilsAll from "FlagUtils" /* 1389 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7675 */;
-import LibraryApplicationRecord from "LibraryApplicationRecord" /* 7674 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import FlagUtilsAll from "FlagUtils" /* 1385 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7673 */;
+import LibraryApplicationRecord from "LibraryApplicationRecord" /* 7672 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -27,7 +27,7 @@ function handleLibraryApplicationUpdate(libraryApplication) {
   closure_9[comboId] = fromServer;
   set.delete(comboId);
 }
-const LibraryApplicationFlags = fn(1078).LibraryApplicationFlags;
+const LibraryApplicationFlags = fn(1074).LibraryApplicationFlags;
 const LibraryApplicationStore = "LibraryApplicationStore";
 let c8 = false;
 const dependencyMap = {};
@@ -48,7 +48,7 @@ prototype["initialize"] = function initialize() {
     if (null == value.activeLaunchOptionIds) {
       const Storage2 = tmp2(510).Storage;
       const Storage3 = tmp2(510).Storage;
-      value3 = Storage3.get(tmp4);
+      let value3 = Storage3.get(tmp4);
       if (value3 == null) {
         value3 = {};
       }
@@ -164,7 +164,7 @@ prototype["getActiveLibraryApplication"] = function getActiveLibraryApplication(
       if (tmp2Result.isUserEntitledToLibraryApplication(obj2)) {
         return obj2;
       }
-      tmp2Result = tmp2(7675);
+      tmp2Result = tmp2(7673);
     }
     tmp2 = require;
   }

@@ -1,13 +1,12 @@
 // Module ID: 7050
 // Function ID: 7051
-// Dependencies: [41, 42, 93, 95, 96, 98, 6944]
+// Dependencies: [41, 42, 93, 95, 98, 6950]
 
 // Module 7050
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
@@ -30,28 +29,14 @@ function _isNativeReflectConstruct() {
   }
 }
 let _classCallCheck = _classCallCheck_mod;
-function changeEventCalculator(force, force2) {
-  if (undefined === force2) {
-    const obj2 = { forceChange: force.force };
-    let obj = obj2;
-  } else {
-    obj = { forceChange: force.force - force2.force };
-  }
-  const merged = Object.assign(force);
-  const merged1 = Object.assign(obj);
-  return {};
-}
-changeEventCalculator.__closure = {};
-changeEventCalculator.__workletHash = 11365193947542;
-changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_forceTouchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={forceChange:current.force};}else{changePayload={forceChange:current.force-previous.force};}return{...current,...changePayload};}" };
-class ForceTouchGesture {
+class TapGesture {
   constructor() {
     self = this;
-    tmp = closure_0(this, ForceTouchGesture);
+    tmp = closure_0(this, TapGesture);
     tmp2 = c2;
-    obj = c2(ForceTouchGesture);
+    obj = c2(TapGesture);
     tmp3 = closure_1;
-    if (closure_4()) {
+    if (closure_3()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
       constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
@@ -60,48 +45,64 @@ class ForceTouchGesture {
     }
     tmp3Result = tmp3(self, constructResult);
     tmp3Result.config = {};
-    tmp3Result.handlerName = "ForceTouchGestureHandler";
+    tmp3Result.handlerName = "TapGestureHandler";
+    result = tmp3Result.shouldCancelWhenOutside(true);
     return tmp3Result;
   }
 }
-_classCallCheck = ForceTouchGesture;
-_inherits(ForceTouchGesture, fn(6944).ContinousBaseGesture);
+_classCallCheck = TapGesture;
+_inherits(TapGesture, fn(6950).BaseGesture);
 const entry = {
-  key: "minForce",
-  value: function minForce(minForce) {
-    this.config.minForce = minForce;
+  key: "minPointers",
+  value: function minPointers(minPointers) {
+    this.config.minPointers = minPointers;
     return this;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "maxForce",
-    value: function maxForce(maxForce) {
-      this.config.maxForce = maxForce;
+    key: "numberOfTaps",
+    value: function numberOfTaps(numberOfTaps) {
+      this.config.numberOfTaps = numberOfTaps;
       return this;
     }
   },
   {
-    key: "feedbackOnActivation",
-    value: function feedbackOnActivation(feedbackOnActivation) {
-      this.config.feedbackOnActivation = feedbackOnActivation;
+    key: "maxDistance",
+    value: function maxDistance(maxDist) {
+      this.config.maxDist = maxDist;
       return this;
     }
   },
   {
-    key: "onChange",
-    value: function onChange(arg0) {
-      this.handlers.changeEventCalculator = hasOwnProperty;
-      const self = this;
-      let fn = _get(_getPrototypeOf(_classCallCheck.prototype), "onChange", this);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0];
-      return fn(items);
+    key: "maxDuration",
+    value: function maxDuration(maxDurationMs) {
+      this.config.maxDurationMs = maxDurationMs;
+      return this;
+    }
+  },
+  {
+    key: "maxDelay",
+    value: function maxDelay(maxDelayMs) {
+      this.config.maxDelayMs = maxDelayMs;
+      return this;
+    }
+  },
+  {
+    key: "maxDeltaX",
+    value: function maxDeltaX(maxDeltaX) {
+      this.config.maxDeltaX = maxDeltaX;
+      return this;
+    }
+  },
+  {
+    key: "maxDeltaY",
+    value: function maxDeltaY(maxDeltaY) {
+      this.config.maxDeltaY = maxDeltaY;
+      return this;
     }
   }
 ];
 
-export const ForceTouchGesture = _createClass(ForceTouchGesture, items);
+export const TapGesture = _createClass(TapGesture, items);

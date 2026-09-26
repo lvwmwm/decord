@@ -1,31 +1,31 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 12317
+// Function ID: 12318
 // Name: AppLauncherKeyboard
-// Dependencies: [19, 17, 1078, 2042, 12202, 21, 4790, 580, 558, 568, 11506, 11505, 10386, 5205, 12203, 4529, 12212, 4503, 6895, 12213, 1368, 4970, 1613, 1486, 1614, 5214, 9551, 12245, 12374, 2]
+// Dependencies: [19, 17, 1074, 2038, 12318, 21, 4788, 576, 11511, 11510, 11648, 5203, 12319, 4524, 12328, 4498, 6901, 12329, 1364, 4968, 1609, 1482, 1610, 5212, 12361, 9555, 12364, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 12201 (AppLauncherKeyboard)
-import nativeDefault from "native" /* 580 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1486 */;
-import KeyboardTypes from "KeyboardTypes" /* 1614 */;
-import native from "native" /* 4503 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5214 */;
-import BottomSheetModal from "BottomSheetModal" /* 6895 */;
-import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 12212 */;
-import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 12213 */;
+// Module 12317 (AppLauncherKeyboard)
+import nativeDefault from "native" /* 576 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1482 */;
+import KeyboardTypes from "KeyboardTypes" /* 1610 */;
+import native from "native" /* 4498 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5212 */;
+import BottomSheetModal from "BottomSheetModal" /* 6901 */;
+import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 12328 */;
+import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 12329 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const KEYBOARD_ANIMATION_CONFIG = fn(12202).KEYBOARD_ANIMATION_CONFIG;
+const AnalyticEvents = fn(1074).AnalyticEvents;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const KEYBOARD_ANIMATION_CONFIG = fn(12318).KEYBOARD_ANIMATION_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { onboardingRoundingView: { borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm }, onboardingHeader: null, onboardingNavigatorContent: null };
 let obj3 = { borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
 obj.onboardingHeader = { borderWidth: 2, borderBottomWidth: 0, borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderBottomColor: "transparent", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
@@ -33,273 +33,37 @@ let obj4 = { borderWidth: 2, borderBottomWidth: 0, borderColor: nativeDefault.co
 obj.onboardingNavigatorContent = { borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
 let closure_11 = createStyles.createStyles(obj);
 let c12 = null;
-let __initData = { code: "function AppLauncherKeyboardTsx2(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev){return;}runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
-const __initData2 = { code: "function AppLauncherKeyboardTsx3(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
-const __initData3 = { code: "function AppLauncherKeyboardTsx4(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev)return;runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
-const ReactCompilerGating = fn(558);
+let closure_13 = { code: "function AppLauncherKeyboardTsx1(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
+let closure_14 = { code: "function AppLauncherKeyboardTsx2(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev)return;runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
 let obj5 = { borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherKeyboard.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
-  const cResult = context(onClose[9]).c(52);
-  context = context.context;
-  const chatInputRef = context.chatInputRef;
-  onClose = context.onClose;
-  const transitionState = context.transitionState;
-  let obj = context(onClose[9]);
-  const defaultAppLauncherWidth = context(onClose[10]).useDefaultAppLauncherWidth(context.entrypoint);
-  ref = transitionState.useRef(context(onClose[11]).AppLauncherKeyboardCloseReason.DISMISSED);
-  const ref1 = transitionState.useRef(undefined);
-  closure_11();
-  let obj2 = context(onClose[10]);
-  const tmp8 = chatInputRef;
-  ({ maximum, minimum } = chatInputRef(onClose[12])());
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let _Date = Date;
-    const timestamp = Date.now();
-    cResult[0] = timestamp;
-    let first = timestamp;
-  } else {
-    first = cResult[0];
-  }
-  ref = obj3.useRef(first);
-  let ref2 = obj3.useRef(false);
-  let tmp9 = chatInputRef(onClose[12])();
-  const isScreenReaderEnabled = context(onClose[13]).useIsScreenReaderEnabled();
-  if (cResult[1] !== context.channel.id) {
-    let obj4 = { channelId: context.channel.id };
-    cResult[1] = context.channel.id;
-    cResult[2] = obj4;
-    let tmp13 = obj4;
-  } else {
-    tmp13 = cResult[2];
-  }
-  const visibleContent = tmp8(tmp2[14])(tmp13).visibleContent;
-  closure_11 = tmp14;
-  const tmpResult = context(onClose[13]);
-  const sharedValue = context(onClose[15]).useSharedValue(-1);
-  const tmpResult4 = context(onClose[15]);
-  const sharedValue1 = context(onClose[15]).useSharedValue(0);
-  ref2 = obj3.useRef(null);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        if (closure_13 != null) {
-          current = closure_13.current;
-          if (current != null) {
-            expandActionSheetResult = current.expandActionSheet();
-          }
-        }
-        return;
-      }
-    }
-    cResult[3] = P;
-  } else {
-    class P {
-      constructor() {
-        if (closure_13 != null) {
-          current = closure_13.current;
-          if (current != null) {
-            expandActionSheetResult = current.expandActionSheet();
-          }
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class W {
-      constructor(arg0, arg1) {
-        tmp = arg1;
-        if (arg1) {
-          tmp2 = context;
-          num = 1;
-          tmp = 1 === context;
-        }
-        if (tmp) {
-          tmp3 = chatInputRef;
-          tmp4 = onClose;
-          tmp5 = minimum;
-          tmp6 = chatInputRef(onClose[16])(minimum.TAKE_ACTION);
-        }
-        return;
-      }
-    }
-    cResult[4] = W;
-  } else {
-    class W {
-      constructor(arg0, arg1) {
-        tmp = arg1;
-        if (arg1) {
-          tmp2 = context;
-          num = 1;
-          tmp = 1 === context;
-        }
-        if (tmp) {
-          tmp3 = chatInputRef;
-          tmp4 = onClose;
-          tmp5 = minimum;
-          tmp6 = chatInputRef(onClose[16])(minimum.TAKE_ACTION);
-        }
-        return;
-      }
-    }
-  }
-  __initData = tmp19;
-  if (cResult[5] === sharedValue) {
-    class W {
-      constructor(arg0, arg1) {
-        tmp = arg1;
-        if (arg1) {
-          tmp2 = context;
-          num = 1;
-          tmp = 1 === context;
-        }
-        if (tmp) {
-          tmp3 = chatInputRef;
-          tmp4 = onClose;
-          tmp5 = minimum;
-          tmp6 = chatInputRef(onClose[16])(minimum.TAKE_ACTION);
-        }
-        return;
-      }
-    }
-    const effect = obj3.useEffect(F, items1);
-    const fn = function j() {
-      return sharedValue.get();
-    };
-    let obj5 = { bottomSheetIndex: sharedValue };
-    fn.__closure = obj5;
-    fn.__workletHash = 15587451723262;
-    fn.__initData = ref2;
-    class Q {
-      constructor(arg0, arg1) {
-        if (context !== arg1) {
-          tmp = closure_0;
-          tmp2 = closure_2;
-          obj = closure_0(closure_2[15]);
-          tmp3 = closure_14;
-          tmp4 = closure_11;
-          tmp5 = obj.runOnJS(closure_14)(context, closure_11);
-        }
-        return;
-      }
-    }
-    let obj6 = { runOnJS: tmp(tmp2[15]).runOnJS, handleOnboardingParamChange: tmp19, showOnboarding: tmp14 };
-    Q.__closure = obj6;
-    Q.__workletHash = 12446570101635;
-    Q.__initData = __initData;
-    const animatedReaction = tmp(tmp2[15]).useAnimatedReaction(fn, Q);
-    if (cResult[9] !== transitionState) {
-      class X {
-        constructor() {
-          tmp = closure_2;
-          if (transitionState === closure_0(closure_2[17]).TransitionStates.YEETED) {
-            tmp2 = closure_1;
-            tmp3 = ContentDismissActionType;
-            tmp4 = closure_1(tmp[16])(ContentDismissActionType.USER_DISMISS);
-          }
-          return;
-        }
-      }
-      const items = [transitionState];
-      cResult[9] = transitionState;
-      cResult[10] = X;
-      cResult[11] = items;
-      let tmp25 = items;
-      const tmp24 = X;
-    } else {
-      class X {
-        constructor() {
-          tmp = closure_2;
-          if (transitionState === closure_0(closure_2[17]).TransitionStates.YEETED) {
-            tmp2 = closure_1;
-            tmp3 = ContentDismissActionType;
-            tmp4 = closure_1(tmp[16])(ContentDismissActionType.USER_DISMISS);
-          }
-          return;
-        }
-      }
-      tmp25 = cResult[11];
-    }
-    const layoutEffect = obj3.useLayoutEffect(tmp24, tmp25);
-    if (cResult[12] === visibleContent) {
-      class X {
-        constructor() {
-          tmp = closure_2;
-          if (transitionState === closure_0(closure_2[17]).TransitionStates.YEETED) {
-            tmp2 = closure_1;
-            tmp3 = ContentDismissActionType;
-            tmp4 = closure_1(tmp[16])(ContentDismissActionType.USER_DISMISS);
-          }
-          return;
-        }
-      }
-    }
-    const fn2 = function z(arg0) {
-      const obj = {};
-      const merged = Object.assign(arg0);
-      obj.pressBehavior = "collapse";
-      const children = [closure_2_8(BottomSheetModal.BottomSheetBackdrop, obj), ];
-      let tmp3Result = closure_11;
-      if (closure_11) {
-        const obj2 = { context, visibleContent, bottomOffset: null };
-        const tmp9 = AppLauncherOnboardingLayerDefault;
-        let num = 0;
-        if (!tmp4Result.isAndroid()) {
-          num = minimum;
-        }
-        obj2.bottomOffset = num;
-        tmp3Result = closure_2_8(tmp9, obj2);
-        tmp4Result = PlatformUtils;
-      }
-      children[1] = tmp3Result;
-      return v65535(options, { children });
-    };
-    cResult[12] = visibleContent;
-    cResult[13] = context;
-    cResult[14] = minimum;
-    cResult[15] = tmp14;
-    cResult[16] = fn2;
-    const tmpResult6 = tmp(tmp2[15]);
-  }
-  class F {
-    constructor() {
-      tmp = closure_14(closure_12.get(), closure_11);
-      return;
-    }
-  }
-  items1 = [null != visibleContent, sharedValue, tmp19];
-  cResult[5] = sharedValue;
-  cResult[6] = null != visibleContent;
-  cResult[7] = F;
-  cResult[8] = items1;
-}) : ((context) => {
+export default noop.memo(function AppLauncherKeyboard(context) {
   context = context.context;
   const chatInputRef = context.chatInputRef;
   const onClose = context.onClose;
   const transitionState = context.transitionState;
   const entrypoint = context.entrypoint;
   let onboardingNavigatorContent;
-  const defaultAppLauncherWidth = context(onClose[10]).useDefaultAppLauncherWidth(entrypoint);
-  ref = transitionState.useRef(context(onClose[11]).AppLauncherKeyboardCloseReason.DISMISSED);
+  const defaultAppLauncherWidth = context(onClose[8]).useDefaultAppLauncherWidth(entrypoint);
+  const ref = transitionState.useRef(context(onClose[9]).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = transitionState.useRef(undefined);
   const tmp6 = onboardingNavigatorContent();
-  const tmp8 = chatInputRef(onClose[12])();
+  const tmp8 = chatInputRef(onClose[10])();
   const minimum = tmp8.minimum;
   animationConfigs = transitionState.useRef(Date.now());
   transitionState.useRef(false);
-  let obj = context(onClose[10]);
+  let obj = context(onClose[8]);
   const tmp7 = chatInputRef;
-  let isScreenReaderEnabled = context(onClose[13]).useIsScreenReaderEnabled();
-  const visibleContent = chatInputRef(onClose[14])({ channelId: context.channel.id }).visibleContent;
+  let isScreenReaderEnabled = context(onClose[11]).useIsScreenReaderEnabled();
+  const visibleContent = chatInputRef(onClose[12])({ channelId: context.channel.id }).visibleContent;
   onboardingNavigatorContent = null != visibleContent;
-  let obj2 = context(onClose[13]);
+  let obj2 = context(onClose[11]);
   const obj3 = { channelId: context.channel.id };
-  const sharedValue = context(onClose[15]).useSharedValue(-1);
-  let obj4 = context(onClose[15]);
-  const sharedValue1 = context(onClose[15]).useSharedValue(0);
+  const sharedValue = context(onClose[13]).useSharedValue(-1);
+  let obj4 = context(onClose[13]);
+  const sharedValue1 = context(onClose[13]).useSharedValue(0);
   const ref2 = transitionState.useRef(null);
   const items = [ref2];
   const callback = transitionState.useCallback(() => {
@@ -316,40 +80,32 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((contex
       tmp = 1 === arg0;
     }
     if (tmp) {
-      chatInputRef(onClose[16])(minimum.TAKE_ACTION);
+      chatInputRef(onClose[14])(minimum.TAKE_ACTION);
     }
   }, []);
   const items1 = [onboardingNavigatorContent, sharedValue, callback1];
   const effect = transitionState.useEffect(() => {
     callback1(sharedValue.get(), onboardingNavigatorContent);
   }, items1);
-  let obj5 = context(onClose[15]);
+  let obj5 = context(onClose[13]);
   class O {
     constructor() {
       return closure_12.get();
     }
   }
   O.__closure = { bottomSheetIndex: sharedValue };
-  O.__workletHash = 9724245552188;
-  O.__initData = __initData2;
-  class C {
-    constructor(arg0, arg1) {
-      if (context !== arg1) {
-        tmp = closure_0;
-        tmp2 = closure_2;
-        obj = closure_0(closure_2[15]);
-        tmp3 = closure_14;
-        tmp4 = closure_11;
-        tmp5 = obj.runOnJS(closure_14)(context, closure_11);
-      }
-      return;
+  O.__workletHash = 15587451723262;
+  O.__initData = ref2;
+  const fn = function _(arg0, arg1) {
+    if (arg0 !== arg1) {
+      ReanimatedRexport.runOnJS(callback1)(arg0, onboardingNavigatorContent);
     }
-  }
-  let obj6 = context(onClose[15]);
-  C.__closure = { runOnJS: context(onClose[15]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent };
-  C.__workletHash = 10242116658851;
-  C.__initData = __initData3;
-  const animatedReaction = obj6.useAnimatedReaction(O, C);
+  };
+  let obj6 = context(onClose[13]);
+  fn.__closure = { runOnJS: context(onClose[13]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent };
+  fn.__workletHash = 14003176039781;
+  fn.__initData = callback1;
+  const animatedReaction = obj6.useAnimatedReaction(O, fn);
   const items2 = [transitionState];
   const layoutEffect = transitionState.useLayoutEffect(() => {
     if (transitionState === native.TransitionStates.YEETED) {
@@ -362,7 +118,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((contex
     const obj = {};
     const merged = Object.assign(arg0);
     obj.pressBehavior = "collapse";
-    const children = [closure_2_8(BottomSheetModal.BottomSheetBackdrop, obj), ];
+    const children = [React6(BottomSheetModal.BottomSheetBackdrop, obj), ];
     let tmp3Result = onboardingNavigatorContent;
     if (onboardingNavigatorContent) {
       const obj2 = { context, visibleContent, bottomOffset: null };
@@ -372,11 +128,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((contex
         num = minimum;
       }
       obj2.bottomOffset = num;
-      tmp3Result = closure_2_8(tmp9, obj2);
+      tmp3Result = React6(tmp9, obj2);
       tmp4Result = PlatformUtils;
     }
     children[1] = tmp3Result;
-    return v65535(options, { children });
+    return closure_2_10(React7, { children });
   }, items3);
   const items5 = [chatInputRef, isScreenReaderEnabled, ref, onClose];
   const callback3 = transitionState.useCallback((arg0, arg1, arg2) => {
@@ -385,20 +141,20 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((contex
         let trackWithMetadata = require;
         let APP_LAUNCHER_EXPANDED = dependencyMap;
         if (arg2 === BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
-          let current = trackWithMetadata(11505).AppLauncherBottomSheetExpandReason.KEYBOARD;
-        } else if (arg2 === trackWithMetadata(6895).ANIMATION_SOURCE.GESTURE) {
-          current = trackWithMetadata(11505).AppLauncherBottomSheetExpandReason.GESTURE;
-        } else if (arg2 !== trackWithMetadata(6895).ANIMATION_SOURCE.USER) {
-          current = trackWithMetadata(11505).AppLauncherBottomSheetExpandReason.OTHER;
+          let current = trackWithMetadata(11510).AppLauncherBottomSheetExpandReason.KEYBOARD;
+        } else if (arg2 === trackWithMetadata(6901).ANIMATION_SOURCE.GESTURE) {
+          current = trackWithMetadata(11510).AppLauncherBottomSheetExpandReason.GESTURE;
+        } else if (arg2 !== trackWithMetadata(6901).ANIMATION_SOURCE.USER) {
+          current = trackWithMetadata(11510).AppLauncherBottomSheetExpandReason.OTHER;
         } else {
           current = ref1.current;
         }
-        trackWithMetadata = trackWithMetadata(4970).trackWithMetadata;
+        trackWithMetadata = trackWithMetadata(4968).trackWithMetadata;
         APP_LAUNCHER_EXPANDED = AnalyticEvents.APP_LAUNCHER_EXPANDED;
         const obj = { reason: current };
         trackWithMetadata(APP_LAUNCHER_EXPANDED, obj);
         ref1.current = undefined;
-        const trackWithMetadataResult = trackWithMetadata(4970);
+        const trackWithMetadataResult = trackWithMetadata(4968);
       }
     }
   }, items4);
@@ -435,21 +191,21 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((contex
     }
   }, items5);
   const obj8 = { ref: ref2, animationConfigs, animatedIndex: sharedValue, animatedPosition: sharedValue1, chatInputRef, forceMaxHeight: null, enablePanDownToClose: null, onAnimate: null, onClose: null, transitionState: null, backdropComponent: null, disableHeaderRoundingAnimation: null, roundingViewStyle: null, headerStyle: null, isAppsKeyboard: true, rendersHandle: null, width: null, children: null };
-  let obj7 = { runOnJS: context(onClose[15]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent };
+  let obj7 = { runOnJS: context(onClose[13]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent };
   if (!isScreenReaderEnabled) {
-    isScreenReaderEnabled = tmp(tmp2[22]).isMetaQuest();
-    const tmpResult = tmp(tmp2[22]);
+    isScreenReaderEnabled = tmp(tmp2[20]).isMetaQuest();
+    const tmpResult = tmp(tmp2[20]);
   }
   obj8.forceMaxHeight = isScreenReaderEnabled;
-  const tmp22 = chatInputRef(onClose[28]);
-  obj8.enablePanDownToClose = context(onClose[22]).isMetaQuest();
+  const tmp22 = chatInputRef(onClose[24]);
+  obj8.enablePanDownToClose = context(onClose[20]).isMetaQuest();
   obj8.onAnimate = callback3;
   obj8.onClose = callback4;
   obj8.transitionState = transitionState;
   obj8.backdropComponent = callback2;
   let tmp23 = onboardingNavigatorContent;
   if (!onboardingNavigatorContent) {
-    tmp23 = entrypoint === tmp(tmp2[26]).AppLauncherEntrypoint.VOICE;
+    tmp23 = entrypoint === tmp(tmp2[25]).AppLauncherEntrypoint.VOICE;
   }
   obj8.disableHeaderRoundingAnimation = tmp23;
   let onboardingRoundingView = onboardingNavigatorContent;
@@ -462,12 +218,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((contex
     onboardingHeader = tmp6.onboardingHeader;
   }
   obj8.headerStyle = onboardingHeader;
-  obj8.rendersHandle = entrypoint !== context(onClose[26]).AppLauncherEntrypoint.VOICE;
+  obj8.rendersHandle = entrypoint !== context(onClose[25]).AppLauncherEntrypoint.VOICE;
   obj8.width = defaultAppLauncherWidth;
   const obj9 = { style: { position: "relative", height: tmp8.maximum }, children: null };
   const obj10 = { bottomSheetExpandReasonRef: ref1, bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, context, chatInputRef, contentStyle: null, entrypoint: null, expandBottomSheet: null, keyboardCloseReasonRef: null, width: null };
   const tmp24 = ref;
-  const tmpResult2 = context(onClose[22]);
+  const tmpResult2 = context(onClose[20]);
   if (onboardingNavigatorContent) {
     onboardingNavigatorContent = tmp6.onboardingNavigatorContent;
   }
@@ -476,10 +232,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((contex
   obj10.expandBottomSheet = callback;
   obj10.keyboardCloseReasonRef = ref;
   obj10.width = defaultAppLauncherWidth;
-  obj9.children = ref2(tmp7(onClose[27]), obj10);
+  obj9.children = ref2(tmp7(onClose[26]), obj10);
   obj8.children = ref2(tmp24, obj9);
   return ref2(tmp22, obj8);
-}));
+});
 export function setAppLauncherA11yFocusReturnRef(current2) {
   c12 = current2;
 }

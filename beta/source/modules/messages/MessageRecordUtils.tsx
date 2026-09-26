@@ -1,25 +1,25 @@
-// Module ID: 5012
-// Function ID: 5013
+// Module ID: 5010
+// Function ID: 5011
 // Name: MessageRecordUtils
-// Dependencies: [5013, 4442, 1390, 502, 4441, 1376, 1078, 5014, 4773, 5022, 11, 5027, 5028, 5134, 4384, 5135, 5137, 2]
+// Dependencies: [5011, 4438, 1386, 502, 4437, 1372, 1074, 5012, 4771, 5020, 11, 5025, 5026, 5132, 4380, 5133, 5135, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 5012 (MessageRecordUtils)
+// Module 5010 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import findCodedLinksDefault from "findCodedLinks" /* 4773 */;
-import useMessageAuthor from "useMessageAuthor" /* 5022 */;
-import isMessageMentioned from "isMessageMentioned" /* 5027 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5028 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 5134 */;
-import EmbedUtils from "EmbedUtils" /* 5135 */;
-import StickersUtils from "StickersUtils" /* 5137 */;
-import InteractionRecord from "InteractionRecord" /* 5013 */;
-import MessageRecord_mod from "MessageRecord" /* 4442 */;
-import UserRecord from "UserRecord" /* 1390 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import findCodedLinksDefault from "findCodedLinks" /* 4771 */;
+import useMessageAuthor from "useMessageAuthor" /* 5020 */;
+import isMessageMentioned from "isMessageMentioned" /* 5025 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5026 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 5132 */;
+import EmbedUtils from "EmbedUtils" /* 5133 */;
+import StickersUtils from "StickersUtils" /* 5135 */;
+import InteractionRecord from "InteractionRecord" /* 5011 */;
+import MessageRecord_mod from "MessageRecord" /* 4438 */;
+import UserRecord from "UserRecord" /* 1386 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 const isMessageMentionedDefault = isMessageMentioned;
@@ -197,11 +197,11 @@ function createMessageRecord(message, arg1) {
     if (null != call.ended_timestamp) {
       const _Date = Date;
       const date = new Date(call.ended_timestamp);
-      tmp39Result = _modDef4384(date);
+      tmp39Result = _modDef4380(date);
     }
     let durationResult = null;
     if (null != tmp39Result) {
-      durationResult = _modDef4384.duration(tmp39Result.diff(tmp35));
+      durationResult = _modDef4380.duration(tmp39Result.diff(tmp35));
     }
     const obj11 = { participants: call.participants, endedTimestamp: tmp39Result, duration: durationResult };
     tmp36 = obj11;
@@ -298,10 +298,10 @@ function createMessageRecord(message, arg1) {
     return obj;
   });
 }
-let MessageRecord = fn(4442);
+let MessageRecord = fn(4438);
 ({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: hasOwnProperty } = MessageRecord);
 let MessageRecord = MessageRecord_mod;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ MessageFlags: closure_11, MessageTypes: closure_12, MessageTypesSets: map1 } = Constants);
 const importDefaultResult1 = new UserRecord({ id: "???", username: "???" });
 const size = fn(2);
@@ -335,11 +335,11 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         if (null != call.ended_timestamp) {
           const _Date = Date;
           const date = new Date(call.ended_timestamp);
-          tmp = _modDef4384(date);
+          tmp = _modDef4380(date);
         }
         let durationResult = null;
         if (null != tmp) {
-          durationResult = _modDef4384.duration(tmp.diff(tmp46));
+          durationResult = _modDef4380.duration(tmp.diff(tmp46));
         }
         const obj3 = { participants: call.participants, endedTimestamp: tmp, duration: durationResult };
         tmp13 = obj3;

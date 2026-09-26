@@ -1,43 +1,21 @@
-// Module ID: 8928
-// Function ID: 8929
+// Module ID: 8923
+// Function ID: 8924
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [4789, 4790, 580, 558, 568, 504, 2]
+// Dependencies: [4787, 4788, 576, 504, 2]
+// Exports: useLegacyTextMigrationHighlight
 
-// Module 8928 (useLegacyTextMigrationHighlight)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import DevSettingsStore from "DevSettingsStore" /* 4789 */;
+// Module 8923 (useLegacyTextMigrationHighlight)
+import nativeDefault from "native" /* 576 */;
+import DevSettingsStore from "DevSettingsStore" /* 4787 */;
 
-require = fn;
-const createStyles = fn(4790);
+const require = fn;
+const createStyles = fn(4788);
 const obj2 = { highlight: { borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER } };
 let closure_3 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-const obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER };
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/LegacyText/native/useLegacyTextMigrationHighlight.tsx");
 
-export const useLegacyTextMigrationHighlight = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [DevSettingsStore];
-    const fn = function n() {
-      return DevSettingsStore.get("highlight_mana_text");
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmp4 = closure_3();
-  let highlight = null;
-  if (tmpResult.useStateFromStores(tmp5, tmp6)) {
-    highlight = tmp4.highlight;
-  }
-  return highlight;
-}) : (() => {
+export const useLegacyTextMigrationHighlight = function useLegacyTextMigrationHighlight() {
   const tmp = closure_3();
   const items = [DevSettingsStore];
   let highlight = null;
@@ -45,4 +23,4 @@ export const useLegacyTextMigrationHighlight = ReactCompilerGating.isReactCompil
     highlight = tmp.highlight;
   }
   return highlight;
-});
+};

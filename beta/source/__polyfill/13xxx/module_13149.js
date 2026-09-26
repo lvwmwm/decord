@@ -1,82 +1,32 @@
 // Module ID: 13149
 // Function ID: 13150
-// Dependencies: [13109, 13142]
-// Exports: makePromiseBuffer
+// Dependencies: [13081]
+// Exports: applySdkMetadata
 
 // Module 13149
-import _mod13109 from "module_13109" /* 13109 */;
+import _mod13081 from "module_13081" /* 13081 */;
 
 require = arg1;
 const dependencyMap = arg6;
 
-export function makePromiseBuffer(arg0) {
-  closure_0 = arg0;
-  const items = [];
-  return {
-    $: items,
-    add(fn) {
-      let tmp2 = undefined === promise;
-      if (!tmp2) {
-        tmp2 = items.length < tmp;
-      }
-      if (tmp2) {
-        promise = fn();
-        if (-1 === items.indexOf(promise)) {
-          items.push(promise);
-        }
-        promise.then(() => {
-          let first = items.splice(items.indexOf(promise), 1)[0];
-          if (!first) {
-            first = Promise.resolve(undefined);
-          }
-          return first;
-        }).then(null, () => {
-          let first = items.splice(items.indexOf(promise), 1)[0];
-          if (!first) {
-            first = Promise.resolve(undefined);
-          }
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return closure_0(items[0]).rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      closure_0 = arg0;
-      return new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        closure_0 = fn;
-        closure_1 = arg1;
-        length = length.length;
-        if (length) {
-          const _setTimeout = setTimeout;
-          const timeout = setTimeout(() => {
-            let tmp2 = closure_0;
-            if (closure_0) {
-              tmp2 = tmp > 0;
-            }
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            _mod13109.resolvedSyncPromise(item).then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
-        }
-        arr = length;
-      });
-    }
-  };
-}
+export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
+  let arr = arg2;
+  if (arg2 === undefined) {
+    const items = [arg1];
+    arr = items;
+  }
+  let str = arg3;
+  if (arg3 === undefined) {
+    str = "npm";
+  }
+  const tmp = _metadata._metadata || {};
+  if (!tmp.sdk) {
+    const obj = { name: null, packages: null, version: null };
+    const _HermesInternal = HermesInternal;
+    obj.name = "sentry.javascript." + arg1;
+    obj.packages = arr.map((item) => ({ name: "" + str + ":@sentry/" + item, version: _mod13081.SDK_VERSION }));
+    obj.version = str(13081).SDK_VERSION;
+    tmp.sdk = obj;
+  }
+  _metadata._metadata = tmp;
+};

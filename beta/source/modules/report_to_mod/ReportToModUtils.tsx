@@ -1,26 +1,26 @@
-// Module ID: 7552
-// Function ID: 7553
+// Module ID: 7550
+// Function ID: 7551
 // Name: ReportToModUtils
-// Dependencies: [7553, 2045, 2067, 5010, 1376, 7564, 7565, 7542, 7566, 7541, 1090, 4436, 7567, 7568, 7571, 7579, 2]
+// Dependencies: [7551, 2041, 2063, 5008, 1372, 7562, 7563, 7540, 7564, 7539, 1086, 4432, 7565, 7566, 7569, 7577, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 7552 (ReportToModUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7541 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7542 */;
-import ReportUtils from "ReportUtils" /* 7565 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7566 */;
-import SelfModUtils from "SelfModUtils" /* 7567 */;
-import ForumChannelTypes from "ForumChannelTypes" /* 7579 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7553 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import MessageStore from "MessageStore" /* 5010 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 7550 (ReportToModUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7539 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7540 */;
+import ReportUtils from "ReportUtils" /* 7563 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7564 */;
+import SelfModUtils from "SelfModUtils" /* 7565 */;
+import ForumChannelTypes from "ForumChannelTypes" /* 7577 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7551 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import MessageStore from "MessageStore" /* 5008 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const ReportToModPermissions = fn(7564).ReportToModPermissions;
+const ReportToModPermissions = fn(7562).ReportToModPermissions;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/report_to_mod/ReportToModUtils.tsx");
 
@@ -30,7 +30,7 @@ export const canReportMessageToMods = function canReportMessageToMods(message) {
     if (null == channel) {
       return false;
     } else {
-      guild = GuildStore.getGuild(channel.guild_id);
+      const guild = GuildStore.getGuild(channel.guild_id);
       if (null == guild) {
         return false;
       } else {
@@ -52,7 +52,7 @@ export const canAccessReportsChannel = function canAccessReportsChannel(arg0, it
   if (null == contextForPermission) {
     return false;
   } else {
-    guild = contextForPermission.guild;
+    const guild = contextForPermission.guild;
     let tmp7 = null == guild;
     if (!tmp7) {
       tmp7 = !getGuildModeratorReportingEnabledDefault(guild);
@@ -70,7 +70,7 @@ export const canAccessReportsChannel = function canAccessReportsChannel(arg0, it
   }
 };
 export const getReportToModChannelId = function getReportToModChannelId(arg0) {
-  guild = GuildStore.getGuild(arg0);
+  const guild = GuildStore.getGuild(arg0);
   let tmp2 = null;
   if (null != guild) {
     tmp2 = getGuildModeratorReportChannelIdDefault(guild);
@@ -183,8 +183,8 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
           tmp9 = null == firstMessage;
         }
         if (!tmp9) {
-          tmp9 = !tmp10(7568).messageHasObscurableMediaForBitmask(firstMessage, tmp10(7571).ContentHarmTypeBitMask.EXPLICIT);
-          const tmp10Result = tmp10(7568);
+          tmp9 = !tmp10(7566).messageHasObscurableMediaForBitmask(firstMessage, tmp10(7569).ContentHarmTypeBitMask.EXPLICIT);
+          const tmp10Result = tmp10(7566);
         }
         return tmp9;
       } else {

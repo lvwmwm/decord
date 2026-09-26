@@ -1,56 +1,20 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12882
+// Function ID: 12883
 // Name: getApplicationFromBotUserId
-// Dependencies: [7894, 1078, 558, 568, 504, 2]
+// Dependencies: [7889, 1074, 504, 2]
+// Exports: default
 
-// Module 12800 (getApplicationFromBotUserId)
-import UserProfileStore from "UserProfileStore" /* 7894 */;
+// Module 12882 (getApplicationFromBotUserId)
+import UserProfileStore from "UserProfileStore" /* 7889 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const EMPTY_STRING_SNOWFLAKE_ID = fn(1078).EMPTY_STRING_SNOWFLAKE_ID;
-const ReactCompilerGating = fn(558);
+const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/getApplicationFromBotUserId.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserProfileStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let tmp = closure_0;
-      let tmp2;
-      if (null !== closure_0) {
-        if (tmp == null) {
-          tmp = EMPTY_STRING_SNOWFLAKE_ID;
-        }
-        const userProfile = UserProfileStore.getUserProfile(tmp);
-        let application;
-        if (userProfile != null) {
-          application = userProfile.application;
-        }
-        tmp2 = application;
-      }
-      return tmp2;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
-  return stateFromStores;
-}) : ((arg0) => {
+export default function useGetApplicationFromBotUserId(arg0) {
   _require = arg0;
   const items = [UserProfileStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => {
@@ -70,4 +34,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp2;
   });
   return stateFromStores;
-});
+};

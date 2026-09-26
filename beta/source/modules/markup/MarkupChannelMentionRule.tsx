@@ -1,24 +1,24 @@
-// Module ID: 5252
-// Function ID: 5253
+// Module ID: 5250
+// Function ID: 5251
 // Name: MarkupChannelMentionRule
-// Dependencies: [2101, 2045, 2067, 4431, 4441, 1376, 1078, 2013, 1401, 1119, 5253, 4935, 4943, 5254, 4944, 5251, 1933, 2]
+// Dependencies: [2097, 2041, 2063, 4427, 4437, 1372, 1074, 2009, 1397, 1115, 5251, 4933, 4941, 5252, 4942, 5249, 1929, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5252 (MarkupChannelMentionRule)
-import util from "util" /* 1119 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import _modDef1933 from "module_1933" /* 1933 */;
-import StringUtils from "StringUtils" /* 2013 */;
-import ChannelUtils from "ChannelUtils" /* 4935 */;
-import LinkUtils from "LinkUtils" /* 4944 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5251 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5253 */;
-import GatedChannelStore from "GatedChannelStore" /* 2101 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 5250 (MarkupChannelMentionRule)
+import util from "util" /* 1115 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import _modDef1929 from "module_1929" /* 1929 */;
+import StringUtils from "StringUtils" /* 2009 */;
+import ChannelUtils from "ChannelUtils" /* 4933 */;
+import LinkUtils from "LinkUtils" /* 4942 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5249 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5251 */;
+import GatedChannelStore from "GatedChannelStore" /* 2097 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function getChannel(id, arr) {
@@ -51,23 +51,23 @@ function getChannel(id, arr) {
   if (null != channel) {
     const obj5 = { type: null, id: null, guildId: null, name: null, isDm: null, isForumPost: null, isMentionable: null, canViewChannel: null, roleSubscriptionGated: null, iconType: null, parentId: null };
     ({ type: obj4.type, id: obj4.id, guild_id: obj4.guildId } = channel);
-    obj5.name = tmp(4943).computeChannelName(channel, UserStore, RelationshipStore);
+    obj5.name = tmp(4941).computeChannelName(channel, UserStore, RelationshipStore);
     obj5.isDm = channel.isPrivate();
     obj5.isForumPost = channel.isForumPost();
-    const tmpResult = tmp(4943);
-    obj5.isMentionable = tmp(5254).isChannelTypeMentionable(channel.type);
-    const tmpResult3 = tmp(5254);
-    obj5.canViewChannel = tmp(4944).canViewChannel(channel);
+    const tmpResult = tmp(4941);
+    obj5.isMentionable = tmp(5252).isChannelTypeMentionable(channel.type);
+    const tmpResult3 = tmp(5252);
+    obj5.canViewChannel = tmp(4942).canViewChannel(channel);
     obj5.roleSubscriptionGated = isSubscriptionGated;
     obj5.iconType = str;
     obj5.parentId = channel.parent_id;
     tmp4 = obj5;
-    const tmpResult4 = tmp(4944);
+    const tmpResult4 = tmp(4942);
   }
   return tmp4;
 }
 function handleUnknownChannel(guildId, channelId, messageId, guildIdFromChannelId, combined1) {
-  guild = GuildStore.getGuild(guildId);
+  const guild = GuildStore.getGuild(guildId);
   const obj = { type: "channelMention", guildId, channelId, messageId, originalLink: combined1, inContent: null, content: null };
   let tmp2 = null;
   if (null != guild) {
@@ -106,7 +106,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, combined1) {
       ({ id: obj5.channelId, guildId: obj5.guildId } = channel);
       obj2.messageId = messageId;
       obj2.originalLink = combined1;
-      guild = GuildStore.getGuild(channel.guildId);
+      const guild = GuildStore.getGuild(channel.guildId);
       if (null == guild) {
         if (channel.isDm) {
           const obj4 = {};
@@ -127,7 +127,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, combined1) {
           obj4.content = items3;
           let obj11 = obj4;
         } else if (null != combined1) {
-          const obj9 = { type: "link", content: null, target: null, title: "unicodeVersion" };
+          const obj9 = { type: "link", content: null, target: null, title: "call" };
           const obj10 = { type: "text", content: combined1 };
           const items4 = [obj10];
           obj9.content = items4;
@@ -164,15 +164,15 @@ function parseChannel(channel, messageId, guildIdFromChannelId, combined1) {
             if (channel.isForumPost) {
               channel = ChannelStore.getChannel(channel.parentId);
               if (null != channel) {
-                const channelName = tmp35(4943).computeChannelName(channel, UserStore, RelationshipStore);
-                const tmp35Result = tmp35(4943);
-                let str3 = tmp35(4935).getMentionIconType(channel);
+                const channelName = tmp35(4941).computeChannelName(channel, UserStore, RelationshipStore);
+                const tmp35Result = tmp35(4941);
+                let str3 = tmp35(4933).getMentionIconType(channel);
                 if (str3 == null) {
                   str3 = "forum";
                 }
                 const obj18 = { inContent: null, content: null };
-                const tmp35Result3 = tmp35(4935);
-                const obj19 = { type: "text", content: tmp35(2013).truncateText(channelName, 32) };
+                const tmp35Result3 = tmp35(4933);
+                const obj19 = { type: "text", content: tmp35(2009).truncateText(channelName, 32) };
                 const obj21 = { type: "channel", content: null, channelType: null, iconType: null };
                 const items7 = [obj19];
                 obj21.content = items7;
@@ -183,7 +183,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, combined1) {
                 const items9 = [obj16];
                 obj18.content = items9;
                 let obj24 = obj18;
-                const tmp35Result4 = tmp35(2013);
+                const tmp35Result4 = tmp35(2009);
               }
             }
             const obj23 = { inContent: null, content: null };
@@ -259,7 +259,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, combined1) {
     return obj57;
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelTypes: closure_9, ME: c10 } = Constants);
 let obj = {
   channelMention: {
@@ -328,7 +328,7 @@ let obj2 = {
   }
 };
 obj.channelOrMessageUrl = {
-  order: _modDef1933.defaultRules.url.order - 0.5,
+  order: _modDef1929.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_RE;
@@ -352,7 +352,7 @@ obj.channelOrMessageUrl = {
   parse(arg0, arg1, channelId) {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
-      const obj = { type: "link", content: null, target: null, title: "unicodeVersion" };
+      const obj = { type: "link", content: null, target: null, title: "call" };
       const obj2 = { type: "text", content: tmp };
       const items = [obj2];
       obj.content = items;
@@ -380,7 +380,7 @@ obj.channelOrMessageUrl = {
   }
 };
 let obj3 = {
-  order: _modDef1933.defaultRules.url.order - 0.5,
+  order: _modDef1929.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_RE;
@@ -404,7 +404,7 @@ let obj3 = {
   parse(arg0, arg1, channelId) {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
-      const obj = { type: "link", content: null, target: null, title: "unicodeVersion" };
+      const obj = { type: "link", content: null, target: null, title: "call" };
       const obj2 = { type: "text", content: tmp };
       const items = [obj2];
       obj.content = items;
@@ -432,7 +432,7 @@ let obj3 = {
   }
 };
 obj.mediaPostLink = {
-  order: _modDef1933.defaultRules.url.order - 0.5,
+  order: _modDef1929.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const MEDIA_POST_URL_RE = LinkUtils.MEDIA_POST_URL_RE;
@@ -472,7 +472,7 @@ obj.mediaPostLink = {
         tmp30 = getChannel;
       }
     }
-    const obj = { type: "link", content: null, target: tmp, title: "unicodeVersion" };
+    const obj = { type: "link", content: null, target: tmp, title: "call" };
     const items = [{ type: "text", content: tmp }];
     obj.content = items;
     return obj;

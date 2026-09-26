@@ -1,106 +1,34 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 12184
+// Function ID: 12185
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4487, 4786, 1181, 8947, 5373, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 5371, 4483, 4784, 1177, 8949, 2]
+// Exports: default
 
-// Module 12067 (AppealIngestionExternalLink)
-import nativeDefault from "native" /* 580 */;
-import native from "native" /* 1181 */;
-import LinkingDefault from "Linking" /* 4487 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import Pressables from "Pressables" /* 5373 */;
-import _mod8947 from "module_8947" /* 8947 */;
+// Module 12184 (AppealIngestionExternalLink)
+import nativeDefault from "native" /* 576 */;
+import native from "native" /* 1177 */;
+import LinkingDefault from "Linking" /* 4483 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Pressables from "Pressables" /* 5371 */;
+import _mod8949 from "module_8949" /* 8949 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { childButton: { marginBottom: 8, borderRadius: nativeDefault.radii.xs }, childContainer: null, childButtonText: null, chevron: null };
-let obj3 = { marginBottom: 8, borderRadius: nativeDefault.radii.xs };
+const obj3 = { marginBottom: 8, borderRadius: nativeDefault.radii.xs };
 obj2.childContainer = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: nativeDefault.radii.xs };
 obj2.childButtonText = { flex: 1, lineHeight: 20 };
-let obj4 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: nativeDefault.radii.xs };
+const obj4 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: nativeDefault.radii.xs };
 obj2.chevron = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_6 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj5 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionExternalLink.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
-  const cResult = url(568).c(16);
-  ({ text, url } = onPress);
-  onPress = onPress.onPress;
-  const tmp4 = closure_6();
-  if (cResult[0] === onPress) {
-    if (cResult[1] === url) {
-      let tmp5 = cResult[2];
-    }
-    if (cResult[3] === tmp4.childButtonText) {
-      if (cResult[4] === text) {
-        let tmp6 = cResult[5];
-      }
-      if (cResult[6] !== tmp4.chevron.color) {
-        const obj2 = { source: tmp(8947), color: tmp4.chevron.color };
-        const tmp11 = closure_4(tmp(1181).Icon, obj2);
-        cResult[6] = tmp4.chevron.color;
-        cResult[7] = tmp11;
-        let tmp9 = tmp11;
-      } else {
-        tmp9 = cResult[7];
-      }
-      if (cResult[8] === tmp4.childContainer) {
-        if (cResult[9] === tmp6) {
-          if (cResult[10] === tmp9) {
-            let tmp12 = cResult[11];
-          }
-          if (cResult[12] === tmp5) {
-            if (cResult[13] === tmp4.childButton) {
-              if (cResult[14] === tmp12) {
-                let tmp16 = cResult[15];
-              }
-              return tmp16;
-            }
-          }
-          const obj3 = { style: tmp4.childButton, accessibilityRole: "button", onPress: tmp5, children: tmp12 };
-          const tmp18 = closure_4(tmp(5373).PressableHighlight, obj3);
-          cResult[12] = tmp5;
-          cResult[13] = tmp4.childButton;
-          cResult[14] = tmp12;
-          cResult[15] = tmp18;
-          tmp16 = tmp18;
-        }
-      }
-      const obj4 = { style: tmp4.childContainer, children: null };
-      const items = [tmp6, tmp9];
-      obj4.children = items;
-      const tmp15 = closure_5(View, obj4);
-      cResult[8] = tmp4.childContainer;
-      cResult[9] = tmp6;
-      cResult[10] = tmp9;
-      cResult[11] = tmp15;
-      tmp12 = tmp15;
-    }
-    const obj5 = { style: tmp4.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text };
-    const tmp8 = closure_4(tmp(4786).Text, obj5);
-    cResult[3] = tmp4.childButtonText;
-    cResult[4] = text;
-    cResult[5] = tmp8;
-    tmp6 = tmp8;
-  }
-  const fn = function s() {
-    if (onPress != null) {
-      tmp();
-    }
-    LinkingDefault.openURL(url);
-  };
-  cResult[0] = onPress;
-  cResult[1] = url;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : ((children) => {
+export default function AppealIngestionExternalLink(children) {
   ({ url: require, onPress: importDefault } = children);
   const tmp = closure_6();
   const obj = {
@@ -115,8 +43,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     children: null
   };
   const obj2 = { style: tmp.childContainer, children: null };
-  const items = [closure_4(Text_Text.Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: children.text }), closure_4(native.Icon, { source: _mod8947, color: tmp.chevron.color })];
+  const items = [closure_4(Text_Text.Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: children.text }), closure_4(native.Icon, { source: _mod8949, color: tmp.chevron.color })];
   obj2.children = items;
   obj.children = closure_5(View, obj2);
   return closure_4(Pressables.PressableHighlight, obj);
-});
+};

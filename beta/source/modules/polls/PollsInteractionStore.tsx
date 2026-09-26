@@ -1,16 +1,13 @@
-// Module ID: 11595
-// Function ID: 11596
+// Module ID: 11719
+// Function ID: 11720
 // Name: PollsInteractionStore
-// Dependencies: [1247, 1252, 558, 568, 560, 11, 2]
-// Exports: clearChannelPollState, clearPollState, getPollState, updatePollState
+// Dependencies: [1243, 1248, 558, 11, 2]
+// Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 11595 (PollsInteractionStore)
+// Module 11719 (PollsInteractionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
-import c from "c" /* 568 */;
-import identity from "module_1247" /* 1247 */;
-import "ReactCompilerGating";
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
+import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,28 +47,9 @@ let closure_4 = identity.createWithEqualityFn((arg0) => {
     }
   };
 });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  closure_0 = arg0;
-  const cResult = c.c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function n(arg0) {
-      const pollsByMessageId = arg0;
-      const obj = {};
-      const item = pollsByMessageId.forEach((item) => {
-        if (null != pollsByMessageId.pollsByMessageId[item]) {
-          obj[item] = tmp;
-        }
-      });
-      return obj;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    let tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return closure_4(tmp3, discord_common_shallowEqualDefault);
-}) : ((arg0) => {
+const result = size.fileFinishedImporting("modules/polls/PollsInteractionStore.tsx");
+
+export const useMessagePollInteractions = function useMessagePollInteractions(arg0) {
   closure_0 = arg0;
   return closure_4((arg0) => {
     const pollsByMessageId = arg0;
@@ -83,29 +61,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     });
     return obj;
   }, discord_common_shallowEqualDefault);
-});
-const result = size.fileFinishedImporting("modules/polls/PollsInteractionStore.tsx");
-
-export const useMessagePollInteractions = tmp2;
-export const useChannelPollInteractions = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function s(arg0) {
-      let tmp = arg0.pollsByChannelId[closure_0];
-      if (tmp == null) {
-        tmp = closure_3;
-      }
-      return tmp;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    let tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return closure_4(tmp3, discord_common_shallowEqualDefault);
-}) : ((arg0) => {
+};
+export const useChannelPollInteractions = function useChannelPollInteractions(arg0) {
   closure_0 = arg0;
   return closure_4((arg0) => {
     let tmp = arg0.pollsByChannelId[closure_0];
@@ -114,7 +71,7 @@ export const useChannelPollInteractions = ReactCompilerGating.isReactCompilerEna
     }
     return tmp;
   }, discord_common_shallowEqualDefault);
-});
+};
 export const clearChannelPollState = function clearChannelPollState(arg0) {
   _require = arg0;
   require("ReactBatchUpdates").batchUpdates(() => {
@@ -162,7 +119,7 @@ export const clearPollState = function clearPollState(arg0, arg1) {
   });
 };
 export const updatePollState = function updatePollState(arg0, arg1, arg2) {
-  state = closure_4.getState();
+  const state = closure_4.getState();
   state.updatePollState(arg0, arg1, arg2);
 };
 export const getPollState = function getPollState(channelId, id) {

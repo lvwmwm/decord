@@ -1,13 +1,13 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15126
+// Function ID: 15127
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 12861, 21, 4993, 4790, 580, 5929, 558, 568, 12863, 12867, 4490, 1119, 5844, 12880, 5871, 7278, 2]
+// Dependencies: [5, 32, 19, 17, 12960, 21, 4991, 4788, 576, 5931, 12962, 12966, 4486, 1115, 5846, 12979, 5873, 7277, 2]
+// Exports: default
 
-// Module 15122 (ContactSyncNameUpdateModal)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import Navigator from "Navigator" /* 7278 */;
+// Module 15126 (ContactSyncNameUpdateModal)
+import nativeDefault from "native" /* 576 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import Navigator from "Navigator" /* 7277 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -16,114 +16,7 @@ require = fn;
 function onClose() {
   ModalActionCreatorsDefault.pop();
 }
-const View = fn(17).View;
-const ContactSyncScenes = fn(12861).ContactSyncScenes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 } };
-let closure_10 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = require("c").c(8);
-  const tmp3 = closure_10();
-  const obj = require("c");
-  const contactSyncAccount = require("ContactSyncUtils").useContactSyncAccount();
-  const obj2 = require("ContactSyncUtils");
-  [tmp6, closure_0] = noop.useState(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    _require = asyncGeneratorStep(async (arg0) => {
-      closure_1 = tmp3;
-      closure_0(true);
-      await first(12867).updateName(closure_0);
-      if (1 === tmp7) {
-        c3 = 0;
-        const obj7 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
-        const intl = closure_0(1119).intl;
-        obj7.content = intl.string(closure_0(1119).t.R0RpRX);
-        obj7.icon = first(5844);
-        first(4490).open(obj7);
-        closure_0(false);
-        c4 = 3;
-        first(4490);
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        closure_0(false);
-        onClose();
-        c3 = 0;
-      }
-      return arg1;
-    });
-    function onNext() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    }
-    cResult[0] = onNext;
-  } else {
-    onNext = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        return closure_1(null);
-      }
-    }
-    cResult[1] = E;
-    const tmp9 = E;
-  } else {
-    class E {
-      constructor() {
-        return closure_1(null);
-      }
-    }
-  }
-  if (contactSyncAccount != null) {
-    class E {
-      constructor() {
-        return closure_1(null);
-      }
-    }
-  }
-  if (undefined == null) {
-    class E {
-      constructor() {
-        return closure_1(null);
-      }
-    }
-  }
-  if (cResult[2] === tmp6) {
-    class E {
-      constructor() {
-        return closure_1(null);
-      }
-    }
-    if (cResult[5] === tmp3.container) {
-      class E {
-        constructor() {
-          return closure_1(null);
-        }
-      }
-      return tmp13;
-    }
-    const obj3 = { style: tmp3.container, children: tmp11 };
-    const tmp16 = <View style={tmp3.container}>{tmp11}</View>;
-    cResult[5] = tmp3.container;
-    cResult[6] = tmp11;
-    cResult[7] = tmp16;
-    tmp13 = tmp16;
-  }
-  const tmp12 = jsx(onNext(12880), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
-  cResult[2] = tmp6;
-  cResult[3] = undefined;
-  cResult[4] = tmp12;
-}) : (() => {
+function ContactSyncNameInputScreen() {
   function onNext() {
     const self = this;
     const apply = closure_2.apply;
@@ -134,19 +27,19 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return applyArgumentsResult;
   }
-  dependencyMap = async function _onNext2(arg0, arg1) {
+  dependencyMap = async function _onNext(arg0, arg1) {
     _require(true);
-    await tmp3(12867).updateName(closure_0);
+    await tmp3(12966).updateName(closure_0);
     if (1 === tmp7) {
       c3 = 0;
       const obj7 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
-      const intl = closure_0(1119).intl;
-      obj7.content = intl.string(closure_0(1119).t.R0RpRX);
-      obj7.icon = tmp3(5844);
-      tmp3(4490).open(obj7);
+      const intl = closure_0(1115).intl;
+      obj7.content = intl.string(closure_0(1115).t.R0RpRX);
+      obj7.icon = tmp3(5846);
+      tmp3(4486).open(obj7);
       closure_129_0(false);
       c4 = 3;
-      tmp3(4490);
+      tmp3(4486);
     } else if (arg0 === 1) {
       c4 = 3;
       throw arg1;
@@ -179,7 +72,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str = "";
   }
   obj3.initialName = str;
-  obj2.children = jsx(onNext(12880), {
+  obj2.children = jsx(onNext(12979), {
     onNext,
     onRemoveName() {
       return onNext(null);
@@ -188,34 +81,29 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     initialName: null
   });
   return <tmp5 style={tmp.container}>{null}</tmp5>;
-});
-const obj5 = {};
-const obj6 = {
+}
+const View = fn(17).View;
+const ContactSyncScenes = fn(12960).ContactSyncScenes;
+const jsx = fn(21).jsx;
+const createStyles = fn(4788);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5931).NAV_BAR_HEIGHT + 32 } };
+let closure_10 = createStyles.createStyles(obj2);
+const obj4 = {};
+const obj5 = {
   render() {
-    return <closure_11 />;
+    return <ContactSyncNameInputScreen />;
   },
   ignoreKeyboard: true,
   fullscreen: true,
   headerLeft: null,
   title: ""
 };
-const NavigatorHeader = fn(5871);
-obj6.headerLeft = NavigatorHeader.getHeaderCloseButton(onClose);
-obj5[ContactSyncScenes.NAME_INPUT] = obj6;
-ReactCompilerGating = fn(558);
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 };
+const NavigatorHeader = fn(5873);
+obj5.headerLeft = NavigatorHeader.getHeaderCloseButton(onClose);
+obj4[ContactSyncScenes.NAME_INPUT] = obj5;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj5 };
-    const tmp8 = jsx(Navigator.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj5 });
-    cResult[0] = tmp8;
-    let first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => jsx(Navigator.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj5 }));
+export default function ContactSyncNameUpdateModal() {
+  return jsx(Navigator.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj4 });
+};

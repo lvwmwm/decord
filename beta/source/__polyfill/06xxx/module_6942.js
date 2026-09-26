@@ -1,9 +1,0 @@
-// Module ID: 6942
-// Function ID: 6943
-// Dependencies: [19]
-
-// Module 6942
-import noop from "module_19" /* 19 */;
-
-
-export default noop.createContext(false);

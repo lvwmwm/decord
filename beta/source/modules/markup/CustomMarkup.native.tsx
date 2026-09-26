@@ -1,16 +1,16 @@
-// Module ID: 5240
-// Function ID: 5241
+// Module ID: 5238
+// Function ID: 5239
 // Name: CustomMarkup
-// Dependencies: [5241, 4781, 5242, 4780, 1933, 5243, 2]
+// Dependencies: [5239, 4779, 5240, 4778, 1929, 5241, 2]
 // Exports: createWidgetMessageRules, getNotifCenterV2MessagePreviewParser, getParser, getParserWithoutLinks, getWidgetMessageRules
 
-// Module 5240 (CustomMarkup)
-import _modDef1933 from "module_1933" /* 1933 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4780 */;
-import MarkupReactRules from "MarkupReactRules" /* 4781 */;
-import MarkupTypes from "MarkupTypes" /* 5241 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5242 */;
-import MarkupRulesDefault from "MarkupRules" /* 5243 */;
+// Module 5238 (CustomMarkup)
+import _modDef1929 from "module_1929" /* 1929 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4778 */;
+import MarkupReactRules from "MarkupReactRules" /* 4779 */;
+import MarkupTypes from "MarkupTypes" /* 5239 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5240 */;
+import MarkupRulesDefault from "MarkupRules" /* 5241 */;
 import size from "module_2" /* 2 */;
 
 const MarkupReactRulesDefault = MarkupReactRules;
@@ -24,19 +24,19 @@ function createRules(arg0) {
   items = [MarkupUtilsDefault.defaultRules, tmp, ];
   const obj2 = {};
   const obj3 = {};
-  const merged = Object.assign(_modDef1933.defaultRules.link);
+  const merged = Object.assign(_modDef1929.defaultRules.link);
   obj3.react = tmp[MarkupTypes.AST_KEY.LINK].react;
   obj2[MarkupTypes.AST_KEY.LINK] = obj3;
   const obj4 = {};
-  const merged1 = Object.assign(_modDef1933.defaultRules.url);
+  const merged1 = Object.assign(_modDef1929.defaultRules.url);
   obj4.react = tmp[MarkupTypes.AST_KEY.URL].react;
   obj2[MarkupTypes.AST_KEY.URL] = obj4;
   const obj5 = {};
-  const merged2 = Object.assign(_modDef1933.defaultRules.autolink);
+  const merged2 = Object.assign(_modDef1929.defaultRules.autolink);
   obj5.react = tmp[MarkupTypes.AST_KEY.AUTOLINK].react;
   obj2[MarkupTypes.AST_KEY.AUTOLINK] = obj5;
   const obj6 = {};
-  const merged3 = Object.assign(_modDef1933.defaultRules.blockQuote);
+  const merged3 = Object.assign(_modDef1929.defaultRules.blockQuote);
   obj6.react = tmp[MarkupTypes.AST_KEY.BLOCK_QUOTE].react;
   obj2[MarkupTypes.AST_KEY.BLOCK_QUOTE] = obj6;
   items[2] = obj2;

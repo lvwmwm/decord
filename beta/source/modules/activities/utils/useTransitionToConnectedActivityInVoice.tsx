@@ -1,137 +1,22 @@
-// Module ID: 17655
-// Function ID: 17656
+// Module ID: 17518
+// Function ID: 17519
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 2045, 2099, 1078, 558, 568, 4421, 9642, 9643, 9667, 1114, 2]
+// Dependencies: [5, 19, 2041, 2095, 1074, 4417, 9646, 9647, 9671, 1110, 2]
+// Exports: default
 
-// Module 17655 (useTransitionToConnectedActivityInVoice)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
+// Module 17518 (useTransitionToConnectedActivityInVoice)
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
-const ComponentActions = fn(1078).ComponentActions;
-const ReactCompilerGating = fn(558);
+const ComponentActions = fn(1074).ComponentActions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/utils/useTransitionToConnectedActivityInVoice.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
-  const cResult = onTransition(568).c(3);
-  onTransition = onTransition.onTransition;
-  if (cResult[0] !== onTransition) {
-    const fn = function s() {
-      closure_129_0 = asyncGeneratorStep(async (arg0) => {
-        let _location = arg0;
-        c3 = 0;
-        c4 = 0;
-        return (async (arg0, value) => {
-          if (c4 === 2) {
-            c4 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp5 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c4 = 2;
-              if (0 === c3) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  closure_2 = tmp2;
-                  closure_1 = tmp3;
-                  closure_129_0 = undefined;
-                  closure_129_1 = undefined;
-                  let channel2;
-                  closure_129_3 = undefined;
-                  _location = _location.location;
-                  closure_129_0 = _location;
-                  const embeddedActivityLocationChannelId = handler(4421).getEmbeddedActivityLocationChannelId(_location);
-                  closure_129_1 = embeddedActivityLocationChannelId;
-                  if (null != embeddedActivityLocationChannelId) {
-                    if (closure_2_1(9642)(embeddedActivityLocationChannelId)) {
-                      if (voiceChannelId.getVoiceChannelId() !== embeddedActivityLocationChannelId) {
-                        const obj4 = { channelId: embeddedActivityLocationChannelId };
-                        c3 = 1;
-                        c4 = 1;
-                        const obj5 = { value: tmp27(9643)(obj4), done: false };
-                        return obj5;
-                      }
-                    }
-                    tmp27 = closure_2_1;
-                  }
-                  c4 = 3;
-                  return { value: "IconComponent", done: null };
-                }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                const obj = { value, done: true };
-                return obj;
-              }
-              channel2 = channel.getChannel(closure_129_1);
-              let guild_id;
-              if (channel2 != null) {
-                guild_id = channel2.guild_id;
-              }
-              closure_129_3 = guild_id;
-              const _setTimeout = setTimeout;
-              const timerId = setTimeout(() => {
-                closure_3_1(9667)(closure_1_3, _location);
-                if (closure_0 != null) {
-                  closure_0();
-                }
-              }, 0);
-            } catch (tmp17) {
-              c4 = tmp;
-              throw tmp17;
-            }
-          }
-        })();
-      });
-      function handler() {
-        const self = this;
-        const apply = handler.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
-      }
-      let ComponentDispatch = onTransition(dependencyMap[11]).ComponentDispatch;
-      const subscription = ComponentDispatch.subscribe(constants.OPEN_EMBEDDED_ACTIVITY, handler);
-      return () => {
-        const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-        ComponentDispatch.unsubscribe(ComponentActions.OPEN_EMBEDDED_ACTIVITY, handler);
-      };
-    };
-    const items = [onTransition];
-    cResult[0] = onTransition;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp3 = items;
-    let tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
-  }
-  const effect = noop.useEffect(tmp2, tmp3);
-}) : ((onTransition) => {
+export default function useTransitionToConnectedActivityInVoice(onTransition) {
   onTransition = onTransition.onTransition;
   const items = [onTransition];
   const effect = noop.useEffect(() => {
@@ -145,7 +30,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) =>
       }
       return applyArgumentsResult;
     }
-    closure_1 = async function _handler2(arg0) {
+    closure_1 = async function _handler(arg0) {
       let _location = arg0;
       c3 = 0;
       c4 = 0;
@@ -160,7 +45,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) =>
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -183,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) =>
                 closure_129_3 = undefined;
                 c3 = 1;
                 c4 = 1;
-                return { value: "Set", done: true };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp5) {
@@ -195,20 +80,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) =>
                   const obj4 = { value, done: true };
                   return obj4;
                 } else {
-                  embeddedActivityLocationChannelId = handler(4421).getEmbeddedActivityLocationChannelId(_location2);
+                  embeddedActivityLocationChannelId = handler(4417).getEmbeddedActivityLocationChannelId(_location2);
                   if (null != embeddedActivityLocationChannelId) {
-                    if (closure_2_1(9642)(embeddedActivityLocationChannelId)) {
+                    if (closure_2_1(9646)(embeddedActivityLocationChannelId)) {
                       if (voiceChannelId.getVoiceChannelId() !== embeddedActivityLocationChannelId) {
                         const obj5 = { channelId: embeddedActivityLocationChannelId };
                         c3 = 2;
                         c4 = 1;
-                        const obj6 = { value: closure_2_1(9643)(obj5), done: false };
+                        const obj6 = { value: closure_2_1(9647)(obj5), done: false };
                         return obj6;
                       }
                     }
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -226,7 +111,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) =>
               closure_129_3 = guild_id;
               const _setTimeout = setTimeout;
               const timerId = setTimeout(() => {
-                closure_3_1(9667)(closure_1_3, _location);
+                closure_3_1(9671)(closure_1_3, _location);
                 if (closure_0 != null) {
                   closure_0();
                 }
@@ -241,11 +126,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) =>
       iter.next();
       return iter;
     };
-    let ComponentDispatch = onTransition(dependencyMap[11]).ComponentDispatch;
+    let ComponentDispatch = onTransition(dependencyMap[9]).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(constants.OPEN_EMBEDDED_ACTIVITY, handler);
     return () => {
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
       ComponentDispatch.unsubscribe(ComponentActions.OPEN_EMBEDDED_ACTIVITY, handler);
     };
   }, items);
-});
+};

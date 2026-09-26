@@ -1,14 +1,14 @@
-// Module ID: 8902
-// Function ID: 8903
+// Module ID: 8897
+// Function ID: 8898
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1078, 8707, 1095, 1275, 577, 8727, 8719, 8712, 2]
+// Dependencies: [5, 502, 1074, 8702, 1091, 1271, 573, 8722, 8714, 8707, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 8902 (ManualReviewActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8727 */;
+// Module 8897 (ManualReviewActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8722 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -36,7 +36,7 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
       const obj5 = { value, done: true };
       return obj5;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -58,11 +58,11 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
           } else {
             c11 = true;
             c3 = 2;
-            closure_128_0 = __initData;
+            closure_128_0 = closure_2_12;
             let tmp23 = null == closure_128_0;
             if (!tmp23) {
               const _Date2 = Date;
-              tmp23 = Date.now() - __initData2 >= MINUTE;
+              tmp23 = Date.now() - map1 >= MINUTE;
             }
             if (tmp23) {
               if (obj8.isCurrentUserSuspended()) {
@@ -155,8 +155,8 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
-const SafetyToastType = fn(8707).SafetyToastType;
+const Endpoints = fn(1074).Endpoints;
+const SafetyToastType = fn(8702).SafetyToastType;
 const ManualReviewStatus = { IN_PROGRESS: "in_progress", SUBMITTED: "submitted", DECIDED_TEEN: "decided_teen" };
 const MINUTE = DurationsDefault.Millis.MINUTE;
 let c11 = false;

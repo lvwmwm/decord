@@ -1,53 +1,57 @@
 // Module ID: 1569
 // Function ID: 1570
-// Dependencies: [19, 1518, 1529]
-// Exports: useOnPreventRemove
+// Dependencies: [19, 1514, 1525, 1548]
+// Exports: useOnGetState
 
 // Module 1569
 import noop from "module_19" /* 19 */;
 
 const require = arg1;
-let closure_3 = Symbol("VISITED_ROUTE_KEYS");
-function shouldPreventRemove(emitter, beforeRemoveListeners, routes, routes2, target) {
-  let tmp = target;
-  closure_0 = routes2.map((key) => key.key);
-  const found = routes.filter((key) => !closure_0.includes(key.key));
-  let reversed = found.reverse();
-  let tmp3 = closure_3;
-  if (!(closure_3 in target)) {
-    const _Set2 = Set;
-    let set = new Set();
-    const obj = {};
-    const merged = Object.assign(tmp);
-    obj[tmp3] = set;
-    tmp = reversed;
-    tmp3 = reversed[Symbol.iterator]();
-    reversed = null;
-  } else {
-    const _Set = Set;
-  }
-  set = tmp[tmp3];
-}
 
-export { shouldPreventRemove };
-export const useOnPreventRemove = function useOnPreventRemove(getState) {
+export const useOnGetState = function useOnGetState(getState) {
   getState = getState.getState;
-  const emitter = getState.emitter;
-  const beforeRemoveListeners = getState.beforeRemoveListeners;
-  const addKeyedListener = beforeRemoveListeners.useContext(getState(emitter[1]).NavigationBuilderContext).addKeyedListener;
-  const context = beforeRemoveListeners.useContext(getState(emitter[2]).NavigationRouteContext);
-  let key;
-  if (context != null) {
-    key = context.key;
+  const getStateListeners = getState.getStateListeners;
+  let addKeyedListener;
+  let callback;
+  addKeyedListener = addKeyedListener.useContext(getState(getStateListeners[1]).NavigationBuilderContext).addKeyedListener;
+  const context = addKeyedListener.useContext(getState(getStateListeners[2]).NavigationRouteContext);
+  let str = "root";
+  if (context) {
+    str = context.key;
   }
-  const items = [addKeyedListener, beforeRemoveListeners, emitter, getState, key];
-  const effect = beforeRemoveListeners.useEffect(() => {
-    if (key) {
-      let tmp2Result;
-      if (addKeyedListener != null) {
-        tmp2Result = tmp2("beforeRemove", tmp, (arg0) => key(emitter, beforeRemoveListeners, getState().routes, [], arg0));
+  const items = [getState, getStateListeners];
+  callback = obj.useCallback(() => {
+    const tmp = getState();
+    const routes = tmp.routes;
+    const mapped = routes.map((state) => {
+      let tmpResult;
+      if (getStateListeners[state.key] != null) {
+        tmpResult = tmp();
       }
-      return tmp2Result;
+      let tmp3 = state;
+      if (state.state !== tmpResult) {
+        const obj = {};
+        const merged = Object.assign(state);
+        obj.state = tmpResult;
+        tmp3 = obj;
+      }
+      return tmp3;
+    });
+    let tmp3 = tmp;
+    if (!obj.isArrayEqual(tmp.routes, mapped)) {
+      const obj2 = {};
+      let merged = Object.assign(tmp);
+      obj2.routes = mapped;
+      tmp3 = obj2;
     }
+    return tmp3;
   }, items);
+  const items1 = [addKeyedListener, callback, str];
+  const effect = obj.useEffect(() => {
+    let tmpResult;
+    if (addKeyedListener != null) {
+      tmpResult = tmp("getState", str, callback);
+    }
+    return tmpResult;
+  }, items1);
 };

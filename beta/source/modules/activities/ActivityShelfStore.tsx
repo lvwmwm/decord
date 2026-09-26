@@ -1,11 +1,11 @@
-// Module ID: 9595
-// Function ID: 9596
+// Module ID: 9599
+// Function ID: 9600
 // Name: ActivityShelfStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 9595 (ActivityShelfStore)
+// Module 9599 (ActivityShelfStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let closure_0 = { usageByApplicationId: {}, shelfOrder: [] };
 const PersistedStore = initializeDefault.PersistedStore;

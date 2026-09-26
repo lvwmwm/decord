@@ -1,68 +1,25 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 17256
+// Function ID: 17257
 // Name: YouSettingsCoachmark
-// Dependencies: [109, 558, 568, 17267, 10491, 2]
-// Exports: default
+// Dependencies: [17257, 11423, 2]
+// Exports: default, useYouSettingsCoachmark
 
-// Module 17266 (YouSettingsCoachmark)
-import c from "c" /* 568 */;
-import useCoachmark from "useCoachmark" /* 10491 */;
-import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 17267 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 17256 (YouSettingsCoachmark)
+import useCoachmark from "useCoachmark" /* 11423 */;
+import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 17257 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_2 = ["buttonRef"];
-fn(558);
-const ReactCompilerGating = fn(558);
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouSettingsCoachmark.tsx");
 
 export default function YouSettingsCoachmark(buttonRef) {
-  if (closure_4) {
-    let obj3 = require;
-    let coachmark = dependencyMap;
-    const cResult = c.c(3);
-    if (cResult[0] !== buttonRef) {
-      buttonRef = buttonRef.buttonRef;
-      const tmp13 = _objectWithoutProperties(buttonRef, closure_2);
-      cResult[0] = buttonRef;
-      cResult[1] = buttonRef;
-      cResult[2] = tmp13;
-      let tmp10 = tmp13;
-      let tmp9 = buttonRef;
-    } else {
-      tmp9 = cResult[1];
-      tmp10 = cResult[2];
-    }
-    obj3 = obj3(10491);
-    coachmark = obj3.useCoachmark(tmp9, tmp10);
-  } else {
-    const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
-    const coachmark1 = useCoachmark.useCoachmark(buttonRef.buttonRef, merged);
-    return null;
-  }
+  const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
+  const coachmark = useCoachmark.useCoachmark(buttonRef.buttonRef, merged);
+  return null;
 };
-export const useYouSettingsCoachmark = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
-  const cResult = c.c(2);
-  disabled = disabled.disabled;
-  if (cResult[0] !== disabled) {
-    const obj2 = { disabled };
-    cResult[0] = disabled;
-    cResult[1] = obj2;
-    let tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let referralProgramCoachmark = useReferralProgramCoachmark.useReferralProgramCoachmark(tmp4);
-  if (referralProgramCoachmark == null) {
-    referralProgramCoachmark = null;
-  }
-  return referralProgramCoachmark;
-}) : ((disabled) => {
+export const useYouSettingsCoachmark = function useYouSettingsCoachmark(disabled) {
   let referralProgramCoachmark = useReferralProgramCoachmark.useReferralProgramCoachmark({ disabled: disabled.disabled });
   if (referralProgramCoachmark == null) {
     referralProgramCoachmark = null;
   }
   return referralProgramCoachmark;
-});
+};

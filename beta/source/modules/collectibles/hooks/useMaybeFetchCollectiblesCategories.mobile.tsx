@@ -1,76 +1,18 @@
-// Module ID: 11069
-// Function ID: 11070
-// Dependencies: [4789, 558, 568, 504, 11070, 2]
+// Module ID: 11032
+// Function ID: 11033
+// Dependencies: [4787, 504, 11033, 2]
+// Exports: default
 
-// Module 11069
+// Module 11032
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 11070 */;
-import DevSettingsStore from "DevSettingsStore" /* 4789 */;
+import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 11033 */;
+import DevSettingsStore from "DevSettingsStore" /* 4787 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGateway, arg1) => {
-  const cResult = c.c(8);
-  paymentGateway = undefined;
-  if (paymentGateway != null) {
-    paymentGateway = paymentGateway.paymentGateway;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [DevSettingsStore];
-    const fn = function l() {
-      return { noCache: DevSettingsStore.get("shop_disable_cache"), includeUnpublished: DevSettingsStore.get("shop_include_unpublished") };
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const stateFromStoresObject = initialize.useStateFromStoresObject(tmp5, tmp6);
-  ({ noCache, includeUnpublished } = stateFromStoresObject);
-  let countryCode;
-  if (paymentGateway != null) {
-    countryCode = paymentGateway.countryCode;
-  }
-  let logPerf;
-  if (paymentGateway != null) {
-    logPerf = paymentGateway.logPerf;
-  }
-  if (cResult[2] === includeUnpublished) {
-    if (cResult[3] === noCache) {
-      if (cResult[4] === paymentGateway) {
-        if (cResult[5] === countryCode) {
-          if (cResult[6] === logPerf) {
-            let tmp11 = cResult[7];
-          }
-          const tmpResult2 = tmp(11070);
-          let noOp;
-          if (paymentGateway != null) {
-            noOp = paymentGateway.noOp;
-          }
-          let skipFetch;
-          if (paymentGateway != null) {
-            skipFetch = paymentGateway.skipFetch;
-          }
-          return tmpResult2.useMaybeFetchCollectiblesCategoriesShared(tmp11, noOp, arg1, skipFetch);
-        }
-      }
-    }
-  }
-  const obj2 = { noCache, includeUnpublished, paymentGateway, countryCode, logPerf };
-  cResult[2] = includeUnpublished;
-  cResult[3] = noCache;
-  cResult[4] = paymentGateway;
-  cResult[5] = countryCode;
-  cResult[6] = logPerf;
-  cResult[7] = obj2;
-  tmp11 = obj2;
-}) : ((paymentGateway, arg1) => {
+export default function useMaybeFetchCollectiblesCategories(paymentGateway, arg1) {
   paymentGateway = undefined;
   if (paymentGateway != null) {
     paymentGateway = paymentGateway.paymentGateway;
@@ -98,4 +40,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGateway, 
     skipFetch = paymentGateway.skipFetch;
   }
   return useMaybeFetchCollectiblesCategoriesShared.useMaybeFetchCollectiblesCategoriesShared(obj3, noOp, arg1, skipFetch);
-});
+};

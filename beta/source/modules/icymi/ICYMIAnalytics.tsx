@@ -1,16 +1,16 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8662
+// Function ID: 8663
 // Name: ICYMIAnalytics
-// Dependencies: [8643, 1078, 8436, 8656, 1245, 2]
+// Dependencies: [8638, 1074, 8431, 8651, 1241, 2]
 
-// Module 8667 (ICYMIAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8436 */;
-import ICYMITypes from "ICYMITypes" /* 8656 */;
-import ICYMIStore from "ICYMIStore" /* 8643 */;
+// Module 8662 (ICYMIAnalytics)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8431 */;
+import ICYMITypes from "ICYMITypes" /* 8651 */;
+import ICYMIStore from "ICYMIStore" /* 8638 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelTypes: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/icymi/ICYMIAnalytics.tsx");
@@ -138,12 +138,12 @@ export const ICYMIAnalytics = {
         let str = str2;
       } else {
         str = "hotwheels_gaming_activity";
-        if (tmp3(8656).ICYMIItemTypes.ACTIVITY !== type) {
+        if (tmp3(8651).ICYMIItemTypes.ACTIVITY !== type) {
           str = "hotwheels_custom_status";
-          if (tmp3(8656).ICYMIItemTypes.CUSTOM_STATUS !== type) {
+          if (tmp3(8651).ICYMIItemTypes.CUSTOM_STATUS !== type) {
             str = "guild_event";
-            if (tmp3(8656).ICYMIItemTypes.GUILD_EVENT !== type) {
-              if (tmp3(8656).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
+            if (tmp3(8651).ICYMIItemTypes.GUILD_EVENT !== type) {
+              if (tmp3(8651).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
                 str = "recommended_guilds";
               }
             }
@@ -164,12 +164,12 @@ export const ICYMIAnalytics = {
         let str = str2;
       } else {
         str = "hotwheels_gaming_activity";
-        if (tmp3(8656).ICYMIItemTypes.ACTIVITY !== type) {
+        if (tmp3(8651).ICYMIItemTypes.ACTIVITY !== type) {
           str = "hotwheels_custom_status";
-          if (tmp3(8656).ICYMIItemTypes.CUSTOM_STATUS !== type) {
+          if (tmp3(8651).ICYMIItemTypes.CUSTOM_STATUS !== type) {
             str = "guild_event";
-            if (tmp3(8656).ICYMIItemTypes.GUILD_EVENT !== type) {
-              if (tmp3(8656).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
+            if (tmp3(8651).ICYMIItemTypes.GUILD_EVENT !== type) {
+              if (tmp3(8651).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
                 str = "recommended_guilds";
               }
             }

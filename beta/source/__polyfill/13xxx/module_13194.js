@@ -1,36 +1,17 @@
 // Module ID: 13194
 // Function ID: 13195
 // Dependencies: []
-// Exports: flatten
+// Exports: getSDKSource, isBrowserBundle
 
 // Module 13194
 
-export const flatten = function flatten(arr) {
-  const items = [];
-  const item = arr.forEach((arr) => {
-    if (Array.isArray(arr)) {
-      let item = arr.forEach((arr) => {
-        if (Array.isArray(arr)) {
-          let item = arr.forEach((arr) => {
-            if (Array.isArray(arr)) {
-              let item = arr.forEach((arr) => {
-                if (Array.isArray(arr)) {
-                  let item = arr.forEach(() => { ... });
-                } else {
-                  closure_1_0.push(arr);
-                }
-              });
-            } else {
-              closure_1_0.push(arr);
-            }
-          });
-        } else {
-          closure_1_0.push(arr);
-        }
-      });
-    } else {
-      closure_1_0.push(arr);
-    }
-  });
-  return items;
+export function getSDKSource() {
+  return "npm";
+}
+export const isBrowserBundle = function isBrowserBundle() {
+  let prop = typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined";
+  if (typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined") {
+    prop = globalThis.__SENTRY_BROWSER_BUNDLE__;
+  }
+  return prop;
 };

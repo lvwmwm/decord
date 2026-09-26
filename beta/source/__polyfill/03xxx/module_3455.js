@@ -1,9 +1,9 @@
 // Module ID: 3455
 // Function ID: 3456
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 3455
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/logitech_3pp", scales: [1], hash: "74d114c91c81530f2c73cdb12ed764ee", name: "Logitech3PP.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3lvdXR1YmVfM3Bw", scales: [1], hash: "b022f3071fe2abf3b13539386223535a", name: "da.messages.b022f3071fe2abf3b13539386223535a.compiled.messages", type: "jsona" });

@@ -1,25 +1,25 @@
-// Module ID: 4436
-// Function ID: 4437
+// Module ID: 4432
+// Function ID: 4433
 // Name: PermissionUtils
-// Dependencies: [2102, 4432, 4433, 2049, 2063, 2104, 502, 2045, 2109, 2103, 2067, 1376, 1078, 1090, 12, 4437, 4419, 11, 1982, 4438, 2107, 2]
+// Dependencies: [2098, 4428, 4429, 2045, 2059, 2100, 502, 2041, 2105, 2099, 2063, 1372, 1074, 1086, 12, 4433, 4415, 11, 1978, 4434, 2103, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 4436 (PermissionUtils)
+// Module 4432 (PermissionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Server from "Server" /* 1982 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 2107 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4437 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4438 */;
-import ImpersonateStore from "ImpersonateStore" /* 2102 */;
-import LurkingStore from "LurkingStore" /* 4432 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4433 */;
+import Server from "Server" /* 1978 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 2103 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4433 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4434 */;
+import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+import LurkingStore from "LurkingStore" /* 4428 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1376 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1090 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1086 */;
 import apply from "module_12" /* 12 */;
 
 require = fn;
@@ -58,10 +58,10 @@ function applyOverwrites(id, member, deserializeResult, overwrites) {
     const addResult3 = BigFlagUtils.add(removeResult1, tmp18);
     let addResult4 = addResult3;
     if (null != overwrites[member.userId]) {
-      const tmp19Result = tmp19(1090);
-      const removeResult2 = tmp19(1090).remove(addResult3, tmp23.deny);
-      addResult4 = tmp19(1090).add(removeResult2, tmp23.allow);
-      const tmp19Result5 = tmp19(1090);
+      const tmp19Result = tmp19(1086);
+      const removeResult2 = tmp19(1086).remove(addResult3, tmp23.deny);
+      addResult4 = tmp19(1086).add(removeResult2, tmp23.allow);
+      const tmp19Result5 = tmp19(1086);
     }
     const hasItem = BigFlagUtils.has(addResult4, Permissions.ADMINISTRATOR);
     const tmp19Result6 = BigFlagUtils;
@@ -73,16 +73,16 @@ function applyOverwrites(id, member, deserializeResult, overwrites) {
     }
     let found = addResult4;
     if (tmp31) {
-      found = tmp19(1090).filter(addResult4, closure_29);
-      const tmp19Result7 = tmp19(1090);
+      found = tmp19(1086).filter(addResult4, closure_29);
+      const tmp19Result7 = tmp19(1086);
     }
-    const tmp28Result = tmp28(4419);
+    const tmp28Result = tmp28(4415);
     found1 = found;
     if (tmp34) {
-      found1 = tmp19(1090).filter(found, closure_28);
-      const tmp19Result8 = tmp19(1090);
+      found1 = tmp19(1086).filter(found, closure_28);
+      const tmp19Result8 = tmp19(1086);
     }
-    tmp34 = tmp28(4419).isMemberCommunicationDisabled(member) && !hasItem;
+    tmp34 = tmp28(4415).isMemberCommunicationDisabled(member) && !hasItem;
   }
   return found1;
 }
@@ -110,7 +110,7 @@ function computePermissionsForMember(excludeGuildPermissions) {
     } else {
       unsafeMutableRoles = GuildRoleStore.getUnsafeMutableRoles(guild.id);
     }
-    const tmp11 = unsafeMutableRoles[options(undefined, guild)];
+    const tmp11 = unsafeMutableRoles[React7(undefined, guild)];
     const tmp12 = null != tmp11 ? tmp11.permissions : combineResult;
     let tmp13 = tmp12;
     if (null != member) {
@@ -146,13 +146,13 @@ function computePermissionsForMember(excludeGuildPermissions) {
     }
     let found = tmp29;
     if (isLurkingResult) {
-      found = tmp21(1090).filter(tmp29, lurkerPermissionsMask);
-      const tmp21Result = tmp21(1090);
+      found = tmp21(1086).filter(tmp29, lurkerPermissionsMask);
+      const tmp21Result = tmp21(1086);
     }
     let found1 = found;
     if (GuildMemberStore.isCurrentUserGuest(guild.id)) {
-      found1 = tmp21(1090).filter(found, closure_27);
-      const tmp21Result3 = tmp21(1090);
+      found1 = tmp21(1086).filter(found, closure_27);
+      const tmp21Result3 = tmp21(1086);
     }
     if (checkElevated === undefined) {
       checkElevated = true;
@@ -172,8 +172,8 @@ function computePermissionsForMember(excludeGuildPermissions) {
       }
       let removeResult = found1;
       if (!mfaEnabled) {
-        removeResult = tmp21(1090).remove(found1, closure_1_19);
-        const tmp21Result4 = tmp21(1090);
+        removeResult = tmp21(1086).remove(found1, closure_1_19);
+        const tmp21Result4 = tmp21(1086);
       }
       tmp39 = removeResult;
     }
@@ -196,7 +196,7 @@ function computePermissions(excludeGuildPermissions) {
     if (typeof user !== "string") {
       id = user.id;
     }
-    if (context instanceof closure_1_8) {
+    if (context instanceof React6) {
       if (context.isScheduledForDeletion()) {
         return deserializeResult;
       } else if (set.has(context.type)) {
@@ -231,7 +231,7 @@ function computePermissions(excludeGuildPermissions) {
           permissionOverwrites = context.permissionOverwrites;
         }
         const guildId = context.getGuildId();
-        guild = null;
+        let guild = null;
         if (null != guildId) {
           guild = GuildStore.getGuild(guildId);
         }
@@ -256,7 +256,7 @@ function computePermissions(excludeGuildPermissions) {
         id2 = currentUser1.id;
       }
       if (id !== id2) {
-        if (v65535(tmp4, id)) {
+        if (closure_1_10(tmp4, id)) {
           let flag2 = checkElevated;
           if (checkElevated === undefined) {
             flag2 = true;
@@ -307,17 +307,17 @@ function applyThreadPermissions(context, permissions, hasJoinedResult, GuildMemb
     let combine = dependencyMap;
     let SEND_MESSAGES = Permissions;
     if (!obj2.has(permissions, Permissions.SEND_MESSAGES_IN_THREADS)) {
-      tmp8(1090).remove(permissions, SEND_MESSAGES.SEND_MESSAGES);
-      const tmp8Result = tmp8(1090);
+      tmp8(1086).remove(permissions, SEND_MESSAGES.SEND_MESSAGES);
+      const tmp8Result = tmp8(1086);
     }
     if (context.isLockedThread()) {
       if (!tmp8Result3.has(permissions, SEND_MESSAGES.MANAGE_THREADS)) {
-        let removeResult1 = tmp8(1090).remove(permissions, SEND_MESSAGES.SEND_MESSAGES);
-        const tmp8Result4 = tmp8(1090);
+        let removeResult1 = tmp8(1086).remove(permissions, SEND_MESSAGES.SEND_MESSAGES);
+        const tmp8Result4 = tmp8(1086);
       }
-      tmp8Result3 = tmp8(1090);
+      tmp8Result3 = tmp8(1086);
     }
-    tmp8 = tmp8(1090);
+    tmp8 = tmp8(1086);
     combine = tmp8.combine;
     SEND_MESSAGES = SEND_MESSAGES.SEND_MESSAGES;
     removeResult1 = combine(permissions, SEND_MESSAGES);
@@ -356,12 +356,12 @@ function getSyncedPermissionOverwrites(guild_id, appChannelBotUserId) {
   }
   return obj;
 }
-const ChannelRecord = fn(2049);
+const ChannelRecord = fn(2045);
 ({ THREAD_CHANNEL_TYPES: closure_7, ChannelRecordBase: closure_8 } = ChannelRecord);
-const GuildRecord = fn(2063);
+const GuildRecord = fn(2059);
 ({ getGuildEveryoneRoleId: closure_9, isGuildOwner: c10 } = GuildRecord);
-const hasPermission = fn(2104).hasPermission;
-const Constants = fn(1078);
+const hasPermission = fn(2100).hasPermission;
+const Constants = fn(1074);
 const Permissions = Constants.Permissions;
 ({ ElevatedPermissions: closure_19, MFALevels: closure_20, ChannelTypes: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22 } = Constants);
 let BigFlagUtils = BigFlagUtils_mod;
@@ -388,7 +388,7 @@ function computePermissionsForRoles(excludeGuildPermissions) {
     checkElevated = true;
   }
   excludeGuildPermissions = excludeGuildPermissions.excludeGuildPermissions;
-  if (context instanceof closure_1_8) {
+  if (context instanceof React6) {
     if (context.isScheduledForDeletion()) {
       return deserializeResult;
     } else if (set.has(context.type)) {
@@ -414,7 +414,7 @@ function computePermissionsForRoles(excludeGuildPermissions) {
         permissionOverwrites = context.permissionOverwrites;
       }
       const guildId = context.getGuildId();
-      guild = null;
+      let guild = null;
       if (null != guildId) {
         guild = GuildStore.getGuild(guildId);
       }
@@ -463,7 +463,7 @@ export const areChannelsLocked = function areChannelsLocked(c18, c19, appChannel
           const tmp12 = getSyncedPermissionOverwrites(c19, appChannelBotUserId);
           closure_1 = tmp12;
           if (null == obj2[guild_id]) {
-            let obj = { id: guild_id, type: obj2(1982).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
+            let obj = { id: guild_id, type: obj2(1978).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
             obj2[guild_id] = obj;
           }
           const _Object = Object;
@@ -508,7 +508,7 @@ export const getGuildVisualOwnerId = function getGuildVisualOwnerId(guild) {
 export const isRoleHigher = function isRoleHigher(arg0, arg1, guildId, id) {
   let tmp = null == arg1;
   if (!tmp) {
-    tmp = !v65535(arg0, arg1);
+    tmp = !closure_1_10(arg0, arg1);
   }
   let tmp4 = !tmp;
   if (tmp) {
@@ -544,12 +544,12 @@ export const getHighestHoistedRole = function getHighestHoistedRole(id, hoistRol
 export const makeEveryoneOverwrite = function makeEveryoneOverwrite(guildId1) {
   return { id: guildId1, type: Server.PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
 };
-export const canManageACategory = function canManageACategory(currentUser, guild, categories) {
+export const canManageACategory = function canManageACategory(currentUser, guild, _categories) {
   user = currentUser;
   ({ permission, user, context, overwrites, roles, excludeGuildPermissions } = { permission: Permissions.MANAGE_CHANNELS, user: currentUser, context: guild });
   let someResult = BigFlagUtils.has(computePermissions({ user, context, overwrites, roles, checkElevated: true, excludeGuildPermissions }), permission);
   if (!someResult) {
-    someResult = categories.some((channel) => {
+    someResult = _categories.some((channel) => {
       channel = channel.channel;
       let hasItem = "null" !== channel.id;
       if (hasItem) {
@@ -572,7 +572,7 @@ export const DENY = "DENY";
 export const PASSTHROUGH = "PASSTHROUGH";
 export const canEveryoneRole = function canEveryoneRole(VIEW_CHANNEL, channel) {
   let tmp = channel;
-  if (channel instanceof closure_1_8) {
+  if (channel instanceof React6) {
     if (channel.type === constants2.PRIVATE_THREAD) {
       return false;
     } else {
@@ -583,7 +583,7 @@ export const canEveryoneRole = function canEveryoneRole(VIEW_CHANNEL, channel) {
         }
       }
       const guildId = channel.getGuildId();
-      guild = null;
+      let guild = null;
       if (null != guildId) {
         guild = GuildStore.getGuild(guildId);
       }
@@ -618,7 +618,7 @@ export const canEveryone = function canEveryone(VIEW_CHANNEL, channel) {
         }
       }
       const guildId = channel.getGuildId();
-      guild = null;
+      let guild = null;
       if (null != guildId) {
         guild = GuildStore.getGuild(guildId);
       }

@@ -1,16 +1,16 @@
-// Module ID: 14775
-// Function ID: 14776
+// Module ID: 14765
+// Function ID: 14766
 // Name: UserSettingsProtoManager
-// Dependencies: [1224, 1088, 1228, 14776, 14777, 577, 12, 2028, 2]
+// Dependencies: [1220, 1084, 1224, 14766, 14767, 573, 12, 2024, 2]
 
-// Module 14775 (UserSettingsProtoManager)
+// Module 14765 (UserSettingsProtoManager)
 import _modDef12 from "module_12" /* 12 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1228 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2028 */;
-import PreloadedUserSettingsMigrationsDefault from "PreloadedUserSettingsMigrations" /* 14776 */;
-import FrecencySettingsMigrationsDefault from "FrecencySettingsMigrations" /* 14777 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1224 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2024 */;
+import PreloadedUserSettingsMigrationsDefault from "PreloadedUserSettingsMigrations" /* 14766 */;
+import FrecencySettingsMigrationsDefault from "FrecencySettingsMigrations" /* 14767 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
 function handleConnectionOpen() {
@@ -49,7 +49,7 @@ function handleAppStateUpdate(state) {
     });
   }
 }
-const UserSettingsTypes = fn(1088).UserSettingsTypes;
+const UserSettingsTypes = fn(1084).UserSettingsTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/UserSettingsProtoManager.tsx");
 

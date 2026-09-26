@@ -1,53 +1,21 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15371
+// Function ID: 15372
 // Name: useConnectionBannerHeight
-// Dependencies: [13990, 15364, 558, 568, 13991, 504, 2]
+// Dependencies: [13980, 15368, 13981, 504, 2]
+// Exports: useConnectionBannerHeight
 
-// Module 15367 (useConnectionBannerHeight)
-import c from "c" /* 568 */;
-import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13991 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13990 */;
+// Module 15371 (useConnectionBannerHeight)
+import initialize from "initialize" /* 504 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13981 */;
+import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13980 */;
 
-const initialize = tmp(504);
 require = fn;
-const constants = fn(13990).ConnectivityIndicatorState;
-const CONNECTION_BANNER_HEIGHT = fn(15364).CONNECTION_BANNER_HEIGHT;
-const ReactCompilerGating = fn(558);
+const constants = fn(13980).ConnectivityIndicatorState;
+const CONNECTION_BANNER_HEIGHT = fn(15368).CONNECTION_BANNER_HEIGHT;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useConnectionBannerHeight.tsx");
 
-export const useConnectionBannerHeight = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "useConnectionBannerHeight" };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const config = ConnectionIndicatorExperimentDefault.useConfig(first);
-  ({ timeoutMs, hidden } = config);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConnectivityIndicatorStateStore];
-    const fn = function l() {
-      return state.getState();
-    };
-    cResult[1] = items;
-    cResult[2] = fn;
-  }
-  initialize;
-  let num4 = 0;
-  if (null != timeoutMs) {
-    num4 = 0;
-    if (!hidden) {
-      num4 = 0;
-      if (tmp10 !== constants.HIDDEN) {
-        num4 = CONNECTION_BANNER_HEIGHT;
-      }
-    }
-  }
-  return num4;
-}) : (() => {
+export const useConnectionBannerHeight = function useConnectionBannerHeight() {
   const config = ConnectionIndicatorExperimentDefault.useConfig({ location: "useConnectionBannerHeight" });
   ({ timeoutMs, hidden } = config);
   initialize;
@@ -63,4 +31,4 @@ export const useConnectionBannerHeight = ReactCompilerGating.isReactCompilerEnab
     }
   }
   return num;
-});
+};

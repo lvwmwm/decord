@@ -1,19 +1,19 @@
-// Module ID: 18186
-// Function ID: 18187
+// Module ID: 18177
+// Function ID: 18178
 // Name: useIsCreatorMonetizationRequestRejected
-// Dependencies: [18155, 1119, 2]
+// Dependencies: [18146, 1115, 2]
 // Exports: default
 
-// Module 18186 (useIsCreatorMonetizationRequestRejected)
-import util from "util" /* 1119 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 18155 */;
+// Module 18177 (useIsCreatorMonetizationRequestRejected)
+import util from "util" /* 1115 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 18146 */;
 import size from "module_2" /* 2 */;
 
 const constants = CreatorMonetizationEligibilityConstants.CreatorMonetizationApplicationState;
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationRequestRejected.tsx");
 
 export default function useIsCreatorMonetizationRequestRejected(latestRequest) {
-  state = undefined;
+  let state;
   if (latestRequest != null) {
     latestRequest = latestRequest.latestRequest;
     if (latestRequest != null) {

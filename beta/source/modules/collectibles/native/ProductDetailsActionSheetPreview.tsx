@@ -1,94 +1,28 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13470
+// Function ID: 13471
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1977, 13481, 13483, 2]
+// Dependencies: [32, 19, 17, 21, 4788, 576, 1973, 13471, 13473, 2]
+// Exports: default
 
-// Module 13480 (ProductDetailsActionSheetPreview)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 13481 */;
-import IndividualProductPreview from "IndividualProductPreview" /* 13483 */;
+// Module 13470 (ProductDetailsActionSheetPreview)
+import nativeDefault from "native" /* 576 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
+import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 13471 */;
+import IndividualProductPreview from "IndividualProductPreview" /* 13473 */;
 import _slicedToArray from "module_32" /* 32 */;
-
-const require = globalThis.__r;
 
 require = fn;
 const noop = fn(19);
 ({ useCallback: closure_4, useState: hasOwnProperty } = noop);
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { previewContainer: { flex: 1 }, previewDivider: { borderBottomColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: nativeDefault.space.PX_16, flex: 1 } };
 let closure_8 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj3 = { borderBottomColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: nativeDefault.space.PX_16, flex: 1 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetPreview.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let obj = dependencyMap;
-  const cResult = c.c(12);
-  ({ product, handlePreviewPress, onTrackPress, onBundleActiveItemChange } = arg0);
-  const tmp3 = closure_8();
-  let num = 2;
-  [tmp5, require] = hasOwnProperty(0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o(nativeEvent) {
-      require(nativeEvent.nativeEvent.layout.width);
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const tmp7 = product.type === CollectiblesItemType.CollectiblesItemType.BUNDLE;
-  if (cResult[1] === handlePreviewPress) {
-    if (cResult[2] === tmp7) {
-      if (cResult[3] === onBundleActiveItemChange) {
-        if (cResult[4] === onTrackPress) {
-          if (cResult[5] === product) {
-            if (cResult[6] === tmp3.previewDivider) {
-              if (cResult[7] === tmp5) {
-                if (cResult[9] === tmp3.previewContainer) {
-                  if (cResult[10] === tmp8) {
-                    let tmp14 = cResult[11];
-                  }
-                  return tmp14;
-                }
-                const obj3 = { style: tmp3.previewContainer, onLayout: first, children: cResult[8] };
-                const tmp17 = <View style={tmp3.previewContainer} onLayout={first}>{cResult[8]}</View>;
-                cResult[9] = tmp3.previewContainer;
-                cResult[10] = cResult[8];
-                cResult[11] = tmp17;
-                tmp14 = tmp17;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  if (tmp7) {
-    obj = { product, width: tmp5, handlePreviewPress, onTrackPress, onActiveItemChange: onBundleActiveItemChange };
-    let tmp9Result = tmp9(BundleProductDetailsActionSheetPreviewDefault, obj);
-  } else {
-    const obj4 = { style: tmp3.previewDivider, children: null };
-    const obj5 = { product, width: tmp5, handlePreviewPress, onTrackPress };
-    obj4.children = tmp9(tmp(13483).IndividualProductPreview, obj5);
-    tmp9Result = tmp9(View, obj4);
-  }
-  cResult[1] = handlePreviewPress;
-  cResult[num] = tmp7;
-  cResult[3] = onBundleActiveItemChange;
-  cResult[4] = onTrackPress;
-  cResult[5] = product;
-  product = tmp3.previewDivider;
-  cResult[6] = product;
-  cResult[7] = tmp5;
-  num = 8;
-  cResult[8] = tmp9Result;
-}) : ((onBundleActiveItemChange) => {
+export default function ProductDetailsActionSheetPreview(onBundleActiveItemChange) {
   ({ product, handlePreviewPress, onTrackPress } = onBundleActiveItemChange);
   c0 = undefined;
   const tmp = closure_8();
@@ -114,4 +48,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <View style={tmp.previewContainer} onLayout={React4((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, [])}>{null}</View>;
-});
+};

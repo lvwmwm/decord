@@ -1,12 +1,12 @@
-// Module ID: 5410
-// Function ID: 5411
+// Module ID: 5408
+// Function ID: 5409
 // Name: IosImageTypesManager
-// Dependencies: [32, 17, 3, 1986, 2]
+// Dependencies: [32, 17, 3, 1982, 2]
 
-// Module 5410 (IosImageTypesManager)
+// Module 5408 (IosImageTypesManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _slicedToArray from "module_32" /* 32 */;
-import LifecycleManager from "LifecycleManager" /* 1986 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 const NativeModules = fn(17).NativeModules;
 const logger = new LoggerDefault("IosImageTypesManager");

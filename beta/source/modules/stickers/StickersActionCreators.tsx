@@ -1,20 +1,20 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 10683
+// Function ID: 10684
 // Name: StickersActionCreators
-// Dependencies: [5, 5528, 2113, 5140, 1376, 5753, 1078, 1088, 5031, 1275, 577, 5137, 5420, 2028, 12, 5142, 1119, 2]
+// Dependencies: [5, 5526, 2109, 5138, 1372, 5751, 1074, 1084, 5029, 1271, 573, 5135, 5418, 2024, 12, 5140, 1115, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 10716 (StickersActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import util from "util" /* 1119 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
-import InlineUploaderDefault from "InlineUploader" /* 5420 */;
+// Module 10683 (StickersActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import util from "util" /* 1115 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import InlineUploaderDefault from "InlineUploader" /* 5418 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
-import LocaleStore from "LocaleStore" /* 2113 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5140 */;
-import UserStore from "UserStore" /* 1376 */;
-import StickersStore from "StickersStore" /* 5753 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5138 */;
+import UserStore from "UserStore" /* 1372 */;
+import StickersStore from "StickersStore" /* 5751 */;
 
 const require = globalThis.__r;
 
@@ -40,7 +40,7 @@ let closure_13 = async function _fetchStickerPacks(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -69,7 +69,7 @@ let closure_13 = async function _fetchStickerPacks(arg0, value) {
           let sticker_packs;
           c3 = 1;
           c4 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp6) {
@@ -130,7 +130,7 @@ let closure_14 = async function _fetchSticker(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -203,7 +203,7 @@ let closure_15 = async function _fetchGuildStickersWithCreator(arg0, signal) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -254,7 +254,7 @@ let closure_15 = async function _fetchGuildStickersWithCreator(arg0, signal) {
           };
           closure_131_1(closure_131_2[10]).dispatch(obj7);
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c5 = tmp;
@@ -274,7 +274,7 @@ let closure_16 = async function _deleteGuildSticker(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -304,7 +304,7 @@ let closure_16 = async function _deleteGuildSticker(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp5) {
       c1 = tmp;
@@ -365,8 +365,8 @@ let closure_18 = async function _updateGuildSticker(arg0, arg1, body) {
     return value.body;
   })();
 };
-const Endpoints = fn(1078).Endpoints;
-const UserSettingsConstants = fn(1088);
+const Endpoints = fn(1074).Endpoints;
+const UserSettingsConstants = fn(1084);
 ({ MAX_FAVORITES: c10, UserSettingsDelay: closure_11 } = UserSettingsConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stickers/StickersActionCreators.tsx");
@@ -447,8 +447,8 @@ export const addStickerPreview = function addStickerPreview(channelId, sticker, 
 export const clearStickerPreview = function clearStickerPreview(channelId, draftType) {
   DispatcherDefault.dispatch({ type: "CLEAR_STICKER_PREVIEW", channelId, draftType });
 };
-export const favoriteSticker = function favoriteSticker(arg0) {
-  _require = arg0;
+export const favoriteSticker = function favoriteSticker(sticker) {
+  _require = sticker;
   const FrecencyUserSettingsActionCreators = require("UserSettingsProtoActionCreators").FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", async (stickerIds) => {
     const stickerIds1 = stickerIds.stickerIds;
@@ -461,7 +461,7 @@ export const favoriteSticker = function favoriteSticker(arg0) {
       tmp = found;
     }
     stickerIds.stickerIds = tmp;
-    if (obj.size(stickerIds.stickerIds) >= v65535) {
+    if (obj.size(stickerIds.stickerIds) >= closure_2_10) {
       const obj2 = { title: null, body: null };
       const intl = util.intl;
       obj2.title = intl.string(util.t["+XYXtZ"]);
@@ -484,12 +484,12 @@ export const favoriteSticker = function favoriteSticker(arg0) {
     return flag;
   }, constants.INFREQUENT_USER_ACTION);
 };
-export const unfavoriteSticker = function unfavoriteSticker(arg0) {
-  _require = arg0;
+export const unfavoriteSticker = function unfavoriteSticker(sticker) {
+  _require = sticker;
   const FrecencyUserSettingsActionCreators = require("UserSettingsProtoActionCreators").FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", async (stickerIds) => {
     stickerIds = stickerIds.stickerIds;
-    stickerIds.stickerIds = stickerIds.filter((item) => item !== closure_1_0);
+    stickerIds.stickerIds = stickerIds.filter((item) => item !== sticker);
     const stickerIds1 = stickerIds.stickerIds;
     let tmp = stickerIds1;
     if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {

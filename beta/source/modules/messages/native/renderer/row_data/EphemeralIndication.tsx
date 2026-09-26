@@ -1,17 +1,17 @@
-// Module ID: 8380
-// Function ID: 8381
+// Module ID: 8375
+// Function ID: 8376
 // Name: EphemeralIndication
-// Dependencies: [8233, 1078, 8381, 1119, 2112, 2]
+// Dependencies: [8228, 1074, 8376, 1115, 2108, 2]
 // Exports: createEphemeralIndication
 
-// Module 8380 (EphemeralIndication)
-import util from "util" /* 1119 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8381 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8233 */;
+// Module 8375 (EphemeralIndication)
+import util from "util" /* 1115 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8376 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8228 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ HelpdeskArticles: closure_4, MessageFlags: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/EphemeralIndication.tsx");
@@ -31,14 +31,14 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       }
       const obj = { content: null, helpArticleLink: null, helpButtonAccessibilityLabel: null };
       const ephemeralReasonMessage = ApplicationCommandUserAppUtils.getEphemeralReasonMessage(ephemerality_reason1);
-      const intl2 = tmp3(1119).intl;
+      const intl2 = tmp3(1115).intl;
       const obj3 = { handleDelete: null, reason: null };
       const obj4 = { action: "bindDismissMessage", message };
       obj3.handleDelete = obj4;
       obj3.reason = ephemeralReasonMessage;
       obj.content = intl2.formatToParts(util.t.xgCMRQ, obj3);
       obj.helpArticleLink = HelpdeskUtilsDefault.getArticleURL(constants.USING_APPS_FAQ);
-      const intl3 = tmp3(1119).intl;
+      const intl3 = tmp3(1115).intl;
       obj.helpButtonAccessibilityLabel = intl3.string(util.t.OIWSJe);
       return obj;
     } else {
@@ -53,8 +53,8 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       obj5.helpButtonAccessibilityLabel = intl5.string(util.t.htHOrp);
       if (null != GuildAutomodMessageStore.getMessage(message.id)) {
         obj5.helpArticleLink = HelpdeskUtilsDefault.getArticleURL(constants.GUILD_AUTOMOD_BLOCKED_MESSAGE);
-        const intl = tmp9(1119).intl;
-        obj5.helpButtonAccessibilityLabel = intl.string(tmp9(1119).t.OiCBhP);
+        const intl = tmp9(1115).intl;
+        obj5.helpButtonAccessibilityLabel = intl.string(tmp9(1115).t.OiCBhP);
         const tmp11Result = HelpdeskUtilsDefault;
       }
       return obj5;

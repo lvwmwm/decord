@@ -1,14 +1,14 @@
-// Module ID: 5677
-// Function ID: 5678
+// Module ID: 5675
+// Function ID: 5676
 // Name: GuildMemberRequesterStore
-// Dependencies: [2045, 2109, 5678, 577, 504, 2]
+// Dependencies: [2041, 2105, 5676, 573, 504, 2]
 
-// Module 5677 (GuildMemberRequesterStore)
+// Module 5675 (GuildMemberRequesterStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5678 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5676 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 
 function handleConnectionReset() {
   navigation.reset();
@@ -79,8 +79,8 @@ const prototype = GuildMemberRequesterStore.prototype;
 prototype["initialize"] = function initialize() {
   this.waitFor(ChannelStore, GuildMemberStore);
 };
-prototype["requestMember"] = function requestMember(guild_id, id) {
-  navigation.request(guild_id, id);
+prototype["requestMember"] = function requestMember(guildId, id) {
+  navigation.request(guildId, id);
 };
 prototype["getDebugState"] = function getDebugState(arg0) {
   return navigation.getDebugState(arg0);

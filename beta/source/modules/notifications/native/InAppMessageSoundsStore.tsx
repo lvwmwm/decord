@@ -1,15 +1,13 @@
-// Module ID: 13003
-// Function ID: 13004
+// Module ID: 10399
+// Function ID: 10400
 // Name: InAppMessageSoundsStore
-// Dependencies: [510, 1247, 558, 568, 4415, 2]
-// Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled
+// Dependencies: [510, 1243, 4411, 2]
+// Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 13003 (InAppMessageSoundsStore)
+// Module 10399 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
-import c from "c" /* 568 */;
-import _mod4415 from "module_4415" /* 4415 */;
-import identity from "module_1247" /* 1247 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import _mod4411 from "module_4411" /* 4411 */;
+import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
@@ -31,16 +29,6 @@ export const setInAppMessageSoundsEnabled = function setInAppMessageSoundsEnable
   const result = Storage.set(InAppMessageSoundsEnabled, isEnabled);
   closure_3.setState({ isEnabled });
 };
-export const useInAppMessageSoundsEnabled = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(isEnabled) {
-      return isEnabled.isEnabled;
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_3(first, _mod4415.shallow);
-}) : (() => closure_3((isEnabled) => isEnabled.isEnabled, _mod4415.shallow));
+export const useInAppMessageSoundsEnabled = function useInAppMessageSoundsEnabled() {
+  return closure_3((isEnabled) => isEnabled.isEnabled, _mod4411.shallow);
+};

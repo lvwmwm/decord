@@ -1,18 +1,18 @@
-// Module ID: 12546
-// Function ID: 12547
+// Module ID: 12645
+// Function ID: 12646
 // Name: SearchTabsLayoutStore
-// Dependencies: [2045, 7557, 12547, 12548, 12549, 12523, 8159, 560, 12524, 504, 577, 2]
+// Dependencies: [2041, 7555, 12646, 12647, 12648, 12622, 8154, 558, 12623, 504, 573, 2]
 
-// Module 12546 (SearchTabsLayoutStore)
+// Module 12645 (SearchTabsLayoutStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import SearchUtils from "SearchUtils" /* 12524 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SearchMessageStore from "SearchMessageStore" /* 7557 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12547 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 12548 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12549 */;
-import SearchQueryStore from "SearchQueryStore" /* 12523 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import SearchUtils from "SearchUtils" /* 12623 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SearchMessageStore from "SearchMessageStore" /* 7555 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12646 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 12647 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12648 */;
+import SearchQueryStore from "SearchQueryStore" /* 12622 */;
 
 require = fn;
 function handleSearchQuery(searchContext) {
@@ -126,7 +126,7 @@ function computeLayoutForState(value) {
     if (!tmp16) {
       let tmp17 = null != visibleTabCounts2 && null != visibleTabCounts;
       if (tmp17) {
-        tmp17 = searchContext(560)(visibleTabCounts2, visibleTabCounts);
+        tmp17 = searchContext(558)(visibleTabCounts2, visibleTabCounts);
       }
       tmp16 = tmp17;
     }
@@ -160,7 +160,7 @@ function computeLayoutForAll() {
   }
   return flag;
 }
-const SearchConstants = fn(8159);
+const SearchConstants = fn(8154);
 ({ SearchTabs: closure_9, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: c10, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: closure_11 } = SearchConstants);
 let closure_12 = [];
 const map = new Map();

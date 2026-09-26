@@ -1,122 +1,35 @@
-// Module ID: 16040
-// Function ID: 16041
+// Module ID: 16044
+// Function ID: 16045
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1376, 1394, 21, 1395, 11245, 1119, 11241, 2876, 4790, 580, 558, 568, 4786, 5220, 5218, 11238, 11239, 504, 16041, 9571, 5854, 5935, 5025, 2]
+// Dependencies: [32, 19, 17, 1372, 1390, 21, 1391, 11196, 1115, 11192, 2872, 4788, 576, 5216, 4784, 5218, 11189, 11190, 504, 16045, 5936, 5854, 9575, 5023, 2]
+// Exports: default
 
-// Module 16040 (DevToolsDisplayNameEffectsBenchmarkScreen)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import _modDef2876 from "module_2876" /* 2876 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import Stack_Stack from "Stack/Stack" /* 5218 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11238 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 11241 */;
-import _mod11245 from "module_11245" /* 11245 */;
+// Module 16044 (DevToolsDisplayNameEffectsBenchmarkScreen)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import _modDef2872 from "module_2872" /* 2872 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Stack_Stack from "Stack/Stack" /* 5216 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11189 */;
+import types from "types" /* 11190 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 11192 */;
+import _mod11196 from "module_11196" /* 11196 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
-const types = tmp(11239);
 require = fn;
 function effectName(arg0) {
   const intl = util.intl;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef2876.OpWJ3f;
+    OpWJ3f = _modDef2872.OpWJ3f;
   }
   return intl.string(OpWJ3f);
 }
-get_ActivityIndicator = fn(17);
-({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let items = [...fn(1394).EFFECT_ORDER, fn(1395).DisplayNameEffect.GUMMY];
-let closure_12 = [10, 50, 100, 200];
-let items1 = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
-const createStyles = fn(4790);
-let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 }, container: null, batchRow: null, optionButtons: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
-obj2.container = { paddingVertical: nativeDefault.space.PX_16 };
-obj2.batchRow = { paddingVertical: 2 };
-obj2.optionButtons = { flexWrap: "wrap" };
-let closure_14 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
-  const cResult = c.c(15);
-  ({ caption, options, value } = onChange);
-  const require = value;
-  onChange = onChange.onChange;
-  const tmp4 = closure_14();
-  if (cResult[0] !== caption) {
-    const obj2 = { variant: "text-sm/semibold", color: "text-subtle", children: caption };
-    const tmp7 = closure_8(tmp(4786).Text, obj2);
-    cResult[0] = caption;
-    cResult[1] = tmp7;
-    let tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === onChange) {
-    if (cResult[3] === options) {
-      if (cResult[4] === value) {
-        if (cResult[9] === tmp4.optionButtons) {
-          if (cResult[10] === tmp9) {
-            let tmp13 = cResult[11];
-          }
-          if (cResult[12] === tmp5) {
-            if (cResult[13] === tmp13) {
-              let tmp16 = cResult[14];
-            }
-            return tmp16;
-          }
-          const obj3 = { spacing: 8, children: null };
-          items = [tmp5, tmp13];
-          obj3.children = items;
-          const tmp18 = closure_9(tmp(5218).Stack, obj3);
-          cResult[12] = tmp5;
-          cResult[13] = tmp13;
-          cResult[14] = tmp18;
-          tmp16 = tmp18;
-        }
-        const obj4 = { direction: "horizontal", spacing: 8, style: tmp8, children: cResult[5] };
-        const tmp15 = closure_8(tmp(5218).Stack, obj4);
-        cResult[9] = tmp4.optionButtons;
-        cResult[10] = cResult[5];
-        cResult[11] = tmp15;
-        tmp13 = tmp15;
-      }
-    }
-  }
-  if (cResult[6] === onChange) {
-    if (cResult[7] === value) {
-      let tmp10 = cResult[8];
-    }
-    const mapped = options.map(tmp10);
-    cResult[2] = onChange;
-    cResult[3] = options;
-    cResult[4] = value;
-    cResult[5] = mapped;
-  }
-  const fn = function y(label) {
-    const obj = { size: "sm", text: label.label, variant: null, onPress: null };
-    let str = "secondary";
-    if (label.value === label) {
-      str = "primary";
-    }
-    obj.variant = str;
-    obj.onPress = function onPress() {
-      return onChange(label.value);
-    };
-    return closure_1_8(value(dependencyMap[16]).Button, obj, String(label.value));
-  };
-  cResult[6] = onChange;
-  cResult[7] = value;
-  cResult[8] = fn;
-  tmp10 = fn;
-}) : ((children) => {
+function OptionButtons(children) {
   ({ options, value: require, onChange: importDefault } = children);
   let obj = { spacing: 8, children: null };
   items = [closure_8(Text_Text.Text, { variant: "text-sm/semibold", color: "text-subtle", children: children.caption }), ];
@@ -140,234 +53,35 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   });
   obj.children = items;
   return closure_9(Stack_Stack.Stack, obj);
-});
-ReactCompilerGating = fn(558);
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(7);
-  ({ userId, userName, style, effect } = arg0);
-  const displayNameStylesEffectConfig = useDisplayNameStylesEffectConfigs.useDisplayNameStylesEffectConfig(effect);
-  if (cResult[0] === displayNameStylesEffectConfig.previewStyles) {
-    if (cResult[1] === userId) {
-      if (cResult[2] === userName) {
-        let tmp5 = cResult[3];
-      }
-      if (cResult[4] === style) {
-        if (cResult[5] === tmp5) {
-          let tmp8 = cResult[6];
-        }
-        return tmp8;
-      }
-      const obj3 = { style, children: tmp5 };
-      const tmp11 = closure_1_8(timestampProducer, obj3);
-      cResult[4] = style;
-      cResult[5] = tmp5;
-      cResult[6] = tmp11;
-      tmp8 = tmp11;
-    }
-  }
-  const obj4 = { userId, userName, effectDisplayType: null, pendingDisplayNameStyles: null, variant: "text-md/semibold" };
-  obj4.effectDisplayType = types.EffectDisplayType.STATIC;
-  obj4.pendingDisplayNameStyles = displayNameStylesEffectConfig.previewStyles;
-  const tmp7 = closure_1_8(UsernameWithEffectsDefault, obj4);
-  cResult[0] = displayNameStylesEffectConfig.previewStyles;
-  cResult[1] = userId;
-  cResult[2] = userName;
-  cResult[3] = tmp7;
-  tmp5 = tmp7;
-}) : ((arg0) => {
+}
+function BenchmarkRow(arg0) {
   ({ userId, effect, userName, style } = arg0);
   const obj2 = { style, children: null };
   const displayNameStylesEffectConfig = useDisplayNameStylesEffectConfigs.useDisplayNameStylesEffectConfig(effect);
   const obj3 = { userId, userName, effectDisplayType: null, pendingDisplayNameStyles: null, variant: "text-md/semibold" };
   obj3.effectDisplayType = types.EffectDisplayType.STATIC;
   obj3.pendingDisplayNameStyles = displayNameStylesEffectConfig.previewStyles;
-  obj2.children = closure_1_8(UsernameWithEffectsDefault, obj3);
-  return closure_1_8(timestampProducer, obj2);
-});
-ReactCompilerGating = fn(558);
-let obj4 = { paddingVertical: nativeDefault.space.PX_16 };
+  obj2.children = React6(UsernameWithEffectsDefault, obj3);
+  return React6(timestampProducer, obj2);
+}
+get_ActivityIndicator = fn(17);
+({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
+const jsxProd = fn(21);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let items = [...fn(1390).EFFECT_ORDER, fn(1391).DisplayNameEffect.GUMMY];
+let closure_12 = [10, 50, 100, 200];
+let items1 = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
+const createStyles = fn(4788);
+let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 }, container: null, batchRow: null, optionButtons: null };
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
+obj2.container = { paddingVertical: nativeDefault.space.PX_16 };
+obj2.batchRow = { paddingVertical: 2 };
+obj2.optionButtons = { flexWrap: "wrap" };
+let closure_14 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDisplayNameEffectsBenchmarkScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = require("c").c(66);
-  let obj = require("c");
-  _require = effectLabel();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [addScroll];
-    const fn = function s() {
-      const currentUser = addScroll.getCurrentUser();
-      let id;
-      if (currentUser != null) {
-        id = currentUser.id;
-      }
-      return id;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmp4 = effectLabel();
-  const stateFromStores = require("initialize").useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function k() {
-      items = [closure_0(first[6]).DisplayNameEffect.GUMMY];
-      return new Set(items);
-    };
-    cResult[2] = fn2;
-    let tmp9 = fn2;
-  } else {
-    tmp9 = cResult[2];
-  }
-  [first, _slicedToArray] = first1.useState(tmp9);
-  const tmpResult = require("initialize");
-  first1 = _slicedToArray(first1.useState(100), 2)[0];
-  const tmp12 = _slicedToArray(first1.useState(100), 2);
-  const first2 = _slicedToArray(first1.useState("long"), 2)[0];
-  const tmp14 = _slicedToArray(first1.useState("long"), 2);
-  const benchmarkResults = require("FRAME_BUDGET_MS").useBenchmarkResults();
-  ({ results, addMount } = benchmarkResults);
-  addScroll = benchmarkResults.addScroll;
-  const tmpResult3 = require("FRAME_BUDGET_MS");
-  const mountTimer = require("FRAME_BUDGET_MS").useMountTimer();
-  const run = mountTimer.run;
-  const begin = mountTimer.begin;
-  const measure = mountTimer.measure;
-  if (cResult[3] !== addScroll) {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-    cResult[3] = addScroll;
-    cResult[4] = T;
-  } else {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-  }
-  if (cResult[5] !== first2) {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-    const found = arr3.find((key) => key.key === first2);
-    cResult[5] = first2;
-    cResult[6] = found;
-    const tmp19 = found;
-  } else {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-  }
-  const name = tmp19.name;
-  if (cResult[7] !== name) {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-    let splitGraphemesResult = obj5.splitGraphemes(name);
-    cResult[7] = name;
-    cResult[8] = splitGraphemesResult;
-    const arr2 = splitGraphemesResult;
-  } else {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-  }
-  let length = arr2.length;
-  if (cResult[9] !== first) {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-    const found1 = measure.filter((item) => first.has(item));
-    cResult[9] = first;
-    cResult[10] = found1;
-    arr3 = found1;
-  } else {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-  }
-  if (arr3.length === measure.length) {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
-        constructor(arg0) {
-          tmp = addScroll(arg0);
-          return;
-        }
-      }
-      cResult[13] = tmp26;
-      const tmp25 = tmp26;
-    } else {
-      class T {
-        constructor(arg0) {
-          tmp = addScroll(arg0);
-          return;
-        }
-      }
-    }
-    closure_15 = tmp25;
-    if (cResult[14] === begin) {
-      class T {
-        constructor(arg0) {
-          tmp = addScroll(arg0);
-          return;
-        }
-      }
-    }
-    function re() {
-      if (0 !== arr3.length) {
-        const obj = { effects: tmp, effectLabel, rowCount: first1, name, graphemeCount: length };
-        begin(obj);
-      }
-    }
-    cResult[14] = begin;
-    cResult[15] = "All (rotation)";
-    cResult[16] = length;
-    cResult[17] = name;
-    cResult[18] = first1;
-    cResult[19] = arr3;
-    cResult[20] = re;
-  } else {
-    class T {
-      constructor(arg0) {
-        tmp = addScroll(arg0);
-        return;
-      }
-    }
-  }
-}) : (() => {
+export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   let tmp = memo3();
   _require = tmp;
   items = [addScroll];
@@ -404,7 +118,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items1);
   const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
-  const memo1 = first1.useMemo(() => _mod11245.splitGraphemes(memo).length, items3);
+  const memo1 = first1.useMemo(() => _mod11196.splitGraphemes(memo).length, items3);
   const items4 = [first];
   const memo2 = first1.useMemo(() => items.filter((item) => set.has(item)), items4);
   const items5 = [memo2];
@@ -517,8 +231,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj16 = {
         batchKey: run.batchKey,
         onCancel: mountTimer.cancel,
-        onMeasure(arg0) {
-              return closure_16(arg0, run.params);
+        onMeasure(onMeasureTruncated) {
+              return closure_16(onMeasureTruncated, run.params);
             },
         children: null
       };
@@ -529,9 +243,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const length = String(Math.max(run.params.rowCount - 1, 0)).length;
         const padStartResult = String(arg1).padStart(length, "0");
         const StringResult = String(arg1);
-        const tmp = closure_2_8;
-        const tmp2 = closure_16;
-        const splitGraphemesResult = _mod11245.splitGraphemes(run.params.name);
+        const tmp = React6;
+        const tmp2 = BenchmarkRow;
+        const splitGraphemesResult = _mod11196.splitGraphemes(run.params.name);
         let sum = padStartResult;
         if (splitGraphemesResult.length > length) {
           const substr = splitGraphemesResult.slice(0, splitGraphemesResult.length - length);
@@ -541,11 +255,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         obj.style = closure_0.batchRow;
         return tmp(tmp2, obj, arg1);
       });
-      obj15.children = tmp19(tmp2(tmp3[21]).MountMeasure, obj16, run.batchKey);
-      tmp19Result = tmp19(tmp2(tmp3[25]).DisplayNameStylesContext.Provider, obj15);
+      obj15.children = tmp19(tmp2(tmp3[19]).MountMeasure, obj16, run.batchKey);
+      tmp19Result = tmp19(tmp2(tmp3[23]).DisplayNameStylesContext.Provider, obj15);
     }
   }
   items10[3] = tmp19Result;
   obj4.children = tmp21(require("Stack/Stack").Stack, { spacing: 16, children: items10 });
   return run(tmp20, obj4);
-});
+};

@@ -1,16 +1,16 @@
-// Module ID: 10100
-// Function ID: 10101
+// Module ID: 10121
+// Function ID: 10122
 // Name: CreateInviteModalActionCreators
-// Dependencies: [10095, 1078, 577, 1245, 8686, 1119, 2]
+// Dependencies: [10116, 1074, 573, 1241, 8681, 1115, 2]
 
-// Module 10100 (CreateInviteModalActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8686 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10095 */;
+// Module 10121 (CreateInviteModalActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8681 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10116 */;
 
 const require = fn;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/CreateInviteModalActionCreators.tsx");
 
@@ -71,8 +71,8 @@ export default {
       invite1.then(() => {
         DispatcherDefault.dispatch({ type: "CREATE_INVITE_MODAL_GENERATE_INVITE_SUCCESS", channelId });
       }, (message) => {
-        const intl = channelId(1119).intl;
-        message = intl.string(channelId(1119).t.WB1ip6);
+        const intl = channelId(1115).intl;
+        message = intl.string(channelId(1115).t.WB1ip6);
         let message1;
         if (message != null) {
           message1 = message.message;

@@ -1,47 +1,21 @@
-// Module ID: 10397
-// Function ID: 10398
+// Module ID: 11657
+// Function ID: 11658
 // Name: useIsSpamMessageRequest
-// Dependencies: [7499, 558, 568, 504, 2]
+// Dependencies: [7497, 504, 2]
+// Exports: useIsSpamMessageRequest
 
-// Module 10397 (useIsSpamMessageRequest)
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7499 */;
+// Module 11657 (useIsSpamMessageRequest)
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7497 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/hooks/useIsSpamMessageRequest.tsx");
 
-export const useIsSpamMessageRequest = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SpamMessageRequestStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return SpamMessageRequestStore.isSpam(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp7 = items1;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
-  _require = arg0;
+export const useIsSpamMessageRequest = function useIsSpamMessageRequest(id) {
+  _require = id;
   const items = [SpamMessageRequestStore];
-  const items1 = [arg0];
+  const items1 = [id];
   return require("initialize").useStateFromStores(items, () => SpamMessageRequestStore.isSpam(closure_0), items1);
-});
+};

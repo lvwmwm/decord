@@ -1,163 +1,113 @@
 // Module ID: 7104
 // Function ID: 7105
-// Dependencies: [19, 21, 1641, 6899, 7102, 6896, 6906, 7078, 4664]
-// Exports: default
+// Dependencies: [19, 21, 6905, 6906, 6929, 7101, 1637]
 
 // Module 7104
-import value2 from "value2" /* 6896 */;
-import noop_mod from "module_19" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6929 */;
+import noop_mod from "module_19" /* 19 */;
 
 let noop = noop_mod;
-({ useCallback: c2, useMemo: c3, useRef: closure_4 } = noop);
+({ useCallback: c3, useMemo: closure_4, useRef: hasOwnProperty, memo } = noop);
 let noop = noop_mod;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const jsx = jsxProd.jsx;
+const memoResult = memo(function BottomSheetHandleContainerComponent(simultaneousHandlers) {
+  simultaneousHandlers = simultaneousHandlers.simultaneousHandlers;
+  let DEFAULT_ENABLE_HANDLE_PANNING_GESTURE = simultaneousHandlers.enableHandlePanningGesture;
+  ({ animatedIndex, animatedPosition } = simultaneousHandlers);
+  if (DEFAULT_ENABLE_HANDLE_PANNING_GESTURE === undefined) {
+    DEFAULT_ENABLE_HANDLE_PANNING_GESTURE = simultaneousHandlers(handleHeight[2]).DEFAULT_ENABLE_HANDLE_PANNING_GESTURE;
+  }
+  handleHeight = simultaneousHandlers.handleHeight;
+  let handleComponent = simultaneousHandlers.handleComponent;
+  let failOffsetX;
+  ({ handleStyle, handleIndicatorStyle } = simultaneousHandlers);
+  const tmp3 = failOffsetX(null);
+  const bottomSheetInternal = simultaneousHandlers(handleHeight[3]).useBottomSheetInternal();
+  const activeOffsetX = bottomSheetInternal.activeOffsetX;
+  const activeOffsetY = bottomSheetInternal.activeOffsetY;
+  failOffsetX = bottomSheetInternal.failOffsetX;
+  const failOffsetY = bottomSheetInternal.failOffsetY;
+  const waitFor = bottomSheetInternal.waitFor;
+  const simultaneousHandlers2 = bottomSheetInternal.simultaneousHandlers;
+  const obj = simultaneousHandlers(handleHeight[3]);
+  const tmp4 = simultaneousHandlers;
+  const handlePanGestureHandler = simultaneousHandlers(handleHeight[3]).useBottomSheetGestureHandlers().handlePanGestureHandler;
+  let items = [simultaneousHandlers2, simultaneousHandlers];
+  const tmp7 = activeOffsetY(() => {
+    const items = [];
+    if (simultaneousHandlers) {
+      items.push(tmp);
+    }
+    if (simultaneousHandlers2) {
+      const _Array = Array;
+      const push = items.push;
+      if (Array.isArray(tmp3)) {
+        const items1 = [];
+        HermesBuiltin.arraySpread(tmp3, 0);
+        HermesBuiltin.apply(items1, items);
+      } else {
+        push(tmp3);
+      }
+    }
+    return items;
+  }, items);
+  closure_10 = tmp7;
+  let items1 = [activeOffsetX, activeOffsetY, DEFAULT_ENABLE_HANDLE_PANNING_GESTURE, failOffsetX, failOffsetY, tmp7, waitFor, , , , ];
+  ({ handleOnChange: arr2[7], handleOnEnd: arr2[8], handleOnFinalize: arr2[9], handleOnStart: arr2[10] } = handlePanGestureHandler);
+  const items2 = [handleHeight];
+  const obj2 = simultaneousHandlers(handleHeight[3]);
+  const items3 = [handleHeight];
+  const tmp8 = activeOffsetY(() => {
+    const Gesture = LegacyBaseButton.Gesture;
+    const PanResult = Gesture.Pan();
+    const result = Gesture.Pan().enabled(DEFAULT_ENABLE_HANDLE_PANNING_GESTURE).shouldCancelWhenOutside(false);
+    const enabledResult = Gesture.Pan().enabled(DEFAULT_ENABLE_HANDLE_PANNING_GESTURE);
+    const runOnJSResult = result.runOnJS(false);
+    const onStartResult = result.runOnJS(false).onStart(handlePanGestureHandler.handleOnStart);
+    const onChangeResult = result.runOnJS(false).onStart(handlePanGestureHandler.handleOnStart).onChange(handlePanGestureHandler.handleOnChange);
+    const onFinalizeResult = result.runOnJS(false).onStart(handlePanGestureHandler.handleOnStart).onChange(handlePanGestureHandler.handleOnChange).onEnd(handlePanGestureHandler.handleOnEnd).onFinalize(handlePanGestureHandler.handleOnFinalize);
+    let result1 = onFinalizeResult;
+    if (waitFor) {
+      result1 = onFinalizeResult.requireExternalGestureToFail(tmp);
+    }
+    let result2 = result1;
+    if (closure_10) {
+      result2 = result1.simultaneousWithExternalGesture(tmp2);
+    }
+    let activeOffsetXResult = result2;
+    if (activeOffsetX) {
+      activeOffsetXResult = result2.activeOffsetX(tmp3);
+    }
+    let activeOffsetYResult = activeOffsetXResult;
+    if (activeOffsetY) {
+      activeOffsetYResult = activeOffsetXResult.activeOffsetY(tmp4);
+    }
+    let failOffsetXResult = activeOffsetYResult;
+    if (failOffsetX) {
+      failOffsetXResult = activeOffsetYResult.failOffsetX(tmp5);
+    }
+    let failOffsetYResult = failOffsetXResult;
+    if (failOffsetY) {
+      failOffsetYResult = failOffsetXResult.failOffsetY(tmp6);
+    }
+    return failOffsetYResult;
+  }, items1);
+  const tmp9 = activeOffsetX(function handleContainerLayout(nativeEvent) {
+    handleHeight.value = nativeEvent.nativeEvent.layout.height;
+  }, items2);
+  const tmp10 = activeOffsetX((height) => {
+    handleHeight.value = height.height;
+  }, items3);
+  const boundingClientRect = simultaneousHandlers(handleHeight[3]).useBoundingClientRect(tmp3, tmp10);
+  if (handleComponent == null) {
+    handleComponent = DEFAULT_ENABLE_HANDLE_PANNING_GESTURE(tmp5[5]);
+  }
+  const obj4 = { gesture: tmp8, children: null };
+  const obj3 = simultaneousHandlers(handleHeight[3]);
+  obj4.children = failOffsetY(DEFAULT_ENABLE_HANDLE_PANNING_GESTURE(handleHeight[6]).View, { ref: tmp3, onLayout: tmp9, children: failOffsetY(handleComponent, { animatedIndex, animatedPosition, style: handleStyle, indicatorStyle: handleIndicatorStyle }) }, "BottomSheetHandleContainer");
+  return failOffsetY(tmp4(handleHeight[4]).GestureDetector, obj4);
+});
+memoResult.displayName = "BottomSheetHandleContainer";
 
-export default function _default(children) {
-  let sharedValue;
-  let sharedValue1;
-  closure_3 = undefined;
-  let mountSheet;
-  sharedValue = sharedValue(sharedValue1[2]).useSharedValue(sharedValue(sharedValue1[3]).INITIAL_CONTAINER_HEIGHT);
-  let obj = sharedValue(sharedValue1[2]);
-  sharedValue1 = sharedValue(sharedValue1[2]).useSharedValue(sharedValue(sharedValue1[3]).INITIAL_CONTAINER_OFFSET);
-  let tmp3 = closure_3(() => "bottom-sheet-portal-" + sharedValue(sharedValue1[4]).id(), []);
-  const hostName = tmp3;
-  closure_3 = mountSheet([]);
-  const tmp4 = hostName((key, current, arg2) => {
-    closure_0 = key;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    if (-1 === findIndexResult) {
-      let tmp5 = tmp4;
-      if (substr[substr.length - 1]) {
-        tmp5 = !tmp4.willUnmount;
-      }
-      if (tmp5) {
-        if (arg2 === value2.MODAL_STACK_BEHAVIOR.replace) {
-          if (tmp4.ref != null) {
-            const current2 = ref2.current;
-            if (current2 != null) {
-              current2.dismiss();
-            }
-          }
-        } else if (arg2 === tmp7(6896).MODAL_STACK_BEHAVIOR.switch) {
-          if (tmp4.ref != null) {
-            current = ref.current;
-            if (current != null) {
-              current.minimize();
-            }
-          }
-        }
-        tmp7 = require;
-      }
-      if (-1 !== findIndexResult) {
-        substr.splice(findIndexResult, 1);
-        if (current != null) {
-          const current3 = current.current;
-          if (current3 != null) {
-            current3.restore();
-          }
-        }
-      }
-      const obj = { key, ref: current, willUnmount: false };
-      substr.push(obj);
-      closure_3.current = substr;
-    }
-  }, []);
-  mountSheet = tmp4;
-  let tmp5 = hostName((arg0) => {
-    closure_0 = arg0;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    let tmp3 = findIndexResult === substr.length - 1;
-    substr.splice(findIndexResult, 1);
-    closure_3.current = substr;
-    if (tmp3) {
-      tmp3 = closure_3.current.length > 0;
-    }
-    if (tmp3) {
-      tmp3 = tmp5;
-    }
-    if (tmp3) {
-      tmp3 = !tmp5.willUnmount;
-    }
-    if (tmp3) {
-      const ref = tmp.current[tmp.current.length - 1].ref;
-      if (ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.restore();
-        }
-      }
-    }
-  }, []);
-  const unmountSheet = tmp5;
-  const tmp6 = hostName((arg0) => {
-    closure_0 = arg0;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    const diff = substr.length - 1;
-    if (-1 !== findIndexResult) {
-      substr[findIndexResult].willUnmount = true;
-    }
-    if (tmp4) {
-      if (substr[substr.length - 2].ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.restore();
-        }
-      }
-    }
-    closure_3.current = substr;
-  }, []);
-  const willUnmountSheet = tmp6;
-  let tmp7 = hostName((arg0) => {
-    closure_0 = arg0;
-    const current1 = closure_3.current;
-    if (arg0) {
-      let found = current1.find((key) => key.key === closure_0);
-    } else {
-      found = current1[tmp.current.length - 1];
-    }
-    let flag = found;
-    if (flag) {
-      flag = true;
-      if (found.ref != null) {
-        const current = ref.current;
-        flag = true;
-        if (current != null) {
-          current.dismiss();
-          flag = true;
-        }
-      }
-    }
-    return flag;
-  }, []);
-  const dismiss = tmp7;
-  const tmp8 = hostName(() => {
-    let current = closure_3.current;
-    const mapped = current.map((ref) => {
-      if (ref.ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.dismiss();
-        }
-      }
-    });
-  }, []);
-  const dismissAll = tmp8;
-  const items = [tmp7, tmp8];
-  const items1 = [tmp3, sharedValue, sharedValue1, tmp4, tmp5, tmp6];
-  const obj2 = sharedValue(sharedValue1[2]);
-  const tmp9 = closure_3(() => ({ dismiss, dismissAll }), items);
-  const obj3 = { value: tmp9, children: null };
-  const obj4 = { value: closure_3(() => ({ hostName, containerHeight: sharedValue, containerOffset: sharedValue1, mountSheet, unmountSheet, willUnmountSheet }), items1), children: null };
-  const items2 = [unmountSheet(sharedValue(sharedValue1[7]).BottomSheetHostingContainer, { containerOffset: sharedValue1, containerHeight: sharedValue }), unmountSheet(sharedValue(sharedValue1[8]).PortalProvider, { rootHostName: tmp3, children: children.children })];
-  obj4.children = items2;
-  obj3.children = willUnmountSheet(sharedValue(sharedValue1[6]).BottomSheetModalInternalProvider, obj4);
-  return unmountSheet(sharedValue(sharedValue1[6]).BottomSheetModalProvider, obj3);
-};
+export default memoResult;

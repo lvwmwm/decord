@@ -1,15 +1,15 @@
-// Module ID: 4980
-// Function ID: 4981
+// Module ID: 4978
+// Function ID: 4979
 // Name: QualtricsActionCreators
-// Dependencies: [32, 5, 4981, 4984, 4985, 4986, 1078, 1275, 577, 1235, 4987, 2]
+// Dependencies: [32, 5, 4979, 4982, 4983, 4984, 1074, 1271, 573, 1231, 4985, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 4980 (QualtricsActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 4978 (QualtricsActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SurveyStore from "SurveyStore" /* 4981 */;
-import QualtricsStore from "QualtricsStore" /* 4985 */;
+import SurveyStore from "SurveyStore" /* 4979 */;
+import QualtricsStore from "QualtricsStore" /* 4983 */;
 
 require = fn;
 function fetchSurveyDetails() {
@@ -33,7 +33,7 @@ let closure_11 = async function _fetchSurveyDetails(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -114,7 +114,7 @@ let closure_12 = async function _submitSurveyResponse(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -312,10 +312,10 @@ let closure_13 = async function _fireSurveyAction(arg0, arg1) {
   }
   return arg1;
 };
-const useQualtricsResponseStore = fn(4984).useQualtricsResponseStore;
-const QualtricsConstants = fn(4986);
+const useQualtricsResponseStore = fn(4982).useQualtricsResponseStore;
+const QualtricsConstants = fn(4984);
 ({ QuestionSelectorEnum: closure_8, QuestionTypeEnum: closure_9 } = QualtricsConstants);
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/qualtrics/QualtricsActionCreators.tsx");
 

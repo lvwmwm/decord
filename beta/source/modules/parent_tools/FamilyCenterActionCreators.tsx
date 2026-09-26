@@ -1,13 +1,13 @@
-// Module ID: 7818
-// Function ID: 7819
+// Module ID: 7813
+// Function ID: 7814
 // Name: FamilyCenterActionCreators
-// Dependencies: [5, 7819, 7817, 1078, 7820, 577, 1275, 1245, 2029, 1190, 1226, 2]
+// Dependencies: [5, 7814, 7812, 1074, 7815, 573, 1271, 1241, 2025, 1186, 1222, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 7818 (FamilyCenterActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 7813 (FamilyCenterActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7819 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7814 */;
 
 const require = globalThis.__r;
 
@@ -33,7 +33,7 @@ let closure_9 = async function _maybeFetchCollectiblesForInvoices(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -74,7 +74,7 @@ let closure_9 = async function _maybeFetchCollectiblesForInvoices(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp5) {
       c1 = tmp;
@@ -103,7 +103,7 @@ let closure_11 = async function _maybeFetchCollectiblesForGifts(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -139,7 +139,7 @@ let closure_11 = async function _maybeFetchCollectiblesForGifts(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp5) {
       c1 = tmp;
@@ -161,7 +161,7 @@ let closure_12 = async function _updateLinkForUserId(linked_user_id, link_status
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -202,7 +202,7 @@ let closure_12 = async function _updateLinkForUserId(linked_user_id, link_status
           return obj;
         } else {
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         c2 = tmp;
@@ -225,7 +225,7 @@ let closure_13 = async function _removeLinkForUserId(linked_user_id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -266,7 +266,7 @@ let closure_13 = async function _removeLinkForUserId(linked_user_id) {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         c1 = tmp;
@@ -286,7 +286,7 @@ let closure_14 = async function _getLinkCodeForCurrentUser(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -325,7 +325,7 @@ let closure_14 = async function _getLinkCodeForCurrentUser(arg0, value) {
         return obj;
       } else {
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp5) {
       c0 = tmp;
@@ -344,7 +344,7 @@ let closure_15 = async function _shareIarWithParents(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -374,7 +374,7 @@ let closure_15 = async function _shareIarWithParents(arg0, value) {
         return obj;
       } else {
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp8) {
       c0 = tmp;
@@ -382,8 +382,8 @@ let closure_15 = async function _shareIarWithParents(arg0, value) {
     }
   }
 };
-const FamilyCenterAction = fn(7817).FamilyCenterAction;
-const Constants = fn(1078);
+const FamilyCenterAction = fn(7812).FamilyCenterAction;
+const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterActionCreators.tsx");
@@ -401,7 +401,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -657,13 +657,13 @@ export default {
     return (async () => {
       const code = tmp2;
       const recipient_id = tmp5;
-      const HTTP = recipient_id(1275).HTTP;
-      const request = { url: constants.FAMILY_CENTER_LINKED_USERS, body: { recipient_id, code }, rejectWithError: recipient_id(1275).rejectWithMigratedError() };
+      const HTTP = recipient_id(1271).HTTP;
+      const request = { url: constants.FAMILY_CENTER_LINKED_USERS, body: { recipient_id, code }, rejectWithError: recipient_id(1271).rejectWithMigratedError() };
       await HTTP.post(request);
       const body = arg1.body;
       closure_128_1 = { linkedUsers: body.linked_users, users: body.users };
       const merged = Object.assign(closure_128_1);
-      code(577).dispatch({ type: "FAMILY_CENTER_REQUEST_LINK_SUCCESS" });
+      code(573).dispatch({ type: "FAMILY_CENTER_REQUEST_LINK_SUCCESS" });
       return closure_128_1;
     })();
   },
@@ -680,7 +680,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -940,7 +940,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -955,21 +955,21 @@ export default {
               return obj3;
             } else {
               let settings2;
-              const protoFieldClass = tmp5(2029).getProtoFieldClass(tmp5(1190).PreloadedUserSettings, tmp2);
+              const protoFieldClass = tmp5(2025).getProtoFieldClass(tmp5(1186).PreloadedUserSettings, tmp2);
               settings = settings.getSettings(tmp5);
               let tmp13;
               if (settings != null) {
                 tmp13 = settings[tmp36];
               }
-              const tmp33Result = tmp5(2029);
-              const modifiedProto = tmp33Result.createModifiedProto(tmp13, closure_2, protoFieldClass, tmp33(1190).PreloadedUserSettings, tmp36);
+              const tmp33Result = tmp5(2025);
+              const modifiedProto = tmp33Result.createModifiedProto(tmp13, closure_2, protoFieldClass, tmp33(1186).PreloadedUserSettings, tmp36);
               if (null != modifiedProto) {
-                const HTTP = tmp33(1275).HTTP;
+                const HTTP = tmp33(1271).HTTP;
                 const request = { url: closure_1_7.FAMILY_CENTER_TEEN_SETTINGS(tmp5), body: null, rejectWithError: null };
-                const obj4 = { settings: tmp33(1226).protoToB64(tmp33(1190).PreloadedUserSettings, modifiedProto) };
+                const obj4 = { settings: tmp33(1222).protoToB64(tmp33(1186).PreloadedUserSettings, modifiedProto) };
                 request.body = obj4;
-                const tmp33Result3 = tmp33(1226);
-                request.rejectWithError = tmp33(1275).rejectWithMigratedError();
+                const tmp33Result3 = tmp33(1222);
+                request.rejectWithError = tmp33(1271).rejectWithMigratedError();
                 dependencyMap = 1;
                 c3 = 1;
                 const obj5 = { value: HTTP.patch(request), done: false };
@@ -977,7 +977,7 @@ export default {
               } else {
                 c3 = 3;
               }
-              const obj12 = tmp5(2029);
+              const obj12 = tmp5(2025);
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -985,8 +985,8 @@ export default {
           } else if (arg0 !== 2) {
             settings2 = value.body.settings;
             const obj6 = { type: "FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS", userId: closure_129_0, settings: settings2 };
-            tmp2(577).dispatch(obj6);
-            const obj = tmp2(577);
+            tmp2(573).dispatch(obj6);
+            const obj = tmp2(573);
           }
           c3 = 3;
           const obj7 = { value, done: true };

@@ -1,29 +1,24 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16277
+// Function ID: 16278
 // Name: Auth
-// Dependencies: [32, 19, 17, 12598, 1078, 21, 16288, 16289, 5871, 16298, 7280, 7224, 4790, 580, 558, 568, 16339, 7217, 1630, 7248, 16340, 7246, 7278, 1369, 1119, 16341, 7754, 16345, 2]
+// Dependencies: [32, 19, 17, 12696, 1074, 21, 16278, 16279, 5873, 16288, 7279, 7226, 4788, 576, 16329, 7219, 1626, 7250, 16330, 7248, 7277, 1365, 1115, 16331, 7749, 16335, 2]
 
-// Module 16287 (Auth)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7217 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7248 */;
-import StackNavigator from "StackNavigator" /* 7280 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 16288 */;
-import RegistrationUtils from "RegistrationUtils" /* 16298 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 16339 */;
-import AuthManagerDefault from "AuthManager" /* 16341 */;
-import useOrientationLockDefault from "useOrientationLock" /* 16345 */;
+// Module 16277 (Auth)
+import nativeDefault from "native" /* 576 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1626 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7219 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7250 */;
+import StackNavigator from "StackNavigator" /* 7279 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 16278 */;
+import RegistrationUtils from "RegistrationUtils" /* 16288 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 16329 */;
+import _mod16330 from "module_16330" /* 16330 */;
+import AuthManagerDefault from "AuthManager" /* 16331 */;
+import useOrientationLockDefault from "useOrientationLock" /* 16335 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MultiAccountStore from "MultiAccountStore" /* 12598 */;
+import MultiAccountStore from "MultiAccountStore" /* 12696 */;
 
-const util = PX_24(1119);
-const utils_PlatformUtils = PX_24(1369);
-const KeyboardChatScrollView = PX_24(1630);
-const WideAuthScrollContext = PX_24(7246);
-const Navigator = PX_24(7278);
-const _mod16340 = PX_24(16340);
 require = fn;
 function getInitialAuthRouteStack() {
   if (!obj.hasRegistrationHandoff()) {
@@ -38,278 +33,7 @@ function getInitialAuthRouteStack() {
   }
   return items1;
 }
-get_ActivityIndicator = fn(17);
-({ Keyboard: hasOwnProperty, View: metroRequire, StyleSheet } = get_ActivityIndicator);
-const AuthStates = fn(1078).AuthStates;
-const jsxProd = fn(21);
-({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-let RegistrationStepsUtils = fn(16289);
-RegistrationStepsUtils = RegistrationStepsUtils.getAllAuthScreens();
-RegistrationStepsUtils = Object.entries(RegistrationStepsUtils);
-const screens = Object.fromEntries(RegistrationStepsUtils.map((item) => {
-  [tmp, tmp2] = item;
-  const items = [tmp, ];
-  obj = {};
-  let merged = Object.assign(tmp2);
-  obj.headerMode = "screen";
-  let obj2 = null;
-  if (tmp2.fullscreen) {
-    obj2 = { fullscreen: false, headerTransparent: false };
-  }
-  let merged1 = Object.assign(obj2);
-  let tmp6 = null;
-  if (tmp !== AuthStates.MFA) {
-    tmp6 = null;
-    if (tmp !== tmp5.WELCOME) {
-      let obj3 = {
-        headerLeft(arg0) {
-              function backImage() {
-                return closure_1_9(headerLeft(closure_1_2[8]).HeaderBackImage, {});
-              }
-              if (null != headerLeft.headerLeft) {
-                const obj2 = {};
-                const merged = Object.assign(arg0);
-                obj2.backImage = backImage;
-                let headerLeftResult = headerLeft.headerLeft(obj2);
-              } else {
-                const obj3 = {};
-                const merged1 = Object.assign(arg0);
-                obj3.backImage = backImage;
-                headerLeftResult = options(RegistrationUtils.BackButtonWithTracking, obj3);
-              }
-              return headerLeftResult;
-            }
-      };
-      tmp6 = obj3;
-    }
-  }
-  const merged2 = Object.assign(tmp6);
-  const items1 = [, , ];
-  ({ REGISTER_IDENTITY: arr2[0], LOGIN: arr2[1], AGE_GATE_UNDERAGE: arr2[2] } = AuthStates);
-  let tmp8 = null;
-  if (set.has(tmp)) {
-    const obj4 = { cardStyleInterpolator: StackNavigator.CardStyleInterpolators.forFadeFromCenter };
-    tmp8 = obj4;
-  }
-  const merged3 = Object.assign(tmp8);
-  items[1] = obj;
-  return items;
-}));
-let num = 540;
-if (fn(7224).hasWebAuthn) {
-  num = 600;
-}
-let obj = {};
-obj[AuthStates.LOGIN] = num;
-obj[AuthStates.MFA] = 600;
-const createStyles = fn(4790);
-let obj3 = { transparent: { backgroundColor: "transparent" }, cardContainer: { flex: 1, position: "relative", backgroundColor: "transparent" }, wideOuterContainer: { flex: 1, justifyContent: "center" }, wideCard: null, wideHeaderFlat: null, wideHeader: null };
-let size = { backgroundColor: "transparent", borderRadius: nativeDefault.radii.lg, maxWidth: 600, alignSelf: "center", width: "100%", maxHeight: "90%", overflow: "hidden", height: 520 };
-obj3.wideCard = size;
-obj3.wideHeaderFlat = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let obj5 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj3.wideHeader = { borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_16 = createStyles.createStyles(obj3);
-const ReactCompilerGating = fn(558);
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let PX_24 = require;
-  let PX_16 = dependencyMap;
-  obj = c;
-  const cResult = obj.c(18);
-  const isHCaptchaModalOpenTracking = useIsHCaptchaModalOpenTracking.useIsHCaptchaModalOpenTracking();
-  const tmp4 = useWideAuthViewDefault();
-  let wideOuterContainer = closure_16();
-  const first = _slicedToArray(noop.useState(getInitialAuthRouteStack), 1)[0];
-  const tmp5 = _slicedToArray;
-  [tmp7, require] = noop.useState(first[first.length - 1].name);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
-      const result = RegistrationHandoff.clearRegistrationHandoff();
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp8 = fn;
-    tmp9 = items;
-  } else {
-    [tmp8, tmp9] = cResult;
-  }
-  const effect = obj3.useEffect(tmp8, tmp9);
-  const tmp6 = _slicedToArray(noop.useState(first[first.length - 1].name), 2);
-  [tmp12, tmp13] = tmp5(noop.useState(false), 2);
-  importDefault = tmp22Result;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-    cResult[2] = O;
-    const tmp14 = O;
-  } else {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-  }
-  const tmp5Result = tmp5(noop.useState(false), 2);
-  wideHeaderFlat = KeyboardChatScrollView.useKeyboardState(tmp14);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-    cResult[3] = tmp16;
-    let obj9 = tmp16;
-  } else {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-    const obj4 = { backgroundImageSource: _mod16340, backgroundImageCover: true };
-    const tmp19 = closure_9(tmp3(7248), obj4);
-    cResult[4] = tmp19;
-    const tmp17 = tmp19;
-    const tmp3Result = tmp3(7248);
-  } else {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-  }
-  if (cResult[5] === wideHeaderFlat > 200) {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-  }
-  const items1 = [tmp17, ];
-  if (tmp4) {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-    tmp27[0] = tmp22Result;
-    const items2 = [wideOuterContainer.wideOuterContainer, ];
-    let tmp30 = null;
-    if (tmp15) {
-      class O {
-        constructor(arg0) {
-          return arg0.height;
-        }
-      }
-      tmp31[0] = wideHeaderFlat;
-      tmp30 = tmp31;
-    }
-    const obj5 = { style: null, children: null };
-    items2[1] = tmp30;
-    obj5.style = items2;
-    const items3 = [wideOuterContainer.wideCard, , ];
-    let tmp32 = null;
-    if (null != tmp7) {
-      class O {
-        constructor(arg0) {
-          return arg0.height;
-        }
-      }
-      if (obj[tmp7] == null) {
-        class O {
-          constructor(arg0) {
-            return arg0.height;
-          }
-        }
-      }
-      const obj6 = { height: obj[tmp7] };
-      tmp32 = obj6;
-    }
-    items3[1] = tmp32;
-    if (tmp15) {
-      class O {
-        constructor(arg0) {
-          return arg0.height;
-        }
-      }
-    }
-    const obj7 = { style: null, children: null };
-    items3[2] = null;
-    obj7.style = items3;
-    const obj8 = { screens, containerStyle: wideOuterContainer.cardContainer, viewStyle: null, headerStatusBarHeight: 0, cardOverlayEnabled: false, cardShadowEnabled: false, initialRouteStack: null, onWillFocus: null, onStateChange: null, headerStyle: null, headerLeftContainerStyle: null, disableHeaderAnimation: true };
-    if (tmp7 === AuthStates.WELCOME) {
-      class O {
-        constructor(arg0) {
-          return arg0.height;
-        }
-      }
-    }
-    obj8.viewStyle = null;
-    obj8.initialRouteStack = first;
-    obj8.onWillFocus = closure_5.dismiss;
-    obj8.onStateChange = obj9;
-    obj8.headerStyle = tmp12 ? wideOuterContainer.wideHeader : wideOuterContainer.wideHeaderFlat;
-    if (PX_24Result1.isAndroid()) {
-      class O {
-        constructor(arg0) {
-          return arg0.height;
-        }
-      }
-    }
-    obj9 = { paddingLeft: 20, paddingTop: null, paddingBottom: null };
-    PX_24 = tmp3(580).space.PX_24;
-    obj9.paddingTop = PX_24;
-    PX_16 = tmp3(580).space.PX_16;
-    obj9.paddingBottom = PX_16;
-    obj8.headerLeftContainerStyle = obj9;
-    obj7.children = tmp22(Navigator.Navigator, obj8);
-    obj5.children = tmp22(closure_6, obj7);
-    tmp22Result = tmp22(closure_6, obj5);
-    tmp27[1] = tmp22Result;
-    let tmp22Result2 = tmp22(WideAuthScrollContext.WideAuthScrollContext.Provider, tmp27);
-    PX_24Result1 = utils_PlatformUtils;
-  } else {
-    class O {
-      constructor(arg0) {
-        return arg0.height;
-      }
-    }
-    tmp23[0] = RegistrationStepsUtils;
-    ({ transparent: tmp23[1], transparent: tmp23[2] } = wideOuterContainer);
-    const intl = util.intl;
-    tmp23[3] = intl.string(util.t["13/7kX"]);
-    tmp23[4] = first;
-    tmp23[5] = closure_5.dismiss;
-    tmp23[6] = { borderBottomWidth: 0 };
-    tmp22Result2 = tmp22(Navigator.Navigator, tmp23);
-  }
-  items1[1] = tmp22Result2;
-  const PX_24Result = KeyboardChatScrollView;
-  cResult[5] = wideHeaderFlat > 200;
-  cResult[6] = tmp7;
-  cResult[7] = first;
-  cResult[8] = tmp12;
-  cResult[9] = tmp4;
-  cResult[10] = wideHeaderFlat;
-  cResult[11] = wideOuterContainer.cardContainer;
-  cResult[12] = wideOuterContainer.transparent;
-  cResult[13] = wideOuterContainer.wideCard;
-  ({ wideHeader: tmp[14], wideHeaderFlat } = wideOuterContainer);
-  cResult[15] = wideHeaderFlat;
-  wideOuterContainer = wideOuterContainer.wideOuterContainer;
-  cResult[16] = wideOuterContainer;
-  cResult[17] = closure_11(closure_10, { children: items1 });
-}) : (() => {
+function NavigatorWithCaptchaHook() {
   obj = useIsHCaptchaModalOpenTracking;
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp6 = closure_16();
@@ -339,7 +63,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { backgroundImageSource: null, backgroundImageCover: true };
   const tmp15 = closure_11;
   const tmp16 = closure_10;
-  obj3.backgroundImageSource = _mod16340;
+  obj3.backgroundImageSource = _mod16330;
   const children = [closure_9(BackgroundImageDefault, obj3), ];
   if (tmp5) {
     const obj5 = { value: tmp11, children: null };
@@ -382,28 +106,100 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj11.headerStyle = tmp10[0] ? tmp6.wideHeader : tmp6.wideHeaderFlat;
     let num2 = 20;
     if (tmpResult.isAndroid()) {
-      num2 = tmp4(580).space.PX_12;
+      num2 = tmp4(576).space.PX_12;
     }
-    const obj12 = { paddingLeft: num2, paddingTop: tmp4(580).space.PX_24, paddingBottom: tmp4(580).space.PX_16 };
+    const obj12 = { paddingLeft: num2, paddingTop: tmp4(576).space.PX_24, paddingBottom: tmp4(576).space.PX_16 };
     obj11.headerLeftContainerStyle = obj12;
-    obj10.children = tmp17(tmp(7278).Navigator, obj11);
+    obj10.children = tmp17(tmp(7277).Navigator, obj11);
     obj7.children = tmp17(closure_6, obj10);
     obj5.children = tmp17(closure_6, obj7);
-    let tmp17Result = tmp17(tmp(7246).WideAuthScrollContext.Provider, obj5);
-    tmpResult = tmp(1369);
+    let tmp17Result = tmp17(tmp(7248).WideAuthScrollContext.Provider, obj5);
+    tmpResult = tmp(1365);
   } else {
     const obj13 = { screens: RegistrationStepsUtils, viewStyle: null, containerStyle: null, headerBackTitle: null, initialRouteStack: null, onWillFocus: null, headerStyle: null };
     ({ transparent: obj4.viewStyle, transparent: obj4.containerStyle } = tmp6);
-    const intl = tmp(1119).intl;
-    obj13.headerBackTitle = intl.string(tmp(1119).t["13/7kX"]);
+    const intl = tmp(1115).intl;
+    obj13.headerBackTitle = intl.string(tmp(1115).t["13/7kX"]);
     obj13.initialRouteStack = first;
     obj13.onWillFocus = closure_5.dismiss;
     obj13.headerStyle = { borderBottomWidth: 0 };
-    tmp17Result = tmp17(tmp(7278).Navigator, obj13);
+    tmp17Result = tmp17(tmp(7277).Navigator, obj13);
   }
   children[1] = tmp17Result;
   return tmp15(tmp16, { children });
-});
+}
+get_ActivityIndicator = fn(17);
+({ Keyboard: hasOwnProperty, View: metroRequire, StyleSheet } = get_ActivityIndicator);
+const AuthStates = fn(1074).AuthStates;
+const jsxProd = fn(21);
+({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
+let RegistrationStepsUtils = fn(16279);
+RegistrationStepsUtils = RegistrationStepsUtils.getAllAuthScreens();
+RegistrationStepsUtils = Object.entries(RegistrationStepsUtils);
+const screens = Object.fromEntries(RegistrationStepsUtils.map((item) => {
+  [tmp, tmp2] = item;
+  const items = [tmp, ];
+  obj = {};
+  let merged = Object.assign(tmp2);
+  obj.headerMode = "screen";
+  let obj2 = null;
+  if (tmp2.fullscreen) {
+    obj2 = { fullscreen: false, headerTransparent: false };
+  }
+  let merged1 = Object.assign(obj2);
+  let tmp6 = null;
+  if (tmp !== AuthStates.MFA) {
+    tmp6 = null;
+    if (tmp !== tmp5.WELCOME) {
+      let obj3 = {
+        headerLeft(arg0) {
+              function backImage() {
+                return closure_1_9(headerLeft(closure_1_2[8]).HeaderBackImage, {});
+              }
+              if (null != headerLeft.headerLeft) {
+                const obj2 = {};
+                const merged = Object.assign(arg0);
+                obj2.backImage = backImage;
+                let headerLeftResult = headerLeft.headerLeft(obj2);
+              } else {
+                const obj3 = {};
+                const merged1 = Object.assign(arg0);
+                obj3.backImage = backImage;
+                headerLeftResult = React7(RegistrationUtils.BackButtonWithTracking, obj3);
+              }
+              return headerLeftResult;
+            }
+      };
+      tmp6 = obj3;
+    }
+  }
+  const merged2 = Object.assign(tmp6);
+  const items1 = [, , ];
+  ({ REGISTER_IDENTITY: arr2[0], LOGIN: arr2[1], AGE_GATE_UNDERAGE: arr2[2] } = AuthStates);
+  let tmp8 = null;
+  if (set.has(tmp)) {
+    const obj4 = { cardStyleInterpolator: StackNavigator.CardStyleInterpolators.forFadeFromCenter };
+    tmp8 = obj4;
+  }
+  const merged3 = Object.assign(tmp8);
+  items[1] = obj;
+  return items;
+}));
+let num = 540;
+if (fn(7226).hasWebAuthn) {
+  num = 600;
+}
+let obj = {};
+obj[AuthStates.LOGIN] = num;
+obj[AuthStates.MFA] = 600;
+const createStyles = fn(4788);
+let obj3 = { transparent: { backgroundColor: "transparent" }, cardContainer: { flex: 1, position: "relative", backgroundColor: "transparent" }, wideOuterContainer: { flex: 1, justifyContent: "center" }, wideCard: null, wideHeaderFlat: null, wideHeader: null };
+let size = { backgroundColor: "transparent", borderRadius: nativeDefault.radii.lg, maxWidth: 600, alignSelf: "center", width: "100%", maxHeight: "90%", overflow: "hidden", height: 520 };
+obj3.wideCard = size;
+obj3.wideHeaderFlat = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let obj5 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj3.wideHeader = { borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let closure_16 = createStyles.createStyles(obj3);
 const context = noop.createContext(() => {
 
 });
@@ -414,11 +210,11 @@ let result = size.fileFinishedImporting("modules/auth/native/components/Auth.tsx
 export default noop.memo(function Auth() {
   const effect = noop.useEffect(() => {
     AuthManagerDefault.initialize();
-    return () => closure_1_1(dependencyMap[25]).terminate();
+    return () => closure_1_1(dependencyMap[23]).terminate();
   }, []);
-  const layoutEffect = noop.useLayoutEffect(() => closure_0(7754).trackAppUIViewed(), []);
+  const layoutEffect = noop.useLayoutEffect(() => closure_0(7749).trackAppUIViewed(), []);
   useOrientationLockDefault();
   closure_0 = noop.useRef(undefined);
-  return closure_9(context.Provider, { value: noop.useCallback(() => RegistrationUtils.getTrackRegTransition(closure_0), [])(), children: closure_9(closure_17, {}) });
+  return closure_9(context.Provider, { value: noop.useCallback(() => RegistrationUtils.getTrackRegTransition(closure_0), [])(), children: closure_9(NavigatorWithCaptchaHook, {}) });
 });
 export const TrackRegistrationContext = context;

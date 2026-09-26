@@ -1,25 +1,25 @@
-// Module ID: 14720
-// Function ID: 14721
+// Module ID: 14710
+// Function ID: 14711
 // Name: ICYMISessionStore
-// Dependencies: [4706, 1239, 8661, 502, 8643, 1259, 8667, 504, 577, 2]
+// Dependencies: [4703, 1235, 8656, 502, 8638, 1255, 8662, 504, 573, 2]
 // Exports: resetGlobalState
 
-// Module 14720 (ICYMISessionStore)
+// Module 14710 (ICYMISessionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import v1 from "v1" /* 1259 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 8667 */;
-import ExperimentStore from "ExperimentStore" /* 4706 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
-import LabFeatureStore from "LabFeatureStore" /* 8661 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import v1 from "v1" /* 1255 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 8662 */;
+import ExperimentStore from "ExperimentStore" /* 4703 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+import LabFeatureStore from "LabFeatureStore" /* 8656 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ICYMIStore from "ICYMIStore" /* 8643 */;
+import ICYMIStore from "ICYMIStore" /* 8638 */;
 
 require = fn;
 let c7 = 300000;
 let c8 = null;
 let closure_9 = [];
-const v65535 = 0;
+let c10 = 0;
 let map = new Map();
 class ICYMISession {
   constructor() {
@@ -222,7 +222,7 @@ prototype["trackItemsLongImpression"] = function trackItemsLongImpression(items)
     obj.isDwelling = null != tmp4;
     ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, uxVariation } = tmp7);
     if (uxVariation == null) {
-      uxVariation = tmp11(8667).DEFAULT_UX_VARIATION;
+      uxVariation = tmp11(8662).DEFAULT_UX_VARIATION;
     }
     obj.uxVariation = uxVariation;
     obj.sessionImpressionIndex = tmp7.sessionImpressionIndex;
@@ -410,7 +410,7 @@ prototype["_endImpression"] = function _endImpression(itemId) {
     obj.itemCardHeight = itemCardHeight;
     let DEFAULT_UX_VARIATION = tmp2.uxVariation;
     if (DEFAULT_UX_VARIATION == null) {
-      DEFAULT_UX_VARIATION = tmp5(8667).DEFAULT_UX_VARIATION;
+      DEFAULT_UX_VARIATION = tmp5(8662).DEFAULT_UX_VARIATION;
     }
     obj.uxVariation = DEFAULT_UX_VARIATION;
     ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, sessionImpressionIndex: obj.sessionImpressionIndex } = tmp2);

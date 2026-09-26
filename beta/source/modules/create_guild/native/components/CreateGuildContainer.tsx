@@ -1,21 +1,21 @@
-// Module ID: 12517
-// Function ID: 12518
+// Module ID: 12616
+// Function ID: 12617
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 2100, 1376, 1078, 21, 4790, 5929, 5770, 5388, 12504, 5771, 2059, 10121, 7403, 12518, 2]
+// Dependencies: [5, 32, 19, 2096, 1372, 1074, 21, 4788, 5931, 5768, 5386, 12603, 5769, 2055, 10142, 7400, 12617, 2]
 // Exports: default
 
-// Module 12517 (CreateGuildContainer)
+// Module 12616 (CreateGuildContainer)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 2100 */;
-import UserStore from "UserStore" /* 1376 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
-const UPLOAD_MEDIUM_SIZE = fn(1078).UPLOAD_MEDIUM_SIZE;
+const UPLOAD_MEDIUM_SIZE = fn(1074).UPLOAD_MEDIUM_SIZE;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5929).NAV_BAR_HEIGHT } };
+const createStyles = fn(4788);
+let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5931).NAV_BAR_HEIGHT } };
 let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/create_guild/native/components/CreateGuildContainer.tsx");
@@ -67,7 +67,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -102,7 +102,7 @@ export default function CreateGuildContainer(onCreate) {
             closure_129_6(base64);
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         c3 = tmp;
@@ -122,7 +122,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

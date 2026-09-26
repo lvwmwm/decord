@@ -1,134 +1,30 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 11506
+// Function ID: 11507
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1078, 21, 4790, 580, 558, 568, 4657, 11502, 1245, 4970, 4757, 11507, 7800, 7802, 4786, 2]
+// Dependencies: [19, 1074, 21, 4788, 576, 4784, 4654, 11507, 1241, 4968, 4755, 11512, 7795, 7797, 2]
 
-// Module 11501 (UserProfileAboutMeCardCommand)
-import nativeDefault from "native" /* 580 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11502 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11507 */;
+// Module 11506 (UserProfileAboutMeCardCommand)
+import nativeDefault from "native" /* 576 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11507 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11512 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxs = fn(21).jsxs;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { commandClickable: { color: nativeDefault.colors.MENTION_FOREGROUND, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, marginEnd: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_12 } };
 let closure_5 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
 let obj3 = { color: nativeDefault.colors.MENTION_FOREGROUND, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, marginEnd: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_12 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCardCommand.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
-  const cResult = application(channel[6]).c(12);
-  application = application.application;
-  const command = application.command;
-  channel = application.channel;
-  const tmp4 = closure_5();
-  if (cResult[0] === application) {
-    if (cResult[1] === channel) {
-      if (cResult[2] === command) {
-        let tmp5 = cResult[3];
-      }
-      if (cResult[4] === command.displayName) {
-        if (cResult[5] === command.id) {
-          let tmp6 = cResult[6];
-        }
-        if (cResult[7] === command.displayName) {
-          if (cResult[8] === tmp4.commandClickable) {
-            if (cResult[9] === tmp5) {
-              if (cResult[10] === tmp6) {
-                let tmp7 = cResult[11];
-              }
-              return tmp7;
-            }
-          }
-        }
-        let obj2 = { variant: "text-md/bold", onPress: tmp5, onLongPress: tmp6, style: tmp4.commandClickable, children: null };
-        const items = ["/", command.displayName];
-        obj2.children = items;
-        const tmp9 = jsxs(application(channel[15]).Text, { variant: "text-md/bold", onPress: tmp5, onLongPress: tmp6, style: tmp4.commandClickable, children: null });
-        cResult[7] = command.displayName;
-        cResult[8] = tmp4.commandClickable;
-        cResult[9] = tmp5;
-        cResult[10] = tmp6;
-        cResult[11] = tmp9;
-        tmp7 = tmp9;
-      }
-      const fn2 = function s() {
-        return MarkupReactCommandRule.handleLongPressCommandMention(command.displayName, command.id);
-      };
-      cResult[4] = command.displayName;
-      cResult[5] = command.id;
-      cResult[6] = fn2;
-      tmp6 = fn2;
-    }
-  }
-  const fn = function c() {
-    const bestActiveInput = application(channel[7]).getBestActiveInput();
-    let obj = application(channel[7]);
-    let obj2 = { channelId: channel.id, currentText: null, commandId: null, commandName: null, onOpenCustomKeyboard: null, onSetCommand: null };
-    let str;
-    if (bestActiveInput != null) {
-      str = bestActiveInput.getText();
-    }
-    if (str == null) {
-      str = "";
-    }
-    obj2.currentText = str;
-    ({ id: obj4.commandId, displayName: obj4.commandName } = command);
-    obj2.onOpenCustomKeyboard = function onOpenCustomKeyboard(arg0) {
-      let openCustomKeyboardResult;
-      if (bestActiveInput != null) {
-        openCustomKeyboardResult = bestActiveInput.openCustomKeyboard(arg0);
-      }
-      return openCustomKeyboardResult;
-    };
-    obj2.onSetCommand = function onSetCommand() {
-      let id;
-      if (application != null) {
-        id = tmp3.id;
-      }
-      const obj = AnalyticsUtilsDefault;
-      const obj2 = { application_id: id, command_id: command.id, guild_id: channel.getGuildId() };
-      const tmp5 = command;
-      const tmp6 = channel;
-      const merged = Object.assign(AppAnalyticsUtils.collectChannelAnalyticsMetadata(channel));
-      obj.track(AnalyticEvents.POPULAR_APPLICATION_COMMAND_CLICKED, obj2);
-      ActionSheetActionCreatorsDefault.hideAllActionSheets();
-      navigateToLastChannelDefault();
-      if (bestActiveInput != null) {
-        obj5.openSystemKeyboard();
-      }
-      if (bestActiveInput != null) {
-        const applicationCommandManager = obj5.getApplicationCommandManager();
-        if (applicationCommandManager != null) {
-          const obj4 = { channelId: tmp6.id, command: tmp5, section: null, location: null };
-          let applicationCommandSection = null;
-          if (null != tmp3) {
-            applicationCommandSection = tmp7(7800).getApplicationCommandSection(tmp3);
-            const tmp7Result = tmp7(7800);
-          }
-          obj4.section = applicationCommandSection;
-          obj4.location = tmp7(7802).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
-          applicationCommandManager.setCommand(obj4);
-        }
-      }
-    };
-    const result = application(channel[8]).handleTapCommandMention(obj2);
-  };
-  cResult[0] = application;
-  cResult[1] = channel;
-  cResult[2] = command;
-  cResult[3] = fn;
-  tmp5 = fn;
-}) : ((channel) => {
+export default noop.memo(function UserProfileAboutMeCardCommand(channel) {
   ({ application: require, command } = channel);
   channel = channel.channel;
   let obj = {
@@ -175,11 +71,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
             const obj4 = { channelId: tmp6.id, command: tmp5, section: null, location: null };
             let applicationCommandSection = null;
             if (null != tmp3) {
-              applicationCommandSection = tmp7(7800).getApplicationCommandSection(tmp3);
-              const tmp7Result = tmp7(7800);
+              applicationCommandSection = tmp7(7795).getApplicationCommandSection(tmp3);
+              const tmp7Result = tmp7(7795);
             }
             obj4.section = applicationCommandSection;
-            obj4.location = tmp7(7802).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
+            obj4.location = tmp7(7797).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
             applicationCommandManager.setCommand(obj4);
           }
         }
@@ -238,11 +134,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
             const obj4 = { channelId: tmp6.id, command: tmp5, section: null, location: null };
             let applicationCommandSection = null;
             if (null != tmp3) {
-              applicationCommandSection = tmp7(7800).getApplicationCommandSection(tmp3);
-              const tmp7Result = tmp7(7800);
+              applicationCommandSection = tmp7(7795).getApplicationCommandSection(tmp3);
+              const tmp7Result = tmp7(7795);
             }
             obj4.section = applicationCommandSection;
-            obj4.location = tmp7(7802).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
+            obj4.location = tmp7(7797).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
             applicationCommandManager.setCommand(obj4);
           }
         }
@@ -255,4 +151,4 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
     style: closure_5().commandClickable,
     children: null
   });
-}));
+});

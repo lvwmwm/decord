@@ -1,77 +1,20 @@
-// Module ID: 13745
-// Function ID: 13746
+// Module ID: 13735
+// Function ID: 13736
 // Name: useReferralIncentiveEligibility
-// Dependencies: [4456, 558, 568, 8352, 13744, 504, 2]
+// Dependencies: [4452, 8347, 13734, 504, 2]
+// Exports: useReferralIncentiveEligibility
 
-// Module 13745 (useReferralIncentiveEligibility)
+// Module 13735 (useReferralIncentiveEligibility)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8352 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13744 */;
-import SubscriptionStore from "SubscriptionStore" /* 4456 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8347 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13734 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useReferralIncentiveEligibility.tsx");
 
-export const useReferralIncentiveEligibility = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch) => {
-  const cResult = c.c(6);
-  preventFetch = preventFetch.preventFetch;
-  let tmp4 = undefined === preventFetch;
-  if (!tmp4) {
-    tmp4 = preventFetch;
-  }
-  const isEligibleSenderForReferralProgram = useIsEligibleSenderForReferralProgram.useIsEligibleSenderForReferralProgram(tmp4);
-  const tmpResult = useIsEligibleSenderForReferralProgram;
-  const premiumReferralIncentivesVariant = PremiumReferralIncentivesExperiment.usePremiumReferralIncentivesVariant(preventFetch.location);
-  ({ referralRewardType, useAltReferralCardArt } = premiumReferralIncentivesVariant);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SubscriptionStore];
-    const fn = function s() {
-      return premiumTypeSubscription.getPremiumTypeSubscription();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp7 = items;
-    tmp8 = fn;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  const tmpResult3 = PremiumReferralIncentivesExperiment;
-  const stateFromStores = initialize.useStateFromStores(tmp7, tmp8);
-  let tmp13 = true === isEligibleSenderForReferralProgram;
-  let tmp14 = tmp13;
-  if (tmp13) {
-    tmp14 = referralRewardType === tmp(13744).ReferralRewardType.ORBS;
-  }
-  if (tmp13) {
-    tmp13 = referralRewardType === tmp(13744).ReferralRewardType.DISCOUNT;
-  }
-  if (tmp13) {
-    tmp13 = tmp11;
-  }
-  if (tmp13) {
-    tmp13 = tmp12;
-  }
-  if (!tmp14) {
-    tmp14 = tmp13;
-  }
-  if (cResult[2] === referralRewardType) {
-    if (cResult[3] === tmp14) {
-      if (cResult[4] === useAltReferralCardArt) {
-        let tmp15 = cResult[5];
-      }
-      return tmp15;
-    }
-  }
-  const obj2 = { isEligibleForIncentive: tmp14, referralRewardType, useAltReferralCardArt };
-  cResult[2] = referralRewardType;
-  cResult[3] = tmp14;
-  cResult[4] = useAltReferralCardArt;
-  cResult[5] = obj2;
-  tmp15 = obj2;
-}) : ((preventFetch) => {
+export const useReferralIncentiveEligibility = function useReferralIncentiveEligibility(preventFetch) {
   let flag = preventFetch.preventFetch;
   if (flag === undefined) {
     flag = true;
@@ -84,10 +27,10 @@ export const useReferralIncentiveEligibility = ReactCompilerGating.isReactCompil
   let tmp8 = true === isEligibleSenderForReferralProgram;
   let isEligibleForIncentive = tmp8;
   if (tmp8) {
-    isEligibleForIncentive = referralRewardType === tmp(13744).ReferralRewardType.ORBS;
+    isEligibleForIncentive = referralRewardType === tmp(13734).ReferralRewardType.ORBS;
   }
   if (tmp8) {
-    tmp8 = referralRewardType === tmp(13744).ReferralRewardType.DISCOUNT;
+    tmp8 = referralRewardType === tmp(13734).ReferralRewardType.DISCOUNT;
   }
   if (tmp8) {
     tmp8 = tmp6;
@@ -99,4 +42,4 @@ export const useReferralIncentiveEligibility = ReactCompilerGating.isReactCompil
     isEligibleForIncentive = tmp8;
   }
   return { isEligibleForIncentive, referralRewardType, useAltReferralCardArt };
-});
+};

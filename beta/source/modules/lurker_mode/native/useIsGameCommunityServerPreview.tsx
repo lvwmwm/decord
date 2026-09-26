@@ -1,52 +1,20 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16446
+// Function ID: 16447
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [4432, 1078, 558, 568, 504, 2]
-// Exports: isGameCommunityServerPreview
+// Dependencies: [4428, 1074, 504, 2]
+// Exports: default, isGameCommunityServerPreview
 
-// Module 16453 (useIsGameCommunityServerPreview)
-import LurkingStore from "LurkingStore" /* 4432 */;
+// Module 16446 (useIsGameCommunityServerPreview)
+import LurkingStore from "LurkingStore" /* 4428 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const JoinGuildSources = fn(1078).JoinGuildSources;
-const ReactCompilerGating = fn(558);
+const JoinGuildSources = fn(1074).JoinGuildSources;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/lurker_mode/native/useIsGameCommunityServerPreview.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LurkingStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(closure_0);
-      let type;
-      if (lurkingSourceForGuild != null) {
-        type = lurkingSourceForGuild.type;
-      }
-      return type === JoinGuildSources.GAME_COMMUNITY_UPSELL;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp7 = items1;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+export default function useIsGameCommunityServerPreview(arg0) {
   _require = arg0;
   const items = [LurkingStore];
   const items1 = [arg0];
@@ -58,7 +26,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return type === JoinGuildSources.GAME_COMMUNITY_UPSELL;
   }, items1);
-});
+};
 export const isGameCommunityServerPreview = function isGameCommunityServerPreview(id) {
   const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(id);
   let type;

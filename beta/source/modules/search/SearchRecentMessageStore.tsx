@@ -1,11 +1,11 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12626
+// Function ID: 12627
 // Name: SearchRecentMessageStore
-// Dependencies: [5012, 504, 577, 2]
+// Dependencies: [5010, 504, 573, 2]
 
-// Module 12527 (SearchRecentMessageStore)
+// Module 12626 (SearchRecentMessageStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const require = fn;
 function handleReset() {

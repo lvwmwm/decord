@@ -1,175 +1,443 @@
 // Module ID: 1158
 // Function ID: 1159
-// Dependencies: [1159, 1161, 1162, 1169, 1174, 1176, 1177, 1178, 1179]
+// Dependencies: [93, 95, 98, 158, 42, 41, 1159, 1160]
 
 // Module 1158
-import astFormatter from "astFormatter" /* 1169 */;
+import c2 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-const require = globalThis.__r;
-
-const self = this;
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (self2) {
-  let fn = self;
-  if (self) {
-    fn = self.__exportStar;
+const MissingValueError = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  if (!fn) {
-    fn = (obj, exports) => {
-      for (const key10007 in arg0) {
-        let tmp6 = "default" === key10007;
-        if (tmp6) {
-          if (tmp6) {
-            continue;
-          } else {
-            let tmp4 = self2(arg1, arg0, key10007);
-            continue;
-          }
-          continue;
+}
+function isRichTextTag(arg0) {
+  return "$" === arg0[0];
+}
+function bindFormatValuesWithBuilder(builder) {
+  let length;
+  let sum;
+  builder = builder.builder;
+  ({ originalMessage: dependencyMap, nodes } = builder);
+  ({ locales: _getPrototypeOf, values: _classCallCheck, dataFormatters: _isNativeReflectConstruct, formatConfig: isRichTextTag, currentPluralValue: closure_7, keyPrefix: bindFormatValuesWithBuilder } = builder);
+  if (1 === nodes.length) {
+    if (typeof nodes[0] === "string") {
+      builder.pushLiteralText(nodes[0]);
+    }
+  }
+  c9 = 0;
+  let num = 0;
+  if (0 < nodes.length) {
+    do {
+      let tmp = (function _loop() {
+        if (typeof nodes[v0] === "string") {
+          builder.pushLiteralText(tmp2);
+          return 0;
         } else {
-          let _Object = Object;
-          hasOwnProperty = Object.prototype.hasOwnProperty;
-          let call = hasOwnProperty.call;
-          if (typeof call === "unknown") {
-            let hasOwnPropertyResult = hasOwnProperty(key10007);
+          const first = tmp2[0];
+          if (first === builder(originalMessage[6]).FormatJsNodeType.Pound) {
+            if (typeof currentPluralValue === "number") {
+              builder.pushLiteralText(dataFormatters.formatNumber(tmp93));
+            }
+            return 0;
           } else {
-            hasOwnPropertyResult = call(arg1, key10007);
+            if (!(tmp2[1] in values)) {
+              if (!formatConfig(tmp100)) {
+                const tmp10 = new currentPluralValue(tmp100, closure_1, first);
+                throw tmp10;
+              }
+            }
+            builder = tmp12;
+            if (tmp98(tmp99[6]).FormatJsNodeType.Argument === first) {
+              if (typeof tmp12 !== "object") {
+                if (typeof tmp12 !== "function") {
+                  const _String = String;
+                  builder.pushLiteralText(String(tmp12));
+                }
+              }
+              builder.pushObject(tmp12);
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Date === first) {
+              if (tmp2[2] in formatConfig.date) {
+                let result = formatConfig.date[tmp83];
+              } else if (null != tmp83) {
+                result = tmp98(tmp99[7]).parseDateTimeSkeleton(tmp83);
+              }
+              builder.pushLiteralText(dataFormatters.formatDate(tmp12, result));
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Time === first) {
+              if (tmp2[2] in formatConfig.time) {
+                let result1 = formatConfig.time[tmp76];
+              } else if (null != tmp76) {
+                result1 = tmp98(tmp99[7]).parseDateTimeSkeleton(tmp76);
+              }
+              builder.pushLiteralText(dataFormatters.formatTime(tmp12, result1));
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Number === first) {
+              if (tmp2[2] in formatConfig.number) {
+                let parseNumberSkeletonResult = formatConfig.number[tmp67];
+              } else if (null != tmp67) {
+                parseNumberSkeletonResult = tmp98(tmp99[7]).parseNumberSkeleton(tmp98(tmp99[7]).parseNumberSkeletonFromString(tmp67));
+              }
+              let result2 = tmp12;
+              if (typeof tmp12 === "number") {
+                let scale;
+                if (null != parseNumberSkeletonResult) {
+                  scale = parseNumberSkeletonResult.scale;
+                }
+                let num5 = 1;
+                if (null !== scale) {
+                  num5 = 1;
+                  if (undefined !== scale) {
+                    num5 = scale;
+                  }
+                }
+                result2 = tmp12 * num5;
+              }
+              builder.pushLiteralText(dataFormatters.formatNumber(result2, parseNumberSkeletonResult));
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Tag === first) {
+              const obj2 = { Builder: builder.constructor, nodes: tmp2[2], locales, dataFormatters, formatConfig, values: tmp101, currentPluralValue, keyPrefix: null };
+              const _HermesInternal5 = HermesInternal;
+              obj2.keyPrefix = "" + keyPrefix + "." + tmp;
+              const tmp49 = v0(obj2);
+              if (null != tmp2[3]) {
+                const obj3 = { Builder: obj6.constructor, nodes: tmp40, locales: tmp43, dataFormatters: tmp44, formatConfig: tmp45, values: tmp101, currentPluralValue: tmp46, keyPrefix: null };
+                const _HermesInternal6 = HermesInternal;
+                obj3.keyPrefix = "" + tmp47 + "." + tmp + "-control";
+                let items1 = tmp41(obj3);
+              } else {
+                items1 = [];
+              }
+              if (formatConfig(tmp100)) {
+                obj6.pushRichTextTag(tmp100, tmp49, items1);
+              } else if (typeof tmp12 !== "function") {
+                const _HermesInternal7 = HermesInternal;
+                throw "expected a function type for a Tag formatting value, " + tmp100 + ". got " + typeof tmp12 + ": " + tmp12;
+              } else {
+                const _HermesInternal8 = HermesInternal;
+                const tmp12Result = tmp12(tmp49, "" + tmp47 + "." + tmp);
+                const _Array = Array;
+                let tmp55 = tmp12Result;
+                if (!Array.isArray(tmp12Result)) {
+                  const items = [tmp12Result];
+                  tmp55 = items;
+                }
+                for (const item10128 of tmp55) {
+                  let tmp58 = item10128;
+                  if (typeof item10128 === "string") {
+                    let pushLiteralTextResult6 = builder.pushLiteralText(tmp58);
+                  } else {
+                    let pushObjectResult1 = builder.pushObject(tmp58);
+                  }
+                  continue;
+                }
+              }
+              tmp41 = v0;
+              tmp43 = locales;
+              tmp44 = dataFormatters;
+              tmp45 = formatConfig;
+              tmp46 = currentPluralValue;
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Select === first) {
+              const tmp26 = tmp12 in tmp2[2] ? tmp2[2][tmp12] : tmp2[2].other;
+              if (null == tmp26) {
+                const _Object2 = Object;
+                const keys = Object.keys(tmp25);
+                const _HermesInternal4 = HermesInternal;
+                throw "" + tmp12 + " is not a known option for select value " + tmp100 + ". Valid options are " + keys.join(", ");
+              } else {
+                const obj4 = { builder, nodes: tmp26, locales, dataFormatters, formatConfig, values: tmp101, keyPrefix: null };
+                const _HermesInternal3 = HermesInternal;
+                obj4.keyPrefix = "" + keyPrefix + "." + tmp;
+                keyPrefix(obj4);
+              }
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Plural === first) {
+              closure_1 = tmp102;
+              nodes = tmp103;
+              locales = tmp2[4];
+              const tmp104 = (() => {
+                const combined = "=" + closure_0;
+                if (combined in closure_1) {
+                  return tmp3[combined];
+                } else {
+                  const obj = { type };
+                  const pluralRules = dataFormatters.getPluralRules(obj);
+                  let num = 0;
+                  if (null != closure_2) {
+                    num = closure_2;
+                  }
+                  let other = tmp3[pluralRules.select(pluralRules, tmp - num)];
+                  if (null === other) {
+                    other = tmp3.other;
+                  }
+                  return other;
+                }
+                tmp = closure_0;
+              })();
+              if (null == tmp104) {
+                const _Object = Object;
+                const keys1 = Object.keys(tmp102);
+                const _HermesInternal2 = HermesInternal;
+                throw "" + tmp12 + " is not a known option for plural value " + tmp100 + ". Valid options are " + keys1.join(", ");
+              } else {
+                let obj = { builder, nodes: tmp104, locales, dataFormatters, formatConfig, values: tmp101, currentPluralValue: null, keyPrefix: null };
+                let num2 = 0;
+                if (null != tmp103) {
+                  num2 = tmp103;
+                }
+                obj.currentPluralValue = tmp12 - num2;
+                const _HermesInternal = HermesInternal;
+                obj.keyPrefix = "" + keyPrefix + "." + tmp;
+                keyPrefix(obj);
+              }
+            }
           }
         }
-      }
-    };
+      })();
+      sum = num + 1;
+      c9 = sum;
+      num = sum;
+      length = nodes.length;
+    } while (sum < length);
   }
-  const _Object2 = Object;
-  exports.makeDataFormatters = undefined;
-  exports.dataFormatterCache = undefined;
-  exports.FormatBuilder = undefined;
-  exports.bindFormatValues = undefined;
-  exports.runtimeHashMessageKey = undefined;
-  exports.IntlManager = undefined;
-  exports.DEFAULT_LOCALE = undefined;
-  exports.InternalIntlMessage = undefined;
-  exports.createLoader = undefined;
-  exports.loadAllMessagesInLocale = undefined;
-  exports.waitForAllDefaultIntlMessagesLoaded = undefined;
-  exports.MessageLoader = undefined;
-  exports.chainMessagesObjects = undefined;
-  exports.makeMessagesProxy = undefined;
-  const _Object3 = Object;
-  let obj = {
-    enumerable: true,
-    get() {
-        return require("DEFAULT_FORMAT_CONFIG").makeDataFormatters;
-      }
-  };
-  Object.defineProperty(exports, "makeDataFormatters", obj);
-  const _Object4 = Object;
-  const obj2 = {
-    enumerable: true,
-    get() {
-        return require("dataFormatterCache").dataFormatterCache;
-      }
-  };
-  Object.defineProperty(exports, "dataFormatterCache", obj2);
-  const _Object5 = Object;
-  const obj3 = {
-    enumerable: true,
-    get() {
-        return require("module_1162").FormatBuilder;
-      }
-  };
-  Object.defineProperty(exports, "FormatBuilder", obj3);
-  const _Object6 = Object;
-  const obj4 = {
-    enumerable: true,
-    get() {
-        return require("module_1162").bindFormatValues;
-      }
-  };
-  Object.defineProperty(exports, "bindFormatValues", obj4);
-  fn(astFormatter, exports);
-  const _Object7 = Object;
-  const obj5 = {
-    enumerable: true,
-    get() {
-        return require("runtimeHashMessageKey").runtimeHashMessageKey;
-      }
-  };
-  Object.defineProperty(exports, "runtimeHashMessageKey", obj5);
-  const _Object8 = Object;
-  const obj6 = {
-    enumerable: true,
-    get() {
-        return require("DEFAULT_LOCALE").IntlManager;
-      }
-  };
-  Object.defineProperty(exports, "IntlManager", obj6);
-  const _Object9 = Object;
-  const obj7 = {
-    enumerable: true,
-    get() {
-        return require("DEFAULT_LOCALE").DEFAULT_LOCALE;
-      }
-  };
-  Object.defineProperty(exports, "DEFAULT_LOCALE", obj7);
-  const _Object10 = Object;
-  const obj8 = {
-    enumerable: true,
-    get() {
-        return require("serializeAst").InternalIntlMessage;
-      }
-  };
-  Object.defineProperty(exports, "InternalIntlMessage", obj8);
-  const _Object11 = Object;
-  const obj9 = {
-    enumerable: true,
-    get() {
-        return require("MessageLoader").createLoader;
-      }
-  };
-  Object.defineProperty(exports, "createLoader", obj9);
-  const _Object12 = Object;
-  const obj10 = {
-    enumerable: true,
-    get() {
-        return require("MessageLoader").loadAllMessagesInLocale;
-      }
-  };
-  Object.defineProperty(exports, "loadAllMessagesInLocale", obj10);
-  const _Object13 = Object;
-  const obj11 = {
-    enumerable: true,
-    get() {
-        return require("MessageLoader").waitForAllDefaultIntlMessagesLoaded;
-      }
-  };
-  Object.defineProperty(exports, "waitForAllDefaultIntlMessagesLoaded", obj11);
-  const _Object14 = Object;
-  const obj12 = {
-    enumerable: true,
-    get() {
-        return require("MessageLoader").MessageLoader;
-      }
-  };
-  Object.defineProperty(exports, "MessageLoader", obj12);
-  const _Object15 = Object;
-  const obj13 = {
-    enumerable: true,
-    get() {
-        return require("chainMessagesObjects").chainMessagesObjects;
-      }
-  };
-  Object.defineProperty(exports, "chainMessagesObjects", obj13);
-  const _Object16 = Object;
-  const obj14 = {
-    enumerable: true,
-    get() {
-        return require("chainMessagesObjects").makeMessagesProxy;
-      }
-  };
-  Object.defineProperty(exports, "makeMessagesProxy", obj14);
-} else {
-  let _Object = Object;
 }
+function bindFormatValues(Builder) {
+  let length;
+  let sum;
+  ({ nodes, keyPrefix } = Builder);
+  ({ originalMessage, locales, dataFormatters, formatConfig, values, currentPluralValue } = Builder);
+  let builder = new Builder.Builder({ keyPrefix });
+  if (typeof nodes === "string") {
+    builder.pushLiteralText(nodes);
+    let finishResult = builder.finish();
+  } else {
+    if (1 === nodes.length) {
+      if (typeof nodes[0] === "string") {
+        builder.pushLiteralText(nodes[0]);
+      }
+      finishResult = builder.finish();
+    }
+    c9 = 0;
+    let num2 = 0;
+    if (0 < nodes.length) {
+      do {
+        let tmp = (function _loop() {
+          if (typeof nodes[v0] === "string") {
+            builder.pushLiteralText(tmp2);
+            return 0;
+          } else {
+            const first = tmp2[0];
+            if (first === builder(originalMessage[6]).FormatJsNodeType.Pound) {
+              if (typeof currentPluralValue === "number") {
+                builder.pushLiteralText(dataFormatters.formatNumber(tmp93));
+              }
+              return 0;
+            } else {
+              if (!(tmp2[1] in values)) {
+                if (!formatConfig(tmp100)) {
+                  const tmp10 = new currentPluralValue(tmp100, closure_1, first);
+                  throw tmp10;
+                }
+              }
+              builder = tmp12;
+              if (tmp98(tmp99[6]).FormatJsNodeType.Argument === first) {
+                if (typeof tmp12 !== "object") {
+                  if (typeof tmp12 !== "function") {
+                    const _String = String;
+                    builder.pushLiteralText(String(tmp12));
+                  }
+                }
+                builder.pushObject(tmp12);
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Date === first) {
+                if (tmp2[2] in formatConfig.date) {
+                  let result = formatConfig.date[tmp83];
+                } else if (null != tmp83) {
+                  result = tmp98(tmp99[7]).parseDateTimeSkeleton(tmp83);
+                }
+                builder.pushLiteralText(dataFormatters.formatDate(tmp12, result));
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Time === first) {
+                if (tmp2[2] in formatConfig.time) {
+                  let result1 = formatConfig.time[tmp76];
+                } else if (null != tmp76) {
+                  result1 = tmp98(tmp99[7]).parseDateTimeSkeleton(tmp76);
+                }
+                builder.pushLiteralText(dataFormatters.formatTime(tmp12, result1));
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Number === first) {
+                if (tmp2[2] in formatConfig.number) {
+                  let parseNumberSkeletonResult = formatConfig.number[tmp67];
+                } else if (null != tmp67) {
+                  parseNumberSkeletonResult = tmp98(tmp99[7]).parseNumberSkeleton(tmp98(tmp99[7]).parseNumberSkeletonFromString(tmp67));
+                }
+                let result2 = tmp12;
+                if (typeof tmp12 === "number") {
+                  let scale;
+                  if (null != parseNumberSkeletonResult) {
+                    scale = parseNumberSkeletonResult.scale;
+                  }
+                  let num5 = 1;
+                  if (null !== scale) {
+                    num5 = 1;
+                    if (undefined !== scale) {
+                      num5 = scale;
+                    }
+                  }
+                  result2 = tmp12 * num5;
+                }
+                builder.pushLiteralText(dataFormatters.formatNumber(result2, parseNumberSkeletonResult));
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Tag === first) {
+                const obj2 = { Builder: builder.constructor, nodes: tmp2[2], locales, dataFormatters, formatConfig, values: tmp101, currentPluralValue, keyPrefix: null };
+                const _HermesInternal5 = HermesInternal;
+                obj2.keyPrefix = "" + keyPrefix + "." + tmp;
+                const tmp49 = v0(obj2);
+                if (null != tmp2[3]) {
+                  const obj3 = { Builder: obj6.constructor, nodes: tmp40, locales: tmp43, dataFormatters: tmp44, formatConfig: tmp45, values: tmp101, currentPluralValue: tmp46, keyPrefix: null };
+                  const _HermesInternal6 = HermesInternal;
+                  obj3.keyPrefix = "" + tmp47 + "." + tmp + "-control";
+                  let items1 = tmp41(obj3);
+                } else {
+                  items1 = [];
+                }
+                if (formatConfig(tmp100)) {
+                  obj6.pushRichTextTag(tmp100, tmp49, items1);
+                } else if (typeof tmp12 !== "function") {
+                  const _HermesInternal7 = HermesInternal;
+                  throw "expected a function type for a Tag formatting value, " + tmp100 + ". got " + typeof tmp12 + ": " + tmp12;
+                } else {
+                  const _HermesInternal8 = HermesInternal;
+                  const tmp12Result = tmp12(tmp49, "" + tmp47 + "." + tmp);
+                  const _Array = Array;
+                  let tmp55 = tmp12Result;
+                  if (!Array.isArray(tmp12Result)) {
+                    const items = [tmp12Result];
+                    tmp55 = items;
+                  }
+                  for (const item10128 of tmp55) {
+                    let tmp58 = item10128;
+                    if (typeof item10128 === "string") {
+                      let pushLiteralTextResult6 = builder.pushLiteralText(tmp58);
+                    } else {
+                      let pushObjectResult1 = builder.pushObject(tmp58);
+                    }
+                    continue;
+                  }
+                }
+                tmp41 = v0;
+                tmp43 = locales;
+                tmp44 = dataFormatters;
+                tmp45 = formatConfig;
+                tmp46 = currentPluralValue;
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Select === first) {
+                const tmp26 = tmp12 in tmp2[2] ? tmp2[2][tmp12] : tmp2[2].other;
+                if (null == tmp26) {
+                  const _Object2 = Object;
+                  const keys = Object.keys(tmp25);
+                  const _HermesInternal4 = HermesInternal;
+                  throw "" + tmp12 + " is not a known option for select value " + tmp100 + ". Valid options are " + keys.join(", ");
+                } else {
+                  const obj4 = { builder, nodes: tmp26, locales, dataFormatters, formatConfig, values: tmp101, keyPrefix: null };
+                  const _HermesInternal3 = HermesInternal;
+                  obj4.keyPrefix = "" + keyPrefix + "." + tmp;
+                  keyPrefix(obj4);
+                }
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Plural === first) {
+                closure_1 = tmp102;
+                nodes = tmp103;
+                locales = tmp2[4];
+                const tmp104 = (() => {
+                  const combined = "=" + closure_0;
+                  if (combined in closure_1) {
+                    return tmp3[combined];
+                  } else {
+                    const obj = { type };
+                    const pluralRules = dataFormatters.getPluralRules(obj);
+                    let num = 0;
+                    if (null != closure_2) {
+                      num = closure_2;
+                    }
+                    let other = tmp3[pluralRules.select(pluralRules, tmp - num)];
+                    if (null === other) {
+                      other = tmp3.other;
+                    }
+                    return other;
+                  }
+                  tmp = closure_0;
+                })();
+                if (null == tmp104) {
+                  const _Object = Object;
+                  const keys1 = Object.keys(tmp102);
+                  const _HermesInternal2 = HermesInternal;
+                  throw "" + tmp12 + " is not a known option for plural value " + tmp100 + ". Valid options are " + keys1.join(", ");
+                } else {
+                  let obj = { builder, nodes: tmp104, locales, dataFormatters, formatConfig, values: tmp101, currentPluralValue: null, keyPrefix: null };
+                  let num2 = 0;
+                  if (null != tmp103) {
+                    num2 = tmp103;
+                  }
+                  obj.currentPluralValue = tmp12 - num2;
+                  const _HermesInternal = HermesInternal;
+                  obj.keyPrefix = "" + keyPrefix + "." + tmp;
+                  keyPrefix(obj);
+                }
+              }
+            }
+          }
+        })();
+        sum = num2 + 1;
+        c9 = sum;
+        num2 = sum;
+        length = nodes.length;
+      } while (sum < length);
+    }
+  }
+  return finishResult;
+}
+class FormatBuilder {
+  constructor(arg0) {
+    tmp = closure_4(this, FormatBuilder);
+    this.context = global;
+    return;
+  }
+}
+class MissingValueError {
+  constructor(arg0, arg1, arg2) {
+    self = this;
+    tmp = closure_4(this, MissingValueError);
+    items = [];
+    items[0] = "No value for variable '" + global + "' was provided for the localized message '" + require + "'";
+    tmp2 = closure_3;
+    obj = closure_3(MissingValueError);
+    tmp3 = c2;
+    if (hasOwnProperty()) {
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result.variableName = global;
+    tmp3Result.originalMessage = require;
+    tmp3Result.nodeType = importDefault;
+    return tmp3Result;
+  }
+}
+_inherits(MissingValueError, _wrapNativeSuper(Error));
+let closure_7 = _createClass(MissingValueError);
+
+export { bindFormatValuesWithBuilder };
+export { bindFormatValues };
+export const FormatBuilder = _createClass(FormatBuilder);

@@ -1,13 +1,13 @@
-// Module ID: 10595
-// Function ID: 10596
+// Module ID: 11566
+// Function ID: 11567
 // Name: NativeChatUtils
-// Dependencies: [17, 1368, 10596, 1235, 10597, 10598, 2]
+// Dependencies: [17, 1364, 11567, 1231, 11568, 11569, 2]
 
-// Module 10595 (NativeChatUtils)
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ChatNativeComponent from "ChatNativeComponent" /* 10596 */;
-import NativeChatModuleDefault from "NativeChatModule" /* 10598 */;
+// Module 11566 (NativeChatUtils)
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import ChatNativeComponent from "ChatNativeComponent" /* 11567 */;
+import NativeChatModuleDefault from "NativeChatModule" /* 11569 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ export default {
           DCDChatManager.scrollTo(tmp15, arg1, tmp, tmp2, TOP);
         }
       } else {
-        const Commands = tmp5(10596).Commands;
+        const Commands = tmp5(11567).Commands;
         Commands.scrollTo(arg0, arg1, tmp, tmp2, TOP);
       }
       obj2 = PlatformUtils;
@@ -51,7 +51,7 @@ export default {
           DCDChatManager.scrollToBottom(tmp6, arg1);
         }
       } else {
-        const Commands = tmp2(10596).Commands;
+        const Commands = tmp2(11567).Commands;
         Commands.scrollToBottom(arg0, arg1);
       }
       obj = PlatformUtils;
@@ -97,7 +97,7 @@ export default {
           DCDChatManager.scrollIntoView(tmp13, arg1, tmp, tmp2);
         }
       } else {
-        const Commands = tmp4(10596).Commands;
+        const Commands = tmp4(11567).Commands;
         Commands.scrollIntoView(arg0, arg1, tmp, tmp2);
       }
       obj2 = PlatformUtils;
@@ -107,19 +107,19 @@ export default {
   updateRows(arg0, rows) {
     if (null != arg0) {
       if (obj6.isIOS()) {
-        const andIncrementChangesetIdForChat = tmp31(10597).getAndIncrementChangesetIdForChat(arg0);
+        const andIncrementChangesetIdForChat = tmp31(11568).getAndIncrementChangesetIdForChat(arg0);
         ({ rows, forceReload } = rows);
         if (forceReload == null) {
           forceReload = false;
         }
-        const tmp31Result = tmp31(10597);
+        const tmp31Result = tmp31(11568);
         const obj = { category: "chat.dispatch", message: null, data: null };
         const _HermesInternal = HermesInternal;
         obj.message = "updateRows dispatch id=" + andIncrementChangesetIdForChat + " ops=" + rows.length;
         const obj2 = { changesetUpdateId: andIncrementChangesetIdForChat, opCount: rows.length, rows, forceReload };
         obj.data = obj2;
         SentryUtilsDefault.addBreadcrumb(obj);
-        const Commands = tmp31(10596).Commands;
+        const Commands = tmp31(11567).Commands;
         const _JSON2 = JSON;
         const json = JSON.stringify(rows.rows);
         const isLoadingAtTop = rows.isLoadingAtTop;
@@ -153,7 +153,7 @@ export default {
             const _JSON = JSON;
             json2 = JSON.stringify(rows.scrollData);
           }
-          const andIncrementChangesetIdForChat1 = tmp31(10597).getAndIncrementChangesetIdForChat(arg0);
+          const andIncrementChangesetIdForChat1 = tmp31(11568).getAndIncrementChangesetIdForChat(arg0);
           let flag = rows.HACK_iOSForceAnimations;
           if (flag == null) {
             flag = false;
@@ -167,7 +167,7 @@ export default {
             flag3 = true;
           }
           obj7.updateRows(tmp2, json1, isLoadingAtTop2, json2, andIncrementChangesetIdForChat1, flag, flag2, flag3);
-          const tmp31Result2 = tmp31(10597);
+          const tmp31Result2 = tmp31(11568);
         }
       }
       obj6 = PlatformUtils;
@@ -176,15 +176,15 @@ export default {
   clearRows(arg0) {
     if (null != arg0) {
       if (obj4.isIOS()) {
-        const Commands = tmp6(10596).Commands;
-        Commands.clearRows(arg0, tmp6(10597).getAndIncrementChangesetIdForChat(arg0));
-        const tmp6Result = tmp6(10597);
+        const Commands = tmp6(11567).Commands;
+        Commands.clearRows(arg0, tmp6(11568).getAndIncrementChangesetIdForChat(arg0));
+        const tmp6Result = tmp6(11568);
       } else {
         const tmp2 = React4(arg0);
         if (null != tmp2) {
           const obj = NativeChatModuleDefault;
-          obj.clearRows(tmp2, tmp6(10597).getAndIncrementChangesetIdForChat(arg0));
-          const tmp6Result2 = tmp6(10597);
+          obj.clearRows(tmp2, tmp6(11568).getAndIncrementChangesetIdForChat(arg0));
+          const tmp6Result2 = tmp6(11568);
         }
       }
       obj4 = PlatformUtils;

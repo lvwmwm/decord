@@ -1,11 +1,11 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14362
+// Function ID: 14363
 // Name: WindowsMediaFoundationGpuEncodeIntel
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 // Exports: getWmfGpuEncodeIntel
 
-// Module 14372 (WindowsMediaFoundationGpuEncodeIntel)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 14362 (WindowsMediaFoundationGpuEncodeIntel)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-01-wmf-gpu-encode-intel", kind: "user", defaultConfig: { enabled: false }, variations: null };

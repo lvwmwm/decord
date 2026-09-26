@@ -1,29 +1,25 @@
 // Module ID: 4048
 // Function ID: 4049
-// Dependencies: [3885, 4036, 3882]
+// Dependencies: [4049, 4050, 3878]
 // Exports: default
 
 // Module 4048
-import module_3885_mod from "module_3885" /* 3885 */;
-import module_4036_mod from "module_4036" /* 4036 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_4049" /* 4049 */;
+import _typeof_mod from "module_4050" /* 4050 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let module_3885 = module_3885_mod;
-if (!module_3885) {
-  const obj = { default: module_3885 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_3885;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
 }
-module_3885 = tmp3;
-let module_4036 = module_4036_mod;
-if (!module_4036) {
-  const obj2 = { default: module_4036 };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
   let tmp5 = obj2;
 } else {
-  tmp5 = module_4036;
+  tmp5 = _typeof;
 }
-module_4036 = tmp5;
+_typeof = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj3 = { default: requiredArgs };
@@ -33,8 +29,11 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp7;
 
-export default function addSeconds(interval, arg1) {
+export default function clamp(arg0, arg1) {
+  ({ start, end } = arg1);
   requiredArgs.default(2, arguments);
-  return module_4036.default(interval, 1000 * module_3885.default(arg1));
+  const items = [arg0, start];
+  const items1 = [_typeof.default(items), end];
+  return _typeof.default(items1);
 };
 export default exports.default;

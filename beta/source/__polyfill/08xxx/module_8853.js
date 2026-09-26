@@ -1,17 +1,18 @@
 // Module ID: 8853
 // Function ID: 8854
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8854, 8849, 8789]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8854, 8775, 8784]
 
 // Module 8853
-import _modDef8789 from "module_8789" /* 8789 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef8784 from "module_8784" /* 8784 */;
+import _modDef8854 from "module_8854" /* 8854 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const Polygon = importDefault;
+const Rect = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,60 +32,50 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
+_possibleConstructorReturnDefault;
 const jsx = fn(21).jsx;
-class Polygon {
+class Rect {
   constructor() {
     self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = c2(this, Polygon);
-    items1 = [...items];
-    tmp2 = closure_4;
-    obj = closure_4(Polygon);
-    tmp3 = closure_3;
-    if (metroRequire()) {
-      tmp5 = globalThis;
+    tmp = closure_3(this, Rect);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(Rect);
+    tmp3 = closure_4;
+    if (closure_7()) {
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.setNativeProps = (points) => {
-      points = points.points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        points.d = "M" + Polygon(8854)(points) + "z";
-      }
-      if (closure_0.root) {
-        const root = closure_0.root;
-        root.setNativeProps(points);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(Polygon, _modDef8789);
+_inherits(Rect, _modDef8784);
 const entry = {
   key: "render",
   value: function render() {
+    const self = this;
     const props = this.props;
-    const points = props.points;
-    const obj = { ref: this.refMethod, d: null };
-    let combined = points;
-    if (points) {
-      const _HermesInternal = HermesInternal;
-      combined = "M" + Polygon(8854)(points) + "z";
-    }
-    obj.d = combined;
-    const merged = Object.assign(props);
-    return jsx(Polygon(8849), { ref: this.refMethod, d: null });
+    const size = { x: props.x, y: props.y, width: props.width, height: props.height, rx: props.rx, ry: props.ry };
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const merged = Object.assign(Rect(8775).withoutXY(this, props));
+    const merged1 = Object.assign(size);
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
 };
-let items = [entry];
-const importDefaultResultResult = _createClass(Polygon, items);
-importDefaultResultResult.displayName = "Polygon";
-importDefaultResultResult.defaultProps = { points: "" };
+const items = [entry];
+const importDefaultResultResult = _createClass(Rect, items);
+importDefaultResultResult.displayName = "Rect";
+importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
 
 export default importDefaultResultResult;

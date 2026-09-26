@@ -1,200 +1,220 @@
 // Module ID: 1055
 // Function ID: 1056
-// Dependencies: [871, 680, 893, 1056]
-// Exports: getDefaultIntegrations
+// Dependencies: [1025, 1031, 682, 1023, 1026, 987]
+// Exports: reactNativeNavigationIntegration
 
 // Module 1055
-import debugSymbolicatorIntegration from "debugSymbolicatorIntegration" /* 680 */;
-import _mod871 from "module_871" /* 871 */;
+import _mod682 from "module_682" /* 682 */;
+import _mod987 from "module_987" /* 987 */;
+import startIdleSpan from "startIdleSpan" /* 1025 */;
+import _mod1031 from "module_1031" /* 1031 */;
 
+const self = this;
 require = arg1;
 const dependencyMap = arg6;
+const ReactNativeNavigation = "ReactNativeNavigation";
 
-export const getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise) {
-  const items = [];
-  const push = items.push;
-  const obj2 = debugSymbolicatorIntegration;
-  if (notWebResult) {
-    const obj3 = { patchGlobalPromise: patchGlobalPromise.patchGlobalPromise };
-    push(obj2.reactNativeErrorHandlersIntegration(obj3));
-    items.push(tmp(680).nativeLinkedErrorsIntegration());
-    const tmpResult = tmp(680);
-  } else {
-    push(obj2.browserApiErrorsIntegration());
-    items.push(tmp(680).browserGlobalHandlersIntegration());
-    const tmpResult34 = tmp(680);
-    items.push(tmp(680).browserLinkedErrorsIntegration());
-    if (patchGlobalPromise.enableAutoSessionTracking) {
-      items.push(tmp(893).browserSessionIntegration());
-      const tmpResult36 = tmp(893);
-    }
-    const tmpResult35 = tmp(680);
+export const INTEGRATION_NAME = "ReactNativeNavigation";
+export const reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
+  ({ navigation, routeChangeTimeoutMs } = enableTabsInstrumentation);
+  if (routeChangeTimeoutMs === undefined) {
+    routeChangeTimeoutMs = 1000;
   }
-  notWebResult = _mod871.notWeb();
-  items.push(debugSymbolicatorIntegration.inboundFiltersIntegration());
-  const tmpResult37 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.functionToStringIntegration());
-  const tmpResult38 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.breadcrumbsIntegration());
-  const tmpResult39 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.dedupeIntegration());
-  const tmpResult40 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.httpContextIntegration());
-  const tmpResult41 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.nativeReleaseIntegration());
-  const tmpResult42 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.eventOriginIntegration());
-  const tmpResult43 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.sdkInfoIntegration());
-  const tmpResult44 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.reactNativeInfoIntegration());
-  const tmpResult45 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.createReactNativeRewriteFrames());
-  if (patchGlobalPromise.enableNative) {
-    items.push(tmp(680).deviceContextIntegration());
-    const tmpResult47 = tmp(680);
-    items.push(tmp(680).modulesLoaderIntegration());
-    let enableLogs = patchGlobalPromise.enableLogs;
-    if (enableLogs) {
-      enableLogs = "native" !== patchGlobalPromise.logsOrigin;
-    }
-    if (enableLogs) {
-      items.push(tmp(680).logEnricherIntegration());
-      const tmpResult49 = tmp(680);
-      items.push(tmp(893).consoleLoggingIntegration());
-      const tmpResult50 = tmp(893);
-    }
-    if (patchGlobalPromise.attachScreenshot) {
-      items.push(tmp(680).screenshotIntegration());
-      const tmpResult51 = tmp(680);
-    }
-    if (patchGlobalPromise.attachViewHierarchy) {
-      items.push(tmp(680).viewHierarchyIntegration());
-      const tmpResult52 = tmp(680);
-    }
-    if (typeof patchGlobalPromise.profilesSampleRate === "number") {
-      items.push(tmp(680).hermesProfilingIntegration());
-      const tmpResult53 = tmp(680);
-    }
-    const tmpResult48 = tmp(680);
+  let flag = enableTabsInstrumentation.enableTabsInstrumentation;
+  if (flag === undefined) {
+    flag = false;
   }
-  const tracesSampleRate = patchGlobalPromise.tracesSampleRate;
-  let tmp26 = typeof tracesSampleRate === "number";
-  if (typeof tracesSampleRate !== "number") {
-    tmp26 = typeof patchGlobalPromise.tracesSampler === "function";
+  let flag2 = enableTabsInstrumentation.ignoreEmptyBackNavigationTransactions;
+  if (flag2 === undefined) {
+    flag2 = true;
   }
-  let enableNative = tmp26;
-  if (tmp26) {
-    enableNative = patchGlobalPromise.enableAppStartTracking;
-  }
-  if (enableNative) {
-    enableNative = patchGlobalPromise.enableNative;
-  }
-  if (enableNative) {
-    items.push(tmp(680).appStartIntegration());
-    const tmpResult54 = tmp(680);
-  }
-  const tmpResult46 = debugSymbolicatorIntegration;
-  let enableNative2 = tmp26;
-  if (tmp26) {
-    enableNative2 = patchGlobalPromise.enableNativeFramesTracking;
-  }
-  if (enableNative2) {
-    enableNative2 = patchGlobalPromise.enableNative;
-  }
-  const nativeFramesIntegrations = debugSymbolicatorIntegration.createNativeFramesIntegrations(enableNative2);
-  if (nativeFramesIntegrations) {
-    items.push(nativeFramesIntegrations);
-  }
-  let enableStallTracking = tmp26;
-  if (tmp26) {
-    enableStallTracking = patchGlobalPromise.enableStallTracking;
-  }
-  if (enableStallTracking) {
-    items.push(tmp(680).stallTrackingIntegration());
-    const tmpResult56 = tmp(680);
-  }
-  let enableUserInteractionTracing = tmp26;
-  if (tmp26) {
-    enableUserInteractionTracing = patchGlobalPromise.enableUserInteractionTracing;
-  }
-  if (enableUserInteractionTracing) {
-    items.push(tmp(680).userInteractionIntegration());
-    const tmpResult57 = tmp(680);
-  }
-  let enableAutoPerformanceTracing = tmp26;
-  if (tmp26) {
-    enableAutoPerformanceTracing = patchGlobalPromise.enableAutoPerformanceTracing;
-  }
-  if (enableAutoPerformanceTracing) {
-    items.push(tmp(680).appRegistryIntegration());
-    const tmpResult58 = tmp(680);
-    items.push(tmp(1056).reactNativeTracingIntegration());
-    const tmpResult59 = tmp(1056);
-  }
-  if (tmp26) {
-    items.push(tmp(680).timeToDisplayIntegration());
-    const tmpResult60 = tmp(680);
-  }
-  if (patchGlobalPromise.enableCaptureFailedRequests) {
-    items.push(tmp(680).httpClientIntegration());
-    const tmpResult61 = tmp(680);
-  }
-  const tmpResult55 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.expoContextIntegration());
-  if (patchGlobalPromise.spotlight) {
-    let spotlight;
-    if (typeof patchGlobalPromise.spotlight === "string") {
-      spotlight = patchGlobalPromise.spotlight;
-    }
-    const obj4 = { sidecarUrl: spotlight };
-    items.push(tmp(680).spotlightIntegration(obj4));
-    const tmpResult63 = tmp(680);
-  }
-  const replaysOnErrorSampleRate = patchGlobalPromise.replaysOnErrorSampleRate;
-  let notWebResult1 = typeof replaysOnErrorSampleRate === "number";
-  if (typeof replaysOnErrorSampleRate !== "number") {
-    notWebResult1 = typeof patchGlobalPromise.replaysSessionSampleRate === "number";
-  }
-  let tmp40 = patchGlobalPromise._experiments && typeof patchGlobalPromise._experiments.replaysOnErrorSampleRate === "number";
-  if (!tmp40) {
-    tmp40 = patchGlobalPromise._experiments && typeof patchGlobalPromise._experiments.replaysSessionSampleRate === "number";
-    const tmp41 = patchGlobalPromise._experiments && typeof patchGlobalPromise._experiments.replaysSessionSampleRate === "number";
-  }
-  let tmp42 = !notWebResult1;
-  if (!notWebResult1) {
-    tmp42 = tmp40;
-  }
-  if (tmp42) {
-    const _experiments = patchGlobalPromise._experiments;
-    let prop;
-    if (null !== _experiments) {
-      if (undefined !== _experiments) {
-        prop = _experiments.replaysOnErrorSampleRate;
+  let reactNativeTracingIntegration;
+  c3 = undefined;
+  c4 = undefined;
+  let pushRecentComponentId;
+  let discardLatestNavigationSpan;
+  let clearStateChangeTimeout;
+  closure_5 = [];
+  flag2(reactNativeTracingIntegration[0]).defaultIdleOptions;
+  enableTabsInstrumentation = null;
+  function startIdleNavigationSpan() {
+    if (_undefined) {
+      if (typeof discardLatestNavigationSpan === "function") {
+        if (tmp) {
+          if (obj.isSentrySpan(_undefined)) {
+            _undefined._sampled = false;
+          }
+          _undefined.end();
+          _undefined = undefined;
+          obj = flag2(reactNativeTracingIntegration[5]);
+        }
+        if (typeof clearStateChangeTimeout === "function") {
+          if (undefined !== timeout) {
+            const _clearTimeout = clearTimeout;
+            clearTimeout(timeout);
+            timeout = undefined;
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
       }
     }
-    patchGlobalPromise.replaysOnErrorSampleRate = prop;
-    const _experiments2 = patchGlobalPromise._experiments;
-    let prop1;
-    if (null !== _experiments2) {
-      if (undefined !== _experiments2) {
-        prop1 = _experiments2.replaysSessionSampleRate;
+    obj2 = flag2(reactNativeTracingIntegration[0]);
+    let beforeStartSpan;
+    if (null != reactNativeTracingIntegration) {
+      beforeStartSpan = reactNativeTracingIntegration.options.beforeStartSpan;
+    }
+    if (beforeStartSpan) {
+      const options = reactNativeTracingIntegration.options;
+      let beforeStartSpanResult = options.beforeStartSpan(flag2(reactNativeTracingIntegration[0]).getDefaultIdleNavigationSpanOptions());
+      const obj4 = flag2(reactNativeTracingIntegration[0]);
+    } else {
+      beforeStartSpanResult = flag2(reactNativeTracingIntegration[0]).getDefaultIdleNavigationSpanOptions();
+      const obj3 = flag2(reactNativeTracingIntegration[0]);
+    }
+    const result = obj2.startIdleNavigationSpan(beforeStartSpanResult, obj2);
+    _undefined = result;
+    if (null != result) {
+      const attr = _undefined.setAttribute(flag2(reactNativeTracingIntegration[2]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, flag2(reactNativeTracingIntegration[3]).SPAN_ORIGIN_AUTO_NAVIGATION_REACT_NATIVE_NAVIGATION);
+    }
+    if (flag2) {
+      const obj5 = flag2(reactNativeTracingIntegration[4]);
+      const result1 = obj5.ignoreEmptyBackNavigation(flag2(reactNativeTracingIntegration[2]).getClient(), _undefined);
+      const obj6 = flag2(reactNativeTracingIntegration[2]);
+    }
+    closure_0 = _undefined;
+    const obj7 = flag2(reactNativeTracingIntegration[4]);
+    const client = flag2(reactNativeTracingIntegration[2]).getClient();
+    const result2 = obj7.ignoreEmptyRouteChangeTransactions(client, _undefined, flag2(reactNativeTracingIntegration[0]).DEFAULT_NAVIGATION_SPAN_NAME, () => c4 === closure_0);
+    timeout = setTimeout(discardLatestNavigationSpan.bind(c3), closure_0);
+  }
+  let result = navigation.events().registerCommandListener(startIdleNavigationSpan);
+  if (flag) {
+    let result1 = navigation.events().registerBottomTabPressedListener(startIdleNavigationSpan);
+    const eventsResult1 = navigation.events();
+  }
+  const eventsResult = navigation.events();
+  let result2 = navigation.events().registerComponentWillAppearListener((componentId) => {
+    if (_undefined) {
+      if (enableTabsInstrumentation) {
+        if (componentId.componentId === enableTabsInstrumentation.componentId) {
+          if (typeof discardLatestNavigationSpan === "function") {
+            if (_undefined) {
+              if (obj6.isSentrySpan(_undefined)) {
+                _undefined._sampled = false;
+              }
+              _undefined.end();
+              _undefined = undefined;
+              obj6 = _mod987;
+            }
+            if (typeof clearStateChangeTimeout === "function") {
+              if (undefined !== c3) {
+                const _clearTimeout2 = clearTimeout;
+                clearTimeout(c3);
+                c3 = undefined;
+              }
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        }
+      }
+      if (typeof clearStateChangeTimeout === "function") {
+        if (undefined !== c3) {
+          const _clearTimeout = clearTimeout;
+          clearTimeout(c3);
+          c3 = undefined;
+        }
+        const hasItem = closure_5.includes(componentId.componentId);
+        if (obj.spanToJSON(_undefined).description === startIdleSpan.DEFAULT_NAVIGATION_SPAN_NAME) {
+          _undefined.updateName(componentId.componentName);
+        }
+        const obj4 = { "route.name": null, "route.component_id": null, "route.component_type": null, "route.has_been_seen": null, "previous_route.name": null, "previous_route.component_id": null, "previous_route.component_type": null };
+        ({ componentName: obj2["route.name"], componentId: obj2["route.component_id"], componentType: obj2["route.component_type"] } = componentId);
+        obj4["route.has_been_seen"] = hasItem;
+        let componentName;
+        if (null != enableTabsInstrumentation) {
+          componentName = enableTabsInstrumentation.componentName;
+        }
+        obj4["previous_route.name"] = componentName;
+        componentId = undefined;
+        if (null != enableTabsInstrumentation) {
+          componentId = enableTabsInstrumentation.componentId;
+        }
+        obj4["previous_route.component_id"] = componentId;
+        let componentType;
+        if (null != enableTabsInstrumentation) {
+          componentType = enableTabsInstrumentation.componentType;
+        }
+        obj4["previous_route.component_type"] = componentType;
+        obj4[_mod682.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "component";
+        obj4[_mod682.SEMANTIC_ATTRIBUTE_SENTRY_OP] = "navigation";
+        _undefined.setAttributes(obj4);
+        if (null != reactNativeTracingIntegration) {
+          reactNativeTracingIntegration.setCurrentRoute(componentId.componentName);
+        }
+        obj = _mod682;
+        const obj5 = { category: "navigation", type: "navigation", message: null, data: null };
+        const _HermesInternal = HermesInternal;
+        obj5.message = "Navigation to " + componentId.componentName;
+        let componentName1;
+        if (null != enableTabsInstrumentation) {
+          componentName1 = enableTabsInstrumentation.componentName;
+        }
+        const obj9 = { from: componentName1, to: componentId.componentName };
+        obj5.data = obj9;
+        _mod682.addBreadcrumb(obj5);
+        if (typeof pushRecentComponentId === "function") {
+          closure_5.push(tmp45);
+          if (closure_5.length > 200) {
+            closure_5 = closure_5.slice(closure_5.length - 200);
+          }
+          enableTabsInstrumentation = componentId;
+          _undefined = undefined;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
       }
     }
-    patchGlobalPromise.replaysSessionSampleRate = prop1;
-  }
-  if (!notWebResult1) {
-    notWebResult1 = tmp40;
-  }
-  if (notWebResult1) {
-    notWebResult1 = tmp(871).notWeb();
-    const tmpResult64 = tmp(871);
-  }
-  if (notWebResult1) {
-    items.push(tmp(680).mobileReplayIntegration());
-    const tmpResult65 = tmp(680);
-  }
-  const tmpResult62 = debugSymbolicatorIntegration;
-  items.push(debugSymbolicatorIntegration.primitiveTagIntegration());
-  return items;
+  });
+  pushRecentComponentId = function pushRecentComponentId(arg0) {
+
+  };
+  discardLatestNavigationSpan = function discardLatestNavigationSpan() {
+    if (_undefined) {
+      if (obj.isSentrySpan(_undefined)) {
+        _undefined._sampled = false;
+      }
+      _undefined.end();
+      _undefined = undefined;
+      obj = _mod987;
+    }
+    if (typeof clearStateChangeTimeout === "function") {
+      if (undefined !== c3) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(c3);
+        c3 = undefined;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  clearStateChangeTimeout = function clearStateChangeTimeout() {
+
+  };
+  return {
+    name: routeChangeTimeoutMs,
+    afterAllSetup(getIntegrationByName) {
+      reactNativeTracingIntegration = _mod1031.getReactNativeTracingIntegration(getIntegrationByName);
+      if (reactNativeTracingIntegration) {
+        obj2 = { finalTimeout: reactNativeTracingIntegration.options.finalTimeoutMs, idleTimeout: reactNativeTracingIntegration.options.idleTimeoutMs };
+      }
+    }
+  };
 };

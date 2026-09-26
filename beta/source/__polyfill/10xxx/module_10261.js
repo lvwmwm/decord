@@ -1,9 +1,0 @@
-// Module ID: 10261
-// Function ID: 10262
-// Dependencies: [1125]
-
-// Module 10261
-import registerAsset from "module_1125" /* 1125 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "15492a52206e63f9d08f70b19c6b74cb", name: "ic_nitro_basic_wheel_gradient", type: "png" });

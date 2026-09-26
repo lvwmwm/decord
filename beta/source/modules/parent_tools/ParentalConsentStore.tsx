@@ -1,11 +1,11 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16292
+// Function ID: 16293
 // Name: ParentalConsentStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 16302 (ParentalConsentStore)
+// Module 16292 (ParentalConsentStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let c0 = false;
 const PersistedStore = initializeDefault.PersistedStore;

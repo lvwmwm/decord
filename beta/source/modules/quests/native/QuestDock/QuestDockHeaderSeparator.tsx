@@ -1,36 +1,22 @@
-// Module ID: 15463
-// Function ID: 15464
+// Module ID: 15465
+// Function ID: 15466
 // Name: QuestDockHeaderSeparator
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 2]
 
-// Module 15463 (QuestDockHeaderSeparator)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
+// Module 15465 (QuestDockHeaderSeparator)
+import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 const obj = { separator: null };
 let size = { backgroundColor: nativeDefault.colors.TEXT_DEFAULT, opacity: 0.2, height: 18, width: 1.5 };
 obj.separator = size;
-let closure_4 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
+let closure_2 = createStyles.createStyles(obj);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockHeaderSeparator.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const tmp2 = closure_4();
-  if (cResult[0] !== tmp2.separator) {
-    const obj2 = { style: tmp2.separator };
-    const tmp6 = <View style={tmp2.separator} />;
-    cResult[0] = tmp2.separator;
-    cResult[1] = tmp6;
-    let tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (() => <View style={closure_4().separator} />));
+export default noop.memo(function QuestDockHeaderSeparator() {
+  return <View style={closure_2().separator} />;
+});

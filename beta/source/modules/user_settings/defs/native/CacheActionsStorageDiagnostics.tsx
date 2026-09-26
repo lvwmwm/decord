@@ -1,10 +1,10 @@
-// Module ID: 15848
-// Function ID: 15849
+// Module ID: 15852
+// Function ID: 15853
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 15847, 4490, 4744, 1119, 5218, 4786, 5220, 2]
+// Dependencies: [5, 32, 19, 21, 15851, 4486, 4742, 1115, 5216, 4784, 5218, 2]
 // Exports: default
 
-// Module 15848 (CacheActionsStorageDiagnostics)
+// Module 15852 (CacheActionsStorageDiagnostics)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -29,7 +29,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             const obj7 = {
               key: "storage-diagnostics-upload",
               icon() {
-                        return closure_1_6(closure_1_0(4744).CircleInformationIcon, {});
+                        return closure_1_6(closure_1_0(4742).CircleInformationIcon, {});
                       },
               content: null
             };
@@ -89,7 +89,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             const obj9 = {
               key: "storage-diagnostics-upload",
               icon() {
-                        return closure_1_6(closure_1_0(4744).CircleInformationIcon, {});
+                        return closure_1_6(closure_1_0(4742).CircleInformationIcon, {});
                       },
               content: null
             };
@@ -131,12 +131,12 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   dependencyMap = noop.useRef(false);
   let obj = { children: null };
   let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: null };
-  let intl = onBusyChange(1119).intl;
-  obj2.children = intl.string(onBusyChange(1119).t.Fzi4HX);
-  const items = [closure_6(onBusyChange(4786).Text, obj2), ];
+  let intl = onBusyChange(1115).intl;
+  obj2.children = intl.string(onBusyChange(1115).t.Fzi4HX);
+  const items = [closure_6(onBusyChange(4784).Text, obj2), ];
   let obj3 = { variant: "secondary", text: null, loading: null, disabled: null, onPress: null };
-  let intl2 = onBusyChange(1119).intl;
-  obj3.text = intl2.string(onBusyChange(1119).t.VSunuT);
+  let intl2 = onBusyChange(1115).intl;
+  obj3.text = intl2.string(onBusyChange(1115).t.VSunuT);
   obj3.loading = tmp2;
   obj3.disabled = tmp2;
   obj3.onPress = function handleUpload() {
@@ -149,7 +149,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
     }
     return applyArgumentsResult;
   };
-  items[1] = closure_6(onBusyChange(5220).Button, obj3);
+  items[1] = closure_6(onBusyChange(5218).Button, obj3);
   obj.children = items;
-  return closure_7(onBusyChange(5218).Stack, obj);
+  return closure_7(onBusyChange(5216).Stack, obj);
 };

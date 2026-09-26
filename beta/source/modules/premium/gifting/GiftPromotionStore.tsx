@@ -1,11 +1,11 @@
-// Module ID: 7696
-// Function ID: 7697
+// Module ID: 7694
+// Function ID: 7695
 // Name: GiftPromotionStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7696 (GiftPromotionStore)
+// Module 7694 (GiftPromotionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let closure_0 = { giftOptionsReceiptMap: {} };
 const PersistedStore = initializeDefault.PersistedStore;

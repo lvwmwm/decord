@@ -1,18 +1,18 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11398
+// Function ID: 11399
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1078, 2042, 21, 11523, 11524, 11525, 1119, 4481, 2112, 4513, 4494, 580, 1245, 4611, 2031, 4503, 7429, 5834, 8615, 7433, 11526, 9146, 4786, 5220, 4790, 1368, 2]
+// Dependencies: [19, 17, 1074, 2038, 21, 11399, 11400, 11401, 1115, 4477, 2108, 4508, 4489, 576, 1241, 4608, 2027, 4498, 7427, 5836, 8610, 7431, 11402, 9148, 4784, 5218, 4788, 1364, 2]
 // Exports: default
 
-// Module 11522 (BalanceWidgetActionSheet)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
-import _mod11523 from "module_11523" /* 11523 */;
-import _mod11524 from "module_11524" /* 11524 */;
-import _mod11525 from "module_11525" /* 11525 */;
+// Module 11398 (BalanceWidgetActionSheet)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import _mod11399 from "module_11399" /* 11399 */;
+import _mod11400 from "module_11400" /* 11400 */;
+import _mod11401 from "module_11401" /* 11401 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -20,12 +20,12 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, TouchableOpacity: hasOwnProperty } = get_ActivityIndicator);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Fonts: closure_7, HelpdeskArticles: closure_8, ThemeTypes: closure_9 } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_13 = createStyles.createStyles((color) => {
   const obj = { actions: { flex: 1, flexDirection: "column", gap: nativeDefault.space.PX_12, minWidth: "100%", paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 }, balanceHeader: null, balanceText: null, content: null, header: null, infoIconBackground: null, infoIconContainer: null, promotionalBackground: null, promotionalBackgroundContainer: null, promotionalBannerAsset: null, promotionalBannerContainer: null, promotionalBannerText: null };
   const obj2 = { flex: 1, flexDirection: "column", gap: nativeDefault.space.PX_12, minWidth: "100%", paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -38,19 +38,19 @@ let closure_13 = createStyles.createStyles((color) => {
   }
   obj4.lineHeight = num;
   obj.balanceText = obj4;
-  const size = { width: "100%", height: "100%", alignItems: "center", flex: 1, marginBottom: tmp(580).space.PX_16 };
+  const size = { width: "100%", height: "100%", alignItems: "center", flex: 1, marginBottom: tmp(576).space.PX_16 };
   obj.content = size;
   obj5 = PlatformUtils;
   obj.header = { width: "100%", paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16, alignItems: "center", position: "relative", flexDirection: "column" };
-  const size1 = { width: 32, height: 32, backgroundColor: tmp(580).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: tmp(580).radii.round, justifyContent: "center", alignItems: "center" };
+  const size1 = { width: 32, height: 32, backgroundColor: tmp(576).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: tmp(576).radii.round, justifyContent: "center", alignItems: "center" };
   obj.infoIconBackground = size1;
-  const rect = { position: "absolute", left: tmp(580).space.PX_16, top: tmp(580).space.PX_16, zIndex: 10 };
+  const rect = { position: "absolute", left: tmp(576).space.PX_16, top: tmp(576).space.PX_16, zIndex: 10 };
   obj.infoIconContainer = rect;
-  const rect1 = { position: "absolute", top: 0, left: 0, right: 0, borderRadius: tmp(580).radii.xl, bottom: -100 };
+  const rect1 = { position: "absolute", top: 0, left: 0, right: 0, borderRadius: tmp(576).radii.xl, bottom: -100 };
   obj.promotionalBackground = rect1;
   obj.promotionalBackgroundContainer = { flex: 1, height: 428 };
   obj.promotionalBannerAsset = { width: "100%", height: "100%" };
-  const size2 = { width: "100%", height: 144, gap: tmp(580).space.PX_12, marginBottom: tmp(580).space.PX_64 };
+  const size2 = { width: "100%", height: 144, gap: tmp(576).space.PX_12, marginBottom: tmp(576).space.PX_64 };
   obj.promotionalBannerContainer = size2;
   obj.promotionalBannerText = { color, fontFamily: constants2.PRIMARY_BOLD, fontWeight: "600", fontSize: 16, lineHeight: 20, textAlign: "center" };
   return obj;
@@ -74,7 +74,7 @@ export default function _default(balance) {
     }
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod11523.default, backgroundImage: _mod11524.default, bannerImage: _mod11525.default, bannerText: null };
+      const obj = { backgroundVideo: _mod11399.default, backgroundImage: _mod11400.default, bannerImage: _mod11401.default, bannerText: null };
       const intl = util.intl;
       obj.bannerText = intl.string(util.t.LaMEFL);
       tmp = obj;
@@ -91,8 +91,8 @@ export default function _default(balance) {
     const obj2 = { type: "VIEW", source, balance: num };
     if (!obj3.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL)) {
       const obj4 = { dismissAction: ContentDismissActionType.AUTO_DISMISS };
-      const result = tmp3(4611).UNSAFE_markDismissibleContentAsDismissed(tmp3(2031).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
-      const tmp3Result = tmp3(4611);
+      const result = tmp3(4608).UNSAFE_markDismissibleContentAsDismissed(tmp3(2027).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
+      const tmp3Result = tmp3(4608);
     }
   }, []);
   let obj2 = { theme: themeOverride, children: null };

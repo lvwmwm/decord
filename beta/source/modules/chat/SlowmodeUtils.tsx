@@ -1,75 +1,51 @@
-// Module ID: 7961
-// Function ID: 7962
+// Module ID: 7956
+// Function ID: 7957
 // Name: SlowmodeUtils
-// Dependencies: [4431, 1078, 558, 568, 504, 1119, 1095, 4384, 2]
-// Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText
+// Dependencies: [4427, 1074, 504, 1115, 1091, 4380, 2]
+// Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
 
-// Module 7961 (SlowmodeUtils)
-import DurationsDefault from "Durations" /* 1095 */;
-import util from "util" /* 1119 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+// Module 7956 (SlowmodeUtils)
+import DurationsDefault from "Durations" /* 1091 */;
+import util from "util" /* 1115 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const Permissions = fn(1078).Permissions;
-const ReactCompilerGating = fn(558);
-function canBypassSlowmodeHelper(rateLimitPerUser, can) {
-  return can.can(Permissions.BYPASS_SLOWMODE, rateLimitPerUser);
-}
+const Permissions = fn(1074).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/SlowmodeUtils.tsx");
 
-export { canBypassSlowmodeHelper };
+export const canBypassSlowmodeHelper = function canBypassSlowmodeHelper(rateLimitPerUser, can) {
+  return can.can(Permissions.BYPASS_SLOWMODE, rateLimitPerUser);
+};
 export const canBypassSlowmode = function canBypassSlowmode(channel) {
   return PermissionStore.can(Permissions.BYPASS_SLOWMODE, channel);
 };
-export const useCanBypassSlowmode = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      return PermissionStore.can(Permissions.BYPASS_SLOWMODE, closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp6);
-}) : ((arg0) => {
-  _require = arg0;
+export const useCanBypassSlowmode = function useCanBypassSlowmode(channel) {
+  _require = channel;
   const items = [PermissionStore];
   return require("initialize").useStateFromStores(items, () => PermissionStore.can(Permissions.BYPASS_SLOWMODE, closure_0));
-});
+};
 export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
   if (canBypassSlowmode) {
     const intl2 = util.intl;
     return intl2.string(util.t["8+NidX"]);
   } else if (stateFromStores >= DurationsDefault.Millis.HOUR) {
-    const time2 = tmp2(4384).duration(stateFromStores);
+    const time2 = tmp2(4380).duration(stateFromStores);
     const _HermesInternal3 = HermesInternal;
     const combined = "" + time2.minutes();
-    const tmp2Result = tmp2(4384);
+    const tmp2Result = tmp2(4380);
     const _HermesInternal4 = HermesInternal;
     const combined1 = "" + time2.seconds();
     const padStartResult = combined.padStart(2, "0");
     const _HermesInternal5 = HermesInternal;
     return "" + time2.hours() + ":" + padStartResult + ":" + combined1.padStart(2, "0");
   } else if (stateFromStores > 0) {
-    const time = tmp2(4384).duration(stateFromStores);
+    const time = tmp2(4380).duration(stateFromStores);
     const _HermesInternal = HermesInternal;
     const combined2 = "" + time.seconds();
-    const tmp2Result2 = tmp2(4384);
+    const tmp2Result2 = tmp2(4380);
     const _HermesInternal2 = HermesInternal;
     return "" + time.minutes() + ":" + combined2.padStart(2, "0");
   } else {
@@ -84,12 +60,12 @@ export const getSlowmodeDescription = function getSlowmodeDescription(rateLimitP
   }
   if (rateLimitPerUser >= DurationsDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded = Math.floor(rateLimitPerUser / tmp(1095).Seconds.HOUR);
+    const rounded = Math.floor(rateLimitPerUser / tmp(1091).Seconds.HOUR);
     const _Math3 = Math;
-    const diff = rateLimitPerUser - rounded * tmp(1095).Seconds.HOUR;
-    const rounded1 = Math.floor(diff / tmp(1095).Seconds.MINUTE);
-    const diff1 = rateLimitPerUser - rounded * tmp(1095).Seconds.HOUR;
-    const diff2 = diff1 - rounded1 * tmp(1095).Seconds.MINUTE;
+    const diff = rateLimitPerUser - rounded * tmp(1091).Seconds.HOUR;
+    const rounded1 = Math.floor(diff / tmp(1091).Seconds.MINUTE);
+    const diff1 = rateLimitPerUser - rounded * tmp(1091).Seconds.HOUR;
+    const diff2 = diff1 - rounded1 * tmp(1091).Seconds.MINUTE;
     const intl3 = util.intl;
     const t3 = util.t;
     const time = { hours: rounded, minutes: rounded1, seconds: diff2 };

@@ -1,15 +1,14 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 10028
+// Function ID: 10029
 // Name: useDisplayNameStylesFont
-// Dependencies: [1394, 1396, 558, 568, 5024, 10007, 2]
+// Dependencies: [1390, 1392, 5022, 10029, 2]
+// Exports: useDisplayNameStylesFont
 
-// Module 10006 (useDisplayNameStylesFont)
-import c from "c" /* 568 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
-import DisplayNameFont from "DisplayNameFont" /* 1396 */;
-import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 5024 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 10007 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10028 (useDisplayNameStylesFont)
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1390 */;
+import DisplayNameFont from "DisplayNameFont" /* 1392 */;
+import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 5022 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 10029 */;
 import size from "module_2" /* 2 */;
 
 const FLYWHEEL_FONTS = DisplayNameStylesConstants.FLYWHEEL_FONTS;
@@ -17,25 +16,7 @@ const DISPLAY_NAME_STYLES_FONT_FAMILY_MAP = { [DisplayNameFont.DisplayNameFont.C
 const result = size.fileFinishedImporting("modules/display_name_styles/native/useDisplayNameStylesFont.tsx");
 
 export { DISPLAY_NAME_STYLES_FONT_FAMILY_MAP };
-export const useDisplayNameStylesFont = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const obj = c;
-  const cResult = obj.c(1);
-  ({ displayNameStyles, ignoreDisabledStylesSetting } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "useDisplayNameStylesFont-native" };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const displayNameStylesEnabled = useDisplayNameStylesEnabled.useDisplayNameStylesEnabled(first);
-  DisplayNameStylesFlywheelExperiment;
-  if (displayNameStylesEnabled) {
-    if (null != displayNameStyles) {
-      return obj[displayNameStyles.fontId];
-    }
-  }
-}) : ((arg0) => {
+export const useDisplayNameStylesFont = function useDisplayNameStylesFont(arg0) {
   ({ displayNameStyles, ignoreDisabledStylesSetting } = arg0);
   if (ignoreDisabledStylesSetting === undefined) {
     ignoreDisabledStylesSetting = false;
@@ -48,4 +29,4 @@ export const useDisplayNameStylesFont = ReactCompilerGating.isReactCompilerEnabl
       return obj[displayNameStyles.fontId];
     }
   }
-});
+};

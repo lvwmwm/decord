@@ -1,17 +1,17 @@
-// Module ID: 4678
-// Function ID: 4679
+// Module ID: 4675
+// Function ID: 4676
 // Name: GuildThemeRuntimeStore
-// Dependencies: [4679, 2067, 4612, 1078, 4683, 2066, 12, 504, 577, 2]
+// Dependencies: [4676, 2063, 4609, 1074, 4680, 2062, 12, 504, 573, 2]
 
-// Module 4678 (GuildThemeRuntimeStore)
+// Module 4675 (GuildThemeRuntimeStore)
 import _mod12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 2066 */;
-import Powerups from "Powerups" /* 4683 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 2062 */;
+import Powerups from "Powerups" /* 4680 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4676 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
 
 require = fn;
 function snapshotSelectedGuildId(guildId) {
@@ -23,7 +23,7 @@ function snapshotSelectedGuildId(guildId) {
     }
     let flag = flag3;
   } else {
-    guild = GuildStore.getGuild(guildId);
+    const guild = GuildStore.getGuild(guildId);
     let guildTheme;
     if (guild != null) {
       guildTheme = guild.guildTheme;
@@ -64,7 +64,7 @@ function handleSavedGuildTheme(guildId) {
   let tmp = guildId === SelectedGuildStore.getGuildId();
   if (tmp) {
     const cloneGuildThemeResult = guildThemeSerialization.cloneGuildTheme(guildId.guildTheme);
-    guild = GuildStore.getGuild(guildId);
+    const guild = GuildStore.getGuild(guildId);
     let hasItem;
     if (guild != null) {
       const features = guild.features;
@@ -92,7 +92,7 @@ function handleSavedGuildTheme(guildId) {
   }
   return tmp;
 }
-const GuildFeatures = fn(1078).GuildFeatures;
+const GuildFeatures = fn(1074).GuildFeatures;
 let c6 = null;
 let c7 = null;
 const Store = initializeDefault.Store;

@@ -1,14 +1,14 @@
-// Module ID: 14126
-// Function ID: 14127
+// Module ID: 14116
+// Function ID: 14117
 // Name: NetworkQuality
-// Dependencies: [4839, 1078, 4819, 2]
+// Dependencies: [4837, 1074, 4817, 2]
 
-// Module 14126 (NetworkQuality)
-import TimeUtils from "TimeUtils" /* 4819 */;
-import NetworkStore from "NetworkStore" /* 4839 */;
+// Module 14116 (NetworkQuality)
+import TimeUtils from "TimeUtils" /* 4817 */;
+import NetworkStore from "NetworkStore" /* 4837 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ NetworkConnectionTypes: c3, NetworkConnectionSpeeds: closure_4 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("lib/NetworkQuality.tsx");

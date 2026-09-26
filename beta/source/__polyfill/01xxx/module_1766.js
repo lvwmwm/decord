@@ -1,15 +1,15 @@
 // Module ID: 1766
 // Function ID: 1767
-// Dependencies: [32, 41, 42, 93, 95, 98, 1711]
+// Dependencies: [41, 42, 93, 95, 98, 1689, 1709, 1707]
 
 // Module 1766
-import _slicedToArray_mod from "module_32" /* 32 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c2 from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let CurvedTransition = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,19 +29,18 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let _slicedToArray = _slicedToArray_mod;
-let closure_5 = { code: "function pnpm_SlideTs1(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(values.targetOriginX,config))},initialValues:{originX:values.targetOriginX+values.windowWidth,...initialValues},callback:callback};}" };
-class SlideInRight {
+let closure_6 = { code: "function pnpm_CurvedTransitionTs1(values){const{delayFunction,delay,withTiming,duration,easing,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,withTiming(values.targetOriginX,{duration:duration,easing:easing.easingX})),originY:delayFunction(delay,withTiming(values.targetOriginY,{duration:duration,easing:easing.easingY})),width:delayFunction(delay,withTiming(values.targetWidth,{duration:duration,easing:easing.easingWidth})),height:delayFunction(delay,withTiming(values.targetHeight,{duration:duration,easing:easing.easingHeight}))},callback:callback};}" };
+class CurvedTransition {
   constructor() {
     self = this;
     items = [...arguments];
     closure_0 = undefined;
-    tmp = closure_1(this, SlideOutDown);
+    tmp = c2(this, CurvedTransition);
     items1 = [...items];
-    tmp2 = closure_3;
-    obj = closure_3(SlideOutDown);
-    tmp3 = c2;
-    if (closure_4()) {
+    tmp2 = closure_4;
+    obj = closure_4(CurvedTransition);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
       constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
@@ -50,424 +49,117 @@ class SlideInRight {
     }
     tmp3Result = tmp3(self, constructResult);
     closure_0 = tmp3Result;
+    Easing = closure_0(closure_1[5]).Easing;
+    tmp3Result.easingXV = Easing.in(closure_0(closure_1[5]).Easing.ease);
+    Easing2 = closure_0(closure_1[5]).Easing;
+    tmp3Result.easingYV = Easing2.out(closure_0(closure_1[5]).Easing.ease);
+    Easing3 = closure_0(closure_1[5]).Easing;
+    tmp3Result.easingWidthV = Easing3.in(closure_0(closure_1[5]).Easing.exp);
+    Easing4 = closure_0(closure_1[5]).Easing;
+    tmp3Result.easingHeightV = Easing4.out(closure_0(closure_1[5]).Easing.exp);
     tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = _slicedToArray(closure_0.getAnimationAndConfig(), 2);
-      const animation = tmp2[0];
-      closure_2 = tmp4;
-      const delay = closure_0.getDelay();
-      const callbackV = closure_0.callbackV;
-      const initialValues = closure_0.initialValues;
-      const fn = function e(targetOriginX) {
-        const obj = { animations: { originX: delayFunction(delay, first(targetOriginX.targetOriginX, closure_2)) }, initialValues: null, callback: null };
-        const merged = Object.assign(initialValues);
-        obj.initialValues = { originX: targetOriginX.targetOriginX + targetOriginX.windowWidth };
+      delayFunction = delayFunction.getDelayFunction();
+      const callbackV = delayFunction.callbackV;
+      const delay = delayFunction.getDelay();
+      let num = delayFunction.durationV;
+      if (num == null) {
+        num = 300;
+      }
+      const easing = { easingX: tmp.easingXV, easingY: tmp.easingYV, easingWidth: tmp.easingWidthV, easingHeight: tmp.easingHeightV };
+      const fn = function n(originX) {
+        const obj = { initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: null, callback: null };
+        const size = { originX: delayFunction(delay, delayFunction(1709).withTiming(originX.targetOriginX, { duration: num, easing: obj.easingX })), originY: null, width: null, height: null };
+        const obj2 = { duration: num, easing: obj.easingX };
+        const obj3 = delayFunction(1709);
+        size.originY = delayFunction(delay, delayFunction(1709).withTiming(originX.targetOriginY, { duration: num, easing: obj.easingY }));
+        const obj4 = { duration: num, easing: obj.easingY };
+        const obj5 = delayFunction(1709);
+        size.width = delayFunction(delay, delayFunction(1709).withTiming(originX.targetWidth, { duration: num, easing: obj.easingWidth }));
+        const obj6 = { duration: num, easing: obj.easingWidth };
+        const obj7 = delayFunction(1709);
+        size.height = delayFunction(delay, delayFunction(1709).withTiming(originX.targetHeight, { duration: num, easing: obj.easingHeight }));
+        obj.animations = size;
         obj.callback = callbackV;
         return obj;
       };
-      fn.__closure = { delayFunction, delay, animation, config: tmp2[1], initialValues, callback: callbackV };
-      fn.__workletHash = 10760418577189;
+      fn.__closure = { delayFunction, delay, withTiming: CurvedTransition(1709).withTiming, duration: num, easing, callback: callbackV };
+      fn.__workletHash = 8113645568730;
       fn.__initData = __initData;
       return fn;
     };
     return tmp3Result;
   }
 }
-_slicedToArray = SlideInRight;
-_inherits(SlideInRight, fn(1711).ComplexAnimationBuilder);
+_inherits(CurvedTransition, fn(1707).BaseAnimationBuilder);
 const entry = {
-  key: "createInstance",
-  value: function createInstance() {
-    return _slicedToArray();
+  key: "easingX",
+  value: function easingX(easingXV) {
+    this.easingXV = easingXV;
+    return this;
   }
 };
-let items = [entry];
-const importDefaultResultResult = _createClass(SlideInRight, null, items);
-importDefaultResultResult.presetName = "SlideInRight";
-let closure_6 = { code: "function pnpm_SlideTs2(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(values.targetOriginX,config))},initialValues:{originX:values.targetOriginX-values.windowWidth,...initialValues},callback:callback};}" };
-class SlideInLeft {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_1(this, SlideOutDown);
-    items1 = [...items];
-    tmp2 = closure_3;
-    obj = closure_3(SlideOutDown);
-    tmp3 = c2;
-    if (closure_4()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
+let items = [
+  entry,
+  {
+    key: "easingY",
+    value: function easingY(easingYV) {
+      this.easingYV = easingYV;
+      return this;
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = _slicedToArray(closure_0.getAnimationAndConfig(), 2);
-      const animation = tmp2[0];
-      closure_2 = tmp4;
-      const delay = closure_0.getDelay();
-      const callbackV = closure_0.callbackV;
-      const initialValues = closure_0.initialValues;
-      const fn = function e(targetOriginX) {
-        const obj = { animations: { originX: delayFunction(delay, first(targetOriginX.targetOriginX, closure_2)) }, initialValues: null, callback: null };
-        const merged = Object.assign(initialValues);
-        obj.initialValues = { originX: targetOriginX.targetOriginX - targetOriginX.windowWidth };
-        obj.callback = callbackV;
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, animation, config: tmp2[1], initialValues, callback: callbackV };
-      fn.__workletHash = 2180499422144;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
+  },
+  {
+    key: "easingWidth",
+    value: function easingWidth(easingWidthV) {
+      this.easingWidthV = easingWidthV;
+      return this;
+    }
+  },
+  {
+    key: "easingHeight",
+    value: function easingHeight(easingHeightV) {
+      this.easingHeightV = easingHeightV;
+      return this;
+    }
   }
-}
-_slicedToArray = SlideInLeft;
-_inherits(SlideInLeft, fn(1711).ComplexAnimationBuilder);
+];
 const entry1 = {
   key: "createInstance",
   value: function createInstance() {
-    return _slicedToArray();
+    return CurvedTransition();
   }
 };
-let items1 = [entry1];
-const importDefaultResultResult1 = _createClass(SlideInLeft, null, items1);
-importDefaultResultResult1.presetName = "SlideInLeft";
-let closure_7 = { code: "function pnpm_SlideTs3(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(Math.max(values.currentOriginX+values.windowWidth,values.windowWidth),config))},initialValues:{originX:values.currentOriginX,...initialValues},callback:callback};}" };
-class SlideOutRight {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_1(this, SlideOutDown);
-    items1 = [...items];
-    tmp2 = closure_3;
-    obj = closure_3(SlideOutDown);
-    tmp3 = c2;
-    if (closure_4()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
+let items1 = [
+  entry1,
+  {
+    key: "easingX",
+    value: function easingX(arg0) {
+      const instance = this.createInstance();
+      return instance.easingX(arg0);
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = _slicedToArray(closure_0.getAnimationAndConfig(), 2);
-      const animation = tmp2[0];
-      closure_2 = tmp4;
-      const delay = closure_0.getDelay();
-      const callbackV = closure_0.callbackV;
-      const initialValues = closure_0.initialValues;
-      const fn = function e(currentOriginX) {
-        const obj = { animations: { originX: delayFunction(delay, first(Math.max(currentOriginX.currentOriginX + currentOriginX.windowWidth, currentOriginX.windowWidth), closure_2)) }, initialValues: null, callback: null };
-        const merged = Object.assign(initialValues);
-        obj.initialValues = { originX: currentOriginX.currentOriginX };
-        obj.callback = callbackV;
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, animation, config: tmp2[1], initialValues, callback: callbackV };
-      fn.__workletHash = 12812296890492;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
-  }
-}
-_slicedToArray = SlideOutRight;
-_inherits(SlideOutRight, fn(1711).ComplexAnimationBuilder);
-const entry2 = {
-  key: "createInstance",
-  value: function createInstance() {
-    return _slicedToArray();
-  }
-};
-const items2 = [entry2];
-const importDefaultResultResult2 = _createClass(SlideOutRight, null, items2);
-importDefaultResultResult2.presetName = "SlideOutRight";
-let closure_8 = { code: "function pnpm_SlideTs4(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(Math.min(values.currentOriginX-values.windowWidth,-values.windowWidth),config))},initialValues:{originX:values.currentOriginX,...initialValues},callback:callback};}" };
-class SlideOutLeft {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_1(this, SlideOutDown);
-    items1 = [...items];
-    tmp2 = closure_3;
-    obj = closure_3(SlideOutDown);
-    tmp3 = c2;
-    if (closure_4()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
+  },
+  {
+    key: "easingY",
+    value: function easingY(arg0) {
+      const instance = this.createInstance();
+      return instance.easingY(arg0);
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = _slicedToArray(closure_0.getAnimationAndConfig(), 2);
-      const animation = tmp2[0];
-      closure_2 = tmp4;
-      const delay = closure_0.getDelay();
-      const callbackV = closure_0.callbackV;
-      const initialValues = closure_0.initialValues;
-      const fn = function e(currentOriginX) {
-        const obj = { animations: { originX: delayFunction(delay, first(Math.min(currentOriginX.currentOriginX - currentOriginX.windowWidth, -currentOriginX.windowWidth), closure_2)) }, initialValues: null, callback: null };
-        const merged = Object.assign(initialValues);
-        obj.initialValues = { originX: currentOriginX.currentOriginX };
-        obj.callback = callbackV;
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, animation, config: tmp2[1], initialValues, callback: callbackV };
-      fn.__workletHash = 6273927341006;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
-  }
-}
-_slicedToArray = SlideOutLeft;
-_inherits(SlideOutLeft, fn(1711).ComplexAnimationBuilder);
-const entry3 = {
-  key: "createInstance",
-  value: function createInstance() {
-    return _slicedToArray();
-  }
-};
-const items3 = [entry3];
-const importDefaultResultResult3 = _createClass(SlideOutLeft, null, items3);
-importDefaultResultResult3.presetName = "SlideOutLeft";
-let closure_9 = { code: "function pnpm_SlideTs5(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(values.targetOriginY,config))},initialValues:{originY:-values.windowHeight,...initialValues},callback:callback};}" };
-class SlideInUp {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_1(this, SlideOutDown);
-    items1 = [...items];
-    tmp2 = closure_3;
-    obj = closure_3(SlideOutDown);
-    tmp3 = c2;
-    if (closure_4()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
+  },
+  {
+    key: "easingWidth",
+    value: function easingWidth(arg0) {
+      const instance = this.createInstance();
+      return instance.easingWidth(arg0);
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = _slicedToArray(closure_0.getAnimationAndConfig(), 2);
-      const animation = tmp2[0];
-      closure_2 = tmp4;
-      const delay = closure_0.getDelay();
-      const callbackV = closure_0.callbackV;
-      const initialValues = closure_0.initialValues;
-      const fn = function e(originY) {
-        const obj = { animations: { originY: delayFunction(delay, first(originY.targetOriginY, closure_2)) }, initialValues: null, callback: null };
-        const merged = Object.assign(initialValues);
-        obj.initialValues = { originY: -originY.windowHeight };
-        obj.callback = callbackV;
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, animation, config: tmp2[1], initialValues, callback: callbackV };
-      fn.__workletHash = 9846507393044;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
-  }
-}
-_slicedToArray = SlideInUp;
-_inherits(SlideInUp, fn(1711).ComplexAnimationBuilder);
-const entry4 = {
-  key: "createInstance",
-  value: function createInstance() {
-    return _slicedToArray();
-  }
-};
-const items4 = [entry4];
-const importDefaultResultResult4 = _createClass(SlideInUp, null, items4);
-importDefaultResultResult4.presetName = "SlideInUp";
-let closure_10 = { code: "function pnpm_SlideTs6(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(values.targetOriginY,config))},initialValues:{originY:values.targetOriginY+values.windowHeight,...initialValues},callback:callback};}" };
-class SlideInDown {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_1(this, SlideOutDown);
-    items1 = [...items];
-    tmp2 = closure_3;
-    obj = closure_3(SlideOutDown);
-    tmp3 = c2;
-    if (closure_4()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
+  },
+  {
+    key: "easingHeight",
+    value: function easingHeight(arg0) {
+      const instance = this.createInstance();
+      return instance.easingHeight(arg0);
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = _slicedToArray(closure_0.getAnimationAndConfig(), 2);
-      const animation = tmp2[0];
-      closure_2 = tmp4;
-      const delay = closure_0.getDelay();
-      const callbackV = closure_0.callbackV;
-      const initialValues = closure_0.initialValues;
-      const fn = function e(targetOriginY) {
-        const obj = { animations: { originY: delayFunction(delay, first(targetOriginY.targetOriginY, closure_2)) }, initialValues: null, callback: null };
-        const merged = Object.assign(initialValues);
-        obj.initialValues = { originY: targetOriginY.targetOriginY + targetOriginY.windowHeight };
-        obj.callback = callbackV;
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, animation, config: tmp2[1], initialValues, callback: callbackV };
-      fn.__workletHash = 9348728185019;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
   }
-}
-_slicedToArray = SlideInDown;
-_inherits(SlideInDown, fn(1711).ComplexAnimationBuilder);
-const entry5 = {
-  key: "createInstance",
-  value: function createInstance() {
-    return _slicedToArray();
-  }
-};
-const items5 = [entry5];
-const importDefaultResultResult5 = _createClass(SlideInDown, null, items5);
-importDefaultResultResult5.presetName = "SlideInDown";
-let closure_11 = { code: "function pnpm_SlideTs7(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(Math.min(values.currentOriginY-values.windowHeight,-values.windowHeight),config))},initialValues:{originY:values.currentOriginY,...initialValues},callback:callback};}" };
-class SlideOutUp {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_1(this, SlideOutDown);
-    items1 = [...items];
-    tmp2 = closure_3;
-    obj = closure_3(SlideOutDown);
-    tmp3 = c2;
-    if (closure_4()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = _slicedToArray(closure_0.getAnimationAndConfig(), 2);
-      const animation = tmp2[0];
-      closure_2 = tmp4;
-      const delay = closure_0.getDelay();
-      const callbackV = closure_0.callbackV;
-      const initialValues = closure_0.initialValues;
-      const fn = function e(currentOriginY) {
-        const obj = { animations: { originY: delayFunction(delay, first(Math.min(currentOriginY.currentOriginY - currentOriginY.windowHeight, -currentOriginY.windowHeight), closure_2)) }, initialValues: null, callback: null };
-        const merged = Object.assign(initialValues);
-        obj.initialValues = { originY: currentOriginY.currentOriginY };
-        obj.callback = callbackV;
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, animation, config: tmp2[1], initialValues, callback: callbackV };
-      fn.__workletHash = 14850009730573;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
-  }
-}
-_slicedToArray = SlideOutUp;
-_inherits(SlideOutUp, fn(1711).ComplexAnimationBuilder);
-const entry6 = {
-  key: "createInstance",
-  value: function createInstance() {
-    return _slicedToArray();
-  }
-};
-const items6 = [entry6];
-const importDefaultResultResult6 = _createClass(SlideOutUp, null, items6);
-importDefaultResultResult6.presetName = "SlideOutUp";
-let closure_12 = { code: "function pnpm_SlideTs8(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(Math.max(values.currentOriginY+values.windowHeight,values.windowHeight),config))},initialValues:{originY:values.currentOriginY,...initialValues},callback:callback};}" };
-class SlideOutDown {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_1(this, SlideOutDown);
-    items1 = [...items];
-    tmp2 = closure_3;
-    obj = closure_3(SlideOutDown);
-    tmp3 = c2;
-    if (closure_4()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = _slicedToArray(closure_0.getAnimationAndConfig(), 2);
-      const animation = tmp2[0];
-      closure_2 = tmp4;
-      const delay = closure_0.getDelay();
-      const callbackV = closure_0.callbackV;
-      const initialValues = closure_0.initialValues;
-      const fn = function e(currentOriginY) {
-        const obj = { animations: { originY: delayFunction(delay, first(Math.max(currentOriginY.currentOriginY + currentOriginY.windowHeight, currentOriginY.windowHeight), closure_2)) }, initialValues: null, callback: null };
-        const merged = Object.assign(initialValues);
-        obj.initialValues = { originY: currentOriginY.currentOriginY };
-        obj.callback = callbackV;
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, animation, config: tmp2[1], initialValues, callback: callbackV };
-      fn.__workletHash = 14065812257143;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
-  }
-}
-_slicedToArray = SlideOutDown;
-_inherits(SlideOutDown, fn(1711).ComplexAnimationBuilder);
-const entry7 = {
-  key: "createInstance",
-  value: function createInstance() {
-    return _slicedToArray();
-  }
-};
-const items7 = [entry7];
-const importDefaultResultResult7 = _createClass(SlideOutDown, null, items7);
-importDefaultResultResult7.presetName = "SlideOutDown";
+];
+const importDefaultResultResult = _createClass(CurvedTransition, items, items1);
+importDefaultResultResult.presetName = "CurvedTransition";
 
-export const SlideInRight = importDefaultResultResult;
-export const SlideInLeft = importDefaultResultResult1;
-export const SlideOutRight = importDefaultResultResult2;
-export const SlideOutLeft = importDefaultResultResult3;
-export const SlideInUp = importDefaultResultResult4;
-export const SlideInDown = importDefaultResultResult5;
-export const SlideOutUp = importDefaultResultResult6;
-export const SlideOutDown = importDefaultResultResult7;
+export const CurvedTransition = importDefaultResultResult;

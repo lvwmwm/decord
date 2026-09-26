@@ -1,9 +1,9 @@
 // Module ID: 5564
 // Function ID: 5565
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 5564
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "1fb128da69fdf1c55ef0fbbe555babd7", name: "img_account_sync_league_of_legends_white", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "b8491165af3ebfd07b4e58fba6104e2b", name: "img_account_sync_steam_white", type: "png" });

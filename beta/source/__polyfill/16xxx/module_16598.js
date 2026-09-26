@@ -1,9 +1,9 @@
 // Module ID: 16598
 // Function ID: 16599
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 16598
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 327, height: 285, scales: [2, 3], hash: "21d9af173c2aa764d18866600cd204ee", name: "onboarding_v2_upsell", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/tabs/guilds/empty_states/images", width: 148, height: 107, scales: [2, 3, 4], hash: "0068bea3a7b26b1d06c599bf3096c534", name: "channels-empty", type: "png" });

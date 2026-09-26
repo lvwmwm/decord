@@ -1,15 +1,15 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14785
+// Function ID: 14786
 // Name: guilds
-// Dependencies: [2063, 2067, 1078, 8647, 9612, 9609, 2]
+// Dependencies: [2059, 2063, 1074, 8642, 9616, 9613, 2]
 
-// Module 14795 (guilds)
-import GuildRecord from "GuildRecord" /* 2063 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8647 */;
-import RPCErrorDefault from "RPCError" /* 9609 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9612 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import Constants from "Constants" /* 1078 */;
+// Module 14785 (guilds)
+import GuildRecord from "GuildRecord" /* 2059 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8642 */;
+import RPCErrorDefault from "RPCError" /* 9613 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9616 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const getGuildIconURL = GuildRecord.getGuildIconURL;

@@ -1,36 +1,144 @@
 // Module ID: 6998
 // Function ID: 6999
-// Dependencies: [19, 6997, 6967]
-// Exports: useGestureRelationsUpdater
+// Dependencies: [32, 19, 6996, 6986, 6999, 6972, 6987, 6934]
+// Exports: prepareConfigForNativeSide, resolveInternalConfigProps, useClonedAndRemappedConfig
 
 // Module 6998
-import traverseAndConfigureRelations from "traverseAndConfigureRelations" /* 6997 */;
-import noop from "module_19" /* 19 */;
+import _mod6972 from "module_6972" /* 6972 */;
+import hash from "hash" /* 6986 */;
+import allowedNativeProps2 from "allowedNativeProps" /* 6987 */;
+import _mod6999 from "module_6999" /* 6999 */;
+import _slicedToArray from "module_32" /* 32 */;
 
-({ useEffect: c2, useMemo: c3 } = noop);
+require = fn;
+const useMemo = fn(19).useMemo;
+const map = new Map();
+function DEFAULT_PROPS_TRANSFORMER(arg0) {
+  return arg0;
+}
+function isGestureEnabled(gestures) {
+  if (obj.isComposedGesture(gestures)) {
+    gestures = gestures.gestures;
+    let someResult = gestures.some(isGestureEnabled);
+  } else {
+    someResult = false !== hash.maybeUnpackValue(gestures.config.enabled);
+    const tmpResult = hash;
+  }
+  return someResult;
+}
 
-export const useGestureRelationsUpdater = function useGestureRelationsUpdater(gesture) {
-  closure_0 = gesture;
-  const items = [gesture];
-  const tmp = closure_3(() => {
-    let configureRelationsResult = null;
-    if (closure_0) {
-      configureRelationsResult = traverseAndConfigureRelations.configureRelations(tmp);
+export { isGestureEnabled };
+export const resolveInternalConfigProps = function resolveInternalConfigProps(useAnimated) {
+  useAnimated = useAnimated.useAnimated;
+  if (!useAnimated) {
+    useAnimated = _mod6999.isNativeAnimatedEvent(useAnimated.onUpdate);
+  }
+  useAnimated.dispatchesAnimatedEvents = useAnimated;
+  if (useAnimated.dispatchesAnimatedEvents) {
+    useAnimated.disableReanimated = true;
+  }
+  const disableReanimated = useAnimated.disableReanimated;
+  let result = !disableReanimated;
+  if (!disableReanimated) {
+    result = undefined !== _mod6972.Reanimated;
+  }
+  if (result) {
+    result = hash.hasWorkletEventHandlers(useAnimated);
+  }
+  if (result) {
+    result = !useAnimated.dispatchesAnimatedEvents;
+  }
+  useAnimated.shouldUseReanimatedDetector = result;
+  useAnimated.needsPointerData = _mod6999.shouldHandleTouchEvents(useAnimated);
+};
+export const prepareConfigForNativeSide = function prepareConfigForNativeSide(arg0, shouldUseReanimatedDetector) {
+  shouldUseReanimatedDetector = shouldUseReanimatedDetector.shouldUseReanimatedDetector;
+  if (shouldUseReanimatedDetector) {
+    shouldUseReanimatedDetector = !hash.maybeUnpackValue(shouldUseReanimatedDetector.runOnJS);
+  }
+  const obj2 = { dispatchesReanimatedEvents: shouldUseReanimatedDetector };
+  const PropsWhiteLists = allowedNativeProps2.PropsWhiteLists;
+  let EMPTY_WHITE_LIST = PropsWhiteLists.get(arg0);
+  if (EMPTY_WHITE_LIST == null) {
+    EMPTY_WHITE_LIST = allowedNativeProps2.EMPTY_WHITE_LIST;
+  }
+  const entries = Object.entries(shouldUseReanimatedDetector);
+  while (tmp12 !== undefined) {
+    [first, iter] = tmp13;
+    let tmp17 = first;
+    let tmp19 = require;
+    let allowedNativeProps = allowedNativeProps2.allowedNativeProps;
+    if (!allowedNativeProps.has(first)) {
+      if (!EMPTY_WHITE_LIST.has(tmp17)) {
+        let PropsToFilter = tmp19(6987).PropsToFilter;
+        if (PropsToFilter.has(tmp17)) {
+          continue;
+        } else {
+          let _console = console;
+          let tmp19Result = tmp19(6934);
+          let _HermesInternal = HermesInternal;
+          let str = "";
+          let str2 = " is not a valid property for ";
+          let str3 = " and will be ignored.";
+          let warnResult = console.warn(tmp19Result.tagMessage("" + tmp17 + " is not a valid property for " + arg0 + " and will be ignored."));
+          continue;
+        }
+        continue;
+      }
     }
-    return configureRelationsResult;
-  }, items);
+    let Reanimated = tmp19(6972).Reanimated;
+    let isSharedValueResult;
+    if (Reanimated != null) {
+      isSharedValueResult = Reanimated.isSharedValue(iter);
+    }
+    obj2[tmp17] = isSharedValueResult ? iter.value : iter;
+  }
+  return obj2;
+};
+export const useClonedAndRemappedConfig = function useClonedAndRemappedConfig(gestureHandlerProps, map, transformHoverProps) {
+  closure_0 = gestureHandlerProps;
+  let tmp = map;
+  if (map === undefined) {
+    tmp = map;
+  }
   closure_1 = tmp;
-  const items1 = [tmp];
-  closure_2(() => {
-    if (closure_1) {
-      const _requestAnimationFrame = requestAnimationFrame;
-      closure_0 = requestAnimationFrame(() => {
-        const item = closure_1_1.forEach((item, index) => {
-          const NativeProxy = closure_1_0(closure_1_1[2]).NativeProxy;
-          NativeProxy.configureRelations(index, item);
-        });
-      });
-      return () => cancelAnimationFrame(closure_0);
+  let tmp2 = transformHoverProps;
+  if (transformHoverProps === undefined) {
+    tmp2 = DEFAULT_PROPS_TRANSFORMER;
+  }
+  closure_2 = tmp2;
+  const items = [gestureHandlerProps, tmp, tmp2];
+  return useMemo(() => {
+    const obj = {};
+    const merged = Object.assign(closure_0);
+    const item = closure_1.forEach((item, index) => {
+      if (index in obj) {
+        tmp3[item] = tmp3[index];
+        delete tmp[tmp2];
+      }
+    });
+    const tmp3 = closure_2(obj);
+    let useAnimated = tmp3.useAnimated;
+    if (!useAnimated) {
+      useAnimated = _mod6999.isNativeAnimatedEvent(tmp3.onUpdate);
     }
-  }, items1);
+    tmp3.dispatchesAnimatedEvents = useAnimated;
+    if (tmp3.dispatchesAnimatedEvents) {
+      tmp3.disableReanimated = true;
+    }
+    const disableReanimated = tmp3.disableReanimated;
+    let result = !disableReanimated;
+    if (!disableReanimated) {
+      result = undefined !== _mod6972.Reanimated;
+    }
+    if (result) {
+      result = hash.hasWorkletEventHandlers(tmp3);
+    }
+    if (result) {
+      result = !tmp3.dispatchesAnimatedEvents;
+    }
+    tmp3.shouldUseReanimatedDetector = result;
+    tmp3.needsPointerData = _mod6999.shouldHandleTouchEvents(tmp3);
+    return tmp3;
+  }, items);
 };

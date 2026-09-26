@@ -1,116 +1,26 @@
-// Module ID: 15399
-// Function ID: 15400
+// Module ID: 15403
+// Function ID: 15404
 // Name: VideoQuestPlayer
-// Dependencies: [32, 19, 7978, 5695, 21, 558, 568, 15392, 11643, 10606, 4415, 15291, 15400, 7997, 15402, 1367, 11672, 10600, 15410, 15308, 2]
+// Dependencies: [32, 19, 7973, 5693, 21, 15396, 11767, 11577, 4411, 15295, 15404, 7992, 15406, 1363, 11796, 11571, 15414, 15307, 2]
 
-// Module 15399 (VideoQuestPlayer)
-import QuestActionCreators from "QuestActionCreators" /* 10600 */;
-import AssetUtils from "AssetUtils" /* 10606 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11672 */;
-import SimpleMuxWrapper from "SimpleMuxWrapper" /* 15402 */;
-import VideoQuestCaptions from "VideoQuestCaptions" /* 15410 */;
+// Module 15403 (VideoQuestPlayer)
+import QuestActionCreators from "QuestActionCreators" /* 11571 */;
+import AssetUtils from "AssetUtils" /* 11577 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11796 */;
+import SimpleMuxWrapper from "SimpleMuxWrapper" /* 15406 */;
+import VideoQuestCaptions from "VideoQuestCaptions" /* 15414 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7978 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7973 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5695).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5693).QuestsExperimentLocations;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");
 
-export const PlayerState = fn(15291).PlayerState;
-export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) => {
-  const cResult = onLoad(onToggleFullscreen[6]).c(100);
-  ({ style, onLoad } = onEnd);
-  onEnd = onEnd.onEnd;
-  onToggleFullscreen = onEnd.onToggleFullscreen;
-  const orientation = onEnd.orientation;
-  const contentInsets = onEnd.contentInsets;
-  ({ handleToggleCaptions, handleOpenTranscript, isFullscreen, externallyPaused, captionsEnabled, sourceQuestContent, hasCaptionAsset, hasTranscriptAsset } = onEnd);
-  VideoQuestUIStore = undefined !== captionsEnabled && captionsEnabled;
-  let obj = onLoad(onToggleFullscreen[6]);
-  const videoQuestModalContext = onLoad(onToggleFullscreen[7]).useVideoQuestModalContext();
-  const quest = videoQuestModalContext.quest;
-  const tmpResult = onLoad(onToggleFullscreen[7]);
-  const questTaskDetails = onLoad(onToggleFullscreen[8]).useQuestTaskDetails(quest);
-  const userStatus = quest.userStatus;
-  if (userStatus != null) {
-    const completedAt = userStatus.completedAt;
-  }
-  if (cResult[0] !== quest) {
-    const tmpResult5 = tmp(tmp2[9]);
-    const questAsset = tmpResult5.getQuestAsset(quest, tmp(tmp2[9]).QuestAssetType.VIDEO_PLAYER_VIDEO, undefined, true);
-    cResult[0] = quest;
-    cResult[1] = questAsset;
-  }
-  if (cResult[2] !== quest) {
-    const tmpResult6 = tmp(tmp2[9]);
-    const questAsset1 = tmpResult6.getQuestAsset(quest, tmp(tmp2[9]).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS, undefined, true);
-    cResult[2] = quest;
-    cResult[3] = questAsset1;
-    let tmp10 = questAsset1;
-  } else {
-    tmp10 = cResult[3];
-  }
-  let url;
-  if (tmp10 != null) {
-    url = tmp10.url;
-  }
-  if (null != url) {
-    let VIDEO_PLAYER_VIDEO = tmp(tmp2[9]).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
-  } else {
-    VIDEO_PLAYER_VIDEO = tmp(tmp2[9]).QuestAssetType.VIDEO_PLAYER_VIDEO;
-  }
-  const tmp15 = orientation(contentInsets.useState(questTaskDetails.targetSeconds), 2);
-  duration = tmp15[0];
-  closure_9 = tmp15[1];
-  const targetSeconds = questTaskDetails.targetSeconds;
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor(arg0) {
-        return onEnd.setVideoProgress;
-      }
-    }
-    cResult[4] = B;
-    const tmp17 = B;
-  } else {
-    class B {
-      constructor(arg0) {
-        return onEnd.setVideoProgress;
-      }
-    }
-  }
-  const tmpResult4 = onLoad(onToggleFullscreen[8]);
-  closure_11 = VideoQuestUIStore(tmp17);
-  if (cResult[5] === duration) {
-    class B {
-      constructor(arg0) {
-        return onEnd.setVideoProgress;
-      }
-    }
-  }
-  class G {
-    constructor(arg0) {
-      tmp = onEnd.videoProgress[quest.id];
-      if (tmp == null) {
-        obj = { timestampSec: null, duration: null, maxTimestampSec: null };
-        tmp2 = closure_7;
-        obj.timestampSec = closure_7.progressSeconds;
-        tmp3 = closure_8;
-        obj.duration = closure_8;
-        obj.maxTimestampSec = closure_7.progressSeconds;
-        tmp = obj;
-      }
-      return tmp;
-    }
-  }
-  cResult[5] = duration;
-  cResult[6] = quest.id;
-  cResult[7] = questTaskDetails.progressSeconds;
-  cResult[8] = G;
-}) : ((onLoad) => {
+export const PlayerState = fn(15295).PlayerState;
+export const VideoQuestPlayer = noop.memo((onLoad) => {
   onLoad = onLoad.onLoad;
   const onEnd = onLoad.onEnd;
   const onToggleFullscreen = onLoad.onToggleFullscreen;
@@ -131,7 +41,7 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
   }
   let memo;
   let memo1;
-  duration = undefined;
+  let duration;
   closure_11 = undefined;
   let targetSeconds;
   closure_13 = undefined;
@@ -154,10 +64,10 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
   let videoTitle;
   let str;
   let ref;
-  const videoQuestModalContext = onLoad(onToggleFullscreen[7]).useVideoQuestModalContext();
+  const videoQuestModalContext = onLoad(onToggleFullscreen[5]).useVideoQuestModalContext();
   const quest = videoQuestModalContext.quest;
-  let obj = onLoad(onToggleFullscreen[7]);
-  const questTaskDetails = onLoad(onToggleFullscreen[8]).useQuestTaskDetails(quest);
+  let obj = onLoad(onToggleFullscreen[5]);
+  const questTaskDetails = onLoad(onToggleFullscreen[6]).useQuestTaskDetails(quest);
   const userStatus = quest.userStatus;
   let completedAt;
   if (userStatus != null) {
@@ -172,9 +82,9 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
     url = memo1.url;
   }
   if (null != url) {
-    let VIDEO_PLAYER_VIDEO = tmp(tmp2[9]).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
+    let VIDEO_PLAYER_VIDEO = tmp(tmp2[7]).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
   } else {
-    VIDEO_PLAYER_VIDEO = tmp(tmp2[9]).QuestAssetType.VIDEO_PLAYER_VIDEO;
+    VIDEO_PLAYER_VIDEO = tmp(tmp2[7]).QuestAssetType.VIDEO_PLAYER_VIDEO;
   }
   const tmp10 = orientation(contentInsets.useState(questTaskDetails.targetSeconds), 2);
   duration = tmp10[0];
@@ -182,7 +92,7 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
   targetSeconds = questTaskDetails.targetSeconds;
   const tmp12 = flag((setVideoProgress) => setVideoProgress.setVideoProgress);
   closure_13 = tmp12;
-  let obj2 = onLoad(onToggleFullscreen[8]);
+  let obj2 = onLoad(onToggleFullscreen[6]);
   ref = obj3.useRef(null);
   const tmp13 = flag((arg0) => {
     let tmp = arg0.videoProgress[quest.id];
@@ -191,10 +101,10 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
       tmp = obj;
     }
     return tmp;
-  }, onLoad(onToggleFullscreen[10]).shallow);
-  [tmp16, c15] = orientation(contentInsets.useState(onLoad(onToggleFullscreen[11]).PlayerState.LOADING), 2);
+  }, onLoad(onToggleFullscreen[8]).shallow);
+  [tmp16, c15] = orientation(contentInsets.useState(onLoad(onToggleFullscreen[9]).PlayerState.LOADING), 2);
   closure_16 = obj3.useRef(questTaskDetails.progressSeconds);
-  const tmp17 = onEnd(onToggleFullscreen[12])({ duration, isQuestCompleted: null != completedAt, playerState: tmp16, questId: quest.id, videoSessionId: videoQuestModalContext.videoSessionId, videoAssetId: VIDEO_PLAYER_VIDEO, sourceQuestContent });
+  const tmp17 = onEnd(onToggleFullscreen[10])({ duration, isQuestCompleted: null != completedAt, playerState: tmp16, questId: quest.id, videoSessionId: videoQuestModalContext.videoSessionId, videoAssetId: VIDEO_PLAYER_VIDEO, sourceQuestContent });
   handleBufferAnalytics = tmp17.handleBufferAnalytics;
   handleEndAnalytics = tmp17.handleEndAnalytics;
   handleErrorAnalytics = tmp17.handleErrorAnalytics;
@@ -220,8 +130,8 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
     url1 = url2;
   }
   const obj4 = { duration, isQuestCompleted: null != completedAt, playerState: tmp16, questId: quest.id, videoSessionId: videoQuestModalContext.videoSessionId, videoAssetId: VIDEO_PLAYER_VIDEO, sourceQuestContent };
-  const tmp15 = orientation(contentInsets.useState(onLoad(onToggleFullscreen[11]).PlayerState.LOADING), 2);
-  const defaultWatchVideoTask = onLoad(onToggleFullscreen[13]).getDefaultWatchVideoTask(quest.config);
+  const tmp15 = orientation(contentInsets.useState(onLoad(onToggleFullscreen[9]).PlayerState.LOADING), 2);
+  const defaultWatchVideoTask = onLoad(onToggleFullscreen[11]).getDefaultWatchVideoTask(quest.config);
   videoTitle = undefined;
   if (defaultWatchVideoTask != null) {
     videoTitle = defaultWatchVideoTask.messages.videoTitle;
@@ -241,12 +151,12 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
         if (null != ref.current) {
           const obj2 = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
           if (obj.getVideoQoEMetricsConfig(obj2).externalAnalyticsEnabled) {
-            constants = tmp2(1367).getConstants();
+            constants = tmp2(1363).getConstants();
             const obj3 = { videoRef: tmp.current, feature: "quests", appVersion: null, releaseChannel: null, contentMetadata: null };
             ({ Version: obj4.appVersion, ReleaseChannel: obj4.releaseChannel } = constants);
             const obj5 = { contentId: arr, videoStreamType: str, contentType: "quests", durationMs: 1000 * targetSeconds, title: videoTitle, questId: id, gameName: gameTitle };
             obj3.contentMetadata = obj5;
-            const mobileMuxWrapper = new tmp2(15402).MobileMuxWrapper(obj3);
+            const mobileMuxWrapper = new tmp2(15406).MobileMuxWrapper(obj3);
             ref2.current = mobileMuxWrapper;
             let current = ref2.current;
             current.initialize();
@@ -441,11 +351,11 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
     }
   }, items11);
   const items13 = [quest, flag, contentInsets];
-  const callback12 = obj3.useCallback((nativeEvent) => {
-    handleBufferAnalytics(nativeEvent);
+  const callback12 = obj3.useCallback((flag2) => {
+    handleBufferAnalytics(flag2);
     const current = closure_27.current;
     if (current != null) {
-      current.onBuffer(nativeEvent);
+      current.onBuffer(flag2);
     }
   }, items12);
   const items14 = [memo1, memo];
@@ -528,7 +438,7 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
     obj5.onToggleCaptions = handleToggleCaptions;
     obj5.onOpenTranscript = handleOpenTranscript;
     obj5.onToggleFullscreen = tmp39;
-    return questTaskDetails(tmp(tmp2[19]).AdVideoPlayer, obj5);
+    return questTaskDetails(tmp(tmp2[17]).AdVideoPlayer, obj5);
   }
-  const tmpResult = onLoad(onToggleFullscreen[13]);
-}));
+  const tmpResult = onLoad(onToggleFullscreen[11]);
+});

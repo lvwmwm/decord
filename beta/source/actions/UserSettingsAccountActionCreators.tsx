@@ -1,15 +1,15 @@
-// Module ID: 7262
-// Function ID: 7263
+// Module ID: 7261
+// Function ID: 7262
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1078, 6867, 577, 1275, 6864, 1105, 1397, 510, 5420, 7263, 7266, 7268, 2]
+// Dependencies: [5, 1074, 6869, 573, 1271, 6866, 1101, 1393, 510, 5418, 7262, 7265, 7267, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 7262 (UserSettingsAccountActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import router_utils from "router_utils" /* 1105 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
-import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 7266 */;
+// Module 7261 (UserSettingsAccountActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import router_utils from "router_utils" /* 1101 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
+import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 7265 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -34,7 +34,7 @@ let closure_11 = async function _saveProfileAndAccountRequest(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -62,7 +62,7 @@ let closure_11 = async function _saveProfileAndAccountRequest(arg0, value) {
           let token;
           c4 = 1;
           c5 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -126,9 +126,9 @@ let closure_11 = async function _saveProfileAndAccountRequest(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: closure_4, Routes: hasOwnProperty, DEVICE_TOKEN: metroRequire, DEVICE_VOIP_TOKEN: closure_7 } = Constants);
-const PushNotificationConstants = fn(6867);
+const PushNotificationConstants = fn(6869);
 ({ DEVICE_PUSH_VOIP_PROVIDER: closure_8, getDevicePushProvider: closure_9 } = PushNotificationConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/UserSettingsAccountActionCreators.tsx");
@@ -154,7 +154,7 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   const avatarId = accountUpdateForUpdateRequest.avatarId;
   ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, typingIndicatorStyle } = accountUpdateForUpdateRequest);
   ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = accountUpdateForUpdateRequest);
-  avatarId(577).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
+  avatarId(573).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
   const user = { username, email, email_token: emailToken, password, avatar, avatar_description: avatarDescription, avatar_id: avatarId, discriminator, global_name: globalName, legacy_username: legacyUsername, new_password: newPassword };
   if (undefined !== avatarDecoration) {
     let skuId;
@@ -189,8 +189,8 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   if (undefined !== typingIndicatorStyle) {
     let result = null;
     if (null != typingIndicatorStyle) {
-      result = avatar(1397).serializeTypingIndicatorStyle(typingIndicatorStyle);
-      const obj3 = avatar(1397);
+      result = avatar(1393).serializeTypingIndicatorStyle(typingIndicatorStyle);
+      const obj3 = avatar(1393);
     }
     user.typing_indicator_style = result;
   }
@@ -212,11 +212,11 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.push_voip_token = value2;
   }
   const obj4 = { headers: null };
-  const obj = avatarId(577);
+  const obj = avatarId(573);
   tmp13 = null != tmp12 && null != value;
   tmp15 = closure_8;
-  obj4.headers = avatarId(5420).buildHeadersForMd5({ [avatar(7263).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
-  let tmpResult = avatarId(5420);
+  obj4.headers = avatarId(5418).buildHeadersForMd5({ [avatar(7262).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
+  let tmpResult = avatarId(5418);
   return saveProfileAndAccountRequest(user, obj4).then((result) => {
     DispatcherDefault.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
     let tmp4 = null == avatar;
@@ -321,20 +321,20 @@ export const saveAccountChanges = function saveAccountChanges(user, close) {
     }
     if (null != newPassword) {
       const obj6 = { type: "USER_PASSWORD_UPDATE", user: body, newPassword: tmp9 };
-      tmp3(577).dispatch(obj6);
-      const tmp3Result = tmp3(577);
+      tmp3(573).dispatch(obj6);
+      const tmp3Result = tmp3(573);
     }
     if (tmp11) {
       const obj7 = { type: "PASSWORD_UPDATED", userId: body.id };
-      tmp3(577).dispatch(obj7);
-      const tmp3Result4 = tmp3(577);
+      tmp3(573).dispatch(obj7);
+      const tmp3Result4 = tmp3(573);
     }
     if (close) {
-      tmp3(7268).close();
-      const tmp3Result5 = tmp3(7268);
+      tmp3(7267).close();
+      const tmp3Result5 = tmp3(7267);
     } else {
-      tmp3(577).dispatch({ type: "USER_SETTINGS_MODAL_SUBMIT_COMPLETE" });
-      const tmp3Result6 = tmp3(577);
+      tmp3(573).dispatch({ type: "USER_SETTINGS_MODAL_SUBMIT_COMPLETE" });
+      const tmp3Result6 = tmp3(573);
     }
     return body;
   }, (body) => {

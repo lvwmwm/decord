@@ -1,21 +1,21 @@
-// Module ID: 17223
-// Function ID: 17224
+// Module ID: 17213
+// Function ID: 17214
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 11684, 1616, 10642, 17224, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 11808, 1612, 10521, 17214, 2]
+// Exports: default
 
-// Module 17223 (MainTabsEmptyChatPanel)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useDrawerWidth from "useDrawerWidth" /* 11684 */;
+// Module 17213 (MainTabsEmptyChatPanel)
+import nativeDefault from "native" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import useDrawerWidth from "useDrawerWidth" /* 11808 */;
 import noop from "module_19" /* 19 */;
 
-const FavoritesEmptyStateDefault = tmp4(17224);
+const FavoritesEmptyStateDefault = tmp3(17214);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_6 = createStyles.createStyles((left, marginTop) => {
   const obj = { container: null };
   const obj2 = {};
@@ -31,34 +31,10 @@ let closure_6 = createStyles.createStyles((left, marginTop) => {
   obj.container = obj2;
   return obj;
 });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsEmptyChatPanel.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const drawerWidth = useDrawerWidth.useDrawerWidth();
-  let container = closure_6(drawerWidth, useSafeAreaInsetsDefault().top);
-  if (!obj3.useIsFavoritesGuildSelected()) {
-    return null;
-  } else {
-    const _Symbol = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp8 = jsx(FavoritesEmptyStateDefault, {});
-      cResult[0] = tmp8;
-      let first = tmp8;
-    } else {
-      first = cResult[0];
-    }
-    if (cResult[1] !== container.container) {
-      const obj4 = { style: container.container, pointerEvents: "box-none", children: first };
-      const tmp12 = <React4 style={container.container} pointerEvents="box-none">{first}</React4>;
-      container = container.container;
-      cResult[1] = container;
-      cResult[2] = tmp12;
-    }
-  }
-}) : (() => {
+export default function MainTabsEmptyChatPanel() {
   const drawerWidth = useDrawerWidth.useDrawerWidth();
   const tmp4 = closure_6(drawerWidth, useSafeAreaInsetsDefault().top);
   let tmp5 = null;
@@ -67,4 +43,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = <React4 style={tmp4.container} pointerEvents="box-none">{jsx(FavoritesEmptyStateDefault, {})}</React4>;
   }
   return tmp5;
-});
+};

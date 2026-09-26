@@ -1,9 +1,9 @@
-// Module ID: 1091
-// Function ID: 1092
+// Module ID: 1087
+// Function ID: 1088
 // Name: generated/ThemeTypes
 // Dependencies: [2]
 
-// Module 1091 (generated/ThemeTypes)
+// Module 1087 (generated/ThemeTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { ASH: "dark", LIGHT: "light", ONYX: "midnight", DARK: "darker" };

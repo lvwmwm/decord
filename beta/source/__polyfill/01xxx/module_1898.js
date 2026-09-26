@@ -4,7 +4,7 @@
 
 // Module 1898
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "bg",
+  locale: "el",
   pluralRuleFunction(arg0, arg1) {
     let str = "other";
     let str2 = "other";
@@ -17,3 +17,4 @@ globalThis.IntlMessageFormat.__addLocaleData({
     return str2;
   }
 });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "el-CY", parentLocale: "el" });

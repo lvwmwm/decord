@@ -1,35 +1,20 @@
-// Module ID: 4795
-// Function ID: 4796
+// Module ID: 4793
+// Function ID: 4794
 // Name: PlainTextExperimentContext
-// Dependencies: [19, 21, 558, 568, 2]
-// Exports: usePlainTextExperimentEnabled
+// Dependencies: [19, 21, 2]
+// Exports: PlainTextExperimentProvider, usePlainTextExperimentEnabled
 
-// Module 4795 (PlainTextExperimentContext)
-import c from "c" /* 568 */;
+// Module 4793 (PlainTextExperimentContext)
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const jsx = fn(21).jsx;
 const context = noop.createContext(false);
-fn(558);
-let ReactCompilerGating = fn(558);
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-const result1 = size.fileFinishedImporting("design/components/Text/native/PlainTextExperimentContext.tsx");
+const result = size.fileFinishedImporting("design/components/Text/native/PlainTextExperimentContext.tsx");
 
-export const PlainTextExperimentProvider = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(3);
-  ({ children, enabled } = arg0);
-  if (cResult[0] === children) {
-    if (cResult[1] === enabled) {
-      let tmp2 = cResult[2];
-    }
-    return tmp2;
-  }
-  const tmp3 = <closure_4 value={enabled}>{children}</closure_4>;
-  cResult[0] = children;
-  cResult[1] = enabled;
-  cResult[2] = tmp3;
-  tmp2 = tmp3;
-}) : ((enabled) => <closure_4 value={arg0.enabled}>{arg0.children}</closure_4>);
-export const usePlainTextExperimentEnabled = () => noop.useContext(closure_4);
+export const PlainTextExperimentProvider = function PlainTextExperimentProvider(enabled) {
+  return <closure_2 value={arg0.enabled}>{arg0.children}</closure_2>;
+};
+export const usePlainTextExperimentEnabled = function usePlainTextExperimentEnabled() {
+  return noop.useContext(closure_2);
+};

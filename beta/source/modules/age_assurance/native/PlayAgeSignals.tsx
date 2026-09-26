@@ -1,11 +1,11 @@
-// Module ID: 8884
-// Function ID: 8885
+// Module ID: 8879
+// Function ID: 8880
 // Name: PlayAgeSignals
-// Dependencies: [5, 8885, 8886, 2]
+// Dependencies: [5, 8880, 8881, 2]
 // Exports: getAgeSignals
 
-// Module 8884 (PlayAgeSignals)
-import NativePlayAgeSignalsModuleDefault from "NativePlayAgeSignalsModule" /* 8885 */;
+// Module 8879 (PlayAgeSignals)
+import NativePlayAgeSignalsModuleDefault from "NativePlayAgeSignalsModule" /* 8880 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -20,7 +20,7 @@ let closure_4 = async function _getAgeSignals(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

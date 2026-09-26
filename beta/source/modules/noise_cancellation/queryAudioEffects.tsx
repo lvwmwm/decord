@@ -1,11 +1,11 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14370
+// Function ID: 14371
 // Name: queryAudioEffects
-// Dependencies: [5, 1078, 4, 1369, 577, 1245, 2]
+// Dependencies: [5, 1074, 4, 1365, 573, 1241, 2]
 // Exports: default
 
-// Module 14380 (queryAudioEffects)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1369 */;
+// Module 14370 (queryAudioEffects)
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -20,7 +20,7 @@ let closure_6 = async function _queryAudioEffects(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -61,7 +61,7 @@ let closure_6 = async function _queryAudioEffects(arg0, value) {
         closure_132_5.error("Failed to probe audio effects for device", closure_131_2);
         closure_132_1(closure_132_2[5]).track(closure_132_4.AUDIO_EFFECTS_PROBE_COMPLETED, { succeeded: false });
         c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       } else if (arg0 === 1) {
         c8 = 3;
         throw value;
@@ -94,7 +94,7 @@ let closure_6 = async function _queryAudioEffects(arg0, value) {
     }
   }
 };
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const logger = new fn(4).Logger("AudioEffects");
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/noise_cancellation/queryAudioEffects.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 8040
+// Function ID: 8041
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 2049, 2045, 4805, 4433, 2054, 8046, 12, 2056, 11, 7583, 504, 577, 2]
+// Dependencies: [32, 2045, 2041, 4803, 4429, 2050, 8041, 12, 2052, 11, 7581, 504, 573, 2]
 
-// Module 8045 (ArchivedThreadsStore)
+// Module 8040 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2054 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2056 */;
-import ForumUtils from "ForumUtils" /* 7583 */;
-import tracking_Tracking from "tracking/Tracking" /* 8046 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2050 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2052 */;
+import ForumUtils from "ForumUtils" /* 7581 */;
+import tracking_Tracking from "tracking/Tracking" /* 8041 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import ReadStateStore from "ReadStateStore" /* 4805 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4433 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import ReadStateStore from "ReadStateStore" /* 4803 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
 
 require = fn;
 function listKey(channelId, sortOrder, tagFilter, tagSetting) {
@@ -59,7 +59,7 @@ function resortListState(value) {
           if (true !== someResult) {
             return false;
           }
-        } else if (tmp20(2056).ThreadSearchTagSetting.MATCH_ALL === tmp19) {
+        } else if (tmp20(2052).ThreadSearchTagSetting.MATCH_ALL === tmp19) {
           const values = size.values();
           const iter = values[Symbol.iterator]();
           while (iter !== undefined) {
@@ -110,14 +110,14 @@ function resortListState(value) {
     const mapped = sorted.map((id) => id.id);
     const tmp7Result = _modDef12(ChannelStore.getAllThreadsForParent(value.channelId));
     value.threads = mapped.reverse().value();
-  } else if (sortOrder === sortOrder(2054).ThreadSortOrder.LATEST_ACTIVITY) {
+  } else if (sortOrder === sortOrder(2050).ThreadSortOrder.LATEST_ACTIVITY) {
     id = id.id;
     let id2 = ReadStateStore.lastMessageId(id);
   } else {
     id2 = id.id;
   }
 }
-const ALL_CHANNEL_TYPES = fn(2049).ALL_CHANNEL_TYPES;
+const ALL_CHANNEL_TYPES = fn(2045).ALL_CHANNEL_TYPES;
 const map = new Map();
 let closure_12 = [];
 const Store = initializeDefault.Store;

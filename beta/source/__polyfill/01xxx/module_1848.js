@@ -1,119 +1,52 @@
 // Module ID: 1848
 // Function ID: 1849
-// Dependencies: [19, 17, 1834, 1641, 1835]
-// Exports: useKeyboardAnimation, useTranslateAnimation
+// Dependencies: [19, 1637, 1826]
+// Exports: default
 
 // Module 1848
-import _mod17 from "module_17" /* 17 */;
-import _mod19 from "module_19" /* 19 */;
-import cancelAnimation from "cancelAnimation" /* 1641 */;
-import NOOP from "NOOP" /* 1834 */;
-import _mod1835 from "module_1835" /* 1835 */;
+import cancelAnimation from "cancelAnimation" /* 1637 */;
+import _mod1826 from "module_1826" /* 1826 */;
+import noop from "module_19" /* 19 */;
 
-const useLayoutEffect = _mod19.useLayoutEffect;
-const Platform = _mod17.Platform;
-const android = "android";
-const __initData = { code: "function pnpm_hooksTs1(e){const{isClosed,heightWhenOpened}=this.__closure;if(e.height>0){isClosed.value=false;heightWhenOpened.value=e.height;}}" };
-const __initData2 = { code: "function pnpm_hooksTs2(e){const{progress,height}=this.__closure;progress.value=e.progress;height.value=e.height;}" };
-const __initData3 = { code: "function pnpm_hooksTs3(e){const{progress,height}=this.__closure;progress.value=e.progress;height.value=e.height;}" };
-const __initData4 = { code: "function pnpm_hooksTs4(e){const{isClosed,height,progress}=this.__closure;isClosed.value=e.height===0;height.value=e.height;progress.value=e.progress;}" };
-const __initData5 = { code: "function pnpm_hooksTs5(e){const{padding,OS,translate}=this.__closure;if(e.height===0){padding.value=0;}if(OS===\"ios\"){translate.value=e.progress;}}" };
-const __initData6 = { code: "function pnpm_hooksTs6(e){const{OS,translate}=this.__closure;if(OS!==\"ios\"){translate.value=e.progress;}}" };
-const __initData7 = { code: "function pnpm_hooksTs7(e){const{padding,translate}=this.__closure;padding.value=0;translate.value=e.progress;}" };
-const __initData8 = { code: "function pnpm_hooksTs8(e){const{padding,OS,translate}=this.__closure;padding.value=e.progress;if(OS!==\"ios\"){translate.value=e.progress;}}" };
+({ useCallback: c2, useEffect: c3 } = noop);
+let closure_4 = ["onScroll", "onScrollBeginDrag", "onScrollEndDrag", "onMomentumScrollBegin", "onMomentumScrollEnd"];
+const __initData = { code: "function pnpm_useScrollStateTs1(event){const{offset,layout,size}=this.__closure;offset.value=event.contentOffset.y;layout.value=event.layoutMeasurement;size.value=event.contentSize;}" };
 
-export const useKeyboardAnimation = () => {
-  const reanimated = NOOP.useKeyboardContext().reanimated;
-  const heightWhenOpened = cancelAnimation.useSharedValue(0);
-  const height = cancelAnimation.useSharedValue(0);
-  const progress = cancelAnimation.useSharedValue(0);
-  const isClosed = cancelAnimation.useSharedValue(true);
-  useLayoutEffect(() => {
-    value = reanimated.progress.value;
-    heightWhenOpened.value = -reanimated.height.value;
-    height.value = -reanimated.height.value;
-    progress.value = value;
-    isClosed.value = 0 === value;
-  }, []);
-  const obj7 = { onStart: null, onMove: null, onInteractive: null, onEnd: null };
-  const fn = function _(height) {
-    if (height.height > 0) {
-      isClosed.value = false;
-      heightWhenOpened.value = height.height;
-    }
+export default function _default(arg0) {
+  const sharedValue = cancelAnimation.useSharedValue(0);
+  const sharedValue1 = cancelAnimation.useSharedValue({ width: 0, height: 0 });
+  const sharedValue2 = cancelAnimation.useSharedValue({ width: 0, height: 0 });
+  closure_3 = _mod1826.useEventHandlerRegistration(arg0);
+  const fn = function l(contentOffset) {
+    sharedValue.value = contentOffset.contentOffset.y;
+    sharedValue1.value = contentOffset.layoutMeasurement;
+    sharedValue2.value = contentOffset.contentSize;
   };
-  fn.__closure = { isClosed, heightWhenOpened };
-  fn.__workletHash = 12249381939606;
+  fn.__closure = { offset: sharedValue, layout: sharedValue1, size: sharedValue2 };
+  fn.__workletHash = 10534434800111;
   fn.__initData = __initData;
-  obj7.onStart = fn;
-  const fn2 = function h(progress) {
-    progress.value = progress.progress;
-    height.value = progress.height;
-  };
-  fn2.__closure = { progress, height };
-  fn2.__workletHash = 6522928191084;
-  fn2.__initData = __initData2;
-  obj7.onMove = fn2;
-  const fn3 = function l(progress) {
-    progress.value = progress.progress;
-    height.value = progress.height;
-  };
-  fn3.__closure = { progress, height };
-  fn3.__workletHash = 4743203414413;
-  fn3.__initData = __initData3;
-  obj7.onInteractive = fn3;
-  const fn4 = function s(height) {
-    isClosed.value = 0 === height.height;
-    height.value = height.height;
-    progress.value = height.progress;
-  };
-  fn4.__closure = { isClosed, height, progress };
-  fn4.__workletHash = 7189399485148;
-  fn4.__initData = __initData4;
-  obj7.onEnd = fn4;
-  _mod1835.useKeyboardHandler(obj7, []);
-  return { height, progress, heightWhenOpened, isClosed };
-};
-export const useTranslateAnimation = () => {
-  const reanimated = NOOP.useKeyboardContext().reanimated;
-  const padding = cancelAnimation.useSharedValue(0);
-  const translate = cancelAnimation.useSharedValue(0);
-  useLayoutEffect(() => {
-    padding.value = reanimated.progress.value;
+  closure_4 = cancelAnimation.useEvent(fn, closure_4);
+  React3(() => {
+    closure_0 = closure_3(closure_4);
+    return () => {
+      closure_0();
+    };
   }, []);
-  const obj5 = { onStart: null, onMove: null, onInteractive: null, onEnd: null };
-  const fn = function u(height) {
-    if (0 === height.height) {
-      padding.value = 0;
-    }
+  const items = [sharedValue1];
+  const items1 = [sharedValue2];
+  const tmp5 = React2((nativeEvent) => {
+    sharedValue1.value = { width: nativeEvent.nativeEvent.layout.width, height: nativeEvent.nativeEvent.layout.height };
+  }, items);
+  return {
+    offset: sharedValue,
+    layout: sharedValue1,
+    size: sharedValue2,
+    onLayout: React2((nativeEvent) => {
+      sharedValue1.value = { width: nativeEvent.nativeEvent.layout.width, height: nativeEvent.nativeEvent.layout.height };
+    }, items),
+    onContentSizeChange: React2((width, height) => {
+      const size = { width, height };
+      sharedValue2.value = size;
+    }, items1)
   };
-  fn.__closure = { padding, OS: android, translate };
-  fn.__workletHash = 12261942243858;
-  fn.__initData = __initData5;
-  obj5.onStart = fn;
-  const fn2 = function n(progress) {
-    translate.value = progress.progress;
-  };
-  fn2.__closure = { OS: android, translate };
-  fn2.__workletHash = 4704193858755;
-  fn2.__initData = __initData6;
-  obj5.onMove = fn2;
-  const fn3 = function o(progress) {
-    padding.value = 0;
-    translate.value = progress.progress;
-  };
-  fn3.__closure = { padding, translate };
-  fn3.__workletHash = 3250463859117;
-  fn3.__initData = __initData7;
-  obj5.onInteractive = fn3;
-  const fn4 = function t(progress) {
-    padding.value = progress.progress;
-    translate.value = progress.progress;
-  };
-  fn4.__closure = { padding, OS: android, translate };
-  fn4.__workletHash = 14425204766932;
-  fn4.__initData = __initData8;
-  obj5.onEnd = fn4;
-  _mod1835.useKeyboardHandler(obj5, []);
-  return { translate, padding };
 };

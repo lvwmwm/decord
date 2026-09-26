@@ -1,19 +1,19 @@
-// Module ID: 7757
-// Function ID: 7758
+// Module ID: 7752
+// Function ID: 7753
 // Name: SaveableChannelsStore
-// Dependencies: [2045, 4710, 1077, 2099, 7758, 7759, 7760, 7762, 7763, 7764, 7765, 2]
+// Dependencies: [2041, 4707, 1073, 2095, 7753, 7754, 7755, 7757, 7758, 7759, 7760, 2]
 
-// Module 7757 (SaveableChannelsStore)
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7759 */;
-import Lru from "Lru" /* 7760 */;
-import isPrivateChannel from "isPrivateChannel" /* 7762 */;
-import isReadableChannel from "isReadableChannel" /* 7763 */;
-import withFallbacks from "withFallbacks" /* 7765 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1077 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import FileSystemStore from "FileSystemStore" /* 7758 */;
+// Module 7752 (SaveableChannelsStore)
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7754 */;
+import Lru from "Lru" /* 7755 */;
+import isPrivateChannel from "isPrivateChannel" /* 7757 */;
+import isReadableChannel from "isReadableChannel" /* 7758 */;
+import withFallbacks from "withFallbacks" /* 7760 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import FileSystemStore from "FileSystemStore" /* 7753 */;
 
 require = fn;
 function handleSelectedChannelStoreChanged() {
@@ -86,9 +86,9 @@ function handleCacheLoadedLazyNoCache() {
 }
 let lastChannel = null;
 const bound = Math.max(25, 25, 1);
-let extendedMemoryLru = new fn(7759).ExtendedMemoryLru(750, 500);
+let extendedMemoryLru = new fn(7754).ExtendedMemoryLru(750, 500);
 let global = extendedMemoryLru;
-let lru = new fn(7760).Lru(15);
+let lru = new fn(7755).Lru(15);
 let c9 = false;
 let SaveableChannelsStore;
 class SaveableChannelsStore extends tmp3 {
@@ -220,7 +220,7 @@ SaveableChannelsStore["recordChannel"] = function recordChannel(id) {
           global.delete(id);
         }
       }
-      tmp8Result = tmp8(7764);
+      tmp8Result = tmp8(7759);
     }
     obj3 = isReadableChannel;
     tmp8 = require;

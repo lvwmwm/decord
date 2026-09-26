@@ -1,14 +1,14 @@
-// Module ID: 2046
-// Function ID: 2047
+// Module ID: 2042
+// Function ID: 2043
 // Name: BasicChannelCacheStore
-// Dependencies: [32, 2047, 3, 504, 577, 2]
+// Dependencies: [32, 2043, 3, 504, 573, 2]
 
-// Module 2046 (BasicChannelCacheStore)
+// Module 2042 (BasicChannelCacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 2047 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 2043 */;
 
 new LoggerDefault("BasicChannelCacheStore");
 const Store = initializeDefault.Store;
@@ -77,7 +77,7 @@ prototype["handleCacheLoadedLazy"] = function handleCacheLoadedLazy(arg0) {
   this.guilds = new Map();
   const map = new Map();
   this.channels = new Map();
-  const map1 = new Map();
+  map1 = new Map();
   while (tmp3 !== undefined) {
     let tmp6 = _slicedToArray(tmp4, 2);
     let arr = tmp6[1];

@@ -1,16 +1,16 @@
-// Module ID: 10666
-// Function ID: 10667
+// Module ID: 8935
+// Function ID: 8936
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 10667, 2045, 1078, 577, 4649, 8044, 1275, 7599, 2]
+// Dependencies: [5, 8936, 2041, 1074, 573, 4646, 8039, 1271, 7597, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 10666 (ChannelSettingsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+// Module 8935 (ChannelSettingsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10667 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8936 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 function init(channelId, location, subsection) {
@@ -65,7 +65,7 @@ let closure_9 = async function _saveChannel(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -112,7 +112,7 @@ let closure_9 = async function _saveChannel(arg0, value) {
           let channel;
           c4 = 1;
           c5 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -190,7 +190,7 @@ let closure_9 = async function _saveChannel(arg0, value) {
         HTTP = then(request);
         then = HTTP.then;
         request = then((arg0) => {
-          closure_1(577).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS", channelId });
+          closure_1(573).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS", channelId });
           guildId = undefined;
           if (guildId != null) {
             guildId = guildId.getGuildId();
@@ -205,12 +205,12 @@ let closure_9 = async function _saveChannel(arg0, value) {
             obj4 = guildId;
           }
           if (!tmp5) {
-            const result = closure_1(7599).checkGuildTemplateDirty(guildId);
-            const tmpResult = closure_1(7599);
+            const result = closure_1(7597).checkGuildTemplateDirty(guildId);
+            const tmpResult = closure_1(7597);
           }
           return arg0;
         }, (body) => {
-          closure_1_1(577).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT_FAILURE", errors: body.body });
+          closure_1_1(573).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT_FAILURE", errors: body.body });
           return body;
         });
         c5 = 3;
@@ -243,7 +243,7 @@ let closure_10 = async function _deleteChannel(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -297,7 +297,7 @@ let closure_10 = async function _deleteChannel(arg0, value) {
         }
         closure_130_8();
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp22) {
       c4 = tmp;
@@ -314,7 +314,7 @@ function removeLinkedLobby(arg0) {
   const HTTP = HTTPUtils.HTTP;
   return HTTP.del({ url: timestampProducer.CHANNEL_LINKED_LOBBY(arg0), rejectWithError: true });
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: metroRequire, Layers, ChannelSettingsSections: closure_7 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/ChannelSettingsActionCreators.tsx");

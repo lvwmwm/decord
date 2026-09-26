@@ -4,25 +4,38 @@
 
 // Module 1913
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "nl",
+  locale: "ro",
   pluralRuleFunction(arg0, arg1) {
-    let str2 = "other";
-    if (!arg1) {
-      let str3 = "other";
+    const parts = String(arg0).split(".");
+    let substr = Number(parts[0]) == arg0;
+    if (substr) {
+      const first = parts[0];
+      substr = first.slice(-2);
+    }
+    if (arg1) {
+      let str5 = "other";
       if (1 == arg0) {
-        str3 = "other";
-        if (!str.split(".")[1]) {
-          str3 = "one";
-        }
+        str5 = "one";
       }
-      str2 = str3;
+      let str2 = str5;
+    } else if (1 != arg0) {
+      if (!tmp2) {
+        if (0 != arg0) {
+          let str4 = "other";
+          if (1 != arg0) {
+            str4 = "other";
+            if (substr >= 1) {
+              str4 = "other";
+            }
+          }
+        }
+        str2 = str4;
+      }
+      str4 = "few";
+    } else {
+      str2 = "one";
     }
     return str2;
   }
 });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-AW", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-BE", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-BQ", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-CW", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-SR", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-SX", parentLocale: "nl" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ro-MD", parentLocale: "ro" });

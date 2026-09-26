@@ -1,10 +1,10 @@
-// Module ID: 5366
-// Function ID: 5367
+// Module ID: 5364
+// Function ID: 5365
 // Name: DiscordContentClassificationFlags
-// Dependencies: [1090, 2]
+// Dependencies: [1086, 2]
 
-// Module 5366 (DiscordContentClassificationFlags)
-import BigFlagUtils_mod from "BigFlagUtils" /* 1090 */;
+// Module 5364 (DiscordContentClassificationFlags)
+import BigFlagUtils_mod from "BigFlagUtils" /* 1086 */;
 
 const obj = { EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED: null, SEXUALLY_SUGGESTIVE_IMAGERY: null, SEXUALLY_SUGGESTIVE_TEXT: null, SEXUALLY_EXPLICIT_IMAGERY: null, SEXUALLY_EXPLICIT_TEXT: null, NUDITY: null, DATING: null, REGULATED_GOODS_USAGE: null, REGULATED_GOODS_DEPICTION: null, VIOLENCE_DOMESTIC_SIMULATED: null, VIOLENCE_ANIMALS: null, VIOLENCE_FANTASY: null, VIOLENCE_GRAPHIC: null, SELF_HARM_DEPICTION: null, SELF_HARM_REFERENCE: null, GAMBLING_REAL: null, GAMBLING_SIMULATED: null, PROFANITY_MILD: null, PROFANITY_SEVERE: null, SLURS: null, DANGEROUS_PHYSICALLY_HARMFUL: null, DANGEROUS_MENTALLY_HARMFUL: null, TRAGEDY_SIMULATED_HISTORICAL: null, TRAGEDY_SIMULATED_NATURAL_DISASTER: null, TRAGEDY_REAL_MILITARY_CONFLICT: null };
 let BigFlagUtils = BigFlagUtils_mod;

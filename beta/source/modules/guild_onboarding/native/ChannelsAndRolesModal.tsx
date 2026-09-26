@@ -1,141 +1,21 @@
-// Module ID: 11705
-// Function ID: 11706
+// Module ID: 11829
+// Function ID: 11830
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2067, 7380, 21, 4790, 580, 558, 568, 565, 7611, 1119, 9900, 9901, 11706, 11712, 11265, 2]
+// Dependencies: [32, 19, 17, 2063, 7378, 21, 4788, 576, 563, 7609, 9922, 1115, 9923, 11830, 11836, 11217, 2]
+// Exports: default
 
-// Module 11705 (ChannelsAndRolesModal)
-import useStateFromStores from "useStateFromStores" /* 565 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7611 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11265 */;
+// Module 11829 (ChannelsAndRolesModal)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7609 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11217 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
-const View = fn(17).View;
-const GuildOnboardingTab = fn(7380).GuildOnboardingTab;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { screen: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, tabBar: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.tabBar = { paddingHorizontal: nativeDefault.space.PX_12, paddingTop: nativeDefault.space.PX_16 };
-let closure_10 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
-  const cResult = guildId(first1[9]).c(22);
-  guildId = guildId.guildId;
-  const defaultTab = guildId.defaultTab;
-  closure_10();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    class I {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
-    }
-    cResult[1] = guildId;
-    cResult[2] = I;
-    const tmp7 = I;
-  } else {
-    class I {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
-    }
-  }
-  const obj = guildId(first1[9]);
-  const stateFromStores = guildId(first1[10]).useStateFromStores(first, tmp7);
-  const tmp9 = require("useGuildOnboardingAvailable")(stateFromStores);
-  importDefault = tmp9;
-  if (defaultTab != null) {
-    class I {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
-    }
-    [first1] = segmentedControlState.useState(defaultTab);
-    _slicedToArray = tmp15;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
-        constructor() {
-          return closure_6.getGuild(guildId);
-        }
-      }
-      const items1 = [obj3.string(tmp(tmp2[12]).t.F1VixV), ];
-      const intl = tmp(tmp2[12]).intl;
-      items1[1] = intl.string(tmp(tmp2[12]).t.MWmtj8);
-      const mapped = items1.map((id) => ({ id, label: id, page: null }));
-      cResult[3] = mapped;
-      const tmp16 = mapped;
-    } else {
-      class I {
-        constructor() {
-          return closure_6.getGuild(guildId);
-        }
-      }
-    }
-    if (cResult[4] !== first1) {
-      class I {
-        constructor() {
-          return closure_6.getGuild(guildId);
-        }
-      }
-      tmp19[1] = first1;
-      tmp19[2] = tmp15;
-      tmp19[3] = tmp16;
-      cResult[4] = first1;
-      cResult[5] = tmp19;
-      const tmp18 = tmp19;
-    } else {
-      class I {
-        constructor() {
-          return closure_6.getGuild(guildId);
-        }
-      }
-    }
-    segmentedControlState = tmp(tmp2[13]).useSegmentedControlState(tmp18);
-    if (cResult[6] === tmp9) {
-      class I {
-        constructor() {
-          return closure_6.getGuild(guildId);
-        }
-      }
-    }
-    const fn = function y() {
-      let tmp = closure_1;
-      if (!closure_1) {
-        tmp = first1 !== GuildOnboardingTab.CUSTOMIZE;
-      }
-      if (!tmp) {
-        closure_3(GuildOnboardingTab.BROWSE);
-        segmentedControlState.setActiveIndex(GuildOnboardingTab.BROWSE, false);
-      }
-    };
-    const items2 = [tmp9, first1, segmentedControlState];
-    cResult[6] = tmp9;
-    cResult[7] = segmentedControlState;
-    cResult[8] = first1;
-    cResult[9] = fn;
-    cResult[10] = items2;
-    const tmpResult2 = tmp(tmp2[13]);
-  } else {
-    class I {
-      constructor() {
-        return closure_6.getGuild(guildId);
-      }
-    }
-  }
-}) : ((guildId) => {
+function ChannelsAndRolesScreen(guildId) {
   guildId = guildId.guildId;
   const defaultTab = guildId.defaultTab;
   importDefault = undefined;
@@ -144,7 +24,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let segmentedControlState;
   let tmp = closure_10();
   const items = [GuildStore];
-  const stateFromStores = guildId(defaultIndex[10]).useStateFromStores(items, () => GuildStore.getGuild(guildId));
+  const stateFromStores = guildId(defaultIndex[8]).useStateFromStores(items, () => GuildStore.getGuild(guildId));
   const tmp6 = require("useGuildOnboardingAvailable")(stateFromStores);
   importDefault = tmp6;
   if (defaultTab != null) {
@@ -152,12 +32,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     defaultIndex = tmp10[0];
     _slicedToArray = tmp12;
     const obj3 = { pageWidth: 0, defaultIndex, onSetActiveIndex: tmp10[1], items: null };
-    const intl = tmp2(tmp3[12]).intl;
-    const items1 = [intl.string(tmp2(tmp3[12]).t.F1VixV), ];
-    const intl2 = tmp2(tmp3[12]).intl;
-    items1[1] = intl2.string(tmp2(tmp3[12]).t.MWmtj8);
+    const intl = tmp2(tmp3[11]).intl;
+    const items1 = [intl.string(tmp2(tmp3[11]).t.F1VixV), ];
+    const intl2 = tmp2(tmp3[11]).intl;
+    items1[1] = intl2.string(tmp2(tmp3[11]).t.MWmtj8);
     obj3.items = items1.map((id) => ({ id, label: id, page: null }));
-    segmentedControlState = tmp2(tmp3[13]).useSegmentedControlState(obj3);
+    segmentedControlState = tmp2(tmp3[10]).useSegmentedControlState(obj3);
     const items2 = [tmp6, defaultIndex, segmentedControlState];
     const effect = segmentedControlState.useEffect(() => {
       let tmp = closure_1;
@@ -174,99 +54,35 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (tmp6) {
       const obj5 = { style: tmp.tabBar, children: null };
       const obj6 = { state: segmentedControlState };
-      obj5.children = closure_8(tmp2(tmp3[14]).SegmentedControl, obj6);
+      obj5.children = closure_8(tmp2(tmp3[12]).SegmentedControl, obj6);
       tmp17 = closure_8(tmp16, obj5);
     }
     const items3 = [tmp17, ];
     if (defaultIndex === GuildOnboardingTab.CUSTOMIZE) {
       const obj7 = { setTab: tmp12, guildId };
-      let tmp21 = closure_8(tmp5(tmp3[15]), obj7);
+      let tmp21 = closure_8(tmp5(tmp3[13]), obj7);
     } else {
       const obj8 = { guildId };
-      tmp21 = closure_8(tmp5(tmp3[16]), obj8);
+      tmp21 = closure_8(tmp5(tmp3[14]), obj8);
     }
     items3[1] = tmp21;
     obj4.children = items3;
     return closure_9(View, obj4);
   }
-});
-ReactCompilerGating = fn(558);
-let obj4 = { paddingHorizontal: nativeDefault.space.PX_12, paddingTop: nativeDefault.space.PX_16 };
+}
+const View = fn(17).View;
+const GuildOnboardingTab = fn(7378).GuildOnboardingTab;
+const jsxProd = fn(21);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+const createStyles = fn(4788);
+const obj2 = { screen: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, tabBar: null };
+let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj2.tabBar = { paddingHorizontal: nativeDefault.space.PX_12, paddingTop: nativeDefault.space.PX_16 };
+let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/ChannelsAndRolesModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
-  const cResult = guildId(568).c(11);
-  guildId = guildId.guildId;
-  const defaultTab = guildId.defaultTab;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function l() {
-      return GuildStore.getGuild(guildId);
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = guildId(568);
-  const stateFromStores = guildId(565).useStateFromStores(first, tmp6);
-  const tmp9 = defaultTab(7611)(stateFromStores);
-  if (cResult[3] !== tmp9) {
-    const intl = tmp(1119).intl;
-    const string = intl.string;
-    let h9mGOP = tmp(1119).t;
-    if (tmp9) {
-      h9mGOP = h9mGOP.h9mGOP;
-      let stringResult = string(h9mGOP);
-    } else {
-      stringResult = string(h9mGOP.et6wav);
-    }
-    cResult[3] = tmp9;
-    cResult[4] = stringResult;
-  } else {
-    if (cResult[5] === defaultTab) {
-      if (cResult[6] === guildId) {
-        let tmp13 = cResult[7];
-      }
-      if (cResult[8] === tmp10) {
-        if (cResult[9] === tmp13) {
-          let tmp14 = cResult[10];
-        }
-        return tmp14;
-      }
-      class I {
-        constructor() {
-          obj = { guildId, defaultTab };
-          return jsx(f57689, obj);
-        }
-      }
-      const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp13 };
-      const tmp15 = closure_8(defaultTab(11265), obj2);
-      cResult[8] = tmp10;
-      cResult[9] = tmp13;
-      cResult[10] = tmp15;
-      tmp14 = tmp15;
-    }
-    class I {
-      constructor() {
-        obj = { guildId, defaultTab };
-        return jsx(f57689, obj);
-      }
-    }
-    cResult[5] = defaultTab;
-    cResult[6] = guildId;
-    cResult[7] = I;
-    tmp13 = I;
-  }
-}) : ((arg0) => {
+export default function ChannelsAndRolesModal(arg0) {
   ({ guildId: require, defaultTab: importDefault } = arg0);
   const items = [GuildStore];
   const stateFromStores = useStateFromStores.useStateFromStores(items, () => GuildStore.getGuild(guildId));
@@ -284,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     screenKey: "channelAndRolesModal",
     title: stringResult,
     render() {
-      return closure_2_8(closure_11, { guildId, defaultTab });
+      return React6(ChannelsAndRolesScreen, { guildId, defaultTab });
     }
   });
-});
+};

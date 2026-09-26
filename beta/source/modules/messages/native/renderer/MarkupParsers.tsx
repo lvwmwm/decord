@@ -1,19 +1,19 @@
-// Module ID: 8384
-// Function ID: 8385
+// Module ID: 8379
+// Function ID: 8380
 // Name: MarkupParsers
-// Dependencies: [1078, 1095, 1442, 4780, 8385, 8386, 8398, 8169, 8400, 1235, 2]
+// Dependencies: [1074, 1091, 1438, 4778, 8380, 8381, 8393, 8164, 8395, 1231, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 8384 (MarkupParsers)
-import Constants from "Constants" /* 1078 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4780 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8169 */;
-import NativeMarkdownExperiment2 from "NativeMarkdownExperiment" /* 8385 */;
-import trackMarkdownParse from "trackMarkdownParse" /* 8398 */;
-import parseNativeMarkupDefault from "parseNativeMarkup" /* 8400 */;
-import priv from "priv" /* 1442 */;
+// Module 8379 (MarkupParsers)
+import Constants from "Constants" /* 1074 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4778 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8164 */;
+import NativeMarkdownExperiment2 from "NativeMarkdownExperiment" /* 8380 */;
+import trackMarkdownParse from "trackMarkdownParse" /* 8393 */;
+import parseNativeMarkupDefault from "parseNativeMarkup" /* 8395 */;
+import priv from "priv" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
@@ -115,7 +115,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
       const obj6 = MarkupUtilsDefault;
       const obj2 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowHeading: null, allowList: null, allowLinks: null, previewLinkTarget: null };
       let tmp15 = flag2;
-      const tmpResult = tmp(8386);
+      const tmpResult = tmp(8381);
       if (!flag2) {
         tmp15 = flag3;
       }
@@ -127,7 +127,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
       obj2.allowList = flag2;
       obj2.allowLinks = flag4;
       obj2.previewLinkTarget = flag4;
-      obj3.content = obj6.astParserFor(tmp(8386).changelogRules(message.changelogId, true))(message.content, false, obj2);
+      obj3.content = obj6.astParserFor(tmp(8381).changelogRules(message.changelogId, true))(message.content, false, obj2);
       obj3.nativeMarkdownEnabled = enabled;
       const result1 = obj.set(message, obj3);
       return obj3;

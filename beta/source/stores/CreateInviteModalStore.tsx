@@ -1,17 +1,17 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 10116
+// Function ID: 10117
 // Name: CreateInviteModalStore
-// Dependencies: [2045, 2067, 8687, 1078, 10096, 10098, 38, 504, 577, 2]
+// Dependencies: [2041, 2063, 8682, 1074, 10117, 10119, 38, 504, 573, 2]
 
-// Module 10095 (CreateInviteModalStore)
+// Module 10116 (CreateInviteModalStore)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10096 */;
-import DefaultInviteExpirationExperiments from "DefaultInviteExpirationExperiments" /* 10098 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import InstantInviteStore from "InstantInviteStore" /* 8687 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10117 */;
+import DefaultInviteExpirationExperiments from "DefaultInviteExpirationExperiments" /* 10119 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import InstantInviteStore from "InstantInviteStore" /* 8682 */;
 
 require = fn;
 function updateWithLatestInvite(channelId, arg1) {
@@ -21,7 +21,7 @@ function updateWithLatestInvite(channelId, arg1) {
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  guild = GuildStore.getGuild(guild_id);
+  const guild = GuildStore.getGuild(guild_id);
   let maxAge = DefaultInviteExpirationExperiments.getDefaultInviteExpiration({ guild });
   const invite = InstantInviteStore.getInvite(channelId, { targetType, targetUserId, targetApplicationId });
   _null = invite;
@@ -63,7 +63,7 @@ function updateWithLatestInvite(channelId, arg1) {
   closure_6 = obj2;
   closure_7 = obj2;
 }
-const FormStates = fn(1078).FormStates;
+const FormStates = fn(1074).FormStates;
 InstantInviteUtilsDefault.INVITE_OPTIONS_UNLIMITED.value;
 let CLOSED = FormStates.CLOSED;
 let c15 = false;

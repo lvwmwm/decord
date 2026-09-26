@@ -1,20 +1,20 @@
-// Module ID: 9590
-// Function ID: 9591
+// Module ID: 9594
+// Function ID: 9595
 // Name: FramesNativeManager
-// Dependencies: [5, 17, 9343, 9344, 1078, 2008, 4695, 8606, 1369, 9591, 9592, 1235, 9593, 9605, 5143, 1119, 1374, 577, 1114, 1259, 2]
+// Dependencies: [5, 17, 9345, 9346, 1074, 2004, 4692, 8601, 1365, 9595, 9596, 1231, 9597, 9609, 5141, 1115, 1370, 573, 1110, 1255, 2]
 
-// Module 9590 (FramesNativeManager)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import util from "util" /* 1119 */;
-import v1 from "v1" /* 1259 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
-import NativeAppLifecycleModuleDefault from "NativeAppLifecycleModule" /* 9591 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 9592 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9605 */;
+// Module 9594 (FramesNativeManager)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import util from "util" /* 1115 */;
+import v1 from "v1" /* 1255 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import NativeAppLifecycleModuleDefault from "NativeAppLifecycleModule" /* 9595 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 9596 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9609 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FramesStore from "FramesStore" /* 9343 */;
-import FramesManager from "FramesManager" /* 9593 */;
+import FramesStore from "FramesStore" /* 9345 */;
+import FramesManager from "FramesManager" /* 9597 */;
 
 require = fn;
 function postMessageToWebView() {
@@ -44,13 +44,13 @@ let closure_12 = async function _postMessageToWebView(arg0, arg1) {
   }
   return arg1;
 };
-const isLaunched = fn(9344).isLaunched;
-const ComponentActions = fn(1078).ComponentActions;
-let closure_7 = fn(2008).DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
-const TransportTypes = fn(4695).TransportTypes;
-const WebView = fn(8606);
-const options = WebView.getWebViewProxy("FRAME_WEB_VIEW_KEY");
-const PlatformUtils = fn(1369);
+const isLaunched = fn(9346).isLaunched;
+const ComponentActions = fn(1074).ComponentActions;
+let closure_7 = fn(2004).DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
+const TransportTypes = fn(4692).TransportTypes;
+const WebView = fn(8601);
+const React7 = WebView.getWebViewProxy("FRAME_WEB_VIEW_KEY");
+const PlatformUtils = fn(1365);
 let nativeEventEmitter = null;
 if (PlatformUtils.isAndroid()) {
   nativeEventEmitter = new fn(17).NativeEventEmitter(NativeAppLifecycleModuleDefault);

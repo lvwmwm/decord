@@ -1,32 +1,23 @@
-// Module ID: 16033
-// Function ID: 16034
+// Module ID: 16037
+// Function ID: 16038
 // Name: SlayerStorefrontDevTools
-// Dependencies: [32, 5, 19, 17, 1376, 5761, 7516, 1078, 21, 4790, 580, 1275, 558, 568, 7256, 504, 11133, 1368, 11132, 9511, 6878, 5935, 5854, 5218, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 5759, 7514, 1074, 21, 4788, 576, 1271, 7258, 504, 11094, 1364, 11093, 9513, 5216, 5936, 6880, 5854, 2]
+// Exports: default
 
-// Module 16033 (SlayerStorefrontDevTools)
-import nativeDefault from "native" /* 580 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9511 */;
+// Module 16037 (SlayerStorefrontDevTools)
+import nativeDefault from "native" /* 576 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9513 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
-import SKUStore from "SKUStore" /* 5761 */;
-import IAPStore from "IAPStore" /* 7516 */;
+import UserStore from "UserStore" /* 1372 */;
+import SKUStore from "SKUStore" /* 5759 */;
+import IAPStore from "IAPStore" /* 7514 */;
 
 const require = globalThis.__r;
 
 require = fn;
-function describeStorefrontSkuFailure() {
-  const self = this;
-  const apply = closure_17.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-}
-let closure_17 = async function _describeStorefrontSkuFailure(arg0, value) {
+let closure_16 = async function _describeStorefrontSkuFailure(arg0, value) {
   if (c9 === 2) {
     c9 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -37,7 +28,7 @@ let closure_17 = async function _describeStorefrontSkuFailure(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -116,677 +107,19 @@ let closure_17 = async function _describeStorefrontSkuFailure(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: closure_11, PriceSetAssignmentPurchaseTypes: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 }, inputRow: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.inputRow = { padding: nativeDefault.space.PX_12 };
 let closure_15 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { padding: nativeDefault.space.PX_12 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/devtools/SlayerStorefrontDevTools.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = require("c").c(74);
-  const tmp4 = closure_15();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { includeKeyboardHeight: true };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  let obj = require("c");
-  [str, r10032] = noop.useState("");
-  const tmp8 = _slicedToArray(noop.useState(""), 2);
-  [str2, r10037] = noop.useState("");
-  if (cResult[1] !== str) {
-    const trimmed = str.trim();
-    cResult[1] = str;
-    cResult[2] = trimmed;
-    let arr = trimmed;
-  } else {
-    arr = cResult[2];
-  }
-  _require = arr;
-  if (cResult[3] !== str2) {
-    const trimmed1 = str2.trim();
-    cResult[3] = str2;
-    cResult[4] = trimmed1;
-    let arr2 = trimmed1;
-  } else {
-    arr2 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [SKUStore];
-    cResult[5] = items;
-    let tmp12 = items;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] !== arr) {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    cResult[6] = arr;
-    cResult[7] = K;
-    const tmp14 = K;
-  } else {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-  }
-  const tmp9 = _slicedToArray(noop.useState(""), 2);
-  const stateFromStores = require("initialize").useStateFromStores(tmp12, tmp14);
-  const tmpResult = require("initialize");
-  [tmp17, dependencyMap] = noop.useState(false);
-  const tmp7Result = _slicedToArray(noop.useState(false), 2);
-  [tmp19, _slicedToArray] = noop.useState(null);
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    const items1 = [UserStore];
-    class O {
-      constructor() {
-        return closure_1_8.getCurrentUser();
-      }
-    }
-    cResult[8] = items1;
-    cResult[9] = O;
-    let tmp21 = O;
-    let tmp20 = items1;
-  } else {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    tmp21 = cResult[9];
-  }
-  const tmp7Result3 = _slicedToArray(noop.useState(null), 2);
-  const stateFromStores1 = require("initialize").useStateFromStores(tmp20, tmp21);
-  let tmp23;
-  if (stateFromStores != null) {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    if (tmp24 != null) {
-      class K {
-        constructor() {
-          value = undefined;
-          if (closure_0.length > 0) {
-            tmp3 = closure_9;
-            value = closure_9.get(tmp);
-          }
-          return value;
-        }
-      }
-      tmp23 = tmp24[constants.DEFAULT];
-    }
-  }
-  if (tmp23 == null) {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-  }
-  noop = tmp23;
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    const items2 = [IAPStore];
-    class O {
-      constructor() {
-        return closure_1_8.getCurrentUser();
-      }
-    }
-    cResult[10] = items2;
-    const tmp25 = items2;
-  } else {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-  }
-  if (cResult[11] !== tmp23) {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    const items3 = [tmp23];
-    class O {
-      constructor() {
-        return closure_1_8.getCurrentUser();
-      }
-    }
-    cResult[11] = tmp23;
-    cResult[12] = tmp28;
-    cResult[13] = items3;
-    let tmp27 = items3;
-    const tmp26 = tmp28;
-  } else {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    tmp27 = cResult[13];
-  }
-  const tmpResult4 = require("initialize");
-  const stateFromStores2 = require("initialize").useStateFromStores(tmp25, tmp26, tmp27);
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    const items4 = [IAPStore];
-    class O {
-      constructor() {
-        return closure_1_8.getCurrentUser();
-      }
-    }
-    cResult[14] = items4;
-    cResult[15] = tmp32;
-    let tmp31 = tmp32;
-    const tmp30 = items4;
-  } else {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    tmp31 = cResult[15];
-  }
-  const tmpResult5 = require("initialize");
-  const stateFromStores3 = require("initialize").useStateFromStores(tmp30, tmp31);
-  if (cResult[16] === arr2) {
-    class K {
-      constructor() {
-        value = undefined;
-        if (closure_0.length > 0) {
-          tmp3 = closure_9;
-          value = closure_9.get(tmp);
-        }
-        return value;
-      }
-    }
-    if (cResult[19] !== tmp34) {
-      class K {
-        constructor() {
-          value = undefined;
-          if (closure_0.length > 0) {
-            tmp3 = closure_9;
-            value = closure_9.get(tmp);
-          }
-          return value;
-        }
-      }
-      cResult[19] = tmp34;
-      class O {
-        constructor() {
-          return closure_1_8.getCurrentUser();
-        }
-      }
-      cResult[20] = tmp36;
-    } else {
-      class K {
-        constructor() {
-          value = undefined;
-          if (closure_0.length > 0) {
-            tmp3 = closure_9;
-            value = closure_9.get(tmp);
-          }
-          return value;
-        }
-      }
-    }
-    class O {
-      constructor() {
-        return closure_1_8.getCurrentUser();
-      }
-    }
-    if (cResult[23] === stateFromStores1) {
-      class K {
-        constructor() {
-          value = undefined;
-          if (closure_0.length > 0) {
-            tmp3 = closure_9;
-            value = closure_9.get(tmp);
-          }
-          return value;
-        }
-      }
-      const first1 = tmp7(obj3.useState(null), 2)[0];
-      class O {
-        constructor() {
-          return closure_1_8.getCurrentUser();
-        }
-      }
-      if (cResult[26] !== tmp23) {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-        cResult[26] = tmp23;
-        class O {
-          constructor() {
-            return closure_1_8.getCurrentUser();
-          }
-        }
-        cResult[27] = tmp41;
-      } else {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      if (arr.length > 0 && arr2.length > 0) {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      if (null == tmp19) {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-        if (!tmp17) {
-          class K {
-            constructor() {
-              value = undefined;
-              if (closure_0.length > 0) {
-                tmp3 = closure_9;
-                value = closure_9.get(tmp);
-              }
-              return value;
-            }
-          }
-        }
-      } else {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-        let combined = "Fetch failed: " + tmp19;
-      }
-      const sum = tmp6(580).space.PX_16 + arr2(7256)(first).insets.bottom;
-      if (cResult[32] !== sum) {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-        tmp47[0] = tmp6(580).space.PX_16;
-        tmp47[1] = sum;
-        class O {
-          constructor() {
-            return closure_1_8.getCurrentUser();
-          }
-        }
-        cResult[32] = sum;
-        cResult[33] = tmp47;
-      } else {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      if (cResult[34] !== str2) {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-        let obj4 = { label: "Application ID", value: str2, onChange: null, placeholder: "1234567890123456789", autoCapitalize: "none", autoCorrect: false, keyboardType: "number-pad" };
-        class O {
-          constructor() {
-            return closure_1_8.getCurrentUser();
-          }
-        }
-        const tmp49 = closure_13(tmp(6878).TextInput, obj4);
-        cResult[34] = str2;
-        cResult[35] = tmp49;
-      } else {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      if (cResult[36] === tmp4.inputRow) {
-        class K {
-          constructor() {
-            value = undefined;
-            if (closure_0.length > 0) {
-              tmp3 = closure_9;
-              value = closure_9.get(tmp);
-            }
-            return value;
-          }
-        }
-        if (cResult[39] !== str) {
-          class K {
-            constructor() {
-              value = undefined;
-              if (closure_0.length > 0) {
-                tmp3 = closure_9;
-                value = closure_9.get(tmp);
-              }
-              return value;
-            }
-          }
-          let obj5 = { label: "SKU ID", value: str, onChange: null, placeholder: "1234567890123456789", autoCapitalize: "none", autoCorrect: false, keyboardType: "number-pad" };
-          class O {
-            constructor() {
-              return closure_1_8.getCurrentUser();
-            }
-          }
-          const tmp55 = closure_13(tmp(6878).TextInput, obj5);
-          cResult[39] = str;
-          cResult[40] = tmp55;
-        } else {
-          class K {
-            constructor() {
-              value = undefined;
-              if (closure_0.length > 0) {
-                tmp3 = closure_9;
-                value = closure_9.get(tmp);
-              }
-              return value;
-            }
-          }
-        }
-        if (cResult[41] === tmp4.inputRow) {
-          class K {
-            constructor() {
-              value = undefined;
-              if (closure_0.length > 0) {
-                tmp3 = closure_9;
-                value = closure_9.get(tmp);
-              }
-              return value;
-            }
-          }
-          if (cResult[44] === combined) {
-            class K {
-              constructor() {
-                value = undefined;
-                if (closure_0.length > 0) {
-                  tmp3 = closure_9;
-                  value = closure_9.get(tmp);
-                }
-                return value;
-              }
-            }
-          }
-          class O {
-            constructor() {
-              return closure_1_8.getCurrentUser();
-            }
-          }
-          tmp61[1] = combined;
-          const items5 = [tmp50, tmp56];
-          tmp61[3] = items5;
-          const tmp62 = closure_14(tmp(5935).TableRowGroup, tmp61);
-          cResult[44] = combined;
-          cResult[45] = tmp50;
-          cResult[46] = tmp56;
-          cResult[47] = tmp62;
-        }
-        class O {
-          constructor() {
-            return closure_1_8.getCurrentUser();
-          }
-        }
-        const obj6 = { style: tmp4.inputRow, children: tmp54 };
-        const tmp58 = closure_13(closure_7, obj6);
-        cResult[41] = tmp4.inputRow;
-        cResult[42] = tmp54;
-        cResult[43] = tmp58;
-      }
-      let obj7 = { style: tmp4.inputRow, children: tmp48 };
-      const tmp53 = closure_13(closure_7, obj7);
-      cResult[36] = tmp4.inputRow;
-      cResult[37] = tmp48;
-      cResult[38] = tmp53;
-      const tmp7Result4 = tmp7(obj3.useState(null), 2);
-    }
-    function se() {
-      tmp34((skuId) => {
-        const obj2 = { skuId, recipient: stateFromStores1 };
-        const result = closure_0(11132).openSocialLayerStorefrontProductGiftPurchaseSuccessModal(obj2);
-      });
-    }
-    cResult[23] = stateFromStores1;
-    cResult[24] = tmp34;
-    cResult[25] = se;
-  }
-  _require = stateFromStores1(function*(arg0, value) {
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp5 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_130_0 = length;
-            let tmp20 = 0 !== length.length;
-            if (tmp20) {
-              tmp20 = 0 !== arr2.length;
-            }
-            if (tmp20) {
-              tmp2(null);
-              tmp3(true);
-              const obj5 = { withGoogleSkuIds: null };
-              const obj4 = length(11133);
-              obj5.withGoogleSkuIds = length(1368).isAndroid();
-              c4 = 1;
-              c5 = 1;
-              const obj7 = { value: obj4.fetchSocialLayerStorefrontSkuForApplication(arr2, length, obj5), done: false };
-              return obj7;
-            } else {
-              c5 = 3;
-            }
-          }
-        } else if (1 === tmp6) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
-          } else {
-            tmp3(false);
-            if (null != SKUStore.get(length)) {
-              closure_130_0(length);
-            } else {
-              arr2 = tmp2;
-              c4 = 2;
-              c5 = 1;
-              const obj9 = { value: describeStorefrontSkuFailure(arr2, length), done: false };
-              return obj9;
-            }
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 !== 2) {
-          arr2(value);
-        }
-        c5 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } catch (tmp30) {
-        c5 = tmp;
-        throw tmp30;
-      }
-    }
-  });
-  const fn = function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  };
-  cResult[16] = arr2;
-  cResult[17] = arr;
-  cResult[18] = fn;
-  tmp34 = fn;
-}) : (() => {
+export default function SlayerStorefrontDevTools() {
   const tmp = closure_15();
   [str, tmp6] = first(first1.useState(""), 2);
   const tmp4 = first;
@@ -841,14 +174,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp5 === 3) {
+    } else if (tmp4 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -862,19 +195,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_3 = tmp2;
-            closure_2 = tmp3;
+            closure_3 = tmp5;
+            closure_2 = tmp2;
             closure_130_0 = length;
-            let tmp20 = 0 !== length.length;
-            if (tmp20) {
-              tmp20 = 0 !== trimmed1.length;
+            let tmp19 = 0 !== length.length;
+            if (tmp19) {
+              tmp19 = 0 !== trimmed1.length;
             }
-            if (tmp20) {
+            if (tmp19) {
               closure_1_6(null);
               v2(true);
               const obj5 = { withGoogleSkuIds: null };
-              const obj4 = length(stateFromStores[16]);
-              obj5.withGoogleSkuIds = length(stateFromStores[17]).isAndroid();
+              const obj4 = length(stateFromStores[14]);
+              obj5.withGoogleSkuIds = length(stateFromStores[15]).isAndroid();
               v2 = 1;
               c5 = 1;
               const obj7 = { value: obj4.fetchSocialLayerStorefrontSkuForApplication(trimmed1, length, obj5), done: false };
@@ -883,7 +216,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c5 = 3;
             }
           }
-        } else if (1 === tmp6) {
+        } else if (1 === tmp5) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -899,7 +232,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               trimmed1 = closure_1_6;
               v2 = 2;
               c5 = 1;
-              const obj9 = { value: describeStorefrontSkuFailure(trimmed1, length), done: false };
+              const obj9 = {
+                value: (function describeStorefrontSkuFailure() {
+                            const self = this;
+                            const apply = closure_1_16.apply;
+                            if (typeof apply === "unknown") {
+                              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                            } else {
+                              applyArgumentsResult = apply(self, arguments);
+                            }
+                            return applyArgumentsResult;
+                          })(trimmed1, length),
+                done: false
+              };
               return obj9;
             }
           }
@@ -912,9 +257,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         c5 = 3;
         const obj = { value, done: true };
         return obj;
-      } catch (tmp30) {
+      } catch (tmp29) {
         c5 = tmp;
-        throw tmp30;
+        throw tmp29;
       }
     }
   });
@@ -933,19 +278,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items7 = [callback];
   const callback1 = obj.useCallback(() => {
     callback((skuId) => {
-      const result = length(stateFromStores[18]).openSocialLayerStorefrontProductDetailsModal({ skuId });
+      const result = length(stateFromStores[16]).openSocialLayerStorefrontProductDetailsModal({ skuId });
     });
   }, items6);
   const items8 = [callback, stateFromStores1];
   const callback2 = obj.useCallback(() => {
     callback((skuId) => {
-      const result = length(stateFromStores[18]).openSocialLayerStorefrontProductSelfPurchaseSuccessModal({ skuId });
+      const result = length(stateFromStores[16]).openSocialLayerStorefrontProductSelfPurchaseSuccessModal({ skuId });
     });
   }, items7);
   const callback3 = obj.useCallback(() => {
     callback((skuId) => {
       const obj2 = { skuId, recipient: stateFromStores1 };
-      const result = closure_0(stateFromStores[18]).openSocialLayerStorefrontProductGiftPurchaseSuccessModal(obj2);
+      const result = closure_0(stateFromStores[16]).openSocialLayerStorefrontProductGiftPurchaseSuccessModal(obj2);
     });
   }, items8);
   const tmp9Result3 = require("initialize");
@@ -1044,7 +389,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return str13;
   }, items10);
   obj5.paddingVertical = trimmed1(stateFromStores[10]).space.PX_16;
-  obj5.paddingBottom = trimmed1(stateFromStores[10]).space.PX_16 + trimmed1(stateFromStores[14])({ includeKeyboardHeight: true }).insets.bottom;
+  obj5.paddingBottom = trimmed1(stateFromStores[10]).space.PX_16 + trimmed1(stateFromStores[12])({ includeKeyboardHeight: true }).insets.bottom;
   obj4.contentContainerStyle = obj5;
   const obj6 = { title: "SKU", description: memo, hasIcons: false, children: null };
   const tmp31 = closure_6;
@@ -1064,8 +409,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       str3 = "play id " + tmp16;
     }
     const obj10 = { label: "Query Play for this SKU's price", subLabel: str3, onPress: callback4, disabled: null == tmp16, arrow: true };
-    obj9.children = tmp30(tmp9(tmp3[22]).TableRow, obj10);
-    isAndroidResult = tmp30(tmp9(tmp3[21]).TableRowGroup, obj9);
+    obj9.children = tmp30(tmp9(tmp3[21]).TableRow, obj10);
+    isAndroidResult = tmp30(tmp9(tmp3[19]).TableRowGroup, obj9);
   }
   items12[1] = isAndroidResult;
   const items13 = [closure_13(require("TableRow").TableRow, { label: "Product details", subLabel: "The PDP, as opened from a gift-code embed", onPress: callback1, disabled: tmp28, arrow: true }), closure_13(require("TableRow").TableRow, { label: "Purchase success (self)", subLabel: "Redeem / link-account screen shown after buying", onPress: callback2, disabled: tmp28, arrow: true }), ];
@@ -1085,4 +430,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj11.children = items12;
   obj4.children = closure_14(require("Stack/Stack").Stack, obj11);
   return closure_13(tmp31, obj4);
-});
+};

@@ -1,16 +1,16 @@
-// Module ID: 12924
-// Function ID: 12925
+// Module ID: 13021
+// Function ID: 13022
 // Name: HubJoinManager
-// Dependencies: [2067, 1078, 1986, 577, 7618, 2]
+// Dependencies: [2063, 1074, 1982, 573, 7616, 2]
 
-// Module 12924 (HubJoinManager)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import transitionToGuild from "transitionToGuild" /* 7618 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import LifecycleManager from "LifecycleManager" /* 1986 */;
+// Module 13021 (HubJoinManager)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import transitionToGuild from "transitionToGuild" /* 7616 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 require = fn;
-const GuildFeatures = fn(1078).GuildFeatures;
+const GuildFeatures = fn(1074).GuildFeatures;
 class HubJoinManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

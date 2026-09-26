@@ -1,12 +1,12 @@
-// Module ID: 8116
-// Function ID: 8117
+// Module ID: 8111
+// Function ID: 8112
 // Name: uploadMessageAttachments
-// Dependencies: [5, 8117, 8118, 5012, 577, 2]
+// Dependencies: [5, 8112, 8113, 5010, 573, 2]
 // Exports: uploadMessageAttachments
 
-// Module 8116 (uploadMessageAttachments)
+// Module 8111 (uploadMessageAttachments)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UploadStore from "UploadStore" /* 8117 */;
+import UploadStore from "UploadStore" /* 8112 */;
 
 const require = fn;
 let closure_6 = async function _uploadMessageAttachments(arg0, value) {
@@ -20,7 +20,7 @@ let closure_6 = async function _uploadMessageAttachments(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -47,7 +47,7 @@ let closure_6 = async function _uploadMessageAttachments(arg0, value) {
           closure_130_7 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -59,7 +59,7 @@ let closure_6 = async function _uploadMessageAttachments(arg0, value) {
           return obj5;
         } else if (closure_131_5.has(closure_130_2)) {
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         } else {
           const tmp16 = new closure_131_1(closure_131_2[2])();
           closure_130_5 = tmp16;
@@ -71,18 +71,18 @@ let closure_6 = async function _uploadMessageAttachments(arg0, value) {
           closure_130_7 = closure_131_0(closure_131_2[3]).createMessageRecord(obj6);
           closure_130_5.on("start", (file) => {
             uploader.add(dependencyMap);
-            closure_1(577).dispatch({ type: "UPLOAD_START", channelId, file, uploader, message });
+            closure_1(573).dispatch({ type: "UPLOAD_START", channelId, file, uploader, message });
           });
           closure_130_5.on("compression-progress", (file) => {
-            closure_1(577).dispatch({ type: "UPLOAD_COMPRESSION_PROGRESS", channelId, file });
+            closure_1(573).dispatch({ type: "UPLOAD_COMPRESSION_PROGRESS", channelId, file });
           });
           closure_130_5.on("progress", (file) => {
-            closure_1(577).dispatch({ type: "UPLOAD_PROGRESS", channelId, file });
+            closure_1(573).dispatch({ type: "UPLOAD_PROGRESS", channelId, file });
           });
           closure_130_5.on("error", (file) => {
             uploader.delete(dependencyMap);
             uploader.cancel();
-            closure_1(577).dispatch({ type: "UPLOAD_FAIL", channelId, file, messageId: message.id, shouldSendNotification });
+            closure_1(573).dispatch({ type: "UPLOAD_FAIL", channelId, file, messageId: message.id, shouldSendNotification });
           });
           closure_130_5.on("complete", (id) => {
             const file = id;
@@ -101,8 +101,8 @@ let closure_6 = async function _uploadMessageAttachments(arg0, value) {
                 id = messageForFile.id;
               }
               const obj2 = { type: "MESSAGE_DELETE", id, channelId: messageForFile.channel_id };
-              closure_1_1(577).dispatch(obj2);
-              const obj = closure_1_1(577);
+              closure_1_1(573).dispatch(obj2);
+              const obj = closure_1_1(573);
             }
             if (uploader._aborted) {
               const _setTimeout = setTimeout;
@@ -112,7 +112,7 @@ let closure_6 = async function _uploadMessageAttachments(arg0, value) {
             }
           });
           closure_130_5.on("cancel-upload-item", (file) => {
-            closure_1(577).dispatch({ type: "UPLOAD_FILE_UPDATE", file, channelId });
+            closure_1(573).dispatch({ type: "UPLOAD_FILE_UPDATE", file, channelId });
           });
           value = {};
           c4 = 2;

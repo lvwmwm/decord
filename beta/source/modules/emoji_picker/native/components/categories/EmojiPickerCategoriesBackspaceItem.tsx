@@ -1,18 +1,18 @@
-// Module ID: 10576
-// Function ID: 10577
+// Module ID: 10656
+// Function ID: 10657
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: [19, 17, 1078, 21, 2040, 1119, 10577, 2]
+// Dependencies: [19, 17, 1074, 21, 2036, 1115, 10657, 2]
 // Exports: default
 
-// Module 10576 (EmojiPickerCategoriesBackspaceItem)
-import util from "util" /* 1119 */;
-import Timers from "Timers" /* 2040 */;
-import BackspaceIcon from "BackspaceIcon" /* 10577 */;
+// Module 10656 (EmojiPickerCategoriesBackspaceItem)
+import util from "util" /* 1115 */;
+import Timers from "Timers" /* 2036 */;
+import BackspaceIcon from "BackspaceIcon" /* 10657 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Pressable = fn(17).Pressable;
-const NODE_MARGIN = fn(1078).NODE_MARGIN;
+const NODE_MARGIN = fn(1074).NODE_MARGIN;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoriesBackspaceItem.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 4783
-// Function ID: 4784
+// Module ID: 4781
+// Function ID: 4782
 // Name: MessageConstants
-// Dependencies: [1078, 1095, 561, 2]
+// Dependencies: [1074, 1091, 559, 2]
 // Exports: isChannelStreamMessage
 
-// Module 4783 (MessageConstants)
-import Constants from "Constants" /* 1078 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import Backoff from "Backoff" /* 561 */;
+// Module 4781 (MessageConstants)
+import Constants from "Constants" /* 1074 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStreamTypes = Constants.ChannelStreamTypes;

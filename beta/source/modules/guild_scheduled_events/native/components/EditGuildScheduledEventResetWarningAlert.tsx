@@ -1,62 +1,20 @@
-// Module ID: 9895
-// Function ID: 9896
+// Module ID: 9917
+// Function ID: 9918
 // Name: EditGuildScheduledEventResetWarningAlert
-// Dependencies: [19, 21, 558, 568, 1119, 5239, 2]
+// Dependencies: [19, 21, 5237, 1115, 2]
+// Exports: default
 
-// Module 9895 (EditGuildScheduledEventResetWarningAlert)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import common_AlertDefault from "common/Alert" /* 5239 */;
+// Module 9917 (EditGuildScheduledEventResetWarningAlert)
+import util from "util" /* 1115 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildScheduledEventResetWarningAlert.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(7);
-  ({ onClose, onConfirm } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.aNCYas);
-    const intl2 = tmp(1119).intl;
-    const formatResult = intl2.format(tmp(1119).t.RWBa5X, {});
-    const intl3 = tmp(1119).intl;
-    const stringResult1 = intl3.string(tmp(1119).t["cY+Oob"]);
-    cResult[0] = stringResult;
-    cResult[1] = formatResult;
-    cResult[2] = stringResult1;
-    tmp4 = stringResult;
-    tmp5 = formatResult;
-    tmp6 = stringResult1;
-  } else {
-    [tmp4, tmp5, tmp6] = cResult;
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1119).intl;
-    const stringResult2 = intl4.string(tmp(1119).t["ETE/oC"]);
-    cResult[3] = stringResult2;
-    let tmp10 = stringResult2;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === onClose) {
-    if (cResult[5] === onConfirm) {
-      let tmp12 = cResult[6];
-    }
-    return tmp12;
-  }
-  const obj2 = { onClose, onConfirm, title: tmp4, body: tmp5, confirmText: tmp6, confirmColor: null, cancelText: null };
-  obj2.confirmColor = common_AlertDefault.Colors.GREEN;
-  obj2.cancelText = tmp10;
-  const tmp14 = jsx(common_AlertDefault, { onClose, onConfirm, title: tmp4, body: tmp5, confirmText: tmp6, confirmColor: null, cancelText: null });
-  cResult[4] = onClose;
-  cResult[5] = onConfirm;
-  cResult[6] = tmp14;
-  tmp12 = tmp14;
-}) : ((arg0) => {
+export default function EditGuildScheduledEventResetWarningAlert(arg0) {
   ({ onClose, onConfirm } = arg0);
   const obj = { onClose, onConfirm, title: null, body: null, confirmText: null, confirmColor: null, cancelText: null };
   const intl = util.intl;
@@ -69,4 +27,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const intl4 = util.intl;
   obj.cancelText = intl4.string(util.t["ETE/oC"]);
   return jsx(common_AlertDefault, { onClose, onConfirm, title: null, body: null, confirmText: null, confirmColor: null, cancelText: null });
-});
+};

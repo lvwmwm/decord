@@ -1,153 +1,38 @@
-// Module ID: 16550
-// Function ID: 16551
+// Module ID: 16543
+// Function ID: 16544
 // Name: FavoritesGuildSuggestedChannels
-// Dependencies: [19, 17, 16551, 1078, 12249, 21, 580, 4790, 558, 568, 16455, 1119, 3360, 5878, 7328, 16552, 16553, 5220, 11315, 2]
-// Exports: getFavoritesSuggestionsNoticeHeight
+// Dependencies: [19, 17, 16544, 1074, 10413, 21, 576, 4788, 16448, 1115, 3356, 5929, 7326, 16545, 16546, 5218, 11276, 2]
+// Exports: default, getFavoritesSuggestionsNoticeHeight
 
-// Module 16550 (FavoritesGuildSuggestedChannels)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import _modDef3360 from "module_3360" /* 3360 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import XSmallIcon from "XSmallIcon" /* 5878 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 7328 */;
-import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 16552 */;
-import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 16553 */;
+// Module 16543 (FavoritesGuildSuggestedChannels)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import _modDef3356 from "module_3356" /* 3356 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import XSmallIcon from "XSmallIcon" /* 5929 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 7326 */;
+import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 16545 */;
+import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 16546 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const FavoritesGuildSuggestionsStore = fn(16551);
+const FavoritesGuildSuggestionsStore = fn(16544);
 ({ useFavoritesGuildSuggestions: hasOwnProperty, useFavoritesGuildSuggestionsDismissal: metroRequire } = FavoritesGuildSuggestionsStore);
-const NOOP = fn(1078).NOOP;
-let closure_8 = fn(12249).getScaledCategoryRowHeight;
+const NOOP = fn(1074).NOOP;
+let closure_8 = fn(10413).getScaledCategoryRowHeight;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;
 const PX_4 = nativeDefault.space.PX_4;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_13 = createStyles.createStyles({ container: { marginTop: PX_4 }, rows: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: PX_8 } });
-const ReactCompilerGating = fn(558);
-let obj2 = { container: { marginTop: PX_4 }, rows: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: PX_8 } };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuildSuggestedChannels.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = arr(568).c(21);
-  const tmp4 = closure_13();
-  let obj = arr(568);
-  const categoryStyles = arr(16455).useCategoryStyles();
-  arr = closure_5();
-  const tmp6 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1119).intl;
-    const stringResult = intl.string(_modDef3360.F3dWTe);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp6) {
-    let obj3 = { label: first, perform: tmp6, Icon: tmp(5878).XSmallIcon };
-    cResult[1] = tmp6;
-    cResult[2] = obj3;
-    let tmp10 = obj3;
-  } else {
-    tmp10 = cResult[2];
-  }
-  const tmp12 = useScaledRowHeightDefault();
-  if (cResult[3] !== tmp12) {
-    const obj4 = { height: tmp12 };
-    cResult[3] = tmp12;
-    cResult[4] = obj4;
-    let tmp13 = obj4;
-  } else {
-    tmp13 = cResult[4];
-  }
-  importDefault = tmp13;
-  if (0 === arr.length) {
-    return null;
-  } else {
-    if (cResult[5] === categoryStyles) {
-      if (cResult[6] === tmp10) {
-        let tmp14 = cResult[7];
-      }
-      if (cResult[8] === tmp13) {
-        if (cResult[9] === arr) {
-          if (cResult[14] === tmp4.rows) {
-            if (cResult[15] === tmp17) {
-              let tmp21 = cResult[16];
-            }
-            if (cResult[17] === tmp4.container) {
-              if (cResult[18] === tmp14) {
-                if (cResult[19] === tmp21) {
-                  let tmp25 = cResult[20];
-                }
-                return tmp25;
-              }
-            }
-            const obj5 = { style: tmp30, children: null };
-            const items = [tmp14, tmp21];
-            obj5.children = items;
-            const tmp28 = closure_10(View, obj5);
-            cResult[17] = tmp4.container;
-            cResult[18] = tmp14;
-            cResult[19] = tmp21;
-            cResult[20] = tmp28;
-            tmp25 = tmp28;
-          }
-          const obj6 = { style: tmp16, children: cResult[10] };
-          const tmp24 = closure_9(View, obj6);
-          cResult[14] = tmp4.rows;
-          cResult[15] = cResult[10];
-          cResult[16] = tmp24;
-          tmp21 = tmp24;
-        }
-      }
-      if (cResult[11] === tmp13) {
-        if (cResult[12] === arr.length) {
-          let tmp18 = cResult[13];
-        }
-        const mapped = arr.map(tmp18);
-        cResult[8] = tmp13;
-        cResult[9] = arr;
-        cResult[10] = mapped;
-      }
-      const fn = function x(result, arg1) {
-        closure_0 = result;
-        const obj = { style, children: null };
-        const obj2 = { result, onPressDestination: handleFavoritesGuildAddSuggestedChannelDefault, onLongPress: NOOP, start: 0 === arg1, end: arg1 === arr.length - 1, trailing: null };
-        const obj3 = { variant: "secondary", size: "sm", grow: false, text: null, onPress: null };
-        const intl = util.intl;
-        obj3.text = intl.string(util.t.OYkgVk);
-        obj3.onPress = function onPress() {
-          const tmp = closure_1(16553);
-          return tmp(arr(11315).getDestinationIdFromResult(closure_0));
-        };
-        obj2.trailing = options(components_Button_Button.Button, obj3);
-        obj.children = options(SearchableDestinationListRowDefault, obj2);
-        return options(View, obj, "" + result.type + "-" + result.record.id);
-      };
-      cResult[11] = tmp13;
-      cResult[12] = arr.length;
-      cResult[13] = fn;
-      tmp18 = fn;
-    }
-    const obj7 = { name: null, withMarginTop: false, styles: null, trailingAction: null };
-    const intl2 = tmp(1119).intl;
-    obj7.name = intl2.string(_modDef3360.oHWnLy);
-    obj7.styles = categoryStyles;
-    obj7.trailingAction = tmp10;
-    const renderCategoryItemResult = tmp(16455).renderCategoryItem(obj7);
-    cResult[5] = categoryStyles;
-    cResult[6] = tmp10;
-    cResult[7] = renderCategoryItemResult;
-    tmp14 = renderCategoryItemResult;
-    const tmpResult = tmp(16455);
-  }
-}) : (() => {
+export default function FavoritesGuildSuggestedChannels() {
   let tmp = closure_13();
-  const categoryStyles = arr(16455).useCategoryStyles();
+  const categoryStyles = arr(16448).useCategoryStyles();
   arr = closure_5();
   const tmp5 = closure_6();
   importDefault = tmp5;
@@ -155,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const memo = noop.useMemo(() => {
     const obj = { label: null, perform: null, Icon: null };
     const intl = util.intl;
-    obj.label = intl.string(_modDef3360.F3dWTe);
+    obj.label = intl.string(_modDef3356.F3dWTe);
     obj.perform = perform;
     obj.Icon = XSmallIcon.XSmallIcon;
     return obj;
@@ -168,11 +53,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (0 !== arr.length) {
     let obj2 = { style: tmp.container, children: null };
     let obj3 = { name: null, withMarginTop: false, styles: null, trailingAction: null };
-    let intl = tmp2(1119).intl;
-    obj3.name = intl.string(_modDef3360.oHWnLy);
+    let intl = tmp2(1115).intl;
+    obj3.name = intl.string(_modDef3356.oHWnLy);
     obj3.styles = categoryStyles;
     obj3.trailingAction = memo;
-    const items2 = [tmp2(16455).renderCategoryItem(obj3), ];
+    const items2 = [tmp2(16448).renderCategoryItem(obj3), ];
     const obj4 = {
       style: tmp.rows,
       children: arr.map((item, index) => {
@@ -183,21 +68,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const intl = util.intl;
           obj3.text = intl.string(util.t.OYkgVk);
           obj3.onPress = function onPress() {
-            const tmp = closure_1(16553);
-            return tmp(arr(11315).getDestinationIdFromResult(closure_0));
+            const tmp = closure_1(16546);
+            return tmp(arr(11276).getDestinationIdFromResult(closure_0));
           };
-          obj2.trailing = options(components_Button_Button.Button, obj3);
-          obj.children = options(SearchableDestinationListRowDefault, obj2);
-          return options(View, obj, "" + item.type + "-" + item.record.id);
+          obj2.trailing = React7(components_Button_Button.Button, obj3);
+          obj.children = React7(SearchableDestinationListRowDefault, obj2);
+          return React7(View, obj, "" + item.type + "-" + item.record.id);
         })
     };
     items2[1] = closure_9(View, obj4);
     obj2.children = items2;
     tmp9 = closure_10(View, obj2);
-    const tmp2Result = tmp2(16455);
+    const tmp2Result = tmp2(16448);
   }
   return tmp9;
-});
+};
 export const getFavoritesSuggestionsNoticeHeight = function getFavoritesSuggestionsNoticeHeight(fontScale, arg1, arg2) {
   let num = 0;
   if (0 !== arg2) {

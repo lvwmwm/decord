@@ -1,13 +1,13 @@
-// Module ID: 16816
-// Function ID: 16817
+// Module ID: 16806
+// Function ID: 16807
 // Name: NativeICYMIActionCreators
-// Dependencies: [5, 1078, 8658, 1275, 577, 4490, 1119, 2]
+// Dependencies: [5, 1074, 8653, 1271, 573, 4486, 1115, 2]
 
-// Module 16816 (NativeICYMIActionCreators)
+// Module 16806 (NativeICYMIActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/icymi/native/NativeICYMIActionCreators.tsx");
 
@@ -25,7 +25,7 @@ export default {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

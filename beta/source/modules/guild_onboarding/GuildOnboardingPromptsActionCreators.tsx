@@ -1,18 +1,18 @@
-// Module ID: 7378
-// Function ID: 7379
+// Module ID: 7376
+// Function ID: 7377
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 2109, 2067, 7379, 7380, 1078, 4418, 1245, 4970, 577, 1275, 1389, 2]
+// Dependencies: [5, 502, 2105, 2063, 7377, 7378, 1074, 4414, 1241, 4968, 573, 1271, 1385, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 7378 (GuildOnboardingPromptsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+// Module 7376 (GuildOnboardingPromptsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7379 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7377 */;
 
 require = fn;
 function fetchOnboardingPrompts(guildId) {
@@ -43,7 +43,7 @@ let closure_14 = async function _maybeFetchOnboardingPrompts(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -148,10 +148,10 @@ function _trackOnboardingDirectJoin(guildId) {
   obj5.in_onboarding = true;
   obj4.track(constants.GUILD_ONBOARDING_STEP_COMPLETED, obj5);
 }
-let closure_8 = fn(7380).serverApiResponseToClientState;
-const Constants = fn(1078);
+let closure_8 = fn(7378).serverApiResponseToClientState;
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, Endpoints: c10, GuildFeatures: closure_11 } = Constants);
-const GuildMemberFlags = fn(4418).GuildMemberFlags;
+const GuildMemberFlags = fn(4414).GuildMemberFlags;
 let c16 = -2;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/GuildOnboardingPromptsActionCreators.tsx");

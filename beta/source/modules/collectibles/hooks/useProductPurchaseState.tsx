@@ -1,12 +1,13 @@
-// Module ID: 9151
-// Function ID: 9152
+// Module ID: 9153
+// Function ID: 9154
 // Name: useProductPurchaseState
-// Dependencies: [7836, 9152, 1977, 558, 568, 504, 2]
+// Dependencies: [7831, 9154, 1973, 504, 2]
+// Exports: useProductPurchaseState
 
-// Module 9151 (useProductPurchaseState)
-import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import compactDefault from "compact" /* 9152 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7836 */;
+// Module 9153 (useProductPurchaseState)
+import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
+import compactDefault from "compact" /* 9154 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7831 */;
 
 const require = globalThis.__r;
 
@@ -58,35 +59,12 @@ function getProductPurchaseState(CollectiblesPurchaseStore, skuId) {
     return obj;
   }
 }
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");
 
 export { getProductPurchaseState };
-export const useProductPurchaseState = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CollectiblesPurchaseStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      return getProductPurchaseState(CollectiblesPurchaseStore, closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStoresObject(first, tmp6);
-}) : ((arg0) => {
-  _require = arg0;
+export const useProductPurchaseState = function useProductPurchaseState(product) {
+  _require = product;
   const items = [CollectiblesPurchaseStore];
   return require("initialize").useStateFromStoresObject(items, () => getProductPurchaseState(CollectiblesPurchaseStore, closure_0));
-});
+};

@@ -1,27 +1,42 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 10434
+// Function ID: 10435
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 2049, 2045, 4441, 4971, 1376, 1078, 21, 7398, 7393, 4943, 8908, 1119, 13016, 7658, 558, 568, 504, 5871, 7278, 2]
+// Dependencies: [19, 2045, 2041, 4437, 4969, 1372, 1074, 21, 7396, 7391, 4941, 8903, 1115, 10435, 7656, 504, 5873, 7277, 2]
 
-// Module 13015 (InAppNotificationSettingsModal)
-import util from "util" /* 1119 */;
-import useChannelName from "useChannelName" /* 4943 */;
-import NavigatorHeader from "NavigatorHeader" /* 5871 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7393 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7398 */;
-import Form from "Form" /* 8908 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13016 */;
+// Module 10434 (InAppNotificationSettingsModal)
+import util from "util" /* 1115 */;
+import useChannelName from "useChannelName" /* 4941 */;
+import NavigatorHeader from "NavigatorHeader" /* 5873 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
+import Form from "Form" /* 8903 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 10435 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
-import UserStore from "UserStore" /* 1376 */;
-
-const require = globalThis.__r;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const isMultiUserDM = fn(2049).isMultiUserDM;
-const Constants = fn(1078);
+function ConnectedInAppNotificationSettingsScreen(channel) {
+  channel = channel.channel;
+  const items = [UserGuildSettingsStore];
+  const obj = channel(504);
+  return closure_11(InAppNotificationSettingsScreen, {
+    channel,
+    isMuted: channel(504).useStateFromStores(items, () => {
+      let isChannelMutedResult;
+      if (null != channel) {
+        if (isMultiUserDM(obj.type)) {
+          isChannelMutedResult = UserGuildSettingsStore.isChannelMuted(obj.getGuildId(), obj.id);
+        }
+      }
+      return isChannelMutedResult;
+    })
+  });
+}
+const isMultiUserDM = fn(2045).isMultiUserDM;
+const Constants = fn(1074);
 ({ ChannelTypes: closure_9, UserSettingsSections: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -112,116 +127,12 @@ prototype["render"] = function render() {
   obj4.children = intl3.string(util.t.avgbp1);
   items[2] = closure_1_11(Form.FormHint, obj4);
   obj.children = items;
-  return __initData(Form.Form, obj);
+  return closure_1_12(Form.Form, obj);
 };
-let ReactCompilerGating = fn(558);
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = channel(568).c(6);
-  channel = channel.channel;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserGuildSettingsStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel) {
-    const fn = function o() {
-      let isChannelMutedResult;
-      if (null != channel) {
-        if (isMultiUserDM(obj.type)) {
-          isChannelMutedResult = UserGuildSettingsStore.isChannelMuted(obj.getGuildId(), obj.id);
-        }
-      }
-      return isChannelMutedResult;
-    };
-    cResult[1] = channel;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = channel(568);
-  const stateFromStores = channel(504).useStateFromStores(first, tmp6);
-  if (cResult[3] === channel) {
-    if (cResult[4] === stateFromStores) {
-      let tmp8 = cResult[5];
-    }
-    return tmp8;
-  }
-  const tmp9 = closure_11(InAppNotificationSettingsScreen, { channel, isMuted: stateFromStores });
-  cResult[3] = channel;
-  cResult[4] = stateFromStores;
-  cResult[5] = tmp9;
-  tmp8 = tmp9;
-}) : ((channel) => {
-  channel = channel.channel;
-  const items = [UserGuildSettingsStore];
-  const obj = channel(504);
-  return closure_11(InAppNotificationSettingsScreen, {
-    channel,
-    isMuted: channel(504).useStateFromStores(items, () => {
-      let isChannelMutedResult;
-      if (null != channel) {
-        if (isMultiUserDM(obj.type)) {
-          isChannelMutedResult = UserGuildSettingsStore.isChannelMuted(obj.getGuildId(), obj.id);
-        }
-      }
-      return isChannelMutedResult;
-    })
-  });
-});
-ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = require("c").c(5);
-  ({ channelId, onClose } = arg0);
-  if (cResult[0] === channelId) {
-    if (cResult[1] === onClose) {
-      let tmp4 = cResult[2];
-    }
-    if (cResult[3] !== tmp4) {
-      const obj2 = { screens: tmp4, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" };
-      const tmp7 = closure_11(tmp(7278).Navigator, obj2);
-      cResult[3] = tmp4;
-      cResult[4] = tmp7;
-      let tmp5 = tmp7;
-    } else {
-      tmp5 = cResult[4];
-    }
-    return tmp5;
-  }
-  _require = ChannelStore.getChannel(channelId);
-  const obj3 = { IN_APP_NOTIFICATION_SETTINGS: null };
-  const obj4 = {
-    headerTitle() {
-      const obj = { title: null, subtitle: null };
-      const intl = channelId(1119).intl;
-      obj.title = intl.string(channelId(1119).t.h850Ss);
-      let channelName = null;
-      if (null != closure_0) {
-        const tmp3Result = channelId(4943);
-        channelName = tmp3Result.computeChannelName(tmp, UserStore, RelationshipStore, true);
-      }
-      obj.subtitle = channelName;
-      return closure_2_11(channelId(5871).NavigatorHeader, obj);
-    },
-    headerLeft: null,
-    render: null
-  };
-  const obj = require("c");
-  obj4.headerLeft = require("NavigatorHeader").getHeaderCloseButton(onClose);
-  obj4.render = function render() {
-    return closure_2_11(closure_2_14, { channel });
-  };
-  obj3.IN_APP_NOTIFICATION_SETTINGS = obj4;
-  cResult[0] = channelId;
-  cResult[1] = onClose;
-  cResult[2] = obj3;
-  tmp4 = obj3;
-}) : ((channelId) => {
+export default noop.memo((channelId) => {
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
   const items = [channelId, onClose];
@@ -231,23 +142,23 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     const obj2 = {
       headerTitle() {
         const obj = { title: null, subtitle: null };
-        const intl = channelId(1119).intl;
-        obj.title = intl.string(channelId(1119).t.h850Ss);
+        const intl = channelId(1115).intl;
+        obj.title = intl.string(channelId(1115).t.h850Ss);
         let channelName = null;
         if (null != closure_0) {
-          const tmp3Result = channelId(4943);
+          const tmp3Result = channelId(4941);
           channelName = tmp3Result.computeChannelName(tmp, UserStore, RelationshipStore, true);
         }
         obj.subtitle = channelName;
-        return closure_2_11(channelId(5871).NavigatorHeader, obj);
+        return closure_2_11(channelId(5873).NavigatorHeader, obj);
       },
       headerLeft: NavigatorHeader.getHeaderCloseButton(onClose),
       render() {
-        return closure_2_11(closure_2_14, { channel });
+        return closure_2_11(ConnectedInAppNotificationSettingsScreen, { channel });
       }
     };
     obj.IN_APP_NOTIFICATION_SETTINGS = obj2;
     return obj;
   }, items);
-  return closure_11(channelId(7278).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
-}));
+  return closure_11(channelId(7277).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+});

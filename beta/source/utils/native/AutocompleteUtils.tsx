@@ -1,11 +1,11 @@
-// Module ID: 5767
-// Function ID: 5768
+// Module ID: 5765
+// Function ID: 5766
 // Name: utils/AutocompleteUtils
-// Dependencies: [1078, 1119, 2]
+// Dependencies: [1074, 1115, 2]
 
-// Module 5767 (utils/AutocompleteUtils)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
+// Module 5765 (utils/AutocompleteUtils)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 Constants.AutoCompleteResultTypes;

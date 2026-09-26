@@ -1,67 +1,19 @@
-// Module ID: 9988
-// Function ID: 9989
+// Module ID: 10010
+// Function ID: 10011
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [19, 558, 568, 206, 9965, 2]
+// Dependencies: [19, 206, 9987, 2]
+// Exports: useReadableSecureFramesFingerprint
 
-// Module 9988 (useReadableSecureFramesFingerprint)
+// Module 10010 (useReadableSecureFramesFingerprint)
 import byteLengthDefault from "byteLength" /* 206 */;
-import c from "c" /* 568 */;
-import _mod9965 from "module_9965" /* 9965 */;
+import _mod9987 from "module_9987" /* 9987 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/hooks/useReadableSecureFramesFingerprint.tsx");
 
-export const useReadableSecureFramesFingerprint = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(4);
-  ({ fingerprintBase64, chunkSize, desiredLength } = arg0);
-  if (cResult[0] === chunkSize) {
-    if (cResult[1] === desiredLength) {
-      if (cResult[2] === fingerprintBase64) {
-        let tmp4 = cResult[3];
-      }
-      if (null != fingerprintBase64) {
-        if ("" !== fingerprintBase64) {
-          if (null == tmp4) {
-            const _Error = Error;
-            const error = new Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
-            throw error;
-          }
-        }
-      }
-      return tmp4;
-    }
-  }
-  let tmp5 = null;
-  if (null != fingerprintBase64) {
-    tmp5 = null;
-    if ("" !== fingerprintBase64) {
-      const toByteArrayResult = byteLengthDefault.toByteArray(fingerprintBase64);
-      const str7 = _mod9965.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
-      tmp5 = null;
-      if (null != str7) {
-        const _RegExp = RegExp;
-        const _HermesInternal = HermesInternal;
-        const regExp = new RegExp(".{1," + chunkSize + "}", "g");
-        const match = str7.match(regExp);
-        let arr = null;
-        if (null != match) {
-          const _Array = Array;
-          arr = Array.from(match);
-        }
-        tmp5 = arr;
-      }
-      const tmpResult = _mod9965;
-    }
-  }
-  cResult[0] = chunkSize;
-  cResult[1] = desiredLength;
-  cResult[2] = fingerprintBase64;
-  cResult[3] = tmp5;
-  tmp4 = tmp5;
-}) : ((fingerprintBase64) => {
+export const useReadableSecureFramesFingerprint = function useReadableSecureFramesFingerprint(fingerprintBase64) {
   fingerprintBase64 = fingerprintBase64.fingerprintBase64;
   const chunkSize = fingerprintBase64.chunkSize;
   const desiredLength = fingerprintBase64.desiredLength;
@@ -70,7 +22,7 @@ export const useReadableSecureFramesFingerprint = ReactCompilerGating.isReactCom
     if (null != fingerprintBase64) {
       if ("" !== tmp) {
         const toByteArrayResult = byteLengthDefault.toByteArray(tmp);
-        const str5 = _mod9965.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
+        const str5 = _mod9987.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
         if (null == str5) {
           return null;
         } else {
@@ -100,4 +52,4 @@ export const useReadableSecureFramesFingerprint = ReactCompilerGating.isReactCom
     }
   }
   return memo;
-});
+};

@@ -1,12 +1,12 @@
-// Module ID: 7826
-// Function ID: 7827
+// Module ID: 7821
+// Function ID: 7822
 // Name: AvatarDecorationRecord
-// Dependencies: [1976, 1977, 2]
+// Dependencies: [1972, 1973, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 7826 (AvatarDecorationRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1976 */;
+// Module 7821 (AvatarDecorationRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1972 */;
 
 require = fn;
 const prototype = function AvatarDecorationRecord(arg0) {

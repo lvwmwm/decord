@@ -1,35 +1,18 @@
-// Module ID: 11416
-// Function ID: 11417
+// Module ID: 11378
+// Function ID: 11379
 // Name: useAvatarDecorationPreviewSizes
-// Dependencies: [558, 568, 1482, 9121, 2]
+// Dependencies: [1478, 9123, 2]
+// Exports: useAvatarDecorationPreviewSizes
 
-// Module 11416 (useAvatarDecorationPreviewSizes)
-import c from "c" /* 568 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9121 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11378 (useAvatarDecorationPreviewSizes)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9123 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/native/useAvatarDecorationPreviewSizes.tsx");
 
-export const useAvatarDecorationPreviewSizes = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const size = useWindowDimensionsDefault();
-  const result = 2 * Math.min(size.width, size.height) / 3;
-  const result1 = result * AvatarDecorationSampleV2.avatarPlaceholderSizeRatio;
-  if (cResult[0] === result) {
-    if (cResult[1] === result1) {
-      let tmp4 = cResult[2];
-    }
-    return tmp4;
-  }
-  const obj2 = { avatarDecorationSize: result, avatarSize: result1 };
-  cResult[0] = result;
-  cResult[1] = result1;
-  cResult[2] = obj2;
-  tmp4 = obj2;
-}) : (() => {
+export const useAvatarDecorationPreviewSizes = function useAvatarDecorationPreviewSizes() {
   const size = useWindowDimensionsDefault();
   const result = 2 * Math.min(size.width, size.height) / 3;
   return { avatarDecorationSize: result, avatarSize: result * AvatarDecorationSampleV2.avatarPlaceholderSizeRatio };
-});
+};

@@ -1,15 +1,15 @@
-// Module ID: 14010
-// Function ID: 14011
+// Module ID: 14000
+// Function ID: 14001
 // Name: ActiveChannelsStore
-// Dependencies: [2045, 4612, 2052, 11, 12, 504, 577, 2]
+// Dependencies: [2041, 4609, 2048, 11, 12, 504, 573, 2]
 
-// Module 14010 (ActiveChannelsStore)
+// Module 14000 (ActiveChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
 
 function truncateOldMessageData(channelId) {
   if (null != dependencyMap2[channelId]) {
@@ -36,7 +36,7 @@ function handleChannelDelete(channel) {
   delete tmp4[tmp3];
   delete tmp2[tmp];
 }
-const isGuildHomeChannel = fn(2052).isGuildHomeChannel;
+const isGuildHomeChannel = fn(2048).isGuildHomeChannel;
 let c5 = 900000;
 let dependencyMap = {};
 const dependencyMap2 = {};

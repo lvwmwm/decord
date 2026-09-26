@@ -1,21 +1,21 @@
-// Module ID: 4981
-// Function ID: 4982
+// Module ID: 4979
+// Function ID: 4980
 // Name: SurveyStore
-// Dependencies: [4710, 2067, 4431, 4612, 1376, 1078, 1095, 4982, 1090, 510, 4384, 504, 577, 2]
+// Dependencies: [4707, 2063, 4427, 4609, 1372, 1074, 1091, 4980, 1086, 510, 4380, 504, 573, 2]
 
-// Module 4981 (SurveyStore)
+// Module 4979 (SurveyStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 4982 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import UserStore from "UserStore" /* 1376 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import SurveyActionCreators from "SurveyActionCreators" /* 4980 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function fetchSurveyIfNeeded() {
@@ -182,8 +182,8 @@ function setSurvey(survey) {
   value = Storage.get(closure_1_11);
   let tmp9 = null == value;
   if (!tmp9) {
-    tmp9 = _modDef4384().diff(value, "day") < 7;
-    obj = _modDef4384();
+    tmp9 = _modDef4380().diff(value, "day") < 7;
+    obj = _modDef4380();
   }
   let tmp11 = null;
   if (tmp4) {
@@ -461,7 +461,7 @@ function handleSelectedGuildChange() {
     c17 = null;
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ GuildFeatures: closure_9, Permissions: c10, FIRST_RUN_DATE_KEY: closure_11 } = Constants);
 let obj = { hiddenSurveys: {}, surveyOverride: null, lastFetched: null, lastSeen: null, lastActionTriggered: null };
 let closure_13 = obj;

@@ -1,12 +1,12 @@
-// Module ID: 7615
-// Function ID: 7616
+// Module ID: 7613
+// Function ID: 7614
 // Name: ErrorHandlingUtils
-// Dependencies: [1078, 1235, 2]
+// Dependencies: [1074, 1231, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 7615 (ErrorHandlingUtils)
-import Constants from "Constants" /* 1078 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+// Module 7613 (ErrorHandlingUtils)
+import Constants from "Constants" /* 1074 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 const items = [, , ];

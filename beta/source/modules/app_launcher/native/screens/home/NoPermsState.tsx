@@ -1,16 +1,16 @@
-// Module ID: 12289
-// Function ID: 12290
+// Module ID: 12395
+// Function ID: 12396
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4642, 4725, 12290, 12291, 12217, 9551, 1119, 4786, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 4639, 4722, 12396, 12397, 12333, 9555, 4784, 1115, 2]
+// Exports: default
 
-// Module 12289 (NoPermsState)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import shared from "shared" /* 4642 */;
-import useThemeDefault from "useTheme" /* 4725 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12217 */;
+// Module 12395 (NoPermsState)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import shared from "shared" /* 4639 */;
+import useThemeDefault from "useTheme" /* 4722 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12333 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,74 +18,22 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { paddingVertical: 16, paddingHorizontal: 24, gap: 12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "flex-start", display: "flex", flexDirection: "row" }, textContainer: { flexShrink: 1 }, image: { width: 64, height: 64 } };
 let closure_7 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj3 = { paddingVertical: 16, paddingHorizontal: 24, gap: 12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "flex-start", display: "flex", flexDirection: "row" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(10);
-  const tmp4 = closure_7();
-  const tmp5Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 12290 : 12291);
-  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp(9551).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
-  if (cResult[0] === tmp5Result) {
-    if (cResult[1] === tmp4.image) {
-      let tmp9 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t.uDnXXj);
-      cResult[3] = stringResult;
-      let tmp12 = stringResult;
-    } else {
-      tmp12 = cResult[3];
-    }
-    if (cResult[4] !== tmp4.textContainer) {
-      const obj3 = { style: tmp4.textContainer, variant: "text-sm/medium", color: "text-muted", children: tmp12 };
-      const tmp16 = hasOwnProperty(tmp(4786).Text, obj3);
-      cResult[4] = tmp4.textContainer;
-      cResult[5] = tmp16;
-      let tmp14 = tmp16;
-    } else {
-      tmp14 = cResult[5];
-    }
-    if (cResult[6] === tmp4.container) {
-      if (cResult[7] === tmp9) {
-        if (cResult[8] === tmp14) {
-          let tmp17 = cResult[9];
-        }
-        return tmp17;
-      }
-    }
-    const obj4 = { style: tmp8, children: null };
-    const items = [tmp9, tmp14];
-    obj4.children = items;
-    const tmp20 = timestampProducer(React3, obj4);
-    cResult[6] = tmp4.container;
-    cResult[7] = tmp9;
-    cResult[8] = tmp14;
-    cResult[9] = tmp20;
-    tmp17 = tmp20;
-  }
-  const tmp10 = hasOwnProperty(React4, { style: tmp4.image, resizeMode: "contain", source: tmp5Result });
-  cResult[0] = tmp5Result;
-  cResult[1] = tmp4.image;
-  cResult[2] = tmp10;
-  tmp9 = tmp10;
-}) : (() => {
+export default function EmptyState() {
   const tmp = closure_7();
-  const tmp4Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 12290 : 12291);
-  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp2(9551).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const tmp4Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 12396 : 12397);
+  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp2(9555).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: null };
   const items = [hasOwnProperty(React4, { style: tmp.image, resizeMode: "contain", source: tmp4Result }), ];
   const obj4 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: null };
-  const intl = tmp2(1119).intl;
+  const intl = tmp2(1115).intl;
   obj4.children = intl.string(util.t.uDnXXj);
   items[1] = hasOwnProperty(Text_Text.Text, obj4);
   obj2.children = items;
   return timestampProducer(React3, obj2);
-});
+};

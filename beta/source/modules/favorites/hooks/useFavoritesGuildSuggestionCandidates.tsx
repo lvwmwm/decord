@@ -1,18 +1,16 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 16616
+// Function ID: 16617
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 16625, 7932, 2045, 16551, 11316, 558, 568, 16627, 504, 10122, 11313, 11319, 10118, 10109, 2]
+// Dependencies: [19, 16617, 7927, 2041, 16544, 11277, 16619, 504, 10143, 11274, 11280, 10139, 10130, 2]
 // Exports: default
 
-// Module 16624 (useFavoritesGuildSuggestionCandidates)
-import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import sortByMatchScore from "sortByMatchScore" /* 10109 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10118 */;
+// Module 16616 (useFavoritesGuildSuggestionCandidates)
+import sortByMatchScore from "sortByMatchScore" /* 10130 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10139 */;
 import noop from "module_19" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16625 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7932 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16617 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = globalThis.__r;
 
@@ -23,68 +21,8 @@ function getAffineChannelId(channelId) {
 function getAffineUserDMId(otherUserId) {
   return ChannelStore.getDMFromUserId(otherUserId.otherUserId);
 }
-const NO_SUGGESTIONS = fn(16551).NO_SUGGESTIONS;
-const isAllowedType = fn(11316).isAllowedType;
-const ReactCompilerGating = fn(558);
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
-      const channelAffinitiesV2 = require("ChannelAffinitiesV2ActionCreators").fetchChannelAffinitiesV2();
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp4 = fn;
-    tmp5 = items;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const effect = noop.useEffect(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ChannelAffinitiesV2Store];
-    const fn2 = function l() {
-      return channelAffinities.getChannelAffinities();
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    let tmp8 = fn2;
-    let tmp7 = items1;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp7, tmp8);
-  if (cResult[4] !== stateFromStores) {
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn3 = function c(score, score2) {
-        return score2.score - score.score;
-      };
-      cResult[6] = fn3;
-      let tmp10 = fn3;
-    } else {
-      tmp10 = cResult[6];
-    }
-    const substr = stateFromStores.slice();
-    const sorted = substr.sort(tmp10);
-    cResult[4] = stateFromStores;
-    cResult[5] = sorted;
-  } else {
-    return cResult[5];
-  }
-}) : (() => {
-  const effect = noop.useEffect(() => {
-    const channelAffinitiesV2 = stateFromStores(dependencyMap[8]).fetchChannelAffinitiesV2();
-  }, []);
-  const items = [ChannelAffinitiesV2Store];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => channelAffinities.getChannelAffinities());
-  const items1 = [stateFromStores];
-  return noop.useMemo(() => {
-    const substr = stateFromStores.slice();
-    return substr.sort((score, score2) => score2.score - score.score);
-  }, items1);
-});
+const NO_SUGGESTIONS = fn(16544).NO_SUGGESTIONS;
+const isAllowedType = fn(11277).isAllowedType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildSuggestionCandidates.tsx");
 
@@ -93,17 +31,27 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
   const tmp = require("useFavoritesGuildChannelFilter")();
   importDefault = tmp;
   results = require("useShareSearchResults").useShareSearchResults({ channelFilter: tmp, includeFrecency: false }).results;
-  let tmp2 = closure_11();
-  noop = tmp2;
-  const effect = noop.useEffect(() => {
-    const userAffinitiesV2 = closure_0(results[10]).fetchUserAffinitiesV2();
+  const effect = memo.useEffect(() => {
+    const channelAffinitiesV2 = closure_0(results[6]).fetchChannelAffinitiesV2();
   }, []);
   let obj = require("useShareSearchResults");
-  let items = [UserAffinitiesV2Store];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => userAffinitiesMap.getUserAffinitiesMap());
+  let items = [memo1];
+  const stateFromStores = require("initialize").useStateFromStores(items, () => memo1.getChannelAffinities());
   closure_129_0 = stateFromStores;
   const items1 = [stateFromStores];
-  const memo = noop.useMemo(() => {
+  memo = memo.useMemo(() => {
+    const substr = closure_0.slice();
+    return substr.sort((score, score2) => score2.score - score.score);
+  }, items1);
+  const effect1 = memo.useEffect(() => {
+    const userAffinitiesV2 = closure_0(results[8]).fetchUserAffinitiesV2();
+  }, []);
+  let obj2 = require("initialize");
+  const items2 = [UserAffinitiesV2Store];
+  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => userAffinitiesMap.getUserAffinitiesMap());
+  closure_130_0 = stateFromStores1;
+  const items3 = [stateFromStores1];
+  memo1 = memo.useMemo(() => {
     const array = new Array(closure_0.size);
     closure_1 = 0;
     const item = closure_0.forEach((item) => {
@@ -111,13 +59,13 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
       array[+closure_1] = item;
     });
     return array.sort((dmProbability, dmProbability2) => dmProbability2.dmProbability - dmProbability.dmProbability);
-  }, items1);
-  const items2 = [tmp2, tmp, arg0, results, memo];
-  return noop.useMemo(() => {
+  }, items3);
+  const items4 = [memo, tmp, arg0, results, memo1];
+  return memo.useMemo(() => {
     let items = [];
     const set = new Set();
-    const obj = { affinities, getChannelId: getAffineChannelId, index: 0 };
-    const obj2 = { affinities: memo, getChannelId: getAffineUserDMId, index: 0 };
+    const obj = { affinities: memo, getChannelId: getAffineChannelId, index: 0 };
+    const obj2 = { affinities: memo1, getChannelId: getAffineUserDMId, index: 0 };
     let num = 0;
     if (items.length < closure_0) {
       while (true) {
@@ -230,5 +178,5 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
       items = NO_SUGGESTIONS;
     }
     return items;
-  }, items2);
+  }, items4);
 };

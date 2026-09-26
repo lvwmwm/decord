@@ -1,15 +1,15 @@
-// Module ID: 14298
-// Function ID: 14299
+// Module ID: 14288
+// Function ID: 14289
 // Name: WideBannerDismissibleContentVersion
-// Dependencies: [7864, 1080, 7851, 2]
+// Dependencies: [7859, 1076, 7846, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 14298 (WideBannerDismissibleContentVersion)
-import ShopBlockType from "ShopBlockType" /* 7851 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7864 */;
+// Module 14288 (WideBannerDismissibleContentVersion)
+import ShopBlockType from "ShopBlockType" /* 7846 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7859 */;
 
 require = fn;
-const CollectibleShopTab = fn(1080).CollectibleShopTab;
+const CollectibleShopTab = fn(1076).CollectibleShopTab;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/utils/WideBannerDismissibleContentVersion.tsx");
 

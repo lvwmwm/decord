@@ -1,10 +1,10 @@
-// Module ID: 14909
-// Function ID: 14910
+// Module ID: 14913
+// Function ID: 14914
 // Name: BadgeSettingsActionCreators
-// Dependencies: [5, 1078, 1275, 1235, 2]
+// Dependencies: [5, 1074, 1271, 1231, 2]
 // Exports: updateBadgeSettings
 
-// Module 14909 (BadgeSettingsActionCreators)
+// Module 14913 (BadgeSettingsActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_5 = async function _updateBadgeSettings(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -41,7 +41,7 @@ let closure_5 = async function _updateBadgeSettings(arg0, value) {
           closure_129_2 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -112,7 +112,7 @@ let closure_5 = async function _updateBadgeSettings(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/badges/BadgeSettingsActionCreators.tsx");
 

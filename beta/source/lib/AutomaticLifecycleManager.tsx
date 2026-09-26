@@ -1,10 +1,10 @@
-// Module ID: 7397
-// Function ID: 7398
+// Module ID: 7395
+// Function ID: 7396
 // Name: AutomaticLifecycleManager
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 
-// Module 7397 (AutomaticLifecycleManager)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 7395 (AutomaticLifecycleManager)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");

@@ -1,87 +1,28 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10212
+// Function ID: 10213
 // Name: RequestToSpeakActionSheet
-// Dependencies: [32, 19, 17, 502, 2045, 5665, 21, 4790, 580, 558, 568, 10192, 1119, 7478, 504, 4937, 5673, 8719, 8721, 4757, 8706, 10193, 10195, 1181, 10197, 5854, 4494, 7461, 7441, 5682, 5676, 5935, 4786, 5218, 10198, 6895, 7429, 2]
+// Dependencies: [32, 19, 17, 502, 2041, 5663, 21, 4788, 576, 10213, 7477, 1115, 504, 4935, 10214, 10216, 5854, 5671, 8714, 8716, 4755, 8701, 1177, 10218, 4489, 7439, 7459, 5680, 5674, 7427, 6901, 5216, 5936, 4784, 10219, 2]
+// Exports: default
 
-// Module 10191 (RequestToSpeakActionSheet)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4937 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5673 */;
-import TableSwitchRow from "TableSwitchRow" /* 7478 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8706 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 10192 */;
+// Module 10212 (RequestToSpeakActionSheet)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4935 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5671 */;
+import TableSwitchRow from "TableSwitchRow" /* 7477 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8701 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8714 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8716 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 10213 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
-const _modDef10197 = tmp8(10197);
+const _modDef10218 = tmp4(10218);
 require = fn;
-const View = fn(17).View;
-let closure_8 = fn(5665).REQUEST_TO_SPEAK_SHEET_KEY;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
-let closure_11 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = c.c(9);
-  [tmp5, tmp6] = useRequestToSpeakPermission.useRequestToSpeakPermission(channel.channel.id);
-  const require = tmp6;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.TYZgzW);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp5) {
-    const intl2 = tmp(1119).intl;
-    const string = intl2.string;
-    let t = tmp(1119).t;
-    if (tmp5) {
-      t = t["JcFI/U"];
-      let stringResult1 = string(t);
-    } else {
-      stringResult1 = string(t.laPwJQ);
-    }
-    cResult[1] = tmp5;
-    cResult[2] = stringResult1;
-  } else {
-    if (cResult[3] !== tmp6) {
-      const fn = function c(arg0) {
-        return tmp6(arg0);
-      };
-      cResult[3] = tmp6;
-      cResult[4] = fn;
-      let tmp13 = fn;
-    } else {
-      tmp13 = cResult[4];
-    }
-    if (cResult[5] === tmp5) {
-      if (cResult[6] === tmp9) {
-        if (cResult[7] === tmp13) {
-          let tmp14 = cResult[8];
-        }
-        return tmp14;
-      }
-    }
-    const obj3 = { label: first, subLabel: cResult[2], value: tmp5, onValueChange: tmp13 };
-    const tmp16 = options(tmp(7478).TableSwitchRow, obj3);
-    cResult[5] = tmp5;
-    cResult[6] = cResult[2];
-    cResult[7] = tmp13;
-    cResult[8] = tmp16;
-    tmp14 = tmp16;
-  }
-}) : ((channel) => {
+function RequestToSpeakRow(channel) {
   c0 = undefined;
   [tmp2, c0] = useRequestToSpeakPermission.useRequestToSpeakPermission(channel.channel.id);
   const obj2 = { label: null, subLabel: null, value: null, onValueChange: null };
@@ -100,126 +41,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   obj2.onValueChange = function onValueChange(arg0) {
     return _undefined(arg0);
   };
-  return options(TableSwitchRow.TableSwitchRow, obj2);
-});
-ReactCompilerGating = fn(558);
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = channel(568).c(14);
-  channel = channel.channel;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AuthenticationStore];
-    const fn = function o() {
-      return id.getId();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  let obj = channel(568);
-  const stateFromStores = channel(504).useStateFromStores(tmp4, tmp5);
-  let id;
-  const tmpResult = channel(504);
-  if (channel != null) {
-    id = channel.id;
-  }
-  const tmp12 = useAudienceRequestToSpeakStateDefault(stateFromStores, id) === channel(4937).RequestToSpeakStates.ON_STAGE;
-  importDefault = tmp12;
-  if (cResult[2] === channel) {
-    if (cResult[3] === tmp12) {
-      let tmp13 = cResult[4];
-    }
-    if (cResult[5] !== tmp12) {
-      const intl = tmp(1119).intl;
-      const string = intl.string;
-      let ezLpY6 = tmp(1119).t;
-      if (tmp12) {
-        ezLpY6 = ezLpY6.ezLpY6;
-        let stringResult = string(ezLpY6);
-      } else {
-        stringResult = string(ezLpY6["8Joh+p"]);
-      }
-      cResult[5] = tmp12;
-      cResult[6] = stringResult;
-    } else {
-      if (tmp12) {
-        let MicrophoneArrowRightIcon = tmp(10193).GroupArrowDownIcon;
-      } else {
-        MicrophoneArrowRightIcon = tmp(10195).MicrophoneArrowRightIcon;
-      }
-      if (cResult[7] !== MicrophoneArrowRightIcon) {
-        const tmp19 = closure_9(MicrophoneArrowRightIcon, {});
-        cResult[7] = MicrophoneArrowRightIcon;
-        cResult[8] = tmp19;
-        let tmp17 = tmp19;
-      } else {
-        tmp17 = cResult[8];
-      }
-      const _Symbol = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        let obj2 = { source: _modDef10197 };
-        const tmp22 = closure_9(tmp(1181).Icon, obj2);
-        cResult[9] = tmp22;
-        let tmp20 = tmp22;
-      } else {
-        tmp20 = cResult[9];
-      }
-      if (cResult[10] === cResult[6]) {
-        if (cResult[11] === tmp13) {
-          if (cResult[12] === tmp17) {
-            let tmp23 = cResult[13];
-          }
-          return tmp23;
-        }
-      }
-      let obj3 = { onPress: tmp13, icon: tmp17, label: cResult[6], trailing: tmp20 };
-      const tmp25 = closure_9(tmp(5854).TableRow, obj3);
-      cResult[10] = cResult[6];
-      cResult[11] = tmp13;
-      cResult[12] = tmp17;
-      cResult[13] = tmp25;
-      tmp23 = tmp25;
-    }
-  }
-  class S {
-    constructor() {
-      tmp = closure_1;
-      if (!closure_1) {
-        tmp2 = closure_0;
-        tmp3 = closure_2;
-        obj = closure_0(closure_2[16]);
-        tmp4 = channel;
-        if (obj.shouldAgeVerifyToSpeakForCurrentUser(channel.id)) {
-          tmp5 = closure_1;
-          tmp6 = closure_2;
-          obj2 = closure_1(closure_2[17]);
-          obj1 = { entryPoint: null };
-          tmp7 = closure_0;
-          tmp8 = closure_2;
-          obj1.entryPoint = closure_0(closure_2[18]).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND;
-          result = obj2.showAgeVerificationGetStartedModal(obj1);
-          tmp10 = closure_1;
-          tmp11 = closure_2;
-          obj4 = closure_1(closure_2[19]);
-          tmp12 = closure_8;
-          hideActionSheetResult = obj4.hideActionSheet(closure_8);
-          return;
-        }
-      }
-      obj5 = closure_0(closure_2[20]);
-      result1 = obj5.audienceAckRequestToSpeak(channel, tmp);
-      obj6 = closure_1(closure_2[19]);
-      hideActionSheetResult1 = obj6.hideActionSheet(closure_8);
-      return;
-    }
-  }
-  cResult[2] = channel;
-  cResult[3] = tmp12;
-  cResult[4] = S;
-  tmp13 = S;
-}) : ((channel) => {
+  return React7(TableSwitchRow.TableSwitchRow, obj2);
+}
+function ManageSelfSpeakerRow(channel) {
   channel = channel.channel;
   importDefault = undefined;
   const items = [AuthenticationStore];
@@ -229,20 +53,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (channel != null) {
     id = channel.id;
   }
-  const tmp8 = useAudienceRequestToSpeakStateDefault(stateFromStores, id) === channel(4937).RequestToSpeakStates.ON_STAGE;
+  const tmp8 = useAudienceRequestToSpeakStateDefault(stateFromStores, id) === channel(4935).RequestToSpeakStates.ON_STAGE;
   importDefault = tmp8;
-  const intl = tmp(1119).intl;
+  const intl = tmp(1115).intl;
   const string = intl.string;
-  const t = tmp(1119).t;
+  const t = tmp(1115).t;
   if (tmp8) {
     let stringResult = string(t.ezLpY6);
   } else {
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp8) {
-    let MicrophoneArrowRightIcon = tmp(10193).GroupArrowDownIcon;
+    let MicrophoneArrowRightIcon = tmp(10214).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp(10195).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp(10216).MicrophoneArrowRightIcon;
   }
   let obj2 = {
     onPress() {
@@ -262,380 +86,36 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     trailing: null
   };
   const tmp5Result = useAudienceRequestToSpeakStateDefault(stateFromStores, id);
-  obj2.trailing = closure_9(channel(1181).Icon, { source: _modDef10197 });
+  obj2.trailing = closure_9(channel(1177).Icon, { source: _modDef10218 });
   return closure_9(channel(5854).TableRow, obj2);
-});
-ReactCompilerGating = fn(558);
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+}
+const View = fn(17).View;
+let closure_8 = fn(5663).REQUEST_TO_SPEAK_SHEET_KEY;
+const jsxProd = fn(21);
+({ jsx: closure_9, jsxs: c10 } = jsxProd);
+const createStyles = fn(4788);
+let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
+let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/native/components/RequestToSpeakActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  const cResult = channelId(568).c(40);
-  channelId = channelId.channelId;
-  const analyticsLocations = channelId.analyticsLocations;
-  const obj = channelId(568);
-  const token = channelId(4494).useToken(first(580).modules.mobile.TABLE_ROW_PADDING);
-  closure_11();
-  if (cResult[0] !== analyticsLocations) {
-    const items = [];
-    items[HermesBuiltin.arraySpread(analyticsLocations, 0)] = tmp4(7461).REQUEST_TO_SPEAK;
-    cResult[0] = analyticsLocations;
-    cResult[1] = items;
-    let tmp7 = items;
-    const arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
-  } else {
-    tmp7 = cResult[1];
-  }
-  const analyticsLocations2 = tmp4(7441)(tmp7).analyticsLocations;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ChannelStore];
-    cResult[2] = items1;
-    let tmp11 = items1;
-  } else {
-    tmp11 = cResult[2];
-  }
-  if (cResult[3] !== channelId) {
-    const fn = function b() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[3] = channelId;
-    cResult[4] = fn;
-    let tmp13 = fn;
-  } else {
-    tmp13 = cResult[4];
-  }
-  const obj2 = channelId(4494);
-  const stateFromStores = channelId(504).useStateFromStores(tmp11, tmp13);
-  const tmpResult = channelId(504);
-  const stageParticipantsCount = channelId(5682).useStageParticipantsCount(channelId, tmp(5676).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
-  const tmp16 = first1(noop.useState(0), 2);
-  first = tmp16[0];
-  dependencyMap = tmp16[1];
-  const tmp18 = first1(noop.useState(0), 2);
-  first1 = tmp18[0];
-  noop = tmp18[1];
-  if (cResult[5] !== first) {
-    class P {
-      constructor(arg0) {
-        height = channelId.nativeEvent.layout.height;
-        tmp = null != height;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp = closure_1 !== height;
-        }
-        if (tmp) {
-          tmp3 = closure_2;
-          tmp4 = closure_2(height);
-        }
-        return;
-      }
-    }
-    cResult[5] = first;
-    cResult[6] = P;
-  } else {
-    class P {
-      constructor(arg0) {
-        height = channelId.nativeEvent.layout.height;
-        tmp = null != height;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp = closure_1 !== height;
-        }
-        if (tmp) {
-          tmp3 = closure_2;
-          tmp4 = closure_2(height);
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[7] !== first1) {
-    class U {
-      constructor(arg0) {
-        height = channelId.nativeEvent.layout.height;
-        tmp = null != height;
-        if (tmp) {
-          tmp2 = closure_3;
-          tmp = closure_3 !== height;
-        }
-        if (tmp) {
-          tmp3 = closure_4;
-          tmp4 = closure_4(height);
-        }
-        return;
-      }
-    }
-    cResult[7] = first1;
-    cResult[8] = U;
-  } else {
-    class U {
-      constructor(arg0) {
-        height = channelId.nativeEvent.layout.height;
-        tmp = null != height;
-        if (tmp) {
-          tmp2 = closure_3;
-          tmp = closure_3 !== height;
-        }
-        if (tmp) {
-          tmp3 = closure_4;
-          tmp4 = closure_4(height);
-        }
-        return;
-      }
-    }
-  }
-  if (null == stateFromStores) {
-    class U {
-      constructor(arg0) {
-        height = channelId.nativeEvent.layout.height;
-        tmp = null != height;
-        if (tmp) {
-          tmp2 = closure_3;
-          tmp = closure_3 !== height;
-        }
-        if (tmp) {
-          tmp3 = closure_4;
-          tmp4 = closure_4(height);
-        }
-        return;
-      }
-    }
-  } else {
-    class U {
-      constructor(arg0) {
-        height = channelId.nativeEvent.layout.height;
-        tmp = null != height;
-        if (tmp) {
-          tmp2 = closure_3;
-          tmp = closure_3 !== height;
-        }
-        if (tmp) {
-          tmp3 = closure_4;
-          tmp4 = closure_4(height);
-        }
-        return;
-      }
-    }
-    if (cResult[9] !== stateFromStores) {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-      const obj3 = { hasIcons: true, children: null };
-      const obj4 = { channel: stateFromStores };
-      const items2 = [closure_9(closure_12, obj4), ];
-      const obj5 = { channel: stateFromStores };
-      items2[1] = closure_9(closure_13, obj5);
-      obj3.children = items2;
-      const tmp26 = closure_10(tmp(5935).TableRowGroup, obj3);
-      cResult[9] = stateFromStores;
-      cResult[10] = tmp26;
-    } else {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[11] !== token) {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-      tmp28[0] = token;
-      cResult[11] = token;
-      cResult[12] = tmp28;
-    } else {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[13] !== stageParticipantsCount) {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-      const obj6 = { numHands: null };
-      const _HermesInternal = HermesInternal;
-      obj6.numHands = "" + stageParticipantsCount;
-      const formatResult = obj8.format(tmp(1119).t["5z7q5a"], obj6);
-      cResult[13] = stageParticipantsCount;
-      cResult[14] = formatResult;
-    } else {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[15] !== tmp29) {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-      const obj7 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: tmp29 };
-      const tmp32 = closure_9(tmp(4786).Text, obj7);
-      cResult[15] = tmp29;
-      cResult[16] = tmp32;
-    } else {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[17] === tmp31) {
-      class U {
-        constructor(arg0) {
-          height = channelId.nativeEvent.layout.height;
-          tmp = null != height;
-          if (tmp) {
-            tmp2 = closure_3;
-            tmp = closure_3 !== height;
-          }
-          if (tmp) {
-            tmp3 = closure_4;
-            tmp4 = closure_4(height);
-          }
-          return;
-        }
-      }
-      if (cResult[20] === tmp20) {
-        class U {
-          constructor(arg0) {
-            height = channelId.nativeEvent.layout.height;
-            tmp = null != height;
-            if (tmp) {
-              tmp2 = closure_3;
-              tmp = closure_3 !== height;
-            }
-            if (tmp) {
-              tmp3 = closure_4;
-              tmp4 = closure_4(height);
-            }
-            return;
-          }
-        }
-      }
-      const obj9 = { spacing: 8, onLayout: tmp20, children: null };
-      const items3 = [tmp22, tmp33];
-      obj9.children = items3;
-      const tmp39 = closure_10(tmp(5218).Stack, obj9);
-      cResult[20] = tmp20;
-      cResult[21] = tmp33;
-      cResult[22] = tmp22;
-      cResult[23] = tmp39;
-    }
-    const obj10 = { style: tmp27, children: tmp31 };
-    const tmp36 = closure_9(View, obj10);
-    cResult[17] = tmp31;
-    cResult[18] = tmp27;
-    cResult[19] = tmp36;
-  }
-}) : ((channelId) => {
+export default function RequestToSpeakActionSheet(channelId) {
   channelId = channelId.channelId;
   let first;
   let first1;
   noop = undefined;
-  const token = channelId(4494).useToken(first(580).modules.mobile.TABLE_ROW_PADDING);
-  const obj = channelId(4494);
+  const token = channelId(4489).useToken(first(576).modules.mobile.TABLE_ROW_PADDING);
+  const obj = channelId(4489);
   const tmp3 = first;
   const items = [];
   const tmp5 = closure_11();
-  const tmp6 = first(7441);
-  items[HermesBuiltin.arraySpread(channelId.analyticsLocations, 0)] = first(7461).REQUEST_TO_SPEAK;
+  const tmp6 = first(7439);
+  items[HermesBuiltin.arraySpread(channelId.analyticsLocations, 0)] = first(7459).REQUEST_TO_SPEAK;
   const arraySpreadResult = HermesBuiltin.arraySpread(channelId.analyticsLocations, 0);
   const items1 = [ChannelStore];
   const stateFromStores = channelId(504).useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
   const obj2 = channelId(504);
-  const stageParticipantsCount = channelId(5682).useStageParticipantsCount(channelId, channelId(5676).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
+  const stageParticipantsCount = channelId(5680).useStageParticipantsCount(channelId, channelId(5674).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
   const tmp10 = first1(noop.useState(0), 2);
   first = tmp10[0];
   dependencyMap = tmp10[1];
@@ -677,34 +157,34 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     };
     const obj9 = { hasIcons: true, children: null };
     const obj10 = { channel: stateFromStores };
-    const items2 = [closure_9(closure_12, obj10), ];
+    const items2 = [closure_9(RequestToSpeakRow, obj10), ];
     const obj11 = { channel: stateFromStores };
-    items2[1] = closure_9(closure_13, obj11);
+    items2[1] = closure_9(ManageSelfSpeakerRow, obj11);
     obj9.children = items2;
-    const items3 = [closure_10(tmp(5935).TableRowGroup, obj9), ];
+    const items3 = [closure_10(tmp(5936).TableRowGroup, obj9), ];
     const obj12 = { style: null, children: null };
     const obj13 = { paddingHorizontal: token };
     obj12.style = obj13;
     const obj14 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
-    const intl = tmp(1119).intl;
+    const intl = tmp(1115).intl;
     const obj15 = { numHands: null };
     const _HermesInternal = HermesInternal;
     obj15.numHands = "" + stageParticipantsCount;
-    obj14.children = intl.format(tmp(1119).t["5z7q5a"], obj15);
-    obj12.children = closure_9(tmp(4786).Text, obj14);
+    obj14.children = intl.format(tmp(1115).t["5z7q5a"], obj15);
+    obj12.children = closure_9(tmp(4784).Text, obj14);
     items3[1] = closure_9(View, obj12);
     obj8.children = items3;
-    const items4 = [closure_10(tmp(5218).Stack, obj8), ];
+    const items4 = [closure_10(tmp(5216).Stack, obj8), ];
     const obj16 = { channel: stateFromStores, height: null };
     const _Math = Math;
     obj16.height = Math.max(first1 - first - 8, 0);
-    items4[1] = closure_9(tmp3(10198), obj16);
+    items4[1] = closure_9(tmp3(10219), obj16);
     obj7.children = items4;
-    obj6.children = closure_10(tmp(5218).Stack, obj7);
-    obj5.children = closure_9(tmp(6895).BottomSheetScrollView, obj6);
-    obj4.children = closure_9(tmp(7429).BottomSheet, obj5);
-    tmp14 = closure_9(tmp(7441).AnalyticsLocationProvider, obj4);
-    const tmp3Result = tmp3(10198);
+    obj6.children = closure_10(tmp(5216).Stack, obj7);
+    obj5.children = closure_9(tmp(6901).BottomSheetScrollView, obj6);
+    obj4.children = closure_9(tmp(7427).BottomSheet, obj5);
+    tmp14 = closure_9(tmp(7439).AnalyticsLocationProvider, obj4);
+    const tmp3Result = tmp3(10219);
   }
   return tmp14;
-});
+};

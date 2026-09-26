@@ -1,22 +1,22 @@
-// Module ID: 10091
-// Function ID: 10092
+// Module ID: 10112
+// Function ID: 10113
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4441, 1376, 21, 4790, 9806, 4943, 1879, 4757, 9568, 1984, 1119, 4786, 2]
+// Dependencies: [19, 4437, 1372, 21, 4788, 9829, 4941, 1875, 4755, 9572, 1980, 1115, 4784, 2]
 // Exports: default
 
-// Module 10091 (GuildStageChannelSelection)
-import util from "util" /* 1119 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1879 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import Text_Text from "Text/Text" /* 4786 */;
+// Module 10112 (GuildStageChannelSelection)
+import util from "util" /* 1115 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import Text_Text from "Text/Text" /* 4784 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_7 = createStyles.createStyles({ channelText: { marginTop: 8, flexDirection: "row" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/native/modals/GuildStageChannelSelection.tsx");
@@ -48,7 +48,7 @@ export default function GuildStageChannelSelection(channel) {
       id = channel.id;
     }
     obj3.selectedItem = id;
-    obj2.openLazy(asyncRequireImpl(9568, dependencyMap.paths), "SelectUpdatesChannel", obj3);
+    obj2.openLazy(asyncRequireImpl(9572, dependencyMap.paths), "SelectUpdatesChannel", obj3);
   }
   function renderChannelHook(children, arg1) {
     return jsx(channel(handleSelectChannel[12]).Text, { variant: "text-sm/bold", color: "mobile-text-heading-primary", children }, arg1);

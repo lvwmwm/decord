@@ -1,19 +1,19 @@
-// Module ID: 13366
-// Function ID: 13367
+// Module ID: 13356
+// Function ID: 13357
 // Name: getActivityJoinability
-// Dependencies: [1078, 11925, 11922, 9664, 9640, 7589, 13367, 1368, 11919, 11920, 11921, 2]
+// Dependencies: [1074, 12043, 12040, 9668, 9644, 7587, 13357, 1364, 12037, 12038, 12039, 2]
 // Exports: default
 
-// Module 13366 (getActivityJoinability)
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import hasFlagDefault from "hasFlag" /* 7589 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9640 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 9664 */;
-import getPartySize from "getPartySize" /* 11919 */;
-import getIsInParty from "getIsInParty" /* 11922 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11925 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 13367 */;
-import Constants from "Constants" /* 1078 */;
+// Module 13356 (getActivityJoinability)
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import hasFlagDefault from "hasFlag" /* 7587 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9644 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 9668 */;
+import getPartySize from "getPartySize" /* 12037 */;
+import getIsInParty from "getIsInParty" /* 12040 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12043 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 13357 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ ActivityFlags: c3, ChannelTypes: closure_4, GuildFeatures: hasOwnProperty } = Constants);
@@ -72,14 +72,14 @@ export default function getActivityJoinability(arg0) {
               return obj.CAN_JOIN;
             }
           }
-          if (tmp30(7589)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
+          if (tmp30(7587)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
             const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
             if (null != channel) {
               if (VoiceStateStore.isInChannel(channel.id, user.id)) {
                 const type = channel.type;
                 if (constants2.DM !== type) {
                   if (constants2.GROUP_DM !== type) {
-                    guild = GuildStore.getGuild(channel.getGuildId());
+                    const guild = GuildStore.getGuild(channel.getGuildId());
                     if (null != guild) {
                       const features = guild.features;
                       if (!features.has(constants3.COMMUNITY)) {
@@ -106,7 +106,7 @@ export default function getActivityJoinability(arg0) {
           tmp30 = importDefault;
           tmp31 = constants;
         }
-        tmp27Result = tmp27(11921);
+        tmp27Result = tmp27(12039);
       }
       return obj.CANNOT_JOIN;
     }

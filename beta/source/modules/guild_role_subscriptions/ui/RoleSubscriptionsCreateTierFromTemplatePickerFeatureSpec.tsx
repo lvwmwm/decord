@@ -1,16 +1,16 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14190
+// Function ID: 14191
 // Name: RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec
-// Dependencies: [4706, 4431, 1078, 1119, 504, 14201, 2]
+// Dependencies: [4703, 4427, 1074, 1115, 504, 14191, 2]
 
-// Module 14200 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
+// Module 14190 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1119 */;
-import ExperimentStore from "ExperimentStore" /* 4706 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+import util from "util" /* 1115 */;
+import ExperimentStore from "ExperimentStore" /* 4703 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ GuildFeatures: closure_4, Permissions: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec.tsx");

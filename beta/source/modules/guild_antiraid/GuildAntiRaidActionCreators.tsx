@@ -1,18 +1,18 @@
-// Module ID: 11996
-// Function ID: 11997
+// Module ID: 12114
+// Function ID: 12115
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 2067, 8311, 1078, 1245, 4970, 9865, 4384, 1275, 11997, 2]
+// Dependencies: [5, 2063, 8306, 1074, 1241, 4968, 9887, 4380, 1271, 10397, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11996 (GuildAntiRaidActionCreators)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 11997 */;
+// Module 12114 (GuildAntiRaidActionCreators)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9887 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 10397 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 let closure_9 = async function _setGuildRaidAlerts(arg0, arg1) {
@@ -31,7 +31,7 @@ let closure_9 = async function _setGuildRaidAlerts(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -75,7 +75,7 @@ let closure_9 = async function _setGuildRaidAlerts(arg0, arg1) {
           return obj;
         } else {
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c2 = tmp;
@@ -95,9 +95,9 @@ let closure_10 = async function _setGuildIncidentActions() {
   }
   let toISOStringResult = null;
   if (tmp5) {
-    _modDef4384();
-    toISOStringResult = _modDef4384().add(tmp8, "hours").toISOString();
-    _modDef4384().add(tmp8, "hours");
+    _modDef4380();
+    toISOStringResult = _modDef4380().add(tmp8, "hours").toISOString();
+    _modDef4380().add(tmp8, "hours");
   }
   let tmp12 = null;
   if (closure_1) {
@@ -130,7 +130,7 @@ let closure_11 = async function _handleResolveRaid(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -196,7 +196,7 @@ let closure_12 = async function _handleReportRaid(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -246,22 +246,22 @@ let closure_12 = async function _handleReportRaid(arg0, value) {
     }
   }
 };
-const DEFAULT_LOCKDOWN_DURATION = fn(8311).DEFAULT_LOCKDOWN_DURATION;
-const Constants = fn(1078);
+const DEFAULT_LOCKDOWN_DURATION = fn(8306).DEFAULT_LOCKDOWN_DURATION;
+const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7, GuildFeatures: closure_8 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidActionCreators.tsx");
 
-export const trackReportRaidViewed = function trackReportRaidViewed(c1, c2) {
-  let items = c2;
-  if (c2 === undefined) {
+export const trackReportRaidViewed = function trackReportRaidViewed(guildId, arg1) {
+  let items = arg1;
+  if (arg1 === undefined) {
     items = [];
   }
   if (0 !== items.length) {
     const obj2 = {};
     const obj = AnalyticsUtilsDefault;
-    const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(c1));
-    obj2.guild_id = c1;
+    const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(guildId));
+    obj2.guild_id = guildId;
     obj2.raid_types = items;
     obj.track(constants.GUILD_RAID_REPORTED, obj2);
   }

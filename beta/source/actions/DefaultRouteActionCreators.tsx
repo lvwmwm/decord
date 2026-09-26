@@ -1,17 +1,17 @@
-// Module ID: 13076
-// Function ID: 13077
+// Module ID: 13070
+// Function ID: 13071
 // Name: DefaultRouteActionCreators
-// Dependencies: [4432, 1078, 4617, 4630, 577, 2]
+// Dependencies: [4428, 1074, 4614, 4627, 573, 2]
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 13076 (DefaultRouteActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import matchPathCompat from "matchPathCompat" /* 4617 */;
-import RouteUtils from "RouteUtils" /* 4630 */;
-import LurkingStore from "LurkingStore" /* 4432 */;
+// Module 13070 (DefaultRouteActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import matchPathCompat from "matchPathCompat" /* 4614 */;
+import RouteUtils from "RouteUtils" /* 4627 */;
+import LurkingStore from "LurkingStore" /* 4428 */;
 
 require = fn;
-const Routes = fn(1078).Routes;
+const Routes = fn(1074).Routes;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/DefaultRouteActionCreators.tsx");
 

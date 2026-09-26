@@ -1,13 +1,13 @@
-// Module ID: 4723
-// Function ID: 4724
+// Module ID: 4720
+// Function ID: 4721
 // Name: SavedCustomThemeStore
-// Dependencies: [1189, 1235, 504, 577, 2]
+// Dependencies: [1185, 1231, 504, 573, 2]
 
-// Module 4723 (SavedCustomThemeStore)
+// Module 4720 (SavedCustomThemeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import ThemeConstants from "ThemeConstants" /* 1189 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import ThemeConstants from "ThemeConstants" /* 1185 */;
 import size from "module_2" /* 2 */;
 
 function validateSavedTheme(colors) {

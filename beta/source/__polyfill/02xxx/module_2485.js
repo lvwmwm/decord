@@ -1,9 +1,9 @@
 // Module ID: 2485
 // Function ID: 2486
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 2485
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_settings/server_monetization/guild_theme/web", scales: [1], hash: "568a306e5dbbd7f0a78da5ed8e4b8801", name: "GuildSettingsGuildTheme.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "6f348377f660a2fae262bd4c98eb0bcf", name: "da.messages.6f348377f660a2fae262bd4c98eb0bcf.compiled.messages", type: "jsona" });

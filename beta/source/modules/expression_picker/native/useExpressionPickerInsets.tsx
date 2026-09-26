@@ -1,57 +1,20 @@
-// Module ID: 10690
-// Function ID: 10691
+// Module ID: 10580
+// Function ID: 10581
 // Name: useExpressionPickerInsets
-// Dependencies: [19, 1078, 558, 568, 1616, 7256, 580, 2]
+// Dependencies: [19, 1074, 1612, 7258, 576, 2]
+// Exports: default
 
-// Module 10690 (useExpressionPickerInsets)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+// Module 10580 (useExpressionPickerInsets)
+import nativeDefault from "native" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7258 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
-const EXPRESSION_FOOTER_HEIGHT = fn(1078).EXPRESSION_FOOTER_HEIGHT;
-const ReactCompilerGating = fn(558);
+const EXPRESSION_FOOTER_HEIGHT = fn(1074).EXPRESSION_FOOTER_HEIGHT;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/expression_picker/native/useExpressionPickerInsets.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasCategories) => {
-  const cResult = c.c(6);
-  const bottom = useSafeAreaInsetsDefault().bottom;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { includeKeyboardHeight: true, includeCustomKeyboardHeight: false };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== bottom) {
-    const obj3 = { paddingBottom: bottom };
-    cResult[1] = bottom;
-    cResult[2] = obj3;
-    let tmp5 = obj3;
-  } else {
-    tmp5 = cResult[2];
-  }
-  let num4 = 0;
-  if (hasCategories.hasCategories) {
-    num4 = EXPRESSION_FOOTER_HEIGHT;
-  }
-  const sum = tmp3(7256)(first).insets.bottom + num4;
-  const sum1 = sum + tmp3(580).space.PX_16;
-  if (cResult[3] === tmp5) {
-    if (cResult[4] === sum1) {
-      let tmp8 = cResult[5];
-    }
-    return tmp8;
-  }
-  const obj4 = { safeAreaStyle: tmp5, safeAreaBottomKeyboardAware: sum1 };
-  cResult[3] = tmp5;
-  cResult[4] = sum1;
-  cResult[5] = obj4;
-  tmp8 = obj4;
-}) : ((hasCategories) => {
+export default function useExpressionPickerInsets(hasCategories) {
   const bottom = useSafeAreaInsetsDefault().bottom;
   const obj = { safeAreaStyle: null, safeAreaBottomKeyboardAware: null };
   const items = [bottom];
@@ -63,4 +26,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasCategories) =
   const sum = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true, includeCustomKeyboardHeight: false }).insets.bottom + num;
   obj.safeAreaBottomKeyboardAware = sum + nativeDefault.space.PX_16;
   return obj;
-});
+};

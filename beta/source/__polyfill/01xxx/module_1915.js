@@ -4,46 +4,38 @@
 
 // Module 1915
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "pl",
+  locale: "sv",
   pluralRuleFunction(arg0, arg1) {
     const parts = String(arg0).split(".");
-    [arr, tmp2] = parts;
-    const substr = arr.slice(-1);
-    const substr1 = arr.slice(-2);
-    let str2 = "other";
-    if (!arg1) {
-      if (1 != arg0) {
-        if (!tmp2) {
-          if (substr >= 2) {
-            if (substr <= 4) {
-              let str5 = "few";
-              if (substr1 >= 12) {
-                str5 = "few";
-              }
-            }
-            let str3 = str5;
-          }
-        }
-        if (!tmp2) {
-          if (1 != arr) {
-            if (0 != substr) {
-              str5 = str6;
-            }
-          }
-          str6 = "many";
-        }
-        str6 = "other";
-        if (!tmp2) {
-          str6 = "other";
-          if (substr1 >= 12) {
-            str6 = "other";
-          }
-        }
-      } else {
-        str3 = "one";
-      }
-      str2 = str3;
+    let substr1 = Number(parts[0]) == arg0;
+    let substr = substr1;
+    if (substr1) {
+      const first = parts[0];
+      substr = first.slice(-1);
     }
-    return str2;
+    if (substr1) {
+      const first1 = parts[0];
+      substr1 = first1.slice(-2);
+    }
+    if (arg1) {
+      if (1 == substr) {
+        if (11 != substr1) {
+          let str4 = "one";
+        }
+        let str3 = str4;
+      }
+      str4 = "other";
+    } else {
+      str3 = "other";
+      if (1 == arg0) {
+        str3 = "other";
+        if (!parts[1]) {
+          str3 = "one";
+        }
+      }
+    }
+    return str3;
   }
 });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "sv-AX", parentLocale: "sv" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "sv-FI", parentLocale: "sv" });

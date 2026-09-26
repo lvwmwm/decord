@@ -1,0 +1,9 @@
+// Module ID: 600
+// Function ID: 601
+// Dependencies: [601]
+
+// Module 600
+import _mod601 from "module_601" /* 601 */;
+
+
+export default _mod601(Object, "create");

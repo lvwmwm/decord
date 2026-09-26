@@ -1,115 +1,25 @@
-// Module ID: 9523
-// Function ID: 9524
+// Module ID: 9525
+// Function ID: 9526
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1089, 558, 568, 9524, 7519, 7513, 2]
+// Dependencies: [19, 1085, 9526, 7517, 7511, 2]
+// Exports: useDiscountedPremiumProductInfo
 
-// Module 9523 (useDiscountedPremiumProductInfo)
-import c from "c" /* 568 */;
-import ProductIds from "ProductIds" /* 7519 */;
-import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 9524 */;
+// Module 9525 (useDiscountedPremiumProductInfo)
+import ProductIds from "ProductIds" /* 7517 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const CurrencyCodes = fn(1089).CurrencyCodes;
-const ReactCompilerGating = fn(558);
+const CurrencyCodes = fn(1085).CurrencyCodes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumProductInfo.android.tsx");
 
-export const useDiscountedPremiumProductInfo = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  const cResult = c.c(12);
-  const discountedPremiumPlan = useDiscountedPremiumPlan.useDiscountedPremiumPlan(arg0, arg1);
-  ({ discountedPlan, discountedProduct } = discountedPremiumPlan);
-  if (cResult[0] === arg0) {
-    if (cResult[1] === discountedProduct) {
-      let tmp5 = cResult[2];
-    }
-    if (cResult[8] === discountedPlan) {
-      if (cResult[9] === tmp5) {
-        if (cResult[10] === discountedProduct) {
-          let tmp15 = cResult[11];
-        }
-        return tmp15;
-      }
-    }
-    const obj3 = { discountedPlan, discountedProduct, discountedPriceString: tmp5 };
-    cResult[8] = discountedPlan;
-    cResult[9] = tmp5;
-    cResult[10] = discountedProduct;
-    cResult[11] = obj3;
-    tmp15 = obj3;
-  }
-  let formatPriceResult = null;
-  if (null != arg0) {
-    formatPriceResult = null;
-    if (null != discountedProduct) {
-      const tmp7 = tmp(7519).DiscountIdToProductOfferId[arg0.discountId];
-      let subscriptionOffers1;
-      if (tmp7 != null) {
-        subscriptionOffers1 = tmp7[discountedProduct.identifier];
-      }
-      formatPriceResult = null;
-      if (null != subscriptionOffers1) {
-        if (str.toUpperCase() in CurrencyCodes) {
-          let USD = discountedProduct.currencyCode.toLowerCase();
-        } else {
-          USD = tmp9.USD;
-        }
-        formatPriceResult = null;
-        if (null != discountedProduct.subscriptionOffers) {
-          if (cResult[3] === subscriptionOffers1) {
-            if (cResult[4] === discountedProduct.subscriptionOffers) {
-              formatPriceResult = null;
-              if (null != cResult[5]) {
-                formatPriceResult = null;
-                if (null != tmp10.pricingPhases) {
-                  formatPriceResult = null;
-                  if (tmp10.pricingPhases.length > 0) {
-                    const result = tmp10.pricingPhases[0].price / 100;
-                    formatPriceResult = tmp(7513).formatPrice(result, USD, { convertToMajorUnits: false });
-                    const tmpResult = tmp(7513);
-                  }
-                }
-              }
-            }
-          }
-          if (cResult[6] !== subscriptionOffers1) {
-            class I {
-              constructor(arg0) {
-                return arg0.offerId === closure_0;
-              }
-            }
-            cResult[6] = subscriptionOffers1;
-            cResult[7] = I;
-            const tmp11 = I;
-          } else {
-            class I {
-              constructor(arg0) {
-                return arg0.offerId === closure_0;
-              }
-            }
-          }
-          const subscriptionOffers = discountedProduct.subscriptionOffers;
-          const found = subscriptionOffers.find(tmp11);
-          cResult[3] = subscriptionOffers1;
-          subscriptionOffers1 = discountedProduct.subscriptionOffers;
-          cResult[4] = subscriptionOffers1;
-          cResult[5] = found;
-        }
-        str = discountedProduct.currencyCode;
-      }
-    }
-  }
-  cResult[0] = arg0;
-  cResult[1] = discountedProduct;
-  cResult[2] = formatPriceResult;
-  tmp5 = formatPriceResult;
-}) : ((arg0, arg1) => {
-  _require = arg0;
-  const discountedPremiumPlan = require("useDiscountedPremiumPlan").useDiscountedPremiumPlan(arg0, arg1);
+export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProductInfo(premiumDiscountOffer, items3) {
+  _require = premiumDiscountOffer;
+  const discountedPremiumPlan = require("useDiscountedPremiumPlan").useDiscountedPremiumPlan(premiumDiscountOffer, items3);
   discountedProduct = discountedPremiumPlan.discountedProduct;
-  const items = [arg0, discountedProduct];
+  const items = [premiumDiscountOffer, discountedProduct];
   const obj = require("useDiscountedPremiumPlan");
   return {
     discountedPlan: discountedPremiumPlan.discountedPlan,
@@ -138,7 +48,7 @@ export const useDiscountedPremiumProductInfo = ReactCompilerGating.isReactCompil
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    return tmp6(7513).formatPrice(result, USD, { convertToMajorUnits: false });
+                    return tmp6(7511).formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }
               }
@@ -151,4 +61,4 @@ export const useDiscountedPremiumProductInfo = ReactCompilerGating.isReactCompil
       return null;
     }, items)
   };
-});
+};

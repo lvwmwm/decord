@@ -1,39 +1,19 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 13715
+// Function ID: 13716
 // Name: usePremiumPrimaryGradientColors
-// Dependencies: [558, 568, 4494, 580, 2]
+// Dependencies: [4489, 576, 2]
+// Exports: default
 
-// Module 13725 (usePremiumPrimaryGradientColors)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4494 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13715 (usePremiumPrimaryGradientColors)
+import nativeDefault from "native" /* 576 */;
+import useToken from "useToken" /* 4489 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/native/usePremiumPrimaryGradientColors.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  const token = useToken.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT);
-  const token1 = useToken.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
-  const token2 = useToken.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
-  if (cResult[0] === token) {
-    if (cResult[1] === token1) {
-      if (cResult[2] === token2) {
-        let tmp5 = cResult[3];
-      }
-      return tmp5;
-    }
-  }
-  const items = [token, token1, token2];
-  cResult[0] = token;
-  cResult[1] = token1;
-  cResult[2] = token2;
-  cResult[3] = items;
-  tmp5 = items;
-}) : (() => {
+export default function usePremiumPrimaryGradientColors() {
   const items = [useToken.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
   items[1] = useToken.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
   items[2] = useToken.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
   return items;
-});
+};

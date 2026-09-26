@@ -1,13 +1,13 @@
-// Module ID: 4645
-// Function ID: 4646
+// Module ID: 4642
+// Function ID: 4643
 // Name: GuildThemePresets
-// Dependencies: [1089, 676, 4646, 2]
+// Dependencies: [1085, 672, 4643, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getGuildThemePresetAppearance, getGuildThemeToneRange, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSaturationPinnedColor, getSingleColorGuildThemeGradientColors, getThemeAdjustedToneColor, getToneAdjustedColor
 
-// Module 4645 (GuildThemePresets)
-import _modDef676 from "module_676" /* 676 */;
-import Constants from "Constants" /* 1089 */;
-import CustomThemesRandomUtils from "CustomThemesRandomUtils" /* 4646 */;
+// Module 4642 (GuildThemePresets)
+import _modDef672 from "module_672" /* 672 */;
+import Constants from "Constants" /* 1085 */;
+import CustomThemesRandomUtils from "CustomThemesRandomUtils" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
@@ -128,7 +128,7 @@ export const getGuildThemePreset = function getGuildThemePreset(presetId) {
   return tmp;
 };
 export const getDefaultGuildThemePresetSettings = function getDefaultGuildThemePresetSettings() {
-  return { presetId: mapped[0].id, customUserThemeSettings: "Array" };
+  return { presetId: mapped[0].id, customUserThemeSettings: "a" };
 };
 export const getGuildThemePresetAppearance = function getGuildThemePresetAppearance(preset, stateFromStores) {
   return stateFromStores === ThemeTypes.LIGHT ? preset.lightAppearance : preset.darkAppearance;
@@ -139,15 +139,15 @@ export const getLinearGradientForGuildThemePreset = function getLinearGradientFo
   mapped = colors.map((hex) => "" + hex.hex + " " + hex.stop + "%");
   return "linear-gradient(" + tmp.angle + "deg, " + mapped.join(", ") + ")";
 };
-export const getSingleColorGuildThemeGradientColors = function getSingleColorGuildThemeGradientColors(arg0, cResult) {
-  const tmp2 = cResult === ThemeTypes.LIGHT ? { minTone: 55, maxTone: 75 } : { minTone: 15, maxTone: 35 };
+export const getSingleColorGuildThemeGradientColors = function getSingleColorGuildThemeGradientColors(arg0, stateFromStores) {
+  const tmp2 = stateFromStores === ThemeTypes.LIGHT ? { minTone: 55, maxTone: 75 } : { minTone: 15, maxTone: 35 };
   const minTone = tmp2.minTone;
-  const obj = _modDef676(arg0);
+  const obj = _modDef672(arg0);
   const result = obj.set("hsl.l", (minTone + (Math.max(15, Math.min(75, 100 * obj.get("hsl.l"))) - 15) / 60 * (tmp2.maxTone - minTone)) / 100);
   const hexResult = result.hex();
-  const obj3 = _modDef676(hexResult);
+  const obj3 = _modDef672(hexResult);
   let num = -0.2;
-  if (cResult === ThemeTypes.LIGHT) {
+  if (stateFromStores === ThemeTypes.LIGHT) {
     num = 0.2;
   }
   const items = [hexResult, ];
@@ -159,22 +159,22 @@ export const getRandomSingleColorGuildTheme = function getRandomSingleColorGuild
   const diff = CustomThemesRandomUtils.COLOR_PALETTE.length - 1;
   const tmp2 = CustomThemesRandomUtils.COLOR_PALETTE[Math.floor(Math, Math.random(Math) * (diff + 1))];
   const obj = { color: null, baseMix: null };
-  const bound = Math.min(45, Math.round(100 * _modDef676(tmp2).get("hsl.l")));
-  const obj2 = _modDef676(tmp2);
-  const result = _modDef676(tmp2).set("hsl.l", Math.max(0.15, Math.min(0.75, bound / 100)));
-  const obj3 = _modDef676(tmp2);
+  const bound = Math.min(45, Math.round(100 * _modDef672(tmp2).get("hsl.l")));
+  const obj2 = _modDef672(tmp2);
+  const result = _modDef672(tmp2).set("hsl.l", Math.max(0.15, Math.min(0.75, bound / 100)));
+  const obj3 = _modDef672(tmp2);
   const hexResult = result.hex();
-  const result1 = _modDef676(result.hex()).set("hsl.s", 0.4);
+  const result1 = _modDef672(result.hex()).set("hsl.s", 0.4);
   obj.color = result1.hex();
   obj.baseMix = Math.floor(Math.random() * 11) + 70;
   return obj;
 };
 export const getSaturationPinnedColor = function getSaturationPinnedColor(arg0) {
-  const result = _modDef676(arg0).set("hsl.s", 0.4);
+  const result = _modDef672(arg0).set("hsl.s", 0.4);
   return result.hex();
 };
 export const getToneAdjustedColor = function getToneAdjustedColor(arg0, arg1) {
-  const result = _modDef676(arg0).set("hsl.l", Math.max(0.15, Math.min(0.75, arg1 / 100)));
+  const result = _modDef672(arg0).set("hsl.l", Math.max(0.15, Math.min(0.75, arg1 / 100)));
   return result.hex();
 };
 export const getGuildThemeToneRange = function getGuildThemeToneRange(arg0) {
@@ -183,11 +183,11 @@ export const getGuildThemeToneRange = function getGuildThemeToneRange(arg0) {
 export const getThemeAdjustedToneColor = function getThemeAdjustedToneColor(arg0, arg1) {
   const tmp = arg1 === ThemeTypes.LIGHT ? { minTone: 55, maxTone: 75 } : { minTone: 15, maxTone: 35 };
   const minTone = tmp.minTone;
-  const obj = _modDef676(arg0);
+  const obj = _modDef672(arg0);
   const result = obj.set("hsl.l", (minTone + (Math.max(15, Math.min(75, 100 * obj.get("hsl.l"))) - 15) / 60 * (tmp.maxTone - minTone)) / 100);
   return result.hex();
 };
 export const getHueAdjustedColor = function getHueAdjustedColor(arg0, arg1) {
-  const result = _modDef676(arg0).set("hsl.h", arg1);
+  const result = _modDef672(arg0).set("hsl.h", arg1);
   return result.hex();
 };

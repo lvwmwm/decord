@@ -1,61 +1,161 @@
 // Module ID: 1865
 // Function ID: 1866
-// Dependencies: [19, 17, 21, 1860, 1835, 1866, 1833, 1859]
-// Exports: default
+// Dependencies: [19, 17, 21, 1637, 1845, 1866, 1868, 1870, 1851]
 
 // Module 1865
-import _mod1833 from "module_1833" /* 1833 */;
-import "module_19";
+import _mod17 from "module_17" /* 17 */;
+import noop_mod from "module_19" /* 19 */;
+import jsxProd from "jsxProd" /* 21 */;
+import cancelAnimation_mod from "cancelAnimation" /* 1637 */;
 
-require = fn;
-const noop = fn(19);
-({ useCallback: c3, useMemo: closure_4 } = noop);
-get_ActivityIndicator = fn(17);
-({ StyleSheet, Text: hasOwnProperty } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const doneButtonContainer = StyleSheet.create({ doneButton: { fontWeight: "600", fontSize: 15 }, doneButtonContainer: { marginRight: 16, marginLeft: 8 } });
+let noop = noop_mod;
+({ useCallback: c3, useMemo: closure_4, forwardRef } = noop);
+let noop = noop_mod;
+const StyleSheet = _mod17.StyleSheet;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
+let cancelAnimation = cancelAnimation_mod;
+let closure_8 = cancelAnimation.makeMutable(0);
+let cancelAnimation = cancelAnimation_mod;
+let closure_9 = cancelAnimation.makeMutable(0);
+const __initData = { code: "function pnpm_indexTsx1(){const{freeze}=this.__closure;return typeof freeze===\"boolean\"?freeze:freeze.value;}" };
+const __initData2 = { code: "function pnpm_indexTsx2(){const{blankSpace,padding,extraContentPadding}=this.__closure;return Math.max(blankSpace.value,padding.value+extraContentPadding.value);}" };
+const __initData3 = { code: "function pnpm_indexTsx3(){const{padding,extraContentPadding}=this.__closure;return padding.value+extraContentPadding.value;}" };
+const __initData4 = { code: "function pnpm_indexTsx4(){const{currentHeight}=this.__closure;return{transform:[{translateY:-currentHeight.value}]};}" };
+const styles = StyleSheet.create({ commitView: { display: "none", position: "absolute" } });
 
-export default function _default(rippleRadius) {
-  ({ children, onPress } = rippleRadius);
-  let num = rippleRadius.rippleRadius;
+export default forwardRef((onEndVisible, arg1) => {
+  let ScrollView = onEndVisible.ScrollViewComponent;
+  if (ScrollView === undefined) {
+    ScrollView = extraContentPadding(blankSpace[3]).ScrollView;
+  }
+  let flag = onEndVisible.inverted;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let str = onEndVisible.keyboardLiftBehavior;
+  if (str === undefined) {
+    str = "always";
+  }
+  let flag2 = onEndVisible.freeze;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
+  let num = onEndVisible.offset;
   if (num === undefined) {
-    num = 28;
+    num = 0;
   }
-  ({ button, text } = rippleRadius);
-  if (button === undefined) {
-    button = keyboardState(theme[3]);
+  extraContentPadding = onEndVisible.extraContentPadding;
+  if (extraContentPadding === undefined) {
+    extraContentPadding = onContentSizeChange2;
   }
-  theme = undefined;
-  keyboardState = onPress(theme[4]).useKeyboardState((appearance) => appearance.appearance);
-  const obj = onPress(theme[4]);
-  theme = onPress(theme[5]).useToolbarContext().theme;
-  let items = [keyboardState, theme];
-  const items1 = [onPress];
-  const obj2 = onPress(theme[5]);
-  const obj3 = { accessibilityHint: "Closes the keyboard", accessibilityLabel: "Done", rippleRadius: num, style: doneButtonContainer.doneButtonContainer, testID: null, theme: null, onPress: null, children: null };
-  const tmp4 = closure_4(() => {
-    const items = [doneButton.doneButton, { color: theme[keyboardState].primary }];
-    return items;
-  }, items);
-  obj3.testID = onPress(theme[7]).TEST_ID_KEYBOARD_TOOLBAR_DONE;
-  obj3.theme = theme;
-  obj3.onPress = closure_3((isDefaultPrevented) => {
-    if (onPress != null) {
-      tmp(isDefaultPrevented);
+  blankSpace = onEndVisible.blankSpace;
+  if (blankSpace === undefined) {
+    blankSpace = animatedStyle;
+  }
+  let flag3 = onEndVisible.applyWorkaroundForContentInsetHitTestBug;
+  if (flag3 === undefined) {
+    flag3 = false;
+  }
+  const onLayout = onEndVisible.onLayout;
+  const onContentSizeChange = onEndVisible.onContentSizeChange;
+  const merged = Object.assign(onEndVisible, Object.assign({ children: 0, ScrollViewComponent: 0, inverted: 0, keyboardLiftBehavior: 0, freeze: 0, offset: 0, extraContentPadding: 0, blankSpace: 0, applyWorkaroundForContentInsetHitTestBug: 0, onLayout: 0, onContentSizeChange: 0, onEndVisible: 0 }));
+  let padding;
+  let currentHeight;
+  onLayout2 = undefined;
+  onContentSizeChange2 = undefined;
+  animatedStyle = undefined;
+  const animatedRef = flag2(blankSpace[3]).useAnimatedRef();
+  let obj = flag2(blankSpace[3]);
+  const tmp5 = extraContentPadding(blankSpace[4])(arg1, animatedRef);
+  class M {
+    constructor() {
+      value = c0;
+      if (typeof c0 !== "boolean") {
+        value = c0.value;
+      }
+      return value;
     }
-    if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = _mod1833.KeyboardController;
-      KeyboardController.dismiss();
+  }
+  M.__closure = { freeze: flag2 };
+  M.__workletHash = 1441280506731;
+  M.__initData = __initData;
+  const derivedValue = flag2(blankSpace[3]).useDerivedValue(M);
+  const obj2 = flag2(blankSpace[3]);
+  const chatKeyboard = flag2(blankSpace[5]).useChatKeyboard(animatedRef, { inverted: flag, keyboardLiftBehavior: str, freeze: derivedValue, offset: num, blankSpace, extraContentPadding });
+  padding = chatKeyboard.padding;
+  currentHeight = chatKeyboard.currentHeight;
+  ({ contentOffsetY, scroll, layout, size, onLayout: onLayout2 } = chatKeyboard);
+  onContentSizeChange2 = chatKeyboard.onContentSizeChange;
+  const obj3 = flag2(blankSpace[5]);
+  const extraContentPadding1 = flag2(blankSpace[6]).useExtraContentPadding({ scrollViewRef: animatedRef, extraContentPadding, keyboardPadding: padding, blankSpace, scroll, layout, size, contentOffsetY, inverted: flag, keyboardLiftBehavior: str, freeze: derivedValue });
+  const obj4 = flag2(blankSpace[6]);
+  const endVisible = flag2(blankSpace[7]).useEndVisible({ scroll, layout, size, inverted: flag, onEndVisible: onEndVisible.onEndVisible });
+  const obj5 = flag2(blankSpace[7]);
+  const fn = function q() {
+    return Math.max(blankSpace.value, padding.value + extraContentPadding.value);
+  };
+  fn.__closure = { blankSpace, padding, extraContentPadding };
+  fn.__workletHash = 5812718828105;
+  fn.__initData = __initData2;
+  const derivedValue1 = flag2(blankSpace[3]).useDerivedValue(fn);
+  const obj6 = flag2(blankSpace[3]);
+  class G {
+    constructor() {
+      return padding.value + closure_1.value;
+    }
+  }
+  G.__closure = { padding, extraContentPadding };
+  G.__workletHash = 17005251423398;
+  G.__initData = __initData3;
+  let items = [onLayout2, onLayout];
+  const derivedValue2 = flag2(blankSpace[3]).useDerivedValue(G);
+  const items1 = [onContentSizeChange2, onContentSizeChange];
+  const obj7 = flag2(blankSpace[3]);
+  const tmp12 = onLayout((arg0) => {
+    onLayout2(arg0);
+    if (onLayout != null) {
+      onLayout(arg0);
+    }
+  }, items);
+  const tmp13 = onLayout((arg0, arg1) => {
+    onContentSizeChange2(arg0, arg1);
+    if (onContentSizeChange != null) {
+      onContentSizeChange(arg0, arg1);
     }
   }, items1);
-  const obj4 = { maxFontSizeMultiplier: 1.3, style: tmp4, children: null };
-  if (children == null) {
-    children = text;
+  class J {
+    constructor() {
+      obj = { transform: null };
+      obj1 = { translateY: -currentHeight.value };
+      items = [];
+      items[0] = obj1;
+      obj.transform = items;
+      return obj;
+    }
   }
-  if (children == null) {
-    children = "Done";
-  }
-  obj4.children = children;
-  obj3.children = <closure_5 maxFontSizeMultiplier={1.3} style={tmp4}>{null}</closure_5>;
-  return <button accessibilityHint="Closes the keyboard" accessibilityLabel="Done" rippleRadius={num} style={doneButtonContainer.doneButtonContainer} testID={null} theme={null} onPress={null}>{null}</button>;
-};
+  J.__closure = { currentHeight };
+  J.__workletHash = 2509855764315;
+  J.__initData = __initData4;
+  animatedStyle = flag2(blankSpace[3]).useAnimatedStyle(J, []);
+  const items2 = [animatedStyle];
+  const obj9 = { children: null };
+  const obj8 = flag2(blankSpace[3]);
+  const obj10 = { ref: tmp5 };
+  const tmp15 = onContentSizeChange(() => {
+    const items = [commitView.commitView, animatedStyle];
+    return items;
+  }, items2);
+  const merged1 = Object.assign(merged);
+  obj10.applyWorkaroundForContentInsetHitTestBug = flag3;
+  obj10.bottomPadding = derivedValue1;
+  obj10.contentOffsetY = contentOffsetY;
+  obj10.inverted = flag;
+  obj10.scrollIndicatorPadding = derivedValue2;
+  obj10.ScrollViewComponent = ScrollView;
+  obj10.onContentSizeChange = tmp13;
+  obj10.onLayout = tmp12;
+  obj10.children = onEndVisible.children;
+  const items3 = [padding(extraContentPadding(blankSpace[8]), obj10), padding(extraContentPadding(blankSpace[3]).View, { style: tmp15 })];
+  obj9.children = items3;
+  return onLayout2(currentHeight, obj9);
+});

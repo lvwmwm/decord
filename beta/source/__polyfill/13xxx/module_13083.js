@@ -1,58 +1,35 @@
 // Module ID: 13083
 // Function ID: 13084
-// Dependencies: [13084, 13085, 13088]
-// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
+// Dependencies: [13077, 13080]
+// Exports: addGlobalUnhandledRejectionInstrumentationHandler
 
 // Module 13083
-import _mod13084 from "module_13084" /* 13084 */;
+import _mod13077 from "module_13077" /* 13077 */;
+import _mod13080 from "module_13080" /* 13080 */;
 
 require = arg1;
-const dependencyMap = {};
-let closure_3 = {};
+const dependencyMap = arg6;
+function instrumentUnhandledRejection() {
+  onunhandledrejection = _mod13080.GLOBAL_OBJ.onunhandledrejection;
+  _mod13080.GLOBAL_OBJ.onunhandledrejection = function(arg0) {
+    _mod13077.triggerHandlers("unhandledrejection", arg0);
+    if (!onunhandledrejection) {
+      return !onunhandledrejection;
+    } else {
+      const self = this;
+      const apply = onunhandledrejection.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+    }
+  };
+  _mod13080.GLOBAL_OBJ.onunhandledrejection.__SENTRY_INSTRUMENTED__ = true;
+}
+let onunhandledrejection = null;
 
-export const addHandler = function addHandler(arg0, arg1) {
-  dependencyMap[arg0] = dependencyMap[arg0] || [];
-  dependencyMap[arg0].push(arg1);
-};
-export const maybeInstrument = function maybeInstrument(arg0, fn) {
-  if (!closure_3[arg0]) {
-    tmp2[arg0] = true;
-    try {
-      fn();
-    } catch (tmp5) {
-      if (_mod13084.DEBUG_BUILD) {
-        const logger = tmp6(13085).logger;
-        const _HermesInternal = HermesInternal;
-        logger.error("Error while instrumenting " + tmp, tmp5);
-      }
-      tmp6 = require;
-    }
-  }
-};
-export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
-  const keys = Object.keys(closure_2);
-  const item = keys.forEach((item) => {
-    dependencyMap[item] = undefined;
-  });
-};
-export const triggerHandlers = function triggerHandlers(arg0, arg1) {
-  let tmp8 = arg0;
-  if (arg0) {
-    tmp8 = dependencyMap[arg0];
-  }
-  if (tmp8) {
-    const iter = tmp8[Symbol.iterator]();
-    if (iter !== undefined) {
-      try {
-        tmp15(arg1);
-      } catch (tmp18) {
-        if (_mod13084.DEBUG_BUILD) {
-          const logger = tmp19(13085).logger;
-          logger.error(tmp2 + tmp6 + tmp3 + tmp19(13088).getFunctionName(tmp7) + tmp4, tmp18);
-          const tmp19Result = tmp19(13088);
-        }
-      }
-    }
-    const nextResult = iter.next();
-  }
+export const addGlobalUnhandledRejectionInstrumentationHandler = function addGlobalUnhandledRejectionInstrumentationHandler(arg0) {
+  _mod13077.addHandler("unhandledrejection", arg0);
+  _mod13077.maybeInstrument("unhandledrejection", instrumentUnhandledRejection);
 };

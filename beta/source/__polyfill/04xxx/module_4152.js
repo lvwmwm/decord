@@ -1,11 +1,11 @@
 // Module ID: 4152
 // Function ID: 4153
-// Dependencies: [3881, 3882]
+// Dependencies: [3877, 3878]
 // Exports: default
 
 // Module 4152
-import _typeof_mod from "module_3881" /* 3881 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,12 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function getISODay(arg0) {
+export default function getMinutes(arg0) {
   requiredArgs.default(1, arguments);
-  let num = _typeof.default(arg0).getDay();
-  if (0 === num) {
-    num = 7;
-  }
-  return num;
+  return _typeof.default(arg0).getMinutes();
 };
 export default exports.default;

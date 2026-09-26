@@ -1,33 +1,34 @@
-// Module ID: 15308
-// Function ID: 15309
+// Module ID: 15307
+// Function ID: 15308
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 1983, 1078, 21, 580, 8616, 4790, 676, 558, 568, 15291, 4529, 5219, 5223, 4791, 4794, 1114, 504, 1368, 1235, 1616, 1119, 5373, 15309, 15311, 15313, 15314, 11896, 8582, 8584, 15315, 15316, 2]
+// Dependencies: [32, 19, 17, 1979, 1074, 21, 576, 8611, 4788, 672, 15295, 4524, 5217, 5221, 4789, 4792, 1110, 504, 1364, 1231, 1612, 1115, 5371, 15308, 15310, 15312, 15313, 10476, 8577, 8579, 15314, 15315, 2]
 
-// Module 15308 (AdVideoPlayer)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import timing from "timing" /* 4791 */;
-import timingPresets from "timingPresets" /* 4794 */;
-import spring from "spring" /* 5219 */;
-import springPresets from "springPresets" /* 5223 */;
-import _modDef8616 from "module_8616" /* 8616 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15291 */;
+// Module 15307 (AdVideoPlayer)
+import nativeDefault from "native" /* 576 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import timing from "timing" /* 4789 */;
+import timingPresets from "timingPresets" /* 4792 */;
+import spring from "spring" /* 5217 */;
+import springPresets from "springPresets" /* 5221 */;
+import _modDef8611 from "module_8611" /* 8611 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1983 */;
-import n from "module_676" /* 676 */;
+import AppStateStore from "AppStateStore" /* 1979 */;
+import n from "module_672" /* 672 */;
+
+const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet, Pressable: metroRequire, ActivityIndicator: closure_7 } = get_ActivityIndicator);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AppStates: closure_9, ComponentActions: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 let rect = { left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, top: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
-const _isNativeReflectConstruct = noop.memo(_modDef8616);
+const _isNativeReflectConstruct = noop.memo(_modDef8611);
 function hasVideoEnded(arg0, arg1) {
   return arg0 >= arg1 - 1;
 }
@@ -52,7 +53,7 @@ function canSeekForward(arg0, arg1, arg2, arg3) {
 canSeekForward.__closure = { hasVideoEnded };
 canSeekForward.__workletHash = 14098132092693;
 canSeekForward.__initData = { code: "function canSeekForward_AdVideoPlayerTsx2(currentTime,maxTimestamp,videoDuration,allowUnrestrictedSeeking){const{hasVideoEnded}=this.__closure;return!hasVideoEnded(currentTime,videoDuration)&&(allowUnrestrictedSeeking||currentTime<=maxTimestamp-1);}" };
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { container: null, loadingContainer: null, bufferingSpinner: null, bufferingSpinnerCentered: null, video: null, videoContainer: null, controls: null, controlsTopBottom: null, controlsMiddle: null, controlsTop: null, controlsBottom: null, progressContainer: null, progress: null, icon: null, iconDisabled: null, controlButton: null };
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.container = {};
@@ -96,66 +97,16 @@ obj.iconDisabled = { color: nativeDefault.colors.TEXT_SUBTLE };
 let obj10 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj.controlButton = { padding: nativeDefault.space.PX_8 };
 let closure_17 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBuffer) => {
-  const cResult = c.c(5);
-  onBuffer = onBuffer.onBuffer;
-  noop.useRef(false);
-  [tmp3, dependencyMap] = noop.useState(false);
-  if (cResult[0] !== onBuffer) {
-    const fn = function s(current) {
-      dependencyMap(current);
-      if (current !== ref.current) {
-        ref.current = current;
-        if (onBuffer != null) {
-          onBuffer(current);
-        }
-      }
-    };
-    cResult[0] = onBuffer;
-    cResult[1] = fn;
-    let tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === tmp3) {
-    if (cResult[3] === tmp4) {
-      let tmp5 = cResult[4];
-    }
-    return tmp5;
-  }
-  const obj2 = { isBuffering: tmp3, toggleBuffering: tmp4 };
-  cResult[2] = tmp3;
-  cResult[3] = tmp4;
-  cResult[4] = obj2;
-  tmp5 = obj2;
-}) : ((onBuffer) => {
-  onBuffer = onBuffer.onBuffer;
-  noop.useRef(false);
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  closure_2 = tmp[1];
-  const obj = { isBuffering: tmp[0], toggleBuffering: null };
-  const items = [onBuffer];
-  obj.toggleBuffering = noop.useCallback((current) => {
-    closure_2(current);
-    if (current !== ref.current) {
-      ref.current = current;
-      if (onBuffer != null) {
-        onBuffer(current);
-      }
-    }
-  }, items);
-  return obj;
-});
-let __initData = { code: "function shouldShowControls_AdVideoPlayerTsx3(){const{hasLoaded,hideControls,showControls,playerState,PlayerState,isVideoEnded}=this.__closure;return hasLoaded&&!hideControls&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded);}" };
-let closure_20 = { code: "function AdVideoPlayerTsx4(){const{shouldShowControls,withSpring,SUBTLE_SPRING}=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};}" };
-let __initData2 = { code: "function AdVideoPlayerTsx5(){const{withTiming,progressSharedValue,timingFast}=this.__closure;return{width:withTiming(progressSharedValue.get()*100+\"%\",timingFast,'animate-always')};}" };
+let closure_18 = { code: "function shouldShowControls_AdVideoPlayerTsx3(){const{hasLoaded,hideControls,showControls,playerState,PlayerState,isVideoEnded}=this.__closure;return hasLoaded&&!hideControls&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded);}" };
+let __initData = { code: "function AdVideoPlayerTsx4(){const{shouldShowControls,withSpring,SUBTLE_SPRING}=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};}" };
+let closure_20 = { code: "function AdVideoPlayerTsx5(){const{withTiming,progressSharedValue,timingFast}=this.__closure;return{width:withTiming(progressSharedValue.get()*100+\"%\",timingFast,'animate-always')};}" };
 let obj11 = { padding: nativeDefault.space.PX_8 };
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/AdVideoPlayer.tsx");
 
 export const AdVideoPlayer = noop.memo((initialProgress) => {
   initialProgress = initialProgress.initialProgress;
+  onBuffer = initialProgress;
   let num = initialProgress.contentDuration;
   if (num === undefined) {
     num = 0;
@@ -164,7 +115,8 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = initialProgress.disableResumeOnLoad;
+  importDefault = flag;
+  flag2 = initialProgress.disableResumeOnLoad;
   if (flag2 === undefined) {
     flag2 = false;
   }
@@ -177,12 +129,12 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   const onReadyForDisplay = initialProgress.onReadyForDisplay;
   const onProgress = initialProgress.onProgress;
   const onSeek = initialProgress.onSeek;
-  const onError = initialProgress.onError;
+  ({ onBuffer, onError } = initialProgress);
   const onEnd = initialProgress.onEnd;
   const onPlayerStateChange = initialProgress.onPlayerStateChange;
   const onPausePlayback = initialProgress.onPausePlayback;
   const onResumePlayback = initialProgress.onResumePlayback;
-  ({ videoRef, bufferingSpinnerPlacement, onToggleCaptions, onOpenTranscript, onToggleFullscreen, onBuffer, onVideoTracks, onVideoLayout } = initialProgress);
+  ({ videoRef, bufferingSpinnerPlacement, onToggleCaptions, onOpenTranscript, onToggleFullscreen, onVideoTracks, onVideoLayout } = initialProgress);
   if (bufferingSpinnerPlacement === undefined) {
     bufferingSpinnerPlacement = "top-left";
   }
@@ -220,7 +172,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   let first1;
   __initData = undefined;
   let first2;
-  __initData2 = undefined;
+  closure_21 = undefined;
   let first3;
   closure_23 = undefined;
   let callback;
@@ -236,7 +188,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   let callback8;
   let callback9;
   closure_40 = undefined;
-  toggleBuffering = undefined;
+  let callback17;
   let tmp = closure_17();
   if (videoRef == null) {
     videoRef = onLoad.useRef(null);
@@ -249,9 +201,9 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   first1 = tmp6[0];
   __initData = tmp6[1];
   const tmp9 = flag2;
-  const tmp10 = onLoadStart(onLoad.useState(initialProgress(flag2[12]).PlayerState.LOADING), 2);
+  const tmp10 = onLoadStart(onLoad.useState(onBuffer(flag2[10]).PlayerState.LOADING), 2);
   first2 = tmp10[0];
-  __initData2 = tmp10[1];
+  closure_21 = tmp10[1];
   const tmp12 = onLoadStart(onLoad.useState(false), 2);
   first3 = tmp12[0];
   closure_23 = tmp12[1];
@@ -267,7 +219,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   }, items);
   let tmp15 = first3;
   if (first3) {
-    tmp15 = first2 === tmp8(tmp9[12]).PlayerState.ENDED;
+    tmp15 = first2 === tmp8(tmp9[10]).PlayerState.ENDED;
   }
   if (tmp15) {
     if (typeof videoRef === "function") {
@@ -277,7 +229,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     }
   }
   closure_28 = tmp15;
-  sharedValue = initialProgress(tmp9[13]).useSharedValue(false);
+  sharedValue = onBuffer(tmp9[11]).useSharedValue(false);
   shouldShowControls = function shouldShowControls() {
     let tmp = first3;
     if (first3) {
@@ -302,23 +254,22 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     return tmp;
   };
   let obj2 = {};
-  let tmp2 = onLoadStart;
-  const tmp8Result = initialProgress(tmp9[13]);
-  shouldShowControls.__closure = { hasLoaded: first3, hideControls: flag8, showControls: sharedValue, playerState: first2, PlayerState: initialProgress(tmp9[12]).PlayerState, isVideoEnded: tmp15 };
+  const tmp8Result = onBuffer(tmp9[11]);
+  shouldShowControls.__closure = { hasLoaded: first3, hideControls: flag8, showControls: sharedValue, playerState: first2, PlayerState: onBuffer(tmp9[10]).PlayerState, isVideoEnded: tmp15 };
   shouldShowControls.__workletHash = 8094403036162;
-  shouldShowControls.__initData = __initData;
-  const obj3 = { hasLoaded: first3, hideControls: flag8, showControls: sharedValue, playerState: first2, PlayerState: initialProgress(tmp9[12]).PlayerState, isVideoEnded: tmp15 };
-  class Pe {
+  shouldShowControls.__initData = first1;
+  const obj3 = { hasLoaded: first3, hideControls: flag8, showControls: sharedValue, playerState: first2, PlayerState: onBuffer(tmp9[10]).PlayerState, isVideoEnded: tmp15 };
+  class Se {
     constructor() {
       tmp = shouldShowControls();
       tmp2 = closure_0;
       tmp3 = closure_2;
-      obj = closure_0(closure_2[14]);
+      obj = closure_0(closure_2[12]);
       num = 0;
       if (tmp) {
         num = 1;
       }
-      obj1 = { opacity: obj.withSpring(num, tmp2(tmp3[15]).SUBTLE_SPRING), pointerEvents: null };
+      obj1 = { opacity: obj.withSpring(num, tmp2(tmp3[13]).SUBTLE_SPRING), pointerEvents: null };
       str = "none";
       if (tmp) {
         str = "auto";
@@ -327,26 +278,29 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
       return obj1;
     }
   }
-  const tmp8Result5 = initialProgress(tmp9[13]);
-  Pe.__closure = { shouldShowControls, withSpring: initialProgress(tmp9[14]).withSpring, SUBTLE_SPRING: initialProgress(tmp9[15]).SUBTLE_SPRING };
-  Pe.__workletHash = 311315682972;
-  Pe.__initData = first2;
-  const animatedStyle = tmp8Result5.useAnimatedStyle(Pe);
-  const obj4 = { shouldShowControls, withSpring: initialProgress(tmp9[14]).withSpring, SUBTLE_SPRING: initialProgress(tmp9[15]).SUBTLE_SPRING };
+  const tmp8Result5 = onBuffer(tmp9[11]);
+  Se.__closure = { shouldShowControls, withSpring: onBuffer(tmp9[12]).withSpring, SUBTLE_SPRING: onBuffer(tmp9[13]).SUBTLE_SPRING };
+  Se.__workletHash = 311315682972;
+  Se.__initData = __initData;
+  const animatedStyle = tmp8Result5.useAnimatedStyle(Se);
+  const obj4 = { shouldShowControls, withSpring: onBuffer(tmp9[12]).withSpring, SUBTLE_SPRING: onBuffer(tmp9[13]).SUBTLE_SPRING };
   const shouldShowControlsResult = shouldShowControls();
-  sharedValue1 = initialProgress(tmp9[13]).useSharedValue(0);
-  const tmp8Result6 = initialProgress(tmp9[13]);
-  function ye() {
-    const obj = { width: null };
-    const result = 100 * sharedValue1.get();
-    obj.width = timing.withTiming(`${tmp}%`, timingPresets.timingFast, "animate-always");
-    return obj;
+  sharedValue1 = onBuffer(tmp9[11]).useSharedValue(0);
+  const tmp8Result6 = onBuffer(tmp9[11]);
+  class Pe {
+    constructor() {
+      obj = { width: null };
+      obj2 = closure_0(closure_2[14]);
+      result = 100 * closure_31.get();
+      obj.width = obj2.withTiming(`${tmp}%`, closure_0(closure_2[15]).timingFast, "animate-always");
+      return obj;
+    }
   }
-  const tmp8Result7 = initialProgress(tmp9[13]);
-  ye.__closure = { withTiming: initialProgress(tmp9[16]).withTiming, progressSharedValue: sharedValue1, timingFast: initialProgress(tmp9[17]).timingFast };
-  ye.__workletHash = 11793601648786;
-  ye.__initData = __initData2;
-  const animatedStyle1 = tmp8Result7.useAnimatedStyle(ye);
+  const tmp8Result7 = onBuffer(tmp9[11]);
+  Pe.__closure = { withTiming: onBuffer(tmp9[14]).withTiming, progressSharedValue: sharedValue1, timingFast: onBuffer(tmp9[15]).timingFast };
+  Pe.__workletHash = 11793601648786;
+  Pe.__initData = first2;
+  const animatedStyle1 = tmp8Result7.useAnimatedStyle(Pe);
   closure_32 = obj.useRef(-1);
   let items1 = [sharedValue];
   const callback1 = obj.useCallback((arg0) => {
@@ -368,8 +322,8 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   callback2 = obj.useCallback((timestampSec, duration) => {
     closure_19((maxTimestampSec) => ({ timestampSec, maxTimestampSec: Math.max(maxTimestampSec.maxTimestampSec, Math.floor(timestampSec)), duration }));
   }, []);
-  const obj5 = { withTiming: initialProgress(tmp9[16]).withTiming, progressSharedValue: sharedValue1, timingFast: initialProgress(tmp9[17]).timingFast };
-  [tmp27, c34] = tmp2(onLoad.useState(false), 2);
+  const obj5 = { withTiming: onBuffer(tmp9[14]).withTiming, progressSharedValue: sharedValue1, timingFast: onBuffer(tmp9[15]).timingFast };
+  [tmp27, c34] = onLoadStart(onLoad.useState(false), 2);
   const items2 = [onReadyForDisplay];
   const items3 = [flag, , , ];
   ({ duration: arr4[1], maxTimestampSec: arr4[2] } = first1);
@@ -386,40 +340,40 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
       let bound = first1;
       const _Math = Math;
       const _Math2 = Math;
-      bound = Math.max(0, Math.min(arg0, flag ? bound.duration : bound.maxTimestampSec));
-      ref2.current = (ref2.current + 1) % 100;
+      bound = Math.max(0, Math.min(arg0, closure_1 ? bound.duration : bound.maxTimestampSec));
+      ref3.current = (ref3.current + 1) % 100;
       const current = seek.current;
       seek = current.seek;
-      seek(bound + 0.0001 * ref2.current);
+      seek(bound + 0.0001 * ref3.current);
       closure_24.current = bound;
     }
   }, items3);
   const items4 = [callback4, first2, callback, onResumePlayback, onPausePlayback];
   const imperativeHandle = obj.useImperativeHandle(initialProgress.ref, () => ({
     seekToStart() {
-      if (first2 !== initialProgress(flag2[12]).PlayerState.ERRORED) {
+      if (first2 !== onBuffer(flag2[10]).PlayerState.ERRORED) {
         callback4(0);
-        if (first2 === tmp2(tmp3[12]).PlayerState.ENDED) {
-          callback(tmp2(tmp3[12]).PlayerState.PLAYING);
+        if (first2 === tmp2(tmp3[10]).PlayerState.ENDED) {
+          callback(tmp2(tmp3[10]).PlayerState.PLAYING);
           if (onResumePlayback != null) {
-            tmp8(tmp2(tmp3[12]).PlaybackTriggerSource.IMPERATIVE_API);
+            tmp8(tmp2(tmp3[10]).PlaybackTriggerSource.IMPERATIVE_API);
           }
         }
       }
     },
     play() {
-      if (first2 === initialProgress(flag2[12]).PlayerState.PAUSED) {
-        callback(tmp(tmp2[12]).PlayerState.PLAYING);
+      if (first2 === onBuffer(flag2[10]).PlayerState.PAUSED) {
+        callback(tmp(tmp2[10]).PlayerState.PLAYING);
         if (onResumePlayback != null) {
-          tmp5(tmp(tmp2[12]).PlaybackTriggerSource.IMPERATIVE_API);
+          tmp5(tmp(tmp2[10]).PlaybackTriggerSource.IMPERATIVE_API);
         }
       }
     },
     pause() {
-      if (first2 === initialProgress(flag2[12]).PlayerState.PLAYING) {
-        callback(tmp(tmp2[12]).PlayerState.PAUSED);
+      if (first2 === onBuffer(flag2[10]).PlayerState.PLAYING) {
+        callback(tmp(tmp2[10]).PlayerState.PAUSED);
         if (onPausePlayback != null) {
-          tmp5(tmp(tmp2[12]).PlaybackTriggerSource.IMPERATIVE_API);
+          tmp5(tmp(tmp2[10]).PlaybackTriggerSource.IMPERATIVE_API);
         }
       }
     }
@@ -431,7 +385,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     closure_17(duration);
     closure_23(true);
     if (null != videoRef.current) {
-      const timestampSec = initialProgress.timestampSec;
+      const timestampSec = onBuffer.timestampSec;
       let tmp5 = !flag2;
       if (!flag2) {
         tmp5 = timestampSec > 5;
@@ -453,30 +407,30 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     if (arg0 === undefined) {
       obj = {};
     }
-    flag = obj.shouldRestartVideo;
+    let flag = obj.shouldRestartVideo;
     if (flag === undefined) {
       flag = true;
     }
     if (first2 !== AdsVideoTypes.PlayerState.ERRORED) {
-      if (tmp !== tmp2(15291).PlayerState.PAUSED) {
-        if (tmp !== tmp2(15291).PlayerState.LOADING) {
-          if (tmp === tmp2(15291).PlayerState.PLAYING) {
-            callback(tmp2(15291).PlayerState.PAUSED);
+      if (tmp !== tmp2(15295).PlayerState.PAUSED) {
+        if (tmp !== tmp2(15295).PlayerState.LOADING) {
+          if (tmp === tmp2(15295).PlayerState.PLAYING) {
+            callback(tmp2(15295).PlayerState.PAUSED);
             if (onPausePlayback != null) {
-              tmp16(tmp2(15291).PlaybackTriggerSource.USER_INTERACTION);
+              tmp16(tmp2(15295).PlaybackTriggerSource.USER_INTERACTION);
             }
           }
         }
       }
-      callback(tmp2(15291).PlayerState.PLAYING);
+      callback(tmp2(15295).PlayerState.PLAYING);
       if (onResumePlayback != null) {
-        tmp6(tmp2(15291).PlaybackTriggerSource.USER_INTERACTION);
+        tmp6(tmp2(15295).PlaybackTriggerSource.USER_INTERACTION);
       }
     }
     callback4(0);
     callback(AdsVideoTypes.PlayerState.PLAYING);
     if (onResumePlayback != null) {
-      tmp11(tmp2(15291).PlaybackTriggerSource.USER_INTERACTION);
+      tmp11(tmp2(15295).PlaybackTriggerSource.USER_INTERACTION);
     }
   }, items6);
   const items7 = [callback6];
@@ -487,20 +441,20 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     closure_37.current = false;
     if (first2 === AdsVideoTypes.PlayerState.PLAYING) {
       closure_37.current = true;
-      callback(tmp2(15291).PlayerState.PAUSED);
+      callback(tmp2(15295).PlayerState.PAUSED);
       if (onPausePlayback != null) {
-        tmp6(tmp2(15291).PlaybackTriggerSource.SYSTEM_INITIATED);
+        tmp6(tmp2(15295).PlaybackTriggerSource.SYSTEM_INITIATED);
       }
     }
   }, items8);
   const items9 = [first2, callback, onResumePlayback];
   callback9 = obj.useCallback(() => {
-    if (ref4.current) {
+    if (ref5.current) {
       tmp.current = false;
       if (first2 !== AdsVideoTypes.PlayerState.ERRORED) {
-        callback(tmp3(15291).PlayerState.PLAYING);
+        callback(tmp3(15295).PlayerState.PLAYING);
         if (onResumePlayback != null) {
-          tmp7(tmp3(15291).PlaybackTriggerSource.SYSTEM_INITIATED);
+          tmp7(tmp3(15295).PlaybackTriggerSource.SYSTEM_INITIATED);
         }
       }
     }
@@ -512,9 +466,9 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     let ComponentDispatch2 = ComponentDispatchUtils.ComponentDispatch;
     const subscription1 = ComponentDispatch2.subscribe(constants.QUEST_APP_STORE_OVERLAY_FINISHED, callback9);
     return () => {
-      const ComponentDispatch = initialProgress(flag2[18]).ComponentDispatch;
+      const ComponentDispatch = onBuffer(flag2[16]).ComponentDispatch;
       ComponentDispatch.unsubscribe(onPlayerStateChange.QUEST_GAME_LINK_OPENED, callback8);
-      const ComponentDispatch2 = initialProgress(flag2[18]).ComponentDispatch;
+      const ComponentDispatch2 = onBuffer(flag2[16]).ComponentDispatch;
       ComponentDispatch2.unsubscribe(onPlayerStateChange.QUEST_APP_STORE_OVERLAY_FINISHED, callback9);
     };
   }, items10);
@@ -527,7 +481,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     callback6({ shouldRestartVideo: false });
   }, items11);
   const callback11 = obj.useCallback((currentTime) => {
-    const current = ref3.current;
+    const current = ref4.current;
     let arr = current.shift();
     if (arr == null) {
       arr = null;
@@ -546,7 +500,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
       }
     }
   }, items12);
-  let tmp39 = first2 === tmp8(tmp9[12]).PlayerState.ERRORED;
+  let tmp39 = first2 === tmp8(tmp9[10]).PlayerState.ERRORED;
   if (!tmp39) {
     let timestampSec = first1.timestampSec;
     if (typeof first === "function") {
@@ -571,23 +525,23 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   const items14 = [callback4, first, sharedValue1, first2, callback];
   const callback12 = obj.useCallback(() => {
     if (!closure_40) {
-      let current = ref.current;
+      let current = ref2.current;
       if (current == null) {
         current = sharedValue1.get() * first;
       }
-      const current1 = ref3.current;
+      const current1 = ref4.current;
       current1.push(current);
       callback4(current + 10);
     }
   }, items13);
-  let tmp2Result = tmp2(onLoad.useState(false), 2);
+  let tmp2Result = onLoadStart(onLoad.useState(false), 2);
   const items15 = [sharedValue1, callback2, onProgress];
   const callback1Result = callback1(onLoad.useCallback(() => {
-    let current = ref.current;
+    let current = ref2.current;
     if (current == null) {
       current = sharedValue1.get() * first;
     }
-    const current1 = ref3.current;
+    const current1 = ref4.current;
     current1.push(current);
     callback4(current - 10);
     if (first2 === AdsVideoTypes.PlayerState.ENDED) {
@@ -633,7 +587,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   }, items18);
   const callback1Result1 = callback1(callback12);
   const items19 = [onError];
-  const tmp53 = initialProgress(tmp9[19]).useStateFromStores(items19, () => onError.getState()) === onEnd.ACTIVE;
+  const tmp53 = onBuffer(tmp9[17]).useStateFromStores(items19, () => onError.getState()) === onEnd.ACTIVE;
   const items20 = [videoRef];
   const layoutEffect = obj.useLayoutEffect(() => {
     if (obj.isAndroid()) {
@@ -648,8 +602,8 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
             }
           }
         } catch (tmp4) {
-          flag(flag2[21]).captureException(tmp4);
-          const obj2 = flag(flag2[21]);
+          closure_1(flag2[19]).captureException(tmp4);
+          const obj2 = closure_1(flag2[19]);
         }
       };
     }
@@ -657,116 +611,127 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
   }, items20);
   let tmp55 = !tmp53;
   if (tmp53) {
-    tmp55 = first2 === tmp8(tmp9[12]).PlayerState.PAUSED;
+    tmp55 = first2 === tmp8(tmp9[10]).PlayerState.PAUSED;
   }
   if (!tmp55) {
-    tmp55 = first2 === tmp8(tmp9[12]).PlayerState.LOADING;
+    tmp55 = first2 === tmp8(tmp9[10]).PlayerState.LOADING;
   }
   if (!tmp55) {
     tmp55 = externallyPaused;
   }
-  const tmp8Result8 = initialProgress(tmp9[19]);
-  ({ isBuffering, toggleBuffering } = first1({ onBuffer }));
-  const items21 = [toggleBuffering, first2];
-  const items22 = [toggleBuffering];
-  const callback17 = obj.useCallback((isBuffering) => {
+  importDefault = obj.useRef(false);
+  const tmp8Result8 = onBuffer(tmp9[17]);
+  [tmp57, flag2] = onLoadStart(onLoad.useState(false), 2);
+  const items21 = [onBuffer];
+  callback17 = obj.useCallback((current) => {
+    flag2(current);
+    if (current !== ref.current) {
+      ref.current = current;
+      if (onBuffer != null) {
+        onBuffer(current);
+      }
+    }
+  }, items21);
+  const items22 = [callback17, first2];
+  const items23 = [callback17];
+  const callback18 = obj.useCallback((isBuffering) => {
     isBuffering = isBuffering.isBuffering;
     if (!isBuffering) {
       if (!isBuffering) {
-        toggleBuffering(false);
+        callback17(false);
       }
     } else {
       if (first2 !== AdsVideoTypes.PlayerState.LOADING) {
-        const tmp2Result = tmp2(1368);
+        const tmp2Result = tmp2(1364);
       }
-      toggleBuffering(true);
+      callback17(true);
       tmp2 = require;
     }
-  }, items21);
-  const items23 = [toggleBuffering];
-  const callback18 = obj.useCallback(() => {
-    if (obj.isIOS()) {
-      toggleBuffering(true);
-    }
   }, items22);
+  const items24 = [callback17];
   const callback19 = obj.useCallback(() => {
     if (obj.isIOS()) {
-      toggleBuffering(false);
+      callback17(true);
     }
   }, items23);
-  rect = flag(tmp9[22])();
-  let tmp61 = isFullscreen;
+  const callback20 = obj.useCallback(() => {
+    if (obj.isIOS()) {
+      callback17(false);
+    }
+  }, items24);
+  rect = require("useSafeAreaInsets")();
+  let tmp63 = isFullscreen;
   if (isFullscreen) {
-    tmp61 = null != rect;
+    tmp63 = null != rect;
   }
-  if (tmp61) {
+  if (tmp63) {
     const obj6 = { paddingRight: null, paddingLeft: null };
     let _Math = Math;
     obj6.paddingRight = Math.max(rect.right, flag8.right);
     let _Math2 = Math;
     obj6.paddingLeft = Math.max(rect.left, flag8.left);
-    tmp61 = obj6;
+    tmp63 = obj6;
   }
   const obj7 = { style: null, accessible: false, children: null };
-  const items24 = [tmp.container, style];
-  obj7.style = items24;
+  const items25 = [tmp.container, style];
+  obj7.style = items25;
   const obj8 = { style: null, onPress: callback10, accessible: !shouldShowControlsResult, accessibilityLabel: null, children: null };
-  const items25 = [tmp.videoContainer];
-  obj8.style = items25;
-  const intl = tmp8(tmp9[23]).intl;
-  const t = tmp8(tmp9[23]).t;
+  const items26 = [tmp.videoContainer];
+  obj8.style = items26;
+  const intl = tmp8(tmp9[21]).intl;
+  const t = tmp8(tmp9[21]).t;
   obj8.accessibilityLabel = intl.string(tmp55 ? t.R3aFPe : t.fTMEUi);
-  let tmp64Result = first2 !== tmp8(tmp9[12]).PlayerState.ERRORED;
-  if (tmp64Result) {
-    const obj9 = { mixWithOthers: "inherit", httpEngine, automaticallyWaitsToMinimizeStalling, maxBitRate, bufferConfig, preferredForwardBufferDuration, ref: videoRef, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: tmp.video, paused: tmp55, repeat, source: initialProgress.source, onBuffer: callback17, onPlaybackStalled: callback18, onPlaybackResume: callback19, onLoad: callback5, onSeek: callback11, onProgress: callback13, onLoadStart: callback15, onEnd: callback14, onError: callback16, onReadyForDisplay: callback3, onVideoTracks, onLayout: onVideoLayout, resizeMode: "contain" };
-    tmp64Result = tmp64(repeat, obj9);
+  let tmp66Result = first2 !== tmp8(tmp9[10]).PlayerState.ERRORED;
+  if (tmp66Result) {
+    const obj9 = { mixWithOthers: "inherit", httpEngine, automaticallyWaitsToMinimizeStalling, maxBitRate, bufferConfig, preferredForwardBufferDuration, ref: videoRef, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: tmp.video, paused: tmp55, repeat, source: initialProgress.source, onBuffer: callback18, onPlaybackStalled: callback19, onPlaybackResume: callback20, onLoad: callback5, onSeek: callback11, onProgress: callback13, onLoadStart: callback15, onEnd: callback14, onError: callback16, onReadyForDisplay: callback3, onVideoTracks, onLayout: onVideoLayout, resizeMode: "contain" };
+    tmp66Result = tmp66(repeat, obj9);
   }
-  const items26 = [tmp64Result, , , , , ];
+  const items27 = [tmp66Result, , , , , ];
   let renderCaptionsResult;
   if (renderCaptions != null) {
     renderCaptionsResult = renderCaptions(first1.timestampSec);
   }
-  items26[1] = renderCaptionsResult;
-  if (!isBuffering) {
-    items26[2] = isBuffering;
-    let tmp64Result6 = !tmp27;
+  items27[1] = renderCaptionsResult;
+  if (!tmp57) {
+    items27[2] = tmp57;
+    let tmp66Result6 = !tmp27;
     if (!tmp27) {
-      const obj10 = { style: tmp.loadingContainer, children: tmp64(onSeek, { animating: true }) };
-      tmp64Result6 = tmp64(tmp65, obj10);
+      const obj10 = { style: tmp.loadingContainer, children: tmp66(onSeek, { animating: true }) };
+      tmp66Result6 = tmp66(tmp67, obj10);
     }
-    items26[3] = tmp64Result6;
+    items27[3] = tmp66Result6;
     const obj11 = { style: null, accessible: false, children: null };
-    const items27 = [tmp.controls, animatedStyle];
-    obj11.style = items27;
-    let tmp66Result = flag3;
+    const items28 = [tmp.controls, animatedStyle];
+    obj11.style = items28;
+    let tmp68Result = flag3;
     if (!flag3) {
-      tmp66Result = flag4;
+      tmp68Result = flag4;
     }
-    if (tmp66Result) {
+    if (tmp68Result) {
       const obj12 = { style: null, children: null };
-      const items28 = [, , ];
-      ({ controlsTopBottom: arr30[0], controlsTop: arr30[1] } = tmp);
-      items28[2] = tmp61;
-      obj12.style = items28;
+      const items29 = [, , ];
+      ({ controlsTopBottom: arr31[0], controlsTop: arr31[1] } = tmp);
+      items29[2] = tmp63;
+      obj12.style = items29;
       if (!flag3) {
-        const items29 = [flag3, ];
+        const items30 = [flag3, ];
         if (flag4) {
           const obj13 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-          const intl3 = tmp8(tmp9[23]).intl;
-          obj13.accessibilityLabel = intl3.string(tmp8(tmp9[23]).t.KCzjTi);
+          const intl3 = tmp8(tmp9[21]).intl;
+          obj13.accessibilityLabel = intl3.string(tmp8(tmp9[21]).t.KCzjTi);
           obj13.onPress = onOpenTranscript;
           obj13.style = tmp.controlButton;
           const obj14 = { color: tmp.iconDisabled.color };
-          obj13.children = tmp64(tmp8(tmp9[26]).TranscriptOutlineIcon, obj14);
-          flag4 = tmp64(tmp8(tmp9[24]).PressableOpacity, obj13);
+          obj13.children = tmp66(tmp8(tmp9[24]).TranscriptOutlineIcon, obj14);
+          flag4 = tmp66(tmp8(tmp9[22]).PressableOpacity, obj13);
         }
-        items29[1] = flag4;
-        obj12.children = items29;
-        tmp66Result = tmp66(tmp65, obj12);
+        items30[1] = flag4;
+        obj12.children = items30;
+        tmp68Result = tmp68(tmp67, obj12);
       } else {
         const obj15 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-        const intl2 = tmp8(tmp9[23]).intl;
-        obj15.accessibilityLabel = intl2.string(tmp8(tmp9[23]).t.bDSZO1);
+        const intl2 = tmp8(tmp9[21]).intl;
+        obj15.accessibilityLabel = intl2.string(tmp8(tmp9[21]).t.bDSZO1);
         obj15.onPress = onToggleCaptions;
         obj15.style = tmp.controlButton;
         if (captionsEnabled) {
@@ -775,88 +740,88 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
           color = tmp.iconDisabled.color;
         }
         const obj16 = { color };
-        obj15.children = tmp64(tmp8(tmp9[25]).ClosedCaptionsOutlineIcon, obj16);
-        tmp64(tmp8(tmp9[24]).PressableOpacity, obj15);
+        obj15.children = tmp66(tmp8(tmp9[23]).ClosedCaptionsOutlineIcon, obj16);
+        tmp66(tmp8(tmp9[22]).PressableOpacity, obj15);
       }
     }
-    const items30 = [tmp66Result, , ];
+    const items31 = [tmp68Result, , ];
     const obj17 = { style: tmp.controlsMiddle, children: null };
-    let tmp64Result8 = flag7;
+    let tmp66Result8 = flag7;
     if (flag7) {
-      const obj18 = { disabled: first2 === tmp8(tmp9[12]).PlayerState.ERRORED, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
-      const intl4 = tmp8(tmp9[23]).intl;
-      obj18.accessibilityLabel = intl4.string(tmp8(tmp9[23]).t.r9s3Uv);
+      const obj18 = { disabled: first2 === tmp8(tmp9[10]).PlayerState.ERRORED, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+      const intl4 = tmp8(tmp9[21]).intl;
+      obj18.accessibilityLabel = intl4.string(tmp8(tmp9[21]).t.r9s3Uv);
       obj18.onPress = callback1Result;
       const size = { color: tmp.icon.color, width: 16, height: 16 };
-      obj18.children = tmp64(tmp8(tmp9[28]).SkipBackwardIcon, size);
-      tmp64Result8 = tmp64(tmp8(tmp9[27]).VideoQuestPlayerControlButton, obj18);
+      obj18.children = tmp66(tmp8(tmp9[26]).SkipBackwardIcon, size);
+      tmp66Result8 = tmp66(tmp8(tmp9[25]).VideoQuestPlayerControlButton, obj18);
     }
-    const items31 = [tmp64Result8, , ];
+    const items32 = [tmp66Result8, , ];
     if (!tmp15) {
-      if (first2 !== tmp8(tmp9[12]).PlayerState.ERRORED) {
-        const t2 = tmp8(tmp9[23]).t;
+      if (first2 !== tmp8(tmp9[10]).PlayerState.ERRORED) {
+        const t2 = tmp8(tmp9[21]).t;
         let K0e7M9 = tmp55 ? t2.R3aFPe : t2.fTMEUi;
       }
-      const obj19 = { accessibilityRole: "button", accessibilityLabel: tmp78(K0e7M9), onPress: callback7, children: null };
+      const obj19 = { accessibilityRole: "button", accessibilityLabel: tmp80(K0e7M9), onPress: callback7, children: null };
       if (!tmp15) {
-        if (first2 !== tmp8(tmp9[12]).PlayerState.ERRORED) {
+        if (first2 !== tmp8(tmp9[10]).PlayerState.ERRORED) {
           if (tmp55) {
-            let PauseIcon = tmp8(tmp9[30]).PlayIcon;
+            let PauseIcon = tmp8(tmp9[28]).PlayIcon;
           } else {
-            PauseIcon = tmp8(tmp9[31]).PauseIcon;
+            PauseIcon = tmp8(tmp9[29]).PauseIcon;
           }
-          let tmp64Result9 = tmp64(PauseIcon, { size: "lg" });
+          let tmp66Result9 = tmp66(PauseIcon, { size: "lg" });
         }
-        obj19.children = tmp64Result9;
-        items31[1] = tmp64(tmp8(tmp9[27]).VideoQuestPlayerControlButton, obj19);
+        obj19.children = tmp66Result9;
+        items32[1] = tmp66(tmp8(tmp9[25]).VideoQuestPlayerControlButton, obj19);
         if (flag7) {
           const obj20 = { disabled: tmp39, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
-          const intl5 = tmp8(tmp9[23]).intl;
-          obj20.accessibilityLabel = intl5.string(tmp8(tmp9[23]).t.zWDcNP);
+          const intl5 = tmp8(tmp9[21]).intl;
+          obj20.accessibilityLabel = intl5.string(tmp8(tmp9[21]).t.zWDcNP);
           obj20.onPress = callback1Result1;
           const size1 = { color: tmp.icon.color, width: 16, height: 16 };
-          obj20.children = tmp64(tmp8(tmp9[32]).SkipForwardIcon, size1);
-          flag7 = tmp64(tmp8(tmp9[27]).VideoQuestPlayerControlButton, obj20);
+          obj20.children = tmp66(tmp8(tmp9[30]).SkipForwardIcon, size1);
+          flag7 = tmp66(tmp8(tmp9[25]).VideoQuestPlayerControlButton, obj20);
         }
-        items31[2] = flag7;
-        obj17.children = items31;
-        items30[1] = tmp66(tmp65, obj17);
+        items32[2] = flag7;
+        obj17.children = items32;
+        items31[1] = tmp68(tmp67, obj17);
         if (flag5) {
           const obj21 = { style: null, children: null };
-          const items32 = [, , ];
-          ({ controlsTopBottom: arr34[0], controlsBottom: arr34[1] } = tmp);
-          items32[2] = tmp61;
-          obj21.style = items32;
+          const items33 = [, , ];
+          ({ controlsTopBottom: arr35[0], controlsBottom: arr35[1] } = tmp);
+          items33[2] = tmp63;
+          obj21.style = items33;
           const obj22 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-          const intl6 = tmp8(tmp9[23]).intl;
-          obj22.accessibilityLabel = intl6.string(tmp8(tmp9[23]).t.vKZT5t);
+          const intl6 = tmp8(tmp9[21]).intl;
+          obj22.accessibilityLabel = intl6.string(tmp8(tmp9[21]).t.vKZT5t);
           obj22.onPress = onToggleFullscreen;
           obj22.style = tmp.controlButton;
-          obj22.children = tmp64(tmp8(tmp9[33]).FullscreenEnterIcon, {});
-          obj21.children = tmp64(tmp8(tmp9[24]).PressableOpacity, obj22);
-          flag5 = tmp64(tmp65, obj21);
+          obj22.children = tmp66(tmp8(tmp9[31]).FullscreenEnterIcon, {});
+          obj21.children = tmp66(tmp8(tmp9[22]).PressableOpacity, obj22);
+          flag5 = tmp66(tmp67, obj21);
         }
-        items30[2] = flag5;
-        obj11.children = items30;
-        items26[4] = tmp66(tmp60(tmp9[13]).View, obj11);
+        items31[2] = flag5;
+        obj11.children = items31;
+        items27[4] = tmp68(tmp62(tmp9[11]).View, obj11);
         if (flag6) {
           const obj23 = { style: tmp.progressContainer, children: null };
           const obj24 = { style: null };
-          const items33 = [tmp.progress, animatedStyle1];
-          obj24.style = items33;
-          obj23.children = tmp64(tmp60(tmp9[13]).View, obj24);
-          flag6 = tmp64(tmp65, obj23);
+          const items34 = [tmp.progress, animatedStyle1];
+          obj24.style = items34;
+          obj23.children = tmp66(tmp62(tmp9[11]).View, obj24);
+          flag6 = tmp66(tmp67, obj23);
         }
-        items26[5] = flag6;
-        obj8.children = items26;
-        obj7.children = tmp66(onProgress, obj8);
-        return tmp64(tmp65, obj7);
+        items27[5] = flag6;
+        obj8.children = items27;
+        obj7.children = tmp68(onProgress, obj8);
+        return tmp66(tmp67, obj7);
       }
-      tmp64Result9 = tmp64(tmp8(tmp9[29]).RetryIcon, { size: "lg" });
+      tmp66Result9 = tmp66(tmp8(tmp9[27]).RetryIcon, { size: "lg" });
     }
-    K0e7M9 = tmp8(tmp9[23]).t.K0e7M9;
+    K0e7M9 = tmp8(tmp9[21]).t.K0e7M9;
   } else {
-    let items34 = [tmp.bufferingSpinner, ];
+    let items35 = [tmp.bufferingSpinner, ];
     if (!isFullscreen) {
       if ("center" !== bufferingSpinnerPlacement) {
         let num4;
@@ -877,11 +842,11 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
         rect1.left = num5;
       }
       const obj25 = { animating: true, style: null, color: null };
-      items34[1] = rect1;
-      obj25.style = items34;
-      items34 = tmp60(tmp9[6]).unsafe_rawColors.WHITE;
-      obj25.color = items34;
-      tmp64(tmp71, obj25);
+      items35[1] = rect1;
+      obj25.style = items35;
+      items35 = tmp62(tmp9[6]).unsafe_rawColors.WHITE;
+      obj25.color = items35;
+      tmp66(tmp73, obj25);
     }
     rect1 = tmp.bufferingSpinnerCentered;
   }

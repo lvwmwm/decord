@@ -1,7 +1,10 @@
 // Module ID: 8619
 // Function ID: 8620
-// Dependencies: []
+// Dependencies: [4617]
 
 // Module 8619
+import emptyFunction from "module_4617" /* 4617 */;
 
-export default { NONE: "", INVERT: "CIColorInvert", MONOCHROME: "CIColorMonochrome", POSTERIZE: "CIColorPosterize", FALSE: "CIFalseColor", MAXIMUMCOMPONENT: "CIMaximumComponent", MINIMUMCOMPONENT: "CIMinimumComponent", CHROME: "CIPhotoEffectChrome", FADE: "CIPhotoEffectFade", INSTANT: "CIPhotoEffectInstant", MONO: "CIPhotoEffectMono", NOIR: "CIPhotoEffectNoir", PROCESS: "CIPhotoEffectProcess", TONAL: "CIPhotoEffectTonal", TRANSFER: "CIPhotoEffectTransfer", SEPIA: "CISepiaTone" };
+const rect = { top: emptyFunction.number, left: emptyFunction.number, bottom: emptyFunction.number, right: emptyFunction.number };
+
+export default emptyFunction.shape(rect);

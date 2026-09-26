@@ -1,12 +1,12 @@
-// Module ID: 1246
-// Function ID: 1247
+// Module ID: 1242
+// Function ID: 1243
 // Name: ImpressionStore
-// Dependencies: [1247, 1252, 1253, 2]
+// Dependencies: [1243, 1248, 1249, 2]
 // Exports: cleanupImpression, getImpressionStack, getLocation, setCurrentImpression, setDebugTrackedData
 
-// Module 1246 (ImpressionStore)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import identity from "module_1247" /* 1247 */;
+// Module 1242 (ImpressionStore)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

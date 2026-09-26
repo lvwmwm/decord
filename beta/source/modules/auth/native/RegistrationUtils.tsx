@@ -1,14 +1,14 @@
-// Module ID: 16298
-// Function ID: 16299
+// Module ID: 16288
+// Function ID: 16289
 // Name: RegistrationUtils
-// Dependencies: [19, 4774, 9049, 16290, 16291, 1078, 21, 1245, 558, 568, 16287, 5880, 2]
-// Exports: getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
+// Dependencies: [19, 4772, 9051, 16280, 16281, 1074, 21, 1241, 16277, 5880, 2]
+// Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 16298 (RegistrationUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+// Module 16288 (RegistrationUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
-import InviteStore from "InviteStore" /* 4774 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9049 */;
+import InviteStore from "InviteStore" /* 4772 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9051 */;
 
 const require = globalThis.__r;
 
@@ -67,7 +67,7 @@ function trackRegTransition(overrideRegistrationOptions) {
   obj2.invite_channel_type = type;
   let id1;
   if (invite != null) {
-    guild = invite.guild;
+    const guild = invite.guild;
     if (guild != null) {
       id1 = guild.id;
     }
@@ -85,13 +85,12 @@ function trackRegTransition(overrideRegistrationOptions) {
   obj2.to_step = toStep;
   AnalyticsUtilsDefault.track(AnalyticEvents.REGISTER_TRANSITION, obj2);
 }
-const RegistrationUIStore = fn(16290);
+const RegistrationUIStore = fn(16280);
 ({ clearRegistrationErrorMessage: metroRequire, useRegistrationUIStore: closure_7 } = RegistrationUIStore);
-const RegistrationConstants = fn(16291);
+const RegistrationConstants = fn(16281);
 ({ RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: closure_9 } = RegistrationConstants);
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/RegistrationUtils.tsx");
 
@@ -146,46 +145,7 @@ export function getTrackRegTransition(arg0) {
     return tmp9;
   };
 }
-export const BackButtonWithTracking = ReactCompilerGating.isReactCompilerEnabled() ? ((destinationStep) => {
-  const cResult = context(onPress[9]).c(7);
-  context = noop.useContext(context(onPress[10]).TrackRegistrationContext);
-  destinationStep = destinationStep.destinationStep;
-  onPress = destinationStep.onPress;
-  if (cResult[0] === destinationStep) {
-    if (cResult[1] === onPress) {
-      if (cResult[2] === context) {
-        let tmp5 = cResult[3];
-      }
-      if (cResult[4] === tmp5) {
-        if (cResult[5] === destinationStep) {
-          let tmp6 = cResult[6];
-        }
-        return tmp6;
-      }
-      const obj2 = {};
-      const merged = Object.assign(destinationStep);
-      obj2.onPress = tmp5;
-      const tmp11 = jsx(context(onPress[11]).HeaderBackButton, {});
-      cResult[4] = tmp5;
-      cResult[5] = destinationStep;
-      cResult[6] = tmp11;
-      tmp6 = tmp11;
-    }
-  }
-  const fn = function o() {
-    if (null != onPress) {
-      timestampProducer();
-      const obj = { step: destinationStep, actionType: constants2.VIEWED };
-      context(obj);
-      tmp();
-    }
-  };
-  cResult[0] = destinationStep;
-  cResult[1] = onPress;
-  cResult[2] = context;
-  cResult[3] = fn;
-  tmp5 = fn;
-}) : ((arg0) => {
+export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
   _require = noop.useContext(require("Auth").TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
   let obj = {};
@@ -199,7 +159,7 @@ export const BackButtonWithTracking = ReactCompilerGating.isReactCompilerEnabled
     }
   };
   return jsx(require("module_5880").HeaderBackButton, {});
-});
+};
 export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {
     const _HermesInternal7 = HermesInternal;

@@ -1,17 +1,17 @@
-// Module ID: 8358
-// Function ID: 8359
+// Module ID: 8353
+// Function ID: 8354
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8359, 7733, 7729, 1378, 1078, 1368, 577, 1245, 1275, 8360, 1235, 4611, 2031, 2028, 2]
+// Dependencies: [5, 8354, 7728, 7724, 1374, 1074, 1364, 573, 1241, 1271, 8355, 1231, 4608, 2027, 2024, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8358 (UserOfferActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
+// Module 8353 (UserOfferActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8359 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7733 */;
-import UserOfferStore from "UserOfferStore" /* 7729 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8354 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7728 */;
+import UserOfferStore from "UserOfferStore" /* 7724 */;
 
 const require = globalThis.__r;
 
@@ -39,7 +39,7 @@ let closure_12 = async function _fetchUserOffer(arg0, value) {
       const obj5 = { value, done: true };
       return obj5;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -67,7 +67,7 @@ let closure_12 = async function _fetchUserOffer(arg0, value) {
           closure_136_1 = flag;
           let obj8 = closure_2;
           if (closure_2 === undefined) {
-            obj8 = { offerId: "state", paymentGatewayOverride: "toCharArray$esjava$1" };
+            obj8 = { offerId: "y", paymentGatewayOverride: "w" };
           }
           closure_136_2 = obj8;
           closure_136_3 = closure_3;
@@ -83,7 +83,7 @@ let closure_12 = async function _fetchUserOffer(arg0, value) {
           closure_136_13 = undefined;
           c12 = 1;
           c13 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -235,7 +235,7 @@ let closure_13 = async function _fetchExistingChurnDiscountOffer() {
   const HTTP = require("HTTPUtils").HTTP;
   await HTTP.get({ url: constants.CHURN_USER_OFFER, rejectWithError: true });
   closure_130_1(closure_130_2[7]).dispatch({ type: "BILLING_USER_OFFER_FETCH_FAIL" });
-  await "IconComponent";
+  await "HermesInternal";
   const offer = arg1.body.offer;
   c0 = offer;
   if (offer == null) {
@@ -277,8 +277,8 @@ let closure_14 = async function _fetchChurnDiscountOffer() {
   }
   return arg1;
 };
-let closure_7 = fn(1378).PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
-const Constants = fn(1078);
+let closure_7 = fn(1374).PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, Endpoints: closure_9, PaymentGateways: c10 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/UserOfferActionCreators.tsx");
@@ -383,13 +383,13 @@ export const triggerUserOffer = function triggerUserOffer(triggerType, trigger_l
       if (postResultResult.isIOS()) {
         GOOGLE = constants2.APPLE;
       }
-      postResultResult = postResult(1368);
+      postResultResult = postResult(1364);
     }
     const obj5 = { payment_gateway: GOOGLE, trigger_type: _JSON, trigger_location_stack, trigger_metadata: null, trigger_uptime_app: null };
     _JSON = JSON;
     obj5.trigger_metadata = JSON.stringify(tmp5);
     obj5.trigger_uptime_app = UserOfferStore.getUptimeForTrigger();
-    const HTTP = postResult(1275).HTTP;
+    const HTTP = postResult(1271).HTTP;
     const request = { url: constants.USER_OFFER_TRIGGER, body: obj5, rejectWithError: true };
     postResult = HTTP.post(request);
     then = postResult.then;

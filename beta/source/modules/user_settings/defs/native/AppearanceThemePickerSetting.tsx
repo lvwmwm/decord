@@ -1,64 +1,28 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 15540
+// Function ID: 15541
 // Name: AppearanceThemePickerSetting
-// Dependencies: [1186, 8270, 1078, 558, 568, 504, 11630, 1119, 15530, 15537, 2]
+// Dependencies: [1182, 8265, 1074, 504, 11754, 1115, 15534, 15541, 2]
 
-// Module 15536 (AppearanceThemePickerSetting)
+// Module 15540 (AppearanceThemePickerSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import ThemeStore from "ThemeStore" /* 1186 */;
+import util from "util" /* 1115 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11630);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ThemeStore];
-    const fn = function s() {
-      return sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return !initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
-  const items = [ThemeStore];
-  return !initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
-});
+const SettingBuilders = fn(11754);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.Ksh3ik);
   },
-  parent: fn(8270).MobileUserSettings.APPEARANCE,
-  usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(2);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [ThemeStore];
-      const fn = function s() {
-        return sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled();
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp4 = items;
-      tmp5 = fn;
-    } else {
-      [tmp4, tmp5] = cResult;
-    }
-    return !initialize.useStateFromStores(tmp4, tmp5);
-  }) : (() => {
+  parent: fn(8265).MobileUserSettings.APPEARANCE,
+  usePredicate: function useIsSingleThemePickerVisible() {
     const items = [ThemeStore];
     return !initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
-  }),
-  useTrailing: fn(15530).useAppearanceSettingTrailing,
+  },
+  useTrailing: fn(15534).useAppearanceSettingTrailing,
   screen: {
-    route: fn(1078).UserSettingsSections.APPEARANCE_THEME_PICKER,
+    route: fn(1074).UserSettingsSections.APPEARANCE_THEME_PICKER,
     getComponent() {
       return require("SettingsAppearanceThemePickerScreen").default;
     }

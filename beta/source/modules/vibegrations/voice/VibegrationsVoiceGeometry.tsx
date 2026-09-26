@@ -1,10 +1,10 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 14772
+// Function ID: 14773
 // Name: VibegrationsVoiceGeometry
 // Dependencies: [2]
 // Exports: toListenerRelativePosition
 
-// Module 14782 (VibegrationsVoiceGeometry)
+// Module 14772 (VibegrationsVoiceGeometry)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/voice/VibegrationsVoiceGeometry.tsx");

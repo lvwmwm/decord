@@ -1,24 +1,24 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9435
+// Function ID: 9436
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9434, 2006, 9550, 1078, 5244, 4783, 1119, 9165, 9552, 1368, 1982, 7802, 9553, 7955, 7735, 5142, 1401, 9551, 9559, 7800, 9560, 2]
+// Dependencies: [109, 5, 9436, 2002, 9554, 1074, 5242, 4781, 1115, 9167, 9556, 1364, 1978, 7797, 9557, 7950, 7730, 5140, 1397, 9555, 9563, 7795, 9564, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 9433 (AppLauncherUtils)
-import util from "util" /* 1119 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import Server from "Server" /* 1982 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7800 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9165 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9551 */;
-import getPlatformDefault from "getPlatform" /* 9552 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 9560 */;
+// Module 9435 (AppLauncherUtils)
+import util from "util" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import Server from "Server" /* 1978 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7795 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9167 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9555 */;
+import getPlatformDefault from "getPlatform" /* 9556 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 9564 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9434 */;
-import ApplicationRecord from "ApplicationRecord" /* 2006 */;
-import AppLauncherStore from "AppLauncherStore" /* 9550 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9436 */;
+import ApplicationRecord from "ApplicationRecord" /* 2002 */;
+import AppLauncherStore from "AppLauncherStore" /* 9554 */;
 
 const require = globalThis.__r;
 
@@ -68,9 +68,9 @@ function getShelfBadgeTypeIfActive(application) {
   NONE = Server.EmbeddedActivityLabelTypes.NONE;
 }
 let closure_3 = ["fakeAppIconURL"];
-const ApplicationFlags = fn(1078).ApplicationFlags;
-const BuiltInSectionId = fn(5244).BuiltInSectionId;
-const MessageSendLocation = fn(4783).MessageSendLocation;
+const ApplicationFlags = fn(1074).ApplicationFlags;
+const BuiltInSectionId = fn(5242).BuiltInSectionId;
+const MessageSendLocation = fn(4781).MessageSendLocation;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
 
@@ -87,9 +87,9 @@ export const getSectionName = function getSectionName(FAKE_BUILT_IN_APP) {
   }
   return name;
 };
-export const getSectionDescription = function getSectionDescription(application) {
-  if (application.id !== BuiltInSectionId.BUILT_IN) {
-    let description = application.description;
+export const getSectionDescription = function getSectionDescription(FAKE_BUILT_IN_APP) {
+  if (FAKE_BUILT_IN_APP.id !== BuiltInSectionId.BUILT_IN) {
+    let description = FAKE_BUILT_IN_APP.description;
   } else {
     const intl = util.intl;
     description = intl.string(util.t.X9fusn);
@@ -157,7 +157,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp39) {
         commandTargetId = tmp39;
@@ -293,8 +293,8 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
   }
   return null != tmp2 && tmp2.displays_advertisements;
 };
-export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
-  return entrypoint === AppLauncherTypes.AppLauncherEntrypoint.TEXT;
+export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(initialSearchQuery) {
+  return initialSearchQuery === AppLauncherTypes.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
@@ -306,9 +306,9 @@ export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPoi
   }
   return str;
 };
-export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(stateFromStores) {
+export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(entrypoint) {
   const items = [];
-  const iter = stateFromStores[Symbol.iterator]();
+  const iter = entrypoint[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let prop = nextResult.application_directory_collection_items;

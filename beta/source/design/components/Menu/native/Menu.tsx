@@ -1,27 +1,27 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14430
+// Function ID: 14431
 // Name: Menu
-// Dependencies: [32, 19, 17, 1078, 21, 14430, 4790, 580, 4529, 4513, 1616, 1482, 1368, 4504, 1119, 5214, 4791, 14434, 14428, 5219, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 14420, 4788, 576, 4524, 4508, 1612, 1478, 1364, 4499, 1115, 5212, 4789, 14424, 14418, 5217, 2]
 // Exports: Menu
 
-// Module 14440 (Menu)
-import nativeDefault from "native" /* 580 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
-import timing from "timing" /* 4791 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5214 */;
-import spring from "spring" /* 5219 */;
+// Module 14430 (Menu)
+import nativeDefault from "native" /* 576 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import timing from "timing" /* 4789 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5212 */;
+import spring from "spring" /* 5217 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const NOOP = fn(1078).NOOP;
+const NOOP = fn(1074).NOOP;
 const jsx = fn(21).jsx;
 let closure_8 = { mass: 1, stiffness: 300, damping: 25, restSpeedThreshold: 0.01, restDisplacementThreshold: 0.01 };
-let __closure = { duration: 250, easing: fn(14430).STANDARD_EASING };
-const createStyles = fn(4790);
+let __closure = { duration: 250, easing: fn(14420).STANDARD_EASING };
+const createStyles = fn(4788);
 let obj2 = { backdrop: null, menu: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -38,7 +38,7 @@ function measureButtonRef(arg0, arg1) {
   }
 }
 let obj5 = { position: "absolute", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, width: 220 };
-measureButtonRef.__closure = { measure: fn(4529).measure, runOnJS: fn(4529).runOnJS };
+measureButtonRef.__closure = { measure: fn(4524).measure, runOnJS: fn(4524).runOnJS };
 measureButtonRef.__workletHash = 15651320687527;
 measureButtonRef.__initData = { code: "function measureButtonRef_MenuTsx1(ref,setDimensions){const{measure,runOnJS}=this.__closure;const measurements=measure(ref);if(measurements==null)return;runOnJS(setDimensions)(measurements);}" };
 let closure_13 = { code: "function MenuTsx2(){const{runOnJS,openMenuCallback}=this.__closure;return runOnJS(openMenuCallback)();}" };
@@ -68,9 +68,9 @@ export const Menu = function Menu(toggleButtonRef) {
   redux = undefined;
   function openMenuCallback() {
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(4504).AccessibilityAnnouncer;
-      const intl = tmp(1119).intl;
-      AccessibilityAnnouncer.announce(intl.string(tmp(1119).t.ZqK0uI));
+      const AccessibilityAnnouncer = tmp(4499).AccessibilityAnnouncer;
+      const intl = tmp(1115).intl;
+      AccessibilityAnnouncer.announce(intl.string(tmp(1115).t.ZqK0uI));
     }
     obj = PlatformUtils;
     const result = setAccessibilityFocus.setAccessibilityFocus({ ref });
@@ -328,13 +328,13 @@ export const Menu = function Menu(toggleButtonRef) {
   let obj7 = { children: null };
   let obj8 = { value: { menuClose: handleClose, menuDismiss: handleDismiss }, children: null };
   const Children = tmp2.Children;
-  obj8.children = Children.map(children, (label, arg1) => {
-    let cloneElementResult = label;
+  obj8.children = Children.map(children, (icon, arg1) => {
+    let cloneElementResult = icon;
     if (0 === arg1) {
-      cloneElementResult = label;
-      if (noop.isValidElement(label)) {
+      cloneElementResult = icon;
+      if (noop.isValidElement(icon)) {
         const obj2 = { ref };
-        cloneElementResult = obj.cloneElement(label, obj2);
+        cloneElementResult = obj.cloneElement(icon, obj2);
       }
       obj = noop;
     }

@@ -1,28 +1,18 @@
-// Module ID: 16704
-// Function ID: 16705
+// Module ID: 16695
+// Function ID: 16696
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 4612, 1078, 1378, 21, 4790, 10231, 1984, 12891, 7491, 9457, 7461, 558, 568, 16645, 14023, 504, 16660, 1119, 16705, 580, 11494, 2]
+// Dependencies: [5, 19, 17, 4609, 1074, 1374, 21, 4788, 9811, 1980, 12990, 7489, 9459, 7459, 16636, 14013, 504, 16651, 1115, 16696, 11499, 576, 2]
 
-// Module 16704 (GuildsBarCreateJoinButton)
-import nativeDefault from "native" /* 580 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16645 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16660 */;
+// Module 16695 (GuildsBarCreateJoinButton)
+import nativeDefault from "native" /* 576 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16636 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16651 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
 
 const require = fn;
-function handleCreateJoinGuildPress() {
-  const self = this;
-  const apply = closure_15.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-}
-let closure_15 = async function _handleCreateJoinGuildPress(arg0, value) {
+let closure_14 = async function _handleCreateJoinGuildPress(arg0, value) {
   if (c3 === 2) {
     c3 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -33,7 +23,7 @@ let closure_15 = async function _handleCreateJoinGuildPress(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -104,129 +94,21 @@ let closure_15 = async function _handleCreateJoinGuildPress(arg0, value) {
   }
 };
 const View = fn(17).View;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticsPages: closure_7, MOBILE_GUILD_UPSELL_LIST: closure_8, TooltipNames: closure_9, UpsellTypes: c10 } = Constants);
-const PremiumUpsellTypes = fn(1378).PremiumUpsellTypes;
+const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_13 = createStyles.createStyles({ stretch: { alignSelf: "stretch" } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = enabled(568).c(17);
-  const tmp4 = closure_13();
-  const obj = enabled(568);
-  const guildsBarAnimatedWrapperStyles = enabled(16645).useGuildsBarAnimatedWrapperStyles();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { location: "GuildsBarCreateJoinButton" };
-    cResult[0] = obj3;
-    let first = obj3;
-  } else {
-    first = cResult[0];
-  }
-  const GameCommunityAddServerEntryExperiment = tmp(14023).GameCommunityAddServerEntryExperiment;
-  enabled = GameCommunityAddServerEntryExperiment.useConfig(first).enabled;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectedGuildStore];
-    const fn = function _() {
-      return guildId.getGuildId() === closure_1_8;
-    };
-    cResult[1] = items;
-    cResult[2] = fn;
-    let tmp8 = fn;
-    let tmp7 = items;
-  } else {
-    tmp7 = cResult[1];
-    tmp8 = cResult[2];
-  }
-  const obj2 = enabled(16645);
-  let stateFromStores = enabled;
-  if (enabled) {
-    stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
-  }
-  if (cResult[3] !== enabled) {
-    const obj4 = {
-      onPress() {
-          if (enabled) {
-            if (!obj.isAtGuildCapAndNonPremium()) {
-              transitionGuildsBarToGuildOrOpenSelectedChannelDefault(closure_2_8);
-            }
-          }
-          handleCreateJoinGuildPress();
-        }
-    };
-    cResult[3] = enabled;
-    cResult[4] = obj4;
-    let tmp11 = obj4;
-  } else {
-    tmp11 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.l5WIbf);
-    const tmp16 = jsx(tmp(16705).HomeDrawerAddServerRowExpandedChildren, {});
-    cResult[5] = stringResult;
-    cResult[6] = tmp16;
-    let tmp13 = tmp16;
-    let tmp12 = stringResult;
-  } else {
-    tmp12 = cResult[5];
-    tmp13 = cResult[6];
-  }
-  const colors = nativeDefault.colors;
-  if (stateFromStores) {
-    let MOBILE_GUILDBAR_ICON_DEFAULT = colors.WHITE;
-    let tmp18 = tmp17;
-  } else {
-    MOBILE_GUILDBAR_ICON_DEFAULT = colors.MOBILE_GUILDBAR_ICON_DEFAULT;
-    tmp18 = tmp17;
-  }
-  if (cResult[7] !== MOBILE_GUILDBAR_ICON_DEFAULT) {
-    const obj5 = { size: "md", color: MOBILE_GUILDBAR_ICON_DEFAULT };
-    const tmp21 = jsx(tmp(11494).CirclePlusIcon, { size: "md", color: MOBILE_GUILDBAR_ICON_DEFAULT });
-    cResult[7] = MOBILE_GUILDBAR_ICON_DEFAULT;
-    cResult[8] = tmp21;
-    let tmp19 = tmp21;
-  } else {
-    tmp19 = cResult[8];
-  }
-  if (cResult[9] === tmp11) {
-    if (cResult[10] === stateFromStores) {
-      if (cResult[11] === tmp19) {
-        if (cResult[12] === guildsBarAnimatedWrapperStyles) {
-          let tmp22 = cResult[13];
-        }
-        if (cResult[14] === tmp4.stretch) {
-          if (cResult[15] === tmp22) {
-            let tmp24 = cResult[16];
-          }
-          return tmp24;
-        }
-        const obj6 = { style: tmp4.stretch, children: tmp22 };
-        const tmp27 = <View style={tmp4.stretch}>{tmp22}</View>;
-        cResult[14] = tmp4.stretch;
-        cResult[15] = tmp22;
-        cResult[16] = tmp27;
-        tmp24 = tmp27;
-      }
-    }
-  }
-  const obj7 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp11, label: tmp12, expandedChildren: tmp13, children: tmp19 };
-  const tmp23 = jsx(tmp18(16645), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp11, label: tmp12, expandedChildren: tmp13, children: tmp19 });
-  cResult[9] = tmp11;
-  cResult[10] = stateFromStores;
-  cResult[11] = tmp19;
-  cResult[12] = guildsBarAnimatedWrapperStyles;
-  cResult[13] = tmp23;
-  tmp22 = tmp23;
-}) : (() => {
+export default noop.memo(function GuildsBarCreateJoinButton() {
   const tmp = closure_13();
-  const obj = enabled(16645);
-  const GameCommunityAddServerEntryExperiment = enabled(14023).GameCommunityAddServerEntryExperiment;
+  const obj = enabled(16636);
+  const GameCommunityAddServerEntryExperiment = enabled(14013).GameCommunityAddServerEntryExperiment;
   enabled = GameCommunityAddServerEntryExperiment.useConfig({ location: "GuildsBarCreateJoinButton" }).enabled;
-  const guildsBarAnimatedWrapperStyles = enabled(16645).useGuildsBarAnimatedWrapperStyles();
+  const guildsBarAnimatedWrapperStyles = enabled(16636).useGuildsBarAnimatedWrapperStyles();
   const items = [SelectedGuildStore];
   let stateFromStores = enabled;
   if (enabled) {
@@ -241,16 +123,25 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           transitionGuildsBarToGuildOrOpenSelectedChannelDefault(closure_2_8);
         }
       }
-      handleCreateJoinGuildPress();
+      (function handleCreateJoinGuildPress() {
+        const self = this;
+        const apply = closure_1_14.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })();
     }
   }), items1);
-  const obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: "destructive", expandedChildren: null, children: null };
+  const obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: 1, expandedChildren: "relative", children: "transparent" };
   obj2 = enabled(504);
-  const intl = tmp2(1119).intl;
-  obj4.label = intl.string(enabled(1119).t.l5WIbf);
-  obj4.expandedChildren = jsx(enabled(16705).HomeDrawerAddServerRowExpandedChildren, {});
+  const intl = tmp2(1115).intl;
+  obj4.label = intl.string(enabled(1115).t.l5WIbf);
+  obj4.expandedChildren = jsx(enabled(16696).HomeDrawerAddServerRowExpandedChildren, {});
   const colors = nativeDefault.colors;
-  obj4.children = jsx(enabled(11494).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
-  obj3.children = jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: "destructive", expandedChildren: null, children: null });
+  obj4.children = jsx(enabled(11499).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
+  obj3.children = jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: 1, expandedChildren: "relative", children: "transparent" });
   return <tmp8 style={tmp.stretch}>{null}</tmp8>;
-}));
+});

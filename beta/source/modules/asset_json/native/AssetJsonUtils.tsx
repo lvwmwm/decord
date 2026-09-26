@@ -1,10 +1,14 @@
-// Module ID: 1123
-// Function ID: 1124
+// Module ID: 1119
+// Function ID: 1120
 // Name: AssetJsonUtils
-// Dependencies: [5, 17, 1124, 1126, 1127, 1128, 1129, 1130, 1131, 1132, 1133, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 1149, 1150, 1151, 1152, 1153, 1154, 1155, 2]
+// Dependencies: [5, 17, 1120, 1122, 1123, 1124, 1125, 1126, 1127, 1128, 1129, 1130, 1131, 1132, 1133, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 1149, 1150, 1151, 2]
 
-// Module 1123 (AssetJsonUtils)
+// Module 1119 (AssetJsonUtils)
+import _mod1120 from "module_1120" /* 1120 */;
+import _mod1122 from "module_1122" /* 1122 */;
+import _mod1123 from "module_1123" /* 1123 */;
 import _mod1124 from "module_1124" /* 1124 */;
+import _mod1125 from "module_1125" /* 1125 */;
 import _mod1126 from "module_1126" /* 1126 */;
 import _mod1127 from "module_1127" /* 1127 */;
 import _mod1128 from "module_1128" /* 1128 */;
@@ -30,10 +34,6 @@ import _mod1147 from "module_1147" /* 1147 */;
 import _mod1148 from "module_1148" /* 1148 */;
 import _mod1149 from "module_1149" /* 1149 */;
 import _mod1150 from "module_1150" /* 1150 */;
-import _mod1151 from "module_1151" /* 1151 */;
-import _mod1152 from "module_1152" /* 1152 */;
-import _mod1153 from "module_1153" /* 1153 */;
-import _mod1154 from "module_1154" /* 1154 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -58,7 +58,7 @@ let closure_7 = async function _loadJsonAsset(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -86,7 +86,7 @@ let closure_7 = async function _loadJsonAsset(arg0, value) {
           closure_130_4 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -151,94 +151,94 @@ const result = size.fileFinishedImporting("modules/asset_json/native/AssetJsonUt
 
 export const jsonAssets = {
   i18n_bg() {
-    return loadJsonAsset(_mod1124);
+    return loadJsonAsset(_mod1120);
   },
   i18n_cs() {
-    return loadJsonAsset(_mod1126);
+    return loadJsonAsset(_mod1122);
   },
   i18n_da() {
-    return loadJsonAsset(_mod1127);
+    return loadJsonAsset(_mod1123);
   },
   i18n_de() {
-    return loadJsonAsset(_mod1128);
+    return loadJsonAsset(_mod1124);
   },
   i18n_el() {
-    return loadJsonAsset(_mod1129);
+    return loadJsonAsset(_mod1125);
   },
   i18n_enGB() {
-    return loadJsonAsset(_mod1130);
+    return loadJsonAsset(_mod1126);
   },
   i18n_esES() {
-    return loadJsonAsset(_mod1131);
+    return loadJsonAsset(_mod1127);
   },
   i18n_es419() {
-    return loadJsonAsset(_mod1132);
+    return loadJsonAsset(_mod1128);
   },
   i18n_fi() {
-    return loadJsonAsset(_mod1133);
+    return loadJsonAsset(_mod1129);
   },
   i18n_fr() {
-    return loadJsonAsset(_mod1134);
+    return loadJsonAsset(_mod1130);
   },
   i18n_hr() {
-    return loadJsonAsset(_mod1135);
+    return loadJsonAsset(_mod1131);
   },
   i18n_hu() {
-    return loadJsonAsset(_mod1136);
+    return loadJsonAsset(_mod1132);
   },
   i18n_it() {
-    return loadJsonAsset(_mod1137);
+    return loadJsonAsset(_mod1133);
   },
   i18n_ja() {
-    return loadJsonAsset(_mod1138);
+    return loadJsonAsset(_mod1134);
   },
   i18n_ko() {
-    return loadJsonAsset(_mod1139);
+    return loadJsonAsset(_mod1135);
   },
   i18n_lt() {
-    return loadJsonAsset(_mod1140);
+    return loadJsonAsset(_mod1136);
   },
   i18n_nl() {
-    return loadJsonAsset(_mod1141);
+    return loadJsonAsset(_mod1137);
   },
   i18n_no() {
-    return loadJsonAsset(_mod1142);
+    return loadJsonAsset(_mod1138);
   },
   i18n_pl() {
-    return loadJsonAsset(_mod1143);
+    return loadJsonAsset(_mod1139);
   },
   i18n_ptBR() {
-    return loadJsonAsset(_mod1144);
+    return loadJsonAsset(_mod1140);
   },
   i18n_ro() {
-    return loadJsonAsset(_mod1145);
+    return loadJsonAsset(_mod1141);
   },
   i18n_ru() {
-    return loadJsonAsset(_mod1146);
+    return loadJsonAsset(_mod1142);
   },
   i18n_svSE() {
-    return loadJsonAsset(_mod1147);
+    return loadJsonAsset(_mod1143);
   },
   i18n_th() {
-    return loadJsonAsset(_mod1148);
+    return loadJsonAsset(_mod1144);
   },
   i18n_tr() {
-    return loadJsonAsset(_mod1149);
+    return loadJsonAsset(_mod1145);
   },
   i18n_uk() {
-    return loadJsonAsset(_mod1150);
+    return loadJsonAsset(_mod1146);
   },
   i18n_vi() {
-    return loadJsonAsset(_mod1151);
+    return loadJsonAsset(_mod1147);
   },
   i18n_zhCN() {
-    return loadJsonAsset(_mod1152);
+    return loadJsonAsset(_mod1148);
   },
   i18n_zhTW() {
-    return loadJsonAsset(_mod1153);
+    return loadJsonAsset(_mod1149);
   },
   i18n_hi() {
-    return loadJsonAsset(_mod1154);
+    return loadJsonAsset(_mod1150);
   }
 };
 export { loadJsonAsset };

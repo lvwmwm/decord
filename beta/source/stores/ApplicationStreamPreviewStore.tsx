@@ -1,14 +1,14 @@
-// Module ID: 4934
-// Function ID: 4935
+// Module ID: 4932
+// Function ID: 4933
 // Name: ApplicationStreamPreviewStore
-// Dependencies: [4832, 12, 4842, 504, 577, 2]
+// Dependencies: [4830, 12, 4840, 504, 573, 2]
 
-// Module 4934 (ApplicationStreamPreviewStore)
+// Module 4932 (ApplicationStreamPreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import Constants from "Constants" /* 4832 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4842 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 4830 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4840 */;
 import size from "module_2" /* 2 */;
 
 function reset() {

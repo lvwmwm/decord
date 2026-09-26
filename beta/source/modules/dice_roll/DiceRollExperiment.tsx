@@ -1,10 +1,10 @@
-// Module ID: 9546
-// Function ID: 9547
+// Module ID: 9550
+// Function ID: 9551
 // Name: DiceRollExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 9546 (DiceRollExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 9550 (DiceRollExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-05-dice-roll-slash-command", defaultConfig: { enabled: false }, variations: null };

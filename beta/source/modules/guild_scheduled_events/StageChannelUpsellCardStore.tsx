@@ -1,16 +1,15 @@
-// Module ID: 9825
-// Function ID: 9826
+// Module ID: 9847
+// Function ID: 9848
 // Name: StageChannelUpsellCardStore
-// Dependencies: [2051, 1247, 510, 1252, 558, 568, 4415, 2]
+// Dependencies: [2047, 1243, 510, 1248, 4411, 2]
+// Exports: useStageChannelUpsellCardStore
 
-// Module 9825 (StageChannelUpsellCardStore)
+// Module 9847 (StageChannelUpsellCardStore)
 import Storage2 from "Storage" /* 510 */;
-import c from "c" /* 568 */;
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import _mod4415 from "module_4415" /* 4415 */;
-import identity from "module_1247" /* 1247 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2047 */;
+import _mod4411 from "module_4411" /* 4411 */;
+import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,22 +29,10 @@ let closure_3 = identity.createWithEqualityFn((arg0) => {
 });
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/StageChannelUpsellCardStore.tsx");
 
-export const useStageChannelUpsellCardStore = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l(arg0) {
-      const items = [, ];
-      ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
-      return items;
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_3(first, _mod4415.shallow);
-}) : (() => closure_3((arg0) => {
-  const items = [, ];
-  ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
-  return items;
-}, _mod4415.shallow));
+export const useStageChannelUpsellCardStore = function useStageChannelUpsellCardStore() {
+  return closure_3((arg0) => {
+    const items = [, ];
+    ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
+    return items;
+  }, _mod4411.shallow);
+};

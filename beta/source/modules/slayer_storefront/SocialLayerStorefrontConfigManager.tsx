@@ -1,11 +1,11 @@
-// Module ID: 14049
-// Function ID: 14050
+// Module ID: 14039
+// Function ID: 14040
 // Name: SocialLayerStorefrontConfigManager
-// Dependencies: [7397, 11133, 2]
+// Dependencies: [7395, 11094, 2]
 
-// Module 14049 (SocialLayerStorefrontConfigManager)
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 11133 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 14039 (SocialLayerStorefrontConfigManager)
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 11094 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 class SocialLayerStorefrontConfigManager extends tmp2 {

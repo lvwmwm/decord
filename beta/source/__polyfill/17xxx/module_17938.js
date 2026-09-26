@@ -1,9 +1,9 @@
 // Module ID: 17938
 // Function ID: 17939
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 17938
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b4bc35e77125dd7a659435efd876e4cc", name: "ChannelListIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "a17cd266a5cb265705b13e07d0e2871a", name: "ic_money_emoji_24px", type: "png" });

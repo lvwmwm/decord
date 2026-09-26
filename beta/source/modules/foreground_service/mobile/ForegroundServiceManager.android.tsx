@@ -1,12 +1,12 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8030
+// Function ID: 8031
 // Name: ForegroundServiceManager
-// Dependencies: [17, 8036, 1335, 1986, 2]
+// Dependencies: [17, 8031, 1331, 1982, 2]
 
-// Module 8035 (ForegroundServiceManager)
+// Module 8030 (ForegroundServiceManager)
 import _mod17 from "module_17" /* 17 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8036 */;
-import LifecycleManager from "LifecycleManager" /* 1986 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8031 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 import size from "module_2" /* 2 */;
 
 let obj = importDefault;
@@ -76,7 +76,7 @@ prototype["updateServiceHandler"] = function updateServiceHandler(arg0, usesGate
       const result = serviceNotifications.set(arg0, usesGateway);
       self.handleChange();
     }
-    tmp16 = obj(1335);
+    tmp16 = obj(1331);
   }
 };
 prototype["removeServiceHandler"] = function removeServiceHandler(arg0) {

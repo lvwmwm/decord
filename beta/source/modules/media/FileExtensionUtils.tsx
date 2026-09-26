@@ -1,11 +1,11 @@
-// Module ID: 5819
-// Function ID: 5820
+// Module ID: 5817
+// Function ID: 5818
 // Name: FileExtensionUtils
-// Dependencies: [1370, 2]
+// Dependencies: [1366, 2]
 // Exports: decideFileExtension, getExtensionFromContentType
 
-// Module 5819 (FileExtensionUtils)
-import URLUtilsDefault from "URLUtils" /* 1370 */;
+// Module 5817 (FileExtensionUtils)
+import URLUtilsDefault from "URLUtils" /* 1366 */;
 import size from "module_2" /* 2 */;
 
 const dependencyMap = { "image/avif": "avif", "image/gif": "gif", "image/heic": "heic", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "video/mp4": "mp4", "video/quicktime": "mov", "video/webm": "webm" };

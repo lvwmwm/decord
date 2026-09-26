@@ -1,18 +1,18 @@
-// Module ID: 7775
-// Function ID: 7776
+// Module ID: 7770
+// Function ID: 7771
 // Name: GuildMemberSafetyMembers
-// Dependencies: [1376, 4427, 7776, 7777, 7779, 7780, 7786, 4909, 2]
+// Dependencies: [1372, 4423, 7771, 7772, 7774, 7775, 7781, 4907, 2]
 // Exports: hasUnusualDmActivity
 
-// Module 7775 (GuildMemberSafetyMembers)
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4427 */;
-import _modDef4909 from "module_4909" /* 4909 */;
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7776 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7777 */;
-import SortUtils from "SortUtils" /* 7779 */;
-import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7780 */;
-import isSpam from "isSpam" /* 7786 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 7770 (GuildMemberSafetyMembers)
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4423 */;
+import _modDef4907 from "module_4907" /* 4907 */;
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7771 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7772 */;
+import SortUtils from "SortUtils" /* 7774 */;
+import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7775 */;
+import isSpam from "isSpam" /* 7781 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function getGuildMemberSecondaryIndexes(isCurrentGuildMemberByTimestamp) {
@@ -120,7 +120,7 @@ prototype["_computeMemberSupplementals"] = function _computeMemberSupplementals(
     const _Date = Date;
     const date = new Date(unusualDMActivityUntil);
     const time = date.getTime();
-    tmp9 = time >= closure_4 - tmp(7776).UNUSUAL_DM_COMPARISON_DELTA;
+    tmp9 = time >= closure_4 - tmp(7771).UNUSUAL_DM_COMPARISON_DELTA;
   }
   obj3.hasUnusualDmActivity = tmp9;
   obj3.hasUnusualAccountActivity = isSpam.isSpammer(userId);
@@ -177,7 +177,7 @@ prototype["updateMember"] = function updateMember(userId, arg1) {
       flag2 = flag;
       while (keys[tmp] !== undefined) {
         let tmp15 = obj2[tmp6];
-        if (_modDef4909(tmp15, obj[tmp6])) {
+        if (_modDef4907(tmp15, obj[tmp6])) {
           continue;
         } else {
           obj[tmp6] = tmp15;

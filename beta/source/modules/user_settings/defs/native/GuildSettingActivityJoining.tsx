@@ -1,41 +1,18 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16211
+// Function ID: 16212
 // Name: GuildSettingActivityJoining
-// Dependencies: [16193, 8270, 558, 568, 2023, 7273, 11630, 1119, 2]
+// Dependencies: [16197, 8265, 2019, 7272, 11754, 1115, 2]
 
-// Module 16207 (GuildSettingActivityJoining)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
-import SettingsConstants from "SettingsConstants" /* 8270 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16193 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
+// Module 16211 (GuildSettingActivityJoining)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
+import SettingsConstants from "SettingsConstants" /* 8265 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16197 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
 import size from "module_2" /* 2 */;
 
 ({ getSelectedGuildId: c2, useUserSafetySettingsSelectedGuildStore: c3 } = UserSettingsSafetySelectedGuildStore);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const selectedGuildId = React3().selectedGuildId;
-  const ActivityJoiningRestrictedGuilds = UserSettings.ActivityJoiningRestrictedGuilds;
-  const setting = ActivityJoiningRestrictedGuilds.useSetting();
-  if (cResult[0] === selectedGuildId) {
-    if (cResult[1] === setting) {
-      let tmp2 = cResult[2];
-    }
-    return !tmp2;
-  }
-  const hasItem = setting.includes(selectedGuildId);
-  cResult[0] = selectedGuildId;
-  cResult[1] = setting;
-  cResult[2] = hasItem;
-  tmp2 = hasItem;
-}) : (() => {
-  const ActivityJoiningRestrictedGuilds = UserSettings.ActivityJoiningRestrictedGuilds;
-  const setting = ActivityJoiningRestrictedGuilds.useSetting();
-  return !setting.includes(React3().selectedGuildId);
-});
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -46,27 +23,11 @@ const toggle = SettingBuilders.createToggle({
     return intl.string(util.t["b+bVSw"]);
   },
   parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(3);
-    const selectedGuildId = React3().selectedGuildId;
-    const ActivityJoiningRestrictedGuilds = UserSettings.ActivityJoiningRestrictedGuilds;
-    const setting = ActivityJoiningRestrictedGuilds.useSetting();
-    if (cResult[0] === selectedGuildId) {
-      if (cResult[1] === setting) {
-        let tmp2 = cResult[2];
-      }
-      return !tmp2;
-    }
-    const hasItem = setting.includes(selectedGuildId);
-    cResult[0] = selectedGuildId;
-    cResult[1] = setting;
-    cResult[2] = hasItem;
-    tmp2 = hasItem;
-  }) : (() => {
+  useValue() {
     const ActivityJoiningRestrictedGuilds = UserSettings.ActivityJoiningRestrictedGuilds;
     const setting = ActivityJoiningRestrictedGuilds.useSetting();
     return !setting.includes(React3().selectedGuildId);
-  }),
+  },
   onValueChange(arg0) {
     const tmp = React2();
     const sanitizedActivityJoiningRestrictedGuilds = UserSettingsUtils.getSanitizedActivityJoiningRestrictedGuilds();

@@ -1,13 +1,13 @@
-// Module ID: 11228
-// Function ID: 11229
+// Module ID: 11179
+// Function ID: 11180
 // Name: getActivityStatusText
-// Dependencies: [1078, 11229, 8018, 11230, 1119, 11231, 9656, 8652, 2]
+// Dependencies: [1074, 11180, 8013, 11181, 1115, 11182, 9660, 8647, 2]
 // Exports: default
 
-// Module 11228 (getActivityStatusText)
-import Constants from "Constants" /* 1078 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8018 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 11229 */;
+// Module 11179 (getActivityStatusText)
+import Constants from "Constants" /* 1074 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8013 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 11180 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;
@@ -42,7 +42,7 @@ export default function getActivityStatusText(name) {
     }
     tmp5 = details1;
   }
-  state = undefined;
+  let state;
   if (name != null) {
     state = name.state;
   }
@@ -75,7 +75,7 @@ export default function getActivityStatusText(name) {
     if (name != null) {
       status_display_type1 = name.status_display_type;
     }
-    if (status_display_type1 !== tmp15(11229).StatusDisplayTypes.STATE) {
+    if (status_display_type1 !== tmp15(11180).StatusDisplayTypes.STATE) {
       let status_display_type2;
       if (name != null) {
         status_display_type2 = name.status_display_type;
@@ -84,7 +84,7 @@ export default function getActivityStatusText(name) {
       if (tmp20) {
         tmp17 = tmp5;
       }
-      tmp20 = status_display_type2 === tmp15(11229).StatusDisplayTypes.DETAILS && null != tmp5;
+      tmp20 = status_display_type2 === tmp15(11180).StatusDisplayTypes.DETAILS && null != tmp5;
     } else {
       tmp17 = tmp8;
     }
@@ -92,7 +92,7 @@ export default function getActivityStatusText(name) {
     tmp17 = tmp2;
   }
   if (isEmbeddedActivityDefault(name)) {
-    const tmp28 = tmp21(11230)(tmp2);
+    const tmp28 = tmp21(11181)(tmp2);
     const obj = { text: tmp28, tooltip: tmp28 };
     return obj;
   } else {
@@ -103,13 +103,13 @@ export default function getActivityStatusText(name) {
     if (type1 === tmp11.PLAYING) {
       if (null != tmp17) {
         const obj2 = { text: tmp17, tooltip: null };
-        const intl8 = tmp15(1119).intl;
+        const intl8 = tmp15(1115).intl;
         const obj3 = { game: tmp17 };
-        obj2.tooltip = intl8.formatToPlainString(tmp15(1119).t.lFApmz, obj3);
+        obj2.tooltip = intl8.formatToPlainString(tmp15(1115).t.lFApmz, obj3);
         return obj2;
       }
     }
-    if (tmp21(11231)(name)) {
+    if (tmp21(11182)(name)) {
       if (flag) {
         if (null != tmp8) {
           const parts = tmp8.split("; ");
@@ -118,9 +118,9 @@ export default function getActivityStatusText(name) {
             joined = parts.join(", ");
           }
           const obj4 = { text: joined, tooltip: null };
-          const intl7 = tmp15(1119).intl;
+          const intl7 = tmp15(1115).intl;
           const obj5 = { name: joined };
-          obj4.tooltip = intl7.formatToPlainString(tmp15(1119).t.Vnuxue, obj5);
+          obj4.tooltip = intl7.formatToPlainString(tmp15(1115).t.Vnuxue, obj5);
           return obj4;
         }
       }
@@ -128,9 +128,9 @@ export default function getActivityStatusText(name) {
     if (tmp15Result.isStageActivity(name)) {
       if (null != tmp2) {
         const obj6 = { text: tmp2, tooltip: null };
-        const intl6 = tmp15(1119).intl;
+        const intl6 = tmp15(1115).intl;
         const obj7 = { name: tmp2 };
-        obj6.tooltip = intl6.formatToPlainString(tmp15(1119).t.pW3Ip3, obj7);
+        obj6.tooltip = intl6.formatToPlainString(tmp15(1115).t.pW3Ip3, obj7);
         let obj18 = obj6;
       }
       return obj18;
@@ -142,19 +142,19 @@ export default function getActivityStatusText(name) {
     if (type2 === tmp11.LISTENING) {
       if (null != tmp17) {
         const obj8 = { text: tmp17, tooltip: null };
-        const intl5 = tmp15(1119).intl;
+        const intl5 = tmp15(1115).intl;
         const obj9 = { name: tmp17 };
-        obj8.tooltip = intl5.formatToPlainString(tmp15(1119).t.Vnuxue, obj9);
+        obj8.tooltip = intl5.formatToPlainString(tmp15(1115).t.Vnuxue, obj9);
         obj18 = obj8;
       }
     }
-    if (tmp21(8652)(name)) {
+    if (tmp21(8647)(name)) {
       if (flag) {
         if (null != tmp5) {
           const obj10 = { text: tmp5, tooltip: null };
-          const intl4 = tmp15(1119).intl;
+          const intl4 = tmp15(1115).intl;
           const obj11 = { name: tmp5 };
-          obj10.tooltip = intl4.formatToPlainString(tmp15(1119).t.pW3Ip3, obj11);
+          obj10.tooltip = intl4.formatToPlainString(tmp15(1115).t.pW3Ip3, obj11);
           obj18 = obj10;
         }
       }
@@ -166,9 +166,9 @@ export default function getActivityStatusText(name) {
     if (type3 === tmp11.WATCHING) {
       if (null != tmp17) {
         const obj12 = { text: tmp17, tooltip: null };
-        const intl3 = tmp15(1119).intl;
+        const intl3 = tmp15(1115).intl;
         const obj13 = { name: tmp17 };
-        obj12.tooltip = intl3.formatToPlainString(tmp15(1119).t.pW3Ip3, obj13);
+        obj12.tooltip = intl3.formatToPlainString(tmp15(1115).t.pW3Ip3, obj13);
         obj18 = obj12;
       }
     }
@@ -179,9 +179,9 @@ export default function getActivityStatusText(name) {
     if (type4 === tmp11.COMPETING) {
       if (null != tmp17) {
         const obj14 = { text: tmp17, tooltip: null };
-        const intl2 = tmp15(1119).intl;
+        const intl2 = tmp15(1115).intl;
         const obj15 = { name: tmp17 };
-        obj14.tooltip = intl2.formatToPlainString(tmp15(1119).t.QQ2wVE, obj15);
+        obj14.tooltip = intl2.formatToPlainString(tmp15(1115).t.QQ2wVE, obj15);
         obj18 = obj14;
       }
     }
@@ -192,13 +192,13 @@ export default function getActivityStatusText(name) {
     if (type5 === tmp11.STREAMING) {
       if (null != tmp17) {
         const obj16 = { text: tmp17, tooltip: null };
-        const intl = tmp15(1119).intl;
+        const intl = tmp15(1115).intl;
         const obj17 = { name: tmp17 };
-        obj16.tooltip = intl.formatToPlainString(tmp15(1119).t["0wJXSh"], obj17);
+        obj16.tooltip = intl.formatToPlainString(tmp15(1115).t["0wJXSh"], obj17);
         obj18 = obj16;
       }
     }
     obj18 = {};
-    tmp15Result = tmp15(9656);
+    tmp15Result = tmp15(9660);
   }
 };

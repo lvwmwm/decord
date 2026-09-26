@@ -1,14 +1,14 @@
-// Module ID: 17333
-// Function ID: 17334
+// Module ID: 17323
+// Function ID: 17324
 // Name: IconLabelBlock
-// Dependencies: [109, 19, 17, 21, 4790, 580, 4503, 1181, 4786, 11269, 4642, 2]
+// Dependencies: [109, 19, 17, 21, 4788, 576, 4498, 1177, 4784, 11221, 4639, 2]
 
-// Module 17333 (IconLabelBlock)
-import nativeDefault from "native" /* 580 */;
-import native from "native" /* 1181 */;
-import shared from "shared" /* 4642 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import IconUploaderDefault from "IconUploader" /* 11269 */;
+// Module 17323 (IconLabelBlock)
+import nativeDefault from "native" /* 576 */;
+import native from "native" /* 1177 */;
+import shared from "shared" /* 4639 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import IconUploaderDefault from "IconUploader" /* 11221 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { wrapper: { alignItems: "center", paddingTop: 26, paddingBottom: 16 }, error: { fontSize: 12, textAlign: "center", alignSelf: "center", marginBottom: 10, color: nativeDefault.unsafe_rawColors.RED_400 }, label: null, iconUploaderWrapper: null, text: null };
 let obj3 = { fontSize: 12, textAlign: "center", alignSelf: "center", marginBottom: 10, color: nativeDefault.unsafe_rawColors.RED_400 };
 obj2.label = { fontSize: 12, marginTop: 20, color: nativeDefault.colors.TEXT_SUBTLE };
@@ -62,7 +62,7 @@ prototype["renderIcon"] = function renderIcon() {
     const obj2 = { style: tmp.iconUploaderWrapper, children: null };
     const obj3 = {};
     const tmp11 = _objectWithoutProperties(iconProps, closure_3);
-    const tmp12 = closure_1_8;
+    const tmp12 = React6;
     const tmp13 = hasOwnProperty;
     const tmp14 = React5;
     const merged = Object.assign(tmp11);
@@ -97,9 +97,9 @@ prototype["render"] = function render() {
   obj.style = items;
   const items1 = [this.renderIcon(), this.props.children, this.renderLabel(), this.renderText()];
   obj.children = items1;
-  return closure_1_8(hasOwnProperty, obj);
+  return React6(hasOwnProperty, obj);
 };
-IconLabelBlock.contextType = fn(4503).ThemeContext;
+IconLabelBlock.contextType = fn(4498).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/IconLabelBlock.tsx");
 

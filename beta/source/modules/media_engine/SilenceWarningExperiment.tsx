@@ -1,13 +1,13 @@
-// Module ID: 14384
-// Function ID: 14385
+// Module ID: 14374
+// Function ID: 14375
 // Name: SilenceWarningExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 14384 (SilenceWarningExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 14374 (SilenceWarningExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
-const obj = { resetSilenceWarningOnDeviceChange: false, resetSilenceWarningAfterNMinutes: "Set", enableHardwareSilenceWarning: true };
+const obj = { resetSilenceWarningOnDeviceChange: false, resetSilenceWarningAfterNMinutes: "PX_16", enableHardwareSilenceWarning: true };
 const obj2 = { name: "2026-02-silence-warning-aggression", kind: "user", defaultConfig: obj, variations: null };
 const obj3 = { 1: null, 2: null, 3: null };
 const obj4 = {};

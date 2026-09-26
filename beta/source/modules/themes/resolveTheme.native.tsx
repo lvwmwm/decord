@@ -1,18 +1,18 @@
-// Module ID: 1230
-// Function ID: 1231
+// Module ID: 1226
+// Function ID: 1227
 // Name: resolveTheme
-// Dependencies: [1231, 1187, 1188, 1224, 1189, 7941, 1232, 1190, 2]
+// Dependencies: [1227, 1183, 1184, 1220, 1185, 7936, 1228, 1186, 2]
 // Exports: default
 
-// Module 1230 (resolveTheme)
-import AuthenticationUtils from "AuthenticationUtils" /* 7941 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1231 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+// Module 1226 (resolveTheme)
+import AuthenticationUtils from "AuthenticationUtils" /* 7936 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1227 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
-const ThemeConstants = fn(1189);
+const ThemeConstants = fn(1185);
 ({ PROTO_THEME_MAP_MOBILE_REFRESH: metroRequire, SystemTheme: closure_7, SystemThemeState: closure_8 } = ThemeConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/themes/resolveTheme.native.tsx");
@@ -24,7 +24,7 @@ export default function resolveTheme(arg0, arg1) {
   } else {
     if (!obj6.isAuthenticated()) {
       if (arg0 !== constants.NO_PREFERENCE) {
-        return tmp17(1232).resolveThemeWithCustomSettings(arg1[arg0], CustomThemeMobileStore.getCustomTheme());
+        return tmp17(1228).resolveThemeWithCustomSettings(arg1[arg0], CustomThemeMobileStore.getCustomTheme());
       }
     }
     const appearanceSettings = SelectivelySyncedUserSettingsStore.getAppearanceSettings();
@@ -47,24 +47,24 @@ export default function resolveTheme(arg0, arg1) {
       }
     }
     if (null != theme) {
-      return tmp17(1232).resolveThemeWithCustomSettings(theme, customUserThemeSettings);
+      return tmp17(1228).resolveThemeWithCustomSettings(theme, customUserThemeSettings);
     } else {
       let theme1;
       if (appearance != null) {
         theme1 = appearance.theme;
       }
       if (theme1 == null) {
-        theme1 = tmp17(1190).Theme.UNSET;
+        theme1 = tmp17(1186).Theme.UNSET;
       }
-      if (theme1 === tmp17(1190).Theme.UNSET) {
+      if (theme1 === tmp17(1186).Theme.UNSET) {
         if (arg0 !== constants.NO_PREFERENCE) {
-          let themeWithCustomSettings = tmp17(1232).resolveThemeWithCustomSettings(arg1[arg0], customUserThemeSettings);
-          const tmp17Result5 = tmp17(1232);
+          let themeWithCustomSettings = tmp17(1228).resolveThemeWithCustomSettings(arg1[arg0], customUserThemeSettings);
+          const tmp17Result5 = tmp17(1228);
         }
         return themeWithCustomSettings;
       }
-      themeWithCustomSettings = tmp17(1232).resolveThemeWithCustomSettings(timestampProducer[theme1], customUserThemeSettings);
-      const tmp17Result6 = tmp17(1232);
+      themeWithCustomSettings = tmp17(1228).resolveThemeWithCustomSettings(timestampProducer[theme1], customUserThemeSettings);
+      const tmp17Result6 = tmp17(1228);
     }
     obj6 = AuthenticationUtils;
   }

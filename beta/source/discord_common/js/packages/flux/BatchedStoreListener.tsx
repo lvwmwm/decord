@@ -1,9 +1,9 @@
-// Module ID: 566
-// Function ID: 567
+// Module ID: 564
+// Function ID: 565
 // Name: BatchedStoreListener
 // Dependencies: [508, 2]
 
-// Module 566 (BatchedStoreListener)
+// Module 564 (BatchedStoreListener)
 import flux_EmitterDefault from "flux/Emitter" /* 508 */;
 import size from "module_2" /* 2 */;
 

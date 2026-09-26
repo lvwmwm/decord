@@ -1,240 +1,42 @@
-// Module ID: 11765
-// Function ID: 11766
+// Module ID: 11889
+// Function ID: 11890
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 2045, 2109, 2103, 2067, 4431, 1078, 21, 4790, 580, 558, 568, 1616, 504, 1488, 4943, 11766, 9833, 4757, 10666, 11768, 4786, 1119, 9849, 5373, 7656, 7428, 8910, 11764, 10325, 1181, 6895, 7429, 2]
+// Dependencies: [19, 17, 2041, 2105, 2099, 2063, 4427, 1074, 21, 4788, 576, 1612, 504, 1484, 4941, 11890, 9855, 1115, 7427, 7426, 5371, 4755, 8935, 11892, 7654, 8905, 11888, 10328, 1177, 6901, 9871, 4784, 2]
+// Exports: default
 
-// Module 11765 (ChannelMembersActionSheet)
+// Module 11889 (ChannelMembersActionSheet)
 import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import useNavigation from "useNavigation" /* 1488 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9849 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10666 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11764 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11766 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11768 */;
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import useNavigation from "useNavigation" /* 1484 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8935 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9871 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11888 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11890 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11892 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelSettingsSections: closure_9, Permissions: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { paddingHorizontal: 16, flex: 1 }, sectionRowWrapper: { paddingVertical: nativeDefault.space.PX_12 }, warning: { margin: 16, marginBottom: 0 } };
 let closure_13 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj3 = { paddingVertical: nativeDefault.space.PX_12 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  const cResult = channelId(568).c(65);
-  channelId = channelId.channelId;
-  let guildId = channelId.guildId;
-  let obj = channelId(568);
-  dependencyMap = closure_13();
-  guildId(1616)();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [navigation];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    class I {
-      constructor() {
-        return closure_4.getChannel(channelId);
-      }
-    }
-    cResult[1] = channelId;
-    cResult[2] = I;
-    const tmp9 = I;
-  } else {
-    class I {
-      constructor() {
-        return closure_4.getChannel(channelId);
-      }
-    }
-  }
-  const tmp4 = closure_13();
-  const tmp5 = guildId;
-  const stateFromStores = channelId(504).useStateFromStores(first, tmp9);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor() {
-        return closure_4.getChannel(channelId);
-      }
-    }
-    const items1 = [GuildStore, GuildRoleStore];
-    cResult[3] = items1;
-    const tmp11 = items1;
-  } else {
-    class I {
-      constructor() {
-        return closure_4.getChannel(channelId);
-      }
-    }
-  }
-  if (cResult[4] !== stateFromStores) {
-    class M {
-      constructor() {
-        obj = closure_3;
-        guildId = undefined;
-        tmp = closure_7;
-        if (closure_3 != null) {
-          guildId = obj.getGuildId();
-        }
-        guild = closure_7.getGuild(guildId);
-        obj1 = { guild, sortedGuildRoles: null };
-        sortedRoles = undefined;
-        if (null != guild) {
-          tmp5 = closure_6;
-          sortedRoles = closure_6.getSortedRoles(guild.id);
-        }
-        obj1.sortedGuildRoles = sortedRoles;
-        return obj1;
-      }
-    }
-    const items2 = [stateFromStores];
-    cResult[4] = stateFromStores;
-    cResult[5] = M;
-    cResult[6] = items2;
-    let tmp14 = items2;
-    const tmp13 = M;
-  } else {
-    class M {
-      constructor() {
-        obj = closure_3;
-        guildId = undefined;
-        tmp = closure_7;
-        if (closure_3 != null) {
-          guildId = obj.getGuildId();
-        }
-        guild = closure_7.getGuild(guildId);
-        obj1 = { guild, sortedGuildRoles: null };
-        sortedRoles = undefined;
-        if (null != guild) {
-          tmp5 = closure_6;
-          sortedRoles = closure_6.getSortedRoles(guild.id);
-        }
-        obj1.sortedGuildRoles = sortedRoles;
-        return obj1;
-      }
-    }
-    tmp14 = cResult[6];
-  }
-  const tmpResult = channelId(504);
-  const stateFromStoresObject = channelId(504).useStateFromStoresObject(tmp11, tmp13, tmp14);
-  ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class M {
-      constructor() {
-        obj = closure_3;
-        guildId = undefined;
-        tmp = closure_7;
-        if (closure_3 != null) {
-          guildId = obj.getGuildId();
-        }
-        guild = closure_7.getGuild(guildId);
-        obj1 = { guild, sortedGuildRoles: null };
-        sortedRoles = undefined;
-        if (null != guild) {
-          tmp5 = closure_6;
-          sortedRoles = closure_6.getSortedRoles(guild.id);
-        }
-        obj1.sortedGuildRoles = sortedRoles;
-        return obj1;
-      }
-    }
-    const items3 = [GuildMemberStore];
-    cResult[7] = items3;
-    const tmp16 = items3;
-  } else {
-    class M {
-      constructor() {
-        obj = closure_3;
-        guildId = undefined;
-        tmp = closure_7;
-        if (closure_3 != null) {
-          guildId = obj.getGuildId();
-        }
-        guild = closure_7.getGuild(guildId);
-        obj1 = { guild, sortedGuildRoles: null };
-        sortedRoles = undefined;
-        if (null != guild) {
-          tmp5 = closure_6;
-          sortedRoles = closure_6.getSortedRoles(guild.id);
-        }
-        obj1.sortedGuildRoles = sortedRoles;
-        return obj1;
-      }
-    }
-  }
-  if (cResult[8] !== stateFromStores) {
-    class A {
-      constructor() {
-        obj = closure_3;
-        guildId = undefined;
-        tmp = closure_5;
-        if (closure_3 != null) {
-          guildId = obj.getGuildId();
-        }
-        return closure_5.getMemberIds(guildId);
-      }
-    }
-    const items4 = [stateFromStores];
-    cResult[8] = stateFromStores;
-    cResult[9] = A;
-    cResult[10] = items4;
-    let tmp18 = items4;
-    const tmp17 = A;
-  } else {
-    class A {
-      constructor() {
-        obj = closure_3;
-        guildId = undefined;
-        tmp = closure_5;
-        if (closure_3 != null) {
-          guildId = obj.getGuildId();
-        }
-        return closure_5.getMemberIds(guildId);
-      }
-    }
-    tmp18 = cResult[10];
-  }
-  const tmpResult5 = channelId(504);
-  const stateFromStoresArray = channelId(504).useStateFromStoresArray(tmp16, tmp17, tmp18);
-  const tmpResult6 = channelId(504);
-  navigation = channelId(1488).useNavigation();
-  tmp5(4943)(stateFromStores);
-  const tmpResult7 = channelId(1488);
-  const appChannelBotUserId = channelId(11766).useAppChannelBotUserId(stateFromStores);
-  if (null != stateFromStores) {
-    class A {
-      constructor() {
-        obj = closure_3;
-        guildId = undefined;
-        tmp = closure_5;
-        if (closure_3 != null) {
-          guildId = obj.getGuildId();
-        }
-        return closure_5.getMemberIds(guildId);
-      }
-    }
-  }
-  return null;
-}) : ((arg0) => {
+export default function ChannelMembersActionSheet(arg0) {
   ({ channelId: require, guildId: importDefault } = arg0);
   closure_4 = undefined;
   c5 = undefined;
@@ -250,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     if (stateFromStores != null) {
       guildId = stateFromStores.getGuildId();
     }
-    guild = GuildStore.getGuild(guildId);
+    const guild = GuildStore.getGuild(guildId);
     const obj2 = { guild, sortedGuildRoles: null };
     let sortedRoles;
     if (null != guild) {
@@ -276,25 +78,25 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       if (null != sortedGuildRoles) {
         const canResult = PermissionStore.can(constants2.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        const tmp5Result = tmp5(9833);
+        const tmp5Result = tmp5(9855);
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        const tmp5Result2 = tmp5(9833);
+        const tmp5Result2 = tmp5(9855);
         const obj5 = { appChannelBotUserId: tmp11 };
         const items5 = [];
         const obj6 = { title: null, data: null };
         const existingMembersRows = tmp5Result2.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions, obj5);
-        const intl4 = tmp5(1119).intl;
-        obj6.title = intl4.string(tmp5(1119).t["LPJmL/"]);
+        const intl4 = tmp5(1115).intl;
+        obj6.title = intl4.string(tmp5(1115).t["LPJmL/"]);
         obj6.data = existingRolesRows;
         items5.push(obj6);
         const obj7 = { title: null, data: null };
-        const intl5 = tmp5(1119).intl;
-        obj7.title = intl5.string(tmp5(1119).t["9Oq93m"]);
+        const intl5 = tmp5(1115).intl;
+        obj7.title = intl5.string(tmp5(1115).t["9Oq93m"]);
         obj7.data = existingMembersRows;
         items5.push(obj7);
         const obj8 = { title: null, subtitle: null, trailing: null };
-        const intl6 = tmp5(1119).intl;
-        obj8.title = intl6.string(tmp5(1119).t.ES4CC6);
+        const intl6 = tmp5(1115).intl;
+        obj8.title = intl6.string(tmp5(1115).t.ES4CC6);
         const _HermesInternal = HermesInternal;
         obj8.subtitle = "#" + tmp9;
         let tmp32Result = canResult;
@@ -309,30 +111,30 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
             accessibilityLabel: null,
             children: null
           };
-          let intl = tmp5(1119).intl;
-          obj9.accessibilityLabel = intl.string(tmp5(1119).t.XPDhcc);
-          obj9.children = tmp32(tmp5(7656).SettingsIcon, {});
-          tmp32Result = tmp32(tmp5(5373).PressableOpacity, obj9);
+          let intl = tmp5(1115).intl;
+          obj9.accessibilityLabel = intl.string(tmp5(1115).t.XPDhcc);
+          obj9.children = tmp32(tmp5(7654).SettingsIcon, {});
+          tmp32Result = tmp32(tmp5(5371).PressableOpacity, obj9);
         }
         const obj10 = { scrollable: true, header: null, startExpanded: true, children: null };
         obj8.trailing = tmp32Result;
-        obj10.header = closure_11(tmp5(7428).BottomSheetTitleHeader, obj8);
+        obj10.header = closure_11(tmp5(7426).BottomSheetTitleHeader, obj8);
         const obj11 = { style: tmp.container, children: null };
         if (canResult) {
           const obj12 = { label: null, onPress: null, icon: null };
-          const intl3 = tmp5(1119).intl;
-          obj12.label = intl3.string(tmp5(1119).t.dMJ3Y6);
+          const intl3 = tmp5(1115).intl;
+          obj12.label = intl3.string(tmp5(1115).t.dMJ3Y6);
           obj12.onPress = function onPress() {
             return channel_permissions_ChannelPermissionsUtils.openAddMembersActionSheet(stateFromStores);
           };
-          obj12.icon = tmp32(tmp5(10325).GroupPlusIcon, {});
-          let tmp32Result2 = tmp32(tmp5(8910).RowButton, obj12);
+          obj12.icon = tmp32(tmp5(10328).GroupPlusIcon, {});
+          let tmp32Result2 = tmp32(tmp5(8905).RowButton, obj12);
         } else {
           const obj13 = { style: tmp.warning, children: null };
-          const obj14 = { messageType: tmp5(1181).HelpMessageTypes.INFO, children: null };
-          const intl2 = tmp5(1119).intl;
-          obj14.children = intl2.string(tmp5(1119).t.VOuiSj);
-          obj13.children = tmp32(tmp5(1181).HelpMessage, obj14);
+          const obj14 = { messageType: tmp5(1177).HelpMessageTypes.INFO, children: null };
+          const intl2 = tmp5(1115).intl;
+          obj14.children = intl2.string(tmp5(1115).t.VOuiSj);
+          obj13.children = tmp32(tmp5(1177).HelpMessage, obj14);
           tmp32Result2 = tmp32(tmp14, obj13);
         }
         const items6 = [tmp32Result2, ];
@@ -352,12 +154,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           return closure_2_11(Text_Text.Text, obj);
         };
         obj15.sections = items5;
-        items6[1] = closure_11(tmp5(6895).BottomSheetSectionList, obj15);
+        items6[1] = closure_11(tmp5(6901).BottomSheetSectionList, obj15);
         obj11.children = items6;
         obj10.children = closure_12(stateFromStores, obj11);
-        return closure_11(tmp5(7429).BottomSheet, obj10);
+        return closure_11(tmp5(7427).BottomSheet, obj10);
       }
     }
   }
   return null;
-});
+};

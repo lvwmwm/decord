@@ -1,12 +1,12 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12357
+// Function ID: 12358
 // Name: MyGuildApplicationsStore
-// Dependencies: [1095, 504, 577, 2]
+// Dependencies: [1091, 504, 573, 2]
 
-// Module 12241 (MyGuildApplicationsStore)
+// Module 12357 (MyGuildApplicationsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
 
 function addToApplicationIdToGuildIds(applicationId) {
   applicationId = applicationId.applicationId;

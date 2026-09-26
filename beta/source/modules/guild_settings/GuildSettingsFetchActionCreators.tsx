@@ -1,14 +1,14 @@
-// Module ID: 9872
-// Function ID: 9873
+// Module ID: 9894
+// Function ID: 9895
 // Name: GuildSettingsFetchActionCreators
-// Dependencies: [5, 2006, 1390, 1078, 1275, 577, 2]
+// Dependencies: [5, 2002, 1386, 1074, 1271, 573, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
 
-// Module 9872 (GuildSettingsFetchActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 9894 (GuildSettingsFetchActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserRecord from "UserRecord" /* 1390 */;
+import UserRecord from "UserRecord" /* 1386 */;
 
 require = fn;
 let closure_7 = async function _fetchGuildIntegrationsApplications() {
@@ -41,8 +41,8 @@ let closure_7 = async function _fetchGuildIntegrationsApplications() {
   closure_130_1(closure_130_2[5]).dispatch({ type: "GUILD_SETTINGS_LOADED_INTEGRATIONS", guildId: closure_129_0, integrations: closure_129_1 });
   return closure_129_1;
 };
-const BasicApplicationRecord = fn(2006).BasicApplicationRecord;
-const Endpoints = fn(1078).Endpoints;
+const BasicApplicationRecord = fn(2002).BasicApplicationRecord;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsFetchActionCreators.tsx");
 

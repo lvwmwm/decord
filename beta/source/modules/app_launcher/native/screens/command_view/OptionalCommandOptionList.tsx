@@ -1,13 +1,14 @@
-// Module ID: 12370
-// Function ID: 12371
+// Module ID: 12474
+// Function ID: 12475
 // Name: OptionalCommandOptionList
-// Dependencies: [19, 17, 21, 558, 568, 5854, 5220, 1119, 5935, 2]
+// Dependencies: [19, 17, 21, 5936, 5854, 5218, 1115, 2]
+// Exports: default
 
-// Module 12370 (OptionalCommandOptionList)
-import util from "util" /* 1119 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
+// Module 12474 (OptionalCommandOptionList)
+import util from "util" /* 1115 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
 import TableRow from "TableRow" /* 5854 */;
-import TableRowGroup from "TableRowGroup" /* 5935 */;
+import TableRowGroup from "TableRowGroup" /* 5936 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,83 +16,10 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/command_view/OptionalCommandOptionList.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
-  const cResult = onSelectOption(568).c(10);
-  ({ options, onSelectOption } = style);
-  style = style.style;
-  let num = 0;
-  if (0 === options.length) {
-    return null;
-  } else {
-    if (cResult[0] === onSelectOption) {
-      if (cResult[1] === options) {
-        if (cResult[5] !== cResult[2]) {
-          let obj2 = { hasIcons: false, children: tmp4 };
-          const tmp10 = jsx(onSelectOption(5935).TableRowGroup, { hasIcons: false, children: tmp4 });
-          cResult[5] = tmp4;
-          cResult[6] = tmp10;
-          let tmp8 = tmp10;
-        } else {
-          tmp8 = cResult[6];
-        }
-        if (cResult[7] === style) {
-          if (cResult[8] === tmp8) {
-            let tmp11 = cResult[9];
-          }
-          return tmp11;
-        }
-        const obj3 = { style, collapsable: false, children: tmp8 };
-        const tmp14 = <View style={style} collapsable={false}>{tmp8}</View>;
-        cResult[7] = style;
-        cResult[8] = tmp8;
-        cResult[9] = tmp14;
-        tmp11 = tmp14;
-      }
-    }
-    if (cResult[3] !== onSelectOption) {
-      const fn = function o(displayName) {
-        closure_0 = displayName;
-        const obj = {
-          onPress() {
-            return onSelectOption(closure_0);
-          },
-          label: displayName.displayName,
-          subLabel: displayName.displayDescription,
-          trailing: null
-        };
-        const obj2 = { accessibilityRole: "none", variant: "tertiary", size: "sm", shrink: true, text: null, onPress: null };
-        const intl = onSelectOption(1119).intl;
-        obj2.text = intl.string(onSelectOption(1119).t.OYkgVk);
-        obj2.onPress = function onPress() {
-          return onSelectOption(closure_0);
-        };
-        obj.trailing = jsx(onSelectOption(5220).Button, { accessibilityRole: "none", variant: "tertiary", size: "sm", shrink: true, text: null, onPress: null });
-        return jsx(onSelectOption(5854).TableRow, {
-          onPress() {
-            return onSelectOption(closure_0);
-          },
-          label: displayName.displayName,
-          subLabel: displayName.displayDescription,
-          trailing: null
-        }, displayName.name);
-      };
-      cResult[3] = onSelectOption;
-      cResult[4] = fn;
-      let tmp5 = fn;
-    } else {
-      tmp5 = cResult[4];
-    }
-    const mapped = options.map(tmp5);
-    cResult[num] = onSelectOption;
-    cResult[1] = options;
-    num = 2;
-    cResult[2] = mapped;
-  }
-}) : ((arg0) => {
+export default function OptionalCommandOptionList(arg0) {
   ({ options, onSelectOption: require } = arg0);
   let tmp2 = null;
   if (0 !== options.length) {
@@ -157,4 +85,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     tmp2 = <View style={tmp} collapsable={false}>{null}</View>;
   }
   return tmp2;
-});
+};

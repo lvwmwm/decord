@@ -1,39 +1,24 @@
-// Module ID: 17469
-// Function ID: 17470
+// Module ID: 17493
+// Function ID: 17494
 // Name: BlurVisualEffectView
-// Dependencies: [19, 17, 1078, 21, 4640, 580, 558, 568, 4494, 5208, 2]
+// Dependencies: [19, 17, 1074, 21, 4637, 576, 4489, 5206, 2]
 
-// Module 17469 (BlurVisualEffectView)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4494 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5208 */;
+// Module 17493 (BlurVisualEffectView)
+import nativeDefault from "native" /* 576 */;
+import useToken from "useToken" /* 4489 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5206 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
-const ThemeTypes = fn(1078).ThemeTypes;
+const ThemeTypes = fn(1074).ThemeTypes;
 const jsx = fn(21).jsx;
-const ColorUtils = fn(4640);
+const ColorUtils = fn(4637);
 const tintColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.24);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/panel/native/BlurVisualEffectView.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const token = useToken.useToken(nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK, ThemeTypes.DARK);
-  if (cResult[0] !== token) {
-    const obj3 = { style: StyleSheet.absoluteFill, blurStyle: "default", tintColor, android_fallbackColor: token, blurAmount: 0.24, blurTheme: "dark" };
-    const tmp9 = jsx(VisualEffectViewDefault, { style: StyleSheet.absoluteFill, blurStyle: "default", tintColor, android_fallbackColor: token, blurAmount: 0.24, blurTheme: "dark" });
-    cResult[0] = token;
-    cResult[1] = tmp9;
-    let tmp5 = tmp9;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (() => {
+export default noop.memo(() => {
   const token = useToken.useToken(nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK, ThemeTypes.DARK);
   return jsx(VisualEffectViewDefault, { style: StyleSheet.absoluteFill, blurStyle: "default", tintColor, android_fallbackColor: token, blurAmount: 0.24, blurTheme: "dark" });
-}));
+});

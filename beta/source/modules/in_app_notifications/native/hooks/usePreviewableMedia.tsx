@@ -1,21 +1,37 @@
-// Module ID: 13009
-// Function ID: 13010
+// Module ID: 10426
+// Function ID: 10427
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1078, 21, 4790, 558, 568, 4494, 580, 8765, 9024, 13010, 4940, 12352, 7578, 2]
+// Dependencies: [19, 17, 1074, 21, 4788, 4489, 576, 8760, 9026, 10427, 4938, 10429, 7576, 2]
+// Exports: usePreviewableMedia
 
-// Module 13009 (usePreviewableMedia)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4494 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4940 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7578 */;
-import inlineStyles from "inlineStyles" /* 8765 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 9024 */;
-import WaveformIcon from "WaveformIcon" /* 13010 */;
+// Module 10426 (usePreviewableMedia)
+import nativeDefault from "native" /* 576 */;
+import useToken from "useToken" /* 4489 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4938 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7576 */;
+import inlineStyles from "inlineStyles" /* 8760 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 9026 */;
+import WaveformIcon from "WaveformIcon" /* 10427 */;
 import noop from "module_19" /* 19 */;
 
-const inlineStylesDefault = tmp5(8765);
+const inlineStylesDefault = inlineStyles;
+
 require = fn;
+function VoiceMessageIcon() {
+  const tmp = closure_11();
+  const token = useToken.useToken(nativeDefault.colors.BACKGROUND_MOD_STRONG);
+  const obj3 = { children: null };
+  const token1 = useToken.useToken(nativeDefault.colors.BACKGROUND_MOD_SUBTLE);
+  const size = { width: "100%", height: "100%", viewBox: "0 0 64 61", fill: "none", children: null };
+  size.children = React5(inlineStyles.Path, { d: "M22.2188 59.8545C19.5607 61.6263 16.0003 59.7208 16 56.5264V48C7.16344 48 2.5772e-07 40.8366 0 32V16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V32C64 40.8366 56.8366 48 48 48H40L22.2188 59.8545Z", fill: token, stroke: token1 });
+  const items = [React5(inlineStylesDefault, size), ];
+  const obj4 = { style: tmp.voiceMessageIconOverlay, children: null };
+  const items1 = [React5(CirclePlayIcon.CirclePlayIcon, { size: "md", color: "background-brand", secondaryColor: "white" }), React5(WaveformIcon.WaveformIcon, { size: "md", color: "background-brand" })];
+  obj4.children = items1;
+  items[1] = React6(React4, obj4);
+  obj3.children = items;
+  return React6(React7, obj3);
+}
 function getBasePreviewableMedia(arg0) {
   let obj;
   ({ message, isForward } = arg0);
@@ -29,7 +45,7 @@ function getBasePreviewableMedia(arg0) {
       obj2.id = "" + first.id + "-" + obj.VOICE_MESSAGE;
       obj2.type = obj.VOICE_MESSAGE;
       obj2.media = first;
-      obj2.icon = React5(closure_12, {});
+      obj2.icon = React5(VoiceMessageIcon, {});
       let str10 = null;
       if (isForward) {
         str10 = "forward";
@@ -58,7 +74,7 @@ function getBasePreviewableMedia(arg0) {
           obj3.parentType = str7;
           let arr8 = items.push(obj3);
         } else {
-          let tmp8Result = tmp8(4940);
+          let tmp8Result = tmp8(4938);
           if (tmp8Result.isVideoFile(tmp7)) {
             let obj4 = { id: null, type: null, media: null, parentType: null };
             let _HermesInternal3 = HermesInternal;
@@ -72,7 +88,7 @@ function getBasePreviewableMedia(arg0) {
             obj4.parentType = str6;
             let arr9 = items.push(obj4);
           } else {
-            let tmp8Result2 = tmp8(4940);
+            let tmp8Result2 = tmp8(4938);
             let push = items.push;
             let obj5 = { id: null, type: null, media: null, icon: null, parentType: null };
             let id = tmp6.id;
@@ -82,7 +98,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.id = "" + id + "-" + tmp13.AUDIO;
               obj5.type = tmp13.AUDIO;
               obj5.media = tmp6;
-              obj5.icon = React5(tmp8(9024).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+              obj5.icon = React5(tmp8(9026).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
               let str5 = null;
               if (isForward) {
                 str5 = "forward";
@@ -96,7 +112,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.media = tmp6;
               let obj6 = { size: "lg", color: null };
               obj6.color = nativeDefault.colors.ICON_SUBTLE;
-              obj5.icon = React5(tmp8(12352).FileIcon, obj6);
+              obj5.icon = React5(tmp8(10429).FileIcon, obj6);
               let str4 = null;
               if (isForward) {
                 str4 = "forward";
@@ -147,12 +163,12 @@ function getBasePreviewableMedia(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ MessageEmbedTypes: hasOwnProperty, MessageFlags: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const PreviewableMediaTypes = { IMAGE: "image", VIDEO: "video", AUDIO: "audio", FILE: "file", STICKER: "sticker", GIF: "gif", VOICE_MESSAGE: "voice_message" };
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj3 = { voiceMessageIconOverlay: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -162,117 +178,11 @@ obj4.justifyContent = "center";
 obj4.paddingBottom = 13;
 obj3.voiceMessageIconOverlay = obj4;
 let closure_11 = createStyles.createStyles(obj3);
-let ReactCompilerGating = fn(558);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(10);
-  const tmp4 = closure_11();
-  const token = useToken.useToken(nativeDefault.colors.BACKGROUND_MOD_STRONG);
-  const token1 = useToken.useToken(nativeDefault.colors.BACKGROUND_MOD_SUBTLE);
-  if (cResult[0] === token) {
-    if (cResult[1] === token1) {
-      let tmp8 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = React5(tmp(9024).CirclePlayIcon, { size: "md", color: "background-brand", secondaryColor: "white" });
-      const tmp16 = React5(tmp(13010).WaveformIcon, { size: "md", color: "background-brand" });
-      cResult[3] = tmp15;
-      cResult[4] = tmp16;
-      let tmp13 = tmp16;
-      let tmp12 = tmp15;
-    } else {
-      tmp12 = cResult[3];
-      tmp13 = cResult[4];
-    }
-    if (cResult[5] !== tmp4.voiceMessageIconOverlay) {
-      const obj4 = { style: tmp4.voiceMessageIconOverlay, children: null };
-      const items = [tmp12, tmp13];
-      obj4.children = items;
-      const tmp20 = closure_1_8(React4, obj4);
-      cResult[5] = tmp4.voiceMessageIconOverlay;
-      cResult[6] = tmp20;
-      let tmp17 = tmp20;
-    } else {
-      tmp17 = cResult[6];
-    }
-    if (cResult[7] === tmp8) {
-      if (cResult[8] === tmp17) {
-        let tmp21 = cResult[9];
-      }
-      return tmp21;
-    }
-    const obj5 = { children: null };
-    const items1 = [tmp8, tmp17];
-    obj5.children = items1;
-    const tmp24 = closure_1_8(options, obj5);
-    cResult[7] = tmp8;
-    cResult[8] = tmp17;
-    cResult[9] = tmp24;
-    tmp21 = tmp24;
-  }
-  const size = { width: "100%", height: "100%", viewBox: "0 0 64 61", fill: "none", children: null };
-  size.children = React5(inlineStyles.Path, { d: "M22.2188 59.8545C19.5607 61.6263 16.0003 59.7208 16 56.5264V48C7.16344 48 2.5772e-07 40.8366 0 32V16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V32C64 40.8366 56.8366 48 48 48H40L22.2188 59.8545Z", fill: token, stroke: token1 });
-  const tmp10 = React5(inlineStylesDefault, size);
-  cResult[0] = token;
-  cResult[1] = token1;
-  cResult[2] = tmp10;
-  tmp8 = tmp10;
-}) : (() => {
-  const tmp = closure_11();
-  const token = useToken.useToken(nativeDefault.colors.BACKGROUND_MOD_STRONG);
-  const obj3 = { children: null };
-  const token1 = useToken.useToken(nativeDefault.colors.BACKGROUND_MOD_SUBTLE);
-  const size = { width: "100%", height: "100%", viewBox: "0 0 64 61", fill: "none", children: null };
-  size.children = React5(inlineStyles.Path, { d: "M22.2188 59.8545C19.5607 61.6263 16.0003 59.7208 16 56.5264V48C7.16344 48 2.5772e-07 40.8366 0 32V16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V32C64 40.8366 56.8366 48 48 48H40L22.2188 59.8545Z", fill: token, stroke: token1 });
-  const items = [React5(inlineStylesDefault, size), ];
-  const obj4 = { style: tmp.voiceMessageIconOverlay, children: null };
-  const items1 = [React5(CirclePlayIcon.CirclePlayIcon, { size: "md", color: "background-brand", secondaryColor: "white" }), React5(WaveformIcon.WaveformIcon, { size: "md", color: "background-brand" })];
-  obj4.children = items1;
-  items[1] = closure_1_8(React4, obj4);
-  obj3.children = items;
-  return closure_1_8(options, obj3);
-});
-ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/hooks/usePreviewableMedia.tsx");
 
 export { PreviewableMediaTypes };
-export const usePreviewableMedia = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
-  const cResult = c.c(4);
-  if (cResult[0] !== message) {
-    const items = [];
-    const obj2 = { message, isForward: false };
-    const push = items.push;
-    const items1 = [];
-    HermesBuiltin.arraySpread(getBasePreviewableMedia(obj2), 0);
-    HermesBuiltin.apply(items1, items);
-    if (isForwardMessageDefault(message)) {
-      if (message.messageSnapshots.length > 0) {
-        let push2 = message.messageSnapshots[0];
-        if (cResult[2] !== push2.message) {
-          const obj3 = { message: push2.message, isForward: true };
-          const tmp4Result = tmp4(obj3);
-          cResult[2] = push2.message;
-          cResult[3] = tmp4Result;
-          let tmp12 = tmp4Result;
-        } else {
-          tmp12 = cResult[3];
-        }
-        push2 = items.push;
-        const items2 = [];
-        HermesBuiltin.arraySpread(tmp12, 0);
-        HermesBuiltin.apply(items2, items);
-      }
-    }
-    cResult[0] = message;
-    cResult[1] = items;
-    let tmp3 = items;
-    tmp4 = getBasePreviewableMedia;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : ((message) => {
+export const usePreviewableMedia = function usePreviewableMedia(message) {
   let items = [message];
   return noop.useMemo(() => {
     const items = [];
@@ -289,4 +199,4 @@ export const usePreviewableMedia = ReactCompilerGating.isReactCompilerEnabled() 
     }
     return items;
   }, items);
-});
+};

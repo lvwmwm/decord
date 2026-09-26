@@ -1,11 +1,11 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 8098
+// Function ID: 8099
 // Name: getDeviceSpecificString
-// Dependencies: [1119, 1613, 2]
+// Dependencies: [1115, 1609, 2]
 // Exports: getDeviceSpecificString
 
-// Module 8103 (getDeviceSpecificString)
-import util from "util" /* 1119 */;
+// Module 8098 (getDeviceSpecificString)
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");

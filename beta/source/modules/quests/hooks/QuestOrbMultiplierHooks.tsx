@@ -1,14 +1,14 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 11584
+// Function ID: 11585
 // Name: QuestOrbMultiplierHooks
-// Dependencies: [1376, 558, 568, 504, 10614, 4450, 2]
+// Dependencies: [1372, 504, 11585, 4446, 2]
+// Exports: useQuestOrbMultiplierEligibility
 
-// Module 10613 (QuestOrbMultiplierHooks)
+// Module 11584 (QuestOrbMultiplierHooks)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10614 */;
-import UserStore from "UserStore" /* 1376 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 11585 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStandardSub) {
@@ -19,10 +19,10 @@ function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStanda
     if (obj2.canUseMoreQuestOrbs(isFractionalPremiumWithNoStandardSub)) {
       const questOrbMultiplierSource = QuestOrbMultiplierUtils.getQuestOrbMultiplierSource(isFractionalPremiumWithNoStandardSub);
       if (questOrbMultiplierSource === QuestOrbMultiplierUtils.QuestOrbMultiplierSource.XBOX_GAME_PASS) {
-        QuestOrbMultiplierEligibilityType2 = tmp3(10614).QuestOrbMultiplierEligibilityType;
+        QuestOrbMultiplierEligibilityType2 = tmp3(11585).QuestOrbMultiplierEligibilityType;
         let NITRO = QuestOrbMultiplierEligibilityType2.XBOX_GAME_PASS;
       } else {
-        NITRO = tmp3(10614).QuestOrbMultiplierEligibilityType.NITRO;
+        NITRO = tmp3(11585).QuestOrbMultiplierEligibilityType.NITRO;
       }
     } else {
       let result;
@@ -36,27 +36,11 @@ function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStanda
   }
   return INELIGIBLE;
 }
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/hooks/QuestOrbMultiplierHooks.tsx");
 
-export const useQuestOrbMultiplierEligibility = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function u() {
-      return getQuestOrbMultiplierEligibilityForUser(currentUser.getCurrentUser());
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+export const useQuestOrbMultiplierEligibility = function useQuestOrbMultiplierEligibility() {
   const items = [UserStore];
   return initialize.useStateFromStores(items, () => getQuestOrbMultiplierEligibilityForUser(currentUser.getCurrentUser()));
-});
+};
 export { getQuestOrbMultiplierEligibilityForUser };

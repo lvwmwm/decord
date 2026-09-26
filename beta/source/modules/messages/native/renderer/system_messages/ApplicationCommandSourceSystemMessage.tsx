@@ -1,15 +1,15 @@
-// Module ID: 8304
-// Function ID: 8305
+// Module ID: 8299
+// Function ID: 8300
 // Name: ApplicationCommandSourceSystemMessage
-// Dependencies: [1078, 5245, 8305, 8255, 1119, 8257, 8259, 2]
+// Dependencies: [1074, 5243, 8300, 8250, 1115, 8252, 8254, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 8304 (ApplicationCommandSourceSystemMessage)
-import Constants from "Constants" /* 1078 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5245 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8257 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8259 */;
-import ApplicationCommands from "ApplicationCommands" /* 8305 */;
+// Module 8299 (ApplicationCommandSourceSystemMessage)
+import Constants from "Constants" /* 1074 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5243 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8252 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8254 */;
+import ApplicationCommands from "ApplicationCommands" /* 8300 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
@@ -25,8 +25,8 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
   }
   if (null != applicationCommand) {
     if (null != name) {
-      const messageAuthorWithProcessedColor = tmp(8255).getMessageAuthorWithProcessedColor(message);
-      const intl = tmp(1119).intl;
+      const messageAuthorWithProcessedColor = tmp(8250).getMessageAuthorWithProcessedColor(message);
+      const intl = tmp(1115).intl;
       const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, commandName: null, applicationName: null };
       const obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
       obj2.usernameOnClick = formatUsernameOnClickDefault(obj3);
@@ -39,7 +39,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
       const obj4 = { content: null };
       obj2.commandName = name2;
       obj2.applicationName = name;
-      obj4.content = intl.formatToParts(tmp(1119).t["1Zm+zw"], obj2);
+      obj4.content = intl.formatToParts(tmp(1115).t["1Zm+zw"], obj2);
       const merged = Object.assign(createCommonMessageDefault(message));
       return obj4;
     }

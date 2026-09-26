@@ -1,18 +1,18 @@
-// Module ID: 571
-// Function ID: 572
+// Module ID: 567
+// Function ID: 568
 // Name: LoggingUtils
-// Dependencies: [4, 572, 573, 2]
+// Dependencies: [4, 568, 569, 2]
 
-// Module 571 (LoggingUtils)
+// Module 567 (LoggingUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
-import _mod572 from "module_572" /* 572 */;
-import u from "u" /* 573 */;
+import _mod568 from "module_568" /* 568 */;
+import u from "u" /* 569 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const logger = new logger_Logger.Logger("Flux");
-const EventEmitter = _mod572.EventEmitter;
+const EventEmitter = _mod568.EventEmitter;
 class ActionLogger extends EventEmitter {
   constructor() {
     obj = global;

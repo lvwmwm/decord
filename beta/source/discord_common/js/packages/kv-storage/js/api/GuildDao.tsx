@@ -1,11 +1,11 @@
-// Module ID: 2086
-// Function ID: 2087
+// Module ID: 2082
+// Function ID: 2083
 // Name: GuildDao
-// Dependencies: [2079, 2081, 2]
+// Dependencies: [2075, 2077, 2]
 
-// Module 2086 (GuildDao)
-import Table from "Table" /* 2079 */;
-import TableId from "TableId" /* 2081 */;
+// Module 2082 (GuildDao)
+import Table from "Table" /* 2075 */;
+import TableId from "TableId" /* 2077 */;
 import size from "module_2" /* 2 */;
 
 let GuildDao;
@@ -186,7 +186,7 @@ prototype2["putWithGeneration"] = function putWithGeneration(arg0, arg1, data, g
   if (arg4 === undefined) {
     Replace = TableId.ConflictOptions.Replace;
   }
-  state = this.state;
+  const state = this.state;
   const obj = { key: null, data, generation };
   const items = [arg0, arg1];
   obj.key = items;
@@ -203,13 +203,13 @@ prototype2["delete"] = function delete(arg0, arg1) {
     const items = [arg0];
     state2.delete(items);
   } else {
-    state = self.state;
+    const state = self.state;
     const items1 = [arg0, arg1];
     state.delete(items1);
   }
 };
 prototype2["deleteGeneration"] = function deleteGeneration(arg0, arg1) {
-  state = this.state;
+  const state = this.state;
   return state.deleteGeneration([], arg0, arg1);
 };
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/GuildDao.tsx");

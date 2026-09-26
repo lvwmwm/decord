@@ -1,49 +1,23 @@
-// Module ID: 10440
-// Function ID: 10441
+// Module ID: 11688
+// Function ID: 11689
 // Name: useShouldShowInitialSafetyToolsButtonTooltip
-// Dependencies: [10396, 558, 568, 10439, 504, 2]
+// Dependencies: [11208, 11687, 504, 2]
+// Exports: useShouldShowInitialSafetyToolsButtonTooltip
 
-// Module 10440 (useShouldShowInitialSafetyToolsButtonTooltip)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10396 */;
+// Module 11688 (useShouldShowInitialSafetyToolsButtonTooltip)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11208 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useShouldShowInitialSafetyToolsButtonTooltip.tsx");
 
-export const useShouldShowInitialSafetyToolsButtonTooltip = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  const obj = require("c");
-  const tmp = _require;
-  const inappropriateConversationSafetyToolsWarningForChannel = require("useInappropriateConversationSafetyToolsWarningForChannel").useInappropriateConversationSafetyToolsWarningForChannel(arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelSafetyWarningsStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      return ChannelSafetyWarningsStore.hasShownInitialTooltipForChannel(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const obj2 = require("useInappropriateConversationSafetyToolsWarningForChannel");
-  const tmpResult = tmp(504);
-  return null != inappropriateConversationSafetyToolsWarningForChannel && !tmp(504).useStateFromStores(first, tmp7);
-}) : ((arg0) => {
-  _require = arg0;
-  const inappropriateConversationSafetyToolsWarningForChannel = require("useInappropriateConversationSafetyToolsWarningForChannel").useInappropriateConversationSafetyToolsWarningForChannel(arg0);
+export const useShouldShowInitialSafetyToolsButtonTooltip = function useShouldShowInitialSafetyToolsButtonTooltip(channelId) {
+  _require = channelId;
+  const inappropriateConversationSafetyToolsWarningForChannel = require("useInappropriateConversationSafetyToolsWarningForChannel").useInappropriateConversationSafetyToolsWarningForChannel(channelId);
   const obj = require("useInappropriateConversationSafetyToolsWarningForChannel");
   const items = [ChannelSafetyWarningsStore];
   const obj2 = require("initialize");
   return null != inappropriateConversationSafetyToolsWarningForChannel && !require("initialize").useStateFromStores(items, () => ChannelSafetyWarningsStore.hasShownInitialTooltipForChannel(closure_0));
-});
+};

@@ -1,22 +1,22 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 10131
+// Function ID: 10132
 // Name: Autocompleter
-// Dependencies: [10111, 10112, 2100, 4441, 1376, 5766, 5693, 10113, 2028, 5770, 10115, 2013, 4773, 4778, 1933, 1370, 12, 5769, 2]
+// Dependencies: [10132, 10133, 2096, 4437, 1372, 5764, 5691, 10134, 2024, 5768, 10136, 2009, 4771, 4776, 1929, 1366, 12, 5767, 2]
 
-// Module 10110 (Autocompleter)
+// Module 10131 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
-import _modDef1933 from "module_1933" /* 1933 */;
-import StringUtils from "StringUtils" /* 2013 */;
-import findCodedLinks from "findCodedLinks" /* 4773 */;
-import CodedLink from "CodedLink" /* 4778 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5693 */;
-import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5769 */;
-import GuildUtilsDefault from "GuildUtils" /* 5770 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 10113 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 10111 */;
-import LinkRecord from "LinkRecord" /* 10112 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import _modDef1929 from "module_1929" /* 1929 */;
+import StringUtils from "StringUtils" /* 2009 */;
+import findCodedLinks from "findCodedLinks" /* 4771 */;
+import CodedLink from "CodedLink" /* 4776 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5691 */;
+import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5767 */;
+import GuildUtilsDefault from "GuildUtils" /* 5768 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 10134 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 10132 */;
+import LinkRecord from "LinkRecord" /* 10133 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const AutocompleteUtilsDefault = AutocompleteUtils;
 
@@ -29,9 +29,9 @@ function getAutocompleterBoosterMap(USER, options) {
   }
   return boosterMap;
 }
-const GUILD_VOCAL_CHANNELS_KEY = fn(2100).GUILD_VOCAL_CHANNELS_KEY;
-fn(5766).AutocompleterResultTypes;
-let options = Object.freeze({});
+const GUILD_VOCAL_CHANNELS_KEY = fn(2096).GUILD_VOCAL_CHANNELS_KEY;
+fn(5764).AutocompleterResultTypes;
+const React7 = Object.freeze({});
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/autocompleter/Autocompleter.tsx");
 class Autocompleter {
@@ -163,11 +163,11 @@ prototype["setLimit"] = function setLimit(_limit) {
 prototype["setRefetchForSingleCategoryLimit"] = function setRefetchForSingleCategoryLimit(_refetchForSingleCategoryLimit) {
   this._refetchForSingleCategoryLimit = _refetchForSingleCategoryLimit;
 };
-prototype["setResultTypes"] = function setResultTypes(resultTypes) {
+prototype["setResultTypes"] = function setResultTypes(items) {
   let set = null;
-  if (null != resultTypes) {
+  if (null != items) {
     const _Set = Set;
-    set = new Set(resultTypes);
+    set = new Set(items);
   }
   const self = this;
   this.resultTypes = set;
@@ -547,11 +547,11 @@ prototype["queryLink"] = function queryLink(query) {
       type = findCodedLinkResult.type;
     }
     if (type === CodedLink.CodedLinkType.INVITE) {
-      const obj2 = { type: tmp.LINK, record: LinkRecord.fromInviteCode(findCodedLinkResult.code), score: tmp3(5693).calculateScore(11) };
+      const obj2 = { type: tmp.LINK, record: LinkRecord.fromInviteCode(findCodedLinkResult.code), score: tmp3(5691).calculateScore(11) };
       const items = [obj2];
       return items;
     } else {
-      const sanitizeUrlResult = _modDef1933.sanitizeUrl(query);
+      const sanitizeUrlResult = _modDef1929.sanitizeUrl(query);
       try {
         const _URL = URL;
         const uRL = new URL(sanitizeUrlResult);
@@ -560,7 +560,7 @@ prototype["queryLink"] = function queryLink(query) {
         if (undefined !== hostname) {
           str = hostname;
         }
-        let isDiscordHostnameResult = tmp17(1370).isDiscordHostname(str);
+        let isDiscordHostnameResult = tmp17(1366).isDiscordHostname(str);
         if (!isDiscordHostnameResult) {
           const _window = window;
           isDiscordHostnameResult = window.location.host === uRL.host;
@@ -568,16 +568,16 @@ prototype["queryLink"] = function queryLink(query) {
         if (null !== pathname) {
           if (isDiscordHostnameResult) {
             if (tmp17Result2.isAppRoute(pathname)) {
-              const obj3 = { type: tmp.LINK, record: LinkRecord.fromPath(pathname), score: tmp3(5693).calculateScore(11) };
+              const obj3 = { type: tmp.LINK, record: LinkRecord.fromPath(pathname), score: tmp3(5691).calculateScore(11) };
               const items1 = [obj3];
               let items2 = items1;
-              const tmp3Result2 = tmp3(5693);
+              const tmp3Result2 = tmp3(5691);
             }
             return items2;
           }
         }
         items2 = [];
-        const tmp17Result = tmp17(1370);
+        const tmp17Result = tmp17(1366);
       } catch (err) {
         return [];
       }

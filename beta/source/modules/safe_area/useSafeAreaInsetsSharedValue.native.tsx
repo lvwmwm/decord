@@ -1,16 +1,16 @@
-// Module ID: 10383
-// Function ID: 10384
+// Module ID: 11645
+// Function ID: 11646
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [4529, 1616, 9762, 10384, 1629, 558, 1485, 2]
+// Dependencies: [4524, 1612, 9766, 11646, 1625, 1481, 2]
+// Exports: default
 
-// Module 10383 (useSafeAreaInsetsSharedValue)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1485 */;
-import AppEntryKey from "AppEntryKey" /* 1629 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9762 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10384 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4529 */;
-import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1616 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11645 (useSafeAreaInsetsSharedValue)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
+import AppEntryKey from "AppEntryKey" /* 1625 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9766 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11646 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4524 */;
+import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1612 */;
 import size from "module_2" /* 2 */;
 
 let obj = { main: null, share: null };
@@ -34,10 +34,14 @@ while (iter !== undefined) {
   continue;
 }
 const __initData = { code: "function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1(appEntryKey='main'){const{safeAreaInsetsSharedValues}=this.__closure;return safeAreaInsetsSharedValues[appEntryKey].get();}" };
-const obj2 = {};
-const obj3 = {};
-const tmp5 = (() => {
-  export function getSafeAreaInsetsWorklet() {
+const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
+
+export default function useSafeAreaInsetsSharedValue() {
+  obj = AppEntryKeyContext;
+  return obj[obj.useAppEntryKey(obj)];
+};
+export const getSafeAreaInsetsWorklet = (() => {
+  function getSafeAreaInsetsWorklet() {
     let str = arg0;
     if (arg0 === undefined) {
       str = "main";
@@ -50,12 +54,3 @@ const tmp5 = (() => {
   getSafeAreaInsetsWorklet.__initData = __initData;
   return getSafeAreaInsetsWorklet;
 })();
-const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
-
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  obj = AppEntryKeyContext;
-  return obj[obj.useAppEntryKey(obj)];
-}) : (() => {
-  obj = AppEntryKeyContext;
-  return obj[obj.useAppEntryKey(obj)];
-});

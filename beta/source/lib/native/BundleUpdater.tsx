@@ -1,20 +1,20 @@
-// Module ID: 11956
-// Function ID: 11957
+// Module ID: 12074
+// Function ID: 12075
 // Name: BundleUpdater
-// Dependencies: [5, 17, 1078, 3, 1368, 81, 1984, 4975, 1245, 5118, 2]
+// Dependencies: [5, 17, 1074, 3, 1364, 81, 1980, 4973, 1241, 5116, 2]
 
-// Module 11956 (BundleUpdater)
+// Module 12074 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import _mod4975 from "module_4975" /* 4975 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5118 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import _mod4973 from "module_4973" /* 4973 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5116 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ NativeModules, NativeEventEmitter } = get_ActivityIndicator);
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 let closure_5 = new LoggerDefault("BundleUpdater");
 const BundleUpdaterManager = NativeModules.BundleUpdaterManager;
 const nativeEventEmitter = new NativeEventEmitter(BundleUpdaterManager);
@@ -64,7 +64,7 @@ prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -128,7 +128,7 @@ prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
   })();
 };
 prototype["emitOtaMetric"] = function emitOtaMetric(item10010) {
-  const match = _mod4975.match(item10010);
+  const match = _mod4973.match(item10010);
   const withResult = match.with({ type: "OtaCheckAttempt" }, (result) => {
     closure_1_5.verbose("OTA check attempt", result);
     AnalyticsUtilsDefault.track(constants.MOBILE_OTA_CHECK_ATTEMPT, { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming });

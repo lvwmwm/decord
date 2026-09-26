@@ -1,21 +1,21 @@
-// Module ID: 17736
-// Function ID: 17737
+// Module ID: 17727
+// Function ID: 17728
 // Name: AgeGateManager
-// Dependencies: [5, 2045, 2099, 4612, 1103, 1078, 7397, 5000, 4993, 17737, 1984, 1098, 2]
+// Dependencies: [5, 2041, 2095, 4609, 1099, 1074, 7395, 4998, 4991, 17728, 1980, 1094, 2]
 
-// Module 17736 (AgeGateManager)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import AgeGateUtils from "AgeGateUtils" /* 5000 */;
+// Module 17727 (AgeGateManager)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import AgeGateUtils from "AgeGateUtils" /* 4998 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const AgeGateConstants = fn(1103);
+const AgeGateConstants = fn(1099);
 ({ EXISTING_USER_AGE_GATE_MODAL_KEY: closure_7, AgeGateSource: closure_8 } = AgeGateConstants);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelTypes: closure_9, GuildNSFWContentLevel: c10 } = Constants);
 class AgeGateManager extends tmp4 {
   constructor() {

@@ -1,29 +1,18 @@
-// Module ID: 16719
-// Function ID: 16720
+// Module ID: 16710
+// Function ID: 16711
 // Name: YouBarActivityStatusExperiment
-// Dependencies: [1439, 558, 568, 2]
+// Dependencies: [1435, 2]
+// Exports: useYouBarActivityStatusEnabled
 
-// Module 16719 (YouBarActivityStatusExperiment)
-import c from "c" /* 568 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
+// Module 16710 (YouBarActivityStatusExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
-require = fn;
-let tmp2 = apex_ApexExperimentDefault({ name: "2026-05-you-bar-activity-status", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-let closure_2 = tmp2;
-const ReactCompilerGating = fn(558);
+const tmp2 = apex_ApexExperimentDefault({ name: "2026-05-you-bar-activity-status", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let closure_0 = tmp2;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarActivityStatusExperiment.tsx");
 
 export const YouBarActivityStatusExperiment = tmp2;
-export const useYouBarActivityStatusEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    let tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => closure_2.useConfig({ location }).enabled);
+export const useYouBarActivityStatusEnabled = function useYouBarActivityStatusEnabled(YouBar) {
+  return closure_0.useConfig({ location: YouBar }).enabled;
+};

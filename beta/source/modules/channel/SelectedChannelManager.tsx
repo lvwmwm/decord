@@ -1,21 +1,21 @@
-// Module ID: 17901
-// Function ID: 17902
+// Module ID: 17892
+// Function ID: 17893
 // Name: SelectedChannelManager
-// Dependencies: [1996, 2099, 4612, 1078, 7397, 7618, 5662, 1105, 577, 2]
+// Dependencies: [1992, 2095, 4609, 1074, 7395, 7616, 5660, 1101, 573, 2]
 
-// Module 17901 (SelectedChannelManager)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import router_utils from "router_utils" /* 1105 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5662 */;
-import transitionToGuild from "transitionToGuild" /* 7618 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 17892 (SelectedChannelManager)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import router_utils from "router_utils" /* 1101 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5660 */;
+import transitionToGuild from "transitionToGuild" /* 7616 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const findFirstVoiceChannelId = fn(2099).findFirstVoiceChannelId;
-const Constants = fn(1078);
+const findFirstVoiceChannelId = fn(2095).findFirstVoiceChannelId;
+const Constants = fn(1074);
 ({ ChannelTypes: closure_7, Routes: closure_8, ME: closure_9, NULL_STRING_GUILD_ID: c10 } = Constants);
 class SelectedChannelManager extends tmp3 {
   constructor() {
@@ -27,7 +27,7 @@ class SelectedChannelManager extends tmp3 {
 const prototype = SelectedChannelManager.prototype;
 prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   guild = guild.guild;
-  const channelId = SelectedChannelStore.getChannelId(options);
+  const channelId = SelectedChannelStore.getChannelId(React7);
   const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
   if (guild.id === channelId) {
     transitionToGuild.transitionToGuild(guild.id);
@@ -47,9 +47,9 @@ prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
   channel = channel.channel;
   if (channel.type === constants.GROUP_DM) {
     const originChannelId = channel.originChannelId;
-    const channelId = SelectedChannelStore.getChannelId(v65535);
+    const channelId = SelectedChannelStore.getChannelId(closure_1_10);
     if (tmp) {
-      router_utils.transitionTo(closure_1_8.CHANNEL(options, channel.id));
+      router_utils.transitionTo(React6.CHANNEL(React7, channel.id));
     }
     tmp = null == SelectedGuildStore.getGuildId() && null != originChannelId && originChannelId === channelId;
     if (tmp7) {

@@ -1,9 +1,9 @@
 // Module ID: 14153
 // Function ID: 14154
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 14153
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b3429e38ab32663de7a271eafbda6e13", name: "ChannelListMagnifyingGlassIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "928ec3b0cfa6ddcb7b852c71960488c7", name: "Share", type: "png" });

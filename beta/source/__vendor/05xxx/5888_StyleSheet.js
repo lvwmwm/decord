@@ -1,7 +1,7 @@
 // Module ID: 5888
 // Function ID: 5889
 // Name: StyleSheet
-// Dependencies: [109, 32, 19, 17, 21, 1489, 5889]
+// Dependencies: [109, 32, 19, 17, 21, 1485, 5889]
 // Exports: Badge
 
 // Module 5888 (StyleSheet)

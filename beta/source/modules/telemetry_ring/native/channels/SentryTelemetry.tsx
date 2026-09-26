@@ -1,11 +1,11 @@
-// Module ID: 14390
-// Function ID: 14391
+// Module ID: 14380
+// Function ID: 14381
 // Name: SentryTelemetry
-// Dependencies: [1990, 1991, 2]
+// Dependencies: [1986, 1987, 2]
 
-// Module 14390 (SentryTelemetry)
-import TelemetryRingNative2 from "TelemetryRingNative" /* 1991 */;
-import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1990 */;
+// Module 14380 (SentryTelemetry)
+import TelemetryRingNative2 from "TelemetryRingNative" /* 1987 */;
+import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1986 */;
 
 const TelemetryRingNative = TelemetryRingNative2;
 
@@ -24,7 +24,7 @@ const prototype = SentryTelemetryImpl.prototype;
 prototype["snapshotForBreadcrumbs"] = function snapshotForBreadcrumbs() {
   return this.snapshot(-1, closure_3);
 };
-let items = [fn(1991).TelemetryChannel.SENTRY];
+let items = [fn(1987).TelemetryChannel.SENTRY];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/telemetry_ring/native/channels/SentryTelemetry.tsx");
 

@@ -1,27 +1,27 @@
-// Module ID: 7820
-// Function ID: 7821
+// Module ID: 7815
+// Function ID: 7816
 // Name: CollectiblesActionCreators
-// Dependencies: [5, 4789, 2113, 7821, 7835, 7836, 7837, 7838, 7842, 7823, 7848, 7849, 1080, 1078, 7863, 7864, 4649, 577, 7865, 7866, 7868, 1275, 4691, 7615, 7867, 7833, 7869, 7870, 2]
+// Dependencies: [5, 4787, 2109, 7816, 7830, 7831, 7832, 7833, 7837, 7818, 7843, 7844, 1076, 1074, 7858, 7859, 4646, 573, 7860, 7861, 7863, 1271, 4688, 7613, 7862, 7828, 7864, 7865, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 7820 (CollectiblesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
-import LayerActionCreators from "LayerActionCreators" /* 7865 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7866 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7867 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7868 */;
-import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType" /* 7869 */;
+// Module 7815 (CollectiblesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7828 */;
+import LayerActionCreators from "LayerActionCreators" /* 7860 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7861 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7862 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7863 */;
+import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType" /* 7864 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 4789 */;
-import LocaleStore from "LocaleStore" /* 2113 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7836 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 7837 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7823 */;
-import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord" /* 7848 */;
+import DevSettingsStore from "DevSettingsStore" /* 4787 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7831 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 7832 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7818 */;
+import CollectiblesPurchaseRecord from "CollectiblesPurchaseRecord" /* 7843 */;
 
 require = fn;
 function openCollectiblesShop(arg0) {
@@ -69,7 +69,7 @@ let closure_19 = async function _fetchCollectiblesCategories(arg0, arg1) {
   closure_132_0 = closure_0;
   closure_132_1 = closure_1;
   closure_132_2 = closure_2;
-  options = closure_0;
+  let options = closure_0;
   if (closure_0 == null) {
     options = {};
   }
@@ -191,7 +191,7 @@ let closure_20 = async function _fetchCollectiblesPurchases(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -373,7 +373,7 @@ let closure_23 = async function _maybeFetchCollectiblesProduct(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -409,7 +409,7 @@ let closure_23 = async function _maybeFetchCollectiblesProduct(arg0, value) {
         return obj;
       }
       c2 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp9) {
       c2 = tmp;
       throw tmp9;
@@ -437,7 +437,7 @@ let closure_24 = async function _claimPremiumCollectiblesProduct(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -496,7 +496,7 @@ let closure_24 = async function _claimPremiumCollectiblesProduct(arg0, value) {
         closure_130_1(closure_130_2[17]).dispatch(obj11);
         c4 = 0;
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp29) {
       closure_3 = tmp29;
@@ -524,7 +524,7 @@ let closure_25 = async function _validateCollectiblesRecipient(recipient_id, sku
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -598,7 +598,7 @@ let closure_26 = async function _validateCollectiblesRecipientsBatch(recipient_i
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -674,7 +674,7 @@ let closure_27 = async function _fetchCollectiblesMarketings(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -700,7 +700,7 @@ let closure_27 = async function _fetchCollectiblesMarketings(arg0) {
             closure_129_2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -879,7 +879,7 @@ let closure_29 = async function _claimCollectiblesCategoryReward(category_id, sk
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -938,7 +938,7 @@ let closure_29 = async function _claimCollectiblesCategoryReward(category_id, sk
           closure_131_1(closure_131_2[17]).dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp29) {
         closure_4 = tmp29;
@@ -963,7 +963,7 @@ let closure_30 = async function _maybeFetchCollectiblesShopTabLayout(arg0, value
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -987,7 +987,7 @@ let closure_30 = async function _maybeFetchCollectiblesShopTabLayout(arg0, value
           closure_129_4 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp7) {
@@ -1059,15 +1059,15 @@ let closure_30 = async function _maybeFetchCollectiblesShopTabLayout(arg0, value
     }
   }
 };
-const addDebugLog = fn(7835).addDebugLog;
-let closure_10 = fn(7838).CollectiblesCategoriesRecord;
-let closure_11 = fn(7842).CollectiblesMarketingsRecord;
-let closure_14 = fn(7849).CollectiblesShopHomeRecord;
-const constants = fn(1080).CollectiblesMobileShopScreen;
-const Constants = fn(1078);
+const addDebugLog = fn(7830).addDebugLog;
+let closure_10 = fn(7833).CollectiblesCategoriesRecord;
+let closure_11 = fn(7837).CollectiblesMarketingsRecord;
+let closure_14 = fn(7844).CollectiblesShopHomeRecord;
+const constants = fn(1076).CollectiblesMobileShopScreen;
+const Constants = fn(1074);
 ({ Endpoints: closure_16, Routes, UserSettingsSections: closure_17 } = Constants);
-const CollectiblesMarketingsStore = fn(7863);
-const CollectiblesShopHomeStore = fn(7864);
+const CollectiblesMarketingsStore = fn(7858);
+const CollectiblesShopHomeStore = fn(7859);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/CollectiblesActionCreators.tsx");
 
@@ -1075,7 +1075,7 @@ export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesP
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
-  const rootNavigationRef = isCollectiblesShopRoute(4649).getRootNavigationRef();
+  const rootNavigationRef = isCollectiblesShopRoute(4646).getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
@@ -1110,7 +1110,7 @@ export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
             iter.return();
             return tmp2;
           } else {
-            state = tmp2.state;
+            let state = tmp2.state;
             routes = undefined;
             if (state != null) {
               routes = state.routes;

@@ -1,69 +1,22 @@
-// Module ID: 16295
-// Function ID: 16296
+// Module ID: 16285
+// Function ID: 16286
 // Name: useMultiAccount
-// Dependencies: [19, 1376, 12598, 558, 568, 504, 577, 12602, 2]
+// Dependencies: [19, 1372, 12696, 504, 573, 12700, 2]
+// Exports: useMultiAccountUsers
 
-// Module 16295 (useMultiAccount)
+// Module 16285 (useMultiAccount)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
-import MultiAccountStore from "MultiAccountStore" /* 12598 */;
+import UserStore from "UserStore" /* 1372 */;
+import MultiAccountStore from "MultiAccountStore" /* 12696 */;
 
 require = fn;
-const MultiAccountTokenStatus = fn(12598).MultiAccountTokenStatus;
-const ReactCompilerGating = fn(558);
+const MultiAccountTokenStatus = fn(12696).MultiAccountTokenStatus;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/multi_account/useMultiAccount.tsx");
 
-export const useMultiAccountUsers = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [MultiAccountStore, UserStore];
-    const fn = function c() {
-      users = users.getUsers();
-      currentUser = currentUser.getCurrentUser();
-      if (null != currentUser) {
-        if (!users.some((id) => id.id === currentUser.id)) {
-          let obj2 = { isLoading: obj.getIsValidatingUsers(), multiAccountUsers: null };
-          const obj3 = { id: null, avatar: null, username: null, discriminator: null, tokenStatus: null, pushSyncToken: null };
-          ({ id: obj4.id, avatar: obj4.avatar, username: obj4.username, discriminator: obj4.discriminator } = currentUser);
-          obj3.tokenStatus = constants.VALID;
-          const items = [obj3];
-          HermesBuiltin.arraySpread(users, 1);
-          obj2.multiAccountUsers = items;
-        }
-        return obj2;
-      }
-      obj2 = { isLoading: users.getIsValidatingUsers(), multiAccountUsers: users };
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStoresObject = initialize.useStateFromStoresObject(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function v() {
-      DispatcherDefault.wait(() => {
-        const result = closure_1_2(closure_1_3[7]).validateMultiAccountTokens();
-      });
-    };
-    const items1 = [];
-    cResult[2] = fn2;
-    cResult[3] = items1;
-    let tmp10 = items1;
-    let tmp9 = fn2;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const effect = noop.useEffect(tmp9, tmp10);
-  return stateFromStoresObject;
-}) : (() => {
+export const useMultiAccountUsers = function useMultiAccountUsers() {
   let items = [MultiAccountStore, UserStore];
   const stateFromStoresObject = initialize.useStateFromStoresObject(items, () => {
     users = users.getUsers();
@@ -84,8 +37,8 @@ export const useMultiAccountUsers = ReactCompilerGating.isReactCompilerEnabled()
   });
   const effect = noop.useEffect(() => {
     DispatcherDefault.wait(() => {
-      const result = closure_1_2(closure_1_3[7]).validateMultiAccountTokens();
+      const result = closure_1_2(closure_1_3[5]).validateMultiAccountTokens();
     });
   }, []);
   return stateFromStoresObject;
-});
+};

@@ -1,16 +1,16 @@
-// Module ID: 8485
-// Function ID: 8486
+// Module ID: 8480
+// Function ID: 8481
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 5809, 4441, 3, 1376, 1984, 8486, 8487, 2023, 8488, 4757, 8506, 2]
+// Dependencies: [5, 5807, 4437, 3, 1372, 1980, 8481, 8482, 2019, 8483, 4755, 8501, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8485 (showUserProfileActionSheet)
+// Module 8480 (showUserProfileActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
 require = fn;
 function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
@@ -21,7 +21,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
     const isBlockedResult = RelationshipStore.isBlocked(ignoreBlockedSpeedBump.userId);
     const isIgnoredResult = RelationshipStore.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      const tmp8 = tmp2(1984)(8488, tmp3.paths);
+      const tmp8 = tmp2(1980)(8483, tmp3.paths);
       const obj = ActionSheetActionCreatorsDefault;
       const _HermesInternal = HermesInternal;
       const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
@@ -36,7 +36,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       obj.openLazy(tmp8, combined, obj2, str);
     }
   }
-  const tmp20 = asyncRequireImpl(8506, dependencyMap.paths);
+  const tmp20 = asyncRequireImpl(8501, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   const obj4 = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);
@@ -46,7 +46,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
   }
   ActionSheetActionCreatorsDefault.openLazy(tmp20, combined1, obj4, str);
 }
-fn(5809).addPostConnectionCallback;
+fn(5807).addPostConnectionCallback;
 let closure_6 = new LoggerDefault("showUserProfileActionSheet");
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
@@ -74,7 +74,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -155,7 +155,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
             showUserProfileActionSheet(closure_129_0);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp40) {
         if (tmp4 === c3) {

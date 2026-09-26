@@ -1,70 +1,31 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15138
+// Function ID: 15139
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6866, 8270, 1078, 558, 15094, 568, 504, 5142, 1119, 5239, 15132, 15133, 11630, 2]
+// Dependencies: [6868, 8265, 1074, 15098, 504, 5140, 1115, 5237, 15136, 15137, 11754, 2]
 
-// Module 15134 (UseDataToCustomizeDiscordSetting)
+// Module 15138 (UseDataToCustomizeDiscordSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
-import common_AlertDefault from "common/Alert" /* 5239 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15094 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 15132 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15133 */;
-import ConsentStore from "ConsentStore" /* 6866 */;
+import util from "util" /* 1115 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 15136 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15137 */;
+import ConsentStore from "ConsentStore" /* 6868 */;
 
 require = fn;
-const Consents = fn(1078).Consents;
-let ReactCompilerGating = fn(558);
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = fn(558);
-fn = () => useParentalControlSettings.useIsParentallyControlled();
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConsentStore];
-    const fn = function o() {
-      return ConsentStore.hasConsented(constants.PERSONALIZATION);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
-  const items = [ConsentStore];
-  return initialize.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
-});
+const Consents = fn(1074).Consents;
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.MNKzyg);
   },
-  parent: fn(8270).MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(2);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [ConsentStore];
-      const fn = function o() {
-        return ConsentStore.hasConsented(constants.PERSONALIZATION);
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp4 = items;
-      tmp5 = fn;
-    } else {
-      [tmp4, tmp5] = cResult;
-    }
-    return initialize.useStateFromStores(tmp4, tmp5);
-  }) : (() => {
+  parent: fn(8265).MobileUserSettings.DATA_AND_PRIVACY,
+  useValue: function useDataToCustomizeDiscordSettingValue() {
     const items = [ConsentStore];
     return initialize.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
-  }),
+  },
   onValueChange: function handlePersonalizationChange(arg0) {
     if (arg0) {
       let items = [Consents.PERSONALIZATION];
@@ -88,9 +49,11 @@ const toggle = SettingBuilders.createToggle({
       AlertActionCreatorsDefault.show(obj2);
     }
   },
-  useIsDisabled: fn
+  useIsDisabled() {
+    return useParentalControlSettings.useIsParentallyControlled();
+  }
 });
 const size = fn(2);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataToCustomizeDiscordSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataToCustomizeDiscordSetting.tsx");
 
 export default toggle;

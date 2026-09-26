@@ -1,19 +1,19 @@
-// Module ID: 11076
-// Function ID: 11077
+// Module ID: 11039
+// Function ID: 11040
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 4772, 1378, 1089, 3, 7705, 1368, 4384, 4465, 2]
+// Dependencies: [5, 19, 4770, 1374, 1085, 3, 7703, 1364, 4380, 4461, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 11076 (createOrReuseGiftOrder)
+// Module 11039 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import _modDef4384 from "module_4384" /* 4384 */;
+import _modDef4380 from "module_4380" /* 4380 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const ItemPurchaseType = fn(4772).ItemPurchaseType;
-const SubscriptionPlanInfo = fn(1378).SubscriptionPlanInfo;
-const PaymentGateways = fn(1089).PaymentGateways;
+const ItemPurchaseType = fn(4770).ItemPurchaseType;
+const SubscriptionPlanInfo = fn(1374).SubscriptionPlanInfo;
+const PaymentGateways = fn(1085).PaymentGateways;
 let closure_8 = new LoggerDefault("createOrReuseGiftOrder");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/payments/native/utils/createOrReuseGiftOrder.tsx");
@@ -34,7 +34,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
               let skuId;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -78,9 +78,9 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
               } else {
                 skuId = closure_129_3.skuId;
                 c4 = 1;
-                let getOrCreateOrder = _location(7705).getOrCreateOrder;
+                let getOrCreateOrder = _location(7703).getOrCreateOrder;
                 const obj6 = { skuId, paymentGateway: null, recipientUserId: null, purchaseType: null, isGift: true, createdAfter: null, subscriptionPlanId: null, externalGatewayFacet: null };
-                const tmp60 = _location(7705);
+                const tmp60 = _location(7703);
                 let obj8 = PaymentGateways;
                 if (obj16.isAndroid()) {
                   let APPLE = obj8.GOOGLE;
@@ -90,10 +90,10 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
                 obj6.paymentGateway = APPLE;
                 obj6.recipientUserId = closure_129_1;
                 obj6.purchaseType = constants.ONE_TIME;
-                obj16 = _location(1368);
-                const obj7 = _modDef4384();
-                const utcResult = _modDef4384().utc();
-                obj6.createdAfter = _modDef4384().utc().subtract(_location(7705).DRAFT_ORDER_LOOKBACK_DAYS, "days").toISOString();
+                obj16 = _location(1364);
+                const obj7 = _modDef4380();
+                const utcResult = _modDef4380().utc();
+                obj6.createdAfter = _modDef4380().utc().subtract(_location(7703).DRAFT_ORDER_LOOKBACK_DAYS, "days").toISOString();
                 obj6.subscriptionPlanId = closure_129_0;
                 obj8 = { line_items: null };
                 const obj9 = { external_product_id: closure_129_2 };
@@ -103,7 +103,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
                 getOrCreateOrder = getOrCreateOrder(obj6);
                 c5 = 3;
                 c6 = 1;
-                const subtractResult = _modDef4384().utc().subtract(_location(7705).DRAFT_ORDER_LOOKBACK_DAYS, "days");
+                const subtractResult = _modDef4380().utc().subtract(_location(7703).DRAFT_ORDER_LOOKBACK_DAYS, "days");
               }
             }
           } else if (2 === tmp7) {
@@ -116,7 +116,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
             const _HermesInternal = HermesInternal;
             obj12.source = "" + _location + "_createOrder";
             obj11.tags = obj12;
-            const result = _location(4465).captureBillingException(closure_129_5, obj11);
+            const result = _location(4461).captureBillingException(closure_129_5, obj11);
             throw closure_129_5;
           } else if (arg0 === 1) {
             c6 = 3;

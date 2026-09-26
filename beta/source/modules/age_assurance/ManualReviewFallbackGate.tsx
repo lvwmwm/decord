@@ -1,12 +1,12 @@
-// Module ID: 8744
-// Function ID: 8745
+// Module ID: 8739
+// Function ID: 8740
 // Name: ManualReviewFallbackGate
-// Dependencies: [5, 8745, 8727, 8746, 577, 8747, 2]
+// Dependencies: [5, 8740, 8722, 8741, 573, 8742, 2]
 // Exports: shouldShowManualReviewFallback
 
-// Module 8744 (ManualReviewFallbackGate)
-import SafetyHubUtils from "SafetyHubUtils" /* 8727 */;
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8746 */;
+// Module 8739 (ManualReviewFallbackGate)
+import SafetyHubUtils from "SafetyHubUtils" /* 8722 */;
+import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8741 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -27,7 +27,7 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -131,7 +131,7 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

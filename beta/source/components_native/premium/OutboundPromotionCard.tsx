@@ -1,74 +1,23 @@
-// Module ID: 13860
-// Function ID: 13861
+// Module ID: 13850
+// Function ID: 13851
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1078, 21, 4790, 580, 5692, 558, 568, 7428, 1119, 4780, 7429, 4786, 4725, 13729, 13861, 5143, 13862, 1984, 13727, 5220, 4757, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4788, 576, 5690, 7427, 7426, 1115, 4784, 4778, 4722, 13719, 13851, 5141, 13852, 1980, 13717, 5218, 4755, 2]
 // Exports: default
 
-// Module 13860 (OutboundPromotionCard)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4780 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+// Module 13850 (OutboundPromotionCard)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4778 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7426 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { card: { flex: 1, flexDirection: "column", paddingHorizontal: fn(1078).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 8 }, mainContainer: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, textContainer: { flexDirection: "row", flexShrink: 1, alignItems: "center" }, imageContainer: null, image: null, title: null, subText: null, claimButton: null, moreDetails: null, termsAndConditionsText: null, buttonContainer: null };
-let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5692).DARK_BLACK_500_LIGHT_PRIMARY_100 };
-obj2.imageContainer = size;
-obj2.image = { width: 28, height: 28, resizeMode: "contain" };
-obj2.title = { lineHeight: 20 };
-obj2.subText = { lineHeight: 18 };
-obj2.claimButton = { paddingHorizontal: 12 };
-obj2.moreDetails = { marginLeft: 40 };
-obj2.termsAndConditionsText = { paddingHorizontal: 16, paddingTop: 16 };
-obj2.buttonContainer = { flexGrow: 1, flexDirection: "row", marginLeft: 4, justifyContent: "flex-end" };
-let closure_9 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((termsAndConditions) => {
-  const cResult = c.c(6);
-  termsAndConditions = termsAndConditions.termsAndConditions;
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: null };
-    const intl = tmp(1119).intl;
-    obj2.title = intl.string(tmp(1119).t.PdKWVT);
-    const tmp7 = React5(tmp(7428).BottomSheetTitleHeader, obj2);
-    cResult[0] = tmp7;
-    let first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== termsAndConditions) {
-    const parsed = MarkupUtilsDefault.parse(termsAndConditions, false, { allowLinks: true });
-    cResult[1] = termsAndConditions;
-    cResult[2] = parsed;
-    let tmp8 = parsed;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] === tmp4.termsAndConditionsText) {
-    if (cResult[4] === tmp8) {
-      let tmp11 = cResult[5];
-    }
-    return tmp11;
-  }
-  const tmp12 = React5(Sheet_BottomSheet.BottomSheet, { header: first, children: React5(Text_Text.Text, { style: tmp4.termsAndConditionsText, variant: "text-sm/medium", children: tmp8 }) });
-  cResult[3] = tmp4.termsAndConditionsText;
-  cResult[4] = tmp8;
-  cResult[5] = tmp12;
-  tmp11 = tmp12;
-}) : ((termsAndConditions) => {
+function TermsAndConditionsActionSheet(termsAndConditions) {
   const obj = { header: null, children: null };
   const obj2 = { title: null };
   const intl = util.intl;
@@ -79,7 +28,23 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((termsAndCondit
   obj3.children = MarkupUtilsDefault.parse(termsAndConditions.termsAndConditions, false, { allowLinks: true });
   obj.children = React5(Text_Text.Text, obj3);
   return React5(Sheet_BottomSheet.BottomSheet, obj);
-});
+}
+get_ActivityIndicator = fn(17);
+({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
+const jsxProd = fn(21);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+const createStyles = fn(4788);
+let obj2 = { card: { flex: 1, flexDirection: "column", paddingHorizontal: fn(1074).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 8 }, mainContainer: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, textContainer: { flexDirection: "row", flexShrink: 1, alignItems: "center" }, imageContainer: null, image: null, title: null, subText: null, claimButton: null, moreDetails: null, termsAndConditionsText: null, buttonContainer: null };
+let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5690).DARK_BLACK_500_LIGHT_PRIMARY_100 };
+obj2.imageContainer = size;
+obj2.image = { width: 28, height: 28, resizeMode: "contain" };
+obj2.title = { lineHeight: 20 };
+obj2.subText = { lineHeight: 18 };
+obj2.claimButton = { paddingHorizontal: 12 };
+obj2.moreDetails = { marginLeft: 40 };
+obj2.termsAndConditionsText = { paddingHorizontal: 16, paddingTop: 16 };
+obj2.buttonContainer = { flexGrow: 1, flexDirection: "row", marginLeft: 4, justifyContent: "flex-end" };
+let closure_9 = createStyles.createStyles(obj2);
 size = fn(2);
 const result = size.fileFinishedImporting("components_native/premium/OutboundPromotionCard.tsx");
 
@@ -89,12 +54,12 @@ export default function OutboundPromotionCard(outboundPromotion) {
   first = undefined;
   _slicedToArray = undefined;
   const tmp = closure_9();
-  const tmp3 = code(first[15])();
-  const promotionImageURL = outboundPromotion(first[16]).getPromotionImageURL(outboundPromotion.id, tmp3);
-  const tmp7 = code(first[17])(outboundPromotion, null != code);
-  const intl = outboundPromotion(first[11]).intl;
+  const tmp3 = code(first[13])();
+  const promotionImageURL = outboundPromotion(first[14]).getPromotionImageURL(outboundPromotion.id, tmp3);
+  const tmp7 = code(first[15])(outboundPromotion, null != code);
+  const intl = outboundPromotion(first[10]).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = outboundPromotion(first[11]).t;
+  const t = outboundPromotion(first[10]).t;
   if (null != code) {
     let obj2 = { endDate: tmp7 };
     let formatToPlainStringResult = formatToPlainString(t.VaD05h, obj2);
@@ -102,9 +67,9 @@ export default function OutboundPromotionCard(outboundPromotion) {
     const obj3 = { endDate: tmp7 };
     formatToPlainStringResult = formatToPlainString(t["/XWgfG"], obj3);
   }
-  const intl2 = tmp4(tmp2[11]).intl;
+  const intl2 = tmp4(tmp2[10]).intl;
   const string = intl2.string;
-  const t2 = tmp4(tmp2[11]).t;
+  const t2 = tmp4(tmp2[10]).t;
   if (null != code) {
     let stringResult = string(t2["2cHUti"]);
   } else {
@@ -116,13 +81,13 @@ export default function OutboundPromotionCard(outboundPromotion) {
     if (first) {
       const obj2 = {
         importer() {
-            return outboundPromotion(first[20])(first[19], first.paths).then((result) => {
+            return outboundPromotion(first[18])(first[17], first.paths).then((result) => {
               closure_0 = result.default;
               return (arg0) => {
                 const obj = {};
                 const merged = Object.assign(arg0);
                 obj.onCancel = function onCancel() { ... };
-                obj.onClaim = closure_3_1(first[21]).addClaimedOutboundPromotionCode;
+                obj.onClaim = closure_3_1(first[19]).addClaimedOutboundPromotionCode;
                 obj.code = code;
                 obj.outboundPromotion = outboundPromotion;
                 return closure_3_7(closure_0, obj);
@@ -140,14 +105,14 @@ export default function OutboundPromotionCard(outboundPromotion) {
   const items1 = [closure_7(closure_5, obj6), , ];
   const obj8 = { style: tmp.textContainer, children: null };
   const obj9 = { children: null };
-  const items2 = [closure_7(outboundPromotion(first[14]).Text, { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: outboundPromotion.outboundTitle }), closure_7(outboundPromotion(first[14]).Text, { style: tmp.subText, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult })];
+  const items2 = [closure_7(outboundPromotion(first[11]).Text, { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: outboundPromotion.outboundTitle }), closure_7(outboundPromotion(first[11]).Text, { style: tmp.subText, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult })];
   obj9.children = items2;
   obj8.children = closure_8(closure_5, obj9);
   items1[1] = closure_7(closure_5, obj8);
   const obj12 = { style: tmp.buttonContainer, children: null };
   const obj13 = {
     style: tmp.claimButton,
-    children: closure_7(outboundPromotion(first[22]).Button, {
+    children: closure_7(outboundPromotion(first[20]).Button, {
       size: "sm",
       shrink: true,
       text: stringResult,
@@ -162,14 +127,14 @@ export default function OutboundPromotionCard(outboundPromotion) {
   const items3 = [closure_8(closure_5, obj5), ];
   const obj15 = { children: null };
   const obj16 = { style: tmp.moreDetails, variant: "text-sm/medium", children: null };
-  const intl3 = tmp4(tmp2[11]).intl;
-  obj16.children = intl3.format(outboundPromotion(first[11]).t.sCm3Zb, {
+  const intl3 = tmp4(tmp2[10]).intl;
+  obj16.children = intl3.format(outboundPromotion(first[10]).t.sCm3Zb, {
     onClick() {
       ActionSheetActionCreatorsDefault.hideActionSheet();
       ActionSheetActionCreatorsDefault.openLazy(() => Promise.resolve(closure_1_10), "OutboundPromotionTermsAndConditions-" + outboundPromotion.id, { termsAndConditions: outboundPromotion.outboundTermsAndConditions });
     }
   });
-  obj15.children = closure_7(outboundPromotion(first[14]).Text, obj16);
+  obj15.children = closure_7(outboundPromotion(first[11]).Text, obj16);
   items3[1] = closure_7(closure_5, obj15);
   obj4.children = items3;
   return closure_8(closure_5, obj4);

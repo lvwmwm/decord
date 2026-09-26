@@ -6,4 +6,4 @@
 import _mod4621 from "module_4621" /* 4621 */;
 
 
-export default _mod4621();
+export default _mod4621;

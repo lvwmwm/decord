@@ -1,159 +1,30 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10644
+// Function ID: 10645
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 5714, 21, 558, 568, 9021, 10551, 4752, 9067, 10565, 10567, 9378, 10569, 10571, 9084, 8972, 8970, 2]
+// Dependencies: [19, 5712, 21, 9023, 10532, 4750, 9069, 10645, 10647, 9380, 10649, 10651, 9086, 8974, 8972, 2]
 
-// Module 10564 (EmojiPickerCategoryIcon)
-import c from "c" /* 568 */;
-import ClockIcon from "ClockIcon" /* 4752 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8970 */;
-import FlagIcon from "FlagIcon" /* 8972 */;
-import TrophyIcon from "TrophyIcon" /* 9021 */;
-import ReactionIcon from "ReactionIcon" /* 9067 */;
-import HeartIcon from "HeartIcon" /* 9084 */;
-import GameControllerIcon from "GameControllerIcon" /* 9378 */;
-import StarIcon from "StarIcon" /* 10551 */;
-import NatureIcon from "NatureIcon" /* 10565 */;
-import FoodIcon from "FoodIcon" /* 10567 */;
-import BicycleIcon from "BicycleIcon" /* 10569 */;
-import ObjectIcon from "ObjectIcon" /* 10571 */;
+// Module 10644 (EmojiPickerCategoryIcon)
+import ClockIcon from "ClockIcon" /* 4750 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8972 */;
+import FlagIcon from "FlagIcon" /* 8974 */;
+import TrophyIcon from "TrophyIcon" /* 9023 */;
+import ReactionIcon from "ReactionIcon" /* 9069 */;
+import HeartIcon from "HeartIcon" /* 9086 */;
+import GameControllerIcon from "GameControllerIcon" /* 9380 */;
+import StarIcon from "StarIcon" /* 10532 */;
+import NatureIcon from "NatureIcon" /* 10645 */;
+import FoodIcon from "FoodIcon" /* 10647 */;
+import BicycleIcon from "BicycleIcon" /* 10649 */;
+import ObjectIcon from "ObjectIcon" /* 10651 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const EmojiCategories = fn(5714).EmojiCategories;
+const EmojiCategories = fn(5712).EmojiCategories;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoryIcon.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
-  const cResult = c.c(12);
-  id = id.id;
-  if (EmojiCategories.TOP_GUILD_EMOJI === id) {
-    const _Symbol12 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp52 = jsx(tmp(9021).TrophyIcon, {});
-      cResult[0] = tmp52;
-      let first = tmp52;
-    } else {
-      first = cResult[0];
-    }
-    return first;
-  } else if (tmp4.FAVORITES === id) {
-    const _Symbol11 = Symbol;
-    if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp48 = jsx(tmp(10551).StarIcon, {});
-      cResult[1] = tmp48;
-      let tmp46 = tmp48;
-    } else {
-      tmp46 = cResult[1];
-    }
-    return tmp46;
-  } else if (tmp4.RECENT === id) {
-    const _Symbol10 = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp44 = jsx(tmp(4752).ClockIcon, {});
-      cResult[2] = tmp44;
-      let tmp42 = tmp44;
-    } else {
-      tmp42 = cResult[2];
-    }
-    return tmp42;
-  } else if (tmp4.PEOPLE === id) {
-    const _Symbol9 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp40 = jsx(tmp(9067).ReactionIcon, {});
-      cResult[3] = tmp40;
-      let tmp38 = tmp40;
-    } else {
-      tmp38 = cResult[3];
-    }
-    return tmp38;
-  } else if (tmp4.NATURE === id) {
-    const _Symbol8 = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp36 = jsx(tmp(10565).NatureIcon, {});
-      cResult[4] = tmp36;
-      let tmp34 = tmp36;
-    } else {
-      tmp34 = cResult[4];
-    }
-    return tmp34;
-  } else if (tmp4.FOOD === id) {
-    const _Symbol7 = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp32 = jsx(tmp(10567).FoodIcon, {});
-      cResult[5] = tmp32;
-      let tmp30 = tmp32;
-    } else {
-      tmp30 = cResult[5];
-    }
-    return tmp30;
-  } else if (tmp4.ACTIVITY === id) {
-    const _Symbol6 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp28 = jsx(tmp(9378).GameControllerIcon, {});
-      cResult[6] = tmp28;
-      let tmp26 = tmp28;
-    } else {
-      tmp26 = cResult[6];
-    }
-    return tmp26;
-  } else if (tmp4.TRAVEL === id) {
-    const _Symbol5 = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp24 = jsx(tmp(10569).BicycleIcon, {});
-      cResult[7] = tmp24;
-      let tmp22 = tmp24;
-    } else {
-      tmp22 = cResult[7];
-    }
-    return tmp22;
-  } else if (tmp4.OBJECTS === id) {
-    const _Symbol4 = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = jsx(tmp(10571).ObjectIcon, {});
-      cResult[8] = tmp20;
-      let tmp18 = tmp20;
-    } else {
-      tmp18 = cResult[8];
-    }
-    return tmp18;
-  } else if (tmp4.SYMBOLS === id) {
-    const _Symbol3 = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp16 = jsx(tmp(9084).HeartIcon, {});
-      cResult[9] = tmp16;
-      let tmp14 = tmp16;
-    } else {
-      tmp14 = cResult[9];
-    }
-    return tmp14;
-  } else if (tmp4.FLAGS === id) {
-    const _Symbol2 = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp12 = jsx(tmp(8972).FlagIcon, {});
-      cResult[10] = tmp12;
-      let tmp10 = tmp12;
-    } else {
-      tmp10 = cResult[10];
-    }
-    return tmp10;
-  } else {
-    if (tmp4.CUSTOM !== id) {
-      const PREMIUM_UPSELL = tmp4.PREMIUM_UPSELL;
-    }
-    const _Symbol = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp8 = jsx(tmp(8970).NitroWheelIcon, {});
-      cResult[11] = tmp8;
-      let tmp6 = tmp8;
-    } else {
-      tmp6 = cResult[11];
-    }
-    return tmp6;
-  }
-}) : ((id) => {
+export default noop.memo(function EmojiPickerCategoryIcon(id) {
   id = id.id;
   if (EmojiCategories.TOP_GUILD_EMOJI === id) {
     return jsx(TrophyIcon.TrophyIcon, {});
@@ -183,4 +54,4 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((id) =>
     }
     return jsx(NitroWheelIcon.NitroWheelIcon, {});
   }
-}));
+});

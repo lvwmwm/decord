@@ -1,12 +1,12 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 7703
+// Function ID: 7704
 // Name: payments/OrderActionCreators
-// Dependencies: [5, 4772, 1078, 3, 1275, 4465, 577, 7522, 2]
+// Dependencies: [5, 4770, 1074, 3, 1271, 4461, 573, 7520, 2]
 // Exports: cancelOrderSigning, discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7705 (payments/OrderActionCreators)
+// Module 7703 (payments/OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -31,7 +31,7 @@ let closure_8 = async function _getOrders(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -160,7 +160,7 @@ let closure_10 = async function _createOrder(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -193,7 +193,7 @@ let closure_10 = async function _createOrder(arg0, value) {
           let body;
           c6 = 1;
           c7 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -374,7 +374,7 @@ let closure_12 = async function _getOrCreateOrder(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -404,7 +404,7 @@ let closure_12 = async function _getOrCreateOrder(arg0, value) {
           closure_129_10 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp4) {
         if (arg0 === 1) {
@@ -479,7 +479,7 @@ let closure_13 = async function _patchOrderLineItem(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -504,7 +504,7 @@ let closure_13 = async function _patchOrderLineItem(arg0, value) {
           closure_129_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -606,7 +606,7 @@ let closure_14 = async function _patchOrder(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -632,7 +632,7 @@ let closure_14 = async function _patchOrder(arg0, value) {
           let body;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -743,7 +743,7 @@ let closure_15 = async function _updateOrder(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -768,7 +768,7 @@ let closure_15 = async function _updateOrder(arg0, value) {
           closure_129_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -907,7 +907,7 @@ let closure_17 = async function _markOrderAsSigningInProgress(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -939,7 +939,7 @@ let closure_17 = async function _markOrderAsSigningInProgress(arg0, value) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -1058,7 +1058,7 @@ let closure_17 = async function _markOrderAsSigningInProgress(arg0, value) {
                   c3 = 0;
                   c11 = null;
                   c5 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp45) {
                 if (tmp5 === c3) {
@@ -1100,7 +1100,7 @@ let closure_17 = async function _markOrderAsSigningInProgress(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp9) {
       c1 = tmp;
@@ -1119,7 +1119,7 @@ let closure_19 = async function _cancelOrderSigning(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -1153,7 +1153,7 @@ let closure_19 = async function _cancelOrderSigning(arg0, value) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -1306,8 +1306,8 @@ let closure_19 = async function _cancelOrderSigning(arg0, value) {
     }
   }
 };
-const OrderStatus = fn(4772).OrderStatus;
-const Endpoints = fn(1078).Endpoints;
+const OrderStatus = fn(4770).OrderStatus;
+const Endpoints = fn(1074).Endpoints;
 const tmp2 = new LoggerDefault("OrderActionCreators");
 let closure_6 = tmp2;
 let c11 = null;

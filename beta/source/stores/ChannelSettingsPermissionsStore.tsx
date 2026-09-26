@@ -1,18 +1,18 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17294
+// Function ID: 17295
 // Name: ChannelSettingsPermissionsStore
-// Dependencies: [5017, 10667, 2045, 1078, 8709, 510, 4436, 11766, 12, 504, 577, 2]
+// Dependencies: [5015, 8936, 2041, 1074, 8704, 510, 4432, 11890, 12, 504, 573, 2]
 
-// Module 17304 (ChannelSettingsPermissionsStore)
+// Module 17294 (ChannelSettingsPermissionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11766 */;
-import ApplicationStore from "ApplicationStore" /* 5017 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10667 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11890 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8936 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 function init() {
@@ -91,7 +91,7 @@ function syncChannelUpdates(id) {
           }
           const obj5 = PermissionUtilsAll;
           tmp = null != guildId1 && null == obj2[guildId1];
-          closure_4 = obj5.areChannelsLocked(channel, category, obj4(11766).getAppChannelBotUserId(channel));
+          closure_4 = obj5.areChannelsLocked(channel, category, obj4(11890).getAppChannelBotUserId(channel));
           return true;
         }
       }
@@ -99,9 +99,9 @@ function syncChannelUpdates(id) {
   }
   return false;
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelSettingsSections: closure_9, ChannelTypes: c10, FormStates } = Constants);
-const ADVANCED_MODE_ON_KEY = fn(8709).ADVANCED_MODE_ON_KEY;
+const ADVANCED_MODE_ON_KEY = fn(8704).ADVANCED_MODE_ON_KEY;
 const set = new Set();
 let CLOSED = FormStates.CLOSED;
 let c15 = false;

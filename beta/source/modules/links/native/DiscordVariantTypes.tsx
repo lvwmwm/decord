@@ -1,10 +1,10 @@
-// Module ID: 16734
-// Function ID: 16735
+// Module ID: 16725
+// Function ID: 16726
 // Name: DiscordVariantTypes
-// Dependencies: [580, 2]
+// Dependencies: [576, 2]
 
-// Module 16734 (DiscordVariantTypes)
-import nativeDefault from "native" /* 580 */;
+// Module 16725 (DiscordVariantTypes)
+import nativeDefault from "native" /* 576 */;
 import size from "module_2" /* 2 */;
 
 const obj = { production: { scheme: "discord-prod", label: "Discord", color: nativeDefault.unsafe_rawColors.BRAND_500 }, ci: null, main: null, beta: null, dev: null };

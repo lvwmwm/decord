@@ -1,11 +1,11 @@
-// Module ID: 15611
-// Function ID: 15612
+// Module ID: 15615
+// Function ID: 15616
 // Name: DisplayNameStylesSeenStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 15611 (DisplayNameStylesSeenStore)
+// Module 15615 (DisplayNameStylesSeenStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let obj = { seenFontIds: new Set(), seenEffectIds: null, newFontsBadgeDismissed: false, newEffectsBadgeDismissed: false };
 let set = new Set();

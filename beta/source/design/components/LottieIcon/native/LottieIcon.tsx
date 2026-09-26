@@ -1,271 +1,22 @@
-// Module ID: 10243
-// Function ID: 10244
+// Module ID: 10245
+// Function ID: 10246
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 558, 568, 580, 6887, 4513, 4494, 5782, 2]
+// Dependencies: [19, 17, 21, 576, 6894, 4508, 4489, 5779, 2]
 
-// Module 10243 (LottieIcon)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4494 */;
-import _modDef5782 from "module_5782" /* 5782 */;
-import IconSize from "IconSize" /* 6887 */;
+// Module 10245 (LottieIcon)
+import nativeDefault from "native" /* 576 */;
+import useToken from "useToken" /* 4489 */;
+import _modDef5779 from "module_5779" /* 5779 */;
+import IconSize from "IconSize" /* 6894 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/LottieIcon/native/LottieIcon.tsx");
 
-export const LottieIcon = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((animation, arg1) => {
-  const cResult = c.c(40);
-  animation = animation.animation;
-  ({ dotLottie, size, color, opacity, markers, layers, autoPlay } = animation);
-  let str = "md";
-  ({ width, height, useLottieDefaultColors } = animation);
-  if (undefined !== size) {
-    str = size;
-  }
-  if (undefined === color) {
-    color = nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT;
-  }
-  let num = 1;
-  let num2 = 1;
-  if (undefined !== opacity) {
-    num2 = opacity;
-  }
-  const tmp5 = IconSize.ICON_SIZE[str];
-  if (cResult[0] === animation) {
-    if (cResult[1] === markers) {
-      const start = tmp6.start;
-      const sum = start + tmp6.duration;
-      noop = sum;
-      if (cResult[5] !== markers) {
-        const _Symbol = Symbol;
-        if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-          cResult[7] = R;
-          const tmp13 = R;
-        } else {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-        }
-        const found = markers.find(tmp13);
-        cResult[5] = markers;
-        cResult[6] = found;
-      } else {
-        class R {
-          constructor(arg0) {
-            return "easteregg" === animation.name;
-          }
-        }
-        if (tmp11 != null) {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-        }
-        if (undefined == null) {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-        }
-        c4 = tmp17;
-        if (tmp11 != null) {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-        }
-        if (undefined == null) {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-        }
-        const sum1 = tmp17 + tmp18;
-        const ref = noop.useRef(null);
-        const enabled = noop.useContext(tmp(4513).AccessibilityPreferencesContext).reducedMotion.enabled;
-        if ("custom" === str) {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-        }
-        if ("custom" === str) {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-        }
-        if (cResult[8] === tmp5) {
-          class R {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-          if (cResult[11] !== num2) {
-            class R {
-              constructor(arg0) {
-                return "easteregg" === animation.name;
-              }
-            }
-            tmp26[0] = num2;
-            cResult[11] = num2;
-            cResult[12] = tmp26;
-          } else {
-            class R {
-              constructor(arg0) {
-                return "easteregg" === animation.name;
-              }
-            }
-          }
-          const token = tmp(4494).useToken(color);
-          if (cResult[13] === layers) {
-            class R {
-              constructor(arg0) {
-                return "easteregg" === animation.name;
-              }
-            }
-            if (cResult[16] === sum) {
-              class R {
-                constructor(arg0) {
-                  return "easteregg" === animation.name;
-                }
-              }
-            }
-            class K {
-              constructor() {
-                if (enabled) {
-                  tmp12 = closure_6;
-                  current3 = closure_6.current;
-                  tmp13 = null;
-                  if (current3 != null) {
-                    tmp14 = closure_3;
-                    playResult = current3.play(closure_3, closure_3);
-                  }
-                } else {
-                  if (tmp) {
-                    num = 0;
-                    if (c4 >= 0) {
-                      tmp8 = closure_6;
-                      current2 = closure_6.current;
-                      tmp9 = null;
-                      if (current2 != null) {
-                        tmp10 = closure_5;
-                        playResult1 = current2.play(tmp2, closure_5);
-                      }
-                    }
-                  }
-                  tmp3 = closure_6;
-                  current = closure_6.current;
-                  tmp4 = null;
-                  if (current != null) {
-                    tmp5 = start;
-                    tmp6 = closure_3;
-                    playResult2 = current.play(start, closure_3);
-                  }
-                }
-                return;
-              }
-            }
-            cResult[16] = sum;
-            cResult[17] = start;
-            cResult[18] = sum1;
-            cResult[19] = tmp17;
-            cResult[20] = enabled;
-            cResult[21] = K;
-          }
-          if (null != token) {
-            class R {
-              constructor(arg0) {
-                return "easteregg" === animation.name;
-              }
-            }
-          }
-          cResult[13] = layers;
-          cResult[14] = token;
-          cResult[15] = undefined;
-          const tmpResult = tmp(4494);
-        }
-        const size1 = { width: tmp5, height: tmp5 };
-        cResult[8] = tmp5;
-        cResult[9] = tmp5;
-        cResult[10] = size1;
-      }
-    }
-  }
-  if (cResult[3] !== animation) {
-    class R {
-      constructor(arg0) {
-        return "easteregg" === animation.name;
-      }
-    }
-    class K {
-      constructor() {
-        if (enabled) {
-          tmp12 = closure_6;
-          current3 = closure_6.current;
-          tmp13 = null;
-          if (current3 != null) {
-            tmp14 = closure_3;
-            playResult = current3.play(closure_3, closure_3);
-          }
-        } else {
-          if (tmp) {
-            num = 0;
-            if (c4 >= 0) {
-              tmp8 = closure_6;
-              current2 = closure_6.current;
-              tmp9 = null;
-              if (current2 != null) {
-                tmp10 = closure_5;
-                playResult1 = current2.play(tmp2, closure_5);
-              }
-            }
-          }
-          tmp3 = closure_6;
-          current = closure_6.current;
-          tmp4 = null;
-          if (current != null) {
-            tmp5 = start;
-            tmp6 = closure_3;
-            playResult2 = current.play(start, closure_3);
-          }
-        }
-        return;
-      }
-    }
-    cResult[4] = tmp8;
-    const tmp7 = tmp8;
-  } else {
-    class R {
-      constructor(arg0) {
-        return "easteregg" === animation.name;
-      }
-    }
-  }
-  const found1 = markers.find(tmp7);
-  cResult[0] = animation;
-  cResult[num] = markers;
-  num = 2;
-  cResult[2] = found1;
-}) : ((color, ref) => {
+export const LottieIcon = noop.forwardRef((color, ref) => {
   ({ animation: require, size } = color);
   if (size === undefined) {
     size = "md";
@@ -308,7 +59,7 @@ export const LottieIcon = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   }
   sum1 = num2 + num3;
   ref = noop.useRef(null);
-  enabled = noop.useContext(tmp3(4513).AccessibilityPreferencesContext).reducedMotion.enabled;
+  enabled = noop.useContext(tmp3(4508).AccessibilityPreferencesContext).reducedMotion.enabled;
   let tmp12 = tmp5;
   if ("custom" === size) {
     tmp12 = width;
@@ -377,6 +128,6 @@ export const LottieIcon = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   obj3.onAnimationLoaded = callback1;
   const items4 = [size1, { opacity: num }];
   obj3.style = items4;
-  obj2.children = jsx(_modDef5782, { ref, source: color.dotLottie, colorFilters: null, hardwareAccelerationAndroid: true, loop: false, onAnimationLoaded: null, resizeMode: "cover", style: null });
+  obj2.children = jsx(_modDef5779, { ref, source: color.dotLottie, colorFilters: null, hardwareAccelerationAndroid: true, loop: false, onAnimationLoaded: null, resizeMode: "cover", style: null });
   return <tmp19 style={size1}>{null}</tmp19>;
-}));
+});

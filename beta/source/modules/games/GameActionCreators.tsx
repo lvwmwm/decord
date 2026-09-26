@@ -1,13 +1,13 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 7584
+// Function ID: 7585
 // Name: GameActionCreators
-// Dependencies: [5, 2004, 1078, 1275, 577, 2040, 12, 2]
+// Dependencies: [5, 2000, 1074, 1271, 573, 2036, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7586 (GameActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 7584 (GameActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GameStore from "GameStore" /* 2004 */;
+import GameStore from "GameStore" /* 2000 */;
 
 function requestGames() {
   const self = this;
@@ -57,7 +57,7 @@ let closure_9 = async function _fetchGamesWithSupplementalData(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -85,14 +85,14 @@ let closure_9 = async function _fetchGamesWithSupplementalData(arg0, value) {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp7) {
       c1 = tmp;
       throw tmp7;
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 let closure_0 = asyncGeneratorStep(async (arg0, value) => {
   if (v3 === 2) {
     v3 = 3;
@@ -104,7 +104,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -133,7 +133,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
         return obj;
       } else {
         v3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp10) {
       v3 = tmp;
@@ -141,7 +141,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
     }
   }
 });
-const batchInvocationManager = new fn(2040).BatchInvocationManager(function() {
+const batchInvocationManager = new fn(2036).BatchInvocationManager(function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {

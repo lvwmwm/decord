@@ -1,16 +1,16 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17250
+// Function ID: 17251
 // Name: getPendingRelationshipIds
-// Dependencies: [4441, 1078, 2]
+// Dependencies: [4437, 1074, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 17260 (getPendingRelationshipIds)
-import RelationshipStore from "RelationshipStore" /* 4441 */;
+// Module 17250 (getPendingRelationshipIds)
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
 function filterFromPending(arg0) {
   return RelationshipStore.isSpam(arg0) || RelationshipStore.isIgnored(arg0);
 }
-const RelationshipTypes = fn(1078).RelationshipTypes;
+const RelationshipTypes = fn(1074).RelationshipTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/hooks/getPendingRelationshipIds.tsx");
 

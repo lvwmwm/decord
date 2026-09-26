@@ -1,11 +1,11 @@
-// Module ID: 8714
-// Function ID: 8715
+// Module ID: 8709
+// Function ID: 8710
 // Name: StageInstanceActionCreators
-// Dependencies: [5, 1078, 1275, 2]
+// Dependencies: [5, 1074, 1271, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 8714 (StageInstanceActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 8709 (StageInstanceActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -30,7 +30,7 @@ let closure_5 = async function _updateStageInstance(arg0, topic, privacy_level) 
     return value.body;
   })();
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/StageInstanceActionCreators.tsx");
 

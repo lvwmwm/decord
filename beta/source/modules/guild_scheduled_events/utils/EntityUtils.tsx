@@ -1,13 +1,13 @@
-// Module ID: 9798
-// Function ID: 9799
+// Module ID: 9822
+// Function ID: 9823
 // Name: EntityUtils
-// Dependencies: [2045, 2051, 2]
+// Dependencies: [2041, 2047, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 9798 (EntityUtils)
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 9822 (EntityUtils)
+import ChannelStore from "ChannelStore" /* 2041 */;
 
-const GuildScheduledEventsConstants = fn(2051);
+const GuildScheduledEventsConstants = fn(2047);
 ({ GuildScheduledEventEntityTypes: closure_1, EntityChannelTypes: c2 } = GuildScheduledEventsConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/utils/EntityUtils.tsx");

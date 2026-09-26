@@ -1,13 +1,13 @@
-// Module ID: 9964
-// Function ID: 9965
+// Module ID: 9986
+// Function ID: 9987
 // Name: VerifiedKeyStore
-// Dependencies: [9965, 504, 11, 577, 2]
+// Dependencies: [9987, 504, 11, 573, 2]
 
-// Module 9964 (VerifiedKeyStore)
+// Module 9986 (VerifiedKeyStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import _mod9965 from "module_9965" /* 9965 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import _mod9987 from "module_9987" /* 9987 */;
 
 require = fn;
 let users = {};
@@ -28,7 +28,7 @@ prototype["getState"] = function getState() {
   return { users };
 };
 prototype["getKeyTrustedAt"] = function getKeyTrustedAt(arg0, uint8Array) {
-  const obj = _mod9965;
+  const obj = _mod9987;
   let tmp2;
   if (users[arg0] != null) {
     tmp2 = tmp[obj.serializeKey(obj, uint8Array)];
@@ -55,7 +55,7 @@ const verifiedKeyStore = new VerifiedKeyStore(DispatcherDefault, {
     }
     users[userId] = obj;
     const uint8Array = new Uint8Array(key);
-    obj[_mod9965.serializeKey(uint8Array)] = Date.now();
+    obj[_mod9987.serializeKey(uint8Array)] = Date.now();
   },
   SECURE_FRAMES_VERIFIED_KEY_DELETE: function handleSecureFramesVerifiedKeyDelete(arg0) {
     let tmp6 = null;

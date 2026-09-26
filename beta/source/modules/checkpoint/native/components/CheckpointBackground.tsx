@@ -1,77 +1,32 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 15975
+// Function ID: 15976
 // Name: CheckpointBackground
-// Dependencies: [17, 5015, 1078, 21, 4790, 558, 568, 5230, 15972, 2]
+// Dependencies: [17, 5013, 1074, 21, 4788, 5230, 15976, 2]
+// Exports: default
 
-// Module 15971 (CheckpointBackground)
+// Module 15975 (CheckpointBackground)
 import _mod17 from "module_17" /* 17 */;
-import c from "c" /* 568 */;
-import Constants from "Constants" /* 1078 */;
-import CheckpointConstants from "CheckpointConstants" /* 5015 */;
+import Constants from "Constants" /* 1074 */;
+import CheckpointConstants from "CheckpointConstants" /* 5013 */;
 import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import _modDef15972 from "module_15972" /* 15972 */;
+import _modDef15976 from "module_15976" /* 15976 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4790 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
 const colors = CheckpointConstants.CHECKPOINT_BACKGROUND_GRADIENT;
 const VerticalGradient = Constants.VerticalGradient;
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = createStyles.createStyles({ background: { position: "absolute", width: "100%", height: "100%" } });
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
+let closure_8 = createStyles.createStyles({ background: { position: "absolute", width: "100%", height: "100%" } });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointBackground.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(8);
-  const tmp3 = closure_9();
-  if (cResult[0] !== tmp3.background) {
-    const obj3 = { colors, start: null, end: null, style: null };
-    ({ START: obj2.start, END: obj2.end } = VerticalGradient);
-    obj3.style = tmp3.background;
-    const tmp9 = timestampProducer(LinearGradientDefault, obj3);
-    cResult[0] = tmp3.background;
-    cResult[1] = tmp9;
-    let tmp4 = tmp9;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { uri: _modDef15972 };
-    cResult[2] = obj4;
-    let tmp10 = obj4;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] !== tmp3.background) {
-    const obj5 = { source: tmp10, style: tmp3.background, resizeMode: "cover" };
-    const tmp15 = timestampProducer(Image, obj5);
-    cResult[3] = tmp3.background;
-    cResult[4] = tmp15;
-    let tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] === tmp4) {
-    if (cResult[6] === tmp12) {
-      let tmp16 = cResult[7];
-    }
-    return tmp16;
-  }
-  const obj9 = { children: null };
-  const items = [tmp4, tmp12];
-  obj9.children = items;
-  const tmp17 = closure_1_8(React5, obj9);
-  cResult[5] = tmp4;
-  cResult[6] = tmp12;
-  cResult[7] = tmp17;
-  tmp16 = tmp17;
-}) : (() => {
-  const tmp = closure_9();
+export default function CheckpointBackground() {
+  const tmp = closure_8();
   const obj = { children: null };
-  const items = [timestampProducer(LinearGradientDefault, { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background }), ];
-  const obj3 = { source: { uri: _modDef15972 }, style: tmp.background, resizeMode: "cover" };
-  items[1] = timestampProducer(Image, obj3);
+  const items = [hasOwnProperty(LinearGradientDefault, { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background }), ];
+  const obj3 = { source: { uri: _modDef15976 }, style: tmp.background, resizeMode: "cover" };
+  items[1] = hasOwnProperty(Image, obj3);
   obj.children = items;
-  return closure_1_8(React5, obj);
-});
+  return React5(timestampProducer, obj);
+};

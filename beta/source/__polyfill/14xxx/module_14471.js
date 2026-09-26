@@ -1,9 +1,9 @@
 // Module ID: 14471
 // Function ID: 14472
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 14471
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "42a20b8c34f5da51714fe4afb6b4ab7f", name: "NitroGem6", type: "lottie" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "2c315f321285573a3e0f3421e17e59ea", name: "NitroGem24", type: "lottie" });

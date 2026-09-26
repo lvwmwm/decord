@@ -1,20 +1,20 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 17742
+// Function ID: 17743
 // Name: AudioSessionModeManager
-// Dependencies: [17, 2044, 5672, 4812, 502, 2045, 1996, 2099, 4809, 1983, 1078, 1368, 17752, 7397, 2]
+// Dependencies: [17, 2040, 5670, 4810, 502, 2041, 1992, 2095, 4807, 1979, 1074, 1364, 17743, 7395, 2]
 
-// Module 17751 (AudioSessionModeManager)
-import VoicePermissionManager from "VoicePermissionManager" /* 17752 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5672 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
+// Module 17742 (AudioSessionModeManager)
+import VoicePermissionManager from "VoicePermissionManager" /* 17743 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5670 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import VoiceStateStore from "VoiceStateStore" /* 4809 */;
-import AppStateStore from "AppStateStore" /* 1983 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import AppStateStore from "AppStateStore" /* 1979 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 function handleAVAudioSessionMode() {
@@ -54,8 +54,8 @@ function handleAVAudioSessionMode() {
     const result = obj2.setAVAudioSessionMode(VIDEO);
   }
 }
-const AppStates = fn(1078).AppStates;
-const PlatformUtils = fn(1368);
+const AppStates = fn(1074).AppStates;
+const PlatformUtils = fn(1364);
 if (PlatformUtils.isAndroid()) {
   let obj2 = {
     setAVAudioSessionMode() {

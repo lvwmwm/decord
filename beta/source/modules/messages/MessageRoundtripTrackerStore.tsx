@@ -1,18 +1,18 @@
-// Module ID: 7737
-// Function ID: 7738
+// Module ID: 7732
+// Function ID: 7733
 // Name: MessageRoundtripTrackerStore
-// Dependencies: [2045, 4710, 4839, 1078, 3, 7738, 1245, 7950, 504, 577, 2]
+// Dependencies: [2041, 4707, 4837, 1074, 3, 7733, 1241, 7945, 504, 573, 2]
 
-// Module 7737 (MessageRoundtripTrackerStore)
+// Module 7732 (MessageRoundtripTrackerStore)
 import LoggerDefault from "Logger" /* 3 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import NetStats from "NetStats" /* 7738 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7950 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
-import NetworkStore from "NetworkStore" /* 4839 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import NetStats from "NetStats" /* 7733 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7945 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
+import NetworkStore from "NetworkStore" /* 4837 */;
 
 require = fn;
 function trackRoundtrip(channelId) {
@@ -50,7 +50,7 @@ function trackRoundtrip(channelId) {
     logger.warn("Ignoring a messageData for channel " + channelId.channelId + " because we can't find that channel.");
   }
 }
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const logger = new LoggerDefault("MessageRoundtripTrackerStore");
 const Store = initializeDefault.Store;
 class MessageRoundtripTrackerStoreClass extends Store {

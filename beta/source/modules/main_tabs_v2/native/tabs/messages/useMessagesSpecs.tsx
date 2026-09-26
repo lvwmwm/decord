@@ -1,92 +1,33 @@
-// Module ID: 16375
-// Function ID: 16376
+// Module ID: 16368
+// Function ID: 16369
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1078, 558, 568, 5227, 1616, 16376, 16379, 16391, 580, 2]
+// Dependencies: [109, 19, 1074, 5225, 1612, 16369, 16372, 16384, 576, 2]
+// Exports: default
 
-// Module 16375 (useMessagesSpecs)
-import c from "c" /* 568 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useFontScale from "useFontScale" /* 5227 */;
-import MessagesHeader from "MessagesHeader" /* 16376 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 16379 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16391 */;
+// Module 16368 (useMessagesSpecs)
+import nativeDefault from "native" /* 576 */;
+import MessagesHeader from "MessagesHeader" /* 16369 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 16372 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16384 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
-const nativeDefault = tmp5(580);
 require = fn;
 let closure_3 = ["height"];
-let closure_4 = ["height"];
-const DM_WIDTH = fn(1078).DM_WIDTH;
-const ReactCompilerGating = fn(558);
+const DM_WIDTH = fn(1074).DM_WIDTH;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(13);
-  const fontScale = useFontScale.useFontScale();
-  const messagesHeaderHeight = MessagesHeader.getMessagesHeaderHeight(fontScale);
-  if (cResult[0] !== fontScale) {
-    const messagesItemChannelSizes = tmp(16379).getMessagesItemChannelSizes(fontScale);
-    cResult[0] = fontScale;
-    cResult[1] = messagesItemChannelSizes;
-    let tmp7 = messagesItemChannelSizes;
-    const tmpResult = tmp(16379);
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== tmp7) {
-    const height = tmp7.height;
-    const tmp13 = _objectWithoutProperties(tmp7, closure_3);
-    cResult[2] = tmp7;
-    cResult[3] = height;
-    cResult[4] = tmp13;
-    let tmp10 = tmp13;
-    let tmp9 = height;
-  } else {
-    tmp9 = cResult[3];
-    tmp10 = cResult[4];
-  }
-  const sum = useSafeAreaInsetsDefault().top + messagesHeaderHeight;
-  if (cResult[5] !== fontScale) {
-    const messagesItemSuggestedFriendHeight = tmp(16391).getMessagesItemSuggestedFriendHeight(fontScale);
-    cResult[5] = fontScale;
-    cResult[6] = messagesItemSuggestedFriendHeight;
-    let tmp15 = messagesItemSuggestedFriendHeight;
-    const tmpResult2 = tmp(16391);
-  } else {
-    tmp15 = cResult[6];
-  }
-  if (cResult[7] === messagesHeaderHeight) {
-    if (cResult[8] === tmp9) {
-      if (cResult[9] === tmp10) {
-        if (cResult[10] === sum) {
-          if (cResult[11] === tmp15) {
-            let tmp17 = cResult[12];
-          }
-          return tmp17;
-        }
-      }
-    }
-  }
-  const obj4 = { headerSize: messagesHeaderHeight, listTop: sum, listLeft: DM_WIDTH, listItemHeight: tmp9, listItemSizes: tmp10, listItemSuggestedFriendHeight: tmp15, scrollIndicatorInsetEnd: nativeDefault.space.PX_4 };
-  cResult[7] = messagesHeaderHeight;
-  cResult[8] = tmp9;
-  cResult[9] = tmp10;
-  cResult[10] = sum;
-  cResult[11] = tmp15;
-  cResult[12] = obj4;
-  tmp17 = obj4;
-}) : (() => {
-  fontScale = fontScale(5227).useFontScale();
-  top = top(1616)().top;
+export default function useMessagesSpecs() {
+  fontScale = fontScale(5225).useFontScale();
+  top = top(1612)().top;
   const items = [fontScale, top];
   return noop.useMemo(() => {
     const messagesHeaderHeight = MessagesHeader.getMessagesHeaderHeight(fontScale);
     const messagesItemChannelSizes = MessagesItemChannel.getMessagesItemChannelSizes(fontScale);
-    const obj3 = { headerSize: messagesHeaderHeight, listTop: top + messagesHeaderHeight, listLeft: DM_WIDTH, listItemHeight: messagesItemChannelSizes.height, listItemSizes: _objectWithoutProperties(messagesItemChannelSizes, closure_4), listItemSuggestedFriendHeight: null, scrollIndicatorInsetEnd: null };
+    const obj3 = { headerSize: messagesHeaderHeight, listTop: top + messagesHeaderHeight, listLeft: DM_WIDTH, listItemHeight: messagesItemChannelSizes.height, listItemSizes: _objectWithoutProperties(messagesItemChannelSizes, closure_3), listItemSuggestedFriendHeight: null, scrollIndicatorInsetEnd: null };
     obj3.listItemSuggestedFriendHeight = MessagesItemSuggestedFriend.getMessagesItemSuggestedFriendHeight(fontScale);
     obj3.scrollIndicatorInsetEnd = nativeDefault.space.PX_4;
     return obj3;
   }, items);
-});
+};

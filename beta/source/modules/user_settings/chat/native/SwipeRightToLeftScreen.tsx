@@ -1,58 +1,29 @@
-// Module ID: 15748
-// Function ID: 15749
+// Module ID: 15752
+// Function ID: 15753
 // Name: SwipeRightToLeftScreen
-// Dependencies: [19, 8270, 21, 558, 568, 11630, 14988, 2]
+// Dependencies: [19, 8265, 21, 11754, 14992, 2]
+// Exports: default
 
-// Module 15748 (SwipeRightToLeftScreen)
-import c from "c" /* 568 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
-import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+// Module 15752 (SwipeRightToLeftScreen)
+import SettingBuilders from "SettingBuilders" /* 11754 */;
+import SettingLayoutDefault from "SettingLayout" /* 14992 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const MobileUserSettings = fn(8270).MobileUserSettings;
+const MobileUserSettings = fn(8265).MobileUserSettings;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/chat/native/SwipeRightToLeftScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { sections: null };
-    const obj3 = { settings: null };
-    const items = [MobileUserSettings.CHAT_GESTURES];
-    obj3.settings = items;
-    const items1 = [obj3];
-    const items2 = [];
-    HermesBuiltin.arraySpread(items1, 0);
-    obj2.sections = items2;
-    const list = SettingBuilders.createList(obj2);
-    cResult[0] = list;
-    let first = list;
-    const tmpResult = SettingBuilders;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { node: first };
-    const tmp13 = jsx(SettingLayoutDefault, { node: first });
-    cResult[1] = tmp13;
-    let tmp10 = tmp13;
-  } else {
-    tmp10 = cResult[1];
-  }
-  return tmp10;
-}) : (() => {
+export default function UserSettingsSwipeRightToLeft() {
   const node = noop.useMemo(() => {
     const obj2 = { sections: null };
     const obj3 = { settings: null };
     const items = [constants.CHAT_GESTURES];
     obj3.settings = items;
     const items1 = [obj3];
-    const items2 = [...items1];
-    obj2.sections = items2;
+    obj2.sections = items1;
     return SettingBuilders.createList(obj2);
   }, []);
   return jsx(SettingLayoutDefault, { node });
-});
+};

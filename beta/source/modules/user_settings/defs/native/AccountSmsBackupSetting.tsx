@@ -1,67 +1,25 @@
-// Module ID: 15073
-// Function ID: 15074
+// Module ID: 15077
+// Function ID: 15078
 // Name: AccountSmsBackupSetting
-// Dependencies: [1376, 8270, 1078, 7322, 558, 568, 504, 15069, 1119, 14982, 15071, 5143, 4993, 7321, 1984, 7324, 12, 11630, 14983, 2]
+// Dependencies: [1372, 8265, 1074, 7320, 504, 15073, 1115, 14986, 15075, 5141, 4991, 7319, 1980, 7322, 12, 11754, 14987, 2]
 
-// Module 15073 (AccountSmsBackupSetting)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7324 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14982 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15071 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 15077 (AccountSmsBackupSetting)
+import initialize from "initialize" /* 504 */;
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7322 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14986 */;
+import account_MFAUtils from "account/MFAUtils" /* 15073 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15075 */;
+import UserStore from "UserStore" /* 1372 */;
 
-const initialize = obj(504);
-const account_MFAUtils = obj(15069);
 require = fn;
-const UserFlags = fn(1078).UserFlags;
-let closure_5 = fn(7322).PHONE_VERIFICATION_MODAL_KEY;
-let ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let obj = require;
-  let sMSBackupDisabledMessage = dependencyMap;
-  const cResult = c.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function s() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp3 = items;
-    tmp4 = fn;
-  } else {
-    [tmp3, tmp4] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp3, tmp4);
-  if (null == stateFromStores) {
-    return null;
-  } else if (cResult[2] !== stateFromStores) {
-    obj = account_MFAUtils;
-    sMSBackupDisabledMessage = obj.getSMSBackupDisabledMessage(stateFromStores);
-    cResult[2] = stateFromStores;
-    cResult[3] = sMSBackupDisabledMessage;
-  }
-}) : (() => {
-  const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let sMSBackupDisabledMessage = null;
-  if (null != stateFromStores) {
-    sMSBackupDisabledMessage = account_MFAUtils.getSMSBackupDisabledMessage(stateFromStores);
-    const tmpResult = account_MFAUtils;
-  }
-  return sMSBackupDisabledMessage;
-});
-let closure_6 = tmp2;
-ReactCompilerGating = fn(558);
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = fn(558);
-fn = () => null != closure_6();
+const UserFlags = fn(1074).UserFlags;
+let closure_5 = fn(7320).PHONE_VERIFICATION_MODAL_KEY;
 const apply = fn(12);
-let closure_7 = apply.debounce(function toggleSMS(user) {
+let closure_6 = apply.debounce(function toggleSMS(user) {
   user = user.user;
   if (user.mfaSMSEnabled) {
     const intl2 = util.intl;
@@ -93,91 +51,28 @@ let closure_7 = apply.debounce(function toggleSMS(user) {
     const obj5 = { reason: null };
     let obj = ModalActionCreatorsDefault;
     obj5.reason = PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(asyncRequireImpl(7321, dependencyMap.paths), obj5, closure_5);
-    const tmp5 = asyncRequireImpl(7321, dependencyMap.paths);
+    obj.pushLazy(asyncRequireImpl(7319, dependencyMap.paths), obj5, closure_5);
+    const tmp5 = asyncRequireImpl(7319, dependencyMap.paths);
   }
 }, 200);
-const SettingBuilders = fn(11630);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function l() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    let flag;
-    if (stateFromStores != null) {
-      flag = stateFromStores.hasFlag(UserFlags.MFA_SMS);
-    }
-    if (flag == null) {
-      flag = false;
-    }
-    cResult[2] = stateFromStores;
-    cResult[3] = flag;
-    let tmp7 = flag;
-  } else {
-    tmp7 = cResult[3];
-  }
-  return tmp7;
-}) : (() => {
-  const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let flag;
-  if (stateFromStores != null) {
-    flag = stateFromStores.hasFlag(UserFlags.MFA_SMS);
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-});
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.uHAJ5v);
   },
-  parent: fn(8270).MobileUserSettings.ACCOUNT,
-  useIsDisabled: fn,
-  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(4);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [UserStore];
-      const fn = function l() {
-        return currentUser.getCurrentUser();
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp4 = items;
-      tmp5 = fn;
-    } else {
-      [tmp4, tmp5] = cResult;
+  parent: fn(8265).MobileUserSettings.ACCOUNT,
+  useIsDisabled: function useAccountSMSBackupSettingIsDisabled() {
+    const items = [UserStore];
+    const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+    let sMSBackupDisabledMessage = null;
+    if (null != stateFromStores) {
+      sMSBackupDisabledMessage = account_MFAUtils.getSMSBackupDisabledMessage(stateFromStores);
+      const tmpResult = account_MFAUtils;
     }
-    const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-    if (cResult[2] !== stateFromStores) {
-      let flag;
-      if (stateFromStores != null) {
-        flag = stateFromStores.hasFlag(UserFlags.MFA_SMS);
-      }
-      if (flag == null) {
-        flag = false;
-      }
-      cResult[2] = stateFromStores;
-      cResult[3] = flag;
-      let tmp7 = flag;
-    } else {
-      tmp7 = cResult[3];
-    }
-    return tmp7;
-  }) : (() => {
+    return null != sMSBackupDisabledMessage;
+  },
+  useValue: function useAccountSMSBackupSettingToggleValue() {
     const items = [UserStore];
     const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
     let flag;
@@ -188,18 +83,27 @@ const toggle = SettingBuilders.createToggle({
       flag = false;
     }
     return flag;
-  }),
+  },
   onValueChange: function onAccountSMSBackupSettingTogglePress(arg0) {
     const currentUser = UserStore.getCurrentUser();
     if (null != currentUser) {
       const obj = { mfaSMSEnabled: !arg0, user: currentUser };
-      closure_7(obj);
+      closure_6(obj);
     }
   },
-  useDescription: tmp2,
-  usePredicate: fn(14983).useIsTOTPEnabled
+  useDescription: function useAccountSMSBackupSettingDescription() {
+    const items = [UserStore];
+    const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+    let sMSBackupDisabledMessage = null;
+    if (null != stateFromStores) {
+      sMSBackupDisabledMessage = account_MFAUtils.getSMSBackupDisabledMessage(stateFromStores);
+      const tmpResult = account_MFAUtils;
+    }
+    return sMSBackupDisabledMessage;
+  },
+  usePredicate: fn(14987).useIsTOTPEnabled
 });
 const size = fn(2);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/AccountSmsBackupSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountSmsBackupSetting.tsx");
 
 export default toggle;

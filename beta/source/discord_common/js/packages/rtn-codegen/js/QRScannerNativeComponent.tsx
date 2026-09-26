@@ -1,9 +1,9 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14167
+// Function ID: 14168
 // Name: QRScannerNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 14177 (QRScannerNativeComponent)
+// Module 14167 (QRScannerNativeComponent)
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

@@ -1,33 +1,32 @@
-// Module ID: 17407
-// Function ID: 17408
+// Module ID: 17397
+// Function ID: 17398
 // Name: MainViewTooltipActionSheetsV2
-// Dependencies: [32, 109, 19, 4483, 1224, 1078, 2042, 21, 17408, 1984, 17410, 17411, 17412, 17414, 17415, 16000, 17417, 17419, 17421, 17425, 17428, 17429, 12135, 2031, 2032, 1245, 2036, 558, 568, 10958, 4611, 2033, 17430, 504, 10957, 2]
+// Dependencies: [32, 19, 4479, 1220, 1074, 2038, 21, 17398, 1980, 17400, 17402, 17403, 17405, 17406, 16004, 17408, 17410, 17412, 17416, 17419, 17420, 12251, 2027, 2028, 1241, 2032, 10922, 4608, 2029, 17421, 504, 10921, 2]
 // Exports: default
 
-// Module 17407 (MainViewTooltipActionSheetsV2)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
+// Module 17397 (MainViewTooltipActionSheetsV2)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
 import _slicedToArray from "module_32" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import "module_19";
-import ActionSheetStore from "ActionSheetStore" /* 4483 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+import ActionSheetStore from "ActionSheetStore" /* 4479 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
 class GiftingPromotionCoachmarkImporter {
   constructor() {
-    return closure_0(closure_2[9])(closure_2[10], closure_2.paths);
+    return closure_0(closure_2[8])(closure_2[9], closure_2.paths);
   }
 }
 class PremiumMarketingMomentActionSheetImporter {
   constructor() {
-    return closure_0(closure_2[9])(closure_2[13], closure_2.paths);
+    return closure_0(closure_2[8])(closure_2[12], closure_2.paths);
   }
 }
 class ConnectionDeprecationActionSheetImporter {
   constructor() {
-    return closure_0(closure_2[9])(closure_2[18], closure_2.paths);
+    return closure_0(closure_2[8])(closure_2[17], closure_2.paths);
   }
 }
 function trackActionSheetImpression(actionSheetConfig) {
@@ -44,256 +43,207 @@ function trackActionSheetImpression(actionSheetConfig) {
         str3 = "time_recurring";
       }
       str2 = str3;
-      tmp3Result2 = tmp3(2032);
+      tmp3Result2 = tmp3(2028);
     }
     str = str2;
-    tmp3Result = tmp3(2032);
+    tmp3Result = tmp3(2028);
   }
   obj2.dc_type = str;
-  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = tmp3(2036).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = tmp3(2032).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
   obj2.bypass_fatigue = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(actionSheetConfig.id);
   obj2.is_another_action_sheet_open = tmp;
   obj.track(AnalyticEvents.MAIN_VIEW_ACTION_SHEET_SELECTED, obj2);
 }
-let closure_3 = ["actionSheetConfig", "hasTrackedRef"];
-let noop = fn(19);
-({ useEffect: closure_7, useMemo: closure_8, useRef: closure_9 } = noop);
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const constants = fn(2042).DismissibleContentGroupName;
-const jsx = fn(21).jsx;
-const MainViewTooltipActionSheets = "MainViewTooltipActionSheets";
-let items = [
-  {
-    id: fn(2031).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET,
-    importer: function GooglePlayPriceChangeActionSheetImporter() {
-      return asyncRequireImpl(17412, dependencyMap.paths);
-    }
-  },
-,
-
-];
-let obj = {
-  id: fn(2031).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET,
-  importer: function GooglePlayPriceChangeActionSheetImporter() {
-    return asyncRequireImpl(17412, dependencyMap.paths);
-  }
-};
-items[1] = {
-  id: fn(2031).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET,
-  importer: function PremiumDiscountOfferActionSheetImporter() {
-    return asyncRequireImpl(17415, dependencyMap.paths);
-  }
-};
-let obj2 = {
-  id: fn(2031).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET,
-  importer: function PremiumDiscountOfferActionSheetImporter() {
-    return asyncRequireImpl(17415, dependencyMap.paths);
-  }
-};
-items[2] = {
-  id: fn(2031).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
-  importer: function PremiumTrialOfferActionSheetImporter() {
-    return asyncRequireImpl(16000, dependencyMap.paths);
-  }
-};
-let items1 = [...items];
-let obj3 = {
-  id: fn(2031).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
-  importer: function PremiumTrialOfferActionSheetImporter() {
-    return asyncRequireImpl(16000, dependencyMap.paths);
-  }
-};
-items1[tmp3] = { id: fn(2031).DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
-const sum = tmp3 + 1;
-let obj4 = { id: fn(2031).DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
-items1[sum] = { id: fn(2031).DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
-const sum1 = sum + 1;
-let obj5 = { id: fn(2031).DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
-items1[sum1] = { id: fn(2031).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
-const sum2 = sum1 + 1;
-let obj6 = { id: fn(2031).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
-items1[sum2] = { id: fn(2031).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
-const sum3 = sum2 + 1;
-let obj7 = { id: fn(2031).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
-items1[sum3] = { id: fn(2031).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, importer: GiftingPromotionCoachmarkImporter };
-const sum4 = sum3 + 1;
-let obj8 = { id: fn(2031).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, importer: GiftingPromotionCoachmarkImporter };
-items1[sum4] = { id: fn(2031).DismissibleContent.GIFTING_PROMOTION_REMINDER, importer: GiftingPromotionCoachmarkImporter };
-const sum5 = sum4 + 1;
-let obj9 = { id: fn(2031).DismissibleContent.GIFTING_PROMOTION_REMINDER, importer: GiftingPromotionCoachmarkImporter };
-items1[sum5] = {
-  id: fn(2031).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK,
-  importer: function GiftingBadgesCoachmarkImporter() {
-    return asyncRequireImpl(17419, dependencyMap.paths);
-  }
-};
-const sum6 = sum5 + 1;
-const obj10 = {
-  id: fn(2031).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK,
-  importer: function GiftingBadgesCoachmarkImporter() {
-    return asyncRequireImpl(17419, dependencyMap.paths);
-  }
-};
-items1[sum6] = {
-  id: fn(2031).DismissibleContent.CUSTOM_APP_ICONS_COACHMARK,
-  importer: function AppIconsCoachMarkImporter() {
-    return asyncRequireImpl(17408, dependencyMap.paths);
-  }
-};
-const sum7 = sum6 + 1;
-const obj11 = {
-  id: fn(2031).DismissibleContent.CUSTOM_APP_ICONS_COACHMARK,
-  importer: function AppIconsCoachMarkImporter() {
-    return asyncRequireImpl(17408, dependencyMap.paths);
-  }
-};
-items1[sum7] = {
-  id: fn(2031).DismissibleContent.ROBLOX_CONNECTION_COACHMARK,
-  importer: function RobloxConnectionCoachmarkImporter() {
-    return asyncRequireImpl(17411, dependencyMap.paths);
-  }
-};
-const sum8 = sum7 + 1;
-const obj12 = {
-  id: fn(2031).DismissibleContent.ROBLOX_CONNECTION_COACHMARK,
-  importer: function RobloxConnectionCoachmarkImporter() {
-    return asyncRequireImpl(17411, dependencyMap.paths);
-  }
-};
-items1[sum8] = {
-  id: fn(2031).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK,
-  importer: function DisplayNameStylesFlywheelMobileActionSheetImporter() {
-    return asyncRequireImpl(17417, dependencyMap.paths);
-  }
-};
-const sum9 = sum8 + 1;
-const obj13 = {
-  id: fn(2031).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK,
-  importer: function DisplayNameStylesFlywheelMobileActionSheetImporter() {
-    return asyncRequireImpl(17417, dependencyMap.paths);
-  }
-};
-items1[sum9] = {
-  id: fn(2031).DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT,
-  importer: function CollectiblesMobileAnnouncementActionSheetImporter() {
-    return asyncRequireImpl(17425, dependencyMap.paths);
-  }
-};
-const sum10 = sum9 + 1;
-const obj14 = {
-  id: fn(2031).DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT,
-  importer: function CollectiblesMobileAnnouncementActionSheetImporter() {
-    return asyncRequireImpl(17425, dependencyMap.paths);
-  }
-};
-items1[sum10] = {
-  id: fn(2031).DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT,
-  importer: function NitroFileUploadAnnouncementPromoSheetImporter() {
-    return asyncRequireImpl(17428, dependencyMap.paths);
-  }
-};
-const sum11 = sum10 + 1;
-const obj15 = {
-  id: fn(2031).DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT,
-  importer: function NitroFileUploadAnnouncementPromoSheetImporter() {
-    return asyncRequireImpl(17428, dependencyMap.paths);
-  }
-};
-items1[sum11] = {
-  id: fn(2031).DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL,
-  importer: function NitroFileUploadUpsellPromoSheetImporter() {
-    return asyncRequireImpl(17429, dependencyMap.paths);
-  }
-};
-const obj16 = {
-  id: fn(2031).DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL,
-  importer: function NitroFileUploadUpsellPromoSheetImporter() {
-    return asyncRequireImpl(17429, dependencyMap.paths);
-  }
-};
-items1[sum11 + 1] = {
-  id: fn(2031).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK,
-  importer: function CustomTypingIndicatorAnnounceActionSheetImporter() {
-    return asyncRequireImpl(12135, dependencyMap.paths);
-  }
-};
-const ReactCompilerGating = fn(558);
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetConfig) => {
-  const cResult = require("c").c(10);
-  if (cResult[0] !== actionSheetConfig) {
-    actionSheetConfig = actionSheetConfig.actionSheetConfig;
-    _require = actionSheetConfig;
-    const hasTrackedRef = actionSheetConfig.hasTrackedRef;
-    const tmp9 = _objectWithoutProperties(actionSheetConfig, closure_3);
-    cResult[0] = actionSheetConfig;
-    cResult[1] = actionSheetConfig;
-    cResult[2] = hasTrackedRef;
-    cResult[3] = tmp9;
-    let tmp6 = tmp9;
-  } else {
-    _require = cResult[1];
-    tmp6 = cResult[3];
-  }
-  if (cResult[4] === tmp4) {
-    if (cResult[5] === tmp5) {
-      let tmp10 = cResult[6];
-      let tmp11 = cResult[7];
-    }
-    closure_7(tmp10, tmp11);
-    if (cResult[8] !== tmp6) {
-      const obj2 = {};
-      const merged = Object.assign(tmp6);
-      const tmp19 = jsx(require("DismissibleActionSheet").DismissibleActionSheet, {});
-      cResult[8] = tmp6;
-      cResult[9] = tmp19;
-      let tmp14 = tmp19;
-    } else {
-      tmp14 = cResult[9];
-    }
-    return tmp14;
-  }
-  const fn = function p() {
-    if (!ref.current) {
-      tmp.current = true;
-      trackActionSheetImpression(closure_0);
-    }
-  };
-  const items = [tmp4, tmp5];
-  cResult[4] = tmp4;
-  cResult[5] = tmp5;
-  cResult[6] = fn;
-  cResult[7] = items;
-  tmp11 = items;
-  tmp10 = fn;
-}) : ((actionSheetConfig) => {
+function TrackedDismissibleActionSheet(actionSheetConfig) {
   actionSheetConfig = actionSheetConfig.actionSheetConfig;
   const hasTrackedRef = actionSheetConfig.hasTrackedRef;
   const merged = Object.assign(actionSheetConfig, Object.assign({ actionSheetConfig: 0, hasTrackedRef: 0 }));
   const items = [actionSheetConfig, hasTrackedRef];
-  closure_7(() => {
+  closure_5(() => {
     if (!hasTrackedRef.current) {
       tmp.current = true;
       trackActionSheetImpression(actionSheetConfig);
     }
   }, items);
   const merged1 = Object.assign(merged);
-  return jsx(actionSheetConfig(10958).DismissibleActionSheet, {});
-});
+  return jsx(actionSheetConfig(10922).DismissibleActionSheet, {});
+}
+let noop = fn(19);
+({ useEffect: hasOwnProperty, useMemo: metroRequire, useRef: closure_7 } = noop);
+const AnalyticEvents = fn(1074).AnalyticEvents;
+const constants = fn(2038).DismissibleContentGroupName;
+const jsx = fn(21).jsx;
+const MainViewTooltipActionSheets = "MainViewTooltipActionSheets";
+let items = [
+  {
+    id: fn(2027).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET,
+    importer: function GooglePlayPriceChangeActionSheetImporter() {
+      return asyncRequireImpl(17403, dependencyMap.paths);
+    }
+  },
+,
+
+];
+let obj = {
+  id: fn(2027).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET,
+  importer: function GooglePlayPriceChangeActionSheetImporter() {
+    return asyncRequireImpl(17403, dependencyMap.paths);
+  }
+};
+items[1] = {
+  id: fn(2027).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET,
+  importer: function PremiumDiscountOfferActionSheetImporter() {
+    return asyncRequireImpl(17406, dependencyMap.paths);
+  }
+};
+let obj2 = {
+  id: fn(2027).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET,
+  importer: function PremiumDiscountOfferActionSheetImporter() {
+    return asyncRequireImpl(17406, dependencyMap.paths);
+  }
+};
+items[2] = {
+  id: fn(2027).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
+  importer: function PremiumTrialOfferActionSheetImporter() {
+    return asyncRequireImpl(16004, dependencyMap.paths);
+  }
+};
+let items1 = [...items];
+let obj3 = {
+  id: fn(2027).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
+  importer: function PremiumTrialOfferActionSheetImporter() {
+    return asyncRequireImpl(16004, dependencyMap.paths);
+  }
+};
+items1[tmp3] = { id: fn(2027).DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
+const sum = tmp3 + 1;
+let obj4 = { id: fn(2027).DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
+items1[sum] = { id: fn(2027).DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
+const sum1 = sum + 1;
+let obj5 = { id: fn(2027).DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE, importer: ConnectionDeprecationActionSheetImporter };
+items1[sum1] = { id: fn(2027).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
+const sum2 = sum1 + 1;
+let obj6 = { id: fn(2027).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
+items1[sum2] = { id: fn(2027).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
+const sum3 = sum2 + 1;
+let obj7 = { id: fn(2027).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, importer: PremiumMarketingMomentActionSheetImporter };
+items1[sum3] = { id: fn(2027).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, importer: GiftingPromotionCoachmarkImporter };
+const sum4 = sum3 + 1;
+let obj8 = { id: fn(2027).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, importer: GiftingPromotionCoachmarkImporter };
+items1[sum4] = { id: fn(2027).DismissibleContent.GIFTING_PROMOTION_REMINDER, importer: GiftingPromotionCoachmarkImporter };
+const sum5 = sum4 + 1;
+let obj9 = { id: fn(2027).DismissibleContent.GIFTING_PROMOTION_REMINDER, importer: GiftingPromotionCoachmarkImporter };
+items1[sum5] = {
+  id: fn(2027).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK,
+  importer: function GiftingBadgesCoachmarkImporter() {
+    return asyncRequireImpl(17410, dependencyMap.paths);
+  }
+};
+const sum6 = sum5 + 1;
+const obj10 = {
+  id: fn(2027).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK,
+  importer: function GiftingBadgesCoachmarkImporter() {
+    return asyncRequireImpl(17410, dependencyMap.paths);
+  }
+};
+items1[sum6] = {
+  id: fn(2027).DismissibleContent.CUSTOM_APP_ICONS_COACHMARK,
+  importer: function AppIconsCoachMarkImporter() {
+    return asyncRequireImpl(17398, dependencyMap.paths);
+  }
+};
+const sum7 = sum6 + 1;
+const obj11 = {
+  id: fn(2027).DismissibleContent.CUSTOM_APP_ICONS_COACHMARK,
+  importer: function AppIconsCoachMarkImporter() {
+    return asyncRequireImpl(17398, dependencyMap.paths);
+  }
+};
+items1[sum7] = {
+  id: fn(2027).DismissibleContent.ROBLOX_CONNECTION_COACHMARK,
+  importer: function RobloxConnectionCoachmarkImporter() {
+    return asyncRequireImpl(17402, dependencyMap.paths);
+  }
+};
+const sum8 = sum7 + 1;
+const obj12 = {
+  id: fn(2027).DismissibleContent.ROBLOX_CONNECTION_COACHMARK,
+  importer: function RobloxConnectionCoachmarkImporter() {
+    return asyncRequireImpl(17402, dependencyMap.paths);
+  }
+};
+items1[sum8] = {
+  id: fn(2027).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK,
+  importer: function DisplayNameStylesFlywheelMobileActionSheetImporter() {
+    return asyncRequireImpl(17408, dependencyMap.paths);
+  }
+};
+const sum9 = sum8 + 1;
+const obj13 = {
+  id: fn(2027).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK,
+  importer: function DisplayNameStylesFlywheelMobileActionSheetImporter() {
+    return asyncRequireImpl(17408, dependencyMap.paths);
+  }
+};
+items1[sum9] = {
+  id: fn(2027).DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT,
+  importer: function CollectiblesMobileAnnouncementActionSheetImporter() {
+    return asyncRequireImpl(17416, dependencyMap.paths);
+  }
+};
+const sum10 = sum9 + 1;
+const obj14 = {
+  id: fn(2027).DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT,
+  importer: function CollectiblesMobileAnnouncementActionSheetImporter() {
+    return asyncRequireImpl(17416, dependencyMap.paths);
+  }
+};
+items1[sum10] = {
+  id: fn(2027).DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT,
+  importer: function NitroFileUploadAnnouncementPromoSheetImporter() {
+    return asyncRequireImpl(17419, dependencyMap.paths);
+  }
+};
+const sum11 = sum10 + 1;
+const obj15 = {
+  id: fn(2027).DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT,
+  importer: function NitroFileUploadAnnouncementPromoSheetImporter() {
+    return asyncRequireImpl(17419, dependencyMap.paths);
+  }
+};
+items1[sum11] = {
+  id: fn(2027).DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL,
+  importer: function NitroFileUploadUpsellPromoSheetImporter() {
+    return asyncRequireImpl(17420, dependencyMap.paths);
+  }
+};
+const obj16 = {
+  id: fn(2027).DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL,
+  importer: function NitroFileUploadUpsellPromoSheetImporter() {
+    return asyncRequireImpl(17420, dependencyMap.paths);
+  }
+};
+items1[sum11 + 1] = {
+  id: fn(2027).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK,
+  importer: function CustomTypingIndicatorAnnounceActionSheetImporter() {
+    return asyncRequireImpl(12251, dependencyMap.paths);
+  }
+};
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/upsell_tooltip/native/MainViewTooltipActionSheetsV2.tsx");
 
 export default function MainViewTooltipActionSheetsV2() {
-  mainViewTooltipActionSheetMap = mainViewTooltipActionSheetMap(17430).useMainViewTooltipActionSheetMap();
+  mainViewTooltipActionSheetMap = mainViewTooltipActionSheetMap(17421).useMainViewTooltipActionSheetMap();
   [first, dependencyMap] = noop.useState(null);
-  closure_3 = closure_9(false);
-  _slicedToArray = closure_9(false);
+  _slicedToArray = ref(false);
+  noop = ref(false);
   const items = [first];
-  ref(() => {
+  stateFromStores(() => {
     closure_4.current = false;
   }, items);
-  let obj = mainViewTooltipActionSheetMap(17430);
-  items1 = [ActionSheetStore];
-  const stateFromStores = mainViewTooltipActionSheetMap(504).useStateFromStores(items1, () => key.getKey() === MainViewTooltipActionSheets);
+  let obj = mainViewTooltipActionSheetMap(17421);
+  items1 = [obj5];
+  stateFromStores = mainViewTooltipActionSheetMap(504).useStateFromStores(items1, () => obj5.getKey() === MainViewTooltipActionSheets);
   const obj2 = mainViewTooltipActionSheetMap(504);
   const items2 = [UserSettingsProtoStore];
   const stateFromStores1 = mainViewTooltipActionSheetMap(504).useStateFromStores(items2, () => {
@@ -318,7 +268,7 @@ export default function MainViewTooltipActionSheetsV2() {
       return prop;
     })
   ];
-  const tmp9 = obj5(() => {
+  const tmp9 = closure_6(() => {
     let found = items1.find((id) => {
       let result = closure_1_0[id.id];
       let isEligible;
@@ -335,7 +285,7 @@ export default function MainViewTooltipActionSheetsV2() {
           if (obj.isSnowflakeBoundDismissibleContent(id)) {
             let isDismissed3 = null == result.newSnowflakeId;
             if (!isDismissed3) {
-              tmp4 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[30]);
+              tmp4 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[27]);
               UNSAFE_isSnowflakeBoundDismissibleContentDismissed = tmp4.UNSAFE_isSnowflakeBoundDismissibleContentDismissed;
               result = UNSAFE_isSnowflakeBoundDismissibleContentDismissed(id, result.newSnowflakeId);
               isDismissed3 = result.isDismissed;
@@ -343,25 +293,25 @@ export default function MainViewTooltipActionSheetsV2() {
             let isDismissed = isDismissed3;
           } else {
             if (tmp4Result.isVersionedDismissibleContent(id)) {
-              isDismissed = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[31]).isVersionedDismissibleContentDismissed(id, result.latestVersion).isDismissed;
-              const tmp4Result5 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[31]);
+              isDismissed = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[28]).isVersionedDismissibleContentDismissed(id, result.latestVersion).isDismissed;
+              const tmp4Result5 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[28]);
             } else {
               if (tmp4Result6.isTimeRecurringDismissibleContent(id)) {
                 let isDismissed2 = null == result.cooldownConfig;
                 if (!isDismissed2) {
-                  isDismissed2 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[31]).isTimeRecurringDismissibleContentDismissed(id, result.cooldownConfig).isDismissed;
-                  const tmp4Result7 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[31]);
+                  isDismissed2 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[28]).isTimeRecurringDismissibleContentDismissed(id, result.cooldownConfig).isDismissed;
+                  const tmp4Result7 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[28]);
                 }
                 isDismissed = isDismissed2;
               } else {
-                isDismissed = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[30]).UNSAFE_isDismissibleContentDismissed(id);
-                const tmp4Result8 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[30]);
+                isDismissed = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[27]).UNSAFE_isDismissibleContentDismissed(id);
+                const tmp4Result8 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[27]);
               }
-              tmp4Result6 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[24]);
+              tmp4Result6 = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[23]);
             }
-            tmp4Result = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[24]);
+            tmp4Result = tmp4(UNSAFE_isSnowflakeBoundDismissibleContentDismissed[23]);
           }
-          obj = mainViewTooltipActionSheetMap(closure_2[24]);
+          obj = mainViewTooltipActionSheetMap(closure_2[23]);
         }
       }
       return isEligible;
@@ -371,10 +321,10 @@ export default function MainViewTooltipActionSheetsV2() {
     }
     return found;
   }, items4);
-  noop = tmp9;
-  ref = closure_9(null);
+  closure_6 = tmp9;
+  ref = ref(null);
   const items5 = [tmp9, stateFromStores];
-  ref(() => {
+  stateFromStores(() => {
     if (null != ref.current) {
       let _clearTimeout = clearTimeout;
       clearTimeout(tmp.current);
@@ -421,10 +371,10 @@ export default function MainViewTooltipActionSheetsV2() {
           str4 = "time_recurring";
         }
         str3 = str4;
-        tmpResult4 = tmp(2032);
+        tmpResult4 = tmp(2028);
       }
       str2 = str3;
-      tmpResult3 = tmp(2032);
+      tmpResult3 = tmp(2028);
     }
     if ("snowflake_bound" === str2) {
       const obj6 = { contentType: first.id, newSnowflakeId: null, groupName: null, children: null };
@@ -439,11 +389,11 @@ export default function MainViewTooltipActionSheetsV2() {
         if (visibleContent.visibleContent === first.id) {
           const obj = { actionSheetConfig: tmp2, hasTrackedRef, actionSheetKey: MainViewTooltipActionSheets, importer: tmp2.importer, markAsDismissed: tmp };
           const merged = Object.assign(obj5.actionSheetProperties);
-          tmp3 = <closure_18 actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} />;
+          tmp3 = <TrackedDismissibleActionSheet actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} />;
         }
         return tmp3;
       };
-      return jsx(tmp(10957).SelectedSnowflakeBoundDismissibleContent, { contentType: first.id, newSnowflakeId: null, groupName: null, children: null });
+      return jsx(tmp(10921).SelectedSnowflakeBoundDismissibleContent, { contentType: first.id, newSnowflakeId: null, groupName: null, children: null });
     } else if ("versioned" === str2) {
       let num = obj5.latestVersion;
       if (num == null) {
@@ -458,12 +408,12 @@ export default function MainViewTooltipActionSheetsV2() {
               if (visibleContent.visibleContent === first.id) {
                 const obj = { actionSheetConfig: tmp2, hasTrackedRef, actionSheetKey: MainViewTooltipActionSheets, importer: tmp2.importer, markAsDismissed: tmp, versionedDismissibleContentType: tmp2.id };
                 const merged = Object.assign(obj5.actionSheetProperties);
-                tmp3 = <closure_18 actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} versionedDismissibleContentType={tmp2.id} />;
+                tmp3 = <TrackedDismissibleActionSheet actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} versionedDismissibleContentType={tmp2.id} />;
               }
               return tmp3;
             }
       };
-      return jsx(tmp(10957).SelectedVersionedDismissibleContent, {
+      return jsx(tmp(10921).SelectedVersionedDismissibleContent, {
         latestVersion: num,
         contentType: first.id,
         groupName: constants.MAIN_VIEW_TOOLTIPS,
@@ -472,7 +422,7 @@ export default function MainViewTooltipActionSheetsV2() {
               if (visibleContent.visibleContent === first.id) {
                 const obj = { actionSheetConfig: tmp2, hasTrackedRef, actionSheetKey: MainViewTooltipActionSheets, importer: tmp2.importer, markAsDismissed: tmp, versionedDismissibleContentType: tmp2.id };
                 const merged = Object.assign(obj5.actionSheetProperties);
-                tmp3 = <closure_18 actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} versionedDismissibleContentType={tmp2.id} />;
+                tmp3 = <TrackedDismissibleActionSheet actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} versionedDismissibleContentType={tmp2.id} />;
               }
               return tmp3;
             }
@@ -488,12 +438,12 @@ export default function MainViewTooltipActionSheetsV2() {
               if (visibleContent.visibleContent === first.id) {
                 const obj = { actionSheetConfig: tmp2, hasTrackedRef, actionSheetKey: MainViewTooltipActionSheets, importer: tmp2.importer, markAsDismissed: tmp };
                 const merged = Object.assign(obj5.actionSheetProperties);
-                tmp3 = <closure_18 actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} />;
+                tmp3 = <TrackedDismissibleActionSheet actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} />;
               }
               return tmp3;
             }
       };
-      return jsx(tmp(10957).SelectedTimeRecurringDismissibleContent, {
+      return jsx(tmp(10921).SelectedTimeRecurringDismissibleContent, {
         contentType: first.id,
         timeRecurringConfig: obj5.cooldownConfig,
         groupName: constants.MAIN_VIEW_TOOLTIPS,
@@ -503,7 +453,7 @@ export default function MainViewTooltipActionSheetsV2() {
               if (visibleContent.visibleContent === first.id) {
                 const obj = { actionSheetConfig: tmp2, hasTrackedRef, actionSheetKey: MainViewTooltipActionSheets, importer: tmp2.importer, markAsDismissed: tmp };
                 const merged = Object.assign(obj5.actionSheetProperties);
-                tmp3 = <closure_18 actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} />;
+                tmp3 = <TrackedDismissibleActionSheet actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} actionSheetKey={MainViewTooltipActionSheets} importer={tmp2.importer} markAsDismissed={tmp} />;
               }
               return tmp3;
             }
@@ -518,15 +468,15 @@ export default function MainViewTooltipActionSheetsV2() {
         if (visibleContent.visibleContent === first.id) {
           const obj = { actionSheetConfig: tmp2, hasTrackedRef, markAsDismissed: tmp, importer: tmp2.importer, actionSheetKey: MainViewTooltipActionSheets };
           const merged = Object.assign(obj5.actionSheetProperties);
-          tmp3 = <closure_18 actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} markAsDismissed={tmp} importer={tmp2.importer} actionSheetKey={MainViewTooltipActionSheets} />;
+          tmp3 = <TrackedDismissibleActionSheet actionSheetConfig={tmp2} hasTrackedRef={hasTrackedRef} markAsDismissed={tmp} importer={tmp2.importer} actionSheetKey={MainViewTooltipActionSheets} />;
         }
         return tmp3;
       };
-      return jsx(first(10957), { contentTypes: null, groupName: null, children: null });
+      return jsx(first(10921), { contentTypes: null, groupName: null, children: null });
     } else {
       return null;
     }
-    tmpResult = tmp(2032);
+    tmpResult = tmp(2028);
   }
   const obj4 = mainViewTooltipActionSheetMap(504);
 };

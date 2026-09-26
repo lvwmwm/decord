@@ -1,11 +1,11 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15256
+// Function ID: 15257
 // Name: ClipsOptOutOfVoiceRecordingSetting
-// Dependencies: [5, 8270, 2023, 577, 11630, 1119, 2]
+// Dependencies: [5, 8265, 2019, 573, 11754, 1115, 2]
 
-// Module 15252 (ClipsOptOutOfVoiceRecordingSetting)
-import util from "util" /* 1119 */;
-import UserSettings from "UserSettings" /* 2023 */;
+// Module 15256 (ClipsOptOutOfVoiceRecordingSetting)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -20,7 +20,7 @@ let closure_4 = async function _updateClipsAllowVoiceRecording(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -51,7 +51,7 @@ let closure_4 = async function _updateClipsAllowVoiceRecording(arg0, value) {
       } else {
         closure_129_1(closure_129_2[3]).dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp12) {
       c3 = tmp;
@@ -59,7 +59,7 @@ let closure_4 = async function _updateClipsAllowVoiceRecording(arg0, value) {
     }
   }
 };
-const SettingBuilders = fn(11630);
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -69,8 +69,8 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t["wW9/zQ"]);
   },
-  parent: fn(8270).MobileUserSettings.CLIPS,
-  useValue: fn(2023).ClipsAllowVoiceRecording.useSetting,
+  parent: fn(8265).MobileUserSettings.CLIPS,
+  useValue: fn(2019).ClipsAllowVoiceRecording.useSetting,
   onValueChange: function updateClipsAllowVoiceRecording() {
     const self = this;
     const apply = closure_4.apply;

@@ -1,25 +1,25 @@
-// Module ID: 5663
-// Function ID: 5664
+// Module ID: 5661
+// Function ID: 5662
 // Name: SelectedChannelActionCreatorsAdditional
-// Dependencies: [2045, 2067, 5664, 4431, 2099, 4612, 1376, 4809, 5665, 4935, 5666, 4489, 5667, 5668, 4757, 5681, 1984, 13930, 1259, 577, 2]
+// Dependencies: [2041, 2063, 5662, 4427, 2095, 4609, 1372, 4807, 5663, 4933, 5664, 4485, 5665, 5666, 4755, 5679, 1980, 13920, 1255, 573, 2]
 // Exports: getChannelSelectionOrigin, selectVoiceChannelAdditional
 
-// Module 5663 (SelectedChannelActionCreatorsAdditional)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import v1 from "v1" /* 1259 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5664 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import UserStore from "UserStore" /* 1376 */;
-import VoiceStateStore from "VoiceStateStore" /* 4809 */;
+// Module 5661 (SelectedChannelActionCreatorsAdditional)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import v1 from "v1" /* 1255 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5662 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import UserStore from "UserStore" /* 1372 */;
+import VoiceStateStore from "VoiceStateStore" /* 4807 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const STAGE_BOOSTING_SHEET_KEY = fn(5665).STAGE_BOOSTING_SHEET_KEY;
+const STAGE_BOOSTING_SHEET_KEY = fn(5663).STAGE_BOOSTING_SHEET_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");
 

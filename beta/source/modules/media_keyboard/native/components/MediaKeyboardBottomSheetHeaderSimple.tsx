@@ -1,52 +1,23 @@
-// Module ID: 10974
-// Function ID: 10975
+// Module ID: 10936
+// Function ID: 10937
 // Name: MediaKeyboardBottomSheetHeaderSimple
-// Dependencies: [19, 17, 1612, 21, 4790, 580, 558, 568, 10975, 2]
+// Dependencies: [19, 17, 1608, 21, 4788, 576, 10937, 2]
 
-// Module 10974 (MediaKeyboardBottomSheetHeaderSimple)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10975 */;
+// Module 10936 (MediaKeyboardBottomSheetHeaderSimple)
+import nativeDefault from "native" /* 576 */;
+import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10937 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-const obj = { headerHandleOnlyWrap: { height: fn(1612).HEADER_HANDLE_HEIGHT, paddingBottom: nativeDefault.space.PX_4 } };
-let closure_5 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
-const obj3 = { height: fn(1612).HEADER_HANDLE_HEIGHT, paddingBottom: nativeDefault.space.PX_4 };
+const createStyles = fn(4788);
+const obj = { headerHandleOnlyWrap: { height: fn(1608).HEADER_HANDLE_HEIGHT, paddingBottom: nativeDefault.space.PX_4 } };
+let closure_4 = createStyles.createStyles(obj);
+const obj3 = { height: fn(1608).HEADER_HANDLE_HEIGHT, paddingBottom: nativeDefault.space.PX_4 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHeaderSimple.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(6);
+export default noop.memo(function MediaKeyboardBottomSheetHeaderSimple(arg0) {
   ({ animatedIndex, onPress } = arg0);
-  const tmp3 = closure_5();
-  if (cResult[0] === animatedIndex) {
-    if (cResult[1] === onPress) {
-      let tmp4 = cResult[2];
-    }
-    if (cResult[3] === tmp3.headerHandleOnlyWrap) {
-      if (cResult[4] === tmp4) {
-        let tmp6 = cResult[5];
-      }
-      return tmp6;
-    }
-    const obj2 = { style: tmp3.headerHandleOnlyWrap, children: tmp4 };
-    const tmp9 = <View style={tmp3.headerHandleOnlyWrap}>{tmp4}</View>;
-    cResult[3] = tmp3.headerHandleOnlyWrap;
-    cResult[4] = tmp4;
-    cResult[5] = tmp9;
-    tmp6 = tmp9;
-  }
-  const tmp5 = jsx(MediaKeyboardBottomSheetHandleDefault, { animatedIndex, onPress });
-  cResult[0] = animatedIndex;
-  cResult[1] = onPress;
-  cResult[2] = tmp5;
-  tmp4 = tmp5;
-}) : ((arg0) => {
-  ({ animatedIndex, onPress } = arg0);
-  return <View style={closure_5().headerHandleOnlyWrap}>{jsx(MediaKeyboardBottomSheetHandleDefault, { animatedIndex, onPress })}</View>;
-}));
+  return <View style={closure_4().headerHandleOnlyWrap}>{jsx(MediaKeyboardBottomSheetHandleDefault, { animatedIndex, onPress })}</View>;
+});

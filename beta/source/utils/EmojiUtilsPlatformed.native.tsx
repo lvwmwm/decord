@@ -1,19 +1,19 @@
-// Module ID: 8062
-// Function ID: 8063
+// Module ID: 8057
+// Function ID: 8058
 // Name: EmojiUtilsPlatformed
-// Dependencies: [32, 5, 17, 4446, 4769, 1368, 12, 1401, 8063, 1479, 4640, 8102, 8107, 2]
+// Dependencies: [32, 5, 17, 4442, 4767, 1364, 12, 1397, 8058, 1475, 4637, 8097, 8102, 2]
 
-// Module 8062 (EmojiUtilsPlatformed)
+// Module 8057 (EmojiUtilsPlatformed)
 import _modDef12 from "module_12" /* 12 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import DeviceUtils from "DeviceUtils" /* 4769 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8063 */;
-import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 8102 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import DeviceUtils from "DeviceUtils" /* 4767 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8058 */;
+import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 8097 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import defaultImageSrcGenerator from "defaultImageSrcGenerator" /* 4446 */;
-import MemoizerUtils from "MemoizerUtils" /* 8107 */;
+import defaultImageSrcGenerator from "defaultImageSrcGenerator" /* 4442 */;
+import MemoizerUtils from "MemoizerUtils" /* 8102 */;
 
 require = fn;
 function getURL(name) {
@@ -41,7 +41,7 @@ let closure_9 = async function _getEmojiColors(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

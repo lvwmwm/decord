@@ -1,17 +1,17 @@
-// Module ID: 7680
-// Function ID: 7681
+// Module ID: 7678
+// Function ID: 7679
 // Name: PremiumManagementUtils
-// Dependencies: [1078, 1089, 21, 3, 5143, 1119, 1368, 1613, 7681, 7684, 2]
+// Dependencies: [1074, 1085, 21, 3, 5141, 1115, 1364, 1609, 7679, 7682, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 7680 (PremiumManagementUtils)
+// Module 7678 (PremiumManagementUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import jsxProd from "jsxProd" /* 21 */;
-import Constants from "Constants" /* 1078 */;
-import Constants2 from "Constants" /* 1089 */;
-import util from "util" /* 1119 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
-import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 7681 */;
+import Constants from "Constants" /* 1074 */;
+import Constants2 from "Constants" /* 1085 */;
+import util from "util" /* 1115 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 7679 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,14 +67,14 @@ export const getExternalManagementMessage = function getExternalManagementMessag
             str = "Meta Quest";
           }
           str2 = str;
-          tmp13Result = tmp13(1613);
+          tmp13Result = tmp13(1609);
         }
         if (null === tmp12.IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY) {
           if (null != subscription) {
             if (null != subscription.paymentGateway) {
-              const intl4 = tmp13(1119).intl;
+              const intl4 = tmp13(1115).intl;
               obj = { mobilePlatform: str2, externalPaymentGateway: closure_4[subscription.paymentGateway] };
-              return intl4.formatToPlainString(tmp13(1119).t.cFZnqX, obj);
+              return intl4.formatToPlainString(tmp13(1115).t.cFZnqX, obj);
             }
           }
         }
@@ -82,7 +82,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
           if (null != tmp) {
             if (tmp.shouldAllowExternalManagement) {
               if ("iOS" !== str2) {
-                const tmp13Result2 = tmp13(1613);
+                const tmp13Result2 = tmp13(1609);
               }
               let status;
               if (subscription != null) {
@@ -103,10 +103,10 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                   text: null,
                   variant: "text-sm/semibold"
                 };
-                const intl3 = tmp13(1119).intl;
-                const t = tmp13(1119).t;
+                const intl3 = tmp13(1115).intl;
+                const t = tmp13(1115).t;
                 obj2.text = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
-                jsx(tmp13(7684).LinkButton, {
+                jsx(tmp13(7682).LinkButton, {
                   containerStyle: { justifyContent: "flex-start" },
                   onPress() {
                                   if (null != c0) {
@@ -130,16 +130,16 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                     return obj.goToStandaloneNitroManagementFromMobileApp("premium_external_management", obj2, tmp4, tmp5);
                   }
                 }
-                const intl2 = tmp13(1119).intl;
+                const intl2 = tmp13(1115).intl;
                 const obj3 = { manageExternalNitroSubscription };
-                return intl2.format(tmp13(1119).t.IERwUb, obj3);
+                return intl2.format(tmp13(1115).t.IERwUb, obj3);
               }
               tmp8 = status === SubscriptionStatusTypes.CANCELED || status === SubscriptionStatusTypes.PAUSE_PENDING || status === SubscriptionStatusTypes.PAST_DUE;
             }
           }
-          const intl = tmp13(1119).intl;
+          const intl = tmp13(1115).intl;
           const obj4 = { mobilePlatform: str2 };
-          return intl.formatToPlainString(tmp13(1119).t.CnoyAN, obj4);
+          return intl.formatToPlainString(tmp13(1115).t.CnoyAN, obj4);
         } else {
           return null;
         }

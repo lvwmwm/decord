@@ -1,37 +1,22 @@
-// Module ID: 14409
-// Function ID: 14410
+// Module ID: 14399
+// Function ID: 14400
 // Name: ThumbnailImage
-// Dependencies: [19, 17, 21, 1368, 14410, 558, 568, 2]
+// Dependencies: [19, 17, 21, 1364, 14400, 2]
+// Exports: default
 
-// Module 14409 (ThumbnailImage)
-import c from "c" /* 568 */;
+// Module 14399 (ThumbnailImage)
 import noop from "module_19" /* 19 */;
 
-require = fn;
 let _default = fn(17).Image;
 const jsx = fn(21).jsx;
-const PlatformUtils = fn(1368);
+const PlatformUtils = fn(1364);
 if (PlatformUtils.isAndroid()) {
-  _default = fn(14410).default;
+  _default = fn(14400).default;
 }
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/ThumbnailImage/native/ThumbnailImage.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== arg0) {
-    const obj2 = {};
-    const merged = Object.assign(arg0);
-    const tmp8 = <_default />;
-    cResult[0] = arg0;
-    cResult[1] = tmp8;
-    let tmp2 = tmp8;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return tmp2;
-}) : ((arg0) => {
+export default function LocalImageThumbnail(arg0) {
   const merged = Object.assign(arg0);
   return <_default />;
-});
+};

@@ -1,25 +1,25 @@
-// Module ID: 12501
-// Function ID: 12502
+// Module ID: 12600
+// Function ID: 12601
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 12496, 12489, 21, 4790, 504, 4692, 7364, 1119, 5933, 5932, 5220, 2]
+// Dependencies: [5, 32, 19, 17, 12595, 12588, 21, 4788, 504, 4689, 7362, 1115, 5934, 5937, 5218, 2]
 // Exports: default
 
-// Module 12501 (GuildDirectoryEditDescriptionTemplate)
+// Module 12600 (GuildDirectoryEditDescriptionTemplate)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12496 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12595 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Keyboard: closure_7 } = get_ActivityIndicator);
-const GuildDirectoryConstants = fn(12489);
+const GuildDirectoryConstants = fn(12588);
 ({ DirectoryEntryCategories: closure_9, getHubCategories: c10 } = GuildDirectoryConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_13 = createStyles.createStyles({ container: { marginHorizontal: 16, gap: 24 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionTemplate.tsx");
@@ -42,7 +42,7 @@ export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

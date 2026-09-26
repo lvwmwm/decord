@@ -1,23 +1,16 @@
 // Module ID: 14656
 // Function ID: 14657
-// Dependencies: []
+// Dependencies: [14657]
 
 // Module 14656
-let propertyIsEnumerable = {}.propertyIsEnumerable;
-if (!getOwnPropertyDescriptor) {
-  if (getOwnPropertyDescriptor) {
-    propertyIsEnumerable = function propertyIsEnumerable(ownPropertySymbols) {
-      const tmp = getOwnPropertyDescriptor(this, ownPropertySymbols);
-      return tmp && tmp.enumerable;
-    };
+import _mod14657 from "module_14657" /* 14657 */;
+
+
+export default (arg0) => {
+  const tmp = _mod14657(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
   }
-  arg5.f = propertyIsEnumerable;
-} else {
-  const call = propertyIsEnumerable.call;
-  if (typeof call === "unknown") {
-    let propertyIsEnumerableResult = propertyIsEnumerable(1);
-  } else {
-    propertyIsEnumerableResult = call(obj, 1);
-  }
-  obj = { 1: 2 };
-}
+  return num;
+};

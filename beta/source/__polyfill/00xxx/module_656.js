@@ -1,9 +1,14 @@
 // Module ID: 656
 // Function ID: 657
-// Dependencies: [524]
+// Dependencies: [657, 531, 659]
 
 // Module 656
-import _mod524 from "module_524" /* 524 */;
+import _mod531 from "module_531" /* 531 */;
+import baseGetAllKeys from "baseGetAllKeys" /* 657 */;
+import stubArray from "stubArray" /* 659 */;
 
 
-export default _mod524.Uint8Array;
+export default function getAllKeys(arg0) {
+  const tmp = baseGetAllKeys;
+  return tmp(arg0, _mod531, stubArray);
+};

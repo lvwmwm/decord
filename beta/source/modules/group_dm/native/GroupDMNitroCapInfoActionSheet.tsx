@@ -1,128 +1,36 @@
-// Module ID: 12367
-// Function ID: 12368
+// Module ID: 12471
+// Function ID: 12472
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 11749, 21, 4790, 580, 558, 568, 4757, 1119, 4786, 5220, 7429, 2]
+// Dependencies: [19, 17, 11873, 21, 4788, 576, 4755, 7427, 4784, 1115, 5218, 2]
+// Exports: default
 
-// Module 12367 (GroupDMNitroCapInfoActionSheet)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+// Module 12471 (GroupDMNitroCapInfoActionSheet)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const number = fn(11749).MAX_GROUP_DM_NITRO_PARTICIPANTS;
+const number = fn(11873).MAX_GROUP_DM_NITRO_PARTICIPANTS;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, title: null, body: null, button: null };
 let obj3 = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.title = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 let obj4 = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 obj2.body = { marginTop: nativeDefault.space.PX_4, textAlign: "center" };
-let obj5 = { marginTop: nativeDefault.space.PX_4, textAlign: "center" };
+const obj5 = { marginTop: nativeDefault.space.PX_4, textAlign: "center" };
 obj2.button = { width: "100%", marginTop: nativeDefault.space.PX_24 };
 let closure_8 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj6 = { width: "100%", marginTop: nativeDefault.space.PX_24 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/group_dm/native/GroupDMNitroCapInfoActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(15);
-  const tmp4 = closure_8();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  ({ container, title } = tmp4);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.u1ilug);
-    cResult[1] = stringResult;
-    let tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.title) {
-    const obj2 = { style: title, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp6 };
-    const tmp10 = timestampProducer(tmp(4786).Text, obj2);
-    cResult[2] = tmp4.title;
-    cResult[3] = tmp10;
-    let tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1119).intl;
-    const obj3 = { number };
-    const formatToPlainStringResult = intl2.formatToPlainString(tmp(1119).t["mr27w/"], obj3);
-    cResult[4] = formatToPlainStringResult;
-    let tmp11 = formatToPlainStringResult;
-  } else {
-    tmp11 = cResult[4];
-  }
-  if (cResult[5] !== tmp4.body) {
-    const obj4 = { style: tmp4.body, variant: "text-md/medium", color: "text-muted", children: tmp11 };
-    const tmp16 = timestampProducer(tmp(4786).Text, obj4);
-    cResult[5] = tmp4.body;
-    cResult[6] = tmp16;
-    let tmp14 = tmp16;
-  } else {
-    tmp14 = cResult[6];
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { text: null, variant: "secondary", onPress: null, grow: true };
-    const intl3 = tmp(1119).intl;
-    obj5.text = intl3.string(tmp(1119).t.cpT0Cq);
-    obj5.onPress = first;
-    const tmp19 = timestampProducer(tmp(5220).Button, obj5);
-    cResult[7] = tmp19;
-    let tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[7];
-  }
-  if (cResult[8] !== tmp4.button) {
-    const obj6 = { style: tmp4.button, children: tmp17 };
-    const tmp23 = timestampProducer(View, obj6);
-    cResult[8] = tmp4.button;
-    cResult[9] = tmp23;
-    let tmp20 = tmp23;
-  } else {
-    tmp20 = cResult[9];
-  }
-  if (cResult[10] === tmp4.container) {
-    if (cResult[11] === tmp8) {
-      if (cResult[12] === tmp14) {
-        if (cResult[13] === tmp20) {
-          let tmp24 = cResult[14];
-        }
-        return tmp24;
-      }
-    }
-  }
-  const obj7 = { showGradient: true, children: null };
-  const obj8 = { style: container, children: null };
-  const items = [tmp8, tmp14, tmp20];
-  obj8.children = items;
-  obj7.children = React5(View, obj8);
-  const tmp25 = timestampProducer(Sheet_BottomSheet.BottomSheet, obj7);
-  cResult[10] = tmp4.container;
-  cResult[11] = tmp8;
-  cResult[12] = tmp14;
-  cResult[13] = tmp20;
-  cResult[14] = tmp25;
-  tmp24 = tmp25;
-}) : (() => {
+export default function GroupDMNitroCapInfoActionSheet() {
   const tmp = closure_8();
   const callback = noop.useCallback(() => {
     ActionSheetActionCreatorsDefault.hideActionSheet();
@@ -147,4 +55,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2.children = items;
   obj.children = React5(View, obj2);
   return timestampProducer(Sheet_BottomSheet.BottomSheet, obj);
-});
+};

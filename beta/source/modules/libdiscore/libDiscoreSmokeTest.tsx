@@ -1,14 +1,14 @@
-// Module ID: 18394
-// Function ID: 18395
+// Module ID: 18383
+// Function ID: 18384
 // Name: libDiscoreSmokeTest
-// Dependencies: [5, 1078, 3, 1358, 1354, 2071, 1245, 2]
+// Dependencies: [5, 1074, 3, 1354, 1350, 2067, 1241, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 18394 (libDiscoreSmokeTest)
+// Module 18383 (libDiscoreSmokeTest)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import initLibdiscore from "initLibdiscore" /* 1358 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import initLibdiscore from "initLibdiscore" /* 1354 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 2067 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -33,7 +33,7 @@ let closure_7 = async function _libDiscoreSmokeTest(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -128,7 +128,7 @@ function trackLibdiscoreFailure(arg0) {
   }
   AnalyticsUtilsDefault.track(AnalyticEvents.LIBDISCORE_LOADED, { success: false, error: combined });
 }
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const logger = new LoggerDefault("libdiscore");
 let c6 = false;
 const size = fn(2);

@@ -1,11 +1,11 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7858
+// Function ID: 7859
 // Name: CollectiblesMarketingsStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7863 (CollectiblesMarketingsStore)
+// Module 7858 (CollectiblesMarketingsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const FetchState = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 let closure_1 = {};

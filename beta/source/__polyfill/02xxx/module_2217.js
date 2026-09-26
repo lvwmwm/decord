@@ -1,9 +1,9 @@
 // Module ID: 2217
 // Function ID: 2218
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 2217
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy92aXJ0dWFsX2N1cnJlbmN5L3dlYi9vcmJfd2FsbGV0L21lc3NhZ2Vz", scales: [1], hash: "3398bf6649a3709ed9e36961e213d41b", name: "uk.messages.3398bf6649a3709ed9e36961e213d41b.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/virtual_currency/web/orb_wallet/messages", scales: [1], hash: "03bc7f3e5b10d608934421a23e3c7183", name: "OrbWallet.compiled.messages", type: "jsona" });

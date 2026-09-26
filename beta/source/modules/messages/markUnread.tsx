@@ -1,18 +1,18 @@
-// Module ID: 10659
-// Function ID: 10660
+// Module ID: 10544
+// Function ID: 10545
 // Name: markUnread
-// Dependencies: [5, 4433, 2045, 5010, 4805, 1376, 1078, 3, 11, 8044, 1275, 2]
+// Dependencies: [5, 4429, 2041, 5008, 4803, 1372, 1074, 3, 11, 8039, 1271, 2]
 // Exports: default
 
-// Module 10659 (markUnread)
+// Module 10544 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8044 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8039 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4433 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5010 */;
-import UserStore from "UserStore" /* 1376 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 5008 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 let closure_11 = async function _markUnread(arg0, value) {
@@ -26,7 +26,7 @@ let closure_11 = async function _markUnread(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -95,7 +95,7 @@ let closure_11 = async function _markUnread(arg0, value) {
             const toArrayResult = messages.toArray();
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -126,8 +126,8 @@ let closure_11 = async function _markUnread(arg0, value) {
     }
   }
 };
-const shouldBadgeMessage = fn(4805).shouldBadgeMessage;
-const Endpoints = fn(1078).Endpoints;
+const shouldBadgeMessage = fn(4803).shouldBadgeMessage;
+const Endpoints = fn(1074).Endpoints;
 let closure_10 = new LoggerDefault("markUnread");
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/markUnread.tsx");

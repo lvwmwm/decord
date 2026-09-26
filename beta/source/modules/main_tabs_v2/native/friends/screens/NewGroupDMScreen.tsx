@@ -1,25 +1,25 @@
-// Module ID: 17245
-// Function ID: 17246
+// Module ID: 17235
+// Function ID: 17236
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2045, 14062, 4813, 1376, 11198, 1078, 21, 4790, 580, 4803, 4997, 10047, 13215, 4757, 504, 11748, 11750, 11747, 1245, 4490, 1119, 17244, 8144, 11751, 4489, 8154, 10129, 8686, 8038, 1181, 11199, 17177, 2]
+// Dependencies: [32, 5, 19, 17, 2041, 14052, 4811, 1372, 11151, 1074, 21, 4788, 576, 4801, 4995, 10034, 13209, 4755, 504, 11872, 11874, 11871, 1241, 4486, 1115, 17234, 8139, 11875, 4485, 8149, 10150, 8681, 8033, 1177, 11152, 17167, 2]
 // Exports: default
 
-// Module 17245 (NewGroupDMScreen)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ToastUtils from "ToastUtils" /* 4489 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
-import HeaderShared from "HeaderShared" /* 8144 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11751 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17244 */;
+// Module 17235 (NewGroupDMScreen)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ToastUtils from "ToastUtils" /* 4485 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4801 */;
+import HeaderShared from "HeaderShared" /* 8139 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11875 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17234 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14062 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import UserStore from "UserStore" /* 1376 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14052 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -57,7 +57,7 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -86,7 +86,7 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
           closure_131_3 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -129,7 +129,7 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -150,7 +150,7 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
                               const obj5 = { value: closure_1_20(tmp32, closure_2_2), done: false };
                               return obj5;
                             } else {
-                              const obj6 = v3(4803);
+                              const obj6 = v3(4801);
                               v3 = 1;
                               dependencyMap = 1;
                               const obj7 = { value: obj6.addRecipients(id.id, tmp32, undefined, closure_2_2), done: false };
@@ -184,21 +184,21 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
                             const obj = { value, done: true };
                             return obj;
                           } else {
-                            const tmp8 = v3(10047);
+                            const tmp8 = v3(10034);
                             const call = tmp8.call;
                             if (typeof call === "unknown") {
                               tmp8(false, true);
                             } else {
                               call(tmp9, false, true);
                             }
-                            v3(13215)(closure_128_3);
+                            v3(13209)(closure_128_3);
                             dependencyMap = 3;
                             tmp9 = closure_128_3;
                           }
                           closure_128_3 = value;
                           v3 = 3;
                           dependencyMap = 1;
-                          const obj10 = { value: id(4997).monkeyPatchCall(), done: false };
+                          const obj10 = { value: id(4995).monkeyPatchCall(), done: false };
                           return obj10;
                         }
                       } catch (tmp26) {
@@ -280,12 +280,12 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const UserRowModes = fn(11198).UserRowModes;
-const Constants = fn(1078);
+const UserRowModes = fn(11151).UserRowModes;
+const Constants = fn(1074);
 ({ InstantInviteSources: map1, AnalyticEvents: closure_14, AnalyticsSections: closure_15, NEW_GROUP_DM_POPOUT_ID: closure_16 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { button: { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }, container: { height: "100%", display: "flex" }, instantInviteView: null, nameInputContainer: null, nameInput: null };
 let obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj2.instantInviteView = { flexShrink: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -387,7 +387,7 @@ export default function NewGroupDMScreen(navigation) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -518,7 +518,7 @@ export default function NewGroupDMScreen(navigation) {
     closure_2 = tmp6 ? closure_21 : disabled;
     options.setOptions({
       title: "" + stringResult + " (" + formatToPlainStringResult + ")",
-      headerTitle: c20 ? (() => constants(GroupDMRecipientLimitTitleDefault, { title: stringResult, memberCount, recipientLimit })) : ((arg0) => {
+      headerTitle: c20 ? (() => closure_3_17(GroupDMRecipientLimitTitleDefault, { title: stringResult, memberCount, recipientLimit })) : ((arg0) => {
         if (arg0 == null) {
           throw new TypeError("Cannot destructure 'undefined' or 'null'.");
         } else {
@@ -532,13 +532,13 @@ export default function NewGroupDMScreen(navigation) {
             str = "text-feedback-critical";
           }
           obj.color = str;
-          return constants(HeaderShared.GenericHeaderTitle, obj);
+          return closure_3_17(HeaderShared.GenericHeaderTitle, obj);
         }
       }),
       headerRight(arg0) {
         if (first1) {
           const obj2 = { color: button.button.color, size: "small" };
-          let result = constants(timestampProducer, obj2);
+          let result = closure_3_17(timestampProducer, obj2);
         } else {
           let isGroupDMResult;
           if (stateFromStores != null) {
@@ -673,7 +673,7 @@ export default function NewGroupDMScreen(navigation) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

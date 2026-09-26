@@ -1,16 +1,17 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11810
+// Function ID: 11811
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 5017, 2008, 9336, 8487, 7442, 8438, 38, 8445, 1982, 8435, 558, 568, 7578, 2]
+// Dependencies: [32, 5, 19, 5015, 2004, 9338, 8482, 7440, 8433, 38, 8440, 1978, 8430, 7576, 2]
+// Exports: default
 
-// Module 11686 (useLoadMessageContentEntries)
+// Module 11810 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1982 */;
-import useAvatarColor from "useAvatarColor" /* 8438 */;
+import Server from "Server" /* 1978 */;
+import useAvatarColor from "useAvatarColor" /* 8433 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5017 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
 
 const require = globalThis.__r;
 
@@ -30,7 +31,7 @@ let closure_12 = async function _fetchApplicationParts(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -95,7 +96,7 @@ let closure_12 = async function _fetchApplicationParts(arg0, value) {
         return obj;
       }
       c4 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp6) {
       c4 = tmp;
       throw tmp6;
@@ -117,7 +118,7 @@ let closure_13 = async function _fetchUserParts(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -147,7 +148,7 @@ let closure_13 = async function _fetchUserParts(arg0) {
                               const obj3 = { value, done: true };
                               return obj3;
                             } else {
-                              return { value: "IconComponent", done: null };
+                              return { value: "HermesInternal", done: null };
                             }
                           } else {
                             try {
@@ -175,7 +176,7 @@ let closure_13 = async function _fetchUserParts(arg0) {
                                 return obj;
                               } else {
                                 v3 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "HermesInternal", done: null };
                               }
                             } catch (tmp8) {
                               v3 = tmp;
@@ -197,7 +198,7 @@ let closure_13 = async function _fetchUserParts(arg0) {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c1 = tmp;
@@ -221,7 +222,7 @@ let closure_14 = async function _fetchWatchedContentParts(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -257,7 +258,7 @@ let closure_14 = async function _fetchWatchedContentParts(arg0) {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       } catch (tmp11) {
         c1 = tmp;
         throw tmp11;
@@ -276,7 +277,7 @@ let closure_15 = async function _fetchListenedContentParts(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -307,7 +308,7 @@ let closure_15 = async function _fetchListenedContentParts(arg0, value) {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp7) {
       c1 = tmp;
       throw tmp7;
@@ -325,7 +326,7 @@ let closure_16 = async function _fetchTopArtistContentParts(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -355,24 +356,14 @@ let closure_16 = async function _fetchTopArtistContentParts(arg0, value) {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp10) {
       c1 = tmp;
       throw tmp10;
     }
   }
 };
-function loadContentEntryParts() {
-  const self = this;
-  const apply = closure_18.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-}
-let closure_18 = async function _loadContentEntryParts(arg0) {
+let closure_17 = async function _loadContentEntryParts(arg0) {
   let components = arg0;
   c10 = 0;
   c11 = 0;
@@ -388,7 +379,7 @@ let closure_18 = async function _loadContentEntryParts(arg0) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -416,7 +407,7 @@ let closure_18 = async function _loadContentEntryParts(arg0) {
                   let obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -443,7 +434,7 @@ let closure_18 = async function _loadContentEntryParts(arg0) {
                               const obj2 = { value, done: true };
                               return obj2;
                             } else {
-                              return { value: "IconComponent", done: null };
+                              return { value: "HermesInternal", done: null };
                             }
                           } else {
                             try {
@@ -471,7 +462,7 @@ let closure_18 = async function _loadContentEntryParts(arg0) {
                                 return obj;
                               } else {
                                 c0 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "HermesInternal", done: null };
                               }
                             } catch (tmp7) {
                               c0 = tmp;
@@ -552,7 +543,7 @@ let closure_18 = async function _loadContentEntryParts(arg0) {
                       })());
                     }
                     v3 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp4) {
                   v3 = tmp;
@@ -591,7 +582,7 @@ let closure_18 = async function _loadContentEntryParts(arg0) {
             return obj5;
           } else {
             c11 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           if (3 === tmp8) {
@@ -684,7 +675,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8435);
+      let tmp3Result = tmp3(8430);
       let obj = { component: null, message: null };
       let obj2 = { contentInventoryEntry: null };
       obj2.contentInventoryEntry = tmp2.contentInventoryEntry;
@@ -700,393 +691,18 @@ function isMessageRenderable(message) {
   }
   return true;
 }
-const ImageSizes = fn(2008).ImageSizes;
-const promiseDeduper = new fn(9336).PromiseDeduper();
-const promiseDeduper3 = new fn(9336).PromiseDeduper();
-const promiseDeduper4 = new fn(9336).PromiseDeduper();
-const ReactCompilerGating = fn(558);
+const ImageSizes = fn(2004).ImageSizes;
+const promiseDeduper = new fn(9338).PromiseDeduper();
+const promiseDeduper3 = new fn(9338).PromiseDeduper();
+const promiseDeduper4 = new fn(9338).PromiseDeduper();
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/interaction_components/content_inventory_entry/native/useLoadMessageContentEntries.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessageContentEntries(arg0) {
-  _require = arg0;
-  const cResult = require("c").c(18);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const _Map = Map;
-    const map = new Map();
-    cResult[0] = map;
-    let first = map;
-  } else {
-    first = cResult[0];
-  }
-  closure_1 = set2.useRef(first);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const _Map2 = Map;
-    const map1 = new Map();
-    cResult[1] = map1;
-    let tmp9 = map1;
-  } else {
-    tmp9 = cResult[1];
-  }
-  dependencyMap = obj2.useRef(tmp9);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const _Set = Set;
-    let set = new Set();
-    cResult[2] = set;
-    let tmp14 = set;
-  } else {
-    tmp14 = cResult[2];
-  }
-  let obj = require("c");
-  const tmp = _require;
-  const tmp19 = _slicedToArray;
-  [arr, _slicedToArray] = set2.useState(tmp14);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const _Set2 = Set;
-    const set1 = new Set();
-    cResult[3] = set1;
-    let tmp21 = set1;
-  } else {
-    tmp21 = cResult[3];
-  }
-  const tmp20 = _slicedToArray(set2.useState(tmp14), 2);
-  [arr2, asyncGeneratorStep] = tmp19(set2.useState(tmp21), 2);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function v(palette) {
-      return palette.palette;
-    };
-    cResult[4] = fn;
-    let tmp27 = fn;
-  } else {
-    tmp27 = cResult[4];
-  }
-  const tmp19Result = tmp19(set2.useState(tmp21), 2);
-  const colorStore = tmp(8438).useColorStore(tmp27);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    _require = asyncGeneratorStep(async (arg0, value) => {
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp7 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              closure_130_0 = closure_0;
-              closure_130_1 = closure_1;
-              if (0 !== closure_1.components.length) {
-                const current7 = closure_1.current;
-                if (!current7.has(tmp50)) {
-                  const current5 = closure_1.current;
-                  const result = current5.set(tmp50, "loading");
-                  tmp3((arg0) => {
-                    const items = [];
-                    items[HermesBuiltin.arraySpread(arg0, 0)] = closure_1_0;
-                    return new Set(items);
-                  });
-                  const current6 = tmp5.current;
-                  const result1 = current6.set(tmp50, tmp51);
-                  c5 = 1;
-                  c6 = 2;
-                  c7 = 1;
-                  const obj4 = { value: loadContentEntryParts(tmp51), done: false };
-                  return obj4;
-                }
-              }
-            }
-          } else {
-            if (1 === tmp8) {
-              c5 = 0;
-              const current3 = closure_1.current;
-              const result2 = current3.set(closure_130_0, "error");
-              const current4 = tmp5.current;
-              current4.delete(closure_130_0);
-              tmp3((arg0) => {
-                const items = [...arg0];
-                return new Set(items.filter((item) => item !== closure_1_0));
-              });
-              tmp43((arg0) => {
-                const items = [];
-                items[HermesBuiltin.arraySpread(arg0, 0)] = closure_1_0;
-                return new Set(items);
-              });
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              if (isMessageRenderable(closure_130_1)) {
-                const current = closure_1.current;
-                const result3 = current.set(closure_130_0, "loaded");
-                const current2 = tmp5.current;
-                current2.delete(closure_130_0);
-                tmp3((arg0) => {
-                  const items = [...arg0];
-                  return new Set(items.filter((item) => item !== closure_1_0));
-                });
-              }
-              c5 = 0;
-            }
-            c5 = 0;
-            c7 = 3;
-            const obj = { value, done: true };
-            return obj;
-          }
-          c7 = 3;
-        } catch (tmp43) {
-          if (tmp4 === c5) {
-            c7 = tmp2;
-            throw tmp43;
-          } else {
-            c6 = tmp;
-          }
-        }
-      }
-    });
-    function t5(arg0, arg1) {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    }
-    cResult[5] = t5;
-    let tmp29 = t5;
-  } else {
-    tmp29 = cResult[5];
-  }
-  closure_6 = tmp29;
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        if (0 !== closure_2.current.size) {
-          items = [];
-          closure_0 = items;
-          current = tmp.current;
-          item = current.forEach((item, index) => {
-            if (isMessageRenderable(item)) {
-              items.push(index);
-            }
-          });
-          if (items.length > 0) {
-            item1 = items.forEach((item) => {
-              const current = ref.current;
-              const result = current.set(item, "loaded");
-              const current2 = ref2.current;
-              current2.delete(item);
-            });
-            tmp4 = closure_3;
-            tmp5 = closure_3((items) => {
-              const set = new Set(items);
-              const item = items.forEach((item) => set.delete(item));
-              return set;
-            });
-          }
-        }
-        return;
-      }
-    }
-    cResult[6] = A;
-    const tmp31 = A;
-  } else {
-    class A {
-      constructor() {
-        if (0 !== closure_2.current.size) {
-          items = [];
-          closure_0 = items;
-          current = tmp.current;
-          item = current.forEach((item, index) => {
-            if (isMessageRenderable(item)) {
-              items.push(index);
-            }
-          });
-          if (items.length > 0) {
-            item1 = items.forEach((item) => {
-              const current = ref.current;
-              const result = current.set(item, "loaded");
-              const current2 = ref2.current;
-              current2.delete(item);
-            });
-            tmp4 = closure_3;
-            tmp5 = closure_3((items) => {
-              const set = new Set(items);
-              const item = items.forEach((item) => set.delete(item));
-              return set;
-            });
-          }
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[7] !== colorStore) {
-    class A {
-      constructor() {
-        if (0 !== closure_2.current.size) {
-          items = [];
-          closure_0 = items;
-          current = tmp.current;
-          item = current.forEach((item, index) => {
-            if (isMessageRenderable(item)) {
-              items.push(index);
-            }
-          });
-          if (items.length > 0) {
-            item1 = items.forEach((item) => {
-              const current = ref.current;
-              const result = current.set(item, "loaded");
-              const current2 = ref2.current;
-              current2.delete(item);
-            });
-            tmp4 = closure_3;
-            tmp5 = closure_3((items) => {
-              const set = new Set(items);
-              const item = items.forEach((item) => set.delete(item));
-              return set;
-            });
-          }
-        }
-        return;
-      }
-    }
-    tmp33[0] = colorStore;
-    cResult[7] = colorStore;
-    cResult[8] = tmp33;
-    const tmp32 = tmp33;
-  } else {
-    class A {
-      constructor() {
-        if (0 !== closure_2.current.size) {
-          items = [];
-          closure_0 = items;
-          current = tmp.current;
-          item = current.forEach((item, index) => {
-            if (isMessageRenderable(item)) {
-              items.push(index);
-            }
-          });
-          if (items.length > 0) {
-            item1 = items.forEach((item) => {
-              const current = ref.current;
-              const result = current.set(item, "loaded");
-              const current2 = ref2.current;
-              current2.delete(item);
-            });
-            tmp4 = closure_3;
-            tmp5 = closure_3((items) => {
-              const set = new Set(items);
-              const item = items.forEach((item) => set.delete(item));
-              return set;
-            });
-          }
-        }
-        return;
-      }
-    }
-  }
-  const effect = obj2.useEffect(tmp31, tmp32);
-  if (cResult[9] !== arg0) {
-    class I {
-      constructor() {
-        item = closure_0.forEach((id) => {
-          if (closure_1(closure_2[15])(id)) {
-            if (null != id.messageSnapshots[0]) {
-              closure_1_6(id.id, id.messageSnapshots[0].message);
-            }
-          }
-          closure_1_6(id.id, id);
-        });
-        return;
-      }
-    }
-    let items = [tmp29, arg0];
-    cResult[9] = arg0;
-    cResult[10] = I;
-    cResult[11] = items;
-    let tmp36 = items;
-    const tmp35 = I;
-  } else {
-    class I {
-      constructor() {
-        item = closure_0.forEach((id) => {
-          if (closure_1(closure_2[15])(id)) {
-            if (null != id.messageSnapshots[0]) {
-              closure_1_6(id.id, id.messageSnapshots[0].message);
-            }
-          }
-          closure_1_6(id.id, id);
-        });
-        return;
-      }
-    }
-    tmp36 = cResult[11];
-  }
-  const effect1 = obj2.useEffect(tmp35, tmp36);
-  if (cResult[12] === arr2) {
-    class I {
-      constructor() {
-        item = closure_0.forEach((id) => {
-          if (closure_1(closure_2[15])(id)) {
-            if (null != id.messageSnapshots[0]) {
-              closure_1_6(id.id, id.messageSnapshots[0].message);
-            }
-          }
-          closure_1_6(id.id, id);
-        });
-        return;
-      }
-    }
-    if (cResult[15] === tmp38) {
-      class I {
-        constructor() {
-          item = closure_0.forEach((id) => {
-            if (closure_1(closure_2[15])(id)) {
-              if (null != id.messageSnapshots[0]) {
-                closure_1_6(id.id, id.messageSnapshots[0].message);
-              }
-            }
-            closure_1_6(id.id, id);
-          });
-          return;
-        }
-      }
-      return tmp42;
-    }
-    let obj3 = { unloadedContentEntryMessageIds: arr, unloadableContentEntryMessageIds: tmp38 };
-    cResult[15] = tmp38;
-    cResult[16] = arr;
-    cResult[17] = obj3;
-    tmp42 = obj3;
-  }
-  set2 = new Set();
-  let item = arr.forEach((item) => set2.add(item));
-  let item1 = arr2.forEach((item) => set2.add(item));
-  cResult[12] = arr2;
-  cResult[13] = arr;
-  cResult[14] = set2;
-}) : (function useLoadMessageContentEntries(arg0) {
+export default function useLoadMessageContentEntries(arg0) {
   closure_1 = first1.useRef(new Map());
   const map = new Map();
   dependencyMap = first1.useRef(new Map());
-  const map1 = new Map();
+  map1 = new Map();
   const tmp4 = unloadedContentEntryMessageIds(first1.useState(new Set()), 2);
   unloadedContentEntryMessageIds = tmp4[0];
   asyncGeneratorStep = tmp4[1];
@@ -1108,7 +724,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadM
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1127,20 +743,32 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadM
             closure_130_1 = closure_1;
             if (0 !== closure_1.components.length) {
               const current7 = closure_1.current;
-              if (!current7.has(tmp50)) {
+              if (!current7.has(tmp49)) {
                 const current5 = closure_1.current;
-                const result = current5.set(tmp50, "loading");
-                tmp43((arg0) => {
+                const result = current5.set(tmp49, "loading");
+                tmp42((arg0) => {
                   const items = [];
                   items[HermesBuiltin.arraySpread(arg0, 0)] = closure_1_0;
                   return new Set(items);
                 });
                 const current6 = tmp5.current;
-                const result1 = current6.set(tmp50, tmp51);
+                const result1 = current6.set(tmp49, tmp50);
                 c5 = 1;
                 v2 = 2;
                 c7 = 1;
-                const obj4 = { value: loadContentEntryParts(tmp51), done: false };
+                const obj4 = {
+                  value: (function loadContentEntryParts() {
+                                const self = this;
+                                const apply = closure_1_17.apply;
+                                if (typeof apply === "unknown") {
+                                  let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                                } else {
+                                  applyArgumentsResult = apply(self, arguments);
+                                }
+                                return applyArgumentsResult;
+                              })(tmp50),
+                  done: false
+                };
                 return obj4;
               }
             }
@@ -1152,7 +780,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadM
             const result2 = current3.set(closure_130_0, "error");
             const current4 = tmp5.current;
             current4.delete(closure_130_0);
-            tmp43((arg0) => {
+            tmp42((arg0) => {
               const items = [...arg0];
               return new Set(items.filter((item) => item !== closure_1_0));
             });
@@ -1170,7 +798,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadM
               const result3 = current.set(closure_130_0, "loaded");
               const current2 = tmp5.current;
               current2.delete(closure_130_0);
-              tmp43((arg0) => {
+              tmp42((arg0) => {
                 const items = [...arg0];
                 return new Set(items.filter((item) => item !== closure_1_0));
               });
@@ -1183,10 +811,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadM
           return obj;
         }
         c7 = 3;
-      } catch (tmp43) {
+      } catch (tmp42) {
         if (tmp4 === c5) {
           c7 = tmp2;
-          throw tmp43;
+          throw tmp42;
         } else {
           v2 = tmp;
         }
@@ -1231,7 +859,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadM
   const items1 = [callback, arg0];
   const effect1 = first1.useEffect(() => {
     const item = closure_0.forEach((id) => {
-      if (closure_1(closure_2[15])(id)) {
+      if (closure_1(closure_2[13])(id)) {
         if (null != id.messageSnapshots[0]) {
           callback(id.id, id.messageSnapshots[0].message);
         }
@@ -1250,4 +878,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadM
       return set;
     }, items2)
   };
-});
+};

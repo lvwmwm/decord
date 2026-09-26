@@ -1,15 +1,15 @@
-// Module ID: 8179
-// Function ID: 8180
+// Module ID: 8174
+// Function ID: 8175
 // Name: ForumActionCreators
-// Dependencies: [5, 1078, 5142, 1119, 577, 1275, 8044, 8180, 8181, 8182, 8046, 2]
+// Dependencies: [5, 1074, 5140, 1115, 573, 1271, 8039, 8175, 8176, 8177, 8041, 2]
 
-// Module 8179 (ForumActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import util from "util" /* 1119 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8180 */;
-import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8181 */;
-import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8182 */;
+// Module 8174 (ForumActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import util from "util" /* 1115 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8175 */;
+import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8176 */;
+import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8177 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -34,7 +34,7 @@ let closure_7 = async function _withErrorHandling(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -121,7 +121,7 @@ let closure_7 = async function _withErrorHandling(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AbortCodes: closure_4, Endpoints: hasOwnProperty } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/forums/ForumActionCreators.tsx");
@@ -157,9 +157,9 @@ export default {
     request.body = obj;
     request.rejectWithError = HTTPUtils.rejectWithMigratedError();
     closure_0 = HTTP.put(request);
-    const intl = tmp(1119).intl;
+    const intl = tmp(1115).intl;
     const tmpResult = HTTPUtils;
-    const intl2 = tmp(1119).intl;
+    const intl2 = tmp(1115).intl;
     withErrorHandling(() => closure_0, intl.string(util.t.T8sBLJ), intl2.string(util.t.imcb5u));
   },
   deleteForumTag(channelId, id) {
@@ -174,9 +174,9 @@ export default {
     closure_0 = id;
     closure_1 = arg1;
     return (async () => {
-      await v1(8044).unarchiveThreadIfNecessary(tmp4);
-      const HTTP = tmp4(1275).HTTP;
-      const request = { url: closure_1_5.CHANNEL(closure_128_0), body: { applied_tags: closure_128_1 }, rejectWithError: tmp4(1275).rejectWithMigratedError() };
+      await v1(8039).unarchiveThreadIfNecessary(tmp4);
+      const HTTP = tmp4(1271).HTTP;
+      const request = { url: closure_1_5.CHANNEL(closure_128_0), body: { applied_tags: closure_128_1 }, rejectWithError: tmp4(1271).rejectWithMigratedError() };
       return HTTP.patch(request);
     })();
   },
@@ -205,23 +205,23 @@ export default {
     closure_4 = c2;
     return (async () => {
       const channelId = tmp3;
-      channelId(577).dispatch({ type: "FORUM_SEARCH_START", channelId });
-      await channelId(8044).searchThreads(closure_0, channelId, closure_2, closure_3, closure_4);
+      channelId(573).dispatch({ type: "FORUM_SEARCH_START", channelId });
+      await channelId(8039).searchThreads(closure_0, channelId, closure_2, closure_3, closure_4);
       if (1 === tmp7) {
         dependencyMap = 0;
-        channelId(577).dispatch({ type: "FORUM_SEARCH_FAILURE", channelId: closure_129_1 });
+        channelId(573).dispatch({ type: "FORUM_SEARCH_FAILURE", channelId: closure_129_1 });
         c4 = 3;
-        channelId(577);
+        channelId(573);
       } else if (arg0 === 1) {
         c4 = 3;
         throw arg1;
       } else if (arg0 !== 2) {
         closure_128_0 = arg1;
-        guild_id(8046).trackForumSearched({ guildId: closure_129_0, channelId: closure_129_1, numSearchResults: closure_128_0.length });
-        guild_id(8046);
-        channelId(577).dispatch({ type: "FORUM_SEARCH_SUCCESS", channelId: closure_129_1, threadIds: closure_128_0 });
+        guild_id(8041).trackForumSearched({ guildId: closure_129_0, channelId: closure_129_1, numSearchResults: closure_128_0.length });
+        guild_id(8041);
+        channelId(573).dispatch({ type: "FORUM_SEARCH_SUCCESS", channelId: closure_129_1, threadIds: closure_128_0 });
         dependencyMap = 0;
-        channelId(577);
+        channelId(573);
       }
       return arg1;
     })();

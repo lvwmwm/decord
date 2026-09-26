@@ -1,31 +1,31 @@
-// Module ID: 7444
-// Function ID: 7445
+// Module ID: 7442
+// Function ID: 7443
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 7445, 1078, 7446, 7448, 4487, 1245, 7450, 2]
+// Dependencies: [5, 19, 7443, 1074, 7444, 7446, 4483, 1241, 7448, 2]
 // Exports: default
 
-// Module 7444 (useStartAuthorize)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import LinkingDefault from "Linking" /* 4487 */;
+// Module 7442 (useStartAuthorize)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import LinkingDefault from "Linking" /* 4483 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AuthorizeFlow = fn(7445).AuthorizeFlow;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AuthorizeFlow = fn(7443).AuthorizeFlow;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/application_account_linking/native/useStartAuthorize.tsx");
 
-export default function useStartAuthorize(arg0) {
+export default function useStartAuthorize(getOfficialApplicationId) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
   _require = undefined;
   const debug = obj.debug;
-  const authorizationApp = require("useAuthorizationApp").useAuthorizationApp(arg0);
+  const authorizationApp = require("useAuthorizationApp").useAuthorizationApp(getOfficialApplicationId);
   _require = authorizationApp;
   let prop;
   if (authorizationApp != null) {
@@ -61,7 +61,7 @@ export default function useStartAuthorize(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ export default function useStartAuthorize(arg0) {
           const obj8 = { location_stack: closure_129_0.analyticsLocations, application_id: closure_0.id, flow_type: constants.WEB };
           AnalyticsUtilsDefault.track(constants2.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, obj8);
           const obj9 = { onSuccess: closure_129_0.onSuccess, onError: closure_129_0.onError };
-          const result = closure_0(7450).accountLinkAuthorizationStarted(closure_0.id, obj9);
+          const result = closure_0(7448).accountLinkAuthorizationStarted(closure_0.id, obj9);
           c4 = 0;
           c6 = 3;
           return { value: true, done: true };

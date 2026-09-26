@@ -1,15 +1,15 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7617
+// Function ID: 7618
 // Name: searchSounds
-// Dependencies: [5710, 1078, 551, 1245, 4445, 5768, 7620, 2]
+// Dependencies: [5708, 1074, 551, 1241, 4441, 5766, 7618, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 7619 (searchSounds)
+// Module 7617 (searchSounds)
 import debounceDefault from "debounce" /* 551 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4445 */;
-import SoundboardUtils from "SoundboardUtils" /* 7620 */;
-import EmojiStore from "EmojiStore" /* 5710 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4441 */;
+import SoundboardUtils from "SoundboardUtils" /* 7618 */;
+import EmojiStore from "EmojiStore" /* 5708 */;
 
 require = fn;
 function trackSearchStart(location_stack, channel_id) {
@@ -18,7 +18,7 @@ function trackSearchStart(location_stack, channel_id) {
 function trackSearchResultViewed(total_results, location_stack, channel_id, query) {
   AnalyticsUtilsDefault.track(constants.SEARCH_RESULT_VIEWED, { search_type: constants2.SOUNDBOARD, channel_id, query, total_results: total_results.length, location_stack });
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_4, SearchTypes: hasOwnProperty } = Constants);
 let closure_6 = debounceDefault(trackSearchStart, 350);
 let closure_7 = debounceDefault(trackSearchResultViewed, 350);

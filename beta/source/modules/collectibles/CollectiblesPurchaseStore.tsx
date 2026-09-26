@@ -1,12 +1,12 @@
-// Module ID: 7836
-// Function ID: 7837
+// Module ID: 7831
+// Function ID: 7832
 // Name: CollectiblesPurchaseStore
-// Dependencies: [12, 504, 577, 2]
+// Dependencies: [12, 504, 573, 2]
 
-// Module 7836 (CollectiblesPurchaseStore)
+// Module 7831 (CollectiblesPurchaseStore)
 import _mod12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 require = fn;
 let map = new Map();

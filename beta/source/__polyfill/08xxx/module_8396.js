@@ -1,0 +1,26 @@
+// Module ID: 8396
+// Function ID: 8397
+// Dependencies: [8397, 8398]
+// Exports: parse, unparse
+
+// Module 8396
+import reviveBigInts from "reviveBigInts" /* 8397 */;
+import DiscordMarkdownDefault from "DiscordMarkdown" /* 8398 */;
+
+require = arg1;
+importDefault = arg2;
+const dependencyMap = arg6;
+
+export const parse = function parse(arg0, arg1, arg2) {
+  const obj = reviveBigInts;
+  let json;
+  if (null != arg1) {
+    const _JSON = JSON;
+    json = JSON.stringify(arg1);
+  }
+  return obj.decodeAstJson(DiscordMarkdownDefault.parseToAstString(arg0, json, arg2));
+};
+export const unparse = function unparse(arg0) {
+  const obj = DiscordMarkdownDefault;
+  return obj.unparseFromAstString(reviveBigInts.encodeAstJson(arg0));
+};

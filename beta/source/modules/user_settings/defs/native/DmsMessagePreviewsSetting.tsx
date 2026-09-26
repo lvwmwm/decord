@@ -1,119 +1,52 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15591
+// Function ID: 15592
 // Name: DmsMessagePreviewsSetting
-// Dependencies: [19, 8270, 558, 15588, 2023, 568, 1119, 8160, 11630, 2]
+// Dependencies: [19, 8265, 15592, 2019, 1115, 8155, 11754, 2]
 
-// Module 15587 (DmsMessagePreviewsSetting)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8160 */;
-import useMessagePreviews from "useMessagePreviews" /* 15588 */;
+// Module 15591 (DmsMessagePreviewsSetting)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8155 */;
+import useMessagePreviews from "useMessagePreviews" /* 15592 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let ReactCompilerGating = fn(558);
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = fn(558);
-fn = () => useMessagePreviews.useMessagePreviewSetting();
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { label: null, value: null };
-    const intl = tmp(1119).intl;
-    obj2.label = intl.string(tmp(1119).t["8K53DF"]);
-    obj2.value = tmp(8160).MessagePreviewTypes.ALL;
-    const items = [obj2, , ];
-    const obj3 = { label: null, value: null };
-    const intl2 = tmp(1119).intl;
-    obj3.label = intl2.string(tmp(1119).t.Gw11zg);
-    obj3.value = tmp(8160).MessagePreviewTypes.UNREADS;
-    items[1] = obj3;
-    const obj4 = { label: null, value: null };
-    const intl3 = tmp(1119).intl;
-    obj4.label = intl3.string(tmp(1119).t.R2Ok7F);
-    obj4.value = tmp(8160).MessagePreviewTypes.NONE;
-    items[2] = obj4;
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => noop.useMemo(() => {
-  const obj = { label: null, value: null };
-  const intl = util.intl;
-  obj.label = intl.string(util.t["8K53DF"]);
-  obj.value = ChannelListLayoutTypes.MessagePreviewTypes.ALL;
-  const items = [obj, , ];
-  const obj2 = { label: null, value: null };
-  const intl2 = util.intl;
-  obj2.label = intl2.string(util.t.Gw11zg);
-  obj2.value = ChannelListLayoutTypes.MessagePreviewTypes.UNREADS;
-  items[1] = obj2;
-  const obj3 = { label: null, value: null };
-  const intl3 = util.intl;
-  obj3.label = intl3.string(util.t.R2Ok7F);
-  obj3.value = ChannelListLayoutTypes.MessagePreviewTypes.NONE;
-  items[2] = obj3;
-  return items;
-}, []));
+const SettingBuilders = fn(11754);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.OAOUoQ);
   },
-  parent: fn(8270).MobileUserSettings.APPEARANCE,
-  useValue: fn,
+  parent: fn(8265).MobileUserSettings.APPEARANCE,
+  useValue: function useDMsMessagePreviewsValue() {
+    return useMessagePreviews.useMessagePreviewSetting();
+  },
   onValueChange: function onDMsMessagePreviewsValueChange(arg0) {
     const MessagePreviewSetting = UserSettings.MessagePreviewSetting;
     MessagePreviewSetting.updateSetting(arg0);
   },
-  useOptions: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(1);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+  useOptions: function useDMsMessagePreviewsOptions() {
+    return noop.useMemo(() => {
+      const obj = { label: null, value: null };
+      const intl = util.intl;
+      obj.label = intl.string(util.t["8K53DF"]);
+      obj.value = ChannelListLayoutTypes.MessagePreviewTypes.ALL;
+      const items = [obj, , ];
       const obj2 = { label: null, value: null };
-      const intl = tmp(1119).intl;
-      obj2.label = intl.string(tmp(1119).t["8K53DF"]);
-      obj2.value = tmp(8160).MessagePreviewTypes.ALL;
-      const items = [obj2, , ];
+      const intl2 = util.intl;
+      obj2.label = intl2.string(util.t.Gw11zg);
+      obj2.value = ChannelListLayoutTypes.MessagePreviewTypes.UNREADS;
+      items[1] = obj2;
       const obj3 = { label: null, value: null };
-      const intl2 = tmp(1119).intl;
-      obj3.label = intl2.string(tmp(1119).t.Gw11zg);
-      obj3.value = tmp(8160).MessagePreviewTypes.UNREADS;
-      items[1] = obj3;
-      const obj4 = { label: null, value: null };
-      const intl3 = tmp(1119).intl;
-      obj4.label = intl3.string(tmp(1119).t.R2Ok7F);
-      obj4.value = tmp(8160).MessagePreviewTypes.NONE;
-      items[2] = obj4;
-      cResult[0] = items;
-      let first = items;
-    } else {
-      first = cResult[0];
-    }
-    return first;
-  }) : (() => noop.useMemo(() => {
-    const obj = { label: null, value: null };
-    const intl = util.intl;
-    obj.label = intl.string(util.t["8K53DF"]);
-    obj.value = ChannelListLayoutTypes.MessagePreviewTypes.ALL;
-    const items = [obj, , ];
-    const obj2 = { label: null, value: null };
-    const intl2 = util.intl;
-    obj2.label = intl2.string(util.t.Gw11zg);
-    obj2.value = ChannelListLayoutTypes.MessagePreviewTypes.UNREADS;
-    items[1] = obj2;
-    const obj3 = { label: null, value: null };
-    const intl3 = util.intl;
-    obj3.label = intl3.string(util.t.R2Ok7F);
-    obj3.value = ChannelListLayoutTypes.MessagePreviewTypes.NONE;
-    items[2] = obj3;
-    return items;
-  }, []))
+      const intl3 = util.intl;
+      obj3.label = intl3.string(util.t.R2Ok7F);
+      obj3.value = ChannelListLayoutTypes.MessagePreviewTypes.NONE;
+      items[2] = obj3;
+      return items;
+    }, []);
+  }
 });
 const size = fn(2);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/DmsMessagePreviewsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/DmsMessagePreviewsSetting.tsx");
 
 export default radio;

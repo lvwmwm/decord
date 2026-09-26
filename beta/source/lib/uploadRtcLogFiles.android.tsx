@@ -1,10 +1,10 @@
-// Module ID: 13050
-// Function ID: 13051
+// Module ID: 10486
+// Function ID: 10487
 // Name: uploadRtcLogFiles
-// Dependencies: [5, 1078, 3, 8511, 4691, 1275, 2]
+// Dependencies: [5, 1074, 3, 8506, 4688, 1271, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 13050 (uploadRtcLogFiles)
+// Module 10486 (uploadRtcLogFiles)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -20,7 +20,7 @@ let closure_6 = async function _uploadRtcLogFiles(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     while (true) {
@@ -116,7 +116,7 @@ let closure_6 = async function _uploadRtcLogFiles(arg0, value) {
       }
       if (dependencyMap === undefined) {
         c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       } else {
         closure_131_1 = tmp57;
         closure_131_2 = "";
@@ -130,7 +130,7 @@ let closure_6 = async function _uploadRtcLogFiles(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ DebugLogCategory: c3, Endpoints: closure_4 } = Constants);
 let closure_5 = new LoggerDefault("uploadRtcLogFiles");
 const size = fn(2);

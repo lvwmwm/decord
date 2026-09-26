@@ -1,46 +1,44 @@
-// Module ID: 15388
-// Function ID: 15389
+// Module ID: 15392
+// Function ID: 15393
 // Name: QuestBottomSheetFooter
-// Dependencies: [32, 19, 17, 4782, 1376, 7976, 7430, 21, 580, 4790, 5698, 11643, 10611, 10616, 11378, 504, 4494, 7831, 11931, 558, 568, 15389, 11673, 5220, 11656, 15357, 11939, 15384, 15386, 8210, 1119, 5875, 11938, 11646, 8002, 8003, 8013, 5702, 8001, 15424, 1616, 1482, 4529, 4791, 5225, 2]
+// Dependencies: [32, 19, 17, 4780, 1372, 7971, 7428, 21, 576, 4788, 5696, 11767, 11582, 11587, 11340, 504, 4489, 7826, 12049, 15393, 5218, 11797, 11780, 15361, 12057, 15388, 15390, 8211, 1115, 5877, 12056, 11770, 15428, 7997, 7998, 8008, 5700, 7996, 1612, 1478, 4524, 4789, 5223, 2]
+// Exports: default
 
-// Module 15388 (QuestBottomSheetFooter)
-import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
-import timing from "timing" /* 4791 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import ButtonConstants from "ButtonConstants" /* 5225 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 8002 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10616 */;
-import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 11646 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11656 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 11673 */;
-import QuestUtils from "QuestUtils" /* 11931 */;
-import AnalyticsHooks from "AnalyticsHooks" /* 11938 */;
-import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 15384 */;
-import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 15389 */;
-import RefreshIcon from "RefreshIcon" /* 15424 */;
+// Module 15392 (QuestBottomSheetFooter)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import timing from "timing" /* 4789 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import ButtonConstants from "ButtonConstants" /* 5223 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7997 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 11587 */;
+import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 11770 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 11780 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 11797 */;
+import QuestUtils from "QuestUtils" /* 12049 */;
+import AnalyticsHooks from "AnalyticsHooks" /* 12056 */;
+import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 15393 */;
+import RefreshIcon from "RefreshIcon" /* 15428 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4782 */;
-import UserStore from "UserStore" /* 1376 */;
-import QuestStore from "QuestStore" /* 7976 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import UserStore from "UserStore" /* 1372 */;
+import QuestStore from "QuestStore" /* 7971 */;
 
 require = fn;
-function useQuestRewardClaimHandler(cResult) {
-  const quest = cResult.quest;
-  let flag = cResult.hideActionSheet;
+function useQuestRewardClaimHandler(quest) {
+  quest = quest.quest;
+  let flag = quest.hideActionSheet;
   if (flag === undefined) {
     flag = true;
   }
-  let QUEST_BOTTOM_SHEET = cResult.questContent;
+  let QUEST_BOTTOM_SHEET = quest.questContent;
   if (QUEST_BOTTOM_SHEET === undefined) {
     QUEST_BOTTOM_SHEET = quest(QUEST_BOTTOM_SHEET[10]).QuestContent.QUEST_BOTTOM_SHEET;
   }
-  const onSuccess = cResult.onSuccess;
-  const sourceQuestContent = cResult.sourceQuestContent;
+  const onSuccess = quest.onSuccess;
+  const sourceQuestContent = quest.sourceQuestContent;
   c5 = undefined;
   let isFetching;
   let isFetchingRewardCode;
@@ -128,173 +126,21 @@ function useQuestRewardClaimHandler(cResult) {
   obj6.claim = sourceQuestContent.useCallback(() => QuestUtils.handleRewardClaimThenView({ quest, product, hideActionSheet: flag, questContent: QUEST_BOTTOM_SHEET, currentUserHasVerifiedEmailOrPhone: stateFromStores, currentUserHasVerifiedEmail: stateFromStores1, onSuccess, sourceQuestContent }), items6);
   return obj6;
 }
-const View = fn(17).View;
-let closure_9 = fn(7430).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const PX_16 = nativeDefault.space.PX_16;
-const createStyles = fn(4790);
-let obj2 = { container: { display: "flex", flexGrow: 1, flexShrink: 1, paddingHorizontal: nativeDefault.space.PX_16 } };
-let closure_13 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(10);
-  ({ questId, sourceQuestContent, taskDetails, disabled, onPressDisabled } = arg0);
-  if (cResult[0] === questId) {
-    if (cResult[1] === sourceQuestContent) {
-      let tmp4 = cResult[2];
-    }
-    const watchTaskPressHandler = tmp(15389).useWatchTaskPressHandler(tmp4);
-    if (cResult[3] !== taskDetails) {
-      const videoQuestWatchCtaText = tmp(11673).getVideoQuestWatchCtaText(taskDetails);
-      cResult[3] = taskDetails;
-      cResult[4] = videoQuestWatchCtaText;
-      let tmp6 = videoQuestWatchCtaText;
-      const tmpResult2 = tmp(11673);
-    } else {
-      tmp6 = cResult[4];
-    }
-    if (cResult[5] === disabled) {
-      if (cResult[6] === watchTaskPressHandler) {
-        if (cResult[7] === onPressDisabled) {
-          if (cResult[8] === tmp6) {
-            let tmp8 = cResult[9];
-          }
-          return tmp8;
-        }
-      }
-    }
-    const obj2 = { grow: true, size: "lg", onPress: watchTaskPressHandler, disabled, onPressDisabled, text: tmp6 };
-    const tmp10 = v65535(tmp(5220).Button, obj2);
-    cResult[5] = disabled;
-    cResult[6] = watchTaskPressHandler;
-    cResult[7] = onPressDisabled;
-    cResult[8] = tmp6;
-    cResult[9] = tmp10;
-    tmp8 = tmp10;
-    const tmpResult = tmp(15389);
-  }
-  const obj3 = { questId, sourceQuestContent };
-  cResult[0] = questId;
-  cResult[1] = sourceQuestContent;
-  cResult[2] = obj3;
-  tmp4 = obj3;
-}) : ((arg0) => {
+function WatchTaskButton(arg0) {
   ({ questId, sourceQuestContent, taskDetails, disabled, onPressDisabled } = arg0);
   const obj2 = { grow: true, size: "lg", onPress: QuestBottomSheetHooks.useWatchTaskPressHandler({ questId, sourceQuestContent }), disabled, onPressDisabled, text: null };
   const watchTaskPressHandler = QuestBottomSheetHooks.useWatchTaskPressHandler({ questId, sourceQuestContent });
   obj2.text = MobileQuestVideoWatchCtaCopy.getVideoQuestWatchCtaText(taskDetails);
-  return v65535(components_Button_Button.Button, obj2);
-});
-fn(558);
-let obj3 = { display: "flex", flexGrow: 1, flexShrink: 1, paddingHorizontal: nativeDefault.space.PX_16 };
-ReactCompilerGating = fn(558);
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(4);
-  ({ onPress, disabled } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.a9OfTN);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === disabled) {
-    if (cResult[2] === onPress) {
-      let tmp6 = cResult[3];
-    }
-    return tmp6;
-  }
-  const tmp7 = v65535(components_Button_Button.Button, { grow: true, size: "lg", onPress, disabled, text: first });
-  cResult[1] = disabled;
-  cResult[2] = onPress;
-  cResult[3] = tmp7;
-  tmp6 = tmp7;
-}) : ((arg0) => {
+  return closure_1_10(components_Button_Button.Button, obj2);
+}
+function NextButton(arg0) {
   ({ onPress, disabled } = arg0);
   const obj = { grow: true, size: "lg", onPress, disabled, text: null };
   const intl = util.intl;
   obj.text = intl.string(util.t.a9OfTN);
-  return v65535(components_Button_Button.Button, obj);
-});
-ReactCompilerGating = fn(558);
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
-  const cResult = questId(sourceQuestContent[20]).c(13);
-  questId = questId.questId;
-  ({ loading, disabled, onPress } = questId);
-  ({ onPressDisabled, sourceQuestContent } = questId);
-  const obj = questId(sourceQuestContent[20]);
-  const trackQuestContentClickedWithImpression = questId(sourceQuestContent[32]).useTrackQuestContentClickedWithImpression();
-  let obj2 = questId(sourceQuestContent[32]);
-  const questImpressionId = questId(sourceQuestContent[33]).useQuestImpressionId();
-  if (cResult[0] === questImpressionId) {
-    if (cResult[1] === onPress) {
-      if (cResult[2] === questId) {
-        if (cResult[3] === sourceQuestContent) {
-          if (cResult[4] === trackQuestContentClickedWithImpression) {
-            let tmp6 = cResult[5];
-          }
-          const _Symbol = Symbol;
-          if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp10 = closure_10(tmp(tmp2[39]).RefreshIcon, {});
-            cResult[6] = tmp10;
-            let tmp8 = tmp10;
-          } else {
-            tmp8 = cResult[6];
-          }
-          const _Symbol2 = Symbol;
-          if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(tmp2[30]).intl;
-            const stringResult = intl.string(tmp(tmp2[30]).t.nPThNb);
-            cResult[7] = stringResult;
-            let tmp11 = stringResult;
-          } else {
-            tmp11 = cResult[7];
-          }
-          if (cResult[8] === disabled) {
-            if (cResult[9] === tmp6) {
-              if (cResult[10] === loading) {
-                if (cResult[11] === onPressDisabled) {
-                  let tmp13 = cResult[12];
-                }
-                return tmp13;
-              }
-            }
-          }
-          const obj4 = { grow: true, size: "lg", variant: "secondary", loading, disabled, onPressDisabled, icon: tmp8, iconPosition: "end", onPress: tmp6, text: tmp11 };
-          const tmp15 = closure_10(tmp(tmp2[23]).Button, obj4);
-          cResult[8] = disabled;
-          cResult[9] = tmp6;
-          cResult[10] = loading;
-          cResult[11] = onPressDisabled;
-          cResult[12] = tmp15;
-          tmp13 = tmp15;
-        }
-      }
-    }
-  }
-  const fn = function t(arg0) {
-    if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_footer")) {
-      const obj2 = { type: tmp(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5702).AdCreativeType.QUEST, adCreativeId: questId, questContentCTA: tmp(8001).QuestContentCTA.DEFIBRILLATOR, surfaceId: tmp(5698).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId: questImpressionId };
-      tmp(8003).captureAdUserAction(obj2);
-      const tmpResult = tmp(8003);
-    } else {
-      const obj3 = { questId, questContent: tmp(5698).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: tmp(8001).QuestContentCTA.DEFIBRILLATOR, sourceQuestContent };
-      trackQuestContentClickedWithImpression(obj3);
-    }
-    if (onPress != null) {
-      tmp11(arg0);
-    }
-  };
-  cResult[0] = questImpressionId;
-  cResult[1] = onPress;
-  cResult[2] = questId;
-  cResult[3] = sourceQuestContent;
-  cResult[4] = trackQuestContentClickedWithImpression;
-  cResult[5] = fn;
-  tmp6 = fn;
-}) : ((arg0) => {
+  return closure_1_10(components_Button_Button.Button, obj);
+}
+function DefibButton(arg0) {
   ({ questId: require, onPress: importDefault, sourceQuestContent: dependencyMap } = arg0);
   ({ loading, disabled, onPressDisabled } = arg0);
   closure_3 = AnalyticsHooks.useTrackQuestContentClickedWithImpression();
@@ -310,11 +156,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
     iconPosition: "end",
     onPress(arg0) {
       if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_footer")) {
-        const obj2 = { type: tmp(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5702).AdCreativeType.QUEST, adCreativeId: questId, questContentCTA: tmp(8001).QuestContentCTA.DEFIBRILLATOR, surfaceId: tmp(5698).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId };
-        tmp(8003).captureAdUserAction(obj2);
-        const tmpResult = tmp(8003);
+        const obj2 = { type: tmp(8008).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5700).AdCreativeType.QUEST, adCreativeId: questId, questContentCTA: tmp(7996).QuestContentCTA.DEFIBRILLATOR, surfaceId: tmp(5696).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId };
+        tmp(7998).captureAdUserAction(obj2);
+        const tmpResult = tmp(7998);
       } else {
-        const obj3 = { questId, questContent: tmp(5698).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: tmp(8001).QuestContentCTA.DEFIBRILLATOR, sourceQuestContent };
+        const obj3 = { questId, questContent: tmp(5696).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: tmp(7996).QuestContentCTA.DEFIBRILLATOR, sourceQuestContent };
         closure_3(obj3);
       }
       if (importDefault != null) {
@@ -326,74 +172,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
   const intl = util.intl;
   obj3.text = intl.string(util.t.nPThNb);
   return closure_10(components_Button_Button.Button, obj3);
-});
-ReactCompilerGating = fn(558);
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
-  const cResult = questId(sourceQuestContent[20]).c(12);
-  questId = questId.questId;
-  ({ disabled, loading, onPress } = questId);
-  ({ onPressDisabled, sourceQuestContent } = questId);
-  const obj = questId(sourceQuestContent[20]);
-  const trackQuestContentClickedWithImpression = questId(sourceQuestContent[32]).useTrackQuestContentClickedWithImpression();
-  let obj2 = questId(sourceQuestContent[32]);
-  const questImpressionId = questId(sourceQuestContent[33]).useQuestImpressionId();
-  if (cResult[0] === questImpressionId) {
-    if (cResult[1] === onPress) {
-      if (cResult[2] === questId) {
-        if (cResult[3] === sourceQuestContent) {
-          if (cResult[4] === trackQuestContentClickedWithImpression) {
-            let tmp6 = cResult[5];
-          }
-          const _Symbol = Symbol;
-          if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(tmp2[30]).intl;
-            const stringResult = intl.string(tmp(tmp2[30]).t.cfY4PE);
-            cResult[6] = stringResult;
-            let tmp8 = stringResult;
-          } else {
-            tmp8 = cResult[6];
-          }
-          if (cResult[7] === disabled) {
-            if (cResult[8] === tmp6) {
-              if (cResult[9] === loading) {
-                if (cResult[10] === onPressDisabled) {
-                  let tmp10 = cResult[11];
-                }
-                return tmp10;
-              }
-            }
-          }
-          const obj4 = { grow: true, size: "lg", disabled, onPressDisabled, loading, onPress: tmp6, text: tmp8 };
-          const tmp12 = closure_10(tmp(tmp2[23]).Button, obj4);
-          cResult[7] = disabled;
-          cResult[8] = tmp6;
-          cResult[9] = loading;
-          cResult[10] = onPressDisabled;
-          cResult[11] = tmp12;
-          tmp10 = tmp12;
-        }
-      }
-    }
-  }
-  const fn = function t() {
-    if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_footer")) {
-      const obj2 = { type: tmp(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5702).AdCreativeType.QUEST, adCreativeId: questId, questContentCTA: tmp(8001).QuestContentCTA.CLAIM_REWARD, surfaceId: tmp(5698).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId: questImpressionId };
-      tmp(8003).captureAdUserAction(obj2);
-      const tmpResult = tmp(8003);
-    } else {
-      const obj3 = { questId, questContent: tmp(5698).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: tmp(8001).QuestContentCTA.CLAIM_REWARD, sourceQuestContent };
-      trackQuestContentClickedWithImpression(obj3);
-    }
-    onPress();
-  };
-  cResult[0] = questImpressionId;
-  cResult[1] = onPress;
-  cResult[2] = questId;
-  cResult[3] = sourceQuestContent;
-  cResult[4] = trackQuestContentClickedWithImpression;
-  cResult[5] = fn;
-  tmp6 = fn;
-}) : ((arg0) => {
+}
+function ClaimButton(arg0) {
   ({ questId: require, onPress: importDefault, sourceQuestContent: dependencyMap } = arg0);
   ({ disabled, loading, onPressDisabled } = arg0);
   closure_3 = AnalyticsHooks.useTrackQuestContentClickedWithImpression();
@@ -406,11 +186,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
     loading,
     onPress() {
       if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_footer")) {
-        const obj2 = { type: tmp(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5702).AdCreativeType.QUEST, adCreativeId: questId, questContentCTA: tmp(8001).QuestContentCTA.CLAIM_REWARD, surfaceId: tmp(5698).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId };
-        tmp(8003).captureAdUserAction(obj2);
-        const tmpResult = tmp(8003);
+        const obj2 = { type: tmp(8008).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5700).AdCreativeType.QUEST, adCreativeId: questId, questContentCTA: tmp(7996).QuestContentCTA.CLAIM_REWARD, surfaceId: tmp(5696).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId };
+        tmp(7998).captureAdUserAction(obj2);
+        const tmpResult = tmp(7998);
       } else {
-        const obj3 = { questId, questContent: tmp(5698).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: tmp(8001).QuestContentCTA.CLAIM_REWARD, sourceQuestContent };
+        const obj3 = { questId, questContent: tmp(5696).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: tmp(7996).QuestContentCTA.CLAIM_REWARD, sourceQuestContent };
         closure_3(obj3);
       }
       importDefault();
@@ -420,222 +200,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
   const intl = util.intl;
   obj3.text = intl.string(util.t.cfY4PE);
   return closure_10(components_Button_Button.Button, obj3);
-});
-const __initData = { code: "function QuestBottomSheetFooterTsx1(){const{animation,H_PADDING_PX}=this.__closure;return{opacity:animation.get(),position:\"absolute\",top:0,left:0,transform:[{translateX:H_PADDING_PX}]};}" };
-const __initData2 = { code: "function QuestBottomSheetFooterTsx2(){const{interpolate,animation,windowWidth,H_PADDING_PX,ICON_SIZE_PX}=this.__closure;return{width:interpolate(animation.get(),[0,1],[windowWidth-H_PADDING_PX*2,windowWidth-H_PADDING_PX*2.5-ICON_SIZE_PX]),alignSelf:\"flex-end\"};}" };
-const __initData3 = { code: "function QuestBottomSheetFooterTsx3(){const{animation,H_PADDING_PX}=this.__closure;return{opacity:animation.get(),position:'absolute',top:0,left:0,transform:[{translateX:H_PADDING_PX}]};}" };
-const __initData4 = { code: "function QuestBottomSheetFooterTsx4(){const{interpolate,animation,windowWidth,H_PADDING_PX,ICON_SIZE_PX}=this.__closure;return{width:interpolate(animation.get(),[0,1],[windowWidth-H_PADDING_PX*2,windowWidth-H_PADDING_PX*2.5-ICON_SIZE_PX]),alignSelf:'flex-end'};}" };
-ReactCompilerGating = fn(558);
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = require("c").c(23);
-  ({ onLayout, ctaButton, backButton, style, withSafeArea } = arg0);
-  let tmp5 = null != backButton;
-  if (tmp5) {
-    tmp5 = false !== backButton;
-  }
-  _require = tmp5;
-  const tmp7 = closure_13();
-  width = width(1482)().width;
-  const tmp8 = closure_24();
-  dependencyMap = tmp8;
-  let obj = require("c");
-  let num = 0;
-  if (tmp5) {
-    num = 1;
-  }
-  const sharedValue = require("ReanimatedRexport").useSharedValue(num);
-  if (cResult[0] === sharedValue) {
-    if (cResult[1] === tmp8) {
-      if (cResult[2] === tmp5) {
-        let tmp10 = cResult[3];
-        let tmp11 = cResult[4];
-      }
-      const effect = noop.useEffect(tmp10, tmp11);
-      class B {
-        constructor() {
-          rect = { opacity: closure_3.get(), position: "absolute", top: 0, left: 0, transform: null };
-          obj1 = { translateX: PX_16 };
-          items = [];
-          items[0] = obj1;
-          rect.transform = items;
-          return rect;
-        }
-      }
-      const obj2 = { animation: sharedValue, H_PADDING_PX: PX_16 };
-      B.__closure = obj2;
-      B.__workletHash = 12824906142404;
-      B.__initData = __initData;
-      const animatedStyle = tmp(4529).useAnimatedStyle(B);
-      const tmpResult3 = tmp(4529);
-      class N {
-        constructor() {
-          obj = { width: null, alignSelf: "flex-end" };
-          obj2 = closure_0(closure_2[42]);
-          items = [, ];
-          items[0] = width - 2 * PX_16;
-          value = closure_3.get();
-          diff = width - 2.5 * PX_16;
-          items[1] = diff - closure_0(closure_2[44]).LARGE_BUTTON_HEIGHT;
-          obj.width = obj2.interpolate(value, [0, 1], items);
-          return obj;
-        }
-      }
-      const obj3 = { interpolate: tmp(4529).interpolate, animation: sharedValue, windowWidth: width, H_PADDING_PX: PX_16, ICON_SIZE_PX: tmp(5225).LARGE_BUTTON_HEIGHT };
-      N.__closure = obj3;
-      N.__workletHash = 6037256479965;
-      N.__initData = __initData2;
-      const animatedStyle1 = tmp(4529).useAnimatedStyle(N);
-      const _Math = Math;
-      const bound = Math.max(width(1616)().bottom, closure_9);
-      if (cResult[5] === bound) {
-        if (cResult[6] === tmp4) {
-          let tmp22 = cResult[7];
-        }
-        if (cResult[8] === style) {
-          if (cResult[9] === tmp7.container) {
-            if (cResult[10] === tmp22) {
-              let tmp24 = cResult[11];
-            }
-            if (cResult[12] === animatedStyle) {
-              if (cResult[13] === backButton) {
-                let tmp25 = cResult[14];
-              }
-              if (cResult[15] === animatedStyle1) {
-                if (cResult[16] === ctaButton) {
-                  let tmp28 = cResult[17];
-                }
-                if (cResult[18] === onLayout) {
-                  if (cResult[19] === tmp24) {
-                    if (cResult[20] === tmp25) {
-                      if (cResult[21] === tmp28) {
-                        let tmp31 = cResult[22];
-                      }
-                      return tmp31;
-                    }
-                  }
-                }
-                class B {
-                  constructor() {
-                    rect = { opacity: closure_3.get(), position: "absolute", top: 0, left: 0, transform: null };
-                    obj1 = { translateX: PX_16 };
-                    items = [];
-                    items[0] = obj1;
-                    rect.transform = items;
-                    return rect;
-                  }
-                }
-                tmp34[0] = tmp24;
-                tmp34[1] = onLayout;
-                let items = [tmp25, tmp28];
-                tmp34[2] = items;
-                const tmp35 = closure_11(View, tmp34);
-                cResult[18] = onLayout;
-                cResult[19] = tmp24;
-                class N {
-                  constructor() {
-                    obj = { width: null, alignSelf: "flex-end" };
-                    obj2 = closure_0(closure_2[42]);
-                    items = [, ];
-                    items[0] = width - 2 * PX_16;
-                    value = closure_3.get();
-                    diff = width - 2.5 * PX_16;
-                    items[1] = diff - closure_0(closure_2[44]).LARGE_BUTTON_HEIGHT;
-                    obj.width = obj2.interpolate(value, [0, 1], items);
-                    return obj;
-                  }
-                }
-                cResult[20] = tmp25;
-                cResult[21] = tmp28;
-                cResult[22] = tmp35;
-                tmp31 = tmp35;
-              }
-              const obj4 = { style: null, children: null };
-              class B {
-                constructor() {
-                  rect = { opacity: closure_3.get(), position: "absolute", top: 0, left: 0, transform: null };
-                  obj1 = { translateX: PX_16 };
-                  items = [];
-                  items[0] = obj1;
-                  rect.transform = items;
-                  return rect;
-                }
-              }
-              obj4.children = ctaButton;
-              const tmp30 = closure_10(tmp6(4529).View, obj4);
-              cResult[15] = animatedStyle1;
-              cResult[16] = ctaButton;
-              cResult[17] = tmp30;
-              tmp28 = tmp30;
-            }
-            const obj5 = { style: null, children: null };
-            class B {
-              constructor() {
-                rect = { opacity: closure_3.get(), position: "absolute", top: 0, left: 0, transform: null };
-                obj1 = { translateX: PX_16 };
-                items = [];
-                items[0] = obj1;
-                rect.transform = items;
-                return rect;
-              }
-            }
-            obj5.children = backButton;
-            const tmp27 = closure_10(tmp6(4529).View, obj5);
-            cResult[12] = animatedStyle;
-            cResult[13] = backButton;
-            cResult[14] = tmp27;
-            tmp25 = tmp27;
-          }
-        }
-        const items1 = [tmp7.container, , ];
-        class B {
-          constructor() {
-            rect = { opacity: closure_3.get(), position: "absolute", top: 0, left: 0, transform: null };
-            obj1 = { translateX: PX_16 };
-            items = [];
-            items[0] = obj1;
-            rect.transform = items;
-            return rect;
-          }
-        }
-        items1[2] = style;
-        cResult[8] = style;
-        cResult[9] = tmp7.container;
-        cResult[10] = tmp22;
-        cResult[11] = items1;
-        tmp24 = items1;
-      }
-      let tmp23 = tmp4;
-      if (tmp4) {
-        const obj6 = { paddingBottom: bound };
-        tmp23 = obj6;
-      }
-      cResult[5] = bound;
-      cResult[6] = tmp4;
-      cResult[7] = tmp23;
-      tmp22 = tmp23;
-      const tmpResult4 = tmp(4529);
-    }
-  }
-  const fn = function n() {
-    let num = 0;
-    if (closure_0) {
-      num = 1;
-    }
-    let num2 = 200;
-    if (closure_2) {
-      num2 = 0;
-    }
-    const result = sharedValue.set(timing.withTiming(num, { duration: num2 }));
-  };
-  const items2 = [tmp5, tmp8, sharedValue];
-  cResult[0] = sharedValue;
-  cResult[1] = tmp8;
-  cResult[2] = tmp5;
-  cResult[3] = fn;
-  cResult[4] = items2;
-  tmp11 = items2;
-  tmp10 = fn;
-}) : ((arg0) => {
+}
+function AnimatedFooter(arg0) {
   ({ backButton, withSafeArea } = arg0);
   ({ onLayout, ctaButton, style } = arg0);
   if (withSafeArea === undefined) {
@@ -643,386 +209,89 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   _require = undefined;
   let width;
-  dependencyMap = undefined;
+  let stateFromStores;
   let sharedValue;
   let tmp = null != backButton;
   if (tmp) {
     tmp = false !== backButton;
   }
   _require = tmp;
-  const bottom = width(1616)().bottom;
-  width = width(1482)().width;
-  const tmp5 = closure_24();
-  dependencyMap = tmp5;
+  const bottom = width(stateFromStores[38])().bottom;
+  width = width(stateFromStores[39])().width;
   const tmp4 = closure_13();
+  let items = [AccessibilityStore];
+  stateFromStores = require("initialize").useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj = require("initialize");
   let num = 0;
   if (tmp) {
     num = 1;
   }
   sharedValue = require("ReanimatedRexport").useSharedValue(num);
-  let items = [tmp, tmp5, sharedValue];
+  const items1 = [tmp, stateFromStores, sharedValue];
   const effect = noop.useEffect(() => {
     let num = 0;
     if (closure_0) {
       num = 1;
     }
     let num2 = 200;
-    if (closure_2) {
+    if (stateFromStores) {
       num2 = 0;
     }
     const result = sharedValue.set(timing.withTiming(num, { duration: num2 }));
-  }, items);
-  let obj = require("ReanimatedRexport");
-  const fn = function p() {
+  }, items1);
+  const obj2 = require("ReanimatedRexport");
+  const fn = function b() {
     const rect = { opacity: sharedValue.get(), position: "absolute", top: 0, left: 0, transform: null };
     const items = [{ translateX: PX_16 }];
     rect.transform = items;
     return rect;
   };
   fn.__closure = { animation: sharedValue, H_PADDING_PX: PX_16 };
-  fn.__workletHash = 7526979046886;
-  fn.__initData = __initData3;
+  fn.__workletHash = 7564903336036;
+  fn.__initData = __initData;
   const animatedStyle = require("ReanimatedRexport").useAnimatedStyle(fn);
-  const obj2 = { animation: sharedValue, H_PADDING_PX: PX_16 };
-  const tmp6Result = require("ReanimatedRexport");
-  class Q {
-    constructor() {
-      obj = { width: null, alignSelf: "flex-end" };
-      obj2 = closure_0(closure_2[42]);
-      items = [, ];
-      items[0] = width - 2 * PX_16;
-      value = closure_3.get();
-      diff = width - 2.5 * PX_16;
-      items[1] = diff - closure_0(closure_2[44]).LARGE_BUTTON_HEIGHT;
-      obj.width = obj2.interpolate(value, [0, 1], items);
-      return obj;
-    }
-  }
-  const tmp6Result2 = require("ReanimatedRexport");
-  Q.__closure = { interpolate: require("ReanimatedRexport").interpolate, animation: sharedValue, windowWidth: width, H_PADDING_PX: PX_16, ICON_SIZE_PX: require("ButtonConstants").LARGE_BUTTON_HEIGHT };
-  Q.__workletHash = 11275370871227;
-  Q.__initData = __initData4;
-  const animatedStyle1 = tmp6Result2.useAnimatedStyle(Q);
-  const items1 = [tmp4.container, , ];
+  const obj3 = { animation: sharedValue, H_PADDING_PX: PX_16 };
+  const tmp5Result = require("ReanimatedRexport");
+  const fn2 = function y() {
+    const obj = { width: null, alignSelf: "flex-end" };
+    const items = [width - 2 * PX_16, ];
+    value = sharedValue.get();
+    const diff = width - 2.5 * PX_16;
+    items[1] = diff - ButtonConstants.LARGE_BUTTON_HEIGHT;
+    obj.width = ReanimatedRexport.interpolate(value, [0, 1], items);
+    return obj;
+  };
+  const tmp5Result2 = require("ReanimatedRexport");
+  fn2.__closure = { interpolate: require("ReanimatedRexport").interpolate, animation: sharedValue, windowWidth: width, H_PADDING_PX: PX_16, ICON_SIZE_PX: require("ButtonConstants").LARGE_BUTTON_HEIGHT };
+  fn2.__workletHash = 9095621288509;
+  fn2.__initData = __initData2;
+  const animatedStyle1 = tmp5Result2.useAnimatedStyle(fn2);
+  const items2 = [tmp4.container, , ];
   if (withSafeArea) {
-    const obj4 = { paddingBottom: tmp11 };
-    withSafeArea = obj4;
+    const obj5 = { paddingBottom: tmp11 };
+    withSafeArea = obj5;
   }
-  const obj5 = { style: items1, onLayout, children: null };
-  items1[1] = withSafeArea;
-  items1[2] = style;
-  const items2 = [closure_10(width(4529).View, { style: animatedStyle, children: backButton }), closure_10(width(4529).View, { style: animatedStyle1, children: ctaButton })];
-  obj5.children = items2;
-  return closure_11(View, obj5);
-});
-ReactCompilerGating = fn(558);
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function t() {
-      return useReducedMotion.useReducedMotion;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
-  const items = [AccessibilityStore];
-  return initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-});
+  const obj6 = { style: items2, onLayout, children: null };
+  items2[1] = withSafeArea;
+  items2[2] = style;
+  const items3 = [closure_10(width(stateFromStores[40]).View, { style: animatedStyle, children: backButton }), closure_10(width(stateFromStores[40]).View, { style: animatedStyle1, children: ctaButton })];
+  obj6.children = items3;
+  return closure_11(View, obj6);
+}
+const View = fn(17).View;
+let closure_9 = fn(7428).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
+const jsxProd = fn(21);
+({ jsx: c10, jsxs: closure_11 } = jsxProd);
+const PX_16 = nativeDefault.space.PX_16;
+const createStyles = fn(4788);
+let obj2 = { container: { display: "flex", flexGrow: 1, flexShrink: 1, paddingHorizontal: nativeDefault.space.PX_16 } };
+let closure_13 = createStyles.createStyles(obj2);
+const __initData = { code: "function QuestBottomSheetFooterTsx1(){const{animation,H_PADDING_PX}=this.__closure;return{opacity:animation.get(),position:'absolute',top:0,left:0,transform:[{translateX:H_PADDING_PX}]};}" };
+const __initData2 = { code: "function QuestBottomSheetFooterTsx2(){const{interpolate,animation,windowWidth,H_PADDING_PX,ICON_SIZE_PX}=this.__closure;return{width:interpolate(animation.get(),[0,1],[windowWidth-H_PADDING_PX*2,windowWidth-H_PADDING_PX*2.5-ICON_SIZE_PX]),alignSelf:'flex-end'};}" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetFooter.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(56);
-  ({ quest, onLayout, step, isDefibrilating, onConnectConsoleNext, onBack, onDefib, style, withSafeArea, sourceQuestContent } = arg0);
-  if (cResult[0] === quest) {
-    if (cResult[1] === sourceQuestContent) {
-      let tmp5 = cResult[2];
-    }
-    const tmp7 = useQuestRewardClaimHandler(tmp5);
-    const questTaskDetails = tmp(11643).useQuestTaskDetails(quest);
-    const tmpResult = tmp(11643);
-    const isQuestProgressing = tmp(11643).useIsQuestProgressing(quest);
-    const tmpResult11 = tmp(11643);
-    const tmpResult12 = tmp(11643);
-    const xboxAndPlaystationAccounts = tmp(11643).useConnectedAccounts().xboxAndPlaystationAccounts;
-    if (cResult[3] === quest) {
-      if (cResult[4] === xboxAndPlaystationAccounts) {
-        const hasWatchVideoOnMobileTasks = tmp(15357).useHasWatchVideoOnMobileTasks(quest.config);
-        const tmpResult14 = tmp(15357);
-        const mobileActivityQuest = tmp(15357).useMobileActivityQuest(quest);
-        ({ launchMobileActivity, questApplication } = mobileActivityQuest);
-        if (cResult[8] === quest) {
-          if (cResult[9] === questApplication) {
-            let tmp17 = cResult[10];
-          }
-          const primaryCtaCopy = tmp(11939).usePrimaryCtaCopy(tmp17);
-          if (cResult[11] === launchMobileActivity) {
-            if (cResult[12] === quest.id) {
-              if (cResult[13] === sourceQuestContent) {
-                let tmp19 = cResult[14];
-              }
-              const mobileActivityPressHandler = tmp(15389).useMobileActivityPressHandler(tmp19);
-              const userStatus = quest.userStatus;
-              let completedAt;
-              if (userStatus != null) {
-                completedAt = userStatus.completedAt;
-              }
-              const userStatus2 = quest.userStatus;
-              let claimedAt;
-              if (userStatus2 != null) {
-                claimedAt = userStatus2.claimedAt;
-              }
-              const tmp23 = null != completedAt;
-              const tmpResult17 = tmp(15389);
-              const isQuestAccessSuspended = tmp(11643).useIsQuestAccessSuspended();
-              const _Symbol = Symbol;
-              if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj2 = { disabled: true, onPressDisabled: openQuestAccessSuspendedBottomSheetDefault };
-                cResult[15] = obj2;
-                let tmp28 = obj2;
-              } else {
-                tmp28 = cResult[15];
-              }
-              if (step === tmp(15386).QuestBottomSheetStep.TASK_SELECT) {
-                return null;
-              } else if (tmp(15386).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
-                if (cResult[16] === onConnectConsoleNext) {
-                }
-                const obj3 = { onPress: onConnectConsoleNext, disabled: 0 === cResult[5].length };
-                const tmp73 = v65535(closure_16, obj3);
-                cResult[16] = onConnectConsoleNext;
-                cResult[17] = 0 === cResult[5].length;
-                cResult[18] = tmp73;
-              } else {
-                let tmp38 = null;
-                if (tmp(15386).QuestBottomSheetStep.TASK_STATUS === step) {
-                  if (tmp23) {
-                    let tmp61 = null;
-                    if (isQuestAccessSuspended) {
-                      tmp61 = null;
-                      if (!tmp25) {
-                        tmp61 = tmp28;
-                      }
-                    }
-                    if (cResult[19] === tmp25) {
-                      if (cResult[20] === quest.id) {
-                        if (cResult[21] === tmp7.claim) {
-                          if (cResult[22] === sourceQuestContent) {
-                            if (cResult[23] === tmp60) {
-                              if (cResult[24] === tmp61) {
-                                let tmp62 = cResult[25];
-                              }
-                              tmp38 = tmp62;
-                            }
-                          }
-                        }
-                      }
-                    }
-                    const obj4 = { questId: quest.id, onPress: tmp7.claim, disabled: tmp25, loading: tmp7.isLoading || tmp7.isClaiming, sourceQuestContent };
-                    const merged = Object.assign(tmp61);
-                    const tmp68 = v65535(closure_18, obj4);
-                    cResult[19] = tmp25;
-                    cResult[20] = quest.id;
-                    cResult[21] = tmp7.claim;
-                    cResult[22] = sourceQuestContent;
-                    cResult[23] = tmp7.isLoading || tmp7.isClaiming;
-                    cResult[24] = tmp61;
-                    cResult[25] = tmp68;
-                    tmp62 = tmp68;
-                  } else if (hasWatchVideoOnMobileTasks) {
-                    let tmp52 = null;
-                    if (isQuestAccessSuspended) {
-                      tmp52 = tmp28;
-                    }
-                    if (cResult[26] === quest.id) {
-                      if (cResult[27] === sourceQuestContent) {
-                        if (cResult[28] === tmp52) {
-                          if (cResult[29] === questTaskDetails) {
-                            let tmp53 = cResult[30];
-                          }
-                          tmp38 = tmp53;
-                        }
-                      }
-                    }
-                    const obj5 = { questId: quest.id, taskDetails: questTaskDetails, sourceQuestContent };
-                    const merged1 = Object.assign(tmp52);
-                    const tmp59 = v65535(closure_15, obj5);
-                    cResult[26] = quest.id;
-                    cResult[27] = sourceQuestContent;
-                    cResult[28] = tmp52;
-                    cResult[29] = questTaskDetails;
-                    cResult[30] = tmp59;
-                    tmp53 = tmp59;
-                  } else if (tmp16) {
-                    if (cResult[31] !== quest) {
-                      const primaryCtaIcon = tmp(11931).getPrimaryCtaIcon(quest);
-                      cResult[31] = quest;
-                      cResult[32] = primaryCtaIcon;
-                      let tmp43 = primaryCtaIcon;
-                      const tmpResult19 = tmp(11931);
-                    } else {
-                      tmp43 = cResult[32];
-                    }
-                    let tmp45 = null;
-                    if (isQuestAccessSuspended) {
-                      tmp45 = tmp28;
-                    }
-                    if (cResult[33] === mobileActivityPressHandler) {
-                      if (cResult[34] === primaryCtaCopy) {
-                        if (cResult[35] === tmp43) {
-                          if (cResult[36] === tmp45) {
-                            let tmp46 = cResult[37];
-                          }
-                          tmp38 = tmp46;
-                        }
-                      }
-                    }
-                    const obj6 = { grow: true, size: "lg", onPress: mobileActivityPressHandler, text: primaryCtaCopy, icon: tmp43 };
-                    const merged2 = Object.assign(tmp45);
-                    const tmp51 = v65535(tmp(5220).Button, obj6);
-                    cResult[33] = mobileActivityPressHandler;
-                    cResult[34] = primaryCtaCopy;
-                    cResult[35] = tmp43;
-                    cResult[36] = tmp45;
-                    cResult[37] = tmp51;
-                    tmp46 = tmp51;
-                  } else {
-                    if (_slicedToArray(tmpResult12.useTaskPlatformScreen(quest, questTaskDetails), 1)[0] === tmp(5698).TaskPlatformScreen.CONSOLE) {
-                      if (!isQuestProgressing) {
-                        let tmp30 = null;
-                        if (isQuestAccessSuspended) {
-                          tmp30 = tmp28;
-                        }
-                        if (cResult[38] === tmp4) {
-                          if (cResult[39] === onDefib) {
-                            if (cResult[40] === quest.id) {
-                              if (cResult[41] === sourceQuestContent) {
-                                if (cResult[42] === tmp30) {
-                                  let tmp31 = cResult[43];
-                                }
-                                tmp38 = tmp31;
-                              }
-                            }
-                          }
-                        }
-                        const obj7 = { questId: quest.id, loading: tmp4, disabled: tmp4, onPress: onDefib, sourceQuestContent };
-                        const merged3 = Object.assign(tmp30);
-                        const tmp37 = v65535(closure_17, obj7);
-                        cResult[38] = tmp4;
-                        cResult[39] = onDefib;
-                        cResult[40] = quest.id;
-                        cResult[41] = sourceQuestContent;
-                        cResult[42] = tmp30;
-                        cResult[43] = tmp37;
-                        tmp31 = tmp37;
-                      }
-                    }
-                    if (cResult[44] === quest.id) {
-                      if (cResult[45] === tmp7.claim) {
-                        if (cResult[46] === sourceQuestContent) {
-                          let tmp39 = cResult[47];
-                        }
-                        tmp38 = tmp39;
-                      }
-                    }
-                    const obj8 = { questId: quest.id, onPress: tmp7.claim, disabled: true, sourceQuestContent };
-                    const tmp42 = v65535(closure_18, obj8);
-                    cResult[44] = quest.id;
-                    cResult[45] = tmp7.claim;
-                    cResult[46] = sourceQuestContent;
-                    cResult[47] = tmp42;
-                    tmp39 = tmp42;
-                  }
-                }
-                if (cResult[48] !== onBack) {
-                  let tmp76 = null != onBack;
-                  if (tmp76) {
-                    const obj9 = { accessibilityLabel: null, variant: "secondary", icon: null, onPress: null, size: "lg" };
-                    const intl = tmp(1119).intl;
-                    obj9.accessibilityLabel = intl.string(tmp(1119).t["13/7kX"]);
-                    obj9.icon = v65535(tmp(5875).ArrowLargeLeftIcon, {});
-                    obj9.onPress = onBack;
-                    tmp76 = v65535(tmp(8210).IconButton, obj9);
-                  }
-                  cResult[48] = onBack;
-                  cResult[49] = tmp76;
-                  let tmp75 = tmp76;
-                } else {
-                  tmp75 = cResult[49];
-                }
-                if (cResult[50] === onLayout) {
-                  if (cResult[51] === style) {
-                    if (cResult[52] === tmp38) {
-                      if (cResult[53] === tmp75) {
-                        if (cResult[54] === withSafeArea) {
-                          let tmp78 = cResult[55];
-                        }
-                        return tmp78;
-                      }
-                    }
-                  }
-                }
-                const obj10 = { onLayout, ctaButton: tmp38, backButton: tmp75, style, withSafeArea };
-                const tmp81 = v65535(closure_23, obj10);
-                cResult[50] = onLayout;
-                cResult[51] = style;
-                cResult[52] = tmp38;
-                cResult[53] = tmp75;
-                cResult[54] = withSafeArea;
-                cResult[55] = tmp81;
-                tmp78 = tmp81;
-              }
-              const tmpResult18 = tmp(11643);
-            }
-          }
-          const obj11 = { questId: quest.id, sourceQuestContent, launchMobileActivity };
-          cResult[11] = launchMobileActivity;
-          cResult[12] = quest.id;
-          cResult[13] = sourceQuestContent;
-          cResult[14] = obj11;
-          tmp19 = obj11;
-          const tmpResult16 = tmp(11939);
-        }
-        const obj12 = { quest, application: questApplication };
-        cResult[8] = quest;
-        cResult[9] = questApplication;
-        cResult[10] = obj12;
-        tmp17 = obj12;
-        const tmpResult15 = tmp(15357);
-      }
-    }
-    if (cResult[6] !== xboxAndPlaystationAccounts) {
-      const fn = function y(arg0) {
-        closure_0 = arg0;
-        return null != xboxAndPlaystationAccounts.find((type) => type.type === closure_0);
-      };
-      cResult[6] = xboxAndPlaystationAccounts;
-      cResult[7] = fn;
-      let tmp11 = fn;
-    } else {
-      tmp11 = cResult[7];
-    }
-    const tmpResult13 = tmp(11643);
-    const tmpResult20 = tmp(11656);
-    const found = tmp(11656).supportedConsoles(quest).filter(tmp11);
-    cResult[3] = quest;
-    cResult[4] = xboxAndPlaystationAccounts;
-    cResult[5] = found;
-    const supportedConsolesResult = tmp(11656).supportedConsoles(quest);
-  }
-  const obj13 = { quest, sourceQuestContent };
-  cResult[0] = quest;
-  cResult[1] = sourceQuestContent;
-  cResult[2] = obj13;
-  tmp5 = obj13;
-}) : ((quest) => {
+export default function QuestBottomSheetFooter(quest) {
   quest = quest.quest;
   ({ step, isDefibrilating } = quest);
   if (isDefibrilating === undefined) {
@@ -1031,28 +300,28 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ onBack, sourceQuestContent } = quest);
   ({ onConnectConsoleNext, onDefib, style, withSafeArea } = quest);
   const tmp = useQuestRewardClaimHandler({ quest, sourceQuestContent });
-  const questTaskDetails = quest(11643).useQuestTaskDetails(quest);
-  let obj = quest(11643);
-  const isQuestProgressing = quest(11643).useIsQuestProgressing(quest);
-  const obj2 = quest(11643);
-  const obj3 = quest(11643);
-  const xboxAndPlaystationAccounts = quest(11643).useConnectedAccounts().xboxAndPlaystationAccounts;
+  const questTaskDetails = quest(11767).useQuestTaskDetails(quest);
+  let obj = quest(11767);
+  const isQuestProgressing = quest(11767).useIsQuestProgressing(quest);
+  const obj2 = quest(11767);
+  const obj3 = quest(11767);
+  const xboxAndPlaystationAccounts = quest(11767).useConnectedAccounts().xboxAndPlaystationAccounts;
   const items = [quest, xboxAndPlaystationAccounts];
   const memo = noop.useMemo(() => QuestPlatformUtils.supportedConsoles(quest).filter((item) => {
     closure_0 = item;
     return null != xboxAndPlaystationAccounts.find((type) => type.type === closure_0);
   }), items);
-  const obj4 = quest(11643);
-  const hasWatchVideoOnMobileTasks = quest(15357).useHasWatchVideoOnMobileTasks(quest.config);
-  const obj5 = quest(15357);
-  const mobileActivityQuest = quest(15357).useMobileActivityQuest(quest);
+  const obj4 = quest(11767);
+  const hasWatchVideoOnMobileTasks = quest(15361).useHasWatchVideoOnMobileTasks(quest.config);
+  const obj5 = quest(15361);
+  const mobileActivityQuest = quest(15361).useMobileActivityQuest(quest);
   ({ isMobileActivityQuest, launchMobileActivity, questApplication } = mobileActivityQuest);
-  const obj6 = quest(15357);
-  const primaryCtaCopy = quest(11939).usePrimaryCtaCopy({ quest, application: questApplication });
-  const obj7 = quest(11939);
+  const obj6 = quest(15361);
+  const primaryCtaCopy = quest(12057).usePrimaryCtaCopy({ quest, application: questApplication });
+  const obj7 = quest(12057);
   const userStatus = quest.userStatus;
   let completedAt;
-  const obj8 = quest(15389);
+  const obj8 = quest(15393);
   const obj9 = { questId: quest.id, sourceQuestContent, launchMobileActivity };
   if (userStatus != null) {
     completedAt = userStatus.completedAt;
@@ -1062,19 +331,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (userStatus2 != null) {
     claimedAt = userStatus2.claimedAt;
   }
-  const mobileActivityPressHandler = quest(15389).useMobileActivityPressHandler({ questId: quest.id, sourceQuestContent, launchMobileActivity });
+  const mobileActivityPressHandler = quest(15393).useMobileActivityPressHandler({ questId: quest.id, sourceQuestContent, launchMobileActivity });
   const tmp11 = null != completedAt;
-  const isQuestAccessSuspended = quest(11643).useIsQuestAccessSuspended();
-  const obj10 = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(15384) };
+  const isQuestAccessSuspended = quest(11767).useIsQuestAccessSuspended();
+  const obj10 = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(15388) };
   let tmp40Result6 = null;
-  if (step !== quest(15386).QuestBottomSheetStep.TASK_SELECT) {
+  if (step !== quest(15390).QuestBottomSheetStep.TASK_SELECT) {
     const obj11 = { onLayout: quest.onLayout, ctaButton: null, backButton: null, style: null, withSafeArea: null };
-    if (tmp2(15386).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
+    if (tmp2(15390).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
       const obj12 = { onPress: onConnectConsoleNext, disabled: 0 === memo.length };
-      let tmp40Result = tmp40(closure_16, obj12);
+      let tmp40Result = tmp40(NextButton, obj12);
     } else {
       tmp40Result = null;
-      if (tmp2(15386).QuestBottomSheetStep.TASK_STATUS === step) {
+      if (tmp2(15390).QuestBottomSheetStep.TASK_STATUS === step) {
         if (tmp11) {
           const obj13 = { questId: quest.id, onPress: tmp.claim, disabled: tmp13, loading: null, sourceQuestContent: null };
           let isClaiming = tmp.isLoading;
@@ -1091,7 +360,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const merged = Object.assign(tmp33);
-          let tmp40Result4 = tmp40(closure_18, obj13);
+          let tmp40Result4 = tmp40(ClaimButton, obj13);
         } else if (hasWatchVideoOnMobileTasks) {
           const obj14 = { questId: quest.id, taskDetails: questTaskDetails, sourceQuestContent };
           let tmp28 = null;
@@ -1099,18 +368,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp28 = obj10;
           }
           const merged1 = Object.assign(tmp28);
-          tmp40Result4 = tmp40(closure_15, obj14);
+          tmp40Result4 = tmp40(WatchTaskButton, obj14);
         } else if (isMobileActivityQuest) {
-          const obj15 = { grow: true, size: "lg", onPress: mobileActivityPressHandler, text: primaryCtaCopy, icon: tmp2(11931).getPrimaryCtaIcon(quest) };
+          const obj15 = { grow: true, size: "lg", onPress: mobileActivityPressHandler, text: primaryCtaCopy, icon: tmp2(12049).getPrimaryCtaIcon(quest) };
           let tmp23 = null;
           if (isQuestAccessSuspended) {
             tmp23 = obj10;
           }
           const merged2 = Object.assign(tmp23);
-          tmp40Result4 = tmp40(tmp2(5220).Button, obj15);
-          const tmp2Result2 = tmp2(11931);
+          tmp40Result4 = tmp40(tmp2(5218).Button, obj15);
+          const tmp2Result2 = tmp2(12049);
         } else {
-          if (_slicedToArray(obj3.useTaskPlatformScreen(quest, questTaskDetails), 1)[0] === tmp2(5698).TaskPlatformScreen.CONSOLE) {
+          if (_slicedToArray(obj3.useTaskPlatformScreen(quest, questTaskDetails), 1)[0] === tmp2(5696).TaskPlatformScreen.CONSOLE) {
             if (!isQuestProgressing) {
               const obj16 = { questId: quest.id, loading: isDefibrilating, disabled: isDefibrilating, onPress: onDefib, sourceQuestContent };
               let tmp17 = null;
@@ -1118,11 +387,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp17 = obj10;
               }
               const merged3 = Object.assign(tmp17);
-              tmp40Result4 = tmp40(closure_17, obj16);
+              tmp40Result4 = tmp40(DefibButton, obj16);
             }
           }
           const obj17 = { questId: quest.id, onPress: tmp.claim, disabled: true, sourceQuestContent };
-          tmp40Result4 = tmp40(closure_18, obj17);
+          tmp40Result4 = tmp40(ClaimButton, obj17);
         }
         tmp40Result = tmp40Result4;
       }
@@ -1131,17 +400,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp40Result5 = null != onBack;
     if (tmp40Result5) {
       const obj18 = { accessibilityLabel: null, variant: "secondary", icon: null, onPress: null, size: "lg" };
-      const intl = tmp2(1119).intl;
-      obj18.accessibilityLabel = intl.string(tmp2(1119).t["13/7kX"]);
-      obj18.icon = tmp40(tmp2(5875).ArrowLargeLeftIcon, {});
+      const intl = tmp2(1115).intl;
+      obj18.accessibilityLabel = intl.string(tmp2(1115).t["13/7kX"]);
+      obj18.icon = tmp40(tmp2(5877).ArrowLargeLeftIcon, {});
       obj18.onPress = onBack;
-      tmp40Result5 = tmp40(tmp2(8210).IconButton, obj18);
+      tmp40Result5 = tmp40(tmp2(8211).IconButton, obj18);
     }
     obj11.backButton = tmp40Result5;
     obj11.style = style;
     obj11.withSafeArea = withSafeArea;
-    tmp40Result6 = tmp40(closure_23, obj11);
+    tmp40Result6 = tmp40(AnimatedFooter, obj11);
   }
   return tmp40Result6;
-});
+};
 export { useQuestRewardClaimHandler };

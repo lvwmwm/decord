@@ -1,11 +1,11 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17548
+// Function ID: 17549
 // Name: PanelSizeUtils
-// Dependencies: [12456, 2]
+// Dependencies: [12555, 2]
 // Exports: getMaxPanelWidth, getPanelX
 
-// Module 17498 (PanelSizeUtils)
-import VoicePanelConstants from "VoicePanelConstants" /* 12456 */;
+// Module 17548 (PanelSizeUtils)
+import VoicePanelConstants from "VoicePanelConstants" /* 12555 */;
 import size from "module_2" /* 2 */;
 
 const VOICE_PANEL_DRAWER_MAX_WIDTH = VoicePanelConstants.VOICE_PANEL_DRAWER_MAX_WIDTH;

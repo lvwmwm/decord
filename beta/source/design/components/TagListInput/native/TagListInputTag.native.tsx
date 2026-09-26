@@ -1,15 +1,15 @@
-// Module ID: 9856
-// Function ID: 9857
+// Module ID: 9878
+// Function ID: 9879
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 9857, 4786, 5373, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 1115, 9879, 5371, 4784, 2]
+// Exports: TagListInputTagComponent
 
-// Module 9856 (TagListInputTag)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import Pressables from "Pressables" /* 5373 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 9857 */;
+// Module 9878 (TagListInputTag)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Pressables from "Pressables" /* 5371 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 9879 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_6 = createStyles.createStyles(() => {
   const obj = { tagWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, marginHorizontal: 2, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, overflow: "hidden", flexDirection: "row", alignItems: "center", flexShrink: 1 }, tagText: { flexShrink: 1 }, highlightedTagWrapper: null, tagIcon: null, start: null, end: null };
   const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, marginHorizontal: 2, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, overflow: "hidden", flexDirection: "row", alignItems: "center", flexShrink: 1 };
@@ -30,79 +30,10 @@ let closure_6 = createStyles.createStyles(() => {
   obj.end = { marginRight: nativeDefault.space.PX_4 };
   return obj;
 });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/TagListInput/native/TagListInputTag.native.tsx");
 
-export const TagListInputTagComponent = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(26);
-  ({ tag, selected, onPress } = arg0);
-  ({ start, end } = arg0);
-  const tmp6 = closure_6();
-  if (cResult[0] !== tag.text) {
-    const intl = tmp(1119).intl;
-    const obj2 = { text: tag.text };
-    const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["0Vb9FQ"], obj2);
-    cResult[0] = tag.text;
-    cResult[1] = formatToPlainStringResult;
-    let tmp7 = formatToPlainStringResult;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== onPress) {
-    class A {
-      constructor() {
-        return onPress("remove");
-      }
-    }
-    cResult[2] = onPress;
-    cResult[3] = A;
-    const tmp9 = A;
-  } else {
-    class A {
-      constructor() {
-        return onPress("remove");
-      }
-    }
-  }
-  const tmp4 = undefined !== start && start;
-  const tmp5 = undefined !== end && end;
-  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(tmp9, tmp7));
-  if (selected) {
-    class A {
-      constructor() {
-        return onPress("remove");
-      }
-    }
-  }
-  if (tmp4) {
-    class A {
-      constructor() {
-        return onPress("remove");
-      }
-    }
-  }
-  if (tmp5) {
-    class A {
-      constructor() {
-        return onPress("remove");
-      }
-    }
-  }
-  if (cResult[4] === tmp6.tagWrapper) {
-    class A {
-      constructor() {
-        return onPress("remove");
-      }
-    }
-  }
-  const items = [tmp6.tagWrapper, undefined, undefined, undefined];
-  cResult[4] = tmp6.tagWrapper;
-  cResult[5] = undefined;
-  cResult[6] = undefined;
-  cResult[7] = undefined;
-  cResult[8] = items;
-}) : ((end) => {
+export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   ({ tag, selected, onPress: require, start } = end);
   if (start === undefined) {
     start = false;
@@ -158,4 +89,4 @@ export const TagListInputTagComponent = ReactCompilerGating.isReactCompilerEnabl
   items1[1] = React4(Text_Text.Text, obj4);
   obj2.children = items1;
   return hasOwnProperty(Pressables.PressableOpacity, obj2);
-});
+};

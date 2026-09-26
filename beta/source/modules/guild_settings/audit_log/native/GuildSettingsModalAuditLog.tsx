@@ -1,32 +1,32 @@
-// Module ID: 17989
-// Function ID: 17990
+// Module ID: 17980
+// Function ID: 17981
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 2045, 2067, 2099, 1376, 17990, 1078, 21, 4790, 580, 1488, 504, 17992, 4635, 1119, 7473, 17994, 18004, 7653, 17995, 5828, 5854, 4786, 5861, 1181, 18005, 7318, 2]
+// Dependencies: [32, 19, 17, 2041, 2063, 2095, 1372, 17981, 1074, 21, 4788, 576, 1484, 504, 17983, 4632, 1115, 7471, 17985, 17995, 7651, 17986, 5826, 5854, 4784, 5861, 1177, 17996, 7317, 2]
 // Exports: default
 
-// Module 17989 (GuildSettingsModalAuditLog)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7473 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 17992 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 17995 */;
-import AuditLogDefault from "AuditLog" /* 18004 */;
+// Module 17980 (GuildSettingsModalAuditLog)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7471 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 17983 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 17986 */;
+import AuditLogDefault from "AuditLog" /* 17995 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1376 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17990 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserStore from "UserStore" /* 1372 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17981 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ GuildSettingsSections: map1, AuditLogFilterTypes: closure_14 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { listView: { marginVertical: 12 }, spinner: { marginTop: 40 }, filterTextWrapper: { borderRadius: nativeDefault.radii.md, paddingVertical: 6, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT }, filtersWrapper: null, firstAuditRow: null, lastAuditRow: null, filterTrailing: null };
 let obj3 = { borderRadius: nativeDefault.radii.md, paddingVertical: 6, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
 obj2.filtersWrapper = { paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_8 };
@@ -134,7 +134,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
       lastAuditRow = closure_1.lastAuditRow;
     }
     items[1] = lastAuditRow;
-    return closure_2_15(AuditLogDefault, {
+    return __initData(AuditLogDefault, {
       containerStyle: items,
       onHeaderClick(id) {
         if (ref.current !== id.id) {

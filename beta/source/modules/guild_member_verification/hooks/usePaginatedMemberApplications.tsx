@@ -1,16 +1,16 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16937
+// Function ID: 16938
 // Name: usePaginatedMemberApplications
-// Dependencies: [5, 32, 19, 4615, 11, 5792, 4691, 2]
+// Dependencies: [5, 32, 19, 4612, 11, 5790, 4688, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 16947 (usePaginatedMemberApplications)
+// Module 16937 (usePaginatedMemberApplications)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const result = fn(4615).MAX_RESULTS_PER_PAGE * fn(4615).MAX_VISIBLE_PAGES;
+const result = fn(4612).MAX_RESULTS_PER_PAGE * fn(4612).MAX_VISIBLE_PAGES;
 const metroRequire = result;
 const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/guild_member_verification/hooks/usePaginatedMemberApplications.tsx");
@@ -42,7 +42,7 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -75,8 +75,8 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
                   ref2 = 2;
                   ref.current = true;
                   const tmp51 = (function getRequestPaginationParams(after, arg1, arg2, arg3, flag) {
-                    const tmp2 = arg3 === guildId(4615).GuildJoinRequestApplicationStatuses.SUBMITTED;
-                    if (arg2 === guildId(4615).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
+                    const tmp2 = arg3 === guildId(4612).GuildJoinRequestApplicationStatuses.SUBMITTED;
+                    if (arg2 === guildId(4612).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
                       if (!flag) {
                         if (0 !== arg1.length) {
                           const obj2 = { before: tmp2 ? arg1[arg1.length - 1].joinRequestId : arg1[arg1.length - 1].actionedAt };

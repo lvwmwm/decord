@@ -1,84 +1,18 @@
-// Module ID: 11514
-// Function ID: 11515
+// Module ID: 11390
+// Function ID: 11391
 // Name: OrbLottieAnimation
-// Dependencies: [19, 21, 558, 568, 4725, 4642, 11515, 11517, 2]
+// Dependencies: [19, 21, 4722, 4639, 11391, 11393, 2]
 
-// Module 11514 (OrbLottieAnimation)
-import c from "c" /* 568 */;
-import shared from "shared" /* 4642 */;
-import useTheme from "useTheme" /* 4725 */;
+// Module 11390 (OrbLottieAnimation)
+import shared from "shared" /* 4639 */;
+import useTheme from "useTheme" /* 4722 */;
 import "module_19";
 
 require = fn;
 const noop = fn(19);
 ({ useRef: c3, useEffect: closure_4, forwardRef } = noop);
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((animationType, ref) => {
-  const cResult = c.c(7);
-  animationType = animationType.animationType;
-  const theme = useTheme.useTheme();
-  const tmp6 = React3(null);
-  if (cResult[0] !== animationType) {
-    const fn = function p() {
-      if (null !== animationType) {
-        const current = ref.current;
-        if (current != null) {
-          current.play();
-        }
-      }
-    };
-    const items = [animationType];
-    cResult[0] = animationType;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp8 = items;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-    tmp8 = cResult[2];
-  }
-  React4(tmp7, tmp8);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function h() {
-      return {
-        play() {
-          const current = ref.current;
-          let playResult;
-          if (current != null) {
-            playResult = current.play();
-          }
-          return playResult;
-        }
-      };
-    };
-    cResult[3] = fn2;
-    let tmp10 = fn2;
-  } else {
-    tmp10 = cResult[3];
-  }
-  const imperativeHandle = noop.useImperativeHandle(ref, tmp10);
-  if (isThemeLightResult) {
-    let SpendEarnOrbsLottie = tmp(11515).SpendEarnOrbsLightThemeLottie;
-  } else {
-    SpendEarnOrbsLottie = tmp(11517).SpendEarnOrbsLottie;
-  }
-  let str = "spend";
-  if (null != animationType) {
-    str = animationType;
-  }
-  if (cResult[4] === SpendEarnOrbsLottie) {
-    if (cResult[5] === str) {
-      let tmp12 = cResult[6];
-    }
-    return tmp12;
-  }
-  const tmp13 = <SpendEarnOrbsLottie ref={tmp6} size="custom" width={60} height={60} opacity={0.8} animation={str} useLottieDefaultColors />;
-  cResult[4] = SpendEarnOrbsLottie;
-  cResult[5] = str;
-  cResult[6] = tmp13;
-  tmp12 = tmp13;
-}) : ((animationType, ref) => {
+const forwardRefResult = forwardRef((animationType, ref) => {
   animationType = animationType.animationType;
   const theme = useTheme.useTheme();
   const tmp5 = React3(null);
@@ -102,9 +36,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
   }));
   if (isThemeLightResult) {
-    let SpendEarnOrbsLottie = tmp(11515).SpendEarnOrbsLightThemeLottie;
+    let SpendEarnOrbsLottie = tmp(11391).SpendEarnOrbsLightThemeLottie;
   } else {
-    SpendEarnOrbsLottie = tmp(11517).SpendEarnOrbsLottie;
+    SpendEarnOrbsLottie = tmp(11393).SpendEarnOrbsLottie;
   }
   const size = { ref: tmp5, size: "custom", width: 60, height: 60, opacity: 0.8, animation: null, useLottieDefaultColors: true };
   let str = "spend";
@@ -113,7 +47,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   }
   size.animation = str;
   return <SpendEarnOrbsLottie ref={tmp5} size="custom" width={60} height={60} opacity={0.8} animation={null} useLottieDefaultColors />;
-}));
+});
 forwardRefResult.displayName = "OrbsLottieAnimation";
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/virtual_currency/native/OrbLottieAnimation.tsx");

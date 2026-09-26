@@ -1,9 +1,9 @@
 // Module ID: 13914
 // Function ID: 13915
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 13914
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/dark", width: 16, height: 16, scales: [2, 3], hash: "90c1dc5d32c0284bd720743e9ec59702", name: "tier_0_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 203, height: 120, scales: [1, 2, 3], hash: "0c52217e1b36f758b126e56747a120ea", name: "guild_subscription_removal_light", type: "png" });

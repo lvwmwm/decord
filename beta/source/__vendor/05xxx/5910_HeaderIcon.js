@@ -1,12 +1,12 @@
 // Module ID: 5910
 // Function ID: 5911
 // Name: HeaderIcon
-// Dependencies: [17, 21, 1489]
+// Dependencies: [17, 21, 1485]
 // Exports: HeaderIcon
 
 // Module 5910 (HeaderIcon)
 import jsxProd from "jsxProd" /* 21 */;
-import Link from "Link" /* 1489 */;
+import Link from "Link" /* 1485 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 
 ({ Image: c2, Platform, StyleSheet } = get_ActivityIndicator);

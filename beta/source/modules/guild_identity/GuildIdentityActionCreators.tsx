@@ -1,11 +1,11 @@
-// Module ID: 10036
-// Function ID: 10037
+// Module ID: 10069
+// Function ID: 10070
 // Name: GuildIdentityActionCreators
-// Dependencies: [5, 1078, 577, 1275, 5420, 7263, 2]
+// Dependencies: [5, 1074, 573, 1271, 5418, 7262, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 10036 (GuildIdentityActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 10069 (GuildIdentityActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -20,7 +20,7 @@ let closure_5 = async function _saveGuildIdentityChanges(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -52,7 +52,7 @@ let closure_5 = async function _saveGuildIdentityChanges(arg0, value) {
           let body;
           c7 = 1;
           c8 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp9) {
         if (arg0 === 1) {
@@ -191,7 +191,7 @@ let closure_5 = async function _saveGuildIdentityChanges(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_identity/GuildIdentityActionCreators.tsx");
 

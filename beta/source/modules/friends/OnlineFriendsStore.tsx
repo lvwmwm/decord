@@ -1,14 +1,14 @@
-// Module ID: 14006
-// Function ID: 14007
+// Module ID: 13996
+// Function ID: 13997
 // Name: OnlineFriendsStore
-// Dependencies: [4830, 4441, 1078, 2062, 504, 577, 2]
+// Dependencies: [4828, 4437, 1074, 2058, 504, 573, 2]
 
-// Module 14006 (OnlineFriendsStore)
+// Module 13996 (OnlineFriendsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import SetUtils from "SetUtils" /* 2062 */;
-import PresenceStore from "PresenceStore" /* 4830 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import SetUtils from "SetUtils" /* 2058 */;
+import PresenceStore from "PresenceStore" /* 4828 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
 require = fn;
 function upsert(id) {
@@ -38,7 +38,7 @@ function rebuild() {
   }
   return !SetUtils.areSetsEqual(set, set);
 }
-const StatusTypes = fn(1078).StatusTypes;
+const StatusTypes = fn(1074).StatusTypes;
 let set = new Set();
 const Store = initializeDefault.Store;
 class OnlineFriendsStore extends Store {

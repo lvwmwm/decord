@@ -1,10 +1,10 @@
-// Module ID: 12385
-// Function ID: 12386
+// Module ID: 12485
+// Function ID: 12486
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1119, 4692, 2]
+// Dependencies: [5, 32, 19, 1115, 4689, 2]
 // Exports: default
 
-// Module 12385 (useRequest)
+// Module 12485 (useRequest)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -37,7 +37,7 @@ export default function useRequest(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -54,7 +54,7 @@ export default function useRequest(arg0) {
                 closure_129_0 = closure_0;
                 c5 = 1;
                 c6 = 1;
-                return { value: "Set", done: true };
+                return { value: "PX_16", done: true };
               }
             } else if (1 === tmp9) {
               if (arg0 === 1) {
@@ -87,7 +87,7 @@ export default function useRequest(arg0) {
                 c4 = 0;
                 closure_130_1(false);
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 if (closure_129_1 instanceof tmp6(tmp4[4])) {
                   let tmp37 = closure_129_1;

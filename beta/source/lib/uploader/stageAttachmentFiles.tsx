@@ -1,10 +1,10 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8117
+// Function ID: 8118
 // Name: stageAttachmentFiles
-// Dependencies: [5, 1078, 5377, 2]
+// Dependencies: [5, 1074, 5375, 2]
 // Exports: default
 
-// Module 8122 (stageAttachmentFiles)
+// Module 8117 (stageAttachmentFiles)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -49,7 +49,7 @@ let closure_4 = async function _stageAttachmentFiles() {
     });
   }));
   await Promise.all(closure_131_3);
-  await "IconComponent";
+  await "HermesInternal";
   constants = tmp2;
   closure_131_0 = closure_0;
   let flag = closure_1;
@@ -58,9 +58,9 @@ let closure_4 = async function _stageAttachmentFiles() {
   }
   closure_131_1 = flag;
   closure_131_2 = closure_2;
-  return "Set";
+  return "PX_16";
 };
-const AbortCodes = fn(1078).AbortCodes;
+const AbortCodes = fn(1074).AbortCodes;
 const size = fn(2);
 const result = size.fileFinishedImporting("lib/uploader/stageAttachmentFiles.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 15849
-// Function ID: 15850
+// Module ID: 15853
+// Function ID: 15854
 // Name: CacheActionCreators
-// Dependencies: [5, 2045, 7755, 577, 2]
+// Dependencies: [5, 2041, 7750, 573, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 15849 (CacheActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 15853 (CacheActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CacheStore from "CacheStore" /* 7755 */;
+import CacheStore from "CacheStore" /* 7750 */;
 
 let closure_5 = async function _writeCaches(arg0, value) {
   if (1 === tmp5) {
@@ -43,16 +43,16 @@ let closure_5 = async function _writeCaches(arg0, value) {
     c4 = 3;
     return { value, done: true };
   }
-  await "IconComponent";
+  await "HermesInternal";
   closure_1 = tmp2;
   let flag = closure_0;
   if (closure_0 === undefined) {
     flag = false;
   }
   closure_129_0 = flag;
-  return "Set";
+  return "PX_16";
 };
-const ChannelLoader = fn(2045).ChannelLoader;
+const ChannelLoader = fn(2041).ChannelLoader;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/cache/CacheActionCreators.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 11673
-// Function ID: 11674
+// Module ID: 11797
+// Function ID: 11798
 // Name: MobileQuestVideoWatchCtaCopy
-// Dependencies: [5695, 7997, 1119, 11674, 2]
+// Dependencies: [5693, 7992, 1115, 11798, 2]
 // Exports: getBountyWatchCtaText, getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 11673 (MobileQuestVideoWatchCtaCopy)
-import util from "util" /* 1119 */;
-import QuestConstants from "QuestConstants" /* 5695 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7997 */;
-import VQRemainingTimeTruncationExperimentDefault from "VQRemainingTimeTruncationExperiment" /* 11674 */;
+// Module 11797 (MobileQuestVideoWatchCtaCopy)
+import util from "util" /* 1115 */;
+import QuestConstants from "QuestConstants" /* 5693 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7992 */;
+import VQRemainingTimeTruncationExperimentDefault from "VQRemainingTimeTruncationExperiment" /* 11798 */;
 import size from "module_2" /* 2 */;
 
 function formatWatchRemainingDurationShort(watchVideoTaskDetailsFromProgress, truncate) {
@@ -23,8 +23,8 @@ function formatWatchRemainingDurationShort(watchVideoTaskDetailsFromProgress, tr
     truncate = truncate.truncate;
   }
   if (truncate >= num) {
-    const intl2 = tmp(1119).intl;
-    tmp(1119).t;
+    const intl2 = tmp(1115).intl;
+    tmp(1115).t;
     const t1 = { count: null };
     const _Math = Math;
     num = truncate / num;
@@ -32,8 +32,8 @@ function formatWatchRemainingDurationShort(watchVideoTaskDetailsFromProgress, tr
     intl2.formatToPlainString(tmp4 ? t1.XTdnRd : t1.PHhTXX, t1);
     const tmp5 = tmp4 ? t1.XTdnRd : t1.PHhTXX;
   } else {
-    const intl = tmp(1119).intl;
-    const t = tmp(1119).t;
+    const intl = tmp(1115).intl;
+    const t = tmp(1115).t;
     const obj2 = { count: truncate };
     return intl.formatToPlainString(tmp4 ? t["spl/XS"] : t.rUfeQx, obj2);
   }
@@ -76,13 +76,13 @@ export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWat
   ({ minutes, seconds } = remainingTaskTime);
   if (minutes > 0) {
     if (seconds > 0) {
-      const intl3 = tmp2(1119).intl;
+      const intl3 = tmp2(1115).intl;
       const time = { minutes, seconds };
-      let formatToPlainStringResult = intl3.formatToPlainString(tmp2(1119).t["lW/66D"], time);
+      let formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t["lW/66D"], time);
     }
-    const intl4 = tmp2(1119).intl;
+    const intl4 = tmp2(1115).intl;
     const formatToPlainString = intl4.formatToPlainString;
-    const t = tmp2(1119).t;
+    const t = tmp2(1115).t;
     if (tmp) {
       const obj2 = { remainTime: formatToPlainStringResult };
       let formatToPlainStringResult1 = formatToPlainString(t["ch+yrN"], obj2);
@@ -93,12 +93,12 @@ export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWat
     return formatToPlainStringResult1;
   }
   if (minutes > 0) {
-    const intl2 = tmp2(1119).intl;
+    const intl2 = tmp2(1115).intl;
     const obj4 = { count: minutes };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1119).t["SxnF/O"], obj4);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t["SxnF/O"], obj4);
   } else {
-    const intl = tmp2(1119).intl;
+    const intl = tmp2(1115).intl;
     const obj5 = { count: seconds };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1119).t["0BZpdi"], obj5);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t["0BZpdi"], obj5);
   }
 };

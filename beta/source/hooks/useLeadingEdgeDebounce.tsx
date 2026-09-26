@@ -1,54 +1,17 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9773
+// Function ID: 9774
 // Name: useLeadingEdgeDebounce
-// Dependencies: [32, 19, 558, 568, 2]
+// Dependencies: [32, 19, 2]
+// Exports: useLeadingEdgeDebounce
 
-// Module 9768 (useLeadingEdgeDebounce)
-import c from "c" /* 568 */;
+// Module 9773 (useLeadingEdgeDebounce)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("hooks/useLeadingEdgeDebounce.tsx");
 
-export const useLeadingEdgeDebounce = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  const cResult = c.c(4);
-  noop.useRef(true);
-  const obj2 = noop;
-  closure_3 = _slicedToArray(noop.useState(arg0), 2)[1];
-  if (cResult[0] === arg1) {
-    if (cResult[1] === arg0) {
-      let tmp4 = cResult[2];
-      let tmp5 = cResult[3];
-    }
-    const effect = obj2.useEffect(tmp4, tmp5);
-    return tmp3;
-  }
-  const fn = function s() {
-    const timeout = setTimeout(() => {
-      closure_1_3(closure_0);
-      ref.current = true;
-    }, closure_1);
-    if (ref.current) {
-      closure_3(timeout);
-    }
-    ref.current = false;
-    return () => {
-      clearTimeout(closure_0);
-    };
-  };
-  const items = [arg0, arg1];
-  cResult[0] = arg1;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp5 = items;
-  tmp4 = fn;
-}) : ((arg0, arg1) => {
+export const useLeadingEdgeDebounce = (arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   noop.useRef(true);
@@ -69,4 +32,4 @@ export const useLeadingEdgeDebounce = ReactCompilerGating.isReactCompilerEnabled
     };
   }, items);
   return tmp[0];
-});
+};

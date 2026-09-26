@@ -1,16 +1,16 @@
-// Module ID: 9918
-// Function ID: 9919
+// Module ID: 9940
+// Function ID: 9941
 // Name: AudioManagerStore
-// Dependencies: [17, 1078, 4815, 9919, 12, 1235, 504, 577, 2]
+// Dependencies: [17, 1074, 4813, 9941, 12, 1231, 504, 573, 2]
 
-// Module 9918 (AudioManagerStore)
+// Module 9940 (AudioManagerStore)
 import _modDef12 from "module_12" /* 12 */;
 import _mod17 from "module_17" /* 17 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import Constants from "Constants" /* 1078 */;
-import Constants2 from "Constants" /* 4815 */;
-import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9919 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
+import Constants2 from "Constants" /* 4813 */;
+import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9941 */;
 import size from "module_2" /* 2 */;
 
 const NativeAudioManagerModule_mod = NativeAudioManagerModuleDefault;
@@ -65,7 +65,7 @@ const audioManagerStore = new AudioManagerStore(DispatcherDefault, {
     if (context.context !== MediaEngineContextTypes.DEFAULT) {
       return false;
     } else {
-      state = context.state;
+      const state = context.state;
       if (RTCConnectionStates.CONNECTING === state) {
         c9 = true;
         const result = NativeAudioManagerModuleDefault.setCommunicationModeOn(true);
@@ -78,11 +78,11 @@ const audioManagerStore = new AudioManagerStore(DispatcherDefault, {
             const obj3 = { extra: null };
             const obj4 = { deviceString: tmp10 };
             obj3.extra = obj4;
-            tmp4(1235).captureMessage("AudioManagerStore received a string for an android audio device", obj3);
-            const tmp4Result3 = tmp4(1235);
+            tmp4(1231).captureMessage("AudioManagerStore received a string for an android audio device", obj3);
+            const tmp4Result3 = tmp4(1231);
           } else {
-            tmp4(9919).setActiveAudioDevice(tmp10);
-            const tmp4Result4 = tmp4(9919);
+            tmp4(9941).setActiveAudioDevice(tmp10);
+            const tmp4Result4 = tmp4(9941);
           }
           tmp4Result = tmp4(12);
         }
@@ -101,11 +101,11 @@ const audioManagerStore = new AudioManagerStore(DispatcherDefault, {
         const obj2 = { extra: null };
         const obj3 = { deviceString: device };
         obj2.extra = obj3;
-        tmp(1235).captureMessage("AudioManagerStore received a string for an android audio device", obj2);
-        const tmpResult = tmp(1235);
+        tmp(1231).captureMessage("AudioManagerStore received a string for an android audio device", obj2);
+        const tmpResult = tmp(1231);
       } else {
-        tmp(9919).setActiveAudioDevice(device);
-        const tmpResult2 = tmp(9919);
+        tmp(9941).setActiveAudioDevice(device);
+        const tmpResult2 = tmp(9941);
       }
       obj = _modDef12;
     }

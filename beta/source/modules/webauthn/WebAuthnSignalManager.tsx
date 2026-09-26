@@ -1,12 +1,12 @@
-// Module ID: 18298
-// Function ID: 18299
+// Module ID: 18289
+// Function ID: 18290
 // Name: WebAuthnSignalManager
-// Dependencies: [5, 502, 7397, 6869, 2]
+// Dependencies: [5, 502, 7395, 6871, 2]
 
-// Module 18298 (WebAuthnSignalManager)
+// Module 18289 (WebAuthnSignalManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 class WebAuthnSignalManager extends tmp2 {
   constructor() {
@@ -29,7 +29,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -57,7 +57,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
           return obj;
         } else {
           v3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v3 = tmp;
@@ -79,7 +79,7 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -108,7 +108,7 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
           return obj;
         } else {
           v3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         v3 = tmp;
@@ -130,7 +130,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -158,7 +158,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
           return obj;
         } else {
           v3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v3 = tmp;

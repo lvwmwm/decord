@@ -1,13 +1,13 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16028
+// Function ID: 16029
 // Name: StringSelectActionComponent
-// Dependencies: [19, 21, 5014, 8418, 38, 1982, 16025, 4757, 11986, 1984, 2]
+// Dependencies: [19, 21, 5012, 8413, 38, 1978, 16029, 4755, 12104, 1980, 2]
 // Exports: default
 
-// Module 16024 (StringSelectActionComponent)
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5014 */;
+// Module 16028 (StringSelectActionComponent)
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5012 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/interaction_components/native
 export default function StringSelectActionComponent(type) {
   _require = type;
   type = type.type;
-  options = type.options;
+  const options = type.options;
   const items = [options];
   const selectPlaceholder = require("InteractionComponentUtils").getSelectPlaceholder(type);
   const memo = componentStateContext.useMemo(() => {
@@ -44,7 +44,7 @@ export default function StringSelectActionComponent(type) {
     tmp8 = obj4;
   }
   const componentState = componentStateContext.useComponentState(type, tmp8);
-  state = componentState.state;
+  const state = componentState.state;
   const executeStateUpdate = componentState.executeStateUpdate;
   const items1 = [options, type, state];
   const customId = componentStateContext.modal.customId;
@@ -85,7 +85,7 @@ export default function StringSelectActionComponent(type) {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { selectionActionComponent, labelComponent, channelId: componentStateContext.channelId, containerId: customId, onSubmit: executeStateUpdate, allowEmpty: null };
     const combined = "StringSelectComponentActionSheet:" + customId;
-    const tmp = asyncRequireImpl(11986, dependencyMap.paths);
+    const tmp = asyncRequireImpl(12104, dependencyMap.paths);
     obj2.allowEmpty = InteractionComponentUtils.canSelectBeEmpty(selectionActionComponent, "modal");
     obj.openLazy(tmp, combined, obj2);
   };

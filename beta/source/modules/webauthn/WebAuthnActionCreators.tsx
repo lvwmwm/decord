@@ -1,14 +1,14 @@
-// Module ID: 6868
-// Function ID: 6869
+// Module ID: 6870
+// Function ID: 6871
 // Name: WebAuthnActionCreators
-// Dependencies: [5, 1078, 1275, 577, 4983, 1339, 2]
+// Dependencies: [5, 1074, 1271, 573, 4981, 1335, 2]
 // Exports: clearWebAuthnRegisterTrigger, deleteWebAuthnCredential, editWebAuthnCredential, fetchWebAuthnConditionalChallenge, fetchWebAuthnCredentials, fetchWebAuthnPasswordlessChallenge, finishRegisterWebAuthnCredential, startRegisterWebAuthnCredential, triggerWebAuthnRegister
 
-// Module 6868 (WebAuthnActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1339 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4983 */;
+// Module 6870 (WebAuthnActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1335 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4981 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -53,7 +53,7 @@ let closure_8 = async function _editWebAuthnCredential(arg0, name) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -108,7 +108,7 @@ let closure_8 = async function _editWebAuthnCredential(arg0, name) {
             const obj2 = closure_131_1(closure_131_2[3]);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp22) {
         c5 = tmp;
@@ -139,7 +139,7 @@ let closure_10 = async function _finishRegisterWebAuthnCredential(name, ticket, 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -181,7 +181,7 @@ let closure_10 = async function _finishRegisterWebAuthnCredential(name, ticket, 
           const obj11 = { type: "MFA_ENABLE_SUCCESS", codes: closure_131_0.body.backup_codes };
           closure_132_1(closure_132_2[3]).dispatch(obj11);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c6 = tmp;
@@ -190,7 +190,7 @@ let closure_10 = async function _finishRegisterWebAuthnCredential(name, ticket, 
     }
   })();
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/webauthn/WebAuthnActionCreators.tsx");
 

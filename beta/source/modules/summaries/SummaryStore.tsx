@@ -1,26 +1,26 @@
-// Module ID: 10375
-// Function ID: 10376
+// Module ID: 11637
+// Function ID: 11638
 // Name: SummaryStore
-// Dependencies: [32, 4706, 10108, 2045, 2067, 4805, 2099, 4971, 1376, 10376, 10109, 504, 11, 1095, 10377, 577, 10378, 12, 2]
+// Dependencies: [32, 4703, 10129, 2041, 2063, 4803, 2095, 4969, 1372, 11638, 10130, 504, 11, 1091, 11639, 573, 11640, 12, 2]
 
-// Module 10375 (SummaryStore)
+// Module 11637 (SummaryStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import sortByMatchScore from "sortByMatchScore" /* 10109 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10377 */;
-import Summary from "Summary" /* 10378 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import sortByMatchScore from "sortByMatchScore" /* 10130 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11639 */;
+import Summary from "Summary" /* 11640 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4706 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 10108 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import ReadStateStore from "ReadStateStore" /* 4805 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
-import UserStore from "UserStore" /* 1376 */;
+import ExperimentStore from "ExperimentStore" /* 4703 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 10129 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import ReadStateStore from "ReadStateStore" /* 4803 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function handleQuickSwitcherUpdate() {
@@ -34,7 +34,7 @@ function handleQuickSwitcherUpdate() {
   });
   closure_24 = found.map((record) => record.record.id);
 }
-const SUMMARY_POLL_INTERVAL = fn(10376).SUMMARY_POLL_INTERVAL;
+const SUMMARY_POLL_INTERVAL = fn(11638).SUMMARY_POLL_INTERVAL;
 let obj = { FETCHING: "fetching", OK: "ok", ERROR: "error" };
 const dependencyMap2 = {};
 const dependencyMap3 = {};
@@ -103,11 +103,11 @@ prototype["findSummary"] = function findSummary(channelId, summaryId) {
   }
   return found;
 };
-prototype["selectedSummary"] = function selectedSummary(id) {
+prototype["selectedSummary"] = function selectedSummary(channel_id) {
   let findSummaryResult = null;
   if (null != obj) {
     findSummaryResult = null;
-    if (obj.channelId === id) {
+    if (obj.channelId === channel_id) {
       findSummaryResult = null;
       if (null != obj.summaryId) {
         let summaryId;
@@ -115,7 +115,7 @@ prototype["selectedSummary"] = function selectedSummary(id) {
         if (obj != null) {
           summaryId = obj.summaryId;
         }
-        findSummaryResult = this.findSummary(id, summaryId);
+        findSummaryResult = this.findSummary(channel_id, summaryId);
       }
     }
   }
@@ -564,10 +564,10 @@ obj2 = {
       const tmp = closure_7(item, 2);
       const first = tmp[0];
       obj = error(12);
-      const chainResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(10378).createSummaryFromServer(item, first)));
-      const sortByResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(10378).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId));
-      const reversed = error(12).chain(tmp[1].map((item) => lastReceivedAt(10378).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId)).takeRight(75).reverse();
-      const takeRightResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(10378).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId)).takeRight(75);
+      const chainResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(11640).createSummaryFromServer(item, first)));
+      const sortByResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(11640).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId));
+      const reversed = error(12).chain(tmp[1].map((item) => lastReceivedAt(11640).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId)).takeRight(75).reverse();
+      const takeRightResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(11640).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId)).takeRight(75);
       acc[first] = reversed.filter((item) => Object.keys(item).length > 0).value();
       return acc;
     }, {});

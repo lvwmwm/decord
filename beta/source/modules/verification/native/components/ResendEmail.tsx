@@ -1,351 +1,33 @@
-// Module ID: 6862
-// Function ID: 6863
+// Module ID: 6864
+// Function ID: 6865
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 2039, 1376, 1078, 21, 4790, 558, 568, 1488, 38, 504, 6863, 5868, 6864, 4490, 1119, 5939, 4786, 5220, 2]
+// Dependencies: [32, 19, 17, 2035, 1372, 1074, 21, 4788, 1484, 504, 38, 6865, 5870, 5941, 4784, 1115, 5218, 6866, 4486, 2]
+// Exports: default
 
-// Module 6862 (ResendEmail)
-import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5868 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
+// Module 6864 (ResendEmail)
+import util from "util" /* 1115 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5870 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const VerificationModalScenes = fn(1078).VerificationModalScenes;
+const VerificationModalScenes = fn(1074).VerificationModalScenes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_11 = createStyles.createStyles({ container: { flex: 1, padding: 16, justifyContent: "center", alignItems: "center" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, resend: { marginTop: 16, width: "100%" }, change: { marginTop: 8, width: "100%" } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/verification/native/components/ResendEmail.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = navigation(568).c(37);
-  const tmp4 = closure_11();
-  let obj = navigation(568);
-  navigation = navigation(1488).useNavigation();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function v() {
-      currentUser = currentUser.getCurrentUser();
-      verified(38)(null != currentUser, "ResendEmail: user cannot be undefined");
-      return currentUser;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const obj2 = navigation(1488);
-  const stateFromStores = navigation(504).useStateFromStores(tmp6, tmp7);
-  ({ email, verified } = stateFromStores);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserRequiredActionStore];
-    const fn2 = function p() {
-      return action.getAction();
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    let tmp11 = fn2;
-    let tmp10 = items1;
-  } else {
-    tmp10 = cResult[2];
-    tmp11 = cResult[3];
-  }
-  const tmpResult = navigation(504);
-  const stateFromStores1 = navigation(504).useStateFromStores(tmp10, tmp11);
-  if (cResult[4] !== stateFromStores1) {
-    const result = verified(6863).isEmailReverification(stateFromStores1);
-    cResult[4] = stateFromStores1;
-    cResult[5] = result;
-    const obj5 = verified(6863);
-  }
-  const tmpResult2 = navigation(504);
-  [tmp18, dependencyMap] = ref(noop.useState(false), 2);
-  const tmp17 = ref(noop.useState(false), 2);
-  if (cResult[6] !== verified) {
-    class A {
-      constructor() {
-        tmp = verified;
-        if (verified) {
-          tmp2 = closure_3;
-          flag = false;
-          tmp = false === closure_3.current;
-        }
-        if (tmp) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          obj = closure_1(closure_2[14]);
-          closeResult = obj.close();
-        }
-        return;
-      }
-    }
-    const items2 = [verified];
-    cResult[6] = verified;
-    cResult[7] = A;
-    cResult[8] = items2;
-    let tmp20 = items2;
-    const tmp19 = A;
-  } else {
-    class A {
-      constructor() {
-        tmp = verified;
-        if (verified) {
-          tmp2 = closure_3;
-          flag = false;
-          tmp = false === closure_3.current;
-        }
-        if (tmp) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          obj = closure_1(closure_2[14]);
-          closeResult = obj.close();
-        }
-        return;
-      }
-    }
-    tmp20 = cResult[8];
-  }
-  const effect = obj6.useEffect(tmp19, tmp20);
-  if (cResult[9] !== verified) {
-    class O {
-      constructor() {
-        closure_3.current = verified;
-        return;
-      }
-    }
-    cResult[9] = verified;
-    cResult[10] = O;
-    const tmp22 = O;
-  } else {
-    class O {
-      constructor() {
-        closure_3.current = verified;
-        return;
-      }
-    }
-  }
-  const effect1 = obj6.useEffect(tmp22);
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-    cResult[11] = L;
-  } else {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-  }
-  if (cResult[12] !== navigation) {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-    cResult[12] = navigation;
-    cResult[13] = tmp26;
-  } else {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-  }
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-    const tmp28 = closure_9(tmp(5939).EnvelopeOpenSpotIllustration, { scale: 0.75 });
-    cResult[14] = tmp28;
-  } else {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-  }
-  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-    const stringResult = obj7.string(tmp(1119).t.fUtddV);
-    cResult[15] = stringResult;
-    const tmp29 = stringResult;
-  } else {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-  }
-  if (cResult[16] !== tmp4.title) {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-    let obj3 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp29 };
-    const tmp32 = closure_9(tmp(4786).Text, obj3);
-    cResult[16] = tmp4.title;
-    cResult[17] = tmp32;
-  } else {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-  }
-  if (cResult[18] === email) {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-  }
-  let intl = tmp(1119).intl;
-  if (tmp18) {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-    const obj4 = { email };
-    let tmp33Result = tmp35(tmp(1119).t.JqLgQL, obj4);
-  } else {
-    class L {
-      constructor() {
-        tmp = closure_2(true);
-        obj = closure_1(closure_2[15]);
-        verifyResendResult = obj.verifyResend();
-        obj2 = closure_1(closure_2[16]);
-        obj1 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-        intl = closure_0(closure_2[17]).intl;
-        obj1.content = intl.string(closure_0(closure_2[17]).t["84yeoz"]);
-        openResult = obj2.open(obj1);
-        return;
-      }
-    }
-    tmp33Result = tmp33(tmp(1119).t.tSXg8O);
-  }
-  cResult[18] = email;
-  cResult[19] = tmp18;
-  cResult[20] = tmp33Result;
-}) : (() => {
+export default function ResendEmail() {
   let tmp = closure_11();
-  navigation = navigation(1488).useNavigation();
-  let obj = navigation(1488);
+  navigation = navigation(1484).useNavigation();
+  let obj = navigation(1484);
   const items = [UserStore];
   const stateFromStores = navigation(504).useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
@@ -357,11 +39,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items1 = [UserRequiredActionStore];
   const stateFromStores1 = navigation(504).useStateFromStores(items1, () => action.getAction());
   let obj3 = navigation(504);
-  const result = verified(6863).isEmailReverification(stateFromStores1);
+  const result = verified(6865).isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
-  const obj4 = verified(6863);
-  [tmp10, dependencyMap] = ref(noop.useState(false), 2);
-  const tmp9 = ref(noop.useState(false), 2);
+  const obj4 = verified(6865);
+  [tmp10, dependencyMap] = noop.useState(false);
+  _slicedToArray = noop.useRef(verified);
   const items2 = [verified];
   const effect = noop.useEffect(() => {
     let tmp = verified;
@@ -380,25 +62,25 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const callback = noop.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  const items4 = [closure_9(navigation(5939).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [closure_9(navigation(5941).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  let intl = navigation(1119).intl;
-  obj6.children = intl.string(navigation(1119).t.fUtddV);
-  items4[1] = closure_9(navigation(4786).Text, obj6);
+  let intl = navigation(1115).intl;
+  obj6.children = intl.string(navigation(1115).t.fUtddV);
+  items4[1] = closure_9(navigation(4784).Text, obj6);
   const obj7 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = navigation(1119).intl;
+  const intl2 = navigation(1115).intl;
   if (tmp10) {
     const obj8 = { email: stateFromStores.email };
-    let formatResult = intl2.format(tmp2(1119).t.JqLgQL, obj8);
+    let formatResult = intl2.format(tmp2(1115).t.JqLgQL, obj8);
   } else {
-    formatResult = intl2.string(tmp2(1119).t.tSXg8O);
+    formatResult = intl2.string(tmp2(1115).t.tSXg8O);
   }
   obj7.children = formatResult;
-  items4[2] = closure_9(navigation(4786).Text, obj7);
+  items4[2] = closure_9(navigation(4784).Text, obj7);
   const obj9 = { style: tmp.resend, children: null };
   const obj10 = { text: null, variant: "primary", onPress: null, grow: true };
-  const intl3 = tmp2(1119).intl;
-  obj10.text = intl3.string(navigation(1119).t.WnX4J2);
+  const intl3 = tmp2(1115).intl;
+  obj10.text = intl3.string(navigation(1115).t.WnX4J2);
   obj10.onPress = function onPress() {
     dependencyMap(true);
     AuthenticationActionCreatorsDefault.verifyResend();
@@ -407,18 +89,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj3.content = intl.string(util.t["84yeoz"]);
     ToastActionCreatorsDefault.open(obj3);
   };
-  obj9.children = closure_9(navigation(5220).Button, obj10);
+  obj9.children = closure_9(navigation(5218).Button, obj10);
   items4[3] = closure_9(View, obj9);
   if (!result) {
     const obj11 = { style: tmp.change, children: null };
     const obj12 = { text: null, variant: "secondary", onPress: null, grow: true };
-    const intl4 = tmp2(1119).intl;
-    obj12.text = intl4.string(tmp2(1119).t.Vm8akB);
+    const intl4 = tmp2(1115).intl;
+    obj12.text = intl4.string(tmp2(1115).t.Vm8akB);
     obj12.onPress = callback;
-    obj11.children = tmp16(tmp2(5220).Button, obj12);
+    obj11.children = tmp16(tmp2(5218).Button, obj12);
     tmp16Result = tmp16(tmp15, obj11);
   }
   items4[4] = tmp16Result;
   obj5.children = items4;
   return closure_10(View, obj5);
-});
+};

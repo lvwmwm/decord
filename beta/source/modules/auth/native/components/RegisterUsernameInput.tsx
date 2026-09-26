@@ -1,144 +1,21 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16306
+// Function ID: 16307
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 16290, 21, 4790, 4529, 558, 568, 15005, 7208, 580, 5218, 4786, 1119, 16308, 1368, 6878, 2]
+// Dependencies: [109, 32, 19, 16280, 21, 4788, 4524, 15009, 5216, 6884, 576, 4784, 1115, 16298, 6880, 1364, 2]
+// Exports: RegisterUsernameInput
 
-// Module 16316 (RegisterUsernameInput)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15005 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16308 */;
+// Module 16306 (RegisterUsernameInput)
+import nativeDefault from "native" /* 576 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15009 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16298 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = ["username"];
-let closure_4 = ["username"];
-const RegistrationUIStore = fn(16290);
-({ setRegistrationErrors: closure_8, useRegistrationUIStore: closure_9 } = RegistrationUIStore);
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4790);
-let closure_13 = createStyles.createStyles({ status: { width: "90%" }, inputHint: { width: "100%" } });
-let obj2 = { entering: null, exiting: null };
-const FadeIn = fn(4529).FadeIn;
-obj2.entering = FadeIn.duration(300);
-const FadeOut = fn(4529).FadeOut;
-obj2.exiting = FadeOut.duration(300);
-let obj3 = { layout: null };
-const LinearTransition = fn(4529).LinearTransition;
-const Easing = fn(4529).Easing;
-obj3.layout = LinearTransition.easing(Easing.inOut(fn(4529).Easing.quad)).duration(300);
-let ReactCompilerGating = fn(558);
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(12);
+function UsernameStatusMessage(arg0) {
   ({ usernameStatus, isUsernameFocused } = arg0);
-  const tmp4 = closure_13();
-  let type;
-  if (usernameStatus != null) {
-    type = usernameStatus.type;
-  }
-  if (type === UniqueUsernamesTypes.NameValidationState.ERROR) {
-    const _Symbol2 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      obj2 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-      const tmp35 = v65535(tmp(7208).CircleErrorIcon, obj2);
-      cResult[0] = tmp35;
-      let first = tmp35;
-    } else {
-      first = cResult[0];
-    }
-    if (cResult[1] === tmp4.status) {
-      if (cResult[2] === usernameStatus.message) {
-        let tmp36 = cResult[3];
-      }
-      return tmp36;
-    }
-    obj3 = { direction: "horizontal", spacing: 4, align: "flex-start", children: null };
-    const items = [first, ];
-    const obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp4.status };
-    const merged = Object.assign(obj2);
-    const merged1 = Object.assign(obj3);
-    obj4.animated = true;
-    obj4.children = usernameStatus.message;
-    items[1] = v65535(tmp(4786).Text, obj4);
-    obj3.children = items;
-    const tmp45 = closure_1_11(tmp(5218).Stack, obj3);
-    cResult[1] = tmp4.status;
-    cResult[2] = usernameStatus.message;
-    cResult[3] = tmp45;
-    tmp36 = tmp45;
-  } else {
-    if (isUsernameFocused) {
-      let type1;
-      if (usernameStatus != null) {
-        type1 = usernameStatus.type;
-      }
-      if (type1 === tmp(15005).NameValidationState.AVAILABLE) {
-        if (cResult[4] !== usernameStatus.message) {
-          const obj5 = { variant: "text-xs/medium", color: "text-feedback-positive", children: usernameStatus.message };
-          const tmp21 = v65535(tmp(4786).Text, obj5);
-          cResult[4] = usernameStatus.message;
-          cResult[5] = tmp21;
-          let tmp19 = tmp21;
-        } else {
-          tmp19 = cResult[5];
-        }
-        if (cResult[6] === tmp4.status) {
-          if (cResult[7] === tmp19) {
-            let tmp22 = cResult[8];
-          }
-          return tmp22;
-        }
-        const obj6 = {};
-        const merged2 = Object.assign(obj2);
-        const merged3 = Object.assign(obj3);
-        obj6.style = tmp4.status;
-        obj6.variant = "text-xs/medium";
-        obj6.animated = true;
-        obj6.children = tmp19;
-        const tmp30 = v65535(tmp(4786).Text, obj6);
-        cResult[6] = tmp4.status;
-        cResult[7] = tmp19;
-        cResult[8] = tmp30;
-        tmp22 = tmp30;
-      }
-    }
-    if (isUsernameFocused) {
-      const _Symbol = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1119).intl;
-        const stringResult = intl.string(tmp(1119).t.y7LSyU);
-        cResult[9] = stringResult;
-        let tmp8 = stringResult;
-      } else {
-        tmp8 = cResult[9];
-      }
-      if (cResult[10] !== tmp4.inputHint) {
-        const obj7 = {};
-        const merged4 = Object.assign(obj2);
-        const merged5 = Object.assign(obj3);
-        obj7.style = tmp4.inputHint;
-        obj7.variant = "text-xs/medium";
-        obj7.color = "text-muted";
-        obj7.animated = true;
-        obj7.children = tmp8;
-        const tmp18 = v65535(tmp(4786).Text, obj7);
-        cResult[10] = tmp4.inputHint;
-        cResult[11] = tmp18;
-        let tmp10 = tmp18;
-      } else {
-        tmp10 = cResult[11];
-      }
-      return tmp10;
-    } else {
-      return null;
-    }
-  }
-}) : ((arg0) => {
-  ({ usernameStatus, isUsernameFocused } = arg0);
-  const tmp = closure_13();
+  const tmp = closure_12();
   let type;
   if (usernameStatus != null) {
     type = usernameStatus.type;
@@ -146,22 +23,22 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (type === UniqueUsernamesTypes.NameValidationState.ERROR) {
     obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", children: null };
     obj3 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-    const items = [v65535(tmp3(7208).CircleErrorIcon, obj3), ];
+    const items = [React7(tmp3(6884).CircleErrorIcon, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp.status };
     const merged = Object.assign(obj2);
     const merged1 = Object.assign(obj3);
     obj4.animated = true;
     obj4.children = usernameStatus.message;
-    items[1] = v65535(tmp3(4786).Text, obj4);
+    items[1] = React7(tmp3(4784).Text, obj4);
     obj2.children = items;
-    let tmp6 = closure_1_11(tmp3(5218).Stack, obj2);
+    let tmp6 = closure_1_10(tmp3(5216).Stack, obj2);
   } else {
     if (isUsernameFocused) {
       let type1;
       if (usernameStatus != null) {
         type1 = usernameStatus.type;
       }
-      if (type1 === tmp3(15005).NameValidationState.AVAILABLE) {
+      if (type1 === tmp3(15009).NameValidationState.AVAILABLE) {
         const obj5 = {};
         const merged2 = Object.assign(obj2);
         const merged3 = Object.assign(obj3);
@@ -169,8 +46,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj5.variant = "text-xs/medium";
         obj5.animated = true;
         const obj6 = { variant: "text-xs/medium", color: "text-feedback-positive", children: usernameStatus.message };
-        obj5.children = v65535(tmp3(4786).Text, obj6);
-        tmp6 = v65535(tmp3(4786).Text, obj5);
+        obj5.children = React7(tmp3(4784).Text, obj6);
+        tmp6 = React7(tmp3(4784).Text, obj5);
       }
     }
     tmp6 = null;
@@ -182,220 +59,33 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj.variant = "text-xs/medium";
       obj.color = "text-muted";
       obj.animated = true;
-      const intl = tmp3(1119).intl;
-      obj.children = intl.string(tmp3(1119).t.y7LSyU);
-      tmp6 = v65535(tmp3(4786).Text, obj);
+      const intl = tmp3(1115).intl;
+      obj.children = intl.string(tmp3(1115).t.y7LSyU);
+      tmp6 = React7(tmp3(4784).Text, obj);
     }
   }
   return tmp6;
-});
-ReactCompilerGating = fn(558);
-const easingResult = LinearTransition.easing(Easing.inOut(fn(4529).Easing.quad));
+}
+let closure_3 = ["username"];
+const RegistrationUIStore = fn(16280);
+({ setRegistrationErrors: closure_7, useRegistrationUIStore: closure_8 } = RegistrationUIStore);
+const jsxProd = fn(21);
+({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
+const createStyles = fn(4788);
+let closure_12 = createStyles.createStyles({ status: { width: "90%" }, inputHint: { width: "100%" } });
+let obj2 = { entering: null, exiting: null };
+const FadeIn = fn(4524).FadeIn;
+obj2.entering = FadeIn.duration(300);
+const FadeOut = fn(4524).FadeOut;
+obj2.exiting = FadeOut.duration(300);
+let obj3 = { layout: null };
+const LinearTransition = fn(4524).LinearTransition;
+const Easing = fn(4524).Easing;
+obj3.layout = LinearTransition.easing(Easing.inOut(fn(4524).Easing.quad)).duration(300);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/RegisterUsernameInput.tsx");
 
-export const RegisterUsernameInput = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = setUsername(568).c(23);
-  ({ username, setUsername } = arg0);
-  ({ usernameStatus, onSubmitEditing, submitBehavior, autoFocus } = arg0);
-  const ref = noop.useRef(null);
-  if (autoFocus == null) {
-    autoFocus = false;
-  }
-  if (cResult[0] !== autoFocus) {
-    obj3 = { inputRef: ref, enabled: autoFocus };
-    cResult[0] = autoFocus;
-    cResult[1] = obj3;
-    let tmp5 = obj3;
-  } else {
-    tmp5 = cResult[1];
-  }
-  useFocusRefOnNavigationDefault(tmp5);
-  const obj = setUsername(568);
-  [r10034, importDefault] = noop.useState(true);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor(arg0) {
-        return arg0.errors;
-      }
-    }
-    cResult[2] = A;
-    const tmp8 = A;
-  } else {
-    class A {
-      constructor(arg0) {
-        return arg0.errors;
-      }
-    }
-  }
-  const tmp9 = closure_9(tmp8);
-  dependencyMap = tmp9;
-  if (cResult[3] === tmp9) {
-    class A {
-      constructor(arg0) {
-        return arg0.errors;
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-      cResult[6] = H;
-      const tmp11 = H;
-    } else {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-      cResult[7] = tmp13;
-      const tmp12 = tmp13;
-    } else {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-    }
-    const _Symbol3 = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-      const stringResult = obj4.string(tmp(1119).t.IEpCBQ);
-      const intl = tmp(1119).intl;
-      const stringResult1 = intl.string(tmp(1119).t["47dcUZ"]);
-      cResult[8] = stringResult;
-      cResult[9] = stringResult1;
-      let tmp15 = stringResult1;
-      const tmp14 = stringResult;
-    } else {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-      tmp15 = cResult[9];
-    }
-    const _Symbol4 = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-      const isAndroidResult = obj5.isAndroid();
-      cResult[10] = isAndroidResult;
-      const tmp18 = isAndroidResult;
-    } else {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-    }
-    if (usernameStatus != null) {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-    }
-    if (undefined === tmp(15005).NameValidationState.ERROR) {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-    }
-    if (cResult[11] === tmp10) {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-    }
-    const obj6 = { ref, label: tmp14, accessibilityHint: tmp15, onChange: tmp10, autoCorrect: false, secureTextEntry: tmp18, keyboardType: null, value: null, onSubmitEditing: null, returnKeyType: "next", autoComplete: "username", textContentType: "username", autoCapitalize: "none", onFocus: null, onBlur: null, clearable: true, status: null, submitBehavior: null };
-    const TextInput = tmp(6878).TextInput;
-    if (tmpResult.isAndroid()) {
-      class H {
-        constructor() {
-          tmp = closure_1(true);
-          return;
-        }
-      }
-    }
-    obj6.keyboardType = "default";
-    obj6.value = username;
-    obj6.onSubmitEditing = onSubmitEditing;
-    obj6.onFocus = tmp11;
-    obj6.onBlur = tmp12;
-    obj6.status = undefined;
-    obj6.submitBehavior = submitBehavior;
-    class L {
-      constructor(arg0) {
-        tmp = closure_2;
-        if (null != closure_2.username) {
-          username = tmp.username;
-          tmp2 = closure_5;
-          tmp3 = closure_3;
-          tmp4 = setRegistrationErrors;
-          tmp5 = setRegistrationErrors(closure_5(tmp, closure_3));
-        }
-        tmp6 = setUsername(arg0.toLowerCase());
-        return;
-      }
-    }
-    cResult[11] = tmp10;
-    cResult[12] = onSubmitEditing;
-    cResult[13] = submitBehavior;
-    cResult[14] = undefined;
-    cResult[15] = username;
-    cResult[16] = tmp24;
-    tmpResult = tmp(1368);
-  }
-  class L {
-    constructor(arg0) {
-      tmp = closure_2;
-      if (null != closure_2.username) {
-        username = tmp.username;
-        tmp2 = closure_5;
-        tmp3 = closure_3;
-        tmp4 = setRegistrationErrors;
-        tmp5 = setRegistrationErrors(closure_5(tmp, closure_3));
-      }
-      tmp6 = setUsername(arg0.toLowerCase());
-      return;
-    }
-  }
-  cResult[3] = tmp9;
-  cResult[4] = setUsername;
-  cResult[5] = L;
-}) : ((setUsername) => {
+export const RegisterUsernameInput = function RegisterUsernameInput(setUsername) {
   setUsername = setUsername.setUsername;
   ({ usernameStatus, autoFocus } = setUsername);
   importDefault = undefined;
@@ -410,14 +100,14 @@ export const RegisterUsernameInput = ReactCompilerGating.isReactCompilerEnabled(
   useFocusRefOnNavigationDefault(obj2);
   const tmp5 = _slicedToArray(noop.useState(true), 2);
   importDefault = tmp6;
-  const tmp7 = closure_9((errors) => errors.errors);
+  const tmp7 = closure_8((errors) => errors.errors);
   dependencyMap = tmp7;
   const items = [tmp7, setUsername];
   const items1 = [tmp5[1]];
   const callback = obj.useCallback((str) => {
     if (null != user.username) {
       const username = tmp.username;
-      closure_2_8(_objectWithoutProperties(tmp, closure_4));
+      React5(_objectWithoutProperties(tmp, closure_3));
     }
     setUsername(str.toLowerCase());
   }, items);
@@ -429,16 +119,16 @@ export const RegisterUsernameInput = ReactCompilerGating.isReactCompilerEnabled(
     closure_1(false);
   }, items2);
   obj3 = { ref, label: null, accessibilityHint: null, onChange: null, autoCorrect: false, secureTextEntry: null, keyboardType: null, value: null, onSubmitEditing: null, returnKeyType: "next", autoComplete: "username", textContentType: "username", autoCapitalize: "none", onFocus: null, onBlur: null, clearable: true, status: null, submitBehavior: null };
-  const intl = setUsername(1119).intl;
-  obj3.label = intl.string(setUsername(1119).t.IEpCBQ);
-  const intl2 = setUsername(1119).intl;
-  obj3.accessibilityHint = intl2.string(setUsername(1119).t["47dcUZ"]);
+  const intl = setUsername(1115).intl;
+  obj3.label = intl.string(setUsername(1115).t.IEpCBQ);
+  const intl2 = setUsername(1115).intl;
+  obj3.accessibilityHint = intl2.string(setUsername(1115).t["47dcUZ"]);
   obj3.onChange = callback;
-  const tmp11 = closure_11;
-  const tmp12 = closure_12;
+  const tmp11 = closure_10;
+  const tmp12 = closure_11;
   const tmp14 = setUsername;
-  obj3.secureTextEntry = setUsername(1368).isAndroid();
-  const obj4 = setUsername(1368);
+  obj3.secureTextEntry = setUsername(1364).isAndroid();
+  const obj4 = setUsername(1364);
   let str = "default";
   if (obj5.isAndroid()) {
     str = "visible-password";
@@ -453,13 +143,13 @@ export const RegisterUsernameInput = ReactCompilerGating.isReactCompilerEnabled(
     type = usernameStatus.type;
   }
   let str2;
-  if (type === tmp14(15005).NameValidationState.ERROR) {
+  if (type === tmp14(15009).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: null };
   obj3.status = str2;
   obj3.submitBehavior = submitBehavior;
-  const items3 = [closure_10(setUsername(6878).TextInput, obj3), closure_10(closure_16, { usernameStatus, isUsernameFocused: tmp5[0] })];
+  const items3 = [closure_9(setUsername(6880).TextInput, obj3), closure_9(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
   obj6.children = items3;
   return tmp11(tmp12, obj6);
-});
+};

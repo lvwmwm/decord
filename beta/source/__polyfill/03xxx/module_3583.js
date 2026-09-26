@@ -1,9 +1,9 @@
 // Module ID: 3583
 // Function ID: 3584
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 3583
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_player", scales: [1], hash: "81026198b198a840d393b2692f40aeb8", name: "VideoPlayer.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "e1972cbbbeef184bbeb52e7d9a89759e", name: "da.messages.e1972cbbbeef184bbeb52e7d9a89759e.compiled.messages", type: "jsona" });

@@ -1,38 +1,91 @@
 // Module ID: 771
 // Function ID: 772
 // Dependencies: []
-// Exports: addAutoIpAddressToSession, addAutoIpAddressToUser
+// Exports: debounce
 
 // Module 771
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 
-export const addAutoIpAddressToSession = function addAutoIpAddressToSession(attrs) {
-  if ("aggregates" in attrs) {
-    attrs = attrs.attrs;
-    let ip_address;
-    if (attrs != null) {
-      ip_address = attrs.ip_address;
+export const debounce = function debounce(arg0, arg1, maxWait) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  function invokeFunc() {
+    if (undefined !== c3) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(c3);
     }
-    if (undefined === ip_address) {
-      const obj = {};
-      const merged = Object.assign(attrs.attrs);
-      obj.ip_address = "{{auto}}";
-      attrs.attrs = obj;
+    if (undefined !== c4) {
+      const _clearTimeout2 = clearTimeout;
+      clearTimeout(c4);
     }
-  } else if (undefined === attrs.ipAddress) {
-    attrs.ipAddress = "{{auto}}";
+    c4 = undefined;
+    c3 = undefined;
+    const tmp7 = closure_0();
+    closure_2 = tmp7;
+    return tmp7;
   }
-};
-export const addAutoIpAddressToUser = function addAutoIpAddressToUser(user) {
-  user = user.user;
-  let ip_address;
-  if (user != null) {
-    ip_address = user.ip_address;
+  maxWait = undefined;
+  if (maxWait != null) {
+    maxWait = maxWait.maxWait;
   }
-  if (undefined === ip_address) {
-    const obj = {};
-    const merged = Object.assign(user.user);
-    obj.ip_address = "{{auto}}";
-    user.user = obj;
+  if (maxWait) {
+    const _Math = Math;
+    const num = Math.max(maxWait.maxWait, arg1);
   }
+  let setTimeoutImpl;
+  if (maxWait != null) {
+    setTimeoutImpl = maxWait.setTimeoutImpl;
+  }
+  if (!setTimeoutImpl) {
+    setTimeoutImpl = setTimeout;
+  }
+  function debounced() {
+    if (c3) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(c3);
+    }
+    c3 = setTimeoutImpl(invokeFunc, closure_1);
+    let tmp7 = num;
+    if (num) {
+      tmp7 = undefined === c4;
+    }
+    if (tmp7) {
+      c4 = setTimeoutImpl(invokeFunc, num);
+    }
+    return closure_2;
+  }
+  debounced.cancel = function cancelTimers() {
+    if (undefined !== c3) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(c3);
+    }
+    if (undefined !== c4) {
+      const _clearTimeout2 = clearTimeout;
+      clearTimeout(c4);
+    }
+    c4 = undefined;
+    c3 = undefined;
+  };
+  debounced.flush = function flush() {
+    if (undefined === c3) {
+      if (undefined === c4) {
+        let tmp3 = closure_2;
+      }
+      return tmp3;
+    }
+    if (undefined !== c3) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(c3);
+    }
+    if (undefined !== c4) {
+      const _clearTimeout2 = clearTimeout;
+      clearTimeout(c4);
+    }
+    c4 = undefined;
+    c3 = undefined;
+    const tmp10 = closure_0();
+    closure_2 = tmp10;
+    tmp3 = tmp10;
+  };
+  return debounced;
 };

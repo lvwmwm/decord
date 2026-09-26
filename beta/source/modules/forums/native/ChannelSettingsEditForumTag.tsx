@@ -1,26 +1,27 @@
-// Module ID: 17337
-// Function ID: 17338
+// Module ID: 17327
+// Function ID: 17328
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5710, 2045, 1379, 21, 4790, 580, 558, 568, 1488, 504, 4786, 1119, 8179, 7653, 10475, 5143, 7409, 1401, 9067, 5373, 1181, 6883, 5935, 5854, 7478, 5218, 2]
+// Dependencies: [32, 19, 17, 5708, 2041, 1375, 21, 4788, 576, 1484, 504, 4784, 1115, 8174, 7651, 5216, 5936, 5854, 5371, 11417, 7407, 1397, 9069, 1177, 6890, 7477, 5141, 2]
+// Exports: default
 
-// Module 17337 (ChannelSettingsEditForumTag)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 8179 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10475 */;
+// Module 17327 (ChannelSettingsEditForumTag)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8174 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11417 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5710 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import EmojiStore from "EmojiStore" /* 5708 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 const View = fn(17).View;
-const EmojiConstants = fn(1379);
+const EmojiConstants = fn(1375);
 ({ EMOJI_URL_BASE_SIZE: closure_8, EmojiIntention: closure_9 } = EmojiConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { display: "flex", flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, sections: null, hint: null, emojiIconWrapper: null, imageEmoji: null, textEmoji: null, nameInput: null, saveButton: null };
 let obj3 = { display: "flex", flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.sections = { paddingHorizontal: 12, paddingTop: nativeDefault.space.PX_16 };
@@ -31,148 +32,10 @@ obj2.textEmoji = { fontSize: 20, lineHeight: 26 };
 obj2.nameInput = { width: "100%", flexGrow: 1 };
 obj2.saveButton = { flex: 0 };
 let closure_12 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { paddingHorizontal: 12, paddingTop: nativeDefault.space.PX_16 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/forums/native/ChannelSettingsEditForumTag.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  const cResult = channelId(568).c(86);
-  channelId = channelId.channelId;
-  const tag = channelId.tag;
-  let obj = channelId(568);
-  dependencyMap = ref();
-  _slicedToArray = null == tag;
-  const tmp4 = ref();
-  const navigation = channelId(1488).useNavigation();
-  if (cResult[0] !== tag) {
-    let tmp7 = null;
-    if (null != tag) {
-      ({ emojiId: obj3.id, emojiName: obj3.name } = tag);
-      tmp7 = { id: null, name: null };
-      const obj5 = { id: null, name: null };
-    }
-    cResult[0] = tag;
-    cResult[1] = tmp7;
-    let tmp6 = tmp7;
-  } else {
-    tmp6 = cResult[1];
-  }
-  [emoji, EmojiStore] = navigation.useState(tmp6);
-  let str;
-  if (tag != null) {
-    str = tag.name;
-  }
-  if (str == null) {
-    str = "";
-  }
-  [first1, closure_8] = navigation.useState(str);
-  let moderated;
-  if (tag != null) {
-    moderated = tag.moderated;
-  }
-  [first2, closure_10] = navigation.useState(moderated);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [first1];
-    cResult[2] = items;
-    let tmp16 = items;
-  } else {
-    tmp16 = cResult[2];
-  }
-  if (cResult[3] !== channelId) {
-    class R {
-      constructor() {
-        return closure_7.getChannel(channelId);
-      }
-    }
-    cResult[3] = channelId;
-    cResult[4] = R;
-    const tmp18 = R;
-  } else {
-    class R {
-      constructor() {
-        return closure_7.getChannel(channelId);
-      }
-    }
-  }
-  let obj2 = channelId(1488);
-  const stateFromStores = channelId(504).useStateFromStores(tmp16, tmp18);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        return closure_7.getChannel(channelId);
-      }
-    }
-    const items1 = [EmojiStore];
-    cResult[5] = items1;
-    const tmp20 = items1;
-  } else {
-    class R {
-      constructor() {
-        return closure_7.getChannel(channelId);
-      }
-    }
-  }
-  if (cResult[6] !== emoji) {
-    class G {
-      constructor() {
-        tmp = closure_5;
-        id = undefined;
-        if (closure_5 != null) {
-          id = tmp.id;
-        }
-        usableCustomEmojiById = null;
-        if (null != id) {
-          tmp4 = closure_6;
-          usableCustomEmojiById = closure_6.getUsableCustomEmojiById(tmp.id);
-        }
-        return usableCustomEmojiById;
-      }
-    }
-    cResult[6] = emoji;
-    cResult[7] = G;
-    const tmp21 = G;
-  } else {
-    class G {
-      constructor() {
-        tmp = closure_5;
-        id = undefined;
-        if (closure_5 != null) {
-          id = tmp.id;
-        }
-        usableCustomEmojiById = null;
-        if (null != id) {
-          tmp4 = closure_6;
-          usableCustomEmojiById = closure_6.getUsableCustomEmojiById(tmp.id);
-        }
-        return usableCustomEmojiById;
-      }
-    }
-  }
-  const tmpResult = channelId(504);
-  const stateFromStores1 = channelId(504).useStateFromStores(tmp20, tmp21);
-  if (cResult[8] === emoji) {
-    class G {
-      constructor() {
-        tmp = closure_5;
-        id = undefined;
-        if (closure_5 != null) {
-          id = tmp.id;
-        }
-        usableCustomEmojiById = null;
-        if (null != id) {
-          tmp4 = closure_6;
-          usableCustomEmojiById = closure_6.getUsableCustomEmojiById(tmp.id);
-        }
-        return usableCustomEmojiById;
-      }
-    }
-  }
-  cResult[8] = emoji;
-  cResult[9] = first2;
-  cResult[10] = first1;
-  cResult[11] = { emoji, tagName: first1, moderated: first2 };
-}) : ((channelId) => {
+export default function ChannelSettingsEditForumTag(channelId) {
   channelId = channelId.channelId;
   const tag = channelId.tag;
   emoji = undefined;
@@ -205,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const tmp = ref();
   dependencyMap = tmp;
   _slicedToArray = tmp2;
-  const navigation = channelId(1488).useNavigation();
+  const navigation = channelId(1484).useNavigation();
   let tmp6 = null;
   if (null != tag) {
     ({ emojiId: obj3.id, emojiName: obj3.name } = tag);
@@ -226,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     moderated = tag.moderated;
   }
   [flag, closure_10] = navigation.useState(moderated);
-  let obj = channelId(1488);
+  let obj = channelId(1484);
   const items = [first1];
   channel = channelId(504).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   const tmp3Result = channelId(504);
@@ -282,15 +145,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const layoutEffect = obj2.useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle() {
-        const intl = channelId(1119).intl;
+        const intl = channelId(1115).intl;
         const string = intl.string;
-        const t = channelId(1119).t;
+        const t = channelId(1115).t;
         if (closure_1_3) {
           let children = string(t["/jubeD"]);
         } else {
           children = string(t.zeVg5d);
         }
-        return closure_10(channelId(4786).Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children });
+        return closure_10(channelId(4784).Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children });
       }
     });
   }, items3);
@@ -348,14 +211,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       let obj = {
         headerRight() {
             const obj = { style: saveButton.saveButton, onPress, text: null };
-            const intl = channelId(saveButton[14]).intl;
-            obj.text = intl.string(channelId(saveButton[14]).t["R3BPH+"]);
-            return closure_10(channelId(saveButton[16]).HeaderActionButton, obj);
+            const intl = channelId(saveButton[12]).intl;
+            obj.text = intl.string(channelId(saveButton[12]).t["R3BPH+"]);
+            return closure_10(channelId(saveButton[14]).HeaderActionButton, obj);
           }
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "emoji" });
+      setOptions({ headerRight: "r" });
     }
   }, items5);
   const obj5 = { style: tmp.container, children: null };
@@ -385,9 +248,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
             },
         placeholder: null
       };
-      let intl = tmp3(1119).intl;
-      obj10.placeholder = intl.string(tmp3(1119).t.aMSq0a);
-      obj8.label = tmp27(tmp3(1181).TextInput, obj10);
+      let intl = tmp3(1115).intl;
+      obj10.placeholder = intl.string(tmp3(1115).t.aMSq0a);
+      obj8.label = tmp27(tmp3(1177).TextInput, obj10);
       if (null != emoji) {
         const obj12 = {
           accessibilityRole: "button",
@@ -395,9 +258,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                   closure_6(null);
                   closure_8("");
                 },
-          children: tmp27(tmp3(6883).CircleXIcon, { size: "xs" })
+          children: tmp27(tmp3(6890).CircleXIcon, { size: "xs" })
         };
-        let tmp27Result = tmp27(tmp3(5373).PressableOpacity, obj12);
+        let tmp27Result = tmp27(tmp3(5371).PressableOpacity, obj12);
       } else {
         tmp27Result = null;
       }
@@ -405,18 +268,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const obj14 = { hasIcons: true, children: null };
       obj8.trailing = tmp27Result;
       obj14.children = tmp27(tmp3(5854).TableRow, obj8);
-      const items6 = [tmp27(tmp3(5935).TableRowGroup, obj14), ];
+      const items6 = [tmp27(tmp3(5936).TableRowGroup, obj14), ];
       const obj15 = { style: tmp.hint, children: null };
       const obj16 = { variant: "text-sm/medium", color: "text-muted", children: null };
-      let intl2 = tmp3(1119).intl;
-      obj16.children = intl2.string(tmp3(1119).t["3v8kZH"]);
-      obj15.children = tmp27(tmp3(4786).Text, obj16);
+      let intl2 = tmp3(1115).intl;
+      obj16.children = intl2.string(tmp3(1115).t["3v8kZH"]);
+      obj15.children = tmp27(tmp3(4784).Text, obj16);
       items6[1] = tmp27(tmp28, obj15);
       obj13.children = items6;
       const items7 = [tmp29(tmp28, obj13), , ];
       const obj17 = { label: null, value: null, onValueChange: null };
-      let intl3 = tmp3(1119).intl;
-      obj17.label = intl3.string(tmp3(1119).t["rMH+rt"]);
+      let intl3 = tmp3(1115).intl;
+      obj17.label = intl3.string(tmp3(1115).t["rMH+rt"]);
       if (flag == null) {
         flag = false;
       }
@@ -434,14 +297,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         }
         closure_10(tmp2);
       };
-      obj18.children = tmp27(tmp3(7478).TableSwitchRow, obj17);
-      items7[1] = tmp27(tmp3(5935).TableRowGroup, obj18);
+      obj18.children = tmp27(tmp3(7477).TableSwitchRow, obj17);
+      items7[1] = tmp27(tmp3(5936).TableRowGroup, obj18);
       let tmp27Result3 = null;
       if (!tmp2) {
         const obj19 = { hasIcons: false, children: null };
         const obj20 = { variant: "danger", label: null, onPress: null };
-        let intl4 = tmp3(1119).intl;
-        obj20.label = intl4.string(tmp3(1119).t.huYSMr);
+        let intl4 = tmp3(1115).intl;
+        obj20.label = intl4.string(tmp3(1115).t.huYSMr);
         obj20.onPress = function onPress() {
           const obj2 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null };
           const intl = util.intl;
@@ -454,19 +317,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           obj2.confirmText = intl4.string(util.t.p89ACt);
           obj2.onConfirm = function onConfirm() {
             if (!closure_1_3) {
-              tag(dependencyMap[15]).deleteForumTag(channelId, id.id);
+              tag(dependencyMap[13]).deleteForumTag(channelId, id.id);
               navigation.pop();
-              const obj = tag(dependencyMap[15]);
+              const obj = tag(dependencyMap[13]);
             }
           };
           actions_AlertActionCreatorsDefault.show(obj2);
         };
         obj19.children = tmp27(tmp3(5854).TableRow, obj20);
-        tmp27Result3 = tmp27(tmp3(5935).TableRowGroup, obj19);
+        tmp27Result3 = tmp27(tmp3(5936).TableRowGroup, obj19);
       }
       items7[2] = tmp27Result3;
       obj6.children = items7;
-      obj5.children = tmp29(tmp3(5218).Stack, obj6);
+      obj5.children = tmp29(tmp3(5216).Stack, obj6);
       return tmp27(tmp28, obj5);
     }
     const obj21 = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
@@ -476,8 +339,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const obj22 = { id: null, animated: null, size: null };
       ({ id: obj11.id, animated: obj11.animated } = stateFromStores);
       obj22.size = size;
-      emojiURL = tmp31(1401).getEmojiURL(obj22);
-      const tmp31Result = tmp31(1401);
+      emojiURL = tmp31(1397).getEmojiURL(obj22);
+      const tmp31Result = tmp31(1397);
     }
     obj21.src = emojiURL;
     let str2;
@@ -488,9 +351,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       str2 = "";
     }
     obj21.name = str2;
-    tmp27Result4 = tmp27(tag(7409), obj21);
+    tmp27Result4 = tmp27(tag(7407), obj21);
     tmp31 = tag;
-    const tmp32 = tag(7409);
+    const tmp32 = tag(7407);
   }
-  tmp27Result4 = tmp27(tmp3(9067).ReactionIcon, {});
-});
+  tmp27Result4 = tmp27(tmp3(9069).ReactionIcon, {});
+};

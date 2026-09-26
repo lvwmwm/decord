@@ -1,12 +1,12 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12158
+// Function ID: 12159
 // Name: MediaAnalytics
-// Dependencies: [1078, 1245, 2]
+// Dependencies: [1074, 1241, 2]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted
 
-// Module 12041 (MediaAnalytics)
-import Constants from "Constants" /* 1078 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+// Module 12158 (MediaAnalytics)
+import Constants from "Constants" /* 1074 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -1,13 +1,13 @@
-// Module ID: 18372
-// Function ID: 18373
+// Module ID: 18363
+// Function ID: 18364
 // Name: i18nMessagesProvider
-// Dependencies: [17, 1368, 18373, 1158, 1119, 2]
+// Dependencies: [17, 1364, 18364, 1154, 1115, 2]
 // Exports: default
 
-// Module 18372 (i18nMessagesProvider)
+// Module 18363 (i18nMessagesProvider)
 import _mod17 from "module_17" /* 17 */;
-import NativeI18nModuleDefault from "NativeI18nModule" /* 18373 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
+import NativeI18nModuleDefault from "NativeI18nModule" /* 18364 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 if (PlatformUtils.isAndroid()) {
@@ -22,11 +22,11 @@ export default function newIntlMessagesProvider() {
     closure_0 = arg0;
     closure_2.keysRequest((arr) => {
       i18nManager.valuesResult(arr.map((item) => {
-        const result = closure_1_0(1158).runtimeHashMessageKey(item);
-        const tmp4 = closure_1_0(1119).t[result];
+        const result = closure_1_0(1154).runtimeHashMessageKey(item);
+        const tmp4 = closure_1_0(1115).t[result];
         let str = "";
         if (null != tmp4) {
-          const intl = closure_1_0(1119).intl;
+          const intl = closure_1_0(1115).intl;
           str = intl.reserialize(tmp4);
         }
         return str;

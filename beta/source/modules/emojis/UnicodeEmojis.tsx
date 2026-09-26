@@ -1,25 +1,25 @@
-// Module ID: 4445
-// Function ID: 4446
+// Module ID: 4441
+// Function ID: 4442
 // Name: UnicodeEmojis
-// Dependencies: [4446, 4447, 4448, 4449, 12, 14294, 2]
+// Dependencies: [4442, 4443, 4444, 4445, 12, 14284, 2]
 // Exports: asUnicodeEmoji
 
-// Module 4445 (UnicodeEmojis)
+// Module 4441 (UnicodeEmojis)
 import _modDef12 from "module_12" /* 12 */;
-import EmojiTypes from "EmojiTypes" /* 4448 */;
-import _mod14294 from "module_14294" /* 14294 */;
-import defaultImageSrcGenerator from "defaultImageSrcGenerator" /* 4446 */;
+import EmojiTypes from "EmojiTypes" /* 4444 */;
+import _mod14284 from "module_14284" /* 14284 */;
+import defaultImageSrcGenerator from "defaultImageSrcGenerator" /* 4442 */;
 
 const require = globalThis.__r;
 
 require = fn;
-function parseRawEmojiObject(emojiObject) {
-  value = weakMap.get(emojiObject);
+function parseRawEmojiObject(arg0) {
+  value = weakMap.get(arg0);
   if (null != value) {
     return value;
   } else {
-    const tmp5 = new Emoji(emojiObject);
-    const result = obj.set(emojiObject, tmp5);
+    const tmp5 = new Emoji(arg0);
+    const result = obj.set(arg0, tmp5);
     return tmp5;
   }
   obj = weakMap;
@@ -50,10 +50,10 @@ function findInlineEmojisFromSurrogates(text, arg1) {
             text = `${tmp3}`;
             let str3 = "";
             let tmp16 = require;
-            let tmp18 = require("module_4447").surrogateToEmoji[`${tmp3}`];
+            let tmp18 = require("module_4443").surrogateToEmoji[`${tmp3}`];
             let tmp19 = null;
             if (null != tmp18) {
-              tmp19 = tmp16(4447).emojis[tmp18];
+              tmp19 = tmp16(4443).emojis[tmp18];
             }
             let first;
             if (tmp19 != null) {
@@ -82,10 +82,10 @@ function findInlineEmojisFromSurrogates(text, arg1) {
             sum = str + tmp3;
           } else {
             let tmp10 = require;
-            let tmp12 = require("module_4447").surrogateToEmoji[str];
+            let tmp12 = require("module_4443").surrogateToEmoji[str];
             let tmp13 = null;
             if (null != tmp12) {
-              tmp13 = tmp10(4447).emojis[tmp12];
+              tmp13 = tmp10(4443).emojis[tmp12];
             }
             let first1;
             if (tmp13 != null) {
@@ -119,10 +119,10 @@ function findInlineEmojisFromSurrogates(text, arg1) {
   if (!tmp23) {
     return items1;
   } else {
-    const tmp26 = require("module_4447").surrogateToEmoji[str2];
+    const tmp26 = require("module_4443").surrogateToEmoji[str2];
     let tmp27 = null;
     if (null != tmp26) {
-      tmp27 = tmp24(4447).emojis[tmp26];
+      tmp27 = tmp24(4443).emojis[tmp26];
     }
     let first2;
     if (tmp27 != null) {
@@ -286,10 +286,10 @@ Object.defineProperty(prototype, "name", {
     const self = this;
     if (this.hasDiversity) {
       if (null != global) {
-        const tmp6 = require("module_4447").surrogateToEmoji[global];
+        const tmp6 = require("module_4443").surrogateToEmoji[global];
         let tmp7 = null;
         if (null != tmp6) {
-          tmp7 = tmp4(4447).emojis[tmp6];
+          tmp7 = tmp4(4443).emojis[tmp6];
         }
         let first;
         if (tmp7 != null) {
@@ -342,13 +342,13 @@ export default {
     global = tmp;
   },
   getCategories() {
-    return Object.keys(require("module_4447").emojisByCategory);
+    return Object.keys(require("module_4443").emojisByCategory);
   },
   getByName(arg0) {
-    const tmp3 = require("module_4447").nameToEmoji[arg0];
+    const tmp3 = require("module_4443").nameToEmoji[arg0];
     let tmp4 = null;
     if (null != tmp3) {
-      tmp4 = require("module_4447").emojis[tmp3];
+      tmp4 = require("module_4443").emojis[tmp3];
     }
     let tmp5 = null;
     if (null != tmp4) {
@@ -366,8 +366,8 @@ export default {
   getByCategory(name) {
     value = map.get(name);
     if (null == value) {
-      const tmp4 = require("module_4447").emojisByCategory[name];
-      const emojis = require("module_4447").emojis;
+      const tmp4 = require("module_4443").emojisByCategory[name];
+      const emojis = require("module_4443").emojis;
       const result = require("EmojiUtils").filterUnsupportedEmojis(emojis.slice(tmp4[0], tmp4[1]));
       const mapped = result.map(parseRawEmojiObject);
       const result1 = map.set(name, mapped);
@@ -385,10 +385,10 @@ export default {
       if (arg0 === undefined) {
         str = "";
       }
-      const tmp3 = require("module_4447").nameToEmoji[arg1];
+      const tmp3 = require("module_4443").nameToEmoji[arg1];
       let tmp4 = null;
       if (null != tmp3) {
-        tmp4 = require("module_4447").emojis[tmp3];
+        tmp4 = require("module_4443").emojis[tmp3];
       }
       let surrogates;
       if (tmp4 != null) {
@@ -423,10 +423,10 @@ export default {
     if (arg1 === undefined) {
       str = "";
     }
-    const tmp3 = require("module_4447").nameToEmoji[emojiName];
+    const tmp3 = require("module_4443").nameToEmoji[emojiName];
     let tmp4 = null;
     if (null != tmp3) {
-      tmp4 = require("module_4447").emojis[tmp3];
+      tmp4 = require("module_4443").emojis[tmp3];
     }
     let surrogates;
     if (tmp4 != null) {
@@ -446,10 +446,10 @@ export default {
     if (arg2 === undefined) {
       str = "";
     }
-    const tmp3 = require("module_4447").surrogateToEmoji[name];
+    const tmp3 = require("module_4443").surrogateToEmoji[name];
     let tmp4 = null;
     if (null != tmp3) {
-      tmp4 = require("module_4447").emojis[tmp3];
+      tmp4 = require("module_4443").emojis[tmp3];
     }
     let first;
     if (tmp4 != null) {
@@ -477,7 +477,7 @@ export default {
     hasOwnProperty = Object.prototype.hasOwnProperty;
     const call = hasOwnProperty.call;
     if (typeof call === "unknown" ? hasOwnProperty(key10009) : call(tmp3, key10009)) {
-      str = _mod14294[key10009];
+      str = _mod14284[key10009];
     }
     let combined = str;
     if (flag) {
@@ -488,10 +488,10 @@ export default {
   },
   convertSurrogateToBase(surrogates) {
     const reduced = items.reduce((acc, item) => acc.replace(item, ""), surrogates);
-    const tmp4 = require("module_4447").surrogateToEmoji[reduced];
+    const tmp4 = require("module_4443").surrogateToEmoji[reduced];
     let tmp5 = null;
     if (null != tmp4) {
-      tmp5 = tmp2(4447).emojis[tmp4];
+      tmp5 = tmp2(4443).emojis[tmp4];
     }
     let str;
     if (tmp5 != null) {
@@ -500,10 +500,10 @@ export default {
     if (str == null) {
       str = "";
     }
-    const tmp6 = require("module_4447").nameToEmoji[str];
+    const tmp6 = require("module_4443").nameToEmoji[str];
     let tmp7 = null;
     if (null != tmp6) {
-      tmp7 = tmp2(4447).emojis[tmp6];
+      tmp7 = tmp2(4443).emojis[tmp6];
     }
     let tmp8 = null;
     if (null != tmp7) {
@@ -531,13 +531,13 @@ export default {
       continue;
     }
   },
-  numDiversitySprites: fn(4447).numDiversitySprites,
-  numNonDiversitySprites: fn(4447).numNonDiversitySprites,
+  numDiversitySprites: fn(4443).numDiversitySprites,
+  numNonDiversitySprites: fn(4443).numNonDiversitySprites,
   EMOJI_NAME_RE: /^:([^\s:]+?(?:::skin-tone-\d)?):/,
   EMOJI_NAME_AND_DIVERSITY_RE: tmp3,
   EMOJI_SHORTCUT_RE: /^(>:\(|>:\-\(|>=\(|>=\-\(|:"\)|:\-"\)|="\)|=\-"\)|<\/3|<\\3|:\-\\|:\-\/|=\-\\|=\-\/|:'\(|:'\-\(|:,\(|:,\-\(|='\(|='\-\(|=,\(|=,\-\(|:\(|:\-\(|=\(|=\-\(|<3|♡|\]:\(|\]:\-\(|\]=\(|\]=\-\(|o:\)|O:\)|o:\-\)|O:\-\)|0:\)|0:\-\)|o=\)|O=\)|o=\-\)|O=\-\)|0=\)|0=\-\)|:'D|:'\-D|:,D|:,\-D|='D|='\-D|=,D|=,\-D|:\*|:\-\*|=\*|=\-\*|x\-\)|X\-\)|:\||:\-\||=\||=\-\||:o|:\-o|:O|:\-O|=o|=\-o|=O|=\-O|:@|:\-@|=@|=\-@|:D|:\-D|=D|=\-D|:'\)|:'\-\)|:,\)|:,\-\)|='\)|='\-\)|=,\)|=,\-\)|:\)|:\-\)|=\)|=\-\)|\]:\)|\]:\-\)|\]=\)|\]=\-\)|:,'\(|:,'\-\(|;\(|;\-\(|=,'\(|=,'\-\(|:P|:\-P|=P|=\-P|8\-\)|B\-\)|,:\(|,:\-\(|,=\(|,=\-\(|,:\)|,:\-\)|,=\)|,=\-\)|:s|:\-S|:z|:\-Z|:\$|:\-\$|=s|=\-S|=z|=\-Z|=\$|=\-\$|;\)|;\-\))/,
   hasSurrogates(match) {
-    return _modDef12.toArray(match).some((item) => null != require("module_4447").surrogateToEmoji[item]);
+    return _modDef12.toArray(match).some((item) => null != require("module_4443").surrogateToEmoji[item]);
   }
 };
 export const DIVERSITY_SURROGATES = items;

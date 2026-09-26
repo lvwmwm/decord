@@ -1,16 +1,16 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16266
+// Function ID: 16267
 // Name: ScreenRecordingStore
-// Dependencies: [562, 16263, 2]
+// Dependencies: [560, 16267, 2]
 
-// Module 16262 (ScreenRecordingStore)
-import ScreenRecordingUtils from "ScreenRecordingUtils" /* 16263 */;
-import module_562 from "module_562" /* 562 */;
+// Module 16266 (ScreenRecordingStore)
+import ScreenRecordingUtils from "ScreenRecordingUtils" /* 16267 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
 
-export const useScreenRecordingStore = module_562.create((arg0, arg1) => {
+export const useScreenRecordingStore = module_560.create((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   return {

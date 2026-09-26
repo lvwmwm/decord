@@ -1,14 +1,14 @@
-// Module ID: 4441
-// Function ID: 4442
+// Module ID: 4437
+// Function ID: 4438
 // Name: RelationshipStore
-// Dependencies: [32, 4442, 1376, 1078, 577, 504, 2]
+// Dependencies: [32, 4438, 1372, 1074, 573, 504, 2]
 
-// Module 4441 (RelationshipStore)
+// Module 4437 (RelationshipStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4442 */;
-import UserStore from "UserStore" /* 1376 */;
+import MessageRecord from "MessageRecord" /* 4438 */;
+import UserStore from "UserStore" /* 1372 */;
 
 function markAllUserIdListsStale() {
   set3.add("friends");
@@ -27,7 +27,7 @@ function upsertRelationship(id, type) {
   value = map.get(id);
   if (value !== type) {
     if (null != value) {
-      value3 = map1.get(value);
+      const value3 = map1.get(value);
       if (value3 != null) {
         value3.delete(id);
       }
@@ -89,7 +89,7 @@ function recountPending() {
   closure_16 = Math.max(num - size - size, 0);
   closure_14 = closure_14 + 1;
 }
-const RelationshipTypes = fn(1078).RelationshipTypes;
+const RelationshipTypes = fn(1074).RelationshipTypes;
 const map = new Map();
 let set = new Set();
 const set1 = new Set();
@@ -98,7 +98,7 @@ let closure_14 = 0;
 const dependencyMap = {};
 let closure_16 = 0;
 let size = 0;
-let closure_19 = { friends: "unicodeVersion", blocked: "h", ignored: "runOnJS", blockedOrIgnored: "Array" };
+let closure_19 = { friends: "call", blocked: "Promise", ignored: "__d", blockedOrIgnored: "Array" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = initializeDefault.Store;
@@ -479,7 +479,7 @@ const relationshipStore = new RelationshipStore(DispatcherDefault, {
     value = map.get(id);
     if (null != value) {
       map.delete(id);
-      value3 = map1.get(value);
+      const value3 = map1.get(value);
       if (value3 != null) {
         value3.delete(id);
       }

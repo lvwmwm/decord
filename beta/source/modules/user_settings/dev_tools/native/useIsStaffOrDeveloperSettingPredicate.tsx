@@ -1,34 +1,18 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15123
+// Function ID: 15124
 // Name: useIsStaffOrDeveloperSettingPredicate
-// Dependencies: [7993, 558, 568, 504, 2]
+// Dependencies: [7988, 504, 2]
+// Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 15119 (useIsStaffOrDeveloperSettingPredicate)
+// Module 15123 (useIsStaffOrDeveloperSettingPredicate)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7993 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7988 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/dev_tools/native/useIsStaffOrDeveloperSettingPredicate.tsx");
 
-export const useStaffOrDeveloperSettingPredicate = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [DeveloperExperimentStore];
-    const fn = function s() {
-      return isDeveloper.isDeveloper;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+export const useStaffOrDeveloperSettingPredicate = function useStaffOrDeveloperSettingPredicate() {
   const items = [DeveloperExperimentStore];
   return initialize.useStateFromStores(items, () => isDeveloper.isDeveloper);
-});
+};

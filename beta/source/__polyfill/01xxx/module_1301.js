@@ -4,4 +4,4 @@
 
 // Module 1301
 
-export default Function.prototype.call;
+export default RangeError;

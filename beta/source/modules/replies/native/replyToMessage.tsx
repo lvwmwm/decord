@@ -1,21 +1,21 @@
-// Module ID: 11840
-// Function ID: 11841
+// Module ID: 11960
+// Function ID: 11961
 // Name: replyToMessage
-// Dependencies: [7954, 1376, 7953, 1078, 1245, 11825, 7735, 11827, 4970, 2]
+// Dependencies: [7949, 1372, 7948, 1074, 1241, 11947, 7730, 11949, 4968, 2]
 // Exports: default
 
-// Module 11840 (replyToMessage)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7735 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11825 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11827 */;
-import EditMessageStore from "EditMessageStore" /* 7954 */;
-import UserStore from "UserStore" /* 1376 */;
-import PendingReplyStore from "PendingReplyStore" /* 7953 */;
+// Module 11960 (replyToMessage)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7730 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11947 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11949 */;
+import EditMessageStore from "EditMessageStore" /* 7949 */;
+import UserStore from "UserStore" /* 1372 */;
+import PendingReplyStore from "PendingReplyStore" /* 7948 */;
 
 require = fn;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/replies/native/replyToMessage.tsx");
 
@@ -48,8 +48,8 @@ export default function longPressMessageHandleReply(arg0) {
             tmp18 = currentUser1.id === pendingReply.message.author.id;
           }
           obj3.is_own_message = tmp18;
-          tmp3(1245).track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj3);
-          const tmp3Result = tmp3(1245);
+          tmp3(1241).track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj3);
+          const tmp3Result = tmp3(1241);
           PendingReplyActionCreators.deletePendingReply(channel.id);
           let text;
           if (chatInputRef != null) {

@@ -1,18 +1,18 @@
-// Module ID: 5760
-// Function ID: 5761
+// Module ID: 5758
+// Function ID: 5759
 // Name: FrecencyStore
-// Dependencies: [1224, 2045, 2067, 2099, 4612, 1078, 1088, 4827, 12, 504, 577, 2]
+// Dependencies: [1220, 2041, 2063, 2095, 4609, 1074, 1084, 4825, 12, 504, 573, 2]
 
-// Module 5760 (FrecencyStore)
+// Module 5758 (FrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import FrecencyDefault from "Frecency" /* 4827 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import FrecencyDefault from "Frecency" /* 4825 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
 
 function handleChannelSelect(arg0) {
   ({ guildId, channelId } = arg0);
@@ -82,8 +82,8 @@ function initFrecency() {
     }), global.pendingUsages);
   }
 }
-const ID_REGEX = fn(1078).ID_REGEX;
-const UserSettingsTypes = fn(1088).UserSettingsTypes;
+const ID_REGEX = fn(1074).ID_REGEX;
+const UserSettingsTypes = fn(1084).UserSettingsTypes;
 let closure_9 = new FrecencyDefault({
   computeBonus() {
     return 100;
@@ -111,7 +111,7 @@ let closure_9 = new FrecencyDefault({
     return num;
   },
   lookupKey(id) {
-    guild = GuildStore.getGuild(id);
+    let guild = GuildStore.getGuild(id);
     if (guild == null) {
       guild = ChannelStore.getChannel(id);
     }

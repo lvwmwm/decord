@@ -1,42 +1,34 @@
 // Module ID: 925
 // Function ID: 926
-// Dependencies: [915]
-// Exports: getInteractionCount, initInteractionCountPolyfill
+// Dependencies: [904, 906]
+// Exports: onHidden
 
 // Module 925
-import observe from "observe" /* 915 */;
+import _mod904 from "module_904" /* 904 */;
+
+const require = globalThis.__r;
 
 require = arg1;
 const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let c3 = 0;
-const Infinity = Infinity;
-let c5 = 0;
-function updateEstimate(arr) {
-  const item = arr.forEach((interactionId) => {
-    if (interactionId.interactionId) {
-      const _Math = Math;
-      closure_4 = Math.min(closure_4, interactionId.interactionId);
-      const _Math2 = Math;
-      bound = Math.max(bound, interactionId.interactionId);
-      if (bound) {
-        num = (bound - closure_4) / 7 + 1;
-      }
-    }
-  });
-}
 
-export const getInteractionCount = () => {
-  if (closure_2) {
-    let tmp2 = c3;
-  } else {
-    const _performance = performance;
-    tmp2 = performance.interactionCount || 0;
+export const onHidden = (arg0) => {
+  _require = arg0;
+  function onHiddenOrPageHide(type) {
+    let tmp = "pagehide" !== type.type;
+    if (tmp) {
+      const _document = _mod904.WINDOW.document;
+      let visibilityState;
+      if (_document != null) {
+        visibilityState = _document.visibilityState;
+      }
+      tmp = "hidden" !== visibilityState;
+    }
+    if (!tmp) {
+      closure_0(type);
+    }
   }
-  return tmp2;
-};
-export const initInteractionCountPolyfill = () => {
-  if (!tmp) {
-    closure_2 = observe.observe("event", updateEstimate, { type: "event", buffered: true, durationThreshold: 0 });
-  }
+  require("module_906").addPageListener("visibilitychange", onHiddenOrPageHide, { capture: true, once: true });
+  const obj = require("module_906");
+  require("module_906").addPageListener("pagehide", onHiddenOrPageHide, { capture: true, once: true });
 };

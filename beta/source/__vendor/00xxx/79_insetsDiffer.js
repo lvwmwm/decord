@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "unicodeVersion", left: "h", right: "runOnJS", bottom: "Array" };
+let closure_0 = { top: "call", left: "Promise", right: "__d", bottom: "Array" };
 
 export default function insetsDiffer(arg0, arg1) {
   let rect = arg0;

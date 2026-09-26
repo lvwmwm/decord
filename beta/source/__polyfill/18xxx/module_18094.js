@@ -1,0 +1,9 @@
+// Module ID: 18094
+// Function ID: 18095
+// Dependencies: [1121]
+
+// Module 18094
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 256, height: 212, scales: [2, 3], hash: "13ff76500b381861f2432b0c193716ac", name: "img_bans_empty_darker", type: "png" });

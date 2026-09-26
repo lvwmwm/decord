@@ -1,136 +1,37 @@
 // Module ID: 13141
 // Function ID: 13142
-// Dependencies: [32, 13113, 13085, 13112]
-// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
+// Dependencies: [13107, 13079, 13106]
+// Exports: initAndBind, setCurrentClient
 
 // Module 13141
-import _mod13112 from "module_13112" /* 13112 */;
-import _mod13113 from "module_13113" /* 13113 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _mod13079 from "module_13079" /* 13079 */;
+import _mod13106 from "module_13106" /* 13106 */;
+import _mod13107 from "module_13107" /* 13107 */;
 
-function setupIntegration(on, name, arg2) {
-  closure_0 = on;
-  if (arg2[name.name]) {
-    if (_mod13113.DEBUG_BUILD) {
-      const logger2 = tmp10(13085).logger;
-      const _HermesInternal2 = HermesInternal;
-      logger2.log("Integration skipped because it was already installed: " + name.name);
-    }
-    tmp10 = require;
-  } else {
-    arg2[name.name] = name;
-    if (tmp) {
-      name.setupOnce();
-      arr.push(name.name);
-    }
-    if (tmp4) {
-      name.setup(on);
-    }
-    if (typeof name.preprocessEvent === "function") {
-      const preprocessEvent = name.preprocessEvent;
-      closure_1 = preprocessEvent.bind(name);
-      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
-    }
-    if (typeof name.processEvent === "function") {
-      const processEvent = name.processEvent;
-      closure_2 = processEvent.bind(name);
-      const _Object = Object;
-      const obj = { id: name.name };
-      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
-    }
-    if (_mod13113.DEBUG_BUILD) {
-      const logger = tmp6(13085).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("Integration installed: " + name.name);
-    }
-    arr = items;
-    tmp = -1 === items.indexOf(name.name) && typeof name.setupOnce === "function";
-    tmp4 = name.setup && typeof name.setup === "function";
-    tmp6 = require;
-  }
-}
-let items = [];
+require = arg1;
+const dependencyMap = arg6;
 
-export const addIntegration = function addIntegration(name) {
-  const client = _mod13112.getClient();
-  if (client) {
-    client.addIntegration(name);
-  } else if (tmp(13113).DEBUG_BUILD) {
-    const logger = tmp(13085).logger;
-    const _HermesInternal = HermesInternal;
-    logger.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
+export const initAndBind = function initAndBind(arg0, debug) {
+  if (true === debug.debug) {
+    const obj = _mod13079;
+    if (_mod13107.DEBUG_BUILD) {
+      const logger = obj.logger;
+      logger.enable();
+    } else {
+      obj.consoleSandbox(() => {
+        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
+      });
+    }
   }
+  const currentScope = _mod13106.getCurrentScope();
+  currentScope.update(debug.initialScope);
+  const obj4 = new arg0(debug);
+  const currentScope1 = _mod13106.getCurrentScope();
+  currentScope1.setClient(obj4);
+  obj4.init();
+  return obj4;
 };
-export const afterSetupIntegrations = function afterSetupIntegrations(arg0, arg1) {
-  const iter = arg1[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let obj = nextResult;
-    if (nextResult) {
-      let afterAllSetup = obj.afterAllSetup;
-    }
-    if (nextResult) {
-      let afterAllSetupResult = obj.afterAllSetup(arg0);
-    }
-    continue;
-  }
-};
-export function defineIntegration(arg0) {
-  return arg0;
-}
-export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegrations) {
-  const arr = defaultIntegrations.defaultIntegrations || [];
-  const integrations = defaultIntegrations.integrations;
-  const item = arr.forEach((item) => {
-    item.isDefaultInstance = true;
-  });
-  if (Array.isArray(integrations)) {
-    items = [];
-    HermesBuiltin.arraySpread(integrations, HermesBuiltin.arraySpread(arr, 0));
-    let arr2 = items;
-  } else {
-    arr2 = arr;
-    if (typeof integrations === "function") {
-      const integrationsResult = integrations(arr);
-      const _Array = Array;
-      let tmp2 = integrationsResult;
-      if (!Array.isArray(integrationsResult)) {
-        const items1 = [integrationsResult];
-        tmp2 = items1;
-      }
-      arr2 = tmp2;
-    }
-  }
-  const obj = {};
-  const item1 = arr2.forEach((name) => {
-    name = name.name;
-    let isDefaultInstance = tmp2;
-    if (obj[name]) {
-      isDefaultInstance = !tmp2.isDefaultInstance;
-    }
-    if (isDefaultInstance) {
-      isDefaultInstance = name.isDefaultInstance;
-    }
-    if (!isDefaultInstance) {
-      obj[name] = name;
-    }
-  });
-  const values = Object.values(obj);
-  const findIndexResult = values.findIndex((name) => "Debug" === name.name);
-  if (findIndexResult > -1) {
-    values.push(_slicedToArray(values.splice(findIndexResult, 1), 1)[0]);
-  }
-  return values;
-};
-export const installedIntegrations = items;
-export { setupIntegration };
-export const setupIntegrations = function setupIntegrations(arg0, arr) {
-  closure_0 = arg0;
-  const obj = {};
-  const item = arr.forEach((item) => {
-    if (item) {
-      setupIntegration(closure_0, item, obj);
-    }
-  });
-  return obj;
+export const setCurrentClient = function setCurrentClient(arg0) {
+  const currentScope = _mod13106.getCurrentScope();
+  currentScope.setClient(arg0);
 };

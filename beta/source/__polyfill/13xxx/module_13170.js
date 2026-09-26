@@ -1,73 +1,159 @@
 // Module ID: 13170
 // Function ID: 13171
-// Dependencies: [13085, 13086, 13171, 13112, 13141, 13172, 13096, 13094, 13133]
+// Dependencies: [13135, 13080, 13171]
+// Exports: generateIteratee
 
 // Module 13170
-import _mod13112 from "module_13112" /* 13112 */;
-import setupIntegration from "module_13141" /* 13141 */;
+import _mod13171 from "module_13171" /* 13171 */;
+import setupIntegration from "module_13135" /* 13135 */;
 
 
-export const captureConsoleIntegration = setupIntegration.defineIntegration(() => {
+export const generateIteratee = function generateIteratee(arg0) {
+  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
+  return (root) => {
+    if (root.filename) {
+      let isMatch = /^[a-zA-Z]:\\/.test(root.filename);
+      if (!isMatch) {
+        const filename = root.filename;
+        let hasItem = filename.includes("\\");
+        if (hasItem) {
+          const filename2 = root.filename;
+          hasItem = !filename2.includes("/");
+        }
+        isMatch = hasItem;
+      }
+      if (fn) {
+        if (root) {
+          const filename1 = root.filename;
+          if (0 === filename1.indexOf(tmp13)) {
+            root.filename = filename1.replace(tmp13, prefix);
+          }
+        }
+      } else if (isMatch) {
+        if (isMatch) {
+          let replaced = str3.replace(/^[a-zA-Z]:/, "").replace(/\\/g, "/");
+          const str5 = str3.replace(/^[a-zA-Z]:/, "");
+        } else {
+          replaced = str3;
+        }
+        const obj2 = _mod13171;
+        if (root) {
+          let relativeResult = obj2.relative(tmp7, replaced);
+        } else {
+          relativeResult = obj2.basename(replaced);
+        }
+        const _HermesInternal = HermesInternal;
+        root.filename = "" + prefix + relativeResult;
+        tmp7 = root;
+      }
+      return root;
+    } else {
+      return root;
+    }
+  };
+};
+export const rewriteFramesIntegration = setupIntegration.defineIntegration(() => {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let handled;
-  let CONSOLE_LEVELS = obj.levels;
-  if (!CONSOLE_LEVELS) {
-    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
+  let fn;
+  ({ prefix, root } = obj);
+  if (!prefix) {
+    prefix = "app:///";
   }
-  handled = obj.handled;
-  return {
-    name: "CaptureConsole",
-    setup(arg0) {
-      closure_0 = arg0;
-      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
-        let result = CONSOLE_LEVELS(handled[2]).addConsoleInstrumentationHandler((arg0) => {
-          ({ args, level } = arg0);
-          let hasItem = _mod13112.getClient() === args;
+  fn = obj.iteratee;
+  if (!fn) {
+    fn = (root) => {
+      if (root.filename) {
+        let isMatch = /^[a-zA-Z]:\\/.test(root.filename);
+        if (!isMatch) {
+          const filename = root.filename;
+          let hasItem = filename.includes("\\");
           if (hasItem) {
-            hasItem = CONSOLE_LEVELS.includes(level);
+            const filename2 = root.filename;
+            hasItem = !filename2.includes("/");
           }
-          if (hasItem) {
-            closure_2 = handled;
-            let obj2 = { level: tmp(13172).severityLevelFromString(level), extra: null };
-            const obj3 = { arguments: args };
-            obj2.extra = obj3;
-            const tmpResult = tmp(13172);
-            tmp(13112).withScope((addEventProcessor) => {
-              addEventProcessor.addEventProcessor((arg0) => {
-                arg0.logger = "console";
-                const result = args(level[6]).addExceptionMechanism(arg0, { handled, type: "console" });
-                return arg0;
-              });
-              if ("assert" !== level) {
-                const found = args.find((item) => item instanceof Error);
-                if (found) {
-                  tmp14(13133).captureException(found, obj2);
-                  const tmp14Result = tmp14(13133);
-                } else {
-                  const tmp14Result2 = tmp14(13094);
-                  const safeJoinResult = tmp14(13094).safeJoin(tmp12, " ");
-                  args(13133).captureMessage(safeJoinResult, obj2);
-                  const obj4 = args(13133);
-                }
-                tmp12 = args;
-              } else if (!args[0]) {
-                const obj = args(13094);
-                const _HermesInternal = HermesInternal;
-                const combined = "Assertion failed: " + args(13094).safeJoin(arr.slice(1), " ") || "console.assert";
-                addEventProcessor.setExtra("arguments", arr.slice(1));
-                obj2 = args(13133);
-                obj2.captureMessage(combined, obj2);
-                const tmp4 = args(13094).safeJoin(arr.slice(1), " ") || "console.assert";
-              }
-            });
-            const tmpResult2 = tmp(13112);
+          isMatch = hasItem;
+        }
+        if (fn) {
+          if (root) {
+            const filename1 = root.filename;
+            if (0 === filename1.indexOf(tmp13)) {
+              root.filename = filename1.replace(tmp13, prefix);
+            }
           }
-        });
-        let tmpResult = CONSOLE_LEVELS(handled[2]);
+        } else if (isMatch) {
+          if (isMatch) {
+            let replaced = str3.replace(/^[a-zA-Z]:/, "").replace(/\\/g, "/");
+            const str5 = str3.replace(/^[a-zA-Z]:/, "");
+          } else {
+            replaced = str3;
+          }
+          const obj2 = _mod13171;
+          if (root) {
+            let relativeResult = obj2.relative(tmp7, replaced);
+          } else {
+            relativeResult = obj2.basename(replaced);
+          }
+          const _HermesInternal = HermesInternal;
+          root.filename = "" + prefix + relativeResult;
+          tmp7 = root;
+        }
+        return root;
+      } else {
+        return root;
       }
+    };
+  }
+  return {
+    name: "RewriteFrames",
+    processEvent(exception) {
+      exception = exception.exception;
+      if (exception) {
+        const _Array = Array;
+        exception = Array.isArray(exception.exception.values);
+      }
+      let tmp2 = exception;
+      if (exception) {
+        tmp2 = (function _processExceptionsEvent(exception) {
+          try {
+            const obj = {};
+            let merged = Object.assign(exception);
+            let obj2 = {};
+            let merged1 = Object.assign(exception.exception);
+            const values = exception.exception.values;
+            obj2.values = values.map((stacktrace) => {
+              const merged = Object.assign(stacktrace);
+              stacktrace = stacktrace.stacktrace;
+              if (stacktrace) {
+                const stacktrace2 = stacktrace.stacktrace;
+                const obj2 = {};
+                const merged1 = Object.assign(stacktrace2);
+                let frames = stacktrace2;
+                if (stacktrace2) {
+                  frames = stacktrace2.frames;
+                }
+                if (frames) {
+                  const frames1 = stacktrace2.frames;
+                  frames = frames1.map((item) => closure_1_0(item));
+                }
+                const obj3 = { stacktrace: null };
+                obj2.frames = frames;
+                obj3.stacktrace = obj2;
+                stacktrace = obj3;
+              }
+              const merged2 = Object.assign(stacktrace);
+              return {};
+            });
+            obj.exception = obj2;
+            return obj;
+          } catch (err) {
+            return tmp;
+          }
+        })(exception);
+      }
+      return tmp2;
     }
   };
 });

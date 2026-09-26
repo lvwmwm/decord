@@ -1,10 +1,10 @@
-// Module ID: 11403
-// Function ID: 11404
+// Module ID: 11365
+// Function ID: 11366
 // Name: StorekitIAPQueue
-// Dependencies: [5, 17, 5005, 7514, 11384, 2]
+// Dependencies: [5, 17, 5003, 7512, 11346, 2]
 
-// Module 11403 (StorekitIAPQueue)
-import utils_PriceUtils from "utils/PriceUtils" /* 7514 */;
+// Module 11365 (StorekitIAPQueue)
+import utils_PriceUtils from "utils/PriceUtils" /* 7512 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -61,7 +61,7 @@ function productSK2ToIAPProduct(subscription) {
     str2 = "PAYASYOUGO";
   }
 }
-const convertToAlpha2 = fn(5005).convertToAlpha2;
+const convertToAlpha2 = fn(5003).convertToAlpha2;
 const RNIapIosSk2 = fn(17).NativeModules.RNIapIosSk2;
 class StorekitIAPQueueClass {
   constructor() {
@@ -142,7 +142,7 @@ prototype["processQueue"] = function processQueue() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

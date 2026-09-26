@@ -1,16 +1,16 @@
-// Module ID: 16196
-// Function ID: 16197
+// Module ID: 16200
+// Function ID: 16201
 // Name: DefultGuildsRestrictedSetting
-// Dependencies: [558, 2023, 2]
+// Dependencies: [2019, 2]
+// Exports: useDefaultGuildsRestricted
 
-// Module 16196 (DefultGuildsRestrictedSetting)
-import UserSettings from "UserSettings" /* 2023 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16200 (DefultGuildsRestrictedSetting)
+import UserSettings from "UserSettings" /* 2019 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/DefultGuildsRestrictedSetting.tsx");
 
-export const useDefaultGuildsRestricted = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+export const useDefaultGuildsRestricted = function useDefaultGuildsRestricted() {
   const DefaultGuildsRestricted = UserSettings.DefaultGuildsRestricted;
   const setting = DefaultGuildsRestricted.useSetting();
   const DefaultGuildsRestrictedV2 = UserSettings.DefaultGuildsRestrictedV2;
@@ -20,14 +20,4 @@ export const useDefaultGuildsRestricted = ReactCompilerGating.isReactCompilerEna
     const tmp3 = setting || setting;
   }
   return setting1;
-}) : (() => {
-  const DefaultGuildsRestricted = UserSettings.DefaultGuildsRestricted;
-  const setting = DefaultGuildsRestricted.useSetting();
-  const DefaultGuildsRestrictedV2 = UserSettings.DefaultGuildsRestrictedV2;
-  let setting1 = DefaultGuildsRestrictedV2.useSetting();
-  if (null == setting1) {
-    setting1 = setting || setting;
-    const tmp3 = setting || setting;
-  }
-  return setting1;
-});
+};

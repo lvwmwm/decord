@@ -1,13 +1,12 @@
-// Module ID: 12250
-// Function ID: 12251
+// Module ID: 10416
+// Function ID: 10417
 // Name: ChannelListLayout
-// Dependencies: [8160, 12251, 12253, 12254, 558, 2023, 2]
-// Exports: getScaledChannelRowHeight, isLayoutCompact, isLayoutCozy, makeSizeStyle
+// Dependencies: [8155, 10417, 10419, 10420, 2019, 2]
+// Exports: getScaledChannelRowHeight, isLayoutCompact, isLayoutCozy, makeSizeStyle, useMessagesTabLayout
 
-// Module 12250 (ChannelListLayout)
-import UserSettings from "UserSettings" /* 2023 */;
-import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 8160 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10416 (ChannelListLayout)
+import UserSettings from "UserSettings" /* 2019 */;
+import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 8155 */;
 import size from "module_2" /* 2 */;
 
 function getLayoutStyles(layout, launchpad) {
@@ -16,22 +15,19 @@ function getLayoutStyles(layout, launchpad) {
     flag = false;
   }
   if (ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER === layout) {
-    return tmp(12251).CHANNEL_LIST_STYLES_COZY_DRAWER;
-  } else if (tmp(8160).ChannelListLayoutTypes.COZY_DRAWER_SMOL === layout) {
-    return tmp(12251).CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL;
-  } else if (tmp(8160).ChannelListLayoutTypes.COMPACT === layout) {
-    const tmpResult = tmp(12253);
+    return tmp(10417).CHANNEL_LIST_STYLES_COZY_DRAWER;
+  } else if (tmp(8155).ChannelListLayoutTypes.COZY_DRAWER_SMOL === layout) {
+    return tmp(10417).CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL;
+  } else if (tmp(8155).ChannelListLayoutTypes.COMPACT === layout) {
+    const tmpResult = tmp(10419);
     return flag ? tmpResult.CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD : tmpResult.CHANNEL_LIST_STYLES_COMPACT;
   } else {
-    if (tmp(8160).ChannelListLayoutTypes.MINIMAL !== layout) {
-      const COZY = tmp(8160).ChannelListLayoutTypes.COZY;
+    if (tmp(8155).ChannelListLayoutTypes.MINIMAL !== layout) {
+      const COZY = tmp(8155).ChannelListLayoutTypes.COZY;
     }
-    const tmpResult2 = tmp(12254);
+    const tmpResult2 = tmp(10420);
     return flag ? tmpResult2.CHANNEL_LIST_STYLES_COZY_LAUNCHPAD : tmpResult2.CHANNEL_LIST_STYLES_COZY;
   }
-}
-function isLayoutCompact(messagesTabLayout) {
-  return messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COMPACT;
 }
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/layouts/ChannelListLayout.tsx");
 
@@ -40,35 +36,25 @@ export function makeSizeStyle(size) {
   size = { width: size, height: size };
   return size;
 }
-export { isLayoutCompact };
+export const isLayoutCompact = function isLayoutCompact(layout) {
+  return layout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COMPACT;
+};
 export const isLayoutCozy = function isLayoutCozy(messagesTabLayout) {
   return messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY || messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER || messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER_SMOL;
 };
-export const useMessagesTabLayout = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+export const useMessagesTabLayout = function useMessagesTabLayout(panelVariant) {
   const ChannelListLayoutSetting = UserSettings.ChannelListLayoutSetting;
   const setting = ChannelListLayoutSetting.useSetting();
   const ChannelListLayoutTypes = ChannelListLayoutTypes2.ChannelListLayoutTypes;
-  if (arg0) {
+  if (panelVariant) {
     let COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(8160).ChannelListLayoutTypes.COMPACT;
+    COZY = tmp(8155).ChannelListLayoutTypes.COMPACT;
   } else {
-    COZY = tmp(8160).ChannelListLayoutTypes.COZY;
+    COZY = tmp(8155).ChannelListLayoutTypes.COZY;
   }
   return COZY;
-}) : ((arg0) => {
-  const ChannelListLayoutSetting = UserSettings.ChannelListLayoutSetting;
-  const setting = ChannelListLayoutSetting.useSetting();
-  const ChannelListLayoutTypes = ChannelListLayoutTypes2.ChannelListLayoutTypes;
-  if (arg0) {
-    let COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
-  } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(8160).ChannelListLayoutTypes.COMPACT;
-  } else {
-    COZY = tmp(8160).ChannelListLayoutTypes.COZY;
-  }
-  return COZY;
-});
+};
 export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0, layout) {
   let flag = arg2;
   if (arg2 === undefined) {

@@ -1,204 +1,153 @@
 // Module ID: 1166
 // Function ID: 1167
-// Dependencies: []
-// Exports: parseDateTimeSkeleton
+// Dependencies: [41, 42, 93, 95, 98, 1158]
+// Exports: formatToAst
 
 // Module 1166
-const re0 = /(?:[Eec]{1,6}|G{1,5}|[Qq]{1,5}|(?:[yYur]+|U{1,5})|[ML]{1,5}|d{1,2}|D{1,3}|F{1}|[abB]{1,5}|[hkHK]{1,2}|w{1,2}|W{1}|m{1,2}|s{1,2}|[zZOvVxX]{1,4})(?=([^']*'[^']*')*[^']*$)/g;
+import _mod1158 from "module_1158" /* 1158 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c2 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-export const parseDateTimeSkeleton = function parseDateTimeSkeleton(str) {
-  const obj = {};
-  const replaced = str.replace(re0, (arg0) => {
-    switch (arg0[0]) {
-      case "G":
-        let str19 = "long";
-        if (4 !== length) {
-          let str20 = "short";
-          if (5 === length) {
-            str20 = "narrow";
-          }
-          str19 = str20;
-        }
-        obj.era = str19;
-        return "";
-      case "y":
-        let str18 = "numeric";
-        if (2 === length) {
-          str18 = "2-digit";
-        }
-        obj.year = str18;
-      break;
-      case "Y":
-        let _RangeError10 = RangeError;
-        let rangeError = new RangeError("`Y/u/U/r` (year) patterns are not supported, use `y` instead");
-        throw rangeError;
-      case "u":
-        _RangeError10 = RangeError;
-        rangeError = new RangeError("`Y/u/U/r` (year) patterns are not supported, use `y` instead");
-        throw rangeError;
-      case "U":
-        _RangeError10 = RangeError;
-        rangeError = new RangeError("`Y/u/U/r` (year) patterns are not supported, use `y` instead");
-        throw rangeError;
-      case "r":
-        _RangeError10 = RangeError;
-        rangeError = new RangeError("`Y/u/U/r` (year) patterns are not supported, use `y` instead");
-        throw rangeError;
-      case "q":
-        let _RangeError9 = RangeError;
-        let rangeError1 = new RangeError("`q/Q` (quarter) patterns are not supported");
-        throw rangeError1;
-      case "Q":
-        _RangeError9 = RangeError;
-        rangeError1 = new RangeError("`q/Q` (quarter) patterns are not supported");
-        throw rangeError1;
-      case "M":
-        let diff = length - 1;
-        let items = ["numeric", "2-digit", "short", "long", "narrow"];
-        obj.month = items[diff];
-      break;
-      case "L":
-        diff = length - 1;
-        items = ["numeric", "2-digit", "short", "long", "narrow"];
-        obj.month = items[diff];
-      break;
-      case "w":
-        let _RangeError8 = RangeError;
-        let rangeError2 = new RangeError("`w/W` (week) patterns are not supported");
-        throw rangeError2;
-      case "W":
-        _RangeError8 = RangeError;
-        rangeError2 = new RangeError("`w/W` (week) patterns are not supported");
-        throw rangeError2;
-      case "d":
-        obj.day = ["numeric", "2-digit"][length - 1];
-      break;
-      case "D":
-        let _RangeError7 = RangeError;
-        let rangeError3 = new RangeError("`D/F/g` (day) patterns are not supported, use `d` instead");
-        throw rangeError3;
-      case "F":
-        _RangeError7 = RangeError;
-        rangeError3 = new RangeError("`D/F/g` (day) patterns are not supported, use `d` instead");
-        throw rangeError3;
-      case "g":
-        _RangeError7 = RangeError;
-        rangeError3 = new RangeError("`D/F/g` (day) patterns are not supported, use `d` instead");
-        throw rangeError3;
-      case "E":
-        let str12 = "long";
-        if (4 !== length) {
-          let str13 = "short";
-          if (5 === length) {
-            str13 = "narrow";
-          }
-          str12 = str13;
-        }
-        obj.weekday = str12;
-      break;
-      case "e":
-        if (length < 4) {
-          const _RangeError6 = RangeError;
-          const rangeError4 = new RangeError("`e..eee` (weekday) patterns are not supported");
-          throw rangeError4;
-        } else {
-          obj.weekday = ["short", "long", "narrow", "short"][length - 4];
-        }
-      break;
-      case "c":
-        if (length < 4) {
-          const _RangeError5 = RangeError;
-          const rangeError5 = new RangeError("`c..ccc` (weekday) patterns are not supported");
-          throw rangeError5;
-        } else {
-          obj.weekday = ["short", "long", "narrow", "short"][length - 4];
-        }
-      break;
-      case "a":
-        obj.hour12 = true;
-      break;
-      case "b":
-        let _RangeError4 = RangeError;
-        let rangeError6 = new RangeError("`b/B` (period) patterns are not supported, use `a` instead");
-        throw rangeError6;
-      case "B":
-        _RangeError4 = RangeError;
-        rangeError6 = new RangeError("`b/B` (period) patterns are not supported, use `a` instead");
-        throw rangeError6;
-      case "h":
-        obj.hourCycle = "h12";
-        obj.hour = ["numeric", "2-digit"][length - 1];
-      break;
-      case "H":
-        obj.hourCycle = "h23";
-        obj.hour = ["numeric", "2-digit"][length - 1];
-      break;
-      case "K":
-        obj.hourCycle = "h11";
-        obj.hour = ["numeric", "2-digit"][length - 1];
-      break;
-      case "k":
-        obj.hourCycle = "h24";
-        obj.hour = ["numeric", "2-digit"][length - 1];
-      break;
-      case "j":
-        let _RangeError3 = RangeError;
-        let rangeError7 = new RangeError("`j/J/C` (hour) patterns are not supported, use `h/H/K/k` instead");
-        throw rangeError7;
-      case "J":
-        _RangeError3 = RangeError;
-        rangeError7 = new RangeError("`j/J/C` (hour) patterns are not supported, use `h/H/K/k` instead");
-        throw rangeError7;
-      case "C":
-        _RangeError3 = RangeError;
-        rangeError7 = new RangeError("`j/J/C` (hour) patterns are not supported, use `h/H/K/k` instead");
-        throw rangeError7;
-      case "m":
-        obj.minute = ["numeric", "2-digit"][length - 1];
-      break;
-      case "s":
-        obj.second = ["numeric", "2-digit"][length - 1];
-      break;
-      case "S":
-        let _RangeError2 = RangeError;
-        let rangeError8 = new RangeError("`S/A` (second) patterns are not supported, use `s` instead");
-        throw rangeError8;
-      case "A":
-        _RangeError2 = RangeError;
-        rangeError8 = new RangeError("`S/A` (second) patterns are not supported, use `s` instead");
-        throw rangeError8;
-      case "z":
-        let str2 = "long";
-        if (length < 4) {
-          str2 = "short";
-        }
-        obj.timeZoneName = str2;
-      break;
-      case "Z":
-        let _RangeError = RangeError;
-        let rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "O":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "v":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "V":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "X":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "x":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-  });
-  return obj;
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+function formatToAst(content, arg1) {
+  if (typeof content === "string") {
+    const obj = { type: AstBuilder.Text, content };
+    const items = [obj];
+    let bindFormatValuesResult = items;
+  } else {
+    const self = this;
+    bindFormatValuesResult = this.bindFormatValues(_moduleResult, content, arg1);
+  }
+  return bindFormatValuesResult;
+}
+let obj = {};
+const AstBuilder = obj;
+obj.Text = "text";
+obj.Strong = "strong";
+obj.Emphasis = "em";
+obj.Strikethrough = "s";
+obj.Code = "inlineCode";
+obj.Link = "link";
+obj.Paragraph = "paragraph";
+let closure_5 = {
+  $b(content) {
+    return { type: AstBuilder.Strong, content };
+  },
+  $i(content) {
+    return { type: AstBuilder.Emphasis, content };
+  },
+  $del(content) {
+    return { type: AstBuilder.Strikethrough, content };
+  },
+  $code(content) {
+    return { type: AstBuilder.Code, content };
+  },
+  $link(content, arg1, arg2) {
+    [tmp] = arg2;
+    return { type: AstBuilder.Link, target: tmp, content };
+  },
+  $p(content) {
+    return { type: AstBuilder.Paragraph, content };
+  }
 };
+class AstBuilder {
+  constructor() {
+    self = this;
+    tmp = closure_1(this, AstBuilder);
+    tmp2 = closure_3;
+    obj = closure_3(AstBuilder);
+    tmp3 = c2;
+    if (closure_4()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result.result = [];
+    return tmp3Result;
+  }
+}
+_inherits(AstBuilder, _mod1158.FormatBuilder);
+const entry = {
+  key: "pushRichTextTag",
+  value: function pushRichTextTag(formatting, arg1, arg2) {
+    if (formatting in closure_5) {
+      const self = this;
+      const tmp4 = tmp[formatting](arg1, "", arg2);
+      const _Array = Array;
+      const result = this.result;
+      const push = result.push;
+      if (Array.isArray(tmp4)) {
+        const items = [];
+        HermesBuiltin.arraySpread(tmp4, 0);
+        HermesBuiltin.apply(items, result);
+      } else {
+        push(tmp4);
+      }
+    } else {
+      const _HermesInternal = HermesInternal;
+      throw "" + formatting + " is not a known rich text formatting tag";
+    }
+    tmp = closure_5;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "pushLiteralText",
+    value: function pushLiteralText(content) {
+      if (null != this.result[this.result.length - 1]) {
+        if (tmp.type === AstBuilder.Text) {
+          tmp.content = tmp.content + content;
+        }
+      }
+      const result = this.result;
+      result.push({ type: AstBuilder.Text, content });
+    }
+  },
+  {
+    key: "pushObject",
+    value: function pushObject(arg0) {
+      const result = this.result;
+      result.push(arg0);
+    }
+  },
+  {
+    key: "finish",
+    value: function finish() {
+      return this.result;
+    }
+  }
+];
+const _moduleResult = _createClass(AstBuilder, items);
+const metroRequire = _moduleResult;
+
+export { formatToAst };
+export const RichTextNodeType = obj;
+export const astFormatter = { format: formatToAst, builder: _moduleResult };

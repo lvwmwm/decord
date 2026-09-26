@@ -1,12 +1,12 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7517
+// Function ID: 7518
 // Name: ProductIds
-// Dependencies: [1378, 1613, 2]
+// Dependencies: [1374, 1609, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 7519 (ProductIds)
-import PremiumConstants from "PremiumConstants" /* 1378 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
+// Module 7517 (ProductIds)
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
 import size from "module_2" /* 2 */;
 
 ({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = PremiumConstants);

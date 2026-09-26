@@ -1,34 +1,26 @@
-// Module ID: 11620
-// Function ID: 11621
+// Module ID: 11744
+// Function ID: 11745
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [32, 19, 17, 5761, 21, 4790, 580, 558, 568, 504, 11609, 7447, 11378, 7833, 1977, 8477, 11418, 7505, 9136, 7451, 9108, 4975, 1181, 11425, 11509, 11510, 11614, 4786, 1119, 5028, 5220, 4993, 7403, 2]
+// Dependencies: [32, 19, 17, 5759, 21, 4788, 576, 504, 11733, 7445, 11340, 7828, 1973, 8472, 11380, 7400, 7503, 9138, 7449, 9110, 4973, 1177, 11405, 11514, 11515, 11740, 4784, 1115, 5026, 5218, 4991, 2]
+// Exports: default
 
-// Module 11620 (GiftCodeRedeemSuccess)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import _mod4975 from "module_4975" /* 4975 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import GameIcon from "GameIcon" /* 7451 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7505 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9108 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9136 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11425 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11509 */;
-import NameplatePreview from "NameplatePreview" /* 11510 */;
-import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11614 */;
+// Module 11744 (GiftCodeRedeemSuccess)
+import nativeDefault from "native" /* 576 */;
+import native from "native" /* 1177 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11405 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11514 */;
+import NameplatePreview from "NameplatePreview" /* 11515 */;
+import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11740 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SKUStore from "SKUStore" /* 5761 */;
+import SKUStore from "SKUStore" /* 5759 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, body: { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 }, nameplateContainer: null, bundleContainer: null, bundlePreview: null, header: null, message: null, footer: null, gameItemCard: null };
 let obj3 = { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.nameplateContainer = { width: "100%", paddingTop: nativeDefault.space.PX_24 };
@@ -40,267 +32,10 @@ obj2.message = { marginTop: 8, textAlign: "center" };
 obj2.footer = { paddingHorizontal: 24 };
 obj2.gameItemCard = { marginTop: 20 };
 let closure_10 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj5 = { width: "100%", alignItems: "center", paddingTop: nativeDefault.space.PX_24 };
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemSuccess.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
-  const cResult = giftCode(568).c(65);
-  giftCode = giftCode.giftCode;
-  const user = giftCode.user;
-  const tmp4 = firstProfileEffect();
-  dependencyMap = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [first1];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== giftCode.skuId) {
-    const fn = function y() {
-      return SKUStore.get(giftCode.skuId);
-    };
-    cResult[1] = giftCode.skuId;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  let obj = giftCode(568);
-  const stateFromStores = giftCode(504).useStateFromStores(first, tmp7);
-  let tmpResult = giftCode(504);
-  const getOrFetchSubscriptionPlan = giftCode(11609).useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
-  const tmpResult7 = giftCode(11609);
-  const getOrFetchApplication = giftCode(7447).useGetOrFetchApplication(giftCode.applicationId);
-  const tmpResult8 = giftCode(7447);
-  const tmpResult9 = giftCode(11378);
-  let skuId = null;
-  if (tmpResult10.isCollectiblesGiftCode(giftCode)) {
-    skuId = giftCode.skuId;
-  }
-  const product = tmpResult9.useFetchCollectiblesProduct(skuId, true).product;
-  closure_6 = product;
-  first1 = undefined;
-  if (product != null) {
-    first1 = product.items[0];
-  }
-  let type;
-  if (product != null) {
-    type = product.type;
-  }
-  const tmp14 = type === giftCode(1977).CollectiblesItemType.BUNDLE;
-  closure_8 = tmp14;
-  if (cResult[3] !== product) {
-    let tmp16 = product;
-    if (product == null) {
-      let obj2 = { items: [] };
-      tmp16 = obj2;
-    }
-    cResult[3] = product;
-    cResult[4] = tmp16;
-    let tmp15 = tmp16;
-  } else {
-    tmp15 = cResult[4];
-  }
-  tmpResult10 = giftCode(7833);
-  const shopProductItems = giftCode(8477).useShopProductItems(tmp15);
-  const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
-  firstProfileEffect = shopProductItems.firstProfileEffect;
-  const firstNameplate = shopProductItems.firstNameplate;
-  if (cResult[5] !== product) {
-    let tmp19 = product;
-    if (product == null) {
-      let obj3 = { skuId: "", type: tmp(1977).CollectiblesItemType.BUNDLE, items: [] };
-      tmp19 = obj3;
-    }
-    cResult[5] = product;
-    cResult[6] = tmp19;
-    let tmp18 = tmp19;
-  } else {
-    tmp18 = cResult[6];
-  }
-  if (cResult[7] !== tmp18) {
-    let obj4 = { product: tmp18 };
-    cResult[7] = tmp18;
-    cResult[8] = obj4;
-    let tmp20 = obj4;
-  } else {
-    tmp20 = cResult[8];
-  }
-  const tmpResult11 = giftCode(8477);
-  let handleUseNow = giftCode(11418).useHandleUseNow(tmp20);
-  handleUseNow = handleUseNow.handleUseNow;
-  const canUseNow = handleUseNow.canUseNow;
-  const isApplying = handleUseNow.isApplying;
-  const tmp22 = stateFromStores(getOrFetchSubscriptionPlan.useState(), 2);
-  const first2 = tmp22[0];
-  closure_16 = tmp22[1];
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor(arg0) {
-        ({ width, height } = giftCode.nativeEvent.layout);
-        tmp = closure_16((arg0) => {
-          let size = arg0;
-          if (null != arg0) {
-            return size;
-          }
-          const size1 = { width, height };
-          size = size1;
-        });
-        return;
-      }
-    }
-    cResult[9] = R;
-    const tmp24 = R;
-  } else {
-    class R {
-      constructor(arg0) {
-        ({ width, height } = giftCode.nativeEvent.layout);
-        tmp = closure_16((arg0) => {
-          let size = arg0;
-          if (null != arg0) {
-            return size;
-          }
-          const size1 = { width, height };
-          size = size1;
-        });
-        return;
-      }
-    }
-  }
-  onLayout = tmp24;
-  if (cResult[10] === getOrFetchApplication) {
-    class R {
-      constructor(arg0) {
-        ({ width, height } = giftCode.nativeEvent.layout);
-        tmp = closure_16((arg0) => {
-          let size = arg0;
-          if (null != arg0) {
-            return size;
-          }
-          const size1 = { width, height };
-          size = size1;
-        });
-        return;
-      }
-    }
-  }
-  class K {
-    constructor() {
-      tmp = closure_7;
-      if (null == closure_7) {
-        if (null != closure_5) {
-          tmp19 = closure_0;
-          tmp20 = closure_2;
-          obj13 = closure_0(closure_2[17]);
-          tmp21 = closure_3;
-          tmp22 = jsx;
-          if (obj13.isGameItemSKU(closure_3)) {
-            tmp30 = View;
-            obj1 = { style: null, children: null };
-            tmp31 = closure_2;
-            obj1.style = closure_2.gameItemCard;
-            tmp32 = jsx;
-            tmp33 = closure_1;
-            tmp34 = closure_2;
-            obj17 = { sku: null };
-            obj17.sku = tmp21;
-            obj1.children = jsx(closure_1(closure_2[18]), obj17);
-            tmp22Result = tmp22(View, obj1);
-          } else {
-            tmp23 = closure_1;
-            tmp24 = closure_2;
-            obj18 = { game: null, size: null, skuId: null };
-            obj18.game = tmp2;
-            tmp26 = closure_0;
-            tmp27 = closure_2;
-            tmp25 = closure_1(closure_2[19]);
-            obj18.size = closure_0(closure_2[19]).GameIconSizes.LARGE;
-            tmp28 = giftCode;
-            obj18.skuId = giftCode.skuId;
-            tmp22Result = tmp22(tmp25, obj18);
-          }
-          tmp35 = tmp22Result;
-        }
-      }
-      if (closure_8) {
-        if (null != product) {
-          obj19 = { style: null, children: null };
-          tmp7 = closure_2;
-          obj19.style = closure_2.bundleContainer;
-          obj20 = { style: null, onLayout: null, children: null };
-          obj20.style = closure_2.bundlePreview;
-          tmp10 = closure_17;
-          obj20.onLayout = closure_17;
-          tmp12 = null != closure_15;
-          tmp5 = jsx;
-          tmp6 = View;
-          tmp8 = jsx;
-          tmp9 = View;
-          if (tmp12) {
-            tmp13 = jsx;
-            tmp14 = closure_1;
-            tmp15 = closure_2;
-            obj21 = { deco: null, pfx: null, nameplate: null, previewAssets: null, disableStaticBackground: true, size: "large", targetSize: null };
-            tmp16 = firstAvatarDecoration;
-            obj21.deco = firstAvatarDecoration;
-            tmp17 = firstProfileEffect;
-            obj21.pfx = firstProfileEffect;
-            tmp18 = firstNameplate;
-            obj21.nameplate = firstNameplate;
-            obj21.previewAssets = tmp3.previewAssets;
-            obj21.targetSize = tmp11;
-            tmp12 = jsx(closure_1(closure_2[20]), obj21);
-          }
-          obj20.children = tmp12;
-          obj19.children = tmp8(tmp9, obj20);
-          tmp5Result = tmp5(tmp6, obj19);
-        }
-        return tmp5Result;
-      }
-      str = closure_0(closure_2[21]);
-      match = str.match(tmp);
-      obj22 = { type: closure_0(closure_2[14]).CollectiblesItemType.AVATAR_DECORATION };
-      withResult = match.with(obj22, (avatarDecoration) => {
-        let avatarSource;
-        if (user != null) {
-          avatarSource = user.getAvatarSource(null, true, tmp2(tmp3[22]).AVATAR_SIZE_MAP[tmp2(undefined, tmp3[22]).AvatarSizes.GIFT_SUCCESS]);
-        }
-        return closure_8(giftCode(nameplateContainer[22]).Avatar, { source: avatarSource, avatarDecoration, size: giftCode(nameplateContainer[22]).AvatarSizes.GIFT_SUCCESS, animate: true });
-      });
-      obj23 = { type: closure_0(closure_2[14]).CollectiblesItemType.PROFILE_EFFECT };
-      withResult1 = withResult.with(obj23, (profileEffect) => closure_8(user(nameplateContainer[23]), { user, profileEffect }));
-      obj24 = { type: closure_0(closure_2[14]).CollectiblesItemType.PROFILE_FRAME };
-      withResult2 = withResult1.with(obj24, (profileFrame) => closure_8(user(nameplateContainer[24]), { user, profileFrame }));
-      obj25 = { type: closure_0(closure_2[14]).CollectiblesItemType.NAMEPLATE };
-      withResult3 = withResult2.with(obj25, (nameplate) => {
-        const obj = { style: nameplateContainer.nameplateContainer, children: closure_8(giftCode(nameplateContainer[25]).NameplatePreview, { user, nameplate }) };
-        return closure_8(getOrFetchApplication, obj);
-      });
-      tmp5Result = withResult3.otherwise(() => closure_8(user(nameplateContainer[26]), { giftStyle: giftStyle.giftStyle }));
-      return;
-    }
-  }
-  cResult[10] = getOrFetchApplication;
-  cResult[11] = first2;
-  cResult[12] = firstAvatarDecoration;
-  cResult[13] = firstNameplate;
-  cResult[14] = firstProfileEffect;
-  cResult[15] = giftCode.giftStyle;
-  cResult[16] = giftCode.skuId;
-  cResult[17] = tmp14;
-  cResult[18] = first1;
-  cResult[19] = product;
-  cResult[20] = stateFromStores;
-  cResult[21] = tmp4.bundleContainer;
-  cResult[22] = tmp4.bundlePreview;
-  cResult[23] = tmp4.gameItemCard;
-  cResult[24] = tmp4.nameplateContainer;
-  cResult[25] = user;
-  cResult[26] = K;
-}) : ((giftCode) => {
+export default function GiftCodeRedeemSuccess(giftCode) {
   giftCode = giftCode.giftCode;
   const user = giftCode.user;
   _slicedToArray = undefined;
@@ -309,11 +44,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
   const items = [SKUStore];
   const stateFromStores = giftCode(504).useStateFromStores(items, () => SKUStore.get(giftCode.skuId));
   let obj = giftCode(504);
-  const getOrFetchSubscriptionPlan = giftCode(11609).useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
-  const obj2 = giftCode(11609);
-  const getOrFetchApplication = giftCode(7447).useGetOrFetchApplication(giftCode.applicationId);
-  const obj3 = giftCode(7447);
-  const obj4 = giftCode(11378);
+  const getOrFetchSubscriptionPlan = giftCode(11733).useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
+  const obj2 = giftCode(11733);
+  const getOrFetchApplication = giftCode(7445).useGetOrFetchApplication(giftCode.applicationId);
+  const obj3 = giftCode(7445);
+  const obj4 = giftCode(11340);
   let skuId = null;
   if (obj5.isCollectiblesGiftCode(giftCode)) {
     skuId = giftCode.skuId;
@@ -327,24 +62,24 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
   if (product != null) {
     type = product.type;
   }
-  obj5 = giftCode(7833);
+  obj5 = giftCode(7828);
   let tmp10 = product;
   if (product == null) {
     const obj6 = { items: [] };
     tmp10 = obj6;
   }
-  const shopProductItems = giftCode(8477).useShopProductItems(tmp10);
+  const shopProductItems = giftCode(8472).useShopProductItems(tmp10);
   ({ firstAvatarDecoration, firstProfileEffect, firstNameplate } = shopProductItems);
-  const tmp2Result = giftCode(8477);
+  const tmp2Result = giftCode(8472);
   let tmp12 = product;
   if (product == null) {
-    const obj7 = { skuId: "", type: tmp2(1977).CollectiblesItemType.BUNDLE, items: [] };
+    const obj7 = { skuId: "", type: tmp2(1973).CollectiblesItemType.BUNDLE, items: [] };
     tmp12 = obj7;
   }
-  const handleUseNow1 = giftCode(11418).useHandleUseNow({ product: tmp12 });
+  const handleUseNow1 = giftCode(11380).useHandleUseNow({ product: tmp12 });
   const isApplying = handleUseNow1.isApplying;
   ({ handleUseNow, canUseNow } = handleUseNow1);
-  const tmp2Result6 = giftCode(11418);
+  const tmp2Result6 = giftCode(11380);
   [tmp15, c3] = noop.useState();
   const callback = noop.useCallback((nativeEvent) => {
     ({ width: giftCode, height: user } = nativeEvent.nativeEvent.layout);
@@ -364,24 +99,24 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
       if (tmp2Result7.isGameItemSKU(stateFromStores)) {
         const obj10 = { style: tmp.gameItemCard, children: null };
         const obj11 = { sku: stateFromStores };
-        obj10.children = tmp24(user(9136), obj11);
+        obj10.children = tmp24(user(9138), obj11);
         let tmp24Result = tmp24(closure_5, obj10);
       } else {
-        const obj12 = { game: getOrFetchApplication, size: tmp2(7451).GameIconSizes.LARGE, skuId: giftCode.skuId };
-        tmp24Result = tmp24(user(7451), obj12);
-        const tmp26 = user(7451);
+        const obj12 = { game: getOrFetchApplication, size: tmp2(7449).GameIconSizes.LARGE, skuId: giftCode.skuId };
+        tmp24Result = tmp24(user(7449), obj12);
+        const tmp26 = user(7449);
       }
-      tmp2Result7 = tmp2(7505);
+      tmp2Result7 = tmp2(7503);
     }
   }
-  if (type === giftCode(1977).CollectiblesItemType.BUNDLE) {
+  if (type === giftCode(1973).CollectiblesItemType.BUNDLE) {
     if (null != product) {
       const obj13 = { style: tmp.bundleContainer, children: null };
       const obj14 = { style: tmp.bundlePreview, onLayout: callback, children: null };
       let tmp20Result = null != tmp15;
       if (tmp20Result) {
         const obj15 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp15 };
-        tmp20Result = tmp20(user(9108), obj15);
+        tmp20Result = tmp20(user(9110), obj15);
       }
       obj14.children = tmp20Result;
       obj13.children = closure_8(closure_5, obj14);
@@ -390,39 +125,39 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
     const items1 = [tmp20Result2, , ];
     if (null == stateFromStores) {
       const obj16 = { variant: "heading-xl/bold", style: tmp.header, accessibilityRole: "header", children: null };
-      const intl4 = tmp2(1119).intl;
-      obj16.children = intl4.string(tmp2(1119).t["+BNMcF"]);
-      let tmp31 = closure_8(tmp2(4786).Text, obj16);
+      const intl4 = tmp2(1115).intl;
+      obj16.children = intl4.string(tmp2(1115).t["+BNMcF"]);
+      let tmp31 = closure_8(tmp2(4784).Text, obj16);
     } else {
       if (tmp2Result8.isGameItemSKU(stateFromStores)) {
         const obj17 = { variant: "heading-xl/bold", style: tmp.header, accessibilityRole: "header", children: null };
-        const intl3 = tmp2(1119).intl;
-        obj17.children = intl3.string(tmp2(1119).t["5glWta"]);
-        tmp31 = closure_8(tmp2(4786).Text, obj17);
+        const intl3 = tmp2(1115).intl;
+        obj17.children = intl3.string(tmp2(1115).t["5glWta"]);
+        tmp31 = closure_8(tmp2(4784).Text, obj17);
       } else {
         if (giftCode.isSubscription) {
           if (null != getOrFetchSubscriptionPlan) {
             const obj18 = { variant: "heading-xl/bold", style: tmp.header, accessibilityRole: "header", children: null };
-            const intl2 = tmp2(1119).intl;
+            const intl2 = tmp2(1115).intl;
             const obj19 = { skuName: stateFromStores.name };
-            obj18.children = intl2.format(tmp2(1119).t["1C2BG/"], obj19);
-            tmp31 = closure_8(tmp2(4786).Text, obj18);
+            obj18.children = intl2.format(tmp2(1115).t["1C2BG/"], obj19);
+            tmp31 = closure_8(tmp2(4784).Text, obj18);
           }
         }
         if (null != first) {
           const obj20 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.header, accessibilityRole: "header", children: null };
-          const intl = tmp2(1119).intl;
-          obj20.children = intl.string(tmp2(1119).t.IMffmm);
-          tmp31 = closure_8(tmp2(4786).Text, obj20);
+          const intl = tmp2(1115).intl;
+          obj20.children = intl.string(tmp2(1115).t.IMffmm);
+          tmp31 = closure_8(tmp2(4784).Text, obj20);
         }
       }
-      tmp2Result8 = tmp2(7505);
+      tmp2Result8 = tmp2(7503);
     }
     items1[1] = tmp31;
     if (tmp2Result9.isGameItemSKU(stateFromStores)) {
       if (null != getOrFetchApplication) {
         const obj21 = { variant: "text-md/medium", style: tmp.message, children: null };
-        const intl7 = tmp2(1119).intl;
+        const intl7 = tmp2(1115).intl;
         let str2;
         if (stateFromStores != null) {
           str2 = stateFromStores.name;
@@ -431,8 +166,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
           str2 = "";
         }
         const obj22 = { skuName: str2, applicationName: getOrFetchApplication.name };
-        obj21.children = intl7.formatToPlainString(tmp2(1119).t.W2znvX, obj22);
-        let tmp36Result = tmp42(tmp2(4786).Text, obj21);
+        obj21.children = intl7.formatToPlainString(tmp2(1115).t.W2znvX, obj22);
+        let tmp36Result = tmp42(tmp2(4784).Text, obj21);
         let tmp36 = tmp42;
       }
       items1[2] = tmp36Result;
@@ -442,8 +177,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
       if (null != first) {
         if (canUseNow) {
           const obj24 = { text: null, size: "md", loading: null, disabled: null, onPress: null };
-          const intl9 = tmp2(1119).intl;
-          obj24.text = intl9.string(tmp2(1119).t.MAS7uK);
+          const intl9 = tmp2(1115).intl;
+          obj24.text = intl9.string(tmp2(1115).t.MAS7uK);
           obj24.loading = isApplying;
           obj24.disabled = isApplying;
           obj24.onPress = handleUseNow;
@@ -452,20 +187,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
         obj23.children = tmp36(tmp44, obj25);
         items2[1] = tmp36(tmp43, obj23);
         obj8.children = items2;
-        return tmp17(tmp2(7403).SafeAreaPaddingView, obj8);
+        return tmp17(tmp2(7400).SafeAreaPaddingView, obj8);
       }
       obj25 = { text: null, size: "md", onPress: null };
-      const intl8 = tmp2(1119).intl;
-      obj25.text = intl8.string(tmp2(1119).t["NX+WJN"]);
-      obj25.onPress = user(4993).pop;
+      const intl8 = tmp2(1115).intl;
+      obj25.text = intl8.string(tmp2(1115).t["NX+WJN"]);
+      obj25.onPress = user(4991).pop;
       tmp43 = closure_5;
     }
     if (giftCode.isSubscription) {
       if (null != getOrFetchSubscriptionPlan) {
-        const obj26 = { variant: "text-md/medium", style: tmp.message, children: tmp2(5028).getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) };
-        tmp36Result = closure_8(tmp2(4786).Text, obj26);
+        const obj26 = { variant: "text-md/medium", style: tmp.message, children: tmp2(5026).getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) };
+        tmp36Result = closure_8(tmp2(4784).Text, obj26);
         tmp36 = closure_8;
-        const tmp2Result10 = tmp2(5028);
+        const tmp2Result10 = tmp2(5026);
       }
     }
     tmp36 = closure_8;
@@ -476,36 +211,36 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftCode) => {
         name = stateFromStores.name;
       }
       if (null != name) {
-        const intl6 = tmp2(1119).intl;
+        const intl6 = tmp2(1115).intl;
         const obj28 = { itemName: stateFromStores.name };
-        let formatToPlainStringResult = intl6.formatToPlainString(tmp2(1119).t["4kp0AB"], obj28);
+        let formatToPlainStringResult = intl6.formatToPlainString(tmp2(1115).t["4kp0AB"], obj28);
       }
       obj27.children = formatToPlainStringResult;
       tmp36Result = tmp36(tmp37, obj27);
     }
-    const intl5 = tmp2(1119).intl;
-    formatToPlainStringResult = intl5.string(tmp2(1119).t["5ayf7w"]);
-    tmp2Result9 = tmp2(7505);
+    const intl5 = tmp2(1115).intl;
+    formatToPlainStringResult = intl5.string(tmp2(1115).t["5ayf7w"]);
+    tmp2Result9 = tmp2(7503);
   }
   const tmp14 = _slicedToArray(noop.useState(), 2);
   tmp18 = closure_6;
-  const match = giftCode(4975).match(first);
-  const str = giftCode(4975);
-  const obj29 = { type: giftCode(1977).CollectiblesItemType.AVATAR_DECORATION };
-  const withResult = match.with({ type: giftCode(1977).CollectiblesItemType.AVATAR_DECORATION }, (avatarDecoration) => {
+  const match = giftCode(4973).match(first);
+  const str = giftCode(4973);
+  const obj29 = { type: giftCode(1973).CollectiblesItemType.AVATAR_DECORATION };
+  const withResult = match.with({ type: giftCode(1973).CollectiblesItemType.AVATAR_DECORATION }, (avatarDecoration) => {
     let avatarSource;
     if (user != null) {
-      avatarSource = user.getAvatarSource(null, true, tmp2(1181).AVATAR_SIZE_MAP[tmp2(undefined, 1181).AvatarSizes.GIFT_SUCCESS]);
+      avatarSource = user.getAvatarSource(null, true, tmp2(1177).AVATAR_SIZE_MAP[tmp2(undefined, 1177).AvatarSizes.GIFT_SUCCESS]);
     }
-    return closure_2_8(native.Avatar, { source: avatarSource, avatarDecoration, size: native.AvatarSizes.GIFT_SUCCESS, animate: true });
+    return React6(native.Avatar, { source: avatarSource, avatarDecoration, size: native.AvatarSizes.GIFT_SUCCESS, animate: true });
   });
-  const obj30 = { type: giftCode(1977).CollectiblesItemType.PROFILE_EFFECT };
-  const withResult1 = withResult.with({ type: giftCode(1977).CollectiblesItemType.PROFILE_EFFECT }, (profileEffect) => closure_2_8(ProfileEffectUserPreviewDefault, { user, profileEffect }));
-  const obj31 = { type: giftCode(1977).CollectiblesItemType.PROFILE_FRAME };
-  const withResult2 = withResult1.with({ type: giftCode(1977).CollectiblesItemType.PROFILE_FRAME }, (profileFrame) => closure_2_8(ProfileFrameUserPreviewDefault, { user, profileFrame }));
-  const obj32 = { type: giftCode(1977).CollectiblesItemType.NAMEPLATE };
-  tmp20Result2 = withResult2.with({ type: giftCode(1977).CollectiblesItemType.NAMEPLATE }, (nameplate) => {
-    const obj = { style: nameplateContainer.nameplateContainer, children: closure_2_8(NameplatePreview.NameplatePreview, { user, nameplate }) };
-    return closure_2_8(hasOwnProperty, obj);
-  }).otherwise(() => closure_2_8(GiftBoxAnimationDefault, { giftStyle: giftCode.giftStyle }));
-});
+  const obj30 = { type: giftCode(1973).CollectiblesItemType.PROFILE_EFFECT };
+  const withResult1 = withResult.with({ type: giftCode(1973).CollectiblesItemType.PROFILE_EFFECT }, (profileEffect) => React6(ProfileEffectUserPreviewDefault, { user, profileEffect }));
+  const obj31 = { type: giftCode(1973).CollectiblesItemType.PROFILE_FRAME };
+  const withResult2 = withResult1.with({ type: giftCode(1973).CollectiblesItemType.PROFILE_FRAME }, (profileFrame) => React6(ProfileFrameUserPreviewDefault, { user, profileFrame }));
+  const obj32 = { type: giftCode(1973).CollectiblesItemType.NAMEPLATE };
+  tmp20Result2 = withResult2.with({ type: giftCode(1973).CollectiblesItemType.NAMEPLATE }, (nameplate) => {
+    const obj = { style: nameplateContainer.nameplateContainer, children: React6(NameplatePreview.NameplatePreview, { user, nameplate }) };
+    return React6(hasOwnProperty, obj);
+  }).otherwise(() => React6(GiftBoxAnimationDefault, { giftStyle: giftCode.giftStyle }));
+};

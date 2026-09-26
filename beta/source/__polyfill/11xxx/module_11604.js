@@ -1,9 +1,0 @@
-// Module ID: 11604
-// Function ID: 11605
-// Dependencies: [1125]
-
-// Module 11604
-import registerAsset from "module_1125" /* 1125 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/billing/native/images", width: 223, height: 128.5, scales: [2, 3], hash: "f5aa8d22ffc464d3c9704d96fbbd1afa", name: "blocked-purchases-dark", type: "png" });

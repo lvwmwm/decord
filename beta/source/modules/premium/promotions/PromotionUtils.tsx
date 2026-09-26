@@ -1,20 +1,20 @@
-// Module ID: 13729
-// Function ID: 13730
+// Module ID: 13719
+// Function ID: 13720
 // Name: PromotionUtils
-// Dependencies: [5, 1224, 11000, 10999, 1378, 1078, 2008, 4642, 1275, 1368, 1245, 1389, 2031, 11, 2033, 11031, 2]
+// Dependencies: [5, 1220, 10962, 10961, 1374, 1074, 2004, 4639, 1271, 1364, 1241, 1385, 2027, 11, 2029, 10993, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 13729 (PromotionUtils)
+// Module 13719 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import FlagUtils from "FlagUtils" /* 1389 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2033 */;
-import constants from "constants" /* 11031 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
+import constants from "constants" /* 10993 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
-import PromotionRecord from "PromotionRecord" /* 11000 */;
-import PromotionsStore from "PromotionsStore" /* 10999 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import PromotionRecord from "PromotionRecord" /* 10962 */;
+import PromotionsStore from "PromotionsStore" /* 10961 */;
 
 require = fn;
 function claimedOutboundPromotionCodeFromServer(code) {
@@ -31,7 +31,7 @@ let closure_12 = async function _claimOutboundPromotion(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -57,7 +57,7 @@ let closure_12 = async function _claimOutboundPromotion(arg0, value) {
           closure_131_6 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -114,10 +114,10 @@ let closure_12 = async function _claimOutboundPromotion(arg0, value) {
     }
   }
 };
-const PromotionFlags = fn(1378).PromotionFlags;
-const Constants = fn(1078);
+const PromotionFlags = fn(1374).PromotionFlags;
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, Endpoints: closure_9, Platforms: c10 } = Constants);
-const ActivityPlatform = fn(2008).ActivityPlatform;
+const ActivityPlatform = fn(2004).ActivityPlatform;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/promotions/PromotionUtils.tsx");
 

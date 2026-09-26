@@ -1,50 +1,21 @@
-// Module ID: 17568
-// Function ID: 17569
+// Module ID: 17606
+// Function ID: 17607
 // Name: useCameraEncodeError
-// Dependencies: [502, 9712, 558, 568, 9713, 504, 2]
+// Dependencies: [502, 9717, 504, 9718, 2]
+// Exports: default
 
-// Module 17568 (useCameraEncodeError)
-import AVError from "AVError" /* 9713 */;
+// Module 17606 (useCameraEncodeError)
+import AVError from "AVError" /* 9718 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 9712 */;
+import AVErrorStore from "AVErrorStore" /* 9717 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AVErrorStore, AuthenticationStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      if (AuthenticationStore.getId() === closure_0) {
-        const first = AVErrorStore.getActiveErrorsOfType(AVError.AVError.CAMERA_SEND_LOW_FPS)[0];
-        let type;
-        if (first != null) {
-          type = first.type;
-        }
-        return type;
-      }
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+export default function useCameraEncodeError(arg0) {
   _require = arg0;
   const items = [AVErrorStore, AuthenticationStore];
   return require("initialize").useStateFromStores(items, () => {
@@ -57,4 +28,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return type;
     }
   });
-});
+};

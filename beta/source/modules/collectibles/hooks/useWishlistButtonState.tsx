@@ -1,14 +1,14 @@
-// Module ID: 9140
-// Function ID: 9141
+// Module ID: 9142
+// Function ID: 9143
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 7894, 7441, 2013, 504, 9086, 9093, 4642, 1119, 2]
+// Dependencies: [5, 32, 19, 7889, 7439, 2009, 504, 9088, 9095, 4639, 1115, 2]
 // Exports: useWishlistButtonState
 
-// Module 9140 (useWishlistButtonState)
+// Module 9142 (useWishlistButtonState)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7894 */;
+import UserProfileStore from "UserProfileStore" /* 7889 */;
 
 const require = globalThis.__r;
 
@@ -69,7 +69,7 @@ export const useWishlistButtonState = function useWishlistButtonState(onRemoveSu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

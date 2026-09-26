@@ -1,18 +1,18 @@
-// Module ID: 1186
-// Function ID: 1187
+// Module ID: 1182
+// Function ID: 1183
 // Name: ThemeStore
-// Dependencies: [1187, 1188, 1224, 1189, 1088, 1078, 1223, 1230, 14394, 504, 2028, 577, 2]
+// Dependencies: [1183, 1184, 1220, 1185, 1084, 1074, 1219, 1226, 14384, 504, 2024, 573, 2]
 
-// Module 1186 (ThemeStore)
+// Module 1182 (ThemeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1223 */;
-import resolveThemeDefault from "resolveTheme" /* 1230 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2028 */;
-import updateBackgroundColorDefault from "updateBackgroundColor" /* 14394 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1219 */;
+import resolveThemeDefault from "resolveTheme" /* 1226 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2024 */;
+import updateBackgroundColorDefault from "updateBackgroundColor" /* 14384 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
 function handleThemeChange() {
@@ -25,10 +25,10 @@ function handleThemeChange() {
   }
   return flag;
 }
-const ThemeConstants = fn(1189);
+const ThemeConstants = fn(1185);
 ({ SystemTheme: metroRequire, THEME_PREFERENCES_WEB_REFRESH, THEME_PREFERENCES_MOBILE } = ThemeConstants);
-const UserSettingsDelay = fn(1088).UserSettingsDelay;
-const ThemeTypes = fn(1078).ThemeTypes;
+const UserSettingsDelay = fn(1084).UserSettingsDelay;
+const ThemeTypes = fn(1074).ThemeTypes;
 let obj = { UNSET: 0, [0]: "UNSET", SET: 1, [1]: "SET" };
 let SET = obj.UNSET;
 obj = THEME_PREFERENCES_MOBILE;
@@ -75,8 +75,8 @@ Object.defineProperty(prototype, "systemTheme", {
   },
   set: undefined
 });
-prototype["themePreferenceForSystemTheme"] = function themePreferenceForSystemTheme(stateFromStores) {
-  return obj[stateFromStores];
+prototype["themePreferenceForSystemTheme"] = function themePreferenceForSystemTheme(systemTheme) {
+  return obj[systemTheme];
 };
 prototype["getSyncedClientTheme"] = function getSyncedClientTheme(systemTheme) {
   return syncedClientThemes[systemTheme];
@@ -154,7 +154,7 @@ const themeStore = new ThemeStore(DispatcherDefault, {
       let flag = tmp7 !== closure_13;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(14394)(closure_13);
+        tmp2(14384)(closure_13);
         flag = true;
       }
       tmp = flag;

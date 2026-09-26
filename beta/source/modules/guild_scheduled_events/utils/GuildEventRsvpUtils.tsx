@@ -1,25 +1,25 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9823
+// Function ID: 9824
 // Name: GuildEventRsvpUtils
-// Dependencies: [502, 7805, 2051, 1119, 9785, 9784, 9781, 2]
+// Dependencies: [502, 7800, 2047, 1115, 9789, 9788, 9785, 2]
 // Exports: getExistingRsvp, getResponseOptions, handleRsvp
 
-// Module 9799 (GuildEventRsvpUtils)
-import util from "util" /* 1119 */;
-import useEventSchedule from "useEventSchedule" /* 9784 */;
-import useEventException from "useEventException" /* 9785 */;
+// Module 9823 (GuildEventRsvpUtils)
+import util from "util" /* 1115 */;
+import useEventSchedule from "useEventSchedule" /* 9788 */;
+import useEventException from "useEventException" /* 9789 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7805 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7800 */;
 
 require = fn;
-const GuildScheduledEventsConstants = fn(2051);
+const GuildScheduledEventsConstants = fn(2047);
 ({ GuildScheduledEventUserResponses: closure_4, GuildScheduledEventStatusDone: hasOwnProperty } = GuildScheduledEventsConstants);
 const ResponseOptions = { SERIES: 0, [0]: "SERIES", RECURRENCE: 1, [1]: "RECURRENCE" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/utils/GuildEventRsvpUtils.tsx");
 
-export const getExistingRsvp = function getExistingRsvp(id, nextRecurrenceIdInEvent) {
-  return GuildScheduledEventStore.getRsvp(id, nextRecurrenceIdInEvent, AuthenticationStore.getId());
+export const getExistingRsvp = function getExistingRsvp(id, c1) {
+  return GuildScheduledEventStore.getRsvp(id, c1, AuthenticationStore.getId());
 };
 export { ResponseOptions };
 export const getResponseOptions = function getResponseOptions() {
@@ -51,13 +51,13 @@ export const handleRsvp = function handleRsvp(openRsvpPicker) {
         scheduled_start_time1 = guildScheduledEvent.scheduled_start_time;
       }
       const date = new Date(scheduled_start_time1);
-      recurrenceStatus = tmp33(9781).getRecurrenceStatus(eventException, obj5.getEventSchedule(guildScheduledEvent, recurrenceId).startTime, date);
-      const tmp33Result = tmp33(9781);
+      recurrenceStatus = tmp33(9785).getRecurrenceStatus(eventException, obj5.getEventSchedule(guildScheduledEvent, recurrenceId).startTime, date);
+      const tmp33Result = tmp33(9785);
     }
     if (null == recurrenceStatus) {
       if (recurrenceId == null) {
-        recurrenceId = tmp33(9781).getNextRecurrenceIdInEvent(guildScheduledEvent);
-        const tmp33Result2 = tmp33(9781);
+        recurrenceId = tmp33(9785).getNextRecurrenceIdInEvent(guildScheduledEvent);
+        const tmp33Result2 = tmp33(9785);
       }
       let tmp12 = recurrenceId;
     } else {

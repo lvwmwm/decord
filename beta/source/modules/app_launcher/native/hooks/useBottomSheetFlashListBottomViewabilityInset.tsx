@@ -1,12 +1,12 @@
-// Module ID: 12274
-// Function ID: 12275
+// Module ID: 12380
+// Function ID: 12381
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [19, 1482, 11505, 10386, 12, 4529, 2]
+// Dependencies: [19, 1478, 11510, 11648, 12, 4524, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 12274 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 12380 (useBottomSheetFlashListBottomViewabilityInset)
 import _modDef12 from "module_12" /* 12 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,13 +16,13 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useBottomSheetFlashListBottomViewabilityInset.tsx");
 
 export const useBottomSheetFlashListBottomViewabilityInset = function useBottomSheetFlashListBottomViewabilityInset() {
-  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(11505).AppLauncherContext);
+  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(11510).AppLauncherContext);
   bottomSheetPosition = undefined;
   if (context != null) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
   const flashListRef = obj.useRef(null);
-  const diff = flashListRef(1482)().height - flashListRef(10386)().maximum;
+  const diff = flashListRef(1478)().height - flashListRef(11648)().maximum;
   dependencyMap = diff;
   bottomVisibilityInsetRef = obj.useRef(9999);
   const memo = obj.useMemo(() => _modDef12.debounce((current) => {
@@ -32,7 +32,7 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
       current.updateViewableItems();
     }
   }, 200), []);
-  const tmp3 = flashListRef(1482)();
+  const tmp3 = flashListRef(1478)();
   const fn = function u() {
     let num;
     if (bottomSheetPosition != null) {
@@ -49,8 +49,8 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
   const fn2 = function s(arg0) {
     ReanimatedRexport.runOnJS(memo)(arg0 - diff);
   };
-  const tmp4Result = bottomSheetPosition(4529);
-  fn2.__closure = { distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: bottomSheetPosition(4529).runOnJS, handleBottomViewabilityInsetDebounced: memo };
+  const tmp4Result = bottomSheetPosition(4524);
+  fn2.__closure = { distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: bottomSheetPosition(4524).runOnJS, handleBottomViewabilityInsetDebounced: memo };
   fn2.__workletHash = 6025307858098;
   fn2.__initData = __initData;
   const animatedReaction = tmp4Result.useAnimatedReaction(fn, fn2);

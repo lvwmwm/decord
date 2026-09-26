@@ -1,16 +1,16 @@
-// Module ID: 12864
-// Function ID: 12865
+// Module ID: 12963
+// Function ID: 12964
 // Name: ContactSyncManager
-// Dependencies: [5, 5532, 1376, 12862, 12861, 1078, 510, 12863, 7397, 7316, 2]
+// Dependencies: [5, 5530, 1372, 12961, 12960, 1074, 510, 12962, 7395, 7315, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 12864 (ContactSyncManager)
+// Module 12963 (ContactSyncManager)
 import Storage3 from "Storage" /* 510 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12962 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
-import UserStore from "UserStore" /* 1376 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
+import UserStore from "UserStore" /* 1372 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 let closure_11 = async function _requestAndSyncContacts(arg0, value) {
@@ -24,7 +24,7 @@ let closure_11 = async function _requestAndSyncContacts(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -101,7 +101,7 @@ let closure_11 = async function _requestAndSyncContacts(arg0, value) {
           if (null == phone) {
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           } else {
             c5 = 2;
             c6 = 1;
@@ -121,10 +121,10 @@ let closure_11 = async function _requestAndSyncContacts(arg0, value) {
     }
   }
 };
-const ContactSyncPersistedStore = fn(12862);
+const ContactSyncPersistedStore = fn(12961);
 ({ setStoredContacts: hasOwnProperty, deleteStoredContacts: metroRequire, useContactSyncStore: closure_7 } = ContactSyncPersistedStore);
-const ContactPermissions = fn(12861).ContactPermissions;
-const PlatformTypes = fn(1078).PlatformTypes;
+const ContactPermissions = fn(12960).ContactPermissions;
+const PlatformTypes = fn(1074).PlatformTypes;
 const LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY = "LAST_USER_CONTACTS_REQUEST_TIMESTAMP_KEY";
 const prototype = function ContactSyncLifecycleManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

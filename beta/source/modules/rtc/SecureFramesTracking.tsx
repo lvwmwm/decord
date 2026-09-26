@@ -1,17 +1,17 @@
-// Module ID: 9991
-// Function ID: 9992
+// Module ID: 10013
+// Function ID: 10014
 // Name: SecureFramesTracking
-// Dependencies: [2045, 1078, 4970, 8497, 1245, 2]
+// Dependencies: [2041, 1074, 4968, 8492, 1241, 2]
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 9991 (SecureFramesTracking)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8497 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 10013 (SecureFramesTracking)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8492 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/SecureFramesTracking.tsx");
 

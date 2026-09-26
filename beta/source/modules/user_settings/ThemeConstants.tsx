@@ -1,11 +1,11 @@
-// Module ID: 1189
-// Function ID: 1190
+// Module ID: 1185
+// Function ID: 1186
 // Name: ThemeConstants
-// Dependencies: [1078, 1190, 2]
+// Dependencies: [1074, 1186, 2]
 
-// Module 1189 (ThemeConstants)
-import Constants from "Constants" /* 1078 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
+// Module 1185 (ThemeConstants)
+import Constants from "Constants" /* 1074 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;

@@ -1,28 +1,45 @@
-// Module ID: 17855
-// Function ID: 17856
+// Module ID: 17846
+// Function ID: 17847
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 17856, 17857, 17858, 17859, 17860, 17861, 17862, 17863, 1119, 4790, 580, 558, 568, 4786, 5834, 5373, 2]
+// Dependencies: [19, 17, 21, 17847, 17848, 17849, 17850, 17851, 17852, 17853, 17854, 1115, 4788, 576, 4784, 5371, 5836, 2]
+// Exports: default
 
-// Module 17855 (PresetAvatarSelect)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import Pressables from "Pressables" /* 5373 */;
-import FastImageDefault from "FastImage" /* 5834 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 17856 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 17857 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 17858 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 17859 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 17860 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 17861 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 17862 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 17863 */;
+// Module 17846 (PresetAvatarSelect)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Pressables from "Pressables" /* 5371 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 17847 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 17848 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 17849 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 17850 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 17851 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 17852 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 17853 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 17854 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
+function DefaultAvatarButton(selected) {
+  selected = selected.selected;
+  ({ source, onSelect, accessibilityLabel } = selected);
+  const tmp = closure_7();
+  const items = [tmp.defaultAvatarContainer, ];
+  let prop;
+  if (selected) {
+    prop = tmp.defaultAvatarSelected;
+  }
+  const obj = { style: items, accessibilityRole: "button", accessibilityLabel, accessibilityState: { selected }, accessibilityHint: null, onPress: null, children: null };
+  items[1] = prop;
+  const intl = tmp3(1115).intl;
+  obj.accessibilityHint = intl.string(util.t.vw2RsD);
+  obj.onPress = onSelect;
+  obj.children = React4(FastImageDefault, { style: tmp.defaultAvatarButton, source: { uri: source } });
+  return React4(Pressables.PressableOpacity, obj);
+}
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
@@ -99,7 +116,7 @@ items1[4] = {
     return intl.string(util.t.Jb8PYM);
   }
 };
-let obj5 = {
+const obj5 = {
   avatar: defaultAvatar5Default,
   label() {
     const intl = util.intl;
@@ -141,7 +158,7 @@ items1[7] = {
     return intl.string(util.t.zpfUeg);
   }
 };
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 const obj10 = { container: { display: "flex", alignItems: "center", flex: 1 }, buttonsContainer: { display: "flex", flexDirection: "row", marginTop: 20, justifyContent: "space-between" }, defaultAvatarButton: null, defaultAvatarContainer: null, defaultAvatarSelected: null };
 let size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xl };
 obj10.defaultAvatarButton = size;
@@ -155,220 +172,10 @@ const obj8 = {
 };
 obj10.defaultAvatarSelected = { borderColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 let closure_7 = createStyles.createStyles(obj10);
-fn(558);
-const obj11 = { borderColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-const ReactCompilerGating = fn(558);
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(17);
-  ({ source, onSelect, selected, accessibilityLabel } = arg0);
-  const tmp4 = closure_7();
-  let prop;
-  if (selected) {
-    prop = tmp4.defaultAvatarSelected;
-  }
-  if (cResult[0] === tmp4.defaultAvatarContainer) {
-    if (cResult[1] === prop) {
-      let tmp6 = cResult[2];
-    }
-    if (cResult[3] !== selected) {
-      const obj2 = { selected };
-      cResult[3] = selected;
-      cResult[4] = obj2;
-      let tmp7 = obj2;
-    } else {
-      tmp7 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t.vw2RsD);
-      cResult[5] = stringResult;
-      let tmp9 = stringResult;
-    } else {
-      tmp9 = cResult[5];
-    }
-    if (cResult[6] !== source) {
-      const obj3 = { uri: source };
-      cResult[6] = source;
-      cResult[7] = obj3;
-      let tmp11 = obj3;
-    } else {
-      tmp11 = cResult[7];
-    }
-    if (cResult[8] === tmp4.defaultAvatarButton) {
-      if (cResult[9] === tmp11) {
-        let tmp12 = cResult[10];
-      }
-      if (cResult[11] === accessibilityLabel) {
-        if (cResult[12] === onSelect) {
-          if (cResult[13] === tmp6) {
-            if (cResult[14] === tmp7) {
-              if (cResult[15] === tmp12) {
-                let tmp16 = cResult[16];
-              }
-              return tmp16;
-            }
-          }
-        }
-      }
-      const obj4 = { style: tmp6, accessibilityRole: "button", accessibilityLabel, accessibilityState: tmp7, accessibilityHint: tmp9, onPress: onSelect, children: tmp12 };
-      const tmp18 = React4(tmp(5373).PressableOpacity, obj4);
-      cResult[11] = accessibilityLabel;
-      cResult[12] = onSelect;
-      cResult[13] = tmp6;
-      cResult[14] = tmp7;
-      cResult[15] = tmp12;
-      cResult[16] = tmp18;
-      tmp16 = tmp18;
-    }
-    const obj5 = { style: tmp4.defaultAvatarButton, source: tmp11 };
-    const tmp15 = React4(FastImageDefault, obj5);
-    cResult[8] = tmp4.defaultAvatarButton;
-    cResult[9] = tmp11;
-    cResult[10] = tmp15;
-    tmp12 = tmp15;
-  }
-  const items = [tmp4.defaultAvatarContainer, prop];
-  cResult[0] = tmp4.defaultAvatarContainer;
-  cResult[1] = prop;
-  cResult[2] = items;
-  tmp6 = items;
-}) : ((selected) => {
-  selected = selected.selected;
-  ({ source, onSelect, accessibilityLabel } = selected);
-  const tmp = closure_7();
-  const items = [tmp.defaultAvatarContainer, ];
-  let prop;
-  if (selected) {
-    prop = tmp.defaultAvatarSelected;
-  }
-  const obj = { style: items, accessibilityRole: "button", accessibilityLabel, accessibilityState: { selected }, accessibilityHint: null, onPress: null, children: null };
-  items[1] = prop;
-  const intl = tmp3(1119).intl;
-  obj.accessibilityHint = intl.string(util.t.vw2RsD);
-  obj.onPress = onSelect;
-  obj.children = React4(FastImageDefault, { style: tmp.defaultAvatarButton, source: { uri: source } });
-  return React4(Pressables.PressableOpacity, obj);
-});
 size = fn(2);
 const result = size.fileFinishedImporting("modules/avatar/native/components/PresetAvatarSelect.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAvatarSelect) => {
-  const cResult = onAvatarSelect(568).c(19);
-  onAvatarSelect = onAvatarSelect.onAvatarSelect;
-  const selectedAvatar = onAvatarSelect.selectedAvatar;
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { variant: "text-sm/medium", color: "text-default", children: null };
-    let intl = tmp(1119).intl;
-    obj2.children = intl.string(tmp(1119).t.yP28YL);
-    const tmp7 = closure_4(tmp(4786).Text, obj2);
-    cResult[0] = tmp7;
-    let first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [0, 1, 2, 3];
-    cResult[1] = items;
-    let arr = items;
-  } else {
-    arr = cResult[1];
-  }
-  if (cResult[2] === onAvatarSelect) {
-    if (cResult[3] === selectedAvatar) {
-      let tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp4.buttonsContainer) {
-      if (cResult[6] === tmp8) {
-        let tmp10 = cResult[7];
-      }
-      const _Symbol = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        items1 = [4, 5, 6, 7];
-        cResult[8] = items1;
-        let arr3 = items1;
-      } else {
-        arr3 = cResult[8];
-      }
-      if (cResult[9] === onAvatarSelect) {
-        if (cResult[10] === selectedAvatar) {
-          let tmp14 = cResult[11];
-        }
-        if (cResult[12] === tmp4.buttonsContainer) {
-          if (cResult[13] === tmp14) {
-            let tmp16 = cResult[14];
-          }
-          if (cResult[15] === tmp4.container) {
-            if (cResult[16] === tmp16) {
-              if (cResult[17] === tmp10) {
-                let tmp20 = cResult[18];
-              }
-              return tmp20;
-            }
-          }
-          const obj3 = { style: tmp4.container, accessibilityRole: "list", children: null };
-          const items2 = [first, tmp10, tmp16];
-          obj3.children = items2;
-          const tmp23 = closure_5(View, obj3);
-          cResult[15] = tmp4.container;
-          cResult[16] = tmp16;
-          cResult[17] = tmp10;
-          cResult[18] = tmp23;
-          tmp20 = tmp23;
-        }
-        const obj4 = { style: tmp4.buttonsContainer, children: tmp14 };
-        const tmp19 = closure_4(View, obj4);
-        cResult[12] = tmp4.buttonsContainer;
-        cResult[13] = tmp14;
-        cResult[14] = tmp19;
-        tmp16 = tmp19;
-      }
-      const mapped = arr3.map((item) => {
-        closure_0 = item;
-        const obj2 = {
-          source: dependencyMap2[item].avatar,
-          onSelect() {
-            return onAvatarSelect(closure_0);
-          },
-          selected: selectedAvatar === item,
-          accessibilityLabel: null
-        };
-        const intl = onAvatarSelect(1119).intl;
-        obj2.accessibilityLabel = intl.formatToPlainString(onAvatarSelect(1119).t["1K8jaQ"], { index: item + 1, description: dependencyMap2[item].label() });
-        return closure_1_4(closure_1_8, obj2, item);
-      });
-      cResult[9] = onAvatarSelect;
-      cResult[10] = selectedAvatar;
-      cResult[11] = mapped;
-      tmp14 = mapped;
-    }
-    const obj5 = { style: tmp4.buttonsContainer, children: tmp8 };
-    const tmp13 = closure_4(View, obj5);
-    cResult[5] = tmp4.buttonsContainer;
-    cResult[6] = tmp8;
-    cResult[7] = tmp13;
-    tmp10 = tmp13;
-  }
-  const mapped1 = arr.map((item) => {
-    closure_0 = item;
-    const obj2 = {
-      source: dependencyMap2[item].avatar,
-      onSelect() {
-        return onAvatarSelect(closure_0);
-      },
-      selected: selectedAvatar === item,
-      accessibilityLabel: null
-    };
-    const intl = onAvatarSelect(1119).intl;
-    obj2.accessibilityLabel = intl.formatToPlainString(onAvatarSelect(1119).t["1K8jaQ"], { index: item + 1, description: dependencyMap2[item].label() });
-    return closure_1_4(closure_1_8, obj2, item);
-  });
-  cResult[2] = onAvatarSelect;
-  cResult[3] = selectedAvatar;
-  cResult[4] = mapped1;
-  tmp8 = mapped1;
-}) : ((arg0) => {
+export default function PresetAvatarSelect(arg0) {
   ({ onAvatarSelect: require, selectedAvatar: importDefault } = arg0);
   const tmp = closure_7();
   const obj = { style: tmp.container, accessibilityRole: "list", children: null };
@@ -390,7 +197,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAvatarSelect) 
     };
     const intl = util.intl;
     obj2.accessibilityLabel = intl.formatToPlainString(util.t["1K8jaQ"], { index: item + 1, description: dependencyMap2[item].label() });
-    return closure_1_4(closure_1_8, obj2, item);
+    return closure_1_4(DefaultAvatarButton, obj2, item);
   });
   items[1] = closure_4(View, obj3);
   const obj4 = { style: tmp.buttonsContainer, children: null };
@@ -407,11 +214,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onAvatarSelect) 
     };
     const intl = util.intl;
     obj2.accessibilityLabel = intl.formatToPlainString(util.t["1K8jaQ"], { index: item + 1, description: dependencyMap2[item].label() });
-    return closure_1_4(closure_1_8, obj2, item);
+    return closure_1_4(DefaultAvatarButton, obj2, item);
   });
   items[2] = closure_4(View, obj4);
   obj.children = items;
   return closure_5(View, obj);
-});
+};
 export const DEFAULT_AVATARS = items;
 export const DEFAULT_AVATARS_WITH_LABELS = items1;

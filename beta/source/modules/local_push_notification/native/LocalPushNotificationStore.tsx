@@ -1,21 +1,21 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14014
+// Function ID: 14015
 // Name: LocalPushNotificationStore
-// Dependencies: [2067, 5664, 9347, 1078, 9585, 4384, 1119, 504, 577, 2]
+// Dependencies: [2063, 5662, 9349, 1074, 9589, 4380, 1115, 504, 573, 2]
 
-// Module 14024 (LocalPushNotificationStore)
+// Module 14014 (LocalPushNotificationStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import util from "util" /* 1119 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import PushNotificationDefault from "PushNotification" /* 9585 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5664 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import util from "util" /* 1115 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import PushNotificationDefault from "PushNotification" /* 9589 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5662 */;
 
 require = fn;
-const Constants = fn(9347);
+const Constants = fn(9349);
 ({ LocalNotificationTypes: hasOwnProperty, FIRE_DATE_FORMAT: metroRequire } = Constants);
-const VerificationLevels = fn(1078).VerificationLevels;
+const VerificationLevels = fn(1074).VerificationLevels;
 const set = new Set();
 const Store = initializeDefault.Store;
 class LocalPushNotificationStore extends Store {
@@ -46,9 +46,9 @@ const localPushNotificationStore = new LocalPushNotificationStore(DispatcherDefa
             set.add(userInfo);
           }
         }
-        const result = closure_1_1(9585).cancelLocalNotifications(userInfo);
-        const obj = closure_1_1(9585);
-        const result1 = closure_1_1(9585).cancelLocalNotifications(userInfo);
+        const result = closure_1_1(9589).cancelLocalNotifications(userInfo);
+        const obj = closure_1_1(9589);
+        const result1 = closure_1_1(9589).cancelLocalNotifications(userInfo);
         set.delete(userInfo);
       });
     });
@@ -64,19 +64,19 @@ const localPushNotificationStore = new LocalPushNotificationStore(DispatcherDefa
         if (guild.verificationLevel === VerificationLevels.MEDIUM) {
           const verificationLevel = guild.verificationLevel;
           if (tmp2.MEDIUM === verificationLevel) {
-            let obj = _modDef4384(check.accountDeadline);
+            let obj = _modDef4380(check.accountDeadline);
           } else if (tmp2.HIGH === verificationLevel) {
-            obj = _modDef4384(check.memberDeadline);
+            obj = _modDef4380(check.memberDeadline);
           }
           if (null != obj) {
-            if (!obj.isSameOrBefore(_modDef4384(), "minute")) {
+            if (!obj.isSameOrBefore(_modDef4380(), "minute")) {
               const obj2 = { type: constants.GUILD_VERIFICATION, guildId: guild.id };
               set.add(obj2);
               const obj3 = { userInfo: obj2, fireDate: obj.format(timestampProducer), alertTitle: guild.name, alertBody: null, category: "local" };
               const intl = util.intl;
               obj3.alertBody = intl.string(util.t["hrDBa+"]);
-              const result = tmp15(9585).scheduleLocalNotification(obj3);
-              const tmp15Result = tmp15(9585);
+              const result = tmp15(9589).scheduleLocalNotification(obj3);
+              const tmp15Result = tmp15(9589);
             }
             tmp15 = importDefault;
           }

@@ -1,10 +1,10 @@
-// Module ID: 5430
-// Function ID: 5431
+// Module ID: 5428
+// Function ID: 5429
 // Name: DetectedFileSize
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 5430 (DetectedFileSize)
+// Module 5428 (DetectedFileSize)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 let closure_1 = async function _getDetectedFileSize(arg0, value) {
@@ -18,7 +18,7 @@ let closure_1 = async function _getDetectedFileSize(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

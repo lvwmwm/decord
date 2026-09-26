@@ -1,146 +1,48 @@
-// Module ID: 17305
-// Function ID: 17306
+// Module ID: 17295
+// Function ID: 17296
 // Name: ViewModerators
-// Dependencies: [5, 19, 2109, 2103, 2067, 1078, 8709, 21, 1245, 4757, 17306, 1984, 558, 568, 1488, 504, 5666, 9833, 2053, 1982, 5143, 1119, 4803, 9834, 4489, 1181, 9849, 5218, 5935, 5854, 11494, 2]
-// Exports: openAddModeratorsActionSheet
+// Dependencies: [5, 19, 2105, 2099, 2063, 1074, 8704, 21, 1241, 4755, 17296, 1980, 1484, 504, 5664, 9855, 2049, 1978, 5141, 1115, 4801, 9856, 4485, 1177, 9871, 5216, 5936, 5854, 11499, 2]
+// Exports: default, openAddModeratorsActionSheet
 
-// Module 17305 (ViewModerators)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9849 */;
+// Module 17295 (ViewModerators)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9871 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const RowType = fn(8709).RowType;
+const AnalyticEvents = fn(1074).AnalyticEvents;
+const RowType = fn(8704).RowType;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const ReactCompilerGating = fn(558);
-function openAddModeratorsActionSheet(channel) {
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
-  const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequireImpl(17306, dependencyMap.paths), "channel-add-moderators-" + channel.id, { channel, canSkip: flag });
-}
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = channel(568).c(21);
-  channel = channel.channel;
-  let obj = channel(568);
-  const navigation = channel(1488).useNavigation();
-  navigation.setOptions({
-    headerRight() {
-      return null;
-    }
-  });
-  if (cResult[0] !== channel) {
-    const guildId = channel.getGuildId();
-    cResult[0] = channel;
-    cResult[1] = guildId;
-    let tmp5 = guildId;
-  } else {
-    tmp5 = cResult[1];
-  }
-  closure_1 = tmp5;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GuildStore, GuildRoleStore];
-    cResult[2] = items;
-    let tmp7 = items;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] !== tmp5) {
-    class S {
-      constructor() {
-        obj = { guild: closure_7.getGuild(closure_1), sortedGuildRoles: null };
-        tmp = closure_1;
-        sortedRoles = undefined;
-        if (null != closure_1) {
-          tmp3 = closure_6;
-          sortedRoles = closure_6.getSortedRoles(tmp);
-        }
-        obj.sortedGuildRoles = sortedRoles;
-        return obj;
-      }
-    }
-    const items1 = [tmp5];
-    cResult[3] = tmp5;
-    cResult[4] = S;
-    cResult[5] = items1;
-    let tmp11 = items1;
-    const tmp10 = S;
-  } else {
-    class S {
-      constructor() {
-        obj = { guild: closure_7.getGuild(closure_1), sortedGuildRoles: null };
-        tmp = closure_1;
-        sortedRoles = undefined;
-        if (null != closure_1) {
-          tmp3 = closure_6;
-          sortedRoles = closure_6.getSortedRoles(tmp);
-        }
-        obj.sortedGuildRoles = sortedRoles;
-        return obj;
-      }
-    }
-    tmp11 = cResult[5];
-  }
-  let obj2 = channel(1488);
-  let obj3 = {
-    headerRight() {
-      return null;
-    }
-  };
-  const stateFromStoresObject = channel(504).useStateFromStoresObject(tmp7, tmp10, tmp11);
-  ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  const tmpResult = channel(504);
-  const canUpdateStageChannelModerators = channel(5666).useCanUpdateStageChannelModerators(channel.id);
-  if (null != guild) {
-    class S {
-      constructor() {
-        obj = { guild: closure_7.getGuild(closure_1), sortedGuildRoles: null };
-        tmp = closure_1;
-        sortedRoles = undefined;
-        if (null != closure_1) {
-          tmp3 = closure_6;
-          sortedRoles = closure_6.getSortedRoles(tmp);
-        }
-        obj.sortedGuildRoles = sortedRoles;
-        return obj;
-      }
-    }
-  }
-  return null;
-}) : ((channel) => {
+export default function ViewModerators(channel) {
   channel = channel.channel;
   function handleRemovePermission(name) {
     closure_0 = name;
     if (name.rowType === constants.ROLE) {
-      let MEMBER = tmp(tmp2[19]).PermissionOverwriteType.ROLE;
+      let MEMBER = tmp(tmp2[17]).PermissionOverwriteType.ROLE;
     } else {
-      MEMBER = tmp(tmp2[19]).PermissionOverwriteType.MEMBER;
+      MEMBER = tmp(tmp2[17]).PermissionOverwriteType.MEMBER;
     }
-    closure_2 = channel(handleRemovePermission[16]).removeModeratorOverwrite(name.id, MEMBER, closure_0);
-    let obj = channel(handleRemovePermission[16]);
+    closure_2 = channel(handleRemovePermission[14]).removeModeratorOverwrite(name.id, MEMBER, closure_0);
+    let obj = channel(handleRemovePermission[14]);
     const obj3 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false, confirmColor: null };
-    const intl = tmp(tmp2[21]).intl;
-    obj3.title = intl.string(channel(handleRemovePermission[21]).t.GuPYQB);
-    const intl2 = tmp(tmp2[21]).intl;
-    obj3.body = intl2.format(channel(handleRemovePermission[21]).t.xERCnZ, { name: name.name });
-    const intl3 = tmp(tmp2[21]).intl;
-    obj3.cancelText = intl3.string(channel(handleRemovePermission[21]).t["ETE/oC"]);
-    const intl4 = tmp(tmp2[21]).intl;
-    obj3.confirmText = intl4.string(channel(handleRemovePermission[21]).t.fKxYb0);
+    const intl = tmp(tmp2[19]).intl;
+    obj3.title = intl.string(channel(handleRemovePermission[19]).t.GuPYQB);
+    const intl2 = tmp(tmp2[19]).intl;
+    obj3.body = intl2.format(channel(handleRemovePermission[19]).t.xERCnZ, { name: name.name });
+    const intl3 = tmp(tmp2[19]).intl;
+    obj3.cancelText = intl3.string(channel(handleRemovePermission[19]).t["ETE/oC"]);
+    const intl4 = tmp(tmp2[19]).intl;
+    obj3.confirmText = intl4.string(channel(handleRemovePermission[19]).t.fKxYb0);
     closure_1 = asyncGeneratorStep(async (arg0, value) => {
       if (c2 === 2) {
         c2 = 3;
@@ -152,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -169,16 +71,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               if (obj11.isEmptyOverwrite(closure_2)) {
                 c1 = 2;
                 c2 = 1;
-                const obj8 = { value: v1(4803).clearPermissionOverwrite(tmp2.id, tmp27.id), done: false };
+                const obj8 = { value: v1(4801).clearPermissionOverwrite(tmp2.id, tmp27.id), done: false };
                 return obj8;
               } else {
                 const items = [tmp27];
                 c1 = 1;
                 c2 = 1;
-                const obj9 = { value: tmp2(9834).savePermissionUpdates(tmp2.id, items), done: false };
+                const obj9 = { value: tmp2(9856).savePermissionUpdates(tmp2.id, items), done: false };
                 return obj9;
               }
-              obj11 = tmp2(5666);
+              obj11 = tmp2(5664);
             }
           } else {
             if (1 === tmp5) {
@@ -198,11 +100,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               const obj = { value, done: true };
               return obj;
             }
-            const result = tmp2(4489).memberOrRoleRemovedToast(closure_128_0.name);
-            const obj2 = tmp2(4489);
-            v1(4757).hideActionSheet();
+            const result = tmp2(4485).memberOrRoleRemovedToast(closure_128_0.name);
+            const obj2 = tmp2(4485);
+            v1(4755).hideActionSheet();
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c2 = tmp;
@@ -220,17 +122,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       return applyArgumentsResult;
     };
-    obj3.confirmColor = channel(handleRemovePermission[25]).ButtonColors.RED;
-    guildId(handleRemovePermission[20]).show(obj3);
+    obj3.confirmColor = channel(handleRemovePermission[23]).ButtonColors.RED;
+    guildId(handleRemovePermission[18]).show(obj3);
   }
-  const navigation = channel(handleRemovePermission[14]).useNavigation();
+  const navigation = channel(handleRemovePermission[12]).useNavigation();
   navigation.setOptions({
     headerRight() {
       return null;
     }
   });
   const guildId = channel.getGuildId();
-  let obj = channel(handleRemovePermission[14]);
+  let obj = channel(handleRemovePermission[12]);
   let obj2 = {
     headerRight() {
       return null;
@@ -238,7 +140,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   };
   let items = [GuildStore, GuildRoleStore];
   const items1 = [guildId];
-  const stateFromStoresObject = channel(handleRemovePermission[15]).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = channel(handleRemovePermission[13]).useStateFromStoresObject(items, () => {
     const obj = { guild: GuildStore.getGuild(guildId), sortedGuildRoles: null };
     let sortedRoles;
     if (null != guildId) {
@@ -248,8 +150,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     return obj;
   }, items1);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  let obj4 = channel(handleRemovePermission[15]);
-  const canUpdateStageChannelModerators = channel(handleRemovePermission[16]).useCanUpdateStageChannelModerators(channel.id);
+  let obj4 = channel(handleRemovePermission[13]);
+  const canUpdateStageChannelModerators = channel(handleRemovePermission[14]).useCanUpdateStageChannelModerators(channel.id);
   if (null != guild) {
     if (null != sortedGuildRoles) {
       let isGuildStageVoiceResult = channel.isGuildStageVoice();
@@ -258,47 +160,55 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         id = guild.id;
       }
       const memberIds = GuildMemberStore.getMemberIds(id);
-      let obj6 = canUpdateStageChannelModerators(tmp2[17]);
-      const existingMembersRows = obj6.getExistingMembersRows(memberIds, channel, guild, tmp(tmp2[18]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
-      const obj7 = canUpdateStageChannelModerators(tmp2[17]);
-      const existingRolesRowWithPermissionDisabled = obj7.getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, tmp(tmp2[18]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
+      let obj6 = canUpdateStageChannelModerators(tmp2[15]);
+      const existingMembersRows = obj6.getExistingMembersRows(memberIds, channel, guild, tmp(tmp2[16]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
+      const obj7 = canUpdateStageChannelModerators(tmp2[15]);
+      const existingRolesRowWithPermissionDisabled = obj7.getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, tmp(tmp2[16]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
       if (isGuildStageVoiceResult) {
         let obj3 = { style: { paddingHorizontal: 16 }, spacing: 16, children: null };
         let obj8 = { title: null, hasIcons: true, children: null };
-        let intl = tmp(tmp2[21]).intl;
-        obj8.title = intl.string(tmp(tmp2[21]).t.f7VbhF);
-        let obj9 = { icon: closure_10(tmp(tmp2[30]).CirclePlusIcon, {}), label: null, onPress: null, disabled: null, arrow: true };
-        let intl2 = tmp(tmp2[21]).intl;
-        obj9.label = intl2.string(tmp(tmp2[21]).t.n3bcy8);
+        let intl = tmp(tmp2[19]).intl;
+        obj8.title = intl.string(tmp(tmp2[19]).t.f7VbhF);
+        let obj9 = { icon: closure_10(tmp(tmp2[28]).CirclePlusIcon, {}), label: null, onPress: null, disabled: null, arrow: true };
+        let intl2 = tmp(tmp2[19]).intl;
+        obj9.label = intl2.string(tmp(tmp2[19]).t.n3bcy8);
         obj9.onPress = function onPress() {
           if (null != channel) {
             AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
             const _HermesInternal = HermesInternal;
             const obj2 = ActionSheetActionCreatorsDefault;
             const obj3 = { channel: tmp, canSkip: false };
-            obj2.openLazy(asyncRequireImpl(17306, dependencyMap.paths), "channel-add-moderators-" + tmp.id, obj3);
-            const tmp7 = asyncRequireImpl(17306, dependencyMap.paths);
+            obj2.openLazy(asyncRequireImpl(17296, dependencyMap.paths), "channel-add-moderators-" + tmp.id, obj3);
+            const tmp7 = asyncRequireImpl(17296, dependencyMap.paths);
           }
         };
         obj9.disabled = !canUpdateStageChannelModerators;
-        obj8.children = closure_10(tmp(tmp2[29]).TableRow, obj9);
-        const items2 = [closure_10(tmp(tmp2[28]).TableRowGroup, obj8), , ];
+        obj8.children = closure_10(tmp(tmp2[27]).TableRow, obj9);
+        const items2 = [closure_10(tmp(tmp2[26]).TableRowGroup, obj8), , ];
         let obj10 = { title: null, hasIcons: true, children: null };
-        let intl3 = tmp(tmp2[21]).intl;
-        obj10.title = intl3.string(tmp(tmp2[21]).t.ghdVJL);
-        obj10.children = existingRolesRowWithPermissionDisabled.map((item) => v65535(ChannelOverwritesItemDefault, { guildId: channel.guild_id, item, channelId: channel.id, showType: true, showRemove: canUpdateStageChannelModerators, onRemove: handleRemovePermission }, item.id));
-        items2[1] = closure_10(tmp(tmp2[28]).TableRowGroup, obj10);
+        let intl3 = tmp(tmp2[19]).intl;
+        obj10.title = intl3.string(tmp(tmp2[19]).t.ghdVJL);
+        obj10.children = existingRolesRowWithPermissionDisabled.map((item) => closure_2_10(ChannelOverwritesItemDefault, { guildId: channel.guild_id, item, channelId: channel.id, showType: true, showRemove: canUpdateStageChannelModerators, onRemove: handleRemovePermission }, item.id));
+        items2[1] = closure_10(tmp(tmp2[26]).TableRowGroup, obj10);
         let obj11 = { title: null, hasIcons: true, children: null };
-        let intl4 = tmp(tmp2[21]).intl;
-        obj11.title = intl4.string(tmp(tmp2[21]).t.ghdVJL);
-        obj11.children = existingMembersRows.map((item) => v65535(ChannelOverwritesItemDefault, { guildId: channel.guild_id, item, channelId: channel.id, showType: true, showRemove: canUpdateStageChannelModerators, onRemove: handleRemovePermission }, item.id));
-        items2[2] = closure_10(tmp(tmp2[28]).TableRowGroup, obj11);
+        let intl4 = tmp(tmp2[19]).intl;
+        obj11.title = intl4.string(tmp(tmp2[19]).t.ghdVJL);
+        obj11.children = existingMembersRows.map((item) => closure_2_10(ChannelOverwritesItemDefault, { guildId: channel.guild_id, item, channelId: channel.id, showType: true, showRemove: canUpdateStageChannelModerators, onRemove: handleRemovePermission }, item.id));
+        items2[2] = closure_10(tmp(tmp2[26]).TableRowGroup, obj11);
         obj3.children = items2;
-        isGuildStageVoiceResult = closure_11(tmp(tmp2[27]).Stack, obj3);
+        isGuildStageVoiceResult = closure_11(tmp(tmp2[25]).Stack, obj3);
       }
       return isGuildStageVoiceResult;
     }
   }
   return null;
-});
-export { openAddModeratorsActionSheet };
+};
+export const openAddModeratorsActionSheet = function openAddModeratorsActionSheet(channel) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
+  const obj2 = ActionSheetActionCreatorsDefault;
+  obj2.openLazy(asyncRequireImpl(17296, dependencyMap.paths), "channel-add-moderators-" + channel.id, { channel, canSkip: flag });
+};

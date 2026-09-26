@@ -1,20 +1,20 @@
-// Module ID: 12894
-// Function ID: 12895
+// Module ID: 12993
+// Function ID: 12994
 // Name: CreateGuildIcons
-// Dependencies: [12509, 12513, 12511, 12512, 12514, 12515, 12510, 5939, 2]
+// Dependencies: [12609, 12613, 12611, 12612, 12614, 12615, 12610, 5941, 2]
 
-// Module 12894 (CreateGuildIcons)
-import native from "native" /* 5939 */;
-import _modDef12509 from "module_12509" /* 12509 */;
-import _modDef12510 from "module_12510" /* 12510 */;
-import _modDef12511 from "module_12511" /* 12511 */;
-import _modDef12512 from "module_12512" /* 12512 */;
-import _modDef12513 from "module_12513" /* 12513 */;
-import _modDef12514 from "module_12514" /* 12514 */;
-import _modDef12515 from "module_12515" /* 12515 */;
+// Module 12993 (CreateGuildIcons)
+import native from "native" /* 5941 */;
+import _modDef12609 from "module_12609" /* 12609 */;
+import _modDef12610 from "module_12610" /* 12610 */;
+import _modDef12611 from "module_12611" /* 12611 */;
+import _modDef12612 from "module_12612" /* 12612 */;
+import _modDef12613 from "module_12613" /* 12613 */;
+import _modDef12614 from "module_12614" /* 12614 */;
+import _modDef12615 from "module_12615" /* 12615 */;
 import size from "module_2" /* 2 */;
 
-const obj = { CREATE: _modDef12509, GAMING: _modDef12513, FRIENDS: _modDef12511, STUDY: _modDef12512, CLUBS: _modDef12514, CREATORS: _modDef12515, LOCAL_COMMUNITY: _modDef12510, SCHOOL_CLUB: _modDef12514 };
+const obj = { CREATE: _modDef12609, GAMING: _modDef12613, FRIENDS: _modDef12611, STUDY: _modDef12612, CLUBS: _modDef12614, CREATORS: _modDef12615, LOCAL_COMMUNITY: _modDef12610, SCHOOL_CLUB: _modDef12614 };
 const result = size.fileFinishedImporting("modules/create_guild/native/CreateGuildIcons.tsx");
 
 export const GUILD_TEMPLATE_ICONS = obj;

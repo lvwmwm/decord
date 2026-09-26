@@ -1,11 +1,11 @@
-// Module ID: 7746
-// Function ID: 7747
+// Module ID: 7741
+// Function ID: 7742
 // Name: ClickstreamEvents
-// Dependencies: [1078, 2]
+// Dependencies: [1074, 2]
 // Exports: getClickstreamDrainEvent
 
-// Module 7746 (ClickstreamEvents)
-import Constants from "Constants" /* 1078 */;
+// Module 7741 (ClickstreamEvents)
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

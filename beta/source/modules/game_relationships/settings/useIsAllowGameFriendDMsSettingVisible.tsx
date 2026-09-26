@@ -1,34 +1,18 @@
-// Module ID: 16212
-// Function ID: 16213
+// Module ID: 16216
+// Function ID: 16217
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [7931, 558, 568, 504, 2]
+// Dependencies: [7926, 504, 2]
+// Exports: useIsAllowGameFriendDMsSettingVisible
 
-// Module 16212 (useIsAllowGameFriendDMsSettingVisible)
+// Module 16216 (useIsAllowGameFriendDMsSettingVisible)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7931 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7926 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_relationships/settings/useIsAllowGameFriendDMsSettingVisible.tsx");
 
-export const useIsAllowGameFriendDMsSettingVisible = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameRelationshipStore];
-    const fn = function n() {
-      return gameRelationshipCount.getGameRelationshipCount() > 0;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+export const useIsAllowGameFriendDMsSettingVisible = function useIsAllowGameFriendDMsSettingVisible() {
   const items = [GameRelationshipStore];
   return initialize.useStateFromStores(items, () => gameRelationshipCount.getGameRelationshipCount() > 0);
-});
+};

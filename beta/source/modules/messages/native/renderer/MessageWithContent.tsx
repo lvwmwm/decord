@@ -1,17 +1,17 @@
-// Module ID: 8232
-// Function ID: 8233
+// Module ID: 8227
+// Function ID: 8228
 // Name: MessageWithContent
-// Dependencies: [8233, 8228, 8235, 1119, 8414, 2]
+// Dependencies: [8228, 8223, 8230, 1115, 8409, 2]
 // Exports: generateMessageRowData
 
-// Module 8232 (MessageWithContent)
-import util from "util" /* 1119 */;
-import createMessageContentDefault from "createMessageContent" /* 8235 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8414 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8233 */;
+// Module 8227 (MessageWithContent)
+import util from "util" /* 1115 */;
+import createMessageContentDefault from "createMessageContent" /* 8230 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8409 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8228 */;
 
 require = fn;
-const RowType = fn(8228).RowType;
+const RowType = fn(8223).RowType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/MessageWithContent.tsx");
 
@@ -43,8 +43,8 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   obj.alwaysShowAddReaction = tmp3;
   if (overrideBackgroundHighlight == null) {
     const obj3 = { message, theme, isEditing, isAutomodBlockedMessage: null != GuildAutomodMessageStore.getMessage(message.id) };
-    overrideBackgroundHighlight = tmp4(8414).createBackgroundHighlight(obj3);
-    const tmp4Result = tmp4(8414);
+    overrideBackgroundHighlight = tmp4(8409).createBackgroundHighlight(obj3);
+    const tmp4Result = tmp4(8409);
   }
   obj.backgroundHighlight = overrideBackgroundHighlight;
   let canReply = options.enableSwipeActions;
@@ -52,11 +52,11 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
     canReply = canShowImages.canReply;
   }
   obj.swipeActions = RowGeneratorUtilsDefault.createSwipeActions(canReply, options.enableSwipeActions && canShowImages.canEdit);
-  const intl3 = tmp6(1119).intl;
+  const intl3 = tmp6(1115).intl;
   obj.replyAccessibilityLabel = intl3.string(util.t["5IEsGx"]);
-  const intl4 = tmp6(1119).intl;
+  const intl4 = tmp6(1115).intl;
   obj.forwardAccessibilityLabel = intl4.string(util.t.I3ltXO);
-  const intl5 = tmp6(1119).intl;
+  const intl5 = tmp6(1115).intl;
   obj.threadAccessibilityLabel = intl5.string(util.t.rBIGBL);
   const forcedTheme = options.forcedTheme;
   obj.forcedTheme = forcedTheme;

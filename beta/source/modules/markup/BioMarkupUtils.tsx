@@ -1,22 +1,22 @@
-// Module ID: 9561
-// Function ID: 9562
+// Module ID: 9565
+// Function ID: 9566
 // Name: BioMarkupUtils
-// Dependencies: [5242, 5243, 4781, 1442, 8282, 4780, 1933, 12, 2]
+// Dependencies: [5240, 5241, 4779, 1438, 8277, 4778, 1929, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 9561 (BioMarkupUtils)
-import privDefault from "priv" /* 1442 */;
-import _modDef1933 from "module_1933" /* 1933 */;
-import MarkupReactRulesDefault from "MarkupReactRules" /* 4781 */;
-import MarkupRulesDefault from "MarkupRules" /* 5243 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5242 */;
-import MarkupParser_mod from "MarkupParser" /* 8282 */;
-import MarkupUtils from "MarkupUtils" /* 4780 */;
+// Module 9565 (BioMarkupUtils)
+import privDefault from "priv" /* 1438 */;
+import _modDef1929 from "module_1929" /* 1929 */;
+import MarkupReactRulesDefault from "MarkupReactRules" /* 4779 */;
+import MarkupRulesDefault from "MarkupRules" /* 5241 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5240 */;
+import MarkupParser_mod from "MarkupParser" /* 8277 */;
+import MarkupUtils from "MarkupUtils" /* 4778 */;
 import apply from "module_12" /* 12 */;
 
 let combineMarkupRules = combineMarkupRules_mod;
 const items = [MarkupRulesDefault.PROFILE_BIO_RULES, MarkupReactRulesDefault({ enableBuildOverrides: false, mustConfirmExternalLink: true }), ];
-const MarkupReactRules = fn(4781);
+const MarkupReactRules = fn(4779);
 items[2] = MarkupReactRules.createFetchingGameMentionRule();
 const importDefaultResultResult = combineMarkupRules(items);
 let c2 = importDefaultResultResult;
@@ -73,8 +73,8 @@ export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(de
       value = tmp4;
     }
     obj = closure_3;
-    const obj2 = _modDef1933;
-    return obj2.reactFor(_modDef1933.ruleOutput(importDefaultResultResult, "react"))(value);
+    const obj2 = _modDef1929;
+    return obj2.reactFor(_modDef1929.ruleOutput(importDefaultResultResult, "react"))(value);
   }
 };
 export const parseBioReactWithoutScrolling = MarkupParser.reactParserFor(combineMarkupRules(items1));

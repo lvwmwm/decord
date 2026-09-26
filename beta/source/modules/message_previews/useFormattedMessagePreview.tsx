@@ -1,22 +1,22 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 10389
+// Function ID: 10390
 // Name: useFormattedMessagePreview
-// Dependencies: [502, 4441, 1376, 1078, 1094, 558, 568, 504, 8276, 5022, 1119, 4940, 7578, 12, 8281, 8366, 2]
-// Exports: isMessageContentPreviewable
+// Dependencies: [502, 4437, 1372, 1074, 1090, 504, 8271, 5020, 1115, 4938, 7576, 12, 8276, 8361, 2]
+// Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 12994 (useFormattedMessagePreview)
-import MessageTypes from "MessageTypes" /* 1094 */;
-import util from "util" /* 1119 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7578 */;
-import useIsCallActiveDefault from "useIsCallActive" /* 8276 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8281 */;
+// Module 10389 (useFormattedMessagePreview)
+import MessageTypes from "MessageTypes" /* 1090 */;
+import util from "util" /* 1115 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 5020 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7576 */;
+import useIsCallActiveDefault from "useIsCallActive" /* 8271 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8276 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
-const useMessageAuthorDefault = tmp9(5022);
 require = fn;
 function formatMessagePreview(type, isBlocked) {
   if (isBlocked.isBlocked) {
@@ -33,11 +33,11 @@ function formatMessagePreview(type, isBlocked) {
     type = type.type;
     const tmp4 = require;
     if (MessageTypes.MessageTypes.DEFAULT !== type) {
-      if (tmp4(1094).MessageTypes.CHANGELOG !== type) {
-        if (tmp4(1094).MessageTypes.REPLY !== type) {
-          if (tmp4(1094).MessageTypes.CHAT_INPUT_COMMAND !== type) {
-            if (tmp4(1094).MessageTypes.CONTEXT_MENU_COMMAND !== type) {
-              if (tmp4(1094).MessageTypes.POLL_RESULT !== type) {
+      if (tmp4(1090).MessageTypes.CHANGELOG !== type) {
+        if (tmp4(1090).MessageTypes.REPLY !== type) {
+          if (tmp4(1090).MessageTypes.CHAT_INPUT_COMMAND !== type) {
+            if (tmp4(1090).MessageTypes.CONTEXT_MENU_COMMAND !== type) {
+              if (tmp4(1090).MessageTypes.POLL_RESULT !== type) {
                 let flag = false;
               }
               if (flag) {
@@ -63,8 +63,8 @@ function formatMessagePreview(type, isBlocked) {
                 }
                 if (type.hasFlag(MessageFlags.IS_VOICE_MESSAGE)) {
                   const obj7 = { type: "text", text: null };
-                  const intl11 = tmp4(1119).intl;
-                  obj7.text = intl11.string(tmp4(1119).t.slFYgi);
+                  const intl11 = tmp4(1115).intl;
+                  obj7.text = intl11.string(tmp4(1115).t.slFYgi);
                   tmp10 = obj7;
                 } else if (type.attachments.length > 0) {
                   const attachments = type.attachments;
@@ -84,27 +84,27 @@ function formatMessagePreview(type, isBlocked) {
                   }
                   if (everyResult) {
                     const obj8 = { type: "text", text: null, trailingIcon: "image" };
-                    const intl10 = tmp4(1119).intl;
+                    const intl10 = tmp4(1115).intl;
                     const obj9 = { count: type.attachments.length };
-                    obj8.text = intl10.formatToPlainString(tmp4(1119).t.h4pFfU, obj9);
+                    obj8.text = intl10.formatToPlainString(tmp4(1115).t.h4pFfU, obj9);
                     let obj14 = obj8;
                   } else if (everyResult1) {
                     const obj10 = { type: "text", text: null, trailingIcon: "video" };
-                    const intl9 = tmp4(1119).intl;
+                    const intl9 = tmp4(1115).intl;
                     const obj11 = { count: type.attachments.length };
-                    obj10.text = intl9.formatToPlainString(tmp4(1119).t.SJ6pPX, obj11);
+                    obj10.text = intl9.formatToPlainString(tmp4(1115).t.SJ6pPX, obj11);
                     obj14 = obj10;
                   } else if (everyResult2) {
                     const obj12 = { type: "text", text: null, trailingIcon: "audio" };
-                    const intl8 = tmp4(1119).intl;
+                    const intl8 = tmp4(1115).intl;
                     const obj13 = { count: type.attachments.length };
-                    obj12.text = intl8.formatToPlainString(tmp4(1119).t.fnO3hK, obj13);
+                    obj12.text = intl8.formatToPlainString(tmp4(1115).t.fnO3hK, obj13);
                     obj14 = obj12;
                   } else {
                     obj14 = { type: "text", text: null, trailingIcon: "attachment" };
-                    const intl7 = tmp4(1119).intl;
+                    const intl7 = tmp4(1115).intl;
                     const obj15 = { count: type.attachments.length };
-                    obj14.text = intl7.formatToPlainString(tmp4(1119).t["89ihS8"], obj15);
+                    obj14.text = intl7.formatToPlainString(tmp4(1115).t["89ihS8"], obj15);
                   }
                   tmp10 = obj14;
                 } else if (type.embeds.length > 0) {
@@ -146,21 +146,21 @@ function formatMessagePreview(type, isBlocked) {
                   }
                   if (everyResult3) {
                     const obj16 = { type: "text", text: null, trailingIcon: "image" };
-                    const intl6 = tmp4(1119).intl;
+                    const intl6 = tmp4(1115).intl;
                     const obj17 = { count: type.embeds.length };
-                    obj16.text = intl6.formatToPlainString(tmp4(1119).t.h4pFfU, obj17);
+                    obj16.text = intl6.formatToPlainString(tmp4(1115).t.h4pFfU, obj17);
                     let obj24 = obj16;
                   } else if (everyResult4) {
                     const obj18 = { type: "text", text: null, trailingIcon: "video" };
-                    const intl5 = tmp4(1119).intl;
+                    const intl5 = tmp4(1115).intl;
                     const obj19 = { count: type.embeds.length };
-                    obj18.text = intl5.formatToPlainString(tmp4(1119).t.SJ6pPX, obj19);
+                    obj18.text = intl5.formatToPlainString(tmp4(1115).t.SJ6pPX, obj19);
                     obj24 = obj18;
                   } else if (everyResult5) {
                     const obj20 = { type: "text", text: null, trailingIcon: "audio" };
-                    const intl4 = tmp4(1119).intl;
+                    const intl4 = tmp4(1115).intl;
                     const obj21 = { count: type.embeds.length };
-                    obj20.text = intl4.formatToPlainString(tmp4(1119).t.fnO3hK, obj21);
+                    obj20.text = intl4.formatToPlainString(tmp4(1115).t.fnO3hK, obj21);
                     obj24 = obj20;
                   } else {
                     if (type.embeds.length > 0) {
@@ -176,16 +176,16 @@ function formatMessagePreview(type, isBlocked) {
                       }
                     }
                     obj24 = { type: "text", text: null, trailingIcon: "link" };
-                    const intl3 = tmp4(1119).intl;
+                    const intl3 = tmp4(1115).intl;
                     const obj25 = { count: type.embeds.length };
-                    obj24.text = intl3.formatToPlainString(tmp4(1119).t["9XuYjs"], obj25);
+                    obj24.text = intl3.formatToPlainString(tmp4(1115).t["9XuYjs"], obj25);
                   }
                   tmp10 = obj24;
                 } else if (type.stickerItems.length > 0) {
                   const obj26 = { type: "text", text: type.stickerItems[0].name, trailingIcon: "sticker" };
                   tmp10 = obj26;
                 } else if (type.isPoll()) {
-                  const intl2 = tmp4(1119).intl;
+                  const intl2 = tmp4(1115).intl;
                   const poll = type.poll;
                   let text;
                   if (poll != null) {
@@ -193,22 +193,22 @@ function formatMessagePreview(type, isBlocked) {
                   }
                   const obj27 = { type: "text", text: null };
                   const obj28 = { question: text };
-                  obj27.text = intl2.formatToPlainString(tmp4(1119).t.ImizdM, obj28);
+                  obj27.text = intl2.formatToPlainString(tmp4(1115).t.ImizdM, obj28);
                   tmp10 = obj27;
                 } else if (isForwardMessageDefault(type)) {
                   let obj = { type: "text", text: null };
-                  const intl = tmp4(1119).intl;
-                  obj.text = intl.string(tmp4(1119).t["9ddYKt"]);
+                  const intl = tmp4(1115).intl;
+                  obj.text = intl.string(tmp4(1115).t["9ddYKt"]);
                   tmp10 = obj;
                 }
               }
               ({ authorNick, otherUser, otherUserNick, isCallActive, currentUserId } = isBlocked);
-              if (type.type === tmp4(1094).MessageTypes.RECIPIENT_ADD) {
+              if (type.type === tmp4(1090).MessageTypes.RECIPIENT_ADD) {
                 if (null != otherUserNick) {
                   const obj29 = { type: "text", text: null };
-                  const intl27 = tmp4(1119).intl;
+                  const intl27 = tmp4(1115).intl;
                   const obj30 = { username: authorNick, usernameHook: tmp4(12).identity, otherUsername: otherUserNick, otherUsernameHook: tmp4(12).identity };
-                  obj29.text = intl27.formatToPlainString(tmp4(1119).t.MMN2Jq, obj30);
+                  obj29.text = intl27.formatToPlainString(tmp4(1115).t.MMN2Jq, obj30);
                   let tmp21 = obj29;
                 }
                 let tmp29;
@@ -217,39 +217,39 @@ function formatMessagePreview(type, isBlocked) {
                 }
                 return tmp29;
               }
-              if (type.type === tmp4(1094).MessageTypes.RECIPIENT_REMOVE) {
+              if (type.type === tmp4(1090).MessageTypes.RECIPIENT_REMOVE) {
                 if (null != otherUserNick) {
                   let id;
                   if (otherUser != null) {
                     id = otherUser.id;
                   }
                   if (type.author.id === id) {
-                    const intl26 = tmp4(1119).intl;
+                    const intl26 = tmp4(1115).intl;
                     const obj31 = { username: authorNick, usernameHook: tmp4(12).identity };
-                    let formatToPlainStringResult = intl26.formatToPlainString(tmp4(1119).t["5v2xa8"], obj31);
+                    let formatToPlainStringResult = intl26.formatToPlainString(tmp4(1115).t["5v2xa8"], obj31);
                   } else {
-                    const intl25 = tmp4(1119).intl;
+                    const intl25 = tmp4(1115).intl;
                     const obj32 = { username: authorNick, usernameHook: tmp4(12).identity, otherUsername: otherUserNick, otherUsernameHook: tmp4(12).identity };
-                    formatToPlainStringResult = intl25.formatToPlainString(tmp4(1119).t.L2FyVq, obj32);
+                    formatToPlainStringResult = intl25.formatToPlainString(tmp4(1115).t.L2FyVq, obj32);
                   }
                   const obj33 = { type: "text", text: formatToPlainStringResult };
                   tmp21 = obj33;
                 }
               }
-              if (type.type === tmp4(1094).MessageTypes.CALL) {
+              if (type.type === tmp4(1090).MessageTypes.CALL) {
                 if (isCallActive) {
-                  const intl24 = tmp4(1119).intl;
-                  let stringResult = intl24.string(tmp4(1119).t["NGg/fm"]);
+                  const intl24 = tmp4(1115).intl;
+                  let stringResult = intl24.string(tmp4(1115).t["NGg/fm"]);
                 } else {
                   if (null != type.call) {
                     const participants = type.call.participants;
                     if (!participants.includes(currentUserId)) {
-                      const intl22 = tmp4(1119).intl;
-                      stringResult = intl22.string(tmp4(1119).t["2CnhoI"]);
+                      const intl22 = tmp4(1115).intl;
+                      stringResult = intl22.string(tmp4(1115).t["2CnhoI"]);
                     }
                   }
-                  const intl23 = tmp4(1119).intl;
-                  stringResult = intl23.string(tmp4(1119).t.v05Xd6);
+                  const intl23 = tmp4(1115).intl;
+                  stringResult = intl23.string(tmp4(1115).t.v05Xd6);
                 }
                 const obj34 = { type: "text", text: stringResult, color: null, trailingIcon: null };
                 let str2;
@@ -263,72 +263,72 @@ function formatMessagePreview(type, isBlocked) {
                 }
                 obj34.trailingIcon = str3;
                 tmp21 = obj34;
-              } else if (type.type === tmp4(1094).MessageTypes.CHANNEL_NAME_CHANGE) {
+              } else if (type.type === tmp4(1090).MessageTypes.CHANNEL_NAME_CHANGE) {
                 const obj35 = { type: "text", text: null };
-                const intl21 = tmp4(1119).intl;
+                const intl21 = tmp4(1115).intl;
                 const obj36 = { username: authorNick, usernameHook: tmp4(12).identity, channelName: type.content };
-                obj35.text = intl21.formatToPlainString(tmp4(1119).t.oItgEw, obj36);
+                obj35.text = intl21.formatToPlainString(tmp4(1115).t.oItgEw, obj36);
                 tmp21 = obj35;
-              } else if (type.type === tmp4(1094).MessageTypes.CHANNEL_ICON_CHANGE) {
+              } else if (type.type === tmp4(1090).MessageTypes.CHANNEL_ICON_CHANGE) {
                 const obj37 = { type: "text", text: null };
-                const intl20 = tmp4(1119).intl;
+                const intl20 = tmp4(1115).intl;
                 const obj38 = { username: authorNick, usernameHook: tmp4(12).identity };
-                obj37.text = intl20.formatToPlainString(tmp4(1119).t.OEdU6X, obj38);
+                obj37.text = intl20.formatToPlainString(tmp4(1115).t.OEdU6X, obj38);
                 tmp21 = obj37;
-              } else if (type.type === tmp4(1094).MessageTypes.CHANNEL_PINNED_MESSAGE) {
+              } else if (type.type === tmp4(1090).MessageTypes.CHANNEL_PINNED_MESSAGE) {
                 const obj40 = { type: "text", text: null };
-                const intl19 = tmp4(1119).intl;
+                const intl19 = tmp4(1115).intl;
                 const obj41 = { username: authorNick, usernameHook: tmp4(12).identity };
-                obj40.text = intl19.formatToPlainString(tmp4(1119).t.vfkjqx, obj41);
+                obj40.text = intl19.formatToPlainString(tmp4(1115).t.vfkjqx, obj41);
                 tmp21 = obj40;
-              } else if (type.type === tmp4(1094).MessageTypes.USER_JOIN) {
+              } else if (type.type === tmp4(1090).MessageTypes.USER_JOIN) {
                 const obj42 = { type: "text", text: null };
-                const intl18 = tmp4(1119).intl;
+                const intl18 = tmp4(1115).intl;
                 const obj43 = { username: authorNick, usernameHook: null };
                 const systemMessageUserJoin = SystemMessageUtilsDefault.getSystemMessageUserJoin(type.id);
                 obj43.usernameHook = tmp4(12).identity;
                 obj42.text = intl18.formatToPlainString(systemMessageUserJoin, obj43);
                 tmp21 = obj42;
-              } else if (type.type === tmp4(1094).MessageTypes.THREAD_CREATED) {
+              } else if (type.type === tmp4(1090).MessageTypes.THREAD_CREATED) {
                 const obj44 = { type: "text", text: null };
-                const intl17 = tmp4(1119).intl;
+                const intl17 = tmp4(1115).intl;
                 const obj45 = { actorName: authorNick, actorHook: tmp4(12).identity, threadName: type.content, threadOnClick: tmp4(12).identity };
-                obj44.text = intl17.formatToPlainString(tmp4(1119).t.SGaUAU, obj45);
+                obj44.text = intl17.formatToPlainString(tmp4(1115).t.SGaUAU, obj45);
                 tmp21 = obj44;
-              } else if (type.type === tmp4(1094).MessageTypes.PREMIUM_REFERRAL) {
+              } else if (type.type === tmp4(1090).MessageTypes.PREMIUM_REFERRAL) {
                 const obj46 = { type: "text", text: null };
-                const intl16 = tmp4(1119).intl;
+                const intl16 = tmp4(1115).intl;
                 const obj47 = { username: authorNick };
-                obj46.text = intl16.formatToPlainString(tmp4(1119).t.lieTqU, obj47);
+                obj46.text = intl16.formatToPlainString(tmp4(1115).t.lieTqU, obj47);
                 tmp21 = obj46;
-              } else if (type.type === tmp4(1094).MessageTypes.STAGE_START) {
+              } else if (type.type === tmp4(1090).MessageTypes.STAGE_START) {
                 const obj48 = { type: "text", text: null };
-                const intl15 = tmp4(1119).intl;
+                const intl15 = tmp4(1115).intl;
                 const obj49 = { username: authorNick, usernameOnClick: tmp4(12).identity, topic: type.content };
-                obj48.text = intl15.formatToPlainString(tmp4(1119).t.aZtRW8, obj49);
+                obj48.text = intl15.formatToPlainString(tmp4(1115).t.aZtRW8, obj49);
                 tmp21 = obj48;
-              } else if (type.type === tmp4(1094).MessageTypes.STAGE_END) {
+              } else if (type.type === tmp4(1090).MessageTypes.STAGE_END) {
                 const obj50 = { type: "text", text: null };
-                const intl14 = tmp4(1119).intl;
+                const intl14 = tmp4(1115).intl;
                 const obj51 = { username: authorNick, usernameOnClick: tmp4(12).identity, topic: type.content };
-                obj50.text = intl14.formatToPlainString(tmp4(1119).t.vMJhvG, obj51);
+                obj50.text = intl14.formatToPlainString(tmp4(1115).t.vMJhvG, obj51);
                 tmp21 = obj50;
-              } else if (type.type === tmp4(1094).MessageTypes.STAGE_SPEAKER) {
+              } else if (type.type === tmp4(1090).MessageTypes.STAGE_SPEAKER) {
                 const obj52 = { type: "text", text: null };
-                const intl13 = tmp4(1119).intl;
+                const intl13 = tmp4(1115).intl;
                 const obj53 = { username: authorNick, usernameOnClick: tmp4(12).identity };
-                obj52.text = intl13.formatToPlainString(tmp4(1119).t.V4uCm4, obj53);
+                obj52.text = intl13.formatToPlainString(tmp4(1115).t.V4uCm4, obj53);
                 tmp21 = obj52;
-              } else if (type.type === tmp4(1094).MessageTypes.STAGE_TOPIC) {
+              } else if (type.type === tmp4(1090).MessageTypes.STAGE_TOPIC) {
                 const obj54 = { type: "text", text: null };
-                const intl12 = tmp4(1119).intl;
+                const intl12 = tmp4(1115).intl;
                 const obj55 = { username: authorNick, usernameOnClick: tmp4(12).identity, topic: type.content };
-                obj54.text = intl12.formatToPlainString(tmp4(1119).t.ro3RM0, obj55);
+                obj54.text = intl12.formatToPlainString(tmp4(1115).t.ro3RM0, obj55);
                 tmp21 = obj54;
-              } else if (type.type === tmp4(1094).MessageTypes.VOICE_SESSION) {
-                const obj56 = { type: "text", text: tmp4(8366).getVoiceSessionMessageContent(type) };
+              } else if (type.type === tmp4(1090).MessageTypes.VOICE_SESSION) {
+                const obj56 = { type: "text", text: tmp4(8361).getVoiceSessionMessageContent(type) };
                 tmp21 = obj56;
-                const tmp4Result = tmp4(8366);
+                const tmp4Result = tmp4(8361);
               }
             }
           }
@@ -338,17 +338,19 @@ function formatMessagePreview(type, isBlocked) {
     flag = true;
   }
 }
-const MessageFlags = fn(1078).MessageFlags;
-const ReactCompilerGating = fn(558);
-function isMessageContentPreviewable(message) {
-  const type = message.type;
+const MessageFlags = fn(1074).MessageFlags;
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/message_previews/useFormattedMessagePreview.tsx");
+
+export const isMessageContentPreviewable = function isMessageContentPreviewable(messageRecord) {
+  const type = messageRecord.type;
   if (MessageTypes.MessageTypes.DEFAULT !== type) {
-    if (tmp(1094).MessageTypes.CHANGELOG !== type) {
-      if (tmp(1094).MessageTypes.REPLY !== type) {
-        if (tmp(1094).MessageTypes.CHAT_INPUT_COMMAND !== type) {
-          if (tmp(1094).MessageTypes.CONTEXT_MENU_COMMAND !== type) {
-            if (tmp(1094).MessageTypes.POLL_RESULT !== type) {
-              if (tmp(1094).MessageTypes.AUTO_MODERATION_ACTION !== type) {
+    if (tmp(1090).MessageTypes.CHANGELOG !== type) {
+      if (tmp(1090).MessageTypes.REPLY !== type) {
+        if (tmp(1090).MessageTypes.CHAT_INPUT_COMMAND !== type) {
+          if (tmp(1090).MessageTypes.CONTEXT_MENU_COMMAND !== type) {
+            if (tmp(1090).MessageTypes.POLL_RESULT !== type) {
+              if (tmp(1090).MessageTypes.AUTO_MODERATION_ACTION !== type) {
                 return false;
               }
             }
@@ -358,123 +360,37 @@ function isMessageContentPreviewable(message) {
     }
   }
   return true;
-}
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/message_previews/useFormattedMessagePreview.tsx");
-
-export { isMessageContentPreviewable };
-export const useFormattedMessagePreview = ReactCompilerGating.isReactCompilerEnabled() ? ((author, id) => {
-  const _require = author;
-  const cResult = require("c").c(10);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== author.author.id) {
-    const fn = function c() {
-      return { isBlocked: RelationshipStore.isBlocked(author.author.id), isIgnored: RelationshipStore.isIgnored(author.author.id) };
-    };
-    const items1 = [author.author.id];
-    cResult[1] = author.author.id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp7 = items1;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const obj = require("c");
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(first, tmp6, tmp7);
-  ({ isBlocked, isIgnored } = stateFromStoresObject);
-  const tmpResult = require("initialize");
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [AuthenticationStore];
-    const fn2 = function h() {
-      return id.getId();
-    };
-    cResult[4] = items2;
-    cResult[5] = fn2;
-    let tmp12 = fn2;
-    let tmp11 = items2;
-  } else {
-    tmp11 = cResult[4];
-    tmp12 = cResult[5];
-  }
-  const tmp10 = useIsCallActiveDefault(id.id, author.id);
-  const stateFromStores = require("initialize").useStateFromStores(tmp11, tmp12);
-  const nick = useMessageAuthorDefault(author).nick;
-  let stringResult = nick;
-  if (author.type !== require("MessageTypes").MessageTypes.USER_JOIN) {
-    stringResult = nick;
-    if (author.author.id === stateFromStores) {
-      const intl = tmp(1119).intl;
-      stringResult = intl.string(tmp(1119).t.LuZzxn);
-    }
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const items3 = [UserStore];
-    cResult[6] = items3;
-    let tmp16 = items3;
-  } else {
-    tmp16 = cResult[6];
-  }
-  if (cResult[7] === author.mentions[0]) {
-    if (cResult[8] === author.mentions.length) {
-      let tmp18 = cResult[9];
-    }
-    const stateFromStores1 = tmp(504).useStateFromStores(tmp16, tmp18);
-    const tmpResult5 = tmp(504);
-    const obj2 = { message: author, channel: id, currentUserId: stateFromStores, authorNick: stringResult, otherUser: stateFromStores1, otherUserNick: tmp(5022).useNullableUserAuthor(stateFromStores1, id).nick, isBlocked, isIgnored, isCallActive: tmp10 };
-    return formatMessagePreview(author, obj2);
-  }
-  class I {
-    constructor() {
-      user = undefined;
-      if (closure_0.mentions.length > 0) {
-        tmp3 = closure_5;
-        user = closure_5.getUser(tmp.mentions[0]);
-      }
-      return user;
-    }
-  }
-  cResult[7] = author.mentions[0];
-  cResult[8] = author.mentions.length;
-  cResult[9] = I;
-  tmp18 = I;
-}) : ((author, channel) => {
-  const _require = author;
+};
+export const useFormattedMessagePreview = function useFormattedMessagePreview(message, channel) {
+  _require = message;
   const items = [RelationshipStore];
-  const items1 = [author.author.id];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => ({ isBlocked: RelationshipStore.isBlocked(author.author.id), isIgnored: RelationshipStore.isIgnored(author.author.id) }), items1);
+  const items1 = [message.author.id];
+  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => ({ isBlocked: RelationshipStore.isBlocked(message.author.id), isIgnored: RelationshipStore.isIgnored(message.author.id) }), items1);
   ({ isBlocked, isIgnored } = stateFromStoresObject);
   const obj = require("initialize");
-  const tmp4 = useIsCallActiveDefault(channel.id, author.id);
+  const tmp4 = useIsCallActiveDefault(channel.id, message.id);
   const items2 = [AuthenticationStore];
   const stateFromStores = require("initialize").useStateFromStores(items2, () => id.getId());
-  const nick = useMessageAuthorDefault(author).nick;
+  const nick = useMessageAuthorDefault(message).nick;
   let stringResult = nick;
-  if (author.type !== require("MessageTypes").MessageTypes.USER_JOIN) {
+  if (message.type !== require("MessageTypes").MessageTypes.USER_JOIN) {
     stringResult = nick;
-    if (author.author.id === stateFromStores) {
-      const intl = tmp(1119).intl;
-      stringResult = intl.string(tmp(1119).t.LuZzxn);
+    if (message.author.id === stateFromStores) {
+      const intl = tmp(1115).intl;
+      stringResult = intl.string(tmp(1115).t.LuZzxn);
     }
   }
   const obj2 = require("initialize");
   const items3 = [UserStore];
   const stateFromStores1 = require("initialize").useStateFromStores(items3, () => {
     let user;
-    if (author.mentions.length > 0) {
+    if (message.mentions.length > 0) {
       user = UserStore.getUser(tmp.mentions[0]);
     }
     return user;
   });
   const tmpResult = require("initialize");
   const tmpResult2 = require("useMessageAuthor");
-  return formatMessagePreview(author, { message: author, channel, currentUserId: stateFromStores, authorNick: stringResult, otherUser: stateFromStores1, otherUserNick: require("useMessageAuthor").useNullableUserAuthor(stateFromStores1, channel).nick, isBlocked, isIgnored, isCallActive: tmp4 });
-});
+  return formatMessagePreview(message, { message, channel, currentUserId: stateFromStores, authorNick: stringResult, otherUser: stateFromStores1, otherUserNick: require("useMessageAuthor").useNullableUserAuthor(stateFromStores1, channel).nick, isBlocked, isIgnored, isCallActive: tmp4 });
+};
 export { formatMessagePreview };

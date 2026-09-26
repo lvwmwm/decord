@@ -1,10 +1,10 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 16486
+// Function ID: 16487
 // Name: GuildSettingsModalChannelsActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 
-// Module 16493 (GuildSettingsModalChannelsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 16486 (GuildSettingsModalChannelsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsActionCreators.tsx");

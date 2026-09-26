@@ -1,9 +1,9 @@
 // Module ID: 13849
 // Function ID: 13850
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 13849
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 80, height: 80, scales: [1], hash: "5f9cf938bde196c596c6b50aa389dd8b", name: "img_wumpus_nitro_classic", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 88, height: 40, scales: [2, 3], hash: "bb1baaeee62e8a609680d1082f363744", name: "img_gifting_empty", type: "png" });

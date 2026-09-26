@@ -1,9 +1,9 @@
 // Module ID: 5589
 // Function ID: 5590
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 5589
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "9531281533f8a11dbbdded76baff0291", name: "img_account_sync_spotify_light_and_dark", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "cfcfafbb4f4daed7fd4c8d1f431ce58f", name: "img_account_sync_xbox_light", type: "png" });

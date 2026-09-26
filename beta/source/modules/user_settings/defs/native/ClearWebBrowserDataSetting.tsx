@@ -1,23 +1,23 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15756
+// Function ID: 15757
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 8270, 5148, 1119, 4754, 4490, 11630, 1368, 1098, 2]
+// Dependencies: [5, 8265, 5146, 1115, 4752, 4486, 11754, 1364, 1094, 2]
 
-// Module 15752 (ClearWebBrowserDataSetting)
-import util from "util" /* 1119 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import BrowserManager from "BrowserManager" /* 4754 */;
+// Module 15756 (ClearWebBrowserDataSetting)
+import util from "util" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import BrowserManager from "BrowserManager" /* 4752 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const ConstantsIOS = tmp(1098);
+const ConstantsIOS = tmp(1094);
 require = fn;
-const SettingBuilders = fn(11630);
+const SettingBuilders = fn(11754);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.HNqvOh);
   },
-  parent: fn(8270).MobileUserSettings.WEB_BROWSER,
+  parent: fn(8265).MobileUserSettings.WEB_BROWSER,
   variant: "danger",
   onPress: function showClearWebBrowserDataAlert() {
     const obj2 = { key: "clear-web-browser-data", title: null, content: null, confirmText: null, onConfirm: null };
@@ -38,7 +38,7 @@ const pressable = SettingBuilders.createPressable({
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ const pressable = SettingBuilders.createPressable({
             } else {
               v1 = 1;
               dependencyMap = 1;
-              const obj5 = { value: tmp4(4754).browserManagerClearWebsiteData(), done: false };
+              const obj5 = { value: tmp4(4752).browserManagerClearWebsiteData(), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -66,11 +66,11 @@ const pressable = SettingBuilders.createPressable({
             return obj;
           } else {
             const obj7 = { key: "web-browser-data-cleared", content: null };
-            const intl = tmp4(1119).intl;
-            obj7.content = intl.string(tmp4(1119).t["zaEQz+"]);
-            v1(4490).open(obj7);
+            const intl = tmp4(1115).intl;
+            obj7.content = intl.string(tmp4(1115).t["zaEQz+"]);
+            v1(4486).open(obj7);
             dependencyMap = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           dependencyMap = tmp;

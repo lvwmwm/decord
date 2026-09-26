@@ -1,23 +1,24 @@
-// Module ID: 10081
-// Function ID: 10082
+// Module ID: 10102
+// Function ID: 10103
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4431, 1078, 1089, 21, 4790, 5775, 580, 558, 568, 504, 8715, 9891, 9893, 1119, 4786, 9865, 2]
+// Dependencies: [19, 17, 4427, 1074, 1085, 21, 4788, 5773, 576, 504, 8710, 9913, 9915, 4784, 1115, 9887, 2]
+// Exports: default
 
-// Module 10081 (GuildEventsNoContent)
-import nativeDefault from "native" /* 580 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
+// Module 10102 (GuildEventsNoContent)
+import nativeDefault from "native" /* 576 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9887 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import TextStyles from "TextStyles" /* 5775 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import TextStyles from "TextStyles" /* 5773 */;
 
 const require = fn;
 const View = fn(17).View;
-const GuildSettingsSections = fn(1078).GuildSettingsSections;
-const Constants = fn(1089);
+const GuildSettingsSections = fn(1074).GuildSettingsSections;
+const Constants = fn(1085);
 ({ Permissions: metroRequire, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginBottom: 88, padding: 16 }, title: null, subtitle: null };
 let obj3 = {};
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24, { marginBottom: 8 }));
@@ -25,130 +26,10 @@ obj3.textAlign = "center";
 obj2.title = obj3;
 obj2.subtitle = { paddingBottom: 2, textAlign: "center" };
 let closure_9 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsNoContent.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
-  const cResult = guild(568).c(21);
-  guild = guild.guild;
-  const onClose = guild.onClose;
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guild) {
-    const fn = function u() {
-      return PermissionStore.can(constants.MANAGE_ROLES, guild);
-    };
-    const items1 = [guild];
-    cResult[1] = guild;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp8 = items1;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const obj = guild(568);
-  const stateFromStores = guild(504).useStateFromStores(first, tmp7, tmp8);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { icon: onClose(9891), IconComponent: tmp(9893).CalendarIcon };
-    const tmp14 = closure_7(onClose(8715), obj2);
-    cResult[4] = tmp14;
-    let tmp10 = tmp14;
-    const tmp13 = onClose(8715);
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t["WgZ+3D"]);
-    cResult[5] = stringResult;
-    let tmp15 = stringResult;
-  } else {
-    tmp15 = cResult[5];
-  }
-  if (cResult[6] !== tmp4.title) {
-    const obj3 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_7(tmp(4786).Text, obj3);
-    cResult[6] = tmp4.title;
-    cResult[7] = tmp19;
-    let tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[7];
-  }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t["v/S/PG"]);
-    cResult[8] = stringResult1;
-    let tmp20 = stringResult1;
-  } else {
-    tmp20 = cResult[8];
-  }
-  if (cResult[9] !== tmp4.subtitle) {
-    const obj4 = { style: tmp4.subtitle, variant: "text-sm/normal", color: "text-default", children: tmp20 };
-    const tmp24 = closure_7(tmp(4786).Text, obj4);
-    cResult[9] = tmp4.subtitle;
-    cResult[10] = tmp24;
-    let tmp22 = tmp24;
-  } else {
-    tmp22 = cResult[10];
-  }
-  if (cResult[11] === stateFromStores) {
-    if (cResult[12] === guild) {
-      if (cResult[13] === onClose) {
-        if (cResult[14] === tmp4.subtitle) {
-          let tmp25 = cResult[15];
-        }
-        if (cResult[16] === tmp4.container) {
-          if (cResult[17] === tmp22) {
-            if (cResult[18] === tmp25) {
-              if (cResult[19] === tmp17) {
-                let tmp28 = cResult[20];
-              }
-              return tmp28;
-            }
-          }
-        }
-        const obj5 = { style: tmp4.container, children: null };
-        const items2 = [tmp10, tmp17, tmp22, tmp25];
-        obj5.children = items2;
-        const tmp31 = closure_8(View, obj5);
-        cResult[16] = tmp4.container;
-        cResult[17] = tmp22;
-        cResult[18] = tmp25;
-        cResult[19] = tmp17;
-        cResult[20] = tmp31;
-        tmp28 = tmp31;
-      }
-    }
-  }
-  let tmp26 = stateFromStores;
-  if (stateFromStores) {
-    const obj6 = { style: tmp4.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
-    const intl3 = tmp(1119).intl;
-    const obj7 = {
-      onClick() {
-          onClose();
-          GuildSettingsActionCreatorsDefault.open(guild.id, GuildSettingsSections.ROLES);
-        }
-    };
-    obj6.children = intl3.format(tmp(1119).t["K+DH2o"], obj7);
-    tmp26 = closure_7(tmp(4786).Text, obj6);
-  }
-  cResult[11] = stateFromStores;
-  cResult[12] = guild;
-  cResult[13] = onClose;
-  cResult[14] = tmp4.subtitle;
-  cResult[15] = tmp26;
-  tmp25 = tmp26;
-}) : ((guild) => {
+export default function GuildEventsNoContent(guild) {
   guild = guild.guild;
   const onClose = guild.onClose;
   const tmp = closure_9();
@@ -161,30 +42,30 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp5 = closure_8;
   const tmp6 = View;
   const tmp7 = closure_7;
-  obj3.icon = onClose(9891);
-  obj3.IconComponent = guild(9893).CalendarIcon;
-  const items2 = [closure_7(onClose(8715), obj3), , , ];
+  obj3.icon = onClose(9913);
+  obj3.IconComponent = guild(9915).CalendarIcon;
+  const items2 = [closure_7(onClose(8710), obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = guild(1119).intl;
-  obj4.children = intl.string(guild(1119).t["WgZ+3D"]);
-  items2[1] = closure_7(guild(4786).Text, obj4);
+  const intl = guild(1115).intl;
+  obj4.children = intl.string(guild(1115).t["WgZ+3D"]);
+  items2[1] = closure_7(guild(4784).Text, obj4);
   const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
-  const intl2 = guild(1119).intl;
-  obj5.children = intl2.string(guild(1119).t["v/S/PG"]);
-  items2[2] = closure_7(guild(4786).Text, obj5);
+  const intl2 = guild(1115).intl;
+  obj5.children = intl2.string(guild(1115).t["v/S/PG"]);
+  items2[2] = closure_7(guild(4784).Text, obj5);
   if (stateFromStores) {
     const obj6 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
-    const intl3 = tmp2(1119).intl;
+    const intl3 = tmp2(1115).intl;
     const obj7 = {
       onClick() {
           onClose();
           GuildSettingsActionCreatorsDefault.open(guild.id, GuildSettingsSections.ROLES);
         }
     };
-    obj6.children = intl3.format(tmp2(1119).t["K+DH2o"], obj7);
-    stateFromStores = tmp7(tmp2(4786).Text, obj6);
+    obj6.children = intl3.format(tmp2(1115).t["K+DH2o"], obj7);
+    stateFromStores = tmp7(tmp2(4784).Text, obj6);
   }
   items2[3] = stateFromStores;
   obj2.children = items2;
   return tmp5(tmp6, obj2);
-});
+};

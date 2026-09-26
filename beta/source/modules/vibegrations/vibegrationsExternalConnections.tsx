@@ -1,10 +1,10 @@
-// Module ID: 13407
-// Function ID: 13408
+// Module ID: 13397
+// Function ID: 13398
 // Name: vibegrationsExternalConnections
 // Dependencies: [2]
 // Exports: beginExternalAuthorization, endExternalAuthorization, externalAuthErrorCode, externalAuthErrorCopy, externalAuthErrorFor, externalConnectionOffers
 
-// Module 13407 (vibegrationsExternalConnections)
+// Module 13397 (vibegrationsExternalConnections)
 import size from "module_2" /* 2 */;
 
 function externalConnectionOffer(nextResult) {

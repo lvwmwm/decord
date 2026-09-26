@@ -1,12 +1,12 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 10554
+// Function ID: 10555
 // Name: ChatRestrictions
-// Dependencies: [1078, 10671, 1119, 2]
+// Dependencies: [1074, 10555, 1115, 2]
 
-// Module 10670 (ChatRestrictions)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
-import MentionGuardUtilsDefault from "MentionGuardUtils" /* 10671 */;
+// Module 10554 (ChatRestrictions)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
+import MentionGuardUtilsDefault from "MentionGuardUtils" /* 10555 */;
 import size from "module_2" /* 2 */;
 
 const TOKEN_REGEX = Constants.TOKEN_REGEX;
@@ -22,31 +22,31 @@ const items = [
             return false;
           } else {
             if (tmp9Result.shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId)) {
-              const everyoneMemberCountResult = tmp9(10671).everyoneMemberCount(extractEveryoneRoleResult, getGuildId);
+              const everyoneMemberCountResult = tmp9(10555).everyoneMemberCount(extractEveryoneRoleResult, getGuildId);
               const _Math = Math;
               const _Math2 = Math;
               const _Math3 = Math;
               const powResult = Math.pow(10, Math.floor(Math.log10(everyoneMemberCountResult)));
               let v47E5Rz = util.t["47E5Rz"];
               if (getGuildId.isForumPost()) {
-                v47E5Rz = tmp6(1119).t.sYW2cy;
+                v47E5Rz = tmp6(1115).t.sYW2cy;
               } else if (getGuildId.isThread()) {
-                v47E5Rz = tmp6(1119).t["2YaiQ1"];
+                v47E5Rz = tmp6(1115).t["2YaiQ1"];
               }
               const obj = { body: null, footer: null };
-              const intl = tmp6(1119).intl;
+              const intl = tmp6(1115).intl;
               const obj2 = { role: extractEveryoneRoleResult, count: null };
               const _Math4 = Math;
               const result = Math.trunc(everyoneMemberCountResult / powResult) * powResult;
               obj2.count = result.toLocaleString();
               obj.body = intl.formatToPlainString(v47E5Rz, obj2);
-              const intl2 = tmp6(1119).intl;
+              const intl2 = tmp6(1115).intl;
               obj.footer = intl2.string(util.t.mVyrtu);
               return obj;
             } else {
               return false;
             }
-            tmp9Result = tmp9(10671);
+            tmp9Result = tmp9(10555);
           }
         }
       } else {
@@ -54,7 +54,7 @@ const items = [
       }
     },
     analyticsType: "@Everyone Warning",
-    animation: "unicodeVersion"
+    animation: "accessible"
   },
   {
     check(arg0) {

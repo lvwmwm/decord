@@ -1,12 +1,12 @@
-// Module ID: 2094
-// Function ID: 2095
+// Module ID: 2090
+// Function ID: 2091
 // Name: TryLoad
-// Dependencies: [5, 3, 577, 2]
+// Dependencies: [5, 3, 573, 2]
 // Exports: tryLoad, tryLoadAsync, tryLoadOrResetCacheGateway, tryLoadOrResetCacheGatewayAsync
 
-// Module 2094 (TryLoad)
+// Module 2090 (TryLoad)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 let closure_4 = async function _tryLoadAsync(arg0, value) {
@@ -20,7 +20,7 @@ let closure_4 = async function _tryLoadAsync(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -84,7 +84,7 @@ let closure_5 = async function _tryLoadOrResetCacheGatewayAsync(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

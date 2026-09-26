@@ -1,9 +1,9 @@
 // Module ID: 10294
 // Function ID: 10295
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 10294
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "db76c9ef21a10a502ae95ae16e345521", name: "add", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 195, height: 92, scales: [1, 2, 3], hash: "a075205f01081abc73c7a94b31634a53", name: "krisp_logo_light", type: "png" });

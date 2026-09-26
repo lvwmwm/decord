@@ -1,12 +1,12 @@
-// Module ID: 10061
-// Function ID: 10062
+// Module ID: 10082
+// Function ID: 10083
 // Name: beginConsoleTransfer
-// Dependencies: [5, 1078, 10062, 10069, 4757, 10070, 1984, 1253, 10074, 2]
+// Dependencies: [5, 1074, 10083, 10090, 4755, 10091, 1980, 1249, 10095, 2]
 // Exports: beginConsoleTransfer
 
-// Module 10061 (beginConsoleTransfer)
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10062 */;
-import transferToXboxDefault from "transferToXbox" /* 10074 */;
+// Module 10082 (beginConsoleTransfer)
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10083 */;
+import transferToXboxDefault from "transferToXbox" /* 10095 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let closure_5 = async function _beginConsoleTransfer(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -88,7 +88,7 @@ let closure_5 = async function _beginConsoleTransfer(arg0, value) {
         return obj;
       }
       c5 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp35) {
       c5 = tmp;
       throw tmp35;
@@ -96,7 +96,7 @@ let closure_5 = async function _beginConsoleTransfer(arg0, value) {
   }
 };
 const items = [, ];
-({ PLAYSTATION: arr[0], PLAYSTATION_STAGING: arr[1] } = fn(1078).PlatformTypes);
+({ PLAYSTATION: arr[0], PLAYSTATION_STAGING: arr[1] } = fn(1074).PlatformTypes);
 const set = new Set(items);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_console/native/beginConsoleTransfer.tsx");

@@ -1,31 +1,31 @@
-// Module ID: 18383
-// Function ID: 18384
+// Module ID: 18374
+// Function ID: 18375
 // Name: native_required_assets_misc
-// Dependencies: [1405, 1406, 1407, 1408, 1409, 1423, 1424, 1425, 1426, 1427, 1428, 1429, 1430, 18384, 18385, 18386, 18387, 18388, 18389, 18390, 2]
+// Dependencies: [1401, 1402, 1403, 1404, 1405, 1419, 1420, 1421, 1422, 1423, 1424, 1425, 1426, 18375, 18376, 18377, 18378, 18379, 18380, 18381, 2]
 
-// Module 18383 (native_required_assets_misc)
+// Module 18374 (native_required_assets_misc)
+import _modDef1401 from "module_1401" /* 1401 */;
+import _modDef1402 from "module_1402" /* 1402 */;
+import _modDef1403 from "module_1403" /* 1403 */;
+import _modDef1404 from "module_1404" /* 1404 */;
 import _modDef1405 from "module_1405" /* 1405 */;
-import _modDef1406 from "module_1406" /* 1406 */;
-import _modDef1407 from "module_1407" /* 1407 */;
-import _modDef1408 from "module_1408" /* 1408 */;
-import _modDef1409 from "module_1409" /* 1409 */;
+import _modDef1419 from "module_1419" /* 1419 */;
+import _modDef1420 from "module_1420" /* 1420 */;
+import _modDef1421 from "module_1421" /* 1421 */;
+import _modDef1422 from "module_1422" /* 1422 */;
 import _modDef1423 from "module_1423" /* 1423 */;
 import _modDef1424 from "module_1424" /* 1424 */;
 import _modDef1425 from "module_1425" /* 1425 */;
 import _modDef1426 from "module_1426" /* 1426 */;
-import _modDef1427 from "module_1427" /* 1427 */;
-import _modDef1428 from "module_1428" /* 1428 */;
-import _modDef1429 from "module_1429" /* 1429 */;
-import _modDef1430 from "module_1430" /* 1430 */;
-import _modDef18384 from "module_18384" /* 18384 */;
-import _modDef18385 from "module_18385" /* 18385 */;
-import _modDef18386 from "module_18386" /* 18386 */;
-import _modDef18387 from "module_18387" /* 18387 */;
-import _modDef18388 from "module_18388" /* 18388 */;
-import _modDef18389 from "module_18389" /* 18389 */;
-import _modDef18390 from "module_18390" /* 18390 */;
+import _modDef18375 from "module_18375" /* 18375 */;
+import _modDef18376 from "module_18376" /* 18376 */;
+import _modDef18377 from "module_18377" /* 18377 */;
+import _modDef18378 from "module_18378" /* 18378 */;
+import _modDef18379 from "module_18379" /* 18379 */;
+import _modDef18380 from "module_18380" /* 18380 */;
+import _modDef18381 from "module_18381" /* 18381 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");
 
-export const NATIVE_REQUIRED_ASSETS_MISC = { DefaultAvatar0: _modDef1405, DefaultAvatar1: _modDef1406, DefaultAvatar2: _modDef1407, DefaultAvatar3: _modDef1408, DefaultAvatar4: _modDef1409, DefaultGroup0: _modDef1423, DefaultGroup1: _modDef1424, DefaultGroup2: _modDef1425, DefaultGroup3: _modDef1426, DefaultGroup4: _modDef1427, DefaultGroup5: _modDef1428, DefaultGroup6: _modDef1429, DefaultGroup7: _modDef1430, PoopDark: _modDef18384, PoopLight: _modDef18385, RoleSubscriptionBadge: _modDef18386, RoleSubscriptionLanyard: _modDef18387, RoleSubscriptionPurchaseCard: _modDef18388, SummaryIndicatorEnd: _modDef18389, SummaryIndicatorStart: _modDef18390 };
+export const NATIVE_REQUIRED_ASSETS_MISC = { DefaultAvatar0: _modDef1401, DefaultAvatar1: _modDef1402, DefaultAvatar2: _modDef1403, DefaultAvatar3: _modDef1404, DefaultAvatar4: _modDef1405, DefaultGroup0: _modDef1419, DefaultGroup1: _modDef1420, DefaultGroup2: _modDef1421, DefaultGroup3: _modDef1422, DefaultGroup4: _modDef1423, DefaultGroup5: _modDef1424, DefaultGroup6: _modDef1425, DefaultGroup7: _modDef1426, PoopDark: _modDef18375, PoopLight: _modDef18376, RoleSubscriptionBadge: _modDef18377, RoleSubscriptionLanyard: _modDef18378, RoleSubscriptionPurchaseCard: _modDef18379, SummaryIndicatorEnd: _modDef18380, SummaryIndicatorStart: _modDef18381 };

@@ -1,14 +1,14 @@
-// Module ID: 10997
-// Function ID: 10998
+// Module ID: 10959
+// Function ID: 10960
 // Name: PremiumAnalyticsUtils
-// Dependencies: [1078, 1259, 4450, 1245, 2]
+// Dependencies: [1074, 1255, 4446, 1241, 2]
 // Exports: getBasePurchaseFlowAnalyticsFields, getNewAnalyticsLoadId, getPaymentFlowCompletedAnalyticsFields, getPaymentFlowStepAnalyticsFields, trackPremiumSubscriptionCancellationFlowStep, trackPremiumSubscriptionCancellationStarted
 
-// Module 10997 (PremiumAnalyticsUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import v1 from "v1" /* 1259 */;
-import PremiumUtils from "PremiumUtils" /* 4450 */;
-import Constants from "Constants" /* 1078 */;
+// Module 10959 (PremiumAnalyticsUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import v1 from "v1" /* 1255 */;
+import PremiumUtils from "PremiumUtils" /* 4446 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ SubscriptionTypes: c3, PurchaseTypeToAnalyticsPaymentType: closure_4, PurchaseTypes: hasOwnProperty, AnalyticEvents: metroRequire } = Constants);

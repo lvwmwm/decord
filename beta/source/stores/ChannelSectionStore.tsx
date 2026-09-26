@@ -1,25 +1,25 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7554
+// Function ID: 7555
 // Name: ChannelSectionStore
-// Dependencies: [4706, 7557, 2049, 2045, 2067, 4431, 2099, 4612, 1376, 1078, 2052, 1089, 7558, 7559, 1114, 11, 5030, 504, 1438, 577, 2]
+// Dependencies: [4703, 7555, 2045, 2041, 2063, 4427, 2095, 4609, 1372, 1074, 2048, 1085, 7556, 7557, 1110, 11, 5028, 504, 1434, 573, 2]
 // Exports: isViewChannelSidebar
 
-// Module 7556 (ChannelSectionStore)
+// Module 7554 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 7558 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 7559 */;
-import ExperimentStore from "ExperimentStore" /* 4706 */;
-import SearchMessageStore from "SearchMessageStore" /* 7557 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import UserStore from "UserStore" /* 1376 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import ApexExperiment from "ApexExperiment" /* 1434 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 7556 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 7557 */;
+import ExperimentStore from "ExperimentStore" /* 4703 */;
+import SearchMessageStore from "SearchMessageStore" /* 7555 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function toggleSection(c17, arg1) {
@@ -36,11 +36,11 @@ function toggleSection(c17, arg1) {
   let tmp4 = null;
   if (null != channelId) {
     tmp4 = channelId;
-    if (state(channelId)) {
+    if (closure_1_14(channelId)) {
       const guildId = SelectedGuildStore.getGuildId();
       let tmp8 = null;
       if (null != guildId) {
-        tmp8 = closure_1_15(channelId, guildId);
+        tmp8 = __initData(channelId, guildId);
       }
       tmp4 = tmp8;
     }
@@ -119,12 +119,12 @@ function setIsSearchSidebarOpen() {
     c25 = hasSearchStateResult;
   }
 }
-const isChannelChatInSidebar = fn(2049).isChannelChatInSidebar;
-const Constants = fn(1078);
+const isChannelChatInSidebar = fn(2045).isChannelChatInSidebar;
+const Constants = fn(1074);
 ({ ChannelSections: closure_12, ComponentActions: map1 } = Constants);
-const ChannelConstants = fn(2052);
+const ChannelConstants = fn(2048);
 ({ isStaticChannelRoute: closure_14, buildGuildStaticChannelId: closure_15 } = ChannelConstants);
-const Permissions = fn(1089).Permissions;
+const Permissions = fn(1085).Permissions;
 let c17 = false;
 let c18 = false;
 let c19 = false;
@@ -186,11 +186,11 @@ prototype["getSection"] = function getSection(arg0, arg1) {
     let tmp3 = null;
     if (null != arg0) {
       tmp3 = arg0;
-      if (state(arg0)) {
+      if (closure_1_14(arg0)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp7 = null;
         if (null != guildId) {
-          tmp7 = closure_1_15(arg0, guildId);
+          tmp7 = __initData(arg0, guildId);
         }
         tmp3 = tmp7;
       }
@@ -225,11 +225,11 @@ prototype["getSidebarState"] = function getSidebarState(channelId) {
   let tmp = null;
   if (null != channelId) {
     tmp = channelId;
-    if (state(channelId)) {
+    if (closure_1_14(channelId)) {
       const guildId = SelectedGuildStore.getGuildId();
       let tmp5 = null;
       if (null != guildId) {
-        tmp5 = closure_1_15(channelId, guildId);
+        tmp5 = __initData(channelId, guildId);
       }
       tmp = tmp5;
     }
@@ -254,11 +254,11 @@ prototype["getCurrentSidebarChannelId"] = function getCurrentSidebarChannelId(ch
   let tmp = null;
   if (null != channelId) {
     tmp = channelId;
-    if (state(channelId)) {
+    if (closure_1_14(channelId)) {
       const guildId = SelectedGuildStore.getGuildId();
       let tmp5 = null;
       if (null != guildId) {
-        tmp5 = closure_1_15(channelId, guildId);
+        tmp5 = __initData(channelId, guildId);
       }
       tmp = tmp5;
     }
@@ -284,11 +284,11 @@ prototype["getCurrentSidebarMessageId"] = function getCurrentSidebarMessageId(ch
   let tmp = null;
   if (null != channelId) {
     tmp = channelId;
-    if (state(channelId)) {
+    if (closure_1_14(channelId)) {
       const guildId = SelectedGuildStore.getGuildId();
       let tmp5 = null;
       if (null != guildId) {
-        tmp5 = closure_1_15(channelId, guildId);
+        tmp5 = __initData(channelId, guildId);
       }
       tmp = tmp5;
     }
@@ -413,11 +413,11 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
     ({ channelId, details } = arg0);
     if (null != baseChannelId) {
       tmp = baseChannelId;
-      if (state(baseChannelId)) {
+      if (closure_1_14(baseChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
-          tmp5 = closure_1_15(baseChannelId, guildId);
+          tmp5 = __initData(baseChannelId, guildId);
         }
         tmp = tmp5;
       }
@@ -444,11 +444,11 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
     ({ sidebarType, details } = arg0);
     if (null != baseChannelId) {
       tmp = baseChannelId;
-      if (state(baseChannelId)) {
+      if (closure_1_14(baseChannelId)) {
         const guildId1 = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId1) {
-          tmp5 = closure_1_15(baseChannelId, guildId1);
+          tmp5 = __initData(baseChannelId, guildId1);
         }
         tmp = tmp5;
       }
@@ -468,11 +468,11 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
     ({ parentMessageId, location: _location } = parentChannelId);
     if (null != parentChannelId) {
       tmp = parentChannelId;
-      if (state(parentChannelId)) {
+      if (closure_1_14(parentChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
-          tmp5 = closure_1_15(parentChannelId, guildId);
+          tmp5 = __initData(parentChannelId, guildId);
         }
         tmp = tmp5;
       }
@@ -487,11 +487,11 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
     let tmp3 = null;
     if (null != baseChannelId) {
       tmp3 = baseChannelId;
-      if (state(baseChannelId)) {
+      if (closure_1_14(baseChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp7 = null;
         if (null != guildId) {
-          tmp7 = closure_1_15(baseChannelId, guildId);
+          tmp7 = __initData(baseChannelId, guildId);
         }
         tmp3 = tmp7;
       }
@@ -588,7 +588,7 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
         if (sidebars[channelId] != null) {
           type = tmp10.type;
         }
-        if (type === tmp(7558).SidebarType.VIEW_CHANNEL) {
+        if (type === tmp(7556).SidebarType.VIEW_CHANNEL) {
           if (tmp10.channelId === channelId) {
             return flag;
           }
@@ -598,8 +598,8 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
         if (null != channel) {
           flag2 = flag;
           if (isChannelChatInSidebar(channel.type)) {
-            const obj = { type: tmp(7558).SidebarType.VIEW_CHANNEL, channelId, details: null };
-            const obj2 = { type: tmp(7558).ViewChannelDetailType.CHAT, initialMessageId: messageId };
+            const obj = { type: tmp(7556).SidebarType.VIEW_CHANNEL, channelId, details: null };
+            const obj2 = { type: tmp(7556).ViewChannelDetailType.CHAT, initialMessageId: messageId };
             obj.details = obj2;
             sidebars[channelId] = obj;
             flag2 = true;

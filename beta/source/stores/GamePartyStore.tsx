@@ -1,15 +1,15 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13562
+// Function ID: 13563
 // Name: GamePartyStore
-// Dependencies: [502, 4441, 5530, 1078, 12, 504, 577, 2]
+// Dependencies: [502, 4437, 5528, 1074, 12, 504, 573, 2]
 
-// Module 13572 (GamePartyStore)
+// Module 13562 (GamePartyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
 
 function updateParty(id, id2, activities, status) {
   const found = activities.find((party) => {
@@ -66,7 +66,7 @@ function updateParty(id, id2, activities, status) {
       tmp19[id] = id;
       if (!RelationshipStore.isBlocked(id2)) {
         if (!RelationshipStore.isIgnored(id2)) {
-          value3 = map.get(id);
+          let value3 = map.get(id);
           if (value3 == null) {
             const _Set = Set;
             value3 = new Set();
@@ -142,7 +142,7 @@ function handleRelationshipAddOrUpdate(relationship) {
   }
   obj = RelationshipStore;
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ StatusTypes: hasOwnProperty, ME: metroRequire } = Constants);
 const dependencyMap = {};
 let map = new Map();

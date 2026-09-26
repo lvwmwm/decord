@@ -1,17 +1,17 @@
-// Module ID: 9688
-// Function ID: 9689
+// Module ID: 9692
+// Function ID: 9693
 // Name: VideoSpeakerStore
-// Dependencies: [4812, 502, 1996, 5670, 4806, 4811, 4842, 12, 504, 577, 2]
+// Dependencies: [4810, 502, 1992, 5668, 4804, 4809, 4840, 12, 504, 573, 2]
 
-// Module 9688 (VideoSpeakerStore)
+// Module 9692 (VideoSpeakerStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4842 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4840 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import SpeakingStore from "SpeakingStore" /* 5670 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import SpeakingStore from "SpeakingStore" /* 5668 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
 import apply from "module_12" /* 12 */;
 
 require = fn;
@@ -139,7 +139,7 @@ function handleChannelRTCUpdate() {
   closure_11();
   return false;
 }
-const ParticipantTypes = fn(4811).ParticipantTypes;
+const ParticipantTypes = fn(4809).ParticipantTypes;
 let closure_11 = apply.throttle(updateSpeaker, 300, { trailing: true });
 const Store = initializeDefault.Store;
 class VideoSpeakerStoreClass extends Store {
@@ -150,9 +150,9 @@ prototype["initialize"] = function initialize() {
   const items = [ChannelRTCStore, ApplicationStreamingStore];
   this.syncWith(items, handleChannelRTCUpdate);
 };
-prototype["getSpeaker"] = function getSpeaker(arg0) {
-  if (global !== arg0) {
-    global = arg0;
+prototype["getSpeaker"] = function getSpeaker(isActivityViewFocused) {
+  if (global !== isActivityViewFocused) {
+    global = isActivityViewFocused;
     c3 = null;
     updateSpeaker(false);
   }

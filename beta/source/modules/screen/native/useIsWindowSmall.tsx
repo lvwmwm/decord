@@ -1,22 +1,21 @@
-// Module ID: 8183
-// Function ID: 8184
+// Module ID: 8178
+// Function ID: 8179
 // Name: useIsWindowSmall
-// Dependencies: [4652, 558, 2]
+// Dependencies: [4649, 2]
 // Exports: default, useIsWindowSmall
 
-// Module 8183 (useIsWindowSmall)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4652 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 8178 (useIsWindowSmall)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4649 */;
 import size from "module_2" /* 2 */;
 
 const useWindowSizeClassifierDefault = useWindowSizeClassifier;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/screen/native/useIsWindowSmall.tsx");
+const result = size.fileFinishedImporting("modules/screen/native/useIsWindowSmall.tsx");
 
 export default function getIsWindowSmall() {
   const windowSizeClassifier = useWindowSizeClassifier.getWindowSizeClassifier();
   return windowSizeClassifier <= useWindowSizeClassifier.WindowSizeClassifier.SMALL;
 };
-export const useIsWindowSmall = () => useWindowSizeClassifierDefault() <= useWindowSizeClassifier.WindowSizeClassifier.SMALL;
+export const useIsWindowSmall = function useIsWindowSmall() {
+  return useWindowSizeClassifierDefault() <= useWindowSizeClassifier.WindowSizeClassifier.SMALL;
+};

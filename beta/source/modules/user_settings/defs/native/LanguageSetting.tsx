@@ -1,101 +1,22 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15696
+// Function ID: 15697
 // Name: LanguageSetting
-// Dependencies: [2113, 1078, 558, 568, 504, 1119, 11630, 15693, 15695, 2]
+// Dependencies: [2109, 1074, 504, 1115, 11754, 15697, 15699, 2]
 
-// Module 15692 (LanguageSetting)
-import util from "util" /* 1119 */;
-import LocaleStore from "LocaleStore" /* 2113 */;
+// Module 15696 (LanguageSetting)
+import util from "util" /* 1115 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11630);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = stateFromStores(568).c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LocaleStore];
-    const fn = function l() {
-      return locale.locale;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const obj = stateFromStores(568);
-  stateFromStores = stateFromStores(504).useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const availableLocales = tmp(1119).getAvailableLocales();
-    const found = availableLocales.find((value) => value.value === stateFromStores);
-    let stringResult = null;
-    if (null != found) {
-      const intl = tmp(1119).intl;
-      stringResult = intl.string(found.localizedName);
-    }
-    cResult[2] = stateFromStores;
-    cResult[3] = stringResult;
-    let tmp8 = stringResult;
-    const tmpResult2 = tmp(1119);
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (() => {
-  const items = [LocaleStore];
-  _require = require("initialize").useStateFromStores(items, () => locale.locale);
-  const obj = require("initialize");
-  const tmp = _require;
-  const availableLocales = require("util").getAvailableLocales();
-  const found = availableLocales.find((value) => value.value === closure_0);
-  let stringResult = null;
-  if (null != found) {
-    const intl = tmp(1119).intl;
-    stringResult = intl.string(found.localizedName);
-  }
-  return stringResult;
-});
+const SettingBuilders = fn(11754);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.IHMsPn);
   },
   parent: null,
-  IconComponent: fn(15693).LanguageIcon,
-  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = stateFromStores(568).c(4);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [LocaleStore];
-      const fn = function l() {
-        return locale.locale;
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp4 = items;
-      tmp5 = fn;
-    } else {
-      [tmp4, tmp5] = cResult;
-    }
-    const obj = stateFromStores(568);
-    stateFromStores = stateFromStores(504).useStateFromStores(tmp4, tmp5);
-    if (cResult[2] !== stateFromStores) {
-      const availableLocales = tmp(1119).getAvailableLocales();
-      const found = availableLocales.find((value) => value.value === stateFromStores);
-      let stringResult = null;
-      if (null != found) {
-        const intl = tmp(1119).intl;
-        stringResult = intl.string(found.localizedName);
-      }
-      cResult[2] = stateFromStores;
-      cResult[3] = stringResult;
-      let tmp8 = stringResult;
-      const tmpResult2 = tmp(1119);
-    } else {
-      tmp8 = cResult[3];
-    }
-    return tmp8;
-  }) : (() => {
+  IconComponent: fn(15697).LanguageIcon,
+  useTrailing: function useLanguageSettingTrailing() {
     const items = [LocaleStore];
     _require = require("initialize").useStateFromStores(items, () => locale.locale);
     const obj = require("initialize");
@@ -104,13 +25,13 @@ const route = SettingBuilders.createRoute({
     const found = availableLocales.find((value) => value.value === closure_0);
     let stringResult = null;
     if (null != found) {
-      const intl = tmp(1119).intl;
+      const intl = tmp(1115).intl;
       stringResult = intl.string(found.localizedName);
     }
     return stringResult;
-  }),
+  },
   screen: {
-    route: fn(1078).UserSettingsSections.LANGUAGE,
+    route: fn(1074).UserSettingsSections.LANGUAGE,
     getComponent() {
       return require("UserSettingsLocale").default;
     }

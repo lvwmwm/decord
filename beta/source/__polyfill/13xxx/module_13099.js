@@ -1,64 +1,239 @@
 // Module ID: 13099
 // Function ID: 13100
-// Dependencies: [13086]
-// Exports: dateTimestampInSeconds, timestampInSeconds
+// Dependencies: [41, 42, 13100, 13086, 13097, 13105]
+// Exports: getStackAsyncContextStrategy
 
 // Module 13099
-import _mod13086 from "module_13086" /* 13086 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-function dateTimestampInSeconds() {
-  return Date.now() / 1000;
+let AsyncContextStack = require;
+function withScope(arg0) {
+  const mainCarrier = AsyncContextStack(13097).getMainCarrier();
+  const obj = AsyncContextStack(13097);
+  const sentryCarrier = AsyncContextStack(13097).getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const defaultCurrentScope = tmp(13105).getDefaultCurrentScope();
+    const tmpResult = tmp(13105);
+    stack = new _moduleResult(defaultCurrentScope, tmp(13105).getDefaultIsolationScope());
+    const tmpResult2 = tmp(13105);
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(arg0);
 }
-let timeOrigin;
-const _performance = _mod13086.GLOBAL_OBJ.performance;
-let fn = dateTimestampInSeconds;
-if (_performance) {
-  fn = dateTimestampInSeconds;
-  if (_performance.now) {
-    const _Date = Date;
-    const timestamp = Date.now();
-    timeOrigin = timestamp - _performance.now();
-    if (null != _performance.timeOrigin) {
-      timeOrigin = _performance.timeOrigin;
+function withSetScope(scope, arg1) {
+  closure_1 = arg1;
+  const mainCarrier = AsyncContextStack(13097).getMainCarrier();
+  const obj = AsyncContextStack(13097);
+  const sentryCarrier = AsyncContextStack(13097).getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const defaultCurrentScope = tmp(13105).getDefaultCurrentScope();
+    const tmpResult = tmp(13105);
+    stack = new _moduleResult(defaultCurrentScope, tmp(13105).getDefaultIsolationScope());
+    const tmpResult2 = tmp(13105);
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(() => {
+    stack.getStackTop().scope = scope;
+    return closure_1(scope);
+  });
+}
+function withIsolationScope(arg0) {
+  AsyncContextStack = arg0;
+  const mainCarrier = AsyncContextStack(13097).getMainCarrier();
+  const obj = AsyncContextStack(13097);
+  const sentryCarrier = AsyncContextStack(13097).getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const defaultCurrentScope = tmp(13105).getDefaultCurrentScope();
+    const tmpResult = tmp(13105);
+    stack = new closure_3(defaultCurrentScope, tmp(13105).getDefaultIsolationScope());
+    const tmpResult2 = tmp(13105);
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(() => {
+    const mainCarrier = AsyncContextStack(13097).getMainCarrier();
+    const obj = AsyncContextStack(13097);
+    const tmp = closure_0;
+    const sentryCarrier = AsyncContextStack(13097).getSentryCarrier(mainCarrier);
+    let stack = sentryCarrier.stack;
+    if (!stack) {
+      const defaultCurrentScope = tmp2(13105).getDefaultCurrentScope();
+      const tmp2Result = tmp2(13105);
+      stack = new closure_2_3(defaultCurrentScope, tmp2(13105).getDefaultIsolationScope());
+      const tmp2Result2 = tmp2(13105);
     }
-    fn = () => (timeOrigin + _performance.now()) / 1000;
+    sentryCarrier.stack = stack;
+    return tmp(stack.getIsolationScope());
+  });
+}
+class AsyncContextStack {
+  constructor(arg0, arg1) {
+    self = this;
+    scope = global;
+    tmp2 = c2(this, AsyncContextStack);
+    if (!global) {
+      tmp3 = closure_0;
+      tmp4 = closure_1;
+      tmp5 = new.target;
+      tmp6 = new.target;
+      scope = new closure_0(closure_1[2]).Scope();
+    }
+    scope1 = require;
+    if (!require) {
+      tmp8 = closure_0;
+      tmp9 = closure_1;
+      tmp10 = new.target;
+      tmp11 = new.target;
+      scope1 = new closure_0(closure_1[2]).Scope();
+    }
+    items = [];
+    items[0] = { scope };
+    self._stack = items;
+    self._isolationScope = scope1;
+    return;
   }
 }
-const _performance2 = _mod13086.GLOBAL_OBJ.performance;
-if (_performance2) {
-  if (_performance2.now) {
-    const nowResult = _performance2.now();
-    const _Date2 = Date;
-    const timestamp1 = Date.now();
-    let num2 = 3600000;
-    if (_performance2.timeOrigin) {
-      const _Math = Math;
-      num2 = Math.abs(_performance2.timeOrigin + nowResult - timestamp1);
-    }
-    let timeOrigin2 = _performance2.timing;
-    if (timeOrigin2) {
-      timeOrigin2 = _performance2.timing.navigationStart;
-    }
-    let num3 = 3600000;
-    if (typeof timeOrigin2 === "number") {
-      const _Math2 = Math;
-      num3 = Math.abs(timeOrigin2 + nowResult - timestamp1);
-    }
-    if (!tmp6) {
-      if (num3 >= 3600000) {
-        exports._browserPerformanceTimeOriginMode = "dateNow";
+const entry = {
+  key: "withScope",
+  value: function withScope(fn) {
+    const self = this;
+    try {
+      const promise = fn(tmp);
+      if (obj2.isThenable(promise)) {
+        let nextPromise = promise.then((result) => {
+          self._popScope();
+          return result;
+        }, (arg0) => {
+          self._popScope();
+          throw arg0;
+        });
+      } else {
+        self._popScope();
+        nextPromise = promise;
       }
+      return nextPromise;
+    } catch (tmp9) {
+      obj._popScope();
+      throw tmp9;
     }
-    if (num2 <= num3) {
-      exports._browserPerformanceTimeOriginMode = "timeOrigin";
-      timeOrigin2 = _performance2.timeOrigin;
-    } else {
-      exports._browserPerformanceTimeOriginMode = "navigationStart";
-    }
-    tmp6 = num2 < 3600000;
   }
-}
+};
+let items = [
+  entry,
+  {
+    key: "getClient",
+    value: function getClient() {
+      return this.getStackTop().client;
+    }
+  },
+  {
+    key: "getScope",
+    value: function getScope() {
+      return this.getStackTop().scope;
+    }
+  },
+  {
+    key: "getIsolationScope",
+    value: function getIsolationScope() {
+      return this._isolationScope;
+    }
+  },
+  {
+    key: "getStackTop",
+    value: function getStackTop() {
+      return this._stack[this._stack.length - 1];
+    }
+  },
+  {
+    key: "_pushScope",
+    value: function _pushScope() {
+      const scope = this.getScope();
+      const cloneResult = scope.clone();
+      const _stack = this._stack;
+      _stack.push({ client: this.getClient(), scope: cloneResult });
+      return cloneResult;
+    }
+  },
+  {
+    key: "_popScope",
+    value: function _popScope() {
+      let arr = this._stack.length > 1;
+      if (arr) {
+        const _stack = this._stack;
+        arr = _stack.pop();
+      }
+      return arr;
+    }
+  }
+];
+const _moduleResult = _createClass(AsyncContextStack, items);
+let c3 = _moduleResult;
 
-export const _browserPerformanceTimeOriginMode = "none";
-export { dateTimestampInSeconds };
-export const timestampInSeconds = fn;
+export const AsyncContextStack = _moduleResult;
+export function getStackAsyncContextStrategy() {
+  return {
+    withIsolationScope,
+    withScope,
+    withSetScope,
+    withSetIsolationScope(arg0, arg1) {
+      closure_0 = arg1;
+      let mainCarrier = closure_0(13097).getMainCarrier();
+      let obj = closure_0(13097);
+      let sentryCarrier = closure_0(13097).getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        let defaultCurrentScope = tmp(13105).getDefaultCurrentScope();
+        const tmpResult = tmp(13105);
+        stack = new closure_3(defaultCurrentScope, tmp(13105).getDefaultIsolationScope());
+        const tmpResult2 = tmp(13105);
+      }
+      sentryCarrier.stack = stack;
+      return stack.withScope(() => {
+        const mainCarrier = AsyncContextStack(13097).getMainCarrier();
+        const obj = AsyncContextStack(13097);
+        const tmp = closure_0;
+        const sentryCarrier = AsyncContextStack(13097).getSentryCarrier(mainCarrier);
+        let stack = sentryCarrier.stack;
+        if (!stack) {
+          const defaultCurrentScope = tmp2(13105).getDefaultCurrentScope();
+          const tmp2Result = tmp2(13105);
+          stack = new closure_2_3(defaultCurrentScope, tmp2(13105).getDefaultIsolationScope());
+          const tmp2Result2 = tmp2(13105);
+        }
+        sentryCarrier.stack = stack;
+        return tmp(stack.getIsolationScope());
+      });
+    },
+    getCurrentScope() {
+      const mainCarrier = AsyncContextStack(13097).getMainCarrier();
+      const obj = AsyncContextStack(13097);
+      const sentryCarrier = AsyncContextStack(13097).getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const defaultCurrentScope = tmp(13105).getDefaultCurrentScope();
+        const tmpResult = tmp(13105);
+        stack = new closure_1_3(defaultCurrentScope, tmp(13105).getDefaultIsolationScope());
+        const tmpResult2 = tmp(13105);
+      }
+      sentryCarrier.stack = stack;
+      return stack.getScope();
+    },
+    getIsolationScope() {
+      const mainCarrier = AsyncContextStack(13097).getMainCarrier();
+      const obj = AsyncContextStack(13097);
+      const sentryCarrier = AsyncContextStack(13097).getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const defaultCurrentScope = tmp(13105).getDefaultCurrentScope();
+        const tmpResult = tmp(13105);
+        stack = new closure_1_3(defaultCurrentScope, tmp(13105).getDefaultIsolationScope());
+        const tmpResult2 = tmp(13105);
+      }
+      sentryCarrier.stack = stack;
+      return stack.getIsolationScope();
+    }
+  };
+}

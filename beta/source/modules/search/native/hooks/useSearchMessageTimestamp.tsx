@@ -1,60 +1,25 @@
-// Module ID: 17159
-// Function ID: 17160
+// Module ID: 17149
+// Function ID: 17150
 // Name: useSearchMessageTimestamp
-// Dependencies: [19, 558, 568, 11, 7914, 2]
+// Dependencies: [19, 11, 7909, 2]
+// Exports: useSearchMessageTimestamp
 
-// Module 17159 (useSearchMessageTimestamp)
+// Module 17149 (useSearchMessageTimestamp)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import c from "c" /* 568 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7914 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 7909 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/hooks/useSearchMessageTimestamp.tsx");
 
-export const useSearchMessageTimestamp = ReactCompilerGating.isReactCompilerEnabled() ? ((id, id2) => {
-  const cResult = c.c(7);
-  if (cResult[0] === id2) {
-    if (cResult[1] === id.id) {
-      let tmp4 = cResult[2];
-      let tmp5 = cResult[3];
-    }
-    if (cResult[4] === tmp5) {
-      if (cResult[5] === tmp4) {
-        let tmp9 = cResult[6];
-      }
-      return tmp9;
-    }
-    const obj3 = { timestamp: tmp5, timestampAccessibilityLabel: tmp4 };
-    cResult[4] = tmp5;
-    cResult[5] = tmp4;
-    cResult[6] = obj3;
-    tmp9 = obj3;
-  }
-  id = id.id;
-  if (id == null) {
-    id = id2.id;
-  }
-  const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(id);
-  const relativeTimestamp = NotificationCenterUtils.getRelativeTimestamp(extractTimestampResult, true);
-  const tmpResult = NotificationCenterUtils;
-  const relativeTimestamp1 = NotificationCenterUtils.getRelativeTimestamp(extractTimestampResult, false);
-  cResult[0] = id2;
-  cResult[1] = id.id;
-  cResult[2] = relativeTimestamp1;
-  cResult[3] = relativeTimestamp;
-  tmp5 = relativeTimestamp;
-  tmp4 = relativeTimestamp1;
-}) : ((arg0, arg1) => {
-  let id = arg0;
-  const id2 = arg1;
-  const items = [arg0, arg1];
+export const useSearchMessageTimestamp = function useSearchMessageTimestamp(message, channel) {
+  let id = channel;
+  const items = [message, channel];
   return noop.useMemo(() => {
-    id = id.id;
+    id = message.id;
     if (id == null) {
-      id = id2.id;
+      id = id.id;
     }
     const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(id);
     const obj2 = { timestamp: null, timestampAccessibilityLabel: null };
@@ -62,4 +27,4 @@ export const useSearchMessageTimestamp = ReactCompilerGating.isReactCompilerEnab
     obj2.timestampAccessibilityLabel = NotificationCenterUtils.getRelativeTimestamp(extractTimestampResult, false);
     return obj2;
   }, items);
-});
+};

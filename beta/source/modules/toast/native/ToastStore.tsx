@@ -1,11 +1,11 @@
-// Module ID: 17438
-// Function ID: 17439
+// Module ID: 17429
+// Function ID: 17430
 // Name: ToastStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 17438 (ToastStore)
+// Module 17429 (ToastStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let c0 = null;
 const Store = initializeDefault.Store;

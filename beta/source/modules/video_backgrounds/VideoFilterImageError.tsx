@@ -1,11 +1,11 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9953
+// Function ID: 9954
 // Name: VideoFilterImageError
-// Dependencies: [1275, 1119, 2]
+// Dependencies: [1271, 1115, 2]
 
-// Module 9931 (VideoFilterImageError)
-import util from "util" /* 1119 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 9953 (VideoFilterImageError)
+import util from "util" /* 1115 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import size from "module_2" /* 2 */;
 
 const constants = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };
@@ -25,8 +25,8 @@ const prototype = function VideoFilterImageError(arg0, arg1) {
     tmp7 = code === constants.ASSET_SIZE;
   }
   if (tmp7) {
-    const intl2 = tmp4(1119).intl;
-    tmp32.message = intl2.string(tmp4(1119).t.mrlScX);
+    const intl2 = tmp4(1115).intl;
+    tmp32.message = intl2.string(tmp4(1115).t.mrlScX);
   }
   return tmp32;
 }.prototype;

@@ -1,59 +1,22 @@
-// Module ID: 13764
-// Function ID: 13765
+// Module ID: 13754
+// Function ID: 13755
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1376, 1378, 558, 568, 504, 11447, 8493, 5235, 2]
+// Dependencies: [1372, 1374, 504, 11452, 5235, 8488, 2]
+// Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 13764 (useMaybeFetchTieredTenureBadgeData)
+// Module 13754 (useMaybeFetchTieredTenureBadgeData)
 import useMountEffectDefault from "useMountEffect" /* 5235 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8493 */;
-import UserStore from "UserStore" /* 1376 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8488 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const PremiumTypes = fn(1378).PremiumTypes;
-const ReactCompilerGating = fn(558);
+const PremiumTypes = fn(1374).PremiumTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useMaybeFetchTieredTenureBadgeData.tsx");
 
-export const useMaybeFetchTieredTenureBadgeData = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = stateFromStores(568).c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const obj = stateFromStores(568);
-  stateFromStores = stateFromStores(504).useStateFromStores(tmp4, tmp5);
-  const tmpResult = stateFromStores(504);
-  const isPremiumSubscriber = stateFromStores(11447).useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  if (cResult[2] === stateFromStores) {
-    if (cResult[3] === isPremiumSubscriber) {
-      let tmp9 = cResult[4];
-    }
-    isPremiumSubscriber(5235)(tmp9);
-  }
-  const fn2 = function c() {
-    let id;
-    if (stateFromStores != null) {
-      id = tmp.id;
-    }
-    if (tmp3) {
-      maybeFetchUserProfileDefault(tmp.id);
-    }
-  };
-  cResult[2] = stateFromStores;
-  cResult[3] = isPremiumSubscriber;
-  cResult[4] = fn2;
-  tmp9 = fn2;
-}) : (() => {
+export const useMaybeFetchTieredTenureBadgeData = function useMaybeFetchTieredTenureBadgeData() {
   const items = [UserStore];
   _require = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = require("initialize");
@@ -67,4 +30,4 @@ export const useMaybeFetchTieredTenureBadgeData = ReactCompilerGating.isReactCom
       maybeFetchUserProfileDefault(tmp.id);
     }
   });
-});
+};

@@ -1,9 +1,9 @@
 // Module ID: 13678
 // Function ID: 13679
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 13678
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 179, height: 32, scales: [2, 3], hash: "ed5b973480dda2a9e5ec5c3384729f7b", name: "img_logo_bundle_horizontal_black", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180, height: 108, scales: [2, 3], hash: "2ef493c972c2da0faa0f370d1feb763b", name: "img_what_you_lose_profile_tier1_dark", type: "png" });

@@ -1,11 +1,11 @@
-// Module ID: 18403
-// Function ID: 18404
+// Module ID: 18392
+// Function ID: 18393
 // Name: MarkAsRead
-// Dependencies: [1078, 7389, 2]
+// Dependencies: [1074, 7387, 2]
 
-// Module 18403 (MarkAsRead)
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7389 */;
-import Constants from "Constants" /* 1078 */;
+// Module 18392 (MarkAsRead)
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7387 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ AnalyticsObjectTypes: c2, AnalyticsObjects: c3 } = Constants);

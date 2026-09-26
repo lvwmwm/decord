@@ -1,39 +1,28 @@
-// Module ID: 10217
-// Function ID: 10218
+// Module ID: 9796
+// Function ID: 9797
 // Name: StageChannelHeightHooks
-// Dependencies: [558, 8935, 2]
+// Dependencies: [8930, 2]
+// Exports: useGetActionBarHeight, useGetStageRTCPanelHeight
 
-// Module 10217 (StageChannelHeightHooks)
-import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8935 */;
-import "ReactCompilerGating";
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9796 (StageChannelHeightHooks)
+import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8930 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(arg0);
-  useStageBlockedUsersCount;
-  if (stageBlockedUsersCount > 0) {
-    let num = 88;
-  } else {
-    num = 68;
-  }
-  return num;
-}) : ((arg0) => {
-  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(arg0);
-  useStageBlockedUsersCount;
-  if (stageBlockedUsersCount > 0) {
-    let num = 88;
-  } else {
-    num = 68;
-  }
-  return num;
-});
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelHeightHooks.tsx");
 
 export const CALL_ACTION_BAR_HEIGHT = 112;
-export const useGetStageRTCPanelHeight = tmp2;
-export const useGetActionBarHeight = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(arg0);
+export const useGetStageRTCPanelHeight = function useGetStageRTCPanelHeight(stateFromStores) {
+  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(stateFromStores);
+  useStageBlockedUsersCount;
+  if (stageBlockedUsersCount > 0) {
+    let num = 88;
+  } else {
+    num = 68;
+  }
+  return num;
+};
+export const useGetActionBarHeight = function useGetActionBarHeight(id) {
+  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(id);
   useStageBlockedUsersCount;
   if (stageBlockedUsersCount > 0) {
     let num = 132;
@@ -41,13 +30,4 @@ export const useGetActionBarHeight = ReactCompilerGating.isReactCompilerEnabled(
     num = 112;
   }
   return num;
-}) : ((arg0) => {
-  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(arg0);
-  useStageBlockedUsersCount;
-  if (stageBlockedUsersCount > 0) {
-    let num = 132;
-  } else {
-    num = 112;
-  }
-  return num;
-});
+};

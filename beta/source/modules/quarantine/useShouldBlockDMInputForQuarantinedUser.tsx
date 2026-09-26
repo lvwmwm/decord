@@ -1,74 +1,28 @@
-// Module ID: 12619
-// Function ID: 12620
+// Module ID: 12717
+// Function ID: 12718
 // Name: useShouldBlockDMInputForQuarantinedUser
-// Dependencies: [5010, 1078, 558, 568, 12449, 504, 2]
+// Dependencies: [5008, 1074, 12548, 504, 2]
+// Exports: default
 
-// Module 12619 (useShouldBlockDMInputForQuarantinedUser)
-import MessageStore from "MessageStore" /* 5010 */;
+// Module 12717 (useShouldBlockDMInputForQuarantinedUser)
+import MessageStore from "MessageStore" /* 5008 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const UserFlags = fn(1078).UserFlags;
-const ReactCompilerGating = fn(558);
+const UserFlags = fn(1074).UserFlags;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quarantine/useShouldBlockDMInputForQuarantinedUser.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag, id) => {
-  _require = id;
-  const cResult = require("c").c(9);
-  const obj = require("c");
-  const tmp = _require;
-  const showConvoStarterInDM = require("useShowConvoStarterInDM").useShowConvoStarterInDM(id);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function l() {
-      return MessageStore.getMessages(id.id).length > 0;
-    };
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] !== id) {
-    const items1 = [id];
-    cResult[3] = id;
-    cResult[4] = items1;
-    let tmp8 = items1;
-  } else {
-    tmp8 = cResult[4];
-  }
-  const obj2 = require("useShowConvoStarterInDM");
-  const stateFromStores = tmp(504).useStateFromStores(first, tmp7, tmp8);
-  if (null == hasFlag) {
-    return tmp10;
-  } else {
-    if (cResult[5] === stateFromStores) {
-      if (cResult[6] === showConvoStarterInDM) {
-      }
-    }
-    const tmp13 = hasFlag.hasFlag(UserFlags.QUARANTINED) && showConvoStarterInDM && !stateFromStores;
-    cResult[5] = stateFromStores;
-    cResult[6] = showConvoStarterInDM;
-    cResult[7] = hasFlag;
-    cResult[8] = tmp13;
-  }
-}) : ((hasFlag, arg1) => {
-  _require = arg1;
-  const showConvoStarterInDM = require("useShowConvoStarterInDM").useShowConvoStarterInDM(arg1);
+export default function useShouldBlockDMInputForQuarantinedUser(hasFlag, channel) {
+  _require = channel;
+  const showConvoStarterInDM = require("useShowConvoStarterInDM").useShowConvoStarterInDM(channel);
   require("initialize");
-  [][0] = arg1;
+  [][0] = channel;
   let tmp4 = null != hasFlag;
   if (tmp4) {
     tmp4 = hasFlag.hasFlag(UserFlags.QUARANTINED) && showConvoStarterInDM && !tmp3;
     const tmp6 = hasFlag.hasFlag(UserFlags.QUARANTINED) && showConvoStarterInDM && !tmp3;
   }
   return tmp4;
-});
+};

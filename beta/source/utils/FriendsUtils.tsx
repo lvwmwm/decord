@@ -1,14 +1,14 @@
-// Module ID: 10052
-// Function ID: 10053
+// Module ID: 10039
+// Function ID: 10040
 // Name: FriendsUtils
-// Dependencies: [32, 1078, 1119, 38, 1245, 8684, 2]
+// Dependencies: [32, 1074, 1115, 38, 1241, 8679, 2]
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag
 
-// Module 10052 (FriendsUtils)
+// Module 10039 (FriendsUtils)
 import _modDef38 from "module_38" /* 38 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 8684 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 8679 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -76,7 +76,7 @@ function humanizeAbortCode(arg0, substr) {
     return intl4.string(util.t.EouHwv);
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AbortCodes: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
 const re6 = /^\d+$/;
 const re7 = /^(.+?@.+?\..+?|.+?#\d{4})$/;

@@ -1,10 +1,10 @@
-// Module ID: 14379
-// Function ID: 14380
+// Module ID: 14369
+// Function ID: 14370
 // Name: AudioEffectsExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 14379 (AudioEffectsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 14369 (AudioEffectsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { probeAudioEffects: false };

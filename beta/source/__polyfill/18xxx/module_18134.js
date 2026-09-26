@@ -3,8 +3,8 @@
 // Dependencies: []
 
 // Module 18134
-const re0 = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;
+const regex = RegExp("[\\u200d\\ud800-\\udfff\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff\\ufe0e\\ufe0f]");
 
-export default function hasUnicodeWord(arg0) {
-  return re0.test(arg0);
+export default function hasUnicode(arg0) {
+  return regex.test(arg0);
 };

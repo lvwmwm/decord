@@ -1,12 +1,12 @@
-// Module ID: 11626
-// Function ID: 11627
+// Module ID: 11750
+// Function ID: 11751
 // Name: LaunchPadConstants
-// Dependencies: [17, 1368, 4769, 2]
+// Dependencies: [17, 1364, 4767, 2]
 
-// Module 11626 (LaunchPadConstants)
+// Module 11750 (LaunchPadConstants)
 import _mod17 from "module_17" /* 17 */;
-import DeviceUtils from "DeviceUtils" /* 4769 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
+import DeviceUtils from "DeviceUtils" /* 4767 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size_mod from "module_2" /* 2 */;
 
 const Dimensions = _mod17.Dimensions;

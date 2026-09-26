@@ -1,11 +1,11 @@
-// Module ID: 14847
-// Function ID: 14848
+// Module ID: 14837
+// Function ID: 14838
 // Name: NativeRPCServer
-// Dependencies: [9611, 14848, 2]
+// Dependencies: [9615, 14838, 2]
 
-// Module 14847 (NativeRPCServer)
-import root from "root" /* 9611 */;
-import RPCServerDefault from "RPCServer" /* 14848 */;
+// Module 14837 (NativeRPCServer)
+import root from "root" /* 9615 */;
+import RPCServerDefault from "RPCServer" /* 14838 */;
 
 require = fn;
 const size = fn(2);

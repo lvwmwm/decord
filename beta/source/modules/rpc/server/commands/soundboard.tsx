@@ -1,24 +1,24 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 14819
+// Function ID: 14820
 // Name: soundboard
-// Dependencies: [5, 5258, 1376, 4695, 1089, 8647, 7614, 5266, 9612, 7649, 7620, 9609, 7651, 7461, 2]
+// Dependencies: [5, 5256, 1372, 4692, 1085, 8642, 7612, 5264, 9616, 7647, 7618, 9613, 7649, 7459, 2]
 
-// Module 14829 (soundboard)
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7614 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9612 */;
+// Module 14819 (soundboard)
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7612 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9616 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5258 */;
-import UserStore from "UserStore" /* 1376 */;
+import SoundboardStore from "SoundboardStore" /* 5256 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-let Constants = fn(4695);
+let Constants = fn(4692);
 ({ RPC_SCOPE_CONFIG, RPC_LOCAL_SCOPE } = Constants);
-Constants = fn(1089);
+Constants = fn(1085);
 ({ RPCCommands, RPCErrors: metroRequire } = Constants);
 let obj = {};
 let obj2 = { scope: null, handler: null };
 let obj3 = {};
-let items = [fn(8647).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
+let items = [fn(8642).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
 obj3[RPC_SCOPE_CONFIG.ANY] = items;
 obj2.scope = obj3;
 obj2.handler = function handler() {
@@ -35,7 +35,7 @@ obj2.handler = function handler() {
 obj[RPCCommands.GET_SOUNDBOARD_SOUNDS] = obj2;
 let obj4 = { scope: null, validation: null, handler: null };
 let obj5 = {};
-const items1 = [fn(8647).OAuth2Scopes.RPC, fn(8647).OAuth2Scopes.RPC_VOICE_WRITE];
+const items1 = [fn(8642).OAuth2Scopes.RPC, fn(8642).OAuth2Scopes.RPC_VOICE_WRITE];
 obj5[RPC_SCOPE_CONFIG.ALL] = items1;
 obj4.scope = obj5;
 obj4.validation = function validation(string) {
@@ -56,7 +56,7 @@ obj4.handler = function handler(args) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -76,7 +76,7 @@ obj4.handler = function handler(args) {
             closure_128_3 = undefined;
             dependencyMap = 1;
             c3 = 1;
-            const obj5 = { value: tmp2(7614).maybeFetchSoundboardSounds(), done: false };
+            const obj5 = { value: tmp2(7612).maybeFetchSoundboardSounds(), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -89,37 +89,37 @@ obj4.handler = function handler(args) {
         } else {
           currentUser2 = currentUser.getCurrentUser();
           sound2 = sound.getSound(closure_129_0, closure_129_1);
-          closure_128_2 = tmp5(7649)();
+          closure_128_2 = tmp5(7647)();
           let result = null != sound2;
           if (result) {
             result = null != currentUser2;
           }
           if (result) {
-            result = tmp2(7620).canUseSoundboardSound(currentUser2, sound2, closure_128_2);
-            const obj = tmp2(7620);
+            result = tmp2(7618).canUseSoundboardSound(currentUser2, sound2, closure_128_2);
+            const obj = tmp2(7618);
           }
           closure_128_3 = result;
           if (null == closure_128_2) {
             const obj8 = { errorCode: constants.INVALID_CHANNEL };
-            const tmp52 = new tmp5(9609)(obj8, "Invalid Channel.");
+            const tmp52 = new tmp5(9613)(obj8, "Invalid Channel.");
             throw tmp52;
           } else if (closure_128_3) {
-            if (tmp74(7651)(closure_128_2)) {
+            if (tmp74(7649)(closure_128_2)) {
               if (null != sound2) {
-                const items = [tmp5(7461).RPC];
-                tmp2(7620).playSound(sound2, closure_128_2.id, items);
-                const obj4 = tmp2(7620);
+                const items = [tmp5(7459).RPC];
+                tmp2(7618).playSound(sound2, closure_128_2.id, items);
+                const obj4 = tmp2(7618);
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             } else {
               const obj9 = { errorCode: constants.INVALID_PERMISSIONS };
-              const tmp32 = new tmp5(9609)(obj9, "Invalid Permissions.");
+              const tmp32 = new tmp5(9613)(obj9, "Invalid Permissions.");
               throw tmp32;
             }
           } else {
             const obj10 = { errorCode: constants.INVALID_SOUND };
-            const tmp22 = new tmp74(9609)(obj10, "Invalid Sound.");
+            const tmp22 = new tmp74(9613)(obj10, "Invalid Sound.");
             throw tmp22;
           }
         }

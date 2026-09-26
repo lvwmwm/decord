@@ -1,9 +1,9 @@
-// Module ID: 1391
-// Function ID: 1392
+// Module ID: 1387
+// Function ID: 1388
 // Name: Record
 // Dependencies: [2]
 
-// Module 1391 (Record)
+// Module 1387 (Record)
 import size from "module_2" /* 2 */;
 
 let Record;

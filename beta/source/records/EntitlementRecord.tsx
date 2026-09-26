@@ -1,17 +1,17 @@
-// Module ID: 7671
-// Function ID: 7672
+// Module ID: 7669
+// Function ID: 7670
 // Name: EntitlementRecord
-// Dependencies: [1391, 5762, 1390, 1078, 4450, 7672, 2]
+// Dependencies: [1387, 5760, 1386, 1074, 4446, 7670, 2]
 
-// Module 7671 (EntitlementRecord)
-import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 7672 */;
-import Record from "Record" /* 1391 */;
-import SKURecord from "SKURecord" /* 5762 */;
-import UserRecord from "UserRecord" /* 1390 */;
+// Module 7669 (EntitlementRecord)
+import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 7670 */;
+import Record from "Record" /* 1387 */;
+import SKURecord from "SKURecord" /* 5760 */;
+import UserRecord from "UserRecord" /* 1386 */;
 
 require = fn;
-const EntitlementTypes = fn(1078).EntitlementTypes;
+const EntitlementTypes = fn(1074).EntitlementTypes;
 let EntitlementRecord;
 class EntitlementRecord extends tmp2 {
   constructor(arg0) {

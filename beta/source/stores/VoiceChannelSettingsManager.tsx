@@ -1,16 +1,16 @@
-// Module ID: 17921
-// Function ID: 17922
+// Module ID: 17912
+// Function ID: 17913
 // Name: VoiceChannelSettingsManager
-// Dependencies: [502, 14306, 2045, 2099, 14307, 1078, 577, 7397, 2]
+// Dependencies: [502, 14296, 2041, 2095, 14297, 1074, 573, 7395, 2]
 
-// Module 17921 (VoiceChannelSettingsManager)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 17912 (VoiceChannelSettingsManager)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BitRateStore from "BitRateStore" /* 14306 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import VideoQualityModeStore from "VideoQualityModeStore" /* 14307 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import BitRateStore from "BitRateStore" /* 14296 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import VideoQualityModeStore from "VideoQualityModeStore" /* 14297 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 function updateVoiceSettings() {
   const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
@@ -53,7 +53,7 @@ function handleVoiceStateUpdates(voiceStates) {
     }
   });
 }
-const VideoQualityMode = fn(1078).VideoQualityMode;
+const VideoQualityMode = fn(1074).VideoQualityMode;
 const prototype = function VoiceChannelSettingsManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { CHANNEL_UPDATES: handleChannelUpdates, VOICE_STATE_UPDATES: handleVoiceStateUpdates };

@@ -1,18 +1,18 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 14775
+// Function ID: 14776
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [2044, 1376, 4695, 4421, 4942, 9615, 1374, 12, 2]
+// Dependencies: [2040, 1372, 4692, 4417, 4940, 9619, 1370, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 14785 (activityInstanceConnectedParticipants)
-import transformUserDefault from "transformUser" /* 9615 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 14775 (activityInstanceConnectedParticipants)
+import transformUserDefault from "transformUser" /* 9619 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Constants = fn(4695);
+const Constants = fn(4692);
 let obj = { [Constants.RPC_SCOPE_CONFIG.ANY]: items };
 items = [Constants.RPC_AUTHENTICATED_SCOPE];
 const size = fn(2);
@@ -56,12 +56,12 @@ export const activityInstanceConnectedParticipantsUpdateEvent = {
         const obj = { participants: [] };
         let obj2 = obj;
       } else {
-        embeddedActivityLocationGuildId = embeddedActivityLocationGuildId(4421).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
-        const obj4 = embeddedActivityLocationGuildId(4421);
-        embeddedActivityLocationChannelId = embeddedActivityLocationGuildId(4421).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
+        embeddedActivityLocationGuildId = embeddedActivityLocationGuildId(4417).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
+        const obj4 = embeddedActivityLocationGuildId(4417);
+        embeddedActivityLocationChannelId = embeddedActivityLocationGuildId(4417).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
         obj2 = { participants: null };
         const _Array = Array;
-        const obj5 = embeddedActivityLocationGuildId(4421);
+        const obj5 = embeddedActivityLocationGuildId(4417);
         obj2.participants = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
           user = user.getUser(arg0);
           if (null != user) {
@@ -71,7 +71,7 @@ export const activityInstanceConnectedParticipantsUpdateEvent = {
             obj2.nickname = nickname;
             return obj2;
           }
-        }).filter(embeddedActivityLocationGuildId(1374).isNotNullish);
+        }).filter(embeddedActivityLocationGuildId(1370).isNotNullish);
         const arr = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
           user = user.getUser(arg0);
           if (null != user) {

@@ -1,19 +1,19 @@
-// Module ID: 7823
-// Function ID: 7824
+// Module ID: 7818
+// Function ID: 7819
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7824, 7825, 7830, 1080, 1078, 5764, 1977, 2]
+// Dependencies: [32, 7819, 7820, 7825, 1076, 1074, 5762, 1973, 2]
 
-// Module 7823 (CollectiblesProductRecord)
-import getPricesFromServerDefault from "getPricesFromServer" /* 5764 */;
+// Module 7818 (CollectiblesProductRecord)
+import getPricesFromServerDefault from "getPricesFromServer" /* 5762 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7824 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7830 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7819 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7825 */;
 
 const require = fn;
-const CollectiblesItemRecord = fn(7825);
+const CollectiblesItemRecord = fn(7820);
 ({ createCollectiblesItemsFromServerResponse: hasOwnProperty, transformSKUToCollectiblesItem: metroRequire } = CollectiblesItemRecord);
-let closure_7 = fn(1080).REWARD_CATEGORY_AND_REWARD_SKU_IDS;
-const Constants = fn(1078);
+let closure_7 = fn(1076).REWARD_CATEGORY_AND_REWARD_SKU_IDS;
+const Constants = fn(1074);
 ({ PREMIUM_TYPE_NONE: closure_8, PriceSetAssignmentPurchaseTypes: closure_9 } = Constants);
 let CollectiblesProductRecord;
 class CollectiblesProductRecord extends tmp3 {
@@ -33,7 +33,7 @@ CollectiblesProductRecord["fromServer"] = function fromServer(arg0) {
   const merged2 = Object.assign(fromServerResult);
   obj.type = type;
   let tmp8 = null;
-  if (premium_type !== closure_1_8) {
+  if (premium_type !== React6) {
     tmp8 = premium_type;
   }
   obj.premiumType = tmp8;
@@ -71,7 +71,7 @@ CollectiblesProductRecord["fromServer"] = function fromServer(arg0) {
   }
   tmp3 = CollectiblesProductRecord;
   tmp4 = CollectiblesProductRecord;
-  tmp7 = closure_1_8;
+  tmp7 = React6;
 };
 CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefrontProductRecord(skus, arg1) {
   _require = skus;
@@ -177,7 +177,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
               }
               ({ items, item } = obj);
               first = _slicedToArray(tenantMetadata.selectedOptions, 1)[0];
-              const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: "apply", items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, googleSkuIds: null, eligibleOffers: null, variants: null, bundledProducts: null, isFirstParty: null };
+              const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: "channel", items: "en-001", categorySkuId: "unsubscribeBrowser", isCategoryReward: "queryCache", prices: "GEN_AI_REQUEST_MESSAGES_ATTRIBUTE", previewAssets: "en-IE", googleSkuIds: "en-001", eligibleOffers: "initializeSampling", variants: "queryOptions", bundledProducts: "GEN_AI_REQUEST_MESSAGES_ATTRIBUTE", isFirstParty: "clock230" };
               let str;
               if (first != null) {
                 str = first.optionValue;
@@ -193,9 +193,9 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
               obj3.variantValue = str2;
               ({ id: obj2.storeListingId, id: obj2.skuId, name: obj2.name, summary: obj2.summary } = tenantMetadata);
               ({ type: obj2.type, premiumType } = collectibles);
-              let items1 = closure_2_8;
+              let items1 = React6;
               let premiumType1 = null;
-              if (premiumType !== closure_2_8) {
+              if (premiumType !== React6) {
                 premiumType1 = collectibles.premiumType;
               }
               obj3.premiumType = premiumType1;
@@ -220,8 +220,8 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
               if (googleSkuIds == null) {
                 const obj5 = {};
                 item = "";
-                obj5[options.MOBILE] = "";
-                obj5[options.MOBILE_PREMIUM_TIER_2] = "";
+                obj5[React7.MOBILE] = "";
+                obj5[React7.MOBILE_PREMIUM_TIER_2] = "";
                 googleSkuIds = obj5;
               }
               obj3.googleSkuIds = googleSkuIds;

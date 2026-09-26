@@ -1,12 +1,12 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 12046
+// Function ID: 12047
 // Name: startAuthorizationNoHook
-// Dependencies: [5, 1078, 7446, 4487, 1245, 2]
+// Dependencies: [5, 1074, 7444, 4483, 1241, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 11928 (startAuthorizationNoHook)
-import LinkingDefault from "Linking" /* 4487 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7446 */;
+// Module 12046 (startAuthorizationNoHook)
+import LinkingDefault from "Linking" /* 4483 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7444 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let closure_5 = async function _startAuthorizationNoHook(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -84,7 +84,7 @@ let closure_5 = async function _startAuthorizationNoHook(arg0, value) {
     }
   }
 };
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_account_linking/native/startAuthorizationNoHook.tsx");
 

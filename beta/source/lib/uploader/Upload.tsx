@@ -1,19 +1,19 @@
-// Module ID: 5378
-// Function ID: 5379
+// Module ID: 5376
+// Function ID: 5377
 // Name: Upload
-// Dependencies: [572, 5379, 12, 5384, 1259, 2]
+// Dependencies: [568, 5377, 12, 5382, 1255, 2]
 // Exports: isResolvedUpload
 
-// Module 5378 (Upload)
+// Module 5376 (Upload)
 import _modDef12 from "module_12" /* 12 */;
-import _mod572 from "module_572" /* 572 */;
-import v1 from "v1" /* 1259 */;
-import UploadUtils from "UploadUtils" /* 5379 */;
-import FileUtilsAll from "FileUtils" /* 5384 */;
+import _mod568 from "module_568" /* 568 */;
+import v1 from "v1" /* 1255 */;
+import UploadUtils from "UploadUtils" /* 5377 */;
+import FileUtilsAll from "FileUtils" /* 5382 */;
 import size from "module_2" /* 2 */;
 
 const UploadPlatform = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };
-const EventEmitter = _mod572.EventEmitter;
+const EventEmitter = _mod568.EventEmitter;
 class Upload extends EventEmitter {
   constructor(arg0) {
     tmp5 = new Upload(tmp4, tmp3, tmp2, tmp);

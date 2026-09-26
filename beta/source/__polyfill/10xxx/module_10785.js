@@ -1,16 +1,16 @@
 // Module ID: 10785
 // Function ID: 10786
-// Dependencies: [41, 42, 93, 95, 98, 10786, 10783]
+// Dependencies: [41, 42, 93, 95, 98, 10733, 10735]
 
 // Module 10785
-import Filter from "Filter" /* 10783 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const AbstractMergeDateTimeRefiner = require;
+const FRCasualTimeParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,12 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class AbstractMergeDateTimeRefiner {
+class FRCasualTimeParser {
   constructor() {
     self = this;
-    tmp = c2(this, AbstractMergeDateTimeRefiner);
+    tmp = c2(this, FRCasualTimeParser);
     tmp2 = closure_4;
-    obj = closure_4(AbstractMergeDateTimeRefiner);
+    obj = closure_4(FRCasualTimeParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -50,45 +50,46 @@ class AbstractMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(AbstractMergeDateTimeRefiner, Filter.MergingRefiner);
+_inherits(FRCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "shouldMergeResults",
-  value: function shouldMergeResults(str, start, start2) {
-    start = start.start;
-    let isOnlyDateResult = start.isOnlyDate();
-    if (isOnlyDateResult) {
-      start2 = start2.start;
-      isOnlyDateResult = start2.isOnlyTime();
-    }
-    if (!isOnlyDateResult) {
-      const start3 = start2.start;
-      let isOnlyDateResult1 = start3.isOnlyDate();
-      if (isOnlyDateResult1) {
-        const start4 = start.start;
-        isOnlyDateResult1 = start4.isOnlyTime();
-      }
-      isOnlyDateResult = isOnlyDateResult1;
-    }
-    if (isOnlyDateResult) {
-      const self = this;
-      isOnlyDateResult = null != str.match(this.patternBetween());
-    }
-    return isOnlyDateResult;
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    return /(cet?)?\s*(matin|soir|après-midi|aprem|a midi|à minuit)(?=\W|$)/i;
   }
 };
 const items = [
   entry,
   {
-    key: "mergeResults",
-    value: function mergeResults(arg0, start, text) {
-      start = start.start;
-      const mergeDateTimeResult = AbstractMergeDateTimeRefiner(10786).mergeDateTimeResult;
-      const tmp2 = start.isOnlyDate() ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
-      tmp2.index = start.index;
-      tmp2.text = start.text + arg0 + text.text;
-      return tmp2;
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, arg1) {
+      const formatted = arg1[2].toLowerCase();
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      if ("apr\u00E8s-midi" !== formatted) {
+        if ("aprem" !== formatted) {
+          if ("soir" === formatted) {
+            parsingComponents.imply("hour", 18);
+            parsingComponents.imply("minute", 0);
+            parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.PM);
+          } else if ("matin" === formatted) {
+            parsingComponents.imply("hour", 8);
+            parsingComponents.imply("minute", 0);
+            parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.AM);
+          } else if ("a midi" === formatted) {
+            parsingComponents.imply("hour", 12);
+            parsingComponents.imply("minute", 0);
+            parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.AM);
+          } else if ("\u00E0 minuit" === formatted) {
+            parsingComponents.imply("hour", 0);
+            parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.AM);
+          }
+        }
+        return parsingComponents;
+      }
+      parsingComponents.imply("hour", 14);
+      parsingComponents.imply("minute", 0);
+      parsingComponents.imply("meridiem", FRCasualTimeParser(10733).Meridiem.PM);
     }
   }
 ];
 
-export default _createClass(AbstractMergeDateTimeRefiner, items);
+export default _createClass(FRCasualTimeParser, items);

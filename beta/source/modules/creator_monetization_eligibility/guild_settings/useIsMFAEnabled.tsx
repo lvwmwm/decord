@@ -1,66 +1,20 @@
-// Module ID: 18161
-// Function ID: 18162
+// Module ID: 18152
+// Function ID: 18153
 // Name: useIsMFAEnabled
-// Dependencies: [9866, 1376, 1078, 558, 568, 565, 2]
+// Dependencies: [9888, 1372, 1074, 563, 2]
+// Exports: useIsMFAEnabled
 
-// Module 18161 (useIsMFAEnabled)
-import useStateFromStores from "useStateFromStores" /* 565 */;
-import c from "c" /* 568 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9866 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 18152 (useIsMFAEnabled)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9888 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const MFALevels = fn(1078).MFALevels;
-const ReactCompilerGating = fn(558);
+const MFALevels = fn(1074).MFALevels;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useIsMFAEnabled.tsx");
 
-export const useIsMFAEnabled = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function l() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = useStateFromStores.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildSettingsStore];
-    const fn2 = function c() {
-      return props.getProps().mfaLevel;
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    let tmp9 = fn2;
-    let tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = useStateFromStores;
-  let mfaEnabled;
-  const stateFromStores1 = useStateFromStores.useStateFromStores(tmp8, tmp9);
-  if (stateFromStores != null) {
-    mfaEnabled = stateFromStores.mfaEnabled;
-  }
-  if (cResult[4] === stateFromStores1 === MFALevels.ELEVATED) {
-    if (cResult[5] === tmp13) {
-      let tmp15 = cResult[6];
-    }
-    return tmp15;
-  }
-  const obj2 = { isUserMFAEnabled: true === mfaEnabled, isModerationMFAEnabled: stateFromStores1 === MFALevels.ELEVATED };
-  cResult[4] = stateFromStores1 === MFALevels.ELEVATED;
-  cResult[5] = true === mfaEnabled;
-  cResult[6] = obj2;
-  tmp15 = obj2;
-}) : (() => {
+export const useIsMFAEnabled = function useIsMFAEnabled() {
   const items = [UserStore];
   const stateFromStores = useStateFromStores.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [GuildSettingsStore];
@@ -70,4 +24,4 @@ export const useIsMFAEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((
     mfaEnabled = stateFromStores.mfaEnabled;
   }
   return { isUserMFAEnabled: true === mfaEnabled, isModerationMFAEnabled: stateFromStores1 === MFALevels.ELEVATED };
-});
+};

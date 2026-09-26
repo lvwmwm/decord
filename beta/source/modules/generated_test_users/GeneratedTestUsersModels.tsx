@@ -1,10 +1,10 @@
-// Module ID: 15891
-// Function ID: 15892
+// Module ID: 15895
+// Function ID: 15896
 // Name: GeneratedTestUsersModels
-// Dependencies: [1391, 2]
+// Dependencies: [1387, 2]
 
-// Module 15891 (GeneratedTestUsersModels)
-import Record from "Record" /* 1391 */;
+// Module 15895 (GeneratedTestUsersModels)
+import Record from "Record" /* 1387 */;
 
 let GeneratedTestPoolRecord;
 class GeneratedTestPoolRecord extends tmp2 {

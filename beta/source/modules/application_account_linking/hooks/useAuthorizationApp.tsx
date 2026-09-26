@@ -1,22 +1,22 @@
-// Module ID: 7446
-// Function ID: 7447
+// Module ID: 7444
+// Function ID: 7445
 // Name: useAuthorizationApp
-// Dependencies: [19, 5017, 2006, 1353, 1982, 558, 568, 7447, 2]
-// Exports: getAuthorizationApp
+// Dependencies: [19, 5015, 2002, 1349, 1978, 7445, 2]
+// Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 7446 (useAuthorizationApp)
-import c from "c" /* 568 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7447 */;
+// Module 7444 (useAuthorizationApp)
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5017 */;
-import ApplicationRecord from "ApplicationRecord" /* 2006 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
+import ApplicationRecord from "ApplicationRecord" /* 2002 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const ApplicationTypes = fn(1353).ApplicationTypes;
-const ReactCompilerGating = fn(558);
-function getAuthorizationApp(type) {
+const require = fn;
+const ApplicationTypes = fn(1349).ApplicationTypes;
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
+
+export const getAuthorizationApp = function getAuthorizationApp(type) {
   if (null == type) {
     return null;
   } else if (type.type !== ApplicationTypes.GAME) {
@@ -43,69 +43,8 @@ function getAuthorizationApp(type) {
     }
     return application;
   }
-}
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
-
-export { getAuthorizationApp };
-export const useAuthorizationApp = ReactCompilerGating.isReactCompilerEnabled() ? ((getOfficialApplicationId) => {
-  const cResult = c.c(4);
-  if (cResult[0] !== getOfficialApplicationId) {
-    let officialApplicationId;
-    if (null != getOfficialApplicationId) {
-      if (!(getOfficialApplicationId instanceof ApplicationRecord)) {
-        officialApplicationId = getOfficialApplicationId.getOfficialApplicationId();
-      }
-    }
-    cResult[0] = getOfficialApplicationId;
-    cResult[1] = officialApplicationId;
-    let tmp4 = officialApplicationId;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let getOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication(tmp4);
-  let tmp9 = null;
-  if (null != getOfficialApplicationId) {
-    if (getOfficialApplicationId instanceof ApplicationRecord) {
-      if (cResult[2] !== getOfficialApplicationId) {
-        let tmp12 = null;
-        if (null != getOfficialApplicationId) {
-          tmp12 = getOfficialApplicationId;
-          if (getOfficialApplicationId.type === ApplicationTypes.GAME) {
-            const linkedGames = getOfficialApplicationId.linkedGames;
-            let found;
-            if (linkedGames != null) {
-              found = linkedGames.find((type) => type.type === getOfficialApplicationId(getOrFetchApplication[4]).GameLinkTypes.OFFICIAL);
-            }
-            let application;
-            if (found != null) {
-              application = found.application;
-            }
-            if (application == null) {
-              let id;
-              if (found != null) {
-                id = found.id;
-              }
-              application = ApplicationStore.getApplication(id);
-            }
-            if (application == null) {
-              application = null;
-            }
-            tmp12 = application;
-          }
-        }
-        cResult[2] = getOfficialApplicationId;
-        cResult[3] = tmp12;
-      }
-    } else {
-      if (getOrFetchApplication == null) {
-        getOrFetchApplication = null;
-      }
-      tmp9 = getOrFetchApplication;
-    }
-  }
-  return tmp9;
-}) : ((getOfficialApplicationId) => {
+};
+export const useAuthorizationApp = function useAuthorizationApp(getOfficialApplicationId) {
   _require = getOfficialApplicationId;
   let officialApplicationId;
   if (null != getOfficialApplicationId) {
@@ -145,4 +84,4 @@ export const useAuthorizationApp = ReactCompilerGating.isReactCompilerEnabled() 
       }
     }
   }, items);
-});
+};

@@ -1,52 +1,23 @@
-// Module ID: 9398
-// Function ID: 9399
+// Module ID: 9400
+// Function ID: 9401
 // Name: XboxLinkError
-// Dependencies: [19, 9374, 21, 558, 568, 1488, 9399, 1119, 9400, 2]
+// Dependencies: [19, 9376, 21, 1484, 9401, 9402, 1115, 2]
+// Exports: default
 
-// Module 9398 (XboxLinkError)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import useNavigation from "useNavigation" /* 1488 */;
-import useConnectRetry from "useConnectRetry" /* 9399 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 9400 */;
+// Module 9400 (XboxLinkError)
+import util from "util" /* 1115 */;
+import useNavigation from "useNavigation" /* 1484 */;
+import useConnectRetry from "useConnectRetry" /* 9401 */;
+import TwoWayLinkError from "TwoWayLinkError" /* 9402 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const XboxLinkModalScenes = fn(9374).XboxLinkModalScenes;
+const XboxLinkModalScenes = fn(9376).XboxLinkModalScenes;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkError.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
-  const cResult = c.c(5);
-  onClose = onClose.onClose;
-  const navigation = useNavigation.useNavigation();
-  const connectRetry = useConnectRetry.useConnectRetry(navigation, XboxLinkModalScenes.PRE_CONNECT);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.INwPCV);
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t.GyXRRz);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp6 = stringResult;
-    tmp7 = stringResult1;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  if (cResult[2] === onClose) {
-    if (cResult[3] === connectRetry) {
-      let tmp10 = cResult[4];
-    }
-    return tmp10;
-  }
-  const tmp11 = jsx(TwoWayLinkError.TwoWayLinkError, { title: tmp6, body: tmp7, onClose, onRetry: connectRetry });
-  cResult[2] = onClose;
-  cResult[3] = connectRetry;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
-}) : ((onClose) => {
+export default function XboxLinkDiscordError(onClose) {
   const navigation = useNavigation.useNavigation();
   const connectRetry = useConnectRetry.useConnectRetry(navigation, XboxLinkModalScenes.PRE_CONNECT);
   const obj3 = { title: null, body: null, onClose: null, onRetry: null };
@@ -57,4 +28,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   obj3.onClose = onClose.onClose;
   obj3.onRetry = connectRetry;
   return jsx(TwoWayLinkError.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
-});
+};

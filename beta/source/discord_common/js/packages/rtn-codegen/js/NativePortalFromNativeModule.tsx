@@ -1,9 +1,9 @@
-// Module ID: 8578
-// Function ID: 8579
+// Module ID: 8573
+// Function ID: 8574
 // Name: NativePortalFromNativeModule
 // Dependencies: [17, 2]
 
-// Module 8578 (NativePortalFromNativeModule)
+// Module 8573 (NativePortalFromNativeModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

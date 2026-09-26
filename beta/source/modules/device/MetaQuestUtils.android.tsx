@@ -1,12 +1,12 @@
-// Module ID: 1613
-// Function ID: 1614
+// Module ID: 1609
+// Function ID: 1610
 // Name: MetaQuestUtils
-// Dependencies: [1345, 1367, 2]
+// Dependencies: [1341, 1363, 2]
 // Exports: isMetaQuest, isQuestRelease
 
-// Module 1613 (MetaQuestUtils)
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1367 */;
-import NativeMetaQuestModule_mod from "NativeMetaQuestModule" /* 1345 */;
+// Module 1609 (MetaQuestUtils)
+import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
+import NativeMetaQuestModule_mod from "NativeMetaQuestModule" /* 1341 */;
 
 let NativeMetaQuestModule = NativeMetaQuestModule_mod;
 NativeMetaQuestModule = NativeMetaQuestModule.isMetaQuest();

@@ -1,21 +1,21 @@
 // Module ID: 4295
 // Function ID: 4296
-// Dependencies: [3885, 3881, 3882]
+// Dependencies: [3881, 3877, 3878]
 // Exports: default
 
 // Module 4295
-import module_3885_mod from "module_3885" /* 3885 */;
-import _typeof_mod from "module_3881" /* 3881 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import module_3881_mod from "module_3881" /* 3881 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let module_3885 = module_3885_mod;
-if (!module_3885) {
-  const obj = { default: module_3885 };
+let module_3881 = module_3881_mod;
+if (!module_3881) {
+  const obj = { default: module_3881 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3885;
+  tmp3 = module_3881;
 }
-module_3885 = tmp3;
+module_3881 = tmp3;
 let _typeof = _typeof_mod;
 if (!_typeof) {
   const obj2 = { default: _typeof };
@@ -33,10 +33,10 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp7;
 
-export default function setDate(module_3885, arg1) {
+export default function setHours(module_3881, uTCMinutes) {
   requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(module_3885);
-  defaultResult1.setDate(module_3885.default(arg1));
+  const defaultResult1 = _typeof.default(module_3881);
+  defaultResult1.setHours(module_3881.default(uTCMinutes));
   return defaultResult1;
 };
 export default exports.default;

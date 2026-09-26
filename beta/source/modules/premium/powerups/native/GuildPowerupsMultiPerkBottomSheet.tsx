@@ -1,332 +1,35 @@
-// Module ID: 12748
-// Function ID: 12749
+// Module ID: 12830
+// Function ID: 12831
 // Name: GuildPowerupsMultiPerkBottomSheet
-// Dependencies: [17, 21, 4790, 580, 676, 558, 568, 4725, 4501, 12712, 12699, 12695, 12718, 12749, 12719, 12735, 12736, 12740, 12722, 1181, 1119, 4786, 12723, 5220, 2518, 1616, 12750, 12753, 12746, 6895, 7429, 2]
+// Dependencies: [17, 21, 4788, 576, 672, 4496, 4722, 12796, 12783, 12779, 12802, 12831, 12803, 12817, 12818, 12822, 12806, 1177, 1115, 4784, 12807, 5218, 2514, 1612, 12832, 7427, 6901, 12835, 12828, 2]
+// Exports: default
 
-// Module 12748 (GuildPowerupsMultiPerkBottomSheet)
+// Module 12830 (GuildPowerupsMultiPerkBottomSheet)
 import _mod17 from "module_17" /* 17 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import _modDef676 from "module_676" /* 676 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import themes from "themes" /* 4501 */;
-import useThemeDefault from "useTheme" /* 4725 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12695 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12699 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12712 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12718 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12719 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12722 */;
-import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 12735 */;
-import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 12736 */;
-import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 12740 */;
-import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 12749 */;
-import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 12750 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 12753 */;
+import nativeDefault from "native" /* 576 */;
+import _modDef672 from "module_672" /* 672 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import themes from "themes" /* 4496 */;
+import useThemeDefault from "useTheme" /* 4722 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12779 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12783 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12796 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12802 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12803 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12806 */;
+import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 12817 */;
+import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 12818 */;
+import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 12822 */;
+import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 12831 */;
+import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 12832 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles_mod from "createStyles" /* 4790 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 const usePowerupActiveStatusDefault = usePowerupActiveStatus;
 
-const View = _mod17.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-let createStyles = createStyles_mod;
-let closure_6 = createStyles.createStyles((arg0) => {
-  const obj = { container: { gap: nativeDefault.space.PX_8 }, cardsContainer: null, titleContainer: null, bodyContainer: null, imageContainer: null, imageContainerActive: null, imageContainerExpiring: null, imageContainerRemoving: null, image: null, disabled: null, badge: null };
-  const obj2 = { gap: nativeDefault.space.PX_8 };
-  obj.cardsContainer = { gap: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 };
-  obj.titleContainer = { flexDirection: "column", gap: 4 };
-  obj.bodyContainer = { justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
-  const obj4 = { borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderStyle: "solid", backgroundColor: null };
-  let str = "#ffffff";
-  const obj3 = { gap: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 };
-  if (arg0) {
-    str = "#000000";
-  }
-  const tmp3Result = _modDef676(str);
-  obj4.backgroundColor = _modDef676(str).alpha(0.04).hex();
-  obj.imageContainer = obj4;
-  const obj5 = { borderColor: null };
-  const alphaResult = _modDef676(str).alpha(0.04);
-  const tmpResult = _modDef676;
-  const tmpResultResult = _modDef676(nativeDefault.unsafe_rawColors.GREEN_360);
-  obj5.borderColor = _modDef676(nativeDefault.unsafe_rawColors.GREEN_360).alpha(0.35).hex();
-  obj.imageContainerActive = obj5;
-  const obj6 = { borderColor: null };
-  const alphaResult1 = _modDef676(nativeDefault.unsafe_rawColors.GREEN_360).alpha(0.35);
-  const tmpResult3 = _modDef676;
-  const tmpResult1Result = _modDef676(nativeDefault.unsafe_rawColors.YELLOW_300);
-  obj6.borderColor = _modDef676(nativeDefault.unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
-  obj.imageContainerExpiring = obj6;
-  const obj7 = { borderColor: null };
-  const alphaResult2 = _modDef676(nativeDefault.unsafe_rawColors.YELLOW_300).alpha(0.35);
-  const tmpResult4 = _modDef676;
-  const tmpResult2Result = _modDef676(nativeDefault.unsafe_rawColors.YELLOW_300);
-  obj7.borderColor = _modDef676(nativeDefault.unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
-  obj.imageContainerRemoving = obj7;
-  obj.image = { width: "75%", height: 180, resizeMode: "contain" };
-  obj.disabled = { opacity: 0.5 };
-  const rect = { position: "absolute", top: tmp(580).space.PX_8, right: tmp(580).space.PX_8 };
-  obj.badge = rect;
-  return obj;
-});
-let createStyles = createStyles_mod;
-let obj = { cardsContainer: { gap: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 }, disabledReasonContainer: null };
-let obj2 = { gap: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 };
-obj.disabledReasonContainer = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
-let closure_7 = createStyles.createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(48);
-  ({ guildId, powerup, isNewPerk, forceStaticImage } = arg0);
-  const tmp5 = useThemeDefault();
-  if (cResult[0] !== tmp5) {
-    const isThemeLightResult = tmp(4501).isThemeLight(tmp5);
-    cResult[0] = tmp5;
-    cResult[1] = isThemeLightResult;
-    let tmp6 = isThemeLightResult;
-    const tmpResult = tmp(4501);
-  } else {
-    tmp6 = cResult[1];
-  }
-  const tmp8 = closure_6(tmp6);
-  const tmp9 = useHasAllocateBoostPermissionDefault(guildId);
-  const tmp10 = usePowerupActiveStatusDefault(guildId, powerup);
-  const tmp11 = useGuildPowerupRollbackEnabledDefault(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet");
-  const calculatePowerupCardStatus = useCalculatePowerupCardStatus.useCalculatePowerupCardStatus(powerup, tmp10, tmp11);
-  if (cResult[2] !== tmp10) {
-    const result = tmp(12699).isPowerupActiveStatusActive(tmp10);
-    cResult[2] = tmp10;
-    cResult[3] = result;
-    let tmp13 = result;
-    const tmpResult4 = tmp(12699);
-  } else {
-    tmp13 = cResult[3];
-  }
-  closure_0 = tmp13;
-  const textColor = tmp4(12749)(tmp13).textColor;
-  let str = tmp4(12719)(powerup, true, forceStaticImage);
-  const disabled = tmp4(12735)(guildId, powerup, tmp13).disabled;
-  const tmp15 = useGuildPowerupOnActivateDefault(guildId, powerup);
-  const onActivate = tmp15.onActivate;
-  const isLoading = tmp15.isLoading;
-  const tmp16 = useGuildPowerupOnShowDeactivateDefault(guildId, powerup);
-  closure_2 = tmp16;
-  let disabled2 = disabled;
-  if (disabled) {
-    disabled2 = tmp9;
-  }
-  if (disabled2) {
-    disabled2 = tmp8.disabled;
-  }
-  if (cResult[4] === tmp8.container) {
-    if (cResult[5] === disabled2) {
-      let tmp17 = cResult[6];
-    }
-    let type;
-    if (calculatePowerupCardStatus != null) {
-      type = calculatePowerupCardStatus.type;
-    }
-    let type1;
-    if (calculatePowerupCardStatus != null) {
-      type1 = calculatePowerupCardStatus.type;
-    }
-    let type2;
-    if (calculatePowerupCardStatus != null) {
-      type2 = calculatePowerupCardStatus.type;
-    }
-    if (cResult[7] === tmp8.imageContainer) {
-      if (cResult[8] === tmp20) {
-        if (cResult[9] === tmp22) {
-          if (cResult[10] === tmp24) {
-            let tmp25 = cResult[11];
-          }
-          if (str == null) {
-            str = "";
-          }
-          if (cResult[12] === tmp8.image) {
-            if (cResult[13] === str) {
-              if (cResult[14] === tmp26) {
-                let tmp27 = cResult[15];
-              }
-              if (cResult[16] === isNewPerk) {
-                if (cResult[17] === tmp8.badge) {
-                  let tmp30 = cResult[18];
-                }
-                if (cResult[19] === tmp27) {
-                  if (cResult[20] === tmp30) {
-                    if (cResult[21] === tmp25) {
-                      let tmp33 = cResult[22];
-                    }
-                    if (cResult[23] === powerup.title) {
-                      if (cResult[24] === textColor) {
-                        let tmp37 = cResult[25];
-                      }
-                      if (cResult[26] === powerup.cost) {
-                        if (cResult[27] === calculatePowerupCardStatus) {
-                          if (cResult[29] === tmp8.titleContainer) {
-                            if (cResult[30] === tmp37) {
-                              if (cResult[31] === tmp40) {
-                                let tmp45 = cResult[32];
-                              }
-                              if (cResult[33] === tmp9) {
-                                if (cResult[34] === disabled) {
-                                  if (cResult[35] === tmp13) {
-                                    if (cResult[36] === isLoading) {
-                                      if (cResult[37] === onActivate) {
-                                        if (cResult[38] === tmp16) {
-                                          let tmp49 = cResult[39];
-                                        }
-                                        if (cResult[40] === tmp8.bodyContainer) {
-                                          if (cResult[41] === tmp45) {
-                                            if (cResult[42] === tmp49) {
-                                              let tmp54 = cResult[43];
-                                            }
-                                            if (cResult[44] === tmp33) {
-                                              if (cResult[45] === tmp54) {
-                                                if (cResult[46] === tmp17) {
-                                                  let tmp58 = cResult[47];
-                                                }
-                                                return tmp58;
-                                              }
-                                            }
-                                            const obj2 = { style: tmp17, children: null };
-                                            const items = [tmp33, tmp54];
-                                            obj2.children = items;
-                                            const tmp61 = hasOwnProperty(View, obj2);
-                                            cResult[44] = tmp33;
-                                            cResult[45] = tmp54;
-                                            cResult[46] = tmp17;
-                                            cResult[47] = tmp61;
-                                            tmp58 = tmp61;
-                                          }
-                                        }
-                                        const obj3 = { style: tmp8.bodyContainer, children: null };
-                                        const items1 = [tmp45, tmp49];
-                                        obj3.children = items1;
-                                        const tmp57 = hasOwnProperty(View, obj3);
-                                        cResult[40] = tmp8.bodyContainer;
-                                        cResult[41] = tmp45;
-                                        cResult[42] = tmp49;
-                                        cResult[43] = tmp57;
-                                        tmp54 = tmp57;
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                              if (!tmp9) {
-                                cResult[33] = tmp9;
-                                cResult[34] = disabled;
-                                cResult[35] = tmp13;
-                                cResult[36] = isLoading;
-                                cResult[37] = onActivate;
-                                cResult[38] = tmp16;
-                                cResult[39] = tmp9;
-                                tmp49 = tmp9;
-                              } else {
-                                const obj4 = { disabled, loading: isLoading, variant: null, text: null, onPress: null };
-                                let str5 = "primary";
-                                if (tmp13) {
-                                  str5 = "secondary";
-                                }
-                                obj4.variant = str5;
-                                const intl2 = tmp(1119).intl;
-                                const tmp4Result = tmp4(2518);
-                                obj4.text = intl2.string(tmp13 ? tmp4Result.TZsu1U : tmp4Result.gSxlHf);
-                                obj4.onPress = function onPress() {
-                                  if (closure_0) {
-                                    closure_2();
-                                  } else {
-                                    onActivate();
-                                  }
-                                };
-                                React4(tmp(5220).Button, obj4);
-                              }
-                            }
-                          }
-                          const obj5 = { style: tmp8.titleContainer, children: null };
-                          const items2 = [tmp37, cResult[28]];
-                          obj5.children = items2;
-                          const tmp48 = hasOwnProperty(View, obj5);
-                          cResult[29] = tmp8.titleContainer;
-                          cResult[30] = tmp37;
-                          cResult[31] = cResult[28];
-                          cResult[32] = tmp48;
-                          tmp45 = tmp48;
-                        }
-                      }
-                      if (null != calculatePowerupCardStatus) {
-                        const obj6 = { status: calculatePowerupCardStatus };
-                        let tmp42 = React4(tmp(12723).GuildPowerupCardFooterStatus, obj6);
-                      } else {
-                        const obj7 = { cost: powerup.cost };
-                        tmp42 = React4(tmp(12723).GuildPowerupCardFooterCost, obj7);
-                      }
-                      powerup = powerup.cost;
-                      cResult[26] = powerup;
-                      cResult[27] = calculatePowerupCardStatus;
-                      cResult[28] = tmp42;
-                    }
-                    const obj8 = { variant: "heading-md/semibold", color: textColor, children: powerup.title };
-                    const tmp39 = React4(tmp(4786).Text, obj8);
-                    cResult[23] = powerup.title;
-                    cResult[24] = textColor;
-                    cResult[25] = tmp39;
-                    tmp37 = tmp39;
-                  }
-                }
-                const obj9 = { style: tmp25, children: null };
-                const items3 = [tmp27, tmp30];
-                obj9.children = items3;
-                const tmp36 = hasOwnProperty(View, obj9);
-                cResult[19] = tmp27;
-                cResult[20] = tmp30;
-                cResult[21] = tmp25;
-                cResult[22] = tmp36;
-                tmp33 = tmp36;
-              }
-              let tmp31 = isNewPerk;
-              if (isNewPerk) {
-                const obj10 = { text: null, style: null };
-                const intl = tmp(1119).intl;
-                obj10.text = intl.string(tmp(1119).t.y2b7CA);
-                obj10.style = tmp8.badge;
-                tmp31 = React4(tmp(1181).TextBadge, obj10);
-              }
-              cResult[16] = isNewPerk;
-              cResult[17] = tmp8.badge;
-              cResult[18] = tmp31;
-              tmp30 = tmp31;
-            }
-          }
-          const obj11 = { imageUrl: str, isAnimated: !forceStaticImage, style: tmp8.image };
-          const tmp29 = React4(tmp4(12722), obj11);
-          cResult[12] = tmp8.image;
-          cResult[13] = str;
-          cResult[14] = !forceStaticImage;
-          cResult[15] = tmp29;
-          tmp27 = tmp29;
-        }
-      }
-    }
-    const items4 = [tmp8.imageContainer, "active" === type && tmp8.imageContainerActive, "expiring" === type1 && tmp8.imageContainerExpiring, "removing" === type2 && tmp8.imageContainerRemoving];
-    cResult[7] = tmp8.imageContainer;
-    cResult[8] = "active" === type && tmp8.imageContainerActive;
-    cResult[9] = "expiring" === type1 && tmp8.imageContainerExpiring;
-    cResult[10] = "removing" === type2 && tmp8.imageContainerRemoving;
-    cResult[11] = items4;
-    tmp25 = items4;
-  }
-  const items5 = [tmp8.container, disabled2];
-  cResult[4] = tmp8.container;
-  cResult[5] = disabled2;
-  cResult[6] = items5;
-  tmp17 = items5;
-}) : ((arg0) => {
+function GuildPowerupsMultiPerkCard(arg0) {
   ({ guildId, powerup, isNewPerk, forceStaticImage } = arg0);
   c1 = undefined;
   const tmp4 = closure_6(themes.isThemeLight(useThemeDefault()));
@@ -376,10 +79,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items2 = [React4(GuildPowerupsImageDefault, { imageUrl: str, isAnimated: !forceStaticImage, style: tmp4.image }), ];
   if (isNewPerk) {
     const obj7 = { text: null, style: null };
-    const intl = tmp(1119).intl;
-    obj7.text = intl.string(tmp(1119).t.y2b7CA);
+    const intl = tmp(1115).intl;
+    obj7.text = intl.string(tmp(1115).t.y2b7CA);
     obj7.style = tmp4.badge;
-    isNewPerk = tmp18(tmp(1181).TextBadge, obj7);
+    isNewPerk = tmp18(tmp(1177).TextBadge, obj7);
   }
   items2[1] = isNewPerk;
   obj5.children = items2;
@@ -391,10 +94,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items4 = [React4(Text_Text.Text, { variant: "heading-md/semibold", color: useGuildPowerupColorConfigDefault(result).textColor, children: powerup.title }), ];
   if (null != calculatePowerupCardStatus) {
     const obj11 = { status: calculatePowerupCardStatus };
-    let tmp18Result = tmp18(tmp(12723).GuildPowerupCardFooterStatus, obj11);
+    let tmp18Result = tmp18(tmp(12807).GuildPowerupCardFooterStatus, obj11);
   } else {
     const obj12 = { cost: powerup.cost };
-    tmp18Result = tmp18(tmp(12723).GuildPowerupCardFooterCost, obj12);
+    tmp18Result = tmp18(tmp(12807).GuildPowerupCardFooterCost, obj12);
   }
   items4[1] = tmp18Result;
   obj9.children = items4;
@@ -412,8 +115,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       str2 = "secondary";
     }
     obj13.variant = str2;
-    const intl2 = tmp(1119).intl;
-    const tmp3Result2 = tmp3(2518);
+    const intl2 = tmp(1115).intl;
+    const tmp3Result2 = tmp3(2514);
     obj13.text = intl2.string(result ? tmp3Result2.TZsu1U : tmp3Result2.gSxlHf);
     obj13.onPress = function onPress() {
       if (c0) {
@@ -422,149 +125,59 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         _undefined();
       }
     };
-    tmp18(tmp(5220).Button, obj13);
+    tmp18(tmp(5218).Button, obj13);
   }
+}
+const View = _mod17.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
+let createStyles = createStyles_mod;
+let closure_6 = createStyles.createStyles((arg0) => {
+  const obj = { container: { gap: nativeDefault.space.PX_8 }, cardsContainer: null, titleContainer: null, bodyContainer: null, imageContainer: null, imageContainerActive: null, imageContainerExpiring: null, imageContainerRemoving: null, image: null, disabled: null, badge: null };
+  const obj2 = { gap: nativeDefault.space.PX_8 };
+  obj.cardsContainer = { gap: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 };
+  obj.titleContainer = { flexDirection: "column", gap: 4 };
+  obj.bodyContainer = { justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
+  const obj4 = { borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderStyle: "solid", backgroundColor: null };
+  let str = "#ffffff";
+  const obj3 = { gap: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 };
+  if (arg0) {
+    str = "#000000";
+  }
+  const tmp3Result = _modDef672(str);
+  obj4.backgroundColor = _modDef672(str).alpha(0.04).hex();
+  obj.imageContainer = obj4;
+  const obj5 = { borderColor: null };
+  const alphaResult = _modDef672(str).alpha(0.04);
+  const tmpResult = _modDef672;
+  const tmpResultResult = _modDef672(nativeDefault.unsafe_rawColors.GREEN_360);
+  obj5.borderColor = _modDef672(nativeDefault.unsafe_rawColors.GREEN_360).alpha(0.35).hex();
+  obj.imageContainerActive = obj5;
+  const obj6 = { borderColor: null };
+  const alphaResult1 = _modDef672(nativeDefault.unsafe_rawColors.GREEN_360).alpha(0.35);
+  const tmpResult3 = _modDef672;
+  const tmpResult1Result = _modDef672(nativeDefault.unsafe_rawColors.YELLOW_300);
+  obj6.borderColor = _modDef672(nativeDefault.unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+  obj.imageContainerExpiring = obj6;
+  const obj7 = { borderColor: null };
+  const alphaResult2 = _modDef672(nativeDefault.unsafe_rawColors.YELLOW_300).alpha(0.35);
+  const tmpResult4 = _modDef672;
+  const tmpResult2Result = _modDef672(nativeDefault.unsafe_rawColors.YELLOW_300);
+  obj7.borderColor = _modDef672(nativeDefault.unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+  obj.imageContainerRemoving = obj7;
+  obj.image = { width: "75%", height: 180, resizeMode: "contain" };
+  obj.disabled = { opacity: 0.5 };
+  const rect = { position: "absolute", top: tmp(576).space.PX_8, right: tmp(576).space.PX_8 };
+  obj.badge = rect;
+  return obj;
 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let obj3 = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
+let createStyles = createStyles_mod;
+let obj = { cardsContainer: { gap: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 }, disabledReasonContainer: null };
+let obj2 = { gap: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 };
+obj.disabledReasonContainer = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
+let closure_7 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsMultiPerkBottomSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
-  const cResult = guildId(568).c(26);
-  guildId = guildId.guildId;
-  ({ listing, onDismiss } = guildId);
-  const tmp4 = closure_7();
-  const bottom = useSafeAreaInsetsDefault().bottom;
-  const tmp6 = usePowerupGroupConfigDefault(guildId, listing);
-  importDefault = tmp6;
-  if (null == tmp6) {
-    return null;
-  } else {
-    if (cResult[0] !== bottom) {
-      const obj2 = { paddingBottom: bottom };
-      cResult[0] = bottom;
-      cResult[1] = obj2;
-      let tmp7 = obj2;
-    } else {
-      tmp7 = cResult[1];
-    }
-    if (cResult[2] === tmp6.description) {
-      if (cResult[3] === tmp6.title) {
-        let tmp8 = cResult[4];
-      }
-      if (cResult[5] === tmp6.disabledReason) {
-        if (cResult[6] === tmp4.disabledReasonContainer) {
-          let tmp12 = cResult[7];
-        }
-        if (cResult[8] === tmp6.forceStaticImages) {
-          if (cResult[9] === guildId) {
-            if (cResult[10] === listing.powerups) {
-              if (cResult[15] === tmp4.cardsContainer) {
-                if (cResult[16] === tmp15) {
-                  let tmp19 = cResult[17];
-                }
-                if (cResult[18] === tmp7) {
-                  if (cResult[19] === tmp8) {
-                    if (cResult[20] === tmp12) {
-                      if (cResult[21] === tmp19) {
-                        let tmp22 = cResult[22];
-                      }
-                      if (cResult[23] === onDismiss) {
-                        if (cResult[24] === tmp22) {
-                          let tmp26 = cResult[25];
-                        }
-                        return tmp26;
-                      }
-                      class P {
-                        constructor(arg0) {
-                          obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-                          return jsx(f61202, obj, guildId.skuId);
-                        }
-                      }
-                      tmp28[2] = onDismiss;
-                      tmp28[3] = tmp22;
-                      const tmp29 = closure_4(tmp(7429).BottomSheet, tmp28);
-                      cResult[23] = onDismiss;
-                      cResult[24] = tmp22;
-                      cResult[25] = tmp29;
-                      tmp26 = tmp29;
-                    }
-                  }
-                }
-                class P {
-                  constructor(arg0) {
-                    obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-                    return jsx(f61202, obj, guildId.skuId);
-                  }
-                }
-                tmp24[0] = tmp7;
-                const items = [tmp8, tmp12, tmp19];
-                tmp24[1] = items;
-                const tmp25 = closure_5(tmp(6895).BottomSheetScrollView, tmp24);
-                cResult[18] = tmp7;
-                cResult[19] = tmp8;
-                cResult[20] = tmp12;
-                cResult[21] = tmp19;
-                cResult[22] = tmp25;
-                tmp22 = tmp25;
-              }
-              class P {
-                constructor(arg0) {
-                  obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-                  return jsx(f61202, obj, guildId.skuId);
-                }
-              }
-              const obj3 = { style: tmp14, children: cResult[11] };
-              const tmp21 = closure_4(View, obj3);
-              cResult[15] = tmp4.cardsContainer;
-              cResult[16] = cResult[11];
-              cResult[17] = tmp21;
-              tmp19 = tmp21;
-            }
-          }
-        }
-        if (cResult[12] === tmp6.forceStaticImages) {
-          if (cResult[13] === guildId) {
-            let tmp16 = cResult[14];
-          }
-          const powerups = listing.powerups;
-          const mapped = powerups.map(tmp16);
-          class P {
-            constructor(arg0) {
-              obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-              return jsx(f61202, obj, guildId.skuId);
-            }
-          }
-          cResult[8] = tmp6;
-          cResult[9] = guildId;
-          listing = listing.powerups;
-          cResult[10] = listing;
-          cResult[11] = mapped;
-        }
-        class P {
-          constructor(arg0) {
-            obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-            return jsx(f61202, obj, guildId.skuId);
-          }
-        }
-        cResult[12] = tmp6.forceStaticImages;
-        cResult[13] = guildId;
-        cResult[14] = P;
-        tmp16 = P;
-      }
-      cResult[5] = tmp6.disabledReason;
-      cResult[6] = tmp4.disabledReasonContainer;
-      cResult[7] = null != tmp6.disabledReason;
-      tmp12 = tmp13;
-    }
-    ({ title: tmp10[0], description: tmp10[1] } = tmp6);
-    const tmp11 = closure_4(GuildPowerupsSectionHeaderDefault, tmp10);
-    cResult[2] = tmp6.description;
-    cResult[3] = tmp6.title;
-    cResult[4] = tmp11;
-    tmp8 = tmp11;
-  }
-}) : ((guildId) => {
+export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
   guildId = guildId.guildId;
   const listing = guildId.listing;
   const tmp = closure_7();
@@ -577,23 +190,23 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj3 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
     obj2.contentContainerStyle = obj3;
     ({ title: obj4.title, description: obj4.description } = tmp4);
-    const items = [closure_4(tmp2(12753), { title: null, description: null }), , ];
+    const items = [closure_4(tmp2(12835), { title: null, description: null }), , ];
     let tmp6Result = null != tmp4.disabledReason;
     if (tmp6Result) {
       const obj6 = { style: tmp.disabledReasonContainer, children: null };
       const obj7 = { text: tmp4.disabledReason };
-      obj6.children = tmp6(tmp2(12746), obj7);
+      obj6.children = tmp6(tmp2(12828), obj7);
       tmp6Result = tmp6(View, obj6);
     }
     items[1] = tmp6Result;
     const obj13 = { style: tmp.cardsContainer, children: null };
     const powerups = listing.powerups;
-    obj13.children = powerups.map((powerup) => React4(closure_8, { guildId, powerup, forceStaticImage: forceStaticImages.forceStaticImages }, powerup.skuId));
+    obj13.children = powerups.map((powerup) => React4(GuildPowerupsMultiPerkCard, { guildId, powerup, forceStaticImage: forceStaticImages.forceStaticImages }, powerup.skuId));
     items[2] = closure_4(View, obj13);
     obj2.children = items;
-    obj.children = closure_5(guildId(6895).BottomSheetScrollView, obj2);
-    tmp6Result2 = tmp6(guildId(7429).BottomSheet, obj);
+    obj.children = closure_5(guildId(6901).BottomSheetScrollView, obj2);
+    tmp6Result2 = tmp6(guildId(7427).BottomSheet, obj);
     const obj5 = { title: null, description: null };
   }
   return tmp6Result2;
-});
+};

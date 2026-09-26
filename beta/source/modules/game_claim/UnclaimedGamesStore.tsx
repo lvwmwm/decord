@@ -1,11 +1,11 @@
-// Module ID: 16542
-// Function ID: 16543
+// Module ID: 16535
+// Function ID: 16536
 // Name: UnclaimedGamesStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 16542 (UnclaimedGamesStore)
+// Module 16535 (UnclaimedGamesStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let guildIdToGameIds = null;
 const Store = initializeDefault.Store;

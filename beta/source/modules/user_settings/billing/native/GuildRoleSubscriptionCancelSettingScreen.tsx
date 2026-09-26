@@ -1,37 +1,22 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15498
+// Function ID: 15499
 // Name: GuildRoleSubscriptionCancelSettingScreen
-// Dependencies: [19, 21, 558, 568, 7272, 15495, 2]
+// Dependencies: [19, 21, 7271, 15499, 2]
+// Exports: default
 
-// Module 15494 (GuildRoleSubscriptionCancelSettingScreen)
-import c from "c" /* 568 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7272 */;
-import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 15495 */;
+// Module 15498 (GuildRoleSubscriptionCancelSettingScreen)
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7271 */;
+import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 15499 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/billing/native/GuildRoleSubscriptionCancelSettingScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  if (cResult[0] !== settingNavigationRoute.params) {
-    const obj3 = {};
-    const merged = Object.assign(settingNavigationRoute.params);
-    const tmp10 = jsx(UserSettingsGuildRoleSubscriptionsCancelDefault, {});
-    cResult[0] = settingNavigationRoute.params;
-    cResult[1] = tmp10;
-    let tmp4 = tmp10;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (() => {
+export default function GuildRoleSubscriptionCancelSettingScreen() {
   const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
   const obj2 = {};
   const merged = Object.assign(settingNavigationRoute.params);
   return jsx(UserSettingsGuildRoleSubscriptionsCancelDefault, {});
-});
+};

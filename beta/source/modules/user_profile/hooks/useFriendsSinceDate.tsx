@@ -1,83 +1,27 @@
-// Module ID: 11499
-// Function ID: 11500
+// Module ID: 11504
+// Function ID: 11505
 // Name: useFriendsSinceDate
-// Dependencies: [2113, 4441, 1078, 558, 568, 565, 5658, 2]
+// Dependencies: [2109, 4437, 1074, 563, 5656, 2]
+// Exports: useFriendsSinceDate
 
-// Module 11499 (useFriendsSinceDate)
-import LocaleStore from "LocaleStore" /* 2113 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
+// Module 11504 (useFriendsSinceDate)
+import LocaleStore from "LocaleStore" /* 2109 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const RelationshipTypes = fn(1078).RelationshipTypes;
-const ReactCompilerGating = fn(558);
+const RelationshipTypes = fn(1074).RelationshipTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useFriendsSinceDate.tsx");
 
-export const useFriendsSinceDate = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LocaleStore];
-    const fn = function c() {
-      return locale.locale;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const obj = require("c");
-  const stateFromStores = require("useStateFromStores").useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [RelationshipStore];
-    cResult[2] = items1;
-    let tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== arg0) {
-    const fn2 = function p() {
-      let since = null;
-      if (RelationshipStore.getRelationshipType(closure_0) === RelationshipTypes.FRIEND) {
-        since = RelationshipStore.getSince(closure_0);
-      }
-      return since;
-    };
-    const items2 = [arg0];
-    cResult[3] = arg0;
-    cResult[4] = fn2;
-    cResult[5] = items2;
-    let tmp11 = items2;
-    let tmp10 = fn2;
-  } else {
-    tmp10 = cResult[4];
-    tmp11 = cResult[5];
-  }
-  const tmpResult = require("useStateFromStores");
-  const stateFromStores1 = require("useStateFromStores").useStateFromStores(tmp8, tmp10, tmp11);
-  if (cResult[6] === stateFromStores1) {
-    if (cResult[7] === stateFromStores) {
-      let tmp13 = cResult[8];
-    }
-    return tmp13;
-  }
-  const tmpResult3 = require("useStateFromStores");
-  const createdAtDate = require("ConnectionsUtils").getCreatedAtDate(stateFromStores1, stateFromStores);
-  cResult[6] = stateFromStores1;
-  cResult[7] = stateFromStores;
-  cResult[8] = createdAtDate;
-  tmp13 = createdAtDate;
-}) : ((arg0) => {
-  _require = arg0;
+export const useFriendsSinceDate = function useFriendsSinceDate(userId) {
+  _require = userId;
   const items = [LocaleStore];
   const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => locale.locale);
   const obj = require("useStateFromStores");
   const items1 = [RelationshipStore];
-  const items2 = [arg0];
+  const items2 = [userId];
   const stateFromStores1 = require("useStateFromStores").useStateFromStores(items1, () => {
     let since = null;
     if (RelationshipStore.getRelationshipType(closure_0) === RelationshipTypes.FRIEND) {
@@ -87,4 +31,4 @@ export const useFriendsSinceDate = ReactCompilerGating.isReactCompilerEnabled() 
   }, items2);
   const obj2 = require("useStateFromStores");
   return require("ConnectionsUtils").getCreatedAtDate(stateFromStores1, stateFromStores);
-});
+};

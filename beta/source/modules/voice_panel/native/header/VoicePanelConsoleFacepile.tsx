@@ -1,16 +1,17 @@
-// Module ID: 17555
-// Function ID: 17556
+// Module ID: 17594
+// Function ID: 17595
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1078, 21, 4790, 580, 10077, 1119, 558, 568, 10058, 1374, 5836, 1181, 2]
+// Dependencies: [19, 1074, 21, 4788, 576, 10098, 1115, 10080, 1370, 5838, 1177, 2]
+// Exports: default
 
-// Module 17555 (VoicePanelConsoleFacepile)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import NativeViewDefault from "NativeView" /* 5836 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 10058 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 10077 */;
+// Module 17594 (VoicePanelConsoleFacepile)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import NativeViewDefault from "NativeView" /* 5838 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 10080 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 10098 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -36,61 +37,17 @@ function getConsoleInfo(type) {
     return null;
   }
 }
-const PlatformTypes = fn(1078).PlatformTypes;
+const PlatformTypes = fn(1074).PlatformTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { consoleIconContainer: { borderRadius: nativeDefault.radii.round, padding: 8, margin: -3, borderWidth: 3, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, consoleIcon: null };
 const obj3 = { borderRadius: nativeDefault.radii.round, padding: 8, margin: -3, borderWidth: 3, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.consoleIcon = { tintColor: nativeDefault.colors.WHITE };
 let closure_6 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-const obj4 = { tintColor: nativeDefault.colors.WHITE };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelConsoleFacepile.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = require("c").c(8);
-  const tmp4 = closure_6();
-  _require = tmp4;
-  const arr = useGameConsoleAccountsDefault();
-  if (cResult[0] !== arr) {
-    const mapped = arr.map(getConsoleInfo);
-    const found = mapped.filter(tmp(1374).isNotNullish);
-    cResult[0] = arr;
-    cResult[1] = found;
-    let tmp5 = found;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.consoleIcon) {
-    if (cResult[3] === tmp4.consoleIconContainer) {
-      let tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp5) {
-      if (cResult[6] === tmp8) {
-        let tmp9 = cResult[7];
-      }
-      return tmp9;
-    }
-    const obj2 = { items: tmp5, renderItem: tmp8, offsetAmount: -3 };
-    const tmp11 = jsx(tmp(1181).SummarizedIconRow, { items: tmp5, renderItem: tmp8, offsetAmount: -3 });
-    cResult[5] = tmp5;
-    cResult[6] = tmp8;
-    cResult[7] = tmp11;
-    tmp9 = tmp11;
-  }
-  const fn = function u(backgroundColor) {
-    const obj = { style: null, children: null };
-    const items = [closure_0.consoleIconContainer, { backgroundColor: backgroundColor.color }];
-    obj.style = items;
-    obj.children = jsx(native.Icon, { style: closure_0.consoleIcon, size: native.Icon.Sizes.MEDIUM, source: backgroundColor.icon });
-    return <tmp style={null}>{null}</tmp>;
-  };
-  cResult[2] = tmp4.consoleIcon;
-  cResult[3] = tmp4.consoleIconContainer;
-  cResult[4] = fn;
-  tmp8 = fn;
-}) : (() => {
+export default function VoicePanelConsoleFacepile() {
   let tmp = closure_6();
   _require = tmp;
   const tmp2 = useGameConsoleAccountsDefault();
@@ -109,5 +66,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return <tmp style={null}>{null}</tmp>;
   }, items1);
   return jsx(require("native").SummarizedIconRow, { items: items2, renderItem, offsetAmount: -3 });
-});
+};
 export { getConsoleInfo };

@@ -1,160 +1,23 @@
-// Module ID: 12738
-// Function ID: 12739
+// Module ID: 12820
+// Function ID: 12821
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [32, 19, 2067, 4679, 4680, 558, 568, 504, 4699, 1374, 2]
+// Dependencies: [19, 2063, 4676, 4677, 504, 4696, 1370, 2]
+// Exports: default
 
-// Module 12738 (useAvailableBoostCountForPowerup)
-import _slicedToArray from "module_32" /* 32 */;
+// Module 12820 (useAvailableBoostCountForPowerup)
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4676 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildPowerupsConstants = fn(4680);
-({ GuildPowerupType: closure_7, POWERUPS_INCLUDED_IN_LEVEL: closure_8, LEVEL_SKU_ID_TO_BOOSTING_TIER: closure_9 } = GuildPowerupsConstants);
-const ReactCompilerGating = fn(558);
+const GuildPowerupsConstants = fn(4677);
+({ GuildPowerupType: metroRequire, POWERUPS_INCLUDED_IN_LEVEL: closure_7, LEVEL_SKU_ID_TO_BOOSTING_TIER: closure_8 } = GuildPowerupsConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useAvailableBoostCountForPowerup.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, type) => {
-  _require = arg0;
-  const cResult = require("c").c(17);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-    cResult[1] = arg0;
-    cResult[2] = S;
-    const tmp6 = S;
-  } else {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-  }
-  const obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-    const items1 = [GuildPowerupsStore];
-    cResult[3] = items1;
-    const tmp8 = items1;
-  } else {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-  }
-  if (cResult[4] !== arg0) {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-    cResult[4] = arg0;
-    cResult[5] = tmp10;
-    const tmp9 = tmp10;
-  } else {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-  }
-  const tmpResult = require("initialize");
-  const stateFromStores1 = require("initialize").useStateFromStores(tmp8, tmp9);
-  if (null != type) {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-    if (type.type === constants.LEVEL) {
-      class S {
-        constructor() {
-          return closure_5.getGuild(closure_0);
-        }
-      }
-      if (cResult[15] !== arr3) {
-        class S {
-          constructor() {
-            return closure_5.getGuild(closure_0);
-          }
-        }
-        if (arr3 != null) {
-          class S {
-            constructor() {
-              return closure_5.getGuild(closure_0);
-            }
-          }
-          const reduced = arr3.reduce((acc, cost) => acc + cost.cost, 0);
-        }
-        cResult[15] = arr3;
-        cResult[16] = reduced;
-      } else {
-        class S {
-          constructor() {
-            return closure_5.getGuild(closure_0);
-          }
-        }
-      }
-      if (stateFromStores != null) {
-        class S {
-          constructor() {
-            return closure_5.getGuild(closure_0);
-          }
-        }
-      }
-      if (undefined == null) {
-        class S {
-          constructor() {
-            return closure_5.getGuild(closure_0);
-          }
-        }
-      }
-      const diff = tmp16 - tmp12;
-      if (tmp14 == null) {
-        class S {
-          constructor() {
-            return closure_5.getGuild(closure_0);
-          }
-        }
-      }
-      return Math.max(diff + tmp14, 0);
-    }
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-    cResult[6] = tmp13;
-  } else {
-    class S {
-      constructor() {
-        return closure_5.getGuild(closure_0);
-      }
-    }
-  }
-}) : ((arg0, arg1) => {
+export default function useAvailableBoostCountForPowerup(arg0, arg1) {
   _require = arg0;
   importDefault = arg1;
   let items = [GuildStore];
@@ -168,11 +31,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, type) => {
       if (tmp.type === constants.LEVEL) {
         if (null != stateFromStores1) {
           closure_0 = tmp9;
-          if (null == closure_1_9[tmp.skuId]) {
+          if (null == closure_1_8[tmp.skuId]) {
             let items = [];
           } else {
             const _Object = Object;
-            const entries = Object.entries(closure_1_8);
+            const entries = Object.entries(closure_1_7);
             const found = entries.filter((item) => {
               [tmp, tmp2] = item;
               let tmp3 = tmp2 === closure_0;
@@ -185,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, type) => {
               [tmp] = item;
               return allPowerups.allPowerups[tmp];
             });
-            items = mapped.filter(closure_0(stateFromStores1[9]).isNotNullish);
+            items = mapped.filter(closure_0(stateFromStores1[6]).isNotNullish);
           }
           return items;
         }
@@ -209,4 +72,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, type) => {
     num = 0;
   }
   return Math.max(diff + num, 0);
-});
+};

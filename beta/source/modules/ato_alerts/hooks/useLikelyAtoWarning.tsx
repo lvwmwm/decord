@@ -1,46 +1,32 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 11659
+// Function ID: 11660
 // Name: useLikelyAtoWarning
-// Dependencies: [10396, 558, 10397, 10398, 10399, 10400, 10395, 2]
+// Dependencies: [11208, 11657, 11658, 11268, 11267, 11656, 2]
+// Exports: useLikelyAtoWarning
 
-// Module 10405 (useLikelyAtoWarning)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10396 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10397 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 10398 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10399 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10400 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11659 (useLikelyAtoWarning)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11208 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11267 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11268 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11657 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 11658 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 const result = size.fileFinishedImporting("modules/ato_alerts/hooks/useLikelyAtoWarning.tsx");
 
-export const useLikelyAtoWarning = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const isSpamMessageRequest = useIsSpamMessageRequest.useIsSpamMessageRequest(arg0);
-  const isMessageRequest = useIsMessageRequest.useIsMessageRequest(arg0);
-  const channelSafetyWarning = useChannelSafetyWarning.useChannelSafetyWarning(arg0, SafetyWarningTypes.LIKELY_ATO);
-  const tmp4 = useInappropriateConversationWarningsForChannel.useInappropriateConversationWarningsForChannel(arg0).length > 0;
+export const useLikelyAtoWarning = function useLikelyAtoWarning(channelId) {
+  const isSpamMessageRequest = useIsSpamMessageRequest.useIsSpamMessageRequest(channelId);
+  const isMessageRequest = useIsMessageRequest.useIsMessageRequest(channelId);
+  const channelSafetyWarning = useChannelSafetyWarning.useChannelSafetyWarning(channelId, SafetyWarningTypes.LIKELY_ATO);
+  const tmp4 = useInappropriateConversationWarningsForChannel.useInappropriateConversationWarningsForChannel(channelId).length > 0;
   if (!isSpamMessageRequest) {
     if (!isMessageRequest) {
       if (!tmp4) {
-        if (null == obj5.useStrangerDangerWarning(arg0)) {
+        if (null == obj5.useStrangerDangerWarning(channelId)) {
           return channelSafetyWarning;
         }
       }
     }
   }
-}) : ((arg0) => {
-  const isSpamMessageRequest = useIsSpamMessageRequest.useIsSpamMessageRequest(arg0);
-  const isMessageRequest = useIsMessageRequest.useIsMessageRequest(arg0);
-  const channelSafetyWarning = useChannelSafetyWarning.useChannelSafetyWarning(arg0, SafetyWarningTypes.LIKELY_ATO);
-  const tmp4 = useInappropriateConversationWarningsForChannel.useInappropriateConversationWarningsForChannel(arg0).length > 0;
-  if (!isSpamMessageRequest) {
-    if (!isMessageRequest) {
-      if (!tmp4) {
-        if (null == obj5.useStrangerDangerWarning(arg0)) {
-          return channelSafetyWarning;
-        }
-      }
-    }
-  }
-});
+};

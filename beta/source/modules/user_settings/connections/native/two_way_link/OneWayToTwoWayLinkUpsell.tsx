@@ -1,21 +1,29 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15247
+// Function ID: 15248
 // Name: OneWayToTwoWayLinkUpsell
-// Dependencies: [19, 17, 1078, 2042, 21, 4790, 580, 5775, 558, 568, 1181, 10957, 4786, 1119, 5220, 2]
+// Dependencies: [19, 17, 1074, 2038, 21, 4788, 576, 5773, 1177, 10921, 4784, 5218, 1115, 2]
+// Exports: OneWayToTwoWayLinkUpsell
 
-// Module 15243 (OneWayToTwoWayLinkUpsell)
-import nativeDefault from "native" /* 580 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10957 */;
+// Module 15247 (OneWayToTwoWayLinkUpsell)
+import nativeDefault from "native" /* 576 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10921 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5775 */;
+import TextStyles_mod from "TextStyles" /* 5773 */;
 
 const require = fn;
+function OneWayToTwoWayNewTag(markAsDismissed) {
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  const items = [markAsDismissed];
+  const effect = noop.useEffect(() => markAsDismissed(ContentDismissActionType.UNKNOWN), items);
+  const tmp = closure_8();
+  return closure_6(markAsDismissed(1177).NewTag, { containerStyle: closure_8().newContainer, variant: "text-xs/bold" });
+}
 const View = fn(17).View;
-const Fonts = fn(1078).Fonts;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const Fonts = fn(1074).Fonts;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, margin: 16, padding: 12, borderRadius: nativeDefault.radii.sm }, header: { flexDirection: "row", marginBottom: 4, alignItems: "center" }, titleContainer: { flexGrow: 1, flexShrink: 1 }, title: null, body: null, newContainer: null, reconnectButton: null };
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.TEXT_DEFAULT, 16));
@@ -26,177 +34,10 @@ obj2.body = {};
 obj2.newContainer = { paddingHorizontal: 6, width: "auto", alignSelf: "flex-start", marginBottom: 4 };
 obj2.reconnectButton = { marginTop: 8 };
 let closure_8 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
-  const cResult = markAsDismissed(568).c(5);
-  markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp4 = closure_8();
-  if (cResult[0] !== markAsDismissed) {
-    const fn = function o() {
-      return markAsDismissed(ContentDismissActionType.UNKNOWN);
-    };
-    const items = [markAsDismissed];
-    cResult[0] = markAsDismissed;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp6 = items;
-    let tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  const effect = noop.useEffect(tmp5, tmp6);
-  if (cResult[3] !== tmp4.newContainer) {
-    const obj2 = { containerStyle: tmp4.newContainer, variant: "text-xs/bold" };
-    const tmp10 = closure_6(markAsDismissed(1181).NewTag, obj2);
-    cResult[3] = tmp4.newContainer;
-    cResult[4] = tmp10;
-    let tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[4];
-  }
-  return tmp8;
-}) : ((markAsDismissed) => {
-  markAsDismissed = markAsDismissed.markAsDismissed;
-  const items = [markAsDismissed];
-  const effect = noop.useEffect(() => markAsDismissed(ContentDismissActionType.UNKNOWN), items);
-  const tmp = closure_8();
-  return closure_6(markAsDismissed(1181).NewTag, { containerStyle: closure_8().newContainer, variant: "text-xs/bold" });
-});
-ReactCompilerGating = fn(558);
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, margin: 16, padding: 12, borderRadius: nativeDefault.radii.sm };
-let obj4 = {};
-let obj5 = {};
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/OneWayToTwoWayLinkUpsell.tsx");
 
-export const OneWayToTwoWayLinkUpsell = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
-  const cResult = newIndicatorDismissibleContent(568).c(27);
-  ({ title, body, img, newIndicatorDismissibleContent } = onPress);
-  onPress = onPress.onPress;
-  const tmp4 = closure_8();
-  if (cResult[0] !== newIndicatorDismissibleContent) {
-    const obj2 = { contentTypes: null, children: null };
-    const items = [newIndicatorDismissibleContent];
-    obj2.contentTypes = items;
-    obj2.children = function children(visibleContent) {
-      let tmp2 = null;
-      if (visibleContent.visibleContent === newIndicatorDismissibleContent) {
-        const obj = { markAsDismissed: tmp };
-        tmp2 = timestampProducer(closure_9, obj);
-      }
-      return tmp2;
-    };
-    const tmp8 = closure_6(SelectedDismissibleContentDefault, obj2);
-    cResult[0] = newIndicatorDismissibleContent;
-    cResult[1] = tmp8;
-    let tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.title) {
-    if (cResult[3] === title) {
-      let tmp9 = cResult[4];
-    }
-    if (cResult[5] === tmp4.titleContainer) {
-      if (cResult[6] === tmp5) {
-        if (cResult[7] === tmp9) {
-          let tmp11 = cResult[8];
-        }
-        if (cResult[9] === img) {
-          if (cResult[10] === tmp4.header) {
-            if (cResult[11] === tmp11) {
-              let tmp15 = cResult[12];
-            }
-            if (cResult[13] === body) {
-              if (cResult[14] === tmp4.body) {
-                let tmp19 = cResult[15];
-              }
-              const _Symbol = Symbol;
-              if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl = tmp(1119).intl;
-                const stringResult = intl.string(tmp(1119).t.vD60Pv);
-                cResult[16] = stringResult;
-                let tmp23 = stringResult;
-              } else {
-                tmp23 = cResult[16];
-              }
-              if (cResult[17] !== onPress) {
-                const obj3 = { text: tmp23, onPress };
-                const tmp27 = closure_6(tmp(5220).Button, obj3);
-                cResult[17] = onPress;
-                cResult[18] = tmp27;
-                let tmp25 = tmp27;
-              } else {
-                tmp25 = cResult[18];
-              }
-              if (cResult[19] === tmp4.reconnectButton) {
-                if (cResult[20] === tmp25) {
-                  let tmp28 = cResult[21];
-                }
-                if (cResult[22] === tmp4.container) {
-                  if (cResult[23] === tmp28) {
-                    if (cResult[24] === tmp15) {
-                      if (cResult[25] === tmp19) {
-                        let tmp32 = cResult[26];
-                      }
-                      return tmp32;
-                    }
-                  }
-                }
-                const obj4 = { style: tmp4.container, children: null };
-                const items1 = [tmp15, tmp19, tmp28];
-                obj4.children = items1;
-                const tmp35 = closure_7(View, obj4);
-                cResult[22] = tmp4.container;
-                cResult[23] = tmp28;
-                cResult[24] = tmp15;
-                cResult[25] = tmp19;
-                cResult[26] = tmp35;
-                tmp32 = tmp35;
-              }
-              const obj5 = { style: tmp4.reconnectButton, children: tmp25 };
-              const tmp31 = closure_6(View, obj5);
-              cResult[19] = tmp4.reconnectButton;
-              cResult[20] = tmp25;
-              cResult[21] = tmp31;
-              tmp28 = tmp31;
-            }
-            const obj6 = { style: tmp4.body, variant: "text-sm/medium", children: body };
-            const tmp21 = closure_6(tmp(4786).Text, obj6);
-            cResult[13] = body;
-            cResult[14] = tmp4.body;
-            cResult[15] = tmp21;
-            tmp19 = tmp21;
-          }
-        }
-        const obj7 = { style: tmp4.header, children: null };
-        const items2 = [tmp11, img];
-        obj7.children = items2;
-        const tmp18 = closure_7(View, obj7);
-        cResult[9] = img;
-        cResult[10] = tmp4.header;
-        cResult[11] = tmp11;
-        cResult[12] = tmp18;
-        tmp15 = tmp18;
-      }
-    }
-    const obj8 = { style: tmp4.titleContainer, children: null };
-    const items3 = [tmp5, tmp9];
-    obj8.children = items3;
-    const tmp14 = closure_7(View, obj8);
-    cResult[5] = tmp4.titleContainer;
-    cResult[6] = tmp5;
-    cResult[7] = tmp9;
-    cResult[8] = tmp14;
-    tmp11 = tmp14;
-  }
-  const tmp10 = closure_6(newIndicatorDismissibleContent(4786).Text, { style: tmp4.title, variant: "text-md/semibold", children: title });
-  cResult[2] = tmp4.title;
-  cResult[3] = title;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : ((newIndicatorDismissibleContent) => {
+export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newIndicatorDismissibleContent) {
   newIndicatorDismissibleContent = newIndicatorDismissibleContent.newIndicatorDismissibleContent;
   ({ title, body, img, onPress } = newIndicatorDismissibleContent);
   const tmp = closure_8();
@@ -209,25 +50,25 @@ export const OneWayToTwoWayLinkUpsell = ReactCompilerGating.isReactCompilerEnabl
       let tmp2 = null;
       if (visibleContent.visibleContent === newIndicatorDismissibleContent) {
         const obj = { markAsDismissed: tmp };
-        tmp2 = timestampProducer(closure_9, obj);
+        tmp2 = timestampProducer(OneWayToTwoWayNewTag, obj);
       }
       return tmp2;
     }
   };
   const items = [newIndicatorDismissibleContent];
   obj4.contentTypes = items;
-  const items1 = [closure_6(SelectedDismissibleContentDefault, obj4), closure_6(newIndicatorDismissibleContent(4786).Text, { style: tmp.title, variant: "text-md/semibold", children: title })];
+  const items1 = [closure_6(SelectedDismissibleContentDefault, obj4), closure_6(newIndicatorDismissibleContent(4784).Text, { style: tmp.title, variant: "text-md/semibold", children: title })];
   obj3.children = items1;
   const items2 = [closure_7(View, obj3), img];
   obj2.children = items2;
-  const items3 = [closure_7(View, obj2), closure_6(newIndicatorDismissibleContent(4786).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
+  const items3 = [closure_7(View, obj2), closure_6(newIndicatorDismissibleContent(4784).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
   const obj7 = { style: tmp.reconnectButton, children: null };
   const obj8 = { text: null, onPress: null };
-  const intl = newIndicatorDismissibleContent(1119).intl;
-  obj8.text = intl.string(newIndicatorDismissibleContent(1119).t.vD60Pv);
+  const intl = newIndicatorDismissibleContent(1115).intl;
+  obj8.text = intl.string(newIndicatorDismissibleContent(1115).t.vD60Pv);
   obj8.onPress = onPress;
-  obj7.children = closure_6(newIndicatorDismissibleContent(5220).Button, obj8);
+  obj7.children = closure_6(newIndicatorDismissibleContent(5218).Button, obj8);
   items3[2] = closure_6(View, obj7);
   obj.children = items3;
   return closure_7(View, obj);
-});
+};

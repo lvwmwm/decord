@@ -1,11 +1,11 @@
 // Module ID: 503
 // Function ID: 504
 // Name: BrowserHandoffStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
 // Module 503 (BrowserHandoffStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const Store = initializeDefault.Store;
 class BrowserHandoffStore extends Store {

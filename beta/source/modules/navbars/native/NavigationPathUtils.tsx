@@ -1,48 +1,29 @@
-// Module ID: 12975
-// Function ID: 12976
+// Module ID: 13057
+// Function ID: 13058
 // Name: NavigationPathUtils
-// Dependencies: [1078, 558, 568, 4623, 2]
-// Exports: getSelectedSpecialNavigationPath
+// Dependencies: [1074, 4620, 2]
+// Exports: getSelectedSpecialNavigationPath, useSelectedSpecialNavigationPath
 
-// Module 12975 (NavigationPathUtils)
-import c from "c" /* 568 */;
-import Constants from "Constants" /* 1078 */;
-import _mod4623 from "module_4623" /* 4623 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13057 (NavigationPathUtils)
+import Constants from "Constants" /* 1074 */;
+import _mod4620 from "module_4620" /* 4620 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
 const SpecialNavigationPath = { FRIENDS: 0, [0]: "FRIENDS" };
-function getSelectedSpecialNavigationPath(pathname) {
-  if (pathname.pathname === Routes.FRIENDS) {
-    return obj.FRIENDS;
-  }
-}
 const result = size.fileFinishedImporting("modules/navbars/native/NavigationPathUtils.tsx");
 
 export { SpecialNavigationPath };
-export { getSelectedSpecialNavigationPath };
-export const useSelectedSpecialNavigationPath = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const obj = c;
-  const cResult = obj.c(2);
-  const _location = _mod4623.useLocation();
-  if (cResult[0] !== _location) {
-    let FRIENDS;
-    if (_location.pathname === Routes.FRIENDS) {
-      FRIENDS = obj.FRIENDS;
-    }
-    cResult[0] = _location;
-    cResult[1] = FRIENDS;
-    let tmp3 = FRIENDS;
-  } else {
-    tmp3 = cResult[1];
+export const getSelectedSpecialNavigationPath = function getSelectedSpecialNavigationPath(pathname) {
+  if (pathname.pathname === Routes.FRIENDS) {
+    return obj.FRIENDS;
   }
-  return tmp3;
-}) : (() => {
-  const obj = _mod4623;
+};
+export const useSelectedSpecialNavigationPath = function useSelectedSpecialNavigationPath() {
+  const obj = _mod4620;
   let FRIENDS;
   if (obj.useLocation().pathname === Routes.FRIENDS) {
     FRIENDS = obj.FRIENDS;
   }
   return FRIENDS;
-});
+};

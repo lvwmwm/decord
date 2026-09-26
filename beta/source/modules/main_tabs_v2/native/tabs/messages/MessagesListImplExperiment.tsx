@@ -1,10 +1,10 @@
-// Module ID: 16396
-// Function ID: 16397
+// Module ID: 16389
+// Function ID: 16390
 // Name: MessagesListImplExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 16396 (MessagesListImplExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 16389 (MessagesListImplExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-06-messages-list-impl", defaultConfig: { list: "fastest", recycleItems: false }, variations: null };

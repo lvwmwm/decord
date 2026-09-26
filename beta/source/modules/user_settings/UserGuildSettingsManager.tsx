@@ -1,15 +1,15 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7393
+// Function ID: 7394
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 7396, 2045, 1078, 1095, 1275, 7397, 2]
+// Dependencies: [5, 7394, 2041, 1074, 1091, 1271, 7395, 2]
 
-// Module 7395 (UserGuildSettingsManager)
-import DurationsDefault from "Durations" /* 1095 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 7393 (UserGuildSettingsManager)
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7396 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7394 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 function handleConnectionOpen() {
@@ -41,7 +41,7 @@ let closure_14 = async function _saveUserGuildSettings(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -102,7 +102,7 @@ let closure_14 = async function _saveUserGuildSettings(arg0, value) {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp13) {
       c3 = tmp;
@@ -131,7 +131,7 @@ let closure_16 = async function _saveUserGuildSettingsBulk(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -146,7 +146,7 @@ let closure_16 = async function _saveUserGuildSettingsBulk(arg0, value) {
           return obj3;
         } else {
           const _clearTimeout = clearTimeout;
-          clearTimeout(options);
+          clearTimeout(React7);
           const _Object = Object;
           const tmp33 = 0 !== Object.keys(closure_0).length;
           collapsedCategories = collapsedCategories.getCollapsedCategories();
@@ -261,7 +261,7 @@ function handleUserGuildSettingsFullUpdate() {
   const obj = {};
   const merged = Object.assign(CategoryCollapseStore.getCollapsedCategories());
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, FAVORITES: metroRequire, ME: closure_7 } = Constants);
 let actions = {};
 let closure_9 = 0;

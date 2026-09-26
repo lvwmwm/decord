@@ -1,11 +1,11 @@
-// Module ID: 7965
-// Function ID: 7966
+// Module ID: 7960
+// Function ID: 7961
 // Name: activityBookmarkUtils
-// Dependencies: [1370, 2]
+// Dependencies: [1366, 2]
 // Exports: extractActivityBookmarkParams
 
-// Module 7965 (activityBookmarkUtils)
-import URLUtilsDefault from "URLUtils" /* 1370 */;
+// Module 7960 (activityBookmarkUtils)
+import URLUtilsDefault from "URLUtils" /* 1366 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");
@@ -18,7 +18,7 @@ export const extractActivityBookmarkParams = function extractActivityBookmarkPar
     value = searchParams.get("referrer_id");
   }
   const obj2 = { referrerId: value, customId: null, linkId: null };
-  value3 = undefined;
+  let value3;
   if (toURLSafeResult != null) {
     const searchParams2 = toURLSafeResult.searchParams;
     value3 = searchParams2.get("custom_id");

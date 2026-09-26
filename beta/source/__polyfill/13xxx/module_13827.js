@@ -1,9 +1,9 @@
 // Module ID: 13827
 // Function ID: 13828
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 13827
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 20, height: 20, scales: [2, 3], hash: "6d92319c85fd42e305e389df8a64c64a", name: "badge", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 177.5, height: 112, scales: [2, 3], hash: "d63f711157bc9a870f14f2f22d76c3fb", name: "guild_subscription_no_guilds_dark", type: "png" });

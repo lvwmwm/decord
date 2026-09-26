@@ -1,15 +1,15 @@
-// Module ID: 7553
-// Function ID: 7554
+// Module ID: 7551
+// Function ID: 7552
 // Name: ForumPostMessagesStore
-// Dependencies: [7554, 1376, 11, 5012, 504, 577, 2]
+// Dependencies: [7552, 1372, 11, 5010, 504, 573, 2]
 
-// Module 7553 (ForumPostMessagesStore)
+// Module 7551 (ForumPostMessagesStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7554 */;
-import UserStore from "UserStore" /* 1376 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7552 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function handleLoadThreadsSuccess(arg0) {

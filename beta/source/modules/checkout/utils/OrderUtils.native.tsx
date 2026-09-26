@@ -1,10 +1,10 @@
-// Module ID: 11147
-// Function ID: 11148
+// Module ID: 11103
+// Function ID: 11104
 // Name: OrderUtils
-// Dependencies: [5, 4772, 7705, 2]
+// Dependencies: [5, 4770, 7703, 2]
 // Exports: discardDraftOrder
 
-// Module 11147 (OrderUtils)
+// Module 11103 (OrderUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_4 = async function _discardDraftOrder(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -40,7 +40,7 @@ let closure_4 = async function _discardDraftOrder(arg0, value) {
           ({ checkoutSucceeded: closure_129_0, order: closure_129_1 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp8) {
@@ -93,7 +93,7 @@ let closure_4 = async function _discardDraftOrder(arg0, value) {
     }
   }
 };
-const OrderStatus = fn(4772).OrderStatus;
+const OrderStatus = fn(4770).OrderStatus;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkout/utils/OrderUtils.native.tsx");
 

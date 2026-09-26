@@ -1,31 +1,31 @@
-// Module ID: 15629
-// Function ID: 15630
+// Module ID: 15633
+// Function ID: 15634
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1376, 1078, 21, 4790, 580, 1384, 1119, 3716, 1488, 1489, 504, 4450, 7441, 1245, 12139, 1397, 4909, 4757, 15630, 1984, 15631, 8473, 8470, 7262, 4691, 14908, 9534, 12146, 4942, 4786, 15632, 5935, 5854, 2112, 5218, 5220, 9143, 8224, 15677, 10263, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4788, 576, 1380, 1115, 3712, 1484, 1485, 504, 4446, 7439, 1241, 12253, 1393, 4907, 4755, 15634, 1980, 15635, 8468, 8465, 7261, 4688, 14912, 9538, 12262, 4940, 4784, 15636, 5936, 5854, 2108, 5216, 5218, 9145, 8219, 15681, 10266, 2]
 // Exports: default
 
-// Module 15629 (CustomTypingIndicatorEditScreen)
-import nativeDefault from "native" /* 580 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import user from "user" /* 1384 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1397 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9534 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12139 */;
+// Module 15633 (CustomTypingIndicatorEditScreen)
+import nativeDefault from "native" /* 576 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import user from "user" /* 1380 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1393 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9538 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12253 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AnalyticsSections: c10, HelpdeskArticles: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { screen: { flex: 1 }, container: { padding: nativeDefault.space.PX_16, rowGap: nativeDefault.space.PX_24 }, previewContainer: null, section: null, description: null };
 let obj3 = { padding: nativeDefault.space.PX_16, rowGap: nativeDefault.space.PX_24 };
 obj2.previewContainer = { height: 140, display: "flex", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_8 };
@@ -109,10 +109,10 @@ export default function CustomTypingIndicatorEditScreen() {
   }, []);
   const items5 = [memo, first3];
   const callback1 = first1.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15630, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", { initialValue: first2, onChange });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15634, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", { initialValue: first2, onChange });
   }, items4);
   const callback2 = first1.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15631, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", { emojis: memo, initialAnimation: first3, onChange: onChange2 });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15635, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", { emojis: memo, initialAnimation: first3, onChange: onChange2 });
   }, items5);
   first1.useRef(null);
   const callback3 = first1.useCallback(() => {
@@ -146,7 +146,7 @@ export default function CustomTypingIndicatorEditScreen() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -189,7 +189,7 @@ export default function CustomTypingIndicatorEditScreen() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;

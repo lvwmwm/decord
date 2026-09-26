@@ -1,23 +1,20 @@
-// Module ID: 15123
-// Function ID: 15124
+// Module ID: 15127
+// Function ID: 15128
 // Name: SyncContactsNameSetting
-// Dependencies: [8270, 1078, 1245, 4993, 15122, 1984, 558, 12863, 11630, 1119, 2]
+// Dependencies: [8265, 1074, 1241, 4991, 15126, 1980, 12962, 11754, 1115, 2]
 
-// Module 15123 (SyncContactsNameSetting)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import SettingsConstants from "SettingsConstants" /* 8270 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
+// Module 15127 (SyncContactsNameSetting)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import SettingsConstants from "SettingsConstants" /* 8265 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12962 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
@@ -26,11 +23,13 @@ const pressable = SettingBuilders.createPressable({
   parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onContactSyncNamePress() {
     AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(15122, dependencyMap.paths), "Contact Sync Name Update Modal");
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(15126, dependencyMap.paths), "Contact Sync Name Update Modal");
   },
   withArrow: true,
-  usePredicate: () => null != ContactSyncUtils.useContactSyncAccount()
+  usePredicate: function useHasContactSyncAccount() {
+    return null != ContactSyncUtils.useContactSyncAccount();
+  }
 });
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/SyncContactsNameSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/SyncContactsNameSetting.tsx");
 
 export default pressable;

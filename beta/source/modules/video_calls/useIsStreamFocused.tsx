@@ -1,59 +1,21 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 9774
+// Function ID: 9775
 // Name: useIsStreamFocused
-// Dependencies: [4806, 4811, 558, 568, 504, 2]
+// Dependencies: [4804, 4809, 504, 2]
+// Exports: useIsStreamFocused
 
-// Module 9770 (useIsStreamFocused)
-import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
+// Module 9774 (useIsStreamFocused)
+import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const isStreamParticipant = fn(4811).isStreamParticipant;
-const ReactCompilerGating = fn(558);
+const isStreamParticipant = fn(4809).isStreamParticipant;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");
 
-export const useIsStreamFocused = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelRTCStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let selectedParticipant = null;
-      if (null != closure_0) {
-        selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
-      }
-      return selectedParticipant;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
-  if (cResult[3] !== stateFromStores) {
-    let tmp10 = null != stateFromStores;
-    if (tmp10) {
-      tmp10 = isStreamParticipant(stateFromStores);
-    }
-    cResult[3] = stateFromStores;
-    cResult[4] = tmp10;
-    let tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[4];
-  }
-  return tmp8;
-}) : ((arg0) => {
-  _require = arg0;
+export const useIsStreamFocused = function useIsStreamFocused(id) {
+  _require = id;
   const items = [ChannelRTCStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => {
     let selectedParticipant = null;
@@ -67,4 +29,4 @@ export const useIsStreamFocused = ReactCompilerGating.isReactCompilerEnabled() ?
     tmp2 = isStreamParticipant(stateFromStores);
   }
   return tmp2;
-});
+};

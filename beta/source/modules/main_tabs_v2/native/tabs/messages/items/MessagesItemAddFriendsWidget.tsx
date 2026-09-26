@@ -1,19 +1,18 @@
-// Module ID: 16445
-// Function ID: 16446
+// Module ID: 16440
+// Function ID: 16441
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1078, 21, 13600, 580, 4790, 8686, 4489, 1119, 10094, 8038, 558, 568, 4649, 4786, 5373, 14163, 16446, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 13590, 576, 4788, 8681, 4485, 1115, 10115, 8033, 4646, 5371, 4784, 14153, 16441, 2]
 
-// Module 16445 (MessagesItemAddFriendsWidget)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import Pressables from "Pressables" /* 5373 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8686 */;
-import IconActionButtonDefault from "IconActionButton" /* 13600 */;
-import _modDef14163 from "module_14163" /* 14163 */;
-import _modDef16446 from "module_16446" /* 16446 */;
+// Module 16440 (MessagesItemAddFriendsWidget)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Pressables from "Pressables" /* 5371 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8681 */;
+import IconActionButtonDefault from "IconActionButton" /* 13590 */;
+import _modDef14153 from "module_14153" /* 14153 */;
+import _modDef16441 from "module_16441" /* 16441 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +38,7 @@ let closure_11 = async function _getFriendInviteCode(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -116,7 +115,7 @@ let closure_13 = async function _handleShare(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -152,7 +151,7 @@ let closure_13 = async function _handleShare(arg0, value) {
         const obj6 = { link: closure_129_1(closure_129_2[12])(closure_128_0) };
         obj5.handleOpenShareSheet(closure_128_0, null, intl.formatToPlainString(closure_129_0(closure_129_2[10]).t.PJf9P9, obj6), closure_129_6.ADD_FRIENDS_WIDGET);
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp7) {
       c3 = tmp;
@@ -181,7 +180,7 @@ let closure_15 = async function _handleLink(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -214,7 +213,7 @@ let closure_15 = async function _handleLink(arg0, value) {
         closure_128_0 = value;
         closure_129_0(closure_129_2[11]).handleCopy(closure_128_0, null, closure_129_6.ADD_FRIENDS_WIDGET);
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp15) {
       c3 = tmp;
@@ -223,11 +222,11 @@ let closure_15 = async function _handleLink(arg0, value) {
   }
 };
 const View = fn(17).View;
-const InstantInviteSources = fn(1078).InstantInviteSources;
+const InstantInviteSources = fn(1074).InstantInviteSources;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const sum = fn(13600).ICON_ACTION_BUTTON_SIZE + nativeDefault.space.PX_16;
-const createStyles = fn(4790);
+const sum = fn(13590).ICON_ACTION_BUTTON_SIZE + nativeDefault.space.PX_16;
+const createStyles = fn(4788);
 let obj = { container: { height: sum, paddingHorizontal: nativeDefault.space.PX_8, justifyContent: "space-between", flexDirection: "row", alignItems: "center" }, title: null, actions: null, actionIcon: null };
 let obj3 = { height: sum, paddingHorizontal: nativeDefault.space.PX_8, justifyContent: "space-between", flexDirection: "row", alignItems: "center" };
 obj.title = { flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.md, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 };
@@ -236,126 +235,11 @@ obj.actions = { paddingHorizontal: nativeDefault.space.PX_8, flexDirection: "row
 let obj5 = { paddingHorizontal: nativeDefault.space.PX_8, flexDirection: "row", justifyContent: "flex-end" };
 obj.actionIcon = { marginEnd: 0, marginStart: nativeDefault.space.PX_8 };
 let closure_9 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
 let obj6 = { marginEnd: 0, marginStart: nativeDefault.space.PX_8 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemAddFriendsWidget.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(19);
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
-      if (rootNavigationRef != null) {
-        const current = rootNavigationRef.current;
-        if (current != null) {
-          const obj2 = { screen: "add-friends", params: { sourcePage: "Add Friends Widget", presentation: "card" } };
-          current.navigate("friends", obj2);
-        }
-      }
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.afcl67);
-    cResult[1] = stringResult;
-    let tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: null };
-    const intl2 = tmp(1119).intl;
-    obj2.children = intl2.string(tmp(1119).t.afcl67);
-    const tmp10 = React5(tmp(4786).Text, obj2);
-    cResult[2] = tmp10;
-    let tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== tmp4.title) {
-    const obj3 = { accessibilityLabel: tmp6, accessibilityRole: "button", onPress: first, style: tmp4.title, children: tmp8 };
-    const tmp13 = React5(tmp(5373).PressableHighlight, obj3);
-    cResult[3] = tmp4.title;
-    cResult[4] = tmp13;
-    let tmp11 = tmp13;
-  } else {
-    tmp11 = cResult[4];
-  }
-  ({ actions, actionIcon } = tmp4);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1119).intl;
-    const stringResult1 = intl3.string(tmp(1119).t.Ej3B3Y);
-    cResult[5] = stringResult1;
-    let tmp14 = stringResult1;
-  } else {
-    tmp14 = cResult[5];
-  }
-  if (cResult[6] !== tmp4.actionIcon) {
-    const obj4 = { style: actionIcon, variant: "filled", source: _modDef14163, onPress: handleShare, accessibilityLabel: tmp14 };
-    const tmp21 = React5(IconActionButtonDefault, obj4);
-    cResult[6] = tmp4.actionIcon;
-    cResult[7] = tmp21;
-    let tmp16 = tmp21;
-  } else {
-    tmp16 = cResult[7];
-  }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1119).intl;
-    const stringResult2 = intl4.string(tmp(1119).t.WqhZss);
-    cResult[8] = stringResult2;
-    let tmp22 = stringResult2;
-  } else {
-    tmp22 = cResult[8];
-  }
-  if (cResult[9] !== tmp4.actionIcon) {
-    const obj5 = { style: tmp4.actionIcon, variant: "filled", source: _modDef16446, onPress: handleLink, accessibilityLabel: tmp22 };
-    const tmp29 = React5(IconActionButtonDefault, obj5);
-    cResult[9] = tmp4.actionIcon;
-    cResult[10] = tmp29;
-    let tmp24 = tmp29;
-  } else {
-    tmp24 = cResult[10];
-  }
-  if (cResult[11] === tmp4.actions) {
-    if (cResult[12] === tmp24) {
-      if (cResult[13] === tmp16) {
-        let tmp30 = cResult[14];
-      }
-      if (cResult[15] === tmp4.container) {
-        if (cResult[16] === tmp30) {
-          if (cResult[17] === tmp11) {
-            let tmp32 = cResult[18];
-          }
-          return tmp32;
-        }
-      }
-      const obj6 = { style: tmp4.container, collapsable: false, children: null };
-      const items = [tmp11, tmp30];
-      obj6.children = items;
-      const tmp35 = closure_1_8(View, obj6);
-      cResult[15] = tmp4.container;
-      cResult[16] = tmp30;
-      cResult[17] = tmp11;
-      cResult[18] = tmp35;
-      tmp32 = tmp35;
-    }
-  }
-  const obj7 = { style: actions, children: null };
-  const items1 = [tmp16, tmp24];
-  obj7.children = items1;
-  const tmp31 = closure_1_8(View, obj7);
-  cResult[11] = tmp4.actions;
-  cResult[12] = tmp24;
-  cResult[13] = tmp16;
-  cResult[14] = tmp31;
-  tmp30 = tmp31;
-}) : (() => {
+export default noop.memo(function MessagesItemAddFriendsWidget() {
   const tmp = closure_9();
   const obj = { style: tmp.container, collapsable: false, children: null };
   const callback = noop.useCallback(() => {
@@ -379,19 +263,19 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2.children = React5(Text_Text.Text, obj3);
   const items = [React5(Pressables.PressableHighlight, obj2), ];
   const obj4 = { style: tmp.actions, children: null };
-  const obj5 = { style: tmp.actionIcon, variant: "filled", source: _modDef14163, onPress: handleShare, accessibilityLabel: null };
+  const obj5 = { style: tmp.actionIcon, variant: "filled", source: _modDef14153, onPress: handleShare, accessibilityLabel: null };
   const intl3 = util.intl;
   obj5.accessibilityLabel = intl3.string(util.t.Ej3B3Y);
   const items1 = [React5(IconActionButtonDefault, obj5), ];
   const obj6 = { style: tmp.actionIcon, variant: "filled", source: null, onPress: null, accessibilityLabel: null };
-  obj6.source = _modDef16446;
+  obj6.source = _modDef16441;
   obj6.onPress = handleLink;
   const intl4 = util.intl;
   obj6.accessibilityLabel = intl4.string(util.t.WqhZss);
   items1[1] = React5(IconActionButtonDefault, obj6);
   obj4.children = items1;
-  items[1] = closure_1_8(View, obj4);
+  items[1] = React6(View, obj4);
   obj.children = items;
-  return closure_1_8(View, obj);
-}));
+  return React6(View, obj);
+});
 export const MESSAGES_ITEM_ADD_FRIENDS_WIDGET_HEIGHT = sum;

@@ -1,17 +1,16 @@
 // Module ID: 10868
 // Function ID: 10869
-// Dependencies: [41, 42, 93, 95, 98, 10858, 10766, 10767, 10771]
+// Dependencies: [41, 42, 93, 95, 98, 10728, 10857, 10731, 10859]
 
 // Module 10868
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10771 */;
-import _mod10858 from "module_10858" /* 10858 */;
+import _mod10859 from "module_10859" /* 10859 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const NLTimeUnitAgoFormatParser = require;
+const RURelativeDateFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,44 +30,80 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod10858.TIME_UNITS_PATTERN + ")(?:geleden|voor|eerder)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod10858.TIME_UNITS_PATTERN + ")geleden(?=(?:\\W|$))", "i");
-class NLTimeUnitAgoFormatParser {
-  constructor(arg0) {
+class RURelativeDateFormatParser {
+  constructor() {
     self = this;
-    tmp = c2(this, NLTimeUnitAgoFormatParser);
+    tmp = c2(this, RURelativeDateFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(NLTimeUnitAgoFormatParser);
+    obj = closure_4(RURelativeDateFormatParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = global;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(NLTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(RURelativeDateFormatParser, _mod10859.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(\u0432 \u043F\u0440\u043E\u0448\u043B\u043E\u043C|\u043D\u0430 \u043F\u0440\u043E\u0448\u043B\u043E\u0439|\u043D\u0430 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439|\u0432 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u043C|\u043D\u0430 \u044D\u0442\u043E\u0439|\u0432 \u044D\u0442\u043E\u043C)\\s*(" + RURelativeDateFormatParser(10728).matchAnyPattern(RURelativeDateFormatParser(10857).TIME_UNIT_DICTIONARY) + ")";
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = NLTimeUnitAgoFormatParser(10858).parseDuration(arg1[1]);
-      const ParsingComponents = NLTimeUnitAgoFormatParser(10767).ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, NLTimeUnitAgoFormatParser(10766).reverseDuration(NLTimeUnitAgoFormatParser(10858).parseDuration(arg1[1])));
+    value: function innerExtract(createParsingComponents, arg1) {
+      const formatted = arg1[1].toLowerCase();
+      const formatted1 = arg1[2].toLowerCase();
+      const str3 = RURelativeDateFormatParser(10857).TIME_UNIT_DICTIONARY[formatted1];
+      if ("\u043D\u0430 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439" != formatted) {
+        if ("\u0432 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u043C" != formatted) {
+          if ("\u0432 \u043F\u0440\u043E\u0448\u043B\u043E\u043C" != formatted) {
+            if ("\u043D\u0430 \u043F\u0440\u043E\u0448\u043B\u043E\u0439" != formatted) {
+              const parsingComponents = createParsingComponents.createParsingComponents();
+              const _Date = Date;
+              const instant = createParsingComponents.reference.instant;
+              const date = new Date(instant.getTime());
+              if (str3.match(/week/i)) {
+                date.setDate(date.getDate() - date.getDay());
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.imply("month", date.getMonth() + 1);
+                parsingComponents.imply("year", date.getFullYear());
+                const date1 = date.getDate();
+              } else if (str3.match(/month/i)) {
+                date.setDate(1);
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.assign("year", date.getFullYear());
+                parsingComponents.assign("month", date.getMonth() + 1);
+              } else if (str3.match(/year/i)) {
+                date.setDate(1);
+                date.setMonth(0);
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.imply("month", date.getMonth() + 1);
+                parsingComponents.assign("year", date.getFullYear());
+              }
+              return parsingComponents;
+            }
+          }
+          const obj = {};
+          obj[str3] = -1;
+          const ParsingComponents = tmp3(10731).ParsingComponents;
+          return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj);
+        }
+      }
+      const ParsingComponents2 = tmp3(10731).ParsingComponents;
+      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [str3]: 1 });
     }
   }
 ];
 
-export default _createClass(NLTimeUnitAgoFormatParser, items);
+export default _createClass(RURelativeDateFormatParser, items);

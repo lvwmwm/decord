@@ -1,10 +1,10 @@
-// Module ID: 11955
-// Function ID: 11956
+// Module ID: 12073
+// Function ID: 12074
 // Name: ApplyBuildOverrideUtils
-// Dependencies: [5, 502, 11956, 1275, 1365, 2]
+// Dependencies: [5, 502, 12074, 1271, 1361, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 11955 (ApplyBuildOverrideUtils)
+// Module 12073 (ApplyBuildOverrideUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -23,7 +23,7 @@ let closure_6 = async function _applyStaffBuildOverride(overrides) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -41,9 +41,9 @@ let closure_6 = async function _applyStaffBuildOverride(overrides) {
             closure_2 = tmp7;
             closure_130_0 = undefined;
             c5 = 1;
-            const HTTP = closure_2_0(1275).HTTP;
-            const request = { url: closure_2_0(1365).getAPIEndpoint(closure_2_5), body: null, headers: null, oldFormErrors: true, rejectWithError: false };
-            const obj4 = { overrides, version: closure_2_0(1365).APP_VERSION };
+            const HTTP = closure_2_0(1271).HTTP;
+            const request = { url: closure_2_0(1361).getAPIEndpoint(closure_2_5), body: null, headers: null, oldFormErrors: true, rejectWithError: false };
+            const obj4 = { overrides, version: closure_2_0(1361).APP_VERSION };
             request.body = obj4;
             token = token.getToken();
             Authorization = token;
@@ -119,7 +119,7 @@ let closure_7 = async function _applyPublicBuildOverride(payload) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -137,9 +137,9 @@ let closure_7 = async function _applyPublicBuildOverride(payload) {
             closure_1 = tmp7;
             closure_129_0 = undefined;
             c4 = 1;
-            const HTTP = closure_2_0(1275).HTTP;
-            const request = { url: closure_2_0(1365).getAPIEndpoint("/__development/link"), body: null, oldFormErrors: true, rejectWithError: false };
-            const obj4 = { payload, token: token.getToken(), version: closure_2_0(1365).APP_VERSION };
+            const HTTP = closure_2_0(1271).HTTP;
+            const request = { url: closure_2_0(1361).getAPIEndpoint("/__development/link"), body: null, oldFormErrors: true, rejectWithError: false };
+            const obj4 = { payload, token: token.getToken(), version: closure_2_0(1361).APP_VERSION };
             request.body = obj4;
             c5 = 2;
             c6 = 1;
@@ -195,8 +195,8 @@ let closure_7 = async function _applyPublicBuildOverride(payload) {
 };
 let closure_8 = async function _clearBuildOverride() {
   closure_1 = tmp2;
-  const HTTP = React(1275).HTTP;
-  closure_128_0 = await HTTP.del({ url: closure_2_0(1365).getAPIEndpoint(closure_2_5), oldFormErrors: true, rejectWithError: false });
+  const HTTP = React(1271).HTTP;
+  closure_128_0 = await HTTP.del({ url: closure_2_0(1361).getAPIEndpoint(closure_2_5), oldFormErrors: true, rejectWithError: false });
   await closure_129_2(closure_128_0);
   return closure_128_0;
 };
@@ -212,7 +212,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -240,7 +240,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
         return obj;
       } else {
         dependencyMap = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp8) {
       dependencyMap = tmp;
@@ -248,7 +248,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
     }
   }
 });
-const f107127 = function() {
+const f93724 = function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {
@@ -292,14 +292,14 @@ export const clearBuildOverride = function clearBuildOverride() {
   return applyArgumentsResult;
 };
 export const getPublicBuildOverrideLink = function getPublicBuildOverrideLink(body) {
-  const HTTP = closure_0(1275).HTTP;
-  const request = { url: closure_0(1365).getAPIEndpoint("/__development/create_build_override_link"), body, headers: null, oldFormErrors: true, rejectWithError: false };
+  const HTTP = closure_0(1271).HTTP;
+  const request = { url: closure_0(1361).getAPIEndpoint("/__development/create_build_override_link"), body, headers: null, oldFormErrors: true, rejectWithError: false };
   let str = AuthenticationStore.getToken();
   if (str == null) {
     str = "";
   }
   request.headers = { Authorization: str };
-  let obj2 = closure_0(1365);
+  let obj2 = closure_0(1361);
   return HTTP.post(request).then((body) => ({ url: body.body.url, error: false }), (status) => {
     if (400 === status.status) {
       const obj2 = { url: false, error: status.body };

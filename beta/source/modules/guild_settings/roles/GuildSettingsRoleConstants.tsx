@@ -1,17 +1,17 @@
-// Module ID: 18057
-// Function ID: 18058
+// Module ID: 18048
+// Function ID: 18049
 // Name: GuildSettingsRoleConstants
-// Dependencies: [18058, 1078, 18060, 1090, 4436, 579, 1119, 2]
+// Dependencies: [18049, 1074, 18051, 1086, 4432, 575, 1115, 2]
 
-// Module 18057 (GuildSettingsRoleConstants)
-import util from "util" /* 1119 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18058 */;
-import Constants from "Constants" /* 1078 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18060 */;
+// Module 18048 (GuildSettingsRoleConstants)
+import util from "util" /* 1115 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18049 */;
+import Constants from "Constants" /* 1074 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18051 */;
 import "BigFlagUtils";
-import BigFlagUtils_mod from "BigFlagUtils" /* 1090 */;
-import shims_mod from "shims" /* 579 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1086 */;
+import shims_mod from "shims" /* 575 */;
 import size from "module_2" /* 2 */;
 
 const RoleColorsStyle = GuildSettingsRolesStore.RoleColorsStyle;

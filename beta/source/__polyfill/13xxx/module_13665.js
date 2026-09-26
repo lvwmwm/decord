@@ -1,9 +1,9 @@
 // Module ID: 13665
 // Function ID: 13666
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 13665
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 411, height: 134, scales: [2, 3], hash: "a7a629f03005b09b581ccdee10e4a92d", name: "img_boost_subheader_resub_mobile", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 51, height: 36, scales: [2, 3], hash: "010602d585dcc3b10c042380413a7a26", name: "img_boost_error_mobile", type: "png" });

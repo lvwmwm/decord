@@ -1,15 +1,15 @@
-// Module ID: 5138
-// Function ID: 5139
+// Module ID: 5136
+// Function ID: 5137
 // Name: UploadAttachmentStore
-// Dependencies: [5139, 1078, 5142, 1119, 12, 5377, 5386, 504, 577, 2]
+// Dependencies: [5137, 1074, 5140, 1115, 12, 5375, 5384, 504, 573, 2]
 
-// Module 5138 (UploadAttachmentStore)
+// Module 5136 (UploadAttachmentStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import Constants from "Constants" /* 1078 */;
-import DraftStore from "DraftStore" /* 5139 */;
-import CloudUpload from "CloudUpload" /* 5377 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 5386 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import Constants from "Constants" /* 1074 */;
+import DraftStore from "DraftStore" /* 5137 */;
+import CloudUpload from "CloudUpload" /* 5375 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 5384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,15 +75,15 @@ prototype["getUploads"] = function getUploads(id, ChannelMessage) {
   }
   return value2;
 };
-prototype["getUploadCount"] = function getUploadCount(channelId, draftType) {
-  map = map.get(channelId);
+prototype["getUploadCount"] = function getUploadCount(c1, ChannelMessage) {
+  map = map.get(c1);
   if (map == null) {
     const _Map = Map;
     map = new Map();
   }
   value2 = undefined;
   if (map != null) {
-    value2 = map.get(draftType);
+    value2 = map.get(ChannelMessage);
   }
   if (value2 == null) {
     value2 = closure_6;
@@ -110,8 +110,8 @@ prototype["getUpload"] = function getUpload(channelId, id, ChannelMessage) {
   }
   return value2.find((id) => id.id === closure_0);
 };
-prototype["findUpload"] = function findUpload(channelId, ChannelMessage, cResult) {
-  map = map.get(channelId);
+prototype["findUpload"] = function findUpload(id, ChannelMessage, _messages) {
+  map = map.get(id);
   if (map == null) {
     const _Map = Map;
     map = new Map();
@@ -123,7 +123,7 @@ prototype["findUpload"] = function findUpload(channelId, ChannelMessage, cResult
   if (value2 == null) {
     value2 = closure_6;
   }
-  return value2.find(cResult);
+  return value2.find(_messages);
 };
 UploadAttachmentStore.displayName = "UploadAttachmentStore";
 const uploadAttachmentStore = new UploadAttachmentStore(DispatcherDefault, {
@@ -134,7 +134,7 @@ const uploadAttachmentStore = new UploadAttachmentStore(DispatcherDefault, {
       const _Map = Map;
       map = new Map();
     }
-    value3 = undefined;
+    let value3;
     if (map != null) {
       value3 = map.get(DraftType.ChannelMessage);
     }
@@ -160,7 +160,7 @@ const uploadAttachmentStore = new UploadAttachmentStore(DispatcherDefault, {
       const _Map = Map;
       map = new Map();
     }
-    value3 = undefined;
+    let value3;
     if (map != null) {
       value3 = map.get(draftType);
     }
@@ -201,7 +201,7 @@ const uploadAttachmentStore = new UploadAttachmentStore(DispatcherDefault, {
       const _Map = Map;
       map = new Map();
     }
-    value3 = undefined;
+    let value3;
     if (map != null) {
       value3 = map.get(draftType);
     }
@@ -241,7 +241,7 @@ const uploadAttachmentStore = new UploadAttachmentStore(DispatcherDefault, {
       const _Map = Map;
       map = new Map();
     }
-    value3 = undefined;
+    let value3;
     if (map != null) {
       value3 = map.get(draftType);
     }
@@ -270,7 +270,7 @@ const uploadAttachmentStore = new UploadAttachmentStore(DispatcherDefault, {
       const _Map = Map;
       map = new Map();
     }
-    value3 = undefined;
+    let value3;
     if (map != null) {
       value3 = map.get(draftType);
     }
@@ -322,7 +322,7 @@ const uploadAttachmentStore = new UploadAttachmentStore(DispatcherDefault, {
       const _Map = Map;
       map = new Map();
     }
-    value3 = undefined;
+    let value3;
     if (map != null) {
       value3 = map.get(draftType);
     }

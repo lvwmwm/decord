@@ -1,169 +1,35 @@
-// Module ID: 17009
-// Function ID: 17010
+// Module ID: 16999
+// Function ID: 17000
 // Name: useVibegrationsConnectActions
-// Dependencies: [5, 32, 19, 13400, 558, 568, 13407, 8678, 1119, 3714, 2]
+// Dependencies: [5, 32, 19, 13390, 13397, 8673, 1115, 3710, 2]
+// Exports: useVibegrationsConnectActions
 
-// Module 17009 (useVibegrationsConnectActions)
-import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13407 */;
+// Module 16999 (useVibegrationsConnectActions)
+import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13397 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
 require = fn;
-let closure_6 = fn(13400).requestExternalAuthorizeUrl;
+let closure_6 = fn(13390).requestExternalAuthorizeUrl;
 const set = new Set();
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsConnectActions.tsx");
 
-export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  closure_1 = arg1;
-  const cResult = require("c").c(7);
-  let obj = require("c");
-  [tmp3, dependencyMap] = first(noop.useState(set), 2);
-  noop.useRef(set);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function p(arg0) {
-      ref.current = vibegrationsExternalConnections.endExternalAuthorization(ref.current, arg0);
-      dependencyMap(ref.current);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    if (cResult[2] === arg0) {
-      let tmp5 = cResult[3];
-    }
-    if (cResult[4] === tmp5) {
-      if (cResult[5] === tmp3) {
-        let tmp6 = cResult[6];
-      }
-      return tmp6;
-    }
-    let obj2 = { pending: tmp3, connect: tmp5 };
-    cResult[4] = tmp5;
-    cResult[5] = tmp3;
-    cResult[6] = obj2;
-    tmp6 = obj2;
-  }
-  const fn2 = function z(type) {
-    if (null != type) {
-      const result = type(13407).beginExternalAuthorization(ref.current, type.type);
-      if (null != result) {
-        tmp7.current = result;
-        dependencyMap(result);
-        type = ref(function*(arg0, value) {
-          if (c3 === 2) {
-            c3 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp4 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c3 = 2;
-              if (0 === c2) {
-                if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  closure_128_0 = undefined;
-                  c2 = 1;
-                  c3 = 1;
-                  const obj5 = { value: closure_3_6(tmp2, tmp2.type), done: false };
-                  return obj5;
-                }
-              } else if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj6 = { value, done: true };
-                return obj6;
-              } else {
-                closure_128_0 = value;
-                first(tmp2.type);
-                if ("url" === closure_128_0.type) {
-                  const obj7 = { href: closure_128_0.url, trusted: false };
-                  tmp2(8678).handleClick(obj7);
-                  c3 = 3;
-                  const obj = tmp2(8678);
-                }
-                if ("setup" === obj3.externalAuthErrorCopy(closure_128_0.error)) {
-                  const intl2 = tmp2(1119).intl;
-                  let stringResult = intl2.string(tmp5(3714).avu1u4);
-                } else {
-                  const intl = tmp2(1119).intl;
-                  stringResult = intl.string(tmp5(3714)["5fwOcF"]);
-                }
-                closure_2_1(stringResult);
-                obj3 = tmp2(13407);
-              }
-            } catch (tmp33) {
-              c3 = tmp;
-              throw tmp33;
-            }
-          }
-        });
-        (function startAuthorization() {
-          const self = this;
-          const apply = closure_0.apply;
-          if (typeof apply === "unknown") {
-            let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-          } else {
-            applyArgumentsResult = apply(self, arguments);
-          }
-          return applyArgumentsResult;
-        })().catch(() => first(type.type));
-        const promise = (function startAuthorization() {
-          const self = this;
-          const apply = closure_0.apply;
-          if (typeof apply === "unknown") {
-            let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-          } else {
-            applyArgumentsResult = apply(self, arguments);
-          }
-          return applyArgumentsResult;
-        })();
-      }
-      let obj = type(13407);
-      tmp7 = ref;
-    }
-  };
-  cResult[1] = arg1;
-  cResult[2] = arg0;
-  cResult[3] = fn2;
-  tmp5 = fn2;
-}) : ((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
+export const useVibegrationsConnectActions = function useVibegrationsConnectActions(projectId, presentError) {
   [tmp2, dependencyMap] = callback(noop.useState(set), 2);
   noop.useRef(set);
   callback = noop.useCallback((arg0) => {
     ref.current = vibegrationsExternalConnections.endExternalAuthorization(ref.current, arg0);
     dependencyMap(ref.current);
   }, []);
-  const items = [arg1, arg0, callback];
+  const items = [presentError, projectId, callback];
   const tmp = callback(noop.useState(set), 2);
   return {
     pending: tmp2,
     connect: noop.useCallback((type) => {
-      closure_1 = async function _startAuthorization2(arg0, value) {
+      projectId = type;
+      closure_1 = async function _startAuthorization(arg0, value) {
         if (c3 === 2) {
           c3 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
@@ -174,7 +40,7 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -208,19 +74,19 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
               callback(closure_129_0.type);
               if ("url" === closure_128_0.type) {
                 const obj7 = { href: closure_128_0.url, trusted: false };
-                type(8678).handleClick(obj7);
+                type(8673).handleClick(obj7);
                 c3 = 3;
-                const obj = type(8678);
+                const obj = type(8673);
               }
               if ("setup" === obj3.externalAuthErrorCopy(closure_128_0.error)) {
-                const intl2 = type(1119).intl;
-                let stringResult = intl2.string(closure_2_1(3714).avu1u4);
+                const intl2 = type(1115).intl;
+                let stringResult = intl2.string(presentError(3710).avu1u4);
               } else {
-                const intl = type(1119).intl;
-                stringResult = intl.string(closure_2_1(3714)["5fwOcF"]);
+                const intl = type(1115).intl;
+                stringResult = intl.string(presentError(3710)["5fwOcF"]);
               }
               closure_1(stringResult);
-              obj3 = type(13407);
+              obj3 = type(13397);
             }
           } catch (tmp33) {
             c3 = tmp;
@@ -228,8 +94,8 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
           }
         }
       };
-      if (null != type) {
-        const result = type(13407).beginExternalAuthorization(ref.current, type.type);
+      if (null != projectId) {
+        const result = projectId(13397).beginExternalAuthorization(ref.current, type.type);
         if (null != result) {
           tmp3.current = result;
           dependencyMap(result);
@@ -254,9 +120,9 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
             return applyArgumentsResult;
           })();
         }
-        let obj = type(13407);
+        let obj = projectId(13397);
         tmp3 = ref;
       }
     }, items)
   };
-});
+};

@@ -1,111 +1,45 @@
-// Module ID: 10316
-// Function ID: 10317
+// Module ID: 10319
+// Function ID: 10320
 // Name: SingleScreenshare
-// Dependencies: [19, 9668, 21, 4790, 580, 558, 568, 5235, 4991, 10317, 2]
+// Dependencies: [19, 9672, 21, 4788, 576, 5235, 10320, 4989, 2]
+// Exports: default
 
-// Module 10316 (SingleScreenshare)
-import nativeDefault from "native" /* 580 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
-import useMountEffectDefault from "useMountEffect" /* 5235 */;
-import ScreenshareParticipantDefault from "ScreenshareParticipant" /* 10317 */;
+// Module 10319 (SingleScreenshare)
+import nativeDefault from "native" /* 576 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
 import noop from "module_19" /* 19 */;
 
-const require = fn;
-const ChannelCallStore = fn(9668);
-({ resetFocus: c3, toggleFocus: closure_4 } = ChannelCallStore);
+const ChannelCallStore = fn(9672);
+({ resetFocus: c2, toggleFocus: c3 } = ChannelCallStore);
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let obj2 = { stageStreamContainer: { backgroundColor: nativeDefault.colors.BLACK } };
-let closure_6 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-const obj3 = { backgroundColor: nativeDefault.colors.BLACK };
+const createStyles = fn(4788);
+const obj2 = { stageStreamContainer: { backgroundColor: nativeDefault.colors.BLACK } };
+let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = channel(568).c(11);
-  ({ participant, channel } = arg0);
-  const tmp3 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
-      closure_1_3();
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  useMountEffectDefault(first);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function u() {
-      closure_1_4();
-    };
-    cResult[1] = fn2;
-    let tmp7 = fn2;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== channel.id) {
-    const fn3 = function _() {
-      React3();
-      const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
-    };
-    cResult[2] = channel.id;
-    cResult[3] = fn3;
-    let tmp8 = fn3;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] === channel) {
-    if (cResult[5] === tmp3) {
-      let tmp9 = cResult[6];
-    }
-    if (cResult[7] === tmp8) {
-      if (cResult[8] === participant) {
-        if (cResult[9] === tmp9) {
-          let tmp11 = cResult[10];
-        }
-        return tmp11;
-      }
-    }
-    const obj2 = { participant, onSingleTap: tmp7, onDoubleTap: tmp8, containerStyle: tmp9 };
-    const tmp13 = jsx(ScreenshareParticipantDefault, { participant, onSingleTap: tmp7, onDoubleTap: tmp8, containerStyle: tmp9 });
-    cResult[7] = tmp8;
-    cResult[8] = participant;
-    cResult[9] = tmp9;
-    cResult[10] = tmp13;
-    tmp11 = tmp13;
-  }
-  let stageStreamContainer;
-  if (channel.isGuildStageVoice()) {
-    stageStreamContainer = tmp3.stageStreamContainer;
-  }
-  cResult[4] = channel;
-  cResult[5] = tmp3;
-  cResult[6] = stageStreamContainer;
-  tmp9 = stageStreamContainer;
-}) : ((channel) => {
+export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  useMountEffectDefault(() => {
-    closure_1_3();
+  channel(5235)(() => {
+    closure_1_2();
   });
   const obj = {
     participant: channel.participant,
     onSingleTap() {
-      closure_1_4();
+      closure_1_3();
     },
     onDoubleTap() {
-      React3();
+      React2();
       const participant = ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
     },
     containerStyle: null
   };
-  const tmp = closure_6();
+  const tmp = closure_5();
   const tmp3 = jsx;
   let stageStreamContainer;
   if (channel.isGuildStageVoice()) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj.containerStyle = stageStreamContainer;
-  return tmp3(ScreenshareParticipantDefault, obj);
-});
+  return tmp3(channel(10320), obj);
+};

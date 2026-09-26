@@ -1,21 +1,21 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 14858
+// Function ID: 14859
 // Name: SessionAdManager
-// Dependencies: [502, 1078, 1986, 7741, 2040, 577, 1095, 1235, 7994, 1245, 2]
+// Dependencies: [502, 1074, 1982, 7736, 2036, 573, 1091, 1231, 7989, 1241, 2]
 
-// Module 14868 (SessionAdManager)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import Timers from "Timers" /* 2040 */;
-import SessionForegroundUtils from "SessionForegroundUtils" /* 7741 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7994 */;
+// Module 14858 (SessionAdManager)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import Timers from "Timers" /* 2036 */;
+import SessionForegroundUtils from "SessionForegroundUtils" /* 7736 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7989 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import LifecycleManager from "LifecycleManager" /* 1986 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_4, AppStates: hasOwnProperty } = Constants);
 const ad = "ad";
 let token = AuthenticationStore.getToken();

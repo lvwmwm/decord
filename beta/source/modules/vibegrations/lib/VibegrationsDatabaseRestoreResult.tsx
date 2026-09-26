@@ -1,10 +1,10 @@
-// Module ID: 13406
-// Function ID: 13407
+// Module ID: 13396
+// Function ID: 13397
 // Name: databaseRestoreResultFromStatus
 // Dependencies: [2]
 // Exports: databaseRestoreResultFromStatus
 
-// Module 13406 (databaseRestoreResultFromStatus)
+// Module 13396 (databaseRestoreResultFromStatus)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDatabaseRestoreResult.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 2026
-// Function ID: 2027
+// Module ID: 2022
+// Function ID: 2023
 // Name: StickersConstants
 // Dependencies: [2]
 
-// Module 2026 (StickersConstants)
+// Module 2022 (StickersConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stickers/StickersConstants.tsx");

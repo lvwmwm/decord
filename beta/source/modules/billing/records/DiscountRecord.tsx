@@ -1,12 +1,12 @@
-// Module ID: 7730
-// Function ID: 7731
+// Module ID: 7725
+// Function ID: 7726
 // Name: DiscountRecord
-// Dependencies: [1391, 1378, 2]
+// Dependencies: [1387, 1374, 2]
 
-// Module 7730 (DiscountRecord)
-import Record from "Record" /* 1391 */;
+// Module 7725 (DiscountRecord)
+import Record from "Record" /* 1387 */;
 
-const PremiumConstants = fn(1378);
+const PremiumConstants = fn(1374);
 ({ SubscriptionIntervalTypes, DiscountUserUsageLimitIntervalTypes } = PremiumConstants);
 let closure_0 = { [DiscountUserUsageLimitIntervalTypes.DAY]: SubscriptionIntervalTypes.DAY, [DiscountUserUsageLimitIntervalTypes.WEEK]: SubscriptionIntervalTypes.DAY, [DiscountUserUsageLimitIntervalTypes.MONTH]: SubscriptionIntervalTypes.MONTH, [DiscountUserUsageLimitIntervalTypes.YEAR]: SubscriptionIntervalTypes.YEAR };
 let DiscountRecord;

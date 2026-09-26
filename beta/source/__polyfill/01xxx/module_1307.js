@@ -4,4 +4,4 @@
 
 // Module 1307
 
-export default SyntaxError;
+export default Math.floor;

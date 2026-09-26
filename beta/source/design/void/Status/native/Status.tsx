@@ -1,20 +1,14 @@
-// Module ID: 14415
-// Function ID: 14416
+// Module ID: 14405
+// Function ID: 14406
 // Name: Status
-// Dependencies: [32, 19, 17, 1182, 1078, 13361, 21, 4790, 14413, 580, 14416, 14417, 14418, 14419, 14420, 14421, 14422, 558, 568, 14414, 14423, 4529, 5219, 14400, 2]
+// Dependencies: [32, 19, 17, 1178, 1074, 13351, 21, 4788, 14403, 576, 14406, 14407, 14408, 14409, 14410, 14411, 14412, 14404, 14413, 4524, 5217, 14390, 2]
+// Exports: StatusWithTyping, default
 
-// Module 14415 (Status)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5219 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 14413 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14414 */;
-import _modDef14417 from "module_14417" /* 14417 */;
-import _modDef14418 from "module_14418" /* 14418 */;
-import _modDef14419 from "module_14419" /* 14419 */;
-import _modDef14420 from "module_14420" /* 14420 */;
-import _modDef14421 from "module_14421" /* 14421 */;
-import _modDef14422 from "module_14422" /* 14422 */;
+// Module 14405 (Status)
+import nativeDefault from "native" /* 576 */;
+import spring from "spring" /* 5217 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 14403 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14404 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -23,17 +17,17 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const STATUS_PADDING = fn(1182).STATUS_PADDING;
-const StatusTypes = fn(1078).StatusTypes;
-const ChannelAnimationConstants = fn(13361);
+const STATUS_PADDING = fn(1178).STATUS_PADDING;
+const StatusTypes = fn(1074).StatusTypes;
+const ChannelAnimationConstants = fn(13351);
 ({ TYPING_ENTERING: closure_8, TYPING_EXITING: closure_9, CHANNEL_SPRING_CONFIG: c10 } = ChannelAnimationConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let createStyles = fn(4790);
+let createStyles = fn(4788);
 let closure_13 = createStyles.createStyles({ statusIcon: { width: "100%", height: "100%" } });
-createStyles = fn(4790);
-let closure_14 = createStyles.createStyles((statusSizeOverride, arg1) => {
-  const statusTypingDimensions = Status_StatusUtils.getStatusTypingDimensions(statusSizeOverride);
+createStyles = fn(4788);
+let closure_14 = createStyles.createStyles((items, arg1) => {
+  const statusTypingDimensions = Status_StatusUtils.getStatusTypingDimensions(items);
   ({ height, dotSize } = statusTypingDimensions);
   if (StatusTypes.ONLINE === arg1) {
     let PRIMARY_400 = nativeDefault.unsafe_rawColors.GREEN_360;
@@ -57,101 +51,16 @@ let closure_14 = createStyles.createStyles((statusSizeOverride, arg1) => {
     tmp5 = importDefault;
   }
   const obj2 = { ellipsis: { backgroundColor: PRIMARY_400, borderRadius: height, height, width: statusTypingDimensions.width, paddingStart: 4, paddingEnd: 2, marginRight: 0 }, ellipsisDot: null };
-  const size = { width: dotSize, height: dotSize, backgroundColor: tmp5(580).colors.WHITE };
+  const size = { width: dotSize, height: dotSize, backgroundColor: tmp5(576).colors.WHITE };
   obj2.ellipsisDot = size;
   return obj2;
 });
-fn(558);
-const __initData = { code: "function StatusTsx1(){const{enableAnimation,withSpring,width,CHANNEL_SPRING_CONFIG,height,onAnimationFinished,borderRadius,translateX}=this.__closure;const shouldAnimate=enableAnimation.get()?\"respect-motion-settings\":\"animate-never\";return{width:withSpring(width,CHANNEL_SPRING_CONFIG,shouldAnimate),height:withSpring(height,CHANNEL_SPRING_CONFIG,shouldAnimate,onAnimationFinished),borderRadius:withSpring(borderRadius,CHANNEL_SPRING_CONFIG,shouldAnimate),transform:[{translateX:withSpring(translateX,CHANNEL_SPRING_CONFIG,shouldAnimate)}]};}" };
+const __initData = { code: "function StatusTsx1(){const{enableAnimation,withSpring,width,CHANNEL_SPRING_CONFIG,height,onAnimationFinished,borderRadius,translateX}=this.__closure;const shouldAnimate=enableAnimation.get()?'respect-motion-settings':'animate-never';return{width:withSpring(width,CHANNEL_SPRING_CONFIG,shouldAnimate),height:withSpring(height,CHANNEL_SPRING_CONFIG,shouldAnimate,onAnimationFinished),borderRadius:withSpring(borderRadius,CHANNEL_SPRING_CONFIG,shouldAnimate),transform:[{translateX:withSpring(translateX,CHANNEL_SPRING_CONFIG,shouldAnimate)}]};}" };
 const __initData2 = { code: "function StatusTsx2(){const{withSpring,statusOpacity,CHANNEL_SPRING_CONFIG}=this.__closure;return{opacity:withSpring(statusOpacity,CHANNEL_SPRING_CONFIG)};}" };
-const __initData3 = { code: "function StatusTsx3(){const{enableAnimation,withSpring,width,CHANNEL_SPRING_CONFIG,height,onAnimationFinished,borderRadius,translateX}=this.__closure;const shouldAnimate=enableAnimation.get()?'respect-motion-settings':'animate-never';return{width:withSpring(width,CHANNEL_SPRING_CONFIG,shouldAnimate),height:withSpring(height,CHANNEL_SPRING_CONFIG,shouldAnimate,onAnimationFinished),borderRadius:withSpring(borderRadius,CHANNEL_SPRING_CONFIG,shouldAnimate),transform:[{translateX:withSpring(translateX,CHANNEL_SPRING_CONFIG,shouldAnimate)}]};}" };
-const __initData4 = { code: "function StatusTsx4(){const{withSpring,statusOpacity,CHANNEL_SPRING_CONFIG}=this.__closure;return{opacity:withSpring(statusOpacity,CHANNEL_SPRING_CONFIG)};}" };
-const ReactCompilerGating = fn(558);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let tmp = dependencyMap;
-  const cResult = c.c(18);
-  ({ isMobileOnline, isVROnline, style, status, size, streaming } = arg0);
-  const tmp6 = closure_13();
-  if (cResult[0] === (undefined !== isMobileOnline && isMobileOnline)) {
-    if (cResult[1] === tmp4) {
-      if (cResult[2] === size) {
-        let tmp7 = cResult[3];
-      }
-      if (cResult[4] === style) {
-        if (cResult[5] === tmp7) {
-          let tmp9 = cResult[6];
-        }
-        if (cResult[7] === tmp3) {
-          if (cResult[8] === tmp4) {
-            if (cResult[9] === status) {
-              if (cResult[10] === tmp5) {
-                if (cResult[12] === tmp6.statusIcon) {
-                  if (cResult[13] === tmp11) {
-                    let tmp22 = cResult[14];
-                  }
-                  if (cResult[15] === tmp9) {
-                    if (cResult[16] === tmp22) {
-                      let tmp26 = cResult[17];
-                    }
-                    return tmp26;
-                  }
-                  const obj2 = { style: tmp9, children: tmp22 };
-                  const tmp29 = closure_1_11(hasOwnProperty, obj2);
-                  cResult[15] = tmp9;
-                  cResult[16] = tmp22;
-                  cResult[17] = tmp29;
-                  tmp26 = tmp29;
-                }
-                const obj3 = { style: tmp10, source: cResult[11], resizeMode: "stretch" };
-                const tmp25 = closure_1_11(React4, obj3);
-                cResult[12] = tmp6.statusIcon;
-                cResult[13] = cResult[11];
-                cResult[14] = tmp25;
-                tmp22 = tmp25;
-              }
-            }
-          }
-        }
-        if (tmp5) {
-          tmp = 14416;
-          let tmp14 = importDefault(tmp);
-        } else if (tmp4) {
-          tmp14 = _modDef14417;
-        } else if (tmp3) {
-          tmp14 = _modDef14418;
-        } else if (StatusTypes.IDLE === status) {
-          tmp14 = _modDef14419;
-        } else {
-          if (tmp12.DND === status) {
-            tmp14 = _modDef14420;
-          } else if (tmp12.OFFLINE !== status) {
-            if (tmp12.INVISIBLE !== status) {
-              const ONLINE = tmp12.ONLINE;
-              tmp14 = _modDef14422;
-            }
-          }
-          tmp14 = _modDef14421;
-        }
-        cResult[7] = tmp3;
-        cResult[8] = tmp4;
-        cResult[9] = status;
-        cResult[10] = tmp5;
-        cResult[11] = tmp14;
-      }
-      const items = [tmp7, style];
-      cResult[4] = style;
-      cResult[5] = tmp7;
-      cResult[6] = items;
-      tmp9 = items;
-    }
-  }
-  const tmp8 = getStatusContainerStyleDefault(size, undefined !== isMobileOnline && isMobileOnline, undefined !== isVROnline && isVROnline);
-  cResult[0] = undefined !== isMobileOnline && isMobileOnline;
-  cResult[1] = undefined !== isVROnline && isVROnline;
-  cResult[2] = size;
-  cResult[3] = tmp8;
-  tmp7 = tmp8;
-}) : ((isMobileOnline) => {
+let size = fn(2);
+const result = size.fileFinishedImporting("design/void/Status/native/Status.tsx");
+
+export default function Status(isMobileOnline) {
   let flag = isMobileOnline.isMobileOnline;
   if (flag === undefined) {
     flag = false;
@@ -169,215 +78,42 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.style = items;
   const obj2 = { style: closure_13().statusIcon, source: null, resizeMode: "stretch" };
   if (streaming) {
-    let tmp4Result = tmp4(14416);
+    let tmp4Result = tmp4(14406);
   } else if (flag2) {
-    tmp4Result = tmp4(14417);
+    tmp4Result = tmp4(14407);
   } else if (flag) {
-    tmp4Result = tmp4(14418);
+    tmp4Result = tmp4(14408);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(14419);
+    tmp4Result = tmp4(14409);
   } else if (tmp7.DND === status) {
-    tmp4Result = tmp4(14420);
+    tmp4Result = tmp4(14410);
   } else {
     if (tmp7.OFFLINE !== status) {
       if (tmp7.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(14422);
+        tmp4Result = tmp4(14412);
       }
     }
-    tmp4Result = tmp4(14421);
+    tmp4Result = tmp4(14411);
   }
   obj2.source = tmp4Result;
   obj.children = closure_1_11(React4, obj2);
   return closure_1_11(hasOwnProperty, obj);
-});
-let size = fn(2);
-const result = size.fileFinishedImporting("design/void/Status/native/Status.tsx");
-
-export default tmp6;
-export const StatusWithTyping = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = enableAnimation(width[18]).c(22);
-  ({ isMobileOnline, isVROnline, style, status, size, streaming, typing, userId } = arg0);
-  const tmp7 = closure_13();
-  const tmp8 = closure_14(size, status);
-  const size2 = require("getStatusContainerStyle")(size, tmp4, tmp5);
-  let obj = enableAnimation(width[18]);
-  if (userId == null) {
-    userId = "";
-  }
-  const tmp10 = height(enableAnimation(width[20]).useFlashListAnimationDisabler(userId), 2);
-  enableAnimation = tmp10[0];
-  importDefault = tmp12;
-  if (typing) {
-    width = tmp8.ellipsis.width + 2 * num2;
-  } else {
-    width = size2.width;
-  }
-  if (typing) {
-    height = tmp8.ellipsis.height + 2 * num2;
-  } else {
-    height = size2.height;
-  }
-  const tmp15 = typing ? width / 2 : size2.borderRadius;
-  closure_4 = tmp15;
-  let num = 0;
-  if (typing) {
-    num = tmp(tmp2[8]).getAnimatedTypingTranslateX(size2.width);
-    const tmpResult4 = tmp(tmp2[8]);
-  }
-  const tmpResult = enableAnimation(width[20]);
-  const fn = function o() {
-    let str = "animate-never";
-    if (first.get()) {
-      str = "respect-motion-settings";
-    }
-    const size = { width: spring.withSpring(width, CHANNEL_SPRING_CONFIG, str), height: null, borderRadius: null, transform: null };
-    size.height = spring.withSpring(height, CHANNEL_SPRING_CONFIG, str, closure_1);
-    size.borderRadius = spring.withSpring(closure_4, CHANNEL_SPRING_CONFIG, str);
-    const obj = { translateX: null };
-    obj.translateX = spring.withSpring(num, CHANNEL_SPRING_CONFIG, str);
-    const items = [obj];
-    size.transform = items;
-    return size;
-  };
-  const size1 = { enableAnimation, withSpring: tmp(tmp2[22]).withSpring, width, CHANNEL_SPRING_CONFIG, height, onAnimationFinished: tmp12, borderRadius: tmp15, translateX: num };
-  fn.__closure = size1;
-  fn.__workletHash = 2297404611197;
-  fn.__initData = __initData;
-  const animatedStyle = enableAnimation(width[21]).useAnimatedStyle(fn);
-  num2 = 1;
-  if (typing) {
-    num2 = 0;
-  }
-  const tmp16 = CHANNEL_SPRING_CONFIG;
-  const tmpResult5 = enableAnimation(width[21]);
-  const fn2 = function u() {
-    const obj = { opacity: spring.withSpring(num2, CHANNEL_SPRING_CONFIG) };
-    return obj;
-  };
-  const tmpResult6 = enableAnimation(width[21]);
-  fn2.__closure = { withSpring: enableAnimation(width[22]).withSpring, statusOpacity: num2, CHANNEL_SPRING_CONFIG: tmp16 };
-  fn2.__workletHash = 7224613224414;
-  fn2.__initData = __initData2;
-  const animatedStyle1 = tmpResult6.useAnimatedStyle(fn2);
-  if (cResult[0] === animatedStyle) {
-    if (cResult[1] === size2) {
-      if (cResult[2] === style) {
-        let tmp19 = cResult[3];
-      }
-      if (cResult[4] === typing) {
-        if (cResult[5] === tmp8) {
-          let tmp20 = cResult[6];
-        }
-        if (cResult[7] === tmp4) {
-          if (cResult[8] === tmp5) {
-            if (cResult[9] === status) {
-              if (cResult[10] === tmp6) {
-                if (cResult[12] === tmp7.statusIcon) {
-                  if (cResult[13] === tmp27) {
-                    let tmp31 = cResult[14];
-                  }
-                  if (cResult[15] === animatedStyle1) {
-                    if (cResult[16] === tmp31) {
-                      let tmp35 = cResult[17];
-                    }
-                    if (cResult[18] === tmp19) {
-                      if (cResult[19] === tmp20) {
-                        if (cResult[20] === tmp35) {
-                          let tmp38 = cResult[21];
-                        }
-                        return tmp38;
-                      }
-                    }
-                    let obj3 = { style: tmp19, collapsable: false, children: null };
-                    let items = [tmp20, tmp35];
-                    obj3.children = items;
-                    const tmp40 = closure_12(tmp9(tmp2[21]).View, obj3);
-                    cResult[18] = tmp19;
-                    cResult[19] = tmp20;
-                    cResult[20] = tmp35;
-                    cResult[21] = tmp40;
-                    tmp38 = tmp40;
-                  }
-                  let obj4 = { style: animatedStyle1, children: tmp31 };
-                  const tmp37 = closure_11(tmp9(tmp2[21]).View, obj4);
-                  cResult[15] = animatedStyle1;
-                  cResult[16] = tmp31;
-                  cResult[17] = tmp37;
-                  tmp35 = tmp37;
-                }
-                const obj5 = { style: tmp26, source: cResult[11], resizeMode: "stretch" };
-                const tmp34 = closure_11(closure_4, obj5);
-                cResult[12] = tmp7.statusIcon;
-                cResult[13] = cResult[11];
-                cResult[14] = tmp34;
-                tmp31 = tmp34;
-              }
-            }
-          }
-        }
-        if (tmp6) {
-          let tmp9Result = tmp9(tmp2[10]);
-        } else if (tmp5) {
-          tmp9Result = tmp9(tmp2[11]);
-        } else if (tmp4) {
-          tmp9Result = tmp9(tmp2[12]);
-        } else if (StatusTypes.IDLE === status) {
-          tmp9Result = tmp9(tmp2[13]);
-        } else {
-          if (tmp28.DND === status) {
-            tmp9Result = tmp9(tmp2[14]);
-          } else if (tmp28.OFFLINE !== status) {
-            if (tmp28.INVISIBLE !== status) {
-              const ONLINE = tmp28.ONLINE;
-              tmp9Result = tmp9(tmp2[16]);
-            }
-          }
-          tmp9Result = tmp9(tmp2[15]);
-        }
-        cResult[7] = tmp4;
-        cResult[8] = tmp5;
-        cResult[9] = status;
-        cResult[10] = tmp6;
-        cResult[11] = tmp9Result;
-      }
-      let tmp21 = typing;
-      if (typing) {
-        const obj6 = { collapsable: false, entering, exiting, style: null, children: null };
-        const rect = { position: "absolute", left: num2, top: num2 };
-        const items1 = [rect];
-        obj6.style = items1;
-        ({ ellipsis: obj10.style, ellipsisDot: obj10.dotStyle } = tmp8);
-        obj6.children = closure_11(tmp9(tmp2[23]), { style: null, dotStyle: null, disableScale: true });
-        tmp21 = closure_11(tmp9(tmp2[21]).View, obj6);
-        const obj7 = { style: null, dotStyle: null, disableScale: true };
-      }
-      cResult[4] = typing;
-      cResult[5] = tmp8;
-      cResult[6] = tmp21;
-      tmp20 = tmp21;
-    }
-  }
-  const items2 = [size2, animatedStyle, style];
-  cResult[0] = animatedStyle;
-  cResult[1] = size2;
-  cResult[2] = style;
-  cResult[3] = items2;
-  tmp19 = items2;
-}) : ((isMobileOnline) => {
-  let flag = isMobileOnline.isMobileOnline;
+};
+export const StatusWithTyping = function StatusWithTyping(status) {
+  let flag = status.isMobileOnline;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = isMobileOnline.isVROnline;
+  let flag2 = status.isVROnline;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  ({ status, size, streaming, style } = isMobileOnline);
+  ({ status, size, streaming, style } = status);
   if (streaming === undefined) {
     streaming = false;
   }
-  ({ typing, userId } = isMobileOnline);
+  ({ typing, userId } = status);
   let enableAnimation;
   importDefault = undefined;
   let width;
@@ -391,7 +127,7 @@ export const StatusWithTyping = ReactCompilerGating.isReactCompilerEnabled() ? (
   if (userId == null) {
     userId = "";
   }
-  const tmp6 = height(enableAnimation(width[20]).useFlashListAnimationDisabler(userId), 2);
+  const tmp6 = height(enableAnimation(width[18]).useFlashListAnimationDisabler(userId), 2);
   enableAnimation = tmp6[0];
   importDefault = tmp8;
   if (typing) {
@@ -411,22 +147,22 @@ export const StatusWithTyping = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = tmp5(tmp4[8]).getAnimatedTypingTranslateX(size2.width);
     const tmp5Result = tmp5(tmp4[8]);
   }
-  let obj = enableAnimation(width[20]);
-  class E {
+  let obj = enableAnimation(width[18]);
+  class O {
     constructor() {
       str = "animate-never";
       if (closure_0.get()) {
         str = "respect-motion-settings";
       }
       size = { width: null, height: null, borderRadius: null, transform: null };
-      obj2 = closure_0(closure_2[22]);
+      obj2 = closure_0(closure_2[20]);
       size.width = obj2.withSpring(width, CHANNEL_SPRING_CONFIG, str);
-      obj3 = closure_0(closure_2[22]);
+      obj3 = closure_0(closure_2[20]);
       size.height = obj3.withSpring(height, CHANNEL_SPRING_CONFIG, str, closure_1);
-      obj4 = closure_0(closure_2[22]);
+      obj4 = closure_0(closure_2[20]);
       size.borderRadius = obj4.withSpring(borderRadius, CHANNEL_SPRING_CONFIG, str);
       obj1 = { translateX: null };
-      obj6 = closure_0(closure_2[22]);
+      obj6 = closure_0(closure_2[20]);
       obj1.translateX = obj6.withSpring(closure_5, CHANNEL_SPRING_CONFIG, str);
       items = [];
       items[0] = obj1;
@@ -434,25 +170,25 @@ export const StatusWithTyping = ReactCompilerGating.isReactCompilerEnabled() ? (
       return size;
     }
   }
-  const size1 = { enableAnimation, withSpring: tmp5(tmp4[22]).withSpring, width, CHANNEL_SPRING_CONFIG, height, onAnimationFinished: tmp8, borderRadius: tmp11, translateX: num };
-  E.__closure = size1;
-  E.__workletHash = 3069006846527;
-  E.__initData = __initData3;
+  const size1 = { enableAnimation, withSpring: tmp5(tmp4[20]).withSpring, width, CHANNEL_SPRING_CONFIG, height, onAnimationFinished: tmp8, borderRadius: tmp11, translateX: num };
+  O.__closure = size1;
+  O.__workletHash = 2188820017597;
+  O.__initData = __initData;
   num2 = 1;
-  const animatedStyle = enableAnimation(width[21]).useAnimatedStyle(E);
+  const animatedStyle = enableAnimation(width[19]).useAnimatedStyle(O);
   if (typing) {
     num2 = 0;
   }
   const tmp12 = CHANNEL_SPRING_CONFIG;
-  const tmp5Result3 = enableAnimation(width[21]);
-  const fn = function b() {
+  const tmp5Result3 = enableAnimation(width[19]);
+  const fn = function f() {
     const obj = { opacity: spring.withSpring(num2, CHANNEL_SPRING_CONFIG) };
     return obj;
   };
-  const tmp5Result4 = enableAnimation(width[21]);
-  fn.__closure = { withSpring: enableAnimation(width[22]).withSpring, statusOpacity: num2, CHANNEL_SPRING_CONFIG: tmp12 };
-  fn.__workletHash = 9624745330520;
-  fn.__initData = __initData4;
+  const tmp5Result4 = enableAnimation(width[19]);
+  fn.__closure = { withSpring: enableAnimation(width[20]).withSpring, statusOpacity: num2, CHANNEL_SPRING_CONFIG: tmp12 };
+  fn.__workletHash = 7224613224414;
+  fn.__initData = __initData2;
   const animatedStyle1 = tmp5Result4.useAnimatedStyle(fn);
   let obj3 = { style: null, collapsable: false, children: null };
   let items = [size2, animatedStyle, style];
@@ -463,8 +199,8 @@ export const StatusWithTyping = ReactCompilerGating.isReactCompilerEnabled() ? (
     const items1 = [rect];
     obj4.style = items1;
     ({ ellipsis: obj10.style, ellipsisDot: obj10.dotStyle } = tmp2);
-    obj4.children = closure_11(tmp3(tmp4[23]), { style: null, dotStyle: null, disableScale: true });
-    typing = closure_11(tmp3(tmp4[21]).View, obj4);
+    obj4.children = closure_11(tmp3(tmp4[21]), { style: null, dotStyle: null, disableScale: true });
+    typing = closure_11(tmp3(tmp4[19]).View, obj4);
     const obj5 = { style: null, dotStyle: null, disableScale: true };
   }
   const items2 = [typing, ];
@@ -494,4 +230,4 @@ export const StatusWithTyping = ReactCompilerGating.isReactCompilerEnabled() ? (
   items2[1] = closure_11(require("ReanimatedRexport").View, obj6);
   obj3.children = items2;
   return closure_12(require("ReanimatedRexport").View, obj3);
-});
+};

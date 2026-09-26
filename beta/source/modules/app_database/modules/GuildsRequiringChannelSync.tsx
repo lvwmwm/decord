@@ -1,26 +1,26 @@
-// Module ID: 7925
-// Function ID: 7926
+// Module ID: 7920
+// Function ID: 7921
 // Name: GuildsRequiringChannelSync
-// Dependencies: [2049, 502, 2045, 2109, 2103, 2067, 4431, 1078, 2052, 1089, 1090, 3, 2074, 4422, 1259, 1245, 1389, 2]
+// Dependencies: [2045, 502, 2041, 2105, 2099, 2063, 4427, 1074, 2048, 1085, 1086, 3, 2070, 4418, 1255, 1241, 1385, 2]
 
-// Module 7925 (GuildsRequiringChannelSync)
+// Module 7920 (GuildsRequiringChannelSync)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants2 from "Constants" /* 1089 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import v1 from "v1" /* 1259 */;
-import FlagUtils from "FlagUtils" /* 1389 */;
-import ChannelConstants from "ChannelConstants" /* 2052 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4422 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
+import Constants2 from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import v1 from "v1" /* 1255 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import ChannelConstants from "ChannelConstants" /* 2048 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4418 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import Constants from "Constants" /* 1078 */;
-import BigFlagUtils from "BigFlagUtils" /* 1090 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import Constants from "Constants" /* 1074 */;
+import BigFlagUtils from "BigFlagUtils" /* 1086 */;
 import size from "module_2" /* 2 */;
 
 ({ createChannelRecordFromServer: closure_4, ChannelRecordBase: hasOwnProperty } = ChannelRecord);
@@ -112,7 +112,7 @@ prototype["detectRoleVisibilityChanges"] = function detectRoleVisibilityChanges(
     let obj3 = PremiumRoleUtils;
     let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
     if (isSubscriptionRoleResult1) {
-      let tmp6Result = tmp6(4422);
+      let tmp6Result = tmp6(4418);
       isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
     }
     if (!isSubscriptionRoleResult) {
@@ -206,7 +206,7 @@ prototype["handleBackgroundSyncGuild"] = function handleBackgroundSyncGuild(item
           }
         }
         const properties = item10008.properties;
-        guild = GuildStore.getGuild(item10008.id);
+        const guild = GuildStore.getGuild(item10008.id);
         let ownerId;
         if (guild != null) {
           ownerId = guild.ownerId;
@@ -267,7 +267,7 @@ prototype["handleGuild"] = function handleGuild(channels, database, BackgroundSy
   const self = this;
   if ("full_sync" !== channels.channels.op) {
     const id = AuthenticationStore.getId();
-    guild = GuildStore.getGuild(channels.id);
+    const guild = GuildStore.getGuild(channels.id);
     if (null != guild) {
       const properties = channels.properties;
       let owner_id;

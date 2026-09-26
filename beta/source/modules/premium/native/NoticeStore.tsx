@@ -1,14 +1,14 @@
-// Module ID: 14030
-// Function ID: 14031
+// Module ID: 14020
+// Function ID: 14021
 // Name: NoticeStore
-// Dependencies: [7729, 1378, 1078, 510, 4384, 504, 577, 2]
+// Dependencies: [7724, 1374, 1074, 510, 4380, 504, 573, 2]
 
-// Module 14030 (NoticeStore)
+// Module 14020 (NoticeStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import UserOfferStore from "UserOfferStore" /* 7729 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import UserOfferStore from "UserOfferStore" /* 7724 */;
 
 require = fn;
 function clearDismissUntil(arg0) {
@@ -24,10 +24,10 @@ function isNoticeDismissed(PREMIUM_TIER_0_TRIAL_ENDING) {
       value = Storage.get(`${tmp10[PREMIUM_TIER_0_TRIAL_ENDING]}-untilAtLeast`);
       let tmp4 = null;
       if (null != value) {
-        tmp4 = _modDef4384(value);
+        tmp4 = _modDef4380(value);
       }
       if (null != tmp4) {
-        return tmp4.isAfter(_modDef4384());
+        return tmp4.isAfter(_modDef4380());
       }
     }
     let tmp6 = null != tmp11;
@@ -75,8 +75,8 @@ function updateNotice() {
     continue;
   }
 }
-const PremiumSubscriptionSKUs = fn(1378).PremiumSubscriptionSKUs;
-const NoticeTypes = fn(1078).NoticeTypes;
+const PremiumSubscriptionSKUs = fn(1374).PremiumSubscriptionSKUs;
+const NoticeTypes = fn(1074).NoticeTypes;
 let c6 = null;
 let items = [, ];
 ({ PREMIUM_TIER_2_TRIAL_ENDING: arr[0], PREMIUM_TIER_0_TRIAL_ENDING: arr[1] } = NoticeTypes);

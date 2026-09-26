@@ -1,9 +1,9 @@
-// Module ID: 1368
-// Function ID: 1369
+// Module ID: 1364
+// Function ID: 1365
 // Name: PlatformUtils
-// Dependencies: [2, 1369]
+// Dependencies: [2, 1365]
 
-// Module 1368 (PlatformUtils)
+// Module 1364 (PlatformUtils)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

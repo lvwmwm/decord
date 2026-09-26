@@ -1,11 +1,11 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 9985
+// Function ID: 9986
 // Name: TransientKeyStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 9963 (TransientKeyStore)
+// Module 9985 (TransientKeyStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const map = new Map();
 const Store = initializeDefault.Store;

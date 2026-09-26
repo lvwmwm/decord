@@ -1,25 +1,25 @@
-// Module ID: 17115
-// Function ID: 17116
+// Module ID: 17105
+// Function ID: 17106
 // Name: SearchFilterUtils
-// Dependencies: [8159, 8158, 1078, 1119, 11990, 10972, 14152, 5342, 9893, 17116, 12391, 9577, 12525, 12545, 12522, 4757, 9812, 1984, 12542, 2]
+// Dependencies: [8154, 8153, 1074, 1115, 12108, 10407, 14142, 5340, 9915, 17106, 12491, 9581, 12624, 12644, 12621, 4755, 9834, 1980, 12641, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 17115 (SearchFilterUtils)
-import util from "util" /* 1119 */;
-import AtIcon from "AtIcon" /* 5342 */;
-import TrackingConstants from "TrackingConstants" /* 8158 */;
-import RobotIcon from "RobotIcon" /* 9577 */;
-import CalendarIcon from "CalendarIcon" /* 9893 */;
-import AttachmentIcon from "AttachmentIcon" /* 10972 */;
-import UserIcon from "UserIcon" /* 11990 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12391 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12522 */;
-import SearchTokensDefault from "SearchTokens" /* 12525 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12545 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14152 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 17116 */;
-import SearchConstants from "SearchConstants" /* 8159 */;
-import Constants from "Constants" /* 1078 */;
+// Module 17105 (SearchFilterUtils)
+import util from "util" /* 1115 */;
+import AtIcon from "AtIcon" /* 5340 */;
+import TrackingConstants from "TrackingConstants" /* 8153 */;
+import RobotIcon from "RobotIcon" /* 9581 */;
+import CalendarIcon from "CalendarIcon" /* 9915 */;
+import AttachmentIcon from "AttachmentIcon" /* 10407 */;
+import UserIcon from "UserIcon" /* 12108 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12491 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12621 */;
+import SearchTokensDefault from "SearchTokens" /* 12624 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12644 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14142 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 17106 */;
+import SearchConstants from "SearchConstants" /* 8154 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
@@ -29,7 +29,7 @@ const SearchFilterAddLocations = TrackingConstants.SearchFilterAddLocations;
 ({ SEARCH_DATE_FORMAT: metroRequire, SearchTokenTypes: closure_7, SearchTypes: closure_8 } = Constants);
 let result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterUtils.tsx");
 
-export const getSearchTokenLabel = function getSearchTokenLabel(searchContext, item) {
+export const getSearchTokenLabel = function getSearchTokenLabel(type, item) {
   if (constants.FILTER_FROM === item) {
     const intl9 = util.intl;
     return intl9.string(util.t["6iuVMn"]);
@@ -40,7 +40,7 @@ export const getSearchTokenLabel = function getSearchTokenLabel(searchContext, i
     const intl7 = util.intl;
     return intl7.string(util.t.CMKzQx);
   } else if (tmp.FILTER_IN === item) {
-    if (searchContext.type === constants2.DMS) {
+    if (type.type === constants2.DMS) {
       const intl6 = util.intl;
       let stringResult = intl6.string(util.t["8Fmo42"]);
     } else {
@@ -67,64 +67,64 @@ export const getSearchTokenLabel = function getSearchTokenLabel(searchContext, i
     throw error;
   }
 };
-export const getSearchTokenSubLabel = function getSearchTokenSubLabel(cResult) {
-  if (constants.FILTER_FROM === cResult) {
+export const getSearchTokenSubLabel = function getSearchTokenSubLabel(searchTokenType) {
+  if (constants.FILTER_FROM === searchTokenType) {
     const intl8 = util.intl;
     return intl8.string(util.t.kkGlww);
-  } else if (tmp.FILTER_HAS === cResult) {
+  } else if (tmp.FILTER_HAS === searchTokenType) {
     const intl7 = util.intl;
     return intl7.string(util.t.gUfZa2);
-  } else if (tmp.FILTER_IN === cResult) {
+  } else if (tmp.FILTER_IN === searchTokenType) {
     const intl6 = util.intl;
     return intl6.string(util.t.qDUdlT);
-  } else if (tmp.FILTER_MENTIONS === cResult) {
+  } else if (tmp.FILTER_MENTIONS === searchTokenType) {
     const intl5 = util.intl;
     return intl5.string(util.t.ILtwK5);
-  } else if (tmp.FILTER_ON === cResult) {
+  } else if (tmp.FILTER_ON === searchTokenType) {
     const intl4 = util.intl;
     return intl4.string(util.t.t8bWvr);
-  } else if (tmp.FILTER_BEFORE === cResult) {
+  } else if (tmp.FILTER_BEFORE === searchTokenType) {
     const intl3 = util.intl;
     return intl3.string(util.t.YEN3uU);
-  } else if (tmp.FILTER_AFTER === cResult) {
+  } else if (tmp.FILTER_AFTER === searchTokenType) {
     const intl2 = util.intl;
     return intl2.string(util.t.hwbB7s);
-  } else if (tmp.FILTER_AUTHOR_TYPE === cResult) {
+  } else if (tmp.FILTER_AUTHOR_TYPE === searchTokenType) {
     const intl = util.intl;
     return intl.string(util.t.tJPdhZ);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("[getSearchTokenSubLabel] Unhandled search token type: " + cResult);
+    const error = new Error("[getSearchTokenSubLabel] Unhandled search token type: " + searchTokenType);
     throw error;
   }
 };
-export const getSearchTokenIcon = function getSearchTokenIcon(cResult) {
-  if (constants.FILTER_FROM === cResult) {
+export const getSearchTokenIcon = function getSearchTokenIcon(searchTokenType) {
+  if (constants.FILTER_FROM === searchTokenType) {
     return UserIcon.UserIcon;
-  } else if (tmp.FILTER_HAS === cResult) {
+  } else if (tmp.FILTER_HAS === searchTokenType) {
     return AttachmentIcon.AttachmentIcon;
-  } else if (tmp.FILTER_IN === cResult) {
+  } else if (tmp.FILTER_IN === searchTokenType) {
     return ChannelListMagnifyingGlassIcon.ChannelListMagnifyingGlassIcon;
-  } else if (tmp.FILTER_MENTIONS === cResult) {
+  } else if (tmp.FILTER_MENTIONS === searchTokenType) {
     return AtIcon.AtIcon;
-  } else if (tmp.FILTER_ON === cResult) {
+  } else if (tmp.FILTER_ON === searchTokenType) {
     return CalendarIcon.CalendarIcon;
-  } else if (tmp.FILTER_BEFORE === cResult) {
+  } else if (tmp.FILTER_BEFORE === searchTokenType) {
     return CalendarMinusIcon.CalendarMinusIcon;
-  } else if (tmp.FILTER_AFTER === cResult) {
+  } else if (tmp.FILTER_AFTER === searchTokenType) {
     return CalendarPlusIcon.CalendarPlusIcon;
-  } else if (tmp.FILTER_AUTHOR_TYPE === cResult) {
+  } else if (tmp.FILTER_AUTHOR_TYPE === searchTokenType) {
     return RobotIcon.RobotIcon;
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("[getSearchTokenIcon] Unhandled search token type: " + cResult);
+    const error = new Error("[getSearchTokenIcon] Unhandled search token type: " + searchTokenType);
     throw error;
   }
 };
-export const getSearchTokenPressHandler = function getSearchTokenPressHandler(searchContext, token, CONTEXT_MENU) {
-  closure_0 = searchContext;
+export const getSearchTokenPressHandler = function getSearchTokenPressHandler(arg0, token, CONTEXT_MENU) {
+  closure_0 = arg0;
   closure_1 = token;
   closure_2 = CONTEXT_MENU;
   if (constants.FILTER_FROM !== token) {
@@ -216,7 +216,7 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(se
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
   closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(12525));
+  const keys = Object.keys(items(12624));
   const item = keys.forEach((token) => {
     if (obj.isSearchFilterTokenType(token)) {
       const plainText = SearchTokensDefault[token].plainText;

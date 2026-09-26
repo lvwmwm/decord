@@ -1,12 +1,12 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6875
+// Function ID: 6876
 // Name: ChangeEmailActionCreators
-// Dependencies: [5, 1078, 4983, 1253, 2]
+// Dependencies: [5, 1074, 4981, 1249, 2]
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 6873 (ChangeEmailActionCreators)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4983 */;
+// Module 6875 (ChangeEmailActionCreators)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4981 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -19,7 +19,7 @@ let closure_5 = async function _confirmEmailChange(code) {
     return value.body;
   })();
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/ChangeEmailActionCreators.tsx");
 

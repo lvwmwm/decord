@@ -1,59 +1,21 @@
-// Module ID: 16674
-// Function ID: 16675
+// Module ID: 16665
+// Function ID: 16666
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 558, 568, 4942, 1119, 4786, 2]
+// Dependencies: [19, 21, 4784, 1115, 4940, 2]
+// Exports: default
 
-// Module 16674 (VoiceSubtitle)
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+// Module 16665 (VoiceSubtitle)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
-  const cResult = guildId(568).c(7);
-  guildId = guildId.guildId;
-  const voiceUsers = guildId.voiceUsers;
-  if (cResult[0] === guildId) {
-    if (cResult[1] === voiceUsers) {
-      if (cResult[5] !== cResult[2]) {
-        const obj2 = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 };
-        const tmp9 = jsx(tmp(4786).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
-        cResult[5] = tmp4;
-        cResult[6] = tmp9;
-        let tmp7 = tmp9;
-      } else {
-        tmp7 = cResult[6];
-      }
-      return tmp7;
-    }
-  }
-  if (cResult[3] !== guildId) {
-    const fn = function l(arg0) {
-      return NicknameUtilsDefault.getName(guildId, null, arg0);
-    };
-    cResult[3] = guildId;
-    cResult[4] = fn;
-    let tmp5 = fn;
-  } else {
-    tmp5 = cResult[4];
-  }
-  const intl = tmp(1119).intl;
-  const obj3 = { users: null, overflowCount: null };
-  const substr = voiceUsers.slice(0, 2);
-  const mapped = substr.map(tmp5);
-  obj3.users = mapped.join(", ");
-  obj3.overflowCount = Math.max(voiceUsers.length - 2, 0);
-  const obj = guildId(568);
-  cResult[0] = guildId;
-  cResult[1] = voiceUsers;
-  cResult[2] = intl.format(guildId(1119).t.r1Vkoc, obj3);
-}) : ((arg0) => {
+export default function VoiceSubtitle(arg0) {
   ({ guildId: require, voiceUsers } = arg0);
   const obj = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: null };
   const intl = util.intl;
@@ -64,4 +26,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   obj2.overflowCount = Math.max(voiceUsers.length - 2, 0);
   obj.children = intl.format(util.t.r1Vkoc, obj2);
   return jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: null });
-});
+};

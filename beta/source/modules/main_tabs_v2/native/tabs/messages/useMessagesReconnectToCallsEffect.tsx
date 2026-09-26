@@ -1,70 +1,21 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16391
+// Function ID: 16392
 // Name: useMessagesReconnectToCallsEffect
-// Dependencies: [32, 19, 5528, 2045, 7497, 577, 558, 568, 2]
+// Dependencies: [32, 19, 5526, 2041, 7495, 573, 2]
+// Exports: default
 
-// Module 16398 (useMessagesReconnectToCallsEffect)
-import c from "c" /* 568 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 16391 (useMessagesReconnectToCallsEffect)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7497 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7495 */;
 
-require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesReconnectToCallsEffect.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n() {
-      closure_0 = closure_5.isConnected();
-      function isGatewayConnectedListener() {
-        isConnectedResult = GatewayConnectionStore.isConnected();
-        if (isConnectedResult !== isConnectedResult) {
-          if (isConnectedResult) {
-            [r10011, arr] = sortedChannels.getSortedChannels();
-            const items = [];
-            const _Math = Math;
-            let num3 = 0;
-            if (0 < Math.min(20, arr.length)) {
-              do {
-                channel = channel.getChannel(arr[num3].channelId);
-                let isGroupDMResult = null != channel;
-                if (isGroupDMResult) {
-                  isGroupDMResult = channel.isGroupDM();
-                }
-                if (isGroupDMResult) {
-                  let arr2 = items.push(arr[num3].channelId);
-                }
-                num3 = num3 + 1;
-                let _Math2 = Math;
-              } while (num3 < Math.min(20, arr.length));
-            }
-            const tmp4 = _slicedToArray(sortedChannels.getSortedChannels(), 2);
-            const obj = { type: "CALL_CONNECT_MULTIPLE", channelIds: items };
-            DispatcherDefault.dispatch(obj);
-          }
-        }
-      }
-      closure_5.addChangeListener(isGatewayConnectedListener);
-      return () => {
-        GatewayConnectionStore.removeChangeListener(isGatewayConnectedListener);
-      };
-    };
-    let items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp2 = fn;
-    tmp3 = items;
-  } else {
-    [tmp2, tmp3] = cResult;
-  }
-  const effect = noop.useEffect(tmp2, tmp3);
-}) : (() => {
+export default function useMessagesReconnectToCallsEffect() {
   const effect = noop.useEffect(() => {
     function isGatewayConnectedListener() {
       isConnectedResult = GatewayConnectionStore.isConnected();
@@ -94,10 +45,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    closure_0 = closure_5.isConnected();
-    closure_5.addChangeListener(isGatewayConnectedListener);
+    closure_0 = closure_4.isConnected();
+    closure_4.addChangeListener(isGatewayConnectedListener);
     return () => {
       GatewayConnectionStore.removeChangeListener(isGatewayConnectedListener);
     };
   }, []);
-});
+};

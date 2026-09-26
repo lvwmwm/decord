@@ -1,21 +1,21 @@
-// Module ID: 12034
-// Function ID: 12035
+// Module ID: 12151
+// Function ID: 12152
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 2103, 2067, 4431, 1078, 12035, 1374, 11, 1275, 12028, 4970, 7797, 577, 2]
+// Dependencies: [5, 2099, 2063, 4427, 1074, 12152, 1370, 11, 1271, 12145, 4968, 7792, 573, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 12034 (GuildAutomodActionCreators)
+// Module 12151 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
-import AutomodFeedback from "AutomodFeedback" /* 7797 */;
-import DataUtils from "DataUtils" /* 12035 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+import AutomodFeedback from "AutomodFeedback" /* 7792 */;
+import DataUtils from "DataUtils" /* 12152 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 
@@ -113,7 +113,7 @@ let closure_15 = async function _createAutomodRule(arg0) {
 let closure_16 = async function _updateAutomodRule() {
   importDefault = _transformApiRuletoClientRule;
   const HTTP = require("HTTPUtils").HTTP;
-  const request = { url: closure_2_8.GUILD_AUTOMOD_RULE(_require.guildId, _require.id), body: _transformClientRuleToApiRule(_require), rejectWithError: null };
+  const request = { url: React6.GUILD_AUTOMOD_RULE(_require.guildId, _require.id), body: _transformClientRuleToApiRule(_require), rejectWithError: null };
   _transformClientRuleToApiRule(_require);
   request.rejectWithError = require("HTTPUtils").rejectWithMigratedError();
   await HTTP.patch(request);
@@ -135,7 +135,7 @@ let closure_18 = async function _fetchAutomodRules(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -153,7 +153,7 @@ let closure_18 = async function _fetchAutomodRules(arg0, value) {
           closure_1 = tmp5;
           closure_129_0 = undefined;
           const HTTP = require("HTTPUtils").HTTP;
-          const obj4 = { url: closure_2_8.GUILD_AUTOMOD_RULES(closure_0), rejectWithError: require("HTTPUtils").rejectWithMigratedError() };
+          const obj4 = { url: React6.GUILD_AUTOMOD_RULES(closure_0), rejectWithError: require("HTTPUtils").rejectWithMigratedError() };
           c3 = 1;
           c4 = 1;
           const obj5 = { value: HTTP.get(obj4), done: false };
@@ -194,7 +194,7 @@ let closure_19 = async function _executeAlertAction(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -210,7 +210,7 @@ let closure_19 = async function _executeAlertAction(arg0, value) {
         } else {
           if (PermissionStore.can(constants.MANAGE_MESSAGES, closure_1)) {
             const HTTP = require("HTTPUtils").HTTP;
-            const request = { url: closure_2_8.GUILD_AUTOMOD_ALERT_ACTION(tmp14.guild_id), body: null, rejectWithError: null };
+            const request = { url: React6.GUILD_AUTOMOD_ALERT_ACTION(tmp14.guild_id), body: null, rejectWithError: null };
             const obj5 = { message_id: tmp13, channel_id: tmp14.id, alert_action_type: tmp15 };
             request.body = obj5;
             request.rejectWithError = require("HTTPUtils").rejectWithMigratedError();
@@ -231,14 +231,14 @@ let closure_19 = async function _executeAlertAction(arg0, value) {
         return obj;
       }
       c3 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp8) {
       c3 = tmp;
       throw tmp8;
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, Endpoints: closure_8, Permissions: closure_9 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
@@ -306,7 +306,7 @@ export const executeAlertAction = function executeAlertAction() {
 export const removeMentionRaidRestrictionWithFeedback = function removeMentionRaidRestrictionWithFeedback(arg0, decision_id, arg2) {
   _require = arg0;
   dependencyMap = arg2;
-  guild = GuildStore.getGuild(arg0);
+  const guild = GuildStore.getGuild(arg0);
   let canResult = null != guild;
   if (canResult) {
     canResult = PermissionStore.can(constants2.MANAGE_GUILD, guild);
@@ -317,7 +317,7 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
       obj.trackWithMetadata(constants.GUILD_AUTOMOD_FEEDBACK, { feedback_type: AutomodFeedback.Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id });
       const HTTP = HTTPUtils.HTTP;
       const obj2 = { feedback_type: AutomodFeedback.Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id };
-      HTTP.post({ url: closure_2_8.GUILD_AUTOMOD_CLEAR_MENTION_RAID(closure_0), rejectWithError: true });
+      HTTP.post({ url: React6.GUILD_AUTOMOD_CLEAR_MENTION_RAID(closure_0), rejectWithError: true });
       closure_2();
     });
     let obj = require("GuildAutomodActionActionCreators");

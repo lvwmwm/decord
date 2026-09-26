@@ -1,11 +1,11 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 11853
+// Function ID: 11854
 // Name: ConnectionsRoleActionCreators
-// Dependencies: [5, 1078, 1275, 577, 7408, 2]
+// Dependencies: [5, 1074, 1271, 573, 7406, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 11729 (ConnectionsRoleActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 11853 (ConnectionsRoleActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ let closure_5 = async function _putRoleConnectionsConfigurations(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -95,7 +95,7 @@ let closure_5 = async function _putRoleConnectionsConfigurations(arg0, value) {
         const obj11 = { type: "GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS", roleId: closure_131_1, roleConnectionConfigurations: closure_131_2 };
         closure_132_1(closure_132_2[3]).dispatch(obj11);
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp28) {
       c6 = tmp;
@@ -108,7 +108,7 @@ let closure_6 = async function _fetchUserApplicationRoleConnections() {
   await HTTP.get({ url: constants.APPLICATION_USER_ROLE_CONNECTIONS, rejectWithError: false });
   return arg1.body;
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/connections/ConnectionsRoleActionCreators.tsx");
 

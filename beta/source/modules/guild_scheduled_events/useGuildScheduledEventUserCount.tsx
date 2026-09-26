@@ -1,13 +1,13 @@
-// Module ID: 9888
-// Function ID: 9889
+// Module ID: 9910
+// Function ID: 9911
 // Name: useGuildScheduledEventUserCount
-// Dependencies: [19, 7805, 558, 568, 504, 9889, 2]
+// Dependencies: [19, 7800, 504, 9911, 2]
+// Exports: default
 
-// Module 9888 (useGuildScheduledEventUserCount)
+// Module 9910 (useGuildScheduledEventUserCount)
 import _mod19 from "module_19" /* 19 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9889 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7805 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9911 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7800 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,61 +15,7 @@ const require = globalThis.__r;
 const useEffect = _mod19.useEffect;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useGuildScheduledEventUserCount.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
-  _require = arg0;
-  closure_1 = arg1;
-  dependencyMap = arg2;
-  const cResult = require("c").c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GuildScheduledEventStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    require("initialize");
-    if (cResult[4] === arg1) {
-      if (cResult[5] === arg0) {
-        if (cResult[6] === arg2) {
-          let tmp9 = cResult[7];
-          let tmp10 = cResult[8];
-        }
-        useEffect(tmp9, tmp10);
-        return tmp8;
-      }
-    }
-    const fn2 = function v() {
-      let tmp2 = null != closure_0;
-      if (tmp2) {
-        tmp2 = null != closure_1;
-      }
-      if (tmp2) {
-        if (null != closure_2) {
-          const items = [tmp7];
-          let items1 = items;
-        } else {
-          items1 = [];
-        }
-        const guildEventUserCounts = GuildScheduledEventManagerDefault.getGuildEventUserCounts(closure_0, closure_1, items1);
-      }
-    };
-    let items1 = [arg1, arg0, arg2];
-    cResult[4] = arg1;
-    cResult[5] = arg0;
-    cResult[6] = arg2;
-    cResult[7] = fn2;
-    cResult[8] = items1;
-    tmp10 = items1;
-    tmp9 = fn2;
-  }
-  const fn = function c() {
-    return GuildScheduledEventStore.getUserCount(closure_1, closure_2);
-  };
-  cResult[1] = arg1;
-  cResult[2] = arg2;
-  cResult[3] = fn;
-}) : ((arg0, arg1, arg2) => {
+export default function useGuildScheduledEventUserCount(arg0, arg1, arg2) {
   _require = arg0;
   closure_1 = arg1;
   dependencyMap = arg2;
@@ -92,4 +38,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
     }
   }, items1);
   return stateFromStores;
-});
+};

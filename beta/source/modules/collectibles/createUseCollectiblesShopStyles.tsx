@@ -1,14 +1,14 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 11377
+// Function ID: 11378
 // Name: createUseCollectiblesShopStyles
-// Dependencies: [32, 4782, 8535, 7831, 565, 2]
+// Dependencies: [32, 4780, 8530, 7826, 563, 2]
 // Exports: default
 
-// Module 11415 (createUseCollectiblesShopStyles)
-import useStateFromStores from "useStateFromStores" /* 565 */;
-import tinycolorDefault from "tinycolor" /* 7831 */;
+// Module 11377 (createUseCollectiblesShopStyles)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import tinycolorDefault from "tinycolor" /* 7826 */;
 import _slicedToArray from "module_32" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
 require = fn;
 const size = fn(2);
@@ -51,7 +51,7 @@ export default function createUseCollectiblesShopStyles(arg0) {
                 const tertiary = obj4.backgroundColors.tertiary;
                 ({ h: h3, s: s3, l: l3 } = tertiary.toHsl());
                 const obj13 = { h: h3, s: s3 * stateFromStores, l: l3 };
-                tmp26 = tmp24(7831)(obj13);
+                tmp26 = tmp24(7826)(obj13);
                 const toHslResult2 = tertiary.toHsl();
               }
               obj9.tertiary = tmp26;
@@ -107,10 +107,10 @@ export default function createUseCollectiblesShopStyles(arg0) {
             ({ r: arr9[0], g: arr9[1], b: arr9[2] } = toRgbResult);
             const items2 = [, , ];
             ({ r: arr10[0], g: arr10[1], b: arr10[2] } = toRgbResult1);
-            const tmpResult = tmp(8535);
-            [tmp44, tmp45, tmp46] = tmp(8535).getValueInColorGradientByPercentage(items1, items2, 50);
+            const tmpResult = tmp(8530);
+            [tmp44, tmp45, tmp46] = tmp(8530).getValueInColorGradientByPercentage(items1, items2, 50);
             const obj22 = { r: tmp44, g: tmp45, b: tmp46 };
-            const tmp43 = _slicedToArray(tmp(8535).getValueInColorGradientByPercentage(items1, items2, 50), 3);
+            const tmp43 = _slicedToArray(tmp(8530).getValueInColorGradientByPercentage(items1, items2, 50), 3);
             obj21.text = tinycolorDefault(obj22).isLight() ? tmp39.dark : tmp39.light;
             const obj36 = tinycolorDefault(obj22);
           }
@@ -134,10 +134,10 @@ export default function createUseCollectiblesShopStyles(arg0) {
           ({ r: arr2[0], g: arr2[1], b: arr2[2] } = toRgbResult2);
           const items4 = [, , ];
           ({ r: arr3[0], g: arr3[1], b: arr3[2] } = toRgbResult3);
-          const tmpResult3 = tmp(8535);
-          [tmp9, tmp10, tmp11] = tmp(8535).getValueInColorGradientByPercentage(items3, items4, 50);
+          const tmpResult3 = tmp(8530);
+          [tmp9, tmp10, tmp11] = tmp(8530).getValueInColorGradientByPercentage(items3, items4, 50);
           const obj25 = { r: tmp9, g: tmp10, b: tmp11 };
-          const tmp8 = _slicedToArray(tmp(8535).getValueInColorGradientByPercentage(items3, items4, 50), 3);
+          const tmp8 = _slicedToArray(tmp(8530).getValueInColorGradientByPercentage(items3, items4, 50), 3);
           obj24.border = tinycolorDefault(obj25).setAlpha(0.4);
           [obj7, obj8] = backgroundColors;
           const obj6 = tinycolorDefault(obj25);
@@ -147,10 +147,10 @@ export default function createUseCollectiblesShopStyles(arg0) {
           ({ r: arr4[0], g: arr4[1], b: arr4[2] } = toRgbResult4);
           const items6 = [, , ];
           ({ r: arr5[0], g: arr5[1], b: arr5[2] } = toRgbResult5);
-          const tmpResult4 = tmp(8535);
-          [tmp16, tmp17, tmp18] = tmp(8535).getValueInColorGradientByPercentage(items5, items6, 50);
+          const tmpResult4 = tmp(8530);
+          [tmp16, tmp17, tmp18] = tmp(8530).getValueInColorGradientByPercentage(items5, items6, 50);
           const obj26 = { r: tmp16, g: tmp17, b: tmp18 };
-          const tmp15 = _slicedToArray(tmp(8535).getValueInColorGradientByPercentage(items5, items6, 50), 3);
+          const tmp15 = _slicedToArray(tmp(8530).getValueInColorGradientByPercentage(items5, items6, 50), 3);
           obj24.label = tinycolorDefault(obj26).isLight() ? tmp39.dark : tmp39.light;
           const obj11 = tinycolorDefault(obj26);
         }

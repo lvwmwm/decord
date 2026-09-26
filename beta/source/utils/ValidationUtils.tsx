@@ -1,9 +1,9 @@
-// Module ID: 8684
-// Function ID: 8685
+// Module ID: 8679
+// Function ID: 8680
 // Name: ValidationUtils
 // Dependencies: [2]
 
-// Module 8684 (ValidationUtils)
+// Module 8679 (ValidationUtils)
 import size from "module_2" /* 2 */;
 
 const re0 = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i;

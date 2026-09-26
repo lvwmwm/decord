@@ -1,12 +1,12 @@
-// Module ID: 9053
-// Function ID: 9054
+// Module ID: 9055
+// Function ID: 9056
 // Name: GuildTraits
-// Dependencies: [1078, 2059, 2]
+// Dependencies: [1074, 2055, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 9053 (GuildTraits)
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import Constants from "Constants" /* 1078 */;
+// Module 9055 (GuildTraits)
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ GuildFeatures: c2, BoostedGuildTiers: c3 } = Constants);

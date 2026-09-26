@@ -1,52 +1,21 @@
-// Module ID: 10326
-// Function ID: 10327
+// Module ID: 10329
+// Function ID: 10330
 // Name: useMyCurrentStageChannelRole
-// Dependencies: [502, 2099, 5672, 558, 568, 504, 2]
+// Dependencies: [502, 2095, 5670, 504, 2]
+// Exports: default
 
-// Module 10326 (useMyCurrentStageChannelRole)
+// Module 10329 (useMyCurrentStageChannelRole)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5672 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5670 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannelRole.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AuthenticationStore, SelectedChannelStore, StageChannelRoleStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      const id = AuthenticationStore.getId();
-      let permissionsForUser = null;
-      if (SelectedChannelStore.getVoiceChannelId() === closure_0) {
-        permissionsForUser = StageChannelRoleStore.getPermissionsForUser(id, tmp2);
-      }
-      return permissionsForUser;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp9 = items1;
-    let tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+export default function useMyCurrentStageChannelRole(arg0) {
   _require = arg0;
   const items = [AuthenticationStore, SelectedChannelStore, StageChannelRoleStore];
   const items1 = [arg0];
@@ -58,4 +27,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return permissionsForUser;
   }, items1);
-});
+};

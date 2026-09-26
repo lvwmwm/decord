@@ -1,18 +1,18 @@
-// Module ID: 1188
-// Function ID: 1189
+// Module ID: 1184
+// Function ID: 1185
 // Name: UnsyncedUserSettingsStore
-// Dependencies: [1189, 1088, 1078, 1222, 1223, 504, 510, 12, 577, 2]
+// Dependencies: [1185, 1084, 1074, 1218, 1219, 504, 510, 12, 573, 2]
 
-// Module 1188 (UnsyncedUserSettingsStore)
+// Module 1184 (UnsyncedUserSettingsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1088 */;
-import ThemeConstants from "ThemeConstants" /* 1189 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1222 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1223 */;
-import Constants from "Constants" /* 1078 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
+import ThemeConstants from "ThemeConstants" /* 1185 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1219 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const SystemThemeState = ThemeConstants.SystemThemeState;

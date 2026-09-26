@@ -1,13 +1,13 @@
-// Module ID: 13996
-// Function ID: 13997
+// Module ID: 13986
+// Function ID: 13987
 // Name: ContentInventoryExperiments
-// Dependencies: [4707, 1438, 4704, 8660, 2]
+// Dependencies: [4704, 1434, 4701, 8655, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping
 
-// Module 13996 (ContentInventoryExperiments)
-import ExperimentConstants from "ExperimentConstants" /* 4707 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
-import createExperiment from "module_4704" /* 4704 */;
+// Module 13986 (ContentInventoryExperiments)
+import ExperimentConstants from "ExperimentConstants" /* 4704 */;
+import ApexExperiment from "ApexExperiment" /* 1434 */;
+import createExperiment from "module_4701" /* 4701 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-03-content-inventory-memberlist-and-ranker", defaultConfig: { enabled: true, impressionCappingEnabled: true }, variations: { 0: { enabled: false, impressionCappingEnabled: false } } });

@@ -1,9 +1,9 @@
 // Module ID: 3101
 // Function ID: 3102
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 3101
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/tiny_bronco", scales: [1], hash: "23f60653264d58034c96dec2ce680087", name: "TinyBronco.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZ2VfYXNzdXJhbmNl", scales: [1], hash: "4bb3928c9665832ca98211067023e0a2", name: "da.messages.4bb3928c9665832ca98211067023e0a2.compiled.messages", type: "jsona" });

@@ -1,50 +1,27 @@
-// Module ID: 16499
-// Function ID: 16500
+// Module ID: 16492
+// Function ID: 16493
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 558, 568, 16500, 5879, 12381, 16501, 8210, 2]
+// Dependencies: [19, 21, 16493, 8211, 5930, 12481, 16494, 2]
+// Exports: FavoritesGuildHeaderActionButton
 
-// Module 16499 (FavoritesGuildHeaderActions)
-import c from "c" /* 568 */;
-import IconButton from "IconButton" /* 8210 */;
-import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 16500 */;
-import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 16501 */;
+// Module 16492 (FavoritesGuildHeaderActions)
+import IconButton from "IconButton" /* 8211 */;
+import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 16493 */;
+import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 16494 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuildHeaderActions.tsx");
 
-export const FavoritesGuildHeaderActionButton = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  const tmp4 = importDefault;
-  ({ isPreview, label, exitPreview } = useFavoritesGuildHeaderActionDefault());
-  const tmp4Result = tmp4(isPreview ? 5879 : 12381);
-  if (!isPreview) {
-    exitPreview = tmp(16501).openFavoritesGuildAddActionSheet;
-  }
-  if (cResult[0] === label) {
-    if (cResult[1] === tmp4Result) {
-      if (cResult[2] === exitPreview) {
-        let tmp7 = cResult[3];
-      }
-      return tmp7;
-    }
-  }
-  const tmp8 = jsx(IconButton.IconButton, { variant: "secondary", size: "sm", icon: tmp4Result, onPress: exitPreview, accessibilityLabel: label, maxFontSizeMultiplier: 1 });
-  cResult[0] = label;
-  cResult[1] = tmp4Result;
-  cResult[2] = exitPreview;
-  cResult[3] = tmp8;
-  tmp7 = tmp8;
-}) : (() => {
+export const FavoritesGuildHeaderActionButton = function FavoritesGuildHeaderActionButton() {
   ({ isPreview, exitPreview, label } = useFavoritesGuildHeaderActionDefault());
-  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 5879 : 12381), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 };
+  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 5930 : 12481), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 };
   if (!isPreview) {
     exitPreview = FavoritesGuildAddActionSheet.openFavoritesGuildAddActionSheet;
   }
   obj.onPress = exitPreview;
   obj.accessibilityLabel = label;
-  return jsx(IconButton.IconButton, { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 5879 : 12381), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
-});
+  return jsx(IconButton.IconButton, { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 5930 : 12481), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
+};

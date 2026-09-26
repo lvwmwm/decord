@@ -1,13 +1,13 @@
-// Module ID: 1079
-// Function ID: 1080
+// Module ID: 1075
+// Function ID: 1076
 // Name: RouteConstants
-// Dependencies: [1080, 1085, 1086, 1087, 2]
+// Dependencies: [1076, 1081, 1082, 1083, 2]
 
-// Module 1079 (RouteConstants)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1080 */;
-import ConferenceModeConstants from "ConferenceModeConstants" /* 1085 */;
-import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1086 */;
-import PathUtils from "utils/PathUtils" /* 1087 */;
+// Module 1075 (RouteConstants)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
+import ConferenceModeConstants from "ConferenceModeConstants" /* 1081 */;
+import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1082 */;
+import PathUtils from "utils/PathUtils" /* 1083 */;
 import size from "module_2" /* 2 */;
 
 const CollectibleShopTab = CollectiblesShopConstants.CollectibleShopTab;

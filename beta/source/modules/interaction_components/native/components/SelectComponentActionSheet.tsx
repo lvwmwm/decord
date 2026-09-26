@@ -1,227 +1,20 @@
-// Module ID: 11987
-// Function ID: 11988
+// Module ID: 12105
+// Function ID: 12106
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2045, 2099, 7430, 21, 4790, 580, 558, 568, 1119, 5220, 7428, 9853, 4511, 5852, 9581, 5854, 7256, 4504, 1616, 1482, 5929, 504, 4757, 6895, 7429, 2]
+// Dependencies: [19, 17, 2041, 2095, 7428, 21, 4788, 576, 7426, 1115, 5218, 9875, 4506, 5854, 5866, 9585, 7258, 4499, 1612, 1478, 5931, 504, 4755, 7427, 6901, 2]
+// Exports: default
 
-// Module 11987 (SelectComponentActionSheet)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+// Module 12105 (SelectComponentActionSheet)
+import nativeDefault from "native" /* 576 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4506 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
 import TableRow from "TableRow" /* 5854 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
-const View = fn(17).View;
-let closure_7 = fn(7430).ACTION_SHEET_START_HEIGHT_RATIO;
-const jsxProd = fn(21);
-({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { selectionOptionItemIconWrapper: { width: nativeDefault.space.PX_32, alignItems: "center" }, tagListIconWrapper: null, tagListIcon: null, textInputWrapper: null };
-let size = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16 };
-obj2.tagListIconWrapper = size;
-const rect = { transform: null, top: -nativeDefault.space.PX_4, left: -nativeDefault.space.PX_4 };
-let items = [{ scale: 0.75 }];
-rect.transform = items;
-obj2.tagListIcon = rect;
-let obj3 = { width: nativeDefault.space.PX_32, alignItems: "center" };
-obj2.textInputWrapper = { paddingHorizontal: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_16, marginHorizontal: nativeDefault.space.PX_16 };
-let closure_11 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) => {
-  const cResult = renderIcon(onPressOptionItem[9]).c(29);
-  renderIcon = renderIcon.renderIcon;
-  ({ selectionActionComponent, labelComponent, selectButtonDisabled, selectedOptions } = renderIcon);
-  ({ submitSelection, onPressOptionItem } = renderIcon);
-  const onRemoveOptionItem = renderIcon.onRemoveOptionItem;
-  const onQueryChange = renderIcon.onQueryChange;
-  const tmp4 = closure_11();
-  closure_5 = tmp4;
-  onRemoveOptionItem.useRef(null);
-  if (cResult[0] === renderIcon) {
-    if (cResult[1] === selectedOptions) {
-      if (cResult[2] === tmp4) {
-        let arr = cResult[3];
-      }
-      let label;
-      if (labelComponent != null) {
-        label = labelComponent.label;
-      }
-      if (cResult[4] === label) {
-        if (cResult[5] === selectionActionComponent.placeholder) {
-          let tmp7 = cResult[6];
-        }
-        if (cResult[7] === tmp5) {
-          if (cResult[8] === selectionActionComponent.minValues) {
-            let tmp10 = cResult[9];
-          }
-          if (cResult[10] === tmp5) {
-            if (cResult[11] === selectButtonDisabled) {
-              if (cResult[12] === submitSelection) {
-                let tmp12 = cResult[13];
-              }
-              if (cResult[14] === tmp7) {
-                if (cResult[15] === tmp10) {
-                  if (cResult[16] === tmp12) {
-                    let tmp15 = cResult[17];
-                  }
-                  if (cResult[18] === tmp5) {
-                    if (cResult[19] === onPressOptionItem) {
-                      if (cResult[20] === onQueryChange) {
-                        if (cResult[21] === onRemoveOptionItem) {
-                          if (cResult[22] === selectedOptions) {
-                            if (cResult[23] === tmp4) {
-                              if (cResult[24] === arr) {
-                                let tmp18 = cResult[25];
-                              }
-                              if (cResult[26] === tmp15) {
-                                if (cResult[27] === tmp18) {
-                                  let tmp25 = cResult[28];
-                                }
-                                return tmp25;
-                              }
-                              let obj2 = { children: null };
-                              const items = [tmp15, tmp18];
-                              obj2.children = items;
-                              const tmp28 = closure_10(closure_9, obj2);
-                              cResult[26] = tmp15;
-                              cResult[27] = tmp18;
-                              cResult[28] = tmp28;
-                              tmp25 = tmp28;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                  let tmp20Result2 = null;
-                  if (null != onQueryChange) {
-                    tmp20Result2 = null;
-                    if (null != arr) {
-                      const obj3 = { inActionSheet: true, style: tmp4.textInputWrapper, icon: null, tags: null, onRemove: null, onChangeText: null };
-                      let tmp20Result;
-                      if (tmp5) {
-                        if (0 !== arr.length) {
-                          tmp20Result = tmp20(onQueryChange, {});
-                        }
-                      }
-                      obj3.icon = tmp20Result;
-                      obj3.tags = arr;
-                      obj3.onRemove = function onRemove(arg0) {
-                        let tmp;
-                        if (selectedOptions != null) {
-                          tmp = selectedOptions[arg0];
-                        }
-                        if (null != tmp) {
-                          let tmp2 = onRemoveOptionItem;
-                          if (null == onRemoveOptionItem) {
-                            tmp2 = onPressOptionItem;
-                          }
-                          tmp2(arg0, tmp);
-                        }
-                      };
-                      obj3.onChangeText = function onChangeText(arg0) {
-                        const current = ref.current;
-                        if (current != null) {
-                          current.scrollTo({ y: 0, animated: false });
-                        }
-                        onQueryChange(arg0);
-                      };
-                      tmp20Result2 = tmp20(selectedOptions(tmp2[13]), obj3);
-                      const tmp22 = selectedOptions(tmp2[13]);
-                    }
-                  }
-                  cResult[18] = tmp5;
-                  cResult[19] = onPressOptionItem;
-                  cResult[20] = onQueryChange;
-                  cResult[21] = onRemoveOptionItem;
-                  cResult[22] = selectedOptions;
-                  cResult[23] = tmp4;
-                  cResult[24] = arr;
-                  cResult[25] = tmp20Result2;
-                  tmp18 = tmp20Result2;
-                }
-              }
-              const obj4 = { title: tmp7, subtitle: tmp10, trailing: tmp12 };
-              const tmp17 = closure_8(tmp(tmp2[12]).BottomSheetTitleHeader, obj4);
-              cResult[14] = tmp7;
-              cResult[15] = tmp10;
-              cResult[16] = tmp12;
-              cResult[17] = tmp17;
-              tmp15 = tmp17;
-            }
-          }
-          let tmp14Result;
-          if (tmp5) {
-            let str = "primary";
-            if (selectButtonDisabled) {
-              str = "secondary";
-            }
-            const obj5 = { size: "sm", variant: str, disabled: selectButtonDisabled, onPress: submitSelection, text: null };
-            const intl3 = tmp(tmp2[10]).intl;
-            obj5.text = intl3.string(tmp(tmp2[10]).t.XqMe3N);
-            tmp14Result = closure_8(tmp(tmp2[11]).Button, obj5);
-          }
-          cResult[10] = tmp5;
-          cResult[11] = selectButtonDisabled;
-          cResult[12] = submitSelection;
-          cResult[13] = tmp14Result;
-          tmp12 = tmp14Result;
-        }
-        let formatToPlainStringResult;
-        if (tmp5) {
-          if (selectionActionComponent.minValues > 0) {
-            const intl2 = tmp(tmp2[10]).intl;
-            const obj6 = { count: selectionActionComponent.minValues };
-            formatToPlainStringResult = intl2.formatToPlainString(tmp(tmp2[10]).t.Jmwzdx, obj6);
-          }
-        }
-        cResult[7] = tmp5;
-        cResult[8] = selectionActionComponent.minValues;
-        cResult[9] = formatToPlainStringResult;
-        tmp10 = formatToPlainStringResult;
-      }
-      let label1;
-      if (labelComponent != null) {
-        label1 = labelComponent.label;
-      }
-      if (label1 == null) {
-        label1 = selectionActionComponent.placeholder;
-      }
-      if (label1 == null) {
-        const intl = tmp(tmp2[10]).intl;
-        label1 = intl.string(tmp(tmp2[10]).t.Otr6W2);
-      }
-      let label2;
-      if (labelComponent != null) {
-        label2 = labelComponent.label;
-      }
-      cResult[4] = label2;
-      cResult[5] = selectionActionComponent.placeholder;
-      cResult[6] = label1;
-      tmp7 = label1;
-    }
-  }
-  let mapped;
-  if (selectedOptions != null) {
-    mapped = selectedOptions.map((id) => {
-      const obj = { id: id.value, text: id.label, icon: null };
-      const obj2 = { style: closure_5.tagListIconWrapper, children: closure_2_8(View, { style: closure_5.tagListIcon, children: renderIcon(id) }) };
-      obj.icon = closure_2_8(View, obj2);
-      return obj;
-    });
-  }
-  if (mapped == null) {
-    mapped = [];
-  }
-  cResult[0] = renderIcon;
-  cResult[1] = selectedOptions;
-  cResult[2] = tmp4;
-  cResult[3] = mapped;
-  arr = mapped;
-}) : ((renderIcon) => {
+function SelectionHeader(renderIcon) {
   renderIcon = renderIcon.renderIcon;
   ({ selectionActionComponent, labelComponent, selectButtonDisabled, selectedOptions } = renderIcon);
   ({ onPressOptionItem: dependencyMap, onRemoveOptionItem: noop, onQueryChange } = renderIcon);
@@ -252,16 +45,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) =>
     label = selectionActionComponent.placeholder;
   }
   if (label == null) {
-    const intl = tmp6(1119).intl;
-    label = intl.string(tmp6(1119).t.Otr6W2);
+    const intl = tmp6(1115).intl;
+    label = intl.string(tmp6(1115).t.Otr6W2);
   }
   let obj = { title: label, subtitle: null, trailing: null };
   let formatToPlainStringResult;
   if (selectionActionComponent.maxValues > 1) {
     if (selectionActionComponent.minValues > 0) {
-      const intl2 = tmp6(1119).intl;
+      const intl2 = tmp6(1115).intl;
       let obj2 = { count: selectionActionComponent.minValues };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1119).t.Jmwzdx, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1115).t.Jmwzdx, obj2);
     }
   }
   obj.subtitle = formatToPlainStringResult;
@@ -272,12 +65,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) =>
       str = "secondary";
     }
     const obj3 = { size: "sm", variant: str, disabled: selectButtonDisabled, onPress: renderIcon.submitSelection, text: null };
-    const intl3 = tmp6(1119).intl;
-    obj3.text = intl3.string(tmp6(1119).t.XqMe3N);
-    tmp5Result = tmp5(tmp6(5220).Button, obj3);
+    const intl3 = tmp6(1115).intl;
+    obj3.text = intl3.string(tmp6(1115).t.XqMe3N);
+    tmp5Result = tmp5(tmp6(5218).Button, obj3);
   }
   obj.trailing = tmp5Result;
-  const children = [closure_8(renderIcon(7428).BottomSheetTitleHeader, obj), ];
+  const children = [closure_8(renderIcon(7426).BottomSheetTitleHeader, obj), ];
   let tmp5Result4 = null;
   if (null != onQueryChange) {
     tmp5Result4 = null;
@@ -311,231 +104,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderIcon) =>
         }
         onQueryChange(arg0);
       };
-      tmp5Result4 = tmp5(selectedOptions(9853), obj4);
-      const tmp13 = selectedOptions(9853);
+      tmp5Result4 = tmp5(selectedOptions(9875), obj4);
+      const tmp13 = selectedOptions(9875);
     }
   }
   children[1] = tmp5Result4;
   return closure_10(closure_9, { children });
-});
-ReactCompilerGating = fn(558);
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
-  const cResult = c.c(44);
-  item = item.item;
-  const onPressOptionItem = item.onPressOptionItem;
-  ({ clearable, selected, disabled, index } = item);
-  ({ start, end, iconContainerStyle, itemAccessibilityLabel, skipIcon, renderDescription, renderIcon, renderOptionSuffix } = item);
-  const tmp4 = closure_11();
-  let flag = selected;
-  if (selected == null) {
-    flag = false;
-  }
-  if (cResult[0] === disabled) {
-    if (cResult[1] === flag) {
-      let tmp5 = cResult[2];
-    }
-    let flag2 = selected;
-    const checkboxA11yNative = tmp(4511).useCheckboxA11yNative(tmp5);
-    if (selected == null) {
-      flag2 = false;
-    }
-    if (cResult[3] === disabled) {
-      if (cResult[4] === flag2) {
-        let tmp7 = cResult[5];
-      }
-      let radioA11yNative = tmp(4511).useRadioA11yNative(tmp7);
-      if (item.multi) {
-        radioA11yNative = checkboxA11yNative;
-      }
-      if (cResult[6] === item) {
-        if (cResult[7] === itemAccessibilityLabel) {
-          let tmp9 = cResult[8];
-        }
-        if (cResult[9] === iconContainerStyle) {
-          if (cResult[10] === item) {
-            if (cResult[11] === renderIcon) {
-              if (cResult[12] === skipIcon) {
-                if (cResult[13] === tmp4) {
-                  let tmp11 = cResult[14];
-                }
-                if (cResult[15] === item) {
-                  if (cResult[16] === renderDescription) {
-                    let tmp16 = cResult[17];
-                  }
-                  if (cResult[18] === index) {
-                    if (cResult[19] === item) {
-                      if (cResult[20] === onPressOptionItem) {
-                        let tmp18 = cResult[21];
-                      }
-                      class D {
-                        constructor() {
-                          return onPressOptionItem(index, item);
-                        }
-                      }
-                      if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-                        class D {
-                          constructor() {
-                            return onPressOptionItem(index, item);
-                          }
-                        }
-                        let tmp20 = { flexDirection: "row" };
-                        const obj2 = { flexDirection: "row" };
-                      } else {
-                        tmp20 = cResult[22];
-                      }
-                      if (cResult[23] === item) {
-                        if (cResult[24] === renderOptionSuffix) {
-                          let tmp21 = cResult[25];
-                        }
-                        if (cResult[26] === clearable) {
-                          if (cResult[27] === selected) {
-                            if (cResult[29] === tmp21) {
-                              if (cResult[30] === tmp23) {
-                                let tmp26 = cResult[31];
-                              }
-                              if (cResult[32] === radioA11yNative.accessibilityRole) {
-                                if (cResult[33] === radioA11yNative.accessibilityState) {
-                                  if (cResult[34] === disabled) {
-                                    if (cResult[35] === end) {
-                                      if (cResult[36] === item.label) {
-                                        if (cResult[37] === start) {
-                                          if (cResult[38] === tmp26) {
-                                            if (cResult[39] === tmp9) {
-                                              if (cResult[40] === tmp11) {
-                                                if (cResult[41] === tmp16) {
-                                                  if (cResult[42] === tmp18) {
-                                                    let tmp29 = cResult[43];
-                                                  }
-                                                  return tmp29;
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                              class D {
-                                constructor() {
-                                  return onPressOptionItem(index, item);
-                                }
-                              }
-                              const obj3 = { accessibilityRole: radioA11yNative.accessibilityRole, accessibilityLabel: tmp9, accessibilityState: radioA11yNative.accessibilityState, start, end, disabled, icon: tmp11, label: item.label, labelLineClamp: 1, subLabel: tmp16, subLabelLineClamp: 1, onPress: tmp18, trailing: tmp26 };
-                              const tmp30 = closure_1_8(tmp(5854).TableRow, obj3);
-                              cResult[32] = radioA11yNative.accessibilityRole;
-                              cResult[33] = radioA11yNative.accessibilityState;
-                              cResult[34] = disabled;
-                              cResult[35] = end;
-                              cResult[36] = item.label;
-                              cResult[37] = start;
-                              cResult[38] = tmp26;
-                              cResult[39] = tmp9;
-                              cResult[40] = tmp11;
-                              cResult[41] = tmp16;
-                              cResult[42] = tmp18;
-                              cResult[43] = tmp30;
-                              tmp29 = tmp30;
-                            }
-                            class D {
-                              constructor() {
-                                return onPressOptionItem(index, item);
-                              }
-                            }
-                            const obj4 = { style: tmp20, children: null };
-                            const items = [tmp21, cResult[28]];
-                            obj4.children = items;
-                            const tmp28 = v65535(View, obj4);
-                            cResult[29] = tmp21;
-                            cResult[30] = cResult[28];
-                            cResult[31] = tmp28;
-                            tmp26 = tmp28;
-                          }
-                        }
-                        class D {
-                          constructor() {
-                            return onPressOptionItem(index, item);
-                          }
-                        }
-                        cResult[26] = clearable;
-                        cResult[27] = selected;
-                        cResult[28] = tmp24;
-                      }
-                      let renderOptionSuffixResult;
-                      if (renderOptionSuffix != null) {
-                        renderOptionSuffixResult = renderOptionSuffix(item);
-                      }
-                      cResult[23] = item;
-                      cResult[24] = renderOptionSuffix;
-                      cResult[25] = renderOptionSuffixResult;
-                      tmp21 = renderOptionSuffixResult;
-                    }
-                  }
-                  class D {
-                    constructor() {
-                      return onPressOptionItem(index, item);
-                    }
-                  }
-                  cResult[18] = index;
-                  cResult[19] = item;
-                  cResult[20] = onPressOptionItem;
-                  cResult[21] = D;
-                  tmp18 = D;
-                }
-                if (renderDescription != null) {
-                  const renderDescriptionResult = renderDescription(item);
-                }
-                cResult[15] = item;
-                cResult[16] = renderDescription;
-                cResult[17] = renderDescriptionResult;
-                tmp16 = renderDescriptionResult;
-              }
-            }
-          }
-        }
-        if (!skipIcon) {
-          class D {
-            constructor() {
-              return onPressOptionItem(index, item);
-            }
-          }
-          const items1 = [tmp4.selectionOptionItemIconWrapper, iconContainerStyle];
-          tmp15[0] = items1;
-          tmp15[1] = renderIcon(item);
-          const tmp12 = closure_1_8(View, tmp15);
-        }
-        cResult[9] = iconContainerStyle;
-        cResult[10] = item;
-        cResult[11] = renderIcon;
-        cResult[12] = skipIcon;
-        cResult[13] = tmp4;
-        cResult[14] = tmp12;
-        tmp11 = tmp12;
-      }
-      let result;
-      if (itemAccessibilityLabel != null) {
-        result = itemAccessibilityLabel(item);
-      }
-      cResult[6] = item;
-      cResult[7] = itemAccessibilityLabel;
-      cResult[8] = result;
-      tmp9 = result;
-      const tmpResult2 = tmp(4511);
-    }
-    const obj5 = { selected: flag2, disabled };
-    cResult[3] = disabled;
-    cResult[4] = flag2;
-    cResult[5] = obj5;
-    tmp7 = obj5;
-    const tmpResult = tmp(4511);
-  }
-  const obj6 = { checked: flag, disabled };
-  cResult[0] = disabled;
-  cResult[1] = flag;
-  cResult[2] = obj6;
-  tmp5 = obj6;
-}) : ((item) => {
+}
+function SelectionOptionItem(item) {
   item = item.item;
   ({ onPressOptionItem: importDefault, selected, disabled, index: dependencyMap, itemAccessibilityLabel, renderDescription, renderOptionSuffix } = item);
   ({ clearable, start, end, iconContainerStyle, skipIcon, multi, renderIcon } = item);
@@ -592,219 +168,37 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
       selected = false;
     }
     const obj5 = { checked: selected };
-    let tmp6Result2 = tmp6(tmp2(5852).FormCheckbox, obj5);
+    let tmp6Result2 = tmp6(tmp2(5866).FormCheckbox, obj5);
   } else {
     tmp6Result2 = null;
     if (true === selected) {
-      tmp6Result2 = tmp6(tmp2(9581).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp6Result2 = tmp6(tmp2(9585).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp6Result2;
   obj4.children = items1;
-  obj2.trailing = v65535(View, obj4);
-  return closure_1_8(TableRow.TableRow, obj2);
-});
-ReactCompilerGating = fn(558);
-let obj4 = { paddingHorizontal: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_16, marginHorizontal: nativeDefault.space.PX_16 };
+  obj2.trailing = closure_1_10(View, obj4);
+  return React6(TableRow.TableRow, obj2);
+}
+const View = fn(17).View;
+let closure_7 = fn(7428).ACTION_SHEET_START_HEIGHT_RATIO;
+const jsxProd = fn(21);
+({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
+const createStyles = fn(4788);
+let obj2 = { selectionOptionItemIconWrapper: { width: nativeDefault.space.PX_32, alignItems: "center" }, tagListIconWrapper: null, tagListIcon: null, textInputWrapper: null };
+let size = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16 };
+obj2.tagListIconWrapper = size;
+const rect = { transform: null, top: -nativeDefault.space.PX_4, left: -nativeDefault.space.PX_4 };
+let items = [{ scale: 0.75 }];
+rect.transform = items;
+obj2.tagListIcon = rect;
+let obj3 = { width: nativeDefault.space.PX_32, alignItems: "center" };
+obj2.textInputWrapper = { paddingHorizontal: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_16, marginHorizontal: nativeDefault.space.PX_16 };
+let closure_11 = createStyles.createStyles(obj2);
 size = fn(2);
 let result = size.fileFinishedImporting("modules/interaction_components/native/components/SelectComponentActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionComponent) => {
-  const cResult = selectionActionComponent(selectedCount[9]).c(51);
-  selectionActionComponent = selectionActionComponent.selectionActionComponent;
-  ({ labelComponent, onPressOptionItem } = selectionActionComponent);
-  ({ selectedOptions, selectedCount } = selectionActionComponent);
-  const renderIcon = selectionActionComponent.renderIcon;
-  ({ renderHeaderIcon, iconContainerStyle } = selectionActionComponent);
-  const skipIcon = selectionActionComponent.skipIcon;
-  const renderDescription = selectionActionComponent.renderDescription;
-  const renderOptionSuffix = selectionActionComponent.renderOptionSuffix;
-  ({ onQueryChange, options } = selectionActionComponent);
-  const itemStyle = selectionActionComponent.itemStyle;
-  const isSelected = selectionActionComponent.isSelected;
-  ({ submitSelection, itemAccessibilityLabel } = selectionActionComponent);
-  const channelId = selectionActionComponent.channelId;
-  ({ expanded, onRemoveOptionItem, allowEmpty } = selectionActionComponent);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { isKeyboardAwareOnAndroid: false };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const insets = onPressOptionItem(tmp2[18])(first).insets;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-    const items = [];
-    cResult[1] = X;
-    cResult[2] = items;
-    let tmp6 = items;
-    let tmp5 = X;
-  } else {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-    tmp6 = cResult[2];
-  }
-  const effect = renderIcon.useEffect(tmp5, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-    const safeAreaInsets = obj3.getSafeAreaInsets();
-    cResult[3] = safeAreaInsets;
-    const tmp8 = safeAreaInsets;
-  } else {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-    const windowDimensions = obj4.getWindowDimensions();
-    cResult[4] = windowDimensions;
-    const tmp10 = windowDimensions;
-  } else {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-  }
-  const diff = tmp10.height - tmp(tmp2[22]).NAV_BAR_HEIGHT_MULTILINE - tmp8.top;
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-    const items1 = [renderDescription];
-    class G {
-      constructor() {
-        return renderDescription.getChannelId();
-      }
-    }
-    cResult[5] = items1;
-    cResult[6] = G;
-    let tmp14 = G;
-    const tmp13 = items1;
-  } else {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-    tmp14 = cResult[6];
-  }
-  let obj = selectionActionComponent(selectedCount[9]);
-  const stateFromStores = selectionActionComponent(selectedCount[23]).useStateFromStores(tmp13, tmp14);
-  if (cResult[7] !== channelId) {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-    let channel = skipIcon.getChannel(channelId);
-    class G {
-      constructor() {
-        return renderDescription.getChannelId();
-      }
-    }
-    cResult[8] = channel;
-  } else {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-  }
-  channel = tmp16;
-  if (cResult[9] === tmp16) {
-    class X {
-      constructor() {
-        AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-        intl = selectionActionComponent(selectedCount[10]).intl;
-        announceResult = AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
-        return;
-      }
-    }
-  }
-  class U {
-    constructor() {
-      obj = closure_15;
-      isGuildVoiceResult = undefined;
-      if (closure_15 != null) {
-        isGuildVoiceResult = obj.isGuildVoice();
-      }
-      if (!isGuildVoiceResult) {
-        tmp2 = channelId;
-        isGuildVoiceResult = null == channelId;
-      }
-      if (!isGuildVoiceResult) {
-        tmp3 = closure_14;
-        tmp4 = channelId;
-        isGuildVoiceResult = closure_14 === channelId;
-      }
-      if (!isGuildVoiceResult) {
-        tmp5 = closure_1;
-        tmp6 = closure_2;
-        obj2 = closure_1(closure_2[24]);
-        hideActionSheetResult = obj2.hideActionSheet();
-      }
-      return;
-    }
-  }
-  const items2 = [stateFromStores, channelId, tmp16];
-  cResult[9] = tmp16;
-  cResult[10] = channelId;
-  cResult[11] = stateFromStores;
-  cResult[12] = items2;
-  cResult[13] = U;
-}) : ((selectionActionComponent) => {
+export default function SelectComponentActionSheet(selectionActionComponent) {
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
   const onPressOptionItem = selectionActionComponent.onPressOptionItem;
   const selectedCount = selectionActionComponent.selectedCount;
@@ -813,7 +207,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionC
   const skipIcon = selectionActionComponent.skipIcon;
   const renderDescription = selectionActionComponent.renderDescription;
   const renderOptionSuffix = selectionActionComponent.renderOptionSuffix;
-  options = selectionActionComponent.options;
+  const options = selectionActionComponent.options;
   const itemStyle = selectionActionComponent.itemStyle;
   const isSelected = selectionActionComponent.isSelected;
   const itemAccessibilityLabel = selectionActionComponent.itemAccessibilityLabel;
@@ -821,17 +215,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionC
   const allowEmpty = selectionActionComponent.allowEmpty;
   ({ labelComponent, selectedOptions, onQueryChange, submitSelection, expanded, onRemoveOptionItem } = selectionActionComponent);
   const effect = renderIcon.useEffect(() => {
-    const AccessibilityAnnouncer = selectionActionComponent(selectedCount[19]).AccessibilityAnnouncer;
-    const intl = selectionActionComponent(selectedCount[10]).intl;
-    AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[10]).t["7gxe9o"]));
+    const AccessibilityAnnouncer = selectionActionComponent(selectedCount[17]).AccessibilityAnnouncer;
+    const intl = selectionActionComponent(selectedCount[9]).intl;
+    AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[9]).t["7gxe9o"]));
   }, []);
   const memo = renderIcon.useMemo(() => {
-    const safeAreaInsets = selectionActionComponent(selectedCount[20]).getSafeAreaInsets();
-    const obj = selectionActionComponent(selectedCount[20]);
-    return renderOptionSuffix * (selectionActionComponent(selectedCount[21]).getWindowDimensions().height - selectionActionComponent(selectedCount[22]).NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top);
+    const safeAreaInsets = selectionActionComponent(selectedCount[18]).getSafeAreaInsets();
+    const obj = selectionActionComponent(selectedCount[18]);
+    return renderOptionSuffix * (selectionActionComponent(selectedCount[19]).getWindowDimensions().height - selectionActionComponent(selectedCount[20]).NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top);
   }, []);
   const items = [renderDescription];
-  const stateFromStores = selectionActionComponent(selectedCount[23]).useStateFromStores(items, () => renderDescription.getChannelId());
+  const stateFromStores = selectionActionComponent(selectedCount[21]).useStateFromStores(items, () => renderDescription.getChannelId());
   const channel = skipIcon.getChannel(channelId);
   const items1 = [stateFromStores, channelId, channel];
   const effect1 = renderIcon.useEffect(() => {
@@ -888,9 +282,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionC
     obj.renderOptionSuffix = renderOptionSuffix;
     obj.itemAccessibilityLabel = itemAccessibilityLabel;
     obj.multi = memo1;
-    return closure_2_8(closure_13, obj);
+    return React6(SelectionOptionItem, obj);
   }, items3);
-  let obj = selectionActionComponent(selectedCount[23]);
+  let obj = selectionActionComponent(selectedCount[21]);
   let tmp5 = selectionActionComponent;
   let obj2 = { scrollable: true, ref: renderIcon.useRef(null), startHeight: memo, startExpanded: expanded, header: null, children: null };
   const obj3 = { selectionActionComponent, labelComponent, selectButtonDisabled: null, selectedOptions: null, submitSelection: null, onQueryChange: null, onPressOptionItem: null, onRemoveOptionItem: null, renderIcon: null };
@@ -916,18 +310,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionC
       keyboardShouldPersistTaps: "always",
       accessibilityRole: null
     };
-    const obj5 = { paddingHorizontal: tmp(tmp2[7]).space.PX_16, paddingBottom: tmp(tmp2[7]).space.PX_16 + onPressOptionItem(selectedCount[18])({ isKeyboardAwareOnAndroid: false }).insets.bottom };
+    const obj5 = { paddingHorizontal: tmp(tmp2[7]).space.PX_16, paddingBottom: tmp(tmp2[7]).space.PX_16 + onPressOptionItem(selectedCount[16])({ isKeyboardAwareOnAndroid: false }).insets.bottom };
     obj4.contentContainerStyle = obj5;
     let str = "radiogroup";
     if (memo1) {
       str = "none";
     }
     obj4.accessibilityRole = str;
-    obj2.children = tmp12(tmp5(tmp2[25]).BottomSheetFlatList, obj4);
+    obj2.children = tmp12(tmp5(tmp2[24]).BottomSheetFlatList, obj4);
     return tmp12(tmp13, obj2);
   } else if (0 === selectedCount) {
     let tmp16 = !allowEmpty;
   } else {
     tmp16 = selectedCount < selectionActionComponent.minValues;
   }
-});
+};

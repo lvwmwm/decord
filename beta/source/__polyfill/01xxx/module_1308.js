@@ -4,4 +4,4 @@
 
 // Module 1308
 
-export default URIError;
+export default Math.max;

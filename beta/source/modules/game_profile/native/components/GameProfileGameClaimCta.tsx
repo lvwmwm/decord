@@ -1,119 +1,20 @@
-// Module ID: 9208
-// Function ID: 9209
+// Module ID: 9210
+// Function ID: 9211
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1078, 21, 558, 568, 8976, 7592, 7596, 1982, 1119, 5220, 2]
+// Dependencies: [5, 19, 1074, 21, 8989, 7590, 7594, 1978, 5218, 1115, 2]
+// Exports: default
 
-// Module 9208 (GameProfileGameClaimCta)
-import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7592 */;
+// Module 9210 (GameProfileGameClaimCta)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
 const require = fn;
-const RelativeMarketingURLs = fn(1078).RelativeMarketingURLs;
+const RelativeMarketingURLs = fn(1074).RelativeMarketingURLs;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileGameClaimCta.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
-  let Button = _require;
-  let tmp = dependencyMap;
-  const cResult = require("c").c(5);
-  trackAction = trackAction.trackAction;
-  _require = trackAction;
-  if (cResult[0] !== trackAction) {
-    _require = asyncGeneratorStep(async (arg0, value) => {
-      if (v3 === 2) {
-        v3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          v3 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              v3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              v3 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              v3(v3(8976).GameProfileTrackActionActions.ClaimGame);
-              c1 = 1;
-              v3 = 1;
-              const obj4 = { value: MobileWebHandoffLinkingDefault.redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7596).LoginHandoffSource.GAME_CLAIM), done: false };
-              return obj4;
-            }
-          } else if (arg0 === 1) {
-            v3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            v3 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            v3 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } catch (tmp5) {
-          v3 = tmp;
-          throw tmp5;
-        }
-      }
-    });
-    const fn = function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    };
-    cResult[0] = trackAction;
-    cResult[1] = fn;
-    let tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  const linkedApplications = trackAction.game.linkedApplications;
-  let someResult;
-  if (linkedApplications != null) {
-    someResult = linkedApplications.some((type) => type.type === closure_0(1982).GameLinkTypes.OFFICIAL);
-  }
-  if (someResult != null) {
-    if (someResult) {
-      return null;
-    }
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = Button(1119).intl;
-    const stringResult = intl.string(Button(1119).t["mqg+to"]);
-    cResult[2] = stringResult;
-    let tmp7 = stringResult;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] !== tmp3) {
-    Button = Button(5220).Button;
-    let obj2 = { variant: "secondary", size: "md", text: tmp7, onPress: tmp3 };
-    tmp = <Button variant="secondary" size="md" text={tmp7} onPress={tmp3} />;
-    cResult[3] = tmp3;
-    cResult[4] = tmp;
-  }
-}) : ((trackAction) => {
+export default function GameProfileGameClaimCta(trackAction) {
   trackAction = trackAction.trackAction;
   const items = [trackAction];
   const linkedApplications = trackAction.game.linkedApplications;
@@ -129,7 +30,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -143,10 +44,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => 
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            trackAction(v3(8976).GameProfileTrackActionActions.ClaimGame);
+            trackAction(v3(8989).GameProfileTrackActionActions.ClaimGame);
             v1 = 1;
             v3 = 1;
-            const obj4 = { value: v1(7592).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7596).LoginHandoffSource.GAME_CLAIM), done: false };
+            const obj4 = { value: v1(7590).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7594).LoginHandoffSource.GAME_CLAIM), done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
@@ -158,7 +59,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => 
           return obj;
         } else {
           v3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         v3 = tmp;
@@ -167,16 +68,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => 
     }
   }), items);
   if (linkedApplications != null) {
-    someResult = linkedApplications.some((type) => type.type === trackAction(dependencyMap[9]).GameLinkTypes.OFFICIAL);
+    someResult = linkedApplications.some((type) => type.type === trackAction(dependencyMap[7]).GameLinkTypes.OFFICIAL);
   }
   if (someResult == null) {
     let obj = { variant: "secondary", size: "md", text: null, onPress: null };
-    const intl = trackAction(1119).intl;
-    obj.text = intl.string(trackAction(1119).t["mqg+to"]);
+    const intl = trackAction(1115).intl;
+    obj.text = intl.string(trackAction(1115).t["mqg+to"]);
     obj.onPress = callback;
-    let tmp3 = jsx(trackAction(5220).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+    let tmp3 = jsx(trackAction(5218).Button, { variant: "secondary", size: "md", text: null, onPress: null });
   } else {
     tmp3 = null;
   }
   return tmp3;
-});
+};

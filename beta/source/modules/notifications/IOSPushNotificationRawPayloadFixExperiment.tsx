@@ -1,11 +1,11 @@
-// Module ID: 5526
-// Function ID: 5527
+// Module ID: 5524
+// Function ID: 5525
 // Name: IOSPushNotificationRawPayloadFixExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 // Exports: isIOSPushNotificationRawPayloadFixExperimentEnabled
 
-// Module 5526 (IOSPushNotificationRawPayloadFixExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 5524 (IOSPushNotificationRawPayloadFixExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-01-ios-push-notif-json-fix", kind: "user", defaultConfig: { enabled: false }, variations: null };

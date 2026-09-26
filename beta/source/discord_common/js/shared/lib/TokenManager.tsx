@@ -1,12 +1,12 @@
-// Module ID: 1104
-// Function ID: 1105
+// Module ID: 1100
+// Function ID: 1101
 // Name: TokenManager
-// Dependencies: [1089, 510, 2]
+// Dependencies: [1085, 510, 2]
 // Exports: getAnalyticsToken, getToken, hideToken, init, removeAnalyticsToken, setAnalyticsToken, setToken, showToken
 
-// Module 1104 (TokenManager)
+// Module 1100 (TokenManager)
 import Storage6 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1089 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 function setSecondaryToken(token, __analytics__) {

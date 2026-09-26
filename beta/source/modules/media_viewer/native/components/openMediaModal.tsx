@@ -1,13 +1,13 @@
-// Module ID: 8567
-// Function ID: 8568
+// Module ID: 8562
+// Function ID: 8563
 // Name: openMediaModal
-// Dependencies: [32, 5, 4483, 1078, 1482, 8568, 1984, 8569, 8570, 38, 4757, 8596, 4993, 8597, 2]
+// Dependencies: [32, 5, 4479, 1074, 1478, 8563, 1980, 8564, 8565, 38, 4755, 8591, 4991, 8592, 2]
 // Exports: openMediaModal
 
-// Module 8567 (openMediaModal)
+// Module 8562 (openMediaModal)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4483 */;
+import ActionSheetStore from "ActionSheetStore" /* 4479 */;
 
 const require = fn;
 let closure_7 = async function _openMediaModal() {
@@ -68,7 +68,7 @@ let closure_7 = async function _openMediaModal() {
     closure_1_11.markSessionStarted({ channelId, numMediaItems: sources.length, source });
     closure_1_12();
   });
-  await "IconComponent";
+  await "HermesInternal";
   initialIndex = tmp2;
   ({ originViewOrOriginLayout: closure_129_0, initialIndex } = closure_0);
   if (initialIndex === undefined) {
@@ -81,9 +81,9 @@ let closure_7 = async function _openMediaModal() {
   }
   closure_129_6 = openAs;
   closure_129_7 = Object.assign(tmp26, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onClose: 0, openAs: 0 }));
-  return "Set";
+  return "PX_16";
 };
-const MEDIA_MODAL_KEY = fn(1078).MEDIA_MODAL_KEY;
+const MEDIA_MODAL_KEY = fn(1074).MEDIA_MODAL_KEY;
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/media_viewer/native/components/openMediaModal.tsx");
 

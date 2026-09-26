@@ -1,21 +1,19 @@
-// Module ID: 10493
-// Function ID: 10494
+// Module ID: 11425
+// Function ID: 11426
 // Name: AnimatedTooltip
-// Dependencies: [32, 109, 19, 17, 21, 4529, 10494, 558, 568, 4513, 10496, 10262, 2]
+// Dependencies: [32, 19, 17, 21, 4524, 11426, 4508, 11428, 10265, 2]
+// Exports: AnimatedTooltip
 
-// Module 10493 (AnimatedTooltip)
-import c from "c" /* 568 */;
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4513 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10262 */;
-import Tooltip from "Tooltip" /* 10494 */;
-import TooltipConstants from "TooltipConstants" /* 10496 */;
+// Module 11425 (AnimatedTooltip)
+import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4508 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4524 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10265 */;
+import Tooltip from "Tooltip" /* 11426 */;
+import TooltipConstants from "TooltipConstants" /* 11428 */;
 import _slicedToArray from "module_32" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = ["visible"];
 const StyleSheet = fn(17).StyleSheet;
 const jsx = fn(21).jsx;
 function renderTooltipItem(arg0, arg1) {
@@ -31,52 +29,10 @@ function renderTooltipItem(arg0, arg1) {
   obj.children = tmpResult;
   return jsx(ReanimatedRexportDefault.View, { style: null, pointerEvents: "box-none", children: null });
 }
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("design/components/Tooltip/native/AnimatedTooltip.native.tsx");
 
-export const AnimatedTooltip = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
-  const cResult = c.c(7);
-  visible = visible.visible;
-  const tmp3 = _objectWithoutProperties(visible, closure_3);
-  const enabled = noop.useContext(AccessibilityPreferencesContext.AccessibilityPreferencesContext).reducedMotion.enabled;
-  const obj2 = noop;
-  const result = TooltipConstants.tooltipEnterExitAnimation(tmp3.position);
-  [tmp6, importDefault] = noop.useState(false);
-  if (cResult[0] !== visible) {
-    const fn = function c() {
-      importDefault(visible);
-    };
-    const items = [visible];
-    cResult[0] = visible;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp8 = items;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-    tmp8 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp7, tmp8);
-  let tmp10;
-  if (tmp6) {
-    tmp10 = tmp3;
-  }
-  if (cResult[3] === result) {
-    if (cResult[4] === tmp10) {
-      if (cResult[5] === enabled) {
-        let tmp11 = cResult[6];
-      }
-      return tmp11;
-    }
-  }
-  const tmp12 = jsx(AnimatedEnterExitItemDefault, { useReducedMotion: enabled, item: tmp10, entering: result, exiting: result, renderItem: renderTooltipItem });
-  cResult[3] = result;
-  cResult[4] = tmp10;
-  cResult[5] = enabled;
-  cResult[6] = tmp12;
-  tmp11 = tmp12;
-}) : ((visible) => {
+export const AnimatedTooltip = function AnimatedTooltip(visible) {
   visible = visible.visible;
   const merged = Object.assign(visible, Object.assign({ visible: 0 }));
   const result = TooltipConstants.tooltipEnterExitAnimation(merged.position);
@@ -97,4 +53,4 @@ export const AnimatedTooltip = ReactCompilerGating.isReactCompilerEnabled() ? ((
   obj2.exiting = result;
   obj2.renderItem = renderTooltipItem;
   return tmp5(AnimatedEnterExitItemDefault, obj2);
-});
+};

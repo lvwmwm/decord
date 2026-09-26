@@ -1,17 +1,17 @@
-// Module ID: 13450
-// Function ID: 13451
+// Module ID: 13457
+// Function ID: 13458
 // Name: HideFriendRequestNotesUtils
-// Dependencies: [558, 2023, 8952, 2]
+// Dependencies: [2019, 8954, 2]
+// Exports: useHideFriendRequestNotes
 
-// Module 13450 (HideFriendRequestNotesUtils)
-import UserSettings from "UserSettings" /* 2023 */;
-import useUserIsTeen from "useUserIsTeen" /* 8952 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13457 (HideFriendRequestNotesUtils)
+import UserSettings from "UserSettings" /* 2019 */;
+import useUserIsTeen from "useUserIsTeen" /* 8954 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/people/HideFriendRequestNotesUtils.tsx");
 
-export const useHideFriendRequestNotes = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+export const useHideFriendRequestNotes = function useHideFriendRequestNotes() {
   const HideFriendRequestNotes = UserSettings.HideFriendRequestNotes;
   const setting = HideFriendRequestNotes.useSetting();
   let userIsTeen = useUserIsTeen.useUserIsTeen();
@@ -19,12 +19,4 @@ export const useHideFriendRequestNotes = ReactCompilerGating.isReactCompilerEnab
     userIsTeen = setting;
   }
   return userIsTeen;
-}) : (() => {
-  const HideFriendRequestNotes = UserSettings.HideFriendRequestNotes;
-  const setting = HideFriendRequestNotes.useSetting();
-  let userIsTeen = useUserIsTeen.useUserIsTeen();
-  if (null != setting) {
-    userIsTeen = setting;
-  }
-  return userIsTeen;
-});
+};

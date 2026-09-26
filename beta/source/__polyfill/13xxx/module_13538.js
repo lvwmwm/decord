@@ -1,9 +1,9 @@
 // Module ID: 13538
 // Function ID: 13539
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 13538
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "8d849400b440a33fbe389f999a0310ea", name: "cake_idle", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 80, height: 80, scales: [1, 2, 3], hash: "80a5ad242e4f3350ec4e12c04784e6bf", name: "img_premium_icon_80px", type: "png" });

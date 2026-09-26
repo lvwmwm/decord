@@ -1,11 +1,11 @@
-// Module ID: 4985
-// Function ID: 4986
+// Module ID: 4983
+// Function ID: 4984
 // Name: QualtricsStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 4985 (QualtricsStore)
+// Module 4983 (QualtricsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const obj = { surveys: new Map() };
 const Store = initializeDefault.Store;

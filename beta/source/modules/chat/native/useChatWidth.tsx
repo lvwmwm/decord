@@ -1,25 +1,24 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11807
+// Function ID: 11808
 // Name: useChatWidth
-// Dependencies: [19, 4651, 4653, 11684, 558, 11685, 2]
-// Exports: getChatWidth
+// Dependencies: [19, 4648, 4650, 11808, 11809, 2]
+// Exports: default, getChatWidth
 
-// Module 11683 (useChatWidth)
-import useChatLayout from "useChatLayout" /* 4651 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4653 */;
-import useDrawerWidth from "useDrawerWidth" /* 11684 */;
-import ChatViewWidthContextDefault from "ChatViewWidthContext" /* 11685 */;
+// Module 11807 (useChatWidth)
+import useChatLayout from "useChatLayout" /* 4648 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4650 */;
+import useDrawerWidth from "useDrawerWidth" /* 11808 */;
+import ChatViewWidthContextDefault from "ChatViewWidthContext" /* 11809 */;
 import noop from "module_19" /* 19 */;
 
 const useChatLayoutDefault = useChatLayout;
 const useBaseAppContainerDimensionsDefault = useBaseAppContainerDimensions;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+export default function useChatWidth(arg0) {
   let context = noop.useContext(ChatViewWidthContextDefault);
   const width = useBaseAppContainerDimensionsDefault().width;
   useDrawerWidth;
@@ -36,24 +35,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     context = tmp5;
   }
   return context;
-}) : ((arg0) => {
-  let context = noop.useContext(ChatViewWidthContextDefault);
-  const width = useBaseAppContainerDimensionsDefault().width;
-  useDrawerWidth;
-  if (null == context) {
-    if (null == arg0) {
-      let diff = width;
-      if (useChatLayoutDefault().isChatLockedOpen) {
-        diff = width - tmp3;
-      }
-      let tmp5 = diff;
-    } else {
-      tmp5 = width;
-    }
-    context = tmp5;
-  }
-  return context;
-});
+};
 export const getChatWidth = function getChatWidth(arg0) {
   const obj = useChatLayout;
   const width = useBaseAppContainerDimensions.getBaseAppContainerDimensions().width;

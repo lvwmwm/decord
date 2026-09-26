@@ -1,12 +1,12 @@
-// Module ID: 9867
-// Function ID: 9868
+// Module ID: 9889
+// Function ID: 9890
 // Name: GlobalDiscoveryServersConstants
-// Dependencies: [1095, 1119, 2]
+// Dependencies: [1091, 1115, 2]
 // Exports: getLanguageOptions
 
-// Module 9867 (GlobalDiscoveryServersConstants)
-import DurationsDefault from "Durations" /* 1095 */;
-import util from "util" /* 1119 */;
+// Module 9889 (GlobalDiscoveryServersConstants)
+import DurationsDefault from "Durations" /* 1091 */;
+import util from "util" /* 1115 */;
 
 require = fn;
 let obj = { FEATURED: "featured", GAMING: "gaming", MUSIC: "music", ENTERTAINMENT: "entertainment", TECH: "tech", EDUCATION: "education", HUBS: "hubs" };

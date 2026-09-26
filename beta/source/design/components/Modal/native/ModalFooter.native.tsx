@@ -1,34 +1,19 @@
-// Module ID: 12093
-// Function ID: 12094
+// Module ID: 12210
+// Function ID: 12211
 // Name: ModalFooter
-// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4788, 2]
+// Exports: ModalFooter
 
-// Module 12093 (ModalFooter)
-import c from "c" /* 568 */;
+// Module 12210 (ModalFooter)
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let closure_4 = createStyles.createStyles({ footer: { flexDirection: "column", paddingVertical: 16, paddingHorizontal: 24 } });
-const ReactCompilerGating = fn(558);
+const createStyles = fn(4788);
+let closure_2 = createStyles.createStyles({ footer: { flexDirection: "column", paddingVertical: 16, paddingHorizontal: 24 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalFooter.native.tsx");
 
-export const ModalFooter = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
-  const cResult = c.c(3);
-  children = children.children;
-  const tmp2 = closure_4();
-  if (cResult[0] === children) {
-    if (cResult[1] === tmp2.footer) {
-      let tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  const tmp4 = <View style={tmp2.footer}>{children}</View>;
-  cResult[0] = children;
-  cResult[1] = tmp2.footer;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : ((children) => <View style={closure_4().footer}>{arg0.children}</View>);
+export const ModalFooter = function ModalFooter(children) {
+  return <View style={closure_2().footer}>{arg0.children}</View>;
+};

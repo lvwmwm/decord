@@ -1,15 +1,15 @@
-// Module ID: 18277
-// Function ID: 18278
+// Module ID: 18268
+// Function ID: 18269
 // Name: MidjourneyOnboardingManager
-// Dependencies: [5, 14169, 1078, 7397, 14168, 7523, 2]
+// Dependencies: [5, 14159, 1074, 7395, 14158, 7521, 2]
 
-// Module 18277 (MidjourneyOnboardingManager)
+// Module 18268 (MidjourneyOnboardingManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 const require = fn;
-const MIDJOURNEY_GUILD_ID = fn(14169).MIDJOURNEY_GUILD_ID;
-const Routes = fn(1078).Routes;
+const MIDJOURNEY_GUILD_ID = fn(14159).MIDJOURNEY_GUILD_ID;
+const Routes = fn(1074).Routes;
 class MidjourneyOnboardingManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -30,7 +30,7 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -47,20 +47,20 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
             if (obj6.isEligibleForMidjourneyRedirect(channel)) {
               v1 = 1;
               dependencyMap = 1;
-              const obj4 = { value: tmp21(14168).hasRedirectedToGuild(MIDJOURNEY_GUILD_ID), done: false };
+              const obj4 = { value: tmp21(14158).hasRedirectedToGuild(MIDJOURNEY_GUILD_ID), done: false };
               return obj4;
             } else {
               dependencyMap = 3;
             }
-            obj6 = tmp2(14168);
+            obj6 = tmp2(14158);
             tmp21 = tmp2;
           }
         } else if (arg0 === 1) {
           dependencyMap = 3;
           throw value;
         } else if (arg0 !== 2) {
-          v1(7523)(Routes.CHANNEL(null, closure_128_0.id));
-          const tmp9 = v1(7523);
+          v1(7521)(Routes.CHANNEL(null, closure_128_0.id));
+          const tmp9 = v1(7521);
         }
         dependencyMap = 3;
         const obj = { value, done: true };

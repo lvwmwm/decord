@@ -1,27 +1,24 @@
-// Module ID: 7345
-// Function ID: 7346
+// Module ID: 7343
+// Function ID: 7344
 // Name: useFastestListPropsScrollReporting
-// Dependencies: [558, 568, 4529, 2]
+// Dependencies: [4524, 2]
+// Exports: default
 
-// Module 7345 (useFastestListPropsScrollReporting)
-import c from "c" /* 568 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7343 (useFastestListPropsScrollReporting)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
 import size from "module_2" /* 2 */;
 
 const __initData = { code: "function useFastestListPropsScrollReportingNativeTsx1(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
-const __initData2 = { code: "function useFastestListPropsScrollReportingNativeTsx2(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
 let result = size.fileFinishedImporting("modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((scrollReporting, horizontal) => {
+export default function useFastestListPropsScrollReporting(scrollReporting, horizontal) {
   closure_0 = horizontal;
-  const cResult = c.c(8);
   let scrollPosition;
   if ("animatedScrollPosition" === scrollReporting.scrollReporting) {
     scrollPosition = scrollReporting.scrollPosition;
   }
-  const obj2 = { onScroll: null };
-  const fn = function t(contentOffset) {
+  ReanimatedRexport;
+  const fn = function n(contentOffset) {
     if (null != scrollPosition) {
       contentOffset = contentOffset.contentOffset;
       const result = scrollPosition.set(closure_0 ? contentOffset.x : contentOffset.y);
@@ -30,62 +27,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scrollReporting,
   fn.__closure = { scrollPosition, horizontal };
   fn.__workletHash = 14196294214838;
   fn.__initData = __initData;
-  obj2.onScroll = fn;
-  const animatedScrollHandler = ReanimatedRexport.useAnimatedScrollHandler(obj2);
-  scrollReporting = scrollReporting.scrollReporting;
-  if ("animatedScrollPosition" === scrollReporting) {
-    if (cResult[0] !== animatedScrollHandler) {
-      const obj3 = { onScroll: animatedScrollHandler };
-      cResult[0] = animatedScrollHandler;
-      cResult[1] = obj3;
-      let tmp8 = obj3;
-    } else {
-      tmp8 = cResult[1];
-    }
-    return tmp8;
-  } else if ("animatedCallbacks" === scrollReporting) {
-    if (cResult[2] !== scrollReporting.scrollHandlerAnimated) {
-      const obj5 = { onScroll: scrollReporting.scrollHandlerAnimated };
-      cResult[2] = scrollReporting.scrollHandlerAnimated;
-      cResult[3] = obj5;
-      let tmp7 = obj5;
-    } else {
-      tmp7 = cResult[3];
-    }
-    return tmp7;
-  } else {
-    if (cResult[4] === scrollReporting.onScroll) {
-      if (cResult[5] === scrollReporting.onScrollBeginDrag) {
-        if (cResult[6] === scrollReporting.onScrollEndDrag) {
-          let tmp6 = cResult[7];
-        }
-        return tmp6;
-      }
-    }
-    const obj6 = { onScroll: null, onScrollBeginDrag: null, onScrollEndDrag: null };
-    ({ onScroll: obj4.onScroll, onScrollBeginDrag: obj4.onScrollBeginDrag, onScrollEndDrag: obj4.onScrollEndDrag } = scrollReporting);
-    cResult[4] = scrollReporting.onScroll;
-    cResult[5] = scrollReporting.onScrollBeginDrag;
-    cResult[6] = scrollReporting.onScrollEndDrag;
-    cResult[7] = obj6;
-    tmp6 = obj6;
-  }
-}) : ((scrollReporting, horizontal) => {
-  closure_0 = horizontal;
-  let scrollPosition;
-  if ("animatedScrollPosition" === scrollReporting.scrollReporting) {
-    scrollPosition = scrollReporting.scrollPosition;
-  }
-  ReanimatedRexport;
-  const fn = function t(contentOffset) {
-    if (null != scrollPosition) {
-      contentOffset = contentOffset.contentOffset;
-      const result = scrollPosition.set(closure_0 ? contentOffset.x : contentOffset.y);
-    }
-  };
-  fn.__closure = { scrollPosition, horizontal };
-  fn.__workletHash = 16229658519349;
-  fn.__initData = __initData2;
   { onScroll: null }.onScroll = fn;
   scrollReporting = scrollReporting.scrollReporting;
   if ("animatedScrollPosition" === scrollReporting) {
@@ -99,4 +40,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scrollReporting,
     ({ onScroll: obj.onScroll, onScrollBeginDrag: obj.onScrollBeginDrag, onScrollEndDrag: obj.onScrollEndDrag } = scrollReporting);
     return obj;
   }
-});
+};

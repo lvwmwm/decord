@@ -1,17 +1,17 @@
-// Module ID: 4830
-// Function ID: 4831
+// Module ID: 4828
+// Function ID: 4829
 // Name: PresenceStore
-// Dependencies: [502, 1376, 1078, 4831, 12, 1335, 11, 504, 577, 2]
+// Dependencies: [502, 1372, 1074, 4829, 12, 1331, 11, 504, 573, 2]
 
-// Module 4830 (PresenceStore)
+// Module 4828 (PresenceStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import _modDef1335 from "module_1335" /* 1335 */;
-import hasRichActivityDefault from "hasRichActivity" /* 4831 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import _modDef1331 from "module_1331" /* 1331 */;
+import hasRichActivityDefault from "hasRichActivity" /* 4829 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 function sortActivity(type, type2) {
   type = type2.type;
@@ -49,7 +49,7 @@ function sortActivity(type, type2) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(4831)(type)) {
+    if (tmp3(4829)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;
@@ -188,7 +188,7 @@ function flattenPresence(id) {
       HermesBuiltin.arraySpread(flatMapResult1, 0);
       const reversed1 = items2.reverse();
       const _Map2 = Map;
-      const map1 = new Map(reversed1.map((party) => {
+      map1 = new Map(reversed1.map((party) => {
         party = party.party;
         let id;
         if (party != null) {
@@ -292,7 +292,7 @@ function updatePresence(arg0) {
       let activities2 = sorted;
       if (null != tmp7[guildId]) {
         activities2 = sorted;
-        if (_modDef1335(tmp25.activities, sorted)) {
+        if (_modDef1331(tmp25.activities, sorted)) {
           activities2 = tmp25.activities;
         }
       }
@@ -384,7 +384,7 @@ function clearPresences(id) {
     continue;
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ StatusTypes: closure_4, ActivityTypes: hasOwnProperty, ClientTypes: metroRequire, ME: closure_7, UserFlags: closure_8 } = Constants);
 let closure_9 = Object.freeze([]);
 const presencesForGuilds = {};
@@ -557,7 +557,7 @@ prototype["getApplicationActivity"] = function getApplicationActivity(arg0, arg1
   }
   return this.findActivity(arg0, (application_id) => application_id.application_id === closure_0, tmp, true);
 };
-prototype["findActivity"] = function findActivity(arg0, cResult) {
+prototype["findActivity"] = function findActivity(arg0, _messages) {
   let tmp = arg2;
   if (arg2 === undefined) {
     tmp = null;
@@ -575,7 +575,7 @@ prototype["findActivity"] = function findActivity(arg0, cResult) {
   if (flag) {
     combined = activities.concat(self.getHiddenActivities(arg0, tmp));
   }
-  return combined.find(cResult);
+  return combined.find(_messages);
 };
 prototype["getActivityMetadata"] = function getActivityMetadata(arg0) {
   return activityMetadata[arg0];

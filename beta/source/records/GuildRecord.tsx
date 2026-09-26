@@ -1,16 +1,16 @@
-// Module ID: 2063
-// Function ID: 2064
+// Module ID: 2059
+// Function ID: 2060
 // Name: GuildRecord
-// Dependencies: [2060, 1078, 1401, 2013, 11, 2064, 2]
+// Dependencies: [2056, 1074, 1397, 2009, 11, 2060, 2]
 // Exports: getGuildAcronym, getGuildEveryoneRoleId, getGuildIconSource, getGuildIconURL, isGuildLurker, isGuildNSFW, isGuildOwner, isGuildOwnerWithRequiredMfaLevel, updateGameApplications, updateJoinedAt
 
-// Module 2063 (GuildRecord)
+// Module 2059 (GuildRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import StringUtils from "StringUtils" /* 2013 */;
-import ServerNSFWLevelExperiment from "ServerNSFWLevelExperiment" /* 2064 */;
-import PlainRecord from "PlainRecord" /* 2060 */;
-import Constants from "Constants" /* 1078 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import StringUtils from "StringUtils" /* 2009 */;
+import ServerNSFWLevelExperiment from "ServerNSFWLevelExperiment" /* 2060 */;
+import PlainRecord from "PlainRecord" /* 2056 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ set: c3, TypeTag } = PlainRecord);
@@ -38,11 +38,10 @@ export const getGuildIconURL = function getGuildIconURL(id, size) {
   }
   return AvatarUtilsDefault.getGuildIconURL({ id: id.id, size, icon: id.icon, canAnimate: flag, lossless: flag2 });
 };
-export const getGuildIconSource = function getGuildIconSource(arg0, size, hasItem) {
+export const getGuildIconSource = function getGuildIconSource(arg0, size, flag) {
   closure_0 = arg0;
   importDefault = size;
-  let flag = hasItem;
-  if (hasItem === undefined) {
+  if (flag === undefined) {
     flag = false;
   }
   return AvatarUtilsDefault.getAnimatableSourceWithFallback(flag, (canAnimate) => AvatarUtilsDefault.getGuildIconSource({ id: closure_0.id, size, icon: closure_0.icon, canAnimate }));

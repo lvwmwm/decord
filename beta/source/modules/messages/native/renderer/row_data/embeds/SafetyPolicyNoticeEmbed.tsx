@@ -1,17 +1,17 @@
-// Module ID: 13588
-// Function ID: 13589
+// Module ID: 13578
+// Function ID: 13579
 // Name: SafetyPolicyNoticeEmbed
-// Dependencies: [17, 1078, 8728, 4384, 1119, 8241, 8904, 2]
+// Dependencies: [17, 1074, 8723, 4380, 1115, 8236, 8899, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 13588 (SafetyPolicyNoticeEmbed)
+// Module 13578 (SafetyPolicyNoticeEmbed)
 import _mod17 from "module_17" /* 17 */;
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8241 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8728 */;
-import _modDef8904 from "module_8904" /* 8904 */;
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8236 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8723 */;
+import _modDef8899 from "module_8899" /* 8899 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -59,11 +59,11 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
             const obj = { titleText: null, titleIcon: null, subtitleText: null, descriptionText: null, ctaText: null, classificationId: null };
             const intl = util.intl;
             obj.titleText = intl.string(util.t["4CxGXi"]);
-            obj.titleIcon = renderer_EmbedUtils.getAssetUriForEmbed(Image.resolveAssetSource(_modDef8904));
+            obj.titleIcon = renderer_EmbedUtils.getAssetUriForEmbed(Image.resolveAssetSource(_modDef8899));
             const intl2 = util.intl;
             const obj3 = { daysAgo: null };
-            const obj4 = _modDef4384();
-            obj3.daysAgo = obj4.diff(_modDef4384.unix(parsed), "days");
+            const obj4 = _modDef4380();
+            obj3.daysAgo = obj4.diff(_modDef4380.unix(parsed), "days");
             obj.subtitleText = intl2.formatToPlainString(util.t.eevFb6, obj3);
             const intl3 = util.intl;
             obj.descriptionText = intl3.string(util.t["5CLb0A"]);

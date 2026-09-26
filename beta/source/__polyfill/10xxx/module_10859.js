@@ -1,18 +1,16 @@
 // Module ID: 10859
 // Function ID: 10860
-// Dependencies: [41, 42, 93, 95, 98, 10764, 10858, 10791, 10771]
+// Dependencies: [41, 42, 93, 95, 98, 10857, 10735]
 
 // Module 10859
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10764 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10771 */;
-import _mod10858 from "module_10858" /* 10858 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const NLWeekdayParser = require;
+let AbstractParserWithLeftRightBoundaryChecking = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,13 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:op\\s*?)?(?:(deze|vorige|volgende)\\s*(?:week\\s*)?)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10858.WEEKDAY_DICTIONARY) + ")(?=\\W|$)", "i");
-class NLWeekdayParser {
+class AbstractParserWithLeftBoundaryChecking {
   constructor() {
     self = this;
-    tmp = c2(this, NLWeekdayParser);
+    tmp = c2(this, AbstractParserWithLeftRightBoundaryChecking);
     tmp2 = closure_4;
-    obj = closure_4(NLWeekdayParser);
+    obj = closure_4(AbstractParserWithLeftRightBoundaryChecking);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -53,40 +50,61 @@ class NLWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+AbstractParserWithLeftRightBoundaryChecking = AbstractParserWithLeftBoundaryChecking;
+_inherits(AbstractParserWithLeftBoundaryChecking, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return AbstractParserWithLeftRightBoundaryChecking(10857).REGEX_PARTS.leftBoundary;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const formatted = arg1[2].toLowerCase();
-      let str2 = arg1[1];
-      if (!str2) {
-        str2 = arg1[3];
-      }
-      if (!str2) {
-        str2 = "";
-      }
-      const formatted1 = str2.toLowerCase();
-      let str3 = "last";
-      if ("vorige" != formatted1) {
-        str3 = "next";
-        if ("volgende" != formatted1) {
-          str3 = null;
-          if ("deze" == formatted1) {
-            str3 = "this";
-          }
-        }
-      }
-      return NLWeekdayParser(10791).createParsingComponentsAtWeekday(reference.reference, NLWeekdayParser(10858).WEEKDAY_DICTIONARY[formatted], str3);
+    key: "innerPattern",
+    value: function innerPattern(arg0) {
+      const regExp = new RegExp(this.innerPatternString(arg0), AbstractParserWithLeftRightBoundaryChecking(10857).REGEX_PARTS.flags);
+      return regExp;
+    }
+  },
+  {
+    key: "innerPatternHasChange",
+    value: function innerPatternHasChange(arg0, arg1) {
+      return false;
     }
   }
 ];
+const _moduleResult = _createClass(AbstractParserWithLeftBoundaryChecking, items);
+class AbstractParserWithLeftRightBoundaryChecking {
+  constructor() {
+    self = this;
+    tmp = c2(this, AbstractParserWithLeftRightBoundaryChecking);
+    tmp2 = closure_4;
+    obj = closure_4(AbstractParserWithLeftRightBoundaryChecking);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractParserWithLeftRightBoundaryChecking, _moduleResult);
+const entry1 = {
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    const combined = "" + this.innerPatternString(arg0) + AbstractParserWithLeftRightBoundaryChecking(10857).REGEX_PARTS.rightBoundary;
+    const regExp = new RegExp(combined, AbstractParserWithLeftRightBoundaryChecking(10857).REGEX_PARTS.flags);
+    return regExp;
+  }
+};
+const items1 = [entry1];
 
-export default _createClass(NLWeekdayParser, items);
+export const AbstractParserWithLeftBoundaryChecking = _moduleResult;
+export const AbstractParserWithLeftRightBoundaryChecking = _createClass(AbstractParserWithLeftRightBoundaryChecking, items1);

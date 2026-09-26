@@ -1,15 +1,15 @@
-// Module ID: 13947
-// Function ID: 13948
+// Module ID: 13937
+// Function ID: 13938
 // Name: GatewaySocketAnalytics
-// Dependencies: [109, 1376, 1078, 10, 9, 1245, 2]
+// Dependencies: [109, 1372, 1074, 10, 9, 1241, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 13947 (GatewaySocketAnalytics)
+// Module 13937 (GatewaySocketAnalytics)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 function prettyPrintTrace_(calls, arg1) {
   let length;
@@ -55,7 +55,7 @@ function eachTraceCall(calls, fn) {
 let closure_2 = ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"];
 let closure_3 = ["features"];
 let closure_4 = ["threads", "guild_scheduled_events"];
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, ChannelTypes: closure_8 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/gateway/GatewaySocketAnalytics.tsx");

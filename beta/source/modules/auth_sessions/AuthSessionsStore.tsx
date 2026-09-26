@@ -1,11 +1,11 @@
-// Module ID: 14974
-// Function ID: 14975
+// Module ID: 14978
+// Function ID: 14979
 // Name: AuthSessionsStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 14974 (AuthSessionsStore)
+// Module 14978 (AuthSessionsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 function handleInit() {
   items = [];

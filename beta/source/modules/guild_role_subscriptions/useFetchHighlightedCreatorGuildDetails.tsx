@@ -1,10 +1,10 @@
-// Module ID: 18182
-// Function ID: 18183
+// Module ID: 18173
+// Function ID: 18174
 // Name: useFetchHighlightedCreatorGuildDetails
-// Dependencies: [5, 32, 19, 7532, 2]
+// Dependencies: [5, 32, 19, 7530, 2]
 // Exports: default
 
-// Module 18182 (useFetchHighlightedCreatorGuildDetails)
+// Module 18173 (useFetchHighlightedCreatorGuildDetails)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -29,7 +29,7 @@ export default function useFetchHighlightedCreatorGuildDetails(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

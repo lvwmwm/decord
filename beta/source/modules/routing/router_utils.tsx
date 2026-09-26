@@ -1,46 +1,46 @@
-// Module ID: 1105
-// Function ID: 1106
+// Module ID: 1101
+// Function ID: 1102
 // Name: router_utils
-// Dependencies: [1078, 3, 1106, 1114, 1117, 2]
+// Dependencies: [1074, 3, 1102, 1110, 1113, 2]
 // Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
 
-// Module 1105 (router_utils)
+// Module 1101 (router_utils)
 import LoggerDefault from "Logger" /* 3 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import RoutingSources from "RoutingSources" /* 1117 */;
-import Constants from "Constants" /* 1078 */;
-import _extends_mod from "module_1106" /* 1106 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import RoutingSources from "RoutingSources" /* 1113 */;
+import Constants from "Constants" /* 1074 */;
+import _extends_mod from "module_1102" /* 1102 */;
 import size from "module_2" /* 2 */;
 
-function transitionTo(Routes, guildScheduledEvent2) {
-  closure_0 = Routes;
-  let tmp = typeof Routes !== "string";
-  if (typeof Routes === "string") {
+function transitionTo(CHANNELResult, guildScheduledEvent2) {
+  closure_0 = CHANNELResult;
+  let tmp = typeof CHANNELResult !== "string";
+  if (typeof CHANNELResult === "string") {
     tmp = !items.some((item) => ME.startsWith(item));
   }
   let flag = !tmp;
   if (!tmp) {
     const _HermesInternal = HermesInternal;
-    logger.log("" + "assign" + " - route to external path " + Routes);
+    logger.log("" + "assign" + " - route to external path " + CHANNELResult);
     const _window = window;
     const _Event = Event;
     const event = new Event("beforeunload");
     window.dispatchEvent(event);
     const _window2 = window;
     const _location = window.location;
-    _location.assign(Routes);
+    _location.assign(CHANNELResult);
     flag = true;
   }
   if (!flag) {
     const _URL = URL;
     const _window3 = window;
     const _HermesInternal2 = HermesInternal;
-    const uRL = new URL(Routes, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
+    const uRL = new URL(CHANNELResult, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
     const obj = { pathname: null, search: null, hash: null };
     ({ pathname: obj.pathname, search: obj.search, hash: obj.hash } = uRL);
     const merged = Object.assign(guildScheduledEvent2);
     const _HermesInternal3 = HermesInternal;
-    logger.log("transitionTo - Transitioning to " + Routes);
+    logger.log("transitionTo - Transitioning to " + CHANNELResult);
     if (guildScheduledEvent2 != null) {
       const source = guildScheduledEvent2.source;
     }
@@ -91,7 +91,7 @@ function transitionTo(Routes, guildScheduledEvent2) {
     } else if (null != guildScheduledEvent2) {
       str7.push(obj);
     }
-    _extends.push(Routes);
+    _extends.push(CHANNELResult);
   }
 }
 ({ Routes: hasOwnProperty, PageAnalyticsLocations: metroRequire, ComponentActions: closure_7 } = Constants);

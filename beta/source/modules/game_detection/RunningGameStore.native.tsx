@@ -1,16 +1,16 @@
-// Module ID: 2003
-// Function ID: 2004
+// Module ID: 1999
+// Function ID: 2000
 // Name: RunningGameStore
-// Dependencies: [2004, 2019, 7673, 14299, 504, 577, 2]
+// Dependencies: [2000, 2015, 7671, 14289, 504, 573, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
-// Module 2003 (RunningGameStore)
+// Module 1999 (RunningGameStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import OverlayTypes from "OverlayTypes" /* 14299 */;
-import GameStore from "GameStore" /* 2004 */;
-import DetectableGameStore from "DetectableGameStore" /* 2019 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7673 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import OverlayTypes from "OverlayTypes" /* 14289 */;
+import GameStore from "GameStore" /* 2000 */;
+import DetectableGameStore from "DetectableGameStore" /* 2015 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7671 */;
 
 require = fn;
 const Store = initializeDefault.Store;

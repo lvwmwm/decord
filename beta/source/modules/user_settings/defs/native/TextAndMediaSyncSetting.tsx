@@ -1,62 +1,26 @@
-// Module ID: 15745
-// Function ID: 15746
+// Module ID: 15749
+// Function ID: 15750
 // Name: TextAndMediaSyncSetting
-// Dependencies: [1187, 8270, 558, 568, 504, 11630, 1119, 9502, 2]
+// Dependencies: [1183, 8265, 504, 11754, 1115, 9504, 2]
 
-// Module 15745 (TextAndMediaSyncSetting)
+// Module 15749 (TextAndMediaSyncSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9502 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
+import util from "util" /* 1115 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9504 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11630);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectivelySyncedUserSettingsStore];
-    const fn = function s() {
-      return SelectivelySyncedUserSettingsStore.shouldSync("text");
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
-  const items = [SelectivelySyncedUserSettingsStore];
-  return initialize.useStateFromStores(items, () => SelectivelySyncedUserSettingsStore.shouldSync("text"));
-});
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["3340dY"]);
   },
-  parent: fn(8270).MobileUserSettings.CHAT,
-  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(2);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [SelectivelySyncedUserSettingsStore];
-      const fn = function s() {
-        return SelectivelySyncedUserSettingsStore.shouldSync("text");
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp4 = items;
-      tmp5 = fn;
-    } else {
-      [tmp4, tmp5] = cResult;
-    }
-    return initialize.useStateFromStores(tmp4, tmp5);
-  }) : (() => {
+  parent: fn(8265).MobileUserSettings.CHAT,
+  useValue: function useTextAndMediaSyncSettingValue() {
     const items = [SelectivelySyncedUserSettingsStore];
     return initialize.useStateFromStores(items, () => SelectivelySyncedUserSettingsStore.shouldSync("text"));
-  }),
+  },
   onValueChange: UserSettingsActionCreatorsDefault.setShouldSyncTextSettings
 });
 const size = fn(2);

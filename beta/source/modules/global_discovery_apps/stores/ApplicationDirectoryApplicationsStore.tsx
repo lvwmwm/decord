@@ -1,12 +1,12 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7441
+// Function ID: 7442
 // Name: ApplicationDirectoryApplicationsStore
-// Dependencies: [2006, 504, 577, 2]
+// Dependencies: [2002, 504, 573, 2]
 
-// Module 7443 (ApplicationDirectoryApplicationsStore)
+// Module 7441 (ApplicationDirectoryApplicationsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ApplicationRecord from "ApplicationRecord" /* 2006 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ApplicationRecord from "ApplicationRecord" /* 2002 */;
 
 let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };
 obj = {};

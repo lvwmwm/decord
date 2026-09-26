@@ -1,9 +1,0 @@
-// Module ID: 3000
-// Function ID: 3001
-// Dependencies: [1125]
-
-// Module 3000
-import registerAsset from "module_1125" /* 1125 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9yZXF1ZXN0X3RvX3N0cmVhbQ==", scales: [1], hash: "598469df4e418a0bd91a8b1a15a45024", name: "vi.messages.598469df4e418a0bd91a8b1a15a45024.compiled.messages", type: "jsona" });

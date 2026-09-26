@@ -1,17 +1,17 @@
-// Module ID: 4708
-// Function ID: 4709
+// Module ID: 4705
+// Function ID: 4706
 // Name: GuildFilters
-// Dependencies: [32, 4709, 4710, 2067, 14, 1244, 11, 1095, 2]
+// Dependencies: [32, 4706, 4707, 2063, 14, 1240, 11, 1091, 2]
 
-// Module 4708 (GuildFilters)
+// Module 4705 (GuildFilters)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import IntegerDefault from "Integer" /* 14 */;
-import DurationsDefault from "Durations" /* 1095 */;
+import DurationsDefault from "Durations" /* 1091 */;
 import _slicedToArray from "module_32" /* 32 */;
-import AuthInviteStore from "AuthInviteStore" /* 4709 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import MurmurHashV3_mod from "MurmurHashV3" /* 1244 */;
+import AuthInviteStore from "AuthInviteStore" /* 4706 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import MurmurHashV3_mod from "MurmurHashV3" /* 1240 */;
 
 const require = globalThis.__r;
 
@@ -53,7 +53,7 @@ function getRangeData(arg0) {
     if (obj.v3("min_id") === tmp7) {
       min = tmp8;
     } else {
-      let tmp9Result = tmp9(1244);
+      let tmp9Result = tmp9(1240);
       if (tmp9Result.v3("max_id") === tmp7) {
         max = tmp8;
       }
@@ -103,7 +103,7 @@ let MurmurHashV3 = MurmurHashV3_mod;
 obj[MurmurHashV3.v3("guild_has_feature")] = (arg0) => {
   closure_0 = _slicedToArray(_slicedToArray(arg0, 1)[0], 2)[1];
   return (arg0) => {
-    guild = GuildStore.getGuild(arg0);
+    let guild = GuildStore.getGuild(arg0);
     if (guild == null) {
       guild = AuthInviteStore.getGuild(arg0);
     }
@@ -121,7 +121,7 @@ let MurmurHashV3 = MurmurHashV3_mod;
 obj[MurmurHashV3.v3("guild_hub_types")] = (arg0) => {
   closure_0 = _slicedToArray(_slicedToArray(arg0, 1)[0], 2)[1];
   return (arg0) => {
-    guild = GuildStore.getGuild(arg0);
+    let guild = GuildStore.getGuild(arg0);
     if (guild == null) {
       guild = AuthInviteStore.getGuild(arg0);
     }
@@ -136,7 +136,7 @@ let MurmurHashV3 = MurmurHashV3_mod;
 obj[MurmurHashV3.v3("guild_has_vanity_url")] = (arg0) => {
   closure_0 = _slicedToArray(_slicedToArray(arg0, 1)[0], 2)[1];
   return (arg0) => {
-    guild = GuildStore.getGuild(arg0);
+    let guild = GuildStore.getGuild(arg0);
     if (guild == null) {
       guild = AuthInviteStore.getGuild(arg0);
     }

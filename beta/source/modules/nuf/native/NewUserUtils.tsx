@@ -1,24 +1,24 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 17857
+// Function ID: 17858
 // Name: NewUserUtils
-// Dependencies: [5, 17, 16302, 5532, 1376, 1078, 12861, 4999, 12863, 1368, 10094, 577, 1489, 12866, 4648, 17867, 4993, 1105, 12931, 2]
+// Dependencies: [5, 17, 16292, 5530, 1372, 1074, 12960, 4997, 12962, 1364, 10115, 573, 1485, 12965, 4645, 17858, 4991, 1101, 13028, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 17866 (NewUserUtils)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import router_utils from "router_utils" /* 1105 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import Link from "Link" /* 1489 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12866 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12931 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 17867 */;
+// Module 17857 (NewUserUtils)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import router_utils from "router_utils" /* 1101 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import Link from "Link" /* 1485 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12962 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12965 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13028 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 17858 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16302 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
-import UserStore from "UserStore" /* 1376 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16292 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 let closure_12 = async function _shouldSkipContactSyncStep(arg0, value) {
@@ -32,7 +32,7 @@ let closure_12 = async function _shouldSkipContactSyncStep(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -78,7 +78,7 @@ let closure_12 = async function _shouldSkipContactSyncStep(arg0, value) {
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
   NewUserAnalyticsUtils.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
   if (obj2.isModalOpen(NewUserModalTypes.NEW_USER_MODAL_KEY)) {
-    ModalActionCreatorsDefault.popWithKey(tmp(17867).NEW_USER_MODAL_KEY);
+    ModalActionCreatorsDefault.popWithKey(tmp(17858).NEW_USER_MODAL_KEY);
   }
   obj2 = NavigationRouteUtils;
   router_utils.transitionTo(constants2.ME, { navigationReplace: true });
@@ -106,7 +106,7 @@ let closure_18 = async function _getNextOnboardingStep(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -139,7 +139,7 @@ let closure_18 = async function _getNextOnboardingStep(arg0, value) {
           let transitionStep2;
           c6 = 1;
           c7 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -230,10 +230,10 @@ let closure_18 = async function _getNextOnboardingStep(arg0, value) {
   }
 };
 const NativeModules = fn(17).NativeModules;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ PlatformTypes: closure_8, Routes: closure_9 } = Constants);
-const ContactPermissions = fn(12861).ContactPermissions;
-let closure_11 = fn(4999).NotificationAuthorizationStatus;
+const ContactPermissions = fn(12960).ContactPermissions;
+let closure_11 = fn(4997).NotificationAuthorizationStatus;
 let obj2 = { key: "enable-notification", shouldShowStep: null };
 let closure_13 = asyncGeneratorStep(async (arg0, value) => {
   if (c2 === 2) {
@@ -246,7 +246,7 @@ let closure_13 = asyncGeneratorStep(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -307,7 +307,7 @@ let closure_14 = asyncGeneratorStep(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -398,7 +398,7 @@ let items = [
   },
   {
     key: "accept-invite",
-    shouldShowStep: fn(10094).hasDeferredInvite,
+    shouldShowStep: fn(10115).hasDeferredInvite,
     transitionStep() {
       DispatcherDefault.dispatch({ type: "DEFERRED_INVITE_SHOW" });
     }
@@ -415,7 +415,7 @@ export const getKeyForOnboardingStep = function getKeyForOnboardingStep(onboardi
   return key;
 };
 export const continueToNextStep = function continueToNextStep(onboardingStepIndex, current) {
-  state = current;
+  let state = current;
   let key;
   if (items[onboardingStepIndex] != null) {
     key = tmp.key;

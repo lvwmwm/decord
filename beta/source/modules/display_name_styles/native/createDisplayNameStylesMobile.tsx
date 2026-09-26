@@ -1,14 +1,14 @@
-// Module ID: 8258
-// Function ID: 8259
+// Module ID: 8253
+// Function ID: 8254
 // Name: createDisplayNameStylesMobile
-// Dependencies: [4782, 2109, 1376, 1396, 2]
+// Dependencies: [4780, 2105, 1372, 1392, 2]
 // Exports: createDisplayNameStylesMobile, getDisplayNameFontIdForMobileUser
 
-// Module 8258 (createDisplayNameStylesMobile)
-import DisplayNameFont from "DisplayNameFont" /* 1396 */;
-import AccessibilityStore from "AccessibilityStore" /* 4782 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 8253 (createDisplayNameStylesMobile)
+import DisplayNameFont from "DisplayNameFont" /* 1392 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

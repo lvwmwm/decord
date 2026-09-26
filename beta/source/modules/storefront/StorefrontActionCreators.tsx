@@ -1,19 +1,19 @@
-// Module ID: 9095
-// Function ID: 9096
+// Module ID: 9097
+// Function ID: 9098
 // Name: StorefrontActionCreators
-// Dependencies: [5, 4452, 7511, 9096, 9097, 9098, 1078, 1095, 577, 1275, 7510, 2]
+// Dependencies: [5, 4448, 7509, 9098, 9099, 9100, 1074, 1091, 573, 1271, 7508, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9095 (StorefrontActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 9097 (StorefrontActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BillingInfoStore from "BillingInfoStore" /* 4452 */;
-import SKUPricesStore from "SKUPricesStore" /* 7511 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9096 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9097 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9098 */;
+import BillingInfoStore from "BillingInfoStore" /* 4448 */;
+import SKUPricesStore from "SKUPricesStore" /* 7509 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9098 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9099 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9100 */;
 
 require = fn;
 function shouldFetchStorefrontPromotions(arg0) {
@@ -44,7 +44,7 @@ let closure_12 = async function _maybeFetchStorefrontPromotions(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -75,7 +75,7 @@ let closure_12 = async function _maybeFetchStorefrontPromotions(arg0, value) {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp8) {
       c1 = tmp;
       throw tmp8;
@@ -103,7 +103,7 @@ let closure_14 = async function _fetchStorefrontPromotions(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -182,10 +182,10 @@ let closure_15 = async function _fetchStorefrontPricesForApplicationId(arg0) {
   c4 = 0;
   let iter = (async (arg0) => {
     await closure_130_17({ type: "application", applicationId: applicationId2 });
-    await "IconComponent";
+    await "HermesInternal";
     closure_1 = tmp2;
     applicationId2 = applicationId.applicationId;
-    return "Set";
+    return "PX_16";
   })();
   iter.next();
   return iter;
@@ -196,10 +196,10 @@ let closure_16 = async function _fetchStorefrontPricesForSkuIds(arg0) {
   c4 = 0;
   let iter = (async (arg0) => {
     await closure_130_17({ type: "skus", skuIds: skuIds2 });
-    await "IconComponent";
+    await "HermesInternal";
     closure_1 = tmp2;
     skuIds2 = skuIds.skuIds;
-    return "Set";
+    return "PX_16";
   })();
   iter.next();
   return iter;
@@ -225,7 +225,7 @@ let closure_18 = async function _fetchStorefrontPrices(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -278,7 +278,7 @@ let closure_18 = async function _fetchStorefrontPrices(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 let closure_9 = 10 * DurationsDefault.Millis.MINUTE;
 const MINUTE = DurationsDefault.Millis.MINUTE;
 const size = fn(2);

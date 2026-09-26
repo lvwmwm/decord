@@ -91,7 +91,7 @@ let items = [
         const _console = console;
         console.warn("LinearGradient colors and locations props should be arrays of the same length");
       }
-      const tmp5 = v65535.flatten(style) || {};
+      const tmp5 = closure_1_10.flatten(style) || {};
       let tmp6 = tmp5.borderRadius || 0;
       const borderTopLeftRadius = tmp5.borderTopLeftRadius;
       let tmp7 = tmp6;
@@ -146,11 +146,11 @@ let items = [
       const obj2 = { style: { position: "absolute", top: 0, left: 0, bottom: 0, right: 0 }, colors: null, startPoint: null, endPoint: null, locations: null, useAngle: null, angleCenter: null, angle: null, borderRadii: null };
       let mapped = colors;
       const tmp = _objectWithoutProperties(props, closure_3);
-      const tmp14 = __initData2;
+      const tmp14 = map1;
       const tmp15 = closure_1_11;
-      const tmp17 = __initData;
+      const tmp17 = closure_1_12;
       if (!LinearGradient.RN$Bridgeless) {
-        mapped = colors.map(options);
+        mapped = colors.map(React7);
       }
       obj2.colors = mapped;
       if (typeof convertPoint === "function") {

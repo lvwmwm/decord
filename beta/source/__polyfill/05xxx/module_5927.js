@@ -1,9 +1,9 @@
 // Module ID: 5927
 // Function ID: 5928
-// Dependencies: [19, 17, 21, 1619, 5904]
+// Dependencies: [19, 17, 21, 1615, 5904]
 
 // Module 5927
-import _mod1619 from "module_1619" /* 1619 */;
+import _mod1615 from "module_1615" /* 1615 */;
 import FrameSizeProvider from "FrameSizeProvider" /* 5904 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,14 +22,14 @@ let num2 = 0;
 if (undefined !== height) {
   num2 = height;
 }
-if (null == fn(1619).initialWindowMetrics) {
+if (null == fn(1615).initialWindowMetrics) {
   let obj = { frame: null, insets: null };
   const size1 = { x: 0, y: 0, width: num, height: num2 };
   obj.frame = size1;
   obj.insets = { top: 0, left: 0, right: 0, bottom: 0 };
   let initialWindowMetrics = obj;
 } else {
-  initialWindowMetrics = fn(1619).initialWindowMetrics;
+  initialWindowMetrics = fn(1615).initialWindowMetrics;
 }
 class SafeAreaProviderCompat {
   constructor(arg0) {
@@ -48,7 +48,7 @@ class SafeAreaProviderCompat {
               let tmp2Result = tmp2(React3, obj2);
             } else {
               const obj = { initialMetrics: initialWindowMetrics, style, onLayout, children };
-              tmp2Result = tmp2(_mod1619.SafeAreaProvider, obj);
+              tmp2Result = tmp2(_mod1615.SafeAreaProvider, obj);
             }
             return tmp2Result;
           }

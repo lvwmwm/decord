@@ -1,21 +1,20 @@
-// Module ID: 12949
-// Function ID: 12950
+// Module ID: 13044
+// Function ID: 13045
 // Name: ReportToModChannelStore
-// Dependencies: [562, 4662, 1252, 7980, 558, 568, 2]
+// Dependencies: [560, 4659, 1248, 7975, 2]
+// Exports: useShouldShowResolvedFlagsForChannel
 
-// Module 12949 (ReportToModChannelStore)
-import c from "c" /* 568 */;
-import module_562 from "module_562" /* 562 */;
-import "module_4662";
-import module_4662 from "module_4662" /* 4662 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13044 (ReportToModChannelStore)
+import module_560 from "module_560" /* 560 */;
+import "module_4659";
+import module_4659 from "module_4659" /* 4659 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let obj = { name: "report-to-mod-channel-storage", storage: null };
-obj.storage = module_4662.createJSONStorage(() => require("LocalStorageWrapper"));
-let obj2 = module_562.create(module_4662.persist((arg0, arg1) => {
+obj.storage = module_4659.createJSONStorage(() => require("LocalStorageWrapper"));
+let obj2 = module_560.create(module_4659.persist((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   return {
@@ -46,63 +45,7 @@ let obj2 = module_562.create(module_4662.persist((arg0, arg1) => {
 const result = size.fileFinishedImporting("modules/report_to_mod/ReportToModChannelStore.tsx");
 
 export const useReportToModChannelFiltersStore = obj2;
-export const useShouldShowResolvedFlagsForChannel = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  closure_0 = arg0;
-  const cResult = c.c(10);
-  obj2 = obj2();
-  if (null == arg0) {
-    const _Symbol = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = {
-        showResolvedFlags: true,
-        setShowResolvedFlags() {
-
-            }
-      };
-      cResult[0] = obj3;
-      let first = obj3;
-    } else {
-      first = cResult[0];
-    }
-  } else {
-    if (cResult[1] === arg0) {
-      if (cResult[2] === obj2) {
-        let tmp2 = cResult[3];
-      }
-      if (cResult[4] === arg0) {
-        if (cResult[5] === obj2) {
-          let tmp3 = cResult[6];
-        }
-        if (cResult[7] === tmp2) {
-          if (cResult[8] === tmp3) {
-            let tmp4 = cResult[9];
-          }
-          return tmp4;
-        }
-        const obj4 = { showResolvedFlags: tmp2, setShowResolvedFlags: tmp3 };
-        cResult[7] = tmp2;
-        cResult[8] = tmp3;
-        cResult[9] = obj4;
-        tmp4 = obj4;
-      }
-      const fn = function n(arg0) {
-        return obj2.setShowResolvedFlags(closure_0, arg0);
-      };
-      cResult[4] = arg0;
-      cResult[5] = obj2;
-      cResult[6] = fn;
-      tmp3 = fn;
-    }
-    let flag = obj2.getShowResolvedFlags(arg0);
-    if (flag == null) {
-      flag = true;
-    }
-    cResult[1] = arg0;
-    cResult[2] = obj2;
-    cResult[3] = flag;
-    tmp2 = flag;
-  }
-}) : ((arg0) => {
+export const useShouldShowResolvedFlagsForChannel = function useShouldShowResolvedFlagsForChannel(arg0) {
   closure_0 = arg0;
   const obj = obj2();
   if (null == arg0) {
@@ -126,4 +69,4 @@ export const useShouldShowResolvedFlagsForChannel = ReactCompilerGating.isReactC
     };
   }
   return obj3;
-});
+};

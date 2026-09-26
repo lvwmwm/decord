@@ -1,32 +1,32 @@
-// Module ID: 8602
-// Function ID: 8603
+// Module ID: 8597
+// Function ID: 8598
 // Name: portraitThumbnailHelpers
 // Dependencies: [2]
 // Exports: lerpVarWidthThumbnailScrollBounds
 
-// Module 8602 (portraitThumbnailHelpers)
+// Module 8597 (portraitThumbnailHelpers)
 import size from "module_2" /* 2 */;
 
-function lerpVarWidthThumbnailScrollBounds(thumbnailScrollPositions, arg1) {
-  if (0 === thumbnailScrollPositions.length) {
+function lerpVarWidthThumbnailScrollBounds(items, arg1) {
+  if (0 === items.length) {
     return 0;
   } else {
     let length = arg1;
     if (arg1 < 0) {
       return 0;
     } else {
-      if (length >= thumbnailScrollPositions.length) {
-        length = thumbnailScrollPositions.length;
+      if (length >= items.length) {
+        length = items.length;
       }
       const _Math = Math;
       const rounded = Math.floor(length);
-      if (rounded >= thumbnailScrollPositions.length) {
-        return thumbnailScrollPositions[thumbnailScrollPositions.length - 1].scrollStart;
+      if (rounded >= items.length) {
+        return items[items.length - 1].scrollStart;
       } else {
-        const scrollStart = thumbnailScrollPositions[rounded].scrollStart;
+        const scrollStart = items[rounded].scrollStart;
         let scrollStart2 = scrollStart;
-        if (rounded < thumbnailScrollPositions.length - 1) {
-          scrollStart2 = thumbnailScrollPositions[rounded + 1].scrollStart;
+        if (rounded < items.length - 1) {
+          scrollStart2 = items[rounded + 1].scrollStart;
         }
         return scrollStart + tmp3 * (scrollStart2 - scrollStart);
       }

@@ -1,15 +1,15 @@
-// Module ID: 13793
-// Function ID: 13794
+// Module ID: 13783
+// Function ID: 13784
 // Name: PremiumGroupActionCreators
-// Dependencies: [5, 1390, 13794, 1078, 577, 1275, 38, 2]
+// Dependencies: [5, 1386, 13784, 1074, 573, 1271, 38, 2]
 // Exports: acceptSubscriptionGroupInvite, fetchEligibleUsers, fetchPremiumGroupInvite, fetchPremiumGroupInvites, fetchPremiumGroupMembership, fetchSubscriptionGroupMembers, inviteUsersToSubscriptionGroup, removeSubscriptionGroupInvite, removeUserFromSubscriptionGroup
 
-// Module 13793 (PremiumGroupActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 13783 (PremiumGroupActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserRecord from "UserRecord" /* 1390 */;
-import SubscriptionGroupMemberRecord from "SubscriptionGroupMemberRecord" /* 13794 */;
+import UserRecord from "UserRecord" /* 1386 */;
+import SubscriptionGroupMemberRecord from "SubscriptionGroupMemberRecord" /* 13784 */;
 
 require = fn;
 let closure_7 = async function _fetchPremiumGroupMembership(arg0, value) {
@@ -23,7 +23,7 @@ let closure_7 = async function _fetchPremiumGroupMembership(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -143,7 +143,7 @@ let closure_9 = async function _inviteUsersToSubscriptionGroup(arg0, user_ids) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -218,7 +218,7 @@ let closure_10 = async function _removeUserFromSubscriptionGroup(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -291,7 +291,7 @@ let closure_11 = async function _fetchSubscriptionGroupMembers(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -378,7 +378,7 @@ let closure_12 = async function _acceptSubscriptionGroupInvite(arg0, arg1, subsc
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -460,7 +460,7 @@ let closure_13 = async function _removeSubscriptionGroupInvite(arg0, arg1, subsc
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -591,7 +591,7 @@ let closure_15 = async function _fetchPremiumGroupInvite(subscriptionGroupMember
     return value;
   })();
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/premium_group/PremiumGroupActionCreators.tsx");
 

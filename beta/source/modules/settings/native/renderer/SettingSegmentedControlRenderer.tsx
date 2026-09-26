@@ -1,176 +1,30 @@
-// Module ID: 15002
-// Function ID: 15003
+// Module ID: 15006
+// Function ID: 15007
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 14990, 11631, 21, 4790, 580, 558, 568, 14993, 14888, 38, 14992, 9900, 9901, 12816, 2]
+// Dependencies: [32, 19, 17, 14994, 11755, 21, 4788, 576, 14997, 14892, 38, 14996, 9922, 9923, 12898, 2]
+// Exports: default
 
-// Module 15002 (SettingSegmentedControlRenderer)
-import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 580 */;
-import SettingsRendererConfig from "SettingsRendererConfig" /* 14888 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14992 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 14993 */;
+// Module 15006 (SettingSegmentedControlRenderer)
+import nativeDefault from "native" /* 576 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 14997 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14990 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14994 */;
 
 const require = globalThis.__r;
 
-require = fn;
+const require = fn;
 const View = fn(17).View;
-const NodeType = fn(11631).NodeType;
+const NodeType = fn(11755).NodeType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { controlContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 }, pageContainer: { flex: 1 } };
 let closure_11 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingSegmentedControlRenderer.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
-  const cResult = defaultIndex(568).c(23);
-  node = node.node;
-  defaultIndex = node.defaultIndex;
-  const settings = node.settings;
-  closure_11();
-  let obj = defaultIndex(568);
-  const obj2 = noop;
-  const tmp3 = _slicedToArray;
-  [tmp5, dependencyMap] = noop.useState(0);
-  if (cResult[0] === defaultIndex) {
-    if (cResult[1] === settings) {
-      let tmp6 = cResult[2];
-    }
-    const first = tmp3(obj2.useState(tmp6), 1)[0];
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class O {
-        constructor(arg0) {
-          tmp = closure_2(node.nativeEvent.layout.width);
-          return;
-        }
-      }
-      cResult[3] = O;
-    } else {
-      class O {
-        constructor(arg0) {
-          tmp = closure_2(node.nativeEvent.layout.width);
-          return;
-        }
-      }
-    }
-    if (cResult[4] !== settings) {
-      class O {
-        constructor(arg0) {
-          tmp = closure_2(node.nativeEvent.layout.width);
-          return;
-        }
-      }
-      _slicedToArray = tmp11;
-      const item = settings.forEach((id) => {
-        const tmp = SettingsRendererConfig.SETTING_RENDERER_CONFIG[id];
-        _modDef38(tmp.type === NodeType.ROUTE, "Invalid setting type for segmented control: " + id);
-        const screen = tmp.screen;
-        const obj = { label: null, id: null, page: null };
-        const component = screen.getComponent();
-        obj.label = SettingRendererUtils.getSettingTitle(id);
-        obj.id = id;
-        obj.page = closure_2_8(component, {});
-        tmp11.push(obj);
-      });
-      cResult[4] = settings;
-      cResult[5] = tmp11;
-    } else {
-      class O {
-        constructor(arg0) {
-          tmp = closure_2(node.nativeEvent.layout.width);
-          return;
-        }
-      }
-      _slicedToArray = tmp10;
-    }
-    if (cResult[6] === first) {
-      class O {
-        constructor(arg0) {
-          tmp = closure_2(node.nativeEvent.layout.width);
-          return;
-        }
-      }
-    }
-    const obj3 = { items: tmp10, pageWidth: tmp5, defaultIndex: first };
-    cResult[6] = first;
-    cResult[7] = tmp10;
-    cResult[8] = tmp5;
-    cResult[9] = obj3;
-    class C {
-      constructor() {
-        field = closure_6.getField("selected");
-        if (null != field) {
-          tmp2 = settings;
-          index = settings.indexOf(field);
-          num = -1;
-          if (-1 !== index) {
-            return index;
-          } else {
-            tmp4 = closure_1;
-            tmp5 = closure_2;
-            obj = closure_1(closure_2[10]);
-            ancestors = obj.getAncestors(field);
-            tmp7 = ancestors;
-            tmp8 = ancestors;
-            for (const item10020 of ancestors) {
-              tmp9 = settings;
-              index1 = settings.indexOf(item10020);
-              tmp11 = index1;
-              if (-1 !== index1) {
-                tmp12 = obj2;
-                obj2.return();
-                return index1;
-              }
-            }
-          }
-        }
-        return defaultIndex;
-      }
-    }
-  }
-  class C {
-    constructor() {
-      field = closure_6.getField("selected");
-      if (null != field) {
-        tmp2 = settings;
-        index = settings.indexOf(field);
-        num = -1;
-        if (-1 !== index) {
-          return index;
-        } else {
-          tmp4 = closure_1;
-          tmp5 = closure_2;
-          obj = closure_1(closure_2[10]);
-          ancestors = obj.getAncestors(field);
-          tmp7 = ancestors;
-          tmp8 = ancestors;
-          for (const item10020 of ancestors) {
-            tmp9 = settings;
-            index1 = settings.indexOf(item10020);
-            tmp11 = index1;
-            if (-1 !== index1) {
-              tmp12 = obj2;
-              obj2.return();
-              return index1;
-            }
-          }
-        }
-      }
-      return defaultIndex;
-    }
-  }
-  cResult[0] = defaultIndex;
-  cResult[1] = settings;
-  cResult[2] = C;
-  tmp6 = C;
-}) : ((node) => {
+export default function SettingSegmentedControl(node) {
   _require = undefined;
   settings = undefined;
   dependencyMap = undefined;
@@ -204,13 +58,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   const memo = noop.useMemo(() => {
     const items = [];
     const item = settings.forEach((id) => {
-      const tmp = items(14888).SETTING_RENDERER_CONFIG[id];
+      const tmp = items(14892).SETTING_RENDERER_CONFIG[id];
       settings(38)(tmp.type === constants.ROUTE, "Invalid setting type for segmented control: " + id);
       const screen = tmp.screen;
       const obj = { label: null, id: null, page: null };
       const component = screen.getComponent();
       const tmp2 = settings(38);
-      obj.label = items(14992).getSettingTitle(id);
+      obj.label = items(14996).getSettingTitle(id);
       obj.id = id;
       obj.page = closure_2_8(component, {});
       items.push(obj);
@@ -244,4 +98,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   items1[1] = closure_8(View, { style: tmp.pageContainer, children: closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }) });
   obj2.children = items1;
   return closure_10(closure_9, obj2);
-});
+};

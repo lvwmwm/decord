@@ -1,11 +1,11 @@
-// Module ID: 14227
-// Function ID: 14228
+// Module ID: 14217
+// Function ID: 14218
 // Name: getTransformedBadgeColors
-// Dependencies: [676, 2]
+// Dependencies: [672, 2]
 // Exports: getTransformedBadgeColors
 
-// Module 14227 (getTransformedBadgeColors)
-import _modDef676 from "module_676" /* 676 */;
+// Module 14217 (getTransformedBadgeColors)
+import _modDef672 from "module_672" /* 672 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/badges/getTransformedBadgeColors.tsx");
@@ -20,7 +20,7 @@ export const getTransformedBadgeColors = function getTransformedBadgeColors(arg0
       } else {
         let map2 = dependencyMap;
         if (obj2.valid(secondaryTintColor)) {
-          secondaryTintColor = tmp7(676)(secondaryTintColor);
+          secondaryTintColor = tmp7(672)(secondaryTintColor);
           primaryTintColor = secondaryTintColor;
           closure_2 = secondaryTintColor.luminance();
           map2 = secondaryTintLuminances.map;
@@ -28,7 +28,7 @@ export const getTransformedBadgeColors = function getTransformedBadgeColors(arg0
         } else {
           map2Result = secondaryTintLuminances.map(() => "#000000");
         }
-        obj2 = _modDef676;
+        obj2 = _modDef672;
         tmp7 = importDefault;
       }
     }
@@ -38,14 +38,14 @@ export const getTransformedBadgeColors = function getTransformedBadgeColors(arg0
     secondaryLuminanceWeights = tmp2;
     let map = dependencyMap;
     if (obj.valid(primaryTintColor)) {
-      primaryTintColor = tmp3(676)(primaryTintColor);
+      primaryTintColor = tmp3(672)(primaryTintColor);
       closure_2 = primaryTintColor.luminance();
       map = primaryTintLuminances.map;
       let mapped = map((arg0, arg1) => primaryTintColor.luminance((arg0 * secondaryLuminanceWeights[arg1].base + closure_2 * secondaryLuminanceWeights[arg1].tint) / (secondaryLuminanceWeights[arg1].base + secondaryLuminanceWeights[arg1].tint)).hex());
     } else {
       mapped = primaryTintLuminances.map(() => "#000000");
     }
-    obj = _modDef676;
+    obj = _modDef672;
     tmp3 = importDefault;
   }
 };

@@ -1,30 +1,30 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 16610
+// Function ID: 16611
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4782, 4432, 2067, 1078, 21, 4790, 580, 504, 1401, 1435, 1482, 1245, 5771, 7618, 7617, 1119, 9124, 9050, 1181, 4786, 5220, 8214, 8210, 8212, 2]
+// Dependencies: [5, 32, 19, 17, 4780, 4428, 2063, 1074, 21, 4788, 576, 504, 1397, 1431, 1478, 1241, 5769, 7616, 7615, 1115, 9126, 9052, 1177, 4784, 5218, 8206, 8211, 8213, 2]
 // Exports: default
 
-// Module 16618 (GameCommunityMultiGuildUpsellCard)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1435 */;
-import transitionToGuild from "transitionToGuild" /* 7618 */;
+// Module 16610 (GameCommunityMultiGuildUpsellCard)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
+import transitionToGuild from "transitionToGuild" /* 7616 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4782 */;
-import LurkingStore from "LurkingStore" /* 4432 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import LurkingStore from "LurkingStore" /* 4428 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ GuildFeatures: closure_11, JoinGuildSources: closure_12, AnalyticEvents: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BG_SURFACE_RAISED, borderColor: nativeDefault.colors.BORDER_MUTED, borderWidth: 1, borderRadius: nativeDefault.radii.lg, overflow: "hidden", flex: 1, marginBottom: nativeDefault.space.PX_16 }, bannerContainer: null, banner: null, content: null, guildIconContainer: null, guildIcon: null, guildNameRow: null, guildBadge: null, guildName: null, description: null, memberCounts: null, memberCount: null, dot: null, dotOnline: null, dismissButton: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BG_SURFACE_RAISED, borderColor: nativeDefault.colors.BORDER_MUTED, borderWidth: 1, borderRadius: nativeDefault.radii.lg, overflow: "hidden", flex: 1, marginBottom: nativeDefault.space.PX_16 };
 obj2.bannerContainer = { height: 88, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
@@ -130,7 +130,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -219,7 +219,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

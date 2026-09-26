@@ -1,11 +1,11 @@
-// Module ID: 12963
-// Function ID: 12964
+// Module ID: 12932
+// Function ID: 12933
 // Name: GuildPromptsStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 12963 (GuildPromptsStore)
+// Module 12932 (GuildPromptsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const dependencyMap = {};
 const PersistedStore = initializeDefault.PersistedStore;

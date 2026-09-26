@@ -1,23 +1,21 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 10390
+// Function ID: 10391
 // Name: InAppNotificationUtils
-// Dependencies: [19, 12996, 1078, 12, 1259, 1369, 1095, 558, 568, 7578, 4970, 2]
-// Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed
+// Dependencies: [19, 10391, 1074, 12, 1255, 1365, 1091, 7576, 4968, 2]
+// Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, useHasPreviewableMedia
 
-// Module 12995 (InAppNotificationUtils)
+// Module 10390 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
-import c from "c" /* 568 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import v1 from "v1" /* 1259 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7578 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import v1 from "v1" /* 1255 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7576 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const REACTION_MILESTONE_COUNTS = fn(12996).REACTION_MILESTONE_COUNTS;
-const Constants = fn(1078);
+const REACTION_MILESTONE_COUNTS = fn(10391).REACTION_MILESTONE_COUNTS;
+const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, ChannelTypes: metroRequire, InAppNotificationTypes: closure_7, MessageEmbedTypes: closure_8, MessageFlags: closure_9 } = Constants);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationUtils.tsx");
 
@@ -83,62 +81,10 @@ export const getNotificationDuration = function getNotificationDuration(ALERT) {
   }
   return 5 * DurationsDefault.Millis.SECOND;
 };
-export const useHasPreviewableMedia = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== hasFlag) {
-    let hasFlagResult = hasFlag.hasFlag(constants4.IS_VOICE_MESSAGE);
-    if (!hasFlagResult) {
-      hasFlagResult = hasFlag.attachments.length > 0;
-    }
-    if (!hasFlagResult) {
-      let everyResult = hasFlag.embeds.length > 0;
-      if (everyResult) {
-        let embeds = hasFlag.embeds;
-        everyResult = embeds.every((type) => type.type === constants.GIFV);
-      }
-      hasFlagResult = everyResult;
-    }
-    if (!hasFlagResult) {
-      hasFlagResult = hasFlag.stickerItems.length > 0;
-    }
-    if (!hasFlagResult) {
-      let someResult = isForwardMessageDefault(hasFlag);
-      if (someResult) {
-        const messageSnapshots = hasFlag.messageSnapshots;
-        someResult = messageSnapshots.some((message) => {
-          message = message.message;
-          let hasFlagResult = message.hasFlag(constants.IS_VOICE_MESSAGE);
-          if (!hasFlagResult) {
-            hasFlagResult = message.attachments.length > 0;
-          }
-          if (!hasFlagResult) {
-            let everyResult = message.embeds.length > 0;
-            if (everyResult) {
-              const embeds = message.embeds;
-              everyResult = embeds.every((type) => type.type === constants.GIFV);
-            }
-            hasFlagResult = everyResult;
-          }
-          if (!hasFlagResult) {
-            hasFlagResult = message.stickerItems.length > 0;
-          }
-          return hasFlagResult;
-        });
-      }
-      hasFlagResult = someResult;
-    }
-    cResult[0] = hasFlag;
-    cResult[1] = hasFlagResult;
-    let tmp3 = hasFlagResult;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : ((arg0) => {
-  closure_0 = arg0;
-  const items = [arg0];
+export const useHasPreviewableMedia = function useHasPreviewableMedia(message) {
+  const items = [message];
   return noop.useMemo(() => {
-    let hasFlagResult = closure_0.hasFlag(constants4.IS_VOICE_MESSAGE);
+    let hasFlagResult = message.hasFlag(constants4.IS_VOICE_MESSAGE);
     if (!hasFlagResult) {
       hasFlagResult = tmp.attachments.length > 0;
     }
@@ -181,13 +127,13 @@ export const useHasPreviewableMedia = ReactCompilerGating.isReactCompilerEnabled
     }
     return hasFlagResult;
   }, items);
-});
+};
 export const extractMetadataFromNotification = function extractMetadataFromNotification(notification) {
   const type = notification.type;
   if (constants3.MESSAGE !== type) {
     if (tmp.REACTION !== type) {
       if (tmp.ALERT === type) {
-        guild = notification.guild;
+        const guild = notification.guild;
         let id;
         if (guild != null) {
           id = guild.id;

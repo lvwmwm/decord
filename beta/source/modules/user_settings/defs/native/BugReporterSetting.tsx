@@ -1,48 +1,39 @@
-// Module ID: 16050
-// Function ID: 16051
+// Module ID: 16054
+// Function ID: 16055
 // Name: BugReporterSetting
-// Dependencies: [13044, 4993, 13045, 1984, 558, 568, 13059, 11630, 1119, 16051, 2]
+// Dependencies: [10480, 4991, 10481, 1980, 10512, 11754, 1115, 16055, 2]
+// Exports: useBugReporterExperimentSettingPredicate
 
-// Module 16050 (BugReporterSetting)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import BugReporterExperimentDefault from "BugReporterExperiment" /* 13059 */;
-import BugReportStore from "BugReportStore" /* 13044 */;
+// Module 16054 (BugReporterSetting)
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import BugReporterExperimentDefault from "BugReporterExperiment" /* 10512 */;
+import BugReportStore from "BugReportStore" /* 10480 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "native-settings" };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  return BugReporterExperimentDefault.useConfig(first).hasBugReporterAccess;
-}) : (() => BugReporterExperimentDefault.useConfig({ location: "native-settings" }).hasBugReporterAccess);
-const SettingBuilders = fn(11630);
+function useBugReporterExperimentSettingPredicate() {
+  return BugReporterExperimentDefault.useConfig({ location: "native-settings" }).hasBugReporterAccess;
+}
+const SettingBuilders = fn(11754);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["/tZh0A"]);
   },
   parent: null,
-  IconComponent: fn(16051).BugIcon,
+  IconComponent: fn(16055).BugIcon,
   onPress: function handleBugReporterSettingPress() {
     if (!BugReportStore.getField("isReportOpen")) {
       BugReportStore.setState({ isReportOpen: true });
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13045, dependencyMap.paths));
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10481, dependencyMap.paths));
     }
   },
   withArrow: true,
-  usePredicate: tmp2
+  usePredicate: useBugReporterExperimentSettingPredicate
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/BugReporterSetting.tsx");
 
 export default pressable;
-export const useBugReporterExperimentSettingPredicate = tmp2;
+export { useBugReporterExperimentSettingPredicate };

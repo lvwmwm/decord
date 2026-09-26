@@ -1,12 +1,12 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 17645
+// Function ID: 17646
 // Name: getConsoleColor
-// Dependencies: [1078, 580, 2]
+// Dependencies: [1074, 576, 2]
 // Exports: default
 
-// Module 17610 (getConsoleColor)
-import nativeDefault from "native" /* 580 */;
-import Constants from "Constants" /* 1078 */;
+// Module 17645 (getConsoleColor)
+import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const obj = { [XBOX]: nativeDefault.unsafe_rawColors.PLATFORM_XBOX, [PLAYSTATION]: nativeDefault.unsafe_rawColors.PLATFORM_PLAYSTATION, [PLAYSTATION_STAGING]: nativeDefault.unsafe_rawColors.PLATFORM_PLAYSTATION };

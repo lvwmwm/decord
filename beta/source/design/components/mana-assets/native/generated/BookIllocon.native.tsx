@@ -1,67 +1,26 @@
-// Module ID: 6068
-// Function ID: 6069
+// Module ID: 6070
+// Function ID: 6071
 // Name: BookIllocon
-// Dependencies: [21, 558, 568, 6069, 5834, 2]
+// Dependencies: [21, 5836, 6071, 2]
+// Exports: BookIllocon
 
-// Module 6068 (BookIllocon)
+// Module 6070 (BookIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5834 */;
-import _modDef6069 from "module_6069" /* 6069 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6071 from "module_6071" /* 6071 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BookIllocon.native.tsx");
 
-export const BookIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(8);
-  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
-  let num = 64;
-  if (undefined !== size) {
-    num = size;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6069 };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== num) {
-    const size1 = { width: num, height: num };
-    const items = [size1];
-    cResult[1] = num;
-    cResult[2] = items;
-    let tmp5 = items;
-  } else {
-    tmp5 = cResult[2];
-  }
-  if (cResult[3] === accessibilityLabel) {
-    if (cResult[4] === accessible) {
-      if (cResult[5] === resizeMode) {
-        if (cResult[6] === tmp5) {
-          let tmp6 = cResult[7];
-        }
-        return tmp6;
-      }
-    }
-  }
-  const tmp7 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp5, accessible, accessibilityLabel, resizeMode });
-  cResult[3] = accessibilityLabel;
-  cResult[4] = accessible;
-  cResult[5] = resizeMode;
-  cResult[6] = tmp5;
-  cResult[7] = tmp7;
-  tmp6 = tmp7;
-}) : ((size) => {
+export const BookIllocon = function BookIllocon(size) {
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6069 };
+  const obj2 = { uri: _modDef6071 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;
@@ -69,4 +28,4 @@ export const BookIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
   return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-});
+};

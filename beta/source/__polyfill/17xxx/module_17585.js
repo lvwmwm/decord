@@ -1,9 +1,9 @@
 // Module ID: 17585
 // Function ID: 17586
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 17585
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 24, height: 24, scales: [2, 3], hash: "e57414c7a7beaf43becfa6bd320e5461", name: "vr", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "e3c5c9128e3b6990fd3bdb33f2f889a0", name: "ic_gear", type: "png" });

@@ -1,10 +1,10 @@
-// Module ID: 15565
-// Function ID: 15566
+// Module ID: 15569
+// Function ID: 15570
 // Name: HappeningNowConstants
-// Dependencies: [1181, 2]
+// Dependencies: [1177, 2]
 
-// Module 15565 (HappeningNowConstants)
-import native from "native" /* 1181 */;
+// Module 15569 (HappeningNowConstants)
+import native from "native" /* 1177 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowConstants.tsx");

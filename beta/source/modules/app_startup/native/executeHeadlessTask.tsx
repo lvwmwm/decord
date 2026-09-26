@@ -1,17 +1,17 @@
-// Module ID: 18398
-// Function ID: 18399
+// Module ID: 18387
+// Function ID: 18388
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 17708, 1078, 3, 1235, 8036, 15, 9, 13970, 1245, 1253, 17784, 2040, 2]
+// Dependencies: [5, 17, 502, 17699, 1074, 3, 1231, 8031, 15, 9, 13960, 1241, 1249, 17775, 2036, 2]
 // Exports: default
 
-// Module 18398 (executeHeadlessTask)
+// Module 18387 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8036 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13970 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8031 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13960 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -33,7 +33,7 @@ let closure_10 = async function _executeHeadlessTask(name, arg1, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -372,9 +372,9 @@ let closure_10 = async function _executeHeadlessTask(name, arg1, arg2) {
   })();
 };
 const AppState = fn(17).AppState;
-const NativeAppStartup = fn(17708);
+const NativeAppStartup = fn(17699);
 ({ initHeadlessTask: closure_7, applicationReady: closure_8 } = NativeAppStartup);
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/app_startup/native/executeHeadlessTask.tsx");
 

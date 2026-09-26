@@ -1,19 +1,19 @@
-// Module ID: 9070
-// Function ID: 9071
+// Module ID: 9072
+// Function ID: 9073
 // Name: GameProfileHttpUtils
-// Dependencies: [5, 7841, 2113, 8984, 1078, 9071, 577, 5031, 1275, 504, 561, 1095, 9062, 2]
+// Dependencies: [5, 7836, 2109, 8985, 1074, 9073, 573, 5029, 1271, 504, 559, 1091, 9064, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 9070 (GameProfileHttpUtils)
-import BackoffDefault from "Backoff" /* 561 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import StoreUtils from "StoreUtils" /* 5031 */;
+// Module 9072 (GameProfileHttpUtils)
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import StoreUtils from "StoreUtils" /* 5029 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7841 */;
-import LocaleStore from "LocaleStore" /* 2113 */;
-import GameProfileStore from "GameProfileStore" /* 8984 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7836 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
+import GameProfileStore from "GameProfileStore" /* 8985 */;
 
 require = fn;
 let closure_9 = async function _getShopCollection(collectionId) {
@@ -58,7 +58,7 @@ let closure_10 = async function _fetchSimilarGames(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -106,11 +106,11 @@ let closure_10 = async function _fetchSimilarGames(arg0, value) {
         const obj7 = { type: "GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS", gameId: closure_130_0, games: closure_130_1 };
         closure_131_1(closure_131_2[6]).dispatch(obj7);
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
-    } catch (tmp14) {
+    } catch (tmp18) {
       c5 = tmp;
-      throw tmp14;
+      throw tmp18;
     }
   }
 };
@@ -166,8 +166,8 @@ let closure_11 = async function _getGameAnnouncements(gameId, arg1) {
     return value;
   })();
 };
-const Endpoints = fn(1078).Endpoints;
-let closure_8 = fn(9071).SIMILAR_GAMES_BLOCKED_GAME_IDS;
+const Endpoints = fn(1074).Endpoints;
+let closure_8 = fn(9073).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 const initialize = fn(504);
 const fetchStore = initialize.createFetchStore(GameProfileStore, {
   getQueryId(arg0, arg1) {

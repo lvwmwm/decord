@@ -1,56 +1,22 @@
-// Module ID: 12604
-// Function ID: 12605
+// Module ID: 12702
+// Function ID: 12703
 // Name: RegionalTeenUtils
-// Dependencies: [19, 5004, 5007, 558, 568, 504, 10436, 8952, 2]
-// Exports: useIsTeenInStrictCountry
+// Dependencies: [19, 5002, 5005, 504, 11254, 8954, 2]
+// Exports: useIsTeenInCountrySet, useIsTeenInStrictCountry, useUserCountryCode
 
-// Module 12604 (RegionalTeenUtils)
-import c from "c" /* 568 */;
-import useUserIsTeen from "useUserIsTeen" /* 8952 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10436 */;
+// Module 12702 (RegionalTeenUtils)
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 11254 */;
 import noop from "module_19" /* 19 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5004 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5002 */;
 
 require = fn;
 let items = ["GB", "AU"];
-HermesBuiltin.arraySpread(fn(5007).CountryCodesSets.EU_COUNTRIES, 2);
+HermesBuiltin.arraySpread(fn(5005).CountryCodesSets.EU_COUNTRIES, 2);
 const set = new Set(items);
-let ReactCompilerGating = fn(558);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = stateFromStores(568).c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RegionalFeatureConfigStore];
-    const fn = function s() {
-      return userCountryCode.getUserCountryCode();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  let obj = stateFromStores(568);
-  stateFromStores = stateFromStores(504).useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const fn2 = function l() {
-      if (null == stateFromStores) {
-        userCountryCode = MessageRequestActionCreators.fetchUserCountryCode();
-      }
-    };
-    const items1 = [stateFromStores];
-    cResult[2] = stateFromStores;
-    cResult[3] = fn2;
-    cResult[4] = items1;
-    let tmp9 = items1;
-    let tmp8 = fn2;
-  } else {
-    tmp8 = cResult[3];
-    tmp9 = cResult[4];
-  }
-  const effect = noop.useEffect(tmp8, tmp9);
-  return stateFromStores;
-}) : (() => {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
+
+export const useUserCountryCode = function useUserCountryCode() {
   const items = [RegionalFeatureConfigStore];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
   const items1 = [stateFromStores];
@@ -60,50 +26,43 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }, items1);
   return stateFromStores;
-});
-let closure_5 = tmp4;
-ReactCompilerGating = fn(558);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((has) => {
-  const cResult = c.c(4);
-  const tmp2 = closure_5();
-  const userIsTeen = useUserIsTeen.useUserIsTeen();
-  if (cResult[0] === has) {
-    if (cResult[1] === tmp2) {
-      if (cResult[2] === userIsTeen) {
-        let tmp4 = cResult[3];
-      }
-      return tmp4;
+};
+export const useIsTeenInCountrySet = function useIsTeenInCountrySet(set) {
+  const items = [RegionalFeatureConfigStore];
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  const items1 = [stateFromStores];
+  const effect = noop.useEffect(() => {
+    if (null == stateFromStores) {
+      userCountryCode = MessageRequestActionCreators.fetchUserCountryCode();
     }
-  }
-  let hasItem = userIsTeen;
+  }, items1);
+  const obj = stateFromStores(504);
+  let userIsTeen = stateFromStores(8954).useUserIsTeen();
   if (userIsTeen) {
-    hasItem = null != tmp2;
-  }
-  if (hasItem) {
-    hasItem = has.has(tmp2.alpha2);
-  }
-  cResult[0] = has;
-  cResult[1] = tmp2;
-  cResult[2] = userIsTeen;
-  cResult[3] = hasItem;
-  tmp4 = hasItem;
-}) : ((has) => {
-  const tmp = closure_5();
-  let userIsTeen = useUserIsTeen.useUserIsTeen();
-  if (userIsTeen) {
-    userIsTeen = null != tmp;
+    userIsTeen = null != stateFromStores;
   }
   if (userIsTeen) {
-    userIsTeen = has.has(tmp.alpha2);
+    userIsTeen = set.has(stateFromStores.alpha2);
   }
   return userIsTeen;
-});
-let closure_6 = tmp5;
-ReactCompilerGating = fn(558);
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const size = fn(2);
-const result1 = size.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
-
-export const useUserCountryCode = tmp4;
-export const useIsTeenInCountrySet = tmp5;
-export const useIsTeenInStrictCountry = () => closure_6(set);
+};
+export const useIsTeenInStrictCountry = function useIsTeenInStrictCountry() {
+  const items = [RegionalFeatureConfigStore];
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  const items1 = [stateFromStores];
+  const effect = noop.useEffect(() => {
+    if (null == stateFromStores) {
+      userCountryCode = MessageRequestActionCreators.fetchUserCountryCode();
+    }
+  }, items1);
+  let obj = set;
+  const obj2 = stateFromStores(504);
+  let userIsTeen = stateFromStores(8954).useUserIsTeen();
+  if (userIsTeen) {
+    userIsTeen = null != stateFromStores;
+  }
+  if (userIsTeen) {
+    userIsTeen = obj.has(stateFromStores.alpha2);
+  }
+  return userIsTeen;
+};

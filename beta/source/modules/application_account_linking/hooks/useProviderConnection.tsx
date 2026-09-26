@@ -1,14 +1,14 @@
-// Module ID: 7460
-// Function ID: 7461
+// Module ID: 7458
+// Function ID: 7459
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5532, 504, 5657, 2]
+// Dependencies: [5, 19, 5530, 504, 5655, 2]
 // Exports: useProviderConnection
 
-// Module 7460 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5657 */;
+// Module 7458 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5655 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
 
 const require = globalThis.__r;
 
@@ -16,8 +16,8 @@ const require = fn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
-export const useProviderConnection = function useProviderConnection(arg0) {
-  _require = arg0;
+export const useProviderConnection = function useProviderConnection(provider_id) {
+  _require = provider_id;
   const items = [ConnectedAccountsStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => {
     let account = null;
@@ -44,7 +44,7 @@ export const useProviderConnection = function useProviderConnection(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -114,12 +114,12 @@ export const useProviderConnection = function useProviderConnection(arg0) {
       }
     }
   });
-  const items2 = [arg0];
+  const items2 = [provider_id];
   let obj2 = require("initialize");
   return {
     loading: stateFromStores1,
     hasConnection: tmp3,
-    canConnect: null != arg0,
+    canConnect: null != provider_id,
     startConnection: noop.useCallback(function() {
       const self = this;
       const apply = closure_0.apply;

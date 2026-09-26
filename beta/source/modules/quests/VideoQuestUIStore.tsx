@@ -1,10 +1,10 @@
-// Module ID: 7978
-// Function ID: 7979
+// Module ID: 7973
+// Function ID: 7974
 // Name: VideoQuestUIStore
-// Dependencies: [109, 1247, 4662, 7979, 1252, 7980, 2]
+// Dependencies: [109, 1243, 4659, 7974, 1248, 7975, 2]
 
-// Module 7978 (VideoQuestUIStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
+// Module 7973 (VideoQuestUIStore)
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;
@@ -40,16 +40,16 @@ function _toPropertyKey(obj) {
   return text;
 }
 const VideoProgressState = { UNKNOWN: "UNKNOWN", NOT_STARTED: "NOT_STARTED", IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED" };
-let identity = fn(1247);
+let identity = fn(1243);
 identity = identity.createWithEqualityFn();
-fn(4662);
+fn(4659);
 const obj4 = { name: "videoQuestUIState", storage: null, partialize: null, version: 0 };
-const module_4662 = fn(4662);
-obj4.storage = module_4662.createJSONStorage(() => require("LocalStorageWrapper"));
+const module_4659 = fn(4659);
+obj4.storage = module_4659.createJSONStorage(() => require("LocalStorageWrapper"));
 obj4.partialize = function partialize(volume) {
   return { volume: volume.volume, muted: volume.muted, videoProgress: volume.videoProgress };
 };
-const withEqualityFnResult = identity(module_4662.persist((arg0, arg1) => {
+const withEqualityFnResult = identity(module_4659.persist((arg0, arg1) => {
   _require = arg0;
   closure_1 = arg1;
   return {
@@ -60,10 +60,10 @@ const withEqualityFnResult = identity(module_4662.persist((arg0, arg1) => {
     videoProgress: {},
     transcript: null,
     setVolume(volume) {
-      volume(1252).batchUpdates(() => volume({ volume }));
+      volume(1248).batchUpdates(() => volume({ volume }));
     },
     setMuted(muted) {
-      muted(1252).batchUpdates(() => muted({ muted }));
+      muted(1248).batchUpdates(() => muted({ muted }));
     },
     setVideoProgress(arg0, timestampSec, duration) {
       closure_0 = arg0;
@@ -76,7 +76,7 @@ const withEqualityFnResult = identity(module_4662.persist((arg0, arg1) => {
         num = 0;
       }
       const maxTimestampSec = Math.max(num, timestampSec);
-      closure_0(1252).batchUpdates(() => {
+      closure_0(1248).batchUpdates(() => {
         const obj = { videoProgress: null };
         const obj2 = {};
         const merged = Object.assign(timestampSec().videoProgress);
@@ -86,10 +86,10 @@ const withEqualityFnResult = identity(module_4662.persist((arg0, arg1) => {
       });
     },
     setTranscriptEnabled(transcriptEnabled) {
-      transcriptEnabled(1252).batchUpdates(() => transcriptEnabled({ transcriptEnabled }));
+      transcriptEnabled(1248).batchUpdates(() => transcriptEnabled({ transcriptEnabled }));
     },
     setCaptionEnabled(captionEnabled) {
-      captionEnabled(1252).batchUpdates(() => captionEnabled({ captionEnabled }));
+      captionEnabled(1248).batchUpdates(() => captionEnabled({ captionEnabled }));
     },
     getVideoProgress(questId) {
       return closure_1().videoProgress[questId];
@@ -108,7 +108,7 @@ const withEqualityFnResult = identity(module_4662.persist((arg0, arg1) => {
       return IN_PROGRESS;
     },
     resetQuest(questId) {
-      questId(1252).batchUpdates(() => {
+      questId(1248).batchUpdates(() => {
         const items = [questId];
         questId({ videoProgress: _objectWithoutProperties(closure_1().videoProgress, items.map(_toPropertyKey)) });
       });
@@ -119,7 +119,7 @@ const withEqualityFnResult = identity(module_4662.persist((arg0, arg1) => {
       });
     },
     setTranscriptAsset(transcript) {
-      transcript(1252).batchUpdates(() => {
+      transcript(1248).batchUpdates(() => {
         transcript({ transcript });
       });
     }

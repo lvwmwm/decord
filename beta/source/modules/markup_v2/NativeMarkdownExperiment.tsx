@@ -1,28 +1,17 @@
-// Module ID: 8385
-// Function ID: 8386
+// Module ID: 8380
+// Function ID: 8381
 // Name: NativeMarkdownExperiment
-// Dependencies: [1438, 558, 568, 2]
+// Dependencies: [1434, 2]
+// Exports: useNativeMarkdown
 
-// Module 8385 (NativeMarkdownExperiment)
-import c from "c" /* 568 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8380 (NativeMarkdownExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-04-native-markdown", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = size.fileFinishedImporting("modules/markup_v2/NativeMarkdownExperiment.tsx");
 
 export const NativeMarkdownExperiment = apexExperiment;
-export const useNativeMarkdown = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    let tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2);
-}) : ((location) => apexExperiment.useConfig({ location: location.location }));
+export const useNativeMarkdown = function useNativeMarkdown(location) {
+  return apexExperiment.useConfig({ location: location.location });
+};

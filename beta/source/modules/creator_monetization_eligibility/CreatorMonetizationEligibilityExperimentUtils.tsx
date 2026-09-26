@@ -1,51 +1,21 @@
-// Module ID: 7537
-// Function ID: 7538
+// Module ID: 7535
+// Function ID: 7536
 // Name: CreatorMonetizationEligibilityExperimentUtils
-// Dependencies: [1376, 4452, 1078, 558, 568, 504, 2]
-// Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsRavenOnboardingGuild, useIsWhitegloveOnboardingGuild
+// Dependencies: [1372, 4448, 1074, 504, 2]
+// Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
-// Module 7537 (CreatorMonetizationEligibilityExperimentUtils)
+// Module 7535 (CreatorMonetizationEligibilityExperimentUtils)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import UserStore from "UserStore" /* 1376 */;
-import BillingInfoStore from "BillingInfoStore" /* 4452 */;
+import UserStore from "UserStore" /* 1372 */;
+import BillingInfoStore from "BillingInfoStore" /* 4448 */;
 
 require = fn;
-const GuildFeatures = fn(1078).GuildFeatures;
+const GuildFeatures = fn(1074).GuildFeatures;
 const set = new Set(["US"]);
-fn(558);
-const ReactCompilerGating = fn(558);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore, BillingInfoStore];
-    const fn = function l() {
-      currentUser = currentUser.getCurrentUser();
-      let country;
-      if (currentUser != null) {
-        const storeCountry = currentUser.storeCountry;
-        if (storeCountry != null) {
-          country = storeCountry.country;
-        }
-      }
-      if (country == null) {
-        country = ipCountryCode.ipCountryCode;
-      }
-      let hasItem = null != country;
-      if (hasItem) {
-        hasItem = set.has(country);
-      }
-      return hasItem;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityExperimentUtils.tsx");
+
+export const useIsUserInCreatorMonetizationEligibleCountry = function useIsUserInCreatorMonetizationEligibleCountry() {
   const items = [UserStore, BillingInfoStore];
   return initialize.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
@@ -65,33 +35,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return hasItem;
   });
-});
-function useIsRavenOnboardingGuild(arg0) {
-  return null != arg0;
-}
-function isRavenOnboardingGuild(arg0) {
-  return null != arg0;
-}
-function useIsWhitegloveOnboardingGuild(features) {
-  let hasItem = null != features;
-  if (hasItem) {
-    features = features.features;
-    hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE);
-  }
-  return hasItem;
-}
-function isWhitegloveOnboardingGuild(features) {
-  let hasItem = null != features;
-  if (hasItem) {
-    features = features.features;
-    hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE);
-  }
-  return hasItem;
-}
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityExperimentUtils.tsx");
-
-export const useIsUserInCreatorMonetizationEligibleCountry = tmp3;
+};
 export const isUserInCreatorMonetizationEligibleCountry = function isUserInCreatorMonetizationEligibleCountry() {
   const currentUser = UserStore.getCurrentUser();
   let country;
@@ -110,41 +54,44 @@ export const isUserInCreatorMonetizationEligibleCountry = function isUserInCreat
   }
   return hasItem;
 };
-export { useIsRavenOnboardingGuild };
-export { isRavenOnboardingGuild };
-export { useIsWhitegloveOnboardingGuild };
-export { isWhitegloveOnboardingGuild };
-export const useIsExpeditedOnboardingGuild = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
-  id = undefined;
-  if (id != null) {
-    id = id.id;
+export const useIsRavenOnboardingGuild = function useIsRavenOnboardingGuild(arg0) {
+  return null != arg0;
+};
+export const isRavenOnboardingGuild = function isRavenOnboardingGuild(arg0) {
+  return null != arg0;
+};
+export const useIsWhitegloveOnboardingGuild = function useIsWhitegloveOnboardingGuild(features) {
+  let hasItem = null != features;
+  if (hasItem) {
+    features = features.features;
+    hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE);
+  }
+  return hasItem;
+};
+export const isWhitegloveOnboardingGuild = function isWhitegloveOnboardingGuild(features) {
+  let hasItem = null != features;
+  if (hasItem) {
+    features = features.features;
+    hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE);
+  }
+  return hasItem;
+};
+export const useIsExpeditedOnboardingGuild = function useIsExpeditedOnboardingGuild(stateFromStores) {
+  let id;
+  if (stateFromStores != null) {
+    id = stateFromStores.id;
   }
   let tmp2 = null != id;
-  let hasItem = null != id;
+  let hasItem = null != stateFromStores;
   if (hasItem) {
-    const features = id.features;
+    const features = stateFromStores.features;
     hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE);
   }
   if (!tmp2) {
     tmp2 = hasItem;
   }
   return tmp2;
-}) : ((id) => {
-  id = undefined;
-  if (id != null) {
-    id = id.id;
-  }
-  let tmp2 = null != id;
-  let hasItem = null != id;
-  if (hasItem) {
-    const features = id.features;
-    hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE);
-  }
-  if (!tmp2) {
-    tmp2 = hasItem;
-  }
-  return tmp2;
-});
+};
 export const isExpeditedMonetizationOnboardingGuild = function isExpeditedMonetizationOnboardingGuild(id) {
   id = undefined;
   if (id != null) {

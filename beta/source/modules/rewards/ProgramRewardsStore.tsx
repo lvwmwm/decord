@@ -1,17 +1,17 @@
-// Module ID: 14032
-// Function ID: 14033
+// Module ID: 14022
+// Function ID: 14023
 // Name: ProgramRewardsStore
-// Dependencies: [32, 1376, 14033, 4046, 4074, 4029, 504, 1095, 14034, 14035, 577, 2]
+// Dependencies: [32, 1372, 14023, 4042, 4070, 4025, 504, 1091, 14024, 14025, 573, 2]
 
-// Module 14032 (ProgramRewardsStore)
+// Module 14022 (ProgramRewardsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import _modDef4046 from "module_4046" /* 4046 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 14034 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14035 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import _modDef4042 from "module_4042" /* 4042 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 14024 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14025 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function updateTtl() {
@@ -35,7 +35,7 @@ function updateTtl() {
         if (!isNaN(date1.getTime())) {
           let tmp8 = importDefault;
           let tmp9 = dependencyMap;
-          let tmp11 = _modDef4046(tmp7, 10);
+          let tmp11 = _modDef4042(tmp7, 10);
           let tmp12 = tmp11;
           if (date >= tmp11) {
             let obj2 = { state: null };
@@ -77,7 +77,7 @@ function updateTtl() {
 }
 const DidNotFetchReason = { NOT_ELIGIBLE_FOR_ANY_PROGRAM_REWARD: "NOT_ELIGIBLE_FOR_ANY_PROGRAM_REWARD", CACHE_SHOULD_NOT_FETCH: "CACHE_SHOULD_NOT_FETCH" };
 let c6 = 86400000;
-const networkTtlCache = new fn(14033).NetworkTtlCache({ ttlMs: 86400000 });
+const networkTtlCache = new fn(14023).NetworkTtlCache({ ttlMs: 86400000 });
 let closure_8 = { MORE_THAN_24H_BEFORE_REWARD: "MORE_THAN_24H_BEFORE_REWARD", LESS_THAN_24H_BEFORE_REWARD: "LESS_THAN_24H_BEFORE_REWARD", PAST_REWARD_DATE: "PAST_REWARD_DATE" };
 const PersistedStore = initializeDefault.PersistedStore;
 class ProgramRewardsStore extends PersistedStore {
@@ -85,7 +85,7 @@ class ProgramRewardsStore extends PersistedStore {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     closure_0 = applyArgumentsResult;
     applyArgumentsResult.__getLocalVars = function __getLocalVars() {
-      state = applyArgumentsResult.getState();
+      const state = applyArgumentsResult.getState();
       let items;
       if (state.cache != null) {
         items = iter.value;
@@ -199,7 +199,7 @@ prototype["initialize"] = function initialize(cache) {
         if (!isNaN(date1.getTime())) {
           let tmp8 = importDefault;
           let tmp9 = dependencyMap;
-          let tmp11 = _modDef4046(tmp7, 10);
+          let tmp11 = _modDef4042(tmp7, 10);
           let tmp12 = tmp11;
           if (date >= tmp11) {
             let obj2 = { state: null };
@@ -363,7 +363,7 @@ const programRewardsStore = new ProgramRewardsStore(DispatcherDefault, {
             if (!isNaN(date1.getTime())) {
               let tmp8 = importDefault;
               let tmp9 = dependencyMap;
-              let tmp11 = _modDef4046(tmp7, 10);
+              let tmp11 = _modDef4042(tmp7, 10);
               let tmp12 = tmp11;
               if (date >= tmp11) {
                 let obj2 = { state: null };

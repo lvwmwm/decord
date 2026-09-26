@@ -1,9 +1,9 @@
-// Module ID: 4461
-// Function ID: 4462
+// Module ID: 4457
+// Function ID: 4458
 // Name: BillingConstants
 // Dependencies: [2]
 
-// Module 4461 (BillingConstants)
+// Module 4457 (BillingConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { UNKNOWN: 0, [0]: "UNKNOWN", ADMIN: 1, [1]: "ADMIN", USER: 2, [2]: "USER", FRACTIONAL_PREMIUM: 3, [3]: "FRACTIONAL_PREMIUM", DEFERRED_START: 4, [4]: "DEFERRED_START", USER_TEMPORARY_BAN: 5, [5]: "USER_TEMPORARY_BAN" };

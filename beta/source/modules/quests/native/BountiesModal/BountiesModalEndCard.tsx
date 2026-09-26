@@ -1,18 +1,18 @@
-// Module ID: 15332
-// Function ID: 15333
+// Module ID: 15336
+// Function ID: 15337
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 4790, 558, 568, 4529, 4791, 4794, 5230, 15302, 2]
+// Dependencies: [17, 21, 4788, 4524, 4789, 4792, 5230, 15324, 2]
+// Exports: default
 
-// Module 15332 (BountiesModalEndCard)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
-import timing from "timing" /* 4791 */;
-import timingPresets from "timingPresets" /* 4794 */;
+// Module 15336 (BountiesModalEndCard)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4524 */;
+import timing from "timing" /* 4789 */;
+import timingPresets from "timingPresets" /* 4792 */;
 import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 15302 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 15324 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4790 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
@@ -28,75 +28,23 @@ let closure_7 = createStyles.createStyles(() => {
   return obj;
 });
 const __initData = { code: "function BountiesModalEndCardTsx1(){const{withTiming,visible,timingStandard}=this.__closure;return{opacity:withTiming(visible?1:0,timingStandard)};}" };
-const __initData2 = { code: "function BountiesModalEndCardTsx2(){const{withTiming,visible,timingStandard}=this.__closure;return{opacity:withTiming(visible?1:0,timingStandard)};}" };
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalEndCard.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((sourceQuestContent) => {
-  const cResult = visible(568).c(6);
-  ({ bounty, visible } = sourceQuestContent);
-  sourceQuestContent = sourceQuestContent.sourceQuestContent;
-  const tmp3 = closure_7();
-  let obj = visible(568);
-  const fn = function n() {
-    let num = 0;
-    if (visible) {
-      num = 1;
-    }
-    return { opacity: timing.withTiming(num, timingPresets.timingStandard) };
-  };
-  const obj2 = visible(4529);
-  fn.__closure = { withTiming: visible(4791).withTiming, visible, timingStandard: visible(4794).timingStandard };
-  fn.__workletHash = 15062259404736;
-  fn.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  if (cResult[0] === animatedStyle) {
-    if (cResult[1] === bounty) {
-      if (cResult[2] === sourceQuestContent) {
-        if (cResult[3] === tmp3) {
-          if (cResult[4] === visible) {
-            let tmp5 = cResult[5];
-          }
-          return tmp5;
-        }
-      }
-    }
-  }
-  let tmp6 = visible;
-  if (visible) {
-    const obj4 = { style: null, pointerEvents: "box-none", children: null };
-    const items = [tmp3.container, animatedStyle];
-    obj4.style = items;
-    const obj5 = { style: tmp3.backdropTint };
-    const items1 = [closure_5(closure_4, obj5), , ];
-    const obj6 = { colors: ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"], locations: [0, 0.841], style: tmp3.backdropGradient };
-    items1[1] = closure_5(LinearGradientDefault, obj6);
-    const obj7 = { bounty, sourceQuestContent };
-    items1[2] = closure_5(BountiesEndCardPressableCtaDefault, obj7);
-    obj4.children = items1;
-    tmp6 = closure_6(ReanimatedRexportDefault.View, obj4);
-  }
-  cResult[0] = animatedStyle;
-  cResult[1] = bounty;
-  cResult[2] = sourceQuestContent;
-  cResult[3] = tmp3;
-  cResult[4] = visible;
-  cResult[5] = tmp6;
-  tmp5 = tmp6;
-}) : ((visible) => {
+export default function BountiesModalEndCard(visible) {
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   let tmp = closure_7();
-  visible(4529);
-  const fn = function b() {
+  visible(4524);
+  const fn = function y() {
     let num = 0;
     if (visible) {
       num = 1;
     }
     return { opacity: timing.withTiming(num, timingPresets.timingStandard) };
   };
-  fn.__closure = { withTiming: visible(4791).withTiming, visible, timingStandard: visible(4794).timingStandard };
-  fn.__workletHash = 8770295520643;
-  fn.__initData = __initData2;
+  fn.__closure = { withTiming: visible(4789).withTiming, visible, timingStandard: visible(4792).timingStandard };
+  fn.__workletHash = 15062259404736;
+  fn.__initData = __initData;
   if (visible) {
     const obj2 = { style: null, pointerEvents: "box-none", children: null };
     const items = [tmp.container, tmp4];
@@ -111,4 +59,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((sourceQuestConte
     visible = closure_6(ReanimatedRexportDefault.View, obj2);
   }
   return visible;
-});
+};

@@ -1,14 +1,14 @@
-// Module ID: 15054
-// Function ID: 15055
+// Module ID: 15058
+// Function ID: 15059
 // Name: AccountConfirmPasswordSetting
-// Dependencies: [8270, 1078, 11630, 1119, 7271, 2]
+// Dependencies: [8265, 1074, 11754, 1115, 7270, 2]
 
-// Module 15054 (AccountConfirmPasswordSetting)
-import Constants from "Constants" /* 1078 */;
-import util from "util" /* 1119 */;
-import UserSettingsConfirmPassword from "UserSettingsConfirmPassword" /* 7271 */;
-import SettingsConstants from "SettingsConstants" /* 8270 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
+// Module 15058 (AccountConfirmPasswordSetting)
+import Constants from "Constants" /* 1074 */;
+import util from "util" /* 1115 */;
+import UserSettingsConfirmPassword from "UserSettingsConfirmPassword" /* 7270 */;
+import SettingsConstants from "SettingsConstants" /* 8265 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
 import size from "module_2" /* 2 */;
 
 const route = SettingBuilders.createRoute({

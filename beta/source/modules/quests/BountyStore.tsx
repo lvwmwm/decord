@@ -1,12 +1,12 @@
-// Module ID: 7975
-// Function ID: 7976
+// Module ID: 7970
+// Function ID: 7971
 // Name: BountyStore
-// Dependencies: [5702, 504, 577, 2]
+// Dependencies: [5700, 504, 573, 2]
 
-// Module 7975 (BountyStore)
+// Module 7970 (BountyStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import AdCreativeType from "AdCreativeType" /* 5702 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import AdCreativeType from "AdCreativeType" /* 5700 */;
 
 require = fn;
 function resetStateForDeliveredBounties(items) {
@@ -48,7 +48,7 @@ Object.defineProperty(prototype, "questHomeBounties", {
 prototype["isBountyCompleted"] = function isBountyCompleted(id) {
   return set1.has(id);
 };
-prototype["getCompletedBountyCount"] = function getCompletedBountyCount(first1) {
+prototype["getCompletedBountyCount"] = function getCompletedBountyCount(arg0) {
   let num = 0;
   while (tmp !== undefined) {
     if (set1.has(tmp2.id)) {

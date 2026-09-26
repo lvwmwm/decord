@@ -1,10 +1,10 @@
-// Module ID: 4490
-// Function ID: 4491
+// Module ID: 4486
+// Function ID: 4487
 // Name: ToastActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 
-// Module 4490 (ToastActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 4486 (ToastActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/toast/native/ToastActionCreators.tsx");

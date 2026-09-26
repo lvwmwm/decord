@@ -1,20 +1,19 @@
-// Module ID: 13022
-// Function ID: 13023
+// Module ID: 10451
+// Function ID: 10452
 // Name: notificationSettingsGuildFlagUtils
-// Dependencies: [4971, 1078, 1088, 4974, 7398, 10460, 7393, 558, 568, 565, 2]
-// Exports: updateGuildPreset
+// Dependencies: [4969, 1074, 1084, 4972, 7396, 10444, 7391, 563, 2]
+// Exports: updateGuildPreset, useGuildPresetSettings
 
-// Module 13022 (notificationSettingsGuildFlagUtils)
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 4974 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7398 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+// Module 10451 (notificationSettingsGuildFlagUtils)
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 4972 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const UserNotificationSettings = fn(1078).UserNotificationSettings;
-const constants = fn(1088).GuildNotificationSettingsFlags;
-const ReactCompilerGating = fn(558);
+const UserNotificationSettings = fn(1074).UserNotificationSettings;
+const constants = fn(1084).GuildNotificationSettingsFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsGuildFlagUtils.tsx");
 
@@ -23,91 +22,25 @@ export const updateGuildPreset = function updateGuildPreset(guildId, arg1) {
   if (arg1 === notificationSettingsPresetUtils.Presets.ALL_MESSAGES) {
     const obj2 = { message_notifications: UserNotificationSettings.ALL_MESSAGES, flags: null };
     const obj4 = NotificationSettingsModalActionCreatorsDefault;
-    obj2.flags = tmp2(10460).withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES);
-    const result = obj4.updateGuildNotificationSettings(guildId, obj2, tmp2(7393).NotificationLabels.PresetAll);
-    const tmp2Result = tmp2(10460);
-  } else if (arg1 === tmp2(4974).Presets.MENTIONS) {
+    obj2.flags = tmp2(10444).withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES);
+    const result = obj4.updateGuildNotificationSettings(guildId, obj2, tmp2(7391).NotificationLabels.PresetAll);
+    const tmp2Result = tmp2(10444);
+  } else if (arg1 === tmp2(4972).Presets.MENTIONS) {
     const obj3 = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: null };
     const obj = NotificationSettingsModalActionCreatorsDefault;
-    obj3.flags = tmp2(10460).withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS);
-    const result1 = obj.updateGuildNotificationSettings(guildId, obj3, tmp2(7393).NotificationLabels.PresetMentions);
-    const tmp2Result3 = tmp2(10460);
-  } else if (arg1 === tmp2(4974).Presets.NOTHING) {
+    obj3.flags = tmp2(10444).withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS);
+    const result1 = obj.updateGuildNotificationSettings(guildId, obj3, tmp2(7391).NotificationLabels.PresetMentions);
+    const tmp2Result3 = tmp2(10444);
+  } else if (arg1 === tmp2(4972).Presets.NOTHING) {
     const obj5 = { message_notifications: UserNotificationSettings.NO_MESSAGES, flags: null };
     const obj7 = NotificationSettingsModalActionCreatorsDefault;
-    obj5.flags = tmp2(10460).withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS);
-    const result2 = obj7.updateGuildNotificationSettings(guildId, obj5, tmp2(7393).NotificationLabels.PresetNothing);
-    const tmp2Result4 = tmp2(10460);
+    obj5.flags = tmp2(10444).withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS);
+    const result2 = obj7.updateGuildNotificationSettings(guildId, obj5, tmp2(7391).NotificationLabels.PresetNothing);
+    const tmp2Result4 = tmp2(10444);
   }
 };
-export const useGuildPresetSettings = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(13);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserGuildSettingsStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return UserGuildSettingsStore.getGuildUnreadSetting(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  const stateFromStores = require("useStateFromStores").useStateFromStores(first, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserGuildSettingsStore];
-    cResult[3] = items1;
-    let tmp8 = items1;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== arg0) {
-    const fn2 = function u() {
-      return UserGuildSettingsStore.getMessageNotifications(closure_0);
-    };
-    cResult[4] = arg0;
-    cResult[5] = fn2;
-    let tmp10 = fn2;
-  } else {
-    tmp10 = cResult[5];
-  }
-  const tmpResult = require("useStateFromStores");
-  const stateFromStores1 = require("useStateFromStores").useStateFromStores(tmp8, tmp10);
-  if (cResult[6] === stateFromStores1) {
-    if (cResult[7] === stateFromStores) {
-      let tmp12 = cResult[8];
-    }
-    if (cResult[9] === stateFromStores1) {
-      if (cResult[10] === tmp12) {
-        if (cResult[11] === stateFromStores) {
-          let tmp14 = cResult[12];
-        }
-        return tmp14;
-      }
-    }
-    const obj2 = { unread: stateFromStores, notification: stateFromStores1, preset: tmp12 };
-    cResult[9] = stateFromStores1;
-    cResult[10] = tmp12;
-    cResult[11] = stateFromStores;
-    cResult[12] = obj2;
-    tmp14 = obj2;
-  }
-  const tmpResult3 = require("useStateFromStores");
-  const presetFromSettingsResult = require("notificationSettingsPresetUtils").presetFromSettings(stateFromStores, stateFromStores1);
-  cResult[6] = stateFromStores1;
-  cResult[7] = stateFromStores;
-  cResult[8] = presetFromSettingsResult;
-  tmp12 = presetFromSettingsResult;
-}) : ((arg0) => {
-  _require = arg0;
+export const useGuildPresetSettings = function useGuildPresetSettings(guildId) {
+  _require = guildId;
   const items = [UserGuildSettingsStore];
   const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => UserGuildSettingsStore.getGuildUnreadSetting(closure_0));
   const obj = require("useStateFromStores");
@@ -117,4 +50,4 @@ export const useGuildPresetSettings = ReactCompilerGating.isReactCompilerEnabled
   const obj2 = require("useStateFromStores");
   obj3.preset = require("notificationSettingsPresetUtils").presetFromSettings(stateFromStores, stateFromStores1);
   return obj3;
-});
+};

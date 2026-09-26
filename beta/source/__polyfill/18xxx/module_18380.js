@@ -1,9 +1,9 @@
 // Module ID: 18380
 // Function ID: 18381
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 18380
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "296c2ec8ad1d8af66f5b6c763e93cbfa", name: "ConnectionAverageIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/summaries/native/images", width: 14, height: 18, scales: [2, 3], hash: "813d44b12eef1bb0afea69b8182d002f", name: "summary_indicator_end", type: "png" });

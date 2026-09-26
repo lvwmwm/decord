@@ -1,9 +1,9 @@
 // Module ID: 3327
 // Function ID: 3328
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 3327
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hangout_window", scales: [1], hash: "0ffaf58e78768b3ade273f3634f7892a", name: "HangoutWindow.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jYWxsX2ZlZWRiYWNrX3R1dG9yaWFscy93ZWI=", scales: [1], hash: "f03ff929a119f56109b249fad0478d6b", name: "da.messages.f03ff929a119f56109b249fad0478d6b.compiled.messages", type: "jsona" });

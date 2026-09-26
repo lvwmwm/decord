@@ -5,13 +5,13 @@
 // Module 4886
 import _process from "_process" /* 539 */;
 import baseUnary from "baseUnary" /* 540 */;
-import baseIsSet from "baseIsSet" /* 4887 */;
+import baseIsMap from "baseIsMap" /* 4887 */;
 
-const tmp = _process && _process.isSet;
+const tmp = _process && _process.isMap;
 if (tmp) {
   let _module = baseUnary(tmp);
 } else {
-  _module = baseIsSet;
+  _module = baseIsMap;
 }
 
 export default _module;

@@ -1,22 +1,22 @@
-// Module ID: 4680
-// Function ID: 4681
+// Module ID: 4677
+// Function ID: 4678
 // Name: GuildPowerupsConstants
-// Dependencies: [1378, 1078, 4681, 4683, 2031, 4684, 1119, 4716, 4717, 4718, 4719, 4703, 2]
+// Dependencies: [1374, 1074, 4678, 4680, 2027, 4681, 1115, 4713, 4714, 4715, 4716, 4700, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 4680 (GuildPowerupsConstants)
-import util from "util" /* 1119 */;
-import PremiumConstants from "PremiumConstants" /* 1378 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
-import GameServerConstants from "GameServerConstants" /* 4681 */;
-import Powerups from "Powerups" /* 4683 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4684 */;
-import GameServerExperiment from "GameServerExperiment" /* 4703 */;
-import FileUploadPowerupHoldoutExperiment2 from "FileUploadPowerupHoldoutExperiment" /* 4716 */;
-import FileUpload250MbPowerupExperiment from "FileUpload250MbPowerupExperiment" /* 4717 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4718 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 4719 */;
-import Constants from "Constants" /* 1078 */;
+// Module 4677 (GuildPowerupsConstants)
+import util from "util" /* 1115 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import GameServerConstants from "GameServerConstants" /* 4678 */;
+import Powerups from "Powerups" /* 4680 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4681 */;
+import GameServerExperiment from "GameServerExperiment" /* 4700 */;
+import FileUploadPowerupHoldoutExperiment2 from "FileUploadPowerupHoldoutExperiment" /* 4713 */;
+import FileUpload250MbPowerupExperiment from "FileUpload250MbPowerupExperiment" /* 4714 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4715 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 4716 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const BoostedGuildFeatures = PremiumConstants.BoostedGuildFeatures;

@@ -1,67 +1,26 @@
-// Module ID: 6476
-// Function ID: 6477
+// Module ID: 6478
+// Function ID: 6479
 // Name: IceCreamIllocon
-// Dependencies: [21, 558, 568, 6477, 5834, 2]
+// Dependencies: [21, 5836, 6479, 2]
+// Exports: IceCreamIllocon
 
-// Module 6476 (IceCreamIllocon)
+// Module 6478 (IceCreamIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5834 */;
-import _modDef6477 from "module_6477" /* 6477 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6479 from "module_6479" /* 6479 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/IceCreamIllocon.native.tsx");
 
-export const IceCreamIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(8);
-  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
-  let num = 64;
-  if (undefined !== size) {
-    num = size;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6477 };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== num) {
-    const size1 = { width: num, height: num };
-    const items = [size1];
-    cResult[1] = num;
-    cResult[2] = items;
-    let tmp5 = items;
-  } else {
-    tmp5 = cResult[2];
-  }
-  if (cResult[3] === accessibilityLabel) {
-    if (cResult[4] === accessible) {
-      if (cResult[5] === resizeMode) {
-        if (cResult[6] === tmp5) {
-          let tmp6 = cResult[7];
-        }
-        return tmp6;
-      }
-    }
-  }
-  const tmp7 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp5, accessible, accessibilityLabel, resizeMode });
-  cResult[3] = accessibilityLabel;
-  cResult[4] = accessible;
-  cResult[5] = resizeMode;
-  cResult[6] = tmp5;
-  cResult[7] = tmp7;
-  tmp6 = tmp7;
-}) : ((size) => {
+export const IceCreamIllocon = function IceCreamIllocon(size) {
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6477 };
+  const obj2 = { uri: _modDef6479 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;
@@ -69,4 +28,4 @@ export const IceCreamIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
   return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-});
+};

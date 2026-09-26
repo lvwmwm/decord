@@ -1,12 +1,12 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 9074
+// Function ID: 9075
 // Name: navigateToGameAnnouncement
-// Dependencies: [5, 2067, 1078, 38, 7617, 8686, 1105, 2]
+// Dependencies: [5, 2063, 1074, 38, 7615, 8681, 1101, 2]
 // Exports: default
 
-// Module 9072 (navigateToGameAnnouncement)
+// Module 9074 (navigateToGameAnnouncement)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 const require = fn;
 let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
@@ -20,7 +20,7 @@ let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -47,7 +47,7 @@ let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
           let guild3;
           c3 = 1;
           c4 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -63,7 +63,7 @@ let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
             closure_129_5 = closure_129_4[closure_129_4.length - 1];
             closure_129_6 = null;
             if (null != closure_129_0) {
-              guild = closure_129_0.guild;
+              const guild = closure_129_0.guild;
               let id;
               if (guild != null) {
                 id = guild.id;
@@ -106,7 +106,7 @@ let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else if (2 === tmp5) {
           if (arg0 === 1) {
@@ -139,7 +139,7 @@ let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ GuildFeatures: hasOwnProperty, JoinGuildSources: metroRequire, Routes: closure_7 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/navigateToGameAnnouncement.tsx");

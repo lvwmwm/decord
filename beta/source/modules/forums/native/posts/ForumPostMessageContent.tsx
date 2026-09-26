@@ -1,87 +1,22 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12305
+// Function ID: 12306
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4790, 558, 568, 12190, 4786, 2]
+// Dependencies: [19, 21, 4788, 12306, 4784, 2]
+// Exports: default
 
-// Module 12189 (ForumPostMessageContent)
-import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12190 */;
+// Module 12305 (ForumPostMessageContent)
+import Text_Text from "Text/Text" /* 4784 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12306 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_4 = createStyles.createStyles({ text: { alignSelf: "flex-start" } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostMessageContent.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
-  const cResult = c.c(15);
-  ({ messageContent, message, isMessageDeleted, messageLoaded, lineClamp, senderModifier } = hasUnreads);
-  let num = 2;
-  if (undefined !== lineClamp) {
-    num = lineClamp;
-  }
-  const tmp4 = closure_4();
-  if (cResult[0] === isMessageDeleted) {
-    if (cResult[1] === message) {
-      if (cResult[2] === messageContent) {
-        if (cResult[3] === messageLoaded) {
-          if (cResult[4] === senderModifier) {
-            let tmp5 = cResult[5];
-          }
-          ({ content, style, variant } = useNativeForumPostContentDefault(tmp5));
-          let str = "text-muted";
-          if (hasUnreads.hasUnreads) {
-            str = "text-default";
-          }
-          if (cResult[6] === style) {
-            if (cResult[7] === tmp4.text) {
-              let tmp8 = cResult[8];
-            }
-            if (cResult[9] === content) {
-              if (cResult[10] === num) {
-                if (cResult[11] === str) {
-                  if (cResult[12] === tmp8) {
-                    if (cResult[13] === variant) {
-                      let tmp9 = cResult[14];
-                    }
-                    return tmp9;
-                  }
-                }
-              }
-            }
-            const obj2 = { variant, color: str, lineClamp: num, ellipsizeMode: "tail", includeFontPadding: true, style: tmp8, children: content };
-            const tmp11 = jsx(Text_Text.Text, { variant, color: str, lineClamp: num, ellipsizeMode: "tail", includeFontPadding: true, style: tmp8, children: content });
-            cResult[9] = content;
-            cResult[10] = num;
-            cResult[11] = str;
-            cResult[12] = tmp8;
-            cResult[13] = variant;
-            cResult[14] = tmp11;
-            tmp9 = tmp11;
-          }
-          const items = [style, tmp4.text];
-          cResult[6] = style;
-          cResult[7] = tmp4.text;
-          cResult[8] = items;
-          tmp8 = items;
-          const tmp7 = useNativeForumPostContentDefault(tmp5);
-        }
-      }
-    }
-  }
-  const obj3 = { message, messageLoaded, messageContent, isMessageDeleted, senderModifier };
-  cResult[0] = isMessageDeleted;
-  cResult[1] = message;
-  cResult[2] = messageContent;
-  cResult[3] = messageLoaded;
-  cResult[4] = senderModifier;
-  cResult[5] = obj3;
-  tmp5 = obj3;
-}) : ((senderModifier) => {
+export default function ForumPostMessageContent(senderModifier) {
   let num = senderModifier.lineClamp;
   ({ messageContent, message, isMessageDeleted, hasUnreads, messageLoaded } = senderModifier);
   if (num === undefined) {
@@ -100,4 +35,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
   obj.style = items;
   obj.children = content;
   return jsx(Text_Text.Text, { variant, color: null, lineClamp: null, ellipsizeMode: "tail", includeFontPadding: true, style: null, children: null });
-});
+};

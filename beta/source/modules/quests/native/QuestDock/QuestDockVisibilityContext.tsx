@@ -1,9 +1,9 @@
-// Module ID: 15448
-// Function ID: 15449
+// Module ID: 15452
+// Function ID: 15453
 // Name: QuestDockVisibilityContext
 // Dependencies: [19, 2]
 
-// Module 15448 (QuestDockVisibilityContext)
+// Module 15452 (QuestDockVisibilityContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext({ isRendered: false, isVisibleToUser: false });

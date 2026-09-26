@@ -1,9 +1,9 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8942
+// Function ID: 8943
 // Name: ReportMenuType
 // Dependencies: [2]
 
-// Module 8940 (ReportMenuType)
+// Module 8942 (ReportMenuType)
 import size from "module_2" /* 2 */;
 
 const obj = { IN_APP: new Set(["application", "first_dm", "guild", "guild_directory_entry", "guild_discovery", "guild_scheduled_event", "message", "report_to_mod_message", "stage_channel", "user", "widget"]), REPORT_TO_MOD: null, UNAUTHENTICATED: null, CONSOLE: null };

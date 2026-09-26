@@ -1,115 +1,31 @@
-// Module ID: 17220
-// Function ID: 17221
+// Module ID: 17210
+// Function ID: 17211
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 7447, 1119, 2112, 4786, 2]
+// Dependencies: [19, 17, 1074, 21, 4788, 576, 7445, 4784, 1115, 2108, 2]
+// Exports: default
 
-// Module 17220 (ChannelDetailsLinkedLobby)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7447 */;
+// Module 17210 (ChannelDetailsLinkedLobby)
+import nativeDefault from "native" /* 576 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7445 */;
 import noop from "module_19" /* 19 */;
 
-const util = BPDKoA(1119);
-const Text_Text = BPDKoA(4786);
+const util = BPDKoA(1115);
+const Text_Text = BPDKoA(4784);
 require = fn;
 const View = fn(17).View;
-const HelpdeskArticles = fn(1078).HelpdeskArticles;
+const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ Fragment: hasOwnProperty, jsxs: metroRequire, jsx: closure_7 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { alignItems: "center" }, divider: null };
 let size = { height: 1, width: 48, marginTop: 12, backgroundColor: nativeDefault.colors.BORDER_STRONG };
 obj2.divider = size;
 let closure_8 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(15);
-  ({ channel, containerStyle } = arg0);
-  const tmp4 = closure_8();
-  const linkedLobby = channel.linkedLobby;
-  let application_id;
-  if (linkedLobby != null) {
-    application_id = linkedLobby.application_id;
-  }
-  const getOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication(application_id);
-  if (null == channel.linkedLobby) {
-    return null;
-  } else {
-    if (cResult[0] === containerStyle) {
-      if (cResult[1] === tmp4.container) {
-        let tmp7 = cResult[2];
-      }
-      if (cResult[3] !== getOrFetchApplication) {
-        if (null != getOrFetchApplication) {
-          const intl2 = tmp(1119).intl;
-          const obj3 = { applicationName: getOrFetchApplication.name };
-          let formatResult = intl2.format(tmp(1119).t.SgxMJs, obj3);
-        } else {
-          const intl = tmp(1119).intl;
-          formatResult = intl.string(tmp(1119).t.yQqVss);
-        }
-        cResult[3] = getOrFetchApplication;
-        cResult[4] = formatResult;
-      } else {
-        const _Symbol = Symbol;
-        if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1119).intl;
-          const obj4 = { helpdeskArticle: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.LINKED_LOBBIES) };
-          const formatResult1 = intl3.format(tmp(1119).t.BPDKoA, obj4);
-          cResult[5] = formatResult1;
-          let tmp12 = formatResult1;
-        } else {
-          tmp12 = cResult[5];
-        }
-        if (cResult[6] === cResult[4]) {
-          if (cResult[7] === tmp12) {
-            let tmp16 = cResult[8];
-          }
-          if (cResult[9] !== tmp4.divider) {
-            const obj6 = { style: tmp4.divider };
-            const tmp24 = React5(View, obj6);
-            cResult[9] = tmp4.divider;
-            cResult[10] = tmp24;
-            let tmp21 = tmp24;
-          } else {
-            tmp21 = cResult[10];
-          }
-          if (cResult[11] === tmp7) {
-            if (cResult[12] === tmp16) {
-            }
-          }
-          const obj7 = { style: tmp7, children: null };
-          const items = [tmp16, tmp21];
-          obj7.children = items;
-          const tmp28 = timestampProducer(View, obj7);
-          cResult[11] = tmp7;
-          cResult[12] = tmp16;
-          cResult[13] = tmp21;
-          cResult[14] = tmp28;
-        }
-        const obj8 = { variant: "text-sm/normal", color: "text-default", children: null };
-        const obj9 = { children: null };
-        const items1 = [cResult[4], "  \u2022  ", tmp12];
-        obj9.children = items1;
-        obj8.children = timestampProducer(hasOwnProperty, obj9);
-        const tmp20 = React5(tmp(4786).Text, obj8);
-        cResult[6] = cResult[4];
-        cResult[7] = tmp12;
-        cResult[8] = tmp20;
-        tmp16 = tmp20;
-      }
-    }
-    const items2 = [tmp4.container, containerStyle];
-    cResult[0] = containerStyle;
-    cResult[1] = tmp4.container;
-    cResult[2] = items2;
-    tmp7 = items2;
-  }
-}) : ((channel) => {
+export default function ChannelDetailsLinkedLobby(channel) {
   channel = channel.channel;
   let divider = closure_8();
   let BPDKoA = require;
@@ -155,4 +71,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj2.children = items2;
     timestampProducer(View, obj2);
   }
-});
+};

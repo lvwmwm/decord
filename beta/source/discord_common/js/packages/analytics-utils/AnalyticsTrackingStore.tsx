@@ -1,16 +1,16 @@
-// Module ID: 1254
-// Function ID: 1255
+// Module ID: 1250
+// Function ID: 1251
 // Name: AnalyticsTrackingStore
-// Dependencies: [1089, 4, 1255, 1258, 1259, 1275, 504, 2]
+// Dependencies: [1085, 4, 1251, 1254, 1255, 1271, 504, 2]
 // Exports: analyticsTrackingStoreMaker
 
-// Module 1254 (AnalyticsTrackingStore)
+// Module 1250 (AnalyticsTrackingStore)
 import logger_Logger from "logger/Logger" /* 4 */;
-import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1255 */;
-import FingerprintUtils from "FingerprintUtils" /* 1258 */;
-import v1 from "v1" /* 1259 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import Constants from "Constants" /* 1089 */;
+import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1251 */;
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import v1 from "v1" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ let closure_31 = [];
 let c32 = null;
 let c33 = false;
 function defaultGetSessionId() {
-  return Promise.resolve({ sessionId: "emoji" });
+  return Promise.resolve({ sessionId: "r" });
 }
 let result = size.fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsTrackingStore.tsx");
 

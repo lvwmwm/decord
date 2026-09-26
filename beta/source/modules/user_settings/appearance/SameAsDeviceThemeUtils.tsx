@@ -1,19 +1,19 @@
-// Module ID: 15445
-// Function ID: 15446
+// Module ID: 15449
+// Function ID: 15450
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [4610, 1186, 1189, 9502, 1232, 4642, 4639, 2]
+// Dependencies: [4607, 1182, 1185, 9504, 1228, 4639, 4636, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 15445 (SameAsDeviceThemeUtils)
-import ClientThemesUtils from "ClientThemesUtils" /* 1232 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4639 */;
-import shared from "shared" /* 4642 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9502 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
-import ThemeStore from "ThemeStore" /* 1186 */;
+// Module 15449 (SameAsDeviceThemeUtils)
+import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4636 */;
+import shared from "shared" /* 4639 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9504 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4607 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
-const ThemeConstants = fn(1189);
+const ThemeConstants = fn(1185);
 ({ SystemTheme: hasOwnProperty, SystemThemeState: metroRequire } = ThemeConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/appearance/SameAsDeviceThemeUtils.tsx");
@@ -40,16 +40,16 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUs
       const result1 = ThemeActionCreators.updateThemePreferences(obj5);
       if (null != customUserThemeSettings) {
         const obj6 = { customUserThemeSettings };
-        const result2 = tmp6(4639).updateSyncedClientTheme(tmp8, obj6);
-        const tmp6Result4 = tmp6(4639);
+        const result2 = tmp6(4636).updateSyncedClientTheme(tmp8, obj6);
+        const tmp6Result4 = tmp6(4636);
       } else if (null != tmp9) {
         const obj7 = { backgroundGradientPresetId: tmp9 };
-        const result3 = tmp6(4639).updateSyncedClientTheme(tmp8, obj7);
-        const tmp6Result5 = tmp6(4639);
+        const result3 = tmp6(4636).updateSyncedClientTheme(tmp8, obj7);
+        const tmp6Result5 = tmp6(4636);
       } else {
         const obj8 = { theme: customThemeBaseTheme };
-        const result4 = tmp6(4639).updateSyncedClientTheme(tmp8, obj8);
-        const tmp6Result6 = tmp6(4639);
+        const result4 = tmp6(4636).updateSyncedClientTheme(tmp8, obj8);
+        const tmp6Result6 = tmp6(4636);
       }
       const tmp6Result = ThemeActionCreators;
     }

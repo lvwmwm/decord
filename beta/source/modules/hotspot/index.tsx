@@ -1,16 +1,16 @@
-// Module ID: 7492
-// Function ID: 7493
+// Module ID: 7490
+// Function ID: 7491
 // Name: HotspotStore
-// Dependencies: [7493, 2, 7494, 7495]
+// Dependencies: [7491, 2, 7492, 7493]
 
-// Module 7492 (HotspotStore)
-import HotspotStore from "hotspot/HotspotStore" /* 7493 */;
+// Module 7490 (HotspotStore)
+import HotspotStore from "hotspot/HotspotStore" /* 7491 */;
 
 const require = globalThis.__r;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/hotspot/index.tsx");
-const Constants = fn(7494);
+const Constants = fn(7492);
 for (const key10022 in tmp4) {
   arg5[key10022] = Constants[key10022];
   continue;

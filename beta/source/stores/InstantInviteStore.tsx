@@ -1,17 +1,17 @@
-// Module ID: 8687
-// Function ID: 8688
+// Module ID: 8682
+// Function ID: 8683
 // Name: InstantInviteStore
-// Dependencies: [8688, 8015, 8689, 8691, 8692, 504, 577, 2]
+// Dependencies: [8683, 8010, 8684, 8686, 8687, 504, 573, 2]
 
-// Module 8687 (InstantInviteStore)
+// Module 8682 (InstantInviteStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import headDefault from "head" /* 8689 */;
-import reverseDefault from "reverse" /* 8691 */;
-import _modDef8692 from "module_8692" /* 8692 */;
-import InviteRecord from "InviteRecord" /* 8688 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import headDefault from "head" /* 8684 */;
+import reverseDefault from "reverse" /* 8686 */;
+import _modDef8687 from "module_8687" /* 8687 */;
+import InviteRecord from "InviteRecord" /* 8683 */;
 
-const InviteTargetTypes = fn(8015).InviteTargetTypes;
+const InviteTargetTypes = fn(8010).InviteTargetTypes;
 let closure_5 = {};
 const dependencyMap = {};
 const dependencyMap2 = {};
@@ -92,7 +92,7 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
     closure_8[invite.invite.code] = InviteRecord.createFromServer(invite.invite);
     const tmp = headDefault;
     const tmp2 = reverseDefault;
-    let tmpResult = tmp(tmp2(_modDef8692(Object.values(closure_8), "createdAt")));
+    let tmpResult = tmp(tmp2(_modDef8687(Object.values(closure_8), "createdAt")));
     if (tmpResult == null) {
       tmpResult = null;
     }
@@ -114,7 +114,7 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
     }
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    let tmp2Result = tmp2(tmp3(_modDef8692(Object.values(closure_8), "createdAt")));
+    let tmp2Result = tmp2(tmp3(_modDef8687(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }
@@ -166,7 +166,7 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
     });
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    let tmp2Result = tmp2(tmp3(_modDef8692(Object.values(closure_8), "createdAt")));
+    let tmp2Result = tmp2(tmp3(_modDef8687(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }

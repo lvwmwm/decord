@@ -1,10 +1,10 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15416
+// Function ID: 15417
 // Name: VttParser
 // Dependencies: [2]
 // Exports: parseVtt
 
-// Module 15412 (VttParser)
+// Module 15416 (VttParser)
 import size from "module_2" /* 2 */;
 
 const prototype = function VttParserError(arg0, error) {

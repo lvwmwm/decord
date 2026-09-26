@@ -1,9 +1,9 @@
-// Module ID: 5370
-// Function ID: 5371
+// Module ID: 5368
+// Function ID: 5369
 // Name: ContentRatingIGDBTheme
 // Dependencies: [2]
 
-// Module 5370 (ContentRatingIGDBTheme)
+// Module 5368 (ContentRatingIGDBTheme)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]), ADULT_THEMES: null };

@@ -1,16 +1,16 @@
-// Module ID: 11927
-// Function ID: 11928
+// Module ID: 12045
+// Function ID: 12046
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: [7386, 7446, 7449, 2]
+// Dependencies: [7384, 7444, 7447, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 11927 (getShouldShowAppAuthPrompt)
-import useAuthorizationApp from "useAuthorizationApp" /* 7446 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7449 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7386 */;
+// Module 12045 (getShouldShowAppAuthPrompt)
+import useAuthorizationApp from "useAuthorizationApp" /* 7444 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7447 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7384 */;
 
 require = fn;
-const FetchState = fn(7386).FetchState;
+const FetchState = fn(7384).FetchState;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_account_linking/native/getShouldShowAppAuthPrompt.tsx");
 

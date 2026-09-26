@@ -1,11 +1,11 @@
-// Module ID: 9330
-// Function ID: 9331
+// Module ID: 9332
+// Function ID: 9333
 // Name: ApplicationAssetsV2Store
-// Dependencies: [12, 504, 577, 2]
+// Dependencies: [12, 504, 573, 2]
 
-// Module 9330 (ApplicationAssetsV2Store)
+// Module 9332 (ApplicationAssetsV2Store)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const require = fn;
 function handleFeaturedOrDeveloperFetchSuccess(configs) {

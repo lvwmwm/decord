@@ -1,100 +1,30 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12449
+// Function ID: 12450
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 4790, 558, 568, 1616, 12278, 4499, 1119, 1181, 12342, 7329, 2]
+// Dependencies: [19, 17, 21, 4788, 1612, 12384, 4494, 1177, 12450, 1115, 7327, 2]
+// Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 12341 (AppLauncherList)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import SearchField from "SearchField" /* 7329 */;
-import AppLauncherFlashList from "AppLauncherFlashList" /* 12278 */;
-import _modDef12342 from "module_12342" /* 12342 */;
+// Module 12449 (AppLauncherList)
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import mergeProps from "mergeProps" /* 4494 */;
+import SearchField from "SearchField" /* 7327 */;
+import _modDef12450 from "module_12450" /* 12450 */;
 import noop from "module_19" /* 19 */;
 
-const mergeProps = tmp(4499);
-const AppLauncherFlashListDefault = tmp4(12278);
+const require = globalThis.__r;
+
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_6 = createStyles.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
-fn(558);
-let ReactCompilerGating = fn(558);
-const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyle, ref2) => {
-  const cResult = c.c(18);
-  const bottom = useSafeAreaInsetsDefault().bottom;
-  const appLauncherFlashListProps = AppLauncherFlashList.useAppLauncherFlashListProps();
-  if (cResult[0] === appLauncherFlashListProps.scrollerRef) {
-    if (cResult[1] === ref2) {
-      let tmp6 = cResult[2];
-    }
-    if (cResult[3] !== bottom) {
-      const obj3 = { paddingBottom: bottom };
-      cResult[3] = bottom;
-      cResult[4] = obj3;
-      let tmp8 = obj3;
-    } else {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === contentContainerStyle.contentContainerStyle) {
-      if (cResult[6] === tmp8) {
-        let tmp10 = cResult[7];
-      }
-      if (cResult[8] !== bottom) {
-        const obj4 = { bottom };
-        cResult[8] = bottom;
-        cResult[9] = obj4;
-        let tmp11 = obj4;
-      } else {
-        tmp11 = cResult[9];
-      }
-      if (cResult[10] === appLauncherFlashListProps.animatedProps) {
-        if (cResult[11] === appLauncherFlashListProps.gestureRef) {
-          if (cResult[12] === appLauncherFlashListProps.onScroll) {
-            if (cResult[13] === tmp6) {
-              if (cResult[14] === contentContainerStyle) {
-                if (cResult[15] === tmp10) {
-                  if (cResult[16] === tmp11) {
-                    let tmp12 = cResult[17];
-                  }
-                  return tmp12;
-                }
-              }
-            }
-          }
-        }
-      }
-      const obj5 = { contentContainerStyle: tmp10, scrollIndicatorInsets: tmp11, ref: tmp6 };
-      const merged = Object.assign(contentContainerStyle);
-      ({ onScroll: obj6.animatedOnScroll, gestureRef: obj6.simultaneousHandlers, animatedProps: obj6.animatedProps } = appLauncherFlashListProps);
-      const tmp18 = jsx(AppLauncherFlashListDefault, { contentContainerStyle: tmp10, scrollIndicatorInsets: tmp11, ref: tmp6 });
-      cResult[10] = appLauncherFlashListProps.animatedProps;
-      cResult[11] = appLauncherFlashListProps.gestureRef;
-      cResult[12] = appLauncherFlashListProps.onScroll;
-      cResult[13] = tmp6;
-      cResult[14] = contentContainerStyle;
-      cResult[15] = tmp10;
-      cResult[16] = tmp11;
-      cResult[17] = tmp18;
-      tmp12 = tmp18;
-      const tmp4Result = AppLauncherFlashListDefault;
-    }
-    const items = [tmp8, contentContainerStyle.contentContainerStyle];
-    cResult[5] = contentContainerStyle.contentContainerStyle;
-    cResult[6] = tmp8;
-    cResult[7] = items;
-    tmp10 = items;
-  }
-  const mergeRefsResult = mergeProps.mergeRefs(appLauncherFlashListProps.scrollerRef, ref2);
-  cResult[0] = appLauncherFlashListProps.scrollerRef;
-  cResult[1] = ref2;
-  cResult[2] = mergeRefsResult;
-  tmp6 = mergeRefsResult;
-}) : ((contentContainerStyle, arg1) => {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
+
+export const AppLauncherList = noop.forwardRef((contentContainerStyle, arg1) => {
   _require = arg1;
-  const bottom = appLauncherFlashListProps(1616)().bottom;
+  const bottom = appLauncherFlashListProps(1612)().bottom;
   appLauncherFlashListProps = require("AppLauncherFlashList").useAppLauncherFlashListProps();
   const items = [appLauncherFlashListProps.scrollerRef, arg1];
   const memo = noop.useMemo(() => mergeProps.mergeRefs(appLauncherFlashListProps.scrollerRef, closure_0), items);
@@ -104,77 +34,20 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const obj = require("AppLauncherFlashList");
   const merged = Object.assign(contentContainerStyle);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
-  return jsx(appLauncherFlashListProps(12278), { contentContainerStyle: null, scrollIndicatorInsets: { bottom }, ref: memo });
-}));
-ReactCompilerGating = fn(558);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(5);
-  const tmp4 = closure_6();
-  ({ emptyState, emptyStateImage } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.vYocDz);
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(tmp(1119).t.V6nAfF);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp5 = stringResult;
-    tmp6 = stringResult1;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  if (cResult[2] === tmp4.emptyState) {
-    if (cResult[3] === tmp4.emptyStateImage) {
-      let tmp9 = cResult[4];
-    }
-    return tmp9;
-  }
-  const tmp10 = jsx(native.EmptyState, { style: emptyState, imageStyle: emptyStateImage, lightSource: _modDef12342, darkSource: _modDef12342, title: tmp5, body: tmp6 });
-  cResult[2] = tmp4.emptyState;
-  cResult[3] = tmp4.emptyStateImage;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (() => {
+  return jsx(appLauncherFlashListProps(12384), { contentContainerStyle: null, scrollIndicatorInsets: { bottom }, ref: memo });
+});
+export const AppLauncherListEmptyState = function AppLauncherListEmptyState() {
   const tmp = closure_6();
-  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12342, darkSource: _modDef12342, title: null, body: null };
+  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12450, darkSource: _modDef12450, title: null, body: null };
   const intl = util.intl;
   obj.title = intl.string(util.t.vYocDz);
   const intl2 = util.intl;
   obj.body = intl2.string(util.t.V6nAfF);
-  return jsx(native.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12342, darkSource: _modDef12342, title: null, body: null });
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
-
-export const AppLauncherList = forwardRefResult;
-export const AppLauncherListEmptyState = tmp3;
-export const AppLauncherListSearchBar = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(5);
-  const tmp4 = closure_6();
-  if (cResult[0] !== arg0) {
-    const obj2 = { size: "md" };
-    const merged = Object.assign(arg0);
-    const tmp10 = jsx(SearchField.SearchField, { size: "md" });
-    cResult[0] = arg0;
-    cResult[1] = tmp10;
-    let tmp5 = tmp10;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.searchBarContainer) {
-    if (cResult[3] === tmp5) {
-      let tmp11 = cResult[4];
-    }
-    return tmp11;
-  }
-  const tmp12 = <View style={tmp4.searchBarContainer}>{tmp5}</View>;
-  cResult[2] = tmp4.searchBarContainer;
-  cResult[3] = tmp5;
-  cResult[4] = tmp12;
-  tmp11 = tmp12;
-}) : ((arg0) => {
+  return jsx(native.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12450, darkSource: _modDef12450, title: null, body: null });
+};
+export const AppLauncherListSearchBar = function AppLauncherListSearchBar(arg0) {
   const obj = { style: closure_6().searchBarContainer, children: null };
   const merged = Object.assign(arg0);
   obj.children = jsx(SearchField.SearchField, { size: "md" });
   return <View style={closure_6().searchBarContainer}>{null}</View>;
-});
+};

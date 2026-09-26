@@ -1,9 +1,10 @@
 // Module ID: 9314
 // Function ID: 9315
-// Dependencies: [9243]
+// Dependencies: [9245, 9315]
 
 // Module 9314
-const require = globalThis.__r;
+import _mod9245 from "module_9245" /* 9245 */;
+import _mod9315 from "module_9315" /* 9315 */;
 
 const self = this;
 let self2 = this;
@@ -56,35 +57,31 @@ if (self2) {
       };
     }
     const _Object3 = Object;
-    exports.ZodIssueCode = undefined;
-    exports.$brand = undefined;
-    exports.config = undefined;
-    exports.ZodFirstPartyTypeKind = undefined;
-    exports.setErrorMap = function setErrorMap(customError) {
-      closure_4.config({ customError });
-    };
-    exports.getErrorMap = function getErrorMap() {
-      return closure_4.config().customError;
-    };
-    let closure_4 = fn(require("module_9243"));
-    exports.ZodIssueCode = { invalid_type: "invalid_type", too_big: "too_big", too_small: "too_small", invalid_format: "invalid_format", not_multiple_of: "not_multiple_of", unrecognized_keys: "unrecognized_keys", invalid_union: "invalid_union", invalid_key: "invalid_key", invalid_element: "invalid_element", invalid_value: "invalid_value", custom: "custom" };
-    const _Object4 = Object;
-    let obj = {
-      enumerable: true,
-      get() {
-            return require("module_9243").$brand;
-          }
-    };
-    Object.defineProperty(exports, "$brand", obj);
-    const _Object5 = Object;
-    const obj2 = {
-      enumerable: true,
-      get() {
-            return require("module_9243").config;
-          }
-    };
-    Object.defineProperty(exports, "config", obj2);
-    exports.ZodFirstPartyTypeKind = {};
+    exports.parse = undefined;
+    exports.parseAsync = undefined;
+    exports.safeParse = undefined;
+    exports.safeParseAsync = undefined;
+    exports.encode = undefined;
+    exports.decode = undefined;
+    exports.encodeAsync = undefined;
+    exports.decodeAsync = undefined;
+    exports.safeEncode = undefined;
+    exports.safeDecode = undefined;
+    exports.safeEncodeAsync = undefined;
+    exports.safeDecodeAsync = undefined;
+    const fnResult = fn(_mod9245);
+    exports.parse = fnResult._parse(_mod9315.ZodRealError);
+    exports.parseAsync = fnResult._parseAsync(_mod9315.ZodRealError);
+    exports.safeParse = fnResult._safeParse(_mod9315.ZodRealError);
+    exports.safeParseAsync = fnResult._safeParseAsync(_mod9315.ZodRealError);
+    exports.encode = fnResult._encode(_mod9315.ZodRealError);
+    exports.decode = fnResult._decode(_mod9315.ZodRealError);
+    exports.encodeAsync = fnResult._encodeAsync(_mod9315.ZodRealError);
+    exports.decodeAsync = fnResult._decodeAsync(_mod9315.ZodRealError);
+    exports.safeEncode = fnResult._safeEncode(_mod9315.ZodRealError);
+    exports.safeDecode = fnResult._safeDecode(_mod9315.ZodRealError);
+    exports.safeEncodeAsync = fnResult._safeEncodeAsync(_mod9315.ZodRealError);
+    exports.safeDecodeAsync = fnResult._safeDecodeAsync(_mod9315.ZodRealError);
   } else {
     const _Object2 = Object;
   }

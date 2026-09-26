@@ -1,100 +1,23 @@
-// Module ID: 13443
-// Function ID: 13444
+// Module ID: 13434
+// Function ID: 13435
 // Name: AddToWishlistGrid
-// Dependencies: [19, 17, 7487, 21, 4790, 558, 568, 13444, 13445, 2]
+// Dependencies: [19, 17, 7485, 21, 4788, 13433, 13435, 2]
+// Exports: default
 
-// Module 13443 (AddToWishlistGrid)
-import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 13444 */;
-import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 13445 */;
+// Module 13434 (AddToWishlistGrid)
+import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 13433 */;
+import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 13435 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let closure_5 = createStyles.createStyles({ itemsContainer: { flexDirection: "row", flexWrap: "wrap", gap: fn(7487).WISHLIST_SUGGESTION_CARD_GAP, justifyContent: "flex-start" } });
-const ReactCompilerGating = fn(558);
-let obj2 = { itemsContainer: { flexDirection: "row", flexWrap: "wrap", gap: fn(7487).WISHLIST_SUGGESTION_CARD_GAP, justifyContent: "flex-start" } };
+const createStyles = fn(4788);
+let closure_5 = createStyles.createStyles({ itemsContainer: { flexDirection: "row", flexWrap: "wrap", gap: fn(7485).WISHLIST_SUGGESTION_CARD_GAP, justifyContent: "flex-start" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/wishlists/native/AddToWishlistGrid.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations) => {
-  const cResult = wishlist(cardSize[6]).c(12);
-  ({ items, wishlist } = analyticsLocations);
-  analyticsLocations = analyticsLocations.analyticsLocations;
-  cardSize = analyticsLocations.cardSize;
-  const tmp2 = closure_5();
-  if (cResult[0] === analyticsLocations) {
-    if (cResult[1] === cardSize) {
-      if (cResult[2] === items) {
-        let id;
-        if (wishlist != null) {
-          id = wishlist.id;
-        }
-        if (cResult[3] === id) {
-          let tmp6 = cResult[4];
-        }
-        if (cResult[9] === tmp2.itemsContainer) {
-          if (cResult[10] === tmp6) {
-            let tmp14 = cResult[11];
-          }
-          return tmp14;
-        }
-        const obj2 = { style: tmp3, children: tmp6 };
-        const tmp17 = <View style={tmp3}>{tmp6}</View>;
-        cResult[9] = tmp2.itemsContainer;
-        cResult[10] = tmp6;
-        cResult[11] = tmp17;
-        tmp14 = tmp17;
-      }
-    }
-  }
-  if (cResult[5] === analyticsLocations) {
-    if (cResult[6] === cardSize) {
-      let id1;
-      if (wishlist != null) {
-        id1 = wishlist.id;
-      }
-      if (cResult[7] === id1) {
-        let tmp9 = cResult[8];
-      }
-      const mapped = items.map(tmp9);
-      cResult[0] = analyticsLocations;
-      cResult[1] = cardSize;
-      cResult[2] = items;
-      let id2;
-      if (wishlist != null) {
-        id2 = wishlist.id;
-      }
-      cResult[3] = id2;
-      cResult[4] = mapped;
-      tmp6 = mapped;
-    }
-  }
-  cResult[5] = analyticsLocations;
-  cResult[6] = cardSize;
-  let id3;
-  if (wishlist != null) {
-    id3 = wishlist.id;
-  }
-  const fn = function l(itemSource, positionInSection) {
-    const sku = itemSource.sku;
-    const obj = { newValue: { positionInSection, skuId: sku.id, itemSource: itemSource.itemSource, productLine: sku.productLine }, children: null };
-    const obj3 = { sku, wishlistId: null, analyticsLocations: null, size: null };
-    let id;
-    if (wishlist != null) {
-      id = wishlist.id;
-    }
-    obj3.wishlistId = id;
-    obj3.analyticsLocations = analyticsLocations;
-    obj3.size = cardSize;
-    obj.children = jsx(AddToWishlistItemCardDefault, { sku, wishlistId: null, analyticsLocations: null, size: null });
-    return jsx(WishlistAnalyticsContext.WishlistAnalyticsProvider, { newValue: { positionInSection, skuId: sku.id, itemSource: itemSource.itemSource, productLine: sku.productLine }, children: null }, sku.id);
-  };
-  cResult[7] = id3;
-  cResult[8] = fn;
-  tmp9 = fn;
-}) : ((arg0) => {
+export default function AddToWishlistGrid(arg0) {
   ({ items, wishlist: require, analyticsLocations: importDefault, cardSize: dependencyMap } = arg0);
   return <View style={closure_5().itemsContainer}>{items.map((itemSource, positionInSection) => {
     const sku = itemSource.sku;
@@ -110,4 +33,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     obj.children = jsx(AddToWishlistItemCardDefault, { sku, wishlistId: null, analyticsLocations: null, size: null });
     return jsx(WishlistAnalyticsContext.WishlistAnalyticsProvider, { newValue: { positionInSection, skuId: sku.id, itemSource: itemSource.itemSource, productLine: sku.productLine }, children: null }, sku.id);
   })}</View>;
-});
+};

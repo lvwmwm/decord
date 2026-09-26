@@ -1,13 +1,13 @@
-// Module ID: 11668
-// Function ID: 11669
+// Module ID: 11792
+// Function ID: 11793
 // Name: openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4483, 1078, 1482, 8568, 1984, 8569, 8570, 11669, 1119, 4757, 4993, 11670, 2]
+// Dependencies: [32, 5, 4479, 1074, 1478, 8563, 1980, 8564, 8565, 11793, 1115, 4755, 4991, 11794, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 11668 (openAppStoreOverlayMediaModal)
+// Module 11792 (openAppStoreOverlayMediaModal)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4483 */;
+import ActionSheetStore from "ActionSheetStore" /* 4479 */;
 
 const require = fn;
 let closure_7 = async function _openAppStoreOverlayMediaModal() {
@@ -78,7 +78,7 @@ let closure_7 = async function _openAppStoreOverlayMediaModal() {
     closure_1_11.markSessionStarted({ channelId, numMediaItems: sources.length, source });
     closure_1_12();
   });
-  await "IconComponent";
+  await "HermesInternal";
   initialIndex = tmp2;
   ({ originViewOrOriginLayout: closure_129_0, initialIndex } = closure_0);
   if (initialIndex === undefined) {
@@ -87,9 +87,9 @@ let closure_7 = async function _openAppStoreOverlayMediaModal() {
   closure_129_1 = initialIndex;
   ({ initialSources: closure_129_2, analyticsSource: closure_129_3, channelId: closure_129_4, onGetGamePress: closure_129_5, onClose: closure_129_6 } = closure_0);
   closure_129_7 = Object.assign(tmp43, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onGetGamePress: 0, onClose: 0 }));
-  return "Set";
+  return "PX_16";
 };
-const MEDIA_MODAL_KEY = fn(1078).MEDIA_MODAL_KEY;
+const MEDIA_MODAL_KEY = fn(1074).MEDIA_MODAL_KEY;
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/openAppStoreOverlayMediaModal.tsx");
 

@@ -1,153 +1,122 @@
 // Module ID: 979
 // Function ID: 980
-// Dependencies: [870]
-// Exports: nativeReleaseIntegration
+// Dependencies: [867]
+// Exports: reactNativeInfoIntegration
 
 // Module 979
-const require = arg1;
+import _mod867 from "module_867" /* 867 */;
+
+require = arg1;
 const dependencyMap = arg6;
-function processEvent(arg0, arg1, arg2) {
-  closure_0 = arg0;
-  closure_1 = arg2;
-  return fn(this, undefined, undefined, function*() {
-    options = tmp3.getOptions();
-    const extra2 = value.extra;
-    if (null !== extra2) {
-      if (undefined !== extra2) {
-        const __sentry_release = extra2.__sentry_release;
-      }
+function processEvent(tags, originalException) {
+  originalException = undefined;
+  if (null != originalException) {
+    originalException = originalException.originalException;
+  }
+  let tmp2;
+  if (originalException) {
+    let originalException1;
+    if (null != originalException) {
+      originalException1 = originalException.originalException;
     }
-    if (typeof __sentry_release === "string") {
-      const _HermesInternal3 = HermesInternal;
-      value.release = "" + value.extra.__sentry_release;
-    } else {
-      let release;
-      if (null != options) {
-        release = options.release;
-      }
-      if (typeof release === "string") {
-        value.release = options.release;
-      }
+    tmp2 = originalException1;
+  }
+  const obj = { turbo_module: _mod867.isTurboModuleEnabled(), fabric: null, react_native_version: null, expo: null };
+  obj.fabric = _mod867.isFabricEnabled();
+  obj.react_native_version = _mod867.getReactNativeVersion();
+  obj.expo = _mod867.isExpo();
+  if (obj6.isHermesEnabled()) {
+    obj.js_engine = "hermes";
+    const hermesVersion = tmp4(867).getHermesVersion();
+    if (hermesVersion) {
+      obj.hermes_version = hermesVersion;
     }
-    const extra = value.extra;
-    if (null !== extra) {
-      if (undefined !== extra) {
-        const __sentry_dist = extra.__sentry_dist;
-      }
-    }
-    if (typeof __sentry_dist === "string") {
-      const _HermesInternal4 = HermesInternal;
-      value.dist = "" + value.extra.__sentry_dist;
-    } else {
-      let dist;
-      if (null != options) {
-        dist = options.dist;
-      }
-      if (typeof dist === "string") {
-        value.dist = options.dist;
-      }
-    }
-    if (value.release) {
-      if (value.dist) {
-        c5 = 3;
-        return { value, done: true };
-      }
-    }
-    const NATIVE = value(tmp3[0]).NATIVE;
-    yield NATIVE.fetchNativeRelease();
-    if (1 === tmp7) {
-      c3 = 0;
-      c5 = 3;
-    } else if (arg0 === 1) {
-      c5 = 3;
-      throw arg1;
-    } else if (arg0 !== 2) {
-      closure_128_0 = arg1;
-      if (closure_128_0) {
-        if (!closure_129_0.release) {
-          const _HermesInternal = HermesInternal;
-          closure_129_0.release = "" + closure_128_0.id + "@" + closure_128_0.version + "+" + closure_128_0.build;
-        }
-        if (!closure_129_0.dist) {
-          const _HermesInternal2 = HermesInternal;
-          closure_129_0.dist = "" + closure_128_0.build;
+    obj.hermes_debug_info = !(function isEventWithHermesBytecodeFrames(exception) {
+      exception = exception.exception;
+      let items;
+      if (null !== exception) {
+        if (undefined !== exception) {
+          items = exception.values;
         }
       }
-      c3 = 0;
-    }
-    return arg1;
-  });
-}
-let fn = this;
-if (this) {
-  fn = this.__awaiter;
-}
-if (!fn) {
-  fn = (arg0, arg1, arg2, arg3) => {
-    closure_0 = arg0;
-    closure_1 = arg1;
-    let _Promise = arg2;
-    closure_3 = arg3;
-    if (!arg2) {
-      _Promise = Promise;
-    }
-    return new _Promise((fn, arg1) => {
-      closure_0 = fn;
-      closure_1 = arg1;
-      function fulfilled(result) {
-        try {
-          step(iter.next(result));
-        } catch (tmp5) {
-          closure_1(tmp5);
-        }
-      }
-      function rejected(arg0) {
-        try {
-          step(iter.throw(arg0));
-        } catch (tmp5) {
-          closure_1(tmp5);
-        }
-      }
-      let iter = rejected;
-      function step(done) {
-        if (done.done) {
-          closure_0(done.value);
-        } else {
-          let tmp1 = done.value;
-          closure_0 = tmp1;
-          if (!(tmp1 instanceof Promise)) {
-            tmp1 = new tmp((fn) => {
-              fn(value);
-            });
+      if (!items) {
+        const threads = exception.threads;
+        let values2;
+        if (null !== threads) {
+          if (undefined !== threads) {
+            values2 = threads.values;
           }
-          tmp1.then(fulfilled, iter);
         }
+        items = values2;
       }
-      let items = closure_1;
-      if (!closure_1) {
+      if (!items) {
         items = [];
       }
-      iter = iter.apply(closure_0, items);
-      const iter2 = iter.next();
-      value = iter2.value;
-      if (iter2.done) {
-        fn(value);
-      } else {
-        closure_0 = value;
-        let tmp32 = value;
-        if (!(value instanceof fulfilled)) {
-          tmp32 = new tmp3((fn) => {
-            fn(value);
-          });
+      const iter = items[Symbol.iterator]();
+      while (iter !== undefined) {
+        let stacktrace = iter.next().stacktrace;
+        let tmp2 = stacktrace;
+        let frames;
+        if (null !== stacktrace) {
+          if (undefined !== tmp2) {
+            frames = tmp2.frames;
+          }
         }
-        tmp32.then(fulfilled, rejected);
+        if (!frames) {
+          frames = [];
+        }
+        for (const item10023 of frames) {
+          if (undefined === item10023.platform) {
+            if (1 === tmp7.lineno) {
+              obj.return();
+              iter.return();
+              let flag = true;
+              return true;
+            }
+          }
+          continue;
+        }
+        continue;
       }
-    });
-  };
+      return false;
+    })(tags);
+    const tmp4Result = tmp4(867);
+  } else {
+    let jsEngine;
+    if (null != tmp2) {
+      jsEngine = tmp2.jsEngine;
+    }
+    if (jsEngine) {
+      obj.js_engine = tmp2.jsEngine;
+    }
+  }
+  if ("hermes" === obj.js_engine) {
+    const _Object = Object;
+    tags.tags = Object.assign({ hermes: true }, tags.tags);
+  }
+  let componentStack;
+  if (null != tmp2) {
+    componentStack = tmp2.componentStack;
+  }
+  if (componentStack) {
+    obj.component_stack = tmp2.componentStack;
+  }
+  obj6 = _mod867;
+  const expoGoVersion = _mod867.getExpoGoVersion();
+  if (expoGoVersion) {
+    obj.expo_go_version = expoGoVersion;
+  }
+  const tmp4Result3 = _mod867;
+  const expoSdkVersion = _mod867.getExpoSdkVersion();
+  if (expoSdkVersion) {
+    obj.expo_sdk_version = expoSdkVersion;
+  }
+  tags.contexts = Object.assign({ react_native_context: obj }, tags.contexts);
+  return tags;
 }
 
 export () => ({
-  name: "Release",
+  name: "ReactNativeInfo",
   setupOnce() {
 
   },

@@ -1,136 +1,34 @@
-// Module ID: 17980
-// Function ID: 17981
+// Module ID: 17971
+// Function ID: 17972
 // Name: SelectApplicationActionSheet
-// Dependencies: [19, 21, 4790, 580, 558, 568, 1119, 4757, 7428, 5932, 5834, 1401, 7481, 5933, 2]
+// Dependencies: [19, 21, 4788, 576, 1115, 7474, 7426, 5934, 4755, 5937, 5836, 1397, 2]
+// Exports: default
 
-// Module 17980 (SelectApplicationActionSheet)
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import FastImageDefault from "FastImage" /* 5834 */;
-import TableRadioRow from "TableRadioRow" /* 5932 */;
-import TableRadioGroup from "TableRadioGroup" /* 5933 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
-import ActionSheet from "ActionSheet" /* 7481 */;
+// Module 17971 (SelectApplicationActionSheet)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import TableRadioGroup from "TableRadioGroup" /* 5934 */;
+import TableRadioRow from "TableRadioRow" /* 5937 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7426 */;
+import ActionSheet from "ActionSheet" /* 7474 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { icon: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.md };
 obj2.icon = size;
 let closure_4 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/SelectApplicationActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = onSelectApplication(568).c(13);
-  ({ applications, selectedApplicationId, onSelectApplication } = arg0);
-  const tmp4 = closure_4();
-  importDefault = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t.FKSiso);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== onSelectApplication) {
-    class S {
-      constructor(arg0) {
-        obj = closure_1(closure_2[7]);
-        hideActionSheetResult = obj.hideActionSheet();
-        tmp2 = onSelectApplication(arg0);
-        return;
-      }
-    }
-    cResult[1] = onSelectApplication;
-    cResult[2] = S;
-  } else {
-    class S {
-      constructor(arg0) {
-        obj = closure_1(closure_2[7]);
-        hideActionSheetResult = obj.hideActionSheet();
-        tmp2 = onSelectApplication(arg0);
-        return;
-      }
-    }
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor(arg0) {
-        obj = closure_1(closure_2[7]);
-        hideActionSheetResult = obj.hideActionSheet();
-        tmp2 = onSelectApplication(arg0);
-        return;
-      }
-    }
-    let obj2 = { title: first };
-    const tmp9 = jsx(tmp(7428).BottomSheetTitleHeader, { title: first });
-    cResult[3] = tmp9;
-  } else {
-    class S {
-      constructor(arg0) {
-        obj = closure_1(closure_2[7]);
-        hideActionSheetResult = obj.hideActionSheet();
-        tmp2 = onSelectApplication(arg0);
-        return;
-      }
-    }
-  }
-  if (selectedApplicationId == null) {
-    class S {
-      constructor(arg0) {
-        obj = closure_1(closure_2[7]);
-        hideActionSheetResult = obj.hideActionSheet();
-        tmp2 = onSelectApplication(arg0);
-        return;
-      }
-    }
-  }
-  if (cResult[4] === applications) {
-    class S {
-      constructor(arg0) {
-        obj = closure_1(closure_2[7]);
-        hideActionSheetResult = obj.hideActionSheet();
-        tmp2 = onSelectApplication(arg0);
-        return;
-      }
-    }
-  }
-  if (cResult[7] !== tmp4) {
-    class S {
-      constructor(arg0) {
-        obj = closure_1(closure_2[7]);
-        hideActionSheetResult = obj.hideActionSheet();
-        tmp2 = onSelectApplication(arg0);
-        return;
-      }
-    }
-    cResult[7] = tmp4;
-    cResult[8] = tmp11;
-    const tmp10 = tmp11;
-  } else {
-    class S {
-      constructor(arg0) {
-        obj = closure_1(closure_2[7]);
-        hideActionSheetResult = obj.hideActionSheet();
-        tmp2 = onSelectApplication(arg0);
-        return;
-      }
-    }
-  }
-  const mapped = applications.map(tmp10);
-  cResult[4] = applications;
-  cResult[5] = tmp4;
-  cResult[6] = mapped;
-}) : ((arg0) => {
+export default function SelectApplicationActionSheet(arg0) {
   ({ applications, selectedApplicationId, onSelectApplication: require } = arg0);
   const icon = closure_4();
   const intl = util.intl;
@@ -177,4 +75,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     })
   });
   return jsx(ActionSheet.ActionSheet, { header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }), children: null });
-});
+};

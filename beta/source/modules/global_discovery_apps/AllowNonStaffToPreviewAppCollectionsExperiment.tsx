@@ -1,10 +1,10 @@
-// Module ID: 12293
-// Function ID: 12294
+// Module ID: 12399
+// Function ID: 12400
 // Name: AllowNonStaffToPreviewAppCollectionsExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 12293 (AllowNonStaffToPreviewAppCollectionsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 12399 (AllowNonStaffToPreviewAppCollectionsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2025-01-allow-nonstaff-to-preview-app-collections", defaultConfig: { enabled: false }, variations: null };

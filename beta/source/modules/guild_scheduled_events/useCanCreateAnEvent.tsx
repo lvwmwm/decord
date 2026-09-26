@@ -1,79 +1,31 @@
-// Module ID: 9789
-// Function ID: 9790
+// Module ID: 9793
+// Function ID: 9794
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 2100, 2067, 4431, 1078, 558, 568, 9787, 504, 2]
+// Dependencies: [32, 2096, 2063, 4427, 1074, 504, 9791, 2]
+// Exports: default
 
-// Module 9789 (useCanCreateAnEvent)
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9787 */;
+// Module 9793 (useCanCreateAnEvent)
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9791 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GuildChannelStore from "GuildChannelStore" /* 2100 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GUILD_VOCAL_CHANNELS_KEY = fn(2100).GUILD_VOCAL_CHANNELS_KEY;
-const Permissions = fn(1078).Permissions;
-const ReactCompilerGating = fn(558);
+const GUILD_VOCAL_CHANNELS_KEY = fn(2096).GUILD_VOCAL_CHANNELS_KEY;
+const Permissions = fn(1074).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useCanCreateAnEvent.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  dependencyMap = arg1;
-  const cResult = require("c").c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore, GuildChannelStore, PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    if (cResult[2] === arg0) {
-      let tmp8 = cResult[3];
-      let tmp9 = cResult[4];
-    }
-    return require("initialize").useStateFromStores(first, tmp8, tmp9);
-  }
-  const fn = function _() {
-    guild = GuildStore.getGuild(closure_0);
-    if (!PermissionStore.can(Permissions.ADMINISTRATOR, guild)) {
-      if (!PermissionStore.can(Permissions.CREATE_EVENTS, guild)) {
-        const tmp8 = GuildChannelStore.getChannels(closure_0)[GUILD_VOCAL_CHANNELS_KEY];
-        const iter = tmp8[Symbol.iterator]();
-        while (iter !== undefined) {
-          let channel = iter.next().channel;
-          if (null == closure_1) {
-            let obj2 = useManageResourcePermissions;
-            if (PermissionStore.can(_slicedToArray(obj2.attachChannelPermissions(channel), 1)[0], channel)) {
-              iter.return();
-              let flag = true;
-              return true;
-            }
-          }
-          continue;
-        }
-        return false;
-      }
-    }
-    return true;
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg1;
-  cResult[2] = arg0;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp9 = items1;
-  tmp8 = fn;
-}) : ((arg0, arg1) => {
+export default function useCanCreateAnEvent(arg0, arg1) {
   _require = arg0;
   dependencyMap = arg1;
   const items = [GuildStore, GuildChannelStore, PermissionStore];
   const items1 = [arg0, arg1];
   return require("initialize").useStateFromStores(items, () => {
-    guild = GuildStore.getGuild(closure_0);
+    const guild = GuildStore.getGuild(closure_0);
     if (!PermissionStore.can(Permissions.ADMINISTRATOR, guild)) {
       if (!PermissionStore.can(Permissions.CREATE_EVENTS, guild)) {
         const tmp8 = GuildChannelStore.getChannels(closure_0)[GUILD_VOCAL_CHANNELS_KEY];
@@ -95,4 +47,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
     return true;
   }, items1);
-});
+};

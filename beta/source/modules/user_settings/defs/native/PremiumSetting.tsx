@@ -1,63 +1,22 @@
-// Module ID: 15257
-// Function ID: 15258
+// Module ID: 15261
+// Function ID: 15262
 // Name: PremiumSetting
-// Dependencies: [19, 1376, 4456, 1078, 21, 13703, 4450, 1119, 558, 568, 7693, 11601, 15258, 11630, 8970, 15260, 2]
+// Dependencies: [19, 1372, 4452, 1074, 21, 13693, 4446, 1115, 7691, 11725, 15262, 11754, 8972, 15264, 2]
 
-// Module 15257 (PremiumSetting)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import PremiumUtils from "PremiumUtils" /* 4450 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7693 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11601 */;
-import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13703 */;
-import PremiumTabBadgeDefault from "PremiumTabBadge" /* 15258 */;
+// Module 15261 (PremiumSetting)
+import util from "util" /* 1115 */;
+import PremiumUtils from "PremiumUtils" /* 4446 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7691 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11725 */;
+import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13693 */;
+import PremiumTabBadgeDefault from "PremiumTabBadge" /* 15262 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
-import SubscriptionStore from "SubscriptionStore" /* 4456 */;
+import UserStore from "UserStore" /* 1372 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-fn(558);
-const ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
-      let flag = !isPaymentsBlocked;
-      if (isPaymentsBlocked) {
-        openBlockedPaymentsCountryActionSheetDefault();
-        flag = false;
-      }
-      return flag;
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => noop.useCallback(() => {
-  const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
-  let flag = !isPaymentsBlocked;
-  if (isPaymentsBlocked) {
-    openBlockedPaymentsCountryActionSheetDefault();
-    flag = false;
-  }
-  return flag;
-}, []));
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = jsx(PremiumTabBadgeDefault, {});
-    cResult[0] = tmp6;
-    let first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => jsx(PremiumTabBadgeDefault, {}));
+const SettingBuilders = fn(11754);
 const route = SettingBuilders.createRoute({
   useTitle: function getPremiumSettingTitle() {
     const mobileNitroManageSubscriptionsSettingsExperiment = MobileNitroManageSubscriptionsSettingsExperiment.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
@@ -78,21 +37,23 @@ const route = SettingBuilders.createRoute({
     }
   },
   parent: null,
-  IconComponent: fn(8970).NitroWheelIcon,
-  usePreNavigationAction: tmp2,
-  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(1);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp6 = jsx(PremiumTabBadgeDefault, {});
-      cResult[0] = tmp6;
-      let first = tmp6;
-    } else {
-      first = cResult[0];
-    }
-    return first;
-  }) : (() => jsx(PremiumTabBadgeDefault, {})),
+  IconComponent: fn(8972).NitroWheelIcon,
+  usePreNavigationAction: function useCanNavigateToPaymentSetting() {
+    return noop.useCallback(() => {
+      const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
+      let flag = !isPaymentsBlocked;
+      if (isPaymentsBlocked) {
+        openBlockedPaymentsCountryActionSheetDefault();
+        flag = false;
+      }
+      return flag;
+    }, []);
+  },
+  useTrailing: function usePremiumSettingTrailing() {
+    return jsx(PremiumTabBadgeDefault, {});
+  },
   screen: {
-    route: fn(1078).UserSettingsSections.PREMIUM,
+    route: fn(1074).UserSettingsSections.PREMIUM,
     getComponent() {
       return require("PremiumSettingScreen").default;
     }

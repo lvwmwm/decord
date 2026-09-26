@@ -1,15 +1,16 @@
 // Module ID: 10885
 // Function ID: 10886
-// Dependencies: [41, 42, 93, 95, 98, 10785]
+// Dependencies: [41, 42, 93, 95, 98, 10728, 10882, 10729, 10884]
 
 // Module 10885
-import _mod10785 from "module_10785" /* 10785 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import _mod10884 from "module_10884" /* 10884 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+const UkMonthNameParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,30 +30,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let _classCallCheck = _classCallCheck_mod;
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: __esModule };
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-class ZHHantMergeDateTimeRefiner {
+class UkMonthNameParser {
   constructor() {
     self = this;
-    tmp = closure_0(this, ZHHantMergeDateTimeRefiner);
-    tmp2 = c2;
-    obj = c2(ZHHantMergeDateTimeRefiner);
-    tmp3 = closure_1;
-    if (closure_3()) {
+    tmp = c2(this, UkMonthNameParser);
+    tmp2 = closure_4;
+    obj = closure_4(UkMonthNameParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -65,14 +50,40 @@ class ZHHantMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = ZHHantMergeDateTimeRefiner;
-_inherits(ZHHantMergeDateTimeRefiner, fn(_mod10785).default);
+_inherits(UkMonthNameParser, _mod10884.AbstractParserWithLeftBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*$/i;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "((?:\u0432|\u0443)\\s*)?(" + UkMonthNameParser(10728).matchAnyPattern(UkMonthNameParser(10882).MONTH_DICTIONARY) + ")\\s*(?:[,-]?\\s*(" + UkMonthNameParser(10882).YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)";
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const formatted = index[2].toLowerCase();
+      if (index[0].length <= 3) {
+        if (!UkMonthNameParser(10882).FULL_MONTH_NAME_DICTIONARY[formatted]) {
+          return null;
+        }
+      }
+      const parsingResult = createParsingResult.createParsingResult(index.index, index.index + index[0].length);
+      const start = parsingResult.start;
+      start.imply("day", 1);
+      const tmp9 = UkMonthNameParser(10882).MONTH_DICTIONARY[formatted];
+      const start2 = parsingResult.start;
+      start2.assign("month", tmp9);
+      if (index[3]) {
+        const start4 = parsingResult.start;
+        start4.assign("year", tmp7(10882).parseYearPattern(index[3]));
+      } else {
+        const start3 = parsingResult.start;
+        start3.imply("year", tmp7(10729).findYearClosestToRef(createParsingResult.reference.instant, 1, tmp9));
+      }
+      return parsingResult;
+    }
+  }
+];
 
-export default _createClass(ZHHantMergeDateTimeRefiner, items);
+export default _createClass(UkMonthNameParser, items);

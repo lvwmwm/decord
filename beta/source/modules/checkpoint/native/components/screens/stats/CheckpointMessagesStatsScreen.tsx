@@ -1,26 +1,17 @@
-// Module ID: 15980
-// Function ID: 15981
+// Module ID: 15984
+// Function ID: 15985
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [21, 558, 568, 15979, 2]
+// Dependencies: [21, 15983, 2]
+// Exports: default
 
-// Module 15980 (CheckpointMessagesStatsScreen)
+// Module 15984 (CheckpointMessagesStatsScreen)
 import jsxProd from "jsxProd" /* 21 */;
-import c from "c" /* 568 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15979 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15983 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointMessagesStatsScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = jsx(CheckpointStatsScreenDefault, { name: "Messages" });
-    cResult[0] = tmp6;
-    let first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => jsx(CheckpointStatsScreenDefault, { name: "Messages" }));
+export default function CheckpointMessagesStatsScreen() {
+  return jsx(CheckpointStatsScreenDefault, { name: "Messages" });
+};

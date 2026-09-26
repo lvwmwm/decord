@@ -1,18 +1,18 @@
-// Module ID: 4612
-// Function ID: 4613
+// Module ID: 4609
+// Function ID: 4610
 // Name: SelectedGuildStore
-// Dependencies: [4613, 502, 4616, 2067, 1078, 1105, 504, 4617, 4630, 577, 2]
+// Dependencies: [4610, 502, 4613, 2063, 1074, 1101, 504, 4614, 4627, 573, 2]
 
-// Module 4612 (SelectedGuildStore)
+// Module 4609 (SelectedGuildStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import router_utils from "router_utils" /* 1105 */;
-import matchPathCompat from "matchPathCompat" /* 4617 */;
-import RouteUtils from "RouteUtils" /* 4630 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4613 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import router_utils from "router_utils" /* 1101 */;
+import matchPathCompat from "matchPathCompat" /* 4614 */;
+import RouteUtils from "RouteUtils" /* 4627 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4610 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4616 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4613 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 function handleConnectionOpen() {
@@ -41,7 +41,7 @@ function handleConnectionOpen() {
     prop[tmp11] = Date.now();
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ME: metroRequire, Routes: closure_7 } = Constants);
 let c8 = null;
 let c9 = null;

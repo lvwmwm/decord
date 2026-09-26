@@ -1,206 +1,23 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 12110
+// Function ID: 12111
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 2045, 2067, 21, 558, 568, 8426, 11989, 8428, 1181, 9878, 11987, 2]
+// Dependencies: [19, 2041, 2063, 21, 8421, 12107, 12105, 8423, 1177, 9899, 2]
+// Exports: default
 
-// Module 11992 (ChannelSelectComponentActionSheet)
-import native from "native" /* 1181 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8426 */;
-import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 8428 */;
+// Module 12110 (ChannelSelectComponentActionSheet)
+import native from "native" /* 1177 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8421 */;
+import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 8423 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
-  const cResult = channelId(channelTypes[5]).c(26);
-  ({ selectionActionComponent, labelComponent, channelId } = guildId);
-  guildId = guildId.guildId;
-  ({ containerId, onSubmit, allowEmpty } = guildId);
-  channelTypes = selectionActionComponent.channelTypes;
-  if (cResult[0] === channelId) {
-    if (cResult[1] === channelTypes) {
-      let tmp3 = cResult[2];
-    }
-    if (cResult[3] === containerId) {
-      if (cResult[4] === guildId) {
-        if (cResult[5] === onSubmit) {
-          if (cResult[6] === tmp3) {
-            if (cResult[7] === selectionActionComponent) {
-              let tmp4 = cResult[8];
-            }
-            const tmp6 = guildId(tmp[7])(tmp4);
-            ({ options, selectedOptions, isSelected, onPressOptionItem, submitSelection } = tmp6);
-            const setQuery = tmp6.setQuery;
-            if (cResult[9] !== guildId) {
-              class O {
-                constructor(arg0) {
-                  channel = closure_4.getChannel(guildId.value);
-                  if (null == channel) {
-                    return null;
-                  } else {
-                    tmp2 = closure_5;
-                    tmp3 = guildId;
-                    guild = closure_5.getGuild(guildId);
-                    tmp5 = closure_0;
-                    tmp6 = closure_2;
-                    obj = closure_0(closure_2[8]);
-                    channelIconData = obj.getChannelIconData(channel, guild);
-                    tmp8 = null != channelIconData;
-                    if (tmp8) {
-                      tmp9 = jsx;
-                      obj1 = { source: null };
-                      obj1.source = channelIconData;
-                      tmp8 = jsx(tmp5(tmp6[9]).Icon, obj1);
-                    }
-                    return tmp8;
-                  }
-                }
-              }
-              cResult[9] = guildId;
-              cResult[10] = O;
-            } else {
-              class O {
-                constructor(arg0) {
-                  channel = closure_4.getChannel(guildId.value);
-                  if (null == channel) {
-                    return null;
-                  } else {
-                    tmp2 = closure_5;
-                    tmp3 = guildId;
-                    guild = closure_5.getGuild(guildId);
-                    tmp5 = closure_0;
-                    tmp6 = closure_2;
-                    obj = closure_0(closure_2[8]);
-                    channelIconData = obj.getChannelIconData(channel, guild);
-                    tmp8 = null != channelIconData;
-                    if (tmp8) {
-                      tmp9 = jsx;
-                      obj1 = { source: null };
-                      obj1.source = channelIconData;
-                      tmp8 = jsx(tmp5(tmp6[9]).Icon, obj1);
-                    }
-                    return tmp8;
-                  }
-                }
-              }
-            }
-            const _Symbol = Symbol;
-            if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-              class O {
-                constructor(arg0) {
-                  channel = closure_4.getChannel(guildId.value);
-                  if (null == channel) {
-                    return null;
-                  } else {
-                    tmp2 = closure_5;
-                    tmp3 = guildId;
-                    guild = closure_5.getGuild(guildId);
-                    tmp5 = closure_0;
-                    tmp6 = closure_2;
-                    obj = closure_0(closure_2[8]);
-                    channelIconData = obj.getChannelIconData(channel, guild);
-                    tmp8 = null != channelIconData;
-                    if (tmp8) {
-                      tmp9 = jsx;
-                      obj1 = { source: null };
-                      obj1.source = channelIconData;
-                      tmp8 = jsx(tmp5(tmp6[9]).Icon, obj1);
-                    }
-                    return tmp8;
-                  }
-                }
-              }
-              cResult[11] = tmp10;
-              const tmp9 = tmp10;
-            } else {
-              class O {
-                constructor(arg0) {
-                  channel = closure_4.getChannel(guildId.value);
-                  if (null == channel) {
-                    return null;
-                  } else {
-                    tmp2 = closure_5;
-                    tmp3 = guildId;
-                    guild = closure_5.getGuild(guildId);
-                    tmp5 = closure_0;
-                    tmp6 = closure_2;
-                    obj = closure_0(closure_2[8]);
-                    channelIconData = obj.getChannelIconData(channel, guild);
-                    tmp8 = null != channelIconData;
-                    if (tmp8) {
-                      tmp9 = jsx;
-                      obj1 = { source: null };
-                      obj1.source = channelIconData;
-                      tmp8 = jsx(tmp5(tmp6[9]).Icon, obj1);
-                    }
-                    return tmp8;
-                  }
-                }
-              }
-            }
-            if (cResult[12] !== submitSelection) {
-              class D {
-                constructor() {
-                  return submitSelection();
-                }
-              }
-              cResult[12] = submitSelection;
-              cResult[13] = D;
-            } else {
-              class D {
-                constructor() {
-                  return submitSelection();
-                }
-              }
-            }
-            if (cResult[14] === allowEmpty) {
-              class D {
-                constructor() {
-                  return submitSelection();
-                }
-              }
-            }
-            let obj2 = { onPressOptionItem, renderIcon: tmp7, selectionActionComponent, labelComponent, options, selectedCount: selectedOptions.length, selectedOptions, isSelected, submitSelection: tmp11, onQueryChange: setQuery, itemAccessibilityLabel: tmp9, channelId, allowEmpty };
-            const tmp14 = jsx(guildId(tmp[11]), { onPressOptionItem, renderIcon: tmp7, selectionActionComponent, labelComponent, options, selectedCount: selectedOptions.length, selectedOptions, isSelected, submitSelection: tmp11, onQueryChange: setQuery, itemAccessibilityLabel: tmp9, channelId, allowEmpty });
-            cResult[14] = allowEmpty;
-            cResult[15] = channelId;
-            cResult[16] = isSelected;
-            cResult[17] = labelComponent;
-            cResult[18] = onPressOptionItem;
-            cResult[19] = options;
-            cResult[20] = tmp7;
-            cResult[21] = selectedOptions;
-            cResult[22] = selectionActionComponent;
-            cResult[23] = setQuery;
-            cResult[24] = tmp11;
-            cResult[25] = tmp14;
-          }
-        }
-      }
-    }
-    const obj3 = { selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: tmp3, onSubmit };
-    cResult[3] = containerId;
-    cResult[4] = guildId;
-    cResult[5] = onSubmit;
-    cResult[6] = tmp3;
-    cResult[7] = selectionActionComponent;
-    cResult[8] = obj3;
-    tmp4 = obj3;
-  }
-  const fn = function c(arg0) {
-    return SearchableSelectActionComponentUtils.queryChannels(arg0, channelId, channelTypes);
-  };
-  cResult[0] = channelId;
-  cResult[1] = channelTypes;
-  cResult[2] = fn;
-  tmp3 = fn;
-}) : ((guildId) => {
+export default function ChannelSelectComponentActionSheet(guildId) {
   ({ selectionActionComponent, channelId } = guildId);
   guildId = guildId.guildId;
   noop = undefined;
@@ -208,17 +25,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items = [channelId, channelTypes];
   ({ labelComponent, containerId, onSubmit, allowEmpty } = guildId);
   const callback = noop.useCallback((arg0) => SearchableSelectActionComponentUtils.queryChannels(arg0, channelId, channelTypes), items);
-  const tmp2 = guildId(channelTypes[7])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
+  const tmp2 = guildId(channelTypes[5])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
   ({ selectedOptions, submitSelection: c3 } = tmp2);
   ({ options, isSelected, onPressOptionItem, setQuery } = tmp2);
-  return jsx(guildId(channelTypes[11]), {
+  return jsx(guildId(channelTypes[6]), {
     onPressOptionItem,
     renderIcon(value) {
       channel = ChannelStore.getChannel(value.value);
       if (null == channel) {
         return null;
       } else {
-        guild = GuildStore.getGuild(guildId);
+        const guild = GuildStore.getGuild(guildId);
         const channelIconData = NativeSearchableSelectActionComponentUtils.getChannelIconData(channel, guild);
         let tmp8 = null != channelIconData;
         if (tmp8) {
@@ -242,10 +59,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       channel = channel.getChannel(value.value);
       if (null != channel) {
         const obj = { channel };
-        return guildId(channelTypes[10])(obj);
+        return guildId(channelTypes[9])(obj);
       }
     },
     channelId,
     allowEmpty
   });
-});
+};

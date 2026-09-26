@@ -1,11 +1,11 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14404
+// Function ID: 14405
 // Name: getStatusContainerStyle
-// Dependencies: [1182, 2]
+// Dependencies: [1178, 2]
 // Exports: default
 
-// Module 14414 (getStatusContainerStyle)
-import StatusConstants from "StatusConstants" /* 1182 */;
+// Module 14404 (getStatusContainerStyle)
+import StatusConstants from "StatusConstants" /* 1178 */;
 import size_mod from "module_2" /* 2 */;
 
 const STATUS_PADDING = StatusConstants.STATUS_PADDING;

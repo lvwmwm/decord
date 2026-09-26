@@ -1,71 +1,32 @@
-// Module ID: 12214
-// Function ID: 12215
+// Module ID: 12330
+// Function ID: 12331
 // Name: AppLauncherOnboardingBanner
-// Dependencies: [19, 21, 558, 568, 2031, 12215, 12229, 12231, 2]
+// Dependencies: [19, 21, 2027, 12331, 12345, 12347, 2]
+// Exports: default
 
-// Module 12214 (AppLauncherOnboardingBanner)
-import c from "c" /* 568 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
-import ActivitiesBannerDefault from "ActivitiesBanner" /* 12215 */;
-import AppsBannerDefault from "AppsBanner" /* 12229 */;
-import BotsBannerDefault from "BotsBanner" /* 12231 */;
+// Module 12330 (AppLauncherOnboardingBanner)
+import dismissible_content from "dismissible_content" /* 2027 */;
+import ActivitiesBannerDefault from "ActivitiesBanner" /* 12331 */;
+import AppsBannerDefault from "AppsBanner" /* 12345 */;
+import BotsBannerDefault from "BotsBanner" /* 12347 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingBanner.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(5);
-  ({ context, visibleContent } = arg0);
-  if (dismissible_content.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER === visibleContent) {
-    if (cResult[0] !== context) {
-      const obj2 = { context };
-      const tmp17 = jsx(ActivitiesBannerDefault, { context });
-      cResult[0] = context;
-      cResult[1] = tmp17;
-      let tmp14 = tmp17;
-    } else {
-      tmp14 = cResult[1];
-    }
-    return tmp14;
-  } else if (tmp(2031).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER === visibleContent) {
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = jsx(AppsBannerDefault, {});
-      cResult[2] = tmp13;
-      let tmp10 = tmp13;
-    } else {
-      tmp10 = cResult[2];
-    }
-    return tmp10;
-  } else if (tmp(2031).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER === visibleContent) {
-    if (cResult[3] !== context) {
-      const obj3 = { context };
-      const tmp8 = jsx(BotsBannerDefault, { context });
-      cResult[3] = context;
-      cResult[4] = tmp8;
-      let tmp5 = tmp8;
-    } else {
-      tmp5 = cResult[4];
-    }
-    return tmp5;
-  } else {
-    return null;
-  }
-}) : ((arg0) => {
+export default function AppLauncherOnboardingBanner(arg0) {
   ({ context, visibleContent } = arg0);
   if (dismissible_content.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER === visibleContent) {
     const obj2 = { context };
     return jsx(ActivitiesBannerDefault, { context });
-  } else if (tmp(2031).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER === visibleContent) {
+  } else if (tmp(2027).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER === visibleContent) {
     return jsx(AppsBannerDefault, {});
-  } else if (tmp(2031).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER === visibleContent) {
+  } else if (tmp(2027).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER === visibleContent) {
     const obj = { context };
     return jsx(BotsBannerDefault, { context });
   } else {
     return null;
   }
-});
+};

@@ -1,15 +1,15 @@
-// Module ID: 9774
-// Function ID: 9775
+// Module ID: 9778
+// Function ID: 9779
 // Name: SafeAreaDisabledStore
-// Dependencies: [562, 1252, 2]
+// Dependencies: [560, 1248, 2]
 
-// Module 9774 (SafeAreaDisabledStore)
-import module_562 from "module_562" /* 562 */;
+// Module 9778 (SafeAreaDisabledStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/panels/morphable/native/SafeAreaDisabledStore.tsx");
 
-export default module_562.create((arg0, arg1) => {
+export default module_560.create((arg0, arg1) => {
   closure_0 = arg0;
   dependencyMap = arg1;
   let obj = {
@@ -19,7 +19,7 @@ export default module_562.create((arg0, arg1) => {
     },
     requestSafeAreaDisableLock(arg0) {
       ({ key: closure_0, lockEnabled: closure_1 } = arg0);
-      closure_0(1252).batchUpdates(() => {
+      closure_0(1248).batchUpdates(() => {
         closure_0((lockKeys) => {
           lockKeys = lockKeys.lockKeys;
           const hasItem = lockKeys.has(closure_1_0);

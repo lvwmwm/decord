@@ -1,11 +1,11 @@
-// Module ID: 4710
-// Function ID: 4711
+// Module ID: 4707
+// Function ID: 4708
 // Name: GuildMemberCountStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 4710 (GuildMemberCountStore)
+// Module 4707 (GuildMemberCountStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 function handleInviteData(invite) {
   ({ guild, approximate_presence_count } = invite.invite);

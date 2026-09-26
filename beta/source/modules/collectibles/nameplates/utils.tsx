@@ -1,15 +1,15 @@
-// Module ID: 1974
-// Function ID: 1975
+// Module ID: 1970
+// Function ID: 1971
 // Name: utils
-// Dependencies: [1975, 1089, 1978, 1980, 1119, 2]
+// Dependencies: [1971, 1085, 1974, 1976, 1115, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1974 (utils)
-import Constants from "Constants" /* 1089 */;
-import util from "util" /* 1119 */;
-import NameplateRecord from "NameplateRecord" /* 1975 */;
-import constants from "constants" /* 1978 */;
-import decodeImageDefault from "decodeImage" /* 1980 */;
+// Module 1970 (utils)
+import Constants from "Constants" /* 1085 */;
+import util from "util" /* 1115 */;
+import NameplateRecord from "NameplateRecord" /* 1971 */;
+import constants from "constants" /* 1974 */;
+import decodeImageDefault from "decodeImage" /* 1976 */;
 import size from "module_2" /* 2 */;
 
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -23,7 +23,7 @@ export const getNameplateData = function getNameplateData(nameplate) {
     ({ skuId: obj.skuId, asset: obj.src, label: obj.imgAlt } = nameplate);
     let INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[nameplate.palette];
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1978).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1974).INVALID_NAMEPLATE_PALETTE;
     }
     obj.palette = INVALID_NAMEPLATE_PALETTE;
     tmp = obj;
@@ -44,7 +44,7 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
         ({ skuId: obj.skuId, asset: obj.src, label: obj.imgAlt, palette } = first);
         let INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[palette];
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1978).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1974).INVALID_NAMEPLATE_PALETTE;
         }
         obj.palette = INVALID_NAMEPLATE_PALETTE;
         tmp = obj;

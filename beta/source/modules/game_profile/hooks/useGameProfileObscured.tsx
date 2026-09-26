@@ -1,69 +1,19 @@
-// Module ID: 5361
-// Function ID: 5362
+// Module ID: 5359
+// Function ID: 5360
 // Name: useGameProfileObscured
-// Dependencies: [1376, 5362, 558, 568, 504, 2]
-// Exports: isGameProfileObscured
+// Dependencies: [1372, 5360, 504, 2]
+// Exports: default, isGameProfileObscured
 
-// Module 5361 (useGameProfileObscured)
+// Module 5359 (useGameProfileObscured)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import utils from "utils" /* 5362 */;
-import UserStore from "UserStore" /* 1376 */;
+import utils from "utils" /* 5360 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
-function isGameProfileObscured(game, nsfwAllowed) {
-  let result = null != game;
-  if (result) {
-    result = false === nsfwAllowed;
-  }
-  if (result) {
-    result = utils.isAgeRestrictedContentClassification(game.contentClassification);
-  }
-  return result;
-}
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((contentClassification) => {
-  const cResult = c.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      currentUser = currentUser.getCurrentUser();
-      let nsfwAllowed;
-      if (currentUser != null) {
-        nsfwAllowed = currentUser.nsfwAllowed;
-      }
-      return nsfwAllowed;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === contentClassification) {
-    if (cResult[3] === stateFromStores) {
-      let tmp8 = cResult[4];
-    }
-    return tmp8;
-  }
-  let result = null != contentClassification;
-  if (result) {
-    result = false === stateFromStores;
-  }
-  if (result) {
-    result = tmp(5362).isAgeRestrictedContentClassification(contentClassification.contentClassification);
-    const tmpResult2 = tmp(5362);
-  }
-  cResult[2] = contentClassification;
-  cResult[3] = stateFromStores;
-  cResult[4] = result;
-  tmp8 = result;
-}) : ((contentClassification) => {
+export default function useGameProfileObscured(contentClassification) {
   initialize;
   [][0] = UserStore;
   let result = null != contentClassification;
@@ -75,5 +25,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((contentClassific
     const tmpResult = utils;
   }
   return result;
-});
-export { isGameProfileObscured };
+};
+export const isGameProfileObscured = function isGameProfileObscured(game, nsfwAllowed) {
+  let result = null != game;
+  if (result) {
+    result = false === nsfwAllowed;
+  }
+  if (result) {
+    result = utils.isAgeRestrictedContentClassification(game.contentClassification);
+  }
+  return result;
+};

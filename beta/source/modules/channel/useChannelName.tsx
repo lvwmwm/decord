@@ -1,16 +1,16 @@
-// Module ID: 4943
-// Function ID: 4944
+// Module ID: 4941
+// Function ID: 4942
 // Name: useChannelName
-// Dependencies: [32, 4706, 4441, 1376, 1078, 1374, 4635, 1119, 558, 568, 504, 2]
-// Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, escapeChannelName, unescapeChannelName
+// Dependencies: [32, 4703, 4437, 1372, 1074, 1370, 4632, 1115, 504, 2]
+// Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, default, escapeChannelName, unescapeChannelName, useComputedGroupDmName
 
-// Module 4943 (useChannelName)
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import UserUtilsDefault from "UserUtils" /* 4635 */;
+// Module 4941 (useChannelName)
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import UserUtilsDefault from "UserUtils" /* 4632 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4706 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import ExperimentStore from "ExperimentStore" /* 4703 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -78,9 +78,9 @@ function computeChannelName(channel, UserStore, RelationshipStore, flag, arg4) {
         if (mapped2.length > 0) {
           let joined = mapped2.join(", ");
         } else {
-          const intl2 = tmp25(1119).intl;
+          const intl2 = tmp25(1115).intl;
           const obj = { name: UserUtilsDefault.getName(UserStore.getCurrentUser()) };
-          joined = intl2.formatToPlainString(tmp25(1119).t["9Uk8PF"], obj);
+          joined = intl2.formatToPlainString(tmp25(1115).t["9Uk8PF"], obj);
         }
       }
     } else {
@@ -153,59 +153,69 @@ function computeChannelName(channel, UserStore, RelationshipStore, flag, arg4) {
     }
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelTypes: closure_7, NULL_STRING_CHANNEL_ID: closure_8 } = Constants);
-fn(558);
-const ReactCompilerGating = fn(558);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/channel/useChannelName.tsx");
+
+export default function useChannelName(arg0) {
   _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore, RelationshipStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
   }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      let tmp = null;
-      if (null != closure_0) {
-        tmp = null;
-        if (obj.isMultiUserDM()) {
-          const recipients = obj.recipients;
-          closure_0 = RelationshipStore;
-          const mapped = recipients.map(UserStore.getUser);
-          const found = mapped.filter(GlobalUtils.isNotNullish);
-          const mapped1 = found.map((id) => {
-            nickname = nickname.getNickname(id.id);
-            if (nickname == null) {
-              nickname = UserUtilsDefault.getName(id);
-            }
-            return nickname;
-          });
-          if (mapped1.length > 0) {
-            let joined = mapped1.join(", ");
-          } else {
-            const intl = tmp3(1119).intl;
-            const obj3 = { name: UserUtilsDefault.getName(obj2.getCurrentUser()) };
-            joined = intl.formatToPlainString(tmp3(1119).t["9Uk8PF"], obj3);
-          }
-          obj2 = UserStore;
-        }
-      }
-      return tmp;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp7 = fn;
+  const items = [UserStore, ExperimentStore, RelationshipStore];
+  return require("initialize").useStateFromStores(items, () => {
+    let tmp2 = null;
+    if (null != closure_0) {
+      tmp2 = computeChannelName(tmp, UserStore, RelationshipStore, flag);
+    }
+    return tmp2;
+  });
+};
+export const computeDefaultGroupDmNameFromUserIds = function computeDefaultGroupDmNameFromUserIds(arr, getUser, arg2) {
+  _require = arg2;
+  const mapped = arr.map(getUser.getUser);
+  const found = mapped.filter(require("GlobalUtils").isNotNullish);
+  const mapped1 = found.map((id) => {
+    nickname = nickname.getNickname(id.id);
+    if (nickname == null) {
+      nickname = UserUtilsDefault.getName(id);
+    }
+    return nickname;
+  });
+  if (mapped1.length > 0) {
+    let joined = mapped1.join(", ");
   } else {
-    tmp7 = cResult[2];
+    const intl = tmp(1115).intl;
+    const obj = { name: UserUtilsDefault.getName(getUser.getCurrentUser()) };
+    joined = intl.formatToPlainString(tmp(1115).t["9Uk8PF"], obj);
   }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp7);
-}) : ((arg0) => {
-  _require = arg0;
+  return joined;
+};
+export const computeDefaultGroupDmName = function computeDefaultGroupDmName(recipients, getUser, arg2) {
+  recipients = recipients.recipients;
+  _require = arg2;
+  const mapped = recipients.map(getUser.getUser);
+  const found = mapped.filter(require("GlobalUtils").isNotNullish);
+  const mapped1 = found.map((id) => {
+    nickname = nickname.getNickname(id.id);
+    if (nickname == null) {
+      nickname = UserUtilsDefault.getName(id);
+    }
+    return nickname;
+  });
+  if (mapped1.length > 0) {
+    let joined = mapped1.join(", ");
+  } else {
+    const intl = tmp(1115).intl;
+    const obj = { name: UserUtilsDefault.getName(getUser.getCurrentUser()) };
+    joined = intl.formatToPlainString(tmp(1115).t["9Uk8PF"], obj);
+  }
+  return joined;
+};
+export const useComputedGroupDmName = function useComputedGroupDmName(stateFromStores) {
+  _require = stateFromStores;
   const items = [UserStore, RelationshipStore];
   return require("initialize").useStateFromStores(items, () => {
     let tmp = null;
@@ -226,109 +236,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (mapped1.length > 0) {
           let joined = mapped1.join(", ");
         } else {
-          const intl = tmp3(1119).intl;
+          const intl = tmp3(1115).intl;
           const obj3 = { name: UserUtilsDefault.getName(obj2.getCurrentUser()) };
-          joined = intl.formatToPlainString(tmp3(1119).t["9Uk8PF"], obj3);
+          joined = intl.formatToPlainString(tmp3(1115).t["9Uk8PF"], obj3);
         }
         obj2 = UserStore;
       }
     }
     return tmp;
   });
-});
-function computeDefaultGroupDmNameFromUserIds(arr, getUser, arg2) {
-  _require = arg2;
-  const mapped = arr.map(getUser.getUser);
-  const found = mapped.filter(require("GlobalUtils").isNotNullish);
-  const mapped1 = found.map((id) => {
-    nickname = nickname.getNickname(id.id);
-    if (nickname == null) {
-      nickname = UserUtilsDefault.getName(id);
-    }
-    return nickname;
-  });
-  if (mapped1.length > 0) {
-    let joined = mapped1.join(", ");
-  } else {
-    const intl = tmp(1119).intl;
-    const obj = { name: UserUtilsDefault.getName(getUser.getCurrentUser()) };
-    joined = intl.formatToPlainString(tmp(1119).t["9Uk8PF"], obj);
-  }
-  return joined;
-}
-function computeDefaultGroupDmName(recipients, getUser, arg2) {
-  recipients = recipients.recipients;
-  _require = arg2;
-  const mapped = recipients.map(getUser.getUser);
-  const found = mapped.filter(require("GlobalUtils").isNotNullish);
-  const mapped1 = found.map((id) => {
-    nickname = nickname.getNickname(id.id);
-    if (nickname == null) {
-      nickname = UserUtilsDefault.getName(id);
-    }
-    return nickname;
-  });
-  if (mapped1.length > 0) {
-    let joined = mapped1.join(", ");
-  } else {
-    const intl = tmp(1119).intl;
-    const obj = { name: UserUtilsDefault.getName(getUser.getCurrentUser()) };
-    joined = intl.formatToPlainString(tmp(1119).t["9Uk8PF"], obj);
-  }
-  return joined;
-}
-function escapeChannelName(channelName) {
-  return channelName.replace(/\\/g, "\\\\").replace(/"/g, "\\\"");
-}
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/channel/useChannelName.tsx");
-
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  closure_1 = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore, ExperimentStore, RelationshipStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    if (cResult[2] === tmp4) {
-      let tmp9 = cResult[3];
-    }
-    return require("initialize").useStateFromStores(first, tmp9);
-  }
-  const fn = function c() {
-    let tmp2 = null;
-    if (null != closure_0) {
-      tmp2 = computeChannelName(tmp, UserStore, RelationshipStore, closure_1);
-    }
-    return tmp2;
-  };
-  cResult[1] = arg0;
-  cResult[2] = undefined !== arg1 && arg1;
-  cResult[3] = fn;
-  tmp9 = fn;
-}) : ((arg0) => {
-  _require = arg0;
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  const items = [UserStore, ExperimentStore, RelationshipStore];
-  return require("initialize").useStateFromStores(items, () => {
-    let tmp2 = null;
-    if (null != closure_0) {
-      tmp2 = computeChannelName(tmp, UserStore, RelationshipStore, flag);
-    }
-    return tmp2;
-  });
-});
-export { computeDefaultGroupDmNameFromUserIds };
-export { computeDefaultGroupDmName };
-export const useComputedGroupDmName = tmp3;
+};
 export const computeGroupDmName = function computeGroupDmName(stateFromStores) {
   if (!stateFromStores.isObfuscated()) {
     if (stateFromStores.isMultiUserDM()) {
@@ -342,7 +259,9 @@ export const computeGroupDmName = function computeGroupDmName(stateFromStores) {
   }
 };
 export { computeChannelName };
-export { escapeChannelName };
+export const escapeChannelName = function escapeChannelName(channelName) {
+  return channelName.replace(/\\/g, "\\\\").replace(/"/g, "\\\"");
+};
 export const unescapeChannelName = function unescapeChannelName(str) {
   return str.replace(/\\"/g, "\"").replace(/\\\\/g, "\\");
 };

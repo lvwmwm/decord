@@ -1,17 +1,16 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11338
+// Function ID: 11339
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1616, 1119, 4786, 2550, 11377, 5220, 2]
+// Dependencies: [32, 19, 17, 21, 4788, 576, 1612, 4784, 1115, 11339, 5218, 2]
+// Exports: default
 
-// Module 11376 (GiftingSKUSelectScreen)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import _modDef2550 from "module_2550" /* 2550 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 11377 */;
+// Module 11338 (GiftingSKUSelectScreen)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 11339 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, scroll: { flex: 1 }, contentContainer: null, header: null, subtitle: null, buttonContainer: null, headerContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.contentContainer = { display: "flex", flexDirection: "column", padding: nativeDefault.space.PX_24 };
@@ -32,199 +31,10 @@ obj2.buttonContainer = { marginHorizontal: nativeDefault.space.PX_16, marginBott
 let obj6 = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_24 };
 obj2.headerContainer = { marginBottom: nativeDefault.space.PX_24 };
 let closure_9 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj7 = { marginBottom: nativeDefault.space.PX_24 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUSelectScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlightedReward) => {
-  const cResult = c.c(52);
-  defaultHighlightedReward = defaultHighlightedReward.defaultHighlightedReward;
-  ({ allRewards, claimableRewards } = defaultHighlightedReward);
-  const onSelect = defaultHighlightedReward.onSelect;
-  closure_9();
-  const bottom = useSafeAreaInsetsDefault().bottom;
-  [first, noop] = noop.useState(defaultHighlightedReward);
-  [first1, closure_6] = noop.useState(false);
-  if (cResult[0] === claimableRewards) {
-    if (cResult[1] === first) {
-      const _Symbol = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        class X {
-          constructor(arg0) {
-            tmp = closure_4(defaultHighlightedReward);
-            tmp2 = closure_6(true);
-            return;
-          }
-        }
-        cResult[4] = X;
-      } else {
-        class X {
-          constructor(arg0) {
-            tmp = closure_4(defaultHighlightedReward);
-            tmp2 = closure_6(true);
-            return;
-          }
-        }
-      }
-      if (null == first) {
-        class X {
-          constructor(arg0) {
-            tmp = closure_4(defaultHighlightedReward);
-            tmp2 = closure_6(true);
-            return;
-          }
-        }
-        if (cResult[10] === claimableRewards) {
-          class X {
-            constructor(arg0) {
-              tmp = closure_4(defaultHighlightedReward);
-              tmp2 = closure_6(true);
-              return;
-            }
-          }
-        }
-        class H {
-          constructor() {
-            obj = claimableRewards;
-            if (0 === claimableRewards.length) {
-              tmp9 = closure_4;
-              tmp10 = closure_4(undefined);
-            } else {
-              tmp = c7;
-              if (!c7) {
-                tmp2 = closure_5;
-                someResult = !closure_5;
-                if (!closure_5) {
-                  tmp4 = defaultHighlightedReward;
-                  tmp5 = null;
-                  someResult = null != defaultHighlightedReward;
-                }
-                if (someResult) {
-                  someResult = obj.some((item) => item === defaultHighlightedReward);
-                }
-                tmp7 = undefined;
-                tmp6 = closure_4;
-                if (someResult) {
-                  tmp7 = defaultHighlightedReward;
-                }
-                tmp6Result = tmp6(tmp7);
-              }
-            }
-            return;
-          }
-        }
-        const items = [first, claimableRewards, first1, defaultHighlightedReward, false];
-        cResult[10] = claimableRewards;
-        cResult[11] = defaultHighlightedReward;
-        cResult[12] = first1;
-        cResult[13] = first;
-        cResult[14] = false;
-        cResult[15] = H;
-        cResult[16] = items;
-      } else {
-        class X {
-          constructor(arg0) {
-            tmp = closure_4(defaultHighlightedReward);
-            tmp2 = closure_6(true);
-            return;
-          }
-        }
-        if (cResult[8] !== first) {
-          class X {
-            constructor(arg0) {
-              tmp = closure_4(defaultHighlightedReward);
-              tmp2 = closure_6(true);
-              return;
-            }
-          }
-          class H {
-            constructor() {
-              obj = claimableRewards;
-              if (0 === claimableRewards.length) {
-                tmp9 = closure_4;
-                tmp10 = closure_4(undefined);
-              } else {
-                tmp = c7;
-                if (!c7) {
-                  tmp2 = closure_5;
-                  someResult = !closure_5;
-                  if (!closure_5) {
-                    tmp4 = defaultHighlightedReward;
-                    tmp5 = null;
-                    someResult = null != defaultHighlightedReward;
-                  }
-                  if (someResult) {
-                    someResult = obj.some((item) => item === defaultHighlightedReward);
-                  }
-                  tmp7 = undefined;
-                  tmp6 = closure_4;
-                  if (someResult) {
-                    tmp7 = defaultHighlightedReward;
-                  }
-                  tmp6Result = tmp6(tmp7);
-                }
-              }
-              return;
-            }
-          }
-          cResult[9] = tmp12;
-        } else {
-          class X {
-            constructor(arg0) {
-              tmp = closure_4(defaultHighlightedReward);
-              tmp2 = closure_6(true);
-              return;
-            }
-          }
-        }
-        class H {
-          constructor() {
-            obj = claimableRewards;
-            if (0 === claimableRewards.length) {
-              tmp9 = closure_4;
-              tmp10 = closure_4(undefined);
-            } else {
-              tmp = c7;
-              if (!c7) {
-                tmp2 = closure_5;
-                someResult = !closure_5;
-                if (!closure_5) {
-                  tmp4 = defaultHighlightedReward;
-                  tmp5 = null;
-                  someResult = null != defaultHighlightedReward;
-                }
-                if (someResult) {
-                  someResult = obj.some((item) => item === defaultHighlightedReward);
-                }
-                tmp7 = undefined;
-                tmp6 = closure_4;
-                if (someResult) {
-                  tmp7 = defaultHighlightedReward;
-                }
-                tmp6Result = tmp6(tmp7);
-              }
-            }
-            return;
-          }
-        }
-        cResult[5] = claimableRewards;
-        cResult[6] = first;
-        cResult[7] = tmp13;
-      }
-    }
-  }
-  const fn = function c() {
-    const found = claimableRewards.find((item) => item === first);
-    if (null != found) {
-      onSelect(found);
-    }
-  };
-  cResult[0] = claimableRewards;
-  cResult[1] = first;
-  cResult[2] = onSelect;
-  cResult[3] = fn;
-}) : ((rewardsToDisplay) => {
+export default function GiftingSKUSelectScreen(rewardsToDisplay) {
   const defaultHighlightedReward = rewardsToDisplay.defaultHighlightedReward;
   const claimableRewards = rewardsToDisplay.claimableRewards;
   const onSelect = rewardsToDisplay.onSelect;
@@ -282,12 +92,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlight
   const items3 = [React5(Text_Text.Text, obj4), ];
   const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = util.intl;
-  obj5.children = intl2.string(_modDef2550.zprqn1);
+  obj5.children = intl2.string(util.t.vPeaOS);
   items3[1] = React5(Text_Text.Text, obj5);
   obj3.children = items3;
-  const items4 = [closure_1_8(hasOwnProperty, obj3), React5(GiftingSKUCardsGridDefault, { rewardsToDisplay: rewardsToDisplay.allRewards, claimableRewards, onSelect: callback1, highlightedSkuId })];
+  const items4 = [React6(hasOwnProperty, obj3), React5(GiftingSKUCardsGridDefault, { rewardsToDisplay: rewardsToDisplay.allRewards, claimableRewards, onSelect: callback1, highlightedSkuId })];
   obj2.children = items4;
-  const items5 = [closure_1_8(timestampProducer, obj2), ];
+  const items5 = [React6(timestampProducer, obj2), ];
   const obj6 = { style: null, children: null };
   const items6 = [tmp.buttonContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   obj6.style = items6;
@@ -299,5 +109,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlight
   obj6.children = React5(components_Button_Button.Button, obj7);
   items5[1] = React5(hasOwnProperty, obj6);
   obj.children = items5;
-  return closure_1_8(hasOwnProperty, obj);
-});
+  return React6(hasOwnProperty, obj);
+};

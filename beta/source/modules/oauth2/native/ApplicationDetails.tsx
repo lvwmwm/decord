@@ -1,81 +1,25 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9576
+// Function ID: 9577
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 4790, 580, 9362, 9198, 9573, 558, 568, 11, 9360, 4732, 1119, 9364, 5347, 9575, 4752, 8647, 9577, 9543, 4786, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 9364, 9200, 9577, 11, 9362, 4730, 1115, 5345, 9366, 9579, 4750, 8642, 9581, 9548, 4784, 2]
+// Exports: default
 
-// Module 9572 (ApplicationDetails)
+// Module 9576 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import ClockIcon2 from "ClockIcon" /* 4752 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import LockIcon from "LockIcon" /* 5347 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8647 */;
-import scopes from "scopes" /* 9360 */;
-import disclosures from "disclosures" /* 9362 */;
-import Utils from "Utils" /* 9364 */;
-import ShieldIcon from "ShieldIcon" /* 9543 */;
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import ClockIcon from "ClockIcon" /* 4750 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import LockIcon from "LockIcon" /* 5345 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8642 */;
+import scopes from "scopes" /* 9362 */;
+import disclosures from "disclosures" /* 9364 */;
+import Utils from "Utils" /* 9366 */;
+import ShieldIcon from "ShieldIcon" /* 9548 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: null };
-let size = { width: 16, height: 16, tintColor: nativeDefault.colors.TEXT_MUTED };
-obj2.entryIcon = size;
-let closure_6 = createStyles.createStyles(obj2);
-fn(558);
-const ReactCompilerGating = fn(558);
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(10);
-  ({ iconComponent, text } = arg0);
-  const tmp4 = closure_6();
-  if (cResult[0] === iconComponent) {
-    if (cResult[1] === tmp4.entryIcon) {
-      let tmp5 = cResult[2];
-    }
-    if (cResult[3] === tmp4.entryText) {
-      if (cResult[4] === text) {
-        let tmp7 = cResult[5];
-      }
-      if (cResult[6] === tmp4.entry) {
-        if (cResult[7] === tmp5) {
-          if (cResult[8] === tmp7) {
-            let tmp10 = cResult[9];
-          }
-          return tmp10;
-        }
-      }
-      const obj2 = { style: tmp4.entry, children: null };
-      const items = [tmp5, tmp7];
-      obj2.children = items;
-      const tmp13 = hasOwnProperty(View, obj2);
-      cResult[6] = tmp4.entry;
-      cResult[7] = tmp5;
-      cResult[8] = tmp7;
-      cResult[9] = tmp13;
-      tmp10 = tmp13;
-    }
-    const obj3 = { variant: "text-sm/normal", color: "text-default", style: tmp4.entryText, children: text };
-    const tmp9 = React4(Text_Text.Text, obj3);
-    cResult[3] = tmp4.entryText;
-    cResult[4] = text;
-    cResult[5] = tmp9;
-    tmp7 = tmp9;
-  }
-  let iconComponentResult = null;
-  if (null != iconComponent) {
-    const obj4 = { style: tmp4.entryIcon };
-    iconComponentResult = iconComponent(obj4);
-  }
-  cResult[0] = iconComponent;
-  cResult[1] = tmp4.entryIcon;
-  cResult[2] = iconComponentResult;
-  tmp5 = iconComponentResult;
-}) : ((children) => {
+function ApplicationDetailsEntry(children) {
   const iconComponent = children.iconComponent;
   const tmp = closure_6();
   const obj = { style: tmp.entry, children: null };
@@ -87,242 +31,19 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [iconComponentResult, React4(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", style: tmp.entryText, children: children.text })];
   obj.children = items;
   return hasOwnProperty(View, obj);
-});
+}
+const View = fn(17).View;
+const jsxProd = fn(21);
+({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
+const createStyles = fn(4788);
+let obj2 = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: null };
+let size = { width: 16, height: 16, tintColor: nativeDefault.colors.TEXT_MUTED };
+obj2.entryIcon = size;
+let closure_6 = createStyles.createStyles(obj2);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/oauth2/native/ApplicationDetails.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(50);
-  ({ application, scopes, redirectUri, approximateGuildCount, isEmbeddedFlow, disclosures, connectedAccount } = arg0);
-  let num = closure_6();
-  if (cResult[0] === application) {
-    if (cResult[1] === connectedAccount) {
-      if (cResult[2] === isEmbeddedFlow) {
-        if (cResult[3] === redirectUri) {
-          if (cResult[4] === scopes) {
-            if (cResult[5] === num.applicationDetails) {
-              if (cResult[29] === cResult[6]) {
-                if (cResult[30] === tmp8) {
-                  if (cResult[31] === tmp9) {
-                    let tmp51 = cResult[32];
-                  }
-                  if (cResult[33] === approximateGuildCount) {
-                    if (cResult[34] === scopes) {
-                      let tmp54 = cResult[35];
-                    }
-                    if (cResult[36] !== tmp7) {
-                      let obj3 = { iconComponent: tmp2(9543).ShieldIcon, text: tmp7 };
-                      const tmp62 = React4(closure_7, obj3);
-                      cResult[36] = tmp7;
-                      cResult[37] = tmp62;
-                      let tmp59 = tmp62;
-                    } else {
-                      tmp59 = cResult[37];
-                    }
-                    if (cResult[38] !== disclosures) {
-                      let mapped = null;
-                      if (null != disclosures) {
-                        mapped = disclosures.map((toFixed) => {
-                          const textForDisclosure = disclosures.getTextForDisclosure(toFixed);
-                          if (disclosures.ApplicationDisclosure.IP_LOCATION === toFixed) {
-                            const obj2 = { iconComponent: tmp(9198).GlobeEarthIcon };
-                            let tmp4 = obj2;
-                          } else {
-                            tmp4 = null;
-                            if (tmp(9362).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
-                              const obj3 = { iconComponent: tmp(9573).EmbedIcon };
-                              tmp4 = obj3;
-                            }
-                          }
-                          let tmp5 = null;
-                          if (null != tmp4) {
-                            tmp5 = null;
-                            if (null != textForDisclosure) {
-                              const obj4 = { text: textForDisclosure };
-                              const merged = Object.assign(tmp4);
-                              tmp5 = closure_1_4(closure_1_7, obj4, toFixed.toFixed());
-                            }
-                          }
-                          return tmp5;
-                        });
-                      }
-                      cResult[38] = disclosures;
-                      cResult[39] = mapped;
-                      let tmp63 = mapped;
-                    } else {
-                      tmp63 = cResult[39];
-                    }
-                    if (cResult[40] === tmp6) {
-                      if (cResult[41] === tmp63) {
-                        if (cResult[42] === tmp10) {
-                          if (cResult[43] === tmp11) {
-                            if (cResult[44] === tmp12) {
-                              if (cResult[45] === tmp13) {
-                                if (cResult[46] === tmp51) {
-                                  if (cResult[47] === tmp54) {
-                                    if (cResult[48] === tmp59) {
-                                      let tmp65 = cResult[49];
-                                    }
-                                    return tmp65;
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                    let obj4 = { style: tmp10, children: null };
-                    const items = [tmp11, tmp12, tmp13, tmp51, tmp54, tmp59, tmp63];
-                    obj4.children = items;
-                    const tmp67 = hasOwnProperty(tmp6, obj4);
-                    cResult[40] = tmp6;
-                    cResult[41] = tmp63;
-                    cResult[42] = tmp10;
-                    cResult[43] = tmp11;
-                    cResult[44] = tmp12;
-                    cResult[45] = tmp13;
-                    cResult[46] = tmp51;
-                    cResult[47] = tmp54;
-                    cResult[48] = tmp59;
-                    cResult[49] = tmp67;
-                    tmp65 = tmp67;
-                  }
-                  let tmp56 = null;
-                  if (scopes.includes(tmp2(8647).OAuth2Scopes.BOT)) {
-                    tmp56 = null;
-                    if (null != approximateGuildCount) {
-                      const obj5 = { iconComponent: tmp2(9577).RobotIcon, text: null };
-                      const intl4 = tmp2(1119).intl;
-                      const obj6 = { guildCount: approximateGuildCount };
-                      obj5.text = intl4.formatToPlainString(tmp2(1119).t.UHGHSP, obj6);
-                      tmp56 = React4(closure_7, obj5);
-                    }
-                  }
-                  cResult[33] = approximateGuildCount;
-                  cResult[34] = scopes;
-                  cResult[35] = tmp56;
-                  tmp54 = tmp56;
-                }
-              }
-              const obj7 = { iconComponent: cResult[9], text: cResult[10] };
-              const tmp53 = React4(cResult[6], obj7);
-              cResult[29] = cResult[6];
-              cResult[30] = cResult[9];
-              cResult[31] = cResult[10];
-              cResult[32] = tmp53;
-              tmp51 = tmp53;
-            }
-          }
-        }
-      }
-    }
-  }
-  let date = new Date(SnowflakeUtilsDefault.extractTimestamp(application.id));
-  if (cResult[15] !== scopes) {
-    const securityMessage = tmp2(9360).getSecurityMessage(scopes);
-    cResult[15] = scopes;
-    cResult[16] = securityMessage;
-    let tmp15 = securityMessage;
-    const tmp2Result = tmp2(9360);
-  } else {
-    tmp15 = cResult[16];
-  }
-  if (cResult[17] === isEmbeddedFlow) {
-    if (cResult[18] === redirectUri) {
-      if (cResult[19] === num.applicationDetails) {
-        let tmp17 = cResult[20];
-        let tmp18 = cResult[21];
-        let tmp19 = cResult[22];
-      }
-      if (cResult[23] !== application) {
-        const applicationDetailsText = tmp2(9364).getApplicationDetailsText(application);
-        cResult[23] = application;
-        cResult[24] = applicationDetailsText;
-        let tmp30 = applicationDetailsText;
-        const tmp2Result2 = tmp2(9364);
-      } else {
-        tmp30 = cResult[24];
-      }
-      if (cResult[25] !== tmp30) {
-        const obj8 = { iconComponent: tmp2(5347).LockIcon, text: tmp30 };
-        const tmp35 = React4(closure_7, obj8);
-        cResult[25] = tmp30;
-        cResult[26] = tmp35;
-        let tmp32 = tmp35;
-      } else {
-        tmp32 = cResult[26];
-      }
-      if (cResult[27] !== connectedAccount) {
-        let tmp37 = null;
-        if (null != connectedAccount) {
-          const obj9 = { iconComponent: tmp2(9575).HammerIcon, text: null };
-          const intl2 = tmp2(1119).intl;
-          obj9.text = intl2.string(tmp2(1119).t["8qui3M"]);
-          tmp37 = React4(closure_7, obj9);
-        }
-        cResult[27] = connectedAccount;
-        cResult[28] = tmp37;
-        let tmp36 = tmp37;
-      } else {
-        tmp36 = cResult[28];
-      }
-      date = closure_7;
-      const ClockIcon = tmp2(4752).ClockIcon;
-      const intl3 = tmp2(1119).intl;
-      const obj10 = { date };
-      const formatToPlainStringResult = intl3.formatToPlainString(tmp2(1119).t["+1bjc8"], obj10);
-      cResult[0] = application;
-      cResult[1] = connectedAccount;
-      cResult[2] = isEmbeddedFlow;
-      cResult[3] = redirectUri;
-      cResult[4] = scopes;
-      cResult[5] = num.applicationDetails;
-      cResult[6] = closure_7;
-      cResult[7] = tmp17;
-      cResult[8] = tmp15;
-      cResult[9] = ClockIcon;
-      cResult[10] = formatToPlainStringResult;
-      cResult[11] = tmp18;
-      cResult[12] = tmp19;
-      cResult[13] = tmp32;
-      num = 14;
-      cResult[14] = tmp36;
-    }
-  }
-  let joined = null;
-  if (null != redirectUri) {
-    if (!isEmbeddedFlow) {
-      try {
-        const _URL = URL;
-        const uRL = new URL(redirectUri);
-        const parts = uRL.href.split("/");
-        const substr = parts.slice(0, 3);
-        joined = substr.join("/");
-      } catch (err) {
-        joined = tmp;
-      }
-    }
-  }
-  const applicationDetails = num.applicationDetails;
-  let tmp27 = null;
-  if (null != joined) {
-    const obj11 = { iconComponent: tmp2(4732).LinkIcon, text: null };
-    const intl = tmp2(1119).intl;
-    const obj12 = { origin: joined };
-    obj11.text = intl.format(tmp2(1119).t["5k5OKD"], obj12);
-    tmp27 = React4(closure_7, obj11);
-  }
-  cResult[17] = isEmbeddedFlow;
-  cResult[18] = redirectUri;
-  cResult[19] = num.applicationDetails;
-  cResult[20] = View;
-  cResult[21] = applicationDetails;
-  cResult[22] = tmp27;
-  tmp19 = tmp27;
-  tmp18 = applicationDetails;
-  tmp17 = tmp26;
-}) : ((arg0) => {
+export default function ApplicationDetails(arg0) {
   ({ application, scopes, redirectUri, approximateGuildCount, disclosures } = arg0);
   ({ isEmbeddedFlow, connectedAccount } = arg0);
   const tmp2 = closure_6();
@@ -345,55 +66,55 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj3 = { style: tmp2.applicationDetails, children: null };
   let tmp15 = null;
   if (null != joined) {
-    let obj4 = { iconComponent: tmp5(4732).LinkIcon, text: null };
-    const intl = tmp5(1119).intl;
+    let obj4 = { iconComponent: tmp5(4730).LinkIcon, text: null };
+    const intl = tmp5(1115).intl;
     const obj5 = { origin: joined };
-    obj4.text = intl.format(tmp5(1119).t["5k5OKD"], obj5);
-    tmp15 = React4(closure_7, obj4);
+    obj4.text = intl.format(tmp5(1115).t["5k5OKD"], obj5);
+    tmp15 = React4(ApplicationDetailsEntry, obj4);
   }
   const items = [tmp15, , , , , , ];
   const obj6 = { iconComponent: LockIcon.LockIcon, text: null };
   const tmp13 = hasOwnProperty;
   const tmp14 = View;
   obj6.text = Utils.getApplicationDetailsText(application);
-  items[1] = React4(closure_7, obj6);
+  items[1] = React4(ApplicationDetailsEntry, obj6);
   let tmp18Result = null;
   if (null != connectedAccount) {
-    const obj7 = { iconComponent: tmp5(9575).HammerIcon, text: null };
-    const intl2 = tmp5(1119).intl;
-    obj7.text = intl2.string(tmp5(1119).t["8qui3M"]);
+    const obj7 = { iconComponent: tmp5(9579).HammerIcon, text: null };
+    const intl2 = tmp5(1115).intl;
+    obj7.text = intl2.string(tmp5(1115).t["8qui3M"]);
     tmp18Result = tmp18(tmp19, obj7);
   }
   items[2] = tmp18Result;
-  const obj8 = { iconComponent: ClockIcon2.ClockIcon, text: null };
-  const intl3 = tmp5(1119).intl;
+  const obj8 = { iconComponent: ClockIcon.ClockIcon, text: null };
+  const intl3 = tmp5(1115).intl;
   obj8.text = intl3.formatToPlainString(util.t["+1bjc8"], { date });
-  items[3] = React4(closure_7, obj8);
+  items[3] = React4(ApplicationDetailsEntry, obj8);
   let tmp18Result2 = null;
   if (scopes.includes(OAuth2Scopes.OAuth2Scopes.BOT)) {
     tmp18Result2 = null;
     if (null != approximateGuildCount) {
-      const obj9 = { iconComponent: tmp5(9577).RobotIcon, text: null };
-      const intl4 = tmp5(1119).intl;
+      const obj9 = { iconComponent: tmp5(9581).RobotIcon, text: null };
+      const intl4 = tmp5(1115).intl;
       const obj10 = { guildCount: approximateGuildCount };
-      obj9.text = intl4.formatToPlainString(tmp5(1119).t.UHGHSP, obj10);
+      obj9.text = intl4.formatToPlainString(tmp5(1115).t.UHGHSP, obj10);
       tmp18Result2 = tmp18(tmp19, obj9);
     }
   }
   items[4] = tmp18Result2;
   const tmp5Result = Utils;
-  items[5] = React4(closure_7, { iconComponent: ShieldIcon.ShieldIcon, text: securityMessage });
+  items[5] = React4(ApplicationDetailsEntry, { iconComponent: ShieldIcon.ShieldIcon, text: securityMessage });
   let mapped = null;
   if (null != disclosures) {
     mapped = disclosures.map((toFixed) => {
       const textForDisclosure = disclosures.getTextForDisclosure(toFixed);
       if (disclosures.ApplicationDisclosure.IP_LOCATION === toFixed) {
-        const obj2 = { iconComponent: tmp(9198).GlobeEarthIcon };
+        const obj2 = { iconComponent: tmp(9200).GlobeEarthIcon };
         let tmp4 = obj2;
       } else {
         tmp4 = null;
-        if (tmp(9362).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
-          const obj3 = { iconComponent: tmp(9573).EmbedIcon };
+        if (tmp(9364).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+          const obj3 = { iconComponent: tmp(9577).EmbedIcon };
           tmp4 = obj3;
         }
       }
@@ -403,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != textForDisclosure) {
           const obj4 = { text: textForDisclosure };
           const merged = Object.assign(tmp4);
-          tmp5 = closure_1_4(closure_1_7, obj4, toFixed.toFixed());
+          tmp5 = closure_1_4(ApplicationDetailsEntry, obj4, toFixed.toFixed());
         }
       }
       return tmp5;
@@ -412,4 +133,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[6] = mapped;
   obj3.children = items;
   return tmp13(tmp14, obj3);
-});
+};

@@ -1,16 +1,16 @@
-// Module ID: 9652
-// Function ID: 9653
+// Module ID: 9656
+// Function ID: 9657
 // Name: QuestMatchingUtils
-// Dependencies: [32, 5017, 9653, 5695, 1078, 2008, 7997, 7972, 7995, 9661, 2]
+// Dependencies: [32, 5015, 9657, 5693, 1074, 2004, 7992, 7967, 7990, 9665, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 9652 (QuestMatchingUtils)
-import QuestDataUtils from "QuestDataUtils" /* 7972 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7997 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 9661 */;
+// Module 9656 (QuestMatchingUtils)
+import QuestDataUtils from "QuestDataUtils" /* 7967 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7992 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 9665 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 5017 */;
-import LocalActivityStore from "LocalActivityStore" /* 9653 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
+import LocalActivityStore from "LocalActivityStore" /* 9657 */;
 
 require = fn;
 function questMatchesActivity(arg0, id) {
@@ -30,7 +30,7 @@ function questMatchesActivity(arg0, id) {
           tmp10 = id.id === React5;
         }
         if (tmp10) {
-          tmp10 = formatted.application_id === closure_1_8;
+          tmp10 = formatted.application_id === React6;
         }
         if (!tmp10) {
           let tmp13 = tmp2 != formatted.application_id;
@@ -80,10 +80,10 @@ function questMatchesApplicationId(arg0, quest) {
   const allApplicationIds = QuestTaskUtils.getAllApplicationIds(quest);
   return null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
 }
-const QuestConstants = fn(5695);
+const QuestConstants = fn(5693);
 ({ DISCORD_APPLICATION_ID: metroRequire, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: closure_7, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: closure_8 } = QuestConstants);
-const ActivityGamePlatforms = fn(1078).ActivityGamePlatforms;
-let closure_10 = fn(2008).XBOX_ACTIVITY_APPLICATION_ID;
+const ActivityGamePlatforms = fn(1074).ActivityGamePlatforms;
+let closure_10 = fn(2004).XBOX_ACTIVITY_APPLICATION_ID;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/utils/QuestMatchingUtils.tsx");
 
@@ -113,13 +113,13 @@ export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQu
     const allApplicationIds = QuestTaskUtils.getAllApplicationIds(quest);
     let hasPlayOnDesktopTaskResult = null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
     if (hasPlayOnDesktopTaskResult) {
-      hasPlayOnDesktopTaskResult = !tmp(7972).isQuestExpired(quest);
-      const tmpResult = tmp(7972);
+      hasPlayOnDesktopTaskResult = !tmp(7967).isQuestExpired(quest);
+      const tmpResult = tmp(7967);
     }
     if (hasPlayOnDesktopTaskResult) {
       const obj2 = { quest };
-      hasPlayOnDesktopTaskResult = tmp(7997).hasPlayOnDesktopTask(obj2);
-      const tmpResult2 = tmp(7997);
+      hasPlayOnDesktopTaskResult = tmp(7992).hasPlayOnDesktopTask(obj2);
+      const tmpResult2 = tmp(7992);
     }
     return hasPlayOnDesktopTaskResult;
   });
@@ -154,12 +154,12 @@ export const getEligibleQuestsForApplicationId = function getEligibleQuestsForAp
       const activityApplicationId = QuestTaskUtils.getActivityApplicationId(userStatus);
       let canLaunchActivityResult = null != userStatus;
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = tmp(7995).canLaunchActivity(userStatus);
-        const tmpResult = tmp(7995);
+        canLaunchActivityResult = tmp(7990).canLaunchActivity(userStatus);
+        const tmpResult = tmp(7990);
       }
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = !tmp(7972).isQuestExpired(userStatus);
-        const tmpResult2 = tmp(7972);
+        canLaunchActivityResult = !tmp(7967).isQuestExpired(userStatus);
+        const tmpResult2 = tmp(7967);
       }
       if (canLaunchActivityResult) {
         canLaunchActivityResult = activityApplicationId === closure_0;

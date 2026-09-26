@@ -1,32 +1,32 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16003
+// Function ID: 16004
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8373, 7932, 1224, 2045, 2099, 1376, 4789, 1378, 21, 577, 565, 1275, 4490, 5854, 5861, 5935, 7474, 7735, 1181, 580, 11074, 4790, 7726, 4757, 16000, 1984, 558, 568, 7478, 16003, 11383, 11956, 4993, 16004, 16007, 16011, 16013, 16016, 2]
+// Dependencies: [5, 32, 19, 17, 8368, 7927, 1220, 2041, 2095, 1372, 4787, 1374, 21, 573, 563, 1271, 4486, 5854, 5861, 5936, 7472, 7730, 1177, 576, 11037, 4788, 7721, 4755, 16004, 1980, 7477, 16007, 11345, 12074, 4991, 16008, 16011, 16015, 16017, 16020, 2]
+// Exports: default
 
-// Module 15999 (DevToolsRevenuePlaygroundScreen)
-import useStateFromStores from "useStateFromStores" /* 565 */;
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import native from "native" /* 1181 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+// Module 16003 (DevToolsRevenuePlaygroundScreen)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import nativeDefault from "native" /* 576 */;
+import native from "native" /* 1177 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
 import TableRow from "TableRow" /* 5854 */;
 import TableRowArrow from "TableRowArrow" /* 5861 */;
-import TableRowGroup from "TableRowGroup" /* 5935 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7474 */;
-import TableSwitchRow from "TableSwitchRow" /* 7478 */;
-import IAPUtils from "IAPUtils" /* 11383 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 11956 */;
+import TableRowGroup from "TableRowGroup" /* 5936 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7472 */;
+import TableSwitchRow from "TableSwitchRow" /* 7477 */;
+import IAPUtils from "IAPUtils" /* 11345 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 12074 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8373 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7932 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserStore from "UserStore" /* 1376 */;
-import DevSettingsStore from "DevSettingsStore" /* 4789 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8368 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserStore from "UserStore" /* 1372 */;
+import DevSettingsStore from "DevSettingsStore" /* 4787 */;
 
 require = fn;
 function describeServerError(status) {
@@ -200,7 +200,7 @@ function FriendAnniversary() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -293,7 +293,7 @@ function FriendAnniversary() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -402,7 +402,7 @@ function FriendAnniversary() {
   })).values());
   const set1 = new Set(arr.map((userId) => userId.userId));
   const items7 = [...Object.keys(stateFromStores1), ...Array.from(map.keys())];
-  const map1 = new Map(items6.map((userId) => {
+  map1 = new Map(items6.map((userId) => {
     items = [userId.userId, userId];
     return items;
   }));
@@ -655,7 +655,7 @@ function FriendAnniversary() {
   return closure_18(closure_19, obj16);
 }
 function TrialOfferSheetExample() {
-  premiumTrialOffer = premiumTrialOffer(7726).usePremiumTrialOffer();
+  premiumTrialOffer = premiumTrialOffer(7721).usePremiumTrialOffer();
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: "No trial offer in store",
@@ -669,7 +669,7 @@ function TrialOfferSheetExample() {
 
             }
         };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16000, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16004, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -688,164 +688,25 @@ function TrialOfferSheetExample() {
 
             }
         };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16000, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16004, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   });
   obj3.children = items;
-  return closure_18(premiumTrialOffer(5935).TableRowGroup, obj3);
+  return closure_18(premiumTrialOffer(5936).TableRowGroup, obj3);
 }
-function PaymentFlowTest() {
-  const obj = {
-    title: "Payment Flow Test",
-    hasIcons: false,
-    children: constants(TableRow.TableRow, {
-      label: "Test Payment Flow",
-      onPress() {
-        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[37], paths.paths));
-      },
-      trailing: constants(TableRowArrow.TableRowArrow, {})
-    })
-  };
-  return constants(TableRowGroup.TableRowGroup, obj);
-}
-function Orbs() {
-  const obj = {
-    title: "Orbs",
-    hasIcons: false,
-    children: constants(TableRow.TableRow, {
-      label: "Test Orbs Flow",
-      onPress() {
-        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[38], paths.paths));
-      },
-      trailing: constants(TableRowArrow.TableRowArrow, {})
-    })
-  };
-  return constants(TableRowGroup.TableRowGroup, obj);
-}
-function RevenueSmokeTests() {
-  const obj = {
-    title: "Revenue Smoke Tests",
-    hasIcons: false,
-    children: constants(TableRow.TableRow, {
-      label: "Test all purchasing flows",
-      onPress() {
-        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[39], paths.paths));
-      },
-      trailing: constants(TableRowArrow.TableRowArrow, {})
-    })
-  };
-  return constants(TableRowGroup.TableRowGroup, obj);
-}
-function GuildPowerups() {
-  const obj = {
-    title: "Guild Powerups",
-    hasIcons: false,
-    children: constants(TableRow.TableRow, {
-      label: "Guild Powerups",
-      onPress() {
-        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[40], paths.paths));
-      },
-      trailing: constants(TableRowArrow.TableRowArrow, {})
-    })
-  };
-  return constants(TableRowGroup.TableRowGroup, obj);
-}
-function GuildTagBadges() {
-  const obj = {
-    title: "Guild Tag Badges",
-    hasIcons: false,
-    children: constants(TableRow.TableRow, {
-      label: "Badge gallery",
-      subLabel: "Preview all native badge kinds across sizes and tints",
-      onPress() {
-        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[41], paths.paths));
-      },
-      trailing: constants(TableRowArrow.TableRowArrow, {})
-    })
-  };
-  return constants(TableRowGroup.TableRowGroup, obj);
-}
-const ScrollView = fn(17).ScrollView;
-const DevSettingsCategory = fn(4789).DevSettingsCategory;
-const PremiumConstants = fn(1378);
-({ GiftIntentType: closure_15, PremiumTypes: closure_16 } = PremiumConstants);
-const jsxProd = fn(21);
-({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);
-let items = [{ label: "None", value: null }, { label: "1", value: 1 }, { label: "2", value: 2 }, { label: "3", value: 3 }, { label: "4", value: 4 }, { label: "5", value: 5 }, { label: "10", value: 10 }, { label: "25", value: 25 }];
-let c21 = "/users/@me/gift-intents/dismissals";
-const FRIEND_ANNIVERSARY = "FRIEND_ANNIVERSARY";
-const createStyles = fn(4790);
-let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, scrollContainer: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj2.scrollContainer = { padding: nativeDefault.space.PX_16 };
-let closure_25 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(8);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [DevSettingsStore];
-    const fn = function n() {
-      return DevSettingsStore.allByCategory(constants.PREMIUM).filter((item) => "force_mock_iap" !== closure_1_4(item, 1)[0]);
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp4 = items;
-    tmp5 = fn;
-    tmp6 = items1;
-  } else {
-    [tmp4, tmp5, tmp6] = cResult;
-  }
-  const stateFromStores = useStateFromStores.useStateFromStores(tmp4, tmp5, tmp6, tmp(565).statesWillNeverBeEqual);
-  if (cResult[3] !== stateFromStores) {
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function u(arg0) {
-        const tmp = closure_4(arg0, 3);
-        const subLabel = tmp[0];
-        return closure_17(subLabel(7478).TableSwitchRow, {
-          label: tmp[2].label,
-          subLabel,
-          value: tmp[1],
-          onValueChange(arg0) {
-            return require("DevSettingsActions").toggle(first, arg0);
-          }
-        }, subLabel);
-      };
-      cResult[5] = fn2;
-      let tmp9 = fn2;
-    } else {
-      tmp9 = cResult[5];
-    }
-    const mapped = stateFromStores.map(tmp9);
-    cResult[3] = stateFromStores;
-    cResult[4] = mapped;
-  } else {
-    if (cResult[6] !== cResult[4]) {
-      const obj2 = { title: "Premium Toggles", hasIcons: false, children: tmp8 };
-      const tmp14 = constants(tmp(5935).TableRowGroup, obj2);
-      cResult[6] = tmp8;
-      cResult[7] = tmp14;
-      let tmp12 = tmp14;
-    } else {
-      tmp12 = cResult[7];
-    }
-    return tmp12;
-  }
-}) : (() => {
+function PremiumToggles() {
   items = [DevSettingsStore];
   const stateFromStores = useStateFromStores.useStateFromStores(items, () => DevSettingsStore.allByCategory(constants.PREMIUM).filter((item) => {
     [tmp] = item;
     return "force_mock_iap" !== tmp;
   }), [], useStateFromStores.statesWillNeverBeEqual);
-  return constants(TableRowGroup.TableRowGroup, {
+  return closure_1_17(TableRowGroup.TableRowGroup, {
     title: "Premium Toggles",
     hasIcons: false,
     children: stateFromStores.map((item) => {
       [tmp, tmp2, ] = item;
-      return closure_17(closure_0(7478).TableSwitchRow, {
+      return closure_17(closure_0(7477).TableSwitchRow, {
         label: tmp3,
         subLabel: tmp,
         value: tmp2,
@@ -855,64 +716,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }, tmp);
     })
   });
-});
-ReactCompilerGating = fn(558);
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [DevSettingsStore];
-    const fn = function s() {
-      return DevSettingsStore.get("force_mock_iap");
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = useStateFromStores.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let result = tmp(11383).shouldMockIAPForceEnable();
-    cResult[2] = result;
-    let tmp8 = result;
-    const tmpResult2 = tmp(11383);
-  } else {
-    tmp8 = cResult[2];
-  }
-  let tmp10 = tmp8;
-  if (!tmp8) {
-    tmp10 = stateFromStores;
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function c(arg0) {
-      require("DevSettingsActions").toggle("force_mock_iap", arg0);
-      DevSettingsStore.persist();
-      const obj = require("DevSettingsActions");
-      const result = BundleUpdaterDefault.checkForUpdateAndReload();
-    };
-    cResult[3] = fn2;
-    let tmp11 = fn2;
-  } else {
-    tmp11 = cResult[3];
-  }
-  if (cResult[4] !== tmp10) {
-    let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
-    if (tmp8) {
-      str = "Forced on - the current device can't fetch real StoreKit products.";
-    }
-    const obj2 = { title: "iOS IAP Mock", hasIcons: false, children: null };
-    const obj3 = { label: "Force mock IAP products", subLabel: str, value: tmp10, disabled: tmp8, onValueChange: tmp11 };
-    obj2.children = constants(tmp(7478).TableSwitchRow, obj3);
-    const tmp13Result = constants(tmp(5935).TableRowGroup, obj2);
-    cResult[4] = tmp10;
-    cResult[5] = tmp13Result;
-    let tmp12 = tmp13Result;
-  } else {
-    tmp12 = cResult[5];
-  }
-  return tmp12;
-}) : (() => {
+}
+function ForceMockIAP() {
   items = [DevSettingsStore];
   const stateFromStores = useStateFromStores.useStateFromStores(items, () => DevSettingsStore.get("force_mock_iap"));
   let result = IAPUtils.shouldMockIAPForceEnable();
@@ -933,118 +738,121 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj = require("DevSettingsActions");
     const result = BundleUpdaterDefault.checkForUpdateAndReload();
   };
-  return constants(TableRowGroup.TableRowGroup, { title: "iOS IAP Mock", hasIcons: false, children: constants(TableSwitchRow.TableSwitchRow, obj3) });
-});
-ReactCompilerGating = fn(558);
-let obj4 = { padding: nativeDefault.space.PX_16 };
+  return closure_1_17(TableRowGroup.TableRowGroup, { title: "iOS IAP Mock", hasIcons: false, children: closure_1_17(TableSwitchRow.TableSwitchRow, obj3) });
+}
+function PaymentFlowTest() {
+  const obj = {
+    title: "Payment Flow Test",
+    hasIcons: false,
+    children: closure_1_17(TableRow.TableRow, {
+      label: "Test Payment Flow",
+      onPress() {
+        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[35], paths.paths));
+      },
+      trailing: closure_1_17(TableRowArrow.TableRowArrow, {})
+    })
+  };
+  return closure_1_17(TableRowGroup.TableRowGroup, obj);
+}
+function Orbs() {
+  const obj = {
+    title: "Orbs",
+    hasIcons: false,
+    children: closure_1_17(TableRow.TableRow, {
+      label: "Test Orbs Flow",
+      onPress() {
+        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[36], paths.paths));
+      },
+      trailing: closure_1_17(TableRowArrow.TableRowArrow, {})
+    })
+  };
+  return closure_1_17(TableRowGroup.TableRowGroup, obj);
+}
+function RevenueSmokeTests() {
+  const obj = {
+    title: "Revenue Smoke Tests",
+    hasIcons: false,
+    children: closure_1_17(TableRow.TableRow, {
+      label: "Test all purchasing flows",
+      onPress() {
+        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[37], paths.paths));
+      },
+      trailing: closure_1_17(TableRowArrow.TableRowArrow, {})
+    })
+  };
+  return closure_1_17(TableRowGroup.TableRowGroup, obj);
+}
+function GuildPowerups() {
+  const obj = {
+    title: "Guild Powerups",
+    hasIcons: false,
+    children: closure_1_17(TableRow.TableRow, {
+      label: "Guild Powerups",
+      onPress() {
+        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[38], paths.paths));
+      },
+      trailing: closure_1_17(TableRowArrow.TableRowArrow, {})
+    })
+  };
+  return closure_1_17(TableRowGroup.TableRowGroup, obj);
+}
+function GuildTagBadges() {
+  const obj = {
+    title: "Guild Tag Badges",
+    hasIcons: false,
+    children: closure_1_17(TableRow.TableRow, {
+      label: "Badge gallery",
+      subLabel: "Preview all native badge kinds across sizes and tints",
+      onPress() {
+        require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[39], paths.paths));
+      },
+      trailing: closure_1_17(TableRowArrow.TableRowArrow, {})
+    })
+  };
+  return closure_1_17(TableRowGroup.TableRowGroup, obj);
+}
+const ScrollView = fn(17).ScrollView;
+const DevSettingsCategory = fn(4787).DevSettingsCategory;
+const PremiumConstants = fn(1374);
+({ GiftIntentType: closure_15, PremiumTypes: closure_16 } = PremiumConstants);
+const jsxProd = fn(21);
+({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);
+let items = [{ label: "None", value: null }, { label: "1", value: 1 }, { label: "2", value: 2 }, { label: "3", value: 3 }, { label: "4", value: 4 }, { label: "5", value: 5 }, { label: "10", value: 10 }, { label: "25", value: 25 }];
+let c21 = "/users/@me/gift-intents/dismissals";
+const FRIEND_ANNIVERSARY = "FRIEND_ANNIVERSARY";
+const createStyles = fn(4788);
+let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, scrollContainer: null };
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
+obj2.scrollContainer = { padding: nativeDefault.space.PX_16 };
+let closure_25 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsRevenuePlaygroundScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(20);
-  const tmp4 = closure_25();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp24 = constants(TrialOfferSheetExample, {});
-    const obj2 = { size: nativeDefault.space.PX_16 };
-    const tmp26 = constants(tmp(1181).Spacer, obj2);
-    const tmp28 = constants(closure_27, {});
-    const obj3 = { size: nativeDefault.space.PX_16 };
-    const tmp29 = constants(tmp(1181).Spacer, obj3);
-    const tmp31 = constants(closure_28, {});
-    const obj4 = { size: nativeDefault.space.PX_16 };
-    const tmp32 = constants(tmp(1181).Spacer, obj4);
-    const tmp34 = constants(PaymentFlowTest, {});
-    const obj5 = { size: nativeDefault.space.PX_16 };
-    const tmp35 = constants(tmp(1181).Spacer, obj5);
-    const tmp37 = constants(Orbs, {});
-    const obj6 = { size: nativeDefault.space.PX_16 };
-    const tmp38 = constants(tmp(1181).Spacer, obj6);
-    const tmp40 = constants(RevenueSmokeTests, {});
-    const obj7 = { size: nativeDefault.space.PX_16 };
-    const tmp41 = constants(tmp(1181).Spacer, obj7);
-    const tmp43 = constants(GuildPowerups, {});
-    const obj8 = { size: nativeDefault.space.PX_16 };
-    const tmp44 = constants(tmp(1181).Spacer, obj8);
-    const tmp46 = constants(GuildTagBadges, {});
-    const obj9 = { size: nativeDefault.space.PX_16 };
-    const tmp47 = constants(tmp(1181).Spacer, obj9);
-    const tmp49 = constants(FriendAnniversary, {});
-    cResult[0] = tmp24;
-    cResult[1] = tmp26;
-    cResult[2] = tmp40;
-    cResult[3] = tmp41;
-    cResult[4] = tmp43;
-    cResult[5] = tmp44;
-    cResult[6] = tmp46;
-    cResult[7] = tmp47;
-    cResult[8] = tmp49;
-    cResult[9] = tmp28;
-    cResult[10] = tmp29;
-    cResult[11] = tmp31;
-    cResult[12] = tmp32;
-    cResult[13] = tmp34;
-    cResult[14] = tmp35;
-    cResult[15] = tmp37;
-    cResult[16] = tmp38;
-    tmp10 = tmp44;
-    tmp11 = tmp46;
-    tmp12 = tmp47;
-    tmp13 = tmp49;
-    tmp14 = tmp28;
-    tmp15 = tmp29;
-    tmp16 = tmp31;
-    tmp17 = tmp32;
-    tmp18 = tmp34;
-    tmp19 = tmp35;
-    tmp20 = tmp37;
-    tmp21 = tmp38;
-    tmp5 = tmp24;
-    tmp6 = tmp26;
-    tmp7 = tmp40;
-    tmp8 = tmp41;
-    tmp9 = tmp43;
-  } else {
-    [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21] = cResult;
-  }
-  if (cResult[17] === tmp4.container) {
-    if (cResult[18] === tmp4.scrollContainer) {
-      let tmp50 = cResult[19];
-    }
-    return tmp50;
-  }
-  const obj10 = { style: tmp4.container, contentContainerStyle: tmp4.scrollContainer, children: null };
-  items = [tmp5, tmp6, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13];
-  obj10.children = items;
-  const tmp51 = collapsedCategories(ScrollView, obj10);
-  cResult[17] = tmp4.container;
-  cResult[18] = tmp4.scrollContainer;
-  cResult[19] = tmp51;
-  tmp50 = tmp51;
-}) : (() => {
+export default function DevToolsRevenuePlaygroundScreen() {
   const tmp = closure_25();
   const obj = { style: tmp.container, contentContainerStyle: tmp.scrollContainer, children: null };
-  items = [constants(TrialOfferSheetExample, {}), constants(native.Spacer, { size: nativeDefault.space.PX_16 }), constants(closure_27, {}), , , , , , , , , , , , , , ];
+  items = [closure_1_17(TrialOfferSheetExample, {}), closure_1_17(native.Spacer, { size: nativeDefault.space.PX_16 }), closure_1_17(PremiumToggles, {}), , , , , , , , , , , , , , ];
   const obj2 = { size: nativeDefault.space.PX_16 };
-  items[3] = constants(native.Spacer, { size: nativeDefault.space.PX_16 });
-  items[4] = constants(closure_28, {});
+  items[3] = closure_1_17(native.Spacer, { size: nativeDefault.space.PX_16 });
+  items[4] = closure_1_17(ForceMockIAP, {});
   const obj3 = { size: nativeDefault.space.PX_16 };
-  items[5] = constants(native.Spacer, { size: nativeDefault.space.PX_16 });
-  items[6] = constants(PaymentFlowTest, {});
+  items[5] = closure_1_17(native.Spacer, { size: nativeDefault.space.PX_16 });
+  items[6] = closure_1_17(PaymentFlowTest, {});
   const obj4 = { size: nativeDefault.space.PX_16 };
-  items[7] = constants(native.Spacer, { size: nativeDefault.space.PX_16 });
-  items[8] = constants(Orbs, {});
+  items[7] = closure_1_17(native.Spacer, { size: nativeDefault.space.PX_16 });
+  items[8] = closure_1_17(Orbs, {});
   const obj5 = { size: nativeDefault.space.PX_16 };
-  items[9] = constants(native.Spacer, { size: nativeDefault.space.PX_16 });
-  items[10] = constants(RevenueSmokeTests, {});
+  items[9] = closure_1_17(native.Spacer, { size: nativeDefault.space.PX_16 });
+  items[10] = closure_1_17(RevenueSmokeTests, {});
   const obj6 = { size: nativeDefault.space.PX_16 };
-  items[11] = constants(native.Spacer, { size: nativeDefault.space.PX_16 });
-  items[12] = constants(GuildPowerups, {});
+  items[11] = closure_1_17(native.Spacer, { size: nativeDefault.space.PX_16 });
+  items[12] = closure_1_17(GuildPowerups, {});
   const obj7 = { size: nativeDefault.space.PX_16 };
-  items[13] = constants(native.Spacer, { size: nativeDefault.space.PX_16 });
-  items[14] = constants(GuildTagBadges, {});
+  items[13] = closure_1_17(native.Spacer, { size: nativeDefault.space.PX_16 });
+  items[14] = closure_1_17(GuildTagBadges, {});
   const obj8 = { size: nativeDefault.space.PX_16 };
-  items[15] = constants(native.Spacer, { size: nativeDefault.space.PX_16 });
-  items[16] = constants(FriendAnniversary, {});
+  items[15] = closure_1_17(native.Spacer, { size: nativeDefault.space.PX_16 });
+  items[16] = closure_1_17(FriendAnniversary, {});
   obj.children = items;
   return collapsedCategories(ScrollView, obj);
-});
+};

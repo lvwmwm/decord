@@ -1,114 +1,29 @@
-// Module ID: 14275
-// Function ID: 14276
+// Module ID: 14265
+// Function ID: 14266
 // Name: GuildActionSheetDirectory
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1616, 14276, 14219, 6895, 7429, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 1612, 7427, 6901, 14266, 14209, 2]
+// Exports: default
 
-// Module 14275 (GuildActionSheetDirectory)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import BottomSheetModal from "BottomSheetModal" /* 6895 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 14219 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 14276 */;
+// Module 14265 (GuildActionSheetDirectory)
+import nativeDefault from "native" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import BottomSheetModal from "BottomSheetModal" /* 6901 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 14209 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 14266 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, actions: { paddingHorizontal: 16, gap: 24 } };
 let closure_6 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetDirectory.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(19);
-  ({ guild, expanded } = arg0);
-  const tmp5 = closure_6();
-  const bottom = useSafeAreaInsetsDefault().bottom;
-  if (cResult[0] !== bottom) {
-    const obj2 = { paddingBottom: bottom };
-    cResult[0] = bottom;
-    cResult[1] = obj2;
-    let tmp7 = obj2;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== guild) {
-    const obj3 = { guild };
-    const tmp10 = React4(GuildActionSheetHeaderDefault, obj3);
-    cResult[2] = guild;
-    cResult[3] = tmp10;
-    let tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== guild) {
-    const obj4 = { guild };
-    const tmp14 = React4(tmp(14219).GuildActionSheetDirectoryActions, obj4);
-    const obj5 = { guild };
-    const tmp15 = React4(tmp(14219).GuildDeveloperOptionAction, obj5);
-    cResult[4] = guild;
-    cResult[5] = tmp14;
-    cResult[6] = tmp15;
-    let tmp12 = tmp15;
-    let tmp11 = tmp14;
-  } else {
-    tmp11 = cResult[5];
-    tmp12 = cResult[6];
-  }
-  if (cResult[7] === tmp5.actions) {
-    if (cResult[8] === tmp11) {
-      if (cResult[9] === tmp12) {
-        let tmp16 = cResult[10];
-      }
-      if (cResult[11] === tmp5.container) {
-        if (cResult[12] === tmp7) {
-          if (cResult[13] === tmp8) {
-            if (cResult[14] === tmp16) {
-              let tmp18 = cResult[15];
-            }
-            if (cResult[16] === tmp4) {
-              if (cResult[17] === tmp18) {
-                let tmp21 = cResult[18];
-              }
-              return tmp21;
-            }
-            const obj6 = { scrollable: true, startExpanded: tmp4, children: tmp18 };
-            const tmp23 = React4(tmp(7429).BottomSheet, obj6);
-            cResult[16] = tmp4;
-            cResult[17] = tmp18;
-            cResult[18] = tmp23;
-            tmp21 = tmp23;
-          }
-        }
-      }
-      const obj7 = { scrollsToTop: false, style: tmp5.container, contentContainerStyle: tmp7, children: null };
-      const items = [tmp8, tmp16];
-      obj7.children = items;
-      const tmp20 = hasOwnProperty(tmp(6895).BottomSheetScrollView, obj7);
-      cResult[11] = tmp5.container;
-      cResult[12] = tmp7;
-      cResult[13] = tmp8;
-      cResult[14] = tmp16;
-      cResult[15] = tmp20;
-      tmp18 = tmp20;
-    }
-  }
-  const obj8 = { style: tmp5.actions, children: null };
-  const items1 = [tmp11, tmp12];
-  obj8.children = items1;
-  const tmp17 = hasOwnProperty(View, obj8);
-  cResult[7] = tmp5.actions;
-  cResult[8] = tmp11;
-  cResult[9] = tmp12;
-  cResult[10] = tmp17;
-  tmp16 = tmp17;
-}) : ((arg0) => {
+export default function GuildActionSheetDirectory(arg0) {
   ({ guild, expanded } = arg0);
   if (expanded === undefined) {
     expanded = false;
@@ -124,4 +39,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2.children = items;
   obj.children = hasOwnProperty(BottomSheetModal.BottomSheetScrollView, obj2);
   return React4(Sheet_BottomSheet.BottomSheet, obj);
-});
+};

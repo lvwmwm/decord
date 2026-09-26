@@ -1,11 +1,11 @@
-// Module ID: 7810
-// Function ID: 7811
+// Module ID: 7805
+// Function ID: 7806
 // Name: RecentlyActiveCollapseStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 7810 (RecentlyActiveCollapseStore)
+// Module 7805 (RecentlyActiveCollapseStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 const set = new Set();
 const PersistedStore = initializeDefault.PersistedStore;

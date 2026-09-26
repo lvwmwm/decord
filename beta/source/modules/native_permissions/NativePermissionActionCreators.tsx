@@ -1,10 +1,10 @@
-// Module ID: 5395
-// Function ID: 5396
+// Module ID: 5393
+// Function ID: 5394
 // Name: NativePermissionActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 
-// Module 5395 (NativePermissionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 5393 (NativePermissionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function NativePermissionActionCreators() {

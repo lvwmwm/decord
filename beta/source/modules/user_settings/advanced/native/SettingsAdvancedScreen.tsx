@@ -1,74 +1,50 @@
-// Module ID: 15804
-// Function ID: 15805
+// Module ID: 15808
+// Function ID: 15809
 // Name: SettingsAdvancedScreen
-// Dependencies: [19, 8270, 1078, 21, 1119, 558, 568, 11630, 14988, 2]
+// Dependencies: [19, 8265, 1074, 21, 1115, 11754, 14992, 2]
 
-// Module 15804 (SettingsAdvancedScreen)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import SettingBuilders from "SettingBuilders" /* 11630 */;
-import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+// Module 15808 (SettingsAdvancedScreen)
+import util from "util" /* 1115 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
+import SettingLayoutDefault from "SettingLayout" /* 14992 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-function getAdvancedSettings() {
-  const obj = { label: null, settings: null, subLabel: null };
-  const intl = util.intl;
-  obj.label = intl.string(util.t["+U02+i"]);
-  const items = [MobileUserSettings.DEVELOPER_MODE];
-  obj.settings = items;
-  const intl2 = util.intl;
-  obj.subLabel = intl2.format(util.t["CY6q/Q"], { apiDocsUrl: MarketingURLs.API_DOCS });
-  const items1 = [obj, , , ];
-  const obj3 = { settings: null, subLabel: null };
-  const items2 = [MobileUserSettings.LAUNCHPAD];
-  obj3.settings = items2;
-  const intl3 = util.intl;
-  obj3.subLabel = intl3.string(util.t.gI2GEL);
-  items1[1] = obj3;
-  const obj4 = { settings: null };
-  const items3 = [MobileUserSettings.CHANNEL_LIST_LAYOUT];
-  obj4.settings = items3;
-  items1[2] = obj4;
-  const obj5 = { label: null, settings: null };
-  const intl4 = util.intl;
-  obj5.label = intl4.string(util.t["jnXV/V"]);
-  const items4 = [MobileUserSettings.ICYMI_TAB];
-  obj5.settings = items4;
-  items1[3] = obj5;
-  return items1;
-}
-const MobileUserSettings = fn(8270).MobileUserSettings;
-const MarketingURLs = fn(1078).MarketingURLs;
+const MobileUserSettings = fn(8265).MobileUserSettings;
+const MarketingURLs = fn(1074).MarketingURLs;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/advanced/native/SettingsAdvancedScreen.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { sections: getAdvancedSettings() };
-    const list = SettingBuilders.createList(obj2);
-    cResult[0] = list;
-    let first = list;
-    const tmpResult = SettingBuilders;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { node: first };
-    const tmp10 = jsx(SettingLayoutDefault, { node: first });
-    cResult[1] = tmp10;
-    let tmp7 = tmp10;
-  } else {
-    tmp7 = cResult[1];
-  }
-  return tmp7;
-}) : (() => {
+export default noop.memo(() => {
   const node = noop.useMemo(() => {
-    const obj = SettingBuilders;
-    return obj.createList({ sections: getAdvancedSettings() });
+    const obj2 = { sections: null };
+    const obj3 = { label: null, settings: null, subLabel: null };
+    const intl = util.intl;
+    obj3.label = intl.string(util.t["+U02+i"]);
+    const items = [constants.DEVELOPER_MODE];
+    obj3.settings = items;
+    const intl2 = util.intl;
+    obj3.subLabel = intl2.format(util.t["CY6q/Q"], { apiDocsUrl: constants2.API_DOCS });
+    const items1 = [obj3, , , ];
+    const obj5 = { settings: null, subLabel: null };
+    const items2 = [constants.LAUNCHPAD];
+    obj5.settings = items2;
+    const intl3 = util.intl;
+    obj5.subLabel = intl3.string(util.t.gI2GEL);
+    items1[1] = obj5;
+    const obj6 = { settings: null };
+    const items3 = [constants.CHANNEL_LIST_LAYOUT];
+    obj6.settings = items3;
+    items1[2] = obj6;
+    const obj7 = { label: null, settings: null };
+    const intl4 = util.intl;
+    obj7.label = intl4.string(util.t["jnXV/V"]);
+    const items4 = [constants.ICYMI_TAB];
+    obj7.settings = items4;
+    items1[3] = obj7;
+    obj2.sections = items1;
+    return SettingBuilders.createList(obj2);
   }, []);
   return jsx(SettingLayoutDefault, { node });
-}));
+});

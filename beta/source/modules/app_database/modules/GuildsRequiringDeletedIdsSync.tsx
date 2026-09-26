@@ -1,10 +1,10 @@
-// Module ID: 7924
-// Function ID: 7925
+// Module ID: 7919
+// Function ID: 7920
 // Name: GuildsRequiringDeletedIdsSync
-// Dependencies: [5, 2074, 2]
+// Dependencies: [5, 2070, 2]
 
-// Module 7924 (GuildsRequiringDeletedIdsSync)
-import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+// Module 7919 (GuildsRequiringDeletedIdsSync)
+import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 class GuildsRequiringDeletedIdsSync {
@@ -41,7 +41,7 @@ prototype["getAll"] = function getAll() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

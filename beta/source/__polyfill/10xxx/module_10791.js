@@ -1,120 +1,126 @@
 // Module ID: 10791
 // Function ID: 10792
-// Dependencies: [10767, 10769]
-// Exports: createParsingComponentsAtWeekday, getBackwardDaysToWeekday, getDaysForwardToWeekday, getDaysToWeekdayClosest
+// Dependencies: [41, 42, 10733]
 
 // Module 10791
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10767 */;
-import Meridiem from "Meridiem" /* 10769 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-require = arg1;
-const dependencyMap = arg6;
-function getDaysToWeekday(dateWithAdjustedTimezone, sum, next) {
-  const day = dateWithAdjustedTimezone.getDay();
-  if ("this" === next) {
-    const diff = sum - dateWithAdjustedTimezone.getDay();
-    sum = diff;
-    if (diff < 0) {
-      sum = diff + 7;
-    }
-    return sum;
-  } else if ("last" === next) {
-    const diff1 = sum - dateWithAdjustedTimezone.getDay();
-    let diff2 = diff1;
-    if (diff1 >= 0) {
-      diff2 = diff1 - 7;
-    }
-    return diff2;
-  } else if ("next" === next) {
-    if (day == Meridiem.Weekday.SUNDAY) {
-      let num12 = 7;
-      if (sum != tmp6(10769).Weekday.SUNDAY) {
-        num12 = sum;
-      }
-      let sum3 = num12;
-    } else if (day == tmp6(10769).Weekday.SATURDAY) {
-      let num9 = 7;
-      if (sum != tmp6(10769).Weekday.SATURDAY) {
-        let num10 = 8;
-        if (sum != tmp6(10769).Weekday.SUNDAY) {
-          num10 = 1 + sum;
-        }
-        num9 = num10;
-      }
-      sum3 = num9;
-    } else {
-      if (sum < day) {
-        if (sum != tmp6(10769).Weekday.SUNDAY) {
-          const diff3 = sum - dateWithAdjustedTimezone.getDay();
-          let sum1 = diff3;
-          if (diff3 < 0) {
-            sum1 = diff3 + 7;
-          }
-          sum3 = sum1;
-        }
-      }
-      const diff4 = sum - dateWithAdjustedTimezone.getDay();
-      let sum2 = diff4;
-      if (diff4 < 0) {
-        sum2 = diff4 + 7;
-      }
-      sum3 = sum2 + 7;
-    }
-    return sum3;
-  } else {
-    const diff5 = sum - dateWithAdjustedTimezone.getDay();
-    let diff6 = diff5;
-    if (diff5 >= 0) {
-      diff6 = diff5 - 7;
-    }
-    const diff7 = sum - dateWithAdjustedTimezone.getDay();
-    let sum4 = diff7;
-    if (diff7 < 0) {
-      sum4 = diff7 + 7;
-    }
-    if (sum4 < -diff6) {
-      diff6 = sum4;
-    }
-    return diff6;
+const FRSpecificTimeExpressionParser = require;
+const regExp = new RegExp("(^|\\s|T)(?:(?:[\u00E0a])\\s*)?(\\d{1,2})(?:h|:)?(?:(\\d{1,2})(?:m|:)?)?(?:(\\d{1,2})(?:s|:)?)?(?:\\s*(A\\.M\\.|P\\.M\\.|AM?|PM?))?(?=\\W|$)", "i");
+const regExp1 = new RegExp("^\\s*(\\-|\\\u2013|\\~|\\\u301C|[\u00E0a]|\\?)\\s*(\\d{1,2})(?:h|:)?(?:(\\d{1,2})(?:m|:)?)?(?:(\\d{1,2})(?:s|:)?)?(?:\\s*(A\\.M\\.|P\\.M\\.|AM?|PM?))?(?=\\W|$)", "i");
+class FRSpecificTimeExpressionParser {
+  constructor() {
+    tmp = c2(this, FRSpecificTimeExpressionParser);
+    return;
   }
 }
+const entry = {
+  key: "pattern",
+  value: function pattern(arg0) {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(createParsingResult, index) {
+      const sum = index.index + index[1].length;
+      const parsingResult = createParsingResult.createParsingResult(sum, index[0].substring(index[1].length));
+      if (str2.match(/^\d{4}$/)) {
+        index.index = index.index + index[0].length;
+        return null;
+      } else {
+        const start = parsingResult.start;
+        parsingResult.start = FRSpecificTimeExpressionParser.extractTimeComponent(start.clone(), index);
+        if (parsingResult.start) {
+          const match = regex.exec(createParsingResult.text.substring(index.index + index[0].length));
+          if (match) {
+            const start2 = parsingResult.start;
+            parsingResult.end = obj.extractTimeComponent(start2.clone(), match);
+            if (parsingResult.end) {
+              parsingResult.text = parsingResult.text + match[0];
+            }
+          }
+          return parsingResult;
+        } else {
+          index.index = index.index + index[0].length;
+          return null;
+        }
+        obj = FRSpecificTimeExpressionParser;
+      }
+      str2 = parsingResult.text;
+    }
+  }
+];
+const entry1 = {
+  key: "extractTimeComponent",
+  value: function extractTimeComponent(assign, arg1) {
+    const parsed = parseInt(arg1[2]);
+    let num = 0;
+    if (null != arg1[3]) {
+      const _parseInt = parseInt;
+      num = parseInt(arg1[3]);
+    }
+    if (num < 60) {
+      if (parsed <= 24) {
+        let PM1 = null;
+        if (parsed >= 12) {
+          PM1 = FRSpecificTimeExpressionParser(10733).Meridiem.PM;
+        }
+        let PM = PM1;
+        let tmp5 = parsed;
+        if (null != arg1[5]) {
+          if (parsed > 12) {
+            return null;
+          } else {
+            const formatted = arg1[5][0].toLowerCase();
+            let tmp8 = parsed;
+            if ("a" == formatted) {
+              let num2 = parsed;
+              if (12 == parsed) {
+                num2 = 0;
+              }
+              tmp8 = num2;
+              PM1 = FRSpecificTimeExpressionParser(10733).Meridiem.AM;
+            }
+            PM = PM1;
+            tmp5 = tmp8;
+            if ("p" == formatted) {
+              let sum = tmp8;
+              if (12 != tmp8) {
+                sum = tmp8 + 12;
+              }
+              tmp5 = sum;
+              PM = FRSpecificTimeExpressionParser(10733).Meridiem.PM;
+            }
+          }
+        }
+        assign.assign("hour", tmp5);
+        assign.assign("minute", num);
+        if (null !== PM) {
+          assign.assign("meridiem", PM);
+        } else if (tmp5 < 12) {
+          assign.imply("meridiem", FRSpecificTimeExpressionParser(10733).Meridiem.AM);
+        } else {
+          assign.imply("meridiem", FRSpecificTimeExpressionParser(10733).Meridiem.PM);
+        }
+        if (null != arg1[4]) {
+          const _parseInt2 = parseInt;
+          const parsed1 = parseInt(arg1[4]);
+          if (parsed1 >= 60) {
+            return null;
+          } else {
+            assign.assign("second", parsed1);
+          }
+        }
+        return assign;
+      }
+    }
+    return null;
+  }
+};
+const items1 = [entry1];
 
-export const createParsingComponentsAtWeekday = function createParsingComponentsAtWeekday(reference, sum, next) {
-  const parsingComponents = new ReferenceWithTimezone.ParsingComponents(reference);
-  const addDurationAsImpliedResult = parsingComponents.addDurationAsImplied({ day: getDaysToWeekday(reference.getDateWithAdjustedTimezone(), sum, next) });
-  addDurationAsImpliedResult.assign("weekday", sum);
-  return addDurationAsImpliedResult;
-};
-export { getDaysToWeekday };
-export const getDaysToWeekdayClosest = function getDaysToWeekdayClosest(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let diff1 = diff;
-  if (diff >= 0) {
-    diff1 = diff - 7;
-  }
-  const diff2 = arg1 - getDay.getDay();
-  let sum = diff2;
-  if (diff2 < 0) {
-    sum = diff2 + 7;
-  }
-  if (sum < -diff1) {
-    diff1 = sum;
-  }
-  return diff1;
-};
-export const getDaysForwardToWeekday = function getDaysForwardToWeekday(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let sum = diff;
-  if (diff < 0) {
-    sum = diff + 7;
-  }
-  return sum;
-};
-export const getBackwardDaysToWeekday = function getBackwardDaysToWeekday(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let diff1 = diff;
-  if (diff >= 0) {
-    diff1 = diff - 7;
-  }
-  return diff1;
-};
+export default _createClass(FRSpecificTimeExpressionParser, items, items1);

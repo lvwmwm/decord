@@ -1,28 +1,82 @@
 // Module ID: 13143
 // Function ID: 13144
-// Dependencies: [13099, 13129]
-// Exports: createClientReportEnvelope
+// Dependencies: [13103, 13136]
+// Exports: makePromiseBuffer
 
 // Module 13143
-import _mod13099 from "module_13099" /* 13099 */;
-import _mod13129 from "module_13129" /* 13129 */;
+import _mod13103 from "module_13103" /* 13103 */;
 
 require = arg1;
 const dependencyMap = arg6;
 
-export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    result = _mod13099.dateTimestampInSeconds();
-  }
-  items[1] = { timestamp: result, discarded_events };
-  if (dsn) {
-    const obj3 = { dsn };
-    let obj4 = obj3;
-  } else {
-    obj4 = {};
-  }
-  const items1 = [items];
-  return _mod13129.createEnvelope(obj4, items1);
-};
+export function makePromiseBuffer(arg0) {
+  closure_0 = arg0;
+  const items = [];
+  return {
+    $: items,
+    add(fn) {
+      let tmp2 = undefined === promise;
+      if (!tmp2) {
+        tmp2 = items.length < tmp;
+      }
+      if (tmp2) {
+        promise = fn();
+        if (-1 === items.indexOf(promise)) {
+          items.push(promise);
+        }
+        promise.then(() => {
+          let first = items.splice(items.indexOf(promise), 1)[0];
+          if (!first) {
+            first = Promise.resolve(undefined);
+          }
+          return first;
+        }).then(null, () => {
+          let first = items.splice(items.indexOf(promise), 1)[0];
+          if (!first) {
+            first = Promise.resolve(undefined);
+          }
+          return first.then(null, () => {
+
+          });
+        });
+        return promise;
+      } else {
+        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
+        return closure_0(items[0]).rejectedSyncPromise(sentryError);
+      }
+    },
+    drain(arg0) {
+      closure_0 = arg0;
+      return new closure_0(items[0]).SyncPromise((fn, arg1) => {
+        closure_0 = fn;
+        closure_1 = arg1;
+        length = length.length;
+        if (length) {
+          const _setTimeout = setTimeout;
+          const timeout = setTimeout(() => {
+            let tmp2 = closure_0;
+            if (closure_0) {
+              tmp2 = tmp > 0;
+            }
+            if (tmp2) {
+              closure_0(false);
+            }
+          }, closure_0);
+          const item = arr.forEach((item) => {
+            _mod13103.resolvedSyncPromise(item).then(() => {
+              diff = diff - 1;
+              if (!diff) {
+                const _clearTimeout = clearTimeout;
+                clearTimeout(closure_1_3);
+                fn(true);
+              }
+            }, closure_1);
+          });
+        } else {
+          return fn(true);
+        }
+        arr = length;
+      });
+    }
+  };
+}

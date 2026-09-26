@@ -1,11 +1,11 @@
-// Module ID: 8055
-// Function ID: 8056
+// Module ID: 8050
+// Function ID: 8051
 // Name: ThreadSummaryStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 8055 (ThreadSummaryStore)
+// Module 8050 (ThreadSummaryStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 function handleSummarizeThreadFinish() {
   c0 = false;

@@ -1,26 +1,26 @@
-// Module ID: 7910
-// Function ID: 7911
+// Module ID: 7905
+// Function ID: 7906
 // Name: RecentMentionsStore
-// Dependencies: [4442, 502, 2045, 5010, 4805, 4441, 4612, 4971, 1376, 1078, 510, 5012, 5000, 5027, 12, 4819, 7546, 7911, 504, 577, 2]
+// Dependencies: [4438, 502, 2041, 5008, 4803, 4437, 4609, 4969, 1372, 1074, 510, 5010, 4998, 5025, 12, 4817, 7544, 7906, 504, 573, 2]
 
-// Module 7910 (RecentMentionsStore)
+// Module 7905 (RecentMentionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import TimeUtils from "TimeUtils" /* 4819 */;
-import AgeGateUtils from "AgeGateUtils" /* 5000 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
-import isMessageMentioned from "isMessageMentioned" /* 5027 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7546 */;
-import MessageRecord from "MessageRecord" /* 4442 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import TimeUtils from "TimeUtils" /* 4817 */;
+import AgeGateUtils from "AgeGateUtils" /* 4998 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
+import isMessageMentioned from "isMessageMentioned" /* 5025 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7544 */;
+import MessageRecord from "MessageRecord" /* 4438 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5010 */;
-import ReadStateStore from "ReadStateStore" /* 4805 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
-import UserStore from "UserStore" /* 1376 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 5008 */;
+import ReadStateStore from "ReadStateStore" /* 4803 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const isMessageMentionedDefault = isMessageMentioned;
 
@@ -96,7 +96,7 @@ function parseMessage(message, channelId) {
       }
       const id = AuthenticationStore.getId();
       if (!RelationshipStore.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(7911)(message, id)) {
+        if (!tmp2(7906)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof MessageRecord)) {
             message = MessageStore.getMessage(message.channel_id, message.id);
@@ -107,15 +107,15 @@ function parseMessage(message, channelId) {
           }
           const obj = { message: tmp12, userId: id, suppressEveryone: !closure_23.everyoneFilter, suppressRoles: !closure_23.roleFilter };
           let tmp20 = null;
-          if (tmp2(5027)(obj)) {
+          if (tmp2(5025)(obj)) {
             let tmp2ResultResult = c26;
             if (c26) {
               tmp2ResultResult = ReadStateStore.ackMessageId(channel.id) !== tmp12.id;
             }
             if (tmp2ResultResult) {
               const obj3 = { message: tmp12, userId: id, suppressEveryone: UserGuildSettingsStore.isSuppressEveryoneEnabled(channel.getGuildId()), suppressRoles: UserGuildSettingsStore.isSuppressRolesEnabled(channel.getGuildId()) };
-              tmp2ResultResult = tmp2(5027)(obj3);
-              const tmp2Result = tmp2(5027);
+              tmp2ResultResult = tmp2(5025)(obj3);
+              const tmp2Result = tmp2(5025);
             }
             tmp20 = tmp12;
             if (tmp2ResultResult) {
@@ -293,7 +293,7 @@ function handleDeleteChannel(channel) {
     });
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 const RecentMentionsFilters = Constants.RecentMentionsFilters;
 ({ ChannelTypes: map1, MessageTypesSets: closure_14, UserNotificationSettings: closure_15, ChannelTypesSets: closure_16 } = Constants);
 const recentMentionFilterSettings = "recentMentionFilterSettings";

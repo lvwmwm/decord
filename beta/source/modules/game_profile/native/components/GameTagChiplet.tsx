@@ -1,92 +1,23 @@
-// Module ID: 17590
-// Function ID: 17591
+// Module ID: 17628
+// Function ID: 17629
 // Name: GameTagChiplet
-// Dependencies: [19, 17, 21, 4790, 558, 568, 8976, 8977, 10012, 2]
+// Dependencies: [19, 17, 21, 4788, 8978, 8989, 10045, 2]
 
-// Module 17590 (GameTagChiplet)
-import c from "c" /* 568 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8977 */;
-import GuildTag from "GuildTag" /* 10012 */;
+// Module 17628 (GameTagChiplet)
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8978 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8989 */;
+import GuildTag from "GuildTag" /* 10045 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_5 = createStyles.createStyles({ container: { flexShrink: 1, minWidth: 0, overflow: "hidden" }, text: { flexShrink: 1, minWidth: 0 }, image: { width: 12, height: 12 } });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameTagChiplet.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(15);
-  ({ game, userId, textColor } = arg0);
-  const tmp4 = closure_5();
-  if (cResult[0] !== game) {
-    const iconURL = game.getIconURL(32);
-    cResult[0] = game;
-    cResult[1] = iconURL;
-    let tmp5 = iconURL;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === game.id) {
-    if (cResult[3] === userId) {
-      let tmp7 = cResult[4];
-    }
-    const tmp9 = useOpenGameProfileModalDefault(tmp7);
-    if (cResult[5] === tmp5) {
-      if (cResult[6] === tmp4.image) {
-        let tmp10 = cResult[7];
-      }
-      if (cResult[8] === game.name) {
-        if (cResult[9] === tmp9) {
-          if (cResult[10] === tmp4.container) {
-            if (cResult[11] === tmp4.text) {
-              if (cResult[12] === tmp10) {
-                if (cResult[13] === textColor) {
-                  let tmp15 = cResult[14];
-                }
-                return tmp15;
-              }
-            }
-          }
-        }
-      }
-      const obj2 = { guildTag: game.name, guildBadge: tmp10, containerStyles: null, textStyle: null, onPress: null, textColor: null };
-      ({ container: obj5.containerStyles, text: obj5.textStyle } = tmp4);
-      obj2.onPress = tmp9;
-      obj2.textColor = textColor;
-      const tmp17 = jsx(tmp(10012).BaseGuildTagChiplet, { guildTag: game.name, guildBadge: tmp10, containerStyles: null, textStyle: null, onPress: null, textColor: null });
-      cResult[8] = game.name;
-      cResult[9] = tmp9;
-      cResult[10] = tmp4.container;
-      cResult[11] = tmp4.text;
-      cResult[12] = tmp10;
-      cResult[13] = textColor;
-      cResult[14] = tmp17;
-      tmp15 = tmp17;
-    }
-    let tmp12;
-    if (null != tmp5) {
-      const obj3 = { source: null, alt: "", style: null };
-      const obj4 = { uri: tmp5 };
-      obj3.source = obj4;
-      obj3.style = tmp4.image;
-      tmp12 = <Image source={null} alt="" style={null} />;
-    }
-    cResult[5] = tmp5;
-    cResult[6] = tmp4.image;
-    cResult[7] = tmp12;
-    tmp10 = tmp12;
-  }
-  const obj9 = { gameId: game.id, source: GameProfileAnalyticUtils.GameProfileSources.CallTile, sourceUserId: userId };
-  cResult[2] = game.id;
-  cResult[3] = userId;
-  cResult[4] = obj9;
-  tmp7 = obj9;
-}) : ((game) => {
+export default noop.memo((game) => {
   game = game.game;
   ({ userId, textColor } = game);
   const tmp = closure_5();
@@ -106,4 +37,4 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   obj3.onPress = useOpenGameProfileModalDefault(obj);
   obj3.textColor = textColor;
   return jsx(GuildTag.BaseGuildTagChiplet, { guildTag: game.name, guildBadge: null, containerStyles: null, textStyle: null, onPress: null, textColor: null });
-}));
+});

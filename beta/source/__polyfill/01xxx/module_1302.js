@@ -4,4 +4,4 @@
 
 // Module 1302
 
-export default Function.prototype.apply;
+export default ReferenceError;

@@ -1,32 +1,19 @@
-// Module ID: 18153
-// Function ID: 18154
+// Module ID: 18144
+// Function ID: 18145
 // Name: Placeholder
-// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4788, 2]
+// Exports: default
 
-// Module 18153 (Placeholder)
-import c from "c" /* 568 */;
+// Module 18144 (Placeholder)
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let closure_4 = createStyles.createStyles({ spinner: { marginTop: 12 } });
-const ReactCompilerGating = fn(558);
+const createStyles = fn(4788);
+let closure_2 = createStyles.createStyles({ spinner: { marginTop: 12 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/Placeholder.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const tmp2 = closure_4();
-  if (cResult[0] !== tmp2.spinner) {
-    const obj2 = { style: tmp2.spinner };
-    const tmp6 = <ActivityIndicator style={tmp2.spinner} />;
-    cResult[0] = tmp2.spinner;
-    cResult[1] = tmp6;
-    let tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (() => <ActivityIndicator style={closure_4().spinner} />);
+export default function Placeholder() {
+  return <ActivityIndicator style={closure_2().spinner} />;
+};

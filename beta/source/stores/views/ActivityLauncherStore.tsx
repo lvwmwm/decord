@@ -1,13 +1,13 @@
-// Module ID: 11624
-// Function ID: 11625
+// Module ID: 11748
+// Function ID: 11749
 // Name: ActivityLauncherStore
-// Dependencies: [9653, 5530, 1078, 2040, 577, 504, 2]
+// Dependencies: [9657, 5528, 1074, 2036, 573, 504, 2]
 
-// Module 11624 (ActivityLauncherStore)
+// Module 11748 (ActivityLauncherStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import LocalActivityStore from "LocalActivityStore" /* 9653 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import LocalActivityStore from "LocalActivityStore" /* 9657 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
 
 const require = fn;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
@@ -34,7 +34,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       if (null != dependencyMap[applicationId]) {
         tmp16[applicationId].stop();
       }
-      const timeout = new applicationId(2040).Timeout();
+      const timeout = new applicationId(2036).Timeout();
       timeout.start(c9, () => DispatcherDefault.dispatch({ type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType }));
       dependencyMap[applicationId] = timeout;
     } else if (COMPLETE === tmp5.LOADING) {
@@ -46,7 +46,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       if (null != dependencyMap[applicationId]) {
         tmp7[applicationId].stop();
       }
-      const timeout1 = new applicationId(2040).Timeout();
+      const timeout1 = new applicationId(2036).Timeout();
       timeout1.start(num, () => DispatcherDefault.dispatch({ type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType }));
       dependencyMap[applicationId] = timeout1;
     }
@@ -106,7 +106,7 @@ function handleActivityUpdate() {
   });
   return c0;
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ActivityActionStates: hasOwnProperty, ActivityActionTypes: metroRequire } = Constants);
 let obj = {};
 const dependencyMap = {};
@@ -120,7 +120,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleActivityUpdate);
 };
 prototype["getState"] = function getState(arg0, arg1) {
-  state = undefined;
+  let state;
   if (obj[arg0] != null) {
     if (tmp[arg1] != null) {
       state = tmp4.state;

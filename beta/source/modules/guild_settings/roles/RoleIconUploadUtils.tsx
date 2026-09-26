@@ -1,11 +1,11 @@
-// Module ID: 18076
-// Function ID: 18077
+// Module ID: 18067
+// Function ID: 18068
 // Name: RoleIconUploadUtils
-// Dependencies: [5, 1078, 1379, 1401, 1479, 2]
+// Dependencies: [5, 1074, 1375, 1397, 1475, 2]
 // Exports: fetchCustomEmojiAsPngDataUri
 
-// Module 18076 (RoleIconUploadUtils)
-import AvatarUtils from "AvatarUtils" /* 1401 */;
+// Module 18067 (RoleIconUploadUtils)
+import AvatarUtils from "AvatarUtils" /* 1397 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -24,8 +24,8 @@ let closure_5 = async function _fetchCustomEmojiAsPngDataUri(id) {
     return closure_131_3 + closure_132_1.slice(closure_132_1.indexOf(",") + 1);
   })();
 };
-const Base64PNGPrefix = fn(1078).Base64PNGPrefix;
-const EMOJI_URL_BASE_SIZE = fn(1379).EMOJI_URL_BASE_SIZE;
+const Base64PNGPrefix = fn(1074).Base64PNGPrefix;
+const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/roles/RoleIconUploadUtils.tsx");
 

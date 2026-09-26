@@ -1,18 +1,18 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17818
+// Function ID: 17819
 // Name: JankSessionManager
-// Dependencies: [7739, 1078, 3, 7397, 17828, 1343, 16354, 17829, 7754, 2]
+// Dependencies: [7734, 1074, 3, 7395, 17819, 1339, 16345, 17820, 7749, 2]
 
-// Module 17827 (JankSessionManager)
+// Module 17818 (JankSessionManager)
 import LoggerDefault from "Logger" /* 3 */;
-import clientLaunchId from "clientLaunchId" /* 1343 */;
-import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 17828 */;
-import JankNavigationReporterDefault from "JankNavigationReporter" /* 17829 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7739 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import clientLaunchId from "clientLaunchId" /* 1339 */;
+import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 17819 */;
+import JankNavigationReporterDefault from "JankNavigationReporter" /* 17820 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7734 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_4, AppStates: hasOwnProperty } = Constants);
 let closure_6 = new LoggerDefault("JankSessionManager");
 class JankSessionManager extends tmp4 {
@@ -52,7 +52,7 @@ prototype["attachScreenReporters"] = function attachScreenReporters() {
 prototype["deliverPendingSessions"] = function deliverPendingSessions() {
   const self = this;
   if (!this._isDelivering) {
-    let obj = self(17828);
+    let obj = self(17819);
     tmp._isDelivering = true;
     const pendingReports = obj.getPendingReports();
     const nextPromise = pendingReports.then((arr) => {
@@ -60,14 +60,14 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
       if (0 !== arr.length) {
         const result = AnalyticsTrackingStore.submitEventsImmediately(arr.flatMap((screens) => {
           obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
-          let merged = Object.assign(screens(7754).getDeviceMetadata());
+          let merged = Object.assign(screens(7749).getDeviceMetadata());
           ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, releaseChannel: obj2.captured_release_channel, sessionStartMs: obj2.session_start_ms, totalFrameCount: obj2.total_frame_count, jankFrameCount: obj2.jank_frame_count, totalFrameTimeMs: obj2.total_frame_time_ms, jankFrameTimeMs: obj2.jank_frame_time_ms, screensOverCap: obj2.screens_over_cap } = screens);
           obj.properties = {};
           const items = [
             obj,
             ...screens.map((item) => {
               obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
-              const merged = Object.assign(screens(7754).getDeviceMetadata());
+              const merged = Object.assign(screens(7749).getDeviceMetadata());
               ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
               ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
               obj.properties = {};
@@ -87,14 +87,14 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
       if (0 !== arr.length) {
         const result = AnalyticsTrackingStore.submitEventsImmediately(arr.flatMap((screens) => {
           obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
-          let merged = Object.assign(screens(7754).getDeviceMetadata());
+          let merged = Object.assign(screens(7749).getDeviceMetadata());
           ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, releaseChannel: obj2.captured_release_channel, sessionStartMs: obj2.session_start_ms, totalFrameCount: obj2.total_frame_count, jankFrameCount: obj2.jank_frame_count, totalFrameTimeMs: obj2.total_frame_time_ms, jankFrameTimeMs: obj2.jank_frame_time_ms, screensOverCap: obj2.screens_over_cap } = screens);
           obj.properties = {};
           const items = [
             obj,
             ...screens.map((item) => {
               obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
-              const merged = Object.assign(screens(7754).getDeviceMetadata());
+              const merged = Object.assign(screens(7749).getDeviceMetadata());
               ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
               ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
               obj.properties = {};
@@ -118,14 +118,14 @@ prototype["deliverPendingSessions"] = function deliverPendingSessions() {
       if (0 !== arr.length) {
         const result = AnalyticsTrackingStore.submitEventsImmediately(arr.flatMap((screens) => {
           obj = { type: constants.ANDROID_JANK_SESSION, properties: null };
-          let merged = Object.assign(screens(7754).getDeviceMetadata());
+          let merged = Object.assign(screens(7749).getDeviceMetadata());
           ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, releaseChannel: obj2.captured_release_channel, sessionStartMs: obj2.session_start_ms, totalFrameCount: obj2.total_frame_count, jankFrameCount: obj2.jank_frame_count, totalFrameTimeMs: obj2.total_frame_time_ms, jankFrameTimeMs: obj2.jank_frame_time_ms, screensOverCap: obj2.screens_over_cap } = screens);
           obj.properties = {};
           const items = [
             obj,
             ...screens.map((item) => {
               obj = { type: constants.ANDROID_JANK_SCREEN, properties: null };
-              const merged = Object.assign(screens(7754).getDeviceMetadata());
+              const merged = Object.assign(screens(7749).getDeviceMetadata());
               ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
               ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
               obj.properties = {};

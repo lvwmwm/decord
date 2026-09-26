@@ -1,372 +1,34 @@
-// Module ID: 11839
-// Function ID: 11840
+// Module ID: 11959
+// Function ID: 11960
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 5010, 4783, 1078, 21, 558, 568, 8476, 8574, 1389, 1119, 4504, 7735, 7428, 4786, 7364, 5851, 5220, 5218, 580, 7481, 2]
+// Dependencies: [5, 32, 19, 5008, 4781, 1074, 21, 8471, 8569, 1385, 1115, 4499, 7730, 7474, 7426, 5216, 576, 4784, 7362, 5853, 5218, 2]
+// Exports: default
 
-// Module 11839 (EditAttachmentActionSheet)
-import util from "util" /* 1119 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import Stack_Stack from "Stack/Stack" /* 5218 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5851 */;
-import TextArea from "TextArea" /* 7364 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7428 */;
-import ActionSheet from "ActionSheet" /* 7481 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8476 */;
+// Module 11959 (EditAttachmentActionSheet)
+import util from "util" /* 1115 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4499 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Stack_Stack from "Stack/Stack" /* 5216 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5853 */;
+import TextArea from "TextArea" /* 7362 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7426 */;
+import ActionSheet from "ActionSheet" /* 7474 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8471 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MessageStore from "MessageStore" /* 5010 */;
-
-const require = globalThis.__r;
+import MessageStore from "MessageStore" /* 5008 */;
 
 require = fn;
-let closure_7 = fn(4783).LEGACY_SPOILER_ATTACHMENT_PREFIX;
-let MessageAttachmentFlags = fn(1078).MessageAttachmentFlags;
+let closure_7 = fn(4781).LEGACY_SPOILER_ATTACHMENT_PREFIX;
+const MessageAttachmentFlags = fn(1074).MessageAttachmentFlags;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/long_press/EditAttachmentActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
-  const cResult = require("c").c(44);
-  message = message.message;
-  _require = message;
-  const attachment = message.attachment;
-  let obj = require("c");
-  const bottomSheetRef1 = require("useBottomSheetRef").useBottomSheetRef();
-  ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
-  if (cResult[0] !== attachment) {
-    const tmp7 = attachment(tmp2[10])(attachment);
-    cResult[0] = attachment;
-    cResult[1] = tmp7;
-    let tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== attachment.filename) {
-    const filename = attachment.filename;
-    const startsWithResult = filename.startsWith(closure_7);
-    cResult[2] = attachment.filename;
-    cResult[3] = startsWithResult;
-    let tmp8 = startsWithResult;
-  } else {
-    tmp8 = cResult[3];
-  }
-  let str = attachment.description;
-  if (str == null) {
-    str = "";
-  }
-  let obj2 = require("useBottomSheetRef");
-  value = first1(first2.useState(str), 2)[0];
-  if (cResult[4] === attachment.flags) {
-    if (cResult[5] === tmp8) {
-      let tmp15 = cResult[6];
-    }
-    const tmp11Result = tmp11(obj3.useState(tmp15), 2);
-    first1 = tmp11Result[0];
-    const tmp11Result3 = tmp11(obj3.useState(false), 2);
-    first2 = tmp11Result3[0];
-    closure_6 = tmp11Result3[1];
-    [tmp23, closure_7] = tmp11(obj3.useState(), 2);
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl = tmp(tmp2[12]).intl;
-      let stringResult = intl.string(tmp(tmp2[12]).t.Y8ujqr);
-      cResult[7] = stringResult;
-      let tmp25 = stringResult;
-    } else {
-      tmp25 = cResult[7];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function z() {
-        const intl = util.intl;
-        const stringResult = intl.string(util.t.fEptJP);
-        closure_1_7(stringResult);
-        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-        AccessibilityAnnouncer.announce(stringResult);
-      };
-      cResult[8] = fn;
-      let tmp27 = fn;
-    } else {
-      tmp27 = cResult[8];
-    }
-    MessageAttachmentFlags = tmp27;
-    if (cResult[9] === attachment.id) {
-      if (cResult[10] === bottomSheetClose) {
-        if (cResult[11] === value) {
-          if (cResult[12] === message) {
-            if (cResult[13] === first1) {
-              if (cResult[14] === first2) {
-                let tmp28 = cResult[15];
-              }
-              const _Symbol3 = Symbol;
-              if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl2 = tmp(tmp2[12]).intl;
-                const stringResult1 = intl2.string(tmp(tmp2[12]).t.Xvtztt);
-                cResult[16] = stringResult1;
-                let tmp30 = stringResult1;
-              } else {
-                tmp30 = cResult[16];
-              }
-              const _Symbol4 = Symbol;
-              if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-                let obj4 = { title: tmp25 };
-                const tmp34 = closure_9(tmp(tmp2[15]).BottomSheetTitleHeader, obj4);
-                cResult[17] = tmp34;
-                let tmp32 = tmp34;
-              } else {
-                tmp32 = cResult[17];
-              }
-              if (cResult[18] !== tmp5) {
-                let obj5 = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 };
-                const tmp37 = closure_9(tmp(tmp2[16]).Text, obj5);
-                cResult[18] = tmp5;
-                cResult[19] = tmp37;
-                let tmp35 = tmp37;
-              } else {
-                tmp35 = cResult[19];
-              }
-              const _Symbol5 = Symbol;
-              if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl3 = tmp(tmp2[12]).intl;
-                const stringResult2 = intl3.string(tmp(tmp2[12]).t.eOB2eR);
-                const intl4 = tmp(tmp2[12]).intl;
-                const stringResult3 = intl4.string(tmp(tmp2[12]).t.RNH1jn);
-                cResult[20] = stringResult2;
-                cResult[21] = stringResult3;
-                let tmp39 = stringResult3;
-                let tmp38 = stringResult2;
-              } else {
-                tmp38 = cResult[20];
-                tmp39 = cResult[21];
-              }
-              if (cResult[22] === value) {
-                if (cResult[23] === first2) {
-                  let tmp42 = cResult[24];
-                }
-                const _Symbol6 = Symbol;
-                if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl5 = tmp(tmp2[12]).intl;
-                  const stringResult4 = intl5.string(tmp(tmp2[12]).t["gsI+xC"]);
-                  cResult[25] = stringResult4;
-                  let tmp45 = stringResult4;
-                } else {
-                  tmp45 = cResult[25];
-                }
-                let tmp47 = first2;
-                if (!first2) {
-                  tmp47 = tmp8;
-                }
-                if (cResult[26] === first1) {
-                  if (cResult[27] === tmp47) {
-                    let tmp48 = cResult[28];
-                  }
-                  if (cResult[29] !== tmp23) {
-                    let tmp52 = null;
-                    if (null != tmp23) {
-                      const obj6 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp23 };
-                      tmp52 = closure_9(tmp(tmp2[16]).Text, obj6);
-                    }
-                    cResult[29] = tmp23;
-                    cResult[30] = tmp52;
-                    let tmp51 = tmp52;
-                  } else {
-                    tmp51 = cResult[30];
-                  }
-                  const _Symbol7 = Symbol;
-                  if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl6 = tmp(tmp2[12]).intl;
-                    const stringResult5 = intl6.string(tmp(tmp2[12]).t["TY+auE"]);
-                    cResult[31] = stringResult5;
-                    let tmp54 = stringResult5;
-                  } else {
-                    tmp54 = cResult[31];
-                  }
-                  if (cResult[32] === tmp28) {
-                    if (cResult[33] === first2) {
-                      let tmp56 = cResult[34];
-                    }
-                    if (cResult[35] === tmp42) {
-                      if (cResult[36] === tmp48) {
-                        if (cResult[37] === tmp51) {
-                          if (cResult[38] === tmp56) {
-                            if (cResult[39] === tmp35) {
-                              let tmp59 = cResult[40];
-                            }
-                            if (cResult[41] === bottomSheetRef) {
-                              if (cResult[42] === tmp59) {
-                                let tmp63 = cResult[43];
-                              }
-                              return tmp63;
-                            }
-                            const obj7 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: null, header: null, children: null };
-                            const _HermesInternal = HermesInternal;
-                            obj7.dismissAccessibilityLabel = "" + tmp30 + ": " + tmp25;
-                            obj7.header = tmp32;
-                            obj7.children = tmp59;
-                            const tmp65 = closure_9(tmp(tmp2[22]).ActionSheet, obj7);
-                            cResult[41] = bottomSheetRef;
-                            cResult[42] = tmp59;
-                            cResult[43] = tmp65;
-                            tmp63 = tmp65;
-                          }
-                        }
-                      }
-                    }
-                    const obj8 = { spacing: attachment(tmp2[21]).space.PX_16, children: null };
-                    const items = [tmp35, tmp42, tmp48, tmp51, tmp56];
-                    obj8.children = items;
-                    const tmp62 = closure_10(tmp(tmp2[20]).Stack, obj8);
-                    cResult[35] = tmp42;
-                    cResult[36] = tmp48;
-                    cResult[37] = tmp51;
-                    cResult[38] = tmp56;
-                    cResult[39] = tmp35;
-                    cResult[40] = tmp62;
-                    tmp59 = tmp62;
-                  }
-                  const obj9 = { variant: "primary", text: tmp54, onPress: tmp28, loading: first2, disabled: first2 };
-                  const tmp58 = closure_9(tmp(tmp2[19]).Button, obj9);
-                  cResult[32] = tmp28;
-                  cResult[33] = first2;
-                  cResult[34] = tmp58;
-                  tmp56 = tmp58;
-                }
-                const obj10 = { start: true, end: true, label: tmp45, checked: first1, onPress: tmp11Result[1], disabled: tmp47 };
-                const tmp50 = closure_9(tmp(tmp2[18]).TableCheckboxRow, obj10);
-                cResult[26] = first1;
-                cResult[27] = tmp47;
-                cResult[28] = tmp50;
-                tmp48 = tmp50;
-              }
-              const obj11 = { label: tmp38, placeholder: tmp39, value, onChange: tmp14, disabled: first2 };
-              const tmp44 = closure_9(tmp(tmp2[17]).TextArea, obj11);
-              cResult[22] = value;
-              cResult[23] = first2;
-              cResult[24] = tmp44;
-              tmp42 = tmp44;
-            }
-          }
-        }
-      }
-    }
-    _require = value(function*(arg0, value) {
-      if (c3 === 2) {
-        c3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else if (!first2) {
-              message = message.getMessage(tmp3.channel_id, tmp3.id);
-              if (null != message) {
-                const attachments = message.attachments;
-                if (attachments.some((id) => id.id === user.id)) {
-                  const attachments1 = message.attachments;
-                  const mapped = attachments1.map((id) => {
-                    id = id.id;
-                    if (id === user.id) {
-                      const obj2 = { id, description, is_spoiler };
-                      let obj = obj2;
-                    } else {
-                      obj = { id };
-                    }
-                    return obj;
-                  });
-                  message(true);
-                  closure_1_7(undefined);
-                  let v0 = 1;
-                  c1 = 2;
-                  c3 = 1;
-                  const obj5 = { value: attachment(bottomSheetClose[14]).patchMessageAttachments(message.channel_id, message.id, mapped), done: false };
-                  return obj5;
-                }
-              }
-              closure_1_8();
-            }
-          } else {
-            if (1 === tmp7) {
-              v0 = 0;
-              closure_1_8();
-              message(false);
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              v0();
-              v0 = 0;
-            }
-            v0 = 0;
-            c3 = 3;
-            let obj = { value, done: true };
-            return obj;
-          }
-          c3 = 3;
-        } catch (tmp28) {
-          if (tmp4 === v0) {
-            c3 = tmp2;
-            throw tmp28;
-          } else {
-            c1 = tmp;
-          }
-        }
-      }
-    });
-    function handleSave() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    }
-    cResult[9] = attachment.id;
-    cResult[10] = bottomSheetClose;
-    cResult[11] = value;
-    cResult[12] = message;
-    cResult[13] = first1;
-    cResult[14] = first2;
-    cResult[15] = handleSave;
-    tmp28 = handleSave;
-    const tmp11Result4 = tmp11(obj3.useState(), 2);
-  }
-  let hasFlagResult = tmp8;
-  if (!tmp8) {
-    let num5 = attachment.flags;
-    if (num5 == null) {
-      num5 = 0;
-    }
-    hasFlagResult = tmp(tmp2[11]).hasFlag(num5, MessageAttachmentFlags.IS_SPOILER);
-    const tmpResult = tmp(tmp2[11]);
-  }
-  cResult[4] = attachment.flags;
-  cResult[5] = tmp8;
-  cResult[6] = hasFlagResult;
-  tmp15 = hasFlagResult;
-}) : ((arg0) => {
+export default function EditAttachmentActionSheet(arg0) {
   ({ message: require, attachment } = arg0);
   dependencyMap = undefined;
   value = undefined;
@@ -381,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(stringResult);
   }
-  closure_9 = async function _handleSave2(BottomSheetTitleHeader, value) {
+  closure_9 = async function _handleSave(BottomSheetTitleHeader, value) {
     if (c3 === 2) {
       c3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -392,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -428,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                   _undefined = 1;
                   v2 = 2;
                   c3 = 1;
-                  const obj5 = { value: v2(_undefined[14]).patchMessageAttachments(message.channel_id, message.id, mapped), done: false };
+                  const obj5 = { value: v2(_undefined[12]).patchMessageAttachments(message.channel_id, message.id, mapped), done: false };
                   return obj5;
                 }
               }
@@ -480,35 +142,35 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     if (num == null) {
       num = 0;
     }
-    hasFlagResult = tmp(1389).hasFlag(num, showError.IS_SPOILER);
-    const tmpResult = tmp(1389);
+    hasFlagResult = tmp(1385).hasFlag(num, showError.IS_SPOILER);
+    const tmpResult = tmp(1385);
   }
   const tmp7Result = first1(first2.useState(hasFlagResult), 2);
   first1 = tmp7Result[0];
   const tmp7Result3 = first1(first2.useState(false), 2);
   first2 = tmp7Result3[0];
   closure_6 = tmp7Result3[1];
-  const tmp5 = attachment(8574)(attachment);
+  const tmp5 = attachment(8569)(attachment);
   [tmp17, c7] = first1(first2.useState(), 2);
-  let intl = tmp(1119).intl;
+  let intl = tmp(1115).intl;
   let stringResult = intl.string(util.t.Y8ujqr);
   let obj3 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: null, header: null, children: null };
-  const intl2 = tmp(1119).intl;
+  const intl2 = tmp(1115).intl;
   obj3.dismissAccessibilityLabel = "" + intl2.string(util.t.Xvtztt) + ": " + stringResult;
   obj3.header = closure_9(BottomSheetTitleHeader2.BottomSheetTitleHeader, { title: stringResult });
-  let obj4 = { spacing: tmp4(580).space.PX_16, children: null };
+  let obj4 = { spacing: tmp4(576).space.PX_16, children: null };
   const items = [closure_9(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 }), , , , ];
   let obj5 = { label: null, placeholder: null, value: null, onChange: null, disabled: null };
-  const intl3 = tmp(1119).intl;
+  const intl3 = tmp(1115).intl;
   obj5.label = intl3.string(util.t.eOB2eR);
-  const intl4 = tmp(1119).intl;
+  const intl4 = tmp(1115).intl;
   obj5.placeholder = intl4.string(util.t.RNH1jn);
   obj5.value = value;
   obj5.onChange = tmp8[1];
   obj5.disabled = first2;
   items[1] = closure_9(TextArea.TextArea, obj5);
   const obj6 = { start: true, end: true, label: null, checked: null, onPress: null, disabled: null };
-  const intl5 = tmp(1119).intl;
+  const intl5 = tmp(1115).intl;
   obj6.label = intl5.string(util.t["gsI+xC"]);
   obj6.checked = first1;
   obj6.onPress = tmp7Result[1];
@@ -521,11 +183,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let tmp19Result = null;
   if (null != tmp17) {
     const obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp17 };
-    tmp19Result = tmp19(tmp(4786).Text, obj7);
+    tmp19Result = tmp19(tmp(4784).Text, obj7);
   }
   items[3] = tmp19Result;
   const obj8 = { variant: "primary", text: null, onPress: null, loading: null, disabled: null };
-  const intl6 = tmp(1119).intl;
+  const intl6 = tmp(1115).intl;
   obj8.text = intl6.string(util.t["TY+auE"]);
   obj8.onPress = function handleSave() {
     const self = this;
@@ -543,4 +205,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   obj4.children = items;
   obj3.children = closure_10(Stack_Stack.Stack, obj4);
   return closure_9(ActionSheet.ActionSheet, obj3);
-});
+};

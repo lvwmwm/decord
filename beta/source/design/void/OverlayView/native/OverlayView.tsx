@@ -1,71 +1,31 @@
-// Module ID: 5149
-// Function ID: 5150
+// Module ID: 5147
+// Function ID: 5148
 // Name: OverlayView
-// Dependencies: [109, 19, 17, 21, 1368, 5150, 558, 568, 5199, 2]
+// Dependencies: [19, 17, 21, 1364, 5148, 5197, 2]
+// Exports: TransitionGroupOverlayView
 
-// Module 5149 (OverlayView)
-import c from "c" /* 568 */;
-import _modDef5199 from "module_5199" /* 5199 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 5147 (OverlayView)
+import _modDef5197 from "module_5197" /* 5197 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
-let closure_2 = ["children"];
 get_ActivityIndicator = fn(17);
 let View = get_ActivityIndicator.View;
 const StyleSheet = get_ActivityIndicator.StyleSheet;
 const jsx = fn(21).jsx;
-let PlatformUtils = fn(1368);
+let PlatformUtils = fn(1364);
 let FullWindowOverlay = View;
 if (PlatformUtils.isIOS()) {
-  FullWindowOverlay = fn(5150).FullWindowOverlay;
+  FullWindowOverlay = fn(5148).FullWindowOverlay;
 }
-const ReactCompilerGating = fn(558);
-PlatformUtils = fn(1368);
+PlatformUtils = fn(1364);
 if (PlatformUtils.isIOS()) {
-  View = _modDef5199;
+  View = _modDef5197;
 }
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/OverlayView/native/OverlayView.tsx");
 
 export default FullWindowOverlay;
-export const TransitionGroupOverlayView = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
-  const cResult = c.c(6);
-  if (cResult[0] !== children) {
-    children = children.children;
-    const tmp5 = _objectWithoutProperties(children, closure_2);
-    cResult[0] = children;
-    cResult[1] = children;
-    cResult[2] = tmp5;
-    let tmp2 = tmp5;
-    let arr = children;
-  } else {
-    arr = cResult[1];
-    tmp2 = cResult[2];
-  }
-  if (cResult[3] === arr) {
-    if (cResult[4] === tmp2) {
-      let tmp6 = cResult[5];
-    }
-    return tmp6;
-  }
-  let tmp7 = null;
-  if (Array.isArray(arr)) {
-    tmp7 = null;
-    if (arr.length > 0) {
-      const obj2 = { style: StyleSheet.absoluteFill, children: null };
-      const obj3 = {};
-      const merged = Object.assign(tmp2);
-      obj3.children = arr;
-      obj2.children = <View />;
-      tmp7 = <FullWindowOverlay style={StyleSheet.absoluteFill}>{null}</FullWindowOverlay>;
-    }
-  }
-  cResult[3] = arr;
-  cResult[4] = tmp2;
-  cResult[5] = tmp7;
-  tmp6 = tmp7;
-}) : ((children) => {
+export const TransitionGroupOverlayView = function TransitionGroupOverlayView(children) {
   children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0 }));
   let tmp2 = null;
@@ -81,5 +41,5 @@ export const TransitionGroupOverlayView = ReactCompilerGating.isReactCompilerEna
     }
   }
   return tmp2;
-});
+};
 export const NonExpandingOverlayView = View;

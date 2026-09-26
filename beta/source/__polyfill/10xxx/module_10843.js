@@ -1,141 +1,44 @@
 // Module ID: 10843
 // Function ID: 10844
-// Dependencies: [10760, 10767, 10769, 10793, 10844, 10846, 10847, 10848, 10849, 10850, 10851, 10800]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: []
+// Exports: zhStringToNumber, zhStringToYear
 
 // Module 10843
-import _mod10793 from "module_10793" /* 10793 */;
-import includeCommonConfiguration from "includeCommonConfiguration" /* 10800 */;
-import _mod10844 from "module_10844" /* 10844 */;
-import _mod10846 from "module_10846" /* 10846 */;
-import _mod10847 from "module_10847" /* 10847 */;
-import _mod10848 from "module_10848" /* 10848 */;
-import _mod10849 from "module_10849" /* 10849 */;
-import _mod10850 from "module_10850" /* 10850 */;
-import _mod10851 from "module_10851" /* 10851 */;
+const exports = arg5;
 
-const require = globalThis.__r;
-
-function createConfiguration(flag, arg1) {
-  if (flag === undefined) {
-    flag = true;
-  }
-  let flag2 = arg1;
-  if (arg1 === undefined) {
-    flag2 = true;
-  }
-  const obj = { parsers: null, refiners: null };
-  const items = [new regExp.default(flag2), , , ];
-  const _default = new regExp.default(flag2);
-  items[1] = new _isNativeReflectConstruct.default();
-  const _default1 = new _isNativeReflectConstruct.default();
-  items[2] = new _isNativeReflectConstruct.default();
-  const _default2 = new _isNativeReflectConstruct.default();
-  items[3] = new _isNativeReflectConstruct.default();
-  obj.parsers = items;
-  const _default3 = new _isNativeReflectConstruct.default();
-  const items1 = [new _isNativeReflectConstruct.default(), ];
-  const _default4 = new _isNativeReflectConstruct.default();
-  items1[1] = new _isNativeReflectConstruct.default();
-  obj.refiners = items1;
-  return includeCommonConfiguration.includeCommonConfiguration(obj, flag);
-}
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: __esModule };
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
+export const zhStringToNumber = function zhStringToNumber(arg0) {
+  let num = 0;
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < arg0.length) {
+    while ("\u5341" !== arg0[num]) {
+      let sum = num2 + exports.NUMBER[tmp];
+      num = num + 1;
+      num2 = sum;
+      num3 = sum;
     }
-    return tmp;
-  };
-}
-function createCasualConfiguration() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
+    if (0 === num2) {
+      let result = exports.NUMBER[tmp];
+    } else {
+      result = num2 * exports.NUMBER[tmp];
+    }
   }
-  const tmp = createConfiguration(false, flag);
-  const parsers = tmp.parsers;
-  parsers.push(new _isNativeReflectConstruct.default());
-  const parsers1 = tmp.parsers;
-  const _default = new _isNativeReflectConstruct.default();
-  parsers1.push(new _isNativeReflectConstruct.default());
-  return tmp;
-}
-const regExp = fn(_mod10793);
-fn(_mod10844);
-fn(_mod10846);
-fn(_mod10847);
-fn(_mod10848);
-fn(_mod10849);
-fn(_mod10850);
-const _isNativeReflectConstruct = fn(_mod10851);
-const configuration = createConfiguration(false, true);
-let parsers = configuration.parsers;
-parsers.push(new _isNativeReflectConstruct.default());
-let parsers1 = configuration.parsers;
-let _default = new _isNativeReflectConstruct.default();
-let obj = {
-  enumerable: true,
-  get() {
-    return require("module_10760").Chrono;
+  return num3;
+};
+export const zhStringToYear = function zhStringToYear(arg0) {
+  let length;
+  let num = 0;
+  let str = "";
+  let str2 = "";
+  if (0 < arg0.length) {
+    do {
+      str = `${exports.NUMBER[arg0[num]]}`;
+      num = num + 1;
+      str2 = str;
+      length = arg0.length;
+    } while (num < length);
   }
+  return parseInt(str2);
 };
-const obj2 = {
-  enumerable: true,
-  get() {
-    return require("ReferenceWithTimezone").ParsingResult;
-  }
-};
-const obj3 = {
-  enumerable: true,
-  get() {
-    return require("ReferenceWithTimezone").ParsingComponents;
-  }
-};
-const obj4 = {
-  enumerable: true,
-  get() {
-    return require("ReferenceWithTimezone").ReferenceWithTimezone;
-  }
-};
-const obj5 = {
-  enumerable: true,
-  get() {
-    return require("Meridiem").Meridiem;
-  }
-};
-const obj6 = {
-  enumerable: true,
-  get() {
-    return require("Meridiem").Weekday;
-  }
-};
-parsers1.push(new _isNativeReflectConstruct.default());
-const chrono = new require("module_10760").Chrono(configuration);
-const chrono1 = new require("module_10760").Chrono(createConfiguration(true));
-
-export const parse = function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-};
-export const parseDate = function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-};
-export { createCasualConfiguration };
-export { createConfiguration };
-export const Chrono = require("module_10760").Chrono;
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export const NUMBER = { "零": 0, "一": 1, "二": 2, "兩": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9, "十": 10, "廿": 20, "卅": 30 };
+export const WEEKDAY_OFFSET = { "天": 0, "日": 0, "一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6 };

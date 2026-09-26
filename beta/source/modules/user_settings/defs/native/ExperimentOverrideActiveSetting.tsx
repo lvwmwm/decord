@@ -1,105 +1,39 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 16059
+// Function ID: 16060
 // Name: ExperimentOverrideActiveSetting
-// Dependencies: [4706, 1239, 21, 14885, 558, 568, 504, 16056, 15119, 11630, 15862, 2]
+// Dependencies: [4703, 1235, 21, 14889, 504, 16060, 15123, 11754, 15866, 2]
 
-// Module 16055 (ExperimentOverrideActiveSetting)
+// Module 16059 (ExperimentOverrideActiveSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14885 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15119 */;
-import DevToolsContent from "DevToolsContent" /* 16056 */;
-import ExperimentStore from "ExperimentStore" /* 4706 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14889 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15123 */;
+import DevToolsContent from "DevToolsContent" /* 16060 */;
+import ExperimentStore from "ExperimentStore" /* 4703 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-let ReactCompilerGating = fn(558);
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ExperimentStore];
-    const fn = function o() {
-      return Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ApexExperimentStore];
-    const fn2 = function u() {
-      return Object.keys(clientOverrides.getClientOverrides()).length;
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    let tmp9 = fn2;
-    let tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = initialize;
-  return stateFromStores + initialize.useStateFromStores(tmp8, tmp9);
-}) : (() => {
-  const items = [ExperimentStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
-  const items1 = [ApexExperimentStore];
-  return stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length);
-});
-fn(558);
-ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  const str = closure_5();
-  if (cResult[0] !== str) {
-    const str1 = str.toString();
-    cResult[0] = str;
-    cResult[1] = str1;
-    let tmp4 = str1;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] !== tmp4) {
-    const obj2 = { label: "Experiments overridden: ", value: tmp4 };
-    const tmp8 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: tmp4 });
-    cResult[2] = tmp4;
-    cResult[3] = tmp8;
-    let tmp6 = tmp8;
-  } else {
-    tmp6 = cResult[3];
-  }
-  return tmp6;
-}) : (() => {
-  const str = closure_5();
-  return jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: closure_5().toString() });
-});
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-  return closure_5() > 0 && staffOrDeveloperSettingPredicate;
-}) : (() => {
-  const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-  return closure_5() > 0 && staffOrDeveloperSettingPredicate;
-});
+const SettingBuilders = fn(11754);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "Experiments Overrides Active";
   },
   parent: null,
-  IconComponent: fn(15862).BeakerIcon,
-  useDescription: tmp2,
-  usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  IconComponent: fn(15866).BeakerIcon,
+  useDescription: function useExperimentOverrideActiveDescription() {
+    const items = [ExperimentStore];
+    const stateFromStores = initialize.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
+    const items1 = [ApexExperimentStore];
+    const str = stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length);
+    return jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length).toString() });
+  },
+  usePredicate: function useHasExperimentOverrideActive() {
     const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-    return closure_5() > 0 && staffOrDeveloperSettingPredicate;
-  }) : (() => {
-    const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-    return closure_5() > 0 && staffOrDeveloperSettingPredicate;
-  }),
+    const items = [ExperimentStore];
+    const stateFromStores = initialize.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
+    const items1 = [ApexExperimentStore];
+    return stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length) > 0 && staffOrDeveloperSettingPredicate;
+  },
   onPress: function handleExperimentOverrideActivePress() {
     DevToolsNavigator.navigateToDevTools({ screenKey: "experiments" });
   },

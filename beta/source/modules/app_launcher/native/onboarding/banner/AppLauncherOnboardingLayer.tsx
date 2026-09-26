@@ -1,63 +1,25 @@
-// Module ID: 12213
-// Function ID: 12214
+// Module ID: 12329
+// Function ID: 12330
 // Name: AppLauncherOnboardingLayer
-// Dependencies: [19, 17, 9682, 21, 4790, 580, 558, 568, 12214, 2]
+// Dependencies: [19, 17, 9686, 21, 4788, 576, 12330, 2]
 
-// Module 12213 (AppLauncherOnboardingLayer)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import AppLauncherOnboardingBannerDefault from "AppLauncherOnboardingBanner" /* 12214 */;
+// Module 12329 (AppLauncherOnboardingLayer)
+import nativeDefault from "native" /* 576 */;
+import AppLauncherOnboardingBannerDefault from "AppLauncherOnboardingBanner" /* 12330 */;
 import noop from "module_19" /* 19 */;
 
-require = fn;
 const View = fn(17).View;
-let closure_4 = fn(9682).useBestActiveChatInputContainerHeight;
+let closure_3 = fn(9686).useBestActiveChatInputContainerHeight;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { container: null };
 const rect = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 obj.container = rect;
-let closure_6 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
+let closure_5 = createStyles.createStyles(obj);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(6);
-  ({ context, visibleContent, bottomOffset } = arg0);
-  const tmp3 = closure_6();
-  const tmp4 = closure_4();
-  if (cResult[0] === bottomOffset) {
-    if (cResult[1] === tmp4) {
-      if (cResult[2] === context) {
-        if (cResult[3] === tmp3) {
-          if (cResult[4] === visibleContent) {
-            let tmp5 = cResult[5];
-          }
-          return tmp5;
-        }
-      }
-    }
-  }
-  let tmp6 = null;
-  if (null != visibleContent) {
-    const obj2 = { style: null, children: null };
-    const items = [tmp3.container, ];
-    const obj3 = { bottom: tmp4 + bottomOffset };
-    items[1] = obj3;
-    obj2.style = items;
-    const obj4 = { context, visibleContent };
-    obj2.children = jsx(AppLauncherOnboardingBannerDefault, { context, visibleContent });
-    tmp6 = <View style={null}>{null}</View>;
-  }
-  cResult[0] = bottomOffset;
-  cResult[1] = tmp4;
-  cResult[2] = context;
-  cResult[3] = tmp3;
-  cResult[4] = visibleContent;
-  cResult[5] = tmp6;
-  tmp5 = tmp6;
-}) : ((visibleContent) => {
+export default noop.memo((visibleContent) => {
   visibleContent = visibleContent.visibleContent;
   ({ context, bottomOffset } = visibleContent);
   let tmp3 = null;
@@ -72,4 +34,4 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     tmp3 = <View style={null}>{null}</View>;
   }
   return tmp3;
-}));
+});

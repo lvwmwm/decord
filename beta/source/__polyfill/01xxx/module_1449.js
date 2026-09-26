@@ -1,16 +1,11 @@
 // Module ID: 1449
 // Function ID: 1450
-// Dependencies: [1290]
+// Dependencies: [1450]
 
 // Module 1449
-import _mod1290 from "module_1290" /* 1290 */;
+import _mod1450 from "module_1450" /* 1450 */;
 
 
-export default function hasToStringTagShams() {
-  let toStringTag = _mod1290();
-  if (toStringTag) {
-    const _Symbol = Symbol;
-    toStringTag = Symbol.toStringTag;
-  }
-  return toStringTag;
+export default function isTypedArray(arg0) {
+  return _mod1450(arg0);
 };

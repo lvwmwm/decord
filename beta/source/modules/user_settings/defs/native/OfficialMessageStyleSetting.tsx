@@ -1,101 +1,60 @@
-// Module ID: 15603
-// Function ID: 15604
+// Module ID: 15607
+// Function ID: 15608
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 4782, 8270, 558, 568, 504, 14758, 1119, 11630, 2]
-// Exports: onOfficialMessageStyleSettingValueChange
+// Dependencies: [19, 4780, 8265, 504, 14748, 1115, 11754, 2]
+// Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 15603 (OfficialMessageStyleSetting)
+// Module 15607 (OfficialMessageStyleSetting)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14758 */;
+import util from "util" /* 1115 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14748 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
 require = fn;
-let ReactCompilerGating = fn(558);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function n() {
-      return officialMessageStyle.officialMessageStyle;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+function useOfficialMessageStyleSettingValue() {
   const items = [AccessibilityStore];
   return initialize.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
-});
-ReactCompilerGating = fn(558);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { label: null, value: "default" };
-    const intl = tmp(1119).intl;
-    obj2.label = intl.string(tmp(1119).t.ERaS6f);
-    const items = [obj2, , , ];
-    const obj3 = { label: null, value: "no_text_color" };
-    const intl2 = tmp(1119).intl;
-    obj3.label = intl2.string(tmp(1119).t.JKfipk);
-    items[1] = obj3;
-    const obj4 = { label: null, value: "no_gradient" };
-    const intl3 = tmp(1119).intl;
-    obj4.label = intl3.string(tmp(1119).t.O2vBoY);
-    items[2] = obj4;
-    const obj5 = { label: null, value: "hidden" };
-    const intl4 = tmp(1119).intl;
-    obj5.label = intl4.string(tmp(1119).t["+loyQl"]);
-    items[3] = obj5;
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => noop.useMemo(() => {
-  const obj = { label: null, value: "default" };
-  const intl = util.intl;
-  obj.label = intl.string(util.t.ERaS6f);
-  const items = [obj, , , ];
-  const obj2 = { label: null, value: "no_text_color" };
-  const intl2 = util.intl;
-  obj2.label = intl2.string(util.t.JKfipk);
-  items[1] = obj2;
-  const obj3 = { label: null, value: "no_gradient" };
-  const intl3 = util.intl;
-  obj3.label = intl3.string(util.t.O2vBoY);
-  items[2] = obj3;
-  const obj4 = { label: null, value: "hidden" };
-  const intl4 = util.intl;
-  obj4.label = intl4.string(util.t["+loyQl"]);
-  items[3] = obj4;
-  return items;
-}, []));
+}
 function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
   const result = AccessibilityActionCreators.setOfficialMessageStyle(officialMessageStyle);
 }
-const SettingBuilders = fn(11630);
+function useOfficialMessageStyleSettingOptions() {
+  return noop.useMemo(() => {
+    const obj = { label: null, value: "default" };
+    const intl = util.intl;
+    obj.label = intl.string(util.t.ERaS6f);
+    const items = [obj, , , ];
+    const obj2 = { label: null, value: "no_text_color" };
+    const intl2 = util.intl;
+    obj2.label = intl2.string(util.t.JKfipk);
+    items[1] = obj2;
+    const obj3 = { label: null, value: "no_gradient" };
+    const intl3 = util.intl;
+    obj3.label = intl3.string(util.t.O2vBoY);
+    items[2] = obj3;
+    const obj4 = { label: null, value: "hidden" };
+    const intl4 = util.intl;
+    obj4.label = intl4.string(util.t["+loyQl"]);
+    items[3] = obj4;
+    return items;
+  }, []);
+}
+const SettingBuilders = fn(11754);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.nC2XBl);
   },
-  parent: fn(8270).MobileUserSettings.ACCESSIBILITY,
-  useValue: tmp2,
+  parent: fn(8265).MobileUserSettings.ACCESSIBILITY,
+  useValue: useOfficialMessageStyleSettingValue,
   onValueChange: onOfficialMessageStyleSettingValueChange,
-  useOptions: tmp3
+  useOptions: useOfficialMessageStyleSettingOptions
 });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/OfficialMessageStyleSetting.tsx");
 
 export default radio;
-export const useOfficialMessageStyleSettingValue = tmp2;
+export { useOfficialMessageStyleSettingValue };
 export { onOfficialMessageStyleSettingValueChange };
-export const useOfficialMessageStyleSettingOptions = tmp3;
+export { useOfficialMessageStyleSettingOptions };

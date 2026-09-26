@@ -1,18 +1,18 @@
-// Module ID: 17791
-// Function ID: 17792
+// Module ID: 17782
+// Function ID: 17783
 // Name: GuildOnboardingManager
-// Dependencies: [2109, 2067, 4612, 1078, 4418, 7397, 7374, 1389, 2]
+// Dependencies: [2105, 2063, 4609, 1074, 4414, 7395, 7372, 1385, 2]
 
-// Module 17791 (GuildOnboardingManager)
-import doGuildOnboardingDefault from "doGuildOnboarding" /* 7374 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 17782 (GuildOnboardingManager)
+import doGuildOnboardingDefault from "doGuildOnboarding" /* 7372 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 let require = fn;
-const GuildFeatures = fn(1078).GuildFeatures;
-const GuildMemberFlags = fn(4418).GuildMemberFlags;
+const GuildFeatures = fn(1074).GuildFeatures;
+const GuildMemberFlags = fn(4414).GuildMemberFlags;
 let guildId = null;
 const channelId = null;
 const prototype = function GuildOnboardingManager() {
@@ -59,7 +59,7 @@ const prototype = function GuildOnboardingManager() {
     }
   };
   applyArgumentsResult.handleGuildDelete = function handleGuildDelete(guild) {
-    const result = applyArgumentsResult(7374).discardOnboardingPromise(guild.guild.id);
+    const result = applyArgumentsResult(7372).discardOnboardingPromise(guild.guild.id);
   };
   applyArgumentsResult._openOnboardingIfIncomplete = function _openOnboardingIfIncomplete(guildId) {
     guild = guild.getGuild(guildId);
@@ -73,16 +73,16 @@ const prototype = function GuildOnboardingManager() {
           if (num == null) {
             num = 0;
           }
-          hasFlagResult = !applyArgumentsResult(1389).hasFlag(num, constants2.COMPLETED_ONBOARDING);
-          const obj = applyArgumentsResult(1389);
+          hasFlagResult = !applyArgumentsResult(1385).hasFlag(num, constants2.COMPLETED_ONBOARDING);
+          const obj = applyArgumentsResult(1385);
         }
         if (hasFlagResult) {
           let num2 = selfMember.flags;
           if (num2 == null) {
             num2 = 0;
           }
-          hasFlagResult = applyArgumentsResult(1389).hasFlag(num2, constants2.STARTED_ONBOARDING);
-          const obj2 = applyArgumentsResult(1389);
+          hasFlagResult = applyArgumentsResult(1385).hasFlag(num2, constants2.STARTED_ONBOARDING);
+          const obj2 = applyArgumentsResult(1385);
         }
         if (hasFlagResult) {
           const obj3 = { guildId };

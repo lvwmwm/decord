@@ -1,44 +1,22 @@
-// Module ID: 10392
-// Function ID: 10393
+// Module ID: 11653
+// Function ID: 11654
 // Name: ChatViewWrapperBase
-// Dependencies: [19, 21, 558, 568, 10390, 7435, 10391, 2]
+// Dependencies: [19, 21, 11651, 7433, 11652, 2]
+// Exports: default
 
-// Module 10392 (ChatViewWrapperBase)
-import c from "c" /* 568 */;
-import LayerScope from "LayerScope" /* 7435 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10390 */;
-import StickyWrapper from "StickyWrapper" /* 10391 */;
+// Module 11653 (ChatViewWrapperBase)
+import LayerScope from "LayerScope" /* 7433 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 11651 */;
+import StickyWrapper from "StickyWrapper" /* 11652 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/native/ChatViewWrapperBase.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  const cResult = c.c(5);
-  ({ children, stickyHeader, style } = channelId);
-  const tmp4 = useChatViewPointerEventsDefault(channelId.channelId);
-  if (cResult[0] === children) {
-    if (cResult[1] === tmp4) {
-      if (cResult[2] === stickyHeader) {
-        if (cResult[3] === style) {
-          let tmp5 = cResult[4];
-        }
-        return tmp5;
-      }
-    }
-  }
-  const tmp6 = jsx(LayerScope.LayerScope, { children: jsx(StickyWrapper.StickyWrapper, { header: stickyHeader, style, pointerEvents: tmp4, children }) });
-  cResult[0] = children;
-  cResult[1] = tmp4;
-  cResult[2] = stickyHeader;
-  cResult[3] = style;
-  cResult[4] = tmp6;
-  tmp5 = tmp6;
-}) : ((arg0) => {
+export default function ChatViewWrapperBase(arg0) {
   ({ channelId, children, stickyHeader, style } = arg0);
   const tmp = useChatViewPointerEventsDefault(channelId);
   return jsx(LayerScope.LayerScope, { children: jsx(StickyWrapper.StickyWrapper, { header: stickyHeader, style, pointerEvents: useChatViewPointerEventsDefault(channelId), children }) });
-});
+};

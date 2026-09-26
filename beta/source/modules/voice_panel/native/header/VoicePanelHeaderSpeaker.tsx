@@ -1,533 +1,80 @@
-// Module ID: 17548
-// Function ID: 17549
+// Module ID: 17587
+// Function ID: 17588
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 17549, 4807, 17550, 9915, 2045, 4808, 1078, 21, 558, 17552, 568, 17499, 9914, 10079, 10059, 565, 10077, 10058, 17556, 1368, 9944, 9916, 1119, 9941, 9943, 17557, 10060, 4611, 2031, 5836, 17479, 14443, 2]
+// Dependencies: [109, 19, 17, 17588, 4805, 17589, 9937, 2041, 4806, 1074, 21, 17591, 17564, 9936, 10100, 9801, 563, 10098, 10080, 17595, 1364, 9966, 9938, 1115, 9963, 9965, 17596, 10081, 4608, 2027, 5838, 17503, 14433, 2]
 
-// Module 17548 (VoicePanelHeaderSpeaker)
-import util from "util" /* 1119 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
-import NativeViewDefault from "NativeView" /* 5836 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9944 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 10060 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 10077 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17479 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17552 */;
+// Module 17587 (VoicePanelHeaderSpeaker)
+import util from "util" /* 1115 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4608 */;
+import NativeViewDefault from "NativeView" /* 5838 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 9966 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 10098 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17503 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17591 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4807 */;
-import StageChannelAudioStore from "StageChannelAudioStore" /* 17550 */;
-import AudioRouteStore from "AudioRouteStore" /* 9915 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SessionsStore from "SessionsStore" /* 4808 */;
+import GameConsoleStore from "GameConsoleStore" /* 4805 */;
+import StageChannelAudioStore from "StageChannelAudioStore" /* 17589 */;
+import AudioRouteStore from "AudioRouteStore" /* 9937 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SessionsStore from "SessionsStore" /* 4806 */;
 
 require = fn;
 let closure_3 = ["ref"];
-let closure_4 = ["ref"];
 const NativeModules = fn(17).NativeModules;
-const setVoiceUpsellDismissed = fn(17549).setVoiceUpsellDismissed;
-const PlatformTypes = fn(1078).PlatformTypes;
+const setVoiceUpsellDismissed = fn(17588).setVoiceUpsellDismissed;
+const PlatformTypes = fn(1074).PlatformTypes;
 const jsxProd = fn(21);
-({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = jsxProd);
-let closure_18 = [];
-let ReactCompilerGating = fn(558);
-let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
+let closure_17 = [];
+let closure_18 = noop.memo((arg0) => {
   ({ targetRef, canShowTooltip } = arg0);
   useSpeakerTooltipsDefault(targetRef, canShowTooltip);
   return null;
-}) : ((arg0) => {
-  ({ targetRef, canShowTooltip } = arg0);
-  useSpeakerTooltipsDefault(targetRef, canShowTooltip);
-  return null;
-}));
-ReactCompilerGating = fn(558);
+});
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderSpeaker.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConnectedToVoiceChannel) => {
-  let _loop = style;
-  const cResult = isConnectedToVoiceChannel(style[13]).c(48);
-  isConnectedToVoiceChannel = isConnectedToVoiceChannel.isConnectedToVoiceChannel;
-  const channelId = isConnectedToVoiceChannel.channelId;
-  style = isConnectedToVoiceChannel.style;
-  let num = channelId(style[14])();
-  let obj = isConnectedToVoiceChannel(style[13]);
-  const maskedSpeakerStates = isConnectedToVoiceChannel(style[15]).useMaskedSpeakerStates();
-  const toggleAudio = maskedSpeakerStates.toggleAudio;
-  const routeSource = maskedSpeakerStates.routeSource;
-  const isAudioRouteEnabled = maskedSpeakerStates.isAudioRouteEnabled;
-  let tmp5 = channelId(style[16])();
-  const tmp6 = channelId(style[17])();
-  closure_7 = tmp6;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [loading];
-    const fn = function _() {
-      return loading.getAwaitingRemoteSessionInfo();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp7 = items;
-    tmp8 = fn;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  let obj2 = isConnectedToVoiceChannel(style[15]);
-  const stateFromStores = isConnectedToVoiceChannel(_loop[18]).useStateFromStores(tmp7, tmp8);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [queueAudioSwap];
-    const fn2 = function x() {
-      return queueAudioSwap.getQueueAudioSwap();
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    let tmp12 = fn2;
-    let tmp11 = items1;
-  } else {
-    tmp11 = cResult[2];
-    tmp12 = cResult[3];
-  }
-  let tmpResult = isConnectedToVoiceChannel(_loop[18]);
-  const stateFromStores1 = isConnectedToVoiceChannel(_loop[18]).useStateFromStores(tmp11, tmp12);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [items4];
-    cResult[4] = items2;
-    let tmp15 = items2;
-  } else {
-    tmp15 = cResult[4];
-  }
-  let sessionId;
-  if (tmp6 != null) {
-    sessionId = tmp6.sessionId;
-  }
-  if (cResult[5] !== sessionId) {
-    let sessionId1;
-    if (tmp6 != null) {
-      sessionId1 = tmp6.sessionId;
-    }
-    const fn3 = function q() {
-      let str;
-      if (closure_7 != null) {
-        str = closure_7.sessionId;
-      }
-      if (str == null) {
-        str = "";
-      }
-      return SessionsStore.getSessionById(str);
-    };
-    cResult[5] = sessionId1;
-    cResult[6] = fn3;
-    let tmp18 = fn3;
-  } else {
-    tmp18 = cResult[6];
-  }
-  const tmpResult5 = isConnectedToVoiceChannel(_loop[18]);
-  const stateFromStores2 = isConnectedToVoiceChannel(_loop[18]).useStateFromStores(tmp15, tmp18);
-  loading = tmp21;
-  let type;
-  if (stateFromStores != null) {
-    type = stateFromStores.type;
-  }
-  if (type == null) {
-    let os;
-    if (stateFromStores2 != null) {
-      const clientInfo = stateFromStores2.clientInfo;
-      if (clientInfo != null) {
-        os = clientInfo.os;
-      }
-    }
-    type = os;
-  }
-  if (cResult[7] !== type) {
-    let tmp25 = null;
-    if (null != type) {
-      tmp25 = tmp3(_loop[19])(type);
-    }
-    cResult[7] = type;
-    cResult[8] = tmp25;
-    let tmp24 = tmp25;
-  } else {
-    tmp24 = cResult[8];
-  }
-  queueAudioSwap = tmp24;
-  const arr4 = channelId(_loop[20])();
-  const tmp27 = channelId(_loop[21])(channelId);
-  let tmp28 = tmp27.canConnect && !tmp27.isAtMaxCapacity;
-  if (tmp28) {
-    let tmp29 = isConnectedToVoiceChannel;
-    if (!isConnectedToVoiceChannel) {
-      tmp29 = tmp26;
-    }
-    tmp28 = tmp29;
-  }
-  const currentRouteType = tmp28;
-  if (cResult[9] === channelId) {
-    if (cResult[10] === isConnectedToVoiceChannel) {
-      if (cResult[11] === toggleAudio) {
-        let tmp30 = cResult[12];
-      }
-      const onPress = tmp30;
-      const _Symbol = Symbol;
-      if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        const items3 = [currentRouteType];
-        function oe() {
-          return currentRouteType.getCurrentRouteType();
-        }
-        cResult[13] = oe;
-        cResult[14] = items3;
-        let tmp32 = items3;
-        let tmp31 = oe;
-      } else {
-        tmp31 = cResult[13];
-        tmp32 = cResult[14];
-      }
-      const stateFromStores3 = tmp(_loop[18]).useStateFromStores(tmp32, tmp31);
-      const tmpResult7 = tmp(_loop[18]);
-      if (!tmpResult8.isAndroid()) {
-        if (0 !== arr4.length) {
-          if (cResult[15] === channelId) {
-            if (cResult[16] === arr4) {
-              if (cResult[17] === isConnectedToVoiceChannel) {
-                if (cResult[18] === tmp5) {
-                  if (cResult[19] === stateFromStores3) {
-                    items4 = cResult[20];
-                  }
-                }
-              }
-            }
-          }
-          items4 = [];
-          if (!tmp5) {
-            if (stateFromStores3 === tmp(_loop[24]).RouteTypes.SPEAKER) {
-              const _Symbol7 = Symbol;
-              if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                let intl = tmp(_loop[25]).intl;
-                const stringResult = intl.string(tmp(_loop[25]).t.gvQIzx);
-                cResult[21] = stringResult;
-                let num13 = stringResult;
-              } else {
-                num13 = cResult[21];
-              }
-              const _Symbol2 = Symbol;
-              if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-                let obj3 = {
-                  label: num13,
-                  iconSource: tmp3(_loop[26]),
-                  showIconFirst: false,
-                  action() {
-                                  const AudioRoutePicker = closure_7.AudioRoutePicker;
-                                  let toggleSpeakerResult;
-                                  if (AudioRoutePicker != null) {
-                                    toggleSpeakerResult = AudioRoutePicker.toggleSpeaker(false);
-                                  }
-                                  return toggleSpeakerResult;
-                                }
-                };
-                num13 = 22;
-                cResult[22] = obj3;
-                let tmp37 = obj3;
-              } else {
-                tmp37 = cResult[22];
-              }
-              items4.push(tmp37);
-            }
-          }
-          if (!tmp5) {
-            if (stateFromStores3 === tmp(_loop[24]).RouteTypes.RECEIVER) {
-              const _Symbol8 = Symbol;
-              if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-                let intl2 = tmp(_loop[25]).intl;
-                const stringResult1 = intl2.string(tmp(_loop[25]).t.wwTN1g);
-                cResult[23] = stringResult1;
-                let num15 = stringResult1;
-              } else {
-                num15 = cResult[23];
-              }
-              const _Symbol3 = Symbol;
-              if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                let obj4 = {
-                  label: num15,
-                  iconSource: tmp3(_loop[27]),
-                  showIconFirst: false,
-                  action() {
-                                  const AudioRoutePicker = closure_7.AudioRoutePicker;
-                                  let toggleSpeakerResult;
-                                  if (AudioRoutePicker != null) {
-                                    toggleSpeakerResult = AudioRoutePicker.toggleSpeaker(true);
-                                  }
-                                  return toggleSpeakerResult;
-                                }
-                };
-                num15 = 24;
-                cResult[24] = obj4;
-                let tmp40 = obj4;
-              } else {
-                tmp40 = cResult[24];
-              }
-              items4.push(tmp40);
-            }
-          }
-          const _Symbol4 = Symbol;
-          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl3 = tmp(_loop[25]).intl;
-            const stringResult2 = intl3.string(tmp(_loop[25]).t.dnI0AL);
-            cResult[25] = stringResult2;
-            let tmp42 = stringResult2;
-          } else {
-            tmp42 = cResult[25];
-          }
-          if (cResult[26] === channelId) {
-            if (cResult[27] === isConnectedToVoiceChannel) {
-              let tmp44 = cResult[28];
-            }
-            items4.push(tmp44);
-            _loop = function _loop(type) {
-              closure_0 = type;
-              if (type.type === ref.XBOX) {
-                let obj = { label: null, iconSource: null, showIconFirst: false, action: null };
-                const intl = isConnectedToVoiceChannel(style[25]).intl;
-                obj.label = intl.string(isConnectedToVoiceChannel(style[25]).t["qVE/VF"]);
-                obj.iconSource = channelId(style[19])(type.type);
-                obj.action = function action() {
-                  const channel = ChannelStore.getChannel(channelId);
-                  if (null != channel) {
-                    useOnConnectToConsole.onConnectToConsole(channel, closure_0);
-                  }
-                };
-                items4.push(obj);
-              }
-              if (type.type === ref.PLAYSTATION) {
-                const obj2 = { label: null, iconSource: null, showIconFirst: false, action: null };
-                const intl2 = isConnectedToVoiceChannel(style[25]).intl;
-                obj2.label = intl2.string(isConnectedToVoiceChannel(style[25]).t.vzfxmY);
-                obj2.iconSource = channelId(style[19])(type.type);
-                obj2.action = function action() {
-                  const channel = ChannelStore.getChannel(channelId);
-                  if (null != channel) {
-                    useOnConnectToConsole.onConnectToConsole(channel, closure_0);
-                  }
-                };
-                items4.push(obj2);
-              }
-            };
-            arr4[Symbol.iterator]();
-          }
-          let obj5 = {
-            label: tmp42,
-            iconSource: tmp3(_loop[28]),
-            showIconFirst: false,
-            action() {
-                      const result = showAudioOutputSelector.showAudioOutputSelector(channelId, isConnectedToVoiceChannel);
-                    }
-          };
-          cResult[26] = channelId;
-          cResult[27] = isConnectedToVoiceChannel;
-          cResult[28] = obj5;
-          tmp44 = obj5;
-        }
-        if (cResult[29] !== num) {
-          function pe() {
-            const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.DONUT_MOBILE_NUX);
-            setVoiceUpsellDismissed(true);
-            num.lock();
-          }
-          cResult[29] = num;
-          cResult[30] = pe;
-          let tmp48 = pe;
-        } else {
-          tmp48 = cResult[30];
-        }
-        const ref = isAudioRouteEnabled.useRef(null);
-        if (tmp28) {
-          if (cResult[31] === tmp21) {
-            if (cResult[32] === tmp24) {
-              if (cResult[33] === tmp30) {
-                if (cResult[34] === tmp48) {
-                  if (cResult[35] === tmp26) {
-                    if (cResult[36] === stateFromStores1) {
-                      if (cResult[37] === isAudioRouteEnabled) {
-                        if (cResult[38] === isConnectedToVoiceChannel) {
-                          if (cResult[39] === num.unlock) {
-                            if (cResult[40] === tmp35) {
-                              if (cResult[41] === routeSource) {
-                                if (cResult[42] === tmp28) {
-                                  if (cResult[43] === style) {
-                                    let tmp51 = cResult[44];
-                                    const _Symbol6 = Symbol;
-                                    if (cResult[45] !== Symbol.for("react.early_return_sentinel")) {
-                                      tmp51 = tmp52;
-                                    }
-                                    return tmp51;
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          const _Symbol5 = Symbol;
-          function renderButton(arg0) {
-            let tmp = arg0;
-            if (arg0 == null) {
-              const obj = { onPress, ref: "Array" };
-              tmp = obj;
-            }
-            const obj2 = { targetRef: ref, canShowTooltip: null };
-            let tmp9 = closure_11;
-            if (closure_11) {
-              tmp9 = isConnectedToVoiceChannel;
-            }
-            obj2.canShowTooltip = tmp9;
-            const items = [closure_2_15(closure_19, obj2), ];
-            const obj3 = { style, ref, children: null };
-            const tmp3 = _objectWithoutProperties(tmp, closure_3);
-            const tmp4 = constants;
-            const tmp5 = value2;
-            const obj4 = { ref: tmp.ref };
-            const tmp11 = NativeViewDefault;
-            const merged = Object.assign(tmp3);
-            obj4.disabled = stateFromStores1;
-            let str;
-            if (isConnectedToVoiceChannel) {
-              if (isAudioRouteEnabled) {
-                str = "primary-overlay";
-              }
-            }
-            obj4.overrideVariant = str;
-            obj4.loading = loading;
-            let tmp15 = closure_10;
-            if (closure_10 == null) {
-              tmp15 = routeSource;
-            }
-            const obj5 = { children: null };
-            obj4.icon = tmp15;
-            const intl = util.intl;
-            obj4.accessibilityLabel = intl.string(util.t.dnI0AL);
-            obj3.children = closure_2_15(VoicePanelIconButtonDefault, obj4);
-            items[1] = closure_2_15(tmp11, obj3);
-            obj5.children = items;
-            return tmp4(tmp5, obj5);
-          }
-          const forResult = Symbol.for("react.early_return_sentinel");
-          const tmp54 = isConnectedToVoiceChannel;
-          const tmp55 = style;
-          if (!obj11.isAndroid()) {
-            if (tmp26) {
-              if (cResult[46] !== isConnectedToVoiceChannel) {
-                const obj6 = { targetRef: ref, canShowTooltip: isConnectedToVoiceChannel };
-                const tmp59 = closure_15(closure_19, obj6);
-                cResult[46] = isConnectedToVoiceChannel;
-                cResult[47] = tmp59;
-                let tmp56 = tmp59;
-              } else {
-                tmp56 = cResult[47];
-              }
-              const obj7 = { children: null };
-              const items5 = [tmp56, ];
-              const obj8 = { menuItems: tmp35, position: "bottom", align: "end", onRequestOpen: tmp48, onRequestClose: num.unlock, children: renderButton };
-              items5[1] = closure_15(tmp54(tmp55[34]).MenuPopout, obj8);
-              obj7.children = items5;
-              let tmp63 = closure_17(closure_16, obj7);
-            }
-            cResult[31] = tmp21;
-            cResult[32] = tmp24;
-            cResult[33] = tmp30;
-            cResult[34] = tmp48;
-            cResult[35] = tmp26;
-            cResult[36] = stateFromStores1;
-            cResult[37] = isAudioRouteEnabled;
-            cResult[38] = isConnectedToVoiceChannel;
-            renderButton = num.unlock;
-            cResult[39] = renderButton;
-            cResult[40] = tmp35;
-            cResult[41] = routeSource;
-            cResult[42] = tmp28;
-            cResult[43] = style;
-            cResult[44] = renderButtonResult;
-            num = 45;
-            cResult[45] = tmp63;
-          }
-          renderButtonResult = renderButton();
-          tmp63 = forResult;
-          obj11 = isConnectedToVoiceChannel(style[22]);
-        } else {
-          return null;
-        }
-      }
-      tmpResult8 = tmp(_loop[22]);
-    }
-  }
-  class H {
-    constructor() {
-      tmp = closure_0;
-      tmp2 = closure_2;
-      obj = closure_0(closure_2[22]);
-      if (obj.isAndroid()) {
-        tmpResult = tmp(tmp2[23]);
-        tmp7 = channelId;
-        tmp8 = isConnectedToVoiceChannel;
-        result = tmpResult.showAudioOutputSelector(channelId, isConnectedToVoiceChannel);
-      } else {
-        tmp3 = toggleAudio;
-        tmp4 = channelId;
-        tmp5 = isConnectedToVoiceChannel;
-        tmp6 = toggleAudio(channelId, isConnectedToVoiceChannel);
-      }
-      return;
-    }
-  }
-  cResult[9] = channelId;
-  cResult[10] = isConnectedToVoiceChannel;
-  cResult[11] = toggleAudio;
-  cResult[12] = H;
-  tmp30 = H;
-}) : (function VoicePanelHeaderSpeaker(isConnectedToVoiceChannel) {
+export default noop.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChannel) {
   isConnectedToVoiceChannel = isConnectedToVoiceChannel.isConnectedToVoiceChannel;
   const channelId = isConnectedToVoiceChannel.channelId;
   const style = isConnectedToVoiceChannel.style;
-  c5 = undefined;
   noop = undefined;
-  let stateFromStores;
-  let disabled;
-  closure_13 = undefined;
-  closure_15 = undefined;
+  c6 = undefined;
+  closure_12 = undefined;
+  closure_14 = undefined;
   let onPress;
   let stateFromStores2;
   let ref;
-  const tmp2 = channelId(style[14])();
+  const tmp2 = channelId(style[12])();
   closure_3 = tmp2;
-  const maskedSpeakerStates = isConnectedToVoiceChannel(style[15]).useMaskedSpeakerStates();
+  const maskedSpeakerStates = isConnectedToVoiceChannel(style[13]).useMaskedSpeakerStates();
   const toggleAudio = maskedSpeakerStates.toggleAudio;
   ({ routeSource: c5, isAudioRouteEnabled: c6 } = maskedSpeakerStates);
-  let tmp5 = channelId(style[16])();
+  let tmp5 = channelId(style[14])();
   closure_7 = tmp5;
-  const sessionId = channelId(style[17])();
-  let obj = isConnectedToVoiceChannel(style[15]);
-  let items = [stateFromStores];
-  stateFromStores = isConnectedToVoiceChannel(style[18]).useStateFromStores(items, () => stateFromStores.getAwaitingRemoteSessionInfo());
-  let obj2 = isConnectedToVoiceChannel(style[18]);
-  const items1 = [disabled];
-  disabled = isConnectedToVoiceChannel(style[18]).useStateFromStores(items1, () => disabled.getQueueAudioSwap());
-  let obj3 = isConnectedToVoiceChannel(style[18]);
-  const items2 = [closure_13];
-  const stateFromStores1 = isConnectedToVoiceChannel(style[18]).useStateFromStores(items2, () => {
+  const awaitingRemoteSessionInfo = channelId(style[15])();
+  let obj = isConnectedToVoiceChannel(style[13]);
+  let items = [awaitingRemoteSessionInfo];
+  const stateFromStores = isConnectedToVoiceChannel(style[16]).useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
+  let obj2 = isConnectedToVoiceChannel(style[16]);
+  const items1 = [stateFromStores];
+  const disabled = isConnectedToVoiceChannel(style[16]).useStateFromStores(items1, () => stateFromStores.getQueueAudioSwap());
+  let obj3 = isConnectedToVoiceChannel(style[16]);
+  const items2 = [closure_12];
+  const stateFromStores1 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items2, () => {
     let str;
-    if (sessionId != null) {
-      str = sessionId.sessionId;
+    if (awaitingRemoteSessionInfo != null) {
+      str = awaitingRemoteSessionInfo.sessionId;
     }
     if (str == null) {
       str = "";
     }
     return SessionsStore.getSessionById(str);
   });
-  const loading = null != stateFromStores;
   const items3 = [stateFromStores, stateFromStores1];
-  closure_13 = noop.useMemo(() => {
+  closure_12 = noop.useMemo(() => {
     let type;
     if (stateFromStores != null) {
       type = stateFromStores.type;
@@ -548,8 +95,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
     }
     return tmp3;
   }, items3);
-  let arr5 = channelId(style[20])();
-  let tmp9 = channelId(style[21])(channelId);
+  let arr5 = channelId(style[18])();
+  let tmp9 = channelId(style[19])(channelId);
   let tmp10 = tmp9.canConnect && !tmp9.isAtMaxCapacity;
   if (tmp10) {
     let tmp11 = isConnectedToVoiceChannel;
@@ -558,7 +105,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
     }
     tmp10 = tmp11;
   }
-  closure_15 = tmp10;
+  closure_14 = tmp10;
   const items4 = [channelId, isConnectedToVoiceChannel, toggleAudio];
   onPress = obj5.useCallback(() => {
     if (obj.isAndroid()) {
@@ -568,9 +115,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
       toggleAudio(channelId, isConnectedToVoiceChannel);
     }
   }, items4);
-  let obj4 = isConnectedToVoiceChannel(style[18]);
-  const items5 = [stateFromStores1];
-  stateFromStores2 = isConnectedToVoiceChannel(style[18]).useStateFromStores(items5, () => stateFromStores1.getCurrentRouteType());
+  let obj4 = isConnectedToVoiceChannel(style[16]);
+  const items5 = [disabled];
+  stateFromStores2 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items5, () => disabled.getCurrentRouteType());
   const items6 = [arr5, channelId, isConnectedToVoiceChannel, stateFromStores2, tmp5];
   const items7 = [tmp2];
   const memo = obj5.useMemo(() => {
@@ -580,15 +127,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
         let tmp9 = closure_7;
         let tmp5 = closure_7;
         if (!closure_7) {
-          tmp5 = stateFromStores2 !== tmp(tmp2[24]).RouteTypes.SPEAKER;
+          tmp5 = stateFromStores2 !== tmp(tmp2[22]).RouteTypes.SPEAKER;
         }
         if (!tmp5) {
           let obj2 = { label: null, iconSource: null, showIconFirst: false, action: null };
-          let intl = tmp(tmp2[25]).intl;
-          obj2.label = intl.string(tmp(tmp2[25]).t.gvQIzx);
-          obj2.iconSource = channelId(tmp2[26]);
+          let intl = tmp(tmp2[23]).intl;
+          obj2.label = intl.string(tmp(tmp2[23]).t.gvQIzx);
+          obj2.iconSource = channelId(tmp2[24]);
           obj2.action = function action() {
-            const AudioRoutePicker = closure_1_7.AudioRoutePicker;
+            const AudioRoutePicker = closure_1_6.AudioRoutePicker;
             let toggleSpeakerResult;
             if (AudioRoutePicker != null) {
               toggleSpeakerResult = AudioRoutePicker.toggleSpeaker(false);
@@ -598,15 +145,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
           items.push(obj2);
         }
         if (!tmp9) {
-          tmp9 = stateFromStores2 !== tmp(tmp2[24]).RouteTypes.RECEIVER;
+          tmp9 = stateFromStores2 !== tmp(tmp2[22]).RouteTypes.RECEIVER;
         }
         if (!tmp9) {
           const obj3 = { label: null, iconSource: null, showIconFirst: false, action: null };
-          let intl2 = tmp(tmp2[25]).intl;
-          obj3.label = intl2.string(tmp(tmp2[25]).t.wwTN1g);
-          obj3.iconSource = channelId(tmp2[27]);
+          let intl2 = tmp(tmp2[23]).intl;
+          obj3.label = intl2.string(tmp(tmp2[23]).t.wwTN1g);
+          obj3.iconSource = channelId(tmp2[25]);
           obj3.action = function action() {
-            const AudioRoutePicker = closure_1_7.AudioRoutePicker;
+            const AudioRoutePicker = closure_1_6.AudioRoutePicker;
             let toggleSpeakerResult;
             if (AudioRoutePicker != null) {
               toggleSpeakerResult = AudioRoutePicker.toggleSpeaker(true);
@@ -616,15 +163,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
           items.push(obj3);
         }
         const obj4 = { label: null, iconSource: null, showIconFirst: false, action: null };
-        const intl3 = tmp(tmp2[25]).intl;
-        obj4.label = intl3.string(tmp(tmp2[25]).t.dnI0AL);
-        obj4.iconSource = channelId(tmp2[28]);
+        const intl3 = tmp(tmp2[23]).intl;
+        obj4.label = intl3.string(tmp(tmp2[23]).t.dnI0AL);
+        obj4.iconSource = channelId(tmp2[26]);
         obj4.action = function action() {
-          const result = isConnectedToVoiceChannel(style[23]).showAudioOutputSelector(channelId, items);
+          const result = isConnectedToVoiceChannel(style[21]).showAudioOutputSelector(channelId, items);
         };
         arr5 = items.push(obj4);
         for (const item10074 of tmp3) {
-          let tmp16 = (function _loop2(item10074) {
+          let tmp16 = (function _loop(item10074) {
             closure_0 = item10074;
             if (item10074.type === PlatformTypes.XBOX) {
               let obj = { label: null, iconSource: null, showIconFirst: false, action: null };
@@ -632,10 +179,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
               obj.label = intl.string(util.t["qVE/VF"]);
               obj.iconSource = getConsoleIconDefault(item10074.type);
               obj.action = function action() {
-                const channel = closure_12.getChannel(channelId);
+                const channel = stateFromStores1.getChannel(channelId);
                 if (null != channel) {
-                  isConnectedToVoiceChannel(style[29]).onConnectToConsole(channel, closure_0);
-                  const obj = isConnectedToVoiceChannel(style[29]);
+                  isConnectedToVoiceChannel(style[27]).onConnectToConsole(channel, closure_0);
+                  const obj = isConnectedToVoiceChannel(style[27]);
                 }
               };
               items.push(obj);
@@ -646,10 +193,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
               obj2.label = intl2.string(util.t.vzfxmY);
               obj2.iconSource = getConsoleIconDefault(item10074.type);
               obj2.action = function action() {
-                const channel = closure_12.getChannel(channelId);
+                const channel = stateFromStores1.getChannel(channelId);
                 if (null != channel) {
-                  isConnectedToVoiceChannel(style[29]).onConnectToConsole(channel, closure_0);
-                  const obj = isConnectedToVoiceChannel(style[29]);
+                  isConnectedToVoiceChannel(style[27]).onConnectToConsole(channel, closure_0);
+                  const obj = isConnectedToVoiceChannel(style[27]);
                 }
               };
               items.push(obj2);
@@ -672,20 +219,20 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
     function renderButton(arg0) {
       let tmp = arg0;
       if (arg0 == null) {
-        const obj = { onPress, ref: "Array" };
+        const obj = { onPress, ref: "a" };
         tmp = obj;
       }
       const obj2 = { targetRef: ref, canShowTooltip: null };
-      let tmp9 = closure_15;
-      if (closure_15) {
+      let tmp9 = closure_14;
+      if (closure_14) {
         tmp9 = isConnectedToVoiceChannel;
       }
       obj2.canShowTooltip = tmp9;
-      const items = [closure_2_15(closure_19, obj2), ];
+      const items = [closure_2_14(closure_18, obj2), ];
       const obj3 = { style, ref, children: null };
-      const tmp3 = _objectWithoutProperties(tmp, closure_4);
-      const tmp4 = constants;
-      const tmp5 = value2;
+      const tmp3 = _objectWithoutProperties(tmp, closure_3);
+      const tmp4 = value2;
+      const tmp5 = __initData;
       const obj4 = { ref: tmp.ref };
       const tmp11 = NativeViewDefault;
       const merged = Object.assign(tmp3);
@@ -697,17 +244,17 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
         }
       }
       obj4.overrideVariant = str;
-      obj4.loading = loading;
-      let tmp15 = closure_13;
-      if (closure_13 == null) {
+      obj4.loading = null != stateFromStores;
+      let tmp15 = closure_12;
+      if (closure_12 == null) {
         tmp15 = c5;
       }
       const obj5 = { children: null };
       obj4.icon = tmp15;
       const intl = util.intl;
       obj4.accessibilityLabel = intl.string(util.t.dnI0AL);
-      obj3.children = closure_2_15(VoicePanelIconButtonDefault, obj4);
-      items[1] = closure_2_15(tmp11, obj3);
+      obj3.children = closure_2_14(VoicePanelIconButtonDefault, obj4);
+      items[1] = closure_2_14(tmp11, obj3);
       obj5.children = items;
       return tmp4(tmp5, obj5);
     }
@@ -715,17 +262,17 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
       if (tmp8) {
         const obj6 = { children: null };
         const obj7 = { targetRef: ref, canShowTooltip: isConnectedToVoiceChannel };
-        const items8 = [closure_15(closure_19, obj7), ];
+        const items8 = [closure_14(closure_18, obj7), ];
         const obj8 = { menuItems: memo, position: "bottom", align: "end", onRequestOpen: callback, onRequestClose: tmp2.unlock, children: renderButton };
-        items8[1] = closure_15(tmp3(tmp[34]).MenuPopout, obj8);
+        items8[1] = closure_14(tmp3(tmp[32]).MenuPopout, obj8);
         obj6.children = items8;
         let renderButtonResult = stateFromStores2(onPress, obj6);
       }
       return renderButtonResult;
     }
     renderButtonResult = renderButton();
-    tmp3Result2 = tmp3(tmp[22]);
+    tmp3Result2 = tmp3(tmp[20]);
   } else {
     return null;
   }
-}));
+});

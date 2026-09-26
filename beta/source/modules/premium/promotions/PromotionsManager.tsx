@@ -1,18 +1,18 @@
-// Module ID: 17888
-// Function ID: 17889
+// Module ID: 17879
+// Function ID: 17880
 // Name: PromotionsManager
-// Dependencies: [2113, 4456, 10999, 1078, 1089, 7397, 13727, 2]
+// Dependencies: [2109, 4452, 10961, 1074, 1085, 7395, 13717, 2]
 
-// Module 17888 (PromotionsManager)
-import PromotionsActionCreators from "PromotionsActionCreators" /* 13727 */;
-import LocaleStore from "LocaleStore" /* 2113 */;
-import SubscriptionStore from "SubscriptionStore" /* 4456 */;
-import PromotionsStore from "PromotionsStore" /* 10999 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 17879 (PromotionsManager)
+import PromotionsActionCreators from "PromotionsActionCreators" /* 13717 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
+import PromotionsStore from "PromotionsStore" /* 10961 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const EntitlementTypes = fn(1078).EntitlementTypes;
-const SubscriptionTypes = fn(1089).SubscriptionTypes;
+const EntitlementTypes = fn(1074).EntitlementTypes;
+const SubscriptionTypes = fn(1085).SubscriptionTypes;
 class PromotionsManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

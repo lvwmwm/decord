@@ -1,71 +1,26 @@
-// Module ID: 8396
-// Function ID: 8397
+// Module ID: 8391
+// Function ID: 8392
 // Name: InstagramNeutralIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8397, 4493, 2]
+// Dependencies: [19, 21, 576, 4488, 8392, 2]
+// Exports: InstagramNeutralIcon
 
-// Module 8396 (InstagramNeutralIcon)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4493 */;
-import _mod8397 from "module_8397" /* 8397 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 8391 (InstagramNeutralIcon)
+import nativeDefault from "native" /* 576 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod8392 from "module_8392" /* 8392 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = ["style", "color"];
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/InstagramNeutralIcon.tsx");
 
-export const InstagramNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(9);
-  if (cResult[0] !== arg0) {
-    ({ style, color } = arg0);
-    const tmp8 = _objectWithoutProperties(arg0, closure_3);
-    cResult[0] = arg0;
-    cResult[1] = tmp8;
-    cResult[2] = style;
-    cResult[3] = color;
-    let INTERACTIVE_ICON_DEFAULT = color;
-    let tmp5 = style;
-    let tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    INTERACTIVE_ICON_DEFAULT = cResult[3];
-  }
-  if (undefined === INTERACTIVE_ICON_DEFAULT) {
-    INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8397);
-    cResult[4] = tmpResult;
-    let tmp10 = tmpResult;
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] === INTERACTIVE_ICON_DEFAULT) {
-    if (cResult[6] === tmp4) {
-      if (cResult[7] === tmp5) {
-        let tmp12 = cResult[8];
-      }
-      return tmp12;
-    }
-  }
-  const merged = Object.assign(tmp4);
-  const tmp14 = jsx(BaseIconImage.BaseIconImage, { source: tmp10, color: INTERACTIVE_ICON_DEFAULT, style: tmp5 });
-  cResult[5] = INTERACTIVE_ICON_DEFAULT;
-  cResult[6] = tmp4;
-  cResult[7] = tmp5;
-  cResult[8] = tmp14;
-  tmp12 = tmp14;
-}) : ((color) => {
+export const InstagramNeutralIcon = function InstagramNeutralIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8397, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
-});
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8392, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+};

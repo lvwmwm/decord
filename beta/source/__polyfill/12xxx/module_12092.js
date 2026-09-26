@@ -1,9 +1,9 @@
 // Module ID: 12092
 // Function ID: 12093
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 12092
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "538100cf5ed1ed88cced15fcffad07fd", name: "PiggyBankIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 50, height: 50, scales: [2, 3], hash: "1f317b3826e833bdfd8eb425b9e3f548", name: "img_poop_light", type: "png" });

@@ -1,138 +1,33 @@
-// Module ID: 11091
-// Function ID: 11092
+// Module ID: 11052
+// Function ID: 11053
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7441, 1253, 9078, 11082, 1119, 2582, 4786, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 7439, 9080, 1249, 11045, 4784, 1115, 2578, 2]
+// Exports: default
 
-// Module 11091 (GiftingBadgeProgressBanner)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import _modDef2582 from "module_2582" /* 2582 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9078 */;
+// Module 11052 (GiftingBadgeProgressBanner)
+import nativeDefault from "native" /* 576 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import _modDef2578 from "module_2578" /* 2578 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7439 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9080 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { container: null, iconContainer: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.container = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_MUTED };
 let obj3 = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_MUTED };
 obj2.iconContainer = { alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, marginInlineEnd: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, marginInlineEnd: nativeDefault.space.PX_8 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(21);
-  ({ giftsToNextTier, nextTierName, nextTierIcon, analyticsLocation } = arg0);
-  const tmp4 = closure_6();
-  if (cResult[0] !== analyticsLocation) {
-    if (null != analyticsLocation) {
-      const items = [analyticsLocation];
-      let items1 = items;
-    } else {
-      items1 = [];
-    }
-    cResult[0] = analyticsLocation;
-    cResult[1] = items1;
-  } else {
-    const items2 = [];
-    HermesBuiltin.arraySpread(cResult[1], 0);
-    const analyticsLocations = HermesBuiltin.apply(items2, undefined).analyticsLocations;
-    if (cResult[2] === analyticsLocations) {
-      if (cResult[3] === giftsToNextTier) {
-        if (cResult[4] === nextTierName) {
-          let tmp15 = cResult[5];
-        }
-        const _Symbol = Symbol;
-        if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { trackOnInitialLoad: true };
-          cResult[6] = obj2;
-          let tmp17 = obj2;
-        } else {
-          tmp17 = cResult[6];
-        }
-        tmp8(9078)(tmp15, tmp17);
-        if (cResult[7] !== nextTierIcon) {
-          let tmp21 = null != nextTierIcon;
-          if (tmp21) {
-            const obj3 = { icon: nextTierIcon, size: 24 };
-            tmp21 = React4(tmp8(11082), obj3);
-          }
-          cResult[7] = nextTierIcon;
-          cResult[8] = tmp21;
-          let tmp19 = tmp21;
-        } else {
-          tmp19 = cResult[8];
-        }
-        if (cResult[9] === tmp4.iconContainer) {
-          if (cResult[10] === tmp19) {
-            let tmp23 = cResult[11];
-          }
-          if (cResult[12] === giftsToNextTier) {
-            if (cResult[13] === nextTierName) {
-              let tmp27 = cResult[14];
-            }
-            if (cResult[15] !== tmp27) {
-              const obj4 = { variant: "text-md/semibold", children: tmp27 };
-              const tmp31 = React4(tmp(4786).Text, obj4);
-              cResult[15] = tmp27;
-              cResult[16] = tmp31;
-              let tmp29 = tmp31;
-            } else {
-              tmp29 = cResult[16];
-            }
-            if (cResult[17] === tmp4.container) {
-              if (cResult[18] === tmp23) {
-                if (cResult[19] === tmp29) {
-                  let tmp32 = cResult[20];
-                }
-                return tmp32;
-              }
-            }
-            const obj5 = { style: tmp4.container, children: null };
-            const items3 = [tmp23, tmp29];
-            obj5.children = items3;
-            const tmp35 = hasOwnProperty(View, obj5);
-            cResult[17] = tmp4.container;
-            cResult[18] = tmp23;
-            cResult[19] = tmp29;
-            cResult[20] = tmp35;
-            tmp32 = tmp35;
-          }
-          const intl = tmp(1119).intl;
-          const obj6 = { giftsRemaining: giftsToNextTier, nextTier: nextTierName };
-          const formatToPlainStringResult = intl.formatToPlainString(tmp8(2582)["0+xfd9"], obj6);
-          cResult[12] = giftsToNextTier;
-          cResult[13] = nextTierName;
-          cResult[14] = formatToPlainStringResult;
-          tmp27 = formatToPlainStringResult;
-        }
-        const obj7 = { style: tmp4.iconContainer, children: tmp19 };
-        const tmp26 = React4(View, obj7);
-        cResult[9] = tmp4.iconContainer;
-        cResult[10] = tmp19;
-        cResult[11] = tmp26;
-        tmp23 = tmp26;
-      }
-    }
-    const obj8 = { name: tmp(1253).ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER, type: tmp(1253).ImpressionTypes.VIEW, properties: null };
-    const obj9 = { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: analyticsLocations };
-    obj8.properties = obj9;
-    cResult[2] = analyticsLocations;
-    cResult[3] = giftsToNextTier;
-    cResult[4] = nextTierName;
-    cResult[5] = obj8;
-    tmp15 = obj8;
-  }
-}) : ((arg0) => {
+export default function GiftingBadgeProgressBanner(arg0) {
   ({ giftsToNextTier, nextTierName, nextTierIcon, analyticsLocation } = arg0);
   const tmp = closure_6();
   if (null != analyticsLocation) {
@@ -152,14 +47,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp10Result = null != nextTierIcon;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: 24 };
-    tmp10Result = tmp10(tmp2(11082), obj4);
+    tmp10Result = tmp10(tmp2(11045), obj4);
   }
   obj3.children = tmp10Result;
   const items2 = [React4(View, obj3), ];
   const obj5 = { variant: "text-md/semibold", children: null };
-  const intl = tmp6(1119).intl;
-  obj5.children = intl.formatToPlainString(_modDef2582["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
+  const intl = tmp6(1115).intl;
+  obj5.children = intl.formatToPlainString(_modDef2578["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
   items2[1] = React4(Text_Text.Text, obj5);
   obj2.children = items2;
   return hasOwnProperty(View, obj2);
-});
+};

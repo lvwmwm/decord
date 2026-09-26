@@ -1,125 +1,27 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15145
+// Function ID: 15146
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1078, 21, 558, 568, 15142, 15143, 8903, 580, 1119, 2486, 11630, 5341, 15146, 2]
+// Dependencies: [19, 1074, 21, 15146, 15147, 8898, 576, 1115, 2482, 11754, 5339, 15150, 2]
 
-// Module 15141 (FamilyCenterSetting)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import _modDef2486 from "module_2486" /* 2486 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 15142 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 15143 */;
+// Module 15145 (FamilyCenterSetting)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import _modDef2482 from "module_2482" /* 2482 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 15146 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 15147 */;
 import noop from "module_19" /* 19 */;
 
-const util = intl(1119);
-const WarningIcon = intl(8903);
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let intl = require;
-  let stringResult = dependencyMap;
-  const cResult = c.c(1);
-  const isParentalConsentBannerActive = useIsParentalConsentBannerActive.useIsParentalConsentBannerActive();
-  const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
-  let daysRemaining;
-  if (parentalConsentWarning != null) {
-    daysRemaining = parentalConsentWarning.daysRemaining;
-  }
-  if (daysRemaining == null) {
-    daysRemaining = null;
-  }
-  let tmp6 = null;
-  if (isParentalConsentBannerActive) {
-    tmp6 = null;
-    if (null != daysRemaining) {
-      tmp6 = null;
-      if (daysRemaining >= 0) {
-        const _Symbol = Symbol;
-        if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj4 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null };
-          intl = util.intl;
-          stringResult = intl.string(_modDef2486.wucWfE);
-          obj4.accessibilityLabel = stringResult;
-          const tmp11 = jsx(WarningIcon.WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
-          cResult[0] = tmp11;
-          let first = tmp11;
-        } else {
-          first = cResult[0];
-        }
-      }
-    }
-  }
-  return tmp6;
-}) : (() => {
-  const isParentalConsentBannerActive = useIsParentalConsentBannerActive.useIsParentalConsentBannerActive();
-  const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
-  let daysRemaining;
-  if (parentalConsentWarning != null) {
-    daysRemaining = parentalConsentWarning.daysRemaining;
-  }
-  if (daysRemaining == null) {
-    daysRemaining = null;
-  }
-  let tmp6 = null;
-  if (isParentalConsentBannerActive) {
-    tmp6 = null;
-    if (null != daysRemaining) {
-      tmp6 = null;
-      if (daysRemaining >= 0) {
-        const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null };
-        const intl = tmp(1119).intl;
-        obj3.accessibilityLabel = intl.string(_modDef2486.wucWfE);
-        tmp6 = jsx(tmp(8903).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
-      }
-    }
-  }
-  return tmp6;
-});
+const SettingBuilders = fn(11754);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2486.RZqaJn);
+    return intl.string(_modDef2482.RZqaJn);
   },
   parent: null,
-  IconComponent: fn(5341).GroupIcon,
-  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    let intl = require;
-    let stringResult = dependencyMap;
-    const cResult = c.c(1);
-    const isParentalConsentBannerActive = useIsParentalConsentBannerActive.useIsParentalConsentBannerActive();
-    const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
-    let daysRemaining;
-    if (parentalConsentWarning != null) {
-      daysRemaining = parentalConsentWarning.daysRemaining;
-    }
-    if (daysRemaining == null) {
-      daysRemaining = null;
-    }
-    let tmp6 = null;
-    if (isParentalConsentBannerActive) {
-      tmp6 = null;
-      if (null != daysRemaining) {
-        tmp6 = null;
-        if (daysRemaining >= 0) {
-          const _Symbol = Symbol;
-          if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj4 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null };
-            intl = util.intl;
-            stringResult = intl.string(_modDef2486.wucWfE);
-            obj4.accessibilityLabel = stringResult;
-            const tmp11 = jsx(WarningIcon.WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
-            cResult[0] = tmp11;
-            let first = tmp11;
-          } else {
-            first = cResult[0];
-          }
-        }
-      }
-    }
-    return tmp6;
-  }) : (() => {
+  IconComponent: fn(5339).GroupIcon,
+  useTrailing: function useFamilyCenterTrailing() {
     const isParentalConsentBannerActive = useIsParentalConsentBannerActive.useIsParentalConsentBannerActive();
     const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
     let daysRemaining;
@@ -136,16 +38,16 @@ const route = SettingBuilders.createRoute({
         tmp6 = null;
         if (daysRemaining >= 0) {
           const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null };
-          const intl = tmp(1119).intl;
-          obj3.accessibilityLabel = intl.string(_modDef2486.wucWfE);
-          tmp6 = jsx(tmp(8903).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
+          const intl = tmp(1115).intl;
+          obj3.accessibilityLabel = intl.string(_modDef2482.wucWfE);
+          tmp6 = jsx(tmp(8898).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
         }
       }
     }
     return tmp6;
-  }),
+  },
   screen: {
-    route: fn(1078).UserSettingsSections.FAMILY_CENTER,
+    route: fn(1074).UserSettingsSections.FAMILY_CENTER,
     getComponent() {
       return require("UserSettingsFamilyCenter").default;
     }

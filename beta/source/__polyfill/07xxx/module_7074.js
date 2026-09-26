@@ -1,31 +1,19 @@
 // Module ID: 7074
 // Function ID: 7075
-// Dependencies: [19, 6918]
-// Exports: useBoundingClientRect
+// Dependencies: [19, 6913]
+// Exports: useBottomSheetGestureHandlers
 
 // Module 7074
 import _mod19 from "module_19" /* 19 */;
+import _mod6913 from "module_6913" /* 6913 */;
 
-const useLayoutEffect = _mod19.useLayoutEffect;
+const useContext = _mod19.useContext;
 
-export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  if (obj.isFabricInstalled()) {
-    useLayoutEffect(() => {
-      if (closure_0) {
-        if (tmp.current) {
-          if (typeof tmp.current.unstable_getBoundingClientRect !== "function") {
-            if (typeof tmp.current.getBoundingClientRect === "function") {
-              const current2 = tmp.current;
-              closure_1(current2.getBoundingClientRect());
-            }
-          } else {
-            const current = tmp.current;
-            closure_1(current.unstable_getBoundingClientRect());
-          }
-        }
-      }
-    });
+export const useBottomSheetGestureHandlers = () => {
+  const tmp = useContext(_mod6913.BottomSheetGestureHandlersContext);
+  if (null === tmp) {
+    throw "'useBottomSheetGestureHandlers' cannot be used out of the BottomSheet!";
+  } else {
+    return tmp;
   }
 };

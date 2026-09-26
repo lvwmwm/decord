@@ -1,13 +1,13 @@
-// Module ID: 17819
-// Function ID: 17820
+// Module ID: 17810
+// Function ID: 17811
 // Name: CheckboxActionComponent
-// Dependencies: [19, 21, 8418, 38, 1982, 9571, 2]
+// Dependencies: [19, 21, 8413, 38, 1978, 9575, 2]
 
-// Module 17819 (CheckboxActionComponent)
+// Module 17810 (CheckboxActionComponent)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1982 */;
-import ComponentStateContext from "ComponentStateContext" /* 8418 */;
-import Checkbox from "Checkbox" /* 9571 */;
+import Server from "Server" /* 1978 */;
+import ComponentStateContext from "ComponentStateContext" /* 8413 */;
+import Checkbox from "Checkbox" /* 9575 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -25,7 +25,7 @@ export default noop.memo((type) => {
     tmp5 = obj2;
   }
   const componentState = componentStateContext.useComponentState(type, tmp5);
-  state = componentState.state;
+  const state = componentState.state;
   const executeStateUpdate = componentState.executeStateUpdate;
   const items = [state, type];
   const memo = noop.useMemo(() => {

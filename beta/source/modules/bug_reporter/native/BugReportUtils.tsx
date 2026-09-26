@@ -1,10 +1,10 @@
-// Module ID: 13046
-// Function ID: 13047
+// Module ID: 10482
+// Function ID: 10483
 // Name: BugReportUtils
-// Dependencies: [5, 3, 1259, 5388, 1235, 2]
+// Dependencies: [5, 3, 1255, 5386, 1231, 2]
 // Exports: getAttachments
 
-// Module 13046 (BugReportUtils)
+// Module 10482 (BugReportUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -37,7 +37,7 @@ let closure_6 = async function _getAttachments(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {

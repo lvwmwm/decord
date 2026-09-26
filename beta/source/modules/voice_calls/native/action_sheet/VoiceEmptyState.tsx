@@ -1,27 +1,27 @@
-// Module ID: 14089
-// Function ID: 14090
+// Module ID: 14079
+// Function ID: 14080
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 1078, 21, 4790, 5775, 580, 558, 568, 1616, 1119, 1181, 14090, 14091, 2]
+// Dependencies: [19, 17, 1074, 21, 4788, 5773, 576, 1612, 1177, 1115, 14080, 14081, 2]
+// Exports: default
 
-// Module 14089 (VoiceEmptyState)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import _modDef14090 from "module_14090" /* 14090 */;
-import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14091 */;
+// Module 14079 (VoiceEmptyState)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import _modDef14080 from "module_14080" /* 14080 */;
+import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14081 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5775 */;
+import TextStyles_mod from "TextStyles" /* 5773 */;
 
 require = fn;
 const View = fn(17).View;
-const Fonts = fn(1078).Fonts;
+const Fonts = fn(1074).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { container: { justifyContent: "center" }, button: { paddingHorizontal: 12, paddingTop: 16 }, emptyTitle: null, emptyBody: null };
-let obj3 = {};
+const createStyles = fn(4788);
+const obj2 = { container: { justifyContent: "center" }, button: { paddingHorizontal: 12, paddingTop: 16 }, emptyTitle: null, emptyBody: null };
+const obj3 = {};
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 obj3.textTransform = "none";
@@ -34,97 +34,10 @@ obj4.lineHeight = 20;
 obj4.fontWeight = "600";
 obj2.emptyBody = obj4;
 let closure_6 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceEmptyState.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = c.c(18);
-  channel = channel.channel;
-  const tmp4 = closure_6();
-  const bottom = useSafeAreaInsetsDefault().bottom;
-  if (cResult[0] !== bottom) {
-    const obj2 = { paddingBottom: bottom };
-    cResult[0] = bottom;
-    cResult[1] = obj2;
-    let tmp6 = obj2;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === tmp4.container) {
-    if (cResult[3] === tmp6) {
-      let tmp7 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t["/HABZo"]);
-      const intl2 = tmp(1119).intl;
-      const stringResult1 = intl2.string(tmp(1119).t["5Jy2FY"]);
-      cResult[5] = stringResult;
-      cResult[6] = stringResult1;
-      let tmp10 = stringResult1;
-      let tmp9 = stringResult;
-    } else {
-      tmp9 = cResult[5];
-      tmp10 = cResult[6];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { marginBottom: 16, marginTop: 20 };
-      cResult[7] = obj3;
-      let tmp13 = obj3;
-    } else {
-      tmp13 = cResult[7];
-    }
-    if (cResult[8] === tmp4.emptyBody) {
-      if (cResult[9] === tmp4.emptyTitle) {
-        let tmp14 = cResult[10];
-      }
-      if (cResult[11] === channel) {
-        if (cResult[12] === tmp4.button) {
-          let tmp17 = cResult[13];
-        }
-        if (cResult[14] === tmp7) {
-          if (cResult[15] === tmp14) {
-            if (cResult[16] === tmp17) {
-              let tmp20 = cResult[17];
-            }
-            return tmp20;
-          }
-        }
-        const obj5 = { style: tmp7, children: null };
-        const items = [tmp14, tmp17];
-        obj5.children = items;
-        const tmp23 = hasOwnProperty(View, obj5);
-        cResult[14] = tmp7;
-        cResult[15] = tmp14;
-        cResult[16] = tmp17;
-        cResult[17] = tmp23;
-        tmp20 = tmp23;
-      }
-      const obj6 = { channel, style: tmp4.button };
-      const tmp19 = React4(tmp5(14091), obj6);
-      cResult[11] = channel;
-      cResult[12] = tmp4.button;
-      cResult[13] = tmp19;
-      tmp17 = tmp19;
-    }
-    const obj11 = { title: tmp9, body: tmp10, lightSource: tmp5(14090), darkSource: tmp5(14090), titleStyle: null, bodyStyle: null, imageStyle: null };
-    ({ emptyTitle: obj4.titleStyle, emptyBody: obj4.bodyStyle } = tmp4);
-    obj11.imageStyle = tmp13;
-    const tmp16 = React4(tmp(1181).ThemedEmptyState, obj11);
-    cResult[8] = tmp4.emptyBody;
-    cResult[9] = tmp4.emptyTitle;
-    cResult[10] = tmp16;
-    tmp14 = tmp16;
-  }
-  const items1 = [tmp4.container, tmp6];
-  cResult[2] = tmp4.container;
-  cResult[3] = tmp6;
-  cResult[4] = items1;
-  tmp7 = items1;
-}) : ((channel) => {
+export default function VoiceEmptyState(channel) {
   const tmp = closure_6();
   const obj = { style: null, children: null };
   const items = [tmp.container, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
@@ -134,11 +47,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   obj4.title = intl.string(util.t["/HABZo"]);
   const intl2 = util.intl;
   obj4.body = intl2.string(util.t["5Jy2FY"]);
-  obj4.lightSource = _modDef14090;
-  obj4.darkSource = _modDef14090;
+  obj4.lightSource = _modDef14080;
+  obj4.darkSource = _modDef14080;
   ({ emptyTitle: obj3.titleStyle, emptyBody: obj3.bodyStyle } = tmp);
   obj4.imageStyle = { marginBottom: 16, marginTop: 20 };
   const items1 = [React4(native.ThemedEmptyState, obj4), React4(JoinVoiceChannelButtonDefault, { channel: channel.channel, style: tmp.button })];
   obj.children = items1;
   return hasOwnProperty(View, obj);
-});
+};

@@ -1,77 +1,26 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17147
+// Function ID: 17148
 // Name: MediaGrid
-// Dependencies: [19, 17, 8159, 21, 4790, 558, 568, 17153, 12522, 9027, 17133, 2]
+// Dependencies: [19, 17, 8154, 21, 4788, 17143, 12621, 9029, 17123, 2]
+// Exports: default
 
-// Module 17157 (MediaGrid)
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12522 */;
-import MediaGridItemDefault from "MediaGridItem" /* 17153 */;
+// Module 17147 (MediaGrid)
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12621 */;
+import MediaGridItemDefault from "MediaGridItem" /* 17143 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const SearchConstants = fn(8159);
+const SearchConstants = fn(8154);
 ({ SEARCH_LIST_HORIZONTAL_PADDING, MEDIA_NUM_COLUMNS: hasOwnProperty, MEDIA_ITEM_GAP_WIDTH: metroRequire } = SearchConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let obj2 = { container: { paddingLeft: SEARCH_LIST_HORIZONTAL_PADDING - 2, paddingRight: SEARCH_LIST_HORIZONTAL_PADDING + 4 } };
+const createStyles = fn(4788);
+const obj2 = { container: { paddingLeft: SEARCH_LIST_HORIZONTAL_PADDING - 2, paddingRight: SEARCH_LIST_HORIZONTAL_PADDING + 4 } };
 let closure_8 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/MediaGrid.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
-  const cResult = media(onPress[6]).c(11);
-  media = media.media;
-  const mediaSize = media.mediaSize;
-  onPress = media.onPress;
-  const animate = media.animate;
-  const tmp4 = closure_8();
-  if (cResult[0] === animate) {
-    if (cResult[1] === media.length) {
-      if (cResult[2] === mediaSize) {
-        if (cResult[3] === onPress) {
-          let tmp5 = cResult[4];
-        }
-        if (cResult[5] === media) {
-          if (cResult[6] === tmp5) {
-            let tmp6 = cResult[7];
-          }
-          if (cResult[8] === tmp4.container) {
-            if (cResult[9] === tmp6) {
-              let tmp10 = cResult[10];
-            }
-            return tmp10;
-          }
-          const obj2 = { style: tmp4.container, children: tmp6 };
-          const tmp13 = <View style={tmp4.container}>{tmp6}</View>;
-          cResult[8] = tmp4.container;
-          cResult[9] = tmp6;
-          cResult[10] = tmp13;
-          tmp10 = tmp13;
-        }
-        const obj3 = { numColumns, data: media, renderItem: tmp5, ItemSeparatorComponent: tmp(tmp2[10]).MediaVerticalSeparator, scrollEnabled: false };
-        const tmp9 = jsx(tmp(tmp2[9]).FlashList, { numColumns, data: media, renderItem: tmp5, ItemSeparatorComponent: tmp(tmp2[10]).MediaVerticalSeparator, scrollEnabled: false });
-        cResult[5] = media;
-        cResult[6] = tmp5;
-        cResult[7] = tmp9;
-        tmp6 = tmp9;
-      }
-    }
-  }
-  const fn = function s(arg0) {
-    ({ item, index } = arg0);
-    const obj = { animate, size: mediaSize, media: item, onPress, containerStyle: null };
-    obj.containerStyle = SearchPlatformUtils.getMediaGridItemStyles({ itemIndex: index, numItems: media.length, numColumns, spacing });
-    return <tmp animate={animate} size={mediaSize} media={item} onPress={onPress} containerStyle={null} />;
-  };
-  cResult[0] = animate;
-  cResult[1] = media.length;
-  cResult[2] = mediaSize;
-  cResult[3] = onPress;
-  cResult[4] = fn;
-  tmp5 = fn;
-}) : ((media) => {
+export default function MediaGrid(media) {
   media = media.media;
   const mediaSize = media.mediaSize;
   const onPress = media.onPress;
@@ -85,6 +34,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
     return <tmp animate={animate} size={mediaSize} media={item} onPress={onPress} containerStyle={null} />;
   }, items);
   let tmp = closure_8();
-  obj.children = jsx(media(onPress[9]).FlashList, { numColumns, data: media, renderItem: callback, ItemSeparatorComponent: media(onPress[10]).MediaVerticalSeparator, scrollEnabled: false });
+  obj.children = jsx(media(onPress[7]).FlashList, { numColumns, data: media, renderItem: callback, ItemSeparatorComponent: media(onPress[8]).MediaVerticalSeparator, scrollEnabled: false });
   return <View style={closure_8().container}>{null}</View>;
-});
+};

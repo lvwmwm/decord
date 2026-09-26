@@ -1,13 +1,13 @@
-// Module ID: 4456
-// Function ID: 4457
+// Module ID: 4452
+// Function ID: 4453
 // Name: SubscriptionStore
-// Dependencies: [1377, 4451, 4457, 502, 1078, 504, 577, 2]
+// Dependencies: [1373, 4447, 4453, 502, 1074, 504, 573, 2]
 // Exports: getSubscriptionOfType
 
-// Module 4456 (SubscriptionStore)
+// Module 4452 (SubscriptionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1377 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1373 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 function reset() {
@@ -21,9 +21,9 @@ function reset() {
   c16 = false;
   c17 = null;
 }
-const isNoneSubscription = fn(4451).isNoneSubscription;
-const SubscriptionRecord = fn(4457).SubscriptionRecord;
-const Constants = fn(1078);
+const isNoneSubscription = fn(4447).isNoneSubscription;
+const SubscriptionRecord = fn(4453).SubscriptionRecord;
+const Constants = fn(1074);
 ({ SubscriptionStatusTypes: closure_4, SubscriptionTypes: hasOwnProperty } = Constants);
 let obj = null;
 let closure_8 = null;

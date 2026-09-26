@@ -1,34 +1,20 @@
-// Module ID: 15220
-// Function ID: 15221
+// Module ID: 15224
+// Function ID: 15225
 // Name: AuthorizedAppPermissionsScreen
-// Dependencies: [19, 21, 558, 568, 7272, 15221, 2]
+// Dependencies: [19, 21, 7271, 15225, 2]
+// Exports: default
 
-// Module 15220 (AuthorizedAppPermissionsScreen)
-import c from "c" /* 568 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7272 */;
-import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 15221 */;
+// Module 15224 (AuthorizedAppPermissionsScreen)
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7271 */;
+import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 15225 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppPermissionsScreen.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  if (cResult[0] !== settingNavigationRoute.params.oauth2Token) {
-    const obj3 = { oauth2Token: settingNavigationRoute.params.oauth2Token };
-    const tmp7 = jsx(UserSettingsAuthedAppPermissionsDefault, { oauth2Token: settingNavigationRoute.params.oauth2Token });
-    cResult[0] = settingNavigationRoute.params.oauth2Token;
-    cResult[1] = tmp7;
-    let tmp4 = tmp7;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (() => {
+export default function AuthorizedAppPermissionsScreen() {
   const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
   return jsx(UserSettingsAuthedAppPermissionsDefault, { oauth2Token: settingNavigationRoute.params.oauth2Token });
-});
+};

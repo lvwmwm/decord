@@ -1,73 +1,28 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8896
+// Function ID: 8897
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 558, 568, 1119, 3102, 5148, 5148, 8902, 2]
+// Dependencies: [19, 21, 5146, 1115, 3098, 5146, 8897, 2]
+// Exports: default
 
-// Module 8901 (ManualReviewFallbackAlertModal)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import _modDef3102 from "module_3102" /* 3102 */;
-import AlertModal from "AlertModal" /* 5148 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8902 */;
+// Module 8896 (ManualReviewFallbackAlertModal)
+import util from "util" /* 1115 */;
+import _modDef3098 from "module_3098" /* 3098 */;
+import AlertModal from "AlertModal" /* 5146 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8897 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewFallbackAlertModal.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(_modDef3102["+c5sxg"]);
-    const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(_modDef3102["RFLH++"]);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp4 = stringResult;
-    tmp5 = stringResult1;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { text: null };
-    const intl3 = tmp(1119).intl;
-    obj2.text = intl3.string(tmp(1119).t["NX+WJN"]);
-    const tmp11 = React3(tmp(5148).AlertActionButton, obj2, "got-it");
-    cResult[2] = tmp11;
-    let tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { title: tmp4, content: tmp5, actions: null };
-    const obj4 = { children: null };
-    const items = [tmp9, ];
-    const obj5 = { variant: "secondary", text: null, onPress: null };
-    const intl4 = tmp(1119).intl;
-    obj5.text = intl4.string(_modDef3102.Z61nkt);
-    obj5.onPress = function onPress() {
-      return ManualReviewActionCreators.handleManualReviewCta();
-    };
-    items[1] = React3(tmp(5148).AlertActionButton, obj5, "request-manual-review");
-    obj4.children = items;
-    obj3.actions = React4(tmp(5148).AlertActions, obj4);
-    const tmp16 = React3(tmp(5148).AlertModal, obj3);
-    cResult[3] = tmp16;
-    let tmp12 = tmp16;
-  } else {
-    tmp12 = cResult[3];
-  }
-  return tmp12;
-}) : (() => {
+export default function ManualReviewFallbackAlertModal() {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
-  obj.title = intl.string(_modDef3102["+c5sxg"]);
+  obj.title = intl.string(_modDef3098["+c5sxg"]);
   const intl2 = util.intl;
-  obj.content = intl2.string(_modDef3102["RFLH++"]);
+  obj.content = intl2.string(_modDef3098["RFLH++"]);
   const obj2 = { children: null };
   const obj3 = { text: null };
   const intl3 = util.intl;
@@ -75,7 +30,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [React3(AlertModal.AlertActionButton, obj3, "got-it"), ];
   const obj4 = { variant: "secondary", text: null, onPress: null };
   const intl4 = util.intl;
-  obj4.text = intl4.string(_modDef3102.Z61nkt);
+  obj4.text = intl4.string(_modDef3098.Z61nkt);
   obj4.onPress = function onPress() {
     return ManualReviewActionCreators.handleManualReviewCta();
   };
@@ -83,4 +38,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2.children = items;
   obj.actions = React4(AlertModal.AlertActions, obj2);
   return React3(AlertModal.AlertModal, obj);
-});
+};

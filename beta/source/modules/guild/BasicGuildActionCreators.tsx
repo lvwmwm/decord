@@ -1,15 +1,15 @@
-// Module ID: 18297
-// Function ID: 18298
+// Module ID: 18288
+// Function ID: 18289
 // Name: BasicGuildActionCreators
-// Dependencies: [5, 2067, 8250, 1078, 577, 1275, 2]
+// Dependencies: [5, 2063, 8245, 1074, 573, 1271, 2]
 // Exports: fetchBasicGuild
 
-// Module 18297 (BasicGuildActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 18288 (BasicGuildActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import BasicGuildStore from "BasicGuildStore" /* 8250 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import BasicGuildStore from "BasicGuildStore" /* 8245 */;
 
 require = fn;
 let closure_8 = async function _fetchBasicGuild(arg0, value) {
@@ -23,7 +23,7 @@ let closure_8 = async function _fetchBasicGuild(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -100,7 +100,7 @@ let closure_8 = async function _fetchBasicGuild(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const set = new Set();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild/BasicGuildActionCreators.tsx");

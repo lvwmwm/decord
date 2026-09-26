@@ -1,18 +1,18 @@
-// Module ID: 13739
-// Function ID: 13740
+// Module ID: 13729
+// Function ID: 13730
 // Name: useNextTenureBadge
-// Dependencies: [1378, 558, 11475, 2]
+// Dependencies: [1374, 11480, 2]
+// Exports: useNextTenureBadge
 
-// Module 13739 (useNextTenureBadge)
-import useTenureBadging from "useTenureBadging" /* 11475 */;
-import PremiumConstants from "PremiumConstants" /* 1378 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13729 (useNextTenureBadge)
+import useTenureBadging from "useTenureBadging" /* 11480 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import size from "module_2" /* 2 */;
 
 ({ TIERED_TENURE_BADGE_ORDER: c2, TENURE_BADGES: c3 } = PremiumConstants);
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useNextTenureBadge.tsx");
 
-export const useNextTenureBadge = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+export const useNextTenureBadge = function useNextTenureBadge() {
   const tieredTenureBadgeData = useTenureBadging.useTieredTenureBadgeData();
   if (null == tieredTenureBadgeData) {
     return null;
@@ -24,26 +24,9 @@ export const useNextTenureBadge = ReactCompilerGating.isReactCompilerEnabled() ?
     if (null != React2[index + 1]) {
       tmp7 = null;
       if (-1 !== index) {
-        tmp7 = dependencyMap[tmp6];
+        tmp7 = React3[tmp6];
       }
     }
     return tmp7;
   }
-}) : (() => {
-  const tieredTenureBadgeData = useTenureBadging.useTieredTenureBadgeData();
-  if (null == tieredTenureBadgeData) {
-    return null;
-  } else if (tieredTenureBadgeData.status === useTenureBadging.TieredTenureBadgeStatus.UPCOMING) {
-    return tieredTenureBadgeData;
-  } else {
-    const index = React2.indexOf(tieredTenureBadgeData.id);
-    let tmp7 = null;
-    if (null != React2[index + 1]) {
-      tmp7 = null;
-      if (-1 !== index) {
-        tmp7 = dependencyMap[tmp6];
-      }
-    }
-    return tmp7;
-  }
-});
+};

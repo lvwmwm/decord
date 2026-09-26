@@ -1,11 +1,11 @@
-// Module ID: 5810
-// Function ID: 5811
+// Module ID: 5808
+// Function ID: 5809
 // Name: NewUserStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 5810 (NewUserStore)
+// Module 5808 (NewUserStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let c0 = null;
 const PersistedStore = initializeDefault.PersistedStore;

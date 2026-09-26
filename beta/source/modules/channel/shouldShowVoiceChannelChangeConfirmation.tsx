@@ -1,15 +1,15 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 13251
+// Function ID: 13252
 // Name: shouldShowVoiceChannelChangeConfirmation
-// Dependencies: [4807, 1188, 502, 2067, 4809, 2]
+// Dependencies: [4805, 1184, 502, 2063, 4807, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 13261 (shouldShowVoiceChannelChangeConfirmation)
-import GameConsoleStore from "GameConsoleStore" /* 4807 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
+// Module 13251 (shouldShowVoiceChannelChangeConfirmation)
+import GameConsoleStore from "GameConsoleStore" /* 4805 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import VoiceStateStore from "VoiceStateStore" /* 4809 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import VoiceStateStore from "VoiceStateStore" /* 4807 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel/shouldShowVoiceChannelChangeConfirmation.tsx");
@@ -25,7 +25,7 @@ export const shouldShowVoiceChannelChangeConfirmation = function shouldShowVoice
       if (obj.isInChannel(id.id)) {
         return false;
       } else {
-        guild = GuildStore.getGuild(id.getGuildId());
+        const guild = GuildStore.getGuild(id.getGuildId());
         let afkChannelId;
         if (guild != null) {
           afkChannelId = guild.afkChannelId;

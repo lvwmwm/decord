@@ -1,10 +1,10 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14107
+// Function ID: 14108
 // Name: VideoStabilizationExperiment
-// Dependencies: [1439, 2]
+// Dependencies: [1435, 2]
 
-// Module 14117 (VideoStabilizationExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
+// Module 14107 (VideoStabilizationExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const obj = { kind: "user", name: "2026-05-ios-video-stabilization", defaultConfig: { mode: "off" }, variations: null };
 const obj2 = { 1: null, 2: { mode: "standard" } };

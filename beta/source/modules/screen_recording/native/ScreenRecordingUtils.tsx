@@ -1,14 +1,14 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16267
+// Function ID: 16268
 // Name: ScreenRecordingUtils
-// Dependencies: [5, 17, 16262, 5142, 16264, 16265, 4757, 16266, 1984, 13047, 5378, 8511, 13046, 1482, 2]
+// Dependencies: [5, 17, 16266, 5140, 16268, 16269, 4755, 16270, 1980, 10483, 5376, 8506, 10482, 1478, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 16263 (ScreenRecordingUtils)
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
-import bug_reporter_BugReportUtils from "bug_reporter/BugReportUtils" /* 13047 */;
-import ScreenRecordingManagerDefault from "ScreenRecordingManager" /* 16264 */;
-import StudyConfig from "StudyConfig" /* 16265 */;
+// Module 16267 (ScreenRecordingUtils)
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import bug_reporter_BugReportUtils from "bug_reporter/BugReportUtils" /* 10483 */;
+import ScreenRecordingManagerDefault from "ScreenRecordingManager" /* 16268 */;
+import StudyConfig from "StudyConfig" /* 16269 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -23,7 +23,7 @@ let closure_7 = async function _getLatestVideo(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -103,7 +103,7 @@ let closure_8 = async function _checkAndRequestPermissions(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -181,7 +181,7 @@ let closure_9 = async function _startRecordingProcess(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -213,7 +213,7 @@ let closure_9 = async function _startRecordingProcess(arg0, value) {
         const _HermesInternal = HermesInternal;
         obj7.body = "Failed to start screen recording, error: " + closure_129_3;
         closure_130_1(closure_130_2[3]).show(obj7);
-        state = closure_130_4.getState();
+        const state = closure_130_4.getState();
         state.stopRecording();
         c6 = 3;
         const obj8 = { value: { success: false }, done: true };
@@ -275,7 +275,7 @@ let closure_10 = async function _stopRecordingProcess(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -304,7 +304,7 @@ let closure_10 = async function _stopRecordingProcess(arg0, value) {
         const _HermesInternal = HermesInternal;
         obj6.body = "Failed to stop screen recording, error: " + closure_128_0;
         closure_129_1(closure_129_2[3]).show(obj6);
-        state = closure_129_4.getState();
+        const state = closure_129_4.getState();
         state.stopRecording();
         c5 = 3;
         return { value: false, done: true };
@@ -350,7 +350,7 @@ let closure_11 = async function _submitBugReportWithScreenRecording(arg0, value)
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -630,7 +630,7 @@ let closure_12 = async function _handleStopAndSend(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -660,7 +660,7 @@ let closure_12 = async function _handleStopAndSend(arg0, value) {
                     const obj = { value, done: true };
                     return obj;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -707,7 +707,7 @@ let closure_12 = async function _handleStopAndSend(arg0, value) {
                       const state1 = closure_2_4.getState();
                       state1.stopRecording();
                       c2 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp13) {
                     c2 = tmp;
@@ -753,7 +753,7 @@ let closure_12 = async function _handleStopAndSend(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp9) {
       c1 = tmp;
@@ -831,7 +831,7 @@ let closure_13 = async function _handleRecordingPhase(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ NativeModules, NativeEventEmitter } = get_ActivityIndicator);
-const useScreenRecordingStore = fn(16262).useScreenRecordingStore;
+const useScreenRecordingStore = fn(16266).useScreenRecordingStore;
 const DCDPhotos = NativeModules.DCDPhotos;
 const nativeEventEmitter = new NativeEventEmitter(NativeModules.DCDScreenRecordingManager);
 let size = fn(2);

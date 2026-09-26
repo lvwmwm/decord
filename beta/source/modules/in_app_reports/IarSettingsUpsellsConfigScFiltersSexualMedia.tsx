@@ -1,13 +1,13 @@
-// Module ID: 8950
-// Function ID: 8951
+// Module ID: 8952
+// Function ID: 8953
 // Name: IarSettingsUpsellsConfigScFiltersSexualMedia
-// Dependencies: [7574, 1190, 1119, 8938, 2]
+// Dependencies: [7572, 1186, 1115, 8940, 2]
 
-// Module 8950 (IarSettingsUpsellsConfigScFiltersSexualMedia)
-import util from "util" /* 1119 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7574 */;
-import MenuTypes from "MenuTypes" /* 8938 */;
+// Module 8952 (IarSettingsUpsellsConfigScFiltersSexualMedia)
+import util from "util" /* 1115 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7572 */;
+import MenuTypes from "MenuTypes" /* 8940 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -35,13 +35,13 @@ obj.onApply = function onApply() {
   const obj3 = {};
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
   if (explicitContentGuilds === preloaded_user_settings.ExplicitContentRedaction.SHOW) {
-    obj3.explicitContentGuilds = tmp(1190).ExplicitContentRedaction.BLUR;
+    obj3.explicitContentGuilds = tmp(1186).ExplicitContentRedaction.BLUR;
   }
   if (explicitContentFriendDm === preloaded_user_settings.ExplicitContentRedaction.SHOW) {
-    obj3.explicitContentFriendDm = tmp(1190).ExplicitContentRedaction.BLUR;
+    obj3.explicitContentFriendDm = tmp(1186).ExplicitContentRedaction.BLUR;
   }
   if (explicitContentNonFriendDm === preloaded_user_settings.ExplicitContentRedaction.SHOW) {
-    obj3.explicitContentNonFriendDm = tmp(1190).ExplicitContentRedaction.BLUR;
+    obj3.explicitContentNonFriendDm = tmp(1186).ExplicitContentRedaction.BLUR;
   }
   return obj.updateExplicitContentSetting(obj3);
 };

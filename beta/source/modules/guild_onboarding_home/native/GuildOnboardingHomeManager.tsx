@@ -1,25 +1,25 @@
-// Module ID: 17789
-// Function ID: 17790
+// Module ID: 17780
+// Function ID: 17781
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 2102, 502, 2045, 2109, 2067, 4612, 4977, 4978, 4418, 7397, 1389, 4993, 17790, 1984, 12469, 1098, 12468, 7501, 7502, 2]
+// Dependencies: [32, 5, 2098, 502, 2041, 2105, 2063, 4609, 4975, 4976, 4414, 7395, 1385, 4991, 17781, 1980, 12568, 1094, 12567, 7499, 7500, 2]
 
-// Module 17789 (GuildOnboardingHomeManager)
-import FlagUtils from "FlagUtils" /* 1389 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+// Module 17780 (GuildOnboardingHomeManager)
+import FlagUtils from "FlagUtils" /* 1385 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2102 */;
+import ImpersonateStore from "ImpersonateStore" /* 2098 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4977 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4978 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4975 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4976 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const GuildMemberFlags = fn(4418).GuildMemberFlags;
+const GuildMemberFlags = fn(4414).GuildMemberFlags;
 const prototype = function GuildOnboardingHomeManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   require = applyArgumentsResult;
@@ -91,10 +91,10 @@ const prototype = function GuildOnboardingHomeManager() {
           }
           if (0 !== num) {
             const obj2 = ModalActionCreatorsDefault;
-            const tmp9 = tmp(1984)(17790, tmp2.paths);
+            const tmp9 = tmp(1980)(17781, tmp2.paths);
             const obj3 = { initialPercent: (num - 1) / num, numActions: num };
-            const obj4 = { animation: tmp(1098).ModalAnimation.FADE };
-            obj2.pushLazy(tmp9, obj3, tmp(12469).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj4);
+            const obj4 = { animation: tmp(1094).ModalAnimation.FADE };
+            obj2.pushLazy(tmp9, obj3, tmp(12568).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj4);
           }
         }
         obj = FlagUtils;
@@ -119,7 +119,7 @@ const prototype = function GuildOnboardingHomeManager() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ const prototype = function GuildOnboardingHomeManager() {
             closure_129_5 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         } else {
           if (1 === tmp5) {
@@ -187,11 +187,11 @@ const prototype = function GuildOnboardingHomeManager() {
               tmp13 = null != closure_129_5;
             }
             if (tmp13) {
-              tmp13 = closure_129_5.actionType === applyArgumentsResult(12469).NewMemberActionTypes.VIEW;
+              tmp13 = closure_129_5.actionType === applyArgumentsResult(12568).NewMemberActionTypes.VIEW;
             }
             if (tmp13) {
-              const result = applyArgumentsResult(12468).completeNewMemberAction(closure_129_0, closure_129_1);
-              const obj = applyArgumentsResult(12468);
+              const result = applyArgumentsResult(12567).completeNewMemberAction(closure_129_0, closure_129_1);
+              const obj = applyArgumentsResult(12567);
             }
             arr = memberActions;
           }
@@ -277,7 +277,7 @@ const prototype = function GuildOnboardingHomeManager() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -335,7 +335,7 @@ const prototype = function GuildOnboardingHomeManager() {
             const obj = applyArgumentsResult(tmp2[18]);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp31) {
         c5 = tmp;
@@ -365,7 +365,7 @@ const prototype = function GuildOnboardingHomeManager() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -449,7 +449,7 @@ const prototype = function GuildOnboardingHomeManager() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -527,7 +527,7 @@ const prototype = function GuildOnboardingHomeManager() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

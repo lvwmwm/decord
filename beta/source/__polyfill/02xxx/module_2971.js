@@ -1,9 +1,9 @@
 // Module ID: 2971
 // Function ID: 2972
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 2971
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_server", scales: [1], hash: "0627c3400eb57edf9f5bbd28fa95a9c1", name: "GameServer.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9yZXF1ZXN0X3RvX3N0cmVhbQ==", scales: [1], hash: "922b39546aecc9f1610ae04d688a9bc5", name: "da.messages.922b39546aecc9f1610ae04d688a9bc5.compiled.messages", type: "jsona" });

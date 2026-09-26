@@ -1,14 +1,14 @@
-// Module ID: 11678
-// Function ID: 11679
+// Module ID: 11802
+// Function ID: 11803
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 2045, 1376, 9632, 9666, 9603, 11679, 9621, 2]
+// Dependencies: [5, 2041, 1372, 9636, 9670, 9607, 11803, 9625, 2]
 // Exports: default
 
-// Module 11678 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 9632 */;
+// Module 11802 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 9636 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import UserStore from "UserStore" /* 1376 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 let closure_7 = async function _handleUsePrimaryEntryPointAppCommand(arg0) {
@@ -27,7 +27,7 @@ let closure_7 = async function _handleUsePrimaryEntryPointAppCommand(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -119,7 +119,7 @@ let closure_8 = async function _handleUsePrimaryEntryPointAppCommandInternal(arg
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -153,7 +153,7 @@ let closure_8 = async function _handleUsePrimaryEntryPointAppCommandInternal(arg
           let currentUser;
           c3 = 1;
           c4 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp5) {

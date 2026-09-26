@@ -1,17 +1,15 @@
-// Module ID: 7866
-// Function ID: 7867
+// Module ID: 7861
+// Function ID: 7862
 // Name: utils/CollectiblesUtils
-// Dependencies: [4837, 4845, 7867, 558, 568, 7669, 4474, 2]
-// Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl
+// Dependencies: [4835, 4843, 7862, 7667, 4470, 2]
+// Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo
 
-// Module 7866 (utils/CollectiblesUtils)
-import c from "c" /* 568 */;
-import DateUtils from "DateUtils" /* 4474 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4837 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4845 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7669 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7867 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7861 (utils/CollectiblesUtils)
+import DateUtils from "DateUtils" /* 4470 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4835 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7667 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7862 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationStreamPresets = StreamSettingsConstants.ApplicationStreamPresets;
@@ -60,7 +58,7 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
       obj.payment_gateway = noCache.paymentGateway;
     }
     if (noCache.variantsReturnStyle === ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = tmp2(7867).ShopVariantsReturnStyle.VARIANTS_GROUP;
+      obj.variants_return_style = tmp2(7862).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;
@@ -78,40 +76,7 @@ export const getOptimizedProfileEffectThumbnailUrl = function getOptimizedProfil
     return "" + arg0 + "?width=100&height=195";
   }
 };
-export const useFetchFractionalPremiumInfo = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { forceFetch: true };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const tmp5 = useFractionalPremiumInfoDefault(first);
-  if (cResult[1] !== tmp5.endsAt) {
-    const dateFormatResult = DateUtils.dateFormat(tmp5.endsAt, "L");
-    cResult[1] = tmp5.endsAt;
-    cResult[2] = dateFormatResult;
-    let tmp6 = dateFormatResult;
-    const tmpResult = DateUtils;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === tmp6) {
-    if (cResult[4] === tmp5.isFractionalPremiumActive) {
-      if (cResult[5] === tmp8) {
-        let tmp9 = cResult[6];
-      }
-      return tmp9;
-    }
-  }
-  const obj3 = { isLoading: !tmp5.fetched, isFractionalPremiumActive: tmp5.isFractionalPremiumActive, expiresAt: tmp6 };
-  cResult[3] = tmp6;
-  cResult[4] = tmp5.isFractionalPremiumActive;
-  cResult[5] = !tmp5.fetched;
-  cResult[6] = obj3;
-  tmp9 = obj3;
-}) : (() => {
+export const useFetchFractionalPremiumInfo = function useFetchFractionalPremiumInfo() {
   const tmp = useFractionalPremiumInfoDefault({ forceFetch: true });
   return { isLoading: !tmp.fetched, isFractionalPremiumActive: tmp.isFractionalPremiumActive, expiresAt: DateUtils.dateFormat(tmp.endsAt, "L") };
-});
+};

@@ -1,17 +1,14 @@
 // Module ID: 4888
 // Function ID: 4889
-// Dependencies: [539, 540, 4889]
+// Dependencies: [657, 4873, 4871]
 
 // Module 4888
-import _process from "_process" /* 539 */;
-import baseUnary from "baseUnary" /* 540 */;
-import baseIsMap from "baseIsMap" /* 4889 */;
+import baseGetAllKeys from "baseGetAllKeys" /* 657 */;
+import _mod4871 from "module_4871" /* 4871 */;
+import keysIn from "keysIn" /* 4873 */;
 
-const tmp = _process && _process.isMap;
-if (tmp) {
-  let _module = baseUnary(tmp);
-} else {
-  _module = baseIsMap;
-}
 
-export default _module;
+export default function getAllKeysIn(arg0) {
+  const tmp = baseGetAllKeys;
+  return tmp(arg0, keysIn, _mod4871);
+};

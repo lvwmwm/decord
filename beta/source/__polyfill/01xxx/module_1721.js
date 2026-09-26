@@ -1,94 +1,241 @@
 // Module ID: 1721
 // Function ID: 1722
-// Dependencies: [1681]
-// Exports: withRepeat
+// Dependencies: [41, 42, 93, 95, 98, 1709, 1708]
 
 // Module 1721
-const require = fn;
-const dependencyMap = arg6;
-let closure_2 = { code: "function pnpm_repeatTs2(){const{_nextAnimation,numberOfReps,reverse,callback,getReduceMotionForAnimation,reduceMotion}=this.__closure;const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function repeat(animation,now){const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;if(finished){animation.reps+=1;if(nextAnimation.callback){nextAnimation.callback(true,animation.current);}if(animation.reduceMotion||numberOfReps>0&&animation.reps>=numberOfReps){return true;}const startValue=reverse?nextAnimation.current:animation.startValue;if(reverse){nextAnimation.toValue=animation.startValue;animation.startValue=startValue;}nextAnimation.onStart(nextAnimation,startValue,now,nextAnimation.previousAnimation);return false;}return false;}const repCallback=function(finished){if(callback){callback(finished);}if(!finished&&nextAnimation.callback){nextAnimation.callback(false);}};function onStart(animation,value,now,previousAnimation){animation.startValue=value;animation.reps=0;if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}if(animation.reduceMotion&&reverse&&(numberOfReps<=0||numberOfReps%2===0)){animation.current=animation.startValue;animation.onFrame=function(){return true;};}else{nextAnimation.onStart(nextAnimation,value,now,previousAnimation);}}return{isHigherOrder:true,onFrame:repeat,onStart:onStart,reps:0,current:nextAnimation.current,callback:repCallback,startValue:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}" };
-fn = function n(_nextAnimation, arg1, arg2, callback, reduceMotion) {
-  _require = _nextAnimation;
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 2;
-  }
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  closure_3 = callback;
-  closure_4 = reduceMotion;
-  const fn = function l() {
-    let tmpResult = _nextAnimation;
-    if (typeof _nextAnimation === "function") {
-      tmpResult = tmp();
-    }
-    _nextAnimation = tmpResult;
-    const obj = {
-      isHigherOrder: true,
-      onFrame: function repeat(reps, arg1) {
-        reps.current = closure_0.current;
-        if (closure_0.onFrame(closure_0, arg1)) {
-          reps.reps = reps.reps + 1;
-          if (obj.callback) {
-            obj.callback(true, reps.current);
-          }
-          if (!reps.reduceMotion) {
-            const tmp3 = flag ? obj.current : reps.startValue;
-            if (flag) {
-              obj.toValue = reps.startValue;
-              reps.startValue = tmp3;
-            }
-            obj.onStart(obj, tmp3, arg1, obj.previousAnimation);
-            return false;
-          }
-          return true;
-        } else {
-          return false;
-        }
-      },
-      onStart(reduceMotion, startValue, arg2, arg3) {
-        reduceMotion.startValue = startValue;
-        reduceMotion.reps = 0;
-        if (undefined === closure_0.reduceMotion) {
-          obj.reduceMotion = reduceMotion.reduceMotion;
-        }
-        if (reduceMotion.reduceMotion) {
-          if (flag) {
-            reduceMotion.current = reduceMotion.startValue;
-            reduceMotion.onFrame = () => true;
-          }
-        }
-        closure_0.onStart(closure_0, startValue, arg2, arg3);
-      },
-      reps: 0,
-      current: tmpResult.current,
-      callback(arg0) {
-        if (closure_3) {
-          tmp(arg0);
-        }
-        callback = !arg0;
-        if (!arg0) {
-          callback = closure_0.callback;
-        }
-        if (callback) {
-          closure_0.callback(false);
-        }
-      },
-      startValue: 0,
-      reduceMotion: _nextAnimation(num[0]).getReduceMotionForAnimation(closure_4)
-    };
-    return obj;
-  };
-  let obj = require("module_1681");
-  fn.__closure = { _nextAnimation, numberOfReps: num, reverse: flag, callback, getReduceMotionForAnimation: require("module_1681").getReduceMotionForAnimation, reduceMotion };
-  fn.__workletHash = 11413099333511;
-  fn.__initData = flag;
-  return obj.defineAnimation(_nextAnimation, fn);
-};
-fn.__closure = { defineAnimation: fn(1681).defineAnimation, getReduceMotionForAnimation: fn(1681).getReduceMotionForAnimation };
-fn.__workletHash = 13638828150427;
-fn.__initData = { code: "function pnpm_repeatTs1(_nextAnimation,numberOfReps=2,reverse=false,callback,reduceMotion){const{defineAnimation,getReduceMotionForAnimation}=this.__closure;return defineAnimation(_nextAnimation,function(){'worklet';const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function repeat(animation,now){const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;if(finished){animation.reps+=1;if(nextAnimation.callback){nextAnimation.callback(true,animation.current);}if(animation.reduceMotion||numberOfReps>0&&animation.reps>=numberOfReps){return true;}const startValue=reverse?nextAnimation.current:animation.startValue;if(reverse){nextAnimation.toValue=animation.startValue;animation.startValue=startValue;}nextAnimation.onStart(nextAnimation,startValue,now,nextAnimation.previousAnimation);return false;}return false;}const repCallback=function(finished){if(callback){callback(finished);}if(!finished&&nextAnimation.callback){nextAnimation.callback(false);}};function onStart(animation,value,now,previousAnimation){animation.startValue=value;animation.reps=0;if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}if(animation.reduceMotion&&reverse&&(numberOfReps<=0||numberOfReps%2===0)){animation.current=animation.startValue;animation.onFrame=function(){return true;};}else{nextAnimation.onStart(nextAnimation,value,now,previousAnimation);}}return{isHigherOrder:true,onFrame:repeat,onStart:onStart,reps:0,current:nextAnimation.current,callback:repCallback,startValue:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}" };
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-export const withRepeat = fn;
+const ComplexAnimationBuilder = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+class ComplexAnimationBuilder {
+  constructor() {
+    self = this;
+    tmp = c2(this, ComplexAnimationBuilder);
+    tmp2 = closure_4;
+    obj = closure_4(ComplexAnimationBuilder);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ComplexAnimationBuilder, fn(1708).BaseAnimationBuilder);
+const entry = {
+  key: "easing",
+  value: function easing(easingV) {
+    this.easingV = easingV;
+    return this;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "rotate",
+    value: function rotate(rotateV) {
+      this.rotateV = rotateV;
+      return this;
+    }
+  },
+  {
+    key: "springify",
+    value: function springify(durationV) {
+      return { durationV, type: ComplexAnimationBuilder(1709).withSpring };
+    }
+  },
+  {
+    key: "dampingRatio",
+    value: function dampingRatio(dampingRatioV) {
+      this.dampingRatioV = dampingRatioV;
+      return this;
+    }
+  },
+  {
+    key: "damping",
+    value: function damping(dampingV) {
+      this.dampingV = dampingV;
+      return this;
+    }
+  },
+  {
+    key: "mass",
+    value: function mass(massV) {
+      this.massV = massV;
+      return this;
+    }
+  },
+  {
+    key: "stiffness",
+    value: function stiffness(stiffnessV) {
+      this.stiffnessV = stiffnessV;
+      return this;
+    }
+  },
+  {
+    key: "overshootClamping",
+    value: function overshootClamping(overshootClampingV) {
+      this.overshootClampingV = overshootClampingV;
+      return this;
+    }
+  },
+  {
+    key: "restDisplacementThreshold",
+    value: function restDisplacementThreshold(restDisplacementThresholdV) {
+      this.restDisplacementThresholdV = restDisplacementThresholdV;
+      return this;
+    }
+  },
+  {
+    key: "restSpeedThreshold",
+    value: function restSpeedThreshold(restSpeedThresholdV) {
+      this.restSpeedThresholdV = restSpeedThresholdV;
+      return this;
+    }
+  },
+  {
+    key: "withInitialValues",
+    value: function withInitialValues(initialValues) {
+      this.initialValues = initialValues;
+      return this;
+    }
+  },
+  {
+    key: "getAnimationAndConfig",
+    value: function getAnimationAndConfig() {
+      const self = this;
+      ({ easingV, durationV, rotateV } = this);
+      if (this.type) {
+        let withTiming = self.type;
+      } else {
+        withTiming = ComplexAnimationBuilder(1709).withTiming;
+      }
+      const obj = {};
+      ({ dampingV, dampingRatioV, massV, stiffnessV, overshootClampingV, restDisplacementThresholdV, restSpeedThresholdV } = self);
+      if (withTiming === ComplexAnimationBuilder(1709).withTiming) {
+        if (easingV) {
+          obj.easing = easingV;
+        }
+      }
+      const items = [{ variableName: "damping", value: dampingV }, { variableName: "dampingRatio", value: dampingRatioV }, { variableName: "mass", value: massV }, { variableName: "stiffness", value: stiffnessV }, { variableName: "overshootClamping", value: overshootClampingV }, { variableName: "restDisplacementThreshold", value: restDisplacementThresholdV }, { variableName: "restSpeedThreshold", value: restSpeedThresholdV }, { variableName: "duration", value: durationV }, { variableName: "rotate", value: rotateV }];
+      const item = items.forEach((value) => {
+        value = value.value;
+        if (value) {
+          obj[tmp] = value;
+        }
+      });
+      const items1 = [withTiming, obj];
+      return items1;
+    }
+  }
+];
+const entry1 = {
+  key: "easing",
+  value: function easing(arg0) {
+    const instance = this.createInstance();
+    return instance.easing(arg0);
+  }
+};
+let items1 = [
+  entry1,
+  {
+    key: "rotate",
+    value: function rotate(arg0) {
+      const instance = this.createInstance();
+      return instance.rotate(arg0);
+    }
+  },
+  {
+    key: "springify",
+    value: function springify(arg0) {
+      const instance = this.createInstance();
+      return instance.springify(arg0);
+    }
+  },
+  {
+    key: "dampingRatio",
+    value: function dampingRatio(arg0) {
+      const instance = this.createInstance();
+      return instance.dampingRatio(arg0);
+    }
+  },
+  {
+    key: "damping",
+    value: function damping(arg0) {
+      const instance = this.createInstance();
+      return instance.damping(arg0);
+    }
+  },
+  {
+    key: "mass",
+    value: function mass(arg0) {
+      const instance = this.createInstance();
+      return instance.mass(arg0);
+    }
+  },
+  {
+    key: "stiffness",
+    value: function stiffness(arg0) {
+      const instance = this.createInstance();
+      return instance.stiffness(arg0);
+    }
+  },
+  {
+    key: "overshootClamping",
+    value: function overshootClamping(arg0) {
+      const instance = this.createInstance();
+      return instance.overshootClamping(arg0);
+    }
+  },
+  {
+    key: "restDisplacementThreshold",
+    value: function restDisplacementThreshold(arg0) {
+      const instance = this.createInstance();
+      return instance.restDisplacementThreshold(arg0);
+    }
+  },
+  {
+    key: "restSpeedThreshold",
+    value: function restSpeedThreshold(arg0) {
+      const instance = this.createInstance();
+      return instance.restSpeedThreshold(arg0);
+    }
+  },
+  {
+    key: "withInitialValues",
+    value: function withInitialValues(arg0) {
+      const instance = this.createInstance();
+      return instance.withInitialValues(arg0);
+    }
+  }
+];
+
+export const ComplexAnimationBuilder = _createClass(ComplexAnimationBuilder, items, items1);

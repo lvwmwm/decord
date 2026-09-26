@@ -1,20 +1,20 @@
-// Module ID: 10458
-// Function ID: 10459
+// Module ID: 11704
+// Function ID: 11705
 // Name: UnreadSettingNoticeStore2
-// Dependencies: [502, 2045, 2067, 2099, 4971, 1078, 4972, 1088, 1095, 11, 1389, 504, 10459, 577, 2]
+// Dependencies: [502, 2041, 2063, 2095, 4969, 1074, 4970, 1084, 1091, 11, 1385, 504, 10443, 573, 2]
 
-// Module 10458 (UnreadSettingNoticeStore2)
+// Module 11704 (UnreadSettingNoticeStore2)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import FlagUtils from "FlagUtils" /* 1389 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10459 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10443 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 require = fn;
 function startInterval() {
@@ -125,9 +125,9 @@ function shouldTrackChannel(channelId) {
     return false;
   }
 }
-const UserNotificationSettings = fn(1078).UserNotificationSettings;
-const UnreadSetting = fn(4972).UnreadSetting;
-const constants = fn(1088).ChannelNotificationSettingsFlags;
+const UserNotificationSettings = fn(1074).UserNotificationSettings;
+const UnreadSetting = fn(4970).UnreadSetting;
+const constants = fn(1084).ChannelNotificationSettingsFlags;
 let items = [{ timeSinceJoin: DurationsDefault.Millis.HOUR, sends: 1, viewTime: DurationsDefault.Millis.MINUTE }, , , ];
 let obj = { timeSinceJoin: DurationsDefault.Millis.HOUR, sends: 1, viewTime: DurationsDefault.Millis.MINUTE };
 items[1] = { timeSinceJoin: DurationsDefault.Millis.DAY, sends: 2, viewTime: 2 * DurationsDefault.Millis.MINUTE };

@@ -1,15 +1,15 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8675
+// Function ID: 8676
 // Name: MaskedLinkStore
-// Dependencies: [8648, 8681, 1370, 510, 504, 577, 2]
+// Dependencies: [8643, 8676, 1366, 510, 504, 573, 2]
 
-// Module 8680 (MaskedLinkStore)
+// Module 8675 (MaskedLinkStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import URLUtilsDefault from "URLUtils" /* 1370 */;
-import SpotifyConstants from "SpotifyConstants" /* 8648 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8681 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import SpotifyConstants from "SpotifyConstants" /* 8643 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8676 */;
 import size from "module_2" /* 2 */;
 
 const SPOTIFY_HOSTNAMES = SpotifyConstants.SPOTIFY_HOSTNAMES;
@@ -123,7 +123,7 @@ const maskedLinkStore = new MaskedLinkStore(DispatcherDefault, {
     if (flag) {
       return false;
     } else {
-      set2.add(tmp(8681).getHostname(url));
+      set2.add(tmp(8676).getHostname(url));
       const Storage = tmp(510).Storage;
       const obj3 = { trustedDomains: set2, trustedProtocols: set3 };
       const result = Storage.set(MaskedLinkStore, obj3);
@@ -134,7 +134,7 @@ const maskedLinkStore = new MaskedLinkStore(DispatcherDefault, {
     if (set3.has(obj.getProtocol(url))) {
       return false;
     } else {
-      set3.add(tmp(8681).getProtocol(url));
+      set3.add(tmp(8676).getProtocol(url));
       const Storage = tmp(510).Storage;
       const obj2 = { trustedDomains: set2, trustedProtocols: set3 };
       const result = Storage.set(MaskedLinkStore, obj2);

@@ -1,11 +1,11 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 9903
+// Function ID: 9904
 // Name: canViewInviteModal
-// Dependencies: [1078, 2]
+// Dependencies: [1074, 2]
 // Exports: canViewInviteModal
 
-// Module 9881 (canViewInviteModal)
-import Constants from "Constants" /* 1078 */;
+// Module 9903 (canViewInviteModal)
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

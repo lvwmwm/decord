@@ -1,12 +1,12 @@
 // Module ID: 4136
 // Function ID: 4137
-// Dependencies: [3881, 4124, 3882]
+// Dependencies: [3877, 4059, 4120]
 // Exports: default
 
 // Module 4136
-import _typeof_mod from "module_3881" /* 3881 */;
-import module_4124_mod from "module_4124" /* 4124 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import module_4059_mod from "module_4059" /* 4059 */;
+import module_4120_mod from "module_4120" /* 4120 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -16,121 +16,51 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let module_4124 = module_4124_mod;
-if (!module_4124) {
-  const obj2 = { default: module_4124 };
+let module_4059 = module_4059_mod;
+if (!module_4059) {
+  const obj2 = { default: module_4059 };
   let tmp5 = obj2;
 } else {
-  tmp5 = module_4124;
+  tmp5 = module_4059;
 }
-module_4124 = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
+module_4059 = tmp5;
+let module_4120 = module_4120_mod;
+if (!module_4120) {
+  const obj3 = { default: module_4120 };
   let tmp7 = obj3;
 } else {
-  tmp7 = requiredArgs;
+  tmp7 = module_4120;
 }
-requiredArgs = tmp7;
+module_4120 = tmp7;
+let closure_3 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let closure_4 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-export default function formatISO(arg0, format) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  if (isNaN(defaultResult1.getTime())) {
-    const _RangeError3 = RangeError;
-    const rangeError = new RangeError("Invalid time value");
-    throw rangeError;
+export default function formatRFC7231(arg0) {
+  if (arguments.length < 1) {
+    const _TypeError = TypeError;
+    const concat2 = "1 arguments required, but only ".concat;
+    const typeError = new TypeError("1 arguments required, but only ".concat(arguments.length, " present"));
+    throw typeError;
   } else {
-    format = undefined;
-    if (null != format) {
-      format = format.format;
-    }
-    let str2 = "extended";
-    if (null !== format) {
-      str2 = "extended";
-      if (undefined !== format) {
-        str2 = format;
-      }
-    }
-    const StringResult = String(str2);
-    let representation;
-    if (null != format) {
-      representation = format.representation;
-    }
-    let str4 = "complete";
-    if (null !== representation) {
-      str4 = "complete";
-      if (undefined !== representation) {
-        str4 = representation;
-      }
-    }
-    const StringResult1 = String(str4);
-    if ("extended" !== StringResult) {
-      if ("basic" !== StringResult) {
-        const _RangeError2 = RangeError;
-        const rangeError1 = new RangeError("format must be 'extended' or 'basic'");
-        throw rangeError1;
-      }
-    }
-    if ("date" !== StringResult1) {
-      if ("time" !== StringResult1) {
-        if ("complete" !== StringResult1) {
-          const _RangeError = RangeError;
-          const rangeError2 = new RangeError("representation must be 'date', 'time', or 'complete'");
-          throw rangeError2;
-        }
-      }
-    }
-    let str9 = "";
-    if ("extended" === StringResult) {
-      str9 = "-";
-    }
-    let str10 = "";
-    if ("extended" === StringResult) {
-      str10 = ":";
-    }
-    let str12 = "";
-    if ("time" !== StringResult1) {
-      const defaultResult2 = module_4124.default(defaultResult1.getDate(), 2);
-      const concat2 = "".concat;
-      const combined = "".concat(module_4124.default(defaultResult1.getFullYear(), 4));
-      const combined1 = combined.concat(str9);
-      const combined2 = combined1.concat(module_4124.default(defaultResult1.getMonth() + 1, 2));
-      const combined3 = combined2.concat(str9);
-      str12 = combined3.concat(defaultResult2);
-      const defaultResult3 = module_4124.default(defaultResult1.getMonth() + 1, 2);
-    }
-    let combined9 = str12;
-    if ("date" !== StringResult1) {
-      const timezoneOffset = defaultResult1.getTimezoneOffset();
-      let str13 = "Z";
-      if (0 !== timezoneOffset) {
-        const _Math = Math;
-        const absolute = Math.abs(timezoneOffset);
-        const _Math2 = Math;
-        let str14 = "-";
-        const defaultResult4 = module_4124.default(Math.floor(absolute / 60), 2);
-        if (timezoneOffset < 0) {
-          str14 = "+";
-        }
-        const combined4 = "".concat(str14);
-        const combined5 = combined4.concat(defaultResult4, ":");
-        str13 = combined5.concat(module_4124.default(absolute % 60, 2));
-        const defaultResult5 = module_4124.default(absolute % 60, 2);
-      }
-      let str16 = "T";
-      if ("" === str12) {
-        str16 = "";
-      }
-      const items = [module_4124.default(defaultResult1.getHours(), 2), module_4124.default(defaultResult1.getMinutes(), 2), module_4124.default(defaultResult1.getSeconds(), 2)];
+    const defaultResult = _typeof.default(arg0);
+    if (module_4059.default(defaultResult)) {
+      const uTCFullYear = defaultResult.getUTCFullYear();
+      const defaultResult1 = module_4120.default(defaultResult.getUTCDate(), 2);
+      const defaultResult2 = module_4120.default(defaultResult.getUTCHours(), 2);
       const concat = "".concat;
-      const joined = items.join(str10);
-      const combined6 = "".concat(str12);
-      const combined7 = combined6.concat(str16);
-      const combined8 = combined7.concat(joined);
-      combined9 = combined8.concat(str13);
+      const defaultResult3 = module_4120.default(defaultResult.getUTCMinutes(), 2);
+      const combined = "".concat(closure_3[defaultResult.getUTCDay(defaultResult)], ", ");
+      const combined1 = combined.concat(defaultResult1, " ");
+      const combined2 = combined1.concat(closure_4[defaultResult.getUTCMonth(defaultResult)], " ");
+      const combined3 = combined2.concat(uTCFullYear, " ");
+      const combined4 = combined3.concat(defaultResult2, ":");
+      const combined5 = combined4.concat(defaultResult3, ":");
+      return combined5.concat(module_4120.default(defaultResult.getUTCSeconds(), 2), " GMT");
+    } else {
+      const _RangeError = RangeError;
+      const rangeError = new RangeError("Invalid time value");
+      throw rangeError;
     }
-    return combined9;
   }
 };
 export default exports.default;

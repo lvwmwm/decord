@@ -1,18 +1,18 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 9984
+// Function ID: 9985
 // Name: SecureFramesVerifiedStore
-// Dependencies: [502, 4813, 4829, 9963, 9964, 1078, 9980, 4842, 4845, 504, 577, 2]
+// Dependencies: [502, 4811, 4827, 9985, 9986, 1074, 10002, 4840, 4843, 504, 573, 2]
 
-// Module 9962 (SecureFramesVerifiedStore)
+// Module 9984 (SecureFramesVerifiedStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4845 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9980 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 10002 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4829 */;
-import TransientKeyStore from "TransientKeyStore" /* 9963 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9964 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4827 */;
+import TransientKeyStore from "TransientKeyStore" /* 9985 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9986 */;
 
 require = fn;
 function computeCallVerification() {
@@ -73,7 +73,7 @@ function handleUserUpdate(userId) {
     return flag;
   }
 }
-const RTCConnectionStates = fn(1078).RTCConnectionStates;
+const RTCConnectionStates = fn(1074).RTCConnectionStates;
 const map = new Map();
 const map1 = new Map();
 let c10 = false;
@@ -123,7 +123,7 @@ const secureFramesVerifiedStore = new SecureFramesVerifiedStore(DispatcherDefaul
           tmp6 = computeCallVerification();
         }
         return tmp6;
-      } else if (tmp10(4845).MediaEngineContextTypes.DEFAULT === context) {
+      } else if (tmp10(4843).MediaEngineContextTypes.DEFAULT === context) {
         map.clear();
         map1.clear();
         c10 = false;

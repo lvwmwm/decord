@@ -1,12 +1,12 @@
-// Module ID: 8419
-// Function ID: 8420
+// Module ID: 8414
+// Function ID: 8415
 // Name: LocalInteractionComponentStateStore
-// Dependencies: [8420, 504, 577, 2]
+// Dependencies: [8415, 504, 573, 2]
 
-// Module 8419 (LocalInteractionComponentStateStore)
+// Module 8414 (LocalInteractionComponentStateStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import LimitedMapDefault from "LimitedMap" /* 8420 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import LimitedMapDefault from "LimitedMap" /* 8415 */;
 
 let closure_0 = new LimitedMapDefault(196606);
 let closure_1 = 0;

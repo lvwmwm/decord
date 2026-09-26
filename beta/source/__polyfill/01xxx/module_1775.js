@@ -1,6 +1,6 @@
 // Module ID: 1775
 // Function ID: 1776
-// Dependencies: [41, 42, 93, 95, 98, 1713, 1711]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1640, 1745, 1681]
 
 // Module 1775
 import _classCallCheck from "_classCallCheck" /* 41 */;
@@ -8,8 +8,9 @@ import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
+import noop_mod from "module_19" /* 19 */;
 
-const SequencedTransition = fn;
+const LayoutAnimationConfig = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,97 +30,100 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_6 = { code: "function pnpm_SequencedTransitionTs1(values){const{delayFunction,delay,withSequence,withTiming,reverse,config,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,withSequence(withTiming(reverse?values.currentOriginX:values.targetOriginX,config),withTiming(values.targetOriginX,config))),originY:delayFunction(delay,withSequence(withTiming(reverse?values.targetOriginY:values.currentOriginY,config),withTiming(values.targetOriginY,config))),width:delayFunction(delay,withSequence(withTiming(reverse?values.currentWidth:values.targetWidth,config),withTiming(values.targetWidth,config))),height:delayFunction(delay,withSequence(withTiming(reverse?values.targetHeight:values.currentHeight,config),withTiming(values.targetHeight,config)))},callback:callback};}" };
-class SequencedTransition {
+function SkipEntering(children) {
+  const tmp = React5(children.shouldSkip);
+  closure_0 = tmp;
+  const tmp2 = React5(children.itemKey);
+  if (children.itemKey !== tmp2.current) {
+    ({ shouldSkip: tmp.current, itemKey: tmp2.current } = children);
+  }
+  const items = [tmp, children.itemKey];
+  timestampProducer(() => {
+    closure_0.current = false;
+  }, items);
+  return jsx(closure_10 ? context : context.Provider, { value: tmp, children: children.children });
+}
+let noop = fn(19);
+({ Children: hasOwnProperty, useEffect: metroRequire, useRef: closure_7, Component, createContext } = noop);
+let noop = noop_mod;
+const jsx = fn(21).jsx;
+const module_1640 = fn(1640);
+let closure_10 = module_1640.isReact19();
+const context = createContext(null);
+class LayoutAnimationConfig {
   constructor() {
     self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = c2(this, SequencedTransition);
-    items1 = [...items];
+    tmp = c2(this, LayoutAnimationConfig);
     tmp2 = closure_4;
-    obj = closure_4(SequencedTransition);
+    obj = closure_4(LayoutAnimationConfig);
     tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
+    if (closure_9()) {
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.reversed = false;
-    tmp3Result.build = () => {
-      delayFunction = delayFunction.getDelayFunction();
-      const callbackV = delayFunction.callbackV;
-      const delay = delayFunction.getDelay();
-      let num = delayFunction.durationV;
-      if (num == null) {
-        num = 500;
-      }
-      const config = { duration: num / 2 };
-      const reversed = delayFunction.reversed;
-      const fn = function e(originX) {
-        const obj = { initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: null, callback: null };
-        const obj2 = delayFunction(1713);
-        const size = { originX: null, originY: null, width: null, height: null };
-        const obj3 = delayFunction(1713);
-        const withTimingResult = delayFunction(1713).withTiming(reversed ? originX.currentOriginX : originX.targetOriginX, obj);
-        size.originX = delayFunction(delay, obj2.withSequence(withTimingResult, delayFunction(1713).withTiming(originX.targetOriginX, obj)));
-        const tmp3Result = delayFunction(1713);
-        const tmp3Result10 = delayFunction(1713);
-        const tmp3Result11 = delayFunction(1713);
-        const withTimingResult1 = delayFunction(1713).withTiming(reversed ? originX.targetOriginY : originX.currentOriginY, obj);
-        size.originY = delayFunction(delay, tmp3Result10.withSequence(withTimingResult1, delayFunction(1713).withTiming(originX.targetOriginY, obj)));
-        const tmp3Result12 = delayFunction(1713);
-        const tmp3Result13 = delayFunction(1713);
-        const tmp3Result14 = delayFunction(1713);
-        const withTimingResult2 = delayFunction(1713).withTiming(reversed ? originX.currentWidth : originX.targetWidth, obj);
-        size.width = delayFunction(delay, tmp3Result13.withSequence(withTimingResult2, delayFunction(1713).withTiming(originX.targetWidth, obj)));
-        const tmp3Result15 = delayFunction(1713);
-        const tmp3Result16 = delayFunction(1713);
-        const tmp3Result17 = delayFunction(1713);
-        const withTimingResult3 = delayFunction(1713).withTiming(reversed ? originX.targetHeight : originX.currentHeight, obj);
-        size.height = delayFunction(delay, tmp3Result16.withSequence(withTimingResult3, delayFunction(1713).withTiming(originX.targetHeight, obj)));
-        obj.animations = size;
-        obj.callback = callbackV;
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, withSequence: SequencedTransition(1713).withSequence, withTiming: SequencedTransition(1713).withTiming, reverse: reversed, config, callback: callbackV };
-      fn.__workletHash = 255577740024;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(SequencedTransition, fn(1711).BaseAnimationBuilder);
+_inherits(LayoutAnimationConfig, Component);
 const entry = {
-  key: "reverse",
-  value: function reverse() {
-    this.reversed = !this.reversed;
-    return this;
+  key: "getMaybeWrappedChildren",
+  value: function getMaybeWrappedChildren() {
+    const self = this;
+    if (hasOwnProperty.count(this.props.children) > 1) {
+      if (self.props.skipExiting) {
+        let children = hasOwnProperty.map(self.props.children, (children) => closure_8(LayoutAnimationConfig, { itemKey: self.props.itemKey, skipExiting: true, children }));
+      }
+      return children;
+    }
+    children = self.props.children;
   }
 };
-let items = [entry];
-const entry1 = {
-  key: "createInstance",
-  value: function createInstance() {
-    return SequencedTransition();
-  }
-};
-let items1 = [
-  entry1,
+let items = [
+  entry,
   {
-    key: "reverse",
-    value: function reverse() {
-      const instance = SequencedTransition.createInstance();
-      return instance.reverse();
+    key: "setShouldAnimateExiting",
+    value: function setShouldAnimateExiting() {
+      const self = this;
+      if (1 === hasOwnProperty.count(this.props.children)) {
+        const findNodeHandleResult = LayoutAnimationConfig(1745).findNodeHandle(self);
+        if (findNodeHandleResult) {
+          const result = tmp(1681).setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
+          const tmpResult = tmp(1681);
+        }
+        const obj = LayoutAnimationConfig(1745);
+        tmp = LayoutAnimationConfig;
+      }
+    }
+  },
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const self = this;
+      if (undefined !== this.props.skipExiting) {
+        const result = self.setShouldAnimateExiting();
+      }
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const maybeWrappedChildren = this.getMaybeWrappedChildren();
+      let tmp2 = maybeWrappedChildren;
+      if (undefined !== this.props.skipEntering) {
+        const obj = { itemKey: self.props.itemKey, shouldSkip: self.props.skipEntering, children: maybeWrappedChildren };
+        tmp2 = <SkipEntering itemKey={self.props.itemKey} shouldSkip={self.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
+      }
+      return tmp2;
     }
   }
 ];
-const importDefaultResultResult = _createClass(SequencedTransition, items, items1);
-importDefaultResultResult.presetName = "SequencedTransition";
 
-export const SequencedTransition = importDefaultResultResult;
+export const SkipEnteringContext = context;
+export const LayoutAnimationConfig = _createClass(LayoutAnimationConfig, items);

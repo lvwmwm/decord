@@ -1,15 +1,15 @@
-// Module ID: 7966
-// Function ID: 7967
+// Module ID: 7961
+// Function ID: 7962
 // Name: applicationDirectoryAnalytics
-// Dependencies: [2099, 4612, 1078, 1245, 2]
+// Dependencies: [2095, 4609, 1074, 1241, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 7966 (applicationDirectoryAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+// Module 7961 (applicationDirectoryAnalytics)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
 
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/global_discovery_apps/applicationDirectoryAnalytics.tsx");
 

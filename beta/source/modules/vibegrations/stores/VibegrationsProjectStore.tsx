@@ -1,15 +1,15 @@
-// Module ID: 9339
-// Function ID: 9340
+// Module ID: 9341
+// Function ID: 9342
 // Name: VibegrationsProjectStore
-// Dependencies: [32, 1376, 5309, 504, 577, 2]
+// Dependencies: [32, 1372, 5307, 504, 573, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 9339 (VibegrationsProjectStore)
+// Module 9341 (VibegrationsProjectStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5309 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5307 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function isProjectOwner(item10010) {

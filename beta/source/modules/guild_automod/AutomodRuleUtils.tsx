@@ -1,21 +1,21 @@
-// Module ID: 17957
-// Function ID: 17958
+// Module ID: 17948
+// Function ID: 17949
 // Name: AutomodRuleUtils
-// Dependencies: [502, 17954, 12029, 1374, 17958, 17959, 1119, 8234, 7800, 2]
+// Dependencies: [502, 17945, 12146, 1370, 17949, 17950, 1115, 8229, 7795, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, getRulesFromTriggerTypeMap, isBackendPersistedRule, isRegexSupported, isRuleApplicationFilter, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 17957 (AutomodRuleUtils)
-import util from "util" /* 1119 */;
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7800 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8234 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17958 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 17959 */;
+// Module 17948 (AutomodRuleUtils)
+import util from "util" /* 1115 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7795 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8229 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17949 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 17950 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const getRuleCountByTriggerType = fn(17954).getRuleCountByTriggerType;
-const Constants = fn(12029);
+const getRuleCountByTriggerType = fn(17945).getRuleCountByTriggerType;
+const Constants = fn(12146);
 ({ AutomodTriggerType: closure_4, MAX_KEYWORDS_PER_KEYWORD_FILTER: hasOwnProperty, MAX_REGEX_PATTERNS_PER_KEYWORD_FILTER: metroRequire, MAX_CHARACTERS_PER_KEYWORD: closure_7, MIN_CHARACTERS_PER_KEYWORD: closure_8, MIN_REGEX_PATTERN_LENGTH: closure_9, MAX_REGEX_PATTERN_LENGTH: c10, AutomodActionType: closure_11, AutomodEventType: closure_12 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodRuleUtils.tsx");
@@ -39,10 +39,10 @@ export const isRegexSupported = function isRegexSupported(arg0) {
 export const getNewAutomodRuleMockId = function getNewAutomodRuleMockId(arg0, arg1) {
   return "" + arg0 + "-" + arg1 + "-new-rule";
 };
-export const isRuleKeywordFilter = function isRuleKeywordFilter(rule) {
+export const isRuleKeywordFilter = function isRuleKeywordFilter(length) {
   let triggerType;
-  if (rule != null) {
-    triggerType = rule.triggerType;
+  if (length != null) {
+    triggerType = length.triggerType;
   }
   return triggerType === constants.KEYWORD;
 };
@@ -81,10 +81,10 @@ export const isRuleUserProfileFilter = function isRuleUserProfileFilter(rule) {
   }
   return triggerType === constants.USER_PROFILE;
 };
-export const isRuleApplicationFilter = function isRuleApplicationFilter(rule) {
+export const isRuleApplicationFilter = function isRuleApplicationFilter(editingRule) {
   let triggerType;
-  if (rule != null) {
-    triggerType = rule.triggerType;
+  if (editingRule != null) {
+    triggerType = editingRule.triggerType;
   }
   return triggerType === constants.APPLICATION;
 };
@@ -110,8 +110,8 @@ export const createDefaultRule = function createDefaultRule(guildId, triggerType
   }
   if (obj5.isSnowflake(str)) {
     const _Error = Error;
-    const intl = tmp(1119).intl;
-    const error = new Error(intl.string(tmp(1119).t["A/nX8D"]));
+    const intl = tmp(1115).intl;
+    const error = new Error(intl.string(tmp(1115).t["A/nX8D"]));
     throw error;
   } else {
     const tmp7 = getRuleCountByTriggerType(guildId, triggerType);
@@ -123,11 +123,11 @@ export const createDefaultRule = function createDefaultRule(guildId, triggerType
   }
   obj5 = ApplicationCommandUtils;
 };
-export const validateKeywordsOrThrow = function validateKeywordsOrThrow(arr, maxWordCount) {
-  if (arr.length > maxWordCount) {
+export const validateKeywordsOrThrow = function validateKeywordsOrThrow(arr, limit) {
+  if (arr.length > limit) {
     const _Error = Error;
     const intl = util.intl;
-    const obj = { limit: maxWordCount };
+    const obj = { limit };
     const error = new Error(intl.formatToPlainString(util.t.mee4qd, obj));
     throw error;
   } else {

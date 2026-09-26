@@ -1,17 +1,17 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12648
+// Function ID: 12649
 // Name: SearchPeopleTabStore
-// Dependencies: [2045, 5760, 12, 12550, 11200, 1119, 504, 577, 2]
+// Dependencies: [2041, 5758, 12, 12649, 11153, 1115, 504, 573, 2]
 
-// Module 12549 (SearchPeopleTabStore)
+// Module 12648 (SearchPeopleTabStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import util from "util" /* 1119 */;
-import useUserListData from "useUserListData" /* 11200 */;
-import NewMessageUserList from "NewMessageUserList" /* 12550 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import FrecencyStore from "FrecencyStore" /* 5760 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import util from "util" /* 1115 */;
+import useUserListData from "useUserListData" /* 11153 */;
+import NewMessageUserList from "NewMessageUserList" /* 12649 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import FrecencyStore from "FrecencyStore" /* 5758 */;
 
 require = fn;
 let closure_5 = [];
@@ -52,7 +52,7 @@ prototype["search"] = function search(str) {
       let items = [];
     } else {
       const values = _modDef12.chain(ChannelStore.getMutablePrivateChannels()).values();
-      const found = values.filter(trimmed1(12550).filterGroupDMs);
+      const found = values.filter(trimmed1(12649).filterGroupDMs);
       const mapped = found.map((id) => {
         const items = [id, NewMessageUserList.matchGroupDM(id, trimmed1), FrecencyStore.getScoreWithoutFetchingLatest(id.id)];
         return items;
@@ -92,8 +92,8 @@ prototype["processResults"] = function processResults() {
     arr3 = result;
     if ("" !== self.searchQueryString) {
       const obj3 = { title: null, items: null };
-      let intl = tmp(1119).intl;
-      obj3.title = intl.string(tmp(1119).t.qGlQrW);
+      let intl = tmp(1115).intl;
+      obj3.title = intl.string(tmp(1115).t.qGlQrW);
       obj3.items = self.groupDMs;
       const findIndexResult = result.findIndex((title) => {
         const intl = util.intl;

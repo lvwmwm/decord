@@ -1,12 +1,12 @@
-// Module ID: 8112
-// Function ID: 8113
+// Module ID: 8107
+// Function ID: 8108
 // Name: trackPoggermodeSettingsUpdated
-// Dependencies: [7952, 1078, 12, 1245, 2]
+// Dependencies: [7947, 1074, 12, 1241, 2]
 
-// Module 8112 (trackPoggermodeSettingsUpdated)
-import Constants from "Constants" /* 1078 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7952 */;
+// Module 8107 (trackPoggermodeSettingsUpdated)
+import Constants from "Constants" /* 1074 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7947 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

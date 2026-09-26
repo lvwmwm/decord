@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 64 (sizesDiffer)
-let closure_0 = { width: "state", height: "toCharArray$esjava$1" };
+let closure_0 = { width: "y", height: "w" };
 
 export default function sizesDiffer(arg0, arg1) {
   let size = arg0;

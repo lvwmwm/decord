@@ -1,148 +1,38 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13858
+// Function ID: 13859
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 7708, 1378, 21, 4790, 580, 558, 568, 13869, 13870, 8363, 7712, 7713, 11049, 4450, 5230, 1098, 5856, 2]
+// Dependencies: [19, 17, 7706, 1374, 21, 4788, 576, 5230, 1094, 4446, 13859, 13860, 8358, 9531, 11011, 11012, 5856, 2]
+// Exports: default
 
-// Module 13868 (PremiumTierCard)
-import nativeDefault from "native" /* 580 */;
-import ConstantsIOS from "ConstantsIOS" /* 1098 */;
-import PremiumUtils from "PremiumUtils" /* 4450 */;
+// Module 13858 (PremiumTierCard)
+import nativeDefault from "native" /* 576 */;
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+import PremiumUtils from "PremiumUtils" /* 4446 */;
 import LinearGradientDefault from "LinearGradient" /* 5230 */;
-import _modDef7712 from "module_7712" /* 7712 */;
-import _modDef7713 from "module_7713" /* 7713 */;
-import _modDef8363 from "module_8363" /* 8363 */;
-import _modDef11049 from "module_11049" /* 11049 */;
-import _modDef13869 from "module_13869" /* 13869 */;
-import _modDef13870 from "module_13870" /* 13870 */;
 import noop from "module_19" /* 19 */;
 
 const Card = tmp8(5856);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const getPremiumGradientColor = fn(7708).getPremiumGradientColor;
-const PremiumTypes = fn(1378).PremiumTypes;
+const getPremiumGradientColor = fn(7706).getPremiumGradientColor;
+const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { header: { marginTop: 24, padding: 16 }, textLogoTier0: { width: 158, height: 32 }, textLogoTier1: { width: 185, height: 32 }, textLogoTier2: { width: 80, height: 32 }, wumpusLogo: { position: "absolute", top: 0, right: 24, zIndex: 1 }, wumpusLogoTier0: { width: 83, height: 100 }, wumpusLogoTier1: { width: 86, height: 100 }, wumpusLogoTier2: { width: 133, height: 100 }, body: { padding: 16, borderBottomRightRadius: nativeDefault.radii.xs, borderBottomLeftRadius: nativeDefault.radii.xs } };
 let closure_10 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-const obj3 = { padding: 16, borderBottomRightRadius: nativeDefault.radii.xs, borderBottomLeftRadius: nativeDefault.radii.xs };
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/premium/PremiumTierCard.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
-  const cResult = premiumType(568).c(50);
-  premiumType = premiumType.premiumType;
-  ({ children, style } = premiumType);
-  const tmp2 = closure_10();
-  importDefault = tmp2;
-  if (cResult[0] !== premiumType) {
-    const fn = function n() {
-      if (PremiumTypes.TIER_0 === premiumType) {
-        return _modDef13869;
-      } else if (tmp2.TIER_1 === tmp) {
-        return _modDef13870;
-      } else if (tmp2.TIER_2 === tmp) {
-        return _modDef8363;
-      }
-    };
-    cResult[0] = premiumType;
-    cResult[1] = fn;
-  }
-  if (cResult[2] !== premiumType) {
-    class E {
-      constructor() {
-        tmp = premiumType;
-        tmp2 = PremiumTypes;
-        if (PremiumTypes.TIER_0 === premiumType) {
-          tmp7 = closure_1;
-          tmp8 = closure_2;
-          return closure_1(closure_2[12]);
-        } else if (tmp2.TIER_1 === tmp) {
-          tmp5 = closure_1;
-          tmp6 = closure_2;
-          return closure_1(closure_2[13]);
-        } else if (tmp2.TIER_2 === tmp) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          return closure_1(closure_2[14]);
-        } else {
-          return;
-        }
-      }
-    }
-    cResult[2] = premiumType;
-    cResult[3] = E;
-  } else {
-    class E {
-      constructor() {
-        tmp = premiumType;
-        tmp2 = PremiumTypes;
-        if (PremiumTypes.TIER_0 === premiumType) {
-          tmp7 = closure_1;
-          tmp8 = closure_2;
-          return closure_1(closure_2[12]);
-        } else if (tmp2.TIER_1 === tmp) {
-          tmp5 = closure_1;
-          tmp6 = closure_2;
-          return closure_1(closure_2[13]);
-        } else if (tmp2.TIER_2 === tmp) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          return closure_1(closure_2[14]);
-        } else {
-          return;
-        }
-      }
-    }
-  }
-  if (cResult[4] === premiumType) {
-    class E {
-      constructor() {
-        tmp = premiumType;
-        tmp2 = PremiumTypes;
-        if (PremiumTypes.TIER_0 === premiumType) {
-          tmp7 = closure_1;
-          tmp8 = closure_2;
-          return closure_1(closure_2[12]);
-        } else if (tmp2.TIER_1 === tmp) {
-          tmp5 = closure_1;
-          tmp6 = closure_2;
-          return closure_1(closure_2[13]);
-        } else if (tmp2.TIER_2 === tmp) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          return closure_1(closure_2[14]);
-        } else {
-          return;
-        }
-      }
-    }
-  }
-  const fn2 = function b() {
-    if (PremiumTypes.TIER_0 === premiumType) {
-      return closure_1.textLogoTier0;
-    } else if (tmp2.TIER_1 === tmp) {
-      return closure_1.textLogoTier1;
-    } else if (tmp2.TIER_2 === tmp) {
-      return closure_1.textLogoTier2;
-    }
-  };
-  cResult[4] = premiumType;
-  cResult[5] = tmp2.textLogoTier0;
-  cResult[6] = tmp2.textLogoTier1;
-  cResult[7] = tmp2.textLogoTier2;
-  cResult[8] = fn2;
-}) : ((premiumType) => {
+export default function _default(premiumType) {
   premiumType = premiumType.premiumType;
   ({ children, style } = premiumType);
   const tmp = closure_10();
   const obj = { style: tmp.header, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: getPremiumGradientColor(premiumType), children: null };
   const obj2 = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, source: null };
-  const tmp2 = options;
-  const tmp3 = closure_1_8;
+  const tmp2 = React7;
+  const tmp3 = React6;
   const tmp7 = LinearGradientDefault;
   obj2.accessibilityLabel = PremiumUtils.getPremiumTypeDisplayName(premiumType);
   if (PremiumTypes.TIER_0 === premiumType) {
@@ -154,11 +44,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => 
   }
   obj2.style = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp5Result = tmp5(13869);
+    let tmp5Result = tmp5(13859);
   } else if (tmp10.TIER_1 === premiumType) {
-    tmp5Result = tmp5(13870);
+    tmp5Result = tmp5(13860);
   } else if (tmp10.TIER_2 === premiumType) {
-    tmp5Result = tmp5(8363);
+    tmp5Result = tmp5(8358);
   }
   obj2.source = tmp5Result;
   obj.children = React5(React4, obj2);
@@ -174,11 +64,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => 
   const obj4 = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp5Result2 = tmp5(7712);
+    let tmp5Result2 = tmp5(9531);
   } else if (tmp10.TIER_1 === premiumType) {
-    tmp5Result2 = tmp5(7713);
+    tmp5Result2 = tmp5(11011);
   } else if (tmp10.TIER_2 === premiumType) {
-    tmp5Result2 = tmp5(11049);
+    tmp5Result2 = tmp5(11012);
   }
   const obj5 = { children: null };
   obj4.source = tmp5Result2;
@@ -187,4 +77,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => 
   obj5.children = items;
   const children1 = tmp2(tmp3, obj5);
   return React5(Card.Card, { variant: "surface-high", style, children: children1 });
-});
+};

@@ -1,22 +1,22 @@
-// Module ID: 17887
-// Function ID: 17888
+// Module ID: 17878
+// Function ID: 17879
 // Name: GiftIntentReconcilingManager
-// Dependencies: [5011, 1224, 2045, 8373, 1078, 1095, 7397, 561, 11074, 577, 7735, 2]
+// Dependencies: [5009, 1220, 2041, 8368, 1074, 1091, 7395, 559, 11037, 573, 7730, 2]
 
-// Module 17887 (GiftIntentReconcilingManager)
-import BackoffDefault from "Backoff" /* 561 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7735 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11074 */;
-import EphemeralMessageStore from "EphemeralMessageStore" /* 5011 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8373 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+// Module 17878 (GiftIntentReconcilingManager)
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7730 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11037 */;
+import EphemeralMessageStore from "EphemeralMessageStore" /* 5009 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8368 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const MessageTypes = fn(1078).MessageTypes;
+const MessageTypes = fn(1074).MessageTypes;
 let closure_8 = 10 * DurationsDefault.Millis.SECOND;
 let closure_9 = 5 * DurationsDefault.Millis.MINUTE;
 class GiftIntentReconcilingManager extends tmp2 {

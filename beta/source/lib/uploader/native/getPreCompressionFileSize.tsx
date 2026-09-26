@@ -1,11 +1,11 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8115
+// Function ID: 8116
 // Name: getPreCompressionFileSize
-// Dependencies: [5, 5388, 2]
+// Dependencies: [5, 5386, 2]
 // Exports: getPreCompressionFileSize
 
-// Module 8120 (getPreCompressionFileSize)
-import utils_UploadUtils from "utils/UploadUtils" /* 5388 */;
+// Module 8115 (getPreCompressionFileSize)
+import utils_UploadUtils from "utils/UploadUtils" /* 5386 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -20,7 +20,7 @@ let closure_3 = async function _getPreCompressionFileSize(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

@@ -1,11 +1,11 @@
-// Module ID: 13339
-// Function ID: 13340
+// Module ID: 13329
+// Function ID: 13330
 // Name: shouldShowActivityTimeBar
-// Dependencies: [1078, 2]
+// Dependencies: [1074, 2]
 // Exports: default
 
-// Module 13339 (shouldShowActivityTimeBar)
-import Constants from "Constants" /* 1078 */;
+// Module 13329 (shouldShowActivityTimeBar)
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;

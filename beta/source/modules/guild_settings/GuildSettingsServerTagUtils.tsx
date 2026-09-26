@@ -1,23 +1,23 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 9890
+// Function ID: 9891
 // Name: GuildSettingsServerTagUtils
-// Dependencies: [2067, 4431, 1078, 9869, 8471, 2]
+// Dependencies: [2063, 4427, 1074, 9891, 8466, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 9868 (GuildSettingsServerTagUtils)
-import GuildTagUtils from "GuildTagUtils" /* 8471 */;
-import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 9869 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
+// Module 9890 (GuildSettingsServerTagUtils)
+import GuildTagUtils from "GuildTagUtils" /* 8466 */;
+import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 9891 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 require = fn;
-const Permissions = fn(1078).Permissions;
+const Permissions = fn(1074).Permissions;
 const GuildSettingsServerTag = "GuildSettingsServerTag";
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
 
 export const canUseMobileServerTagSettings = function canUseMobileServerTagSettings(guildId) {
-  guild = GuildStore.getGuild(guildId);
+  const guild = GuildStore.getGuild(guildId);
   let enabled = null != guild;
   if (enabled) {
     enabled = PermissionStore.can(Permissions.MANAGE_GUILD, guild);
@@ -29,7 +29,7 @@ export const canUseMobileServerTagSettings = function canUseMobileServerTagSetti
   return enabled;
 };
 export const canViewMobileServerTag = function canViewMobileServerTag(id) {
-  guild = GuildStore.getGuild(id);
+  const guild = GuildStore.getGuild(id);
   let enabled = null != guild;
   if (enabled) {
     enabled = GuildTagUtils.guildSupportsTags(guild);

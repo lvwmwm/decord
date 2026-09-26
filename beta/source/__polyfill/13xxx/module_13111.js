@@ -1,24 +1,39 @@
 // Module ID: 13111
 // Function ID: 13112
-// Dependencies: [13086, 13106]
-// Exports: getDefaultCurrentScope, getDefaultIsolationScope
+// Dependencies: [13106]
+// Exports: hasTracingEnabled
 
 // Module 13111
-import _mod13086 from "module_13086" /* 13086 */;
-import ScopeClass from "ScopeClass" /* 13106 */;
+import _mod13106 from "module_13106" /* 13106 */;
 
 require = arg1;
 const dependencyMap = arg6;
 
-export const getDefaultCurrentScope = function getDefaultCurrentScope() {
-  return _mod13086.getGlobalSingleton("defaultCurrentScope", () => {
-    const scope = new ScopeClass.Scope();
-    return scope;
-  });
-};
-export const getDefaultIsolationScope = function getDefaultIsolationScope() {
-  return _mod13086.getGlobalSingleton("defaultIsolationScope", () => {
-    const scope = new ScopeClass.Scope();
-    return scope;
-  });
+export const hasTracingEnabled = function hasTracingEnabled(tracesSampler) {
+  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
+    if (!globalThis.__SENTRY_TRACING__) {
+      return false;
+    }
+  }
+  let tmp = tracesSampler;
+  const client = _mod13106.getClient();
+  if (!tracesSampler) {
+    let options = client;
+    if (client) {
+      options = client.getOptions();
+    }
+    tmp = options;
+  }
+  let tmp3 = tmp;
+  if (tmp3) {
+    let enableTracing = tmp.enableTracing;
+    if (!enableTracing) {
+      enableTracing = "tracesSampleRate" in tmp;
+    }
+    if (!enableTracing) {
+      enableTracing = "tracesSampler" in tmp;
+    }
+    tmp3 = enableTracing;
+  }
+  return tmp3;
 };

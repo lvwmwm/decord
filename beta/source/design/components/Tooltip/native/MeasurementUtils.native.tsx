@@ -1,10 +1,10 @@
-// Module ID: 10497
-// Function ID: 10498
+// Module ID: 11429
+// Function ID: 11430
 // Name: MeasurementUtils
 // Dependencies: [5, 12, 2]
 // Exports: getMeasurements
 
-// Module 10497 (MeasurementUtils)
+// Module 11429 (MeasurementUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 function retryMeasurements() {
@@ -28,7 +28,7 @@ let closure_4 = async function _retryMeasurements(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -57,7 +57,7 @@ let closure_4 = async function _retryMeasurements(arg0, value) {
           closure_133_5 = undefined;
           c9 = 1;
           c10 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

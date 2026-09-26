@@ -1,10 +1,10 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11370
+// Function ID: 11371
 // Name: useGiftingPromotionConfig
 // Dependencies: [2]
 // Exports: default
 
-// Module 11408 (useGiftingPromotionConfig)
+// Module 11370 (useGiftingPromotionConfig)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/hooks/useGiftingPromotionConfig.tsx");

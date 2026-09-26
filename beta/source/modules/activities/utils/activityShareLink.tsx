@@ -1,12 +1,12 @@
-// Module ID: 14809
-// Function ID: 14810
+// Module ID: 14799
+// Function ID: 14800
 // Name: activityShareLink
-// Dependencies: [4773, 1370, 1119, 2]
+// Dependencies: [4771, 1366, 1115, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 14809 (activityShareLink)
-import URLUtilsDefault from "URLUtils" /* 1370 */;
-import findCodedLinks from "findCodedLinks" /* 4773 */;
+// Module 14799 (activityShareLink)
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import findCodedLinks from "findCodedLinks" /* 4771 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -14,9 +14,9 @@ const require = globalThis.__r;
 const items = [findCodedLinks.parseQuestsEmbedCode];
 const result = size.fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");
 
-export const resolveActivityShareMessageContent = function resolveActivityShareMessageContent(c3, name, link) {
+export const resolveActivityShareMessageContent = function resolveActivityShareMessageContent(str, name, link) {
   _require = false;
-  const replaced = c3.replaceAll(URLUtilsDefault.URL_REGEX, (arg0) => {
+  const replaced = str.replaceAll(URLUtilsDefault.URL_REGEX, (arg0) => {
     closure_0 = arg0;
     const someResult = items.some((fn) => null != fn(closure_0));
     if (someResult) {

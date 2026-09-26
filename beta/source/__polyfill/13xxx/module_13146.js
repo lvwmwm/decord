@@ -1,37 +1,203 @@
 // Module ID: 13146
 // Function ID: 13147
-// Dependencies: [13132, 13091, 13129]
-// Exports: createCheckInEnvelope
+// Dependencies: [5, 13123, 13126, 13133]
+// Exports: makeMultiplexedTransport
 
 // Module 13146
-import _mod13091 from "module_13091" /* 13091 */;
-import _mod13129 from "module_13129" /* 13129 */;
-import _mod13132 from "module_13132" /* 13132 */;
+import _mod13123 from "module_13123" /* 13123 */;
+import _mod13126 from "module_13126" /* 13126 */;
+import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-require = arg1;
-const dependencyMap = arg6;
+function eventFromEnvelope(arg0, arg1) {
+  closure_0 = arg1;
+  _mod13123.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+    if (items.includes(arg1)) {
+      const _Array = Array;
+      let tmp3;
+      if (Array.isArray(arg0)) {
+        tmp3 = arg0[1];
+      }
+      closure_1 = tmp3;
+    }
+    return closure_1;
+  });
+  return dependencyMap;
+}
 
-export const createCheckInEnvelope = function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
-  const obj = { sent_at: new Date().toISOString() };
-  if (sdk) {
-    sdk = sdk.sdk;
-  }
-  if (sdk) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
-    obj.sdk = obj2;
-  }
-  let tmp = arg3;
-  if (arg3) {
-    tmp = arg4;
-  }
-  if (tmp) {
-    obj.dsn = _mod13132.dsnToString(arg4);
-  }
-  if (arg1) {
-    obj.trace = _mod13091.dropUndefinedKeys(arg1);
-  }
-  const items = [{ type: "check_in" }, arg0];
-  const date = new Date();
-  const items1 = [items];
-  return _mod13129.createEnvelope(obj, items1);
-};
+export { eventFromEnvelope };
+export function makeMultiplexedTransport(arg0, arg1) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  return (arg0) => {
+    let tunnel = arg0;
+    function getTransport(arg0, arg1) {
+      let combined = arg0;
+      if (arg1) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + arg0 + ":" + arg1;
+      }
+      value = map.get(combined);
+      if (value) {
+        const items = [arg0, value];
+        return items;
+      } else {
+        const dsnFromStringResult = _mod13126.dsnFromString(arg0);
+        if (dsnFromStringResult) {
+          let merged = tunnel;
+          const envelopeEndpointWithUrlEncodedAuth = tmp4(13133).getEnvelopeEndpointWithUrlEncodedAuth(dsnFromStringResult, tunnel.tunnel);
+          let tmp9 = tunnel;
+          let obj3 = {};
+          if (arg1) {
+            merged = Object.assign(merged);
+            obj3.url = envelopeEndpointWithUrlEncodedAuth;
+            const tmp9Result = tmp9(obj3);
+            closure_1 = tmp9Result;
+            const obj4 = {};
+            const merged1 = Object.assign(tmp9Result);
+            tmp9 = asyncGeneratorStep;
+            tunnel = asyncGeneratorStep(async (release) => {
+              c1 = 0;
+              return (async (arg0, value) => {
+                if (c1 === 2) {
+                  c1 = 3;
+                  throw new TypeError("Generator functions may not be called on executing generators");
+                } else if (tmp3 === 3) {
+                  if (arg0 === 1) {
+                    throw value;
+                  } else if (arg0 === 2) {
+                    const obj2 = { value, done: true };
+                    return obj2;
+                  } else {
+                    return { value: "HermesInternal", done: null };
+                  }
+                } else {
+                  try {
+                    c1 = 2;
+                    if (arg0 === 1) {
+                      c1 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c1 = 3;
+                      const obj3 = { value, done: true };
+                      return obj3;
+                    } else {
+                      const tmp6 = getTransport(release, ["event", "transaction", "profile", "replay_event"]);
+                      if (tmp6) {
+                        tmp6.release = release;
+                      }
+                      c1 = 3;
+                      const obj = { value: closure_1.send(release), done: true };
+                      return obj;
+                    }
+                  } catch (tmp9) {
+                    c1 = tmp;
+                    throw tmp9;
+                  }
+                }
+              })();
+            });
+            obj4.send = function send(arg0) {
+              const self = this;
+              const apply = closure_0.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            };
+            let tmp9Result2 = obj4;
+          } else {
+            const merged2 = Object.assign(merged);
+            obj3.url = envelopeEndpointWithUrlEncodedAuth;
+            tmp9Result2 = tmp9(obj3);
+          }
+          obj3 = map.set(combined, tmp9Result2);
+          const tmp4Result = tmp4(13133);
+        }
+        tmp4 = require;
+      }
+    }
+    closure_4 = async function _send(envelope) {
+      c2 = 0;
+      c1 = 0;
+      return (async (arg0, value) => {
+        const mapped = v3({
+          envelope,
+          getEvent(arg0) {
+            let items = arg0;
+            if (!arg0) {
+              items = ["event"];
+            }
+            dependencyMap(13123).forEachEnvelopeItem(dependencyMap, () => { ... });
+            return dependencyMap2;
+          }
+        }).map((dsn) => {
+          if (typeof dsn === "string") {
+            let tmp2 = closure_1_3(dsn, undefined);
+          } else {
+            tmp2 = closure_1_3(dsn.dsn, dsn.release);
+          }
+          return tmp2;
+        });
+        const found = mapped.filter((item) => item);
+        let arr3 = found;
+        if (!found.length) {
+          let items = ["", closure_2_1];
+          const items1 = [items];
+          arr3 = items1;
+        }
+        await Promise.all(arr3.map((item) => {
+          [tmp, obj] = item;
+          const first = 5;
+          if (tmp) {
+            const obj3 = {};
+            const merged = Object.assign(first);
+            obj3.dsn = tmp;
+            let tmp4 = obj3;
+          } else {
+            tmp4 = first;
+          }
+          return obj.send(dependencyMap(13123).createEnvelope(tmp4, 13123));
+        }));
+        return value[0];
+      })();
+    };
+    closure_5 = async function _flush() {
+      closure_2 = tmp2;
+      closure_130_0 = closure_0;
+      closure_1 = 0;
+      const items = [];
+      const arraySpreadResult = HermesBuiltin.arraySpread(map.values(), closure_1);
+      closure_1 = arraySpreadResult;
+      items[arraySpreadResult] = closure_2_1;
+      closure_1 = closure_1 + 1;
+      await Promise.all(items.map((flush) => flush.flush(closure_1_0)));
+      return arg1.every((item) => item);
+    };
+    closure_1 = tunnel(arg0);
+    const map = new Map();
+    return {
+      send(arg0) {
+        const self = this;
+        const apply = closure_4.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      },
+      flush(arg0) {
+        const self = this;
+        const apply = closure_5.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      }
+    };
+  };
+}

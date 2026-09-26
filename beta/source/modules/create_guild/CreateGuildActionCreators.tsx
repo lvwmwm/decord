@@ -1,11 +1,11 @@
-// Module ID: 12504
-// Function ID: 12505
+// Module ID: 12603
+// Function ID: 12604
 // Name: create_guild/CreateGuildActionCreators
-// Dependencies: [5, 1078, 4983, 1253, 4691, 2]
+// Dependencies: [5, 1074, 4981, 1249, 4688, 2]
 
-// Module 12504 (create_guild/CreateGuildActionCreators)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4983 */;
+// Module 12603 (create_guild/CreateGuildActionCreators)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4981 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -27,7 +27,7 @@ let closure_5 = async function _createGuildFromTemplate(name, icon, arg2, arg3, 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -89,7 +89,7 @@ let closure_5 = async function _createGuildFromTemplate(name, icon, arg2, arg3, 
     }
   })();
 };
-const Endpoints = fn(1078).Endpoints;
+const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/create_guild/CreateGuildActionCreators.tsx");
 

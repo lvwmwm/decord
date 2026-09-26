@@ -1,9 +1,9 @@
 // Module ID: 11887
 // Function ID: 11888
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 11887
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/polls/native/images", width: 140.5, height: 131, scales: [2, 3], hash: "2634e77a356f1f01c169d19e1ee5e0b0", name: "load-issue-light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/shared_components/user_list/images", width: 24, height: 24, scales: [2, 3, 4], hash: "b49ac54ee052ec8e0d12b9dcde20cf19", name: "icon-settings", type: "png" });

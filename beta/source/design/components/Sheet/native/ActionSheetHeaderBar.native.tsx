@@ -1,15 +1,15 @@
-// Module ID: 7433
-// Function ID: 7434
+// Module ID: 7431
+// Function ID: 7432
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 1482, 4494, 5205, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 1115, 1478, 4489, 5203, 2]
+// Exports: ActionSheetHeaderBar
 
-// Module 7433 (ActionSheetHeaderBar)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import useToken from "useToken" /* 4494 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5205 */;
+// Module 7431 (ActionSheetHeaderBar)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import useToken from "useToken" /* 4489 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5203 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: c3, StyleSheet: closure_4, TouchableWithoutFeedback: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_10 = createStyles.createStyles((arg0, height, marginBottom) => {
   if ("floating" === arg0) {
     const rect = { left: 0, right: 0, position: "absolute" };
@@ -27,14 +27,14 @@ let closure_10 = createStyles.createStyles((arg0, height, marginBottom) => {
   obj2.header = { marginBottom };
   const size = { alignSelf: "center", width: nativeDefault.modules.mobile.SHEET_HANDLE_WIDTH, height: nativeDefault.modules.mobile.SHEET_HANDLE_HEIGHT, borderRadius: nativeDefault.radii.sm, top: nativeDefault.modules.mobile.SHEET_HANDLE_MARGIN_TOP };
   if ("default" === arg0) {
-    const obj3 = { backgroundColor: tmp2(580).colors.BACKGROUND_MOD_STRONG };
+    const obj3 = { backgroundColor: tmp2(576).colors.BACKGROUND_MOD_STRONG };
     let tmp4 = obj3;
   } else if ("floating" === arg0) {
-    const obj4 = { backgroundColor: tmp2(580).colors.BACKGROUND_MOD_MUTED };
+    const obj4 = { backgroundColor: tmp2(576).colors.BACKGROUND_MOD_MUTED };
     tmp4 = obj4;
   } else if ("overlay" === arg0) {
-    const obj5 = { backgroundColor: tmp2(580).unsafe_rawColors.WHITE };
-    const merged1 = Object.assign(tmp2(580).shadows.SHADOW_LOW);
+    const obj5 = { backgroundColor: tmp2(576).unsafe_rawColors.WHITE };
+    const merged1 = Object.assign(tmp2(576).shadows.SHADOW_LOW);
     tmp4 = obj5;
   }
   const merged2 = Object.assign(tmp4);
@@ -46,104 +46,10 @@ let closure_10 = createStyles.createStyles((arg0, height, marginBottom) => {
   obj2.accessibleDismiss = obj6;
   return obj2;
 });
-const ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetHeaderBar.native.tsx");
 
-export const ActionSheetHeaderBar = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(21);
-  ({ accessibilityLabel, style, tabStyle, onPress, variant } = arg0);
-  if (cResult[0] !== accessibilityLabel) {
-    let stringResult = accessibilityLabel;
-    if (undefined === accessibilityLabel) {
-      const intl = tmp(1119).intl;
-      stringResult = intl.string(tmp(1119).t.WAI6xu);
-    }
-    cResult[0] = accessibilityLabel;
-    cResult[1] = stringResult;
-    let tmp4 = stringResult;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let str = "default";
-  if (undefined !== variant) {
-    str = variant;
-  }
-  const tmp6 = closure_10(str, useWindowDimensionsDefault().height, useToken.useToken(nativeDefault.modules.mobile.SHEET_HANDLE_MARGIN_BOTTOM));
-  useIsScreenReaderEnabled;
-  if (cResult[2] === style) {
-    if (cResult[3] === tmp6.header) {
-      let tmp9 = cResult[4];
-    }
-    if (cResult[5] === tmp6.indicator) {
-      if (cResult[6] === tabStyle) {
-        let tmp10 = cResult[7];
-      }
-      if (cResult[8] === tmp9) {
-        if (cResult[9] === tmp10) {
-          let tmp14 = cResult[10];
-        }
-        if (cResult[11] === onPress) {
-          if (cResult[12] === tmp14) {
-            let tmp18 = cResult[13];
-          }
-          if (!tmp8) {
-            return tmp18;
-          } else {
-            if (cResult[14] === tmp4) {
-              if (cResult[15] === onPress) {
-                if (cResult[16] === tmp6.accessibleDismiss) {
-                  let tmp23 = cResult[17];
-                }
-                if (cResult[18] === tmp18) {
-                }
-                const obj2 = { children: null };
-                const items = [tmp23, tmp18];
-                obj2.children = items;
-                const tmp30 = options(closure_1_8, obj2);
-                cResult[18] = tmp18;
-                cResult[19] = tmp23;
-                cResult[20] = tmp30;
-              }
-            }
-            const obj3 = { style: tmp6.accessibleDismiss, accessible: true, accessibilityLabel: tmp4, accessibilityRole: "button", onPress };
-            const tmp26 = React5(React3, obj3);
-            cResult[14] = tmp4;
-            cResult[15] = onPress;
-            cResult[16] = tmp6.accessibleDismiss;
-            cResult[17] = tmp26;
-            tmp23 = tmp26;
-          }
-        }
-        const obj4 = { onPress, onAccessibilityEscape: onPress, "aria-hidden": true, children: tmp14 };
-        const tmp21 = React5(hasOwnProperty, obj4);
-        cResult[11] = onPress;
-        cResult[12] = tmp14;
-        cResult[13] = tmp21;
-        tmp18 = tmp21;
-      }
-      const obj5 = { style: tmp9, children: tmp10 };
-      const tmp17 = React5(timestampProducer, obj5);
-      cResult[8] = tmp9;
-      cResult[9] = tmp10;
-      cResult[10] = tmp17;
-      tmp14 = tmp17;
-    }
-    const obj6 = { style: null };
-    const items1 = [tmp6.indicator, tabStyle];
-    obj6.style = items1;
-    const tmp13 = React5(timestampProducer, obj6);
-    cResult[5] = tmp6.indicator;
-    cResult[6] = tabStyle;
-    cResult[7] = tmp13;
-    tmp10 = tmp13;
-  }
-  const items2 = [tmp6.header, style];
-  cResult[2] = style;
-  cResult[3] = tmp6.header;
-  cResult[4] = items2;
-  tmp9 = items2;
-}) : ((accessibilityLabel) => {
+export const ActionSheetHeaderBar = function ActionSheetHeaderBar(accessibilityLabel) {
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
   if (accessibilityLabel === undefined) {
     const intl = util.intl;
@@ -171,7 +77,7 @@ export const ActionSheetHeaderBar = ReactCompilerGating.isReactCompilerEnabled()
     const obj7 = { style: tmp3.accessibleDismiss, accessible: true, accessibilityLabel, accessibilityRole: "button", onPress };
     const items2 = [React5(React3, obj7), tmp6];
     obj6.children = items2;
-    tmp7 = options(closure_1_8, obj6);
+    tmp7 = React7(React6, obj6);
   }
   return tmp7;
-});
+};

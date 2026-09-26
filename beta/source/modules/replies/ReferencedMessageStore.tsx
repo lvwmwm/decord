@@ -1,19 +1,19 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 7867
+// Function ID: 7868
 // Name: ReferencedMessageStore
-// Dependencies: [32, 7873, 7877, 2045, 5010, 1078, 1442, 5012, 7879, 504, 577, 2]
+// Dependencies: [32, 7868, 7872, 2041, 5008, 1074, 1438, 5010, 7874, 504, 573, 2]
 
-// Module 7872 (ReferencedMessageStore)
+// Module 7867 (ReferencedMessageStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import privDefault from "priv" /* 1442 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7879 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import privDefault from "priv" /* 1438 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7874 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7873 */;
-import ConversationsStore from "ConversationsStore" /* 7877 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5010 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7868 */;
+import ConversationsStore from "ConversationsStore" /* 7872 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 5008 */;
 
 require = fn;
 function processMessage(message) {
@@ -98,7 +98,7 @@ function handleLoadThreadsSuccess(firstMessages) {
   }
   return tmp;
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ MessageTypes: closure_8, MessageTypesWithLazyLoadedReferences: closure_9 } = Constants);
 const ReferencedMessageState = { LOADED: 0, [0]: "LOADED", NOT_LOADED: 1, [1]: "NOT_LOADED", DELETED: 2, [2]: "DELETED" };
 let closure_11 = Object.freeze({ state: ReferencedMessageState.NOT_LOADED });

@@ -1,27 +1,9 @@
 // Module ID: 1607
 // Function ID: 1608
-// Dependencies: [19, 1491, 1587]
-// Exports: useLinkTo
+// Dependencies: [1121]
 
 // Module 1607
-import BaseNavigationContainer from "BaseNavigationContainer" /* 1491 */;
-import _mod1587 from "module_1587" /* 1587 */;
-import noop from "module_19" /* 19 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
 
-export const useLinkTo = function useLinkTo() {
-  const context = noop.useContext(BaseNavigationContainer.NavigationContainerRefContext);
-  const buildAction = _mod1587.useBuildAction();
-  const items = [buildAction, context];
-  return noop.useCallback((arg0) => {
-    if (undefined === context) {
-      const _Error = Error;
-      const error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
-      throw error;
-    } else {
-      obj.dispatch(buildAction(arg0));
-    }
-    obj = context;
-  }, items);
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 64, height: 64, scales: [2, 3], hash: "bf72a3c3e6e6f62a6b213dc37c4f0f29", name: "ic_application_command_built_in", type: "png" });

@@ -1,23 +1,24 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14004
+// Function ID: 14005
 // Name: BlockedUserUtils
-// Dependencies: [4441, 1374, 12, 2]
+// Dependencies: [4437, 1370, 12, 2]
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds, voiceStateHasBlockedUsers
 
-// Module 14014 (BlockedUserUtils)
+// Module 14004 (BlockedUserUtils)
 import _modDef12 from "module_12" /* 12 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
 const require = fn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/blocking/BlockedUserUtils.tsx");
 
-export const filterOutBlockedOrIgnoredUsers = function filterOutBlockedOrIgnoredUsers(mapped, afkChannelId) {
-  const found = mapped.filter((item) => afkChannelId(dependencyMap[1]).isNotNullish(item));
+export const filterOutBlockedOrIgnoredUsers = function filterOutBlockedOrIgnoredUsers(mapped, arg1) {
+  const set = arg1;
+  const found = mapped.filter((item) => set(dependencyMap[1]).isNotNullish(item));
   return found.filter((id) => {
     id = id.id;
-    if (null != afkChannelId) {
-      let hasItem = afkChannelId.has(id);
+    if (null != set) {
+      let hasItem = set.has(id);
     } else {
       hasItem = RelationshipStore.isBlockedOrIgnored(id);
     }

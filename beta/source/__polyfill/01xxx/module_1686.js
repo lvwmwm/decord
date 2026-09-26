@@ -1,16 +1,18 @@
 // Module ID: 1686
 // Function ID: 1687
-// Dependencies: [17]
-// Exports: controlEdgeToEdgeValues, isEdgeToEdge
+// Dependencies: []
+// Exports: isSharedValue
 
 // Module 1686
-import get_ActivityIndicator from "module_17" /* 17 */;
-
-
-export (arg0) => {
-
+function isSharedValue(iter) {
+  let prop;
+  if (iter != null) {
+    prop = iter._isReanimatedSharedValue;
+  }
+  return true === prop;
 }
-export const isEdgeToEdge = () => {
-  const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
-  return null != TurboModuleRegistry.get("RNEdgeToEdge");
-};
+isSharedValue.__closure = {};
+isSharedValue.__workletHash = 8230330706259;
+isSharedValue.__initData = { code: "function isSharedValue_Pnpm_isSharedValueTs1(value){return(value===null||value===void 0?void 0:value._isReanimatedSharedValue)===true;}" };
+
+export { isSharedValue };

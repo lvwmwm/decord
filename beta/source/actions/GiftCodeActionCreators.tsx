@@ -1,16 +1,16 @@
-// Module ID: 11598
-// Function ID: 11599
+// Module ID: 11722
+// Function ID: 11723
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 5017, 7821, 7829, 1078, 1378, 577, 5028, 7442, 7820, 4691, 4473, 1235, 1275, 11599, 11600, 2]
+// Dependencies: [5, 5015, 7816, 7824, 1074, 1374, 573, 5026, 7440, 7815, 4688, 4469, 1231, 1271, 11723, 11724, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 11598 (GiftCodeActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4473 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11599 */;
+// Module 11722 (GiftCodeActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4469 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11723 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5017 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
 
 require = fn;
 function resolveGiftCode() {
@@ -34,7 +34,7 @@ let closure_11 = async function _resolveGiftCode(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -67,7 +67,7 @@ let closure_11 = async function _resolveGiftCode(arg0, value) {
           let product;
           c7 = 1;
           c8 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp9) {
         if (arg0 === 1) {
@@ -190,14 +190,14 @@ function reportUnexpectedGiftCodeError(status) {
       const obj = { tags: null };
       const obj2 = { gift_code_resolve_status: String(str) };
       obj.tags = obj2;
-      tmp(1235).captureException(status.error, obj);
-      const tmpResult = tmp(1235);
+      tmp(1231).captureException(status.error, obj);
+      const tmpResult = tmp(1231);
     }
   } else {
     const _Error = Error;
     if (status instanceof Error) {
-      tmp(1235).captureException(status);
-      const tmpResult2 = tmp(1235);
+      tmp(1231).captureException(status);
+      const tmpResult2 = tmp(1231);
     }
   }
   return null;
@@ -212,11 +212,11 @@ let closure_12 = async function _deliverGiftCodes(recipient_ids, checkout_sessio
     return value.body;
   })();
 };
-let closure_6 = fn(7829).isUnknownCollectiblesItemRecord;
-const Constants = fn(1078);
+let closure_6 = fn(7824).isUnknownCollectiblesItemRecord;
+const Constants = fn(1074);
 ({ COLLECTIBLES_APPLICATION_ID: closure_7, Endpoints: closure_8, RPCCommands: closure_9 } = Constants);
-let closure_10 = fn(1378).PREMIUM_SUBSCRIPTION_APPLICATION;
-const merged = Object.assign(fn(11600).default);
+let closure_10 = fn(1374).PREMIUM_SUBSCRIPTION_APPLICATION;
+const merged = Object.assign(fn(11724).default);
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/GiftCodeActionCreators.tsx");
 
@@ -270,7 +270,7 @@ export default {
       const request = { url: constants.USER_GIFT_CODE_CREATE, body: { sku_id, subscription_plan_id: tmp3, gift_style }, oldFormErrors: true, rejectWithError: true };
       await HTTP.post(request);
       tmp3(gift_style[6]).dispatch({ type: "GIFT_CODE_CREATE_FAILURE", skuId: closure_129_0, subscriptionPlanId: closure_129_1 });
-      closure_128_0 = await "IconComponent";
+      closure_128_0 = await "HermesInternal";
       tmp3(gift_style[6]).dispatch({ type: "GIFT_CODE_CREATE_SUCCESS", giftCode: closure_128_0.body });
       return closure_128_0.body;
     })();

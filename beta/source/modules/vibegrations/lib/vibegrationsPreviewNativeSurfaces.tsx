@@ -1,12 +1,12 @@
-// Module ID: 13219
-// Function ID: 13220
+// Module ID: 13213
+// Function ID: 13214
 // Name: vibegrationsPreviewNativeSurfaces
-// Dependencies: [1078, 13220, 2]
+// Dependencies: [1074, 13214, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 13219 (vibegrationsPreviewNativeSurfaces)
-import Constants from "Constants" /* 1078 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 13220 */;
+// Module 13213 (vibegrationsPreviewNativeSurfaces)
+import Constants from "Constants" /* 1074 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 13214 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -181,8 +181,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "unicodeVersion", answered: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002496666848918749 }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "unicodeVersion", answered: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002496666848918749 })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "call", answered: true }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "call", answered: true })
 };
 let closure_5 = {
   drain() {
@@ -221,8 +221,8 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj3);
     }
     if (1 === arr.length) {
-      let result = obj3(13220).setRpcCommandInterceptor(answerFor);
-      const obj2 = obj3(13220);
+      let result = obj3(13214).setRpcCommandInterceptor(answerFor);
+      const obj2 = obj3(13214);
     }
     const obj4 = {
       iframeId,

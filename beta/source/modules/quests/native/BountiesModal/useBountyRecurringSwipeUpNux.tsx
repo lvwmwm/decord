@@ -1,54 +1,24 @@
-// Module ID: 15287
-// Function ID: 15288
+// Module ID: 15291
+// Function ID: 15292
 // Name: useBountyRecurringSwipeUpNux
-// Dependencies: [32, 558, 568, 7664, 2031, 2]
+// Dependencies: [32, 7662, 2027, 2]
+// Exports: useBountyRecurringSwipeUpNux
 
-// Module 15287 (useBountyRecurringSwipeUpNux)
-import c from "c" /* 568 */;
-import dismissible_content from "dismissible_content" /* 2031 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7664 */;
+// Module 15291 (useBountyRecurringSwipeUpNux)
+import dismissible_content from "dismissible_content" /* 2027 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7662 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
-let c3 = 86400000;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyRecurringSwipeUpNux.tsx");
 
-export const useBountyRecurringSwipeUpNux = ReactCompilerGating.isReactCompilerEnabled() ? ((isEligible) => {
-  const cResult = c.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { cooldownDurationMs };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
+export const useBountyRecurringSwipeUpNux = function useBountyRecurringSwipeUpNux(isEligible) {
   let prop = null;
   if (isEligible.isEligible) {
-    prop = tmp(2031).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+    prop = tmp(2027).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
   }
-  const tmpResult = useSelectedDismissibleContent;
-  [tmp8, tmp9] = useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent(prop, first);
-  const tmp10 = tmp8 === dismissible_content.DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
-  if (cResult[1] === tmp9) {
-    if (cResult[2] === tmp10) {
-      let tmp11 = cResult[3];
-    }
-    return tmp11;
-  }
-  const obj3 = { hasRecurringSwipeUpNux: tmp10, dismissRecurringSwipeUpNux: tmp9 };
-  cResult[1] = tmp9;
-  cResult[2] = tmp10;
-  cResult[3] = obj3;
-  tmp11 = obj3;
-}) : ((isEligible) => {
-  let prop = null;
-  if (isEligible.isEligible) {
-    prop = tmp(2031).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
-  }
-  const obj2 = { cooldownDurationMs };
-  const tmp4 = _slicedToArray(useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs }), 2);
+  const tmp4 = _slicedToArray(useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 86400000 }), 2);
   [tmp5, tmp6] = tmp4;
   return { hasRecurringSwipeUpNux: tmp5 === dismissible_content.DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX, dismissRecurringSwipeUpNux: tmp6 };
-});
+};

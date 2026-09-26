@@ -1,14 +1,14 @@
-// Module ID: 8006
-// Function ID: 8007
+// Module ID: 8001
+// Function ID: 8002
 // Name: SidebarVisibilityMethodStore
-// Dependencies: [562, 2]
+// Dependencies: [560, 2]
 // Exports: getVisibleChannelIdsMethod, getVisibleGuildIdsMethod, setGetVisibleChannelIds, setGetVisibleGuildIds
 
-// Module 8006 (SidebarVisibilityMethodStore)
-import module_562 from "module_562" /* 562 */;
+// Module 8001 (SidebarVisibilityMethodStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
-const SidebarVisibilityMethodStore = module_562.create(() => ({}));
+const SidebarVisibilityMethodStore = module_560.create(() => ({}));
 const result = size.fileFinishedImporting("modules/guild_sidebar/SidebarVisibilityMethodStore.tsx");
 
 export { SidebarVisibilityMethodStore };

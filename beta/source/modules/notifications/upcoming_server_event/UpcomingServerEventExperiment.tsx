@@ -1,35 +1,24 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 15790
+// Function ID: 15791
 // Name: UpcomingServerEventExperiment
-// Dependencies: [1438, 558, 568, 2]
-// Exports: isEligibleForUpcomingServerEventNotifications
+// Dependencies: [1434, 2]
+// Exports: isEligibleForUpcomingServerEventNotifications, useUpcomingServerEventExperiment
 
-// Module 15786 (UpcomingServerEventExperiment)
-import c from "c" /* 568 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15790 (UpcomingServerEventExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-04-upcoming-server-event", defaultConfig: { showSettingsToggle: false }, variations: null };
-let obj2 = { 1: null, 2: { showSettingsToggle: true }, 3: { showSettingsToggle: true } };
+const obj2 = { 1: null, 2: { showSettingsToggle: true }, 3: { showSettingsToggle: true } };
 obj2[3] = { showSettingsToggle: true };
 obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/notifications/upcoming_server_event/UpcomingServerEventExperiment.tsx");
 
 export default apexExperiment;
-export const useUpcomingServerEventExperiment = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    let tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2);
-}) : ((location) => apexExperiment.useConfig({ location }));
+export const useUpcomingServerEventExperiment = function useUpcomingServerEventExperiment(tabsV2Settings) {
+  return apexExperiment.useConfig({ location: tabsV2Settings });
+};
 export const isEligibleForUpcomingServerEventNotifications = function isEligibleForUpcomingServerEventNotifications(location) {
   return apexExperiment.getConfig({ location }).showSettingsToggle;
 };

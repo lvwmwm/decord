@@ -1,19 +1,19 @@
-// Module ID: 4947
-// Function ID: 4948
+// Module ID: 4945
+// Function ID: 4946
 // Name: _guildRoomConnect
-// Dependencies: [5, 502, 4948, 1078, 4950, 1275, 4951, 577, 4969, 4980, 4988, 11, 4949, 4989, 4990, 2]
+// Dependencies: [5, 502, 4946, 1074, 4948, 1271, 4949, 573, 4967, 4978, 4986, 11, 4947, 4987, 4988, 2]
 // Exports: clearGuildRoomPendingPosition, createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomLocalDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, maybeSetGuildRoomVideoOverlay, placePendingGuildRoomNote, selectGuildRoomLocalPosition, setGuildRoomRememberVideoOverlayVisibility, setGuildRoomVideoOverlayVisibility, startPendingGuildRoomNote
 
-// Module 4947 (_guildRoomConnect)
+// Module 4945 (_guildRoomConnect)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 4949 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 4950 */;
-import GuildRoomAnalytics from "GuildRoomAnalytics" /* 4969 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 4947 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 4948 */;
+import GuildRoomAnalytics from "GuildRoomAnalytics" /* 4967 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoomStore from "GuildRoomStore" /* 4948 */;
+import GuildRoomStore from "GuildRoomStore" /* 4946 */;
 
 require = fn;
 let closure_8 = async function _guildRoomConnect(arg0, value) {
@@ -27,7 +27,7 @@ let closure_8 = async function _guildRoomConnect(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     while (true) {
@@ -158,7 +158,7 @@ let closure_8 = async function _guildRoomConnect(arg0, value) {
           }
           c11 = 0;
           c13 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         c11 = 1;
@@ -185,7 +185,7 @@ let closure_9 = async function _guildRoomUpdate(arg0, roomId, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -336,7 +336,7 @@ let closure_9 = async function _guildRoomUpdate(arg0, roomId, arg2) {
           }
           c6 = 0;
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp81) {
         closure_5 = tmp81;
@@ -427,7 +427,7 @@ let closure_16 = async function _createGuildRoomNote(arg0, roomId, content, posi
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -481,7 +481,7 @@ let closure_16 = async function _createGuildRoomNote(arg0, roomId, content, posi
           }
           c7 = 0;
           c9 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         closure_6 = tmp27;
@@ -506,7 +506,7 @@ let closure_17 = async function _deleteGuildRoomNote(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -544,7 +544,7 @@ let closure_17 = async function _deleteGuildRoomNote(arg0, value) {
           const obj = closure_132_0(closure_132_2[8]);
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp15) {
       c6 = tmp;
@@ -575,7 +575,7 @@ let closure_18 = async function _fetchGuildRoom(arg0, arg1) {
   }
   return arg1;
 };
-let Endpoints = fn(1078).Endpoints;
+let Endpoints = fn(1074).Endpoints;
 let closure_7 = { x: 0, y: 0 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomActionCreators.shared.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 7759
-// Function ID: 7760
+// Module ID: 7754
+// Function ID: 7755
 // Name: ExtendedMemoryLru
-// Dependencies: [32, 7760, 7761, 2]
+// Dependencies: [32, 7755, 7756, 2]
 
-// Module 7759 (ExtendedMemoryLru)
-import Lru from "Lru" /* 7760 */;
-import IterableAll from "Iterable" /* 7761 */;
+// Module 7754 (ExtendedMemoryLru)
+import Lru from "Lru" /* 7755 */;
+import IterableAll from "Iterable" /* 7756 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

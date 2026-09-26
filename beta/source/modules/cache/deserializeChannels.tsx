@@ -1,11 +1,11 @@
-// Module ID: 2096
-// Function ID: 2097
+// Module ID: 2092
+// Function ID: 2093
 // Name: deserializeChannels
-// Dependencies: [32, 1090, 2]
+// Dependencies: [32, 1086, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
-// Module 2096 (deserializeChannels)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+// Module 2092 (deserializeChannels)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 function deserializeChannels(arg0) {

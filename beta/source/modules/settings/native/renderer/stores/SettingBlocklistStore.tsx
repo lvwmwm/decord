@@ -1,10 +1,10 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14891
+// Function ID: 14892
 // Name: SettingBlocklistStore
-// Dependencies: [4661, 2]
+// Dependencies: [4658, 2]
 
-// Module 14887 (SettingBlocklistStore)
-import ZustandStore from "ZustandStore" /* 4661 */;
+// Module 14891 (SettingBlocklistStore)
+import ZustandStore from "ZustandStore" /* 4658 */;
 import size from "module_2" /* 2 */;
 
 const zustandStore = ZustandStore.createZustandStore(() => {

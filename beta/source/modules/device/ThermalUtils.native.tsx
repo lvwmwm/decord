@@ -1,18 +1,18 @@
-// Module ID: 9597
-// Function ID: 9598
+// Module ID: 9601
+// Function ID: 9602
 // Name: ThermalUtils
-// Dependencies: [17, 9598, 1368, 4769, 562, 1252, 2]
+// Dependencies: [17, 9602, 1364, 4767, 560, 1248, 2]
 
-// Module 9597 (ThermalUtils)
+// Module 9601 (ThermalUtils)
 import _mod17 from "module_17" /* 17 */;
-import NativeDeviceThermalStateModuleDefault from "NativeDeviceThermalStateModule" /* 9598 */;
-import module_562 from "module_562" /* 562 */;
+import NativeDeviceThermalStateModuleDefault from "NativeDeviceThermalStateModule" /* 9602 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const nativeEventEmitter = new _mod17.NativeEventEmitter(NativeDeviceThermalStateModuleDefault);
-let closure_4 = module_562.create((arg0) => {
+let closure_4 = module_560.create((arg0) => {
   _require = arg0;
   nativeEventEmitter.addListener("DeviceThermalStateDidChange", (state) => {
     state = state.state;

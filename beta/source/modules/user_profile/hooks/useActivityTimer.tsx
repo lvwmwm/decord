@@ -1,83 +1,24 @@
-// Module ID: 13355
-// Function ID: 13356
+// Module ID: 13345
+// Function ID: 13346
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1095, 8441, 558, 568, 2040, 2]
-// Exports: formatTime, formatTimeForA11yLabel
+// Dependencies: [32, 19, 1091, 8436, 2036, 2]
+// Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 13355 (useActivityTimer)
-import DurationsDefault from "Durations" /* 1095 */;
-import utils from "utils" /* 8441 */;
+// Module 13345 (useActivityTimer)
+import DurationsDefault from "Durations" /* 1091 */;
+import utils from "utils" /* 8436 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
 const noop = fn(19);
 ({ useEffect: closure_4, useState: hasOwnProperty } = noop);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/hooks/useActivityTimer.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((start) => {
-  const cResult = first1(568).c(9);
-  start = start.start;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const interval = new tmp(2040).Interval();
-    cResult[0] = interval;
-    let first = interval;
-  } else {
-    first = cResult[0];
-  }
-  first1 = _slicedToArray(closure_5(first), 1)[0];
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function p() {
-      return Date.now();
-    };
-    cResult[1] = fn;
-    let tmp12 = fn;
-  } else {
-    tmp12 = cResult[1];
-  }
-  const obj = first1(568);
-  tmp = first1;
-  [tmp14, importDefault] = closure_5(tmp12);
-  if (cResult[2] !== first1) {
-    const fn2 = function v() {
-      first1.start(DurationsDefault.Millis.HALF_SECOND, () => closure_1_1(Date.now()));
-      return () => first1.stop();
-    };
-    const items = [first1];
-    cResult[2] = first1;
-    cResult[3] = fn2;
-    cResult[4] = items;
-    let tmp16 = items;
-    let tmp15 = fn2;
-  } else {
-    tmp15 = cResult[3];
-    tmp16 = cResult[4];
-  }
-  closure_4(tmp15, tmp16);
-  const diff = start.end - start;
-  const result = diff / DurationsDefault.Millis.SECOND;
-  const diff1 = tmp14 - start;
-  const bound = Math.max(Math.min(diff1 / DurationsDefault.Millis.SECOND, result), 0);
-  const bound1 = Math.max(Math.min(bound / result, 1), 0);
-  if (cResult[5] === result) {
-    if (cResult[6] === bound) {
-      if (cResult[7] === bound1) {
-        let tmp23 = cResult[8];
-      }
-      return tmp23;
-    }
-  }
-  const obj2 = { elapsed: bound, duration: result, percentage: bound1 };
-  cResult[5] = result;
-  cResult[6] = bound;
-  cResult[7] = bound1;
-  cResult[8] = obj2;
-  tmp23 = obj2;
-}) : ((start) => {
+export default function useActivityTimer(start) {
   start = start.start;
   let first;
-  const interval = new first(2040).Interval();
+  const interval = new first(2036).Interval();
   first = _slicedToArray(closure_5(interval), 1)[0];
   const tmp3 = _slicedToArray(closure_5(() => Date.now()), 2);
   importDefault = tmp3[1];
@@ -91,7 +32,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((start) => {
   const diff1 = tmp3[0] - start;
   const bound = Math.max(Math.min(diff1 / DurationsDefault.Millis.SECOND, result), 0);
   return { elapsed: bound, duration: result, percentage: Math.max(Math.min(bound / result, 1), 0) };
-});
+};
 export const formatTime = function formatTime(arg0) {
   const rounded = Math.floor(arg0);
   const result = rounded % DurationsDefault.Seconds.MINUTE;

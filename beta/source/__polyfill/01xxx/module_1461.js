@@ -1,23 +1,31 @@
 // Module ID: 1461
 // Function ID: 1462
-// Dependencies: [1309]
+// Dependencies: []
 
 // Module 1461
-const require = globalThis.__r;
-
-function hasPropertyDescriptors() {
-  return require("flag");
-}
-hasPropertyDescriptors.hasArrayLengthDefineBug = function hasArrayLengthDefineBug() {
-  if (require("flag")) {
-    try {
-      return 1 !== require("flag")([], "length", { value: 1 }).length;
-    } catch (err) {
-      return true;
+if (typeof Object.create === "function") {
+  module.exports = function inherits(value, super_) {
+    if (super_) {
+      value.super_ = super_;
+      const _Object = Object;
+      const obj = { constructor: null };
+      const obj2 = { value, enumerable: false, writable: true, configurable: true };
+      obj.constructor = obj2;
+      value.prototype = Object.create(super_.prototype, obj);
     }
-  } else {
-    return null;
-  }
-};
-
-export default hasPropertyDescriptors;
+  };
+} else {
+  module.exports = function inherits(arg0, super_) {
+    if (super_) {
+      arg0.super_ = super_;
+      class TempCtor {
+        constructor() {
+          return;
+        }
+      }
+      TempCtor.prototype = super_.prototype;
+      arg0.prototype = Object.create(TempCtor.prototype);
+      arg0.prototype.constructor = arg0;
+    }
+  };
+}

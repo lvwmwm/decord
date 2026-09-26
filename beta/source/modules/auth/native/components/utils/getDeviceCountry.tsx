@@ -1,11 +1,11 @@
-// Module ID: 16309
-// Function ID: 16310
+// Module ID: 16299
+// Function ID: 16300
 // Name: getDeviceCountry
-// Dependencies: [1120, 2]
+// Dependencies: [1116, 2]
 // Exports: getDeviceCountry
 
-// Module 16309 (getDeviceCountry)
-import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1120 */;
+// Module 16299 (getDeviceCountry)
+import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1116 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/getDeviceCountry.tsx");

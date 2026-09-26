@@ -1,18 +1,18 @@
-// Module ID: 1253
-// Function ID: 1254
+// Module ID: 1249
+// Function ID: 1250
 // Name: discord_common/AnalyticsUtils
-// Dependencies: [1254, 1333, 1334, 1335, 38, 2, 1338, 1339, 1340]
+// Dependencies: [1250, 1329, 1330, 1331, 38, 2, 1334, 1335, 1336]
 // Exports: isThrottled, trackMaker
 
-// Module 1253 (discord_common/AnalyticsUtils)
+// Module 1249 (discord_common/AnalyticsUtils)
 import _modDef38 from "module_38" /* 38 */;
-import AnalyticsTrackingStore from "AnalyticsTrackingStore" /* 1254 */;
-import StandardAnalyticsConstants from "StandardAnalyticsConstants" /* 1333 */;
-import AnalyticsTrackingActionCreators from "AnalyticsTrackingActionCreators" /* 1334 */;
-import _modDef1335 from "module_1335" /* 1335 */;
-import encodeProperties from "encodeProperties" /* 1338 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1339 */;
-import getSuperProperties from "getSuperProperties" /* 1340 */;
+import AnalyticsTrackingStore from "AnalyticsTrackingStore" /* 1250 */;
+import StandardAnalyticsConstants from "StandardAnalyticsConstants" /* 1329 */;
+import AnalyticsTrackingActionCreators from "AnalyticsTrackingActionCreators" /* 1330 */;
+import _modDef1331 from "module_1331" /* 1331 */;
+import encodeProperties from "encodeProperties" /* 1334 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1335 */;
+import getSuperProperties from "getSuperProperties" /* 1336 */;
 import size from "module_2" /* 2 */;
 
 const dependencyMap = {};
@@ -87,7 +87,7 @@ export const trackMaker = (arg0) => {
             }
           }
           if (obj3.deduplicate) {
-            if (_modDef1335(closure_5[joined], obj2)) {
+            if (_modDef1331(closure_5[joined], obj2)) {
               return Promise.resolve();
             } else {
               tmp15[joined] = obj2;

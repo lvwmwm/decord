@@ -1,31 +1,20 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 17720
+// Function ID: 17721
 // Name: useIsInRestrictedHours
-// Dependencies: [1376, 7816, 558, 568, 504, 17730, 2]
+// Dependencies: [1372, 7811, 504, 17721, 2]
+// Exports: default
 
-// Module 17729 (useIsInRestrictedHours)
+// Module 17720 (useIsInRestrictedHours)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import RestrictedHoursManager from "RestrictedHoursManager" /* 17730 */;
-import UserStore from "UserStore" /* 1376 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
+import RestrictedHoursManager from "RestrictedHoursManager" /* 17721 */;
+import UserStore from "UserStore" /* 1372 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useIsInRestrictedHours.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore, FamilyCenterStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  return initialize.useStateFromStores(first, RestrictedHoursManager.getCurrentRestrictedHoursState);
-}) : (() => {
+export default function useIsInRestrictedHours() {
   const items = [UserStore, FamilyCenterStore];
   return initialize.useStateFromStores(items, RestrictedHoursManager.getCurrentRestrictedHoursState);
-});
+};

@@ -1,9 +1,9 @@
 // Module ID: 12514
 // Function ID: 12515
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 12514
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 48, height: 48, scales: [2, 3], hash: "cae160e8dcd3fb84e6eda225bda4b4a6", name: "img_clubs", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "d69e45ebad9f40b8957190ed86104514", name: "ic_application_command_24px", type: "png" });

@@ -1,9 +1,9 @@
 // Module ID: 18379
 // Function ID: 18380
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 18379
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b7c23ecf7d498084060048eec006835a", name: "CircleInformationIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_role_subscription", width: 330, height: 112, scales: [2, 3], hash: "78e617e8087401b333ebcab08d27a76a", name: "image_role_subscription_purchase_card_bg", type: "png" });

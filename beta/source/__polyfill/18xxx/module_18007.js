@@ -1,9 +1,9 @@
 // Module ID: 18007
 // Function ID: 18008
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 18007
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 272, height: 130, scales: [2, 3], hash: "5caead087954d63c5b0957a35bf9e208", name: "empty_server_settings_audit_log_darker", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "e34464fbaad016de0cccce358d754f22", name: "ic_overflow_android", type: "png" });

@@ -1,18 +1,18 @@
-// Module ID: 15256
-// Function ID: 15257
+// Module ID: 15260
+// Function ID: 15261
 // Name: ScanQrCodeSetting
-// Dependencies: [5, 4999, 12, 1613, 5389, 4993, 14176, 1984, 11630, 1119, 15159, 2]
+// Dependencies: [5, 4997, 12, 1609, 5387, 4991, 14166, 1980, 11754, 1115, 15163, 2]
 
-// Module 15256 (ScanQrCodeSetting)
-import util from "util" /* 1119 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5389 */;
+// Module 15260 (ScanQrCodeSetting)
+import util from "util" /* 1115 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5387 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const NativePermissionTypes = fn(4999).NativePermissionTypes;
+const NativePermissionTypes = fn(4997).NativePermissionTypes;
 const apply = fn(12);
-const SettingBuilders = fn(11630);
+const SettingBuilders = fn(11754);
 const debounceResult = apply.debounce(asyncGeneratorStep(async (arg0, value) => {
   if (c3 === 2) {
     c3 = 3;
@@ -24,7 +24,7 @@ const debounceResult = apply.debounce(asyncGeneratorStep(async (arg0, value) => 
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -87,7 +87,7 @@ const pressable = SettingBuilders.createPressable({
     return intl.string(util.t.RC0kJz);
   },
   parent: null,
-  IconComponent: fn(15159).QrCodeIcon,
+  IconComponent: fn(15163).QrCodeIcon,
   onPress: apply.debounce(asyncGeneratorStep(async (arg0, value) => {
     if (c3 === 2) {
       c3 = 3;
@@ -99,7 +99,7 @@ const pressable = SettingBuilders.createPressable({
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

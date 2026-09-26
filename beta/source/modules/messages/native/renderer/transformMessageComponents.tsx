@@ -1,25 +1,25 @@
-// Module ID: 8416
-// Function ID: 8417
+// Module ID: 8411
+// Function ID: 8412
 // Name: transformMessageComponents
-// Dependencies: [109, 17, 5015, 8417, 8169, 1374, 1982, 5014, 1119, 8418, 8425, 8426, 8428, 8431, 8432, 5002, 5385, 8433, 8435, 8246, 4940, 1389, 5020, 8414, 8413, 1370, 1442, 1095, 4780, 8449, 1369, 4445, 2]
+// Dependencies: [109, 17, 5013, 8412, 8164, 1370, 1978, 5012, 1115, 8413, 8420, 8421, 8423, 8426, 8427, 5000, 5383, 8428, 8430, 8241, 4938, 1385, 5018, 8409, 8408, 1366, 1438, 1091, 4778, 8444, 1365, 4441, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 8416 (transformMessageComponents)
-import DurationsDefault from "Durations" /* 1095 */;
-import URLUtilsDefault from "URLUtils" /* 1370 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4940 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5014 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8414 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8432 */;
+// Module 8411 (transformMessageComponents)
+import DurationsDefault from "Durations" /* 1091 */;
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4938 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5012 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8409 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8427 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import priv from "priv" /* 1442 */;
+import priv from "priv" /* 1438 */;
 
-const util = tmp4(1119);
-const FlagUtils = tmp4(1389);
-const AgeVerificationUtils = tmp4(5002);
-const MediaTypes = tmp4(5020);
-const sanitizeMediaDimension = tmp4(8413);
-const ExplicitMediaUtils = tmp4(8431);
+const util = tmp4(1115);
+const FlagUtils = tmp4(1385);
+const AgeVerificationUtils = tmp4(5000);
+const MediaTypes = tmp4(5018);
+const sanitizeMediaDimension = tmp4(8408);
+const ExplicitMediaUtils = tmp4(8426);
 require = fn;
 function transformToRowGeneratedComponent(message, accessory) {
   _require = message;
@@ -64,7 +64,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     const initialStringSelectOptions = tmp(tmp2[10]).getInitialStringSelectOptions(accessory, message.id);
     const mapped1 = initialStringSelectOptions.map((item) => {
       closure_0 = item;
-      options = accessory.options;
+      const options = accessory.options;
       return options.findIndex((value) => value.value === closure_0);
     });
     const found1 = mapped1.filter((item) => -1 !== item);
@@ -219,12 +219,12 @@ function transformToRowGeneratedComponent(message, accessory) {
                     if (null != height) {
                       if (height > 0) {
                         if (obj.isImageContentType(contentType)) {
-                          let VISUAL_PLACEHOLDER = tmp(8432).MediaGalleryItemType.IMAGE;
+                          let VISUAL_PLACEHOLDER = tmp(8427).MediaGalleryItemType.IMAGE;
                         } else {
                           if (tmpResult.isVideoContentType(contentType)) {
-                            VISUAL_PLACEHOLDER = tmp(8432).MediaGalleryItemType.VIDEO;
+                            VISUAL_PLACEHOLDER = tmp(8427).MediaGalleryItemType.VIDEO;
                           }
-                          tmpResult = tmp(4940);
+                          tmpResult = tmp(4938);
                         }
                         obj = MediaFormatTesters;
                       }
@@ -530,12 +530,12 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            let VISUAL_PLACEHOLDER = tmp(8432).MediaGalleryItemType.IMAGE;
+            let VISUAL_PLACEHOLDER = tmp(8427).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(8432).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(8427).MediaGalleryItemType.VIDEO;
             }
-            tmpResult = tmp(4940);
+            tmpResult = tmp(4938);
           }
           obj = MediaFormatTesters;
         }
@@ -570,8 +570,8 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
 }
 let closure_3 = ["checkpointData"];
 const processColor = fn(17).processColor;
-const CheckpointVersions = fn(5015).CheckpointVersions;
-let closure_7 = fn(8417).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
+const CheckpointVersions = fn(5013).CheckpointVersions;
+let closure_7 = fn(8412).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
 let obj = { max: Infinity, maxAge: null, updateAgeOnGet: true };
 obj.maxAge = 15 * DurationsDefault.Millis.MINUTE;
 const importDefaultResult1 = new priv(obj);
@@ -579,12 +579,12 @@ let size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/transformMessageComponents.tsx");
 
 export default function transformMessageComponents(message, arr) {
-  const obj = { type: "textDisplayComponent", parserState: obj3(8169).getInitialParserStateFromMessage(message.message, closure_7) };
+  const obj = { type: "textDisplayComponent", parserState: obj3(8164).getInitialParserStateFromMessage(message.message, closure_7) };
   obj3 = {};
   const merged = Object.assign(message);
   obj3.markdownConfigs = { textDisplayComponent: obj };
   const mapped = arr.map((item) => transformToRowGeneratedComponent(obj3, item));
-  return mapped.filter(obj3(1374).isNotNullish);
+  return mapped.filter(obj3(1370).isNotNullish);
 };
 export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) {
   ({ width, height, contentType } = arg0);
@@ -593,12 +593,12 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) 
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp(8432).MediaGalleryItemType.IMAGE;
+            return tmp(8427).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              return tmp(8432).MediaGalleryItemType.VIDEO;
+              return tmp(8427).MediaGalleryItemType.VIDEO;
             }
-            tmpResult = tmp(4940);
+            tmpResult = tmp(4938);
           }
           obj = MediaFormatTesters;
         }

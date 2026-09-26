@@ -1,61 +1,20 @@
-// Module ID: 10653
-// Function ID: 10654
+// Module ID: 10536
+// Function ID: 10537
 // Name: useCanShowFavoritesGuildOnboarding
-// Dependencies: [4483, 2099, 558, 568, 504, 4648, 2]
+// Dependencies: [4479, 2095, 504, 4645, 2]
+// Exports: default
 
-// Module 10653 (useCanShowFavoritesGuildOnboarding)
+// Module 10536 (useCanShowFavoritesGuildOnboarding)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
-import ActionSheetStore from "ActionSheetStore" /* 4483 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
+import ActionSheetStore from "ActionSheetStore" /* 4479 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/hooks/useCanShowFavoritesGuildOnboarding.native.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectedChannelStore];
-    const fn = function s() {
-      return null != voiceChannelId.getVoiceChannelId();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ActionSheetStore];
-    const fn2 = function c() {
-      return open.isOpen();
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    let tmp9 = fn2;
-    let tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = initialize;
-  const stateFromStores1 = initialize.useStateFromStores(tmp8, tmp9);
-  const tmpResult3 = initialize;
-  let tmp13 = !stateFromStores;
-  const isModalOpen = NavigationRouteUtils.useIsModalOpen();
-  if (!stateFromStores) {
-    tmp13 = !stateFromStores1;
-  }
-  if (tmp13) {
-    tmp13 = !isModalOpen;
-  }
-  return tmp13;
-}) : (() => {
+export default function useCanShowFavoritesGuildOnboarding() {
   const items = [SelectedChannelStore];
   const stateFromStores = initialize.useStateFromStores(items, () => null != voiceChannelId.getVoiceChannelId());
   const items1 = [ActionSheetStore];
@@ -69,4 +28,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = !isModalOpen;
   }
   return tmp4;
-});
+};

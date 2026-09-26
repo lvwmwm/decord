@@ -1,17 +1,18 @@
 // Module ID: 10917
 // Function ID: 10918
-// Dependencies: [41, 42, 93, 95, 98, 10918, 10767, 10771]
+// Dependencies: [41, 42, 93, 95, 98, 10728, 10916, 10729, 10735]
 
 // Module 10917
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10771 */;
-import _mod10918 from "module_10918" /* 10918 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10728 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import _mod10916 from "module_10916" /* 10916 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const UKTimeUnitWithinFormatParser = require;
+const SVMonthNameLittleEndianParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,13 +32,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_6 = "(?:(?:\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E|\u043E\u0440\u0456\u0454\u043D\u0442\u043E\u0432\u043D\u043E)\\s*(?:~\\s*)?)?(" + _mod10918.TIME_UNITS_PATTERN + ")" + _mod10918.REGEX_PARTS.rightBoundary;
-class UKTimeUnitWithinFormatParser {
+const regExp = new RegExp("(?:den\\s*?)?([0-9]{1,2})(?:\\s*(?:till|\\-|\\\u2013|\\s)\\s*([0-9]{1,2}))?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10916.MONTH_DICTIONARY) + ")(?:(?:-|/|,?\\s*)([0-9]{4}(?![^\\s]\\d)))?(?=\\W|$)", "i");
+class SVMonthNameLittleEndianParser {
   constructor() {
     self = this;
-    tmp = c2(this, UKTimeUnitWithinFormatParser);
+    tmp = c2(this, SVMonthNameLittleEndianParser);
     tmp2 = closure_4;
-    obj = closure_4(UKTimeUnitWithinFormatParser);
+    obj = closure_4(SVMonthNameLittleEndianParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -52,36 +53,48 @@ class UKTimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(SVMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternLeftBoundary",
-  value: function patternLeftBoundary() {
-    return UKTimeUnitWithinFormatParser(10918).REGEX_PARTS.leftBoundary;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "innerPattern",
-    value: function innerPattern(option) {
-      const _RegExp = RegExp;
-      if (option.option.forwardDate) {
-        let _RegExp1 = new _RegExp(tmp, "i");
-      } else {
-        const _HermesInternal = HermesInternal;
-        const combined = "(?:\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u043D\u0430 \u043F\u0440\u043E\u0442\u044F\u0437\u0456|\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u0443\u043F\u0440\u043E\u0434\u043E\u0432\u0436|\u0432\u043F\u0440\u043E\u0434\u043E\u0432\u0436)\\s*" + tmp;
-        _RegExp1 = new _RegExp(combined, UKTimeUnitWithinFormatParser(10918).REGEX_PARTS.flags);
-      }
-      return _RegExp1;
-    }
-  },
-  {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const ParsingComponents = UKTimeUnitWithinFormatParser(10767).ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, UKTimeUnitWithinFormatParser(10918).parseDuration(arg1[1]));
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = SVMonthNameLittleEndianParser(10916).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const parsed = parseInt(index[1]);
+      if (parsed > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", parsed);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", tmp2(10916).parseYear(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", tmp2(10729).findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
+        }
+        if (index[2]) {
+          const _parseInt = parseInt;
+          const start3 = parsingResult.start;
+          const parsed1 = parseInt(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", parsed1);
+        }
+        return parsingResult;
+      }
     }
   }
 ];
 
-export default _createClass(UKTimeUnitWithinFormatParser, items);
+export default _createClass(SVMonthNameLittleEndianParser, items);

@@ -1,11 +1,11 @@
-// Module ID: 10682
-// Function ID: 10683
+// Module ID: 10566
+// Function ID: 10567
 // Name: ForumGuidelinesManager
-// Dependencies: [7397, 510, 2]
+// Dependencies: [7395, 510, 2]
 
-// Module 10682 (ForumGuidelinesManager)
+// Module 10566 (ForumGuidelinesManager)
 import Storage2 from "Storage" /* 510 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 const formGuidelinesStorageKey = "formGuidelinesStorageKey";

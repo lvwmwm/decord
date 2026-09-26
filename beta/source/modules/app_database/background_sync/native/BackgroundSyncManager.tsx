@@ -1,13 +1,13 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 17746
+// Function ID: 17747
 // Name: BackgroundSyncManager
-// Dependencies: [502, 1376, 7397, 17756, 2]
+// Dependencies: [502, 1372, 7395, 17747, 2]
 
-// Module 17755 (BackgroundSyncManager)
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 17756 */;
+// Module 17746 (BackgroundSyncManager)
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 17747 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1376 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import UserStore from "UserStore" /* 1372 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 class BackgroundSyncManager extends tmp2 {

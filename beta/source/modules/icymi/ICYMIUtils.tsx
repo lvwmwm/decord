@@ -1,27 +1,27 @@
-// Module ID: 8658
-// Function ID: 8659
+// Module ID: 8653
+// Function ID: 8654
 // Name: ICYMIUtils
-// Dependencies: [5, 7805, 2049, 2045, 2067, 5010, 4805, 8643, 8657, 1078, 8656, 8659, 5012, 11, 558, 568, 504, 8660, 8664, 8436, 8665, 8178, 1119, 7389, 1984, 1078, 2]
-// Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, getViewableFeedItemsArray, hydrateNextPage, icymiEnabled, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, isItemUnreadInChannel, itemToType, numberToCustomScore, regenerateFeedAndClearReadStates
+// Dependencies: [5, 7800, 2045, 2041, 2063, 5008, 4803, 8638, 8652, 1074, 8651, 8654, 5010, 11, 504, 8655, 8659, 8431, 8660, 8173, 1115, 7387, 1980, 1074, 2]
+// Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, getViewableFeedItemsArray, hydrateNextPage, icymiEnabled, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, isItemUnreadInChannel, itemToType, numberToCustomScore, regenerateFeedAndClearReadStates, useGravityMessage, useGravityMessageItem, useICYMIMessage
 
-// Module 8658 (ICYMIUtils)
+// Module 8653 (ICYMIUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8178 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8436 */;
-import ICYMITypes from "ICYMITypes" /* 8656 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8659 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8660 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8664 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 8665 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8173 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8431 */;
+import ICYMITypes from "ICYMITypes" /* 8651 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8654 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8655 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8659 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 8660 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7805 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import MessageStore from "MessageStore" /* 5010 */;
-import ReadStateStore from "ReadStateStore" /* 4805 */;
-import ICYMIStore from "ICYMIStore" /* 8643 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8657 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7800 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import MessageStore from "MessageStore" /* 5008 */;
+import ReadStateStore from "ReadStateStore" /* 4803 */;
+import ICYMIStore from "ICYMIStore" /* 8638 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8652 */;
 
 const require = globalThis.__r;
 
@@ -50,7 +50,7 @@ let closure_17 = async function _hydrateItems(arg0, value) {
       let obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -69,10 +69,10 @@ let closure_17 = async function _hydrateItems(arg0, value) {
           if (0 !== substr.length) {
             const hydratedAttempt = ICYMIActionCreatorsDefault.loadHydratedAttempt(generateHydrationId(tmp23, tmp24));
             const found = substr.filter((item) => null == dependencyMap[item.id]);
-            const found1 = found.filter((type) => type.type === dependencyMap(8656).ICYMIItemTypes.MESSAGE);
+            const found1 = found.filter((type) => type.type === dependencyMap(8651).ICYMIItemTypes.MESSAGE);
             const mapped = found1.map((channel_id) => ({ channel_id: channel_id.data.channel_id, message_id: channel_id.data.message_id }));
             const mapped1 = found.map((type) => {
-              if (type.type === dependencyMap(8656).ICYMIItemTypes.MESSAGE) {
+              if (type.type === dependencyMap(8651).ICYMIItemTypes.MESSAGE) {
                 const message_context = type.data.message_context;
                 let reply_message_id;
                 if (message_context != null) {
@@ -108,7 +108,7 @@ let closure_17 = async function _hydrateItems(arg0, value) {
             });
             const _Boolean = Boolean;
             const found2 = mapped1.flat().filter(Boolean);
-            const found3 = found.filter((type) => type.type === dependencyMap(8656).ICYMIItemTypes.ACTIVITY);
+            const found3 = found.filter((type) => type.type === dependencyMap(8651).ICYMIItemTypes.ACTIVITY);
             const mapped2 = found3.map((data) => ({ user_id: data.data.user_id, content_id: data.data.content_id }));
             const flatResult = mapped1.flat();
             const obj6 = { messageItems: null, activityItems: null };
@@ -131,7 +131,7 @@ let closure_17 = async function _hydrateItems(arg0, value) {
         return obj;
       }
       c3 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     } catch (tmp17) {
       c3 = tmp;
       throw tmp17;
@@ -149,7 +149,7 @@ let closure_18 = async function _hydrateNextPage(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -182,7 +182,7 @@ let closure_18 = async function _hydrateNextPage(arg0, value) {
         return obj;
       } else {
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp5) {
       c0 = tmp;
@@ -201,7 +201,7 @@ let closure_19 = async function _regenerateFeedAndClearReadStates(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -222,7 +222,7 @@ let closure_19 = async function _regenerateFeedAndClearReadStates(arg0, value) {
           let AnalyticsObjectTypes;
           c3 = 1;
           c4 = 1;
-          const obj5 = { value: require("asyncRequireImpl")(paths[23], paths.paths), done: false };
+          const obj5 = { value: require("asyncRequireImpl")(paths[21], paths.paths), done: false };
           return obj5;
         }
       } else if (1 === tmp5) {
@@ -237,7 +237,7 @@ let closure_19 = async function _regenerateFeedAndClearReadStates(arg0, value) {
           ack = value.ack;
           c3 = 2;
           c4 = 1;
-          const obj8 = { value: closure_130_0(closure_130_2[24])(closure_130_2[25], closure_130_2.paths), done: false };
+          const obj8 = { value: closure_130_0(closure_130_2[22])(closure_130_2[23], closure_130_2.paths), done: false };
           return obj8;
         }
       } else if (2 === tmp5) {
@@ -324,7 +324,7 @@ let closure_19 = async function _regenerateFeedAndClearReadStates(arg0, value) {
       } else {
         const recommendedGuilds = closure_130_1(closure_130_2[11]).getRecommendedGuilds();
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp36) {
       c4 = tmp;
@@ -332,103 +332,10 @@ let closure_19 = async function _regenerateFeedAndClearReadStates(arg0, value) {
     }
   }
 };
-const ThreadChannelRecord = fn(2049).ThreadChannelRecord;
-const Constants = fn(1078);
+const ThreadChannelRecord = fn(2045).ThreadChannelRecord;
+const Constants = fn(1074);
 ({ ChannelTypes: closure_12, GuildNSFWContentLevel: map1 } = Constants);
 const ICYMICustomScore = { UNKNOWN: 0, [0]: "UNKNOWN", DEFAULT: 1, [1]: "DEFAULT", MORE: 2, [2]: "MORE", LESS: 3, [3]: "LESS", MUTED: 4, [4]: "MUTED" };
-fn(558);
-let ReactCompilerGating = fn(558);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore, ICYMIStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function a() {
-      let message = MessageStore.getMessage(channelId.getChannelId(), channelId.id);
-      if (message == null) {
-        const hydratedItem = ICYMIStore.getHydratedItem(tmp.id);
-        let message1;
-        if (hydratedItem != null) {
-          message1 = hydratedItem.message;
-        }
-        message = message1;
-      }
-      if (message == null) {
-        message = tmp;
-      }
-      return message;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp8 = items1;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
-  _require = arg0;
-  const items = [MessageStore, ICYMIStore];
-  const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
-    let message = MessageStore.getMessage(channelId.getChannelId(), channelId.id);
-    if (message == null) {
-      const hydratedItem = ICYMIStore.getHydratedItem(tmp.id);
-      let message1;
-      if (hydratedItem != null) {
-        message1 = hydratedItem.message;
-      }
-      message = message1;
-    }
-    if (message == null) {
-      message = tmp;
-    }
-    return message;
-  }, items1);
-});
-ReactCompilerGating = fn(558);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
-  _require = id;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ICYMIStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function a() {
-      return ICYMIStore.getHydratedItem(id.id);
-    };
-    const items1 = [id.id];
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp7 = items1;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp6, tmp7);
-}) : ((id) => {
-  _require = id;
-  const items = [ICYMIStore];
-  const items1 = [id.id];
-  return require("initialize").useStateFromStores(items, () => ICYMIStore.getHydratedItem(id.id), items1);
-});
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/icymi/ICYMIUtils.tsx");
 
@@ -503,54 +410,37 @@ export const isItemUnreadInChannel = function isItemUnreadInChannel(channel_id, 
   }
   return tmp2;
 };
-export const useGravityMessage = tmp3;
-export const useGravityMessageItem = tmp4;
-export const useICYMIMessage = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  _require = arg0;
-  closure_1 = arg1;
-  const cResult = require("c").c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore, ICYMIStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    if (cResult[2] === arg1) {
-      let tmp7 = cResult[3];
-      let tmp8 = cResult[4];
-    }
-    return require("initialize").useStateFromStores(first, tmp7, tmp8);
-  }
-  const fn = function s() {
-    let tmp2 = null;
-    if (null != closure_1) {
-      let message = MessageStore.getMessage(closure_0, tmp);
-      if (message == null) {
-        const hydratedItem = ICYMIStore.getHydratedItem(tmp);
-        let message1;
-        if (hydratedItem != null) {
-          message1 = hydratedItem.message;
-        }
-        message = message1;
-      }
-      tmp2 = message;
-    }
-    return tmp2;
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : ((arg0, arg1) => {
-  _require = arg0;
-  closure_1 = arg1;
+export const useGravityMessage = function useGravityMessage(message) {
+  _require = message;
   const items = [MessageStore, ICYMIStore];
-  const items1 = [arg0, arg1];
+  const items1 = [message];
+  return require("initialize").useStateFromStores(items, () => {
+    message = MessageStore.getMessage(message.getChannelId(), message.id);
+    if (message == null) {
+      const hydratedItem = ICYMIStore.getHydratedItem(tmp.id);
+      let message1;
+      if (hydratedItem != null) {
+        message1 = hydratedItem.message;
+      }
+      message = message1;
+    }
+    if (message == null) {
+      message = tmp;
+    }
+    return message;
+  }, items1);
+};
+export const useGravityMessageItem = function useGravityMessageItem(id) {
+  _require = id;
+  const items = [ICYMIStore];
+  const items1 = [id.id];
+  return require("initialize").useStateFromStores(items, () => ICYMIStore.getHydratedItem(id.id), items1);
+};
+export const useICYMIMessage = function useICYMIMessage(id, before_message_id) {
+  _require = id;
+  closure_1 = before_message_id;
+  const items = [MessageStore, ICYMIStore];
+  const items1 = [id, before_message_id];
   return require("initialize").useStateFromStores(items, () => {
     let tmp2 = null;
     if (null != closure_1) {
@@ -567,7 +457,7 @@ export const useICYMIMessage = ReactCompilerGating.isReactCompilerEnabled() ? ((
     }
     return tmp2;
   }, items1);
-});
+};
 export const icymiEnabled = function icymiEnabled(customScores) {
   return ICYMIExperiment.getICYMIEnabled(customScores);
 };
@@ -677,7 +567,7 @@ export const isItemNSFW = function isItemNSFW(data) {
     if (guild_id1 == null) {
       guild_id1 = guild_id;
     }
-    guild = null;
+    let guild = null;
     if (null != guild_id1) {
       guild = GuildStore.getGuild(guild_id1);
     }
@@ -771,13 +661,13 @@ export const determineContentType = function determineContentType(channel, messa
     if (message.attachments.length > 0) {
       let ContentType = dependencyMap;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        ContentType = tmp6(8656).ContentType;
+        ContentType = tmp6(8651).ContentType;
         let IMAGE = ContentType.IMAGE;
       } else {
-        const result = tmp6(8178).isValidVideoAttachment(message.attachments[0]);
-        const ContentType2 = tmp6(8656).ContentType;
+        const result = tmp6(8173).isValidVideoAttachment(message.attachments[0]);
+        const ContentType2 = tmp6(8651).ContentType;
         IMAGE = result ? ContentType2.VIDEO : ContentType2.FILE;
-        const tmp6Result = tmp6(8178);
+        const tmp6Result = tmp6(8173);
       }
       obj = ForumPostMediaUtils;
     } else {
@@ -790,48 +680,48 @@ export const determineContentType = function determineContentType(channel, messa
     }
   }
 };
-export const contentTypeToText = function contentTypeToText(ANNOUNCEMENT, mentioned) {
-  let flag = mentioned;
-  if (mentioned === undefined) {
+export const contentTypeToText = function contentTypeToText(arg0) {
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = false;
   }
-  if (ICYMITypes.ContentType.POPULAR_MESSAGE === ANNOUNCEMENT) {
-    const intl10 = tmp(1119).intl;
-    return intl10.string(tmp(1119).t["H/2+cl"]);
-  } else if (tmp(8656).ContentType.IMAGE === ANNOUNCEMENT) {
-    const intl9 = tmp(1119).intl;
-    return intl9.string(tmp(1119).t.gmOWAo);
-  } else if (tmp(8656).ContentType.VIDEO === ANNOUNCEMENT) {
-    const intl8 = tmp(1119).intl;
-    return intl8.string(tmp(1119).t.swhcPM);
-  } else if (tmp(8656).ContentType.LINK === ANNOUNCEMENT) {
-    const intl7 = tmp(1119).intl;
-    return intl7.string(tmp(1119).t.oj5yvD);
-  } else if (tmp(8656).ContentType.THREAD === ANNOUNCEMENT) {
-    const intl6 = tmp(1119).intl;
-    return intl6.string(tmp(1119).t.DwLrLK);
-  } else if (tmp(8656).ContentType.FORUM_POST === ANNOUNCEMENT) {
-    const intl5 = tmp(1119).intl;
-    return intl5.string(tmp(1119).t["Q9/6BS"]);
-  } else if (tmp(8656).ContentType.CHANGED_STATUS === ANNOUNCEMENT) {
-    const intl4 = tmp(1119).intl;
-    return intl4.string(tmp(1119).t.TGrUmi);
-  } else if (tmp(8656).ContentType.INTERESTING === ANNOUNCEMENT) {
-    const intl3 = tmp(1119).intl;
-    return intl3.string(tmp(1119).t["TahE/i"]);
-  } else if (tmp(8656).ContentType.ANNOUNCEMENT === ANNOUNCEMENT) {
-    const intl2 = tmp(1119).intl;
+  if (ICYMITypes.ContentType.POPULAR_MESSAGE === arg0) {
+    const intl10 = tmp(1115).intl;
+    return intl10.string(tmp(1115).t["H/2+cl"]);
+  } else if (tmp(8651).ContentType.IMAGE === arg0) {
+    const intl9 = tmp(1115).intl;
+    return intl9.string(tmp(1115).t.gmOWAo);
+  } else if (tmp(8651).ContentType.VIDEO === arg0) {
+    const intl8 = tmp(1115).intl;
+    return intl8.string(tmp(1115).t.swhcPM);
+  } else if (tmp(8651).ContentType.LINK === arg0) {
+    const intl7 = tmp(1115).intl;
+    return intl7.string(tmp(1115).t.oj5yvD);
+  } else if (tmp(8651).ContentType.THREAD === arg0) {
+    const intl6 = tmp(1115).intl;
+    return intl6.string(tmp(1115).t.DwLrLK);
+  } else if (tmp(8651).ContentType.FORUM_POST === arg0) {
+    const intl5 = tmp(1115).intl;
+    return intl5.string(tmp(1115).t["Q9/6BS"]);
+  } else if (tmp(8651).ContentType.CHANGED_STATUS === arg0) {
+    const intl4 = tmp(1115).intl;
+    return intl4.string(tmp(1115).t.TGrUmi);
+  } else if (tmp(8651).ContentType.INTERESTING === arg0) {
+    const intl3 = tmp(1115).intl;
+    return intl3.string(tmp(1115).t["TahE/i"]);
+  } else if (tmp(8651).ContentType.ANNOUNCEMENT === arg0) {
+    const intl2 = tmp(1115).intl;
     const string = intl2.string;
-    const t = tmp(1119).t;
+    const t = tmp(1115).t;
     if (flag) {
       let stringResult = string(t.E0MW8I);
     } else {
       stringResult = string(t["2ih63V"]);
     }
     return stringResult;
-  } else if (tmp(8656).ContentType.FILE === ANNOUNCEMENT) {
-    const intl = tmp(1119).intl;
-    return intl.string(tmp(1119).t.pYrnTY);
+  } else if (tmp(8651).ContentType.FILE === arg0) {
+    const intl = tmp(1115).intl;
+    return intl.string(tmp(1115).t.pYrnTY);
   }
 };
 export const regenerateFeedAndClearReadStates = function regenerateFeedAndClearReadStates() {

@@ -1,11 +1,11 @@
-// Module ID: 10651
-// Function ID: 10652
+// Module ID: 10534
+// Function ID: 10535
 // Name: DismissibleContentFrameworkActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 // Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, resetDismissibleContentFrameworkStore
 
-// Module 10651 (DismissibleContentFrameworkActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 10534 (DismissibleContentFrameworkActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkActionCreators.tsx");

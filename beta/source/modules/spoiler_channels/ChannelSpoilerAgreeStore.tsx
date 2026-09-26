@@ -1,11 +1,11 @@
-// Module ID: 7606
-// Function ID: 7607
+// Module ID: 7604
+// Function ID: 7605
 // Name: ChannelSpoilerAgreeStore
-// Dependencies: [502, 504, 577, 2]
+// Dependencies: [502, 504, 573, 2]
 
-// Module 7606 (ChannelSpoilerAgreeStore)
+// Module 7604 (ChannelSpoilerAgreeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 let closure_1 = { users: {} };

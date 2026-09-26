@@ -1,16 +1,16 @@
-// Module ID: 14777
-// Function ID: 14778
+// Module ID: 14767
+// Function ID: 14768
 // Name: FrecencySettingsMigrations
-// Dependencies: [1088, 1078, 504, 1225, 12, 1226, 510, 11, 2]
+// Dependencies: [1084, 1074, 504, 1221, 12, 1222, 510, 11, 2]
 
-// Module 14777 (FrecencySettingsMigrations)
+// Module 14767 (FrecencySettingsMigrations)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1078 */;
-import frecency_user_settings from "frecency_user_settings" /* 1225 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1226 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1088 */;
+import Constants from "Constants" /* 1074 */;
+import frecency_user_settings from "frecency_user_settings" /* 1221 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1222 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,12 +52,12 @@ function readFavoriteGIFs(arg0) {
         const obj2 = FavoriteGIF.create();
         format = format.format;
         if (constants.IMAGE === format) {
-          let NONE = tmp(1225).GIFType.IMAGE;
+          let NONE = tmp(1221).GIFType.IMAGE;
         } else if (tmp4.VIDEO === format) {
-          NONE = tmp(1225).GIFType.VIDEO;
+          NONE = tmp(1221).GIFType.VIDEO;
         } else {
           const format2 = format.format;
-          NONE = tmp(1225).GIFType.NONE;
+          NONE = tmp(1221).GIFType.NONE;
         }
         obj2.format = NONE;
         ({ src: tmp3.src, width: tmp3.width, height: tmp3.height } = format);
@@ -126,7 +126,7 @@ let items = [
           obj = { usageHistory: {}, favorites: [] };
         }
       ];
-      state = PersistedStore.migrateAndReadStoreState("StickersPersistedStore", items).state;
+      const state = PersistedStore.migrateAndReadStoreState("StickersPersistedStore", items).state;
       if (null == state) {
         return false;
       } else {
@@ -164,7 +164,7 @@ let items = [
           return { usageHistory };
         }
       ];
-      state = PersistedStore.migrateAndReadStoreState("EmojiStore", items).state;
+      const state = PersistedStore.migrateAndReadStoreState("EmojiStore", items).state;
       if (null == state) {
         return false;
       } else {
@@ -278,7 +278,7 @@ let items = [
     version: 7,
     run(applicationCommandFrecency) {
       const PersistedStore = initializeDefault.PersistedStore;
-      state = PersistedStore.migrateAndReadStoreState("ApplicationCommandFrecency", []).state;
+      const state = PersistedStore.migrateAndReadStoreState("ApplicationCommandFrecency", []).state;
       if (null == state) {
         return false;
       } else {
@@ -302,7 +302,7 @@ let items = [
     run(arg0) {
       closure_0 = arg0;
       const PersistedStore = initializeDefault.PersistedStore;
-      state = PersistedStore.migrateAndReadStoreState("SoundboardFavoriteStore", []).state;
+      const state = PersistedStore.migrateAndReadStoreState("SoundboardFavoriteStore", []).state;
       if (null == state) {
         return false;
       } else {
@@ -376,7 +376,7 @@ let items = [
           const EmojiFrecency2 = frecency_user_settings.EmojiFrecency;
           EmojiFrecency2.mergePartial(obj, emojiFrecency.emojiFrecency);
           if (null != emojiFrecency.emojiReactionFrecency) {
-            const EmojiFrecency3 = tmp3(1225).EmojiFrecency;
+            const EmojiFrecency3 = tmp3(1221).EmojiFrecency;
             EmojiFrecency3.mergePartial(obj, emojiFrecency.emojiReactionFrecency);
           }
           emojiFrecency.emojiReactionFrecency = obj;
@@ -420,7 +420,7 @@ let items = [
                   isMatch = obj.test(tmp9.src);
                 }
                 if (isMatch) {
-                  tmp9.format = tmp3(1225).GIFType.IMAGE;
+                  tmp9.format = tmp3(1221).GIFType.IMAGE;
                   flag = true;
                 }
                 flag3 = flag;

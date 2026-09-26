@@ -1,16 +1,17 @@
 // Module ID: 10903
 // Function ID: 10904
-// Dependencies: [41, 42, 93, 95, 98, 10764, 10893, 10791, 10895]
+// Dependencies: [41, 42, 93, 95, 96, 98, 10722, 10742]
 
 // Module 10903
-import _mod10895 from "module_10895" /* 10895 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10742 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
-const RUWeekdayParser = require;
+const ENTimeExpressionParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,82 +31,95 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUWeekdayParser {
-  constructor() {
+class ENTimeExpressionParser {
+  constructor(arg0) {
     self = this;
-    tmp = c2(this, RUWeekdayParser);
+    tmp = c2(this, ENTimeExpressionParser);
+    items = [];
+    items[0] = global;
     tmp2 = closure_4;
-    obj = closure_4(RUWeekdayParser);
+    obj = closure_4(ENTimeExpressionParser);
     tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
+    if (metroRequire()) {
+      tmp5 = globalThis;
       _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, items);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUWeekdayParser, _mod10895.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(ENTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:(\u044D\u0442\u0443|\u044D\u0442\u043E\u0442|\u043F\u0440\u043E\u0448\u043B\u044B\u0439|\u043F\u0440\u043E\u0448\u043B\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E)\\s*)?(" + RUWeekdayParser(10764).matchAnyPattern(RUWeekdayParser(10893).WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*\u043D\u0430\\s*(\u044D\u0442\u043E\u0439|\u043F\u0440\u043E\u0448\u043B\u043E\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439)\\s*\u043D\u0435\u0434\u0435\u043B\u0435)?";
+  key: "followingPhase",
+  value: function followingPhase() {
+    return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|to|\\?)\\s*";
   }
 };
-const items = [
+let items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const formatted = arg1[2].toLowerCase();
-      let str2 = arg1[1];
-      if (!str2) {
-        str2 = arg1[3];
+    key: "primaryPrefix",
+    value: function primaryPrefix() {
+      return "(?:(?:alle|dalle)\\s*)??";
+    }
+  },
+  {
+    key: "primarySuffix",
+    value: function primarySuffix() {
+      return "(?:\\s*(?:o\\W*in punto|alle\\s*sera|in\\s*del\\s*(?:mattina|pomeriggio)))?(?!/)(?=\\W|$)";
+    }
+  },
+  {
+    key: "extractPrimaryTimeComponents",
+    value: function extractPrimaryTimeComponents(arg0, arg1) {
+      const self = this;
+      const tmp = hasOwnProperty(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
+      dependencyMap = tmp;
+      let fn = tmp;
+      if (typeof tmp === "function") {
+        fn = (items) => closure_1.apply(self, items);
       }
-      if (!str2) {
-        str2 = "";
-      }
-      const formatted1 = str2.toLowerCase();
-      let str3 = "last";
-      if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0439" != formatted1) {
-        str3 = "last";
-        if ("\u043F\u0440\u043E\u0448\u043B\u0443\u044E" != formatted1) {
-          str3 = "last";
-          if ("\u043F\u0440\u043E\u0448\u043B\u043E\u0439" != formatted1) {
-            str3 = "next";
-            if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439" != formatted1) {
-              str3 = "next";
-              if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E" != formatted1) {
-                str3 = "next";
-                if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439" != formatted1) {
-                  str3 = "next";
-                  if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E" != formatted1) {
-                    let tmp5 = "\u044D\u0442\u043E\u0442" != formatted1;
-                    if (tmp5) {
-                      tmp5 = "\u044D\u0442\u0443" != formatted1;
-                    }
-                    if (tmp5) {
-                      tmp5 = "\u044D\u0442\u043E\u0439" != formatted1;
-                    }
-                    str3 = null;
-                    if (!tmp5) {
-                      str3 = "this";
-                    }
-                  }
-                }
-              }
+      const items = [arg0, arg1];
+      const fnResult = fn(items);
+      if (fnResult) {
+        const first = arg1[0];
+        if (first.endsWith("sera")) {
+          value = fnResult.get("hour");
+          if (value >= 6) {
+            if (value < 12) {
+              fnResult.assign("hour", fnResult.get("hour") + 12);
+              fnResult.assign("meridiem", ENTimeExpressionParser(10722).Meridiem.PM);
             }
+          }
+          if (value < 6) {
+            fnResult.assign("meridiem", ENTimeExpressionParser(10722).Meridiem.AM);
+          }
+        }
+        const first1 = arg1[0];
+        if (first1.endsWith("pomeriggio")) {
+          fnResult.assign("meridiem", ENTimeExpressionParser(10722).Meridiem.PM);
+          value2 = fnResult.get("hour");
+          let tmp14 = value2 >= 0;
+          if (tmp14) {
+            tmp14 = value2 <= 6;
+          }
+          if (tmp14) {
+            fnResult.assign("hour", fnResult.get("hour") + 12);
+          }
+        }
+        const first2 = arg1[0];
+        if (first2.endsWith("mattina")) {
+          fnResult.assign("meridiem", ENTimeExpressionParser(10722).Meridiem.AM);
+          if (fnResult.get("hour") < 12) {
+            fnResult.assign("hour", fnResult.get("hour"));
           }
         }
       }
-      return RUWeekdayParser(10791).createParsingComponentsAtWeekday(reference.reference, RUWeekdayParser(10893).WEEKDAY_DICTIONARY[formatted], str3);
+      return fnResult;
     }
   }
 ];
 
-export default _createClass(RUWeekdayParser, items);
+export default _createClass(ENTimeExpressionParser, items);

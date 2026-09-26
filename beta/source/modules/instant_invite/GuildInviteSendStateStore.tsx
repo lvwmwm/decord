@@ -1,16 +1,16 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 13439
+// Function ID: 13440
 // Name: GuildInviteSendStateStore
-// Dependencies: [562, 1252, 2]
+// Dependencies: [560, 1248, 2]
 // Exports: setSendState
 
-// Module 13461 (GuildInviteSendStateStore)
-import module_562 from "module_562" /* 562 */;
+// Module 13439 (GuildInviteSendStateStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const useGuildInviteSendStates = module_562.create(() => ({}));
+const useGuildInviteSendStates = module_560.create(() => ({}));
 const result = size.fileFinishedImporting("modules/instant_invite/GuildInviteSendStateStore.tsx");
 
 export const setSendState = function setSendState(arg0, arg1, arg2) {

@@ -1,16 +1,16 @@
-// Module ID: 7565
-// Function ID: 7566
+// Module ID: 7563
+// Function ID: 7564
 // Name: ReportUtils
-// Dependencies: [2045, 4710, 4431, 1376, 1078, 2]
+// Dependencies: [2041, 4707, 4427, 1372, 1074, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 7565 (ReportUtils)
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 7563 (ReportUtils)
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import UserStore from "UserStore" /* 1372 */;
 
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ChannelTypes: closure_4, Permissions: hasOwnProperty, MessageTypesSets: metroRequire } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/ReportUtils.tsx");

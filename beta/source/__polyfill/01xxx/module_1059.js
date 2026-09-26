@@ -1,220 +1,355 @@
 // Module ID: 1059
 // Function ID: 1060
-// Dependencies: [1029, 1035, 686, 1027, 1030, 991]
-// Exports: reactNativeNavigationIntegration
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 682, 1057, 1030, 1020, 1023]
+// Exports: withTouchEventBoundary
 
 // Module 1059
-import _mod686 from "module_686" /* 686 */;
-import _mod991 from "module_991" /* 991 */;
-import startIdleSpan from "startIdleSpan" /* 1029 */;
-import _mod1035 from "module_1035" /* 1035 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-const self = this;
-require = arg1;
-const dependencyMap = arg6;
-const ReactNativeNavigation = "ReactNativeNavigation";
-
-export const INTEGRATION_NAME = "ReactNativeNavigation";
-export const reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
-  ({ navigation, routeChangeTimeoutMs } = enableTabsInstrumentation);
-  if (routeChangeTimeoutMs === undefined) {
-    routeChangeTimeoutMs = 1000;
-  }
-  let flag = enableTabsInstrumentation.enableTabsInstrumentation;
-  if (flag === undefined) {
-    flag = false;
-  }
-  let flag2 = enableTabsInstrumentation.ignoreEmptyBackNavigationTransactions;
-  if (flag2 === undefined) {
-    flag2 = true;
-  }
-  let reactNativeTracingIntegration;
-  c3 = undefined;
-  c4 = undefined;
-  let pushRecentComponentId;
-  let discardLatestNavigationSpan;
-  let clearStateChangeTimeout;
-  closure_5 = [];
-  flag2(reactNativeTracingIntegration[0]).defaultIdleOptions;
-  enableTabsInstrumentation = null;
-  function startIdleNavigationSpan() {
-    if (_undefined) {
-      if (typeof discardLatestNavigationSpan === "function") {
-        if (tmp) {
-          if (obj.isSentrySpan(_undefined)) {
-            _undefined._sampled = false;
-          }
-          _undefined.end();
-          _undefined = undefined;
-          obj = flag2(reactNativeTracingIntegration[5]);
-        }
-        if (typeof clearStateChangeTimeout === "function") {
-          if (undefined !== timeout) {
-            const _clearTimeout = clearTimeout;
-            clearTimeout(timeout);
-            timeout = undefined;
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    }
-    obj2 = flag2(reactNativeTracingIntegration[0]);
-    let beforeStartSpan;
-    if (null != reactNativeTracingIntegration) {
-      beforeStartSpan = reactNativeTracingIntegration.options.beforeStartSpan;
-    }
-    if (beforeStartSpan) {
-      options = reactNativeTracingIntegration.options;
-      let beforeStartSpanResult = options.beforeStartSpan(flag2(reactNativeTracingIntegration[0]).getDefaultIdleNavigationSpanOptions());
-      const obj4 = flag2(reactNativeTracingIntegration[0]);
+const TouchEventBoundary = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
     } else {
-      beforeStartSpanResult = flag2(reactNativeTracingIntegration[0]).getDefaultIdleNavigationSpanOptions();
-      const obj3 = flag2(reactNativeTracingIntegration[0]);
+      callResult = call(constructResult);
     }
-    const result = obj2.startIdleNavigationSpan(beforeStartSpanResult, obj2);
-    _undefined = result;
-    if (null != result) {
-      const attr = _undefined.setAttribute(flag2(reactNativeTracingIntegration[2]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, flag2(reactNativeTracingIntegration[3]).SPAN_ORIGIN_AUTO_NAVIGATION_REACT_NATIVE_NAVIGATION);
-    }
-    if (flag2) {
-      const obj5 = flag2(reactNativeTracingIntegration[4]);
-      const result1 = obj5.ignoreEmptyBackNavigation(flag2(reactNativeTracingIntegration[2]).getClient(), _undefined);
-      const obj6 = flag2(reactNativeTracingIntegration[2]);
-    }
-    closure_0 = _undefined;
-    const obj7 = flag2(reactNativeTracingIntegration[4]);
-    const client = flag2(reactNativeTracingIntegration[2]).getClient();
-    const result2 = obj7.ignoreEmptyRouteChangeTransactions(client, _undefined, flag2(reactNativeTracingIntegration[0]).DEFAULT_NAVIGATION_SPAN_NAME, () => c4 === closure_0);
-    timeout = setTimeout(discardLatestNavigationSpan.bind(c3), closure_0);
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let result = navigation.events().registerCommandListener(startIdleNavigationSpan);
-  if (flag) {
-    let result1 = navigation.events().registerBottomTabPressedListener(startIdleNavigationSpan);
-    const eventsResult1 = navigation.events();
-  }
-  const eventsResult = navigation.events();
-  let result2 = navigation.events().registerComponentWillAppearListener((componentId) => {
-    if (_undefined) {
-      if (enableTabsInstrumentation) {
-        if (componentId.componentId === enableTabsInstrumentation.componentId) {
-          if (typeof discardLatestNavigationSpan === "function") {
-            if (_undefined) {
-              if (obj6.isSentrySpan(_undefined)) {
-                _undefined._sampled = false;
-              }
-              _undefined.end();
-              _undefined = undefined;
-              obj6 = _mod991;
-            }
-            if (typeof clearStateChangeTimeout === "function") {
-              if (undefined !== c3) {
-                const _clearTimeout2 = clearTimeout;
-                clearTimeout(c3);
-                c3 = undefined;
-              }
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-      }
-      if (typeof clearStateChangeTimeout === "function") {
-        if (undefined !== c3) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(c3);
-          c3 = undefined;
-        }
-        const hasItem = closure_5.includes(componentId.componentId);
-        if (obj.spanToJSON(_undefined).description === startIdleSpan.DEFAULT_NAVIGATION_SPAN_NAME) {
-          _undefined.updateName(componentId.componentName);
-        }
-        const obj4 = { "route.name": null, "route.component_id": null, "route.component_type": null, "route.has_been_seen": null, "previous_route.name": null, "previous_route.component_id": null, "previous_route.component_type": null };
-        ({ componentName: obj2["route.name"], componentId: obj2["route.component_id"], componentType: obj2["route.component_type"] } = componentId);
-        obj4["route.has_been_seen"] = hasItem;
-        let componentName;
-        if (null != enableTabsInstrumentation) {
-          componentName = enableTabsInstrumentation.componentName;
-        }
-        obj4["previous_route.name"] = componentName;
-        componentId = undefined;
-        if (null != enableTabsInstrumentation) {
-          componentId = enableTabsInstrumentation.componentId;
-        }
-        obj4["previous_route.component_id"] = componentId;
-        let componentType;
-        if (null != enableTabsInstrumentation) {
-          componentType = enableTabsInstrumentation.componentType;
-        }
-        obj4["previous_route.component_type"] = componentType;
-        obj4[_mod686.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "component";
-        obj4[_mod686.SEMANTIC_ATTRIBUTE_SENTRY_OP] = "navigation";
-        _undefined.setAttributes(obj4);
-        if (null != reactNativeTracingIntegration) {
-          reactNativeTracingIntegration.setCurrentRoute(componentId.componentName);
-        }
-        obj = _mod686;
-        const obj5 = { category: "navigation", type: "navigation", message: null, data: null };
-        const _HermesInternal = HermesInternal;
-        obj5.message = "Navigation to " + componentId.componentName;
-        let componentName1;
-        if (null != enableTabsInstrumentation) {
-          componentName1 = enableTabsInstrumentation.componentName;
-        }
-        const obj9 = { from: componentName1, to: componentId.componentName };
-        obj5.data = obj9;
-        _mod686.addBreadcrumb(obj5);
-        if (typeof pushRecentComponentId === "function") {
-          closure_5.push(tmp45);
-          if (closure_5.length > 200) {
-            closure_5 = closure_5.slice(closure_5.length - 200);
-          }
-          enableTabsInstrumentation = componentId;
-          _undefined = undefined;
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    }
-  });
-  pushRecentComponentId = function pushRecentComponentId(arg0) {
-
-  };
-  discardLatestNavigationSpan = function discardLatestNavigationSpan() {
-    if (_undefined) {
-      if (obj.isSentrySpan(_undefined)) {
-        _undefined._sampled = false;
-      }
-      _undefined.end();
-      _undefined = undefined;
-      obj = _mod991;
-    }
-    if (typeof clearStateChangeTimeout === "function") {
-      if (undefined !== c3) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(c3);
-        c3 = undefined;
-      }
+}
+get_ActivityIndicator = fn(17);
+({ StyleSheet, View: metroRequire } = get_ActivityIndicator);
+const wrapperView = StyleSheet.create({ wrapperView: { flex: 1 } });
+let c9 = "sentry-label";
+let c10 = "data-sentry-component";
+let c11 = "data-sentry-element";
+let c12 = "data-sentry-source-file";
+class TouchEventBoundary {
+  constructor() {
+    self = this;
+    tmp = c2(this, TouchEventBoundary);
+    tmp2 = closure_4;
+    obj = closure_4(TouchEventBoundary);
+    tmp3 = closure_3;
+    if (closure_7()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      throw new TypeError("Trying to call a non-function");
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-  };
-  clearStateChangeTimeout = function clearStateChangeTimeout() {
-
-  };
-  return {
-    name: routeChangeTimeoutMs,
-    afterAllSetup(getIntegrationByName) {
-      reactNativeTracingIntegration = _mod1035.getReactNativeTracingIntegration(getIntegrationByName);
-      if (reactNativeTracingIntegration) {
-        obj2 = { finalTimeout: reactNativeTracingIntegration.options.finalTimeoutMs, idleTimeout: reactNativeTracingIntegration.options.idleTimeoutMs };
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result.name = "TouchEventBoundary";
+    return tmp3Result;
+  }
+}
+_inherits(TouchEventBoundary, noop.Component);
+const entry = {
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    const client = TouchEventBoundary(682).getClient();
+    let addIntegration;
+    if (null != client) {
+      addIntegration = client.addIntegration;
+    }
+    if (!tmp5) {
+      const self = this;
+      const call = addIntegration.call;
+      const integration = TouchEventBoundary(1057).createIntegration(this.name);
+      if (typeof call === "unknown") {
+        addIntegration(integration);
+      } else {
+        call(client, integration);
+      }
+      const tmpResult = TouchEventBoundary(1057);
+    }
+  }
+};
+let items = [
+  entry,
+  {
+    key: "render",
+    value: function render() {
+      const obj = { style: wrapperView.wrapperView, onTouchStart: null };
+      const _onTouchStart = this._onTouchStart;
+      obj.onTouchStart = _onTouchStart.bind(this);
+      return <timestampProducer style={wrapperView.wrapperView} onTouchStart={null}>{this.props.children}</timestampProducer>;
+    }
+  },
+  {
+    key: "_logTouchEvent",
+    value: function _logTouchEvent(items, label) {
+      const first = items[0];
+      if (first) {
+        let combined = label;
+        if (!label) {
+          let str3 = "";
+          if (first.file) {
+            const _HermesInternal = HermesInternal;
+            str3 = " (" + first.file + ")";
+          }
+          const _HermesInternal2 = HermesInternal;
+          combined = "" + first.name + str3;
+        }
+        const self = this;
+        const obj = { category: this.props.breadcrumbCategory, data: null, level: "info", message: null, type: null };
+        const obj2 = { path: items };
+        obj.data = obj2;
+        const _HermesInternal3 = HermesInternal;
+        obj.message = "Touch event within element: " + combined;
+        obj.type = this.props.breadcrumbType;
+        TouchEventBoundary(682).addBreadcrumb(obj);
+        const debug2 = TouchEventBoundary(682).debug;
+        const _HermesInternal4 = HermesInternal;
+        debug2.log("[TouchEvents] " + obj.message);
+        const obj3 = TouchEventBoundary(682);
+      } else {
+        const debug = TouchEventBoundary(682).debug;
+        debug.warn("[TouchEvents] No root component found in touch path.");
       }
     }
-  };
+  },
+  {
+    key: "_isNameIgnored",
+    value: function _isNameIgnored(label) {
+      const self = this;
+      let tmp = this.props.ignoreNames || [];
+      let obj = tmp;
+      if (self.props.ignoredDisplayNames) {
+        const items = [];
+        HermesBuiltin.arraySpread(self.props.ignoredDisplayNames, HermesBuiltin.arraySpread(tmp, 0));
+        obj = items;
+      }
+      return obj.some((item) => {
+        let tmp = typeof item === "string";
+        if (typeof item === "string") {
+          tmp = label === item;
+        }
+        if (!tmp) {
+          const _RegExp = RegExp;
+          let match = item instanceof RegExp;
+          if (match) {
+            match = label.match(item);
+          }
+          tmp = match;
+        }
+        return tmp;
+      });
+    }
+  },
+  {
+    key: "_onTouchStart",
+    value: function _onTouchStart(_targetInst) {
+      let displayName;
+      let labelName;
+      if (_targetInst._targetInst) {
+        const self = this;
+        _targetInst = _targetInst._targetInst;
+        const items = [];
+        if (_targetInst) {
+          if (self.props.maxComponentTreeSize) {
+            if (items.length < self.props.maxComponentTreeSize) {
+              const elementType3 = _targetInst.elementType;
+              let displayName1;
+              if (null !== elementType3) {
+                if (undefined !== elementType3) {
+                  displayName1 = elementType3.displayName;
+                }
+              }
+              if (displayName1 !== TouchEventBoundary.displayName) {
+                while (true) {
+                  labelName = self.props.labelName;
+                  let elementType = _targetInst.elementType;
+                  if (null !== elementType) {
+                    if (undefined !== elementType) {
+                      displayName = elementType.displayName;
+                    }
+                  }
+                  if (_targetInst.memoizedProps) {
+                    break;
+                  } else {
+                    let tmp5;
+                    if (displayName) {
+                      let obj = { name: displayName };
+                      tmp5 = obj;
+                    }
+                    let _pushIfNotIgnoredResult = self._pushIfNotIgnored(items, tmp5);
+                    let _return = _targetInst.return;
+                    if (_return) {
+                      if (self.props.maxComponentTreeSize) {
+                        if (items.length < self.props.maxComponentTreeSize) {
+                          let elementType2 = _return.elementType;
+                          let displayName2;
+                          if (null !== elementType2) {
+                            if (undefined !== elementType2) {
+                              displayName2 = elementType2.displayName;
+                            }
+                          }
+                          _targetInst = _return;
+                        }
+                      }
+                    }
+                  }
+                }
+                let tmp10 = typeof tmp9 === "string";
+                if (typeof tmp4[c10] === "string") {
+                  tmp10 = tmp4[tmp8].length > 0;
+                }
+                if (tmp10) {
+                  tmp10 = "unknown" !== tmp4[tmp8];
+                }
+                if (tmp10) {
+                  tmp10 = tmp4[tmp8];
+                }
+                if (!tmp10) {
+                  tmp10 = displayName;
+                }
+                const obj3 = { name: tmp10, element: null, file: null, label: null };
+                let tmp13 = typeof tmp12 === "string";
+                if (typeof tmp4[closure_11] === "string") {
+                  tmp13 = tmp4[tmp11].length > 0;
+                }
+                if (tmp13) {
+                  tmp13 = "unknown" !== tmp4[tmp11];
+                }
+                if (tmp13) {
+                  tmp13 = tmp4[tmp11];
+                }
+                obj3.element = tmp13;
+                let tmp16 = typeof tmp15 === "string";
+                if (typeof tmp4[closure_12] === "string") {
+                  tmp16 = tmp4[tmp14].length > 0;
+                }
+                if (tmp16) {
+                  tmp16 = "unknown" !== tmp4[tmp14];
+                }
+                if (tmp16) {
+                  tmp16 = tmp4[tmp14];
+                }
+                obj3.file = tmp16;
+                if (typeof tmp4[closure_9] !== "string") {
+                  let tmp18;
+                  if (typeof labelName === "string") {
+                    if (typeof tmp4[labelName] === "string") {
+                      if (tmp4[labelName].length > 0) {
+                        tmp18 = tmp4[labelName];
+                      }
+                    }
+                  }
+                  obj3.label = tmp18;
+                  obj2.dropUndefinedKeys(obj3);
+                }
+                tmp18 = tmp4[tmp17];
+                obj2 = TouchEventBoundary(682);
+              }
+            }
+          }
+        }
+        const found = items.find((label) => label.label);
+        let label;
+        if (null !== found) {
+          if (undefined !== found) {
+            label = found.label;
+          }
+        }
+        if (items.length > 0) {
+          self._logTouchEvent(items, label);
+        }
+        const obj5 = { elementId: label, op: TouchEventBoundary(1020).UI_ACTION_TOUCH };
+        const result = TouchEventBoundary(1030).startUserInteractionSpan(obj5);
+        if (result) {
+          const attr = result.setAttribute(TouchEventBoundary(682).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, TouchEventBoundary(1023).SPAN_ORIGIN_AUTO_INTERACTION);
+        }
+        const obj4 = TouchEventBoundary(1030);
+      }
+    }
+  },
+  {
+    key: "_pushIfNotIgnored",
+    value: function _pushIfNotIgnored(items, name) {
+      let tmp = name;
+      if (tmp) {
+        name = name.name;
+        let tmp2 = !name;
+        if (!name) {
+          tmp2 = !name.label;
+        }
+        let tmp3 = !tmp2;
+        if (!tmp2) {
+          const self = this;
+          const name2 = name.name;
+          let tmp4 = !name2;
+          if (name2) {
+            tmp4 = !self._isNameIgnored(name.name);
+          }
+          if (tmp4) {
+            const label = name.label;
+            let tmp5 = !label;
+            if (label) {
+              tmp5 = !self._isNameIgnored(name.label);
+            }
+            if (tmp5) {
+              let tmp7 = items.length > 0;
+              if (tmp7) {
+                const _JSON = JSON;
+                const _JSON2 = JSON;
+                const json = JSON.stringify(items[items.length - 1]);
+                tmp7 = json === JSON.stringify(name);
+              }
+              let flag = !tmp7;
+              if (!tmp7) {
+                items.push(name);
+                flag = true;
+              }
+              tmp5 = flag;
+            }
+            tmp4 = tmp5;
+          }
+          tmp3 = tmp4;
+        }
+        tmp = tmp3;
+      }
+      return tmp;
+    }
+  }
+];
+const importDefaultResultResult = _createClass(TouchEventBoundary, items);
+importDefaultResultResult.displayName = "__Sentry.TouchEventBoundary";
+importDefaultResultResult.defaultProps = { breadcrumbCategory: "touch", breadcrumbType: "user", ignoreNames: [], maxComponentTreeSize: 20 };
+
+export const TouchEventBoundary = importDefaultResultResult;
+export const withTouchEventBoundary = (arg0, arg1) => {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  class WrappedComponent {
+    constructor(arg0) {
+      obj = closure_5;
+      obj1 = closure_1;
+      tmp = closure_13;
+      if (null == closure_1) {
+        obj1 = {};
+      }
+      merged = Object.assign({}, obj1);
+      return closure_5.createElement(tmp, merged, obj.createElement(closure_0, Object.assign({}, arg0)));
+    }
+  }
+  WrappedComponent.displayName = "WithTouchEventBoundary";
+  return WrappedComponent;
 };

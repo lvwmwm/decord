@@ -1,22 +1,22 @@
-// Module ID: 8473
-// Function ID: 8474
+// Module ID: 8468
+// Function ID: 8469
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1376, 1078, 1378, 1114, 4642, 1119, 1245, 8474, 7955, 577, 7263, 1275, 5420, 4691, 2]
+// Dependencies: [5, 1372, 1074, 1374, 1110, 4639, 1115, 1241, 8469, 7950, 573, 7262, 1271, 5418, 4688, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8473 (UserProfileActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import shared from "shared" /* 4642 */;
-import InlineUploaderDefault from "InlineUploader" /* 5420 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7263 */;
-import MessageParserDefault from "MessageParser" /* 7955 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8474 */;
+// Module 8468 (UserProfileActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import shared from "shared" /* 4639 */;
+import InlineUploaderDefault from "InlineUploader" /* 5418 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7262 */;
+import MessageParserDefault from "MessageParser" /* 7950 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8469 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 let closure_11 = async function _saveProfileChanges(arg0, value) {
@@ -30,7 +30,7 @@ let closure_11 = async function _saveProfileChanges(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -72,10 +72,10 @@ let closure_11 = async function _saveProfileChanges(arg0, value) {
             const obj4 = { type: "USER_PROFILE_UPDATE_START", userId: id, guildId: bannerSurface };
             DispatcherDefault.dispatch(obj4);
             if (null != bannerSurface) {
-              const obj6 = { url: React5.USER_GUILD_PROFILE(bannerSurface, closure_2_8), bannerSurface: safetyScannedUploadSurfaces.SafetyScannedUploadSurface.USER_GUILD_PROFILE_BANNER };
+              const obj6 = { url: React5.USER_GUILD_PROFILE(bannerSurface, React6), bannerSurface: safetyScannedUploadSurfaces.SafetyScannedUploadSurface.USER_GUILD_PROFILE_BANNER };
               let obj7 = obj6;
             } else {
-              obj7 = { url: React5.USER_PROFILE(closure_2_8), bannerSurface: safetyScannedUploadSurfaces.SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_BANNER };
+              obj7 = { url: React5.USER_PROFILE(React6), bannerSurface: safetyScannedUploadSurfaces.SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_BANNER };
             }
             bannerSurface = obj7.bannerSurface;
             const HTTP = HTTPUtils.HTTP;
@@ -89,7 +89,7 @@ let closure_11 = async function _saveProfileChanges(arg0, value) {
             c9 = 1;
           } else {
             c9 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
           tmp70 = closure_2;
         }
@@ -141,9 +141,9 @@ let closure_11 = async function _saveProfileChanges(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ ComponentActions: hasOwnProperty, AnalyticEvents: metroRequire, Endpoints: closure_7, ME: closure_8 } = Constants);
-const PremiumConstants = fn(1378);
+const PremiumConstants = fn(1374);
 ({ AnalyticsPremiumFeatureTiers: closure_9, AnalyticsPremiumFeatureNames: c10 } = PremiumConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileActionCreators.tsx");

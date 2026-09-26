@@ -1,13 +1,12 @@
-// Module ID: 7718
-// Function ID: 7719
+// Module ID: 7713
+// Function ID: 7714
 // Name: useCountdown
-// Dependencies: [19, 558, 568, 4474, 7719, 7724, 2]
+// Dependencies: [19, 4470, 7714, 7719, 2]
+// Exports: default
 
-// Module 7718 (useCountdown)
+// Module 7713 (useCountdown)
 import _mod19 from "module_19" /* 19 */;
-import DateUtils from "DateUtils" /* 4474 */;
-import useIntervalDefault from "useInterval" /* 7724 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import DateUtils from "DateUtils" /* 4470 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,58 +14,7 @@ const require = globalThis.__r;
 _mod19.useCallback;
 const result = size.fileFinishedImporting("hooks/useCountdown.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((expiresAt, arg1, arg2, arg3) => {
-  _require = expiresAt;
-  importDefault = arg2;
-  const cResult = require("c").c(7);
-  let num = 1000;
-  if (undefined !== arg1) {
-    num = arg1;
-  }
-  dependencyMap = tmp4;
-  if (cResult[0] !== expiresAt) {
-    const _Date = Date;
-    const diffAsUnitsResult = tmp(4474).diffAsUnits(Date.now(), expiresAt);
-    cResult[0] = expiresAt;
-    cResult[1] = diffAsUnitsResult;
-    let tmp5 = diffAsUnitsResult;
-    const tmpResult = tmp(4474);
-  } else {
-    tmp5 = cResult[1];
-  }
-  const obj = require("c");
-  const forceUpdate = require("areHookInputsEqual").useForceUpdate();
-  if (cResult[2] === expiresAt) {
-    if (cResult[3] === tmp4) {
-      if (cResult[4] === forceUpdate) {
-        if (cResult[5] === arg2) {
-          let tmp9 = cResult[6];
-        }
-        let tmp12 = null;
-        if (!tmp4) {
-          tmp12 = num;
-        }
-        useIntervalDefault(tmp9, tmp12);
-        return tmp5;
-      }
-    }
-  }
-  const fn = function v() {
-    const time = DateUtils.diffAsUnits(Date.now(), closure_0);
-    if (!tmp) {
-      forceUpdate();
-      if (closure_1 != null) {
-        closure_1();
-      }
-    }
-  };
-  cResult[2] = expiresAt;
-  cResult[3] = undefined !== arg3 && arg3;
-  cResult[4] = forceUpdate;
-  cResult[5] = arg2;
-  cResult[6] = fn;
-  tmp9 = fn;
-}) : ((expiresAt) => {
+export default function useCountdown(expiresAt) {
   _require = expiresAt;
   let num = arg1;
   if (arg1 === undefined) {
@@ -97,4 +45,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((expiresAt, arg1,
   }
   require("useInterval")(tmp3, tmp5);
   return diffAsUnitsResult;
-});
+};

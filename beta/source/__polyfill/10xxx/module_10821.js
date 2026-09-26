@@ -1,16 +1,16 @@
 // Module ID: 10821
 // Function ID: 10822
-// Dependencies: [41, 42, 93, 95, 98, 10769, 10771]
+// Dependencies: [41, 42, 93, 95, 98, 10822, 10731, 10735]
 
 // Module 10821
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10771 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FRCasualTimeParser = require;
+const NLTimeUnitWithinFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,12 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FRCasualTimeParser {
+class NLTimeUnitWithinFormatParser {
   constructor() {
     self = this;
-    tmp = c2(this, FRCasualTimeParser);
+    tmp = c2(this, NLTimeUnitWithinFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(FRCasualTimeParser);
+    obj = closure_4(NLTimeUnitWithinFormatParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -50,46 +50,23 @@ class FRCasualTimeParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return /(cet?)?\s*(matin|soir|après-midi|aprem|a midi|à minuit)(?=\W|$)/i;
+  value: function innerPattern() {
+    const regExp = new RegExp("(?:binnen|in|binnen de|voor)\\s*(" + NLTimeUnitWithinFormatParser(10822).TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+    return regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const formatted = arg1[2].toLowerCase();
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      if ("apr\u00E8s-midi" !== formatted) {
-        if ("aprem" !== formatted) {
-          if ("soir" === formatted) {
-            parsingComponents.imply("hour", 18);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", FRCasualTimeParser(10769).Meridiem.PM);
-          } else if ("matin" === formatted) {
-            parsingComponents.imply("hour", 8);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", FRCasualTimeParser(10769).Meridiem.AM);
-          } else if ("a midi" === formatted) {
-            parsingComponents.imply("hour", 12);
-            parsingComponents.imply("minute", 0);
-            parsingComponents.imply("meridiem", FRCasualTimeParser(10769).Meridiem.AM);
-          } else if ("\u00E0 minuit" === formatted) {
-            parsingComponents.imply("hour", 0);
-            parsingComponents.imply("meridiem", FRCasualTimeParser(10769).Meridiem.AM);
-          }
-        }
-        return parsingComponents;
-      }
-      parsingComponents.imply("hour", 14);
-      parsingComponents.imply("minute", 0);
-      parsingComponents.imply("meridiem", FRCasualTimeParser(10769).Meridiem.PM);
+    value: function innerExtract(reference, arg1) {
+      const ParsingComponents = NLTimeUnitWithinFormatParser(10731).ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, NLTimeUnitWithinFormatParser(10822).parseDuration(arg1[1]));
     }
   }
 ];
 
-export default _createClass(FRCasualTimeParser, items);
+export default _createClass(NLTimeUnitWithinFormatParser, items);

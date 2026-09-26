@@ -1,39 +1,20 @@
-// Module ID: 8104
-// Function ID: 8105
+// Module ID: 8099
+// Function ID: 8100
 // Name: BurstReactionAnimationPreview
-// Dependencies: [19, 21, 558, 568, 8042, 8105, 2]
+// Dependencies: [19, 21, 8037, 8100, 2]
+// Exports: default
 
-// Module 8104 (BurstReactionAnimationPreview)
-import c from "c" /* 568 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8042 */;
-import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 8105 */;
+// Module 8099 (BurstReactionAnimationPreview)
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8037 */;
+import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 8100 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimationPreview.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let tmp = dependencyMap;
-  const cResult = c.c(4);
-  ({ channelId, emoji, messageId, reactionType } = arg0);
-  if (reactionType !== MessageReactionsTypes.ReactionTypes.BURST) {
-    return null;
-  } else {
-    if (cResult[0] === channelId) {
-      if (cResult[1] === emoji) {
-      }
-    }
-    const obj2 = { isFullscreen: true, channelId, messageId, emoji };
-    tmp = jsx(BurstReactionAnimationDefault, { isFullscreen: true, channelId, messageId, emoji });
-    cResult[0] = channelId;
-    cResult[1] = emoji;
-    cResult[2] = messageId;
-    cResult[3] = tmp;
-  }
-}) : ((arg0) => {
+export default function BurstReactionAnimationPreview(arg0) {
   ({ channelId, emoji, messageId, reactionType } = arg0);
   let tmp2 = null;
   if (reactionType === MessageReactionsTypes.ReactionTypes.BURST) {
@@ -41,4 +22,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = jsx(BurstReactionAnimationDefault, { isFullscreen: true, channelId, messageId, emoji });
   }
   return tmp2;
-});
+};

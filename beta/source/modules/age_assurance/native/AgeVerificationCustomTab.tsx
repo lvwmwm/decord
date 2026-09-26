@@ -1,14 +1,13 @@
-// Module ID: 8733
-// Function ID: 8734
+// Module ID: 8728
+// Function ID: 8729
 // Name: AgeVerificationCustomTab
-// Dependencies: [5, 3, 562, 4755, 1368, 558, 568, 2]
-// Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy
+// Dependencies: [5, 3, 560, 4753, 1364, 2]
+// Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy, useAgeVerificationCustomTabCopy, useIsAgeVerificationCustomTabOpen
 
-// Module 8733 (AgeVerificationCustomTab)
+// Module 8728 (AgeVerificationCustomTab)
 import LoggerDefault from "Logger" /* 3 */;
-import c from "c" /* 568 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4755 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4753 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -52,7 +51,7 @@ let closure_10 = async function _openAgeVerificationCustomTab(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -136,7 +135,7 @@ let closure_11 = async function _resumeAgeVerificationCustomTab(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -182,7 +181,7 @@ let closure_11 = async function _resumeAgeVerificationCustomTab(arg0, value) {
           } else {
             c3 = 0;
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         }
         c3 = 0;
@@ -214,26 +213,10 @@ function getIsAgeVerificationCustomTabOpen() {
   return closure_6.getState().isOpen;
 }
 let closure_4 = new LoggerDefault("AgeVerificationCustomTab");
-const module_562 = fn(562);
-let closure_6 = module_562.create(() => ({ isOpen: false, copy: null }));
+const module_560 = fn(560);
+let closure_6 = module_560.create(() => ({ isOpen: false, copy: null }));
 let c7 = false;
 let c8 = null;
-fn(558);
-const tmp2 = new LoggerDefault("AgeVerificationCustomTab");
-const ReactCompilerGating = fn(558);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(isOpen) {
-      return isOpen.isOpen;
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_6(first);
-}) : (() => closure_6((isOpen) => isOpen.isOpen));
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationCustomTab.tsx");
 
@@ -267,18 +250,10 @@ export { releaseAgeVerificationCustomTab };
 export function getIsAgeVerificationCustomTabAwaitingResult() {
   return c7;
 }
-export const useIsAgeVerificationCustomTabOpen = tmp3;
-export const useAgeVerificationCustomTabCopy = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(copy) {
-      return copy.copy;
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_6(first);
-}) : (() => closure_6((copy) => copy.copy));
+export const useIsAgeVerificationCustomTabOpen = function useIsAgeVerificationCustomTabOpen() {
+  return closure_6((isOpen) => isOpen.isOpen);
+};
+export const useAgeVerificationCustomTabCopy = function useAgeVerificationCustomTabCopy() {
+  return closure_6((copy) => copy.copy);
+};
 export { getIsAgeVerificationCustomTabOpen };

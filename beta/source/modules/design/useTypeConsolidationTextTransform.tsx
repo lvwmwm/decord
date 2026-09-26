@@ -1,52 +1,28 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7256
+// Function ID: 7257
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [558, 7255, 568, 2]
-// Exports: useTypeConsolidationTextTransform
+// Dependencies: [7257, 2]
+// Exports: useTypeConsolidationEyebrow, useTypeConsolidationTextTransform
 
-// Module 7254 (useTypeConsolidationTextTransform)
-import c from "c" /* 568 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 7256 (useTypeConsolidationTextTransform)
 import size from "module_2" /* 2 */;
 
 const style = { textTransform: "none" };
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-let ReactCompilerGating = ReactCompilerGating_mod;
-const fn = (arg0) => {
+const result = size.fileFinishedImporting("modules/design/useTypeConsolidationTextTransform.tsx");
+
+export const useTypeConsolidationTextTransform = function useTypeConsolidationTextTransform(AcceptGuildTemplate) {
   let tmp;
-  if (obj.useManaTypeConsolidationExperiment(arg0)) {
+  if (obj.useManaTypeConsolidationExperiment(AcceptGuildTemplate)) {
     tmp = closure_2;
   }
   return tmp;
 };
-const result1 = size.fileFinishedImporting("modules/design/useTypeConsolidationTextTransform.tsx");
-
-export const useTypeConsolidationTextTransform = fn;
-export const useTypeConsolidationEyebrow = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, variant) => {
-  const cResult = c.c(3);
-  const manaTypeConsolidationExperiment = ManaTypeConsolidationExperiment.useManaTypeConsolidationExperiment(arg0);
-  if (cResult[0] === variant) {
-    if (cResult[1] === manaTypeConsolidationExperiment) {
-      return cResult[2];
-    }
-  }
-  if (manaTypeConsolidationExperiment) {
-    const obj3 = { variant: "experimental/body-sm/medium", style };
-    let obj4 = obj3;
-  } else {
-    obj4 = { variant, style: "Array" };
-  }
-  cResult[0] = variant;
-  cResult[1] = manaTypeConsolidationExperiment;
-  cResult[2] = obj4;
-}) : ((arg0, variant) => {
-  if (obj.useManaTypeConsolidationExperiment(arg0)) {
+export const useTypeConsolidationEyebrow = function useTypeConsolidationEyebrow(BountiesScrollRecapFooter, variant) {
+  if (obj.useManaTypeConsolidationExperiment(BountiesScrollRecapFooter)) {
     const obj2 = { variant: "experimental/body-sm/medium", style };
     let obj3 = obj2;
   } else {
-    obj3 = { variant, style: "Array" };
+    obj3 = { variant, style: "a" };
   }
   return obj3;
-});
+};

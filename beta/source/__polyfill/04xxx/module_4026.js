@@ -1,71 +1,60 @@
 // Module ID: 4026
 // Function ID: 4027
-// Dependencies: [3883, 4027]
+// Dependencies: [3881, 3877, 3878]
 // Exports: default
 
 // Module 4026
-import _mod4027 from "module_4027" /* 4027 */;
-import module_3883_mod from "module_3883" /* 3883 */;
+import module_3881_mod from "module_3881" /* 3881 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let module_3883 = module_3883_mod;
-if (!module_3883) {
-  const obj = { default: module_3883 };
+let module_3881 = module_3881_mod;
+if (!module_3881) {
+  const obj = { default: module_3881 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3883;
+  tmp3 = module_3881;
 }
-module_3883 = tmp3;
-const dependencyMap = ["\u043D\u0435\u0434\u0456\u043B\u044E", "\u043F\u043E\u043D\u0435\u0434\u0456\u043B\u043E\u043A", "\u0432\u0456\u0432\u0442\u043E\u0440\u043E\u043A", "\u0441\u0435\u0440\u0435\u0434\u0443", "\u0447\u0435\u0442\u0432\u0435\u0440", "\u043F\u2019\u044F\u0442\u043D\u0438\u0446\u044E", "\u0441\u0443\u0431\u043E\u0442\u0443"];
-let closure_4 = {
-  lastWeek: function lastWeekFormat(arg0, arg1, arg2) {
-    const toDateResult = _mod4027.toDate(arg0);
-    const uTCDay = toDateResult.getUTCDay();
-    if (module_3883.default(toDateResult, arg1, arg2)) {
-      let text = `${"'\u0443 " + tmp2} о' p`;
-    } else {
-      if (0 !== uTCDay) {
-        if (3 !== uTCDay) {
-          if (5 !== uTCDay) {
-            if (6 !== uTCDay) {
-              text = `${"'\u0443 \u043C\u0438\u043D\u0443\u043B\u0438\u0439 " + tmp2} о' p`;
-            }
-          }
-        }
-      }
-      text = `${"'\u0443 \u043C\u0438\u043D\u0443\u043B\u0443 " + tmp2} о' p`;
-    }
-    return text;
-  },
-  yesterday: "'\u0432\u0447\u043E\u0440\u0430 \u043E' p",
-  today: "'\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456 \u043E' p",
-  tomorrow: "'\u0437\u0430\u0432\u0442\u0440\u0430 \u043E' p",
-  nextWeek: function nextWeekFormat(arg0, arg1, arg2) {
-    const toDateResult = _mod4027.toDate(arg0);
-    const uTCDay = toDateResult.getUTCDay();
-    if (module_3883.default(toDateResult, arg1, arg2)) {
-      let text = `${"'\u0443 " + tmp2} о' p`;
-    } else {
-      if (0 !== uTCDay) {
-        if (3 !== uTCDay) {
-          if (5 !== uTCDay) {
-            if (6 !== uTCDay) {
-              text = `${"'\u0443 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439 " + tmp2} о' p`;
-            }
-          }
-        }
-      }
-      text = `${"'\u0443 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0443 " + tmp2} о' p`;
-    }
-    return text;
-  },
-  other: "P"
-};
+module_3881 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
+}
+_typeof = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  let tmpResult = tmp;
-  if (typeof closure_4[arg0] === "function") {
-    tmpResult = tmp(arg1, arg2, arg3);
+export default function addMonths(interval, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(interval);
+  const defaultResult2 = module_3881.default(arg1);
+  if (isNaN(defaultResult2)) {
+    const _Date2 = Date;
+    const date = new Date(NaN);
+    return date;
+  } else if (defaultResult2) {
+    const date1 = defaultResult1.getDate();
+    const _Date = Date;
+    const date2 = new Date(defaultResult1.getTime());
+    date2.setMonth(defaultResult1.getMonth() + defaultResult2 + 1, 0);
+    let tmp8 = date2;
+    if (date1 < date2.getDate()) {
+      const fullYear = date2.getFullYear();
+      defaultResult1.setFullYear(fullYear, date2.getMonth(), date1);
+      tmp8 = defaultResult1;
+    }
+    return tmp8;
+  } else {
+    return defaultResult1;
   }
-  return tmpResult;
 };
 export default exports.default;

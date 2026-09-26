@@ -1,9 +1,9 @@
 // Module ID: 15250
 // Function ID: 15251
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 15250
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e5597814a0893b2321f6b666c9cfcb40", name: "ClipsIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/consoles", width: 85, height: 70, scales: [2, 3], hash: "f2b2ae790fb60abfa40be44fab4eb6fc", name: "ps_relink_upsell", type: "png" });

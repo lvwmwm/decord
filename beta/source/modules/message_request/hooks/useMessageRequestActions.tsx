@@ -1,22 +1,22 @@
-// Module ID: 12627
-// Function ID: 12628
+// Module ID: 12725
+// Function ID: 12726
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 7894, 12628, 1078, 12629, 10436, 4691, 10559, 8493, 1245, 12631, 2023, 8937, 2]
+// Dependencies: [5, 32, 19, 7889, 12726, 1074, 12727, 11254, 4688, 10639, 8488, 1241, 12729, 2019, 8939, 2]
 // Exports: useMessageRequestActions
 
-// Module 12627 (useMessageRequestActions)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import ReportModals from "ReportModals" /* 8937 */;
+// Module 12725 (useMessageRequestActions)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import ReportModals from "ReportModals" /* 8939 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7894 */;
+import UserProfileStore from "UserProfileStore" /* 7889 */;
 
 require = fn;
-const MessageRequestConstants = fn(12628);
+const MessageRequestConstants = fn(12726);
 ({ MessageRequestAnalyticsAction: closure_7, BATCH_REJECT_LIMIT: closure_8 } = MessageRequestConstants);
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/message_request/hooks/useMessageRequestActions.tsx");
 
@@ -61,7 +61,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -155,7 +155,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -269,7 +269,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
             closure_131_1 = undefined;
             if (isUserProfileLoading) {
               v3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             } else {
               let tmp30 = _undefined(true);
               let tmp34 = onAcceptSuccess(onRejectSuccess[9])(tmp58, closure_8);
@@ -351,7 +351,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         let obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -381,7 +381,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -431,7 +431,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                       return obj;
                     } else {
                       c1 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp16) {
                     c1 = tmp;
@@ -547,7 +547,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
     const user = channel;
     closure_1 = arg1;
     closure_2 = arg2;
-    function onConfirm_0(setting, is_dont_show_again_checked) {
+    function onConfirm(setting, is_dont_show_again_checked) {
       if (is_dont_show_again_checked) {
         const NonSpamRetrainingOptIn = UserSettings.NonSpamRetrainingOptIn;
         NonSpamRetrainingOptIn.updateSetting(setting);
@@ -570,15 +570,15 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
     if (null == setting) {
       let obj = {
         channel,
-        onConfirm: onConfirm_0,
-        onCancel: function onCancel_0() {
+        onConfirm,
+        onCancel() {
             AnalyticsUtilsDefault.track(AnalyticEvents.MESSAGE_REQUEST_ACTION, { action: constants.DISMISS_HAM_CONFIRMATION_PROMPT, channel_id: user.id });
           }
       };
       let result = user(onRejectSuccess[12]).onMarkAsNotSpamConfirmationModal(obj);
       const tmpResult = user(onRejectSuccess[12]);
     } else {
-      onConfirm_0(setting);
+      onConfirm(setting);
     }
   }, items4);
   if (tmp) {

@@ -1,9 +1,9 @@
 // Module ID: 13536
 // Function ID: 13537
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 13536
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "e32285515cb51d557a374cd91c39dd3d", name: "box_idle", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 270, height: 134, scales: [2, 3], hash: "415663ee17f9e1c2411c453e5e8ca806", name: "img_premium_embed_background_light", type: "png" });

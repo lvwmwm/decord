@@ -1,18 +1,17 @@
-// Module ID: 14984
-// Function ID: 14985
+// Module ID: 14988
+// Function ID: 14989
 // Name: TinyBroncoSettingsPredicate
-// Dependencies: [10038, 558, 10042, 2]
+// Dependencies: [10071, 10075, 2]
 // Exports: useIsTinyBroncoSettingsEnabled
 
-// Module 14984 (TinyBroncoSettingsPredicate)
-import TinyBroncoConstants from "TinyBroncoConstants" /* 10038 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 10042 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 14988 (TinyBroncoSettingsPredicate)
+import TinyBroncoConstants from "TinyBroncoConstants" /* 10071 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 10075 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = TinyBroncoConstants.TINY_BRONCO_SETTINGS_LOCATION;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoSettingsPredicate.tsx");
+const result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoSettingsPredicate.tsx");
 
-export const useIsTinyBroncoSettingsEnabled = () => TinyBroncoExperiment.useIsTinyBroncoEnabled(closure_2);
+export const useIsTinyBroncoSettingsEnabled = function useIsTinyBroncoSettingsEnabled() {
+  return TinyBroncoExperiment.useIsTinyBroncoEnabled(closure_2);
+};

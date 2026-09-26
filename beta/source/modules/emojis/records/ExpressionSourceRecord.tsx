@@ -1,15 +1,15 @@
-// Module ID: 5832
-// Function ID: 5833
+// Module ID: 5834
+// Function ID: 5835
 // Name: ExpressionSourceRecord
-// Dependencies: [5, 1391, 1078, 1275, 1401, 2062, 2059, 2]
+// Dependencies: [5, 1387, 1074, 1271, 1397, 2058, 2055, 2]
 
-// Module 5832 (ExpressionSourceRecord)
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import SetUtils from "SetUtils" /* 2062 */;
+// Module 5834 (ExpressionSourceRecord)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import SetUtils from "SetUtils" /* 2058 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import Record from "Record" /* 1391 */;
+import Record from "Record" /* 1387 */;
 
 require = fn;
 function getEmojiSourceData() {
@@ -56,7 +56,7 @@ let closure_8 = async function _getEmojiSourceData(arg0, arg1) {
   }
   return arg1;
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: closure_4, GuildFeatures: hasOwnProperty } = Constants);
 const EmojiSourceDataTypes = { GUILD: "GUILD", APPLICATION: "APPLICATION" };
 let ExpressionSourceGuildRecord;
@@ -75,13 +75,12 @@ prototype["getIconURL"] = function getIconURL(size) {
   }
   return AvatarUtilsDefault.getGuildIconURL({ id: this.id, size, icon: this.icon, canAnimate: flag });
 };
-prototype["getIconSource"] = function getIconSource(size, hasItem) {
+prototype["getIconSource"] = function getIconSource(size, flag) {
   const self = this;
-  let flag = hasItem;
-  if (hasItem === undefined) {
+  if (flag === undefined) {
     flag = false;
   }
-  return self(1401).getAnimatableSourceWithFallback(flag, (canAnimate) => AvatarUtilsDefault.getGuildIconSource({ id: self.id, size, icon: self.icon, canAnimate }));
+  return self(1397).getAnimatableSourceWithFallback(flag, (canAnimate) => AvatarUtilsDefault.getGuildIconSource({ id: self.id, size, icon: self.icon, canAnimate }));
 };
 prototype["hasFeature"] = function hasFeature(arg0) {
   const features = this.features;
@@ -96,7 +95,7 @@ ExpressionSourceGuildRecord["getGuildFromEmojiId"] = function getGuildFromEmojiI
     closure_1 = tmp5;
     closure_0 = tmp2;
     closure_128_0 = await closure_1_7(closure_0);
-    guild = null;
+    let guild = null;
     if (null != closure_128_0) {
       let type;
       if (closure_128_0 != null) {

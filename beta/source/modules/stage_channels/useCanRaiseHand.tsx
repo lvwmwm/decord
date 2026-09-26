@@ -1,43 +1,21 @@
-// Module ID: 10208
-// Function ID: 10209
+// Module ID: 10229
+// Function ID: 10230
 // Name: useCanRaiseHand
-// Dependencies: [4431, 1089, 558, 568, 504, 2]
+// Dependencies: [4427, 1085, 504, 2]
+// Exports: useCanRaiseHand
 
-// Module 10208 (useCanRaiseHand)
-import PermissionStore from "PermissionStore" /* 4431 */;
+// Module 10229 (useCanRaiseHand)
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Permissions = fn(1089).Permissions;
-const ReactCompilerGating = fn(558);
+const Permissions = fn(1085).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/useCanRaiseHand.tsx");
 
-export const useCanRaiseHand = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function c() {
-      return PermissionStore.can(Permissions.REQUEST_TO_SPEAK, closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp6);
-}) : ((arg0) => {
-  _require = arg0;
+export const useCanRaiseHand = function useCanRaiseHand(channel) {
+  _require = channel;
   const items = [PermissionStore];
   return require("initialize").useStateFromStores(items, () => PermissionStore.can(Permissions.REQUEST_TO_SPEAK, closure_0));
-});
+};

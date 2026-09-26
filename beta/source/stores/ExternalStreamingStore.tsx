@@ -1,18 +1,18 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9661
+// Function ID: 9662
 // Name: ExternalStreamingStore
-// Dependencies: [5, 5532, 4636, 1078, 1095, 1275, 5657, 577, 8445, 5534, 1335, 504, 2]
+// Dependencies: [5, 5530, 4633, 1074, 1091, 1271, 5655, 573, 8440, 5532, 1331, 504, 2]
 
-// Module 9657 (ExternalStreamingStore)
+// Module 9661 (ExternalStreamingStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import _modDef1335 from "module_1335" /* 1335 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5657 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import _modDef1331 from "module_1331" /* 1331 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5655 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
-import StreamerModeStore from "StreamerModeStore" /* 4636 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
+import StreamerModeStore from "StreamerModeStore" /* 4633 */;
 
 require = fn;
 function makeTwitchRequest(arg0, query, arg2) {
@@ -24,7 +24,7 @@ let closure_16 = async function _getTwitchGame() {
   closure_3 = tmp2;
   closure_2 = tmp3;
   closure_130_0 = closure_0;
-  if (null != state[closure_0]) {
+  if (null != value[closure_0]) {
     return tmp26;
   }
   await makeTwitchRequest("/games", { id: tmp23 }, tmp24);
@@ -44,7 +44,7 @@ function streamerModeUpdate() {
     obj.stop();
   }
 }
-const PlatformTypes = fn(1078).PlatformTypes;
+const PlatformTypes = fn(1074).PlatformTypes;
 const MINUTE = DurationsDefault.Millis.MINUTE;
 let closure_8 = 5 * DurationsDefault.Millis.MINUTE;
 const re9 = /live_user_(.*)-\{width\}/;
@@ -101,7 +101,7 @@ prototype["_checkTwitch"] = function _checkTwitch(type, result) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -294,7 +294,7 @@ prototype["_checkYouTube"] = function _checkYouTube(type, result) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -503,7 +503,7 @@ prototype2["getStream"] = function getStream() {
 ExternalStreamingStore.displayName = "ExternalStreamingStore";
 const externalStreamingStore = new ExternalStreamingStore(DispatcherDefault, {
   STREAMING_UPDATE: function streamUpdate(stream) {
-    if (_modDef1335(stream.stream, stream)) {
+    if (_modDef1331(stream.stream, stream)) {
       return false;
     } else {
       stream = stream.stream;

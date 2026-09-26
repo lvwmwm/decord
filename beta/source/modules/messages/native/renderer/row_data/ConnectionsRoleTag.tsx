@@ -1,14 +1,14 @@
-// Module ID: 13527
-// Function ID: 13528
+// Module ID: 13517
+// Function ID: 13518
 // Name: ConnectionsRoleTag
-// Dependencies: [17, 1078, 580, 1096, 2]
+// Dependencies: [17, 1074, 576, 1092, 2]
 // Exports: createConnectionsRoleTag
 
-// Module 13527 (ConnectionsRoleTag)
+// Module 13517 (ConnectionsRoleTag)
 import _mod17 from "module_17" /* 17 */;
-import nativeDefault from "native" /* 580 */;
-import Constants from "Constants" /* 1078 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
+import nativeDefault from "native" /* 576 */;
+import Constants from "Constants" /* 1074 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import size from "module_2" /* 2 */;
 
 const processColor = _mod17.processColor;

@@ -1,20 +1,20 @@
-// Module ID: 14965
-// Function ID: 14966
+// Module ID: 14969
+// Function ID: 14970
 // Name: PasskeyUpsellManager
-// Dependencies: [502, 1376, 14959, 1078, 7397, 7224, 4611, 2031, 4648, 6868, 14966, 2]
+// Dependencies: [502, 1372, 14963, 1074, 7395, 7226, 4608, 2027, 4645, 6870, 14970, 2]
 
-// Module 14965 (PasskeyUpsellManager)
-import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
-import MFAUtils from "MFAUtils" /* 7224 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14966 */;
+// Module 14969 (PasskeyUpsellManager)
+import dismissible_content from "dismissible_content" /* 2027 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4608 */;
+import MFAUtils from "MFAUtils" /* 7226 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14970 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1376 */;
-import WebAuthnStore from "WebAuthnStore" /* 14959 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
+import UserStore from "UserStore" /* 1372 */;
+import WebAuthnStore from "WebAuthnStore" /* 14963 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
-const LoginStates = fn(1078).LoginStates;
+const LoginStates = fn(1074).LoginStates;
 let c7 = false;
 let c8 = false;
 class PasskeyUpsellManager extends tmp2 {
@@ -34,7 +34,7 @@ prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
     if (MFAUtils.hasWebAuthn) {
       if (AuthenticationStore.getLoginStatus() === LoginStates.NONE) {
         if (obj.attemptedPasswordLogin()) {
-          if (!tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(2031).DismissibleContent.PASSWORDLESS_UPSELL)) {
+          if (!tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(2027).DismissibleContent.PASSWORDLESS_UPSELL)) {
             if (!WebAuthnStore.hasFetchedCredentials()) {
               if (!tmpResult3.isModalOpen()) {
                 const currentUser = UserStore.getCurrentUser();
@@ -43,16 +43,16 @@ prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
                     PasskeyUpsellActionCreatorsDefault.openPasskeyUpsell();
                   } else if (!c7) {
                     c7 = true;
-                    const webAuthnCredentials = tmp(6868).fetchWebAuthnCredentials();
-                    const tmpResult4 = tmp(6868);
+                    const webAuthnCredentials = tmp(6870).fetchWebAuthnCredentials();
+                    const tmpResult4 = tmp(6870);
                   }
                 }
                 tmp6 = undefined !== currentUser && currentUser.verified;
               }
-              tmpResult3 = tmp(4648);
+              tmpResult3 = tmp(4645);
             }
           }
-          tmpResult = tmp(4611);
+          tmpResult = tmp(4608);
         }
       }
       obj = AuthenticationStore;

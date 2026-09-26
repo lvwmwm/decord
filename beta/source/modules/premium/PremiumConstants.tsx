@@ -1,15 +1,15 @@
-// Module ID: 1378
-// Function ID: 1379
+// Module ID: 1374
+// Function ID: 1375
 // Name: PremiumConstants
-// Dependencies: [1078, 1379, 1119, 1380, 1081, 2, 1381]
+// Dependencies: [1074, 1375, 1115, 1376, 1077, 2, 1377]
 
-// Module 1378 (PremiumConstants)
-import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1081 */;
-import util from "util" /* 1119 */;
-import EmojiConstants from "EmojiConstants" /* 1379 */;
-import BadgeRarity from "BadgeRarity" /* 1380 */;
-import gift_intent_type from "gift_intent_type" /* 1381 */;
-import Constants from "Constants" /* 1078 */;
+// Module 1374 (PremiumConstants)
+import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1077 */;
+import util from "util" /* 1115 */;
+import EmojiConstants from "EmojiConstants" /* 1375 */;
+import BadgeRarity from "BadgeRarity" /* 1376 */;
+import gift_intent_type from "gift_intent_type" /* 1377 */;
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 ({ BoostedGuildTiers, MAX_ATTACHMENT_SIZE, GuildFeatures, MAX_STAGE_VIDEO_USER_LIMIT_TIER01, BITRATE_MAX, MAX_STAGE_VIDEO_USER_LIMIT_TIER2, MAX_STAGE_VIDEO_USER_LIMIT_TIER3 } = Constants);

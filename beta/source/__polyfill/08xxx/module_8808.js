@@ -1,18 +1,15 @@
 // Module ID: 8808
 // Function ID: 8809
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8809, 8803, 8804]
+// Dependencies: [41, 42, 93, 95, 98, 19, 8776]
 
 // Module 8808
-import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef8804 from "module_8804" /* 8804 */;
-import _modDef8809 from "module_8809" /* 8809 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
 
-const FeComposite = fn;
+const FeDistantLight = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,16 +29,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-_possibleConstructorReturnDefault;
-const jsx = fn(21).jsx;
-class FeComposite {
+class FeDistantLight {
   constructor() {
     self = this;
-    tmp = closure_3(this, FeComposite);
-    tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(FeComposite);
-    tmp3 = closure_4;
-    if (closure_7()) {
+    tmp = c2(this, FeDistantLight);
+    tmp2 = closure_4;
+    obj = closure_4(FeDistantLight);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -54,33 +49,17 @@ class FeComposite {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeComposite, _modDef8804);
+_inherits(FeDistantLight, fn(19).Component);
 const entry = {
   key: "render",
   value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    };
-    const merged = Object.assign(FeComposite(8803).extractFilter(this.props));
-    const obj2 = FeComposite(8803);
-    const merged1 = Object.assign(FeComposite(8803).extractFeComposite(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+    const result = FeDistantLight(8776).warnUnimplementedFilter();
+    return null;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FeComposite, items);
-importDefaultResultResult.displayName = "FeComposite";
-let obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.k1 = 0;
-obj.k2 = 0;
-obj.k3 = 0;
-obj.k4 = 0;
-importDefaultResultResult.defaultProps = obj;
+const importDefaultResultResult = _createClass(FeDistantLight, items);
+importDefaultResultResult.displayName = "FeDistantLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

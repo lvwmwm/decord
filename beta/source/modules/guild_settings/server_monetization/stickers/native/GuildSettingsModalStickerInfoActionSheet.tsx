@@ -1,14 +1,14 @@
-// Module ID: 18033
-// Function ID: 18034
+// Module ID: 18024
+// Function ID: 18025
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 5753, 21, 504, 10716, 4490, 7208, 1119, 7429, 7428, 580, 5935, 5854, 10662, 18026, 4747, 2]
+// Dependencies: [5, 32, 19, 17, 5751, 21, 504, 10683, 4486, 6884, 1115, 7427, 7426, 576, 5936, 5854, 10547, 18017, 4745, 2]
 
-// Module 18033 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18026 */;
+// Module 18024 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18017 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5753 */;
+import StickersStore from "StickersStore" /* 5751 */;
 
 const require = globalThis.__r;
 
@@ -34,7 +34,7 @@ export default noop.memo(function GuildSettingsModalStickerInfoActionSheet(arg0)
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

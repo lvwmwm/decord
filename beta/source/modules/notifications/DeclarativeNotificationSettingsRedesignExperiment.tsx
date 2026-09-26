@@ -1,30 +1,19 @@
-// Module ID: 14773
-// Function ID: 14774
+// Module ID: 14763
+// Function ID: 14764
 // Name: DeclarativeNotificationSettingsRedesignExperiment
-// Dependencies: [1438, 558, 568, 2]
-// Exports: isDeclarativeNotificationSettingsRedesignEnabled
+// Dependencies: [1434, 2]
+// Exports: isDeclarativeNotificationSettingsRedesignEnabled, useIsDeclarativeNotificationSettingsRedesignEnabled
 
-// Module 14773 (DeclarativeNotificationSettingsRedesignExperiment)
-import c from "c" /* 568 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14763 (DeclarativeNotificationSettingsRedesignExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = ApexExperiment.createApexExperiment({ name: "2026-09-declarative-notification-settings-redesign", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-09-declarative-notification-settings-redesign", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = size.fileFinishedImporting("modules/notifications/DeclarativeNotificationSettingsRedesignExperiment.tsx");
 
 export const isDeclarativeNotificationSettingsRedesignEnabled = function isDeclarativeNotificationSettingsRedesignEnabled(getAssignedNotifSettingsAndMappings) {
-  return closure_2.getConfig({ location: getAssignedNotifSettingsAndMappings }).enabled;
+  return closure_0.getConfig({ location: getAssignedNotifSettingsAndMappings }).enabled;
 };
-export const useIsDeclarativeNotificationSettingsRedesignEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    let tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => closure_2.useConfig({ location }).enabled);
+export const useIsDeclarativeNotificationSettingsRedesignEnabled = function useIsDeclarativeNotificationSettingsRedesignEnabled(location) {
+  return closure_0.useConfig({ location }).enabled;
+};

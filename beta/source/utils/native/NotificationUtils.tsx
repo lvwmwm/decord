@@ -1,20 +1,20 @@
-// Module ID: 12603
-// Function ID: 12604
+// Module ID: 12701
+// Function ID: 12702
 // Name: NotificationUtils
-// Dependencies: [5, 17, 12594, 1078, 12597, 1245, 9585, 10176, 2]
+// Dependencies: [5, 17, 12692, 1074, 12695, 1241, 9589, 10197, 2]
 
-// Module 12603 (NotificationUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import PushNotificationDefault from "PushNotification" /* 9585 */;
-import SoundUtils from "SoundUtils" /* 10176 */;
+// Module 12701 (NotificationUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PushNotificationDefault from "PushNotification" /* 9589 */;
+import SoundUtils from "SoundUtils" /* 10197 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const NativeModules = fn(17).NativeModules;
-const PermissionStateType = fn(12594).PermissionStateType;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const PermissionStateType = fn(12692).PermissionStateType;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("utils/native/NotificationUtils.tsx");
 
@@ -77,7 +77,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -91,7 +91,7 @@ export default {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c0 = tmp;

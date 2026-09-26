@@ -1,28 +1,31 @@
-// Module ID: 15521
-// Function ID: 15522
+// Module ID: 15525
+// Function ID: 15526
 // Name: StreamOutputVolumeSetting
-// Dependencies: [4812, 502, 1996, 8270, 558, 568, 4845, 504, 38, 9921, 10275, 11630, 1119, 2]
+// Dependencies: [4810, 502, 1992, 8265, 504, 4843, 38, 9943, 10278, 11754, 1115, 2]
 
-// Module 15521 (StreamOutputVolumeSetting)
+// Module 15525 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4845 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10275 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
+import util from "util" /* 1115 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10278 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 require = fn;
-fn(558);
-const ReactCompilerGating = fn(558);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+const SettingBuilders = fn(11754);
+const volumeSlider = SettingBuilders.createVolumeSlider({
+  useTitle() {
+    const intl = util.intl;
+    return intl.string(util.t.pEAl4b);
+  },
+  parent: fn(8265).MobileUserSettings.VOICE,
+  maximum: 200,
+  useValue: function useStreamVolumeSettingValue() {
     let items = [ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
-    const fn = function l() {
+    return initialize.useStateFromStores(items, () => {
       const items = [ApplicationStreamingStore, AuthenticationStore];
       [obj, obj2] = items;
       const lastActiveStream = obj.getLastActiveStream();
@@ -38,85 +41,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         num = localVolume.getLocalVolume(tmp2.ownerId, BaseConnectionEvent.MediaEngineContextTypes.STREAM);
       }
       return num;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
-  let items = [ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
-  return initialize.useStateFromStores(items, () => {
-    const items = [ApplicationStreamingStore, AuthenticationStore];
-    [obj, obj2] = items;
-    const lastActiveStream = obj.getLastActiveStream();
-    let tmp2 = null;
-    if (null != lastActiveStream) {
-      tmp2 = null;
-      if (lastActiveStream.ownerId !== obj2.getId()) {
-        tmp2 = lastActiveStream;
-      }
-    }
-    let num = 0;
-    if (null != tmp2) {
-      num = localVolume.getLocalVolume(tmp2.ownerId, BaseConnectionEvent.MediaEngineContextTypes.STREAM);
-    }
-    return num;
-  });
-});
-const SettingBuilders = fn(11630);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const config = MobileAudioOutputExperimentDefault.getConfig({ location: "StreamOutputVolumeSetting" });
-    cResult[0] = config;
-    let first = config;
-  } else {
-    first = cResult[0];
-  }
-  let items = [ApplicationStreamingStore, AuthenticationStore];
-  const tmpResult = initialize;
-  return initialize.useStateFromStores(items, () => {
-    const items = [ApplicationStreamingStore, AuthenticationStore];
-    [obj, obj2] = items;
-    const lastActiveStream = obj.getLastActiveStream();
-    let tmp2 = null;
-    if (null != lastActiveStream) {
-      tmp2 = null;
-      if (lastActiveStream.ownerId !== obj2.getId()) {
-        tmp2 = lastActiveStream;
-      }
-    }
-    return null != tmp2;
-  }) && first.audioOutputPresent;
-}) : (() => {
-  const obj = MobileAudioOutputExperimentDefault;
-  let items = [ApplicationStreamingStore, AuthenticationStore];
-  return initialize.useStateFromStores(items, () => {
-    const items = [ApplicationStreamingStore, AuthenticationStore];
-    [obj, obj2] = items;
-    const lastActiveStream = obj.getLastActiveStream();
-    let tmp2 = null;
-    if (null != lastActiveStream) {
-      tmp2 = null;
-      if (lastActiveStream.ownerId !== obj2.getId()) {
-        tmp2 = lastActiveStream;
-      }
-    }
-    return null != tmp2;
-  }) && obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
-});
-const volumeSlider = SettingBuilders.createVolumeSlider({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.pEAl4b);
+    });
   },
-  parent: fn(8270).MobileUserSettings.VOICE,
-  maximum: 200,
-  useValue: tmp2,
   onValueChange: function onStreamValueSettingValueChange(arg0) {
     const items = [ApplicationStreamingStore, AuthenticationStore];
     [obj, obj2] = items;
@@ -131,31 +57,7 @@ const volumeSlider = SettingBuilders.createVolumeSlider({
     _modDef38(null != tmp2, "Can not set stream volume without active stream");
     AudioActionCreatorsDefault.setLocalVolume(tmp2.ownerId, arg0, BaseConnectionEvent.MediaEngineContextTypes.STREAM);
   },
-  usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(1);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const config = MobileAudioOutputExperimentDefault.getConfig({ location: "StreamOutputVolumeSetting" });
-      cResult[0] = config;
-      let first = config;
-    } else {
-      first = cResult[0];
-    }
-    let items = [ApplicationStreamingStore, AuthenticationStore];
-    const tmpResult = initialize;
-    return initialize.useStateFromStores(items, () => {
-      const items = [ApplicationStreamingStore, AuthenticationStore];
-      [obj, obj2] = items;
-      const lastActiveStream = obj.getLastActiveStream();
-      let tmp2 = null;
-      if (null != lastActiveStream) {
-        tmp2 = null;
-        if (lastActiveStream.ownerId !== obj2.getId()) {
-          tmp2 = lastActiveStream;
-        }
-      }
-      return null != tmp2;
-    }) && first.audioOutputPresent;
-  }) : (() => {
+  usePredicate: function useHasStreamVolumeSetting() {
     const obj = MobileAudioOutputExperimentDefault;
     let items = [ApplicationStreamingStore, AuthenticationStore];
     return initialize.useStateFromStores(items, () => {
@@ -171,7 +73,7 @@ const volumeSlider = SettingBuilders.createVolumeSlider({
       }
       return null != tmp2;
     }) && obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
-  }),
+  },
   useSearchTerms() {
     const intl = util.intl;
     const items = [intl.string(util.t["3182VD"]), ];

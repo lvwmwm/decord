@@ -1,23 +1,23 @@
-// Module ID: 15497
-// Function ID: 15498
+// Module ID: 15501
+// Function ID: 15502
 // Name: GuildRoleSubscriptionEditStore
-// Dependencies: [562, 1252, 2]
+// Dependencies: [560, 1248, 2]
 
-// Module 15497 (GuildRoleSubscriptionEditStore)
-import module_562 from "module_562" /* 562 */;
+// Module 15501 (GuildRoleSubscriptionEditStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/edit_state/GuildRoleSubscriptionEditStore.tsx");
 
 export const AllChannelAccessOptions = { ALL_CHANNELS_ACCESS: 0, [0]: "ALL_CHANNELS_ACCESS", SOME_CHANNELS_ACCESS: 1, [1]: "SOME_CHANNELS_ACCESS" };
-export const useEditStateStore = module_562.create((arg0) => {
+export const useEditStateStore = module_560.create((arg0) => {
   closure_0 = arg0;
   return {
     listings: {},
     setListing(arg0, arg1) {
       closure_0 = arg0;
       closure_1 = arg1;
-      return closure_0(1252).batchUpdates(() => closure_0((listings) => {
+      return closure_0(1248).batchUpdates(() => closure_0((listings) => {
         const obj = { listings: null };
         const obj2 = {};
         const merged = Object.assign(listings.listings);
@@ -30,7 +30,7 @@ export const useEditStateStore = module_562.create((arg0) => {
     setEditStateIdsForGroup(arg0, arg1) {
       closure_0 = arg0;
       closure_1 = arg1;
-      return closure_0(1252).batchUpdates(() => {
+      return closure_0(1248).batchUpdates(() => {
         closure_0((editStateIdsForGroup) => {
           const obj = { editStateIdsForGroup: null };
           const obj2 = {};

@@ -1,18 +1,26 @@
 // Module ID: 14636
 // Function ID: 14637
-// Dependencies: [14637]
+// Dependencies: [14634, 14608]
 
 // Module 14636
-import prop_mod from "module_14637" /* 14637 */;
+import _mod14608 from "module_14608" /* 14608 */;
+import _mod14634 from "module_14634" /* 14634 */;
 
-let prop = prop_mod;
-if (prop) {
-  const _Symbol = Symbol;
-  prop = !Symbol.sham;
-}
-if (prop) {
-  const _Symbol2 = Symbol;
-  prop = typeof Symbol.iterator === "symbol";
-}
 
-export default prop;
+export default (arg0, arg1) => {
+  if (arguments.length < 2) {
+    const tmp7 = _mod14608[arg0];
+    let tmp8;
+    if (_mod14634(tmp7)) {
+      tmp8 = tmp7;
+    }
+    let tmp3 = tmp8;
+  } else {
+    tmp3 = _mod14608[arg0];
+    if (tmp3) {
+      tmp3 = tmp(14608)[arg0][arg1];
+    }
+    tmp = require;
+  }
+  return tmp3;
+};

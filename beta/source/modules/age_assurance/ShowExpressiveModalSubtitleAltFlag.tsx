@@ -1,65 +1,34 @@
-// Module ID: 8760
-// Function ID: 8761
+// Module ID: 8755
+// Function ID: 8756
 // Name: ShowExpressiveModalSubtitleAltFlag
-// Dependencies: [8739, 1438, 558, 568, 8727, 504, 2]
-// Exports: shouldShowExpressiveModalSubtitleAlt
+// Dependencies: [8734, 1434, 8722, 504, 2]
+// Exports: shouldShowExpressiveModalSubtitleAlt, useShouldShowExpressiveModalSubtitleAlt
 
-// Module 8760 (ShowExpressiveModalSubtitleAltFlag)
-import c from "c" /* 568 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8727 */;
-import SafetyHubStore from "SafetyHubStore" /* 8739 */;
+// Module 8755 (ShowExpressiveModalSubtitleAltFlag)
+import initialize from "initialize" /* 504 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8722 */;
+import SafetyHubStore from "SafetyHubStore" /* 8734 */;
 
-const initialize = tmp(504);
 require = fn;
-const ApexExperiment = fn(1438);
+const ApexExperiment = fn(1434);
 let obj2 = { kind: "user", name: "2026-08-show-expressive-modal-subtitle-alt", defaultConfig: { enabled: false }, variations: null };
-let obj3 = { 1: null };
+const obj3 = { 1: null };
 obj3[1] = { enabled: true };
 obj2.variations = obj3;
 let closure_3 = ApexExperiment.createApexExperiment(obj2);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/ShowExpressiveModalSubtitleAltFlag.tsx");
 
-export const useShouldShowExpressiveModalSubtitleAlt = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(4);
-  const isSuspendedUser = SafetyHubUtils.useIsSuspendedUser();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SafetyHubStore];
-    const fn = function n() {
-      return showExpressiveModalSubtitleAlt.getShowExpressiveModalSubtitleAlt();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const stateFromStores = initialize.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] !== location) {
-    const obj3 = { location };
-    cResult[2] = location;
-    cResult[3] = obj3;
-    let tmp9 = obj3;
-  } else {
-    tmp9 = cResult[3];
-  }
-  let enabled = closure_3.useConfig(tmp9).enabled;
-  if (isSuspendedUser) {
-    enabled = stateFromStores;
-  }
-  return enabled;
-}) : ((location) => {
+export const useShouldShowExpressiveModalSubtitleAlt = function useShouldShowExpressiveModalSubtitleAlt(age_verification_expressive_v2_modal) {
   const isSuspendedUser = SafetyHubUtils.useIsSuspendedUser();
   const items = [SafetyHubStore];
   const stateFromStores = initialize.useStateFromStores(items, () => showExpressiveModalSubtitleAlt.getShowExpressiveModalSubtitleAlt());
-  let enabled = closure_3.useConfig({ location }).enabled;
+  let enabled = closure_3.useConfig({ location: age_verification_expressive_v2_modal }).enabled;
   if (isSuspendedUser) {
     enabled = stateFromStores;
   }
   return enabled;
-});
+};
 export const shouldShowExpressiveModalSubtitleAlt = function shouldShowExpressiveModalSubtitleAlt(location) {
   if (obj.isCurrentUserSuspended()) {
     let enabled = SafetyHubStore.getShowExpressiveModalSubtitleAlt();

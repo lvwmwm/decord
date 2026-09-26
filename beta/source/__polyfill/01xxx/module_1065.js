@@ -1,90 +1,127 @@
 // Module ID: 1065
 // Function ID: 1066
-// Dependencies: [17, 866, 871, 685]
-// Exports: base64ToUint8Array, feedbackAlertDialog, isModalSupported, isNativeDriverSupportedForColorAnimations, isValidEmail
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 1063, 1064, 1066, 1067, 1062, 1068]
 
 // Module 1065
-import _mod17 from "module_17" /* 17 */;
-import TurboModuleRegistry from "TurboModuleRegistry" /* 866 */;
-import _mod871 from "module_871" /* 871 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-const Alert = _mod17.Alert;
+const FeedbackButton = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+get_ActivityIndicator = fn(17);
+({ Appearance: metroRequire, Image: closure_7, Text: closure_8, TouchableOpacity: closure_9 } = get_ActivityIndicator);
+class FeedbackButton {
+  constructor(arg0) {
+    self = this;
+    tmp = c2(this, FeedbackButton);
+    items = [];
+    items[0] = global;
+    tmp2 = closure_4;
+    obj = closure_4(FeedbackButton);
+    tmp3 = closure_3;
+    if (c10()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    obj2 = closure_0(closure_1[7]);
+    result = obj2.lazyLoadFeedbackIntegration();
+    return tmp3Result;
+  }
+}
+_inherits(FeedbackButton, noop.Component);
+const entry = {
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    const self = this;
+    this._themeListener = timestampProducer.addChangeListener(() => {
+      self.forceUpdate();
+    });
+  }
+};
+let items = [
+  entry,
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this._themeListener) {
+        const _themeListener = this._themeListener;
+        _themeListener.remove();
+      }
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const theme = FeedbackButton(1064).getTheme();
+      const merged = Object.assign(Object.assign({}, FeedbackButton(1066).defaultButtonConfiguration), this.props);
+      const obj = FeedbackButton(1064);
+      const styles = this.props.styles;
+      let triggerButton;
+      const merged1 = Object.assign({}, FeedbackButton(1067).defaultButtonStyles(theme).triggerButton);
+      if (null !== styles) {
+        if (undefined !== styles) {
+          triggerButton = styles.triggerButton;
+        }
+      }
+      const merged2 = Object.assign(merged1, triggerButton);
+      const obj2 = FeedbackButton(1067);
+      const styles2 = self.props.styles;
+      let triggerText;
+      const merged3 = Object.assign({}, FeedbackButton(1067).defaultButtonStyles(theme).triggerText);
+      if (null !== styles2) {
+        if (undefined !== styles2) {
+          triggerText = styles2.triggerText;
+        }
+      }
+      const style = Object.assign(merged3, triggerText);
+      const tmpResult = FeedbackButton(1067);
+      const styles3 = self.props.styles;
+      let triggerIcon;
+      const merged5 = Object.assign({}, FeedbackButton(1067).defaultButtonStyles(theme).triggerIcon);
+      if (null !== styles3) {
+        if (undefined !== styles3) {
+          triggerIcon = styles3.triggerIcon;
+        }
+      }
+      const obj3 = { style: merged2, onPress: null, accessibilityLabel: null };
+      const merged6 = Object.assign(merged5, triggerIcon);
+      obj3.onPress = FeedbackButton(1062).showFeedbackWidget;
+      obj3.accessibilityLabel = merged.triggerAriaLabel;
+      const obj4 = { source: null, style: null };
+      const tmpResult2 = FeedbackButton(1067);
+      obj4.source = { uri: FeedbackButton(1068).feedbackIcon };
+      obj4.style = merged6;
+      const element = <React5 source={null} style={null} />;
+      return <React7 style={merged2} onPress={null} accessibilityLabel={null}>{element}<React6 style={style} testID="sentry-feedback-button">{merged.triggerLabel}</React6></React7>;
+    }
+  }
+];
 
-export const isModalSupported = function isModalSupported() {
-  const ReactNativeVersion = TurboModuleRegistry.ReactNativeLibraries.ReactNativeVersion;
-  let version;
-  if (null !== ReactNativeVersion) {
-    if (undefined !== ReactNativeVersion) {
-      version = ReactNativeVersion.version;
-    }
-  }
-  if (!version) {
-    version = {};
-  }
-  ({ minor, major } = version);
-  let isFabricEnabledResult = _mod871.isFabricEnabled();
-  if (isFabricEnabledResult) {
-    isFabricEnabledResult = 0 === major;
-  }
-  if (isFabricEnabledResult) {
-    isFabricEnabledResult = minor;
-  }
-  if (isFabricEnabledResult) {
-    isFabricEnabledResult = minor < 71;
-  }
-  return !isFabricEnabledResult;
-};
-export const isNativeDriverSupportedForColorAnimations = function isNativeDriverSupportedForColorAnimations() {
-  const ReactNativeVersion = TurboModuleRegistry.ReactNativeLibraries.ReactNativeVersion;
-  let version;
-  if (null !== ReactNativeVersion) {
-    if (undefined !== ReactNativeVersion) {
-      version = ReactNativeVersion.version;
-    }
-  }
-  if (!version) {
-    version = {};
-  }
-  ({ major, minor } = version);
-  let flag = major;
-  if (major) {
-    flag = major > 0;
-  }
-  if (!flag) {
-    let tmp = minor;
-    if (minor) {
-      tmp = minor >= 69;
-    }
-    flag = tmp;
-  }
-  if (!flag) {
-    flag = false;
-  }
-  return flag;
-};
-export const isValidEmail = (arg0) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(arg0);
-export const base64ToUint8Array = (placeholder) => {
-  if (typeof atob === "function") {
-    if (obj.isWeb()) {
-      const _atob = atob;
-      const _Uint8Array = Uint8Array;
-      const items = [];
-      HermesBuiltin.arraySpread(atob(placeholder), 0);
-      const uint8Array = new Uint8Array(items.map((item) => item.charCodeAt(0)));
-      return uint8Array;
-    }
-    obj = _mod871;
-  }
-  const error = new Error("atob is not available in this environment.");
-  throw error;
-};
-export const feedbackAlertDialog = (Alert, arg1) => {
-  if (obj.isWeb()) {
-    if (undefined !== tmp(685).RN_GLOBAL_OBJ.alert) {
-      const RN_GLOBAL_OBJ = tmp(685).RN_GLOBAL_OBJ;
-      const _HermesInternal = HermesInternal;
-      RN_GLOBAL_OBJ.alert("" + Alert + "\n" + arg1);
-    }
-  }
-  Alert.alert(Alert, arg1);
-};
+export const FeedbackButton = _createClass(FeedbackButton, items);

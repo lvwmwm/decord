@@ -1,16 +1,16 @@
-// Module ID: 9335
-// Function ID: 9336
+// Module ID: 9337
+// Function ID: 9338
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 9334, 1078, 9336, 561, 1095, 577, 1275, 1235, 2]
+// Dependencies: [5, 9336, 1074, 9338, 559, 1091, 573, 1271, 1231, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 9335 (ApplicationWidgetConfigActions)
-import DurationsDefault from "Durations" /* 1095 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 9337 (ApplicationWidgetConfigActions)
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 9334 */;
-import Backoff from "Backoff" /* 561 */;
-import Dispatcher from "Dispatcher" /* 577 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 9336 */;
+import Backoff from "Backoff" /* 559 */;
+import Dispatcher from "Dispatcher" /* 573 */;
 
 require = fn;
 function getApplicationsFromConfigs(arg0) {
@@ -47,7 +47,7 @@ let closure_11 = async function _fetchFeaturedWidgetConfigsFromApi(arg0, value) 
       const obj4 = { value, done: true };
       return obj4;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -102,7 +102,7 @@ let closure_11 = async function _fetchFeaturedWidgetConfigsFromApi(arg0, value) 
         closure_129_9.succeed();
         c3 = 0;
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp27) {
       closure_2 = tmp27;
@@ -136,7 +136,7 @@ let closure_13 = async function _fetchDeveloperWidgetConfigsFromApi(arg0, value)
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -183,7 +183,7 @@ let closure_13 = async function _fetchDeveloperWidgetConfigsFromApi(arg0, value)
         closure_129_1(closure_129_2[6]).dispatch(obj10);
         c3 = 0;
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp27) {
       closure_2 = tmp27;
@@ -211,7 +211,7 @@ let closure_15 = async function _fetchWidgetConfigsFromApi(applicationId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -261,7 +261,7 @@ let closure_15 = async function _fetchWidgetConfigsFromApi(applicationId) {
           closure_130_1(closure_130_2[6]).dispatch(obj12);
           c4 = 0;
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         closure_3 = tmp30;
@@ -275,13 +275,13 @@ let closure_15 = async function _fetchWidgetConfigsFromApi(applicationId) {
     }
   })();
 };
-const FetchState = fn(9334).FetchState;
-const Endpoints = fn(1078).Endpoints;
-const promiseDeduper = new fn(9336).PromiseDeduper();
+const FetchState = fn(9336).FetchState;
+const Endpoints = fn(1074).Endpoints;
+const promiseDeduper = new fn(9338).PromiseDeduper();
 const importDefaultResult2 = new Backoff(DurationsDefault.Millis.SECOND, DurationsDefault.Millis.MINUTE, true);
 const subscription = Dispatcher.subscribe("LOGOUT", () => importDefaultResult2.succeed());
-const promiseDeduper3 = new fn(9336).PromiseDeduper();
-const promiseDeduper4 = new fn(9336).PromiseDeduper();
+const promiseDeduper3 = new fn(9338).PromiseDeduper();
+const promiseDeduper4 = new fn(9338).PromiseDeduper();
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/application_widget/ApplicationWidgetConfigActions.tsx");
 

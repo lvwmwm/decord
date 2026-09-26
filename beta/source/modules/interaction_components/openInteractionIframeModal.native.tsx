@@ -1,10 +1,10 @@
-// Module ID: 17820
-// Function ID: 17821
+// Module ID: 17811
+// Function ID: 17812
 // Name: openInteractionIframeModal
-// Dependencies: [5, 17821, 4993, 17822, 1984, 2]
+// Dependencies: [5, 17812, 4991, 17813, 1980, 2]
 // Exports: default
 
-// Module 17820 (openInteractionIframeModal)
+// Module 17811 (openInteractionIframeModal)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_5 = async function _openInteractionIframeModal(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -34,7 +34,7 @@ let closure_5 = async function _openInteractionIframeModal(arg0, value) {
       } else {
         require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[3], paths.paths), closure_0, React4);
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp10) {
       c1 = tmp;
@@ -42,7 +42,7 @@ let closure_5 = async function _openInteractionIframeModal(arg0, value) {
     }
   }
 };
-let closure_4 = fn(17821).INTERACTION_IFRAME_MODAL_KEY;
+let closure_4 = fn(17812).INTERACTION_IFRAME_MODAL_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/interaction_components/openInteractionIframeModal.native.tsx");
 

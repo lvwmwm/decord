@@ -1,106 +1,67 @@
 // Module ID: 13150
 // Function ID: 13151
-// Dependencies: [32]
-// Exports: disabledUntil, isRateLimited, updateRateLimits
+// Dependencies: [13075, 13078, 13107, 13093, 13106, 13127, 13097, 13098, 13084, 13115, 13092, 13091, 13079]
+// Exports: getTraceData
 
 // Module 13150
-import _slicedToArray from "module_32" /* 32 */;
+import errorCallback from "errorCallback" /* 13075 */;
+import _mod13106 from "module_13106" /* 13106 */;
+import "module_13078";
+import __SENTRY_DEBUG__ from "module_13107" /* 13107 */;
+import dateTimestampInSeconds from "module_13093" /* 13093 */;
 
-function parseRetryAfterHeader(arg0) {
-  let timestamp = arg1;
-  if (arg1 === undefined) {
-    const _Date = Date;
-    timestamp = Date.now();
-  }
-  const parsed = parseInt("" + arg0, 10);
-  if (isNaN(parsed)) {
-    const _Date2 = Date;
-    const _HermesInternal = HermesInternal;
-    const parsed1 = Date.parse("" + arg0);
-    const _isNaN = isNaN;
-    let num2 = 60000;
-    if (!isNaN(parsed1)) {
-      num2 = parsed1 - timestamp;
-    }
-    return num2;
-  } else {
-    return 1000 * parsed;
-  }
-}
+errorCallback;
 
-export const DEFAULT_RETRY_AFTER = 60000;
-export const disabledUntil = function disabledUntil(all, arg1) {
-  return all[arg1] || all.all || 0;
-};
-export const isRateLimited = function isRateLimited(all, arg1) {
-  let timestamp = arg2;
-  if (arg2 === undefined) {
-    const _Date = Date;
-    timestamp = Date.now();
+export const getTraceData = function getTraceData() {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-  return (all[arg1] || all.all || 0) > timestamp;
-};
-export { parseRetryAfterHeader };
-export const updateRateLimits = function updateRateLimits(arg0, headers) {
-  headers = headers.headers;
-  let timestamp = arg2;
-  if (arg2 === undefined) {
-    const _Date = Date;
-    timestamp = Date.now();
-  }
-  const obj = {};
-  const merged = Object.assign(arg0);
-  let str = headers;
-  if (headers) {
-    str = headers["x-sentry-rate-limits"];
-  }
-  let prop = headers;
-  if (headers) {
-    prop = headers["retry-after"];
-  }
-  if (str) {
-    const parts = str.trim().split(",");
-    const iter = parts[Symbol.iterator]();
-    const str2 = str.trim();
-    while (iter !== undefined) {
-      let tmp12 = _slicedToArray(str8.split(":", 5), 5);
-      let str9 = tmp12[1];
-      let str10 = tmp12[4];
-      let _parseInt = parseInt;
-      let parsed = parseInt(tmp12[0], 10);
-      let _isNaN = isNaN;
-      let num6 = 60;
-      if (!isNaN(parsed)) {
-        num6 = parsed;
-      }
-      let result = 1000 * num6;
-      if (str9) {
-        let parts1 = str9.split(";");
-        for (const item10065 of parts1) {
-          let tmp23 = "metric_bucket" === item10065;
-          let tmp22 = item10065;
-          if (tmp23) {
-            tmp23 = str10;
-          }
-          if (tmp23) {
-            let parts2 = str10.split(";");
-            tmp23 = !parts2.includes("custom");
-          }
-          if (!tmp23) {
-            obj[tmp22] = timestamp + result;
-          }
-          continue;
-        }
+  const client = _mod13106.getClient();
+  if (obj3.isEnabled()) {
+    if (client) {
+      const mainCarrier = tmp(13097).getMainCarrier();
+      const tmpResult = tmp(13097);
+      const asyncContextStrategy = tmp(13098).getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
       } else {
-        obj.all = timestamp + result;
+        const currentScope = tmp(13106).getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          span = tmp(13084).getActiveSpan();
+          const tmpResult10 = tmp(13084);
+        }
+        if (span) {
+          let spanToTraceHeaderResult = tmp(13084).spanToTraceHeader(span);
+          const tmpResult11 = tmp(13084);
+        } else {
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          spanToTraceHeaderResult = tmp(13091).generateSentryTraceHeader(traceId, spanId, sampled);
+          const tmpResult12 = tmp(13091);
+        }
+        const tmpResult13 = tmp(13115);
+        if (span) {
+          let dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
+        }
+        const tmpResult9 = tmp(13106);
+        const result = tmp(13092).dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(13091).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          let obj5 = obj4;
+        } else {
+          const logger = tmp(13079).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
       }
-      continue;
+      const tmpResult8 = tmp(13098);
     }
-    str8 = iter.next();
-  } else if (prop) {
-    obj.all = timestamp + parseRetryAfterHeader(prop, timestamp);
-  } else if (429 === headers.statusCode) {
-    obj.all = timestamp + 60000;
   }
-  return obj;
+  return {};
 };

@@ -1,14 +1,14 @@
-// Module ID: 7604
-// Function ID: 7605
+// Module ID: 7602
+// Function ID: 7603
 // Name: NavigationHistoryStore
-// Dependencies: [2045, 504, 577, 4649, 4648, 4651, 2]
+// Dependencies: [2041, 504, 573, 4646, 4645, 4648, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 7604 (NavigationHistoryStore)
+// Module 7602 (NavigationHistoryStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 function getIdFromHistoryItem(str) {
@@ -123,9 +123,9 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
     const currentRoute = rootNavigationRef.getCurrentRoute();
     if (null != currentRoute) {
       if (null != currentRoute.params) {
-        const coerceChannelRouteResult = tmp(4648).coerceChannelRoute(currentRoute);
+        const coerceChannelRouteResult = tmp(4645).coerceChannelRoute(currentRoute);
         if (null == coerceChannelRouteResult) {
-          const coerceGuildsRouteResult = tmp(4648).coerceGuildsRoute(currentRoute);
+          const coerceGuildsRouteResult = tmp(4645).coerceGuildsRoute(currentRoute);
           if (null != coerceGuildsRouteResult) {
             if (tmpResult4.getChatLayout().isChatLockedOpen) {
               const params = coerceGuildsRouteResult.params;
@@ -175,9 +175,9 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
               }
               navigationHistoryStore.emitChange();
             }
-            tmpResult4 = tmp(4651);
+            tmpResult4 = tmp(4648);
           }
-          const tmpResult3 = tmp(4648);
+          const tmpResult3 = tmp(4645);
         } else {
           const _HermesInternal2 = HermesInternal;
           combined2 = "" + c3 + coerceChannelRouteResult.params.channelId;
@@ -195,7 +195,7 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
           }
           navigationHistoryStore.emitChange();
         }
-        const tmpResult = tmp(4648);
+        const tmpResult = tmp(4645);
       }
     }
   }

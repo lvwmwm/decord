@@ -1,185 +1,25 @@
-// Module ID: 17252
-// Function ID: 17253
+// Module ID: 17242
+// Function ID: 17243
 // Name: ContactSuggestionRow
-// Dependencies: [109, 19, 4782, 1078, 21, 558, 568, 4635, 4529, 1119, 565, 16393, 16392, 16795, 1245, 16796, 11208, 2]
+// Dependencies: [19, 4780, 1074, 21, 4632, 4524, 1115, 563, 16386, 16385, 11159, 16785, 16786, 1241, 2]
+// Exports: ContactSuggestionRow
 
-// Module 17252 (ContactSuggestionRow)
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import UserUtilsDefault from "UserUtils" /* 4635 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16393 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 17242 (ContactSuggestionRow)
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16386 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4782 */;
-
-const require = globalThis.__r;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
 require = fn;
-let closure_3 = ["suggestedFriend", "added", "onAddSuggestion"];
-const Constants = fn(1078);
-({ AnalyticEvents: closure_7, InstantInviteSources: closure_8, RelationshipTypes: closure_9 } = Constants);
+const Constants = fn(1074);
+({ AnalyticEvents: hasOwnProperty, InstantInviteSources: metroRequire, RelationshipTypes: closure_7 } = Constants);
 const jsx = fn(21).jsx;
-const constants4 = { ADD: "add" };
-const ReactCompilerGating = fn(558);
+let closure_9 = { ADD: "add" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ContactSuggestionRow.tsx");
 
-export const ContactSuggestionRow = ReactCompilerGating.isReactCompilerEnabled() ? ((suggestedFriend) => {
-  const cResult = require("c").c(52);
-  if (cResult[0] !== suggestedFriend) {
-    suggestedFriend = suggestedFriend.suggestedFriend;
-    closure_3 = suggestedFriend;
-    const added = suggestedFriend.added;
-    _require = added;
-    const onAddSuggestion = suggestedFriend.onAddSuggestion;
-    importDefault = onAddSuggestion;
-    const tmp10 = sharedValue(suggestedFriend, closure_3);
-    dependencyMap = tmp10;
-    cResult[0] = suggestedFriend;
-    cResult[1] = added;
-    cResult[2] = onAddSuggestion;
-    cResult[3] = tmp10;
-    cResult[4] = suggestedFriend;
-  } else {
-    _require = cResult[1];
-    importDefault = cResult[2];
-    dependencyMap = cResult[3];
-    closure_3 = cResult[4];
-  }
-  if (cResult[5] === tmp7.friendSuggestionName) {
-    if (cResult[6] === tmp7.user) {
-      sharedValue = tmp(4529).useSharedValue(false);
-      if (cResult[8] === tmp4) {
-        if (cResult[9] === sharedValue) {
-          let tmp15 = cResult[10];
-          let tmp16 = cResult[11];
-        }
-        const effect = noop.useEffect(tmp15, tmp16);
-        if (cResult[12] !== tmp4) {
-          if (tmp4) {
-            const items = [];
-          } else {
-            const obj3 = { name: constants4.ADD, label: null };
-            const intl = tmp(1119).intl;
-            obj3.label = intl.string(tmp(1119).t["ed99+i"]);
-            class F {
-              constructor() {
-                result = closure_4.set(closure_0);
-                return;
-              }
-            }
-            items[0] = obj3;
-          }
-          cResult[12] = tmp4;
-          cResult[13] = items;
-        } else {
-          const _Symbol = Symbol;
-          if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const items1 = [AccessibilityStore];
-            class T {
-              constructor() {
-                return closure_1_6.useReducedMotion;
-              }
-            }
-            cResult[14] = items1;
-            class F {
-              constructor() {
-                result = closure_4.set(closure_0);
-                return;
-              }
-            }
-            cResult[15] = T;
-            let tmp24 = T;
-            let tmp23 = items1;
-          } else {
-            tmp23 = cResult[14];
-            tmp24 = cResult[15];
-          }
-          class F {
-            constructor() {
-              result = closure_4.set(closure_0);
-              return;
-            }
-          }
-          const stateFromStores = obj5.useStateFromStores(tmp23, tmp24);
-          if (cResult[16] === sharedValue) {
-            if (cResult[17] === tmp5) {
-              class T {
-                constructor() {
-                  return closure_1_6.useReducedMotion;
-                }
-              }
-              if (tmp30) {
-                if (tmp7 != null) {
-                  const mutualFriendsCount = tmp7.mutualFriendsCount;
-                }
-                class T {
-                  constructor() {
-                    return closure_1_6.useReducedMotion;
-                  }
-                }
-              }
-              class F {
-                constructor() {
-                  result = closure_4.set(closure_0);
-                  return;
-                }
-              }
-              const suggestedContactNameForSuggestion = tmp(16392).getSuggestedContactNameForSuggestion(tmp11, tmp7);
-              cResult[20] = tmp7;
-              cResult[21] = tmp11;
-              cResult[22] = suggestedContactNameForSuggestion;
-              tmp30 = null != undefined;
-              const tmpResult2 = tmp(16392);
-            }
-          }
-          const fn = function h(nativeEvent) {
-            if (nativeEvent.nativeEvent.actionName === constants.ADD) {
-              const result = sharedValue.set(true);
-              closure_1(closure_3.user);
-              return AddFriendsScreenUtils.addContactSuggestion(closure_3.user);
-            }
-          };
-          cResult[16] = sharedValue;
-          cResult[17] = tmp5;
-          cResult[18] = tmp7.user;
-          cResult[19] = fn;
-        }
-      }
-      class F {
-        constructor() {
-          result = closure_4.set(closure_0);
-          return;
-        }
-      }
-      const items2 = [tmp4, sharedValue];
-      cResult[8] = tmp4;
-      cResult[9] = sharedValue;
-      cResult[10] = F;
-      cResult[11] = items2;
-      tmp16 = items2;
-      tmp15 = F;
-      const tmpResult = tmp(4529);
-    }
-  }
-  if (null == tmp7.friendSuggestionName) {
-    let friendSuggestionName = UserUtilsDefault.getName(tmp7.user);
-    class T {
-      constructor() {
-        return closure_1_6.useReducedMotion;
-      }
-    }
-    cResult[5] = tmp7.friendSuggestionName;
-    class F {
-      constructor() {
-        result = closure_4.set(closure_0);
-        return;
-      }
-    }
-    cResult[7] = friendSuggestionName;
-  }
-  friendSuggestionName = tmp7.friendSuggestionName;
-}) : ((suggestedFriend) => {
+export const ContactSuggestionRow = function ContactSuggestionRow(suggestedFriend) {
   suggestedFriend = suggestedFriend.suggestedFriend;
   const added = suggestedFriend.added;
   const onAddSuggestion = suggestedFriend.onAddSuggestion;
@@ -189,13 +29,13 @@ export const ContactSuggestionRow = ReactCompilerGating.isReactCompilerEnabled()
     if (suggestedFriend.friendSuggestionName.length > 0) {
       let friendSuggestionName = suggestedFriend.friendSuggestionName;
     }
-    sharedValue = suggestedFriend(onAddSuggestion[8]).useSharedValue(false);
+    sharedValue = suggestedFriend(onAddSuggestion[5]).useSharedValue(false);
     let items = [added, sharedValue];
-    const effect = noop.useEffect(() => {
+    const effect = merged.useEffect(() => {
       const result = sharedValue.set(added);
     }, items);
     const items1 = [added];
-    const memo = noop.useMemo(() => {
+    const memo = merged.useMemo(() => {
       if (added) {
         let items = [];
       } else {
@@ -206,12 +46,12 @@ export const ContactSuggestionRow = ReactCompilerGating.isReactCompilerEnabled()
       }
       return items;
     }, items1);
-    let obj2 = suggestedFriend(onAddSuggestion[8]);
-    const items2 = [AccessibilityStore];
-    const stateFromStores = suggestedFriend(onAddSuggestion[10]).useStateFromStores(items2, () => useReducedMotion.useReducedMotion);
+    let obj2 = suggestedFriend(onAddSuggestion[5]);
+    const items2 = [sharedValue];
+    const stateFromStores = suggestedFriend(onAddSuggestion[7]).useStateFromStores(items2, () => sharedValue.useReducedMotion);
     const items3 = [sharedValue, onAddSuggestion, suggestedFriend.user];
     let mutualFriendsCount;
-    const callback = noop.useCallback((nativeEvent) => {
+    const callback = merged.useCallback((nativeEvent) => {
       if (nativeEvent.nativeEvent.actionName === constants.ADD) {
         const result = sharedValue.set(true);
         onAddSuggestion(suggestedFriend.user);
@@ -229,20 +69,20 @@ export const ContactSuggestionRow = ReactCompilerGating.isReactCompilerEnabled()
       }
       tmp12 = mutualFriendsCount1 > 0;
     }
-    const obj3 = suggestedFriend(onAddSuggestion[10]);
-    const suggestedContactNameForSuggestion = suggestedFriend(onAddSuggestion[12]).getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
+    const obj3 = suggestedFriend(onAddSuggestion[7]);
+    const suggestedContactNameForSuggestion = suggestedFriend(onAddSuggestion[9]).getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
     if (null != suggestedContactNameForSuggestion) {
       const _HermesInternal = HermesInternal;
-      let combined = "" + added(tmp3[7]).getUserTag(suggestedFriend.user) + " \u00B7 " + suggestedContactNameForSuggestion;
+      let combined = "" + added(tmp3[4]).getUserTag(suggestedFriend.user) + " \u00B7 " + suggestedContactNameForSuggestion;
       let tmp15 = added;
-      const obj6 = added(tmp3[7]);
+      const obj6 = added(tmp3[4]);
     } else {
       tmp15 = added;
-      combined = added(tmp3[7]).getUserTag(suggestedFriend.user);
-      const obj5 = added(tmp3[7]);
+      combined = added(tmp3[4]).getUserTag(suggestedFriend.user);
+      const obj5 = added(tmp3[4]);
     }
     const obj4 = {};
-    const tmp2Result = suggestedFriend(onAddSuggestion[12]);
+    const tmp2Result = suggestedFriend(onAddSuggestion[9]);
     const merged1 = Object.assign(merged);
     obj4.user = suggestedFriend.user;
     obj4.type = constants3.SUGGESTION;
@@ -254,7 +94,7 @@ export const ContactSuggestionRow = ReactCompilerGating.isReactCompilerEnabled()
     const obj7 = { actioned: sharedValue, label: combined, secondaryLabel: null, actionStatus: null, animate: null };
     let formatToPlainStringResult;
     if (tmp12) {
-      let intl = tmp2(tmp3[9]).intl;
+      let intl = tmp2(tmp3[6]).intl;
       let str3;
       if (suggestedFriend != null) {
         str3 = suggestedFriend.mutualFriendsCount;
@@ -263,13 +103,13 @@ export const ContactSuggestionRow = ReactCompilerGating.isReactCompilerEnabled()
         str3 = "";
       }
       const obj8 = { count: str3 };
-      formatToPlainStringResult = intl.formatToPlainString(tmp2(tmp3[9]).t.z7y34b, obj8);
+      formatToPlainStringResult = intl.formatToPlainString(tmp2(tmp3[6]).t.z7y34b, obj8);
     }
     obj7.secondaryLabel = formatToPlainStringResult;
-    const intl2 = tmp2(tmp3[9]).intl;
-    obj7.actionStatus = intl2.string(suggestedFriend(onAddSuggestion[9]).t.Kzyxm9);
+    const intl2 = tmp2(tmp3[6]).intl;
+    obj7.actionStatus = intl2.string(suggestedFriend(onAddSuggestion[6]).t.Kzyxm9);
     obj7.animate = !stateFromStores;
-    obj4.subLabel = jsx(suggestedFriend(onAddSuggestion[13]).ActionStatusSubLabel, { actioned: sharedValue, label: combined, secondaryLabel: null, actionStatus: null, animate: null });
+    obj4.subLabel = jsx(suggestedFriend(onAddSuggestion[11]).ActionStatusSubLabel, { actioned: sharedValue, label: combined, secondaryLabel: null, actionStatus: null, animate: null });
     const obj9 = {
       user: suggestedFriend.user,
       added: sharedValue,
@@ -285,7 +125,7 @@ export const ContactSuggestionRow = ReactCompilerGating.isReactCompilerEnabled()
         },
       animate: !stateFromStores
     };
-    obj4.trailing = jsx(suggestedFriend(onAddSuggestion[15]).ContactSuggestionActions, {
+    obj4.trailing = jsx(suggestedFriend(onAddSuggestion[12]).ContactSuggestionActions, {
       user: suggestedFriend.user,
       added: sharedValue,
       onAddSuggestion(id) {
@@ -300,7 +140,7 @@ export const ContactSuggestionRow = ReactCompilerGating.isReactCompilerEnabled()
         },
       animate: !stateFromStores
     });
-    return jsx(tmp15(onAddSuggestion[16]), {});
+    return jsx(tmp15(onAddSuggestion[10]), {});
   }
-  friendSuggestionName = added(onAddSuggestion[7]).getName(suggestedFriend.user);
-});
+  friendSuggestionName = added(onAddSuggestion[4]).getName(suggestedFriend.user);
+};

@@ -1,59 +1,23 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12451
+// Function ID: 12452
 // Name: useAnimationDelayedAutoFocus
-// Dependencies: [19, 558, 568, 12345, 2]
+// Dependencies: [19, 12444, 2]
+// Exports: useAnimationDelayedAutoFocus
 
-// Module 12344 (useAnimationDelayedAutoFocus)
-import c from "c" /* 568 */;
-import useAwaitAnimationComplete from "useAwaitAnimationComplete" /* 12345 */;
+// Module 12451 (useAnimationDelayedAutoFocus)
+import useAwaitAnimationComplete from "useAwaitAnimationComplete" /* 12444 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useAnimationDelayedAutoFocus.tsx");
 
-export const useAnimationDelayedAutoFocus = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  const cResult = c.c(5);
+export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocus(autoFocus, onPress) {
+  closure_0 = autoFocus;
+  closure_1 = onPress;
   const awaitAnimationCompletion = useAwaitAnimationComplete.useAwaitAnimationCompletion();
   noop.useRef(false);
-  if (cResult[0] === awaitAnimationCompletion) {
-    if (cResult[1] === arg0) {
-      if (cResult[2] === arg1) {
-        let tmp3 = cResult[3];
-        let tmp4 = cResult[4];
-      }
-      const effect = noop.useEffect(tmp3, tmp4);
-    }
-  }
-  const fn = function o() {
-    let tmp = closure_0;
-    if (closure_0) {
-      tmp = !ref.current;
-    }
-    if (tmp) {
-      awaitAnimationCompletion(() => {
-        closure_1_1();
-      });
-    }
-    ref.current = true;
-  };
-  const items = [arg0, arg1, awaitAnimationCompletion];
-  cResult[0] = awaitAnimationCompletion;
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items;
-  tmp4 = items;
-  tmp3 = fn;
-}) : ((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  const awaitAnimationCompletion = useAwaitAnimationComplete.useAwaitAnimationCompletion();
-  noop.useRef(false);
-  const items = [arg0, arg1, awaitAnimationCompletion];
+  const items = [autoFocus, onPress, awaitAnimationCompletion];
   const effect = noop.useEffect(() => {
     let tmp = closure_0;
     if (closure_0) {
@@ -61,9 +25,9 @@ export const useAnimationDelayedAutoFocus = ReactCompilerGating.isReactCompilerE
     }
     if (tmp) {
       awaitAnimationCompletion(() => {
-        closure_1_1();
+        onPress();
       });
     }
     ref.current = true;
   }, items);
-});
+};

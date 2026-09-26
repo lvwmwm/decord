@@ -1,611 +1,28 @@
-// Module ID: 12640
-// Function ID: 12641
+// Module ID: 12738
+// Function ID: 12739
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4432, 2045, 12128, 1078, 21, 558, 568, 504, 1105, 4970, 12641, 10104, 1190, 7617, 5771, 1119, 12633, 2]
+// Dependencies: [19, 4428, 2041, 12244, 1074, 21, 504, 1101, 4968, 11617, 10125, 1186, 7615, 5769, 12731, 1115, 2]
 
-// Module 12640 (ChatInputGuardLurking)
-import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7617 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 10104 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12633 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12641 */;
+// Module 12738 (ChatInputGuardLurking)
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5769 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7615 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 10125 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11617 */;
 import noop from "module_19" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4432 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import LurkingStore from "LurkingStore" /* 4428 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
-const TextAreaCta = fn(12128).TextAreaCta;
-const Constants = fn(1078);
+const TextAreaCta = fn(12244).TextAreaCta;
+const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, JoinGuildSources: closure_9 } = Constants);
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardLurking.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  const cResult = channel(568).c(29);
-  channel = channel.channel;
-  if (cResult[0] !== channel) {
-    let guildId = channel.getGuildId();
-    cResult[0] = channel;
-    cResult[1] = guildId;
-    let tmp4 = guildId;
-  } else {
-    tmp4 = cResult[1];
-  }
-  importDefault = tmp4;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LurkingStore];
-    cResult[2] = items;
-    let tmp6 = items;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== tmp4) {
-    const fn = function h() {
-      let isLurkingResult = null != closure_1;
-      if (isLurkingResult) {
-        isLurkingResult = LurkingStore.isLurking(tmp);
-      }
-      return { isLurking: isLurkingResult, lurkingSource: LurkingStore.getLurkingSourceForGuild(closure_1) };
-    };
-    const items1 = [tmp4];
-    cResult[3] = tmp4;
-    cResult[4] = fn;
-    cResult[5] = items1;
-    let tmp9 = items1;
-    let tmp8 = fn;
-  } else {
-    tmp8 = cResult[4];
-    tmp9 = cResult[5];
-  }
-  let obj = channel(568);
-  const stateFromStoresObject = channel(504).useStateFromStoresObject(tmp6, tmp8, tmp9);
-  ({ isLurking, lurkingSource } = stateFromStoresObject);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        obj = channel(closure_1_3[9]);
-        history = obj.getHistory();
-        goBackResult = history.goBack();
-        return;
-      }
-    }
-    cResult[6] = L;
-    const tmp11 = L;
-  } else {
-    class L {
-      constructor() {
-        obj = channel(closure_1_3[9]);
-        history = obj.getHistory();
-        goBackResult = history.goBack();
-        return;
-      }
-    }
-  }
-  if (cResult[7] === channel.id) {
-    class L {
-      constructor() {
-        obj = channel(closure_1_3[9]);
-        history = obj.getHistory();
-        goBackResult = history.goBack();
-        return;
-      }
-    }
-    if (cResult[10] !== tmp4) {
-      class R {
-        constructor() {
-          tmp = closure_1;
-          if (null != closure_1) {
-            tmp17 = closure_5;
-            lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-            type = undefined;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            tmp3 = JoinGuildSources;
-            if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-              tmp4 = closure_6;
-              channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                tmp5 = closure_0;
-                tmp6 = closure_3;
-                obj2 = closure_0(closure_3[12]);
-                guildId = channel.getGuildId();
-                result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-              }
-            }
-            tmp9 = closure_2;
-            tmp10 = closure_3;
-            obj3 = closure_2(closure_3[14]);
-            result1 = obj3.trackGuildJoinClicked(tmp);
-            tmp12 = closure_1;
-            obj4 = closure_1(closure_3[10]);
-            tmp13 = AnalyticEvents;
-            obj1 = { cta_type: null };
-            tmp14 = TextAreaCta;
-            obj1.cta_type = TextAreaCta.JOIN_GUILD;
-            trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-            obj6 = closure_1(closure_3[15]);
-            obj8 = { source: null };
-            obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-            joinGuildResult = obj6.joinGuild(tmp, obj8);
-          }
-          return;
-        }
-      }
-      cResult[10] = tmp4;
-      cResult[11] = R;
-    } else {
-      class R {
-        constructor() {
-          tmp = closure_1;
-          if (null != closure_1) {
-            tmp17 = closure_5;
-            lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-            type = undefined;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            tmp3 = JoinGuildSources;
-            if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-              tmp4 = closure_6;
-              channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                tmp5 = closure_0;
-                tmp6 = closure_3;
-                obj2 = closure_0(closure_3[12]);
-                guildId = channel.getGuildId();
-                result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-              }
-            }
-            tmp9 = closure_2;
-            tmp10 = closure_3;
-            obj3 = closure_2(closure_3[14]);
-            result1 = obj3.trackGuildJoinClicked(tmp);
-            tmp12 = closure_1;
-            obj4 = closure_1(closure_3[10]);
-            tmp13 = AnalyticEvents;
-            obj1 = { cta_type: null };
-            tmp14 = TextAreaCta;
-            obj1.cta_type = TextAreaCta.JOIN_GUILD;
-            trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-            obj6 = closure_1(closure_3[15]);
-            obj8 = { source: null };
-            obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-            joinGuildResult = obj6.joinGuild(tmp, obj8);
-          }
-          return;
-        }
-      }
-    }
-    if (lurkingSource != null) {
-      class R {
-        constructor() {
-          tmp = closure_1;
-          if (null != closure_1) {
-            tmp17 = closure_5;
-            lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-            type = undefined;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            tmp3 = JoinGuildSources;
-            if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-              tmp4 = closure_6;
-              channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                tmp5 = closure_0;
-                tmp6 = closure_3;
-                obj2 = closure_0(closure_3[12]);
-                guildId = channel.getGuildId();
-                result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-              }
-            }
-            tmp9 = closure_2;
-            tmp10 = closure_3;
-            obj3 = closure_2(closure_3[14]);
-            result1 = obj3.trackGuildJoinClicked(tmp);
-            tmp12 = closure_1;
-            obj4 = closure_1(closure_3[10]);
-            tmp13 = AnalyticEvents;
-            obj1 = { cta_type: null };
-            tmp14 = TextAreaCta;
-            obj1.cta_type = TextAreaCta.JOIN_GUILD;
-            trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-            obj6 = closure_1(closure_3[15]);
-            obj8 = { source: null };
-            obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-            joinGuildResult = obj6.joinGuild(tmp, obj8);
-          }
-          return;
-        }
-      }
-    }
-    if (undefined === constants2.DIRECTORY_ENTRY) {
-      class R {
-        constructor() {
-          tmp = closure_1;
-          if (null != closure_1) {
-            tmp17 = closure_5;
-            lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-            type = undefined;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            tmp3 = JoinGuildSources;
-            if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-              tmp4 = closure_6;
-              channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                tmp5 = closure_0;
-                tmp6 = closure_3;
-                obj2 = closure_0(closure_3[12]);
-                guildId = channel.getGuildId();
-                result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-              }
-            }
-            tmp9 = closure_2;
-            tmp10 = closure_3;
-            obj3 = closure_2(closure_3[14]);
-            result1 = obj3.trackGuildJoinClicked(tmp);
-            tmp12 = closure_1;
-            obj4 = closure_1(closure_3[10]);
-            tmp13 = AnalyticEvents;
-            obj1 = { cta_type: null };
-            tmp14 = TextAreaCta;
-            obj1.cta_type = TextAreaCta.JOIN_GUILD;
-            trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-            obj6 = closure_1(closure_3[15]);
-            obj8 = { source: null };
-            obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-            joinGuildResult = obj6.joinGuild(tmp, obj8);
-          }
-          return;
-        }
-      }
-      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class R {
-          constructor() {
-            tmp = closure_1;
-            if (null != closure_1) {
-              tmp17 = closure_5;
-              lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-              type = undefined;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              tmp3 = JoinGuildSources;
-              if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-                tmp4 = closure_6;
-                channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  tmp5 = closure_0;
-                  tmp6 = closure_3;
-                  obj2 = closure_0(closure_3[12]);
-                  guildId = channel.getGuildId();
-                  result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-                }
-              }
-              tmp9 = closure_2;
-              tmp10 = closure_3;
-              obj3 = closure_2(closure_3[14]);
-              result1 = obj3.trackGuildJoinClicked(tmp);
-              tmp12 = closure_1;
-              obj4 = closure_1(closure_3[10]);
-              tmp13 = AnalyticEvents;
-              obj1 = { cta_type: null };
-              tmp14 = TextAreaCta;
-              obj1.cta_type = TextAreaCta.JOIN_GUILD;
-              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-              obj6 = closure_1(closure_3[15]);
-              obj8 = { source: null };
-              obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-              joinGuildResult = obj6.joinGuild(tmp, obj8);
-            }
-            return;
-          }
-        }
-        const stringResult = obj3.string(tmp(1119).t.G42YmG);
-        const intl = tmp(1119).intl;
-        const stringResult1 = intl.string(tmp(1119).t.GlKb5i);
-        cResult[12] = stringResult;
-        cResult[13] = stringResult1;
-        let tmp17 = stringResult1;
-        const tmp16 = stringResult;
-      } else {
-        class R {
-          constructor() {
-            tmp = closure_1;
-            if (null != closure_1) {
-              tmp17 = closure_5;
-              lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-              type = undefined;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              tmp3 = JoinGuildSources;
-              if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-                tmp4 = closure_6;
-                channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  tmp5 = closure_0;
-                  tmp6 = closure_3;
-                  obj2 = closure_0(closure_3[12]);
-                  guildId = channel.getGuildId();
-                  result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-                }
-              }
-              tmp9 = closure_2;
-              tmp10 = closure_3;
-              obj3 = closure_2(closure_3[14]);
-              result1 = obj3.trackGuildJoinClicked(tmp);
-              tmp12 = closure_1;
-              obj4 = closure_1(closure_3[10]);
-              tmp13 = AnalyticEvents;
-              obj1 = { cta_type: null };
-              tmp14 = TextAreaCta;
-              obj1.cta_type = TextAreaCta.JOIN_GUILD;
-              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-              obj6 = closure_1(closure_3[15]);
-              obj8 = { source: null };
-              obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-              joinGuildResult = obj6.joinGuild(tmp, obj8);
-            }
-            return;
-          }
-        }
-        tmp17 = cResult[13];
-      }
-      const _Symbol = Symbol;
-      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        class R {
-          constructor() {
-            tmp = closure_1;
-            if (null != closure_1) {
-              tmp17 = closure_5;
-              lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-              type = undefined;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              tmp3 = JoinGuildSources;
-              if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-                tmp4 = closure_6;
-                channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  tmp5 = closure_0;
-                  tmp6 = closure_3;
-                  obj2 = closure_0(closure_3[12]);
-                  guildId = channel.getGuildId();
-                  result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-                }
-              }
-              tmp9 = closure_2;
-              tmp10 = closure_3;
-              obj3 = closure_2(closure_3[14]);
-              result1 = obj3.trackGuildJoinClicked(tmp);
-              tmp12 = closure_1;
-              obj4 = closure_1(closure_3[10]);
-              tmp13 = AnalyticEvents;
-              obj1 = { cta_type: null };
-              tmp14 = TextAreaCta;
-              obj1.cta_type = TextAreaCta.JOIN_GUILD;
-              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-              obj6 = closure_1(closure_3[15]);
-              obj8 = { source: null };
-              obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-              joinGuildResult = obj6.joinGuild(tmp, obj8);
-            }
-            return;
-          }
-        }
-        const stringResult2 = obj4.string(tmp(1119).t.RLch70);
-        cResult[14] = stringResult2;
-        const tmp20 = stringResult2;
-      } else {
-        class R {
-          constructor() {
-            tmp = closure_1;
-            if (null != closure_1) {
-              tmp17 = closure_5;
-              lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-              type = undefined;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              tmp3 = JoinGuildSources;
-              if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-                tmp4 = closure_6;
-                channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  tmp5 = closure_0;
-                  tmp6 = closure_3;
-                  obj2 = closure_0(closure_3[12]);
-                  guildId = channel.getGuildId();
-                  result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-                }
-              }
-              tmp9 = closure_2;
-              tmp10 = closure_3;
-              obj3 = closure_2(closure_3[14]);
-              result1 = obj3.trackGuildJoinClicked(tmp);
-              tmp12 = closure_1;
-              obj4 = closure_1(closure_3[10]);
-              tmp13 = AnalyticEvents;
-              obj1 = { cta_type: null };
-              tmp14 = TextAreaCta;
-              obj1.cta_type = TextAreaCta.JOIN_GUILD;
-              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-              obj6 = closure_1(closure_3[15]);
-              obj8 = { source: null };
-              obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-              joinGuildResult = obj6.joinGuild(tmp, obj8);
-            }
-            return;
-          }
-        }
-      }
-      if (cResult[15] !== tmp12) {
-        class R {
-          constructor() {
-            tmp = closure_1;
-            if (null != closure_1) {
-              tmp17 = closure_5;
-              lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-              type = undefined;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              tmp3 = JoinGuildSources;
-              if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-                tmp4 = closure_6;
-                channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  tmp5 = closure_0;
-                  tmp6 = closure_3;
-                  obj2 = closure_0(closure_3[12]);
-                  guildId = channel.getGuildId();
-                  result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-                }
-              }
-              tmp9 = closure_2;
-              tmp10 = closure_3;
-              obj3 = closure_2(closure_3[14]);
-              result1 = obj3.trackGuildJoinClicked(tmp);
-              tmp12 = closure_1;
-              obj4 = closure_1(closure_3[10]);
-              tmp13 = AnalyticEvents;
-              obj1 = { cta_type: null };
-              tmp14 = TextAreaCta;
-              obj1.cta_type = TextAreaCta.JOIN_GUILD;
-              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-              obj6 = closure_1(closure_3[15]);
-              obj8 = { source: null };
-              obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-              joinGuildResult = obj6.joinGuild(tmp, obj8);
-            }
-            return;
-          }
-        }
-        let obj2 = { type: "button-action", message: tmp16, buttonSecondaryText: tmp17, buttonSecondaryOnPress: tmp11, buttonPrimaryText: tmp20, buttonPrimaryOnPress: tmp12 };
-        const tmp24 = jsx(ChatInputGuardDefault, { type: "button-action", message: tmp16, buttonSecondaryText: tmp17, buttonSecondaryOnPress: tmp11, buttonPrimaryText: tmp20, buttonPrimaryOnPress: tmp12 });
-        cResult[15] = tmp12;
-        cResult[16] = tmp24;
-        const tmp22 = tmp24;
-      } else {
-        class R {
-          constructor() {
-            tmp = closure_1;
-            if (null != closure_1) {
-              tmp17 = closure_5;
-              lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-              type = undefined;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              tmp3 = JoinGuildSources;
-              if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-                tmp4 = closure_6;
-                channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  tmp5 = closure_0;
-                  tmp6 = closure_3;
-                  obj2 = closure_0(closure_3[12]);
-                  guildId = channel.getGuildId();
-                  result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-                }
-              }
-              tmp9 = closure_2;
-              tmp10 = closure_3;
-              obj3 = closure_2(closure_3[14]);
-              result1 = obj3.trackGuildJoinClicked(tmp);
-              tmp12 = closure_1;
-              obj4 = closure_1(closure_3[10]);
-              tmp13 = AnalyticEvents;
-              obj1 = { cta_type: null };
-              tmp14 = TextAreaCta;
-              obj1.cta_type = TextAreaCta.JOIN_GUILD;
-              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-              obj6 = closure_1(closure_3[15]);
-              obj8 = { source: null };
-              obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-              joinGuildResult = obj6.joinGuild(tmp, obj8);
-            }
-            return;
-          }
-        }
-      }
-      return tmp22;
-    } else {
-      class R {
-        constructor() {
-          tmp = closure_1;
-          if (null != closure_1) {
-            tmp17 = closure_5;
-            lurkingSourceForGuild = closure_5.getLurkingSourceForGuild(tmp);
-            type = undefined;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            tmp3 = JoinGuildSources;
-            if (type === JoinGuildSources.DIRECTORY_ENTRY) {
-              tmp4 = closure_6;
-              channel = closure_6.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                tmp5 = closure_0;
-                tmp6 = closure_3;
-                obj2 = closure_0(closure_3[12]);
-                guildId = channel.getGuildId();
-                result = obj2.setHubProgressActionComplete(guildId, closure_0(closure_3[13]).HubProgressStep.JOIN_GUILD);
-              }
-            }
-            tmp9 = closure_2;
-            tmp10 = closure_3;
-            obj3 = closure_2(closure_3[14]);
-            result1 = obj3.trackGuildJoinClicked(tmp);
-            tmp12 = closure_1;
-            obj4 = closure_1(closure_3[10]);
-            tmp13 = AnalyticEvents;
-            obj1 = { cta_type: null };
-            tmp14 = TextAreaCta;
-            obj1.cta_type = TextAreaCta.JOIN_GUILD;
-            trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-            obj6 = closure_1(closure_3[15]);
-            obj8 = { source: null };
-            obj8.source = tmp3.CHAT_INPUT_BLOCKER;
-            joinGuildResult = obj6.joinGuild(tmp, obj8);
-          }
-          return;
-        }
-      }
-    }
-  }
-  class G {
-    constructor() {
-      if (null != closure_1) {
-        tmp2 = closure_1;
-        tmp3 = closure_3;
-        obj = closure_1(closure_3[10]);
-        tmp4 = AnalyticEvents;
-        obj1 = { cta_type: null };
-        tmp5 = TextAreaCta;
-        obj1.cta_type = TextAreaCta.FOLLOW_ANNOUNCEMENT;
-        trackWithMetadataResult = obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
-        tmp7 = closure_0;
-        obj3 = closure_0(closure_3[11]);
-        tmp8 = channel;
-        result = obj3.showChannelFollowingActionSheet(channel.id, tmp);
-      }
-      return;
-    }
-  }
-  cResult[7] = channel.id;
-  cResult[8] = tmp4;
-  cResult[9] = G;
-}) : ((channel) => {
+export default noop.memo(function ChatInputGuardLurking(channel) {
   channel = channel.channel;
   let guildId = channel.getGuildId();
   const items = [LurkingStore];
@@ -620,7 +37,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   ({ isLurking, lurkingSource } = stateFromStoresObject);
   const items2 = [guildId, channel.id];
   const callback = noop.useCallback(() => {
-    const history = channel(dependencyMap[9]).getHistory();
+    const history = channel(dependencyMap[7]).getHistory();
     history.goBack();
   }, []);
   const items3 = [guildId];
@@ -659,25 +76,25 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   }
   if (type === constants2.DIRECTORY_ENTRY) {
     let obj2 = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-    const intl6 = tmp2(1119).intl;
-    obj2.message = intl6.string(tmp2(1119).t.G42YmG);
-    const intl7 = tmp2(1119).intl;
-    obj2.buttonSecondaryText = intl7.string(tmp2(1119).t.GlKb5i);
+    const intl6 = tmp2(1115).intl;
+    obj2.message = intl6.string(tmp2(1115).t.G42YmG);
+    const intl7 = tmp2(1115).intl;
+    obj2.buttonSecondaryText = intl7.string(tmp2(1115).t.GlKb5i);
     obj2.buttonSecondaryOnPress = callback;
-    const intl8 = tmp2(1119).intl;
-    obj2.buttonPrimaryText = intl8.string(tmp2(1119).t.RLch70);
+    const intl8 = tmp2(1115).intl;
+    obj2.buttonPrimaryText = intl8.string(tmp2(1115).t.RLch70);
     obj2.buttonPrimaryOnPress = callback2;
-    let tmp15Result = jsx(guildId(12633), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
-    const tmp14 = guildId(12633);
+    let tmp15Result = jsx(guildId(12731), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
+    const tmp14 = guildId(12731);
   } else {
     if (channel.isReadonlyAnnouncementsChannel) {
       let obj3 = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-      const intl3 = tmp2(1119).intl;
-      obj3.message = intl3.string(tmp2(1119).t.Hl0Mqh);
+      const intl3 = tmp2(1115).intl;
+      obj3.message = intl3.string(tmp2(1115).t.Hl0Mqh);
       let stringResult;
       if (isLurking) {
-        const intl4 = tmp2(1119).intl;
-        stringResult = intl4.string(tmp2(1119).t.VJlc0S);
+        const intl4 = tmp2(1115).intl;
+        stringResult = intl4.string(tmp2(1115).t.VJlc0S);
       }
       obj3.buttonSecondaryText = stringResult;
       let tmp10;
@@ -685,20 +102,20 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
         tmp10 = callback2;
       }
       obj3.buttonSecondaryOnPress = tmp10;
-      const intl5 = tmp2(1119).intl;
-      obj3.buttonPrimaryText = intl5.string(tmp2(1119).t["3aOv+h"]);
+      const intl5 = tmp2(1115).intl;
+      obj3.buttonPrimaryText = intl5.string(tmp2(1115).t["3aOv+h"]);
       obj3.buttonPrimaryOnPress = callback1;
       let obj4 = obj3;
     } else {
       obj4 = { type: "button-action", message: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-      const intl = tmp2(1119).intl;
-      obj4.message = intl.string(tmp2(1119).t.G42YmG);
-      const intl2 = tmp2(1119).intl;
-      obj4.buttonPrimaryText = intl2.string(tmp2(1119).t.RLch70);
+      const intl = tmp2(1115).intl;
+      obj4.message = intl.string(tmp2(1115).t.G42YmG);
+      const intl2 = tmp2(1115).intl;
+      obj4.buttonPrimaryText = intl2.string(tmp2(1115).t.RLch70);
       obj4.buttonPrimaryOnPress = callback2;
     }
-    tmp15Result = jsx(guildId(12633), obj4);
-    const tmp17 = guildId(12633);
+    tmp15Result = jsx(guildId(12731), obj4);
+    const tmp17 = guildId(12731);
   }
   return tmp15Result;
-}));
+});

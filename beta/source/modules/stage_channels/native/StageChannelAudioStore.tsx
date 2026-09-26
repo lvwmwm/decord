@@ -1,17 +1,17 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 17589
+// Function ID: 17590
 // Name: StageChannelAudioStore
-// Dependencies: [17, 9915, 2045, 4813, 17551, 9916, 504, 577, 2]
+// Dependencies: [17, 9937, 2041, 4811, 17590, 9938, 504, 573, 2]
 
-// Module 17550 (StageChannelAudioStore)
+// Module 17589 (StageChannelAudioStore)
 import _mod17 from "module_17" /* 17 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 9916 */;
-import DefaultAudioRouteExperimentDefault from "DefaultAudioRouteExperiment" /* 17551 */;
-import AudioRouteStore from "AudioRouteStore" /* 9915 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 9938 */;
+import DefaultAudioRouteExperimentDefault from "DefaultAudioRouteExperiment" /* 17590 */;
+import AudioRouteStore from "AudioRouteStore" /* 9937 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
 import size from "module_2" /* 2 */;
 
 function handleAudioRouteChanged() {
@@ -19,9 +19,9 @@ function handleAudioRouteChanged() {
     const currentRouteType = AudioRouteStore.getCurrentRouteType();
     let flag2 = currentRouteType !== VoiceCallTypes.RouteTypes.UNKNOWN;
     if (flag2) {
-      if (currentRouteType !== tmp3(9916).RouteTypes.SPEAKER) {
-        if (currentRouteType !== tmp3(9916).RouteTypes.BLUETOOTH) {
-          if (currentRouteType !== tmp3(9916).RouteTypes.WIRED) {
+      if (currentRouteType !== tmp3(9938).RouteTypes.SPEAKER) {
+        if (currentRouteType !== tmp3(9938).RouteTypes.BLUETOOTH) {
+          if (currentRouteType !== tmp3(9938).RouteTypes.WIRED) {
             const AudioRoutePicker = NativeModules.AudioRoutePicker;
             if (AudioRoutePicker != null) {
               AudioRoutePicker.toggleSpeaker(true);

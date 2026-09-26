@@ -1,19 +1,19 @@
-// Module ID: 5426
-// Function ID: 5427
+// Module ID: 5424
+// Function ID: 5425
 // Name: UploadTargets
-// Dependencies: [2045, 1078, 5412, 5384, 5379, 5427, 5429, 2]
+// Dependencies: [2041, 1074, 5410, 5382, 5377, 5425, 5427, 2]
 // Exports: getUploadTarget
 
-// Module 5426 (UploadTargets)
-import UploadUtils from "UploadUtils" /* 5379 */;
-import FileUtilsAll from "FileUtils" /* 5384 */;
-import UploadLimits from "UploadLimits" /* 5412 */;
-import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 5427 */;
-import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 5429 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+// Module 5424 (UploadTargets)
+import UploadUtils from "UploadUtils" /* 5377 */;
+import FileUtilsAll from "FileUtils" /* 5382 */;
+import UploadLimits from "UploadLimits" /* 5410 */;
+import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 5425 */;
+import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 5427 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, MAX_UPLOAD_COUNT: metroRequire } = Constants);
 class MessageAttachmentUploadTarget {
 }

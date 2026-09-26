@@ -1,12 +1,12 @@
-// Module ID: 5518
-// Function ID: 5519
+// Module ID: 5516
+// Function ID: 5517
 // Name: StickerMessagePreviewStore
-// Dependencies: [5139, 504, 577, 2]
+// Dependencies: [5137, 504, 573, 2]
 
-// Module 5518 (StickerMessagePreviewStore)
+// Module 5516 (StickerMessagePreviewStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DraftStore from "DraftStore" /* 5139 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DraftStore from "DraftStore" /* 5137 */;
 import size from "module_2" /* 2 */;
 
 const DraftType = DraftStore.DraftType;
@@ -15,8 +15,8 @@ let closure_2 = {};
 const Store = initializeDefault.Store;
 class StickerMessagePreviewStore extends Store {
 }
-StickerMessagePreviewStore.prototype["getStickerPreview"] = function getStickerPreview(channelId, draftType) {
-  return draftType === DraftType.FirstThreadMessage ? closure_2 : closure_1[channelId];
+StickerMessagePreviewStore.prototype["getStickerPreview"] = function getStickerPreview(c1, ChannelMessage) {
+  return ChannelMessage === DraftType.FirstThreadMessage ? closure_2 : closure_1[c1];
 };
 StickerMessagePreviewStore.displayName = "StickerMessagePreviewStore";
 const stickerMessagePreviewStore = new StickerMessagePreviewStore(DispatcherDefault, {

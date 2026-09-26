@@ -1,11 +1,11 @@
-// Module ID: 8036
-// Function ID: 8037
+// Module ID: 8031
+// Function ID: 8032
 // Name: RequestGatewaySocket
-// Dependencies: [5, 1078, 7751, 1245, 2]
+// Dependencies: [5, 1074, 7746, 1241, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 8036 (RequestGatewaySocket)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+// Module 8031 (RequestGatewaySocket)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -52,7 +52,7 @@ let closure_10 = async function _withRequest(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -107,7 +107,7 @@ let closure_10 = async function _withRequest(arg0, value) {
     }
   }
 };
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 let closure_5 = ["COLD_START"];
 let c6 = true;
 const map = new Map();
@@ -139,7 +139,7 @@ export const startBridgeTo = function startBridgeTo(arg0) {
     num = 0;
   }
   let result = map.set(combined, num + 1);
-  combined(7751).requestSafeIdleCallback(() => {
+  combined(7746).requestSafeIdleCallback(() => {
     if (map.has(combined)) {
       const obj3 = { bridge_token: tmp, cleared_after: null };
       const _performance = performance;

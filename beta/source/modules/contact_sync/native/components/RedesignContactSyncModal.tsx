@@ -1,27 +1,26 @@
-// Module ID: 12868
-// Function ID: 12869
+// Module ID: 12967
+// Function ID: 12968
 // Name: RedesignContactSyncModal
-// Dependencies: [5, 32, 19, 17, 1376, 1983, 12860, 12861, 1078, 4999, 21, 4790, 580, 5929, 12859, 558, 568, 1119, 12863, 4786, 12869, 1616, 1488, 504, 12867, 1368, 1098, 1245, 4757, 12870, 1984, 5389, 5375, 12871, 12872, 12875, 12878, 12879, 12880, 12881, 12883, 1253, 5871, 12885, 12886, 7278, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1979, 12959, 12960, 1074, 4997, 21, 4788, 576, 5931, 12958, 4784, 1115, 12962, 12968, 1612, 1484, 504, 12966, 1364, 1094, 1241, 4755, 12969, 1980, 5387, 5373, 12970, 12971, 12974, 12977, 12978, 12979, 12980, 12982, 1249, 5873, 12984, 12985, 7277, 2]
+// Exports: ContactSyncOnboardingModal
 
-// Module 12868 (RedesignContactSyncModal)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12859 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12869 */;
-import ContactSyncBackToLandingDefault from "ContactSyncBackToLanding" /* 12885 */;
+// Module 12967 (RedesignContactSyncModal)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12958 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12962 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12968 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1376 */;
-import AppStateStore from "AppStateStore" /* 1983 */;
+import UserStore from "UserStore" /* 1372 */;
+import AppStateStore from "AppStateStore" /* 1979 */;
 
 require = fn;
 function headerTitle() {
@@ -29,6 +28,24 @@ function headerTitle() {
 }
 function headerLeft() {
   return null;
+}
+function OnboardingTrailingLanding() {
+  const obj = { style: closure_19().landingTrailing, variant: "text-sm/medium", color: "text-muted", children: null };
+  const intl = util.intl;
+  const obj2 = { learnMoreUrl: null };
+  const tmp = closure_19();
+  obj2.learnMoreUrl = ContactSyncUtils.getOpenLearnMoreUrl();
+  obj.children = intl.format(util.t["84S6+Z"], obj2);
+  return value2(Text_Text.Text, obj);
+}
+function OnboardingTrailing(isOnboarding) {
+  if (isOnboarding.isOnboarding) {
+    let tmp3Result = tmp3(OnboardingTrailingLanding, {});
+  } else {
+    const obj = { discoverabilityEnabled: tmp, onValueChanged: tmp2 };
+    tmp3Result = tmp3(RedesignContactSyncDiscoverabilityFooterDefault, obj);
+  }
+  return tmp3Result;
 }
 function ContactSyncLandingScreen(openSettingsSheet) {
   openSettingsSheet = openSettingsSheet.openSettingsSheet;
@@ -38,17 +55,17 @@ function ContactSyncLandingScreen(openSettingsSheet) {
   let currentUser;
   let onNext;
   let stateFromStores1;
-  const bottom = setLoading(onComplete[21])().bottom;
+  const bottom = setLoading(onComplete[19])().bottom;
   const tmp = closure_19();
-  const navigation = openSettingsSheet(onComplete[22]).useNavigation();
-  let obj = openSettingsSheet(onComplete[22]);
+  const navigation = openSettingsSheet(onComplete[20]).useNavigation();
+  let obj = openSettingsSheet(onComplete[20]);
   const items = [currentUser];
-  const stateFromStores = openSettingsSheet(onComplete[23]).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const stateFromStores = openSettingsSheet(onComplete[21]).useStateFromStores(items, () => currentUser.getCurrentUser());
   let phone;
   if (stateFromStores != null) {
     phone = stateFromStores.phone;
   }
-  let obj2 = openSettingsSheet(onComplete[23]);
+  let obj2 = openSettingsSheet(onComplete[21]);
   ({ permissionState, error } = closure_10());
   const tmp9 = stateFromStores(phone.useState(true), 2);
   discoverabilityEnabled = tmp9[0];
@@ -72,7 +89,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -102,7 +119,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
               obj5.phone = tmp15;
               dependencyMap = 2;
               c3 = 1;
-              const obj7 = { value: tmp22(12867).updateDiscoverability(obj5), done: false };
+              const obj7 = { value: tmp22(12966).updateDiscoverability(obj5), done: false };
               return obj7;
             }
           } else if (1 === tmp5) {
@@ -117,7 +134,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
               const _setTimeout = setTimeout;
               const timerId = setTimeout(() => closure_1_1(false), 2000);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -129,7 +146,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           }
           dependencyMap = 1;
           c3 = 1;
-          const obj9 = { value: tmp2(12859).startContactSync(closure_129_3), done: false };
+          const obj9 = { value: tmp2(12958).startContactSync(closure_129_3), done: false };
           return obj9;
         } catch (tmp22) {
           c3 = tmp;
@@ -140,16 +157,16 @@ function ContactSyncLandingScreen(openSettingsSheet) {
   }, items1);
   const tmp8 = closure_10();
   const items2 = [onNext];
-  stateFromStores1 = openSettingsSheet(onComplete[23]).useStateFromStores(items2, () => callback.getState(), []);
+  stateFromStores1 = openSettingsSheet(onComplete[21]).useStateFromStores(items2, () => callback.getState(), []);
   const items3 = [stateFromStores1];
   const effect = obj3.useEffect(() => {
     let isAndroidResult = PlatformUtils.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = stateFromStores1 === tmp(1098).AppStates.ACTIVE;
+      isAndroidResult = stateFromStores1 === tmp(1094).AppStates.ACTIVE;
     }
     if (isAndroidResult) {
-      const result = tmp(12859).refreshContactSyncPermissionStatus();
-      const tmpResult = tmp(12859);
+      const result = tmp(12958).refreshContactSyncPermissionStatus();
+      const tmpResult = tmp(12958);
     }
   }, items3);
   const items4 = [openSettingsSheet];
@@ -157,7 +174,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
     if (openSettingsSheet) {
       const obj2 = { type: "Contact Sync", location: { page: "Contact Sync" } };
       AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, obj2);
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12870, dependencyMap.paths), "Contact Sync Info Settings");
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12969, dependencyMap.paths), "Contact Sync Info Settings");
     }
   }, items4);
   const items5 = [onNext, onComplete];
@@ -172,7 +189,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -188,7 +205,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           } else {
             v1 = 1;
             dependencyMap = 1;
-            const obj5 = { value: v1(5389).requestPermission(constants.CONTACTS), done: false };
+            const obj5 = { value: v1(5387).requestPermission(constants.CONTACTS), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -203,8 +220,8 @@ function ContactSyncLandingScreen(openSettingsSheet) {
             closure_128_8();
           } else {
             const obj7 = { onComplete: closure_128_2, skip: true };
-            const result = tmp4(12859).closeContactSyncModal(obj7);
-            const obj = tmp4(12859);
+            const result = tmp4(12958).closeContactSyncModal(obj7);
+            const obj = tmp4(12958);
           }
           dependencyMap = 3;
         }
@@ -214,7 +231,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
       }
     }
   }), items5);
-  const items6 = [closure_16(setLoading(onComplete[32]), { absolute: true }), ];
+  const items6 = [closure_16(setLoading(onComplete[30]), { absolute: true }), ];
   const items7 = [tmp.container, ];
   let num = 16;
   if (bottom > 0) {
@@ -225,7 +242,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
   if (!tmp12) {
     if (permissionState === constants.AUTHORIZED) {
       let obj5 = { onNext, error, loading, discoverabilityEnabled, setDiscoverabilityEnabled: tmp11 };
-      let tmp21Result = tmp21(tmp2(tmp3[35]), obj5);
+      let tmp21Result = tmp21(tmp2(tmp3[33]), obj5);
     }
     let obj6 = { children: null };
     obj4.children = tmp21Result;
@@ -237,333 +254,23 @@ function ContactSyncLandingScreen(openSettingsSheet) {
   tmp19 = closure_18;
   tmp20 = closure_17;
   tmp22 = discoverabilityEnabled;
-  const tmp4Result = openSettingsSheet(onComplete[23]);
-  const intl = tmp4(tmp3[17]).intl;
-  obj7.title = intl.string(openSettingsSheet(onComplete[17]).t.DjcfHu);
-  const intl2 = tmp4(tmp3[17]).intl;
-  obj7.subtitle = intl2.string(openSettingsSheet(onComplete[17]).t["kq+Cd3"]);
-  obj7.trailing = closure_16(closure_23, { isOnboarding: tmp12, discoverabilityEnabled, setDiscoverabilityEnabled: tmp9[1] });
-  obj7.header = closure_16(setLoading(onComplete[34]), {});
+  const tmp4Result = openSettingsSheet(onComplete[21]);
+  const intl = tmp4(tmp3[16]).intl;
+  obj7.title = intl.string(openSettingsSheet(onComplete[16]).t.DjcfHu);
+  const intl2 = tmp4(tmp3[16]).intl;
+  obj7.subtitle = intl2.string(openSettingsSheet(onComplete[16]).t["kq+Cd3"]);
+  obj7.trailing = closure_16(OnboardingTrailing, { isOnboarding: tmp12, discoverabilityEnabled, setDiscoverabilityEnabled: tmp9[1] });
+  obj7.header = closure_16(setLoading(onComplete[32]), {});
   obj7.loading = loading;
   obj7.showSkip = tmp12;
   obj7.onAllow = callback1;
   obj7.onDontAllow = function onDontAllow() {
     const result = ContactSyncModalActionCreators.closeContactSyncModal({ onComplete, skip: true });
   };
-  tmp21Result = tmp21(setLoading(onComplete[33]), obj7);
+  tmp21Result = tmp21(setLoading(onComplete[31]), obj7);
 }
-function getScreens(isOnboarding) {
-  ({ loading: require, setLoading: importDefault, openSettingsSheet: dependencyMap, onComplete: asyncGeneratorStep, navigateToLandingPage: _slicedToArray } = isOnboarding);
-  let obj = { ignoreKeyboard: true, impressionName: discord_common_AnalyticsUtils.ImpressionNames.CONTACT_SYNC_START, impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW }, fullscreen: true, headerTitle, headerLeft: null, render: null };
-  if (isOnboarding.isOnboarding) {
-    let headerCloseButton = headerLeft;
-  } else {
-    headerCloseButton = tmp2(5871).getHeaderCloseButton(() => ContactSyncModalActionCreators.closeContactSyncModal({ onComplete, skip: true }));
-    const tmp2Result = tmp2(5871);
-  }
-  const obj3 = { [closure_13.WELCOME]: obj };
-  obj.headerLeft = headerCloseButton;
-  obj.render = function render() {
-    return value2(ContactSyncLandingScreen, { onComplete, openSettingsSheet, loading, setLoading });
-  };
-  const obj4 = { ignoreKeyboard: true, impressionName: discord_common_AnalyticsUtils.ImpressionNames.CONTACT_SYNC_INPUT_NAME, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
-  const obj2 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj4.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj4.headerTitle = headerTitle;
-  obj4.headerLeft = headerLeft;
-  obj4.render = function render() {
-    return value2(closure_25, { navigateToLandingPage });
-  };
-  obj3[constants.NAME_INPUT] = obj4;
-  const obj6 = { ignoreKeyboard: true, impressionName: discord_common_AnalyticsUtils.ImpressionNames.CONTACT_SYNC_SUGGESTIONS, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
-  const obj5 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj6.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj6.headerTitle = headerTitle;
-  obj6.headerLeft = headerLeft;
-  obj6.render = function render() {
-    return value2(closure_26, { onComplete });
-  };
-  obj3[constants.SUGGESTIONS] = obj6;
-  const obj8 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_ADD_PHONE, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
-  const obj7 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj8.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj8.headerTitle = headerTitle;
-  obj8.headerLeft = function headerLeft(arg0) {
-    const obj = {};
-    const merged = Object.assign(arg0);
-    obj.navigateToLandingPage = navigateToLandingPage;
-    return value2(ContactSyncBackToLandingDefault, obj);
-  };
-  obj8.render = function render() {
-    return closure_1_16(loading(openSettingsSheet[44]).AddPhoneScreen, {});
-  };
-  obj3[constants.ADD_PHONE] = obj8;
-  const obj10 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFY_PHONE, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
-  const obj9 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj10.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj10.headerTitle = headerTitle;
-  obj10.headerLeft = function headerLeft(arg0) {
-    const obj = {};
-    const merged = Object.assign(arg0);
-    obj.navigateToLandingPage = navigateToLandingPage;
-    return value2(ContactSyncBackToLandingDefault, obj);
-  };
-  obj10.render = function render() {
-    return closure_1_16(loading(openSettingsSheet[44]).VerifyPhoneScreen, {});
-  };
-  obj3[constants.VERIFY_PHONE] = obj10;
-  const obj12 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFY_PASSWORD, impressionProperties: null, fullscreen: true, headerLeft: null, headerTitle: null, render: null };
-  const obj11 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj12.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
-  obj12.headerLeft = function headerLeft(arg0) {
-    const obj = {};
-    const merged = Object.assign(arg0);
-    obj.navigateToLandingPage = navigateToLandingPage;
-    return value2(ContactSyncBackToLandingDefault, obj);
-  };
-  obj12.headerTitle = headerTitle;
-  obj12.render = function render() {
-    return closure_1_16(loading(openSettingsSheet[44]).VerifyPasswordScreen, {});
-  };
-  obj3[constants.VERIFY_PASSWORD] = obj12;
-  return obj3;
-}
-const View = fn(17).View;
-const ContactSyncModalStore = fn(12860);
-({ setName: closure_9, useContactSyncModalStore: c10, useIsOnboarding: closure_11 } = ContactSyncModalStore);
-const ContactSyncConstants = fn(12861);
-({ ContactPermissions: closure_12, ContactSyncScenes: map1 } = ContactSyncConstants);
-const AnalyticEvents = fn(1078).AnalyticEvents;
-const NativePermissionTypes = fn(4999).NativePermissionTypes;
-const jsxProd = fn(21);
-({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 }, landingTrailing: { textAlign: "center" } };
-let closure_19 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  const tmp4 = closure_19();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const obj2 = { learnMoreUrl: tmp(12863).getOpenLearnMoreUrl() };
-    const formatResult = intl.format(tmp(1119).t["84S6+Z"], obj2);
-    cResult[0] = formatResult;
-    let first = formatResult;
-    const tmpResult = tmp(12863);
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.landingTrailing) {
-    const obj3 = { style: tmp4.landingTrailing, variant: "text-sm/medium", color: "text-muted", children: first };
-    const tmp9 = value2(tmp(4786).Text, obj3);
-    cResult[1] = tmp4.landingTrailing;
-    cResult[2] = tmp9;
-    let tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[2];
-  }
-  return tmp7;
-}) : (() => {
-  const obj = { style: closure_19().landingTrailing, variant: "text-sm/medium", color: "text-muted", children: null };
-  const intl = util.intl;
-  const obj2 = { learnMoreUrl: null };
-  const tmp = closure_19();
-  obj2.learnMoreUrl = ContactSyncUtils.getOpenLearnMoreUrl();
-  obj.children = intl.format(util.t["84S6+Z"], obj2);
-  return value2(Text_Text.Text, obj);
-});
-ReactCompilerGating = fn(558);
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(4);
-  ({ isOnboarding, discoverabilityEnabled, setDiscoverabilityEnabled } = arg0);
-  if (cResult[0] === discoverabilityEnabled) {
-    if (cResult[1] === isOnboarding) {
-      if (cResult[2] === setDiscoverabilityEnabled) {
-        return cResult[3];
-      }
-    }
-  }
-  if (isOnboarding) {
-    let tmp3Result = tmp3(closure_22, {});
-  } else {
-    const obj2 = { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled };
-    tmp3Result = tmp3(RedesignContactSyncDiscoverabilityFooterDefault, obj2);
-  }
-  cResult[0] = discoverabilityEnabled;
-  cResult[1] = isOnboarding;
-  cResult[2] = setDiscoverabilityEnabled;
-  cResult[3] = tmp3Result;
-}) : ((isOnboarding) => {
-  if (isOnboarding.isOnboarding) {
-    let tmp3Result = tmp3(closure_22, {});
-  } else {
-    const obj = { discoverabilityEnabled: tmp, onValueChanged: tmp2 };
-    tmp3Result = tmp3(RedesignContactSyncDiscoverabilityFooterDefault, obj);
-  }
-  return tmp3Result;
-});
-ReactCompilerGating = fn(558);
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLandingPage) => {
-  const cResult = require("c").c(16);
-  const tmp3 = closure_19();
-  let obj = require("c");
-  const navigation = require("useNavigation").useNavigation();
-  _require = navigation;
-  [loading, dependencyMap] = noop.useState(false);
-  const obj2 = require("useNavigation");
-  let obj3 = noop;
-  ({ name, error, isNameFromContactBook } = closure_10());
-  loading(12878)(navigation, navigateToLandingPage.navigateToLandingPage);
-  if (cResult[0] !== navigation) {
-    _require = asyncGeneratorStep(async (arg0, value) => {
-      if (c3 === 2) {
-        c3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === dependencyMap) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_1 = tmp2;
-              dependencyMap(true);
-              closure_2_9(options);
-              dependencyMap = 1;
-              c3 = 1;
-              const obj5 = { value: options(12859).startContactSync(options), done: false };
-              return obj5;
-            }
-          } else if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            const _setTimeout = setTimeout;
-            const timerId = setTimeout(() => dependencyMap(false), 2000);
-            c3 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } catch (tmp17) {
-          c3 = tmp;
-          throw tmp17;
-        }
-      }
-    });
-    const fn = function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    };
-    cResult[0] = navigation;
-    cResult[1] = fn;
-    let tmp10 = fn;
-  } else {
-    tmp10 = cResult[1];
-  }
-  asyncGeneratorStep = tmp10;
-  if (cResult[2] === loading) {
-    if (cResult[3] === navigation) {
-      if (cResult[4] === tmp10) {
-        let tmp12 = cResult[5];
-        let tmp13 = cResult[6];
-      }
-      const layoutEffect = obj3.useLayoutEffect(tmp12, tmp13);
-      let str = name;
-      if (name == null) {
-        str = "";
-      }
-      let tmp16 = null != name;
-      if (tmp16) {
-        tmp16 = "" !== name;
-      }
-      if (tmp16) {
-        tmp16 = isNameFromContactBook;
-      }
-      if (cResult[7] === error) {
-        if (cResult[8] === loading) {
-          if (cResult[9] === tmp10) {
-            if (cResult[10] === str) {
-              if (cResult[11] === tmp16) {
-                let tmp17 = cResult[12];
-              }
-              if (cResult[13] === tmp3.container) {
-                if (cResult[14] === tmp17) {
-                  let tmp20 = cResult[15];
-                }
-                return tmp20;
-              }
-              let obj4 = { style: tmp3.container, children: tmp17 };
-              const tmp23 = closure_16(View, obj4);
-              cResult[13] = tmp3.container;
-              cResult[14] = tmp17;
-              cResult[15] = tmp23;
-              tmp20 = tmp23;
-            }
-          }
-        }
-      }
-      let obj5 = { onNext: tmp10, error, loading, initialName: str, prefilledFromContactBook: tmp16 };
-      const tmp19 = closure_16(loading(12880), obj5);
-      cResult[7] = error;
-      cResult[8] = loading;
-      cResult[9] = tmp10;
-      cResult[10] = str;
-      cResult[11] = tmp16;
-      cResult[12] = tmp19;
-      tmp17 = tmp19;
-    }
-  }
-  class A {
-    constructor() {
-      obj = {
-        headerRight() {
-              return closure_2_16(first(closure_2[37]), {
-                insideNavigator: true,
-                disabled,
-                onPress() {
-                  closure_1_3("");
-                }
-              });
-            }
-      };
-      setOptionsResult = closure_0.setOptions(obj);
-      return;
-    }
-  }
-  const items = [loading, tmp10, navigation];
-  cResult[2] = loading;
-  cResult[3] = navigation;
-  cResult[4] = tmp10;
-  cResult[5] = A;
-  cResult[6] = items;
-  tmp13 = items;
-  tmp12 = A;
-}) : ((navigateToLandingPage) => {
-  let _require;
+function ContactSyncNameInputScreen(navigateToLandingPage) {
+  _require = undefined;
   loading = undefined;
   dependencyMap = undefined;
   let onNext;
@@ -573,7 +280,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
   const tmp5 = closure_10();
   const name = tmp5.name;
   ({ isNameFromContactBook, error } = tmp5);
-  loading(12878)(navigation, navigateToLandingPage.navigateToLandingPage);
+  loading(12977)(navigation, navigateToLandingPage.navigateToLandingPage);
   _require = onNext(function*(arg0, value) {
     if (c3 === 2) {
       c3 = 3;
@@ -585,7 +292,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -601,10 +308,10 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
           } else {
             closure_1 = tmp2;
             dependencyMap(true);
-            closure_2_9(options);
+            React7(options);
             dependencyMap = 1;
             c3 = 1;
-            const obj5 = { value: options(12859).startContactSync(options), done: false };
+            const obj5 = { value: options(12958).startContactSync(options), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -618,7 +325,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => dependencyMap(false), 2000);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         c3 = tmp;
@@ -641,7 +348,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
   const layoutEffect = noop.useLayoutEffect(() => {
     options.setOptions({
       headerRight() {
-        return closure_2_16(first(closure_2[37]), {
+        return closure_2_16(first(closure_2[35]), {
           insideNavigator: true,
           disabled,
           onPress() {
@@ -668,103 +375,17 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToLand
     tmp12 = isNameFromContactBook;
   }
   obj3.prefilledFromContactBook = tmp12;
-  obj2.children = closure_16(loading(12880), obj3);
+  obj2.children = closure_16(loading(12979), obj3);
   return closure_16(tmp10, obj2);
-});
-ReactCompilerGating = fn(558);
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
-  let obj = suggestions;
-  const cResult = onComplete(suggestions[16]).c(15);
-  onComplete = onComplete.onComplete;
-  const tmp2 = closure_19();
-  const obj2 = onComplete(suggestions[16]);
-  const navigation = onComplete(suggestions[22]).useNavigation();
-  suggestions = closure_10().suggestions;
-  const obj3 = onComplete(suggestions[22]);
-  onComplete(suggestions[36]).useBackHandlerMinimizeApp();
-  if (cResult[0] === onComplete) {
-    if (cResult[1] === suggestions.length) {
-      let tmp5 = cResult[2];
-    }
-    closure_3 = tmp5;
-    if (cResult[3] === tmp5) {
-      if (cResult[4] === navigation) {
-        let tmp6 = cResult[5];
-      }
-      if (cResult[6] === tmp5) {
-        if (cResult[7] === navigation) {
-          if (cResult[8] === onComplete) {
-            if (cResult[9] === suggestions.length) {
-              let tmp7 = cResult[10];
-            }
-            const layoutEffect = noop.useLayoutEffect(tmp6, tmp7);
-            if (cResult[11] === onComplete) {
-              if (cResult[12] === tmp2) {
-                if (cResult[13] === suggestions) {
-                  return cResult[14];
-                }
-              }
-            }
-            if (suggestions.length > 0) {
-              obj = {
-                friendSuggestions: suggestions,
-                onSubmit(arg0) {
-                              return ContactSyncModalActionCreators.bulkAddFriendSuggestions(arg0, onComplete);
-                            }
-              };
-              let tmp13 = closure_16(navigation(obj[39]), obj);
-              const tmp16 = navigation(obj[39]);
-            } else {
-              const obj5 = { style: tmp2.container, children: closure_16(navigation(obj[40]), {}) };
-              tmp13 = closure_16(View, obj5);
-            }
-            cResult[11] = onComplete;
-            cResult[12] = tmp2;
-            cResult[13] = suggestions;
-            cResult[14] = tmp13;
-          }
-        }
-      }
-      const items = [tmp5, navigation, onComplete, suggestions.length];
-      cResult[6] = tmp5;
-      cResult[7] = navigation;
-      cResult[8] = onComplete;
-      cResult[9] = suggestions.length;
-      cResult[10] = items;
-      tmp7 = items;
-    }
-    const fn2 = function f() {
-      navigation.setOptions({
-        headerRight() {
-          return closure_2_16(navigation(suggestions[37]), {
-            insideNavigator: true,
-            onPress() {
-              return closure_1_3(true, 0);
-            }
-          });
-        }
-      });
-    };
-    cResult[3] = tmp5;
-    cResult[4] = navigation;
-    cResult[5] = fn2;
-    tmp6 = fn2;
-  }
-  const fn = function t(skip, friendsAdded) {
-    const result = ContactSyncModalActionCreators.closeContactSyncModal({ onComplete, skip, friendsFound: suggestions.length, friendsAdded });
-  };
-  cResult[0] = onComplete;
-  cResult[1] = suggestions.length;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : ((onComplete) => {
+}
+function ContactSyncSuggestionScreen(onComplete) {
   onComplete = onComplete.onComplete;
   let suggestions;
   const tmp = closure_19();
-  const navigation = onComplete(suggestions[22]).useNavigation();
+  const navigation = onComplete(suggestions[20]).useNavigation();
   suggestions = closure_10().suggestions;
-  const obj = onComplete(suggestions[22]);
-  onComplete(suggestions[36]).useBackHandlerMinimizeApp();
+  const obj = onComplete(suggestions[20]);
+  onComplete(suggestions[34]).useBackHandlerMinimizeApp();
   const items = [onComplete, suggestions.length];
   const callback = noop.useCallback((skip, friendsAdded) => {
     const result = ContactSyncModalActionCreators.closeContactSyncModal({ onComplete, skip, friendsFound: suggestions.length, friendsAdded });
@@ -773,7 +394,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
   const layoutEffect = noop.useLayoutEffect(() => {
     navigation.setOptions({
       headerRight() {
-        return closure_2_16(navigation(suggestions[37]), {
+        return closure_2_16(navigation(suggestions[35]), {
           insideNavigator: true,
           onPress() {
             return closure_1_3(true, 0);
@@ -789,204 +410,172 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
           return ContactSyncModalActionCreators.bulkAddFriendSuggestions(arg0, onComplete);
         }
     };
-    let tmp10 = closure_16(navigation(tmp2[39]), obj3);
+    let tmp10 = closure_16(navigation(tmp2[37]), obj3);
   } else {
-    const obj4 = { style: tmp.container, children: closure_16(navigation(tmp2[40]), {}) };
+    const obj4 = { style: tmp.container, children: closure_16(navigation(tmp2[38]), {}) };
     tmp10 = closure_16(View, obj4);
   }
   return tmp10;
-});
-fn(558);
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 };
-ReactCompilerGating = fn(558);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = require("c").c(20);
-  ({ onComplete, initialRoutes, openSettingsSheet } = arg0);
-  const tmp4 = _slicedToArray(noop.useState(false), 2);
-  const first = tmp4[0];
-  const tmp6 = closure_11();
-  _require = tmp6;
-  if (cResult[0] !== tmp6) {
-    const fn = function s() {
-      if (closure_0) {
+}
+class ContactSyncModal {
+  constructor(arg0) {
+    onComplete = global.onComplete;
+    ({ initialRoutes, openSettingsSheet } = global);
+    closure_2 = undefined;
+    closure_3 = undefined;
+    closure_4 = undefined;
+    closure_5 = undefined;
+    tmp = closure_4(closure_5.useState(false), 2);
+    first = tmp[0];
+    closure_2 = first;
+    closure_3 = tmp[1];
+    tmp3 = useIsOnboarding();
+    closure_4 = tmp3;
+    items = [];
+    items[0] = tmp3;
+    effect = closure_5.useEffect(() => {
+      if (closure_4) {
         const result = ContactSyncModalActionCreators.refreshContactSyncPermissionStatus();
       }
-    };
-    const items = [tmp6];
-    cResult[0] = tmp6;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp8 = items;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-    tmp8 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp7, tmp8);
-  if (cResult[3] !== onComplete) {
-    let fn2 = onComplete;
-    if (onComplete == null) {
-      fn2 = () => {
+    }, items);
+    items1 = [];
+    items1[0] = onComplete;
+    memo = closure_5.useMemo(() => {
+      let fn = onComplete;
+      if (onComplete == null) {
+        fn = () => {
 
-      };
-    }
-    cResult[3] = onComplete;
-    cResult[4] = fn2;
-    let tmp10 = fn2;
-  } else {
-    tmp10 = cResult[4];
-  }
-  closure_1 = tmp10;
-  if (cResult[5] === tmp6) {
-    if (cResult[6] === first) {
-      if (cResult[7] === tmp10) {
-        if (cResult[8] === openSettingsSheet) {
-          let tmp12 = cResult[9];
-        }
-        if (cResult[10] === tmp6) {
-          if (cResult[11] === tmp10) {
-            let tmp14 = cResult[12];
-            let tmp15 = cResult[13];
-          }
-          const effect1 = obj2.useEffect(tmp14, tmp15);
-          class L {
-            constructor() {
-              return () => {
-                if (!closure_1_0) {
-                  const obj2 = { onComplete };
-                  const result = closure_0(dependencyMap[14]).closeContactSyncModal(obj2);
-                  const obj = closure_0(dependencyMap[14]);
-                }
-              };
-            }
-          }
-          const _Symbol = Symbol;
-          if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-            const string = tmp(1119).intl.string;
-            class L {
-              constructor() {
-                return () => {
-                  if (!closure_1_0) {
-                    const obj2 = { onComplete };
-                    const result = closure_0(dependencyMap[14]).closeContactSyncModal(obj2);
-                    const obj = closure_0(dependencyMap[14]);
-                  }
-                };
-              }
-            }
-            cResult[16] = tmp20;
-            let tmp19 = tmp20;
-          } else {
-            tmp19 = cResult[16];
-          }
-          if (cResult[17] === tmp12) {
-            if (cResult[18] === tmp17) {
-              let tmp21 = cResult[19];
-            }
-            return tmp21;
-          }
-          const obj3 = { screens: tmp12, initialRouteStack: tmp17, headerBackTitle: tmp19 };
-          const tmp23 = closure_16(tmp(7278).Navigator, obj3);
-          cResult[17] = tmp12;
-          cResult[18] = tmp17;
-          cResult[19] = tmp23;
-          tmp21 = tmp23;
-        }
-        class L {
-          constructor() {
-            return () => {
-              if (!closure_1_0) {
-                const obj2 = { onComplete };
-                const result = closure_0(dependencyMap[14]).closeContactSyncModal(obj2);
-                const obj = closure_0(dependencyMap[14]);
-              }
-            };
-          }
-        }
-        const items1 = [tmp6, tmp10];
-        cResult[10] = tmp6;
-        cResult[11] = tmp10;
-        cResult[12] = L;
-        cResult[13] = items1;
-        tmp15 = items1;
-        tmp14 = L;
+        };
       }
-    }
-  }
-  const tmp13 = getScreens({ isOnboarding: tmp6, loading: first, setLoading: tmp4[1], openSettingsSheet, onComplete: tmp10 });
-  cResult[5] = tmp6;
-  cResult[6] = first;
-  cResult[7] = tmp10;
-  cResult[8] = openSettingsSheet;
-  cResult[9] = tmp13;
-  tmp12 = tmp13;
-}) : ((onComplete) => {
-  onComplete = onComplete.onComplete;
-  ({ initialRoutes, openSettingsSheet } = onComplete);
-  loading = undefined;
-  setLoading = undefined;
-  let memo;
-  [loading, setLoading] = memo.useState(false);
-  const tmp3 = closure_11();
-  _slicedToArray = tmp3;
-  const items = [tmp3];
-  const effect = memo.useEffect(() => {
-    if (closure_4) {
-      const result = ContactSyncModalActionCreators.refreshContactSyncPermissionStatus();
-    }
-  }, items);
-  const items1 = [onComplete];
-  memo = memo.useMemo(() => {
-    let fn = onComplete;
-    if (onComplete == null) {
-      fn = () => {
-
+      return fn;
+    }, items1);
+    closure_5 = memo;
+    items2 = [, , , ];
+    items2[0] = tmp3;
+    items2[1] = first;
+    items2[2] = openSettingsSheet;
+    items2[3] = memo;
+    items3 = [, ];
+    items3[0] = tmp3;
+    items3[1] = memo;
+    memo1 = closure_5.useMemo(() => {
+      let obj = { isOnboarding, loading, setLoading, openSettingsSheet, onComplete: memo };
+      ({ loading: onComplete, setLoading: openSettingsSheet, openSettingsSheet: first, onComplete: closure_3, navigateToLandingPage: closure_4 } = obj);
+      const obj2 = { ignoreKeyboard: true, impressionName: discord_common_AnalyticsUtils.ImpressionNames.CONTACT_SYNC_START, impressionProperties: { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW }, fullscreen: true, headerTitle, headerLeft: null, render: null };
+      if (obj.isOnboarding) {
+        let headerCloseButton = headerLeft;
+      } else {
+        headerCloseButton = tmp2(5873).getHeaderCloseButton(() => onComplete(first[14]).closeContactSyncModal({ onComplete, skip: true }));
+        const tmp2Result = tmp2(5873);
+      }
+      const obj4 = { [closure_2_13.WELCOME]: obj2 };
+      obj2.headerLeft = headerCloseButton;
+      obj2.render = function render() {
+        return closure_2_16(ContactSyncLandingScreen, { onComplete, openSettingsSheet, loading, setLoading });
       };
+      const obj5 = { ignoreKeyboard: true, impressionName: discord_common_AnalyticsUtils.ImpressionNames.CONTACT_SYNC_INPUT_NAME, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
+      const obj3 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj5.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj5.headerTitle = headerTitle;
+      obj5.headerLeft = headerLeft;
+      obj5.render = function render() {
+        return closure_2_16(ContactSyncNameInputScreen, { navigateToLandingPage });
+      };
+      obj4[constants2.NAME_INPUT] = obj5;
+      const obj7 = { ignoreKeyboard: true, impressionName: discord_common_AnalyticsUtils.ImpressionNames.CONTACT_SYNC_SUGGESTIONS, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
+      const obj6 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj7.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj7.headerTitle = headerTitle;
+      obj7.headerLeft = headerLeft;
+      obj7.render = function render() {
+        return closure_2_16(ContactSyncSuggestionScreen, { onComplete });
+      };
+      obj4[constants2.SUGGESTIONS] = obj7;
+      const obj9 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_ADD_PHONE, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
+      const obj8 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj9.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj9.headerTitle = headerTitle;
+      obj9.headerLeft = function headerLeft(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj.navigateToLandingPage = navigateToLandingPage;
+        return closure_2_16(openSettingsSheet(first[41]), obj);
+      };
+      obj9.render = function render() {
+        return closure_1_16(loading(openSettingsSheet[42]).AddPhoneScreen, {});
+      };
+      obj4[constants2.ADD_PHONE] = obj9;
+      const obj11 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFY_PHONE, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
+      const obj10 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj11.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj11.headerTitle = headerTitle;
+      obj11.headerLeft = function headerLeft(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj.navigateToLandingPage = navigateToLandingPage;
+        return closure_2_16(openSettingsSheet(first[41]), obj);
+      };
+      obj11.render = function render() {
+        return closure_1_16(loading(openSettingsSheet[42]).VerifyPhoneScreen, {});
+      };
+      obj4[constants2.VERIFY_PHONE] = obj11;
+      const obj13 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFY_PASSWORD, impressionProperties: null, fullscreen: true, headerLeft: null, headerTitle: null, render: null };
+      const obj12 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj13.impressionProperties = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.CONTACT_SYNC_FLOW };
+      obj13.headerLeft = function headerLeft(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        obj.navigateToLandingPage = navigateToLandingPage;
+        return closure_2_16(openSettingsSheet(first[41]), obj);
+      };
+      obj13.headerTitle = headerTitle;
+      obj13.render = function render() {
+        return closure_1_16(loading(openSettingsSheet[42]).VerifyPasswordScreen, {});
+      };
+      obj4[constants2.VERIFY_PASSWORD] = obj13;
+      return obj4;
+    }, items2);
+    effect1 = closure_5.useEffect(() => () => {
+      if (!isOnboarding) {
+        const obj2 = { onComplete };
+        const result = onComplete(first[14]).closeContactSyncModal(obj2);
+        const obj = onComplete(first[14]);
+      }
+    }, items3);
+    tmp9 = onComplete;
+    tmp10 = closure_2;
+    tmp8 = jsx;
+    obj = { screens: memo1, initialRouteStack: null, headerBackTitle: null };
+    if (initialRoutes == null) {
+      obj1 = { name: null };
+      tmp11 = ContactSyncScenes;
+      obj1.name = ContactSyncScenes.WELCOME;
+      items4 = [];
+      items4[0] = obj1;
+      initialRoutes = items4;
     }
-    return fn;
-  }, items1);
-  const items2 = [tmp3, loading, openSettingsSheet, memo];
-  const items3 = [tmp3, memo];
-  const memo1 = memo.useMemo(() => getScreens({ isOnboarding, loading, setLoading, openSettingsSheet, onComplete: memo }), items2);
-  const effect1 = memo.useEffect(() => () => {
-    if (!isOnboarding) {
-      const obj2 = { onComplete };
-      const result = onComplete(first[14]).closeContactSyncModal(obj2);
-      const obj = onComplete(first[14]);
-    }
-  }, items3);
-  let obj = { screens: memo1, initialRouteStack: null, headerBackTitle: null };
-  if (initialRoutes == null) {
-    let obj2 = { name: constants2.WELCOME };
-    const items4 = [obj2];
-    initialRoutes = items4;
+    obj.initialRouteStack = initialRoutes;
+    intl = tmp9(tmp10[16]).intl;
+    obj.headerBackTitle = intl.string(tmp9(tmp10[16]).t["13/7kX"]);
+    return tmp8(onComplete(closure_2[43]).Navigator, obj);
   }
-  obj.initialRouteStack = initialRoutes;
-  const intl = tmp9(tmp10[17]).intl;
-  obj.headerBackTitle = intl.string(onComplete(loading[17]).t["13/7kX"]);
-  return closure_16(onComplete(loading[45]).Navigator, obj);
-});
-let closure_28 = tmp6;
+}
+const View = fn(17).View;
+const ContactSyncModalStore = fn(12959);
+({ setName: closure_9, useContactSyncModalStore: c10, useIsOnboarding: closure_11 } = ContactSyncModalStore);
+const ContactSyncConstants = fn(12960);
+({ ContactPermissions: closure_12, ContactSyncScenes: map1 } = ContactSyncConstants);
+const AnalyticEvents = fn(1074).AnalyticEvents;
+const NativePermissionTypes = fn(4997).NativePermissionTypes;
+const jsxProd = fn(21);
+({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = jsxProd);
+const createStyles = fn(4788);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5931).NAV_BAR_HEIGHT + 32 }, landingTrailing: { textAlign: "center" } };
+let closure_19 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/contact_sync/native/components/RedesignContactSyncModal.tsx");
 
-export default tmp6;
-export const ContactSyncOnboardingModal = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
-  const cResult = c.c(4);
-  ({ openSettingsSheet, initialRoutes } = route);
-  const onComplete = route.route.params.onComplete;
-  if (cResult[0] === initialRoutes) {
-    if (cResult[1] === onComplete) {
-      if (cResult[2] === openSettingsSheet) {
-        let tmp2 = cResult[3];
-      }
-      return tmp2;
-    }
-  }
-  const tmp3 = value2(closure_28, { onComplete, openSettingsSheet, initialRoutes });
-  cResult[0] = initialRoutes;
-  cResult[1] = onComplete;
-  cResult[2] = openSettingsSheet;
-  cResult[3] = tmp3;
-  tmp2 = tmp3;
-}) : ((onComplete) => value2(closure_28, { onComplete: onComplete.route.params.onComplete, openSettingsSheet: onComplete.openSettingsSheet, initialRoutes: onComplete.initialRoutes }));
+export default ContactSyncModal;
+export const ContactSyncOnboardingModal = function ContactSyncOnboardingModal(onComplete) {
+  return value2(ContactSyncModal, { onComplete: onComplete.route.params.onComplete, openSettingsSheet: onComplete.openSettingsSheet, initialRoutes: onComplete.initialRoutes });
+};

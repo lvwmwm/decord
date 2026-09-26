@@ -1,10 +1,10 @@
-// Module ID: 9669
-// Function ID: 9670
+// Module ID: 9673
+// Function ID: 9674
 // Name: ChannelCallConstants
-// Dependencies: [1078, 2]
+// Dependencies: [1074, 2]
 
-// Module 9669 (ChannelCallConstants)
-import Constants from "Constants" /* 1078 */;
+// Module 9673 (ChannelCallConstants)
+import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 const items = [, , , ];

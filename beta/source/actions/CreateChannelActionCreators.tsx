@@ -1,22 +1,22 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 9853
+// Function ID: 9854
 // Name: CreateChannelActionCreators
-// Dependencies: [4971, 1078, 1088, 577, 4983, 1253, 2057, 1275, 7398, 7393, 7599, 2]
+// Dependencies: [4969, 1074, 1084, 573, 4981, 1249, 2053, 1271, 7396, 7391, 7597, 2]
 
-// Module 9831 (CreateChannelActionCreators)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import TypeUtils from "TypeUtils" /* 2057 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4983 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7393 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7398 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7599 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+// Module 9853 (CreateChannelActionCreators)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import TypeUtils from "TypeUtils" /* 2053 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4981 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7597 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 require = fn;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ BITRATE_DEFAULT: closure_4, ChannelTypes: hasOwnProperty, Endpoints: metroRequire } = Constants);
-let closure_7 = fn(1088).ChannelNotificationSettingsFlags;
+let closure_7 = fn(1084).ChannelNotificationSettingsFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/CreateChannelActionCreators.tsx");
 
@@ -28,7 +28,7 @@ export default {
       permissionOverwrites = [];
     }
     ({ bitrate, userLimit, parentId, skuId, applicationId, flags, availableTags, gameId } = guildId);
-    permissionOverwrites(577).dispatch({ type: "CREATE_CHANNEL_MODAL_SUBMIT", guildId, channelType: type });
+    permissionOverwrites(573).dispatch({ type: "CREATE_CHANNEL_MODAL_SUBMIT", guildId, channelType: type });
     let obj2 = { type, name: guildId.name, permission_overwrites: permissionOverwrites };
     let tmp4 = null != bitrate;
     if (tmp4) {
@@ -79,12 +79,12 @@ export default {
         obj2.application_id = applicationId;
       }
     }
-    let obj = permissionOverwrites(577);
+    let obj = permissionOverwrites(573);
     tmp8 = constants;
     const request = { url: closure_6.GUILD_CHANNELS(guildId), body: obj2, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
-    const tmpResult = permissionOverwrites(4983);
+    const tmpResult = permissionOverwrites(4981);
     request.trackedActionData = {
-      event: guildId(1253).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(1249).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         const obj2 = { is_private: permissionOverwrites.length > 0, channel_id: null, channel_type: null };
         let id;
@@ -107,7 +107,7 @@ export default {
       }
     };
     const obj3 = {
-      event: guildId(1253).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(1249).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         const obj2 = { is_private: permissionOverwrites.length > 0, channel_id: null, channel_type: null };
         let id;
@@ -129,8 +129,8 @@ export default {
         return TypeUtils.exact(obj2);
       }
     };
-    request.rejectWithError = guildId(1275).rejectWithMigratedError();
-    const obj6 = guildId(1275);
+    request.rejectWithError = guildId(1271).rejectWithMigratedError();
+    const obj6 = guildId(1271);
     return tmpResult.post(request).then((body) => {
       if (UserGuildSettingsStore.isOptInEnabled(guildId)) {
         const obj = NotificationSettingsModalActionCreatorsDefault;

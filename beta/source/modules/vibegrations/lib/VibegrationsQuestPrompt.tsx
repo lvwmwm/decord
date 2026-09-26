@@ -1,42 +1,42 @@
-// Module ID: 17068
-// Function ID: 17069
+// Module ID: 17058
+// Function ID: 17059
 // Name: VibegrationsQuestPrompt
-// Dependencies: [11644, 7972, 2]
+// Dependencies: [11768, 7967, 2]
 // Exports: dismissQuestPrompt, isQuestPromptDismissed, watchableQuest
 
-// Module 17068 (VibegrationsQuestPrompt)
-import QuestsEligibility from "QuestsEligibility" /* 11644 */;
+// Module 17058 (VibegrationsQuestPrompt)
+import QuestsEligibility from "QuestsEligibility" /* 11768 */;
 import size from "module_2" /* 2 */;
 
 let c2 = false;
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsQuestPrompt.tsx");
 
-export const watchableQuest = function watchableQuest(watchableQuestResult4, arg1) {
+export const watchableQuest = function watchableQuest(quest, arg1) {
   let tmp3 = null;
   let tmp4 = null;
-  if (null != watchableQuestResult4) {
+  if (null != quest) {
     if (!obj.getIsEligibleForQuests()) {
       tmp4 = null;
     } else if (tmp) {
-      const userStatus2 = watchableQuestResult4.userStatus;
+      const userStatus2 = quest.userStatus;
       let claimedAt;
       if (userStatus2 != tmp3) {
         claimedAt = userStatus2.claimedAt;
       }
       tmp3 = null;
       if (!tmp11) {
-        tmp3 = watchableQuestResult4;
+        tmp3 = quest;
       }
       tmp11 = tmp3 != claimedAt;
     } else if (!tmp2) {
-      if (!tmp5Result.isQuestExpired(watchableQuestResult4)) {
-        const userStatus = watchableQuestResult4.userStatus;
+      if (!tmp5Result.isQuestExpired(quest)) {
+        const userStatus = quest.userStatus;
         let completedAt;
         if (userStatus != tmp3) {
           completedAt = userStatus.completedAt;
         }
       }
-      tmp5Result = tmp5(7972);
+      tmp5Result = tmp5(7967);
     }
     obj = QuestsEligibility;
     tmp5 = require;

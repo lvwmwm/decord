@@ -1,24 +1,24 @@
-// Module ID: 4457
-// Function ID: 4458
+// Module ID: 4453
+// Function ID: 4454
 // Name: SubscriptionRecord
-// Dependencies: [1391, 4458, 4459, 1078, 4461, 1378, 4462, 38, 1368, 4463, 1973, 2]
+// Dependencies: [1387, 4454, 4455, 1074, 4457, 1374, 4458, 38, 1364, 4459, 1969, 2]
 
-// Module 4457 (SubscriptionRecord)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1973 */;
-import PremiumSubscription from "PremiumSubscription" /* 4462 */;
-import Record from "Record" /* 1391 */;
-import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4458 */;
-import InvoiceRecord from "InvoiceRecord" /* 4459 */;
+// Module 4453 (SubscriptionRecord)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+import PremiumSubscription from "PremiumSubscription" /* 4458 */;
+import Record from "Record" /* 1387 */;
+import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4454 */;
+import InvoiceRecord from "InvoiceRecord" /* 4455 */;
 
 require = fn;
 function createSubscriptionItemFromServer(id) {
   return { id: id.id, planId: id.plan_id, quantity: id.quantity };
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ PaymentGateways: hasOwnProperty, SubscriptionStatusTypes: metroRequire, SubscriptionStatusTypesSets: closure_7, SubscriptionTypes: closure_8 } = Constants);
-const BillingConstants = fn(4461);
+const BillingConstants = fn(4457);
 ({ SubscriptionPauseReason: closure_9, SubscriptionPauseReasonSets: c10 } = BillingConstants);
-const PremiumConstants = fn(1378);
+const PremiumConstants = fn(1374);
 ({ PREMIUM_PLANS: closure_11, SubscriptionPlanInfo: closure_12, SubscriptionPlans: map1 } = PremiumConstants);
 let SubscriptionRecord;
 class SubscriptionRecord extends tmp2 {
@@ -179,7 +179,7 @@ Object.defineProperty(prototype, "planIdForCurrencies", {
 });
 Object.defineProperty(prototype, "planIdFromItems", {
   get: function planIdFromItems() {
-    return this.getCurrentSubscriptionPlanIdForGroup(Object.values(__initData2));
+    return this.getCurrentSubscriptionPlanIdForGroup(Object.values(map1));
   },
   set: undefined
 });

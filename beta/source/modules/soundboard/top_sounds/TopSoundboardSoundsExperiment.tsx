@@ -1,10 +1,10 @@
-// Module ID: 17523
-// Function ID: 17524
+// Module ID: 17534
+// Function ID: 17535
 // Name: TopSoundboardSoundsExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 17523 (TopSoundboardSoundsExperiment)
-import ApexExperiment_mod from "ApexExperiment" /* 1438 */;
+// Module 17534 (TopSoundboardSoundsExperiment)
+import ApexExperiment_mod from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 let ApexExperiment = ApexExperiment_mod;

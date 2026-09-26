@@ -1,97 +1,64 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17360
+// Function ID: 17361
 // Name: Pending
-// Dependencies: [19, 17, 21, 8539, 17371, 17372, 17373, 558, 568, 4642, 2]
-// Exports: getPendingSource
+// Dependencies: [19, 17, 21, 8534, 17361, 17362, 17363, 4639, 2]
+// Exports: Pending, getPendingSource, usePendingSource
 
-// Module 17370 (Pending)
-import c from "c" /* 568 */;
-import shared from "shared" /* 4642 */;
-import _mod8539 from "module_8539" /* 8539 */;
+// Module 17360 (Pending)
+import shared from "shared" /* 4639 */;
+import _mod8534 from "module_8534" /* 8534 */;
 import noop from "module_19" /* 19 */;
+
+const require = globalThis.__r;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-let ReactCompilerGating = fn(558);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const theme = shared.useThemeContext().theme;
-  if (cResult[0] !== theme) {
-    const obj3 = {
-      dark() {
-          return require("module_17371");
-        },
-      darker() {
-          return require("module_17372");
-        },
-      light() {
-          return require("module_17373");
-        }
-    };
-    const illustrationSource = _mod8539.getIllustrationSource(theme, obj3);
-    cResult[0] = theme;
-    cResult[1] = illustrationSource;
-    let tmp4 = illustrationSource;
-    const tmpResult = _mod8539;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (() => {
-  const obj = shared;
-  return _mod8539.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_17371");
-    },
-    darker() {
-      return require("module_17372");
-    },
-    light() {
-      return require("module_17373");
-    }
-  });
-});
-let closure_4 = tmp3;
-ReactCompilerGating = fn(558);
-function getPendingSource(theme) {
-  return _mod8539.getIllustrationSource(theme, {
-    dark() {
-      return require("module_17371");
-    },
-    darker() {
-      return require("module_17372");
-    },
-    light() {
-      return require("module_17373");
-    }
-  });
-}
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/Pending.tsx");
 
-export { getPendingSource };
-export const usePendingSource = tmp3;
-export const Pending = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(3);
-  const tmp2 = closure_4();
-  if (cResult[0] === arg0) {
-    if (cResult[1] === tmp2) {
-      let tmp3 = cResult[2];
+export const getPendingSource = function getPendingSource(theme) {
+  return _mod8534.getIllustrationSource(theme, {
+    dark() {
+      return require("module_17361");
+    },
+    darker() {
+      return require("module_17362");
+    },
+    light() {
+      return require("module_17363");
     }
-    return tmp3;
-  }
-  const obj2 = {};
+  });
+};
+export const usePendingSource = function usePendingSource() {
+  const obj = shared;
+  return _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+    dark() {
+      return require("module_17361");
+    },
+    darker() {
+      return require("module_17362");
+    },
+    light() {
+      return require("module_17363");
+    }
+  });
+};
+export const Pending = function Pending(arg0) {
+  const obj = shared;
+  const obj4 = {};
+  const illustrationSource = _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+    dark() {
+      return require("module_17361");
+    },
+    darker() {
+      return require("module_17362");
+    },
+    light() {
+      return require("module_17363");
+    }
+  });
   const merged = Object.assign(arg0);
-  obj2.source = tmp2;
-  const tmp5 = <Image />;
-  cResult[0] = arg0;
-  cResult[1] = tmp2;
-  cResult[2] = tmp5;
-  tmp3 = tmp5;
-}) : ((arg0) => {
-  const obj = {};
-  const merged = Object.assign(arg0);
-  obj.source = closure_4();
+  obj4.source = illustrationSource;
   return <Image />;
-});
+};

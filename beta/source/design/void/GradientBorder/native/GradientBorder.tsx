@@ -1,11 +1,11 @@
-// Module ID: 14401
-// Function ID: 14402
+// Module ID: 14391
+// Function ID: 14392
 // Name: GradientBorder
-// Dependencies: [19, 17, 1078, 21, 4975, 580, 5230, 2]
+// Dependencies: [19, 17, 1074, 21, 4973, 576, 5230, 2]
 
-// Module 14401 (GradientBorder)
-import nativeDefault from "native" /* 580 */;
-import _mod4975 from "module_4975" /* 4975 */;
+// Module 14391 (GradientBorder)
+import nativeDefault from "native" /* 576 */;
+import _mod4973 from "module_4973" /* 4973 */;
 import LinearGradientDefault from "LinearGradient" /* 5230 */;
 import noop from "module_19" /* 19 */;
 
@@ -91,7 +91,7 @@ class GradientBorder {
   }
 }
 const View = fn(17).View;
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ HorizontalGradient: hasOwnProperty, VerticalGradient: metroRequire } = Constants);
 const jsx = fn(21).jsx;
 const Direction = { HORIZONTAL: "horizontal", VERTICAL: "vertical", DIAGONAL: "diagonal", ANTI_DIAGONAL: "anti-diagonal" };

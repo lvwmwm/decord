@@ -1,16 +1,15 @@
 // Module ID: 7056
 // Function ID: 7057
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 6929, 7036]
+// Dependencies: [41, 42, 93, 95, 96, 98, 6950]
 
 // Module 7056
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
 
-const GenericTouchable = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,269 +29,79 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const Animated = fn(17).Animated;
-const jsx = fn(21).jsx;
-const TOUCHABLE_STATE = { UNDETERMINED: 0, BEGAN: 1, MOVED_OUTSIDE: 2 };
-class GenericTouchable {
+let _classCallCheck = _classCallCheck_mod;
+function changeEventCalculator(force, force2) {
+  if (undefined === force2) {
+    const obj2 = { forceChange: force.force };
+    let obj = obj2;
+  } else {
+    obj = { forceChange: force.force - force2.force };
+  }
+  const merged = Object.assign(force);
+  const merged1 = Object.assign(obj);
+  return {};
+}
+changeEventCalculator.__closure = {};
+changeEventCalculator.__workletHash = 11365193947542;
+changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_forceTouchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={forceChange:current.force};}else{changePayload={forceChange:current.force-previous.force};}return{...current,...changePayload};}" };
+class ForceTouchGesture {
   constructor() {
     self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = c2(this, GenericTouchable);
-    items1 = [...items];
-    tmp2 = closure_4;
-    obj = closure_4(GenericTouchable);
-    tmp3 = closure_3;
-    if (closure_7()) {
+    tmp = closure_0(this, ForceTouchGesture);
+    tmp2 = c2;
+    obj = c2(ForceTouchGesture);
+    tmp3 = closure_1;
+    if (closure_4()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      constructResult = obj.apply(self, undefined);
     }
     tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.longPressDetected = false;
-    tmp3Result.pointerInside = true;
-    tmp3Result.STATE = closure_8.UNDETERMINED;
-    tmp3Result.onGestureEvent = (nativeEvent) => {
-      const pointerInside = nativeEvent.nativeEvent.pointerInside;
-      if (closure_0.pointerInside !== pointerInside) {
-        if (pointerInside) {
-          obj.onMoveIn();
-        } else {
-          obj.onMoveOut();
-        }
-      }
-      closure_0.pointerInside = pointerInside;
-    };
-    tmp3Result.onHandlerStateChange = (nativeEvent) => {
-      state = nativeEvent.nativeEvent.state;
-      if (state !== GenericTouchable(6929).State.CANCELLED) {
-        if (state !== tmp(6929).State.FAILED) {
-          if (state === tmp(6929).State.BEGAN) {
-            if (closure_0.STATE === closure_0.UNDETERMINED) {
-              obj.handlePressIn();
-            }
-          }
-          if (state === tmp(6929).State.END) {
-            const longPressDetected = closure_0.longPressDetected;
-            let tmp5 = !longPressDetected;
-            if (!longPressDetected) {
-              tmp5 = obj2.STATE !== obj.MOVED_OUTSIDE;
-            }
-            if (tmp5) {
-              tmp5 = undefined === obj2.pressOutTimeout;
-            }
-            const result = obj2.handleGoToUndetermined();
-            if (tmp5) {
-              const props = obj2.props;
-              const onPress = props.onPress;
-              if (onPress != null) {
-                onPress();
-              }
-            }
-          }
-        }
-      }
-      closure_0.moveToState(obj.UNDETERMINED);
-    };
-    tmp3Result.onLongPressDetected = () => {
-      closure_0.longPressDetected = true;
-      const props = closure_0.props;
-      const onLongPress = props.onLongPress;
-      if (onLongPress != null) {
-        onLongPress();
-      }
-    };
+    tmp3Result.config = {};
+    tmp3Result.handlerName = "ForceTouchGestureHandler";
     return tmp3Result;
   }
 }
-_inherits(GenericTouchable, fn(19).Component);
+_classCallCheck = ForceTouchGesture;
+_inherits(ForceTouchGesture, fn(6950).ContinousBaseGesture);
 const entry = {
-  key: "handlePressIn",
-  value: function handlePressIn() {
-    const self = this;
-    if (this.props.delayPressIn) {
-      const _setTimeout = setTimeout;
-      self.pressInTimeout = setTimeout(() => {
-        self.moveToState(obj.BEGAN);
-        self.pressInTimeout = undefined;
-      }, self.props.delayPressIn);
-    } else {
-      self.moveToState(obj.BEGAN);
-    }
-    if (self.props.onLongPress) {
-      const _setTimeout2 = setTimeout;
-      self.longPressTimeout = setTimeout(self.onLongPressDetected, (self.props.delayPressIn || 0) + (self.props.delayLongPress || 0));
-      const tmp4 = self.props.delayPressIn || 0;
-      const tmp5 = self.props.delayLongPress || 0;
-    }
+  key: "minForce",
+  value: function minForce(minForce) {
+    this.config.minForce = minForce;
+    return this;
   }
 };
 let items = [
   entry,
   {
-    key: "handleMoveOutside",
-    value: function handleMoveOutside() {
+    key: "maxForce",
+    value: function maxForce(maxForce) {
+      this.config.maxForce = maxForce;
+      return this;
+    }
+  },
+  {
+    key: "feedbackOnActivation",
+    value: function feedbackOnActivation(feedbackOnActivation) {
+      this.config.feedbackOnActivation = feedbackOnActivation;
+      return this;
+    }
+  },
+  {
+    key: "onChange",
+    value: function onChange(arg0) {
+      this.handlers.changeEventCalculator = hasOwnProperty;
       const self = this;
-      if (this.props.delayPressOut) {
-        let pressOutTimeout = self.pressOutTimeout;
-        if (!pressOutTimeout) {
-          const _setTimeout = setTimeout;
-          pressOutTimeout = setTimeout(() => {
-            self.moveToState(obj.MOVED_OUTSIDE);
-            self.pressOutTimeout = undefined;
-          }, self.props.delayPressOut);
-        }
-        self.pressOutTimeout = pressOutTimeout;
-      } else {
-        self.moveToState(obj.MOVED_OUTSIDE);
+      let fn = _get(_getPrototypeOf(_classCallCheck.prototype), "onChange", this);
+      if (typeof fn === "function") {
+        fn = (items) => fn.apply(self, items);
       }
-    }
-  },
-  {
-    key: "handleGoToUndetermined",
-    value: function handleGoToUndetermined() {
-      const self = this;
-      clearTimeout(this.pressOutTimeout);
-      if (this.props.delayPressOut) {
-        const _setTimeout = setTimeout;
-        self.pressOutTimeout = setTimeout(() => {
-          if (self.STATE === self.UNDETERMINED) {
-            obj.moveToState(tmp.BEGAN);
-          }
-          self.moveToState(self.UNDETERMINED);
-          self.pressOutTimeout = undefined;
-        }, self.props.delayPressOut);
-      } else {
-        if (self.STATE === obj.UNDETERMINED) {
-          self.moveToState(tmp2.BEGAN);
-        }
-        self.moveToState(obj.UNDETERMINED);
-      }
-    }
-  },
-  {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.reset();
-    }
-  },
-  {
-    key: "reset",
-    value: function reset() {
-      const obj = { longPressDetected: false, pointerInside: true };
-      clearTimeout(obj.pressInTimeout);
-      clearTimeout(obj.pressOutTimeout);
-      clearTimeout(obj.longPressTimeout);
-      obj.pressOutTimeout = undefined;
-      obj.longPressTimeout = undefined;
-      obj.pressInTimeout = undefined;
-    }
-  },
-  {
-    key: "moveToState",
-    value: function moveToState(BEGAN) {
-      const self = this;
-      if (BEGAN !== this.STATE) {
-        if (BEGAN === obj.BEGAN) {
-          const props3 = self.props;
-          const onPressIn = props3.onPressIn;
-          if (onPressIn != null) {
-            onPressIn();
-          }
-        } else if (BEGAN === tmp10.MOVED_OUTSIDE) {
-          const props2 = self.props;
-          const onPressOut2 = props2.onPressOut;
-          if (onPressOut2 != null) {
-            onPressOut2();
-          }
-        } else if (BEGAN === tmp10.UNDETERMINED) {
-          self.reset();
-          if (self.STATE === tmp10.BEGAN) {
-            const props = self.props;
-            const onPressOut = props.onPressOut;
-            if (onPressOut != null) {
-              onPressOut();
-            }
-          }
-        }
-        const props4 = self.props;
-        const onStateChange = props4.onStateChange;
-        if (onStateChange != null) {
-          onStateChange(self.STATE, BEGAN);
-        }
-        self.STATE = BEGAN;
-      }
-    }
-  },
-  {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.reset();
-    }
-  },
-  {
-    key: "onMoveIn",
-    value: function onMoveIn() {
-      const self = this;
-      if (this.STATE === obj.MOVED_OUTSIDE) {
-        self.moveToState(tmp.BEGAN);
-      }
-    }
-  },
-  {
-    key: "onMoveOut",
-    value: function onMoveOut() {
-      const self = this;
-      clearTimeout(this.longPressTimeout);
-      this.longPressTimeout = undefined;
-      if (this.STATE === obj.BEGAN) {
-        self.handleMoveOutside();
-      }
-    }
-  },
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      if (typeof this.props.hitSlop === "number") {
-        const rect = { top: self.props.hitSlop, left: self.props.hitSlop, bottom: self.props.hitSlop, right: self.props.hitSlop };
-        let hitSlop = rect;
-      } else {
-        hitSlop = self.props.hitSlop;
-      }
-      const obj2 = { style: self.props.containerStyle, onHandlerStateChange: null, onGestureEvent: null, hitSlop: null, userSelect: null, shouldActivateOnStart: null, disallowInterruption: null, testID: null, touchSoundDisabled: null, enabled: null };
-      let onHandlerStateChange;
-      if (!self.props.disabled) {
-        onHandlerStateChange = self.onHandlerStateChange;
-      }
-      obj2.onHandlerStateChange = onHandlerStateChange;
-      obj2.onGestureEvent = self.onGestureEvent;
-      obj2.hitSlop = hitSlop;
-      obj2.userSelect = self.props.userSelect;
-      obj2.shouldActivateOnStart = self.props.shouldActivateOnStart;
-      obj2.disallowInterruption = self.props.disallowInterruption;
-      obj2.testID = self.props.testID;
-      let flag = self.props.touchSoundDisabled;
-      if (flag == null) {
-        flag = false;
-      }
-      obj2.touchSoundDisabled = flag;
-      obj2.enabled = !self.props.disabled;
-      const merged = Object.assign(self.props.extraButtonProps);
-      const obj3 = {};
-      const merged1 = Object.assign({ accessible: false !== self.props.accessible, accessibilityLabel: self.props.accessibilityLabel, accessibilityHint: self.props.accessibilityHint, accessibilityRole: self.props.accessibilityRole, accessibilityState: self.props.accessibilityState, accessibilityActions: self.props.accessibilityActions, onAccessibilityAction: self.props.onAccessibilityAction, nativeID: self.props.nativeID, onLayout: self.props.onLayout });
-      obj3.style = self.props.style;
-      obj3.children = self.props.children;
-      obj2.children = <Animated.View />;
-      return jsx(GenericTouchable(7036).LegacyBaseButton, { style: self.props.containerStyle, onHandlerStateChange: null, onGestureEvent: null, hitSlop: null, userSelect: null, shouldActivateOnStart: null, disallowInterruption: null, testID: null, touchSoundDisabled: null, enabled: null });
+      const items = [arg0];
+      return fn(items);
     }
   }
 ];
-const importDefaultResultResult = _createClass(GenericTouchable, items);
-importDefaultResultResult.defaultProps = { delayLongPress: 600, extraButtonProps: { rippleColor: "transparent", exclusive: true } };
 
-export default importDefaultResultResult;
-export { TOUCHABLE_STATE };
+export const ForceTouchGesture = _createClass(ForceTouchGesture, items);

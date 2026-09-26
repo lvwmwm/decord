@@ -1,64 +1,42 @@
 // Module ID: 4298
 // Function ID: 4299
-// Dependencies: [3882, 3886]
+// Dependencies: [3881, 3877, 3878]
 // Exports: default
 
 // Module 4298
-import _mod3886 from "module_3886" /* 3886 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import module_3881_mod from "module_3881" /* 3881 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  let obj = { default: requiredArgs };
+let module_3881 = module_3881_mod;
+if (!module_3881) {
+  const obj = { default: module_3881 };
   let tmp3 = obj;
 } else {
-  tmp3 = requiredArgs;
+  tmp3 = module_3881;
 }
-requiredArgs = tmp3;
+module_3881 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
+}
+_typeof = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
 
-export default function setDefaultOptions(obj) {
-  requiredArgs.default(1, arguments);
-  obj = {};
-  const defaultOptions = _mod3886.getDefaultOptions();
-  for (const key10017 in defaultOptions) {
-    let _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    let call = hasOwnProperty.call;
-    if (typeof call === "unknown") {
-      let hasOwnPropertyResult = hasOwnProperty(key10017);
-    } else {
-      hasOwnPropertyResult = call(defaultOptions, key10017);
-    }
-    if (!hasOwnPropertyResult) {
-      continue;
-    } else {
-      obj[key10017] = defaultOptions[key10017];
-      continue;
-    }
-    continue;
-  }
-  for (const key10023 in arg0) {
-    let _Object2 = Object;
-    let call2 = hasOwnProperty2.call;
-    if (typeof call2 === "unknown") {
-      let hasOwnProperty2Result = hasOwnProperty2(key10023);
-    } else {
-      hasOwnProperty2Result = call2(arg0, key10023);
-    }
-    if (!hasOwnProperty2Result) {
-      continue;
-    } else {
-      if (undefined === arg0[key10023]) {
-        delete tmp[tmp2];
-        continue;
-      } else {
-        obj[key10023] = arg0[key10023];
-        continue;
-      }
-      continue;
-    }
-    continue;
-  }
-  _mod3886.setDefaultOptions(obj);
+export default function setMilliseconds(module_3881, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(module_3881);
+  defaultResult1.setMilliseconds(module_3881.default(arg1));
+  return defaultResult1;
 };
 export default exports.default;

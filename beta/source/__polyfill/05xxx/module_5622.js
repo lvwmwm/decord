@@ -1,9 +1,9 @@
 // Module ID: 5622
 // Function ID: 5623
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 5622
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 267, height: 267, scales: [1], hash: "898dc79e0285b8e9855531eeca36bf84", name: "img_roblox_white", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "267a8dd66b567343016eb7bda7db7c01", name: "img_account_sync_paypal_white", type: "png" });

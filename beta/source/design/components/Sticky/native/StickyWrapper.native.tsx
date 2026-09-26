@@ -1,11 +1,11 @@
-// Module ID: 10391
-// Function ID: 10392
+// Module ID: 11652
+// Function ID: 11653
 // Name: StickyWrapper
-// Dependencies: [19, 17, 21, 558, 568, 1369, 2]
+// Dependencies: [19, 17, 21, 1365, 2]
+// Exports: StickyWrapper
 
-// Module 10391 (StickyWrapper)
-import c from "c" /* 568 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1369 */;
+// Module 11652 (StickyWrapper)
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -13,68 +13,14 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: c2 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const styles = StyleSheet.create({ wrapper: { height: "100%", width: "100%" }, header: { zIndex: 1 }, androidHeader: { position: "absolute", top: 0, left: 0, right: 0 } });
-const ReactCompilerGating = fn(558);
+const wrapper = StyleSheet.create({ wrapper: { height: "100%", width: "100%" }, header: { zIndex: 1 }, androidHeader: { position: "absolute", top: 0, left: 0, right: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
 
-export const StickyWrapper = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(9);
-  ({ header, children, pointerEvents, style } = arg0);
-  if (cResult[0] !== style) {
-    const items = [style, closure_5.wrapper];
-    cResult[0] = style;
-    cResult[1] = items;
-    let tmp4 = items;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] !== header) {
-    let tmp8Result = null;
-    if (null != header) {
-      const items1 = [closure_5.header, ];
-      let androidHeader;
-      if (tmpResult.isAndroid()) {
-        androidHeader = tmp10.androidHeader;
-      }
-      const obj2 = { style: null, children: null };
-      items1[1] = androidHeader;
-      obj2.style = items1;
-      obj2.children = header;
-      tmp8Result = React3(React2, obj2);
-      tmp10 = closure_5;
-      tmpResult = utils_PlatformUtils;
-    }
-    cResult[2] = header;
-    cResult[3] = tmp8Result;
-    let tmp6 = tmp8Result;
-  } else {
-    tmp6 = cResult[3];
-  }
-  if (cResult[4] === children) {
-    if (cResult[5] === pointerEvents) {
-      if (cResult[6] === tmp4) {
-        if (cResult[7] === tmp6) {
-          let tmp12 = cResult[8];
-        }
-        return tmp12;
-      }
-    }
-  }
-  const obj3 = { style: tmp4, pointerEvents, children: null };
-  const items2 = [tmp6, children];
-  obj3.children = items2;
-  const tmp13 = React4(React2, obj3);
-  cResult[4] = children;
-  cResult[5] = pointerEvents;
-  cResult[6] = tmp4;
-  cResult[7] = tmp6;
-  cResult[8] = tmp13;
-  tmp12 = tmp13;
-}) : ((header) => {
+export const StickyWrapper = function StickyWrapper(header) {
   header = header.header;
   const obj = { style: null, pointerEvents: header.pointerEvents, children: null };
-  const items = [header.style, closure_5.wrapper];
+  const items = [header.style, wrapper.wrapper];
   obj.style = items;
   let tmp5Result = null;
   if (null != header) {
@@ -93,4 +39,4 @@ export const StickyWrapper = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   const items2 = [tmp5Result, header.children];
   obj.children = items2;
   return React4(React2, obj);
-});
+};

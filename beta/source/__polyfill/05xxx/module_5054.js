@@ -1,17 +1,32 @@
 // Module ID: 5054
 // Function ID: 5055
-// Dependencies: []
+// Dependencies: [1315, 1445]
 
 // Module 5054
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1315 */;
+import _mod1445 from "module_1445" /* 1445 */;
 
-export default function isPrimitive(fn) {
-  let tmp = null === fn;
-  if (!tmp) {
-    let tmp2 = typeof fn !== "function";
-    if (typeof fn !== "function") {
-      tmp2 = typeof fn !== "object";
-    }
-    tmp = tmp2;
+let closure_0 = callBoundIntrinsic("Date.prototype.getDay");
+let closure_1 = callBoundIntrinsic("Object.prototype.toString");
+let closure_2 = _mod1445();
+
+export default function isDateObject(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
   }
-  return tmp;
+  if (!tmp) {
+    return tmp;
+  } else if (closure_2) {
+    let tmp4 = (function tryDateGetDayCall(arg0) {
+      try {
+        closure_1_0(arg0);
+        return true;
+      } catch (err) {
+        return false;
+      }
+    })(obj);
+  } else {
+    tmp4 = "[object Date]" === closure_1(obj);
+  }
 };

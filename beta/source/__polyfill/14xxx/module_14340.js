@@ -1,12 +1,9 @@
 // Module ID: 14340
 // Function ID: 14341
-// Dependencies: [14326]
+// Dependencies: [14330]
 
 // Module 14340
-import _mod14326 from "module_14326" /* 14326 */;
+import _mod14330 from "module_14330" /* 14330 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const obj = new _mod14326(arg0, arg2);
-  return obj.compare(new _mod14326(arg1, arg2));
-};
+export default (arg0, arg1, arg2) => _mod14330(arg0, arg1, arg2) >= 0;

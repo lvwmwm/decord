@@ -1,17 +1,16 @@
 // Module ID: 10779
 // Function ID: 10780
-// Dependencies: [41, 42, 93, 95, 98, 10763, 10767, 10766, 10771]
+// Dependencies: [41, 42, 93, 95, 98, 10734, 10733, 10735]
 
 // Module 10779
-import _mod10763 from "module_10763" /* 10763 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10771 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const ENTimeUnitAgoFormatParser = require;
+const DECasualTimeParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,48 +30,95 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod10763.TIME_UNITS_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
-const regExp1 = new RegExp("(" + _mod10763.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
-class ENTimeUnitAgoFormatParser {
-  constructor(arg0) {
+class DECasualTimeParser {
+  constructor() {
     self = this;
-    tmp = c2(this, ENTimeUnitAgoFormatParser);
+    tmp = c2(this, DECasualTimeParser);
     tmp2 = closure_4;
-    obj = closure_4(ENTimeUnitAgoFormatParser);
+    obj = closure_4(DECasualTimeParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = global;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(DECasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+  value: function innerPattern(arg0) {
+    return /(diesen)?\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht)(?=\W|$)/i;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = ENTimeUnitAgoFormatParser(10763).parseDuration(arg1[1]);
-      let relativeFromReference = null;
-      if (parseDurationResult) {
-        const ParsingComponents = tmp(10767).ParsingComponents;
-        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, tmp(10766).reverseDuration(parseDurationResult));
-      }
-      return relativeFromReference;
+    value: function innerExtract(createParsingComponents, arg1) {
+      const formatted = arg1[2].toLowerCase();
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      DECasualTimeParser(10734).implySimilarTime(parsingComponents, createParsingComponents.refDate);
+      return DECasualTimeParser.extractTimeComponents(parsingComponents, formatted);
     }
   }
 ];
+const entry1 = {
+  key: "extractTimeComponents",
+  value: function extractTimeComponents(nowResult, formatted) {
+    if ("morgen" === formatted) {
+      nowResult.imply("hour", 6);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", DECasualTimeParser(10733).Meridiem.AM);
+    } else if ("vormittag" === formatted) {
+      nowResult.imply("hour", 9);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", DECasualTimeParser(10733).Meridiem.AM);
+    } else {
+      if ("mittag" !== formatted) {
+        if ("mittags" !== formatted) {
+          if ("nachmittag" === formatted) {
+            nowResult.imply("hour", 15);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", DECasualTimeParser(10733).Meridiem.PM);
+          } else if ("abend" === formatted) {
+            nowResult.imply("hour", 18);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", DECasualTimeParser(10733).Meridiem.PM);
+          } else if ("nacht" === formatted) {
+            nowResult.imply("hour", 22);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", DECasualTimeParser(10733).Meridiem.PM);
+          } else if ("mitternacht" === formatted) {
+            if (nowResult.get("hour") > 1) {
+              nowResult.addDurationAsImplied({ day: 1 });
+            }
+            nowResult.imply("hour", 0);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", DECasualTimeParser(10733).Meridiem.AM);
+          }
+        }
+      }
+      nowResult.imply("hour", 12);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", DECasualTimeParser(10733).Meridiem.AM);
+    }
+    return nowResult;
+  }
+};
+const items1 = [entry1];
 
-export default _createClass(ENTimeUnitAgoFormatParser, items);
+export default _createClass(DECasualTimeParser, items, items1);

@@ -1,49 +1,26 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 17555
+// Function ID: 17556
 // Name: useSelfHasVideo
-// Dependencies: [4806, 502, 1996, 558, 568, 9737, 504, 2]
+// Dependencies: [4804, 502, 1992, 504, 9742, 2]
+// Exports: default
 
-// Module 17661 (useSelfHasVideo)
-import participantHasVideo from "participantHasVideo" /* 9737 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
+// Module 17555 (useSelfHasVideo)
+import participantHasVideo from "participantHasVideo" /* 9742 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/utils/useSelfHasVideo.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelRTCStore, AuthenticationStore, MediaEngineStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      const participant = ChannelRTCStore.getParticipant(closure_0, AuthenticationStore.getId());
-      return participantHasVideo.canRenderParticipantVideo(participant, MediaEngineStore);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp8);
-}) : ((arg0) => {
+export default function useSelfHasVideo(arg0) {
   _require = arg0;
   const items = [ChannelRTCStore, AuthenticationStore, MediaEngineStore];
   return require("initialize").useStateFromStores(items, () => {
     const participant = ChannelRTCStore.getParticipant(closure_0, AuthenticationStore.getId());
     return participantHasVideo.canRenderParticipantVideo(participant, MediaEngineStore);
   });
-});
+};

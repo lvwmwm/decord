@@ -1,20 +1,20 @@
-// Module ID: 14063
-// Function ID: 14064
+// Module ID: 14053
+// Function ID: 14054
 // Name: RTCConnectionDesyncStore
-// Dependencies: [4810, 2045, 4813, 1376, 4809, 4814, 1078, 4811, 2020, 4942, 8522, 4845, 504, 577, 2]
+// Dependencies: [4808, 2041, 4811, 1372, 4807, 4812, 1074, 4809, 2016, 4940, 8517, 4843, 504, 573, 2]
 
-// Module 14063 (RTCConnectionDesyncStore)
+// Module 14053 (RTCConnectionDesyncStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2020 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4845 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8522 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4810 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
-import UserStore from "UserStore" /* 1376 */;
-import VoiceStateStore from "VoiceStateStore" /* 4809 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2016 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8517 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4808 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import UserStore from "UserStore" /* 1372 */;
+import VoiceStateStore from "VoiceStateStore" /* 4807 */;
 
 require = fn;
 function retryFailedUsers() {
@@ -38,7 +38,7 @@ function retryFailedUsers() {
           const tmp23 = new VoiceStateRecord(obj4);
           let tmp6 = guildId;
           if (guildId == null) {
-            tmp6 = options;
+            tmp6 = React7;
           }
           const result = closure_12.set(user.id, makeSortedVoiceState(tmp23, tmp6, user.id));
           const obj = { type: ParticipantTypes.USER, user, id: user.id, streamId: null, voiceState: tmp23, voicePlatform: null, speaking: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: NicknameUtilsDefault.getName(guildId, tmp, user), userAvatarDecoration: null, localVideoDisabled: false, isPoppedOut: false };
@@ -52,10 +52,10 @@ function retryFailedUsers() {
     return c2;
   }
 }
-const makeSortedVoiceState = fn(4814).makeSortedVoiceState;
-const Constants = fn(1078);
+const makeSortedVoiceState = fn(4812).makeSortedVoiceState;
+const Constants = fn(1074);
 ({ ME: closure_9, RTCConnectionStates: c10 } = Constants);
-const ParticipantTypes = fn(4811).ParticipantTypes;
+const ParticipantTypes = fn(4809).ParticipantTypes;
 new CachedEntriesMapDefault();
 const tmp3 = new CachedEntriesMapDefault();
 const set = new Set();
@@ -153,7 +153,7 @@ const rTCConnectionDesyncStore = new RTCConnectionDesyncStore(DispatcherDefault,
             const tmp21 = new VoiceStateRecord(obj4);
             let tmp2 = closure_1_0;
             if (closure_1_0 == null) {
-              tmp2 = options;
+              tmp2 = React7;
             }
             const result = closure_12.set(user.id, makeSortedVoiceState(tmp21, tmp2, user.id));
             const obj = { type: ParticipantTypes.USER, user, id: user.id, streamId: null, voiceState: tmp21, voicePlatform: null, speaking: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: NicknameUtilsDefault.getName(closure_1_0, tmp, user), userAvatarDecoration: null, localVideoDisabled: false, isPoppedOut: false };

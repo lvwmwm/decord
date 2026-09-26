@@ -1,20 +1,20 @@
-// Module ID: 1229
-// Function ID: 1230
+// Module ID: 1225
+// Function ID: 1226
 // Name: GuildThemeSourcePreferenceUtils
-// Dependencies: [1190, 2]
+// Dependencies: [1186, 2]
 // Exports: resolveDefaultGuildThemePreference, resolveGuildThemeSourcePreference
 
-// Module 1229 (GuildThemeSourcePreferenceUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
+// Module 1225 (GuildThemeSourcePreferenceUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/GuildThemeSourcePreferenceUtils.tsx");
 
 export const resolveDefaultGuildThemePreference = function resolveDefaultGuildThemePreference(arg0) {
   if (arg0 === preloaded_user_settings.GuildThemeSourcePreference.PERSONAL) {
-    let GUILD = tmp(1190).GuildThemeSourcePreference.PERSONAL;
+    let GUILD = tmp(1186).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp(1190).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp(1186).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 };
@@ -23,12 +23,12 @@ export const resolveGuildThemeSourcePreference = function resolveGuildThemeSourc
   let tmp2 = arg0;
   if (arg0 !== preloaded_user_settings.GuildThemeSourcePreference.GUILD) {
     tmp2 = arg0;
-    if (arg0 !== tmp(1190).GuildThemeSourcePreference.PERSONAL) {
-      if (arg1 === tmp(1190).GuildThemeSourcePreference.PERSONAL) {
-        GuildThemeSourcePreference = tmp(1190).GuildThemeSourcePreference;
+    if (arg0 !== tmp(1186).GuildThemeSourcePreference.PERSONAL) {
+      if (arg1 === tmp(1186).GuildThemeSourcePreference.PERSONAL) {
+        GuildThemeSourcePreference = tmp(1186).GuildThemeSourcePreference;
         let GUILD = GuildThemeSourcePreference.PERSONAL;
       } else {
-        GUILD = tmp(1190).GuildThemeSourcePreference.GUILD;
+        GUILD = tmp(1186).GuildThemeSourcePreference.GUILD;
       }
     }
   }

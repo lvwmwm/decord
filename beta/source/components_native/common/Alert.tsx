@@ -1,22 +1,21 @@
-// Module ID: 5239
-// Function ID: 5240
+// Module ID: 5237
+// Function ID: 5238
 // Name: common/Alert
-// Dependencies: [19, 17, 21, 4790, 580, 1181, 4503, 5240, 2040, 5214, 4786, 1119, 5220, 5373, 5375, 558, 568, 1482, 5376, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 1177, 4498, 5238, 2036, 5212, 4784, 1115, 5218, 5371, 5373, 1478, 5374, 2]
 // Exports: getAlertButtonVariant
 
-// Module 5239 (common/Alert)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import Timers from "Timers" /* 2040 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import CustomMarkupAll from "CustomMarkup" /* 5240 */;
-import Pressables from "Pressables" /* 5373 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5375 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5376 */;
+// Module 5237 (common/Alert)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import Timers from "Timers" /* 2036 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import CustomMarkupAll from "CustomMarkup" /* 5238 */;
+import Pressables from "Pressables" /* 5371 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5373 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5374 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { alert: { borderRadius: nativeDefault.radii.sm, padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, titleText: null, divider: null, body: null, buttons: null, cancelButton: null, secondaryConfirm: null, gradient: null };
 let obj3 = { borderRadius: nativeDefault.radii.sm, padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.titleText = { marginBottom: 16, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -138,7 +137,7 @@ prototype["renderHeader"] = function renderHeader() {
       const obj3 = { style: tmp.divider };
       items[1] = React5(hasOwnProperty, obj3);
       obj.children = items;
-      tmp3Result = closure_1_8(tmp4, obj);
+      tmp3Result = React6(tmp4, obj);
     }
   }
   return tmp3Result;
@@ -164,7 +163,7 @@ prototype["renderBody"] = function renderBody() {
   const obj4 = { children: null };
   const items = [tmp5Result, props.children];
   obj4.children = items;
-  return closure_1_8(options, obj4);
+  return React6(React7, obj4);
 };
 prototype["renderButtons"] = function renderButtons() {
   const self = this;
@@ -201,15 +200,15 @@ prototype["renderButtons"] = function renderButtons() {
       let str = "active";
       if (native.ButtonColors.GREEN !== confirmColor) {
         str = "destructive";
-        if (tmp21(1181).ButtonColors.RED !== confirmColor) {
+        if (tmp21(1177).ButtonColors.RED !== confirmColor) {
           str = "secondary";
-          if (tmp21(1181).ButtonColors.GREY !== confirmColor) {
+          if (tmp21(1177).ButtonColors.GREY !== confirmColor) {
             str = "secondary";
-            if (tmp21(1181).ButtonColors.LIGHTGREY !== confirmColor) {
+            if (tmp21(1177).ButtonColors.LIGHTGREY !== confirmColor) {
               str = "secondary";
-              if (tmp21(1181).ButtonColors.TRANSPARENT !== confirmColor) {
+              if (tmp21(1177).ButtonColors.TRANSPARENT !== confirmColor) {
                 str = "primary";
-                if (tmp21(1181).ButtonColors.WHITE === confirmColor) {
+                if (tmp21(1177).ButtonColors.WHITE === confirmColor) {
                   str = "primary-overlay";
                 }
               }
@@ -247,7 +246,7 @@ prototype["renderButtons"] = function renderButtons() {
     }
     const items = [renderConfirmButtonResult, tmp6, tmp11];
     obj5.children = items;
-    tmp15Result = closure_1_8(hasOwnProperty, obj5);
+    tmp15Result = React6(hasOwnProperty, obj5);
   }
   return tmp15Result;
 };
@@ -272,9 +271,9 @@ prototype["render"] = function render() {
   obj3.style = items1;
   const items2 = [this.renderHeader(), this.renderBody(), this.renderButtons(), this.renderFooter()];
   obj3.children = items2;
-  items[1] = closure_1_8(hasOwnProperty, obj3);
+  items[1] = React6(hasOwnProperty, obj3);
   obj.children = items;
-  const tmp3 = closure_1_8(options, obj);
+  const tmp3 = React6(React7, obj);
   let tmp2Result = tmp3;
   if (isLandscape) {
     const obj4 = { style: null, children: null };
@@ -285,20 +284,30 @@ prototype["render"] = function render() {
   }
   return tmp2Result;
 };
-Alert.contextType = fn(4503).ThemeContext;
+Alert.contextType = fn(4498).ThemeContext;
 const obj7 = { borderRadius: nativeDefault.radii.sm };
-Alert.defaultProps = { confirmColor: fn(1181).ButtonColors.BRAND, autoCloseOnConfirm: true };
-const ReactCompilerGating = fn(558);
-function getAlertButtonVariant(confirmColor) {
+Alert.defaultProps = { confirmColor: fn(1177).ButtonColors.BRAND, autoCloseOnConfirm: true };
+const memoResult = noop.memo((arg0) => {
+  const size = useWindowDimensionsDefault();
+  const isScreenLandscape = useIsScreenLandscape.useIsScreenLandscape();
+  const merged = Object.assign(arg0);
+  return React5(Alert, { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape });
+});
+memoResult.Colors = fn(1177).ButtonColors;
+let size = fn(2);
+let result = size.fileFinishedImporting("components_native/common/Alert.tsx");
+
+export default memoResult;
+export const getAlertButtonVariant = function getAlertButtonVariant(confirmColor) {
   if (native.ButtonColors.GREEN === confirmColor) {
     return "active";
-  } else if (tmp(1181).ButtonColors.RED === confirmColor) {
+  } else if (tmp(1177).ButtonColors.RED === confirmColor) {
     return "destructive";
   } else {
-    if (tmp(1181).ButtonColors.GREY !== confirmColor) {
-      if (tmp(1181).ButtonColors.LIGHTGREY !== confirmColor) {
-        if (tmp(1181).ButtonColors.TRANSPARENT !== confirmColor) {
-          if (tmp(1181).ButtonColors.WHITE === confirmColor) {
+    if (tmp(1177).ButtonColors.GREY !== confirmColor) {
+      if (tmp(1177).ButtonColors.LIGHTGREY !== confirmColor) {
+        if (tmp(1177).ButtonColors.TRANSPARENT !== confirmColor) {
+          if (tmp(1177).ButtonColors.WHITE === confirmColor) {
             return "primary-overlay";
           } else {
             return "primary";
@@ -308,40 +317,4 @@ function getAlertButtonVariant(confirmColor) {
     }
     return "secondary";
   }
-}
-const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(5);
-  const size = useWindowDimensionsDefault();
-  const isScreenLandscape = useIsScreenLandscape.useIsScreenLandscape();
-  const bound = Math.min(0.9 * Math.min(size.width, size.height), 400);
-  const result = 0.7 * size.height;
-  if (cResult[0] === result) {
-    if (cResult[1] === isScreenLandscape) {
-      if (cResult[2] === arg0) {
-        if (cResult[3] === bound) {
-          let tmp5 = cResult[4];
-        }
-        return tmp5;
-      }
-    }
-  }
-  const merged = Object.assign(arg0);
-  const tmp7 = React5(Alert, { width: bound, contentHeight: result, isLandscape: isScreenLandscape });
-  cResult[0] = result;
-  cResult[1] = isScreenLandscape;
-  cResult[2] = arg0;
-  cResult[3] = bound;
-  cResult[4] = tmp7;
-  tmp5 = tmp7;
-}) : ((arg0) => {
-  const size = useWindowDimensionsDefault();
-  const isScreenLandscape = useIsScreenLandscape.useIsScreenLandscape();
-  const merged = Object.assign(arg0);
-  return React5(Alert, { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape });
-}));
-memoResult.Colors = fn(1181).ButtonColors;
-let size = fn(2);
-let result = size.fileFinishedImporting("components_native/common/Alert.tsx");
-
-export default memoResult;
-export { getAlertButtonVariant };
+};

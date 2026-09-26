@@ -1,20 +1,20 @@
-// Module ID: 17829
-// Function ID: 17830
+// Module ID: 17820
+// Function ID: 17821
 // Name: JankNavigationReporter
-// Dependencies: [4649, 16360, 16356, 16361, 4651, 2]
+// Dependencies: [4646, 16351, 16347, 16352, 4648, 2]
 
-// Module 17829 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
-import getJankScreenName from "getJankScreenName" /* 16356 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16360 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16361 */;
+// Module 17820 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
+import getJankScreenName from "getJankScreenName" /* 16347 */;
+import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16351 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16352 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Array" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "PX_16" });
   }
 }
 const prototype = JankNavigationReporter.prototype;
@@ -87,8 +87,8 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
     }
     let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
     if (isChatLockedOpen) {
-      isChatLockedOpen = tmp4(4651).getChatLayout().isChatLockedOpen;
-      const tmp4Result = tmp4(4651);
+      isChatLockedOpen = tmp4(4648).getChatLayout().isChatLockedOpen;
+      const tmp4Result = tmp4(4648);
     }
     tmp2 = isChatLockedOpen;
     tmp4 = require;
@@ -97,4 +97,4 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
 };
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Array" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "PX_16" });

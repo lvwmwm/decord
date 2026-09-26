@@ -1,18 +1,18 @@
-// Module ID: 8233
-// Function ID: 8234
+// Module ID: 8228
+// Function ID: 8229
 // Name: GuildAutomodMessageStore
-// Dependencies: [2045, 5010, 1078, 8113, 8234, 5012, 7787, 11, 504, 577, 2]
+// Dependencies: [2041, 5008, 1074, 8108, 8229, 5010, 7782, 11, 504, 573, 2]
 
-// Module 8233 (GuildAutomodMessageStore)
+// Module 8228 (GuildAutomodMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7787 */;
-import MessageQueue from "MessageQueue" /* 8113 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8234 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 5010 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7782 */;
+import MessageQueue from "MessageQueue" /* 8108 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8229 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 5008 */;
 
 require = fn;
 function handleMessageSendFailedAutomod(messageData) {
@@ -63,7 +63,7 @@ function handleLoadMessages(messages) {
     return flag;
   }
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AbortCodes: hasOwnProperty, MessageEmbedTypes: metroRequire, MessageTypes: closure_7 } = Constants);
 const automodFailedMessages = {};
 let closure_9 = 0;
@@ -135,13 +135,13 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
       const tmp = require;
       let result = AutomodMessageUtils.isAutomodMessageRecord(messageRecord);
       if (result) {
-        let flag = tmp(7787).isAutomodNotification(messageRecord);
+        let flag = tmp(7782).isAutomodNotification(messageRecord);
         if (flag) {
           closure_11[guildId] = messageRecord.id;
           flag = true;
         }
         result = flag;
-        const tmpResult = tmp(7787);
+        const tmpResult = tmp(7782);
       }
       return result;
     }
@@ -152,7 +152,7 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
     message = message.message;
     let flag = null != message;
     if (flag) {
-      const obj = { id: message.id, messageData: "Set", isBlockedEdit: null, errorMessage: tmp };
+      const obj = { id: message.id, messageData: "PX_16", isBlockedEdit: null, errorMessage: tmp };
       closure_8[message.id] = obj;
       closure_9 = closure_9 + 1;
       flag = true;

@@ -1,11 +1,11 @@
-// Module ID: 17825
-// Function ID: 17826
+// Module ID: 17816
+// Function ID: 17817
 // Name: IOSAppTransactionIdExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 // Exports: isIOSAppTransactionIdTrackingEnabled
 
-// Module 17825 (IOSAppTransactionIdExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 17816 (IOSAppTransactionIdExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-01-ios-apptransactionid-tracking", defaultConfig: { enabled: false }, variations: null };

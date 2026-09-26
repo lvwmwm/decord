@@ -1,50 +1,26 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10601
+// Function ID: 10602
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 7708, 21, 4790, 558, 568, 5230, 1098, 2]
+// Dependencies: [19, 17, 7706, 21, 4788, 5230, 1094, 2]
+// Exports: PremiumUpsellGradientBackground
 
-// Module 10518 (PremiumUpsellGradientBackground)
-import c from "c" /* 568 */;
-import ConstantsIOS from "ConstantsIOS" /* 1098 */;
+// Module 10601 (PremiumUpsellGradientBackground)
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import LinearGradientDefault from "LinearGradient" /* 5230 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Gradients = fn(7708).Gradients;
+const Gradients = fn(7706).Gradients;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
-let obj2 = { gradient: null };
+const createStyles = fn(4788);
+const obj2 = { gradient: null };
 const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
 obj2.gradient = { opacity: 0.1 };
 let closure_5 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx");
 
-export const PremiumUpsellGradientBackground = ReactCompilerGating.isReactCompilerEnabled() ? ((useTier0UpsellContent) => {
-  const cResult = c.c(3);
-  const tmp4 = closure_5();
-  if (true === useTier0UpsellContent.useTier0UpsellContent) {
-    let PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
-  } else {
-    PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
-  }
-  if (cResult[0] === tmp4.gradient) {
-    if (cResult[1] === PREMIUM_TIER_2_TRI_COLOR) {
-      let tmp7 = cResult[2];
-    }
-    return tmp7;
-  }
-  const obj2 = { style: tmp4.gradient, start: null, end: null, colors: null };
-  obj2.start = ConstantsIOS.HorizontalGradient.START;
-  obj2.end = ConstantsIOS.HorizontalGradient.END;
-  obj2.colors = PREMIUM_TIER_2_TRI_COLOR;
-  const tmp9 = jsx(LinearGradientDefault, { style: tmp4.gradient, start: null, end: null, colors: null });
-  cResult[0] = tmp4.gradient;
-  cResult[1] = PREMIUM_TIER_2_TRI_COLOR;
-  cResult[2] = tmp9;
-  tmp7 = tmp9;
-}) : ((useTier0UpsellContent) => {
+export const PremiumUpsellGradientBackground = function PremiumUpsellGradientBackground(useTier0UpsellContent) {
   const obj = { style: closure_5().gradient, start: null, end: null, colors: null };
   const tmp = closure_5();
   const tmp2 = jsx;
@@ -57,4 +33,4 @@ export const PremiumUpsellGradientBackground = ReactCompilerGating.isReactCompil
   }
   obj.colors = PREMIUM_TIER_2_TRI_COLOR;
   return tmp2(LinearGradientDefault, obj);
-});
+};

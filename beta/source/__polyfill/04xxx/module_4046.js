@@ -1,29 +1,29 @@
 // Module ID: 4046
 // Function ID: 4047
-// Dependencies: [3885, 4036, 3882]
+// Dependencies: [3881, 4026, 3878]
 // Exports: default
 
 // Module 4046
-import module_3885_mod from "module_3885" /* 3885 */;
-import module_4036_mod from "module_4036" /* 4036 */;
-import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import module_3881_mod from "module_3881" /* 3881 */;
+import module_4026_mod from "module_4026" /* 4026 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let module_3885 = module_3885_mod;
-if (!module_3885) {
-  const obj = { default: module_3885 };
+let module_3881 = module_3881_mod;
+if (!module_3881) {
+  const obj = { default: module_3881 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3885;
+  tmp3 = module_3881;
 }
-module_3885 = tmp3;
-let module_4036 = module_4036_mod;
-if (!module_4036) {
-  const obj2 = { default: module_4036 };
+module_3881 = tmp3;
+let module_4026 = module_4026_mod;
+if (!module_4026) {
+  const obj2 = { default: module_4026 };
   let tmp5 = obj2;
 } else {
-  tmp5 = module_4036;
+  tmp5 = module_4026;
 }
-module_4036 = tmp5;
+module_4026 = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj3 = { default: requiredArgs };
@@ -32,10 +32,9 @@ if (!requiredArgs) {
   tmp7 = requiredArgs;
 }
 requiredArgs = tmp7;
-let c3 = 60000;
 
-export default function addMinutes(interval, arg1) {
+export default function addYears(interval, arg1) {
   requiredArgs.default(2, arguments);
-  return module_4036.default(interval, module_3885.default(arg1) * c3);
+  return module_4026.default(interval, 12 * module_3881.default(arg1));
 };
 export default exports.default;

@@ -1,21 +1,21 @@
-// Module ID: 10544
-// Function ID: 10545
+// Module ID: 10627
+// Function ID: 10628
 // Name: useTrackOpenPopout
-// Dependencies: [19, 2045, 2099, 1379, 1078, 4970, 5235, 10476, 1245, 2]
+// Dependencies: [19, 2041, 2095, 1375, 1074, 4968, 5235, 10628, 1241, 2]
 // Exports: useTrackOpenPopout
 
-// Module 10544 (useTrackOpenPopout)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+// Module 10627 (useTrackOpenPopout)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
 import useMountEffectDefault from "useMountEffect" /* 5235 */;
-import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 10476 */;
+import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 10628 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
-const EmojiInteractionPoint = fn(1379).EmojiInteractionPoint;
-const AnalyticEvents = fn(1078).AnalyticEvents;
+const EmojiInteractionPoint = fn(1375).EmojiInteractionPoint;
+const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/emojis/useTrackOpenPopout.tsx");
 

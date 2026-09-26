@@ -1,12 +1,12 @@
-// Module ID: 8124
-// Function ID: 8125
+// Module ID: 8119
+// Function ID: 8120
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1078, 2042, 577, 1275, 8125, 4611, 2031, 1389, 2]
+// Dependencies: [32, 5, 1074, 2038, 573, 1271, 8120, 4608, 2027, 1385, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 8124 (ScheduledMessageActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 8119 (ScheduledMessageActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -22,7 +22,7 @@ let closure_8 = async function _createScheduledMessage(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -46,7 +46,7 @@ let closure_8 = async function _createScheduledMessage(arg0, value) {
           closure_131_4 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -135,7 +135,7 @@ let closure_9 = async function _updateScheduledMessage(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -164,7 +164,7 @@ let closure_9 = async function _updateScheduledMessage(arg0, value) {
           closure_131_9 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -240,7 +240,7 @@ let closure_9 = async function _updateScheduledMessage(arg0, value) {
         obj.dispatch(obj13);
         c6 = 0;
         c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp63) {
       closure_5 = tmp63;
@@ -268,7 +268,7 @@ let closure_10 = async function _deleteScheduledMessage(scheduledMessageId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -328,7 +328,7 @@ let closure_10 = async function _deleteScheduledMessage(scheduledMessageId) {
           closure_131_1(closure_131_2[4]).dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp39) {
         closure_4 = tmp39;
@@ -357,7 +357,7 @@ let closure_11 = async function _sendScheduledMessageNow(scheduledMessageId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -417,7 +417,7 @@ let closure_11 = async function _sendScheduledMessageNow(scheduledMessageId) {
           closure_131_1(closure_131_2[4]).dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp39) {
         closure_4 = tmp39;
@@ -472,9 +472,9 @@ let closure_13 = async function _fetchScheduledMessages() {
   }
   return arg1;
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, MessageFlags: metroRequire } = Constants);
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageActionCreators.tsx");
 

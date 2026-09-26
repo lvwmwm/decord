@@ -1,71 +1,121 @@
 // Module ID: 1567
 // Function ID: 1568
-// Dependencies: [19, 1532]
-// Exports: useFocusEvents
+// Dependencies: [19, 1488, 1528, 1489]
+// Exports: useNavigationHelpers
 
 // Module 1567
-import NavigationContext from "NavigationContext" /* 1532 */;
 import noop from "module_19" /* 19 */;
 
-require = arg1;
+const require = fn;
+const PrivateValueStore = fn(1488).PrivateValueStore;
 
-export const useFocusEvents = function useFocusEvents(arg0) {
-  ({ state, emitter } = arg0);
-  const context = noop.useContext(NavigationContext.NavigationContext);
-  noop.useRef(undefined);
-  const key = state.routes[state.index].key;
-  const items = [key, emitter, context];
-  const effect = noop.useEffect(() => {
-    let addListenerResult;
-    if (context != null) {
-      addListenerResult = context.addListener("focus", () => {
-        ref.current = target;
-        emitter.emit({ type: "focus", target });
-      });
-    }
-    return addListenerResult;
+export const useNavigationHelpers = function useNavigationHelpers(id) {
+  id = id.id;
+  const onAction = id.onAction;
+  const onUnhandledAction = id.onUnhandledAction;
+  const getState = id.getState;
+  const emitter = id.emitter;
+  const router = id.router;
+  const context = onUnhandledAction.useContext(id(onAction[2]).NavigationContext);
+  const ref = onUnhandledAction.useRef(null);
+  ref.current = { state: id.state, base: getState() };
+  const insertionEffect = onUnhandledAction.useInsertionEffect(() => {
+    ref.current = null;
+  });
+  let items = [router, context, emitter.emit, getState, onAction, onUnhandledAction, id, ref];
+  return onUnhandledAction.useMemo(() => {
+    const obj = {};
+    const merged = Object.assign(router.actionCreators);
+    const merged1 = Object.assign(id(onAction[3]).CommonActions);
+    const keys = Object.keys(obj);
+    const reduced = keys.reduce((acc, item) => {
+      closure_0 = item;
+      acc[item] = () => {
+        const items = [...HermesBuiltin.copyRestArgs()];
+        const applyResult = obj[closure_0].apply(items);
+        let applyResultResult = applyResult;
+        if (typeof applyResult === "function") {
+          applyResultResult = applyResult(closure_1_3());
+        }
+        if (!obj2(applyResultResult)) {
+          if (closure_1_2 != null) {
+            closure_1_2(applyResultResult);
+          }
+        }
+      };
+      return acc;
+    }, {});
+    let obj2 = {};
+    const merged2 = Object.assign(context);
+    const merged3 = Object.assign(reduced);
+    obj2.dispatch = function dispatch(fn) {
+      let tmp = fn;
+      if (typeof fn === "function") {
+        tmp = fn(getState());
+      }
+      if (!obj2(tmp)) {
+        if (onUnhandledAction != null) {
+          onUnhandledAction(tmp);
+        }
+      }
+    };
+    obj2.emit = emitter.emit;
+    obj2.isFocused = context ? context.isFocused : (() => true);
+    obj2.canGoBack = function canGoBack() {
+      const tmp = getState();
+      const CommonActions = id(onAction[3]).CommonActions;
+      let flag = null !== stateForAction.getStateForAction(tmp, CommonActions.goBack(), { routeNames: tmp.routeNames, routeParamList: {}, routeGetIdList: {} });
+      if (!flag) {
+        let canGoBackResult;
+        if (context != null) {
+          canGoBackResult = obj2.canGoBack();
+        }
+        flag = canGoBackResult;
+        obj2 = context;
+      }
+      if (!flag) {
+        flag = false;
+      }
+      return flag;
+    };
+    obj2.getId = function getId() {
+      return obj;
+    };
+    obj2.getParent = function getParent(arg0) {
+      if (undefined !== arg0) {
+        let tmp2 = obj2;
+        if (obj2) {
+          obj2 = obj;
+          tmp2 = obj;
+          if (arg0 !== obj.getId()) {
+            const parent = obj2.getParent();
+            tmp2 = parent;
+            while (parent) {
+              obj2 = parent;
+              tmp2 = parent;
+              if (arg0 === parent.getId()) {
+                break;
+              }
+            }
+          }
+        }
+        return tmp2;
+      } else {
+        return context;
+      }
+    };
+    obj2.getState = function getState() {
+      const tmp = getState();
+      const current = ref.current;
+      let state = tmp;
+      if (null != current) {
+        state = tmp;
+        if (current.base === tmp) {
+          state = current.state;
+        }
+      }
+      return state;
+    };
+    return obj2;
   }, items);
-  const items1 = [key, emitter, context];
-  const effect1 = noop.useEffect(() => {
-    let addListenerResult;
-    if (context != null) {
-      addListenerResult = context.addListener("blur", () => {
-        ref.current = undefined;
-        emitter.emit({ type: "blur", target });
-      });
-    }
-    return addListenerResult;
-  }, items1);
-  const items2 = [key, emitter, context];
-  const effect2 = noop.useEffect(() => {
-    const current = ref.current;
-    let isFocusedResult = !context;
-    if (context) {
-      isFocusedResult = obj.isFocused();
-    }
-    if (isFocusedResult) {
-      ref.current = key;
-    }
-    let tmp5 = tmp4;
-    if (undefined === current) {
-      tmp5 = obj;
-    }
-    if (!tmp5) {
-      const obj2 = { type: "focus", target: key };
-      emitter.emit(obj2);
-    }
-    let tmp10 = current !== key;
-    if (tmp10) {
-      tmp10 = isFocusedResult;
-    }
-    if (tmp10) {
-      tmp10 = tmp4;
-    }
-    if (tmp10) {
-      const obj3 = { type: "blur", target: current };
-      emitter.emit(obj3);
-      const obj4 = { type: "focus", target: key };
-      emitter.emit(obj4);
-    }
-  }, items2);
 };

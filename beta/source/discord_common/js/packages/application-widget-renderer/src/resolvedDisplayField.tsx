@@ -1,11 +1,11 @@
-// Module ID: 9236
-// Function ID: 9237
+// Module ID: 9238
+// Function ID: 9239
 // Name: resolvedDisplayField
-// Dependencies: [9237, 9238, 2]
+// Dependencies: [9239, 9240, 2]
 // Exports: decimalToClampedPercentage, resolveProgressPercentage, resolveSingleStringOrSkeleton, resolveStatComponentValues, resolveTextComponentValues
 
-// Module 9236 (resolvedDisplayField)
-import resolvedValues from "resolvedValues" /* 9237 */;
+// Module 9238 (resolvedDisplayField)
+import resolvedValues from "resolvedValues" /* 9239 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedDisplayField.tsx");
@@ -26,7 +26,7 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
     let iter = resolveFieldValue(subtitle_1.fields.text, items);
     let str = null;
     if (!flag2) {
-      const items1 = [tmp9(9237).ResolvedValueType.STRING, tmp9(9237).ResolvedValueType.NUMBER];
+      const items1 = [tmp9(9239).ResolvedValueType.STRING, tmp9(9239).ResolvedValueType.NUMBER];
       str = resolveFieldValue(subtitle_1.fields.label, items1);
     }
     if (null == iter) {
@@ -76,7 +76,7 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
     return obj;
   }
 };
-export const resolveStatComponentValues = function resolveStatComponentValues(fields, resolveFieldValue, numberFormat, formatDurationNarrow, arg4) {
+export const resolveStatComponentValues = function resolveStatComponentValues(fields, fn, format, formatDurationNarrow, arg4) {
   let flag = arg4;
   if (arg4 === undefined) {
     flag = false;
@@ -90,20 +90,20 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
     return tmp4;
   } else {
     const items = [resolvedValues.ResolvedValueType.STRING, resolvedValues.ResolvedValueType.NUMBER];
-    const iter = resolveFieldValue(fields.fields.value, items);
+    const iter = fn(fields.fields.value, items);
     const items1 = [resolvedValues.ResolvedValueType.STRING];
-    const iter2 = resolveFieldValue(fields.fields.label, items1);
+    const iter2 = fn(fields.fields.label, items1);
     const items2 = [resolvedValues.ResolvedValueType.MEDIA];
-    const tmp8 = resolveFieldValue(fields.fields.icon, items2);
+    const tmp8 = fn(fields.fields.icon, items2);
     if (null == iter) {
       let obj = { status: "skeleton" };
     } else {
-      if (iter.type === tmp6(9237).ResolvedValueType.STRING) {
+      if (iter.type === tmp6(9239).ResolvedValueType.STRING) {
         let formatResult = iter.value;
-      } else if (iter.presentationType === tmp6(9238).ApplicationWidgetFieldPresentationType.DURATION) {
+      } else if (iter.presentationType === tmp6(9240).ApplicationWidgetFieldPresentationType.DURATION) {
         formatResult = formatDurationNarrow(iter.value);
       } else {
-        formatResult = numberFormat.format(iter.value);
+        formatResult = format.format(iter.value);
       }
       obj = { status: "value", text: formatResult, icon: null };
       let media;

@@ -1,19 +1,19 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 14849
+// Function ID: 14850
 // Name: SoundboardManager
-// Dependencies: [5, 1996, 2099, 5258, 3, 14860, 14861, 14862, 10176, 7614, 2]
+// Dependencies: [5, 1992, 2095, 5256, 3, 14850, 14851, 14852, 10197, 7612, 2]
 
-// Module 14859 (SoundboardManager)
+// Module 14849 (SoundboardManager)
 import LoggerDefault from "Logger" /* 3 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7614 */;
-import SoundUtils from "SoundUtils" /* 10176 */;
-import getVolumeForSoundDefault from "getVolumeForSound" /* 14861 */;
-import getSoundboardSoundURLDefault from "getSoundboardSoundURL" /* 14862 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7612 */;
+import SoundUtils from "SoundUtils" /* 10197 */;
+import getVolumeForSoundDefault from "getVolumeForSound" /* 14851 */;
+import getSoundboardSoundURLDefault from "getSoundboardSoundURL" /* 14852 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SoundboardStore from "SoundboardStore" /* 5258 */;
-import BaseSoundboardManager from "BaseSoundboardManager" /* 14860 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SoundboardStore from "SoundboardStore" /* 5256 */;
+import BaseSoundboardManager from "BaseSoundboardManager" /* 14850 */;
 
 require = fn;
 let map = new Map();
@@ -77,9 +77,9 @@ const prototype = function SoundboardManager() {
       const result = applyArgumentsResult(tmp3[9]).reportSoundFinishedPlaying(closure_129_2, closure_129_3);
       applyArgumentsResult(tmp3[9]);
     }
-    await "IconComponent";
+    await "HermesInternal";
     ({ sound: closure_129_0, soundKey: closure_129_1, soundId: closure_129_2, userId: closure_129_3 } = applyArgumentsResult);
-    return "Set";
+    return "PX_16";
   });
   applyArgumentsResult._playSoundWithListener = function() {
     const self = this;

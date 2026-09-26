@@ -1,79 +1,115 @@
 // Module ID: 4135
 // Function ID: 4136
-// Dependencies: [4127, 3886]
+// Dependencies: [3877, 4059, 4120, 3881]
 // Exports: default
 
 // Module 4135
-import _mod3886 from "module_3886" /* 3886 */;
-import code_mod from "module_4127" /* 4127 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import module_4059_mod from "module_4059" /* 4059 */;
+import module_4120_mod from "module_4120" /* 4120 */;
+import module_3881_mod from "module_3881" /* 3881 */;
 
-let code = code_mod;
-if (!code) {
-  const obj = { default: code };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = code;
+  tmp3 = _typeof;
 }
-code = tmp3;
-let closure_3 = ["years", "months", "weeks", "days", "hours", "minutes", "seconds"];
+_typeof = tmp3;
+let module_4059 = module_4059_mod;
+if (!module_4059) {
+  const obj2 = { default: module_4059 };
+  let tmp5 = obj2;
+} else {
+  tmp5 = module_4059;
+}
+module_4059 = tmp5;
+let module_4120 = module_4120_mod;
+if (!module_4120) {
+  const obj3 = { default: module_4120 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_4120;
+}
+module_4120 = tmp7;
+let module_3881 = module_3881_mod;
+if (!module_3881) {
+  const obj4 = { default: module_3881 };
+  let tmp9 = obj4;
+} else {
+  tmp9 = module_3881;
+}
+module_3881 = tmp9;
 
-export default function formatDuration(arg0, locale) {
-  closure_0 = arg0;
+export default function formatRFC3339(arg0, fractionDigits) {
   if (arguments.length < 1) {
     const _TypeError = TypeError;
-    const concat = "1 argument required, but only ".concat;
-    const typeError = new TypeError("1 argument required, but only ".concat(arguments.length, " present"));
+    const concat2 = "1 arguments required, but only ".concat;
+    const typeError = new TypeError("1 arguments required, but only ".concat(arguments.length, " present"));
     throw typeError;
   } else {
-    locale = undefined;
-    const defaultOptions = _mod3886.getDefaultOptions();
-    if (null != locale) {
-      locale = locale.locale;
-    }
-    if (null === locale) {
-      locale = defaultOptions.locale;
-    }
-    if (null === locale) {
-      locale = code.default;
-    }
-    let format;
-    if (null != locale) {
-      format = locale.format;
-    }
-    if (null === format) {
-      format = closure_3;
-    }
-    let zero;
-    if (null != locale) {
-      zero = locale.zero;
-    }
-    closure_2 = null !== zero && undefined !== zero && zero;
-    let delimiter;
-    if (null != locale) {
-      delimiter = locale.delimiter;
-    }
-    let str2 = " ";
-    if (null !== delimiter) {
-      str2 = " ";
-      if (undefined !== delimiter) {
-        str2 = delimiter;
+    const defaultResult = _typeof.default(arg0);
+    if (module_4059.default(defaultResult)) {
+      fractionDigits = undefined;
+      if (null != fractionDigits) {
+        fractionDigits = fractionDigits.fractionDigits;
       }
-    }
-    if (locale.formatDistance) {
-      const reduced = format.reduce((arr, item) => {
-        let combined = arr;
-        if (typeof closure_0[item] === "number") {
-          if (closure_2) {
-            combined = arr.concat(locale.formatDistance(tmp, tmp3));
-          } else {
-            combined = arr;
-          }
+      let num2 = 0;
+      if (null !== fractionDigits) {
+        num2 = 0;
+        if (undefined !== fractionDigits) {
+          num2 = fractionDigits;
         }
-        return combined;
-      }, []);
-      return reduced.join(str2);
+      }
+      const NumberResult = Number(num2);
+      if (NumberResult >= 0) {
+        if (NumberResult <= 3) {
+          const defaultResult1 = module_4120.default(defaultResult.getDate(), 2);
+          const fullYear = defaultResult.getFullYear();
+          const defaultResult2 = module_4120.default(defaultResult.getMonth() + 1, 2);
+          const defaultResult3 = module_4120.default(defaultResult.getHours(), 2);
+          let str4 = "";
+          const defaultResult4 = module_4120.default(defaultResult.getMinutes(), 2);
+          if (NumberResult > 0) {
+            const _Math = Math;
+            const _Math2 = Math;
+            const milliseconds = defaultResult.getMilliseconds();
+            str4 = `.${obj.default(tmp20(tmp19 * Math.pow(10, tmp8 - 3)), tmp8)}`;
+          }
+          const timezoneOffset = defaultResult.getTimezoneOffset();
+          let str6 = "Z";
+          if (0 !== timezoneOffset) {
+            const _Math3 = Math;
+            const absolute = Math.abs(timezoneOffset);
+            let str7 = "-";
+            const defaultResult6 = obj.default(module_3881.default(absolute / 60), 2);
+            if (timezoneOffset < 0) {
+              str7 = "+";
+            }
+            const combined = "".concat(str7);
+            const combined1 = combined.concat(defaultResult6, ":");
+            str6 = combined1.concat(obj.default(absolute % 60, 2));
+            const defaultResult7 = obj.default(absolute % 60, 2);
+          }
+          const concat = "".concat;
+          const combined2 = "".concat(fullYear, "-");
+          const combined3 = combined2.concat(defaultResult2, "-");
+          const combined4 = combined3.concat(defaultResult1, "T");
+          const combined5 = combined4.concat(defaultResult3, ":");
+          const combined6 = combined5.concat(defaultResult4, ":");
+          const combined7 = combined6.concat(module_4120.default(defaultResult.getSeconds(), 2));
+          const combined8 = combined7.concat(str4);
+          return combined8.concat(str6);
+        }
+      }
+      const _RangeError2 = RangeError;
+      const rangeError = new RangeError("fractionDigits must be between 0 and 3 inclusively");
+      throw rangeError;
     } else {
-      return "";
+      const _RangeError = RangeError;
+      const rangeError1 = new RangeError("Invalid time value");
+      throw rangeError1;
     }
   }
 };

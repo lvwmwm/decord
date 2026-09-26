@@ -1,9 +1,53 @@
 // Module ID: 11063
 // Function ID: 11064
-// Dependencies: [1125]
+// Dependencies: [19, 21, 1637]
+// Exports: GlobalStateProvider, useGlobalState
 
 // Module 11063
-import registerAsset from "module_1125" /* 1125 */;
+import cancelAnimation from "cancelAnimation" /* 1637 */;
+import noop from "module_19" /* 19 */;
 
+require = fn;
+const jsx = fn(21).jsx;
+let context = noop.createContext({});
+const __initData = { code: "function pnpm_indexTsx1(index,dimensions){const{itemDimensions}=this.__closure;itemDimensions.value={...itemDimensions.value,[index]:dimensions};}" };
+const __initData2 = { code: "function pnpm_indexTsx2(dimensions){const{containerSize}=this.__closure;containerSize.value=dimensions;}" };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 277, height: 44, scales: [2, 3], hash: "80b2b0d70a370a3545b5c6b85cfa62d7", name: "img_boost_activated_border", type: "png" });
+export const GlobalStateContext = context;
+export const GlobalStateProvider = (arg0) => {
+  ({ children, value } = arg0);
+  const sharedValue = cancelAnimation.useSharedValue({ width: 0, height: 0 });
+  const sharedValue1 = cancelAnimation.useSharedValue({});
+  const fn = function c(arg0, arg1) {
+    const obj = {};
+    const merged = Object.assign(sharedValue1.value);
+    obj[arg0] = arg1;
+    sharedValue1.value = obj;
+  };
+  fn.__closure = { itemDimensions: sharedValue1 };
+  fn.__workletHash = 9846581158902;
+  fn.__initData = __initData;
+  const fn2 = function _(value) {
+    sharedValue.value = value;
+  };
+  fn2.__closure = { containerSize: sharedValue };
+  fn2.__workletHash = 5978604737778;
+  fn2.__initData = __initData2;
+  const obj3 = { value: null, children: null };
+  const obj4 = {};
+  let merged = Object.assign(value);
+  obj4.layout = { containerSize: sharedValue, itemDimensions: sharedValue1, updateItemDimensions: fn, updateContainerSize: fn2 };
+  obj3.value = obj4;
+  obj3.children = children;
+  return <context.Provider value={null}>{null}</context.Provider>;
+};
+export const useGlobalState = () => {
+  context = noop.useContext(context);
+  if (context) {
+    return context;
+  } else {
+    const _Error = Error;
+    const error = new Error("useGlobalState must be used within a GlobalStateProvider");
+    throw error;
+  }
+};

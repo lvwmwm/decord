@@ -1,12 +1,12 @@
-// Module ID: 5432
-// Function ID: 5433
+// Module ID: 5430
+// Function ID: 5431
 // Name: webpConversion
-// Dependencies: [5, 3, 5433, 1244, 2]
+// Dependencies: [5, 3, 5431, 1240, 2]
 // Exports: maybeConvertToWebP
 
-// Module 5432 (webpConversion)
+// Module 5430 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import MurmurHashV3Default from "MurmurHashV3" /* 1244 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -36,7 +36,7 @@ let closure_7 = async function _shouldConvertToWebP2(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ let closure_9 = async function _performWebPConversion(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -445,7 +445,7 @@ let closure_10 = async function _maybeConvertToWebP(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

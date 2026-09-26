@@ -1,16 +1,16 @@
-// Module ID: 18185
-// Function ID: 18186
+// Module ID: 18176
+// Function ID: 18177
 // Name: useCreatorMonetizationEligibility
-// Dependencies: [5, 32, 19, 18155, 18158, 4692, 2]
+// Dependencies: [5, 32, 19, 18146, 18149, 4689, 2]
 // Exports: default
 
-// Module 18185 (useCreatorMonetizationEligibility)
-import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 18158 */;
+// Module 18176 (useCreatorMonetizationEligibility)
+import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 18149 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-let closure_6 = fn(18155).CreatorMonetizationApplicationState;
+let closure_6 = fn(18146).CreatorMonetizationApplicationState;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/useCreatorMonetizationEligibility.tsx");
 
@@ -31,7 +31,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
           if (2 === tmp8) {
             c4 = 1;
             closure_129_1 = closure_3;
-            const tmp45 = new closure_0(4692)(closure_129_1);
+            const tmp45 = new closure_0(4689)(closure_129_1);
             tmp4(tmp45);
             c4 = 0;
             closure_1(false);
@@ -78,7 +78,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
             obj6.notNSFW = 0 === Object.keys(closure_129_0.nsfw_properties).length;
             obj6.canApply = closure_129_0.can_apply;
             const latest_request2 = closure_129_0.latest_request;
-            state = undefined;
+            let state;
             if (latest_request2 != null) {
               state = latest_request2.state;
             }

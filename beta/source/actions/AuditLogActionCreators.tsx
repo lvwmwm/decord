@@ -1,13 +1,13 @@
-// Module ID: 17995
-// Function ID: 17996
+// Module ID: 17986
+// Function ID: 17987
 // Name: AuditLogActionCreators
-// Dependencies: [17990, 1078, 1275, 577, 2]
+// Dependencies: [17981, 1074, 1271, 573, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 17995 (AuditLogActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17990 */;
+// Module 17986 (AuditLogActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17981 */;
 
 require = fn;
 function makeRequest(arg0, arg1) {
@@ -38,7 +38,7 @@ function makeRequest(arg0, arg1) {
   const request = { url: React4.GUILD_AUDIT_LOG(arg0), query: obj, oldFormErrors: true, rejectWithError: true };
   return HTTP.get(request);
 }
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: closure_4, AUDIT_LOG_PAGE_LIMIT: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/AuditLogActionCreators.tsx");
@@ -111,7 +111,7 @@ export const filterByUserId = function filterByUserId(id, guildId) {
       if (!tmp5) {
         if (null != guildId) {
           DispatcherDefault.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          const obj2 = { userId: id, action: "Array", targetId: "toCharArray$esjava$1" };
+          const obj2 = { userId: id, action: "Array", targetId: "call" };
           const tmp10Result = DispatcherDefault;
           nextPromise = makeRequest(guildId, obj2).then((body) => {
             ({ audit_log_entries, integrations, users, webhooks, guild_scheduled_events, auto_moderation_rules, threads, application_commands } = body.body);

@@ -1,35 +1,35 @@
-// Module ID: 8535
-// Function ID: 8536
+// Module ID: 8530
+// Function ID: 8531
 // Name: UserProfileGradientUtils
-// Dependencies: [32, 1078, 1096, 4641, 12, 4642, 676, 2]
+// Dependencies: [32, 1074, 1092, 4638, 12, 4639, 672, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getGradientPercentageColorInRgb, getProfileTheme, getUserProfileGradientContainerColors, getValueInColorGradientByPercentage
 
-// Module 8535 (UserProfileGradientUtils)
+// Module 8530 (UserProfileGradientUtils)
 import _mod12 from "module_12" /* 12 */;
-import _modDef676 from "module_676" /* 676 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
-import utils_ColorDefault from "utils/Color" /* 4641 */;
-import shared from "shared" /* 4642 */;
+import _modDef672 from "module_672" /* 672 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
+import utils_ColorDefault from "utils/Color" /* 4638 */;
+import shared from "shared" /* 4639 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
-const ThemeTypes = fn(1078).ThemeTypes;
+const ThemeTypes = fn(1074).ThemeTypes;
 fn(12);
 const apply = fn(12);
-const memoizeResult = apply.memoize((primaryColor) => {
+const memoizeResult = apply.memoize((memo) => {
   const obj = shared;
-  const contrastingColor = obj.getContrastingColor(primaryColor, { base: "#ffffff", contrastRatio: shared.WCAGContrastRatios.HighContrastText });
+  const contrastingColor = obj.getContrastingColor(memo, { base: "#ffffff", contrastRatio: shared.WCAGContrastRatios.HighContrastText });
   const obj2 = { base: "#ffffff", contrastRatio: shared.WCAGContrastRatios.HighContrastText };
   return utils_ColorUtils.hex2int(contrastingColor);
 }, (arg0) => arg0);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/UserProfileGradientUtils.tsx");
 
-export const getProfileTheme = function getProfileTheme(first1) {
-  if (null == first1) {
+export const getProfileTheme = function getProfileTheme(tmp4Result8) {
+  if (null == tmp4Result8) {
     return null;
   } else {
-    if (obj.getDarkness(first1) > 0.5) {
+    if (obj.getDarkness(tmp4Result8) > 0.5) {
       let LIGHT = ThemeTypes.DARK;
     } else {
       LIGHT = ThemeTypes.LIGHT;
@@ -79,16 +79,16 @@ export const calculateModalV2BackgroundColor = apply.memoize((hex2intResult, arg
       obj = utils_ColorUtils;
     }
   }
-  const obj2 = _modDef676;
-  const mixResult = obj2.mix(_modDef676(hex2intResult), _modDef676(arg1), 0.5, "lab");
+  const obj2 = _modDef672;
+  const mixResult = obj2.mix(_modDef672(hex2intResult), _modDef672(arg1), 0.5, "lab");
   const result = Math.round(100 * mixResult.get("hsl.l")) / 100;
   if (tmp !== ThemeTypes.LIGHT) {
     let clampResult = _mod12.clamp(result, 0, 0.1);
   } else {
     clampResult = _mod12.clamp(result, 0.8, 1);
   }
-  const tmp10 = _modDef676(hex2intResult);
-  const result1 = _modDef676(mixResult).set("hsl.l", clampResult);
+  const tmp10 = _modDef672(hex2intResult);
+  const result1 = _modDef672(mixResult).set("hsl.l", clampResult);
   return result1.num();
 }, (arg0, arg1, arg2) => "" + arg0 + "-" + arg1 + "-" + arg2);
 export const getGradientPercentageColorInRgb = function getGradientPercentageColorInRgb(arg0, arg1, arg2) {

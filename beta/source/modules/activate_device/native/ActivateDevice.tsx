@@ -1,14 +1,15 @@
-// Module ID: 14183
-// Function ID: 14184
+// Module ID: 14173
+// Function ID: 14174
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 14184, 14186, 9349, 9390, 14187, 9360, 14188, 5834, 14189, 14193, 14194, 1401, 14195, 7403, 2]
+// Dependencies: [32, 19, 17, 21, 4788, 576, 14174, 14176, 9351, 9392, 14177, 9362, 14178, 5836, 14179, 14183, 14184, 1397, 14185, 7400, 2]
+// Exports: ActivateDevice
 
-// Module 14183 (ActivateDevice)
-import nativeDefault from "native" /* 580 */;
-import FastImageDefault from "FastImage" /* 5834 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 9390 */;
-import _modDef14187 from "module_14187" /* 14187 */;
-import _modDef14188 from "module_14188" /* 14188 */;
+// Module 14173 (ActivateDevice)
+import nativeDefault from "native" /* 576 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 9392 */;
+import _modDef14177 from "module_14177" /* 14177 */;
+import _modDef14178 from "module_14178" /* 14178 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,478 +19,17 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ImageBackground: metroRequire, ActivityIndicator: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { background: { flex: 1 }, imageStyle: { marginVertical: 0, resizeMode: "cover", backgroundColor: nativeDefault.colors.TEXT_BRAND }, safeArea: { flex: 1, justifyContent: "center", alignItems: "center" }, content: null, scroller: null, scrollerContent: null };
 let obj3 = { marginVertical: 0, resizeMode: "cover", backgroundColor: nativeDefault.colors.TEXT_BRAND };
 obj2.content = { maxWidth: 480, backgroundColor: nativeDefault.colors.PANEL_BG, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.lg, padding: 24, marginHorizontal: 24, marginVertical: 36, shadowColor: nativeDefault.colors.BLACK, shadowOpacity: 0.2, shadowOffset: { width: 0, height: 4 }, shadowRadius: 4 };
 obj2.scroller = { alignSelf: "stretch", flexGrow: 0 };
 obj2.scrollerContent = { flexDirection: "column", gap: 16 };
 let closure_10 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { maxWidth: 480, backgroundColor: nativeDefault.colors.PANEL_BG, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.lg, padding: 24, marginHorizontal: 24, marginVertical: 36, shadowColor: nativeDefault.colors.BLACK, shadowOpacity: 0.2, shadowOffset: { width: 0, height: 4 }, shadowRadius: 4 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
 
-export const ActivateDevice = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
-  const cResult = first1(first2[7]).c(39);
-  onClose = onClose.onClose;
-  const tmp4 = closure_10();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { type: "user-code-input", usePrefilledCode: true };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  [first1, importDefault] = deviceCodeAuthorizeCallback.useState(first);
-  [first2, _slicedToArray] = deviceCodeAuthorizeCallback.useState(null);
-  let obj = first1(first2[7]);
-  const activateDeviceStepTracking = first1(first2[8]).useActivateDeviceStepTracking(first1);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function v() {
-      closure_1({ type: "user-code-input" });
-    };
-    cResult[1] = fn;
-    let tmp11 = fn;
-  } else {
-    tmp11 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function w(userCodeData) {
-      closure_1({ type: "success", userCodeData });
-    };
-    cResult[2] = fn2;
-    let tmp12 = fn2;
-  } else {
-    tmp12 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor(arg0) {
-        obj = { type: "error", userCodeData: onClose };
-        tmp = closure_1(obj);
-        return;
-      }
-    }
-    cResult[3] = L;
-    const tmp13 = L;
-  } else {
-    class L {
-      constructor(arg0) {
-        obj = { type: "error", userCodeData: onClose };
-        tmp = closure_1(obj);
-        return;
-      }
-    }
-  }
-  const tmpResult = first1(first2[8]);
-  deviceCodeAuthorizeCallback = first1(first2[9]).useDeviceCodeAuthorizeCallback(tmp11, tmp13, tmp12);
-  if (cResult[4] !== deviceCodeAuthorizeCallback) {
-    class U {
-      constructor(arg0) {
-        closure_0 = onClose;
-        obj = { type: "authorization", userCodeData: onClose };
-        tmp = closure_1(obj);
-        obj2 = closure_0(closure_2[10]);
-        obj1 = {
-          clientId: onClose.clientId,
-          scopes: onClose.scopes,
-          responseType: "code",
-          isTrustedName: true,
-          isEmbeddedFlow: true,
-          withBackPressHandler: false,
-          callbackWithoutPost(arg0) {
-                  return deviceCodeAuthorizeCallback(closure_0, arg0);
-                }
-        };
-        openOAuth2ModalResult = obj2.openOAuth2Modal(obj1);
-        return;
-      }
-    }
-    cResult[4] = deviceCodeAuthorizeCallback;
-    cResult[5] = U;
-  } else {
-    class U {
-      constructor(arg0) {
-        closure_0 = onClose;
-        obj = { type: "authorization", userCodeData: onClose };
-        tmp = closure_1(obj);
-        obj2 = closure_0(closure_2[10]);
-        obj1 = {
-          clientId: onClose.clientId,
-          scopes: onClose.scopes,
-          responseType: "code",
-          isTrustedName: true,
-          isEmbeddedFlow: true,
-          withBackPressHandler: false,
-          callbackWithoutPost(arg0) {
-                  return deviceCodeAuthorizeCallback(closure_0, arg0);
-                }
-        };
-        openOAuth2ModalResult = obj2.openOAuth2Modal(obj1);
-        return;
-      }
-    }
-  }
-  if (cResult[6] !== first1) {
-    class B {
-      constructor() {
-        if ("userCodeData" in closure_0) {
-          userCodeData = closure_0.userCodeData;
-          tmp = closure_0;
-          tmp2 = closure_2;
-          items = [, ];
-          items[0] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
-          items[1] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
-          if (items.includes(userCodeData.clientId)) {
-            tmp6 = closure_3;
-            tmp7 = closure_1;
-            tmp8 = closure_3(closure_1(tmp2[12]));
-          } else {
-            scopes = userCodeData.scopes;
-            if (scopes.some((item) => first1(first2[13]).isSocialLayerUmbrellaScope(item))) {
-              tmp3 = closure_3;
-              tmp4 = closure_1;
-              tmp5 = closure_3(closure_1(tmp2[14]));
-            }
-          }
-        }
-        return;
-      }
-    }
-    let items = [first1];
-    cResult[6] = first1;
-    cResult[7] = B;
-    cResult[8] = items;
-    let tmp17 = items;
-    const tmp16 = B;
-  } else {
-    class B {
-      constructor() {
-        if ("userCodeData" in closure_0) {
-          userCodeData = closure_0.userCodeData;
-          tmp = closure_0;
-          tmp2 = closure_2;
-          items = [, ];
-          items[0] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
-          items[1] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
-          if (items.includes(userCodeData.clientId)) {
-            tmp6 = closure_3;
-            tmp7 = closure_1;
-            tmp8 = closure_3(closure_1(tmp2[12]));
-          } else {
-            scopes = userCodeData.scopes;
-            if (scopes.some((item) => first1(first2[13]).isSocialLayerUmbrellaScope(item))) {
-              tmp3 = closure_3;
-              tmp4 = closure_1;
-              tmp5 = closure_3(closure_1(tmp2[14]));
-            }
-          }
-        }
-        return;
-      }
-    }
-    tmp17 = cResult[8];
-  }
-  const effect = obj3.useEffect(tmp16, tmp17);
-  if (cResult[9] !== first2) {
-    class R {
-      constructor() {
-        if (null != closure_2) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[15]);
-          preloadResult = obj.preload(tmp);
-        }
-        return;
-      }
-    }
-    const items1 = [first2];
-    cResult[9] = first2;
-    cResult[10] = R;
-    cResult[11] = items1;
-    let tmp20 = items1;
-    const tmp19 = R;
-  } else {
-    class R {
-      constructor() {
-        if (null != closure_2) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[15]);
-          preloadResult = obj.preload(tmp);
-        }
-        return;
-      }
-    }
-    tmp20 = cResult[11];
-  }
-  const effect1 = obj3.useEffect(tmp19, tmp20);
-  const type = first1.type;
-  if ("user-code-input" === type) {
-    class R {
-      constructor() {
-        if (null != closure_2) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[15]);
-          preloadResult = obj.preload(tmp);
-        }
-        return;
-      }
-    }
-    if (first1.usePrefilledCode) {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[12] === onClose) {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-    }
-    const obj4 = { prefilledUserCode: tmp31, onUserCodeAccepted: tmp15, onClose };
-    const tmp34 = jsx(tmp(tmp2[16]).UserCodeInput, { prefilledUserCode: tmp31, onUserCodeAccepted: tmp15, onClose });
-    cResult[12] = onClose;
-    cResult[13] = tmp31;
-    cResult[14] = tmp15;
-    cResult[15] = tmp34;
-  } else {
-    class R {
-      constructor() {
-        if (null != closure_2) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[15]);
-          preloadResult = obj.preload(tmp);
-        }
-        return;
-      }
-    }
-    if ("authorization" === type) {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        class R {
-          constructor() {
-            if (null != closure_2) {
-              tmp2 = closure_1;
-              tmp3 = closure_2;
-              obj = closure_1(closure_2[15]);
-              preloadResult = obj.preload(tmp);
-            }
-            return;
-          }
-        }
-        const tmp30 = <closure_7 animating />;
-        cResult[16] = tmp30;
-        const tmp28 = tmp30;
-      } else {
-        class R {
-          constructor() {
-            if (null != closure_2) {
-              tmp2 = closure_1;
-              tmp3 = closure_2;
-              obj = closure_1(closure_2[15]);
-              preloadResult = obj.preload(tmp);
-            }
-            return;
-          }
-        }
-      }
-      let tmp22 = tmp28;
-    } else {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-      if ("success" === type) {
-        class R {
-          constructor() {
-            if (null != closure_2) {
-              tmp2 = closure_1;
-              tmp3 = closure_2;
-              obj = closure_1(closure_2[15]);
-              preloadResult = obj.preload(tmp);
-            }
-            return;
-          }
-        }
-        const obj5 = { onComplete: onClose, data: first1.userCodeData, successImage: first2 };
-        const tmp27 = jsx(tmp(tmp2[17]).ActivateDeviceSuccess, { onComplete: onClose, data: first1.userCodeData, successImage: first2 });
-        cResult[17] = onClose;
-        cResult[18] = first1.userCodeData;
-        cResult[19] = first2;
-        cResult[20] = tmp27;
-      } else {
-        class R {
-          constructor() {
-            if (null != closure_2) {
-              tmp2 = closure_1;
-              tmp3 = closure_2;
-              obj = closure_1(closure_2[15]);
-              preloadResult = obj.preload(tmp);
-            }
-            return;
-          }
-        }
-        tmp22 = null;
-        if ("error" === type) {
-          class R {
-            constructor() {
-              if (null != closure_2) {
-                tmp2 = closure_1;
-                tmp3 = closure_2;
-                obj = closure_1(closure_2[15]);
-                preloadResult = obj.preload(tmp);
-              }
-              return;
-            }
-          }
-          if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-            class R {
-              constructor() {
-                if (null != closure_2) {
-                  tmp2 = closure_1;
-                  tmp3 = closure_2;
-                  obj = closure_1(closure_2[15]);
-                  preloadResult = obj.preload(tmp);
-                }
-                return;
-              }
-            }
-            const obj6 = { onRetry: tmp11 };
-            const tmp24 = jsx(tmp(tmp2[18]).ActivateDeviceError, { onRetry: tmp11 });
-            cResult[21] = tmp24;
-            const tmp23 = tmp24;
-          } else {
-            class R {
-              constructor() {
-                if (null != closure_2) {
-                  tmp2 = closure_1;
-                  tmp3 = closure_2;
-                  obj = closure_1(closure_2[15]);
-                  preloadResult = obj.preload(tmp);
-                }
-                return;
-              }
-            }
-          }
-          tmp22 = tmp23;
-        }
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-      const source = obj9.makeSource(require("module_14195"));
-      cResult[22] = source;
-    } else {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[23] !== tmp4.background) {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-      tmp39[0] = tmp4.background;
-      cResult[23] = tmp4.background;
-      cResult[24] = tmp39;
-    } else {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[25] === tmp22) {
-      class R {
-        constructor() {
-          if (null != closure_2) {
-            tmp2 = closure_1;
-            tmp3 = closure_2;
-            obj = closure_1(closure_2[15]);
-            preloadResult = obj.preload(tmp);
-          }
-          return;
-        }
-      }
-    }
-    const obj7 = { bounces: false, style: null, contentContainerStyle: null, children: null };
-    ({ scroller: obj10.style, scrollerContent: obj10.contentContainerStyle } = tmp4);
-    obj7.children = tmp22;
-    const tmp43 = <closure_8 bounces={false} style={null} contentContainerStyle={null}>{null}</closure_8>;
-    cResult[25] = tmp22;
-    cResult[26] = tmp4.scroller;
-    cResult[27] = tmp4.scrollerContent;
-    cResult[28] = tmp43;
-  }
-}) : ((onClose) => {
+export const ActivateDevice = (onClose) => {
   onClose = onClose.onClose;
   first1 = undefined;
   _slicedToArray = undefined;
@@ -499,7 +39,7 @@ export const ActivateDevice = ReactCompilerGating.isReactCompilerEnabled() ? ((o
   const first = tmp2[0];
   importDefault = tmp4;
   [first1, _slicedToArray] = deviceCodeAuthorizeCallback.useState(null);
-  const activateDeviceStepTracking = first(first1[8]).useActivateDeviceStepTracking(first);
+  const activateDeviceStepTracking = first(first1[6]).useActivateDeviceStepTracking(first);
   let items = [tmp2[1]];
   const callback = deviceCodeAuthorizeCallback.useCallback(() => {
     closure_1({ type: "user-code-input" });
@@ -512,14 +52,14 @@ export const ActivateDevice = ReactCompilerGating.isReactCompilerEnabled() ? ((o
   const callback2 = deviceCodeAuthorizeCallback.useCallback((userCodeData) => {
     closure_1({ type: "error", userCodeData });
   }, items2);
-  let obj = first(first1[8]);
-  deviceCodeAuthorizeCallback = first(first1[9]).useDeviceCodeAuthorizeCallback(callback, callback2, callback1);
+  let obj = first(first1[6]);
+  deviceCodeAuthorizeCallback = first(first1[7]).useDeviceCodeAuthorizeCallback(callback, callback2, callback1);
   const items3 = [deviceCodeAuthorizeCallback];
   const items4 = [first];
   const callback3 = deviceCodeAuthorizeCallback.useCallback((userCodeData) => {
     closure_0 = userCodeData;
     closure_1({ type: "authorization", userCodeData });
-    first(first1[10]).openOAuth2Modal({
+    first(first1[8]).openOAuth2Modal({
       clientId: userCodeData.clientId,
       scopes: userCodeData.scopes,
       responseType: "code",
@@ -536,11 +76,11 @@ export const ActivateDevice = ReactCompilerGating.isReactCompilerEnabled() ? ((o
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef14187);
+        closure_3(_modDef14177);
       } else {
         const scopes = userCodeData.scopes;
-        if (scopes.some((item) => first(first1[13]).isSocialLayerUmbrellaScope(item))) {
-          closure_3(_modDef14188);
+        if (scopes.some((item) => first(first1[11]).isSocialLayerUmbrellaScope(item))) {
+          closure_3(_modDef14178);
         }
       }
     }
@@ -558,28 +98,28 @@ export const ActivateDevice = ReactCompilerGating.isReactCompilerEnabled() ? ((o
       prefilledUserCode = onClose.prefilledUserCode;
     }
     const obj3 = { prefilledUserCode, onUserCodeAccepted: callback3, onClose };
-    let tmp21Result = jsx(tmp7(tmp8[16]).UserCodeInput, { prefilledUserCode, onUserCodeAccepted: callback3, onClose });
+    let tmp21Result = jsx(tmp7(tmp8[14]).UserCodeInput, { prefilledUserCode, onUserCodeAccepted: callback3, onClose });
   } else if ("authorization" === type) {
     tmp21Result = <closure_7 animating />;
   } else if ("success" === type) {
     const obj4 = { onComplete: onClose, data: first.userCodeData, successImage: first1 };
-    tmp21Result = jsx(tmp7(tmp8[17]).ActivateDeviceSuccess, { onComplete: onClose, data: first.userCodeData, successImage: first1 });
+    tmp21Result = jsx(tmp7(tmp8[15]).ActivateDeviceSuccess, { onComplete: onClose, data: first.userCodeData, successImage: first1 });
   } else {
     tmp21Result = null;
     if ("error" === type) {
       const obj5 = { onRetry: callback };
-      tmp21Result = jsx(tmp7(tmp8[18]).ActivateDeviceError, { onRetry: callback });
+      tmp21Result = jsx(tmp7(tmp8[16]).ActivateDeviceError, { onRetry: callback });
     }
   }
   const obj6 = { source: null, imageStyle: null, style: null, children: null };
-  const obj2 = first(first1[9]);
-  obj6.source = first(first1[19]).makeSource(require("module_14195"));
+  const obj2 = first(first1[7]);
+  obj6.source = first(first1[17]).makeSource(require("module_14185"));
   obj6.imageStyle = tmp.imageStyle;
   const items6 = [tmp.background];
   obj6.style = items6;
   const rect = { bottom: true, top: true, style: tmp.safeArea, children: null };
   const obj7 = { style: tmp.content, children: <closure_8 bounces={false} style={tmp.scroller} contentContainerStyle={tmp.scrollerContent}>{tmp21Result}</closure_8> };
   rect.children = <closure_5 style={tmp.content}><closure_8 bounces={false} style={tmp.scroller} contentContainerStyle={tmp.scrollerContent}>{tmp21Result}</closure_8></closure_5>;
-  obj6.children = jsx(first(first1[21]).SafeAreaPaddingView, { bottom: true, top: true, style: tmp.safeArea, children: null });
+  obj6.children = jsx(first(first1[19]).SafeAreaPaddingView, { bottom: true, top: true, style: tmp.safeArea, children: null });
   return <closure_6 source={null} imageStyle={null} style={null}>{null}</closure_6>;
-});
+};

@@ -1,11 +1,11 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 10382
+// Function ID: 10383
 // Name: RpcNotificationSettingsStore
-// Dependencies: [502, 504, 577, 2]
+// Dependencies: [502, 504, 573, 2]
 
-// Module 12989 (RpcNotificationSettingsStore)
+// Module 10382 (RpcNotificationSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 let closure_1 = {};

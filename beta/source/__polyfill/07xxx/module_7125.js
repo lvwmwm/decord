@@ -1,14 +1,42 @@
 // Module ID: 7125
 // Function ID: 7126
-// Dependencies: [7126, 7127, 7128, 7130]
+// Dependencies: [109, 19, 21, 7126, 7123]
 
 // Module 7125
-import _mod7126 from "module_7126" /* 7126 */;
-import _mod7127 from "module_7127" /* 7127 */;
-import _mod7128 from "module_7128" /* 7128 */;
-import _mod7130 from "module_7130" /* 7130 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import noop_mod from "module_19" /* 19 */;
 
-
-export default function _slicedToArray(arg0, arg1) {
-  return _mod7126(arg0) || _mod7127(arg0, arg1) || _mod7128(arg0, arg1) || _mod7130();
-};
+let closure_2 = ["focusHook", "scrollEventsHandlersHook", "enableFooterMarginAdjustment"];
+let noop = fn(19);
+const forwardRef = noop.forwardRef;
+({ useMemo: metroRequire, memo } = noop);
+let noop = noop_mod;
+const jsx = fn(21).jsx;
+try {
+  const FlashList = fn(7126);
+  const memoResult = memo(forwardRef((focusHook, ref) => {
+    focusHook = focusHook.focusHook;
+    const scrollEventsHandlersHook = focusHook.scrollEventsHandlersHook;
+    const enableFooterMarginAdjustment = focusHook.enableFooterMarginAdjustment;
+    closure_6(() => {
+      if (!FlashList) {
+        throw "You need to install FlashList first, `yarn install @shopify/flash-list`";
+      }
+    }, []);
+    const items = [focusHook, scrollEventsHandlersHook, enableFooterMarginAdjustment];
+    const tmp = _objectWithoutProperties(focusHook, enableFooterMarginAdjustment);
+    let merged = Object.assign(tmp);
+    return <FlashList.FlashList ref={arg1} renderScrollComponent={closure_6(() => forwardRef((arg0, ref) => {
+      const merged = Object.assign(arg0, Object.assign({ data: 0 }));
+      const obj = { ref };
+      const merged1 = Object.assign(merged);
+      obj.focusHook = focusHook;
+      obj.scrollEventsHandlersHook = scrollEventsHandlersHook;
+      obj.enableFooterMarginAdjustment = enableFooterMarginAdjustment;
+      return jsx(focusHook(scrollEventsHandlersHook[4]), { ref });
+    }), items)} />;
+  }));
+  exports.default = memoResult;
+  exports.BottomSheetFlashList = memoResult;
+} catch (err) {
+}

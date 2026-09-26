@@ -1,9 +1,19 @@
 // Module ID: 8192
 // Function ID: 8193
-// Dependencies: [1125]
+// Dependencies: []
+// Exports: debounce
 
 // Module 8192
-import registerAsset from "module_1125" /* 1125 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "94a3ac930e81037e0d0d694987ad1d50", name: "PaperIcon", type: "png" });
+export function debounce(arg0, arg1) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  return function() {
+    const self = this;
+    closure_0 = [...arguments];
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      closure_0.apply(self, closure_0);
+    }, self);
+  };
+}

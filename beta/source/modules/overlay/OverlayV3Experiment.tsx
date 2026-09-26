@@ -1,19 +1,16 @@
-// Module ID: 4637
-// Function ID: 4638
+// Module ID: 4634
+// Function ID: 4635
 // Name: OverlayV3Experiment
-// Dependencies: [1438, 558, 568, 2]
-// Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments
+// Dependencies: [1434, 2]
+// Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode
 
-// Module 4637 (OverlayV3Experiment)
-import c from "c" /* 568 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1438 */;
-import "ReactCompilerGating";
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 4634 (OverlayV3Experiment)
+import ApexExperiment_mod from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 let ApexExperiment = ApexExperiment_mod;
-const obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "emoji" }, variations: null };
-let obj2 = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
+const obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "r" }, variations: null };
+const obj2 = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
 obj2[3] = { keybindOverride: "ctrl+l" };
 obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
@@ -29,24 +26,6 @@ const obj6 = { 1: null };
 obj6[1] = { enabled: true };
 obj5.variations = obj6;
 const apexExperiment2 = ApexExperiment.createApexExperiment(obj5);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    let tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment1.useConfig(tmp2);
-}) : ((location) => apexExperiment1.useConfig({ location }));
-function getOverlayChatConfig(location) {
-  return apexExperiment1.getConfig({ location });
-}
-function getOverlayStreamerModeConfig(StreamerModeStore) {
-  return apexExperiment2.getConfig({ location: StreamerModeStore });
-}
 const result = size.fileFinishedImporting("modules/overlay/OverlayV3Experiment.tsx");
 
 export const OverlayDefaultKeybindOverrideExperiment = apexExperiment;
@@ -54,22 +33,19 @@ export const getOverlayDefaultKeybind = function getOverlayDefaultKeybind(locati
   return apexExperiment.getConfig({ location });
 };
 export const OverlayChatExperiment = apexExperiment1;
-export { getOverlayChatConfig };
-export const useOverlayChat = tmp4;
+export const getOverlayChatConfig = function getOverlayChatConfig(location) {
+  return apexExperiment1.getConfig({ location });
+};
+export const useOverlayChat = function useOverlayChat(location) {
+  return apexExperiment1.useConfig({ location });
+};
 export const OverlayStreamerModeExperiment = apexExperiment2;
-export { getOverlayStreamerModeConfig };
-export const useOverlayStreamerMode = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    let tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment2.useConfig(tmp2).enabled;
-}) : ((location) => apexExperiment2.useConfig({ location }).enabled);
+export const getOverlayStreamerModeConfig = function getOverlayStreamerModeConfig(StreamerModeStore) {
+  return apexExperiment2.getConfig({ location: StreamerModeStore });
+};
+export const useOverlayStreamerMode = function useOverlayStreamerMode(location) {
+  return apexExperiment2.useConfig({ location }).enabled;
+};
 export const trackOverlayInitializedExperiments = function trackOverlayInitializedExperiments() {
   const config = apexExperiment1.getConfig({ location: "OVERLAY_INITIALIZED" });
   const config1 = apexExperiment2.getConfig({ location: "OVERLAY_INITIALIZED" });

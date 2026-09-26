@@ -1,10 +1,10 @@
-// Module ID: 5309
-// Function ID: 5310
+// Module ID: 5307
+// Function ID: 5308
 // Name: VibegrationsTypes
 // Dependencies: [2]
 // Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isProjectShared, isVibegrationsAttachmentWithinLimit, projectSupportsCollaboratorRoles, projectSupportsVisibility, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit
 
-// Module 5309 (VibegrationsTypes)
+// Module 5307 (VibegrationsTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ PUBLIC: 1, SHAREABLE: 2 });

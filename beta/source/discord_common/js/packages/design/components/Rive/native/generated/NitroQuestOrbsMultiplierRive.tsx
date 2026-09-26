@@ -1,150 +1,42 @@
-// Module ID: 4599
-// Function ID: 4600
+// Module ID: 4596
+// Function ID: 4597
 // Name: NitroQuestOrbsMultiplierRive
-// Dependencies: [109, 19, 21, 558, 4523, 568, 4600, 4576, 2]
+// Dependencies: [109, 19, 21, 4518, 4597, 4573, 2]
 
-// Module 4599 (NitroQuestOrbsMultiplierRive)
-import c from "c" /* 568 */;
-import BaseRive from "BaseRive" /* 4523 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4576 */;
+// Module 4596 (NitroQuestOrbsMultiplierRive)
+import BaseRive from "BaseRive" /* 4518 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4573 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
-let closure_4 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = fn(21).jsx;
 const artboardProperties = { Torbs_Multiply: { reducedMotion: "boolean" }, Shards_All_Nitro: { reducedMotion: "boolean" }, "Orb Mid Shine": { reducedMotion: "boolean" }, Torbs_Shine: { reducedMotion: "boolean" } };
 const artboardViewModelInstances = { Torbs_Multiply: ["Instance"], Shards_All_Nitro: ["Instance"], "Orb Mid Shine": ["Instance"], Torbs_Shine: ["Instance"] };
-let ReactCompilerGating = fn(558);
-let obj = {
-  Torbs_Multiply: ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = {
+  Torbs_Multiply: function TorbsMultiplyBindings(arg0) {
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
     const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
-  }) : ((arg0) => {
+  },
+  Shards_All_Nitro: function ShardsAllNitroBindings(arg0) {
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
     const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
-  }),
-  Shards_All_Nitro: null,
-  "Orb Mid Shine": null,
-  Torbs_Shine: null
+  },
+  "Orb Mid Shine": function OrbMidShineBindings(arg0) {
+    ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
+    const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    return null;
+  },
+  Torbs_Shine: function TorbsShineBindings(arg0) {
+    ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
+    const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    return null;
+  }
 };
-ReactCompilerGating = fn(558);
-obj.Shards_All_Nitro = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-  const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
-  return null;
-}) : ((arg0) => {
-  ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-  const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
-  return null;
-});
-ReactCompilerGating = fn(558);
-obj["Orb Mid Shine"] = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-  const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
-  return null;
-}) : ((arg0) => {
-  ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-  const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
-  return null;
-});
-ReactCompilerGating = fn(558);
-obj.Torbs_Shine = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-  const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
-  return null;
-}) : ((arg0) => {
-  ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-  const booleanBinding = BaseRive.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
-  return null;
-});
-ReactCompilerGating = fn(558);
-let closure_11 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
-  const cResult = require("c").c(18);
-  if (cResult[0] !== arg0) {
-    ({ fallback, artboard, stateMachine, defaultViewModelInstance, dataBinding, onDataBindingChange } = arg0);
-    const tmp12 = _objectWithoutProperties(arg0, closure_3);
-    _require = dataBinding;
-    importDefault = onDataBindingChange;
-    cResult[0] = arg0;
-    cResult[1] = dataBinding;
-    cResult[2] = onDataBindingChange;
-    cResult[3] = tmp12;
-    cResult[4] = stateMachine;
-    cResult[5] = artboard;
-    cResult[6] = defaultViewModelInstance;
-    let tmp9 = defaultViewModelInstance;
-    let tmp8 = artboard;
-    let tmp7 = stateMachine;
-    let tmp6 = tmp12;
-  } else {
-    _require = cResult[1];
-    importDefault = cResult[2];
-    tmp6 = cResult[3];
-    tmp7 = cResult[4];
-    tmp8 = cResult[5];
-    tmp9 = cResult[6];
-  }
-  str = "Torbs_Multiply";
-  if (undefined !== tmp8) {
-    str = tmp8;
-  }
-  let str2 = "Instance";
-  if (undefined !== tmp9) {
-    str2 = tmp9;
-  }
-  if (cResult[7] === str) {
-    if (cResult[8] === tmp4) {
-      if (cResult[9] === tmp5) {
-        let tmp13 = cResult[10];
-      }
-      if (cResult[11] === str) {
-        if (cResult[12] === str2) {
-          if (cResult[13] === ref) {
-            if (cResult[14] === tmp13) {
-              if (cResult[15] === tmp6) {
-                if (cResult[16] === tmp7) {
-                  let tmp15 = cResult[17];
-                }
-                return tmp15;
-              }
-            }
-          }
-        }
-      }
-      const obj2 = { ref, src: require("module_4600"), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: str2, stateMachine: tmp7, renderDataBinding: tmp13 };
-      let merged = Object.assign(tmp6);
-      const tmp23 = jsx(require("BaseRive").BaseRive, { ref, src: require("module_4600"), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: str2, stateMachine: tmp7, renderDataBinding: tmp13 });
-      cResult[11] = str;
-      cResult[12] = str2;
-      cResult[13] = ref;
-      cResult[14] = tmp13;
-      cResult[15] = tmp6;
-      cResult[16] = tmp7;
-      cResult[17] = tmp23;
-      tmp15 = tmp23;
-    }
-  }
-  const fn = function k(arg0) {
-    let tmp2 = null;
-    if (null != obj[str]) {
-      obj = {};
-      const merged = Object.assign(arg0);
-      obj.dataBinding = dataBinding;
-      obj.onDataBindingChange = onDataBindingChange;
-      tmp2 = <tmp />;
-    }
-    return tmp2;
-  };
-  cResult[7] = str;
-  cResult[8] = tmp4;
-  cResult[9] = tmp5;
-  cResult[10] = fn;
-  tmp13 = fn;
-}) : ((defaultViewModelInstance, ref) => {
+let closure_10 = noop.forwardRef(function NitroQuestOrbsMultiplierRiveInner(defaultViewModelInstance, ref) {
   ({ fallback, artboard } = defaultViewModelInstance);
   let str = "Torbs_Multiply";
   if (undefined !== artboard) {
@@ -160,8 +52,8 @@ let closure_11 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
   const items = [str, dataBinding, onDataBindingChange];
   const callback = noop.useCallback((arg0) => {
     let tmp2 = null;
-    if (null != obj[str]) {
-      obj = {};
+    if (null != closure_9[str]) {
+      const obj = {};
       const merged = Object.assign(arg0);
       obj.dataBinding = dataBinding;
       obj.onDataBindingChange = onDataBindingChange;
@@ -169,42 +61,16 @@ let closure_11 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
     }
     return tmp2;
   }, items);
-  const tmp = _objectWithoutProperties(defaultViewModelInstance, closure_4);
+  const tmp = _objectWithoutProperties(defaultViewModelInstance, closure_3);
   let merged = Object.assign(tmp);
-  return jsx(str(onDataBindingChange[4]).BaseRive, { ref, src: dataBinding(onDataBindingChange[6]), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
-}));
-ReactCompilerGating = fn(558);
+  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
+});
 const size = fn(2);
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/NitroQuestOrbsMultiplierRive.tsx");
 
-export const NitroQuestOrbsMultiplierRive = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((fallback, ref) => {
-  const cResult = c.c(6);
-  if (cResult[0] === fallback) {
-    if (cResult[1] === ref) {
-      let tmp4 = cResult[2];
-    }
-    if (cResult[3] === fallback.fallback) {
-      if (cResult[4] === tmp4) {
-        let tmp7 = cResult[5];
-      }
-      return tmp7;
-    }
-    const obj2 = { fallback: fallback.fallback, children: tmp4 };
-    const tmp9 = jsx(RiveErrorBoundary.RiveErrorBoundary, { fallback: fallback.fallback, children: tmp4 });
-    cResult[3] = fallback.fallback;
-    cResult[4] = tmp4;
-    cResult[5] = tmp9;
-    tmp7 = tmp9;
-  }
+export const NitroQuestOrbsMultiplierRive = noop.forwardRef(function NitroQuestOrbsMultiplierRiveWithBoundary(fallback, ref) {
+  const obj = { fallback: fallback.fallback, children: null };
   const merged = Object.assign(fallback);
-  const tmp6 = <closure_11 ref={arg1} />;
-  cResult[0] = fallback;
-  cResult[1] = ref;
-  cResult[2] = tmp6;
-  tmp4 = tmp6;
-}) : ((fallback, ref) => {
-  obj = { fallback: fallback.fallback, children: null };
-  const merged = Object.assign(fallback);
-  obj.children = <closure_11 ref={arg1} />;
+  obj.children = <closure_10 ref={arg1} />;
   return jsx(RiveErrorBoundary.RiveErrorBoundary, { fallback: fallback.fallback, children: null });
-}));
+});

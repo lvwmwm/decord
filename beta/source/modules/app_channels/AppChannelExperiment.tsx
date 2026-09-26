@@ -1,10 +1,10 @@
-// Module ID: 9829
-// Function ID: 9830
+// Module ID: 9851
+// Function ID: 9852
 // Name: AppChannelExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 9829 (AppChannelExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 9851 (AppChannelExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", name: "2026-07-app-channels", defaultConfig: { enabled: false }, variations: null };

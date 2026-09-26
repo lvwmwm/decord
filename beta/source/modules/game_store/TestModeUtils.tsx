@@ -1,17 +1,16 @@
-// Module ID: 9163
-// Function ID: 9164
+// Module ID: 9165
+// Function ID: 9166
 // Name: TestModeUtils
-// Dependencies: [9164, 9166, 558, 568, 504, 2]
-// Exports: isAnyApplicationInTestMode, isTestModeForApplication
+// Dependencies: [9166, 9168, 504, 2]
+// Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 9163 (TestModeUtils)
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9164 */;
-import TestModeStore from "TestModeStore" /* 9166 */;
+// Module 9165 (TestModeUtils)
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9166 */;
+import TestModeStore from "TestModeStore" /* 9168 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_store/TestModeUtils.tsx");
 
@@ -29,44 +28,10 @@ export const isAnyApplicationInTestMode = function isAnyApplicationInTestMode() 
   }
   return isEnabled;
 };
-export const useIsTestModeForApplication = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [TestModeStore, DeveloperActivityShelfStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      let tmp2 = null != closure_0;
-      if (tmp2) {
-        let result = TestModeStore.inTestModeForApplication(tmp);
-        if (!result) {
-          result = DeveloperActivityShelfStore.inDevModeForApplication(tmp);
-        }
-        tmp2 = result;
-      }
-      return tmp2;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp8 = items1;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const obj = require("c");
-  return require("initialize").useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
-  _require = arg0;
+export const useIsTestModeForApplication = function useIsTestModeForApplication(id) {
+  _require = id;
   const items = [TestModeStore, DeveloperActivityShelfStore];
-  const items1 = [arg0];
+  const items1 = [id];
   return require("initialize").useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
@@ -78,4 +43,4 @@ export const useIsTestModeForApplication = ReactCompilerGating.isReactCompilerEn
     }
     return tmp2;
   }, items1);
-});
+};

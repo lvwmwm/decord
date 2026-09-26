@@ -1,11 +1,11 @@
-// Module ID: 9648
-// Function ID: 9649
+// Module ID: 9652
+// Function ID: 9653
 // Name: ContentClassificationReference
-// Dependencies: [5362, 2]
+// Dependencies: [5360, 2]
 // Exports: isAgeRestrictedClassificationReference
 
-// Module 9648 (ContentClassificationReference)
-import utils from "utils" /* 5362 */;
+// Module 9652 (ContentClassificationReference)
+import utils from "utils" /* 5360 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/content_classification/ContentClassificationReference.tsx");

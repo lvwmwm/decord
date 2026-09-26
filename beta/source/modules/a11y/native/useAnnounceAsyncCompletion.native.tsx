@@ -1,91 +1,18 @@
-// Module ID: 11268
-// Function ID: 11269
+// Module ID: 11220
+// Function ID: 11221
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 558, 568, 4642, 1368, 5205, 2]
+// Dependencies: [19, 17, 4639, 1364, 5203, 2]
+// Exports: default
 
-// Module 11268 (useAnnounceAsyncCompletion)
+// Module 11220 (useAnnounceAsyncCompletion)
 import noop from "module_19" /* 19 */;
-
-const require = globalThis.__r;
 
 const require = fn;
 const AccessibilityInfo = fn(17).AccessibilityInfo;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/a11y/native/useAnnounceAsyncCompletion.native.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = require("c").c(3);
-  _require = noop.useRef(null);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
-      return () => {
-        const current = ref.current;
-        if (current != null) {
-          current();
-        }
-        ref.current = null;
-      };
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp2 = fn;
-    tmp3 = items;
-  } else {
-    [tmp2, tmp3] = cResult;
-  }
-  const effect = noop.useEffect(tmp2, tmp3);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function s(intl, polite) {
-      let str = "assertive";
-      if (undefined !== polite) {
-        str = polite;
-      }
-      const AccessibilityAnnouncer = ref(4642).AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(intl, str);
-      if (obj.isIOS()) {
-        if (tmpResult.getIsScreenReaderEnabled()) {
-          let current = ref.current;
-          if (current != null) {
-            current();
-          }
-          let resolved = new Promise((arg0) => {
-            const timeout = setTimeout(() => {
-              const current = ref.current;
-              let currentResult;
-              if (current != null) {
-                currentResult = current();
-              }
-              return currentResult;
-            }, 1800);
-            closure_2 = AccessibilityInfo.addEventListener("announcementFinished", (event) => {
-              if (tmp) {
-                const current = ref.current;
-                if (current != null) {
-                  current();
-                }
-              }
-            });
-            arg0.current = () => {
-              clearTimeout(closure_1);
-              closure_2.remove();
-              ref.current = null;
-              ref();
-            };
-          });
-        }
-        return resolved;
-      }
-      resolved = Promise.resolve();
-    };
-    cResult[2] = fn2;
-    let tmp5 = fn2;
-  } else {
-    tmp5 = cResult[2];
-  }
-  return tmp5;
-}) : (() => {
+export default function useAnnounceAsyncCompletion() {
   noop.useRef(null);
   const effect = noop.useEffect(() => () => {
     const current = ref.current;
@@ -99,7 +26,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (polite === undefined) {
       str = "assertive";
     }
-    const AccessibilityAnnouncer = ref(4642).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = ref(4639).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(intl, str);
     if (obj.isIOS()) {
       if (tmpResult.getIsScreenReaderEnabled()) {
@@ -136,4 +63,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     resolved = Promise.resolve();
   }, []);
-});
+};

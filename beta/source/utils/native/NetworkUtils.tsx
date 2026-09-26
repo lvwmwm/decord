@@ -1,12 +1,12 @@
-// Module ID: 1467
-// Function ID: 1468
+// Module ID: 1463
+// Function ID: 1464
 // Name: utils/NetworkUtils
-// Dependencies: [1078, 3, 1468, 2]
+// Dependencies: [1074, 3, 1464, 2]
 
-// Module 1467 (utils/NetworkUtils)
+// Module 1463 (utils/NetworkUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1078 */;
-import configure_mod from "configure" /* 1468 */;
+import Constants from "Constants" /* 1074 */;
+import configure_mod from "configure" /* 1464 */;
 import size from "module_2" /* 2 */;
 
 function notifyListeners(isConnected) {

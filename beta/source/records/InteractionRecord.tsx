@@ -1,11 +1,11 @@
-// Module ID: 5013
-// Function ID: 5014
+// Module ID: 5011
+// Function ID: 5012
 // Name: InteractionRecord
-// Dependencies: [1391, 1390, 2]
+// Dependencies: [1387, 1386, 2]
 
-// Module 5013 (InteractionRecord)
-import Record from "Record" /* 1391 */;
-import UserRecord from "UserRecord" /* 1390 */;
+// Module 5011 (InteractionRecord)
+import Record from "Record" /* 1387 */;
+import UserRecord from "UserRecord" /* 1386 */;
 
 const prototype = function InteractionRecord(name) {
   const tmp = new prototype(new.target, name, new.target);

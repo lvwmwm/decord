@@ -1,35 +1,36 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 17325
+// Function ID: 17326
 // Name: ChannelSettingsChangeCategory
-// Dependencies: [32, 722, 19, 2045, 7390, 2067, 4431, 4441, 1376, 1078, 21, 4790, 580, 4503, 7391, 12601, 4436, 5771, 5142, 1119, 4943, 5854, 5935, 8908, 5218, 4786, 558, 568, 504, 1488, 11766, 38, 2]
+// Dependencies: [32, 718, 19, 2041, 7388, 2063, 4427, 4437, 1372, 1074, 21, 4788, 576, 4498, 7389, 12699, 4432, 5769, 5140, 1115, 4941, 5854, 5936, 8903, 5216, 4784, 504, 1484, 11890, 38, 2]
+// Exports: default
 
-// Module 17335 (ChannelSettingsChangeCategory)
+// Module 17325 (ChannelSettingsChangeCategory)
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import useChannelName from "useChannelName" /* 4943 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
-import Stack_Stack from "Stack/Stack" /* 5218 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import useChannelName from "useChannelName" /* 4941 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import Stack_Stack from "Stack/Stack" /* 5216 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5769 */;
 import TableRow from "TableRow" /* 5854 */;
-import TableRowGroup from "TableRowGroup" /* 5935 */;
-import Form from "Form" /* 8908 */;
+import TableRowGroup from "TableRowGroup" /* 5936 */;
+import Form from "Form" /* 8903 */;
 import _slicedToArray from "module_32" /* 32 */;
-import _toArray from "_toArray" /* 722 */;
+import _toArray from "_toArray" /* 718 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7390 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import RelationshipStore from "RelationshipStore" /* 4441 */;
-import UserStore from "UserStore" /* 1376 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7388 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const Permissions = fn(1078).Permissions;
+const Permissions = fn(1074).Permissions;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { screenContainer: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: nativeDefault.space.PX_16 }, stackPadding: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: nativeDefault.space.PX_16 };
 obj2.stackPadding = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
@@ -209,7 +210,7 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
 };
 prototype["renderCategory"] = function renderCategory(label) {
   const self = this;
-  return __initData2(TableRow.TableRow, {
+  return map1(TableRow.TableRow, {
     label: label.name,
     onPress() {
       return self.handleSetCategory(label.id);
@@ -234,7 +235,7 @@ prototype["renderCategories"] = function renderCategories() {
   let tmp4 = null;
   if (mapped.length > 0) {
     const obj = { hasIcons: false, children: mapped };
-    tmp4 = __initData2(TableRowGroup.TableRowGroup, obj);
+    tmp4 = map1(TableRowGroup.TableRowGroup, obj);
   }
   return tmp4;
 };
@@ -249,10 +250,10 @@ prototype["render"] = function render() {
   if (null != category) {
     let name = category.name;
   } else {
-    const intl2 = tmp4(1119).intl;
-    name = intl2.string(tmp4(1119).t.GSfOoo);
+    const intl2 = tmp4(1115).intl;
+    name = intl2.string(tmp4(1115).t.GSfOoo);
   }
-  const items = [__initData2(Text_Text.Text, { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(util.t.OqccVl, { categoryName: name }) }), , ];
+  const items = [map1(Text_Text.Text, { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(util.t.OqccVl, { categoryName: name }) }), , ];
   let tmp3Result = null;
   if (null != first) {
     tmp3Result = null;
@@ -267,71 +268,28 @@ prototype["render"] = function render() {
                 }
         };
         obj4.children = tmp3(tmp4(5854).TableRow, obj5, first.id);
-        tmp3Result = tmp3(tmp4(5935).TableRowGroup, obj4);
+        tmp3Result = tmp3(tmp4(5936).TableRowGroup, obj4);
       }
     }
   }
   items[1] = tmp3Result;
   items[2] = self.renderCategories();
   obj2.children = items;
-  obj.children = state(Stack_Stack.Stack, obj2);
-  return __initData2(Form.Form, obj);
+  obj.children = closure_1_14(Stack_Stack.Stack, obj2);
+  return map1(Form.Form, obj);
 };
-ChannelSettingsChangeCategory.contextType = fn(4503).ThemeContext;
-const ReactCompilerGating = fn(558);
-let obj4 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
+ChannelSettingsChangeCategory.contextType = fn(4498).ThemeContext;
 const size = fn(2);
 let result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeCategory.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  const cResult = channelId(568).c(7);
-  channelId = channelId.channelId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    const fn = function l() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const obj = channelId(568);
-  const stateFromStores = channelId(504).useStateFromStores(first, tmp6);
-  const tmpResult = channelId(504);
-  const navigation = channelId(1488).useNavigation();
-  const tmpResult3 = channelId(1488);
-  const appChannelBotUserId = channelId(11766).useAppChannelBotUserId(stateFromStores);
-  _modDef38(null != stateFromStores, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
-  if (cResult[3] === appChannelBotUserId) {
-    if (cResult[4] === stateFromStores) {
-      if (cResult[5] === navigation) {
-        let tmp11 = cResult[6];
-      }
-      return tmp11;
-    }
-  }
-  const tmp12 = closure_13(ChannelSettingsChangeCategory, { channel: stateFromStores, navigation, appChannelBotUserId });
-  cResult[3] = appChannelBotUserId;
-  cResult[4] = stateFromStores;
-  cResult[5] = navigation;
-  cResult[6] = tmp12;
-  tmp11 = tmp12;
-}) : ((channelId) => {
+export default function ConnectedChannelSettingsChangeCategory(channelId) {
   channelId = channelId.channelId;
   const items = [ChannelStore];
   const channel = channelId(504).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   const obj = channelId(504);
-  const navigation = channelId(1488).useNavigation();
-  const obj2 = channelId(1488);
-  const appChannelBotUserId = channelId(11766).useAppChannelBotUserId(channel);
+  const navigation = channelId(1484).useNavigation();
+  const obj2 = channelId(1484);
+  const appChannelBotUserId = channelId(11890).useAppChannelBotUserId(channel);
   _modDef38(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
   return closure_13(ChannelSettingsChangeCategory, { channel, navigation, appChannelBotUserId });
-});
+};

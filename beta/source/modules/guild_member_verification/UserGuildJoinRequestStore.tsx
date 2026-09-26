@@ -1,15 +1,15 @@
-// Module ID: 4613
-// Function ID: 4614
+// Module ID: 4610
+// Function ID: 4611
 // Name: UserGuildJoinRequestStore
-// Dependencies: [1376, 4614, 504, 2059, 577, 2]
+// Dependencies: [1372, 4611, 504, 2055, 573, 2]
 // Exports: joinRequestFromServer
 
-// Module 4613 (UserGuildJoinRequestStore)
+// Module 4610 (UserGuildJoinRequestStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4614 */;
-import UserStore from "UserStore" /* 1376 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4611 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function handleGatewayJoinRequestUpdate(arg0) {
@@ -141,7 +141,7 @@ const userGuildJoinRequestStore = new UserGuildJoinRequestStore(DispatcherDefaul
       guild1 = form.guild;
     }
     if (null != guild1) {
-      guild = form.guild;
+      const guild = form.guild;
       let features = guild.features;
       const obj = { id: null, name: null, icon: null, features: null, splash: null };
       ({ id: obj.id, name: obj.name, icon: obj.icon, splash } = guild);

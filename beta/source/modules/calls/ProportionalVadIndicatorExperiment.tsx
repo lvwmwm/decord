@@ -1,10 +1,10 @@
-// Module ID: 5671
-// Function ID: 5672
+// Module ID: 5669
+// Function ID: 5670
 // Name: ProportionalVadIndicatorExperiment
-// Dependencies: [1439, 2]
+// Dependencies: [1435, 2]
 
-// Module 5671 (ProportionalVadIndicatorExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
+// Module 5669 (ProportionalVadIndicatorExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const obj = { kind: "user", name: "2025-12-proportional-vad-indicator", defaultConfig: { enabled: false }, variations: null };
 const obj2 = { 1: null, 2: { enabled: true }, 3: { enabled: true, disableUI: true }, 4: { enabled: true, disableUI: true, swallowVolumeOnlySpeakingEvents: true } };

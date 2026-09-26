@@ -1,137 +1,20 @@
-// Module ID: 11149
-// Function ID: 11150
+// Module ID: 11105
+// Function ID: 11106
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [109, 19, 1078, 558, 568, 9511, 11150, 2]
+// Dependencies: [19, 1074, 9513, 11106, 2]
+// Exports: default
 
-// Module 11149 (useMobileSocialLayerPurchaseSKU)
-import GPlayActionCreators from "GPlayActionCreators" /* 9511 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 11150 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 11105 (useMobileSocialLayerPurchaseSKU)
+import GPlayActionCreators from "GPlayActionCreators" /* 9513 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 11106 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
 require = fn;
-let closure_3 = ["sku"];
-const constants = fn(1078).PriceSetAssignmentPurchaseTypes;
-const ReactCompilerGating = fn(558);
+const constants = fn(1074).PriceSetAssignmentPurchaseTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/hooks/useMobileSocialLayerPurchaseSKU.android.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
-  const cResult = require("c").c(11);
-  if (cResult[0] !== sku) {
-    sku = sku.sku;
-    const tmp7 = _objectWithoutProperties(sku, closure_3);
-    cResult[0] = sku;
-    cResult[1] = tmp7;
-    cResult[2] = sku;
-    let tmp4 = sku;
-    let tmp3 = tmp7;
-  } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
-  }
-  const giftParams = tmp3.giftParams;
-  let isGift;
-  if (giftParams != null) {
-    isGift = giftParams.isGift;
-  }
-  if (isGift != null) {
-    if (isGift) {
-      let DEFAULT = constants.GIFT;
-    }
-    let googleSkuIds;
-    if (tmp4 != null) {
-      googleSkuIds = tmp4.googleSkuIds;
-    }
-    if (cResult[3] !== googleSkuIds) {
-      let googleSkuIds1;
-      if (tmp4 != null) {
-        googleSkuIds1 = tmp4.googleSkuIds;
-      }
-      if (googleSkuIds1 == null) {
-        googleSkuIds1 = {};
-      }
-      let googleSkuIds2;
-      if (tmp4 != null) {
-        googleSkuIds2 = tmp4.googleSkuIds;
-      }
-      cResult[3] = googleSkuIds2;
-      cResult[4] = googleSkuIds1;
-      let tmp11 = googleSkuIds1;
-    } else {
-      tmp11 = cResult[4];
-    }
-    let tmp13 = tmp11[DEFAULT];
-    if (tmp13 == null) {
-      tmp13 = null;
-    }
-    _require = tmp13;
-    if (cResult[5] !== tmp13) {
-      class I {
-        constructor() {
-          if (null != c0) {
-            tmp2 = closure_0;
-            tmp3 = closure_2;
-            obj = closure_0(closure_2[5]);
-            items = [];
-            items[0] = tmp;
-            inAppSkus = obj.loadInAppSkus(items);
-          }
-          return;
-        }
-      }
-      let items = [tmp13];
-      cResult[5] = tmp13;
-      cResult[6] = I;
-      cResult[7] = items;
-      let tmp15 = items;
-      const tmp14 = I;
-    } else {
-      class I {
-        constructor() {
-          if (null != c0) {
-            tmp2 = closure_0;
-            tmp3 = closure_2;
-            obj = closure_0(closure_2[5]);
-            items = [];
-            items[0] = tmp;
-            inAppSkus = obj.loadInAppSkus(items);
-          }
-          return;
-        }
-      }
-      tmp15 = cResult[7];
-    }
-    const effect = noop.useEffect(tmp14, tmp15);
-    if (cResult[8] === tmp13) {
-      class I {
-        constructor() {
-          if (null != c0) {
-            tmp2 = closure_0;
-            tmp3 = closure_2;
-            obj = closure_0(closure_2[5]);
-            items = [];
-            items[0] = tmp;
-            inAppSkus = obj.loadInAppSkus(items);
-          }
-          return;
-        }
-      }
-      return useMobilePurchaseSKUDefault(tmp18);
-    }
-    const obj2 = {};
-    const merged = Object.assign(tmp3);
-    obj2.platformSkuId = tmp13;
-    obj2.isFreeForStaffSelfPurchase = false;
-    cResult[8] = tmp13;
-    cResult[9] = tmp3;
-    cResult[10] = obj2;
-    tmp18 = obj2;
-  }
-  DEFAULT = constants.DEFAULT;
-}) : ((sku) => {
+export default function useMobileSocialLayerPurchaseSKU(sku) {
   sku = sku.sku;
   const merged = Object.assign(sku, Object.assign({ sku: 0 }));
   c0 = undefined;
@@ -170,4 +53,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     return useMobilePurchaseSKUDefault(obj);
   }
   DEFAULT = constants.DEFAULT;
-});
+};

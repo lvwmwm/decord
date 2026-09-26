@@ -1,7 +1,9 @@
 // Module ID: 14655
 // Function ID: 14656
-// Dependencies: []
+// Dependencies: [14656]
 
 // Module 14655
+import _mod14656 from "module_14656" /* 14656 */;
 
-export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });
+
+export default (arg0) => _mod14656(arg0.length);

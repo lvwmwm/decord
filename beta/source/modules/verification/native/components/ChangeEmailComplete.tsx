@@ -1,16 +1,16 @@
-// Module ID: 7277
-// Function ID: 7278
+// Module ID: 7276
+// Function ID: 7277
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 5870, 21, 4790, 580, 5868, 558, 568, 6874, 1119, 4786, 5220, 2]
+// Dependencies: [19, 17, 5872, 21, 4788, 576, 5870, 6876, 4784, 1115, 5218, 2]
+// Exports: default
 
-// Module 7277 (ChangeEmailComplete)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5868 */;
-import _modDef6874 from "module_6874" /* 6874 */;
+// Module 7276 (ChangeEmailComplete)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5870 */;
+import _modDef6876 from "module_6876" /* 6876 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,141 +20,22 @@ function handlePress() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const resetChangeEmailStore = fn(5870).resetChangeEmailStore;
+const resetChangeEmailStore = fn(5872).resetChangeEmailStore;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { contentContainer: { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: 20, alignItems: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { textAlign: "center" }, body: { textAlign: "center" }, bodyInner: { gap: 2 }, tooltip: null };
+const createStyles = fn(4788);
+const obj2 = { contentContainer: { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: 20, alignItems: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { textAlign: "center" }, body: { textAlign: "center" }, bodyInner: { gap: 2 }, tooltip: null };
 let obj3 = { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: 20, alignItems: "center" };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.tooltip = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: "100%", padding: 12, borderWidth: 1, borderStyle: "solid", borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_9 = createStyles.createStyles(obj2);
-const ReactCompilerGating = fn(558);
-let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: "100%", padding: 12, borderWidth: 1, borderStyle: "solid", borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/ChangeEmailComplete.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
-  const cResult = c.c(23);
-  email = email.email;
-  const tmp4 = closure_9();
-  if (cResult[0] !== tmp4.image) {
-    const obj2 = { style: tmp4.image, source: _modDef6874 };
-    const tmp9 = React5(React4, obj2);
-    cResult[0] = tmp4.image;
-    cResult[1] = tmp9;
-    let tmp5 = tmp9;
-  } else {
-    tmp5 = cResult[1];
-  }
-  ({ bodyInner, title } = tmp4);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1119).intl;
-    const stringResult = intl.string(tmp(1119).t["8O+nF7"]);
-    cResult[2] = stringResult;
-    let tmp10 = stringResult;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] !== tmp4.title) {
-    const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp14 = React5(tmp(4786).Text, obj3);
-    cResult[3] = tmp4.title;
-    cResult[4] = tmp14;
-    let tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] !== email) {
-    const intl2 = tmp(1119).intl;
-    const obj4 = { email };
-    const formatResult = intl2.format(tmp(1119).t.Zvx0O3, obj4);
-    cResult[5] = email;
-    cResult[6] = formatResult;
-    let tmp15 = formatResult;
-  } else {
-    tmp15 = cResult[6];
-  }
-  if (cResult[7] === tmp4.body) {
-    if (cResult[8] === tmp15) {
-      let tmp17 = cResult[9];
-    }
-    if (cResult[10] === tmp4.bodyInner) {
-      if (cResult[11] === tmp12) {
-        if (cResult[12] === tmp17) {
-          let tmp19 = cResult[13];
-        }
-        const _Symbol = Symbol;
-        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1119).intl;
-          const stringResult1 = intl3.string(tmp(1119).t.yb7itQ);
-          cResult[14] = stringResult1;
-          let tmp23 = stringResult1;
-        } else {
-          tmp23 = cResult[14];
-        }
-        if (cResult[15] !== tmp4.tooltip) {
-          const obj5 = { style: tmp4.tooltip, variant: "text-sm/normal", children: tmp23 };
-          const tmp27 = React5(tmp(4786).Text, obj5);
-          cResult[15] = tmp4.tooltip;
-          cResult[16] = tmp27;
-          let tmp25 = tmp27;
-        } else {
-          tmp25 = cResult[16];
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj6 = { text: null, onPress: null, grow: true };
-          const intl4 = tmp(1119).intl;
-          obj6.text = intl4.string(tmp(1119).t.BddRzS);
-          obj6.onPress = handlePress;
-          const tmp31 = React5(tmp(5220).Button, obj6);
-          cResult[17] = tmp31;
-          let tmp28 = tmp31;
-        } else {
-          tmp28 = cResult[17];
-        }
-        if (cResult[18] === tmp4.contentContainer) {
-          if (cResult[19] === tmp19) {
-            if (cResult[20] === tmp25) {
-              if (cResult[21] === tmp5) {
-                let tmp32 = cResult[22];
-              }
-              return tmp32;
-            }
-          }
-        }
-        const obj7 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp4.contentContainer, children: null };
-        const items = [tmp5, tmp19, tmp25, tmp28];
-        obj7.children = items;
-        const tmp35 = closure_1_8(hasOwnProperty, obj7);
-        cResult[18] = tmp4.contentContainer;
-        cResult[19] = tmp19;
-        cResult[20] = tmp25;
-        cResult[21] = tmp5;
-        cResult[22] = tmp35;
-        tmp32 = tmp35;
-      }
-    }
-    const obj8 = { style: bodyInner, children: null };
-    const items1 = [tmp12, tmp17];
-    obj8.children = items1;
-    const tmp22 = closure_1_8(React3, obj8);
-    cResult[10] = tmp4.bodyInner;
-    cResult[11] = tmp12;
-    cResult[12] = tmp17;
-    cResult[13] = tmp22;
-    tmp19 = tmp22;
-  }
-  const tmp18 = React5(Text_Text.Text, { style: tmp4.body, variant: "text-sm/medium", color: "text-default", children: tmp15 });
-  cResult[7] = tmp4.body;
-  cResult[8] = tmp15;
-  cResult[9] = tmp18;
-  tmp17 = tmp18;
-}) : ((email) => {
+export default function ChangeEmailComplete(email) {
   const tmp = closure_9();
   const obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
-  const items = [React5(React4, { style: tmp.image, source: _modDef6874 }), , , ];
+  const items = [React5(React4, { style: tmp.image, source: _modDef6876 }), , , ];
   const obj3 = { style: tmp.bodyInner, children: null };
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
@@ -165,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
   obj5.children = intl2.format(util.t.Zvx0O3, { email: email.email });
   items1[1] = React5(Text_Text.Text, obj5);
   obj3.children = items1;
-  items[1] = closure_1_8(React3, obj3);
+  items[1] = React6(React3, obj3);
   const obj6 = { style: tmp.tooltip, variant: "text-sm/normal", children: null };
   const intl3 = util.intl;
   obj6.children = intl3.string(util.t.yb7itQ);
@@ -176,5 +57,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
   obj7.onPress = handlePress;
   items[3] = React5(components_Button_Button.Button, obj7);
   obj.children = items;
-  return closure_1_8(hasOwnProperty, obj);
-});
+  return React6(hasOwnProperty, obj);
+};

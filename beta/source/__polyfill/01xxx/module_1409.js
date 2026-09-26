@@ -1,9 +1,9 @@
 // Module ID: 1409
 // Function ID: 1410
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 1409
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 256, height: 256, scales: [1], hash: "3c6ccb83716d1e4fb91d3082f6b21d77", name: "default_avatar_4", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 96, height: 96, scales: [1], hash: "e2638b3766522b844050b85fb10215de", name: "default_avatar_2_small", type: "png" });

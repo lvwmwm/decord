@@ -1,73 +1,67 @@
 // Module ID: 1247
 // Function ID: 1248
-// Dependencies: [19, 1248, 563]
-// Exports: createWithEqualityFn, useStoreWithEqualityFn
+// Dependencies: [19]
 
 // Module 1247
-import is from "is" /* 1248 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
-function identity(arg0) {
-  return arg0;
-}
-function createWithEqualityFnImpl(arg0, arg1) {
-  _require = arg1;
-  store = require("module_563").createStore(arg0);
-  function useBoundStoreWithEqualityFn(arg0) {
-    let tmp = arg1;
-    if (arg1 === undefined) {
-      tmp = closure_0;
-    }
-    let tmp2 = arg0;
-    if (arg0 === undefined) {
-      tmp2 = identity;
-    }
-    const syncExternalStoreWithSelector = is.useSyncExternalStoreWithSelector(store.subscribe, store.getState, store.getInitialState, tmp2, tmp);
-    const debugValue = noop.useDebugValue(syncExternalStoreWithSelector);
-    return syncExternalStoreWithSelector;
+function checkIfSnapshotChanged(arg0) {
+  try {
+    return !is(tmp2, tmp());
+  } catch (err) {
+    return true;
   }
-  const merged = Object.assign(useBoundStoreWithEqualityFn, store);
-  return useBoundStoreWithEqualityFn;
 }
-
-export const createWithEqualityFn = (arg0, arg1) => {
-  if (arg0) {
-    if (typeof tmp === "function") {
-      _require = arg1;
-      store = require("module_563").createStore(arg0);
-      function useBoundStoreWithEqualityFn(arg0) {
-        let tmp = arg1;
-        if (arg1 === undefined) {
-          tmp = closure_0;
-        }
-        let tmp2 = arg0;
-        if (arg0 === undefined) {
-          tmp2 = identity;
-        }
-        const syncExternalStoreWithSelector = is.useSyncExternalStoreWithSelector(store.subscribe, store.getState, store.getInitialState, tmp2, tmp);
-        const debugValue = noop.useDebugValue(syncExternalStoreWithSelector);
-        return syncExternalStoreWithSelector;
+if (typeof Object.is === "function") {
+  const _Object = Object;
+} else {
+  is = function is(arg0, arg1) {
+    let tmp = arg0 === arg1;
+    if (tmp) {
+      let tmp2 = 0 !== arg0;
+      if (!tmp2) {
+        tmp2 = 1 / arg0 === 1 / arg1;
       }
-      const _Object = Object;
-      const merged = Object.assign(useBoundStoreWithEqualityFn, store);
-      let tmp2 = useBoundStoreWithEqualityFn;
-      const obj = require("module_563");
-    } else {
-      throw new TypeError("Trying to call a non-function");
+      tmp = tmp2;
     }
-  } else {
-    tmp2 = tmp;
-  }
-  return tmp2;
-};
-export const useStoreWithEqualityFn = function useStoreWithEqualityFn(context, cResult, shallow) {
-  let tmp = cResult;
-  if (cResult === undefined) {
-    tmp = identity;
-  }
-  const syncExternalStoreWithSelector = is.useSyncExternalStoreWithSelector(context.subscribe, context.getState, context.getInitialState, tmp, shallow);
-  const debugValue = noop.useDebugValue(syncExternalStoreWithSelector);
-  return syncExternalStoreWithSelector;
-};
+    if (!tmp) {
+      tmp = arg0 != arg0 && arg1 != arg1;
+      const tmp3 = arg0 != arg0 && arg1 != arg1;
+    }
+    return tmp;
+  };
+}
+({ useState: closure_1, useEffect: c2, useLayoutEffect: c3, useDebugValue: closure_4 } = noop);
+
+export const useSyncExternalStore = undefined !== noop.useSyncExternalStore ? noop.useSyncExternalStore : (function useSyncExternalStore$1(arg0, getSnapshot) {
+  closure_0 = arg0;
+  const tmp = getSnapshot();
+  value = tmp;
+  const tmp2 = getSnapshot({ inst: { value: tmp, getSnapshot } });
+  const inst = tmp2[0].inst;
+  closure_4 = tmp2[1];
+  const items = [arg0, tmp, getSnapshot];
+  inst(() => {
+    inst.value = value;
+    inst.getSnapshot = getSnapshot;
+    if (checkIfSnapshotChanged(inst)) {
+      const obj = { inst };
+      closure_4(obj);
+    }
+  }, items);
+  const items1 = [arg0];
+  value(() => {
+    if (checkIfSnapshotChanged(inst)) {
+      let obj = { inst };
+      closure_4(obj);
+    }
+    return closure_0(() => {
+      if (checkIfSnapshotChanged(inst)) {
+        const obj = { inst };
+        closure_1_4(obj);
+      }
+    });
+  }, items1);
+  closure_4(tmp);
+  return tmp;
+});

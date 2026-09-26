@@ -1,56 +1,22 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 17960
+// Function ID: 17961
 // Name: AddRuleRow
-// Dependencies: [19, 21, 558, 568, 5854, 11494, 1119, 17958, 2]
+// Dependencies: [19, 21, 5854, 11499, 1115, 17949, 2]
+// Exports: default
 
-// Module 17969 (AddRuleRow)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
+// Module 17960 (AddRuleRow)
+import util from "util" /* 1115 */;
 import TableRow from "TableRow" /* 5854 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11494 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17958 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11499 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17949 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/AddRuleRow.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(6);
-  ({ triggerType, onPress } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { IconComponent: tmp(11494).CirclePlusIcon };
-    const tmp6 = jsx(tmp(5854).TableRow.Icon, { IconComponent: tmp(11494).CirclePlusIcon });
-    cResult[0] = tmp6;
-    let first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== triggerType) {
-    const intl = tmp(1119).intl;
-    const obj3 = { ruleName: tmp(17958).triggerConfigs[triggerType].getDefaultRuleName() };
-    const formatResult = intl.format(tmp(1119).t.dNjRAf, obj3);
-    cResult[1] = triggerType;
-    cResult[2] = formatResult;
-    let tmp7 = formatResult;
-    const obj4 = tmp(17958).triggerConfigs[triggerType];
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] === onPress) {
-    if (cResult[4] === tmp7) {
-      let tmp9 = cResult[5];
-    }
-    return tmp9;
-  }
-  const tmp10 = jsx(TableRow.TableRow, { icon: first, label: tmp7, onPress });
-  cResult[3] = onPress;
-  cResult[4] = tmp7;
-  cResult[5] = tmp10;
-  tmp9 = tmp10;
-}) : ((arg0) => {
+export default function AddRuleRow(arg0) {
   ({ triggerType, onPress } = arg0);
   const obj = { icon: jsx(TableRow.TableRow.Icon, { IconComponent: CirclePlusIcon.CirclePlusIcon }), label: null, onPress: null };
   const intl = util.intl;
@@ -60,4 +26,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.label = intl.format(util.t.dNjRAf, obj3);
   obj.onPress = onPress;
   return jsx(TableRow.TableRow, { icon: jsx(TableRow.TableRow.Icon, { IconComponent: CirclePlusIcon.CirclePlusIcon }), label: null, onPress: null });
-});
+};

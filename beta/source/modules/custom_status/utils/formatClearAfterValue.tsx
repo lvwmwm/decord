@@ -1,15 +1,15 @@
-// Module ID: 11493
-// Function ID: 11494
+// Module ID: 11498
+// Function ID: 11499
 // Name: formatClearAfterValue
-// Dependencies: [11430, 4474, 1119, 1095, 1374, 2]
+// Dependencies: [11411, 4470, 1115, 1091, 1370, 2]
 // Exports: default
 
-// Module 11493 (formatClearAfterValue)
-import DurationsDefault from "Durations" /* 1095 */;
-import util from "util" /* 1119 */;
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import DateUtils from "DateUtils" /* 4474 */;
-import Constants from "Constants" /* 11430 */;
+// Module 11498 (formatClearAfterValue)
+import DurationsDefault from "Durations" /* 1091 */;
+import util from "util" /* 1115 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import DateUtils from "DateUtils" /* 4470 */;
+import Constants from "Constants" /* 11411 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;
@@ -29,9 +29,9 @@ export default function formatClearAfterValue(arg0) {
       let formatTimeResult = data8.formatTime(sum, { format: "short" });
     } else {
       const obj3 = { time: null };
-      const data7 = tmp61(1119).intl.data;
+      const data7 = tmp61(1115).intl.data;
       obj3.time = data7.formatTime(sum, { format: "short" });
-      formatTimeResult = intl5.formatToPlainString(tmp61(1119).t.bI7n9i, obj3);
+      formatTimeResult = intl5.formatToPlainString(tmp61(1115).t.bI7n9i, obj3);
     }
     return formatTimeResult;
   } else if (tmp.HOURS_4 === arg0) {
@@ -48,9 +48,9 @@ export default function formatClearAfterValue(arg0) {
       let formatTimeResult1 = data6.formatTime(sum1, { format: "short" });
     } else {
       const obj5 = { time: null };
-      const data5 = tmp45(1119).intl.data;
+      const data5 = tmp45(1115).intl.data;
       obj5.time = data5.formatTime(sum1, { format: "short" });
-      formatTimeResult1 = intl4.formatToPlainString(tmp45(1119).t.bI7n9i, obj5);
+      formatTimeResult1 = intl4.formatToPlainString(tmp45(1115).t.bI7n9i, obj5);
     }
     return formatTimeResult1;
   } else if (tmp.HOURS_1 === arg0) {
@@ -66,9 +66,9 @@ export default function formatClearAfterValue(arg0) {
       let formatTimeResult2 = data4.formatTime(sum2, { format: "short" });
     } else {
       const obj7 = { time: null };
-      const data3 = tmp28(1119).intl.data;
+      const data3 = tmp28(1115).intl.data;
       obj7.time = data3.formatTime(sum2, { format: "short" });
-      formatTimeResult2 = intl3.formatToPlainString(tmp28(1119).t.bI7n9i, obj7);
+      formatTimeResult2 = intl3.formatToPlainString(tmp28(1115).t.bI7n9i, obj7);
     }
     return formatTimeResult2;
   } else if (tmp.MINUTES_30 === arg0) {
@@ -85,9 +85,9 @@ export default function formatClearAfterValue(arg0) {
       let formatTimeResult3 = data2.formatTime(sum3, { format: "short" });
     } else {
       const obj9 = { time: null };
-      const data = tmp12(1119).intl.data;
+      const data = tmp12(1115).intl.data;
       obj9.time = data.formatTime(sum3, { format: "short" });
-      formatTimeResult3 = intl2.formatToPlainString(tmp12(1119).t.bI7n9i, obj9);
+      formatTimeResult3 = intl2.formatToPlainString(tmp12(1115).t.bI7n9i, obj9);
     }
     return formatTimeResult3;
   } else if (tmp.DONT_CLEAR === arg0) {

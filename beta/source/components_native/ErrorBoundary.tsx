@@ -1,114 +1,26 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 14883
+// Function ID: 14884
 // Name: ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11593, 21, 4790, 558, 568, 11954, 504, 1119, 5220, 4503, 1235, 577, 1181, 10123, 4786, 2]
+// Dependencies: [5, 32, 19, 17, 11717, 21, 4788, 504, 12072, 5218, 1115, 4498, 1231, 573, 1177, 10144, 4784, 2]
 
-// Module 16269 (ErrorBoundary)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import util from "util" /* 1119 */;
-import native from "native" /* 1181 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
-import AppCrash from "AppCrash" /* 10123 */;
+// Module 14883 (ErrorBoundary)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import AppCrash from "AppCrash" /* 10144 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11593 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11717 */;
 
 require = fn;
-get_ActivityIndicator = fn(17);
-({ NativeModules: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4790);
-let closure_11 = createStyles.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
-const ReactCompilerGating = fn(558);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = require("c").c(6);
-  const obj = require("c");
-  [tmp5, closure_0] = noop.useState(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [BuildOverrideStore];
-    const fn = function s() {
-      const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
-      let id;
-      if (overrides != null) {
-        const tmp4 = overrides[closure_0(undefined, 11954).DEVICE_FIELD];
-        if (tmp4 != null) {
-          id = tmp4.id;
-        }
-      }
-      return id;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  let tmp4 = _slicedToArray(noop.useState(false), 2);
-  if (null == tmpResult.useStateFromStores(tmp6, tmp7)) {
-    return null;
-  } else {
-    const _Symbol2 = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      _require = asyncGeneratorStep(async () => {
-        tmp3(true);
-        await tmp3(11954).clearBuildOverride();
-        if (1 === tmp7) {
-          c3 = 0;
-          tmp3(false);
-          c4 = 3;
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw arg1;
-        } else if (arg0 !== 2) {
-          c3 = 0;
-        }
-        return arg1;
-      });
-      function clearOverride() {
-        const self = this;
-        const apply = closure_0.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
-      }
-      cResult[2] = clearOverride;
-      let tmp9 = clearOverride;
-    } else {
-      tmp9 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t["/Nz9rY"]);
-      cResult[3] = stringResult;
-      let tmp11 = stringResult;
-    } else {
-      tmp11 = cResult[3];
-    }
-    if (cResult[4] !== tmp5) {
-      const obj2 = { variant: "secondary", loading: tmp5, text: tmp11, onPress: tmp9 };
-      const tmp15 = closure_9(tmp(5220).Button, obj2);
-      cResult[4] = tmp5;
-      cResult[5] = tmp15;
-      let tmp13 = tmp15;
-    } else {
-      tmp13 = cResult[5];
-    }
-    return tmp13;
-  }
-  tmpResult = require("initialize");
-}) : (() => {
-  closure_1 = async function _clearOverride2() {
+function MaybeClearBuildOverride() {
+  closure_1 = async function _clearOverride() {
     _require(true);
-    await tmp3(tmp16[9]).clearBuildOverride();
+    await tmp3(tmp16[8]).clearBuildOverride();
     if (1 === tmp7) {
       c3 = 0;
       closure_128_0(false);
@@ -128,7 +40,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let id;
     if (overrides != null) {
-      const tmp4 = overrides[closure_0(undefined, dependencyMap[9]).DEVICE_FIELD];
+      const tmp4 = overrides[closure_0(undefined, dependencyMap[8]).DEVICE_FIELD];
       if (tmp4 != null) {
         id = tmp4.id;
       }
@@ -138,8 +50,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return null;
   } else {
     const obj2 = { variant: "secondary", loading: tmp[0], text: null, onPress: null };
-    const intl = tmp2(1119).intl;
-    obj2.text = intl.string(tmp2(1119).t["/Nz9rY"]);
+    const intl = tmp2(1115).intl;
+    obj2.text = intl.string(tmp2(1115).t["/Nz9rY"]);
     obj2.onPress = function clearOverride() {
       const self = this;
       const apply = closure_1.apply;
@@ -150,10 +62,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       return applyArgumentsResult;
     };
-    return closure_9(tmp2(5220).Button, obj2);
+    return closure_9(tmp2(5218).Button, obj2);
   }
   obj = require("initialize");
-});
+}
+get_ActivityIndicator = fn(17);
+({ NativeModules: metroRequire, View: closure_7 } = get_ActivityIndicator);
+const jsxProd = fn(21);
+({ jsx: closure_9, jsxs: c10 } = jsxProd);
+const createStyles = fn(4788);
+let closure_11 = createStyles.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
 const PureComponent = noop.PureComponent;
 class ErrorBoundary extends PureComponent {
   constructor() {
@@ -225,16 +143,16 @@ prototype["render"] = function render() {
       str = "Unknown Error";
     }
     obj2.children = str;
-    const items = [options(Text_Text.Text, obj2), , ];
+    const items = [React7(Text_Text.Text, obj2), , ];
     const obj3 = { style: tmp.buttons, children: null };
-    const items1 = [options(closure_12, {}), ];
+    const items1 = [React7(MaybeClearBuildOverride, {}), ];
     const obj4 = { text: null, onPress: null };
-    const intl3 = tmp3(1119).intl;
+    const intl3 = tmp3(1115).intl;
     obj4.text = intl3.string(util.t["4n8OJn"]);
     obj4.onPress = self.handleReload;
-    items1[1] = options(components_Button_Button.Button, obj4);
+    items1[1] = React7(components_Button_Button.Button, obj4);
     obj3.children = items1;
-    items[1] = v65535(React5, obj3);
+    items[1] = closure_1_10(React5, obj3);
     items[2] = null;
     obj.children = items;
     let children = tmp2(native.EmptyState, obj);
@@ -243,7 +161,7 @@ prototype["render"] = function render() {
   }
   return children;
 };
-ErrorBoundary.contextType = fn(4503).ThemeContext;
+ErrorBoundary.contextType = fn(4498).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/ErrorBoundary.tsx");
 

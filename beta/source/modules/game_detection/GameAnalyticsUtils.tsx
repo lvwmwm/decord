@@ -1,13 +1,13 @@
-// Module ID: 4919
-// Function ID: 4920
+// Module ID: 4917
+// Function ID: 4918
 // Name: GameAnalyticsUtils
-// Dependencies: [2019, 4920, 1368, 2]
+// Dependencies: [2015, 4918, 1364, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 4919 (GameAnalyticsUtils)
-import PlatformUtils from "PlatformUtils" /* 1368 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4920 */;
-import DetectableGameStore from "DetectableGameStore" /* 2019 */;
+// Module 4917 (GameAnalyticsUtils)
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4918 */;
+import DetectableGameStore from "DetectableGameStore" /* 2015 */;
 
 require = fn;
 const size = fn(2);
@@ -25,7 +25,7 @@ export const removeExecutablePathPrefix = function removeExecutablePathPrefix(ex
 };
 export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
   if (null == streamApplication) {
-    return { gameName: "toCharArray$esjava$1", gameId: "unicodeVersion", exe: "uri", distributor: "toCharArray$esjava$1", sku: "Array", gameMetadata: "IconComponent", rawExePath: "Set" };
+    return { gameName: "channel", gameId: "url", exe: "runOnJS", distributor: "window", sku: "padding", gameMetadata: "w", rawExePath: "keys" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

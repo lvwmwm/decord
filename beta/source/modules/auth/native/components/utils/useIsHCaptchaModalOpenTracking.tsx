@@ -1,56 +1,22 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16329
+// Function ID: 16330
 // Name: useIsHCaptchaModalOpenTracking
-// Dependencies: [19, 16290, 16291, 558, 568, 16287, 4649, 4648, 2]
+// Dependencies: [19, 16280, 16281, 16277, 4646, 4645, 2]
+// Exports: useIsHCaptchaModalOpenTracking
 
-// Module 16339 (useIsHCaptchaModalOpenTracking)
-import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+// Module 16329 (useIsHCaptchaModalOpenTracking)
+import RootNavigationRef from "RootNavigationRef" /* 4646 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = fn(16290).doesRegistrationHaveIdentityType;
-const RegistrationConstants = fn(16291);
+let closure_3 = fn(16280).doesRegistrationHaveIdentityType;
+const RegistrationConstants = fn(16281);
 ({ RegisterTransitionSteps: closure_4, RegistrationTransitionActionTypes: hasOwnProperty } = RegistrationConstants);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/useIsHCaptchaModalOpenTracking.tsx");
 
-export const useIsHCaptchaModalOpenTracking = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = context(568).c(3);
-  context = noop.useContext(context(16287).TrackRegistrationContext);
-  if (cResult[0] !== context) {
-    const fn = function o() {
-      const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
-      let current;
-      if (rootNavigationRef != null) {
-        current = rootNavigationRef.current;
-      }
-      if (null != current) {
-        return rootNavigationRef.addListener("state", () => {
-          let isModalOpenResult = context(dependencyMap[7]).isModalOpen("hcaptcha");
-          if (isModalOpenResult) {
-            isModalOpenResult = closure_2_3();
-          }
-          if (isModalOpenResult) {
-            const obj2 = { step: constants.CAPTCHA, actionType: constants2.VIEWED };
-            closure_1_0(obj2);
-          }
-        });
-      }
-    };
-    const items = [context];
-    cResult[0] = context;
-    cResult[1] = fn;
-    cResult[2] = items;
-    let tmp4 = items;
-    let tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
-  }
-  const layoutEffect = noop.useLayoutEffect(tmp3, tmp4);
-}) : (() => {
-  context = noop.useContext(context(16287).TrackRegistrationContext);
+export const useIsHCaptchaModalOpenTracking = function useIsHCaptchaModalOpenTracking() {
+  context = noop.useContext(context(16277).TrackRegistrationContext);
   const items = [context];
   const layoutEffect = noop.useLayoutEffect(() => {
     const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
@@ -60,7 +26,7 @@ export const useIsHCaptchaModalOpenTracking = ReactCompilerGating.isReactCompile
     }
     if (null != current) {
       return rootNavigationRef.addListener("state", () => {
-        let isModalOpenResult = context(dependencyMap[7]).isModalOpen("hcaptcha");
+        let isModalOpenResult = context(dependencyMap[5]).isModalOpen("hcaptcha");
         if (isModalOpenResult) {
           isModalOpenResult = closure_2_3();
         }
@@ -71,4 +37,4 @@ export const useIsHCaptchaModalOpenTracking = ReactCompilerGating.isReactCompile
       });
     }
   }, items);
-});
+};

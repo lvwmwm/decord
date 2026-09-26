@@ -1,10 +1,10 @@
-// Module ID: 10252
-// Function ID: 10253
+// Module ID: 10255
+// Function ID: 10256
 // Name: MobileGoLiveUpsellExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 10252 (MobileGoLiveUpsellExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 10255 (MobileGoLiveUpsellExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-mobile-go-live-upsell", kind: "user", defaultConfig: { showMobileGoLiveUpsell: false }, variations: null };

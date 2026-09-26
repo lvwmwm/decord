@@ -1,63 +1,50 @@
 // Module ID: 853
 // Function ID: 854
-// Dependencies: [42, 41, 93, 95, 98, 158]
+// Dependencies: [854]
+// Exports: isNodeEnv, loadModule
 
 // Module 853
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import _mod854 from "module_854" /* 854 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
+require = arg1;
+const module = arg4;
+const dependencyMap = arg6;
+function dynamicRequire(require, arg1) {
+  return require.require(arg1);
+}
+Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+
+export const isNodeEnv = function isNodeEnv() {
+  const isBrowserBundleResult = _mod854.isBrowserBundle();
+  if (isBrowserBundleResult) {
+    return !isBrowserBundleResult;
+  } else {
+    const _Object = Object;
+    const call = toString.call;
+    const _process = process;
+    let str = 0;
+    if (typeof process !== "undefined") {
+      str = process;
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
+    str = "[object process]";
+    const tmp3 = typeof call === "unknown" ? toString() : call(str);
+  }
+};
+export const loadModule = function loadModule(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = module;
+  }
+  try {
+    let tmp3 = dynamicRequire(tmp, arg0);
+    if (!tmp3) {
+      try {
+        const _HermesInternal = HermesInternal;
+        tmp3 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
+      } catch (err) {
+      }
+    }
+    return tmp3;
   } catch (err) {
   }
-}
-let _classCallCheck = _classCallCheck_mod;
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-class SentryError {
-  constructor(arg0) {
-    str = require;
-    if (require === undefined) {
-      str = "warn";
-    }
-    self = this;
-    tmp = closure_0(this, SentryError);
-    items = [];
-    items[0] = global;
-    tmp2 = c2;
-    obj = c2(SentryError);
-    tmp3 = closure_1;
-    if (closure_3()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.message = global;
-    tmp3Result.logLevel = str;
-    return tmp3Result;
-  }
-}
-_classCallCheck = SentryError;
-_inherits(SentryError, _wrapNativeSuper(Error));
-
-export const SentryError = _createClass(SentryError);
+};

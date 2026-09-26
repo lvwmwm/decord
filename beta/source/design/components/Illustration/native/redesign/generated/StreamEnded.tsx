@@ -1,88 +1,55 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9720
+// Function ID: 9721
 // Name: StreamEnded
-// Dependencies: [19, 17, 21, 8539, 9716, 9717, 558, 568, 4642, 2]
-// Exports: getStreamEndedSource
+// Dependencies: [19, 17, 21, 8534, 9721, 9722, 4639, 2]
+// Exports: StreamEnded, getStreamEndedSource, useStreamEndedSource
 
-// Module 9715 (StreamEnded)
-import c from "c" /* 568 */;
-import shared from "shared" /* 4642 */;
-import _mod8539 from "module_8539" /* 8539 */;
+// Module 9720 (StreamEnded)
+import shared from "shared" /* 4639 */;
+import _mod8534 from "module_8534" /* 8534 */;
 import noop from "module_19" /* 19 */;
+
+const require = globalThis.__r;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-let ReactCompilerGating = fn(558);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  const theme = shared.useThemeContext().theme;
-  if (cResult[0] !== theme) {
-    const obj3 = {
-      dark() {
-          return require("module_9716");
-        },
-      darker() {
-          return require("module_9717");
-        }
-    };
-    const illustrationSource = _mod8539.getIllustrationSource(theme, obj3);
-    cResult[0] = theme;
-    cResult[1] = illustrationSource;
-    let tmp4 = illustrationSource;
-    const tmpResult = _mod8539;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (() => {
-  const obj = shared;
-  return _mod8539.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_9716");
-    },
-    darker() {
-      return require("module_9717");
-    }
-  });
-});
-let closure_4 = tmp3;
-ReactCompilerGating = fn(558);
-function getStreamEndedSource(theme) {
-  return _mod8539.getIllustrationSource(theme, {
-    dark() {
-      return require("module_9716");
-    },
-    darker() {
-      return require("module_9717");
-    }
-  });
-}
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/StreamEnded.tsx");
 
-export { getStreamEndedSource };
-export const useStreamEndedSource = tmp3;
-export const StreamEnded = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(3);
-  const tmp2 = closure_4();
-  if (cResult[0] === arg0) {
-    if (cResult[1] === tmp2) {
-      let tmp3 = cResult[2];
+export const getStreamEndedSource = function getStreamEndedSource(theme) {
+  return _mod8534.getIllustrationSource(theme, {
+    dark() {
+      return require("module_9721");
+    },
+    darker() {
+      return require("module_9722");
     }
-    return tmp3;
-  }
-  const obj2 = {};
+  });
+};
+export const useStreamEndedSource = function useStreamEndedSource() {
+  const obj = shared;
+  return _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+    dark() {
+      return require("module_9721");
+    },
+    darker() {
+      return require("module_9722");
+    }
+  });
+};
+export const StreamEnded = function StreamEnded(arg0) {
+  const obj = shared;
+  const obj4 = {};
+  const illustrationSource = _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+    dark() {
+      return require("module_9721");
+    },
+    darker() {
+      return require("module_9722");
+    }
+  });
   const merged = Object.assign(arg0);
-  obj2.source = tmp2;
-  const tmp5 = <Image />;
-  cResult[0] = arg0;
-  cResult[1] = tmp2;
-  cResult[2] = tmp5;
-  tmp3 = tmp5;
-}) : ((arg0) => {
-  const obj = {};
-  const merged = Object.assign(arg0);
-  obj.source = closure_4();
+  obj4.source = illustrationSource;
   return <Image />;
-});
+};

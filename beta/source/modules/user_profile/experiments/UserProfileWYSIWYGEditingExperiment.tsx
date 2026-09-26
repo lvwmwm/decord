@@ -1,34 +1,23 @@
-// Module ID: 10035
-// Function ID: 10036
+// Module ID: 10068
+// Function ID: 10069
 // Name: UserProfileWYSIWYGEditingExperiment
-// Dependencies: [1438, 558, 568, 2]
-// Exports: getIsEligibleForUserProfileWYSIWYGEditing
+// Dependencies: [1434, 2]
+// Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 10035 (UserProfileWYSIWYGEditingExperiment)
-import c from "c" /* 568 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10068 (UserProfileWYSIWYGEditingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-wysiwyg-user-profile-editing", kind: "user", defaultConfig: { enabled: false }, variations: null };
-let obj2 = { 1: null };
+const obj2 = { 1: null };
 obj2[1] = { enabled: true };
 obj.variations = obj2;
-let closure_2 = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileWYSIWYGEditingExperiment.tsx");
 
-export const useIsEligibleForUserProfileWYSIWYGEditing = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    let tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => closure_2.useConfig({ location }).enabled);
+export const useIsEligibleForUserProfileWYSIWYGEditing = function useIsEligibleForUserProfileWYSIWYGEditing(AutomodQuarantineUtils) {
+  return closure_0.useConfig({ location: AutomodQuarantineUtils }).enabled;
+};
 export const getIsEligibleForUserProfileWYSIWYGEditing = function getIsEligibleForUserProfileWYSIWYGEditing(location) {
-  return closure_2.getConfig({ location }).enabled;
+  return closure_0.getConfig({ location }).enabled;
 };

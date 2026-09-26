@@ -1,78 +1,28 @@
-// Module ID: 17421
-// Function ID: 17422
+// Module ID: 17412
+// Function ID: 17413
 // Name: ConnectionDeprecationBottomSheet
-// Dependencies: [19, 17, 5017, 5532, 2042, 21, 4790, 580, 4503, 1616, 504, 5534, 7444, 7441, 7461, 17422, 4757, 17424, 1984, 7428, 7429, 5218, 17411, 4786, 1119, 3134, 9146, 5220, 13288, 558, 568, 4501, 1401, 5222, 7451, 7447, 2]
-// Exports: default
+// Dependencies: [19, 17, 5015, 5530, 2038, 21, 4788, 576, 4498, 1612, 504, 5532, 7442, 7439, 7459, 17413, 4755, 17415, 1980, 7426, 7427, 5216, 17402, 4784, 1115, 3130, 9148, 5218, 13278, 4496, 1397, 5220, 7449, 7445, 2]
+// Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 17421 (ConnectionDeprecationBottomSheet)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import AvatarUtils from "AvatarUtils" /* 1401 */;
-import themes from "themes" /* 4501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import Icon from "Icon" /* 5222 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 7444 */;
-import GameIcon from "GameIcon" /* 7451 */;
-import AccountLinkManager from "AccountLinkManager" /* 17422 */;
+// Module 17412 (ConnectionDeprecationBottomSheet)
+import nativeDefault from "native" /* 576 */;
+import AvatarUtils from "AvatarUtils" /* 1397 */;
+import themes from "themes" /* 4496 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import IconDefault from "Icon" /* 5220 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 7442 */;
+import GameIcon from "GameIcon" /* 7449 */;
+import AccountLinkManager from "AccountLinkManager" /* 17413 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5017 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
 
 const require = globalThis.__r;
-const IconDefault = Icon;
 const GameIconDefault = GameIcon;
 
+const Icon = tmp2(5220);
 require = fn;
-const View = fn(17).View;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4790);
-let obj2 = { iconContainer: { width: 56, height: 56, alignItems: "center", justifyContent: "center" }, content: { paddingHorizontal: nativeDefault.space.PX_16 }, text: { textAlign: "center" }, connectionIcon: { height: 48, width: 48 } };
-let closure_10 = createStyles.createStyles(obj2);
-let ReactCompilerGating = fn(558);
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(8);
-  ({ platform, theme } = arg0);
-  const tmp4 = closure_10();
-  const icon = platform.icon;
-  const tmp5 = themes.isThemeDark(theme) ? icon.darkPNG : icon.lightPNG;
-  if (cResult[0] !== tmp5) {
-    const source = tmp(1401).makeSource(tmp5);
-    cResult[0] = tmp5;
-    cResult[1] = source;
-    let tmp6 = source;
-    const tmpResult = tmp(1401);
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === tmp6) {
-    if (cResult[3] === tmp4.connectionIcon) {
-      let tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp4.iconContainer) {
-      if (cResult[6] === tmp8) {
-        let tmp11 = cResult[7];
-      }
-      return tmp11;
-    }
-    const obj3 = { style: tmp4.iconContainer, children: tmp8 };
-    const tmp14 = closure_1_8(View, obj3);
-    cResult[5] = tmp4.iconContainer;
-    cResult[6] = tmp8;
-    cResult[7] = tmp14;
-    tmp11 = tmp14;
-  }
-  const obj4 = { size: null, source: null, disableColor: true, style: null };
-  obj4.size = Icon.IconSizes.CUSTOM;
-  obj4.source = tmp6;
-  obj4.style = tmp4.connectionIcon;
-  const tmp10 = closure_1_8(IconDefault, obj4);
-  cResult[2] = tmp6;
-  cResult[3] = tmp4.connectionIcon;
-  cResult[4] = tmp10;
-  tmp8 = tmp10;
-}) : ((arg0) => {
+function ConnectionIcon(arg0) {
   ({ platform, theme } = arg0);
   const tmp = closure_10();
   const isThemeDarkResult = themes.isThemeDark(theme);
@@ -83,38 +33,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj4.size = Icon.IconSizes.CUSTOM;
   obj4.source = source;
   obj4.style = tmp.connectionIcon;
-  obj3.children = closure_1_8(IconDefault, obj4);
-  return closure_1_8(View, obj3);
-});
-ReactCompilerGating = fn(558);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
-  const cResult = c.c(5);
-  application = application.application;
-  const tmp4 = closure_10();
-  if (cResult[0] !== application) {
-    let tmp6 = null;
-    if (null != application) {
-      const obj2 = { game: application, size: GameIcon.GameIconSizes.NORMAL };
-      tmp6 = closure_1_8(GameIconDefault, obj2);
-    }
-    cResult[0] = application;
-    cResult[1] = tmp6;
-    let tmp5 = tmp6;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.iconContainer) {
-    if (cResult[3] === tmp5) {
-      let tmp10 = cResult[4];
-    }
-    return tmp10;
-  }
-  const tmp11 = closure_1_8(View, { style: tmp4.iconContainer, children: tmp5 });
-  cResult[2] = tmp4.iconContainer;
-  cResult[3] = tmp5;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
-}) : ((application) => {
+  obj3.children = React6(IconDefault, obj4);
+  return React6(View, obj3);
+}
+function ApplicationIcon(application) {
   application = application.application;
   const obj = { style: closure_10().iconContainer, children: null };
   let tmpResult = null;
@@ -123,10 +45,15 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =
     tmpResult = tmp(GameIconDefault, obj2);
   }
   obj.children = tmpResult;
-  return closure_1_8(View, obj);
-});
-ReactCompilerGating = fn(558);
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
+  return React6(View, obj);
+}
+const View = fn(17).View;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const jsxProd = fn(21);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+const createStyles = fn(4788);
+let obj2 = { iconContainer: { width: 56, height: 56, alignItems: "center", justifyContent: "center" }, content: { paddingHorizontal: nativeDefault.space.PX_16 }, text: { textAlign: "center" }, connectionIcon: { height: 48, width: 48 } };
+let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/application_account_linking/native/ConnectionDeprecationBottomSheet.tsx");
 
@@ -193,11 +120,11 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
       obj4.style = obj5;
       const obj6 = { justify: "center", align: "center", direction: "horizontal", children: null };
       const obj7 = { theme, platform: value };
-      const items4 = [closure_8(closure_11, obj7), , ];
+      const items4 = [closure_8(ConnectionIcon, obj7), , ];
       const obj8 = { theme };
       items4[1] = closure_8(tmp2(tmp3[22]).UnionIcon, obj8);
       const obj9 = { application: stateFromStores1 };
-      items4[2] = closure_8(closure_12, obj9);
+      items4[2] = closure_8(ApplicationIcon, obj9);
       obj6.children = items4;
       const items5 = [closure_9(tmp2(tmp3[21]).Stack, obj6), , ];
       const obj10 = { justify: "center", children: null };
@@ -245,69 +172,7 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
   }
   return false;
 };
-export const useShouldShowConnectionDeprecationBottomSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((deprecatedPlatformTypes) => {
-  const cResult = deprecatedPlatformTypes(568).c(3);
-  deprecatedPlatformTypes = deprecatedPlatformTypes.deprecatedPlatformTypes;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConnectedAccountsStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== deprecatedPlatformTypes) {
-    const fn = function o() {
-      const obj = { fetchingConnections: ConnectedAccountsStore.isFetching(), matchingPlatform: null };
-      const accounts = ConnectedAccountsStore.getAccounts();
-      const mapped = accounts.map((type) => closure_1_1(closure_1_2[11]).get(type.type));
-      obj.matchingPlatform = mapped.find((migrationData) => {
-        migrationData = migrationData.migrationData;
-        let migrationExperimentEnabled;
-        if (migrationData != null) {
-          migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("ConnectionDeprecationBottomSheet");
-        }
-        if (migrationExperimentEnabled) {
-          migrationExperimentEnabled = deprecatedPlatformTypes.includes(migrationData.type);
-        }
-        return migrationExperimentEnabled;
-      });
-      return obj;
-    };
-    cResult[1] = deprecatedPlatformTypes;
-    cResult[2] = fn;
-    let tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  let obj = deprecatedPlatformTypes(568);
-  const stateFromStoresObject = deprecatedPlatformTypes(504).useStateFromStoresObject(first, tmp6);
-  ({ fetchingConnections, matchingPlatform } = stateFromStoresObject);
-  const tmpResult = deprecatedPlatformTypes(504);
-  let replacedBy;
-  if (matchingPlatform != null) {
-    let migrationData = matchingPlatform.migrationData;
-    if (migrationData != null) {
-      replacedBy = migrationData.replacedBy;
-    }
-  }
-  const getOrFetchApplication = deprecatedPlatformTypes(7447).useGetOrFetchApplication(replacedBy);
-  const tmp10 = useStartAuthorizeDefault(getOrFetchApplication);
-  ({ hasAlreadyLinked, canStartAuthorization } = tmp10);
-  if (!fetchingConnections) {
-    fetchingConnections = !tmp10.fetched;
-  }
-  if (!fetchingConnections) {
-    fetchingConnections = !canStartAuthorization;
-  }
-  if (!fetchingConnections) {
-    fetchingConnections = null == getOrFetchApplication;
-  }
-  let tmp11 = !fetchingConnections;
-  if (!fetchingConnections) {
-    tmp11 = !hasAlreadyLinked;
-  }
-  return tmp11;
-}) : ((deprecatedPlatformTypes) => {
+export const useShouldShowConnectionDeprecationBottomSheet = function useShouldShowConnectionDeprecationBottomSheet(deprecatedPlatformTypes) {
   deprecatedPlatformTypes = deprecatedPlatformTypes.deprecatedPlatformTypes;
   const items = [ConnectedAccountsStore];
   const stateFromStoresObject = deprecatedPlatformTypes(504).useStateFromStoresObject(items, () => {
@@ -336,7 +201,7 @@ export const useShouldShowConnectionDeprecationBottomSheet = ReactCompilerGating
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(7447).useGetOrFetchApplication(replacedBy);
+  const getOrFetchApplication = deprecatedPlatformTypes(7445).useGetOrFetchApplication(replacedBy);
   const tmp5 = useStartAuthorizeDefault(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {
@@ -353,4 +218,4 @@ export const useShouldShowConnectionDeprecationBottomSheet = ReactCompilerGating
     tmp6 = !hasAlreadyLinked;
   }
   return tmp6;
-});
+};

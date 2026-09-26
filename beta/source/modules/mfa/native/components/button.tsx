@@ -1,33 +1,19 @@
-// Module ID: 15951
-// Function ID: 15952
+// Module ID: 15958
+// Function ID: 15959
 // Name: button
-// Dependencies: [19, 21, 558, 568, 5220, 2]
+// Dependencies: [19, 21, 5218, 2]
+// Exports: default
 
-// Module 15951 (button)
-import c from "c" /* 568 */;
-import components_Button_Button from "components/Button/Button" /* 5220 */;
+// Module 15958 (button)
+import components_Button_Button from "components/Button/Button" /* 5218 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/mfa/native/components/button.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== arg0) {
-    const obj2 = { size: "lg" };
-    const merged = Object.assign(arg0);
-    const tmp9 = jsx(components_Button_Button.Button, { size: "lg" });
-    cResult[0] = arg0;
-    cResult[1] = tmp9;
-    let tmp4 = tmp9;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : ((arg0) => {
+export default function MFAButton(arg0) {
   const merged = Object.assign(arg0);
   return jsx(components_Button_Button.Button, { size: "lg" });
-});
+};

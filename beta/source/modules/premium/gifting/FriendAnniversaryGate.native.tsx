@@ -1,11 +1,11 @@
-// Module ID: 8375
-// Function ID: 8376
+// Module ID: 8370
+// Function ID: 8371
 // Name: FriendAnniversaryGate
-// Dependencies: [8376, 2]
+// Dependencies: [8371, 2]
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 8375 (FriendAnniversaryGate)
-import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 8376 */;
+// Module 8370 (FriendAnniversaryGate)
+import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 8371 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");

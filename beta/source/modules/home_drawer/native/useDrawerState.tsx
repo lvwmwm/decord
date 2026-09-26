@@ -1,127 +1,29 @@
-// Module ID: 16374
-// Function ID: 16375
+// Module ID: 16367
+// Function ID: 16368
 // Name: useDrawerState
-// Dependencies: [32, 19, 558, 568, 1489, 4648, 2]
+// Dependencies: [32, 19, 1485, 4645, 2]
+// Exports: useDrawerOpen
 
-// Module 16374 (useDrawerState)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
+// Module 16367 (useDrawerState)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
 require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
 
-export const useDrawerOpen = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = require("c").c(7);
-  _require = tmp4;
-  const obj = require("c");
-  navigation = require("Link").useNavigation();
-  if (cResult[0] === (undefined === arg0 || arg0)) {
-    if (cResult[1] === navigation) {
-      let tmp6 = cResult[2];
-    }
-    _slicedToArray = _slicedToArray(noop.useState(tmp6), 2)[1];
-    if (cResult[3] === tmp4) {
-      if (cResult[4] === navigation) {
-        let tmp10 = cResult[5];
-        let tmp11 = cResult[6];
-      }
-      const effect = obj3.useEffect(tmp10, tmp11);
-      return tmp9;
-    }
-    const fn2 = function v() {
-      if (handleStateChange) {
-        handleStateChange = function handleStateChange(data) {
-          state = data.data.state;
-          let tmp;
-          if (state != null) {
-            const routes = state.routes;
-            if (routes != null) {
-              let num;
-              if (state != null) {
-                num = state.index;
-              }
-              if (num == null) {
-                num = 0;
-              }
-              tmp = routes[num];
-            }
-          }
-          const coerceGuildsRouteResult = handleStateChange(navigation[5]).coerceGuildsRoute(tmp);
-          if (null != coerceGuildsRouteResult) {
-            const params = coerceGuildsRouteResult.params;
-            let drawerOpen;
-            if (params != null) {
-              drawerOpen = params.drawerOpen;
-            }
-            closure_1_2(true === drawerOpen);
-          }
-        };
-        navigation.addListener("state", handleStateChange);
-        return () => {
-          navigation.removeListener("state", handleStateChange);
-        };
-      }
-    };
-    const items = [navigation, tmp4];
-    cResult[3] = tmp4;
-    cResult[4] = navigation;
-    cResult[5] = fn2;
-    cResult[6] = items;
-    tmp11 = items;
-    tmp10 = fn2;
-    obj3 = noop;
-    const tmp8 = _slicedToArray(noop.useState(tmp6), 2);
-  }
-  const fn = function u() {
-    if (closure_0) {
-      state = navigation.getState();
-      let tmp6;
-      if (state != null) {
-        const routes = state.routes;
-        if (routes != null) {
-          let num;
-          if (state != null) {
-            num = state.index;
-          }
-          if (num == null) {
-            num = 0;
-          }
-          tmp6 = routes[num];
-        }
-      }
-      const coerceGuildsRouteResult = NavigationRouteUtils.coerceGuildsRoute(tmp6);
-      let drawerOpen;
-      if (coerceGuildsRouteResult != null) {
-        const params = coerceGuildsRouteResult.params;
-        if (params != null) {
-          drawerOpen = params.drawerOpen;
-        }
-      }
-      return true === drawerOpen;
-    } else {
-      return false;
-    }
-  };
-  cResult[0] = undefined === arg0 || arg0;
-  cResult[1] = navigation;
-  cResult[2] = fn;
-  tmp6 = fn;
-}) : (() => {
-  let flag = arg0;
-  if (arg0 === undefined) {
+export const useDrawerOpen = function useDrawerOpen(enableHome) {
+  let flag = enableHome;
+  if (enableHome === undefined) {
     flag = true;
   }
   let navigation;
   _slicedToArray = undefined;
-  navigation = flag(navigation[4]).useNavigation();
+  navigation = flag(navigation[2]).useNavigation();
   const tmp2 = _slicedToArray(noop.useState(() => {
     if (flag) {
-      state = navigation.getState();
+      const state = navigation.getState();
       let tmp6;
       if (state != null) {
         const routes = state.routes;
@@ -153,7 +55,7 @@ export const useDrawerOpen = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   const items = [navigation, flag];
   const effect = noop.useEffect(() => {
     function handleStateChange(data) {
-      state = data.data.state;
+      const state = data.data.state;
       let tmp;
       if (state != null) {
         const routes = state.routes;
@@ -168,7 +70,7 @@ export const useDrawerOpen = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
           tmp = routes[num];
         }
       }
-      const coerceGuildsRouteResult = flag(navigation[5]).coerceGuildsRoute(tmp);
+      const coerceGuildsRouteResult = flag(navigation[3]).coerceGuildsRoute(tmp);
       if (null != coerceGuildsRouteResult) {
         const params = coerceGuildsRouteResult.params;
         let drawerOpen;
@@ -186,4 +88,4 @@ export const useDrawerOpen = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     }
   }, items);
   return tmp2[0];
-});
+};

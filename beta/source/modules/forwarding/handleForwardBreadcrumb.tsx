@@ -1,14 +1,14 @@
-// Module ID: 12096
-// Function ID: 12097
+// Module ID: 12213
+// Function ID: 12214
 // Name: handleForwardBreadcrumb
-// Dependencies: [5, 2045, 2067, 1078, 7617, 5771, 1245, 7523, 2]
+// Dependencies: [5, 2041, 2063, 1074, 7615, 5769, 1241, 7521, 2]
 // Exports: default
 
-// Module 12096 (handleForwardBreadcrumb)
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7617 */;
+// Module 12213 (handleForwardBreadcrumb)
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7615 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 let closure_9 = async function _handleForwardBreadcrumb(arg0) {
@@ -27,7 +27,7 @@ let closure_9 = async function _handleForwardBreadcrumb(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -72,7 +72,7 @@ let closure_9 = async function _handleForwardBreadcrumb(arg0) {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp7) {
           c3 = 0;
@@ -131,7 +131,7 @@ let closure_9 = async function _handleForwardBreadcrumb(arg0) {
     }
   })();
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, AnalyticsObjects: closure_7, Routes: closure_8 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forwarding/handleForwardBreadcrumb.tsx");

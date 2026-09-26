@@ -1,18 +1,32 @@
 // Module ID: 7144
 // Function ID: 7145
-// Dependencies: [19]
-// Exports: useFlashListContext, useRecyclerViewContext
+// Dependencies: []
 
 // Module 7144
-import noop from "module_19" /* 19 */;
+function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      exports = (arg0) => typeof arg0;
+    }
+    tmp.exports = exports;
+    return exports(arg0);
+  }
+  exports = (arg0) => {
+    if (arg0) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          let str = "symbol";
+        }
+        return str;
+      }
+    }
+    str = typeof arg0;
+  };
+}
+let exports = _typeof;
 
-const useContext = noop.useContext;
-const context = noop.createContext(undefined);
-
-export const RecyclerViewContextProvider = context.Provider;
-export const useRecyclerViewContext = function useRecyclerViewContext() {
-  return useContext(context);
-};
-export const useFlashListContext = function useFlashListContext() {
-  return useContext(context);
-};
+export default _typeof;

@@ -1,234 +1,23 @@
-// Module ID: 16993
-// Function ID: 16994
+// Module ID: 16983
+// Function ID: 16984
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1487, 21, 558, 568, 4529, 11505, 9551, 11506, 12378, 12245, 7429, 7431, 2]
+// Dependencies: [32, 19, 1483, 21, 4524, 11510, 9555, 11511, 7427, 12364, 12478, 7429, 2]
+// Exports: useAppLauncherActionSheet
 
-// Module 16993 (AppLauncherActionSheet)
-import c from "c" /* 568 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
-import ActionSheetContextDefault from "ActionSheetContext" /* 7431 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9551 */;
-import AppLauncherContext from "AppLauncherContext" /* 11505 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11506 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12245 */;
-import getAppDMApplication from "getAppDMApplication" /* 12378 */;
+// Module 16983 (AppLauncherActionSheet)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
+import ActionSheetContextDefault from "ActionSheetContext" /* 7429 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9555 */;
+import AppLauncherContext from "AppLauncherContext" /* 11510 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11511 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12364 */;
+import getAppDMApplication from "getAppDMApplication" /* 12478 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const AppLauncherRouteName = fn(1487).AppLauncherRouteName;
-const jsx = fn(21).jsx;
-let ReactCompilerGating = fn(558);
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) => {
-  const cResult = c.c(21);
-  chatInputRef = chatInputRef.chatInputRef;
-  const channel = chatInputRef.channel;
-  const ref = noop.useRef(null);
-  const obj2 = noop;
-  const sharedValue = ReanimatedRexport.useSharedValue(-1);
-  const sharedValue1 = ReanimatedRexport.useSharedValue(0);
-  const ref1 = noop.useRef(undefined);
-  const TEXT = AppLauncherTypes.AppLauncherEntrypoint.TEXT;
-  const ref2 = noop.useRef(AppLauncherContext.AppLauncherKeyboardCloseReason.DISMISSED);
-  const defaultAppLauncherWidth = useDefaultAppLauncherWidth.useDefaultAppLauncherWidth(TEXT);
-  if (cResult[0] !== channel) {
-    const obj6 = { channel, type: "channel" };
-    cResult[0] = channel;
-    cResult[1] = obj6;
-    let tmp9 = obj6;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] !== chatInputRef) {
-    const fn = function y() {
-      const current = chatInputRef.current;
-      let applicationCommandManager;
-      if (current != null) {
-        applicationCommandManager = current.getApplicationCommandManager();
-      }
-      return applicationCommandManager;
-    };
-    cResult[2] = chatInputRef;
-    cResult[3] = fn;
-    let tmp10 = fn;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-    class L {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          expandActionSheetResult = current.expandActionSheet();
-        }
-        return;
-      }
-    }
-    cResult[4] = E;
-    cResult[5] = L;
-    const tmp11 = E;
-    const tmp12 = L;
-  } else {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-    class L {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          expandActionSheetResult = current.expandActionSheet();
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[6] !== tmp10) {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-    class L {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          expandActionSheetResult = current.expandActionSheet();
-        }
-        return;
-      }
-    }
-    tmp14[1] = tmp11;
-    tmp14[2] = tmp12;
-    cResult[6] = tmp10;
-    cResult[7] = tmp14;
-    const tmp13 = tmp14;
-  } else {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[8] !== channel) {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-    class L {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          expandActionSheetResult = current.expandActionSheet();
-        }
-        return;
-      }
-    }
-    if (tmp17 != null) {
-      class E {
-        constructor() {
-          current = closure_1.current;
-          if (current != null) {
-            closeActionSheetResult = current.closeActionSheet();
-          }
-          return;
-        }
-      }
-    }
-    cResult[8] = channel;
-    cResult[9] = undefined;
-  } else {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[10] !== tmp16) {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-    class L {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          expandActionSheetResult = current.expandActionSheet();
-        }
-        return;
-      }
-    }
-    tmp20[0] = AppLauncherRouteName.HOME;
-    tmp20[1] = tmp16;
-    cResult[10] = tmp16;
-    cResult[11] = tmp20;
-  } else {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[12] === sharedValue) {
-    class E {
-      constructor() {
-        current = closure_1.current;
-        if (current != null) {
-          closeActionSheetResult = current.closeActionSheet();
-        }
-        return;
-      }
-    }
-  }
-  const ref3 = obj2.useRef(tmp13);
-  cResult[12] = sharedValue;
-  cResult[13] = sharedValue1;
-  cResult[14] = tmp9;
-  cResult[15] = tmp19;
-  cResult[16] = defaultAppLauncherWidth;
-  cResult[17] = jsx(AppLauncherNavigatorDefault, { bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: ref1, context: tmp9, chatInputRef: obj2.useRef(tmp13), entrypoint: TEXT, keyboardCloseReasonRef: ref2, width: defaultAppLauncherWidth, overrideParams: tmp19 });
-}) : ((arg0) => {
+function AppLauncherActionSheet(arg0) {
   ({ chatInputRef: require, channel } = arg0);
   const ref = noop.useRef(null);
   const sharedValue = ReanimatedRexport.useSharedValue(-1);
@@ -347,55 +136,13 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) =
     }
   })} entrypoint={TEXT} keyboardCloseReasonRef={ref2} width={defaultAppLauncherWidth} overrideParams={null} />;
   return jsx(Sheet_BottomSheet.BottomSheet, { ref, animatedIndex: sharedValue, scrollable: true, startExpanded: true, children: null });
-});
-ReactCompilerGating = fn(558);
+}
+const AppLauncherRouteName = fn(1483).AppLauncherRouteName;
+const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherActionSheet.tsx");
 
-export const useAppLauncherActionSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  const cResult = c.c(5);
-  [tmp4, tmp5] = noop.useState(false);
-  require = tmp5;
-  if (cResult[0] === tmp4) {
-    if (cResult[1] === arg0) {
-      let tmp6 = cResult[2];
-    }
-    if (cResult[3] !== tmp6) {
-      const obj2 = { appLauncherActionSheet: tmp6, setAppLauncherActionSheetEnabled: tmp5 };
-      cResult[3] = tmp6;
-      cResult[4] = obj2;
-      let tmp14 = obj2;
-    } else {
-      tmp14 = cResult[4];
-    }
-    return tmp14;
-  }
-  let tmp7 = null;
-  if (tmp4) {
-    const obj3 = { value: null, children: null };
-    const obj4 = {
-      transitionState: "visible",
-      close() {
-
-        },
-      onLeave() {
-          tmp5(false);
-        },
-      registerDismissHandler() {
-
-        }
-    };
-    obj3.value = obj4;
-    const obj5 = {};
-    const merged = Object.assign(arg0);
-    obj3.children = <closure_7 />;
-    tmp7 = jsx(ActionSheetContextDefault.Provider, { value: null, children: null });
-  }
-  cResult[0] = tmp4;
-  cResult[1] = arg0;
-  cResult[2] = tmp7;
-  tmp6 = tmp7;
-}) : ((arg0) => {
+export const useAppLauncherActionSheet = function useAppLauncherActionSheet(arg0) {
   closure_0 = arg0;
   let tmp = _slicedToArray(noop.useState(false), 2);
   const first = tmp[0];
@@ -421,10 +168,10 @@ export const useAppLauncherActionSheet = ReactCompilerGating.isReactCompilerEnab
       obj.value = obj2;
       const obj3 = {};
       const merged = Object.assign(closure_0);
-      obj.children = <closure_7 />;
+      obj.children = <AppLauncherActionSheet />;
       tmp = jsx(ActionSheetContextDefault.Provider, { value: null, children: null });
     }
     return tmp;
   }, items);
   return obj;
-});
+};

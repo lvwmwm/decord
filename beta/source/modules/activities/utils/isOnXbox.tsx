@@ -1,12 +1,12 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 13324
+// Function ID: 13325
 // Name: isOnXbox
-// Dependencies: [2008, 1078, 2]
+// Dependencies: [2004, 1074, 2]
 // Exports: default
 
-// Module 13334 (isOnXbox)
-import Constants from "Constants" /* 1078 */;
-import Constants2 from "Constants" /* 2008 */;
+// Module 13324 (isOnXbox)
+import Constants from "Constants" /* 1074 */;
+import Constants2 from "Constants" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = Constants2.XBOX_ACTIVITY_APPLICATION_ID;

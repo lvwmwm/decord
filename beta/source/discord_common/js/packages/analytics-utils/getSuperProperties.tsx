@@ -1,18 +1,18 @@
-// Module ID: 1340
-// Function ID: 1341
+// Module ID: 1336
+// Function ID: 1337
 // Name: getSuperProperties
-// Dependencies: [1341, 1342, 1343, 1344, 1345, 1346, 1347, 1348, 510, 1349, 1338, 2]
+// Dependencies: [1337, 1338, 1339, 1340, 1341, 1342, 1343, 1344, 510, 1345, 1334, 2]
 // Exports: extendSuperProperties, getCampaignParams, getSuperProperties, getSuperPropertiesBase64
 
-// Module 1340 (getSuperProperties)
+// Module 1336 (getSuperProperties)
 import Storage5 from "Storage" /* 510 */;
-import encodeProperties from "encodeProperties" /* 1338 */;
-import getSystemLocale2 from "getSystemLocale" /* 1341 */;
-import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1342 */;
-import clientLaunchId from "clientLaunchId" /* 1343 */;
-import formatDefault from "format" /* 1344 */;
-import NativeMetaQuestModule from "NativeMetaQuestModule" /* 1345 */;
-import NativeDeviceModule from "NativeDeviceModule" /* 1346 */;
+import encodeProperties from "encodeProperties" /* 1334 */;
+import getSystemLocale2 from "getSystemLocale" /* 1337 */;
+import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1338 */;
+import clientLaunchId from "clientLaunchId" /* 1339 */;
+import formatDefault from "format" /* 1340 */;
+import NativeMetaQuestModule from "NativeMetaQuestModule" /* 1341 */;
+import NativeDeviceModule from "NativeDeviceModule" /* 1342 */;
 import size from "module_2" /* 2 */;
 
 function getOS() {
@@ -51,7 +51,7 @@ function getDeviceProperties() {
   obj.system_locale = getSystemLocale();
   obj.has_client_mods = ClientModDetectionUtils.usesClientMods();
   try {
-    constants = tmp2(1347).default.getConstants();
+    constants = tmp2(1343).default.getConstants();
     let str = "";
     ({ Version, ReleaseChannel, DeviceVendorID } = constants);
     if ("Android" === tmp) {
@@ -60,7 +60,7 @@ function getDeviceProperties() {
     obj.client_version = Version + str;
     obj.release_channel = ReleaseChannel;
     obj.device_vendor_id = DeviceVendorID;
-    obj.design_id = tmp2(1348).DesignIds.DESIGN_TABS_IA;
+    obj.design_id = tmp2(1344).DesignIds.DESIGN_TABS_IA;
     return obj;
   } catch (err) {
   }
@@ -142,14 +142,14 @@ if (null == obj) {
         value = tmp6;
       }
       const Storage3 = tmp(510).Storage;
-      value3 = Storage3.get(referralProperties);
+      let value3 = Storage3.get(referralProperties);
       if (null == value3) {
         obj = {};
         const Storage4 = tmp(510).Storage;
         const result1 = Storage4.set(tmp8, obj);
         value3 = obj;
       }
-      const SessionStorage = tmp(1349).SessionStorage;
+      const SessionStorage = tmp(1345).SessionStorage;
       let value4 = SessionStorage.get(tmp8);
       if (null == value4) {
         const obj2 = {};
@@ -160,7 +160,7 @@ if (null == obj) {
           obj3["" + item + "_current"] = obj2[item];
           return obj2[item];
         });
-        const SessionStorage2 = tmp(1349).SessionStorage;
+        const SessionStorage2 = tmp(1345).SessionStorage;
         const result2 = SessionStorage2.set(tmp8, obj3);
         value4 = obj3;
       }
@@ -187,7 +187,7 @@ function extendSuperProperties(arg0) {
   closure_4 = encodeProperties.encodeProperties(obj);
 }
 let result = extendSuperProperties((function getContextualSuperProperties() {
-  obj = { client_build_number: parseInt("6505", 10) };
+  obj = { client_build_number: parseInt("6513", 10) };
   let buildNumber;
   if (DiscordNative != null) {
     const app = DiscordNative.app;

@@ -1,260 +1,38 @@
-// Module ID: 10306
-// Function ID: 10307
+// Module ID: 10309
+// Function ID: 10310
 // Name: StageChannelExpandedControls
-// Dependencies: [19, 17, 4812, 502, 2067, 21, 4790, 4640, 580, 558, 568, 9700, 9672, 504, 5668, 9920, 10307, 2]
+// Dependencies: [19, 17, 4810, 502, 2063, 21, 4788, 4637, 576, 9704, 9676, 504, 5666, 9942, 10310, 2]
 
-// Module 10306 (StageChannelExpandedControls)
-import nativeDefault from "native" /* 580 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9700 */;
+// Module 10309 (StageChannelExpandedControls)
+import nativeDefault from "native" /* 576 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9704 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
-const useChannelVideoLimitDefault = tmp2(9920);
+const useChannelVideoLimitDefault = tmp2(9942);
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { container: null };
 let obj3 = { backgroundColor: null, borderRadius: null, overflow: "hidden" };
-const ColorUtils = fn(4640);
+const ColorUtils = fn(4637);
 obj3.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.24);
 obj3.borderRadius = nativeDefault.radii.sm;
 obj.container = obj3;
 let closure_8 = createStyles.createStyles(obj);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelExpandedControls.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
-  let DeafenButton = channel;
-  const cResult = channel(568).c(38);
-  channel = channel.channel;
-  const tmp3 = closure_8();
-  const tmp5 = stateFromStores1(9700)(channel.id);
-  const obj = channel(568);
-  const tmp4 = stateFromStores1;
-  const isConnectedToVoiceChannel = channel(9672).useIsConnectedToVoiceChannel(channel);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel.guild_id) {
-    const fn = function h() {
-      return GuildStore.getGuild(channel.guild_id);
-    };
-    const items1 = [channel.guild_id];
-    cResult[1] = channel.guild_id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    let tmp10 = items1;
-    let tmp9 = fn;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const obj2 = channel(9672);
-  const stateFromStores = DeafenButton(504).useStateFromStores(first, tmp9, tmp10);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [ApplicationStreamingStore];
-    cResult[4] = items2;
-    let tmp12 = items2;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] !== channel.id) {
-    const fn2 = function y() {
-      return ApplicationStreamingStore.getAllApplicationStreamsForChannel(channel.id);
-    };
-    const items3 = [channel.id];
-    cResult[5] = channel.id;
-    cResult[6] = fn2;
-    cResult[7] = items3;
-    let tmp15 = items3;
-    let tmp14 = fn2;
-  } else {
-    tmp14 = cResult[6];
-    tmp15 = cResult[7];
-  }
-  const DeafenButtonResult = DeafenButton(504);
-  const stateFromStoresArray = DeafenButton(504).useStateFromStoresArray(tmp12, tmp14, tmp15);
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const items4 = [AuthenticationStore];
-    class A {
-      constructor() {
-        return closure_1_5.getId();
-      }
-    }
-    cResult[8] = items4;
-    cResult[9] = A;
-    let tmp17 = A;
-    let tmp16 = items4;
-  } else {
-    tmp16 = cResult[8];
-    tmp17 = cResult[9];
-  }
-  const DeafenButtonResult1 = DeafenButton(504);
-  stateFromStores1 = DeafenButton(504).useStateFromStores(tmp16, tmp17);
-  let num11;
-  if (stateFromStores != null) {
-    num11 = stateFromStores.maxStageVideoChannelUsers;
-  }
-  if (num11 == null) {
-    num11 = 0;
-  }
-  const DeafenButtonResult2 = DeafenButton(504);
-  const stageHasMedia = DeafenButton(5668).useStageHasMedia(channel.id);
-  const reachedLimit = tmp4(9920)(channel).reachedLimit;
-  if (cResult[10] === channel) {
-    if (cResult[11] === stateFromStores1) {
-      if (cResult[12] === stageHasMedia) {
-        if (cResult[13] === isConnectedToVoiceChannel) {
-          if (cResult[14] === tmp5) {
-            if (cResult[15] === reachedLimit) {
-              if (cResult[16] === num11) {
-                if (cResult[17] === stateFromStoresArray) {
-                  if (cResult[33] !== cResult[18]) {
-                    const mapped = arr7.map((children, index) => <View key={arg1}>{arg0}</View>);
-                    cResult[33] = arr7;
-                    class A {
-                      constructor() {
-                        return closure_1_5.getId();
-                      }
-                    }
-                    cResult[34] = mapped;
-                    let tmp40 = mapped;
-                  } else {
-                    tmp40 = cResult[34];
-                  }
-                  class A {
-                    constructor() {
-                      return closure_1_5.getId();
-                    }
-                  }
-                  const obj3 = { style: tmp3.container, children: tmp40 };
-                  const tmp45 = <View style={tmp3.container}>{tmp40}</View>;
-                  cResult[35] = tmp3.container;
-                  cResult[36] = tmp40;
-                  cResult[37] = tmp45;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        return closure_1_5.getId();
-      }
-    }
-    let tmp21 = jsx(DeafenButton(10307).StreamVolumeItem, {});
-    const tmp23 = jsx(DeafenButton(10307).StreamVolumeItem, {});
-  } else {
-    tmp21 = cResult[19];
-  }
-  const items5 = [];
-  items5.push(tmp21);
-  if (num11 > 0) {
-    if (tmp5) {
-      if (cResult[20] === stateFromStores1) {
-        if (cResult[21] === stageHasMedia) {
-          if (cResult[22] === reachedLimit) {
-            if (cResult[23] === stateFromStoresArray) {
-              let tmp25 = cResult[24];
-            }
-            if (cResult[25] === channel) {
-              if (cResult[26] === tmp25) {
-                let tmp28 = cResult[27];
-              }
-              items5.push(tmp28);
-            }
-            class A {
-              constructor() {
-                return closure_1_5.getId();
-              }
-            }
-            tmp30[0] = channel;
-            tmp30[1] = tmp25;
-            const tmp31 = jsx(DeafenButton(10307).ScreenshareButton, tmp30);
-            cResult[25] = channel;
-            cResult[26] = tmp25;
-            cResult[27] = tmp31;
-            tmp28 = tmp31;
-          }
-        }
-      }
-      let tmp26 = stateFromStoresArray.length > 0 && null == stateFromStoresArray.find((ownerId) => ownerId.ownerId === stateFromStores1);
-      if (!tmp26) {
-        let tmp27 = !stageHasMedia;
-        if (!stageHasMedia) {
-          tmp27 = reachedLimit;
-        }
-        tmp26 = tmp27;
-      }
-      class A {
-        constructor() {
-          return closure_1_5.getId();
-        }
-      }
-      cResult[20] = stateFromStores1;
-      cResult[21] = stageHasMedia;
-      cResult[22] = reachedLimit;
-      cResult[23] = stateFromStoresArray;
-      cResult[24] = tmp26;
-      tmp25 = tmp26;
-    }
-  }
-  if (cResult[28] === channel.id) {
-    if (cResult[29] === isConnectedToVoiceChannel) {
-      let tmp33 = cResult[30];
-    }
-    items5.push(tmp33);
-    if (cResult[31] !== channel) {
-      DeafenButton = DeafenButton(10307).DeafenButton;
-      class A {
-        constructor() {
-          return closure_1_5.getId();
-        }
-      }
-      const tmp38 = <DeafenButton channel={null} />;
-      cResult[31] = channel;
-      cResult[32] = tmp38;
-      const obj4 = { channel: null };
-    }
-    class A {
-      constructor() {
-        return closure_1_5.getId();
-      }
-    }
-    cResult[10] = channel;
-    cResult[11] = stateFromStores1;
-    cResult[12] = stageHasMedia;
-    cResult[13] = isConnectedToVoiceChannel;
-    cResult[14] = tmp5;
-    cResult[15] = reachedLimit;
-    cResult[16] = num11;
-    cResult[17] = stateFromStoresArray;
-    cResult[18] = items5;
-  }
-  const tmp34 = jsx(DeafenButton(10307).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel });
-  cResult[28] = channel.id;
-  cResult[29] = isConnectedToVoiceChannel;
-  cResult[30] = tmp34;
-  tmp33 = tmp34;
-}) : ((channel) => {
+export default noop.memo((channel) => {
   channel = channel.channel;
   importDefault = undefined;
   const tmp = closure_8();
   const tmp4 = useCanSpeakInChannelDefault(channel.id);
-  const isConnectedToVoiceChannel = channel(9672).useIsConnectedToVoiceChannel(channel);
-  const obj = channel(9672);
+  const isConnectedToVoiceChannel = channel(9676).useIsConnectedToVoiceChannel(channel);
+  const obj = channel(9676);
   const items = [GuildStore];
   const items1 = [channel.guild_id];
   const stateFromStores = channel(504).useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id), items1);
@@ -273,9 +51,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     num = 0;
   }
   const obj4 = channel(504);
-  const stageHasMedia = channel(5668).useStageHasMedia(channel.id);
+  const stageHasMedia = channel(5666).useStageHasMedia(channel.id);
   const items5 = [];
-  items5.push(jsx(channel(10307).StreamVolumeItem, {}));
+  items5.push(jsx(channel(10310).StreamVolumeItem, {}));
   if (tmp11) {
     const obj5 = { channel, disabled: null };
     let tmp12 = stateFromStoresArray.length > 0;
@@ -290,12 +68,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       tmp12 = reachedLimit;
     }
     obj5.disabled = tmp12;
-    items5.push(tmp9(tmp5(10307).ScreenshareButton, obj5));
+    items5.push(tmp9(tmp5(10310).ScreenshareButton, obj5));
   }
-  items5.push(jsx(channel(10307).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
-  items5.push(jsx(channel(10307).DeafenButton, { channel }));
+  items5.push(jsx(channel(10310).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
+  items5.push(jsx(channel(10310).DeafenButton, { channel }));
   const obj6 = { channelId: channel.id, isConnectedToVoiceChannel };
   tmp11 = num > 0 && tmp4;
-  const tmp5Result = channel(5668);
+  const tmp5Result = channel(5666);
   return <View style={tmp.container}>{items5.map((children, index) => <View key={arg1}>{arg0}</View>)}</View>;
-}));
+});

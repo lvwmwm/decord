@@ -1,16 +1,16 @@
-// Module ID: 7574
-// Function ID: 7575
+// Module ID: 7572
+// Function ID: 7573
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1376, 2025, 1190, 5674, 7575, 2023, 7576, 2]
+// Dependencies: [1372, 2021, 1186, 5672, 7573, 2019, 7574, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 7574 (SensitiveMediaExplicitRedactionSettingsUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
-import UserSettings from "UserSettings" /* 2023 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7575 */;
-import SensitiveMediaRedactionSettingUtils from "SensitiveMediaRedactionSettingUtils" /* 7576 */;
-import UserStore from "UserStore" /* 1376 */;
+// Module 7572 (SensitiveMediaExplicitRedactionSettingsUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5672 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7573 */;
+import SensitiveMediaRedactionSettingUtils from "SensitiveMediaRedactionSettingUtils" /* 7574 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function resolveExplicitContentSettingWithDefaults(isFriend) {
@@ -39,10 +39,10 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
     }
     if (isDm) {
       if (!flag) {
-        let BLUR2 = tmp4(1190).ExplicitContentRedaction.BLOCK;
+        let BLUR2 = tmp4(1186).ExplicitContentRedaction.BLOCK;
       }
     }
-    ExplicitContentRedaction = tmp4(1190).ExplicitContentRedaction;
+    ExplicitContentRedaction = tmp4(1186).ExplicitContentRedaction;
     BLUR2 = ExplicitContentRedaction.BLUR;
   } else {
     let nsfwAllowed;
@@ -59,9 +59,9 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         flag6 = false;
       }
       if (!flag5) {
-        const BLUR = tmp4(1190).ExplicitContentRedaction.BLUR;
+        const BLUR = tmp4(1186).ExplicitContentRedaction.BLUR;
       }
-      const ExplicitContentFilter2 = tmp4(2023).ExplicitContentFilter;
+      const ExplicitContentFilter2 = tmp4(2019).ExplicitContentFilter;
       const setting1 = ExplicitContentFilter2.getSetting();
     } else {
       let flag3 = isDm;
@@ -73,7 +73,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         flag4 = false;
       }
       if (flag3) {
-        const ExplicitContentFilter = tmp4(2023).ExplicitContentFilter;
+        const ExplicitContentFilter = tmp4(2019).ExplicitContentFilter;
         const setting2 = ExplicitContentFilter.getSetting();
         if (flag4) {
           let SHOW = obj[setting2];
@@ -81,52 +81,52 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
           SHOW = obj2[setting2];
         }
       } else {
-        SHOW = tmp4(1190).ExplicitContentRedaction.SHOW;
+        SHOW = tmp4(1186).ExplicitContentRedaction.SHOW;
       }
       return SHOW;
     }
   }
 }
-const ExplicitContentFilterTypes = fn(2025).ExplicitContentFilterTypes;
+const ExplicitContentFilterTypes = fn(2021).ExplicitContentFilterTypes;
 let obj = {};
 const DISABLED = ExplicitContentFilterTypes.DISABLED;
-obj[DISABLED.valueOf()] = fn(1190).ExplicitContentRedaction.SHOW;
+obj[DISABLED.valueOf()] = fn(1186).ExplicitContentRedaction.SHOW;
 const NON_FRIENDS = ExplicitContentFilterTypes.NON_FRIENDS;
 const valueOfResult = DISABLED.valueOf();
-obj[NON_FRIENDS.valueOf()] = fn(1190).ExplicitContentRedaction.SHOW;
+obj[NON_FRIENDS.valueOf()] = fn(1186).ExplicitContentRedaction.SHOW;
 const FRIENDS_AND_NON_FRIENDS = ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS;
 const valueOfResult12 = NON_FRIENDS.valueOf();
-obj[FRIENDS_AND_NON_FRIENDS.valueOf()] = fn(1190).ExplicitContentRedaction.BLOCK;
+obj[FRIENDS_AND_NON_FRIENDS.valueOf()] = fn(1186).ExplicitContentRedaction.BLOCK;
 let obj2 = {};
 const DISABLED2 = ExplicitContentFilterTypes.DISABLED;
 const valueOfResult13 = FRIENDS_AND_NON_FRIENDS.valueOf();
-obj2[DISABLED2.valueOf()] = fn(1190).ExplicitContentRedaction.SHOW;
+obj2[DISABLED2.valueOf()] = fn(1186).ExplicitContentRedaction.SHOW;
 const NON_FRIENDS2 = ExplicitContentFilterTypes.NON_FRIENDS;
 const valueOfResult14 = DISABLED2.valueOf();
-obj2[NON_FRIENDS2.valueOf()] = fn(1190).ExplicitContentRedaction.BLOCK;
+obj2[NON_FRIENDS2.valueOf()] = fn(1186).ExplicitContentRedaction.BLOCK;
 const FRIENDS_AND_NON_FRIENDS2 = ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS;
 const valueOfResult15 = NON_FRIENDS2.valueOf();
-obj2[FRIENDS_AND_NON_FRIENDS2.valueOf()] = fn(1190).ExplicitContentRedaction.BLOCK;
+obj2[FRIENDS_AND_NON_FRIENDS2.valueOf()] = fn(1186).ExplicitContentRedaction.BLOCK;
 let obj3 = {};
 const DISABLED3 = ExplicitContentFilterTypes.DISABLED;
 const valueOfResult16 = FRIENDS_AND_NON_FRIENDS2.valueOf();
-obj3[DISABLED3.valueOf()] = fn(1190).ExplicitContentRedaction.BLUR;
+obj3[DISABLED3.valueOf()] = fn(1186).ExplicitContentRedaction.BLUR;
 const NON_FRIENDS3 = ExplicitContentFilterTypes.NON_FRIENDS;
 const valueOfResult17 = DISABLED3.valueOf();
-obj3[NON_FRIENDS3.valueOf()] = fn(1190).ExplicitContentRedaction.BLUR;
+obj3[NON_FRIENDS3.valueOf()] = fn(1186).ExplicitContentRedaction.BLUR;
 const FRIENDS_AND_NON_FRIENDS3 = ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS;
 const valueOfResult18 = NON_FRIENDS3.valueOf();
-obj3[FRIENDS_AND_NON_FRIENDS3.valueOf()] = fn(1190).ExplicitContentRedaction.BLOCK;
+obj3[FRIENDS_AND_NON_FRIENDS3.valueOf()] = fn(1186).ExplicitContentRedaction.BLOCK;
 const obj4 = {};
 const DISABLED4 = ExplicitContentFilterTypes.DISABLED;
 const valueOfResult19 = FRIENDS_AND_NON_FRIENDS3.valueOf();
-obj4[DISABLED4.valueOf()] = fn(1190).ExplicitContentRedaction.BLUR;
+obj4[DISABLED4.valueOf()] = fn(1186).ExplicitContentRedaction.BLUR;
 const NON_FRIENDS4 = ExplicitContentFilterTypes.NON_FRIENDS;
 const valueOfResult20 = DISABLED4.valueOf();
-obj4[NON_FRIENDS4.valueOf()] = fn(1190).ExplicitContentRedaction.BLOCK;
+obj4[NON_FRIENDS4.valueOf()] = fn(1186).ExplicitContentRedaction.BLOCK;
 const FRIENDS_AND_NON_FRIENDS4 = ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS;
 const valueOfResult21 = NON_FRIENDS4.valueOf();
-obj4[FRIENDS_AND_NON_FRIENDS4.valueOf()] = fn(1190).ExplicitContentRedaction.BLOCK;
+obj4[FRIENDS_AND_NON_FRIENDS4.valueOf()] = fn(1186).ExplicitContentRedaction.BLOCK;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaExplicitRedactionSettingsUtils.tsx");
 
@@ -143,7 +143,7 @@ export const resolveSettingWithDefaultsForTeen = function resolveSettingWithDefa
     flag2 = false;
   }
   if (flag) {
-    const ExplicitContentFilter = tmp(2023).ExplicitContentFilter;
+    const ExplicitContentFilter = tmp(2019).ExplicitContentFilter;
     const setting = ExplicitContentFilter.getSetting();
     if (flag2) {
       let tmp5 = obj3[setting];
@@ -152,7 +152,7 @@ export const resolveSettingWithDefaultsForTeen = function resolveSettingWithDefa
     }
     return tmp5;
   } else {
-    return tmp(1190).ExplicitContentRedaction.BLUR;
+    return tmp(1186).ExplicitContentRedaction.BLUR;
   }
 };
 export const getExplicitContentSettingOrDefault = function getExplicitContentSettingOrDefault(arg0) {

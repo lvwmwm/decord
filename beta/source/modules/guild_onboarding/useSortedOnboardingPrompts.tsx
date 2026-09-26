@@ -1,12 +1,12 @@
-// Module ID: 11709
-// Function ID: 11710
+// Module ID: 11833
+// Function ID: 11834
 // Name: useSortedOnboardingPrompts
-// Dependencies: [19, 7379, 565, 2]
+// Dependencies: [19, 7377, 563, 2]
 // Exports: default
 
-// Module 11709 (useSortedOnboardingPrompts)
+// Module 11833 (useSortedOnboardingPrompts)
 import noop from "module_19" /* 19 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7379 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7377 */;
 
 const require = globalThis.__r;
 
@@ -38,7 +38,7 @@ export default function useSortedOnboardingPrompts(arg0) {
           let sum = num2;
         } else if (tmp2.hasNewAnswers) {
           let arr2 = items1.push(tmp2);
-          options = tmp2.options;
+          let options = tmp2.options;
           sum = num2 + options.filter((isUnseen) => isUnseen.isUnseen).length;
         } else if (tmp2.inOnboarding) {
           let arr3 = items3.push(tmp2);

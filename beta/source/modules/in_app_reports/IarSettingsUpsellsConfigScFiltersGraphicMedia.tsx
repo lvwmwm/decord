@@ -1,13 +1,13 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 8953
+// Function ID: 8954
 // Name: IarSettingsUpsellsConfigScFiltersGraphicMedia
-// Dependencies: [7577, 1190, 1119, 8938, 2]
+// Dependencies: [7575, 1186, 1115, 8940, 2]
 
-// Module 8951 (IarSettingsUpsellsConfigScFiltersGraphicMedia)
-import util from "util" /* 1119 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7577 */;
-import MenuTypes from "MenuTypes" /* 8938 */;
+// Module 8953 (IarSettingsUpsellsConfigScFiltersGraphicMedia)
+import util from "util" /* 1115 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7575 */;
+import MenuTypes from "MenuTypes" /* 8940 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -35,13 +35,13 @@ obj.onApply = function onApply() {
   const obj3 = {};
   ({ goreContentGuilds, goreContentFriendDm, goreContentNonFriendDm } = goreContentSettingOrDefault);
   if (goreContentGuilds === preloaded_user_settings.ExplicitContentRedaction.SHOW) {
-    obj3.goreContentGuilds = tmp(1190).ExplicitContentRedaction.BLUR;
+    obj3.goreContentGuilds = tmp(1186).ExplicitContentRedaction.BLUR;
   }
   if (goreContentFriendDm === preloaded_user_settings.ExplicitContentRedaction.SHOW) {
-    obj3.goreContentFriendDm = tmp(1190).ExplicitContentRedaction.BLUR;
+    obj3.goreContentFriendDm = tmp(1186).ExplicitContentRedaction.BLUR;
   }
   if (goreContentNonFriendDm === preloaded_user_settings.ExplicitContentRedaction.SHOW) {
-    obj3.goreContentNonFriendDm = tmp(1190).ExplicitContentRedaction.BLUR;
+    obj3.goreContentNonFriendDm = tmp(1186).ExplicitContentRedaction.BLUR;
   }
   return obj.updateGoreContentSetting(obj3);
 };

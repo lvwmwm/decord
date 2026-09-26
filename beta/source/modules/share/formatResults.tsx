@@ -1,20 +1,20 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 11276
+// Function ID: 11277
 // Name: formatResults
-// Dependencies: [5, 10108, 2045, 4431, 1376, 11316, 1078, 10109, 4803, 10118, 1119, 1374, 12, 2]
+// Dependencies: [5, 10129, 2041, 4427, 1372, 11277, 1074, 10130, 4801, 10139, 1115, 1370, 12, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getDestinationIdFromResult, getOrResolveChannelIdFromDestinationId
 
-// Module 11315 (formatResults)
+// Module 11276 (formatResults)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
-import sortByMatchScore from "sortByMatchScore" /* 10109 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10118 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4801 */;
+import sortByMatchScore from "sortByMatchScore" /* 10130 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10139 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 10108 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4431 */;
-import UserStore from "UserStore" /* 1376 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 10129 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function getChannelIdFromDestinationId(type) {
@@ -40,7 +40,7 @@ let closure_12 = async function _getOrResolveChannelIdFromDestinationId(arg0, va
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -67,13 +67,13 @@ let closure_12 = async function _getOrResolveChannelIdFromDestinationId(arg0, va
             return obj6;
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         }
       } else if (1 === tmp6) {
         c4 = 0;
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       } else if (arg0 === 1) {
         c1 = 3;
         throw value;
@@ -152,8 +152,8 @@ function mergeAndDedupeResultsWithHeaders(found, items1) {
   }
   return items;
 }
-const isAllowedType = fn(11316).isAllowedType;
-const Constants = fn(1078);
+const isAllowedType = fn(11277).isAllowedType;
+const Constants = fn(1074);
 ({ Permissions: closure_9, ChannelTypes: c10 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/share/formatResults.tsx");
@@ -191,24 +191,24 @@ export default function formatResults(hasQuery) {
             user = user.getUser(type.id);
             let tmp6 = null;
             if (null != user) {
-              const obj = { type: queryMode(10109).AutocompleterResultTypes.USER, record: user, score: 0 };
+              const obj = { type: queryMode(10130).AutocompleterResultTypes.USER, record: user, score: 0 };
               tmp6 = obj;
             }
             let tmp3 = tmp6;
           } else {
-            tmp3 = originDestination(10118)(type.id);
+            tmp3 = originDestination(10139)(type.id);
           }
           return tmp3;
         });
       }
       const channelHistory = QuickSwitcherStore.getChannelHistory();
       if (channelHistory.length > 0) {
-        let mapped1 = channelHistory.map((item) => originDestination(10118)(item));
+        let mapped1 = channelHistory.map((item) => originDestination(10139)(item));
       } else {
         mapped1 = [];
       }
       if (frequentChannels.length > 0) {
-        let mapped2 = frequentChannels.map((id) => originDestination(10118)(id.id));
+        let mapped2 = frequentChannels.map((id) => originDestination(10139)(id.id));
       } else {
         mapped2 = [];
       }
@@ -259,11 +259,11 @@ export default function formatResults(hasQuery) {
         let user = UserStore.getUser(targetDestination.id);
         targetDestination = null;
         if (null != user) {
-          let obj = { type: queryMode(10109).AutocompleterResultTypes.USER, record: user, score: 0 };
+          let obj = { type: queryMode(10130).AutocompleterResultTypes.USER, record: user, score: 0 };
           targetDestination = obj;
         }
       } else {
-        const tmp9 = originDestination(10118)(targetDestination.id);
+        const tmp9 = originDestination(10139)(targetDestination.id);
       }
     }
     mapped = [];
@@ -316,23 +316,23 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
   } else {
     items1 = [];
   }
-  const intl = queryMode(1119).intl;
-  const headerResult = queryMode(10109).createHeaderResult(intl.string(queryMode(1119).t.qm9dSj));
+  const intl = queryMode(1115).intl;
+  const headerResult = queryMode(10130).createHeaderResult(intl.string(queryMode(1115).t.qm9dSj));
   if (hasNonEmptyQuery.hasNonEmptyQuery) {
     const items2 = [headerResult];
     HermesBuiltin.arraySpread(mergeAndDedupeResultsWithHeaders(results.filter(isAllowedType), items1), 1);
     return items2;
   } else {
     const mapped = frequentChannels.map((id) => createAutocompleterResultForChannelIdDefault(id.id));
-    const found = mapped.filter(tmp(1374).isNotNullish);
+    const found = mapped.filter(tmp(1370).isNotNullish);
     const found1 = found.filter(isAllowedType);
     if (null != queryMode) {
       const items3 = [headerResult];
       HermesBuiltin.arraySpread(found1.filter((type) => type.type === queryMode), 1);
       let items4 = items3;
     } else {
-      const intl2 = tmp(1119).intl;
-      items4 = [tmp(10109).createHeaderResult(intl2.string(tmp(1119).t["80lOZ1"])), , ];
+      const intl2 = tmp(1115).intl;
+      items4 = [tmp(10130).createHeaderResult(intl2.string(tmp(1115).t["80lOZ1"])), , ];
       let tmp13 = null;
       if (null != selectedChannelId) {
         const tmp7 = createAutocompleterResultForChannelIdDefault(selectedChannelId);
@@ -340,7 +340,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
         if (null != tmp7) {
           let tmp9 = null;
           if (isAllowedType(tmp7)) {
-            let canResult = tmp7.type === tmp(10109).AutocompleterResultTypes.USER;
+            let canResult = tmp7.type === tmp(10130).AutocompleterResultTypes.USER;
             if (!canResult) {
               canResult = PermissionStore.can(constants.VIEW_CHANNEL, tmp7.record);
             }
@@ -356,9 +356,9 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
       items4[1] = tmp13;
       items4[2] = headerResult;
       HermesBuiltin.arraySpread(found1, 3);
-      const tmpResult = tmp(10109);
+      const tmpResult = tmp(10130);
     }
     return mergeAndDedupeResultsWithHeaders(items4, items1);
   }
-  const obj = queryMode(10109);
+  const obj = queryMode(10130);
 };

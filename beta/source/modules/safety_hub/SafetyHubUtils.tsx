@@ -1,16 +1,15 @@
-// Module ID: 8727
-// Function ID: 8728
+// Module ID: 8722
+// Function ID: 8723
 // Name: SafetyHubUtils
-// Dependencies: [502, 8728, 1078, 4384, 4940, 1119, 8729, 558, 568, 504, 2]
-// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
+// Dependencies: [502, 8723, 1074, 4380, 4938, 1115, 8724, 504, 2]
+// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 8727 (SafetyHubUtils)
+// Module 8722 (SafetyHubUtils)
 import initialize from "initialize" /* 504 */;
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4940 */;
-import SafetyHubModels from "SafetyHubModels" /* 8729 */;
+import util from "util" /* 1115 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4938 */;
+import SafetyHubModels from "SafetyHubModels" /* 8724 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -48,16 +47,15 @@ function parseMessageEmbedForProps(fields) {
     return obj;
   }
 }
-const SafetyHubConstants = fn(8728);
+const SafetyHubConstants = fn(8723);
 ({ AppealIngestionSignal: closure_4, SafetySystemNotificationCtaType: hasOwnProperty, SafetySystemNotificationEmbedKeys: metroRequire } = SafetyHubConstants);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ AbortCodes: closure_7, MessageAttachmentFlags: closure_8 } = Constants);
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  return _modDef4384().to(_modDef4384(timestamp));
+  return _modDef4380().to(_modDef4380(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   if (obj.isImageFile(filename.filename)) {
@@ -164,25 +162,10 @@ export const getClassificationExpiration = function getClassificationExpiration(
     }
   }
 };
-export const useIsSuspendedUser = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AuthenticationStore];
-    const fn = function s() {
-      return suspendedUserToken.getSuspendedUserToken();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  return null != initialize.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+export const useIsSuspendedUser = function useIsSuspendedUser() {
   const items = [AuthenticationStore];
   return null != initialize.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
-});
+};
 export const isCurrentUserSuspended = function isCurrentUserSuspended() {
   return null != AuthenticationStore.getSuspendedUserToken();
 };

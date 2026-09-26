@@ -1,22 +1,22 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11313
+// Function ID: 11314
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 17, 1078, 21, 4790, 580, 11352, 11073, 4993, 11363, 1984, 7658, 5239, 4786, 1119, 5221, 2]
+// Dependencies: [19, 17, 1074, 21, 4788, 576, 11314, 11036, 4991, 11325, 1980, 7656, 5237, 4784, 1115, 5219, 2]
 // Exports: default
 
-// Module 11351 (UnifiedGiftModalSuccessScreen)
-import nativeDefault from "native" /* 580 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
+// Module 11313 (UnifiedGiftModalSuccessScreen)
+import nativeDefault from "native" /* 576 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import openUserSettings from "openUserSettings" /* 7656 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
-const UserSettingsSections = fn(1078).UserSettingsSections;
+const UserSettingsSections = fn(1074).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { alertContainer: { paddingHorizontal: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_24, alignItems: "center" }, image: { position: "relative", top: -50 }, title: null, description: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_24, alignItems: "center" };
 obj2.title = { marginTop: -nativeDefault.space.PX_24, marginBottom: nativeDefault.space.PX_8 };
@@ -42,7 +42,7 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     }
     if (tmp2) {
       const obj2 = { giftBadgeProgress };
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11363, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11325, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
     }
   }, items);
   const items1 = [onClose];

@@ -1,26 +1,61 @@
 // Module ID: 6973
 // Function ID: 6974
-// Dependencies: [19, 6958]
-// Exports: useViewRefHandler
+// Dependencies: [6960, 6958]
 
 // Module 6973
-import _mod19 from "module_19" /* 19 */;
-import _modDef6958 from "module_6958" /* 6958 */;
+import RNGestureHandlerModuleDefault from "RNGestureHandlerModule" /* 6958 */;
 
-_mod19.useCallback;
-
-export const useViewRefHandler = function useViewRefHandler(current, detectorUpdater) {
-  const previousViewTag = current;
-  const items = [current, detectorUpdater];
-  return useCallback((viewRef) => {
-    if (null !== viewRef) {
-      previousViewTag.viewRef = viewRef;
-      if (-1 === previousViewTag.previousViewTag) {
-        tmp.previousViewTag = _modDef6958(tmp.viewRef);
+const require = arg1;
+importDefault = fn;
+let dependencyMap = arg6;
+let obj = {
+  createGestureHandler(Handler, handlerTag, config) {
+    _require = Handler;
+    closure_1 = handlerTag;
+    dependencyMap = config;
+    const result = require("transformIntoHandlerTags").scheduleOperationToBeFlushed(() => {
+      let obj2 = closure_2;
+      if (!closure_2) {
+        obj2 = {};
       }
-      if (!previousViewTag.firstRender) {
-        detectorUpdater(true);
-      }
-    }
-  }, items);
+      RNGestureHandlerModuleDefault.createGestureHandler(closure_0, closure_1, obj2);
+    });
+  },
+  setGestureHandlerConfig(handlerTag, result) {
+    _require = handlerTag;
+    closure_1 = result;
+    result = require("transformIntoHandlerTags").scheduleOperationToBeFlushed(() => {
+      result = RNGestureHandlerModuleDefault.setGestureHandlerConfig(closure_0, closure_1);
+    });
+  },
+  updateGestureHandlerConfig: null,
+  dropGestureHandler: null,
+  configureRelations: null,
+  installUIRuntimeBindings: null
 };
+fn = function n(arg0, arg1) {
+  const result = RNGestureHandlerModuleDefault.updateGestureHandlerConfig(arg0, arg1);
+  RNGestureHandlerModuleDefault.flushOperations();
+};
+fn.__closure = { updateGestureHandlerConfig: fn(6958).updateGestureHandlerConfig, flushOperations: fn(6958).flushOperations };
+fn.__workletHash = 12442858879797;
+fn.__initData = { code: "function pnpm_NativeProxyTs1(handlerTag,newConfig){const{updateGestureHandlerConfig,flushOperations}=this.__closure;updateGestureHandlerConfig(handlerTag,newConfig);flushOperations();}" };
+obj.updateGestureHandlerConfig = fn;
+obj.dropGestureHandler = function dropGestureHandler(handlerTag) {
+  _require = handlerTag;
+  const result = require("transformIntoHandlerTags").scheduleOperationToBeFlushed(() => {
+    RNGestureHandlerModuleDefault.dropGestureHandler(closure_0);
+  });
+};
+obj.configureRelations = function configureRelations(arg0, arg1) {
+  _require = arg0;
+  closure_1 = arg1;
+  const result = require("transformIntoHandlerTags").scheduleOperationToBeFlushed(() => {
+    RNGestureHandlerModuleDefault.configureRelations(closure_0, closure_1);
+  });
+};
+obj.installUIRuntimeBindings = function installUIRuntimeBindings() {
+  return RNGestureHandlerModuleDefault.installUIRuntimeBindings();
+};
+
+export const NativeProxy = obj;

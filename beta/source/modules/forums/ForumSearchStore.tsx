@@ -1,12 +1,12 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 8042
+// Function ID: 8043
 // Name: ForumSearchStore
-// Dependencies: [2045, 504, 577, 2]
+// Dependencies: [2041, 504, 573, 2]
 
-// Module 8047 (ForumSearchStore)
+// Module 8042 (ForumSearchStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const dependencyMap = {};
 const Store = initializeDefault.Store;
@@ -16,16 +16,16 @@ const prototype = ForumSearchStore.prototype;
 prototype["initialize"] = function initialize() {
   this.waitFor(ChannelStore);
 };
-prototype["getSearchQuery"] = function getSearchQuery(channelId) {
+prototype["getSearchQuery"] = function getSearchQuery(arg0) {
   let query;
-  if (dependencyMap[channelId] != null) {
+  if (dependencyMap[arg0] != null) {
     query = tmp.query;
   }
   return query;
 };
-prototype["getSearchLoading"] = function getSearchLoading(channelId) {
+prototype["getSearchLoading"] = function getSearchLoading(arg0) {
   let flag;
-  if (dependencyMap[channelId] != null) {
+  if (dependencyMap[arg0] != null) {
     flag = tmp.loading;
   }
   if (flag == null) {

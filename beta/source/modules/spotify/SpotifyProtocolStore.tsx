@@ -1,11 +1,11 @@
-// Module ID: 11914
-// Function ID: 11915
+// Module ID: 12032
+// Function ID: 12033
 // Name: SpotifyProtocolStore
-// Dependencies: [504, 577, 2]
+// Dependencies: [504, 573, 2]
 
-// Module 11914 (SpotifyProtocolStore)
+// Module 12032 (SpotifyProtocolStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let isRegistered = false;
 const Store = initializeDefault.Store;

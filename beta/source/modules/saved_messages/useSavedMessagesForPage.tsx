@@ -1,15 +1,16 @@
-// Module ID: 13630
-// Function ID: 13631
+// Module ID: 13620
+// Function ID: 13621
 // Name: useSavedMessagesForPage
-// Dependencies: [32, 19, 11818, 8141, 558, 568, 13631, 1374, 504, 2]
+// Dependencies: [32, 19, 11940, 8136, 13621, 504, 1370, 2]
+// Exports: default
 
-// Module 13630 (useSavedMessagesForPage)
-import GlobalUtils from "GlobalUtils" /* 1374 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8141 */;
-import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 13631 */;
+// Module 13620 (useSavedMessagesForPage)
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 8136 */;
+import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 13621 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11818 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11940 */;
 
 require = fn;
 function getSavedMessagesForType(arg0) {
@@ -21,276 +22,13 @@ function getSavedMessagesForType(arg0) {
     return SavedMessagesStore.getSavedMessages();
   }
 }
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/saved_messages/useSavedMessagesForPage.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let ALL = arg0;
-  const cResult = ALL(568).c(9);
-  if (undefined === arg0) {
-    ALL = tmp(8141).SavedMessageSortTypes.ALL;
-  }
-  if (cResult[0] !== ALL) {
-    const fn = function u() {
-      if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
-        let messageBookmarks = SavedMessagesStore.getMessageBookmarks();
-      } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === ALL) {
-        messageBookmarks = SavedMessagesStore.getMessageReminders();
-      } else {
-        messageBookmarks = SavedMessagesStore.getSavedMessages();
-      }
-      return messageBookmarks.map((saveData) => saveData.saveData);
-    };
-    cResult[0] = ALL;
-    cResult[1] = fn;
-    let tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  [first, dependencyMap] = noop.useState(tmp4);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const isStale = SavedMessagesStore.getIsStale();
-    cResult[2] = isStale;
-    let tmp7 = isStale;
-  } else {
-    tmp7 = cResult[2];
-  }
-  _slicedToArray = obj2.useRef(tmp7);
-  if (cResult[3] !== ALL) {
-    class M {
-      constructor() {
-        closure_0 = closure_1_5.getLastChanged();
-        handleChange = function handleChange() {
-          lastChanged = SavedMessagesStore.getLastChanged();
-          if (lastChanged !== lastChanged) {
-            if (ref.current) {
-              if (!obj.getIsStale()) {
-                tmp9.current = false;
-                if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
-                  let messageBookmarks = obj.getMessageBookmarks();
-                } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === ALL) {
-                  messageBookmarks = obj.getMessageReminders();
-                } else {
-                  messageBookmarks = obj.getSavedMessages();
-                }
-                closure_2(messageBookmarks.map((saveData) => saveData.saveData));
-              }
-            }
-            closure_2((arg0) => {
-              let items = [...arg0];
-              const map = new Map(closure_2_6(lastChanged).map(() => { ... }));
-              const iter = arg0[Symbol.iterator]();
-              const nextResult = iter.next();
-              while (iter !== undefined) {
-                let tmp2 = nextResult;
-                if (map.has(nextResult.messageId)) {
-                  let deleteResult = map.delete(tmp2.messageId);
-                } else {
-                  let spliceResult = items.splice(items.indexOf(tmp2), 1);
-                }
-                continue;
-              }
-              const values = map.values();
-              for (const item10046 of values) {
-                let arr = items.push(item10046.saveData);
-                continue;
-              }
-              return items;
-            });
-          }
-        };
-        addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
-        return () => {
-          SavedMessagesStore.removeChangeListener(handleChange);
-        };
-      }
-    }
-    let items = [ALL];
-    cResult[3] = ALL;
-    cResult[4] = M;
-    cResult[5] = items;
-    let tmp11 = items;
-    const tmp10 = M;
-  } else {
-    class M {
-      constructor() {
-        closure_0 = closure_1_5.getLastChanged();
-        handleChange = function handleChange() {
-          lastChanged = SavedMessagesStore.getLastChanged();
-          if (lastChanged !== lastChanged) {
-            if (ref.current) {
-              if (!obj.getIsStale()) {
-                tmp9.current = false;
-                if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
-                  let messageBookmarks = obj.getMessageBookmarks();
-                } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === ALL) {
-                  messageBookmarks = obj.getMessageReminders();
-                } else {
-                  messageBookmarks = obj.getSavedMessages();
-                }
-                closure_2(messageBookmarks.map((saveData) => saveData.saveData));
-              }
-            }
-            closure_2((arg0) => {
-              let items = [...arg0];
-              const map = new Map(closure_2_6(lastChanged).map(() => { ... }));
-              const iter = arg0[Symbol.iterator]();
-              const nextResult = iter.next();
-              while (iter !== undefined) {
-                let tmp2 = nextResult;
-                if (map.has(nextResult.messageId)) {
-                  let deleteResult = map.delete(tmp2.messageId);
-                } else {
-                  let spliceResult = items.splice(items.indexOf(tmp2), 1);
-                }
-                continue;
-              }
-              const values = map.values();
-              for (const item10046 of values) {
-                let arr = items.push(item10046.saveData);
-                continue;
-              }
-              return items;
-            });
-          }
-        };
-        addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
-        return () => {
-          SavedMessagesStore.removeChangeListener(handleChange);
-        };
-      }
-    }
-    tmp11 = cResult[5];
-  }
-  const effect = obj2.useEffect(tmp10, tmp11);
-  first(13631)();
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class M {
-      constructor() {
-        closure_0 = closure_1_5.getLastChanged();
-        handleChange = function handleChange() {
-          lastChanged = SavedMessagesStore.getLastChanged();
-          if (lastChanged !== lastChanged) {
-            if (ref.current) {
-              if (!obj.getIsStale()) {
-                tmp9.current = false;
-                if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
-                  let messageBookmarks = obj.getMessageBookmarks();
-                } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === ALL) {
-                  messageBookmarks = obj.getMessageReminders();
-                } else {
-                  messageBookmarks = obj.getSavedMessages();
-                }
-                closure_2(messageBookmarks.map((saveData) => saveData.saveData));
-              }
-            }
-            closure_2((arg0) => {
-              let items = [...arg0];
-              const map = new Map(closure_2_6(lastChanged).map(() => { ... }));
-              const iter = arg0[Symbol.iterator]();
-              const nextResult = iter.next();
-              while (iter !== undefined) {
-                let tmp2 = nextResult;
-                if (map.has(nextResult.messageId)) {
-                  let deleteResult = map.delete(tmp2.messageId);
-                } else {
-                  let spliceResult = items.splice(items.indexOf(tmp2), 1);
-                }
-                continue;
-              }
-              const values = map.values();
-              for (const item10046 of values) {
-                let arr = items.push(item10046.saveData);
-                continue;
-              }
-              return items;
-            });
-          }
-        };
-        addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
-        return () => {
-          SavedMessagesStore.removeChangeListener(handleChange);
-        };
-      }
-    }
-    const items1 = [SavedMessagesStore];
-    cResult[6] = items1;
-    const tmp14 = items1;
-  } else {
-    class M {
-      constructor() {
-        closure_0 = closure_1_5.getLastChanged();
-        handleChange = function handleChange() {
-          lastChanged = SavedMessagesStore.getLastChanged();
-          if (lastChanged !== lastChanged) {
-            if (ref.current) {
-              if (!obj.getIsStale()) {
-                tmp9.current = false;
-                if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
-                  let messageBookmarks = obj.getMessageBookmarks();
-                } else if (SavedMessagesTypes.SavedMessageSortTypes.REMINDER === ALL) {
-                  messageBookmarks = obj.getMessageReminders();
-                } else {
-                  messageBookmarks = obj.getSavedMessages();
-                }
-                closure_2(messageBookmarks.map((saveData) => saveData.saveData));
-              }
-            }
-            closure_2((arg0) => {
-              let items = [...arg0];
-              const map = new Map(closure_2_6(lastChanged).map(() => { ... }));
-              const iter = arg0[Symbol.iterator]();
-              const nextResult = iter.next();
-              while (iter !== undefined) {
-                let tmp2 = nextResult;
-                if (map.has(nextResult.messageId)) {
-                  let deleteResult = map.delete(tmp2.messageId);
-                } else {
-                  let spliceResult = items.splice(items.indexOf(tmp2), 1);
-                }
-                continue;
-              }
-              const values = map.values();
-              for (const item10046 of values) {
-                let arr = items.push(item10046.saveData);
-                continue;
-              }
-              return items;
-            });
-          }
-        };
-        addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
-        return () => {
-          SavedMessagesStore.removeChangeListener(handleChange);
-        };
-      }
-    }
-  }
-  if (cResult[7] !== first) {
-    class C {
-      constructor() {
-        mapped = closure_1.map((channelId) => savedMessage.getSavedMessage(channelId.channelId, channelId.messageId));
-        return mapped.filter(closure_0(closure_2[7]).isNotNullish);
-      }
-    }
-    cResult[7] = first;
-    cResult[8] = C;
-    const tmp15 = C;
-  } else {
-    class C {
-      constructor() {
-        mapped = closure_1.map((channelId) => savedMessage.getSavedMessage(channelId.channelId, channelId.messageId));
-        return mapped.filter(closure_0(closure_2[7]).isNotNullish);
-      }
-    }
-  }
-  const obj = ALL(568);
-  return ALL(504).useStateFromStoresArray(tmp14, tmp15);
-}) : (() => {
+export default function useSavedMessagesForPage() {
   let ALL = arg0;
   if (arg0 === undefined) {
-    ALL = ALL(8141).SavedMessageSortTypes.ALL;
+    ALL = ALL(8136).SavedMessageSortTypes.ALL;
   }
   importDefault = undefined;
   dependencyMap = undefined;
@@ -371,4 +109,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const mapped = _undefined.map((channelId) => savedMessage.getSavedMessage(channelId.channelId, channelId.messageId));
     return mapped.filter(GlobalUtils.isNotNullish);
   });
-});
+};

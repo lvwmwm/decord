@@ -1,104 +1,41 @@
 // Module ID: 6921
 // Function ID: 6922
-// Dependencies: [6922, 1641, 6912]
-// Exports: useScrollHandler
+// Dependencies: [1637]
+// Exports: getKeyboardAnimationConfigs
 
 // Module 6921
-import cancelAnimation from "cancelAnimation" /* 1641 */;
+import cancelAnimation from "cancelAnimation" /* 1637 */;
 
-const require = globalThis.__r;
-
-require = arg1;
-let dependencyMap = arg6;
-let __initData = { code: "function pnpm_useScrollHandlerTs1(event,context){const{handleOnScroll,onScroll,runOnJS}=this.__closure;handleOnScroll(event,context);if(onScroll){runOnJS(onScroll)({nativeEvent:event});}}" };
-let closure_3 = { code: "function pnpm_useScrollHandlerTs2(event,context){const{handleOnBeginDrag,onScrollBeginDrag,runOnJS}=this.__closure;handleOnBeginDrag(event,context);if(onScrollBeginDrag){runOnJS(onScrollBeginDrag)({nativeEvent:event});}}" };
-let closure_4 = { code: "function pnpm_useScrollHandlerTs3(event,context){const{handleOnEndDrag,onScrollEndDrag,runOnJS}=this.__closure;handleOnEndDrag(event,context);if(onScrollEndDrag){runOnJS(onScrollEndDrag)({nativeEvent:event});}}" };
-
-export const useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndDrag) => {
-  let useScrollEventsHandlersDefault = arg0;
-  if (arg0 === undefined) {
-    useScrollEventsHandlersDefault = require("module_6922").useScrollEventsHandlersDefault;
+require = fn;
+const dependencyMap = arg6;
+fn = function n(arg0, duration) {
+  if ("easeIn" === arg0) {
+    const obj2 = { easing: null, duration: null };
+    const Easing3 = cancelAnimation.Easing;
+    obj2.easing = Easing3.in(cancelAnimation.Easing.ease);
+    obj2.duration = duration;
+    return obj2;
+  } else if ("easeOut" === arg0) {
+    const obj3 = { easing: null, duration: null };
+    const Easing2 = cancelAnimation.Easing;
+    obj3.easing = Easing2.out(cancelAnimation.Easing.ease);
+    obj3.duration = duration;
+    return obj3;
+  } else if ("easeInEaseOut" === arg0) {
+    const obj4 = { easing: null, duration: null };
+    const Easing = cancelAnimation.Easing;
+    obj4.easing = Easing.inOut(cancelAnimation.Easing.ease);
+    obj4.duration = duration;
+    return obj4;
+  } else if ("linear" === arg0) {
+    const obj = { easing: cancelAnimation.Easing.linear, duration };
+    return obj;
+  } else if ("keyboard" === arg0) {
+    return { damping: 500, stiffness: 1000, mass: 3, overshootClamping: true, restDisplacementThreshold: 10, restSpeedThreshold: 10 };
   }
-  _require = onScroll;
-  dependencyMap = onScrollBeginDrag;
-  __initData = onScrollEndDrag;
-  let workletNoop2;
-  let workletNoop3;
-  const animatedRef = require("cancelAnimation").useAnimatedRef();
-  let obj = require("cancelAnimation");
-  const sharedValue = require("cancelAnimation").useSharedValue(0);
-  const scrollEventsHandlersDefault = useScrollEventsHandlersDefault(animatedRef, sharedValue, arg4);
-  let workletNoop = scrollEventsHandlersDefault.handleOnScroll;
-  if (undefined === workletNoop) {
-    workletNoop = tmp3(6912).workletNoop;
-  }
-  workletNoop2 = scrollEventsHandlersDefault.handleOnBeginDrag;
-  if (undefined === workletNoop2) {
-    workletNoop2 = tmp3(6912).workletNoop;
-  }
-  workletNoop3 = scrollEventsHandlersDefault.handleOnEndDrag;
-  if (undefined === workletNoop3) {
-    workletNoop3 = tmp3(6912).workletNoop;
-  }
-  let workletNoop4 = scrollEventsHandlersDefault.handleOnMomentumEnd;
-  if (undefined === workletNoop4) {
-    workletNoop4 = tmp3(6912).workletNoop;
-  }
-  let workletNoop5 = scrollEventsHandlersDefault.handleOnMomentumBegin;
-  if (undefined === workletNoop5) {
-    workletNoop5 = tmp3(6912).workletNoop;
-  }
-  const obj3 = { scrollHandler: null, scrollableRef: null, scrollableContentOffsetY: null };
-  let obj2 = require("cancelAnimation");
-  const obj4 = { onScroll: null, onBeginDrag: null, onEndDrag: null, onMomentumBegin: null, onMomentumEnd: null };
-  const fn = function v(nativeEvent, arg1) {
-    workletNoop(nativeEvent, arg1);
-    if (closure_0) {
-      const obj2 = { nativeEvent };
-      cancelAnimation.runOnJS(tmp2)(obj2);
-    }
-  };
-  const tmp3Result = require("cancelAnimation");
-  fn.__closure = { handleOnScroll: workletNoop, onScroll, runOnJS: require("cancelAnimation").runOnJS };
-  fn.__workletHash = 13105350120634;
-  fn.__initData = __initData;
-  obj4.onScroll = fn;
-  const fn2 = function _(nativeEvent, arg1) {
-    workletNoop2(nativeEvent, arg1);
-    if (closure_1) {
-      const obj2 = { nativeEvent };
-      cancelAnimation.runOnJS(tmp2)(obj2);
-    }
-  };
-  const obj5 = { handleOnScroll: workletNoop, onScroll, runOnJS: require("cancelAnimation").runOnJS };
-  fn2.__closure = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("cancelAnimation").runOnJS };
-  fn2.__workletHash = 803385440782;
-  fn2.__initData = workletNoop;
-  obj4.onBeginDrag = fn2;
-  class O {
-    constructor(arg0, arg1) {
-      tmp = workletNoop(arg0, onScroll);
-      if (closure_2) {
-        tmp3 = closure_0;
-        tmp4 = closure_1;
-        obj = closure_0(closure_1[1]);
-        obj1 = { nativeEvent: null };
-        obj1.nativeEvent = arg0;
-        tmp5 = obj.runOnJS(tmp2)(obj1);
-      }
-      return;
-    }
-  }
-  const obj6 = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("cancelAnimation").runOnJS };
-  O.__closure = { handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: require("cancelAnimation").runOnJS };
-  O.__workletHash = 3274737678599;
-  O.__initData = workletNoop2;
-  obj4.onEndDrag = O;
-  obj4.onMomentumBegin = workletNoop5;
-  obj4.onMomentumEnd = workletNoop4;
-  const items = [workletNoop, workletNoop2, workletNoop3, workletNoop5, workletNoop4, onScroll, onScrollBeginDrag, onScrollEndDrag];
-  obj3.scrollHandler = tmp3Result.useAnimatedScrollHandler(obj4, items);
-  obj3.scrollableRef = animatedRef;
-  obj3.scrollableContentOffsetY = sharedValue;
-  return obj3;
 };
+fn.__closure = { Easing: fn(1637).Easing };
+fn.__workletHash = 10639588577824;
+fn.__initData = { code: "function pnpm_getKeyboardAnimationConfigsTs1(easing,duration){const{Easing}=this.__closure;switch(easing){case'easeIn':return{easing:Easing.in(Easing.ease),duration:duration};case'easeOut':return{easing:Easing.out(Easing.ease),duration:duration};case'easeInEaseOut':return{easing:Easing.inOut(Easing.ease),duration:duration};case'linear':return{easing:Easing.linear,duration:duration};case'keyboard':return{damping:500,stiffness:1000,mass:3,overshootClamping:true,restDisplacementThreshold:10,restSpeedThreshold:10};}}" };
+
+export const getKeyboardAnimationConfigs = fn;

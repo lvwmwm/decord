@@ -1,75 +1,12 @@
 // Module ID: 8840
 // Function ID: 8841
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8841, 8842, 8789]
+// Dependencies: [26, 65]
 
 // Module 8840
-import _modDef8789 from "module_8789" /* 8789 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import _mod26 from "module_26" /* 26 */;
+import module_65 from "module_65" /* 65 */;
 
-const LinearGradient = importDefault;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const jsx = fn(21).jsx;
-class LinearGradient {
-  constructor() {
-    self = this;
-    tmp = c2(this, LinearGradient);
-    tmp2 = closure_4;
-    obj = closure_4(LinearGradient);
-    tmp3 = closure_3;
-    if (metroRequire()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(LinearGradient, _modDef8789);
-const entry = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const props = this.props;
-    const merged = Object.assign({ x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 });
-    const merged1 = Object.assign(LinearGradient(8842)(props, this));
-    return jsx(LinearGradient(8841), {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    });
-  }
-};
-const items = [entry];
-const importDefaultResultResult = _createClass(LinearGradient, items);
-importDefaultResultResult.displayName = "LinearGradient";
-importDefaultResultResult.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGMarker", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, refX: true, refY: true, markerHeight: true, markerWidth: true, markerUnits: true, orient: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true } };
 
-export default importDefaultResultResult;
+export default module_65.get("RNSVGMarker", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

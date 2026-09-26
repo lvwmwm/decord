@@ -1,13 +1,13 @@
-// Module ID: 7706
-// Function ID: 7707
+// Module ID: 7704
+// Function ID: 7705
 // Name: showCheckoutOrderErrorModal
-// Dependencies: [5, 32, 19, 21, 5148, 1119, 5144, 2]
+// Dependencies: [5, 32, 19, 21, 5146, 1115, 5142, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 7706 (showCheckoutOrderErrorModal)
-import util from "util" /* 1119 */;
-import useAlertStore from "useAlertStore" /* 5144 */;
-import AlertModal from "AlertModal" /* 5148 */;
+// Module 7704 (showCheckoutOrderErrorModal)
+import util from "util" /* 1115 */;
+import useAlertStore from "useAlertStore" /* 5142 */;
+import AlertModal from "AlertModal" /* 5146 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -36,7 +36,7 @@ function SyncedLoadingAlertModal(onConfirm) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -75,7 +75,7 @@ function SyncedLoadingAlertModal(onConfirm) {
               c3 = 0;
               closure_128_1(false);
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp22) {
             closure_2 = tmp22;
@@ -119,12 +119,12 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
   return new Promise((arg0) => {
     closure_0 = arg0;
     let obj = { key: "checkout-order-error", title: null, content: null, confirmText: null, onConfirm: null, onCancel: null, dismissable: false };
-    const intl = closure_0(1119).intl;
-    obj.title = intl.string(closure_0(1119).t.zrhHH3);
-    const intl2 = closure_0(1119).intl;
-    obj.content = intl2.string(closure_0(1119).t.PjfUXe);
-    const intl3 = closure_0(1119).intl;
-    obj.confirmText = intl3.string(closure_0(1119).t["7NqTJn"]);
+    const intl = closure_0(1115).intl;
+    obj.title = intl.string(closure_0(1115).t.zrhHH3);
+    const intl2 = closure_0(1115).intl;
+    obj.content = intl2.string(closure_0(1115).t.PjfUXe);
+    const intl3 = closure_0(1115).intl;
+    obj.confirmText = intl3.string(closure_0(1115).t["7NqTJn"]);
     dependencyMap = asyncGeneratorStep(async (arg0, value) => {
       if (c3 === 2) {
         c3 = 3;
@@ -136,7 +136,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -168,7 +168,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
             closure_128_0 = value;
             closure_129_0(closure_128_0);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;
@@ -195,6 +195,6 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
     ({ key, onCloseCallback } = obj);
     const merged = Object.assign(obj, Object.assign({ key: 0, onCloseCallback: 0, dismissable: 0 }));
     const merged1 = Object.assign(merged);
-    closure_0(5144).openAlert(key, closure_1_5(SyncedLoadingAlertModal, {}), onCloseCallback, { dismissable: obj.dismissable });
+    closure_0(5142).openAlert(key, closure_1_5(SyncedLoadingAlertModal, {}), onCloseCallback, { dismissable: obj.dismissable });
   });
 };

@@ -1,17 +1,17 @@
-// Module ID: 7379
-// Function ID: 7380
+// Module ID: 7377
+// Function ID: 7378
 // Name: GuildOnboardingPromptsStore
-// Dependencies: [2102, 2045, 7375, 7380, 7381, 12, 504, 1095, 11, 577, 2]
+// Dependencies: [2098, 2041, 7373, 7378, 7379, 12, 504, 1091, 11, 573, 2]
 
-// Module 7379 (GuildOnboardingPromptsStore)
+// Module 7377 (GuildOnboardingPromptsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import DurationsDefault from "Durations" /* 1095 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 7381 */;
-import ImpersonateStore from "ImpersonateStore" /* 2102 */;
-import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7375 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 7379 */;
+import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7373 */;
 
 require = fn;
 function handleUpdate(arg0) {
@@ -84,8 +84,8 @@ function handleUpdate(arg0) {
   obj.prompts = mapped;
   dependencyMap[guildId] = obj;
 }
-const GuildOnboardingStatus = fn(7375).GuildOnboardingStatus;
-const GuildOnboardingMode = fn(7380).GuildOnboardingMode;
+const GuildOnboardingStatus = fn(7373).GuildOnboardingStatus;
+const GuildOnboardingMode = fn(7378).GuildOnboardingMode;
 const dependencyMap = {};
 const dependencyMap2 = {};
 const dependencyMap3 = {};
@@ -156,7 +156,7 @@ prototype["getOnboardingResponsesForPrompt"] = function getOnboardingResponsesFo
       let intersectionResult = closure_13;
     } else {
       const self = this;
-      options = found.options;
+      const options = found.options;
       const mapped = options.map((id) => id.id);
       intersectionResult = _modDef12.intersection(mapped, this.getOnboardingResponses(guildId));
     }
@@ -187,9 +187,9 @@ prototype["getEnabledOnboardingPrompts"] = function getEnabledOnboardingPrompts(
   }
   return tmp2;
 };
-prototype["getDefaultChannelIds"] = function getDefaultChannelIds(guildId) {
+prototype["getDefaultChannelIds"] = function getDefaultChannelIds(id) {
   let defaultChannelIds;
-  if (dependencyMap[guildId] != null) {
+  if (dependencyMap[id] != null) {
     defaultChannelIds = tmp.defaultChannelIds;
   }
   if (defaultChannelIds == null) {
@@ -211,8 +211,8 @@ prototype["getEnabled"] = function getEnabled(id) {
   }
   return flag;
 };
-prototype["getOnboardingPrompt"] = function getOnboardingPrompt(promptId) {
-  closure_0 = promptId;
+prototype["getOnboardingPrompt"] = function getOnboardingPrompt(targetId13) {
+  closure_0 = targetId13;
   const values = Object.values(closure_8);
   const mapped = values.map((prompts) => prompts.prompts);
   return mapped.flat().find((id) => id.id === closure_0);

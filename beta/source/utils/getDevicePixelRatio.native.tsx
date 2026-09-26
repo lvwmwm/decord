@@ -1,10 +1,10 @@
-// Module ID: 1883
-// Function ID: 1884
+// Module ID: 1879
+// Function ID: 1880
 // Name: getDevicePixelRatio
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 1883 (getDevicePixelRatio)
+// Module 1879 (getDevicePixelRatio)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 5765
-// Function ID: 5766
+// Module ID: 5763
+// Function ID: 5764
 // Name: transformSKUTenantMetadata
-// Dependencies: [1977, 2]
+// Dependencies: [1973, 2]
 // Exports: default
 
-// Module 5765 (transformSKUTenantMetadata)
-import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
+// Module 5763 (transformSKUTenantMetadata)
+import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
 import size from "module_2" /* 2 */;
 
 function transformProfileEffectKeyFrameFromServer(src) {
@@ -74,7 +74,7 @@ export default function transformSKUTenantMetadata(social_layer) {
           obj20.assets = tmp13;
           obj20.label = item.label;
           tmp7 = obj20;
-        } else if (tmp8(1977).CollectiblesItemType.NAMEPLATE === type) {
+        } else if (tmp8(1973).CollectiblesItemType.NAMEPLATE === type) {
           const obj22 = { id: null, type: null, asset: null, assets: null, label: null, palette: null };
           ({ id: obj5.id, type: obj5.type, asset: obj5.asset, assets } = item);
           let tmp12;
@@ -86,7 +86,7 @@ export default function transformSKUTenantMetadata(social_layer) {
           obj22.assets = tmp12;
           ({ label: obj5.label, palette: obj5.palette } = item);
           tmp7 = obj22;
-        } else if (tmp8(1977).CollectiblesItemType.PROFILE_EFFECT === type) {
+        } else if (tmp8(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
           const obj24 = { id: null, type: null, title: null, description: null, accessibilityLabel: null, animationType: null, staticFrameSrc: null, thumbnailPreviewSrc: null, reducedMotionSrc: null, effects: null };
           ({ id: obj4.id, type: obj4.type, title: obj4.title, description: obj4.description, accessibilityLabel: obj4.accessibilityLabel, animationType: obj4.animationType, staticFrameSrc: obj4.staticFrameSrc, thumbnailPreviewSrc: obj4.thumbnailPreviewSrc, reducedMotionSrc: obj4.reducedMotionSrc, effects } = item);
           let mapped1;
@@ -95,7 +95,7 @@ export default function transformSKUTenantMetadata(social_layer) {
           }
           obj24.effects = mapped1;
           tmp7 = obj24;
-        } else if (tmp8(1977).CollectiblesItemType.PROFILE_FRAME === type) {
+        } else if (tmp8(1973).CollectiblesItemType.PROFILE_FRAME === type) {
           ({ id: obj10.id, type: obj10.type, label: obj10.label, layers: obj10.layers, inner_width: obj10.innerWidth, overflow_top: obj10.overflowTop, overflow_bottom: obj10.overflowBottom, overflow_horizontal: obj10.overflowHorizontal } = item);
           tmp7 = { id: null, type: null, label: null, layers: null, innerWidth: null, overflowTop: null, overflowBottom: null, overflowHorizontal: null };
           const obj25 = { id: null, type: null, label: null, layers: null, innerWidth: null, overflowTop: null, overflowBottom: null, overflowHorizontal: null };

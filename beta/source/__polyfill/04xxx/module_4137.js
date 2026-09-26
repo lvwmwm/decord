@@ -1,130 +1,199 @@
 // Module ID: 4137
 // Function ID: 4138
-// Dependencies: [3881, 4063, 4124]
+// Dependencies: [4039, 4109, 4123, 4110, 3877, 4040, 3878, 3881, 3882]
 // Exports: default
 
 // Module 4137
-import _typeof_mod from "module_3881" /* 3881 */;
-import module_4063_mod from "module_4063" /* 4063 */;
-import module_4124_mod from "module_4124" /* 4124 */;
+import _mod3882 from "module_3882" /* 3882 */;
+import differenceInCalendarDays_mod from "differenceInCalendarDays" /* 4039 */;
+import format_mod from "module_4109" /* 4109 */;
+import code_mod from "module_4123" /* 4123 */;
+import subMilliseconds_mod from "subMilliseconds" /* 4110 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import module_4040_mod from "module_4040" /* 4040 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
+import module_3881_mod from "module_3881" /* 3881 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let differenceInCalendarDays = differenceInCalendarDays_mod;
+if (!differenceInCalendarDays) {
+  let obj = { default: differenceInCalendarDays };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = differenceInCalendarDays;
 }
-_typeof = tmp3;
-let module_4063 = module_4063_mod;
-if (!module_4063) {
-  const obj2 = { default: module_4063 };
+differenceInCalendarDays = tmp3;
+let format = format_mod;
+if (!format) {
+  let obj2 = { default: format };
   let tmp5 = obj2;
 } else {
-  tmp5 = module_4063;
+  tmp5 = format;
 }
-module_4063 = tmp5;
-let module_4124 = module_4124_mod;
-if (!module_4124) {
-  const obj3 = { default: module_4124 };
+format = tmp5;
+let code = code_mod;
+if (!code) {
+  const obj3 = { default: code };
   let tmp7 = obj3;
 } else {
-  tmp7 = module_4124;
+  tmp7 = code;
 }
-module_4124 = tmp7;
+code = tmp7;
+let subMilliseconds = subMilliseconds_mod;
+if (!subMilliseconds) {
+  const obj4 = { default: subMilliseconds };
+  let tmp9 = obj4;
+} else {
+  tmp9 = subMilliseconds;
+}
+subMilliseconds = tmp9;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj5 = { default: _typeof };
+  let tmp11 = obj5;
+} else {
+  tmp11 = _typeof;
+}
+_typeof = tmp11;
+let module_4040 = module_4040_mod;
+if (!module_4040) {
+  const obj6 = { default: module_4040 };
+  let tmp13 = obj6;
+} else {
+  tmp13 = module_4040;
+}
+module_4040 = tmp13;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj7 = { default: requiredArgs };
+  let tmp15 = obj7;
+} else {
+  tmp15 = requiredArgs;
+}
+requiredArgs = tmp15;
+let module_3881 = module_3881_mod;
+if (!module_3881) {
+  const obj8 = { default: module_3881 };
+  let tmp17 = obj8;
+} else {
+  tmp17 = module_3881;
+}
+module_3881 = tmp17;
 
-export default function formatISO9075(arg0, format) {
-  if (arguments.length < 1) {
-    const _TypeError = TypeError;
-    const concat2 = "1 argument required, but only ".concat;
-    const typeError = new TypeError("1 argument required, but only ".concat(arguments.length, " present"));
-    throw typeError;
-  } else {
-    const defaultResult = _typeof.default(arg0);
-    if (module_4063.default(defaultResult)) {
-      format = undefined;
-      if (null != format) {
-        format = format.format;
-      }
-      let str3 = "extended";
-      if (null !== format) {
-        str3 = "extended";
-        if (undefined !== format) {
-          str3 = format;
-        }
-      }
-      const StringResult = String(str3);
-      let representation;
-      if (null != format) {
-        representation = format.representation;
-      }
-      let str5 = "complete";
-      if (null !== representation) {
-        str5 = "complete";
-        if (undefined !== representation) {
-          str5 = representation;
-        }
-      }
-      const StringResult1 = String(str5);
-      if ("extended" !== StringResult) {
-        if ("basic" !== StringResult) {
-          const _RangeError3 = RangeError;
-          const rangeError = new RangeError("format must be 'extended' or 'basic'");
-          throw rangeError;
-        }
-      }
-      if ("date" !== StringResult1) {
-        if ("time" !== StringResult1) {
-          if ("complete" !== StringResult1) {
-            const _RangeError2 = RangeError;
-            const rangeError1 = new RangeError("representation must be 'date', 'time', or 'complete'");
-            throw rangeError1;
+export default function formatRelative(arg0, arg1, locale) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const defaultResult2 = _typeof.default(arg1);
+  const defaultOptions = _mod3882.getDefaultOptions();
+  let locale1;
+  if (null != locale) {
+    locale1 = locale.locale;
+  }
+  if (null === locale1) {
+    locale1 = defaultOptions.locale;
+  }
+  if (null === locale1) {
+    locale1 = code.default;
+  }
+  let weekStartsOn;
+  if (null != locale) {
+    weekStartsOn = locale.weekStartsOn;
+  }
+  if (null === weekStartsOn) {
+    let weekStartsOn1;
+    if (null != locale) {
+      locale = locale.locale;
+      if (null !== locale) {
+        if (undefined !== locale) {
+          const options = locale.options;
+          if (null !== options) {
+            if (undefined !== options) {
+              weekStartsOn1 = options.weekStartsOn;
+            }
           }
         }
       }
-      let str10 = "";
-      if ("extended" === StringResult) {
-        str10 = "-";
-      }
-      let str11 = "";
-      if ("extended" === StringResult) {
-        str11 = ":";
-      }
-      let str13 = "";
-      if ("time" !== StringResult1) {
-        const defaultResult1 = module_4124.default(defaultResult.getDate(), 2);
-        const concat3 = "".concat;
-        const combined = "".concat(module_4124.default(defaultResult.getFullYear(), 4));
-        const combined1 = combined.concat(str10);
-        const combined2 = combined1.concat(module_4124.default(defaultResult.getMonth() + 1, 2));
-        const combined3 = combined2.concat(str10);
-        str13 = combined3.concat(defaultResult1);
-        const defaultResult2 = module_4124.default(defaultResult.getMonth() + 1, 2);
-      }
-      let combined10 = str13;
-      if ("date" !== StringResult1) {
-        const defaultResult3 = module_4124.default(defaultResult.getHours(), 2);
-        let str14 = " ";
-        const defaultResult4 = module_4124.default(defaultResult.getMinutes(), 2);
-        if ("" === str13) {
-          str14 = "";
+    }
+    weekStartsOn = weekStartsOn1;
+  }
+  if (null === weekStartsOn) {
+    weekStartsOn = defaultOptions.weekStartsOn;
+  }
+  if (null === weekStartsOn) {
+    const locale2 = defaultOptions.locale;
+    let weekStartsOn2;
+    if (null !== locale2) {
+      if (undefined !== locale2) {
+        const options2 = locale2.options;
+        if (null !== options2) {
+          if (undefined !== options2) {
+            weekStartsOn2 = options2.weekStartsOn;
+          }
         }
-        const concat = "".concat;
-        const combined4 = "".concat(str13);
-        const combined5 = combined4.concat(str14);
-        const combined6 = combined5.concat(defaultResult3);
-        const combined7 = combined6.concat(str11);
-        const combined8 = combined7.concat(defaultResult4);
-        const combined9 = combined8.concat(str11);
-        combined10 = combined9.concat(module_4124.default(defaultResult.getSeconds(), 2));
-        const defaultResult5 = module_4124.default(defaultResult.getSeconds(), 2);
       }
-      return combined10;
+    }
+    weekStartsOn = weekStartsOn2;
+  }
+  let num = 0;
+  if (null !== weekStartsOn) {
+    num = 0;
+    if (undefined !== weekStartsOn) {
+      num = weekStartsOn;
+    }
+  }
+  const defaultResult3 = module_3881.default(num);
+  if (locale1.localize) {
+    if (locale1.formatLong) {
+      if (locale1.formatRelative) {
+        const defaultResult4 = differenceInCalendarDays.default(defaultResult1, defaultResult2);
+        const _isNaN = isNaN;
+        if (isNaN(defaultResult4)) {
+          const _RangeError4 = RangeError;
+          const rangeError = new RangeError("Invalid time value");
+          throw rangeError;
+        } else {
+          let str4 = "other";
+          let str5 = "other";
+          if (defaultResult4 >= -6) {
+            let str6 = "lastWeek";
+            if (defaultResult4 >= -1) {
+              let str7 = "yesterday";
+              if (defaultResult4 >= 0) {
+                let str8 = "today";
+                if (defaultResult4 >= 1) {
+                  let str9 = "tomorrow";
+                  if (defaultResult4 >= 2) {
+                    if (defaultResult4 < 7) {
+                      str4 = "nextWeek";
+                    }
+                    str9 = str4;
+                  }
+                  str8 = str9;
+                }
+                str7 = str8;
+              }
+              str6 = str7;
+            }
+            str5 = str6;
+          }
+          const defaultResult5 = subMilliseconds.default(defaultResult1, module_4040.default(defaultResult1));
+          const obj = { locale: locale1, weekStartsOn: defaultResult3 };
+          const obj2 = { locale: locale1, weekStartsOn: defaultResult3 };
+          return format.default(defaultResult1, locale1.formatRelative(str5, defaultResult5, subMilliseconds.default(defaultResult2, module_4040.default(defaultResult2)), obj), obj2);
+        }
+      } else {
+        const _RangeError3 = RangeError;
+        const rangeError1 = new RangeError("locale must contain formatRelative property");
+        throw rangeError1;
+      }
     } else {
-      const _RangeError = RangeError;
-      const rangeError2 = new RangeError("Invalid time value");
+      const _RangeError2 = RangeError;
+      const rangeError2 = new RangeError("locale must contain formatLong property");
       throw rangeError2;
     }
+  } else {
+    const _RangeError = RangeError;
+    const rangeError3 = new RangeError("locale must contain localize property");
+    throw rangeError3;
   }
 };
 export default exports.default;

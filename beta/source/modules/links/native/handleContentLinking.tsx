@@ -1,10 +1,10 @@
-// Module ID: 11741
-// Function ID: 11742
+// Module ID: 11865
+// Function ID: 11866
 // Name: handleContentLinking
-// Dependencies: [5, 5809, 1078, 4993, 7523, 1105, 10374, 2]
+// Dependencies: [5, 5807, 1074, 4991, 7521, 1101, 11636, 2]
 // Exports: default
 
-// Module 11741 (handleContentLinking)
+// Module 11865 (handleContentLinking)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_7 = async function _handleContentLinking(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -49,7 +49,7 @@ let closure_7 = async function _handleContentLinking(arg0, value) {
           let skipMessageFetch;
           c3 = 1;
           c4 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -126,7 +126,7 @@ let closure_7 = async function _handleContentLinking(arg0, value) {
             const obj5 = closure_130_1(closure_130_2[6]);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: null };
         }
         if (safe) {
           const obj9 = { navigationReplace: closure_129_7, openChannel: true, skipMessageFetch };
@@ -146,8 +146,8 @@ let closure_7 = async function _handleContentLinking(arg0, value) {
     }
   }
 };
-fn(5809).addPostConnectionCallback;
-const Routes = fn(1078).Routes;
+fn(5807).addPostConnectionCallback;
+const Routes = fn(1074).Routes;
 let c6 = null;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/links/native/handleContentLinking.tsx");

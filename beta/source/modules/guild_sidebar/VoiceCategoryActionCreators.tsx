@@ -1,11 +1,11 @@
-// Module ID: 16545
-// Function ID: 16546
+// Module ID: 16538
+// Function ID: 16539
 // Name: VoiceCategoryActionCreators
-// Dependencies: [577, 2]
+// Dependencies: [573, 2]
 // Exports: voiceCategoryCollapse, voiceCategoryExpand
 
-// Module 16545 (VoiceCategoryActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
+// Module 16538 (VoiceCategoryActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_sidebar/VoiceCategoryActionCreators.tsx");

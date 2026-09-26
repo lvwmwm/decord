@@ -1,12 +1,12 @@
-// Module ID: 12239
-// Function ID: 12240
+// Module ID: 12355
+// Function ID: 12356
 // Name: ApplicationDirectoryCollectionsStore
-// Dependencies: [12, 504, 577, 2]
+// Dependencies: [12, 504, 573, 2]
 
-// Module 12239 (ApplicationDirectoryCollectionsStore)
+// Module 12355 (ApplicationDirectoryCollectionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
 
 let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };
 let closure_3 = [];

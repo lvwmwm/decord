@@ -1,113 +1,47 @@
-// Module ID: 15691
-// Function ID: 15692
+// Module ID: 15695
+// Function ID: 15696
 // Name: AnimateStickersSetting
-// Dependencies: [19, 8270, 2026, 2023, 558, 568, 1119, 11630, 2]
+// Dependencies: [19, 8265, 2022, 2019, 1115, 11754, 2]
 
-// Module 15691 (AnimateStickersSetting)
-import c from "c" /* 568 */;
-import util from "util" /* 1119 */;
-import UserSettings from "UserSettings" /* 2023 */;
+// Module 15695 (AnimateStickersSetting)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const StickerAnimationSettings = fn(2026).StickerAnimationSettings;
-const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11630);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { label: null, value: null };
-    const intl = tmp(1119).intl;
-    obj2.label = intl.string(tmp(1119).t["Xp+X2U"]);
-    obj2.value = StickerAnimationSettings.ALWAYS_ANIMATE;
-    const items = [obj2, , ];
-    const obj3 = { label: null, value: null };
-    const intl2 = tmp(1119).intl;
-    obj3.label = intl2.string(tmp(1119).t.IlLT7e);
-    obj3.value = StickerAnimationSettings.ANIMATE_ON_INTERACTION;
-    items[1] = obj3;
-    const obj4 = { label: null, value: null };
-    const intl3 = tmp(1119).intl;
-    obj4.label = intl3.string(tmp(1119).t.IGu8x3);
-    obj4.value = StickerAnimationSettings.NEVER_ANIMATE;
-    items[2] = obj4;
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (() => noop.useMemo(() => {
-  const obj = { label: null, value: null };
-  const intl = util.intl;
-  obj.label = intl.string(util.t["Xp+X2U"]);
-  obj.value = constants.ALWAYS_ANIMATE;
-  const items = [obj, , ];
-  const obj2 = { label: null, value: null };
-  const intl2 = util.intl;
-  obj2.label = intl2.string(util.t.IlLT7e);
-  obj2.value = constants.ANIMATE_ON_INTERACTION;
-  items[1] = obj2;
-  const obj3 = { label: null, value: null };
-  const intl3 = util.intl;
-  obj3.label = intl3.string(util.t.IGu8x3);
-  obj3.value = constants.NEVER_ANIMATE;
-  items[2] = obj3;
-  return items;
-}, []));
+const StickerAnimationSettings = fn(2022).StickerAnimationSettings;
+const SettingBuilders = fn(11754);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.R5nQkS);
   },
-  parent: fn(8270).MobileUserSettings.ACCESSIBILITY,
-  useValue: fn(2023).AnimateStickers.useSetting,
+  parent: fn(8265).MobileUserSettings.ACCESSIBILITY,
+  useValue: fn(2019).AnimateStickers.useSetting,
   onValueChange: function onAnimateStickerSettingValueChange(arg0) {
     const AnimateStickers = UserSettings.AnimateStickers;
     AnimateStickers.updateSetting(Number(arg0));
   },
-  useOptions: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-    const cResult = c.c(1);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+  useOptions: function useAnimateStickerSettingOptions() {
+    return noop.useMemo(() => {
+      const obj = { label: null, value: null };
+      const intl = util.intl;
+      obj.label = intl.string(util.t["Xp+X2U"]);
+      obj.value = constants.ALWAYS_ANIMATE;
+      const items = [obj, , ];
       const obj2 = { label: null, value: null };
-      const intl = tmp(1119).intl;
-      obj2.label = intl.string(tmp(1119).t["Xp+X2U"]);
-      obj2.value = StickerAnimationSettings.ALWAYS_ANIMATE;
-      const items = [obj2, , ];
+      const intl2 = util.intl;
+      obj2.label = intl2.string(util.t.IlLT7e);
+      obj2.value = constants.ANIMATE_ON_INTERACTION;
+      items[1] = obj2;
       const obj3 = { label: null, value: null };
-      const intl2 = tmp(1119).intl;
-      obj3.label = intl2.string(tmp(1119).t.IlLT7e);
-      obj3.value = StickerAnimationSettings.ANIMATE_ON_INTERACTION;
-      items[1] = obj3;
-      const obj4 = { label: null, value: null };
-      const intl3 = tmp(1119).intl;
-      obj4.label = intl3.string(tmp(1119).t.IGu8x3);
-      obj4.value = StickerAnimationSettings.NEVER_ANIMATE;
-      items[2] = obj4;
-      cResult[0] = items;
-      let first = items;
-    } else {
-      first = cResult[0];
-    }
-    return first;
-  }) : (() => noop.useMemo(() => {
-    const obj = { label: null, value: null };
-    const intl = util.intl;
-    obj.label = intl.string(util.t["Xp+X2U"]);
-    obj.value = constants.ALWAYS_ANIMATE;
-    const items = [obj, , ];
-    const obj2 = { label: null, value: null };
-    const intl2 = util.intl;
-    obj2.label = intl2.string(util.t.IlLT7e);
-    obj2.value = constants.ANIMATE_ON_INTERACTION;
-    items[1] = obj2;
-    const obj3 = { label: null, value: null };
-    const intl3 = util.intl;
-    obj3.label = intl3.string(util.t.IGu8x3);
-    obj3.value = constants.NEVER_ANIMATE;
-    items[2] = obj3;
-    return items;
-  }, []))
+      const intl3 = util.intl;
+      obj3.label = intl3.string(util.t.IGu8x3);
+      obj3.value = constants.NEVER_ANIMATE;
+      items[2] = obj3;
+      return items;
+    }, []);
+  }
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AnimateStickersSetting.tsx");

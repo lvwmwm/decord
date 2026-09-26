@@ -1,9 +1,9 @@
 // Module ID: 2585
 // Function ID: 2586
-// Dependencies: [1125]
+// Dependencies: [1121]
 
 // Module 2585
-import registerAsset from "module_1125" /* 1125 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "567fc188c37481444191c0dbf1996c76", name: "GiftingBadgeTier.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2ZpbGVfdXBsb2Fk", scales: [1], hash: "f371bbd87ed5742fe36922da4e5af949", name: "da.messages.f371bbd87ed5742fe36922da4e5af949.compiled.messages", type: "jsona" });

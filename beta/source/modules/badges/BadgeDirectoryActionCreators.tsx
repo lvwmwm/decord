@@ -1,14 +1,14 @@
-// Module ID: 8503
-// Function ID: 8504
+// Module ID: 8498
+// Function ID: 8499
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1376, 1078, 577, 1275, 5118, 5123, 1235, 2]
+// Dependencies: [5, 1372, 1074, 573, 1271, 5116, 5121, 1231, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8503 (BadgeDirectoryActionCreators)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
+// Module 8498 (BadgeDirectoryActionCreators)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1376 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function urlUserId(arg0) {
@@ -34,7 +34,7 @@ let closure_8 = async function _fetchBadgeDirectory(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -66,7 +66,7 @@ let closure_8 = async function _fetchBadgeDirectory(arg0, value) {
           closure_131_8 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp7) {
@@ -186,7 +186,7 @@ let closure_9 = async function _fetchBadge(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -257,7 +257,7 @@ let closure_9 = async function _fetchBadge(arg0, value) {
     }
   }
 };
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, ME: metroRequire } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/badges/BadgeDirectoryActionCreators.tsx");

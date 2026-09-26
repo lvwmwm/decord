@@ -1,12 +1,12 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14267
+// Function ID: 14268
 // Name: GuildPopoutStore
-// Dependencies: [502, 7617, 504, 577, 2]
+// Dependencies: [502, 7615, 504, 573, 2]
 
-// Module 14277 (GuildPopoutStore)
+// Module 14267 (GuildPopoutStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7617 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7615 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -27,7 +27,7 @@ prototype["isFetchingGuild"] = function isFetchingGuild(arg0) {
   return tmp2;
 };
 prototype["getGuild"] = function getGuild(arg0) {
-  guild = null;
+  let guild = null;
   if (null != closure_4.guilds[arg0]) {
     guild = tmp.guild;
   }

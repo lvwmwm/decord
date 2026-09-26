@@ -1,19 +1,19 @@
-// Module ID: 9169
-// Function ID: 9170
+// Module ID: 9171
+// Function ID: 9172
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4772, 4472, 4465, 7522, 2]
+// Dependencies: [5, 32, 19, 4770, 4468, 4461, 7520, 2]
 // Exports: useOrderSigning
 
-// Module 9169 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4465 */;
-import BillingErrorDefault from "BillingError" /* 4472 */;
+// Module 9171 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4461 */;
+import BillingErrorDefault from "BillingError" /* 4468 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
 const noop = fn(19);
 ({ useCallback: hasOwnProperty, useState: metroRequire } = noop);
-const OrderStatus = fn(4772).OrderStatus;
+const OrderStatus = fn(4770).OrderStatus;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/payments/hooks/useOrderSigning.tsx");
 
@@ -71,7 +71,7 @@ export const useOrderSigning = function useOrderSigning(order) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -96,7 +96,7 @@ export const useOrderSigning = function useOrderSigning(order) {
             closure_129_2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "PX_16", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {

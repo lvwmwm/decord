@@ -1,10 +1,10 @@
-// Module ID: 17088
-// Function ID: 17089
+// Module ID: 17078
+// Function ID: 17079
 // Name: VibegrationsTraceUtils
 // Dependencies: [2]
 // Exports: filterTrace, findTraceEntry, groupTraceByTurn, isModelEntry, isToolEntry, traceCategoryTotals, traceChildren, traceExportPayload
 
-// Module 17088 (VibegrationsTraceUtils)
+// Module 17078 (VibegrationsTraceUtils)
 import size from "module_2" /* 2 */;
 
 function traceCategory(entry) {
@@ -165,8 +165,8 @@ export const groupTraceByTurn = function groupTraceByTurn(stateFromStoresArray) 
   });
 };
 export { traceSearchText };
-export const filterTrace = function filterTrace(entries, first1) {
-  const formatted = first1.trim().toLowerCase();
+export const filterTrace = function filterTrace(entries, str) {
+  const formatted = str.trim().toLowerCase();
   let found = entries;
   if ("" !== formatted) {
     found = entries.filter((item) => traceSearchText(item).includes(formatted));

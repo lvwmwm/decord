@@ -1,33 +1,33 @@
-// Module ID: 10549
-// Function ID: 10550
+// Module ID: 10633
+// Function ID: 10634
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 5711, 4612, 1376, 1078, 21, 4790, 580, 4450, 1245, 9534, 4757, 10543, 504, 7441, 5715, 4448, 4424, 10479, 7467, 2023, 10550, 7658, 10544, 10551, 10553, 4786, 1119, 10547, 4490, 10555, 1984, 8212, 1181, 5220, 5834, 10556, 8908, 10557, 10558, 2]
+// Dependencies: [19, 17, 5709, 4609, 1372, 1074, 21, 4788, 576, 4446, 1241, 9538, 4755, 10626, 504, 7439, 5713, 4444, 4420, 10582, 7465, 2019, 10634, 7656, 10627, 10532, 10538, 4784, 1115, 10631, 4486, 10635, 1980, 8213, 1177, 5218, 5836, 10636, 8903, 10637, 10638, 2]
 // Exports: default
 
-// Module 10549 (CustomEmojiContent)
-import nativeDefault from "native" /* 580 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
-import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5715 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9534 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10547 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 10556 */;
+// Module 10633 (CustomEmojiContent)
+import nativeDefault from "native" /* 576 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5713 */;
+import openUserSettings from "openUserSettings" /* 7656 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9538 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10631 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 10636 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5711 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
-import UserStore from "UserStore" /* 1376 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5709 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const Constants = fn(1078);
+const Constants = fn(1074);
 ({ UserSettingsSections: c10, AnalyticEvents: closure_11, AnalyticsPages: closure_12, AnalyticsSections: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj2 = { nitroWheel: { height: 32, width: 32 }, nitroWheelPurple: { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND_NEW }, emojiDescriptionWrapperOuter: { flexDirection: "row", flex: 1, alignItems: "center", gap: 8 }, starIcon: { height: 32, width: 32, margin: 0, padding: 0, flex: 0 }, starIconSelected: null, starIconUnselected: null, moreMenuIcon: null, bottomCtaButton: null, ctaDescriptionWrapper: null, betaTag: null, betaTagTextAddPack: null, betaTagTextRemovePack: null, favoriteButtonContainer: null };
 let obj3 = { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND_NEW };
 obj2.starIconSelected = { tintColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
@@ -240,8 +240,8 @@ export default function CustomEmojiContent(emojiNode) {
           },
         content
       };
-      tmp(4490).open(obj5);
-      const tmpResult = tmp(4490);
+      tmp(4486).open(obj5);
+      const tmpResult = tmp(4486);
     } else {
       obj4.favoriteEmoji(customEmojiFromJoinedGuild);
       obj6 = {
@@ -254,8 +254,8 @@ export default function CustomEmojiContent(emojiNode) {
           },
         content
       };
-      tmp(4490).open(obj6);
-      const tmpResult2 = tmp(4490);
+      tmp(4486).open(obj6);
+      const tmpResult2 = tmp(4486);
     }
   }
   items5[1] = tmp30Result;
@@ -300,7 +300,7 @@ export default function CustomEmojiContent(emojiNode) {
     if (setting) {
       const obj22 = { accessibilityLabel: null, style: null, onPress: null, children: null };
       function handleOpenEmojiOptionsMenu() {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10555, dependencyMap.paths), "EmojiOptionsActionSheet", { emojiSrc: emojiNode.src }, "stack");
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10635, dependencyMap.paths), "EmojiOptionsActionSheet", { emojiSrc: emojiNode.src }, "stack");
       }
       const intl3 = tmp2(tmp3[28]).intl;
       obj22.accessibilityLabel = intl3.string(tmp2(tmp3[28]).t.PdRCRg);

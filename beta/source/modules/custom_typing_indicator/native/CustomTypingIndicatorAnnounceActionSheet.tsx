@@ -1,20 +1,21 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12251
+// Function ID: 12252
 // Name: CustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [19, 17, 1078, 2042, 21, 4790, 580, 558, 568, 7658, 7433, 12136, 12137, 12138, 1384, 12140, 12141, 12142, 12143, 12144, 1119, 1181, 3716, 4786, 5220, 7403, 7429, 2]
+// Dependencies: [19, 17, 1074, 2038, 21, 4788, 576, 7656, 7427, 7400, 7431, 12252, 1380, 12254, 12255, 12256, 12257, 12258, 12259, 12260, 1177, 1115, 4784, 3712, 5218, 2]
+// Exports: default
 
-// Module 12135 (CustomTypingIndicatorAnnounceActionSheet)
-import nativeDefault from "native" /* 580 */;
-import openUserSettings from "openUserSettings" /* 7658 */;
+// Module 12251 (CustomTypingIndicatorAnnounceActionSheet)
+import nativeDefault from "native" /* 576 */;
+import openUserSettings from "openUserSettings" /* 7656 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const UserSettingsSections = fn(1078).UserSettingsSections;
-const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const UserSettingsSections = fn(1074).UserSettingsSections;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let closure_9 = createStyles.createStyles(() => {
   const obj = { content: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 }, examples: null, betaBadge: null, title: null, body: null, actions: null, row: null, outerRow: null, innerRow: null, outerStack: null, innerStack: null };
   const obj2 = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 };
@@ -37,298 +38,10 @@ let closure_9 = createStyles.createStyles(() => {
   obj.innerStack = { width: "auto", maxWidth: "100%", overflow: "hidden" };
   return obj;
 });
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorAnnounceActionSheet.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
-  const cResult = markAsDismissed(568).c(70);
-  markAsDismissed = markAsDismissed.markAsDismissed;
-  const ref = noop.useRef(null);
-  const tmp5 = closure_9();
-  if (cResult[0] !== markAsDismissed) {
-    const fn = function p() {
-      openUserSettings.openUserSettings({ screen: UserSettingsSections.TYPING_INDICATOR, params: { source: "announcement_sheet" } }, () => {
-        markAsDismissed(constants.TAKE_ACTION);
-      });
-    };
-    cResult[0] = markAsDismissed;
-    cResult[1] = fn;
-  }
-  if (cResult[2] !== markAsDismissed) {
-    class R {
-      constructor() {
-        tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
-    cResult[2] = markAsDismissed;
-    cResult[3] = R;
-  } else {
-    class R {
-      constructor() {
-        tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
-  }
-  if (cResult[4] !== markAsDismissed) {
-    class R {
-      constructor() {
-        tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
-    cResult[4] = markAsDismissed;
-    cResult[5] = tmp9;
-  } else {
-    class R {
-      constructor() {
-        tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
-  }
-  if (cResult[6] !== markAsDismissed) {
-    class R {
-      constructor() {
-        tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
-    const obj2 = {
-      onPress() {
-          const current = ref.current;
-          if (current != null) {
-            current.closeActionSheet();
-          }
-          markAsDismissed(ContentDismissActionType.USER_DISMISS);
-        }
-    };
-    const tmp11 = closure_7(tmp(7433).ActionSheetHeaderBar, obj2);
-    cResult[6] = markAsDismissed;
-    cResult[7] = tmp11;
-  } else {
-    class R {
-      constructor() {
-        tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
-  }
-  if (cResult[8] === tmp5.outerRow) {
-    class R {
-      constructor() {
-        tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-        return;
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
-        constructor() {
-          tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-          return;
-        }
-      }
-      const items = [ref(12136), ref(12137), ref(12136)];
-      cResult[11] = items;
-      const tmp14 = items;
-    } else {
-      class R {
-        constructor() {
-          tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-          return;
-        }
-      }
-    }
-    if (cResult[12] !== tmp5.outerStack) {
-      class R {
-        constructor() {
-          tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-          return;
-        }
-      }
-      const obj3 = { name: "Cap", suggestion: tmp(1384).TypingSuggestion.UNSPECIFIED, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, emojiSource: tmp14, style: tmp5.outerStack };
-      const tmp18 = closure_7(ref(12138), obj3);
-      cResult[12] = tmp5.outerStack;
-      cResult[13] = tmp18;
-      const tmp17 = ref(12138);
-    } else {
-      class R {
-        constructor() {
-          tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-          return;
-        }
-      }
-    }
-    if (cResult[14] === tmp12) {
-      class R {
-        constructor() {
-          tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-          return;
-        }
-      }
-      if (cResult[17] === tmp5.innerRow) {
-        class R {
-          constructor() {
-            tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-            return;
-          }
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-          class R {
-            constructor() {
-              tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-              return;
-            }
-          }
-          const items1 = [ref(12140), ref(12141), ref(12140)];
-          cResult[20] = items1;
-          const tmp24 = items1;
-        } else {
-          class R {
-            constructor() {
-              tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-              return;
-            }
-          }
-        }
-        if (cResult[21] !== tmp5.innerStack) {
-          class R {
-            constructor() {
-              tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-              return;
-            }
-          }
-          const obj4 = { name: "Rose", suggestion: tmp(1384).TypingSuggestion.YAPPING, emojiSize: 28, spacing: 10, textVariant: "text-lg/medium", textColor: "text-default", lineClamp: 1, style: tmp5.innerStack, emojiSource: tmp24 };
-          const tmp28 = closure_7(ref(12138), obj4);
-          cResult[21] = tmp5.innerStack;
-          cResult[22] = tmp28;
-          const tmp27 = ref(12138);
-        } else {
-          class R {
-            constructor() {
-              tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-              return;
-            }
-          }
-        }
-        if (cResult[23] === tmp23) {
-          class R {
-            constructor() {
-              tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-              return;
-            }
-          }
-          if (cResult[26] === tmp5.outerRow) {
-            class R {
-              constructor() {
-                tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-                return;
-              }
-            }
-            const _Symbol3 = Symbol;
-            if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
-              class R {
-                constructor() {
-                  tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-                  return;
-                }
-              }
-              const items2 = [ref(12142), ref(12143), ref(12144)];
-              cResult[29] = items2;
-              const tmp34 = items2;
-            } else {
-              class R {
-                constructor() {
-                  tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-                  return;
-                }
-              }
-            }
-            if (cResult[30] !== tmp5.outerStack) {
-              class R {
-                constructor() {
-                  tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-                  return;
-                }
-              }
-              const obj5 = { name: "Loky", suggestion: tmp(1384).TypingSuggestion.OVERSHARING, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, style: tmp5.outerStack, emojiSource: tmp34 };
-              const tmp38 = closure_7(ref(12138), obj5);
-              cResult[30] = tmp5.outerStack;
-              cResult[31] = tmp38;
-              const tmp37 = ref(12138);
-            } else {
-              class R {
-                constructor() {
-                  tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-                  return;
-                }
-              }
-            }
-            if (cResult[32] === tmp33) {
-              class R {
-                constructor() {
-                  tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-                  return;
-                }
-              }
-              if (cResult[35] === tmp5.examples) {
-                class R {
-                  constructor() {
-                    tmp = markAsDismissed(ContentDismissActionType.USER_DISMISS);
-                    return;
-                  }
-                }
-              }
-              const obj6 = { style: tmp5.examples, children: null };
-              const items3 = [tmp19, tmp29, tmp39];
-              obj6.children = items3;
-              const tmp46 = closure_8(View, obj6);
-              cResult[35] = tmp5.examples;
-              cResult[36] = tmp29;
-              cResult[37] = tmp39;
-              cResult[38] = tmp19;
-              cResult[39] = tmp46;
-            }
-            const obj7 = { style: tmp33, children: tmp35 };
-            const tmp42 = closure_7(View, obj7);
-            cResult[32] = tmp33;
-            cResult[33] = tmp35;
-            cResult[34] = tmp42;
-          }
-          const items4 = [, ];
-          ({ row: arr5[0], outerRow: arr5[1] } = tmp5);
-          cResult[26] = tmp5.outerRow;
-          cResult[27] = tmp5.row;
-          cResult[28] = items4;
-        }
-        const obj8 = { style: tmp23, children: tmp25 };
-        const tmp32 = closure_7(View, obj8);
-        cResult[23] = tmp23;
-        cResult[24] = tmp25;
-        cResult[25] = tmp32;
-      }
-      const items5 = [, ];
-      ({ row: arr3[0], innerRow: arr3[1] } = tmp5);
-      cResult[17] = tmp5.innerRow;
-      cResult[18] = tmp5.row;
-      cResult[19] = items5;
-    }
-    const obj9 = { style: tmp12, children: tmp15 };
-    const tmp22 = closure_7(View, obj9);
-    cResult[14] = tmp12;
-    cResult[15] = tmp15;
-    cResult[16] = tmp22;
-  }
-  const items6 = [, ];
-  ({ row: arr[0], outerRow: arr[1] } = tmp5);
-  cResult[8] = tmp5.outerRow;
-  cResult[9] = tmp5.row;
-  cResult[10] = items6;
-}) : ((markAsDismissed) => {
+export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const ref = noop.useRef(null);
   const tmp2 = closure_9();
@@ -350,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   const obj2 = { bottom: true, children: null };
   const obj3 = { style: tmp2.content, children: null };
   const items3 = [
-    closure_7(markAsDismissed(7433).ActionSheetHeaderBar, {
+    closure_7(markAsDismissed(7431).ActionSheetHeaderBar, {
       onPress() {
         const current = ref.current;
         if (current != null) {
@@ -370,11 +83,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   const items4 = [, ];
   ({ row: arr5[0], outerRow: arr5[1] } = tmp2);
   obj6.style = items4;
-  const obj7 = { name: "Cap", suggestion: markAsDismissed(1384).TypingSuggestion.UNSPECIFIED, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, emojiSource: null, style: null };
-  const items5 = [ref(12136), ref(12137), ref(12136)];
+  const obj7 = { name: "Cap", suggestion: markAsDismissed(1380).TypingSuggestion.UNSPECIFIED, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, emojiSource: null, style: null };
+  const items5 = [ref(12254), ref(12255), ref(12254)];
   obj7.emojiSource = items5;
   obj7.style = tmp2.outerStack;
-  obj6.children = closure_7(ref(12138), obj7);
+  obj6.children = closure_7(ref(12252), obj7);
   const items6 = [closure_7(View, obj6), , ];
   const obj8 = { style: null, children: null };
   const items7 = [, ];
@@ -390,56 +103,56 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const tmp6 = ref(12138);
-  obj9.suggestion = markAsDismissed(1384).TypingSuggestion.YAPPING;
+  const tmp6 = ref(12252);
+  obj9.suggestion = markAsDismissed(1380).TypingSuggestion.YAPPING;
   obj9.style = tmp2.innerStack;
-  const items8 = [ref(12140), ref(12141), ref(12140)];
+  const items8 = [ref(12256), ref(12257), ref(12256)];
   obj9.emojiSource = items8;
-  obj8.children = closure_7(ref(12138), obj9);
+  obj8.children = closure_7(ref(12252), obj9);
   items6[1] = closure_7(View, obj8);
   const obj10 = { style: null, children: null };
   const items9 = [, ];
   ({ row: arr10[0], outerRow: arr10[1] } = tmp2);
   obj10.style = items9;
   const obj11 = { name: "Loky", suggestion: null, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, style: null, emojiSource: null };
-  const tmp7 = ref(12138);
-  obj11.suggestion = markAsDismissed(1384).TypingSuggestion.OVERSHARING;
+  const tmp7 = ref(12252);
+  obj11.suggestion = markAsDismissed(1380).TypingSuggestion.OVERSHARING;
   obj11.style = tmp2.outerStack;
-  const items10 = [ref(12142), ref(12143), ref(12144)];
+  const items10 = [ref(12258), ref(12259), ref(12260)];
   obj11.emojiSource = items10;
-  obj10.children = closure_7(ref(12138), obj11);
+  obj10.children = closure_7(ref(12252), obj11);
   items6[2] = closure_7(View, obj10);
   obj5.children = items6;
   items3[1] = closure_8(View, obj5);
   const obj12 = { text: null, color: null, style: null };
-  const intl = markAsDismissed(1119).intl;
-  obj12.text = intl.string(markAsDismissed(1119).t.oW0eUd);
-  obj12.color = markAsDismissed(1181).BadgeColors.EXPRESSIVE;
+  const intl = markAsDismissed(1115).intl;
+  obj12.text = intl.string(markAsDismissed(1115).t.oW0eUd);
+  obj12.color = markAsDismissed(1177).BadgeColors.EXPRESSIVE;
   obj12.style = tmp2.betaBadge;
-  items3[2] = closure_7(markAsDismissed(1181).TextBadge, obj12);
+  items3[2] = closure_7(markAsDismissed(1177).TextBadge, obj12);
   const obj13 = { variant: "heading-lg/medium", style: tmp2.title, color: "text-default", children: null };
-  const intl2 = markAsDismissed(1119).intl;
-  obj13.children = intl2.string(ref(3716).uGxDiu);
-  items3[3] = closure_7(markAsDismissed(4786).Text, obj13);
+  const intl2 = markAsDismissed(1115).intl;
+  obj13.children = intl2.string(ref(3712).uGxDiu);
+  items3[3] = closure_7(markAsDismissed(4784).Text, obj13);
   const obj14 = { variant: "text-md/normal", style: tmp2.body, color: "text-muted", children: null };
-  const intl3 = markAsDismissed(1119).intl;
-  obj14.children = intl3.string(ref(3716).yezU3E);
-  items3[4] = closure_7(markAsDismissed(4786).Text, obj14);
+  const intl3 = markAsDismissed(1115).intl;
+  obj14.children = intl3.string(ref(3712).yezU3E);
+  items3[4] = closure_7(markAsDismissed(4784).Text, obj14);
   const obj15 = { style: tmp2.actions, children: null };
   const obj16 = { text: null, variant: "primary", size: "lg", onPress: null };
-  const intl4 = markAsDismissed(1119).intl;
-  obj16.text = intl4.string(ref(3716).TswY68);
+  const intl4 = markAsDismissed(1115).intl;
+  obj16.text = intl4.string(ref(3712).TswY68);
   obj16.onPress = callback;
-  const items11 = [closure_7(markAsDismissed(5220).Button, obj16), ];
+  const items11 = [closure_7(markAsDismissed(5218).Button, obj16), ];
   const obj17 = { text: null, variant: "secondary", size: "lg", onPress: null };
-  const intl5 = markAsDismissed(1119).intl;
-  obj17.text = intl5.string(markAsDismissed(1119).t.TulDPl);
+  const intl5 = markAsDismissed(1115).intl;
+  obj17.text = intl5.string(markAsDismissed(1115).t.TulDPl);
   obj17.onPress = callback1;
-  items11[1] = closure_7(markAsDismissed(5220).Button, obj17);
+  items11[1] = closure_7(markAsDismissed(5218).Button, obj17);
   obj15.children = items11;
   items3[5] = closure_8(View, obj15);
   obj3.children = items3;
   obj2.children = closure_8(View, obj3);
-  obj.children = closure_7(markAsDismissed(7403).SafeAreaPaddingView, obj2);
-  return closure_7(markAsDismissed(7429).BottomSheet, obj);
-});
+  obj.children = closure_7(markAsDismissed(7400).SafeAreaPaddingView, obj2);
+  return closure_7(markAsDismissed(7427).BottomSheet, obj);
+};

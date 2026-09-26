@@ -1,47 +1,17 @@
-// Module ID: 4500
-// Function ID: 4501
+// Module ID: 4495
+// Function ID: 4496
 // Name: useFocus
-// Dependencies: [32, 19, 558, 568, 2]
+// Dependencies: [32, 19, 2]
+// Exports: useFocus
 
-// Module 4500 (useFocus)
-import c from "c" /* 568 */;
+// Module 4495 (useFocus)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
-require = fn;
-const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/utils/native/useFocus.native.tsx");
 
-export const useFocus = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(3);
-  [tmp3, require] = noop.useState(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = {
-      onFocus() {
-          return require(true);
-        },
-      onBlur() {
-          return require(false);
-        }
-    };
-    cResult[0] = obj2;
-    let first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp3) {
-    const obj3 = { focusProps: first, isFocused: tmp3 };
-    cResult[1] = tmp3;
-    cResult[2] = obj3;
-    let tmp5 = obj3;
-  } else {
-    tmp5 = cResult[2];
-  }
-  return tmp5;
-}) : (() => {
+export const useFocus = function useFocus() {
   const tmp = _slicedToArray(noop.useState(false), 2);
   closure_0 = tmp[1];
   return {
@@ -55,4 +25,4 @@ export const useFocus = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }), []),
     isFocused: tmp[0]
   };
-});
+};

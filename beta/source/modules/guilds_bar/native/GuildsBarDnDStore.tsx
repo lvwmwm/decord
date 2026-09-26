@@ -1,17 +1,15 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16627
+// Function ID: 16628
 // Name: GuildsBarDnDStore
-// Dependencies: [5689, 1247, 4529, 1252, 1235, 558, 568, 4415, 2]
+// Dependencies: [5687, 1243, 4524, 1248, 1231, 4411, 2]
+// Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 16636 (GuildsBarDnDStore)
-import c from "c" /* 568 */;
-import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
-import _mod4415 from "module_4415" /* 4415 */;
-import SortedGuildStore from "SortedGuildStore" /* 5689 */;
-import identity from "module_1247" /* 1247 */;
-import "ReactCompilerGating";
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16627 (GuildsBarDnDStore)
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
+import _mod4411 from "module_4411" /* 4411 */;
+import SortedGuildStore from "SortedGuildStore" /* 5687 */;
+import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +20,7 @@ let c5 = -1;
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   _require = arg0;
   closure_1 = arg1;
-  let obj = { dragSpecs: "Boolean", overSpecs: "duration", dropSpecs: "toCharArray$esjava$1", dragRegion: require("ReanimatedRexport").makeMutable({ min: 0, max: 0 }), gestureState: null, dragDropInProgress: null, listInsets: 50, scrollPosition: 100, windowSize: 100, setStateShallow: 50, dropStart: 100, dropComplete: "requests" };
+  let obj = { dragSpecs: "Boolean", overSpecs: "ip", dropSpecs: "isArray", dragRegion: require("ReanimatedRexport").makeMutable({ min: 0, max: 0 }), gestureState: null, dragDropInProgress: null, listInsets: 79.757, scrollPosition: -181.997, windowSize: 0, setStateShallow: -15.911, dropStart: -0.476, dropComplete: -0.847 };
   let obj2 = require("ReanimatedRexport");
   obj.gestureState = require("ReanimatedRexport").makeMutable(obj);
   let obj3 = require("ReanimatedRexport");
@@ -39,7 +37,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       if (tmp[key10006] === arg0[key10006]) {
         continue;
       } else {
-        obj = closure_0(1252);
+        obj = closure_0(1248);
         let batchUpdatesResult = obj.batchUpdates(() => {
           const merged = Object.assign(closure_1);
           const merged1 = Object.assign(closure_0);
@@ -53,7 +51,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
     ({ dropSpecs, gestureState } = gestureState());
     const tmp = gestureState();
     let obj2 = { category: "GuildsBarGesture", message: "dropStart started", data: null };
-    const obj = closure_1(1235);
+    const obj = closure_1(1231);
     obj2.data = { newDropSpec, dropSpecs, gestureState: gestureState.get() };
     obj.addBreadcrumb(obj2);
     if (null != dropSpecs) {
@@ -61,7 +59,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       const error = new Error("GuildsBarDnDStore.dropStart: you cannot start a drop while an existing drop is in progress");
       throw error;
     } else {
-      dropSpecs(1252).batchUpdates(() => dropSpecs({ dropSpecs, dragSpecs: "Array", overSpecs: "toCharArray$esjava$1" }));
+      dropSpecs(1248).batchUpdates(() => dropSpecs({ dropSpecs, dragSpecs: "Array", overSpecs: "call" }));
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
       const _setTimeout = setTimeout;
@@ -85,7 +83,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
     obj2.data = { gestureState: gestureState.get(), dropSpecs, dragSpecs };
     obj.addBreadcrumb(obj2);
     if (null != dropSpecs) {
-      ReactBatchUpdates.batchUpdates(() => closure_1_0({ dropSpecs: "emoji" }));
+      ReactBatchUpdates.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
       const _clearTimeout = clearTimeout;
       clearTimeout(c5);
       if (null == dragSpecs) {
@@ -102,123 +100,18 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   };
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  const cResult = c.c(3);
-  if (cResult[0] === arg0) {
-    if (cResult[1] === arg1) {
-      let tmp4 = cResult[2];
-    }
-    return withEqualityFn(tmp4, _mod4415.shallow);
-  }
-  const fn = function s(arg0) {
-    ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
-    if (null == dragSpecs) {
-      if (null == dropSpecs) {
-        const obj2 = { isDragTarget: false, dragState: "duration", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
-        return obj2;
-      }
-    }
-    let tmp2 = !closure_1;
-    if (!closure_1) {
-      let id;
-      if (dragSpecs != null) {
-        id = dragSpecs.node.id;
-      }
-      let tmp5 = id === closure_0;
-      if (tmp5) {
-        let node;
-        if (overSpecs != null) {
-          node = overSpecs.node;
-        }
-        tmp5 = null != node;
-      }
-      if (!tmp5) {
-        let id1;
-        if (dropSpecs != null) {
-          id1 = dropSpecs.dragNode.id;
-        }
-        tmp5 = id1 === tmp4;
-      }
-      tmp2 = tmp5;
-      tmp4 = closure_0;
-    }
-    let tmp8 = !tmp;
-    if (!closure_1) {
-      let id2;
-      if (overSpecs != null) {
-        id2 = overSpecs.node.id;
-      }
-      let tmp11 = id2 === closure_0;
-      if (!tmp11) {
-        let id3;
-        if (dropSpecs != null) {
-          id3 = dropSpecs.overNode.id;
-        }
-        tmp11 = id3 === tmp10;
-      }
-      tmp8 = tmp11;
-    }
-    const obj = { isDragTarget: tmp2, dragState: null, overState: null, itemSize: null, dragDropInProgress: null };
-    if (tmp2) {
-      let str = "dropping";
-      if (null == dropSpecs) {
-        str = "dragging";
-      }
-      const tmp13 = str;
-    }
-    obj.dragState = tmp13;
-    let tmp14;
-    if (tmp8) {
-      let overState;
-      if (dropSpecs != null) {
-        overState = dropSpecs.overState;
-      }
-      if (overState == null) {
-        state = undefined;
-        if (overSpecs != null) {
-          state = overSpecs.state;
-        }
-        overState = state;
-      }
-      tmp14 = overState;
-    }
-    obj.overState = tmp14;
-    let num = 0;
-    if (tmp8) {
-      let num2;
-      if (dropSpecs != null) {
-        num2 = dropSpecs.itemSize;
-      }
-      if (num2 == null) {
-        let itemSize;
-        if (dragSpecs != null) {
-          itemSize = dragSpecs.itemSize;
-        }
-        num2 = itemSize;
-      }
-      if (num2 == null) {
-        num2 = 0;
-      }
-      num = num2;
-    }
-    obj.itemSize = num;
-    obj.dragDropInProgress = dragDropInProgress;
-    return obj;
-  };
-  cResult[0] = arg0;
-  cResult[1] = arg1;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : ((arg0, arg1) => {
+let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
+
+export default withEqualityFn;
+export { INITIAL_GESTURE_STATE };
+export const useItemDragState = function useItemDragState(arg0, arg1) {
   closure_0 = arg0;
   closure_1 = arg1;
   return withEqualityFn((arg0) => {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        const obj2 = { isDragTarget: false, dragState: "duration", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
+        const obj2 = { isDragTarget: false, dragState: "ip", overState: "isArray", itemSize: null, dragDropInProgress };
         return obj2;
       }
     }
@@ -278,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         overState = dropSpecs.overState;
       }
       if (overState == null) {
-        state = undefined;
+        let state;
         if (overSpecs != null) {
           state = overSpecs.state;
         }
@@ -308,55 +201,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     obj.itemSize = num;
     obj.dragDropInProgress = dragDropInProgress;
     return obj;
-  }, _mod4415.shallow);
-});
-let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
-
-export default withEqualityFn;
-export { INITIAL_GESTURE_STATE };
-export const useItemDragState = tmp3;
-export const useFolderBGHeightOffset = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function s(dropSpecs) {
-      ({ dragSpecs, overSpecs } = dropSpecs);
-      let num = 0;
-      if (null == dropSpecs.dropSpecs) {
-        num = 0;
-        if (null != overSpecs) {
-          num = 0;
-          if (null != dragSpecs) {
-            num = 0;
-            if ("self" !== overSpecs.state) {
-              num = 0;
-              if (dragSpecs.node.type === GuildsNodeType.GUILD) {
-                if (dragSpecs.node.parentId === closure_0) {
-                  if (overSpecs.node.parentId !== tmp3) {
-                    if (overSpecs.node.id !== tmp3) {
-                      dragSpecs = dragSpecs.itemSize;
-                      const num3 = -1 * dragSpecs;
-                    } else {
-                      overSpecs = "after";
-                    }
-                  }
-                } else if (overSpecs.node.parentId === tmp3) {
-                }
-              }
-            }
-          }
-        }
-      }
-      return num;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    let tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return withEqualityFn(tmp2);
-}) : ((arg0) => {
+  }, _mod4411.shallow);
+};
+export const useFolderBGHeightOffset = function useFolderBGHeightOffset(arg0) {
   closure_0 = arg0;
   return withEqualityFn((dropSpecs) => {
     ({ dragSpecs, overSpecs } = dropSpecs);
@@ -388,4 +235,4 @@ export const useFolderBGHeightOffset = ReactCompilerGating.isReactCompilerEnable
     }
     return num;
   });
-});
+};

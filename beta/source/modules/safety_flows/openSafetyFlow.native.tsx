@@ -1,12 +1,12 @@
-// Module ID: 18335
-// Function ID: 18336
+// Module ID: 18326
+// Function ID: 18327
 // Name: openSafetyFlow
-// Dependencies: [5, 2039, 1078, 18336, 4993, 18337, 18338, 17879, 18339, 1984, 2]
+// Dependencies: [5, 2035, 1074, 18327, 4991, 18328, 18329, 17870, 18330, 1980, 2]
 // Exports: openSafetyFlow
 
-// Module 18335 (openSafetyFlow)
+// Module 18326 (openSafetyFlow)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
 
 const require = fn;
 let closure_6 = async function _openSafetyFlow(arg0, value) {
@@ -20,7 +20,7 @@ let closure_6 = async function _openSafetyFlow(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -46,7 +46,7 @@ let closure_6 = async function _openSafetyFlow(arg0, value) {
           closure_130_2 = undefined;
           c6 = 1;
           c7 = 1;
-          return { value: "Set", done: true };
+          return { value: "PX_16", done: true };
         }
       } else {
         if (1 === tmp7) {
@@ -96,7 +96,7 @@ let closure_6 = async function _openSafetyFlow(arg0, value) {
                 if (null == closure_130_1) {
                   c5 = 0;
                   c7 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             } else if (4 === tmp7) {
@@ -127,7 +127,7 @@ let closure_6 = async function _openSafetyFlow(arg0, value) {
               if (null == value) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: null };
               }
             }
             closure_130_2 = (function getInitialScreenForTask(task_type) {
@@ -168,7 +168,7 @@ let closure_6 = async function _openSafetyFlow(arg0, value) {
     }
   }
 };
-const UserRequiredActions = fn(1078).UserRequiredActions;
+const UserRequiredActions = fn(1074).UserRequiredActions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_flows/openSafetyFlow.native.tsx");
 

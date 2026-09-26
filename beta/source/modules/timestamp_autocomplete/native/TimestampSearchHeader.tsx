@@ -1,17 +1,16 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 12672
+// Function ID: 12673
 // Name: TimestampSearchHeader
-// Dependencies: [19, 17, 21, 558, 11327, 4790, 580, 568, 4752, 4786, 1119, 8908, 2]
+// Dependencies: [19, 17, 21, 10414, 4788, 576, 4750, 4784, 1115, 8903, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 12574 (TimestampSearchHeader)
-import c from "c" /* 568 */;
-import nativeDefault from "native" /* 580 */;
-import util from "util" /* 1119 */;
-import ClockIcon from "ClockIcon" /* 4752 */;
-import Text_Text from "Text/Text" /* 4786 */;
-import Form from "Form" /* 8908 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11327 */;
+// Module 12672 (TimestampSearchHeader)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import ClockIcon from "ClockIcon" /* 4750 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Form from "Form" /* 8903 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10414 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,113 +20,16 @@ const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 let c6 = "text-sm/semibold";
 let c7 = "text-sm/medium";
-let ReactCompilerGating = fn(558);
-ReactCompilerGating.isReactCompilerEnabled();
-const createStyles = fn(4790);
+const createStyles = fn(4788);
 let obj = { container: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND }, headerRow: { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 12 }, icon: { marginRight: 12 }, description: { paddingHorizontal: 16, paddingBottom: 12 }, divider: null };
-let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
 obj.divider = { marginLeft: 0, backgroundColor: nativeDefault.colors.MOBILE_COMMAND_BAR_DIVIDER };
 let closure_8 = createStyles.createStyles(obj);
-ReactCompilerGating = fn(558);
-fn = () => {
-  const sum = 24 + useScaledTextLineHeight.useScaledTextLineHeight(c6);
-  return sum + useScaledTextLineHeight.useScaledTextLineHeight(c7) + 12 + hairlineWidth.hairlineWidth;
-};
-let obj5 = { marginLeft: 0, backgroundColor: nativeDefault.colors.MOBILE_COMMAND_BAR_DIVIDER };
+const obj4 = { marginLeft: 0, backgroundColor: nativeDefault.colors.MOBILE_COMMAND_BAR_DIVIDER };
 const size = fn(2);
-const result1 = size.fileFinishedImporting("modules/timestamp_autocomplete/native/TimestampSearchHeader.tsx");
+const result = size.fileFinishedImporting("modules/timestamp_autocomplete/native/TimestampSearchHeader.tsx");
 
-export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  const cResult = c.c(18);
-  const tmp4 = closure_8();
-  if (cResult[0] !== tmp4.icon) {
-    const obj2 = { size: "sm", style: tmp4.icon };
-    const tmp7 = React4(tmp(4752).ClockIcon, obj2);
-    cResult[0] = tmp4.icon;
-    cResult[1] = tmp7;
-    let tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant, color: "mobile-text-heading-primary", children: "@time" };
-    const tmp11 = React4(tmp(4786).Text, obj3);
-    cResult[2] = tmp11;
-    let tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] === tmp4.headerRow) {
-    if (cResult[4] === tmp5) {
-      let tmp12 = cResult[5];
-    }
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1119).intl;
-      const stringResult = intl.string(tmp(1119).t.V6L3TV);
-      cResult[6] = stringResult;
-      let tmp14 = stringResult;
-    } else {
-      tmp14 = cResult[6];
-    }
-    if (cResult[7] !== tmp4.description) {
-      const obj4 = { style: tmp4.description, variant: variant2, color: "text-muted", children: tmp14 };
-      const tmp19 = React4(tmp(4786).Text, obj4);
-      cResult[7] = tmp4.description;
-      cResult[8] = tmp19;
-      let tmp16 = tmp19;
-    } else {
-      tmp16 = cResult[8];
-    }
-    if (cResult[9] === tmp12) {
-      if (cResult[10] === tmp16) {
-        let tmp20 = cResult[11];
-      }
-      if (cResult[12] !== tmp4.divider) {
-        const obj5 = { style: tmp4.divider };
-        const tmp26 = React4(tmp(8908).FormDivider, obj5);
-        cResult[12] = tmp4.divider;
-        cResult[13] = tmp26;
-        let tmp24 = tmp26;
-      } else {
-        tmp24 = cResult[13];
-      }
-      if (cResult[14] === tmp4.container) {
-        if (cResult[15] === tmp20) {
-          if (cResult[16] === tmp24) {
-            let tmp27 = cResult[17];
-          }
-          return tmp27;
-        }
-      }
-      const obj6 = { style: tmp4.container, children: null };
-      const items = [tmp20, tmp24];
-      obj6.children = items;
-      const tmp30 = hasOwnProperty(React3, obj6);
-      cResult[14] = tmp4.container;
-      cResult[15] = tmp20;
-      cResult[16] = tmp24;
-      cResult[17] = tmp30;
-      tmp27 = tmp30;
-    }
-    const obj7 = { accessible: true, accessibilityRole: "header", children: null };
-    const items1 = [tmp12, tmp16];
-    obj7.children = items1;
-    const tmp23 = hasOwnProperty(React3, obj7);
-    cResult[9] = tmp12;
-    cResult[10] = tmp16;
-    cResult[11] = tmp23;
-    tmp20 = tmp23;
-  }
-  const obj8 = { style: tmp4.headerRow, children: null };
-  const items2 = [tmp5, tmp8];
-  obj8.children = items2;
-  const tmp13 = hasOwnProperty(React3, obj8);
-  cResult[3] = tmp4.headerRow;
-  cResult[4] = tmp5;
-  cResult[5] = tmp13;
-  tmp12 = tmp13;
-}) : (() => {
+export default noop.memo(function TimestampSearchHeader() {
   const tmp = closure_8();
   const obj = { style: tmp.container, children: null };
   const obj2 = { accessible: true, accessibilityRole: "header", children: null };
@@ -143,5 +45,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items2 = [hasOwnProperty(React3, obj2), React4(Form.FormDivider, { style: tmp.divider })];
   obj.children = items2;
   return hasOwnProperty(React3, obj);
-}));
-export const useTimestampSearchHeaderHeight = fn;
+});
+export const useTimestampSearchHeaderHeight = function useTimestampSearchHeaderHeight() {
+  const sum = 24 + useScaledTextLineHeight.useScaledTextLineHeight(c6);
+  return sum + useScaledTextLineHeight.useScaledTextLineHeight(c7) + 12 + hairlineWidth.hairlineWidth;
+};

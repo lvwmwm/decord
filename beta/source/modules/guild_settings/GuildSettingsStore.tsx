@@ -1,32 +1,32 @@
-// Module ID: 9866
-// Function ID: 9867
+// Module ID: 9888
+// Function ID: 9889
 // Name: GuildSettingsStore
-// Dependencies: [2060, 9845, 2049, 2063, 8688, 1390, 2067, 1376, 1078, 9867, 8331, 11, 9868, 1275, 577, 9870, 2059, 9871, 4384, 9872, 504, 12, 510, 2]
+// Dependencies: [2056, 9867, 2045, 2059, 8683, 1386, 2063, 1372, 1074, 9889, 8326, 11, 9890, 1271, 573, 9892, 2055, 9893, 4380, 9894, 504, 12, 510, 2]
 
-// Module 9866 (GuildSettingsStore)
+// Module 9888 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import HTTPUtils from "HTTPUtils" /* 1275 */;
-import ChannelRecord from "ChannelRecord" /* 2049 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import PlainRecord from "PlainRecord" /* 2060 */;
-import GuildRecord from "GuildRecord" /* 2063 */;
-import _modDef4384 from "module_4384" /* 4384 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9867 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9868 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 9870 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9871 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9872 */;
-import GuildProfileStore from "GuildProfileStore" /* 9845 */;
-import InviteRecord from "InviteRecord" /* 8688 */;
-import UserRecord from "UserRecord" /* 1390 */;
-import GuildStore from "GuildStore" /* 2067 */;
-import UserStore from "UserStore" /* 1376 */;
-import Constants from "Constants" /* 1078 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8331 */;
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import PlainRecord from "PlainRecord" /* 2056 */;
+import GuildRecord from "GuildRecord" /* 2059 */;
+import _modDef4380 from "module_4380" /* 4380 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9889 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9890 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 9892 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9893 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9894 */;
+import GuildProfileStore from "GuildProfileStore" /* 9867 */;
+import InviteRecord from "InviteRecord" /* 8683 */;
+import UserRecord from "UserRecord" /* 1386 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1074 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8326 */;
 import size from "module_2" /* 2 */;
 
 function handleFormInit(location) {
@@ -99,7 +99,7 @@ function _createInvite(code) {
   obj.guild = fromInviteGuildResult;
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
   const created_at = code.created_at;
-  obj.createdAt = _modDef4384(created_at);
+  obj.createdAt = _modDef4380(created_at);
   ({ flags: obj.flags, roles: obj.roles } = code);
   return new InviteRecord(obj);
 }
@@ -230,7 +230,7 @@ prototype["getGuildId"] = function getGuildId() {
 };
 prototype["showPublicSuccessModal"] = function showPublicSuccessModal() {
   const Storage = Storage2.Storage;
-  return !Storage.get(closure_1_28);
+  return !Storage.get(__initData6);
 };
 prototype["getGuild"] = function getGuild() {
   return closure_7;
@@ -688,7 +688,7 @@ obj2 = {
                   tmp = "publicUpdatesChannelId" !== item;
                 }
                 if (!tmp) {
-                  tmp = obj2[item] !== closure_2_29;
+                  tmp = obj2[item] !== __initData7;
                 }
                 if (tmp) {
                   tmp = "features" !== item;

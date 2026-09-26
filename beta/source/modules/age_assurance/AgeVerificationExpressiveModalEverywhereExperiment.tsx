@@ -1,34 +1,23 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8882
+// Function ID: 8883
 // Name: AgeVerificationExpressiveModalEverywhereExperiment
-// Dependencies: [1438, 558, 568, 2]
-// Exports: isAgeVerificationExpressiveModalEverywhereEnabled
+// Dependencies: [1434, 2]
+// Exports: isAgeVerificationExpressiveModalEverywhereEnabled, useIsAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 8887 (AgeVerificationExpressiveModalEverywhereExperiment)
-import c from "c" /* 568 */;
-import ApexExperiment from "ApexExperiment" /* 1438 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8882 (AgeVerificationExpressiveModalEverywhereExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2025-11-age-verification-expressive-everywhere", defaultConfig: { enabled: false }, variations: null };
-let obj2 = { 1: null };
+const obj2 = { 1: null };
 obj2[1] = { enabled: true };
 obj.variations = obj2;
-let closure_2 = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationExpressiveModalEverywhereExperiment.tsx");
 
-export const useIsAgeVerificationExpressiveModalEverywhereEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
-  const cResult = c.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    let tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => closure_2.useConfig({ location }).enabled);
+export const useIsAgeVerificationExpressiveModalEverywhereEnabled = function useIsAgeVerificationExpressiveModalEverywhereEnabled(location) {
+  return closure_0.useConfig({ location }).enabled;
+};
 export const isAgeVerificationExpressiveModalEverywhereEnabled = function isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint) {
-  return closure_2.getConfig({ location: entryPoint }).enabled;
+  return closure_0.getConfig({ location: entryPoint }).enabled;
 };

@@ -1,14 +1,14 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14856
+// Function ID: 14857
 // Name: GameRelationshipManager
-// Dependencies: [7931, 1078, 1986, 577, 7442, 2]
+// Dependencies: [7926, 1074, 1982, 573, 7440, 2]
 
-// Module 14866 (GameRelationshipManager)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7931 */;
-import LifecycleManager from "LifecycleManager" /* 1986 */;
+// Module 14856 (GameRelationshipManager)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7926 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
-const RelationshipTypes = fn(1078).RelationshipTypes;
+const RelationshipTypes = fn(1074).RelationshipTypes;
 class GameRelationshipManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

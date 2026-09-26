@@ -1,12 +1,12 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 16972
+// Function ID: 16973
 // Name: frames/getDefaultOrientationLockState
-// Dependencies: [9749, 577, 2]
+// Dependencies: [9754, 573, 2]
 // Exports: setOrientationLockState
 
-// Module 16982 (frames/getDefaultOrientationLockState)
-import DispatcherDefault from "Dispatcher" /* 577 */;
-import getDefaultOrientationLockState from "getDefaultOrientationLockState" /* 9749 */;
+// Module 16972 (frames/getDefaultOrientationLockState)
+import DispatcherDefault from "Dispatcher" /* 573 */;
+import getDefaultOrientationLockState from "getDefaultOrientationLockState" /* 9754 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/native/getDefaultOrientationLockState.tsx");

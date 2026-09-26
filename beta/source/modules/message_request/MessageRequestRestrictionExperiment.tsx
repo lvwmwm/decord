@@ -1,10 +1,10 @@
-// Module ID: 12626
-// Function ID: 12627
+// Module ID: 12724
+// Function ID: 12725
 // Name: MessageRequestRestrictionExperiment
-// Dependencies: [1438, 2]
+// Dependencies: [1434, 2]
 
-// Module 12626 (MessageRequestRestrictionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1438 */;
+// Module 12724 (MessageRequestRestrictionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-non-friend-messages-requests-in-uk", kind: "user", defaultConfig: { enabled: false }, variations: null };

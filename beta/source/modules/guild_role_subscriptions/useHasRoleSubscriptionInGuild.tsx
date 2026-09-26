@@ -1,13 +1,14 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 7526
+// Function ID: 7527
 // Name: useHasRoleSubscriptionInGuild
-// Dependencies: [502, 2109, 2103, 2067, 1078, 558, 568, 504, 2]
+// Dependencies: [502, 2105, 2099, 2063, 1074, 504, 2]
+// Exports: default
 
-// Module 7528 (useHasRoleSubscriptionInGuild)
+// Module 7526 (useHasRoleSubscriptionInGuild)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import GuildStore from "GuildStore" /* 2067 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 const require = globalThis.__r;
 
@@ -27,7 +28,7 @@ function computeHasRoleSubscriptionsInGuild(id1, arg1) {
     tmp5 = items;
   }
   [obj] = tmp5;
-  guild = obj.getGuild(id1);
+  const guild = obj.getGuild(id1);
   if (null != guild) {
     if (null != tmp) {
       const features = guild.features;
@@ -57,67 +58,11 @@ function computeHasRoleSubscriptionsInGuild(id1, arg1) {
   }
   return false;
 }
-const GuildFeatures = fn(1078).GuildFeatures;
-const ReactCompilerGating = fn(558);
+const GuildFeatures = fn(1074).GuildFeatures;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useHasRoleSubscriptionInGuild.tsx");
 
-export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  _require = arg0;
-  const cResult = require("c").c(8);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [AuthenticationStore, GuildMemberStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function c() {
-      let member = null;
-      if (null != closure_0) {
-        member = GuildMemberStore.getMember(tmp, AuthenticationStore.getId());
-      }
-      return member;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    let tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const obj = require("c");
-  stateFromStores = require("initialize").useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildStore, GuildRoleStore];
-    cResult[3] = items1;
-    let tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === arg0) {
-    if (cResult[5] === stateFromStores) {
-      let tmp12 = cResult[6];
-      let tmp13 = cResult[7];
-    }
-    return tmp(tmp2[7]).useStateFromStores(tmp9, tmp12, tmp13);
-  }
-  const fn2 = function b() {
-    let rolesSnapshot;
-    if (null != closure_0) {
-      rolesSnapshot = GuildRoleStore.getRolesSnapshot(tmp2);
-    }
-    const items = [GuildStore];
-    return computeHasRoleSubscriptionsInGuild(closure_0, rolesSnapshot, stateFromStores, items);
-  };
-  const items2 = [arg0, stateFromStores];
-  cResult[4] = arg0;
-  cResult[5] = stateFromStores;
-  cResult[6] = fn2;
-  cResult[7] = items2;
-  tmp13 = items2;
-  tmp12 = fn2;
-}) : ((arg0) => {
+export default function useHasRoleSubscriptionInGuild(arg0) {
   _require = arg0;
   let items = [AuthenticationStore, GuildMemberStore];
   stateFromStores = require("initialize").useStateFromStores(items, () => {
@@ -138,5 +83,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [GuildStore];
     return computeHasRoleSubscriptionsInGuild(closure_0, rolesSnapshot, stateFromStores, items);
   }, items2);
-});
+};
 export { computeHasRoleSubscriptionsInGuild };

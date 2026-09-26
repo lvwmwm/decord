@@ -1,66 +1,45 @@
 // Module ID: 1794
 // Function ID: 1795
-// Dependencies: [19, 1793, 1644, 1685]
-// Exports: useAnimatedReaction
+// Dependencies: [1742, 1782, 1784]
+// Exports: useComposedEventHandler
 
 // Module 1794
-import _mod19 from "module_19" /* 19 */;
-import runOnRuntime from "runOnRuntime" /* 1685 */;
+const require = arg1;
+const dependencyMap = arg6;
+let closure_2 = { code: "function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}" };
 
-const require = globalThis.__r;
-
-let useEffect = _mod19.useEffect;
-let closure_3 = { code: "function pnpm_useAnimatedReactionTs1(){const{prepare,react,previous}=this.__closure;const input=prepare();react(input,previous.value);previous.value=input;}" };
-
-export const useAnimatedReaction = function useAnimatedReaction(fn, fn2, items) {
-  _require = fn;
-  dependencyMap = fn2;
-  useEffect = require("module_1793").useSharedValue(null);
-  let __closure = fn.__closure;
-  if (__closure == null) {
-    __closure = {};
-  }
-  const values = Object.values(__closure);
-  const obj = require("module_1793");
-  let tmp3 = require("module_1644").shouldBeUseWeb() && !values.length;
-  let arr2 = items;
-  if (tmp3) {
-    let length;
-    if (arr2 != null) {
-      length = arr2.length;
+export const useComposedEventHandler = function useComposedEventHandler(tmp8Result4) {
+  const obj = {};
+  const set = new Set();
+  const obj2 = {};
+  const found = tmp8Result4.filter((item) => null !== item);
+  let item = found.forEach((workletEventHandler) => {
+    workletEventHandler = workletEventHandler.workletEventHandler;
+    if (workletEventHandler instanceof obj(set[0]).WorkletEventHandler) {
+      const eventNames = workletEventHandler.eventNames;
+      const item = eventNames.forEach((item) => {
+        set.add(item);
+        if (obj2[item]) {
+          tmp2[item].push(workletEventHandler.worklet);
+          let tmp3 = workletEventHandler;
+        } else {
+          tmp3 = workletEventHandler;
+          const items = [workletEventHandler.worklet];
+          tmp2[item] = items;
+        }
+        obj[item + "" + obj2[item].length] = tmp3.worklet;
+      });
     }
-    tmp3 = length;
-  }
-  if (undefined === arr2) {
-    let __closure1 = fn.__closure;
-    if (__closure1 == null) {
-      __closure1 = {};
+  });
+  const obj3 = obj(set[1]);
+  const fn = function v(arg0) {
+    closure_0 = arg0;
+    if (obj2[arg0.eventName]) {
+      const item = tmp[arg0.eventName].forEach((fn) => fn(closure_0));
     }
-    items = [, ];
-    const arraySpreadResult = HermesBuiltin.arraySpread(Object.values(__closure1), 0);
-    let __closure2 = fn2.__closure;
-    if (__closure2 == null) {
-      __closure2 = {};
-    }
-    const arraySpreadResult2 = HermesBuiltin.arraySpread(Object.values(__closure2), arraySpreadResult);
-    items[arraySpreadResult2] = fn.__workletHash;
-    items[arraySpreadResult2 + 1] = fn2.__workletHash;
-    arr2 = items;
-  } else {
-    arr2.push(fn.__workletHash, fn2.__workletHash);
-  }
-  useEffect(() => {
-    const fn = function t() {
-      const tmp = closure_0();
-      react(tmp, value.value);
-      value.value = tmp;
-    };
-    fn.__closure = { prepare, react, previous };
-    fn.__workletHash = 3026350450260;
-    fn.__initData = arr2;
-    prepare = prepare(react[3]).startMapper(fn, arr2);
-    return () => {
-      runOnRuntime.stopMapper(closure_0);
-    };
-  }, arr2);
+  };
+  fn.__closure = { workletsMap: obj2 };
+  fn.__workletHash = 14960316830945;
+  fn.__initData = obj2;
+  return obj(set[2]).useEvent(fn, Array.from(set), obj3.useHandler(obj).doDependenciesDiffer);
 };

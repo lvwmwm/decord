@@ -1,31 +1,39 @@
 // Module ID: 1291
 // Function ID: 1292
-// Dependencies: [1292, 1293, 1295]
+// Dependencies: [1283, 1292]
 
 // Module 1291
-import _mod1292 from "module_1292" /* 1292 */;
-import _mod1293 from "module_1293" /* 1293 */;
-import _mod1295 from "module_1295" /* 1295 */;
+import _mod1283 from "module_1283" /* 1283 */;
+import callBindBasic from "callBindBasic" /* 1292 */;
 
-if (_mod1292) {
-  function getProto(arg0) {
-    return _mod1292(arg0);
+try {
+  const _Array = Array;
+  let _module = [].__proto__ === Array.prototype;
+  if (_module) {
+    _module = _mod1283;
   }
-} else if (_mod1293) {
-  getProto = function getProto(obj) {
-    if (obj) {
-      return _mod1293(obj);
+  if (_module) {
+    const _Object = Object;
+    _module = _mod1283(Object.prototype, "__proto__");
+  }
+  const _Object2 = Object;
+  if (_module) {
+    if (typeof _module.get === "function") {
+      const items = [_module.get];
+      let getDunder = callBindBasic(items);
     }
-    const typeError = new TypeError("getProto: not an object");
-    throw typeError;
-  };
-} else {
-  getProto = null;
-  if (_mod1295) {
-    getProto = function getProto(arg0) {
-      return _mod1295(arg0);
+    module.exports = getDunder;
+  }
+  getDunder = typeof getPrototypeOf === "function";
+  if (typeof getPrototypeOf === "function") {
+    getDunder = function getDunder(arg0) {
+      let tmp2 = arg0;
+      if (null != arg0) {
+        tmp2 = Object(arg0);
+      }
+      return getPrototypeOf(tmp2);
     };
   }
+} catch (tmp2) {
+  throw tmp2;
 }
-
-export default getProto;

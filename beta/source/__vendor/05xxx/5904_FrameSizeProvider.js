@@ -1,11 +1,11 @@
 // Module ID: 5904
 // Function ID: 5905
 // Name: FrameSizeProvider
-// Dependencies: [19, 17, 21, 5905, 5906, 1510]
+// Dependencies: [19, 17, 21, 5905, 5906, 1506]
 // Exports: FrameSizeProvider, useFrameSize
 
 // Module 5904 (FrameSizeProvider)
-import _modDef1510 from "module_1510" /* 1510 */;
+import _modDef1506 from "module_1506" /* 1506 */;
 import _mod5906 from "module_5906" /* 5906 */;
 import noop from "module_19" /* 19 */;
 
@@ -33,9 +33,9 @@ export const FrameSizeProvider = function FrameSizeProvider(initialFrame) {
   let size = { width: initialFrame.width, height: initialFrame.height };
   noop.useRef(size);
   noop.useRef(new Set());
-  const tmp2 = _modDef1510(() => ref.current);
+  const tmp2 = _modDef1506(() => ref.current);
   const getCurrent = tmp2;
-  const tmp3 = _modDef1510((arg0) => {
+  const tmp3 = _modDef1506((arg0) => {
     closure_0 = arg0;
     let current = ref2.current;
     current.add(arg0);
@@ -45,7 +45,7 @@ export const FrameSizeProvider = function FrameSizeProvider(initialFrame) {
     };
   });
   const subscribe = tmp3;
-  const tmp4 = _modDef1510((arg0) => {
+  const tmp4 = _modDef1506((arg0) => {
     closure_0 = arg0;
     c2 = false;
     c3 = false;
@@ -78,7 +78,7 @@ export const FrameSizeProvider = function FrameSizeProvider(initialFrame) {
   const subscribeThrottled = tmp4;
   const items = [tmp3, tmp4, tmp2];
   const memo = noop.useMemo(() => ({ getCurrent, subscribe, subscribeThrottled }), items);
-  const tmp6 = _modDef1510((height) => {
+  const tmp6 = _modDef1506((height) => {
     if (!tmp2) {
       const size = { width: null, height: null };
       ({ width: obj.width, height: obj.height } = height);

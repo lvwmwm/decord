@@ -1,15 +1,17 @@
 // Module ID: 8827
 // Function ID: 8828
-// Dependencies: [41, 42, 93, 95, 98, 19, 8781]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8828, 8784]
 
 // Module 8827
+import _modDef8784 from "module_8784" /* 8784 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-const FePointLight = fn;
+const Filter = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,14 +31,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FePointLight {
+const jsx = fn(21).jsx;
+class Filter {
   constructor() {
     self = this;
-    tmp = c2(this, FePointLight);
+    tmp = c2(this, Filter);
     tmp2 = closure_4;
-    obj = closure_4(FePointLight);
+    obj = closure_4(Filter);
     tmp3 = closure_3;
-    if (hasOwnProperty()) {
+    if (metroRequire()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -49,17 +52,30 @@ class FePointLight {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FePointLight, fn(19).Component);
+_inherits(Filter, _modDef8784);
 const entry = {
   key: "render",
   value: function render() {
-    const result = FePointLight(8781).warnUnimplementedFilter();
-    return null;
+    const self = this;
+    const props = this.props;
+    const size = { name: props.id, x: props.x, y: props.y, width: props.width, height: props.height, filterUnits: props.filterUnits, primitiveUnits: props.primitiveUnits };
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const merged = Object.assign(size);
+    obj.children = this.props.children;
+    return jsx(Filter(8828), {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    });
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FePointLight, items);
-importDefaultResultResult.displayName = "FePointLight";
-importDefaultResultResult.defaultProps = {};
+const importDefaultResultResult = _createClass(Filter, items);
+importDefaultResultResult.displayName = "Filter";
+importDefaultResultResult.defaultProps = { x: "-10%", y: "-10%", width: "120%", height: "120%", filterUnits: "objectBoundingBox", primitiveUnits: "userSpaceOnUse" };
 
 export default importDefaultResultResult;
