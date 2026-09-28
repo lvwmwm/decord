@@ -1,18 +1,18 @@
-// Module ID: 10330
-// Function ID: 10331
+// Module ID: 9494
+// Function ID: 9495
 // Name: ChannelCallHeaderButtons
-// Dependencies: [19, 1992, 21, 504, 10221, 1115, 10331, 9943, 9674, 9675, 10332, 4989, 2]
+// Dependencies: [19, 1993, 21, 504, 9381, 1115, 9495, 9104, 8831, 8832, 9496, 5037, 2]
 // Exports: CameraButton, GridButton
 
-// Module 10330 (ChannelCallHeaderButtons)
+// Module 9494 (ChannelCallHeaderButtons)
 import initialize from "initialize" /* 504 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 9675 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10221 */;
-import _modDef10331 from "module_10331" /* 10331 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 8832 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9381 */;
+import _modDef9495 from "module_9495" /* 9495 */;
 import noop from "module_19" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -28,7 +28,7 @@ export const CameraButton = function CameraButton() {
     const obj2 = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
     const intl = tmp(1115).intl;
     obj2.accessibilityLabel = intl.string(tmp(1115).t["t9eQ/g"]);
-    obj2.source = _modDef10331;
+    obj2.source = _modDef9495;
     obj2.onPress = function onPress() {
       const keys = Object.keys(closure_1_1);
       const found = keys.find((item) => item !== closure_1_0);
@@ -49,12 +49,12 @@ export const GridButton = function GridButton(channel) {
       const obj = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
       const intl = channel(1115).intl;
       obj.accessibilityLabel = intl.string(channel(1115).t.HK4JIu);
-      obj.source = tmp(10332);
+      obj.source = tmp(9496);
       obj.onPress = function onPress() {
         return ChannelRTCActionCreatorsDefault.selectParticipant(channel.id, null);
       };
-      tmp4 = jsx(tmp(10221), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
-      const tmpResult = tmp(10221);
+      tmp4 = jsx(tmp(9381), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
+      const tmpResult = tmp(9381);
     }
   }
   return tmp4;

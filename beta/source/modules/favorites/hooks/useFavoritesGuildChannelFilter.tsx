@@ -1,15 +1,15 @@
-// Module ID: 11274
-// Function ID: 11275
+// Module ID: 10442
+// Function ID: 10443
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 2041, 4427, 2044, 1074, 504, 10130, 2066, 1370, 2]
+// Dependencies: [19, 2045, 4469, 2048, 1074, 504, 9290, 2070, 1370, 2]
 // Exports: default
 
-// Module 11274 (useFavoritesGuildChannelFilter)
-import sortByMatchScore from "sortByMatchScore" /* 10130 */;
+// Module 10442 (useFavoritesGuildChannelFilter)
+import sortByMatchScore from "sortByMatchScore" /* 9290 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 require = fn;
 const Permissions = fn(1074).Permissions;
@@ -37,18 +37,18 @@ export default function useFavoritesGuildChannelFilter() {
         tmp15 = tmp17;
       }
       return tmp15;
-    } else if (tmp(10130).AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (tmp(9290).AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (tmp(10130).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (tmp(10130).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (tmp(9290).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (tmp(9290).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           return tmp(1370).assertNever(type);
         }
       }
       let canResult = PermissionStore.can(Permissions.VIEW_CHANNEL, type.record);
       if (canResult) {
-        canResult = tmp(2066).isFavoritableChannel(type.record);
-        const tmpResult2 = tmp(2066);
+        canResult = tmp(2070).isFavoritableChannel(type.record);
+        const tmpResult2 = tmp(2070);
       }
       if (canResult) {
         canResult = null == stateFromStores[type.record.id];

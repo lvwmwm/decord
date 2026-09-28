@@ -1,13 +1,13 @@
-// Module ID: 8562
-// Function ID: 8563
+// Module ID: 7707
+// Function ID: 7708
 // Name: openMediaModal
-// Dependencies: [32, 5, 4479, 1074, 1478, 8563, 1980, 8564, 8565, 38, 4755, 8591, 4991, 8592, 2]
+// Dependencies: [32, 5, 4521, 1074, 1479, 7708, 1981, 7709, 7710, 38, 4800, 7736, 5039, 7737, 2]
 // Exports: openMediaModal
 
-// Module 8562 (openMediaModal)
+// Module 7707 (openMediaModal)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4479 */;
+import ActionSheetStore from "ActionSheetStore" /* 4521 */;
 
 const require = fn;
 let closure_7 = async function _openMediaModal() {
@@ -81,7 +81,7 @@ let closure_7 = async function _openMediaModal() {
   }
   closure_129_6 = openAs;
   closure_129_7 = Object.assign(tmp26, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onClose: 0, openAs: 0 }));
-  return "PX_16";
+  return "flex";
 };
 const MEDIA_MODAL_KEY = fn(1074).MEDIA_MODAL_KEY;
 let size = fn(2);

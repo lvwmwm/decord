@@ -1,75 +1,9 @@
 // Module ID: 14321
 // Function ID: 14322
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 14321
-const re0 = /^[0-9]+$/;
+import registerAsset from "module_1121" /* 1121 */;
 
-export default {
-  compareIdentifiers(major, major2) {
-    const isMatch = re0.test(major);
-    const isMatch1 = re0.test(major2);
-    let tmp3 = isMatch;
-    if (isMatch) {
-      tmp3 = isMatch1;
-    }
-    let tmp4 = major2;
-    let tmp5 = major;
-    if (tmp3) {
-      tmp5 = +major;
-      tmp4 = +major2;
-    }
-    let num = 0;
-    if (tmp5 !== tmp4) {
-      if (!isMatch) {
-        if (!isMatch1) {
-          let num4 = 1;
-          if (tmp5 < tmp4) {
-            num4 = -1;
-          }
-          let num3 = num4;
-        } else {
-          num3 = 1;
-        }
-        let num2 = num3;
-      } else {
-        num2 = -1;
-      }
-      num = num2;
-    }
-    return num;
-  },
-  rcompareIdentifiers(arg0, arg1) {
-    const isMatch = re0.test(arg1);
-    const isMatch1 = re0.test(arg0);
-    let tmp3 = isMatch;
-    if (isMatch) {
-      tmp3 = isMatch1;
-    }
-    let tmp4 = arg0;
-    let tmp5 = arg1;
-    if (tmp3) {
-      tmp5 = +arg1;
-      tmp4 = +arg0;
-    }
-    let num = 0;
-    if (tmp5 !== tmp4) {
-      if (!isMatch) {
-        if (!isMatch1) {
-          let num4 = 1;
-          if (tmp5 < tmp4) {
-            num4 = -1;
-          }
-          let num3 = num4;
-        } else {
-          num3 = 1;
-        }
-        let num2 = num3;
-      } else {
-        num2 = -1;
-      }
-      num = num2;
-    }
-    return num;
-  }
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 92, height: 92, scales: [2], hash: "f7554503ce3d782dd42ebcfb917a0839", name: "googleauth-logo", type: "png" });

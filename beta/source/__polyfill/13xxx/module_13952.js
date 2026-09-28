@@ -1,18 +1,9 @@
 // Module ID: 13952
 // Function ID: 13953
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 13952
-let num = 0;
-let num2 = 0;
-let tmp2 = num;
-do {
-  do {
-    let tmp3 = tmp2 >>> 1;
-    let tmp5 = 1 & tmp2 ? 3988292384 ^ tmp3 : tmp3;
-    num2 = num2 + 1;
-    tmp2 = tmp5;
-  } while (num2 < 8);
-  tmp[num] = tmp5;
-  num = num + 1;
-} while (num < 256);
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "76c09ebc2fd9700ae36ec8729cee1e9d", name: "NotificationsTab", type: "lottie" });

@@ -1,11 +1,11 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 11931
+// Function ID: 11932
 // Name: useChangelogIdFromChannel
-// Dependencies: [5008, 504, 2]
+// Dependencies: [5056, 504, 2]
 // Exports: default
 
-// Module 12721 (useChangelogIdFromChannel)
-import MessageStore from "MessageStore" /* 5008 */;
+// Module 11931 (useChangelogIdFromChannel)
+import MessageStore from "MessageStore" /* 5056 */;
 
 const require = globalThis.__r;
 

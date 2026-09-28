@@ -1,10 +1,10 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16014
+// Function ID: 16015
 // Name: SortableListView
-// Dependencies: [19, 17, 21, 5830, 2]
+// Dependencies: [19, 17, 21, 5893, 2]
 
-// Module 16720 (SortableListView)
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5830 */;
+// Module 16014 (SortableListView)
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5893 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

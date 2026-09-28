@@ -1,23 +1,23 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 15014
+// Function ID: 15015
 // Name: DataSavingModeSetting
-// Dependencies: [1184, 8265, 504, 15739, 2019, 11754, 1115, 2]
+// Dependencies: [1184, 7417, 504, 15012, 2021, 11006, 1115, 2]
 
-// Module 15741 (DataSavingModeSetting)
+// Module 15014 (DataSavingModeSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import UserSettingsText from "UserSettingsText" /* 15739 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import UserSettingsText from "UserSettingsText" /* 15012 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 
 require = fn;
-const SettingBuilders = fn(11754);
+const SettingBuilders = fn(11006);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.ix8XIj);
   },
-  parent: fn(8265).MobileUserSettings.CHAT,
+  parent: fn(7417).MobileUserSettings.CHAT,
   useValue: function useDataSavingModeSettingValue() {
     const items = [UnsyncedUserSettingsStore];
     return initialize.useStateFromStores(items, () => dataSavingMode.dataSavingMode);

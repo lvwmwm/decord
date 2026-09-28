@@ -1,26 +1,26 @@
-// Module ID: 12765
-// Function ID: 12766
+// Module ID: 11978
+// Function ID: 11979
 // Name: GameServerActionCreators
-// Dependencies: [2109, 1372, 12766, 4678, 1074, 573, 12767, 5029, 1271, 12769, 4699, 1241, 12770, 12768, 2]
+// Dependencies: [2112, 1372, 11979, 4725, 1074, 573, 11980, 5092, 1271, 11982, 4746, 1241, 11983, 11981, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer, wakeMyGameServer
 
-// Module 12765 (GameServerActionCreators)
+// Module 11978 (GameServerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4699 */;
-import StoreUtils from "StoreUtils" /* 5029 */;
-import GameServerMocks from "GameServerMocks" /* 12767 */;
-import GameServerStatus from "GameServerStatus" /* 12768 */;
-import regionResponseToRegionDefault from "regionResponseToRegion" /* 12770 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4746 */;
+import StoreUtils from "StoreUtils" /* 5092 */;
+import GameServerMocks from "GameServerMocks" /* 11980 */;
+import GameServerStatus from "GameServerStatus" /* 11981 */;
+import regionResponseToRegionDefault from "regionResponseToRegion" /* 11983 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 import UserStore from "UserStore" /* 1372 */;
-import OwnedGameServersStore from "OwnedGameServersStore" /* 12766 */;
+import OwnedGameServersStore from "OwnedGameServersStore" /* 11979 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GAME_SERVER_COLLECTION_ID = fn(4678).GAME_SERVER_COLLECTION_ID;
+const GAME_SERVER_COLLECTION_ID = fn(4725).GAME_SERVER_COLLECTION_ID;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, Endpoints: closure_8 } = Constants);
 const size = fn(2);
@@ -232,7 +232,7 @@ export const optimisticallyMarkGameServerResizing = function optimisticallyMarkG
   const gameServers = OwnedGameServersStore.getGameServers();
   const found = gameServers.find((subscription_id) => subscription_id.subscription_id === closure_0);
   if (null != found) {
-    const obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "APPLE_PAY_MERCHANT_VALIDATION_FAILED" };
+    const obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "AMEX_NONCE_REQUIRED" };
     const obj3 = {};
     const merged = Object.assign(found);
     obj3.status = GameServerStatus.GameServerStatus.STARTING;
@@ -247,7 +247,7 @@ export const updateMyGameServerName = function updateMyGameServerName(arg0, name
   if (null == found) {
     let resolved = Promise.resolve();
   } else {
-    const obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "APPLE_PAY_MERCHANT_VALIDATION_FAILED" };
+    const obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "AMEX_NONCE_REQUIRED" };
     const obj3 = {};
     const merged = Object.assign(found);
     obj3.name = name;
@@ -308,7 +308,7 @@ export const wakeMyGameServer = function wakeMyGameServer(arg0) {
   const gameServers = OwnedGameServersStore.getGameServers();
   const found = gameServers.find((id) => id.id === closure_0);
   if (null != found) {
-    let obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "APPLE_PAY_MERCHANT_VALIDATION_FAILED" };
+    let obj2 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "AMEX_NONCE_REQUIRED" };
     let obj3 = {};
     let merged = Object.assign(found);
     obj3.status = require("GameServerStatus").GameServerStatus.STARTING;
@@ -321,10 +321,10 @@ export const wakeMyGameServer = function wakeMyGameServer(arg0) {
   return HTTP.post({ url: constants.GAME_SERVER_ME_WAKE(arg0), rejectWithError: true }).then((body) => {
     body = body.body;
     let tmp3 = body;
-    if (body.status === closure_0(12768).GameServerStatus.SLEEPING) {
+    if (body.status === closure_0(11981).GameServerStatus.SLEEPING) {
       const obj2 = {};
       const merged = Object.assign(body);
-      obj2.status = closure_0(12768).GameServerStatus.STARTING;
+      obj2.status = closure_0(11981).GameServerStatus.STARTING;
       tmp3 = obj2;
     }
     const obj3 = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: tmp3 };

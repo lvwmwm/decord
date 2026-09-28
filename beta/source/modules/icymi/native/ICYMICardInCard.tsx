@@ -1,23 +1,23 @@
-// Module ID: 16836
-// Function ID: 16837
+// Module ID: 16132
+// Function ID: 16133
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 2041, 2105, 2063, 1074, 21, 16795, 576, 9126, 5833, 1177, 5225, 504, 5021, 10028, 4940, 4784, 4941, 16837, 1115, 5330, 16835, 5371, 7909, 8213, 2]
+// Dependencies: [19, 17, 2045, 2108, 2067, 1074, 21, 16091, 576, 8276, 5896, 1177, 5288, 504, 5084, 9188, 4988, 4832, 4989, 16133, 1115, 5394, 16131, 5435, 7055, 7365, 2]
 // Exports: default
 
-// Module 16836 (ICYMICardInCard)
+// Module 16132 (ICYMICardInCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import TextIcon2 from "TextIcon" /* 5330 */;
-import GuildIcon from "GuildIcon" /* 5833 */;
-import ClipView from "ClipView" /* 9126 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 16835 */;
-import getIconForChannel from "getIconForChannel" /* 16837 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import TextIcon2 from "TextIcon" /* 5394 */;
+import GuildIcon from "GuildIcon" /* 5896 */;
+import ClipView from "ClipView" /* 8276 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 16131 */;
+import getIconForChannel from "getIconForChannel" /* 16133 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const GuildIconDefault = GuildIcon;
 const ClipViewDefault = ClipView;
@@ -45,7 +45,7 @@ const View = fn(17).View;
 const DEFAULT_ROLE_COLOR_HEX = fn(1074).DEFAULT_ROLE_COLOR_HEX;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createICYMIStyles = fn(16795);
+const createICYMIStyles = fn(16091);
 let closure_12 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
   const obj = { container: { marginTop: marginHorizontal.margin }, content: { flex: 1, overflow: "hidden" }, channelNameAndAccessory: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin }, channelNameAndAccessoryLarge: null, header: null, headerInfo: null, title: null, titleLeft: null, subTitleContainer: null, subtitle: null, genContentSubtitle: null, genContentSubtitleChannel: null, subtitleTrailing: null, separator: null, normalContent: null, authorAvatar: null };
   const obj2 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin };

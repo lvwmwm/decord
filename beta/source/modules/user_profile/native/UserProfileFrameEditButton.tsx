@@ -1,24 +1,24 @@
-// Module ID: 14937
-// Function ID: 14938
+// Module ID: 14187
+// Function ID: 14188
 // Name: UserProfileFrameEditButton
-// Dependencies: [32, 19, 17, 7485, 2038, 1085, 21, 576, 4788, 7662, 2027, 8467, 11340, 1973, 4755, 14938, 1980, 1115, 14925, 5826, 9135, 1177, 13505, 2]
+// Dependencies: [32, 19, 17, 6629, 2042, 1085, 21, 576, 4836, 6806, 2029, 7611, 10508, 1974, 4800, 14188, 1981, 1115, 14175, 5889, 8285, 1177, 12745, 2]
 // Exports: default
 
-// Module 14937 (UserProfileFrameEditButton)
+// Module 14187 (UserProfileFrameEditButton)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const COLLECTIBLES_PREVIEW_SIZE = fn(7485).COLLECTIBLES_PREVIEW_SIZE;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const COLLECTIBLES_PREVIEW_SIZE = fn(6629).COLLECTIBLES_PREVIEW_SIZE;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const NOOP = fn(1085).NOOP;
 const jsx = fn(21).jsx;
 const PX_4 = nativeDefault.space.PX_4;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { previewContainer: null, noneIcon: null };
 let size = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, paddingVertical: PX_4, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
 obj2.previewContainer = size;
@@ -32,10 +32,10 @@ export default function UserProfileFrameEditButton(arg0) {
   ({ pendingProfileFrame, guildId } = arg0);
   let userProfileFrame;
   const tmp = closure_11();
-  const items = [user(2027).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
-  const tmp4 = userProfileFrame(user(7662).useSelectedDismissibleContent(items), 2);
+  const items = [user(2029).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
+  const tmp4 = userProfileFrame(user(6806).useSelectedDismissibleContent(items), 2);
   dependencyMap = tmp5;
-  const obj = user(7662);
+  const obj = user(6806);
   const obj3 = { pendingValue: pendingProfileFrame, userValue: null, guildValue: null, guildId: null };
   let profileFrame;
   if (displayProfile != null) {
@@ -54,13 +54,13 @@ export default function UserProfileFrameEditButton(arg0) {
   }
   obj3.guildValue = profileFrame1;
   obj3.guildId = guildId;
-  const profilePreviewValue = user(8467).getProfilePreviewValue(obj3);
-  const obj2 = user(8467);
+  const profilePreviewValue = user(7611).getProfilePreviewValue(obj3);
+  const obj2 = user(7611);
   let skuId;
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
-  const fetchCollectiblesProduct = user(11340).useFetchCollectiblesProduct(skuId);
+  const fetchCollectiblesProduct = user(10508).useFetchCollectiblesProduct(skuId);
   const product = fetchCollectiblesProduct.product;
   let type;
   if (product != null) {
@@ -69,18 +69,18 @@ export default function UserProfileFrameEditButton(arg0) {
       type = first.type;
     }
   }
-  if (type === user(1973).CollectiblesItemType.PROFILE_FRAME) {
+  if (type === user(1974).CollectiblesItemType.PROFILE_FRAME) {
     const first1 = product.items[0];
   }
-  const tmp2Result = user(11340);
-  userProfileFrame = user(8467).useUserProfileFrame({ user, guildId });
+  const tmp2Result = user(10508);
+  userProfileFrame = user(7611).useUserProfileFrame({ user, guildId });
   if (undefined !== pendingProfileFrame) {
     userProfileFrame = pendingProfileFrame;
   }
   const items1 = [userProfileFrame, guildId, user, tmp4[1]];
   let name;
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14938, dependencyMap.paths), "Profile Frame", { user, currentProfileFrame: userProfileFrame, guildId });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14188, dependencyMap.paths), "Profile Frame", { user, currentProfileFrame: userProfileFrame, guildId });
     closure_2(ContentDismissActionType.TAKE_ACTION);
   }, items1);
   if (product != null) {
@@ -106,14 +106,14 @@ export default function UserProfileFrameEditButton(arg0) {
     const intl5 = tmp2(1115).intl;
     obj5.buttonText = intl5.string(tmp2(1115).t.MKDeyL);
     obj5.onPress = NOOP;
-    obj5.leading = tmp18(tmp2(5826).ActivityIndicator, { animating: true, size: "large" });
+    obj5.leading = tmp18(tmp2(5889).ActivityIndicator, { animating: true, size: "large" });
     let obj6 = obj5;
   } else {
     obj6 = { label: null, labelTrailing: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null };
     const intl3 = tmp2(1115).intl;
     obj6.label = intl3.string(tmp2(1115).t.GWrZOd);
-    const obj7 = { showNewBadge: tmp4[0] === tmp2(2027).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE };
-    obj6.labelTrailing = tmp18(tmp2(14925).UserProfileEditFormLabelBadges, obj7);
+    const obj7 = { showNewBadge: tmp4[0] === tmp2(2029).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE };
+    obj6.labelTrailing = tmp18(tmp2(14175).UserProfileEditFormLabelBadges, obj7);
     obj6.buttonText = formatToPlainStringResult;
     const obj8 = { text: formatToPlainStringResult };
     obj6.accessibilityValue = obj8;
@@ -121,14 +121,14 @@ export default function UserProfileFrameEditButton(arg0) {
     if (null != first1) {
       const obj9 = { style: tmp.previewContainer, children: null };
       const obj10 = { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(576).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(576).colors.BACKGROUND_SURFACE_HIGH };
-      obj9.children = tmp18(guildId(9135), obj10);
+      obj9.children = tmp18(guildId(8285), obj10);
       let tmp18Result = tmp18(View, obj9);
-      const tmp23 = guildId(9135);
+      const tmp23 = guildId(8285);
     } else {
-      const obj11 = { source: guildId(13505), style: tmp.noneIcon };
+      const obj11 = { source: guildId(12745), style: tmp.noneIcon };
       tmp18Result = tmp18(tmp2(1177).Icon, obj11);
     }
     obj6.leading = tmp18Result;
   }
-  return jsx(user(14925).UserProfileEditFormButton, obj6);
+  return jsx(user(14175).UserProfileEditFormButton, obj6);
 };

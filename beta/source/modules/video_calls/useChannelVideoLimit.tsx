@@ -1,12 +1,12 @@
-// Module ID: 9942
-// Function ID: 9943
+// Module ID: 9103
+// Function ID: 9104
 // Name: useChannelVideoLimit
-// Dependencies: [2063, 4812, 1074, 504, 2]
+// Dependencies: [2067, 4860, 1074, 504, 2]
 // Exports: default, getChannelVideoLimit
 
-// Module 9942 (useChannelVideoLimit)
-import GuildStore from "GuildStore" /* 2063 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4812 */;
+// Module 9103 (useChannelVideoLimit)
+import GuildStore from "GuildStore" /* 2067 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
 
 const require = globalThis.__r;
 

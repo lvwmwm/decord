@@ -1,13 +1,13 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 10741
+// Function ID: 10742
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 2041, 1372, 9636, 9670, 9607, 11803, 9625, 2]
+// Dependencies: [5, 2045, 1372, 8793, 8827, 8764, 10742, 8782, 2]
 // Exports: default
 
-// Module 11802 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 9636 */;
+// Module 10741 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 8793 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
@@ -153,7 +153,7 @@ let closure_8 = async function _handleUsePrimaryEntryPointAppCommandInternal(arg
           let currentUser;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {

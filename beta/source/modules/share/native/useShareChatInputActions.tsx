@@ -1,11 +1,11 @@
-// Module ID: 11974
-// Function ID: 11975
+// Module ID: 11189
+// Function ID: 11190
 // Name: useShareChatInputActions
-// Dependencies: [32, 19, 1375, 11417, 2]
+// Dependencies: [32, 19, 1375, 10583, 2]
 // Exports: useShareChatInputActions
 
-// Module 11974 (useShareChatInputActions)
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11417 */;
+// Module 11189 (useShareChatInputActions)
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10583 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

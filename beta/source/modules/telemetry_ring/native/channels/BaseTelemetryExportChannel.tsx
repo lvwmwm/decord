@@ -1,13 +1,13 @@
-// Module ID: 1985
-// Function ID: 1986
+// Module ID: 1986
+// Function ID: 1987
 // Name: BaseTelemetryExportChannel
-// Dependencies: [5, 1986, 3, 510, 2]
+// Dependencies: [5, 1987, 3, 510, 2]
 
-// Module 1985 (BaseTelemetryExportChannel)
+// Module 1986 (BaseTelemetryExportChannel)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1986 */;
+import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1987 */;
 
 require = fn;
 class BaseTelemetryExportChannel extends tmp2 {

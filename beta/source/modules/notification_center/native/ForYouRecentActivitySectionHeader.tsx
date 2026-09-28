@@ -1,19 +1,19 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16073
+// Function ID: 16074
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [19, 17, 21, 4788, 576, 4784, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4832, 1115, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 16779 (ForYouRecentActivitySectionHeader)
+// Module 16073 (ForYouRecentActivitySectionHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
+import Text_Text from "Text/Text" /* 4832 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_24 }, textHeader: null };
 const obj3 = { marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_24 };
 obj2.textHeader = { marginTop: nativeDefault.space.PX_8 };

@@ -1,16 +1,20 @@
-// Module ID: 17760
-// Function ID: 17761
+// Module ID: 17117
+// Function ID: 17118
 // Name: VoiceCallTriggerPoint
-// Dependencies: [4704, 11102, 10027, 17761, 17304, 17762, 17763, 13516, 2]
+// Dependencies: [4751, 10271, 17118, 16654, 17119, 17120, 12756, 2]
 
-// Module 17760 (VoiceCallTriggerPoint)
-import GuildVoiceRingingExperimentDefault from "GuildVoiceRingingExperiment" /* 10027 */;
-import PastVcActivityMessagesExperimentDefault from "PastVcActivityMessagesExperiment" /* 17762 */;
-import VoiceCallTriggerPointExperimentDefault from "VoiceCallTriggerPointExperiment" /* 17763 */;
+// Module 17117 (VoiceCallTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 4751 */;
+import Helpers from "Helpers" /* 10271 */;
+import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 12756 */;
+import HangoutWindowExperiment from "HangoutWindowExperiment" /* 16654 */;
+import VoiceChannelHoistingExperiment from "VoiceChannelHoistingExperiment" /* 17118 */;
+import PastVcActivityMessagesExperimentDefault from "PastVcActivityMessagesExperiment" /* 17119 */;
+import VoiceCallTriggerPointExperimentDefault from "VoiceCallTriggerPointExperiment" /* 17120 */;
+import size from "module_2" /* 2 */;
 
-const items = [GuildVoiceRingingExperimentDefault, fn(17761).VoiceChannelHoistingExperiment, fn(17304).HangoutWindowExperiment, PastVcActivityMessagesExperimentDefault, VoiceCallTriggerPointExperimentDefault, fn(13516).VoiceChannelBadgeExperiment];
-const commonTriggerPointConfiguration = new fn(11102).CommonTriggerPointConfiguration(items, fn(4704).CommonTriggerPoints.VOICE_CALL, { location: "voice call initiated" });
-const size = fn(2);
+const items = [VoiceChannelHoistingExperiment.VoiceChannelHoistingExperiment, HangoutWindowExperiment.HangoutWindowExperiment, PastVcActivityMessagesExperimentDefault, VoiceCallTriggerPointExperimentDefault, VoiceChannelBadgeExperiment.VoiceChannelBadgeExperiment];
+const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration(items, ExperimentConstants.CommonTriggerPoints.VOICE_CALL, { location: "voice call initiated" });
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/VoiceCallTriggerPoint.tsx");
 
 export const VoiceCallTriggerPoint = commonTriggerPointConfiguration;

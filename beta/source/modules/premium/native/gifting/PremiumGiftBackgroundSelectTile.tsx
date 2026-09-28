@@ -1,47 +1,47 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 10482
+// Function ID: 10483
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1374, 11315, 21, 11316, 11317, 11318, 11319, 11320, 11321, 11322, 11323, 11324, 4788, 576, 1115, 2546, 5836, 2]
+// Dependencies: [19, 17, 1374, 10483, 21, 10484, 10485, 10486, 10487, 10488, 10489, 10490, 10491, 10492, 4836, 576, 1115, 2551, 5899, 2]
 // Exports: default
 
-// Module 11314 (PremiumGiftBackgroundSelectTile)
+// Module 10482 (PremiumGiftBackgroundSelectTile)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2546 from "module_2546" /* 2546 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef11316 from "module_11316" /* 11316 */;
-import _modDef11317 from "module_11317" /* 11317 */;
-import _modDef11318 from "module_11318" /* 11318 */;
-import _modDef11319 from "module_11319" /* 11319 */;
-import _modDef11320 from "module_11320" /* 11320 */;
-import _modDef11321 from "module_11321" /* 11321 */;
-import _modDef11322 from "module_11322" /* 11322 */;
-import _modDef11323 from "module_11323" /* 11323 */;
-import _modDef11324 from "module_11324" /* 11324 */;
+import _modDef2551 from "module_2551" /* 2551 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef10484 from "module_10484" /* 10484 */;
+import _modDef10485 from "module_10485" /* 10485 */;
+import _modDef10486 from "module_10486" /* 10486 */;
+import _modDef10487 from "module_10487" /* 10487 */;
+import _modDef10488 from "module_10488" /* 10488 */;
+import _modDef10489 from "module_10489" /* 10489 */;
+import _modDef10490 from "module_10490" /* 10490 */;
+import _modDef10491 from "module_10491" /* 10491 */;
+import _modDef10492 from "module_10492" /* 10492 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Pressable: closure_4 } = get_ActivityIndicator);
 const PremiumGiftStyles = fn(1374).PremiumGiftStyles;
-const GIFT_STYLE_DESCRIPTIONS = fn(11315).GIFT_STYLE_DESCRIPTIONS;
+const GIFT_STYLE_DESCRIPTIONS = fn(10483).GIFT_STYLE_DESCRIPTIONS;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const GIFT_STYLE_IMG = { [STANDARD_BOX]: _modDef11316, [CAKE]: _modDef11317, [CHEST]: _modDef11318, [COFFEE]: _modDef11319 };
+const GIFT_STYLE_IMG = { [STANDARD_BOX]: _modDef10484, [CAKE]: _modDef10485, [CHEST]: _modDef10486, [COFFEE]: _modDef10487 };
 ({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
-GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = { uri: _modDef11320 };
+GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = { uri: _modDef10488 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SNOWGLOBE] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.BOX] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.CUP] = null;
-let obj2 = { uri: _modDef11320 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = { uri: _modDef11321 };
-let obj3 = { uri: _modDef11321 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = { uri: _modDef11322 };
-let obj4 = { uri: _modDef11322 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: _modDef11323 };
-const obj5 = { uri: _modDef11323 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef11324 };
-const createStyles = fn(4788);
+let obj2 = { uri: _modDef10488 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = { uri: _modDef10489 };
+let obj3 = { uri: _modDef10489 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = { uri: _modDef10490 };
+let obj4 = { uri: _modDef10490 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: _modDef10491 };
+const obj5 = { uri: _modDef10491 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef10492 };
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles((arg0) => {
   const size = { width: 78, height: 44, justifyContent: "center", marginEnd: nativeDefault.space.PX_8, marginStart: null };
   let num = 0;
@@ -68,7 +68,7 @@ export default function GiftBackgroundSelectTile(index) {
     const obj2 = { giftStyle: null };
     const intl2 = util.intl;
     obj2.giftStyle = intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]);
-    obj["aria-label"] = intl.formatToPlainString(_modDef2546["+utqaz"], obj2);
+    obj["aria-label"] = intl.formatToPlainString(_modDef2551["+utqaz"], obj2);
     obj["aria-selected"] = selected;
     obj.style = tmp.container;
     obj.onPress = index.onPress;

@@ -1,13 +1,13 @@
-// Module ID: 4734
-// Function ID: 4735
+// Module ID: 4779
+// Function ID: 4780
 // Name: CopyIcon
-// Dependencies: [19, 21, 576, 4488, 4735, 2]
+// Dependencies: [19, 21, 576, 4530, 4780, 2]
 // Exports: CopyIcon
 
-// Module 4734 (CopyIcon)
+// Module 4779 (CopyIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod4735 from "module_4735" /* 4735 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod4780 from "module_4780" /* 4780 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const CopyIcon = function CopyIcon(tmp6Result2) {
   }
   const merged = Object.assign(tmp6Result2, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4735, color: INTERACTIVE_ICON_DEFAULT, style: tmp6Result2.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4780, color: INTERACTIVE_ICON_DEFAULT, style: tmp6Result2.style });
 };

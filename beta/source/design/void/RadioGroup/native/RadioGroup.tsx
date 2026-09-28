@@ -1,12 +1,12 @@
-// Module ID: 14395
-// Function ID: 14396
+// Module ID: 13637
+// Function ID: 13638
 // Name: RadioGroup
-// Dependencies: [19, 17, 1085, 21, 4788, 576, 4506, 7414, 14396, 2]
+// Dependencies: [19, 17, 1085, 21, 4836, 576, 4548, 6558, 13638, 2]
 
-// Module 14395 (RadioGroup)
+// Module 13637 (RadioGroup)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4506 */;
-import FormRowDefault from "FormRow" /* 7414 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
+import FormRowDefault from "FormRow" /* 6558 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -270,7 +270,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const Sizes = { SMALL: 8, [8]: "SMALL", MEDIUM: 10, [10]: "MEDIUM", LARGE: 12, [12]: "LARGE" };
 const dependencyMap = { [Sizes.SMALL]: 2, [Sizes.MEDIUM]: 3, [Sizes.LARGE]: 4 };
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj3 = { radioIcon: { flex: 0, marginRight: 8, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.TEXT_MUTED, borderWidth: 2 }, radioIconSelected: null, radioTick: null, disabled: null, divider: null, collapsibleStyle: null, collapsibleBackgroundSelected: null, collapsibleBackground: null, collapsibleContainer: null };
 const obj4 = { flex: 0, marginRight: 8, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.TEXT_MUTED, borderWidth: 2 };
 obj3.radioIconSelected = { borderColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };

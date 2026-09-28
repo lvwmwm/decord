@@ -1,20 +1,20 @@
-// Module ID: 18148
-// Function ID: 18149
+// Module ID: 17512
+// Function ID: 17513
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 2059, 2063, 1372, 504, 7535, 18149, 4689, 2]
+// Dependencies: [5, 32, 19, 2063, 2067, 1372, 504, 6679, 17513, 4736, 2]
 // Exports: default
 
-// Module 18148 (useCreatorMonetizationAcceptTerms)
+// Module 17512 (useCreatorMonetizationAcceptTerms)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const isGuildOwner = fn(2059).isGuildOwner;
+const isGuildOwner = fn(2063).isGuildOwner;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/useCreatorMonetizationAcceptTerms.tsx");
 
@@ -76,12 +76,12 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
               if (null != tmp4) {
                 c4 = 4;
                 c5 = 1;
-                const obj6 = { value: tmp47(18149).acceptCreatorMonetizationTerms(tmp55, tmp42), done: false };
+                const obj6 = { value: tmp47(17513).acceptCreatorMonetizationTerms(tmp55, tmp42), done: false };
                 return obj6;
               } else {
                 c4 = 3;
                 c5 = 1;
-                const obj7 = { value: tmp47(18149).acceptCreatorMonetizationTermsV2(tmp55), done: false };
+                const obj7 = { value: tmp47(17513).acceptCreatorMonetizationTermsV2(tmp55), done: false };
                 return obj7;
               }
             }
@@ -91,7 +91,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
           if (2 === tmp8) {
             dependencyMap = 1;
             closure_128_0 = tmp47;
-            const tmp25 = new tmp4(4689)(closure_128_0);
+            const tmp25 = new tmp4(4736)(closure_128_0);
             closure_129_3(tmp25);
           } else {
             if (3 === tmp8) {

@@ -1,13 +1,13 @@
-// Module ID: 7243
-// Function ID: 7244
+// Module ID: 6387
+// Function ID: 6388
 // Name: EyeSlashIcon
-// Dependencies: [19, 21, 576, 4488, 7244, 2]
+// Dependencies: [19, 21, 576, 4530, 6388, 2]
 // Exports: EyeSlashIcon
 
-// Module 7243 (EyeSlashIcon)
+// Module 6387 (EyeSlashIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod7244 from "module_7244" /* 7244 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod6388 from "module_6388" /* 6388 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EyeSlashIcon = function EyeSlashIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod7244, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod6388, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

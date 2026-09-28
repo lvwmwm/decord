@@ -1,13 +1,13 @@
-// Module ID: 18080
-// Function ID: 18081
+// Module ID: 17441
+// Function ID: 17442
 // Name: GuildConfigGates
-// Dependencies: [5, 18081, 1074, 504, 1271, 573, 2]
+// Dependencies: [5, 17442, 1074, 504, 1271, 573, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 18080 (GuildConfigGates)
+// Module 17441 (GuildConfigGates)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 18081 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 17442 */;
 
 require = fn;
 const Endpoints = fn(1074).Endpoints;

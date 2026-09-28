@@ -1,13 +1,13 @@
-// Module ID: 13452
-// Function ID: 13453
+// Module ID: 12564
+// Function ID: 12565
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 2038, 7485, 21, 4788, 6088, 13450, 1115, 11423, 2]
+// Dependencies: [19, 17, 2042, 6629, 21, 4836, 12565, 12559, 1115, 10589, 2]
 // Exports: default
 
-// Module 13452 (ShopThisLookMarketingCoachmark)
+// Module 12564 (ShopThisLookMarketingCoachmark)
 import util from "util" /* 1115 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 6088 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 13450 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12559 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 12565 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,10 +15,10 @@ function ShopThisLookMarketingCoachmarkImage() {
   return <View style={closure_7().imageContainer}>{jsx(BumpingFistsSpotIllustration.BumpingFistsSpotIllustration, { width: 100, height: 56, resizeMode: "contain" })}</View>;
 }
 const View = fn(17).View;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
-const UserProfileThemeTypes = fn(7485).UserProfileThemeTypes;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const UserProfileThemeTypes = fn(6629).UserProfileThemeTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/shop_this_look/native/ShopThisLookMarketingCoachmark.tsx");

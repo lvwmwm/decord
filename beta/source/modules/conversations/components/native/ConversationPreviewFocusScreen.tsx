@@ -1,13 +1,13 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 16684
+// Function ID: 16685
 // Name: ConversationPreviewFocusScreen
-// Dependencies: [19, 7868, 21, 1487, 504, 13584, 2]
+// Dependencies: [19, 7014, 21, 1488, 504, 12824, 2]
 // Exports: default
 
-// Module 17334 (ConversationPreviewFocusScreen)
-import ConversationFocusViewDefault from "ConversationFocusView" /* 13584 */;
+// Module 16684 (ConversationPreviewFocusScreen)
+import ConversationFocusViewDefault from "ConversationFocusView" /* 12824 */;
 import noop from "module_19" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7868 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7014 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -15,10 +15,10 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationPreviewFocusScreen.tsx");
 
 export default function ConversationPreviewFocusScreen() {
-  const params = conversationId(1487).useRoute().params;
+  const params = conversationId(1488).useRoute().params;
   conversationId = params.conversationId;
   ({ channelId, messageId } = params);
-  let obj = conversationId(1487);
+  let obj = conversationId(1488);
   const items = [ConversationPreviewStore];
   const items1 = [conversationId];
   const messages = conversationId(504).useStateFromStores(items, () => ConversationPreviewStore.getHydratedMessages(conversationId), items1);

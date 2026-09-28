@@ -1,17 +1,17 @@
-// Module ID: 17594
-// Function ID: 17595
+// Module ID: 16949
+// Function ID: 16950
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1074, 21, 4788, 576, 10098, 1115, 10080, 1370, 5838, 1177, 2]
+// Dependencies: [19, 1074, 21, 4836, 576, 9258, 1115, 9240, 1370, 5901, 1177, 2]
 // Exports: default
 
-// Module 17594 (VoicePanelConsoleFacepile)
+// Module 16949 (VoicePanelConsoleFacepile)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import NativeViewDefault from "NativeView" /* 5838 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 10080 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 10098 */;
+import NativeViewDefault from "NativeView" /* 5901 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9240 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9258 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -39,7 +39,7 @@ function getConsoleInfo(type) {
 }
 const PlatformTypes = fn(1074).PlatformTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { consoleIconContainer: { borderRadius: nativeDefault.radii.round, padding: 8, margin: -3, borderWidth: 3, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, consoleIcon: null };
 const obj3 = { borderRadius: nativeDefault.radii.round, padding: 8, margin: -3, borderWidth: 3, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.consoleIcon = { tintColor: nativeDefault.colors.WHITE };

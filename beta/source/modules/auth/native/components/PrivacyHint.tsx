@@ -1,14 +1,14 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 15607
+// Function ID: 15608
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6867, 16280, 1074, 21, 4788, 4784, 1115, 4506, 5866, 8903, 16319, 2]
+// Dependencies: [19, 17, 6011, 15570, 1074, 21, 4836, 4832, 1115, 4548, 5929, 8053, 15608, 2]
 // Exports: default
 
-// Module 16318 (PrivacyHint)
+// Module 15607 (PrivacyHint)
 import util from "util" /* 1115 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4506 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16319 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15608 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,11 +32,11 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   obj2.hitSlop = { top: 11, bottom: 11, left: 11 };
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    let tmp7Result = tmp7(tmp2(5866).FormCheckbox, obj3);
+    let tmp7Result = tmp7(tmp2(5929).FormCheckbox, obj3);
     let tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8903).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8053).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   const items = [tmp7Result, ];
@@ -49,12 +49,12 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Pressable: closure_4 } = get_ActivityIndicator);
-const usePromoEmailConsentStore = fn(6867).usePromoEmailConsentStore;
-const useRegistrationUIStore = fn(16280).useRegistrationUIStore;
+const usePromoEmailConsentStore = fn(6011).usePromoEmailConsentStore;
+const useRegistrationUIStore = fn(15570).useRegistrationUIStore;
 const MarketingURLs = fn(1074).MarketingURLs;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles({ multiItem: { flexDirection: "column", gap: 16 }, checkbox: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, radio: { flexDirection: "row", alignItems: "center", gap: 8 }, checkboxLabel: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/PrivacyHint.tsx");

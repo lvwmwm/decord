@@ -5911,7 +5911,7 @@ function updateSuspenseListComponent(child, pendingProps, current) {
           if ("together" === revealOrder) {
             memoizedState = pendingProps.memoizedState;
             if (null === memoizedState) {
-              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "ip", treeForkCount: false };
+              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "disabled", treeForkCount: false };
             } else {
               memoizedState.isBackwards = false;
               memoizedState.rendering = null;

@@ -1,9 +1,23 @@
 // Module ID: 13814
 // Function ID: 13815
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 13814
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 375, height: 301, scales: [2, 3], hash: "7326675c9312971f0f528c74fa69a335", name: "img_top_pattern_darker", type: "png" });
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
+}
+if (undefined === all) {
+  if (undefined !== all) {
+    let fn = (fn) => {
+      let tmp = typeof fn === "function";
+      if (typeof fn !== "function") {
+        tmp = fn === all;
+      }
+      return tmp;
+    };
+  }
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

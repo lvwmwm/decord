@@ -1,0 +1,11 @@
+// Module ID: 4643
+// Function ID: 4644
+// Dependencies: [2]
+
+// Module 4643
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/OrbsIllustration_Hands.riv.js");
+
+export default "https://cdn.discordapp.com/assets/content/1f36d546a4ac8054dbd6ab0384a6aa4bf3c574c8b435c58e0e4e8d922a0a4cce.riv";
+export const metadata = { fileBytes: 86160 };

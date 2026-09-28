@@ -1,19 +1,19 @@
-// Module ID: 5123
-// Function ID: 5124
+// Module ID: 5186
+// Function ID: 5187
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1074, 1085, 3, 1271, 1115, 5112, 5124, 573, 38, 5125, 5126, 4468, 4688, 2]
+// Dependencies: [5, 1074, 1085, 3, 1271, 1115, 5175, 5187, 573, 38, 5188, 5189, 4510, 4735, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 5123 (BillingPaymentGatewayActionCreators)
+// Module 5186 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5112 */;
-import _mod5124 from "module_5124" /* 5124 */;
-import StripeActionCreators from "StripeActionCreators" /* 5125 */;
-import StripeUtilsAll from "StripeUtils" /* 5126 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5175 */;
+import _mod5187 from "module_5187" /* 5187 */;
+import StripeActionCreators from "StripeActionCreators" /* 5188 */;
+import StripeUtilsAll from "StripeUtils" /* 5189 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -64,7 +64,7 @@ let closure_14 = async function _createCardToken(arg0, value) {
           let error;
           if (null != _require) {
             if (null != obj11) {
-              const element = obj11.getElement(_mod5124.CardNumberElement);
+              const element = obj11.getElement(_mod5187.CardNumberElement);
               if (null == element) {
                 throw BillingSharedActionCreators.dispatchConfirmationError("Unable to load card elements from Stripe");
               } else {
@@ -332,7 +332,7 @@ let closure_24 = async function _createExpressCheckoutPaymentMethod(arg0, value)
           closure_129_3 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -473,7 +473,7 @@ let closure_26 = async function _confirmPaymentElementSource() {
               let billing_details;
               c12 = 3;
               c13 = 1;
-              return { value: "PX_16", done: true };
+              return { value: "flex", done: true };
             }
           break;
           case 1:
@@ -567,7 +567,7 @@ let closure_26 = async function _confirmPaymentElementSource() {
                       setupIntent2 = closure_137_17(closure_136_10.setupIntent, closure_136_10.error, (type) => {
                         const intl = dependencyMap(1115).intl;
                         const stringResult = intl.string(dependencyMap(1115).t.khEaRI);
-                        return dependencyMap(5112).dispatchConfirmationError(type, true, stringResult, { tags: { source: "payment_elements" } });
+                        return dependencyMap(5175).dispatchConfirmationError(type, true, stringResult, { tags: { source: "payment_elements" } });
                       }).setupIntent;
                       closure_136_4.current = setupIntent2;
                       payment_method = setupIntent2.payment_method;
@@ -928,7 +928,7 @@ let closure_30 = async function _createAdyenVaultablePaymentSource(arg0, value) 
           let adyen_redirect_url;
           c12 = 1;
           c13 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

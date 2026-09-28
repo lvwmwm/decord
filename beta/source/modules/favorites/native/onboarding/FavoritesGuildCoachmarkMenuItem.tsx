@@ -1,15 +1,15 @@
-// Module ID: 16576
-// Function ID: 16577
+// Module ID: 15866
+// Function ID: 15867
 // Name: FavoritesGuildCoachmarkMenuItem
-// Dependencies: [19, 2044, 1074, 2038, 21, 10537, 7433, 504, 1115, 3356, 11423, 2]
+// Dependencies: [19, 2048, 1074, 2042, 21, 9703, 6577, 504, 1115, 3361, 10589, 2]
 // Exports: default
 
-// Module 16576 (FavoritesGuildCoachmarkMenuItem)
+// Module 15866 (FavoritesGuildCoachmarkMenuItem)
 import util from "util" /* 1115 */;
-import _modDef3356 from "module_3356" /* 3356 */;
-import LayerScope from "LayerScope" /* 7433 */;
+import _modDef3361 from "module_3361" /* 3361 */;
+import LayerScope from "LayerScope" /* 6577 */;
 import noop from "module_19" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 require = fn;
 function FavoritesGuildCoachmarkMenuItemContent(arg0) {
@@ -34,9 +34,9 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, onDismiss, callback1];
   const memo = onDismiss.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M4 0H3v1h1V0ZM6 5H5v1h1V5ZM11 5h-1v1h1V5ZM13 0h-1v1h1V0ZM14 1h-1v1h1V1ZM15 2h-1v1h1V2ZM16 3h-1v1h1V3ZM9 0H7v1h2V0Z", onButtonPress: "#000" };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M9 14H7v1h2v-1ZM9 11H7v1h2v-1Z", onButtonPress: null };
     const intl = util.intl;
-    const tmp4 = _modDef3356;
+    const tmp4 = _modDef3361;
     if (stateFromStores) {
       let TWuDTt = tmp4.TWuDTt;
       let tmp6 = tmp3;
@@ -46,10 +46,10 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
     }
     obj.title = intl.string(TWuDTt);
     const intl2 = tmp(1115).intl;
-    obj.description = intl2.string(tmp6(3356).Ztl9ht);
+    obj.description = intl2.string(tmp6(3361).Ztl9ht);
     obj.onDismiss = onDismiss;
     const intl3 = tmp(1115).intl;
-    obj.buttonLabel = intl3.string(tmp6(3356)["+h9aza"]);
+    obj.buttonLabel = intl3.string(tmp6(3361)["+h9aza"]);
     obj.onButtonPress = callback1;
     return obj;
   }, items3);
@@ -57,7 +57,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   const coachmark = stateFromStores(markPopoverAsDismissed[10]).useCoachmark(targetRef, memo);
   return null;
 }
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let items = [, , ];
 ({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], GUILD_FORUM: arr[2] } = fn(1074).ChannelTypes);

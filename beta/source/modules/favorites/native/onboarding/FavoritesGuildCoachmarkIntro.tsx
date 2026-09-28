@@ -1,22 +1,22 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 15950
+// Function ID: 15951
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 16627, 1074, 2038, 21, 4524, 10530, 16651, 1115, 3356, 16657, 11423, 2]
+// Dependencies: [32, 19, 15921, 1074, 2042, 21, 4566, 9696, 15945, 1115, 3361, 15951, 10589, 2]
 // Exports: default
 
-// Module 16656 (FavoritesGuildCoachmarkIntro)
+// Module 15950 (FavoritesGuildCoachmarkIntro)
 import util from "util" /* 1115 */;
-import _modDef3356 from "module_3356" /* 3356 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10530 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16651 */;
+import _modDef3361 from "module_3361" /* 3361 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 9696 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 15945 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16627 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 15921 */;
 
 require = fn;
 const FAVORITES = fn(1074).FAVORITES;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
 const __initData = { code: "function FavoritesGuildCoachmarkIntroTsx1(){const{scrollPosition}=this.__closure;return scrollPosition.get()<=0;}" };
 const __initData2 = { code: "function FavoritesGuildCoachmarkIntroTsx2(atTop,wasAtTop){const{runOnJS,setScrolledToTop}=this.__closure;if(atTop===wasAtTop){return;}runOnJS(setScrolledToTop)(atTop);}" };
@@ -62,15 +62,15 @@ export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
   const memo = onDismiss.useMemo(() => {
     const obj = { visible, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: null, buttonLabel: null, onButtonPress: null };
     const intl = util.intl;
-    obj.title = intl.string(_modDef3356["bu/mLv"]);
+    obj.title = intl.string(_modDef3361["bu/mLv"]);
     const intl2 = util.intl;
-    obj.description = intl2.string(_modDef3356.kxQJ7q);
+    obj.description = intl2.string(_modDef3361.kxQJ7q);
     obj.onDismiss = onDismiss;
     obj.renderImgComponent = function renderImgComponent() {
       return closure_1_8(scrollPosition(visible[11]), {});
     };
     const intl3 = util.intl;
-    obj.buttonLabel = intl3.string(_modDef3356["vN/KQ9"]);
+    obj.buttonLabel = intl3.string(_modDef3361["vN/KQ9"]);
     obj.onButtonPress = callback1;
     return obj;
   }, items2);

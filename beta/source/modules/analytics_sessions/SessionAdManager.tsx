@@ -1,18 +1,18 @@
-// Module ID: 14858
-// Function ID: 14859
+// Module ID: 14108
+// Function ID: 14109
 // Name: SessionAdManager
-// Dependencies: [502, 1074, 1982, 7736, 2036, 573, 1091, 1231, 7989, 1241, 2]
+// Dependencies: [502, 1074, 1983, 6882, 2040, 573, 1091, 1231, 7134, 1241, 2]
 
-// Module 14858 (SessionAdManager)
+// Module 14108 (SessionAdManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Timers from "Timers" /* 2036 */;
-import SessionForegroundUtils from "SessionForegroundUtils" /* 7736 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7989 */;
+import Timers from "Timers" /* 2040 */;
+import SessionForegroundUtils from "SessionForegroundUtils" /* 6882 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7134 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+import LifecycleManager from "LifecycleManager" /* 1983 */;
 
 require = fn;
 const Constants = fn(1074);

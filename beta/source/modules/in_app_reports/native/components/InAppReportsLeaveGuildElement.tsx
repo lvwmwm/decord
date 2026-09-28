@@ -1,14 +1,14 @@
-// Module ID: 13240
-// Function ID: 13241
+// Module ID: 12474
+// Function ID: 12475
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1074, 21, 9887, 4968, 13234, 1115, 5141, 5237, 10209, 2]
+// Dependencies: [32, 19, 1074, 21, 9048, 5016, 12468, 1115, 5204, 5300, 9369, 2]
 // Exports: default
 
-// Module 13240 (InAppReportsLeaveGuildElement)
+// Module 12474 (InAppReportsLeaveGuildElement)
 import util from "util" /* 1115 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import common_AlertDefault from "common/Alert" /* 5300 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

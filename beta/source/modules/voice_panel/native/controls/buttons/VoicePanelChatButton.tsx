@@ -1,21 +1,21 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 17016
+// Function ID: 17017
 // Name: VoicePanelChatButton
-// Dependencies: [19, 21, 4788, 576, 12554, 17653, 17599, 17640, 17654, 1115, 17662, 5838, 5321, 2]
+// Dependencies: [19, 21, 4836, 576, 11754, 17008, 16954, 16995, 17009, 1115, 17017, 5901, 5385, 2]
 // Exports: default
 
-// Module 17661 (VoicePanelChatButton)
+// Module 17016 (VoicePanelChatButton)
 import nativeDefault from "native" /* 576 */;
-import ChatIcon from "ChatIcon" /* 5321 */;
-import NativeViewDefault from "NativeView" /* 5838 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17640 */;
-import CircleWithCutoutDefault from "CircleWithCutout" /* 17662 */;
+import ChatIcon from "ChatIcon" /* 5385 */;
+import NativeViewDefault from "NativeView" /* 5901 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 16995 */;
+import CircleWithCutoutDefault from "CircleWithCutout" /* 17017 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" }, badge: null, notificationBadge: null };
 let size = { position: "absolute", zIndex: 1, width: 10, height: 10, borderRadius: nativeDefault.radii.round, top: 0, right: 0 };
 obj2.badge = size;

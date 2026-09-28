@@ -1,13 +1,13 @@
-// Module ID: 6492
-// Function ID: 6493
+// Module ID: 12220
+// Function ID: 12221
 // Name: LeafIllocon
-// Dependencies: [21, 5836, 6493, 2]
+// Dependencies: [21, 5899, 12221, 2]
 // Exports: LeafIllocon
 
-// Module 6492 (LeafIllocon)
+// Module 12220 (LeafIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef6493 from "module_6493" /* 6493 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef12221 from "module_12221" /* 12221 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const LeafIllocon = function LeafIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6493 };
+  const obj2 = { uri: _modDef12221 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

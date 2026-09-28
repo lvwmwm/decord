@@ -1,12 +1,12 @@
-// Module ID: 7772
-// Function ID: 7773
+// Module ID: 6918
+// Function ID: 6919
 // Name: guild_mod_dash_member_safety/DateUtils
-// Dependencies: [1115, 7773, 2]
+// Dependencies: [1115, 6919, 2]
 // Exports: formatDateRelativeTime, getJoinedAtTimestamp, getMembersTableTimestampFormatter
 
-// Module 7772 (guild_mod_dash_member_safety/DateUtils)
+// Module 6918 (guild_mod_dash_member_safety/DateUtils)
 import util from "util" /* 1115 */;
-import getTimestampStringDefault from "getTimestampString" /* 7773 */;
+import threads_getTimestampStringDefault from "threads/getTimestampString" /* 6919 */;
 import size from "module_2" /* 2 */;
 
 function getJoinedAtDateFormatter() {
@@ -36,7 +36,7 @@ export const formatDateRelativeTime = function formatDateRelativeTime(arg0, arg1
   } else if (arg1 === tmp.ACCOUNT_AGE) {
     tmp2 = getAccountAgeDateFormatter;
   }
-  return getTimestampStringDefault(arg0, tmp2, false);
+  return threads_getTimestampStringDefault(arg0, tmp2, false);
 };
 export const getJoinedAtTimestamp = function getJoinedAtTimestamp(joinedAt) {
   if (null != joinedAt) {

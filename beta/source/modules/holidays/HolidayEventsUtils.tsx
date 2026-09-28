@@ -1,10 +1,10 @@
-// Module ID: 17795
-// Function ID: 17796
+// Module ID: 17152
+// Function ID: 17153
 // Name: HolidayEventsUtils
-// Dependencies: [17791, 2]
+// Dependencies: [17148, 2]
 
-// Module 17795 (HolidayEventsUtils)
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17791 */;
+// Module 17152 (HolidayEventsUtils)
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17148 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
@@ -21,10 +21,10 @@ export default {
     let tmp6 = null;
     if (tmp5) {
       tmp6 = null;
-      if (null != tmp(17791).soundpack) {
+      if (null != tmp(17148).soundpack) {
         tmp6 = null;
-        if (null != tmp(17791).soundpackLabel) {
-          const obj2 = { soundpack: tmp(17791).soundpack, soundpackLabel: tmp(17791).soundpackLabel };
+        if (null != tmp(17148).soundpackLabel) {
+          const obj2 = { soundpack: tmp(17148).soundpack, soundpackLabel: tmp(17148).soundpackLabel };
           tmp6 = obj2;
         }
       }
@@ -40,7 +40,7 @@ export default {
     const timestamp = Date.now();
     let appSpinnerSources = null;
     if (tmp4) {
-      appSpinnerSources = tmp2(17791).appSpinnerSources;
+      appSpinnerSources = tmp2(17148).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -48,13 +48,13 @@ export default {
     const timestamp = Date.now();
     let tmp5 = null;
     if (tmp4) {
-      const getLoadingTips = tmp2(17791).getLoadingTips;
+      const getLoadingTips = tmp2(17148).getLoadingTips;
       let loadingTips;
       if (getLoadingTips != null) {
         loadingTips = getLoadingTips();
       }
       tmp5 = loadingTips;
-      const tmp2Result = tmp2(17791);
+      const tmp2Result = tmp2(17148);
     }
     return tmp5;
   },
@@ -64,8 +64,8 @@ export default {
     let soundpack = null;
     if (tmp5) {
       soundpack = null;
-      if (null != tmp(17791).soundpack) {
-        soundpack = tmp(17791).soundpack;
+      if (null != tmp(17148).soundpack) {
+        soundpack = tmp(17148).soundpack;
       }
     }
     return soundpack;

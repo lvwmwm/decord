@@ -1,18 +1,18 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 15630
+// Function ID: 15631
 // Name: useChannelScreensFromNavigation
-// Dependencies: [32, 19, 2041, 2095, 4609, 1074, 2048, 4646, 4645, 4648, 2]
+// Dependencies: [32, 19, 2045, 2099, 4655, 1074, 2052, 4693, 4692, 4695, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 16339 (useChannelScreensFromNavigation)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
-import RootNavigationRef from "RootNavigationRef" /* 4646 */;
-import useChatLayoutDefault from "useChatLayout" /* 4648 */;
+// Module 15630 (useChannelScreensFromNavigation)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
+import RootNavigationRef from "RootNavigationRef" /* 4693 */;
+import useChatLayoutDefault from "useChatLayout" /* 4695 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 
 require = fn;
 function getActiveTabsRoute(coerceTabsRouteResult) {
@@ -144,7 +144,7 @@ function resolveChannelScreens(state, isChatLockedOpen) {
   return tmp8;
 }
 const ME = fn(1074).ME;
-const isStaticChannelRoute = fn(2048).isStaticChannelRoute;
+const isStaticChannelRoute = fn(2052).isStaticChannelRoute;
 const ChannelScreenType = { DEFAULT: 0, [0]: "DEFAULT", BACKGROUND_SAVED: 1, [1]: "BACKGROUND_SAVED", FALLBACK_RENDERED: 2, [2]: "FALLBACK_RENDERED" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/useChannelScreensFromNavigation.tsx");
@@ -224,7 +224,7 @@ export default function useChannelScreensFromNavigation(arg0) {
   let items1 = [arg0, callback];
   const effect1 = noop.useEffect(() => {
     function handleStateChange(data) {
-      callback(resolveChannelScreens(data.data.state, handleStateChange(4648).getChatLayout()), data.data.state);
+      callback(resolveChannelScreens(data.data.state, handleStateChange(4695).getChatLayout()), data.data.state);
     }
     handleStateChange.addListener("state", handleStateChange);
     return () => {

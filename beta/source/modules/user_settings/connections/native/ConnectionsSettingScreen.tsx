@@ -1,26 +1,26 @@
-// Module ID: 15237
-// Function ID: 15238
+// Module ID: 14492
+// Function ID: 14493
 // Name: ConnectionsSettingScreen
-// Dependencies: [19, 21, 4755, 15238, 1980, 1484, 7271, 8139, 1115, 15239, 2]
+// Dependencies: [19, 21, 4800, 14493, 1981, 1485, 6415, 7288, 1115, 14494, 2]
 
-// Module 15237 (ConnectionsSettingScreen)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+// Module 14492 (ConnectionsSettingScreen)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function onPress() {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15238, dependencyMap.paths), "AddConnection");
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14493, dependencyMap.paths), "AddConnection");
 }
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 
 export default noop.memo(function ConnectionsSettingScreen() {
-  stackNavigation = stackNavigation(1484).useStackNavigation();
-  let obj = stackNavigation(1484);
+  stackNavigation = stackNavigation(1485).useStackNavigation();
+  let obj = stackNavigation(1485);
   const tmp = stackNavigation;
-  const params = stackNavigation(7271).useSettingNavigationRoute().params;
+  const params = stackNavigation(6415).useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (params != null) {
     selectedPlatformType = params.selectedPlatformType;
@@ -34,9 +34,9 @@ export default noop.memo(function ConnectionsSettingScreen() {
         obj.onPress = onPress;
         const intl = stackNavigation(1115).intl;
         obj.label = intl.string(stackNavigation(1115).t.OYkgVk);
-        return closure_1_4(stackNavigation(8139).HeaderTextButton, obj);
+        return closure_1_4(stackNavigation(7288).HeaderTextButton, obj);
       }
     });
   }, items);
-  return jsx(tmp(15239).UserSettingsConnections, { selectedPlatformType });
+  return jsx(tmp(14494).UserSettingsConnections, { selectedPlatformType });
 });

@@ -1,9 +1,10 @@
 // Module ID: 10406
 // Function ID: 10407
-// Dependencies: [1121]
+// Dependencies: [7833, 10407]
 
 // Module 10406
-import registerAsset from "module_1121" /* 1121 */;
+import baseRest from "baseRest" /* 7833 */;
+import baseDelay from "baseDelay" /* 10407 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b001972a2062de923c0ef45fb0f2ab23", name: "VideoIcon", type: "png" });
+export default baseRest((arg0, arg1) => baseDelay(arg0, 1, arg1));

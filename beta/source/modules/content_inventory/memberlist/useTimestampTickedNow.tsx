@@ -1,14 +1,14 @@
-// Module ID: 13328
-// Function ID: 13329
+// Module ID: 12580
+// Function ID: 12581
 // Name: useTimestampTickedNow
-// Dependencies: [32, 19, 4780, 1091, 504, 2036, 2]
+// Dependencies: [32, 19, 4825, 1091, 504, 2040, 2]
 // Exports: useTimestampTickedNow
 
-// Module 13328 (useTimestampTickedNow)
+// Module 12580 (useTimestampTickedNow)
 import DurationsDefault from "Durations" /* 1091 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 const require = globalThis.__r;
 
@@ -50,7 +50,7 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   importDefault = result;
   const items1 = [result];
   const effect = noop.useEffect(() => {
-    const interval = new closure_0(2036).Interval();
+    const interval = new closure_0(2040).Interval();
     interval.start(c1, () => {
       const timestamp = Date.now();
       const rounded = Math.floor(timestamp / c1(1091).Millis.SECOND);

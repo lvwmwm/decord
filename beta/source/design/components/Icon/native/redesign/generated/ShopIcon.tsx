@@ -1,13 +1,13 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 11620
+// Function ID: 11621
 // Name: ShopIcon
-// Dependencies: [19, 21, 576, 4488, 12421, 2]
+// Dependencies: [19, 21, 576, 4530, 11621, 2]
 // Exports: ShopIcon
 
-// Module 12420 (ShopIcon)
+// Module 11620 (ShopIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod12421 from "module_12421" /* 12421 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod11621 from "module_11621" /* 11621 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ShopIcon = function ShopIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12421, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11621, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,23 +1,23 @@
-// Module ID: 15341
-// Function ID: 15342
+// Module ID: 14598
+// Function ID: 14599
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4788, 576, 4755, 15340, 10527, 1115, 6078, 5218, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4800, 14597, 9691, 1115, 14599, 5281, 2]
 // Exports: default
 
-// Module 15341 (BountiesNuxPromoSheet)
+// Module 14598 (BountiesNuxPromoSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 6078 */;
-import PromoSheet from "PromoSheet" /* 10527 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 15340 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import PromoSheet from "PromoSheet" /* 9691 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 14597 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 14599 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 const obj2 = { illustrationContainer: { paddingTop: nativeDefault.space.PX_12 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

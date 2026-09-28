@@ -1,16 +1,16 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15048
+// Function ID: 15049
 // Name: InAppMessageSoundsSetting
-// Dependencies: [10399, 8265, 1115, 11754, 14761, 1609, 15765, 2]
+// Dependencies: [9563, 7417, 1115, 11006, 14011, 1610, 15038, 2]
 
-// Module 15775 (InAppMessageSoundsSetting)
+// Module 15048 (InAppMessageSoundsSetting)
 import util from "util" /* 1115 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14761 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15765 */;
-import InAppMessageSoundsStore from "InAppMessageSoundsStore" /* 10399 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11754 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1610 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14011 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15038 */;
+import InAppMessageSoundsStore from "InAppMessageSoundsStore" /* 9563 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 ({ setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled } = InAppMessageSoundsStore);

@@ -1,10 +1,10 @@
-// Module ID: 9969
-// Function ID: 9970
+// Module ID: 9130
+// Function ID: 9131
 // Name: AudioManagerActionCreator
 // Dependencies: [573, 2]
 // Exports: setAudioOutputDevice
 
-// Module 9969 (AudioManagerActionCreator)
+// Module 9130 (AudioManagerActionCreator)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

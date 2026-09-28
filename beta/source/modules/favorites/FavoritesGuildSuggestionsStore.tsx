@@ -1,19 +1,19 @@
-// Module ID: 16544
-// Function ID: 16545
+// Module ID: 15834
+// Function ID: 15835
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2033, 1074, 2038, 560, 10521, 7662, 2027, 2]
+// Dependencies: [32, 19, 2035, 1074, 2042, 560, 9685, 6806, 2029, 2]
 // Exports: setFavoritesGuildSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useFavoritesGuildSuggestionsVisibility, useHasFavoritesGuildSuggestions
 
-// Module 16544 (FavoritesGuildSuggestionsStore)
+// Module 15834 (FavoritesGuildSuggestionsStore)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2033 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2035 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const NOOP = fn(1074).NOOP;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 let items = [];
 const module_560 = fn(560);
 const state = module_560.create(() => ({ suggestions: items, dismiss: NOOP }));
@@ -45,7 +45,7 @@ export const useFavoritesGuildSuggestionsVisibility = function useFavoritesGuild
   }
   tmp4 = DismissibleContentShownStateStore((postConnectionOpen) => postConnectionOpen.postConnectionOpen);
   if (isFreemium) {
-    items = [tmp(2027).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
+    items = [tmp(2029).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
     let items1 = items;
   } else {
     items1 = [];

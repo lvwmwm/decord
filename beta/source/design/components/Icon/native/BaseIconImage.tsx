@@ -1,17 +1,17 @@
-// Module ID: 4488
-// Function ID: 4489
+// Module ID: 4530
+// Function ID: 4531
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 4489, 2]
+// Dependencies: [19, 17, 21, 4531, 2]
 // Exports: BaseIconImage
 
-// Module 4488 (BaseIconImage)
-import useToken from "useToken" /* 4489 */;
+// Module 4530 (BaseIconImage)
+import useToken from "useToken" /* 4531 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "y", height: "w" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "st", height: "channel" }, refresh_sm: { width: 18, height: 18 } };
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 

@@ -1,11 +1,11 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 9228
+// Function ID: 9229
 // Name: UserProfileWYSIWYGEditingExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 10068 (UserProfileWYSIWYGEditingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 9228 (UserProfileWYSIWYGEditingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-wysiwyg-user-profile-editing", kind: "user", defaultConfig: { enabled: false }, variations: null };

@@ -1,13 +1,13 @@
-// Module ID: 10656
-// Function ID: 10657
+// Module ID: 9822
+// Function ID: 9823
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: [19, 17, 1074, 21, 2036, 1115, 10657, 2]
+// Dependencies: [19, 17, 1074, 21, 2040, 1115, 9823, 2]
 // Exports: default
 
-// Module 10656 (EmojiPickerCategoriesBackspaceItem)
+// Module 9822 (EmojiPickerCategoriesBackspaceItem)
 import util from "util" /* 1115 */;
-import Timers from "Timers" /* 2036 */;
-import BackspaceIcon from "BackspaceIcon" /* 10657 */;
+import Timers from "Timers" /* 2040 */;
+import BackspaceIcon from "BackspaceIcon" /* 9823 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

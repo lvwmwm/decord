@@ -1,23 +1,23 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 15323
+// Function ID: 15324
 // Name: InappropriateConversationModal
-// Dependencies: [32, 19, 17, 1372, 11655, 21, 4788, 576, 504, 4632, 1484, 5941, 4784, 1115, 5218, 11662, 16040, 11668, 5873, 11686, 4991, 11663, 7277, 2]
+// Dependencies: [32, 19, 17, 1372, 10905, 21, 4836, 576, 504, 4678, 1485, 6004, 4832, 1115, 5281, 10912, 15324, 10918, 15325, 5936, 10938, 5039, 10913, 6421, 2]
 // Exports: default
 
-// Module 16039 (InappropriateConversationModal)
+// Module 15323 (InappropriateConversationModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useNavigation from "useNavigation" /* 1484 */;
-import UserUtilsDefault from "UserUtils" /* 4632 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import native from "native" /* 5941 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11662 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11663 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11668 */;
-import TakeActionScreenDefault from "TakeActionScreen" /* 16040 */;
+import useNavigation from "useNavigation" /* 1485 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6004 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10913 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10918 */;
+import TakeActionScreenDefault from "TakeActionScreen" /* 15324 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -31,7 +31,7 @@ function IntroScreen(arg0) {
   const name = UserUtilsDefault.getName(stateFromStores);
   closure_3 = useNavigation.useNavigation();
   const obj4 = { style: tmp.container, children: null };
-  const items1 = [closure_13(native.TrafficConeSpotIllustration, {}), , ];
+  const items1 = [closure_13(TrafficConeSpotIllustration.TrafficConeSpotIllustration, {}), , ];
   const obj5 = { style: tmp.warningText, children: null };
   const obj6 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: null };
   const intl = util.intl;
@@ -100,16 +100,16 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = closure_15();
   const obj = { style: tmp.container, children: null };
-  const items = [closure_13(trackAnalyticsEvent(5941).SafetyChatSpotIllustration, {}), , ];
+  const items = [closure_13(trackAnalyticsEvent(15325).SafetyChatSpotIllustration, {}), , ];
   const obj2 = { style: tmp.warningText, children: null };
   const obj3 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: null };
   const intl = trackAnalyticsEvent(1115).intl;
   obj3.children = intl.string(trackAnalyticsEvent(1115).t.NUMAsF);
-  const items1 = [closure_13(trackAnalyticsEvent(4784).Text, obj3), ];
+  const items1 = [closure_13(trackAnalyticsEvent(4832).Text, obj3), ];
   const obj4 = { variant: "text-md/medium", style: tmp.takeoverDescription, children: null };
   const intl2 = trackAnalyticsEvent(1115).intl;
   obj4.children = intl2.string(trackAnalyticsEvent(1115).t.uicS5l);
-  items1[1] = closure_13(trackAnalyticsEvent(4784).Text, obj4);
+  items1[1] = closure_13(trackAnalyticsEvent(4832).Text, obj4);
   obj2.children = items1;
   items[1] = closure_14(closure_7, obj2);
   const obj5 = { style: tmp.ctaContainer, children: null };
@@ -120,7 +120,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
     timestampProducer.openURL(React7);
     trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_CTL_SMS);
   };
-  const items2 = [closure_13(trackAnalyticsEvent(5218).Button, obj6), ];
+  const items2 = [closure_13(trackAnalyticsEvent(5281).Button, obj6), ];
   const obj7 = { variant: "secondary", size: "lg", text: null, grow: true, onPress: null };
   const intl4 = trackAnalyticsEvent(1115).intl;
   obj7.text = intl4.string(trackAnalyticsEvent(1115).t.ogLlvy);
@@ -128,7 +128,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
     timestampProducer.openURL(closure_2_10);
     trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_CTL_WEB);
   };
-  items2[1] = closure_13(trackAnalyticsEvent(5218).Button, obj7);
+  items2[1] = closure_13(trackAnalyticsEvent(5281).Button, obj7);
   obj5.children = items2;
   items[2] = closure_14(closure_7, obj5);
   obj.children = items;
@@ -137,11 +137,11 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
 const useState = fn(19).useState;
 get_ActivityIndicator = fn(17);
 ({ Linking: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const Constants = fn(11655);
+const Constants = fn(10905);
 ({ CRISIS_TEXT_LINE_SMS_URI: closure_9, CRISIS_TEXT_LINE_URL: c10, TAKEOVER_MODAL_KEY: closure_11, getInappropriateConversationsSafetyTips: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { display: "flex", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_32, gap: nativeDefault.space.PX_16, height: "100%" }, warningText: null, ctaContainer: null, takeoverHeader: null, takeoverDescription: null, safetyTips: null };
 let obj3 = { display: "flex", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_32, gap: nativeDefault.space.PX_16, height: "100%" };
 obj2.warningText = { marginBottom: nativeDefault.space.PX_16, display: "flex", alignItems: "center", gap: nativeDefault.space.PX_4 };
@@ -162,7 +162,7 @@ export default function InappropriateConversationModal(channelId) {
   let memo;
   [tmp2, tmp3] = senderId(memo(false), 2);
   const tmp = senderId(memo(false), 2);
-  const tmp4 = null != channelId(warningType[19]).useSafetyToolsButtonTooltipForChannel(channelId);
+  const tmp4 = null != channelId(warningType[20]).useSafetyToolsButtonTooltipForChannel(channelId);
   noop = tmp4;
   let items = [channelId, warningId, warningType, senderId, tmp4];
   memo = noop.useMemo(() => ({ channelId, senderId, warningId, warningType, isNudgeWarning }), items);
@@ -196,10 +196,10 @@ export default function InappropriateConversationModal(channelId) {
   closure_129_5 = callback;
   closure_129_6 = callback1;
   const obj3 = { title: "", fullscreen: true, headerRight: null, headerLeft: null };
-  let obj = channelId(warningType[19]);
-  obj3.headerRight = channelId(warningType[18]).getHeaderCloseButton(() => memo());
-  let obj4 = channelId(warningType[18]);
-  obj3.headerLeft = channelId(warningType[18]).getHeaderBackButton();
+  let obj = channelId(warningType[20]);
+  obj3.headerRight = channelId(warningType[19]).getHeaderCloseButton(() => memo());
+  let obj4 = channelId(warningType[19]);
+  obj3.headerLeft = channelId(warningType[19]).getHeaderBackButton();
   const obj6 = { INTRO: null, TAKE_ACTION: null, SAFETY_TIPS: null, CRISIS_TEXT_LINE: null };
   const obj7 = {};
   let merged = Object.assign(obj3);
@@ -229,5 +229,5 @@ export default function InappropriateConversationModal(channelId) {
   };
   obj6.CRISIS_TEXT_LINE = obj10;
   obj2.screens = obj6;
-  return closure_13(channelId(warningType[22]).Navigator, obj2);
+  return closure_13(channelId(warningType[23]).Navigator, obj2);
 };

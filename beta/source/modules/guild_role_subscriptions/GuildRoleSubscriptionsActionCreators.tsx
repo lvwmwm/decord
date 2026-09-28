@@ -1,12 +1,12 @@
-// Module ID: 7529
-// Function ID: 7530
+// Module ID: 6673
+// Function ID: 6674
 // Name: GuildRoleSubscriptionsActionCreators
-// Dependencies: [32, 5, 1074, 7530, 573, 5111, 7531, 1241, 4968, 4817, 1091, 2]
+// Dependencies: [32, 5, 1074, 6674, 573, 5174, 6675, 1241, 5016, 4865, 1091, 2]
 // Exports: archiveSubscriptionListing, createSubscriptionGroupListing, createSubscriptionListing, deleteSubscriptionGroupListing, deleteSubscriptionListing, fetchAllSubscriptionListingsDataForGuild, fetchMonetizationRestrictions, fetchSubscriptionListingForPlan, fetchSubscriptionsSettings, updateSubscriptionGroupListing, updateSubscriptionListing, updateSubscriptionTrial, updateSubscriptionsSettings
 
-// Module 7529 (GuildRoleSubscriptionsActionCreators)
+// Module 6673 (GuildRoleSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7530 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6674 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -168,7 +168,7 @@ let closure_9 = async function _fetchAllSubscriptionListingsDataForGuild(arg0, v
           closure_135_10 = undefined;
           c11 = 1;
           c12 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp4) {
         if (arg0 === 1) {
@@ -610,7 +610,7 @@ let closure_18 = async function _fetchGuildRoleSubscriptionGroupListing(arg0, va
           closure_131_3 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -683,7 +683,7 @@ let closure_19 = async function _createSubscriptionListing(arg0, value) {
           closure_129_5 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -776,7 +776,7 @@ let closure_20 = async function _updateSubscriptionListing(arg0, value) {
           closure_129_4 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -867,7 +867,7 @@ let closure_21 = async function _fetchMonetizationRestrictions(arg0, value) {
           let restrictions2;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp7) {

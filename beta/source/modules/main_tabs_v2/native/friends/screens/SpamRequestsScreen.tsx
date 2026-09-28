@@ -1,17 +1,17 @@
-// Module ID: 17251
-// Function ID: 17252
+// Module ID: 16599
+// Function ID: 16600
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4437, 1372, 11151, 1074, 21, 7439, 7459, 504, 17250, 9080, 1249, 8480, 11157, 2]
+// Dependencies: [19, 4479, 1372, 10320, 1074, 21, 6583, 6603, 504, 16598, 8230, 1249, 7624, 10326, 2]
 // Exports: default
 
-// Module 17251 (SpamRequestsScreen)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8480 */;
+// Module 16599 (SpamRequestsScreen)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
-const UserRowModes = fn(11151).UserRowModes;
+const UserRowModes = fn(10320).UserRowModes;
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);

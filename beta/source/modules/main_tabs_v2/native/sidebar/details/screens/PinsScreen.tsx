@@ -1,19 +1,19 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 16685
+// Function ID: 16686
 // Name: PinsScreen
-// Dependencies: [19, 17, 2041, 8154, 21, 4788, 576, 1487, 504, 12582, 17195, 2]
+// Dependencies: [19, 17, 2045, 7303, 21, 4836, 576, 1488, 504, 11782, 16543, 2]
 
-// Module 17335 (PinsScreen)
+// Module 16685 (PinsScreen)
 import nativeDefault from "native" /* 576 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 17195 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 16543 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = fn;
 const View = fn(17).View;
-const SearchTabs = fn(8154).SearchTabs;
+const SearchTabs = fn(7303).SearchTabs;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_7 = createStyles.createStyles(obj);
 const obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
@@ -21,8 +21,8 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/PinsScreen.tsx");
 
 export default noop.memo(() => {
-  channelId = channelId(1487).useRoute().params.channelId;
-  const obj = channelId(1487);
+  channelId = channelId(1488).useRoute().params.channelId;
+  const obj = channelId(1488);
   const items = [ChannelStore];
   const stateFromStores = channelId(504).useStateFromStores(items, () => {
     const channel = ChannelStore.getChannel(channelId);
@@ -33,7 +33,7 @@ export default noop.memo(() => {
     return guild_id;
   });
   const obj2 = channelId(504);
-  const channelDetailsSearchContext = channelId(12582).useChannelDetailsSearchContext(channelId, stateFromStores);
+  const channelDetailsSearchContext = channelId(11782).useChannelDetailsSearchContext(channelId, stateFromStores);
   const obj4 = { style: closure_7().container, children: jsx(messages_PinsScreenDefault, { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS }) };
   return <View style={closure_7().container}>{jsx(messages_PinsScreenDefault, { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS })}</View>;
 });

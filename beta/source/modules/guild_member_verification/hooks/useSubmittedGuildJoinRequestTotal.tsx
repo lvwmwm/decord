@@ -1,11 +1,11 @@
-// Module ID: 16557
-// Function ID: 16558
+// Module ID: 15847
+// Function ID: 15848
 // Name: useSubmittedGuildJoinRequestTotal
-// Dependencies: [5791, 504, 2]
+// Dependencies: [5854, 504, 2]
 // Exports: useSubmittedGuildJoinRequestTotal
 
-// Module 16557 (useSubmittedGuildJoinRequestTotal)
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5791 */;
+// Module 15847 (useSubmittedGuildJoinRequestTotal)
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5854 */;
 
 const require = fn;
 const size = fn(2);

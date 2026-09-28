@@ -1,22 +1,22 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 10689
+// Function ID: 10690
 // Name: AssetUtils
-// Dependencies: [5693, 1074, 11578, 11579, 11580, 11581, 11582, 7976, 11589, 11590, 5701, 1366, 1879, 2]
+// Dependencies: [5756, 1074, 10690, 10691, 10692, 10693, 10694, 7121, 10701, 10702, 5764, 1366, 1880, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 11577 (AssetUtils)
+// Module 10689 (AssetUtils)
 import URLUtilsDefault from "URLUtils" /* 1366 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1879 */;
-import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 5701 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7976 */;
-import _modDef11578 from "module_11578" /* 11578 */;
-import _modDef11579 from "module_11579" /* 11579 */;
-import _modDef11580 from "module_11580" /* 11580 */;
-import _modDef11581 from "module_11581" /* 11581 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 11582 */;
-import _modDef11589 from "module_11589" /* 11589 */;
-import _modDef11590 from "module_11590" /* 11590 */;
-import QuestConstants from "QuestConstants" /* 5693 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1880 */;
+import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 5764 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7121 */;
+import _modDef10690 from "module_10690" /* 10690 */;
+import _modDef10691 from "module_10691" /* 10691 */;
+import _modDef10692 from "module_10692" /* 10692 */;
+import _modDef10693 from "module_10693" /* 10693 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10694 */;
+import _modDef10701 from "module_10701" /* 10701 */;
+import _modDef10702 from "module_10702" /* 10702 */;
+import QuestConstants from "QuestConstants" /* 5756 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -197,7 +197,7 @@ let obj2 = { VIDEO: "video", VIDEO_LOW_RES: "videoLowRes", VIDEO_HLS: "videoHls"
 let obj3 = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIPT: "transcript" };
 let obj4 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let closure_11 = { [QuestAssetType.VIDEO_PLAYER_VIDEO]: { variant: obj2.VIDEO, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj2.VIDEO_LOW_RES, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj2.VIDEO_HLS, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_THUMBNAIL]: { variant: obj2.VIDEO, property: obj3.THUMBNAIL }, [QuestAssetType.VIDEO_PLAYER_CAPTION]: { variant: obj2.VIDEO, property: obj3.CAPTION }, [QuestAssetType.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj2.VIDEO, property: obj3.TRANSCRIPT } };
-const obj11 = { [TIER_1]: _modDef11578, [TIER_2]: _modDef11579, [TIER_3]: _modDef11580, [TIER_4]: _modDef11581 };
+const obj11 = { [TIER_1]: _modDef10690, [TIER_2]: _modDef10691, [TIER_3]: _modDef10692, [TIER_4]: _modDef10693 };
 ({ TIER_1, TIER_2, TIER_3, TIER_4 } = obj4);
 let result = size.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
 
@@ -252,10 +252,10 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
         const obj3 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
         let obj5 = obj3;
       } else if (arg3) {
-        const obj4 = { url: _modDef11589, mimetype: "video/mp4", isAnimated: true };
+        const obj4 = { url: _modDef10701, mimetype: "video/mp4", isAnimated: true };
         obj5 = obj4;
       } else {
-        obj5 = { url: _modDef11590, mimetype: "video/webm", isAnimated: true };
+        obj5 = { url: _modDef10702, mimetype: "video/webm", isAnimated: true };
       }
       return obj5;
     } else {

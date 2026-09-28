@@ -1,20 +1,20 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 16085
+// Function ID: 16086
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4788, 5941, 4784, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 16086, 4832, 1115, 2]
 // Exports: ForYouEmptyState
 
-// Module 16791 (ForYouEmptyState)
+// Module 16085 (ForYouEmptyState)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import native from "native" /* 5941 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16086 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles({ image: { marginBottom: 16 }, container: { paddingHorizontal: 48, alignItems: "center", justifyContent: "center" }, headerText: { fontSize: 18, marginTop: 16, marginBottom: 8 }, text: { textAlign: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/notification_center/native/ForYouEmptyState.tsx");
@@ -24,7 +24,7 @@ export const ForYouEmptyState = function ForYouEmptyState(height) {
   const obj = { style: null, children: null };
   const items = [tmp.container, { height: height.height }];
   obj.style = items;
-  const items1 = [React3(View, { style: tmp.image, children: React3(native.MailboxSpotIllustration, { scale: 0.75 }) }), , ];
+  const items1 = [React3(View, { style: tmp.image, children: React3(MailboxSpotIllustration.MailboxSpotIllustration, { scale: 0.75 }) }), , ];
   const obj3 = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold", style: null, children: null };
   const items2 = [, ];
   ({ text: arr3[0], headerText: arr3[1] } = tmp);

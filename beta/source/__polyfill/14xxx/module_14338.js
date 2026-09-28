@@ -1,9 +1,9 @@
 // Module ID: 14338
 // Function ID: 14339
-// Dependencies: [14330]
+// Dependencies: [1121]
 
 // Module 14338
-import _mod14330 from "module_14330" /* 14330 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1, arg2) => 0 === _mod14330(arg0, arg1, arg2);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 433, height: 231, scales: [2, 3], hash: "a255589f0ef23e06a175ac0fc6767b9f", name: "blocked_darker", type: "png" });

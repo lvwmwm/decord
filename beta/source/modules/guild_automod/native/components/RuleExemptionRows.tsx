@@ -1,21 +1,21 @@
-// Module ID: 17976
-// Function ID: 17977
+// Module ID: 17337
+// Function ID: 17338
 // Name: RuleExemptionRows
-// Dependencies: [19, 2041, 2099, 4437, 1372, 12146, 21, 1115, 504, 4941, 5936, 5854, 9872, 4755, 17977, 1980, 17928, 17979, 2]
+// Dependencies: [19, 2045, 2102, 4479, 1372, 11341, 21, 1115, 504, 4989, 5999, 5917, 9033, 4800, 17338, 1981, 17289, 17340, 2]
 // Exports: default
 
-// Module 17976 (RuleExemptionRows)
+// Module 17337 (RuleExemptionRows)
 import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const AutomodTriggerType = fn(12146).AutomodTriggerType;
+const AutomodTriggerType = fn(11341).AutomodTriggerType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const size = fn(2);
@@ -74,7 +74,7 @@ export default function RuleExemptionRows(rule) {
   obj4.label = intl3.string(rule(exemptRoles[7]).t["LPJmL/"]);
   obj4.trailing = closure_8(rule(exemptRoles[11]).TableRow.TrailingText, { text: stateFromStores });
   obj4.onPress = function onPress() {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17977, dependencyMap.paths), "AutomodExemptRoles", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17338, dependencyMap.paths), "AutomodExemptRoles", {
       guildId: rule.guildId,
       exemptRoles,
       onSave(exemptRoles) {
@@ -96,7 +96,7 @@ export default function RuleExemptionRows(rule) {
     const obj8 = { text: stateFromStores1 };
     obj6.trailing = tmp7(tmp2(tmp3[11]).TableRow.TrailingText, obj8);
     obj6.onPress = function onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17979, dependencyMap.paths), "AutomodExemptChannels", {
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17340, dependencyMap.paths), "AutomodExemptChannels", {
         guildId: rule.guildId,
         exemptChannels,
         onSave(exemptChannels) {

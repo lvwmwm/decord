@@ -1,16 +1,16 @@
-// Module ID: 17328
-// Function ID: 17329
+// Module ID: 16678
+// Function ID: 16679
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 2041, 21, 4788, 576, 8935, 5934, 1115, 2051, 5937, 17289, 7370, 4784, 5936, 5836, 17329, 17330, 504, 2]
+// Dependencies: [32, 19, 17, 2045, 21, 4836, 576, 8085, 5997, 1115, 2055, 6000, 16639, 6514, 4832, 5999, 5899, 16679, 16680, 504, 2]
 // Exports: default
 
-// Module 17328 (ChannelSettingsChangeDefaultForumLayout)
+// Module 16678 (ChannelSettingsChangeDefaultForumLayout)
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8935 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8085 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = fn;
 class ChannelSettingsChangeDefaultForumLayout {
@@ -82,7 +82,7 @@ class ChannelSettingsChangeDefaultForumLayout {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 }, description: null, thumbnailImagePortrait: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 };
 obj2.description = { paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 };

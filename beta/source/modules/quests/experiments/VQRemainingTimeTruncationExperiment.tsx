@@ -1,10 +1,10 @@
-// Module ID: 11798
-// Function ID: 11799
+// Module ID: 10737
+// Function ID: 10738
 // Name: VQRemainingTimeTruncationExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 11798 (VQRemainingTimeTruncationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 10737 (VQRemainingTimeTruncationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-vq-remaining-time-truncation", kind: "user", defaultConfig: { truncateMoreThanSeconds: null }, variations: null };

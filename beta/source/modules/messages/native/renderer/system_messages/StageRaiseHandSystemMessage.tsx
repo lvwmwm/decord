@@ -1,17 +1,17 @@
-// Module ID: 8320
-// Function ID: 8321
+// Module ID: 7473
+// Function ID: 7474
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [5667, 2041, 4427, 1074, 1115, 2108, 8250, 11, 4935, 8252, 8254, 2]
+// Dependencies: [5730, 2045, 4469, 1074, 1115, 2111, 7402, 11, 4983, 7404, 7406, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8320 (StageRaiseHandSystemMessage)
+// Module 7473 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8250 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8252 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5667 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5730 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -42,7 +42,7 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(4935).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(4983).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -63,14 +63,14 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
       const obj7 = { action: "bindDismissMessage", message };
       obj6.handleDelete = obj7;
       obj5.content = intl3.formatToParts(tmp(1115).t["qDAX++"], obj6);
-      obj5.helpArticleLink = tmp6(2108).getArticleURL(constants.EPHEMERAL_MESSAGES);
+      obj5.helpArticleLink = tmp6(2111).getArticleURL(constants.EPHEMERAL_MESSAGES);
       const intl4 = tmp(1115).intl;
       obj5.helpButtonAccessibilityLabel = intl4.string(tmp(1115).t.htHOrp);
       tmp10 = obj5;
-      const tmp6Result = tmp6(2108);
+      const tmp6Result = tmp6(2111);
     }
   }
   obj3.ephemeralIndication = tmp10;
-  const merged = Object.assign(tmp6(8254)(roleStyle));
+  const merged = Object.assign(tmp6(7406)(roleStyle));
   return obj3;
 };

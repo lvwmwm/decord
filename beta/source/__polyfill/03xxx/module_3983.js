@@ -1,46 +1,28 @@
 // Module ID: 3983
 // Function ID: 3984
-// Dependencies: [3984, 3985, 3986, 3987, 3988]
+// Dependencies: []
+// Exports: default
 
 // Module 3983
-import module_3984 from "module_3984" /* 3984 */;
-import module_3985 from "module_3985" /* 3985 */;
-import module_3986 from "module_3986" /* 3986 */;
-import date_mod from "module_3987" /* 3987 */;
-import date_mod from "module_3988" /* 3988 */;
+let closure_0 = { lessThanXSeconds: { one: "meno di un secondo", other: "meno di {{count}} secondi" }, xSeconds: { one: "un secondo", other: "{{count}} secondi" }, halfAMinute: "alcuni secondi", lessThanXMinutes: { one: "meno di un minuto", other: "meno di {{count}} minuti" }, xMinutes: { one: "un minuto", other: "{{count}} minuti" }, aboutXHours: { one: "circa un'ora", other: "circa {{count}} ore" }, xHours: { one: "un'ora", other: "{{count}} ore" }, xDays: { one: "un giorno", other: "{{count}} giorni" }, aboutXWeeks: { one: "circa una settimana", other: "circa {{count}} settimane" }, xWeeks: { one: "una settimana", other: "{{count}} settimane" }, aboutXMonths: { one: "circa un mese", other: "circa {{count}} mesi" }, xMonths: { one: "un mese", other: "{{count}} mesi" }, aboutXYears: { one: "circa un anno", other: "circa {{count}} anni" }, xYears: { one: "un anno", other: "{{count}} anni" }, overXYears: { one: "pi\u00F9 di un anno", other: "pi\u00F9 di {{count}} anni" }, almostXYears: { one: "quasi un anno", other: "quasi {{count}} anni" } };
 
-if (!module_3984) {
-  const obj = { default: module_3984 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_3984;
-}
-if (!module_3985) {
-  const obj2 = { default: module_3985 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3985;
-}
-if (!module_3986) {
-  const obj3 = { default: module_3986 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3986;
-}
-let date = date_mod;
-if (!date) {
-  const obj4 = { default: date };
-  let tmp9 = obj4;
-} else {
-  tmp9 = date;
-}
-let date = date_mod;
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
-
-export default { code: "pt-BR", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
+export default function formatDistance(arg0, arg1, addSuffix) {
+  if (typeof closure_0[arg0] === "string") {
+    let tmp5 = tmp;
+    if (null != addSuffix) {
+      tmp5 = tmp;
+      if (addSuffix.addSuffix) {
+        if (!addSuffix.comparison) {
+          let text = `${tmp} fa`;
+        }
+        text = `tra ${tmp}`;
+      }
+    }
+    return tmp5;
+  } else if (1 === arg1) {
+    let one = tmp.one;
+  } else {
+    one = tmp.other.replace("{{count}}", arg1.toString());
+  }
+};
 export default exports.default;

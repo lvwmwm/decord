@@ -1,14 +1,14 @@
-// Module ID: 15153
-// Function ID: 15154
+// Module ID: 14408
+// Function ID: 14409
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4788, 576, 8955, 7400, 15154, 15156, 15166, 12202, 15170, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8105, 6544, 14409, 14411, 14421, 11397, 14425, 2]
 // Exports: default
 
-// Module 15153 (FamilyCenterActivityPage)
+// Module 14408 (FamilyCenterActivityPage)
 import nativeDefault from "native" /* 576 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7400 */;
-import useUserLinks from "useUserLinks" /* 8955 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15154 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
+import useUserLinks from "useUserLinks" /* 8105 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14409 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { scrollView: { flex: 1 }, dataConfirmation: { marginTop: nativeDefault.space.PX_8 }, container: null };
 let obj3 = { marginTop: nativeDefault.space.PX_8 };
 obj2.container = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
@@ -32,13 +32,13 @@ export default function FamilyCenterActivityPage() {
   const items = [hasOwnProperty(FamilyCenterParentalConsentNoticeDefault, {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj4 = { children: null };
-    const items1 = [tmp3(tmp7(15156), {}), tmp3(tmp7(15166), {}), ];
-    const obj5 = { style: tmp.dataConfirmation, children: tmp3(tmp7(12202), {}) };
+    const items1 = [tmp3(tmp7(14411), {}), tmp3(tmp7(14421), {}), ];
+    const obj5 = { style: tmp.dataConfirmation, children: tmp3(tmp7(11397), {}) };
     items1[2] = tmp3(tmp6, obj5);
     obj4.children = items1;
     let tmp3Result = tmp5(timestampProducer, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(15170), {});
+    tmp3Result = tmp3(tmp7(14425), {});
   }
   const tmp4 = React4;
   items[1] = tmp3Result;

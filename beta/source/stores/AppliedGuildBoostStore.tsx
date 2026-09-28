@@ -1,9 +1,9 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 12058
+// Function ID: 12059
 // Name: AppliedGuildBoostStore
 // Dependencies: [504, 573, 2]
 
-// Module 12845 (AppliedGuildBoostStore)
+// Module 12058 (AppliedGuildBoostStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

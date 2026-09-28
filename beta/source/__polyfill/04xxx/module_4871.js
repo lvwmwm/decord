@@ -1,28 +1,28 @@
 // Module ID: 4871
 // Function ID: 4872
-// Dependencies: [660, 658, 659, 4867]
+// Dependencies: [552]
 
 // Module 4871
-import arrayPush from "arrayPush" /* 658 */;
-import stubArray from "stubArray" /* 659 */;
-import _mod660 from "module_660" /* 660 */;
-import _mod4867 from "module_4867" /* 4867 */;
+import _mod552 from "module_552" /* 552 */;
 
-if (Object.getOwnPropertySymbols) {
-  let fn = (arg0) => {
-    let tmp = arg0;
-    const items = [];
-    if (arg0) {
-      do {
-        let tmp4 = arrayPush;
-        let tmp4Result = tmp4(items, stubArray(tmp));
-        tmp = _mod4867(tmp);
-      } while (tmp);
+
+export default function toFinite(arg0) {
+  if (arg0) {
+    const tmp3 = _mod552(arg0);
+    if (tmp3 !== Infinity) {
+      if (tmp3 !== -Infinity) {
+      }
     }
-    return items;
-  };
-} else {
-  fn = _mod660;
-}
-
-export default fn;
+    let num6 = 1;
+    if (tmp3 < 0) {
+      num6 = -1;
+    }
+    const num4 = 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 * num6;
+  } else {
+    let num = 0;
+    if (0 === arg0) {
+      num = arg0;
+    }
+    return num;
+  }
+};

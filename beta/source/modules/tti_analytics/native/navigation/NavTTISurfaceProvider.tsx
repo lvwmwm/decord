@@ -1,17 +1,17 @@
-// Module ID: 17096
-// Function ID: 17097
+// Module ID: 16436
+// Function ID: 16437
 // Name: NavTTISurfaceProvider
-// Dependencies: [109, 19, 17, 4787, 21, 16884, 16878, 16885, 16873, 16881, 504, 16879, 2]
+// Dependencies: [109, 19, 17, 4835, 21, 16182, 16176, 16183, 16171, 16179, 504, 16177, 2]
 // Exports: NavTTISurfaceProvider
 
-// Module 17096 (NavTTISurfaceProvider)
-import useComponentRenderSpan from "useComponentRenderSpan" /* 16878 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16881 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16884 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16885 */;
+// Module 16436 (NavTTISurfaceProvider)
+import useComponentRenderSpan from "useComponentRenderSpan" /* 16176 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16179 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16182 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16183 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4787 */;
+import DevSettingsStore from "DevSettingsStore" /* 4835 */;
 
 require = fn;
 function NavTTISurfaceView(onLayout) {

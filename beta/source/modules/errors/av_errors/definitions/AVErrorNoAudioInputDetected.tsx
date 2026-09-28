@@ -1,14 +1,14 @@
-// Module ID: 18296
-// Function ID: 18297
+// Module ID: 17661
+// Function ID: 17662
 // Name: AVErrorNoAudioInputDetected
-// Dependencies: [2041, 1992, 4811, 1074, 9718, 18297, 2]
+// Dependencies: [2045, 1993, 4859, 1074, 8875, 17662, 2]
 
-// Module 18296 (AVErrorNoAudioInputDetected)
-import AVError from "AVError" /* 9718 */;
-import AVErrorContext from "AVErrorContext" /* 18297 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+// Module 17661 (AVErrorNoAudioInputDetected)
+import AVError from "AVError" /* 8875 */;
+import AVErrorContext from "AVErrorContext" /* 17662 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 
 require = fn;
 const Constants = fn(1074);

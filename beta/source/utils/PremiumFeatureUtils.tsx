@@ -1,11 +1,11 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 8660
+// Function ID: 8661
 // Name: PremiumFeatureUtils
-// Dependencies: [1373, 1074, 1374, 1969, 5378, 2]
+// Dependencies: [1373, 1074, 1374, 1970, 5442, 2]
 // Exports: getUserMaxFileSize
 
-// Module 9505 (PremiumFeatureUtils)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+// Module 8660 (PremiumFeatureUtils)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1373 */;
 
 require = fn;
@@ -25,7 +25,7 @@ function getUserMaxFileSize(currentUser) {
       let obj = dependencyMap;
       if (obj2.isPremium(currentUser)) {
         if (currentUser.premiumType === TIER_2.TIER_2) {
-          const nitroFileUploadLimitBytes = getNitroFileUploadLimitBytes(5378);
+          const nitroFileUploadLimitBytes = getNitroFileUploadLimitBytes(5442);
           getNitroFileUploadLimitBytes = nitroFileUploadLimitBytes.getNitroFileUploadLimitBytes;
           obj = { location: "getUserMaxFileSize" };
           let fileSize = getNitroFileUploadLimitBytes(obj);

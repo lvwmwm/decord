@@ -1,9 +1,24 @@
 // Module ID: 5540
 // Function ID: 5541
-// Dependencies: [1121]
+// Dependencies: [5526]
 
 // Module 5540
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5526 from "module_5526" /* 5526 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let c2 = 6;
+let closure_3 = ["GIF87a", "GIF89a"];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "8ba3e8ee2991f198308400197cdb28bc", name: "img_account_sync_youtube_white", type: "svg" });
+export default {
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      hasItem = closure_3.includes(_mod5526.getStringFromDataView(dataView, 0, c2));
+    }
+    return hasItem;
+  },
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
+  }
+};

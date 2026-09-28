@@ -1,18 +1,18 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 16170
+// Function ID: 16171
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9345, 8140, 1074, 9346, 1085, 21, 4788, 4524, 16873, 16874, 5235, 4722, 4648, 16875, 4498, 4525, 5171, 16876, 1485, 16340, 4654, 16344, 6929, 4641, 16339, 9594, 573, 4655, 2]
+// Dependencies: [32, 19, 17, 8499, 7289, 1074, 8500, 1085, 21, 4836, 4566, 16171, 16172, 5298, 4767, 4695, 16173, 4540, 4567, 5234, 16174, 1486, 15631, 4701, 15635, 6073, 4688, 15630, 8751, 573, 4702, 2]
 
-// Module 16872 (MainTabsChannelScreenStack)
+// Module 16170 (MainTabsChannelScreenStack)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import native from "native" /* 4498 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9594 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16339 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16876 */;
+import native from "native" /* 4540 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 8751 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 15630 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16174 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9345 */;
+import FramesStore from "FramesStore" /* 8499 */;
 
 require = fn;
 function EnabledChannelScreenNavigationTTIVisibility(children) {
@@ -90,15 +90,15 @@ function getKey(index) {
 }
 get_ActivityIndicator = fn(17);
 ({ NativeModules: hasOwnProperty, StyleSheet: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const ONYX_BORDER_WIDTH = fn(8140).ONYX_BORDER_WIDTH;
+const ONYX_BORDER_WIDTH = fn(7289).ONYX_BORDER_WIDTH;
 const Constants = fn(1074);
 ({ AnalyticsObjectTypes: closure_9, AnalyticsObjects: c10, AnalyticsSections: closure_11 } = Constants);
-const FramesConstants = fn(9346);
+const FramesConstants = fn(8500);
 ({ FrameIntent: closure_12, getChannelIdForSurface: map1 } = FramesConstants);
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_17 = createStyles.createStyles({ onyxContainerStyles: { marginTop: -ONYX_BORDER_WIDTH, marginLeft: -ONYX_BORDER_WIDTH } });
 const __initData = { code: "function MainTabsChannelScreenStackTsx1(){const{isStackVisible,highestFullyRenderedScreenIndex,index,alwaysVisible,translateX,maxWidth}=this.__closure;return isStackVisible&&highestFullyRenderedScreenIndex.get()<=index&&(alwaysVisible||translateX.get()<maxWidth);}" };
 const __initData2 = { code: "function MainTabsChannelScreenStackTsx2(visible,wasVisible){const{runOnJS,setIsVisible}=this.__closure;if(visible===wasVisible)return;runOnJS(setIsVisible)(visible);}" };
@@ -546,8 +546,8 @@ export default noop.memo(function MainTabsChannelScreenStack(screens) {
       if (tmp.channelId === ref.current) {
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         if (!isChatLockedOpen) {
-          isChatLockedOpen = tmp7(4648).getChatLayout().isChatLockedOpen;
-          const tmp7Result = tmp7(4648);
+          isChatLockedOpen = tmp7(4695).getChatLayout().isChatLockedOpen;
+          const tmp7Result = tmp7(4695);
         }
         if (!isChatLockedOpen) {
           const obj = { type: "TRY_ACK", location: null, channelId: null };

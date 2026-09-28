@@ -1,10 +1,10 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 7714
+// Function ID: 7715
 // Name: getDisplayFilename
 // Dependencies: [2]
 // Exports: default
 
-// Module 8569 (getDisplayFilename)
+// Module 7714 (getDisplayFilename)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/getDisplayFilename.tsx");

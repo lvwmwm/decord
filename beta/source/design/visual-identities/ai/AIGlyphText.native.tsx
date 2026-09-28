@@ -1,20 +1,20 @@
-// Module ID: 14436
-// Function ID: 14437
+// Module ID: 13937
+// Function ID: 13938
 // Name: AIGlyphText
-// Dependencies: [19, 17, 21, 4524, 4788, 14437, 4489, 2]
+// Dependencies: [19, 17, 21, 4566, 4836, 13938, 4531, 2]
 // Exports: AIGlyphText
 
-// Module 14436 (AIGlyphText)
-import useToken from "useToken" /* 4489 */;
-import AIGlyphFont from "AIGlyphFont" /* 14437 */;
+// Module 13937 (AIGlyphText)
+import useToken from "useToken" /* 4531 */;
+import AIGlyphFont from "AIGlyphFont" /* 13938 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 
 require = fn;
 const Text = fn(17).Text;
 const jsx = fn(21).jsx;
 let closure_4 = ReanimatedRexport.createAnimatedComponent(Text);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles((fontSize, color) => {
   const obj = { glyph: { color, fontFamily: AIGlyphFont.AI_GLYPH_FONT_FAMILY_NATIVE, fontSize, lineHeight: fontSize, textAlign: "center", includeFontPadding: false } };
   return obj;

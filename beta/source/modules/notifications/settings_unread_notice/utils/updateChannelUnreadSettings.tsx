@@ -1,31 +1,35 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 10963
+// Function ID: 10964
 // Name: updateChannelUnreadSettings
-// Dependencies: [4969, 1074, 4970, 1084, 7396, 10444, 7391, 2]
+// Dependencies: [5017, 1074, 5018, 1084, 6540, 9608, 6535, 2]
 // Exports: default
 
-// Module 11711 (updateChannelUnreadSettings)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10444 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+// Module 10963 (updateChannelUnreadSettings)
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9608 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
 require = fn;
 const AnalyticsObjects = fn(1074).AnalyticsObjects;
-const UnreadSetting = fn(4970).UnreadSetting;
+const UnreadSetting = fn(5018).UnreadSetting;
 const constants = fn(1084).ChannelNotificationSettingsFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/utils/updateChannelUnreadSettings.tsx");
 
-export default function updateChannelUnreadSettings(guild_id, id, UNREADS_ONLY_MENTIONS) {
-  const obj2 = { flags: null };
+export default function updateChannelUnreadSettings(guildId, channelId, UNREADS_ONLY_MENTIONS) {
+  const obj2 = { guildId, channelId, settings: null, label: null, location: null };
+  const obj3 = { flags: null };
   const obj = NotificationSettingsModalActionCreatorsDefault;
-  obj2.flags = notificationSettingsFlagUtils.withChannelUnreadFlags(UserGuildSettingsStore.getChannelIdFlags(guild_id, id), UNREADS_ONLY_MENTIONS);
+  obj3.flags = notificationSettingsFlagUtils.withChannelUnreadFlags(UserGuildSettingsStore.getChannelIdFlags(guildId, channelId), UNREADS_ONLY_MENTIONS);
+  obj2.settings = obj3;
   const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
   if (UNREADS_ONLY_MENTIONS === constants.UNREADS_ALL_MESSAGES) {
     let ONLY_MENTIONS = UnreadSetting.ALL_MESSAGES;
   } else {
     ONLY_MENTIONS = UnreadSetting.ONLY_MENTIONS;
   }
-  const result = obj.updateChannelOverrideSettings(guild_id, id, obj2, NotificationLabel.unreads(ONLY_MENTIONS), { object: AnalyticsObjects.NOTIFICATION_SETTING_UNREAD_NOTICE });
+  obj2.label = NotificationLabel.unreads(ONLY_MENTIONS);
+  obj2.location = { object: AnalyticsObjects.NOTIFICATION_SETTING_UNREAD_NOTICE };
+  const result = obj.updateChannelOverrideSettings(obj2);
 };

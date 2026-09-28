@@ -1,19 +1,19 @@
-// Module ID: 4969
-// Function ID: 4970
+// Module ID: 5017
+// Function ID: 5018
 // Name: UserGuildSettingsStore
-// Dependencies: [2098, 4429, 2045, 2041, 2063, 1372, 1074, 4440, 4970, 1084, 4430, 12, 1385, 573, 11, 504, 2]
+// Dependencies: [2101, 4471, 2049, 2045, 2067, 1372, 1074, 4482, 5018, 1084, 4472, 12, 1385, 573, 11, 504, 2]
 // Exports: convertChannelOverridesToMap, getGuildDefaults
 
-// Module 4969 (UserGuildSettingsStore)
+// Module 5017 (UserGuildSettingsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import MuteTimers from "MuteTimers" /* 4430 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import MuteTimers from "MuteTimers" /* 4472 */;
+import ImpersonateStore from "ImpersonateStore" /* 2101 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const MuteTimersDefault = MuteTimers;
@@ -206,12 +206,12 @@ function updateUserGuildChannelSettingsBulk(guildId, channel_overrides) {
 function handleGuildUpdate() {
   return true;
 }
-const ChannelRecord = fn(2045);
+const ChannelRecord = fn(2049);
 ({ THREAD_CHANNEL_TYPES: metroRequire, isPrivate: closure_7 } = ChannelRecord);
 const Constants = fn(1074);
 const UserNotificationSettings = Constants.UserNotificationSettings;
-const AccountNotificationFlags = fn(4440).AccountNotificationFlags;
-const UnreadSetting = fn(4970).UnreadSetting;
+const AccountNotificationFlags = fn(4482).AccountNotificationFlags;
+const UnreadSetting = fn(5018).UnreadSetting;
 const UserSettingsConstants = fn(1084);
 ({ ChannelNotificationSettingsFlags: closure_14, GuildNotificationSettingsFlags: closure_15 } = UserSettingsConstants);
 let userGuildSettings = {};

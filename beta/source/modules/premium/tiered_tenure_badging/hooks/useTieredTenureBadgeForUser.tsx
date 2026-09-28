@@ -1,21 +1,23 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 10647
+// Function ID: 10648
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7889, 504, 7902, 2]
+// Dependencies: [7035, 1372, 504, 7048, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 11481 (useTieredTenureBadgeForUser)
-import UserProfileStore from "UserProfileStore" /* 7889 */;
+// Module 10647 (useTieredTenureBadgeForUser)
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7048 */;
+import UserProfileStore from "UserProfileStore" /* 7035 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
-const require = fn;
+require = fn;
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");
+let result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");
 
 export const useTieredTenureBadgeForUser = function useTieredTenureBadgeForUser(id) {
   _require = id;
-  const items = [UserProfileStore];
+  const items = [UserProfileStore, UserStore];
   return require("initialize").useStateFromStores(items, () => {
     let userProfile = null;
     if (null != tieredTenureBadge) {
@@ -24,21 +26,39 @@ export const useTieredTenureBadgeForUser = function useTieredTenureBadgeForUser(
     if (userProfile != null) {
       const premiumSince = userProfile.premiumSince;
     }
-    let tmp4 = null;
     if (null != userProfile) {
-      tmp4 = null;
       if (null != premiumSince) {
         if (userProfile != null) {
           const badges = userProfile.badges;
           if (badges != null) {
             const item = badges.forEach((id) => {
-              tieredTenureBadge = tieredTenureBadge(dependencyMap[2]).getTieredTenureBadge(id.id);
+              tieredTenureBadge = tieredTenureBadge(dependencyMap[3]).getTieredTenureBadge(id.id);
             });
           }
         }
-        tmp4 = tieredTenureBadge;
+        if (null != tieredTenureBadge) {
+          return tieredTenureBadge;
+        } else {
+          const currentUser = UserStore.getCurrentUser();
+          id = undefined;
+          if (currentUser != null) {
+            id = currentUser.id;
+          }
+          let earnedTenureBadge = null;
+          if (tmp === id) {
+            let result;
+            if (currentUser != null) {
+              result = currentUser.hasPaidTier2Subscription();
+            }
+            earnedTenureBadge = null;
+            if (result) {
+              earnedTenureBadge = TieredTenureBadgeUtils.getEarnedTenureBadge(premiumSince);
+            }
+          }
+          return earnedTenureBadge;
+        }
       }
     }
-    return tmp4;
+    return null;
   });
 };

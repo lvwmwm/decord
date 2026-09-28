@@ -1,22 +1,22 @@
-// Module ID: 15742
-// Function ID: 15743
+// Module ID: 15015
+// Function ID: 15016
 // Name: SaveCameraUploadsToDeviceSetting
-// Dependencies: [1184, 8265, 504, 9504, 11754, 1115, 2]
+// Dependencies: [1184, 7417, 504, 8659, 11006, 1115, 2]
 
-// Module 15742 (SaveCameraUploadsToDeviceSetting)
+// Module 15015 (SaveCameraUploadsToDeviceSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9504 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8659 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 
 require = fn;
-const SettingBuilders = fn(11754);
+const SettingBuilders = fn(11006);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["99tBAC"]);
   },
-  parent: fn(8265).MobileUserSettings.CHAT,
+  parent: fn(7417).MobileUserSettings.CHAT,
   useValue: function useSaveCameraUploadsToDeviceValue() {
     const items = [UnsyncedUserSettingsStore];
     return initialize.useStateFromStores(items, () => UnsyncedUserSettingsStore.saveCameraUploadsToDevice);

@@ -1,40 +1,41 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 16466
+// Function ID: 16467
 // Name: SearchList
-// Dependencies: [19, 17, 8154, 21, 4788, 17125, 17127, 17128, 17143, 17121, 17145, 17147, 17142, 17129, 17148, 17152, 17153, 17156, 17157, 17158, 17159, 17160, 1612, 17112, 1115, 9029, 2]
+// Dependencies: [19, 17, 7303, 21, 4836, 16467, 16469, 16470, 16485, 16463, 16487, 16489, 16484, 16471, 16490, 16494, 16495, 16498, 16499, 16500, 16501, 16502, 16503, 1613, 16454, 1115, 8179, 2]
 
-// Module 17124 (SearchList)
+// Module 16466 (SearchList)
 import util from "util" /* 1115 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import _mod9029 from "module_9029" /* 9029 */;
-import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 17121 */;
-import DMRowDefault from "DMRow" /* 17125 */;
-import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 17127 */;
-import SearchHistoryRowDefault from "SearchHistoryRow" /* 17128 */;
-import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 17129 */;
-import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 17142 */;
-import MediaGridItemDefault from "MediaGridItem" /* 17143 */;
-import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 17145 */;
-import MediaGridDefault from "MediaGrid" /* 17147 */;
-import MessageRowDefault from "MessageRow" /* 17148 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 17152 */;
-import LinkGridItemDefault from "LinkGridItem" /* 17153 */;
-import FileGridItemDefault from "FileGridItem" /* 17156 */;
-import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 17157 */;
-import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 17158 */;
-import GenericTextRowDefault from "GenericTextRow" /* 17159 */;
-import SearchListSectionDefault from "SearchListSection" /* 17160 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import _mod8179 from "module_8179" /* 8179 */;
+import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 16463 */;
+import DMRowDefault from "DMRow" /* 16467 */;
+import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 16469 */;
+import SearchHistoryRowDefault from "SearchHistoryRow" /* 16470 */;
+import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 16471 */;
+import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 16484 */;
+import MediaGridItemDefault from "MediaGridItem" /* 16485 */;
+import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 16487 */;
+import MediaGridDefault from "MediaGrid" /* 16489 */;
+import MessageRowDefault from "MessageRow" /* 16490 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 16494 */;
+import LinkGridItemDefault from "LinkGridItem" /* 16495 */;
+import FileGridItemDefault from "FileGridItem" /* 16498 */;
+import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 16499 */;
+import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 16500 */;
+import GenericTextRowDefault from "GenericTextRow" /* 16501 */;
+import SearchListSectionDefault from "SearchListSection" /* 16502 */;
+import SmartSearchRowDefault from "SmartSearchRow" /* 16503 */;
 import noop from "module_19" /* 19 */;
 
-const pages_ErrorScreenDefault = tmp3(17112);
+const pages_ErrorScreenDefault = tmp3(16454);
 require = fn;
 function keyExtractor(type) {
   type = type.type;
   if (constants2.DM === type) {
-    const _HermesInternal11 = HermesInternal;
+    const _HermesInternal12 = HermesInternal;
     let key = "" + type.section + "-" + type.props.user.id + "-" + type.props.guildId;
   } else if (tmp.GUILD_CHANNEL_MEMBER === type) {
-    const _HermesInternal10 = HermesInternal;
+    const _HermesInternal11 = HermesInternal;
     key = "" + type.props.user.id + "-" + type.props.guildId;
   } else if (tmp.SEARCH_HISTORY_ITEM === type) {
     const searchHistoryItem = type.props.searchHistoryItem;
@@ -46,20 +47,20 @@ function keyExtractor(type) {
         const mapped = tags.map((text) => text.text);
         joined = mapped.join(" ");
       }
-      const _HermesInternal9 = HermesInternal;
+      const _HermesInternal10 = HermesInternal;
       let combined = "" + searchHistoryItem.text + " " + joined;
     } else {
-      if (tmp9.GROUP_DM !== type2) {
-        if (tmp9.GUILD_TEXT_CHANNEL !== type2) {
-          if (tmp9.GUILD_VOICE_CHANNEL !== type2) {
-            if (tmp9.DM === type2) {
+      if (tmp10.GROUP_DM !== type2) {
+        if (tmp10.GUILD_TEXT_CHANNEL !== type2) {
+          if (tmp10.GUILD_VOICE_CHANNEL !== type2) {
+            if (tmp10.DM === type2) {
               const _HermesInternal13 = HermesInternal;
               combined = "" + searchHistoryItem.userId;
             }
           }
         }
       }
-      const _HermesInternal8 = HermesInternal;
+      const _HermesInternal9 = HermesInternal;
       combined = "" + searchHistoryItem.channelId;
     }
     key = combined;
@@ -68,7 +69,7 @@ function keyExtractor(type) {
     const mapped1 = media.map((messageId) => "" + messageId.messageId + "-" + messageId.mediaIndex);
     key = mapped1.join("-");
   } else if (tmp.MEDIA === type) {
-    const _HermesInternal7 = HermesInternal;
+    const _HermesInternal8 = HermesInternal;
     key = "" + type.props.media.messageId + "-" + type.props.media.mediaIndex;
   } else {
     if (tmp.MEDIA_PLACEHOLDER !== type) {
@@ -76,30 +77,32 @@ function keyExtractor(type) {
         if (tmp.MESSAGE_PLACEHOLDER !== type) {
           if (tmp.GUILD_CHANNEL_MEMBER_PLACEHOLDER !== type) {
             if (tmp.GROUP_DM === type) {
-              const _HermesInternal6 = HermesInternal;
+              const _HermesInternal7 = HermesInternal;
               key = "" + type.section + "-" + type.props.channel.id;
             } else {
               if (tmp.GUILD_TEXT_CHANNEL !== type) {
                 if (tmp.GUILD_VOICE_CHANNEL !== type) {
                   if (tmp.MESSAGE === type) {
-                    const _HermesInternal4 = HermesInternal;
+                    const _HermesInternal5 = HermesInternal;
                     key = "" + type.props.message.id;
                   } else if (tmp.LINK === type) {
-                    const _HermesInternal3 = HermesInternal;
+                    const _HermesInternal4 = HermesInternal;
                     key = "" + type.props.data.messageId + "-" + type.props.data.linkIndex;
                   } else if (tmp.FILE === type) {
-                    const _HermesInternal2 = HermesInternal;
+                    const _HermesInternal3 = HermesInternal;
                     key = "" + type.props.data.messageId + "-" + type.props.data.fileIndex;
                   } else if (tmp.GENERIC === type) {
-                    const _HermesInternal = HermesInternal;
+                    const _HermesInternal2 = HermesInternal;
                     key = "" + type.props.text;
                   } else if (tmp.SECTION === type) {
-                    const _HermesInternal12 = HermesInternal;
+                    const _HermesInternal = HermesInternal;
                     key = "" + type.props.title;
+                  } else if (tmp.INTELLIGENCE_SMART_SEARCH === type) {
+                    key = type.props.requestKey;
                   }
                 }
               }
-              const _HermesInternal5 = HermesInternal;
+              const _HermesInternal6 = HermesInternal;
               key = "" + type.props.channel.id;
             }
           }
@@ -177,20 +180,24 @@ function renderItem(item) {
     const merged13 = Object.assign(item.props);
     return React6(GenericTextRowDefault, obj15);
   } else if (tmp.SECTION === type) {
-    const obj = {};
+    const obj16 = {};
     const merged14 = Object.assign(item.props);
-    return React6(SearchListSectionDefault, obj);
+    return React6(SearchListSectionDefault, obj16);
+  } else if (tmp.INTELLIGENCE_SMART_SEARCH === type) {
+    const obj = {};
+    const merged15 = Object.assign(item.props);
+    return React6(SmartSearchRowDefault, obj);
   } else {
     return null;
   }
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet: hasOwnProperty } = get_ActivityIndicator);
-const SearchConstants = fn(8154);
+const SearchConstants = fn(7303);
 ({ SearchHistoryItemTypes: metroRequire, SearchListItemTypes: closure_7 } = SearchConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles({ container: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/SearchList.tsx");
@@ -244,7 +251,7 @@ export default noop.memo(function SearchList(arg0) {
   obj4.ListFooterComponent = ListFooterComponent;
   obj4.ItemSeparatorComponent = ItemSeparatorComponent;
   obj4.numColumns = numColumns;
-  items[1] = tmp13(_mod9029.AnimatedFlashList, obj4);
+  items[1] = tmp13(_mod8179.AnimatedFlashList, obj4);
   obj.children = items;
   return tmp6(React4, obj);
 });

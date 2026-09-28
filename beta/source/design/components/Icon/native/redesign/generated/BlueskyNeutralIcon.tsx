@@ -1,13 +1,13 @@
-// Module ID: 9204
-// Function ID: 9205
+// Module ID: 8358
+// Function ID: 8359
 // Name: BlueskyNeutralIcon
-// Dependencies: [19, 21, 576, 4488, 9205, 2]
+// Dependencies: [19, 21, 576, 4530, 8359, 2]
 // Exports: BlueskyNeutralIcon
 
-// Module 9204 (BlueskyNeutralIcon)
+// Module 8358 (BlueskyNeutralIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod9205 from "module_9205" /* 9205 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod8359 from "module_8359" /* 8359 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BlueskyNeutralIcon = function BlueskyNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9205, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8359, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

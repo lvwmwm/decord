@@ -1,10 +1,10 @@
-// Module ID: 8284
-// Function ID: 8285
+// Module ID: 7436
+// Function ID: 7437
 // Name: GuildProductSystemMessageUtils
 // Dependencies: [1074, 1115, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 8284 (GuildProductSystemMessageUtils)
+// Module 7436 (GuildProductSystemMessageUtils)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;

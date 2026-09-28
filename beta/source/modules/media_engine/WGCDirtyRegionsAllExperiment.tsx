@@ -1,10 +1,10 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 13550
+// Function ID: 13551
 // Name: WGCDirtyRegionsAllExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 14307 (WGCDirtyRegionsAllExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13550 (WGCDirtyRegionsAllExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-02-wgc-dirty-regions-all", kind: "user", defaultConfig: { enabled: false }, variations: null };

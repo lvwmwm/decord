@@ -2,7 +2,7 @@
 // Function ID: 1390
 // Name: DisplayNameStylesUtils
 // Dependencies: [32, 1390, 1391, 672, 1092, 1392, 2]
-// Exports: applyFlywheelViewingFallback, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, parseServerDisplayNameStyles, rebuildGummySourceColor, wrapHue
+// Exports: applyFlywheelViewingFallback, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, parseServerDisplayNameStyles, rebuildGummySourceColor, resolveSolidColor, resolveSolidPresetSeed, wrapHue
 
 // Module 1389 (DisplayNameStylesUtils)
 import _modDef672 from "module_672" /* 672 */;
@@ -22,6 +22,28 @@ const items1 = [{ hueShift: -18, saturation: 0.54, lightness: 0.72 }, { hueShift
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesUtils.tsx");
 
+export const isSolidPresetColor = function isSolidPresetColor(arg0, arg1) {
+  closure_0 = arg0;
+  return React6(arg1).some((item) => item[0] === closure_0);
+};
+export const resolveSolidColor = function resolveSolidColor(arg0, arg1, arg2) {
+  let tmp = arg1;
+  if (arg0 === arg1) {
+    tmp = arg0;
+  } else {
+    closure_0 = arg0;
+    const obj = React6(arg2);
+  }
+  return tmp;
+};
+export const resolveSolidPresetSeed = function resolveSolidPresetSeed(selectedColor, selectedEffectId) {
+  let first = selectedColor;
+  closure_0 = selectedColor;
+  if (!obj.some((item) => item[0] === closure_0)) {
+    first = React6(selectedEffectId)[0][0];
+  }
+  return first;
+};
 export const getEffectColorCount = function getEffectColorCount(effectId) {
   if (DisplayNameEffect.DisplayNameEffect.GRADIENT === effectId) {
     return 2;

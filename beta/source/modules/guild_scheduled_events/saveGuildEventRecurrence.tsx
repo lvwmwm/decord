@@ -1,13 +1,13 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 8980
+// Function ID: 8981
 // Name: saveGuildEventRecurrence
-// Dependencies: [9785, 9820, 11, 2]
+// Dependencies: [8946, 8981, 11, 2]
 // Exports: default
 
-// Module 9819 (saveGuildEventRecurrence)
+// Module 8980 (saveGuildEventRecurrence)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ScheduleUtils from "ScheduleUtils" /* 9785 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9820 */;
+import ScheduleUtils from "ScheduleUtils" /* 8946 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8981 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
@@ -24,7 +24,7 @@ export default function saveGuildEventRecurrence(guild_id, nextRecurrenceIdInEve
     endDate = startDate.endDate;
   }
   if (null != event_exception_id) {
-    const result = tmp(9785).areSchedulesIdentical(startDate, baseScheduleForRecurrence);
+    const result = tmp(8946).areSchedulesIdentical(startDate, baseScheduleForRecurrence);
     const obj5 = GuildScheduledEventsActionCreatorsDefault;
     if (result) {
       let result1 = obj5.deleteGuildEventException(guild_id.guild_id, guild_id.id, event_exception_id.event_exception_id);

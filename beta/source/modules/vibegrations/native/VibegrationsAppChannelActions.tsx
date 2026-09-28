@@ -1,21 +1,21 @@
-// Module ID: 13586
-// Function ID: 13587
+// Module ID: 12826
+// Function ID: 12827
 // Name: VibegrationsAppChannelActions
-// Dependencies: [19, 17, 13587, 21, 4788, 504, 13588, 13589, 1115, 3710, 13590, 10476, 13216, 5306, 5310, 5321, 13591, 2]
+// Dependencies: [19, 17, 12827, 21, 4836, 504, 12828, 12829, 1115, 3715, 12830, 9640, 12450, 5370, 5374, 5385, 12831, 2]
 // Exports: default
 
-// Module 13586 (VibegrationsAppChannelActions)
-import VibegrationsUtils from "VibegrationsUtils" /* 5306 */;
-import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 13216 */;
-import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 13591 */;
+// Module 12826 (VibegrationsAppChannelActions)
+import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
+import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 12450 */;
+import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 12831 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 13587 */;
+import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 12827 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_7 = createStyles.createStyles({ actionWrapper: { flexShrink: 0, flexDirection: "row", alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsAppChannelActions.tsx");
@@ -27,14 +27,14 @@ export default function VibegrationsAppChannelActions(channel) {
   const items1 = [channel.id];
   const stateFromStores = channel(504).useStateFromStores(items, () => VibegrationsAppChannelsStore.isChatOpen(channel.id), items1);
   const obj = channel(504);
-  ({ mentionCount, badge } = stateFromStores(13588)(channel.id));
-  stateFromStores(13589)(channel, stateFromStores);
+  ({ mentionCount, badge } = stateFromStores(12828)(channel.id));
+  stateFromStores(12829)(channel, stateFromStores);
   let tmp8 = null;
   if (!stateFromStores) {
     tmp8 = badge;
   }
   const intl = tmp2(1115).intl;
-  const tmp5Result = stateFromStores(3710);
+  const tmp5Result = stateFromStores(3715);
   const items2 = [intl.string(stateFromStores ? tmp5Result.jLMpUv : tmp5Result.aWVf4j)];
   if ("mention" === tmp8) {
     const intl2 = tmp2(1115).intl;
@@ -49,7 +49,7 @@ export default function VibegrationsAppChannelActions(channel) {
   if (!stateFromStores) {
     const obj4 = {
       source: null,
-      IconComponent: tmp2(10476).RetryIcon,
+      IconComponent: tmp2(9640).RetryIcon,
       onPress() {
           const tmp = restartVibegrationsAppFramesDefault;
           return tmp(VibegrationsUtils.vibegrationsAppIdFromTopic(channel.topic));
@@ -57,19 +57,19 @@ export default function VibegrationsAppChannelActions(channel) {
       accessibilityLabel: null
     };
     const intl3 = tmp2(1115).intl;
-    obj4.accessibilityLabel = intl3.string(tmp5(3710).xKexN1);
-    tmp14 = closure_5(tmp5(13590), obj4);
-    const tmp5Result3 = tmp5(13590);
+    obj4.accessibilityLabel = intl3.string(tmp5(3715).xKexN1);
+    tmp14 = closure_5(tmp5(12830), obj4);
+    const tmp5Result3 = tmp5(12830);
   }
   const items3 = [tmp14, ];
   const tmp12 = closure_6;
   const tmp13 = View;
   const tmp17 = closure_5;
-  const tmp6 = stateFromStores(13588)(channel.id);
+  const tmp6 = stateFromStores(12828)(channel.id);
   if (stateFromStores) {
-    let ChatIcon = tmp2(5310).AppsIcon;
+    let ChatIcon = tmp2(5374).AppsIcon;
   } else {
-    ChatIcon = tmp2(5321).ChatIcon;
+    ChatIcon = tmp2(5385).ChatIcon;
   }
   const obj5 = {
     noMargin: true,
@@ -89,7 +89,7 @@ export default function VibegrationsAppChannelActions(channel) {
     StringResult = String(mentionCount);
   }
   obj5.buttonText = StringResult;
-  items3[1] = tmp17(stateFromStores(13590), obj5);
+  items3[1] = tmp17(stateFromStores(12830), obj5);
   obj3.children = items3;
   return tmp12(tmp13, obj3);
 };

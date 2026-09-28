@@ -1,13 +1,13 @@
-// Module ID: 14062
-// Function ID: 14063
+// Module ID: 13308
+// Function ID: 13309
 // Name: getTinyBroncoWarningDescriptions
-// Dependencies: [10071, 1115, 10075, 3066, 2]
+// Dependencies: [9231, 1115, 9235, 3071, 2]
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
-// Module 14062 (getTinyBroncoWarningDescriptions)
+// Module 13308 (getTinyBroncoWarningDescriptions)
 import util from "util" /* 1115 */;
-import _modDef3066 from "module_3066" /* 3066 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 10071 */;
+import _modDef3071 from "module_3071" /* 3071 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 9231 */;
 import size from "module_2" /* 2 */;
 
 ({ TINY_BRONCO_CHANNEL_LOCATION: c3, TINY_BRONCO_SERVER_LOCATION: closure_4 } = TinyBroncoConstants);
@@ -39,13 +39,13 @@ export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDes
       obj2.unverified = stringResult;
     } else {
       const obj3 = { guildName };
-      obj2.adult = intl.formatToPlainString(_modDef3066.iK0n30, obj3);
+      obj2.adult = intl.formatToPlainString(_modDef3071.iK0n30, obj3);
       const intl2 = tmp2(1115).intl;
       const obj4 = { guildName };
-      obj2.teen = intl2.formatToPlainString(_modDef3066.ezJA0R, obj4);
+      obj2.teen = intl2.formatToPlainString(_modDef3071.ezJA0R, obj4);
       const intl3 = tmp2(1115).intl;
       const obj5 = { guildName };
-      obj2.unverified = intl3.formatToPlainString(_modDef3066.h4HbnI, obj5);
+      obj2.unverified = intl3.formatToPlainString(_modDef3071.h4HbnI, obj5);
     }
   }
 };

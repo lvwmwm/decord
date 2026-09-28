@@ -1,33 +1,33 @@
-// Module ID: 10964
-// Function ID: 10965
+// Module ID: 10131
+// Function ID: 10132
 // Name: premium_marketing_component_properties
-// Dependencies: [32, 1187, 10965, 10969, 10970, 10971, 10972, 10973, 10975, 10977, 10978, 10979, 10980, 10981, 10982, 10983, 10984, 10985, 10986, 10987, 10988, 10989, 10990, 10991, 10992, 2]
+// Dependencies: [32, 1187, 10132, 10136, 10137, 10138, 10139, 10140, 10142, 10144, 10145, 10146, 10147, 10148, 10149, 10150, 10151, 10152, 10153, 10154, 10155, 10156, 10157, 10158, 10159, 2]
 
-// Module 10964 (premium_marketing_component_properties)
+// Module 10131 (premium_marketing_component_properties)
 import _mod1187 from "module_1187" /* 1187 */;
-import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 10965 */;
-import premium_tab from "premium_tab" /* 10969 */;
-import marketing_page_banner from "marketing_page_banner" /* 10970 */;
-import payment_modal_banner from "payment_modal_banner" /* 10971 */;
-import mobile_bottom_sheet from "mobile_bottom_sheet" /* 10972 */;
-import gift_icon from "gift_icon" /* 10973 */;
-import gift_icon_coachmark from "gift_icon_coachmark" /* 10975 */;
-import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 10977 */;
-import gift_customization_banner from "gift_customization_banner" /* 10978 */;
-import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 10979 */;
-import gift_reminder_nagbar from "gift_reminder_nagbar" /* 10980 */;
-import gift_reminder_coachmark from "gift_reminder_coachmark" /* 10981 */;
-import premium_tab_tooltip from "premium_tab_tooltip" /* 10982 */;
-import premium_tab_popover from "premium_tab_popover" /* 10983 */;
-import nagbar from "nagbar" /* 10984 */;
-import plan_select_card_banner from "plan_select_card_banner" /* 10985 */;
-import billing_settings_banner from "billing_settings_banner" /* 10986 */;
-import shop_nagbar from "shop_nagbar" /* 10987 */;
-import admin_editor_test_component from "admin_editor_test_component" /* 10988 */;
-import guild_header_coachmark from "guild_header_coachmark" /* 10989 */;
-import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 10990 */;
-import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 10991 */;
-import guild_boost_tab_banner from "guild_boost_tab_banner" /* 10992 */;
+import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 10132 */;
+import premium_tab from "premium_tab" /* 10136 */;
+import marketing_page_banner from "marketing_page_banner" /* 10137 */;
+import payment_modal_banner from "payment_modal_banner" /* 10138 */;
+import mobile_bottom_sheet from "mobile_bottom_sheet" /* 10139 */;
+import gift_icon from "gift_icon" /* 10140 */;
+import gift_icon_coachmark from "gift_icon_coachmark" /* 10142 */;
+import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 10144 */;
+import gift_customization_banner from "gift_customization_banner" /* 10145 */;
+import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 10146 */;
+import gift_reminder_nagbar from "gift_reminder_nagbar" /* 10147 */;
+import gift_reminder_coachmark from "gift_reminder_coachmark" /* 10148 */;
+import premium_tab_tooltip from "premium_tab_tooltip" /* 10149 */;
+import premium_tab_popover from "premium_tab_popover" /* 10150 */;
+import nagbar from "nagbar" /* 10151 */;
+import plan_select_card_banner from "plan_select_card_banner" /* 10152 */;
+import billing_settings_banner from "billing_settings_banner" /* 10153 */;
+import shop_nagbar from "shop_nagbar" /* 10154 */;
+import admin_editor_test_component from "admin_editor_test_component" /* 10155 */;
+import guild_header_coachmark from "guild_header_coachmark" /* 10156 */;
+import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 10157 */;
+import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 10158 */;
+import guild_boost_tab_banner from "guild_boost_tab_banner" /* 10159 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

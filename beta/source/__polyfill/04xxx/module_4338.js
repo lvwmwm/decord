@@ -1,12 +1,52 @@
 // Module ID: 4338
 // Function ID: 4339
-// Dependencies: []
+// Dependencies: [3922, 3918, 4190, 3919]
 // Exports: default
 
 // Module 4338
-let closure_0 = { lastWeek: "'\u4E0A\u500B'eeee p", yesterday: "'\u6628\u5929' p", today: "'\u4ECA\u5929' p", tomorrow: "'\u660E\u5929' p", nextWeek: "'\u4E0B\u500B'eeee p", other: "P" };
+import module_3922_mod from "module_3922" /* 3922 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import module_4190_mod from "module_4190" /* 4190 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
+let module_3922 = module_3922_mod;
+if (!module_3922) {
+  const obj = { default: module_3922 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_3922;
+}
+module_3922 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
+}
+_typeof = tmp5;
+let module_4190 = module_4190_mod;
+if (!module_4190) {
+  const obj3 = { default: module_4190 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_4190;
+}
+module_4190 = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
+
+export default function setISOWeek(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const diff = module_4190.default(defaultResult1) - module_3922.default(arg1);
+  defaultResult1.setDate(defaultResult1.getDate() - 7 * diff);
+  return defaultResult1;
 };
 export default exports.default;

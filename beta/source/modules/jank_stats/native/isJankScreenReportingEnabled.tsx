@@ -1,12 +1,12 @@
-// Module ID: 16345
-// Function ID: 16346
+// Module ID: 15636
+// Function ID: 15637
 // Name: isJankScreenReportingEnabled
-// Dependencies: [1364, 2067, 2]
+// Dependencies: [1364, 2071, 2]
 // Exports: isJankScreenReportingEnabled
 
-// Module 16345 (isJankScreenReportingEnabled)
+// Module 15636 (isJankScreenReportingEnabled)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2067 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/jank_stats/native/isJankScreenReportingEnabled.tsx");

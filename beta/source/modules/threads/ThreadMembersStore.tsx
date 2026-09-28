@@ -1,14 +1,14 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 7189
+// Function ID: 7190
 // Name: ThreadMembersStore
-// Dependencies: [2045, 2041, 12, 504, 573, 2]
+// Dependencies: [2049, 2045, 12, 504, 573, 2]
 
-// Module 8044 (ThreadMembersStore)
+// Module 7189 (ThreadMembersStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 import size from "module_2" /* 2 */;
 
 function updateFromGuild(threads) {

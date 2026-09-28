@@ -1,13 +1,13 @@
-// Module ID: 6276
-// Function ID: 6277
+// Module ID: 16357
+// Function ID: 16358
 // Name: FrogIllocon
-// Dependencies: [21, 5836, 6277, 2]
+// Dependencies: [21, 5899, 16358, 2]
 // Exports: FrogIllocon
 
-// Module 6276 (FrogIllocon)
+// Module 16357 (FrogIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef6277 from "module_6277" /* 6277 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef16358 from "module_16358" /* 16358 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const FrogIllocon = function FrogIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6277 };
+  const obj2 = { uri: _modDef16358 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

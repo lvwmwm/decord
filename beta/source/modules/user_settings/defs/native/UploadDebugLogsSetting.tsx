@@ -1,12 +1,12 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 15089
+// Function ID: 15090
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1074, 21, 560, 1248, 1364, 10484, 4486, 4742, 1115, 11754, 2]
+// Dependencies: [5, 17, 1074, 21, 560, 1248, 1364, 9648, 4528, 4787, 1115, 11006, 2]
 
-// Module 15816 (UploadDebugLogsSetting)
+// Module 15089 (UploadDebugLogsSetting)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import DebugUploadManager from "DebugUploadManager" /* 10484 */;
+import DebugUploadManager from "DebugUploadManager" /* 9648 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -112,14 +112,14 @@ const DebugLogCategory = fn(1074).DebugLogCategory;
 const jsx = fn(21).jsx;
 const module_560 = fn(560);
 let closure_7 = module_560.create(() => ({ isDisabled: false, isUploading: false }));
-const SettingBuilders = fn(11754);
+const SettingBuilders = fn(11006);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.aY1OH2);
   },
   parent: null,
-  IconComponent: fn(4742).CircleInformationIcon,
+  IconComponent: fn(4787).CircleInformationIcon,
   onPress: function handleUploadDebugLogSettingPress() {
     const self = this;
     const apply = closure_8.apply;

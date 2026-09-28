@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 120, height: 96, scales: [2], hash: "e8874e4fc596af26bfde9d20b7f75908", name: "search_empty_state_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 24, height: 24, scales: [2, 3], hash: "54ed58b5b2d02aabe1b1b19fc7b3ba09", name: "lock", type: "png" });

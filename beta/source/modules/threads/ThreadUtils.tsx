@@ -1,21 +1,21 @@
-// Module ID: 8055
-// Function ID: 8056
+// Module ID: 7200
+// Function ID: 7201
 // Name: ThreadUtils
-// Dependencies: [109, 4803, 4969, 4429, 1114, 1074, 1115, 7773, 4968, 1241, 8048, 7391, 1385, 504, 11, 4380, 2]
+// Dependencies: [109, 4851, 5017, 4471, 1114, 1074, 1115, 6919, 5016, 1241, 7193, 6535, 1385, 504, 11, 4421, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 8055 (ThreadUtils)
+// Module 7200 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef4380 from "module_4380" /* 4380 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
-import getTimestampStringDefault from "getTimestampString" /* 7773 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8048 */;
+import _modDef4421 from "module_4421" /* 4421 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+import threads_getTimestampStringDefault from "threads/getTimestampString" /* 6919 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7193 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 4803 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
+import ReadStateStore from "ReadStateStore" /* 4851 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
 
 const require = globalThis.__r;
 
@@ -33,9 +33,9 @@ const Constants = fn(1074);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/threads/ThreadUtils.tsx");
 
-export const getTimestampString = getTimestampStringDefault;
+export const getTimestampString = threads_getTimestampStringDefault;
 export const getTimestampAccessibilityLabel = function getTimestampAccessibilityLabel(extractTimestampResult) {
-  return getTimestampStringDefault(extractTimestampResult, getAccessibilityLabelFormatter);
+  return threads_getTimestampStringDefault(extractTimestampResult, getAccessibilityLabelFormatter);
 };
 export const trackThreadBrowserTab = function trackThreadBrowserTab() {
   AppAnalyticsUtils.trackWithMetadata(constants.THREAD_BROWSER_TAB_CHANGED);
@@ -55,7 +55,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
   if (null != result) {
     const guildId = getGuildId.getGuildId();
     const parent_id = getGuildId.parent_id;
-    const currentChannelSettings = tmp(7391).getCurrentChannelSettings(guildId, parent_id);
+    const currentChannelSettings = tmp(6535).getCurrentChannelSettings(guildId, parent_id);
     let num = JoinedThreadsStore.flags(getGuildId.id);
     if (num == null) {
       num = 0;
@@ -82,8 +82,8 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     let notificationAnalyticsString = getNotificationAnalyticsString(num);
     const isMutedResult = JoinedThreadsStore.isMuted(getGuildId.id);
-    let tmpResult = tmp(7391);
-    let result1 = tmp(7391).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
+    let tmpResult = tmp(6535);
+    let result1 = tmp(6535).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
     ({ can_send_message, parent_channel_type } = result);
     const obj2 = {};
     const merged = Object.assign(_objectWithoutProperties(result, closure_3));
@@ -107,11 +107,11 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     obj2.new_thread_is_muted = muted;
     obj2.old_thread_muted_until = result1;
     if (null != flags.mute_config) {
-      result1 = tmp(7391).muteConfigToTimestamp(flags.mute_config);
-      const tmpResult4 = tmp(7391);
+      result1 = tmp(6535).muteConfigToTimestamp(flags.mute_config);
+      const tmpResult4 = tmp(6535);
     }
     obj2.new_thread_muted_until = result1;
-    const tmpResult3 = tmp(7391);
+    const tmpResult3 = tmp(6535);
     AnalyticsUtilsDefault.track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj2);
   }
 };
@@ -130,8 +130,8 @@ export const useLastMessageTimestamp = function useLastMessageTimestamp(thread) 
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    valueOfResult = _modDef4380(createTimestamp).valueOf();
-    const obj3 = _modDef4380(createTimestamp);
+    valueOfResult = _modDef4421(createTimestamp).valueOf();
+    const obj3 = _modDef4421(createTimestamp);
   }
   if (extractTimestampResult == null) {
     extractTimestampResult = valueOfResult;

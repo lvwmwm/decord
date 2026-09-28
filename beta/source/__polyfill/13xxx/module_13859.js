@@ -1,9 +1,36 @@
 // Module ID: 13859
 // Function ID: 13860
-// Dependencies: [1121]
+// Dependencies: [17, 13860]
 
 // Module 13859
-import registerAsset from "module_1121" /* 1121 */;
+import _mod17 from "module_17" /* 17 */;
+import replaceByteInByteSequence from "replaceByteInByteSequence" /* 13860 */;
 
+let closure_0 = null;
+const BlobModule = _mod17.NativeModules.BlobModule;
+let tmp2 = BlobModule;
+if (BlobModule) {
+  tmp2 = typeof BlobModule.BLOB_URI_SCHEME === "string";
+}
+if (tmp2) {
+  closure_0 = `${BlobModule.BLOB_URI_SCHEME}:`;
+  if (typeof BlobModule.BLOB_URI_HOST === "string") {
+    let _HermesInternal = HermesInternal;
+    closure_0 = `${BlobModule.BLOB_URI_SCHEME}:` + "//" + BlobModule.BLOB_URI_HOST + "/";
+  }
+}
+replaceByteInByteSequence.URL.createObjectURL = function createObjectURL(data) {
+  if (null === closure_0) {
+    const _Error = Error;
+    const error = new Error("Cannot create URL for blob!");
+    throw error;
+  } else {
+    const _HermesInternal = HermesInternal;
+    return "" + tmp + data.data.blobId + "?offset=" + data.data.offset + "&size=" + data.size;
+  }
+};
+replaceByteInByteSequence.URL.revokeObjectURL = function revokeObjectURL(arg0) {
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 158, height: 32, scales: [1, 2, 3], hash: "18951c7ea15f41ff544471dfa4f446f0", name: "img_logo_premium_tier_0_full", type: "png" });
+};
+
+export const URL = replaceByteInByteSequence.URL;

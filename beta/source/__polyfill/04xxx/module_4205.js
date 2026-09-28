@@ -1,12 +1,11 @@
 // Module ID: 4205
 // Function ID: 4206
-// Dependencies: [3877, 3878, 3881]
+// Dependencies: [3918, 3919]
 // Exports: default
 
 // Module 4205
-import _typeof_mod from "module_3877" /* 3877 */;
-import requiredArgs_mod from "requiredArgs" /* 3878 */;
-import module_3881_mod from "module_3881" /* 3881 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,30 +23,9 @@ if (!requiredArgs) {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
-let module_3881 = module_3881_mod;
-if (!module_3881) {
-  const obj3 = { default: module_3881 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3881;
-}
-module_3881 = tmp7;
 
-export default function setUTCISODay(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = module_3881.default(arg1);
-  let diff = defaultResult1;
-  if (defaultResult1 % 7 === 0) {
-    diff = defaultResult1 - 7;
-  }
-  const defaultResult2 = _typeof.default(arg0);
-  let num = 0;
-  const uTCDay = defaultResult2.getUTCDay();
-  if ((diff % 7 + 7) % 7 < 1) {
-    num = 7;
-  }
-  const diff1 = num + diff - uTCDay;
-  defaultResult2.setUTCDate(defaultResult2.getUTCDate() + diff1);
-  return defaultResult2;
+export default function getYear(arg0) {
+  requiredArgs.default(1, arguments);
+  return _typeof.default(arg0).getFullYear();
 };
 export default exports.default;

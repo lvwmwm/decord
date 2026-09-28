@@ -1,21 +1,21 @@
-// Module ID: 13601
-// Function ID: 13602
+// Module ID: 12841
+// Function ID: 12842
 // Name: GuildRoleSubscriptionsChannelHeader
-// Dependencies: [19, 17, 21, 4788, 576, 1177, 13061, 4784, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1177, 12295, 4832, 1115, 2]
 
-// Module 13601 (GuildRoleSubscriptionsChannelHeader)
+// Module 12841 (GuildRoleSubscriptionsChannelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import _modDef13061 from "module_13061" /* 13061 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import _modDef12295 from "module_12295" /* 12295 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { header: { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 } };
 let closure_6 = createStyles.createStyles(obj);
 let obj3 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -24,7 +24,7 @@ const result = size.fileFinishedImporting("modules/guild_role_subscriptions/nati
 
 export default noop.memo(function GuildRoleSubscriptionsChannelHeader() {
   const obj = { style: closure_6().header, children: null };
-  const items = [React4(native.Icon, { source: _modDef13061, size: native.Icon.Sizes.MEDIUM, disableColor: true }), ];
+  const items = [React4(native.Icon, { source: _modDef12295, size: native.Icon.Sizes.MEDIUM, disableColor: true }), ];
   const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["KzCF/6"]);

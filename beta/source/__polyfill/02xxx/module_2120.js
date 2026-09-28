@@ -5,36 +5,46 @@
 
 // Module 2120
 
-export default function buildMatchPatternFn(arg0) {
-  const matchPattern = arg0;
-  return (str) => {
-    if (arguments.length > 1) {
-      if (undefined !== arguments[1]) {
-        let obj = arguments[1];
-      }
-      const match = str.match(matchPattern.matchPattern);
-      if (match) {
-        const match1 = str.match(obj2.parsePattern);
-        if (match1) {
-          if (obj2.valueCallback) {
-            let first = obj2.valueCallback(match1[0]);
-          } else {
-            first = match1[0];
-          }
-          let valueCallbackResult2 = first;
-          if (obj.valueCallback) {
-            valueCallbackResult2 = obj.valueCallback(first);
-          }
-          const obj3 = { value: valueCallbackResult2, rest: str.slice(match[0].length) };
-          return obj3;
-        } else {
-          return null;
-        }
-      } else {
-        return null;
+export default function buildLocalizeFn(arg0) {
+  const formattingValues = arg0;
+  return (arg0, context) => {
+    let str = "standalone";
+    if (null != context) {
+      str = "standalone";
+      if (context.context) {
+        const _String = String;
+        str = String(context.context);
       }
     }
-    obj = {};
+    if ("formatting" === str) {
+      if (formattingValues.formattingValues) {
+        let StringResult = tmp6;
+        if (null != context) {
+          StringResult = tmp6;
+          if (context.width) {
+            const _String3 = String;
+            StringResult = String(context.width);
+          }
+        }
+        let tmp5 = tmp2.formattingValues[StringResult] || tmp2.formattingValues[tmp2.defaultFormattingWidth || tmp2.defaultWidth];
+        let obj = tmp2;
+        const tmp9 = tmp2.formattingValues[StringResult] || tmp2.formattingValues[tmp2.defaultFormattingWidth || tmp2.defaultWidth];
+      }
+      let argumentCallbackResult = arg0;
+      if (obj.argumentCallback) {
+        argumentCallbackResult = obj.argumentCallback(arg0);
+      }
+      return tmp5[argumentCallbackResult];
+    }
+    obj = formattingValues;
+    if (null != context) {
+      if (context.width) {
+        const _String2 = String;
+        let defaultWidth = String(context.width);
+      }
+      tmp5 = obj.values[defaultWidth] || obj.values[tmp3];
+    }
+    defaultWidth = obj.defaultWidth;
   };
 };
 export default exports.default;

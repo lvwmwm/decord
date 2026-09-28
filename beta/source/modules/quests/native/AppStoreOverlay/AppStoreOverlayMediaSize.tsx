@@ -1,12 +1,12 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 10730
+// Function ID: 10731
 // Name: AppStoreOverlayMediaSize
-// Dependencies: [32, 19, 17, 2013, 1397, 2]
+// Dependencies: [32, 19, 17, 2015, 1397, 2]
 // Exports: getAppStoreOverlayCarouselImageUrl, getMediaSizeFromLoadEvent, getMediaTileSize, useAppStoreOverlayMediaSizes
 
-// Module 11791 (AppStoreOverlayMediaSize)
+// Module 10730 (AppStoreOverlayMediaSize)
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2013 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2015 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

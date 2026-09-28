@@ -1,15 +1,15 @@
-// Module ID: 14022
-// Function ID: 14023
+// Module ID: 13268
+// Function ID: 13269
 // Name: ProgramRewardsStore
-// Dependencies: [32, 1372, 14023, 4042, 4070, 4025, 504, 1091, 14024, 14025, 573, 2]
+// Dependencies: [32, 1372, 13269, 4083, 4111, 4066, 504, 1091, 13270, 13271, 573, 2]
 
-// Module 14022 (ProgramRewardsStore)
+// Module 13268 (ProgramRewardsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import _modDef4042 from "module_4042" /* 4042 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 14024 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14025 */;
+import _modDef4083 from "module_4083" /* 4083 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 13270 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 13271 */;
 import _slicedToArray from "module_32" /* 32 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -35,7 +35,7 @@ function updateTtl() {
         if (!isNaN(date1.getTime())) {
           let tmp8 = importDefault;
           let tmp9 = dependencyMap;
-          let tmp11 = _modDef4042(tmp7, 10);
+          let tmp11 = _modDef4083(tmp7, 10);
           let tmp12 = tmp11;
           if (date >= tmp11) {
             let obj2 = { state: null };
@@ -77,7 +77,7 @@ function updateTtl() {
 }
 const DidNotFetchReason = { NOT_ELIGIBLE_FOR_ANY_PROGRAM_REWARD: "NOT_ELIGIBLE_FOR_ANY_PROGRAM_REWARD", CACHE_SHOULD_NOT_FETCH: "CACHE_SHOULD_NOT_FETCH" };
 let c6 = 86400000;
-const networkTtlCache = new fn(14023).NetworkTtlCache({ ttlMs: 86400000 });
+const networkTtlCache = new fn(13269).NetworkTtlCache({ ttlMs: 86400000 });
 let closure_8 = { MORE_THAN_24H_BEFORE_REWARD: "MORE_THAN_24H_BEFORE_REWARD", LESS_THAN_24H_BEFORE_REWARD: "LESS_THAN_24H_BEFORE_REWARD", PAST_REWARD_DATE: "PAST_REWARD_DATE" };
 const PersistedStore = initializeDefault.PersistedStore;
 class ProgramRewardsStore extends PersistedStore {
@@ -199,7 +199,7 @@ prototype["initialize"] = function initialize(cache) {
         if (!isNaN(date1.getTime())) {
           let tmp8 = importDefault;
           let tmp9 = dependencyMap;
-          let tmp11 = _modDef4042(tmp7, 10);
+          let tmp11 = _modDef4083(tmp7, 10);
           let tmp12 = tmp11;
           if (date >= tmp11) {
             let obj2 = { state: null };
@@ -363,7 +363,7 @@ const programRewardsStore = new ProgramRewardsStore(DispatcherDefault, {
             if (!isNaN(date1.getTime())) {
               let tmp8 = importDefault;
               let tmp9 = dependencyMap;
-              let tmp11 = _modDef4042(tmp7, 10);
+              let tmp11 = _modDef4083(tmp7, 10);
               let tmp12 = tmp11;
               if (date >= tmp11) {
                 let obj2 = { state: null };

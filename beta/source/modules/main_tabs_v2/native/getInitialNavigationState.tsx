@@ -1,20 +1,20 @@
-// Module ID: 4647
-// Function ID: 4648
+// Module ID: 4694
+// Function ID: 4695
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 4613, 2095, 1074, 3, 4648, 1101, 4614, 4627, 4651, 2]
+// Dependencies: [32, 502, 4659, 2099, 1074, 3, 4695, 1101, 4660, 4673, 4698, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 4647 (getInitialNavigationState)
+// Module 4694 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
 import router_utils from "router_utils" /* 1101 */;
-import matchPathCompat from "matchPathCompat" /* 4614 */;
-import RouteUtils from "RouteUtils" /* 4627 */;
-import useChatLayout from "useChatLayout" /* 4648 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4651 */;
+import matchPathCompat from "matchPathCompat" /* 4660 */;
+import RouteUtils from "RouteUtils" /* 4673 */;
+import useChatLayout from "useChatLayout" /* 4695 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4698 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4613 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4659 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
 function getInitialGuildState(guildId, channelId, flag, flag2) {
@@ -84,9 +84,9 @@ function computeInitialNavigationStateWithoutLogging() {
     const tmp5 = MobileHomeDrawerExperiment.getConfig({ location: "app-start" }).landOnHome && null == matchPathResult;
     if (null == matchPathResult) {
       const obj6 = { path: null };
-      const RouteParam3 = tmp(4627).RouteParam;
-      const tmpResult = tmp(4614);
-      const RouteParam4 = tmp(4627).RouteParam;
+      const RouteParam3 = tmp(4673).RouteParam;
+      const tmpResult = tmp(4660);
+      const RouteParam4 = tmp(4673).RouteParam;
       obj6.path = obj5.CHANNEL(RouteParam3.guildId(), RouteParam4.channelId({ optional: true }), ":messageId?");
       let matchPathResult1 = tmpResult.matchPath(DefaultRouteStore.lastNonVoiceRoute, obj6);
       let flag = false;

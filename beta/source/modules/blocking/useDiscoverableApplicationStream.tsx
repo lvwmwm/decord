@@ -1,12 +1,12 @@
-// Module ID: 11169
-// Function ID: 11170
+// Module ID: 10337
+// Function ID: 10338
 // Name: useDiscoverableApplicationStream
-// Dependencies: [4810, 4437, 1074, 504, 2]
+// Dependencies: [4858, 4479, 1074, 504, 2]
 // Exports: default
 
-// Module 11169 (useDiscoverableApplicationStream)
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+// Module 10337 (useDiscoverableApplicationStream)
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 
 const require = globalThis.__r;
 

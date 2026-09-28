@@ -1,42 +1,16 @@
 // Module ID: 4032
 // Function ID: 4033
-// Dependencies: [3881, 3877, 3878]
-// Exports: default
+// Dependencies: [2117]
 
 // Module 4032
-import module_3881_mod from "module_3881" /* 3881 */;
-import _typeof_mod from "module_3877" /* 3877 */;
-import requiredArgs_mod from "requiredArgs" /* 3878 */;
+import module_2117 from "module_2117" /* 2117 */;
 
-let module_3881 = module_3881_mod;
-if (!module_3881) {
-  const obj = { default: module_3881 };
-  let tmp3 = obj;
+if (!module_2117) {
+  const obj2 = { default: module_2117 };
+  let obj = obj2;
 } else {
-  tmp3 = module_3881;
+  obj = module_2117;
 }
-module_3881 = tmp3;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj2 = { default: _typeof };
-  let tmp5 = obj2;
-} else {
-  tmp5 = _typeof;
-}
-_typeof = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
-} else {
-  tmp7 = requiredArgs;
-}
-requiredArgs = tmp7;
 
-export default function addMilliseconds(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const time = _typeof.default(arg0).getTime();
-  const defaultResult1 = _typeof.default(arg0);
-  return new Date(time + module_3881.default(arg1));
-};
+export default { date: obj.default({ formats: { full: "EEEE, d MMMM yyyy", long: "d MMMM yyyy", medium: "d MMM yyyy", short: "dd.MM.yyyy" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "HH:mm:ss zzzz", long: "HH:mm:ss z", medium: "HH:mm:ss", short: "HH:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'la' {{time}}", long: "{{date}} 'la' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
 export default exports.default;

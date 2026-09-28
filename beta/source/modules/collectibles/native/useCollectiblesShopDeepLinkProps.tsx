@@ -1,13 +1,13 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 15424
+// Function ID: 15425
 // Name: useCollectiblesShopDeepLinkProps
-// Dependencies: [19, 7816, 7832, 504, 7827, 2]
+// Dependencies: [19, 6962, 6978, 504, 6973, 2]
 // Exports: useCollectiblesShopDeepLinkProps
 
-// Module 16134 (useCollectiblesShopDeepLinkProps)
+// Module 15424 (useCollectiblesShopDeepLinkProps)
 import _mod19 from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 7832 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 6978 */;
 import size from "module_2" /* 2 */;
 
 const useMemo = _mod19.useMemo;

@@ -1,19 +1,9 @@
 // Module ID: 13151
 // Function ID: 13152
-// Dependencies: [13150]
-// Exports: getTraceMetaTags
+// Dependencies: [1121]
 
 // Module 13151
-import _mod13150 from "module_13150" /* 13150 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const getTraceMetaTags = function getTraceMetaTags() {
-  const entries = Object.entries(_mod13150.getTraceData());
-  const mapped = entries.map((item) => {
-    [tmp, tmp2] = item;
-    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
-  });
-  return mapped.join("\n");
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/light", width: 24, height: 24, scales: [2, 3], hash: "1b5f32142ab22998fa2540426f00d327", name: "tier_0_24px", type: "png" });

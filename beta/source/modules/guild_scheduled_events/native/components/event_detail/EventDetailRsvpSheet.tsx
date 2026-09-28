@@ -1,22 +1,22 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9092
+// Function ID: 9093
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 4828, 1372, 1085, 21, 4788, 576, 5773, 8710, 9932, 4784, 1115, 8903, 5836, 7439, 504, 1177, 9933, 4632, 8480, 9934, 6901, 5826, 2]
+// Dependencies: [19, 17, 4876, 1372, 1085, 21, 4836, 576, 5836, 7855, 9093, 4832, 1115, 8053, 5899, 6583, 504, 1177, 9094, 4678, 7624, 9095, 6045, 5889, 2]
 
-// Module 9931 (EventDetailRsvpSheet)
+// Module 9092 (EventDetailRsvpSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import BottomSheetModal from "BottomSheetModal" /* 6901 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8480 */;
-import StageSparkleDefault from "StageSparkle" /* 8710 */;
-import Form from "Form" /* 8903 */;
-import _modDef9932 from "module_9932" /* 9932 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import BottomSheetModal from "BottomSheetModal" /* 6045 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
+import StageSparkleDefault from "StageSparkle" /* 7855 */;
+import Form from "Form" /* 8053 */;
+import _modDef9093 from "module_9093" /* 9093 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4828 */;
+import PresenceStore from "PresenceStore" /* 4876 */;
 import UserStore from "UserStore" /* 1372 */;
-import TextStyles from "TextStyles" /* 5773 */;
+import TextStyles from "TextStyles" /* 5836 */;
 
 require = fn;
 function EmptyDisplay(arg0) {
@@ -24,7 +24,7 @@ function EmptyDisplay(arg0) {
   const obj = { style: null, children: null };
   const items = [closure_9().emptyDisplayContainer, style];
   obj.style = items;
-  const obj2 = { icon: _modDef9932 };
+  const obj2 = { icon: _modDef9093 };
   const items1 = [React5(StageSparkleDefault, obj2), children];
   obj.children = items1;
   return React6(View, obj);
@@ -49,7 +49,7 @@ function RemainingUsersRow(remainingUsersGroup) {
   const tmp = closure_9();
   const obj = { DEPRECATED_style: tmp.userListRow, leading: null, label: null };
   const obj2 = { style: tmp.remainingUsersIconContainer, children: null };
-  const obj3 = { source: _modDef9932, style: tmp.remainingUsersIcon };
+  const obj3 = { source: _modDef9093, style: tmp.remainingUsersIcon };
   obj2.children = React5(FastImageDefault, obj3);
   obj.leading = React5(View, obj2);
   const intl = util.intl;
@@ -217,7 +217,7 @@ const View = fn(17).View;
 const Fonts = fn(1085).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { staticMessageContentContainer: { flex: 1, padding: 16 }, userList: { paddingTop: 16 }, userListRow: { paddingVertical: 8 }, userName: { color: nativeDefault.colors.TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16 }, emptyDisplayContainer: { alignItems: "center", justifyContent: "center", minHeight: 200 }, staticMessageContent: { height: "100%" }, emptyDisplayTitle: null, remainingUsersIcon: null, remainingUsersIconContainer: null };
 let obj4 = { paddingTop: 24 };
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 20, { marginBottom: 8 }));
@@ -232,7 +232,7 @@ const memoResult = noop.memo((eventUser) => {
   eventUser = eventUser.eventUser;
   let analyticsLocations;
   const tmp = closure_9();
-  analyticsLocations = analyticsLocations(7439)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6583)().analyticsLocations;
   const items = [UserStore];
   const stateFromStores = eventUser(504).useStateFromStores(items, () => UserStore.getUser(eventUser.user_id));
   const obj = eventUser(504);
@@ -255,16 +255,16 @@ const memoResult = noop.memo((eventUser) => {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = tmp2(4632).getName(eventUser.user);
-    const tmp2Result2 = tmp2(4632);
+    nick = tmp2(4678).getName(eventUser.user);
+    const tmp2Result2 = tmp2(4678);
   }
   obj6.nick = nick;
   ({ userName: obj5.usernameStyle, userName: obj5.nicknameStyle } = tmp);
-  obj3.label = closure_7(analyticsLocations(9933), obj6);
+  obj3.label = closure_7(analyticsLocations(9094), obj6);
   obj3.onPress = function onPress() {
     showUserProfileActionSheetDefault({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return closure_7(eventUser(8903).FormRow, obj3, eventUser.user_id);
+  return closure_7(eventUser(8053).FormRow, obj3, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
 size = fn(2);

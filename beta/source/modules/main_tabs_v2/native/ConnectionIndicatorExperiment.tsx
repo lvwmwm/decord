@@ -1,10 +1,10 @@
-// Module ID: 13981
-// Function ID: 13982
+// Module ID: 13231
+// Function ID: 13232
 // Name: ConnectionIndicatorExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 13981 (ConnectionIndicatorExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13231 (ConnectionIndicatorExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-12-connection-indicator", kind: "user", defaultConfig: { timeoutMs: "HermesInternal", hidden: null }, variations: null };

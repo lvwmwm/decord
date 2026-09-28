@@ -1,16 +1,9 @@
 // Module ID: 3910
 // Function ID: 3911
-// Dependencies: [2114]
+// Dependencies: [1121]
 
 // Module 3910
-import module_2114 from "module_2114" /* 2114 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-if (!module_2114) {
-  const obj2 = { default: module_2114 };
-  let obj = obj2;
-} else {
-  obj = module_2114;
-}
 
-export default { date: obj.default({ formats: { full: "EEEE, d MMMM yyyy", long: "d MMMM yyyy", medium: "d MMM yyyy", short: "dd/MM/yyyy" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "HH:mm:ss zzzz", long: "HH:mm:ss z", medium: "HH:mm:ss", short: "HH:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'at' {{time}}", long: "{{date}} 'at' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
-export default exports.default;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_mode", scales: [1], hash: "7ca9d9ba3c0a8e3beaa96f49add49046", name: "GameMode.compiled.messages", type: "jsona" });

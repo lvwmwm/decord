@@ -1,13 +1,13 @@
-// Module ID: 1983
-// Function ID: 1984
+// Module ID: 1984
+// Function ID: 1985
 // Name: ZoomedInTelemetry
-// Dependencies: [5, 1984, 1985, 1987, 1989, 1241, 2]
+// Dependencies: [5, 1985, 1986, 1988, 1990, 1241, 2]
 
-// Module 1983 (ZoomedInTelemetry)
-import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1984 */;
-import TelemetryRingNative2 from "TelemetryRingNative" /* 1987 */;
+// Module 1984 (ZoomedInTelemetry)
+import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1985 */;
+import TelemetryRingNative2 from "TelemetryRingNative" /* 1988 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BaseTelemetryExportChannel from "BaseTelemetryExportChannel" /* 1985 */;
+import BaseTelemetryExportChannel from "BaseTelemetryExportChannel" /* 1986 */;
 
 const TelemetryRingNative = TelemetryRingNative2;
 
@@ -128,7 +128,7 @@ prototype["exportEntries"] = function exportEntries(arg0, arg1) {
     }
   })();
 };
-let items = [fn(1987).TelemetryChannel.ZOOMED];
+let items = [fn(1988).TelemetryChannel.ZOOMED];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInTelemetry.tsx");
 

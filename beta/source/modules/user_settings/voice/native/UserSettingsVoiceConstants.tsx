@@ -1,10 +1,10 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 9436
+// Function ID: 9437
 // Name: UserSettingsVoiceConstants
-// Dependencies: [1074, 2108, 2]
+// Dependencies: [1074, 2111, 2]
 
-// Module 10277 (UserSettingsVoiceConstants)
-import HelpdeskUtils from "HelpdeskUtils" /* 2108 */;
+// Module 9436 (UserSettingsVoiceConstants)
+import HelpdeskUtils from "HelpdeskUtils" /* 2111 */;
 
 const combined = "" + HelpdeskUtils.getArticleURL(fn(1074).HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
 const size = fn(2);

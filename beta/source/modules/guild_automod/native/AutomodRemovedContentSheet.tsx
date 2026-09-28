@@ -1,14 +1,14 @@
-// Module ID: 17740
-// Function ID: 17741
+// Module ID: 17097
+// Function ID: 17098
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1074, 21, 8222, 4788, 576, 1115, 5010, 7474, 7426, 8962, 4784, 2]
+// Dependencies: [19, 17, 1074, 21, 7374, 4836, 576, 1115, 5058, 6618, 6570, 8112, 4832, 2]
 // Exports: default
 
-// Module 17740 (AutomodRemovedContentSheet)
+// Module 17097 (AutomodRemovedContentSheet)
 import nativeDefault from "native" /* 576 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
-import RowGeneratorDefault from "RowGenerator" /* 8222 */;
-import ChatItemDefault from "ChatItem" /* 8962 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
+import RowGeneratorDefault from "RowGenerator" /* 7374 */;
+import ChatItemDefault from "ChatItem" /* 8112 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const MessageFlags = fn(1074).MessageFlags;
 const jsx = fn(21).jsx;
 const rowGenerator = new RowGeneratorDefault();
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { content: null, blockedMessage: null };
 const tmp2 = new RowGeneratorDefault();
 obj2.content = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
@@ -68,7 +68,7 @@ export default function AutomodRemovedContentSheet(action) {
   if (thread != null) {
     name = thread.name;
   }
-  let obj2 = { header: jsx(message(7426).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null };
+  let obj2 = { header: jsx(message(6570).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null };
   obj.subtitle = name;
   const obj3 = { style: tmp.content, children: null };
   if (null != memo) {
@@ -78,9 +78,9 @@ export default function AutomodRemovedContentSheet(action) {
     let tmp4Result = tmp4(tmp8, obj4);
   } else {
     const obj6 = { variant: "text-md/normal", color: "text-default", children: action.notice };
-    tmp4Result = tmp4(tmp5(4784).Text, obj6);
+    tmp4Result = tmp4(tmp5(4832).Text, obj6);
   }
   obj3.children = tmp4Result;
   obj2.children = <View style={tmp.content}>{null}</View>;
-  return jsx(message(7474).ActionSheet, { header: jsx(message(7426).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null });
+  return jsx(message(6618).ActionSheet, { header: jsx(message(6570).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null });
 };

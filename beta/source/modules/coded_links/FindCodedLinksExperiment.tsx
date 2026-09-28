@@ -1,11 +1,11 @@
-// Module ID: 14145
-// Function ID: 14146
+// Module ID: 13391
+// Function ID: 13392
 // Name: FindCodedLinksExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isFindCodedLinksRegexEnabled
 
-// Module 14145 (FindCodedLinksExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13391 (FindCodedLinksExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-find-coded-links-regex", kind: "user", defaultConfig: { enabled: false }, variations: null };

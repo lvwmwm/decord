@@ -1,13 +1,13 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 13889
+// Function ID: 13890
 // Name: InteractionModalStore
-// Dependencies: [1978, 38, 8418, 1091, 7730, 504, 573, 2]
+// Dependencies: [1979, 38, 7574, 1091, 6876, 504, 573, 2]
 
-// Module 14708 (InteractionModalStore)
+// Module 13889 (InteractionModalStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7730 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8418 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 7574 */;
 
 require = fn;
 const InteractionModalState = { IN_FLIGHT: 0, [0]: "IN_FLIGHT", ERRORED: 1, [1]: "ERRORED", SUCCEEDED: 2, [2]: "SUCCEEDED" };
@@ -54,11 +54,11 @@ const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
     ({ data, preflight } = nonce);
     let startTimeout;
     const interactionType = data.interactionType;
-    if (nonce(1978).InteractionTypes.APPLICATION_COMMAND === interactionType) {
+    if (nonce(1979).InteractionTypes.APPLICATION_COMMAND === interactionType) {
       const messageId = nonce.messageId;
       const channelId = data.channelId;
       return false;
-    } else if (tmp(1978).InteractionTypes.MODAL_SUBMIT === interactionType) {
+    } else if (tmp(1979).InteractionTypes.MODAL_SUBMIT === interactionType) {
       let tmp7 = null == nonce;
       if (!tmp7) {
         tmp7 = IN_FLIGHT === obj.ERRORED;

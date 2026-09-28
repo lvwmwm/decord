@@ -1,29 +1,7 @@
 // Module ID: 13199
 // Function ID: 13200
-// Dependencies: [13080]
-// Exports: vercelWaitUntil
+// Dependencies: []
 
 // Module 13199
-import _mod13080 from "module_13080" /* 13080 */;
 
-require = arg1;
-const dependencyMap = arg6;
-
-export const vercelWaitUntil = function vercelWaitUntil(arg0) {
-  const obj = _mod13080.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
-  if (obj) {
-    if (obj.get) {
-      if (obj.get()) {
-        let obj1 = obj.get();
-      }
-      let waitUntil = obj1;
-      if (obj1) {
-        waitUntil = obj1.waitUntil;
-      }
-      if (waitUntil) {
-        obj1.waitUntil(arg0);
-      }
-    }
-  }
-  obj1 = {};
-};
+export default { 2: "need dictionary", 1: "stream end", 0: "", "-1": "file error", "-2": "stream error", "-3": "data error", "-4": "insufficient memory", "-5": "buffer error", "-6": "incompatible version" };

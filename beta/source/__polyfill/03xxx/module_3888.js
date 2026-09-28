@@ -1,26 +1,9 @@
 // Module ID: 3888
 // Function ID: 3889
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 3888
-let closure_0 = ["ned\u011Bli", "pond\u011Bl\u00ED", "\u00FAter\u00FD", "st\u0159edu", "\u010Dtvrtek", "p\u00E1tek", "sobotu"];
-let closure_1 = {
-  lastWeek: "'posledn\u00ED' eeee 've' p",
-  yesterday: "'v\u010Dera v' p",
-  today: "'dnes v' p",
-  tomorrow: "'z\u00EDtra v' p",
-  nextWeek(arg0) {
-    return "'v " + closure_0[arg0.getUTCDay(arg0)] + " o' p";
-  },
-  other: "P"
-};
+import registerAsset from "module_1121" /* 1121 */;
 
-export default function formatRelative(arg0, arg1) {
-  let tmpResult = tmp;
-  if (typeof closure_1[arg0] === "function") {
-    tmpResult = tmp(arg1);
-  }
-  return tmpResult;
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRlbGxpZ2VuY2VfbGF5ZXIvc2VhcmNo", scales: [1], hash: "32c17fafc1558694057a98a3c000e711", name: "hi.messages.32c17fafc1558694057a98a3c000e711.compiled.messages", type: "jsona" });

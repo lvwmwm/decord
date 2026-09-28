@@ -1,14 +1,14 @@
-// Module ID: 4802
-// Function ID: 4803
+// Module ID: 4850
+// Function ID: 4851
 // Name: ChangelogStore
-// Dependencies: [2109, 1220, 2094, 510, 2019, 504, 573, 2]
+// Dependencies: [2112, 1220, 2098, 510, 2021, 504, 573, 2]
 
-// Module 4802 (ChangelogStore)
+// Module 4850 (ChangelogStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
@@ -16,7 +16,7 @@ function handleUserSettingsProtoStoreChange() {
   const LastReceivedChangelogId = UserSettings.LastReceivedChangelogId;
   const setting = LastReceivedChangelogId.getSetting();
 }
-const ChangelogConstants = fn(2094);
+const ChangelogConstants = fn(2098);
 ({ AssetType: closure_4, ChangelogLoadState: hasOwnProperty } = ChangelogConstants);
 const dependencyMap = {};
 const loadedChangelogs = {};

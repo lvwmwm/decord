@@ -1,13 +1,13 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 8354
+// Function ID: 8355
 // Name: GlobeEarthIcon
-// Dependencies: [19, 21, 576, 4488, 9201, 2]
+// Dependencies: [19, 21, 576, 4530, 8355, 2]
 // Exports: GlobeEarthIcon
 
-// Module 9200 (GlobeEarthIcon)
+// Module 8354 (GlobeEarthIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod9201 from "module_9201" /* 9201 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod8355 from "module_8355" /* 8355 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const GlobeEarthIcon = function GlobeEarthIcon(dependencyMap) {
   }
   const merged = Object.assign(dependencyMap, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9201, color: INTERACTIVE_ICON_DEFAULT, style: dependencyMap.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8355, color: INTERACTIVE_ICON_DEFAULT, style: dependencyMap.style });
 };

@@ -1,14 +1,14 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13146
+// Function ID: 13147
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1074, 21, 4788, 7675, 576, 1115, 2108, 4784, 5371, 1177, 13899, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 6821, 576, 1115, 2111, 4832, 5435, 1177, 13147, 2]
 // Exports: default
 
-// Module 13898 (GuildBoostingMarketingFaq)
+// Module 13146 (GuildBoostingMarketingFaq)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import _modDef13899 from "module_13899" /* 13899 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import _modDef13147 from "module_13147" /* 13147 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,9 +19,9 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { wrapper: { alignSelf: "center", marginTop: 50, marginBottom: fn(7675).VISIBILITY_OFFSET, maxWidth: 800, paddingHorizontal: 16, width: "100%" }, content: null, heading: null, list: null, listItem: null, questionWrapper: null, questionWrapperExpanded: null, question: null, questionIcon: null, questionIconExpanded: null, answer: null };
-let obj3 = { alignSelf: "center", marginTop: 50, marginBottom: fn(7675).VISIBILITY_OFFSET, maxWidth: 800, paddingHorizontal: 16, width: "100%" };
+const createStyles = fn(4836);
+let obj2 = { wrapper: { alignSelf: "center", marginTop: 50, marginBottom: fn(6821).VISIBILITY_OFFSET, maxWidth: 800, paddingHorizontal: 16, width: "100%" }, content: null, heading: null, list: null, listItem: null, questionWrapper: null, questionWrapperExpanded: null, question: null, questionIcon: null, questionIconExpanded: null, answer: null };
+let obj3 = { alignSelf: "center", marginTop: 50, marginBottom: fn(6821).VISIBILITY_OFFSET, maxWidth: 800, paddingHorizontal: 16, width: "100%" };
 obj2.content = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, paddingHorizontal: 16, paddingVertical: 28 };
 obj2.heading = { marginBottom: 20, textAlign: "center" };
 let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, paddingHorizontal: 16, paddingVertical: 28 };
@@ -177,8 +177,8 @@ export default function GuildBoostingMarketingFaq() {
       if (tmp) {
         str = "interactive-text-active";
       }
-      items1 = [closure_1_7(closure_0(4784).Text, { color: str, style: closure_0.question, variant: "text-md/normal", children: getQuestion.getQuestion() }), ];
-      const obj4 = { source: _modDef13899, style: null };
+      items1 = [closure_1_7(closure_0(4832).Text, { color: str, style: closure_0.question, variant: "text-md/normal", children: getQuestion.getQuestion() }), ];
+      const obj4 = { source: _modDef13147, style: null };
       const items2 = [closure_0.questionIcon, ];
       let questionIconExpanded = tmp;
       if (tmp) {
@@ -188,10 +188,10 @@ export default function GuildBoostingMarketingFaq() {
       obj4.style = items2;
       items1[1] = closure_1_7(closure_0(1177).Icon, obj4);
       obj2.children = items1;
-      const items3 = [closure_1_8(closure_0(5371).PressableOpacity, obj2), ];
+      const items3 = [closure_1_8(closure_0(5435).PressableOpacity, obj2), ];
       if (tmp) {
         const obj5 = { style: tmp4.answer, color: "interactive-text-active", variant: "text-sm/normal", children: getQuestion.getAnswer() };
-        tmp = tmp7(tmp5(4784).Text, obj5);
+        tmp = tmp7(tmp5(4832).Text, obj5);
       }
       items3[1] = tmp;
       obj.children = items3;

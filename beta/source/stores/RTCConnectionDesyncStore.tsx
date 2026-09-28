@@ -1,20 +1,20 @@
-// Module ID: 14053
-// Function ID: 14054
+// Module ID: 13299
+// Function ID: 13300
 // Name: RTCConnectionDesyncStore
-// Dependencies: [4808, 2041, 4811, 1372, 4807, 4812, 1074, 4809, 2016, 4940, 8517, 4843, 504, 573, 2]
+// Dependencies: [4856, 2045, 4859, 1372, 4855, 4860, 1074, 4857, 2018, 4988, 7661, 4891, 504, 573, 2]
 
-// Module 14053 (RTCConnectionDesyncStore)
+// Module 13299 (RTCConnectionDesyncStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2016 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8517 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4808 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2018 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 7661 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 require = fn;
 function retryFailedUsers() {
@@ -52,10 +52,10 @@ function retryFailedUsers() {
     return c2;
   }
 }
-const makeSortedVoiceState = fn(4812).makeSortedVoiceState;
+const makeSortedVoiceState = fn(4860).makeSortedVoiceState;
 const Constants = fn(1074);
 ({ ME: closure_9, RTCConnectionStates: c10 } = Constants);
-const ParticipantTypes = fn(4809).ParticipantTypes;
+const ParticipantTypes = fn(4857).ParticipantTypes;
 new CachedEntriesMapDefault();
 const tmp3 = new CachedEntriesMapDefault();
 const set = new Set();

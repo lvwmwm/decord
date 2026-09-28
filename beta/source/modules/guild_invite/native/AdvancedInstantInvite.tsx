@@ -1,24 +1,24 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 17624
+// Function ID: 17625
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 4437, 1372, 21, 4788, 5271, 4941, 18260, 10119, 18261, 4755, 18262, 1980, 18263, 1115, 5833, 5860, 5216, 576, 5936, 5854, 7477, 1385, 8695, 2]
+// Dependencies: [19, 17, 4479, 1372, 21, 4836, 5335, 4989, 17625, 9279, 17626, 4800, 17627, 1981, 17628, 1115, 5896, 5923, 5279, 576, 5999, 5917, 6621, 1385, 7840, 2]
 // Exports: default
 
-// Module 18259 (AdvancedInstantInvite)
+// Module 17624 (AdvancedInstantInvite)
 import util from "util" /* 1115 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8695 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 7840 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles({ container: { flexGrow: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_invite/native/AdvancedInstantInvite.tsx");
@@ -71,14 +71,14 @@ export default function AdvancedInstantInvite(maxAge) {
     if (tmp) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { assignableRoles, selectedRoleIds: roleIds, onSave: onChangeRoleIds };
-      obj.openLazy(asyncRequireImpl(18262, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequireImpl(17627, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
     }
   }, items);
   const items2 = [maxUses, maxUsesOptions, onChangeMaxUses];
   const callback1 = maxUsesOptions.useCallback(() => {
     if (null != onChangeMaxAge) {
       const obj = ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequireImpl(18263, dependencyMap.paths);
+      const tmp5 = asyncRequireImpl(17628, dependencyMap.paths);
       const obj2 = { title: null, options: null, value: null, onChange: null };
       const intl = util.intl;
       obj2.title = intl.string(util.t.gKmKP0);
@@ -92,7 +92,7 @@ export default function AdvancedInstantInvite(maxAge) {
   const callback2 = maxUsesOptions.useCallback(() => {
     if (null != onChangeMaxUses) {
       const obj = ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequireImpl(18263, dependencyMap.paths);
+      const tmp5 = asyncRequireImpl(17628, dependencyMap.paths);
       const obj2 = { title: null, options: null, value: null, onChange: null };
       const intl = util.intl;
       obj2.title = intl.string(util.t["+3vH1h"]);

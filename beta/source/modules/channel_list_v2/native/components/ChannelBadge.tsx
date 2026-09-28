@@ -1,15 +1,15 @@
-// Module ID: 12575
-// Function ID: 12576
+// Module ID: 11775
+// Function ID: 11776
 // Name: components/ChannelBadge
-// Dependencies: [19, 21, 1177, 12574, 4784, 1115, 1881, 2]
+// Dependencies: [19, 21, 1177, 11774, 4832, 1115, 1882, 2]
 // Exports: renderChannelBadge
 
-// Module 12575 (components/ChannelBadge)
+// Module 11775 (components/ChannelBadge)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import NumberUtils from "NumberUtils" /* 1881 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import renderChannelBadge from "renderChannelBadge" /* 12574 */;
+import NumberUtils from "NumberUtils" /* 1882 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import renderChannelBadge from "renderChannelBadge" /* 11774 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

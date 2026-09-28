@@ -1,23 +1,23 @@
-// Module ID: 12998
-// Function ID: 12999
+// Module ID: 12230
+// Function ID: 12231
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 2105, 2063, 4772, 1074, 4414, 21, 4788, 576, 1484, 504, 5873, 1385, 7372, 1980, 8009, 9815, 7589, 8681, 10070, 12999, 7400, 4498, 2]
+// Dependencies: [5, 19, 2108, 2067, 4817, 1074, 4455, 21, 4836, 576, 1485, 504, 5936, 1385, 6516, 1981, 7154, 8976, 6734, 7826, 9230, 12231, 6544, 4540, 2]
 // Exports: default
 
-// Module 12998 (AcceptInviteContainer)
+// Module 12230 (AcceptInviteContainer)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5873 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import InviteStore from "InviteStore" /* 4772 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import InviteStore from "InviteStore" /* 4817 */;
 
 require = fn;
 const ThemeTypes = fn(1074).ThemeTypes;
-const GuildMemberFlags = fn(4414).GuildMemberFlags;
+const GuildMemberFlags = fn(4455).GuildMemberFlags;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { flex: { flex: 1 }, paddingContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);

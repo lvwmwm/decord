@@ -1,12 +1,12 @@
-// Module ID: 8707
-// Function ID: 8708
+// Module ID: 7852
+// Function ID: 7853
 // Name: SafetyToastsActionCreators
-// Dependencies: [8702, 4485, 8708, 2]
+// Dependencies: [7847, 4527, 7853, 2]
 
-// Module 8707 (SafetyToastsActionCreators)
-import ToastUtils from "ToastUtils" /* 4485 */;
-import Constants from "Constants" /* 8702 */;
-import SafetyToastsUtils from "SafetyToastsUtils" /* 8708 */;
+// Module 7852 (SafetyToastsActionCreators)
+import ToastUtils from "ToastUtils" /* 4527 */;
+import Constants from "Constants" /* 7847 */;
+import SafetyToastsUtils from "SafetyToastsUtils" /* 7853 */;
 import size from "module_2" /* 2 */;
 
 const SafetyToastType = Constants.SafetyToastType;
@@ -25,9 +25,9 @@ export default {
     const obj = ToastUtils;
     obj.showSafetySuccess(SafetyToastType.BLOCK_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.BLOCK_SUCCESS, id, channelId));
   },
-  showUnblockSuccessToast(id, id2) {
+  showUnblockSuccessToast(id, channelId) {
     const obj = ToastUtils;
-    obj.showSafetySuccess(SafetyToastType.UNBLOCK_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.UNBLOCK_SUCCESS, id, id2));
+    obj.showSafetySuccess(SafetyToastType.UNBLOCK_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.UNBLOCK_SUCCESS, id, channelId));
   },
   showMuteSuccessToast(id, channelId) {
     const obj = ToastUtils;

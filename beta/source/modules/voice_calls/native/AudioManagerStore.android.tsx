@@ -1,16 +1,16 @@
-// Module ID: 9940
-// Function ID: 9941
+// Module ID: 9101
+// Function ID: 9102
 // Name: AudioManagerStore
-// Dependencies: [17, 1074, 4813, 9941, 12, 1231, 504, 573, 2]
+// Dependencies: [17, 1074, 4861, 9102, 12, 1231, 504, 573, 2]
 
-// Module 9940 (AudioManagerStore)
+// Module 9101 (AudioManagerStore)
 import _modDef12 from "module_12" /* 12 */;
 import _mod17 from "module_17" /* 17 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 4813 */;
-import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9941 */;
+import Constants2 from "Constants" /* 4861 */;
+import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9102 */;
 import size from "module_2" /* 2 */;
 
 const NativeAudioManagerModule_mod = NativeAudioManagerModuleDefault;
@@ -81,8 +81,8 @@ const audioManagerStore = new AudioManagerStore(DispatcherDefault, {
             tmp4(1231).captureMessage("AudioManagerStore received a string for an android audio device", obj3);
             const tmp4Result3 = tmp4(1231);
           } else {
-            tmp4(9941).setActiveAudioDevice(tmp10);
-            const tmp4Result4 = tmp4(9941);
+            tmp4(9102).setActiveAudioDevice(tmp10);
+            const tmp4Result4 = tmp4(9102);
           }
           tmp4Result = tmp4(12);
         }
@@ -104,8 +104,8 @@ const audioManagerStore = new AudioManagerStore(DispatcherDefault, {
         tmp(1231).captureMessage("AudioManagerStore received a string for an android audio device", obj2);
         const tmpResult = tmp(1231);
       } else {
-        tmp(9941).setActiveAudioDevice(device);
-        const tmpResult2 = tmp(9941);
+        tmp(9102).setActiveAudioDevice(device);
+        const tmpResult2 = tmp(9102);
       }
       obj = _modDef12;
     }

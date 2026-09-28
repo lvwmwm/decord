@@ -1,18 +1,18 @@
-// Module ID: 18031
-// Function ID: 18032
+// Module ID: 17392
+// Function ID: 17393
 // Name: GuildSettingsServerTagPickerCell
-// Dependencies: [19, 17, 21, 4788, 576, 4506, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4548, 2]
 // Exports: default
 
-// Module 18031 (GuildSettingsServerTagPickerCell)
+// Module 17392 (GuildSettingsServerTagPickerCell)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4506 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Pressable = fn(17).Pressable;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { cell: { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.md, borderWidth: 2, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderColor: nativeDefault.colors.BORDER_MUTED }, cellSelected: null };
 let obj3 = { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.md, borderWidth: 2, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderColor: nativeDefault.colors.BORDER_MUTED };
 obj2.cellSelected = { borderColor: nativeDefault.unsafe_rawColors.BRAND_500 };

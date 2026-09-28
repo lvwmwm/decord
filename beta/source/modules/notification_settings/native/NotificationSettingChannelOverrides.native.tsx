@@ -1,29 +1,29 @@
-// Module ID: 18256
-// Function ID: 18257
+// Module ID: 17621
+// Function ID: 17622
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2045, 7388, 4437, 1372, 1074, 21, 4788, 576, 504, 7258, 7389, 4941, 5766, 1115, 4499, 7326, 5854, 5860, 5271, 11158, 7327, 1177, 8533, 7332, 2]
+// Dependencies: [32, 19, 17, 2049, 6532, 4479, 1372, 1074, 21, 4836, 576, 504, 6402, 6533, 4989, 5829, 1115, 4541, 6470, 5917, 5923, 5335, 10327, 6471, 1177, 7678, 6476, 2]
 
-// Module 18256 (NotificationSettingChannelOverrides)
+// Module 17621 (NotificationSettingChannelOverrides)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4499 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7389 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6533 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7388 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6532 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const isGuildReadableType = fn(2045).isGuildReadableType;
+const isGuildReadableType = fn(2049).isGuildReadableType;
 const Constants = fn(1074);
 ({ ChannelTypes: c10, NotificationSettingsSections: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { container: { marginHorizontal: nativeDefault.space.PX_8, flex: 1 }, searchContainer: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_8, flex: 1 };
 obj.searchContainer = { paddingVertical: nativeDefault.space.PX_16 };

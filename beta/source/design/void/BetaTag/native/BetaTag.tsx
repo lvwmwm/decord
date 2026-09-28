@@ -1,22 +1,22 @@
-// Module ID: 13634
-// Function ID: 13635
+// Module ID: 12874
+// Function ID: 12875
 // Name: BetaTag
-// Dependencies: [19, 17, 7706, 21, 4788, 576, 5230, 1094, 4784, 1115, 2]
+// Dependencies: [19, 17, 6852, 21, 4836, 576, 5293, 1094, 4832, 1115, 2]
 // Exports: default
 
-// Module 13634 (BetaTag)
+// Module 12874 (BetaTag)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Gradients = fn(7706).Gradients;
+const Gradients = fn(6852).Gradients;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" }, text: { textTransform: "uppercase" } };
 let closure_6 = createStyles.createStyles(obj2);
 let obj4 = { SMALL: "small", MEDIUM: "medium" };

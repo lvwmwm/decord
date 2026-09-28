@@ -1,11 +1,11 @@
-// Module ID: 14830
-// Function ID: 14831
+// Module ID: 14080
+// Function ID: 14081
 // Name: unavailableCommand
-// Dependencies: [1074, 9613, 2]
+// Dependencies: [1074, 8770, 2]
 
-// Module 14830 (unavailableCommand)
+// Module 14080 (unavailableCommand)
 import Constants from "Constants" /* 1074 */;
-import RPCErrorDefault from "RPCError" /* 9613 */;
+import RPCErrorDefault from "RPCError" /* 8770 */;
 import size from "module_2" /* 2 */;
 
 const RPCErrors = Constants.RPCErrors;

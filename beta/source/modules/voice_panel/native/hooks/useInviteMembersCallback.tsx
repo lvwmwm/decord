@@ -1,14 +1,14 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 16880
+// Function ID: 16881
 // Name: useInviteMembersCallback
-// Dependencies: [19, 2041, 1074, 11870, 10115, 2]
+// Dependencies: [19, 2045, 1074, 11085, 9275, 2]
 // Exports: useInviteMembersCallback
 
-// Module 17525 (useInviteMembersCallback)
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10115 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11870 */;
+// Module 16880 (useInviteMembersCallback)
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11085 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 const Constants = fn(1074);

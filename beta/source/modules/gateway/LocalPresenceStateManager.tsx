@@ -1,12 +1,12 @@
-// Module ID: 13964
-// Function ID: 13965
+// Module ID: 13214
+// Function ID: 13215
 // Name: LocalPresenceStateManager
-// Dependencies: [5528, 13965, 13966, 2]
+// Dependencies: [5591, 13215, 13216, 2]
 
-// Module 13964 (LocalPresenceStateManager)
-import rateLimitDefault from "rateLimit" /* 13966 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
-import StateManager from "StateManager" /* 13965 */;
+// Module 13214 (LocalPresenceStateManager)
+import rateLimitDefault from "rateLimit" /* 13216 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
+import StateManager from "StateManager" /* 13215 */;
 
 class LocalPresenceStateManager extends tmp2 {
   constructor(arg0) {

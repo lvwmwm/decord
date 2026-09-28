@@ -1,11 +1,11 @@
-// Module ID: 5142
-// Function ID: 5143
+// Module ID: 5205
+// Function ID: 5206
 // Name: useAlertStore
-// Dependencies: [32, 560, 1248, 5143, 5145, 2]
+// Dependencies: [32, 560, 1248, 5206, 5208, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 5142 (useAlertStore)
-import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 5145 */;
+// Module 5205 (useAlertStore)
+import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 5208 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ export const dismissAlerts = function dismissAlerts() {
     });
   });
   if (tmp4) {
-    arr4(5143)();
+    arr4(5206)();
   }
 };
 export const dismissAlert = function dismissAlert(c6) {
@@ -70,7 +70,7 @@ export const dismissAlert = function dismissAlert(c6) {
       }
     });
     if (tmp2) {
-      found(5143)();
+      found(5206)();
     }
     let obj = require("ReactBatchUpdates");
   }

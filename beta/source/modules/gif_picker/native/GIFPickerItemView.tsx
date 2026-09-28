@@ -1,22 +1,22 @@
-// Module ID: 10674
-// Function ID: 10675
+// Module ID: 9840
+// Function ID: 9841
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4788, 10664, 576, 1875, 4755, 10675, 1980, 1115, 5371, 5836, 2]
+// Dependencies: [19, 17, 21, 4836, 9830, 576, 1876, 4800, 9841, 1981, 1115, 5435, 5899, 2]
 // Exports: default
 
-// Module 10674 (GIFPickerItemView)
+// Module 9840 (GIFPickerItemView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10664 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9830 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles((height) => {
   const obj = { container: null, gifImage: null, gifImageSelected: null };
   const size = { paddingBottom: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: nativeDefault.radii.xs, width: "100%", height, flex: 1 };
@@ -43,7 +43,7 @@ export default function GIFPickerItemView(onPressGIF) {
   }, items);
   const items2 = [index, item.src];
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10675, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9841, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
     const obj2 = { item };
     const result = KeyboardManagerUtils.dismissGlobalKeyboard();
   }, items1);

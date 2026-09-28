@@ -1,18 +1,18 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 14890
+// Function ID: 14891
 // Name: DisplayNameStylesSheetHeader
-// Dependencies: [19, 17, 21, 4788, 576, 7426, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6570, 2]
 // Exports: default
 
-// Module 15618 (DisplayNameStylesSheetHeader)
+// Module 14890 (DisplayNameStylesSheetHeader)
 import nativeDefault from "native" /* 576 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7426 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { trailingButtonClearance: { paddingTop: nativeDefault.space.PX_8 }, centeredAccessory: { justifyContent: "center", alignItems: "center" } };
 let closure_4 = createStyles.createStyles(obj2);
 const size = fn(2);

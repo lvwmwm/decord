@@ -1,11 +1,11 @@
-// Module ID: 4517
-// Function ID: 4518
+// Module ID: 4559
+// Function ID: 4560
 // Name: BadgesCoachmarkRive
-// Dependencies: [109, 19, 21, 4518, 4572, 4573, 2]
+// Dependencies: [109, 19, 21, 4560, 4614, 4615, 2]
 
-// Module 4517 (BadgesCoachmarkRive)
-import BaseRive from "BaseRive" /* 4518 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4573 */;
+// Module 4559 (BadgesCoachmarkRive)
+import BaseRive from "BaseRive" /* 4560 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4615 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

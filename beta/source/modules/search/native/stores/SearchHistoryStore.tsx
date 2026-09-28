@@ -1,13 +1,13 @@
-// Module ID: 17115
-// Function ID: 17116
+// Module ID: 16457
+// Function ID: 16458
 // Name: SearchHistoryStore
-// Dependencies: [8154, 2053, 12, 504, 573, 2]
+// Dependencies: [7303, 2057, 12, 504, 573, 2]
 
-// Module 17115 (SearchHistoryStore)
+// Module 16457 (SearchHistoryStore)
 import _mod12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SearchConstants from "SearchConstants" /* 8154 */;
+import SearchConstants from "SearchConstants" /* 7303 */;
 import size from "module_2" /* 2 */;
 
 const SearchHistoryItemTypes = SearchConstants.SearchHistoryItemTypes;

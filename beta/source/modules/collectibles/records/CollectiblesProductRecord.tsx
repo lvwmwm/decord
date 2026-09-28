@@ -1,16 +1,16 @@
-// Module ID: 7818
-// Function ID: 7819
+// Module ID: 6964
+// Function ID: 6965
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7819, 7820, 7825, 1076, 1074, 5762, 1973, 2]
+// Dependencies: [32, 6965, 6966, 6971, 1076, 1074, 5825, 1974, 2]
 
-// Module 7818 (CollectiblesProductRecord)
-import getPricesFromServerDefault from "getPricesFromServer" /* 5762 */;
+// Module 6964 (CollectiblesProductRecord)
+import getPricesFromServerDefault from "getPricesFromServer" /* 5825 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7819 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7825 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 6965 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 6971 */;
 
 const require = fn;
-const CollectiblesItemRecord = fn(7820);
+const CollectiblesItemRecord = fn(6966);
 ({ createCollectiblesItemsFromServerResponse: hasOwnProperty, transformSKUToCollectiblesItem: metroRequire } = CollectiblesItemRecord);
 let closure_7 = fn(1076).REWARD_CATEGORY_AND_REWARD_SKU_IDS;
 const Constants = fn(1074);
@@ -177,7 +177,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
               }
               ({ items, item } = obj);
               first = _slicedToArray(tenantMetadata.selectedOptions, 1)[0];
-              const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: "channel", items: "en-001", categorySkuId: "unsubscribeBrowser", isCategoryReward: "queryCache", prices: "GEN_AI_REQUEST_MESSAGES_ATTRIBUTE", previewAssets: "en-IE", googleSkuIds: "en-001", eligibleOffers: "initializeSampling", variants: "queryOptions", bundledProducts: "GEN_AI_REQUEST_MESSAGES_ATTRIBUTE", isFirstParty: "clock230" };
+              const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: "channel", items: false, categorySkuId: false, isCategoryReward: false, prices: false, previewAssets: false, googleSkuIds: false, eligibleOffers: false, variants: false, bundledProducts: false, isFirstParty: "create" };
               let str;
               if (first != null) {
                 str = first.optionValue;

@@ -1,12 +1,12 @@
-// Module ID: 16682
-// Function ID: 16683
+// Module ID: 15976
+// Function ID: 15977
 // Name: getGuildBarNeighbors
-// Dependencies: [5687, 5689, 2]
+// Dependencies: [5750, 5752, 2]
 // Exports: default
 
-// Module 16682 (getGuildBarNeighbors)
-import GuildsTree from "GuildsTree" /* 5689 */;
-import SortedGuildStore from "SortedGuildStore" /* 5687 */;
+// Module 15976 (getGuildBarNeighbors)
+import GuildsTree from "GuildsTree" /* 5752 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 
 require = fn;
 const size = fn(2);
@@ -31,19 +31,19 @@ export default function getGuildBarNeighbors(arg0) {
           return null;
         } else {
           let tmp2 = null;
-          if (root.type === tmp5(5689).GuildsNodeType.FOLDER) {
+          if (root.type === tmp5(5752).GuildsNodeType.FOLDER) {
             tmp2 = root;
           }
           const obj = { containingFolder: tmp2, above: null, below: null };
           let tmp3 = null;
           if (null != root.children[index - 1]) {
-            const obj2 = { node: tmp8, isFolder: tmp8.type === tmp5(5689).GuildsNodeType.FOLDER };
+            const obj2 = { node: tmp8, isFolder: tmp8.type === tmp5(5752).GuildsNodeType.FOLDER };
             tmp3 = obj2;
           }
           obj.above = tmp3;
           let tmp4 = null;
           if (null != root.children[index + 1]) {
-            const obj3 = { node: tmp9, isFolder: tmp9.type === tmp5(5689).GuildsNodeType.FOLDER };
+            const obj3 = { node: tmp9, isFolder: tmp9.type === tmp5(5752).GuildsNodeType.FOLDER };
             tmp4 = obj3;
           }
           obj.below = tmp4;

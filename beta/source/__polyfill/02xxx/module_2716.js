@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jbGllbnRfdGhlbWVz", scales: [1], hash: "b913ef0cbfcb003a75640b5ffa3853ed", name: "de.messages.b913ef0cbfcb003a75640b5ffa3853ed.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/notifications/profile_updates/sender", scales: [1], hash: "7f05ad73b5da2adbe55e7968cf15ccf8", name: "NotifyFriendsOnProfileUpdate.compiled.messages", type: "jsona" });

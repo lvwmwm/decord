@@ -1,9 +1,11 @@
 // Module ID: 13855
 // Function ID: 13856
-// Dependencies: [1121]
+// Dependencies: [17, 13856]
 
 // Module 13855
-import registerAsset from "module_1121" /* 1121 */;
+import _mod17 from "module_17" /* 17 */;
+import setupURLPolyfill_mod from "setupURLPolyfill" /* 13856 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 141, height: 96, scales: [2, 3], hash: "417f63594df34390f8816db66b0c9b6a", name: "img_outbound_promotion_error", type: "png" });
+const Platform = _mod17.Platform;
+let setupURLPolyfill = setupURLPolyfill_mod;
+setupURLPolyfill = setupURLPolyfill.setupURLPolyfill();

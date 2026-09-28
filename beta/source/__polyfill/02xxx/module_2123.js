@@ -1,9 +1,40 @@
 // Module ID: 2123
 // Function ID: 2124
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: default
 
 // Module 2123
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/ZGVzaWdu", scales: [1], hash: "86b91484df1ac0b8ccad956aae12b775", name: "bg.messages.86b91484df1ac0b8ccad956aae12b775.compiled.messages", type: "jsona" });
+export default function buildMatchPatternFn(arg0) {
+  const matchPattern = arg0;
+  return (str) => {
+    if (arguments.length > 1) {
+      if (undefined !== arguments[1]) {
+        let obj = arguments[1];
+      }
+      const match = str.match(matchPattern.matchPattern);
+      if (match) {
+        const match1 = str.match(obj2.parsePattern);
+        if (match1) {
+          if (obj2.valueCallback) {
+            let first = obj2.valueCallback(match1[0]);
+          } else {
+            first = match1[0];
+          }
+          let valueCallbackResult2 = first;
+          if (obj.valueCallback) {
+            valueCallbackResult2 = obj.valueCallback(first);
+          }
+          const obj3 = { value: valueCallbackResult2, rest: str.slice(match[0].length) };
+          return obj3;
+        } else {
+          return null;
+        }
+      } else {
+        return null;
+      }
+    }
+    obj = {};
+  };
+};
+export default exports.default;

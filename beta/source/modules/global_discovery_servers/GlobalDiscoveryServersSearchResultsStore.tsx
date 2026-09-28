@@ -1,13 +1,13 @@
-// Module ID: 13999
-// Function ID: 14000
+// Module ID: 13249
+// Function ID: 13250
 // Name: GlobalDiscoveryServersSearchResultsStore
-// Dependencies: [9889, 4688, 504, 573, 2]
+// Dependencies: [9050, 4735, 504, 573, 2]
 
-// Module 13999 (GlobalDiscoveryServersSearchResultsStore)
+// Module 13249 (GlobalDiscoveryServersSearchResultsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4688 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9889 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4735 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9050 */;
 import size from "module_2" /* 2 */;
 
 ({ SEARCH_RESULTS_QUERY_PREFIX: c2, SEARCH_RESULTS_CATEGORY_PREFIX: c3, SEARCH_RESULTS_LANGUAGE_CODE_PREFIX: closure_4 } = GlobalDiscoveryServersConstants);

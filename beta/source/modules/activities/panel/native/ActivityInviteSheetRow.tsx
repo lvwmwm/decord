@@ -1,22 +1,22 @@
-// Module ID: 17497
-// Function ID: 17498
+// Module ID: 16853
+// Function ID: 16854
 // Name: ActivityInviteSheetRow
-// Dependencies: [19, 17, 2041, 2063, 1372, 8010, 21, 4788, 576, 504, 4941, 10117, 5371, 1177, 9933, 4632, 1115, 1397, 2009, 4784, 5854, 10191, 2]
+// Dependencies: [19, 17, 2045, 2067, 1372, 7155, 21, 4836, 576, 504, 4989, 9277, 5435, 1177, 9094, 4678, 1115, 1397, 2011, 4832, 5917, 9351, 2]
 
-// Module 17497 (ActivityInviteSheetRow)
+// Module 16853 (ActivityInviteSheetRow)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const InviteSendStates = fn(8010).InviteSendStates;
+const InviteSendStates = fn(7155).InviteSendStates;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { acronym: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: nativeDefault.colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
 obj.acronym = size;

@@ -1,14 +1,14 @@
-// Module ID: 8704
-// Function ID: 8705
+// Module ID: 7849
+// Function ID: 7850
 // Name: ChannelPermissionsConstants
-// Dependencies: [1074, 1115, 8705, 2108, 8706, 2]
+// Dependencies: [1074, 1115, 7850, 2111, 7851, 2]
 // Exports: getChannelPermissionSpecMap
 
-// Module 8704 (ChannelPermissionsConstants)
+// Module 7849 (ChannelPermissionsConstants)
 import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import ForumPlatformUtilsDefault from "ForumPlatformUtils" /* 8705 */;
-import GuildTiVPlatformUtilsDefault from "GuildTiVPlatformUtils" /* 8706 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import ForumPlatformUtilsDefault from "ForumPlatformUtils" /* 7850 */;
+import GuildTiVPlatformUtilsDefault from "GuildTiVPlatformUtils" /* 7851 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

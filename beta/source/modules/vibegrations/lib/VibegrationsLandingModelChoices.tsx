@@ -1,12 +1,12 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16243
+// Function ID: 16244
 // Name: VibegrationsLandingModelChoices
-// Dependencies: [13393, 5307, 2]
+// Dependencies: [12645, 5371, 2]
 // Exports: landingModelChoices
 
-// Module 16947 (VibegrationsLandingModelChoices)
-import VibegrationsTypes from "VibegrationsTypes" /* 5307 */;
-import vibegrationsLocalDev from "vibegrationsLocalDev" /* 13393 */;
+// Module 16243 (VibegrationsLandingModelChoices)
+import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
+import vibegrationsLocalDev from "vibegrationsLocalDev" /* 12645 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsLandingModelChoices.tsx");
@@ -17,15 +17,15 @@ export const landingModelChoices = function landingModelChoices() {
   if (result) {
     const obj2 = { main: null, subagent: null, thinking: null };
     const items = [];
-    HermesBuiltin.arraySpread(tmp(5307).VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES.main, HermesBuiltin.arraySpread(VIBEGRATIONS_FALLBACK_MODEL_CHOICES.main, 0));
+    HermesBuiltin.arraySpread(tmp(5371).VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES.main, HermesBuiltin.arraySpread(VIBEGRATIONS_FALLBACK_MODEL_CHOICES.main, 0));
     obj2.main = items;
     const items1 = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(VIBEGRATIONS_FALLBACK_MODEL_CHOICES.main, 0);
-    HermesBuiltin.arraySpread(tmp(5307).VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES.subagent, HermesBuiltin.arraySpread(tmp(5307).VIBEGRATIONS_FALLBACK_MODEL_CHOICES.subagent, 0));
+    HermesBuiltin.arraySpread(tmp(5371).VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES.subagent, HermesBuiltin.arraySpread(tmp(5371).VIBEGRATIONS_FALLBACK_MODEL_CHOICES.subagent, 0));
     obj2.subagent = items1;
-    obj2.thinking = tmp(5307).VIBEGRATIONS_FALLBACK_MODEL_CHOICES.thinking;
+    obj2.thinking = tmp(5371).VIBEGRATIONS_FALLBACK_MODEL_CHOICES.thinking;
     let tmp4 = obj2;
-    const arraySpreadResult5 = HermesBuiltin.arraySpread(tmp(5307).VIBEGRATIONS_FALLBACK_MODEL_CHOICES.subagent, 0);
+    const arraySpreadResult5 = HermesBuiltin.arraySpread(tmp(5371).VIBEGRATIONS_FALLBACK_MODEL_CHOICES.subagent, 0);
   } else {
     tmp4 = VIBEGRATIONS_FALLBACK_MODEL_CHOICES;
   }

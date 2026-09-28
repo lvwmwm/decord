@@ -1,16 +1,16 @@
-// Module ID: 5306
-// Function ID: 5307
+// Module ID: 5370
+// Function ID: 5371
 // Name: VibegrationsUtils
-// Dependencies: [2096, 2063, 4427, 4609, 1074, 5307, 5308, 504, 2]
+// Dependencies: [4467, 2067, 4469, 4655, 1074, 5371, 5372, 504, 2]
 // Exports: canAccessVibegrations, canStartVibegrationsProject, eligibleVibegrationsGuilds, findVibegrationChannelId, getVibegrationsProjectAccessSettings, isVibegrationsChannelCandidate, isVibegrationsGuildEligible, isVibegrationsProjectInGuild, resolveVibegrationsWorkspaceGuildId, useCanAccessVibegrations, useIsVibegrationsChannelCandidate, vibegrationsSettingChannels, vibegrationsSettingsGuildId, vibegrationsTopicForApp
 
-// Module 5306 (VibegrationsUtils)
-import VibegrationsTypes from "VibegrationsTypes" /* 5307 */;
-import VibegrationsGuildExperiment from "VibegrationsGuildExperiment" /* 5308 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 2096 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+// Module 5370 (VibegrationsUtils)
+import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
+import VibegrationsGuildExperiment from "VibegrationsGuildExperiment" /* 5372 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4467 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

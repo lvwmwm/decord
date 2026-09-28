@@ -1,20 +1,20 @@
-// Module ID: 13830
-// Function ID: 13831
+// Module ID: 13076
+// Function ID: 13077
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2109, 1372, 4451, 4452, 7514, 1074, 1374, 21, 4788, 504, 4446, 13696, 573, 7693, 7517, 4784, 1364, 7512, 7511, 1115, 1881, 2]
+// Dependencies: [32, 19, 17, 2112, 1372, 4493, 4494, 6658, 1074, 1374, 21, 4836, 504, 4488, 12939, 573, 6839, 6661, 4832, 1364, 6656, 6655, 1115, 1882, 2]
 // Exports: default
 
-// Module 13830 (PremiumSubscriptionPricingUpsell)
+// Module 13076 (PremiumSubscriptionPricingUpsell)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13696 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 12939 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 import UserStore from "UserStore" /* 1372 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4451 */;
-import SubscriptionStore from "SubscriptionStore" /* 4452 */;
-import IAPStore from "IAPStore" /* 7514 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
+import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import IAPStore from "IAPStore" /* 6658 */;
 
 require = fn;
 function PricingSubheadingCopy() {
@@ -201,7 +201,7 @@ const PremiumConstants = fn(1374);
 ({ SubscriptionPlans: closure_12, SubscriptionPlanInfo: map1, PremiumTypes: closure_14, SubscriptionIntervalTypes: closure_15, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_16, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_17 } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_21 = createStyles.createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("components_native/premium/PremiumSubscriptionPricingUpsell.tsx");

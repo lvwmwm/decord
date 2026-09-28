@@ -1,30 +1,30 @@
-// Module ID: 17663
-// Function ID: 17664
+// Module ID: 17018
+// Function ID: 17019
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 2040, 4810, 4996, 12555, 21, 4788, 576, 12554, 9648, 4524, 9608, 4989, 4930, 5660, 10209, 17664, 8158, 17654, 1115, 2]
+// Dependencies: [32, 19, 2044, 4858, 5044, 11755, 21, 4836, 576, 11754, 8805, 4566, 8765, 5037, 4978, 5723, 9369, 17019, 7307, 17009, 1115, 2]
 // Exports: default
 
-// Module 17663 (VoicePanelDisconnectCancelButton)
+// Module 17018 (VoicePanelDisconnectCancelButton)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import StreamActionCreators from "StreamActionCreators" /* 4930 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5660 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9608 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9648 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import StreamActionCreators from "StreamActionCreators" /* 4978 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8805 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
-import VoicePanelStore from "VoicePanelStore" /* 4996 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
+import VoicePanelStore from "VoicePanelStore" /* 5044 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VoicePanelModes = fn(12555).VoicePanelModes;
+const VoicePanelModes = fn(11755).VoicePanelModes;
 const jsx = fn(21).jsx;
 const constants = { USER: 0, [0]: "USER", STREAM: 1, [1]: "STREAM", ACTIVITY: 2, [2]: "ACTIVITY" };
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { disconnectCancelBG: { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT }, icon: null };
 let obj3 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
 obj2.icon = { tintColor: nativeDefault.colors.WHITE };

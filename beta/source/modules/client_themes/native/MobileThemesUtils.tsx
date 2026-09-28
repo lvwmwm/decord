@@ -1,17 +1,17 @@
-// Module ID: 4719
-// Function ID: 4720
+// Module ID: 4764
+// Function ID: 4765
 // Name: MobileThemesUtils
-// Dependencies: [1182, 4720, 1227, 1229, 1115, 2712, 1230, 4721, 504, 2]
+// Dependencies: [1182, 4765, 1227, 1229, 1115, 2717, 1230, 4766, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 4719 (MobileThemesUtils)
+// Module 4764 (MobileThemesUtils)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
-import _modDef2712 from "module_2712" /* 2712 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4721 */;
+import _modDef2717 from "module_2717" /* 2717 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4766 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4720 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4765 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1227 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 require = fn;
 function getCustomThemesName() {
   const intl = util.intl;
-  return intl.string(_modDef2712.yl1iMm);
+  return intl.string(_modDef2717.yl1iMm);
 }
 const ClientThemesConstants = fn(1229);
 ({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroRequire, REFRESH_STANDARD_BACKGROUND_THEMES: closure_7 } = ClientThemesConstants);

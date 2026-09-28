@@ -1,17 +1,20 @@
-// Module ID: 4639
-// Function ID: 4640
+// Module ID: 4685
+// Function ID: 4686
 // Name: shared
-// Dependencies: [2, 4640, 4496, 4604]
+// Dependencies: [2, 4686, 4687, 4538, 4650]
 
-// Module 4639 (shared)
-import themes from "themes" /* 4496 */;
-import Colors from "Colors" /* 4604 */;
-import design_shared from "design/shared" /* 4640 */;
+// Module 4685 (shared)
+import themes from "themes" /* 4538 */;
+import Colors from "Colors" /* 4650 */;
+import design_shared from "design/shared" /* 4686 */;
+import StickerTypes from "StickerTypes" /* 4687 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/shared.tsx");
 
 export const AccessibilityAnnouncer = design_shared.AccessibilityAnnouncer;
+export const StickerFormat = StickerTypes.StickerFormat;
+export const MetaStickerType = StickerTypes.MetaStickerType;
 export const AccessibilityPreferencesContext = design_shared.AccessibilityPreferencesContext;
 export const LOW_SATURATION_THRESHOLD = design_shared.LOW_SATURATION_THRESHOLD;
 export const ContrastPreference = design_shared.ContrastPreference;

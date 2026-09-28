@@ -1,15 +1,16 @@
-// Module ID: 14009
-// Function ID: 14010
+// Module ID: 11849
+// Function ID: 11850
 // Name: IntelligenceSearchUtils
-// Dependencies: [4437, 1074, 12629, 12623, 5010, 14008, 2]
-// Exports: getIntelligenceSearchQuery, hydrateAndFilterCitations, isSupportedSearchContext, parseConversationId, resolveSearchStatus
+// Dependencies: [4479, 11846, 11847, 1074, 7303, 11829, 11823, 5058, 11848, 2]
+// Exports: getIntelligenceSearchCitationsCount, getIntelligenceSearchQuery, getIntelligenceSearchStatus, hydrateAndFilterCitations, isIntelligenceSearchActive, isIntelligenceSearchEmptyOrErrored, isSupportedSearchContext, parseConversationId, resolveSearchStatus
 
-// Module 14009 (IntelligenceSearchUtils)
-import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
-import SearchUtils from "SearchUtils" /* 12623 */;
-import QueryTokenizer from "QueryTokenizer" /* 12629 */;
-import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 14008 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+// Module 11849 (IntelligenceSearchUtils)
+import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
+import SearchUtils from "SearchUtils" /* 11823 */;
+import QueryTokenizer from "QueryTokenizer" /* 11829 */;
+import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 11848 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11846 */;
 
 require = fn;
 function isUnsupportedFilterToken(type) {
@@ -19,8 +20,10 @@ function isUnsupportedFilterToken(type) {
   }
   return tmp;
 }
+const MAX_PRESENTED_CITATIONS = fn(11847).MAX_PRESENTED_CITATIONS;
 const Constants = fn(1074);
-({ SearchTokenTypes, SearchTypes: c3 } = Constants);
+({ SearchTokenTypes, SearchTypes: hasOwnProperty } = Constants);
+const SearchTabs = fn(7303).SearchTabs;
 const items = [, ];
 ({ FILTER_IN: arr[0], ANSWER_IN: arr[1] } = SearchTokenTypes);
 const set = new Set(items);
@@ -84,4 +87,40 @@ export const parseConversationId = function parseConversationId(sourceId) {
     tmp2 = sourceId;
   }
   return tmp2;
+};
+export const getIntelligenceSearchStatus = function getIntelligenceSearchStatus(searchContext, searchResultsQuery) {
+  const guildIdFromSearchContext = SearchUtils.getGuildIdFromSearchContext(searchContext);
+  let status = null;
+  if (null != guildIdFromSearchContext) {
+    status = IntelligenceSearchStore.getStatus(guildIdFromSearchContext, SearchUtils.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery));
+    const tmpResult = SearchUtils;
+  }
+  return status;
+};
+export const isIntelligenceSearchActive = function isIntelligenceSearchActive(intelligenceStatus) {
+  return intelligenceStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADING || intelligenceStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADED;
+};
+export const isIntelligenceSearchEmptyOrErrored = function isIntelligenceSearchEmptyOrErrored(status) {
+  return status === IntelligenceSearchTypes.IntelligenceSearchStatus.EMPTY || status === IntelligenceSearchTypes.IntelligenceSearchStatus.ERROR;
+};
+export const getIntelligenceSearchCitationsCount = function getIntelligenceSearchCitationsCount(searchContext, searchResultsQuery, arg2) {
+  const guildIdFromSearchContext = SearchUtils.getGuildIdFromSearchContext(searchContext);
+  if (null == guildIdFromSearchContext) {
+    return 0;
+  } else {
+    const answer = IntelligenceSearchStore.getAnswer(guildIdFromSearchContext, SearchUtils.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery));
+    let num;
+    if (answer != null) {
+      num = answer.citations.length;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    let bound = num;
+    if (arg2) {
+      const _Math = Math;
+      bound = Math.min(num, MAX_PRESENTED_CITATIONS);
+    }
+    return bound;
+  }
 };

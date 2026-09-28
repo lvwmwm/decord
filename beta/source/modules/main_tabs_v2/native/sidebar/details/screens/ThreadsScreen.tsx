@@ -1,21 +1,21 @@
-// Module ID: 17182
-// Function ID: 17183
+// Module ID: 16535
+// Function ID: 16536
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 2041, 1074, 1114, 21, 4788, 576, 7543, 7258, 11517, 4799, 17183, 563, 1485, 2]
+// Dependencies: [19, 17, 2045, 1074, 1114, 21, 4836, 576, 6687, 6402, 10792, 4847, 16536, 563, 1486, 2]
 
-// Module 17182 (ThreadsScreen)
+// Module 16535 (ThreadsScreen)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7258 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 11517 */;
-import ThreadListDefault from "ThreadList" /* 17183 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 10792 */;
+import ThreadListDefault from "ThreadList" /* 16536 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 function ThreadsScreen(channel) {
   channel = channel.channel;
   const tmp = closure_9();
-  const canStartThread = channel(7543).useCanStartThread(channel);
+  const canStartThread = channel(6687).useCanStartThread(channel);
   const items = [channel];
   const callback = noop.useCallback(() => {
     const result = navigateToThreadCreation.navigateToThreadCreation(channel, "Thread Browser Empty State");
@@ -33,7 +33,7 @@ function ThreadsScreen(channel) {
   }, []);
   const obj3 = { channel, onCreateThreadPress: null, onThreadPress: null, contentContainerStyle: null };
   let tmp10;
-  let obj = channel(7543);
+  let obj = channel(6687);
   if (canStartThread) {
     tmp10 = callback;
   }
@@ -47,7 +47,7 @@ const View = fn(17).View;
 const SearchTypes = fn(1074).SearchTypes;
 let closure_7 = fn(1114).OpenThreadAnalyticsLocations;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { container: { flex: 1 }, screen: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_9 = createStyles.createStyles(obj);
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
@@ -72,8 +72,8 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/ThreadsScreen.tsx");
 
 export default noop.memo(() => {
-  channelId = channelId(1485).useRoute().params.channelId;
-  const obj = channelId(1485);
+  channelId = channelId(1486).useRoute().params.channelId;
+  const obj = channelId(1486);
   const items = [ChannelStore];
   const stateFromStores = channelId(563).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   let tmp3 = null;

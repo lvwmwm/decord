@@ -1,10 +1,10 @@
-// Module ID: 13990
-// Function ID: 13991
+// Module ID: 13240
+// Function ID: 13241
 // Name: RequestReviewNoTTIExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 13990 (RequestReviewNoTTIExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13240 (RequestReviewNoTTIExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-05-mobile-request-review-no-tti", kind: "user", defaultConfig: { skipTTICheck: false }, variations: { 0: { skipTTICheck: false }, 1: { skipTTICheck: true } } });

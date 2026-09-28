@@ -1,14 +1,14 @@
-// Module ID: 10059
-// Function ID: 10060
+// Module ID: 9219
+// Function ID: 9220
 // Name: useGuildProfileGames
-// Dependencies: [19, 2001, 2000, 502, 504, 7583, 1370, 2]
+// Dependencies: [19, 2002, 2001, 502, 504, 6727, 1370, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 10059 (useGuildProfileGames)
+// Module 9219 (useGuildProfileGames)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;
-import GameRecord from "GameRecord" /* 2001 */;
-import GameStore from "GameStore" /* 2000 */;
+import GameRecord from "GameRecord" /* 2002 */;
+import GameStore from "GameStore" /* 2001 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const require = globalThis.__r;

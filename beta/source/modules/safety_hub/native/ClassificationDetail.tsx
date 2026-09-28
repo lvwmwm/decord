@@ -1,24 +1,24 @@
-// Module ID: 12163
-// Function ID: 12164
+// Module ID: 11358
+// Function ID: 11359
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2109, 8734, 8723, 1074, 21, 4788, 576, 4784, 8724, 1115, 504, 3098, 10043, 4483, 9548, 5854, 5218, 12164, 12166, 8733, 8716, 1241, 12167, 5116, 5121, 12169, 7400, 12174, 8722, 2]
+// Dependencies: [19, 17, 2112, 7881, 7868, 1074, 21, 4836, 576, 4832, 7869, 1115, 504, 3103, 9203, 4525, 8705, 5917, 5281, 11359, 11361, 7880, 7861, 1241, 11362, 5179, 5184, 11364, 6544, 11369, 7867, 2]
 // Exports: default
 
-// Module 12163 (ClassificationDetail)
+// Module 11358 (ClassificationDetail)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef3098 from "module_3098" /* 3098 */;
-import LinkingDefault from "Linking" /* 4483 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import MetricEvents from "MetricEvents" /* 5121 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import TableRow from "TableRow" /* 5854 */;
-import SafetyHubModels from "SafetyHubModels" /* 8724 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10043 */;
+import _modDef3103 from "module_3103" /* 3103 */;
+import LinkingDefault from "Linking" /* 4525 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import MetricEvents from "MetricEvents" /* 5184 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import TableRow from "TableRow" /* 5917 */;
+import SafetyHubModels from "SafetyHubModels" /* 7869 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9203 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
-import SafetyHubStore from "SafetyHubStore" /* 8734 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
+import SafetyHubStore from "SafetyHubStore" /* 7881 */;
 
 require = fn;
 function ClassificationHeader(classificationTypeText) {
@@ -70,7 +70,7 @@ function ClassificationHeader(classificationTypeText) {
       return intl.format(util.t["39jfOz"], obj2);
     }
   }, items);
-  obj.children = closure_13(classificationTypeText(4784).Text, { variant: "text-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo });
+  obj.children = closure_13(classificationTypeText(4832).Text, { variant: "text-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo });
   return closure_13(closure_4, obj);
 }
 function SectionHeader(arg0) {
@@ -148,7 +148,7 @@ function ManualReviewDecidedUnderageActionsTaken() {
   obj3.style = items1;
   const obj4 = { large: true, children: null };
   const intl2 = util.intl;
-  obj4.children = intl2.string(_modDef3098.rn3Gto);
+  obj4.children = intl2.string(_modDef3103.rn3Gto);
   obj3.children = map1(BulletRow, obj4);
   items[1] = map1(React4, obj3);
   obj.children = items;
@@ -173,7 +173,7 @@ function ManualReviewDecidedUnderageGuidance() {
   obj3.style = items1;
   const obj4 = { large: true, children: null };
   const intl2 = util.intl;
-  obj4.children = intl2.string(_modDef3098["yV/t/V"]);
+  obj4.children = intl2.string(_modDef3103["yV/t/V"]);
   obj3.children = map1(BulletRow, obj4);
   items[1] = map1(React4, obj3);
   obj.children = items;
@@ -210,13 +210,13 @@ function ClassificationPolicyCard(classificationDescription) {
   obj2.style = items;
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: null };
   const tmp2 = TouchableHitBoxDefault;
-  obj3.children = closure_13(policyExplainerLink(9548).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
+  obj3.children = closure_13(policyExplainerLink(8705).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
   const items1 = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: null };
   const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = policyExplainerLink(1115).intl;
   obj6.children = intl.format(policyExplainerLink(1115).t.zxUdpj, { classificationDescription: classificationDescription.classificationTypeText });
-  obj5.children = closure_13(policyExplainerLink(4784).Text, obj6);
+  obj5.children = closure_13(policyExplainerLink(4832).Text, obj6);
   items1[1] = closure_13(closure_4, obj5);
   obj2.children = items1;
   obj.children = closure_14(tmp2, obj2);
@@ -274,7 +274,7 @@ function ManualReviewDecidedUnderageFooter(arg0) {
   ({ tosLink, communityGuidelinesLink } = arg0);
   const obj = { variant: "text-sm/normal", color: "text-muted", children: null };
   const intl = util.intl;
-  obj.children = intl.format(_modDef3098.vPOpia, { tosLink, communityGuidelinesLink });
+  obj.children = intl.format(_modDef3103.vPOpia, { tosLink, communityGuidelinesLink });
   return map1(Text_Text.Text, obj);
 }
 function ManualReviewDecidedUnderageView() {
@@ -294,12 +294,12 @@ function ClassificationDetailFooter(onClose) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const SafetyHubConstants = fn(8723);
+const SafetyHubConstants = fn(7868);
 ({ SafetyHubAnalyticsActionSource: closure_9, SafetyHubAnalyticsActions: c10, SafetyHubLinks: closure_11 } = SafetyHubConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { root: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, container: null, header: null, headerText: null, sectionContainer: null, actionsTaken: null, classificationDetailContainer: null, letUsKnowContainer: null, confirmMinimumAgeSection: null, guidelinesFooter: null, classificationPolicyCard: null, classificationPolicyCardIcon: null, classificationPolicyCardContent: null, classificationActionDescription: null, bulletText: null, redirectButtonWrapper: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.container = { display: "flex", flexDirection: "column", height: "100%", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32 };
@@ -448,21 +448,21 @@ export default function ConnectedClassificationDetail(classificationId) {
         ({ isDsaEligible: obj2.is_dsa_eligible, violationType: obj2.violation_type } = safetyHubClassification);
         AnalyticsUtilsDefault.track(AnalyticEvents.SAFETY_HUB_ACTION, obj3);
         if (hasItem1) {
-          tmp(12167).openV2(tmp3, onClose);
-          const tmpResult = tmp(12167);
+          tmp(11362).openV2(tmp3, onClose);
+          const tmpResult = tmp(11362);
         } else if (hasItem) {
-          tmp(12167).open(tmp3, onClose);
-          const tmpResult5 = tmp(12167);
+          tmp(11362).open(tmp3, onClose);
+          const tmpResult5 = tmp(11362);
         } else if (isAppealEligible) {
           const obj4 = { name: MetricEvents.MetricEvents.APPEAL_INGESTION_VIEW };
-          tmp(5116).increment(obj4);
-          const tmpResult6 = tmp(5116);
+          tmp(5179).increment(obj4);
+          const tmpResult6 = tmp(5179);
           const obj5 = { classificationId: tmp3 };
-          tmp(12169).open(obj5);
-          const tmpResult7 = tmp(12169);
+          tmp(11364).open(obj5);
+          const tmpResult7 = tmp(11364);
         } else {
-          tmp(4483).openURL(constants.APPEALS_LINK);
-          const tmpResult8 = tmp(4483);
+          tmp(4525).openURL(constants.APPEALS_LINK);
+          const tmpResult8 = tmp(4525);
         }
       }
       const obj9 = { actions: classification.actions, classificationExpiration: tmp(tmp2[30]).getClassificationExpiration(classification), redesigned: hasItem1 };

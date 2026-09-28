@@ -1,17 +1,17 @@
-// Module ID: 5662
-// Function ID: 5663
+// Module ID: 5725
+// Function ID: 5726
 // Name: GuildVerificationStore
-// Dependencies: [2059, 2105, 2099, 2063, 1372, 1074, 4414, 1385, 573, 11, 504, 2]
+// Dependencies: [2063, 2108, 2102, 2067, 1372, 1074, 4455, 1385, 573, 11, 504, 2]
 
-// Module 5662 (GuildVerificationStore)
+// Module 5725 (GuildVerificationStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRecord from "GuildRecord" /* 2059 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4414 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildRecord from "GuildRecord" /* 2063 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4455 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
@@ -226,14 +226,14 @@ const prototype = GuildVerificationStore.prototype;
 prototype["initialize"] = function initialize() {
   this.waitFor(GuildMemberStore, GuildRoleStore, GuildStore, UserStore);
 };
-prototype["getCheck"] = function getCheck(guild_id) {
-  if (null == guild_id) {
+prototype["getCheck"] = function getCheck(guildId) {
+  if (null == guildId) {
     let tmp5 = closure_12;
   } else {
-    if (!set.has(guild_id)) {
-      recomputeGuild(guild_id);
+    if (!set.has(guildId)) {
+      recomputeGuild(guildId);
     }
-    tmp5 = dependencyMap[guild_id];
+    tmp5 = dependencyMap[guildId];
     if (tmp5 == null) {
       tmp5 = closure_12;
     }

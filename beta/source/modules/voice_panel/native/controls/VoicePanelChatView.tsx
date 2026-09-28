@@ -1,29 +1,29 @@
-// Module ID: 12552
-// Function ID: 12553
+// Module ID: 11752
+// Function ID: 11753
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 12553, 1074, 21, 4788, 4989, 1110, 12550, 1115, 4741, 12554, 4524, 7350, 5373, 8148, 1478, 1612, 12562, 4801, 4641, 11809, 4498, 5200, 12563, 11632, 2]
+// Dependencies: [19, 17, 11753, 1074, 21, 4836, 5037, 1110, 11750, 1115, 4786, 11754, 4566, 6494, 5437, 7297, 1479, 1613, 11762, 4849, 4688, 11022, 4540, 5263, 11763, 10882, 2]
 
-// Module 12552 (VoicePanelChatView)
+// Module 11752 (VoicePanelChatView)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import _modDef4741 from "module_4741" /* 4741 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4801 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5373 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7350 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12550 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12554 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import _modDef4786 from "module_4786" /* 4786 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5437 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6494 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 11750 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Platform = fn(17).Platform;
-const CONTROLS_DRAWER_HEADER_SIZE = fn(12553).CONTROLS_DRAWER_HEADER_SIZE;
+const CONTROLS_DRAWER_HEADER_SIZE = fn(11753).CONTROLS_DRAWER_HEADER_SIZE;
 const Constants = fn(1074);
 ({ ComponentActions: closure_4, ME: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_8 = createStyles.createStyles({ container: { flex: 1, overflow: "hidden", paddingTop: CONTROLS_DRAWER_HEADER_SIZE }, gradientWrapper: { position: "absolute", top: CONTROLS_DRAWER_HEADER_SIZE, left: 0 }, titleBlur: { opacity: 0 } });
 const __initData = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = noop.memo(() => {
@@ -51,7 +51,7 @@ const memoResult = noop.memo(function VoicePanelDismissChatButton() {
   const obj = { accessibilityLabel: null, icon: null, onPress: null };
   const intl = util.intl;
   obj.accessibilityLabel = intl.string(util.t["5MstTl"]);
-  obj.icon = _modDef4741;
+  obj.icon = _modDef4786;
   obj.onPress = callback;
   return timestampProducer(ChatFloatingNavButtonDefault, obj);
 });

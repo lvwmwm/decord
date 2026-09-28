@@ -1,13 +1,13 @@
-// Module ID: 6614
-// Function ID: 6615
+// Module ID: 14227
+// Function ID: 14228
 // Name: PasskeysSpotIllustration
-// Dependencies: [21, 5836, 6615, 2]
+// Dependencies: [21, 5899, 14228, 2]
 // Exports: PasskeysSpotIllustration
 
-// Module 6614 (PasskeysSpotIllustration)
+// Module 14227 (PasskeysSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef6615 from "module_6615" /* 6615 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef14228 from "module_14228" /* 14228 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const PasskeysSpotIllustration = function PasskeysSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6615 };
+  const obj2 = { uri: _modDef14228 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,9 +1,22 @@
 // Module ID: 13829
 // Function ID: 13830
-// Dependencies: [1121]
+// Dependencies: [13795, 13816, 13830, 13840, 13841]
 
 // Module 13829
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13795 from "module_13795" /* 13795 */;
+import _mod13816 from "module_13816" /* 13816 */;
+import f2 from "f" /* 13830 */;
+import _mod13840 from "module_13840" /* 13840 */;
+import _mod13841 from "module_13841" /* 13841 */;
 
+let closure_2 = _mod13795([].concat);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 177.5, height: 112, scales: [2, 3], hash: "047720876ededd06daff5402c5798f99", name: "guild_subscription_no_guilds_light", type: "png" });
+export default _mod13816("Reflect", "ownKeys") || (function ownKeys(arg0) {
+  const fResult = f2.f(_mod13840(arg0));
+  const f = _mod13841.f;
+  let tmp2 = fResult;
+  if (f) {
+    tmp2 = closure_2(fResult, f(arg0));
+  }
+  return tmp2;
+});

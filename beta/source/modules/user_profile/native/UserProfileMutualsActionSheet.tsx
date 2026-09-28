@@ -1,22 +1,22 @@
-// Module ID: 12890
-// Function ID: 12891
+// Module ID: 12105
+// Function ID: 12106
 // Name: UserProfileMutualsActionSheet
-// Dependencies: [32, 19, 17, 4828, 8484, 21, 4788, 576, 8517, 504, 5854, 1177, 4940, 11167, 5833, 4784, 12884, 9922, 12891, 12892, 11447, 12885, 12886, 1115, 12896, 12898, 2]
+// Dependencies: [32, 19, 17, 4876, 7628, 21, 4836, 576, 7661, 504, 5917, 1177, 4988, 10335, 5896, 4832, 12099, 9083, 12106, 12107, 10613, 12100, 12101, 1115, 12111, 12113, 2]
 // Exports: default
 
-// Module 12890 (UserProfileMutualsActionSheet)
+// Module 12105 (UserProfileMutualsActionSheet)
 import nativeDefault from "native" /* 576 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
-import GuildIcon from "GuildIcon" /* 5833 */;
-import TableRow from "TableRow" /* 5854 */;
-import ActivityStatusDefault from "ActivityStatus" /* 11167 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11447 */;
-import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 12884 */;
-import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 12885 */;
-import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 12891 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
+import GuildIcon from "GuildIcon" /* 5896 */;
+import TableRow from "TableRow" /* 5917 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10335 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10613 */;
+import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 12099 */;
+import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 12100 */;
+import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 12106 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4828 */;
+import PresenceStore from "PresenceStore" /* 4876 */;
 
 require = fn;
 function MutualFriendRow(mutualFriend) {
@@ -24,8 +24,8 @@ function MutualFriendRow(mutualFriend) {
   const guildId = mutualFriend.guildId;
   ({ onPress, start, end } = mutualFriend);
   const tmp = closure_11();
-  const avatarDecoration = user(8517).useAvatarDecoration(user);
-  const obj = user(8517);
+  const avatarDecoration = user(7661).useAvatarDecoration(user);
+  const obj = user(7661);
   const items = [PresenceStore];
   const stateFromStoresObject = user(504).useStateFromStoresObject(items, () => ({ status: PresenceStore.getStatus(user.id), isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id) }));
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
@@ -37,7 +37,7 @@ function MutualFriendRow(mutualFriend) {
   obj3.subLabel = closure_9(ActivityStatusDefault, { userId: user.id, guildId, textStyle: tmp.activityStatusText });
   obj3.start = start;
   obj3.end = end;
-  return closure_9(user(5854).TableRow, obj3, user.id);
+  return closure_9(user(5917).TableRow, obj3, user.id);
 }
 class MutualGuildRow {
   constructor(arg0) {
@@ -91,10 +91,10 @@ class MutualGuildRow {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ActivityIndicator: metroRequire } = get_ActivityIndicator);
-const UserProfileSections = fn(8484).UserProfileSections;
+const UserProfileSections = fn(7628).UserProfileSections;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, gap: 20, paddingTop: nativeDefault.space.PX_8 }, loadingState: null, emptyState: null, activityStatusText: null, mutualGuildSubLabel: null };
 let obj3 = { flex: 1, gap: 20, paddingTop: nativeDefault.space.PX_8 };
 obj2.loadingState = { paddingTop: nativeDefault.space.PX_8, alignItems: "center" };
@@ -124,7 +124,7 @@ export default function UserProfileMutualsActionSheet(user) {
   }
   obj3.defaultIndex = num;
   let length;
-  const obj2 = user(9922);
+  const obj2 = user(9083);
   if (mutualFriends != null) {
     length = mutualFriends.length;
   }
@@ -134,7 +134,7 @@ export default function UserProfileMutualsActionSheet(user) {
     let tmp10 = closure_9(closure_5, obj5);
     let tmp9 = closure_9;
   } else if (0 === mutualFriends.length) {
-    const obj6 = { style: tmp.emptyState, children: closure_9(tmp6(12892).NoMutualFriends, {}) };
+    const obj6 = { style: tmp.emptyState, children: closure_9(tmp6(12107).NoMutualFriends, {}) };
     tmp10 = closure_9(closure_5, obj6);
     tmp9 = closure_9;
   } else {
@@ -157,7 +157,7 @@ export default function UserProfileMutualsActionSheet(user) {
           });
         }
     };
-    tmp10 = closure_9(tmp6(11447).UserProfileStackedActionSheetList, obj7);
+    tmp10 = closure_9(tmp6(10613).UserProfileStackedActionSheetList, obj7);
   }
   obj4.page = tmp10;
   const items = [obj4, ];
@@ -171,7 +171,7 @@ export default function UserProfileMutualsActionSheet(user) {
     const obj9 = { style: tmp.loadingState, children: tmp9(closure_6, {}) };
     let tmp9Result = tmp9(closure_5, obj9);
   } else if (0 === mutualGuilds.length) {
-    const obj10 = { style: tmp.emptyState, children: tmp9(tmp6(12886).NoMutualServers, {}) };
+    const obj10 = { style: tmp.emptyState, children: tmp9(tmp6(12101).NoMutualServers, {}) };
     tmp9Result = tmp9(closure_5, obj10);
   } else {
     const obj11 = {
@@ -192,7 +192,7 @@ export default function UserProfileMutualsActionSheet(user) {
           });
         }
     };
-    tmp9Result = tmp9(tmp6(11447).UserProfileStackedActionSheetList, obj11);
+    tmp9Result = tmp9(tmp6(10613).UserProfileStackedActionSheetList, obj11);
   }
   obj8.page = tmp9Result;
   items[1] = obj8;
@@ -207,7 +207,7 @@ export default function UserProfileMutualsActionSheet(user) {
   obj12.title = intl.string(user(1115).t["l2/aLi"]);
   const obj13 = { style: tmp.container, onLayout: callback, children: null };
   const tmp3Result4 = UserProfileStackedActionSheetDefault;
-  const items1 = [tmp9(closure_5, { children: tmp9(user(12896).Tabs, { state: segmentedControlState }) }), tmp9(user(12898).SegmentedControlPages, { state: segmentedControlState })];
+  const items1 = [tmp9(closure_5, { children: tmp9(user(12111).Tabs, { state: segmentedControlState }) }), tmp9(user(12113).SegmentedControlPages, { state: segmentedControlState })];
   obj13.children = items1;
   obj12.children = closure_10(closure_5, obj13);
   return tmp9(tmp3Result4, obj12);

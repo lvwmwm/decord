@@ -1,27 +1,27 @@
-// Module ID: 11483
-// Function ID: 11484
+// Module ID: 10649
+// Function ID: 10650
 // Name: OrbsBadgeCoachmark
-// Dependencies: [19, 17, 21, 4788, 11484, 1115, 4646, 11423, 2]
+// Dependencies: [19, 17, 21, 4836, 10650, 1115, 4693, 10589, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 11483 (OrbsBadgeCoachmark)
+// Module 10649 (OrbsBadgeCoachmark)
 import util from "util" /* 1115 */;
-import useCoachmark from "useCoachmark" /* 11423 */;
-import _modDef11484 from "module_11484" /* 11484 */;
+import useCoachmark from "useCoachmark" /* 10589 */;
+import _modDef10650 from "module_10650" /* 10650 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function OrbsBadgeCoachmarkImg() {
   const tmp = closure_7();
   const obj = { style: tmp.coachmarkImageContainer, children: null };
-  const obj2 = { source: { uri: _modDef11484 }, style: tmp.coachmarkImage };
-  obj.children = <hasOwnProperty source={{ uri: _modDef11484 }} style={tmp.coachmarkImage} />;
+  const obj2 = { source: { uri: _modDef10650 }, style: tmp.coachmarkImage };
+  obj.children = <hasOwnProperty source={{ uri: _modDef10650 }} style={tmp.coachmarkImage} />;
   return <React4 style={tmp.coachmarkImageContainer}>{null}</React4>;
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_7 = createStyles.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 80, height: 80 }, coachmarkDescription: { marginBottom: -10 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/OrbsBadgeCoachmark.tsx");

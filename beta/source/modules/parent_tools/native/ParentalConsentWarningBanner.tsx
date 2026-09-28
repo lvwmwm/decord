@@ -1,16 +1,16 @@
-// Module ID: 17465
-// Function ID: 17466
+// Module ID: 16821
+// Function ID: 16822
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7812, 1074, 21, 576, 4788, 1612, 15147, 15146, 17466, 9799, 4489, 7826, 1241, 7813, 7656, 4784, 5230, 1115, 2482, 2]
+// Dependencies: [19, 17, 6958, 1074, 21, 576, 4836, 1613, 14402, 14401, 16822, 8960, 4531, 6972, 1241, 6959, 6800, 4832, 5293, 1115, 2487, 2]
 // Exports: default
 
-// Module 17465 (ParentalConsentWarningBanner)
+// Module 16821 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import openUserSettings from "openUserSettings" /* 7656 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7813 */;
-import tinycolorDefault from "tinycolor" /* 7826 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import openUserSettings from "openUserSettings" /* 6800 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 6959 */;
+import tinycolorDefault from "tinycolor" /* 6972 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,14 +19,14 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, StyleSheet } = get_ActivityIndicator);
 const View = get_ActivityIndicator.View;
-const FamilyCenterSubPages = fn(7812).FamilyCenterSubPages;
+const FamilyCenterSubPages = fn(6958).FamilyCenterSubPages;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, UserSettingsSections: closure_9, VerticalGradient: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 let closure_14 = 28 + nativeDefault.space.PX_16;
 const locations = [0.5875, 1];
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { strip: null, pressable: null, label: null, link: null };
 const rect = { position: "absolute", top: 0, left: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.strip = rect;

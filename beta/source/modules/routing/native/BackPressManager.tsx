@@ -1,23 +1,23 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14001
+// Function ID: 14002
 // Name: BackPressManager
-// Dependencies: [17, 4656, 1610, 1482, 1982, 1364, 2]
+// Dependencies: [17, 4703, 1611, 1483, 1983, 1364, 2]
 
-// Module 14751 (BackPressManager)
+// Module 14001 (BackPressManager)
 import _mod17 from "module_17" /* 17 */;
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import useKeyboardType from "useKeyboardType" /* 4656 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+import KeyboardTypes from "KeyboardTypes" /* 1611 */;
+import useKeyboardType from "useKeyboardType" /* 4703 */;
+import LifecycleManager from "LifecycleManager" /* 1983 */;
 import size from "module_2" /* 2 */;
 
 function handleBackPress() {
   const keyboardType = useKeyboardType.getKeyboardType();
   let flag = keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
   if (flag) {
-    const obj2 = { type: tmp(1610).KeyboardTypes.SYSTEM };
-    tmp(1482).setKeyboardType(obj2);
+    const obj2 = { type: tmp(1611).KeyboardTypes.SYSTEM };
+    tmp(1483).setKeyboardType(obj2);
     flag = true;
-    const tmpResult = tmp(1482);
+    const tmpResult = tmp(1483);
   }
   return flag;
 }

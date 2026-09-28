@@ -1,12 +1,12 @@
-// Module ID: 13583
-// Function ID: 13584
+// Module ID: 12823
+// Function ID: 12824
 // Name: ConversationFocusScreen
-// Dependencies: [19, 7872, 21, 1487, 504, 13584, 2]
+// Dependencies: [19, 7018, 21, 1488, 504, 12824, 2]
 // Exports: default
 
-// Module 13583 (ConversationFocusScreen)
+// Module 12823 (ConversationFocusScreen)
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7872 */;
+import ConversationsStore from "ConversationsStore" /* 7018 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -14,10 +14,10 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationFocusScreen.tsx");
 
 export default function ConversationFocusScreen() {
-  const params = channelId(1487).useRoute().params;
+  const params = channelId(1488).useRoute().params;
   channelId = params.channelId;
   const conversationId = params.conversationId;
-  const obj = channelId(1487);
+  const obj = channelId(1488);
   const items = [ConversationsStore];
   const items1 = [channelId, conversationId];
   const messages = channelId(504).useStateFromStores(items, () => ConversationsStore.getHydratedMessages(channelId, conversationId), items1);
@@ -45,5 +45,5 @@ export default function ConversationFocusScreen() {
     return obj2;
   }, items3);
   ({ fullyHydrated, isFullFetchPending, startMessageId } = stateFromStoresObject);
-  return jsx(conversationId(13584), { channelId, conversationId, messages, fullyHydrated, isFullFetchPending, startMessageId });
+  return jsx(conversationId(12824), { channelId, conversationId, messages, fullyHydrated, isFullFetchPending, startMessageId });
 };

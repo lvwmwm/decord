@@ -1,18 +1,18 @@
-// Module ID: 10708
-// Function ID: 10709
+// Module ID: 9875
+// Function ID: 9876
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 5751, 2022, 1074, 1374, 21, 4788, 10682, 10472, 7439, 7459, 504, 1241, 4784, 1115, 5371, 4756, 4757, 5218, 5836, 9506, 10702, 2]
+// Dependencies: [32, 19, 17, 5814, 2024, 1074, 1374, 21, 4836, 9848, 9636, 6583, 6603, 504, 1241, 4832, 1115, 5435, 4801, 4802, 5281, 5899, 8661, 9869, 2]
 // Exports: default
 
-// Module 10708 (StickerPickerEmptyState)
+// Module 9875 (StickerPickerEmptyState)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HapticUtils from "HapticUtils" /* 4756 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4757 */;
-import StickerDefault from "Sticker" /* 10472 */;
-import StickersHooks from "StickersHooks" /* 10682 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
+import StickerDefault from "Sticker" /* 9636 */;
+import StickersHooks from "StickersHooks" /* 9848 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5751 */;
+import StickersStore from "StickersStore" /* 5814 */;
 
 const require = globalThis.__r;
 
@@ -28,13 +28,13 @@ function EmptyStateSticker(sticker) {
   return tmp2(StickerDefault, { sticker, size: 60, animated }, id);
 }
 const View = fn(17).View;
-const EMPTY_STATE_STICKERS = fn(2022).EMPTY_STATE_STICKERS;
+const EMPTY_STATE_STICKERS = fn(2024).EMPTY_STATE_STICKERS;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, AnalyticsSections: closure_9 } = Constants);
 const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_13 = createStyles.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stickers/native/StickerPickerEmptyState.tsx");
@@ -44,8 +44,8 @@ export default function _default() {
   _require = tmp;
   const fetchStickerPacks = require("StickersHooks").useFetchStickerPacks();
   let obj = require("StickersHooks");
-  analyticsLocations = analyticsLocations(7439)(analyticsLocations(7459).EMPTY_STATE).analyticsLocations;
-  const tmp3 = analyticsLocations(7439);
+  analyticsLocations = analyticsLocations(6583)(analyticsLocations(6603).EMPTY_STATE).analyticsLocations;
+  const tmp3 = analyticsLocations(6583);
   const items = [StickersStore];
   const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
     const mapped = EMPTY_STATE_STICKERS.map((item) => stickerById.getStickerById(item));
@@ -84,7 +84,7 @@ export default function _default() {
       if (sticker != null) {
         id = sticker.id;
       }
-      return closure_1_11(sticker(5371).PressableOpacity, obj, id);
+      return closure_1_11(sticker(5435).PressableOpacity, obj, id);
     })
   });
   const obj7 = { style: tmp.premiumButton, children: null };
@@ -106,16 +106,16 @@ export default function _default() {
       if (sticker != null) {
         id = sticker.id;
       }
-      return closure_1_11(sticker(5371).PressableOpacity, obj, id);
+      return closure_1_11(sticker(5435).PressableOpacity, obj, id);
     })
   };
-  obj9.source = analyticsLocations(9506);
+  obj9.source = analyticsLocations(8661);
   obj9.style = tmp.nitroWheel;
-  obj8.icon = closure_11(analyticsLocations(5836), obj9);
+  obj8.icon = closure_11(analyticsLocations(5899), obj9);
   const intl3 = require("util").intl;
   obj8.text = intl3.string(require("util").t.pj0XBN);
   obj8.onPress = function onPress() {
-    return analyticsLocations(10702)({ section: constants.EXPRESSION_PICKER });
+    return analyticsLocations(9869)({ section: constants.EXPRESSION_PICKER });
   };
   obj7.children = closure_11(require("components/Button/Button").Button, obj8);
   items2[3] = closure_11(View, obj7);

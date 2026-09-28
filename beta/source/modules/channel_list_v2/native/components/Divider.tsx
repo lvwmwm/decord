@@ -1,16 +1,16 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 11778
+// Function ID: 11779
 // Name: Divider
-// Dependencies: [19, 17, 21, 4788, 576, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 2]
 // Exports: default
 
-// Module 12578 (Divider)
+// Module 11778 (Divider)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_4 = createStyles.createStyles(() => {
   const obj = { divider: { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 8, marginBottom: 8, marginHorizontal: 16 } };
   return obj;

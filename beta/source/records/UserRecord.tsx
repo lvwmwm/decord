@@ -1,14 +1,14 @@
 // Module ID: 1386
 // Function ID: 1387
 // Name: UserRecord
-// Dependencies: [1387, 1074, 1374, 1388, 1389, 1393, 1394, 1378, 1395, 1396, 1086, 11, 1397, 1385, 1969, 1380, 1965, 1970, 2]
+// Dependencies: [1387, 1074, 1374, 1388, 1389, 1393, 1394, 1378, 1395, 1396, 1086, 11, 1397, 1385, 1970, 1380, 1966, 1971, 2]
 
 // Module 1386 (UserRecord)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1965 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1966 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1970 */;
 import Record from "Record" /* 1387 */;
 
 const AvatarUtilsDefault = AvatarUtils;
@@ -190,6 +190,14 @@ class UserRecord extends tmp2 {
       displayNameStyles = tmp12Result.parseServerDisplayNameStyles(global.display_name_styles);
     }
     tmp6.displayNameStyles = displayNameStyles;
+    vadColors = global.vadColors;
+    if (vadColors == null) {
+      vadColors = global.vad_colors;
+    }
+    if (vadColors == null) {
+      vadColors = null;
+    }
+    tmp6.vadColors = vadColors;
     typingIndicatorStyle = global.typingIndicatorStyle;
     if (typingIndicatorStyle == null) {
       tmp12Result1 = tmp12(tmp13[5]);

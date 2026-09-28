@@ -1,9 +1,46 @@
 // Module ID: 13827
 // Function ID: 13828
-// Dependencies: [1121]
+// Dependencies: [13814, 13792]
 
 // Module 13827
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13814 from "module_13814" /* 13814 */;
 
+const re2 = /#|\.prototype\./;
+function isForced(arg0, arg1) {
+  if (typeof fn === "function") {
+    const _String = String;
+    const str3 = String(arg0).replace(re2, ".");
+    const tmp5 = tmp[str3.toLowerCase(str3)];
+    let tmp7 = tmp5 === P;
+    if (!tmp7) {
+      if (tmp5 === N) {
+        tmp7 = tmp9;
+      } else {
+        let tmp11Result = dependencyMap;
+        if (_mod13814(arg1)) {
+          tmp11Result = tmp11(13792);
+          let tmp11ResultResult = tmp11Result(arg1);
+        } else {
+          tmp11ResultResult = arg1;
+        }
+        tmp11 = require;
+      }
+    }
+    return tmp7;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}
+const normalize = (arg0) => {
+  const str = String(arg0);
+  return String(arg0).replace(re2, ".").toLowerCase();
+};
+isForced.normalize = normalize;
+const data = {};
+isForced.data = data;
+isForced.NATIVE = "N";
+const N = "N";
+isForced.POLYFILL = "P";
+const P = "P";
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 177.5, height: 112, scales: [2, 3], hash: "d63f711157bc9a870f14f2f22d76c3fb", name: "guild_subscription_no_guilds_dark", type: "png" });
+export default isForced;

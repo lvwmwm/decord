@@ -1,11 +1,11 @@
-// Module ID: 4596
-// Function ID: 4597
+// Module ID: 4638
+// Function ID: 4639
 // Name: NitroQuestOrbsMultiplierRive
-// Dependencies: [109, 19, 21, 4518, 4597, 4573, 2]
+// Dependencies: [109, 19, 21, 4560, 4639, 4615, 2]
 
-// Module 4596 (NitroQuestOrbsMultiplierRive)
-import BaseRive from "BaseRive" /* 4518 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4573 */;
+// Module 4638 (NitroQuestOrbsMultiplierRive)
+import BaseRive from "BaseRive" /* 4560 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4615 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

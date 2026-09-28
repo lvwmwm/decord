@@ -1,11 +1,11 @@
-// Module ID: 4921
-// Function ID: 4922
+// Module ID: 4969
+// Function ID: 4970
 // Name: DCDSendUtils
-// Dependencies: [17, 1364, 4922, 2]
+// Dependencies: [17, 1364, 4970, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 4921 (DCDSendUtils)
-import NativeIntentsModuleDefault from "NativeIntentsModule" /* 4922 */;
+// Module 4969 (DCDSendUtils)
+import NativeIntentsModuleDefault from "NativeIntentsModule" /* 4970 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

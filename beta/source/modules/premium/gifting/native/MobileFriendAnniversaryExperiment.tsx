@@ -1,10 +1,10 @@
-// Module ID: 8371
-// Function ID: 8372
+// Module ID: 7524
+// Function ID: 7525
 // Name: MobileFriendAnniversaryExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 8371 (MobileFriendAnniversaryExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 7524 (MobileFriendAnniversaryExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-mobile-friendship-anniversary", kind: "user", defaultConfig: { enabled: false }, variations: null };

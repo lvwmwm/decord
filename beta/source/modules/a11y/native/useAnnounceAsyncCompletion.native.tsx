@@ -1,10 +1,10 @@
-// Module ID: 11220
-// Function ID: 11221
+// Module ID: 10388
+// Function ID: 10389
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 4639, 1364, 5203, 2]
+// Dependencies: [19, 17, 4685, 1364, 5266, 2]
 // Exports: default
 
-// Module 11220 (useAnnounceAsyncCompletion)
+// Module 10388 (useAnnounceAsyncCompletion)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -26,7 +26,7 @@ export default function useAnnounceAsyncCompletion() {
     if (polite === undefined) {
       str = "assertive";
     }
-    const AccessibilityAnnouncer = ref(4639).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = ref(4685).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(intl, str);
     if (obj.isIOS()) {
       if (tmpResult.getIsScreenReaderEnabled()) {

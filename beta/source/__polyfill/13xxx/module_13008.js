@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 192.33333333333334, height: 416, scales: [3], hash: "313fd6dabf823cbd5c0b9608bb8b54d4", name: "invite-bg", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 134, height: 56, scales: [2, 3], hash: "5491d41ca2212b1f11c074c452801d84", name: "img_discord_nitro_logo_centered_dark", type: "png" });

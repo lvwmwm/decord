@@ -1,11 +1,12 @@
 // Module ID: 4246
 // Function ID: 4247
-// Dependencies: [3877, 3878]
+// Dependencies: [3918, 3919, 3922]
 // Exports: default
 
 // Module 4246
-import _typeof_mod from "module_3877" /* 3877 */;
-import requiredArgs_mod from "requiredArgs" /* 3878 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
+import module_3922_mod from "module_3922" /* 3922 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -23,21 +24,30 @@ if (!requiredArgs) {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
+let module_3922 = module_3922_mod;
+if (!module_3922) {
+  const obj3 = { default: module_3922 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_3922;
+}
+module_3922 = tmp7;
 
-export default function isWithinInterval(arg0, start) {
+export default function setUTCISODay(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const time = _typeof.default(arg0).getTime();
-  const defaultResult1 = _typeof.default(arg0);
-  const time1 = _typeof.default(start.start).getTime();
-  const defaultResult2 = _typeof.default(start.start);
-  const time2 = _typeof.default(start.end).getTime();
-  if (time1 <= time2) {
-    return time >= time1 && time <= time2;
-  } else {
-    const _RangeError = RangeError;
-    const rangeError = new RangeError("Invalid interval");
-    throw rangeError;
+  const defaultResult1 = module_3922.default(arg1);
+  let diff = defaultResult1;
+  if (defaultResult1 % 7 === 0) {
+    diff = defaultResult1 - 7;
   }
-  const defaultResult3 = _typeof.default(start.end);
+  const defaultResult2 = _typeof.default(arg0);
+  let num = 0;
+  const uTCDay = defaultResult2.getUTCDay();
+  if ((diff % 7 + 7) % 7 < 1) {
+    num = 7;
+  }
+  const diff1 = num + diff - uTCDay;
+  defaultResult2.setUTCDate(defaultResult2.getUTCDate() + diff1);
+  return defaultResult2;
 };
 export default exports.default;

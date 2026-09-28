@@ -1,45 +1,45 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 15278
+// Function ID: 15279
 // Name: CheckpointButton
-// Dependencies: [17, 5013, 21, 4788, 576, 15980, 2]
+// Dependencies: [5061, 21, 4836, 15279, 576, 15262, 2]
 // Exports: default
 
-// Module 15996 (CheckpointButton)
+// Module 15278 (CheckpointButton)
 import nativeDefault from "native" /* 576 */;
-import CheckpointTextDefault from "CheckpointText" /* 15980 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5013 */;
+import CheckpointTextDefault from "CheckpointText" /* 15262 */;
+import CheckpointPressable from "CheckpointPressable" /* 15279 */;
+import CheckpointConstants from "CheckpointConstants" /* 5061 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4788 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
-({ Pressable: c2, View: c3 } = get_ActivityIndicator);
-({ CHECKPOINT_PRIMARY: closure_4, CHECKPOINT_BUTTON_BORDER, CHECKPOINT_BUTTON_SHADOW } = CheckpointConstants);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let obj = { container: { justifyContent: "center", marginRight: -4, marginBottom: -4, paddingRight: 4, paddingBottom: 4 }, backdrop: { position: "absolute", top: 4, left: 4, right: 0, bottom: 0, backgroundColor: CHECKPOINT_BUTTON_SHADOW }, button: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BLACK, borderWidth: 2, borderColor: CHECKPOINT_BUTTON_BORDER, height: 48 }, label: { textTransform: "uppercase" } };
-let closure_7 = createStyles.createStyles(obj);
+const CheckpointPressableDefault = CheckpointPressable;
+
+({ CHECKPOINT_PRIMARY: c2, CHECKPOINT_BUTTON_BORDER } = CheckpointConstants);
+({ jsx: c3, jsxs: closure_4 } = jsxProd);
+let obj = { container: { justifyContent: "center", marginRight: -CheckpointPressable.SHADOW_OFFSET, marginBottom: -CheckpointPressable.SHADOW_OFFSET }, button: null, label: null };
+let obj2 = { justifyContent: "center", marginRight: -CheckpointPressable.SHADOW_OFFSET, marginBottom: -CheckpointPressable.SHADOW_OFFSET };
+obj.button = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BLACK, borderWidth: 2, borderColor: CHECKPOINT_BUTTON_BORDER, height: 48 };
+obj.label = { textTransform: "uppercase" };
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointButton.tsx");
 
 export default function CheckpointButton(onPress) {
   ({ Icon, label } = onPress);
-  const tmp = closure_7();
-  const obj = { style: tmp.container, children: null };
-  const items = [hasOwnProperty(React3, { style: tmp.backdrop }), ];
-  const obj3 = { style: tmp.button, onPress: onPress.onPress, accessibilityRole: "button", accessibilityLabel: label, children: null };
-  let tmp4Result = null != Icon;
-  if (tmp4Result) {
-    const obj4 = { color, size: "sm" };
-    tmp4Result = tmp4(Icon, obj4);
+  const tmp = closure_5();
+  const obj = { containerStyle: tmp.container, style: tmp.button, onPress: onPress.onPress, accessibilityRole: "button", accessibilityLabel: label, children: null };
+  let tmp6 = null != Icon;
+  if (tmp6) {
+    const obj2 = { color, size: "sm" };
+    tmp6 = React3(Icon, obj2);
   }
-  const items1 = [tmp4Result, ];
-  let tmp4Result2 = null != label;
-  if (tmp4Result2) {
-    const obj5 = { variant: "text-lg/medium", style: tmp.label, children: label };
-    tmp4Result2 = tmp4(CheckpointTextDefault, obj5);
+  const items = [tmp6, ];
+  let tmp9 = null != label;
+  if (tmp9) {
+    const obj3 = { variant: "text-lg/medium", style: tmp.label, children: label };
+    tmp9 = React3(CheckpointTextDefault, obj3);
   }
-  items1[1] = tmp4Result2;
-  obj3.children = items1;
-  items[1] = timestampProducer(React2, obj3);
+  items[1] = tmp9;
   obj.children = items;
-  return timestampProducer(React3, obj);
+  return React4(CheckpointPressableDefault, obj);
 };

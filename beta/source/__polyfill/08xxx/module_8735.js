@@ -1,12 +1,9 @@
 // Module ID: 8735
 // Function ID: 8736
-// Dependencies: [8736, 668]
+// Dependencies: [1121]
 
 // Module 8735
-import baseAssignValue from "baseAssignValue" /* 668 */;
-import _mod8736 from "module_8736" /* 8736 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default _mod8736((arg0, arg1, arg2) => {
-  baseAssignValue(arg0, arg2, arg1);
-});
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "231cc2e45d7613cf5eb4ce4ba6961f0d", name: "EmbedIcon", type: "png" });

@@ -1,12 +1,12 @@
-// Module ID: 16087
-// Function ID: 16088
+// Module ID: 15373
+// Function ID: 15374
 // Name: DesignSystemsAlertModalSetting
-// Dependencies: [8265, 1074, 11754, 16088, 2]
+// Dependencies: [7417, 1074, 11006, 15374, 2]
 
-// Module 16087 (DesignSystemsAlertModalSetting)
+// Module 15373 (DesignSystemsAlertModalSetting)
 import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

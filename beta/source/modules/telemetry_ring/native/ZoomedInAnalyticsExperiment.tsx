@@ -1,11 +1,11 @@
-// Module ID: 1984
-// Function ID: 1985
+// Module ID: 1985
+// Function ID: 1986
 // Name: ZoomedInAnalyticsExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isZoomedExperimentEnabled
 
-// Module 1984 (ZoomedInAnalyticsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 1985 (ZoomedInAnalyticsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2025-12-zoomed-analytics", defaultConfig: { enabled: false }, variations: null };

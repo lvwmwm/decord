@@ -1,14 +1,14 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 9176
+// Function ID: 9177
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 4788, 10016, 1177, 1115, 2]
+// Dependencies: [17, 21, 4836, 9177, 1177, 1115, 2]
 // Exports: default
 
-// Module 10015 (SecureFramesExistingVerificationsHelpMessage)
+// Module 9176 (SecureFramesExistingVerificationsHelpMessage)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 10016 */;
-import createStyles from "createStyles" /* 4788 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9177 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

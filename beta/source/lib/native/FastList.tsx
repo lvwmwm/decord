@@ -1,17 +1,17 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 6493
+// Function ID: 6494
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 558, 5838, 4784, 1364, 4524, 7350, 7351, 6901, 7352, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 558, 5901, 4832, 1364, 4566, 6494, 6495, 6045, 6496, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7349 (FastList)
+// Module 6493 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4524 */;
-import NativeViewDefault from "NativeView" /* 5838 */;
-import BottomSheetModal from "BottomSheetModal" /* 6901 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7352 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
+import NativeViewDefault from "NativeView" /* 5901 */;
+import BottomSheetModal from "BottomSheetModal" /* 6045 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 6496 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

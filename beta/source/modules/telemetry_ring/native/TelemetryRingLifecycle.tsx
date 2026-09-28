@@ -1,16 +1,16 @@
 // Module ID: 1234
 // Function ID: 1235
 // Name: telemetry_ring/TelemetryRingLifecycle
-// Dependencies: [1235, 1372, 1979, 1074, 1982, 1983, 1358, 573, 1987, 2]
+// Dependencies: [1235, 1372, 1980, 1074, 1983, 1984, 1358, 573, 1988, 2]
 
 // Module 1234 (telemetry_ring/TelemetryRingLifecycle)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
-import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1983 */;
+import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1984 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 import UserStore from "UserStore" /* 1372 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+import AppStateStore from "AppStateStore" /* 1980 */;
+import LifecycleManager from "LifecycleManager" /* 1983 */;
 
 const AppStates = fn(1074).AppStates;
 class TelemetryRingLifecycleImpl extends tmp2 {
@@ -23,9 +23,9 @@ class TelemetryRingLifecycleImpl extends tmp2 {
       const result = applyArgumentsResult._updateZoomedInExport();
     };
     applyArgumentsResult._handleLogout = function _handleLogout() {
-      applyArgumentsResult(1987).clear();
-      const obj = applyArgumentsResult(1987);
-      applyArgumentsResult(1983).reset();
+      applyArgumentsResult(1988).clear();
+      const obj = applyArgumentsResult(1988);
+      applyArgumentsResult(1984).reset();
     };
     return applyArgumentsResult;
   }
@@ -39,11 +39,11 @@ prototype["_updateZoomedInExport"] = function _updateZoomedInExport() {
   }
   const result = ProcessUtilsDefault.setShouldCollectHermesInstrumentedStats(shouldRunResult);
   if (state === AppStates.ACTIVE) {
-    tmp6(1983).start();
-    const tmp6Result = tmp6(1983);
+    tmp6(1984).start();
+    const tmp6Result = tmp6(1984);
   } else {
-    tmp6(1983).stop();
-    const tmp6Result2 = tmp6(1983);
+    tmp6(1984).stop();
+    const tmp6Result2 = tmp6(1984);
   }
 };
 prototype["_initialize"] = function _initialize() {
@@ -58,9 +58,9 @@ prototype["_initialize"] = function _initialize() {
       ApexExperimentStore.removeChangeListener(self._handleEligibilityChange);
     };
     const obj = self(573);
-    self(1983).initialize();
+    self(1984).initialize();
     const result = self._updateZoomedInExport();
-    const obj2 = self(1983);
+    const obj2 = self(1984);
   }
 };
 prototype["_terminate"] = function _terminate() {

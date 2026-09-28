@@ -1,9 +1,9 @@
-// Module ID: 12760
-// Function ID: 12761
+// Module ID: 11970
+// Function ID: 11971
 // Name: GuildProgressActionCreators
 // Dependencies: [573, 2]
 
-// Module 12760 (GuildProgressActionCreators)
+// Module 11970 (GuildProgressActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

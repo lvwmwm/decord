@@ -1,9 +1,16 @@
 // Module ID: 5295
 // Function ID: 5296
-// Dependencies: [1121]
+// Dependencies: [5296]
 
 // Module 5295
-import registerAsset from "module_1121" /* 1121 */;
+import _modDef5296 from "module_5296" /* 5296 */;
 
+const require = globalThis.__r;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3c1f2faaaf73c3a8bd052c79cfecb913", name: "ImageIcon", type: "png" });
+for (const key10016 in require("module_5296")) {
+  arg5[key10016] = require("module_5296")[key10016];
+  continue;
+}
+
+export default _modDef5296;
+export const LinearGradient = _modDef5296;

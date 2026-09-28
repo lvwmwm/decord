@@ -1,12 +1,12 @@
-// Module ID: 16537
-// Function ID: 16538
+// Module ID: 15827
+// Function ID: 15828
 // Name: ShowAllVoiceChannelsButton
-// Dependencies: [19, 7807, 21, 504, 16538, 1478, 5218, 1115, 5351, 2]
+// Dependencies: [19, 6953, 21, 504, 15828, 1479, 5281, 1115, 5415, 2]
 
-// Module 16537 (ShowAllVoiceChannelsButton)
-import VoiceCategoryActionCreators from "VoiceCategoryActionCreators" /* 16538 */;
+// Module 15827 (ShowAllVoiceChannelsButton)
+import VoiceCategoryActionCreators from "VoiceCategoryActionCreators" /* 15828 */;
 import noop from "module_19" /* 19 */;
-import ChannelListVoiceCategoryStore from "ChannelListVoiceCategoryStore" /* 7807 */;
+import ChannelListVoiceCategoryStore from "ChannelListVoiceCategoryStore" /* 6953 */;
 
 require = fn;
 const jsx = fn(21).jsx;

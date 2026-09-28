@@ -1,17 +1,17 @@
-// Module ID: 7615
-// Function ID: 7616
+// Module ID: 6759
+// Function ID: 6760
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4428, 4707, 2063, 1074, 1101, 7616, 7521, 5769, 1241, 1271, 1472, 2]
+// Dependencies: [5, 4470, 4754, 2067, 1074, 1101, 6760, 6665, 5832, 1241, 1271, 1473, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7615 (GuildDiscoveryUtils)
+// Module 6759 (GuildDiscoveryUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import _modDef1472 from "module_1472" /* 1472 */;
+import _modDef1473 from "module_1473" /* 1473 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4428 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import LurkingStore from "LurkingStore" /* 4470 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 let closure_11 = async function _startLurking(arg0, value) {
@@ -136,7 +136,7 @@ let closure_11 = async function _startLurking(arg0, value) {
   }
   closure_133_2 = obj5;
   closure_133_3 = closure_3;
-  return "PX_16";
+  return "flex";
 };
 function makeDiscoverableGuild(body) {
   const obj = { id: body.id, name: body.name, description: body.description, splash: body.splash, banner: body.banner, icon: body.icon, features: new Set(body.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: null, preferredLocale: null, discoverySplash: null, emojis: null, emojiCount: null, stickers: null, stickerCount: null, keywords: null };
@@ -180,7 +180,7 @@ let closure_13 = async function _getDiscoverableGuild(guild_ids) {
             const HTTP = HTTPUtils.HTTP;
             const request = { url: constants.GUILD_DISCOVERY, query: null, oldFormErrors: true, rejectWithError: true };
             const obj4 = { guild_ids };
-            request.query = _modDef1472.stringify(obj4);
+            request.query = _modDef1473.stringify(obj4);
             c5 = 2;
             c6 = 1;
             const obj5 = { value: HTTP.get(request), done: false };

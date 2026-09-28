@@ -1,18 +1,18 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 15277
+// Function ID: 15278
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 5013, 1074, 21, 4788, 576, 1612, 15996, 8577, 1115, 15980, 3032, 4483, 2108, 5877, 15997, 2]
+// Dependencies: [17, 5061, 1074, 21, 4836, 576, 1613, 15278, 7722, 1115, 15262, 3037, 4525, 2111, 5940, 15279, 15280, 2]
 // Exports: default
 
-// Module 15995 (CheckpointNavigationControls)
+// Module 15277 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import CheckpointTextDefault from "CheckpointText" /* 15980 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import CheckpointConstants from "CheckpointConstants" /* 5061 */;
+import CheckpointTextDefault from "CheckpointText" /* 15262 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5013 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4788 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,15 +21,13 @@ const require = globalThis.__r;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let obj = { container: null, homeContainer: null, link: null, routeControls: null, control: null, nextContainer: null, nextShadow: null, nextControl: null };
+let obj = { container: null, homeContainer: null, link: null, routeControls: null, control: null, nextControl: null };
 let rect = { position: "absolute", left: nativeDefault.space.PX_24, right: nativeDefault.space.PX_24, bottom: nativeDefault.space.PX_16 };
 obj.container = rect;
 obj.homeContainer = { gap: nativeDefault.space.PX_24 };
 obj.link = { textDecorationLine: "underline" };
 obj.routeControls = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 obj.control = { width: 48, height: 48, alignItems: "center", justifyContent: "center" };
-obj.nextContainer = { width: 52, height: 52, paddingRight: 4, paddingBottom: 4 };
-obj.nextShadow = { position: "absolute", top: 4, left: 4, right: 0, bottom: 0, backgroundColor: CheckpointConstants.CHECKPOINT_BUTTON_SHADOW };
 let obj2 = { gap: nativeDefault.space.PX_24 };
 obj.nextControl = { borderWidth: 2, borderColor: CHECKPOINT_PRIMARY, backgroundColor: nativeDefault.colors.BLACK };
 let closure_9 = createStyles.createStyles(obj);
@@ -51,9 +49,9 @@ export default function CheckpointNavigationControls(onNext) {
     const intl3 = require("util").intl;
     obj2.label = intl3.string(require("util").t.I0v0Qv);
     obj2.onPress = onNext;
-    const items2 = [closure_7(tmp2(15996), obj2), ];
+    const items2 = [closure_7(tmp2(15278), obj2), ];
     const obj3 = { variant: "text-sm/medium", children: null };
-    const tmp2Result = tmp2(15996);
+    const tmp2Result = tmp2(15278);
     const intl4 = require("util").intl;
     const obj4 = {
       learnMoreHook(children, arg1) {
@@ -61,19 +59,19 @@ export default function CheckpointNavigationControls(onNext) {
             variant: "text-sm/medium",
             style: link.link,
             onPress() {
-              const obj = closure_1_1(4483);
-              return obj.openURL(closure_1_1(2108).getArticleURL(constants.CHECKPOINT));
+              const obj = closure_1_1(4525);
+              return obj.openURL(closure_1_1(2111).getArticleURL(constants.CHECKPOINT));
             },
             accessibilityRole: "link",
             children
           }, arg1);
         }
     };
-    obj3.children = intl4.format(tmp2(3032).hcNhyq, obj4);
-    items2[1] = closure_7(tmp2(15980), obj3);
+    obj3.children = intl4.format(tmp2(3037).hcNhyq, obj4);
+    items2[1] = closure_7(tmp2(15262), obj3);
     obj.children = items2;
-    let tmp10 = obj;
-    const tmp2Result2 = tmp2(15980);
+    let tmp11 = obj;
+    const tmp2Result3 = tmp2(15262);
   } else {
     items1[1] = tmp.routeControls;
     obj.style = items1;
@@ -83,24 +81,20 @@ export default function CheckpointNavigationControls(onNext) {
     const obj6 = { color: CHECKPOINT_PRIMARY };
     obj5.children = closure_7(require("ArrowLargeLeftIcon").ArrowLargeLeftIcon, obj6);
     const items3 = [closure_7(closure_3, obj5), ];
-    const obj7 = { style: tmp.nextContainer, children: null };
-    const obj8 = { style: tmp.nextShadow };
-    const items4 = [closure_7(tmp5, obj8), ];
-    const obj9 = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
-    const items5 = [, ];
-    ({ control: arr5[0], nextControl: arr5[1] } = tmp);
-    obj9.style = items5;
-    obj9.onPress = onNext;
+    const obj7 = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+    const items4 = [, ];
+    ({ control: arr4[0], nextControl: arr4[1] } = tmp);
+    obj7.style = items4;
+    obj7.onPress = onNext;
     const intl2 = require("util").intl;
     const t = require("util").t;
-    obj9.accessibilityLabel = intl2.string(isTerminal ? t.i4jeWR : t.PDTjLN);
-    const obj10 = { color: CHECKPOINT_PRIMARY };
-    obj9.children = closure_7(require("ArrowLargeRightIcon").ArrowLargeRightIcon, obj10);
-    items4[1] = closure_7(closure_3, obj9);
-    obj7.children = items4;
-    items3[1] = tmp4(tmp5, obj7);
+    obj7.accessibilityLabel = intl2.string(isTerminal ? t.i4jeWR : t.PDTjLN);
+    const obj8 = { color: CHECKPOINT_PRIMARY };
+    obj7.children = closure_7(require("ArrowLargeRightIcon").ArrowLargeRightIcon, obj8);
+    items3[1] = closure_7(tmp2(15279), obj7);
     obj.children = items3;
-    tmp10 = obj;
+    tmp11 = obj;
+    const tmp2Result4 = tmp2(15279);
   }
-  return closure_8(closure_4, tmp10);
+  return closure_8(closure_4, tmp11);
 };

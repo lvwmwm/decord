@@ -1,17 +1,14 @@
 // Module ID: 13194
 // Function ID: 13195
-// Dependencies: []
-// Exports: getSDKSource, isBrowserBundle
+// Dependencies: [13195, 13196, 13204, 13208]
 
 // Module 13194
+import _mod13208 from "module_13208" /* 13208 */;
+import assign from "module_13195" /* 13195 */;
+import Deflate from "Deflate" /* 13196 */;
+import Inflate from "Inflate" /* 13204 */;
 
-export function getSDKSource() {
-  return "npm";
-}
-export const isBrowserBundle = function isBrowserBundle() {
-  let prop = typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined";
-  if (typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined") {
-    prop = globalThis.__SENTRY_BROWSER_BUNDLE__;
-  }
-  return prop;
-};
+const obj = {};
+assign.assign(obj, Deflate, Inflate, _mod13208);
+
+export default obj;

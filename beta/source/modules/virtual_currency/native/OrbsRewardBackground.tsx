@@ -1,18 +1,18 @@
-// Module ID: 12066
-// Function ID: 12067
+// Module ID: 10759
+// Function ID: 10760
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 4780, 1979, 21, 504, 1094, 5836, 12067, 8610, 12068, 2]
+// Dependencies: [32, 19, 4825, 1980, 21, 504, 1094, 5899, 10760, 7755, 10761, 2]
 // Exports: OrbsRewardBackground
 
-// Module 12066 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef12067 from "module_12067" /* 12067 */;
+// Module 10759 (OrbsRewardBackground)
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef10760 from "module_10760" /* 10760 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import AppStateStore from "AppStateStore" /* 1980 */;
 
-const _modDef12068 = tmp15(12068);
+const _modDef10761 = tmp15(10761);
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -58,7 +58,7 @@ export const OrbsRewardBackground = function OrbsRewardBackground(arg0) {
   const tmp13 = closure_8;
   const tmp14 = closure_7;
   const tmp7 = _slicedToArray(noop.useState(false), 2);
-  obj5.uri = _modDef12067;
+  obj5.uri = _modDef10760;
   obj4.source = obj5;
   obj4.style = style;
   obj4.onLoad = callback;
@@ -69,11 +69,11 @@ export const OrbsRewardBackground = function OrbsRewardBackground(arg0) {
   }
   if (tmp14Result) {
     const obj6 = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    const obj7 = { uri: _modDef12068 };
+    const obj7 = { uri: _modDef10761 };
     obj6.source = obj7;
     obj6.style = style;
     obj6.onLoad = callback1;
-    tmp14Result = tmp14(tmp(8610).VideoComponent, obj6);
+    tmp14Result = tmp14(tmp(7755).VideoComponent, obj6);
   }
   children[1] = tmp14Result;
   return tmp13(noop.Fragment, { children });

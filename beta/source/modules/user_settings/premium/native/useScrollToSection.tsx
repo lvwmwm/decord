@@ -1,10 +1,10 @@
-// Module ID: 13720
-// Function ID: 13721
+// Module ID: 12963
+// Function ID: 12964
 // Name: useScrollToSection
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 13720 (useScrollToSection)
+// Module 12963 (useScrollToSection)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

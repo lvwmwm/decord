@@ -1,22 +1,22 @@
-// Module ID: 7666
-// Function ID: 7667
+// Module ID: 6810
+// Function ID: 6811
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 2038, 21, 4788, 576, 1612, 4755, 7427, 5216, 5941, 4784, 1115, 2252, 5218, 2]
+// Dependencies: [19, 17, 2042, 21, 4836, 576, 1613, 4800, 6571, 5279, 6811, 4832, 1115, 2255, 5281, 2]
 // Exports: default
 
-// Module 7666 (GiftCardMobileConsumptionActionSheet)
+// Module 6810 (GiftCardMobileConsumptionActionSheet)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import _modDef2252 from "module_2252" /* 2252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import _modDef2255 from "module_2255" /* 2255 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { sheet: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: null, illustration: null, body: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.container = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -62,20 +62,20 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   const items2 = [tmp.container, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   obj2.style = items2;
   const obj3 = { spacing: nativeDefault.space.PX_16, children: null };
-  const items3 = [closure_6(View, { style: tmp.illustration, children: closure_6(markAsDismissed(5941).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
+  const items3 = [closure_6(View, { style: tmp.illustration, children: closure_6(markAsDismissed(6811).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
   const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: null };
   const intl = markAsDismissed(1115).intl;
-  obj5.children = intl.string(_modDef2252.V3DI1E);
-  items3[1] = closure_6(markAsDismissed(4784).Text, obj5);
+  obj5.children = intl.string(_modDef2255.V3DI1E);
+  items3[1] = closure_6(markAsDismissed(4832).Text, obj5);
   const obj6 = { size: "lg", variant: "secondary", grow: true, text: null, onPress: null };
   const intl2 = markAsDismissed(1115).intl;
-  obj6.text = intl2.string(_modDef2252.YZePWx);
+  obj6.text = intl2.string(_modDef2255.YZePWx);
   obj6.onPress = function onPress() {
     return closure_3(ContentDismissActionType.USER_DISMISS);
   };
-  items3[2] = closure_6(markAsDismissed(5218).Button, obj6);
+  items3[2] = closure_6(markAsDismissed(5281).Button, obj6);
   obj3.children = items3;
-  obj2.children = closure_7(markAsDismissed(5216).Stack, obj3);
+  obj2.children = closure_7(markAsDismissed(5279).Stack, obj3);
   obj.children = closure_6(View, obj2);
-  return closure_6(markAsDismissed(7427).BottomSheet, obj);
+  return closure_6(markAsDismissed(6571).BottomSheet, obj);
 };

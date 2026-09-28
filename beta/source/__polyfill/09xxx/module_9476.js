@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/BrandInvertedIcon", width: 60, height: 60, scales: [2, 3], hash: "d3530007d60b5d4f6a3d08cddf26f42c", name: "BrandInvertedIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 12, height: 12, scales: [2, 3], hash: "b28329d7d2ebd0b330f6112973e5d746", name: "ic_sparkle", type: "png" });

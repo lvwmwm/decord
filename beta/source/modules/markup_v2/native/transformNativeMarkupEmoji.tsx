@@ -1,34 +1,43 @@
-// Module ID: 8400
-// Function ID: 8401
+// Module ID: 7556
+// Function ID: 7557
 // Name: transformNativeMarkupEmoji
-// Dependencies: [5239, 1397, 2]
+// Dependencies: [4483, 5302, 1397, 2]
 // Exports: transformNativeEmoji
 
-// Module 8400 (transformNativeMarkupEmoji)
+// Module 7556 (transformNativeMarkupEmoji)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import MarkupTypes from "MarkupTypes" /* 5239 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
+import MarkupTypes from "MarkupTypes" /* 5302 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupEmoji.tsx");
+let result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupEmoji.tsx");
 
 export const transformNativeEmoji = function transformNativeEmoji(value, disableAnimatedEmoji) {
   if ("unicode" === value.type) {
     value = value.value;
-    const obj = { type: MarkupTypes.AST_KEY.EMOJI, content: value, surrogate: value };
-    return obj;
+    const result = UnicodeEmojisDefault.convertSurrogateToName(value, false);
+    const obj2 = { type: MarkupTypes.AST_KEY.EMOJI, content: null, surrogate: null };
+    let combined = value;
+    if ("" !== result) {
+      const _HermesInternal = HermesInternal;
+      combined = ":" + result + ":";
+    }
+    obj2.content = combined;
+    obj2.surrogate = value;
+    return obj2;
   } else {
     ({ id, animated, name } = value.value);
-    const str = id.toString();
-    const obj3 = { id: str, animated, size: 48 };
-    let emojiURL = AvatarUtilsDefault.getEmojiURL(obj3);
-    const obj5 = { id: str, animated: false, size: 48 };
-    const emojiURL1 = AvatarUtilsDefault.getEmojiURL(obj5);
-    const obj6 = { type: MarkupTypes.AST_KEY.CUSTOM_EMOJI, id: str, alt: name, src: null, frozenSrc: null };
+    const str1 = id.toString();
+    const obj4 = { id: str1, animated, size: 48 };
+    let emojiURL = AvatarUtilsDefault.getEmojiURL(obj4);
+    const obj6 = { id: str1, animated: false, size: 48 };
+    const emojiURL1 = AvatarUtilsDefault.getEmojiURL(obj6);
+    const obj7 = { type: MarkupTypes.AST_KEY.CUSTOM_EMOJI, id: str1, alt: name, src: null, frozenSrc: null };
     if (true === disableAnimatedEmoji.disableAnimatedEmoji) {
       emojiURL = emojiURL1;
     }
-    obj6.src = emojiURL;
-    obj6.frozenSrc = emojiURL1;
-    return obj6;
+    obj7.src = emojiURL;
+    obj7.frozenSrc = emojiURL1;
+    return obj7;
   }
 };

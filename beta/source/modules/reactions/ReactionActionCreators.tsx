@@ -1,22 +1,22 @@
-// Module ID: 8038
-// Function ID: 8039
+// Module ID: 7183
+// Function ID: 7184
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 2041, 5008, 1074, 1091, 5140, 1115, 1110, 573, 8037, 1271, 8039, 1241, 4968, 4639, 8057, 4445, 2]
+// Dependencies: [5, 502, 2045, 5056, 1074, 1091, 5203, 1115, 1110, 573, 7182, 1271, 7184, 1241, 5016, 4685, 7202, 4487, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 8038 (ReactionActionCreators)
+// Module 7183 (ReactionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
-import EmojiUtils from "EmojiUtils" /* 4445 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8037 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8039 */;
+import EmojiUtils from "EmojiUtils" /* 4487 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7182 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7184 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MessageStore from "MessageStore" /* 5008 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MessageStore from "MessageStore" /* 5056 */;
 
 require = fn;
 function checkReactionResponse(arg0, fn, isRetry) {
@@ -140,7 +140,7 @@ let closure_15 = async function _getReactors(arg0, value) {
           closure_129_8 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -254,7 +254,7 @@ let closure_17 = async function _addReaction(arg0, value) {
           closure_133_7 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp6) {
         if (arg0 === 1) {
@@ -654,7 +654,7 @@ let closure_23 = async function _removeReaction(arg0, value) {
           closure_130_7 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp6) {
         if (arg0 === 1) {
@@ -789,7 +789,7 @@ let closure_23 = async function _removeReaction(arg0, value) {
                   if (burst != null) {
                     burst = burst.burst;
                   }
-                  const AccessibilityAnnouncer = channelId(4639).AccessibilityAnnouncer;
+                  const AccessibilityAnnouncer = channelId(4685).AccessibilityAnnouncer;
                   intl = channelId(1115).intl;
                   if (!burst) {
                     const obj6 = { name: tmp2.name };

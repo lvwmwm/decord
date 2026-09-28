@@ -1,14 +1,14 @@
-// Module ID: 11562
-// Function ID: 11563
+// Module ID: 10837
+// Function ID: 10838
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7868, 7872, 8663, 21, 504, 7439, 7459, 11551, 2]
+// Dependencies: [19, 7014, 7018, 7808, 21, 504, 6583, 6603, 10826, 2]
 // Exports: default
 
-// Module 11562 (MessagePreviewReactions)
+// Module 10837 (MessagePreviewReactions)
 import noop from "module_19" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7868 */;
-import ConversationsStore from "ConversationsStore" /* 7872 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8663 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7014 */;
+import ConversationsStore from "ConversationsStore" /* 7018 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 7808 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -31,13 +31,13 @@ export default function MessagePreviewReactions(emoji) {
     return null != message ? message.reactions : closure_7;
   }, items1);
   const obj = channelId(504);
-  const obj2 = { value: messageId(7439)(messageId(7459).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
+  const obj2 = { value: messageId(6583)(messageId(6603).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
   if (stateFromStores.length > 0) {
     const obj3 = { channelId, messageId, emoji: emoji.emoji, reactions: stateFromStores };
-    let tmp4Result = tmp4(tmp(11551).MessageReactionsContent, obj3);
+    let tmp4Result = tmp4(tmp(10826).MessageReactionsContent, obj3);
   } else {
-    tmp4Result = tmp4(tmp(11551).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(10826).MessageReactionsEmpty, {});
   }
   obj2.children = tmp4Result;
-  return jsx(channelId(7439).AnalyticsLocationProvider, { value: messageId(7439)(messageId(7459).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
+  return jsx(channelId(6583).AnalyticsLocationProvider, { value: messageId(6583)(messageId(6603).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
 };

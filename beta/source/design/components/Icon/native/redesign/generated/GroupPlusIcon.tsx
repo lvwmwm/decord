@@ -1,13 +1,13 @@
-// Module ID: 10328
-// Function ID: 10329
+// Module ID: 9492
+// Function ID: 9493
 // Name: GroupPlusIcon
-// Dependencies: [19, 21, 576, 4488, 10327, 2]
+// Dependencies: [19, 21, 576, 4530, 9491, 2]
 // Exports: GroupPlusIcon
 
-// Module 10328 (GroupPlusIcon)
+// Module 9492 (GroupPlusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod10327 from "module_10327" /* 10327 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod9491 from "module_9491" /* 9491 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const GroupPlusIcon = function GroupPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10327, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9491, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

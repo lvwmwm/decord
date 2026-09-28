@@ -1,16 +1,16 @@
-// Module ID: 15064
-// Function ID: 15065
+// Module ID: 14319
+// Function ID: 14320
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4788, 15065, 15061, 7400, 15066, 4784, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 14320, 14316, 6544, 14321, 4832, 1115, 2]
 // Exports: default
 
-// Module 15064 (TwoFASetupLanding)
+// Module 14319 (TwoFASetupLanding)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7400 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 15061 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 15065 */;
-import _modDef15066 from "module_15066" /* 15066 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 14316 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 14320 */;
+import _modDef14321 from "module_14321" /* 14321 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_7 = createStyles.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" }, authIcon: { width: 120, height: 120, marginBottom: 32 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupLanding.tsx");
@@ -29,7 +29,7 @@ export default function TwoFASetupLanding() {
   const obj2 = { children: null };
   const obj3 = { style: tmp.container, children: null };
   const obj4 = { bottom: true, style: tmp.container, children: null };
-  const items = [hasOwnProperty(React3, { source: _modDef15066, style: tmp.authIcon }), , ];
+  const items = [hasOwnProperty(React3, { source: _modDef14321, style: tmp.authIcon }), , ];
   const obj6 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj6.children = intl.string(util.t["9E74Dx"]);

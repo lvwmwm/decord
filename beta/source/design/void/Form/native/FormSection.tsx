@@ -1,15 +1,15 @@
-// Module ID: 8912
-// Function ID: 8913
+// Module ID: 8062
+// Function ID: 8063
 // Name: FormSection
-// Dependencies: [19, 17, 1181, 21, 4788, 576, 5935, 7414, 8909, 5936, 8913, 1364, 2]
+// Dependencies: [19, 17, 1181, 21, 4836, 576, 5998, 6558, 8059, 5999, 8063, 1364, 2]
 // Exports: default
 
-// Module 8912 (FormSection)
+// Module 8062 (FormSection)
 import nativeDefault from "native" /* 576 */;
-import RedesignCompat from "RedesignCompat" /* 5935 */;
-import FormRowDefault from "FormRow" /* 7414 */;
-import FormDividerDefault from "FormDivider" /* 8909 */;
-import FormTitleDefault from "FormTitle" /* 8913 */;
+import RedesignCompat from "RedesignCompat" /* 5998 */;
+import FormRowDefault from "FormRow" /* 6558 */;
+import FormDividerDefault from "FormDivider" /* 8059 */;
+import FormTitleDefault from "FormTitle" /* 8063 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 const TitleStyleType = fn(1181).TitleStyleType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { titledSectionHeader: { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 16 }, titledSectionNoBorder: { marginTop: 24 }, titledSectionNoBorderOrMargin: {}, emptySectionHeader: { marginTop: 24 }, sectionBody: {}, sectionBodyIOSBorder: {} };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -69,7 +69,7 @@ export default function FormSection(arg0) {
     }
     obj4.hasTrailingText = flag;
     obj4.children = found;
-    obj3.children = timestampProducer(tmp3(5936).TableRowGroup, obj4);
+    obj3.children = timestampProducer(tmp3(5999).TableRowGroup, obj4);
     const items = [timestampProducer(React4, obj3), ];
     let tmp20Result = null;
     if (null != hint) {

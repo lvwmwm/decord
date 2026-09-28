@@ -1,16 +1,16 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 14267
+// Function ID: 14268
 // Name: UniqueUsernamesStore
-// Dependencies: [1438, 1091, 504, 573, 2]
+// Dependencies: [1439, 1091, 504, 573, 2]
 
-// Module 15012 (UniqueUsernamesStore)
+// Module 14267 (UniqueUsernamesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import privDefault from "priv" /* 1438 */;
+import privDefault from "priv" /* 1439 */;
 
 let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
-let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "PX_16", fetched: null } } };
+let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "flex", fetched: null } } };
 const Store = initializeDefault.Store;
 class UniqueUsernamesStore extends Store {
 }
@@ -84,7 +84,7 @@ const uniqueUsernamesStore = new UniqueUsernamesStore(DispatcherDefault, {
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
     obj.suggestions.migration = { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.registration = { suggestion: { username: "r" }, source: "PX_16", fetched: null };
+    obj.suggestions.registration = { suggestion: { username: "r" }, source: "flex", fetched: null };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;

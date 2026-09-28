@@ -1,22 +1,22 @@
-// Module ID: 18320
-// Function ID: 18321
+// Module ID: 17685
+// Function ID: 17686
 // Name: LibdiscoreExperimentManager
-// Dependencies: [1235, 1350, 2067, 558, 1434, 7395, 2]
+// Dependencies: [1235, 1350, 2071, 558, 1435, 6539, 2]
 
-// Module 18320 (LibdiscoreExperimentManager)
+// Module 17685 (LibdiscoreExperimentManager)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import js_shim_shim from "js_shim/shim" /* 1350 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2067 */;
+import ApexExperiment from "ApexExperiment" /* 1435 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 function experimentStoreUpdateHandler() {
   if (obj.isLibdiscoreInitialized()) {
     if (!tmpResult.isExperimentSyncDisabled()) {
       obj2 = {};
-      const ALL_LIBDISCORE_EXPERIMENTS = tmp(2067).ALL_LIBDISCORE_EXPERIMENTS;
+      const ALL_LIBDISCORE_EXPERIMENTS = tmp(2071).ALL_LIBDISCORE_EXPERIMENTS;
       for (const item10018 of ALL_LIBDISCORE_EXPERIMENTS) {
         obj2[item10018.id] = item10018.getCurrentConfig();
         continue;
@@ -31,7 +31,7 @@ function experimentStoreUpdateHandler() {
         experimentCacher.flushToCache(JSON.stringify(obj2));
       }
     }
-    tmpResult = tmp(2067);
+    tmpResult = tmp(2071);
   }
 }
 class LibdiscoreExperimentManager extends tmp2 {

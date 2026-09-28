@@ -1,16 +1,9 @@
 // Module ID: 14660
 // Function ID: 14661
-// Dependencies: [14633]
+// Dependencies: [1121]
 
 // Module 14660
-import _mod14633 from "module_14633" /* 14633 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0) => {
-  if (_mod14633(arg0)) {
-    return arg0;
-  } else {
-    const tmp5 = new TypeError(String(arg0) + " is not an object");
-    throw tmp5;
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 345, height: 82, scales: [1, 2, 3], hash: "91248bc802fa2159ae23ab96ddaf91db", name: "clouds_light_background", type: "png" });

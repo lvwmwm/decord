@@ -1,9 +1,9 @@
-// Module ID: 10287
-// Function ID: 10288
+// Module ID: 9447
+// Function ID: 9448
 // Name: MobileVoiceOverlayActionCreators
 // Dependencies: [573, 2]
 
-// Module 10287 (MobileVoiceOverlayActionCreators)
+// Module 9447 (MobileVoiceOverlayActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

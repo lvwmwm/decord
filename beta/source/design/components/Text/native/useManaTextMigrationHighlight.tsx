@@ -1,15 +1,15 @@
-// Module ID: 4786
-// Function ID: 4787
+// Module ID: 4834
+// Function ID: 4835
 // Name: useManaTextMigrationHighlight
-// Dependencies: [17, 4787, 1182, 4788, 576, 504, 4639, 2]
+// Dependencies: [17, 4835, 1182, 4836, 576, 504, 4685, 2]
 // Exports: useManaTextMigrationHighlight, withManaTextMigrationHighlight
 
-// Module 4786 (useManaTextMigrationHighlight)
+// Module 4834 (useManaTextMigrationHighlight)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import DevSettingsStore from "DevSettingsStore" /* 4787 */;
+import DevSettingsStore from "DevSettingsStore" /* 4835 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import createStyles from "createStyles" /* 4788 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

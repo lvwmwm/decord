@@ -1,15 +1,22 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 16349
+// Function ID: 16350
 // Name: VibegrationsTimelineTree
-// Dependencies: [32, 3710, 1115, 2]
-// Exports: announcementNotes, currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
+// Dependencies: [32, 3715, 1115, 2]
+// Exports: currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 17038 (VibegrationsTimelineTree)
+// Module 16349 (VibegrationsTimelineTree)
 import util from "util" /* 1115 */;
-import _modDef3710 from "module_3710" /* 3710 */;
+import _modDef3715 from "module_3715" /* 3715 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
+function isLegacyControlLineNode(label_key) {
+  label_key = undefined;
+  if (label_key != null) {
+    label_key = label_key.label_key;
+  }
+  return "testing_app" === label_key;
+}
 function buildTimelineTree(steps, arg1) {
   obj = arg1;
   if (arg1 === undefined) {
@@ -20,8 +27,9 @@ function buildTimelineTree(steps, arg1) {
     flag = true;
   }
   let task;
-  c8 = undefined;
+  scanTurnColumn = undefined;
   c9 = undefined;
+  c10 = undefined;
   function ensure(taskId, id, arg2, segment) {
     if ("task" !== arg2) {
       if ("task" !== id) {
@@ -81,7 +89,7 @@ function buildTimelineTree(steps, arg1) {
   map1 = new Map();
   let sum1 = 0;
   const segmentOf = scanTurnColumn(steps).segmentOf;
-  const size = (function cancelledLaneIds(steps) {
+  scanTurnColumn = (function cancelledLaneIds(steps) {
     const set = new Set();
     const iter = steps[Symbol.iterator]();
     const nextResult = iter.next();
@@ -112,6 +120,32 @@ function buildTimelineTree(steps, arg1) {
     }
     return set;
   })(steps);
+  const size2 = (function legacyControlLineIds(steps) {
+    const set = new Set();
+    const iter = steps[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp2 = nextResult;
+      let tmp3 = "node" !== nextResult.kind;
+      if (!tmp3) {
+        tmp3 = null == tmp2.node;
+      }
+      if (!tmp3) {
+        let tmp6 = null != tmp2.task_id;
+        if (tmp6) {
+          tmp6 = "" !== tmp2.task_id;
+        }
+        tmp3 = tmp6;
+      }
+      if (!tmp3) {
+        if (sum1(tmp2.node)) {
+          let addResult = set.add(tmp2.node.id);
+        }
+      }
+      continue;
+    }
+    return set;
+  })(steps);
   function _loop() {
     let hasItem = 0 !== size.size;
     if (hasItem) {
@@ -132,92 +166,117 @@ function buildTimelineTree(steps, arg1) {
     if (hasItem) {
       return 0;
     } else {
-      let num = segmentOf[c8];
-      if (num == null) {
-        num = 0;
+      let hasItem1 = 0 !== size2.size;
+      if (hasItem1) {
+        hasItem1 = "node" === tmp.kind;
       }
-      if ("node" === tmp.kind) {
-        if (null != tmp.node) {
-          ({ node, task_id } = tmp);
-          ({ id, node_kind } = node);
-          if (node_kind == null) {
-            node_kind = "step";
-          }
-          const tmp14Result = ensure(task_id, id, node_kind, num);
-          const sum = sum1 + 1;
-          sum1 = sum;
-          tmp14Result.touched = sum;
-          if (null != node.label_key) {
-            tmp14Result.labelKey = node.label_key;
-          }
-          if (null != node.label_text) {
-            tmp14Result.labelText = node.label_text;
-          }
-          if (null != node.group_label) {
-            tmp14Result.groupLabel = node.group_label;
-          }
-          if (null != node.helper_name) {
-            tmp14Result.helperName = node.helper_name;
-          }
-          if (null != node.helper_mark) {
-            tmp14Result.helperMark = node.helper_mark;
-          }
-          if (null != node.todo_id) {
-            tmp14Result.todoId = node.todo_id;
-          }
-          if (null != node.detail) {
-            ({ detail: tmp19.detail, detail } = node);
-            tmp14Result.detailDrivenBy = detail.map(() => null);
-          }
-          if (null != node.append_detail) {
-            let driven_by = node.driven_by;
-            if (driven_by == null) {
-              driven_by = null;
+      if (hasItem1) {
+        hasItem1 = null != tmp.node;
+      }
+      if (hasItem1) {
+        let tmp7 = null == tmp.task_id;
+        if (!tmp7) {
+          tmp7 = "" === tmp.task_id;
+        }
+        hasItem1 = tmp7;
+      }
+      if (hasItem1) {
+        hasItem1 = obj2.has(tmp.node.id);
+      }
+      if (hasItem1) {
+        return 0;
+      } else {
+        let num = segmentOf[c9];
+        if (num == null) {
+          num = 0;
+        }
+        if ("node" === tmp.kind) {
+          if (null != tmp.node) {
+            ({ node, task_id } = tmp);
+            ({ id, node_kind } = node);
+            if (node_kind == null) {
+              node_kind = "step";
             }
-            items = [];
-            HermesBuiltin.arraySpread(node.append_detail, HermesBuiltin.arraySpread(tmp14Result.detail, 0));
-            tmp14Result.detail = items;
-            const items1 = [];
-            const append_detail = node.append_detail;
-            HermesBuiltin.arraySpread(append_detail.map(() => driven_by), HermesBuiltin.arraySpread(tmp14Result.detailDrivenBy, 0));
-            tmp14Result.detailDrivenBy = items1;
-            const arraySpreadResult3 = HermesBuiltin.arraySpread(tmp14Result.detailDrivenBy, 0);
+            const tmp18Result = ensure(task_id, id, node_kind, num);
+            const sum = sum1 + 1;
+            sum1 = sum;
+            tmp18Result.touched = sum;
+            if (null != node.label_key) {
+              tmp18Result.labelKey = node.label_key;
+            }
+            if (null != node.label_text) {
+              tmp18Result.labelText = node.label_text;
+            }
+            if (null != node.group_label) {
+              tmp18Result.groupLabel = node.group_label;
+            }
+            if (null != node.helper_name) {
+              tmp18Result.helperName = node.helper_name;
+            }
+            if (null != node.helper_mark) {
+              tmp18Result.helperMark = node.helper_mark;
+            }
+            if (null != node.todo_id) {
+              tmp18Result.todoId = node.todo_id;
+            }
+            if (null != node.tier) {
+              tmp18Result.tier = node.tier;
+            }
+            if (null != node.detail) {
+              ({ detail: tmp23.detail, detail } = node);
+              tmp18Result.detailDrivenBy = detail.map(() => null);
+            }
+            if (null != node.append_detail) {
+              let driven_by = node.driven_by;
+              if (driven_by == null) {
+                driven_by = null;
+              }
+              items = [];
+              HermesBuiltin.arraySpread(node.append_detail, HermesBuiltin.arraySpread(tmp18Result.detail, 0));
+              tmp18Result.detail = items;
+              const items1 = [];
+              const append_detail = node.append_detail;
+              HermesBuiltin.arraySpread(append_detail.map(() => driven_by), HermesBuiltin.arraySpread(tmp18Result.detailDrivenBy, 0));
+              tmp18Result.detailDrivenBy = items1;
+              const arraySpreadResult3 = HermesBuiltin.arraySpread(tmp18Result.detailDrivenBy, 0);
+            }
+            if (null != node.status) {
+              tmp18Result.status = node.status;
+            }
+            if (null != node.duration) {
+              tmp18Result.durationMs = node.duration;
+            }
+            if (null != node.screenshots) {
+              tmp18Result.screenshots = node.screenshots;
+            }
+            if (null != node.attachments) {
+              tmp18Result.attachments = node.attachments;
+            }
+            return 0;
           }
-          if (null != node.status) {
-            tmp14Result.status = node.status;
+        }
+        if ("error" === tmp.kind) {
+          const _HermesInternal = HermesInternal;
+          const tmp14 = ensure(undefined, "" + tmp.kind + "-" + c9, "step", num);
+          sum1 = sum1 + 1;
+          tmp14.touched = sum1;
+          tmp14.labelKey = "error";
+          tmp14.status = "failed";
+          if (tmp17) {
+            const items2 = [tmp.message];
+            tmp14.detail = items2;
           }
-          if (null != node.duration) {
-            tmp14Result.durationMs = node.duration;
-          }
-          if (null != node.screenshots) {
-            tmp14Result.screenshots = node.screenshots;
-          }
-          if (null != node.attachments) {
-            tmp14Result.attachments = node.attachments;
-          }
-          return 0;
+          tmp17 = null != tmp.message && "" !== tmp.message;
         }
       }
-      if ("error" === tmp.kind) {
-        const _HermesInternal = HermesInternal;
-        const tmp10 = ensure(undefined, "" + tmp.kind + "-" + c8, "step", num);
-        sum1 = sum1 + 1;
-        tmp10.touched = sum1;
-        tmp10.labelKey = "error";
-        tmp10.status = "failed";
-        if (tmp13) {
-          const items2 = [tmp.message];
-          tmp10.detail = items2;
-        }
-        tmp13 = null != tmp.message && "" !== tmp.message;
-      }
+      obj2 = size2;
     }
     obj = size;
   }
   const entries = steps.entries();
   while (tmp3 !== undefined) {
-    let tmp6 = _slicedToArray(tmp4, 2);
-    [c8, c9] = tmp6;
+    let tmp6 = map1(tmp4, 2);
+    [c9, c10] = tmp6;
     let _loopResult = _loop();
     continue;
   }
@@ -327,9 +386,9 @@ function scanTurnColumn(arr) {
   }
   return { items, segmentOf };
 }
-function segmentDurations(arr) {
+function segmentDurations(steps) {
   const map = new Map();
-  const iter = arr[Symbol.iterator]();
+  const iter = steps[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -372,14 +431,22 @@ function isTurnWorkFrame(task_id) {
         }
         tmp3 = !tmp4;
       }
+      if (tmp3) {
+        const node = task_id.node;
+        let label_key;
+        if (node != null) {
+          label_key = node.label_key;
+        }
+        tmp3 = "testing_app" !== label_key;
+      }
       tmp2 = tmp3;
     }
     tmp = tmp2;
   }
   return tmp;
 }
-let obj = { assembling: _modDef3710["9G3ZmA"], installing_deps: _modDef3710.VZuRug, building: _modDef3710["s+ylXP"], bundling: _modDef3710.rEQlMx, committing: _modDef3710.Yvyw1H, built: _modDef3710.hOcVAj, build_error: _modDef3710["6L9Vwt"], healthchecking: _modDef3710.sz8yAj, awaiting_auth: _modDef3710["orD+xo"], healthcheck_passed: _modDef3710["x+sqTG"], healthcheck_failed: _modDef3710.FUWbq1, deploying: _modDef3710.wcXX8Z, preview_ready: _modDef3710["78YNh7"], working: _modDef3710.nv6pUM, error: _modDef3710.j3hBoA };
-let size = fn(2);
+let obj = { healthcheck_failed: _modDef3715.FUWbq1, preview_ready: _modDef3715["78YNh7"], working: _modDef3715.nv6pUM, error: _modDef3715.j3hBoA };
+const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTimelineTree.tsx");
 
 export const describeNode = function describeNode(currentStepResult) {
@@ -394,26 +461,26 @@ export const describeNode = function describeNode(currentStepResult) {
   }
   const intl = util.intl;
   if (nv6pUM == null) {
-    nv6pUM = _modDef3710.nv6pUM;
+    nv6pUM = _modDef3715.nv6pUM;
   }
   return intl.string(nv6pUM);
 };
 export const describeTaskStatus = function describeTaskStatus(arg0) {
   if ("running" === arg0) {
     const intl5 = util.intl;
-    return intl5.string(_modDef3710["fW7T+d"]);
+    return intl5.string(_modDef3715["fW7T+d"]);
   } else if ("done" === arg0) {
     const intl4 = util.intl;
-    return intl4.string(_modDef3710.X3c4hc);
+    return intl4.string(_modDef3715.X3c4hc);
   } else if ("failed" === arg0) {
     const intl3 = util.intl;
-    return intl3.string(_modDef3710.LK4Wsd);
+    return intl3.string(_modDef3715.LK4Wsd);
   } else if ("cancelled" === arg0) {
     const intl2 = util.intl;
-    return intl2.string(_modDef3710.msWvKA);
+    return intl2.string(_modDef3715.msWvKA);
   } else if ("incomplete" === arg0) {
     const intl = util.intl;
-    return intl.string(_modDef3710.esfcU6);
+    return intl.string(_modDef3715.esfcU6);
   }
 };
 export { buildTimelineTree };
@@ -433,11 +500,11 @@ export const currentStep = function currentStep(steps) {
   }
   return tmp;
 };
-export const streamedContent = function streamedContent(arr) {
-  return scanTurnColumn(arr).items;
+export const streamedContent = function streamedContent(steps) {
+  return scanTurnColumn(steps).items;
 };
 export { segmentDurations };
-export const turnSegments = function turnSegments(arr) {
+export const turnSegments = function turnSegments(steps, arg1) {
   let hasItem;
   let tmp19;
   obj = arg1;
@@ -448,9 +515,9 @@ export const turnSegments = function turnSegments(arr) {
   if (flag === undefined) {
     flag = true;
   }
-  const items = scanTurnColumn(arr).items;
-  buildTimelineTree(arr, { turnActive: flag });
-  const obj2 = segmentDurations(arr);
+  const items = scanTurnColumn(steps).items;
+  buildTimelineTree(steps, { turnActive: flag });
+  const obj2 = segmentDurations(steps);
   const map = new Map();
   const iter = items[Symbol.iterator]();
   const nextResult = iter.next();
@@ -533,14 +600,14 @@ export const turnSegments = function turnSegments(arr) {
   }
   return items4;
 };
-export const turnLifecycle = function turnLifecycle(arr, turnActive) {
-  const found = arr.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
+export const turnLifecycle = function turnLifecycle(memo1, turnActive) {
+  const found = memo1.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
   const atResult = found.at(-1);
   let index1;
   if (atResult != null) {
     index1 = atResult.index;
   }
-  const atResult1 = arr.at(-1);
+  const atResult1 = memo1.at(-1);
   if (atResult1 != null) {
     const index = atResult1.index;
   }
@@ -568,8 +635,8 @@ export const turnLifecycle = function turnLifecycle(arr, turnActive) {
   const merged1 = Object.assign(obj5);
   return {};
 };
-export const streamedMessages = function streamedMessages(steps) {
-  let items = scanTurnColumn(steps).items;
+export const streamedMessages = function streamedMessages(arr) {
+  let items = scanTurnColumn(arr).items;
   return items.flatMap((type) => {
     if ("message" === type.type) {
       obj = { key: null, content: null, segment: null };
@@ -601,8 +668,16 @@ export const endsWithStreamedMessage = function endsWithStreamedMessage(arg0) {
           tmp4 = tmp5;
         }
         if (!tmp4) {
-          let flag = false;
-          return false;
+          if ("node" !== tmp2.kind) {
+            let flag = false;
+            return false;
+          } else {
+            let node = tmp2.node;
+            let label_key;
+            if (node != null) {
+              label_key = node.label_key;
+            }
+          }
         }
       }
       diff = diff - 1;
@@ -610,22 +685,6 @@ export const endsWithStreamedMessage = function endsWithStreamedMessage(arg0) {
     return true;
   }
   return false;
-};
-export const announcementNotes = function announcementNotes(steps) {
-  return steps.flatMap((kind, index) => {
-    if ("announcement" === kind.kind) {
-      if (null != kind.message) {
-        if ("" !== kind.message) {
-          obj = { key: null, content: null };
-          const _HermesInternal = HermesInternal;
-          obj.key = "note-" + index;
-          obj.content = kind.message;
-          const items = [obj];
-        }
-        return [];
-      }
-    }
-  });
 };
 export const latestTodos = function latestTodos(steps) {
   let tmp2;

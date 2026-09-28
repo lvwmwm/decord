@@ -1,22 +1,22 @@
-// Module ID: 11700
-// Function ID: 11701
+// Module ID: 10952
+// Function ID: 10953
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [19, 17, 11655, 21, 4788, 576, 11691, 1115, 11668, 4784, 2]
+// Dependencies: [19, 17, 10905, 21, 4836, 576, 10943, 1115, 10918, 4832, 2]
 // Exports: default
 
-// Module 11700 (SafetyToolsSafetyTipsActionSheet)
+// Module 10952 (SafetyToolsSafetyTipsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11668 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11691 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10918 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 10943 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(11655).getInappropriateConversationsSafetyTips;
+let closure_4 = fn(10905).getInappropriateConversationsSafetyTips;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { safetyTipsContainer: { marginHorizontal: nativeDefault.space.PX_16 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,16 +1,16 @@
-// Module ID: 17788
-// Function ID: 17789
+// Module ID: 17145
+// Function ID: 17146
 // Name: MemberVerificationApplicationManager
-// Dependencies: [4609, 4610, 7395, 5141, 4612, 5776, 5790, 2]
+// Dependencies: [4655, 4656, 6539, 5204, 4658, 5839, 5853, 2]
 
-// Module 17788 (MemberVerificationApplicationManager)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5776 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5790 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4610 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17145 (MemberVerificationApplicationManager)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5839 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5853 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4656 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 const prototype = function MemberVerificationApplicationManager() {

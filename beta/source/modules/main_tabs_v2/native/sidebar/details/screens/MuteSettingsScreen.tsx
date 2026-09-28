@@ -1,16 +1,16 @@
-// Module ID: 17336
-// Function ID: 17337
+// Module ID: 16686
+// Function ID: 16687
 // Name: MuteSettingsScreen
-// Dependencies: [19, 17, 2041, 2063, 4437, 1372, 1074, 21, 4788, 576, 8039, 7396, 7391, 10437, 5854, 1177, 10439, 4784, 1115, 4941, 10440, 1484, 11604, 10436, 1485, 563, 8139, 1612, 2]
+// Dependencies: [19, 17, 2045, 2067, 4479, 1372, 1074, 21, 4836, 576, 7184, 6540, 6535, 9601, 5917, 1177, 9603, 4832, 1115, 4989, 9604, 1485, 10854, 9600, 1486, 563, 7288, 1613, 2]
 
-// Module 17336 (MuteSettingsScreen)
+// Module 16686 (MuteSettingsScreen)
 import nativeDefault from "native" /* 576 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10437 */;
-import threadActionSheets from "threadActionSheets" /* 11604 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 9601 */;
+import threadActionSheets from "threadActionSheets" /* 10854 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -30,20 +30,20 @@ function UnmuteOptions(channel) {
   const tmp3 = closure_11;
   const tmp4 = View;
   const tmp5 = closure_10;
-  obj2.icon = closure_10(channel(1177).Icon, { disableColor: true, source: navigation(10439) });
+  obj2.icon = closure_10(channel(1177).Icon, { disableColor: true, source: navigation(9603) });
   const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = channel(1115).intl;
   const obj5 = { name: null };
-  const obj3 = { disableColor: true, source: navigation(10439) };
-  obj5.name = channel(4941).computeChannelName(channel, UserStore, RelationshipStore, true);
+  const obj3 = { disableColor: true, source: navigation(9603) };
+  obj5.name = channel(4989).computeChannelName(channel, UserStore, RelationshipStore, true);
   obj4.children = intl.format(channel(1115).t["eC+9rj"], obj5);
-  obj2.label = closure_10(channel(4784).Text, obj4);
+  obj2.label = closure_10(channel(4832).Text, obj4);
   obj2.onPress = callback;
-  const items1 = [closure_10(channel(5854).TableRow, obj2), ];
+  const items1 = [closure_10(channel(5917).TableRow, obj2), ];
   const obj7 = { muteConfig: channel.muteConfig, type: null };
-  const obj6 = channel(4941);
-  const tmp6 = navigation(10440);
-  const MuteSettingType = channel(10440).MuteSettingType;
+  const obj6 = channel(4989);
+  const tmp6 = navigation(9604);
+  const MuteSettingType = channel(9604).MuteSettingType;
   obj7.type = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
   items1[1] = tmp5(tmp6, obj7);
   obj.children = items1;
@@ -80,25 +80,26 @@ function MuteOptions(channel) {
             const guildId = obj.getGuildId();
             const id = obj.id;
             const obj5 = { muted, mute_config: null };
-            let tmp14 = mute_config;
+            let tmp10 = mute_config;
             if (mute_config == null) {
-              tmp14 = null;
+              tmp10 = null;
             }
-            obj5.mute_config = tmp14;
+            obj5.mute_config = tmp10;
             const NotificationLabel2 = channel(navigation[12]).NotificationLabel;
             const result1 = obj2.updateAppDMOverrideSettings(guildId, id, tmp, obj5, NotificationLabel2.muted(muted));
           } else {
-            const obj6 = applicationId(navigation[11]);
-            const guildId1 = obj.getGuildId();
-            const id2 = obj.id;
-            const obj7 = { muted, mute_config: null };
+            const obj7 = { guildId: obj.getGuildId(), channelId: obj.id, settings: null, label: null };
+            const obj8 = { muted, mute_config: null };
             let tmp3 = mute_config;
             if (mute_config == null) {
               tmp3 = null;
             }
-            obj7.mute_config = tmp3;
+            obj8.mute_config = tmp3;
+            obj7.settings = obj8;
             const NotificationLabel = channel(navigation[12]).NotificationLabel;
-            const result2 = obj6.updateChannelOverrideSettings(guildId1, id2, obj7, NotificationLabel.muted(muted));
+            obj7.label = NotificationLabel.muted(muted);
+            const result2 = applicationId(navigation[11]).updateChannelOverrideSettings(obj7);
+            const obj6 = applicationId(navigation[11]);
           }
         }
       },
@@ -164,7 +165,7 @@ const View = fn(17).View;
 const ChannelSettingsSections = fn(1074).ChannelSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, padding: 16 }, options: { marginBottom: 16 }, trailing: { flexDirection: "row", alignItems: "center" }, hint: { marginTop: 8, paddingHorizontal: 12 } };
 let closure_13 = createStyles.createStyles(obj);
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, padding: 16 };

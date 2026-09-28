@@ -1,9 +1,9 @@
-// Module ID: 8566
-// Function ID: 8567
+// Module ID: 7711
+// Function ID: 7712
 // Name: MediaPlayerMuteManager
 // Dependencies: [17, 560, 1248, 2]
 
-// Module 8566 (MediaPlayerMuteManager)
+// Module 7711 (MediaPlayerMuteManager)
 import get_ActivityIndicator from "module_17" /* 17 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;

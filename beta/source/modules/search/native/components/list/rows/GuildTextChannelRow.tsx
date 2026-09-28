@@ -1,15 +1,15 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 16484
+// Function ID: 16485
 // Name: GuildTextChannelRow
-// Dependencies: [19, 8154, 21, 11, 17130, 12623, 17133, 2]
+// Dependencies: [19, 7303, 21, 11, 16472, 11823, 16475, 2]
 
-// Module 17142 (GuildTextChannelRow)
-import SearchUtils from "SearchUtils" /* 12623 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17130 */;
+// Module 16484 (GuildTextChannelRow)
+import SearchUtils from "SearchUtils" /* 11823 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 16472 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(8154).CHANNEL_LIST_SEARCH_LAYOUT;
+let closure_4 = fn(7303).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GuildTextChannelRow.tsx");

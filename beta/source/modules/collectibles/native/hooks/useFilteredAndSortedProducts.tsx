@@ -1,10 +1,10 @@
-// Module ID: 15345
-// Function ID: 15346
+// Module ID: 14604
+// Function ID: 14605
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1372, 1076, 15346, 15347, 15348, 504, 4446, 7827, 2]
+// Dependencies: [19, 1372, 1076, 14605, 14606, 14607, 504, 4488, 6973, 2]
 // Exports: useFilteredAndSortedProducts
 
-// Module 15345 (useFilteredAndSortedProducts)
+// Module 14604 (useFilteredAndSortedProducts)
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

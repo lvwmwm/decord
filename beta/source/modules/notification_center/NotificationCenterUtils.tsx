@@ -1,17 +1,17 @@
-// Module ID: 7909
-// Function ID: 7910
+// Module ID: 7055
+// Function ID: 7056
 // Name: NotificationCenterUtils
-// Dependencies: [7910, 2019, 11, 7908, 2]
+// Dependencies: [5070, 2021, 11, 7054, 2]
 // Exports: getRelativeTimestamp, incomingFriendRequestLocalItem, incomingGameFriendRequestLocalItem, isMentionItem, isRemoteAcked, mobileNativeUpdateAvailableLocalItem
 
-// Module 7909 (NotificationCenterUtils)
+// Module 7055 (NotificationCenterUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7908 */;
-import notification_center_getTimestampString from "notification_center/getTimestampString" /* 7910 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import getTimestampString from "getTimestampString" /* 5070 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7054 */;
 import size from "module_2" /* 2 */;
 
-const notification_center_getTimestampStringDefault = notification_center_getTimestampString;
+const getTimestampStringDefault = getTimestampString;
 
 const result = size.fileFinishedImporting("modules/notification_center/NotificationCenterUtils.tsx");
 
@@ -20,9 +20,9 @@ export const getRelativeTimestamp = function getRelativeTimestamp(extractTimesta
     flag = true;
   }
   const obj = { since: extractTimestampResult, getFormatter: null };
-  const tmp2 = notification_center_getTimestampString;
+  const tmp2 = getTimestampString;
   obj.getFormatter = flag ? tmp2.getAbbreviatedFormatter : tmp2.getFullFormatter;
-  return notification_center_getTimestampStringDefault(obj);
+  return getTimestampStringDefault(obj);
 };
 export const isRemoteAcked = function isRemoteAcked(addResult, setting) {
   let acked = addResult.acked;

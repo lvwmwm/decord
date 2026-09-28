@@ -1,18 +1,18 @@
-// Module ID: 9110
-// Function ID: 9111
+// Module ID: 8260
+// Function ID: 8261
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 9111, 21, 5836, 4788, 576, 38, 1973, 1970, 9112, 9123, 9130, 1177, 2]
+// Dependencies: [19, 17, 8261, 21, 5899, 4836, 576, 38, 1974, 1971, 8262, 8273, 8280, 1177, 2]
 // Exports: default
 
-// Module 9110 (BundleSampleV2)
+// Module 8260 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
-import utils from "utils" /* 1970 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9112 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9123 */;
-import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9130 */;
+import utils from "utils" /* 1971 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 8262 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8273 */;
+import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 8280 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -146,7 +146,7 @@ function BundleSampleV2Composed(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ PixelRatio: c3, StyleSheet, View: closure_4 } = get_ActivityIndicator);
-const BUNDLE_PREVIEW_CONFIG = fn(9111).BUNDLE_PREVIEW_CONFIG;
+const BUNDLE_PREVIEW_CONFIG = fn(8261).BUNDLE_PREVIEW_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let obj = { container: null, bgBleedClip: null, bgMutedWrap: null, bgImage: null, fgClip: null, fgImage: null };
@@ -174,7 +174,7 @@ obj.fgClip = obj5;
 const merged4 = Object.assign(StyleSheet.absoluteFillObject);
 obj.fgImage = {};
 const styles = StyleSheet.create(obj);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles((arg0) => {
   const obj = { bundle: null, pfx: null, avatar: null, avatarWithNameplate: null, nameplate: null };
   const size = { width: tmp.bundleWidth, height: tmp.bundleHeight, borderRadius: nativeDefault.radii.xs };

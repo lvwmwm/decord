@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 24, height: 24, scales: [2, 3, 4], hash: "10d4fca455cecd708fd329431845cd33", name: "deafen", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 20, height: 20, scales: [2, 3], hash: "66f5395e0dcbde2df92fe7a6979a5fca", name: "ic_emoji_picker_20px", type: "png" });

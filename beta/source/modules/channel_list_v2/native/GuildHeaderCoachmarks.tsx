@@ -1,18 +1,18 @@
-// Module ID: 16498
-// Function ID: 16499
+// Module ID: 15788
+// Function ID: 15789
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4427, 1074, 2038, 21, 504, 16499, 16500, 16502, 12796, 16509, 12787, 12788, 2027, 7662, 12784, 16510, 16511, 16513, 2]
+// Dependencies: [32, 19, 4469, 1074, 2042, 21, 504, 15789, 15790, 15792, 12009, 15799, 12000, 12001, 2029, 6806, 11997, 15800, 15801, 15803, 2]
 // Exports: default
 
-// Module 16498 (GuildHeaderCoachmarks)
-import dismissible_content from "dismissible_content" /* 2027 */;
+// Module 15788 (GuildHeaderCoachmarks)
+import dismissible_content from "dismissible_content" /* 2029 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 require = fn;
 const Permissions = fn(1074).Permissions;
-const constants = fn(2038).DismissibleContentGroupName;
+const constants = fn(2042).DismissibleContentGroupName;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/GuildHeaderCoachmarks.tsx");

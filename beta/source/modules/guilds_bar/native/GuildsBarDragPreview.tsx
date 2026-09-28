@@ -1,15 +1,15 @@
-// Module ID: 16703
-// Function ID: 16704
+// Module ID: 15997
+// Function ID: 15998
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 5687, 16627, 16624, 21, 4788, 16364, 4524, 5217, 7350, 4498, 4489, 576, 16635, 16658, 4411, 2]
+// Dependencies: [19, 5750, 15921, 15918, 21, 4836, 15655, 4566, 5280, 6494, 4540, 4531, 576, 15929, 15952, 4452, 2]
 
-// Module 16703 (GuildsBarDragPreview)
-import _mod4411 from "module_4411" /* 4411 */;
-import native from "native" /* 4498 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import spring from "spring" /* 5217 */;
+// Module 15997 (GuildsBarDragPreview)
+import _mod4452 from "module_4452" /* 4452 */;
+import native from "native" /* 4540 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import spring from "spring" /* 5280 */;
 import noop from "module_19" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16627 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 15921 */;
 
 require = fn;
 function PreviewItem(dragRegion) {
@@ -135,7 +135,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "PX_16", name: "Array", color: "padding", expanded: "has", children: "Array" };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flex", name: "Array", color: "add", expanded: null, children: null };
         const items = [tmp2];
         element.children = items;
         return element;
@@ -290,12 +290,12 @@ function AnimatedItemPreview(cleanUp) {
   obj5.children = tmp12Result;
   return jsx(cleanUp(sharedValue[9]), { style: items, children: null });
 }
-const GuildsNodeType = fn(5687).GuildsNodeType;
-const GUILD_ITEM_INSET_LEFT = fn(16624).GUILD_ITEM_INSET_LEFT;
+const GuildsNodeType = fn(5750).GuildsNodeType;
+const GUILD_ITEM_INSET_LEFT = fn(15918).GUILD_ITEM_INSET_LEFT;
 const jsx = fn(21).jsx;
-let createStyles = fn(4788);
+let createStyles = fn(4836);
 let closure_8 = createStyles.createStyles({ dragPreview: { position: "absolute", left: 0 }, animatedPreviewStyle: { position: "absolute" }, dragPreviewHome: { right: 0 } });
-createStyles = fn(4788);
+createStyles = fn(4836);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { animatedPreviewStyleHome: null };
   const rect = { left: 0, right: 0, transformOrigin: null };
@@ -339,7 +339,7 @@ export default noop.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "disjunction", scrollPosition: "text-md/medium", dragRegion: "text-default", windowSize: 1, dropComplete: null, listInsets: 48 };
+          const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: 72, scrollPosition: 4, dragRegion: null, windowSize: null, dropComplete: null, listInsets: null };
           ({ node: obj.draggedNode, itemSize: obj.draggedHeight } = dragSpecs);
           obj.overState = state;
           let node;
@@ -358,7 +358,7 @@ export default noop.memo(function GuildsBarDragPreview() {
       }
       return null;
     }
-  }, _mod4411.shallow);
+  }, _mod4452.shallow);
   let tmp2 = null;
   if (null != tmp) {
     let obj = {};

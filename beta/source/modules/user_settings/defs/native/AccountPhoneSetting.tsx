@@ -1,25 +1,25 @@
-// Module ID: 15017
-// Function ID: 15018
+// Module ID: 14272
+// Function ID: 14273
 // Name: AccountPhoneSetting
-// Dependencies: [1372, 8265, 7320, 504, 4991, 7319, 1980, 7322, 11754, 1115, 2]
+// Dependencies: [1372, 7417, 6464, 504, 5039, 6463, 1981, 6466, 11006, 1115, 2]
 
-// Module 15017 (AccountPhoneSetting)
+// Module 14272 (AccountPhoneSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7322 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 6466 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-let closure_4 = fn(7320).PHONE_VERIFICATION_MODAL_KEY;
-const SettingBuilders = fn(11754);
+let closure_4 = fn(6464).PHONE_VERIFICATION_MODAL_KEY;
+const SettingBuilders = fn(11006);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.dEYpSt);
   },
-  parent: fn(8265).MobileUserSettings.ACCOUNT,
+  parent: fn(7417).MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountPhoneSettingTrailing() {
     const items = [UserStore];
     return initialize.useStateFromStores(items, () => {
@@ -35,7 +35,7 @@ const pressable = SettingBuilders.createPressable({
     const obj2 = { allowDeletePhone: true, reason: null };
     const obj = ModalActionCreatorsDefault;
     obj2.reason = PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(asyncRequireImpl(7319, dependencyMap.paths), obj2, closure_4);
+    obj.pushLazy(asyncRequireImpl(6463, dependencyMap.paths), obj2, closure_4);
   },
   withArrow: true
 });

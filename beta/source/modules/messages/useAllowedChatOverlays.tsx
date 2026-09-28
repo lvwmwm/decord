@@ -1,19 +1,19 @@
-// Module ID: 11715
-// Function ID: 11716
+// Module ID: 10967
+// Function ID: 10968
 // Name: useAllowedChatOverlays
-// Dependencies: [2040, 2041, 11713, 9347, 563, 4417, 9646, 2]
+// Dependencies: [2044, 2045, 10965, 8502, 563, 4458, 8803, 2]
 // Exports: default
 
-// Module 11715 (useAllowedChatOverlays)
+// Module 10967 (useAllowedChatOverlays)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4417 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9646 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4458 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 8803 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
-const ChatOverlays = fn(11713).ChatOverlays;
-const ActivityPanelModes = fn(9347).ActivityPanelModes;
+const ChatOverlays = fn(10965).ChatOverlays;
+const ActivityPanelModes = fn(8502).ActivityPanelModes;
 const no_text_activity = "no_text_activity";
 let obj = { no_text_activity: null };
 let items = [, , ];

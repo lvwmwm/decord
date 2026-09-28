@@ -1,11 +1,11 @@
-// Module ID: 8534
-// Function ID: 8535
-// Dependencies: [1074, 4498, 2]
+// Module ID: 7679
+// Function ID: 7680
+// Dependencies: [1074, 4540, 2]
 // Exports: getIllustrationSource, useIllustrationSource
 
-// Module 8534
+// Module 7679
 import Constants from "Constants" /* 1074 */;
-import native from "native" /* 4498 */;
+import native from "native" /* 4540 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;

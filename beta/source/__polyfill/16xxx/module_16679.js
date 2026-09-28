@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "9055490a5df5abd5b4d009687b826923", name: "ic_guild_voice_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/forum_channels", width: 343, height: 180, scales: [1], hash: "4344770a7977c211fcddc04a38055e0c", name: "channel_settings_grid_view_example_post", type: "png" });

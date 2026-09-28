@@ -1,120 +1,123 @@
-// Module ID: 11823
-// Function ID: 11824
+// Module ID: 11038
+// Function ID: 11039
 // Name: MessagesHandlers
-// Dependencies: [109, 5, 32, 5015, 7441, 10376, 7800, 8368, 7971, 7867, 11637, 4429, 7927, 502, 2041, 11721, 2105, 2063, 4772, 9657, 5008, 4427, 4828, 2095, 4609, 5528, 8112, 1372, 8223, 1074, 8010, 1374, 8723, 1114, 21, 7459, 11824, 11826, 1980, 11827, 11828, 11863, 11866, 8271, 4995, 7471, 1115, 8156, 10405, 11507, 4755, 11512, 7797, 11893, 11894, 4768, 8009, 11895, 11896, 11547, 11549, 10698, 1364, 8327, 7543, 10559, 8325, 11929, 10046, 8480, 11, 11931, 11932, 11636, 5019, 11937, 8261, 4756, 4757, 11960, 1101, 11947, 12028, 5683, 4968, 7782, 8258, 12029, 12030, 1385, 12035, 12043, 12044, 12045, 12046, 12047, 9630, 4483, 12048, 10248, 11758, 4773, 9815, 8033, 1609, 7967, 12049, 5698, 11571, 7996, 4776, 11598, 11599, 8681, 12072, 11093, 7616, 10064, 12075, 8166, 12089, 9351, 1241, 4998, 7603, 8696, 5660, 7489, 9459, 10070, 5870, 11725, 4991, 11730, 12097, 7696, 7656, 12098, 10957, 12099, 9080, 1249, 11199, 11200, 4486, 4784, 9023, 12101, 11548, 12102, 7730, 5012, 1978, 5140, 8417, 12104, 12106, 12110, 8291, 12111, 8701, 8307, 8305, 12112, 12116, 12144, 12145, 4799, 7466, 4485, 12156, 12157, 12158, 4942, 7615, 12159, 12160, 7874, 8714, 8716, 12162, 11996, 8568, 8562, 12195, 9542, 12197, 8897, 8257, 11212, 11897, 12212, 12213, 12214, 11961, 12215, 12218, 12221, 12222, 12228, 12231, 2]
+// Dependencies: [109, 5, 32, 5063, 7014, 7018, 6585, 9540, 6946, 7521, 7116, 7013, 10887, 4471, 7072, 502, 2045, 10973, 2108, 2067, 4817, 8814, 5056, 4469, 4876, 2099, 4655, 5591, 7257, 1372, 7375, 1074, 7155, 1374, 7868, 1114, 21, 6603, 11039, 11041, 1981, 11042, 11043, 11078, 11081, 7423, 5043, 6615, 1115, 7305, 9569, 10782, 4800, 10787, 6943, 11108, 11109, 4813, 7154, 11110, 11111, 10822, 10824, 9865, 1364, 7480, 6687, 9725, 7478, 11144, 9206, 7624, 11, 11146, 11147, 7350, 7335, 7333, 7338, 10886, 5067, 11152, 7413, 4801, 4802, 11175, 1101, 11162, 11246, 5746, 5016, 6928, 7410, 11247, 11248, 1385, 11253, 11261, 11262, 11263, 11264, 11265, 8787, 4525, 11266, 9408, 11010, 4818, 8976, 7178, 1610, 7112, 10678, 5761, 10683, 7141, 4821, 10848, 10849, 7826, 11267, 10262, 6760, 9224, 11270, 7316, 11284, 8506, 1241, 5046, 6747, 7841, 5723, 6633, 8614, 9230, 5933, 10977, 5039, 10982, 11292, 6842, 6800, 11293, 10124, 11294, 8230, 1249, 10367, 10368, 4528, 4832, 8173, 11296, 10823, 11297, 6876, 5060, 1979, 5203, 7573, 11299, 11301, 11305, 7444, 11306, 7846, 7460, 7458, 11307, 11311, 11339, 11340, 4847, 6610, 4527, 11351, 11352, 11353, 4990, 6759, 11354, 11355, 7020, 7859, 7861, 11357, 11214, 7713, 7707, 11390, 8699, 11392, 8047, 7409, 10380, 11112, 11410, 11411, 11412, 11176, 11413, 11416, 11419, 11420, 11426, 11429, 2]
 
-// Module 11823 (MessagesHandlers)
+// Module 11038 (MessagesHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1101 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import LinkingDefault from "Linking" /* 4483 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import HapticUtils from "HapticUtils" /* 4756 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4757 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import AgeGateUtils from "AgeGateUtils" /* 4998 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import actions_BoostingActionCreatorsAll from "actions/BoostingActionCreators" /* 5683 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5870 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7489 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7730 */;
-import getInviteURLDefault from "getInviteURL" /* 8033 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 8257 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8258 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8261 */;
-import isCrosspostDefault from "isCrosspost" /* 8327 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8480 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8681 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8701 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9459 */;
-import trackApplicationOpenDefault from "trackApplicationOpen" /* 9630 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10698 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10957 */;
-import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 11212 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11507 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11512 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 11547 */;
-import _modDef11548 from "module_11548" /* 11548 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 11549 */;
-import SummaryActionCreatorsDefault from "SummaryActionCreators" /* 11636 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11758 */;
-import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 11824 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 11827 */;
-import contentHandlers2 from "contentHandlers" /* 11866 */;
-import handleAcceptEventInstantInviteDefault from "handleAcceptEventInstantInvite" /* 11895 */;
-import openPinnedMessagesDefault from "openPinnedMessages" /* 11897 */;
-import trackRepliedMessageClickedDefault from "trackRepliedMessageClicked" /* 11931 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11947 */;
-import replyToMessageDefault from "replyToMessage" /* 11960 */;
-import PollsActionCreatorsDefault from "PollsActionCreators" /* 11996 */;
-import canEditMessageDefault from "canEditMessage" /* 12028 */;
-import UploadActionCreatorsDefault from "UploadActionCreators" /* 12029 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12075 */;
-import PremiumGiftingIntentUtils from "PremiumGiftingIntentUtils" /* 12098 */;
-import ForumOriginalPoster from "ForumOriginalPoster" /* 12156 */;
-import MediaChannelActionCreatorsAll from "MediaChannelActionCreators" /* 12159 */;
-import jumpToReferencedMessageDefault from "jumpToReferencedMessage" /* 12212 */;
-import handleForwardBreadcrumbDefault from "handleForwardBreadcrumb" /* 12213 */;
-import openSoundmojiActionSheetDefault from "openSoundmojiActionSheet" /* 12215 */;
-import ContentInventoryActionCreators from "ContentInventoryActionCreators" /* 12218 */;
-import onTapCheckpointCard from "onTapCheckpointCard" /* 12221 */;
-import createAppMessageEmbed from "createAppMessageEmbed" /* 12222 */;
-import previewSharedClientTheme from "previewSharedClientTheme" /* 12228 */;
-import sharedClientThemeViewed from "sharedClientThemeViewed" /* 12231 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import LinkingDefault from "Linking" /* 4525 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import AgeGateUtils from "AgeGateUtils" /* 5046 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import actions_BoostingActionCreatorsAll from "actions/BoostingActionCreators" /* 5746 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5933 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
+import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 6633 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
+import getInviteURLDefault from "getInviteURL" /* 7178 */;
+import resolveSelectedConversationDefault from "resolveSelectedConversation" /* 7350 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7409 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7410 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7413 */;
+import isCrosspostDefault from "isCrosspost" /* 7480 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7826 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7846 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8614 */;
+import trackApplicationOpenDefault from "trackApplicationOpen" /* 8787 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 9865 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10124 */;
+import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 10380 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 10782 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 10787 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10822 */;
+import _modDef10823 from "module_10823" /* 10823 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10824 */;
+import SummaryActionCreatorsDefault from "SummaryActionCreators" /* 10886 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11010 */;
+import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 11039 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 11042 */;
+import contentHandlers2 from "contentHandlers" /* 11081 */;
+import handleAcceptEventInstantInviteDefault from "handleAcceptEventInstantInvite" /* 11110 */;
+import openPinnedMessagesDefault from "openPinnedMessages" /* 11112 */;
+import trackRepliedMessageClickedDefault from "trackRepliedMessageClicked" /* 11146 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11162 */;
+import replyToMessageDefault from "replyToMessage" /* 11175 */;
+import PollsActionCreatorsDefault from "PollsActionCreators" /* 11214 */;
+import canEditMessageDefault from "canEditMessage" /* 11246 */;
+import UploadActionCreatorsDefault from "UploadActionCreators" /* 11247 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 11270 */;
+import PremiumGiftingIntentUtils from "PremiumGiftingIntentUtils" /* 11293 */;
+import ForumOriginalPoster from "ForumOriginalPoster" /* 11351 */;
+import MediaChannelActionCreatorsAll from "MediaChannelActionCreators" /* 11354 */;
+import jumpToReferencedMessageDefault from "jumpToReferencedMessage" /* 11410 */;
+import handleForwardBreadcrumbDefault from "handleForwardBreadcrumb" /* 11411 */;
+import openSoundmojiActionSheetDefault from "openSoundmojiActionSheet" /* 11413 */;
+import ContentInventoryActionCreators from "ContentInventoryActionCreators" /* 11416 */;
+import onTapCheckpointCard from "onTapCheckpointCard" /* 11419 */;
+import createAppMessageEmbed from "createAppMessageEmbed" /* 11420 */;
+import previewSharedClientTheme from "previewSharedClientTheme" /* 11426 */;
+import sharedClientThemeViewed from "sharedClientThemeViewed" /* 11429 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 5015 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7441 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10376 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7800 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8368 */;
-import QuestStore from "QuestStore" /* 7971 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7867 */;
-import SummaryStore from "SummaryStore" /* 11637 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
+import ApplicationStore from "ApplicationStore" /* 5063 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7014 */;
+import ConversationsStore from "ConversationsStore" /* 7018 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6585 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 9540 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7521 */;
+import QuestStore from "QuestStore" /* 7116 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7013 */;
+import SummaryStore from "SummaryStore" /* 10887 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GiftCodeStore from "GiftCodeStore" /* 11721 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import InviteStore from "InviteStore" /* 4772 */;
-import LocalActivityStore from "LocalActivityStore" /* 9657 */;
-import MessageStore from "MessageStore" /* 5008 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import PresenceStore from "PresenceStore" /* 4828 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
-import UploadStore from "UploadStore" /* 8112 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GiftCodeStore from "GiftCodeStore" /* 10973 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import InviteStore from "InviteStore" /* 4817 */;
+import LocalActivityStore from "LocalActivityStore" /* 8814 */;
+import MessageStore from "MessageStore" /* 5056 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import PresenceStore from "PresenceStore" /* 4876 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
+import UploadStore from "UploadStore" /* 7257 */;
 import UserStore from "UserStore" /* 1372 */;
 
-const InviteCodeUtils = trackInviteEmbedActioned(4773);
-const CodedLink = trackInviteEmbedActioned(4776);
-const InviteTypeUtils = trackInviteEmbedActioned(8009);
-const InstantInviteActionCreators = trackInviteEmbedActioned(8681);
-const SocialLayerStorefrontNativeActionCreators = trackInviteEmbedActioned(11093);
-const VoiceChannelListInviteExperiment = trackInviteEmbedActioned(11598);
-const VoiceChannelListInviteEmbed = trackInviteEmbedActioned(11599);
-const build_overrides_BuildOverrideUtils = trackInviteEmbedActioned(12072);
+const InviteCodeUtils = trackInviteEmbedActioned(4818);
+const CodedLink = trackInviteEmbedActioned(4821);
+const InviteTypeUtils = trackInviteEmbedActioned(7154);
+const InstantInviteActionCreators = trackInviteEmbedActioned(7826);
+const SocialLayerStorefrontNativeActionCreators = trackInviteEmbedActioned(10262);
+const VoiceChannelListInviteExperiment = trackInviteEmbedActioned(10848);
+const VoiceChannelListInviteEmbed = trackInviteEmbedActioned(10849);
+const build_overrides_BuildOverrideUtils = trackInviteEmbedActioned(11267);
 require = fn;
 let closure_4 = ["messageId"];
 let closure_5 = ["messageId"];
-let closure_13 = fn(7800).isGuildScheduledEventActive;
-const SeparatorAction = fn(8223).SeparatorAction;
+let closure_15 = fn(6946).isGuildScheduledEventActive;
+const SeparatorAction = fn(7375).SeparatorAction;
 const Constants = fn(1074);
-({ ActivityActionTypes: closure_36, ActivityFlags: closure_37, ActivityGamePlatforms: closure_38, ActivityTypes: closure_39, AnalyticEvents: closure_40, AnalyticsGameOpenTypes: closure_41, AnalyticsLocations: closure_42, AnalyticsObjects: closure_43, AnalyticsObjectTypes: closure_44, AnalyticsPages: closure_45, AnalyticsSections: closure_46, LinkingTypes: closure_47, ME: closure_48, MessageFlags: closure_49, MessageStates: closure_50, MessageTypes: closure_51, Permissions: closure_52, Routes: closure_53, UpsellTypes: closure_54, UserSettingsSections: closure_55, WebBrowserType: closure_56 } = Constants);
-const InviteTypes = fn(8010).InviteTypes;
+({ ActivityActionTypes: closure_38, ActivityFlags: closure_39, ActivityGamePlatforms: closure_40, ActivityTypes: closure_41, AnalyticEvents: closure_42, AnalyticsGameOpenTypes: closure_43, AnalyticsLocations: closure_44, AnalyticsObjects: closure_45, AnalyticsObjectTypes: closure_46, AnalyticsPages: closure_47, AnalyticsSections: closure_48, LinkingTypes: closure_49, ME: closure_50, MessageFlags: closure_51, MessageStates: closure_52, MessageTypes: closure_53, Permissions: closure_54, Routes: closure_55, UpsellTypes: closure_56, UserSettingsSections: closure_57, WebBrowserType: closure_58 } = Constants);
+const InviteTypes = fn(7155).InviteTypes;
 const PremiumConstants = fn(1374);
-({ PremiumTypes: closure_58, PremiumUpsellTypes: closure_59 } = PremiumConstants);
-let closure_60 = fn(8723).SafetySystemNotificationCtaType;
-let closure_61 = fn(1114).OpenThreadAnalyticsLocations;
+({ PremiumTypes: closure_60, PremiumUpsellTypes: closure_61 } = PremiumConstants);
+let closure_62 = fn(7868).SafetySystemNotificationCtaType;
+let closure_63 = fn(1114).OpenThreadAnalyticsLocations;
 const jsx = fn(21).jsx;
 let items = [AnalyticsLocationDefault.PREMIUM_GIFT_INTENT_CARD];
 const size = fn(2);
@@ -149,18 +152,18 @@ class MessagesHandlers {
       nativeEvent = nativeEvent.nativeEvent;
       const messageData = nativeEvent.getMessageData(nativeEvent.id);
       if (null != messageData) {
-        obj(dependencyMap[38])(dependencyMap[37], dependencyMap.paths).then((handleMessagesTapImage) => {
+        obj(dependencyMap[40])(dependencyMap[39], dependencyMap.paths).then((handleMessagesTapImage) => {
           obj = { tapImageData: nativeEvent, allowWithinModal: false, message: messageData.message, messageChannel: messageData.messageChannel, selectedChannelId: obj.params.selectedChannelId };
           const result = handleMessagesTapImage.handleMessagesTapImage(obj);
         });
-        const promise = obj(dependencyMap[38])(dependencyMap[37], dependencyMap.paths);
+        const promise = obj(dependencyMap[40])(dependencyMap[39], dependencyMap.paths);
       }
     };
     obj.handleTapChannel = function handleTapChannel(nativeEvent) {
       if (!data.isModalOrActionsheetObstructing()) {
-        obj = obj(dependencyMap[39]);
+        obj = obj(dependencyMap[41]);
         data = obj.getNativeSyntheticEventData(nativeEvent).data;
-        obj(dependencyMap[38])(dependencyMap[40], dependencyMap.paths).then((handleMessagesTapChannel) => {
+        obj(dependencyMap[40])(dependencyMap[42], dependencyMap.paths).then((handleMessagesTapChannel) => {
           const result = handleMessagesTapChannel.handleMessagesTapChannel({
             data,
             dismissKeyboard() {
@@ -173,17 +176,17 @@ class MessagesHandlers {
             }
           });
         });
-        const promise = obj(dependencyMap[38])(dependencyMap[40], dependencyMap.paths);
+        const promise = obj(dependencyMap[40])(dependencyMap[42], dependencyMap.paths);
       }
     };
     obj.handleLongPressChannel = function handleLongPressChannel(nativeEvent) {
       if (!obj.isModalOrActionsheetObstructing()) {
         obj = MessageDataSnowflakeUtils;
         const data = obj.getNativeSyntheticEventData(nativeEvent).data;
-        asyncRequireImpl(11863, dependencyMap.paths).then((handleMessagesLongPressChannel) => {
+        asyncRequireImpl(11078, dependencyMap.paths).then((handleMessagesLongPressChannel) => {
           const result = handleMessagesLongPressChannel.handleMessagesLongPressChannel({ data });
         });
-        const promise = asyncRequireImpl(11863, dependencyMap.paths);
+        const promise = asyncRequireImpl(11078, dependencyMap.paths);
       }
     };
     obj.handleTapAttachmentLink = function handleTapAttachmentLink(arg0) {
@@ -199,39 +202,39 @@ class MessagesHandlers {
       }
     };
     obj.handleTapCall = function handleTapCall(nativeEvent) {
-      const data = channel(dependencyMap[39]).getNativeSyntheticEventData(nativeEvent).data;
+      const data = channel(dependencyMap[41]).getNativeSyntheticEventData(nativeEvent).data;
       const channelId = data.channelId;
       channel = channel.getChannel(channelId);
-      obj = channel(dependencyMap[39]);
+      obj = channel(dependencyMap[41]);
       if (tmp3) {
         if (tmpResult.checkIsCallActive(channelId, data.messageId)) {
-          tmp(tmp2[44]).handleJoinCall(channel);
-          const tmpResult3 = tmp(tmp2[44]);
+          tmp(tmp2[46]).handleJoinCall(channel);
+          const tmpResult3 = tmp(tmp2[46]);
         } else {
           const obj2 = { key: "CallTap", options: null, hasIcons: true };
           const obj3 = { label: null, IconComponent: null, onPress: null };
-          const intl = tmp(tmp2[46]).intl;
-          obj3.label = intl.string(tmp(tmp2[46]).t.focH1t);
-          obj3.IconComponent = tmp(tmp2[47]).PhoneCallIcon;
+          const intl = tmp(tmp2[48]).intl;
+          obj3.label = intl.string(tmp(tmp2[48]).t.focH1t);
+          obj3.IconComponent = tmp(tmp2[49]).PhoneCallIcon;
           obj3.onPress = function onPress() {
-            obj = obj(dependencyMap[44]);
+            obj = obj(dependencyMap[46]);
             obj.handleStartCall(channel);
           };
           items = [obj3, ];
           const obj4 = { label: null, IconComponent: null, onPress: null };
-          const intl2 = tmp(tmp2[46]).intl;
-          obj4.label = intl2.string(tmp(tmp2[46]).t.oCqlGG);
-          obj4.IconComponent = tmp(tmp2[48]).VideoIcon;
+          const intl2 = tmp(tmp2[48]).intl;
+          obj4.label = intl2.string(tmp(tmp2[48]).t.oCqlGG);
+          obj4.IconComponent = tmp(tmp2[50]).VideoIcon;
           obj4.onPress = function onPress() {
-            obj = obj(dependencyMap[44]);
+            obj = obj(dependencyMap[46]);
             obj.handleStartCall(channel, true);
           };
           items[1] = obj4;
           obj2.options = items;
-          const result = tmp(tmp2[45]).showSimpleActionSheet(obj2);
-          const tmpResult4 = tmp(tmp2[45]);
+          const result = tmp(tmp2[47]).showSimpleActionSheet(obj2);
+          const tmpResult4 = tmp(tmp2[47]);
         }
-        tmpResult = tmp(tmp2[43]);
+        tmpResult = tmp(tmp2[45]);
       }
     };
     obj.handleTapMention = function handleTapMention(nativeEvent) {
@@ -278,7 +281,7 @@ class MessagesHandlers {
         if (current2 != null) {
           const applicationCommandManager = current2.getApplicationCommandManager();
           if (applicationCommandManager != null) {
-            applicationCommandManager.setPartialCommand(commandId, commandName, obj(dependencyMap[52]).ApplicationCommandTriggerLocations.MENTION);
+            applicationCommandManager.setPartialCommand(commandId, commandName, obj(dependencyMap[54]).ApplicationCommandTriggerLocations.MENTION);
           }
         }
       };
@@ -286,23 +289,23 @@ class MessagesHandlers {
     };
     obj.handleLongPressCommandMention = function handleLongPressCommandMention(nativeEvent) {
       ({ commandName, commandId } = nativeEvent.nativeEvent);
-      obj = obj(dependencyMap[49]);
+      obj = obj(dependencyMap[51]);
       const result = obj.handleLongPressCommandMention(commandName, commandId);
     };
     obj.handleTapGameMention = function handleTapGameMention(nativeEvent) {
       if (!obj.isModalOrActionsheetObstructing()) {
         obj = MessageDataSnowflakeUtils;
         const gameId = obj.getNativeSyntheticEventData(nativeEvent);
-        asyncRequireImpl(11893, dependencyMap.paths).then((handleMessagesTapGameMention) => {
+        asyncRequireImpl(11108, dependencyMap.paths).then((handleMessagesTapGameMention) => {
           const result = handleMessagesTapGameMention.handleMessagesTapGameMention({ gameId: gameId.gameId });
         });
-        const promise = asyncRequireImpl(11893, dependencyMap.paths);
+        const promise = asyncRequireImpl(11108, dependencyMap.paths);
       }
     };
     obj.handleTapGuildEventLink = function handleTapGuildEventLink(node) {
       node = node.node;
       if (null != node) {
-        obj = obj(dependencyMap[54]);
+        obj = obj(dependencyMap[56]);
         if (obj.isLinkTrusted(node)) {
           const payload = require("parseURL")(tmp).payload;
           if (payload.type !== constants8.INVITE) {
@@ -313,12 +316,12 @@ class MessagesHandlers {
             invite = invite.getInvite(payload.inviteCode);
             let tmp8 = null == invite;
             if (!tmp8) {
-              tmp8 = !tmp2(tmp3[56]).isGuildScheduledEventInviteEmbed(invite);
-              const tmp2Result = tmp2(tmp3[56]);
+              tmp8 = !tmp2(tmp3[58]).isGuildScheduledEventInviteEmbed(invite);
+              const tmp2Result = tmp2(tmp3[58]);
             }
             let flag = !tmp8;
             if (!tmp8) {
-              tmp4(tmp3[57])(invite);
+              tmp4(tmp3[59])(invite);
               flag = true;
             }
             return flag;
@@ -332,7 +335,7 @@ class MessagesHandlers {
     obj.handleTapLink = function handleTapLink(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
       const messageData = nativeEvent.getMessageData(nativeEvent.data.messageId);
-      obj(dependencyMap[38])(dependencyMap[58], dependencyMap.paths).then((handleMessagesTapLink) => {
+      obj(dependencyMap[40])(dependencyMap[60], dependencyMap.paths).then((handleMessagesTapLink) => {
         obj = { allowWithinModal: false, chatInputRef: obj.params.chatInputRef, handleTransitionToThread: obj.handleTransitionToThread, message: null, messageChannel: null, selectedChannelId: null, tapLinkData: null };
         let message;
         if (closure_1 != null) {
@@ -426,14 +429,14 @@ class MessagesHandlers {
         items = [AnalyticsLocationDefault.USERNAME];
         obj.handleOpenProfile(nativeEvent, items);
       } else {
-        const nativeSyntheticEventData = tmp(11827).getNativeSyntheticEventData(nativeEvent);
+        const nativeSyntheticEventData = tmp(11042).getNativeSyntheticEventData(nativeEvent);
         const userId = nativeSyntheticEventData.userId;
         const messageData = obj.getMessageData(nativeSyntheticEventData.messageId);
         if (null != messageData) {
           const message = messageData.message;
           if (isCrosspostDefault(message)) {
             if (null != message.messageReference.guild_id) {
-              const items1 = [tmp13(7459).USERNAME];
+              const items1 = [tmp13(6603).USERNAME];
               obj3.handleOpenProfile(nativeEvent, items1);
             }
           }
@@ -443,7 +446,7 @@ class MessagesHandlers {
             const isPrivateResult = messageChannel.isPrivate();
             const canResult = PermissionStore.can(constants9.SEND_MESSAGES, messageChannel);
             let tmp7 = undefined === user;
-            const isReadOnlyThread = tmp(7543).computeIsReadOnlyThread(messageChannel);
+            const isReadOnlyThread = tmp(6687).computeIsReadOnlyThread(messageChannel);
             if (!tmp7) {
               let tmp6 = !isPrivateResult;
               if (!isPrivateResult) {
@@ -457,15 +460,15 @@ class MessagesHandlers {
             if (!tmp7) {
               const current = obj3.getParams().chatInputRef.current;
               if (current != null) {
-                current.insertText(tmp(10559).getMentionTextWithUser(messageChannel, user), null, true);
-                const tmpResult4 = tmp(10559);
+                current.insertText(tmp(9725).getMentionTextWithUser(messageChannel, user), null, true);
+                const tmpResult4 = tmp(9725);
               }
             }
-            const tmpResult3 = tmp(7543);
+            const tmpResult3 = tmp(6687);
           }
           tmp13 = importDefault;
         }
-        const tmpResult = tmp(11827);
+        const tmpResult = tmp(11042);
       }
     };
     obj.handleLongPressUsername = function handleLongPressUsername(arg0) {
@@ -486,7 +489,7 @@ class MessagesHandlers {
         let tmp7 = user;
         if (null != messageId) {
           if (tmpResult.isPublicSystemMessage(message)) {
-            ActionSheetActionCreatorsDefault.openLazy(tmp(1980)(11929, tmp2.paths), "PublicGuildAnnouncementProfile");
+            ActionSheetActionCreatorsDefault.openLazy(tmp(1981)(11144, tmp2.paths), "PublicGuildAnnouncementProfile");
           } else {
             let user1 = user;
             if (null == user) {
@@ -496,9 +499,9 @@ class MessagesHandlers {
               const guild_id = message.messageReference.guild_id;
               if (null != guild_id) {
                 const _HermesInternal2 = HermesInternal;
-                const tmp10Result = tmp10(4755);
+                const tmp10Result = tmp10(4800);
                 const obj2 = { guildId: guild_id };
-                tmp10Result.openLazy(tmp(1980)(10046, tmp2.paths), "GuildProfileActionSheet:" + guild_id, obj2);
+                tmp10Result.openLazy(tmp(1981)(9206, tmp2.paths), "GuildProfileActionSheet:" + guild_id, obj2);
               }
             }
             tmp7 = user1;
@@ -511,16 +514,16 @@ class MessagesHandlers {
                   tmp7 = user1;
                   if (null != messageByReference.message) {
                     tmp7 = user1;
-                    if (tmp10(8327)(messageByReference.message)) {
+                    if (tmp10(7480)(messageByReference.message)) {
                       tmp7 = user1;
                       if (null != messageByReference.message.messageReference) {
                         tmp7 = user1;
                         if (null != messageByReference.message.messageReference.guild_id) {
                           const guild_id2 = messageByReference.message.messageReference.guild_id;
                           const _HermesInternal = HermesInternal;
-                          const tmp10Result2 = tmp10(4755);
+                          const tmp10Result2 = tmp10(4800);
                           const obj3 = { guildId: guild_id2 };
-                          tmp10Result2.openLazy(tmp(1980)(10046, tmp2.paths), "GuildProfileActionSheet:" + guild_id2, obj3);
+                          tmp10Result2.openLazy(tmp(1981)(9206, tmp2.paths), "GuildProfileActionSheet:" + guild_id2, obj3);
                         }
                       }
                     }
@@ -529,7 +532,7 @@ class MessagesHandlers {
               }
             }
           }
-          tmpResult = tmp(8325);
+          tmpResult = tmp(7478);
         }
         if (null != tmp7) {
           const obj4 = { userId: tmp7.id, channelId: messageData.messageChannel.id, messageId, sourceAnalyticsLocations };
@@ -560,7 +563,7 @@ class MessagesHandlers {
         ({ messageChannel, message } = messageData);
         let guildId = messageChannel.getGuildId();
         if (guildId == null) {
-          guildId = __V;
+          guildId = closure_2_50;
         }
         const messageReference = message.messageReference;
         let message_id;
@@ -582,7 +585,25 @@ class MessagesHandlers {
         const findSummaryResult = SummaryStore.findSummary(channelId, summaryId);
         if (null != findSummaryResult) {
           const obj3 = { summary: findSummaryResult };
-          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11932, dependencyMap.paths), "SummaryActionSheet", obj3);
+          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11147, dependencyMap.paths), "SummaryActionSheet", obj3);
+        }
+      }
+    };
+    obj.handleTapConversationHeader = function handleTapConversationHeader(nativeEvent) {
+      obj = MessageDataSnowflakeUtils;
+      const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
+      ({ channelId, conversationId } = nativeSyntheticEventData);
+      if (null != obj.getMessageData(nativeSyntheticEventData.messageId)) {
+        const tmp12 = resolveSelectedConversationDefault(ConversationsStore, ConversationPreviewStore, channelId, conversationId);
+        if (null != tmp12) {
+          const ConversationsAnalytics = tmp(7335).ConversationsAnalytics;
+          const obj2 = { channelId, conversationId, isFocusMode: false };
+          const result = ConversationsAnalytics.trackTopicsUnitClicked(obj2);
+          const conversationMessages = tmp(7333).fetchConversationMessages(channelId, conversationId, { includeReactions: true, includeMessageReferences: true });
+          const tmpResult = tmp(7333);
+          const obj3 = { channelId, guildId: tmp12.guildId, focusSelectedConversation: true };
+          const result1 = tmp(7338).openConversationNavigator(obj3);
+          const tmpResult2 = tmp(7338);
         }
       }
     };
@@ -595,7 +616,7 @@ class MessagesHandlers {
         ({ messageChannel, message } = messageData);
         let guildId = messageChannel.getGuildId();
         if (guildId == null) {
-          guildId = __V;
+          guildId = closure_2_50;
         }
         const result = obj.handleTransitionToMessage(guildId, messageChannel.id, message.id);
         SummaryActionCreatorsDefault.setSelectedSummary(channelId, summaryId);
@@ -612,9 +633,9 @@ class MessagesHandlers {
           const user = UserStore.getUser(message.author.id);
           if (null != user) {
             if (null == UploadStore.getUploaderFileForMessageId(messageId)) {
-              const tmpResult = tmp(11547);
-              const longPressSelectedMedia = tmpResult.getLongPressSelectedMedia(message, mediaIndex, mediaType, tmp(5019).asComponentId(nativeSyntheticEventData.componentId), componentMediaIndex);
-              const tmpResult3 = tmp(5019);
+              const tmpResult = tmp(10822);
+              const longPressSelectedMedia = tmpResult.getLongPressSelectedMedia(message, mediaIndex, mediaType, tmp(5067).asComponentId(nativeSyntheticEventData.componentId), componentMediaIndex);
+              const tmpResult3 = tmp(5067);
               const obj3 = { analyticsLocation: null, canAddNewReactions: null, channel: null, chatInputRef: null, message: null, selectedMedia: null, user: null };
               const obj4 = { section: constants5.CHANNEL, object: constants2.MESSAGE };
               obj3.analyticsLocation = obj4;
@@ -624,8 +645,8 @@ class MessagesHandlers {
               obj3.message = message;
               obj3.selectedMedia = longPressSelectedMedia;
               obj3.user = user;
-              const result = tmp(11937).showLongPressMessageActionSheet(obj3);
-              const tmpResult4 = tmp(11937);
+              const result = tmp(11152).showLongPressMessageActionSheet(obj3);
+              const tmpResult4 = tmp(11152);
             }
           }
         }
@@ -654,17 +675,17 @@ class MessagesHandlers {
       const messageData = obj.getMessageData(obj.getNativeSyntheticEventData(nativeEvent).messageId);
       if (null != messageData) {
         ({ messageChannel, message } = messageData);
-        const result = tmp(4756).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+        const result = tmp(4801).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
         if (message.hasFlag(constants6.HAS_THREAD)) {
           const tmpResult3 = tmp(1101);
           tmpResult3.transitionToGuild(messageChannel.guild_id, tmp6(11).castMessageIdAsChannelId(message.id));
           const tmp6Result = tmp6(11);
         } else {
-          tmp(11947).handleCreateThread(messageChannel, message, "Message Shortcut");
-          const tmpResult4 = tmp(11947);
+          tmp(11162).handleCreateThread(messageChannel, message, "Message Shortcut");
+          const tmpResult4 = tmp(11162);
         }
         tmp6 = importDefault;
-        const tmpResult = tmp(4756);
+        const tmpResult = tmp(4801);
       }
     };
     obj.handleInitiateEdit = function handleInitiateEdit(nativeEvent) {
@@ -700,7 +721,7 @@ class MessagesHandlers {
                   if (tmp16.GUILD_BOOST_TIER_3 !== type) {
                     if (tmp16.AUTO_MODERATION_ACTION === type) {
                       if (tmpResult.isAutomodMessageRecord(message)) {
-                        const result = tmp(7782).extractAutomodMessageFields(message);
+                        const result = tmp(6928).extractAutomodMessageFields(message);
                         ({ embedChannel, flaggedMessageId } = result);
                         if (tmp5) {
                           id = undefined;
@@ -710,9 +731,9 @@ class MessagesHandlers {
                           const result1 = obj.handleTransitionToMessage(guildId, id, flaggedMessageId);
                         }
                         tmp5 = null != flaggedMessageId && null != embedChannel;
-                        const tmpResult2 = tmp(7782);
+                        const tmpResult2 = tmp(6928);
                       }
-                      tmpResult = tmp(7782);
+                      tmpResult = tmp(6928);
                     }
                   }
                 }
@@ -722,7 +743,7 @@ class MessagesHandlers {
             const obj3 = { location: null };
             const obj6 = { section: constants5.CHANNEL_TEXT_AREA, object: constants2.BOOST_ANNOUNCEMENT_UPSELL };
             obj3.location = obj6;
-            AppAnalyticsUtilsDefault.trackWithMetadata(BottomSheet.PREMIUM_GUILD_PROMOTION_OPENED, obj3);
+            AppAnalyticsUtilsDefault.trackWithMetadata(closure_2_42.PREMIUM_GUILD_PROMOTION_OPENED, obj3);
           }
         }
       }
@@ -769,7 +790,7 @@ class MessagesHandlers {
       const author = message.author;
       if (null != author) {
         if (null != author.id) {
-          obj = obj(dependencyMap[88]);
+          obj = obj(dependencyMap[94]);
           obj.openTrack(PresenceStore.findActivity(author.id, (type) => type.type === constants.LISTENING));
           const findActivityResult = PresenceStore.findActivity(author.id, (type) => type.type === constants.LISTENING);
         }
@@ -794,12 +815,12 @@ class MessagesHandlers {
                     if (tmp31Result.isAndroid()) {
                       ANDROID = constants3.ANDROID;
                     }
-                    tmp31Result = tmp31(tmp32[62]);
+                    tmp31Result = tmp31(tmp32[64]);
                   }
                   let hasFlagResult = null != applicationActivity.flags;
                   if (hasFlagResult) {
-                    hasFlagResult = tmp31(tmp32[89]).hasFlag(applicationActivity.flags, constants2.EMBEDDED);
-                    const tmp31Result6 = tmp31(tmp32[89]);
+                    hasFlagResult = tmp31(tmp32[95]).hasFlag(applicationActivity.flags, constants2.EMBEDDED);
+                    const tmp31Result6 = tmp31(tmp32[95]);
                   }
                   let flag = null != ANDROID;
                   if (flag) {
@@ -818,8 +839,8 @@ class MessagesHandlers {
                     application1 = null;
                   }
                   if (null != application1) {
-                    obj = { presenceActivity: applicationActivity, currentUserPresenceActivity: require("getCurrentUserPresenceActivity")(LocalActivityStore, closure_1_32, id), currentUserId: id.getId(), message, application: application1, isEmbeddedApplication: hasFlagResult, isFrameApplication: false, isGameLaunchable: flag };
-                    const canJoin = tmp31(tmp32[90]).getCanJoin(obj);
+                    obj = { presenceActivity: applicationActivity, currentUserPresenceActivity: require("getCurrentUserPresenceActivity")(LocalActivityStore, closure_1_34, id), currentUserId: id.getId(), message, application: application1, isEmbeddedApplication: hasFlagResult, isFrameApplication: false, isGameLaunchable: flag };
+                    const canJoin = tmp31(tmp32[96]).getCanJoin(obj);
                     const remoteJoinPlatform = canJoin.remoteJoinPlatform;
                     let tmp11;
                     if (null != remoteJoinPlatform) {
@@ -833,14 +854,14 @@ class MessagesHandlers {
                     if (!canJoin.canJoin) {
                       if (tmp31Result8.getSupportsRemoteJoin(applicationActivity)) {
                         if (tmp31Result9.getShouldShowAppAuthPrompt(application1)) {
-                          items = [tmp33(tmp32[35]).INVITE_EMBED];
-                          const result = tmp31(tmp32[94]).startAuthorizationNoHook(application1, items);
+                          items = [tmp33(tmp32[37]).INVITE_EMBED];
+                          const result = tmp31(tmp32[100]).startAuthorizationNoHook(application1, items);
                         }
-                        tmp31Result9 = tmp31(tmp32[93]);
+                        tmp31Result9 = tmp31(tmp32[99]);
                       }
-                      tmp31Result8 = tmp31(tmp32[92]);
+                      tmp31Result8 = tmp31(tmp32[98]);
                     }
-                    const tmp31Result7 = tmp31(tmp32[90]);
+                    const tmp31Result7 = tmp31(tmp32[96]);
                     const obj2 = { userId: author.id, sessionId: session_id, application, channelId: channel_id, messageId: message.id, applicationActivity, remotePartyId: tmp11, embedded: hasFlagResult, source: constants5.MESSAGE_EMBED, analyticsLocations: null };
                     const items1 = [require("AnalyticsLocation").INVITE_EMBED];
                     obj2.analyticsLocations = items1;
@@ -867,7 +888,7 @@ class MessagesHandlers {
                     require("trackApplicationOpen")(obj3);
                     const tmp33Result2 = require("trackApplicationOpen");
                   }
-                  obj11 = obj(dependencyMap[62]);
+                  obj11 = obj(dependencyMap[64]);
                 }
               } else if (null != deeplink_uri) {
                 LinkingDefault.openURL(deeplink_uri, constants10.SAFARI);
@@ -882,7 +903,7 @@ class MessagesHandlers {
                 obj4.channelId = channel_id;
                 obj4.applicationId = application.id;
                 obj4.messageId = message.id;
-                const items3 = [tmp24(tmp25[35]).INVITE_EMBED];
+                const items3 = [tmp24(tmp25[37]).INVITE_EMBED];
                 obj4.analyticsLocations = items3;
                 trackApplicationOpenDefault(obj4);
               }
@@ -892,15 +913,15 @@ class MessagesHandlers {
       }
     };
     obj.handleTapStreamRequest = function handleTapStreamRequest(message) {
-      obj = obj(dependencyMap[98]);
+      obj = obj(dependencyMap[104]);
       if (_slicedToArray(obj.canFulfillStreamRequest(message, true), 1)[0]) {
         channel = ChannelStore.getChannel(message.channel_id);
         if (null != channel) {
-          const oSRequirement = tmp(tmp2[99]).getOSRequirement();
-          const tmpResult = tmp(tmp2[99]);
+          const oSRequirement = tmp(tmp2[105]).getOSRequirement();
+          const tmpResult = tmp(tmp2[105]);
           const obj2 = { channel, hasPermission: true, isActive: false, osRequirement: oSRequirement };
-          tmp(tmp2[99]).getStreamPressHandler(obj2)();
-          const tmpResult2 = tmp(tmp2[99]);
+          tmp(tmp2[105]).getStreamPressHandler(obj2)();
+          const tmpResult2 = tmp(tmp2[105]);
         }
       }
     };
@@ -942,25 +963,25 @@ class MessagesHandlers {
             let inviteKeyFromExtraData = null;
             if (null != invite) {
               const obj2 = { baseCode: invite.code, guildScheduledEventId: guildEventId };
-              inviteKeyFromExtraData = obj(dependencyMap[101]).generateInviteKeyFromExtraData(obj2);
-              const obj4 = obj(dependencyMap[101]);
+              inviteKeyFromExtraData = obj(dependencyMap[107]).generateInviteKeyFromExtraData(obj2);
+              const obj4 = obj(dependencyMap[107]);
             }
             let tmp19;
             if (null != inviteKeyFromExtraData) {
               tmp19 = getInviteURLDefault(inviteKeyFromExtraData);
             }
-            obj(dependencyMap[102]).openShareEvent(guildScheduledEvent, tmp19);
+            obj(dependencyMap[108]).openShareEvent(guildScheduledEvent, tmp19);
             return { action: "share" };
           } else {
             if (primary) {
-              if (closure_1_13(guildScheduledEvent)) {
-                const result = obj(dependencyMap[102]).transitionToEventDetailsFromInvite(guildScheduledEvent, recurrenceId);
+              if (closure_1_15(guildScheduledEvent)) {
+                const result = obj(dependencyMap[108]).transitionToEventDetailsFromInvite(guildScheduledEvent, recurrenceId);
                 let obj5 = { action: "transition" };
-                const obj3 = obj(dependencyMap[102]);
+                const obj3 = obj(dependencyMap[108]);
               }
               return obj5;
             }
-            obj = obj(dependencyMap[102]);
+            obj = obj(dependencyMap[108]);
             if (primary) {
               const result1 = obj.handleGuildScheduledEventRsvp(guildScheduledEvent.id, recurrenceId, guildScheduledEvent.guild_id);
               obj5 = { action: "rsvp" };
@@ -974,28 +995,28 @@ class MessagesHandlers {
       return { action: "noop" };
     };
     obj._questsEmbedOnPress = function _questsEmbedOnPress(code) {
-      obj = obj(dependencyMap[104]);
+      obj = obj(dependencyMap[110]);
       if (!obj.isMetaQuest()) {
-        const result = tmp(tmp2[105]).findQuestOrReplacement(code, QuestStore.quests, QuestStore.excludedQuests);
+        const result = tmp(tmp2[111]).findQuestOrReplacement(code, QuestStore.quests, QuestStore.excludedQuests);
         if (null != result) {
-          const obj2 = { scrollToQuestId: result.id, fromContent: tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE };
-          tmp(tmp2[106]).openQuestHome(obj2);
-          const tmpResult3 = tmp(tmp2[106]);
+          const obj2 = { scrollToQuestId: result.id, fromContent: tmp(tmp2[113]).QuestContent.QUEST_EMBED_MOBILE };
+          tmp(tmp2[112]).openQuestHome(obj2);
+          const tmpResult3 = tmp(tmp2[112]);
         } else {
-          const obj3 = { fromContent: tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE };
-          tmp(tmp2[106]).openQuestHome(obj3);
-          const tmpResult4 = tmp(tmp2[106]);
+          const obj3 = { fromContent: tmp(tmp2[113]).QuestContent.QUEST_EMBED_MOBILE };
+          tmp(tmp2[112]).openQuestHome(obj3);
+          const tmpResult4 = tmp(tmp2[112]);
         }
-        const tmpResult = tmp(tmp2[105]);
+        const tmpResult = tmp(tmp2[111]);
       }
     };
     obj._questsEmbedOnAccept = function _questsEmbedOnAccept(code) {
-      obj = obj(dependencyMap[104]);
+      obj = obj(dependencyMap[110]);
       if (obj.isMetaQuest()) {
-        tmp(tmp2[106]).openDiscordQuestsFAQ();
-        const tmpResult = tmp(tmp2[106]);
+        tmp(tmp2[112]).openDiscordQuestsFAQ();
+        const tmpResult = tmp(tmp2[112]);
       } else {
-        const result = tmp(tmp2[105]).findQuestOrReplacement(code, QuestStore.quests, QuestStore.excludedQuests);
+        const result = tmp(tmp2[111]).findQuestOrReplacement(code, QuestStore.quests, QuestStore.excludedQuests);
         if (null != result) {
           if (null == QuestStore.questEnrollmentBlockedUntil) {
             if (!tmp4.isQuestAccessSuspended) {
@@ -1011,25 +1032,25 @@ class MessagesHandlers {
                 tmp9 = result.config.expiresAt < date.toISOString();
               }
               if (!tmp9) {
-                const obj2 = { questContent: tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE, questContentCTA: tmp(tmp2[109]).QuestContentCTA.ACCEPT_QUEST, sourceQuestContent: tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE };
-                tmp(tmp2[108]).enrollInQuest(result.id, obj2);
-                const tmpResult7 = tmp(tmp2[108]);
+                const obj2 = { questContent: tmp(tmp2[113]).QuestContent.QUEST_EMBED_MOBILE, questContentCTA: tmp(tmp2[115]).QuestContentCTA.ACCEPT_QUEST, sourceQuestContent: tmp(tmp2[113]).QuestContent.QUEST_EMBED_MOBILE };
+                tmp(tmp2[114]).enrollInQuest(result.id, obj2);
+                const tmpResult7 = tmp(tmp2[114]);
               }
-              const obj3 = { scrollToQuestId: result.id, fromContent: tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE };
-              tmp(tmp2[106]).openQuestHome(obj3);
-              const tmpResult8 = tmp(tmp2[106]);
+              const obj3 = { scrollToQuestId: result.id, fromContent: tmp(tmp2[113]).QuestContent.QUEST_EMBED_MOBILE };
+              tmp(tmp2[112]).openQuestHome(obj3);
+              const tmpResult8 = tmp(tmp2[112]);
             }
           }
-          const obj4 = { scrollToQuestId: result.id, fromContent: tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE };
-          tmp(tmp2[106]).openQuestHome(obj4);
-          const tmpResult9 = tmp(tmp2[106]);
+          const obj4 = { scrollToQuestId: result.id, fromContent: tmp(tmp2[113]).QuestContent.QUEST_EMBED_MOBILE };
+          tmp(tmp2[112]).openQuestHome(obj4);
+          const tmpResult9 = tmp(tmp2[112]);
         } else {
-          const obj5 = { fromContent: tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE };
-          tmp(tmp2[106]).openQuestHome(obj5);
-          const tmpResult10 = tmp(tmp2[106]);
+          const obj5 = { fromContent: tmp(tmp2[113]).QuestContent.QUEST_EMBED_MOBILE };
+          tmp(tmp2[112]).openQuestHome(obj5);
+          const tmpResult10 = tmp(tmp2[112]);
         }
         tmp4 = QuestStore;
-        const tmpResult6 = tmp(tmp2[105]);
+        const tmpResult6 = tmp(tmp2[111]);
       }
     };
     obj.handleTapInviteEmbedAccept = function handleTapInviteEmbedAccept(nativeEvent) {
@@ -1199,46 +1220,46 @@ class MessagesHandlers {
           }
           if (null != tmp8) {
             id = AuthenticationStore.getId();
-            if (tmp8.type !== tmp(4776).CodedLinkType.INVITE) {
-              if (tmp8.type !== tmp(4776).CodedLinkType.EMBEDDED_ACTIVITY_INVITE) {
-                if (tmp8.type === tmp(4776).CodedLinkType.TEMPLATE) {
+            if (tmp8.type !== tmp(4821).CodedLinkType.INVITE) {
+              if (tmp8.type !== tmp(4821).CodedLinkType.EMBEDDED_ACTIVITY_INVITE) {
+                if (tmp8.type === tmp(4821).CodedLinkType.TEMPLATE) {
                   guild_templates_GuildTemplateActionCreatorsDefault.showModal(tmp8.code);
                 } else {
-                  if (tmp8.type !== tmp(4776).CodedLinkType.BUILD_OVERRIDE) {
-                    if (tmp8.type !== tmp(4776).CodedLinkType.MANUAL_BUILD_OVERRIDE) {
-                      if (tmp8.type === tmp(4776).CodedLinkType.EXPERIMENT) {
-                        const experimentFromEmbedURL = tmp(8166).getExperimentFromEmbedURL(tmp8.code);
+                  if (tmp8.type !== tmp(4821).CodedLinkType.BUILD_OVERRIDE) {
+                    if (tmp8.type !== tmp(4821).CodedLinkType.MANUAL_BUILD_OVERRIDE) {
+                      if (tmp8.type === tmp(4821).CodedLinkType.EXPERIMENT) {
+                        const experimentFromEmbedURL = tmp(7316).getExperimentFromEmbedURL(tmp8.code);
                         if (null != experimentFromEmbedURL) {
-                          const experimentTreatmentFromEmbedURL = tmp(8166).getExperimentTreatmentFromEmbedURL(tmp8.code);
-                          const tmpResult15 = tmp(8166);
-                          const result = tmp(12089).handleCodedLinkExperimentEmbedTap(experimentFromEmbedURL, experimentTreatmentFromEmbedURL);
-                          const tmpResult16 = tmp(12089);
+                          const experimentTreatmentFromEmbedURL = tmp(7316).getExperimentTreatmentFromEmbedURL(tmp8.code);
+                          const tmpResult15 = tmp(7316);
+                          const result = tmp(11284).handleCodedLinkExperimentEmbedTap(experimentFromEmbedURL, experimentTreatmentFromEmbedURL);
+                          const tmpResult16 = tmp(11284);
                         }
-                        const tmpResult = tmp(8166);
-                      } else if (tmp8.type === tmp(4776).CodedLinkType.EVENT) {
+                        const tmpResult = tmp(7316);
+                      } else if (tmp8.type === tmp(4821).CodedLinkType.EVENT) {
                         const tmp21 = _slicedToArray(tmp8.code.split("-"), 3);
                         const obj3 = { invite: null, isMember: GuildMemberStore.isMember(tmp21[0], id), primary, secondary, guildEventId: tmp21[1], recurrenceId: tmp21[2] };
                         const result1 = obj2.handleTapGuildEventInvite(obj3);
-                      } else if (tmp8.type === tmp(4776).CodedLinkType.CHANNEL_LINK) {
+                      } else if (tmp8.type === tmp(4821).CodedLinkType.CHANNEL_LINK) {
                         const obj4 = { guildId: null, channelId: null, message: null };
                         [obj7.guildId, obj7.channelId] = tmp8.code.split("/");
                         obj4.message = message2;
                         const result2 = obj2.handleTapVoiceChannelPreview(obj4);
                         const tmp18 = _slicedToArray(tmp8.code.split("/"), 2);
-                      } else if (tmp8.type === tmp(4776).CodedLinkType.APP_DIRECTORY_PROFILE) {
+                      } else if (tmp8.type === tmp(4821).CodedLinkType.APP_DIRECTORY_PROFILE) {
                         application = ApplicationDirectoryApplicationsStore.getApplication(tmp8.code);
                         if (null != application) {
                           ({ id: obj6.applicationId, custom_install_url: obj6.customInstallUrl, install_params: obj6.installParams, integration_types_config: obj6.integrationTypesConfig } = application);
-                          tmp(9351).installApplication({ applicationId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, source: "app_directory_profile_embed" });
+                          tmp(8506).installApplication({ applicationId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, source: "app_directory_profile_embed" });
                           const obj5 = { applicationId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, source: "app_directory_profile_embed" };
-                          const tmpResult17 = tmp(9351);
+                          const tmpResult17 = tmp(8506);
                         }
-                      } else if (tmp8.type === tmp(4776).CodedLinkType.QUESTS_EMBED) {
+                      } else if (tmp8.type === tmp(4821).CodedLinkType.QUESTS_EMBED) {
                         obj2._questsEmbedOnPress(tmp8.code);
                       } else {
-                        if (tmp8.type !== tmp(4776).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
-                          if (tmp8.type !== tmp(4776).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
-                            if (tmp8.type !== tmp(4776).CodedLinkType.APP_OAUTH2_LINK) {
+                        if (tmp8.type !== tmp(4821).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+                          if (tmp8.type !== tmp(4821).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+                            if (tmp8.type !== tmp(4821).CodedLinkType.APP_OAUTH2_LINK) {
                               const _Error = Error;
                               const _HermesInternal = HermesInternal;
                               throw Error("Unknown coded link type: " + tmp8.type);
@@ -1246,11 +1267,11 @@ class MessagesHandlers {
                               const application1 = ApplicationStore.getApplication(tmp8.code);
                               if (null != application1) {
                                 const obj8 = { application_id: application1.id };
-                                AppAnalyticsUtilsDefault.trackWithMetadata(BottomSheet.APP_OAUTH2_LINK_EMBED_CTA_CLICKED, obj8);
+                                AppAnalyticsUtilsDefault.trackWithMetadata(closure_2_42.APP_OAUTH2_LINK_EMBED_CTA_CLICKED, obj8);
                                 ({ id: obj30.applicationId, customInstallUrl: obj30.customInstallUrl, installParams: obj30.installParams, integrationTypesConfig: obj30.integrationTypesConfig } = application1);
-                                tmp(9351).installApplication({ applicationId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, source: "app_oauth2_link_embed" });
+                                tmp(8506).installApplication({ applicationId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, source: "app_oauth2_link_embed" });
                                 const obj9 = { applicationId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, source: "app_oauth2_link_embed" };
-                                const tmpResult18 = tmp(9351);
+                                const tmpResult18 = tmp(8506);
                               }
                             }
                           }
@@ -1258,13 +1279,13 @@ class MessagesHandlers {
                         const obj10 = { skuId: _slicedToArray(tmp8.code.split("-"), 1)[0], analyticsLocations: null };
                         items = [AnalyticsLocationDefault.GIFT_CODE_EMBED];
                         obj10.analyticsLocations = items;
-                        const result3 = tmp(11093).openSocialLayerStorefrontProductDetailsModal(obj10);
-                        const tmpResult19 = tmp(11093);
+                        const result3 = tmp(10262).openSocialLayerStorefrontProductDetailsModal(obj10);
+                        const tmpResult19 = tmp(10262);
                       }
                     }
                   }
-                  tmp(12072).toggleOverride(tmp8.code);
-                  const tmpResult20 = tmp(12072);
+                  tmp(11267).toggleOverride(tmp8.code);
+                  const tmpResult20 = tmp(11267);
                 }
               }
             }
@@ -1285,18 +1306,18 @@ class MessagesHandlers {
               }
               let enabled = null != id2;
               if (enabled) {
-                const guildInviteExtendedType = tmp(8009).getGuildInviteExtendedType(invite);
-                enabled = guildInviteExtendedType === tmp(8009).GuildInviteExtendedType.VOICE_CHANNEL;
-                const tmpResult21 = tmp(8009);
+                const guildInviteExtendedType = tmp(7154).getGuildInviteExtendedType(invite);
+                enabled = guildInviteExtendedType === tmp(7154).GuildInviteExtendedType.VOICE_CHANNEL;
+                const tmpResult21 = tmp(7154);
               }
               if (enabled) {
                 const obj11 = { guildId: id2, location: "mobile_invite_embed" };
-                enabled = tmp(11598).getVoiceChannelListInviteExperiment(obj11).enabled;
-                const tmpResult22 = tmp(11598);
+                enabled = tmp(10848).getVoiceChannelListInviteExperiment(obj11).enabled;
+                const tmpResult22 = tmp(10848);
               }
               if (enabled) {
-                enabled = tmp(11599).canShowVoiceChannelListInviteEmbed(invite);
-                const tmpResult23 = tmp(11599);
+                enabled = tmp(10849).canShowVoiceChannelListInviteEmbed(invite);
+                const tmpResult23 = tmp(10849);
               }
               if (tmpResult24.isGuildScheduledEventInviteEmbed(invite)) {
                 const obj12 = { invite, isMember: isMemberResult, primary, secondary };
@@ -1318,12 +1339,12 @@ class MessagesHandlers {
                         tmp48 = guildId !== SelectedGuildStore.getGuildId();
                       }
                       if (tmp48) {
-                        tmp(7616).transitionToGuild(guildId);
-                        const tmpResult25 = tmp(7616);
+                        tmp(6760).transitionToGuild(guildId);
+                        const tmpResult25 = tmp(6760);
                       }
-                      const result4 = tmp(4995).navigateToVoiceChannel(channel1, "Mobile Invite Embed");
+                      const result4 = tmp(5043).navigateToVoiceChannel(channel1, "Mobile Invite Embed");
                       str8 = "voice channel preview";
-                      const tmpResult26 = tmp(4995);
+                      const tmpResult26 = tmp(5043);
                     }
                   }
                 }
@@ -1337,29 +1358,29 @@ class MessagesHandlers {
                   const obj20 = ActionSheetActionCreatorsDefault;
                   const obj14 = { guildId: invite.guild.id, context: null, inviteKey: null };
                   const combined = "GuildProfileActionSheet:" + invite.guild.id;
-                  obj14.context = tmp(10064).GuildProfileCTAContext.INVITE;
+                  obj14.context = tmp(9224).GuildProfileCTAContext.INVITE;
                   obj14.inviteKey = tmp8.code;
-                  obj20.openLazy(tmp(1980)(10046, dependencyMap.paths), combined, obj14);
+                  obj20.openLazy(tmp(1981)(9206, dependencyMap.paths), combined, obj14);
                   str8 = "show profile";
-                  const tmp42 = tmp(1980)(10046, dependencyMap.paths);
+                  const tmp42 = tmp(1981)(9206, dependencyMap.paths);
                 } else if (isMemberResult) {
                   const result5 = obj2.handleTransitionToInviteChannel(invite);
                   str8 = "transition";
                 } else {
-                  const result6 = obj2.handleAcceptInstantInvite(invite, tmp(4773).getInviteInstanceId(tmp8.code, message2.id));
+                  const result6 = obj2.handleAcceptInstantInvite(invite, tmp(4818).getInviteInstanceId(tmp8.code, message2.id));
                   str8 = "accept";
-                  const tmpResult27 = tmp(4773);
+                  const tmpResult27 = tmp(4818);
                 }
               }
               const INVITE_EMBED = AnalyticsLocationDefault.INVITE_EMBED;
               if (enabled) {
-                const items1 = [INVITE_EMBED, tmp52(7459).VOICE_CHANNEL_LIST_INVITE_EMBED];
+                const items1 = [INVITE_EMBED, tmp52(6603).VOICE_CHANNEL_LIST_INVITE_EMBED];
                 let items2 = items1;
               } else {
                 items2 = [INVITE_EMBED];
               }
               tmp52 = importDefault;
-              tmpResult24 = tmp(8009);
+              tmpResult24 = tmp(7154);
               let id5;
               if (invite != null) {
                 const guild3 = invite.guild;
@@ -1367,8 +1388,8 @@ class MessagesHandlers {
                   id5 = guild3.id;
                 }
               }
-              const result7 = tmp(8681).trackInviteServerClicked(id5, str8, items2);
-              const tmpResult28 = tmp(8681);
+              const result7 = tmp(7826).trackInviteServerClicked(id5, str8, items2);
+              const tmpResult28 = tmp(7826);
             }
           }
         }
@@ -1386,7 +1407,7 @@ class MessagesHandlers {
       channel = ChannelStore.getChannel(channelId);
       if (null != channel) {
         obj = { author_id: message.message.author.id, link_guild_id: guildId, link_channel_id: channelId, link_channel_type: channel.type, guild_id: guildId1, channel_id: channelId1 };
-        AnalyticsUtilsDefault.track(BottomSheet.CHANNEL_LINK_PREVIEW_JOINED, obj);
+        AnalyticsUtilsDefault.track(closure_2_42.CHANNEL_LINK_PREVIEW_JOINED, obj);
         const current = obj.getParams().chatInputRef.current;
         if (current != null) {
           current.dismissKeyboard();
@@ -1395,19 +1416,19 @@ class MessagesHandlers {
         if (!obj2.shouldShowAgeGateForVoiceChannel(channelId)) {
           if (!tmp4Result.shouldShowSpoilerGateForChannelId(channelId)) {
             if (channel.isGuildStageVoice()) {
-              tmp4(8696).connectAndOpen(channel);
-              const tmp4Result4 = tmp4(8696);
+              tmp4(7841).connectAndOpen(channel);
+              const tmp4Result4 = tmp4(7841);
             } else {
-              const voiceChannel = tmp10(5660).selectVoiceChannel(channelId);
-              const tmp10Result = tmp10(5660);
-              tmp4(4995).openChannelCallModal(channel);
-              const tmp4Result5 = tmp4(4995);
+              const voiceChannel = tmp10(5723).selectVoiceChannel(channelId);
+              const tmp10Result = tmp10(5723);
+              tmp4(5043).openChannelCallModal(channel);
+              const tmp4Result5 = tmp4(5043);
             }
           }
-          tmp4Result = tmp4(7603);
+          tmp4Result = tmp4(6747);
         }
         obj2 = AgeGateUtils;
-        router_utils.transitionTo(closure_2_53.CHANNEL(guildId, channelId));
+        router_utils.transitionTo(closure_2_55.CHANNEL(guildId, channelId));
         const tmp4Result6 = router_utils;
       }
     };
@@ -1479,7 +1500,7 @@ class MessagesHandlers {
           obj6.callback = obj.handleTransitionToInviteChannel;
           InstantInviteActionCreatorsDefault.acceptInvite(obj6);
         }
-        obj = obj(dependencyMap[129]);
+        obj = obj(dependencyMap[135]);
         const obj2 = { onConfirm: acceptInvite };
         if (!obj.handleNSFWGuildInvite(invite, obj2)) {
           acceptInvite();
@@ -1505,13 +1526,13 @@ class MessagesHandlers {
               const messageData = obj.getMessageData(nativeSyntheticEventData.messageId);
             }
             if (obj.params.paymentsBlocked) {
-              tmp12(11725)();
+              tmp12(10977)();
             } else {
-              tmp12(1241).track(BottomSheet.OPEN_MODAL, { type: "gift_accept", location: null });
+              tmp12(1241).track(closure_2_42.OPEN_MODAL, { type: "gift_accept", location: null });
               const tmp12Result = tmp12(1241);
               const obj3 = { code: giftCode, customMessage: null, soundId: null, emojiName: null };
               let content;
-              const tmp12Result2 = tmp12(4991);
+              const tmp12Result2 = tmp12(5039);
               if (null != messageData) {
                 content = messageData.message.content;
               }
@@ -1544,8 +1565,8 @@ class MessagesHandlers {
                 }
               }
               obj3.emojiName = name;
-              tmp12Result2.pushLazy(asyncRequireImpl(11730, dependencyMap.paths), obj3);
-              const tmp15 = asyncRequireImpl(11730, dependencyMap.paths);
+              tmp12Result2.pushLazy(asyncRequireImpl(10982, dependencyMap.paths), obj3);
+              const tmp15 = asyncRequireImpl(10982, dependencyMap.paths);
             }
           }
         } else {
@@ -1554,7 +1575,7 @@ class MessagesHandlers {
       }
     };
     obj.handleTapReferralRedeem = function handleTapReferralRedeem() {
-      obj = obj(dependencyMap[134]);
+      obj = obj(dependencyMap[140]);
       if (obj.canOpenPremiumPlanDirectlyForReferralTrial()) {
         const obj2 = { analyticsLocation: null, analyticsLocations: null, premiumType: null };
         const obj3 = { page: constants6.REFERRAL_MESSAGE_EMBED };
@@ -1566,8 +1587,8 @@ class MessagesHandlers {
         const tmp6 = require("openPremiumPlanSelectionActionSheet");
       } else {
         const obj4 = { screen: constants9.PREMIUM };
-        obj(tmp2[136]).openUserSettings(obj4);
-        const tmpResult = obj(tmp2[136]);
+        obj(tmp2[142]).openUserSettings(obj4);
+        const tmpResult = obj(tmp2[142]);
       }
     };
     obj.getGiftIntentCtaContext = function getGiftIntentCtaContext(nativeEvent) {
@@ -1604,7 +1625,7 @@ class MessagesHandlers {
         obj3.affinity = dmProbability;
         navigationParams = items;
         obj3.location_stack = items;
-        AnalyticsUtilsDefault.track(BottomSheet.GIFT_INTENT_ACTION_BUTTON_CLICKED, obj3);
+        AnalyticsUtilsDefault.track(closure_2_42.GIFT_INTENT_ACTION_BUTTON_CLICKED, obj3);
         let obj4 = { recipientUserId, analyticsLocation: null, analyticsLocations: null, navigationParams: null };
         let guild_id;
         if (channel != null) {
@@ -1628,20 +1649,20 @@ class MessagesHandlers {
       if (tmp2) {
         obj = AnalyticsUtilsDefault;
         const obj2 = { gift_intent_type: giftIntentCtaContext.giftIntentType, cta_type: "send_message", location_stack: items };
-        obj.track(BottomSheet.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, obj2);
+        obj.track(closure_2_42.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, obj2);
         const obj4 = { channelId: giftIntentCtaContext.channel.id, giftIntentType: giftIntentCtaContext.giftIntentType };
-        ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12099, dependencyMap.paths), obj4);
+        ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11294, dependencyMap.paths), obj4);
       }
     };
     obj.handleGiftIntentCardViewed = function handleGiftIntentCardViewed(nativeEvent) {
-      obj = obj(dependencyMap[39]);
-      const parseGiftIntentTypeResult = obj(dependencyMap[137]).parseGiftIntentType(obj.getNativeSyntheticEventData(nativeEvent).giftIntentType);
+      obj = obj(dependencyMap[41]);
+      const parseGiftIntentTypeResult = obj(dependencyMap[143]).parseGiftIntentType(obj.getNativeSyntheticEventData(nativeEvent).giftIntentType);
       if (null != parseGiftIntentTypeResult) {
-        const obj3 = { name: tmp(tmp2[141]).ImpressionNames.GIFT_INTENT_CARD, type: tmp(tmp2[141]).ImpressionTypes.VIEW, properties: null };
+        const obj3 = { name: tmp(tmp2[147]).ImpressionNames.GIFT_INTENT_CARD, type: tmp(tmp2[147]).ImpressionTypes.VIEW, properties: null };
         const obj4 = { gift_intent_type: parseGiftIntentTypeResult, num_friend_anniversaries: friendAnniversaries.getFriendAnniversaries().length };
         obj3.properties = obj4;
-        tmp(tmp2[140]).trackImpression(obj3);
-        const tmpResult = tmp(tmp2[140]);
+        tmp(tmp2[146]).trackImpression(obj3);
+        const tmpResult = tmp(tmp2[146]);
       }
     };
     obj.handleTapEmoji = function handleTapEmoji(emojiNode) {
@@ -1651,42 +1672,42 @@ class MessagesHandlers {
       }
     };
     obj.handleTapTimestamp = function handleTapTimestamp(nativeEvent) {
-      obj(dependencyMap[42]).contentHandlers.onTapTimestamp(nativeEvent);
+      obj(dependencyMap[44]).contentHandlers.onTapTimestamp(nativeEvent);
     };
     obj.handleTapInlineCode = function handleTapInlineCode(nativeEvent) {
-      obj(dependencyMap[42]).contentHandlers.onTapInlineCode(nativeEvent);
+      obj(dependencyMap[44]).contentHandlers.onTapInlineCode(nativeEvent);
     };
     obj.handleTapRoleIcon = function handleTapRoleIcon(nativeEvent) {
       ({ roleName, roleIconSource, roleIconUnicodeEmoji } = nativeEvent.nativeEvent);
       let name;
       let winningStreak;
-      if (roleName.startsWith(name(dependencyMap[142]).LEADERBOARD_WINNER_ROLE_NAME_PREFIX)) {
-        const decodeWinnerDataResult = tmp(tmp2[142]).decodeWinnerData(roleName.slice(tmp(tmp2[142]).LEADERBOARD_WINNER_ROLE_NAME_PREFIX.length));
-        const tmpResult = tmp(tmp2[142]);
-        name = tmp(tmp2[143]).getStatName(decodeWinnerDataResult.winningStat).name;
+      if (roleName.startsWith(name(dependencyMap[148]).LEADERBOARD_WINNER_ROLE_NAME_PREFIX)) {
+        const decodeWinnerDataResult = tmp(tmp2[148]).decodeWinnerData(roleName.slice(tmp(tmp2[148]).LEADERBOARD_WINNER_ROLE_NAME_PREFIX.length));
+        const tmpResult = tmp(tmp2[148]);
+        name = tmp(tmp2[149]).getStatName(decodeWinnerDataResult.winningStat).name;
         winningStreak = decodeWinnerDataResult.winningStreak;
-        const tmpResult2 = tmp(tmp2[143]);
+        const tmpResult2 = tmp(tmp2[149]);
         let obj2 = {
           key: "LEADERBOARD_WINNER_BADGE_TOOLTIP",
           content() {
               if (null != winningStreak) {
                 if (tmp5 > 1) {
-                  const intl2 = tmp2(tmp3[46]).intl;
+                  const intl2 = tmp2(tmp3[48]).intl;
                   const obj2 = { streakCount: tmp5, statName: name };
-                  let formatResult = intl2.format(tmp2(tmp3[46]).t.owAd83, obj2);
+                  let formatResult = intl2.format(tmp2(tmp3[48]).t.owAd83, obj2);
                 }
                 const obj3 = { variant: "text-md/normal", color: "text-default", children: formatResult };
                 return <tmp4 variant="text-md/normal" color="text-default">{formatResult}</tmp4>;
               }
-              const intl = tmp2(tmp3[46]).intl;
+              const intl = tmp2(tmp3[48]).intl;
               obj = { statName: name };
-              formatResult = intl.format(tmp2(tmp3[46]).t.So4gmj, obj);
+              formatResult = intl.format(tmp2(tmp3[48]).t.So4gmj, obj);
             },
-          IconComponent: tmp(tmp2[146]).TrophyIcon,
+          IconComponent: tmp(tmp2[152]).TrophyIcon,
           iconColor: "text-feedback-warning"
         };
-        winningStreak(tmp2[144]).open(obj2);
-        const obj6 = winningStreak(tmp2[144]);
+        winningStreak(tmp2[150]).open(obj2);
+        const obj6 = winningStreak(tmp2[150]);
       } else {
         let obj3 = { key: null, content: null, icon: null };
         const _HermesInternal = HermesInternal;
@@ -1703,16 +1724,16 @@ class MessagesHandlers {
           tmp7 = obj4;
         }
         obj3.icon = tmp7;
-        winningStreak(tmp2[144]).open(obj3);
-        obj = winningStreak(tmp2[144]);
+        winningStreak(tmp2[150]).open(obj3);
+        obj = winningStreak(tmp2[150]);
       }
     };
     obj.handleTapVoiceChannelBadge = function handleTapVoiceChannelBadge(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       channel = ChannelStore.getChannel(obj.getNativeSyntheticEventData(nativeEvent).channelId);
       if (null != channel) {
-        const result = obj(dependencyMap[44]).navigateToVoiceChannel(channel);
-        const tmpResult = obj(dependencyMap[44]);
+        const result = obj(dependencyMap[46]).navigateToVoiceChannel(channel);
+        const tmpResult = obj(dependencyMap[46]);
       }
     };
     obj.handleTapGameIcon = function handleTapGameIcon(nativeEvent) {
@@ -1720,29 +1741,29 @@ class MessagesHandlers {
       if (!obj.isModalOrActionsheetObstructing()) {
         obj = ActionSheetActionCreatorsDefault;
         const obj2 = { applicationId: gameApplicationId, messageTimestamp: timestamp };
-        obj.openLazy(asyncRequireImpl(12101, dependencyMap.paths), "MessageGameIconActionSheet", obj2);
+        obj.openLazy(asyncRequireImpl(11296, dependencyMap.paths), "MessageGameIconActionSheet", obj2);
       }
     };
     obj.handleTapSuppressNotificationsIcon = function handleTapSuppressNotificationsIcon() {
       obj = ToastActionCreatorsDefault;
       const obj2 = { key: "SUPPRESS_NOTIFICATIONS_TOOLTIP", content: null, icon: null };
-      const intl = obj(dependencyMap[46]).intl;
-      obj2.content = intl.string(obj(dependencyMap[46]).t["RO/KYj"]);
-      obj2.icon = _modDef11548;
+      const intl = obj(dependencyMap[48]).intl;
+      obj2.content = intl.string(obj(dependencyMap[48]).t["RO/KYj"]);
+      obj2.icon = _modDef10823;
       obj.open(obj2);
     };
     obj.handleTapConnectionsRoleTag = function handleTapConnectionsRoleTag(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
       ({ userId, guildId, channelId, roleId } = nativeSyntheticEventData);
-      ActionSheetActionCreatorsDefault.openLazy(obj(dependencyMap[38])(dependencyMap[149], dependencyMap.paths), "ConnectionsRoleMessageBadgeActionSheet", { userId, guildId, channelId, roleId });
+      ActionSheetActionCreatorsDefault.openLazy(obj(dependencyMap[40])(dependencyMap[155], dependencyMap.paths), "ConnectionsRoleMessageBadgeActionSheet", { userId, guildId, channelId, roleId });
     };
     obj.handleTapTimeoutIcon = function handleTapTimeoutIcon() {
       obj = ToastActionCreatorsDefault;
       const obj2 = { key: "GUILD_COMMUNICATION_DISABLED_ICON_TOOLTIP_BODY", content: null, icon: null };
-      const intl = obj(dependencyMap[46]).intl;
-      obj2.content = intl.string(obj(dependencyMap[46]).t["AeYyL+"]);
-      obj2.icon = _modDef11548;
+      const intl = obj(dependencyMap[48]).intl;
+      obj2.content = intl.string(obj(dependencyMap[48]).t["AeYyL+"]);
+      obj2.icon = _modDef10823;
       obj.open(obj2);
     };
     obj.handleReveal = function handleReveal(context) {
@@ -1767,26 +1788,26 @@ class MessagesHandlers {
         if (id == null) {
           id = message.author.id;
         }
-        const tmpResult = tmp(5012);
-        const flattenComponentsResult = tmp(5012).flattenComponents(message.components);
-        value = flattenComponentsResult.get(tmp(5019).asComponentId(componentId));
+        const tmpResult = tmp(5060);
+        const flattenComponentsResult = tmp(5060).flattenComponents(message.components);
+        value = flattenComponentsResult.get(tmp(5067).asComponentId(componentId));
         let tmp6 = null != value;
         if (tmp6) {
-          tmp6 = value.type === tmp(1978).ComponentType.BUTTON;
+          tmp6 = value.type === tmp(1979).ComponentType.BUTTON;
         }
         if (tmp6) {
           tmp6 = null != value.customId;
         }
         if (tmp6) {
-          if (value.style !== tmp(1978).ButtonStyle.PREMIUM) {
-            const obj2 = { componentType: tmp(1978).ComponentType.BUTTON, messageId, messageFlags: message.flags, customId: value.customId, componentId: null, applicationId: null, channelId: null, guildId: null };
-            const tmpResult5 = tmp(8417);
-            obj2.componentId = tmp(5019).asComponentId(componentId);
+          if (value.style !== tmp(1979).ButtonStyle.PREMIUM) {
+            const obj2 = { componentType: tmp(1979).ComponentType.BUTTON, messageId, messageFlags: message.flags, customId: value.customId, componentId: null, applicationId: null, channelId: null, guildId: null };
+            const tmpResult5 = tmp(7573);
+            obj2.componentId = tmp(5067).asComponentId(componentId);
             obj2.applicationId = id;
             obj2.channelId = messageChannel.id;
             obj2.guildId = messageChannel.getGuildId();
             const result = tmpResult5.executeMessageComponentInteraction(obj2);
-            const tmpResult6 = tmp(5019);
+            const tmpResult6 = tmp(5067);
           } else {
             const obj3 = { title: null, body: null, confirmText: null };
             const intl = tmp(1115).intl;
@@ -1798,7 +1819,7 @@ class MessagesHandlers {
             AlertActionCreatorsDefault.show(obj3);
           }
         }
-        const tmpResult4 = tmp(5019);
+        const tmpResult4 = tmp(5067);
       }
     };
     obj.handleTapSelectActionComponent = function handleTapSelectActionComponent(nativeEvent) {
@@ -1814,12 +1835,12 @@ class MessagesHandlers {
         }
         id = messageChannel.id;
         const guildId = messageChannel.getGuildId();
-        const tmpResult = tmp(5012);
-        const flattenComponentsResult = tmp(5012).flattenComponents(message.components);
-        value = flattenComponentsResult.get(tmp(5019).asComponentId(nativeSyntheticEventData.componentId));
+        const tmpResult = tmp(5060);
+        const flattenComponentsResult = tmp(5060).flattenComponents(message.components);
+        value = flattenComponentsResult.get(tmp(5067).asComponentId(nativeSyntheticEventData.componentId));
         closure_5 = value;
         if (null != value) {
-          const parents = tmp(5012).getParents(message.components, value);
+          const parents = tmp(5060).getParents(message.components, value);
           let first;
           if (parents != null) {
             first = parents[0];
@@ -1829,37 +1850,37 @@ class MessagesHandlers {
             type1 = first.type;
           }
           let tmp9;
-          if (type1 === tmp(1978).ComponentType.LABEL) {
+          if (type1 === tmp(1979).ComponentType.LABEL) {
             tmp9 = first;
           }
           const obj2 = { channelId: id, guildId, containerId: messageId, labelComponent: tmp9, allowEmpty: null, onSubmit: null };
-          const tmpResult5 = tmp(5012);
-          obj2.allowEmpty = tmp(5012).canSelectBeEmpty(value, "message");
+          const tmpResult5 = tmp(5060);
+          obj2.allowEmpty = tmp(5060).canSelectBeEmpty(value, "message");
           obj2.onSubmit = function onSubmit(localState) {
-            obj = obj(dependencyMap[154]);
+            obj = obj(dependencyMap[160]);
             const result = obj.executeMessageComponentInteraction({ componentType: value.type, messageId, messageFlags, customId: value.customId, componentId: value.id, applicationId, channelId: id, guildId, localState });
           };
           const type = value.type;
-          if (tmp(1978).ComponentType.STRING_SELECT === type) {
+          if (tmp(1979).ComponentType.STRING_SELECT === type) {
             const _HermesInternal2 = HermesInternal;
             const obj9 = ActionSheetActionCreatorsDefault;
             const obj3 = { selectionActionComponent: value };
             const combined = "StringSelectComponentActionSheet:" + messageId;
             const merged = Object.assign(obj2);
-            obj9.openLazy(tmp(1980)(12104, tmp2.paths), combined, obj3);
-            const tmp19 = tmp(1980)(12104, tmp2.paths);
+            obj9.openLazy(tmp(1981)(11299, tmp2.paths), combined, obj3);
+            const tmp19 = tmp(1981)(11299, tmp2.paths);
           } else {
-            if (tmp(1978).ComponentType.USER_SELECT !== type) {
-              if (tmp(1978).ComponentType.ROLE_SELECT !== type) {
-                if (tmp(1978).ComponentType.MENTIONABLE_SELECT !== type) {
-                  if (tmp(1978).ComponentType.CHANNEL_SELECT === type) {
+            if (tmp(1979).ComponentType.USER_SELECT !== type) {
+              if (tmp(1979).ComponentType.ROLE_SELECT !== type) {
+                if (tmp(1979).ComponentType.MENTIONABLE_SELECT !== type) {
+                  if (tmp(1979).ComponentType.CHANNEL_SELECT === type) {
                     const _HermesInternal3 = HermesInternal;
                     const obj12 = ActionSheetActionCreatorsDefault;
                     const obj4 = { selectionActionComponent: value };
                     const combined1 = "ChannelSelectComponentActionSheet:" + messageId;
                     const merged1 = Object.assign(obj2);
-                    obj12.openLazy(tmp(1980)(12110, tmp2.paths), combined1, obj4);
-                    const tmp28 = tmp(1980)(12110, tmp2.paths);
+                    obj12.openLazy(tmp(1981)(11305, tmp2.paths), combined1, obj4);
+                    const tmp28 = tmp(1981)(11305, tmp2.paths);
                   }
                 }
               }
@@ -1869,12 +1890,12 @@ class MessagesHandlers {
             const obj5 = { selectionActionComponent: value };
             const combined2 = "MentionableSelectComponentActionSheet:" + messageId;
             const merged2 = Object.assign(obj2);
-            obj7.openLazy(tmp(1980)(12106, tmp2.paths), combined2, obj5);
-            const tmp11 = tmp(1980)(12106, tmp2.paths);
+            obj7.openLazy(tmp(1981)(11301, tmp2.paths), combined2, obj5);
+            const tmp11 = tmp(1981)(11301, tmp2.paths);
           }
-          const tmpResult6 = tmp(5012);
+          const tmpResult6 = tmp(5060);
         }
-        const tmpResult4 = tmp(5019);
+        const tmpResult4 = tmp(5067);
       }
     };
     obj.handleTapWelcomeReply = function handleTapWelcomeReply(nativeEvent) {
@@ -1885,11 +1906,11 @@ class MessagesHandlers {
       if (null != messageData) {
         ({ messageChannel, message } = messageData);
         if (message.type === constants8.USER_JOIN) {
-          const result = tmp(8291).handleWelcomeCtaClicked(messageChannel, message, stickerId);
-          const tmpResult = tmp(8291);
+          const result = tmp(7444).handleWelcomeCtaClicked(messageChannel, message, stickerId);
+          const tmpResult = tmp(7444);
         } else if (message.type === tmp5.ROLE_SUBSCRIPTION_PURCHASE) {
-          const result1 = tmp(12111).handleRoleSubscriptionPurchaseSystemMessageCtaClicked(messageChannel, message, stickerId);
-          const tmpResult2 = tmp(12111);
+          const result1 = tmp(11306).handleRoleSubscriptionPurchaseSystemMessageCtaClicked(messageChannel, message, stickerId);
+          const tmpResult2 = tmp(11306);
         }
       }
     };
@@ -1926,31 +1947,31 @@ class MessagesHandlers {
                   if (tmpResult5.isAutomodNotification(message)) {
                     const obj3 = { source: null, alertType: null, messageId: null };
                     const guildIncident = GuildIncidentsStore.getGuildIncident(guild.id);
-                    obj3.source = tmp(8307).GuildIncidentActionSources.MESSAGE;
-                    obj3.alertType = tmp(8305).getIncidentAlertType(guildIncident);
+                    obj3.source = tmp(7460).GuildIncidentActionSources.MESSAGE;
+                    obj3.alertType = tmp(7458).getIncidentAlertType(guildIncident);
                     obj3.messageId = message.id;
-                    const tmpResult6 = tmp(8305);
+                    const tmpResult6 = tmp(7458);
                     const obj4 = { guild, analyticsData: obj3 };
-                    ActionSheetActionCreatorsDefault.openLazy(tmp(1980)(12112, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+                    ActionSheetActionCreatorsDefault.openLazy(tmp(1981)(11307, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
                   }
-                  tmpResult5 = tmp(7782);
+                  tmpResult5 = tmp(6928);
                 }
                 if (GuildMemberStore.isMember(guild.id, message.author.id)) {
                   const obj5 = { user: message.author, guild };
-                  tmp9(12116)(obj5);
+                  tmp9(11311)(obj5);
                 } else {
                   const obj6 = { key: "GUILD_AUTOMOD_ERROR_MESSAGE_NOT_MEMBER", content: null, icon: null };
                   const intl = tmp(1115).intl;
                   obj6.content = intl.string(tmp(1115).t.UsD2YP);
-                  obj6.icon = tmp9(11548);
-                  tmp9(4486).open(obj6);
-                  const tmp9Result = tmp9(4486);
+                  obj6.icon = tmp9(10823);
+                  tmp9(4528).open(obj6);
+                  const tmp9Result = tmp9(4528);
                 }
-                tmpResult4 = tmp(7782);
+                tmpResult4 = tmp(6928);
               }
             }
           }
-          tmpResult = tmp(7782);
+          tmpResult = tmp(6928);
         }
       }
     };
@@ -1968,32 +1989,32 @@ class MessagesHandlers {
               if (tmpResult5.isAutomodMessageRecord(message)) {
                 if (tmpResult6.isAutomodNotification(message)) {
                   const obj2 = { guildId: channel.guild_id, messageId };
-                  ActionSheetActionCreatorsDefault.openLazy(tmp(1980)(12144, dependencyMap.paths), "GuildRaidResolveActionSheet", obj2);
+                  ActionSheetActionCreatorsDefault.openLazy(tmp(1981)(11339, dependencyMap.paths), "GuildRaidResolveActionSheet", obj2);
                 }
-                tmpResult6 = tmp(7782);
+                tmpResult6 = tmp(6928);
               }
-              tmpResult5 = tmp(7782);
-              const result = tmp(7782).extractAutomodMessageFields(message);
+              tmpResult5 = tmp(6928);
+              const result = tmp(6928).extractAutomodMessageFields(message);
               ({ decisionId, content } = result);
-              const tmpResult8 = tmp(12145);
+              const tmpResult8 = tmp(11340);
               tmpResult8.openSubmitFeedback(messageId, content, decisionId, channel);
-              const tmpResult7 = tmp(7782);
+              const tmpResult7 = tmp(6928);
             }
           }
         }
-        tmpResult = tmp(7782);
+        tmpResult = tmp(6928);
       }
     };
     obj.handleTransitionToThread = function handleTransitionToThread(arg0, arg1, source) {
       channel = ChannelStore.getChannel(arg1);
       if (null != channel) {
-        obj = obj(dependencyMap[167]);
+        obj = obj(dependencyMap[173]);
         const obj2 = { source, navigationReplace: false };
         obj.transitionToThread(channel, obj2);
       }
     };
     obj.handleTransitionToMessage = function handleTransitionToMessage(guildId, id, flaggedMessageId) {
-      obj = obj(dependencyMap[167]);
+      obj = obj(dependencyMap[173]);
       obj.transitionToMessage(id, flaggedMessageId, { navigationReplace: false });
     };
     obj.handleTapFollowForumPost = function handleTapFollowForumPost(nativeEvent) {
@@ -2006,18 +2027,18 @@ class MessagesHandlers {
       }
     };
     obj.handleTapShareForumPost = function handleTapShareForumPost(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
       ({ guildId, channelId } = nativeSyntheticEventData);
-      const result = obj(dependencyMap[59]).handleCopyLinkForumPost(guildId, channelId, { section: constants7.CHANNEL });
+      const result = obj(dependencyMap[61]).handleCopyLinkForumPost(guildId, channelId, { section: constants7.CHANNEL });
     };
     obj.handleTapSeeMore = function handleTapSeeMore() {
 
     };
     obj.handleCopyText = function handleCopyText(nativeEvent) {
-      obj = obj(dependencyMap[168]);
+      obj = obj(dependencyMap[174]);
       obj.copy(nativeEvent.nativeEvent.text);
-      const result = obj(dependencyMap[169]).presentCopiedToClipboard();
+      const result = obj(dependencyMap[175]).presentCopiedToClipboard();
     };
     obj.handleTapTag = function handleTapTag(nativeEvent) {
       obj = MessageDataSnowflakeUtils;
@@ -2043,12 +2064,12 @@ class MessagesHandlers {
               found = attachments.find((id) => id.id === obj);
             }
             if (null != found) {
-              const tmpResult = tmp(12158);
+              const tmpResult = tmp(11353);
               const result = tmpResult.logMediaAttachmentPlaybackStarted(messageData.messageChannel, found, totalDurationSecs, messageId, startDurationSecs, messageData.message.author.id);
             }
           }
         }
-        const tmpResult2 = tmp(12157);
+        const tmpResult2 = tmp(11352);
         const result1 = tmpResult2.logVoiceMessagePlaybackStarted(messageId, totalDurationSecs, startDurationSecs, messageData.message.author.id);
       }
     };
@@ -2068,28 +2089,28 @@ class MessagesHandlers {
               found = attachments.find((id) => id.id === obj);
             }
             if (null != found) {
-              const tmpResult = tmp(12158);
+              const tmpResult = tmp(11353);
               const result = tmpResult.logMediaAttachmentPlaybackEnded(messageId, totalDurationSecs, endDurationSecs, messageData.message.author.id, durationListeningSecs, found);
             }
           }
         }
-        const tmpResult2 = tmp(12157);
+        const tmpResult2 = tmp(11352);
         const result1 = tmpResult2.logVoiceMessagePlaybackEnded(messageId, totalDurationSecs, endDurationSecs, messageData.message.author.id, durationListeningSecs);
       }
     };
     obj.handleVoiceMessagePlaybackFailed = function handleVoiceMessagePlaybackFailed(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
       ({ messageId, errorMessage } = nativeSyntheticEventData);
       if (errorMessage == null) {
         errorMessage = null;
       }
-      const result = obj(dependencyMap[171]).logVoiceMessagePlaybackFailed(messageId, errorMessage);
-      const obj2 = obj(dependencyMap[171]);
+      const result = obj(dependencyMap[177]).logVoiceMessagePlaybackFailed(messageId, errorMessage);
+      const obj2 = obj(dependencyMap[177]);
       const obj4 = { key: "AUDIO_PLAYBACK_FAILED-" + messageId, content: null, icon: null };
-      const intl = tmp(tmp2[46]).intl;
-      obj4.content = intl.string(obj(dependencyMap[46]).t.gRHMh8);
-      obj4.icon = _modDef11548;
+      const intl = tmp(tmp2[48]).intl;
+      obj4.content = intl.string(obj(dependencyMap[48]).t.gRHMh8);
+      obj4.icon = _modDef10823;
       ToastActionCreatorsDefault.open(obj4);
     };
     closure_129_0 = undefined;
@@ -2118,7 +2139,7 @@ class MessagesHandlers {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const nativeSyntheticEventData = closure_0(dependencyMap[39]).getNativeSyntheticEventData(closure_0);
+              const nativeSyntheticEventData = closure_0(dependencyMap[41]).getNativeSyntheticEventData(closure_0);
               ({ guildId, parentChannelId, threadId } = nativeSyntheticEventData);
               currentUser = currentUser.getCurrentUser();
               id = undefined;
@@ -2127,28 +2148,28 @@ class MessagesHandlers {
               }
               const isMemberResult = member.isMember(guildId, id);
               channel = channel.getChannel(parentChannelId);
-              const obj11 = closure_0(dependencyMap[39]);
+              const obj11 = closure_0(dependencyMap[41]);
               const obj4 = { media_post_id: threadId, can_access: null, is_member: null };
               let canViewChannelResult = null != channel;
               if (canViewChannelResult) {
-                canViewChannelResult = tmp24(tmp25[173]).canViewChannel(channel);
-                const tmp24Result3 = tmp24(tmp25[173]);
+                canViewChannelResult = tmp24(tmp25[179]).canViewChannel(channel);
+                const tmp24Result3 = tmp24(tmp25[179]);
               }
               obj4.can_access = canViewChannelResult;
               obj4.is_member = isMemberResult;
-              closure_0(dependencyMap[84]).trackWithMetadata(constants.MEDIA_POST_PREVIEW_EMBED_CLICKED, obj4);
+              closure_0(dependencyMap[90]).trackWithMetadata(constants.MEDIA_POST_PREVIEW_EMBED_CLICKED, obj4);
               if (isMemberResult) {
-                const result = tmp24(tmp25[167]).tryTransitionToThreadMessage(parentChannelId, threadId, nativeSyntheticEventData.messageId);
-                const tmp24Result4 = tmp24(tmp25[167]);
+                const result = tmp24(tmp25[173]).tryTransitionToThreadMessage(parentChannelId, threadId, nativeSyntheticEventData.messageId);
+                const tmp24Result4 = tmp24(tmp25[173]);
               } else {
                 dependencyMap = 1;
                 const obj6 = { channelId: parentChannelId };
                 v2 = 2;
                 c1 = 1;
-                const obj7 = { value: v2(tmp25[174]).startLurking(guildId, {}, obj6), done: false };
+                const obj7 = { value: v2(tmp25[180]).startLurking(guildId, {}, obj6), done: false };
                 return obj7;
               }
-              const tmp24Result = closure_0(dependencyMap[84]);
+              const tmp24Result = closure_0(dependencyMap[90]);
             }
           } else {
             if (1 === tmp6) {
@@ -2186,18 +2207,18 @@ class MessagesHandlers {
       return applyArgumentsResult;
     };
     obj.handleTapDismissMediaPostSharePrompt = function handleTapDismissMediaPostSharePrompt(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const obj2 = MediaChannelActionCreatorsAll;
       const result = obj2.dismissMediaPostSharePrompt(SnowflakeUtilsDefault.castMessageIdAsChannelId(obj.getNativeSyntheticEventData(nativeEvent).messageId));
     };
     obj.handleTapObscuredMediaLearnMore = function handleTapObscuredMediaLearnMore(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
       ({ messageId, channelId, attachmentId, embedId } = nativeSyntheticEventData);
-      ActionSheetActionCreatorsDefault.openLazy(obj(dependencyMap[38])(dependencyMap[176], dependencyMap.paths), "ExplicitMediaLearnMore", { messageId, channelId, attachmentId, embedId });
+      ActionSheetActionCreatorsDefault.openLazy(obj(dependencyMap[40])(dependencyMap[182], dependencyMap.paths), "ExplicitMediaLearnMore", { messageId, channelId, attachmentId, embedId });
     };
     obj.onTapObscuredMediaToggle = function onTapObscuredMediaToggle(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
       ({ messageId, channelId, isReveal, attachmentId, embedId } = nativeSyntheticEventData);
       let result = isReveal;
@@ -2205,23 +2226,23 @@ class MessagesHandlers {
         result = obj2.shouldAgeVerifyForExplicitMedia();
       }
       if (result) {
-        const obj4 = { entryPoint: tmp(tmp2[179]).AgeVerificationModalEntryPoint.OBSCURED_MEDIA };
+        const obj4 = { entryPoint: tmp(tmp2[185]).AgeVerificationModalEntryPoint.OBSCURED_MEDIA };
         const result1 = require("AgeVerificationActionCreators").showAgeVerificationGetStartedModal(obj4);
         const obj3 = require("AgeVerificationActionCreators");
       }
-      obj2 = obj(dependencyMap[177]);
-      const result2 = obj(dependencyMap[177]).trackToggleMediaObscurityV2({ obscure: isReveal });
+      obj2 = obj(dependencyMap[183]);
+      const result2 = obj(dependencyMap[183]).trackToggleMediaObscurityV2({ obscure: isReveal });
     };
     obj.handleTapSafetyPolicyNoticeEmbed = function handleTapSafetyPolicyNoticeEmbed(nativeEvent) {
-      obj = obj(dependencyMap[39]);
-      ModalActionCreatorsDefault.pushLazy(obj(dependencyMap[38])(dependencyMap[180], dependencyMap.paths), { classificationId: obj.getNativeSyntheticEventData(nativeEvent).classificationId, shouldRedirectToAccountStanding: true });
+      obj = obj(dependencyMap[41]);
+      ModalActionCreatorsDefault.pushLazy(obj(dependencyMap[40])(dependencyMap[186], dependencyMap.paths), { classificationId: obj.getNativeSyntheticEventData(nativeEvent).classificationId, shouldRedirectToAccountStanding: true });
     };
     obj.handleTapSafetySystemNotificationCta = function handleTapSafetySystemNotificationCta(nativeEvent) {
       ({ ctaType, ctaKey } = nativeEvent.nativeEvent);
       if (constants11.POLICY_VIOLATION_DETAIL === ctaType) {
         if (null != ctaKey) {
           const obj3 = { classificationId: ctaKey, shouldRedirectToAccountStanding: true };
-          ModalActionCreatorsDefault.pushLazy(obj(dependencyMap[38])(dependencyMap[180], dependencyMap.paths), obj3);
+          ModalActionCreatorsDefault.pushLazy(obj(dependencyMap[40])(dependencyMap[186], dependencyMap.paths), obj3);
         }
       } else if (tmp.LEARN_MORE_LINK === ctaType) {
         if (null != ctaKey) {
@@ -2261,42 +2282,42 @@ class MessagesHandlers {
           const attachments = message.attachments;
           const findIndexResult = attachments.findIndex((id) => id.id === result.attachmentId);
           if (null != findIndexResult) {
-            const result1 = tmp(8568).extractMediaSourcesFromMessage(message, message, messageChannel.guild_id);
-            const tmpResult = tmp(8568);
+            const result1 = tmp(7713).extractMediaSourcesFromMessage(message, message, messageChannel.guild_id);
+            const tmpResult = tmp(7713);
             const obj3 = { initialSources: result1, initialIndex: findIndexResult, originViewOrOriginLayout: result.layout, analyticsSource: "Channel", channelId: messageChannel.id };
-            tmp(8562).openMediaModal(obj3);
-            const tmpResult2 = tmp(8562);
+            tmp(7707).openMediaModal(obj3);
+            const tmpResult2 = tmp(7707);
           }
         }
       }
     };
     obj.handleTapCtaButton = function handleTapCtaButton(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
       ({ channelId, callback, messageId } = nativeSyntheticEventData);
-      if (obj(dependencyMap[184]).CtaButtonType.MARK_AS_FALSE_POSITIVE === callback) {
-        const result = tmp(tmp2[185]).handleSenderFalsePositiveFlow(channelId, messageId);
-        const tmpResult = tmp(tmp2[185]);
-      } else if (tmp(tmp2[184]).CtaButtonType.AGE_VERIFICATION_RETRY === callback) {
-        const obj2 = { entryPoint: tmp(tmp2[179]).AgeVerificationModalEntryPoint.SYSTEM_DM_RETRY_BUTTON };
+      if (obj(dependencyMap[190]).CtaButtonType.MARK_AS_FALSE_POSITIVE === callback) {
+        const result = tmp(tmp2[191]).handleSenderFalsePositiveFlow(channelId, messageId);
+        const tmpResult = tmp(tmp2[191]);
+      } else if (tmp(tmp2[190]).CtaButtonType.AGE_VERIFICATION_RETRY === callback) {
+        const obj2 = { entryPoint: tmp(tmp2[185]).AgeVerificationModalEntryPoint.SYSTEM_DM_RETRY_BUTTON };
         const result1 = require("AgeVerificationActionCreators").showAgeVerificationGetStartedModal(obj2);
         const obj6 = require("AgeVerificationActionCreators");
-        const result2 = tmp(tmp2[179]).trackAgeVerificationDmClicked(tmp(tmp2[179]).AgeVerificationDmCta.RETRY, channelId);
-        const tmpResult7 = tmp(tmp2[179]);
-      } else if (tmp(tmp2[184]).CtaButtonType.CONNECT_TO_TEEN === callback) {
+        const result2 = tmp(tmp2[185]).trackAgeVerificationDmClicked(tmp(tmp2[185]).AgeVerificationDmCta.RETRY, channelId);
+        const tmpResult7 = tmp(tmp2[185]);
+      } else if (tmp(tmp2[190]).CtaButtonType.CONNECT_TO_TEEN === callback) {
         if (!tmpResult8.resumeFamilyCenterConnection()) {
           const obj3 = { screen: constants9.FAMILY_CENTER };
-          tmp(tmp2[136]).openUserSettings(obj3);
-          const tmpResult9 = tmp(tmp2[136]);
+          tmp(tmp2[142]).openUserSettings(obj3);
+          const tmpResult9 = tmp(tmp2[142]);
         }
-        tmpResult8 = tmp(tmp2[186]);
-        const result3 = tmp(tmp2[179]).trackAgeVerificationDmClicked(tmp(tmp2[179]).AgeVerificationDmCta.CONNECT_TO_TEEN, channelId);
-        const tmpResult10 = tmp(tmp2[179]);
-      } else if (tmp(tmp2[184]).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW === callback) {
-        const result4 = tmp(tmp2[187]).handleManualReviewCta();
-        const tmpResult11 = tmp(tmp2[187]);
-        const result5 = tmp(tmp2[179]).trackAgeVerificationDmClicked(tmp(tmp2[179]).AgeVerificationDmCta.MANUAL_REVIEW, channelId);
-        const tmpResult12 = tmp(tmp2[179]);
+        tmpResult8 = tmp(tmp2[192]);
+        const result3 = tmp(tmp2[185]).trackAgeVerificationDmClicked(tmp(tmp2[185]).AgeVerificationDmCta.CONNECT_TO_TEEN, channelId);
+        const tmpResult10 = tmp(tmp2[185]);
+      } else if (tmp(tmp2[190]).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW === callback) {
+        const result4 = tmp(tmp2[193]).handleManualReviewCta();
+        const tmpResult11 = tmp(tmp2[193]);
+        const result5 = tmp(tmp2[185]).trackAgeVerificationDmClicked(tmp(tmp2[185]).AgeVerificationDmCta.MANUAL_REVIEW, channelId);
+        const tmpResult12 = tmp(tmp2[185]);
       }
     };
     obj.handleMessageAccessibilityAction = function handleMessageAccessibilityAction(nativeEvent) {
@@ -2307,7 +2328,7 @@ class MessagesHandlers {
       const message = params.getMessage(messageId);
       if (null != message) {
         channel = ChannelStore.getChannel(message.channel_id);
-        if (tmp(8257).MessageAccessibilityAction.VIEW_PROFILE === messageAccessibilityActionFromLabel) {
+        if (tmp(7409).MessageAccessibilityAction.VIEW_PROFILE === messageAccessibilityActionFromLabel) {
           if (message.type === constants8.FRIEND_REQUEST_ACCEPTED) {
             if (null != channel) {
               if (channel.isDM()) {
@@ -2329,17 +2350,17 @@ class MessagesHandlers {
           if (author2 != null) {
             id = author2.id;
           }
-        } else if (tmp(8257).MessageAccessibilityAction.REPLY === messageAccessibilityActionFromLabel) {
+        } else if (tmp(7409).MessageAccessibilityAction.REPLY === messageAccessibilityActionFromLabel) {
           if (null != channel) {
             const obj4 = { message, channel, chatInputRef: params.chatInputRef, actionSource: "a11y_action" };
             replyToMessageDefault(obj4);
           }
-        } else if (tmp(8257).MessageAccessibilityAction.ADD_REACTION === messageAccessibilityActionFromLabel) {
+        } else if (tmp(7409).MessageAccessibilityAction.ADD_REACTION === messageAccessibilityActionFromLabel) {
           if (null != channel) {
-            const result = tmp(11549).handleAddNewReactions(channel, message.id);
-            const tmpResult = tmp(11549);
+            const result = tmp(10824).handleAddNewReactions(channel, message.id);
+            const tmpResult = tmp(10824);
           }
-        } else if (tmp(8257).MessageAccessibilityAction.MESSAGE_ACTIONS_MENU === messageAccessibilityActionFromLabel) {
+        } else if (tmp(7409).MessageAccessibilityAction.MESSAGE_ACTIONS_MENU === messageAccessibilityActionFromLabel) {
           if (null != channel) {
             const obj5 = { channel, message, canAddNewReactions: canAddNewReactionsDefault(channel), user: null, chatInputRef: null };
             let id2;
@@ -2351,22 +2372,22 @@ class MessagesHandlers {
             }
             obj5.user = UserStore.getUser(id2);
             obj5.chatInputRef = obj.params.chatInputRef;
-            const result1 = tmp(11937).showLongPressMessageActionSheet(obj5);
-            const tmpResult3 = tmp(11937);
+            const result1 = tmp(11152).showLongPressMessageActionSheet(obj5);
+            const tmpResult3 = tmp(11152);
           }
-        } else if (tmp(8257).MessageAccessibilityAction.ADD_QUICK_REACTION === messageAccessibilityActionFromLabel) {
+        } else if (tmp(7409).MessageAccessibilityAction.ADD_QUICK_REACTION === messageAccessibilityActionFromLabel) {
           if (null != channel) {
-            const result2 = tmp(8258).handleAddDefaultDoubleTapReaction(message, channel);
-            const tmpResult4 = tmp(8258);
+            const result2 = tmp(7410).handleAddDefaultDoubleTapReaction(message, channel);
+            const tmpResult4 = tmp(7410);
           }
-        } else if (tmp(8257).MessageAccessibilityAction.EDIT_GDM === messageAccessibilityActionFromLabel) {
+        } else if (tmp(7409).MessageAccessibilityAction.EDIT_GDM === messageAccessibilityActionFromLabel) {
           if (null != channel) {
             const obj6 = { channelId: channel.id };
             showChatGDMCustomizeActionSheetDefault(obj6);
           }
-        } else if (tmp(8257).MessageAccessibilityAction.OPEN_PINS === messageAccessibilityActionFromLabel) {
+        } else if (tmp(7409).MessageAccessibilityAction.OPEN_PINS === messageAccessibilityActionFromLabel) {
           openPinnedMessagesDefault(message.channel_id, "pinned-message-system-message");
-        } else if (tmp(8257).MessageAccessibilityAction.JUMP_TO_MESSAGE === messageAccessibilityActionFromLabel) {
+        } else if (tmp(7409).MessageAccessibilityAction.JUMP_TO_MESSAGE === messageAccessibilityActionFromLabel) {
           jumpToReferencedMessageDefault(message);
         }
       }
@@ -2385,12 +2406,12 @@ class MessagesHandlers {
       const params = obj.params;
       const message = params.getMessage(nativeSyntheticEventData.messageId);
       if (null != message) {
-        const inlineForwardOptions = tmp(12214).getInlineForwardOptions(message, nativeSyntheticEventData);
+        const inlineForwardOptions = tmp(11412).getInlineForwardOptions(message, nativeSyntheticEventData);
         if (null != inlineForwardOptions) {
           const _Object = Object;
           if (nativeEvent.nativeEvent.triggerHaptic) {
-            const result = tmp(4756).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-            const tmpResult3 = tmp(4756);
+            const result = tmp(4801).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+            const tmpResult3 = tmp(4801);
           }
           const obj2 = { message, source: null, forwardOptions: null };
           let str = nativeEvent.nativeEvent.location;
@@ -2403,26 +2424,26 @@ class MessagesHandlers {
             tmp7 = inlineForwardOptions;
           }
           obj2.forwardOptions = tmp7;
-          tmp(11961).openForwardModal(obj2);
-          const tmpResult4 = tmp(11961);
+          tmp(11176).openForwardModal(obj2);
+          const tmpResult4 = tmp(11176);
         }
-        const tmpResult = tmp(12214);
+        const tmpResult = tmp(11412);
       }
     };
     obj.handleTapSoundmoji = function handleTapSoundmoji(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
       openSoundmojiActionSheetDefault(nativeSyntheticEventData);
     };
     obj.handleTapClanTagChiplet = function handleTapClanTagChiplet(nativeEvent) {
-      obj = obj(dependencyMap[39]);
+      obj = obj(dependencyMap[41]);
       const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
       if (tmp4) {
         const _HermesInternal = HermesInternal;
         const obj2 = require("ActionSheetActionCreators");
         const obj3 = { guildId: nativeSyntheticEventData.guildId };
-        obj2.openLazy(obj(tmp2[38])(tmp2[68], tmp2.paths), "GuildProfileActionSheet:" + nativeSyntheticEventData.guildId, obj3);
-        const tmp6 = obj(tmp2[38])(tmp2[68], tmp2.paths);
+        obj2.openLazy(obj(tmp2[40])(tmp2[70], tmp2.paths), "GuildProfileActionSheet:" + nativeSyntheticEventData.guildId, obj3);
+        const tmp6 = obj(tmp2[40])(tmp2[70], tmp2.paths);
       }
     };
     obj.handleTapContentInventoryEntryEmbed = function handleTapContentInventoryEntryEmbed(nativeEvent) {

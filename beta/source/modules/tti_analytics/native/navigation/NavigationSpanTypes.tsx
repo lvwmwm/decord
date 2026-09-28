@@ -1,9 +1,9 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 16178
+// Function ID: 16179
 // Name: NavigationSpanTypes
 // Dependencies: [2]
 
-// Module 16880 (NavigationSpanTypes)
+// Module 16178 (NavigationSpanTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavigationSpanTypes.tsx");

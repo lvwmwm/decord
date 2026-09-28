@@ -1,49 +1,87 @@
 // Module ID: 5505
 // Function ID: 5506
-// Dependencies: [5482, 5483, 5462]
+// Dependencies: [5498, 5499]
+// Exports: isBLEND, isDOC, isELF, isEXE, isINDD, isMACHO, isORC, isPARQUET, isPCAP, isPDF, isPS, isRTF, isSQLITE, isSTL, isTTF
 
 // Module 5505
-import _mod5462 from "module_5462" /* 5462 */;
-import get0thIfdOffset from "get0thIfdOffset" /* 5482 */;
-import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 5483 */;
+import _mod5498 from "module_5498" /* 5498 */;
+import _mod5499 from "module_5499" /* 5499 */;
 
 require = arg1;
 const dependencyMap = arg6;
 
-export default {
-  read(byteLength, sum, arg2, byteOrder, arg4) {
-    const ifd = get0thIfdOffset.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
-    let tmp6 = ifd;
-    if (ifd.ShotInfo) {
-      value = ifd.ShotInfo.value;
-      const obj2 = {};
-      if (undefined !== value[27]) {
-        const obj3 = { value: value[27], description: null };
-        let str = "None";
-        if (0 !== value[27]) {
-          let str2 = "Rotate 90 CW";
-          if (1 !== tmp7) {
-            let str3 = "Rotate 180";
-            if (2 !== tmp7) {
-              let str4 = "Unknown";
-              if (3 === tmp7) {
-                str4 = "Rotate 270 CW";
-              }
-              str3 = str4;
-            }
-            str2 = str3;
-          }
-          str = str2;
-        }
-        obj3.description = str;
-        obj2.AutoRotate = obj3;
-      }
-      const tmp3Result = _mod5462;
-      delete tmp[tmp2];
-      tmp6 = _mod5462.objectAssign({}, ifd, obj2);
-      const objectAssignResult = _mod5462.objectAssign({}, ifd, obj2);
-    }
-    return tmp6;
-  },
-  SHOT_INFO_AUTO_ROTATE: 27
+export const isBLEND = function isBLEND(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "blend");
+};
+export const isELF = function isELF(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "elf");
+};
+export const isEXE = function isEXE(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "exe");
+};
+export const isMACHO = function isMACHO(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "macho");
+};
+export const isINDD = function isINDD(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "indd");
+};
+export const isORC = function isORC(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "orc");
+};
+export const isPARQUET = function isPARQUET(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "parquet");
+};
+export const isPDF = function isPDF(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pdf");
+};
+export const isPS = function isPS(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ps");
+};
+export const isRTF = function isRTF(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "rtf");
+};
+export const isSQLITE = function isSQLITE(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "sqlite");
+};
+export const isSTL = function isSTL(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "stl");
+};
+export const isTTF = function isTTF(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ttf");
+};
+export const isDOC = function isDOC(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "doc");
+};
+export const isPCAP = function isPCAP(fileChunk) {
+  fileChunk = _mod5498.getFileChunk(fileChunk);
+  const FileTypes = _mod5499.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pcap");
 };

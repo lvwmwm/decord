@@ -1,18 +1,18 @@
-// Module ID: 17159
-// Function ID: 17160
+// Module ID: 16501
+// Function ID: 16502
 // Name: GenericTextRow
-// Dependencies: [5, 19, 17, 21, 4788, 4784, 17126, 2]
+// Dependencies: [5, 19, 17, 21, 4836, 4832, 16468, 2]
 
-// Module 17159 (GenericTextRow)
-import Text_Text from "Text/Text" /* 4784 */;
-import SearchListRow from "SearchListRow" /* 17126 */;
+// Module 16501 (GenericTextRow)
+import Text_Text from "Text/Text" /* 4832 */;
+import SearchListRow from "SearchListRow" /* 16468 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ title: { flexDirection: "row" }, container: { padding: 10 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GenericTextRow.tsx");

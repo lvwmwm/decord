@@ -1,21 +1,21 @@
-// Module ID: 14990
-// Function ID: 14991
+// Module ID: 14245
+// Function ID: 14246
 // Name: SafetySettingsNotice
-// Dependencies: [19, 17, 8702, 21, 4788, 576, 14991, 4742, 4784, 1115, 2]
+// Dependencies: [19, 17, 7847, 21, 4836, 576, 14246, 4787, 4832, 1115, 2]
 // Exports: default
 
-// Module 14990 (SafetySettingsNotice)
+// Module 14245 (SafetySettingsNotice)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14991 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14246 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(8702).SafetySettingsNoticeAction;
+let closure_4 = fn(7847).SafetySettingsNoticeAction;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { blockedIgnoredRedirect: { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.colors.TEXT_LINK, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

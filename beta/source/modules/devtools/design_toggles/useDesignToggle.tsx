@@ -1,11 +1,11 @@
-// Module ID: 5875
-// Function ID: 5876
+// Module ID: 5938
+// Function ID: 5939
 // Name: useDesignToggle
-// Dependencies: [5876, 504, 2]
+// Dependencies: [5939, 504, 2]
 // Exports: default
 
-// Module 5875 (useDesignToggle)
-import DesignTogglesStore from "DesignTogglesStore" /* 5876 */;
+// Module 5938 (useDesignToggle)
+import DesignTogglesStore from "DesignTogglesStore" /* 5939 */;
 
 const require = globalThis.__r;
 

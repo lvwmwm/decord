@@ -1,18 +1,18 @@
-// Module ID: 11432
-// Function ID: 11433
+// Module ID: 10598
+// Function ID: 10599
 // Name: SuperReactionUpsellActionSheet
-// Dependencies: [19, 17, 1372, 1074, 21, 2027, 11433, 11434, 11435, 11436, 11437, 11438, 11439, 4788, 576, 7439, 504, 4446, 9538, 9508, 12, 11440, 8069, 11441, 1115, 8058, 1177, 4755, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 2029, 10599, 10600, 10601, 10602, 10603, 10604, 10605, 4836, 576, 6583, 504, 4488, 8695, 8663, 12, 10606, 7214, 10607, 1115, 7203, 1177, 4800, 2]
 // Exports: default
 
-// Module 11432 (SuperReactionUpsellActionSheet)
+// Module 10598 (SuperReactionUpsellActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import _mod8069 from "module_8069" /* 8069 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9508 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9538 */;
-import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 11440 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import _mod7214 from "module_7214" /* 7214 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8663 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
+import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 10606 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -23,9 +23,9 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const AnalyticsPages = fn(1074).AnalyticsPages;
 const jsx = fn(21).jsx;
-const dismissibleContent = fn(2027).DismissibleContent.SUPER_REACTIONS_COACHMARK_MOBILE;
-let items = [fn(11433), fn(11434), fn(11435), fn(11436), fn(11434), fn(11437), fn(11438), fn(11439)];
-const createStyles = fn(4788);
+const dismissibleContent = fn(2029).DismissibleContent.SUPER_REACTIONS_COACHMARK_MOBILE;
+let items = [fn(10599), fn(10600), fn(10601), fn(10602), fn(10600), fn(10603), fn(10604), fn(10605)];
+const createStyles = fn(4836);
 let obj2 = { fill: null, nitroIcon: null, description: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

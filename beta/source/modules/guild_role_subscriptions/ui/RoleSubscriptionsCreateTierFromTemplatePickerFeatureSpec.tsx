@@ -1,13 +1,13 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 13436
+// Function ID: 13437
 // Name: RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec
-// Dependencies: [4703, 4427, 1074, 1115, 504, 14191, 2]
+// Dependencies: [4750, 4469, 1074, 1115, 504, 13437, 2]
 
-// Module 14190 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
+// Module 13436 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import ExperimentStore from "ExperimentStore" /* 4703 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import ExperimentStore from "ExperimentStore" /* 4750 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 require = fn;
 const Constants = fn(1074);

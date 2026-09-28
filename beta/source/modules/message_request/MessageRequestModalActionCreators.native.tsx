@@ -1,18 +1,18 @@
-// Module ID: 12729
-// Function ID: 12730
+// Module ID: 11939
+// Function ID: 11940
 // Name: MessageRequestModalActionCreators
-// Dependencies: [12726, 1074, 1241, 5141, 1115, 5237, 4755, 12730, 1980, 2]
+// Dependencies: [11936, 1074, 1241, 5204, 1115, 5300, 4800, 11940, 1981, 2]
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 12729 (MessageRequestModalActionCreators)
+// Module 11939 (MessageRequestModalActionCreators)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 12726 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import common_AlertDefault from "common/Alert" /* 5300 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 11936 */;
 import size from "module_2" /* 2 */;
 
 const type = MessageRequestConstants.MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL;
@@ -39,5 +39,5 @@ export const openAcceptMessageRequestConfirmModal = function openAcceptMessageRe
 };
 export const onMarkAsNotSpamConfirmationModal = function onMarkAsNotSpamConfirmationModal(arg0) {
   ({ onConfirm, onCancel, channel } = arg0);
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12730, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11940, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
 };

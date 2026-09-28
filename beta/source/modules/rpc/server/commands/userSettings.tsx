@@ -1,14 +1,14 @@
-// Module ID: 14817
-// Function ID: 14818
+// Module ID: 14067
+// Function ID: 14068
 // Name: userSettings
-// Dependencies: [2109, 1074, 8642, 2]
+// Dependencies: [2112, 1074, 7787, 2]
 
-// Module 14817 (userSettings)
-import LocaleStore from "LocaleStore" /* 2109 */;
+// Module 14067 (userSettings)
+import LocaleStore from "LocaleStore" /* 2112 */;
 
 const obj = {};
 obj[fn(1074).RPCCommands.USER_SETTINGS_GET_LOCALE] = {
-  scope: fn(8642).OAuth2Scopes.IDENTIFY,
+  scope: fn(7787).OAuth2Scopes.IDENTIFY,
   handler() {
     return { locale: LocaleStore.locale };
   }

@@ -1,16 +1,16 @@
-// Module ID: 9643
-// Function ID: 9644
+// Module ID: 8800
+// Function ID: 8801
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [2041, 2063, 4427, 4807, 2004, 1074, 9644, 504, 1115, 2]
+// Dependencies: [2045, 2067, 4469, 4855, 2005, 1074, 8801, 504, 1115, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 9643 (getEmbeddedActivityLaunchability)
+// Module 8800 (getEmbeddedActivityLaunchability)
 import util from "util" /* 1115 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9644 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 8801 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 const require = globalThis.__r;
 
@@ -62,7 +62,7 @@ function getEmbeddedActivityLaunchability(arg0) {
     return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL;
   }
 }
-let closure_6 = fn(2004).SUPPORTED_ACTIVITIES_CHANNEL_TYPES;
+let closure_6 = fn(2005).SUPPORTED_ACTIVITIES_CHANNEL_TYPES;
 const Permissions = fn(1074).Permissions;
 const EmbeddedActivityLaunchability = { CAN_LAUNCH: 0, [0]: "CAN_LAUNCH", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", NO_CHANNEL: 3, [3]: "NO_CHANNEL", NO_GUILD: 4, [4]: "NO_GUILD", IS_AFK_CHANNEL: 5, [5]: "IS_AFK_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 6, [6]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL: 7, [7]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL" };
 const size = fn(2);

@@ -1,10 +1,10 @@
-// Module ID: 8471
-// Function ID: 8472
+// Module ID: 7615
+// Function ID: 7616
 // Name: useBottomSheetRef
 // Dependencies: [19, 2]
 // Exports: useBottomSheetRef
 
-// Module 8471 (useBottomSheetRef)
+// Module 7615 (useBottomSheetRef)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

@@ -1,13 +1,13 @@
-// Module ID: 17505
-// Function ID: 17506
+// Module ID: 16861
+// Function ID: 16862
 // Name: useIsConnectedToVoiceChannel
-// Dependencies: [502, 4811, 4807, 1074, 504, 2]
+// Dependencies: [502, 4859, 4855, 1074, 504, 2]
 // Exports: default
 
-// Module 17505 (useIsConnectedToVoiceChannel)
+// Module 16861 (useIsConnectedToVoiceChannel)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 const require = globalThis.__r;
 

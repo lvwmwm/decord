@@ -1,16 +1,16 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 16341
+// Function ID: 16342
 // Name: VibegrationsMessageActionSheet
-// Dependencies: [19, 21, 8480, 4755, 7466, 4486, 1115, 4734, 7474, 7476, 12108, 2]
+// Dependencies: [19, 21, 7624, 4800, 6610, 4528, 1115, 4779, 6618, 6620, 11303, 2]
 // Exports: openMessageAuthorProfile, showVibegrationsMessageActions
 
-// Module 17030 (VibegrationsMessageActionSheet)
+// Module 16341 (VibegrationsMessageActionSheet)
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
-import CopyIcon from "CopyIcon" /* 4734 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4755 */;
-import ClipboardUtils from "ClipboardUtils" /* 7466 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8480 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import CopyIcon from "CopyIcon" /* 4779 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
+import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
 import noop from "module_19" /* 19 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -41,10 +41,10 @@ function VibegrationsMessageActionSheet(content) {
     let obj2 = { label: null, icon: null, onPress: null };
     const intl2 = tmp4(1115).intl;
     obj2.label = intl2.string(tmp4(1115).t.JrGD7E);
-    const obj3 = { IconComponent: tmp4(4734).CopyIcon };
-    obj2.icon = tmp3(tmp4(7476).ActionSheetRow.Icon, obj3);
+    const obj3 = { IconComponent: tmp4(4779).CopyIcon };
+    obj2.icon = tmp3(tmp4(6620).ActionSheetRow.Icon, obj3);
     obj2.onPress = callback;
-    tmp3Result = tmp3(tmp4(7476).ActionSheetRow, obj2);
+    tmp3Result = tmp3(tmp4(6620).ActionSheetRow, obj2);
   }
   const items2 = [tmp3Result, ];
   let tmp3Result2 = null;
@@ -52,13 +52,13 @@ function VibegrationsMessageActionSheet(content) {
     let obj = { label: null, icon: null, onPress: null };
     let intl = tmp4(1115).intl;
     obj.label = intl.string(tmp4(1115).t.iXAna6);
-    let obj4 = { IconComponent: tmp4(12108).UserIcon };
-    obj.icon = tmp3(tmp4(7476).ActionSheetRow.Icon, obj4);
+    let obj4 = { IconComponent: tmp4(11303).UserIcon };
+    obj.icon = tmp3(tmp4(6620).ActionSheetRow.Icon, obj4);
     obj.onPress = callback1;
-    tmp3Result2 = tmp3(tmp4(7476).ActionSheetRow, obj);
+    tmp3Result2 = tmp3(tmp4(6620).ActionSheetRow, obj);
   }
   items2[1] = tmp3Result2;
-  return closure_4(content(7474).ActionSheet, { children: closure_5(content(7476).ActionSheetRow.Group, { hasIcons: true, children: items2 }) });
+  return closure_4(content(6618).ActionSheet, { children: closure_5(content(6620).ActionSheetRow.Group, { hasIcons: true, children: items2 }) });
 }
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);

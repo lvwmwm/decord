@@ -1,19 +1,19 @@
-// Module ID: 10117
-// Function ID: 10118
+// Module ID: 9277
+// Function ID: 9278
 // Name: InstantInviteUtils
-// Dependencies: [2040, 2041, 2105, 4803, 4437, 1372, 7495, 1074, 8010, 5691, 10118, 1115, 2]
+// Dependencies: [2044, 2045, 2108, 4851, 4479, 1372, 6639, 1074, 7155, 5754, 9278, 1115, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 10117 (InstantInviteUtils)
+// Module 9277 (InstantInviteUtils)
 import util from "util" /* 1115 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5691 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import ReadStateStore from "ReadStateStore" /* 4803 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5754 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import ReadStateStore from "ReadStateStore" /* 4851 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7495 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6639 */;
 
 const require = globalThis.__r;
 
@@ -96,14 +96,14 @@ function addDmUsers(arg0) {
   }
 }
 const ChannelTypes = fn(1074).ChannelTypes;
-const InviteTargetTypes = fn(8010).InviteTargetTypes;
+const InviteTargetTypes = fn(7155).InviteTargetTypes;
 const RowTypes = { GROUP_DM: "GROUP_DM", DM: "DM", FRIEND: "FRIEND", CHANNEL: "CHANNEL" };
 const minutes = "minutes";
 const hours = "hours";
 const days = "days";
 const never = "never";
-const dependencyMap = { [fn(10118).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [fn(10118).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [fn(10118).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [fn(10118).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [fn(10118).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [fn(10118).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [fn(10118).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [fn(10118).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [fn(10118).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [fn(10118).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
-let items = [fn(10118).INVITE_OPTIONS_14_DAYS, fn(10118).INVITE_OPTIONS_30_DAYS, fn(10118).INVITE_OPTIONS_60_DAYS];
+const dependencyMap = { [fn(9278).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [fn(9278).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [fn(9278).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [fn(9278).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [fn(9278).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [fn(9278).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [fn(9278).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [fn(9278).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [fn(9278).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [fn(9278).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
+let items = [fn(9278).INVITE_OPTIONS_14_DAYS, fn(9278).INVITE_OPTIONS_30_DAYS, fn(9278).INVITE_OPTIONS_60_DAYS];
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/InstantInviteUtils.tsx");
 
@@ -135,25 +135,25 @@ export default {
       return tmp2;
     });
   },
-  getMaxUsesOptions: fn(10118).MAX_USES_OPTIONS,
-  INVITE_OPTIONS_FOREVER: fn(10118).INVITE_OPTIONS_FOREVER,
-  INVITE_OPTIONS_1_DAY: fn(10118).INVITE_OPTIONS_1_DAY,
-  INVITE_OPTIONS_7_DAYS: fn(10118).INVITE_OPTIONS_7_DAYS,
-  INVITE_OPTIONS_14_DAYS: fn(10118).INVITE_OPTIONS_14_DAYS,
-  INVITE_OPTIONS_30_DAYS: fn(10118).INVITE_OPTIONS_30_DAYS,
-  INVITE_OPTIONS_60_DAYS: fn(10118).INVITE_OPTIONS_60_DAYS,
-  INVITE_OPTIONS_12_HOURS: fn(10118).INVITE_OPTIONS_12_HOURS,
-  INVITE_OPTIONS_6_HOURS: fn(10118).INVITE_OPTIONS_6_HOURS,
-  INVITE_OPTIONS_8_HOURS: fn(10118).INVITE_OPTIONS_8_HOURS,
-  INVITE_OPTIONS_1_HOUR: fn(10118).INVITE_OPTIONS_1_HOUR,
-  INVITE_OPTIONS_30_MINUTES: fn(10118).INVITE_OPTIONS_30_MINUTES,
-  INVITE_OPTIONS_UNLIMITED: fn(10118).INVITE_OPTIONS_UNLIMITED,
-  INVITE_OPTIONS_ONCE: fn(10118).INVITE_OPTIONS_ONCE,
-  INVITE_OPTIONS_5_TIMES: fn(10118).INVITE_OPTIONS_5_TIMES,
-  INVITE_OPTIONS_10_TIMES: fn(10118).INVITE_OPTIONS_10_TIMES,
-  INVITE_OPTIONS_25_TIMES: fn(10118).INVITE_OPTIONS_25_TIMES,
-  INVITE_OPTIONS_50_TIMES: fn(10118).INVITE_OPTIONS_50_TIMES,
-  INVITE_OPTIONS_100_TIMES: fn(10118).INVITE_OPTIONS_100_TIMES
+  getMaxUsesOptions: fn(9278).MAX_USES_OPTIONS,
+  INVITE_OPTIONS_FOREVER: fn(9278).INVITE_OPTIONS_FOREVER,
+  INVITE_OPTIONS_1_DAY: fn(9278).INVITE_OPTIONS_1_DAY,
+  INVITE_OPTIONS_7_DAYS: fn(9278).INVITE_OPTIONS_7_DAYS,
+  INVITE_OPTIONS_14_DAYS: fn(9278).INVITE_OPTIONS_14_DAYS,
+  INVITE_OPTIONS_30_DAYS: fn(9278).INVITE_OPTIONS_30_DAYS,
+  INVITE_OPTIONS_60_DAYS: fn(9278).INVITE_OPTIONS_60_DAYS,
+  INVITE_OPTIONS_12_HOURS: fn(9278).INVITE_OPTIONS_12_HOURS,
+  INVITE_OPTIONS_6_HOURS: fn(9278).INVITE_OPTIONS_6_HOURS,
+  INVITE_OPTIONS_8_HOURS: fn(9278).INVITE_OPTIONS_8_HOURS,
+  INVITE_OPTIONS_1_HOUR: fn(9278).INVITE_OPTIONS_1_HOUR,
+  INVITE_OPTIONS_30_MINUTES: fn(9278).INVITE_OPTIONS_30_MINUTES,
+  INVITE_OPTIONS_UNLIMITED: fn(9278).INVITE_OPTIONS_UNLIMITED,
+  INVITE_OPTIONS_ONCE: fn(9278).INVITE_OPTIONS_ONCE,
+  INVITE_OPTIONS_5_TIMES: fn(9278).INVITE_OPTIONS_5_TIMES,
+  INVITE_OPTIONS_10_TIMES: fn(9278).INVITE_OPTIONS_10_TIMES,
+  INVITE_OPTIONS_25_TIMES: fn(9278).INVITE_OPTIONS_25_TIMES,
+  INVITE_OPTIONS_50_TIMES: fn(9278).INVITE_OPTIONS_50_TIMES,
+  INVITE_OPTIONS_100_TIMES: fn(9278).INVITE_OPTIONS_100_TIMES
 };
 export { RowTypes };
 export const generateRowsForQuery = function generateRowsForQuery(arg0) {
@@ -292,7 +292,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       importDefault = undefined;
       ({ rows: c0, counts: c1 } = obj10);
       if (obj10.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
-        const obj12 = { query: tmp44, limit: 3, guildId: "w" };
+        const obj12 = { query: tmp44, limit: 3, guildId: "WireType" };
         let item = AutocompleteUtilsDefault.queryChannels(obj12).forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };
           _undefined.push(obj);

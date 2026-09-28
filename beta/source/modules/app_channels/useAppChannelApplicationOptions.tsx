@@ -1,10 +1,10 @@
-// Module ID: 9860
-// Function ID: 9861
+// Module ID: 9021
+// Function ID: 9022
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 9346, 9861, 7440, 2]
+// Dependencies: [19, 9022, 8501, 6584, 2]
 // Exports: useAppChannelApplicationOptions
 
-// Module 9860 (useAppChannelApplicationOptions)
+// Module 9021 (useAppChannelApplicationOptions)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -21,7 +21,6 @@ function compareOptions(status, status2) {
   }
   return localeCompareResult;
 }
-const EmbeddedSurfaceType = fn(9346).EmbeddedSurfaceType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_channels/useAppChannelApplicationOptions.tsx");
 
@@ -36,10 +35,10 @@ export const useAppChannelApplicationOptions = function useAppChannelApplication
   if (!flag) {
     tmp3 = guildId;
   }
-  const guildEmbeddedApplications = data1(data[2]).useGuildEmbeddedApplications(EmbeddedSurfaceType.APP_CHANNEL, tmp3, channelId);
+  const guildEmbeddedApplications = data1(data[1]).useGuildEmbeddedApplications(data1(data[2]).EmbeddedSurfaceType.APP_CHANNEL, tmp3, channelId);
   data1 = guildEmbeddedApplications.data;
   let isLoading = guildEmbeddedApplications.isLoading;
-  let obj = data1(data[2]);
+  let obj = data1(data[1]);
   const application = data1(data[3]).useApplication(selectedApplicationId, true);
   data = application.data;
   const obj2 = { options: null, selectedApplication: data, isLoading: null, hasNoApplications: null };

@@ -1,35 +1,9 @@
 // Module ID: 13153
 // Function ID: 13154
-// Dependencies: [13085, 13106, 13135]
+// Dependencies: [1121]
 
 // Module 13153
-import setupIntegration from "module_13135" /* 13135 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const weakMap = new WeakMap();
 
-export const functionToStringIntegration = setupIntegration.defineIntegration(() => ({
-  name: "FunctionToString",
-  setupOnce() {
-    toString = Function.prototype.toString;
-    try {
-      const _Function = Function;
-      Function.prototype.toString = function() {
-        const items = [...arguments];
-        const originalFunction = closure_1_0(13085).getOriginalFunction(this);
-        const obj = closure_1_0(13085);
-        let self = this;
-        if (set.has(obj2.getClient())) {
-          self = this;
-          if (undefined !== originalFunction) {
-            self = originalFunction;
-          }
-        }
-        return toString.apply(self, items);
-      };
-    } catch (err) {
-    }
-  },
-  setup(arg0) {
-    const result = weakMap.set(arg0, true);
-  }
-}));
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/light", width: 24, height: 23, scales: [2, 3], hash: "34f1b491773518eba109fd7be7fe4cb9", name: "tier_1_24px", type: "png" });

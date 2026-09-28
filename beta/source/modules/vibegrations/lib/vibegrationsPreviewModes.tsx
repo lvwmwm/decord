@@ -1,10 +1,10 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 16272
+// Function ID: 16273
 // Name: vibegrationsPreviewModes
-// Dependencies: [16966, 2]
+// Dependencies: [16273, 2]
 // Exports: previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode
 
-// Module 16965 (vibegrationsPreviewModes)
+// Module 16272 (vibegrationsPreviewModes)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

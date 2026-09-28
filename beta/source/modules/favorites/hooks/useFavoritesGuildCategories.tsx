@@ -1,13 +1,13 @@
-// Module ID: 11294
-// Function ID: 11295
+// Module ID: 10462
+// Function ID: 10463
 // Name: useFavoritesGuildCategories
-// Dependencies: [2044, 504, 10521, 2]
+// Dependencies: [2048, 504, 9685, 2]
 // Exports: default
 
-// Module 11294 (useFavoritesGuildCategories)
+// Module 10462 (useFavoritesGuildCategories)
 import initialize from "initialize" /* 504 */;
-import FavoritesHooks from "FavoritesHooks" /* 10521 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import FavoritesHooks from "FavoritesHooks" /* 9685 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 require = fn;
 function areCategoriesEqual(arr, arg1) {

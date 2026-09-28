@@ -1,97 +1,55 @@
 // Module ID: 4563
 // Function ID: 4564
-// Dependencies: [32, 19, 4558]
-// Exports: useRiveTrigger
+// Dependencies: [4564, 4573, 4574, 4575, 4576, 4577, 4578, 4569, 4579, 4580, 4581, 4582]
 
 // Module 4563
-import _mod4558 from "module_4558" /* 4558 */;
-import _slicedToArray from "module_32" /* 32 */;
+import installWorkletsSupport_mod from "installWorkletsSupport" /* 4564 */;
 
-require = fn;
-const noop = fn(19);
-({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = noop);
+const require = globalThis.__r;
 
-export const useRiveTrigger = function useRiveTrigger(startAnimation, instance, arg2) {
-  closure_0 = startAnimation;
-  closure_1 = instance;
-  let obj = arg2;
-  if (arg2 == null) {
-    obj = {};
-  }
-  const onTrigger = obj.onTrigger;
-  let tmp = hasOwnProperty(undefined);
-  const tmp2 = hasOwnProperty(false);
-  const tmp3 = hasOwnProperty(onTrigger);
-  closure_4 = tmp3;
-  tmp3.current = onTrigger;
-  const items = [instance, startAnimation];
-  const disposableMemo = _mod4558.useDisposableMemo(() => {
-    if (closure_1) {
-      return obj.triggerProperty(closure_0);
-    }
-    obj = closure_1;
-  }, (dispose) => {
-    let disposeResult;
-    if (dispose != null) {
-      disposeResult = dispose.dispose();
-    }
-    return disposeResult;
-  }, items, tmp);
-  if (tmp.current) {
-    tmp2.current = true;
-  }
-  const tmp5 = _slicedToArray(timestampProducer(null), 2);
-  closure_6 = tmp5[1];
-  const items1 = [startAnimation, instance];
-  React4(() => {
-    closure_6(null);
-  }, items1);
-  const items2 = [instance, disposableMemo, startAnimation];
-  React4(() => {
-    let tmp = closure_1;
-    if (closure_1) {
-      tmp = !disposableMemo;
-    }
-    if (tmp) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const error = new Error("Property \"" + closure_0 + "\" not found in the ViewModel instance");
-      closure_6(error);
-    }
-  }, items2);
-  const items3 = [disposableMemo];
-  React4(() => {
-    if (disposableMemo) {
-      closure_0 = obj.addListener(() => {
-        const current = ref.current;
-        if (current != null) {
-          current();
-        }
-      });
-      return () => {
-        try {
-          closure_0();
-        } catch (err) {
-        }
-      };
-    }
-    obj = disposableMemo;
-  }, items3);
-  const obj3 = { trigger: null, error: tmp5[0] };
-  const items4 = [startAnimation];
-  obj3.trigger = React3(() => {
-    if (ref.current) {
-      const current = ref.current;
-      current.trigger();
-    } else {
-      const _console = console;
-      const _HermesInternal = HermesInternal;
-      if (ref2.current) {
-        warn(concat(tmp3, "') called after dispose. The property has been cleaned up \u2014 this is likely a stale closure from an async callback that fired after unmount."));
-      } else {
-        warn(concat(tmp3, "') called but the property is not available yet. The viewModelInstance may still be loading."));
-      }
-    }
-  }, items4);
-  return obj3;
-};
+let installWorkletsSupport = installWorkletsSupport_mod;
+installWorkletsSupport = installWorkletsSupport.installWorkletsSupport();
+for (const key10017 in require("module_4573")) {
+  arg5[key10017] = require("module_4573")[key10017];
+  continue;
+}
+for (const key10021 in require("module_4574")) {
+  arg5[key10021] = require("module_4574")[key10021];
+  continue;
+}
+for (const key10025 in require("module_4575")) {
+  arg5[key10025] = require("module_4575")[key10025];
+  continue;
+}
+for (const key10029 in require("module_4576")) {
+  arg5[key10029] = require("module_4576")[key10029];
+  continue;
+}
+for (const key10033 in require("module_4577")) {
+  arg5[key10033] = require("module_4577")[key10033];
+  continue;
+}
+for (const key10037 in require("module_4578")) {
+  arg5[key10037] = require("module_4578")[key10037];
+  continue;
+}
+for (const key10041 in require("module_4569")) {
+  arg5[key10041] = require("module_4569")[key10041];
+  continue;
+}
+for (const key10045 in require("module_4579")) {
+  arg5[key10045] = require("module_4579")[key10045];
+  continue;
+}
+for (const key10049 in require("module_4580")) {
+  arg5[key10049] = require("module_4580")[key10049];
+  continue;
+}
+for (const key10053 in require("module_4581")) {
+  arg5[key10053] = require("module_4581")[key10053];
+  continue;
+}
+for (const key10057 in require("module_4582")) {
+  arg5[key10057] = require("module_4582")[key10057];
+  continue;
+}

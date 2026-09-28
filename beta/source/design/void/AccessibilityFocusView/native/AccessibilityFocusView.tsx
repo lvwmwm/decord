@@ -1,11 +1,11 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 13658
+// Function ID: 13659
 // Name: AccessibilityFocusView
-// Dependencies: [19, 21, 14417, 2]
+// Dependencies: [19, 21, 13659, 2]
 // Exports: default
 
-// Module 14416 (AccessibilityFocusView)
-import AccessibilityFocusNativeComponentDefault from "AccessibilityFocusNativeComponent" /* 14417 */;
+// Module 13658 (AccessibilityFocusView)
+import AccessibilityFocusNativeComponentDefault from "AccessibilityFocusNativeComponent" /* 13659 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

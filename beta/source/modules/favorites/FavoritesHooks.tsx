@@ -1,23 +1,23 @@
-// Module ID: 10521
-// Function ID: 10522
+// Module ID: 9685
+// Function ID: 9686
 // Name: FavoritesHooks
-// Dependencies: [4609, 1372, 2044, 2054, 1374, 10522, 10523, 504, 1969, 11, 1186, 2066, 2]
+// Dependencies: [4655, 1372, 2048, 2058, 1374, 9686, 9687, 504, 1970, 11, 1186, 2070, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 10521 (FavoritesHooks)
+// Module 9685 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initialize from "initialize" /* 504 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1969 */;
-import FavoritesUtils from "FavoritesUtils" /* 2066 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10523 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1970 */;
+import FavoritesUtils from "FavoritesUtils" /* 2070 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 9687 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 const require = globalThis.__r;
 
-const FavoritesLimits = tmp(10522);
+const FavoritesLimits = tmp(9686);
 require = fn;
 function useFavoritesAccess(FavoritesGuildActionSheet) {
   let str = FavoritesGuildActionSheet;
@@ -50,7 +50,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   } else if (isPremiumExactlyResult) {
   }
 }
-const MAX_FAVORITE_CHANNELS = fn(2054).MAX_FAVORITE_CHANNELS;
+const MAX_FAVORITE_CHANNELS = fn(2058).MAX_FAVORITE_CHANNELS;
 const PremiumTypes = fn(1374).PremiumTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/FavoritesHooks.tsx");

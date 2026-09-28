@@ -1,11 +1,11 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 10894
+// Function ID: 10895
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [11645, 11647, 4656, 11648, 4524, 4489, 576, 1610, 2]
+// Dependencies: [10895, 10897, 4703, 10898, 4566, 4531, 576, 1611, 2]
 // Exports: default
 
-// Module 11644 (useChannelSafeAreaHeightSharedValue)
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
+// Module 10894 (useChannelSafeAreaHeightSharedValue)
+import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

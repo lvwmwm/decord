@@ -1,18 +1,18 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 15914
+// Function ID: 15915
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 16544, 21, 4788, 576, 10521, 11271, 4755, 10525, 1980, 10524, 4784, 1115, 3356, 5330, 5351, 5321, 5216, 2]
+// Dependencies: [19, 17, 15834, 21, 4836, 576, 9685, 10439, 4800, 9689, 1981, 9688, 4832, 1115, 3361, 5394, 5415, 5385, 5279, 2]
 // Exports: default
 
-// Module 16620 (FavoritesGuildSidebarHeader)
+// Module 15914 (FavoritesGuildSidebarHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef3356 from "module_3356" /* 3356 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import Stack_Stack from "Stack/Stack" /* 5216 */;
-import ChatIcon from "ChatIcon" /* 5321 */;
-import TextIcon from "TextIcon" /* 5330 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5351 */;
+import _modDef3361 from "module_3361" /* 3361 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import Stack_Stack from "Stack/Stack" /* 5279 */;
+import ChatIcon from "ChatIcon" /* 5385 */;
+import TextIcon from "TextIcon" /* 5394 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5415 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,7 +28,7 @@ function EmptyBody() {
   }, []);
   const obj = { variant: "text-sm/medium", color: "text-muted", children: null };
   const intl = util.intl;
-  obj.children = intl.format(_modDef3356.Z3Hdr5, { onClick: callback });
+  obj.children = intl.format(_modDef3361.Z3Hdr5, { onClick: callback });
   return timestampProducer(Text_Text.Text, obj);
 }
 function PlaceholderRows() {
@@ -67,10 +67,10 @@ function PlaceholderRows() {
   return React5(View, obj);
 }
 const View = fn(17).View;
-let closure_5 = fn(16544).useHasFavoritesGuildSuggestions;
+let closure_5 = fn(15834).useHasFavoritesGuildSuggestions;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { copy: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, divider: null, placeholderRows: null, placeholderRow: null, placeholderBar: null, placeholderBarShort: null, placeholderBarLong: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.divider = { height: 1, marginTop: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -101,7 +101,7 @@ export default function FavoritesGuildSidebarHeader() {
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: null };
   const obj4 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp4(1115).intl;
-  obj4.children = intl.string(_modDef3356["1n0TGE"]);
+  obj4.children = intl.string(_modDef3361["1n0TGE"]);
   const items1 = [timestampProducer(Text_Text.Heading, obj4), timestampProducer(EmptyBody, {})];
   obj3.children = items1;
   items[1] = React5(Stack_Stack.Stack, obj3);

@@ -1,9 +1,9 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 11057
+// Function ID: 11058
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 7384, 2109, 1386, 502, 2041, 5530, 2105, 4427, 5657, 1074, 21, 4788, 576, 4722, 5532, 1397, 4639, 1177, 5271, 4941, 4784, 1115, 5656, 11843, 7442, 9584, 11844, 11845, 12, 4489, 11846, 38, 4486, 11548, 5235, 8903, 5655, 504, 5658, 5769, 1241, 4968, 4755, 7656, 11849, 9373, 573, 4991, 9358, 1980, 9350, 11853, 7427, 11854, 7480, 5218, 2]
+// Dependencies: [5, 32, 19, 17, 6528, 2112, 1386, 502, 2045, 5593, 2108, 4469, 5720, 1074, 21, 4836, 576, 4767, 5595, 1397, 4685, 1177, 5335, 4989, 4832, 1115, 5719, 11058, 6586, 8741, 11059, 11060, 12, 4531, 11061, 38, 4528, 10823, 5298, 8053, 5718, 504, 5721, 5832, 1241, 5016, 4800, 6800, 11064, 8528, 573, 5039, 8513, 1981, 8505, 11068, 6571, 11069, 6624, 5281, 2]
 
-// Module 11842 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 11057 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -11,35 +11,35 @@ import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
-import shared from "shared" /* 4639 */;
-import useThemeDefault from "useTheme" /* 4722 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import useChannelNameDefault from "useChannelName" /* 4941 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import useMountEffectDefault from "useMountEffect" /* 5235 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5271 */;
-import PlatformsDefault from "Platforms" /* 5532 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5655 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5656 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 5658 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5769 */;
-import openUserSettings from "openUserSettings" /* 7656 */;
-import _modDef11548 from "module_11548" /* 11548 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11853 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import shared from "shared" /* 4685 */;
+import useThemeDefault from "useTheme" /* 4767 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useChannelNameDefault from "useChannelName" /* 4989 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import useMountEffectDefault from "useMountEffect" /* 5298 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
+import PlatformsDefault from "Platforms" /* 5595 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5718 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5719 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 5721 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+import openUserSettings from "openUserSettings" /* 6800 */;
+import _modDef10823 from "module_10823" /* 10823 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11068 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7384 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 const native = tmp5(1177);
 require = fn;
@@ -375,7 +375,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     }
   }, items3);
   let tmp3 = _slicedToArray(noop.useState(0), 2);
-  roleColor = eligibilityStatesGroups(4489).useToken(nativeDefault.unsafe_rawColors.GREEN_330);
+  roleColor = eligibilityStatesGroups(4531).useToken(nativeDefault.unsafe_rawColors.GREEN_330);
   let obj3 = { children: null };
   const keys = Object.keys(memo1);
   const sorted = keys.sort((arg0, arg1) => {
@@ -430,7 +430,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     if (null != bot) {
       tmp11 = new closure_11(application.bot);
     }
-    const officialApplicationIds = eligibilityStatesGroups(5656).officialApplicationIds;
+    const officialApplicationIds = eligibilityStatesGroups(5719).officialApplicationIds;
     let str;
     if (application != null) {
       str = application.id;
@@ -454,24 +454,24 @@ function ConnectionsChecks(eligibilityStatesGroups) {
       tmp20 = tmp19 <= c8;
     }
     if (tmp3) {
-      const obj3 = { source: tmp5(11844), style: closure_5.connectionsChecksGroupCheckmark };
+      const obj3 = { source: tmp5(11059), style: closure_5.connectionsChecksGroupCheckmark };
       let tmp22Result = tmp22(tmp15(1177).Icon, obj3);
       let tmp24 = tmp22;
     } else if (tmp20) {
       const obj4 = { variant: "text-sm/semibold", color: "text-brand", children: null };
       const intl2 = tmp15(1115).intl;
       obj4.children = intl2.string(tmp15(1115).t["5911Lb"]);
-      tmp22Result = tmp22(tmp15(4784).Text, obj4);
+      tmp22Result = tmp22(tmp15(4832).Text, obj4);
       tmp24 = tmp22;
     } else if (tmp8) {
-      const obj5 = { source: tmp5(11845), style: closure_5.connectionsChecksGroupCaret };
+      const obj5 = { source: tmp5(11060), style: closure_5.connectionsChecksGroupCaret };
       tmp22Result = tmp22(tmp15(1177).Icon, obj5);
       tmp24 = tmp22;
     } else {
       const obj6 = { variant: "text-md/medium", color: "text-muted", children: null };
       const intl = tmp15(1115).intl;
       obj6.children = intl.string(tmp15(1115).t.cEts68);
-      tmp22Result = tmp22(tmp15(4784).Text, obj6);
+      tmp22Result = tmp22(tmp15(4832).Text, obj6);
       tmp24 = tmp22;
     }
     let type1;
@@ -487,11 +487,11 @@ function ConnectionsChecks(eligibilityStatesGroups) {
     }
     if (hasItem) {
       const obj7 = { style: closure_5.botTag, guildId, roleColor, size: 16 };
-      let tmp24Result = tmp24(tmp5(11846), obj7);
+      let tmp24Result = tmp24(tmp5(11061), obj7);
     } else if (null != tmp11) {
       const obj8 = { style: closure_5.botTag, verified: tmp11.isVerifiedBot() };
-      tmp24Result = tmp24(tmp5(9584), obj8);
-      const tmp5Result = tmp5(9584);
+      tmp24Result = tmp24(tmp5(8741), obj8);
+      const tmp5Result = tmp5(8741);
     }
     const items = [closure_5.connectionsChecksGroup, , ];
     let prop = null;
@@ -546,7 +546,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
         const obj11 = { variant: "text-xs/normal", color: "text-overlay-light", children: null };
         const intl4 = tmp15(1115).intl;
         obj11.children = intl4.string(tmp15(1115).t.UB3hKo);
-        obj10.children = tmp24(tmp15(4784).Text, obj11);
+        obj10.children = tmp24(tmp15(4832).Text, obj11);
         tmp24Result5 = tmp24(c8, obj10);
       }
     }
@@ -576,18 +576,18 @@ function ConnectionsChecks(eligibilityStatesGroups) {
       }
       name = name1;
     }
-    const items2 = [tmp24(eligibilityStatesGroups(4784).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: name }), tmp24Result, ];
+    const items2 = [tmp24(eligibilityStatesGroups(4832).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: name }), tmp24Result, ];
     let tmp24Result8 = null;
     if (null != tmp28) {
       const obj16 = {
         onPress() {
             _modDef38(null != stringResult, "tooltip is null");
             const obj = ToastActionCreatorsDefault;
-            obj.open({ key: "CONNECTIONS_STEAM_TOOLTIP", icon: _modDef11548, content: stringResult });
+            obj.open({ key: "CONNECTIONS_STEAM_TOOLTIP", icon: _modDef10823, content: stringResult });
           },
         children: null
       };
-      const obj17 = { source: tmp5(11548), size: tmp15(1177).Icon.Sizes.SMALL_20, style: tmp38.connectionsChecksGroupTextNameInfoIcon };
+      const obj17 = { source: tmp5(10823), size: tmp15(1177).Icon.Sizes.SMALL_20, style: tmp38.connectionsChecksGroupTextNameInfoIcon };
       obj16.children = tmp24(tmp15(1177).Icon, obj17);
       tmp24Result8 = tmp24(tmp37, obj16);
     }
@@ -643,7 +643,7 @@ function ConnectedUserAccountOptions(account) {
       _undefined(enabled);
       ConnectedAccountsActionCreatorsDefault.setFriendSync(account.type, account.id, enabled);
     };
-    tmp12 = closure_29(account(8903).FormSwitchRow, obj2);
+    tmp12 = closure_29(account(8053).FormSwitchRow, obj2);
   }
   let tmp15;
   if (set2.has(account.type)) {
@@ -656,7 +656,7 @@ function ConnectedUserAccountOptions(account) {
       closure_4(show_activity);
       ConnectedAccountsActionCreatorsDefault.setShowActivity(account.type, account.id, show_activity);
     };
-    tmp15 = closure_29(account(8903).FormSwitchRow, obj3);
+    tmp15 = closure_29(account(8053).FormSwitchRow, obj3);
   }
   let tmp18;
   if (true === value.hasMetadata) {
@@ -675,7 +675,7 @@ function ConnectedUserAccountOptions(account) {
       }
       const result = ConnectedAccountsActionCreatorsDefault.setMetadataVisibility(type, id, num);
     };
-    tmp18 = closure_29(account(8903).FormSwitchRow, obj5);
+    tmp18 = closure_29(account(8053).FormSwitchRow, obj5);
   }
   const obj6 = { style: tmp.accountConnectedPrivacyOptionsContainer, children: null };
   const obj7 = { label: null, value: null, onValueChange: null };
@@ -692,19 +692,19 @@ function ConnectedUserAccountOptions(account) {
     }
     ConnectedAccountsActionCreatorsDefault.setVisibility(type, id, num);
   };
-  const items = [closure_29(account(8903).FormSwitchRow, obj7), tmp18, tmp15, tmp12];
+  const items = [closure_29(account(8053).FormSwitchRow, obj7), tmp18, tmp15, tmp12];
   obj6.children = items;
   return closure_30(closure_8, obj6);
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, Pressable: closure_7, View: closure_8 } = get_ActivityIndicator);
-let Constants = fn(5657);
+let Constants = fn(5720);
 ({ MetadataFields: closure_17, OperatorTypes: closure_18, GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE: closure_19, GUILD_ROLE_CONNECTION_APPLICATION_IDENTITY_CONNECTION_TYPE: closure_20 } = Constants);
 Constants = fn(1074);
 ({ PlatformTypes: closure_21, UserSettingsSections: closure_22, AnalyticEvents: closure_23, MarketingURLs: closure_24, FRIEND_SYNC_PLATFORM_TYPES: closure_25, ACTIVITY_PLATFORM_TYPES: closure_26, Permissions: closure_27, EMPTY_STRING_SNOWFLAKE_ID: closure_28 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_29, jsxs: closure_30, Fragment: items } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { padding: 12 }, connectionsChecksGroups: { marginTop: 16, flexDirection: "column" }, connectionsChecksGroup: { flexDirection: "row", borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 2, borderRadius: nativeDefault.radii.md, paddingHorizontal: 16, paddingVertical: 20, marginBottom: 16, width: "100%", alignItems: "center", position: "relative" }, connectionsChecksGroupPassed: null, connectionsChecksGroupPlatformDisabled: null, connectionsChecksGroupRequirementsNotMet: null, connectionsChecksGroupTextContainer: null, connectionsChecksGroupTextNameContainer: null, connectionsChecksGroupTextNameInfoIcon: null, connectionsChecksGroupCheckmark: null, connectionsChecksGroupCaret: null, connectionsCheck: null, platformIcon: null, channelName: null, channelNameIcon: null, channelNameText: null, header: null, content: null, footerText: null, accountConnectedContainer: null, accountConnectedPreview: null, accountConnectedPreviewConnectedUserAccount: null, accountConnectedPrivacy: null, accountConnectedPrivacyOptionsContainer: null, roleGranted: null, roleGrantedName: null, verifiedIcon: null, channelsGranted: null, manageConnectionsButton: null, loading: null, appIcon: null, botTag: null };
 let obj3 = { flexDirection: "row", borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 2, borderRadius: nativeDefault.radii.md, paddingHorizontal: 16, paddingVertical: 20, marginBottom: 16, width: "100%", alignItems: "center", position: "relative" };
 obj2.connectionsChecksGroupPassed = { borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -1069,11 +1069,11 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
                   prop = tmp2.role_connections_verification_url;
                 }
                 const resolved = Promise.resolve({ default: closure_1_40 });
-                const obj = closure_1(4755);
+                const obj = closure_1(4800);
                 const obj2 = { default: closure_1_40 };
                 const obj4 = { role, guildId, initialAttemptedPlatformType: platformType, initialAttemptedApplicationId: null, overrideUrl: null, onCloseModal: null };
                 let tmp7 = null;
-                const guildRoleConnectionsConnectAccountsActionSheetKey = platformType(11849).makeGuildRoleConnectionsConnectAccountsActionSheetKey(role.id);
+                const guildRoleConnectionsConnectAccountsActionSheetKey = platformType(11064).makeGuildRoleConnectionsConnectAccountsActionSheetKey(role.id);
                 if (null != platformType) {
                   tmp7 = id;
                 }

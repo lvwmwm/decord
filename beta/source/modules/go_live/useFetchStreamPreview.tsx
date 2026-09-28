@@ -1,16 +1,16 @@
-// Module ID: 10358
-// Function ID: 10359
+// Module ID: 9522
+// Function ID: 9523
 // Name: useFetchStreamPreview
-// Dependencies: [19, 4932, 2041, 4427, 2095, 1085, 504, 4930, 2]
+// Dependencies: [19, 4980, 2045, 4469, 2099, 1085, 504, 4978, 2]
 // Exports: default
 
-// Module 10358 (useFetchStreamPreview)
-import StreamActionCreators from "StreamActionCreators" /* 4930 */;
+// Module 9522 (useFetchStreamPreview)
+import StreamActionCreators from "StreamActionCreators" /* 4978 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 4932 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 4980 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const require = globalThis.__r;
 
@@ -82,5 +82,5 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
     }
     return obj5;
   }
-  obj5 = { previewUrl: "PX_16", isLoading: true };
+  obj5 = { previewUrl: "flex", isLoading: true };
 };

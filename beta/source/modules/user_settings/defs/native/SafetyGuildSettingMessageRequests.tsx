@@ -1,20 +1,20 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 15496
+// Function ID: 15497
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [2063, 16197, 8265, 11755, 16208, 15098, 2019, 5140, 1115, 5237, 16209, 8714, 8716, 7272, 16200, 11754, 2]
+// Dependencies: [2067, 15486, 7417, 11007, 15497, 14353, 2021, 5203, 1115, 5300, 15498, 7859, 7861, 6416, 15489, 11006, 2]
 
-// Module 16207 (SafetyGuildSettingMessageRequests)
+// Module 15496 (SafetyGuildSettingMessageRequests)
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8714 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8716 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16200 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16208 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import common_AlertDefault from "common/Alert" /* 5300 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15489 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 15497 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 function showMessageRequestRestrictionModal(arg0) {
@@ -46,10 +46,10 @@ function showMessageRequestRestrictionModal(arg0) {
   };
   AlertActionCreatorsDefault.show(obj2);
 }
-const UserSettingsSafetySelectedGuildStore = fn(16197);
+const UserSettingsSafetySelectedGuildStore = fn(15486);
 ({ getSelectedGuildId: closure_4, useUserSafetySettingsSelectedGuildStore: hasOwnProperty } = UserSettingsSafetySelectedGuildStore);
-let closure_6 = fn(11755).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
-const SettingBuilders = fn(11754);
+let closure_6 = fn(11007).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
+const SettingBuilders = fn(11006);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -59,7 +59,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.o5fjz6);
   },
-  parent: fn(8265).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(7417).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
     const selectedGuildId = hasOwnProperty().selectedGuildId;
     const defaultGuildsRestricted = DefultGuildsRestrictedSetting.useDefaultGuildsRestricted();
@@ -87,9 +87,9 @@ const toggle = SettingBuilders.createToggle({
     const shouldDisableMessageRequestSettings = useShouldDisableMessageRequestSettings.useShouldDisableMessageRequestSettings();
     const tmpResult = useShouldDisableMessageRequestSettings;
     const isParentallyControlled1 = useParentalControlSettings.useIsParentallyControlled();
-    const MessageRequestRestrictedDefault = tmp(2019).MessageRequestRestrictedDefault;
+    const MessageRequestRestrictedDefault = tmp(2021).MessageRequestRestrictedDefault;
     const tmp12 = !MessageRequestRestrictedDefault.useSetting();
-    const MessageRequestRestrictedGuildIds = tmp(2019).MessageRequestRestrictedGuildIds;
+    const MessageRequestRestrictedGuildIds = tmp(2021).MessageRequestRestrictedGuildIds;
     const setting1 = MessageRequestRestrictedGuildIds.useSetting();
     let tmp13 = !setting1.includes(selectedGuildId);
     let tmp14 = shouldDisableMessageRequestSettings;

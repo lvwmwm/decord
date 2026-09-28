@@ -1,16 +1,16 @@
-// Module ID: 1477
-// Function ID: 1478
+// Module ID: 1478
+// Function ID: 1479
 // Name: utils/ImageUtils
-// Dependencies: [32, 17, 1074, 1432, 1478, 1472, 1433, 1879, 12, 1400, 1397, 2]
+// Dependencies: [32, 17, 1074, 1433, 1479, 1473, 1434, 1880, 12, 1400, 1397, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1477 (utils/ImageUtils)
+// Module 1478 (utils/ImageUtils)
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1432 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1433 */;
-import _modDef1472 from "module_1472" /* 1472 */;
-import useWindowDimensions from "useWindowDimensions" /* 1478 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1433 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1434 */;
+import _modDef1473 from "module_1473" /* 1473 */;
+import useWindowDimensions from "useWindowDimensions" /* 1479 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -24,7 +24,7 @@ function getSrcWithWidthAndHeight(animated) {
     flag = false;
   }
   const tmp = _slicedToArray(src.split("?"), 2);
-  const items = [tmp[0], _modDef1472.parse(tmp[1])];
+  const items = [tmp[0], _modDef1473.parse(tmp[1])];
   [tmp5, tmp6] = items;
   if (re8.test(tmp5)) {
     tmp6.format = "webp";
@@ -55,7 +55,7 @@ function getSrcWithWidthAndHeight(animated) {
     if (null != tmp9) {
       const obj3 = { targetWidth, targetHeight, sourceWidth, sourceHeight, maxUpscale: null };
       const obj2 = AttachmentImageLadder;
-      obj3.maxUpscale = AttachmentImageLadder.getSnapDownMaxUpscale(tmp9, tmp2(1879)());
+      obj3.maxUpscale = AttachmentImageLadder.getSnapDownMaxUpscale(tmp9, tmp2(1880)());
       size = obj2.snapAttachmentDimensions(obj3);
     }
     if (!tmp12) {
@@ -70,7 +70,7 @@ function getSrcWithWidthAndHeight(animated) {
   const tmp4 = _slicedToArray(items, 2);
   let text = tmp5;
   if (!tmp2Result.isEmpty(tmp6)) {
-    tmp2(1472);
+    tmp2(1473);
     text = `${tmp5}?${obj6.stringify(tmp6)}`;
   }
   return text;

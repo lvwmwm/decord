@@ -1,21 +1,21 @@
-// Module ID: 10593
-// Function ID: 10594
+// Module ID: 9759
+// Function ID: 9760
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 2063, 2048, 21, 9460, 1115, 1478, 504, 5769, 5237, 10594, 9468, 2]
+// Dependencies: [19, 2067, 2052, 21, 8615, 1115, 1479, 504, 5832, 5300, 9760, 8623, 2]
 // Exports: default
 
-// Module 10593 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9759 (RoleSubscriptionEmojiUpsellAlert)
 import util from "util" /* 1115 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5769 */;
-import _modDef9460 from "module_9460" /* 9460 */;
-import CreatorRevenueButton from "CreatorRevenueButton" /* 10594 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+import _modDef8615 from "module_8615" /* 8615 */;
+import CreatorRevenueButton from "CreatorRevenueButton" /* 9760 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const StaticChannelRoute = fn(2048).StaticChannelRoute;
+const StaticChannelRoute = fn(2052).StaticChannelRoute;
 const jsx = fn(21).jsx;
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/emoji_upsell/RoleSubscriptionEmojiUpsellAlert.tsx");
@@ -49,7 +49,7 @@ export default function RoleSubscriptionEmojiUpsellAlert(arg0) {
     if (stateFromStores != null) {
       name = stateFromStores.name;
     }
-    const obj = { image: _modDef9460, title: null, description: null };
+    const obj = { image: _modDef8615, title: null, description: null };
     const intl = util.intl;
     obj.title = intl.string(util.t.cBjkcx);
     const intl2 = util.intl;

@@ -1,13 +1,13 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 16537
+// Function ID: 16538
 // Name: ThreadListTableRow
-// Dependencies: [19, 17, 2041, 21, 4788, 5854, 17185, 504, 2]
+// Dependencies: [19, 17, 2045, 21, 4836, 5917, 16538, 504, 2]
 
-// Module 17184 (ThreadListTableRow)
-import TableRow from "TableRow" /* 5854 */;
-import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 17185 */;
+// Module 16537 (ThreadListTableRow)
+import TableRow from "TableRow" /* 5917 */;
+import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 16538 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 function ThreadListTableRow(thread) {
@@ -26,7 +26,7 @@ function ThreadListTableRow(thread) {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ subLabel: { maxWidth: "100%", marginTop: 2 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/threads/native/components/redesign/ThreadListTableRow.tsx");

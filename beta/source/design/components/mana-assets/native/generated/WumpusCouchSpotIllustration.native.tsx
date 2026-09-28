@@ -1,13 +1,13 @@
-// Module ID: 6856
-// Function ID: 6857
+// Module ID: 14645
+// Function ID: 14646
 // Name: WumpusCouchSpotIllustration
-// Dependencies: [21, 5836, 6857, 2]
+// Dependencies: [21, 5899, 14646, 2]
 // Exports: WumpusCouchSpotIllustration
 
-// Module 6856 (WumpusCouchSpotIllustration)
+// Module 14645 (WumpusCouchSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef6857 from "module_6857" /* 6857 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef14646 from "module_14646" /* 14646 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const WumpusCouchSpotIllustration = function WumpusCouchSpotIllustration(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6857 };
+  const obj2 = { uri: _modDef14646 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

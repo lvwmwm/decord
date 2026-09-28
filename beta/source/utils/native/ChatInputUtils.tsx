@@ -1,15 +1,15 @@
-// Module ID: 4654
-// Function ID: 4655
+// Module ID: 4701
+// Function ID: 4702
 // Name: ChatInputUtils
-// Dependencies: [4655, 1875, 4656, 1610, 1482, 4657, 2]
+// Dependencies: [4702, 1876, 4703, 1611, 1483, 4704, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4654 (ChatInputUtils)
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4655 */;
-import useKeyboardType from "useKeyboardType" /* 4656 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4657 */;
+// Module 4701 (ChatInputUtils)
+import KeyboardTypes from "KeyboardTypes" /* 1611 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4702 */;
+import useKeyboardType from "useKeyboardType" /* 4703 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4704 */;
 import size from "module_2" /* 2 */;
 
 function getBestActiveInput() {
@@ -243,9 +243,9 @@ export const dismissKeyboard = function dismissKeyboard() {
   }
   const keyboardType = useKeyboardType.getKeyboardType();
   if (keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM) {
-    const obj3 = { type: tmp(1610).KeyboardTypes.SYSTEM };
-    tmp(1482).setKeyboardType(obj3);
-    const tmpResult3 = tmp(1482);
+    const obj3 = { type: tmp(1611).KeyboardTypes.SYSTEM };
+    tmp(1483).setKeyboardType(obj3);
+    const tmpResult3 = tmp(1483);
   }
   const tmpResult = useKeyboardType;
   const result1 = PortalKeyboardUIStore.closePortalKeyboardRequest();

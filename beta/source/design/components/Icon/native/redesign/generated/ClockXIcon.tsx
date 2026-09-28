@@ -1,13 +1,13 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 11238
+// Function ID: 11239
 // Name: ClockXIcon
-// Dependencies: [19, 21, 576, 4488, 12021, 2]
+// Dependencies: [19, 21, 576, 4530, 11239, 2]
 // Exports: ClockXIcon
 
-// Module 12020 (ClockXIcon)
+// Module 11238 (ClockXIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod12021 from "module_12021" /* 12021 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod11239 from "module_11239" /* 11239 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ClockXIcon = function ClockXIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12021, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11239, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

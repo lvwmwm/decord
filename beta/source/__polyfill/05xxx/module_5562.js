@@ -1,9 +1,26 @@
 // Module ID: 5562
 // Function ID: 5563
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 5562
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "1fb128da69fdf1c55ef0fbbe555babd7", name: "img_account_sync_league_of_legends_white", type: "svg" });
+export default {
+  get(arg0) {
+    if (arg0) {
+      return arg0;
+    } else {
+      if (typeof globalThis.DOMParser !== "undefined") {
+        const dOMParser = new globalThis.DOMParser();
+        return dOMParser;
+      } else {
+        try {
+          const result = globalThis.__non_webpack_require__("@xmldom/xmldom");
+          const obj = { onError: result.onErrorStopParsing };
+          const dOMParser1 = new result.DOMParser(obj);
+          return dOMParser1;
+        } catch (err) {
+        }
+      }
+    }
+  }
+};

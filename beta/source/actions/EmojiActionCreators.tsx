@@ -1,23 +1,23 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 9797
+// Function ID: 9798
 // Name: EmojiActionCreators
-// Dependencies: [5, 5708, 5526, 5138, 1074, 1084, 2024, 1217, 573, 1271, 5418, 4639, 1115, 4689, 4441, 1370, 5715, 12, 5140, 2]
+// Dependencies: [5, 5771, 5589, 5201, 1074, 1084, 2026, 1217, 573, 1271, 5482, 4685, 1115, 4736, 4483, 1370, 5778, 12, 5203, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 10631 (EmojiActionCreators)
+// Module 9797 (EmojiActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import wrappers from "wrappers" /* 1217 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4441 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import InlineUploaderDefault from "InlineUploader" /* 5418 */;
-import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 5715 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import InlineUploaderDefault from "InlineUploader" /* 5482 */;
+import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 5778 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import EmojiStore from "EmojiStore" /* 5708 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5138 */;
+import EmojiStore from "EmojiStore" /* 5771 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5201 */;
 
 const require = globalThis.__r;
 
@@ -56,7 +56,7 @@ let closure_10 = async function _updateEmoji(arg0, value) {
           ({ guildId: closure_129_0, emojiId: closure_129_1, name: closure_129_2, roles: closure_129_3 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {
@@ -202,7 +202,7 @@ export const favoriteEmoji = function favoriteEmoji(customEmojiFromJoinedGuild) 
   }
   name = tmp;
   if (null != tmp) {
-    const FrecencyUserSettingsActionCreators = name(2024).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = name(2026).FrecencyUserSettingsActionCreators;
     FrecencyUserSettingsActionCreators.updateAsync("favoriteEmojis", async (emojis) => {
       const emojis1 = emojis.emojis;
       let tmp = emojis1;
@@ -268,7 +268,7 @@ export const unfavoriteEmoji = function unfavoriteEmoji(customEmojiFromJoinedGui
   }
   name = tmp;
   if (null != tmp) {
-    const FrecencyUserSettingsActionCreators = name(2024).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = name(2026).FrecencyUserSettingsActionCreators;
     FrecencyUserSettingsActionCreators.updateAsync("favoriteEmojis", async (emojis) => {
       const emojis1 = emojis.emojis;
       let tmp = emojis1;

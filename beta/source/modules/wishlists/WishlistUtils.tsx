@@ -1,19 +1,19 @@
-// Module ID: 13407
-// Function ID: 13408
+// Module ID: 12659
+// Function ID: 12660
 // Name: WishlistUtils
-// Dependencies: [32, 5760, 9092, 9093, 9094, 1074, 1374, 1115, 7508, 2]
-// Exports: buildReorderedOwnedItemsLastWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
+// Dependencies: [32, 5823, 8242, 8243, 8244, 1074, 1374, 1115, 6652, 2]
+// Exports: buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 13407 (WishlistUtils)
+// Module 12659 (WishlistUtils)
 import util from "util" /* 1115 */;
-import StorefrontUtils from "StorefrontUtils" /* 7508 */;
+import StorefrontUtils from "StorefrontUtils" /* 6652 */;
 import _slicedToArray from "module_32" /* 32 */;
-import SKURecord from "SKURecord" /* 5760 */;
+import SKURecord from "SKURecord" /* 5823 */;
 
 require = fn;
-let closure_4 = fn(9092).isCollectiblesWishlistItemRecord;
-let closure_5 = fn(9093).isPremiumWishlistItemRecord;
-const isSKUWishlistItemRecord = fn(9094).isSKUWishlistItemRecord;
+let closure_4 = fn(8242).isCollectiblesWishlistItemRecord;
+let closure_5 = fn(8243).isPremiumWishlistItemRecord;
+const isSKUWishlistItemRecord = fn(8244).isSKUWishlistItemRecord;
 const SKUProductLines = fn(1074).SKUProductLines;
 const PremiumSubscriptionSKUs = fn(1374).PremiumSubscriptionSKUs;
 const size = fn(2);
@@ -89,24 +89,4 @@ export const buildReorderedWishlistData = function buildReorderedWishlistData(se
   const items = [...arg1];
   items.splice(arg3, 0, _slicedToArray(items.splice(arg2, 1), 1)[0]);
   return { newWishlistData: set.set("items", items), previousSkuId: skuId2, nextSkuId: skuId3 };
-};
-export const buildReorderedOwnedItemsLastWishlistItems = function buildReorderedOwnedItemsLastWishlistItems(items, fn) {
-  let tmp = items;
-  items = [];
-  const items1 = [];
-  for (const item10009 of arg0) {
-    let tmp2 = item10009;
-    let arr3 = items;
-    if (arg1(item10009)) {
-      arr3 = items1;
-    }
-    let arr = arr3.push(tmp2);
-    continue;
-  }
-  if (0 !== items1.length) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(items1, HermesBuiltin.arraySpread(items, 0));
-    tmp = items2;
-  }
-  return tmp;
 };

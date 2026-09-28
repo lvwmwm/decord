@@ -1,15 +1,15 @@
-// Module ID: 7861
-// Function ID: 7862
+// Module ID: 7007
+// Function ID: 7008
 // Name: utils/CollectiblesUtils
-// Dependencies: [4835, 4843, 7862, 7667, 4470, 2]
+// Dependencies: [4883, 4891, 7008, 6813, 4512, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo
 
-// Module 7861 (utils/CollectiblesUtils)
-import DateUtils from "DateUtils" /* 4470 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4835 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7667 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7862 */;
+// Module 7007 (utils/CollectiblesUtils)
+import DateUtils from "DateUtils" /* 4512 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4883 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6813 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7008 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationStreamPresets = StreamSettingsConstants.ApplicationStreamPresets;
@@ -58,7 +58,7 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
       obj.payment_gateway = noCache.paymentGateway;
     }
     if (noCache.variantsReturnStyle === ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = tmp2(7862).ShopVariantsReturnStyle.VARIANTS_GROUP;
+      obj.variants_return_style = tmp2(7008).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;

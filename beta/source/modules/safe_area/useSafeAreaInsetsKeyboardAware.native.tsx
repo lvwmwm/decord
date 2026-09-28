@@ -1,17 +1,17 @@
-// Module ID: 7258
-// Function ID: 7259
+// Module ID: 6402
+// Function ID: 6403
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1480, 5829, 5830, 1612, 1481, 1364, 1878, 4656, 1610, 5828, 2]
+// Dependencies: [32, 19, 1481, 5892, 5893, 1613, 1482, 1364, 1879, 4703, 1611, 5891, 2]
 // Exports: default
 
-// Module 7258 (useSafeAreaInsetsKeyboardAware)
+// Module 6402 (useSafeAreaInsetsKeyboardAware)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1878 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 5829 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5830 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1879 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 5892 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5893 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1480 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1481 */;
 
 require = fn;
 const size = fn(2);
@@ -58,17 +58,17 @@ export default function useSafeAreaInsetsKeyboardAware() {
     tmpResult = PlatformUtils;
     let systemKeyboardHeight = useSystemKeyboardHeight.getSystemKeyboardHeight({ appEntryKey });
     if (0 === systemKeyboardHeight) {
-      const keyboardType = tmp(4656).getKeyboardType(tmp5);
+      const keyboardType = tmp(4703).getKeyboardType(tmp5);
       let num3 = 0;
-      if (keyboardType !== tmp(1610).KeyboardTypes.SYSTEM) {
+      if (keyboardType !== tmp(1611).KeyboardTypes.SYSTEM) {
         num3 = 0;
         if (flag3) {
-          num3 = tmp(5828).getCustomKeyboardHeight(tmp5);
-          const tmpResult6 = tmp(5828);
+          num3 = tmp(5891).getCustomKeyboardHeight(tmp5);
+          const tmpResult6 = tmp(5891);
         }
       }
       systemKeyboardHeight = num3;
-      const tmpResult5 = tmp(4656);
+      const tmpResult5 = tmp(4703);
     }
     return systemKeyboardHeight;
   }, items);

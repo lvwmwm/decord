@@ -1,15 +1,15 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 12200
+// Function ID: 12201
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1372, 12959, 21, 4788, 5931, 576, 1484, 4784, 1115, 7321, 7322, 12958, 563, 7315, 38, 7355, 7270, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 12174, 21, 4836, 5994, 576, 1485, 4832, 1115, 6465, 6466, 12173, 563, 6459, 38, 6499, 6414, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 12985 (AddPhoneScreens)
+// Module 12200 (AddPhoneScreens)
 import nativeDefault from "native" /* 576 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7315 */;
-import AddPhoneDefault from "AddPhone" /* 7321 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7322 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12958 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6459 */;
+import AddPhoneDefault from "AddPhone" /* 6465 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 6466 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12173 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -20,13 +20,13 @@ const PhoneActionCreatorsDefault = PhoneActionCreators;
 
 require = fn;
 const View = fn(17).View;
-const useContactSyncModalStore = fn(12959).useContactSyncModalStore;
+const useContactSyncModalStore = fn(12174).useContactSyncModalStore;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { paddingTop: fn(5931).NAV_BAR_HEIGHT + 32 }, redesignContainer: null, header: null, title: null, subtitle: null };
-let obj3 = { paddingTop: fn(5931).NAV_BAR_HEIGHT + 32 };
-obj2.redesignContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: fn(5931).NAV_BAR_HEIGHT + 32 };
+const createStyles = fn(4836);
+let obj2 = { container: { paddingTop: fn(5994).NAV_BAR_HEIGHT + 32 }, redesignContainer: null, header: null, title: null, subtitle: null };
+let obj3 = { paddingTop: fn(5994).NAV_BAR_HEIGHT + 32 };
+obj2.redesignContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: fn(5994).NAV_BAR_HEIGHT + 32 };
 obj2.header = { alignItems: "center" };
 obj2.title = { textAlign: "center" };
 obj2.subtitle = { marginTop: 8, lineHeight: 18, textAlign: "center" };

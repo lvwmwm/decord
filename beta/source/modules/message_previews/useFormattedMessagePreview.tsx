@@ -1,18 +1,18 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 9553
+// Function ID: 9554
 // Name: useFormattedMessagePreview
-// Dependencies: [502, 4437, 1372, 1074, 1090, 504, 8271, 5020, 1115, 4938, 7576, 12, 8276, 8361, 2]
+// Dependencies: [502, 4479, 1372, 1074, 1090, 504, 7423, 5083, 1115, 4986, 6720, 12, 7428, 7514, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 10389 (useFormattedMessagePreview)
+// Module 9553 (useFormattedMessagePreview)
 import MessageTypes from "MessageTypes" /* 1090 */;
 import util from "util" /* 1115 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 5020 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7576 */;
-import useIsCallActiveDefault from "useIsCallActive" /* 8271 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8276 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 5083 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
+import useIsCallActiveDefault from "useIsCallActive" /* 7423 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7428 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -326,9 +326,9 @@ function formatMessagePreview(type, isBlocked) {
                 obj54.text = intl12.formatToPlainString(tmp4(1115).t.ro3RM0, obj55);
                 tmp21 = obj54;
               } else if (type.type === tmp4(1090).MessageTypes.VOICE_SESSION) {
-                const obj56 = { type: "text", text: tmp4(8361).getVoiceSessionMessageContent(type) };
+                const obj56 = { type: "text", text: tmp4(7514).getVoiceSessionMessageContent(type) };
                 tmp21 = obj56;
-                const tmp4Result = tmp4(8361);
+                const tmp4Result = tmp4(7514);
               }
             }
           }

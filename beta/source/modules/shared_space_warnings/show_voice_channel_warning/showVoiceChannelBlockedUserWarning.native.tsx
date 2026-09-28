@@ -1,18 +1,18 @@
-// Module ID: 14037
-// Function ID: 14038
+// Module ID: 13283
+// Function ID: 13284
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [1979, 14032, 14035, 1094, 4755, 14038, 1980, 1249, 2]
+// Dependencies: [1980, 13278, 13281, 1094, 4800, 13284, 1981, 1249, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 14037 (showVoiceChannelBlockedUserWarning)
+// Module 13283 (showVoiceChannelBlockedUserWarning)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import AppStateStore from "AppStateStore" /* 1980 */;
 
 require = fn;
-const SharedSpacesWarningStore = fn(14032);
+const SharedSpacesWarningStore = fn(13278);
 ({ queueBlockWarning: closure_4, dequeueBlockWarning: hasOwnProperty } = SharedSpacesWarningStore);
-const constants = fn(14035).VoiceChannelWarningSurfaces;
+const constants = fn(13281).VoiceChannelWarningSurfaces;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx");
 
@@ -28,8 +28,8 @@ export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlock
     obj3.blocked_user_ids = items;
     obj3.warning_surface = constants.POST_JOIN_SHEET;
     obj2.impressionProperties = obj3;
-    obj.openLazy(tmp2(1980)(14038, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj2);
-    const tmp11 = tmp2(1980)(14038, dependencyMap.paths);
+    obj.openLazy(tmp2(1981)(13284, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj2);
+    const tmp11 = tmp2(1981)(13284, dependencyMap.paths);
   } else {
     React4();
   }

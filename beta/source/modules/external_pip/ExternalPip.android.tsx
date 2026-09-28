@@ -1,9 +1,9 @@
-// Module ID: 9729
-// Function ID: 9730
+// Module ID: 8886
+// Function ID: 8887
 // Name: ExternalPip
 // Dependencies: [17, 2]
 
-// Module 9729 (ExternalPip)
+// Module 8886 (ExternalPip)
 import get_ActivityIndicator from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,29 +1,29 @@
-// Module ID: 16431
-// Function ID: 16432
+// Module ID: 15721
+// Function ID: 15722
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 14000, 2041, 12247, 1372, 15569, 1074, 21, 4788, 504, 11, 1370, 12, 16430, 1241, 1101, 4941, 1115, 5271, 15570, 16424, 2]
+// Dependencies: [19, 17, 13250, 2045, 11447, 1372, 14841, 1074, 21, 4836, 504, 11, 1370, 12, 6729, 1241, 1101, 4989, 1115, 5335, 14842, 15715, 2]
 
-// Module 16431 (HappeningNowCardActiveChannel)
+// Module 15721 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import router_utils from "router_utils" /* 1101 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;
-import ActiveChannelsStore from "ActiveChannelsStore" /* 14000 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import TypingStore from "TypingStore" /* 12247 */;
+import ActiveChannelsStore from "ActiveChannelsStore" /* 13250 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import TypingStore from "TypingStore" /* 11447 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const MAX_STORED_MESSAGES = fn(14000).MAX_STORED_MESSAGES;
-let closure_10 = fn(15569).HappeningNowCardTrackingType;
+const MAX_STORED_MESSAGES = fn(13250).MAX_STORED_MESSAGES;
+let closure_10 = fn(14841).HappeningNowCardTrackingType;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Routes: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_15 = createStyles.createStyles({ content: { flexShrink: 1, marginLeft: 4, gap: 2 }, avatarsWrapper: { marginBottom: 2 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActiveChannel.tsx");
@@ -61,7 +61,7 @@ export default noop.memo((index) => {
     return obj.uniq(_modDef12.map(stateFromStoresArray, "userId")).filter(GlobalUtils.isNotNullish);
   }, items3);
   const obj3 = index(channelId[10]);
-  const ensureHydratedUsers = index(channelId[14]).useEnsureHydratedUsers(guildId, memo);
+  const ensureHydratedGuildUsers = index(channelId[14]).useEnsureHydratedGuildUsers(guildId, memo);
   const obj4 = index(channelId[14]);
   const items4 = [UserStore];
   const stateFromStoresArray1 = index(channelId[10]).useStateFromStoresArray(items4, () => {

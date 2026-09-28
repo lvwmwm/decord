@@ -1,12 +1,12 @@
-// Module ID: 13571
-// Function ID: 13572
+// Module ID: 12811
+// Function ID: 12812
 // Name: MessageActivityInviteCoverImageStore
-// Dependencies: [1438, 504, 573, 2]
+// Dependencies: [1439, 504, 573, 2]
 
-// Module 13571 (MessageActivityInviteCoverImageStore)
+// Module 12811 (MessageActivityInviteCoverImageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import privDefault from "priv" /* 1438 */;
+import privDefault from "priv" /* 1439 */;
 
 let closure_0 = new privDefault({ max: 500 });
 const Store = initializeDefault.Store;

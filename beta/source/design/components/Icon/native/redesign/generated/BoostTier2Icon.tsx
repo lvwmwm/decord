@@ -1,13 +1,13 @@
-// Module ID: 16560
-// Function ID: 16561
+// Module ID: 15850
+// Function ID: 15851
 // Name: BoostTier2Icon
-// Dependencies: [19, 21, 576, 4488, 16561, 2]
+// Dependencies: [19, 21, 576, 4530, 15851, 2]
 // Exports: BoostTier2Icon
 
-// Module 16560 (BoostTier2Icon)
+// Module 15850 (BoostTier2Icon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod16561 from "module_16561" /* 16561 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod15851 from "module_15851" /* 15851 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BoostTier2Icon = function BoostTier2Icon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16561, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15851, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

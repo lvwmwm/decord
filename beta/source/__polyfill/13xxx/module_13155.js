@@ -1,25 +1,9 @@
 // Module ID: 13155
 // Function ID: 13156
-// Dependencies: [13156, 13139, 13135]
+// Dependencies: [1121]
 
 // Module 13155
-import eventFromMessage from "eventFromMessage" /* 13139 */;
-import _mod13156 from "module_13156" /* 13156 */;
-import setupIntegration from "module_13135" /* 13135 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export const linkedErrorsIntegration = setupIntegration.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  closure_0 = obj.limit || 5;
-  closure_1 = obj.key || "cause";
-  return {
-    name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
-      const options = getOptions.getOptions();
-      const result = _mod13156.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
-    }
-  };
-});
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/light", width: 24, height: 23, scales: [2, 3], hash: "28792e38fe66a9bcb0dec80f42dff8d4", name: "tier_2_24px", type: "png" });

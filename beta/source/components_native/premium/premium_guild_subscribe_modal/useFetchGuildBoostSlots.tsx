@@ -1,15 +1,15 @@
-// Module ID: 13866
-// Function ID: 13867
+// Module ID: 13114
+// Function ID: 13115
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 4682, 1979, 504, 1094, 7693, 4685, 2]
+// Dependencies: [5, 32, 19, 4729, 1980, 504, 1094, 6839, 4732, 2]
 // Exports: default
 
-// Module 13866 (useFetchGuildBoostSlots)
+// Module 13114 (useFetchGuildBoostSlots)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4682 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4729 */;
+import AppStateStore from "AppStateStore" /* 1980 */;
 
 const require = fn;
 const size = fn(2);

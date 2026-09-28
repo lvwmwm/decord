@@ -1,19 +1,19 @@
-// Module ID: 9597
-// Function ID: 9598
+// Module ID: 8754
+// Function ID: 8755
 // Name: FramesManager
-// Dependencies: [9345, 9346, 1074, 4692, 7395, 9598, 1241, 573, 2]
+// Dependencies: [8499, 1074, 4739, 6539, 8755, 8501, 1241, 573, 2]
 
-// Module 9597 (FramesManager)
+// Module 8754 (FramesManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import FramesStore from "FramesStore" /* 9345 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
+import FramesStore from "FramesStore" /* 8499 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
-let require = fn;
-const EmbeddedSurfaceType = fn(9346).EmbeddedSurfaceType;
+require = fn;
 const Constants = fn(1074);
-({ AnalyticEvents: hasOwnProperty, RPCCloseCodes: metroRequire } = Constants);
-const TransportTypes = fn(4692).TransportTypes;
+({ AnalyticEvents: closure_4, RPCCloseCodes: hasOwnProperty } = Constants);
+const TransportTypes = fn(4739).TransportTypes;
 class FramesManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -24,14 +24,14 @@ class FramesManager extends tmp3 {
           },
       FRAME_LAUNCH(arg0) {
             ({ applicationId, analyticsContext } = arg0);
-            const result = applyArgumentsResult(9598).trackFrameSessionStart(applicationId, analyticsContext);
+            const result = applyArgumentsResult(8755).trackFrameSessionStart(applicationId, analyticsContext);
           },
       FRAME_LAUNCH_FAIL(arg0) {
             ({ applicationId, error, analyticsContext } = arg0);
-            const result = applyArgumentsResult(9598).trackFrameSessionStartFailed(applicationId, error, analyticsContext);
+            const result = applyArgumentsResult(8755).trackFrameSessionStartFailed(applicationId, error, analyticsContext);
           },
       FRAME_STOP(applicationId) {
-            applyArgumentsResult(9598).trackFrameSessionEnd(applicationId.applicationId);
+            applyArgumentsResult(8755).trackFrameSessionEnd(applicationId.applicationId);
           },
       VOICE_CHANNEL_SELECT(arg0) {
             const result = applyArgumentsResult.handleVoiceChannelSelect(arg0);
@@ -61,10 +61,10 @@ class FramesManager extends tmp3 {
       currentVoiceChannelId = currentVoiceChannelId.currentVoiceChannelId;
       if (null != currentVoiceChannelId) {
         if (currentVoiceChannelId !== currentVoiceChannelId.channelId) {
-          const obj = { type: EmbeddedSurfaceType.VOICE_CHANNEL, channelId: currentVoiceChannelId };
+          const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, channelId: currentVoiceChannelId };
           const framesForSurface = FramesStore.getFramesForSurface(obj);
-          for (const item10014 of framesForSurface) {
-            let leaveFrameResult = applyArgumentsResult.leaveFrame(item10014.id);
+          for (const item10018 of framesForSurface) {
+            let leaveFrameResult = applyArgumentsResult.leaveFrame(item10018.id);
             continue;
           }
         }

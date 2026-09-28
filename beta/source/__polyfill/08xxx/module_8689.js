@@ -1,28 +1,9 @@
 // Module ID: 8689
 // Function ID: 8690
-// Dependencies: [521, 518, 543, 616]
+// Dependencies: [1121]
 
 // Module 8689
-import _mod521 from "module_521" /* 521 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default function isIterateeCall(arg0, num, arg2) {
-  if (_mod521(arg2)) {
-    if (typeof num === "number") {
-      let tmp5 = tmp(518)(arg2) && tmp(543)(num, arg2.length);
-      const tmp4 = tmp(518)(arg2) && tmp(543)(num, arg2.length);
-    } else {
-      tmp5 = typeof num === "string";
-      if (typeof num === "string") {
-        tmp5 = num in arg2;
-      }
-    }
-    let tmp6 = tmp5;
-    if (tmp6) {
-      tmp6 = tmp(616)(arg2[num], arg0);
-    }
-    return tmp6;
-  } else {
-    return false;
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 188.5, height: 121, scales: [2, 3], hash: "a1c720960ae9ac46d7d61ad850607231", name: "img_tier_0_clouds_bigger", type: "png" });

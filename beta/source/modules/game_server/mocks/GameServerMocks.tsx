@@ -1,11 +1,11 @@
-// Module ID: 12767
-// Function ID: 12768
+// Module ID: 11980
+// Function ID: 11981
 // Name: GameServerMocks
-// Dependencies: [4679, 12768, 2]
+// Dependencies: [4726, 11981, 2]
 
-// Module 12767 (GameServerMocks)
-import GameServerProviderType from "GameServerProviderType" /* 4679 */;
-import GameServerStatus from "GameServerStatus" /* 12768 */;
+// Module 11980 (GameServerMocks)
+import GameServerProviderType from "GameServerProviderType" /* 4726 */;
+import GameServerStatus from "GameServerStatus" /* 11981 */;
 import size from "module_2" /* 2 */;
 
 const obj = { id: "1", name: "GameServer #1", cost: 3, specifications: null };

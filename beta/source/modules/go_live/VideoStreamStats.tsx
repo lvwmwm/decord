@@ -1,11 +1,11 @@
-// Module ID: 4841
-// Function ID: 4842
+// Module ID: 4889
+// Function ID: 4890
 // Name: VideoStreamStats
-// Dependencies: [4834, 1074, 2036, 4817, 2]
+// Dependencies: [4882, 1074, 2040, 4865, 2]
 
-// Module 4841 (VideoStreamStats)
-import TimeUtils from "TimeUtils" /* 4817 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4834 */;
+// Module 4889 (VideoStreamStats)
+import TimeUtils from "TimeUtils" /* 4865 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4882 */;
 
 require = fn;
 const StreamLayouts = fn(1074).StreamLayouts;

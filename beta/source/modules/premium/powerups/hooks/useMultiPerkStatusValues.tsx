@@ -1,13 +1,13 @@
-// Module ID: 12856
-// Function ID: 12857
+// Module ID: 12069
+// Function ID: 12070
 // Name: useMultiPerkStatusValues
-// Dependencies: [4677, 12783, 1115, 2514, 2]
+// Dependencies: [4724, 11996, 1115, 2519, 2]
 // Exports: default
 
-// Module 12856 (useMultiPerkStatusValues)
-import _modDef2514 from "module_2514" /* 2514 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4677 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12783 */;
+// Module 12069 (useMultiPerkStatusValues)
+import _modDef2519 from "module_2519" /* 2519 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4724 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 11996 */;
 import size from "module_2" /* 2 */;
 
 const util = tmp(1115);
@@ -44,7 +44,7 @@ export default function useMultiPerkStatusValues(powerups) {
     } else if (someResult) {
       const obj3 = { type: "active", statusText: null };
       const intl = util.intl;
-      obj3.statusText = intl.string(_modDef2514.FFLkmx);
+      obj3.statusText = intl.string(_modDef2519.FFLkmx);
       tmp4 = obj3;
     }
     const reduced1 = powerupsActiveStatuses.reduce((acc, type) => {

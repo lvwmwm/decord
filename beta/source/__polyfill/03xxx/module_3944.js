@@ -1,56 +1,46 @@
 // Module ID: 3944
 // Function ID: 3945
-// Dependencies: [3879]
-// Exports: default
+// Dependencies: [3945, 3946, 3947, 3948, 3949]
 
 // Module 3944
-import module_3879_mod from "module_3879" /* 3879 */;
+import module_3945 from "module_3945" /* 3945 */;
+import module_3946 from "module_3946" /* 3946 */;
+import module_3947 from "module_3947" /* 3947 */;
+import date_mod from "module_3948" /* 3948 */;
+import date_mod from "module_3949" /* 3949 */;
 
-let module_3879 = module_3879_mod;
-if (!module_3879) {
-  const obj = { default: module_3879 };
+if (!module_3945) {
+  const obj = { default: module_3945 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3879;
+  tmp3 = module_3945;
 }
-module_3879 = tmp3;
-const dependencyMap = ["domenica", "luned\u00EC", "marted\u00EC", "mercoled\u00EC", "gioved\u00EC", "venerd\u00EC", "sabato"];
-let closure_2 = {
-  lastWeek(getUTCDay, arg1, arg2) {
-    const uTCDay = getUTCDay.getUTCDay();
-    if (module_3879.default(getUTCDay, arg1, arg2)) {
-      let str = `${"'" + closure_1[tmp]} alle' p`;
-    } else {
-      str = "'domenica scorsa alle' p";
-      if (0 !== uTCDay) {
-        str = `${"'" + closure_1[tmp]} scorso alle' p`;
-      }
-    }
-    return str;
-  },
-  yesterday: "'ieri alle' p",
-  today: "'oggi alle' p",
-  tomorrow: "'domani alle' p",
-  nextWeek(getUTCDay, arg1, arg2) {
-    const uTCDay = getUTCDay.getUTCDay();
-    if (module_3879.default(getUTCDay, arg1, arg2)) {
-      let str = `${"'" + closure_1[tmp]} alle' p`;
-    } else {
-      str = "'domenica prossima alle' p";
-      if (0 !== uTCDay) {
-        str = `${"'" + closure_1[tmp]} prossimo alle' p`;
-      }
-    }
-    return str;
-  },
-  other: "P"
-};
+if (!module_3946) {
+  const obj2 = { default: module_3946 };
+  let tmp5 = obj2;
+} else {
+  tmp5 = module_3946;
+}
+if (!module_3947) {
+  const obj3 = { default: module_3947 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_3947;
+}
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
+  let tmp9 = obj4;
+} else {
+  tmp9 = date;
+}
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  let tmpResult = tmp;
-  if (typeof closure_2[arg0] === "function") {
-    tmpResult = tmp(arg1, arg2, arg3);
-  }
-  return tmpResult;
-};
+export default { code: "el", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

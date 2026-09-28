@@ -237,7 +237,7 @@ const items = [
         }
       };
       if (obj3.shouldPressibilityUseW3CPointerEventsForHover()) {
-        const obj4 = { onPointerEnter: "y", onPointerLeave: "w" };
+        const obj4 = { onPointerEnter: "st", onPointerLeave: "channel" };
         const _config = this._config;
         const onHoverIn = _config.onHoverIn;
         const onHoverOut = _config.onHoverOut;

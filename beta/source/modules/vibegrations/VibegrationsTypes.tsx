@@ -1,19 +1,19 @@
-// Module ID: 5307
-// Function ID: 5308
+// Module ID: 5371
+// Function ID: 5372
 // Name: VibegrationsTypes
 // Dependencies: [2]
 // Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isProjectShared, isVibegrationsAttachmentWithinLimit, projectSupportsCollaboratorRoles, projectSupportsVisibility, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit
 
-// Module 5307 (VibegrationsTypes)
+// Module 5371 (VibegrationsTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ PUBLIC: 1, SHAREABLE: 2 });
 const set = new Set(["image/png", "image/jpeg", "image/gif", "image/webp"]);
 let c2 = 5242880;
 let c3 = 52428800;
-const items = [{ id: "claude-fable-5-1", label: "Claude Fable 5.1", provider: "anthropic" }, { id: "claude-opus-5", label: "Claude Opus 5", provider: "anthropic" }, { id: "claude-sonnet-5", label: "Claude Sonnet 5", provider: "anthropic" }, { id: "claude-haiku-4-5", label: "Claude Haiku 4.5", provider: "anthropic" }, { id: "gpt-5.6-sol", label: "GPT-5.6 Sol", provider: "openai", supports_fast: true }, { id: "gpt-5.6-terra", label: "GPT-5.6 Terra", provider: "openai", supports_fast: true }, { id: "gpt-5.6-luna", label: "GPT-5.6 Luna", provider: "openai", supports_fast: true }, { id: "gpt-6-astra", label: "GPT-6 Astra", provider: "openai", supports_fast: true }];
+const items = [{ id: "claude-fable-5-1", label: "Claude Fable 5.1", provider: "anthropic" }, { id: "claude-opus-5-5", label: "Claude Opus 5.5", provider: "anthropic" }, { id: "claude-sonnet-5", label: "Claude Sonnet 5", provider: "anthropic" }, { id: "claude-haiku-4-5", label: "Claude Haiku 4.5", provider: "anthropic" }, { id: "gpt-6-astra", label: "GPT-6 Astra", provider: "openai", supports_fast: true }, { id: "gpt-6-sol", label: "GPT-6 Sol", provider: "openai", supports_fast: true }, { id: "gpt-6-luna", label: "GPT-6 Luna", provider: "openai", supports_fast: true }, { id: "xai/grok-4.7", label: "Grok 4.7", provider: "xai" }];
 let obj = { main: items, subagent: items, thinking: ["low", "medium", "high", "xhigh", "max"] };
-const items1 = [{ id: "workers-ai/@cf/moonshotai/kimi-k2.6", label: "Kimi K2.6", provider: "workers-ai" }, { id: "workers-ai/@cf/zai-org/glm-5.2", label: "GLM 5.2", provider: "workers-ai" }, { id: "workers-ai/@cf/nvidia/nemotron-3-120b-a12b", label: "Nemotron 3 Super 120B", provider: "workers-ai" }, { id: "moonshotai/kimi-k3", label: "Kimi K3", provider: "moonshotai" }, { id: "xai/grok-4.6", label: "Grok 4.6", provider: "xai" }, { id: "workers-ai/@cf/zai-org/glm-4.7-flash", label: "GLM 4.7 Flash", provider: "workers-ai" }];
+const items1 = [{ id: "deepseek/deepseek-flash", label: "DeepSeek V4.1 Flash", provider: "deepseek" }, { id: "moonshotai/kimi-k3", label: "Kimi K3", provider: "moonshotai" }];
 const result = size.fileFinishedImporting("modules/vibegrations/VibegrationsTypes.tsx");
 
 export const UNNAMED_PROJECT_NAME = "Untitled App";
@@ -70,14 +70,18 @@ export const VIBEGRATIONS_VIEWABLE_IMAGE_TYPES = set;
 export const VIBEGRATIONS_MAX_IMAGE_ATTACHMENT_BYTES = 5242880;
 export const VIBEGRATIONS_MAX_ATTACHMENT_BYTES = 52428800;
 export const VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = 10;
+export const VIBEGRATIONS_STAGED_ATTACHMENT_TTL_MS = 3600000;
 export const vibegrationsAttachmentLimit = function vibegrationsAttachmentLimit(contentType) {
   return set.has(contentType) ? c2 : c3;
 };
 export const isVibegrationsAttachmentWithinLimit = function isVibegrationsAttachmentWithinLimit(size, contentType) {
   return size <= (set.has(contentType) ? c2 : c3);
 };
-export const formatVibegrationsAttachmentLimit = function formatVibegrationsAttachmentLimit(tmpResult2) {
-  return "" + Math.round(tmpResult2 / 1048576) + " MB";
+export const formatVibegrationsAttachmentLimit = function formatVibegrationsAttachmentLimit(tmp6Result2) {
+  return "" + Math.round(tmp6Result2 / 1048576) + " MB";
 };
+export const VIBEGRATIONS_MODEL_TIERS = ["simple", "balanced", "complex"];
 export const VIBEGRATIONS_FALLBACK_MODEL_CHOICES = obj;
 export const VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES = { main: items1, subagent: items1, thinking: obj.thinking };
+export const VIBEGRATIONS_DEFAULT_TIER_SETTINGS = { tier: "balanced", provider: "openai" };
+export const VIBEGRATIONS_LANDING_TIER_SEATS = { simple: { model: "gpt-6-luna", thinking: "high" }, balanced: { model: "gpt-6-sol", thinking: "high" }, complex: { model: "gpt-6-astra", thinking: "high" } };

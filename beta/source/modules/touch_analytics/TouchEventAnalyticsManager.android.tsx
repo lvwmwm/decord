@@ -1,13 +1,13 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 14109
+// Function ID: 14110
 // Name: TouchEventAnalyticsManager
-// Dependencies: [1372, 1984, 14860, 1982, 2]
+// Dependencies: [1372, 1985, 14110, 1983, 2]
 
-// Module 14859 (TouchEventAnalyticsManager)
-import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1984 */;
-import NativeTouchEventAnalyticsModuleDefault from "NativeTouchEventAnalyticsModule" /* 14860 */;
+// Module 14109 (TouchEventAnalyticsManager)
+import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1985 */;
+import NativeTouchEventAnalyticsModuleDefault from "NativeTouchEventAnalyticsModule" /* 14110 */;
 import UserStore from "UserStore" /* 1372 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+import LifecycleManager from "LifecycleManager" /* 1983 */;
 
 require = fn;
 function updateEnabledState() {

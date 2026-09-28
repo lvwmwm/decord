@@ -1,13 +1,13 @@
-// Module ID: 9634
-// Function ID: 9635
+// Module ID: 8791
+// Function ID: 8792
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2002, 5015, 1074, 9564, 7440, 9350, 4968, 4654, 9351, 2]
+// Dependencies: [5, 2003, 5063, 1074, 8721, 6584, 8505, 5016, 4701, 8506, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 9634 (installApplicationOnDemandIfNeeded)
+// Module 8791 (installApplicationOnDemandIfNeeded)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import ApplicationStore from "ApplicationStore" /* 5015 */;
+import ApplicationRecord from "ApplicationRecord" /* 2003 */;
+import ApplicationStore from "ApplicationStore" /* 5063 */;
 
 const require = fn;
 let closure_6 = async function _installApplicationOnDemandIfNeeded(arg0, value) {
@@ -48,7 +48,7 @@ let closure_6 = async function _installApplicationOnDemandIfNeeded(arg0, value) 
           closure_129_7 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -108,9 +108,9 @@ let closure_6 = async function _installApplicationOnDemandIfNeeded(arg0, value) 
         }
         const promise = new Promise((arg0) => {
           const clientId = arg0;
-          closure_1_0(4654).dismissKeyboard();
-          let obj = closure_1_0(4654);
-          closure_1_0(9351).openOAuth2Modal({
+          closure_1_0(4701).dismissKeyboard();
+          let obj = closure_1_0(4701);
+          closure_1_0(8506).openOAuth2Modal({
             clientId,
             integrationType,
             scopes,

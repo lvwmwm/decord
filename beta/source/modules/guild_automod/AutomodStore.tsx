@@ -1,12 +1,12 @@
-// Module ID: 17945
-// Function ID: 17946
+// Module ID: 17306
+// Function ID: 17307
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 12146, 1074, 1243, 17946, 1248, 12151, 4688, 4411, 2]
+// Dependencies: [32, 5, 19, 11341, 1074, 1243, 17307, 1248, 11346, 4735, 4452, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRules, useSyncAutomodRulesEffect
 
-// Module 17945 (AutomodStore)
-import _mod4411 from "module_4411" /* 4411 */;
-import SystemRulesUtils from "SystemRulesUtils" /* 17946 */;
+// Module 17306 (AutomodStore)
+import _mod4452 from "module_4452" /* 4452 */;
+import SystemRulesUtils from "SystemRulesUtils" /* 17307 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ import noop from "module_19" /* 19 */;
 const require = globalThis.__r;
 
 require = fn;
-const AutomodTriggerType = fn(12146).AutomodTriggerType;
+const AutomodTriggerType = fn(11341).AutomodTriggerType;
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 let closure_7 = {};
 const identity = fn(1243);
@@ -232,7 +232,7 @@ export const useSyncAutomodRules = function useSyncAutomodRules(arg0) {
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, _mod4411.shallow), 2);
+  }, _mod4452.shallow), 2);
   const first = tmp2[0];
   closure_3 = tmp4;
   const items = [tmp[0], ];
@@ -312,7 +312,7 @@ export const useSyncAutomodRulesEffect = function useSyncAutomodRulesEffect(arg0
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, require("module_4411").shallow), 2);
+  }, require("module_4452").shallow), 2);
   first = tmp2[0];
   asyncGeneratorStep = tmp4;
   let items = [tmp[0], ];
@@ -449,5 +449,5 @@ export const useAutomodRulesList = function useAutomodRulesList(arg0) {
       obj = {};
     }
     return { rulesByTriggerType: obj, updateRule: updateRule.updateRule, removeRule: updateRule.removeRule };
-  }, require("module_4411").shallow);
+  }, require("module_4452").shallow);
 };

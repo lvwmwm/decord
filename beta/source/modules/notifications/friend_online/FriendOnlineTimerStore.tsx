@@ -1,9 +1,9 @@
-// Module ID: 18272
-// Function ID: 18273
+// Module ID: 17637
+// Function ID: 17638
 // Name: FriendOnlineTimerStore
 // Dependencies: [1091, 504, 573, 2]
 
-// Module 18272 (FriendOnlineTimerStore)
+// Module 17637 (FriendOnlineTimerStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;

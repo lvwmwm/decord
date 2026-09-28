@@ -1,10 +1,10 @@
-// Module ID: 14013
-// Function ID: 14014
+// Module ID: 13259
+// Function ID: 13260
 // Name: GameCommunityUpsellExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 14013 (GameCommunityUpsellExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13259 (GameCommunityUpsellExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-game-community-add-server-entry", kind: "user", defaultConfig: { enabled: false, cardAction: "join" }, variations: null };

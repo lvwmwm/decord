@@ -1,12 +1,12 @@
-// Module ID: 15956
-// Function ID: 15957
+// Module ID: 15230
+// Function ID: 15231
 // Name: MfaScreenUtils
-// Dependencies: [4788, 5931, 576, 2]
+// Dependencies: [4836, 5994, 576, 2]
 
-// Module 15956 (MfaScreenUtils)
+// Module 15230 (MfaScreenUtils)
 import nativeDefault from "native" /* 576 */;
-import NavigatorConstants from "NavigatorConstants" /* 5931 */;
-import createStyles from "createStyles" /* 4788 */;
+import NavigatorConstants from "NavigatorConstants" /* 5994 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 let obj = { useScreenStyles: null };

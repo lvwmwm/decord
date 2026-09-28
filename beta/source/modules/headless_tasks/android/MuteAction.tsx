@@ -1,14 +1,14 @@
-// Module ID: 18393
-// Function ID: 18394
+// Module ID: 17759
+// Function ID: 17760
 // Name: MuteAction
-// Dependencies: [1084, 18391, 4380, 7396, 7391, 2]
+// Dependencies: [1084, 17757, 4421, 6540, 6535, 2]
 
-// Module 18393 (MuteAction)
+// Module 17759 (MuteAction)
 import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import _modDef4380 from "module_4380" /* 4380 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 18391 */;
+import _modDef4421 from "module_4421" /* 4421 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 17757 */;
 import size from "module_2" /* 2 */;
 
 const MuteUntilSeconds = UserSettingsConstants.MuteUntilSeconds;
@@ -25,12 +25,14 @@ export default (arg0) => {
         if (HOURS_1 == null) {
           HOURS_1 = MuteUntilSeconds.HOURS_1;
         }
-        const obj = _modDef4380();
-        toISOStringResult = _modDef4380().add(HOURS_1, "second").toISOString();
-        const addResult = _modDef4380().add(HOURS_1, "second");
+        const obj = _modDef4421();
+        toISOStringResult = _modDef4421().add(HOURS_1, "second").toISOString();
+        const addResult = _modDef4421().add(HOURS_1, "second");
       }
-      const obj2 = { muted: true, mute_config: { selected_time_window: MuteUntilSeconds.HOURS_1, end_time: toISOStringResult } };
-      const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(tmp.guildId, tmp.channelId, obj2, NotificationSettingsUtils.NotificationLabels.Muted);
+      const obj2 = { guildId: closure_0.guildId, channelId: closure_0.channelId, settings: null, label: NotificationSettingsUtils.NotificationLabels.Muted };
+      const obj4 = { muted: true, mute_config: { selected_time_window: MuteUntilSeconds.HOURS_1, end_time: toISOStringResult } };
+      obj2.settings = obj4;
+      const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(obj2);
       closure_0(true);
     });
   });

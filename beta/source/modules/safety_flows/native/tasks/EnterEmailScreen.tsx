@@ -1,13 +1,13 @@
-// Module ID: 18335
-// Function ID: 18336
+// Module ID: 17700
+// Function ID: 17701
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 1484, 18336, 1115, 2776, 18327, 5216, 6880, 2]
+// Dependencies: [32, 19, 21, 1485, 17701, 1115, 2781, 17692, 5279, 6024, 2]
 // Exports: default
 
-// Module 18335 (EnterEmailScreen)
-import _modDef2776 from "module_2776" /* 2776 */;
-import types from "types" /* 18327 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18336 */;
+// Module 17700 (EnterEmailScreen)
+import _modDef2781 from "module_2781" /* 2781 */;
+import types from "types" /* 17692 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 17701 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -25,9 +25,9 @@ export default function EnterEmailScreen() {
   const obj2 = { title: null, action: null, onAction: null, children: null };
   const tmp = _slicedToArray(noop.useState(""), 2);
   const intl = require("util").intl;
-  obj2.title = intl.string(_modDef2776.bFbsV6);
+  obj2.title = intl.string(_modDef2781.bFbsV6);
   const intl2 = require("util").intl;
-  obj2.action = intl2.string(_modDef2776.RRBNpv);
+  obj2.action = intl2.string(_modDef2781.RRBNpv);
   obj2.onAction = function onAction() {
     closure_0.push(types.SafetyFlowScreens.VERIFY_EMAIL);
   };

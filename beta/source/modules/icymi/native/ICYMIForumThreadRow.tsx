@@ -1,18 +1,18 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 16158
+// Function ID: 16159
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 2041, 2063, 21, 16795, 576, 504, 5769, 8654, 16834, 11206, 8653, 4941, 16836, 1115, 11, 5371, 4784, 4778, 16840, 16842, 2]
+// Dependencies: [19, 17, 2045, 2067, 21, 16091, 576, 504, 5832, 7799, 16130, 10374, 7798, 4989, 16132, 1115, 11, 5435, 4832, 4823, 16136, 16138, 2]
 // Exports: default
 
-// Module 16862 (ICYMIForumThreadRow)
+// Module 16158 (ICYMIForumThreadRow)
 import nativeDefault from "native" /* 576 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5769 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8654 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11206 */;
-import ICYMIShared from "ICYMIShared" /* 16834 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7799 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
+import ICYMIShared from "ICYMIShared" /* 16130 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 class ICYMIForumThreadRow {
@@ -165,7 +165,7 @@ class ICYMIForumThreadRow {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createICYMIStyles = fn(16795);
+const createICYMIStyles = fn(16091);
 const React7 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
   const obj = { pressable: { flex: 1, paddingLeft: marginHorizontal.inset }, container: { marginHorizontal: marginHorizontal.margin }, subtitle: { marginTop: nativeDefault.space.PX_8, marginBottom: marginHorizontal.margin }, footer: { justifyContent: "flex-end", paddingLeft: marginHorizontal.inset, marginTop: marginHorizontal.margin, gap: marginHorizontal.margin }, threadAsComments: { marginHorizontal: marginHorizontal.margin }, ICYMICardInteractionRow: { marginHorizontal: marginHorizontal.margin, marginBottom: marginHorizontal.margin } };
   return obj;

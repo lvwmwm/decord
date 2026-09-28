@@ -1,15 +1,15 @@
-// Module ID: 14773
-// Function ID: 14774
+// Module ID: 14023
+// Function ID: 14024
 // Name: validateEmbeddedAppFrame
-// Dependencies: [9345, 14774, 4692, 1074, 9346, 9618, 9167, 9613, 2]
+// Dependencies: [8499, 14024, 4739, 1074, 8500, 8501, 8775, 8321, 8770, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14773 (validateEmbeddedAppFrame)
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9167 */;
-import RPCErrorDefault from "RPCError" /* 9613 */;
-import RPCHelpers from "RPCHelpers" /* 9618 */;
-import FramesStore from "FramesStore" /* 9345 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14774 */;
+// Module 14023 (validateEmbeddedAppFrame)
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
+import RPCErrorDefault from "RPCError" /* 8770 */;
+import RPCHelpers from "RPCHelpers" /* 8775 */;
+import FramesStore from "FramesStore" /* 8499 */;
+import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14024 */;
 
 require = fn;
 function validateEmbeddedAppFrame(transport) {
@@ -21,15 +21,15 @@ function validateEmbeddedAppFrame(transport) {
       const tmp31 = new RPCErrorDefault(obj4, "command requires an embedded app frame");
       throw tmp31;
     } else {
-      const tmp35 = React6(FramesStore.getFrameByIframeId(transport.source.iframeId));
+      const tmp35 = asLaunched(FramesStore.getFrameByIframeId(transport.source.iframeId));
       let tmp13 = null;
       if (null != tmp35) {
         const type = tmp35.surface.type;
-        if (constants3.APP_CHANNEL !== type) {
-          if (tmp12.VOICE_CHANNEL !== type) {
-            if (tmp12.MAIN === type) {
+        if (tmp(8501).EmbeddedSurfaceType.APP_CHANNEL !== type) {
+          if (tmp(8501).EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
+            if (tmp(8501).EmbeddedSurfaceType.MAIN === type) {
               if (tmp35.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
-                let obj5 = { channelId: "y", guildId: "w" };
+                let obj5 = { channelId: "st", guildId: "channel" };
               } else {
                 obj5 = null;
               }
@@ -55,16 +55,15 @@ function validateEmbeddedAppFrame(transport) {
     }
   } else {
     const obj14 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
-    const tmp9 = new RPCErrorDefault(obj14, "This application cannot access this API");
-    throw tmp9;
+    const tmp10 = new RPCErrorDefault(obj14, "This application cannot access this API");
+    throw tmp10;
   }
   obj3 = ApplicationFlagUtils;
 }
-const TransportTypes = fn(4692).TransportTypes;
+const TransportTypes = fn(4739).TransportTypes;
 const Constants = fn(1074);
 ({ ApplicationFlags: metroRequire, RPCErrors: closure_7 } = Constants);
-const FramesConstants = fn(9346);
-({ asLaunched: closure_8, EmbeddedSurfaceType: closure_9 } = FramesConstants);
+const asLaunched = fn(8500).asLaunched;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateEmbeddedAppFrame.tsx");
 

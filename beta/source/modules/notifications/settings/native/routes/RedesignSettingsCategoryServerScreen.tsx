@@ -1,12 +1,12 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 15544
+// Function ID: 15545
 // Name: RedesignSettingsCategoryServerScreen
-// Dependencies: [19, 21, 11754, 16247, 14992, 2]
+// Dependencies: [19, 21, 11006, 15537, 14247, 2]
 
-// Module 16254 (RedesignSettingsCategoryServerScreen)
-import SettingBuilders from "SettingBuilders" /* 11754 */;
-import SettingLayoutDefault from "SettingLayout" /* 14992 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16247 */;
+// Module 15544 (RedesignSettingsCategoryServerScreen)
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingLayoutDefault from "SettingLayout" /* 14247 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15537 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

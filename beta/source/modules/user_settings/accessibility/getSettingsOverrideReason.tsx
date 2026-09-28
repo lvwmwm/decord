@@ -1,12 +1,13 @@
-// Module ID: 15605
-// Function ID: 15606
+// Module ID: 14877
+// Function ID: 14878
 // Name: getSettingsOverrideReason
-// Dependencies: [2020, 1084, 1115, 504, 2]
-// Exports: default, useSettingsOverrideReason
+// Dependencies: [2022, 1084, 1115, 3909, 504, 2]
+// Exports: default, useIsSettingLockedByOverride, useSettingsOverrideReason
 
-// Module 15605 (getSettingsOverrideReason)
+// Module 14877 (getSettingsOverrideReason)
 import util from "util" /* 1115 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2020 */;
+import _modDef3909 from "module_3909" /* 3909 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2022 */;
 
 const require = globalThis.__r;
 
@@ -17,11 +18,14 @@ const result = size.fileFinishedImporting("modules/user_settings/accessibility/g
 
 export default function getSettingsOverrideReason(arg0) {
   if (constants.REDUCED_MOTION === arg0) {
-    const intl2 = util.intl;
-    return intl2.format(util.t["1dT9V4"], {});
+    const intl3 = util.intl;
+    return intl3.format(util.t["1dT9V4"], {});
   } else if (tmp.REDUCED_MOTION_STICKERS === arg0) {
+    const intl2 = util.intl;
+    return intl2.string(util.t["2ExvRu"]);
+  } else if (tmp.GAME_MODE === arg0) {
     const intl = util.intl;
-    return intl.string(util.t["2ExvRu"]);
+    return intl.string(_modDef3909.VGcdxP);
   }
 };
 export const useSettingsOverrideReason = function useSettingsOverrideReason(arg0) {
@@ -35,7 +39,15 @@ export const useSettingsOverrideReason = function useSettingsOverrideReason(arg0
     } else if (tmp2.REDUCED_MOTION_STICKERS === appliedOverrideReasonKey) {
       const intl = util.intl;
       formatResult = intl.string(util.t["2ExvRu"]);
+    } else if (tmp2.GAME_MODE === appliedOverrideReasonKey) {
+      const intl3 = util.intl;
+      formatResult = intl3.string(_modDef3909.VGcdxP);
     }
     return formatResult;
   });
+};
+export const useIsSettingLockedByOverride = function useIsSettingLockedByOverride(arg0) {
+  _require = arg0;
+  const items = [UserSettingsOverridesStore];
+  return require("initialize").useStateFromStores(items, () => UserSettingsOverridesStore.getAppliedOverrideReasonKey(closure_0) === constants.GAME_MODE);
 };

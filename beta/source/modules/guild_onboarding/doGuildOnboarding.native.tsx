@@ -1,23 +1,23 @@
-// Module ID: 7372
-// Function ID: 7373
+// Module ID: 6516
+// Function ID: 6517
 // Name: doGuildOnboarding
-// Dependencies: [5, 17, 4609, 7373, 7374, 1074, 7375, 4755, 4991, 5769, 7376, 1397, 1879, 7380, 7381, 7382, 7398, 1980, 1101, 2]
+// Dependencies: [5, 17, 4655, 6517, 6518, 1074, 6519, 4800, 5039, 5832, 6520, 1397, 1880, 6524, 6525, 6526, 6542, 1981, 1101, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 7372 (doGuildOnboarding)
+// Module 6516 (doGuildOnboarding)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1879 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import _mod7375 from "module_7375" /* 7375 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7382 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1880 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import _mod6519 from "module_6519" /* 6519 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6526 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7373 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6517 */;
 
 require = fn;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(_mod7375));
+  return JSON.parse(JSON.stringify(_mod6519));
 }
 let closure_13 = async function _doGuildOnboarding(arg0) {
   let guildId = arg0;
@@ -99,7 +99,7 @@ let closure_13 = async function _doGuildOnboarding(arg0) {
     await "HermesInternal";
     closure_3 = tmp2;
     guildId2 = guildId.guildId;
-    return "PX_16";
+    return "flex";
   })();
   iter.next();
   return iter;
@@ -220,7 +220,7 @@ function openAndWaitForOnboarding(guildId) {
       landingAnimation: dependencyMap[guildId],
       isFirstOpen: true
     };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(7398, dependencyMap.paths), {
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(6542, dependencyMap.paths), {
       guildId,
       backShouldLeaveGuild: true,
       onFinish() {
@@ -237,7 +237,7 @@ function openAndWaitForOnboarding(guildId) {
   });
 }
 const NativeModules = fn(17).NativeModules;
-let closure_7 = fn(7374).GUILD_ONBOARDING_MODAL_KEY;
+let closure_7 = fn(6518).GUILD_ONBOARDING_MODAL_KEY;
 const Constants = fn(1074);
 ({ GuildFeatures: closure_8, Routes: closure_9 } = Constants);
 let closure_11 = {};

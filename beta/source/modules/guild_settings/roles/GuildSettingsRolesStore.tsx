@@ -1,26 +1,26 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 17410
+// Function ID: 17411
 // Name: GuildSettingsRolesStore
-// Dependencies: [2056, 18050, 2100, 2099, 9888, 18044, 1074, 18051, 12699, 5247, 1370, 1086, 4432, 1092, 2102, 12, 504, 573, 2]
+// Dependencies: [2060, 17411, 2103, 2102, 9049, 17405, 1074, 17412, 11909, 5310, 1370, 1086, 4474, 1092, 2105, 12, 504, 573, 2]
 
-// Module 18049 (GuildSettingsRolesStore)
+// Module 17410 (GuildSettingsRolesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import PlainRecord from "PlainRecord" /* 2056 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2100 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2102 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5247 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12699 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 18044 */;
-import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 18050 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9888 */;
+import PlainRecord from "PlainRecord" /* 2060 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2103 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2105 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5310 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 11909 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 17405 */;
+import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 17411 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
 import Constants from "Constants" /* 1074 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18051 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 17412 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,15 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 15425
+// Function ID: 15426
 // Name: MobileNitroUpsellInShopFeedExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1436, 2]
 
-// Module 16135 (MobileNitroUpsellInShopFeedExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 15425 (MobileNitroUpsellInShopFeedExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
 
+const obj = { GET_NITRO: "getNitro", LEARN_MORE: "learnMore" };
+const obj2 = { kind: "user", name: "2026-09-mobile-nitro-upsell-in-shop-feed", defaultConfig: { enabled: false, buttonVariant: obj.GET_NITRO }, variations: { 0: { enabled: false, buttonVariant: obj.GET_NITRO }, 1: { enabled: true, buttonVariant: obj.GET_NITRO }, 2: { enabled: true, buttonVariant: obj.LEARN_MORE } } };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/MobileNitroUpsellInShopFeedExperiment.tsx");
 
-export default apex_ApexExperimentDefault({ kind: "user", name: "2026-09-mobile-nitro-upsell-in-shop-feed", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+export default apex_ApexExperimentDefault(obj2);
+export const NitroUpsellBannerButtonVariant = obj;

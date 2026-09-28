@@ -1,23 +1,23 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 15481
+// Function ID: 15482
 // Name: DataAndPrivacySetting
-// Dependencies: [19, 1074, 15136, 15139, 11754, 1115, 10078, 16193, 2]
+// Dependencies: [19, 1074, 14391, 14394, 11006, 1115, 9238, 15482, 2]
 
-// Module 16192 (DataAndPrivacySetting)
+// Module 15481 (DataAndPrivacySetting)
 import util from "util" /* 1115 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 15136 */;
-import RequestYourDataSetting from "RequestYourDataSetting" /* 15139 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 14391 */;
+import RequestYourDataSetting from "RequestYourDataSetting" /* 14394 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SettingBuilders = fn(11754);
+const SettingBuilders = fn(11006);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.OAuOHD);
   },
   parent: null,
-  IconComponent: fn(10078).ShieldLockIcon,
+  IconComponent: fn(9238).ShieldLockIcon,
   screen: {
     route: fn(1074).UserSettingsSections.DATA_AND_PRIVACY,
     getComponent() {

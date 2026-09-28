@@ -1,13 +1,13 @@
-// Module ID: 9776
-// Function ID: 9777
+// Module ID: 8937
+// Function ID: 8938
 // Name: ChannelCallModalManager
-// Dependencies: [1372, 4807, 1982, 573, 4995, 2]
+// Dependencies: [1372, 4855, 1983, 573, 5043, 2]
 
-// Module 9776 (ChannelCallModalManager)
+// Module 8937 (ChannelCallModalManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
+import LifecycleManager from "LifecycleManager" /* 1983 */;
 
 let require = fn;
 class ChannelCallModalManager extends tmp2 {

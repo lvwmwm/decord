@@ -1,13 +1,13 @@
-// Module ID: 15306
-// Function ID: 15307
+// Module ID: 14563
+// Function ID: 14564
 // Name: BountiesModalProgress
-// Dependencies: [32, 19, 17, 21, 4788, 576, 4524, 4789, 4792, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 4837, 4840, 2]
 // Exports: default
 
-// Module 15306 (BountiesModalProgress)
+// Module 14563 (BountiesModalProgress)
 import nativeDefault from "native" /* 576 */;
-import timing from "timing" /* 4789 */;
-import timingPresets from "timingPresets" /* 4792 */;
+import timing from "timing" /* 4837 */;
+import timingPresets from "timingPresets" /* 4840 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles(() => {
   const obj = { progressContainer: { height: 4 }, progressTrack: null, progressBar: null, progressBarGlowLayer: null };
   const obj2 = {};

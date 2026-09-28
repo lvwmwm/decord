@@ -1,25 +1,25 @@
-// Module ID: 13271
-// Function ID: 13272
+// Module ID: 12505
+// Function ID: 12506
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 4788, 576, 7427, 5216, 5941, 4784, 1115, 13272, 5218, 4755, 2]
+// Dependencies: [19, 21, 4836, 576, 6571, 5279, 6004, 4832, 1115, 12506, 5281, 4800, 2]
 // Exports: default
 
-// Module 13271 (BlockedDomainActionSheet)
+// Module 12505 (BlockedDomainActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import Stack_Stack from "Stack/Stack" /* 5216 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import native from "native" /* 5941 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
-import URLCallout from "URLCallout" /* 13272 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import Stack_Stack from "Stack/Stack" /* 5279 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6004 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
+import URLCallout from "URLCallout" /* 12506 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { padding: nativeDefault.space.PX_16 }, title: { textAlign: "center" }, warningMessage: { textAlign: "center" } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -30,7 +30,7 @@ export default function BlockedDomainActionSheet(url) {
   const obj = { startExpanded: true, children: null };
   const obj2 = { spacing: 16, justify: "center", align: "center", style: tmp.container, children: null };
   const obj3 = { spacing: 8, justify: "center", align: "center", children: null };
-  const items = [React3(native.TrafficConeSpotIllustration, {}), , ];
+  const items = [React3(TrafficConeSpotIllustration.TrafficConeSpotIllustration, {}), , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj4.children = intl.string(util.t["2B3wj8"]);

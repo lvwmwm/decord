@@ -1,13 +1,13 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 9569
+// Function ID: 9570
 // Name: VideoIcon
-// Dependencies: [19, 21, 576, 4488, 10406, 2]
+// Dependencies: [19, 21, 576, 4530, 9570, 2]
 // Exports: VideoIcon
 
-// Module 10405 (VideoIcon)
+// Module 9569 (VideoIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod10406 from "module_10406" /* 10406 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod9570 from "module_9570" /* 9570 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const VideoIcon = function VideoIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10406, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9570, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

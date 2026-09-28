@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 132, height: 132, scales: [1], hash: "e32a360d37f718d45e03d9f2fe827035", name: "avatar_placeholder", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls", width: 24, height: 24, scales: [1, 2], hash: "acab5012253c87ed34de4d06c393d7c0", name: "voice_bar_phone", type: "png" });

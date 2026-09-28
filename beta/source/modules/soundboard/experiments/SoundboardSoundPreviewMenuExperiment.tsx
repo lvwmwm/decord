@@ -1,11 +1,11 @@
-// Module ID: 17542
-// Function ID: 17543
+// Module ID: 16897
+// Function ID: 16898
 // Name: SoundboardSoundPreviewMenuExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useSoundboardSoundPreviewMenuEnabled
 
-// Module 17542 (SoundboardSoundPreviewMenuExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 16897 (SoundboardSoundPreviewMenuExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-08-mobile-soundboard-sound-preview-menu", defaultConfig: { enabled: false, returnOnUpsellDismiss: false }, variations: null };

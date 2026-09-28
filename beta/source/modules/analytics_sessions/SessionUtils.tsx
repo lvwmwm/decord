@@ -1,10 +1,10 @@
-// Module ID: 7745
-// Function ID: 7746
+// Module ID: 6891
+// Function ID: 6892
 // Name: SessionUtils
 // Dependencies: [1091, 2]
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 7745 (SessionUtils)
+// Module 6891 (SessionUtils)
 import DurationsDefault from "Durations" /* 1091 */;
 
 const result = 30 * DurationsDefault.Millis.MINUTE;

@@ -1,31 +1,30 @@
-// Module ID: 5000
-// Function ID: 5001
+// Module ID: 5048
+// Function ID: 5049
 // Name: AgeVerificationUtils
-// Dependencies: [5, 32, 19, 5001, 5002, 502, 5008, 1372, 8757, 8715, 1074, 1099, 8702, 8716, 5673, 1978, 504, 5672, 8740, 12211, 573, 8714, 8707, 8721, 8575, 1115, 3034, 14061, 2]
+// Dependencies: [5, 32, 19, 5049, 5050, 502, 5056, 1372, 7904, 7860, 1074, 1099, 7847, 7861, 5736, 1979, 504, 5735, 7887, 573, 7859, 7852, 7866, 7720, 1115, 3039, 13307, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useInitiateAgeVerificationV2, useIsAgeVerified, useIsAssignedByDiscord, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
-// Module 5000 (AgeVerificationUtils)
+// Module 5048 (AgeVerificationUtils)
 import initialize from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
-import Server from "Server" /* 1978 */;
-import _modDef3034 from "module_3034" /* 3034 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5672 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5673 */;
-import usePreviousDefault from "usePrevious" /* 8575 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8721 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8740 */;
-import FamilyCenterConnectionPrereqExperiment2 from "FamilyCenterConnectionPrereqExperiment" /* 12211 */;
-import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 14061 */;
+import Server from "Server" /* 1979 */;
+import _modDef3039 from "module_3039" /* 3039 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5736 */;
+import usePreviousDefault from "usePrevious" /* 7720 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7866 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7887 */;
+import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13307 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5001 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5002 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5049 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5050 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 5008 */;
+import MessageStore from "MessageStore" /* 5056 */;
 import UserStore from "UserStore" /* 1372 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8757 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 7904 */;
 
 const require = globalThis.__r;
 
@@ -89,7 +88,7 @@ function useAgeVerificationRunner(onComplete) {
               closure_130_1 = undefined;
               tmp72(true);
               c5 = 2;
-              entryPoint(flag[20]).dispatch({ type: "INITIATE_AGE_VERIFICATION" });
+              entryPoint(flag[19]).dispatch({ type: "INITIATE_AGE_VERIFICATION" });
               v3 = 3;
               c7 = 1;
               const obj8 = { value: onComplete(), done: false };
@@ -113,16 +112,16 @@ function useAgeVerificationRunner(onComplete) {
                   }
                 }
                 if (code === constants.AGE_VERIFICATION_METHOD_UNAVAILABLE) {
-                  entryPoint(flag[22]).showFailedToast(constants2.AGE_VERIFICATION_METHOD_UNAVAILABLE);
+                  entryPoint(flag[21]).showFailedToast(constants2.AGE_VERIFICATION_METHOD_UNAVAILABLE);
                   tmp4();
-                  const obj5 = entryPoint(flag[22]);
+                  const obj5 = entryPoint(flag[21]);
                 }
                 c5 = 0;
                 tmp72(false);
                 c7 = 3;
               }
-              entryPoint(flag[22]).showFailedToast(constants2.TIGGER_PAWTECT_ERROR);
-              const obj4 = entryPoint(flag[22]);
+              entryPoint(flag[21]).showFailedToast(constants2.TIGGER_PAWTECT_ERROR);
+              const obj4 = entryPoint(flag[21]);
             } else if (arg0 === 1) {
               c7 = 3;
               throw value;
@@ -148,12 +147,12 @@ function useAgeVerificationRunner(onComplete) {
               obj.entryPoint = entryPoint;
               obj.shouldShowExpressiveModal = shouldShowExpressiveModal;
               if (false === obj10.showAgeVerification(obj)) {
-                entryPoint(flag[22]).showFailedToast(constants2.TIGGER_PAWTECT_ERROR);
+                entryPoint(flag[21]).showFailedToast(constants2.TIGGER_PAWTECT_ERROR);
                 v3();
-                obj2 = entryPoint(flag[22]);
+                obj2 = entryPoint(flag[21]);
               }
               c5 = 1;
-              obj10 = entryPoint(flag[21]);
+              obj10 = entryPoint(flag[20]);
             }
             c5 = 0;
             tmp72(false);
@@ -197,17 +196,17 @@ function useShouldCallReactiveCheck() {
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
   }
-  let tmp5 = prop !== tmp(1978).AgeVerificationStatusUkAndAusOnly.UNVERIFIED;
+  let tmp5 = prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.UNVERIFIED;
   if (tmp5) {
     let prop1;
     if (stateFromStores != null) {
       prop1 = stateFromStores.ageVerificationStatus;
     }
-    tmp5 = prop1 !== tmp(1978).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+    tmp5 = prop1 !== tmp(1979).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
   }
   _require = tmp5;
   obj = require("initialize");
-  const isFeatureAgeGated = require("RegionalFeatureConfigUtils").useIsFeatureAgeGated(tmp(5673).AgeGatedFeature.REACTIVE_CHECK);
+  const isFeatureAgeGated = require("RegionalFeatureConfigUtils").useIsFeatureAgeGated(tmp(5736).AgeGatedFeature.REACTIVE_CHECK);
   const tmpResult = require("RegionalFeatureConfigUtils");
   const items1 = [AgeVerificationStore];
   const items2 = [tmp5, isFeatureAgeGated];
@@ -235,11 +234,11 @@ function shouldCallReactiveCheck() {
     if (currentUser != null) {
       prop1 = currentUser.ageVerificationStatus;
     }
-    tmp5 = prop1 !== tmp3(1978).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+    tmp5 = prop1 !== tmp3(1979).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
   }
   let tmp7 = !tmp5;
   if (!tmp5) {
-    let isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5673).AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5736).AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
       isFeatureAgeGatedResult = AgeVerificationStore.shouldCallReactiveCheck();
     }
@@ -300,13 +299,13 @@ let closure_24 = async function _maybePerformReactiveCheck(arg0, value) {
     }
   }
 };
-fn(8715).FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS;
+fn(7860).FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS;
 const Constants = fn(1074);
 ({ AbortCodes: map1, MessageEmbedTypes: closure_14 } = Constants);
 const AgeGateConstants = fn(1099);
 ({ AgeGateSource, REACTIVE_CHECK_AGE_GATE_SOURCES: closure_15 } = AgeGateConstants);
-const SafetyToastType = fn(8702).SafetyToastType;
-let items = [fn(8716).AgeVerificationModalEntryPoint.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, fn(8716).AgeVerificationModalEntryPoint.START_STAGE_PROMPT, fn(8716).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND];
+const SafetyToastType = fn(7847).SafetyToastType;
+let items = [fn(7861).AgeVerificationModalEntryPoint.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, fn(7861).AgeVerificationModalEntryPoint.START_STAGE_PROMPT, fn(7861).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND];
 const set = new Set(items);
 let items1 = [, , , , , ];
 ({ NSFW_SERVER: arr2[0], NSFW_SERVER_INVITE: arr2[1], NSFW_SERVER_INVITE_EMBED: arr2[2], LARGE_GUILD: arr2[3], JOIN_LARGE_GUILD_UNDERAGE: arr2[4], ACCESS_LARGE_GUILD_UNDERAGE: arr2[5] } = AgeGateSource);
@@ -334,13 +333,13 @@ export const useShouldShowTiggerPawtect = function useShouldShowTiggerPawtect() 
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
   }
-  let tmp5 = prop === tmp(1978).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
+  let tmp5 = prop === tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
   if (!tmp5) {
     let prop1;
     if (stateFromStores != null) {
       prop1 = stateFromStores.ageVerificationStatus;
     }
-    tmp5 = prop1 === tmp(1978).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
+    tmp5 = prop1 === tmp(1979).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
   }
   return !tmp5;
 };
@@ -378,13 +377,13 @@ export const useIsVerifiedAdult = function useIsVerifiedAdult() {
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
   }
-  let tmp5 = prop === tmp(1978).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
+  let tmp5 = prop === tmp(1979).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
   if (!tmp5) {
     let prop1;
     if (stateFromStores != null) {
       prop1 = stateFromStores.ageVerificationStatus;
     }
-    tmp5 = prop1 === tmp(1978).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
+    tmp5 = prop1 === tmp(1979).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
   }
   return tmp5;
 };
@@ -497,12 +496,7 @@ export const isAgeVerificationMessageWithConnectToTeenCta = function isAgeVerifi
                 const parts = found.rawValue.split(",");
                 hasItem = parts.includes(obj2.CONNECT_TO_TEEN);
               }
-              let enabled = true === hasItem;
-              if (enabled) {
-                const FamilyCenterConnectionPrereqExperiment = FamilyCenterConnectionPrereqExperiment2.FamilyCenterConnectionPrereqExperiment;
-                enabled = FamilyCenterConnectionPrereqExperiment.getConfig({ location: "isAgeVerificationMessageWithConnectToTeenCta" }).enabled;
-              }
-              return enabled;
+              return true === hasItem;
             }
           }
         }
@@ -534,13 +528,13 @@ export const useIsAgeVerified = function useIsAgeVerified() {
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
   }
-  let tmp5 = prop !== tmp(1978).AgeVerificationStatusUkAndAusOnly.UNVERIFIED;
+  let tmp5 = prop !== tmp(1979).AgeVerificationStatusUkAndAusOnly.UNVERIFIED;
   if (tmp5) {
     let prop1;
     if (stateFromStores != null) {
       prop1 = stateFromStores.ageVerificationStatus;
     }
-    tmp5 = prop1 !== tmp(1978).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+    tmp5 = prop1 !== tmp(1979).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
   }
   return tmp5;
 };
@@ -574,7 +568,7 @@ export const useInitiateAgeVerificationV2 = function useInitiateAgeVerificationV
   const items = [startVerification];
   obj2.initiateAgeVerificationV2 = noop.useCallback((arg0) => {
     closure_0 = arg0;
-    return startVerification(() => startVerification(dependencyMap[23]).requestAgeVerificationV2(closure_0.method, closure_0.vendor), arg0);
+    return startVerification(() => startVerification(dependencyMap[22]).requestAgeVerificationV2(closure_0.method, closure_0.vendor), arg0);
   }, items);
   return obj2;
 };
@@ -638,7 +632,7 @@ export const getAgeVerificationGetStartedTitle = function getAgeVerificationGetS
   if (hasItem) {
     let stringResult = string(tmp2(1115).t.lSWVTM);
   } else if (flag) {
-    stringResult = string(_modDef3034["/kgWIg"]);
+    stringResult = string(_modDef3039["/kgWIg"]);
   } else {
     stringResult = string(tmp2(1115).t.xYXsr6);
   }
@@ -658,14 +652,14 @@ export const getAgeVerificationGetStartedSubtitle = function getAgeVerificationG
     let stringResult = intl6.string(util.t["S/xS/w"]);
   } else if (flag) {
     const intl5 = util.intl;
-    stringResult = intl5.string(_modDef3034.h7qzoa);
+    stringResult = intl5.string(_modDef3039.h7qzoa);
   } else {
     if (flag2) {
       if (null != handleOnHelpUrlHook) {
         if (null != fn) {
           const intl4 = util.intl;
           obj2 = { handleOnHelpUrlHook, handleOnTrustedProvidersHook: fn };
-          stringResult = intl4.format(_modDef3034["+Ft5ch"], obj2);
+          stringResult = intl4.format(_modDef3039["+Ft5ch"], obj2);
         }
       }
     }
@@ -673,13 +667,13 @@ export const getAgeVerificationGetStartedSubtitle = function getAgeVerificationG
       if (null != handleOnHelpUrlHook) {
         const intl3 = util.intl;
         const obj3 = { handleOnHelpUrlHook };
-        stringResult = intl3.format(_modDef3034["22HSSI"], obj3);
+        stringResult = intl3.format(_modDef3039["22HSSI"], obj3);
       }
     }
     if (null != handleOnHelpUrlHook) {
       const intl2 = util.intl;
       obj = { handleOnHelpUrlHook };
-      stringResult = intl2.format(_modDef3034.RpMIT0, obj);
+      stringResult = intl2.format(_modDef3039.RpMIT0, obj);
     } else {
       const intl = util.intl;
       stringResult = intl.string(util.t.HxS3oQ);

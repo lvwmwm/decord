@@ -29,7 +29,7 @@ const obj15 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", REAL_MONEY_GAMING: 1, [1]: "
 const obj16 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", PERSONAL: 1, [1]: "PERSONAL", GUILD: 2, [2]: "GUILD" };
 const obj17 = { UNSET_UI_DENSITY: 0, [0]: "UNSET_UI_DENSITY", COMPACT: 1, [1]: "COMPACT", COZY: 2, [2]: "COZY", RESPONSIVE: 3, [3]: "RESPONSIVE", DEFAULT: 4, [4]: "DEFAULT" };
 const obj18 = { UNSET: 0, [0]: "UNSET", DARK: 1, [1]: "DARK", LIGHT: 2, [2]: "LIGHT", DARKER: 3, [3]: "DARKER", MIDNIGHT: 4, [4]: "MIDNIGHT" };
-const obj19 = { MINT_APPLE: 0, [0]: "MINT_APPLE", CITRUS_SHERBERT: 1, [1]: "CITRUS_SHERBERT", RETRO_RAINCLOUD: 2, [2]: "RETRO_RAINCLOUD", HANAMI: 3, [3]: "HANAMI", SUNRISE: 4, [4]: "SUNRISE", COTTON_CANDY: 5, [5]: "COTTON_CANDY", LOFI_VIBES: 6, [6]: "LOFI_VIBES", DESERT_KHAKI: 7, [7]: "DESERT_KHAKI", SUNSET: 8, [8]: "SUNSET", CHROMA_GLOW: 9, [9]: "CHROMA_GLOW", FOREST: 10, [10]: "FOREST", CRIMSON_MOON: 11, [11]: "CRIMSON_MOON", MIDNIGHT_BLURPLE: 12, [12]: "MIDNIGHT_BLURPLE", MARS: 13, [13]: "MARS", DUSK: 14, [14]: "DUSK", UNDER_THE_SEA: 15, [15]: "UNDER_THE_SEA", EASTER_EGG: 16, [16]: "EASTER_EGG", RETRO_STORM: 17, [17]: "RETRO_STORM", NEON_NIGHTS: 18, [18]: "NEON_NIGHTS", SEPIA: 19, [19]: "SEPIA", STRAWBERRY_LEMONADE: 20, [20]: "STRAWBERRY_LEMONADE", AURORA: 21, [21]: "AURORA", BLURPLE_TWILIGHT: 22, [22]: "BLURPLE_TWILIGHT" };
+const obj19 = { MINT_APPLE: 0, [0]: "MINT_APPLE", CITRUS_SHERBERT: 1, [1]: "CITRUS_SHERBERT", RETRO_RAINCLOUD: 2, [2]: "RETRO_RAINCLOUD", HANAMI: 3, [3]: "HANAMI", SUNRISE: 4, [4]: "SUNRISE", COTTON_CANDY: 5, [5]: "COTTON_CANDY", LOFI_VIBES: 6, [6]: "LOFI_VIBES", DESERT_KHAKI: 7, [7]: "DESERT_KHAKI", SUNSET: 8, [8]: "SUNSET", CHROMA_GLOW: 9, [9]: "CHROMA_GLOW", FOREST: 10, [10]: "FOREST", CRIMSON_MOON: 11, [11]: "CRIMSON_MOON", MIDNIGHT_BLURPLE: 12, [12]: "MIDNIGHT_BLURPLE", MARS: 13, [13]: "MARS", DUSK: 14, [14]: "DUSK", UNDER_THE_SEA: 15, [15]: "UNDER_THE_SEA", EASTER_EGG: 16, [16]: "EASTER_EGG", RETRO_STORM: 17, [17]: "RETRO_STORM", NEON_NIGHTS: 18, [18]: "NEON_NIGHTS", SEPIA: 19, [19]: "SEPIA", STRAWBERRY_LEMONADE: 20, [20]: "STRAWBERRY_LEMONADE", AURORA: 21, [21]: "AURORA", BLURPLE_TWILIGHT: 22, [22]: "BLURPLE_TWILIGHT", HEXAGON: 23, [23]: "HEXAGON" };
 const obj20 = { AUTO: 0, [0]: "AUTO", H12: 1, [1]: "H12", H23: 2, [2]: "H23" };
 const obj21 = { LAUNCH_PAD_DISABLED: 0, [0]: "LAUNCH_PAD_DISABLED", LAUNCH_PAD_GESTURE_FULL_SCREEN: 1, [1]: "LAUNCH_PAD_GESTURE_FULL_SCREEN", LAUNCH_PAD_GESTURE_RIGHT_EDGE: 2, [2]: "LAUNCH_PAD_GESTURE_RIGHT_EDGE", LAUNCH_PAD_PULL_TAB: 3, [3]: "LAUNCH_PAD_PULL_TAB" };
 const obj22 = { SWIPE_RIGHT_TO_LEFT_UNSET: 0, [0]: "SWIPE_RIGHT_TO_LEFT_UNSET", SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS: 1, [1]: "SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS", SWIPE_RIGHT_TO_LEFT_REPLY: 2, [2]: "SWIPE_RIGHT_TO_LEFT_REPLY" };
@@ -2808,7 +2808,7 @@ class TextAndImagesSettings$Type extends MessageType18 {
             return require("wrappers").StringValue;
           }
     };
-    items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+    items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
     items[0] = obj;
     items[1] = {
       no: 2,
@@ -3079,17 +3079,25 @@ class TextAndImagesSettings$Type extends MessageType18 {
             return require("wrappers").StringValue;
           }
     };
-    obj1 = { no: 39, name: "include_game_mentions_in_autocomplete", kind: "message", T: null };
+    items[37] = {
+      no: 39,
+      name: "include_game_mentions_in_autocomplete",
+      kind: "message",
+      T() {
+            return require("wrappers").BoolValue;
+          }
+    };
+    obj1 = { no: 40, name: "inline_emoji_suggestions_enabled", kind: "message", T: null };
     class T {
       constructor() {
         return closure_1_0(closure_1_1[4]).BoolValue;
       }
     }
     obj1.T = T;
-    items[37] = obj1;
-    items[38] = {
-      no: 40,
-      name: "inline_emoji_suggestions_enabled",
+    items[38] = obj1;
+    items[39] = {
+      no: 41,
+      name: "display_compact_avatars",
       kind: "message",
       T() {
             return require("wrappers").BoolValue;
@@ -3359,6 +3367,12 @@ prototype18["internalBinaryWrite"] = function internalBinaryWrite(diversitySurro
     const tagResult38 = tag.tag(40, _mod1187.WireType.LengthDelimited);
     const joined33 = BoolValue23.internalBinaryWrite(diversitySurrogate.inlineEmojiSuggestionsEnabled, tag.tag(40, _mod1187.WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult33 = BoolValue23.internalBinaryWrite(diversitySurrogate.inlineEmojiSuggestionsEnabled, tag.tag(40, _mod1187.WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if (diversitySurrogate.displayCompactAvatars) {
+    const BoolValue24 = wrappers.BoolValue;
+    const tagResult39 = tag.tag(41, _mod1187.WireType.LengthDelimited);
+    const joined34 = BoolValue24.internalBinaryWrite(diversitySurrogate.displayCompactAvatars, tag.tag(41, _mod1187.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult34 = BoolValue24.internalBinaryWrite(diversitySurrogate.displayCompactAvatars, tag.tag(41, _mod1187.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {

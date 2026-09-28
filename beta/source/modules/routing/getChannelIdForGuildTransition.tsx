@@ -1,25 +1,25 @@
-// Module ID: 7494
-// Function ID: 7495
+// Module ID: 6638
+// Function ID: 6639
 // Name: getChannelIdForGuildTransition
-// Dependencies: [2044, 7373, 2041, 2096, 2063, 2095, 7495, 1074, 2048, 7499, 7501, 7503, 5306, 2066, 2]
+// Dependencies: [2048, 6517, 2045, 4467, 2067, 2099, 6639, 1074, 2052, 6643, 6645, 6647, 5370, 2070, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 7494 (getChannelIdForGuildTransition)
-import FavoritesUtils from "FavoritesUtils" /* 2066 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5306 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7499 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7503 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7373 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7495 */;
+// Module 6638 (getChannelIdForGuildTransition)
+import FavoritesUtils from "FavoritesUtils" /* 2070 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6643 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6647 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6517 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 4467 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6639 */;
 
 require = fn;
 const ME = fn(1074).ME;
-const StaticChannelRoute = fn(2048).StaticChannelRoute;
+const StaticChannelRoute = fn(2052).StaticChannelRoute;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/routing/getChannelIdForGuildTransition.tsx");
 

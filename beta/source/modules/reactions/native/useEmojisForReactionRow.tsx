@@ -1,10 +1,10 @@
-// Module ID: 12013
-// Function ID: 12014
+// Module ID: 11231
+// Function ID: 11232
 // Name: useEmojisForReactionRow
-// Dependencies: [19, 1375, 10582, 1478, 4445, 2]
+// Dependencies: [19, 1375, 9748, 1479, 4487, 2]
 // Exports: useEmojisForReactionRow
 
-// Module 12013 (useEmojisForReactionRow)
+// Module 11231 (useEmojisForReactionRow)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

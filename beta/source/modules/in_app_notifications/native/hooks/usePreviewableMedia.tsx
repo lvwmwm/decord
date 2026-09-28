@@ -1,17 +1,17 @@
-// Module ID: 10426
-// Function ID: 10427
+// Module ID: 9590
+// Function ID: 9591
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1074, 21, 4788, 4489, 576, 8760, 9026, 10427, 4938, 10429, 7576, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 4531, 576, 7909, 8176, 9591, 4986, 9593, 6720, 2]
 // Exports: usePreviewableMedia
 
-// Module 10426 (usePreviewableMedia)
+// Module 9590 (usePreviewableMedia)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4489 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4938 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7576 */;
-import inlineStyles from "inlineStyles" /* 8760 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 9026 */;
-import WaveformIcon from "WaveformIcon" /* 10427 */;
+import useToken from "useToken" /* 4531 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
+import inlineStyles from "inlineStyles" /* 7909 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 8176 */;
+import WaveformIcon from "WaveformIcon" /* 9591 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -74,7 +74,7 @@ function getBasePreviewableMedia(arg0) {
           obj3.parentType = str7;
           let arr8 = items.push(obj3);
         } else {
-          let tmp8Result = tmp8(4938);
+          let tmp8Result = tmp8(4986);
           if (tmp8Result.isVideoFile(tmp7)) {
             let obj4 = { id: null, type: null, media: null, parentType: null };
             let _HermesInternal3 = HermesInternal;
@@ -88,7 +88,7 @@ function getBasePreviewableMedia(arg0) {
             obj4.parentType = str6;
             let arr9 = items.push(obj4);
           } else {
-            let tmp8Result2 = tmp8(4938);
+            let tmp8Result2 = tmp8(4986);
             let push = items.push;
             let obj5 = { id: null, type: null, media: null, icon: null, parentType: null };
             let id = tmp6.id;
@@ -98,7 +98,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.id = "" + id + "-" + tmp13.AUDIO;
               obj5.type = tmp13.AUDIO;
               obj5.media = tmp6;
-              obj5.icon = React5(tmp8(9026).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+              obj5.icon = React5(tmp8(8176).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
               let str5 = null;
               if (isForward) {
                 str5 = "forward";
@@ -112,7 +112,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.media = tmp6;
               let obj6 = { size: "lg", color: null };
               obj6.color = nativeDefault.colors.ICON_SUBTLE;
-              obj5.icon = React5(tmp8(10429).FileIcon, obj6);
+              obj5.icon = React5(tmp8(9593).FileIcon, obj6);
               let str4 = null;
               if (isForward) {
                 str4 = "forward";
@@ -168,7 +168,7 @@ const Constants = fn(1074);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const PreviewableMediaTypes = { IMAGE: "image", VIDEO: "video", AUDIO: "audio", FILE: "file", STICKER: "sticker", GIF: "gif", VOICE_MESSAGE: "voice_message" };
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj3 = { voiceMessageIconOverlay: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

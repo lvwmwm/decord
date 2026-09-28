@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 232, height: 126, scales: [2, 3], hash: "4a0bc494eeca38c1cab5c56f66dbf1f3", name: "no_mutual_friends_darker", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 411, height: 134, scales: [2, 3], hash: "9bb60b01d276e09f678fc61b96446517", name: "img_boost_subheader_error_mobile", type: "png" });

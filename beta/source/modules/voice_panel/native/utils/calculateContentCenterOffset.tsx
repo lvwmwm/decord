@@ -1,12 +1,12 @@
-// Module ID: 17604
-// Function ID: 17605
+// Module ID: 16959
+// Function ID: 16960
 // Name: calculateContentCenterOffset
-// Dependencies: [12558, 11288, 2]
+// Dependencies: [11758, 10456, 2]
 // Exports: default
 
-// Module 17604 (calculateContentCenterOffset)
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11288 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12558 */;
+// Module 16959 (calculateContentCenterOffset)
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11758 */;
 import size from "module_2" /* 2 */;
 
 const EDGE_GUTTER = VoicePanelCardConstants.EDGE_GUTTER;

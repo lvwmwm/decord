@@ -1,14 +1,14 @@
-// Module ID: 10103
-// Function ID: 10104
+// Module ID: 9263
+// Function ID: 9264
 // Name: GuildEventCard
-// Dependencies: [19, 17, 4811, 7800, 2047, 21, 4788, 576, 9901, 5682, 504, 9821, 5856, 8713, 9926, 2]
+// Dependencies: [19, 17, 4859, 6946, 2051, 21, 4836, 576, 9062, 5745, 504, 8982, 5919, 7858, 9087, 2]
 
-// Module 10103 (GuildEventCard)
+// Module 9263 (GuildEventCard)
 import nativeDefault from "native" /* 576 */;
-import ButtonGroup from "ButtonGroup" /* 5682 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 9901 */;
+import ButtonGroup from "ButtonGroup" /* 5745 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 9062 */;
 import noop from "module_19" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 
 const require = globalThis.__r;
 
@@ -22,7 +22,7 @@ function GuildEventCardControls(onCloseAction) {
   let tmp6Result = primaryActionButtonType === GuildEventCardComponents.PrimaryActionType.START;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(9901).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(9062).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = React5(GuildEventCardComponents.GuildEventShareAction, { event });
@@ -30,11 +30,11 @@ function GuildEventCardControls(onCloseAction) {
   return React6(ButtonGroup.ButtonGroup, obj2);
 }
 const View = fn(17).View;
-let closure_5 = fn(7800).isGuildScheduledEventActive;
-fn(2047).AGE_VERIFICATION_STAGE_CHANNEL_TYPES;
+let closure_5 = fn(6946).isGuildScheduledEventActive;
+fn(2051).AGE_VERIFICATION_STAGE_CHANNEL_TYPES;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { actionContainer: { paddingTop: nativeDefault.space.PX_16, paddingBottom: 0 } };
 const styles = createStyles.createStyles(obj);
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: 0 };

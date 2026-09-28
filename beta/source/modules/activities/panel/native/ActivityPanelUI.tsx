@@ -1,21 +1,21 @@
-// Module ID: 17484
-// Function ID: 17485
+// Module ID: 16840
+// Function ID: 16841
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 9347, 21, 17485, 17491, 17505, 7433, 4498, 17506, 17483, 2]
+// Dependencies: [19, 17, 8502, 21, 16841, 16847, 16861, 6577, 4540, 16862, 16839, 2]
 // Exports: default
 
-// Module 17484 (ActivityPanelUI)
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17483 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17505 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17506 */;
+// Module 16840 (ActivityPanelUI)
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 16839 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 16861 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 16862 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 17485;
+    let tmp4 = 16841;
   } else {
-    tmp4 = 17491;
+    tmp4 = 16847;
   }
   return React5(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }
@@ -56,7 +56,7 @@ class BaseActivityPanelUI {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet: hasOwnProperty } = get_ActivityIndicator);
-const ActivityPanelModes = fn(9347).ActivityPanelModes;
+const ActivityPanelModes = fn(8502).ActivityPanelModes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_12 = [];

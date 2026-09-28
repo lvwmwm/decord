@@ -1,11 +1,11 @@
-// Module ID: 10584
-// Function ID: 10585
+// Module ID: 9750
+// Function ID: 9751
 // Name: SoundmojiSendingExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: getSoundmojiSendExperiment, useSoundmojiEmojiPickerSectionExperiment, useSoundmojiSendExperiment
 
-// Module 10584 (SoundmojiSendingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 9750 (SoundmojiSendingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-soundmoji-sending", kind: "user", defaultConfig: { enabled: false, showSoundmojiInEmojiPicker: false }, variations: null };

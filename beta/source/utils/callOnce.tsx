@@ -1,10 +1,10 @@
-// Module ID: 7938
-// Function ID: 7939
+// Module ID: 7083
+// Function ID: 7084
 // Name: callOnce
 // Dependencies: [2]
 // Exports: callOnce
 
-// Module 7938 (callOnce)
+// Module 7083 (callOnce)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/callOnce.tsx");

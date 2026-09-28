@@ -1,9 +1,36 @@
 // Module ID: 13592
 // Function ID: 13593
-// Dependencies: [1121]
+// Dependencies: [13588, 13559]
 
 // Module 13592
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13559 from "module_13559" /* 13559 */;
+
+const require = globalThis.__r;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/channel/header/images", width: 24, height: 24, scales: [2, 3, 4], hash: "259a63e8af8c5f3885215d3c5505af89", name: "icon-search", type: "png" });
+export default (arr, arg1, arg2) => {
+  _require = arg2;
+  dependencyMap = null;
+  closure_2 = null;
+  let regex = null;
+  try {
+    let tmp9 = new require("module_13588")(arg1, arg2);
+    regex = tmp9;
+    const item = arr.forEach((item) => {
+      if (regex.test(item)) {
+        let tmp = closure_1;
+        if (closure_1) {
+          tmp = -1 !== closure_2.compare(item);
+        }
+        if (!tmp) {
+          closure_1 = item;
+          const tmp9 = new _mod13559(closure_1, closure_0);
+          closure_2 = tmp9;
+        }
+      }
+    });
+    return dependencyMap;
+  } catch (err) {
+    return tmp;
+  }
+};

@@ -1,13 +1,13 @@
-// Module ID: 9540
-// Function ID: 9541
+// Module ID: 8697
+// Function ID: 8698
 // Name: openForumExplicitMediaWarning
-// Dependencies: [21, 5141, 9541, 1980, 2]
+// Dependencies: [21, 5204, 8698, 1981, 2]
 // Exports: default
 
-// Module 9540 (openForumExplicitMediaWarning)
+// Module 8697 (openForumExplicitMediaWarning)
 import jsxProd from "jsxProd" /* 21 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -18,7 +18,7 @@ export default function openForumExplicitMediaWarning(arg0, arg1) {
   importDefault = arg1;
   actions_AlertActionCreatorsDefault.openLazy({
     importer() {
-      return asyncRequireImpl(9541, dependencyMap.paths).then((result) => {
+      return asyncRequireImpl(8698, dependencyMap.paths).then((result) => {
         closure_0 = result.default;
         return (arg0) => {
           const obj = {};

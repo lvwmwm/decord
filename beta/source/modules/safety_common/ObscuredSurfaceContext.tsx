@@ -1,10 +1,10 @@
-// Module ID: 9015
-// Function ID: 9016
+// Module ID: 8165
+// Function ID: 8166
 // Name: ObscuredSurfaceContext
 // Dependencies: [19, 2]
 // Exports: useObscuredSurface
 
-// Module 9015 (ObscuredSurfaceContext)
+// Module 8165 (ObscuredSurfaceContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext({ obscured: false });

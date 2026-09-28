@@ -1,14 +1,14 @@
-// Module ID: 7955
-// Function ID: 7956
+// Module ID: 7100
+// Function ID: 7101
 // Name: SlowmodeStore
-// Dependencies: [2041, 4427, 7956, 2036, 573, 1091, 504, 2]
+// Dependencies: [2045, 4469, 7101, 2040, 573, 1091, 504, 2]
 
-// Module 7955 (SlowmodeStore)
+// Module 7100 (SlowmodeStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 const require = fn;
 function setCooldown(channel, SendMessage, cooldownMs) {

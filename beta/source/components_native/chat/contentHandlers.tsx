@@ -1,18 +1,18 @@
-// Module ID: 11866
-// Function ID: 11867
+// Module ID: 11081
+// Function ID: 11082
 // Name: contentHandlers
-// Dependencies: [5, 11864, 10239, 8678, 4483, 11827, 8480, 7459, 4755, 11867, 1980, 11, 2019, 1115, 7466, 4485, 5140, 10624, 2]
+// Dependencies: [5, 11079, 9399, 7823, 4525, 11042, 7624, 6603, 4800, 11082, 1981, 11, 2021, 1115, 6610, 4527, 5203, 9790, 2]
 
-// Module 11866 (contentHandlers)
+// Module 11081 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ToastUtils from "ToastUtils" /* 4485 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import ClipboardUtils from "ClipboardUtils" /* 7466 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8480 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11864 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ToastUtils from "ToastUtils" /* 4527 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
+import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11079 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -71,7 +71,7 @@ let closure_5 = asyncGeneratorStep(async (arg0) => {
             closure_129_1 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else {
           if (1 === tmp5) {
@@ -162,7 +162,7 @@ let closure_4 = asyncGeneratorStep(async (arg0) => {
             closure_129_1 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else {
           if (1 === tmp5) {
@@ -216,7 +216,7 @@ obj.onLongPressAttachmentLink = function() {
   return applyArgumentsResult;
 };
 obj.onTapMention = function onTapMention(nativeEvent) {
-  const nativeSyntheticEventData = parsedUserId(11827).getNativeSyntheticEventData(nativeEvent);
+  const nativeSyntheticEventData = parsedUserId(11042).getNativeSyntheticEventData(nativeEvent);
   ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
   ({ roleId, guildId } = nativeSyntheticEventData);
   if (null != userId) {
@@ -228,21 +228,21 @@ obj.onTapMention = function onTapMention(nativeEvent) {
     if (null != roleId) {
       if (null != guildId) {
         const obj3 = { guildId, roleId, channelId };
-        ActionSheetActionCreatorsDefault.openLazy(tmp(1980)(11867, tmp2.paths), "RoleMembersActionSheet", obj3);
+        ActionSheetActionCreatorsDefault.openLazy(tmp(1981)(11082, tmp2.paths), "RoleMembersActionSheet", obj3);
       }
     }
     if ("@everyone" === roleName) {
       if (null != guildId) {
         const obj5 = { guildId, roleId: null, channelId: null };
         const obj6 = ActionSheetActionCreatorsDefault;
-        const tmp10 = tmp(1980)(11867, tmp2.paths);
+        const tmp10 = tmp(1981)(11082, tmp2.paths);
         obj5.roleId = SnowflakeUtilsDefault.castGuildIdAsEveryoneGuildRoleId(guildId);
         obj5.channelId = channelId;
         obj6.openLazy(tmp10, "RoleMembersActionSheet", obj5);
       }
     }
     if (null == roleName) {
-      const DeveloperMode = tmp(2019).DeveloperMode;
+      const DeveloperMode = tmp(2021).DeveloperMode;
       if (DeveloperMode.getSetting()) {
         if (null != parsedUserId) {
           const obj7 = { secondaryConfirmText: null, onConfirmSecondary: null };
@@ -279,7 +279,7 @@ obj.onTapInlineCode = function onTapInlineCode(nativeEvent) {
   }
 };
 obj.onTapEmoji = function onTapEmoji(emojiNode) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10624, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9790, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
 };
 const size = fn(2);
 let result = size.fileFinishedImporting("components_native/chat/contentHandlers.tsx");

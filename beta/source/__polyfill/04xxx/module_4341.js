@@ -1,46 +1,51 @@
 // Module ID: 4341
 // Function ID: 4342
-// Dependencies: [4342, 4344, 4345, 4343, 4346]
+// Dependencies: [3922, 3918, 4331, 3919]
+// Exports: default
 
 // Module 4341
-import localeToNumber_mod from "localeToNumber" /* 4342 */;
-import module_4344 from "module_4344" /* 4344 */;
-import module_4345 from "module_4345" /* 4345 */;
-import localeToNumber_mod from "module_4343" /* 4343 */;
-import date from "module_4346" /* 4346 */;
+import module_3922_mod from "module_3922" /* 3922 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import module_4331_mod from "module_4331" /* 4331 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
-let localeToNumber = localeToNumber_mod;
-if (!localeToNumber) {
-  const obj = { default: localeToNumber };
+let module_3922 = module_3922_mod;
+if (!module_3922) {
+  const obj = { default: module_3922 };
   let tmp3 = obj;
 } else {
-  tmp3 = localeToNumber;
+  tmp3 = module_3922;
 }
-if (!module_4344) {
-  const obj2 = { default: module_4344 };
+module_3922 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
   let tmp5 = obj2;
 } else {
-  tmp5 = module_4344;
+  tmp5 = _typeof;
 }
-if (!module_4345) {
-  const obj3 = { default: module_4345 };
+_typeof = tmp5;
+let module_4331 = module_4331_mod;
+if (!module_4331) {
+  const obj3 = { default: module_4331 };
   let tmp7 = obj3;
 } else {
-  tmp7 = module_4345;
+  tmp7 = module_4331;
 }
-let localeToNumber = localeToNumber_mod;
-if (!localeToNumber) {
-  const obj4 = { default: localeToNumber };
+module_4331 = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
   let tmp9 = obj4;
 } else {
-  tmp9 = localeToNumber;
+  tmp9 = requiredArgs;
 }
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
+requiredArgs = tmp9;
 
-export default { code: "hi", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 4 } };
+export default function setQuarter(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const diff = module_3922.default(arg1) - (Math.floor(defaultResult1.getMonth() / 3) + 1);
+  return module_4331.default(defaultResult1, defaultResult1.getMonth() + 3 * diff);
+};
 export default exports.default;

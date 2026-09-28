@@ -1,19 +1,19 @@
-// Module ID: 16014
-// Function ID: 16015
+// Module ID: 15299
+// Function ID: 15300
 // Name: OrbCheckoutMenu
-// Dependencies: [32, 19, 21, 4788, 4991, 13487, 1980, 4486, 5856, 4784, 6880, 5218, 2]
+// Dependencies: [32, 19, 21, 4836, 5039, 12727, 1981, 4528, 5919, 4832, 6024, 5281, 2]
 // Exports: default
 
-// Module 16014 (OrbCheckoutMenu)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+// Module 15299 (OrbCheckoutMenu)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_7 = createStyles.createStyles({ textInput: { marginBottom: 16 }, title: { marginBottom: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutMenu.tsx");
@@ -31,13 +31,13 @@ export default function OrbCheckoutMenu() {
             closure_1_1(closure_1_2[7]).open({ key: "ORB_CHECKOUT_SUCCESS", content: "Successfully redeemed item with Orbs" });
           }
       };
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13487, dependencyMap.paths), obj2);
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12727, dependencyMap.paths), obj2);
     }
   }, items);
   let obj = { children: null };
   const items1 = [
-    closure_5(value(4784).Text, { style: tmp.title, variant: "text-md/bold", children: "Redeem SKU for Orbs" }),
-    closure_5(value(6880).TextInput, {
+    closure_5(value(4832).Text, { style: tmp.title, variant: "text-md/bold", children: "Redeem SKU for Orbs" }),
+    closure_5(value(6024).TextInput, {
       containerStyle: tmp.textInput,
       label: "SKU ID",
       value,
@@ -46,9 +46,9 @@ export default function OrbCheckoutMenu() {
       },
       clearable: true
     }),
-    closure_5(value(4784).Text, { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" }),
-    closure_5(value(5218).Button, { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == value })
+    closure_5(value(4832).Text, { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" }),
+    closure_5(value(5281).Button, { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == value })
   ];
   obj.children = items1;
-  return closure_6(value(5856).Card, obj);
+  return closure_6(value(5919).Card, obj);
 };

@@ -1,35 +1,35 @@
-// Module ID: 13542
-// Function ID: 13543
+// Module ID: 12782
+// Function ID: 12783
 // Name: invite/GuildInvite
-// Dependencies: [17, 2059, 4810, 2041, 2105, 2063, 4772, 4437, 1372, 11601, 1074, 8010, 8235, 1115, 8226, 576, 4632, 4639, 12091, 12092, 2055, 2108, 8236, 13007, 13006, 11603, 11602, 13543, 1385, 8695, 1397, 1879, 5271, 9053, 4941, 2]
+// Dependencies: [17, 2063, 4858, 2045, 2108, 2067, 4817, 4479, 1372, 10851, 1074, 7155, 7387, 1115, 7378, 576, 4678, 4685, 11286, 11287, 2059, 2111, 7388, 12239, 12238, 10853, 10852, 12783, 1385, 7840, 1397, 1880, 5335, 8203, 4989, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 13542 (invite/GuildInvite)
+// Module 12782 (invite/GuildInvite)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 8226 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8235 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8236 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8695 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 11601 */;
-import GuestUtilsDefault from "GuestUtils" /* 11603 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 13006 */;
-import _modDef13007 from "module_13007" /* 13007 */;
-import getHeaderTextForInvite from "getHeaderTextForInvite" /* 13543 */;
-import GuildRecord from "GuildRecord" /* 2059 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import InviteStore from "InviteStore" /* 4772 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 7378 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7387 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7388 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 7840 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10851 */;
+import GuestUtilsDefault from "GuestUtils" /* 10853 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12238 */;
+import _modDef12239 from "module_12239" /* 12239 */;
+import getHeaderTextForInvite from "getHeaderTextForInvite" /* 12783 */;
+import GuildRecord from "GuildRecord" /* 2063 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import InviteStore from "InviteStore" /* 4817 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 import Constants_mod from "Constants" /* 1074 */;
-import Constants_mod from "Constants" /* 8010 */;
+import Constants_mod from "Constants" /* 7155 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -66,7 +66,7 @@ export const createExpiredGuildInvite = function createExpiredGuildInvite(author
     tmp6 = tmp5;
   }
   obj.headerText = str.toUpperCase();
-  obj.titleColor = tmp6(8226).processColorOrThrow(nativeDefault.unsafe_rawColors.RED_400);
+  obj.titleColor = tmp6(7378).processColorOrThrow(nativeDefault.unsafe_rawColors.RED_400);
   if (arg1) {
     const intl4 = tmp6(1115).intl;
     let stringResult = intl4.string(tmp6(1115).t["F/OLvL"]);
@@ -78,9 +78,9 @@ export const createExpiredGuildInvite = function createExpiredGuildInvite(author
     }
     if (null != username) {
       const intl3 = tmp6(1115).intl;
-      const obj2 = { username: tmp(4632).getFormattedName(author.author) };
+      const obj2 = { username: tmp(4678).getFormattedName(author.author) };
       stringResult = intl3.formatToPlainString(tmp6(1115).t["9Akp1s"], obj2);
-      const tmpResult = tmp(4632);
+      const tmpResult = tmp(4678);
     } else {
       const intl2 = tmp6(1115).intl;
       stringResult = intl2.string(tmp6(1115).t["SMJr+a"]);
@@ -89,11 +89,11 @@ export const createExpiredGuildInvite = function createExpiredGuildInvite(author
   obj.subtitle = stringResult;
   const intl5 = tmp6(1115).intl;
   obj.titleText = intl5.string(tmp6(1115).t["Jhx/ud"]);
-  const tmp6Result = tmp6(8226);
+  const tmp6Result = tmp6(7378);
   if (tmp6Result2.isThemeDark(theme)) {
-    let tmpResult2 = tmp(12091);
+    let tmpResult2 = tmp(11286);
   } else {
-    tmpResult2 = tmp(12092);
+    tmpResult2 = tmp(11287);
   }
   obj.thumbnailUrl = Image.resolveAssetSource(tmpResult2).uri;
   ({ thumbnailBackgroundColor: obj.thumbnailBackgroundColor, subtitleColor: obj.subtitleColor } = tmp3.colors);
@@ -146,7 +146,7 @@ export const createDisabledGuildInvite = function createDisabledGuildInvite(invi
   obj2.helpCenterArticleURL = HelpdeskUtilsDefault.getArticleURL(constants.INVITE_DISABLED);
   obj2.guildIcon = tmp11;
   const tmpResult = HelpdeskUtilsDefault;
-  obj2.thumbnailUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef13007);
+  obj2.thumbnailUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef12239);
   let tmp17;
   if (null == tmp11) {
     let tmp18;
@@ -204,9 +204,9 @@ export const createErroredGuildInvite = function createErroredGuildInvite(code, 
   obj3.titleText = title;
   const tmp5Result = RowGeneratorStyleSheet;
   if (tmp5Result2.isThemeDark(theme)) {
-    let tmpResult = tmp(12091);
+    let tmpResult = tmp(11286);
   } else {
-    tmpResult = tmp(12092);
+    tmpResult = tmp(11287);
   }
   obj3.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
   ({ thumbnailBackgroundColor: obj2.thumbnailBackgroundColor, subtitleColor: obj2.subtitleColor } = colors);
@@ -222,7 +222,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
   const tmp3 = getEmbedThemeColorsDefault(theme);
   const items = [GuildMemberStore];
   const tmpResult = GuestUtilsDefault;
-  const channel = tmp(11602)(invite).channel;
+  const channel = tmp(10852)(invite).channel;
   const tmp7 = null != channel && channel.isGuildVocal();
   let flag;
   if (channel != null) {
@@ -291,7 +291,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
   if (null != splash) {
     const obj5 = { id: null, splash: null, size: null };
     ({ id: obj9.id, splash: obj9.splash } = guild);
-    obj5.size = 400 * tmp(1879)();
+    obj5.size = 400 * tmp(1880)();
     const guildSplashURL = tmp(1397).getGuildSplashURL(obj5);
     const tmp20 = guildSplashURL;
     const tmpResult6 = tmp(1397);
@@ -303,8 +303,8 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
           const intl3 = tmp10(1115).intl;
           const obj6 = { name: null };
           const tmpResult7 = tmp(1397);
-          obj6.name = tmp(4632).getFormattedName(target_user);
-          const tmpResult8 = tmp(4632);
+          obj6.name = tmp(4678).getFormattedName(target_user);
+          const tmpResult8 = tmp(4678);
           const intl4 = tmp10(1115).intl;
           let name1;
           if (guild != null) {
@@ -319,7 +319,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
         }
       }
     }
-    const assetSource = Image.resolveAssetSource(tmp10(5271).getChannelIcon(channel));
+    const assetSource = Image.resolveAssetSource(tmp10(5335).getChannelIcon(channel));
     let uri1;
     if (assetSource != null) {
       uri1 = assetSource.uri;
@@ -330,11 +330,11 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
     let tmp24 = tmp14;
     uri = guildIconURL;
     tmp25 = name;
-    const tmp10Result7 = tmp10(5271);
+    const tmp10Result7 = tmp10(5335);
   } else {
     if (null != channel) {
       if (channel.type === constants2.GUILD_STAGE_VOICE) {
-        const assetSource1 = Image.resolveAssetSource(tmp10(5271).getChannelIcon(channel));
+        const assetSource1 = Image.resolveAssetSource(tmp10(5335).getChannelIcon(channel));
         let uri2;
         if (assetSource1 != null) {
           uri2 = assetSource1.uri;
@@ -345,7 +345,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
         tmp24 = tmp14;
         uri = guildIconURL;
         tmp25 = name;
-        const tmp10Result8 = tmp10(5271);
+        const tmp10Result8 = tmp10(5335);
       }
     }
     if (null == approximate_member_count) {
@@ -355,7 +355,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
       uri = guildIconURL;
       tmp25 = name;
       if (null != channel) {
-        const assetSource2 = Image.resolveAssetSource(tmp10(5271).getChannelIcon(channel));
+        const assetSource2 = Image.resolveAssetSource(tmp10(5335).getChannelIcon(channel));
         let uri3;
         if (assetSource2 != null) {
           uri3 = assetSource2.uri;
@@ -366,7 +366,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
         tmp24 = tmp14;
         uri = guildIconURL;
         tmp25 = name;
-        const tmp10Result9 = tmp10(5271);
+        const tmp10Result9 = tmp10(5335);
       }
     }
     const intl = tmp10(1115).intl;
@@ -408,8 +408,8 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
     }
     let guildBadgeImageSource;
     if (null != guild) {
-      guildBadgeImageSource = tmp10(9053).getGuildBadgeImageSource(guild, theme);
-      const tmp10Result10 = tmp10(9053);
+      guildBadgeImageSource = tmp10(8203).getGuildBadgeImageSource(guild, theme);
+      const tmp10Result10 = tmp10(8203);
     }
     const obj11 = {};
     const merged = Object.assign(baseColors);
@@ -444,8 +444,8 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
     obj11.canBeAccepted = canAcceptInviteResult;
     let channelName;
     if (null != channel) {
-      channelName = tmp10(4941).computeChannelName(channel, UserStore, RelationshipStore);
-      const tmp10Result11 = tmp10(4941);
+      channelName = tmp10(4989).computeChannelName(channel, UserStore, RelationshipStore);
+      const tmp10Result11 = tmp10(4989);
     }
     obj11.channelName = channelName;
     let GUILD = invite.type;
@@ -456,8 +456,8 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
     obj11.inviteSplash = tmp20;
     let assetUriForEmbed;
     if (null != guildBadgeImageSource) {
-      assetUriForEmbed = tmp10(8236).getAssetUriForEmbed(guildBadgeImageSource);
-      const tmp10Result12 = tmp10(8236);
+      assetUriForEmbed = tmp10(7388).getAssetUriForEmbed(guildBadgeImageSource);
+      const tmp10Result12 = tmp10(7388);
     }
     obj11.badgeIconUrl = assetUriForEmbed;
     return obj11;

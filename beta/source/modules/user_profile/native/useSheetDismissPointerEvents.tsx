@@ -1,11 +1,11 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 12553
+// Function ID: 12554
 // Name: useSheetDismissPointerEvents
-// Dependencies: [6901, 4524, 6929, 2]
+// Dependencies: [6045, 4566, 6073, 2]
 // Exports: default
 
-// Module 13312 (useSheetDismissPointerEvents)
-import LegacyBaseButton from "LegacyBaseButton" /* 6929 */;
+// Module 12553 (useSheetDismissPointerEvents)
+import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
 import size from "module_2" /* 2 */;
 
 const __initData = { code: "function useSheetDismissPointerEventsTsx1(){const{contentGestureState,State,handleGestureState}=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?'none':'box-none'};}" };

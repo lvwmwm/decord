@@ -1,10 +1,10 @@
-// Module ID: 1481
-// Function ID: 1482
+// Module ID: 1482
+// Function ID: 1483
 // Name: AppEntryKeyContext
 // Dependencies: [19, 3, 2]
 // Exports: useAppEntryKey
 
-// Module 1481 (AppEntryKeyContext)
+// Module 1482 (AppEntryKeyContext)
 import LoggerDefault from "Logger" /* 3 */;
 import noop from "module_19" /* 19 */;
 

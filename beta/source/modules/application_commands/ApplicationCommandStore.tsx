@@ -1,15 +1,15 @@
-// Module ID: 8054
-// Function ID: 8055
+// Module ID: 7199
+// Function ID: 7200
 // Name: ApplicationCommandStore
-// Dependencies: [32, 7554, 2095, 7795, 504, 573, 2]
+// Dependencies: [32, 6698, 2099, 6941, 504, 573, 2]
 
-// Module 8054 (ApplicationCommandStore)
+// Module 7199 (ApplicationCommandStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7795 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7554 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6698 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
 function handleInit() {

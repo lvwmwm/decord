@@ -1,16 +1,16 @@
-// Module ID: 8746
-// Function ID: 8747
+// Module ID: 7893
+// Function ID: 7894
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 8715, 1074, 21, 1380, 8747, 8749, 8751, 1364, 8753, 4788, 576, 8755, 8756, 8742, 5000, 8716, 8728, 8729, 8758, 8725, 8726, 5216, 5941, 4784, 8714, 2108, 1177, 5218, 1115, 3034, 5936, 5854, 8759, 8872, 7486, 4991, 5873, 8873, 8874, 1255, 7277, 2]
+// Dependencies: [5, 32, 19, 17, 7860, 1074, 21, 1380, 7894, 7896, 7898, 1364, 7900, 4836, 576, 7902, 7903, 7889, 5048, 7861, 7875, 7876, 7905, 7870, 7871, 5279, 7906, 4832, 7859, 2111, 1177, 5281, 1115, 3039, 5999, 5917, 7908, 8021, 6630, 5039, 5936, 8022, 8023, 1255, 6421, 2]
 // Exports: default
 
-// Module 8746 (AgeVerificationExpressiveV2Modal)
+// Module 7893 (AgeVerificationExpressiveV2Modal)
 import nativeDefault from "native" /* 576 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import NavigatorHeader from "NavigatorHeader" /* 5873 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8714 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8716 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8728 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7875 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -171,24 +171,24 @@ function MethodsScreen(onClose) {
     if (obj.isAgeVerified()) {
       if (tmpResult.getIsAgeVerificationCustomTabAwaitingResult()) {
         if (!tmpResult6.getIsAgeVerificationCustomTabOpen()) {
-          const result = tmp(8728).releaseAgeVerificationCustomTab();
+          const result = tmp(7875).releaseAgeVerificationCustomTab();
           callback();
-          const tmpResult7 = tmp(8728);
+          const tmpResult7 = tmp(7875);
         }
-        tmpResult6 = tmp(8728);
+        tmpResult6 = tmp(7875);
       }
-      tmpResult = tmp(8728);
-      let isAgeVerificationAuthSessionAwaitingResult = tmp(8729).getIsAgeVerificationAuthSessionAwaitingResult();
+      tmpResult = tmp(7875);
+      let isAgeVerificationAuthSessionAwaitingResult = tmp(7876).getIsAgeVerificationAuthSessionAwaitingResult();
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        isAgeVerificationAuthSessionAwaitingResult = !tmp(8729).getIsAgeVerificationAuthSessionOpen();
-        const tmpResult9 = tmp(8729);
+        isAgeVerificationAuthSessionAwaitingResult = !tmp(7876).getIsAgeVerificationAuthSessionOpen();
+        const tmpResult9 = tmp(7876);
       }
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        const result1 = tmp(8729).closeAgeVerificationAuthSession();
+        const result1 = tmp(7876).closeAgeVerificationAuthSession();
         callback();
-        const tmpResult10 = tmp(8729);
+        const tmpResult10 = tmp(7876);
       }
-      const tmpResult8 = tmp(8729);
+      const tmpResult8 = tmp(7876);
     }
   }, items4);
   const obj6 = require("AgeVerificationCustomTab");
@@ -370,11 +370,11 @@ function MethodsScreen(onClose) {
   return tmp19Result;
 }
 const ActivityIndicator = fn(17).ActivityIndicator;
-const TRUSTED_PROVIDERS_URL = fn(8715).TRUSTED_PROVIDERS_URL;
+const TRUSTED_PROVIDERS_URL = fn(7860).TRUSTED_PROVIDERS_URL;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" }, container: { alignSelf: "stretch" }, header: { textAlign: "center" }, loadingContainer: null, emptyContainer: null, footer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
 obj2.loadingContainer = { marginTop: nativeDefault.space.PX_24 };

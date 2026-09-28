@@ -1,14 +1,14 @@
-// Module ID: 14888
-// Function ID: 14889
+// Module ID: 14138
+// Function ID: 14139
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7988, 7987, 21, 5214, 14889, 1980, 504, 1364, 16259, 2]
+// Dependencies: [19, 17, 7133, 7132, 21, 5277, 14139, 1981, 504, 1364, 15549, 2]
 // Exports: default
 
-// Module 14888 (DevToolsLazy)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+// Module 14138 (DevToolsLazy)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import noop from "module_19" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7988 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7987 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7133 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7132 */;
 
 require = fn;
 const NativeModules = fn(17).NativeModules;
@@ -16,11 +16,11 @@ const jsx = fn(21).jsx;
 let items = [
   {
     input: "o",
-    modifierFlags: fn(5214).KeyModifierFlags.keyModifierControl,
+    modifierFlags: fn(5277).KeyModifierFlags.keyModifierControl,
     eventName: "keyCommandShowDevTools",
     discoverabilityTitle: "Open DevTools Panel",
     onKeyCommand() {
-      asyncRequireImpl(14889, dependencyMap.paths).then((navigateToDevTools) => {
+      asyncRequireImpl(14139, dependencyMap.paths).then((navigateToDevTools) => {
         navigateToDevTools.navigateToDevTools();
       });
       return true;
@@ -48,10 +48,10 @@ export default function DevToolsLazy() {
     }
   });
   const obj2 = stateFromStores(504);
-  const keyCommands = stateFromStores(5214).useKeyCommands(stateFromStores ? items : []);
+  const keyCommands = stateFromStores(5277).useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(16259).default, {});
+      return jsx(tmp(15549).default, {});
     }
   }
   return null;

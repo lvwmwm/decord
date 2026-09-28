@@ -1,19 +1,19 @@
-// Module ID: 18250
-// Function ID: 18251
+// Module ID: 17614
+// Function ID: 17615
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
-// Dependencies: [19, 17, 1372, 21, 4788, 576, 1115, 563, 4940, 5836, 4784, 1092, 1177, 7482, 2]
+// Dependencies: [19, 17, 1372, 21, 4836, 576, 1115, 563, 4988, 5899, 4832, 1092, 1177, 6626, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 18250 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 17614 (GuildRoleSubscriptionTierTemplateRolePreview)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1092 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import RoleIconDefault from "RoleIcon" /* 7482 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import RoleIconDefault from "RoleIcon" /* 6626 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -21,7 +21,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, avatar: { width: 40, height: 40, borderRadius: 20 }, content: { marginStart: 16 }, contextRow: { flexDirection: "row", alignItems: "center" } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);

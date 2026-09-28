@@ -1,19 +1,19 @@
-// Module ID: 16004
-// Function ID: 16005
+// Module ID: 15287
+// Function ID: 15288
 // Name: PremiumTrialOfferActionSheet
-// Dependencies: [19, 1374, 1074, 2038, 21, 7439, 7459, 1241, 13650, 9538, 4446, 7427, 16005, 2]
+// Dependencies: [19, 1374, 1074, 2042, 21, 6583, 6603, 1241, 12890, 8695, 4488, 6571, 15288, 2]
 // Exports: default
 
-// Module 16004 (PremiumTrialOfferActionSheet)
+// Module 15287 (PremiumTrialOfferActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9538 */;
-import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 13650 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
+import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 12890 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const PremiumTypes = fn(1374).PremiumTypes;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/native/trials/PremiumTrialOfferActionSheet.tsx");

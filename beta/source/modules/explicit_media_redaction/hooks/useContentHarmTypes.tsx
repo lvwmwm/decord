@@ -1,15 +1,15 @@
-// Module ID: 10471
-// Function ID: 10472
+// Module ID: 9635
+// Function ID: 9636
 // Name: useContentHarmTypes
-// Dependencies: [19, 1220, 2041, 4437, 1372, 7566, 504, 7574, 7569, 2]
+// Dependencies: [19, 1220, 2045, 4479, 1372, 6710, 504, 6718, 6713, 2]
 // Exports: useEnabledHarmTypesBitmaskForMessage
 
-// Module 10471 (useContentHarmTypes)
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7566 */;
+// Module 9635 (useContentHarmTypes)
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6710 */;
 import noop from "module_19" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -63,10 +63,10 @@ function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
     }
   }, items4);
   if (0 === memo.length) {
-    let NONE = tmp(7569).ContentHarmTypeBitMask.NONE;
+    let NONE = tmp(6713).ContentHarmTypeBitMask.NONE;
   } else {
-    NONE = tmp(7566).contentHarmTypesToFlags(memo);
-    const tmpResult = tmp(7566);
+    NONE = tmp(6710).contentHarmTypesToFlags(memo);
+    const tmpResult = tmp(6710);
   }
   return NONE;
 }

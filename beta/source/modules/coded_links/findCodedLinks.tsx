@@ -1,16 +1,17 @@
-// Module ID: 4771
-// Function ID: 4772
+// Module ID: 4816
+// Function ID: 4817
 // Name: findCodedLinks
-// Dependencies: [4772, 1074, 1076, 4775, 1368, 4776, 4777, 1361, 8166, 4773, 8009, 9361, 8642, 7959, 5705, 2]
-// Exports: default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, remainingPathFromDiscordHostMatch
+// Dependencies: [4817, 1074, 1076, 4820, 1368, 4821, 4822, 1361, 7316, 4818, 7154, 8516, 7787, 7104, 5768, 11026, 5308, 2]
+// Exports: containsCodedLink, default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, remainingPathFromDiscordHostMatch
 
-// Module 4771 (findCodedLinks)
+// Module 4816 (findCodedLinks)
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1361 */;
 import Url from "Url" /* 1368 */;
-import CodedLink from "CodedLink" /* 4776 */;
-import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 4777 */;
-import InviteStore from "InviteStore" /* 4772 */;
-import RegexUtils_mod from "RegexUtils" /* 4775 */;
+import CodedLink from "CodedLink" /* 4821 */;
+import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 4822 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5308 */;
+import InviteStore from "InviteStore" /* 4817 */;
+import RegexUtils_mod from "RegexUtils" /* 4820 */;
 
 require = fn;
 function getPathsFromURL(target) {
@@ -223,7 +224,7 @@ const re9 = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((a
 const re10 = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/;
 const re11 = /^\/activities\/([0-9-]+)\/?$/;
 const re12 = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/;
-const re13 = /^(?:\/game-shop\/([0-9]+)|\/channels\/([0-9]+)\/game-shop\/(?:[0-9]+))\/([0-9]+)(?:\/([^\/]+))?$/;
+const re13 = /^(?:\/game-shop\/([0-9]+)|\/channels\/([0-9]+)\/game-shop\/(?:[0-9]+))(?:\/([0-9]+)(?:\/([^\/]+))?)?\/?$/;
 const re14 = /^\/channels\/([0-9]+)\/shop$/;
 const re15 = /^\/quests\/([0-9-]+)\/?$/;
 const re16 = /^\/game-servers\/share\/([A-Za-z0-9_-]+)$/;
@@ -247,7 +248,7 @@ if (null == INVITE_HOST) {
 if (null == GUILD_TEMPLATE_HOST) {
   let obj7 = { host: null, pathPrefix: null };
 } else if (GUILD_TEMPLATE_HOST.indexOf("/") >= 0) {
-  const parsed1 = fn(1368).parse(GUILD_TEMPLATE_HOST, undefined, true);
+  let parsed1 = fn(1368).parse(GUILD_TEMPLATE_HOST, undefined, true);
   ({ host: obj6.host, pathname: obj6.pathPrefix } = parsed1);
   obj7 = { host: null, pathPrefix: null };
   let obj10 = { host: null, pathPrefix: null };
@@ -362,7 +363,7 @@ function findCodedLinks(str) {
         if (0 !== arg0.length) {
           const _Set = Set;
           const set = new Set();
-          const items = [];
+          let items = [];
           function _loop(iter) {
             ({ url, inviteHostRemainingPath, templateHostRemainingPath, primaryHostRemainingPath } = getPathsFromURL(iter));
             if (null != url) {
@@ -392,7 +393,7 @@ function findCodedLinks(str) {
                   obj5 = set;
                 }
                 tmp4Result = BuildOverrideUtils;
-                if (tmp4Result8.isExperimentEmbedURL(iter)) {
+                if (tmp4Result17.isExperimentEmbedURL(iter)) {
                   if (!set.has(iter)) {
                     obj8.add(iter);
                     const obj6 = { type: tmp4(tmp5[5]).CodedLinkType.EXPERIMENT, code: iter, url: iter };
@@ -409,7 +410,7 @@ function findCodedLinks(str) {
                     const inviteKeyFromUrlParams = tmp4(tmp5[9]).generateInviteKeyFromUrlParams(inviteHostRemainingPath.substring(1), url.search);
                     invite = invite.getInvite(inviteKeyFromUrlParams);
                     if (null != invite) {
-                      if (tmp4Result10.isEmbeddedApplicationInvite(invite)) {
+                      if (tmp4Result19.isEmbeddedApplicationInvite(invite)) {
                         if (!set.has(inviteKeyFromUrlParams)) {
                           obj14.add(inviteKeyFromUrlParams);
                           obj7 = { type: tmp4(tmp5[5]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE, code: inviteKeyFromUrlParams, url: iter };
@@ -417,7 +418,7 @@ function findCodedLinks(str) {
                         }
                         obj14 = set;
                       }
-                      tmp4Result10 = tmp4(tmp5[10]);
+                      tmp4Result19 = tmp4(tmp5[10]);
                     }
                     if (iter.includes("\\")) {
                       return 0;
@@ -429,7 +430,7 @@ function findCodedLinks(str) {
                       }
                       obj12 = set;
                     }
-                    const tmp4Result9 = tmp4(tmp5[9]);
+                    const tmp4Result18 = tmp4(tmp5[9]);
                   }
                 }
                 let match1;
@@ -462,7 +463,7 @@ function findCodedLinks(str) {
                         items.push(obj11);
                       }
                       obj21 = set;
-                      const tmp4Result11 = tmp4(tmp5[9]);
+                      const tmp4Result20 = tmp4(tmp5[9]);
                     }
                   } else {
                     if (!set.has(match2[2])) {
@@ -503,7 +504,7 @@ function findCodedLinks(str) {
                   }
                 }
                 if (null != tmp48) {
-                  const _HermesInternal6 = HermesInternal;
+                  const _HermesInternal4 = HermesInternal;
                   let str7 = "";
                   const combined = "" + tmp48.guildId + "-" + tmp48.guildEventId;
                   if (null != tmp48.recurrenceId) {
@@ -546,7 +547,7 @@ function findCodedLinks(str) {
                       }
                       obj28 = set;
                     }
-                    const tmp4Result12 = tmp4(tmp5[11]);
+                    const tmp4Result21 = tmp4(tmp5[11]);
                   }
                 }
                 let match6;
@@ -567,18 +568,18 @@ function findCodedLinks(str) {
                 }
                 if (null != match7) {
                   if (null != match7[3]) {
-                    const storefrontSKUCodedLink = tmp4(tmp5[13]).makeStorefrontSKUCodedLink(tmp150, tmp151);
+                    const storefrontSKUCodedLink = tmp4(tmp5[13]).makeStorefrontSKUCodedLink(tmp152, tmp153);
                     if (!set.has(storefrontSKUCodedLink)) {
                       obj35.add(storefrontSKUCodedLink);
                       const obj24 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, code: storefrontSKUCodedLink, url: iter };
                       items.push(obj24);
                     }
                     obj35 = set;
-                    const tmp4Result13 = tmp4(tmp5[13]);
+                    const tmp4Result22 = tmp4(tmp5[13]);
                   } else {
-                    if (!set.has(tmp150)) {
-                      obj32.add(tmp150);
-                      const obj25 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT, code: tmp150, url: iter };
+                    if (!set.has(tmp152)) {
+                      obj32.add(tmp152);
+                      const obj25 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT, code: tmp152, url: iter };
                       items.push(obj25);
                     }
                     obj32 = set;
@@ -631,34 +632,70 @@ function findCodedLinks(str) {
                   if (tmp99 == null) {
                     tmp99 = match11[2];
                   }
-                  const _HermesInternal3 = HermesInternal;
-                  const combined2 = "" + match11[3] + "-" + tmp99;
-                  if (!set.has(combined2)) {
-                    obj43.add(combined2);
-                    const obj33 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT, code: combined2, url: iter };
-                    items.push(obj33);
+                  let parsed = null;
+                  if (null != query) {
+                    parsed = tmp4(tmp5[14]).parse(query);
+                    const tmp4Result23 = tmp4(tmp5[14]);
                   }
-                  obj43 = set;
+                  if (typeof match11[3] === "string") {
+                    items = [tmp100];
+                    let result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(items);
+                    const tmp4Result24 = tmp4(tmp5[15]);
+                  } else {
+                    let skuIds;
+                    if (parsed != null) {
+                      skuIds = parsed.skuIds;
+                    }
+                    if (typeof skuIds === "string") {
+                      result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds.split(","));
+                      const tmp4Result25 = tmp4(tmp5[15]);
+                    } else {
+                      const _Array = Array;
+                      if (Array.isArray(skuIds)) {
+                        result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds.flatMap((item) => {
+                          if (typeof item === "string") {
+                            let parts = item.split(",");
+                          } else {
+                            parts = [];
+                          }
+                          return parts;
+                        }));
+                        const tmp4Result26 = tmp4(tmp5[15]);
+                      } else {
+                        result1 = [];
+                      }
+                    }
+                  }
+                  if (result1.length > 0) {
+                    const storefrontCodedLink = tmp4(tmp5[15]).makeStorefrontCodedLink(result1, tmp99);
+                    if (!set.has(storefrontCodedLink)) {
+                      obj48.add(storefrontCodedLink);
+                      const obj33 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT, code: storefrontCodedLink, url: iter };
+                      items.push(obj33);
+                    }
+                    obj48 = set;
+                    const tmp4Result27 = tmp4(tmp5[15]);
+                  }
                 }
-                const str13 = getPathsFromURL(iter).primaryHostRemainingPath;
+                const str12 = getPathsFromURL(iter).primaryHostRemainingPath;
                 let match12;
-                if (str13 != null) {
-                  match12 = str13.match(closure_2_15);
+                if (str12 != null) {
+                  match12 = str12.match(closure_2_15);
                 }
-                let tmp107;
+                let tmp109;
                 if (match12 != null) {
-                  tmp107 = match12[1];
+                  tmp109 = match12[1];
                 }
-                if (tmp107 == null) {
-                  tmp107 = null;
+                if (tmp109 == null) {
+                  tmp109 = null;
                 }
-                if (null != tmp107) {
-                  if (!set.has(tmp107)) {
-                    obj45.add(tmp107);
-                    const obj34 = { type: tmp4(tmp5[5]).CodedLinkType.QUESTS_EMBED, code: tmp107, url: iter };
+                if (null != tmp109) {
+                  if (!set.has(tmp109)) {
+                    obj50.add(tmp109);
+                    const obj34 = { type: tmp4(tmp5[5]).CodedLinkType.QUESTS_EMBED, code: tmp109, url: iter };
                     items.push(obj34);
                   }
-                  obj45 = set;
+                  obj50 = set;
                 }
                 let match13;
                 if (primaryHostRemainingPath != null) {
@@ -666,11 +703,11 @@ function findCodedLinks(str) {
                 }
                 if (null != match13) {
                   if (!set.has(match13[1])) {
-                    obj47.add(tmp113);
-                    const obj36 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_PROFILE, code: tmp113, url: iter };
+                    obj52.add(tmp115);
+                    const obj36 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_PROFILE, code: tmp115, url: iter };
                     items.push(obj36);
                   }
-                  obj47 = set;
+                  obj52 = set;
                 }
                 let match14;
                 if (primaryHostRemainingPath != null) {
@@ -678,11 +715,11 @@ function findCodedLinks(str) {
                 }
                 if (null != match14) {
                   if (!set.has(match14[1])) {
-                    obj49.add(tmp119);
-                    const obj38 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_SERVER_SHARE, code: tmp119, url: iter };
+                    obj54.add(tmp121);
+                    const obj38 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_SERVER_SHARE, code: tmp121, url: iter };
                     items.push(obj38);
                   }
-                  obj49 = set;
+                  obj54 = set;
                 }
                 let match15;
                 if (primaryHostRemainingPath != null) {
@@ -690,57 +727,82 @@ function findCodedLinks(str) {
                 }
                 if (null != match15) {
                   if (!set.has(match15[1])) {
-                    obj51.add(tmp125);
-                    const obj40 = { type: tmp4(tmp5[5]).CodedLinkType.USER_PROFILE, code: tmp125, url: iter };
+                    obj56.add(tmp127);
+                    const obj40 = { type: tmp4(tmp5[5]).CodedLinkType.USER_PROFILE, code: tmp127, url: iter };
                     items.push(obj40);
                   }
-                  obj51 = set;
+                  obj56 = set;
                 }
                 if ("/shop" === primaryHostRemainingPath) {
-                  let parsed = null;
+                  let parsed1 = null;
                   if (null != query) {
-                    parsed = tmp4(tmp5[14]).parse(query);
-                    const tmp4Result14 = tmp4(tmp5[14]);
+                    parsed1 = tmp4(tmp5[14]).parse(query);
+                    const tmp4Result28 = tmp4(tmp5[14]);
                   }
-                  let str15;
-                  if (parsed != null) {
-                    str15 = parsed.tab;
+                  let str14;
+                  if (parsed1 != null) {
+                    str14 = parsed1.tab;
                   }
-                  if (str15 === constants.GAME_SHOPS) {
-                    let applicationId1;
-                    if (parsed != null) {
-                      applicationId1 = parsed.applicationId;
-                    }
-                    if (null != applicationId1) {
-                      let skuId1;
-                      if (parsed != null) {
-                        skuId1 = parsed.skuId;
+                  let applicationId;
+                  if (parsed1 != null) {
+                    applicationId = parsed1.applicationId;
+                  }
+                  if (str14 === constants.GAME_SHOPS) {
+                    if (typeof applicationId === "string") {
+                      let skuId;
+                      if (parsed1 != null) {
+                        skuId = parsed1.skuId;
                       }
-                      if (null != skuId1) {
-                        ({ applicationId, skuId } = parsed);
-                        let tmp140 = typeof applicationId === "string";
-                        if (typeof applicationId === "string") {
-                          tmp140 = typeof skuId === "string";
+                      if (typeof skuId === "string") {
+                        const items1 = [skuId];
+                        let result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(items1);
+                        const tmp4Result29 = tmp4(tmp5[15]);
+                      } else {
+                        let skuIds1;
+                        if (parsed1 != null) {
+                          skuIds1 = parsed1.skuIds;
                         }
-                        if (tmp140) {
-                          const _HermesInternal5 = HermesInternal;
-                          const combined3 = "" + skuId + "-" + applicationId;
-                          if (!set.has(combined3)) {
-                            obj56.add(combined3);
-                            const obj42 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP, code: combined3, url: iter };
-                            items.push(obj42);
+                        if (typeof skuIds1 === "string") {
+                          result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds1.split(","));
+                          const tmp4Result30 = tmp4(tmp5[15]);
+                        } else {
+                          const _Array2 = Array;
+                          if (Array.isArray(skuIds1)) {
+                            result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds1.flatMap((item) => {
+                              if (typeof item === "string") {
+                                let parts = item.split(",");
+                              } else {
+                                parts = [];
+                              }
+                              return parts;
+                            }));
+                            const tmp4Result31 = tmp4(tmp5[15]);
+                          } else {
+                            result2 = [];
                           }
-                          obj56 = set;
                         }
                       }
+                    }
+                  }
+                  const items2 = [];
+                  if (typeof applicationId === "string") {
+                    if (items2.length > 0) {
+                      const storefrontCodedLink1 = tmp4(tmp5[15]).makeStorefrontCodedLink(items2, applicationId);
+                      if (!set.has(storefrontCodedLink1)) {
+                        obj65.add(storefrontCodedLink1);
+                        const obj42 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP, code: storefrontCodedLink1, url: iter };
+                        items.push(obj42);
+                      }
+                      obj65 = set;
+                      const tmp4Result32 = tmp4(tmp5[15]);
                     }
                   }
                   let match16;
                   if (url.hash != null) {
                     match16 = str16.match(closure_2_20);
                   }
-                  if (str15 == null) {
-                    str15 = "";
+                  if (str14 == null) {
+                    str14 = "";
                   }
                   let str17;
                   if (match16 != null) {
@@ -749,14 +811,14 @@ function findCodedLinks(str) {
                   if (str17 == null) {
                     str17 = "";
                   }
-                  const _HermesInternal4 = HermesInternal;
-                  const combined4 = "" + str15 + "-" + str17;
-                  if (!set.has(combined4)) {
-                    obj54.add(combined4);
-                    const obj44 = { type: tmp4(tmp5[5]).CodedLinkType.COLLECTIBLES_SHOP, code: combined4, url: iter };
-                    items.push(obj44);
+                  const _HermesInternal3 = HermesInternal;
+                  const combined2 = "" + str14 + "-" + str17;
+                  if (!set.has(combined2)) {
+                    obj62.add(combined2);
+                    const obj43 = { type: tmp4(tmp5[5]).CodedLinkType.COLLECTIBLES_SHOP, code: combined2, url: iter };
+                    items.push(obj43);
                   }
-                  obj54 = set;
+                  obj62 = set;
                 }
               }
             }
@@ -1025,7 +1087,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
         if (0 !== arg0.length) {
           const _Set = Set;
           const set = new Set();
-          const items = [];
+          let items = [];
           function _loop(iter) {
             ({ url, inviteHostRemainingPath, templateHostRemainingPath, primaryHostRemainingPath } = getPathsFromURL(iter));
             if (null != url) {
@@ -1055,7 +1117,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                   obj5 = set;
                 }
                 tmp4Result = BuildOverrideUtils;
-                if (tmp4Result8.isExperimentEmbedURL(iter)) {
+                if (tmp4Result17.isExperimentEmbedURL(iter)) {
                   if (!set.has(iter)) {
                     obj8.add(iter);
                     const obj6 = { type: tmp4(tmp5[5]).CodedLinkType.EXPERIMENT, code: iter, url: iter };
@@ -1072,7 +1134,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                     const inviteKeyFromUrlParams = tmp4(tmp5[9]).generateInviteKeyFromUrlParams(inviteHostRemainingPath.substring(1), url.search);
                     invite = invite.getInvite(inviteKeyFromUrlParams);
                     if (null != invite) {
-                      if (tmp4Result10.isEmbeddedApplicationInvite(invite)) {
+                      if (tmp4Result19.isEmbeddedApplicationInvite(invite)) {
                         if (!set.has(inviteKeyFromUrlParams)) {
                           obj14.add(inviteKeyFromUrlParams);
                           obj7 = { type: tmp4(tmp5[5]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE, code: inviteKeyFromUrlParams, url: iter };
@@ -1080,7 +1142,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                         }
                         obj14 = set;
                       }
-                      tmp4Result10 = tmp4(tmp5[10]);
+                      tmp4Result19 = tmp4(tmp5[10]);
                     }
                     if (iter.includes("\\")) {
                       return 0;
@@ -1092,7 +1154,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                       }
                       obj12 = set;
                     }
-                    const tmp4Result9 = tmp4(tmp5[9]);
+                    const tmp4Result18 = tmp4(tmp5[9]);
                   }
                 }
                 let match1;
@@ -1125,7 +1187,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                         items.push(obj11);
                       }
                       obj21 = set;
-                      const tmp4Result11 = tmp4(tmp5[9]);
+                      const tmp4Result20 = tmp4(tmp5[9]);
                     }
                   } else {
                     if (!set.has(match2[2])) {
@@ -1166,7 +1228,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                   }
                 }
                 if (null != tmp48) {
-                  const _HermesInternal6 = HermesInternal;
+                  const _HermesInternal4 = HermesInternal;
                   let str7 = "";
                   const combined = "" + tmp48.guildId + "-" + tmp48.guildEventId;
                   if (null != tmp48.recurrenceId) {
@@ -1209,7 +1271,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                       }
                       obj28 = set;
                     }
-                    const tmp4Result12 = tmp4(tmp5[11]);
+                    const tmp4Result21 = tmp4(tmp5[11]);
                   }
                 }
                 let match6;
@@ -1230,18 +1292,18 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                 }
                 if (null != match7) {
                   if (null != match7[3]) {
-                    const storefrontSKUCodedLink = tmp4(tmp5[13]).makeStorefrontSKUCodedLink(tmp150, tmp151);
+                    const storefrontSKUCodedLink = tmp4(tmp5[13]).makeStorefrontSKUCodedLink(tmp152, tmp153);
                     if (!set.has(storefrontSKUCodedLink)) {
                       obj35.add(storefrontSKUCodedLink);
                       const obj24 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, code: storefrontSKUCodedLink, url: iter };
                       items.push(obj24);
                     }
                     obj35 = set;
-                    const tmp4Result13 = tmp4(tmp5[13]);
+                    const tmp4Result22 = tmp4(tmp5[13]);
                   } else {
-                    if (!set.has(tmp150)) {
-                      obj32.add(tmp150);
-                      const obj25 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT, code: tmp150, url: iter };
+                    if (!set.has(tmp152)) {
+                      obj32.add(tmp152);
+                      const obj25 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT, code: tmp152, url: iter };
                       items.push(obj25);
                     }
                     obj32 = set;
@@ -1294,34 +1356,70 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                   if (tmp99 == null) {
                     tmp99 = match11[2];
                   }
-                  const _HermesInternal3 = HermesInternal;
-                  const combined2 = "" + match11[3] + "-" + tmp99;
-                  if (!set.has(combined2)) {
-                    obj43.add(combined2);
-                    const obj33 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT, code: combined2, url: iter };
-                    items.push(obj33);
+                  let parsed = null;
+                  if (null != query) {
+                    parsed = tmp4(tmp5[14]).parse(query);
+                    const tmp4Result23 = tmp4(tmp5[14]);
                   }
-                  obj43 = set;
+                  if (typeof match11[3] === "string") {
+                    items = [tmp100];
+                    let result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(items);
+                    const tmp4Result24 = tmp4(tmp5[15]);
+                  } else {
+                    let skuIds;
+                    if (parsed != null) {
+                      skuIds = parsed.skuIds;
+                    }
+                    if (typeof skuIds === "string") {
+                      result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds.split(","));
+                      const tmp4Result25 = tmp4(tmp5[15]);
+                    } else {
+                      const _Array = Array;
+                      if (Array.isArray(skuIds)) {
+                        result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds.flatMap((item) => {
+                          if (typeof item === "string") {
+                            let parts = item.split(",");
+                          } else {
+                            parts = [];
+                          }
+                          return parts;
+                        }));
+                        const tmp4Result26 = tmp4(tmp5[15]);
+                      } else {
+                        result1 = [];
+                      }
+                    }
+                  }
+                  if (result1.length > 0) {
+                    const storefrontCodedLink = tmp4(tmp5[15]).makeStorefrontCodedLink(result1, tmp99);
+                    if (!set.has(storefrontCodedLink)) {
+                      obj48.add(storefrontCodedLink);
+                      const obj33 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT, code: storefrontCodedLink, url: iter };
+                      items.push(obj33);
+                    }
+                    obj48 = set;
+                    const tmp4Result27 = tmp4(tmp5[15]);
+                  }
                 }
-                const str13 = getPathsFromURL(iter).primaryHostRemainingPath;
+                const str12 = getPathsFromURL(iter).primaryHostRemainingPath;
                 let match12;
-                if (str13 != null) {
-                  match12 = str13.match(closure_2_15);
+                if (str12 != null) {
+                  match12 = str12.match(closure_2_15);
                 }
-                let tmp107;
+                let tmp109;
                 if (match12 != null) {
-                  tmp107 = match12[1];
+                  tmp109 = match12[1];
                 }
-                if (tmp107 == null) {
-                  tmp107 = null;
+                if (tmp109 == null) {
+                  tmp109 = null;
                 }
-                if (null != tmp107) {
-                  if (!set.has(tmp107)) {
-                    obj45.add(tmp107);
-                    const obj34 = { type: tmp4(tmp5[5]).CodedLinkType.QUESTS_EMBED, code: tmp107, url: iter };
+                if (null != tmp109) {
+                  if (!set.has(tmp109)) {
+                    obj50.add(tmp109);
+                    const obj34 = { type: tmp4(tmp5[5]).CodedLinkType.QUESTS_EMBED, code: tmp109, url: iter };
                     items.push(obj34);
                   }
-                  obj45 = set;
+                  obj50 = set;
                 }
                 let match13;
                 if (primaryHostRemainingPath != null) {
@@ -1329,11 +1427,11 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                 }
                 if (null != match13) {
                   if (!set.has(match13[1])) {
-                    obj47.add(tmp113);
-                    const obj36 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_PROFILE, code: tmp113, url: iter };
+                    obj52.add(tmp115);
+                    const obj36 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_PROFILE, code: tmp115, url: iter };
                     items.push(obj36);
                   }
-                  obj47 = set;
+                  obj52 = set;
                 }
                 let match14;
                 if (primaryHostRemainingPath != null) {
@@ -1341,11 +1439,11 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                 }
                 if (null != match14) {
                   if (!set.has(match14[1])) {
-                    obj49.add(tmp119);
-                    const obj38 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_SERVER_SHARE, code: tmp119, url: iter };
+                    obj54.add(tmp121);
+                    const obj38 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_SERVER_SHARE, code: tmp121, url: iter };
                     items.push(obj38);
                   }
-                  obj49 = set;
+                  obj54 = set;
                 }
                 let match15;
                 if (primaryHostRemainingPath != null) {
@@ -1353,57 +1451,82 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                 }
                 if (null != match15) {
                   if (!set.has(match15[1])) {
-                    obj51.add(tmp125);
-                    const obj40 = { type: tmp4(tmp5[5]).CodedLinkType.USER_PROFILE, code: tmp125, url: iter };
+                    obj56.add(tmp127);
+                    const obj40 = { type: tmp4(tmp5[5]).CodedLinkType.USER_PROFILE, code: tmp127, url: iter };
                     items.push(obj40);
                   }
-                  obj51 = set;
+                  obj56 = set;
                 }
                 if ("/shop" === primaryHostRemainingPath) {
-                  let parsed = null;
+                  let parsed1 = null;
                   if (null != query) {
-                    parsed = tmp4(tmp5[14]).parse(query);
-                    const tmp4Result14 = tmp4(tmp5[14]);
+                    parsed1 = tmp4(tmp5[14]).parse(query);
+                    const tmp4Result28 = tmp4(tmp5[14]);
                   }
-                  let str15;
-                  if (parsed != null) {
-                    str15 = parsed.tab;
+                  let str14;
+                  if (parsed1 != null) {
+                    str14 = parsed1.tab;
                   }
-                  if (str15 === constants.GAME_SHOPS) {
-                    let applicationId1;
-                    if (parsed != null) {
-                      applicationId1 = parsed.applicationId;
-                    }
-                    if (null != applicationId1) {
-                      let skuId1;
-                      if (parsed != null) {
-                        skuId1 = parsed.skuId;
+                  let applicationId;
+                  if (parsed1 != null) {
+                    applicationId = parsed1.applicationId;
+                  }
+                  if (str14 === constants.GAME_SHOPS) {
+                    if (typeof applicationId === "string") {
+                      let skuId;
+                      if (parsed1 != null) {
+                        skuId = parsed1.skuId;
                       }
-                      if (null != skuId1) {
-                        ({ applicationId, skuId } = parsed);
-                        let tmp140 = typeof applicationId === "string";
-                        if (typeof applicationId === "string") {
-                          tmp140 = typeof skuId === "string";
+                      if (typeof skuId === "string") {
+                        const items1 = [skuId];
+                        let result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(items1);
+                        const tmp4Result29 = tmp4(tmp5[15]);
+                      } else {
+                        let skuIds1;
+                        if (parsed1 != null) {
+                          skuIds1 = parsed1.skuIds;
                         }
-                        if (tmp140) {
-                          const _HermesInternal5 = HermesInternal;
-                          const combined3 = "" + skuId + "-" + applicationId;
-                          if (!set.has(combined3)) {
-                            obj56.add(combined3);
-                            const obj42 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP, code: combined3, url: iter };
-                            items.push(obj42);
+                        if (typeof skuIds1 === "string") {
+                          result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds1.split(","));
+                          const tmp4Result30 = tmp4(tmp5[15]);
+                        } else {
+                          const _Array2 = Array;
+                          if (Array.isArray(skuIds1)) {
+                            result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds1.flatMap((item) => {
+                              if (typeof item === "string") {
+                                let parts = item.split(",");
+                              } else {
+                                parts = [];
+                              }
+                              return parts;
+                            }));
+                            const tmp4Result31 = tmp4(tmp5[15]);
+                          } else {
+                            result2 = [];
                           }
-                          obj56 = set;
                         }
                       }
+                    }
+                  }
+                  const items2 = [];
+                  if (typeof applicationId === "string") {
+                    if (items2.length > 0) {
+                      const storefrontCodedLink1 = tmp4(tmp5[15]).makeStorefrontCodedLink(items2, applicationId);
+                      if (!set.has(storefrontCodedLink1)) {
+                        obj65.add(storefrontCodedLink1);
+                        const obj42 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP, code: storefrontCodedLink1, url: iter };
+                        items.push(obj42);
+                      }
+                      obj65 = set;
+                      const tmp4Result32 = tmp4(tmp5[15]);
                     }
                   }
                   let match16;
                   if (url.hash != null) {
                     match16 = str16.match(closure_2_20);
                   }
-                  if (str15 == null) {
-                    str15 = "";
+                  if (str14 == null) {
+                    str14 = "";
                   }
                   let str17;
                   if (match16 != null) {
@@ -1412,14 +1535,14 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                   if (str17 == null) {
                     str17 = "";
                   }
-                  const _HermesInternal4 = HermesInternal;
-                  const combined4 = "" + str15 + "-" + str17;
-                  if (!set.has(combined4)) {
-                    obj54.add(combined4);
-                    const obj44 = { type: tmp4(tmp5[5]).CodedLinkType.COLLECTIBLES_SHOP, code: combined4, url: iter };
-                    items.push(obj44);
+                  const _HermesInternal3 = HermesInternal;
+                  const combined2 = "" + str14 + "-" + str17;
+                  if (!set.has(combined2)) {
+                    obj62.add(combined2);
+                    const obj43 = { type: tmp4(tmp5[5]).CodedLinkType.COLLECTIBLES_SHOP, code: combined2, url: iter };
+                    items.push(obj43);
                   }
-                  obj54 = set;
+                  obj62 = set;
                 }
               }
             }
@@ -1435,9 +1558,511 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
       }
       return [];
     }
-    let result = coerceLinksToCodedLinks(findCodedLinkUrlsDefault(str).concat(match));
+    const result = coerceLinksToCodedLinks(findCodedLinkUrlsDefault(str).concat(match));
     items = result.slice(0, 10);
     obj = findCodedLinkUrlsDefault(str);
   }
   return items[0];
+};
+export const containsCodedLink = function containsCodedLink(sanitizeWhitespaceResult) {
+  if (null == sanitizeWhitespaceResult) {
+    return tmp;
+  } else {
+    const str = UnicodeSanitizationUtils.sanitizeUnicodeConfusables(sanitizeWhitespaceResult);
+    if (null == str) {
+      let items = [];
+    } else {
+      const str2 = str.replace(regExp1, (arg0, arg1, arg2, arg3) => {
+        let combined = arg0;
+        if (null == arg2) {
+          const _HermesInternal = HermesInternal;
+          combined = "" + arg1 + "http://" + arg3;
+        }
+        return combined;
+      });
+      let match = str2.match(re21);
+      if (match == null) {
+        match = [];
+      }
+      function coerceLinksToCodedLinks(arg0) {
+        if (null != arg0) {
+          if (0 !== arg0.length) {
+            const _Set = Set;
+            const set = new Set();
+            let items = [];
+            function _loop(iter) {
+              ({ url, inviteHostRemainingPath, templateHostRemainingPath, primaryHostRemainingPath } = getPathsFromURL(iter));
+              if (null != url) {
+                if (null != url.pathname) {
+                  let query = null;
+                  if (null != url.query) {
+                    query = null;
+                    if (url.query.length <= 1000) {
+                      query = url.query;
+                    }
+                  }
+                  if (obj.isBuildOverrideLink(iter)) {
+                    if (!set.has(iter)) {
+                      obj2.add(iter);
+                      const obj3 = { type: tmp4(tmp5[5]).CodedLinkType.BUILD_OVERRIDE, code: iter, url: iter };
+                      items.push(obj3);
+                    }
+                    obj2 = set;
+                  }
+                  obj = BuildOverrideUtils;
+                  if (tmp4Result.isManualBuildOverrideLink(iter)) {
+                    if (!set.has(iter)) {
+                      obj5.add(iter);
+                      const obj4 = { type: tmp4(tmp5[5]).CodedLinkType.MANUAL_BUILD_OVERRIDE, code: iter, url: iter };
+                      items.push(obj4);
+                    }
+                    obj5 = set;
+                  }
+                  tmp4Result = BuildOverrideUtils;
+                  if (tmp4Result17.isExperimentEmbedURL(iter)) {
+                    if (!set.has(iter)) {
+                      obj8.add(iter);
+                      const obj6 = { type: tmp4(tmp5[5]).CodedLinkType.EXPERIMENT, code: iter, url: iter };
+                      items.push(obj6);
+                    }
+                    obj8 = set;
+                  }
+                  let match;
+                  if (inviteHostRemainingPath != null) {
+                    match = inviteHostRemainingPath.match(closure_2_5);
+                  }
+                  if (null != match) {
+                    if ("https:" === url.protocol) {
+                      const inviteKeyFromUrlParams = tmp4(tmp5[9]).generateInviteKeyFromUrlParams(inviteHostRemainingPath.substring(1), url.search);
+                      invite = invite.getInvite(inviteKeyFromUrlParams);
+                      if (null != invite) {
+                        if (tmp4Result19.isEmbeddedApplicationInvite(invite)) {
+                          if (!set.has(inviteKeyFromUrlParams)) {
+                            obj14.add(inviteKeyFromUrlParams);
+                            obj7 = { type: tmp4(tmp5[5]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE, code: inviteKeyFromUrlParams, url: iter };
+                            items.push(obj7);
+                          }
+                          obj14 = set;
+                        }
+                        tmp4Result19 = tmp4(tmp5[10]);
+                      }
+                      if (iter.includes("\\")) {
+                        return 0;
+                      } else {
+                        if (!set.has(inviteKeyFromUrlParams)) {
+                          obj12.add(inviteKeyFromUrlParams);
+                          const obj9 = { type: tmp4(tmp5[5]).CodedLinkType.INVITE, code: inviteKeyFromUrlParams, url: iter };
+                          items.push(obj9);
+                        }
+                        obj12 = set;
+                      }
+                      const tmp4Result18 = tmp4(tmp5[9]);
+                    }
+                  }
+                  let match1;
+                  if (templateHostRemainingPath != null) {
+                    match1 = templateHostRemainingPath.match(closure_2_5);
+                  }
+                  if (null != match1) {
+                    const substr = templateHostRemainingPath.substring(1);
+                    if (!set.has(substr)) {
+                      obj16.add(substr);
+                      const obj10 = { type: tmp4(tmp5[5]).CodedLinkType.TEMPLATE, code: substr, url: iter };
+                      items.push(obj10);
+                    }
+                    obj16 = set;
+                  }
+                  let match2;
+                  if (primaryHostRemainingPath != null) {
+                    match2 = primaryHostRemainingPath.match(closure_2_7);
+                  }
+                  if (null != match2) {
+                    const formatted = match2[1].toUpperCase();
+                    if (formatted === tmp4(tmp5[5]).CodedLinkType.INVITE) {
+                      if (iter.includes("\\")) {
+                        return 0;
+                      } else {
+                        const inviteKeyFromUrlParams1 = tmp4(tmp5[9]).generateInviteKeyFromUrlParams(match2[2], url.search);
+                        if (!set.has(inviteKeyFromUrlParams1)) {
+                          obj21.add(inviteKeyFromUrlParams1);
+                          const obj11 = { type: tmp4(tmp5[5]).CodedLinkType.INVITE, code: inviteKeyFromUrlParams1, url: iter };
+                          items.push(obj11);
+                        }
+                        obj21 = set;
+                        const tmp4Result20 = tmp4(tmp5[9]);
+                      }
+                    } else {
+                      if (!set.has(match2[2])) {
+                        obj18.add(tmp34);
+                        obj13 = { type: formatted, code: tmp34, url: iter };
+                        items.push(obj13);
+                      }
+                      obj18 = set;
+                    }
+                  }
+                  let match3;
+                  if (primaryHostRemainingPath != null) {
+                    match3 = primaryHostRemainingPath.match(closure_2_6);
+                  }
+                  if (null != match3) {
+                    const replaced = primaryHostRemainingPath.replace("/channels/", "");
+                    if (!set.has(replaced)) {
+                      obj23.add(replaced);
+                      const obj15 = { type: tmp4(tmp5[5]).CodedLinkType.CHANNEL_LINK, code: replaced, url: iter };
+                      items.push(obj15);
+                    }
+                    obj23 = set;
+                  }
+                  let tmp48 = null;
+                  if (null != url.pathname) {
+                    const match4 = str6.match(regExp);
+                    tmp48 = null;
+                    if (null != match4) {
+                      tmp48 = null;
+                      if (match4.length >= 4) {
+                        let tmp51 = null;
+                        if (null != match4[2]) {
+                          const obj17 = { guildId: match4[1], guildEventId: tmp50, recurrenceId: match4[4] };
+                          tmp51 = obj17;
+                        }
+                        tmp48 = tmp51;
+                      }
+                    }
+                  }
+                  if (null != tmp48) {
+                    const _HermesInternal4 = HermesInternal;
+                    let str7 = "";
+                    const combined = "" + tmp48.guildId + "-" + tmp48.guildEventId;
+                    if (null != tmp48.recurrenceId) {
+                      const _HermesInternal = HermesInternal;
+                      str7 = "-" + tmp48.recurrenceId;
+                    }
+                    const sum = combined + str7;
+                    if (!set.has(sum)) {
+                      obj26.add(sum);
+                      obj19 = { type: tmp4(tmp5[5]).CodedLinkType.EVENT, code: sum, url: iter };
+                      items.push(obj19);
+                    }
+                    obj26 = set;
+                  }
+                  let match5;
+                  if (primaryHostRemainingPath != null) {
+                    match5 = primaryHostRemainingPath.match(closure_2_19);
+                  }
+                  if (null != match5) {
+                    if (null != query) {
+                      const result = tmp4(tmp5[11]).parseOAuth2AuthorizeProps(query);
+                      const clientId = result.clientId;
+                      let tmp58 = null == clientId;
+                      if (!tmp58) {
+                        tmp58 = "" === clientId;
+                      }
+                      if (!tmp58) {
+                        const scopes = result.scopes;
+                        let someResult;
+                        if (scopes != null) {
+                          someResult = scopes.some((item) => item !== set(closure_1_2[12]).OAuth2Scopes.APPLICATIONS_COMMANDS);
+                        }
+                        tmp58 = someResult;
+                      }
+                      if (!tmp58) {
+                        if (!set.has(clientId)) {
+                          obj28.add(clientId);
+                          const obj20 = { type: tmp4(tmp5[5]).CodedLinkType.APP_OAUTH2_LINK, code: clientId, url: iter };
+                          items.push(obj20);
+                        }
+                        obj28 = set;
+                      }
+                      const tmp4Result21 = tmp4(tmp5[11]);
+                    }
+                  }
+                  let match6;
+                  if (primaryHostRemainingPath != null) {
+                    match6 = primaryHostRemainingPath.match(closure_2_9);
+                  }
+                  if (null != match6) {
+                    if (!set.has(match6[2])) {
+                      obj30.add(tmp65);
+                      const obj22 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_PROFILE, code: tmp65, url: iter };
+                      items.push(obj22);
+                    }
+                    obj30 = set;
+                  }
+                  let match7;
+                  if (primaryHostRemainingPath != null) {
+                    match7 = primaryHostRemainingPath.match(closure_2_10);
+                  }
+                  if (null != match7) {
+                    if (null != match7[3]) {
+                      const storefrontSKUCodedLink = tmp4(tmp5[13]).makeStorefrontSKUCodedLink(tmp152, tmp153);
+                      if (!set.has(storefrontSKUCodedLink)) {
+                        obj35.add(storefrontSKUCodedLink);
+                        const obj24 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, code: storefrontSKUCodedLink, url: iter };
+                        items.push(obj24);
+                      }
+                      obj35 = set;
+                      const tmp4Result22 = tmp4(tmp5[13]);
+                    } else {
+                      if (!set.has(tmp152)) {
+                        obj32.add(tmp152);
+                        const obj25 = { type: tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_STOREFRONT, code: tmp152, url: iter };
+                        items.push(obj25);
+                      }
+                      obj32 = set;
+                    }
+                  }
+                  let match8;
+                  if (primaryHostRemainingPath != null) {
+                    match8 = primaryHostRemainingPath.match(closure_2_11);
+                  }
+                  if (null != match8) {
+                    if (!set.has(match8[1])) {
+                      obj37.add(tmp80);
+                      const obj27 = { type: tmp4(tmp5[5]).CodedLinkType.ACTIVITY_BOOKMARK, code: tmp80, url: iter };
+                      items.push(obj27);
+                    }
+                    obj37 = set;
+                  }
+                  let match9;
+                  if (primaryHostRemainingPath != null) {
+                    match9 = primaryHostRemainingPath.match(closure_2_12);
+                  }
+                  if (null != match9) {
+                    const _HermesInternal2 = HermesInternal;
+                    const combined1 = "" + match9[1] + "-" + match9[2];
+                    if (!set.has(combined1)) {
+                      obj39.add(combined1);
+                      const obj29 = { type: tmp4(tmp5[5]).CodedLinkType.GUILD_PRODUCT, code: combined1, url: iter };
+                      items.push(obj29);
+                    }
+                    obj39 = set;
+                  }
+                  let match10;
+                  if (primaryHostRemainingPath != null) {
+                    match10 = primaryHostRemainingPath.match(closure_2_14);
+                  }
+                  if (null != match10) {
+                    if (!set.has(match10[1])) {
+                      obj41.add(tmp93);
+                      const obj31 = { type: tmp4(tmp5[5]).CodedLinkType.SERVER_SHOP, code: tmp93, url: iter };
+                      items.push(obj31);
+                    }
+                    obj41 = set;
+                  }
+                  let match11;
+                  if (primaryHostRemainingPath != null) {
+                    match11 = primaryHostRemainingPath.match(closure_2_13);
+                  }
+                  if (null != match11) {
+                    let tmp99 = match11[1];
+                    if (tmp99 == null) {
+                      tmp99 = match11[2];
+                    }
+                    let parsed = null;
+                    if (null != query) {
+                      parsed = tmp4(tmp5[14]).parse(query);
+                      const tmp4Result23 = tmp4(tmp5[14]);
+                    }
+                    if (typeof match11[3] === "string") {
+                      items = [tmp100];
+                      let result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(items);
+                      const tmp4Result24 = tmp4(tmp5[15]);
+                    } else {
+                      let skuIds;
+                      if (parsed != null) {
+                        skuIds = parsed.skuIds;
+                      }
+                      if (typeof skuIds === "string") {
+                        result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds.split(","));
+                        const tmp4Result25 = tmp4(tmp5[15]);
+                      } else {
+                        const _Array = Array;
+                        if (Array.isArray(skuIds)) {
+                          result1 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds.flatMap((item) => {
+                            if (typeof item === "string") {
+                              let parts = item.split(",");
+                            } else {
+                              parts = [];
+                            }
+                            return parts;
+                          }));
+                          const tmp4Result26 = tmp4(tmp5[15]);
+                        } else {
+                          result1 = [];
+                        }
+                      }
+                    }
+                    if (result1.length > 0) {
+                      const storefrontCodedLink = tmp4(tmp5[15]).makeStorefrontCodedLink(result1, tmp99);
+                      if (!set.has(storefrontCodedLink)) {
+                        obj48.add(storefrontCodedLink);
+                        const obj33 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT, code: storefrontCodedLink, url: iter };
+                        items.push(obj33);
+                      }
+                      obj48 = set;
+                      const tmp4Result27 = tmp4(tmp5[15]);
+                    }
+                  }
+                  const str12 = getPathsFromURL(iter).primaryHostRemainingPath;
+                  let match12;
+                  if (str12 != null) {
+                    match12 = str12.match(closure_2_15);
+                  }
+                  let tmp109;
+                  if (match12 != null) {
+                    tmp109 = match12[1];
+                  }
+                  if (tmp109 == null) {
+                    tmp109 = null;
+                  }
+                  if (null != tmp109) {
+                    if (!set.has(tmp109)) {
+                      obj50.add(tmp109);
+                      const obj34 = { type: tmp4(tmp5[5]).CodedLinkType.QUESTS_EMBED, code: tmp109, url: iter };
+                      items.push(obj34);
+                    }
+                    obj50 = set;
+                  }
+                  let match13;
+                  if (primaryHostRemainingPath != null) {
+                    match13 = primaryHostRemainingPath.match(closure_2_17);
+                  }
+                  if (null != match13) {
+                    if (!set.has(match13[1])) {
+                      obj52.add(tmp115);
+                      const obj36 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_PROFILE, code: tmp115, url: iter };
+                      items.push(obj36);
+                    }
+                    obj52 = set;
+                  }
+                  let match14;
+                  if (primaryHostRemainingPath != null) {
+                    match14 = primaryHostRemainingPath.match(closure_2_16);
+                  }
+                  if (null != match14) {
+                    if (!set.has(match14[1])) {
+                      obj54.add(tmp121);
+                      const obj38 = { type: tmp4(tmp5[5]).CodedLinkType.GAME_SERVER_SHARE, code: tmp121, url: iter };
+                      items.push(obj38);
+                    }
+                    obj54 = set;
+                  }
+                  let match15;
+                  if (primaryHostRemainingPath != null) {
+                    match15 = primaryHostRemainingPath.match(closure_2_18);
+                  }
+                  if (null != match15) {
+                    if (!set.has(match15[1])) {
+                      obj56.add(tmp127);
+                      const obj40 = { type: tmp4(tmp5[5]).CodedLinkType.USER_PROFILE, code: tmp127, url: iter };
+                      items.push(obj40);
+                    }
+                    obj56 = set;
+                  }
+                  if ("/shop" === primaryHostRemainingPath) {
+                    let parsed1 = null;
+                    if (null != query) {
+                      parsed1 = tmp4(tmp5[14]).parse(query);
+                      const tmp4Result28 = tmp4(tmp5[14]);
+                    }
+                    let str14;
+                    if (parsed1 != null) {
+                      str14 = parsed1.tab;
+                    }
+                    let applicationId;
+                    if (parsed1 != null) {
+                      applicationId = parsed1.applicationId;
+                    }
+                    if (str14 === constants.GAME_SHOPS) {
+                      if (typeof applicationId === "string") {
+                        let skuId;
+                        if (parsed1 != null) {
+                          skuId = parsed1.skuId;
+                        }
+                        if (typeof skuId === "string") {
+                          const items1 = [skuId];
+                          let result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(items1);
+                          const tmp4Result29 = tmp4(tmp5[15]);
+                        } else {
+                          let skuIds1;
+                          if (parsed1 != null) {
+                            skuIds1 = parsed1.skuIds;
+                          }
+                          if (typeof skuIds1 === "string") {
+                            result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds1.split(","));
+                            const tmp4Result30 = tmp4(tmp5[15]);
+                          } else {
+                            const _Array2 = Array;
+                            if (Array.isArray(skuIds1)) {
+                              result2 = tmp4(tmp5[15]).normalizeStorefrontSkuIds(skuIds1.flatMap((item) => {
+                                if (typeof item === "string") {
+                                  let parts = item.split(",");
+                                } else {
+                                  parts = [];
+                                }
+                                return parts;
+                              }));
+                              const tmp4Result31 = tmp4(tmp5[15]);
+                            } else {
+                              result2 = [];
+                            }
+                          }
+                        }
+                      }
+                    }
+                    const items2 = [];
+                    if (typeof applicationId === "string") {
+                      if (items2.length > 0) {
+                        const storefrontCodedLink1 = tmp4(tmp5[15]).makeStorefrontCodedLink(items2, applicationId);
+                        if (!set.has(storefrontCodedLink1)) {
+                          obj65.add(storefrontCodedLink1);
+                          const obj42 = { type: tmp4(tmp5[5]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP, code: storefrontCodedLink1, url: iter };
+                          items.push(obj42);
+                        }
+                        obj65 = set;
+                        const tmp4Result32 = tmp4(tmp5[15]);
+                      }
+                    }
+                    let match16;
+                    if (url.hash != null) {
+                      match16 = str16.match(closure_2_20);
+                    }
+                    if (str14 == null) {
+                      str14 = "";
+                    }
+                    let str17;
+                    if (match16 != null) {
+                      str17 = match16[1];
+                    }
+                    if (str17 == null) {
+                      str17 = "";
+                    }
+                    const _HermesInternal3 = HermesInternal;
+                    const combined2 = "" + str14 + "-" + str17;
+                    if (!set.has(combined2)) {
+                      obj62.add(combined2);
+                      const obj43 = { type: tmp4(tmp5[5]).CodedLinkType.COLLECTIBLES_SHOP, code: combined2, url: iter };
+                      items.push(obj43);
+                    }
+                    obj62 = set;
+                  }
+                }
+              }
+              return 0;
+            }
+            const iter = arg0[Symbol.iterator]();
+            while (iter !== undefined) {
+              let _loopResult = _loop(iter.next());
+              continue;
+            }
+            return items;
+          }
+        }
+        return [];
+      }
+      let result = coerceLinksToCodedLinks(findCodedLinkUrlsDefault(str2).concat(match));
+      items = result.slice(0, 10);
+      let obj2 = findCodedLinkUrlsDefault(str2);
+    }
+  }
 };

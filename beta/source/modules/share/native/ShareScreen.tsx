@@ -1,20 +1,20 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 13444
+// Function ID: 13445
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2045, 2041, 4427, 1074, 11964, 11151, 21, 4788, 576, 1364, 1115, 14199, 11276, 14200, 14201, 1241, 10238, 4799, 8665, 9455, 11985, 1980, 5142, 14202, 14203, 5880, 8139, 1609, 5873, 11279, 14204, 2]
+// Dependencies: [5, 32, 19, 17, 2049, 2045, 4469, 1074, 11179, 10320, 21, 4836, 576, 1364, 1115, 13445, 10444, 13446, 13447, 1241, 9398, 4847, 7810, 8610, 11203, 1981, 5205, 13448, 13449, 5943, 7288, 1610, 5936, 10447, 13450, 2]
 // Exports: default
 
-// Module 14198 (ShareScreen)
+// Module 13444 (ShareScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import HeaderShared from "HeaderShared" /* 8139 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 14202 */;
-import ShareEmbedDefault from "ShareEmbed" /* 14203 */;
+import HeaderShared from "HeaderShared" /* 7288 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 13448 */;
+import ShareEmbedDefault from "ShareEmbed" /* 13449 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 require = fn;
 function getAttachmentsRestriction(type) {
@@ -32,15 +32,15 @@ function getAttachmentsRestriction(type) {
   }
 }
 const View = fn(17).View;
-const ChannelRecord = fn(2045);
+const ChannelRecord = fn(2049);
 ({ ChannelRecordBase: closure_7, isGuildChannelType: closure_8 } = ChannelRecord);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Permissions: closure_12, MAX_UPLOAD_COUNT: map1 } = Constants);
-const MAX_DESTINATION_COUNT = fn(11964).MAX_DESTINATION_COUNT;
-const UserRowModes = fn(11151).UserRowModes;
+const MAX_DESTINATION_COUNT = fn(11179).MAX_DESTINATION_COUNT;
+const UserRowModes = fn(10320).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, headerLeftContainer: null, headerRightContainer: null };
 let PlatformUtils = fn(1364);
 let num = 0;
@@ -236,7 +236,7 @@ export default function ShareScreen(appEntryKey) {
                                       let channel2;
                                       c5 = 1;
                                       c6 = 1;
-                                      return { value: "PX_16", done: true };
+                                      return { value: "flex", done: true };
                                     }
                                   } else if (1 === tmp7) {
                                     if (arg0 === 1) {

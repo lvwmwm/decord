@@ -1,13 +1,13 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 10331
+// Function ID: 10332
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1074, 4688, 5140, 1115, 1271, 4639, 2]
+// Dependencies: [5, 1074, 4735, 5203, 1115, 1271, 4685, 2]
 
-// Module 11162 (GameRelationshipActionCreators)
+// Module 10331 (GameRelationshipActionCreators)
 import util from "util" /* 1115 */;
-import shared from "shared" /* 4639 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4688 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import shared from "shared" /* 4685 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4735 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -67,7 +67,7 @@ let closure_8 = async function _deleteGameRelationship(arg0, value) {
           ({ userId: closure_129_0, applicationId: closure_129_1, onSuccess: closure_129_2 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {
@@ -119,7 +119,7 @@ let closure_9 = async function _removeGameFriend() {
     userId: closure_129_0,
     applicationId: closure_129_1,
     onSuccess() {
-      const AccessibilityAnnouncer = closure_1_0(4639).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = closure_1_0(4685).AccessibilityAnnouncer;
       const intl = closure_1_0(1115).intl;
       AccessibilityAnnouncer.announce(intl.string(closure_1_0(1115).t.zRf8cO));
     }
@@ -127,14 +127,14 @@ let closure_9 = async function _removeGameFriend() {
   await "HermesInternal";
   closure_1 = tmp2;
   ({ userId: closure_129_0, applicationId: closure_129_1 } = closure_0);
-  return "PX_16";
+  return "flex";
 };
 let closure_10 = async function _cancelGameFriendRequest() {
   await closure_130_7({
     userId: closure_129_0,
     applicationId: closure_129_1,
     onSuccess() {
-      const AccessibilityAnnouncer = closure_1_0(4639).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = closure_1_0(4685).AccessibilityAnnouncer;
       const intl = closure_1_0(1115).intl;
       AccessibilityAnnouncer.announce(intl.string(closure_1_0(1115).t.XMf21q));
     }
@@ -142,7 +142,7 @@ let closure_10 = async function _cancelGameFriendRequest() {
   await "HermesInternal";
   closure_1 = tmp2;
   ({ userId: closure_129_0, applicationId: closure_129_1 } = closure_0);
-  return "PX_16";
+  return "flex";
 };
 const Constants = fn(1074);
 ({ Endpoints: closure_4, RelationshipTypes: hasOwnProperty } = Constants);
@@ -173,7 +173,7 @@ export default {
       const intl = util.intl;
       AccessibilityAnnouncer.announce(intl.string(util.t.taJiuc));
     }).catch((error) => {
-      const aPIError = new onSuccess(4688).APIError(error);
+      const aPIError = new onSuccess(4735).APIError(error);
       let anyErrorMessage = aPIError.getAnyErrorMessage();
       const obj = { title: null, body: null };
       const intl = onSuccess(1115).intl;

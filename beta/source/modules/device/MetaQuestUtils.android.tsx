@@ -1,10 +1,10 @@
-// Module ID: 1609
-// Function ID: 1610
+// Module ID: 1610
+// Function ID: 1611
 // Name: MetaQuestUtils
 // Dependencies: [1341, 1363, 2]
 // Exports: isMetaQuest, isQuestRelease
 
-// Module 1609 (MetaQuestUtils)
+// Module 1610 (MetaQuestUtils)
 import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
 import NativeMetaQuestModule_mod from "NativeMetaQuestModule" /* 1341 */;
 

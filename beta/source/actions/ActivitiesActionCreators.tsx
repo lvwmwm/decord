@@ -1,21 +1,21 @@
-// Module ID: 11758
-// Function ID: 11759
+// Module ID: 11010
+// Function ID: 11011
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 2041, 1074, 4781, 573, 1271, 7950, 7730, 4968, 4801, 2]
+// Dependencies: [5, 2045, 1074, 4829, 573, 1271, 7095, 6876, 5016, 4849, 2]
 
-// Module 11758 (ActivitiesActionCreators)
+// Module 11010 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4801 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, ActivityTypes: metroRequire, AnalyticEvents: closure_7, LoggingInviteTypes: closure_8 } = Constants);
-const MessageSendLocation = fn(4781).MessageSendLocation;
+const MessageSendLocation = fn(4829).MessageSendLocation;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/ActivitiesActionCreators.tsx");
 

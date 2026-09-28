@@ -1,11 +1,11 @@
-// Module ID: 8643
-// Function ID: 8644
+// Module ID: 7788
+// Function ID: 7789
 // Name: SpotifyConstants
-// Dependencies: [1074, 5532, 1364, 2]
+// Dependencies: [1074, 5595, 1364, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8643 (SpotifyConstants)
-import Platforms from "Platforms" /* 5532 */;
+// Module 7788 (SpotifyConstants)
+import Platforms from "Platforms" /* 5595 */;
 
 const spotify = "spotify";
 let c1 = "spotify:";

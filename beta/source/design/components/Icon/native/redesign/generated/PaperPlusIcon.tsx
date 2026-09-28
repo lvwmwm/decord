@@ -1,13 +1,13 @@
-// Module ID: 13380
-// Function ID: 13381
+// Module ID: 12632
+// Function ID: 12633
 // Name: PaperPlusIcon
-// Dependencies: [19, 21, 576, 4488, 13381, 2]
+// Dependencies: [19, 21, 576, 4530, 12633, 2]
 // Exports: PaperPlusIcon
 
-// Module 13380 (PaperPlusIcon)
+// Module 12632 (PaperPlusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod13381 from "module_13381" /* 13381 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod12633 from "module_12633" /* 12633 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PaperPlusIcon = function PaperPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13381, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12633, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

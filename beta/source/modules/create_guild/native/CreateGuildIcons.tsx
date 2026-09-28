@@ -1,21 +1,27 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 12208
+// Function ID: 12209
 // Name: CreateGuildIcons
-// Dependencies: [12609, 12613, 12611, 12612, 12614, 12615, 12610, 5941, 2]
+// Dependencies: [11809, 11813, 11811, 11812, 11814, 11815, 11810, 12209, 12210, 12212, 12214, 12216, 12218, 12220, 2]
 
-// Module 12993 (CreateGuildIcons)
-import native from "native" /* 5941 */;
-import _modDef12609 from "module_12609" /* 12609 */;
-import _modDef12610 from "module_12610" /* 12610 */;
-import _modDef12611 from "module_12611" /* 12611 */;
-import _modDef12612 from "module_12612" /* 12612 */;
-import _modDef12613 from "module_12613" /* 12613 */;
-import _modDef12614 from "module_12614" /* 12614 */;
-import _modDef12615 from "module_12615" /* 12615 */;
+// Module 12208 (CreateGuildIcons)
+import _modDef11809 from "module_11809" /* 11809 */;
+import _modDef11810 from "module_11810" /* 11810 */;
+import _modDef11811 from "module_11811" /* 11811 */;
+import _modDef11812 from "module_11812" /* 11812 */;
+import _modDef11813 from "module_11813" /* 11813 */;
+import _modDef11814 from "module_11814" /* 11814 */;
+import _modDef11815 from "module_11815" /* 11815 */;
+import PencilIllocon from "PencilIllocon" /* 12209 */;
+import ControllerIllocon from "ControllerIllocon" /* 12210 */;
+import HeartIllocon from "HeartIllocon" /* 12212 */;
+import AppleIllocon from "AppleIllocon" /* 12214 */;
+import BookIllocon from "BookIllocon" /* 12216 */;
+import PaintIllocon from "PaintIllocon" /* 12218 */;
+import LeafIllocon from "LeafIllocon" /* 12220 */;
 import size from "module_2" /* 2 */;
 
-const obj = { CREATE: _modDef12609, GAMING: _modDef12613, FRIENDS: _modDef12611, STUDY: _modDef12612, CLUBS: _modDef12614, CREATORS: _modDef12615, LOCAL_COMMUNITY: _modDef12610, SCHOOL_CLUB: _modDef12614 };
+const obj = { CREATE: _modDef11809, GAMING: _modDef11813, FRIENDS: _modDef11811, STUDY: _modDef11812, CLUBS: _modDef11814, CREATORS: _modDef11815, LOCAL_COMMUNITY: _modDef11810, SCHOOL_CLUB: _modDef11814 };
 const result = size.fileFinishedImporting("modules/create_guild/native/CreateGuildIcons.tsx");
 
 export const GUILD_TEMPLATE_ICONS = obj;
-export const GUILD_TEMPLATE_ICON_COMPONENTS = { CREATE: native.PencilIllocon, GAMING: native.ControllerIllocon, FRIENDS: native.HeartIllocon, STUDY: native.AppleIllocon, CLUBS: native.BookIllocon, CREATORS: native.PaintIllocon, LOCAL_COMMUNITY: native.LeafIllocon, SCHOOL_CLUB: native.BookIllocon };
+export const GUILD_TEMPLATE_ICON_COMPONENTS = { CREATE: PencilIllocon.PencilIllocon, GAMING: ControllerIllocon.ControllerIllocon, FRIENDS: HeartIllocon.HeartIllocon, STUDY: AppleIllocon.AppleIllocon, CLUBS: BookIllocon.BookIllocon, CREATORS: PaintIllocon.PaintIllocon, LOCAL_COMMUNITY: LeafIllocon.LeafIllocon, SCHOOL_CLUB: BookIllocon.BookIllocon };

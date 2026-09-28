@@ -1,12 +1,9 @@
 // Module ID: 8871
 // Function ID: 8872
-// Dependencies: [26, 65]
+// Dependencies: [1121]
 
 // Module 8871
-import _mod26 from "module_26" /* 26 */;
-import module_65 from "module_65" /* 65 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGSvgView", validAttributes: { bbWidth: true, bbHeight: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true, color: _mod26.colorAttribute, pointerEvents: true, hitSlop: true } };
 
-export default module_65.get("RNSVGSvgView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 130, height: 82, scales: [2, 3], hash: "3c9f06960d8f7bccd426e0e87c7d7947", name: "screenshare_splash", type: "png" });

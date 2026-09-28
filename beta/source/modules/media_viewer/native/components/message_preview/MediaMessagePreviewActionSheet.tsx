@@ -1,13 +1,13 @@
-// Module ID: 13297
-// Function ID: 13298
+// Module ID: 12531
+// Function ID: 12532
 // Name: MediaMessagePreviewActionSheet
-// Dependencies: [19, 21, 2019, 7563, 4755, 1101, 7466, 4485, 8939, 7474, 7476, 12018, 1115, 10925, 8974, 2]
+// Dependencies: [19, 21, 2021, 6707, 4800, 1101, 6610, 4527, 8089, 6618, 6620, 11236, 1115, 10092, 8124, 2]
 
-// Module 13297 (MediaMessagePreviewActionSheet)
+// Module 12531 (MediaMessagePreviewActionSheet)
 import router_utils from "router_utils" /* 1101 */;
-import ToastUtils from "ToastUtils" /* 4485 */;
-import ClipboardUtils from "ClipboardUtils" /* 7466 */;
-import ReportModals from "ReportModals" /* 8939 */;
+import ToastUtils from "ToastUtils" /* 4527 */;
+import ClipboardUtils from "ClipboardUtils" /* 6610 */;
+import ReportModals from "ReportModals" /* 8089 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

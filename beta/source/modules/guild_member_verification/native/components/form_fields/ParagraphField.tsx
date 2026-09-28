@@ -1,20 +1,20 @@
-// Module ID: 7361
-// Function ID: 7362
+// Module ID: 6505
+// Function ID: 6506
 // Name: ParagraphField
-// Dependencies: [19, 17, 5302, 21, 4788, 7362, 4784, 1115, 2]
+// Dependencies: [19, 17, 5366, 21, 4836, 6506, 4832, 1115, 2]
 // Exports: default
 
-// Module 7361 (ParagraphField)
+// Module 6505 (ParagraphField)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import TextArea from "TextArea" /* 7362 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import TextArea from "TextArea" /* 6506 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const maxLength = fn(5302).MAX_PARAGRAPH_RESPONSE_LENGTH;
+const maxLength = fn(5366).MAX_PARAGRAPH_RESPONSE_LENGTH;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/ParagraphField.tsx");

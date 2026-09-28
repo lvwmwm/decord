@@ -1,11 +1,11 @@
-// Module ID: 15351
-// Function ID: 15352
+// Module ID: 14610
+// Function ID: 14611
 // Name: BountiesShopCarouselExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: getBountiesEntryPointButtonVariant
 
-// Module 15351 (BountiesShopCarouselExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14610 (BountiesShopCarouselExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-bounties-shop-carousel", kind: "user", defaultConfig: { placement: "none", sortType: "popularity", buttonVariant: "default", clickable: false }, variations: null };

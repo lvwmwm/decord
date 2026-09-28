@@ -1,11 +1,11 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 5082
+// Function ID: 5083
 // Name: CheckpointExperiment
-// Dependencies: [1434, 2]
-// Exports: useIsCheckpointEnabled
+// Dependencies: [1435, 2]
+// Exports: getIsCheckpointEnabled, useIsCheckpointEnabled
 
-// Module 15965 (CheckpointExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 5082 (CheckpointExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-09-build-a-bear", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
@@ -13,4 +13,7 @@ const result = size.fileFinishedImporting("modules/checkpoint/CheckpointExperime
 
 export const useIsCheckpointEnabled = function useIsCheckpointEnabled(DevToolsQuickActionsScreen) {
   return closure_0.useConfig({ location: DevToolsQuickActionsScreen }).enabled;
+};
+export const getIsCheckpointEnabled = function getIsCheckpointEnabled(transformCheckpoint2026CardComponent) {
+  return closure_0.getConfig({ location: transformCheckpoint2026CardComponent }).enabled;
 };

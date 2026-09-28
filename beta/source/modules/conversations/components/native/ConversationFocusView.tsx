@@ -1,14 +1,14 @@
-// Module ID: 13584
-// Function ID: 13585
+// Module ID: 12824
+// Function ID: 12825
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 4788, 576, 4489, 8185, 8199, 1115, 4784, 5218, 13585, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4531, 7335, 7351, 1115, 4832, 5281, 12825, 2]
 // Exports: default
 
-// Module 13584 (ConversationFocusView)
+// Module 12824 (ConversationFocusView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8185 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8199 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7335 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7351 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles((backgroundColor) => {
   const obj = { container: { flex: 1, backgroundColor }, pendingContent: { flex: 1, paddingVertical: nativeDefault.space.PX_24, alignItems: "center", gap: nativeDefault.space.PX_32, backgroundColor } };
   return obj;
@@ -42,15 +42,15 @@ export default function ConversationFocusView(channelId) {
       const result = ConversationsAnalytics.trackFocusModeDismissed(obj);
     }
   }, items);
-  const items1 = [channelId, startMessageId];
-  const items2 = [jumpMessageId, startMessageId, onBeforeJumpToMessage];
+  const items1 = [channelId, conversationId, startMessageId];
+  const items2 = [conversationId, jumpMessageId, startMessageId, onBeforeJumpToMessage];
   const callback1 = startMessageId.useCallback(() => {
     if (null != startMessageId) {
-      const result = ConversationNavigatorUtils.closeConversationsAndJumpToMessage(channelId, tmp);
+      const result = ConversationNavigatorUtils.closeConversationsAndJumpToMessage(channelId, tmp, conversationId);
     }
   }, items1);
   const memo = startMessageId.useMemo(() => {
-    const obj = { jumpToChatText: null, jumpTargetId: null, onBeforeJumpToMessage: null };
+    const obj = { jumpToChatText: null, jumpTargetId: null, onBeforeJumpToMessage: null, conversationId: null };
     const intl = util.intl;
     obj.jumpToChatText = intl.string(util.t["bz/ik0"]);
     let tmp = jumpMessageId;
@@ -59,6 +59,7 @@ export default function ConversationFocusView(channelId) {
     }
     obj.jumpTargetId = tmp;
     obj.onBeforeJumpToMessage = onBeforeJumpToMessage;
+    obj.conversationId = conversationId;
     return obj;
   }, items2);
   if (!fullyHydrated) {

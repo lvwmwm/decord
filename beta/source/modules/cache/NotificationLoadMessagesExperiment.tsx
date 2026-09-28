@@ -1,10 +1,10 @@
-// Module ID: 18283
-// Function ID: 18284
+// Module ID: 17648
+// Function ID: 17649
 // Name: NotificationLoadMessagesExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 18283 (NotificationLoadMessagesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 17648 (NotificationLoadMessagesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-notification-load-messages", kind: "user", defaultConfig: { enabled: false, limit: 1, cooldownMs: 0, debounceMs: 0 }, variations: null };

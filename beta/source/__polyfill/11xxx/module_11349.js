@@ -1,19 +1,9 @@
 // Module ID: 11349
 // Function ID: 11350
-// Dependencies: [11350, 11351, 11352]
+// Dependencies: [1121]
 
 // Module 11349
-const require = globalThis.__r;
+import registerAsset from "module_1121" /* 1121 */;
 
-for (const key10013 in require("enhancedFetch")) {
-  arg5[key10013] = require("enhancedFetch")[key10013];
-  continue;
-}
-for (const key10017 in require("fillProductsWithAdditionalData")) {
-  arg5[key10017] = require("fillProductsWithAdditionalData")[key10017];
-  continue;
-}
-for (const key10021 in require("RNIapIos")) {
-  arg5[key10021] = require("RNIapIos")[key10021];
-  continue;
-}
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_automod/images", width: 32, height: 32, scales: [1, 2, 3], hash: "c1e94f3a9063956a896dc2a0d96e8ae1", name: "ic_blocked_chat_bubble_icon", type: "png" });

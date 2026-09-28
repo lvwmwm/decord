@@ -1,32 +1,32 @@
-// Module ID: 11421
-// Function ID: 11422
+// Module ID: 10587
+// Function ID: 10588
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4780, 2038, 21, 4524, 504, 4489, 576, 4789, 5217, 4788, 11422, 1115, 9519, 2]
+// Dependencies: [19, 17, 4825, 2042, 21, 4566, 504, 4531, 576, 4837, 5280, 4836, 10588, 1115, 8676, 2]
 // Exports: default
 
-// Module 11421 (BurstReactionToggle)
+// Module 10587 (BurstReactionToggle)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4489 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
-import spring from "spring" /* 5217 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 9519 */;
+import useToken from "useToken" /* 4531 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
+import spring from "spring" /* 5280 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 8676 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const Pressable = fn(17).Pressable;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let obj = { duration: 100, easing: null };
-const Easing = fn(4524).Easing;
-obj.easing = Easing.out(fn(4524).Easing.quad);
+const Easing = fn(4566).Easing;
+obj.easing = Easing.out(fn(4566).Easing.quad);
 let closure_9 = { stiffness: 750, mass: 2.5, damping: 70 };
 const __initData = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj3 = { container: null };
 let size = { borderRadius: nativeDefault.modules.button.BORDER_RADIUS, padding: 8, marginLeft: 8, width: 40, height: 40 };
 obj3.container = size;
@@ -48,7 +48,7 @@ export default function BurstReactionToggle(arg0) {
     tmp7 = tmp2;
   }
   const ref = noop.useRef(null);
-  importDefault = tmp7(11422)(ref);
+  importDefault = tmp7(10588)(ref);
   closure_129_1 = undefined;
   closure_129_2 = undefined;
   closure_129_3 = undefined;
@@ -124,7 +124,7 @@ export default function BurstReactionToggle(arg0) {
   const obj5 = { style: null, ref, children: jsx(SuperReactionIcon.SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT }) };
   const items2 = [tmp.container, animatedStyle];
   obj5.style = items2;
-  obj4.children = jsx(tmp7(4524).View, { style: null, ref, children: jsx(SuperReactionIcon.SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT }) });
+  obj4.children = jsx(tmp7(4566).View, { style: null, ref, children: jsx(SuperReactionIcon.SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT }) });
   return <Pressable onPress={function onPress() {
     closure_1(ContentDismissActionType.AUTO);
     require();

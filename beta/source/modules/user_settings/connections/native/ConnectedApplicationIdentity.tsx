@@ -1,25 +1,25 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 14498
+// Function ID: 14499
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 4788, 15244, 1115, 1177, 4784, 10094, 5140, 15222, 5237, 1397, 5220, 9334, 5216, 5371, 7269, 5854, 5936, 7477, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4836, 14499, 1115, 1177, 4832, 9254, 5203, 14477, 5300, 1397, 5283, 8488, 7363, 9184, 5918, 5917, 6621, 2]
 // Exports: default
 
-// Module 15243 (ConnectedApplicationIdentity)
+// Module 14498 (ConnectedApplicationIdentity)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import Icon from "Icon" /* 5220 */;
-import common_AlertDefault from "common/Alert" /* 5237 */;
-import InfoBoxDefault from "InfoBox" /* 10094 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import Icon from "Icon" /* 5283 */;
+import common_AlertDefault from "common/Alert" /* 5300 */;
+import InfoBoxDefault from "InfoBox" /* 9254 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const IconDefault = tmp(5220);
+const IconDefault = tmp(5283);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
@@ -153,38 +153,28 @@ export default function ConnectedApplicationIdentity(identity) {
     obj3.size = token(tmp3[15]).Sizes.LARGE;
     obj3.source = memo;
     const tmp15 = token(tmp3[15]);
-    let obj4 = { spacing: 8, direction: "horizontal", align: "center", children: null };
-    let obj5 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, hitSlop: null, disabled: null, children: null };
+    let obj4 = { size: "sm", variant: "icon-only", icon: closure_7(tmp2(tmp3[18]).XLargeBoldIcon, { size: "sm" }), accessibilityLabel: null, onPress: null };
     let intl2 = tmp2(tmp3[7]).intl;
-    obj5.accessibilityLabel = intl2.string(tmp2(tmp3[7]).t["DT39A+"]);
-    obj5.onPress = callback;
-    obj5.hitSlop = { top: 5, left: 5, bottom: 5, right: 5 };
-    obj5.disabled = null == token;
-    const obj6 = { style: legacyClassComponentStyles.deleteConnectionIcon, source: null };
+    obj4.accessibilityLabel = intl2.string(tmp2(tmp3[7]).t["DT39A+"]);
+    obj4.onPress = callback;
+    let obj5 = { style: legacyClassComponentStyles.container, children: null };
+    const obj6 = { style: legacyClassComponentStyles.connectedAccountItem, children: null };
     const tmp16 = closure_7(token(tmp3[15]), obj3);
-    obj6.source = token(tmp3[19]);
-    obj5.children = closure_7(token(tmp3[15]), obj6);
-    obj4.children = closure_7(tmp2(tmp3[18]).PressableOpacity, obj5);
-    let obj7 = { style: legacyClassComponentStyles.container, children: null };
-    const obj8 = { style: legacyClassComponentStyles.connectedAccountItem, children: null };
-    const obj9 = { style: legacyClassComponentStyles.connectedAccountTopContainer, children: null };
-    const tmp17 = token(tmp3[15]);
-    const obj10 = { label: application.name, icon: tmp16, trailing: closure_7(tmp2(tmp3[17]).Stack, obj4) };
-    obj9.children = closure_7(tmp2(tmp3[20]).TableRow, obj10);
-    const items4 = [closure_7(View, obj9), ];
-    const obj11 = { style: legacyClassComponentStyles.connectedAccountContentContainer, children: null };
-    const obj12 = { hasIcons: false, children: null };
-    const obj13 = { label: null, value: null, onValueChange: null };
+    let obj7 = { value: true, children: null };
+    const obj8 = { style: legacyClassComponentStyles.connectedAccountHeader, children: null };
+    const obj9 = { label: application.name, icon: tmp16, trailing: closure_7(tmp2(tmp3[17]).IconButton, obj4) };
+    obj8.children = closure_7(tmp2(tmp3[20]).TableRow, obj9);
+    const items4 = [closure_7(View, obj8), ];
+    const obj10 = { label: null, value: null, onValueChange: null };
     let intl3 = tmp2(tmp3[7]).intl;
-    obj13.label = intl3.string(tmp2(tmp3[7]).t.f7yOAX);
-    obj13.value = tmp6;
-    obj13.onValueChange = tmp12;
-    obj12.children = closure_7(tmp2(tmp3[22]).TableSwitchRow, obj13);
-    obj11.children = closure_7(tmp2(tmp3[21]).TableRowGroup, obj12);
-    items4[1] = closure_7(View, obj11);
-    obj8.children = items4;
-    obj7.children = closure_8(View, obj8);
-    return closure_7(View, obj7);
+    obj10.label = intl3.string(tmp2(tmp3[7]).t.f7yOAX);
+    obj10.value = tmp6;
+    obj10.onValueChange = tmp12;
+    items4[1] = closure_7(tmp2(tmp3[21]).TableSwitchRow, obj10);
+    obj7.children = items4;
+    obj6.children = closure_8(tmp2(tmp3[19]).TableRowGroupContext, obj7);
+    obj5.children = closure_7(View, obj6);
+    return closure_7(View, obj5);
   }
   const tmp5 = _slicedToArray(noop.useState(flag), 2);
 };

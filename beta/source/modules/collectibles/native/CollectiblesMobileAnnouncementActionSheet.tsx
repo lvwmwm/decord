@@ -1,20 +1,20 @@
-// Module ID: 17416
-// Function ID: 17417
+// Module ID: 16768
+// Function ID: 16769
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1076, 7428, 2038, 21, 4788, 576, 1478, 6901, 1612, 4524, 17417, 4784, 7815, 7459, 7427, 17418, 1115, 5941, 5218, 2]
+// Dependencies: [19, 17, 1076, 6572, 2042, 21, 4836, 576, 1479, 6045, 1613, 4566, 16769, 4832, 6961, 6603, 6571, 16770, 1115, 12218, 12212, 16771, 5281, 2]
 // Exports: default
 
-// Module 17416 (CollectiblesMobileAnnouncementActionSheet)
+// Module 16768 (CollectiblesMobileAnnouncementActionSheet)
 import nativeDefault from "native" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import BottomSheetModal from "BottomSheetModal" /* 6901 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7815 */;
-import _modDef17417 from "module_17417" /* 17417 */;
-import _modDef17418 from "module_17418" /* 17418 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import BottomSheetModal from "BottomSheetModal" /* 6045 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
+import _modDef16769 from "module_16769" /* 16769 */;
+import _modDef16770 from "module_16770" /* 16770 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -47,7 +47,7 @@ function CatEarsBackdrop() {
   items1[1] = rect;
   obj4.style = items1;
   const obj5 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj5.source = { uri: _modDef17417 };
+  obj5.source = { uri: _modDef16769 };
   obj5.style = tmp.mascotImage;
   obj4.children = React7(React4, obj5);
   obj3.children = React7(hasOwnProperty, obj4);
@@ -64,11 +64,11 @@ function FeatureRow(arg0) {
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, StyleSheet, View: hasOwnProperty } = get_ActivityIndicator);
 let closure_6 = fn(1076).CollectiblesMobileShopScreen;
-const ACTION_SHEET_MAX_WIDTH = fn(7428).ACTION_SHEET_MAX_WIDTH;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ACTION_SHEET_MAX_WIDTH = fn(6572).ACTION_SHEET_MAX_WIDTH;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { mascotContainer: null, mascotLayer: null, mascotImage: null, framePreviewImage: null, container: null, headerText: null, featureRow: null, featureText: null, featureRows: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -120,22 +120,22 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   const memo = noop.useMemo(() => closure_1_9(CatEarsBackdrop, {}), []);
   let obj = { onDismiss: callback1, backdropChildren: memo, children: null };
   const obj2 = { style: tmp.container, children: null };
-  const obj3 = { source: { uri: _modDef17418 }, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+  const obj3 = { source: { uri: _modDef16770 }, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const items3 = [closure_9(closure_4, obj3), , , ];
   const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText, children: null };
   const intl = markAsDismissed(1115).intl;
   obj5.children = intl.string(markAsDismissed(1115).t.vRCvqo);
-  items3[1] = closure_9(markAsDismissed(4784).Text, obj5);
+  items3[1] = closure_9(markAsDismissed(4832).Text, obj5);
   const obj6 = { style: tmp.featureRows, children: null };
-  const obj7 = { icon: closure_9(markAsDismissed(5941).PaintIllocon, { size: 32 }), text: null };
+  const obj7 = { icon: closure_9(markAsDismissed(12218).PaintIllocon, { size: 32 }), text: null };
   const intl2 = markAsDismissed(1115).intl;
   obj7.text = intl2.string(markAsDismissed(1115).t["6ZWB0C"]);
   const items4 = [closure_9(FeatureRow, obj7), , ];
-  const obj8 = { icon: closure_9(markAsDismissed(5941).HeartIllocon, { size: 32 }), text: null };
+  const obj8 = { icon: closure_9(markAsDismissed(12212).HeartIllocon, { size: 32 }), text: null };
   const intl3 = markAsDismissed(1115).intl;
   obj8.text = intl3.string(markAsDismissed(1115).t.MkVbBY);
   items4[1] = closure_9(FeatureRow, obj8);
-  const obj9 = { icon: closure_9(markAsDismissed(5941).ShopIllocon, { size: 32 }), text: null };
+  const obj9 = { icon: closure_9(markAsDismissed(16771).ShopIllocon, { size: 32 }), text: null };
   const intl4 = markAsDismissed(1115).intl;
   obj9.text = intl4.string(markAsDismissed(1115).t["/4bQuG"]);
   items4[2] = closure_9(FeatureRow, obj9);
@@ -145,8 +145,8 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   const intl5 = markAsDismissed(1115).intl;
   obj10.text = intl5.string(markAsDismissed(1115).t.S9hXPI);
   obj10.onPress = callback;
-  items3[3] = closure_9(markAsDismissed(5218).Button, obj10);
+  items3[3] = closure_9(markAsDismissed(5281).Button, obj10);
   obj2.children = items3;
   obj.children = closure_10(closure_5, obj2);
-  return closure_9(markAsDismissed(7427).BottomSheet, obj);
+  return closure_9(markAsDismissed(6571).BottomSheet, obj);
 };

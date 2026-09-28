@@ -1,13 +1,13 @@
-// Module ID: 15163
-// Function ID: 15164
+// Module ID: 14418
+// Function ID: 14419
 // Name: QrCodeIcon
-// Dependencies: [19, 21, 576, 4488, 10157, 2]
+// Dependencies: [19, 21, 576, 4530, 9317, 2]
 // Exports: QrCodeIcon
 
-// Module 15163 (QrCodeIcon)
+// Module 14418 (QrCodeIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod10157 from "module_10157" /* 10157 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod9317 from "module_9317" /* 9317 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const QrCodeIcon = function QrCodeIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10157, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9317, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

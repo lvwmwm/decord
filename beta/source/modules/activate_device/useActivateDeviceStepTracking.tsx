@@ -1,13 +1,13 @@
-// Module ID: 14174
-// Function ID: 14175
+// Module ID: 13420
+// Function ID: 13421
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 1074, 8575, 14175, 1241, 2]
+// Dependencies: [19, 1074, 7720, 13421, 1241, 2]
 // Exports: useActivateDeviceStepTracking
 
-// Module 14174 (useActivateDeviceStepTracking)
+// Module 13420 (useActivateDeviceStepTracking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import usePreviousDefault from "usePrevious" /* 8575 */;
-import ActivateDeviceUtils from "ActivateDeviceUtils" /* 14175 */;
+import usePreviousDefault from "usePrevious" /* 7720 */;
+import ActivateDeviceUtils from "ActivateDeviceUtils" /* 13421 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

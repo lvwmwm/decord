@@ -1,11 +1,11 @@
-// Module ID: 13408
-// Function ID: 13409
+// Module ID: 12660
+// Function ID: 12661
 // Name: UserProfileRecentActivityMobileExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useIsRecentActivityMobileEnabled
 
-// Module 13408 (UserProfileRecentActivityMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12660 (UserProfileRecentActivityMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-recent-activity-mobile", kind: "user", defaultConfig: { enabled: false }, variations: null };

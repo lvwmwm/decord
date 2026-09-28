@@ -1,16 +1,16 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 15951
+// Function ID: 15952
 // Name: FavoritesGuildCoachmarkGraphic
-// Dependencies: [17, 21, 4788, 576, 5941, 1177, 2]
+// Dependencies: [17, 21, 4836, 576, 9694, 1177, 2]
 // Exports: default
 
-// Module 16657 (FavoritesGuildCoachmarkGraphic)
+// Module 15951 (FavoritesGuildCoachmarkGraphic)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import native2 from "native" /* 5941 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 9694 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4788 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/favorites/native/onboarding/F
 export default function FavoritesGuildCoachmarkGraphic() {
   const tmp = closure_5();
   const obj = { style: tmp.container, children: null };
-  const items = [React3(native2.FavoritesSpotIllustration, { width: 160, height: 90 }), React3(native.BetaTag, { style: tmp.betaTag })];
+  const items = [React3(FavoritesSpotIllustration.FavoritesSpotIllustration, { width: 160, height: 90 }), React3(native.BetaTag, { style: tmp.betaTag })];
   obj.children = items;
   return React4(View, obj);
 };

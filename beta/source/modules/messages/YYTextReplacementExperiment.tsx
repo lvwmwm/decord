@@ -1,11 +1,11 @@
-// Module ID: 18281
-// Function ID: 18282
+// Module ID: 17646
+// Function ID: 17647
 // Name: YYTextReplacementExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: shouldEnableYYTextReplacement
 
-// Module 18281 (YYTextReplacementExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 17646 (YYTextReplacementExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-01-yytext-replacement-ios", kind: "user", defaultConfig: { enabled: false }, variations: null };

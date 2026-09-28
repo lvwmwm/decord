@@ -1,13 +1,13 @@
-// Module ID: 11956
-// Function ID: 11957
+// Module ID: 11171
+// Function ID: 11172
 // Name: retrySendMessage
-// Dependencies: [4781, 7730, 9557, 5375, 9455, 2]
+// Dependencies: [4829, 6876, 8714, 5439, 8610, 2]
 // Exports: default
 
-// Module 11956 (retrySendMessage)
-import MessageConstants from "MessageConstants" /* 4781 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7730 */;
-import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9455 */;
+// Module 11171 (retrySendMessage)
+import MessageConstants from "MessageConstants" /* 4829 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
+import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 8610 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,20 +1,20 @@
-// Module ID: 9949
-// Function ID: 9950
+// Module ID: 9110
+// Function ID: 9111
 // Name: applyBackgroundOption
-// Dependencies: [5, 1372, 9950, 7264, 1074, 9952, 4843, 9955, 1397, 9960, 9951, 9954, 9961, 2]
+// Dependencies: [5, 1372, 9111, 6408, 1074, 9112, 4891, 9116, 1397, 9121, 9115, 9114, 9122, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 9949 (applyBackgroundOption)
+// Module 9110 (applyBackgroundOption)
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9952 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9954 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9955 */;
-import getFilterImageDefault from "getFilterImage" /* 9960 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9961 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9112 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9114 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9116 */;
+import getFilterImageDefault from "getFilterImage" /* 9121 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9122 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 9950 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 9111 */;
 
 require = fn;
 let closure_9 = async function _getFilterBlob() {
@@ -214,7 +214,7 @@ let closure_14 = async function _applyBackgroundOptionLive(arg0, arg1) {
     }
     closure_130_1 = flag;
     _location = track.location;
-    return "PX_16";
+    return "flex";
   })();
   iter.next();
   return iter;
@@ -242,12 +242,12 @@ let closure_15 = async function _applyBackgroundOptionPreview(arg0, arg1, arg2) 
     }
     closure_131_2 = flag;
     _location = track.location;
-    return "PX_16";
+    return "flex";
   })();
   iter.next();
   return iter;
 };
-const VideoBackgroundConstants = fn(7264);
+const VideoBackgroundConstants = fn(6408);
 ({ BACKGROUND_REPLACEMENT_SIZE: metroRequire, BLUR_BACKGROUND_OPTION: closure_7 } = VideoBackgroundConstants);
 const NOOP = fn(1074).NOOP;
 const size = fn(2);

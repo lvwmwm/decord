@@ -1,14 +1,14 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 13636
+// Function ID: 13637
 // Name: NewTag
-// Dependencies: [19, 17, 1074, 21, 4788, 576, 5230, 4784, 1115, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 5293, 4832, 1115, 2]
 // Exports: default
 
-// Module 14394 (NewTag)
+// Module 13636 (NewTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Platform } = get_ActivityIndicator);
 const HorizontalGradient = fn(1074).HorizontalGradient;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { tagContainer: { height: "auto", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, justifyContent: "center", alignItems: "center", paddingHorizontal: 4, marginBottom: 2, borderRadius: nativeDefault.radii.round }, tagText: { textTransform: "uppercase" } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

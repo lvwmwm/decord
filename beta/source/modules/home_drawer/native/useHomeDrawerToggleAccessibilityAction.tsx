@@ -1,10 +1,10 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 15932
+// Function ID: 15933
 // Name: useHomeDrawerToggleAccessibilityAction
-// Dependencies: [19, 1115, 4645, 4499, 2]
+// Dependencies: [19, 1115, 4692, 4541, 2]
 // Exports: default
 
-// Module 16638 (useHomeDrawerToggleAccessibilityAction)
+// Module 15932 (useHomeDrawerToggleAccessibilityAction)
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
 
@@ -31,7 +31,7 @@ export default function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
         name,
         label: stringResult,
         action() {
-            closure_0(4645).setHomeDrawerState(!dependencyMap);
+            closure_0(4692).setHomeDrawerState(!dependencyMap);
             const intl = closure_0(1115).intl;
             const string = intl.string;
             const t = closure_0(1115).t;
@@ -40,7 +40,7 @@ export default function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
             } else {
               stringResult = string(t.hfxfVb);
             }
-            const AccessibilityAnnouncer = closure_0(4499).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = closure_0(4541).AccessibilityAnnouncer;
             AccessibilityAnnouncer.announce(stringResult);
           }
       };

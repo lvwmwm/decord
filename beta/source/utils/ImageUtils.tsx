@@ -1,13 +1,13 @@
-// Module ID: 1475
-// Function ID: 1476
+// Module ID: 1476
+// Function ID: 1477
 // Name: ImageUtils
-// Dependencies: [5, 1476, 1477, 12, 38, 2]
+// Dependencies: [5, 1477, 1478, 12, 38, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
-// Module 1475 (ImageUtils)
+// Module 1476 (ImageUtils)
 import _modDef38 from "module_38" /* 38 */;
-import PQueueDefault from "PQueue" /* 1476 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1477 */;
+import PQueueDefault from "PQueue" /* 1477 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1478 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import apply from "module_12" /* 12 */;
 

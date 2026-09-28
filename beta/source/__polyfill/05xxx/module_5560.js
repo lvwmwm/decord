@@ -1,9 +1,14 @@
 // Module ID: 5560
 // Function ID: 5561
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 5560
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "25ba997e1d3e8344c193637ad6eeccd3", name: "img_account_sync_league_of_legends_white", type: "png" });
+export default {
+  get() {
+    if (typeof TextDecoder !== "undefined") {
+      const _TextDecoder = TextDecoder;
+      return TextDecoder;
+    }
+  }
+};

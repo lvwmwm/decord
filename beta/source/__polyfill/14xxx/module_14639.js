@@ -1,17 +1,9 @@
 // Module ID: 14639
 // Function ID: 14640
-// Dependencies: [14634, 14640]
+// Dependencies: [1121]
 
 // Module 14639
-import _mod14634 from "module_14634" /* 14634 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const _mod14640 = tmp(14640);
 
-export default (arg0) => {
-  if (_mod14634(arg0)) {
-    return arg0;
-  } else {
-    const tmp6 = new TypeError(_mod14640(arg0) + " is not a function");
-    throw tmp6;
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6572d140954790b36ebb034e8accf006", name: "UndoIcon", type: "png" });

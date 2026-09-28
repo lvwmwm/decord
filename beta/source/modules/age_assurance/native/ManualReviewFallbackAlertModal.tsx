@@ -1,14 +1,14 @@
-// Module ID: 8896
-// Function ID: 8897
+// Module ID: 8046
+// Function ID: 8047
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 5146, 1115, 3098, 5146, 8897, 2]
+// Dependencies: [19, 21, 5209, 1115, 3103, 5209, 8047, 2]
 // Exports: default
 
-// Module 8896 (ManualReviewFallbackAlertModal)
+// Module 8046 (ManualReviewFallbackAlertModal)
 import util from "util" /* 1115 */;
-import _modDef3098 from "module_3098" /* 3098 */;
-import AlertModal from "AlertModal" /* 5146 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8897 */;
+import _modDef3103 from "module_3103" /* 3103 */;
+import AlertModal from "AlertModal" /* 5209 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8047 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,9 +20,9 @@ const result = size.fileFinishedImporting("modules/age_assurance/native/ManualRe
 export default function ManualReviewFallbackAlertModal() {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
-  obj.title = intl.string(_modDef3098["+c5sxg"]);
+  obj.title = intl.string(_modDef3103["+c5sxg"]);
   const intl2 = util.intl;
-  obj.content = intl2.string(_modDef3098["RFLH++"]);
+  obj.content = intl2.string(_modDef3103["RFLH++"]);
   const obj2 = { children: null };
   const obj3 = { text: null };
   const intl3 = util.intl;
@@ -30,7 +30,7 @@ export default function ManualReviewFallbackAlertModal() {
   const items = [React3(AlertModal.AlertActionButton, obj3, "got-it"), ];
   const obj4 = { variant: "secondary", text: null, onPress: null };
   const intl4 = util.intl;
-  obj4.text = intl4.string(_modDef3098.Z61nkt);
+  obj4.text = intl4.string(_modDef3103.Z61nkt);
   obj4.onPress = function onPress() {
     return ManualReviewActionCreators.handleManualReviewCta();
   };

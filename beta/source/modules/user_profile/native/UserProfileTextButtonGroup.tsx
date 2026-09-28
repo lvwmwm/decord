@@ -1,18 +1,18 @@
-// Module ID: 13318
-// Function ID: 13319
+// Module ID: 12570
+// Function ID: 12571
 // Name: UserProfileTextButtonGroup
-// Dependencies: [19, 17, 7485, 21, 4788, 1478, 2]
+// Dependencies: [19, 17, 6629, 21, 4836, 1479, 2]
 // Exports: default
 
-// Module 13318 (UserProfileTextButtonGroup)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+// Module 12570 (UserProfileTextButtonGroup)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
-const PROFILE_SIDE_PADDING = fn(7485).PROFILE_SIDE_PADDING;
+const PROFILE_SIDE_PADDING = fn(6629).PROFILE_SIDE_PADDING;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ container: { flexDirection: "row", flexWrap: "wrap", gap: 12 }, buttonArea: { flexGrow: 1 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileTextButtonGroup.tsx");

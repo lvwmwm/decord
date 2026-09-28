@@ -1,12 +1,12 @@
-// Module ID: 7969
-// Function ID: 7970
+// Module ID: 7114
+// Function ID: 7115
 // Name: AdDecisionUtils
-// Dependencies: [1091, 5700, 2]
+// Dependencies: [1091, 5763, 2]
 // Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 7969 (AdDecisionUtils)
+// Module 7114 (AdDecisionUtils)
 import DurationsDefault from "Durations" /* 1091 */;
-import AdCreativeType from "AdCreativeType" /* 5700 */;
+import AdCreativeType from "AdCreativeType" /* 5763 */;
 
 require = fn;
 let result = 6 * DurationsDefault.Millis.HOUR;
@@ -22,9 +22,9 @@ export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(type) 
     type = type.type;
     if (AdCreativeType.AdCreativeType.QUEST === type) {
       return type.questId;
-    } else if (tmp(5700).AdCreativeType.BOUNTY === type) {
+    } else if (tmp(5763).AdCreativeType.BOUNTY === type) {
       return type.bounty.id;
-    } else if (tmp(5700).AdCreativeType.QUEST_HOME_HERO === type) {
+    } else if (tmp(5763).AdCreativeType.QUEST_HOME_HERO === type) {
       return type.questHomeHero.id;
     }
   }
@@ -40,14 +40,14 @@ export const getDeliveredQuestId = function getDeliveredQuestId(creative) {
   }
   return questId;
 };
-export const getDeliveredBounty = function getDeliveredBounty(creative1) {
+export const getDeliveredBounty = function getDeliveredBounty(creative) {
   let type;
-  if (creative1 != null) {
-    type = creative1.type;
+  if (creative != null) {
+    type = creative.type;
   }
   let bounty = null;
   if (type === AdCreativeType.AdCreativeType.BOUNTY) {
-    bounty = creative1.bounty;
+    bounty = creative.bounty;
   }
   return bounty;
 };

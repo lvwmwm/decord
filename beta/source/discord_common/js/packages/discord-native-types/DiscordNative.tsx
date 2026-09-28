@@ -1,9 +1,9 @@
-// Module ID: 4814
-// Function ID: 4815
+// Module ID: 4862
+// Function ID: 4863
 // Name: discord_common/DiscordNative
 // Dependencies: [2]
 
-// Module 4814 (discord_common/DiscordNative)
+// Module 4862 (discord_common/DiscordNative)
 import size from "module_2" /* 2 */;
 
 class SystemServiceNotAvailableError extends Error {
@@ -20,3 +20,4 @@ export const StoredCrashInformation = { HasRTCConnection: 0, [0]: "HasRTCConnect
 export const JSExceptionLocation = { RendererProcessDelayed: 0, [0]: "RendererProcessDelayed", RendererProcess: 1, [1]: "RendererProcess", MainProcess: 2, [2]: "MainProcess" };
 export const DesktopSources = { WINDOW: "window", SCREEN: "screen", CAMERA: "camera" };
 export const ThumbarButtonName = { VIDEO: "VIDEO", MUTE: "MUTE", DEAFEN: "DEAFEN", DISCONNECT: "DISCONNECT" };
+export const TrayIcon = { DEFAULT: "DEFAULT", UNREAD: "UNREAD", CONNECTED: "CONNECTED", SPEAKING: "SPEAKING", MUTED: "MUTED", DEAFENED: "DEAFENED" };

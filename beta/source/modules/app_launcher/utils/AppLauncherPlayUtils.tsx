@@ -1,10 +1,10 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 10740
+// Function ID: 10741
 // Name: AppLauncherPlayUtils
-// Dependencies: [5, 9627, 4801, 11802, 2]
+// Dependencies: [5, 8784, 4849, 10741, 2]
 // Exports: launchActivityInBotDM
 
-// Module 11801 (AppLauncherPlayUtils)
+// Module 10740 (AppLauncherPlayUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -45,7 +45,7 @@ let closure_4 = async function _launchActivityInBotDM(arg0, value) {
           closure_129_6 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

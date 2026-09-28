@@ -1,9 +1,7 @@
 // Module ID: 13771
 // Function ID: 13772
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 13771
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [2, 3], hash: "5df78f325bc8d637c2d3b01b683e170b", name: "ic_close_18px", type: "png" });
+export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

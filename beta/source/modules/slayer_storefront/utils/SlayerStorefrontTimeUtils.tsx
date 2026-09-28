@@ -1,14 +1,14 @@
-// Module ID: 17401
-// Function ID: 17402
+// Module ID: 16751
+// Function ID: 16752
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 4380, 1091, 1115, 3580, 7719, 2]
+// Dependencies: [32, 19, 4421, 1091, 1115, 3585, 6865, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 17401 (SlayerStorefrontTimeUtils)
+// Module 16751 (SlayerStorefrontTimeUtils)
 import util from "util" /* 1115 */;
-import _modDef3580 from "module_3580" /* 3580 */;
-import _modDef4380 from "module_4380" /* 4380 */;
-import useIntervalDefault from "useInterval" /* 7719 */;
+import _modDef3585 from "module_3585" /* 3585 */;
+import _modDef4421 from "module_4421" /* 4421 */;
+import useIntervalDefault from "useInterval" /* 6865 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ function getLimitedOfferTimeLeft(arg0) {
   if (null == arg0) {
     return null;
   } else {
-    const diffResult = _modDef4380(arg0).diff(_modDef4380(), "seconds");
+    const diffResult = _modDef4421(arg0).diff(_modDef4421(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
       const time = { days: null, hours: null, minutes: null, seconds: null };
@@ -48,13 +48,13 @@ function formatLimitedOfferTimeLeft(arg0) {
     } else if (hours > 0) {
       const intl2 = util.intl;
       const obj3 = { hours };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3580.PPaJSw, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3585.PPaJSw, obj3);
     } else {
       const intl = util.intl;
       const obj = { minutes: null };
       const _Math = Math;
       obj.minutes = Math.max(tmp12, 1);
-      formatToPlainStringResult = intl.formatToPlainString(_modDef3580["7Z+aIf"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(_modDef3585["7Z+aIf"], obj);
     }
     return formatToPlainStringResult;
   }
@@ -66,10 +66,22 @@ export { getLimitedOfferTimeLeft };
 export { formatLimitedOfferTimeLeft };
 export const useTickingFormattedLimitedOfferTimeLeft = function useTickingFormattedLimitedOfferTimeLeft(endDate) {
   closure_0 = endDate;
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = true;
+  }
   const tmp = _slicedToArray(noop.useState(() => formatLimitedOfferTimeLeft(closure_0)), 2);
   importDefault = tmp[1];
+  let num = null;
+  if (flag) {
+    num = 1000;
+  }
   useIntervalDefault(() => {
     closure_1(formatLimitedOfferTimeLeft(closure_0));
-  }, 1000);
-  return tmp[0];
+  }, num);
+  let first = null;
+  if (flag) {
+    first = tmp[0];
+  }
+  return first;
 };

@@ -1,9 +1,15 @@
 // Module ID: 5842
 // Function ID: 5843
-// Dependencies: [1121]
+// Dependencies: [5843, 5846]
 
 // Module 5842
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5843 from "module_5843" /* 5843 */;
 
+const require = globalThis.__r;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 23, scales: [2, 3], hash: "dad967f4b91a8b9097664b2a63d76758", name: "ic_verified_guild_icon_black_24px", type: "png" });
+for (const key10016 in require("module_5846")) {
+  arg5[key10016] = require("module_5846")[key10016];
+  continue;
+}
+
+export default _mod5843.LottieView;

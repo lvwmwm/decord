@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 40, height: 40, scales: [2, 3], hash: "d4d023fcd230d5f7401c0e512db37851", name: "ic_checkmark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/self_mod/inappropriate_conversation/images", width: 1125, height: 1320, scales: [1, 2, 3], hash: "b033af5495ac778a49adec13082b9f99", name: "vibing_wumpus_rings", type: "png" });

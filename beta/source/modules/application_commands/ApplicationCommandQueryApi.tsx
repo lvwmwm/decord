@@ -1,20 +1,20 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 8719
+// Function ID: 8720
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 2063, 9436, 5242, 1074, 7795, 9444, 504, 9446, 1370, 1978, 9441, 9551, 7797, 2]
+// Dependencies: [32, 19, 2067, 8591, 5305, 1074, 6941, 8599, 504, 8601, 1370, 1979, 8596, 8708, 6943, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 9562 (ApplicationCommandQueryApi)
+// Module 8719 (ApplicationCommandQueryApi)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7795 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7797 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9444 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9446 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 9551 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 6941 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6943 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8599 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 8601 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 8708 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9436 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 8591 */;
 
 const require = globalThis.__r;
 const CommandPermissionUtilsAll = CommandPermissionUtils;
@@ -58,20 +58,20 @@ function findCommandInSection(found, commandId) {
     }
   }
 }
-let ApplicationCommandIndexStore = fn(9436);
+let ApplicationCommandIndexStore = fn(8591);
 ({ useContextIndexState: metroRequire, useDiscoveryState: closure_7, useQueryState: closure_8, useUserIndexState: closure_9 } = ApplicationCommandIndexStore);
 let ApplicationCommandIndexStore = ApplicationCommandIndexStore_mod;
-const BuiltInSectionId = fn(5242).BuiltInSectionId;
+const BuiltInSectionId = fn(5305).BuiltInSectionId;
 const NOOP = fn(1074).NOOP;
-let items = [fn(1978).ApplicationCommandType.CHAT];
-let section = { id: "placeholder-section", type: fn(7797).ApplicationCommandSectionType.APPLICATION, name: "" };
+let items = [fn(1979).ApplicationCommandType.CHAT];
+let section = { id: "placeholder-section", type: fn(6943).ApplicationCommandSectionType.APPLICATION, name: "" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandQueryApi.tsx");
 
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "Array", command: "ip", section: "text" };
+    return { application: "Array", command: "paddingHorizontal", section: "sa" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -118,7 +118,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "Array", command: "ip", section: "text" };
+    return { application: "Array", command: "paddingHorizontal", section: "sa" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -426,7 +426,7 @@ export const useCommand = function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "y", application: "w" };
+    return { command: "st", application: "channel" };
   }, items);
 };
 export const useCommandsForApplication = function useCommandsForApplication(arg0, arg1, arg2) {

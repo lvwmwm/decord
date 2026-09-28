@@ -1,16 +1,16 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 14384
+// Function ID: 14385
 // Name: DiscoveryByEmailSetting
-// Dependencies: [8265, 1074, 1115, 2019, 1385, 12966, 11754, 2]
+// Dependencies: [7417, 1074, 1115, 2021, 1385, 12181, 11006, 2]
 
-// Module 15129 (DiscoveryByEmailSetting)
+// Module 14384 (DiscoveryByEmailSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12966 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12181 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const FriendDiscoveryFlags = Constants.FriendDiscoveryFlags;

@@ -1,14 +1,14 @@
-// Module ID: 13302
-// Function ID: 13303
+// Module ID: 12536
+// Function ID: 12537
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1364, 4524, 13303, 13304, 8570, 6929, 7349, 7439, 7459, 8596, 13308, 4789, 8565, 8635, 9682, 4525, 9684, 2]
+// Dependencies: [32, 19, 17, 21, 1364, 4566, 12537, 12538, 7715, 6073, 6493, 6583, 6603, 7741, 12542, 4837, 7710, 7780, 8839, 4567, 8841, 2]
 
-// Module 13302 (MediaViewer)
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
-import useVideoControls from "useVideoControls" /* 8565 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8596 */;
-import MediaViewerItem from "MediaViewerItem" /* 13304 */;
+// Module 12536 (MediaViewer)
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
+import useVideoControls from "useVideoControls" /* 7710 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 7741 */;
+import MediaViewerItem from "MediaViewerItem" /* 12538 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -24,16 +24,16 @@ function MediaViewer(arg0) {
   __initData = undefined;
   ({ onLongPress, originLayout, renderMedia, renderOverlay, swipeVelocityThreshold } = arg0);
   ({ useViewerProps, zoomed } = syncer);
-  value = [height(7459).MEDIA_VIEWER];
+  value = [height(6603).MEDIA_VIEWER];
   let tmp = height;
-  const tmp3 = height(7439);
+  const tmp3 = height(6583);
   [tmp5, tmp6] = sharedValue(sharedValue1.useState(true), 2);
   const _require = tmp6;
   const tmp4 = sharedValue(sharedValue1.useState(true), 2);
   const tmp7 = _require;
   const mediaViewerDimensions = require("MediaViewerDimensionsContext").useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(13308)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(12542)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj = require("MediaViewerDimensionsContext");
   sharedValue = require("ReanimatedRexport").useSharedValue(0);
@@ -216,7 +216,7 @@ function MediaViewer(arg0) {
   const orientationListener = require("DeviceOrientation").useOrientationListener(callback2);
   const obj16 = { style: closure_6.absoluteFill, onAccessibilityEscape: dismiss, onLayout: callback1, children: null };
   const obj15 = require("DeviceOrientation");
-  const items5 = [translatePos(height(9682), { barStyle: "light-content", hidden: !tmp5 }), translatePos(height(4524).View, { style: animatedStyle }), translatePos(height(4525), { ref: animatedRef, style: animatedStyle2, children: translatePos(ref, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed }) }), , ];
+  const items5 = [translatePos(height(8839), { barStyle: "light-content", hidden: !tmp5 }), translatePos(height(4566).View, { style: animatedStyle }), translatePos(height(4567), { ref: animatedRef, style: animatedStyle2, children: translatePos(ref, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed }) }), , ];
   const obj18 = { style: null, pointerEvents: null, children: null };
   const items6 = [sharedValue(sharedValue1.useState(obj8), 1)[0], animatedStyle1];
   obj18.style = items6;
@@ -230,11 +230,11 @@ function MediaViewer(arg0) {
   }
   obj18.pointerEvents = str;
   obj18.children = renderOverlay(dismiss, overlayEnabled);
-  items5[3] = translatePos(height(4525), obj18);
-  items5[4] = translatePos(tmp(9684), {});
+  items5[3] = translatePos(height(4567), obj18);
+  items5[4] = translatePos(tmp(8841), {});
   obj16.children = items5;
   const children = tmp28(tmp29, obj16);
-  return translatePos(tmp7(7439).AnalyticsLocationProvider, { value: tmp3(value).analyticsLocations, children });
+  return translatePos(tmp7(6583).AnalyticsLocationProvider, { value: tmp3(value).analyticsLocations, children });
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);

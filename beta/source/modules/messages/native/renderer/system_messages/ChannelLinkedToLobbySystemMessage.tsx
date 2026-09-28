@@ -1,14 +1,14 @@
-// Module ID: 8334
-// Function ID: 8335
+// Module ID: 7487
+// Function ID: 7488
 // Name: ChannelLinkedToLobbySystemMessage
-// Dependencies: [5015, 1074, 8243, 8250, 8252, 2108, 1115, 8254, 2]
+// Dependencies: [5063, 1074, 7395, 7402, 7404, 2111, 1115, 7406, 2]
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 8334 (ChannelLinkedToLobbySystemMessage)
+// Module 7487 (ChannelLinkedToLobbySystemMessage)
 import util from "util" /* 1115 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8243 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8250 */;
-import ApplicationStore from "ApplicationStore" /* 5015 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7395 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
+import ApplicationStore from "ApplicationStore" /* 5063 */;
 
 require = fn;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
@@ -30,18 +30,18 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, applicationName: null, applicationNameOnClick: null, urlOnClick: null };
     const obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj2.usernameOnClick = tmp(8252)(obj3);
+    obj2.usernameOnClick = tmp(7404)(obj3);
     obj2.applicationName = application.name;
     const obj4 = { linkColor: tmp3.defaultUsernameColor, medium: true };
     obj2.applicationNameOnClick = obj4;
     const obj5 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
-    obj5.url = tmp(2108).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
+    obj5.url = tmp(2111).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
     obj5.linkColor = tmp3.linkColor;
     obj2.urlOnClick = obj5;
     const obj6 = { content: null };
     const intl = util.intl;
     obj6.content = intl.formatToParts(util.t.gZfhOw, obj2);
-    const merged = Object.assign(tmp(8254)(message));
+    const merged = Object.assign(tmp(7406)(message));
     return obj6;
   }
 };

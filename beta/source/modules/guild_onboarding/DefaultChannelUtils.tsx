@@ -1,14 +1,14 @@
-// Module ID: 7379
-// Function ID: 7380
+// Module ID: 6523
+// Function ID: 6524
 // Name: DefaultChannelUtils
-// Dependencies: [2097, 2041, 1074, 1086, 504, 4432, 2]
+// Dependencies: [2100, 2045, 1074, 1086, 504, 4474, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 7379 (DefaultChannelUtils)
+// Module 6523 (DefaultChannelUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
-import GatedChannelStore from "GatedChannelStore" /* 2097 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
+import GatedChannelStore from "GatedChannelStore" /* 2100 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = globalThis.__r;
 

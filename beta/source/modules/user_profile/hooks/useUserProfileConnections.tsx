@@ -1,12 +1,12 @@
-// Module ID: 13422
-// Function ID: 13423
+// Module ID: 12674
+// Function ID: 12675
 // Name: useUserProfileConnections
-// Dependencies: [19, 7889, 7777, 504, 5532, 2]
+// Dependencies: [19, 7035, 6923, 504, 5595, 2]
 // Exports: default
 
-// Module 13422 (useUserProfileConnections)
+// Module 12674 (useUserProfileConnections)
 import _mod19 from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7889 */;
+import UserProfileStore from "UserProfileStore" /* 7035 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

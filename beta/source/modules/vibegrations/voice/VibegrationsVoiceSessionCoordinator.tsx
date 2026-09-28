@@ -1,24 +1,24 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14020
+// Function ID: 14021
 // Name: VibegrationsVoiceSessionCoordinator
-// Dependencies: [14771, 9345, 502, 1992, 4811, 1372, 4807, 1074, 4813, 9613, 14125, 1255, 9943, 14772, 14773, 2]
+// Dependencies: [14021, 8499, 502, 1993, 4859, 1372, 4855, 1074, 4861, 8770, 13371, 1255, 9104, 14022, 14023, 2]
 
-// Module 14770 (VibegrationsVoiceSessionCoordinator)
-import RPCErrorDefault from "RPCError" /* 9613 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 14125 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14773 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 14771 */;
-import FramesStore from "FramesStore" /* 9345 */;
+// Module 14020 (VibegrationsVoiceSessionCoordinator)
+import RPCErrorDefault from "RPCError" /* 8770 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13371 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14023 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 14021 */;
+import FramesStore from "FramesStore" /* 8499 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 let obj2 = fn;
 const RPCErrors = fn(1074).RPCErrors;
-const Constants = fn(4813);
+const Constants = fn(4861);
 ({ Features: closure_11, MediaEngineContextTypes: closure_12 } = Constants);
 let closure_13 = { x: 0, y: 0, z: -1 };
 class VibegrationsVoiceSessionCoordinator {
@@ -294,7 +294,7 @@ prototype["update"] = function update(id, id, arg2, arr) {
             if (!set.has(user_id)) {
               obj.add(user_id);
               obj2 = { userId: user_id, position: null };
-              obj2.position = obj2(14772).toListenerRelativePosition(closure_0, user_id.position);
+              obj2.position = obj2(14022).toListenerRelativePosition(closure_0, user_id.position);
               return obj2;
             }
             obj = set;

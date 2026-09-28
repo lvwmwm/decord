@@ -1,13 +1,13 @@
-// Module ID: 9635
-// Function ID: 9636
+// Module ID: 8792
+// Function ID: 8793
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 2041, 2040, 1074, 9636, 9629, 573, 4688, 4417, 9638, 9607, 9639, 9167, 9641, 2]
+// Dependencies: [5, 2045, 2044, 1074, 8793, 8786, 573, 4735, 4458, 8795, 8764, 8796, 8321, 8798, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 9635 (confirmActivityLaunchChecks)
+// Module 8792 (confirmActivityLaunchChecks)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 const require = fn;
 function getOrFetchApplicationForLaunch() {
@@ -54,7 +54,7 @@ let closure_8 = async function _getOrFetchApplicationForLaunch(arg0, value) {
           closure_131_3 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -154,7 +154,7 @@ let closure_9 = async function _confirmActivityChange(arg0, value) {
           ({ currentEmbeddedApplication: closure_129_0, shouldClosePopoutOnLeaveCurrentEmbeddedApplication: closure_129_1, onConfirmActivityLaunchChecksAlertOpen: closure_129_2 } = closure_0);
           c2 = 1;
           c3 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -174,13 +174,13 @@ let closure_9 = async function _confirmActivityChange(arg0, value) {
               if (value != null) {
                 _location = value.location;
               }
-              channel = channel.getChannel(closure_1_0(4417).getEmbeddedActivityLocationChannelId(_location));
+              channel = channel.getChannel(closure_1_0(4458).getEmbeddedActivityLocationChannelId(_location));
               if (null != value) {
                 if (null != channel) {
                   if (dependencyMap != null) {
                     dependencyMap();
                   }
-                  shouldClosePopout(9638)(tmp, channel, () => {
+                  shouldClosePopout(8795)(tmp, channel, () => {
                     value(c2[10])().leaveActivity({ location: value.location, applicationId: closure_2_0.id, shouldClosePopout });
                     closure_0(true);
                   }, () => closure_0(false));
@@ -249,7 +249,7 @@ let closure_10 = async function _confirmActivityAgeGate(arg0, value) {
           closure_131_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -389,7 +389,7 @@ let closure_11 = async function _confirmExternalAppLaunch(arg0, value) {
           closure_131_4 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {

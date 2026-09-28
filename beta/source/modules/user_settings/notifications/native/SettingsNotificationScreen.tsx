@@ -1,18 +1,18 @@
-// Module ID: 15758
-// Function ID: 15759
+// Module ID: 15031
+// Function ID: 15032
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 15759, 8265, 21, 4788, 576, 7257, 12694, 15760, 15761, 4784, 1115, 5856, 6884, 11754, 15762, 15763, 14992, 2]
+// Dependencies: [19, 17, 15032, 7417, 21, 4836, 576, 6401, 11904, 15033, 15034, 4832, 1115, 5919, 6028, 11006, 15035, 15036, 14247, 2]
 
-// Module 15758 (SettingsNotificationScreen)
+// Module 15031 (SettingsNotificationScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7257 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12694 */;
-import SettingLayoutDefault from "SettingLayout" /* 14992 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15760 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15761 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15762 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6401 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11904 */;
+import SettingLayoutDefault from "SettingLayout" /* 14247 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15033 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15034 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15035 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -30,7 +30,7 @@ function SystemNotificationsSubLabel() {
     const obj5 = { variant: str, color: "text-muted", children: null };
     const intl = tmp2(1115).intl;
     obj5.children = intl.string(tmp2(1115).t["/TZX1J"]);
-    result = React5(tmp2(4784).Text, obj5);
+    result = React5(tmp2(4832).Text, obj5);
   }
   const children = [result, ];
   if (showReactivationPrompt) {
@@ -41,27 +41,27 @@ function SystemNotificationsSubLabel() {
     const obj7 = { border: "none", shadow: "none", children: null };
     const obj8 = { style: tmp.cardContent, children: null };
     const obj9 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const items1 = [React5(tmp2(6884).CircleErrorIcon, obj9), ];
+    const items1 = [React5(tmp2(6028).CircleErrorIcon, obj9), ];
     const obj10 = { style: tmp.text, children: null };
     const obj11 = { color: "text-default", variant: "text-sm/medium", children: null };
     const intl2 = tmp2(1115).intl;
     obj11.children = intl2.string(tmp2(1115).t.TAuasM);
-    obj10.children = React5(tmp2(4784).Text, obj11);
+    obj10.children = React5(tmp2(4832).Text, obj11);
     items1[1] = React5(View, obj10);
     obj8.children = items1;
     obj7.children = tmp8(View, obj8);
-    obj6.children = React5(tmp2(5856).Card, obj7);
+    obj6.children = React5(tmp2(5919).Card, obj7);
     showReactivationPrompt = React5(View, obj6);
   }
   children[1] = showReactivationPrompt;
   return React6(React7, { children });
 }
 const View = fn(17).View;
-let closure_5 = fn(15759).initializeAndroidNotificationSettingsStore;
-const MobileUserSettings = fn(8265).MobileUserSettings;
+let closure_5 = fn(15032).initializeAndroidNotificationSettingsStore;
+const MobileUserSettings = fn(7417).MobileUserSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { card: { marginBottom: 8, borderColor: nativeDefault.unsafe_rawColors.YELLOW_300, borderWidth: 1, borderRadius: nativeDefault.radii.lg }, cardContent: { flexDirection: "row", alignItems: "center", gap: 8 }, text: { flex: 1 } };
 let closure_10 = createStyles.createStyles(obj);
 let obj3 = { marginBottom: 8, borderColor: nativeDefault.unsafe_rawColors.YELLOW_300, borderWidth: 1, borderRadius: nativeDefault.radii.lg };

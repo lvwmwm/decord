@@ -1,18 +1,18 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 14818
+// Function ID: 14819
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15547, 1074, 21, 4524, 1177, 4788, 576, 5203, 12, 15548, 4789, 4792, 1230, 9506, 4784, 1609, 11053, 4756, 1115, 15551, 2]
+// Dependencies: [19, 17, 14819, 1074, 21, 4566, 1177, 4836, 576, 5266, 12, 14820, 4837, 4840, 1230, 8661, 4832, 1610, 10222, 4801, 1115, 14823, 2]
 // Exports: default
 
-// Module 15546 (SettingsAppearanceThemeCarousel)
+// Module 14818 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import HapticUtils from "HapticUtils" /* 4756 */;
-import timing from "timing" /* 4789 */;
-import timingPresets from "timingPresets" /* 4792 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import timing from "timing" /* 4837 */;
+import timingPresets from "timingPresets" /* 4840 */;
 import noop from "module_19" /* 19 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15547 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 14819 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -21,7 +21,7 @@ const ThemeTypes = fn(1074).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
 let closure_11 = ReanimatedRexport.createAnimatedComponent(fn(1177).Icon);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { container: { gap: nativeDefault.space.PX_24, alignItems: "center" }, textCentered: { textAlign: "center" }, labelGroup: null, titleContainer: null, floatingNuxContainer: null, floatingNux: null, arrowLeft: null, uppercase: null, selectionBorder: null, a11yThemeList: null, a11yThemeListScroll: null };
 let obj3 = { gap: nativeDefault.space.PX_24, alignItems: "center" };
 obj.labelGroup = { gap: nativeDefault.space.PX_4, alignItems: "center" };

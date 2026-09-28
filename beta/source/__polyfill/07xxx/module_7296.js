@@ -1,20 +1,9 @@
 // Module ID: 7296
 // Function ID: 7297
-// Dependencies: [7297]
-// Exports: getDistanceForDirection
+// Dependencies: [1121]
 
 // Module 7296
-import _mod7297 from "module_7297" /* 7297 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const getDistanceForDirection = function getDistanceForDirection(layout, gestureDirection, arg2) {
-  const invertedMultiplier = _mod7297.getInvertedMultiplier(gestureDirection, arg2);
-  if ("vertical" !== gestureDirection) {
-    if ("vertical-inverted" !== gestureDirection) {
-      return layout.width * invertedMultiplier;
-    }
-  }
-  return layout.height * invertedMultiplier;
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 24, height: 24, scales: [2, 3, 4], hash: "3b3008631d50089085453fd7d277929c", name: "stack-nav-close", type: "png" });

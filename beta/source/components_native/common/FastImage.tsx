@@ -1,10 +1,10 @@
-// Module ID: 5836
-// Function ID: 5837
+// Module ID: 5899
+// Function ID: 5900
 // Name: FastImage
-// Dependencies: [19, 17, 21, 4788, 5837, 1364, 2]
+// Dependencies: [19, 17, 21, 4836, 5900, 1364, 2]
 
-// Module 5836 (FastImage)
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5837 */;
+// Module 5899 (FastImage)
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5900 */;
 import noop from "module_19" /* 19 */;
 
 class FastImageAndroid {
@@ -19,12 +19,11 @@ class FastImageAndroid {
 get_ActivityIndicator = fn(17);
 ({ Image: c2, NativeModules: c3 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles({ base: { overflow: "hidden" } });
 let merged = Object.assign(noop.memo((fade) => {
-  ({ placeholder, enableAnimation } = fade);
+  ({ source, placeholder, enableAnimation } = fade);
   let tmp2 = undefined === enableAnimation;
-  ({ source, style } = fade);
   if (!tmp2) {
     tmp2 = enableAnimation;
   }
@@ -46,7 +45,13 @@ let merged = Object.assign(noop.memo((fade) => {
     }
     const obj = {};
     const merged1 = Object.assign(fade);
-    const items = [tmp.base, style];
+    const _Array = Array;
+    let first = source;
+    if (Array.isArray(source)) {
+      first = source[0];
+    }
+    obj.source = first;
+    const items = [tmp.base, fade.style];
     obj.style = items;
     let uri;
     if (assetSource != null) {

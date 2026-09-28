@@ -1,15 +1,15 @@
-// Module ID: 17122
-// Function ID: 17123
+// Module ID: 16464
+// Function ID: 16465
 // Name: GridItemPlaceholder
-// Dependencies: [19, 17, 21, 4788, 576, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 2]
 
-// Module 17122 (GridItemPlaceholder)
+// Module 16464 (GridItemPlaceholder)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { imageContainer: { flex: 1, borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BORDER_SUBTLE } };
 let closure_2 = createStyles.createStyles(obj);
 const obj3 = { flex: 1, borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };

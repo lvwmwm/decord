@@ -1,34 +1,34 @@
-// Module ID: 10404
-// Function ID: 10405
+// Module ID: 9568
+// Function ID: 9569
 // Name: ChannelRowPreview
-// Dependencies: [19, 17, 4437, 21, 5337, 10405, 10206, 10407, 4730, 10409, 8156, 8158, 5225, 10411, 10389, 10416, 10414, 4784, 4722, 4788, 576, 4489, 2019, 8222, 8962, 8427, 8226, 504, 2]
+// Dependencies: [19, 17, 4479, 21, 5401, 9569, 9366, 9571, 4775, 9573, 7305, 7307, 5288, 9575, 9553, 9580, 9578, 4832, 4767, 4836, 576, 4531, 2021, 7374, 8112, 7583, 7378, 504, 2]
 
-// Module 10404 (ChannelRowPreview)
-import UserSettings from "UserSettings" /* 2019 */;
-import useToken from "useToken" /* 4489 */;
-import LinkIcon from "LinkIcon" /* 4730 */;
-import createStyles from "createStyles" /* 4788 */;
-import useFontScale from "useFontScale" /* 5225 */;
-import ImageIcon from "ImageIcon" /* 5337 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 8156 */;
-import PhoneHangUpIcon from "PhoneHangUpIcon" /* 8158 */;
-import RowGeneratorDefault from "RowGenerator" /* 8222 */;
-import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 8226 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8427 */;
-import MusicIcon from "MusicIcon" /* 10206 */;
-import useFormattedMessagePreview from "useFormattedMessagePreview" /* 10389 */;
-import VideoIcon from "VideoIcon" /* 10405 */;
-import AttachmentIcon from "AttachmentIcon" /* 10407 */;
-import StickerIcon from "StickerIcon" /* 10409 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 10411 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10414 */;
-import ChannelListLayout from "ChannelListLayout" /* 10416 */;
+// Module 9568 (ChannelRowPreview)
+import UserSettings from "UserSettings" /* 2021 */;
+import useToken from "useToken" /* 4531 */;
+import LinkIcon from "LinkIcon" /* 4775 */;
+import createStyles from "createStyles" /* 4836 */;
+import useFontScale from "useFontScale" /* 5288 */;
+import ImageIcon from "ImageIcon" /* 5401 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 7305 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7307 */;
+import RowGeneratorDefault from "RowGenerator" /* 7374 */;
+import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 7378 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7583 */;
+import MusicIcon from "MusicIcon" /* 9366 */;
+import useFormattedMessagePreview from "useFormattedMessagePreview" /* 9553 */;
+import VideoIcon from "VideoIcon" /* 9569 */;
+import AttachmentIcon from "AttachmentIcon" /* 9571 */;
+import StickerIcon from "StickerIcon" /* 9573 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 9575 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
+import ChannelListLayout from "ChannelListLayout" /* 9580 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 
 const require = globalThis.__r;
 
-const Text_Text = tmp(4784);
+const Text_Text = tmp(4832);
 require = fn;
 function PreviewIcon(icon) {
   icon = icon.icon;

@@ -1,14 +1,14 @@
-// Module ID: 17813
-// Function ID: 17814
+// Module ID: 17170
+// Function ID: 17171
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1349, 21, 4788, 576, 17801, 7258, 8635, 17814, 5213, 4486, 1115, 9762, 9770, 5371, 4740, 4784, 9584, 2]
+// Dependencies: [32, 19, 17, 1349, 21, 4836, 576, 17158, 6402, 7780, 17171, 5276, 4528, 1115, 8922, 8931, 5435, 4785, 4832, 8741, 2]
 // Exports: default
 
-// Module 17813 (InteractionIframeModal)
+// Module 17170 (InteractionIframeModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17814 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17171 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ const View = fn(17).View;
 const BotTagTypes = fn(1349).BotTagTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 }, header: { flexDirection: "row", padding: 16, justifyContent: "space-between", alignItems: "center" }, headerCenterContainer: { flexDirection: "column", alignItems: "center" }, headerTitleContainer: { flexDirection: "row", marginBottom: 2 }, closeButton: { marginEnd: 8 }, spacerView: { marginStart: 8, width: 32 }, botTag: { marginStart: 4 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -67,7 +67,7 @@ export default function InteractionIframeModal(children) {
       allowPopups: null,
       referrerPolicy: "origin",
       isPipOrGridMode: false,
-      webViewKey: "PX_16",
+      webViewKey: "flex",
       ignoreSilentHardwareSwitch: "en-CC"
     };
     ({ channel_id: obj2.channelId, guild_id: obj2.guildId } = queryParams);

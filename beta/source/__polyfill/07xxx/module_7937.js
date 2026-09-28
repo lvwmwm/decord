@@ -1,9 +1,88 @@
 // Module ID: 7937
 // Function ID: 7938
-// Dependencies: [1121]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7924, 7938, 7933]
 
 // Module 7937
-import registerAsset from "module_1121" /* 1121 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef7933 from "module_7933" /* 7933 */;
+import _modDef7938 from "module_7938" /* 7938 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
+const Circle = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+_possibleConstructorReturnDefault;
+const jsx = fn(21).jsx;
+class Circle {
+  constructor() {
+    self = this;
+    tmp = closure_3(this, Circle);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(Circle);
+    tmp3 = closure_4;
+    if (closure_7()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(Circle, _modDef7933);
+const entry = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const props = this.props;
+    const obj = {};
+    ({ cx, cy, r } = props);
+    const merged = Object.assign(Circle(7924).extract(this, props));
+    obj.cx = cx;
+    obj.cy = cy;
+    obj.r = r;
+    const obj2 = Circle(7924);
+    const obj3 = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const merged1 = Object.assign(obj);
+    return jsx(_modDef7938, {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    });
+  }
+};
+const items = [entry];
+const importDefaultResultResult = _createClass(Circle, items);
+importDefaultResultResult.displayName = "Circle";
+importDefaultResultResult.defaultProps = { cx: 0, cy: 0, r: 0 };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/auth", width: 1920, height: 1080, scales: [1], hash: "c2620d71d0c18f7cbdf536c0e7d3a788", name: "background-splash-dev", type: "jpg" });
+export default importDefaultResultResult;

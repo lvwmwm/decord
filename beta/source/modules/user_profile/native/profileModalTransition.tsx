@@ -1,10 +1,10 @@
-// Module ID: 17255
-// Function ID: 17256
+// Module ID: 16603
+// Function ID: 16604
 // Name: profileModalTransition
-// Dependencies: [19, 1484, 2]
+// Dependencies: [19, 1485, 2]
 // Exports: useIsProfileModalTransitioning, useReportProfileModalTransition
 
-// Module 17255 (profileModalTransition)
+// Module 16603 (profileModalTransition)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -14,7 +14,7 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
 
 export const useReportProfileModalTransition = function useReportProfileModalTransition() {
-  navigation = navigation(1484).useNavigation();
+  navigation = navigation(1485).useNavigation();
   let items = [navigation];
   const effect = noop.useEffect(() => {
     function leave() {

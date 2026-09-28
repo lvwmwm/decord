@@ -1,10 +1,10 @@
-// Module ID: 13961
-// Function ID: 13962
+// Module ID: 13211
+// Function ID: 13212
 // Name: GatewayCapabilities
 // Dependencies: [2]
 // Exports: getClientCapabilities
 
-// Module 13961 (GatewayCapabilities)
+// Module 13211 (GatewayCapabilities)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gateway/GatewayCapabilities.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 18279
-// Function ID: 18280
+// Module ID: 17644
+// Function ID: 17645
 // Name: MessageSendFailureNotificationManager
-// Dependencies: [2095, 4609, 1372, 1979, 1074, 9349, 10390, 10392, 9589, 1115, 7395, 2]
+// Dependencies: [2099, 4655, 1372, 1980, 1074, 8504, 9554, 9556, 8746, 1115, 6539, 2]
 
-// Module 18279 (MessageSendFailureNotificationManager)
+// Module 17644 (MessageSendFailureNotificationManager)
 import util from "util" /* 1115 */;
-import PushNotificationDefault from "PushNotification" /* 9589 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10390 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10392 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import PushNotificationDefault from "PushNotification" /* 8746 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 9554 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9556 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import AppStateStore from "AppStateStore" /* 1980 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 function handleMessageSendFailure(shouldNotify) {
@@ -79,7 +79,7 @@ function handleMessageCreate(message) {
 }
 const Constants = fn(1074);
 ({ InAppNotificationTypes: closure_7, MessageStates: closure_8 } = Constants);
-const LocalNotificationTypes = fn(9349).LocalNotificationTypes;
+const LocalNotificationTypes = fn(8504).LocalNotificationTypes;
 const prototype = function MessageSendFailureNotificationManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { MESSAGE_CREATE: handleMessageCreate, MESSAGE_SEND_FAILED: handleMessageSendFailure };

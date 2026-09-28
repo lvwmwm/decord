@@ -1,9 +1,90 @@
 // Module ID: 9930
 // Function ID: 9931
-// Dependencies: [1121]
+// Dependencies: [41, 42, 93, 95, 98, 9914]
 
 // Module 9930
-import registerAsset from "module_1121" /* 1121 */;
+import Filter from "Filter" /* 9914 */;
+import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let _classCallCheck = _classCallCheck_mod;
+class ENUnlikelyFormatFilter {
+  constructor() {
+    self = this;
+    tmp = closure_0(this, ENUnlikelyFormatFilter);
+    tmp2 = c2;
+    obj = c2(ENUnlikelyFormatFilter);
+    tmp3 = closure_1;
+    if (closure_3()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_classCallCheck = ENUnlikelyFormatFilter;
+_inherits(ENUnlikelyFormatFilter, Filter.Filter);
+const entry = {
+  key: "isValid",
+  value: function isValid(text, text2) {
+    closure_0 = text2;
+    const str2 = text2.text.trim();
+    if (str2 === str3.trim()) {
+      return true;
+    } else {
+      if ("may" === str2.toLowerCase()) {
+        const str5 = text.text.substring(0, text2.index);
+        if (!str6.match(/\b(in)$/i)) {
+          text.debug(() => {
+            console.log("Removing unlikely result: " + closure_0);
+          });
+          return false;
+        }
+        str6 = text.text.substring(0, text2.index).trim();
+      }
+      const formatted = str2.toLowerCase();
+      const endsWithResult = formatted.endsWith("the second");
+      let flag2 = !endsWithResult;
+      if (endsWithResult) {
+        flag2 = false;
+        if (str9.trim().length > 0) {
+          text.debug(() => {
+            console.log("Removing unlikely result: " + closure_0);
+          });
+          flag2 = false;
+        }
+        str9 = text.text.substring(text2.index + text2.text.length);
+      }
+      return flag2;
+    }
+    str3 = text.text;
+  }
+};
+const items = [entry];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "9f54567445c4adae5611d0c5070bb14f", name: "ic_more_24px", type: "png" });
+export default _createClass(ENUnlikelyFormatFilter, items);

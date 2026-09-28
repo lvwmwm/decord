@@ -1,0 +1,26 @@
+// Module ID: 6308
+// Function ID: 6309
+// Dependencies: [6309]
+
+// Module 6308
+import _mod6309 from "module_6309" /* 6309 */;
+
+
+export default function _inherits(value, fn) {
+  if (typeof fn !== "function") {
+    if (null !== fn) {
+      const _TypeError = TypeError;
+      const typeError = new TypeError("Super expression must either be null or a function");
+      throw typeError;
+    }
+  }
+  let prototype = fn;
+  if (fn) {
+    prototype = fn.prototype;
+  }
+  value.prototype = Object.create(prototype, { constructor: { value, writable: true, configurable: true } });
+  Object.defineProperty(value, "prototype", { writable: false });
+  if (fn) {
+    _mod6309(value, fn);
+  }
+};

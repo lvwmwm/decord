@@ -1,10 +1,10 @@
-// Module ID: 1996
-// Function ID: 1997
+// Module ID: 1997
+// Function ID: 1998
 // Name: VoiceEngineModule
-// Dependencies: [17, 1997, 2]
+// Dependencies: [17, 1998, 2]
 
-// Module 1996 (VoiceEngineModule)
-import NativeMediaEngineModule_mod from "NativeMediaEngineModule" /* 1997 */;
+// Module 1997 (VoiceEngineModule)
+import NativeMediaEngineModule_mod from "NativeMediaEngineModule" /* 1998 */;
 
 let NativeMediaEngineModule = NativeMediaEngineModule_mod;
 NativeMediaEngineModule = NativeMediaEngineModule.getConstants();

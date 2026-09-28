@@ -1,21 +1,21 @@
-// Module ID: 13497
-// Function ID: 13498
+// Module ID: 12737
+// Function ID: 12738
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1074, 1085, 21, 9511, 9153, 11307, 1364, 4459, 11113, 11100, 4755, 8477, 13498, 2]
+// Dependencies: [19, 1074, 1085, 21, 8666, 8303, 10475, 1364, 4501, 10282, 10269, 4800, 7621, 12738, 2]
 // Exports: default
 
-// Module 13497 (HeadlessCollectiblesPurchaseFlow)
+// Module 12737 (HeadlessCollectiblesPurchaseFlow)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8477 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9153 */;
-import ACOMExperiments from "ACOMExperiments" /* 9511 */;
-import NativePaymentContext from "NativePaymentContext" /* 11113 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 11307 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13498 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7621 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 8303 */;
+import ACOMExperiments from "ACOMExperiments" /* 8666 */;
+import NativePaymentContext from "NativePaymentContext" /* 10282 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 10475 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 12738 */;
 import noop from "module_19" /* 19 */;
 
-const NativeCheckoutStoreProviderDefault = tmp3(11100);
+const NativeCheckoutStoreProviderDefault = tmp3(10269);
 require = fn;
 const application_id = fn(1074).COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = fn(1085).PaymentGateways;
@@ -25,7 +25,7 @@ let result = size.fileFinishedImporting("modules/collectibles/native/headless_co
 
 export default function HeadlessCollectiblesPurchaseFlow(arg0) {
   ({ product, analyticsLocations } = arg0);
-  ({ attempt, onBuy, onBuySettled, stageCollectibleChangeForEditProfile } = arg0);
+  ({ attempt, onBuySettled, stageCollectibleChangeForEditProfile } = arg0);
   const OTPACOMOrderExperiment = ACOMExperiments.OTPACOMOrderExperiment;
   const isPurchased = useProductPurchaseState.useProductPurchaseState(product).isPurchased;
   const tmp4 = useCollectiblesExternalGatewayFacetDefault(product);
@@ -42,8 +42,8 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
     if (!tmp8) {
       let result = GOOGLE === tmp6.GOOGLE;
       if (result) {
-        result = tmp(4459).isGooglePlayBillingSupported();
-        const tmpResult = tmp(4459);
+        result = tmp(4501).isGooglePlayBillingSupported();
+        const tmpResult = tmp(4501);
       }
       tmp8 = result;
     }
@@ -68,7 +68,7 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
   obj4.skuIds = items;
   obj2 = PlatformUtils;
   const obj5 = { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id };
-  obj4.children = jsx(HeadlessCollectiblesPurchaseRunner.HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuy, onBuySettled, stageCollectibleChangeForEditProfile });
+  obj4.children = jsx(HeadlessCollectiblesPurchaseRunner.HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuySettled, stageCollectibleChangeForEditProfile });
   obj3.children = jsx(NativeCheckoutStoreProviderDefault, {
     headless: true,
     paymentGateway: GOOGLE,

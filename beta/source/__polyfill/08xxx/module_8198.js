@@ -1,46 +1,9 @@
 // Module ID: 8198
 // Function ID: 8199
-// Dependencies: []
-// Exports: getModalRouteKeys
+// Dependencies: [1121]
 
 // Module 8198
+import registerAsset from "module_1121" /* 1121 */;
 
-export const getModalRouteKeys = (arr, arg1) => {
-  closure_0 = arg1;
-  return arr.reduce((arr, key) => {
-    let options;
-    if (closure_0[key.key] != null) {
-      options = tmp.options;
-    }
-    if (options == null) {
-      options = {};
-    }
-    const presentation = options.presentation;
-    let tmp2 = arr.length && !presentation;
-    if (!tmp2) {
-      tmp2 = "modal" === presentation;
-    }
-    if (!tmp2) {
-      tmp2 = "transparentModal" === presentation;
-    }
-    if (!tmp2) {
-      tmp2 = "containedModal" === presentation;
-    }
-    if (!tmp2) {
-      tmp2 = "containedTransparentModal" === presentation;
-    }
-    if (!tmp2) {
-      tmp2 = "fullScreenModal" === presentation;
-    }
-    if (!tmp2) {
-      tmp2 = "formSheet" === presentation;
-    }
-    if (!tmp2) {
-      tmp2 = "pageSheet" === presentation;
-    }
-    if (tmp2) {
-      arr.push(key.key);
-    }
-    return arr;
-  }, []);
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e8a96141e48bf46350215d4dadeaaebc", name: "ExperimentalGameControllerLinkIcon", type: "png" });

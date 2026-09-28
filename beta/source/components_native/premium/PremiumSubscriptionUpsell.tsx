@@ -1,25 +1,25 @@
-// Module ID: 13832
-// Function ID: 13833
+// Module ID: 13078
+// Function ID: 13079
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2109, 1372, 1074, 7706, 1374, 21, 4788, 576, 4738, 1115, 1881, 504, 4446, 5230, 1094, 4784, 13833, 13834, 9537, 5218, 2]
+// Dependencies: [19, 17, 2112, 1372, 1074, 6852, 1374, 21, 4836, 576, 4783, 1115, 1882, 504, 4488, 5293, 1094, 4832, 13079, 13080, 8694, 5281, 2]
 // Exports: default
 
-// Module 13832 (PremiumSubscriptionUpsell)
+// Module 13078 (PremiumSubscriptionUpsell)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, StyleSheet } = get_ActivityIndicator);
-const Gradients = fn(7706).Gradients;
+const Gradients = fn(6852).Gradients;
 const PremiumConstants = fn(1374);
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_8, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_9 } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 const obj2 = { title: { textAlign: "center" }, subtitle: { lineHeight: 20, marginTop: 8, textAlign: "center" }, upsell: { paddingTop: 32, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE }, upsellCard: null, upsellFeatures: null, upsellFeatureSubLogo: null, upsellFeatureList: null, upsellButton: null, upsellFeatureLogoTier2: null, upsellLabel: null, upsellRow: null };
 let obj3 = { paddingTop: 32, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.upsellCard = { borderRadius: nativeDefault.radii.xs, padding: 16, alignItems: "center" };
@@ -50,44 +50,44 @@ export default function PremiumSubscriptionUpsell(arg0) {
     const items1 = [tmp.upsell, style];
     obj3.style = items1;
     let obj4 = { style: tmp.upsellCard, start: tmp2(1094).HorizontalGradient.START, end: tmp2(1094).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: null };
-    const tmp5Result = tmp5(5230);
+    const tmp5Result = tmp5(5293);
     if (tmp5Result3.isPremium(stateFromStores)) {
       const obj5 = { children: null };
       const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: null };
       const intl2 = tmp2(1115).intl;
       obj6.children = intl2.string(tmp2(1115).t.YYfHlx);
-      const items2 = [tmp6(tmp2(4784).Text, obj6), ];
+      const items2 = [tmp6(tmp2(4832).Text, obj6), ];
       const obj7 = { style: tmp.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: null };
       const intl3 = tmp2(1115).intl;
       const obj8 = { numFreeGuildSubscriptions };
       obj7.children = intl3.format(tmp2(1115).t.Af0zEZ, obj8);
-      items2[1] = tmp6(tmp2(4784).Text, obj7);
+      items2[1] = tmp6(tmp2(4832).Text, obj7);
       obj5.children = items2;
       let tmp6Result1 = tmp8(closure_1_11, obj5);
     } else {
       const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: null };
       const intl = tmp2(1115).intl;
       obj9.children = intl.string(tmp2(1115).t["qUl+K4"]);
-      tmp6Result1 = tmp6(tmp2(4784).Text, obj9);
+      tmp6Result1 = tmp6(tmp2(4832).Text, obj9);
     }
     const items3 = [tmp6Result1, , ];
     const obj10 = { style: tmp.upsellFeatures, children: null };
-    const obj11 = { style: tmp.upsellFeatureSubLogo, source: tmp5(13833) };
+    const obj11 = { style: tmp.upsellFeatureSubLogo, source: tmp5(13079) };
     const items4 = [closure_1_10(React4, obj11), , ];
-    const obj12 = { style: tmp.upsellFeatureLogoTier2, source: tmp5(13834) };
+    const obj12 = { style: tmp.upsellFeatureLogoTier2, source: tmp5(13080) };
     items4[1] = closure_1_10(React4, obj12);
     const obj13 = { style: tmp.upsellFeatureList, features: null, labelStyle: null, rowStyle: null };
     const obj15 = { IconComponent: null, label: null, color: null };
-    tmp5Result3 = tmp5(4446);
-    obj15.IconComponent = tmp2(4738).CheckmarkLargeIcon;
+    tmp5Result3 = tmp5(4488);
+    obj15.IconComponent = tmp2(4783).CheckmarkLargeIcon;
     const intl4 = tmp2(1115).intl;
     const obj16 = { discountPercentage: null };
-    const tmp5Result4 = tmp5(9537);
-    obj16.discountPercentage = tmp2(1881).formatPercent(LocaleStore.locale, React7 / 100);
+    const tmp5Result4 = tmp5(8694);
+    obj16.discountPercentage = tmp2(1882).formatPercent(LocaleStore.locale, React7 / 100);
     obj15.label = intl4.formatToPlainString(tmp2(1115).t.P3aEj6, obj16);
     obj15.color = tmp5(576).unsafe_rawColors.WHITE;
     const items5 = [obj15, ];
-    const obj17 = { IconComponent: tmp2(4738).CheckmarkLargeIcon, label: null, color: null };
+    const obj17 = { IconComponent: tmp2(4783).CheckmarkLargeIcon, label: null, color: null };
     const intl5 = tmp2(1115).intl;
     const obj18 = { numFreeGuildSubscriptions };
     obj17.label = intl5.formatToPlainString(tmp2(1115).t.Ntlzbd, obj18);
@@ -104,13 +104,13 @@ export default function PremiumSubscriptionUpsell(arg0) {
     stringResult = intl6.string(tmp2(1115).t.fJOECn);
     obj20.text = stringResult;
     obj20.onPress = onLearnMorePremium;
-    tmp = tmp6(tmp2(5218).Button, obj20);
+    tmp = tmp6(tmp2(5281).Button, obj20);
     obj19.children = tmp;
     items3[2] = closure_1_10(React3, obj19);
     obj4.children = items3;
     obj4 = tmp8(tmp5Result, obj4);
     obj3.children = obj4;
     closure_1_10(React3, obj3);
-    const tmp2Result = tmp2(1881);
+    const tmp2Result = tmp2(1882);
   }
 };

@@ -1,12 +1,12 @@
-// Module ID: 7774
-// Function ID: 7775
+// Module ID: 6920
+// Function ID: 6921
 // Name: SortUtils
-// Dependencies: [7772, 7771, 2]
+// Dependencies: [6918, 6917, 2]
 // Exports: getSortValueForMember
 
-// Module 7774 (SortUtils)
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7771 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7772 */;
+// Module 6920 (SortUtils)
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 6917 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 6918 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/SortUtils.tsx");
@@ -15,12 +15,12 @@ export const getSortValueForMember = function getSortValueForMember(joinedAt, OR
   const joinedAtTimestamp = guild_mod_dash_member_safety_DateUtils.getJoinedAtTimestamp(joinedAt.joinedAt);
   if (MemberSafetyElasticSearchQueryTypes.OrderBy.ORDER_BY_GUILD_JOINED_AT_ASC === ORDER_BY_UNSPECIFIED) {
     return joinedAtTimestamp;
-  } else if (tmp(7771).OrderBy.ORDER_BY_GUILD_JOINED_AT_DESC === ORDER_BY_UNSPECIFIED) {
+  } else if (tmp(6917).OrderBy.ORDER_BY_GUILD_JOINED_AT_DESC === ORDER_BY_UNSPECIFIED) {
     return -joinedAtTimestamp;
-  } else if (tmp(7771).OrderBy.ORDER_BY_USER_ID_ASC === ORDER_BY_UNSPECIFIED) {
+  } else if (tmp(6917).OrderBy.ORDER_BY_USER_ID_ASC === ORDER_BY_UNSPECIFIED) {
     const _parseInt2 = parseInt;
     return parseInt(joinedAt.userId);
-  } else if (tmp(7771).OrderBy.ORDER_BY_USER_ID_DESC === ORDER_BY_UNSPECIFIED) {
+  } else if (tmp(6917).OrderBy.ORDER_BY_USER_ID_DESC === ORDER_BY_UNSPECIFIED) {
     const _parseInt = parseInt;
     return -parseInt(joinedAt.userId);
   } else {

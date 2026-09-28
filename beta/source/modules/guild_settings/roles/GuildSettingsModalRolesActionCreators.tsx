@@ -1,9 +1,9 @@
-// Module ID: 18056
-// Function ID: 18057
+// Module ID: 17417
+// Function ID: 17418
 // Name: GuildSettingsModalRolesActionCreators
-// Dependencies: [5, 1074, 1271, 7597, 573, 2]
+// Dependencies: [5, 1074, 1271, 6741, 573, 2]
 
-// Module 18056 (GuildSettingsModalRolesActionCreators)
+// Module 17417 (GuildSettingsModalRolesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -56,7 +56,7 @@ let closure_6 = async function _updateGuildRole(arg0, value) {
           closure_130_7 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

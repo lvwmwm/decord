@@ -1,14 +1,14 @@
-// Module ID: 15804
-// Function ID: 15805
+// Module ID: 15077
+// Function ID: 15078
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 19, 17, 1372, 1074, 9469, 21, 4788, 504, 13749, 1969, 7439, 9470, 9459, 8903, 15805, 10266, 9538, 9508, 1115, 2]
+// Dependencies: [5, 19, 17, 1372, 1074, 8624, 21, 4836, 504, 12995, 1970, 6583, 8625, 8614, 8053, 15078, 9425, 8695, 8663, 1115, 2]
 
-// Module 15804 (UserSettingsAppIcons)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7439 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9508 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9538 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10266 */;
-import AppIconRowsDefault from "AppIconRows" /* 15805 */;
+// Module 15077 (UserSettingsAppIcons)
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8663 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9425 */;
+import AppIconRowsDefault from "AppIconRows" /* 15078 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -17,10 +17,10 @@ require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ UpsellTypes: metroRequire, AnalyticsPages: closure_7 } = Constants);
-const getIconById = fn(9469).getIconById;
+const getIconById = fn(8624).getIconById;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_12 = createStyles.createStyles({ upsellButtonContainer: { padding: 0, position: "absolute", bottom: 56, width: 350, alignSelf: "center" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/app_icon/native/UserSettingsAppIcons.tsx");
@@ -59,8 +59,8 @@ export default noop.memo(() => {
                   if (tmp26) {
                     if (!closure_2_2) {
                       const obj6 = { initialUpsellKey: constants.APP_ICONS, imageSource: tmp27 };
-                      const result = v3(9459).handleShowUpsellAlert(obj6);
-                      const obj5 = v3(9459);
+                      const result = v3(8614).handleShowUpsellAlert(obj6);
+                      const obj5 = v3(8614);
                     }
                   }
                   let premiumType;
@@ -69,7 +69,7 @@ export default noop.memo(() => {
                   }
                   dependencyMap = 1;
                   v3 = 1;
-                  const obj8 = { value: stateFromStores(13749).setAppIcon(id, premiumType), done: false };
+                  const obj8 = { value: stateFromStores(12995).setAppIcon(id, premiumType), done: false };
                   return obj8;
                 }
               } else {
@@ -79,7 +79,7 @@ export default noop.memo(() => {
                 }
                 dependencyMap = 2;
                 v3 = 1;
-                const obj9 = { value: stateFromStores(13749).setAppIcon(stateFromStores(9470).FreemiumAppIconIds.DEFAULT, premiumType1), done: false };
+                const obj9 = { value: stateFromStores(12995).setAppIcon(stateFromStores(8625).FreemiumAppIconIds.DEFAULT, premiumType1), done: false };
                 return obj9;
               }
             }
@@ -114,9 +114,9 @@ export default noop.memo(() => {
   const items = [currentUser];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj = stateFromStores(504);
-  importDefault = stateFromStores(13749).useCurrentAppIcon();
-  let obj2 = stateFromStores(13749);
-  const isPremiumResult = stateFromStores(1969).isPremium(stateFromStores);
+  importDefault = stateFromStores(12995).useCurrentAppIcon();
+  let obj2 = stateFromStores(12995);
+  const isPremiumResult = stateFromStores(1970).isPremium(stateFromStores);
   dependencyMap = isPremiumResult;
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   let obj4 = { page: constants.APP_ICONS };
@@ -137,7 +137,7 @@ export default noop.memo(() => {
     })
   };
   obj5.children = closure_9(obj4, obj6);
-  const children = [closure_9(stateFromStores(8903).Form, obj5), ];
+  const children = [closure_9(stateFromStores(8053).Form, obj5), ];
   let tmp9Result = !isPremiumResult;
   if (!isPremiumResult) {
     let obj8 = { style: tmp.upsellButtonContainer, children: null };

@@ -1,11 +1,12 @@
-// Module ID: 5253
-// Function ID: 5254
+// Module ID: 5316
+// Function ID: 5317
 // Name: MarkupAttachmentLinkRule
-// Dependencies: [5254, 1929, 2]
+// Dependencies: [5317, 1930, 2]
+// Exports: matchAttachmentUrl
 
-// Module 5253 (MarkupAttachmentLinkRule)
-import _modDef1929 from "module_1929" /* 1929 */;
-import AttachmentUrlConstants from "AttachmentUrlConstants" /* 5254 */;
+// Module 5316 (MarkupAttachmentLinkRule)
+import _modDef1930 from "module_1930" /* 1930 */;
+import AttachmentUrlConstants from "AttachmentUrlConstants" /* 5317 */;
 import size from "module_2" /* 2 */;
 
 const mapped = Array.from(AttachmentUrlConstants.ATTACHMENT_PATH_PREFIXES).map((item) => item.replaceAll("/", ""));
@@ -13,7 +14,7 @@ const regExp = new RegExp("^https://(?:[A-Za-z0-9-]+\\.)*(?:(?:media|images)" + 
 let obj = { attachmentLink: null };
 const arr = Array.from(AttachmentUrlConstants.ATTACHMENT_PATH_PREFIXES);
 obj.attachmentLink = {
-  order: _modDef1929.defaultRules.url.order - 0.5,
+  order: _modDef1930.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     return regExp.exec(arg0);
@@ -28,3 +29,15 @@ obj.attachmentLink = {
 const result = size.fileFinishedImporting("modules/markup/MarkupAttachmentLinkRule.tsx");
 
 export default obj;
+export const matchAttachmentUrl = function matchAttachmentUrl(url) {
+  const match = regExp.exec(url);
+  let tmp2 = null;
+  if (null != match) {
+    tmp2 = null;
+    if (match[0] === url) {
+      const obj = { name: match[1] };
+      tmp2 = obj;
+    }
+  }
+  return tmp2;
+};

@@ -1,20 +1,20 @@
-// Module ID: 10386
-// Function ID: 10387
+// Module ID: 9550
+// Function ID: 9551
 // Name: FocusModeUtils
-// Dependencies: [5528, 4440, 1074, 2019, 2024, 1217, 1241, 5140, 1115, 10387, 2]
+// Dependencies: [5591, 4482, 1074, 2021, 2026, 1217, 1241, 5203, 1115, 9551, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10386 (FocusModeUtils)
+// Module 9550 (FocusModeUtils)
 import wrappers from "wrappers" /* 1217 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5528 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const constants = fn(4440).NotificationSettingsUpdateType;
+const constants = fn(4482).NotificationSettingsUpdateType;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, StatusTypes: metroRequire } = Constants);
 const size = fn(2);

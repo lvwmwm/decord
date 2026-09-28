@@ -1,35 +1,35 @@
-// Module ID: 4968
-// Function ID: 4969
+// Module ID: 5016
+// Function ID: 5017
 // Name: AppAnalyticsUtils
-// Dependencies: [2045, 502, 2041, 2096, 4707, 2105, 2099, 2063, 1992, 4427, 4828, 4811, 4803, 4437, 2095, 4609, 4969, 1372, 4807, 1074, 2048, 4432, 1086, 4971, 1241, 1091, 4972, 4974, 12, 2]
+// Dependencies: [2049, 502, 2045, 4467, 4754, 2108, 2102, 2067, 1993, 4469, 4876, 4859, 4851, 4479, 2099, 4655, 5017, 1372, 4855, 1074, 2052, 4474, 1086, 5019, 1241, 1091, 5020, 5022, 12, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, getVoiceStateMetadata, trackWithMetadata
 
-// Module 4968 (AppAnalyticsUtils)
+// Module 5016 (AppAnalyticsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import ChannelConstants from "ChannelConstants" /* 2048 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 4972 */;
-import hasPendingMemberAction from "hasPendingMemberAction" /* 4974 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4474 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 5020 */;
+import hasPendingMemberAction from "hasPendingMemberAction" /* 5022 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 2096 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import PresenceStore from "PresenceStore" /* 4828 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
-import ReadStateStore from "ReadStateStore" /* 4803 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4467 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import PresenceStore from "PresenceStore" /* 4876 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import ReadStateStore from "ReadStateStore" /* 4851 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -276,7 +276,7 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
       });
       const merged = Object.assign(obj3);
       const tmp9Result = obj3(12)(VoiceStateStore.getVoiceStates(guildId));
-      const merged1 = Object.assign(id(4971).getVoiceAnalyticsMetadataAdditional());
+      const merged1 = Object.assign(id(5019).getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
   }
@@ -335,13 +335,14 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
         ({ parent_id: obj7.parent_id, parentChannelThreadType: obj7.parent_channel_type } = channel);
         obj6.has_pending_member_action = hasPendingMemberAction.hasPendingMemberAction(channel.guild_id, selectedChannelId);
         obj6.can_send_message = PermissionStore.can(constants4.SEND_MESSAGES, channel);
-        let tmp3 = null;
         if (channel.type === constants3.GUILD_APP) {
-          tmp3 = null;
+          let tmp3 = null;
           if (null != channel.application_id) {
             const obj16 = { application_id: channel.application_id };
             tmp3 = obj16;
           }
+        } else {
+          tmp3 = null;
         }
         const merged1 = Object.assign(tmp3);
         return obj6;

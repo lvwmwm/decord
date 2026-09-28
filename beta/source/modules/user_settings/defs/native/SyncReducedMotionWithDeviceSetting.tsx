@@ -1,22 +1,22 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 14965
+// Function ID: 14966
 // Name: SyncReducedMotionWithDeviceSetting
-// Dependencies: [4780, 8265, 504, 14748, 11754, 1115, 2]
+// Dependencies: [4825, 7417, 504, 13998, 11006, 1115, 2]
 
-// Module 15692 (SyncReducedMotionWithDeviceSetting)
+// Module 14965 (SyncReducedMotionWithDeviceSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14748 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;
-const SettingBuilders = fn(11754);
+const SettingBuilders = fn(11006);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["St+DJK"]);
   },
-  parent: fn(8265).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(7417).MobileUserSettings.ACCESSIBILITY,
   useValue: function useReducedMotionSyncSettingValue() {
     const items = [AccessibilityStore];
     return initialize.useStateFromStores(items, () => "auto" === AccessibilityStore.rawPrefersReducedMotion);

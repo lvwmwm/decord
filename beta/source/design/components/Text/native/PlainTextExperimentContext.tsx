@@ -1,10 +1,10 @@
-// Module ID: 4793
-// Function ID: 4794
+// Module ID: 4841
+// Function ID: 4842
 // Name: PlainTextExperimentContext
 // Dependencies: [19, 21, 2]
 // Exports: PlainTextExperimentProvider, usePlainTextExperimentEnabled
 
-// Module 4793 (PlainTextExperimentContext)
+// Module 4841 (PlainTextExperimentContext)
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

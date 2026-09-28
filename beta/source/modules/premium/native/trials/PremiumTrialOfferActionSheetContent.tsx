@@ -1,21 +1,21 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 15288
+// Function ID: 15289
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1374, 21, 4788, 576, 12108, 1115, 9567, 5324, 5378, 4446, 5941, 4784, 16006, 5218, 8972, 2]
+// Dependencies: [19, 17, 1374, 21, 4836, 576, 11303, 1115, 8724, 5388, 5442, 4488, 15289, 4832, 15291, 5281, 8122, 2]
 
-// Module 16005 (PremiumTrialOfferActionSheetContent)
+// Module 15288 (PremiumTrialOfferActionSheetContent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4446 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import FolderIcon from "FolderIcon" /* 5324 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5378 */;
-import native from "native" /* 5941 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8972 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 9567 */;
-import UserIcon from "UserIcon" /* 12108 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 16006 */;
+import PremiumUtils from "PremiumUtils" /* 4488 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import FolderIcon from "FolderIcon" /* 5388 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5442 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 8724 */;
+import UserIcon from "UserIcon" /* 11303 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 15289 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 15291 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ const View = fn(17).View;
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { contentContainer: { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 }, buttonContainer: { marginVertical: 6, width: "100%", height: 48 }, title: { width: "100%", textAlign: "center" }, heroIllustrationContainer: { alignItems: "center", justifyContent: "center", height: 188, width: "100%" } };
 let closure_7 = createStyles.createStyles(obj);
 let obj3 = { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 };
@@ -63,7 +63,7 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
   obj3.description = obj4.getNitroFileUploadRolloutCopy(obj5);
   items[2] = obj3;
   const obj8 = { style: tmp.contentContainer, children: null };
-  const items1 = [hasOwnProperty(View, { style: tmp.heroIllustrationContainer, children: hasOwnProperty(native.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
+  const items1 = [hasOwnProperty(View, { style: tmp.heroIllustrationContainer, children: hasOwnProperty(NitroWumpusFlightRight3dIllustration.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
   const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl8 = util.intl;
   let skuId;
@@ -76,8 +76,8 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
     if (subscriptionTrial != null) {
       skuId1 = subscriptionTrial.skuId;
     }
-    displayNameFromSku = tmp3(4446).getDisplayNameFromSku(skuId1);
-    const tmp3Result = tmp3(4446);
+    displayNameFromSku = tmp3(4488).getDisplayNameFromSku(skuId1);
+    const tmp3Result = tmp3(4488);
   }
   obj10.children = intl8.formatToPlainString(util.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = hasOwnProperty(Text_Text.Text, obj10);
@@ -87,7 +87,7 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
   const intl9 = tmp3(1115).intl;
   obj12.text = intl9.formatToPlainString(util.t.xASjq5, { duration: intervalDuration });
   obj12.onPress = onConfirm.onConfirm;
-  const obj9 = { style: tmp.heroIllustrationContainer, children: hasOwnProperty(native.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) };
+  const obj9 = { style: tmp.heroIllustrationContainer, children: hasOwnProperty(NitroWumpusFlightRight3dIllustration.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) };
   const tmp5 = timestampProducer;
   obj12.icon = hasOwnProperty(NitroWheelIcon.NitroWheelIcon, { size: "md", color: nativeDefault.unsafe_rawColors.WHITE });
   obj11.children = hasOwnProperty(components_Button_Button.Button, obj12);

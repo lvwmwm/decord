@@ -1,10 +1,10 @@
-// Module ID: 1436
-// Function ID: 1437
+// Module ID: 1437
+// Function ID: 1438
 // Name: discord_common/apex/ApexExperiment
 // Dependencies: [32, 19, 4, 504, 2]
 // Exports: default
 
-// Module 1436 (discord_common/apex/ApexExperiment)
+// Module 1437 (discord_common/apex/ApexExperiment)
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = fn;

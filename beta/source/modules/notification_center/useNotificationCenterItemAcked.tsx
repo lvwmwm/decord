@@ -1,11 +1,11 @@
-// Module ID: 16762
-// Function ID: 16763
+// Module ID: 16056
+// Function ID: 16057
 // Name: useNotificationCenterItemAcked
-// Dependencies: [16755, 504, 7909, 2]
+// Dependencies: [16049, 504, 7055, 2]
 // Exports: useNotificationCenterItemAcked
 
-// Module 16762 (useNotificationCenterItemAcked)
-import NotificationCenterStore from "NotificationCenterStore" /* 16755 */;
+// Module 16056 (useNotificationCenterItemAcked)
+import NotificationCenterStore from "NotificationCenterStore" /* 16049 */;
 
 const require = globalThis.__r;
 

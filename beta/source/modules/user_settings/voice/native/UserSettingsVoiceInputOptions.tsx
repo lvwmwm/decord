@@ -1,16 +1,16 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 9439
+// Function ID: 9440
 // Name: UserSettingsVoiceInputOptions
-// Dependencies: [19, 17, 1992, 1074, 21, 4788, 7471, 1115, 9943, 504, 10275, 5854, 4784, 7477, 10280, 2]
+// Dependencies: [19, 17, 1993, 1074, 21, 4836, 6615, 1115, 9104, 504, 9434, 5917, 4832, 6621, 9440, 2]
 // Exports: default
 
-// Module 10279 (UserSettingsVoiceInputOptions)
+// Module 9439 (UserSettingsVoiceInputOptions)
 import util from "util" /* 1115 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7471 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 10280 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 6615 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 9440 */;
 import noop from "module_19" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 
 require = fn;
 function handleInputModePress() {
@@ -40,7 +40,7 @@ const View = fn(17).View;
 const InputModes = fn(1074).InputModes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles({ value: { textAlign: "right" }, slider: { marginTop: 4 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceInputOptions.tsx");
@@ -66,9 +66,9 @@ export default function UserSettingsVoiceInputOptions() {
     stringResult = intl3.string(tmp(1115).t.cHCEOJ);
   }
   obj4.children = stringResult;
-  obj3.trailing = closure_6(inputMode(4784).Text, obj4);
+  obj3.trailing = closure_6(inputMode(4832).Text, obj4);
   obj3.onPress = handleInputModePress;
-  const items1 = [closure_6(inputMode(5854).TableRow, obj3), ];
+  const items1 = [closure_6(inputMode(5917).TableRow, obj3), ];
   let tmp4Result = null;
   if (inputMode !== InputModes.PUSH_TO_TALK) {
     const obj5 = { children: null };
@@ -79,7 +79,7 @@ export default function UserSettingsVoiceInputOptions() {
     obj6.onValueChange = function onValueChange(autoThreshold) {
       return AudioActionCreatorsDefault.setMode(inputMode, { autoThreshold });
     };
-    const items2 = [tmp5(tmp(7477).TableSwitchRow, obj6), ];
+    const items2 = [tmp5(tmp(6621).TableSwitchRow, obj6), ];
     const obj7 = { label: null, subLabel: null };
     const intl6 = tmp(1115).intl;
     obj7.label = intl6.string(tmp(1115).t["o+2oMK"]);
@@ -93,12 +93,12 @@ export default function UserSettingsVoiceInputOptions() {
     };
     obj8.children = tmp5(VoiceSensitivityDefault, obj9);
     obj7.subLabel = tmp5(View, obj8);
-    items2[1] = tmp5(tmp(5854).TableRow, obj7);
+    items2[1] = tmp5(tmp(5917).TableRow, obj7);
     obj5.children = items2;
     tmp4Result = tmp4(closure_7, obj5);
   }
   items1[1] = tmp4Result;
   obj2.children = items1;
-  return closure_8(inputMode(10275).UserSettingsTableRowGroup, obj2);
+  return closure_8(inputMode(9434).UserSettingsTableRowGroup, obj2);
 };
 export { handleInputModePress };

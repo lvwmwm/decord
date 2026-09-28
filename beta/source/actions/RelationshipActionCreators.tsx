@@ -1,21 +1,21 @@
-// Module ID: 10035
-// Function ID: 10036
+// Module ID: 9195
+// Function ID: 9196
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1372, 1074, 10036, 5802, 5140, 5771, 1115, 10037, 10038, 10039, 1271, 4632, 4639, 573, 10040, 8707, 2]
+// Dependencies: [32, 1372, 1074, 9196, 5865, 5203, 5834, 1115, 9197, 9198, 9199, 1271, 4678, 4685, 573, 9200, 7852, 2]
 
-// Module 10035 (RelationshipActionCreators)
+// Module 9195 (RelationshipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import UserUtilsDefault from "UserUtils" /* 4632 */;
-import shared from "shared" /* 4639 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 5771 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 5802 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8707 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 10037 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 10038 */;
-import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 10040 */;
+import UserUtilsDefault from "UserUtils" /* 4678 */;
+import shared from "shared" /* 4685 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 5834 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 5865 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7852 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 9197 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 9198 */;
+import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 9200 */;
 import _slicedToArray from "module_32" /* 32 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -66,8 +66,8 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
               if (!num) {
                 num = 0;
               }
-              let humanizeAbortCodeResult = tmp18(10039).humanizeAbortCode(num, userTag);
-              const tmp18Result = tmp18(10039);
+              let humanizeAbortCodeResult = tmp18(9199).humanizeAbortCode(num, userTag);
+              const tmp18Result = tmp18(9199);
             } else {
               const intl = tmp18(1115).intl;
               humanizeAbortCodeResult = intl.string(tmp18(1115).t.paDJBM);
@@ -78,8 +78,8 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
             obj3.body = humanizeAbortCodeResult;
             const intl3 = tmp18(1115).intl;
             obj3.confirmText = intl3.string(tmp18(1115).t.BddRzS);
-            tmp18(5802).closeContextMenu();
-            const tmp18Result2 = tmp18(5802);
+            tmp18(5865).closeContextMenu();
+            const tmp18Result2 = tmp18(5865);
             AlertActionCreatorsDefault.show(obj3);
           }
         }
@@ -91,7 +91,7 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
 }
 const Constants = fn(1074);
 ({ Endpoints: metroRequire, AbortCodes: closure_7, RelationshipTypes: closure_8 } = Constants);
-const ClearFriendRequestFilters = fn(10036).ClearFriendRequestFilters;
+const ClearFriendRequestFilters = fn(9196).ClearFriendRequestFilters;
 const RelationshipErrorUXConfig = { SHOW_ALWAYS: 0, [0]: "SHOW_ALWAYS", SHOW_ONLY_IF_ACTION_NEEDED: 1, [1]: "SHOW_ONLY_IF_ACTION_NEEDED" };
 let obj2 = {
   sendRequest(discordTag) {
@@ -187,7 +187,7 @@ let obj2 = {
         tmp();
       }
     }).catch(() => {
-      const AccessibilityAnnouncer = closure_0(4639).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = closure_0(4685).AccessibilityAnnouncer;
       const intl = closure_0(1115).intl;
       AccessibilityAnnouncer.announce(intl.string(closure_0(1115).t.n6Jo3E));
     });
@@ -255,17 +255,17 @@ let obj2 = {
       obj2 = DispatcherDefault;
       obj2.dispatch({ type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId, timestamp: Date.now() });
     }).catch(() => {
-      channelId(8707).showFailedToast();
-      const AccessibilityAnnouncer = userId(4639).AccessibilityAnnouncer;
+      channelId(7852).showFailedToast();
+      const AccessibilityAnnouncer = userId(4685).AccessibilityAnnouncer;
       const intl = userId(1115).intl;
       AccessibilityAnnouncer.announce(intl.string(userId(1115).t.n6Jo3E));
     });
   },
-  unignoreUser(id, newestAnalyticsLocation, id2) {
+  unignoreUser(id, UserProfileRemediatedNotice, channelId) {
     _require = id;
     const HTTP = require("HTTPUtils").HTTP;
-    obj = { url: closure_6.IGNORE_USER(id), context: { location: newestAnalyticsLocation }, rejectWithError: require("HTTPUtils").rejectWithMigratedError() };
-    obj2 = { location: newestAnalyticsLocation };
+    obj = { url: closure_6.IGNORE_USER(id), context: { location: UserProfileRemediatedNotice }, rejectWithError: require("HTTPUtils").rejectWithMigratedError() };
+    obj2 = { location: UserProfileRemediatedNotice };
     const obj3 = require("HTTPUtils");
     const delResult = HTTP.del(obj);
     return HTTP.del(obj).then(() => {
@@ -274,8 +274,8 @@ let obj2 = {
       const intl = util.intl;
       AccessibilityAnnouncer.announce(intl.string(util.t.QlH5w6));
     }).catch(() => {
-      id2(8707).showFailedToast();
-      const AccessibilityAnnouncer = id(4639).AccessibilityAnnouncer;
+      channelId(7852).showFailedToast();
+      const AccessibilityAnnouncer = id(4685).AccessibilityAnnouncer;
       const intl = id(1115).intl;
       AccessibilityAnnouncer.announce(intl.string(id(1115).t.n6Jo3E));
     });

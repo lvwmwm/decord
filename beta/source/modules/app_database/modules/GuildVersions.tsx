@@ -1,15 +1,15 @@
-// Module ID: 7921
-// Function ID: 7922
+// Module ID: 7066
+// Function ID: 7067
 // Name: GuildVersions
-// Dependencies: [32, 5, 2063, 3, 2070, 1370, 2]
+// Dependencies: [32, 5, 2067, 3, 2074, 1370, 2]
 
-// Module 7921 (GuildVersions)
+// Module 7066 (GuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 let closure_6 = new LoggerDefault("GuildVersions");

@@ -1,20 +1,20 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 15716
+// Function ID: 15717
 // Name: typing_indicators/TypingIndicator
-// Dependencies: [19, 17, 21, 4788, 576, 4722, 4639, 1177, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4767, 4685, 1177, 2]
 // Exports: TypingIndicator
 
-// Module 16425 (typing_indicators/TypingIndicator)
+// Module 15716 (typing_indicators/TypingIndicator)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import shared from "shared" /* 4639 */;
-import useThemeDefault from "useTheme" /* 4722 */;
+import shared from "shared" /* 4685 */;
+import useThemeDefault from "useTheme" /* 4767 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_5 = createStyles.createStyles((arg0) => {
   const obj = { ellipsisWrapper: { zIndex: 10, borderRadius: 17, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, ellipsis: null, ellipsisDot: null };
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;

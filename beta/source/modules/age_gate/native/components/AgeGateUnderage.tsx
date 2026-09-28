@@ -1,12 +1,12 @@
-// Module ID: 16320
-// Function ID: 16321
+// Module ID: 15611
+// Function ID: 15612
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1074, 21, 4788, 576, 7219, 1484, 5873, 5879, 1115, 7250, 7253, 5941, 7249, 4784, 2108, 5218, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 6363, 1485, 5936, 5942, 1115, 6394, 6397, 7872, 6393, 4832, 2111, 5281, 2]
 // Exports: default
 
-// Module 16320 (AgeGateUnderage)
+// Module 15611 (AgeGateUnderage)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5873 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,7 +14,7 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_9 = createStyles.createStyles((arg0) => {
   let num = 0;
   if (arg0) {

@@ -1,13 +1,13 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 9029
+// Function ID: 9030
 // Name: useGuildProfile
-// Dependencies: [5, 19, 9867, 504, 9869, 2]
+// Dependencies: [5, 19, 9028, 504, 9030, 2]
 // Exports: useGuildProfile
 
-// Module 9868 (useGuildProfile)
+// Module 9029 (useGuildProfile)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 9867 */;
+import GuildProfileStore from "GuildProfileStore" /* 9028 */;
 
 const require = globalThis.__r;
 
@@ -58,7 +58,7 @@ export const useGuildProfile = function useGuildProfile(guildId) {
             closure_129_0 = flag;
             c3 = 1;
             c4 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

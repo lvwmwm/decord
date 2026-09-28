@@ -1,13 +1,13 @@
-// Module ID: 15428
-// Function ID: 15429
+// Module ID: 14506
+// Function ID: 14507
 // Name: RefreshIcon
-// Dependencies: [19, 21, 576, 4488, 15429, 2]
+// Dependencies: [19, 21, 576, 4530, 14507, 2]
 // Exports: RefreshIcon
 
-// Module 15428 (RefreshIcon)
+// Module 14506 (RefreshIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod15429 from "module_15429" /* 15429 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod14507 from "module_14507" /* 14507 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const RefreshIcon = function RefreshIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15429, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod14507, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

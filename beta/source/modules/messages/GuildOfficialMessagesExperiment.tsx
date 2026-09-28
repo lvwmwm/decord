@@ -1,10 +1,10 @@
-// Module ID: 7542
-// Function ID: 7543
+// Module ID: 6686
+// Function ID: 6687
 // Name: GuildOfficialMessagesExperiment
-// Dependencies: [4701, 2]
+// Dependencies: [4748, 2]
 
-// Module 7542 (GuildOfficialMessagesExperiment)
-import createExperiment from "module_4701" /* 4701 */;
+// Module 6686 (GuildOfficialMessagesExperiment)
+import createExperiment from "module_4748" /* 4748 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2026-03_guild_official_messages", label: "Guild Official Messages", defaultConfig: { enabled: false }, treatments: null };

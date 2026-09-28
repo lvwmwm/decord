@@ -1,18 +1,18 @@
-// Module ID: 18232
-// Function ID: 18233
+// Module ID: 17596
+// Function ID: 17597
 // Name: FormRoleColorPicker
-// Dependencies: [19, 1074, 21, 4788, 4755, 16633, 1980, 14194, 14904, 1092, 2]
+// Dependencies: [19, 1074, 21, 4836, 4800, 15927, 1981, 13440, 14154, 1092, 2]
 // Exports: default
 
-// Module 18232 (FormRoleColorPicker)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+// Module 17596 (FormRoleColorPicker)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const DEFAULT_ROLE_COLOR = fn(1074).DEFAULT_ROLE_COLOR;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ rowColorBlock: { marginHorizontal: 0, marginVertical: 0, marginRight: 8, minWidth: 24, height: 24, borderRadius: 3 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormRoleColorPicker.tsx");
@@ -29,13 +29,13 @@ export default function FormRoleColorPicker(color) {
   const onChange = color.onChange;
   const items = [color, onChange];
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16633, dependencyMap.paths), "RoleColorPicker", { color, onSelect: onChange });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15927, dependencyMap.paths), "RoleColorPicker", { color, onSelect: onChange });
   }, items);
   const obj = { leading: null, label: null, disabled: null, onPress: null };
   const tmp = closure_6();
-  obj.leading = jsx(onChange(14904), { color, style: tmp.rowColorBlock, onSelect: callback });
+  obj.leading = jsx(onChange(14154), { color, style: tmp.rowColorBlock, onSelect: callback });
   const obj2 = { color, style: tmp.rowColorBlock, onSelect: callback };
-  const tmp3 = onChange(14194);
+  const tmp3 = onChange(13440);
   obj.label = color(1092).int2hex(color);
   obj.disabled = flag;
   obj.onPress = callback;

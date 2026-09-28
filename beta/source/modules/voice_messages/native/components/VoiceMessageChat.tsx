@@ -1,17 +1,17 @@
-// Module ID: 12929
-// Function ID: 12930
+// Module ID: 12144
+// Function ID: 12145
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 4780, 12242, 12243, 21, 4524, 4788, 576, 1364, 5217, 4789, 4489, 5417, 4784, 2]
+// Dependencies: [32, 19, 17, 4825, 11442, 11443, 21, 4566, 4836, 576, 1364, 5280, 4837, 4531, 5481, 4832, 2]
 
-// Module 12929 (VoiceMessageChat)
+// Module 12144 (VoiceMessageChat)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
-import spring from "spring" /* 5217 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 5417 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
+import spring from "spring" /* 5280 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 5481 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
@@ -187,13 +187,13 @@ function Duration(animationValue) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ActivityIndicator } = get_ActivityIndicator);
-let useVoiceMessagesUIStore = fn(12242).useVoiceMessagesUIStore;
-const VoiceMessageConstants = fn(12243);
+let useVoiceMessagesUIStore = fn(11442).useVoiceMessagesUIStore;
+const VoiceMessageConstants = fn(11443);
 ({ VOICE_RECORDING_MAX_DURATION_MILLIS: closure_8, VOICE_RECORDING_MAX_DURATION_OFFSET: closure_9, VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS: c10, VOICE_RECORDING_WARN_DURATION_MILLIS: closure_11, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let closure_15 = ReanimatedRexport.createAnimatedComponent(ActivityIndicator);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { container: { height: "100%", flexDirection: "row", alignItems: "center", paddingVertical: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_PILL_PADDING_HORIZONTAL, gap: nativeDefault.modules.mobile.VOICE_MESSAGE_CHAT_GAP, borderRadius: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_PILL_BORDER_RADIUS, backgroundColor: nativeDefault.colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_ACTIVE }, loading: { position: "absolute", left: 12 }, dot: null, dotDismissed: null, waveformContainer: null, waveformBar: null, durationContainer: null, duration: null };
 let size = { height: 6, width: 6, backgroundColor: nativeDefault.unsafe_rawColors.RED_400, borderRadius: nativeDefault.radii.round };
 obj.dot = size;

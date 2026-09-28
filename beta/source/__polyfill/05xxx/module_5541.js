@@ -1,9 +1,26 @@
 // Module ID: 5541
 // Function ID: 5542
-// Dependencies: [1121]
+// Dependencies: [5526]
 
 // Module 5541
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5526 from "module_5526" /* 5526 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let c2 = 0;
+let c3 = "<?xpacket begin";
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "72952773756d8776abb1f02e0c8ab235", name: "img_account_sync_battlenet_light_and_dark", type: "png" });
+export default {
+  isXMLFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      tmp = _mod5526.getStringFromDataView(dataView, c2, length.length) === length;
+    }
+    return tmp;
+  },
+  findOffsets(byteLength) {
+    const xmpChunks = [];
+    xmpChunks.push({ dataOffset, length: byteLength.byteLength });
+    return { xmpChunks };
+  }
+};

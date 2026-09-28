@@ -1,19 +1,19 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 13523
+// Function ID: 13524
 // Name: RowGroup
-// Dependencies: [19, 17, 21, 4788, 576, 5216, 5936, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 5279, 5999, 2]
 // Exports: RowGroup
 
-// Module 14277 (RowGroup)
+// Module 13523 (RowGroup)
 import nativeDefault from "native" /* 576 */;
-import Stack_Stack from "Stack/Stack" /* 5216 */;
+import Stack_Stack from "Stack/Stack" /* 5279 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { overflow: "hidden" }, content: { backgroundColor: nativeDefault.colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -28,7 +28,7 @@ export const RowGroup = function RowGroup(children) {
     let tmp7 = null != title;
     if (tmp7) {
       const obj2 = { title };
-      tmp7 = React3(tmp5(5936).TableRowGroupTitle, obj2);
+      tmp7 = React3(tmp5(5999).TableRowGroupTitle, obj2);
     }
     const obj3 = { direction: "horizontal", spacing: 4, children: null };
     const items = [tmp7, trailing];

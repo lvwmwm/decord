@@ -1,20 +1,20 @@
-// Module ID: 17892
-// Function ID: 17893
+// Module ID: 17253
+// Function ID: 17254
 // Name: SelectedChannelManager
-// Dependencies: [1992, 2095, 4609, 1074, 7395, 7616, 5660, 1101, 573, 2]
+// Dependencies: [1993, 2099, 4655, 1074, 6539, 6760, 5723, 1101, 573, 2]
 
-// Module 17892 (SelectedChannelManager)
+// Module 17253 (SelectedChannelManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5660 */;
-import transitionToGuild from "transitionToGuild" /* 7616 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
+import transitionToGuild from "transitionToGuild" /* 6760 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
-const findFirstVoiceChannelId = fn(2095).findFirstVoiceChannelId;
+const findFirstVoiceChannelId = fn(2099).findFirstVoiceChannelId;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_7, Routes: closure_8, ME: closure_9, NULL_STRING_GUILD_ID: c10 } = Constants);
 class SelectedChannelManager extends tmp3 {

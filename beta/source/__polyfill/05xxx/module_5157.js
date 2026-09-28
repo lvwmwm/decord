@@ -1,42 +1,32 @@
 // Module ID: 5157
 // Function ID: 5158
-// Dependencies: [19, 17, 5153]
-// Exports: useTabsHost
+// Dependencies: []
 
 // Module 5157
-import RNSLog2 from "RNSLog" /* 5153 */;
-import noop from "module_19" /* 19 */;
 
-require = fn;
-const findNodeHandle = fn(17).findNodeHandle;
-
-export const useTabsHost = function useTabsHost(arg0) {
-  ({ componentNodeRef: require, onTabSelected } = arg0);
-  noop = undefined;
-  noop = noop.useRef(-1);
-  const effect = noop.useEffect(() => {
-    if (null != ref.current) {
-      let num2 = findNodeHandle(tmp.current);
-      if (num2 == null) {
-        num2 = -1;
-      }
-      closure_2.current = num2;
-    } else {
-      closure_2.current = -1;
+export default function fromPropertyDescriptor(__Value__) {
+  if (undefined === __Value__) {
+    return __Value__;
+  } else {
+    const obj = {};
+    if ("[[Value]]" in __Value__) {
+      obj.value = __Value__["[[Value]]"];
     }
-  }, []);
-  const obj = { onTabSelected: null };
-  const items = [onTabSelected];
-  obj.onTabSelected = noop.useCallback((nativeEvent) => {
-    const RNSLog = RNSLog2.RNSLog;
-    let num = ref2.current;
-    if (num == null) {
-      num = -1;
+    if ("[[Writable]]" in __Value__) {
+      obj.writable = __Value__["[[Writable]]"];
     }
-    RNSLog.log("TabsHost [" + num + "] onTabSelected: " + JSON.stringify(nativeEvent.nativeEvent));
-    if (onTabSelected != null) {
-      onTabSelected(nativeEvent);
+    if ("[[Get]]" in __Value__) {
+      obj.get = __Value__["[[Get]]"];
     }
-  }, items);
-  return obj;
+    if ("[[Set]]" in __Value__) {
+      obj.set = __Value__["[[Set]]"];
+    }
+    if ("[[Enumerable]]" in __Value__) {
+      obj.enumerable = __Value__["[[Enumerable]]"];
+    }
+    if ("[[Configurable]]" in __Value__) {
+      obj.configurable = __Value__["[[Configurable]]"];
+    }
+    return obj;
+  }
 };

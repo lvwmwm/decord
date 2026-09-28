@@ -1,14 +1,14 @@
-// Module ID: 9437
-// Function ID: 9438
+// Module ID: 8592
+// Function ID: 8593
 // Name: ApplicationFrecencyStore
-// Dependencies: [2040, 1220, 1349, 1084, 1978, 4825, 12, 504, 573, 2]
+// Dependencies: [2044, 1220, 1349, 1084, 1979, 4873, 12, 504, 573, 2]
 
-// Module 9437 (ApplicationFrecencyStore)
+// Module 8592 (ApplicationFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FrecencyDefault from "Frecency" /* 4825 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import FrecencyDefault from "Frecency" /* 4873 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 function handleUserSettingsProtoStoreChange() {
@@ -30,7 +30,7 @@ function handleUserSettingsProtoStoreChange() {
   }), global.pendingUsages);
 }
 const UserSettingsTypes = fn(1084).UserSettingsTypes;
-let items = [fn(1978).ApplicationCommandType.CHAT, fn(1978).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+let items = [fn(1979).ApplicationCommandType.CHAT, fn(1979).ApplicationCommandType.PRIMARY_ENTRY_POINT];
 let global = { pendingUsages: [] };
 let obj = {
   computeBonus() {

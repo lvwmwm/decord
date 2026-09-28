@@ -1,14 +1,14 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 11424
+// Function ID: 11425
 // Name: nativeAppMessageEmbedUtil
-// Dependencies: [4637, 576, 8433, 8434, 1397, 2]
+// Dependencies: [4683, 576, 7589, 7590, 1397, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 12226 (nativeAppMessageEmbedUtil)
+// Module 11424 (nativeAppMessageEmbedUtil)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import useAvatarColor from "useAvatarColor" /* 8433 */;
-import ColorUtils_mod from "ColorUtils" /* 4637 */;
+import useAvatarColor from "useAvatarColor" /* 7589 */;
+import ColorUtils_mod from "ColorUtils" /* 4683 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "#000000";
@@ -23,19 +23,19 @@ export const getAppGradientColors = function getAppGradientColors(appIconSrc) {
     return tmp;
   } else {
     if (obj5.hasFetchedColors(appIconSrc)) {
-      const heroColors = tmp6(8434).getHeroColors(appIconSrc);
+      const heroColors = tmp6(7590).getHeroColors(appIconSrc);
       ({ primaryColor, secondaryColor } = heroColors);
       let tmp5 = tmp;
       if (false === tmp4) {
-        items = [tmp6(4637).hexToRgba(primaryColor), ];
-        const tmp6Result4 = tmp6(4637);
-        items[1] = tmp6(4637).hexToRgba(secondaryColor);
+        items = [tmp6(4683).hexToRgba(primaryColor), ];
+        const tmp6Result4 = tmp6(4683);
+        items[1] = tmp6(4683).hexToRgba(secondaryColor);
         tmp5 = items;
-        const tmp6Result5 = tmp6(4637);
+        const tmp6Result5 = tmp6(4683);
       }
       return tmp5;
     } else {
-      tmp6(8433).maybeFetchColors(appIconSrc);
+      tmp6(7589).maybeFetchColors(appIconSrc);
       return tmp;
     }
     obj5 = useAvatarColor;

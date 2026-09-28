@@ -1,11 +1,11 @@
-// Module ID: 14028
-// Function ID: 14029
+// Module ID: 13274
+// Function ID: 13275
 // Name: PremiumRewardsOrbsExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1436, 2]
 // Exports: getPremiumRewardsOrbsExperiment, usePremiumRewardsOrbsExperiment
 
-// Module 14028 (PremiumRewardsOrbsExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 13274 (PremiumRewardsOrbsExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
 
 const PremiumRewardsOrbsTreatment = { CONTROL: "control", TREATMENT_A: "treatment_a", TREATMENT_B: "treatment_b", TREATMENT_C: "treatment_c", TREATMENT_D: "treatment_d" };
 const dependencyMap = { [PremiumRewardsOrbsTreatment.CONTROL]: 0, [PremiumRewardsOrbsTreatment.TREATMENT_A]: 250, [PremiumRewardsOrbsTreatment.TREATMENT_B]: 500, [PremiumRewardsOrbsTreatment.TREATMENT_C]: 250, [PremiumRewardsOrbsTreatment.TREATMENT_D]: 500 };

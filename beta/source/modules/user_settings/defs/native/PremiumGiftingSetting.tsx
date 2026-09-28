@@ -1,27 +1,27 @@
-// Module ID: 15273
-// Function ID: 15274
+// Module ID: 14529
+// Function ID: 14530
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1074, 21, 7691, 11725, 13848, 1177, 11754, 1115, 11328, 4459, 13847, 2]
+// Dependencies: [19, 1074, 21, 6837, 10977, 13096, 1177, 11006, 1115, 10496, 4501, 13095, 2]
 
-// Module 15273 (PremiumGiftingSetting)
+// Module 14529 (PremiumGiftingSetting)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4459 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7691 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11725 */;
-import PromotionsHooks from "PromotionsHooks" /* 13848 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4501 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6837 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10977 */;
+import PromotionsHooks from "PromotionsHooks" /* 13096 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11754);
+const SettingBuilders = fn(11006);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["jcSP+g"]);
   },
   parent: null,
-  IconComponent: fn(11328).GiftIcon,
+  IconComponent: fn(10496).GiftIcon,
   usePredicate() {
     return BillingPlatformUtils.isPremiumGiftingSupported();
   },

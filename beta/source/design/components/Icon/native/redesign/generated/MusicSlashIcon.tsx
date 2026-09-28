@@ -1,13 +1,13 @@
-// Module ID: 10204
-// Function ID: 10205
+// Module ID: 9364
+// Function ID: 9365
 // Name: MusicSlashIcon
-// Dependencies: [19, 21, 576, 4488, 10205, 2]
+// Dependencies: [19, 21, 576, 4530, 9365, 2]
 // Exports: MusicSlashIcon
 
-// Module 10204 (MusicSlashIcon)
+// Module 9364 (MusicSlashIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod10205 from "module_10205" /* 10205 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod9365 from "module_9365" /* 9365 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const MusicSlashIcon = function MusicSlashIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10205, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9365, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

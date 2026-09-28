@@ -1,13 +1,13 @@
-// Module ID: 13333
-// Function ID: 13334
+// Module ID: 12585
+// Function ID: 12586
 // Name: FlashIcon
-// Dependencies: [19, 21, 576, 4488, 13334, 2]
+// Dependencies: [19, 21, 576, 4530, 12586, 2]
 // Exports: FlashIcon
 
-// Module 13333 (FlashIcon)
+// Module 12585 (FlashIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod13334 from "module_13334" /* 13334 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod12586 from "module_12586" /* 12586 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const FlashIcon = function FlashIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13334, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12586, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

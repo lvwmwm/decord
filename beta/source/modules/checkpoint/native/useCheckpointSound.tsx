@@ -1,0 +1,43 @@
+// Module ID: 15251
+// Function ID: 15252
+// Name: useCheckpointSound
+// Dependencies: [19, 15246, 504, 9357, 2]
+// Exports: default
+
+// Module 15251 (useCheckpointSound)
+import SoundUtils from "SoundUtils" /* 9357 */;
+import noop from "module_19" /* 19 */;
+import CheckpointStore from "CheckpointStore" /* 15246 */;
+import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+
+({ useCallback: c2, useEffect: c3, useRef: closure_4 } = noop);
+const result = size.fileFinishedImporting("modules/checkpoint/native/useCheckpointSound.tsx");
+
+export default function useCheckpointSound(arg0) {
+  _require = arg0;
+  const items = [CheckpointStore];
+  stateFromStores = require("initialize").useStateFromStores(items, () => isMuted.isMuted);
+  let obj = require("initialize");
+  closure_3(() => () => {
+    const current = ref.current;
+    let stopResult;
+    if (current != null) {
+      stopResult = current.stop();
+    }
+    return stopResult;
+  }, []);
+  const items1 = [stateFromStores, arg0];
+  return closure_4(null)(() => {
+    if (!stateFromStores) {
+      const current = ref.current;
+      if (current != null) {
+        current.stop();
+      }
+      ref.current = SoundUtils.createSound(closure_0, "vibing_wumpus");
+      const current2 = tmp.current;
+      current2.play();
+    }
+  }, items1);
+};

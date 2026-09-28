@@ -1,20 +1,20 @@
-// Module ID: 14032
-// Function ID: 14033
+// Module ID: 13278
+// Function ID: 13279
 // Name: SharedSpacesWarningStore
-// Dependencies: [560, 4659, 7975, 2]
+// Dependencies: [560, 4706, 7120, 2]
 // Exports: dequeueBlockWarning, getChannelDismissTimestamp, getGlobalDismissTimestamp, getUserDismissTimestamp, isBlockedWarningQueued, queueBlockWarning, setDismissalTimeForChannel, setDismissalTimeForUser, setDismissalTimeForUsers
 
-// Module 14032 (SharedSpacesWarningStore)
+// Module 13278 (SharedSpacesWarningStore)
 import module_560 from "module_560" /* 560 */;
-import "module_4659";
-import module_4659 from "module_4659" /* 4659 */;
+import "module_4706";
+import module_4706 from "module_4706" /* 4706 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let obj = { name: "shared-spaces-warning-storage", storage: null };
-obj.storage = module_4659.createJSONStorage(() => require("LocalStorageWrapper"));
-let obj2 = module_560.create(module_4659.persist(() => ({ channelDismissTimestamps: {}, userDismissTimestamps: {}, globalDismissTimestamp: null, queuedWarning: false }), obj));
+obj.storage = module_4706.createJSONStorage(() => require("LocalStorageWrapper"));
+let obj2 = module_560.create(module_4706.persist(() => ({ channelDismissTimestamps: {}, userDismissTimestamps: {}, globalDismissTimestamp: null, queuedWarning: false }), obj));
 const result = size.fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningStore.tsx");
 
 export const useSharedSpacesWarningStore = obj2;

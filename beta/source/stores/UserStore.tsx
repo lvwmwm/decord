@@ -1,7 +1,7 @@
 // Module ID: 1372
 // Function ID: 1373
 // Name: UserStore
-// Dependencies: [1373, 1386, 502, 1073, 1074, 1374, 1388, 1383, 1965, 1966, 1389, 1393, 1394, 1395, 1385, 12, 1977, 1978, 1370, 2]
+// Dependencies: [1373, 1386, 502, 1073, 1074, 1374, 1388, 1383, 1966, 1967, 1389, 1393, 1394, 1395, 1385, 12, 1978, 1979, 1370, 2]
 
 // Module 1372 (UserStore)
 import _mod12 from "module_12" /* 12 */;
@@ -9,8 +9,8 @@ import GlobalUtils from "GlobalUtils" /* 1370 */;
 import UserStoreUtils from "UserStoreUtils" /* 1383 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
 import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1388 */;
-import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1977 */;
-import Server from "Server" /* 1978 */;
+import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1978 */;
+import Server from "Server" /* 1979 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1373 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -96,15 +96,15 @@ function transformUser(mfa_enabled) {
   }
   const avatar_decoration_data = mfa_enabled.avatar_decoration_data;
   if (undefined !== avatar_decoration_data) {
-    mfa_enabled.avatarDecorationData = tmp4(1965).parseAvatarDecorationData(avatar_decoration_data);
+    mfa_enabled.avatarDecorationData = tmp4(1966).parseAvatarDecorationData(avatar_decoration_data);
     delete tmp[tmp3];
-    const tmp4Result = tmp4(1965);
+    const tmp4Result = tmp4(1966);
   }
   const collectibles = mfa_enabled.collectibles;
   if (undefined !== collectibles) {
     delete tmp[tmp3];
-    mfa_enabled.collectibles = tmp4(1966).parseServerUserCollectibles(collectibles);
-    const tmp4Result6 = tmp4(1966);
+    mfa_enabled.collectibles = tmp4(1967).parseServerUserCollectibles(collectibles);
+    const tmp4Result6 = tmp4(1967);
   }
   const global_name = mfa_enabled.global_name;
   if (undefined !== global_name) {
@@ -127,6 +127,11 @@ function transformUser(mfa_enabled) {
     mfa_enabled.typingIndicatorStyle = tmp4(1393).parseServerTypingIndicatorStyle(typing_indicator_style);
     delete tmp[tmp3];
     const tmp4Result9 = tmp4(1393);
+  }
+  const vad_colors = mfa_enabled.vad_colors;
+  if (undefined !== vad_colors) {
+    mfa_enabled.vadColors = vad_colors;
+    delete tmp[tmp3];
   }
   const premium_state = mfa_enabled.premium_state;
   if (undefined !== premium_state) {

@@ -1,13 +1,13 @@
-// Module ID: 5680
-// Function ID: 5681
+// Module ID: 5743
+// Function ID: 5744
 // Name: StageChannelParticipantStoreHooks
-// Dependencies: [32, 5667, 504, 5681, 5674, 2]
+// Dependencies: [32, 5730, 504, 5744, 5737, 2]
 // Exports: useActualStageSpeakerCount, useSortedRequestToSpeakParticipants, useStageParticipants, useStageParticipantsCount
 
-// Module 5680 (StageChannelParticipantStoreHooks)
-import StageChannelParticipants from "StageChannelParticipants" /* 5674 */;
+// Module 5743 (StageChannelParticipantStoreHooks)
+import StageChannelParticipants from "StageChannelParticipants" /* 5737 */;
 import _slicedToArray from "module_32" /* 32 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5667 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5730 */;
 
 const require = globalThis.__r;
 

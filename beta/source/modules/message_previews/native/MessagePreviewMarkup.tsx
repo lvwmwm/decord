@@ -1,17 +1,17 @@
-// Module ID: 10411
-// Function ID: 10412
+// Module ID: 9575
+// Function ID: 9576
 // Name: MessagePreviewMarkup
-// Dependencies: [5240, 5241, 10412, 1929, 4778, 8155, 1438, 2]
+// Dependencies: [5303, 5304, 9576, 1930, 4823, 7304, 1439, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMessagePreviewMarkup
 
-// Module 10411 (MessagePreviewMarkup)
-import privDefault from "priv" /* 1438 */;
-import _modDef1929 from "module_1929" /* 1929 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4778 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5240 */;
-import MarkupRulesDefault from "MarkupRules" /* 5241 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8155 */;
-import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 10412 */;
+// Module 9575 (MessagePreviewMarkup)
+import privDefault from "priv" /* 1439 */;
+import _modDef1930 from "module_1930" /* 1930 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4823 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5303 */;
+import MarkupRulesDefault from "MarkupRules" /* 5304 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7304 */;
+import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 9576 */;
 
 require = fn;
 function getOrParseMessagePreviewMarkupAST(arg0) {
@@ -47,8 +47,8 @@ export const renderASTToReact = function renderASTToReact(layout) {
   ({ tree, initialParserState, color, fontScale, maxFontSizeMultiplier } = layout);
   const items = [MarkupRulesDefault.RULES, MarkupMessagePreviewReactRulesDefault(layout.layout, color, fontScale, maxFontSizeMultiplier)];
   const tmpResult = combineMarkupRulesDefault(items);
-  const obj = _modDef1929;
-  return obj.reactFor(_modDef1929.ruleOutput(tmpResult, "react"))(tree, initialParserState);
+  const obj = _modDef1930;
+  return obj.reactFor(_modDef1930.ruleOutput(tmpResult, "react"))(tree, initialParserState);
 };
 export const getMessagePreviewASTParser = function getMessagePreviewASTParser(layout) {
   ({ color, fontScale, maxFontSizeMultiplier } = layout);
@@ -83,8 +83,8 @@ export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fo
     const tmp4 = getOrParseMessagePreviewMarkupAST(obj);
     const items = [MarkupRulesDefault.RULES, MarkupMessagePreviewReactRulesDefault(layout, color, num, maxFontSizeMultiplier)];
     const tmp7Result = combineMarkupRulesDefault(items);
-    const obj2 = _modDef1929;
-    return obj2.reactFor(_modDef1929.ruleOutput(tmp7Result, "react"))(tmp4, obj4);
+    const obj2 = _modDef1930;
+    return obj2.reactFor(_modDef1930.ruleOutput(tmp7Result, "react"))(tmp4, obj4);
   }
 };
 export const messagePreviewASTCache = tmp2;

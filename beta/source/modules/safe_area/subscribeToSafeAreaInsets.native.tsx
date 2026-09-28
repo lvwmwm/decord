@@ -1,12 +1,12 @@
-// Module ID: 9766
-// Function ID: 9767
+// Module ID: 8926
+// Function ID: 8927
 // Name: subscribeToSafeAreaInsets
-// Dependencies: [1481, 1613, 2]
+// Dependencies: [1482, 1614, 2]
 // Exports: default
 
-// Module 9766 (subscribeToSafeAreaInsets)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
-import SafeAreaStoreDefault from "SafeAreaStore" /* 1613 */;
+// Module 8926 (subscribeToSafeAreaInsets)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
+import SafeAreaStoreDefault from "SafeAreaStore" /* 1614 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safe_area/subscribeToSafeAreaInsets.native.tsx");

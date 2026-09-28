@@ -1,11 +1,11 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 14781
+// Function ID: 14782
 // Name: FastAssetImage
-// Dependencies: [32, 19, 21, 5029, 5836, 2]
+// Dependencies: [32, 19, 21, 5092, 5899, 2]
 // Exports: default
 
-// Module 15509 (FastAssetImage)
-import StoreUtils from "StoreUtils" /* 5029 */;
+// Module 14781 (FastAssetImage)
+import StoreUtils from "StoreUtils" /* 5092 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

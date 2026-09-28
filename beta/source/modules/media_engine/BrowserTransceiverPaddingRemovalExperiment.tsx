@@ -1,10 +1,10 @@
-// Module ID: 14106
-// Function ID: 14107
+// Module ID: 13351
+// Function ID: 13352
 // Name: BrowserTransceiverPaddingRemovalExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 14106 (BrowserTransceiverPaddingRemovalExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13351 (BrowserTransceiverPaddingRemovalExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-browser-transceiver-padding-removal", kind: "user", defaultConfig: { enabled: false }, variations: null };

@@ -1,13 +1,13 @@
-// Module ID: 15535
-// Function ID: 15536
+// Module ID: 14807
+// Function ID: 14808
 // Name: PaintPaletteIcon
-// Dependencies: [19, 21, 576, 4488, 15536, 2]
+// Dependencies: [19, 21, 576, 4530, 14808, 2]
 // Exports: PaintPaletteIcon
 
-// Module 15535 (PaintPaletteIcon)
+// Module 14807 (PaintPaletteIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod15536 from "module_15536" /* 15536 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod14808 from "module_14808" /* 14808 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PaintPaletteIcon = function PaintPaletteIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15536, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod14808, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

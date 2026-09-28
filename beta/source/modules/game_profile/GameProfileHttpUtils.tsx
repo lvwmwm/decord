@@ -1,19 +1,19 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 8222
+// Function ID: 8223
 // Name: GameProfileHttpUtils
-// Dependencies: [5, 7836, 2109, 8985, 1074, 9073, 573, 5029, 1271, 504, 559, 1091, 9064, 2]
+// Dependencies: [5, 6982, 2112, 8135, 1074, 8223, 573, 5092, 1271, 504, 559, 1091, 8214, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 9072 (GameProfileHttpUtils)
+// Module 8222 (GameProfileHttpUtils)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import StoreUtils from "StoreUtils" /* 5029 */;
+import StoreUtils from "StoreUtils" /* 5092 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7836 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
-import GameProfileStore from "GameProfileStore" /* 8985 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 6982 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
+import GameProfileStore from "GameProfileStore" /* 8135 */;
 
 require = fn;
 let closure_9 = async function _getShopCollection(collectionId) {
@@ -167,7 +167,7 @@ let closure_11 = async function _getGameAnnouncements(gameId, arg1) {
   })();
 };
 const Endpoints = fn(1074).Endpoints;
-let closure_8 = fn(9073).SIMILAR_GAMES_BLOCKED_GAME_IDS;
+let closure_8 = fn(8223).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 const initialize = fn(504);
 const fetchStore = initialize.createFetchStore(GameProfileStore, {
   getQueryId(arg0, arg1) {

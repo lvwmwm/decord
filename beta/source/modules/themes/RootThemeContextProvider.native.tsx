@@ -1,13 +1,13 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 14130
+// Function ID: 14131
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4780, 1182, 1085, 21, 504, 4641, 7257, 14881, 4498, 10371, 4793, 2]
+// Dependencies: [19, 4825, 1182, 1085, 21, 504, 4688, 6401, 14131, 4540, 9535, 4841, 2]
 // Exports: RootThemeContextProvider
 
-// Module 14880 (RootThemeContextProvider)
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4641 */;
+// Module 14130 (RootThemeContextProvider)
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4688 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 const require = fn;
@@ -23,35 +23,35 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
   ({ saturation, contrast } = stateFromStoresObject);
   const tmp4 = useColorThemeBackgroundDefault();
   const obj = manaTypeConsolidationExperiment(504);
-  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(7257).useManaTypeConsolidationExperiment("RootThemeContextProvider");
-  const obj2 = manaTypeConsolidationExperiment(7257);
+  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(6401).useManaTypeConsolidationExperiment("RootThemeContextProvider");
+  const obj2 = manaTypeConsolidationExperiment(6401);
   [][0] = manaTypeConsolidationExperiment;
-  const plainTextExperiment = manaTypeConsolidationExperiment(14881).usePlainTextExperiment("RootThemeContextProvider");
+  const plainTextExperiment = manaTypeConsolidationExperiment(14131).usePlainTextExperiment("RootThemeContextProvider");
   if (null == tmp4) {
     let num2 = 0;
     if (1 !== saturation) {
-      num2 = tmp(4498).setThemeFlag(0, tmp(4498).ThemeContextFlags.REDUCE_SATURATION_ENABLED);
-      const tmpResult = tmp(4498);
+      num2 = tmp(4540).setThemeFlag(0, tmp(4540).ThemeContextFlags.REDUCE_SATURATION_ENABLED);
+      const tmpResult = tmp(4540);
     }
     if (1 === contrast) {
       const obj4 = { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null };
       const obj5 = { enabled: plainTextExperiment, children: children.children };
-      obj4.children = jsx(tmp(4793).PlainTextExperimentProvider, { enabled: plainTextExperiment, children: children.children });
-      return jsx(tmp(10371).RootThemeContextProvider, { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null });
+      obj4.children = jsx(tmp(4841).PlainTextExperimentProvider, { enabled: plainTextExperiment, children: children.children });
+      return jsx(tmp(9535).RootThemeContextProvider, { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null });
     } else {
       if (contrast > 1) {
-        let REDUCED_CONTRAST_ENABLED = tmp(4498).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;
+        let REDUCED_CONTRAST_ENABLED = tmp(4540).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;
       } else {
-        REDUCED_CONTRAST_ENABLED = tmp(4498).ThemeContextFlags.REDUCED_CONTRAST_ENABLED;
+        REDUCED_CONTRAST_ENABLED = tmp(4540).ThemeContextFlags.REDUCED_CONTRAST_ENABLED;
       }
-      tmp(4498).setThemeFlag(num2, REDUCED_CONTRAST_ENABLED);
-      const tmpResult4 = tmp(4498);
+      tmp(4540).setThemeFlag(num2, REDUCED_CONTRAST_ENABLED);
+      const tmpResult4 = tmp(4540);
     }
   } else if (tmp4.theme === ThemeTypes.LIGHT) {
-    let setThemeFlagResult1 = tmp(4498).setThemeFlag(0, tmp(4498).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
-    const tmpResult5 = tmp(4498);
+    let setThemeFlagResult1 = tmp(4540).setThemeFlag(0, tmp(4540).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
+    const tmpResult5 = tmp(4540);
   } else {
-    setThemeFlagResult1 = tmp(4498).setThemeFlag(0, tmp(4498).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
-    const tmpResult6 = tmp(4498);
+    setThemeFlagResult1 = tmp(4540).setThemeFlag(0, tmp(4540).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
+    const tmpResult6 = tmp(4540);
   }
 };

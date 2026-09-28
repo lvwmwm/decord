@@ -1,15 +1,15 @@
-// Module ID: 9951
-// Function ID: 9952
+// Module ID: 9115
+// Function ID: 9116
 // Name: VideoBackgroundUtils
-// Dependencies: [2041, 4811, 7264, 1074, 1397, 4968, 1241, 2]
+// Dependencies: [2045, 4859, 6408, 1074, 1397, 5016, 1241, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9951 (VideoBackgroundUtils)
+// Module 9115 (VideoBackgroundUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 
 require = fn;
 function isAnimatedBackgroundOption(type) {
@@ -97,31 +97,31 @@ function getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption) {
   }
   return str;
 }
-const VideoBackgroundConstants = fn(7264);
+const VideoBackgroundConstants = fn(6408);
 ({ DefaultVideoBackground: hasOwnProperty, VideoFilterType: metroRequire, ANIMATED_DEFAULT_VIDEO_BACKGROUNDS: closure_7 } = VideoBackgroundConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_backgrounds/VideoBackgroundUtils.tsx");
 
-export const isCustomBackgroundOption = function isCustomBackgroundOption(videoBackgroundOptionFromProto) {
-  let tmp = null != videoBackgroundOptionFromProto && typeof videoBackgroundOptionFromProto === "object";
+export const isCustomBackgroundOption = function isCustomBackgroundOption(stateFromStores) {
+  let tmp = null != stateFromStores && typeof stateFromStores === "object";
   if (tmp) {
-    tmp = "id" in videoBackgroundOptionFromProto;
+    tmp = "id" in stateFromStores;
   }
   if (tmp) {
-    let flag = videoBackgroundOptionFromProto.type === constants.BACKGROUND;
+    let flag = stateFromStores.type === constants.BACKGROUND;
     if (!flag) {
-      const type = videoBackgroundOptionFromProto.type;
+      const type = stateFromStores.type;
       flag = false;
     }
     tmp = flag;
   }
   return tmp;
 };
-export const isDefaultBackgroundOption = function isDefaultBackgroundOption(videoBackgroundOptionFromProto) {
-  let tmp = typeof videoBackgroundOptionFromProto === "number";
-  if (typeof videoBackgroundOptionFromProto === "number") {
-    tmp = videoBackgroundOptionFromProto in OPTION_1;
+export const isDefaultBackgroundOption = function isDefaultBackgroundOption(stateFromStores) {
+  let tmp = typeof stateFromStores === "number";
+  if (typeof stateFromStores === "number") {
+    tmp = stateFromStores in OPTION_1;
   }
   return tmp;
 };
@@ -199,21 +199,21 @@ export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProt
   }
   return obj;
 };
-export const getVideoBackgroundOptionFromProto = function getVideoBackgroundOptionFromProto(prop, id) {
-  if (null != prop) {
-    if (undefined !== prop.oneofKind) {
-      const oneofKind = prop.oneofKind;
+export const getVideoBackgroundOptionFromProto = function getVideoBackgroundOptionFromProto(oneofKind, user_id) {
+  if (null != oneofKind) {
+    if (undefined !== oneofKind.oneofKind) {
+      oneofKind = oneofKind.oneofKind;
       if ("customAsset" === oneofKind) {
-        const obj = { type: constants.BACKGROUND, id: prop.customAsset.id, user_id: id, asset: prop.customAsset.assetHash };
+        const obj = { type: constants.BACKGROUND, id: oneofKind.customAsset.id, user_id, asset: oneofKind.customAsset.assetHash };
         return obj;
       } else if ("blur" === oneofKind) {
         let str3 = null;
-        if (prop.blur.useBlur) {
+        if (oneofKind.blur.useBlur) {
           str3 = "blur";
         }
         return str3;
       } else {
-        return "presetOption" === oneofKind ? prop.presetOption : undefined;
+        return "presetOption" === oneofKind ? oneofKind.presetOption : undefined;
       }
     }
   }

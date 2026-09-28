@@ -1,9 +1,22 @@
 // Module ID: 13821
 // Function ID: 13822
-// Dependencies: [1121]
+// Dependencies: [13796]
 
 // Module 13821
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13796 from "module_13796" /* 13796 */;
 
+if (_mod13796) {
+  let fn = call.bind(call);
+} else {
+  fn = () => {
+    const apply = call.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(tmp);
+    } else {
+      applyArgumentsResult = apply(tmp, arguments);
+    }
+    return applyArgumentsResult;
+  };
+}
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 24, height: 24, scales: [2, 3], hash: "6ce9cfa41f5b080fb1f9fac04190337a", name: "emoji", type: "png" });
+export default fn;

@@ -1,17 +1,17 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 7133
+// Function ID: 7134
 // Name: DeveloperExperimentStore
-// Dependencies: [2063, 1372, 4704, 1384, 1383, 504, 573, 2]
+// Dependencies: [2067, 1372, 4751, 1384, 1383, 504, 573, 2]
 
-// Module 7988 (DeveloperExperimentStore)
+// Module 7133 (DeveloperExperimentStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import UserStoreUtils from "UserStoreUtils" /* 1383 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const ExperimentBuckets = fn(4704).ExperimentBuckets;
+const ExperimentBuckets = fn(4751).ExperimentBuckets;
 const Environments = fn(1384).Environments;
 let tmp2 = "production" === Environments.DEVELOPMENT;
 if (!tmp2) {

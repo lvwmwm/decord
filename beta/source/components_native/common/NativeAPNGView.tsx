@@ -1,11 +1,11 @@
-// Module ID: 10473
-// Function ID: 10474
+// Module ID: 9637
+// Function ID: 9638
 // Name: NativeAPNGView
-// Dependencies: [17, 1364, 10474, 2]
+// Dependencies: [17, 1364, 9638, 2]
 
-// Module 10473 (NativeAPNGView)
+// Module 9637 (NativeAPNGView)
 import _mod17 from "module_17" /* 17 */;
-import APNGStickerNativeComponent from "APNGStickerNativeComponent" /* 10474 */;
+import APNGStickerNativeComponent from "APNGStickerNativeComponent" /* 9638 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 

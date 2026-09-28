@@ -1,13 +1,13 @@
-// Module ID: 17659
-// Function ID: 17660
+// Module ID: 17014
+// Function ID: 17015
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [19, 2041, 21, 563, 5146, 5146, 17657, 1115, 2]
+// Dependencies: [19, 2045, 21, 563, 5209, 5209, 17012, 1115, 2]
 // Exports: default
 
-// Module 17659 (VoicePanelMaxCapacityAlert)
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17657 */;
+// Module 17014 (VoicePanelMaxCapacityAlert)
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17012 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -30,7 +30,7 @@ export default function VoicePanelMaxCapacityAlert(channelId) {
     return num;
   }, items1);
   const obj = channelId(563);
-  const obj2 = channelId(5146);
+  const obj2 = channelId(5209);
   const obj3 = { header: jsx(VoicePanelLockedIconDefault, {}), title: null, content: null, actions: null };
   const intl = channelId(1115).intl;
   obj3.title = intl.string(channelId(1115).t.hHbsQj);
@@ -39,8 +39,8 @@ export default function VoicePanelMaxCapacityAlert(channelId) {
   const obj4 = { variant: "secondary", text: null, onPress: null };
   const intl3 = channelId(1115).intl;
   obj4.text = intl3.string(channelId(1115).t["NX+WJN"]);
-  obj4.onPress = channelId(5146).useDismissModalCallback();
-  obj3.actions = jsx(channelId(5146).AlertActionButton, { variant: "secondary", text: null, onPress: null });
-  return jsx(channelId(5146).AlertModal, { header: jsx(VoicePanelLockedIconDefault, {}), title: null, content: null, actions: null });
+  obj4.onPress = channelId(5209).useDismissModalCallback();
+  obj3.actions = jsx(channelId(5209).AlertActionButton, { variant: "secondary", text: null, onPress: null });
+  return jsx(channelId(5209).AlertModal, { header: jsx(VoicePanelLockedIconDefault, {}), title: null, content: null, actions: null });
 };
 export const VOICE_PANEL_MAX_CAPACITY_KEY = "voice-panel-max-capacity";

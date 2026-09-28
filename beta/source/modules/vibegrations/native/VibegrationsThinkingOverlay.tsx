@@ -1,20 +1,20 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 16397
+// Function ID: 16398
 // Name: VibegrationsThinkingOverlay
-// Dependencies: [19, 17, 13391, 21, 4788, 576, 504, 17035, 5856, 16763, 4784, 1115, 3710, 17033, 2]
+// Dependencies: [19, 17, 12643, 21, 4836, 576, 504, 16346, 5919, 16057, 4832, 1115, 3715, 16344, 2]
 // Exports: default
 
-// Module 17059 (VibegrationsThinkingOverlay)
+// Module 16397 (VibegrationsThinkingOverlay)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 13391 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12643 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { root: null, opaque: null, body: null, header: null, panel: null };
 const rect = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8 };
 obj2.root = rect;
@@ -47,18 +47,18 @@ export default function VibegrationsThinkingOverlay(projectId) {
   if (tmp6) {
     tmp6 = "end" !== stateFromStores.phase;
   }
-  const text = projectId(17035).useVibegrationsRevealedText(str, { streaming: tmp6 }).text;
+  const text = projectId(16346).useVibegrationsRevealedText(str, { streaming: tmp6 }).text;
   const obj3 = { style: tmp.root, children: null };
   const obj4 = { style: tmp.opaque, children: null };
   const obj5 = { style: tmp.body, children: null };
   const obj6 = { style: tmp.header, children: null };
-  const obj2 = projectId(17035);
+  const obj2 = projectId(16346);
   const tmp9 = closure_8;
-  const items2 = [closure_7(projectId(16763).LightbulbIcon, { size: "xs", color: ref(576).colors.TEXT_BRAND }), ];
+  const items2 = [closure_7(projectId(16057).LightbulbIcon, { size: "xs", color: ref(576).colors.TEXT_BRAND }), ];
   const obj8 = { variant: "text-sm/semibold", color: "text-strong", children: null };
   const intl = tmp3(1115).intl;
-  obj8.children = intl.string(ref(3710).ltkR4n);
-  items2[1] = closure_7(projectId(4784).Text, obj8);
+  obj8.children = intl.string(ref(3715).ltkR4n);
+  items2[1] = closure_7(projectId(4832).Text, obj8);
   obj6.children = items2;
   const items3 = [closure_8(closure_5, obj6), ];
   if ("" !== text) {
@@ -77,18 +77,18 @@ export default function VibegrationsThinkingOverlay(projectId) {
       children: null
     };
     const obj10 = { source: text };
-    obj9.children = tmp7(tmp10(17033), obj10);
+    obj9.children = tmp7(tmp10(16344), obj10);
     let tmp7Result = tmp7(closure_4, obj9);
   } else {
     const obj11 = { variant: "text-sm/normal", color: "text-muted", children: null };
     const intl2 = tmp3(1115).intl;
-    obj11.children = intl2.string(tmp10(3710).rXPcUx);
-    tmp7Result = tmp7(tmp3(4784).Text, obj11);
+    obj11.children = intl2.string(tmp10(3715).rXPcUx);
+    tmp7Result = tmp7(tmp3(4832).Text, obj11);
   }
   const obj7 = { size: "xs", color: ref(576).colors.TEXT_BRAND };
   items3[1] = tmp7Result;
   obj5.children = items3;
-  obj4.children = closure_7(projectId(5856).Card, { variant: "primary", shadow: "high", children: tmp9(closure_5, obj5) });
+  obj4.children = closure_7(projectId(5919).Card, { variant: "primary", shadow: "high", children: tmp9(closure_5, obj5) });
   obj3.children = closure_7(closure_5, obj4);
   return closure_7(closure_5, obj3);
 };

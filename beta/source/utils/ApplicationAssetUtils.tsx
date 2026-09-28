@@ -1,17 +1,17 @@
-// Module ID: 8440
-// Function ID: 8441
+// Module ID: 7595
+// Function ID: 7596
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8441, 1074, 38, 3, 1271, 573, 1431, 2]
+// Dependencies: [32, 5, 7596, 1074, 38, 3, 1271, 573, 1432, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8440 (ApplicationAssetUtils)
+// Module 7595 (ApplicationAssetUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8441 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7596 */;
 
 require = fn;
 function updateAssets() {
@@ -320,7 +320,7 @@ let closure_22 = async function _fetchAssetIds(arg0, value) {
     num13 = 1;
   }
   closure_131_2 = num13;
-  return "PX_16";
+  return "flex";
 };
 const Constants = fn(1074);
 ({ Endpoints: metroRequire, PlatformTypes } = Constants);

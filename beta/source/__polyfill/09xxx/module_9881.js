@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 160, height: 160, scales: [2, 3], hash: "9e9c2d9cc8f1fa482e39489caafdfd7e", name: "img_no_results_dark_theme", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stickers/native/images", width: 90, height: 90, scales: [2, 3], hash: "5decb69ef43f8e7b31fcaaf11b388fe1", name: "sticker_search_empty", type: "png" });

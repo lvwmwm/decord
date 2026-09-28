@@ -1,19 +1,19 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 12252
+// Function ID: 12253
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 13001, 1074, 21, 4788, 576, 1484, 7258, 13014, 4688, 13009, 1177, 1115, 4784, 6879, 5218, 2]
+// Dependencies: [5, 32, 19, 17, 12233, 1074, 21, 4836, 576, 1485, 6402, 12246, 4735, 12241, 1177, 1115, 4832, 6023, 5281, 2]
 // Exports: default
 
-// Module 13018 (HubEmailConnectionSubmitSchool)
+// Module 12252 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import useNavigation from "useNavigation" /* 1484 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6879 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7258 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13009 */;
+import useNavigation from "useNavigation" /* 1485 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6023 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12241 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -21,10 +21,10 @@ import noop from "module_19" /* 19 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(13001).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12233).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { paddingHorizontal: 16 }, title: { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 24 }, scrollViewContainer: { flexGrow: 2 }, input: { marginBottom: 8 }, redesignTextInput: null, redesignGrowSpacing: null, redesignSubmit: null };
 let obj3 = { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
 obj2.redesignTextInput = { borderRadius: nativeDefault.radii.lg };

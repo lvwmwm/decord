@@ -1,12 +1,12 @@
-// Module ID: 8490
-// Function ID: 8491
+// Module ID: 7634
+// Function ID: 7635
 // Name: DisplayProfile
-// Dependencies: [1374, 7891, 4446, 1397, 8467, 2]
+// Dependencies: [1374, 7037, 4488, 1397, 7611, 2]
 
-// Module 8490 (DisplayProfile)
+// Module 7634 (DisplayProfile)
 import PremiumConstants from "PremiumConstants" /* 1374 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8467 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7611 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

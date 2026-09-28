@@ -1,20 +1,20 @@
-// Module ID: 15156
-// Function ID: 15157
+// Module ID: 14411
+// Function ID: 14412
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 4788, 8955, 8956, 15157, 576, 12203, 1115, 2482, 15164, 15165, 4784, 2]
+// Dependencies: [19, 17, 21, 4836, 8105, 8106, 14412, 576, 11398, 1115, 2487, 14419, 14420, 4832, 2]
 // Exports: default
 
-// Module 15156 (FamilyCenterActivityBanner)
+// Module 14411 (FamilyCenterActivityBanner)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import useUserLinks from "useUserLinks" /* 8955 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8956 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 12203 */;
+import _modDef2487 from "module_2487" /* 2487 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useUserLinks from "useUserLinks" /* 8105 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8106 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11398 */;
 import noop from "module_19" /* 19 */;
 
-const FamilyCenterBannerButton = tmp2(15157);
+const FamilyCenterBannerButton = tmp2(14412);
 require = fn;
 function FamilyCenterActivityBannerButton() {
   const tmp = closure_7();
@@ -37,9 +37,9 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let createStyles = fn(4788);
+let createStyles = fn(4836);
 let closure_7 = createStyles.createStyles({ container: { width: "100%" } });
-createStyles = fn(4788);
+createStyles = fn(4836);
 let obj3 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2 }, art: null, header: null, description: null };
 let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2 };
 obj3.art = { maxWidth: 243, maxHeight: 119, marginBottom: nativeDefault.space.PX_8 };
@@ -58,15 +58,15 @@ export default function FamilyCenterActivityBanner() {
   const intl = util.intl;
   const obj2 = useAgeSpecificText;
   const intl2 = util.intl;
-  const ageSpecificText = obj2.useAgeSpecificText(intl.string(_modDef2482["T7GyW+"]), intl2.string(_modDef2482.goKE2b));
-  const stringResult = intl.string(_modDef2482["T7GyW+"]);
+  const ageSpecificText = obj2.useAgeSpecificText(intl.string(_modDef2487["T7GyW+"]), intl2.string(_modDef2487.goKE2b));
+  const stringResult = intl.string(_modDef2487["T7GyW+"]);
   const intl3 = util.intl;
   const obj3 = useAgeSpecificText;
   const intl4 = util.intl;
   const obj4 = { style: tmp4.container, children: null };
   const obj5 = { source: null, style: null };
-  const ageSpecificText1 = obj3.useAgeSpecificText(intl3.format(_modDef2482.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(_modDef2482.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  obj5.source = tmp(tmp3 ? 15164 : 15165);
+  const ageSpecificText1 = obj3.useAgeSpecificText(intl3.format(_modDef2487.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(_modDef2487.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
+  obj5.source = tmp(tmp3 ? 14419 : 14420);
   obj5.style = tmp4.art;
   const items = [hasOwnProperty(React4, obj5), hasOwnProperty(Text_Text.Text, { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText }), hasOwnProperty(Text_Text.Text, { style: tmp4.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 }), ];
   let tmp13Result = null;

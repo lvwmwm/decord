@@ -1,12 +1,12 @@
-// Module ID: 9074
-// Function ID: 9075
+// Module ID: 8224
+// Function ID: 8225
 // Name: navigateToGameAnnouncement
-// Dependencies: [5, 2063, 1074, 38, 7615, 8681, 1101, 2]
+// Dependencies: [5, 2067, 1074, 38, 6759, 7826, 1101, 2]
 // Exports: default
 
-// Module 9074 (navigateToGameAnnouncement)
+// Module 8224 (navigateToGameAnnouncement)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = fn;
 let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
@@ -47,7 +47,7 @@ let closure_8 = async function _navigateToGameAnnouncement(arg0, value) {
           let guild3;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {

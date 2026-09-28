@@ -1,13 +1,13 @@
-// Module ID: 7378
-// Function ID: 7379
+// Module ID: 6522
+// Function ID: 6523
 // Name: GuildOnboardingPromptsConstants
-// Dependencies: [32, 109, 1074, 1331, 1115, 2009, 2]
+// Dependencies: [32, 109, 1074, 1331, 1115, 2011, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 7378 (GuildOnboardingPromptsConstants)
+// Module 6522 (GuildOnboardingPromptsConstants)
 import util from "util" /* 1115 */;
 import _modDef1331 from "module_1331" /* 1331 */;
-import StringUtils from "StringUtils" /* 2009 */;
+import StringUtils from "StringUtils" /* 2011 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 

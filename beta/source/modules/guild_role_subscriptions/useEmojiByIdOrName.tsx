@@ -1,11 +1,11 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 14786
+// Function ID: 14787
 // Name: useEmojiByIdOrName
-// Dependencies: [5708, 504, 2]
+// Dependencies: [5771, 504, 2]
 // Exports: default, useEmojiByIdOrName
 
-// Module 15514 (useEmojiByIdOrName)
-import EmojiStore from "EmojiStore" /* 5708 */;
+// Module 14786 (useEmojiByIdOrName)
+import EmojiStore from "EmojiStore" /* 5771 */;
 
 const require = fn;
 function useEmojiByIdOrName(guildId, emojiId) {

@@ -1,13 +1,13 @@
-// Module ID: 5330
-// Function ID: 5331
+// Module ID: 5394
+// Function ID: 5395
 // Name: TextIcon
-// Dependencies: [19, 21, 576, 4488, 5275, 2]
+// Dependencies: [19, 21, 576, 4530, 5339, 2]
 // Exports: TextIcon
 
-// Module 5330 (TextIcon)
+// Module 5394 (TextIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod5275 from "module_5275" /* 5275 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod5339 from "module_5339" /* 5339 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const TextIcon = function TextIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5275, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5339, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

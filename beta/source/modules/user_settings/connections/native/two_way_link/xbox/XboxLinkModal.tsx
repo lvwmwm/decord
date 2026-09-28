@@ -1,22 +1,22 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 8530
+// Function ID: 8531
 // Name: XboxLinkModal
-// Dependencies: [19, 9376, 1074, 21, 7651, 7269, 9374, 1115, 9377, 9384, 9385, 9389, 9393, 9398, 9400, 9383, 9404, 7277, 2]
+// Dependencies: [19, 8531, 1074, 21, 6795, 6413, 8529, 1115, 8532, 8539, 8540, 8544, 8548, 8553, 8555, 8538, 8559, 6421, 2]
 // Exports: default
 
-// Module 9375 (XboxLinkModal)
+// Module 8530 (XboxLinkModal)
 import util from "util" /* 1115 */;
-import _modDef7269 from "module_7269" /* 7269 */;
-import HeaderActionButton from "HeaderActionButton" /* 7651 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9374 */;
-import XboxLinkEducationDefault from "XboxLinkEducation" /* 9398 */;
-import XboxLinkErrorDefault from "XboxLinkError" /* 9400 */;
+import _modDef6413 from "module_6413" /* 6413 */;
+import HeaderActionButton from "HeaderActionButton" /* 6795 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8529 */;
+import XboxLinkEducationDefault from "XboxLinkEducation" /* 8553 */;
+import XboxLinkErrorDefault from "XboxLinkError" /* 8555 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function CloseButton() {
   const obj = {
-    source: _modDef7269,
+    source: _modDef6413,
     onPress() {
       return XboxLinkModalActionCreatorsDefault.hideModal();
     },
@@ -25,14 +25,14 @@ function CloseButton() {
   const intl = util.intl;
   obj.accessibilityLabel = intl.string(util.t.cpT0Cq);
   return jsx(HeaderActionButton.HeaderActionButton, {
-    source: _modDef7269,
+    source: _modDef6413,
     onPress() {
       return XboxLinkModalActionCreatorsDefault.hideModal();
     },
     accessibilityLabel: null
   });
 }
-const XboxLinkModalScenes = fn(9376).XboxLinkModalScenes;
+const XboxLinkModalScenes = fn(8531).XboxLinkModalScenes;
 const PlatformTypes = fn(1074).PlatformTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -40,11 +40,11 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default function XboxLinkModal(locationStack) {
   let twoWayLinkStyles;
-  twoWayLinkStyles = twoWayLinkStyles(9383).useTwoWayLinkStyles();
+  twoWayLinkStyles = twoWayLinkStyles(8538).useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = noop.useMemo(() => {
     function onClose() {
-      return closure_1_1(9374).hideModal();
+      return closure_1_1(8529).hideModal();
     }
     function blank() {
       return null;
@@ -56,7 +56,7 @@ export default function XboxLinkModal(locationStack) {
         headerTitle: blank,
         headerStyle: twoWayLinkStyles.navHeader,
         render() {
-          return closure_1_6(closure_1_1(9377), {});
+          return closure_1_6(closure_1_1(8532), {});
         }
       },
       [closure_2_4.PRE_CONNECT]: {
@@ -64,10 +64,10 @@ export default function XboxLinkModal(locationStack) {
         headerRight: CloseButton,
         headerStyle: twoWayLinkStyles.navHeader,
         headerTitle() {
-          return closure_1_6(onClose(9384).TwoWayLinkStepHeader, { idx: 1, total: 2 });
+          return closure_1_6(onClose(8539).TwoWayLinkStepHeader, { idx: 1, total: 2 });
         },
         render() {
-          return closure_1_6(closure_1_1(9385), {});
+          return closure_1_6(closure_1_1(8540), {});
         }
       },
       [closure_2_4.DISCORD_CONSENT]: {
@@ -75,11 +75,11 @@ export default function XboxLinkModal(locationStack) {
         headerRight: CloseButton,
         headerStyle: twoWayLinkStyles.navHeader,
         headerTitle() {
-          return closure_1_6(onClose(9384).TwoWayLinkStepHeader, { idx: 2, total: 2 });
+          return closure_1_6(onClose(8539).TwoWayLinkStepHeader, { idx: 2, total: 2 });
         },
         render(arg0) {
           ({ callbackCode, callbackState } = arg0);
-          return closure_1_6(closure_1_1(9389), { callbackCode, callbackState });
+          return closure_1_6(closure_1_1(8544), { callbackCode, callbackState });
         }
       },
       [closure_2_4.SUCCESS]: {
@@ -88,7 +88,7 @@ export default function XboxLinkModal(locationStack) {
         headerTitle: blank,
         headerStyle: twoWayLinkStyles.navHeader,
         render() {
-          return closure_1_6(closure_1_1(9393), {});
+          return closure_1_6(closure_1_1(8548), {});
         }
       },
       [closure_2_4.EDUCATION]: {
@@ -111,10 +111,10 @@ export default function XboxLinkModal(locationStack) {
       }
     };
   }, items);
-  const obj = twoWayLinkStyles(9383);
-  const accountLinkStepTracking = twoWayLinkStyles(9404).useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack.locationStack);
+  const obj = twoWayLinkStyles(8538);
+  const accountLinkStepTracking = twoWayLinkStyles(8559).useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack.locationStack);
   const obj3 = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: XboxLinkModalScenes.LANDING, headerBackTitle: null };
   const intl = twoWayLinkStyles(1115).intl;
   obj3.headerBackTitle = intl.string(twoWayLinkStyles(1115).t["13/7kX"]);
-  return jsx(twoWayLinkStyles(7277).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: XboxLinkModalScenes.LANDING, headerBackTitle: null });
+  return jsx(twoWayLinkStyles(6421).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: XboxLinkModalScenes.LANDING, headerBackTitle: null });
 };

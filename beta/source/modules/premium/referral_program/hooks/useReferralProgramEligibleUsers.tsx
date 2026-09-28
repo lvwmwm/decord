@@ -1,14 +1,14 @@
-// Module ID: 13738
-// Function ID: 13739
+// Module ID: 12982
+// Function ID: 12983
 // Name: useReferralProgramEligibleUsers
-// Dependencies: [5, 32, 19, 7726, 504, 38, 7727, 8482, 2]
+// Dependencies: [5, 32, 19, 6872, 504, 38, 6873, 7626, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 13738 (useReferralProgramEligibleUsers)
+// Module 12982 (useReferralProgramEligibleUsers)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7726 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 6872 */;
 
 const require = globalThis.__r;
 
@@ -160,7 +160,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
                     stateFromStores = dependencyMap;
                     closure_3 = dependencyMap[Symbol.iterator]();
                     if (closure_3 === undefined) {
-                      let obj5 = searchQuery(7727);
+                      let obj5 = searchQuery(6873);
                       c9 = 4;
                       c10 = 1;
                       let obj6 = { value: obj5.fetchReferralEligibleUsers(closure_133_0, closure_134_0, closure_133_1), done: false };
@@ -170,9 +170,9 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
                       closure_133_3 = tmp44;
                       closure_133_4 = stateFromStores(closure_133_3, 2);
                       closure_133_5 = closure_133_4[0];
-                      if (closure_133_4[1] === searchQuery(7727).ReferralOfferStatus.PENDING) {
+                      if (closure_133_4[1] === searchQuery(6873).ReferralOfferStatus.PENDING) {
                         if (!closure_134_12.has(closure_133_5)) {
-                          obj3 = searchQuery(8482);
+                          obj3 = searchQuery(7626);
                           c9 = 5;
                           c10 = 1;
                           let obj7 = { value: obj3.getUser(closure_133_5), done: false };

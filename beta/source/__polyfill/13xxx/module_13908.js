@@ -1,9 +1,47 @@
 // Module ID: 13908
 // Function ID: 13909
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: default
 
 // Module 13908
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/dark", width: 24, height: 23, scales: [2, 3], hash: "d3ced0dd7614d99a1c612f606eea8d5d", name: "tier_2_24px", type: "png" });
+export default (createSocket) => {
+  ({ host, port } = createSocket);
+  if (null != createSocket.createSocket) {
+    let tmp7 = typeof host === "string";
+    if (typeof host === "string") {
+      tmp7 = host;
+    }
+    if (tmp7) {
+      tmp7 = "" !== host;
+    }
+    if (tmp7) {
+      let tmp13 = typeof port === "number";
+      if (typeof port === "number") {
+        tmp13 = port >= 1;
+      }
+      if (tmp13) {
+        tmp13 = port <= 65535;
+      }
+      if (tmp13) {
+        if (typeof tmp !== "function") {
+          const _Error4 = Error;
+          const error = new Error("invalid onCommand handler");
+          throw error;
+        }
+      } else {
+        const _Error3 = Error;
+        const error1 = new Error("invalid port");
+        throw error1;
+      }
+    } else {
+      const _Error2 = Error;
+      const error2 = new Error("invalid host");
+      throw error2;
+    }
+  } else {
+    const _Error = Error;
+    const error3 = new Error("invalid createSocket function");
+    throw error3;
+  }
+};

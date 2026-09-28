@@ -1,65 +1,53 @@
 // Module ID: 4154
 // Function ID: 4155
-// Dependencies: [3877, 3878]
+// Dependencies: [3918, 4155, 4156, 3919]
 // Exports: default
 
 // Module 4154
-import _typeof_mod from "module_3877" /* 3877 */;
-import requiredArgs_mod from "requiredArgs" /* 3878 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import startOfUTCISOWeek_mod from "startOfUTCISOWeek" /* 4155 */;
+import startOfUTCISOWeekYear_mod from "startOfUTCISOWeekYear" /* 4156 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
-  let obj = { default: _typeof };
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  let obj2 = { default: requiredArgs };
+let startOfUTCISOWeek = startOfUTCISOWeek_mod;
+if (!startOfUTCISOWeek) {
+  const obj2 = { default: startOfUTCISOWeek };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = startOfUTCISOWeek;
 }
-requiredArgs = tmp5;
-let c2 = 86400000;
+startOfUTCISOWeek = tmp5;
+let startOfUTCISOWeekYear = startOfUTCISOWeekYear_mod;
+if (!startOfUTCISOWeekYear) {
+  const obj3 = { default: startOfUTCISOWeekYear };
+  let tmp7 = obj3;
+} else {
+  tmp7 = startOfUTCISOWeekYear;
+}
+startOfUTCISOWeekYear = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
+let c4 = 604800000;
 
-export default function getOverlappingDaysInIntervals(arg0, arg1) {
-  let obj = arg0;
-  requiredArgs.default(2, arguments);
-  if (!arg0) {
-    obj = {};
-  }
-  let obj2 = arg1;
-  if (!arg1) {
-    obj2 = {};
-  }
-  const time = _typeof.default(obj.start).getTime();
-  const defaultResult1 = _typeof.default(obj.start);
-  const time1 = _typeof.default(obj.end).getTime();
-  const defaultResult2 = _typeof.default(obj.end);
-  let time2 = _typeof.default(obj2.start).getTime();
-  const defaultResult3 = _typeof.default(obj2.start);
-  let time3 = _typeof.default(obj2.end).getTime();
-  if (time <= time1) {
-    if (time2 <= time3) {
-      if (time < time3) {
-        if (time2 < time1) {
-          if (time3 > time1) {
-            time3 = time1;
-          }
-          if (time2 < time) {
-            time2 = time;
-          }
-          const _Math = Math;
-          return Math.ceil((time3 - time2) / c2);
-        }
-      }
-      return 0;
-    }
-  }
-  const rangeError = new RangeError("Invalid interval");
-  throw rangeError;
+export default function getUTCISOWeek(arg0) {
+  requiredArgs.default(1, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const time = startOfUTCISOWeek.default(defaultResult1).getTime();
+  const defaultResult2 = startOfUTCISOWeek.default(defaultResult1);
+  return Math.round((time - startOfUTCISOWeekYear.default(defaultResult1).getTime()) / c4) + 1;
 };
 export default exports.default;

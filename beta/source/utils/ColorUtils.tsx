@@ -1,14 +1,14 @@
-// Module ID: 4637
-// Function ID: 4638
+// Module ID: 4683
+// Function ID: 4684
 // Name: ColorUtils
-// Dependencies: [32, 672, 1115, 3, 4638, 2]
+// Dependencies: [32, 672, 1115, 3, 4684, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgb, hexToRgbArray, hexToRgba, hexToRgbaString, hexWithOpacity, hslToString, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 4637 (ColorUtils)
+// Module 4683 (ColorUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef672 from "module_672" /* 672 */;
 import util from "util" /* 1115 */;
-import utils_ColorDefault from "utils/Color" /* 4638 */;
+import utils_ColorDefault from "utils/Color" /* 4684 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -419,9 +419,9 @@ export const hexToRgbArray = function hexToRgbArray(arg0) {
 };
 export { hexToRgba };
 export { hexToRgbaString };
-export const hexOpacityToRgba = function hexOpacityToRgba(backgroundColor, dividerOpacity) {
+export const hexOpacityToRgba = function hexOpacityToRgba(backgroundColor, c6) {
   const tmp = _slicedToArray(_modDef672(backgroundColor).rgb(), 3);
-  return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + dividerOpacity + ")";
+  return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + c6 + ")";
 };
 export { rgbToHslObject };
 export const hslToString = function hslToString(arg0, arg1, arg2) {

@@ -1,11 +1,11 @@
-// Module ID: 7498
-// Function ID: 7499
+// Module ID: 6642
+// Function ID: 6643
 // Name: FakePlaceholderPrivateChannel
-// Dependencies: [2045, 1074, 2]
+// Dependencies: [2049, 1074, 2]
 
-// Module 7498 (FakePlaceholderPrivateChannel)
+// Module 6642 (FakePlaceholderPrivateChannel)
 import Constants from "Constants" /* 1074 */;
-import ChannelRecord from "ChannelRecord" /* 2045 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
 import size from "module_2" /* 2 */;
 
 const channelRecord = ChannelRecord.createChannelRecord({ id: "131", type: Constants.ChannelTypes.DM, name: "Placeholder Channel" });

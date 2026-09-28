@@ -1,23 +1,23 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 9566
+// Function ID: 9567
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 2041, 10391, 1085, 21, 4788, 1365, 576, 10403, 10404, 10390, 4784, 5836, 10426, 5020, 10431, 10432, 1096, 7576, 1115, 8155, 2]
+// Dependencies: [19, 17, 2045, 9555, 1085, 21, 4836, 1365, 576, 9567, 9568, 9554, 4832, 5899, 9590, 5083, 9595, 9596, 1096, 6720, 1115, 7304, 2]
 // Exports: default
 
-// Module 10402 (MessagePreviewText)
+// Module 9566 (MessagePreviewText)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import useMessageAuthor from "useMessageAuthor" /* 5020 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7576 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10390 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 10403 */;
-import ChannelRowPreview from "ChannelRowPreview" /* 10404 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 10426 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 10431 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 10432 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useMessageAuthor from "useMessageAuthor" /* 5083 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6720 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 9554 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 9567 */;
+import ChannelRowPreview from "ChannelRowPreview" /* 9568 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 9590 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 9595 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 9596 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 function NativeMessagePreviewContent(arg0) {
@@ -134,16 +134,16 @@ function EmbedCard(embed) {
   return React7(View, obj);
 }
 const View = fn(17).View;
-const InAppNotificationConstants = fn(10391);
+const InAppNotificationConstants = fn(9555);
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_7 } = InAppNotificationConstants);
 const Fonts = fn(1085).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let createStyles = fn(4788);
+let createStyles = fn(4836);
 const PlatformUtils = fn(1365);
 let obj3 = { italic: { fontStyle: "italic", fontFamily: PlatformUtils.isIOS() ? Fonts.PRIMARY_NORMAL_ITALIC : Fonts.PRIMARY_MEDIUM_ITALIC } };
 let closure_10 = createStyles.createStyles(obj3);
-createStyles = fn(4788);
+createStyles = fn(4836);
 let obj6 = { embedContainer: null, embedAccentBar: null, embedTextContainer: null, embedMediaContainer: null, embedMedia: null };
 let obj4 = { fontStyle: "italic", fontFamily: PlatformUtils.isIOS() ? Fonts.PRIMARY_NORMAL_ITALIC : Fonts.PRIMARY_MEDIUM_ITALIC };
 obj6.embedContainer = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, flexDirection: "row", overflow: "hidden" };
@@ -151,7 +151,7 @@ let obj7 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.spa
 obj6.embedAccentBar = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
 let obj8 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
 obj6.embedTextContainer = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
-let size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "WireType" };
+let size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "__closure" };
 obj6.embedMediaContainer = size;
 obj6.embedMedia = { width: "100%", height: "100%" };
 let closure_11 = createStyles.createStyles(obj6);
@@ -198,7 +198,7 @@ export default function MessagePreviewText(message) {
   } else if (isForwardMessageDefault(message)) {
     let tmp29 = previewableMedia.length > 0;
     if (tmp29) {
-      tmp29 = previewableMedia[0].type === tmp(10426).PreviewableMediaTypes.GIF;
+      tmp29 = previewableMedia[0].type === tmp(9590).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       if (null != nullableMessageAuthor) {
@@ -217,10 +217,10 @@ export default function MessagePreviewText(message) {
   } else if (message.content.length > 0) {
     if (null != nullableMessageAuthor) {
       const channel = ChannelStore.getChannel(message.channel_id);
-      tmp(10390);
+      tmp(9554);
       if (null != channel) {
-        const obj10 = { channel, message, color: "text-default", layout: tmp(8155).ChannelListLayoutTypes.COZY, variant: tmp24, muted: false, lineClamp };
-        return React6(tmp(10404).ChannelRowPreview, obj10);
+        const obj10 = { channel, message, color: "text-default", layout: tmp(7304).ChannelListLayoutTypes.COZY, variant: tmp24, muted: false, lineClamp };
+        return React6(tmp(9568).ChannelRowPreview, obj10);
       }
     }
     const obj11 = { message: getInitialMessagePreview, lineClamp, maxHeight };
@@ -233,7 +233,7 @@ export default function MessagePreviewText(message) {
         let tmp17Result = null !== secondaryText;
         if (tmp17Result) {
           const obj13 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp, children: secondaryText };
-          tmp17Result = React6(tmp(4784).Text, obj13);
+          tmp17Result = React6(tmp(4832).Text, obj13);
         }
         const obj14 = { children: null };
         items2[1] = tmp17Result;
@@ -254,7 +254,7 @@ export default function MessagePreviewText(message) {
       const obj17 = { text: formatResult1 };
       const items3 = [React6(SystemMessageText, obj17), ];
       const obj18 = { variant: "redesign/message-preview/medium", color: "text-default", lineClamp, children: message.poll.question.text };
-      items3[1] = React6(tmp(4784).Text, obj18);
+      items3[1] = React6(tmp(4832).Text, obj18);
       obj16.children = items3;
       return React7(View, obj16);
     } else {

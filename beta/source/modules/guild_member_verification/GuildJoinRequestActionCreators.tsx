@@ -1,15 +1,15 @@
-// Module ID: 5790
-// Function ID: 5791
+// Module ID: 5853
+// Function ID: 5854
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 2045, 5791, 4610, 1074, 4612, 573, 1271, 5792, 5140, 1115, 5660, 2]
+// Dependencies: [5, 2049, 5854, 4656, 1074, 4658, 573, 1271, 5855, 5203, 1115, 5723, 2]
 
-// Module 5790 (GuildJoinRequestActionCreators)
+// Module 5853 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5792 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5855 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5791 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5854 */;
 
 require = fn;
 let closure_9 = async function _fetchGuildJoinRequests(arg0, value) {
@@ -66,7 +66,7 @@ let closure_9 = async function _fetchGuildJoinRequests(arg0, value) {
           closure_130_9 = undefined;
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -325,8 +325,8 @@ let closure_13 = async function _updateGuildJoinRequest() {
       obj2.title = intl.string(closure_1_0(1115).t.DxJj4e);
       const intl2 = closure_1_0(1115).intl;
       obj2.body = intl2.string(closure_1_0(1115).t.rSAOk9);
-      closure_1_1(5140).show(obj2);
-      const obj = closure_1_1(5140);
+      closure_1_1(5203).show(obj2);
+      const obj = closure_1_1(5203);
     }
     return Promise.reject(error);
   });
@@ -343,7 +343,7 @@ let closure_13 = async function _updateGuildJoinRequest() {
   }
   closure_133_3 = APPROVED;
   closure_133_4 = closure_4;
-  return "PX_16";
+  return "flex";
 };
 let closure_14 = async function _resetGuildJoinRequest(arg0, value) {
   if (c6 === 2) {
@@ -515,7 +515,7 @@ let closure_17 = async function _createOrEnterJoinRequestInterview(arg0, value) 
           closure_130_3 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -559,8 +559,8 @@ let closure_17 = async function _createOrEnterJoinRequestInterview(arg0, value) 
     }
   }
 };
-let closure_4 = fn(2045).createChannelRecordFromServer;
-const joinRequestFromServer = fn(4610).joinRequestFromServer;
+let closure_4 = fn(2049).createChannelRecordFromServer;
+const joinRequestFromServer = fn(4656).joinRequestFromServer;
 const Constants = fn(1074);
 ({ AbortCodes: closure_7, Endpoints: closure_8 } = Constants);
 const size = fn(2);

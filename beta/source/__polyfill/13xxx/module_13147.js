@@ -1,34 +1,9 @@
 // Module ID: 13147
 // Function ID: 13148
-// Dependencies: []
-// Exports: isSentryRequestUrl
+// Dependencies: [1121]
 
 // Module 13147
+import registerAsset from "module_1121" /* 1121 */;
 
-export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
-  let dsn = getDsn;
-  if (getDsn) {
-    dsn = getDsn.getDsn();
-  }
-  let tunnel = getDsn;
-  if (getDsn) {
-    tunnel = getDsn.getOptions().tunnel;
-  }
-  let tmp2 = dsn && arr.includes(dsn.host);
-  if (!tmp2) {
-    let flag = false;
-    if (tunnel) {
-      let substr = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr = arr.slice(0, -1);
-      }
-      let substr1 = tunnel;
-      if ("/" === tunnel[tunnel.length - 1]) {
-        substr1 = tunnel.slice(0, -1);
-      }
-      flag = substr === substr1;
-    }
-    tmp2 = flag;
-  }
-  return tmp2;
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [1, 2, 3], hash: "62d7aa01daae8d1f045686e6148f0a24", name: "ic_add_18px", type: "png" });

@@ -1,17 +1,17 @@
-// Module ID: 3710
-// Function ID: 3711
-// Dependencies: [1119, 3711, 1154, 2]
+// Module ID: 3715
+// Function ID: 3716
+// Dependencies: [1119, 3716, 1154, 2]
 
-// Module 3710
+// Module 3715
 import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod3711 from "module_3711" /* 3711 */;
+import _mod3716 from "module_3716" /* 3716 */;
 import module_1154_mod from "module_1154" /* 1154 */;
 import size from "module_2" /* 2 */;
 
 let module_1154 = module_1154_mod;
 const loader = module_1154.createLoader({
   () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod3711);
+    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod3716);
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");

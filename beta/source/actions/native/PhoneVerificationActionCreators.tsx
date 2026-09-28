@@ -1,9 +1,9 @@
-// Module ID: 7353
-// Function ID: 7354
+// Module ID: 6497
+// Function ID: 6498
 // Name: PhoneVerificationActionCreators
 // Dependencies: [573, 2]
 
-// Module 7353 (PhoneVerificationActionCreators)
+// Module 6497 (PhoneVerificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

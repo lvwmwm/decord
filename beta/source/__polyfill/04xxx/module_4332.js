@@ -1,38 +1,42 @@
 // Module ID: 4332
 // Function ID: 4333
-// Dependencies: [3879]
+// Dependencies: [3922, 3918, 3919]
 // Exports: default
 
 // Module 4332
-import module_3879_mod from "module_3879" /* 3879 */;
+import module_3922_mod from "module_3922" /* 3922 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
-let module_3879 = module_3879_mod;
-if (!module_3879) {
-  const obj = { default: module_3879 };
+let module_3922 = module_3922_mod;
+if (!module_3922) {
+  const obj = { default: module_3922 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3879;
+  tmp3 = module_3922;
 }
-function checkWeek(getTime, getTime2, arg2) {
-  let str = "eeee p";
-  if (!module_3879.default(getTime, getTime2, arg2)) {
-    const time = getTime.getTime();
-    let str2 = "'\u4E0A\u4E2A'eeee p";
-    if (time > getTime2.getTime()) {
-      str2 = "'\u4E0B\u4E2A'eeee p";
-    }
-    str = str2;
-  }
-  return str;
+module_3922 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
 }
-module_3879 = tmp3;
-let closure_1 = { lastWeek: checkWeek, yesterday: "'\u6628\u5929' p", today: "'\u4ECA\u5929' p", tomorrow: "'\u660E\u5929' p", nextWeek: checkWeek, other: "PP p" };
+_typeof = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  let tmpResult = tmp;
-  if (typeof closure_1[arg0] === "function") {
-    tmpResult = tmp(arg1, arg2, arg3);
-  }
-  return tmpResult;
+export default function setDate(module_3922, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(module_3922);
+  defaultResult1.setDate(module_3922.default(arg1));
+  return defaultResult1;
 };
 export default exports.default;

@@ -1,17 +1,9 @@
 // Module ID: 14659
 // Function ID: 14660
-// Dependencies: [14657]
+// Dependencies: [1121]
 
 // Module 14659
-import _mod14657 from "module_14657" /* 14657 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1) => {
-  const tmp = _mod14657(arg0);
-  if (tmp < 0) {
-    let tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 375, height: 58, scales: [1, 2, 3], hash: "e5d497e242dfffadb8102108e8df2b1a", name: "clouds_background", type: "png" });

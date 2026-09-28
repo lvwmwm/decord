@@ -1,11 +1,11 @@
-// Module ID: 13411
-// Function ID: 13412
+// Module ID: 12663
+// Function ID: 12664
 // Name: useWishlistViewerCoachmark
-// Dependencies: [32, 19, 2027, 7662, 2]
+// Dependencies: [32, 19, 2029, 6806, 2]
 // Exports: useWishlistViewerCoachmark
 
-// Module 13411 (useWishlistViewerCoachmark)
-import dismissible_content from "dismissible_content" /* 2027 */;
+// Module 12663 (useWishlistViewerCoachmark)
+import dismissible_content from "dismissible_content" /* 2029 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

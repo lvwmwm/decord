@@ -1,13 +1,13 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 14869
+// Function ID: 14870
 // Name: ExactSearchResultCountsSetting
-// Dependencies: [8265, 1115, 11754, 2019, 2]
+// Dependencies: [7417, 1115, 11006, 2021, 2]
 
-// Module 15597 (ExactSearchResultCountsSetting)
+// Module 14869 (ExactSearchResultCountsSetting)
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

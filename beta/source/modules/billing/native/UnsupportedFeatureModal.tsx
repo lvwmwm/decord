@@ -1,11 +1,11 @@
-// Module ID: 11116
-// Function ID: 11117
+// Module ID: 10285
+// Function ID: 10286
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 7277, 5873, 4991, 4784, 1115, 2]
+// Dependencies: [19, 17, 21, 6421, 5936, 5039, 4832, 1115, 2]
 // Exports: default
 
-// Module 11116 (UnsupportedFeatureModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+// Module 10285 (UnsupportedFeatureModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -20,7 +20,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
   let obj2 = { Unsupported: null };
   const obj3 = {
     title: onDismiss.title,
-    headerLeft: onDismiss(5873).getHeaderCloseButton(() => {
+    headerLeft: onDismiss(5936).getHeaderCloseButton(() => {
       ModalActionCreatorsDefault.pop();
       if (onDismiss != null) {
         onDismiss();
@@ -31,11 +31,11 @@ export default function UnsupportedFeatureModal(onDismiss) {
       const obj2 = { variant: "text-lg/normal", color: "text-default", children: null };
       const intl = onDismiss(1115).intl;
       obj2.children = intl.string(onDismiss(1115).t.I22zuX);
-      obj.children = jsx(onDismiss(4784).Text, { variant: "text-lg/normal", color: "text-default", children: null });
+      obj.children = jsx(onDismiss(4832).Text, { variant: "text-lg/normal", color: "text-default", children: null });
       return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
     }
   };
   obj2.Unsupported = obj3;
   obj.screens = obj2;
-  return jsx(onDismiss(7277).Navigator, { initialRouteName: "Unsupported", screens: null });
+  return jsx(onDismiss(6421).Navigator, { initialRouteName: "Unsupported", screens: null });
 };

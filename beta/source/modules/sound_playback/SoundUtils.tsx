@@ -1,18 +1,18 @@
-// Module ID: 10197
-// Function ID: 10198
+// Module ID: 9357
+// Function ID: 9358
 // Name: SoundUtils
-// Dependencies: [10198, 4633, 9945, 3, 10200, 10201, 2]
+// Dependencies: [9358, 4679, 9106, 3, 9360, 9361, 2]
 // Exports: createSound, createSoundForPack, playSound
 
-// Module 10197 (SoundUtils)
+// Module 9357 (SoundUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import getSoundsForPackDefault from "getSoundsForPack" /* 10200 */;
-import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 10201 */;
-import SoundpackStore from "SoundpackStore" /* 10198 */;
-import StreamerModeStore from "StreamerModeStore" /* 4633 */;
+import getSoundsForPackDefault from "getSoundsForPack" /* 9360 */;
+import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 9361 */;
+import SoundpackStore from "SoundpackStore" /* 9358 */;
+import StreamerModeStore from "StreamerModeStore" /* 4679 */;
 
 require = fn;
-const SoundOutputChannel = fn(9945).SoundOutputChannel;
+const SoundOutputChannel = fn(9106).SoundOutputChannel;
 const logger = new LoggerDefault("SoundUtils");
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/sound_playback/SoundUtils.tsx");
@@ -39,7 +39,7 @@ export const createSoundForPack = function createSoundForPack(call_calling, soun
   const mobileAudioSound = new sound_playback_SoundUtils.MobileAudioSound(tmp3, call_calling, num, DEFAULT, false);
   return mobileAudioSound;
 };
-export const createSound = function createSound(stage_waiting, soundboard_sound, arg2) {
+export const createSound = function createSound(stage_waiting, vibing_wumpus, arg2) {
   let num = arg2;
   if (arg2 === undefined) {
     num = 1;
@@ -52,7 +52,7 @@ export const createSound = function createSound(stage_waiting, soundboard_sound,
   if (arg4 === undefined) {
     flag = false;
   }
-  const mobileAudioSound = new sound_playback_SoundUtils.MobileAudioSound(stage_waiting, soundboard_sound, num, DEFAULT, flag);
+  const mobileAudioSound = new sound_playback_SoundUtils.MobileAudioSound(stage_waiting, vibing_wumpus, num, DEFAULT, flag);
   return mobileAudioSound;
 };
 export const playSound = function playSound(arg0, arg1, arg2, arg3, outputChannel) {

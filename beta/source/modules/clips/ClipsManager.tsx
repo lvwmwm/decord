@@ -1,34 +1,34 @@
-// Module ID: 18267
-// Function ID: 18268
+// Module ID: 17632
+// Function ID: 17633
 // Name: clips/ClipsManager
-// Dependencies: [5, 4833, 502, 1992, 4811, 4827, 1998, 5380, 1074, 4830, 7395, 13969, 4843, 4840, 1241, 2019, 573, 13970, 4409, 1364, 13968, 2]
+// Dependencies: [5, 4881, 502, 1993, 4859, 4875, 1999, 5444, 1074, 4878, 6539, 13219, 4891, 4888, 1241, 2021, 573, 13220, 4450, 1364, 13218, 2]
 
-// Module 18267 (clips/ClipsManager)
+// Module 17632 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import DiscordNativeDefault from "DiscordNative" /* 4409 */;
-import StreamKeyUtilsAll from "StreamKeyUtils" /* 4840 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
-import isClipsEnabled from "isClipsEnabled" /* 13968 */;
-import ClipsExperiment from "ClipsExperiment" /* 13969 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13970 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import DiscordNativeDefault from "DiscordNative" /* 4450 */;
+import StreamKeyUtilsAll from "StreamKeyUtils" /* 4888 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
+import isClipsEnabled from "isClipsEnabled" /* 13218 */;
+import ClipsExperiment from "ClipsExperiment" /* 13219 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 13220 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4827 */;
-import ClipsStore from "ClipsStore" /* 1998 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4875 */;
+import ClipsStore from "ClipsStore" /* 1999 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
-const getSystemAnalyticsInfo = fn(4833).getSystemAnalyticsInfo;
-const ClipsConstants = fn(5380);
+const getSystemAnalyticsInfo = fn(4881).getSystemAnalyticsInfo;
+const ClipsConstants = fn(5444);
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_11, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: closure_12, CLIPS_HARDWARE_CLASSIFICATION_VERSION: map1, ClipsHardwareClassification: closure_14, CLIP_RUNTIME: closure_15 } = ClipsConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_16, RTCConnectionStates: closure_17 } = Constants);
-const StreamTypes = fn(4830).StreamTypes;
+const StreamTypes = fn(4878).StreamTypes;
 class ClipsManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -87,10 +87,10 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
     if (state.state === constants3.RTC_CONNECTED) {
       const self = this;
       const id = AuthenticationStore.getId();
-      if (tmp(4843).MediaEngineContextTypes.DEFAULT === context) {
+      if (tmp(4891).MediaEngineContextTypes.DEFAULT === context) {
         const result = self.applyUserVoiceRecording(id);
         const result1 = self.applyUserSoundboardRecording(id);
-      } else if (tmp(4843).MediaEngineContextTypes.STREAM === context) {
+      } else if (tmp(4891).MediaEngineContextTypes.STREAM === context) {
         if (null != streamKey) {
           if (tmpResult.decodeStreamKey(streamKey).ownerId === id) {
             const rTCConnection = StreamRTCConnectionStore.getRTCConnection(streamKey);
@@ -98,7 +98,7 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
               self.applyStreamRecording(id, rTCConnection);
             }
           }
-          tmpResult = tmp(4840);
+          tmpResult = tmp(4888);
         }
       }
     }

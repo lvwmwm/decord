@@ -1,18 +1,9 @@
 // Module ID: 17299
 // Function ID: 17300
-// Dependencies: [8736]
+// Dependencies: [1121]
 
 // Module 17299
-import _mod8736 from "module_8736" /* 8736 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default _mod8736((arg0, arg1, arg2) => {
-  let num = 1;
-  if (arg2) {
-    num = 0;
-  }
-  arg0[num].push(arg1);
-}, () => {
-  const items = [[], []];
-  return items;
-});
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "a17cd266a5cb265705b13e07d0e2871a", name: "ic_money_emoji_24px", type: "png" });

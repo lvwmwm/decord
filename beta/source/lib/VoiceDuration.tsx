@@ -1,11 +1,11 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 13364
+// Function ID: 13365
 // Name: VoiceDuration
-// Dependencies: [4817, 4859, 2]
+// Dependencies: [4865, 4907, 2]
 
-// Module 14118 (VoiceDuration)
-import TimeUtils from "TimeUtils" /* 4817 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4859 */;
+// Module 13364 (VoiceDuration)
+import TimeUtils from "TimeUtils" /* 4865 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4907 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = [1, 100, 1000, 10000];
@@ -234,6 +234,21 @@ prototype["stop"] = function stop() {
   this.noiseCancellation.value = false;
   this.spatialAudio.value = false;
   const speakingDurationMilestones = this.computeSpeakingDurationMilestones(this.connected.lastStartTime, this.speaking.lastStartTime, this.speaking.lastElapsed);
+};
+prototype["getDeprecatedDurationStats"] = function getDeprecatedDurationStats() {
+  const obj = { duration_listening: null, duration_speaking: null, duration_participation: null, duration_connected: null };
+  const listening = this.listening;
+  obj.duration_listening = Math.round(listening.elapsed().asSeconds());
+  const speaking = this.speaking;
+  const elapsedResult = listening.elapsed();
+  obj.duration_speaking = Math.round(speaking.elapsed().asSeconds());
+  const participation = this.participation;
+  const elapsedResult1 = speaking.elapsed();
+  obj.duration_participation = Math.round(participation.elapsed().asSeconds());
+  const connected = this.connected;
+  const elapsedResult2 = participation.elapsed();
+  obj.duration_connected = Math.round(connected.elapsed().asSeconds());
+  return obj;
 };
 prototype["getDurationStats"] = function getDurationStats() {
   const self = this;

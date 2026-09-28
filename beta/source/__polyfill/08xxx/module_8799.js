@@ -1,69 +1,9 @@
 // Module ID: 8799
 // Function ID: 8800
-// Dependencies: [42, 41, 93, 95, 98, 19]
+// Dependencies: [1121]
 
 // Module 8799
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let _classCallCheck = _classCallCheck_mod;
-class FilterPrimitive {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_0(this, FilterPrimitive);
-    items1 = [...items];
-    tmp2 = c2;
-    obj = c2(FilterPrimitive);
-    tmp3 = closure_1;
-    if (closure_3()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.root = null;
-    tmp3Result.refMethod = (root) => {
-      closure_0.root = root;
-    };
-    tmp3Result.setNativeProps = (arg0) => {
-      root = root.root;
-      if (root != null) {
-        root.setNativeProps(arg0);
-      }
-    };
-    return tmp3Result;
-  }
-}
-_classCallCheck = FilterPrimitive;
-_inherits(FilterPrimitive, fn(19).Component);
-const importDefaultResultResult = _createClass(FilterPrimitive);
-importDefaultResultResult.defaultPrimitiveProps = {};
 
-export default importDefaultResultResult;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/activities/images", width: 445, height: 482, scales: [1], hash: "578f09ddbff611181344fe43546bae68", name: "announcement_birb", type: "png" });

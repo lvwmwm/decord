@@ -1,17 +1,17 @@
-// Module ID: 12687
-// Function ID: 12688
+// Module ID: 11897
+// Function ID: 11898
 // Name: DescriptionEllipsis
-// Dependencies: [19, 17, 21, 4788, 576, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 2]
 // Exports: default
 
-// Module 12687 (DescriptionEllipsis)
+// Module 11897 (DescriptionEllipsis)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_1, jsxs: c2 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { topicEllipsis: null, topicEllipsisDot: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", flexDirection: "row", borderRadius: nativeDefault.radii.xs, marginTop: 4, height: 12, width: 24 };
 obj2.topicEllipsis = size;

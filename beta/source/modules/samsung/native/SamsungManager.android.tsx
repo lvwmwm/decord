@@ -1,9 +1,9 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 8518
+// Function ID: 8519
 // Name: SamsungManager
 // Dependencies: [17, 2]
 
-// Module 9363 (SamsungManager)
+// Module 8518 (SamsungManager)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

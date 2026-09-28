@@ -1,12 +1,12 @@
-// Module ID: 14237
-// Function ID: 14238
+// Module ID: 13483
+// Function ID: 13484
 // Name: GuildBadgeWind
-// Dependencies: [19, 21, 14216, 8760, 2]
+// Dependencies: [19, 21, 13462, 7909, 2]
 // Exports: GuildBadgeWind
 
-// Module 14237 (GuildBadgeWind)
-import inlineStyles from "inlineStyles" /* 8760 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14216 */;
+// Module 13483 (GuildBadgeWind)
+import inlineStyles from "inlineStyles" /* 7909 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13462 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

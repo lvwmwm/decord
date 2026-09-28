@@ -1,18 +1,18 @@
-// Module ID: 7991
-// Function ID: 7992
+// Module ID: 7136
+// Function ID: 7137
 // Name: QuestUtmStore
 // Dependencies: [560, 2]
 
-// Module 7991 (QuestUtmStore)
+// Module 7136 (QuestUtmStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
-let obj = module_560.create((arg0) => {
+const obj = module_560.create((arg0) => {
   const state = arg0;
-  obj = {
+  return {
     utmSourceCurrent: "r",
-    utmMediumCurrent: "ip",
-    utmCampaignCurrent: "fileFinishedImporting",
+    utmMediumCurrent: "disabled",
+    utmCampaignCurrent: "code",
     utmContentCurrent: "isArray",
     setUtmCurrentContext(utmSourceCurrent) {
       return state({ utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent });
@@ -21,7 +21,6 @@ let obj = module_560.create((arg0) => {
       return state.getState();
     }
   };
-  return obj;
 });
 const result = size.fileFinishedImporting("modules/quests/QuestUtmStore.tsx");
 

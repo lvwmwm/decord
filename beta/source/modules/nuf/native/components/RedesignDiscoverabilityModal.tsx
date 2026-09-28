@@ -1,15 +1,15 @@
-// Module ID: 17862
-// Function ID: 17863
+// Module ID: 17221
+// Function ID: 17222
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 12959, 1372, 1074, 21, 4788, 576, 5931, 1484, 504, 12966, 1094, 17863, 12986, 12979, 1249, 12978, 7277, 1115, 2]
+// Dependencies: [19, 17, 12174, 1372, 1074, 21, 4836, 576, 5994, 1485, 504, 12181, 1094, 17222, 12201, 12194, 1249, 12193, 6421, 1115, 2]
 
-// Module 17862 (RedesignDiscoverabilityModal)
+// Module 17221 (RedesignDiscoverabilityModal)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12966 */;
-import SkipHeaderButtonDefault from "SkipHeaderButton" /* 12978 */;
-import NUFActionCreators from "NUFActionCreators" /* 12986 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12181 */;
+import SkipHeaderButtonDefault from "SkipHeaderButton" /* 12193 */;
+import NUFActionCreators from "NUFActionCreators" /* 12201 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -78,7 +78,7 @@ function DiscoverabilityNameScene(onComplete) {
     name = "";
   }
   obj2.initialName = name;
-  obj.children = jsx(allowPhone(12979), { onNext: callback, loading: false, initialName: null });
+  obj.children = jsx(allowPhone(12194), { onNext: callback, loading: false, initialName: null });
   return <tmp6 style={tmp.container}>{null}</tmp6>;
 }
 class RedesignDiscoverabilityModal {
@@ -158,12 +158,12 @@ class RedesignDiscoverabilityModal {
   }
 }
 const View = fn(17).View;
-const useContactSyncModalStore = fn(12959).useContactSyncModalStore;
+const useContactSyncModalStore = fn(12174).useContactSyncModalStore;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { header: { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" }, container: null };
 const obj3 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
-obj2.container = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: fn(5931).NAV_BAR_HEIGHT + 32 };
+obj2.container = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: fn(5994).NAV_BAR_HEIGHT + 32 };
 const React6 = createStyles.createStyles(obj2);
 RedesignDiscoverabilityModal.modalConfig = { animation: fn(1074).ModalAnimation.SLIDE_IN_OUT };
 const size = fn(2);

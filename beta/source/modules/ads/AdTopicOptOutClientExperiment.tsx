@@ -1,11 +1,11 @@
-// Module ID: 16185
-// Function ID: 16186
+// Module ID: 15474
+// Function ID: 15475
 // Name: AdTopicOptOutClientExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: isAdTopicOptOutClientEnabled, useIsAdTopicOptOutClientEnabled
 
-// Module 16185 (AdTopicOptOutClientExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 15474 (AdTopicOptOutClientExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-08-ad-topic-opt-out-client", defaultConfig: { enabled: false }, variations: null };

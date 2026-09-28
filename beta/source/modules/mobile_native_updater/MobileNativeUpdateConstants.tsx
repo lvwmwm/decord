@@ -1,11 +1,11 @@
-// Module ID: 4769
-// Function ID: 4770
+// Module ID: 4814
+// Function ID: 4815
 // Name: MobileNativeUpdateConstants
-// Dependencies: [4380, 1364, 1366, 1363, 2]
+// Dependencies: [4421, 1364, 1366, 1363, 2]
 
-// Module 4769 (MobileNativeUpdateConstants)
+// Module 4814 (MobileNativeUpdateConstants)
 import URLUtilsDefault from "URLUtils" /* 1366 */;
-import hooks from "module_4380" /* 4380 */;
+import hooks from "module_4421" /* 4421 */;
 
 let tmp3 = null;
 if (undefined !== process.env.INTERNAL_UPDATE_URL) {

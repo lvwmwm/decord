@@ -1,19 +1,19 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 14556
+// Function ID: 14557
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 5693, 1074, 11575, 11770, 15298, 1110, 5698, 7996, 11780, 7986, 5700, 15295, 2]
+// Dependencies: [19, 5756, 1074, 10687, 10711, 14554, 1110, 5761, 7141, 10719, 7131, 5763, 14551, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 15300 (useBountyPauseAppStoreSheet)
+// Module 14556 (useBountyPauseAppStoreSheet)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import AdCreativeType from "AdCreativeType" /* 5700 */;
-import AnalyticsActions from "AnalyticsActions" /* 7986 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15298 */;
+import AdCreativeType from "AdCreativeType" /* 5763 */;
+import AnalyticsActions from "AnalyticsActions" /* 7131 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14551 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 14554 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5693).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5756).QuestsExperimentLocations;
 const ComponentActions = fn(1074).ComponentActions;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyPauseAppStoreSheet.tsx");
@@ -64,7 +64,7 @@ export const useBountyPauseAppStoreSheet = function useBountyPauseAppStoreSheet(
   }, []);
   const items2 = [callback];
   const effect2 = isActive.useEffect(() => () => callback(), items2);
-  const items3 = [bounty, getQuestImpressionId, playerRef, sourceQuestContent, callback];
+  const items3 = [bounty, getQuestImpressionId, playerRef, sourceQuestContent, callback, tmp5];
   callback1 = isActive.useCallback(() => {
     let trackingCtx = { content: bounty(sourceQuestContent[7]).QuestContent.VIDEO_MODAL_MOBILE, ctaContent: bounty(sourceQuestContent[8]).QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
     const directAppStoreLinkFromCta = bounty(sourceQuestContent[9]).getDirectAppStoreLinkFromCta(trackingCtx.cta);
@@ -75,7 +75,7 @@ export const useBountyPauseAppStoreSheet = function useBountyPauseAppStoreSheet(
     if (directAppStoreLinkFromCta == null) {
       url = tmp3.cta.url;
     }
-    const obj4 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null, trackOverlaySurfaceClick: null };
+    const obj4 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null, trackOverlaySurfaceClick: null, appStoreOverlayCarouselScrollContext: null };
     const obj3 = bounty(sourceQuestContent[9]);
     obj4.inlineStoreParams = tmp(tmp2[9]).getInlineStoreParamsFromCta(trackingCtx.cta);
     obj4.trackOverlayEvent = function trackOverlayEvent(event, inlineStoreAppId, overlayVariant, timeSpentMs, overlaySurface) {
@@ -86,15 +86,22 @@ export const useBountyPauseAppStoreSheet = function useBountyPauseAppStoreSheet(
       trackingCtx = AnalyticsActions;
       return trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: bounty.id, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, trackingCtx, overlaySurface });
     };
+    obj4.appStoreOverlayCarouselScrollContext = { adContentId: trackingCtx.id };
     const tmpResult = tmp(tmp2[9]);
     return obj3.openAppStoreOrUrl(obj4).then((result) => {
       if (result) {
-        const current = ref.current;
+        let current = ref.current;
         if (current != null) {
           current.pause();
         }
         function handleFinished() {
           closure_1_8();
+          if (!tmp5) {
+            const current = ref.current;
+            if (current != null) {
+              current.play();
+            }
+          }
         }
         callback();
         const ComponentDispatch = bounty(sourceQuestContent[6]).ComponentDispatch;
@@ -112,7 +119,7 @@ export const useBountyPauseAppStoreSheet = function useBountyPauseAppStoreSheet(
     if (isActive) {
       if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
         if (null != c5) {
-          if (tmp4 === tmp2(11575).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+          if (tmp4 === tmp2(10687).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
             if (!ref.current) {
               tmp8.current = true;
               callback1().then((result) => {

@@ -1,26 +1,26 @@
-// Module ID: 17398
-// Function ID: 17399
+// Module ID: 16748
+// Function ID: 16749
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1372, 2038, 21, 4788, 576, 504, 4446, 4755, 7427, 17399, 1177, 10260, 4784, 1115, 5218, 13749, 2]
+// Dependencies: [19, 17, 1372, 2042, 21, 4836, 576, 504, 4488, 4800, 6571, 16749, 1177, 9419, 4832, 1115, 5281, 12995, 2]
 // Exports: default
 
-// Module 17398 (AppIconsCoachmark)
+// Module 16748 (AppIconsCoachmark)
 import nativeDefault from "native" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import _modDef10260 from "module_10260" /* 10260 */;
-import AppIconUtils from "AppIconUtils" /* 13749 */;
-import _modDef17399 from "module_17399" /* 17399 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import _modDef9419 from "module_9419" /* 9419 */;
+import AppIconUtils from "AppIconUtils" /* 12995 */;
+import _modDef16749 from "module_16749" /* 16749 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { padding: nativeDefault.space.PX_16, paddingBottom: 0 }, info: { alignItems: "center" }, image: { alignSelf: "center", marginBottom: 20 }, nitroWheel: { marginRight: 8 }, titleContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, subtitle: { marginTop: 8, textAlign: "center" }, footer: null };
 let obj3 = { padding: nativeDefault.space.PX_16, paddingBottom: 0 };
 obj2.footer = { marginTop: 20, gap: nativeDefault.space.PX_8 };
@@ -50,14 +50,14 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   const obj4 = { style: tmp.info, children: null };
   const isPremiumResult = PremiumUtilsDefault.isPremium(stateFromStores);
-  const items2 = [closure_8(closure_4, { source: _modDef17399, style: tmp.image }), , ];
+  const items2 = [closure_8(closure_4, { source: _modDef16749, style: tmp.image }), , ];
   const obj6 = { style: tmp.titleContainer, children: null };
-  const obj5 = { source: _modDef17399, style: tmp.image };
-  const items3 = [closure_8(markAsDismissed(1177).Icon, { source: _modDef10260, size: markAsDismissed(1177).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
+  const obj5 = { source: _modDef16749, style: tmp.image };
+  const items3 = [closure_8(markAsDismissed(1177).Icon, { source: _modDef9419, size: markAsDismissed(1177).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
   const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1115).intl;
   obj8.children = intl.string(markAsDismissed(1115).t.EfA4Cq);
-  items3[1] = closure_8(markAsDismissed(4784).Text, obj8);
+  items3[1] = closure_8(markAsDismissed(4832).Text, obj8);
   obj6.children = items3;
   items2[1] = closure_9(closure_5, obj6);
   const obj9 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: null };
@@ -70,7 +70,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     stringResult = string(t.D0XzaS);
   }
   obj9.children = stringResult;
-  items2[2] = closure_8(markAsDismissed(4784).Text, obj9);
+  items2[2] = closure_8(markAsDismissed(4832).Text, obj9);
   obj4.children = items2;
   const items4 = [closure_9(closure_5, obj4), ];
   const obj10 = { style: tmp.footer, children: null };
@@ -84,14 +84,14 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     }
     const result = AppIconUtils.navigateToAppIconSettings();
   };
-  const items5 = [closure_8(markAsDismissed(5218).Button, obj11), ];
+  const items5 = [closure_8(markAsDismissed(5281).Button, obj11), ];
   const obj12 = { variant: "secondary", text: null, onPress: null };
   const intl4 = tmp2(1115).intl;
   obj12.text = intl4.string(markAsDismissed(1115).t.iSrIIZ);
   obj12.onPress = callback;
-  items5[1] = closure_8(markAsDismissed(5218).Button, obj12);
+  items5[1] = closure_8(markAsDismissed(5281).Button, obj12);
   obj10.children = items5;
   items4[1] = closure_9(closure_5, obj10);
   obj3.children = items4;
-  return closure_9(markAsDismissed(7427).BottomSheet, obj3);
+  return closure_9(markAsDismissed(6571).BottomSheet, obj3);
 };

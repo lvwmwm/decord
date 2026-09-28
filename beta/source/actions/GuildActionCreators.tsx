@@ -1,30 +1,30 @@
-// Module ID: 5769
-// Function ID: 5770
+// Module ID: 5832
+// Function ID: 5833
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 5770, 502, 5688, 2096, 2063, 2095, 4609, 1372, 1074, 1099, 5140, 1115, 573, 5771, 1271, 5774, 7372, 1980, 7488, 7489, 7494, 7521, 7595, 4981, 1249, 7596, 4432, 1086, 7597, 4469, 1241, 7601, 1101, 4998, 7603, 2]
+// Dependencies: [109, 5, 5833, 502, 5751, 4467, 2067, 2099, 4655, 1372, 1074, 1099, 5203, 1115, 573, 5834, 1271, 5837, 6516, 1981, 6632, 6633, 6638, 6665, 6740, 5029, 1249, 4474, 1086, 6741, 4511, 1241, 6745, 1101, 5046, 6747, 2]
 
-// Module 5769 (GuildActionCreators)
+// Module 5832 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4981 */;
-import AgeGateUtils from "AgeGateUtils" /* 4998 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7595 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7597 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7601 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5029 */;
+import AgeGateUtils from "AgeGateUtils" /* 5046 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 6740 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 6741 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 6745 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 5770 */;
+import BulkBanStore from "BulkBanStore" /* 5833 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5688 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5751 */;
+import GuildChannelStore from "GuildChannelStore" /* 4467 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -89,7 +89,7 @@ let closure_26 = async function _joinGuild(arg0, value) {
           closure_131_12 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -527,18 +527,9 @@ export default {
     const obj = { url: value2.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: HTTPUtils.rejectWithMigratedError() };
     return HTTP.del(obj);
   },
-  banMultipleUsers(arg0, user_ids, delete_message_seconds, reason, usePubSub) {
-    let flag = usePubSub;
-    if (usePubSub === undefined) {
-      flag = false;
-    }
+  banMultipleUsers(arg0, user_ids, delete_message_seconds, reason) {
     const HTTP = HTTPUtils.HTTP;
-    if (flag) {
-      let BULK_GUILD_BAN_V2Result = obj.BULK_GUILD_BAN_V2(arg0);
-    } else {
-      BULK_GUILD_BAN_V2Result = obj.BULK_GUILD_BAN(arg0);
-    }
-    const request = { url: BULK_GUILD_BAN_V2Result, body: { user_ids, delete_message_seconds }, reason, oldFormErrors: true, rejectWithError: HTTPUtils.rejectWithMigratedError() };
+    const request = { url: value2.BULK_GUILD_BAN_V2(arg0), body: { user_ids, delete_message_seconds }, reason, oldFormErrors: true, rejectWithError: HTTPUtils.rejectWithMigratedError() };
     return HTTP.post(request);
   },
   startBulkBan(arg0, arg1, arg2, arg3) {
@@ -548,8 +539,8 @@ export default {
     closure_3 = arg3;
     const self = this;
     return (async (arg0, value) => {
-      if (c6 === 2) {
-        c6 = 3;
+      if (c4 === 2) {
+        c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp6 === 3) {
         if (arg0 === 1) {
@@ -562,95 +553,55 @@ export default {
         }
       } else {
         try {
-          c6 = 2;
-          if (0 === c5) {
+          c4 = 2;
+          if (0 === v2) {
             if (arg0 === 1) {
-              c6 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
             } else {
-              closure_2 = tmp3;
-              closure_1 = tmp7;
-              closure_129_0 = undefined;
-              closure_129_1 = undefined;
-              closure_129_2 = undefined;
-              let banned_users;
-              closure_129_4 = undefined;
-              let failed_users;
-              closure_129_6 = undefined;
-              const usePubSub = closure_1(tmp45[27]).getConfig({ location: "startBulkBan" }).usePubSub;
-              closure_129_0 = usePubSub;
+              closure_0 = tmp3;
+              dependencyMap = 1;
+              v2 = 2;
               c4 = 1;
-              c5 = 2;
-              c6 = 1;
-              const obj5 = { value: self.banMultipleUsers(closure_0, closure_1, closure_2, tmp45, usePubSub), done: false };
+              const obj5 = { value: self.banMultipleUsers(closure_0, closure_1, closure_2, closure_3), done: false };
               return obj5;
             }
           } else {
             if (1 === tmp7) {
-              c4 = 0;
-              const obj6 = { type: "GUILD_BULK_BAN_FAILED", guildId: closure_130_0 };
-              closure_1(tmp45[14]).dispatch(obj6);
-              c6 = 3;
-              const obj7 = closure_1(tmp45[14]);
+              dependencyMap = 0;
+              const obj6 = { type: "GUILD_BULK_BAN_FAILED", guildId: closure_128_0 };
+              v2(573).dispatch(obj6);
+              c4 = 3;
+              const obj4 = v2(573);
             } else if (arg0 === 1) {
-              c6 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c4 = 0;
-              c6 = 3;
-              const obj8 = { value, done: true };
-              return obj8;
-            } else {
-              closure_129_1 = value;
-              if (!closure_129_0) {
-                const obj9 = { type: "GUILD_BULK_BAN_STARTED", guildId: closure_130_0 };
-                closure_1(tmp45[14]).dispatch(obj9);
-                if (closure_129_0) {
-                  c4 = 0;
-                } else {
-                  const body = closure_129_1.body;
-                  closure_0 = body;
-                  if (body == null) {
-                    closure_0 = {};
-                  }
-                  closure_129_2 = closure_0;
-                  banned_users = closure_129_2.banned_users;
-                  if (undefined === banned_users) {
-                    let items = [];
-                  } else {
-                    items = banned_users;
-                  }
-                  closure_129_4 = items;
-                  failed_users = closure_129_2.failed_users;
-                  if (undefined === failed_users) {
-                    let items1 = [];
-                  } else {
-                    items1 = failed_users;
-                  }
-                  closure_129_6 = items1;
-                  const obj10 = { type: "GUILD_BULK_BAN_UPDATE", guildId: closure_130_0, bulkBan: null };
-                  const obj11 = { bannedUsers: closure_129_4, failedUsers: closure_129_6, targetUserIds: closure_130_1 };
-                  obj10.bulkBan = obj11;
-                  closure_1(tmp45[14]).dispatch(obj10);
-                  const obj3 = closure_1(tmp45[14]);
-                }
-                const obj = closure_1(tmp45[14]);
-              }
+              dependencyMap = 0;
+              c4 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else if (!BulkBanStore.consumeCompletedBeforeStarted(closure_128_0, id.getId())) {
+              const obj8 = { type: "GUILD_BULK_BAN_STARTED", guildId: closure_128_0 };
+              v2(573).dispatch(obj8);
+              dependencyMap = 0;
+              const obj = v2(573);
             }
-            c4 = 0;
-            c6 = 3;
+            dependencyMap = 0;
+            c4 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp45) {
-          if (tmp4 === c4) {
-            c6 = tmp2;
-            throw tmp45;
+        } catch (tmp25) {
+          closure_2 = tmp25;
+          if (tmp4 === dependencyMap) {
+            c4 = tmp2;
+            throw tmp25;
           } else {
-            c5 = tmp;
+            v2 = tmp;
           }
         }
       }
@@ -718,7 +669,7 @@ export default {
                 obj6 = { primary_color, secondary_color: null, tertiary_color: null };
               }
               obj5.colors = obj6;
-              obj5.permissions = primary_color(4432).NONE;
+              obj5.permissions = primary_color(4474).NONE;
               c6 = 1;
               const HTTP = color(1271).HTTP;
               const request = { url: closure_1_16.GUILD_ROLES(closure_0), oldFormErrors: true, body: obj5, rejectWithError: color(1271).rejectWithMigratedError() };
@@ -730,7 +681,7 @@ export default {
           } else if (1 === tmp7) {
             c6 = 0;
             closure_131_2 = closure_5;
-            const tmp30 = new obj6(4469)(closure_131_2);
+            const tmp30 = new obj6(4511)(closure_131_2);
             throw tmp30;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -750,7 +701,7 @@ export default {
               obj6(573).dispatch(obj10);
               const obj = obj6(573);
             }
-            const result = obj6(7597).checkGuildTemplateDirty(closure_132_0);
+            const result = obj6(6741).checkGuildTemplateDirty(closure_132_0);
             c6 = 0;
             c8 = 3;
             const obj11 = { value: body, done: true };
@@ -788,7 +739,7 @@ export default {
       request.body = obj4;
       request.rejectWithError = tmp5(1271).rejectWithMigratedError();
       closure_128_0 = await HTTP.patch(request);
-      const result = tmp2(7597).checkGuildTemplateDirty(closure_129_0);
+      const result = tmp2(6741).checkGuildTemplateDirty(closure_129_0);
       return closure_128_0;
     })();
   },
@@ -813,7 +764,7 @@ export default {
       const HTTP = tmp5(1271).HTTP;
       const request = { url: closure_1_16.GUILD_CHANNELS(tmp5), body, oldFormErrors: true, rejectWithError: tmp5(1271).rejectWithMigratedError() };
       closure_128_0 = await HTTP.patch(request);
-      const result = body(7597).checkGuildTemplateDirty(closure_129_0);
+      const result = body(6741).checkGuildTemplateDirty(closure_129_0);
       return closure_128_0;
     })();
   },
@@ -825,7 +776,7 @@ export default {
       const HTTP = tmp5(1271).HTTP;
       const request = { url: closure_1_16.GUILD_ROLES(tmp5), body, oldFormErrors: true, rejectWithError: tmp5(1271).rejectWithMigratedError() };
       closure_128_0 = await HTTP.patch(request);
-      const result = body(7597).checkGuildTemplateDirty(closure_129_0);
+      const result = body(6741).checkGuildTemplateDirty(closure_129_0);
       return closure_128_0;
     })();
   },
@@ -938,7 +889,7 @@ export default {
               tmp11(1101).transitionTo(__initData.CHANNEL(guildId, defaultChannel.id));
               const tmp11Result2 = tmp11(1101);
             }
-            tmp11Result = tmp11(7603);
+            tmp11Result = tmp11(6747);
           }
           obj3 = AgeGateUtils;
         }

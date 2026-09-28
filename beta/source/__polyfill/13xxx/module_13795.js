@@ -1,9 +1,29 @@
 // Module ID: 13795
 // Function ID: 13796
-// Dependencies: [1121]
+// Dependencies: [13796]
 
 // Module 13795
-import registerAsset from "module_1121" /* 1121 */;
+import module_13796_mod from "module_13796" /* 13796 */;
 
+const call = prototype.call;
+let module_13796 = module_13796_mod;
+if (module_13796) {
+  const bind = prototype.bind;
+  module_13796 = bind.bind(call, call);
+}
+if (!module_13796) {
+  module_13796 = (arg0) => {
+    closure_0 = arg0;
+    return () => {
+      const apply = call.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(tmp2);
+      } else {
+        applyArgumentsResult = apply(tmp2, arguments);
+      }
+      return applyArgumentsResult;
+    };
+  };
+}
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 16, height: 16, scales: [2, 3], hash: "3b34529117c1d3db6d78cba92e0c94bb", name: "member_list_badge_16px", type: "png" });
+export default module_13796;

@@ -1,16 +1,12 @@
 // Module ID: 3997
 // Function ID: 3998
-// Dependencies: [2114]
+// Dependencies: []
+// Exports: default
 
 // Module 3997
-import module_2114 from "module_2114" /* 2114 */;
+let closure_0 = { lastWeek: "'\uC9C0\uB09C' eeee p", yesterday: "'\uC5B4\uC81C' p", today: "'\uC624\uB298' p", tomorrow: "'\uB0B4\uC77C' p", nextWeek: "'\uB2E4\uC74C' eeee p", other: "P" };
 
-if (!module_2114) {
-  const obj2 = { default: module_2114 };
-  let obj = obj2;
-} else {
-  obj = module_2114;
-}
-
-export default { date: obj.default({ formats: { full: "EEEE, d MMMM y '\u0433.'", long: "d MMMM y '\u0433.'", medium: "d MMM y '\u0433.'", short: "dd.MM.y" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "H:mm:ss zzzz", long: "H:mm:ss z", medium: "H:mm:ss", short: "H:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { any: "{{date}}, {{time}}" }, defaultWidth: "any" }) };
+export default function formatRelative(arg0, arg1, arg2, arg3) {
+  return closure_0[arg0];
+};
 export default exports.default;

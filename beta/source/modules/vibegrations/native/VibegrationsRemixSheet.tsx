@@ -1,24 +1,24 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 16253
+// Function ID: 16254
 // Name: VibegrationsRemixSheet
-// Dependencies: [5, 32, 19, 17, 2063, 5687, 21, 4788, 576, 504, 5306, 1115, 3710, 7472, 16951, 4755, 7474, 7426, 5936, 5854, 4784, 5218, 2]
+// Dependencies: [5, 32, 19, 17, 2067, 5750, 21, 4836, 576, 504, 5370, 1115, 3715, 6616, 16254, 4800, 6618, 6570, 5999, 5917, 4832, 5281, 2]
 // Exports: default
 
-// Module 16950 (VibegrationsRemixSheet)
+// Module 16253 (VibegrationsRemixSheet)
 import nativeDefault from "native" /* 576 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7472 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6616 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import SortedGuildStore from "SortedGuildStore" /* 5687 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const VibegrationsRemixSheet = "VibegrationsRemixSheet";
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { content: { gap: nativeDefault.space.PX_16 } };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -122,7 +122,7 @@ export default function VibegrationsRemixSheet(project) {
               _undefined(null);
               dependencyMap = 1;
               c3 = 1;
-              const obj5 = { value: tmp2(16951).remixVibegrationsProjectInto(project, first), done: false };
+              const obj5 = { value: tmp2(16254).remixVibegrationsProjectInto(project, first), done: false };
               return obj5;
             }
           }
@@ -140,7 +140,7 @@ export default function VibegrationsRemixSheet(project) {
             closure_129_5(false);
           }
         }
-        tmp5(4755).hideActionSheet(VibegrationsRemixSheet);
+        tmp5(4800).hideActionSheet(VibegrationsRemixSheet);
         closure_129_1(closure_128_0.projectId, closure_129_2);
         c3 = 3;
         const obj7 = { value: undefined, done: true };

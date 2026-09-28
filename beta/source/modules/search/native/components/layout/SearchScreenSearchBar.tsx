@@ -1,22 +1,22 @@
-// Module ID: 17101
-// Function ID: 17102
+// Module ID: 16441
+// Function ID: 16442
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 4788, 4494, 6899, 1875, 17102, 17104, 17109, 2]
+// Dependencies: [19, 17, 21, 4836, 4536, 6043, 1876, 16442, 16444, 16449, 2]
 
-// Module 17101 (SearchScreenSearchBar)
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import mergeProps from "mergeProps" /* 4494 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6899 */;
-import layout_SearchBarDefault from "layout/SearchBar" /* 17102 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 17104 */;
-import SearchFilterButtonDefault from "SearchFilterButton" /* 17109 */;
+// Module 16441 (SearchScreenSearchBar)
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
+import mergeProps from "mergeProps" /* 4536 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6043 */;
+import layout_SearchBarDefault from "layout/SearchBar" /* 16442 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 16444 */;
+import SearchFilterButtonDefault from "SearchFilterButton" /* 16449 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/components/layout/SearchScreenSearchBar.tsx");
@@ -24,7 +24,6 @@ let result = size.fileFinishedImporting("modules/search/native/components/layout
 export default noop.memo(noop.forwardRef((arg0, arg1) => {
   ({ searchContext, backButton } = arg0);
   closure_0 = arg1;
-  ({ onSuggestionsLayoutMesure, suggestionsDismissed, setSuggestionsDismissed } = arg0);
   const tmp = closure_7();
   importDefault = noop.useRef(null);
   const items = [arg1];
@@ -58,9 +57,9 @@ export default noop.memo(noop.forwardRef((arg0, arg1) => {
   items1[1] = headerWithBackButton;
   const items2 = [backButton, , ];
   const obj2 = { style: tmp.headerSearch, children: null };
-  const items3 = [closure_5(layout_SearchBarDefault, { ref: memo, searchContext, setSuggestionsDismissed }), ];
+  const items3 = [closure_5(layout_SearchBarDefault, { ref: memo, searchContext }), ];
   const obj3 = { style: tmp.suggestionsAnchor, children: null };
-  const obj4 = { searchContext, onLayoutMeasure: onSuggestionsLayoutMesure, dismissed: suggestionsDismissed, containerStyle: null };
+  const obj4 = { searchContext, containerStyle: null };
   const items4 = [tmp.suggestions, ];
   let suggestionsWithBackButton = null != backButton;
   if (suggestionsWithBackButton) {

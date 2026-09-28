@@ -1,22 +1,22 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 11660
+// Function ID: 11661
 // Name: AppLauncherMentionableOption
-// Dependencies: [32, 19, 4780, 2099, 1372, 1085, 21, 4788, 576, 504, 12461, 11210, 12462, 1177, 12463, 12464, 12458, 4755, 12462, 1980, 2]
+// Dependencies: [32, 19, 4825, 2102, 1372, 1085, 21, 4836, 576, 504, 11661, 10378, 11662, 1177, 11663, 11664, 11658, 4800, 11662, 1981, 2]
 // Exports: default
 
-// Module 12460 (AppLauncherMentionableOption)
+// Module 11660 (AppLauncherMentionableOption)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import UserCircleIcon from "UserCircleIcon" /* 11210 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12461 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12462 */;
-import UsernameTextDefault from "UsernameText" /* 12464 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import UserCircleIcon from "UserCircleIcon" /* 10378 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11661 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11662 */;
+import UsernameTextDefault from "UsernameText" /* 11664 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -33,21 +33,21 @@ function MentionableIcon(mentionable) {
     return tmp7;
   } else {
     const type = mentionable.type;
-    if (tmp2(12462).MentionableItemTypes.USER === type) {
+    if (tmp2(11662).MentionableItemTypes.USER === type) {
       const obj3 = { user: mentionable.result.user, guildId: mentionable.guildId, animate: !stateFromStores, size: tmp2(1177).AvatarSizes.REFRESH_MEDIUM_32 };
       return tmp5(tmp2(1177).Avatar, obj3);
-    } else if (tmp2(12462).MentionableItemTypes.ROLE === type) {
+    } else if (tmp2(11662).MentionableItemTypes.ROLE === type) {
       const obj4 = { role: mentionable.result };
-      return tmp5(tmp2(12463).RoleIcon, obj4);
+      return tmp5(tmp2(11663).RoleIcon, obj4);
     } else {
-      const GLOBAL = tmp2(12462).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(11662).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
 }
 const StatusTypes = fn(1085).StatusTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { iconWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE } };
 let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -107,9 +107,9 @@ export default function AppLauncherMentionableOption(option) {
       if (AppLauncherMentionableListActionSheet.MentionableItemTypes.USER === type) {
         const obj = { guildId: guild_id, user: tmp.result.user };
         return jsx(UsernameTextDefault, { guildId: guild_id, user: tmp.result.user });
-      } else if (tmp5(12462).MentionableItemTypes.ROLE === type) {
+      } else if (tmp5(11662).MentionableItemTypes.ROLE === type) {
         return tmp.result.name;
-      } else if (tmp5(12462).MentionableItemTypes.GLOBAL === type) {
+      } else if (tmp5(11662).MentionableItemTypes.GLOBAL === type) {
         return tmp.result.text;
       }
     }
@@ -126,7 +126,7 @@ export default function AppLauncherMentionableOption(option) {
       tmp();
     }
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(12462, dependencyMap.paths), AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, {
+    obj.openLazy(asyncRequireImpl(11662, dependencyMap.paths), AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, {
       option,
       channel,
       onMentionablePress(mentionable) {

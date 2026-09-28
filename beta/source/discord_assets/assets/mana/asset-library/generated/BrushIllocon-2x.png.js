@@ -1,8 +1,8 @@
-// Module ID: 6083
-// Function ID: 6084
+// Module ID: 11973
+// Function ID: 11974
 // Dependencies: [2]
 
-// Module 6083
+// Module 11973
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BrushIllocon-2x.png.js");

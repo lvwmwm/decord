@@ -1,19 +1,19 @@
-// Module ID: 13969
-// Function ID: 13970
+// Module ID: 13219
+// Function ID: 13220
 // Name: ClipsExperiment
-// Dependencies: [1992, 1372, 1374, 1434, 13970, 504, 4446, 2]
+// Dependencies: [1993, 1372, 1374, 1435, 13220, 504, 4488, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 13969 (ClipsExperiment)
+// Module 13219 (ClipsExperiment)
 import initialize from "initialize" /* 504 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13970 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 13220 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const PremiumTypes = fn(1374).PremiumTypes;
-const ApexExperiment = fn(1434);
+const ApexExperiment = fn(1435);
 const obj2 = { kind: "user", name: "2026-03-clips-experiment", defaultConfig: { enableClips: false, ignorePlatformRestriction: false }, variations: null };
 const obj3 = { 1: null, 2: { enableClips: true, ignorePlatformRestriction: false } };
 obj3[2] = { enableClips: true, ignorePlatformRestriction: true };

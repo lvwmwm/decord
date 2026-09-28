@@ -1,14 +1,14 @@
-// Module ID: 7387
-// Function ID: 7388
+// Module ID: 6531
+// Function ID: 6532
 // Name: ReadStateActionCreators
-// Dependencies: [5755, 2045, 2041, 7388, 1372, 1074, 573, 11, 2]
+// Dependencies: [5818, 2049, 2045, 6532, 1372, 1074, 573, 11, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 7387 (ReadStateActionCreators)
+// Module 6531 (ReadStateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5755 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7388 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5818 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6532 */;
 import UserStore from "UserStore" /* 1372 */;
 
 function ack(channelId, location, arg2, arg3, messageId) {
@@ -59,7 +59,7 @@ function ackCategory(id, location, arg2, arg3) {
     }
   }
 }
-const isReadableType = fn(2045).isReadableType;
+const isReadableType = fn(2049).isReadableType;
 const CURRENT_APP_CONTEXT = fn(1074).CURRENT_APP_CONTEXT;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/ReadStateActionCreators.tsx");

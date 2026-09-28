@@ -1,19 +1,19 @@
-// Module ID: 14934
-// Function ID: 14935
+// Module ID: 14184
+// Function ID: 14185
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7831, 7822, 1074, 21, 4788, 576, 8487, 8471, 7439, 7459, 1241, 8472, 8468, 8465, 7427, 4784, 1115, 8473, 11030, 504, 14935, 8467, 8488, 14936, 13507, 13508, 8474, 11405, 5230, 2]
+// Dependencies: [32, 19, 17, 6977, 6968, 1074, 21, 4836, 576, 7631, 7615, 6583, 6603, 1241, 7616, 7612, 7609, 6571, 4832, 1115, 7617, 10198, 504, 14185, 7611, 7632, 14186, 12747, 12748, 7618, 10571, 5293, 2]
 // Exports: default
 
-// Module 14934 (EditProfileEffectActionSheet)
+// Module 14184 (EditProfileEffectActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import useShopProductItems from "useShopProductItems" /* 8472 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8488 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 14936 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
+import useShopProductItems from "useShopProductItems" /* 7616 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 14186 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7831 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
 
 require = fn;
 function EditProfileEffectInner(user) {
@@ -98,7 +98,7 @@ function ProfileEffectSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8474)(previewSkuId);
+  const tmp2 = purchase(7618)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -122,21 +122,21 @@ function ProfileEffectSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [closure_9(purchase(11405), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  const items1 = [closure_9(purchase(10571), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj2.colors = items2;
-  items1[1] = closure_9(purchase(5230), obj2);
+  items1[1] = closure_9(purchase(5293), obj2);
   obj.children = items1;
   return closure_10(closure_5, obj);
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const isProfileEffectRecord = fn(7822).isProfileEffectRecord;
+const isProfileEffectRecord = fn(6968).isProfileEffectRecord;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, bounceOffset: { position: "absolute", top: -250, height: 250, right: 0, left: 0 }, title: null, previewContainer: null, previewGradient: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.title = { alignSelf: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
@@ -161,13 +161,13 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   if (str == null) {
     str = "";
   }
-  const tmp4Result = isTryItOut(8487)(str);
+  const tmp4Result = isTryItOut(7631)(str);
   dependencyMap = tmp4Result;
   const tmp6 = selectedProfileEffect(memo.useState(currentProfileEffect), 2);
   selectedProfileEffect = tmp6[0];
-  const tmp4 = isTryItOut(8487);
-  let obj = guildId(8471);
-  const analyticsLocations = isTryItOut(7439)(tmp2(7459).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
+  const tmp4 = isTryItOut(7631);
+  let obj = guildId(7615);
+  const analyticsLocations = isTryItOut(6583)(tmp2(6603).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
   const items = [guildId, tmp4Result];
   memo = memo.useMemo(() => {
     const obj = { type: AnalyticsLocationDefault.EDIT_PROFILE_EFFECT_SHEET, guild_id: guildId, profile_has_nitro_customization: null };
@@ -199,12 +199,12 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
       purchasedItem = null;
     }
     if (isTryItOut) {
-      const result = tmp(8468).setTryItOutProfileEffect(purchasedItem);
-      const tmpResult = tmp(8468);
+      const result = tmp(7612).setTryItOutProfileEffect(purchasedItem);
+      const tmpResult = tmp(7612);
     } else {
       const obj2 = { guildId, profileEffect: purchasedItem };
-      tmp(8465).setPendingChanges(obj2);
-      const tmpResult2 = tmp(8465);
+      tmp(7609).setPendingChanges(obj2);
+      const tmpResult2 = tmp(7609);
     }
   }, items2);
   let obj2 = { value: analyticsLocations, children: null };
@@ -214,7 +214,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   const obj6 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: null };
   const intl = guildId(1115).intl;
   obj6.children = intl.string(guildId(1115).t["/6nv6N"]);
-  items3[1] = closure_9(guildId(4784).Text, obj6);
+  items3[1] = closure_9(guildId(4832).Text, obj6);
   items3[2] = closure_9(EditProfileEffectInner, { user, selectedProfileEffect, setSelectedProfileEffect: tmp6[1], guildId, isTryItOut });
   obj4.children = items3;
   const items4 = [closure_10(closure_5, obj4), ];
@@ -222,7 +222,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   let skuId;
   const obj5 = { style: tmp.bounceOffset };
   const tmp13 = closure_10;
-  const tmp2Result = isTryItOut(7439);
+  const tmp2Result = isTryItOut(6583);
   if (currentProfileEffect != null) {
     skuId = currentProfileEffect.skuId;
   }
@@ -235,9 +235,9 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   obj7.isTryItOut = isTryItOut;
   obj7.onApply = callback1;
   obj7.analyticsLocations = analyticsLocations;
-  obj7.analyticsSource = isTryItOut(7459).EDIT_PROFILE_EFFECT_SHEET;
-  items4[1] = closure_9(isTryItOut(8473), obj7);
+  obj7.analyticsSource = isTryItOut(6603).EDIT_PROFILE_EFFECT_SHEET;
+  items4[1] = closure_9(isTryItOut(7617), obj7);
   obj3.children = items4;
-  obj2.children = tmp13(guildId(7427).BottomSheet, obj3);
-  return closure_9(guildId(7439).AnalyticsLocationProvider, obj2);
+  obj2.children = tmp13(guildId(6571).BottomSheet, obj3);
+  return closure_9(guildId(6583).AnalyticsLocationProvider, obj2);
 };

@@ -1,33 +1,33 @@
-// Module ID: 15239
-// Function ID: 15240
+// Module ID: 14494
+// Function ID: 14495
 // Name: UserSettingsConnections
-// Dependencies: [19, 17, 7384, 502, 5530, 2109, 1074, 21, 4788, 576, 4722, 504, 13421, 7447, 5655, 4755, 15238, 1980, 9373, 15240, 8903, 5216, 15243, 15244, 2]
+// Dependencies: [19, 17, 6528, 502, 5593, 2112, 1074, 21, 4836, 576, 4767, 504, 12673, 6591, 5718, 4800, 14493, 1981, 8528, 14495, 8053, 5279, 14498, 14499, 2]
 // Exports: UserSettingsConnections
 
-// Module 15239 (UserSettingsConnections)
+// Module 14494 (UserSettingsConnections)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import useThemeDefault from "useTheme" /* 4722 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7447 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9373 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 13421 */;
-import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 15243 */;
-import ConnectedAccountDefault from "ConnectedAccount" /* 15244 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import useThemeDefault from "useTheme" /* 4767 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6591 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 8528 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12673 */;
+import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 14498 */;
+import ConnectedAccountDefault from "ConnectedAccount" /* 14499 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7384 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 
-const ConnectionsEmptyStateUpsellDefault = tmp2(15240);
+const ConnectionsEmptyStateUpsellDefault = tmp2(14495);
 require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
-const FetchState = fn(7384).FetchState;
+const FetchState = fn(6528).FetchState;
 const AnalyticsLocations = fn(1074).AnalyticsLocations;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { flex: { flex: 1 }, form: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 } };
 let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -65,7 +65,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   const effect2 = authorizedAppsFetchState.useEffect(() => {
     if (null != selectedPlatformType) {
       if (-1 === tmp) {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15238, dependencyMap.paths), "AddConnection");
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14493, dependencyMap.paths), "AddConnection");
       } else {
         const obj = { platformType: tmp, location: AnalyticsLocations.USER_SETTINGS };
         authorizeConnectionDefault(obj);
@@ -89,8 +89,8 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
         accounts.map((account) => closure_2_11(ConnectedAccountDefault, { theme, locale, account }, account.id))
       ];
       obj5.children = items5;
-      obj4.children = closure_12(tmp4(5216).Stack, obj5);
-      tmp14 = closure_11(tmp4(8903).Form, obj4);
+      obj4.children = closure_12(tmp4(5279).Stack, obj5);
+      tmp14 = closure_11(tmp4(8053).Form, obj4);
     }
     return tmp14;
   }

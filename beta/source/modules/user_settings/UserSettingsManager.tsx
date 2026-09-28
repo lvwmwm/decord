@@ -1,11 +1,11 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17271
+// Function ID: 17272
 // Name: UserSettingsManager
-// Dependencies: [7395, 2019, 2]
+// Dependencies: [6539, 2021, 2]
 
-// Module 17910 (UserSettingsManager)
-import UserSettings from "UserSettings" /* 2019 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+// Module 17271 (UserSettingsManager)
+import UserSettings from "UserSettings" /* 2021 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 let c2 = false;
@@ -33,7 +33,7 @@ prototype["ensureTimezoneUpdated"] = function ensureTimezoneUpdated() {
     const _Date = Date;
     const date = new Date();
     const timezoneOffset = date.getTimezoneOffset();
-    let TimezoneOffset = timezoneOffset(2019).TimezoneOffset;
+    let TimezoneOffset = timezoneOffset(2021).TimezoneOffset;
     if (TimezoneOffset.getSetting() !== timezoneOffset) {
       const _setImmediate = setImmediate;
       setImmediate(() => {

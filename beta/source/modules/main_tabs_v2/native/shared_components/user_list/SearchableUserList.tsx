@@ -1,26 +1,26 @@
-// Module ID: 11152
-// Function ID: 11153
+// Module ID: 10321
+// Function ID: 10322
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1372, 11151, 21, 4788, 576, 11153, 1370, 11154, 4639, 1115, 11155, 11157, 11289, 5373, 9875, 2]
+// Dependencies: [32, 19, 17, 1372, 10320, 21, 4836, 576, 10322, 1370, 10323, 4685, 1115, 10324, 10326, 10457, 5437, 9036, 2]
 // Exports: default
 
-// Module 11152 (SearchableUserList)
+// Module 10321 (SearchableUserList)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import shared from "shared" /* 4639 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 11154 */;
+import shared from "shared" /* 4685 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10323 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const UserRowModes = fn(11151).UserRowModes;
+const UserRowModes = fn(10320).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, searchBar: { height: "ip", minHeight: false }, searchBarRowContainer: null, noResults: null };
+const createStyles = fn(4836);
+let obj2 = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, searchBar: { height: "disabled", minHeight: false }, searchBarRowContainer: null, noResults: null };
 const obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.searchBarRowContainer = { paddingTop: nativeDefault.space.PX_8 };
 let obj4 = { paddingTop: nativeDefault.space.PX_8 };

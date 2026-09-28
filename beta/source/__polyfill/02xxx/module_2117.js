@@ -5,46 +5,22 @@
 
 // Module 2117
 
-export default function buildLocalizeFn(arg0) {
-  const formattingValues = arg0;
-  return (arg0, context) => {
-    let str = "standalone";
-    if (null != context) {
-      str = "standalone";
-      if (context.context) {
+export default function buildFormatLongFn(arg0) {
+  closure_0 = arg0;
+  return () => {
+    if (arguments.length > 0) {
+      if (undefined !== arguments[0]) {
+        let first = arguments[0];
+      }
+      if (first.width) {
         const _String = String;
-        str = String(context.context);
+        let defaultWidth = String(first.width);
+      } else {
+        defaultWidth = closure_0.defaultWidth;
       }
+      return closure_0.formats[defaultWidth] || closure_0.formats[closure_0.defaultWidth];
     }
-    if ("formatting" === str) {
-      if (formattingValues.formattingValues) {
-        let StringResult = tmp6;
-        if (null != context) {
-          StringResult = tmp6;
-          if (context.width) {
-            const _String3 = String;
-            StringResult = String(context.width);
-          }
-        }
-        let tmp5 = tmp2.formattingValues[StringResult] || tmp2.formattingValues[tmp2.defaultFormattingWidth || tmp2.defaultWidth];
-        let obj = tmp2;
-        const tmp9 = tmp2.formattingValues[StringResult] || tmp2.formattingValues[tmp2.defaultFormattingWidth || tmp2.defaultWidth];
-      }
-      let argumentCallbackResult = arg0;
-      if (obj.argumentCallback) {
-        argumentCallbackResult = obj.argumentCallback(arg0);
-      }
-      return tmp5[argumentCallbackResult];
-    }
-    obj = formattingValues;
-    if (null != context) {
-      if (context.width) {
-        const _String2 = String;
-        let defaultWidth = String(context.width);
-      }
-      tmp5 = obj.values[defaultWidth] || obj.values[tmp3];
-    }
-    defaultWidth = obj.defaultWidth;
+    first = {};
   };
 };
 export default exports.default;

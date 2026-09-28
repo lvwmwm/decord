@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/main_tabs", width: 24, height: 24, scales: [2, 3], hash: "a6de40e8388b714e9153c727bc648e49", name: "Discord", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 375, height: 187, scales: [2, 3], hash: "a089de21c15f6e03808f87d787c28c08", name: "role_subscription_settings_hero", type: "png" });

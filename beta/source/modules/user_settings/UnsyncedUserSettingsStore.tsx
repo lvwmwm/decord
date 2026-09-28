@@ -57,16 +57,6 @@ prototype["initialize"] = function initialize(arg0) {
 prototype["getUserAgnosticState"] = function getUserAgnosticState() {
   return closure_12;
 };
-Object.defineProperty(prototype, "displayCompactAvatars", {
-  get: function displayCompactAvatars() {
-    let flag = closure_12.displayCompactAvatars;
-    if (flag == null) {
-      flag = false;
-    }
-    return flag;
-  },
-  set: undefined
-});
 Object.defineProperty(prototype, "lowQualityImageMode", {
   get: function lowQualityImageMode() {
     let flag = closure_12.lowQualityImageMode;
@@ -190,16 +180,6 @@ Object.defineProperty(prototype, "activityPanelHeight", {
 Object.defineProperty(prototype, "disableVoiceChannelChangeAlert", {
   get: function disableVoiceChannelChangeAlert() {
     let flag = closure_12.disableVoiceChannelChangeAlert;
-    if (flag == null) {
-      flag = false;
-    }
-    return flag;
-  },
-  set: undefined
-});
-Object.defineProperty(prototype, "disableHardwareMuteSilenceAlert", {
-  get: function disableHardwareMuteSilenceAlert() {
-    let flag = closure_12.disableHardwareMuteSilenceAlert;
     if (flag == null) {
       flag = false;
     }
@@ -354,6 +334,16 @@ Object.defineProperty(prototype, "pauseSelfStreamPreviewWhenUnfocused", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "videoBackground", {
+  get: function videoBackground() {
+    let videoBackground = closure_12.videoBackground;
+    if (videoBackground == null) {
+      videoBackground = null;
+    }
+    return videoBackground;
+  },
+  set: undefined
+});
 UnsyncedUserSettingsStore.displayName = "UnsyncedUserSettingsStore";
 UnsyncedUserSettingsStore.persistKey = "UnsyncedUserSettingsStore";
 const items = [
@@ -362,7 +352,7 @@ const items = [
     value = Storage.get("UserSettingsStore");
     const Storage2 = Storage3.Storage;
     Storage2.remove("UserSettingsStore");
-    return _modDef12.pick(value, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHardwareMuteSilenceAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations");
+    return _modDef12.pick(value, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations");
   },
   (arg0) => {
     delete tmp[tmp2];

@@ -1,12 +1,12 @@
-// Module ID: 13826
-// Function ID: 13827
+// Module ID: 13072
+// Function ID: 13073
 // Name: GuildSubscriptionNoGuilds
-// Dependencies: [19, 17, 21, 8534, 13827, 13828, 13829, 4639, 2]
+// Dependencies: [19, 17, 21, 7679, 13073, 13074, 13075, 4685, 2]
 // Exports: GuildSubscriptionNoGuilds, getGuildSubscriptionNoGuildsSource, useGuildSubscriptionNoGuildsSource
 
-// Module 13826 (GuildSubscriptionNoGuilds)
-import shared from "shared" /* 4639 */;
-import _mod8534 from "module_8534" /* 8534 */;
+// Module 13072 (GuildSubscriptionNoGuilds)
+import shared from "shared" /* 4685 */;
+import _mod7679 from "module_7679" /* 7679 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionNoGuilds.tsx");
 
 export const getGuildSubscriptionNoGuildsSource = function getGuildSubscriptionNoGuildsSource(theme) {
-  return _mod8534.getIllustrationSource(theme, {
+  return _mod7679.getIllustrationSource(theme, {
     dark() {
-      return require("module_13827");
+      return require("module_13073");
     },
     darker() {
-      return require("module_13828");
+      return require("module_13074");
     },
     light() {
-      return require("module_13829");
+      return require("module_13075");
     }
   });
 };
 export const useGuildSubscriptionNoGuildsSource = function useGuildSubscriptionNoGuildsSource() {
   const obj = shared;
-  return _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13827");
+      return require("module_13073");
     },
     darker() {
-      return require("module_13828");
+      return require("module_13074");
     },
     light() {
-      return require("module_13829");
+      return require("module_13075");
     }
   });
 };
 export const GuildSubscriptionNoGuilds = function GuildSubscriptionNoGuilds(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13827");
+      return require("module_13073");
     },
     darker() {
-      return require("module_13828");
+      return require("module_13074");
     },
     light() {
-      return require("module_13829");
+      return require("module_13075");
     }
   });
   const merged = Object.assign(arg0);

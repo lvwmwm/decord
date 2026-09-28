@@ -1,19 +1,19 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 9223
+// Function ID: 9224
 // Name: GuildProfileCTA
-// Dependencies: [19, 4772, 1074, 1084, 21, 10064, 10066, 4755, 7616, 8681, 10070, 10077, 4612, 5776, 5799, 5818, 7615, 5218, 1115, 2]
+// Dependencies: [19, 4817, 1074, 1084, 21, 9224, 9226, 4800, 6760, 7826, 9230, 9237, 4658, 5839, 5862, 5881, 6759, 5281, 1115, 2]
 // Exports: default
 
-// Module 10063 (GuildProfileCTA)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import GuildProfileTypes from "GuildProfileTypes" /* 5799 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5818 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7615 */;
-import transitionToGuild from "transitionToGuild" /* 7616 */;
-import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 10070 */;
+// Module 9223 (GuildProfileCTA)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import GuildProfileTypes from "GuildProfileTypes" /* 5862 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5881 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 6759 */;
+import transitionToGuild from "transitionToGuild" /* 6760 */;
+import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 9230 */;
 import noop from "module_19" /* 19 */;
-import InviteStore from "InviteStore" /* 4772 */;
+import InviteStore from "InviteStore" /* 4817 */;
 
 require = fn;
 const AnalyticsObjects = fn(1074).AnalyticsObjects;
@@ -50,8 +50,8 @@ export default function GuildProfileCTA(profile) {
       const obj = { onConfirm: join };
       if (!obj4.handleNSFWGuildInvite(InviteStore.getInvite(tmp), obj)) {
         const obj2 = { inviteKey: tmp, context: { location: "guild_profile" } };
-        let result = tmp3(8681).acceptInviteAndTransitionToInviteChannel(obj2);
-        const tmp3Result = tmp3(8681);
+        let result = tmp3(7826).acceptInviteAndTransitionToInviteChannel(obj2);
+        const tmp3Result = tmp3(7826);
       }
       obj4 = handleNSFWGuildInvite;
     }
@@ -70,15 +70,15 @@ export default function GuildProfileCTA(profile) {
       applicationStatus = applicationStatus.applicationStatus;
     }
     if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-      const result = tmp2(5776).openMemberVerificationPendingAlert(guildId);
-      const tmp2Result = tmp2(5776);
-    } else if (tmp2(4612).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+      const result = tmp2(5839).openMemberVerificationPendingAlert(guildId);
+      const tmp2Result = tmp2(5839);
+    } else if (tmp2(4658).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
       const obj = { guildId, canWithdraw: true };
-      const result1 = tmp2(5776).openMemberVerificationRejectedAlert(obj);
-      const tmp2Result3 = tmp2(5776);
-    } else if (tmp2(4612).GuildJoinRequestApplicationStatuses.STARTED === applicationStatus) {
-      const result2 = tmp2(5776).openMemberVerificationIncompleteAlert(guildId);
-      const tmp2Result4 = tmp2(5776);
+      const result1 = tmp2(5839).openMemberVerificationRejectedAlert(obj);
+      const tmp2Result3 = tmp2(5839);
+    } else if (tmp2(4658).GuildJoinRequestApplicationStatuses.STARTED === applicationStatus) {
+      const result2 = tmp2(5839).openMemberVerificationIncompleteAlert(guildId);
+      const tmp2Result4 = tmp2(5839);
     }
   }, items2);
   const items4 = [guildId];

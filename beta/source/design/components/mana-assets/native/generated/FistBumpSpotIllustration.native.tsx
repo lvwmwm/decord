@@ -1,13 +1,13 @@
-// Module ID: 6270
-// Function ID: 6271
+// Module ID: 12985
+// Function ID: 12986
 // Name: FistBumpSpotIllustration
-// Dependencies: [21, 5836, 6271, 2]
+// Dependencies: [21, 5899, 12986, 2]
 // Exports: FistBumpSpotIllustration
 
-// Module 6270 (FistBumpSpotIllustration)
+// Module 12985 (FistBumpSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef6271 from "module_6271" /* 6271 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef12986 from "module_12986" /* 12986 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const FistBumpSpotIllustration = function FistBumpSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6271 };
+  const obj2 = { uri: _modDef12986 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

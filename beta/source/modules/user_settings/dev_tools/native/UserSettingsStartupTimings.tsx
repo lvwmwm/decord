@@ -1,23 +1,23 @@
-// Module ID: 15847
-// Function ID: 15848
+// Module ID: 15120
+// Function ID: 15121
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1346, 1074, 21, 4788, 576, 4784, 4652, 1612, 10489, 504, 9, 7749, 8664, 9029, 5216, 5936, 5853, 1347, 5854, 13236, 2]
+// Dependencies: [5, 32, 19, 17, 1346, 1074, 21, 4836, 576, 4832, 4699, 1613, 9653, 504, 9, 6895, 7809, 8179, 5279, 5999, 5916, 1347, 5917, 12470, 2]
 // Exports: default
 
-// Module 15847 (UserSettingsStartupTimings)
+// Module 15120 (UserSettingsStartupTimings)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import Stack_Stack from "Stack/Stack" /* 5216 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5853 */;
-import TableRow from "TableRow" /* 5854 */;
-import TableRowGroup from "TableRowGroup" /* 5936 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 10489 */;
-import ShareIcon from "ShareIcon" /* 13236 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import Stack_Stack from "Stack/Stack" /* 5279 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5916 */;
+import TableRow from "TableRow" /* 5917 */;
+import TableRowGroup from "TableRowGroup" /* 5999 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 9653 */;
+import ShareIcon from "ShareIcon" /* 12470 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4652 */;
+import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4699 */;
 
 const require = globalThis.__r;
 
@@ -30,7 +30,7 @@ function Code(arg0) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, code: { fontFamily: fn(1074).Fonts.CODE_BOLD }, border: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.border = { height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
@@ -97,7 +97,7 @@ export default function UserSettingsStartupTimings() {
             closure_128_1 = undefined;
             dependencyMap = 1;
             c3 = 1;
-            const obj5 = { value: tmp5(4652).getAppFirstVisibleTimestamp(), done: false };
+            const obj5 = { value: tmp5(4699).getAppFirstVisibleTimestamp(), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -109,9 +109,9 @@ export default function UserSettingsStartupTimings() {
           return obj6;
         } else {
           closure_128_0 = value;
-          closure_128_1 = tmp5(10489)(closure_128_0);
+          closure_128_1 = tmp5(9653)(closure_128_0);
           const obj7 = { message: closure_128_1 };
-          tmp2(8664).showShareActionSheet(obj7, "Startup Timing");
+          tmp2(7809).showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -124,7 +124,7 @@ export default function UserSettingsStartupTimings() {
   let obj4 = { style: tmp.wrap, children: null };
   let obj5 = { contentContainerStyle: null, ListHeaderComponent: null, data: null, renderItem: null };
   let obj3 = require("TTIAnalyticsUtils");
-  obj5.contentContainerStyle = { paddingBottom: checked(1612)().bottom + tmp2(576).space.PX_16 };
+  obj5.contentContainerStyle = { paddingBottom: checked(1613)().bottom + tmp2(576).space.PX_16 };
   obj5.ListHeaderComponent = function ListHeaderComponent() {
     const obj = { spacing: 16, style: { padding: 16 }, children: null };
     const obj2 = {
@@ -261,6 +261,6 @@ export default function UserSettingsStartupTimings() {
   obj5.renderItem = function renderItem(children) {
     return closure_8(lastTrackedAppUiViewed2Properties, { children: children.item });
   };
-  obj4.children = closure_8(tmp10(9029).FlashList, obj5);
+  obj4.children = closure_8(tmp10(8179).FlashList, obj5);
   return closure_8(checked, obj4);
 };

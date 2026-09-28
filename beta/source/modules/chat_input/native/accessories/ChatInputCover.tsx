@@ -1,9 +1,9 @@
-// Module ID: 12535
-// Function ID: 12536
+// Module ID: 11735
+// Function ID: 11736
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 5203, 1610, 2]
+// Dependencies: [19, 17, 21, 5266, 1611, 2]
 
-// Module 12535 (ChatInputCover)
+// Module 11735 (ChatInputCover)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -28,13 +28,13 @@ const forwardRefResult = noop.forwardRef((enabled, ref) => {
             tmp = controlsSpecs;
           }
           if (tmp) {
-            tmp = dependencyMap !== flag(1610).KeyboardTypes.SYSTEM;
+            tmp = dependencyMap !== flag(1611).KeyboardTypes.SYSTEM;
           }
           if (tmp) {
             tmp = closure_1_3;
           }
           if (tmp) {
-            const obj = { type: flag(1610).KeyboardTypes.SYSTEM };
+            const obj = { type: flag(1611).KeyboardTypes.SYSTEM };
             closure_1_2(obj);
           }
         }

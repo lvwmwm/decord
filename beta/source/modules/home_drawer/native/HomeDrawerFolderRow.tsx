@@ -1,19 +1,19 @@
-// Module ID: 16647
-// Function ID: 16648
+// Module ID: 15941
+// Function ID: 15942
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 7904, 2063, 5687, 4969, 4807, 1074, 21, 4788, 504, 10449, 4784, 1115, 16648, 4651, 4648, 2]
+// Dependencies: [19, 17, 7050, 2067, 5750, 5017, 4855, 1074, 21, 4836, 504, 9613, 4832, 1115, 15942, 4698, 4695, 2]
 // Exports: default
 
-// Module 16647 (HomeDrawerFolderRow)
+// Module 15941 (HomeDrawerFolderRow)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10449 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 9613 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7904 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import SortedGuildStore from "SortedGuildStore" /* 5687 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
-import VoiceStateStore from "VoiceStateStore" /* 4807 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SortedGuildStore from "SortedGuildStore" /* 5750 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 
 require = fn;
 function Wrapper(folder) {
@@ -209,7 +209,7 @@ const View = fn(17).View;
 const NOOP = fn(1074).NOOP;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_13 = createStyles.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerFolderRow.tsx");
@@ -224,7 +224,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(4651).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4698).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

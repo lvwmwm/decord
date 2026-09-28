@@ -1,28 +1,28 @@
-// Module ID: 18027
-// Function ID: 18028
+// Module ID: 17388
+// Function ID: 17389
 // Name: GuildSettingsModalServerTagCustomize
-// Dependencies: [32, 19, 17, 9867, 9888, 8234, 21, 576, 4788, 9890, 1478, 9868, 504, 9869, 9887, 4755, 18028, 1980, 7316, 10062, 8903, 5216, 6880, 1115, 4742, 4784, 18029, 18033, 2]
+// Dependencies: [32, 19, 17, 9028, 9049, 7386, 21, 576, 4836, 9051, 1479, 9029, 504, 9030, 9048, 4800, 17389, 1981, 6460, 9222, 8053, 5279, 6024, 1115, 4787, 4832, 17390, 17394, 2]
 // Exports: default
 
-// Module 18027 (GuildSettingsModalServerTagCustomize)
+// Module 17388 (GuildSettingsModalServerTagCustomize)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9869 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9887 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9030 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9888 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
 
 require = fn;
 const View = fn(17).View;
-let GuildProfileFetchStatus = fn(9867).GuildProfileFetchStatus;
-const BADGES = fn(8234).BADGES;
+let GuildProfileFetchStatus = fn(9028).GuildProfileFetchStatus;
+const BADGES = fn(7386).BADGES;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;
 const PX_16 = nativeDefault.space.PX_16;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1 }, containerContent: { paddingTop: 16, paddingHorizontal: PX_16 }, warning: { flexDirection: "row", gap: nativeDefault.space.PX_8, alignItems: "flex-start", marginTop: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE }, warningText: { flex: 1 } };
 let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);

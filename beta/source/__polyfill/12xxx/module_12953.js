@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/directory_channels/native/images", width: 375, height: 300, scales: [2], hash: "ce796d5b5dedd403e327ddf7cc5530fc", name: "hub_header", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "cb2a2e3b1b856419d08252c8139a8321", name: "entrace_sounds", type: "png" });

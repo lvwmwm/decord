@@ -1,24 +1,24 @@
-// Module ID: 5010
-// Function ID: 5011
+// Module ID: 5058
+// Function ID: 5059
 // Name: MessageRecordUtils
-// Dependencies: [5011, 4438, 1386, 502, 4437, 1372, 1074, 5012, 4771, 5020, 11, 5025, 5026, 5132, 4380, 5133, 5135, 2]
+// Dependencies: [5059, 4480, 1386, 502, 4479, 1372, 1074, 5060, 4816, 5083, 11, 5088, 5089, 5195, 4421, 5196, 5198, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 5010 (MessageRecordUtils)
+// Module 5058 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4380 from "module_4380" /* 4380 */;
-import findCodedLinksDefault from "findCodedLinks" /* 4771 */;
-import useMessageAuthor from "useMessageAuthor" /* 5020 */;
-import isMessageMentioned from "isMessageMentioned" /* 5025 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5026 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 5132 */;
-import EmbedUtils from "EmbedUtils" /* 5133 */;
-import StickersUtils from "StickersUtils" /* 5135 */;
-import InteractionRecord from "InteractionRecord" /* 5011 */;
-import MessageRecord_mod from "MessageRecord" /* 4438 */;
+import _modDef4421 from "module_4421" /* 4421 */;
+import findCodedLinksDefault from "findCodedLinks" /* 4816 */;
+import useMessageAuthor from "useMessageAuthor" /* 5083 */;
+import isMessageMentioned from "isMessageMentioned" /* 5088 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5089 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 5195 */;
+import EmbedUtils from "EmbedUtils" /* 5196 */;
+import StickersUtils from "StickersUtils" /* 5198 */;
+import InteractionRecord from "InteractionRecord" /* 5059 */;
+import MessageRecord_mod from "MessageRecord" /* 4480 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -197,11 +197,11 @@ function createMessageRecord(message, arg1) {
     if (null != call.ended_timestamp) {
       const _Date = Date;
       const date = new Date(call.ended_timestamp);
-      tmp39Result = _modDef4380(date);
+      tmp39Result = _modDef4421(date);
     }
     let durationResult = null;
     if (null != tmp39Result) {
-      durationResult = _modDef4380.duration(tmp39Result.diff(tmp35));
+      durationResult = _modDef4421.duration(tmp39Result.diff(tmp35));
     }
     const obj11 = { participants: call.participants, endedTimestamp: tmp39Result, duration: durationResult };
     tmp36 = obj11;
@@ -248,7 +248,7 @@ function createMessageRecord(message, arg1) {
     }
     obj9.giftInfo = tmp52;
     obj9.giftingPrompt = message.gifting_prompt;
-    obj9.boostingPrompt = message.boosting_prompt;
+    ({ boosting_prompt: obj7.boostingPrompt, guild_space_data: obj7.guildSpaceData } = message);
     const tmp232 = new tmp23(obj9);
     return tmp232;
   }
@@ -298,7 +298,7 @@ function createMessageRecord(message, arg1) {
     return obj;
   });
 }
-let MessageRecord = fn(4438);
+let MessageRecord = fn(4480);
 ({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: hasOwnProperty } = MessageRecord);
 let MessageRecord = MessageRecord_mod;
 const Constants = fn(1074);
@@ -335,11 +335,11 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         if (null != call.ended_timestamp) {
           const _Date = Date;
           const date = new Date(call.ended_timestamp);
-          tmp = _modDef4380(date);
+          tmp = _modDef4421(date);
         }
         let durationResult = null;
         if (null != tmp) {
-          durationResult = _modDef4380.duration(tmp.diff(tmp46));
+          durationResult = _modDef4421.duration(tmp.diff(tmp46));
         }
         const obj3 = { participants: call.participants, endedTimestamp: tmp, duration: durationResult };
         tmp13 = obj3;

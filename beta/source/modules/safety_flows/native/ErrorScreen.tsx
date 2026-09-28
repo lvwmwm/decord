@@ -1,10 +1,10 @@
-// Module ID: 18348
-// Function ID: 18349
+// Module ID: 17714
+// Function ID: 17715
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 4788, 576, 1484, 18329, 18333, 4784, 1115, 5216, 5218, 6866, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4836, 576, 1485, 17694, 17698, 4832, 1115, 5279, 5281, 6010, 2]
 // Exports: default
 
-// Module 18348 (ErrorScreen)
+// Module 17714 (ErrorScreen)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -16,7 +16,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flexDirection: "column", justifyContent: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_16, alignItems: "center" }, buttonContainer: null };
 let obj3 = { flexDirection: "column", justifyContent: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_16, alignItems: "center" };
 obj2.buttonContainer = { marginTop: nativeDefault.space.PX_8 };

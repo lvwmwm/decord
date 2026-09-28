@@ -1,11 +1,11 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 12977
+// Function ID: 12978
 // Name: PremiumReferralIncentivesExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: usePremiumReferralIncentivesVariant
 
-// Module 13734 (PremiumReferralIncentivesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 12977 (PremiumReferralIncentivesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { ORBS: "orbs", DISCOUNT: "discount" };

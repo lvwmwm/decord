@@ -1,18 +1,18 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 11496
+// Function ID: 11497
 // Name: ForumPostTimestamp
-// Dependencies: [19, 12283, 21, 4788, 8161, 4784, 2]
+// Dependencies: [19, 11483, 21, 4836, 7310, 4832, 2]
 // Exports: default
 
-// Module 12296 (ForumPostTimestamp)
-import ForumHooks from "ForumHooks" /* 8161 */;
+// Module 11496 (ForumPostTimestamp)
+import ForumHooks from "ForumHooks" /* 7310 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = tmp2(4784);
+const Text_Text = tmp2(4832);
 require = fn;
-const useForumChannelStore = fn(12283).useForumChannelStore;
+const useForumChannelStore = fn(11483).useForumChannelStore;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_4 = createStyles.createStyles({ text: { lineHeight: 18, height: 18 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostTimestamp.tsx");

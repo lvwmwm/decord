@@ -1,10 +1,10 @@
-// Module ID: 9107
-// Function ID: 9108
+// Module ID: 8257
+// Function ID: 8258
 // Name: useWishlistGiftableItems
 // Dependencies: [19, 1074, 2]
 // Exports: useWishlistGiftableItems
 
-// Module 9107 (useWishlistGiftableItems)
+// Module 8257 (useWishlistGiftableItems)
 import noop from "module_19" /* 19 */;
 
 let items = [, , ];

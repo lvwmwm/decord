@@ -1,12 +1,12 @@
-// Module ID: 16737
-// Function ID: 16738
+// Module ID: 16031
+// Function ID: 16032
 // Name: useNotificationsTabBadge
-// Dependencies: [19, 7907, 504, 7908, 2]
+// Dependencies: [19, 7053, 504, 7054, 2]
 // Exports: default
 
-// Module 16737 (useNotificationsTabBadge)
+// Module 16031 (useNotificationsTabBadge)
 import noop from "module_19" /* 19 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7907 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7053 */;
 
 const require = fn;
 const size = fn(2);

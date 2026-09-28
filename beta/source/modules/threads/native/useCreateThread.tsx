@@ -1,30 +1,30 @@
-// Module ID: 10552
-// Function ID: 10553
+// Module ID: 9718
+// Function ID: 9719
 // Name: useCreateThread
-// Dependencies: [5, 19, 5137, 4781, 7439, 9451, 7730, 7950, 9455, 9453, 8113, 5382, 5410, 9456, 2]
+// Dependencies: [5, 19, 5200, 4829, 6583, 8606, 6876, 7095, 8610, 8608, 7258, 5446, 5474, 8611, 2]
 // Exports: default, useCreateForumPost
 
-// Module 10552 (useCreateThread)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7439 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7730 */;
-import MessageParserDefault from "MessageParser" /* 7950 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9453 */;
-import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9455 */;
+// Module 9718 (useCreateThread)
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
+import MessageParserDefault from "MessageParser" /* 7095 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8608 */;
+import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 8610 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const DraftType = fn(5137).DraftType;
-const MessageSendLocation = fn(4781).MessageSendLocation;
+const DraftType = fn(5200).DraftType;
+const MessageSendLocation = fn(4829).MessageSendLocation;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/threads/native/useCreateThread.tsx");
 
 export default function useCreateThread(arg0) {
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  return analyticsLocations(9451).useCreateThreadCommon({
+  return analyticsLocations(8606).useCreateThreadCommon({
     parentChannel,
     parentMessageId,
     threadSettings,
@@ -55,7 +55,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
   const threadSettings = parentChannel.threadSettings;
   let analyticsLocations;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(7439)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6583)().analyticsLocations;
   _require = asyncGeneratorStep(async (arg0) => {
     const guildId = arg0;
     c2 = 0;
@@ -63,22 +63,22 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
     return (async (arg0) => {
       analyticsLocations = tmp4;
       closure_129_0 = guildId;
-      const obj7 = new analyticsLocations(8113)();
+      const obj7 = new analyticsLocations(7258)();
       closure_129_1 = obj7;
-      const maxFileSizeResult = guildId(5382).maxFileSize(guildId.getGuildId());
+      const maxFileSizeResult = guildId(5446).maxFileSize(guildId.getGuildId());
       closure_129_2 = maxFileSizeResult;
-      const effectiveUploadLimit = guildId(5410).getEffectiveUploadLimit(maxFileSizeResult);
+      const effectiveUploadLimit = guildId(5474).getEffectiveUploadLimit(maxFileSizeResult);
       obj7.on("progress", (currentSize) => {
         if (currentSize.currentSize > closure_1_3) {
           analyticsLocations.cancel();
           const obj2 = { channelId: uploads.id, uploads, draftType: FirstThreadMessage.FirstThreadMessage, resetState: true };
-          analyticsLocations(9453).setUploads(obj2);
+          analyticsLocations(8608).setUploads(obj2);
           const obj3 = { file: currentSize, maxSize: tmp, baseMaxSize, guildId: null, analyticsLocations: null };
-          const obj = analyticsLocations(9453);
+          const obj = analyticsLocations(8608);
           obj3.guildId = uploads.getGuildId();
           obj3.analyticsLocations = analyticsLocations;
-          analyticsLocations(9456)(obj3);
-          const tmp10 = analyticsLocations(9456);
+          analyticsLocations(8611)(obj3);
+          const tmp10 = analyticsLocations(8611);
         }
       });
       closure_129_4 = await obj7.uploadFiles(guildId);

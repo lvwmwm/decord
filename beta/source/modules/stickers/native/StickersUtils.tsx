@@ -1,24 +1,24 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 9850
+// Function ID: 9851
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 2063, 1372, 10685, 1074, 1218, 5517, 7611, 10682, 504, 9467, 10686, 10687, 1610, 2]
+// Dependencies: [19, 17, 2067, 1372, 9851, 1074, 1218, 9848, 504, 8622, 5581, 9852, 9853, 9854, 1611, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 10684 (stickers/StickersUtils)
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
+// Module 9850 (stickers/StickersUtils)
+import KeyboardTypes from "KeyboardTypes" /* 1611 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const NativeModules = fn(17).NativeModules;
-const useStickerPickerStore = fn(10685).useStickerPickerStore;
+const useStickerPickerStore = fn(9851).useStickerPickerStore;
 const GuildNSFWContentLevel = fn(1074).GuildNSFWContentLevel;
 const ExpressionPickerViewType = fn(1218).ExpressionPickerViewType;
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
+let result = size.fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
 
 export const useStickerCategories = function useStickerCategories(channel) {
   _require = channel;
@@ -33,7 +33,7 @@ export const useStickerCategories = function useStickerCategories(channel) {
   return guilds.useMemo(() => {
     const found = stickerPackCategories.filter((stickers) => stickers.stickers.length > 0);
     const found1 = found.filter((type) => {
-      let tmp2 = type.type !== closure_0(stateFromStores[7]).StickerCategoryTypes.GUILD;
+      let tmp2 = type.type !== closure_0(stateFromStores[10]).StickerCategoryTypes.GUILD;
       if (!tmp2) {
         nsfwAllowed = undefined;
         if (nsfwAllowed != null) {
@@ -51,50 +51,38 @@ export const useStickerCategories = function useStickerCategories(channel) {
       return tmp2;
     });
     return found1.map((type) => {
-      let tmp = mobileStickerPickerUpsellRestyleEnabled;
+      let result = mobileStickerPickerUpsellRestyleEnabled;
       if (mobileStickerPickerUpsellRestyleEnabled) {
-        closure_0 = nsfwAllowed;
-        closure_1 = channel;
-        let everyResult = type.type === closure_0(stateFromStores[7]).StickerCategoryTypes.GUILD;
-        if (everyResult) {
-          everyResult = 0 !== type.stickers.length;
-        }
-        if (everyResult) {
-          const stickers = type.stickers;
-          everyResult = stickers.every((item) => {
-            const stickerSendability = channel(nsfwAllowed[8]).getStickerSendability(item, closure_0, closure_1);
-            return stickerSendability === channel(nsfwAllowed[8]).StickerSendability.SENDABLE_WITH_PREMIUM;
-          });
-        }
-        tmp = everyResult;
+        result = closure_0(stateFromStores[11]).isStickerCategoryNitroLocked(type, nsfwAllowed, channel);
+        const obj = closure_0(stateFromStores[11]);
       }
-      if (type.type !== closure_0(stateFromStores[7]).StickerCategoryTypes.FAVORITE) {
-        if (type.type !== closure_0(stateFromStores[7]).StickerCategoryTypes.RECENT) {
-          let tmp9 = type;
-          if (tmp) {
-            const obj = {};
+      if (type.type !== closure_0(stateFromStores[10]).StickerCategoryTypes.FAVORITE) {
+        if (type.type !== closure_0(stateFromStores[10]).StickerCategoryTypes.RECENT) {
+          let tmp8 = type;
+          if (result) {
+            const obj2 = {};
             const merged = Object.assign(type);
-            obj.isNitroLocked = tmp;
-            tmp9 = obj;
+            obj2.isNitroLocked = result;
+            tmp8 = obj2;
           }
-          return tmp9;
+          return tmp8;
         }
       }
-      if (type.type === closure_0(stateFromStores[7]).StickerCategoryTypes.FAVORITE) {
-        let tmp15 = stickerPackCategories(stateFromStores[12]);
+      if (type.type === closure_0(stateFromStores[10]).StickerCategoryTypes.FAVORITE) {
+        let tmp14 = stickerPackCategories(stateFromStores[12]);
       } else {
-        tmp15 = stickerPackCategories(stateFromStores[13]);
+        tmp14 = stickerPackCategories(stateFromStores[13]);
       }
-      const obj2 = {};
+      const obj3 = {};
       const merged1 = Object.assign(type);
-      obj2.icon = tmp15;
-      if (tmp) {
-        obj2.isNitroLocked = tmp;
-        let tmp19 = obj2;
+      obj3.icon = tmp14;
+      if (result) {
+        obj3.isNitroLocked = result;
+        let tmp18 = obj3;
       } else {
-        tmp19 = obj2;
+        tmp18 = obj3;
       }
-      return tmp19;
+      return tmp18;
     });
   }, items1);
 };

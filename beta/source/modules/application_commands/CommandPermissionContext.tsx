@@ -1,20 +1,20 @@
-// Module ID: 9441
-// Function ID: 9442
+// Module ID: 8596
+// Function ID: 8597
 // Name: CommandPermissionContext
-// Dependencies: [19, 2098, 2045, 2059, 502, 2041, 2105, 2063, 4427, 1372, 1074, 9442, 504, 1086, 1978, 2]
+// Dependencies: [19, 2101, 2049, 2063, 502, 2045, 2108, 2067, 4469, 1372, 1074, 8597, 504, 1086, 1979, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 9441 (CommandPermissionContext)
+// Module 8596 (CommandPermissionContext)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import Server from "Server" /* 1978 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9442 */;
+import Server from "Server" /* 1979 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 8597 */;
 import noop from "module_19" /* 19 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+import ImpersonateStore from "ImpersonateStore" /* 2101 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -59,8 +59,8 @@ function computePermissions(isPrivate, arg1) {
   obj2.computedPermissions = deserializer.deserialize(0);
   return obj2;
 }
-const ChannelRecordBase = fn(2045).ChannelRecordBase;
-const isGuildNSFW = fn(2059).isGuildNSFW;
+const ChannelRecordBase = fn(2049).ChannelRecordBase;
+const isGuildNSFW = fn(2063).isGuildNSFW;
 const Constants = fn(1074);
 ({ ChannelTypes: map1, Permissions: closure_14 } = Constants);
 const size = fn(2);

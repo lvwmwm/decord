@@ -1,21 +1,21 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 15889
+// Function ID: 15890
 // Name: useGuildActionRows
-// Dependencies: [32, 4975, 7808, 1074, 12655, 7538, 7524, 7536, 7503, 7499, 563, 5306, 7500, 12571, 7539, 7501, 12796, 16499, 16564, 7541, 4700, 16600, 7662, 2027, 2]
+// Dependencies: [32, 5023, 6954, 1074, 11861, 6682, 6668, 6680, 6647, 6643, 563, 5370, 6644, 11771, 6683, 6645, 12009, 15789, 15854, 6685, 4747, 15890, 6806, 2029, 2]
 // Exports: default
 
-// Module 16599 (useGuildActionRows)
-import useIsNewMemberDefault from "useIsNewMember" /* 7500 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12655 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12796 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16564 */;
+// Module 15889 (useGuildActionRows)
+import useIsNewMemberDefault from "useIsNewMember" /* 6644 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 11861 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12009 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 15854 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4975 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ChannelListGuildActionRow = fn(7808).ChannelListGuildActionRow;
+const ChannelListGuildActionRow = fn(6954).ChannelListGuildActionRow;
 const GuildFeatures = fn(1074).GuildFeatures;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_sidebar/useGuildActionRows.tsx");
@@ -68,7 +68,7 @@ export default function useGuildActionRows(id) {
   if (gameServerEnabled) {
     if (isGameServerTabAlwaysOnEnabled) {
       if (!hasItem3) {
-        let items2 = [tmp3(2027).DismissibleContent.EMPTY_GAME_SERVER_TAB];
+        let items2 = [tmp3(2029).DismissibleContent.EMPTY_GAME_SERVER_TAB];
       }
       const items3 = [];
       if (hasItem) {

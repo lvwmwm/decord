@@ -1,12 +1,12 @@
-// Module ID: 16704
-// Function ID: 16705
+// Module ID: 15998
+// Function ID: 15999
 // Name: HomeDrawerTTIFirstContentfulPaint
-// Dependencies: [19, 21, 7749, 12180, 2]
+// Dependencies: [19, 21, 6895, 11375, 2]
 // Exports: default
 
-// Module 16704 (HomeDrawerTTIFirstContentfulPaint)
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7749 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12180 */;
+// Module 15998 (HomeDrawerTTIFirstContentfulPaint)
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6895 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11375 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

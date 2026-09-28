@@ -1,10 +1,10 @@
-// Module ID: 2036
-// Function ID: 2037
+// Module ID: 2040
+// Function ID: 2041
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 2036 (Timers)
+// Module 2040 (Timers)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 class Timeout {
@@ -144,11 +144,11 @@ class BatchInvocationManager {
   }
 }
 const prototype5 = BatchInvocationManager.prototype;
-prototype5["queue"] = function queue(candidates) {
+prototype5["queue"] = function queue(items) {
   const self = this;
-  let tmp = candidates;
-  if (!Array.isArray(candidates)) {
-    const items = [candidates];
+  let tmp = items;
+  if (!Array.isArray(items)) {
+    items = [items];
     tmp = items;
   }
   const items1 = [];

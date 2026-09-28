@@ -1,18 +1,18 @@
-// Module ID: 12069
-// Function ID: 12070
+// Module ID: 10762
+// Function ID: 10763
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1372, 5693, 21, 4788, 576, 504, 11582, 11767, 4784, 1115, 7977, 11374, 2]
+// Dependencies: [1372, 5756, 21, 4836, 576, 504, 10694, 10681, 4832, 1115, 7122, 10542, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 12069 (openQuestCollectibleRewardModal)
+// Module 10762 (openQuestCollectibleRewardModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import getQuestLogger from "getQuestLogger" /* 7977 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 11374 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 11582 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 11767 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import getQuestLogger from "getQuestLogger" /* 7122 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10542 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10681 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10694 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -31,10 +31,10 @@ function QuestCollectibleRewardModalMessages(quest) {
   obj4.children = items1;
   return React5(timestampProducer, obj4);
 }
-const QuestsExperimentLocations = fn(5693).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5756).QuestsExperimentLocations;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { title: { textAlign: "center", marginHorizontal: nativeDefault.space.PX_32 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);

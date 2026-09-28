@@ -1,14 +1,14 @@
-// Module ID: 8335
-// Function ID: 8336
+// Module ID: 7488
+// Function ID: 7489
 // Name: InGameMessageNuxSystemMessage
-// Dependencies: [5015, 1074, 8243, 8250, 8252, 2108, 1115, 8254, 2]
+// Dependencies: [5063, 1074, 7395, 7402, 7404, 2111, 1115, 7406, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 8335 (InGameMessageNuxSystemMessage)
+// Module 7488 (InGameMessageNuxSystemMessage)
 import util from "util" /* 1115 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8243 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8250 */;
-import ApplicationStore from "ApplicationStore" /* 5015 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7395 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
+import ApplicationStore from "ApplicationStore" /* 5063 */;
 
 require = fn;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
@@ -29,16 +29,16 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, gameName: null, urlOnClick: null };
     const obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj2.usernameOnClick = tmp(8252)(obj3);
+    obj2.usernameOnClick = tmp(7404)(obj3);
     obj2.gameName = application.name;
     const obj4 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
-    obj4.url = tmp(2108).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    obj4.url = tmp(2111).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     obj4.linkColor = tmp3.linkColor;
     obj2.urlOnClick = obj4;
     const obj5 = { content: null };
     const intl = util.intl;
     obj5.content = intl.formatToParts(util.t["92erOB"], obj2);
-    const merged = Object.assign(tmp(8254)(message));
+    const merged = Object.assign(tmp(7406)(message));
     return obj5;
   }
   tmp3 = resolveMessageContentColorsDefault(theme);

@@ -1,10 +1,10 @@
-// Module ID: 9210
-// Function ID: 9211
+// Module ID: 8364
+// Function ID: 8365
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1074, 21, 8989, 7590, 7594, 1978, 5218, 1115, 2]
+// Dependencies: [5, 19, 1074, 21, 8139, 6735, 6739, 1979, 5281, 1115, 2]
 // Exports: default
 
-// Module 9210 (GameProfileGameClaimCta)
+// Module 8364 (GameProfileGameClaimCta)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -44,10 +44,10 @@ export default function GameProfileGameClaimCta(trackAction) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            trackAction(v3(8989).GameProfileTrackActionActions.ClaimGame);
+            trackAction(v3(8139).GameProfileTrackActionActions.ClaimGame);
             v1 = 1;
             v3 = 1;
-            const obj4 = { value: v1(7590).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7594).LoginHandoffSource.GAME_CLAIM), done: false };
+            const obj4 = { value: v1(6735).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(6739).LoginHandoffSource.GAME_CLAIM), done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
@@ -75,7 +75,7 @@ export default function GameProfileGameClaimCta(trackAction) {
     const intl = trackAction(1115).intl;
     obj.text = intl.string(trackAction(1115).t["mqg+to"]);
     obj.onPress = callback;
-    let tmp3 = jsx(trackAction(5218).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+    let tmp3 = jsx(trackAction(5281).Button, { variant: "secondary", size: "md", text: null, onPress: null });
   } else {
     tmp3 = null;
   }

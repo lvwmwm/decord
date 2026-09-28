@@ -1,20 +1,20 @@
-// Module ID: 11235
-// Function ID: 11236
+// Module ID: 10403
+// Function ID: 10404
 // Name: InstantInviteCreator
-// Dependencies: [19, 17, 21, 4788, 5216, 576, 1177, 11236, 2]
+// Dependencies: [19, 17, 21, 4836, 5279, 576, 1177, 10404, 2]
 
-// Module 11235 (InstantInviteCreator)
+// Module 10403 (InstantInviteCreator)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import Stack_Stack from "Stack/Stack" /* 5216 */;
-import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 11236 */;
+import Stack_Stack from "Stack/Stack" /* 5279 */;
+import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10404 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ identity: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteCreator.tsx");

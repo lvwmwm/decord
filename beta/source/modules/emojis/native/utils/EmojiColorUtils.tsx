@@ -1,11 +1,11 @@
-// Module ID: 16420
-// Function ID: 16421
+// Module ID: 15711
+// Function ID: 15712
 // Name: utils/EmojiColorUtils
-// Dependencies: [5, 17, 1438, 2]
+// Dependencies: [5, 17, 1439, 2]
 // Exports: getEmojiDominantColors
 
-// Module 16420 (utils/EmojiColorUtils)
-import privDefault from "priv" /* 1438 */;
+// Module 15711 (utils/EmojiColorUtils)
+import privDefault from "priv" /* 1439 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 function _getEmojiCacheKey(name) {
@@ -46,7 +46,7 @@ let closure_4 = async function _getFromCacheOrFallback2(arg0, value) {
           closure_129_5 = undefined;
           c2 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp6) {
         if (arg0 === 1) {
@@ -134,7 +134,7 @@ let closure_5 = async function _getEmojiDominantColors(arg0, value) {
           ({ emoji: closure_130_0, emojiSource: closure_130_1 } = closure_0);
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

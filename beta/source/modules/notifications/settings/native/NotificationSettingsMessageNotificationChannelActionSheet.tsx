@@ -1,21 +1,21 @@
-// Module ID: 10458
-// Function ID: 10459
+// Module ID: 9622
+// Function ID: 9623
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 4969, 1074, 4970, 1084, 21, 10443, 10457, 1115, 10444, 7396, 7391, 2]
+// Dependencies: [19, 5017, 1074, 5018, 1084, 21, 9607, 9621, 1115, 9608, 6540, 6535, 2]
 // Exports: default
 
-// Module 10458 (NotificationSettingsMessageNotificationChannelActionSheet)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10444 */;
+// Module 9622 (NotificationSettingsMessageNotificationChannelActionSheet)
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9608 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const UserNotificationSettings = fn(1074).UserNotificationSettings;
-const UnreadSetting = fn(4970).UnreadSetting;
+const UnreadSetting = fn(5018).UnreadSetting;
 let closure_6 = fn(1084).ChannelNotificationSettingsFlags;
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -46,8 +46,10 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     if (tmp) {
       obj.flags = notificationSettingsFlagUtils.withChannelUnreadFlags(UserGuildSettingsStore.getChannelIdFlags(channel.channel.guild_id, channel.channel.id), constants.UNREADS_ALL_MESSAGES);
     }
+    const obj4 = { guildId: channel.channel.guild_id, channelId: channel.channel.id, settings: obj, label: null };
     const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
-    const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.notifications(message_notifications));
+    obj4.label = NotificationLabel.notifications(message_notifications);
+    const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(obj4);
   };
-  return tmp4(unread(10457), obj2);
+  return tmp4(unread(9621), obj2);
 };

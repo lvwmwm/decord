@@ -1,58 +1,79 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 10657
+// Function ID: 10658
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 1372, 8493, 1074, 11492, 21, 4788, 576, 1478, 4784, 11486, 1612, 504, 8498, 11493, 1115, 11489, 7656, 5218, 5826, 2]
+// Dependencies: [19, 17, 1372, 7637, 1074, 10658, 21, 4836, 576, 1479, 4832, 1115, 10652, 1613, 504, 7642, 10659, 10660, 10655, 6800, 10662, 5281, 5889, 2]
 // Exports: default
 
-// Module 11491 (BadgeDirectoryView)
+// Module 10657 (BadgeDirectoryView)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8498 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11486 */;
-import BadgeUtils from "BadgeUtils" /* 11493 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7642 */;
+import BadgeUtils from "BadgeUtils" /* 10659 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10662 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8493 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
 
 require = fn;
 function BadgeSection(children) {
-  ({ badges, tileSize: require, emptyText } = children);
-  let map = closure_12();
+  ({ badges, tileSize: require, emptyText, onPressBadge: importDefault, badgeIndicatorIds: dependencyMap } = children);
+  let map = closure_13();
   if (0 === badges.length) {
     if (null == emptyText) {
       return null;
     }
   }
   let obj = { style: map.section, children: null };
-  let items = [closure_10(Text_Text.Text, { variant: "text-md/medium", color: "text-strong", children: children.title }), ];
+  let items = [closure_11(Text_Text.Text, { variant: "text-md/medium", color: "text-strong", children: children.title }), ];
   if (badges.length > 0) {
     const obj2 = { style: map.grid, children: null };
     map = badges.map;
-    obj2.children = map((accessibilityLabel) => {
-      const obj = { style: null, accessible: true, accessibilityLabel: accessibilityLabel.name, children: closure_2_10(BadgeCatalogIconDefault, { badge: accessibilityLabel, size: 44 }) };
+    obj2.children = map((badge) => {
+      const height = badge;
+      let hasItem = set.has(badge.badge_id);
+      const obj = { style: null, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
       const items = [map.tile, ];
       const size = { width: height, height };
       items[1] = size;
       obj.style = items;
-      return closure_2_10(hasOwnProperty, obj, accessibilityLabel.badge_id);
+      const name = badge.name;
+      if (hasItem) {
+        const intl = require("util").intl;
+        const _HermesInternal = HermesInternal;
+        let combined = "" + name + ", " + intl.string(require("util").t.y2b7CA);
+      } else {
+        combined = name;
+      }
+      obj.accessibilityLabel = combined;
+      obj.onPress = function onPress() {
+        return importDefault(closure_0);
+      };
+      const items1 = [closure_1_11(require("BadgeCatalogIcon"), { badge, size: 44 }), ];
+      if (hasItem) {
+        const obj3 = { style: map.badgeIndicator, "aria-hidden": true };
+        hasItem = closure_1_11(closure_1_6, obj3);
+      }
+      items1[1] = hasItem;
+      obj.children = items1;
+      return closure_1_12(closure_1_4, obj, badge.badge_id);
     });
     let tmp4Result = tmp4(tmp3, obj2);
   } else {
-    const obj3 = { variant: "text-md/medium", color: "text-muted", children: emptyText };
+    let obj3 = { variant: "text-md/medium", color: "text-muted", children: emptyText };
     tmp4Result = tmp4(Text_Text.Text, obj3);
   }
   items[1] = tmp4Result;
   obj.children = items;
-  closure_11(closure_5, obj);
+  closure_12(closure_6, obj);
 }
 get_ActivityIndicator = fn(17);
-({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
+({ Pressable: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const UserSettingsSections = fn(1074).UserSettingsSections;
-let closure_9 = fn(11492).UserProfileEditAutoFocusElement;
+let closure_10 = fn(10658).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4788);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, content: null, centered: null, section: null, grid: null, tile: null, footer: null };
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+const createStyles = fn(4836);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, content: null, centered: null, section: null, grid: null, tile: null, badgeIndicator: null, footer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.content = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_48 };
 let obj4 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_48 };
@@ -63,23 +84,27 @@ let obj6 = { gap: nativeDefault.space.PX_16 };
 obj2.grid = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_12 };
 const obj7 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_12 };
 obj2.tile = { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+let size = { position: "absolute", top: nativeDefault.space.PX_6, right: nativeDefault.space.PX_6, width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+obj2.badgeIndicator = size;
 let obj8 = { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj2.footer = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 };
-let closure_12 = createStyles.createStyles(obj2);
-let size = fn(2);
+let closure_13 = createStyles.createStyles(obj2);
+size = fn(2);
 let result = size.fileFinishedImporting("modules/badges/native/BadgeDirectoryView.tsx");
 
 export default function BadgeDirectoryView(targetUserId) {
+  let stateFromStores;
+  let stateFromStores1;
   targetUserId = undefined;
   let stateFromStoresArray;
-  const tmp = closure_12();
-  let stringResult1 = stateFromStoresArray;
-  const diff = targetUserId(stateFromStoresArray[9])().width - 2 * targetUserId(stateFromStoresArray[8]).space.PX_16;
-  let result = 3 * targetUserId(stateFromStoresArray[8]).space.PX_12;
-  let items = [tmp.footer, { paddingBottom: targetUserId(stateFromStoresArray[12])().bottom + targetUserId(stateFromStoresArray[8]).space.PX_16 }];
-  let obj = { paddingBottom: targetUserId(stateFromStoresArray[12])().bottom + targetUserId(stateFromStoresArray[8]).space.PX_16 };
+  let tmp = closure_13();
+  let stringResult1 = stateFromStores1;
+  const diff = stateFromStores(stateFromStores1[9])().width - 2 * stateFromStores(stateFromStores1[8]).space.PX_16;
+  let result = 3 * stateFromStores(stateFromStores1[8]).space.PX_12;
+  let items = [tmp.footer, { paddingBottom: stateFromStores(stateFromStores1[13])().bottom + stateFromStores(stateFromStores1[8]).space.PX_16 }];
+  let obj = { paddingBottom: stateFromStores(stateFromStores1[13])().bottom + stateFromStores(stateFromStores1[8]).space.PX_16 };
   const items1 = [UserStore];
-  const stateFromStores = targetUserId(stateFromStoresArray[13]).useStateFromStores(items1, () => {
+  stateFromStores = targetUserId(stateFromStores1[14]).useStateFromStores(items1, () => {
     currentUser = currentUser.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -87,9 +112,9 @@ export default function BadgeDirectoryView(targetUserId) {
     }
     return id;
   });
-  let obj2 = targetUserId(stateFromStoresArray[13]);
+  let obj2 = targetUserId(stateFromStores1[14]);
   const items2 = [UserStore];
-  const stateFromStores1 = targetUserId(stateFromStoresArray[13]).useStateFromStores(items2, () => {
+  stateFromStores1 = targetUserId(stateFromStores1[14]).useStateFromStores(items2, () => {
     let tmp2;
     if (null != targetUserId) {
       const user = UserStore.getUser(tmp);
@@ -101,15 +126,16 @@ export default function BadgeDirectoryView(targetUserId) {
     }
     return tmp2;
   });
+  noop = tmp8;
   let tmp9 = stateFromStores;
   if (null != targetUserId && targetUserId !== stateFromStores) {
     tmp9 = targetUserId;
   }
   targetUserId = tmp9;
-  let obj3 = targetUserId(stateFromStoresArray[13]);
+  let obj3 = targetUserId(stateFromStores1[14]);
   const items3 = [BadgeDirectoryStore];
   const items4 = [tmp9];
-  stateFromStoresArray = targetUserId(stringResult1[13]).useStateFromStoresArray(items3, () => {
+  stateFromStoresArray = targetUserId(stringResult1[14]).useStateFromStoresArray(items3, () => {
     if (null != targetUserId) {
       let badges = BadgeDirectoryStore.getBadges(tmp);
     } else {
@@ -117,21 +143,21 @@ export default function BadgeDirectoryView(targetUserId) {
     }
     return badges;
   }, items4);
-  const tmp5Result = targetUserId(stringResult1[13]);
+  const tmp5Result = targetUserId(stringResult1[14]);
   const items5 = [BadgeDirectoryStore];
   const items6 = [tmp9];
-  const stateFromStores2 = targetUserId(stringResult1[13]).useStateFromStores(items5, () => {
+  const stateFromStores2 = targetUserId(stringResult1[14]).useStateFromStores(items5, () => {
     let hasCatalogForResult = null != targetUserId;
     if (hasCatalogForResult) {
       hasCatalogForResult = BadgeDirectoryStore.hasCatalogFor(tmp);
     }
     return hasCatalogForResult;
   }, items6);
-  const tmp5Result3 = targetUserId(stringResult1[13]);
+  const tmp5Result4 = targetUserId(stringResult1[14]);
   const items7 = [BadgeDirectoryStore];
   const items8 = [tmp9];
   const items9 = [tmp9];
-  const stateFromStores3 = targetUserId(stringResult1[13]).useStateFromStores(items7, () => BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId), items8);
+  const stateFromStores3 = targetUserId(stringResult1[14]).useStateFromStores(items7, () => BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId), items8);
   const effect = noop.useEffect(() => {
     if (null != targetUserId) {
       if (!tmp2) {
@@ -140,103 +166,131 @@ export default function BadgeDirectoryView(targetUserId) {
       tmp2 = BadgeDirectoryStore.hasCatalogFor(tmp) && !BadgeDirectoryStore.isCatalogStaleFor(tmp);
     }
   }, items9);
-  const items10 = [stateFromStoresArray];
-  const memo = noop.useMemo(() => BadgeUtils.getDirectoryBadges(stateFromStoresArray), items10);
-  const owned = memo.owned;
+  const items10 = [stateFromStores, null != targetUserId && targetUserId !== stateFromStores];
+  const effect1 = noop.useEffect(() => {
+    let tmp = closure_3;
+    if (closure_3) {
+      tmp = null != stateFromStores;
+    }
+    if (tmp) {
+      if (!BadgeDirectoryStore.hasCatalogFor(stateFromStores)) {
+        const badgeDirectory = BadgeDirectoryActionCreators.fetchBadgeDirectory(tmp5);
+      }
+      tmp5 = stateFromStores;
+    }
+  }, items10);
+  const items11 = [stateFromStoresArray];
+  const memo = noop.useMemo(() => BadgeUtils.getDirectoryBadges(stateFromStoresArray), items11);
+  ({ owned, earnable } = memo);
+  const tmp5Result5 = targetUserId(stringResult1[14]);
+  const obj4 = { badges: stateFromStoresArray, enabled: null };
+  let tmp30Result = !tmp8;
+  obj4.enabled = tmp30Result;
+  const badgeIndicatorIds = targetUserId(stringResult1[17]).useBadgeDirectoryBadgeIndicators(obj4).badgeIndicatorIds;
   if (null != targetUserId && targetUserId !== stateFromStores) {
     if (null != stateFromStores1) {
-      const intl2 = tmp5(stringResult1[16]).intl;
-      const obj4 = { username: stateFromStores1 };
-      let formatToPlainStringResult = intl2.formatToPlainString(tmp5(stringResult1[16]).t.EIcwoe, obj4);
+      const intl2 = tmp5(stringResult1[11]).intl;
+      const obj5 = { username: stateFromStores1 };
+      let formatToPlainStringResult = intl2.formatToPlainString(tmp5(stringResult1[11]).t.EIcwoe, obj5);
     }
-    const items11 = [tmp9];
+    const items12 = [tmp9];
     const callback = obj7.useCallback(() => {
       if (null != targetUserId) {
         const badgeDirectory = BadgeDirectoryActionCreators.fetchBadgeDirectory(tmp, { isRetry: true });
       }
-    }, items11);
+    }, items12);
+    const items13 = [tmp9, tmp8, stateFromStores1];
     const callback1 = obj7.useCallback(() => {
-      const result = targetUserId(stateFromStoresArray[17]).closeBadgeDirectoryScreen();
-      const obj = targetUserId(stateFromStoresArray[17]);
+      const result = targetUserId(stateFromStores1[18]).closeBadgeDirectoryScreen();
+      const obj = targetUserId(stateFromStores1[18]);
       const obj3 = { screen: constants.PROFILE_CUSTOMIZATION, params: { autoFocusElement: constants2.BADGES } };
-      targetUserId(stateFromStoresArray[18]).openUserSettings(obj3);
+      targetUserId(stateFromStores1[19]).openUserSettings(obj3);
     }, []);
+    const callback2 = obj7.useCallback((badge_id) => {
+      if (null != targetUserId) {
+        const obj2 = { badgeId: badge_id.badge_id, displayedUserId: tmp, isViewingOtherUser, targetUsername: stateFromStores1 };
+        const result = openBadgeDetailsSheet.openBadgeDetailsSheet(obj2);
+      }
+    }, items13);
     let string = obj7.useCallback(() => {
-      const result = targetUserId(stateFromStoresArray[17]).closeBadgeDirectoryScreen();
-      const obj = targetUserId(stateFromStoresArray[17]);
-      const result1 = targetUserId(stateFromStoresArray[17]).openBadgeDirectoryScreen();
+      const result = targetUserId(stateFromStores1[18]).closeBadgeDirectoryScreen();
+      const obj = targetUserId(stateFromStores1[18]);
+      const result1 = targetUserId(stateFromStores1[18]).openBadgeDirectoryScreen();
     }, []);
     if (!stateFromStores2) {
       if (stateFromStores3) {
-        const obj5 = { style: tmp.centered, children: null };
-        const obj6 = { variant: "text-md/semibold", children: null };
-        const intl3 = tmp5(stringResult1[16]).intl;
-        obj6.children = intl3.string(tmp5(stringResult1[16]).t.iufib1);
-        const items12 = [closure_10(tmp5(stringResult1[10]).Text, obj6), , ];
-        const obj8 = { variant: "text-md/normal", color: "text-subtle", children: null };
-        const intl4 = tmp5(stringResult1[16]).intl;
-        obj8.children = intl4.string(tmp5(stringResult1[16]).t.eAn6z2);
-        items12[1] = closure_10(tmp5(stringResult1[10]).Text, obj8);
-        const obj9 = { variant: "secondary", size: "sm", onPress: callback, text: null };
-        const intl5 = tmp5(stringResult1[16]).intl;
-        obj9.text = intl5.string(tmp5(stringResult1[16]).t["7NqTJn"]);
-        items12[2] = closure_10(tmp5(stringResult1[19]).Button, obj9);
-        obj5.children = items12;
-        return closure_11(closure_5, obj5);
+        const obj6 = { style: tmp.centered, children: null };
+        const obj8 = { variant: "text-md/semibold", children: null };
+        const intl3 = tmp5(stringResult1[11]).intl;
+        obj8.children = intl3.string(tmp5(stringResult1[11]).t.iufib1);
+        const items14 = [closure_11(tmp5(stringResult1[10]).Text, obj8), , ];
+        const obj9 = { variant: "text-md/normal", color: "text-subtle", children: null };
+        const intl4 = tmp5(stringResult1[11]).intl;
+        obj9.children = intl4.string(tmp5(stringResult1[11]).t.eAn6z2);
+        items14[1] = closure_11(tmp5(stringResult1[10]).Text, obj9);
+        const obj10 = { variant: "secondary", size: "sm", onPress: callback, text: null };
+        const intl5 = tmp5(stringResult1[11]).intl;
+        obj10.text = intl5.string(tmp5(stringResult1[11]).t["7NqTJn"]);
+        items14[2] = closure_11(tmp5(stringResult1[21]).Button, obj10);
+        obj6.children = items14;
+        return closure_12(closure_6, obj6);
       }
     }
     if (!stateFromStores2) {
-      const obj10 = { style: tmp.centered, children: closure_10(tmp5(stringResult1[20]).ActivityIndicator, {}) };
-      closure_10(closure_5, obj10);
+      const obj11 = { style: tmp.centered, children: closure_11(tmp5(stringResult1[22]).ActivityIndicator, {}) };
+      closure_11(closure_6, obj11);
     }
     let result1 = (diff - result) / 4;
-    const obj11 = { style: tmp.container, children: null };
-    const obj12 = { contentContainerStyle: tmp.content, children: null };
-    const obj13 = { title: formatToPlainStringResult, badges: owned, tileSize: result1, emptyText: null };
+    const obj12 = { style: tmp.container, children: null };
+    const obj13 = { contentContainerStyle: tmp.content, children: null };
+    const obj14 = { title: formatToPlainStringResult, badges: owned, tileSize: result1, emptyText: null, onPressBadge: null, badgeIndicatorIds: null };
     let stringResult;
     if (!tmp8) {
-      const intl6 = tmp5(stringResult1[16]).intl;
-      stringResult = intl6.string(tmp5(stringResult1[16]).t.Qno0jg);
+      const intl6 = tmp5(stringResult1[11]).intl;
+      stringResult = intl6.string(tmp5(stringResult1[11]).t.Qno0jg);
     }
-    obj13.emptyText = stringResult;
-    const items13 = [closure_10(BadgeSection, obj13), ];
-    let tmp28Result = !tmp8;
+    obj14.emptyText = stringResult;
+    obj14.onPressBadge = callback2;
+    obj14.badgeIndicatorIds = badgeIndicatorIds;
+    const items15 = [closure_11(BadgeSection, obj14), ];
     if (!tmp8) {
-      const obj14 = { title: null, badges: null, tileSize: null };
-      const intl7 = tmp5(stringResult1[16]).intl;
-      obj14.title = intl7.string(tmp5(stringResult1[16]).t["0YzU//"]);
-      obj14.badges = tmp15;
-      obj14.tileSize = result1;
-      tmp28Result = tmp28(tmp29, obj14);
+      const obj15 = { title: null, badges: null, tileSize: null, onPressBadge: null, badgeIndicatorIds: null };
+      const intl7 = tmp5(stringResult1[11]).intl;
+      obj15.title = intl7.string(tmp5(stringResult1[11]).t["0YzU//"]);
+      obj15.badges = earnable;
+      obj15.tileSize = result1;
+      obj15.onPressBadge = callback2;
+      obj15.badgeIndicatorIds = badgeIndicatorIds;
+      tmp30Result = tmp30(tmp31, obj15);
     }
-    items13[1] = tmp28Result;
-    obj12.children = items13;
-    const items14 = [closure_11(closure_4, obj12), ];
+    items15[1] = tmp30Result;
+    obj13.children = items15;
+    const items16 = [closure_12(stateFromStoresArray, obj13), ];
     if (tmp8) {
-      const obj15 = { style: items, children: null };
-      const obj16 = { variant: "secondary", onPress: string, text: null };
-      const intl9 = tmp5(stringResult1[16]).intl;
+      const obj16 = { style: items, children: null };
+      const obj17 = { variant: "secondary", onPress: string, text: null };
+      const intl9 = tmp5(stringResult1[11]).intl;
       string = intl9.string;
-      stringResult1 = string(tmp5(stringResult1[16]).t.msyp90);
-      obj16.text = stringResult1;
-      items = tmp28(tmp5(stringResult1[19]).Button, obj16);
-      obj15.children = items;
-      let tmp28Result2 = tmp28(tmp26, obj15);
+      stringResult1 = string(tmp5(stringResult1[11]).t.msyp90);
+      obj17.text = stringResult1;
+      items = tmp30(tmp5(stringResult1[21]).Button, obj17);
+      obj16.children = items;
+      let tmp30Result2 = tmp30(tmp28, obj16);
     } else {
-      tmp28Result2 = owned.length > 0;
-      if (tmp28Result2) {
-        const obj17 = { style: items, children: null };
-        const obj18 = { variant: "secondary", onPress: callback1, text: null };
-        const intl8 = tmp5(stringResult1[16]).intl;
-        obj18.text = intl8.string(tmp5(stringResult1[16]).t["6CLLyH"]);
-        obj17.children = tmp28(tmp5(stringResult1[19]).Button, obj18);
-        tmp28Result2 = tmp28(tmp26, obj17);
+      tmp30Result2 = owned.length > 0;
+      if (tmp30Result2) {
+        const obj18 = { style: items, children: null };
+        const obj19 = { variant: "secondary", onPress: callback1, text: null };
+        const intl8 = tmp5(stringResult1[11]).intl;
+        obj19.text = intl8.string(tmp5(stringResult1[11]).t["6CLLyH"]);
+        obj18.children = tmp30(tmp5(stringResult1[21]).Button, obj19);
+        tmp30Result2 = tmp30(tmp28, obj18);
       }
     }
-    items14[1] = tmp28Result2;
-    obj11.children = items14;
-    closure_11(closure_5, obj11);
+    items16[1] = tmp30Result2;
+    obj12.children = items16;
+    closure_12(closure_6, obj12);
   }
-  const intl = tmp5(stringResult1[16]).intl;
-  formatToPlainStringResult = intl.string(tmp5(stringResult1[16]).t.UqnlQF);
+  const intl = tmp5(stringResult1[11]).intl;
+  formatToPlainStringResult = intl.string(tmp5(stringResult1[11]).t.UqnlQF);
 };

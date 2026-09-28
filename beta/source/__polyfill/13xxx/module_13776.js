@@ -1,9 +1,33 @@
 // Module ID: 13776
 // Function ID: 13777
-// Dependencies: [1121]
+// Dependencies: [13691, 13777]
+// Exports: getSupportedNumberingSystems
 
 // Module 13776
-import registerAsset from "module_1121" /* 1121 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 51, height: 12, scales: [2, 3], hash: "dfce4abe2b63753703cd28b1bd0f9f1d", name: "img_logo_nitro_small_dark", type: "png" });
+export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
+  _require = locale;
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => (function isSupportedNumberingSystem(item, arg1) {
+    let str = arg1;
+    if (undefined === arg1) {
+      str = "en";
+    }
+    try {
+      const concat = "".concat;
+      const combined = "".concat(str, "-u-nu-");
+      const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(combined.concat(item));
+      if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+        if ("123" === memoizedNumberFormat.format(123)) {
+          return false;
+        }
+      }
+      return true;
+    } catch (err) {
+    }
+  })(item, closure_0));
+};

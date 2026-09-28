@@ -1,15 +1,15 @@
-// Module ID: 7989
-// Function ID: 7990
+// Module ID: 7134
+// Function ID: 7135
 // Name: SessionAdGenerator
-// Dependencies: [1091, 1255, 7745, 573, 1231, 2]
+// Dependencies: [1091, 1255, 6891, 573, 1231, 2]
 // Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession, isAdSessionExpired
 
-// Module 7989 (SessionAdGenerator)
+// Module 7134 (SessionAdGenerator)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import v1 from "v1" /* 1255 */;
-import SessionUtils from "SessionUtils" /* 7745 */;
+import SessionUtils from "SessionUtils" /* 6891 */;
 
 require = fn;
 let closure_3 = 12 * DurationsDefault.Millis.HOUR;

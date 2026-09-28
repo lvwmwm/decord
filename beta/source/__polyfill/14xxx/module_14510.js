@@ -1,25 +1,9 @@
 // Module ID: 14510
 // Function ID: 14511
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 14510
-const weakMap = new WeakMap();
+import registerAsset from "module_1121" /* 1121 */;
 
-export default function getInternalSlots(arg0, arg1) {
-  let items = arg1;
-  if (undefined === arg1) {
-    items = [];
-  }
-  value = weakMap.get(arg0);
-  if (!value) {
-    const _Object = Object;
-    const obj2 = Object.create(null, items.reduce((acc, item) => {
-      acc[item] = { enumerable: false, writable: true, configurable: true };
-      return acc;
-    }, {}));
-    const result = weakMap.set(arg0, obj2);
-    value = obj2;
-  }
-  return value;
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e5597814a0893b2321f6b666c9cfcb40", name: "ClipsIcon", type: "png" });

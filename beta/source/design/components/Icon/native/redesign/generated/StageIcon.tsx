@@ -1,13 +1,13 @@
-// Module ID: 5347
-// Function ID: 5348
+// Module ID: 5411
+// Function ID: 5412
 // Name: StageIcon
-// Dependencies: [19, 21, 576, 4488, 5280, 2]
+// Dependencies: [19, 21, 576, 4530, 5344, 2]
 // Exports: StageIcon
 
-// Module 5347 (StageIcon)
+// Module 5411 (StageIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod5280 from "module_5280" /* 5280 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod5344 from "module_5344" /* 5344 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const StageIcon = function StageIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5280, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5344, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

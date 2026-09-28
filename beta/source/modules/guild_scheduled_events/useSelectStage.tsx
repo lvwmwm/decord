@@ -1,15 +1,15 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9069
+// Function ID: 9070
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 2041, 2095, 504, 8696, 2]
+// Dependencies: [5, 32, 19, 2045, 2099, 504, 7841, 2]
 // Exports: default
 
-// Module 9908 (useSelectStage)
+// Module 9069 (useSelectStage)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const require = globalThis.__r;
 

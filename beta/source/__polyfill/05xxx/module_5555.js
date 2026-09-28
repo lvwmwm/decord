@@ -1,9 +1,14 @@
 // Module ID: 5555
 // Function ID: 5556
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 5555
-import registerAsset from "module_1121" /* 1121 */;
+const obj = { 4: null };
+obj[4] = {
+  name: "ShotInfo",
+  description(arg0) {
+    return arg0;
+  }
+};
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "e99a6a1cd140c0c8eecfa7ce5bbe308d", name: "img_account_sync_skype_light_and_dark", type: "png" });
+export default obj;

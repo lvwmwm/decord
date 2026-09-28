@@ -1,19 +1,19 @@
-// Module ID: 7217
-// Function ID: 7218
+// Module ID: 6361
+// Function ID: 6362
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 7218, 502, 1074, 21, 4788, 5371, 4784, 5141, 1115, 1364, 5396, 7219, 1484, 504, 1487, 6866, 7221, 5142, 7222, 7223, 7224, 4688, 7225, 7229, 7230, 7232, 7226, 5218, 7233, 1609, 7235, 7237, 6880, 7243, 7245, 7247, 5216, 7254, 7216, 2]
+// Dependencies: [5, 32, 19, 17, 6362, 502, 1074, 21, 4836, 5435, 4832, 5204, 1115, 1364, 5460, 6363, 1485, 504, 1488, 6010, 6365, 5205, 6366, 6367, 6368, 4735, 6369, 6373, 6374, 6376, 6370, 5281, 6377, 1610, 6379, 6381, 6024, 6387, 6389, 6391, 5279, 6398, 6360, 2]
 // Exports: default
 
-// Module 7217 (Login)
+// Module 6361 (Login)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
-import Pressables from "Pressables" /* 5371 */;
-import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5396 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
+import Pressables from "Pressables" /* 5435 */;
+import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5460 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7218 */;
+import PhoneStore from "PhoneStore" /* 6362 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const require = globalThis.__r;
@@ -58,7 +58,7 @@ const View = fn(17).View;
 const AuthStates = fn(1074).AuthStates;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_12 = createStyles.createStyles((arg0) => {
   const obj = { password: { marginTop: 24 }, button: { width: "100%", marginTop: 16 }, hint: { marginTop: 4 }, link: { alignSelf: "flex-start", paddingVertical: 4 }, separator: { paddingHorizontal: 16, paddingVertical: 4 }, content: null };
   let num = 0;
@@ -264,7 +264,7 @@ export default function Login(isMultiAccount) {
               let authenticationErrorsFromV6OrEarlierAPIError;
               c7 = 1;
               c8 = 1;
-              return { value: "PX_16", done: true };
+              return { value: "flex", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

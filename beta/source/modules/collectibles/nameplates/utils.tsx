@@ -1,15 +1,15 @@
-// Module ID: 1970
-// Function ID: 1971
+// Module ID: 1971
+// Function ID: 1972
 // Name: utils
-// Dependencies: [1971, 1085, 1974, 1976, 1115, 2]
+// Dependencies: [1972, 1085, 1975, 1977, 1115, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1970 (utils)
+// Module 1971 (utils)
 import Constants from "Constants" /* 1085 */;
 import util from "util" /* 1115 */;
-import NameplateRecord from "NameplateRecord" /* 1971 */;
-import constants from "constants" /* 1974 */;
-import decodeImageDefault from "decodeImage" /* 1976 */;
+import NameplateRecord from "NameplateRecord" /* 1972 */;
+import constants from "constants" /* 1975 */;
+import decodeImageDefault from "decodeImage" /* 1977 */;
 import size from "module_2" /* 2 */;
 
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -23,7 +23,7 @@ export const getNameplateData = function getNameplateData(nameplate) {
     ({ skuId: obj.skuId, asset: obj.src, label: obj.imgAlt } = nameplate);
     let INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[nameplate.palette];
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1974).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1975).INVALID_NAMEPLATE_PALETTE;
     }
     obj.palette = INVALID_NAMEPLATE_PALETTE;
     tmp = obj;
@@ -44,7 +44,7 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
         ({ skuId: obj.skuId, asset: obj.src, label: obj.imgAlt, palette } = first);
         let INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[palette];
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1974).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1975).INVALID_NAMEPLATE_PALETTE;
         }
         obj.palette = INVALID_NAMEPLATE_PALETTE;
         tmp = obj;

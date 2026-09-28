@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 200, height: 104, scales: [1, 2, 3], hash: "47b8d830403152e049ae36d361c38751", name: "img_invalid_link_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "8eabe75983473aecbcb03200bb7a397b", name: "ic_alert", type: "png" });

@@ -1,10 +1,10 @@
-// Module ID: 10994
-// Function ID: 10995
+// Module ID: 10161
+// Function ID: 10162
 // Name: selectActiveMarketingComponent
 // Dependencies: [2]
 // Exports: default
 
-// Module 10994 (selectActiveMarketingComponent)
+// Module 10161 (selectActiveMarketingComponent)
 import size from "module_2" /* 2 */;
 
 function comparePriorityDescending(effectiveStartDate, effectiveStartDate2) {

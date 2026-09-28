@@ -1,14 +1,14 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 16820
+// Function ID: 16821
 // Name: LaunchPadNotificationCenter
-// Dependencies: [19, 21, 4788, 16744, 2]
+// Dependencies: [19, 21, 4836, 16038, 2]
 
-// Module 17464 (LaunchPadNotificationCenter)
-import notifications_NotificationsDefault from "notifications/Notifications" /* 16744 */;
+// Module 16820 (LaunchPadNotificationCenter)
+import notifications_NotificationsDefault from "notifications/Notifications" /* 16038 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_3 = createStyles.createStyles({ wrapper: { height: "100%" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadNotificationCenter.tsx");

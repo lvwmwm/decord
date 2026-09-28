@@ -1,13 +1,13 @@
-// Module ID: 12123
-// Function ID: 12124
+// Module ID: 11318
+// Function ID: 11319
 // Name: GuildDisableCommunicationActionCreators
-// Dependencies: [19, 1372, 21, 4991, 12124, 1980, 5141, 12127, 2]
+// Dependencies: [19, 1372, 21, 5039, 11319, 1981, 5204, 11322, 2]
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 12123 (GuildDisableCommunicationActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+// Module 11318 (GuildDisableCommunicationActionCreators)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -21,14 +21,14 @@ export const openDisableCommunication = function openDisableCommunication(userId
   const user = UserStore.getUser(userId.userId);
   if (null != user) {
     const obj2 = { guildId, user, cancelButtonCallback };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12124, dependencyMap.paths), obj2);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11319, dependencyMap.paths), obj2);
   }
 };
 export const openEnableCommunication = function openEnableCommunication(arg0) {
   ({ guildId: require, userId: importDefault, cancelButtonCallback: dependencyMap } = arg0);
   actions_AlertActionCreatorsDefault.openLazy({
     importer() {
-      return asyncRequireImpl(12127, dependencyMap.paths).then((result) => {
+      return asyncRequireImpl(11322, dependencyMap.paths).then((result) => {
         closure_0 = result.default;
         return (arg0) => {
           const obj = {};

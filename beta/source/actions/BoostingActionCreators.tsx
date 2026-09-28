@@ -1,16 +1,16 @@
-// Module ID: 4685
-// Function ID: 4686
+// Module ID: 4732
+// Function ID: 4733
 // Name: BoostingActionCreators
-// Dependencies: [5, 4686, 4687, 4452, 1074, 1271, 573, 4688, 2]
+// Dependencies: [5, 4733, 4734, 4494, 1074, 1271, 573, 4735, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 4685 (BoostingActionCreators)
+// Module 4732 (BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 4686 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4687 */;
-import SubscriptionStore from "SubscriptionStore" /* 4452 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 4733 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4734 */;
+import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 
 require = fn;
 let closure_8 = async function _fetchAppliedGuildBoostsForGuild(arg0, value) {
@@ -54,7 +54,7 @@ let closure_8 = async function _fetchAppliedGuildBoostsForGuild(arg0, value) {
           closure_130_2 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -135,7 +135,7 @@ let closure_9 = async function _fetchAppliedGuildBoostsForUser(arg0, value) {
           closure_129_1 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -315,7 +315,7 @@ let closure_13 = async function _applyToGuild(arg0, value) {
           closure_131_5 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

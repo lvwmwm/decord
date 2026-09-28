@@ -1,11 +1,11 @@
-// Module ID: 7340
-// Function ID: 7341
+// Module ID: 6484
+// Function ID: 6485
 // Name: useFastestListSections
-// Dependencies: [19, 5847, 7341, 7342, 2]
+// Dependencies: [19, 5910, 6485, 6486, 2]
 // Exports: default
 
-// Module 7340 (useFastestListSections)
-import FastestListItemTypeDefault from "FastestListItemType" /* 7341 */;
+// Module 6484 (useFastestListSections)
+import FastestListItemTypeDefault from "FastestListItemType" /* 6485 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

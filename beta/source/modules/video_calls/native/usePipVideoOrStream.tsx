@@ -1,25 +1,25 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 8848
+// Function ID: 8849
 // Name: usePipVideoOrStream
-// Dependencies: [2040, 4804, 9692, 4810, 502, 2041, 1992, 4811, 4809, 504, 4840, 4645, 9678, 2]
+// Dependencies: [2044, 4852, 8849, 4858, 502, 2045, 1993, 4859, 4857, 504, 4888, 4692, 8835, 2]
 // Exports: default, useHasPipParticipant
 
-// Module 9691 (usePipVideoOrStream)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 9678 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 9692 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
+// Module 8848 (usePipVideoOrStream)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 8835 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 8849 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const CallConstants = fn(4809);
+const CallConstants = fn(4857);
 ({ isStreamParticipant: closure_11, isUserParticipant: closure_12, ParticipantTypes: map1 } = CallConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/usePipVideoOrStream.tsx");
@@ -96,7 +96,7 @@ export default function usePipVideoOrStream(arg0) {
     if (tmp11 == null) {
       tmp12 = found;
     }
-    let isModalOpenResult = null != selectedParticipant;
+    let isModalOpenResult = null != tmp && null != selectedParticipant;
     if (isModalOpenResult) {
       let id;
       if (tmp11 != null) {
@@ -116,6 +116,9 @@ export default function usePipVideoOrStream(arg0) {
     }
     if (isModalOpenResult) {
       isModalOpenResult = NavigationRouteUtils.isModalOpen(ChannelCallModalDefault);
+    }
+    if (isModalOpenResult) {
+      isModalOpenResult = !obj2.getChatOpen(tmp);
     }
     if (isModalOpenResult) {
       tmp12 = found;
@@ -210,7 +213,7 @@ export const useHasPipParticipant = function useHasPipParticipant(isActivityView
     if (tmp11 == null) {
       tmp12 = found;
     }
-    let isModalOpenResult = null != selectedParticipant;
+    let isModalOpenResult = null != tmp && null != selectedParticipant;
     if (isModalOpenResult) {
       let id;
       if (tmp11 != null) {
@@ -230,6 +233,9 @@ export const useHasPipParticipant = function useHasPipParticipant(isActivityView
     }
     if (isModalOpenResult) {
       isModalOpenResult = NavigationRouteUtils.isModalOpen(ChannelCallModalDefault);
+    }
+    if (isModalOpenResult) {
+      isModalOpenResult = !obj2.getChatOpen(tmp);
     }
     if (isModalOpenResult) {
       tmp12 = found;

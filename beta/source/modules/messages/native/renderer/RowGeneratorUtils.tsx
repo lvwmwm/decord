@@ -1,30 +1,30 @@
-// Module ID: 8409
-// Function ID: 8410
+// Module ID: 7565
+// Function ID: 7566
 // Name: RowGeneratorUtils
-// Dependencies: [17, 4780, 2041, 2063, 4781, 8223, 1074, 4788, 4637, 576, 7541, 5010, 1477, 2]
+// Dependencies: [4825, 2045, 2067, 4829, 7375, 1074, 4836, 4683, 576, 6685, 5058, 1427, 1478, 2]
 
-// Module 8409 (RowGeneratorUtils)
+// Module 7565 (RowGeneratorUtils)
 import nativeDefault from "native" /* 576 */;
-import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1477 */;
-import ColorUtils from "ColorUtils" /* 4637 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7541 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1478 */;
+import ColorUtils from "ColorUtils" /* 4683 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6685 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import NativeMediaManagerModule from "NativeMediaManagerModule" /* 1427 */;
 
 require = fn;
-const MessageConstants = fn(4781);
+const MessageConstants = fn(4829);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: metroRequire, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_7 } = MessageConstants);
-const SwipeActionsType = fn(8223).SwipeActionsType;
+const SwipeActionsType = fn(7375).SwipeActionsType;
 const Constants = fn(1074);
 ({ MessageFlags: closure_9, MessageTypes: c10 } = Constants);
-let createStyles = fn(4788);
+let createStyles = fn(4836);
 const result = createStyles.experimental_createToken(() => ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BRAND_500, 0.1));
-createStyles = fn(4788);
+createStyles = fn(4836);
 const nativeStyleProperties = createStyles.createNativeStyleProperties({ ephemeralBackgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, ephemeralGutterColor: nativeDefault.colors.BACKGROUND_BRAND, giftIntentEphemeralBackgroundColor: result, mentionedBackgroundColor: nativeDefault.colors.MESSAGE_MENTIONED_BACKGROUND_DEFAULT, mentionedGutterColor: nativeDefault.unsafe_rawColors.YELLOW_300, automodBlockedBackgroundColor: nativeDefault.colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, automodBlockedGutterColor: nativeDefault.unsafe_rawColors.RED_345, editingColor: nativeDefault.colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT });
-const MediaManager = fn(17).NativeModules.MediaManager;
-const set = new Set(MediaManager.getConstants().supportedExtensions);
+const set = new Set(NativeMediaManagerModule.getConstants().supportedExtensions);
 const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorUtils.tsx");
 
@@ -81,12 +81,12 @@ export default {
               if (tmp3Result2.hasEphemeralAppearance(message)) {
                 ephemeralGutterColor = tmp.ephemeralGutterColor;
               }
-              tmp3Result2 = tmp3(5010);
+              tmp3Result2 = tmp3(5058);
             }
             const obj6 = { backgroundColor: officialMessageColor | React5, gutterColor: ephemeralGutterColor };
             return obj6;
           }
-          tmp3Result = tmp3(7541);
+          tmp3Result = tmp3(6685);
         }
         obj = GuildOfficialMessageUtils;
       }

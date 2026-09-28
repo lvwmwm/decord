@@ -1,15 +1,15 @@
-// Module ID: 14390
-// Function ID: 14391
+// Module ID: 13632
+// Function ID: 13633
 // Name: Ellipsis
-// Dependencies: [19, 17, 4780, 21, 4788, 576, 4524, 4789, 504, 2]
+// Dependencies: [19, 17, 4825, 21, 4836, 576, 4566, 4837, 504, 2]
 
-// Module 14390 (Ellipsis)
+// Module 13632 (Ellipsis)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;
 function AnimatedEllipsisDot(disableScale) {
@@ -87,7 +87,7 @@ const View = fn(17).View;
 const jsx = fn(21).jsx;
 let c7 = 233.33333333333334;
 let c8 = 116.66666666666667;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { typingIndicator: { justifyContent: "center", alignItems: "center", flexDirection: "row", marginRight: 4 }, typingIndicatorDot: null };
 let size = { backgroundColor: nativeDefault.colors.TEXT_DEFAULT, borderRadius: nativeDefault.radii.round, marginRight: 2, height: 6, width: 6 };
 obj.typingIndicatorDot = size;

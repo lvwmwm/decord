@@ -1,18 +1,18 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 11910
+// Function ID: 11911
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 12696, 1074, 3, 1100, 573, 1271, 1241, 6866, 2]
+// Dependencies: [5, 502, 11906, 1074, 3, 1100, 573, 1271, 1241, 6010, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 12700 (MultiAccountActionCreators)
+// Module 11910 (MultiAccountActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import TokenManagerAll from "TokenManager" /* 1100 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MultiAccountStore from "MultiAccountStore" /* 12696 */;
+import MultiAccountStore from "MultiAccountStore" /* 11906 */;
 
 const require = fn;
 const Constants = fn(1074);
@@ -60,7 +60,7 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
             closure_130_5 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else {
           if (1 === tmp7) {

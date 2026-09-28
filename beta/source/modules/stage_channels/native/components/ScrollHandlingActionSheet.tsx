@@ -1,11 +1,11 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8051
+// Function ID: 8052
 // Name: ScrollHandlingActionSheet
-// Dependencies: [19, 21, 7427, 2]
+// Dependencies: [19, 21, 6571, 2]
 // Exports: default
 
-// Module 8901 (ScrollHandlingActionSheet)
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
+// Module 8051 (ScrollHandlingActionSheet)
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

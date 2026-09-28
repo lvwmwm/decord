@@ -159,7 +159,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
               closure_130_8 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "PX_16", done: true };
+              return { value: "flex", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -478,7 +478,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       await "HermesInternal";
       closure_1 = tmp2;
       closure_129_0 = closure_0;
-      return "PX_16";
+      return "flex";
     })();
     iter.next();
     return iter;
@@ -509,7 +509,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       await "HermesInternal";
       closure_1 = tmp2;
       closure_129_0 = closure_0;
-      return "PX_16";
+      return "flex";
     })();
     iter.next();
     return iter;
@@ -541,7 +541,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       await "HermesInternal";
       closure_1 = tmp2;
       closure_129_0 = closure_0;
-      return "PX_16";
+      return "flex";
     })();
     iter.next();
     return iter;

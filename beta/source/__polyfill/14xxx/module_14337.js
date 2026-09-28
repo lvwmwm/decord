@@ -1,9 +1,9 @@
 // Module ID: 14337
 // Function ID: 14338
-// Dependencies: [14330]
+// Dependencies: [1121]
 
 // Module 14337
-import _mod14330 from "module_14330" /* 14330 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1, arg2) => _mod14330(arg0, arg1, arg2) < 0;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 433, height: 231.5, scales: [2, 3], hash: "cb806289f81913ccee7a9e209b850638", name: "blocked_dark", type: "png" });

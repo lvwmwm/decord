@@ -1,10 +1,10 @@
-// Module ID: 11793
-// Function ID: 11794
+// Module ID: 10732
+// Function ID: 10733
 // Name: useMediaModalFooterAction
 // Dependencies: [560, 1248, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 11793 (useMediaModalFooterAction)
+// Module 10732 (useMediaModalFooterAction)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;

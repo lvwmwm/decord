@@ -1,15 +1,15 @@
-// Module ID: 17385
-// Function ID: 17386
+// Module ID: 16735
+// Function ID: 16736
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 2038, 21, 4788, 576, 8058, 4756, 4757, 573, 4524, 4789, 10921, 2027, 1177, 8100, 4784, 1115, 4498, 2]
+// Dependencies: [32, 19, 17, 2042, 21, 4836, 576, 7203, 4801, 4802, 573, 4566, 4837, 10088, 2029, 1177, 7245, 4832, 1115, 4540, 2]
 // Exports: default
 
-// Module 17385 (BurstReactionAnimationContainer)
+// Module 16735 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4498 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
+import native from "native" /* 4540 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -33,7 +33,7 @@ function BurstReactionAnimationContainerInner() {
       dependencyMap({ channelId: channelId.channelId, emoji: channelId.emoji, messageId: channelId.messageId });
       closure_1_4(true);
       ref.current = true;
-      const result = handleEffectReceived(4756).triggerHapticFeedback(first(4757).IMPACT_HEAVY);
+      const result = handleEffectReceived(4801).triggerHapticFeedback(first(4802).IMPACT_HEAVY);
     }
     const subscription = first(573).subscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     return () => {
@@ -77,7 +77,7 @@ function BurstReactionAnimationContainerInner() {
   let tmp8 = null;
   if (null != animationData) {
     let obj3 = { contentTypes: null, children: null };
-    let items = [tmp6(2027).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+    let items = [tmp6(2029).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
     obj3.contentTypes = items;
     obj3.children = function children(markAsDismissed) {
       markAsDismissed = markAsDismissed.markAsDismissed;
@@ -86,7 +86,7 @@ function BurstReactionAnimationContainerInner() {
       const items = [markAsDismissed.fill, closure_7];
       obj2.style = items;
       const obj3 = {
-        activeOpacity: closure_0(8058).BACKDROP_OPACITY,
+        activeOpacity: closure_0(7203).BACKDROP_OPACITY,
         onPress() {
           closure_4(false);
           closure_5.current = false;
@@ -107,17 +107,17 @@ function BurstReactionAnimationContainerInner() {
             ref.current = false;
           }
         };
-        tmpResult = tmp(first(8100), obj7);
+        tmpResult = tmp(first(7245), obj7);
       }
       obj5.children = tmpResult;
       items1[1] = closure_1_8(handleComponentFinish, obj5);
-      let tmp6Result = markAsDismissed.visibleContent === tmp2(2027).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
+      let tmp6Result = markAsDismissed.visibleContent === tmp2(2029).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
       if (tmp6Result) {
         const obj8 = { children: null };
         const obj9 = { style: tmp4.dismissTextContainer, variant: "text-sm/medium", children: null };
         const intl = tmp2(1115).intl;
         obj9.children = intl.string(tmp2(1115).t.QpPMih);
-        const items2 = [tmp(tmp2(4784).Text, obj9), ];
+        const items2 = [tmp(tmp2(4832).Text, obj9), ];
         const obj17 = { style: tmp4.dismissTextBackground };
         items2[1] = tmp(tmp8, obj17);
         obj8.children = items2;
@@ -126,25 +126,25 @@ function BurstReactionAnimationContainerInner() {
       items1[2] = tmp6Result;
       obj3.children = items1;
       obj2.children = closure_1_10(closure_5, obj3);
-      obj.children = closure_1_8(first(4524).View, obj2);
+      obj.children = closure_1_8(first(4566).View, obj2);
       return closure_1_8(closure_0(1177).OverlayView, obj);
     };
-    tmp8 = closure_8(animationData(10921), obj3);
-    let tmp11 = animationData(10921);
+    tmp8 = closure_8(animationData(10088), obj3);
+    let tmp11 = animationData(10088);
   }
   return tmp8;
 }
 get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire, StyleSheet } = get_ActivityIndicator);
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { background: null, fill: null, dismissTextContainer: null, dismissTextBackground: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3.backgroundColor = nativeDefault.colors.BLACK;
-obj3.opacity = fn(8058).BACKDROP_OPACITY;
+obj3.opacity = fn(7203).BACKDROP_OPACITY;
 obj2.background = obj3;
 let obj4 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);

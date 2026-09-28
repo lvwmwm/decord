@@ -1,15 +1,15 @@
-// Module ID: 12696
-// Function ID: 12697
+// Module ID: 11906
+// Function ID: 11907
 // Name: MultiAccountStore
-// Dependencies: [12697, 12698, 1100, 12699, 504, 573, 2]
+// Dependencies: [11907, 11908, 1100, 11909, 504, 573, 2]
 
-// Module 12696 (MultiAccountStore)
+// Module 11906 (MultiAccountStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import TokenManagerAll from "TokenManager" /* 1100 */;
-import Constants from "Constants" /* 12697 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12698 */;
-import DragAndDropUtils from "DragAndDropUtils" /* 12699 */;
+import Constants from "Constants" /* 11907 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 11908 */;
+import DragAndDropUtils from "DragAndDropUtils" /* 11909 */;
 import size from "module_2" /* 2 */;
 
 const MAX_ACCOUNTS = Constants.MAX_ACCOUNTS;

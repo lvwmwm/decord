@@ -1,34 +1,34 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 15873
+// Function ID: 15874
 // Name: GuildTooltipActionSheets
-// Dependencies: [32, 19, 2038, 21, 14066, 1980, 16584, 16586, 16589, 16591, 16592, 2027, 16593, 16594, 5748, 16595, 10921, 10922, 4524, 2]
+// Dependencies: [32, 19, 2042, 21, 13312, 1981, 15874, 15876, 15879, 15881, 15882, 2029, 15883, 15884, 5811, 15885, 10088, 10089, 4566, 2]
 // Exports: default
 
-// Module 16583 (GuildTooltipActionSheets)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10921 */;
-import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 16594 */;
-import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 16595 */;
+// Module 15873 (GuildTooltipActionSheets)
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10088 */;
+import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 15884 */;
+import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 15885 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function NUFChannelsActionSheetImporter() {
-  return asyncRequireImpl(14066, dependencyMap.paths);
+  return asyncRequireImpl(13312, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsUpsellActionSheetImporter() {
-  return asyncRequireImpl(16584, dependencyMap.paths);
+  return asyncRequireImpl(15874, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsIAPUpsellActionSheetImporter() {
-  return asyncRequireImpl(16586, dependencyMap.paths);
+  return asyncRequireImpl(15876, dependencyMap.paths);
 }
 function CreatorMonetizationOnboardingV2UpsellActionSheetImporter() {
-  return asyncRequireImpl(16589, dependencyMap.paths);
+  return asyncRequireImpl(15879, dependencyMap.paths);
 }
 function TierTemplatesUpsellActionSheetImporter() {
-  return asyncRequireImpl(16591, dependencyMap.paths);
+  return asyncRequireImpl(15881, dependencyMap.paths);
 }
 class GuildTooltipActionSheets {
   constructor(arg0) {
@@ -67,17 +67,17 @@ class GuildTooltipActionSheets {
             ({ visibleContent, markAsDismissed } = arg0);
             if (dismissible_content.DismissibleContent.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL === visibleContent) {
               const obj2 = { markAsDismissed, importer: GuildRoleSubscriptionsUpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id };
-              return jsx(tmp(10922).DismissibleActionSheet, { markAsDismissed, importer: GuildRoleSubscriptionsUpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id });
-            } else if (tmp(2027).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL === visibleContent) {
+              return jsx(tmp(10089).DismissibleActionSheet, { markAsDismissed, importer: GuildRoleSubscriptionsUpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id });
+            } else if (tmp(2029).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL === visibleContent) {
               const obj3 = { markAsDismissed, importer: GuildRoleSubscriptionsIAPUpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id };
-              return jsx(tmp(10922).DismissibleActionSheet, { markAsDismissed, importer: GuildRoleSubscriptionsIAPUpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id });
-            } else if (tmp(2027).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL === visibleContent) {
+              return jsx(tmp(10089).DismissibleActionSheet, { markAsDismissed, importer: GuildRoleSubscriptionsIAPUpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id });
+            } else if (tmp(2029).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL === visibleContent) {
               const obj4 = { markAsDismissed, importer: CreatorMonetizationOnboardingV2UpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id };
-              return jsx(tmp(10922).DismissibleActionSheet, { markAsDismissed, importer: CreatorMonetizationOnboardingV2UpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id });
-            } else if (tmp(2027).DismissibleContent.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL === visibleContent) {
+              return jsx(tmp(10089).DismissibleActionSheet, { markAsDismissed, importer: CreatorMonetizationOnboardingV2UpsellActionSheetImporter, actionSheetKey: GuildTooltipActionSheet, guildId: id });
+            } else if (tmp(2029).DismissibleContent.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL === visibleContent) {
               const obj5 = { actionSheetKey: GuildTooltipActionSheet, importer: TierTemplatesUpsellActionSheetImporter, markAsDismissed, guildId: id };
-              return jsx(tmp(10922).DismissibleActionSheet, { actionSheetKey: GuildTooltipActionSheet, importer: TierTemplatesUpsellActionSheetImporter, markAsDismissed, guildId: id });
-            } else if (tmp(2027).DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER === visibleContent) {
+              return jsx(tmp(10089).DismissibleActionSheet, { actionSheetKey: GuildTooltipActionSheet, importer: TierTemplatesUpsellActionSheetImporter, markAsDismissed, guildId: id });
+            } else if (tmp(2029).DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER === visibleContent) {
               const obj = {
                 markAsDismissed(arg0) {
                     return markAsDismissed(arg0);
@@ -85,7 +85,7 @@ class GuildTooltipActionSheets {
                 actionSheetKey: GuildTooltipActionSheet,
                 importer: NUFChannelsActionSheetImporter
               };
-              return jsx(tmp(10922).DismissibleActionSheet, {
+              return jsx(tmp(10089).DismissibleActionSheet, {
                 markAsDismissed(arg0) {
                     return markAsDismissed(arg0);
                   },
@@ -100,7 +100,7 @@ class GuildTooltipActionSheets {
     return jsx(tmp5(tmp2[16]), obj1);
   }
 }
-const hasOwnProperty = fn(2038).DismissibleContentGroupName;
+const hasOwnProperty = fn(2042).DismissibleContentGroupName;
 const jsx = fn(21).jsx;
 const GuildTooltipActionSheet = "GuildTooltipActionSheet";
 let closure_14 = { code: "function GuildTooltipActionSheetsTsx1(){const{runOnJS,setShouldRender}=this.__closure;return runOnJS(setShouldRender)(true);}" };

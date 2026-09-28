@@ -1,12 +1,12 @@
-// Module ID: 10413
-// Function ID: 10414
+// Module ID: 9577
+// Function ID: 9578
 // Name: RedesignChannelListConstants
-// Dependencies: [17, 1365, 10414, 2]
+// Dependencies: [17, 1365, 9578, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 10413 (RedesignChannelListConstants)
+// Module 9577 (RedesignChannelListConstants)
 import _mod17 from "module_17" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10414 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import size from "module_2" /* 2 */;
 

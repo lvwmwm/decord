@@ -1,10 +1,10 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 15234
+// Function ID: 15235
 // Name: MFA
 // Dependencies: [5, 1271, 2]
 // Exports: trySubmit
 
-// Module 15960 (MFA)
+// Module 15234 (MFA)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -57,7 +57,7 @@ let closure_4 = async function _finishMFACheck(arg0, value) {
           closure_130_3 = num7;
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {

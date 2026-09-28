@@ -1,18 +1,18 @@
-// Module ID: 5796
-// Function ID: 5797
+// Module ID: 5859
+// Function ID: 5860
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 2098, 2105, 4772, 1372, 1074, 1271, 4773, 573, 5797, 5801, 4612, 5802, 5140, 1115, 4688, 1241, 2]
+// Dependencies: [5, 2101, 2108, 4817, 1372, 1074, 1271, 4818, 573, 5860, 5864, 4658, 5865, 5203, 1115, 4735, 1241, 2]
 // Exports: showCoachmark
 
-// Module 5796 (MemberVerificationActionCreators)
+// Module 5859 (MemberVerificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4773 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4818 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import InviteStore from "InviteStore" /* 4772 */;
+import ImpersonateStore from "ImpersonateStore" /* 2101 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import InviteStore from "InviteStore" /* 4817 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -285,7 +285,7 @@ let closure_14 = async function _submitVerificationForm(arg0, value) {
           let body;
           c8 = 1;
           c9 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

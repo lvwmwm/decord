@@ -1,10 +1,10 @@
-// Module ID: 9738
-// Function ID: 9739
+// Module ID: 8895
+// Function ID: 8896
 // Name: analytics
 // Dependencies: [19, 1241, 2]
 // Exports: useAnalyticsContext
 
-// Module 9738 (analytics)
+// Module 8895 (analytics)
 import AnalyticsUtils from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 

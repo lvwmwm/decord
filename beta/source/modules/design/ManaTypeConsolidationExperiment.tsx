@@ -1,11 +1,11 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 6401
+// Function ID: 6402
 // Name: ManaTypeConsolidationExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useManaTypeConsolidationExperiment
 
-// Module 7257 (ManaTypeConsolidationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 6401 (ManaTypeConsolidationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-05-mana-type-consolidation", kind: "user", defaultConfig: { enabled: false }, variations: null };

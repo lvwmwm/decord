@@ -1,18 +1,24 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 10428
+// Function ID: 10429
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 4941, 4989, 11217, 5347, 4671, 10372, 2]
+// Dependencies: [19, 21, 4688, 4540, 9536, 4989, 5037, 10385, 5411, 4718, 2]
 // Exports: default
 
-// Module 11260 (ChannelVoiceChatModal)
-import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4671 */;
-import useChannelNameDefault from "useChannelName" /* 4941 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
-import ChannelVoiceChatDefault from "ChannelVoiceChat" /* 10372 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11217 */;
+// Module 10428 (ChannelVoiceChatModal)
+import native from "native" /* 4540 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4688 */;
+import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4718 */;
+import useChannelNameDefault from "useChannelName" /* 4989 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5037 */;
+import ChannelVoiceChatDefault from "ChannelVoiceChat" /* 9536 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10385 */;
 import noop from "module_19" /* 19 */;
 
-const require = fn;
+require = fn;
+function ThemedChannelVoiceChat(channel) {
+  const tmp = useColorThemeBackgroundDefault();
+  return jsx(native.ThemeContextProvider, { gradient: useColorThemeBackgroundDefault(), children: jsx(ChannelVoiceChatDefault, { channel: channel.channel, inModal: true }) });
+}
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChatModal.tsx");
@@ -31,11 +37,11 @@ export default function ChannelVoiceChatModal(channel) {
   if (tmp2 == null) {
     str = "";
   }
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5347).StageIcon, { size: "sm" })} render={function render() {
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5411).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     if (guild_id == null) {
       guild_id = null;
     }
-    return jsx(GuildThemeGuildIdOverrideContextDefault.Provider, { value: guild_id, children: jsx(ChannelVoiceChatDefault, { channel, inModal: true }) });
+    return jsx(GuildThemeGuildIdOverrideContextDefault.Provider, { value: guild_id, children: <ThemedChannelVoiceChat channel={channel} /> });
   }} />;
 };

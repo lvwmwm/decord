@@ -1,12 +1,12 @@
-// Module ID: 4914
-// Function ID: 4915
+// Module ID: 4962
+// Function ID: 4963
 // Name: Devices
-// Dependencies: [4845, 1340, 1994, 2]
+// Dependencies: [4893, 1340, 1995, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 4914 (Devices)
+// Module 4962 (Devices)
 import formatDefault from "format" /* 1340 */;
-import Constants from "Constants" /* 4845 */;
+import Constants from "Constants" /* 4893 */;
 import size from "module_2" /* 2 */;
 
 ({ DEFAULT_DEVICE_ID: c3, DeviceTypes: closure_4 } = Constants);
@@ -19,26 +19,26 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
     ({ guid, name, index } = item);
     if (VIDEO_INPUT === constants.VIDEO_INPUT) {
       if (obj.test(name)) {
-        let tmp12 = id;
+        let tmp14 = id;
         let str2 = "Default";
       }
-      let tmp13 = index;
+      let tmp15 = index;
       if (null != index) {
-        tmp13 = index;
+        tmp15 = index;
       }
-      const obj3 = { id: tmp12, type: tmp10, index: tmp13, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9 };
+      const obj3 = { id: tmp14, type: tmp12, index: tmp15, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9, windowsDeviceDescription: tmp10, windowsDeviceInterfaceFriendlyName: tmp11 };
       return obj3;
     }
     if (obj2.test(name)) {
       c1 = true;
-      tmp12 = id;
+      tmp14 = id;
       str2 = name.replace("default", "Default");
     } else {
-      tmp12 = name;
+      tmp14 = name;
       if (null != guid) {
-        tmp12 = name;
+        tmp14 = name;
         if ("" !== guid) {
-          tmp12 = guid;
+          tmp14 = guid;
         }
       }
       str2 = name;
@@ -72,7 +72,7 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
 export const getAudioInputDevices = function getAudioInputDevices() {
   return new Promise((arg0) => {
     closure_0 = arg0;
-    const voiceEngine = closure_0(1994).getVoiceEngine();
+    const voiceEngine = closure_0(1995).getVoiceEngine();
     const inputDevices = voiceEngine.getInputDevices((arr) => {
       const AUDIO_INPUT = constants.AUDIO_INPUT;
       c1 = false;
@@ -80,26 +80,26 @@ export const getAudioInputDevices = function getAudioInputDevices() {
         ({ guid, name, index } = item);
         if (VIDEO_INPUT === constants.VIDEO_INPUT) {
           if (obj.test(name)) {
-            let tmp12 = id;
+            let tmp14 = id;
             let str2 = "Default";
           }
-          let tmp13 = index;
+          let tmp15 = index;
           if (null != index) {
-            tmp13 = index;
+            tmp15 = index;
           }
-          const obj3 = { id: tmp12, type: tmp10, index: tmp13, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9 };
+          const obj3 = { id: tmp14, type: tmp12, index: tmp15, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9, windowsDeviceDescription: tmp10, windowsDeviceInterfaceFriendlyName: tmp11 };
           return obj3;
         }
         if (obj2.test(name)) {
           c1 = true;
-          tmp12 = id;
+          tmp14 = id;
           str2 = name.replace("default", "Default");
         } else {
-          tmp12 = name;
+          tmp14 = name;
           if (null != guid) {
-            tmp12 = name;
+            tmp14 = name;
             if ("" !== guid) {
-              tmp12 = guid;
+              tmp14 = guid;
             }
           }
           str2 = name;
@@ -135,7 +135,7 @@ export const getAudioInputDevices = function getAudioInputDevices() {
 export const getAudioOutputDevices = function getAudioOutputDevices() {
   return new Promise((arg0) => {
     closure_0 = arg0;
-    const voiceEngine = closure_0(1994).getVoiceEngine();
+    const voiceEngine = closure_0(1995).getVoiceEngine();
     const outputDevices = voiceEngine.getOutputDevices((arr) => {
       const AUDIO_OUTPUT = constants.AUDIO_OUTPUT;
       c1 = false;
@@ -143,26 +143,26 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
         ({ guid, name, index } = item);
         if (VIDEO_INPUT === constants.VIDEO_INPUT) {
           if (obj.test(name)) {
-            let tmp12 = id;
+            let tmp14 = id;
             let str2 = "Default";
           }
-          let tmp13 = index;
+          let tmp15 = index;
           if (null != index) {
-            tmp13 = index;
+            tmp15 = index;
           }
-          const obj3 = { id: tmp12, type: tmp10, index: tmp13, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9 };
+          const obj3 = { id: tmp14, type: tmp12, index: tmp15, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9, windowsDeviceDescription: tmp10, windowsDeviceInterfaceFriendlyName: tmp11 };
           return obj3;
         }
         if (obj2.test(name)) {
           c1 = true;
-          tmp12 = id;
+          tmp14 = id;
           str2 = name.replace("default", "Default");
         } else {
-          tmp12 = name;
+          tmp14 = name;
           if (null != guid) {
-            tmp12 = name;
+            tmp14 = name;
             if ("" !== guid) {
-              tmp12 = guid;
+              tmp14 = guid;
             }
           }
           str2 = name;
@@ -198,7 +198,7 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
 export const getVideoInputDevices = function getVideoInputDevices() {
   return new Promise((arg0) => {
     closure_0 = arg0;
-    const voiceEngine = closure_0(1994).getVoiceEngine();
+    const voiceEngine = closure_0(1995).getVoiceEngine();
     const videoInputDevices = voiceEngine.getVideoInputDevices((arr) => {
       const VIDEO_INPUT = constants.VIDEO_INPUT;
       c1 = false;
@@ -206,26 +206,26 @@ export const getVideoInputDevices = function getVideoInputDevices() {
         ({ guid, name, index } = item);
         if (VIDEO_INPUT === constants.VIDEO_INPUT) {
           if (obj.test(name)) {
-            let tmp12 = id;
+            let tmp14 = id;
             let str2 = "Default";
           }
-          let tmp13 = index;
+          let tmp15 = index;
           if (null != index) {
-            tmp13 = index;
+            tmp15 = index;
           }
-          const obj3 = { id: tmp12, type: tmp10, index: tmp13, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9 };
+          const obj3 = { id: tmp14, type: tmp12, index: tmp15, name: str2, originalName: tmp2, originalId: tmp, facing: tmp3, hardwareId: tmp4, containerId: tmp5, effects: tmp6, macosTransportType: tmp7, windowsEndpointFormFactor: tmp8, windowsDeviceService: tmp9, windowsDeviceDescription: tmp10, windowsDeviceInterfaceFriendlyName: tmp11 };
           return obj3;
         }
         if (obj2.test(name)) {
           c1 = true;
-          tmp12 = id;
+          tmp14 = id;
           str2 = name.replace("default", "Default");
         } else {
-          tmp12 = name;
+          tmp14 = name;
           if (null != guid) {
-            tmp12 = name;
+            tmp14 = name;
             if ("" !== guid) {
-              tmp12 = guid;
+              tmp14 = guid;
             }
           }
           str2 = name;

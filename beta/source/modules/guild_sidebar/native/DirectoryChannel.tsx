@@ -1,23 +1,23 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 15841
+// Function ID: 15842
 // Name: DirectoryChannel
-// Dependencies: [19, 2041, 2096, 10413, 4970, 21, 4788, 576, 563, 1101, 11206, 16458, 9899, 2]
+// Dependencies: [19, 2045, 4467, 9577, 5018, 21, 4836, 576, 563, 1101, 10374, 15748, 9060, 2]
 
-// Module 16551 (DirectoryChannel)
+// Module 15841 (DirectoryChannel)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11206 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 
 require = fn;
-const UnreadSetting = fn(4970).UnreadSetting;
+const UnreadSetting = fn(5018).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
-let obj = { container: { marginVertical: fn(10413).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+const createStyles = fn(4836);
+let obj = { container: { marginVertical: fn(9577).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
 let closure_8 = createStyles.createStyles(obj);
-let obj3 = { marginVertical: fn(10413).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
+let obj3 = { marginVertical: fn(9577).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
 
@@ -50,14 +50,14 @@ export default noop.memo((guildId) => {
   if (null != stateFromStores) {
     const obj2 = { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
     const obj3 = { channel: stateFromStores };
-    obj2.accessibilityLabel = id(9899)(obj3);
+    obj2.accessibilityLabel = id(9060)(obj3);
     const obj4 = { selected };
     obj2.accessibilityState = obj4;
     obj2.channel = stateFromStores;
     obj2.selected = selected;
     obj2.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-    tmp7 = jsx(id(16458), { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
-    const tmp10 = id(16458);
+    tmp7 = jsx(id(15748), { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
+    const tmp10 = id(15748);
   }
   return tmp7;
 });

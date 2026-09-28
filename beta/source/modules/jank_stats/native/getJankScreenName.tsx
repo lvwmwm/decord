@@ -1,13 +1,13 @@
-// Module ID: 16347
-// Function ID: 16348
+// Module ID: 15638
+// Function ID: 15639
 // Name: getJankScreenName
-// Dependencies: [16348, 4646, 16349, 2]
+// Dependencies: [15639, 4693, 15640, 2]
 // Exports: default, getBaseScreenName, getChatPanelScreenName, getComponentDisplayName, getPanelListScreenName, getWideViewScreenName, isModalScreenName
 
-// Module 16347 (getJankScreenName)
-import RootNavigationRef from "RootNavigationRef" /* 4646 */;
-import getScreenAnalyticsName from "getScreenAnalyticsName" /* 16349 */;
-import JankScreenConstants from "JankScreenConstants" /* 16348 */;
+// Module 15638 (getJankScreenName)
+import RootNavigationRef from "RootNavigationRef" /* 4693 */;
+import getScreenAnalyticsName from "getScreenAnalyticsName" /* 15640 */;
+import JankScreenConstants from "JankScreenConstants" /* 15639 */;
 import size from "module_2" /* 2 */;
 
 function resolveScreenName(items) {
@@ -188,7 +188,7 @@ export default function getJankScreenName() {
         obj7.rendered = items.concat(items2);
         ({ focused, rendered } = obj7);
         if (0 === focused.length) {
-          let obj9 = { screen: null, expectedScreenIds: "", focusedRoute: "accessible" };
+          let obj9 = { screen: null, expectedScreenIds: "", focusedRoute: "channelId" };
           obj9.screen = screen;
           let obj15 = obj9;
         } else {

@@ -1,27 +1,27 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 15814
+// Function ID: 15815
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 10413, 1074, 21, 4524, 4788, 576, 1364, 8149, 5225, 10414, 4968, 15370, 5217, 5221, 5340, 16064, 16062, 4784, 1115, 2]
+// Dependencies: [32, 19, 17, 9577, 1074, 21, 4566, 4836, 576, 1364, 7298, 5288, 9578, 5016, 14629, 5280, 5284, 5404, 15350, 15348, 4832, 1115, 2]
 
-// Module 16524 (ChannelsUnreadBar)
+// Module 15814 (ChannelsUnreadBar)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4524 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
-import spring from "spring" /* 5217 */;
-import springPresets from "springPresets" /* 5221 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
+import spring from "spring" /* 5280 */;
+import springPresets from "springPresets" /* 5284 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
-const RedesignChannelListConstants = fn(10413);
+const RedesignChannelListConstants = fn(9577);
 ({ getScaledSearchBarHeight: hasOwnProperty, VIEWABILITY_CONFIG: metroRequire } = RedesignChannelListConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let closure_10 = ReanimatedRexport.createAnimatedComponent(fn(17).Pressable);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_11 = createStyles.createStyles((arg0, arg1) => {
   let num = 5;
   if (arg0) {

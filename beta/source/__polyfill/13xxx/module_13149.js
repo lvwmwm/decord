@@ -1,32 +1,9 @@
 // Module ID: 13149
 // Function ID: 13150
-// Dependencies: [13081]
-// Exports: applySdkMetadata
+// Dependencies: [1121]
 
 // Module 13149
-import _mod13081 from "module_13081" /* 13081 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
-  let arr = arg2;
-  if (arg2 === undefined) {
-    const items = [arg1];
-    arr = items;
-  }
-  let str = arg3;
-  if (arg3 === undefined) {
-    str = "npm";
-  }
-  const tmp = _metadata._metadata || {};
-  if (!tmp.sdk) {
-    const obj = { name: null, packages: null, version: null };
-    const _HermesInternal = HermesInternal;
-    obj.name = "sentry.javascript." + arg1;
-    obj.packages = arr.map((item) => ({ name: "" + str + ":@sentry/" + item, version: _mod13081.SDK_VERSION }));
-    obj.version = str(13081).SDK_VERSION;
-    tmp.sdk = obj;
-  }
-  _metadata._metadata = tmp;
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 160, height: 82, scales: [2, 3], hash: "0d2c2c590995b34f0429dc331d39457b", name: "subscribe_confirm", type: "png" });

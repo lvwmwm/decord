@@ -1,19 +1,19 @@
-// Module ID: 12851
-// Function ID: 12852
+// Module ID: 12064
+// Function ID: 12065
 // Name: GuildPowerupsCard
-// Dependencies: [19, 17, 21, 4788, 672, 576, 5856, 2]
+// Dependencies: [19, 17, 21, 4836, 672, 576, 5919, 2]
 // Exports: default
 
-// Module 12851 (GuildPowerupsCard)
+// Module 12064 (GuildPowerupsCard)
 import nativeDefault from "native" /* 576 */;
-import Card from "Card" /* 5856 */;
+import Card from "Card" /* 5919 */;
 import noop from "module_19" /* 19 */;
 import n_mod from "module_672" /* 672 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { cardActive: null, cardExpiring: null, cardRemoving: null };
 const obj3 = { borderColor: null };
 let n = n_mod;

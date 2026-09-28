@@ -1,9 +1,33 @@
 // Module ID: 13770
 // Function ID: 13771
-// Dependencies: [1121]
+// Dependencies: [13691, 13771]
+// Exports: getSupportedCalendars
 
 // Module 13770
-import registerAsset from "module_1121" /* 1121 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [2, 3], hash: "0b73baa146c1e8e06b259fb4eb1affa0", name: "ic_check_18px", type: "png" });
+export const getSupportedCalendars = function getSupportedCalendars(locale) {
+  _require = locale;
+  const calendars = require("module_13771").calendars;
+  return calendars.filter((item) => (function isSupportedCalendar(item, arg1) {
+    let str = arg1;
+    if (undefined === arg1) {
+      str = "en";
+    }
+    try {
+      const concat = "".concat;
+      const combined = "".concat(str, "-u-ca-");
+      const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(combined.concat(item));
+      if ("gregory" === item) {
+        if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
+          return false;
+        }
+      }
+      return true;
+    } catch (err) {
+    }
+  })(item, closure_0));
+};

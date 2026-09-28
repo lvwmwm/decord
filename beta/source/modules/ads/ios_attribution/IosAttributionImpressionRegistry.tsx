@@ -1,13 +1,13 @@
-// Module ID: 11777
-// Function ID: 11778
+// Module ID: 10716
+// Function ID: 10717
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 11778, 3, 11775, 11776, 11779, 2]
+// Dependencies: [5, 10717, 3, 10714, 10715, 10718, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 11777 (IosAttributionImpressionRegistry)
+// Module 10716 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 11775 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 11776 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 10714 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 10715 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -65,7 +65,7 @@ let closure_9 = async function _startNativeImpression(arg0, value) {
           closure_129_7 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -279,7 +279,7 @@ let closure_11 = async function _getStoreKitCredential(arg0) {
             closure_129_2 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -342,9 +342,9 @@ let closure_11 = async function _getStoreKitCredential(arg0) {
   return iter;
 };
 let obj = {};
-let obj2 = { viewThroughSpec: { kind: fn(11778).IosAttributionFramework.AD_ATTRIBUTION_KIT } };
-obj[fn(11778).IosAttributionFramework.AD_ATTRIBUTION_KIT] = obj2;
-let obj3 = { kind: fn(11778).IosAttributionFramework.AD_ATTRIBUTION_KIT };
+let obj2 = { viewThroughSpec: { kind: fn(10717).IosAttributionFramework.AD_ATTRIBUTION_KIT } };
+obj[fn(10717).IosAttributionFramework.AD_ATTRIBUTION_KIT] = obj2;
+let obj3 = { kind: fn(10717).IosAttributionFramework.AD_ATTRIBUTION_KIT };
 let closure_4 = new LoggerDefault("IosAttribution");
 const map = new Map();
 const size = fn(2);

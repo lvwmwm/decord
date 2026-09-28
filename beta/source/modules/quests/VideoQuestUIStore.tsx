@@ -1,9 +1,9 @@
-// Module ID: 7973
-// Function ID: 7974
+// Module ID: 7118
+// Function ID: 7119
 // Name: VideoQuestUIStore
-// Dependencies: [109, 1243, 4659, 7974, 1248, 7975, 2]
+// Dependencies: [109, 1243, 4706, 7119, 1248, 7120, 2]
 
-// Module 7973 (VideoQuestUIStore)
+// Module 7118 (VideoQuestUIStore)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
@@ -42,14 +42,14 @@ function _toPropertyKey(obj) {
 const VideoProgressState = { UNKNOWN: "UNKNOWN", NOT_STARTED: "NOT_STARTED", IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED" };
 let identity = fn(1243);
 identity = identity.createWithEqualityFn();
-fn(4659);
+fn(4706);
 const obj4 = { name: "videoQuestUIState", storage: null, partialize: null, version: 0 };
-const module_4659 = fn(4659);
-obj4.storage = module_4659.createJSONStorage(() => require("LocalStorageWrapper"));
+const module_4706 = fn(4706);
+obj4.storage = module_4706.createJSONStorage(() => require("LocalStorageWrapper"));
 obj4.partialize = function partialize(volume) {
   return { volume: volume.volume, muted: volume.muted, videoProgress: volume.videoProgress };
 };
-const withEqualityFnResult = identity(module_4659.persist((arg0, arg1) => {
+const withEqualityFnResult = identity(module_4706.persist((arg0, arg1) => {
   _require = arg0;
   closure_1 = arg1;
   return {

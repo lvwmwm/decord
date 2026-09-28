@@ -1,13 +1,13 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 8195
+// Function ID: 8196
 // Name: GameProfileSkeleton
-// Dependencies: [19, 17, 21, 4788, 576, 9046, 4524, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 8196, 4566, 2]
 // Exports: GameProfileSkeletonButton, GameProfileSkeletonContainer
 
-// Module 9045 (GameProfileSkeleton)
+// Module 8195 (GameProfileSkeleton)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4524 */;
-import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 9046 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
+import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 8196 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ class GameProfileSkeletonPlaceholder {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { placeholder: { backgroundColor: nativeDefault.colors.ICON_MUTED }, button: null, buttonSm: null, buttonMd: null };
 const obj3 = { backgroundColor: nativeDefault.colors.ICON_MUTED };
 obj2.button = { borderRadius: nativeDefault.radii.sm };

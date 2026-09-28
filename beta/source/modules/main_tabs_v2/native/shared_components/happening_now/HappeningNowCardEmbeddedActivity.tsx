@@ -1,27 +1,27 @@
-// Module ID: 16427
-// Function ID: 16428
+// Module ID: 15718
+// Function ID: 15719
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1372, 15569, 1074, 21, 4788, 576, 563, 16428, 7445, 1241, 7459, 13209, 1980, 16400, 4524, 9080, 1249, 16411, 15570, 5310, 5836, 16424, 2]
+// Dependencies: [32, 19, 17, 1372, 14841, 1074, 21, 4836, 576, 563, 15719, 6589, 1241, 6603, 12443, 1981, 15691, 4566, 8230, 1249, 15702, 14842, 5374, 5899, 15715, 2]
 // Exports: default
 
-// Module 16427 (HappeningNowCardEmbeddedActivity)
+// Module 15718 (HappeningNowCardEmbeddedActivity)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const HappeningNowConstants = fn(15569);
+const HappeningNowConstants = fn(14841);
 ({ HAPPENING_NOW_CONTENT_HEIGHT, HappeningNowCardTrackingType: closure_7 } = HappeningNowConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { content: { flexShrink: 1, gap: 2 }, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12 }, activityBackground: null, cardTitle: null };
 let size = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.activityBackground = size;
@@ -104,7 +104,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     const items1 = [userId];
     obj2.highlighted_user_ids = items1;
     AnalyticsUtilsDefault.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
-    asyncRequireImpl(13209, dependencyMap.paths).then((result) => {
+    asyncRequireImpl(12443, dependencyMap.paths).then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);
       }

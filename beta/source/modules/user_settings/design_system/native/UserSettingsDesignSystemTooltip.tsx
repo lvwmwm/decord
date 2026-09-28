@@ -1,14 +1,14 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 15390
+// Function ID: 15391
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 4788, 8635, 11424, 5218, 7477, 4784, 7400, 7433, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 7780, 10590, 5281, 6621, 4832, 6544, 6577, 2]
 // Exports: default, useCanRotate
 
-// Module 16104 (UserSettingsDesignSystemTooltip)
-import Text_Text from "Text/Text" /* 4784 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7400 */;
-import LayerScope from "LayerScope" /* 7433 */;
-import DeviceOrientation from "DeviceOrientation" /* 8635 */;
+// Module 15390 (UserSettingsDesignSystemTooltip)
+import Text_Text from "Text/Text" /* 4832 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
+import LayerScope from "LayerScope" /* 6577 */;
+import DeviceOrientation from "DeviceOrientation" /* 7780 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -54,11 +54,11 @@ function Content() {
     };
   }, items1);
   const tmp8 = first2(items, 2);
-  const tooltip = first1(11424).useTooltip(ref, memo);
+  const tooltip = first1(10590).useTooltip(ref, memo);
   const obj3 = { children: null };
   const obj4 = {
     style: tmp.container,
-    children: closure_5(first1(5218).Button, {
+    children: closure_5(first1(5281).Button, {
       ref,
       onPress() {
         closure_1(!first1);
@@ -68,7 +68,7 @@ function Content() {
       size: "md"
     })
   };
-  const items2 = [closure_5(View, obj4), closure_5(first1(7477).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), closure_5(first1(7477).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), closure_5(TooltipNote, {})];
+  const items2 = [closure_5(View, obj4), closure_5(first1(6621).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), closure_5(first1(6621).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), closure_5(TooltipNote, {})];
   obj3.children = items2;
   return closure_7(closure_6, obj3);
 }
@@ -85,7 +85,7 @@ class TooltipNote {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_8 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTooltip.tsx");

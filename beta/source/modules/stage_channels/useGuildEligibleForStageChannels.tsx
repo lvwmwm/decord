@@ -1,11 +1,11 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 16653
+// Function ID: 16654
 // Name: useGuildEligibleForStageChannels
-// Dependencies: [2063, 1074, 504, 2]
+// Dependencies: [2067, 1074, 504, 2]
 // Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
 
-// Module 17303 (useGuildEligibleForStageChannels)
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 16653 (useGuildEligibleForStageChannels)
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 

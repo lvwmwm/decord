@@ -1,11 +1,11 @@
-// Module ID: 14381
-// Function ID: 14382
+// Module ID: 13623
+// Function ID: 13624
 // Name: NormalTelemetry
-// Dependencies: [1986, 1987, 2]
+// Dependencies: [1987, 1988, 2]
 
-// Module 14381 (NormalTelemetry)
-import TelemetryRingNative2 from "TelemetryRingNative" /* 1987 */;
-import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1986 */;
+// Module 13623 (NormalTelemetry)
+import TelemetryRingNative2 from "TelemetryRingNative" /* 1988 */;
+import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1987 */;
 
 const TelemetryRingNative = TelemetryRingNative2;
 
@@ -19,7 +19,7 @@ class NormalTelemetryImpl extends tmp3 {
     return tmp1;
   }
 }
-let items = [fn(1987).TelemetryChannel.NORMAL];
+let items = [fn(1988).TelemetryChannel.NORMAL];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/telemetry_ring/native/channels/NormalTelemetry.tsx");
 

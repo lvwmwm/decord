@@ -1,20 +1,20 @@
-// Module ID: 11107
-// Function ID: 11108
+// Module ID: 10276
+// Function ID: 10277
 // Name: SKUActionCreators
-// Dependencies: [5, 9098, 5759, 1074, 573, 5029, 1271, 4469, 9165, 7862, 4688, 4468, 4461, 5111, 5129, 1370, 2]
+// Dependencies: [5, 8248, 5822, 1074, 573, 5092, 1271, 4511, 8319, 7008, 4735, 4510, 4503, 5174, 5192, 1370, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 11107 (SKUActionCreators)
+// Module 10276 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import BillingUtils from "BillingUtils" /* 4461 */;
-import StoreUtils from "StoreUtils" /* 5029 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5129 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7862 */;
-import TestModeUtils from "TestModeUtils" /* 9165 */;
+import BillingUtils from "BillingUtils" /* 4503 */;
+import StoreUtils from "StoreUtils" /* 5092 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5192 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7008 */;
+import TestModeUtils from "TestModeUtils" /* 8319 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9098 */;
-import SKUStore from "SKUStore" /* 5759 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8248 */;
+import SKUStore from "SKUStore" /* 5822 */;
 
 require = fn;
 let closure_8 = async function _fetchSKU(arg0, value) {
@@ -240,7 +240,7 @@ let closure_10 = async function _fetchTestSKUsForApplication(arg0, value) {
           let body;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -326,7 +326,7 @@ let closure_11 = async function _previewPurchaseSku(arg0, value) {
           closure_129_7 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

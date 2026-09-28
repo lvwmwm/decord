@@ -1,10 +1,10 @@
-// Module ID: 14147
-// Function ID: 14148
+// Module ID: 13393
+// Function ID: 13394
 // Name: QRLoginUtils
 // Dependencies: [1366, 2]
 // Exports: findRemoteAuthFingerprint
 
-// Module 14147 (QRLoginUtils)
+// Module 13393 (QRLoginUtils)
 import URLUtilsDefault from "URLUtils" /* 1366 */;
 import size from "module_2" /* 2 */;
 

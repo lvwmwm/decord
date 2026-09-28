@@ -1,13 +1,13 @@
-// Module ID: 18141
-// Function ID: 18142
+// Module ID: 17505
+// Function ID: 17506
 // Name: ArrowLargeDownIcon
-// Dependencies: [19, 21, 576, 4488, 12551, 2]
+// Dependencies: [19, 21, 576, 4530, 11751, 2]
 // Exports: ArrowLargeDownIcon
 
-// Module 18141 (ArrowLargeDownIcon)
+// Module 17505 (ArrowLargeDownIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod12551 from "module_12551" /* 12551 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod11751 from "module_11751" /* 11751 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ArrowLargeDownIcon = function ArrowLargeDownIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12551, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11751, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

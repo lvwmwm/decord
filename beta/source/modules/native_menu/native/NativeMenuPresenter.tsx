@@ -1,14 +1,14 @@
-// Module ID: 17386
-// Function ID: 17387
+// Module ID: 16736
+// Function ID: 16737
 // Name: NativeMenuPresenter
-// Dependencies: [19, 9805, 504, 10946, 5213, 2]
+// Dependencies: [19, 8966, 504, 10113, 5276, 2]
 // Exports: default
 
-// Module 17386 (NativeMenuPresenter)
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5213 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10946 */;
+// Module 16736 (NativeMenuPresenter)
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5276 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10113 */;
 import noop from "module_19" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9805 */;
+import NativeMenuStore from "NativeMenuStore" /* 8966 */;
 
 const require = fn;
 const size = fn(2);

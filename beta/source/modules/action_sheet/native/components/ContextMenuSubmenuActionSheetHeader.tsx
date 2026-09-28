@@ -1,18 +1,18 @@
-// Module ID: 12010
-// Function ID: 12011
+// Module ID: 11228
+// Function ID: 11229
 // Name: ContextMenuSubmenuActionSheetHeader
-// Dependencies: [19, 17, 21, 4788, 9835, 1115, 2]
+// Dependencies: [19, 17, 21, 4836, 8996, 1115, 2]
 // Exports: default
 
-// Module 12010 (ContextMenuSubmenuActionSheetHeader)
+// Module 11228 (ContextMenuSubmenuActionSheetHeader)
 import util from "util" /* 1115 */;
-import ActionSheetHeaderPressableText from "ActionSheetHeaderPressableText" /* 9835 */;
+import ActionSheetHeaderPressableText from "ActionSheetHeaderPressableText" /* 8996 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_4 = createStyles.createStyles({ headerContainer: { paddingVertical: 12, paddingHorizontal: 16, alignItems: "flex-start" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");

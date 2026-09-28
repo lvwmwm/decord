@@ -1,21 +1,21 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 16213
+// Function ID: 16214
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 5708, 2041, 2105, 2063, 4427, 4975, 4976, 1074, 1375, 4414, 21, 4788, 576, 504, 4941, 1397, 12567, 5836, 4441, 4784, 1177, 12087, 5371, 1115, 12572, 16916, 1385, 16917, 2]
+// Dependencies: [19, 17, 5771, 2045, 2108, 2067, 4469, 5023, 5024, 1074, 1375, 4455, 21, 4836, 576, 504, 4989, 1397, 11767, 5899, 4483, 4832, 1177, 11282, 5435, 1115, 11772, 16214, 1385, 16215, 2]
 // Exports: default
 
-// Module 16915 (GuildOnboardingNewMemberActions)
+// Module 16213 (GuildOnboardingNewMemberActions)
 import nativeDefault from "native" /* 576 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12567 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 11767 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5708 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4975 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4976 */;
+import EmojiStore from "EmojiStore" /* 5771 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5024 */;
 
 require = fn;
 function MemberActionRow(channelId) {
@@ -111,10 +111,10 @@ function MemberActionRow(channelId) {
 const View = fn(17).View;
 const Permissions = fn(1074).Permissions;
 const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
-const GuildMemberFlags = fn(4414).GuildMemberFlags;
+const GuildMemberFlags = fn(4455).GuildMemberFlags;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: { display: "flex", marginBottom: 16 }, actionContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "center" }, channelNameContainer: { flex: 1, marginHorizontal: 8 }, icon: null, emoji: null, textEmoji: null, emojiPlaceholder: null };
 let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.xs };
 obj2.icon = size;

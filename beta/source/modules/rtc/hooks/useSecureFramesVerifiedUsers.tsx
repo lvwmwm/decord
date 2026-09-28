@@ -1,12 +1,12 @@
-// Module ID: 16177
-// Function ID: 16178
+// Module ID: 15466
+// Function ID: 15467
 // Name: useSecureFramesVerifiedUsers
-// Dependencies: [9986, 504, 2]
+// Dependencies: [9147, 504, 2]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 16177 (useSecureFramesVerifiedUsers)
+// Module 15466 (useSecureFramesVerifiedUsers)
 import initialize from "initialize" /* 504 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9986 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9147 */;
 
 require = fn;
 const size = fn(2);

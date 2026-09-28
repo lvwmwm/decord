@@ -1,32 +1,32 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 14477
+// Function ID: 14478
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 2040, 7384, 2041, 4437, 4969, 2109, 1074, 11209, 11674, 21, 4788, 576, 4742, 4784, 1484, 1485, 1115, 7447, 9608, 9367, 504, 12880, 1397, 5142, 12879, 4755, 11675, 1980, 1249, 10035, 8707, 7267, 7272, 8673, 4646, 7396, 7391, 11, 12338, 9565, 5936, 7477, 5854, 2]
+// Dependencies: [19, 17, 2044, 6528, 2045, 4479, 5017, 2112, 1074, 10377, 10926, 21, 4836, 576, 4787, 4832, 1485, 1486, 1115, 6591, 8765, 8522, 504, 12095, 1397, 5205, 12094, 4800, 10927, 1981, 1249, 9195, 7852, 6411, 6416, 7818, 4693, 6540, 6535, 11, 11538, 8722, 5999, 6621, 5917, 2]
 // Exports: default, handleDeleteApp
 
-// Module 15222 (UserSettingsAuthedApp)
+// Module 14477 (UserSettingsAuthedApp)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Link from "Link" /* 1485 */;
-import RootNavigationRef from "RootNavigationRef" /* 4646 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4742 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import useAlertStore from "useAlertStore" /* 5142 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7267 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7447 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8673 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9608 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12879 */;
+import Link from "Link" /* 1486 */;
+import RootNavigationRef from "RootNavigationRef" /* 4693 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import useAlertStore from "useAlertStore" /* 5205 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6591 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7818 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12094 */;
 import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7384 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RelationshipStore from "RelationshipStore" /* 4437 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RelationshipStore from "RelationshipStore" /* 4479 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
+import LocaleStore from "LocaleStore" /* 2112 */;
 
 require = fn;
 function WarningLabel(children) {
@@ -38,7 +38,7 @@ function WarningLabel(children) {
 }
 function AuthorizedAppTwoWay(application) {
   let navigation;
-  navigation = navigation(1484).useNavigation();
+  navigation = navigation(1485).useNavigation();
   const items = [navigation];
   const obj2 = { text: null };
   const callback = noop.useCallback(() => {
@@ -59,11 +59,11 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ UserSettingsSections: closure_12, AnalyticsSections: map1, AnalyticsPages: closure_14 } = Constants);
-let closure_15 = fn(11209).ChannelDetailsNavigatorScreens;
-let closure_16 = fn(11674).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
+let closure_15 = fn(10377).ChannelDetailsNavigatorScreens;
+let closure_16 = fn(10926).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { paddingHorizontal: 16, paddingVertical: 24 }, section: { marginBottom: 24 }, header: { flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 12 }, appAboutDescription: { width: "100%" }, warningContainer: { marginTop: nativeDefault.space.PX_12, display: "flex", flexDirection: "row" }, warningIcon: null };
 let size = { width: 16, height: 16, marginRight: 8, color: nativeDefault.colors.TEXT_MUTED };
 obj2.warningIcon = size;

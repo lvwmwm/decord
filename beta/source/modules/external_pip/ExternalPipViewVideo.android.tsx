@@ -1,17 +1,16 @@
-// Module ID: 17471
-// Function ID: 17472
+// Module ID: 16827
+// Function ID: 16828
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2041, 1372, 4809, 21, 4788, 576, 9720, 4742, 4784, 1115, 504, 1177, 9724, 4489, 17472, 9735, 17473, 9729, 2]
+// Dependencies: [32, 19, 17, 2045, 1372, 4857, 21, 4836, 576, 8877, 4787, 4832, 1115, 504, 8902, 1177, 8881, 4531, 16828, 8892, 16829, 8886, 2]
 
-// Module 17471 (ExternalPipViewVideo)
-import initialize from "initialize" /* 504 */;
+// Module 16827 (ExternalPipViewVideo)
 import nativeDefault from "native" /* 576 */;
-import ExternalPipDefault from "ExternalPip" /* 9729 */;
-import VideoActionCreators from "VideoActionCreators" /* 17472 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17473 */;
+import ExternalPipDefault from "ExternalPip" /* 8886 */;
+import VideoActionCreators from "VideoActionCreators" /* 16828 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 16829 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -21,11 +20,11 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   const obj = { style: tmp.unavailable, children: null };
   if (wasStream) {
     const obj2 = { style: tmp.unavaiableImage };
-    let tmp4Result = tmp4(tmp5(9720).StreamEnded, obj2);
+    let tmp4Result = tmp4(tmp5(8877).StreamEnded, obj2);
     let tmp8 = tmp4;
     let tmp10 = tmp5;
   } else {
-    tmp4Result = tmp4(tmp5(4742).CircleInformationIcon, {});
+    tmp4Result = tmp4(tmp5(4787).CircleInformationIcon, {});
     tmp8 = tmp4;
     tmp10 = tmp5;
   }
@@ -38,32 +37,42 @@ function ExternalPipViewVideoUnavailable(wasStream) {
     result = intl.string(tmp10(1115).t.Nzo5nz);
   }
   obj3.children = result;
-  items[1] = tmp8(tmp10(4784).Text, obj3);
+  items[1] = tmp8(tmp10(4832).Text, obj3);
   obj.children = items;
   return closure_1_12(timestampProducer, obj);
 }
-function ExternalPipViewVideoUser(arg0) {
-  ({ userId: require, channelId: importDefault, speaking } = arg0);
+function ExternalPipViewVideoUser(userId) {
+  userId = userId.userId;
+  ({ channelId: importDefault, speaking } = userId);
   const tmp = closure_14();
   const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => UserStore.getUser(require));
-  initialize;
-  [][0] = ChannelStore;
-  const obj2 = { style: tmp.user, children: null };
-  let tmp7Result = null;
+  const stateFromStores = userId(504).useStateFromStores(items, () => UserStore.getUser(userId));
+  const obj = userId(504);
+  const items1 = [ChannelStore];
+  const stateFromStores1 = userId(504).useStateFromStores(items1, () => {
+    const channel = ChannelStore.getChannel(importDefault);
+    let guild_id;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    return guild_id;
+  });
+  userId(8902);
+  const obj3 = { style: tmp.user, children: null };
+  let tmp8Result = null;
   if (null != stateFromStores) {
-    const obj3 = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: tmp6, size: tmp2(1177).AvatarSizes.XXLARGE, animate: speaking, speaking };
-    tmp7Result = tmp7(tmp2(1177).Avatar, obj3);
+    const obj4 = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: stateFromStores1, size: tmp2(1177).AvatarSizes.XXLARGE, animate: speaking, speaking, speakingColor: tmp7 };
+    tmp8Result = tmp8(tmp2(1177).Avatar, obj4);
   }
-  obj2.children = tmp7Result;
-  return closure_11(closure_6, obj2);
+  obj3.children = tmp8Result;
+  return closure_11(closure_6, obj3);
 }
 function ExternalPipViewVideoStream(streamId) {
   streamId = streamId.streamId;
   first = 300;
   _slicedToArray = undefined;
   noop = undefined;
-  const surfaceDirectRendererExperiment = streamId(9724).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
+  const surfaceDirectRendererExperiment = streamId(8881).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
   [first, _slicedToArray] = noop.useState(undefined);
   const tmp4 = _slicedToArray(noop.useState(false), 2);
   noop = tmp4[1];
@@ -95,8 +104,8 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = { opacity: num };
     return items;
   }, items2);
-  let obj = streamId(9724);
-  const token = streamId(4489).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
+  let obj = streamId(8881);
+  const token = streamId(4531).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
   value = closure_7.get();
   _slicedToArray = value;
   const items3 = [streamId, value];
@@ -107,7 +116,7 @@ function ExternalPipViewVideoStream(streamId) {
       VideoActionCreators.updateVideoSize(tmp, size, 1);
     }
   }, items3);
-  const children = [closure_11(first(9735), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(8892), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp14Result = null;
   if (null == first) {
     tmp14Result = null;
@@ -123,10 +132,10 @@ function ExternalPipViewVideoStream(streamId) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, StyleSheet, View: metroRequire, PixelRatio: closure_7 } = get_ActivityIndicator);
-const ParticipantTypes = fn(4809).ParticipantTypes;
+const ParticipantTypes = fn(4857).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { container: null, video: null, videoUnavailableWrap: null, videoUnavailableSpinner: null, unavailable: null, unavailableText: null, unavaiableImage: null, user: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

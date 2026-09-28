@@ -1,20 +1,20 @@
-// Module ID: 15332
-// Function ID: 15333
+// Module ID: 14589
+// Function ID: 14590
 // Name: BountyVideoEndAppStorePanel
-// Dependencies: [19, 17, 1182, 7428, 21, 4788, 576, 11786, 5235, 4524, 7986, 4477, 11782, 6929, 4789, 4792, 7431, 504, 4498, 2]
+// Dependencies: [19, 17, 1182, 6572, 21, 4836, 576, 10725, 5298, 4566, 7131, 4519, 10721, 6073, 4837, 4840, 6575, 504, 4540, 2]
 // Exports: default
 
-// Module 15332 (BountyVideoEndAppStorePanel)
+// Module 14589 (BountyVideoEndAppStorePanel)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import openURLDefault from "openURL" /* 4477 */;
-import native from "native" /* 4498 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
-import timingPresets from "timingPresets" /* 4792 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6929 */;
-import AnalyticsActions from "AnalyticsActions" /* 7986 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 11782 */;
+import openURLDefault from "openURL" /* 4519 */;
+import native from "native" /* 4540 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
+import timingPresets from "timingPresets" /* 4840 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
+import AnalyticsActions from "AnalyticsActions" /* 7131 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10721 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -26,6 +26,7 @@ function BountyVideoEndAppStorePanelInner(metadata) {
   const onDismiss = metadata.onDismiss;
   const onInstallPress = metadata.onInstallPress;
   let sharedValue;
+  ({ onOverlaySurfaceClick, onCarouselScroll } = metadata);
   const tmp = closure_9();
   closure_5 = tmp;
   onDismiss.useRef(false);
@@ -38,7 +39,7 @@ function BountyVideoEndAppStorePanelInner(metadata) {
   }, items);
   const unmountEffect = metadata(revealProgress[8]).useUnmountEffect(onPress);
   let obj = metadata(revealProgress[8]);
-  class H {
+  class A {
     constructor() {
       obj = { transform: null };
       obj1 = { translateY: null };
@@ -55,11 +56,11 @@ function BountyVideoEndAppStorePanelInner(metadata) {
     }
   }
   let obj2 = metadata(revealProgress[9]);
-  H.__closure = { interpolate: metadata(revealProgress[9]).interpolate, revealProgress, sheetHeight, Extrapolation: metadata(revealProgress[9]).Extrapolation };
-  H.__workletHash = 2597568517005;
-  H.__initData = __initData;
+  A.__closure = { interpolate: metadata(revealProgress[9]).interpolate, revealProgress, sheetHeight, Extrapolation: metadata(revealProgress[9]).Extrapolation };
+  A.__workletHash = 2597568517005;
+  A.__initData = __initData;
   let items1 = [metadata.storeUrl, onInstallPress];
-  const animatedStyle = obj2.useAnimatedStyle(H);
+  const animatedStyle = obj2.useAnimatedStyle(A);
   const callback1 = onDismiss.useCallback(() => {
     onInstallPress(AnalyticsActions.AppStoreOverlaySurfaces.MAIN_CTA);
     openURLDefault(metadata.storeUrl);
@@ -126,7 +127,7 @@ function BountyVideoEndAppStorePanelInner(metadata) {
   const items6 = [memo1, animatedStyle];
   obj6.style = items6;
   const obj4 = metadata(revealProgress[9]);
-  const items7 = [onPress(onInstallPress, { style: tmp.scrollBody, contentContainerStyle: tmp.scrollContent, nestedScrollEnabled: true, showsVerticalScrollIndicator: false, keyboardShouldPersistTaps: "handled", children: onPress(metadata(revealProgress[7]).AppStoreOverlayBody, { metadata, onOpenReviews: callback2, onMediaGetGamePress: callback1 }) }), , ];
+  const items7 = [onPress(onInstallPress, { style: tmp.scrollBody, contentContainerStyle: tmp.scrollContent, nestedScrollEnabled: true, showsVerticalScrollIndicator: false, keyboardShouldPersistTaps: "handled", children: onPress(metadata(revealProgress[7]).AppStoreOverlayBody, { metadata, onOpenReviews: callback2, onMediaGetGamePress: callback1, onCarouselScroll, onOverlaySurfaceClick }) }), , ];
   const obj8 = { gesture: memo, children: null };
   const obj9 = { style: tmp.headerGestureTarget, children: onPress(metadata(revealProgress[16]).ActionSheetHeaderBar, { variant: "overlay", style: tmp.headerBar, onPress }) };
   obj8.children = onPress(closure_5, obj9);
@@ -138,13 +139,13 @@ function BountyVideoEndAppStorePanelInner(metadata) {
 }
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ACTION_SHEET_BORDER_RADIUS = fn(7428).ACTION_SHEET_BORDER_RADIUS;
+const ACTION_SHEET_BORDER_RADIUS = fn(6572).ACTION_SHEET_BORDER_RADIUS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { root: { position: "absolute", left: 0, right: 0, bottom: 0, zIndex: 10 }, panel: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, borderTopLeftRadius: ACTION_SHEET_BORDER_RADIUS, borderTopRightRadius: ACTION_SHEET_BORDER_RADIUS, overflow: "hidden", flexDirection: "column" }, headerBar: { zIndex: 1 }, headerGestureTarget: { position: "absolute", top: 0, left: 0, right: 0, height: 48, zIndex: 2 }, scrollBody: { flex: 1, minHeight: 0 }, scrollContent: null };
 let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, borderTopLeftRadius: ACTION_SHEET_BORDER_RADIUS, borderTopRightRadius: ACTION_SHEET_BORDER_RADIUS, overflow: "hidden", flexDirection: "column" };
-obj2.scrollContent = { paddingBottom: fn(11786).APP_STORE_OVERLAY_FOOTER_GRADIENT_HEIGHT };
+obj2.scrollContent = { paddingBottom: fn(10725).APP_STORE_OVERLAY_FOOTER_GRADIENT_HEIGHT };
 let closure_9 = createStyles.createStyles(obj2);
 const __initData = { code: "function BountyVideoEndAppStorePanelTsx1(){const{interpolate,revealProgress,sheetHeight,Extrapolation}=this.__closure;return{transform:[{translateY:interpolate(revealProgress.get(),[0,1],[sheetHeight,0],Extrapolation.CLAMP)}]};}" };
 let closure_11 = { code: "function BountyVideoEndAppStorePanelTsx2(event){const{revealProgress,DISMISS_PROGRESS_THRESHOLD,DISMISS_VELOCITY_THRESHOLD,runOnJS,handleDismiss,withTiming,timingStandard}=this.__closure;if(revealProgress.get()<DISMISS_PROGRESS_THRESHOLD||event.velocityY>DISMISS_VELOCITY_THRESHOLD){runOnJS(handleDismiss)();return;}revealProgress.set(withTiming(1,timingStandard));}" };

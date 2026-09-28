@@ -1,14 +1,14 @@
-// Module ID: 15185
-// Function ID: 15186
+// Module ID: 14440
+// Function ID: 14441
 // Name: FamilyCenterActivityGiftRowUtils
-// Dependencies: [1115, 4023, 7511, 2482, 2]
+// Dependencies: [1115, 4064, 6655, 2487, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 15185 (FamilyCenterActivityGiftRowUtils)
+// Module 14440 (FamilyCenterActivityGiftRowUtils)
 import util from "util" /* 1115 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import _mod4023 from "module_4023" /* 4023 */;
-import PriceUtils from "PriceUtils" /* 7511 */;
+import _modDef2487 from "module_2487" /* 2487 */;
+import _mod4064 from "module_4064" /* 4064 */;
+import PriceUtils from "PriceUtils" /* 6655 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
@@ -18,7 +18,7 @@ export const getGiftRowDisplayInfo = function getGiftRowDisplayInfo(giftInfo) {
 };
 export const formatGiftDate = function formatGiftDate(claimedAt) {
   const dateTimeFormat = new Intl.DateTimeFormat(util.intl.currentLocale, { month: "short", day: "numeric" });
-  return dateTimeFormat.format(_mod4023.parseISO(claimedAt));
+  return dateTimeFormat.format(_mod4064.parseISO(claimedAt));
 };
 export const getGiftSubtext = function getGiftSubtext(claimed) {
   ({ price, gifterName, offeredAt, claimedAt } = claimed);
@@ -30,12 +30,12 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
     if (null != gifterName) {
       const intl = util.intl;
       const obj2 = { price: formatPriceResult, username: gifterName };
-      let formatToPlainStringResult = intl.formatToPlainString(_modDef2482["o44n/1"], obj2);
+      let formatToPlainStringResult = intl.formatToPlainString(_modDef2487["o44n/1"], obj2);
     }
     const items = [formatToPlainStringResult, ];
     const intl2 = util.intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const tmp11 = _modDef2482;
+    const tmp11 = _modDef2487;
     if (claimed.claimed) {
       if (claimedAt == null) {
         claimedAt = offeredAt;
@@ -43,16 +43,16 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
       const obj3 = { date: null };
       const _Intl2 = Intl;
       const dateTimeFormat = new Intl.DateTimeFormat(tmp8(1115).intl.currentLocale, { month: "short", day: "numeric" });
-      obj3.date = dateTimeFormat.format(tmp8(4023).parseISO(claimedAt));
+      obj3.date = dateTimeFormat.format(tmp8(4064).parseISO(claimedAt));
       let formatToPlainStringResult1 = formatToPlainString(tmp11.kDyllq, obj3);
-      const tmp8Result = tmp8(4023);
+      const tmp8Result = tmp8(4064);
     } else {
       const obj4 = { date: null };
       const _Intl = Intl;
       const dateTimeFormat1 = new Intl.DateTimeFormat(tmp8(1115).intl.currentLocale, { month: "short", day: "numeric" });
-      obj4.date = dateTimeFormat1.format(tmp8(4023).parseISO(offeredAt));
+      obj4.date = dateTimeFormat1.format(tmp8(4064).parseISO(offeredAt));
       formatToPlainStringResult1 = formatToPlainString(tmp11.gAG45y, obj4);
-      const tmp8Result2 = tmp8(4023);
+      const tmp8Result2 = tmp8(4064);
     }
     items[1] = formatToPlainStringResult1;
     const _Boolean = Boolean;

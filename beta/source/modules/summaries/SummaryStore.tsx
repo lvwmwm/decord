@@ -1,25 +1,25 @@
-// Module ID: 11637
-// Function ID: 11638
+// Module ID: 10887
+// Function ID: 10888
 // Name: SummaryStore
-// Dependencies: [32, 4703, 10129, 2041, 2063, 4803, 2095, 4969, 1372, 11638, 10130, 504, 11, 1091, 11639, 573, 11640, 12, 2]
+// Dependencies: [32, 4750, 9289, 2045, 2067, 4851, 2099, 5017, 1372, 10888, 9290, 504, 11, 1091, 10889, 573, 10890, 12, 2]
 
-// Module 11637 (SummaryStore)
+// Module 10887 (SummaryStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import sortByMatchScore from "sortByMatchScore" /* 10130 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11639 */;
-import Summary from "Summary" /* 11640 */;
+import sortByMatchScore from "sortByMatchScore" /* 9290 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10889 */;
+import Summary from "Summary" /* 10890 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4703 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 10129 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import ReadStateStore from "ReadStateStore" /* 4803 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+import ExperimentStore from "ExperimentStore" /* 4750 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 9289 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import ReadStateStore from "ReadStateStore" /* 4851 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -34,7 +34,7 @@ function handleQuickSwitcherUpdate() {
   });
   closure_24 = found.map((record) => record.record.id);
 }
-const SUMMARY_POLL_INTERVAL = fn(11638).SUMMARY_POLL_INTERVAL;
+const SUMMARY_POLL_INTERVAL = fn(10888).SUMMARY_POLL_INTERVAL;
 let obj = { FETCHING: "fetching", OK: "ok", ERROR: "error" };
 const dependencyMap2 = {};
 const dependencyMap3 = {};
@@ -564,10 +564,10 @@ obj2 = {
       const tmp = closure_7(item, 2);
       const first = tmp[0];
       obj = error(12);
-      const chainResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(11640).createSummaryFromServer(item, first)));
-      const sortByResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(11640).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId));
-      const reversed = error(12).chain(tmp[1].map((item) => lastReceivedAt(11640).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId)).takeRight(75).reverse();
-      const takeRightResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(11640).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId)).takeRight(75);
+      const chainResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(10890).createSummaryFromServer(item, first)));
+      const sortByResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(10890).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId));
+      const reversed = error(12).chain(tmp[1].map((item) => lastReceivedAt(10890).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId)).takeRight(75).reverse();
+      const takeRightResult = error(12).chain(tmp[1].map((item) => lastReceivedAt(10890).createSummaryFromServer(item, first))).sortBy((startId) => error(11).extractTimestamp(startId.startId)).takeRight(75);
       acc[first] = reversed.filter((item) => Object.keys(item).length > 0).value();
       return acc;
     }, {});

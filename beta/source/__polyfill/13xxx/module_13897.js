@@ -1,9 +1,37 @@
 // Module ID: 13897
 // Function ID: 13898
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: getReactNativeVersionWithModules
 
 // Module 13897
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_boosting/native/images", width: 424, height: 254, scales: [1], hash: "16c887e8a2a3597bff0b1e42c0c69934", name: "top_perk_vanity_url", type: "png" });
+export const getReactNativeVersionWithModules = function getReactNativeVersionWithModules(constants) {
+  try {
+    if (constants) {
+      if (constants.reactNativeVersion) {
+        const major = constants.reactNativeVersion.major;
+        const minor = constants.reactNativeVersion.minor;
+        const patch = constants.reactNativeVersion.patch;
+        const prerelease = constants.reactNativeVersion.prerelease;
+        if (typeof major !== "number") {
+          return null;
+        } else {
+          const items = [];
+          const _HermesInternal2 = HermesInternal;
+          items.push("" + tmp4 + "." + minor + "." + patch);
+          if (prerelease) {
+            const _HermesInternal = HermesInternal;
+            arr2.push("-" + prerelease);
+          }
+          return items.join("");
+        }
+      } else {
+        return null;
+      }
+    } else {
+      return null;
+    }
+  } catch (err) {
+    return null;
+  }
+};

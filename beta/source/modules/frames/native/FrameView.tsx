@@ -1,18 +1,18 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 16279
+// Function ID: 16280
 // Name: FrameView
-// Dependencies: [32, 19, 9345, 9346, 2004, 21, 7440, 573, 9594, 16972, 9755, 16973, 16974, 9770, 504, 16977, 2]
+// Dependencies: [32, 19, 8499, 8500, 2005, 21, 6584, 573, 8751, 16280, 8915, 16281, 16282, 8931, 504, 16285, 2]
 // Exports: InlineFrameView
 
-// Module 16971 (FrameView)
+// Module 16279 (FrameView)
 import initialize from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9594 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16972 */;
-import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 16977 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 8751 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16280 */;
+import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 16285 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9345 */;
+import FramesStore from "FramesStore" /* 8499 */;
 
 require = fn;
 function FrameViewInner(frame) {
@@ -76,9 +76,9 @@ function FrameViewInner(frame) {
   }} applicationId={frame.applicationId} frameId={frame.id} activityUrl={frame.data.url} queryParams={null} onLoadError={null} allowPopups={null} referrerPolicy="origin" isPipOrGridMode={null} webViewKey={null} safeAreasConfig={null} />;
   return jsx(frame(setIsResetting[10]).BaseActivityView, { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null });
 }
-const FramesConstants = fn(9346);
+const FramesConstants = fn(8500);
 ({ asLaunched: metroRequire, FrameLayoutModes: closure_7 } = FramesConstants);
-const ActivityPlatform = fn(2004).ActivityPlatform;
+const ActivityPlatform = fn(2005).ActivityPlatform;
 const jsx = fn(21).jsx;
 const memoResult = noop.memo(function FrameViewGate(arg0) {
   const items = [FramesStore];

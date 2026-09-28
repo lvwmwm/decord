@@ -1,25 +1,25 @@
-// Module ID: 16241
-// Function ID: 16242
+// Module ID: 15530
+// Function ID: 15531
 // Name: NotifyFriendsOnProfileUpdateSetting
-// Dependencies: [8265, 11754, 1115, 2680, 2019, 16242, 2]
+// Dependencies: [7417, 11006, 1115, 2685, 2021, 15531, 2]
 
-// Module 16241 (NotifyFriendsOnProfileUpdateSetting)
+// Module 15530 (NotifyFriendsOnProfileUpdateSetting)
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import _modDef2680 from "module_2680" /* 2680 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 16242 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import _modDef2685 from "module_2685" /* 2685 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 15531 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2680.F3llsQ);
+    return intl.string(_modDef2685.F3llsQ);
   },
   useDescription() {
     const intl = util.intl;
-    return intl.string(_modDef2680["6goWcz"]);
+    return intl.string(_modDef2685["6goWcz"]);
   },
   parent: SettingsConstants.MobileUserSettings.DATA_AND_PRIVACY,
   useValue: UserSettings.NotifyFriendsOnProfileUpdate.useSetting,

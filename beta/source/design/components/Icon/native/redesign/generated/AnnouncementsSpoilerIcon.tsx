@@ -1,13 +1,13 @@
-// Module ID: 5342
-// Function ID: 5343
+// Module ID: 5406
+// Function ID: 5407
 // Name: AnnouncementsSpoilerIcon
-// Dependencies: [19, 21, 576, 4488, 5290, 2]
+// Dependencies: [19, 21, 576, 4530, 5354, 2]
 // Exports: AnnouncementsSpoilerIcon
 
-// Module 5342 (AnnouncementsSpoilerIcon)
+// Module 5406 (AnnouncementsSpoilerIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod5290 from "module_5290" /* 5290 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod5354 from "module_5354" /* 5354 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const AnnouncementsSpoilerIcon = function AnnouncementsSpoilerIcon(color)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5290, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5354, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

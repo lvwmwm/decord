@@ -1,20 +1,19 @@
-// Module ID: 8352
-// Function ID: 8353
+// Module ID: 7505
+// Function ID: 7506
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1372, 7724, 1374, 504, 4446, 2036, 2]
+// Dependencies: [32, 19, 1372, 6870, 1374, 504, 4488, 2040, 2]
 // Exports: default
 
-// Module 8352 (useDiscountOffer)
+// Module 7505 (useDiscountOffer)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import UserOfferStore from "UserOfferStore" /* 7724 */;
+import UserOfferStore from "UserOfferStore" /* 6870 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const PremiumConstants = fn(1374);
-({ PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: metroRequire, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_7 } = PremiumConstants);
+const CHURN_DISCOUNT_IDS = fn(1374).CHURN_DISCOUNT_IDS;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/hooks/useDiscountOffer.tsx");
 
@@ -35,8 +34,9 @@ export default function useDiscountOffer(arg0, arg1) {
   const obj = require("initialize");
   const obj3 = noop;
   const items1 = [UserStore];
-  const items2 = [first, stateFromStores];
   const stateFromStores1 = require("initialize").useStateFromStores(items1, () => closure_0(stateFromStores[6]).isPremium(currentUser.getCurrentUser()));
+  const items2 = [first, stateFromStores];
+  const hasItem = CHURN_DISCOUNT_IDS.includes(arg0);
   const effect = obj3.useEffect(() => {
     let hasAcknowledgedResult;
     if (stateFromStores != null) {
@@ -130,16 +130,14 @@ export default function useDiscountOffer(arg0, arg1) {
       return () => timeout.stop();
     }
   }, items2);
-  let tmp7 = null;
+  let tmp8 = null;
   if (!first) {
     if (stateFromStores1) {
       if (!arg1) {
-        if (arg0 !== closure_6) {
-          tmp7 = null;
-        }
+        tmp8 = null;
       }
     }
-    tmp7 = stateFromStores;
+    tmp8 = stateFromStores;
   }
-  return tmp7;
+  return tmp8;
 };

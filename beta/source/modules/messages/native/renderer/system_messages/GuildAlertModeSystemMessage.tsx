@@ -1,23 +1,23 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 7476
+// Function ID: 7477
 // Name: GuildAlertModeSystemMessage
-// Dependencies: [2041, 4788, 576, 8243, 8250, 8252, 1115, 8324, 8254, 1400, 1397, 2]
+// Dependencies: [2045, 4836, 576, 7395, 7402, 7404, 1115, 7477, 7406, 1400, 1397, 2]
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage
 
-// Module 8323 (GuildAlertModeSystemMessage)
+// Module 7476 (GuildAlertModeSystemMessage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8243 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8250 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8252 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8254 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8324 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7395 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7402 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7404 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7406 */;
+import getTagPropertiesDefault from "getTagProperties" /* 7477 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 const nativeStyleProperties = createStyles.createNativeStyleProperties({ automodUsernameColor: nativeDefault.colors.TEXT_BRAND });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildAlertModeSystemMessage.tsx");
@@ -38,7 +38,7 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
   }
   obj2.time = str;
   const obj3 = {};
-  const merged = Object.assign(tmp(8254)(roleStyle));
+  const merged = Object.assign(tmp(7406)(roleStyle));
   const intl = tmp5(1115).intl;
   obj3.content = intl.formatToParts(util.t.ig55n6, obj2);
   const intl2 = tmp5(1115).intl;

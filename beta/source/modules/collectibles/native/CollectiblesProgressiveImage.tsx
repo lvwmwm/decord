@@ -1,12 +1,12 @@
-// Module ID: 16174
-// Function ID: 16175
+// Module ID: 15463
+// Function ID: 15464
 // Name: CollectiblesProgressiveImage
-// Dependencies: [19, 17, 21, 4524, 4789, 2]
+// Dependencies: [19, 17, 21, 4566, 4837, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 16174 (CollectiblesProgressiveImage)
-import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
-import timing from "timing" /* 4789 */;
+// Module 15463 (CollectiblesProgressiveImage)
+import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
+import timing from "timing" /* 4837 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -22,7 +22,7 @@ export const CollectiblesProgressiveImage = function CollectiblesProgressiveImag
   ({ source, style } = arg0);
   let sharedValue;
   const merged = Object.assign(arg0, Object.assign({ source: 0, style: 0 }));
-  sharedValue = sharedValue(4524).useSharedValue(0);
+  sharedValue = sharedValue(4566).useSharedValue(0);
   let obj2 = { style, children: null };
   const obj3 = {};
   const merged1 = Object.assign(merged);

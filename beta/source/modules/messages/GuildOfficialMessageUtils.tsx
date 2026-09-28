@@ -1,19 +1,19 @@
-// Module ID: 7541
-// Function ID: 7542
+// Module ID: 6685
+// Function ID: 6686
 // Name: GuildOfficialMessageUtils
-// Dependencies: [2063, 4427, 4781, 1074, 1092, 672, 4637, 4639, 7542, 504, 7543, 7544, 2]
+// Dependencies: [2067, 4469, 4829, 1074, 1092, 672, 4683, 4685, 6686, 504, 6687, 6688, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
 
-// Module 7541 (GuildOfficialMessageUtils)
+// Module 6685 (GuildOfficialMessageUtils)
 import _modDef672 from "module_672" /* 672 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import ColorUtils from "ColorUtils" /* 4637 */;
-import shared from "shared" /* 4639 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7542 */;
-import ThreadHooks from "ThreadHooks" /* 7543 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7544 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
+import ColorUtils from "ColorUtils" /* 4683 */;
+import shared from "shared" /* 4685 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6686 */;
+import ThreadHooks from "ThreadHooks" /* 6687 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6688 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
 
 const require = globalThis.__r;
 
@@ -49,7 +49,7 @@ function useCanManageGuildOfficialMessages(arg0, arg1, location) {
   }
   return enabled;
 }
-let closure_5 = fn(4781).GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
+let closure_5 = fn(4829).GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
 const Constants = fn(1074);
 ({ ChannelTypes: metroRequire, GuildFeatures: closure_7, MessageFlags: closure_8, Permissions: closure_9 } = Constants);
 const size = fn(2);

@@ -1,13 +1,13 @@
-// Module ID: 4728
-// Function ID: 4729
+// Module ID: 4773
+// Function ID: 4774
 // Name: UserMinusIcon
-// Dependencies: [19, 21, 576, 4488, 4729, 2]
+// Dependencies: [19, 21, 576, 4530, 4774, 2]
 // Exports: UserMinusIcon
 
-// Module 4728 (UserMinusIcon)
+// Module 4773 (UserMinusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod4729 from "module_4729" /* 4729 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod4774 from "module_4774" /* 4774 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const UserMinusIcon = function UserMinusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4729, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4774, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

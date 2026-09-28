@@ -1,10 +1,10 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 13358
+// Function ID: 13359
 // Name: AV1BitrateTuningExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 14112 (AV1BitrateTuningExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13358 (AV1BitrateTuningExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-05-av1-bitrate-tuning", kind: "user", defaultConfig: { bitrate: 3500000 }, variations: null };

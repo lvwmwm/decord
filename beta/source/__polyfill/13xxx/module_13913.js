@@ -1,9 +1,30 @@
 // Module ID: 13913
 // Function ID: 13914
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: default
 
 // Module 13913
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 215, height: 128, scales: [2, 3], hash: "91b8f5f85a023591658822c0d3091e54", name: "guild_subscription_removal_darker", type: "png" });
+export default () => (arg0) => {
+  closure_0 = arg0;
+  return {
+    features: {
+      apiResponse(request, response, tmp4Result) {
+        let status = response;
+        if (response) {
+          status = response.status;
+        }
+        if (status) {
+          status = typeof response.status === "number";
+        }
+        if (status) {
+          status = response.status >= 200;
+        }
+        if (status) {
+          status = response.status <= 299;
+        }
+        closure_0.send("api.response", { request, response, duration: tmp4Result }, !status);
+      }
+    }
+  };
+};

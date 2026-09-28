@@ -1,18 +1,18 @@
-// Module ID: 7682
-// Function ID: 7683
+// Module ID: 6828
+// Function ID: 6829
 // Name: LinkButton
-// Dependencies: [19, 21, 4788, 5371, 4784, 2]
+// Dependencies: [19, 21, 4836, 5435, 4832, 2]
 // Exports: LinkButton
 
-// Module 7682 (LinkButton)
-import Text_Text from "Text/Text" /* 4784 */;
-import Pressables from "Pressables" /* 5371 */;
+// Module 6828 (LinkButton)
+import Text_Text from "Text/Text" /* 4832 */;
+import Pressables from "Pressables" /* 5435 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c2, jsxs: c3 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_4 = createStyles.createStyles({ defaultContainerStyle: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }, disabledContainerStyle: { opacity: 0.5 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/components/LinkButton.tsx");

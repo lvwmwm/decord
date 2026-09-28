@@ -1,10 +1,10 @@
-// Module ID: 11036
-// Function ID: 11037
+// Module ID: 10204
+// Function ID: 10205
 // Name: GiftingBadgeExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 
-// Module 11036 (GiftingBadgeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 10204 (GiftingBadgeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-gifting-badge", kind: "user", defaultConfig: { enabled: false }, variations: null };

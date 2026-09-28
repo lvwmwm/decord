@@ -1,15 +1,15 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 14956
+// Function ID: 14957
 // Name: DisplayNameStylesAccessibilitySetting
-// Dependencies: [4780, 8265, 504, 14748, 11754, 1115, 2872, 2]
+// Dependencies: [4825, 7417, 504, 13998, 11006, 1115, 2877, 2]
 // Exports: onValueChange, useValue
 
-// Module 15683 (DisplayNameStylesAccessibilitySetting)
+// Module 14956 (DisplayNameStylesAccessibilitySetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import _modDef2872 from "module_2872" /* 2872 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14748 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import _modDef2877 from "module_2877" /* 2877 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;
 function useValue() {
@@ -19,13 +19,13 @@ function useValue() {
 function onValueChange(enabled) {
   const result = AccessibilityActionCreators.setDisplayNameStylesEnabled(enabled);
 }
-const SettingBuilders = fn(11754);
+const SettingBuilders = fn(11006);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2872["2gFUEw"]);
+    return intl.string(_modDef2877["2gFUEw"]);
   },
-  parent: fn(8265).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(7417).MobileUserSettings.ACCESSIBILITY,
   useValue,
   onValueChange
 });

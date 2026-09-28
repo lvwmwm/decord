@@ -1,18 +1,18 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 9606
+// Function ID: 9607
 // Name: NotificationSettingsChannel
-// Dependencies: [19, 17, 4969, 21, 4788, 576, 10443, 1115, 4941, 1484, 5873, 7396, 7391, 504, 8903, 10445, 10446, 10452, 10459, 10465, 5218, 2]
+// Dependencies: [19, 17, 5017, 21, 4836, 576, 9607, 1115, 4989, 1485, 5936, 6540, 6535, 504, 8053, 9609, 9610, 9616, 9623, 9629, 5281, 2]
 // Exports: default
 
-// Module 10442 (NotificationSettingsChannel)
+// Module 9606 (NotificationSettingsChannel)
 import nativeDefault from "native" /* 576 */;
-import useChannelNameDefault from "useChannelName" /* 4941 */;
-import NavigatorHeader from "NavigatorHeader" /* 5873 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10443 */;
+import useChannelNameDefault from "useChannelName" /* 4989 */;
+import NavigatorHeader from "NavigatorHeader" /* 5936 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 9607 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
 const require = globalThis.__r;
 
@@ -20,7 +20,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { screenContainer: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -32,7 +32,7 @@ export default function NotificationSettingsChannel(channel) {
   const intl = require("util").intl;
   importDefault = intl.string(require("util").t.h850Ss);
   dependencyMap = useChannelNameDefault(channel.channel);
-  const obj = require("notficationSettingsChannelFlagUtils");
+  let obj = require("notficationSettingsChannelFlagUtils");
   noop = require("useNavigation").useNavigation();
   const obj2 = require("useNavigation");
   const layoutEffect = noop.useLayoutEffect(() => {
@@ -51,7 +51,8 @@ export default function NotificationSettingsChannel(channel) {
   const items1 = [channel.channel];
   const callback = noop.useCallback(() => notficationSettingsChannelFlagUtils.updateChannelToGuildDefault(channel.channel.guild_id, channel.channel.id), items);
   const callback1 = noop.useCallback(() => {
-    const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, { muted: false }, NotificationSettingsUtils.NotificationLabels.Unmuted);
+    const obj = NotificationSettingsModalActionCreatorsDefault;
+    const result = obj.updateChannelOverrideSettings({ guildId: channel.channel.guild_id, channelId: channel.channel.id, settings: { muted: false }, label: NotificationSettingsUtils.NotificationLabels.Unmuted });
   }, items1);
   const tmp4 = closure_8();
   const items2 = [UserGuildSettingsStore];
@@ -62,17 +63,17 @@ export default function NotificationSettingsChannel(channel) {
     const obj5 = { style: { marginBottom: 16 }, title: null, subtitle: null, onPressUnmute: null };
     const intl2 = tmp(1115).intl;
     obj5.title = intl2.string(tmp(1115).t["6MCxAy"]);
-    obj5.subtitle = tmp(10445).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
+    obj5.subtitle = tmp(9609).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
     obj5.onPressUnmute = callback1;
-    muted = closure_6(tmp(10445).NotificationSettingsMuteBanner, obj5);
-    const tmpResult = tmp(10445);
+    muted = closure_6(tmp(9609).NotificationSettingsMuteBanner, obj5);
+    const tmpResult = tmp(9609);
   }
   const items3 = [muted, closure_6(require("NotificationSettingsPresets").NotificationSettingsChannelPresets, { channel: channel.channel }), closure_6(require("NotificationSettingsMessageNotification").NotificationSettingsChannelMessageNotification, { style: { marginTop: 24 }, channel: channel.channel }), closure_6(require("NotificationSettingsMessageUnread").NotificationSettingsChannelMessageUnread, { style: { marginTop: 24 }, channel: channel.channel }), , ];
   channel = channel.channel;
   let isForumLikeChannelResult = channel.isForumLikeChannel();
   if (isForumLikeChannelResult) {
     const obj9 = { style: { marginTop: 24 }, channel: channel.channel };
-    isForumLikeChannelResult = tmp11(tmp(10465).NotificationSettingsChannelPost, obj9);
+    isForumLikeChannelResult = tmp11(tmp(9629).NotificationSettingsChannelPost, obj9);
   }
   items3[4] = isForumLikeChannelResult;
   const inherited = channelPresetInheritance.inherited;
@@ -82,7 +83,7 @@ export default function NotificationSettingsChannel(channel) {
     const obj11 = { variant: "secondary", onPress: callback, text: null };
     const intl3 = tmp(1115).intl;
     obj11.text = intl3.string(tmp(1115).t["3PBFN6"]);
-    obj10.children = tmp11(tmp(5218).Button, obj11);
+    obj10.children = tmp11(tmp(5281).Button, obj11);
     tmp11Result = tmp11(View, obj10);
   }
   items3[5] = tmp11Result;

@@ -1,12 +1,12 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 9509
+// Function ID: 9510
 // Name: useIsGuestOrLurker
-// Dependencies: [2105, 2063, 1074, 504, 2]
+// Dependencies: [2108, 2067, 1074, 504, 2]
 // Exports: default, isGuestOrLurkerInGuild
 
-// Module 10345 (useIsGuestOrLurker)
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 9509 (useIsGuestOrLurker)
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 

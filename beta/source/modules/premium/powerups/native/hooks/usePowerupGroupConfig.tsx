@@ -1,18 +1,18 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 12045
+// Function ID: 12046
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 2063, 504, 8466, 1115, 2514, 12833, 12834, 1370, 2]
+// Dependencies: [19, 2067, 504, 7610, 1115, 2519, 12046, 12047, 1370, 2]
 // Exports: default
 
-// Module 12832 (usePowerupGroupConfig)
+// Module 12045 (usePowerupGroupConfig)
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import _modDef2514 from "module_2514" /* 2514 */;
-import GuildTagUtils from "GuildTagUtils" /* 8466 */;
-import _modDef12833 from "module_12833" /* 12833 */;
-import _modDef12834 from "module_12834" /* 12834 */;
+import _modDef2519 from "module_2519" /* 2519 */;
+import GuildTagUtils from "GuildTagUtils" /* 7610 */;
+import _modDef12046 from "module_12046" /* 12046 */;
+import _modDef12047 from "module_12047" /* 12047 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
@@ -37,15 +37,15 @@ export default function usePowerupGroupConfig(arg0, arg1) {
     if ("guildTagsBadgePacks" === group.group) {
       const obj2 = { title: null, description: null, image: null, disabledReason: null, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
       const intl = util.intl;
-      obj2.title = intl.string(_modDef2514.KC9HRW);
+      obj2.title = intl.string(_modDef2519.KC9HRW);
       const intl2 = util.intl;
-      obj2.description = intl2.string(_modDef2514.GJiSmP);
-      const obj3 = { staticUrl: _modDef12833, animatedUrl: _modDef12834 };
+      obj2.description = intl2.string(_modDef2519.GJiSmP);
+      const obj3 = { staticUrl: _modDef12046, animatedUrl: _modDef12047 };
       obj2.image = obj3;
       let stringResult;
       if (!stateFromStores) {
         const intl3 = util.intl;
-        stringResult = intl3.string(_modDef2514.lvk1Gc);
+        stringResult = intl3.string(_modDef2519.lvk1Gc);
       }
       obj2.disabledReason = stringResult;
       return obj2;

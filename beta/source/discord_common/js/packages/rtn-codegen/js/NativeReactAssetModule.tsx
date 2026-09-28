@@ -1,9 +1,9 @@
-// Module ID: 18366
-// Function ID: 18367
+// Module ID: 17732
+// Function ID: 17733
 // Name: NativeReactAssetModule
 // Dependencies: [17, 2]
 
-// Module 18366 (NativeReactAssetModule)
+// Module 17732 (NativeReactAssetModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

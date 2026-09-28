@@ -1,0 +1,12 @@
+// Module ID: 4805
+// Function ID: 4806
+// Name: HapticFeedbackTypes
+// Dependencies: []
+// Exports: isRingerSilent
+
+// Module 4805 (HapticFeedbackTypes)
+
+export const HapticFeedbackTypes = { selection: "selection", impactLight: "impactLight", impactMedium: "impactMedium", impactHeavy: "impactHeavy", rigid: "rigid", soft: "soft", notificationSuccess: "notificationSuccess", notificationWarning: "notificationWarning", notificationError: "notificationError", clockTick: "clockTick", contextClick: "contextClick", keyboardPress: "keyboardPress", keyboardRelease: "keyboardRelease", keyboardTap: "keyboardTap", longPress: "longPress", textHandleMove: "textHandleMove", virtualKey: "virtualKey", virtualKeyRelease: "virtualKeyRelease", effectClick: "effectClick", effectDoubleClick: "effectDoubleClick", effectHeavyClick: "effectHeavyClick", effectTick: "effectTick", confirm: "confirm", reject: "reject", gestureStart: "gestureStart", gestureEnd: "gestureEnd", segmentTick: "segmentTick", segmentFrequentTick: "segmentFrequentTick", toggleOn: "toggleOn", toggleOff: "toggleOff", dragStart: "dragStart", gestureThresholdActivate: "gestureThresholdActivate", gestureThresholdDeactivate: "gestureThresholdDeactivate", noHaptics: "noHaptics" };
+export const isRingerSilent = function isRingerSilent(ringerMode) {
+  return "silent" === ringerMode.ringerMode;
+};

@@ -1,11 +1,11 @@
-// Module ID: 7897
-// Function ID: 7898
+// Module ID: 7043
+// Function ID: 7044
 // Name: UserProfileClipsGalleryWidgetTypes
-// Dependencies: [7890, 1331, 2]
+// Dependencies: [7036, 1331, 2]
 
-// Module 7897 (UserProfileClipsGalleryWidgetTypes)
+// Module 7043 (UserProfileClipsGalleryWidgetTypes)
 import _modDef1331 from "module_1331" /* 1331 */;
-import WidgetType from "WidgetType" /* 7890 */;
+import WidgetType from "WidgetType" /* 7036 */;
 import size from "module_2" /* 2 */;
 
 function isUploadedWidgetClip(status) {

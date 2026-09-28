@@ -1,21 +1,21 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 16965
+// Function ID: 16966
 // Name: UserVideoFailed
-// Dependencies: [17, 1074, 21, 4788, 576, 9718, 4784, 1115, 5218, 9731, 4843, 9943, 2]
+// Dependencies: [17, 1074, 21, 4836, 576, 8875, 4832, 1115, 5281, 8888, 4891, 9104, 2]
 // Exports: default
 
-// Module 17610 (UserVideoFailed)
+// Module 16965 (UserVideoFailed)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4843 */;
-import AVError from "AVError" /* 9718 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 9731 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
+import AVError from "AVError" /* 8875 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 8888 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4788 */;
+import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;
@@ -55,7 +55,7 @@ export default function UserVideoFailed(arg0) {
         AudioActionCreatorsDefault.setDisableLocalVideo(closure_1_0, constants.MANUAL_ENABLED, BaseConnectionEvent.MediaEngineContextTypes.DEFAULT, false);
       }, 1000);
     };
-    tmp8Result = tmp8(tmp3(5218).Button, obj6);
+    tmp8Result = tmp8(tmp3(5281).Button, obj6);
   }
   obj5.children = tmp8Result;
   items1[2] = closure_5(View, obj5);

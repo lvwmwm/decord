@@ -1,13 +1,13 @@
-// Module ID: 6100
-// Function ID: 6101
+// Module ID: 16361
+// Function ID: 16362
 // Name: CatIllocon
-// Dependencies: [21, 5836, 6101, 2]
+// Dependencies: [21, 5899, 16362, 2]
 // Exports: CatIllocon
 
-// Module 6100 (CatIllocon)
+// Module 16361 (CatIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import _modDef6101 from "module_6101" /* 6101 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import _modDef16362 from "module_16362" /* 16362 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const CatIllocon = function CatIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6101 };
+  const obj2 = { uri: _modDef16362 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

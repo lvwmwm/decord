@@ -1,14 +1,14 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 7589
+// Function ID: 7590
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 4780, 560, 1248, 1475, 4637, 504, 7826, 2]
+// Dependencies: [32, 5, 19, 4825, 560, 1248, 1476, 4683, 504, 6972, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 8433 (useAvatarColor)
+// Module 7589 (useAvatarColor)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 const require = globalThis.__r;
 
@@ -226,11 +226,11 @@ export default function useAvatarColor(arg0, arg1) {
     if (dependencyMap != null) {
       mapped = dependencyMap.map((item) => {
         [tmp, tmp2, tmp3] = item;
-        const obj = flag(7826)({ r: tmp, g: tmp2, b: tmp3 });
-        ({ h, s, l } = flag(7826)({ r: tmp, g: tmp2, b: tmp3 }).toHsl());
+        const obj = flag(6972)({ r: tmp, g: tmp2, b: tmp3 });
+        ({ h, s, l } = flag(6972)({ r: tmp, g: tmp2, b: tmp3 }).toHsl());
         const obj2 = { h, s: s * stateFromStores, l };
-        const toHslResult = flag(7826)({ r: tmp, g: tmp2, b: tmp3 }).toHsl();
-        return flag(7826)({ h, s: s * stateFromStores, l }).toHexString();
+        const toHslResult = flag(6972)({ r: tmp, g: tmp2, b: tmp3 }).toHsl();
+        return flag(6972)({ h, s: s * stateFromStores, l }).toHexString();
       });
     }
     return mapped;
@@ -304,11 +304,11 @@ export const useAvatarColors = function useAvatarColors(pendingAvatarSrc, PRIMAR
     if (dependencyMap != null) {
       mapped = dependencyMap.map((item) => {
         [tmp, tmp2, tmp3] = item;
-        const obj = flag(7826)({ r: tmp, g: tmp2, b: tmp3 });
-        ({ h, s, l } = flag(7826)({ r: tmp, g: tmp2, b: tmp3 }).toHsl());
+        const obj = flag(6972)({ r: tmp, g: tmp2, b: tmp3 });
+        ({ h, s, l } = flag(6972)({ r: tmp, g: tmp2, b: tmp3 }).toHsl());
         const obj2 = { h, s: s * stateFromStores, l };
-        const toHslResult = flag(7826)({ r: tmp, g: tmp2, b: tmp3 }).toHsl();
-        return flag(7826)({ h, s: s * stateFromStores, l }).toHexString();
+        const toHslResult = flag(6972)({ r: tmp, g: tmp2, b: tmp3 }).toHsl();
+        return flag(6972)({ h, s: s * stateFromStores, l }).toHexString();
       });
     }
     return mapped;

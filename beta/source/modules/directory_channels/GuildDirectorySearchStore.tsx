@@ -1,12 +1,12 @@
-// Module ID: 12586
-// Function ID: 12587
+// Module ID: 11786
+// Function ID: 11787
 // Name: GuildDirectorySearchStore
-// Dependencies: [12587, 504, 573, 2]
+// Dependencies: [11787, 504, 573, 2]
 
-// Module 12586 (GuildDirectorySearchStore)
+// Module 11786 (GuildDirectorySearchStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 12587 */;
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 11787 */;
 
 require = fn;
 let closure_2 = [];
@@ -66,7 +66,7 @@ const guildDirectorySearchStore = new GuildDirectorySearchStore(DispatcherDefaul
     });
     const obj2 = {};
     const merged1 = Object.assign(dependencyMap2[channelId]);
-    const obj3 = { results: items(12587).orderByTotalMemberCount(items), lastSearchedAt: Date.now() };
+    const obj3 = { results: items(11787).orderByTotalMemberCount(items), lastSearchedAt: Date.now() };
     obj2[query.query] = obj3;
     dependencyMap2[channelId] = obj2;
   },

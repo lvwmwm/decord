@@ -1,18 +1,18 @@
-// Module ID: 17069
-// Function ID: 17070
+// Module ID: 16409
+// Function ID: 16410
 // Name: VibegrationsDebugLogsTab
-// Dependencies: [32, 19, 17, 9341, 21, 4788, 576, 17070, 11449, 7486, 4784, 17071, 1115, 3710, 5371, 5856, 1612, 504, 9922, 17072, 9923, 7327, 17073, 17074, 9029, 2]
+// Dependencies: [32, 19, 17, 8495, 21, 4836, 576, 16410, 10615, 6630, 4832, 16411, 1115, 3715, 5435, 5919, 1613, 504, 9083, 16412, 9084, 6471, 16413, 16414, 8179, 2]
 // Exports: default
 
-// Module 17069 (VibegrationsDebugLogsTab)
+// Module 16409 (VibegrationsDebugLogsTab)
 import nativeDefault from "native" /* 576 */;
-import _modDef3710 from "module_3710" /* 3710 */;
-import VibegrationsDebugJson from "VibegrationsDebugJson" /* 17070 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17071 */;
-import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17072 */;
+import _modDef3715 from "module_3715" /* 3715 */;
+import VibegrationsDebugJson from "VibegrationsDebugJson" /* 16410 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 16411 */;
+import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 16412 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9341 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
 
 require = fn;
 function keyOf(key) {
@@ -21,7 +21,7 @@ function keyOf(key) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { list: { paddingHorizontal: nativeDefault.space.PX_16 }, header: null, row: null, rowHead: null, badge: null, jsonToggle: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj.header = { gap: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_12 };
@@ -44,16 +44,16 @@ let closure_11 = noop.memo((entry) => {
     str = "text-feedback-critical";
   }
   if (expanded) {
-    let ChevronSmallRightIcon = tmp3(11449).ChevronSmallDownIcon;
+    let ChevronSmallRightIcon = tmp3(10615).ChevronSmallDownIcon;
     let tmp6 = tmp3;
   } else {
-    ChevronSmallRightIcon = tmp3(7486).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp3(6630).ChevronSmallRightIcon;
     tmp6 = tmp3;
   }
   const obj = { style: tmp.row, children: null };
   const obj2 = { style: tmp.rowHead, children: null };
-  const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6(17071).formatClockTime(entry.ts) };
-  const items1 = [closure_7(tmp6(4784).Text, obj3), , , ];
+  const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6(16411).formatClockTime(entry.ts) };
+  const items1 = [closure_7(tmp6(4832).Text, obj3), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
   if ("error" !== level) {
@@ -63,13 +63,13 @@ let closure_11 = noop.memo((entry) => {
     }
     str2 = str3;
   }
-  items1[1] = closure_7(tmp6(4784).Text, { variant: "text-xxs/semibold", color: str2, style: tmp.badge, children: entry.level });
+  items1[1] = closure_7(tmp6(4832).Text, { variant: "text-xxs/semibold", color: str2, style: tmp.badge, children: entry.level });
   let tmp9Result = null;
   if (entry.showSource) {
     tmp9Result = null;
     if (null != entry.source) {
       const obj5 = { variant: "text-xxs/semibold", color: "text-subtle", style: tmp.badge, children: entry.source };
-      tmp9Result = tmp9(tmp6(4784).Text, obj5);
+      tmp9Result = tmp9(tmp6(4832).Text, obj5);
     }
   }
   items1[2] = tmp9Result;
@@ -77,8 +77,8 @@ let closure_11 = noop.memo((entry) => {
   if (null != entry.kind) {
     const obj6 = { variant: "text-xxs/semibold", color: "text-feedback-critical", style: tmp.badge, children: null };
     const intl = tmp6(1115).intl;
-    obj6.children = intl.string(_modDef3710.GO6JcR);
-    tmp9Result4 = tmp9(tmp6(4784).Text, obj6);
+    obj6.children = intl.string(_modDef3715.GO6JcR);
+    tmp9Result4 = tmp9(tmp6(4832).Text, obj6);
   }
   items1[3] = tmp9Result4;
   obj2.children = items1;
@@ -87,14 +87,14 @@ let closure_11 = noop.memo((entry) => {
     let tmp9Result5 = null;
     if ("" !== memo.prefix) {
       const obj7 = { variant: "text-xs/normal", color: str, selectable: true, children: memo.prefix };
-      tmp9Result5 = tmp9(tmp6(4784).Text, obj7);
+      tmp9Result5 = tmp9(tmp6(4832).Text, obj7);
     }
     const items3 = [tmp9Result5, , ];
     const obj8 = { style: tmp.jsonToggle, accessibilityRole: "button", accessibilityState: null, accessibilityLabel: null, onPress: null, children: null };
     const obj9 = { expanded };
     obj8.accessibilityState = obj9;
     const intl2 = tmp6(1115).intl;
-    obj8.accessibilityLabel = intl2.string(_modDef3710.ehmgbH);
+    obj8.accessibilityLabel = intl2.string(_modDef3715.ehmgbH);
     obj8.onPress = function onPress() {
       return dependencyMap(importDefault);
     };
@@ -103,23 +103,23 @@ let closure_11 = noop.memo((entry) => {
     const items5 = [memo.marker, " ", ];
     const intl3 = tmp6(1115).intl;
     if ("[\u2026]" === memo.marker) {
-      let wkbYxG = tmp16(3710).lXkB6Z;
+      let wkbYxG = tmp16(3715).lXkB6Z;
     } else {
-      wkbYxG = tmp16(3710).wkbYxG;
+      wkbYxG = tmp16(3715).wkbYxG;
     }
     const obj11 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const obj12 = { count: memo.size };
     items5[2] = intl3.formatToPlainString(wkbYxG, obj12);
     obj11.children = items5;
-    items4[1] = tmp7(tmp6(4784).Text, obj11);
+    items4[1] = tmp7(tmp6(4832).Text, obj11);
     obj8.children = items4;
-    items3[1] = tmp7(tmp6(5371).PressableOpacity, obj8);
+    items3[1] = tmp7(tmp6(5435).PressableOpacity, obj8);
     let tmp9Result6 = null;
     if (expanded) {
       const obj13 = { variant: "primary", children: null };
       const obj14 = { variant: "text-xs/normal", color: str, selectable: true, children: memo.pretty };
-      obj13.children = tmp9(tmp6(4784).Text, obj14);
-      tmp9Result6 = tmp9(tmp6(5856).Card, obj13);
+      obj13.children = tmp9(tmp6(4832).Text, obj14);
+      tmp9Result6 = tmp9(tmp6(5919).Card, obj13);
     }
     const obj15 = { children: null };
     items3[2] = tmp9Result6;
@@ -127,7 +127,7 @@ let closure_11 = noop.memo((entry) => {
     let tmp9Result7 = tmp7(closure_9, obj15);
   } else {
     const obj16 = { variant: "text-xs/normal", color: str, selectable: true, children: entry.message };
-    tmp9Result7 = tmp9(tmp6(4784).Text, obj16);
+    tmp9Result7 = tmp9(tmp6(4832).Text, obj16);
   }
   items2[1] = tmp9Result7;
   obj.children = items2;

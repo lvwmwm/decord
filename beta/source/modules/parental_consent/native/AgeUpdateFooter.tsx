@@ -1,20 +1,20 @@
-// Module ID: 18344
-// Function ID: 18345
+// Module ID: 17709
+// Function ID: 17710
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 4788, 4784, 1115, 2776, 8714, 8716, 2]
+// Dependencies: [19, 21, 4836, 4832, 1115, 2781, 7859, 7861, 2]
 // Exports: default
 
-// Module 18344 (AgeUpdateFooter)
+// Module 17709 (AgeUpdateFooter)
 import util from "util" /* 1115 */;
-import _modDef2776 from "module_2776" /* 2776 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8714 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8716 */;
+import _modDef2781 from "module_2781" /* 2781 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_4 = createStyles.createStyles({ text: { textAlign: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/parental_consent/native/AgeUp
 export default function AgeUpdateFooter() {
   let obj = { variant: "text-md/medium", color: "text-muted", style: closure_4().text, children: null };
   const intl = util.intl;
-  obj.children = intl.format(_modDef2776.ifObbX, {
+  obj.children = intl.format(_modDef2781.ifObbX, {
     handleAgeVerifyHook() {
       const obj = AgeVerificationActionCreatorsDefault;
       return obj.showAgeVerificationGetStartedModal({ entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT });

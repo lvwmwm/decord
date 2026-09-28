@@ -1,17 +1,17 @@
 // Module ID: 9997
 // Function ID: 9998
-// Dependencies: [41, 42, 93, 95, 98, 9994, 9993]
-// Exports: hmac
+// Dependencies: [41, 42, 93, 95, 98, 9989, 9897, 9898, 9902]
 
 // Module 9997
-import _asyncLoop from "_asyncLoop" /* 9993 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9902 */;
+import _mod9989 from "module_9989" /* 9989 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const HMAC = require;
+const NLTimeUnitCasualRelativeFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,151 +31,51 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class HMAC {
-  constructor(arg0, arg1) {
+const regExp = new RegExp("(dit|deze|vorig|afgelopen|(?:aan)?komend|over|\\+|-)e?\\s*(" + _mod9989.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+class NLTimeUnitCasualRelativeFormatParser {
+  constructor() {
     self = this;
-    tmp = c2(this, HMAC);
+    tmp = c2(this, NLTimeUnitCasualRelativeFormatParser);
     tmp2 = closure_4;
-    obj = closure_4(HMAC);
+    obj = closure_4(NLTimeUnitCasualRelativeFormatParser);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.finished = false;
-    tmp3Result.destroyed = false;
-    hashResult = closure_0(closure_1[5]).hash(global);
-    toBytesResult = closure_0(closure_1[6]).toBytes(require);
-    tmp3Result.iHash = global.create();
-    if (typeof tmp3Result.iHash.update !== "function") {
-      tmp13 = globalThis;
-      _Error = Error;
-      tmp14 = new.target;
-      str = "Expected instance of class which extends utils.Hash";
-      tmp15 = new.target;
-      error = new Error("Expected instance of class which extends utils.Hash");
-      tmp17 = error;
-      throw error;
-    } else {
-      tmp3Result.blockLen = tmp3Result.iHash.blockLen;
-      tmp3Result.outputLen = tmp3Result.iHash.outputLen;
-      blockLen = tmp3Result.blockLen;
-      tmp18 = globalThis;
-      _Uint8Array = Uint8Array;
-      tmp19 = new.target;
-      tmp20 = new.target;
-      tmp21 = blockLen;
-      uint8Array = new Uint8Array(blockLen);
-      tmp22 = uint8Array;
-      digestResult = toBytesResult;
-      if (toBytesResult.length > blockLen) {
-        obj1 = global.create();
-        updateResult = obj1.update(toBytesResult);
-        digestResult = updateResult.digest();
-      }
-      result = uint8Array.set(digestResult);
-      num = 0;
-      num2 = 54;
-      num3 = 1;
-      num4 = 0;
-      if (0 < uint8Array.length) {
-        do {
-          uint8Array[num4] = uint8Array[num4] ^ 54;
-          num4 = num4 + 1;
-          length = uint8Array.length;
-        } while (num4 < length);
-      }
-      iHash = tmp3Result.iHash;
-      updateResult1 = iHash.update(uint8Array);
-      tmp3Result.oHash = global.create();
-      num5 = 106;
-      num6 = 0;
-      if (0 < uint8Array.length) {
-        do {
-          uint8Array[num6] = uint8Array[num6] ^ 106;
-          num6 = num6 + 1;
-          length2 = uint8Array.length;
-        } while (num6 < length2);
-      }
-      oHash = tmp3Result.oHash;
-      updateResult2 = oHash.update(uint8Array);
-      fillResult = uint8Array.fill(0);
-      return tmp3Result;
-    }
+    return tmp3(self, constructResult);
   }
 }
-_inherits(HMAC, _asyncLoop.Hash);
+_inherits(NLTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "update",
-  value: function update(arg0) {
-    HMAC(9994).exists(this);
-    const iHash = this.iHash;
-    iHash.update(arg0);
-    return this;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "digestInto",
-    value: function digestInto(arg0) {
-      HMAC(9994).exists(this);
-      HMAC(9994).bytes(arg0, this.outputLen);
-      this.finished = true;
-      const iHash = this.iHash;
-      iHash.digestInto(arg0);
-      const oHash = this.oHash;
-      oHash.update(arg0);
-      const oHash2 = this.oHash;
-      oHash2.digestInto(arg0);
-      this.destroy();
-    }
-  },
-  {
-    key: "digest",
-    value: function digest() {
-      const uint8Array = new Uint8Array(this.oHash.outputLen);
-      this.digestInto(uint8Array);
-      return uint8Array;
-    }
-  },
-  {
-    key: "_cloneInto",
-    value: function _cloneInto(arg0) {
-      const self = this;
-      let obj = arg0;
-      if (!arg0) {
-        const _Object = Object;
-        const _Object2 = Object;
-        obj = Object.create(Object.getPrototypeOf(self), {});
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const formatted = arg1[1].toLowerCase();
+      const parseDurationResult = NLTimeUnitCasualRelativeFormatParser(9989).parseDuration(arg1[2]);
+      if ("vorig" !== formatted) {
+        if ("afgelopen" !== formatted) {
+          let reverseDurationResult = parseDurationResult;
+        }
+        const ParsingComponents = tmp2(9898).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
       }
-      ({ oHash, iHash, finished: tmp.finished, destroyed: tmp.destroyed, blockLen: tmp.blockLen, outputLen: tmp.outputLen } = self);
-      obj.oHash = oHash._cloneInto(obj.oHash);
-      obj.iHash = iHash._cloneInto(obj.iHash);
-      return obj;
-    }
-  },
-  {
-    key: "destroy",
-    value: function destroy() {
-      this.destroyed = true;
-      const oHash = this.oHash;
-      oHash.destroy();
-      const iHash = this.iHash;
-      iHash.destroy();
+      reverseDurationResult = tmp2(9897).reverseDuration(parseDurationResult);
     }
   }
 ];
-const _moduleResult = _createClass(HMAC, items);
-const metroRequire = _moduleResult;
-exports.hmac.create = (arg0, arg1) => new _moduleResult(arg0, arg1);
 
-export const HMAC = _moduleResult;
-export const hmac = (arg0, arg1, arg2) => {
-  const obj = new _moduleResult(arg0, arg1);
-  return new _moduleResult(arg0, arg1).update(arg2).digest();
-};
+export default _createClass(NLTimeUnitCasualRelativeFormatParser, items);

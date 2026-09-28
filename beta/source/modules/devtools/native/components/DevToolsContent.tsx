@@ -1,22 +1,22 @@
-// Module ID: 16060
-// Function ID: 16061
+// Module ID: 15346
+// Function ID: 15347
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 11717, 4703, 1235, 21, 4788, 576, 504, 12072, 16061, 4784, 5371, 4756, 16062, 16064, 1484, 1612, 5936, 5854, 4486, 14889, 2]
+// Dependencies: [32, 19, 17, 10969, 4750, 1235, 21, 4836, 576, 504, 11267, 15347, 4832, 5435, 4801, 15348, 15350, 1485, 1613, 5999, 5917, 4528, 14139, 2]
 
-// Module 16060 (DevToolsContent)
+// Module 15346 (DevToolsContent)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import HapticUtils from "HapticUtils" /* 4756 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import Pressables from "Pressables" /* 5371 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14889 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16061 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 16062 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 16064 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import HapticUtils from "HapticUtils" /* 4801 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import Pressables from "Pressables" /* 5435 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14139 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 15347 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 15348 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 15350 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11717 */;
-import ExperimentStore from "ExperimentStore" /* 4703 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10969 */;
+import ExperimentStore from "ExperimentStore" /* 4750 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { devToolsContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 }, sortingIcons: null, button: null, disabledButton: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 };
 obj.sortingIcons = { flexDirection: "row", gap: nativeDefault.space.PX_8 };

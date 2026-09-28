@@ -1,22 +1,9 @@
 // Module ID: 13108
 // Function ID: 13109
-// Dependencies: [13085]
-// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
+// Dependencies: [1121]
 
 // Module 13108
-import _mod13085 from "module_13085" /* 13085 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
-const _sentryScope = "_sentryScope";
-const _sentryIsolationScope = "_sentryIsolationScope";
 
-export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
-  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
-};
-export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
-  if (arg0) {
-    const result = _mod13085.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
-    const result1 = _mod13085.addNonEnumerableProperty(arg0, _sentryScope, arg1);
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 185, height: 32, scales: [2, 3], hash: "dba969ce1008f0b8964b0d6bd348ad3e", name: "img_logo_premium_tier_1_full", type: "png" });

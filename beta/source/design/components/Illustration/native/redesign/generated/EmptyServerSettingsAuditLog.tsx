@@ -1,12 +1,12 @@
-// Module ID: 17996
-// Function ID: 17997
+// Module ID: 17357
+// Function ID: 17358
 // Name: EmptyServerSettingsAuditLog
-// Dependencies: [19, 17, 21, 8534, 17997, 17998, 17999, 4639, 2]
+// Dependencies: [19, 17, 21, 7679, 17358, 17359, 17360, 4685, 2]
 // Exports: EmptyServerSettingsAuditLog, getEmptyServerSettingsAuditLogSource, useEmptyServerSettingsAuditLogSource
 
-// Module 17996 (EmptyServerSettingsAuditLog)
-import shared from "shared" /* 4639 */;
-import _mod8534 from "module_8534" /* 8534 */;
+// Module 17357 (EmptyServerSettingsAuditLog)
+import shared from "shared" /* 4685 */;
+import _mod7679 from "module_7679" /* 7679 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsAuditLog.tsx");
 
 export const getEmptyServerSettingsAuditLogSource = function getEmptyServerSettingsAuditLogSource(theme) {
-  return _mod8534.getIllustrationSource(theme, {
+  return _mod7679.getIllustrationSource(theme, {
     dark() {
-      return require("module_17997");
+      return require("module_17358");
     },
     darker() {
-      return require("module_17998");
+      return require("module_17359");
     },
     light() {
-      return require("module_17999");
+      return require("module_17360");
     }
   });
 };
 export const useEmptyServerSettingsAuditLogSource = function useEmptyServerSettingsAuditLogSource() {
   const obj = shared;
-  return _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_17997");
+      return require("module_17358");
     },
     darker() {
-      return require("module_17998");
+      return require("module_17359");
     },
     light() {
-      return require("module_17999");
+      return require("module_17360");
     }
   });
 };
 export const EmptyServerSettingsAuditLog = function EmptyServerSettingsAuditLog(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_17997");
+      return require("module_17358");
     },
     darker() {
-      return require("module_17998");
+      return require("module_17359");
     },
     light() {
-      return require("module_17999");
+      return require("module_17360");
     }
   });
   const merged = Object.assign(arg0);

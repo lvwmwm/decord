@@ -1,35 +1,35 @@
-// Module ID: 5814
-// Function ID: 5815
+// Module ID: 5877
+// Function ID: 5878
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1074, 38, 4718, 1364, 510, 5815, 2018, 4, 5816, 5817, 1366, 1271, 4814, 2]
+// Dependencies: [32, 5, 1074, 38, 4763, 1364, 510, 5878, 2020, 4, 5879, 5880, 1366, 1271, 4862, 2]
 
-// Module 5814 (DesktopNativeUtils)
+// Module 5877 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2018 */;
-import Client from "Client" /* 4718 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4814 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 5815 */;
-import IPCEvents from "IPCEvents" /* 5816 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2020 */;
+import Client from "Client" /* 4763 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4862 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 5878 */;
+import IPCEvents from "IPCEvents" /* 5879 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const FileExtensionUtils = tmp2(5817);
+const FileExtensionUtils = tmp2(5880);
 require = fn;
 function sanitizeFilename(arg0) {
   try {
     const _decodeURIComponent = decodeURIComponent;
     const str2 = decodeURIComponent(arg0);
-    const str4 = decodeURIComponent(arg0).replace(re20, "$1");
-    return decodeURIComponent(arg0).replace(re20, "$1").replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2").replace(re19, "_");
+    const str4 = decodeURIComponent(arg0).replace(re19, "$1");
+    return decodeURIComponent(arg0).replace(re19, "$1").replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2").replace(re18, "_");
   } catch (err) {
-    const str9 = str.replace(re21, "$1");
-    return str.replace(re21, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(re19, "_");
+    const str9 = str.replace(re20, "$1");
+    return str.replace(re20, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(re18, "_");
   }
 }
 function getFileData() {
   const self = this;
-  const apply = closure_27.apply;
+  const apply = closure_26.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
@@ -37,7 +37,7 @@ function getFileData() {
   }
   return applyArgumentsResult;
 }
-let closure_27 = async function _getFileData() {
+let closure_26 = async function _getFileData() {
   const _fetch = fetch;
   const _Request = Request;
   const request = new Request(closure_0, { method: "GET", mode: "cors" });
@@ -50,7 +50,7 @@ let closure_27 = async function _getFileData() {
 function getImageData(arg0) {
   return getFileData(arg0);
 }
-let closure_29 = async function _transcodeImageToPng(arg0, type) {
+let closure_28 = async function _transcodeImageToPng(arg0, type) {
   closure_0 = arg0;
   c6 = 0;
   c7 = 0;
@@ -219,9 +219,13 @@ function normalizeRunningGame(id) {
   return obj;
 }
 function backwardCompatSend(APP_ASYNC_INDEX_TSX_LOADED) {
+  const substr = [...arguments].slice();
   if (obj.isDesktop()) {
     try {
-      obj2.sendIPC(APP_ASYNC_INDEX_TSX_LOADED);
+      const sendIPC = obj2.sendIPC;
+      const items = [APP_ASYNC_INDEX_TSX_LOADED];
+      HermesBuiltin.arraySpread(substr, 1);
+      HermesBuiltin.apply(items, obj2);
     } catch (err) {
     }
   }
@@ -234,8 +238,7 @@ let closure_10 = null;
 let buildNumber = null;
 let moduleVersions = null;
 let closure_13 = {};
-let global = false;
-let closure_15 = {};
+let closure_14 = {};
 if (null != DiscordNative) {
   let app = DiscordNative.app;
   let parts = app.getVersion().split(".");
@@ -247,29 +250,25 @@ if (null != DiscordNative) {
   let str = app.getVersion();
 }
 new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]);
-let c16 = false;
+let c15 = false;
 let discordIsElevated = null;
 const lastImageSaveDirectory = "lastImageSaveDirectory";
-const re19 = /[<>:"/\\|?*@]/g;
-const re20 = /(\.[a-zA-Z0-9]+):[^.]*$/;
-const re21 = /(\.[a-zA-Z0-9]+)%3A.+$/;
-const re22 = /[^a-zA-Z0-9]/g;
-const re23 = /\.[^.]*$/;
+const re18 = /[<>:"/\\|?*@]/g;
+const re19 = /(\.[a-zA-Z0-9]+):[^.]*$/;
+const re20 = /(\.[a-zA-Z0-9]+)%3A.+$/;
+const re21 = /[^a-zA-Z0-9]/g;
+const re22 = /\.[^.]*$/;
 const SaveImageResult = { SAVED: "saved", CANCELED: "canceled", ERRORED: "errored" };
 let obj2 = {
   requireModule(discord_voice) {
-    if (global) {
-      if (closure_15.hasOwnProperty(discord_voice)) {
-        if (null != tmp[discord_voice]) {
-          return tmp[discord_voice];
-        }
+    if (closure_14.hasOwnProperty(discord_voice)) {
+      if (null != tmp[discord_voice]) {
+        return tmp[discord_voice];
       }
     }
     const nativeModules = DiscordNative.nativeModules;
     const requireModuleResult = nativeModules.requireModule(discord_voice);
-    if (global) {
-      closure_15[discord_voice] = requireModuleResult;
-    }
+    closure_14[discord_voice] = requireModuleResult;
     return requireModuleResult;
   },
   ensureModule(discord_voice) {
@@ -446,8 +445,8 @@ obj2.setGameDetectionCallback = function setGameDetectionCallback(arg0) {
   const discordUtils = this.getDiscordUtils();
   if (discordUtils.setGameDetectionCallback != null) {
     const result = setGameDetectionCallback((arr, arr2) => {
-      const mapped = arr.map((item) => closure_1_30(item));
-      return closure_0(mapped, arr2.map((item) => closure_1_30(item)));
+      const mapped = arr.map((item) => closure_1_29(item));
+      return closure_0(mapped, arr2.map((item) => closure_1_29(item)));
     });
   }
 };
@@ -475,7 +474,7 @@ obj2.setCandidateGamesCallback = function setCandidateGamesCallback(arg0) {
   closure_0 = arg0;
   const discordUtils = this.getDiscordUtils();
   const result = discordUtils.setCandidateGamesCallback((arr) => {
-    closure_0(arr.map((item) => closure_1_30(item)));
+    closure_0(arr.map((item) => closure_1_29(item)));
   });
 };
 obj2.clearCandidateGamesCallback = function clearCandidateGamesCallback() {
@@ -507,17 +506,17 @@ obj2.shouldDisplayNotifications = function shouldDisplayNotifications() {
 obj2.getVoiceEngine = function getVoiceEngine() {
   const requireModuleResult = this.requireModule("discord_voice");
   const require = requireModuleResult;
-  if (!c16) {
+  if (!c15) {
     logger_Logger.setNativeLogFn((arg0, arg1, arg2) => {
       requireModuleResult.consoleLog(arg1, "[" + arg0 + "] " + arg2);
     });
   }
-  c16 = true;
+  c15 = true;
   return requireModuleResult;
 };
 obj2.getDiscordUtils = function getDiscordUtils() {
   const self = this;
-  if (!c16) {
+  if (!c15) {
     try {
       const voiceEngine = self.getVoiceEngine();
     } catch (err) {
@@ -583,7 +582,7 @@ obj2.setBadge = function setBadge(arg0) {
   } else {
     if ("win32" === tmpResult.getPlatformName()) {
       const self = this;
-      this.sendIPC(tmp(5816).IPCEvents.APP_BADGE_SET, arg0);
+      this.sendIPC(tmp(5879).IPCEvents.APP_BADGE_SET, arg0);
     } else {
       if ("linux" === tmpResult2.getPlatformName()) {
         const app = DiscordNative.app;
@@ -603,6 +602,18 @@ obj2.setSystemTrayIcon = function setSystemTrayIcon(arg0) {
     const self = this;
     this.sendIPC(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
   }
+};
+obj2.setSystemTrayApplications = function setSystemTrayApplications(arg0) {
+  if (require("PlatformUtils").isPlatformEmbedded) {
+    const self = this;
+    this.sendIPC(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
+  }
+};
+obj2.setSystemTrayStates = function setSystemTrayStates(arg0) {
+  backwardCompatSend(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_STATES, arg0);
+};
+obj2.setSystemTrayStrings = function setSystemTrayStrings(arg0) {
+  backwardCompatSend(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_STRINGS, arg0);
 };
 obj2.setThumbarButtons = function setThumbarButtons(arg0) {
   if (require("PlatformUtils").isPlatformEmbedded) {
@@ -678,12 +689,6 @@ obj2.bounceDock = function bounceDock(arg0) {
     }
   }
 };
-obj2.setSystemTrayApplications = function setSystemTrayApplications(arg0) {
-  if (require("PlatformUtils").isPlatformEmbedded) {
-    const self = this;
-    this.sendIPC(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
-  }
-};
 Object.defineProperty(obj2, "architecture", {
   get: () => {
     let str = "";
@@ -702,6 +707,21 @@ Object.defineProperty(obj2, "releaseChannel", {
       str = app.getReleaseChannel();
     }
     return str;
+  },
+  set: undefined
+});
+Object.defineProperty(obj2, "friendlyReleaseName", {
+  get: function() {
+    const releaseChannel = this.releaseChannel;
+    if ("development" === releaseChannel) {
+      return "Discord Development";
+    } else if ("canary" === releaseChannel) {
+      return "Discord Canary";
+    } else if ("ptb" === releaseChannel) {
+      return "Discord PTB";
+    } else {
+      return "Discord";
+    }
   },
   set: undefined
 });
@@ -775,7 +795,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             return obj5;
           } else {
             closure_129_0 = value;
-            closure_129_1 = closure_0(5817).decideFileExtension(closure_130_0, closure_130_1);
+            closure_129_1 = closure_0(5880).decideFileExtension(closure_130_0, closure_130_1);
             if (null != closure_129_1) {
               if (set2.has(closure_129_1)) {
                 closure_0 = closure_130_1;
@@ -788,7 +808,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
                 const obj6 = {
                   value: (function transcodeImageToPng() {
                                 const self = this;
-                                const apply = closure_1_29.apply;
+                                const apply = closure_1_28.apply;
                                 if (typeof apply === "unknown") {
                                   let applyArgumentsResult = HermesBuiltin.applyArguments(self);
                                 } else {
@@ -811,7 +831,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             }
             const _HermesInternal = HermesInternal;
             combined = "image." + closure_129_1;
-            const obj8 = closure_0(5817);
+            const obj8 = closure_0(5880);
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -896,7 +916,7 @@ obj2.copyImageBlob = function copyImageBlob(arg0, arg1) {
 obj2.canSaveImage = function canSaveImage(uri, contentType) {
   if (null != uri) {
     if (require("PlatformUtils").isPlatformEmbedded) {
-      const decideFileExtensionResult = tmp(5817).decideFileExtension(uri, contentType);
+      const decideFileExtensionResult = tmp(5880).decideFileExtension(uri, contentType);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
         hasItem = set2.has(decideFileExtensionResult);
@@ -964,14 +984,14 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
               const searchParams = toURLSafeResult.searchParams;
               let str2 = searchParams.get("format");
               if (null != str2) {
-                str2 = str2.replace(closure_1_22, "").toLowerCase();
+                str2 = str2.replace(closure_1_21, "").toLowerCase();
                 if (str2.length > 0) {
                   const _HermesInternal2 = HermesInternal;
-                  closure_133_0 = "" + str.replace(closure_1_23, "") + "." + str2;
+                  closure_133_0 = "" + str.replace(closure_1_22, "") + "." + str2;
                 }
-                const str3 = str2.replace(closure_1_22, "");
+                const str3 = str2.replace(closure_1_21, "");
               } else if (!str.includes(".")) {
-                const decideFileExtensionResult = unknown(5817).decideFileExtension(tmp54, closure_1);
+                const decideFileExtensionResult = unknown(5880).decideFileExtension(tmp54, closure_1);
                 dependencyMap = decideFileExtensionResult;
                 png = dependencyMap;
                 if (dependencyMap == null) {
@@ -979,7 +999,7 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
                 }
                 const _HermesInternal = HermesInternal;
                 closure_133_0 = "" + str + "." + png;
-                const obj9 = unknown(5817);
+                const obj9 = unknown(5880);
               }
               tmp54 = getImageData(tmp54);
               c9 = 1;
@@ -1636,7 +1656,7 @@ obj2.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5816).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+        this.sendIPC(tmp(5879).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
       } catch (err) {
       }
     }
@@ -1648,7 +1668,7 @@ obj2.setTrafficLightAppearance = function setTrafficLightAppearance(arg0, arg1) 
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5816).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_APPEARANCE, arg0, arg1);
+        this.sendIPC(tmp(5879).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_APPEARANCE, arg0, arg1);
       } catch (err) {
       }
     }
@@ -2601,6 +2621,70 @@ obj2.debugLogCs2GsiPayload = function debugLogCs2GsiPayload(arg0) {
   }
   return resolved;
 };
+obj2.readDotaGsiToken = function readDotaGsiToken(arg0) {
+  if (obj.isWindows()) {
+    const dotaGsi = DiscordNative.dotaGsi;
+    let dotaGsiToken;
+    if (dotaGsi != null) {
+      dotaGsiToken = dotaGsi.readDotaGsiToken(arg0);
+    }
+    if (dotaGsiToken == null) {
+      dotaGsiToken = Promise.resolve(null);
+    }
+    let resolved = dotaGsiToken;
+  } else {
+    resolved = Promise.resolve(null);
+  }
+  return resolved;
+};
+obj2.writeDotaGsiConfig = function writeDotaGsiConfig(arg0, arg1, arg2) {
+  if (obj.isWindows()) {
+    const dotaGsi = DiscordNative.dotaGsi;
+    let writeDotaGsiConfigResult;
+    if (dotaGsi != null) {
+      writeDotaGsiConfigResult = dotaGsi.writeDotaGsiConfig(arg0, arg1, arg2);
+    }
+    if (writeDotaGsiConfigResult == null) {
+      writeDotaGsiConfigResult = Promise.resolve(false);
+    }
+    let resolved = writeDotaGsiConfigResult;
+  } else {
+    resolved = Promise.resolve(false);
+  }
+  return resolved;
+};
+obj2.deleteDotaGsiConfig = function deleteDotaGsiConfig(arg0) {
+  if (obj.isWindows()) {
+    const dotaGsi = DiscordNative.dotaGsi;
+    let deleteDotaGsiConfigResult;
+    if (dotaGsi != null) {
+      deleteDotaGsiConfigResult = dotaGsi.deleteDotaGsiConfig(arg0);
+    }
+    if (deleteDotaGsiConfigResult == null) {
+      deleteDotaGsiConfigResult = Promise.resolve(false);
+    }
+    let resolved = deleteDotaGsiConfigResult;
+  } else {
+    resolved = Promise.resolve(false);
+  }
+  return resolved;
+};
+obj2.debugLogDotaGsiPayload = function debugLogDotaGsiPayload(arg0) {
+  if (obj.isWindows()) {
+    const dotaGsi = DiscordNative.dotaGsi;
+    let result;
+    if (dotaGsi != null) {
+      result = dotaGsi.debugLogDotaGsiPayload(arg0);
+    }
+    if (result == null) {
+      result = Promise.resolve();
+    }
+    let resolved = result;
+  } else {
+    resolved = Promise.resolve();
+  }
+  return resolved;
+};
 obj2.appViewed = function appViewed() {
   if (obj.isDesktop()) {
     const self = this;
@@ -2622,9 +2706,6 @@ obj2.appLoaded = function appLoaded() {
 };
 obj2.indexLoadedAsync = function indexLoadedAsync() {
   backwardCompatSend(IPCEvents.IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
-};
-obj2.setUseRequireModuleCache = function setUseRequireModuleCache(arg0) {
-  global = arg0;
 };
 obj2.GetSystemGpuStats = function GetSystemGpuStats(arg0) {
   closure_0 = arg0;

@@ -1,26 +1,26 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 15915
+// Function ID: 15916
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 2105, 2063, 1372, 10073, 1074, 21, 4788, 576, 504, 1241, 9442, 16477, 1177, 5773, 16622, 1115, 2108, 2]
+// Dependencies: [19, 17, 2108, 2067, 1372, 9233, 1074, 21, 4836, 576, 504, 1241, 8597, 15767, 1177, 5836, 15916, 1115, 2111, 2]
 // Exports: default
 
-// Module 16621 (NsfwGateGuildSidebar)
+// Module 15915 (NsfwGateGuildSidebar)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9442 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 8597 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2108 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const NsfwGateSource = fn(10073).NsfwGateSource;
+const NsfwGateSource = fn(9233).NsfwGateSource;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, HelpdeskArticles: c10, Fonts: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG }, emptyStateContainer: { flex: 1 }, emptyStateImageContainer: { marginBottom: 16 } };
 let closure_14 = createStyles.createStyles(obj2);
 const size = fn(2);

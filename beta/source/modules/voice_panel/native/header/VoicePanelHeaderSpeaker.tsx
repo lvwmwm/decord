@@ -1,29 +1,29 @@
-// Module ID: 17587
-// Function ID: 17588
+// Module ID: 16943
+// Function ID: 16944
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 17588, 4805, 17589, 9937, 2041, 4806, 1074, 21, 17591, 17564, 9936, 10100, 9801, 563, 10098, 10080, 17595, 1364, 9966, 9938, 1115, 9963, 9965, 17596, 10081, 4608, 2027, 5838, 17503, 14433, 2]
+// Dependencies: [109, 19, 17, 16944, 4853, 9098, 16945, 2045, 4854, 1074, 21, 16946, 16918, 9097, 9260, 8962, 563, 9258, 9240, 16950, 1364, 9127, 9099, 1115, 9124, 9126, 16951, 9241, 4654, 2029, 5901, 16859, 13934, 2]
 
-// Module 17587 (VoicePanelHeaderSpeaker)
+// Module 16943 (VoicePanelHeaderSpeaker)
 import util from "util" /* 1115 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4608 */;
-import NativeViewDefault from "NativeView" /* 5838 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9966 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 10098 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17503 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17591 */;
+import dismissible_content from "dismissible_content" /* 2029 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4654 */;
+import NativeViewDefault from "NativeView" /* 5901 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 9127 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9258 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 16859 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 16946 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4805 */;
-import StageChannelAudioStore from "StageChannelAudioStore" /* 17589 */;
-import AudioRouteStore from "AudioRouteStore" /* 9937 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SessionsStore from "SessionsStore" /* 4806 */;
+import GameConsoleStore from "GameConsoleStore" /* 4853 */;
+import AudioRouteStore from "AudioRouteStore" /* 9098 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 16945 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SessionsStore from "SessionsStore" /* 4854 */;
 
 require = fn;
 let closure_3 = ["ref"];
 const NativeModules = fn(17).NativeModules;
-const setVoiceUpsellDismissed = fn(17588).setVoiceUpsellDismissed;
+const setVoiceUpsellDismissed = fn(16944).setVoiceUpsellDismissed;
 const PlatformTypes = fn(1074).PlatformTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
@@ -42,6 +42,7 @@ export default noop.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChan
   const style = isConnectedToVoiceChannel.style;
   noop = undefined;
   c6 = undefined;
+  let disabled;
   closure_12 = undefined;
   closure_14 = undefined;
   let onPress;
@@ -59,8 +60,8 @@ export default noop.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChan
   let items = [awaitingRemoteSessionInfo];
   const stateFromStores = isConnectedToVoiceChannel(style[16]).useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
   let obj2 = isConnectedToVoiceChannel(style[16]);
-  const items1 = [stateFromStores];
-  const disabled = isConnectedToVoiceChannel(style[16]).useStateFromStores(items1, () => stateFromStores.getQueueAudioSwap());
+  const items1 = [disabled];
+  disabled = isConnectedToVoiceChannel(style[16]).useStateFromStores(items1, () => disabled.getQueueAudioSwap());
   let obj3 = isConnectedToVoiceChannel(style[16]);
   const items2 = [closure_12];
   const stateFromStores1 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items2, () => {
@@ -116,8 +117,8 @@ export default noop.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChan
     }
   }, items4);
   let obj4 = isConnectedToVoiceChannel(style[16]);
-  const items5 = [disabled];
-  stateFromStores2 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items5, () => disabled.getCurrentRouteType());
+  const items5 = [stateFromStores];
+  stateFromStores2 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items5, () => stateFromStores.getCurrentRouteType());
   const items6 = [arr5, channelId, isConnectedToVoiceChannel, stateFromStores2, tmp5];
   const items7 = [tmp2];
   const memo = obj5.useMemo(() => {

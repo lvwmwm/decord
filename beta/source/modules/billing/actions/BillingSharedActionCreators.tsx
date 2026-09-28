@@ -1,17 +1,17 @@
-// Module ID: 5112
-// Function ID: 5113
+// Module ID: 5175
+// Function ID: 5176
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 4450, 5113, 1074, 1271, 4468, 573, 1115, 1241, 4688, 4461, 5114, 2]
+// Dependencies: [5, 4492, 5176, 1074, 1271, 4510, 573, 1115, 1241, 4735, 4503, 5177, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 5112 (BillingSharedActionCreators)
+// Module 5175 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4688 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4735 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4450 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4492 */;
 
 require = fn;
 let closure_8 = async function _validatePaymentSourceBillingAddress(arg0, value) {
@@ -139,7 +139,7 @@ let closure_10 = async function _createPaymentSource(arg0, value) {
           closure_133_7 = undefined;
           c9 = 1;
           c10 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -240,7 +240,7 @@ let closure_10 = async function _createPaymentSource(arg0, value) {
     }
   }
 };
-const StripeErrorTypes = fn(5113).StripeErrorTypes;
+const StripeErrorTypes = fn(5176).StripeErrorTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7 } = Constants);
 const size = fn(2);
@@ -326,8 +326,8 @@ export const dispatchConfirmationError = function dispatchConfirmationError(type
     const merged2 = Object.assign(tmp12);
     const merged3 = Object.assign(obj.extra);
     obj9.extra = obj14;
-    const result = tmp15(4461).captureBillingException(error1, obj9);
-    const tmp15Result = tmp15(4461);
+    const result = tmp15(4503).captureBillingException(error1, obj9);
+    const tmp15Result = tmp15(4503);
   }
   return error1;
 };

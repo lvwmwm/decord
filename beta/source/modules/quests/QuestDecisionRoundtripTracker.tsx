@@ -1,16 +1,16 @@
-// Module ID: 11573
-// Function ID: 11574
+// Module ID: 10685
+// Function ID: 10686
 // Name: QuestDecisionRoundtripTracker
-// Dependencies: [7968, 4837, 1074, 5700, 7969, 7733, 1241, 7945, 7736, 2]
+// Dependencies: [7113, 4885, 1074, 5763, 7114, 6879, 1241, 7090, 6882, 2]
 
-// Module 11573 (QuestDecisionRoundtripTracker)
+// Module 10685 (QuestDecisionRoundtripTracker)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AdCreativeType from "AdCreativeType" /* 5700 */;
-import NetStats from "NetStats" /* 7733 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7945 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7969 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7968 */;
-import NetworkStore from "NetworkStore" /* 4837 */;
+import AdCreativeType from "AdCreativeType" /* 5763 */;
+import NetStats from "NetStats" /* 6879 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7090 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7114 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7113 */;
+import NetworkStore from "NetworkStore" /* 4885 */;
 
 require = fn;
 function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
@@ -57,9 +57,9 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     obj4.previous_fetched_at = fetchedAt;
     obj4.transition_case = transition_case;
     const obj2 = AnalyticsUtilsDefault;
-    obj4.is_foregrounded = tmp2(7736).isForegrounded();
+    obj4.is_foregrounded = tmp2(6882).isForegrounded();
     obj2.track(AnalyticEvents.QUEST_DECISION_ROUNDTRIP, obj4);
-    const tmp2Result = tmp2(7736);
+    const tmp2Result = tmp2(6882);
   }
 }
 const AnalyticEvents = fn(1074).AnalyticEvents;
@@ -137,8 +137,8 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
         let str4 = "quest";
         if (AdCreativeType.AdCreativeType.QUEST !== type) {
           str4 = "bounty";
-          if (tmp8(5700).AdCreativeType.BOUNTY !== type) {
-            if (tmp8(5700).AdCreativeType.QUEST_HOME_HERO === type) {
+          if (tmp8(5763).AdCreativeType.BOUNTY !== type) {
+            if (tmp8(5763).AdCreativeType.QUEST_HOME_HERO === type) {
               str4 = "quest_home_hero";
             }
           }
@@ -155,8 +155,8 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
         let str7 = "quest";
         if (AdCreativeType.AdCreativeType.QUEST !== type2) {
           str7 = "bounty";
-          if (tmp10(5700).AdCreativeType.BOUNTY !== type2) {
-            if (tmp10(5700).AdCreativeType.QUEST_HOME_HERO === type2) {
+          if (tmp10(5763).AdCreativeType.BOUNTY !== type2) {
+            if (tmp10(5763).AdCreativeType.QUEST_HOME_HERO === type2) {
               str7 = "quest_home_hero";
             }
           }

@@ -1,15 +1,15 @@
-// Module ID: 15488
-// Function ID: 15489
+// Module ID: 14760
+// Function ID: 14761
 // Name: LoadingIndicator
-// Dependencies: [19, 17, 21, 4788, 2]
+// Dependencies: [19, 17, 21, 4836, 2]
 // Exports: default
 
-// Module 15488 (LoadingIndicator)
+// Module 14760 (LoadingIndicator)
 import noop from "module_19" /* 19 */;
 
 const ActivityIndicator = fn(17).ActivityIndicator;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_2 = createStyles.createStyles({ indicator: { margin: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/LoadingIndicator.tsx");

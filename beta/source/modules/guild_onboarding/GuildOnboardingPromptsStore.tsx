@@ -1,17 +1,17 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 6521
+// Function ID: 6522
 // Name: GuildOnboardingPromptsStore
-// Dependencies: [2098, 2041, 7373, 7378, 7379, 12, 504, 1091, 11, 573, 2]
+// Dependencies: [2101, 2045, 6517, 6522, 6523, 12, 504, 1091, 11, 573, 2]
 
-// Module 7377 (GuildOnboardingPromptsStore)
+// Module 6521 (GuildOnboardingPromptsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 7379 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7373 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 6523 */;
+import ImpersonateStore from "ImpersonateStore" /* 2101 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6517 */;
 
 require = fn;
 function handleUpdate(arg0) {
@@ -84,8 +84,8 @@ function handleUpdate(arg0) {
   obj.prompts = mapped;
   dependencyMap[guildId] = obj;
 }
-const GuildOnboardingStatus = fn(7373).GuildOnboardingStatus;
-const GuildOnboardingMode = fn(7378).GuildOnboardingMode;
+const GuildOnboardingStatus = fn(6517).GuildOnboardingStatus;
+const GuildOnboardingMode = fn(6522).GuildOnboardingMode;
 const dependencyMap = {};
 const dependencyMap2 = {};
 const dependencyMap3 = {};

@@ -1,16 +1,16 @@
-// Module ID: 10293
-// Function ID: 10294
+// Module ID: 9453
+// Function ID: 9454
 // Name: KrispLogo
-// Dependencies: [19, 17, 1182, 1074, 21, 2108, 1241, 1115, 4483, 504, 4639, 10294, 10295, 4784, 2]
+// Dependencies: [19, 17, 1182, 1074, 21, 2111, 1241, 1115, 4525, 504, 4685, 9454, 9455, 4832, 2]
 // Exports: default
 
-// Module 10293 (KrispLogo)
+// Module 9453 (KrispLogo)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import LinkingDefault from "Linking" /* 4483 */;
-import Text_Text from "Text/Text" /* 4784 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import LinkingDefault from "Linking" /* 4525 */;
+import Text_Text from "Text/Text" /* 4832 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -40,9 +40,9 @@ export default function KrispLogo() {
   const items = [ThemeStore];
   const stateFromStores = initialize.useStateFromStores(items, () => theme.theme);
   if (obj2.isThemeLight(stateFromStores)) {
-    let tmp4Result = tmp4(10294);
+    let tmp4Result = tmp4(9454);
   } else {
-    tmp4Result = tmp4(10295);
+    tmp4Result = tmp4(9455);
   }
   const obj3 = { style: closure_13.detailsView, children: null };
   const obj4 = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };

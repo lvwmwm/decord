@@ -1,20 +1,20 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 14188
+// Function ID: 14189
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7831, 7823, 1074, 21, 4788, 576, 8487, 8471, 7439, 7459, 1241, 8465, 8472, 7427, 4784, 1115, 8473, 11030, 504, 14939, 8467, 8488, 14940, 13507, 13508, 8474, 11514, 5230, 2]
+// Dependencies: [32, 19, 17, 6977, 6969, 1074, 21, 4836, 576, 7631, 7615, 6583, 6603, 1241, 7609, 7616, 6571, 4832, 1115, 7617, 10198, 504, 14189, 7611, 7632, 14190, 12747, 12748, 7618, 10789, 5293, 2]
 // Exports: default
 
-// Module 14938 (EditProfileFrameActionSheet)
+// Module 14188 (EditProfileFrameActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8465 */;
-import useShopProductItems from "useShopProductItems" /* 8472 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8488 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 14940 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7609 */;
+import useShopProductItems from "useShopProductItems" /* 7616 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 14190 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7831 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
 
 const require = globalThis.__r;
 
@@ -97,7 +97,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8474)(previewSkuId);
+  const tmp2 = purchase(7618)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -121,21 +121,21 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [closure_9(purchase(11514), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const items1 = [closure_9(purchase(10789), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj2.colors = items2;
-  items1[1] = closure_9(purchase(5230), obj2);
+  items1[1] = closure_9(purchase(5293), obj2);
   obj.children = items1;
   return closure_10(closure_5, obj);
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const isProfileFrameRecord = fn(7823).isProfileFrameRecord;
+const isProfileFrameRecord = fn(6969).isProfileFrameRecord;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, bounceOffset: { position: "absolute", top: -250, height: 250, right: 0, left: 0 }, title: null, previewContainer: null, previewGradient: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.title = { alignSelf: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };

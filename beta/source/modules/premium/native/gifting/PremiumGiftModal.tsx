@@ -1,14 +1,14 @@
-// Module ID: 10958
-// Function ID: 10959
+// Module ID: 10125
+// Function ID: 10126
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1372, 21, 10959, 4788, 576, 504, 9088, 1115, 5873, 10960, 11338, 11341, 11369, 2578, 11326, 10957, 7459, 7439, 5847, 1255, 4991, 4459, 11116, 10995, 11516, 7277, 2]
+// Dependencies: [32, 19, 1372, 21, 10126, 4836, 576, 504, 8238, 1115, 5936, 10127, 10506, 10509, 10537, 2583, 10494, 10124, 6603, 6583, 5910, 1255, 5039, 4501, 10285, 10162, 10791, 6421, 2]
 // Exports: default
 
-// Module 10958 (PremiumGiftModal)
+// Module 10125 (PremiumGiftModal)
 import nativeDefault from "native" /* 576 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10959 */;
-import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10960 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10126 */;
+import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10127 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -16,9 +16,9 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 const jsx = fn(21).jsx;
 const PremiumGiftScreens = { PLAN_SELECT: "PremiumGiftPlanSelect", REWARD_SELECT: "GiftingSKUSelect", CUSTOMIZATION: "PremiumGiftCustomization", SUCCESS: "PremiumGiftSuccess", GIFTING_BADGE: "GiftingBadgePostPurchase" };
-let obj2 = { [PLAN_SELECT]: fn(10959).PaymentFlowStep.SKU_SELECT, [REWARD_SELECT]: fn(10959).PaymentFlowStep.REWARD_SKU_SELECT, [CUSTOMIZATION]: fn(10959).PaymentFlowStep.PLAN_SELECT, [SUCCESS]: fn(10959).PaymentFlowStep.CONFIRM, [GIFTING_BADGE]: fn(10959).PaymentFlowStep.CONFIRM };
+let obj2 = { [PLAN_SELECT]: fn(10126).PaymentFlowStep.SKU_SELECT, [REWARD_SELECT]: fn(10126).PaymentFlowStep.REWARD_SKU_SELECT, [CUSTOMIZATION]: fn(10126).PaymentFlowStep.PLAN_SELECT, [SUCCESS]: fn(10126).PaymentFlowStep.CONFIRM, [GIFTING_BADGE]: fn(10126).PaymentFlowStep.CONFIRM };
 ({ PLAN_SELECT, REWARD_SELECT, CUSTOMIZATION, SUCCESS, GIFTING_BADGE } = PremiumGiftScreens);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj4 = { header: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" } };
 let closure_9 = createStyles.createStyles(obj4);
 const size = fn(2);
@@ -102,6 +102,15 @@ export default function PremiumGiftModal(analyticsLocations) {
     }
     const obj8 = {};
     obj8[obj.PLAN_SELECT] = obj7;
+    const obj9 = {
+      title: "",
+      headerTitle() {
+
+        },
+      headerLeft: null,
+      headerStyle: null,
+      render: null
+    };
     if (initialRoute === obj.REWARD_SELECT) {
       let headerCloseButton = tmp11(tmp2[10]).getHeaderCloseButton(callback);
       const tmp11Result8 = tmp11(tmp2[10]);
@@ -109,14 +118,11 @@ export default function PremiumGiftModal(analyticsLocations) {
       headerCloseButton = tmp11(tmp2[10]).getHeaderBackButton();
       const tmp11Result9 = tmp11(tmp2[10]);
     }
-    const obj9 = {
-      title: "",
-      headerLeft: headerCloseButton,
-      headerStyle: tmp10.header,
-      render(arg0) {
-          ({ defaultHighlightedReward, allRewards, claimableRewards, onSelect } = arg0);
-          return jsx(analyticsLocations(onDismiss[12]), { defaultHighlightedReward, allRewards, claimableRewards, onSelect });
-        }
+    obj9.headerLeft = headerCloseButton;
+    obj9.headerStyle = tmp10.header;
+    obj9.render = function render(arg0) {
+      ({ defaultHighlightedReward, allRewards, claimableRewards, onSelect } = arg0);
+      return jsx(analyticsLocations(onDismiss[12]), { defaultHighlightedReward, allRewards, claimableRewards, onSelect });
     };
     obj8[obj.REWARD_SELECT] = obj9;
     if (initialRoute === obj.CUSTOMIZATION) {
@@ -154,9 +160,9 @@ export default function PremiumGiftModal(analyticsLocations) {
         currentProgress: currentProgress.currentProgress,
         onSendGift() {
           obj2 = { analyticsLocations: null };
-          const items = [analyticsLocations(7459).GIFTING_BADGE_POST_PURCHASE];
+          const items = [analyticsLocations(6603).GIFTING_BADGE_POST_PURCHASE];
           obj2.analyticsLocations = items;
-          analyticsLocation(10957).openGiftModal(obj2);
+          analyticsLocation(10124).openGiftModal(obj2);
         }
       });
     };

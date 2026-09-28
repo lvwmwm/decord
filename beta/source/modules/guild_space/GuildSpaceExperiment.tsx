@@ -1,23 +1,31 @@
-// Module ID: 7502
-// Function ID: 7503
+// Module ID: 6646
+// Function ID: 6647
 // Name: GuildSpaceExperiment
-// Dependencies: [4701, 2]
+// Dependencies: [1074, 1435, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 7502 (GuildSpaceExperiment)
-import createExperiment from "module_4701" /* 4701 */;
+// Module 6646 (GuildSpaceExperiment)
+import Constants from "Constants" /* 1074 */;
+import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "guild", id: "2026-06_guild_spaces", label: "Guild Space", defaultConfig: { enabled: false }, treatments: null };
-const items = [{ id: 1, label: "Enable Guild Space", config: { enabled: true } }];
-obj.treatments = items;
-const experiment = createExperiment.createExperiment(obj);
+const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "guild", name: "2026-09-guild-spaces", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = size.fileFinishedImporting("modules/guild_space/GuildSpaceExperiment.tsx");
 
-export const GuildSpaceExperiment = experiment;
-export const getGuildSpaceExperimentEnabled = function getGuildSpaceExperimentEnabled(guildId, location) {
-  return experiment.getCurrentConfig({ guildId, location }, { autoTrackExposure: false }).enabled;
+export const GuildSpaceExperiment = apexExperiment;
+export const getGuildSpaceExperimentEnabled = function getGuildSpaceExperimentEnabled(id, GuildSettingsModalOverview) {
+  let enabled = null != id;
+  if (enabled) {
+    const obj = { guildId: id, location: GuildSettingsModalOverview };
+    enabled = apexExperiment.getConfig(obj).enabled;
+  }
+  return enabled;
 };
-export const useGuildSpaceExperimentEnabled = function useGuildSpaceExperimentEnabled(guildId, location) {
-  return experiment.useExperiment({ guildId, location }, { autoTrackExposure: false }).enabled;
+export const useGuildSpaceExperimentEnabled = function useGuildSpaceExperimentEnabled(id, location) {
+  let tmp = id;
+  if (id == null) {
+    tmp = EMPTY_STRING_SNOWFLAKE_ID;
+  }
+  return apexExperiment.useConfig({ guildId: tmp, location }).enabled;
 };

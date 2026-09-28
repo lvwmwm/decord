@@ -1,19 +1,19 @@
-// Module ID: 15485
-// Function ID: 15486
+// Module ID: 14757
+// Function ID: 14758
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 5526, 4421, 504, 7529, 5835, 15486, 15487, 12485, 1370, 2]
+// Dependencies: [5, 32, 19, 5589, 4462, 504, 6673, 5898, 14758, 14759, 11685, 1370, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 15485 (GuildRoleSubscriptionsHooks)
+// Module 14757 (GuildRoleSubscriptionsHooks)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7529 */;
-import useRequestDefault from "useRequest" /* 12485 */;
-import subscriptionUtils from "subscriptionUtils" /* 15487 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6673 */;
+import useRequestDefault from "useRequest" /* 11685 */;
+import subscriptionUtils from "subscriptionUtils" /* 14759 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4421 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
 
 const require = globalThis.__r;
 
@@ -72,7 +72,7 @@ function useFetchListingsForGuild(guildId) {
   }
   return { listingsLoaded };
 }
-const FetchState = fn(4421).FetchState;
+const FetchState = fn(4462).FetchState;
 let closure_10 = [];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsHooks.tsx");
@@ -528,7 +528,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
             ({ guildId: closure_129_0, groupListingId: closure_129_1, listingId: closure_129_2 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else if (1 === tmp9) {
           if (arg0 === 1) {

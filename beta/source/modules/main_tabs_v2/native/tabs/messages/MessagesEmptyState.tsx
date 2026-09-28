@@ -1,31 +1,31 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 15686
+// Function ID: 15687
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4788, 1478, 1484, 9080, 1249, 5374, 15370, 16396, 4784, 1115, 5218, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 1479, 1485, 8230, 1249, 5438, 14629, 15687, 4832, 1115, 5281, 2]
 // Exports: default
 
-// Module 16395 (MessagesEmptyState)
+// Module 15686 (MessagesEmptyState)
 import util from "util" /* 1115 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import useNavigation from "useNavigation" /* 1484 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5374 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9080 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15370 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
+import useNavigation from "useNavigation" /* 1485 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5438 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8230 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14629 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const _modDef16396 = tmp2(16396);
+const _modDef15687 = tmp2(15687);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_10 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center" }, scrollViewContentContainer: { flexGrow: 2 }, innerContainer: { alignItems: "center", justifyContent: "center" }, imageContainer: { alignItems: "center", marginBottom: 24 }, textWrapper: { paddingHorizontal: 48 }, body: { marginBottom: 24, textAlign: "center" }, title: { textAlign: "center", fontSize: 18, marginBottom: 8 }, buttonWrapper: { paddingHorizontal: 16, paddingBottom: 16 } });
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesEmptyState.tsx");
@@ -64,7 +64,7 @@ export default function MessagesEmptyState() {
   const obj5 = { style: tmp.container, onLayout: callback, children: null };
   const obj6 = { style: tmp.innerContainer, children: null };
   const obj7 = { style: tmp.imageContainer, children: null };
-  const obj8 = { resizeMode: "contain", source: _modDef16396, style: null };
+  const obj8 = { resizeMode: "contain", source: _modDef15687, style: null };
   let num = 350;
   if (result < 622) {
     num = result / 622 * 350;

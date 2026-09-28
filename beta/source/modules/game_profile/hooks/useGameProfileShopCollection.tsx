@@ -1,13 +1,13 @@
-// Module ID: 9184
-// Function ID: 9185
+// Module ID: 8338
+// Function ID: 8339
 // Name: useGameProfileShopCollection
-// Dependencies: [19, 8985, 504, 9072, 9185, 2]
+// Dependencies: [19, 8135, 504, 8222, 8339, 2]
 // Exports: useGameProfileShopCollection, useGameProfileShopCollectionProducts, useGameProfileShopCollectionState
 
-// Module 9184 (useGameProfileShopCollection)
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9072 */;
+// Module 8338 (useGameProfileShopCollection)
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 8222 */;
 import noop from "module_19" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8985 */;
+import GameProfileStore from "GameProfileStore" /* 8135 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

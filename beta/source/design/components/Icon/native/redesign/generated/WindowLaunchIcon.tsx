@@ -1,13 +1,13 @@
-// Module ID: 13278
-// Function ID: 13279
+// Module ID: 12512
+// Function ID: 12513
 // Name: WindowLaunchIcon
-// Dependencies: [19, 21, 576, 4488, 13279, 2]
+// Dependencies: [19, 21, 576, 4530, 12513, 2]
 // Exports: WindowLaunchIcon
 
-// Module 13278 (WindowLaunchIcon)
+// Module 12512 (WindowLaunchIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4488 */;
-import _mod13279 from "module_13279" /* 13279 */;
+import BaseIconImage from "BaseIconImage" /* 4530 */;
+import _mod12513 from "module_12513" /* 12513 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const WindowLaunchIcon = function WindowLaunchIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13279, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12513, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,11 +1,11 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 10216
+// Function ID: 10217
 // Name: usePremiumProductPricingString
-// Dependencies: [7514, 1374, 4446, 7517, 504, 2]
+// Dependencies: [6658, 1374, 4488, 6661, 504, 2]
 // Exports: default
 
-// Module 11047 (usePremiumProductPricingString)
-import IAPStore from "IAPStore" /* 7514 */;
+// Module 10216 (usePremiumProductPricingString)
+import IAPStore from "IAPStore" /* 6658 */;
 
 const require = globalThis.__r;
 

@@ -1,19 +1,19 @@
-// Module ID: 11855
-// Function ID: 11856
+// Module ID: 11070
+// Function ID: 11071
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 5657, 21, 4788, 576, 1115, 11856, 11857, 12, 1881, 4784, 1177, 5656, 2]
+// Dependencies: [19, 17, 5720, 21, 4836, 576, 1115, 11071, 11072, 12, 1882, 4832, 1177, 5719, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11855 (ConnectionMetadataVanityItems)
+// Module 11070 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import NumberUtils from "NumberUtils" /* 1881 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5656 */;
-import _modDef11856 from "module_11856" /* 11856 */;
-import _modDef11857 from "module_11857" /* 11857 */;
+import NumberUtils from "NumberUtils" /* 1882 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5719 */;
+import _modDef11071 from "module_11071" /* 11071 */;
+import _modDef11072 from "module_11072" /* 11072 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -87,11 +87,11 @@ function VanityDate(arg0) {
   return timestampProducer(Text_Text.Text, obj);
 }
 const View = fn(17).View;
-const Constants = fn(5657);
+const Constants = fn(5720);
 ({ MetadataFields: closure_4, MetadataItemTypes: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { connectedAccountVanityMetadata: { marginTop: 4, paddingRight: 8 }, connectedAccountVanityMetadataItem: { flexDirection: "row", alignItems: "center" }, connectedAccountVanityMetadataItemIcon: { height: 18, width: 18, marginRight: 8 }, connectedAccountVanityMetadataTag: { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 }, paypalVerifiedTag: null, paypalVerifiedTagText: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 };
 obj2.paypalVerifiedTag = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
@@ -196,7 +196,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl = util.intl;
     const obj3 = { count: NumberResult1 };
     obj2.label = intl.format(util.t.Y88M5x, obj3);
-    obj2.imageSrc = _modDef11856;
+    obj2.imageSrc = _modDef11071;
     const intl2 = util.intl;
     obj2.imageAlt = intl2.string(util.t.HKUEZo);
     items.push(timestampProducer(VanityItem, obj2, tmp2.STEAM_ITEM_COUNT_DOTA2));
@@ -206,7 +206,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl3 = util.intl;
     const obj5 = { count: NumberResult2 };
     obj4.label = intl3.format(util.t.Y88M5x, obj5);
-    obj4.imageSrc = _modDef11857;
+    obj4.imageSrc = _modDef11072;
     const intl4 = util.intl;
     obj4.imageAlt = intl4.string(util.t.C8p1Sh);
     items.push(timestampProducer(VanityItem, obj4, tmp2.STEAM_ITEM_COUNT_TF2));

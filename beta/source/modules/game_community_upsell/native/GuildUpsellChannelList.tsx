@@ -1,29 +1,29 @@
-// Module ID: 16606
-// Function ID: 16607
+// Module ID: 15896
+// Function ID: 15897
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 14010, 6868, 16607, 1074, 21, 4788, 576, 1115, 5941, 14013, 504, 16608, 1241, 12990, 4784, 5856, 5218, 15370, 16609, 2]
+// Dependencies: [19, 17, 13256, 6012, 15897, 1074, 21, 4836, 576, 1115, 12565, 15898, 15900, 13259, 504, 15902, 1241, 12205, 4832, 5919, 5281, 14629, 15903, 2]
 // Exports: default
 
-// Module 16606 (GuildUpsellChannelList)
+// Module 15896 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import components_Button_Button from "components/Button/Button" /* 5218 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
 import noop from "module_19" /* 19 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14010 */;
-import ConsentStore from "ConsentStore" /* 6868 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13256 */;
+import ConsentStore from "ConsentStore" /* 6012 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_9 = fn(16607).MAX_DISPLAYED_UPSELL_GUILDS;
+let closure_9 = fn(15897).MAX_DISPLAYED_UPSELL_GUILDS;
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, Consents: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG }, header: null, headerTitle: null, listContainer: null, subheaderWrapper: null, createDescription: null, templateScroll: null, templateRow: null, templateCard: null, templateIconWrapper: null, templateTitle: null, buttonGroup: null, descriptionSpacing: null, joinSection: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG };
 obj2.header = { height: 56, flexDirection: "row", alignItems: "center", marginHorizontal: nativeDefault.space.PX_16 };
@@ -50,11 +50,11 @@ const obj12 = { marginBottom: nativeDefault.space.PX_8 };
 obj2.joinSection = { gap: nativeDefault.space.PX_4 };
 let closure_14 = createStyles.createStyles(obj2);
 const obj13 = { gap: nativeDefault.space.PX_4 };
-let items = [{ id: "hangout", title: fn(1115).t.ScXySs, description: fn(1115).t.DSCqxM, Icon: fn(5941).BumpingFistsSpotIllustration }, , ];
-const obj14 = { id: "hangout", title: fn(1115).t.ScXySs, description: fn(1115).t.DSCqxM, Icon: fn(5941).BumpingFistsSpotIllustration };
-items[1] = { id: "gaming", title: fn(1115).t["F+MTAZ"], description: fn(1115).t.srNlJw, Icon: fn(5941).ChatControllersSpotIllustration };
-const obj15 = { id: "gaming", title: fn(1115).t["F+MTAZ"], description: fn(1115).t.srNlJw, Icon: fn(5941).ChatControllersSpotIllustration };
-items[2] = { id: "hobbies", title: fn(1115).t["0Ka6B5"], description: fn(1115).t["5oGAp/"], Icon: fn(5941).MiniaturesSpotIllustration };
+let items = [{ id: "hangout", title: fn(1115).t.ScXySs, description: fn(1115).t.DSCqxM, Icon: fn(12565).BumpingFistsSpotIllustration }, , ];
+const obj14 = { id: "hangout", title: fn(1115).t.ScXySs, description: fn(1115).t.DSCqxM, Icon: fn(12565).BumpingFistsSpotIllustration };
+items[1] = { id: "gaming", title: fn(1115).t["F+MTAZ"], description: fn(1115).t.srNlJw, Icon: fn(15898).ChatControllersSpotIllustration };
+const obj15 = { id: "gaming", title: fn(1115).t["F+MTAZ"], description: fn(1115).t.srNlJw, Icon: fn(15898).ChatControllersSpotIllustration };
+items[2] = { id: "hobbies", title: fn(1115).t["0Ka6B5"], description: fn(1115).t["5oGAp/"], Icon: fn(15900).MiniaturesSpotIllustration };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_community_upsell/native/GuildUpsellChannelList.tsx");
 
@@ -92,15 +92,15 @@ export default function GuildUpsellChannelList(style) {
     return items.slice(0, closure_9);
   }, items1);
   const callback = callback2.useCallback((guild_id, game_id) => {
-    memo(callback1[13]).dismissGuild(guild_id);
-    const obj = memo(callback1[13]);
-    data(callback1[14]).track(constants.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED, { game_id, guild_id });
+    memo(callback1[15]).dismissGuild(guild_id);
+    const obj = memo(callback1[15]);
+    data(callback1[16]).track(constants.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED, { game_id, guild_id });
   }, []);
   callback1 = callback2.useCallback(() => {
-    data(callback1[15]).openCreateGuildModal();
+    data(callback1[17]).openCreateGuildModal();
   }, []);
   callback2 = callback2.useCallback(() => {
-    const result = data(callback1[15]).openGuildJoinServerScreen();
+    const result = data(callback1[17]).openGuildJoinServerScreen();
   }, []);
   let items2 = [callback1, callback2, memo.length, tmp];
   const memo1 = callback2.useMemo(() => {
@@ -125,15 +125,15 @@ export default function GuildUpsellChannelList(style) {
         const obj4 = { variant: "text-md/bold", color: "mobile-text-heading-primary", style: closure_1_0.templateTitle, children: null };
         const intl = closure_0(callback1[9]).intl;
         obj4.children = intl.string(Icon.title);
-        const items1 = [closure_2_12(closure_0(callback1[16]).Text, obj4), ];
+        const items1 = [closure_2_12(closure_0(callback1[18]).Text, obj4), ];
         const obj5 = { variant: "text-sm/medium", color: "text-subtle", children: null };
         const intl2 = closure_0(callback1[9]).intl;
         obj5.children = intl2.string(Icon.description);
-        items1[1] = closure_2_12(closure_0(callback1[16]).Text, obj5);
+        items1[1] = closure_2_12(closure_0(callback1[18]).Text, obj5);
         obj3.children = items1;
         items[1] = closure_2_13(closure_2_6, obj3);
         obj.children = items;
-        return closure_2_13(closure_0(callback1[17]).Card, obj, Icon.id);
+        return closure_2_13(closure_0(callback1[19]).Card, obj, Icon.id);
       })
     });
     let obj5 = { style: closure_0.buttonGroup, children: null };
@@ -155,11 +155,11 @@ export default function GuildUpsellChannelList(style) {
       const obj9 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
       const intl5 = tmp5(1115).intl;
       obj9.children = intl5.string(tmp5(1115).t.rJRote);
-      const items2 = [tmp4(tmp5(4784).Text, obj9), ];
+      const items2 = [tmp4(tmp5(4832).Text, obj9), ];
       const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: tmp3.descriptionSpacing, children: null };
       const intl6 = tmp5(1115).intl;
       obj10.children = intl6.string(tmp5(1115).t.pJT2DK);
-      items2[1] = tmp4(tmp5(4784).Text, obj10);
+      items2[1] = tmp4(tmp5(4832).Text, obj10);
       obj8.children = items2;
       tmpResult = tmp(tmp2, obj8);
     }

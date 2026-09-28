@@ -1,24 +1,24 @@
-// Module ID: 12704
-// Function ID: 12705
+// Module ID: 11914
+// Function ID: 11915
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 4780, 5137, 1372, 1074, 21, 1177, 4788, 576, 4489, 4784, 1115, 5371, 7215, 504, 4506, 5021, 10028, 8251, 12705, 4606, 4524, 4789, 11949, 1241, 11947, 1101, 5020, 12706, 8051, 12493, 8122, 2]
+// Dependencies: [19, 17, 4825, 5200, 1372, 1074, 21, 1177, 4836, 576, 4531, 4832, 1115, 5435, 6359, 504, 4548, 5084, 9188, 7403, 11915, 4652, 4566, 4837, 11164, 1241, 11162, 1101, 5083, 11916, 7196, 11693, 7267, 2]
 
-// Module 12704 (ChatInputContextBar)
+// Module 11914 (ChatInputContextBar)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import useToken from "useToken" /* 4489 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import Pressables from "Pressables" /* 5371 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8051 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8122 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 12493 */;
+import useToken from "useToken" /* 4531 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import Pressables from "Pressables" /* 5435 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7196 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 7267 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 11693 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
-import DraftStore from "DraftStore" /* 5137 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import DraftStore from "DraftStore" /* 5200 */;
 import UserStore from "UserStore" /* 1372 */;
 
-const _modDef7215 = tmp4(7215);
+const _modDef6359 = tmp4(6359);
 require = fn;
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   const tmp = closure_17();
@@ -40,7 +40,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
   obj6.hitSlop = tmp10;
   obj6.onPress = onCancelReplying.onCancelReplying;
   const tmp7 = map1;
-  obj6.children = closure_1_12(native.Icon, { source: _modDef7215, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
+  obj6.children = closure_1_12(native.Icon, { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
   obj5.children = closure_1_12(Pressables.PressableOpacity, obj6);
   items[1] = closure_1_12(component, obj5);
   obj3.children = items;
@@ -324,11 +324,11 @@ function ChatInputEditBar(onCancelEditing) {
   obj4.hitSlop = tmp9;
   obj4.onPress = onCancelEditing.onCancelEditing;
   const tmp8 = closure_1_12(Text_Text.Text, obj3);
-  obj4.children = closure_1_12(native.Icon, { source: _modDef7215, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
+  obj4.children = closure_1_12(native.Icon, { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
   const obj6 = { style: tmp.contextBarRow, children: null };
   const obj7 = { children: null };
   const items = [tmp8, ];
-  const obj5 = { source: _modDef7215, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  const obj5 = { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   items[1] = closure_1_12(component, { style: tmp.floatingRightActions, children: closure_1_12(Pressables.PressableOpacity, obj4) });
   obj7.children = items;
   obj6.children = map1(closure_1_14, obj7);
@@ -360,11 +360,11 @@ function ChatInputScheduledMessageBar(scheduledTimestamp) {
   obj6.hitSlop = tmp9;
   obj6.onPress = onCancelScheduling;
   const tmp8 = closure_1_12(Pressables.PressableOpacity, obj3);
-  obj6.children = closure_1_12(native.Icon, { source: _modDef7215, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
+  obj6.children = closure_1_12(native.Icon, { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
   const obj8 = { style: tmp.contextBarRow, children: null };
   const obj9 = { children: null };
   const items = [tmp8, ];
-  const obj7 = { source: _modDef7215, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  const obj7 = { source: _modDef6359, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   items[1] = closure_1_12(component, { style: tmp.floatingRightActions, children: closure_1_12(Pressables.PressableOpacity, obj6) });
   obj9.children = items;
   obj8.children = map1(closure_1_14, obj9);
@@ -372,13 +372,13 @@ function ChatInputScheduledMessageBar(scheduledTimestamp) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const DraftType = fn(5137).DraftType;
+const DraftType = fn(5200).DraftType;
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, Routes: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 let obj = { duration: 250, easing: fn(1177).STANDARD_EASING };
-let createStyles = fn(4788);
+let createStyles = fn(4836);
 let closure_16 = createStyles.createStyles((arg0) => {
   let MOBILE_FLOATING_ACCESSORY_BACKGROUND = arg0;
   if (arg0 == null) {
@@ -386,7 +386,7 @@ let closure_16 = createStyles.createStyles((arg0) => {
   }
   return { contextBar: { backgroundColor: MOBILE_FLOATING_ACCESSORY_BACKGROUND } };
 });
-createStyles = fn(4788);
+createStyles = fn(4836);
 let closure_17 = createStyles.createStyles(() => {
   obj = { contextBarRow: { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP }, floatingReplyTextWrapper: { flexShrink: 1, minWidth: 0 }, floatingContextBar: null, replyMentionButtonActive: null, replyMentionIcon: null, replyMentionIconActive: null, floatingRightActions: null, floatingMentionGroup: null, floatingDivider: null, floatingCloseIcon: null };
   const obj2 = { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP };

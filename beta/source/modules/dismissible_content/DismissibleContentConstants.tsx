@@ -1,9 +1,9 @@
-// Module ID: 2038
-// Function ID: 2039
+// Module ID: 2042
+// Function ID: 2043
 // Name: DismissibleContentConstants
 // Dependencies: [2]
 
-// Module 2038 (DismissibleContentConstants)
+// Module 2042 (DismissibleContentConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentConstants.tsx");

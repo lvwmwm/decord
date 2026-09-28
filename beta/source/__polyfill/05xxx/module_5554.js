@@ -1,9 +1,18 @@
 // Module ID: 5554
 // Function ID: 5555
-// Dependencies: [1121]
+// Dependencies: [5551]
 
 // Module 5554
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5551 from "module_5551" /* 5551 */;
 
+require = arg1;
+const dependencyMap = arg6;
+const obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
+obj[45056] = {
+  name: "MPFVersion",
+  description(value) {
+    return _mod5551.getStringValue(value);
+  }
+};
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "a9a658fd475f7a20d9e2c83953494ec4", name: "img_bungie_white", type: "svg" });
+export default obj;

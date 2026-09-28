@@ -1,20 +1,20 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 15663
+// Function ID: 15664
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 2041, 21, 10414, 576, 16373, 504, 16382, 9029, 16383, 2]
+// Dependencies: [32, 19, 2045, 21, 9578, 576, 15664, 504, 15673, 8179, 15674, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 16372 (MessagesItemChannel)
+// Module 15663 (MessagesItemChannel)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import _mod9029 from "module_9029" /* 9029 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10414 */;
-import MessagesItemChannelBase from "MessagesItemChannelBase" /* 16373 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16382 */;
-import _mod16383 from "module_16383" /* 16383 */;
+import _mod8179 from "module_8179" /* 8179 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
+import MessagesItemChannelBase from "MessagesItemChannelBase" /* 15664 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15673 */;
+import _mod15674 from "module_15674" /* 15674 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;
 
@@ -48,7 +48,7 @@ const memoResult = noop.memo((arg0) => {
 });
 const memoResult1 = noop.memo((channelId) => {
   const items = [channelId.channelId];
-  const tmp = _slicedToArray(_mod9029.useRecyclingState(false, items), 2);
+  const tmp = _slicedToArray(_mod8179.useRecyclingState(false, items), 2);
   closure_0 = tmp2;
   const items1 = [tmp[1]];
   const obj2 = {};
@@ -78,7 +78,7 @@ export const MessagesItemChannelFast = memoResult;
 export const MessagesItemChannelFlash = memoResult1;
 export const MessagesItemChannelLegend = noop.memo((arg0) => {
   const obj2 = {};
-  [tmp2, tmp3] = _mod16383.useRecyclingState(false);
+  [tmp2, tmp3] = _mod15674.useRecyclingState(false);
   const merged = Object.assign(arg0);
   obj2.isPressed = tmp2;
   obj2.setIsPressed = tmp3;

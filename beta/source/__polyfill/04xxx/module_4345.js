@@ -1,12 +1,49 @@
 // Module ID: 4345
 // Function ID: 4346
-// Dependencies: []
+// Dependencies: [3922, 3918, 3919]
 // Exports: default
 
 // Module 4345
-let closure_0 = { lastWeek: "'\u092A\u093F\u091B\u0932\u0947' eeee p", yesterday: "'\u0915\u0932' p", today: "'\u0906\u091C' p", tomorrow: "'\u0915\u0932' p", nextWeek: "eeee '\u0915\u094B' p", other: "P" };
+import module_3922_mod from "module_3922" /* 3922 */;
+import _typeof_mod from "module_3918" /* 3918 */;
+import requiredArgs_mod from "requiredArgs" /* 3919 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
+let module_3922 = module_3922_mod;
+if (!module_3922) {
+  const obj = { default: module_3922 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_3922;
+}
+module_3922 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
+}
+_typeof = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
+
+export default function setYear(date, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(date);
+  if (isNaN(defaultResult1.getTime())) {
+    const _Date = Date;
+    date = new Date(NaN);
+    return date;
+  } else {
+    defaultResult1.setFullYear(defaultResult2);
+    return defaultResult1;
+  }
+  defaultResult2 = module_3922.default(arg1);
 };
 export default exports.default;

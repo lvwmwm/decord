@@ -1,22 +1,22 @@
-// Module ID: 13486
-// Function ID: 13487
+// Module ID: 12726
+// Function ID: 12727
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7831, 1076, 1074, 11381, 1374, 21, 4788, 576, 8211, 11328, 4755, 11305, 1115, 13484, 9180, 9153, 1484, 7439, 4991, 13487, 1980, 7815, 13491, 1077, 13492, 11374, 9148, 4784, 5219, 1973, 8479, 504, 11452, 4446, 7828, 7827, 9161, 11380, 13494, 13495, 1612, 5218, 13496, 2]
+// Dependencies: [32, 19, 17, 6977, 1076, 1074, 10549, 1374, 21, 4836, 576, 7363, 10496, 4800, 10473, 1115, 12724, 8334, 8303, 1485, 6583, 5039, 12727, 1981, 6961, 12731, 1077, 12732, 10542, 8298, 4832, 5282, 1974, 7623, 504, 10618, 4488, 6974, 6973, 8315, 10548, 12734, 12735, 1613, 5281, 12736, 2]
 // Exports: default
 
-// Module 13486 (ProductDetailsActionSheetPurchaseSection)
+// Module 12726 (ProductDetailsActionSheetPurchaseSection)
 import nativeDefault from "native" /* 576 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import Text_Text from "Text/Text" /* 4784 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7439 */;
-import OrbsIcon from "OrbsIcon" /* 9148 */;
-import openGiftModal from "openGiftModal" /* 11305 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import Text_Text from "Text/Text" /* 4832 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
+import OrbsIcon from "OrbsIcon" /* 8298 */;
+import openGiftModal from "openGiftModal" /* 10473 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7831 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
 
 require = fn;
 function GiftButton(onTrackPress) {
@@ -58,30 +58,30 @@ function VCButton(balance) {
   let color;
   const tmp = closure_17();
   noop = tmp;
-  const virtualCurrencyData = balance(13484).useVirtualCurrencyData(product, flag);
+  const virtualCurrencyData = balance(12724).useVirtualCurrencyData(product, flag);
   ({ price, canAfford } = virtualCurrencyData);
-  let obj = balance(13484);
-  let isPartiallyOwnedBundle = balance(9180).useProductDisableState(product.skuId).isDisabled;
-  const obj2 = balance(9180);
+  let obj = balance(12724);
+  let isPartiallyOwnedBundle = balance(8334).useProductDisableState(product.skuId).isDisabled;
+  const obj2 = balance(8334);
   if (!isPartiallyOwnedBundle) {
     isPartiallyOwnedBundle = !canAfford;
   }
   if (!isPartiallyOwnedBundle) {
     isPartiallyOwnedBundle = obj3.useProductPurchaseState(product).isPartiallyOwnedBundle;
   }
-  obj3 = balance(9153);
-  navigation = balance(1484).useNavigation();
+  obj3 = balance(8303);
+  navigation = balance(1485).useNavigation();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const items = [navigation, product, balance, analyticsLocations, stageCollectibleChangeForEditProfile];
   closure_7 = noop.useCallback(() => {
     ActionSheetActionCreatorsDefault.hideAllActionSheets();
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13487, dependencyMap.paths), {
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12727, dependencyMap.paths), {
       skuId: product.skuId,
       analyticsLocations,
       onCheckoutSuccess(arg0) {
-        const collectiblesPurchases = balance(7815).fetchCollectiblesPurchases();
-        const obj = balance(7815);
-        product(4991).popWithKey(ORB_CHECKOUT_MODAL);
+        const collectiblesPurchases = balance(6961).fetchCollectiblesPurchases();
+        const obj = balance(6961);
+        product(5039).popWithKey(ORB_CHECKOUT_MODAL);
         if (closure_1_1.skuId === constants.ORB_PROFILE_BADGE) {
           const obj3 = {
             modalKey,
@@ -90,15 +90,15 @@ function VCButton(balance) {
               },
             orbBalancePriorToPurchase
           };
-          tmp4(4991).pushLazy(tmp(1980)(13491, tmp2.paths), obj3, modalKey);
-          const tmp4Result = tmp4(4991);
+          tmp4(5039).pushLazy(tmp(1981)(12731, tmp2.paths), obj3, modalKey);
+          const tmp4Result = tmp4(5039);
         } else {
           const ALL = tmp(1077).FractionalPremiumSKUsSets.ALL;
           if (ALL.has(tmp6.skuId)) {
             const obj4 = { skuId: tmp6.skuId, consumed: null, onPressExplorePerks: null, onPressViewCredits: null };
             const first = arg0.entitlements[0];
             let flag;
-            const tmp4Result3 = tmp4(4755);
+            const tmp4Result3 = tmp4(4800);
             if (first != null) {
               flag = first.consumed;
             }
@@ -108,18 +108,18 @@ function VCButton(balance) {
             obj4.consumed = flag;
             obj4.onPressExplorePerks = function onPressExplorePerks() {
               navigation.navigate(constants2.PREMIUM);
-              closure_2_1(4755).hideActionSheet();
+              closure_2_1(4800).hideActionSheet();
             };
             obj4.onPressViewCredits = function onPressViewCredits() {
               navigation.navigate(constants2.PREMIUM_MANAGE_PLAN);
-              closure_2_1(4755).hideActionSheet();
+              closure_2_1(4800).hideActionSheet();
             };
-            tmp4Result3.openLazy(tmp(1980)(13492, tmp2.paths), "FractionalNitroCollectedActionSheet", obj4);
-            const tmp10 = tmp(1980)(13492, tmp2.paths);
+            tmp4Result3.openLazy(tmp(1981)(12732, tmp2.paths), "FractionalNitroCollectedActionSheet", obj4);
+            const tmp10 = tmp(1981)(12732, tmp2.paths);
           } else {
             const obj5 = { product: tmp6, useCategoryImage: true, showOrbBalancePill: true, orbBalancePriorToPurchase, stageCollectibleChangeForEditProfile };
-            tmp4(11374).open(obj5);
-            const tmp4Result4 = tmp4(11374);
+            tmp4(10542).open(obj5);
+            const tmp4Result4 = tmp4(10542);
           }
         }
       }
@@ -181,10 +181,10 @@ function VCButton(balance) {
       str2 = "secondary";
     }
     obj8.variant = str2;
-    obj7.children = closure_13(tmp2(5219).BaseTextButton, obj8);
+    obj7.children = closure_13(tmp2(5282).BaseTextButton, obj8);
     return closure_13(navigation, obj7);
   }
-  const tmp2Result = balance(1484);
+  const tmp2Result = balance(1485);
 }
 function PurchaseDisclaimer(arg0) {
   ({ product, buyButtonLabel } = arg0);
@@ -203,13 +203,13 @@ const CollectiblesShopConstants = fn(1076);
 ({ EXTERNAL_PRODUCT_SKU_IDS: closure_7, ShopCtaEnum: closure_8 } = CollectiblesShopConstants);
 const Constants = fn(1074);
 ({ MarketingURLs: closure_9, UserSettingsSections: c10 } = Constants);
-const RootNavigatorScreen = fn(11381).RootNavigatorScreen;
+const RootNavigatorScreen = fn(10549).RootNavigatorScreen;
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 const ORB_BADGE_COLLECTED_MODAL = "ORB_BADGE_COLLECTED_MODAL";
 const ORB_CHECKOUT_MODAL = "ORB_CHECKOUT_MODAL";
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8 }, purchaseSection: null, disclaimer: null, buttonContainer: null, orbsButtonLabel: null, orbsButtonText: null };
 let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8 };
 obj2.purchaseSection = { gap: nativeDefault.space.PX_12 };
@@ -249,8 +249,8 @@ export default function ProductDetailsActionSheetPurchaseSection(product) {
   const obj7 = require("CollectiblesUtils");
   const result2 = require("CollectiblesProductUtils").isOrbsExclusiveProduct(product);
   const obj8 = require("CollectiblesProductUtils");
-  const balance = require("module_9161").useFetchVirtualCurrencyBalance().balance;
-  const obj9 = require("module_9161");
+  const balance = require("module_8315").useFetchVirtualCurrencyBalance().balance;
+  const obj9 = require("module_8315");
   const canAfford = require("useVirtualCurrencyData").useVirtualCurrencyData(product, canUseShopDiscountsResult).canAfford;
   const obj10 = require("useVirtualCurrencyData");
   const handleUseNow = require("useHandleUseNow").useHandleUseNow({ product, analyticsLocations, stageCollectibleChangeForEditProfile });

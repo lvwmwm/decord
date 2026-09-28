@@ -1,19 +1,19 @@
-// Module ID: 9356
-// Function ID: 9357
+// Module ID: 8511
+// Function ID: 8512
 // Name: SuccessResultModal
-// Dependencies: [19, 17, 2041, 4427, 2095, 1074, 1483, 21, 4788, 576, 8635, 1115, 4991, 7616, 1241, 504, 4755, 4654, 1610, 7400, 9357, 4784, 5218, 2]
+// Dependencies: [19, 17, 2045, 4469, 2099, 1074, 1484, 21, 4836, 576, 7780, 1115, 5039, 6760, 1241, 504, 4800, 4701, 1611, 6544, 8512, 4832, 5281, 2]
 // Exports: default
 
-// Module 9356 (SuccessResultModal)
+// Module 8511 (SuccessResultModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
-import transitionToGuild from "transitionToGuild" /* 7616 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
+import transitionToGuild from "transitionToGuild" /* 6760 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4427 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4469 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const AnalyticsUtilsDefault = tmp(1241);
 require = fn;
@@ -21,10 +21,10 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, Permissions: closure_11 } = Constants);
-const AppLauncherRouteName = fn(1483).AppLauncherRouteName;
+const AppLauncherRouteName = fn(1484).AppLauncherRouteName;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollView: { flex: 1 }, scrollViewContentContainer: null, inner: null, text: null, footer: null, footerLandscape: null, footerPortrait: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollViewContentContainer = { height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };

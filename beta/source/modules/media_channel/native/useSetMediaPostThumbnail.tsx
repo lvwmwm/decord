@@ -1,19 +1,19 @@
-// Module ID: 11531
-// Function ID: 11532
+// Module ID: 10806
+// Function ID: 10807
 // Name: useSetMediaPostThumbnail
-// Dependencies: [19, 5137, 5136, 563, 5376, 9453, 4755, 2]
+// Dependencies: [19, 5200, 5199, 563, 5440, 8608, 4800, 2]
 // Exports: default
 
-// Module 11531 (useSetMediaPostThumbnail)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9453 */;
+// Module 10806 (useSetMediaPostThumbnail)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8608 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5136 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5199 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const DraftType = fn(5137).DraftType;
+const DraftType = fn(5200).DraftType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_channel/native/useSetMediaPostThumbnail.tsx");
 

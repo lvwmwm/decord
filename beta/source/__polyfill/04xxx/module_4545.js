@@ -1,14 +1,66 @@
 // Module ID: 4545
 // Function ID: 4546
-// Dependencies: [19]
-// Exports: c
+// Dependencies: [19, 4544]
+// Exports: create, useStore
 
 // Module 4545
-import _mod19 from "module_19" /* 19 */;
+import noop from "module_19" /* 19 */;
 
-const constants = _mod19.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+function identity(arg0) {
+  return arg0;
+}
+function createImpl(arg0) {
+  store = store(4544).createStore(arg0);
+  function useBoundStore(arg0) {
+    let tmp = arg0;
+    closure_0 = store;
+    if (arg0 === undefined) {
+      tmp = identity;
+    }
+    closure_1 = tmp;
+    const syncExternalStore = noop.useSyncExternalStore(store.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
+    const debugValue = noop.useDebugValue(syncExternalStore);
+    return syncExternalStore;
+  }
+  const merged = Object.assign(useBoundStore, store);
+  return useBoundStore;
+}
 
-export const c = (arg0) => {
-  const H = constants.H;
-  return H.useMemoCache(arg0);
+export const create = (arg0) => {
+  if (arg0) {
+    if (typeof tmp === "function") {
+      store = store(4544).createStore(arg0);
+      function useBoundStore(arg0) {
+        let tmp = arg0;
+        closure_0 = store;
+        if (arg0 === undefined) {
+          tmp = identity;
+        }
+        closure_1 = tmp;
+        const syncExternalStore = noop.useSyncExternalStore(store.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
+        const debugValue = noop.useDebugValue(syncExternalStore);
+        return syncExternalStore;
+      }
+      const _Object = Object;
+      const merged = Object.assign(useBoundStore, store);
+      let tmp2 = useBoundStore;
+      const obj = store(4544);
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    tmp2 = tmp;
+  }
+  return tmp2;
+};
+export const useStore = function useStore(subscribe) {
+  closure_0 = subscribe;
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = identity;
+  }
+  closure_1 = tmp;
+  const syncExternalStore = noop.useSyncExternalStore(subscribe.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
+  const debugValue = noop.useDebugValue(syncExternalStore);
+  return syncExternalStore;
 };

@@ -1,13 +1,13 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 7500
+// Function ID: 7501
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [7726, 8348, 504, 2]
+// Dependencies: [6872, 7501, 504, 2]
 // Exports: useIsEligibleSenderForReferralProgram
 
-// Module 8347 (useIsEligibleSenderForReferralProgram)
+// Module 7500 (useIsEligibleSenderForReferralProgram)
 import initialize from "initialize" /* 504 */;
-import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 8348 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7726 */;
+import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 7501 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 6872 */;
 
 require = fn;
 const size = fn(2);

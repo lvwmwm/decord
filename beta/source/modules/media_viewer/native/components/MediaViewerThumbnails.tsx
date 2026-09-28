@@ -1,15 +1,15 @@
-// Module ID: 13285
-// Function ID: 13286
+// Module ID: 12519
+// Function ID: 12520
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 8595, 21, 13286, 4489, 576, 4524, 5206, 1364, 4788, 5836, 8568, 4525, 7349, 2]
+// Dependencies: [32, 19, 17, 7740, 21, 12520, 4531, 576, 4566, 5269, 1364, 4836, 5899, 7713, 4567, 6493, 2]
 // Exports: default
 
-// Module 13285 (MediaViewerThumbnails)
-import useToken from "useToken" /* 4489 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4524 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4525 */;
-import FastImageDefault from "FastImage" /* 5836 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13286 */;
+// Module 12519 (MediaViewerThumbnails)
+import useToken from "useToken" /* 4531 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4567 */;
+import FastImageDefault from "FastImage" /* 5899 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12520 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -26,14 +26,14 @@ function ObscuredView(source) {
       const items = [absoluteFill.absoluteFill, tmp5];
       obj2.style = items;
       const tmp11 = absoluteFill;
-      const tmp7Result = tmp7(5206);
+      const tmp7Result = tmp7(5269);
       let str = "light";
       if (tmpResult.isAndroid()) {
         str = "dark";
       }
       const obj3 = { blurTheme: str, style: tmp11.absoluteFill, android_fallbackColor: tmp8 };
       obj2.children = React6(tmp7Result, obj3);
-      tmp10Result = tmp10(tmp7(4524).View, obj2);
+      tmp10Result = tmp10(tmp7(4566).View, obj2);
       tmpResult = PlatformUtils;
     } else {
       tmp10Result = null;
@@ -43,11 +43,11 @@ function ObscuredView(source) {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const Constants = fn(8595);
+const Constants = fn(7740);
 ({ THUMBNAIL_WIDTH_MARGIN: closure_7, THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_11 = createStyles.createStyles({ containerPortrait: { height: 60 }, thumbnailButtonPortrait: { overflow: "hidden", marginHorizontal: THUMBNAIL_MARGIN, borderRadius: 2 }, thumbnailImagePortrait: { height: THUMBNAIL_HEIGHT, width: "100%" } });
 let closure_12 = noop.memo((onSelect) => {
   ({ source, index } = onSelect);

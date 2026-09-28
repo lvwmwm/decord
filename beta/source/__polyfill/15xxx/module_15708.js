@@ -6,4 +6,4 @@
 import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "10bb7b2e55f0a34f23d903121de6b9bc", name: "es-ES", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 64, height: 64, scales: [1], hash: "99c427c3b3ea910fa2d3aeb72dd0f935", name: "game-empty-state-controller", type: "png" });

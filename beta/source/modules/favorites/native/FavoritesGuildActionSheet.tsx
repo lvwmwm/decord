@@ -1,16 +1,16 @@
-// Module ID: 16479
-// Function ID: 16480
+// Module ID: 15769
+// Function ID: 15770
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 2044, 21, 16480, 16481, 16482, 10521, 504, 7474, 7426, 1115, 7476, 5323, 12433, 16483, 5929, 7243, 4745, 2]
+// Dependencies: [19, 2048, 21, 15770, 15771, 15772, 9685, 504, 6618, 6570, 1115, 6620, 5387, 11633, 15773, 5992, 6387, 4790, 2]
 // Exports: default
 
-// Module 16479 (FavoritesGuildActionSheet)
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 16480 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 16481 */;
-import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 16482 */;
-import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 16483 */;
+// Module 15769 (FavoritesGuildActionSheet)
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 15770 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 15771 */;
+import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 15772 */;
+import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 15773 */;
 import noop from "module_19" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 const require = fn;
 const jsxProd = fn(21);
@@ -25,24 +25,24 @@ export default function FavoritesGuildActionSheet(onClose) {
   const tmp3 = useFavoritesGuildResetActionDefault();
   dependencyMap = tmp3;
   const tmp4 = useFavoritesGuildAutoAddedThreadsActionDefault();
-  const obj = onClose(10521);
+  const obj = onClose(9685);
   const items = [FavoriteStore];
   const stateFromStores = onClose(504).useStateFromStores(items, () => FavoriteStore.hasStoredFavorites());
   const obj3 = { header: null, children: null };
   const obj4 = { title: null };
   const intl = onClose(1115).intl;
   obj4.title = intl.string(onClose(1115).t.wMWyci);
-  obj3.header = closure_4(onClose(7426).BottomSheetTitleHeader, obj4);
+  obj3.header = closure_4(onClose(6570).BottomSheetTitleHeader, obj4);
   let tmp8Result = null;
   if (tmp4.isAvailable) {
     const obj5 = { hasIcons: true, children: null };
     const obj7 = { label: null, subLabel: null, icon: null, value: null, onValueChange: null };
     ({ label: obj6.label, subLabel: obj6.subLabel } = tmp4);
-    const obj8 = { IconComponent: tmp5(5323).ThreadIcon };
-    obj7.icon = tmp8(tmp5(7476).ActionSheetRow.Icon, obj8);
+    const obj8 = { IconComponent: tmp5(5387).ThreadIcon };
+    obj7.icon = tmp8(tmp5(6620).ActionSheetRow.Icon, obj8);
     ({ isEnabled: obj6.value, toggle: obj6.onValueChange } = tmp4);
-    obj5.children = tmp8(tmp5(7476).ActionSheetSwitchRow, obj7);
-    tmp8Result = tmp8(tmp5(7476).ActionSheetRow.Group, obj5);
+    obj5.children = tmp8(tmp5(6620).ActionSheetSwitchRow, obj7);
+    tmp8Result = tmp8(tmp5(6620).ActionSheetRow.Group, obj5);
   }
   const items1 = [tmp8Result, , ];
   let tmp8Result3 = null;
@@ -53,24 +53,24 @@ export default function FavoritesGuildActionSheet(onClose) {
       const obj10 = { label: null, icon: null, onPress: null };
       const intl2 = tmp5(1115).intl;
       obj10.label = intl2.string(tmp5(1115).t["0dOFq+"]);
-      const obj11 = { IconComponent: tmp5(12433).ArrowsUpDownIcon };
-      obj10.icon = tmp8(tmp5(7476).ActionSheetRow.Icon, obj11);
+      const obj11 = { IconComponent: tmp5(11633).ArrowsUpDownIcon };
+      obj10.icon = tmp8(tmp5(6620).ActionSheetRow.Icon, obj11);
       obj10.onPress = function onPress() {
         onClose();
         openFavoritesGuildChannelSortModalDefault();
       };
-      obj9.children = tmp8(tmp5(7476).ActionSheetRow, obj10);
-      tmp8Result3 = tmp8(tmp5(7476).ActionSheetRow.Group, obj9);
+      obj9.children = tmp8(tmp5(6620).ActionSheetRow, obj10);
+      tmp8Result3 = tmp8(tmp5(6620).ActionSheetRow.Group, obj9);
     }
   }
   items1[1] = tmp8Result3;
   const obj13 = { label: tmp2.label, subLabel: tmp2.subLabel, icon: null, variant: null, onPress: null };
   if (tmp2.isPreview) {
-    let EyeSlashIcon = tmp5(5929).XSmallIcon;
+    let EyeSlashIcon = tmp5(5992).XSmallIcon;
   } else {
-    EyeSlashIcon = tmp5(7243).EyeSlashIcon;
+    EyeSlashIcon = tmp5(6387).EyeSlashIcon;
   }
-  obj13.icon = closure_4(onClose(7476).ActionSheetRow.Icon, { IconComponent: EyeSlashIcon });
+  obj13.icon = closure_4(onClose(6620).ActionSheetRow.Icon, { IconComponent: EyeSlashIcon });
   let str = "danger";
   if (tmp2.isPreview) {
     str = "default";
@@ -80,21 +80,21 @@ export default function FavoritesGuildActionSheet(onClose) {
     onClose();
     closure_1.perform();
   };
-  const items2 = [closure_4(onClose(7476).ActionSheetRow, obj13), ];
+  const items2 = [closure_4(onClose(6620).ActionSheetRow, obj13), ];
   let tmp8Result4 = null;
   if (tmp3.isAvailable) {
     const obj24 = { label: null, subLabel: null, icon: null, variant: "danger", onPress: null };
     ({ label: obj12.label, subLabel: obj12.subLabel } = tmp3);
-    const obj25 = { IconComponent: tmp5(4745).TrashIcon };
-    obj24.icon = tmp8(tmp5(7476).ActionSheetRow.Icon, obj25);
+    const obj25 = { IconComponent: tmp5(4790).TrashIcon };
+    obj24.icon = tmp8(tmp5(6620).ActionSheetRow.Icon, obj25);
     obj24.onPress = function onPress() {
       onClose();
       closure_2.perform();
     };
-    tmp8Result4 = tmp8(tmp5(7476).ActionSheetRow, obj24);
+    tmp8Result4 = tmp8(tmp5(6620).ActionSheetRow, obj24);
   }
   items2[1] = tmp8Result4;
-  items1[2] = closure_5(onClose(7476).ActionSheetRow.Group, { hasIcons: true, children: items2 });
+  items1[2] = closure_5(onClose(6620).ActionSheetRow.Group, { hasIcons: true, children: items2 });
   obj3.children = items1;
-  return closure_5(onClose(7474).ActionSheet, obj3);
+  return closure_5(onClose(6618).ActionSheet, obj3);
 };

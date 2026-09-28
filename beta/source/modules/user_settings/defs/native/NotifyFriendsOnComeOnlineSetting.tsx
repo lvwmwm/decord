@@ -1,25 +1,25 @@
-// Module ID: 16240
-// Function ID: 16241
+// Module ID: 15529
+// Function ID: 15530
 // Name: NotifyFriendsOnComeOnlineSetting
-// Dependencies: [8265, 11754, 1115, 2648, 2019, 15782, 2]
+// Dependencies: [7417, 11006, 1115, 2653, 2021, 15055, 2]
 
-// Module 16240 (NotifyFriendsOnComeOnlineSetting)
+// Module 15529 (NotifyFriendsOnComeOnlineSetting)
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import _modDef2648 from "module_2648" /* 2648 */;
-import SettingsConstants from "SettingsConstants" /* 8265 */;
-import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15782 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
+import UserSettings from "UserSettings" /* 2021 */;
+import _modDef2653 from "module_2653" /* 2653 */;
+import SettingsConstants from "SettingsConstants" /* 7417 */;
+import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15055 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2648.A0FVCV);
+    return intl.string(_modDef2653.A0FVCV);
   },
   useDescription() {
     const intl = util.intl;
-    return intl.string(_modDef2648.vHX6RG);
+    return intl.string(_modDef2653.vHX6RG);
   },
   parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: UserSettings.NotifyFriendsOnComeOnline.useSetting,

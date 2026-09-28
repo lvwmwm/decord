@@ -1,26 +1,26 @@
-// Module ID: 7735
-// Function ID: 7736
+// Module ID: 6881
+// Function ID: 6882
 // Name: SessionHeartbeatScheduler
-// Dependencies: [5, 5526, 502, 5659, 4811, 1074, 1091, 3, 7736, 7737, 7738, 1231, 7739, 7742, 1241, 7743, 510, 7745, 1339, 573, 504, 1255, 2]
+// Dependencies: [5, 5589, 502, 5722, 4859, 1074, 1091, 3, 6882, 6883, 6884, 1231, 6885, 6888, 1241, 6889, 510, 6891, 1339, 573, 504, 1255, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
-// Module 7735 (SessionHeartbeatScheduler)
+// Module 6881 (SessionHeartbeatScheduler)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import SessionForegroundUtils2 from "SessionForegroundUtils" /* 7736 */;
-import SessionRouteUtils2 from "SessionRouteUtils" /* 7737 */;
-import MonotonicClock from "MonotonicClock" /* 7738 */;
-import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 7743 */;
-import SessionUtils from "SessionUtils" /* 7745 */;
+import SessionForegroundUtils2 from "SessionForegroundUtils" /* 6882 */;
+import SessionRouteUtils2 from "SessionRouteUtils" /* 6883 */;
+import MonotonicClock from "MonotonicClock" /* 6884 */;
+import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 6889 */;
+import SessionUtils from "SessionUtils" /* 6891 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IdleStore from "IdleStore" /* 5659 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import IdleStore from "IdleStore" /* 5722 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;
 
 const initializeDefault = tmp(504);
 require = fn;
@@ -214,7 +214,7 @@ function validateClientSession(version) {
     let tmp4 = version;
     if (version.version !== SessionUtils.CLIENT_SESSION_STORAGE_VERSION) {
       const _HermesInternal = HermesInternal;
-      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(7745).CLIENT_SESSION_STORAGE_VERSION);
+      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(6891).CLIENT_SESSION_STORAGE_VERSION);
       tmp4 = null;
     }
     tmp = tmp4;
@@ -395,7 +395,7 @@ let closure_39 = async function _getSession(arg0, value) {
           closure_130_3 = undefined;
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp7) {
@@ -525,9 +525,9 @@ let c18 = 0;
 let c19 = 0;
 let closure_20 = { state: "uninitialized" };
 let state = RTCConnectionStore.getState();
-const SessionForegroundUtils = fn(7736);
+const SessionForegroundUtils = fn(6882);
 let closure_22 = SessionForegroundUtils.isForegrounded();
-const SessionRouteUtils = fn(7737);
+const SessionRouteUtils = fn(6883);
 let closure_23 = SessionRouteUtils.isActiveUserRoute();
 let token = AuthenticationStore.getToken();
 const size = fn(2);
@@ -569,9 +569,9 @@ export const getActiveSessionUnsafe = function getActiveSessionUnsafe() {
     let tmp7 = null;
     if (null != value) {
       let tmp8 = value;
-      if (value.version !== tmp2(7745).CLIENT_SESSION_STORAGE_VERSION) {
+      if (value.version !== tmp2(6891).CLIENT_SESSION_STORAGE_VERSION) {
         const _HermesInternal = HermesInternal;
-        logger.warn("Throwing away client session with invalid version: " + value.version + ", expected " + tmp2(7745).CLIENT_SESSION_STORAGE_VERSION);
+        logger.warn("Throwing away client session with invalid version: " + value.version + ", expected " + tmp2(6891).CLIENT_SESSION_STORAGE_VERSION);
         tmp8 = null;
       }
       tmp7 = tmp8;

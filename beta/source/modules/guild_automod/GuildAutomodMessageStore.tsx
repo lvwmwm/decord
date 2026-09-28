@@ -1,18 +1,18 @@
-// Module ID: 8228
-// Function ID: 8229
+// Module ID: 7380
+// Function ID: 7381
 // Name: GuildAutomodMessageStore
-// Dependencies: [2041, 5008, 1074, 8108, 8229, 5010, 7782, 11, 504, 573, 2]
+// Dependencies: [2045, 5056, 1074, 7253, 7381, 5058, 6928, 11, 504, 573, 2]
 
-// Module 8228 (GuildAutomodMessageStore)
+// Module 7380 (GuildAutomodMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7782 */;
-import MessageQueue from "MessageQueue" /* 8108 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8229 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MessageStore from "MessageStore" /* 5008 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
+import AutomodMessageUtils from "AutomodMessageUtils" /* 6928 */;
+import MessageQueue from "MessageQueue" /* 7253 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 7381 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MessageStore from "MessageStore" /* 5056 */;
 
 require = fn;
 function handleMessageSendFailedAutomod(messageData) {
@@ -135,13 +135,13 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
       const tmp = require;
       let result = AutomodMessageUtils.isAutomodMessageRecord(messageRecord);
       if (result) {
-        let flag = tmp(7782).isAutomodNotification(messageRecord);
+        let flag = tmp(6928).isAutomodNotification(messageRecord);
         if (flag) {
           closure_11[guildId] = messageRecord.id;
           flag = true;
         }
         result = flag;
-        const tmpResult = tmp(7782);
+        const tmpResult = tmp(6928);
       }
       return result;
     }
@@ -152,7 +152,7 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
     message = message.message;
     let flag = null != message;
     if (flag) {
-      const obj = { id: message.id, messageData: "PX_16", isBlockedEdit: null, errorMessage: tmp };
+      const obj = { id: message.id, messageData: "flex", isBlockedEdit: null, errorMessage: tmp };
       closure_8[message.id] = obj;
       closure_9 = closure_9 + 1;
       flag = true;

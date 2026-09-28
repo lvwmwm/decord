@@ -1,20 +1,20 @@
-// Module ID: 17721
-// Function ID: 17722
+// Module ID: 17078
+// Function ID: 17079
 // Name: RestrictedHoursManager
-// Dependencies: [10377, 1372, 7811, 1115, 2482, 1395, 10379, 573, 17716, 7395, 2]
+// Dependencies: [9541, 1372, 6957, 1115, 2487, 1395, 9543, 573, 17073, 6539, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 17721 (RestrictedHoursManager)
+// Module 17078 (RestrictedHoursManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import FamilyCenterModels from "FamilyCenterModels" /* 1395 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10379 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17716 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 10377 */;
+import _modDef2487 from "module_2487" /* 2487 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 9543 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17073 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 9541 */;
 import UserStore from "UserStore" /* 1372 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;
 function scheduleUpcomingWarning() {
@@ -56,7 +56,7 @@ function scheduleUpcomingWarning() {
         const intl = util.intl;
         const _Date2 = Date;
         const date2 = new Date(startAtMs);
-        const stringResult = intl.string(_modDef2482["0JlDg0"]);
+        const stringResult = intl.string(_modDef2487["0JlDg0"]);
         const items = [FamilyCenterModels.JS_DAY_TO_DAY_OF_WEEK[date2.getDay(date2)]];
         const formatDaysResult = FamilyCenterRestrictedHoursUtils.formatDays(items);
         const _HermesInternal2 = HermesInternal;

@@ -1,10 +1,10 @@
-// Module ID: 8117
-// Function ID: 8118
+// Module ID: 7262
+// Function ID: 7263
 // Name: stageAttachmentFiles
-// Dependencies: [5, 1074, 5375, 2]
+// Dependencies: [5, 1074, 5439, 2]
 // Exports: default
 
-// Module 8117 (stageAttachmentFiles)
+// Module 7262 (stageAttachmentFiles)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -58,7 +58,7 @@ let closure_4 = async function _stageAttachmentFiles() {
   }
   closure_131_1 = flag;
   closure_131_2 = closure_2;
-  return "PX_16";
+  return "flex";
 };
 const AbortCodes = fn(1074).AbortCodes;
 const size = fn(2);

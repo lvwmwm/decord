@@ -1,21 +1,21 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 14876
+// Function ID: 14877
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 4780, 2020, 8265, 1074, 21, 1115, 2108, 2872, 7656, 7315, 15605, 1484, 563, 11754, 14992, 2]
+// Dependencies: [19, 4825, 2022, 7417, 1074, 21, 1115, 2111, 2877, 6800, 6459, 14877, 1485, 563, 11006, 14247, 2]
 // Exports: default
 
-// Module 15604 (SettingsAccessibilityScreen)
+// Module 14876 (SettingsAccessibilityScreen)
 import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import _modDef2872 from "module_2872" /* 2872 */;
-import SettingBuilders from "SettingBuilders" /* 11754 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15605 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
+import _modDef2877 from "module_2877" /* 2877 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 14877 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4780 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2020 */;
+import AccessibilityStore from "AccessibilityStore" /* 4825 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2022 */;
 
 require = fn;
-const MobileUserSettings = fn(8265).MobileUserSettings;
+const MobileUserSettings = fn(7417).MobileUserSettings;
 const Constants = fn(1074);
 ({ HelpdeskArticles: closure_7, UserSettingsSections: closure_8 } = Constants);
 const jsx = fn(21).jsx;
@@ -57,7 +57,7 @@ export default function SettingsAccessibilityScreen() {
     const items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
     obj6.settings = items3;
     const intl3 = util.intl;
-    obj6.subLabel = intl3.format(_modDef2872.L8U56h, {
+    obj6.subLabel = intl3.format(_modDef2877.L8U56h, {
       onClickOpenModal() {
         closure_0(animateEmojiOverrideReason[9]).openUserSettings({ screen: constants.PROFILE_CUSTOMIZATION }, () => {
           closure_1_0(closure_1_2[10]).runAfterInteractions(() => {

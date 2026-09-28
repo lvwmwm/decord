@@ -1,9 +1,17 @@
 // Module ID: 13819
 // Function ID: 13820
-// Dependencies: [1121]
+// Dependencies: [13814, 13820]
 
 // Module 13819
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13814 from "module_13814" /* 13814 */;
 
+const _mod13820 = tmp(13820);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "2e0d6978350694e35552111153599c69", name: "BoostTier3Icon", type: "png" });
+export default (arg0) => {
+  if (_mod13814(arg0)) {
+    return arg0;
+  } else {
+    const tmp6 = new TypeError(_mod13820(arg0) + " is not a function");
+    throw tmp6;
+  }
+};

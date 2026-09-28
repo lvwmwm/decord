@@ -1,9 +1,9 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 14670
+// Function ID: 14671
 // Name: MuxIntegration
 // Dependencies: [2]
 
-// Module 15409 (MuxIntegration)
+// Module 14670 (MuxIntegration)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/video-qoe/integrations/MuxIntegration.tsx");
@@ -47,7 +47,7 @@ prototype["mapDiscordToMuxMetadata"] = function mapDiscordToMuxMetadata(config, 
   return obj;
 };
 prototype["getAppVersion"] = function getAppVersion() {
-  return "6513";
+  return "6530";
 };
 prototype["getBuildChannel"] = function getBuildChannel() {
   try {

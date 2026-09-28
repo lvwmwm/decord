@@ -1,9 +1,49 @@
 // Module ID: 13873
 // Function ID: 13874
-// Dependencies: [1121]
+// Dependencies: [13874]
 
 // Module 13873
-import registerAsset from "module_1121" /* 1121 */;
+import _typeof from "module_13874" /* 13874 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "25b28a12657775964c80c08fa4bc3ce7", name: "ic_gift", type: "png" });
+if (_typeof) {
+  if (typeof _typeof === "object") {
+    let _default = _typeof;
+  }
+  let obj = globalThis;
+  const _Intl = Intl;
+  if (typeof Intl === "undefined") {
+    if (undefined !== global) {
+      obj = { PluralRules: _default.default };
+      global.Intl = obj;
+      _default = _default.default;
+      _default.polyfill = true;
+    } else {
+      const _window = window;
+      if (typeof window === "undefined") {
+        const self = this;
+        const obj2 = { PluralRules: _default.default };
+        this.Intl = obj2;
+      }
+    }
+    obj = { PluralRules: _default.default };
+    obj.window.Intl = obj;
+  } else {
+    const _Intl5 = Intl;
+    if (Intl.PluralRules) {
+      const _Intl2 = Intl;
+      if (Intl.PluralRules.prototype.selectRange) {
+        const items = ["en", "es", "ru", "zh"];
+        const _Intl4 = Intl;
+        if (PluralRules.supportedLocalesOf(items).length < items.length) {
+          const _Intl6 = Intl;
+          Intl.PluralRules = _default.default;
+          _default.default.polyfill = true;
+        }
+      }
+    }
+    const _Intl3 = Intl;
+    Intl.PluralRules = _default.default;
+    _default.default.polyfill = true;
+  }
+}
+_default = { default: _typeof };

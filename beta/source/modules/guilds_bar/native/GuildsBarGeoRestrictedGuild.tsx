@@ -1,23 +1,23 @@
-// Module ID: 16689
-// Function ID: 16690
+// Module ID: 15983
+// Function ID: 15984
 // Name: GuildsBarGeoRestrictedGuild
-// Dependencies: [19, 16624, 21, 4788, 576, 16640, 16636, 1397, 5833, 5140, 1115, 9887, 16690, 16659, 5836, 2]
+// Dependencies: [19, 15918, 21, 4836, 576, 15934, 15930, 1397, 5896, 5203, 1115, 9048, 15984, 15953, 5899, 2]
 
-// Module 16689 (GuildsBarGeoRestrictedGuild)
+// Module 15983 (GuildsBarGeoRestrictedGuild)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
-import GuildIcon from "GuildIcon" /* 5833 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16636 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16640 */;
-import HomeDrawerGuildRowDefault from "HomeDrawerGuildRow" /* 16659 */;
-import GuildsBarGeoRestrictedBadgeDefault from "GuildsBarGeoRestrictedBadge" /* 16690 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
+import GuildIcon from "GuildIcon" /* 5896 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 15930 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 15934 */;
+import HomeDrawerGuildRowDefault from "HomeDrawerGuildRow" /* 15953 */;
+import GuildsBarGeoRestrictedBadgeDefault from "GuildsBarGeoRestrictedBadge" /* 15984 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const GUILD_ITEM_BADGE_SIZE = fn(16624).GUILD_ITEM_BADGE_SIZE;
+const GUILD_ITEM_BADGE_SIZE = fn(15918).GUILD_ITEM_BADGE_SIZE;
 const jsx = fn(21).jsx;
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj = { guildIcon: null, geoRestrictedBadge: null };
 let size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.guildIcon = size;
@@ -31,7 +31,7 @@ export default noop.memo(function GuildsBarGeoRestrictedGuild(restrictedGuild) {
   restrictedGuild = restrictedGuild.restrictedGuild;
   const tmp = closure_5();
   let animatableSourceWithFallback = null;
-  let obj = restrictedGuild(16636);
+  let obj = restrictedGuild(15930);
   const tmp2 = restrictedGuild;
   if (null != restrictedGuild.icon) {
     animatableSourceWithFallback = AvatarUtilsDefault.getAnimatableSourceWithFallback(false, (canAnimate) => {
@@ -56,18 +56,18 @@ export default noop.memo(function GuildsBarGeoRestrictedGuild(restrictedGuild) {
       AlertActionCreatorsDefault.show(obj2);
     }
   }), items);
-  const obj3 = { selected: false, unread: false, circle: false, styles: restrictedGuild(16636).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: 28, expandedChildren: 480, children: "center" };
-  const guildsBarAnimatedWrapperStyles = restrictedGuild(16636).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
+  const obj3 = { selected: false, unread: false, circle: false, styles: restrictedGuild(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: "canap\u00E9", expandedChildren: "canap\u00E9 avec une lampe", children: "canap\u00E9 et lampe" };
+  const guildsBarAnimatedWrapperStyles = restrictedGuild(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   obj3.externalChildren = jsx(GuildsBarGeoRestrictedBadgeDefault, { style: tmp.geoRestrictedBadge });
   obj3.expandedChildren = jsx(HomeDrawerGuildRowDefault, { guildId: restrictedGuild.id });
   if (null != animatableSourceWithFallback) {
     const obj6 = { source: animatableSourceWithFallback, style: tmp.guildIcon, fadeDuration: 0 };
-    let tmp8Result = tmp8(tmp9(5836), obj6);
+    let tmp8Result = tmp8(tmp9(5899), obj6);
   } else {
-    const obj7 = { value: restrictedGuild.name, selected: false, animate: false, size: tmp2(5833).GuildIconSizes.LARGE };
-    tmp8Result = tmp8(tmp9(5833), obj7);
-    const tmp9Result = tmp9(5833);
+    const obj7 = { value: restrictedGuild.name, selected: false, animate: false, size: tmp2(5896).GuildIconSizes.LARGE };
+    tmp8Result = tmp8(tmp9(5896), obj7);
+    const tmp9Result = tmp9(5896);
   }
   obj3.children = tmp8Result;
-  return jsx(GuildsBarAnimatedItemWrapperDefault, { selected: false, unread: false, circle: false, styles: restrictedGuild(16636).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: 28, expandedChildren: 480, children: "center" });
+  return jsx(GuildsBarAnimatedItemWrapperDefault, { selected: false, unread: false, circle: false, styles: restrictedGuild(15930).useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: "canap\u00E9", expandedChildren: "canap\u00E9 avec une lampe", children: "canap\u00E9 et lampe" });
 });

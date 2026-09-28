@@ -1,13 +1,13 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 15434
+// Function ID: 15435
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 7816, 504, 16146, 2]
+// Dependencies: [19, 6962, 504, 15435, 2]
 // Exports: default
 
-// Module 16145 (useGetProductsFromSkus)
+// Module 15434 (useGetProductsFromSkus)
 import _mod19 from "module_19" /* 19 */;
-import uniqByDefault from "uniqBy" /* 16146 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
+import uniqByDefault from "uniqBy" /* 15435 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 import size from "module_2" /* 2 */;
 
 _mod19.useCallback;

@@ -1,28 +1,28 @@
-// Module ID: 11822
-// Function ID: 11823
+// Module ID: 11036
+// Function ID: 11037
 // Name: useScrollHandlers
-// Dependencies: [19, 9686, 3, 5203, 11282, 1248, 11566, 11568, 5696, 2]
+// Dependencies: [19, 8843, 3, 5910, 11037, 5266, 10450, 1248, 10841, 10843, 5759, 7333, 2]
 // Exports: default
 
-// Module 11822 (useScrollHandlers)
+// Module 11036 (useScrollHandlers)
 import LoggerDefault from "Logger" /* 3 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5203 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11282 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 11566 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 11568 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5266 */;
+import useInitialValueDefault from "useInitialValue" /* 5910 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10450 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 10841 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 10843 */;
 import noop from "module_19" /* 19 */;
 
-const QuestTypes = tmp(5696);
 require = fn;
-const useChatBottomManagerUIStore = fn(9686);
+const useChatBottomManagerUIStore = fn(8843);
 ({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: hasOwnProperty } = useChatBottomManagerUIStore);
 let closure_6 = new LoggerDefault("useScrollHandlers");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/hooks/useScrollHandlers.tsx");
 
 export default function useScrollHandlers(arg0) {
-  ({ chatRef: require, chatManager: importDefault, chatUpdatesQueue: dependencyMap, pendingUpdatesQueueRef: noop, animatedRef: closure_4, fetchMoreBefore: closure_5, fetchMoreAfter: closure_6, handleVisibleMessagesChange: closure_7, applyNativeRowsUpdate: closure_8, messages: closure_9, channel: closure_10, channelId: closure_11, screenIndex: closure_12, onScroll: closure_13, useReducedMotion: closure_14, isStaff: closure_15, visibleMessagesWindowHandler: closure_16 } = arg0);
+  ({ chatRef: require, chatManager: importDefault, chatUpdatesQueue: dependencyMap, pendingUpdatesQueueRef: noop, animatedRef: closure_4, fetchMoreBefore: closure_5, fetchMoreAfter: closure_6, handleVisibleMessagesChange: closure_7, applyNativeRowsUpdate: closure_8, messages: closure_9, channel: closure_10, channelId: closure_11, screenIndex: closure_12, onScroll: closure_13, useReducedMotion: closure_14, isStaff: closure_15, visibleMessagesWindowHandler: closure_16, selectedConversation: closure_17 } = arg0);
   function handleScrollCallbacks(isNearTop) {
     ({ eventTimestamp, isAtBottom, isNearBottom } = isNearTop);
     if (isNearBottom === undefined) {
@@ -143,6 +143,7 @@ export default function useScrollHandlers(arg0) {
       });
     }
   }
+  closure_18 = useInitialValueDefault(() => new previousRows(dependencyMap[4])());
   const ref = noop.useRef(undefined);
   const ref1 = noop.useRef(false);
   const ref2 = noop.useRef(false);
@@ -216,7 +217,7 @@ export default function useScrollHandlers(arg0) {
           logger.log("STAFF-ACK-LOG: Ignoring outdated scroll event.", closure_1_11, changesetUpdateId, changesetIdForChat, timeStamp);
         }
       } else {
-        const obj2 = { firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: QuestTypes.QuestsVisibleMessagesChangedSource.SCROLL };
+        const obj2 = { firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: tmp(5759).QuestsVisibleMessagesChangedSource.SCROLL };
         closure_1_7(obj2);
         let current = ref.current;
         if (current == null) {
@@ -227,6 +228,30 @@ export default function useScrollHandlers(arg0) {
         handleScroll(obj3);
         const obj4 = { rows: previousRows._rows, firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex };
         closure_1_16.handleScrollPosition(obj4);
+        const obj5 = { rows: previousRows._rows, conversationId: null, startMessageId: null, firstVisibleMessageRowIndex: null, lastVisibleMessageRowIndex: null };
+        let id;
+        if (closure_1_17 != null) {
+          id = tmp10.id;
+        }
+        if (id == null) {
+          id = null;
+        }
+        obj5.conversationId = id;
+        let startMessageId;
+        if (closure_1_17 != null) {
+          startMessageId = tmp10.startMessageId;
+        }
+        if (startMessageId == null) {
+          startMessageId = null;
+        }
+        obj5.startMessageId = startMessageId;
+        obj5.firstVisibleMessageRowIndex = firstVisibleMessageIndex;
+        obj5.lastVisibleMessageRowIndex = lastVisibleMessageIndex;
+        const handleScrollPositionResult1 = closure_18.handleScrollPosition(obj5);
+        if (null != handleScrollPositionResult1) {
+          const result = tmp(7333).clearConversationSelection(closure_1_11, handleScrollPositionResult1);
+          const tmpResult = tmp(7333);
+        }
       }
     }
   };

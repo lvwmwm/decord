@@ -1,17 +1,17 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 16429
+// Function ID: 16430
 // Name: useVibegrationsChatToastMessages
-// Dependencies: [32, 19, 17090, 5008, 1091, 504, 5010, 573, 2]
+// Dependencies: [32, 19, 16430, 5056, 1091, 504, 5058, 573, 2]
 // Exports: default
 
-// Module 17089 (useVibegrationsChatToastMessages)
+// Module 16429 (useVibegrationsChatToastMessages)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5010 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5058 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import CallChatToastsStore from "CallChatToastsStore" /* 17090 */;
-import MessageStore from "MessageStore" /* 5008 */;
+import CallChatToastsStore from "CallChatToastsStore" /* 16430 */;
+import MessageStore from "MessageStore" /* 5056 */;
 
 const require = globalThis.__r;
 

@@ -1,12 +1,12 @@
-// Module ID: 1965
-// Function ID: 1966
+// Module ID: 1966
+// Function ID: 1967
 // Name: AvatarDecorationUtils
-// Dependencies: [1966, 12, 2]
+// Dependencies: [1967, 12, 2]
 // Exports: hasGlobalDefaultAvatarDecoration, isAvatarDecorationExpired, isEqualAvatarDecoration, parseAvatarDecorationData
 
-// Module 1965 (AvatarDecorationUtils)
+// Module 1966 (AvatarDecorationUtils)
 import _mod12 from "module_12" /* 12 */;
-import mappers from "mappers" /* 1966 */;
+import mappers from "mappers" /* 1967 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/AvatarDecorationUtils.tsx");
@@ -54,7 +54,7 @@ export const isEqualAvatarDecoration = function isEqualAvatarDecoration(avatarDe
       if (typeof avatarDecoration === "object") {
         tmp2 = null;
         if (null != avatarDecoration) {
-          const result = tmp12(1966).parseSkuIdFromServerData(avatarDecoration);
+          const result = tmp12(1967).parseSkuIdFromServerData(avatarDecoration);
           tmp2 = null;
           if (null != result) {
             const obj = { skuId: result };
@@ -73,14 +73,14 @@ export const isEqualAvatarDecoration = function isEqualAvatarDecoration(avatarDe
             tmp4 = "expires_at" in avatarDecoration && typeof avatarDecoration.expires_at === "number";
             tmp5 = "expiresAt" in avatarDecoration && typeof avatarDecoration.expiresAt === "number";
           }
-          const tmp12Result = tmp12(1966);
+          const tmp12Result = tmp12(1967);
         }
       }
       let tmp6 = null;
       if (typeof asset2 === "object") {
         tmp6 = null;
         if (null != asset2) {
-          const result1 = tmp12(1966).parseSkuIdFromServerData(asset2);
+          const result1 = tmp12(1967).parseSkuIdFromServerData(asset2);
           tmp6 = null;
           if (null != result1) {
             const obj2 = { skuId: result1 };
@@ -99,7 +99,7 @@ export const isEqualAvatarDecoration = function isEqualAvatarDecoration(avatarDe
             tmp8 = "asset" in asset2 && typeof asset2.asset === "string";
             tmp9 = "expires_at" in asset2 && typeof asset2.expires_at === "number";
           }
-          const tmp12Result2 = tmp12(1966);
+          const tmp12Result2 = tmp12(1967);
         }
       }
       let isEqualResult = _mod12.isEqual(tmp2, tmp6);

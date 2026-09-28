@@ -1,18 +1,18 @@
-// Module ID: 17975
-// Function ID: 17976
+// Module ID: 17336
+// Function ID: 17337
 // Name: BlockMessageActionSheet
-// Dependencies: [32, 19, 12146, 21, 17953, 4755, 7474, 7426, 4784, 1115, 7362, 5218, 9216, 2]
+// Dependencies: [32, 19, 11341, 21, 17314, 4800, 6618, 6570, 4832, 1115, 6506, 5281, 8370, 2]
 // Exports: default
 
-// Module 17975 (BlockMessageActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+// Module 17336 (BlockMessageActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Constants = fn(12146);
+const Constants = fn(11341);
 ({ AutomodActionType: hasOwnProperty, MAX_BLOCK_ACTION_CUSTOM_MESSAGE_LENGTH: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

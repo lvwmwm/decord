@@ -1,13 +1,13 @@
-// Module ID: 11424
-// Function ID: 11425
+// Module ID: 10590
+// Function ID: 10591
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 1255, 7434, 11425, 1478, 11429, 2]
+// Dependencies: [32, 5, 19, 21, 3, 1255, 6578, 10591, 1479, 10595, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 11424 (useTooltip)
+// Module 10590 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import AnimatedTooltip from "AnimatedTooltip" /* 11425 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
+import AnimatedTooltip from "AnimatedTooltip" /* 10591 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -38,7 +38,7 @@ export const useTooltip = function useTooltip(ref, memo) {
   closure_129_0 = ref;
   closure_129_1 = ref;
   closure_129_2 = callback;
-  const tmp8 = context(1478)();
+  const tmp8 = context(1479)();
   closure_129_3 = tmp8;
   closure_129_4 = obj.useRef(tmp8);
   const context1 = obj.useContext(require("LayerContext").LayerContext);
@@ -59,8 +59,8 @@ export const useTooltip = function useTooltip(ref, memo) {
     memo = arg0;
     closure_1 = async function _measureHelper(arg0, arg1) {
       closure_129_0 = ref;
-      const measurements = memo(11429).getMeasurements(surfaceRef.surfaceRef, memo);
-      const items = [measurements, memo(11429).getMeasurements(closure_1, memo)];
+      const measurements = memo(10595).getMeasurements(surfaceRef.surfaceRef, memo);
+      const items = [measurements, memo(10595).getMeasurements(closure_1, memo)];
       await Promise.all(items);
       if (1 === tmp7) {
         c4 = 0;
@@ -133,8 +133,8 @@ export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callba
     memo = arg0;
     closure_1 = async function _measureHelper(arg0, arg1) {
       closure_129_0 = ref;
-      const measurements = memo(11429).getMeasurements(surfaceRef.surfaceRef, memo);
-      const items = [measurements, memo(11429).getMeasurements(closure_1, memo)];
+      const measurements = memo(10595).getMeasurements(surfaceRef.surfaceRef, memo);
+      const items = [measurements, memo(10595).getMeasurements(closure_1, memo)];
       await Promise.all(items);
       if (1 === tmp7) {
         c4 = 0;

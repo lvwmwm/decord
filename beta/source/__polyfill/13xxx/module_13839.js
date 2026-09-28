@@ -1,9 +1,17 @@
 // Module ID: 13839
 // Function ID: 13840
-// Dependencies: [1121]
+// Dependencies: [13837]
 
 // Module 13839
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13837 from "module_13837" /* 13837 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 80, height: 80, scales: [1], hash: "5f9cf938bde196c596c6b50aa389dd8b", name: "img_wumpus_nitro_classic", type: "png" });
+export default (arg0, arg1) => {
+  const tmp = _mod13837(arg0);
+  if (tmp < 0) {
+    let tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
+  }
+  return tmp3;
+};

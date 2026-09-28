@@ -1,22 +1,9 @@
 // Module ID: 14641
 // Function ID: 14642
-// Dependencies: [14616]
+// Dependencies: [1121]
 
 // Module 14641
-import _mod14616 from "module_14616" /* 14616 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-if (_mod14616) {
-  let fn = call.bind(call);
-} else {
-  fn = () => {
-    const apply = call.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(tmp);
-    } else {
-      applyArgumentsResult = apply(tmp, arguments);
-    }
-    return applyArgumentsResult;
-  };
-}
 
-export default fn;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e2f2314b317d679f7a97eb76ebf6b124", name: "UnsendIcon", type: "png" });

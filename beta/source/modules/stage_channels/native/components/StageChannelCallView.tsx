@@ -1,17 +1,17 @@
-// Module ID: 10337
-// Function ID: 10338
+// Module ID: 9501
+// Function ID: 9502
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 9797, 4788, 1612, 10338, 10339, 4524, 9682, 10340, 2]
+// Dependencies: [19, 21, 8958, 4836, 1613, 9502, 9503, 4566, 8839, 9504, 2]
 // Exports: default
 
-// Module 10337 (StageChannelCallView)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4524 */;
-import StatusBarDefault from "StatusBar" /* 9682 */;
-import FocusedControls from "FocusedControls" /* 9797 */;
-import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 10338 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 10339 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 10340 */;
+// Module 9501 (StageChannelCallView)
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
+import StatusBarDefault from "StatusBar" /* 8839 */;
+import FocusedControls from "FocusedControls" /* 8958 */;
+import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 9502 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 9503 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 9504 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,7 +28,7 @@ function StageChannelCallBackground(arg0) {
 }
 const jsxProd = fn(21);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let closure_6 = createStyles.createStyles({ container: { flex: 1, paddingHorizontal: 12 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallView.tsx");

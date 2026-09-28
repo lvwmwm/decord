@@ -1,20 +1,20 @@
-// Module ID: 11004
-// Function ID: 11005
+// Module ID: 10172
+// Function ID: 10173
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7694, 7695, 502, 4452, 7514, 9514, 7515, 1074, 4770, 1374, 21, 3, 7517, 573, 9513, 1240, 4380, 7703, 4461, 5111, 1241, 5141, 1115, 11005, 1980, 4991, 7686, 2]
+// Dependencies: [109, 5, 19, 17, 6840, 6841, 502, 4494, 6658, 8669, 6659, 1074, 4815, 1374, 21, 3, 6661, 573, 8668, 1240, 4421, 6849, 4503, 5174, 1241, 5204, 1115, 10173, 1981, 5039, 6832, 2]
 
-// Module 11004 (GPlayManager)
+// Module 10172 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5111 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9513 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5174 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 8668 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7694 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 6840 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4452 */;
-import IAPStore from "IAPStore" /* 7514 */;
+import SubscriptionStore from "SubscriptionStore" /* 4494 */;
+import IAPStore from "IAPStore" /* 6658 */;
 
 require = fn;
 function handleConnectionStateUpdated(connectionState) {
@@ -90,7 +90,7 @@ let closure_35 = async function _handlePurchaseUpdated(arg0) {
               closure_130_11 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "PX_16", done: true };
+              return { value: "flex", done: true };
             }
           break;
           case 1:
@@ -424,7 +424,7 @@ let closure_37 = async function _handleDowngradeCommand(arg0) {
     }
     await "HermesInternal";
     downgradeCommand2 = downgradeCommand.downgradeCommand;
-    return "PX_16";
+    return "flex";
   })();
   iter.next();
   return iter;
@@ -681,7 +681,7 @@ let closure_43 = async function _handleAppStateUpdated(arg0) {
             state2 = state.state;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else {
           if (1 === tmp8) {
@@ -738,14 +738,14 @@ let closure_43 = async function _handleAppStateUpdated(arg0) {
 let closure_3 = ["succeededOnlyFields"];
 get_ActivityIndicator = fn(17);
 ({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
-const PremiumPlanPurchasedStore = fn(7695);
+const PremiumPlanPurchasedStore = fn(6841);
 ({ setPaymentSuccess: closure_7, showOldPaymentFlowSuccess: closure_8 } = PremiumPlanPurchasedStore);
-const useGPlayAnalyticsStore = fn(9514).useGPlayAnalyticsStore;
-let Constants = fn(7515);
+const useGPlayAnalyticsStore = fn(8669).useGPlayAnalyticsStore;
+let Constants = fn(6659);
 ({ GPlayConnectionState: map1, GPlayDowngradeCommand: closure_14, GPlayPurchaseState: closure_15 } = Constants);
 Constants = fn(1074);
 ({ AnalyticEvents: closure_16, AppStates: closure_17, PaymentGateways: closure_18 } = Constants);
-const OrderStatus = fn(4770).OrderStatus;
+const OrderStatus = fn(4815).OrderStatus;
 const SubscriptionPlanInfo = fn(1374).SubscriptionPlanInfo;
 const jsx = fn(21).jsx;
 let closure_22 = new LoggerDefault("GPlayManager.android");
@@ -756,7 +756,7 @@ let closure_26 = null;
 let closure_27 = null;
 let closure_28 = null;
 let closure_29 = null;
-const items = [fn(7517).ProductIds.PREMIUM_TIER_2_MONTHLY];
+const items = [fn(6661).ProductIds.PREMIUM_TIER_2_MONTHLY];
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/gplay/native/GPlayManager.android.tsx");
 

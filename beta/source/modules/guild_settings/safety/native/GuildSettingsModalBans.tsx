@@ -1,27 +1,27 @@
-// Module ID: 18091
-// Function ID: 18092
+// Module ID: 17455
+// Function ID: 17456
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 2063, 1372, 9888, 21, 4788, 576, 504, 7326, 2019, 5766, 5769, 9887, 5854, 1177, 5861, 1115, 7466, 4485, 7471, 7316, 18092, 7327, 8533, 7332, 7317, 2]
+// Dependencies: [32, 19, 17, 2067, 1372, 9049, 21, 4836, 576, 504, 6470, 2021, 5829, 5832, 9048, 5917, 1177, 5924, 1115, 6610, 4527, 6615, 6460, 17456, 6471, 7678, 6476, 6461, 2]
 // Exports: default
 
-// Module 18091 (GuildSettingsModalBans)
+// Module 17455 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5766 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5769 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7471 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 6615 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9888 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4788);
+const createStyles = fn(4836);
 let obj2 = { containerInner: { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 }, searchField: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
 obj2.searchField = { paddingVertical: nativeDefault.space.PX_16 };

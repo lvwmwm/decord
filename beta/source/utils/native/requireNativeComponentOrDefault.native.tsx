@@ -1,10 +1,10 @@
-// Module ID: 5209
-// Function ID: 5210
+// Module ID: 5272
+// Function ID: 5273
 // Name: requireNativeComponentOrDefault
 // Dependencies: [17, 3, 2]
 // Exports: default
 
-// Module 5209 (requireNativeComponentOrDefault)
+// Module 5272 (requireNativeComponentOrDefault)
 import LoggerDefault from "Logger" /* 3 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
