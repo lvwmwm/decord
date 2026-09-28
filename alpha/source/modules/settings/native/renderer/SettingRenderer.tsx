@@ -1,10 +1,10 @@
-// Module ID: 14251
-// Function ID: 14252
+// Module ID: 14250
+// Function ID: 14251
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2112, 14250, 2067, 11007, 21, 4836, 576, 1177, 5917, 1485, 14252, 504, 1115, 10278, 5896, 14254, 14255, 4832, 6622, 6621, 4550, 5997, 6000, 6610, 4527, 9442, 4801, 4802, 5919, 5279, 1882, 1364, 13998, 5435, 5281, 4531, 6418, 1876, 2]
+// Dependencies: [32, 109, 19, 17, 2112, 14249, 2067, 11007, 21, 4836, 576, 1177, 5917, 1485, 14251, 504, 1115, 10278, 5896, 14253, 14254, 4832, 6622, 6621, 4550, 5997, 6000, 6610, 4527, 9442, 4801, 4802, 5919, 5279, 1882, 1364, 13997, 5435, 5281, 4531, 6418, 1876, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 14251 (SettingRenderer)
+// Module 14250 (SettingRenderer)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
@@ -20,14 +20,14 @@ import Tracking from "Tracking" /* 6418 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
 import VolumeSliderDefault from "VolumeSlider" /* 9442 */;
 import ClydeIcon from "ClydeIcon" /* 10278 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14252 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 14254 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14255 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14251 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 14253 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14254 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14250 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 const GuildIconDefault = GuildIcon;
@@ -490,7 +490,7 @@ let closure_26 = noop.memo((arg0) => {
   ({ variant, useTrailing, useIsDisabled, useDescription, start, end, IconComponent } = arg0);
   let trailing;
   ({ setting, useTitle } = arg0);
-  let highlightSettingItem = trailing(14254).useHighlightSettingItem(setting);
+  let highlightSettingItem = trailing(14253).useHighlightSettingItem(setting);
   trailing = undefined;
   const title = useTitle();
   if (useTrailing != null) {

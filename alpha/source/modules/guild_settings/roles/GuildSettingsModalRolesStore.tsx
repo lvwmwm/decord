@@ -1,9 +1,9 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17404
+// Function ID: 17405
 // Name: GuildSettingsModalRolesStore
 // Dependencies: [2102, 2067, 1074, 11909, 4685, 1115, 1086, 504, 573, 2]
 
-// Module 17400 (GuildSettingsModalRolesStore)
+// Module 17404 (GuildSettingsModalRolesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;

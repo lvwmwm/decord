@@ -1,9 +1,9 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17043
+// Function ID: 17044
 // Name: VoicePanelControlsAppLauncher
 // Dependencies: [19, 2045, 11753, 1074, 21, 4836, 7297, 11754, 7715, 504, 38, 11762, 1110, 10785, 8712, 4566, 11564, 11763, 1115, 2]
 
-// Module 17039 (VoicePanelControlsAppLauncher)
+// Module 17043 (VoicePanelControlsAppLauncher)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

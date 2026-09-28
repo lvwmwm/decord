@@ -1,9 +1,9 @@
-// Module ID: 16669
-// Function ID: 16670
+// Module ID: 16673
+// Function ID: 16674
 // Name: IconLabelBlock
 // Dependencies: [109, 19, 17, 21, 4836, 576, 4540, 1177, 4832, 10389, 4685, 2]
 
-// Module 16669 (IconLabelBlock)
+// Module 16673 (IconLabelBlock)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import shared from "shared" /* 4685 */;

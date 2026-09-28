@@ -1,9 +1,9 @@
-// Module ID: 15472
-// Function ID: 15473
+// Module ID: 15470
+// Function ID: 15471
 // Name: SecureFramesVerifiedDevicesSetting
-// Dependencies: [7417, 1074, 11006, 1115, 15473, 2]
+// Dependencies: [7417, 1074, 11006, 1115, 15471, 2]
 
-// Module 15472 (SecureFramesVerifiedDevicesSetting)
+// Module 15470 (SecureFramesVerifiedDevicesSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;

@@ -1,10 +1,10 @@
-// Module ID: 14886
-// Function ID: 14887
+// Module ID: 14884
+// Function ID: 14885
 // Name: DisplayNameStylesFontOrder
 // Dependencies: [19, 1390, 1392, 9189, 2]
 // Exports: useVisibleFontOrder
 
-// Module 14886 (DisplayNameStylesFontOrder)
+// Module 14884 (DisplayNameStylesFontOrder)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

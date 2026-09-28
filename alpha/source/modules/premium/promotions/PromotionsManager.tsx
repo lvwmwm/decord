@@ -1,10 +1,10 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17240
+// Function ID: 17241
 // Name: PromotionsManager
-// Dependencies: [2112, 4494, 10128, 1074, 1085, 6539, 12961, 2]
+// Dependencies: [2112, 4494, 10128, 1074, 1085, 6539, 12960, 2]
 
-// Module 17236 (PromotionsManager)
-import PromotionsActionCreators from "PromotionsActionCreators" /* 12961 */;
+// Module 17240 (PromotionsManager)
+import PromotionsActionCreators from "PromotionsActionCreators" /* 12960 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 import PromotionsStore from "PromotionsStore" /* 10128 */;

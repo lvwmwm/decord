@@ -1,10 +1,10 @@
-// Module ID: 13330
-// Function ID: 13331
+// Module ID: 13329
+// Function ID: 13330
 // Name: VoiceMemberEmbeddedActivity
 // Dependencies: [32, 19, 17, 2044, 2045, 1372, 1181, 6572, 21, 1177, 4836, 576, 6589, 1370, 504, 4458, 8825, 1479, 5340, 8824, 5435, 1115, 4832, 8932, 5282, 2]
 // Exports: calculateActivityRowHeight, default
 
-// Module 13330 (VoiceMemberEmbeddedActivity)
+// Module 13329 (VoiceMemberEmbeddedActivity)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 8824 */;

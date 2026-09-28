@@ -1,13 +1,13 @@
 // Module ID: 7603
 // Function ID: 7604
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 6977, 6967, 2108, 1074, 21, 4836, 576, 7604, 7614, 7615, 6583, 6603, 1241, 7616, 4540, 6571, 4832, 1115, 7617, 10198, 504, 12742, 7611, 12743, 12748, 12749, 7618, 7703, 1177, 12750, 2]
+// Dependencies: [32, 19, 17, 6977, 6967, 2108, 1074, 21, 4836, 576, 7604, 7614, 7615, 6583, 6603, 1241, 7616, 4540, 6571, 4832, 1115, 7617, 10198, 504, 12741, 7611, 12742, 12747, 12748, 7618, 7703, 1177, 12749, 2]
 // Exports: default
 
 // Module 7603 (EditAvatarDecorationActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useShopProductItems from "useShopProductItems" /* 7616 */;
-import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 12743 */;
+import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 12742 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;
@@ -131,7 +131,7 @@ function AvatarDecorationSectionPreview(previewSkuId) {
   const tmp6 = closure_11;
   const tmp7 = View;
   obj3.size = tmp10(1177).AvatarSizes.EDIT_AVATAR_DECORATION;
-  const items1 = [closure_10(purchase(7703), obj3), closure_10(purchase(12750), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
+  const items1 = [closure_10(purchase(7703), obj3), closure_10(purchase(12749), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   obj.children = items1;
   return tmp6(tmp7, obj);
 }

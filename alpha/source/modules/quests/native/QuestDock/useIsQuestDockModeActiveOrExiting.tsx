@@ -1,10 +1,10 @@
-// Module ID: 14734
-// Function ID: 14735
+// Module ID: 14732
+// Function ID: 14733
 // Name: useIsQuestDockModeActiveOrExiting
 // Dependencies: [19, 14624, 14625, 4566, 5280, 7715, 2]
 // Exports: default
 
-// Module 14734 (useIsQuestDockModeActiveOrExiting)
+// Module 14732 (useIsQuestDockModeActiveOrExiting)
 import spring from "spring" /* 5280 */;
 import noop from "module_19" /* 19 */;
 

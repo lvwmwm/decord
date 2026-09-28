@@ -1,7 +1,7 @@
 // Module ID: 6833
 // Function ID: 6834
 // Name: UserSettingsPremium
-// Dependencies: [32, 19, 17, 1372, 4493, 4494, 6814, 1980, 6658, 1074, 1374, 21, 4836, 6834, 1613, 6583, 6603, 6415, 5298, 1241, 504, 1485, 2062, 6835, 6837, 573, 6839, 6820, 8668, 6867, 10170, 6866, 12891, 7506, 6411, 6416, 4488, 4503, 12892, 12932, 12934, 12935, 8663, 13005, 10979, 1364, 2]
+// Dependencies: [32, 19, 17, 1372, 4493, 4494, 6814, 1980, 6658, 1074, 1374, 21, 4836, 6834, 1613, 6583, 6603, 6415, 5298, 1241, 504, 1485, 2062, 6835, 6837, 573, 6839, 6820, 8668, 6867, 10170, 6866, 12890, 7506, 6411, 6416, 4488, 4503, 12891, 12931, 12933, 12934, 8663, 13004, 10979, 1364, 2]
 // Exports: default
 
 // Module 6833 (UserSettingsPremium)
@@ -14,7 +14,7 @@ import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 6834 */;
 import UserOfferActionCreators from "UserOfferActionCreators" /* 7506 */;
-import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 12891 */;
+import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 12890 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -235,7 +235,7 @@ export default function UserSettingsPremium(applicationId) {
     if (hasTier2Premium) {
       if (null == premiumFeatureCardOrder) {
         const obj20 = { onClose };
-        let tmp30Result4 = tmp30(tmp2(12935), obj20);
+        let tmp30Result4 = tmp30(tmp2(12934), obj20);
       }
       obj19.children = tmp30Result4;
       obj17.children = tmp30(tmp32, obj19);
@@ -258,17 +258,17 @@ export default function UserSettingsPremium(applicationId) {
           }
         }
         const obj22 = { style: tmp.subscriptionHeader, onClickManagePremiumGuild: handleLearnMorePremiumGuild, subscription: tmp9 };
-        tmp30Result5 = tmp30(tmp2(12892), obj22);
+        tmp30Result5 = tmp30(tmp2(12891), obj22);
       }
       obj21.subscriptionDetails = tmp30Result5;
       if (tmp30Result6) {
         const obj23 = { style: tmp.billingInfo, subscription: tmp9 };
-        tmp30Result6 = tmp30(tmp2(12932), obj23);
+        tmp30Result6 = tmp30(tmp2(12931), obj23);
       }
       obj21.billingInfo = tmp30Result6;
       if (stateFromStores3) {
         const obj24 = { style: tmp.accountCredit, currentSubscription: tmp9, entitlements: stateFromStores2, hasPremiumGroup: stateFromStores5 };
-        stateFromStores3 = tmp30(tmp2(12934), obj24);
+        stateFromStores3 = tmp30(tmp2(12933), obj24);
       }
       obj21.accountCredit = stateFromStores3;
       obj21.onClose = onClose;
@@ -280,8 +280,8 @@ export default function UserSettingsPremium(applicationId) {
       obj21.onPaymentSuccess = onPaymentSuccess;
       obj21.onPaymentDismiss = onPaymentDismiss;
       obj21.isFullScreenPresentation = isFullScreenPresentation;
-      tmp30Result4 = tmp30(tmp2(13005), obj21);
-      const tmp2Result = tmp2(13005);
+      tmp30Result4 = tmp30(tmp2(13004), obj21);
+      const tmp2Result = tmp2(13004);
     } else if (premiumTrialOfferPremiumType === TIER_0.TIER_0) {
       premiumFeatureCardOrder = tmp6(8663).PremiumFeatureCardOrder.TIER_0_LEADING;
     } else if (premiumTrialOfferPremiumType === tmp33.TIER_2) {

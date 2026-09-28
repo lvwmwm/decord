@@ -1,10 +1,10 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 13997
+// Function ID: 13998
 // Name: Slider
 // Dependencies: [19, 17, 21, 4836, 576, 4801, 4802, 7726, 2]
 // Exports: Slider
 
-// Module 13998 (Slider)
+// Module 13997 (Slider)
 import nativeDefault from "native" /* 576 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;

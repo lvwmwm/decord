@@ -1,10 +1,10 @@
-// Module ID: 12754
-// Function ID: 12755
+// Module ID: 12753
+// Function ID: 12754
 // Name: transformMessageAttachments
 // Dependencies: [7375, 1074, 1385, 10845, 4986, 7565, 1364, 7564, 1115, 7584, 7714, 5447, 7582, 2]
 // Exports: default
 
-// Module 12754 (transformMessageAttachments)
+// Module 12753 (transformMessageAttachments)
 import Constants from "Constants" /* 1074 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 4986 */;

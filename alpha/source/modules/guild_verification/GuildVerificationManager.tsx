@@ -1,9 +1,9 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17144
+// Function ID: 17145
 // Name: GuildVerificationManager
 // Dependencies: [1074, 12490, 1385, 7840, 12491, 6539, 2]
 
-// Module 17140 (GuildVerificationManager)
+// Module 17144 (GuildVerificationManager)
 import Constants from "Constants" /* 1074 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import GuildInviteFlags from "GuildInviteFlags" /* 7840 */;

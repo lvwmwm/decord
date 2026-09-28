@@ -1,10 +1,10 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14148
+// Function ID: 14149
 // Name: UserProfileEditBannerButton
 // Dependencies: [19, 17, 21, 4836, 576, 6583, 7635, 7624, 5435, 1115, 4832, 9713, 7676, 7692, 2]
 // Exports: default
 
-// Module 14149 (UserProfileEditBannerButton)
+// Module 14148 (UserProfileEditBannerButton)
 import nativeDefault from "native" /* 576 */;
 import Pressables from "Pressables" /* 5435 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;

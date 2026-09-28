@@ -1,17 +1,17 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 17232
+// Function ID: 17233
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 6957, 21, 4836, 576, 1115, 2487, 4527, 5039, 11395, 563, 14417, 7870, 7871, 5279, 4832, 14418, 5889, 5936, 10769, 2]
+// Dependencies: [19, 17, 6957, 21, 4836, 576, 1115, 2487, 4527, 5039, 11395, 563, 14416, 7870, 7871, 5279, 4832, 14417, 5889, 5936, 10769, 2]
 // Exports: default
 
-// Module 17228 (ConnectGuardianShareModal)
+// Module 17232 (ConnectGuardianShareModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import Modal from "Modal" /* 10769 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14417 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14416 */;
 import noop from "module_19" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
 
@@ -58,7 +58,7 @@ function ConnectGuardianShareScreen() {
   if (null != stateFromStores) {
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      let tmp11Result = tmp11(tmp2(14418).ConnectGuardianCard, obj11);
+      let tmp11Result = tmp11(tmp2(14417).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: null };
     const obj13 = { children: null };

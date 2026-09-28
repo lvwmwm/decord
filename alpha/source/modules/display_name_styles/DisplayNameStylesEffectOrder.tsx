@@ -1,10 +1,10 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14885
+// Function ID: 14886
 // Name: DisplayNameStylesEffectOrder
 // Dependencies: [19, 1390, 9189, 2]
 // Exports: useVisibleEffectOrder
 
-// Module 14887 (DisplayNameStylesEffectOrder)
+// Module 14885 (DisplayNameStylesEffectOrder)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

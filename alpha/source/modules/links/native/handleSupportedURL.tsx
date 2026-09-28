@@ -1,10 +1,10 @@
-// Module ID: 13396
-// Function ID: 13397
+// Module ID: 13395
+// Function ID: 13396
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5870, 6946, 6841, 12936, 502, 1074, 2052, 4878, 5045, 8507, 6958, 4815, 13397, 7417, 12173, 5039, 4693, 13398, 7624, 6800, 8200, 11270, 1876, 10974, 1241, 10976, 6666, 11080, 11392, 13405, 12205, 8513, 1981, 8508, 8506, 13407, 13409, 1610, 5451, 13413, 4525, 13415, 2067, 6760, 8981, 9080, 6735, 5038, 9243, 4692, 5768, 1101, 573, 5718, 1366, 9048, 13418, 13433, 1364, 13444, 9275, 11388, 13452, 5174, 13453, 6961, 6603, 9167, 13525, 7131, 5761, 10678, 10744, 10124, 13526, 5746, 8761, 8139, 8133, 4797, 2]
+// Dependencies: [109, 5, 5870, 6946, 6841, 12935, 502, 1074, 2052, 4878, 5045, 8507, 6958, 4815, 13396, 7417, 12173, 5039, 4693, 13397, 7624, 6800, 8200, 11270, 1876, 10974, 1241, 10976, 6666, 11080, 11392, 13404, 12205, 8513, 1981, 8508, 8506, 13406, 13408, 1610, 5451, 13412, 4525, 13414, 2067, 6760, 8981, 9080, 6735, 5038, 9243, 4692, 5768, 1101, 573, 5718, 1366, 9048, 13417, 13432, 1364, 13443, 9275, 11388, 13451, 5174, 13452, 6961, 6603, 9167, 13524, 7131, 5761, 10678, 10744, 10124, 13525, 5746, 8761, 8139, 8133, 4797, 2]
 // Exports: default
 
-// Module 13396 (handleSupportedURL)
+// Module 13395 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -26,12 +26,12 @@ import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils
 import QuestUtils from "QuestUtils" /* 10678 */;
 import BountyActionCreators from "BountyActionCreators" /* 10744 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 11270 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 13433 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 13525 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 13432 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 13524 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6946 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 12936 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 12935 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const ApplicationUtils = tmp4(8506);
@@ -48,7 +48,7 @@ const NativePermissionTypes = fn(5045).NativePermissionTypes;
 let closure_21 = fn(8507).OAUTH2_AUTHORIZE_MODAL_KEY;
 let closure_22 = fn(6958).FAMILY_CENTER_LINK_REQUEST_REGEX;
 let closure_23 = fn(4815).MobileWebRedirectCheckoutDeepLinkActions;
-const SHARE_SCREEN_MODAL_KEY = fn(13397).SHARE_SCREEN_MODAL_KEY;
+const SHARE_SCREEN_MODAL_KEY = fn(13396).SHARE_SCREEN_MODAL_KEY;
 const MobileUserSettings = fn(7417).MobileUserSettings;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/links/native/handleSupportedURL.tsx");
@@ -195,7 +195,7 @@ export default function handleSupportedURL(payload) {
     }
     if (flag2) {
       payload(inviteCode[28]).startDiceRoll(channelId2, diceCount, diceSides);
-      const obj22 = { guildId: guildId2, channelId: channelId2, messageId: "Array", navigationSettings: "<string:1056965175>" };
+      const obj22 = { guildId: guildId2, channelId: channelId2, messageId: "Array", navigationSettings: "a" };
       const obj23 = { safe, navigationReplace, waitForConnection, skipMessageFetch };
       obj22.navigationSettings = obj23;
       rootNavigationRef1(inviteCode[29])(obj22);
@@ -277,7 +277,7 @@ export default function handleSupportedURL(payload) {
         } else if (tmp.REMOTE_AUTH === type) {
           remoteAuthFingerprint = payload.remoteAuthFingerprint;
           pathname(null != remoteAuthFingerprint ? (() => {
-            ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13409, dependencyMap.paths), { remoteAuthFingerprint }, "REMOTE_AUTH_MODAL");
+            ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13408, dependencyMap.paths), { remoteAuthFingerprint }, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let obj = payload(inviteCode[39]);
             const tmp = inviteCode;
@@ -788,8 +788,8 @@ export default function handleSupportedURL(payload) {
                 pathname(() => {
                   if (null != payload.questId) {
                     const obj2 = { questId: arr.questId, event: constants.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT, sourceQuestContent: QuestContent.QuestContent.QUEST_EMBED_MOBILE, properties: null };
-                    const obj4 = { referrer_id: arr.referrerId };
-                    obj2.properties = obj4;
+                    const obj3 = { referrer_id: arr.referrerId };
+                    obj2.properties = obj3;
                     AnalyticsActions.trackQuestEvent(obj2);
                   }
                   let sort;
@@ -801,22 +801,22 @@ export default function handleSupportedURL(payload) {
                     filter = arr.filter;
                   }
                   const obj5 = { scrollToQuestId: payload.questId, sort: null, filter: null, fromContent: null };
-                  let tmp3 = null;
+                  let tmp9 = null;
                   if (null != sort) {
-                    tmp3 = null;
+                    tmp9 = null;
                     if ("" !== sort) {
-                      tmp3 = sort;
+                      tmp9 = sort;
                     }
                   }
-                  obj5.sort = tmp3;
-                  let tmp4 = null;
+                  obj5.sort = tmp9;
+                  let tmp10 = null;
                   if (null != filter) {
-                    tmp4 = null;
+                    tmp10 = null;
                     if ("" !== filter) {
-                      tmp4 = filter;
+                      tmp10 = filter;
                     }
                   }
-                  obj5.filter = tmp4;
+                  obj5.filter = tmp10;
                   obj5.fromContent = QuestContent.QuestContent.QUEST_SHARE_LINK;
                   QuestUtils.openQuestHome(obj5);
                 });

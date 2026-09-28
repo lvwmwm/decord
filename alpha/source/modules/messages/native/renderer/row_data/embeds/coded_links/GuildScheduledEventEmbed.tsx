@@ -1,10 +1,10 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12786
+// Function ID: 12787
 // Name: GuildScheduledEventEmbed
-// Dependencies: [32, 17, 6946, 2063, 2045, 2067, 4479, 1372, 10851, 2051, 7155, 4823, 7387, 7388, 9063, 8949, 8946, 9073, 1115, 7391, 9312, 7378, 576, 8810, 8983, 4989, 9059, 9072, 12788, 8981, 2059, 2]
+// Dependencies: [32, 17, 6946, 2063, 2045, 2067, 4479, 1372, 10851, 2051, 7155, 4823, 7387, 7388, 9063, 8949, 8946, 9073, 1115, 7391, 9312, 7378, 576, 8810, 8983, 4989, 9059, 9072, 12787, 8981, 2059, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 12787 (GuildScheduledEventEmbed)
+// Module 12786 (GuildScheduledEventEmbed)
 import util from "util" /* 1115 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7387 */;
@@ -17,7 +17,7 @@ import GuildEventUtils from "GuildEventUtils" /* 9059 */;
 import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 9063 */;
 import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9072 */;
 import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 9073 */;
-import _modDef12788 from "module_12788" /* 12788 */;
+import _modDef12787 from "module_12787" /* 12787 */;
 import _slicedToArray from "module_32" /* 32 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6946 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -150,7 +150,7 @@ function createGuildScheduledEventEmbed(type) {
   }
   obj8.badgeCount = toLocaleStringResult;
   const tmpResult4 = GuildScheduledEventManagerDefault;
-  obj8.badgeIcon = renderer_EmbedUtils.getAssetUriForEmbed(_modDef12788);
+  obj8.badgeIcon = renderer_EmbedUtils.getAssetUriForEmbed(_modDef12787);
   let assetUriForEmbed4;
   if (null != eventLocationIconSource) {
     assetUriForEmbed4 = tmp7(7388).getAssetUriForEmbed(eventLocationIconSource);

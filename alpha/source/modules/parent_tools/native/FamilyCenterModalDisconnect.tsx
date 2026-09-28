@@ -1,10 +1,10 @@
-// Module ID: 14458
-// Function ID: 14459
+// Module ID: 14457
+// Function ID: 14458
 // Name: FamilyCenterModalDisconnect
-// Dependencies: [32, 19, 17, 21, 4836, 576, 5039, 4678, 8105, 4527, 1115, 11395, 11398, 2487, 7870, 7871, 14459, 6413, 4832, 14411, 5279, 8732, 11405, 5745, 5281, 5936, 10769, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 5039, 4678, 8105, 4527, 1115, 11395, 11398, 2487, 7870, 7871, 14458, 6413, 4832, 14410, 5279, 8732, 11405, 5745, 5281, 5936, 10769, 2]
 // Exports: default
 
-// Module 14458 (FamilyCenterModalDisconnect)
+// Module 14457 (FamilyCenterModalDisconnect)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
@@ -13,7 +13,7 @@ import UserUtilsDefault from "UserUtils" /* 4678 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import _modDef6413 from "module_6413" /* 6413 */;
-import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 14459 */;
+import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 14458 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -100,7 +100,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   let tmp28Result = requiresParentalConsent;
   if (requiresParentalConsent) {
     const obj13 = { style: tmp.warning, text: ageSpecificText1 };
-    tmp28Result = tmp28(tmp3(14411), obj13);
+    tmp28Result = tmp28(tmp3(14410), obj13);
   }
   const obj14 = { children: null };
   items4[1] = tmp28Result;

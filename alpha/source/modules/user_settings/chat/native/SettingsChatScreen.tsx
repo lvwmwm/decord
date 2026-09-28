@@ -1,16 +1,16 @@
-// Module ID: 15010
-// Function ID: 15011
+// Module ID: 15008
+// Function ID: 15009
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1372, 4494, 7417, 1074, 21, 4836, 576, 1485, 563, 4488, 4832, 1115, 5919, 1177, 9860, 6411, 11006, 14248, 2]
+// Dependencies: [19, 17, 1372, 4494, 7417, 1074, 21, 4836, 576, 1485, 563, 4488, 4832, 1115, 5919, 1177, 9860, 6411, 11006, 14247, 2]
 // Exports: default
 
-// Module 15010 (SettingsChatScreen)
+// Module 15008 (SettingsChatScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
 import _modDef9860 from "module_9860" /* 9860 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
-import SettingLayoutDefault from "SettingLayout" /* 14248 */;
+import SettingLayoutDefault from "SettingLayout" /* 14247 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;

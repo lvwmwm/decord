@@ -1,10 +1,10 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13039
+// Function ID: 13040
 // Name: UserSettingsPremiumGuildSubscriptions
-// Dependencies: [19, 17, 1372, 4490, 4729, 4493, 4494, 1074, 1374, 21, 4836, 5753, 4540, 4732, 6675, 5174, 6411, 6416, 4832, 1115, 2111, 13041, 1380, 13055, 13057, 13059, 13063, 12940, 6813, 7509, 13002, 504, 1485, 6824, 1610, 2]
+// Dependencies: [19, 17, 1372, 4490, 4729, 4493, 4494, 1074, 1374, 21, 4836, 5753, 4540, 4732, 6675, 5174, 6411, 6416, 4832, 1115, 2111, 13040, 1380, 13054, 13056, 13058, 13062, 12939, 6813, 7509, 13001, 504, 1485, 6824, 1610, 2]
 // Exports: default
 
-// Module 13040 (UserSettingsPremiumGuildSubscriptions)
+// Module 13039 (UserSettingsPremiumGuildSubscriptions)
 import util from "util" /* 1115 */;
 import user from "user" /* 1380 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
@@ -14,11 +14,11 @@ import actions_BillingActionCreators from "actions/BillingActionCreators" /* 517
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6675 */;
-import GuildBoostSlotsInventoryDefault from "GuildBoostSlotsInventory" /* 13041 */;
-import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 13055 */;
-import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 13057 */;
-import TopPattern from "TopPattern" /* 13059 */;
-import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 13063 */;
+import GuildBoostSlotsInventoryDefault from "GuildBoostSlotsInventory" /* 13040 */;
+import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 13054 */;
+import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 13056 */;
+import TopPattern from "TopPattern" /* 13058 */;
+import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 13062 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import BillingInfoStore from "BillingInfoStore" /* 4490 */;
@@ -164,8 +164,8 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   const tmp3 = flag(6813)({ forceFetch: true });
   isInReverseTrial = require("ReverseTrialUtils").useIsInReverseTrial();
   const tmpResult = require("ReverseTrialUtils");
-  fpDurationText = flag(13002)(endsAt, tmp(13002).CountDownMessageTypes.LONG_TIME_LEFT);
-  const tmp4 = flag(13002);
+  fpDurationText = flag(13001)(endsAt, tmp(13001).CountDownMessageTypes.LONG_TIME_LEFT);
+  const tmp4 = flag(13001);
   const items = [GuildBoostSlotStore, BillingInfoStore, SubscriptionPlanStore, UserStore];
   const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => {
     const obj = { hasFetchedSlots: GuildBoostSlotStore.hasFetched, hasSlots: Object.keys(GuildBoostSlotStore.boostSlots).length > 0, hasAvailableSlots: null, hasFetchedSubscriptionPlans: null, isFetchingSubscriptionPlans: null, isFetchingPaymentSources: null, shouldFetchSubscriptionPlans: null, fractionalState: null, isInReverseTrial: null, fpDurationText: null, premiumGroupRole: null };

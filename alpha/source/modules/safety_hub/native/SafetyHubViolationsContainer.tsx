@@ -1,10 +1,10 @@
-// Module ID: 14308
-// Function ID: 14309
+// Module ID: 14307
+// Function ID: 14308
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 7881, 7868, 1074, 21, 4836, 576, 9203, 8048, 4832, 1115, 13114, 10615, 7867, 11, 14309, 7869, 5039, 11357, 1981, 11361, 504, 1241, 11359, 2]
+// Dependencies: [32, 19, 17, 7881, 7868, 1074, 21, 4836, 576, 9203, 8048, 4832, 1115, 13113, 10615, 7867, 11, 14308, 7869, 5039, 11357, 1981, 11361, 504, 1241, 11359, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 14308 (SafetyHubViolationsContainer)
+// Module 14307 (SafetyHubViolationsContainer)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -59,7 +59,7 @@ function SafetyHubViolationsHeader(count) {
   obj4.children = items4;
   items2[1] = closure_1_12(timestampProducer, obj4);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(13114).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(13113).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp7(10615).ChevronSmallDownIcon;
   }

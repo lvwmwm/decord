@@ -1,9 +1,9 @@
-// Module ID: 15869
-// Function ID: 15870
+// Module ID: 15867
+// Function ID: 15868
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 6947, 4469, 4851, 5017, 4860, 9577, 1074, 21, 576, 5364, 5881, 1981, 5043, 8943, 15867, 15870, 8833, 504, 15860, 10339, 4823, 7393, 9060, 1241, 15861, 15750, 10374, 1115, 4981, 15764, 15755, 11541, 2]
+// Dependencies: [5, 19, 17, 6947, 4469, 4851, 5017, 4860, 9577, 1074, 21, 576, 5364, 5881, 1981, 5043, 8943, 15865, 15868, 8833, 504, 15858, 10339, 4823, 7393, 9060, 1241, 15859, 15748, 10374, 1115, 4981, 15762, 15753, 11541, 2]
 
-// Module 15869 (VoiceChannel)
+// Module 15867 (VoiceChannel)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9060 */;

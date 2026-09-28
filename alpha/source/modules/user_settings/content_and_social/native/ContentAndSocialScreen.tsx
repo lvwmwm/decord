@@ -1,17 +1,17 @@
-// Module ID: 15486
-// Function ID: 15487
+// Module ID: 15484
+// Function ID: 15485
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 7417, 1074, 21, 4836, 576, 1115, 2111, 15487, 14352, 12177, 15492, 6719, 11006, 14350, 14248, 15493, 4832, 2]
+// Dependencies: [32, 19, 17, 7417, 1074, 21, 4836, 576, 1115, 2111, 15485, 14351, 12177, 15490, 6719, 11006, 14349, 14247, 15491, 4832, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 15486 (ContentAndSocialScreen)
+// Module 15484 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12177 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15493 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15491 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -120,7 +120,7 @@ export const DiscordPermissionsPage = function DiscordPermissionsPage() {
     let tmp9 = items6;
     if (!allServersOptionSelected) {
       const items11 = [];
-      HermesBuiltin.arraySpread(tmp2(15487).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items6, 0));
+      HermesBuiltin.arraySpread(tmp2(15485).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items6, 0));
       tmp9 = items11;
       const arraySpreadResult = HermesBuiltin.arraySpread(items6, 0);
     }
@@ -128,7 +128,7 @@ export const DiscordPermissionsPage = function DiscordPermissionsPage() {
     let tmp15;
     if (tmp7) {
       if (tmp8) {
-        tmp15 = React7(tmp2(14352).MessageRequestsNotice, {});
+        tmp15 = React7(tmp2(14351).MessageRequestsNotice, {});
       }
     }
     obj14.subLabel = tmp15;
@@ -215,7 +215,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     const tmp2Result = tmp2(2111);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React7(tmp2(14248), obj);
+    tmp7 = React7(tmp2(14247), obj);
   }
   return tmp7;
 };

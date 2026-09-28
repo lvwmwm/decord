@@ -1,9 +1,9 @@
-// Module ID: 14746
-// Function ID: 14747
+// Module ID: 14744
+// Function ID: 14745
 // Name: QuestDockLimitedTimePill
 // Dependencies: [19, 17, 21, 576, 4836, 11100, 4832, 1115, 2]
 
-// Module 14746 (QuestDockLimitedTimePill)
+// Module 14744 (QuestDockLimitedTimePill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;

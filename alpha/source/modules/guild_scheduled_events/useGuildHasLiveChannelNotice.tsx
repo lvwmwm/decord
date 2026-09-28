@@ -1,10 +1,10 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 15816
+// Function ID: 15817
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 5730, 2050, 4858, 2045, 4469, 4860, 15819, 2051, 1085, 15820, 504, 8943, 15821, 5743, 5737, 2]
+// Dependencies: [19, 5730, 2050, 4858, 2045, 4469, 4860, 15817, 2051, 1085, 15818, 504, 8943, 15819, 5743, 5737, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 15818 (useGuildHasLiveChannelNotice)
+// Module 15816 (useGuildHasLiveChannelNotice)
 import StageChannelParticipants from "StageChannelParticipants" /* 5737 */;
 import noop from "module_19" /* 19 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5730 */;
@@ -13,7 +13,7 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
-import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 15819 */;
+import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 15817 */;
 
 require = fn;
 let closure_11 = fn(2051).GuildScheduledEventEntityTypes;

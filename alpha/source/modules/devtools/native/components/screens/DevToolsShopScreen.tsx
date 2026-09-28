@@ -1,10 +1,10 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15318
+// Function ID: 15319
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 4835, 21, 4836, 576, 6402, 504, 15174, 2029, 5279, 5999, 5917, 6622, 15294, 6621, 2]
+// Dependencies: [19, 17, 4835, 21, 4836, 576, 6402, 504, 15172, 2029, 5279, 5999, 5917, 6622, 15292, 6621, 2]
 // Exports: default
 
-// Module 15320 (DevToolsShopScreen)
+// Module 15318 (DevToolsShopScreen)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
@@ -14,8 +14,8 @@ import TableRowGroup from "TableRowGroup" /* 5999 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;
 import TableSwitchRow from "TableSwitchRow" /* 6621 */;
 import FormSwitch from "FormSwitch" /* 6622 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15174 */;
-import DevSettingsActions from "DevSettingsActions" /* 15294 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15172 */;
+import DevSettingsActions from "DevSettingsActions" /* 15292 */;
 import noop from "module_19" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 4835 */;
 

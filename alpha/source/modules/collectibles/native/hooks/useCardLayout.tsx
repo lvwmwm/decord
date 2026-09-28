@@ -1,10 +1,10 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15442
+// Function ID: 15443
 // Name: useCardLayout
 // Dependencies: [8226, 1479, 2]
 // Exports: useCardLayout
 
-// Module 15444 (useCardLayout)
+// Module 15442 (useCardLayout)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8226 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ export const useCardLayout = function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    const obj2 = { columns: num, cardWidth: "Array", rowWidth: "isArray" };
+    const obj2 = { columns: num, cardWidth: "Array", rowWidth: "text" };
     return obj2;
   } else {
     let num2 = 2;

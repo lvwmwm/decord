@@ -1,9 +1,9 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 13929
+// Function ID: 13930
 // Name: native
-// Dependencies: [4551, 5290, 5915, 13931, 2, 4541, 4542, 4548, 4546, 4549, 4550, 4534, 4536, 4537, 4538, 4540, 4611, 5280, 5284, 4837, 4840, 4839, 9535, 4836, 5263, 13932, 13933, 13934, 13935, 4832, 4842, 4841, 13936, 13940, 4531, 4532, 9424, 6571, 7615, 6574, 9691, 6618, 6619, 8996, 6570, 10464, 13945, 6575, 9037, 6617, 6616, 6620, 5262, 13946, 13948, 13950, 13952, 13954, 9404, 13956, 13958, 13960, 13962, 13964, 13966, 13968, 13970, 13972, 13974, 5281, 5297, 13976, 13978, 7363, 5291, 9345, 8377, 13977, 5745, 8732, 5929, 6001, 6622, 13524, 5917, 5924, 5926, 6621, 5999, 5918, 5923, 5997, 5916, 6000, 8055, 5209, 5205, 5919, 9084, 12113, 9083, 10902, 12111, 12275, 13979, 13984, 7360, 7358, 13985, 7359, 13987, 13988, 6025, 6040, 9036, 6039, 6471, 6031, 13989, 6507, 6506, 6024, 6385, 10590, 10594, 10589, 10597, 13990, 9692, 6578, 6577, 5279, 5267, 8056, 6421, 13991, 6422, 13992, 5994, 5936, 6456, 6795, 1485, 6462, 13993, 5942, 10383, 6461, 6460, 10769, 13994, 10459, 7871, 13996, 11405, 10458, 7870, 13995, 5998, 12583, 13997, 12115, 10466, 10467, 13998, 5889]
+// Dependencies: [4551, 5290, 5915, 13930, 2, 4541, 4542, 4548, 4546, 4549, 4550, 4534, 4536, 4537, 4538, 4540, 4611, 5280, 5284, 4837, 4840, 4839, 9535, 4836, 5263, 13931, 13932, 13933, 13934, 4832, 4842, 4841, 13935, 13939, 4531, 4532, 9424, 6571, 7615, 6574, 9691, 6618, 6619, 8996, 6570, 10464, 13944, 6575, 9037, 6617, 6616, 6620, 5262, 13945, 13947, 13949, 13951, 13953, 9404, 13955, 13957, 13959, 13961, 13963, 13965, 13967, 13969, 13971, 13973, 5281, 5297, 13975, 13977, 7363, 5291, 9345, 8377, 13976, 5745, 8732, 5929, 6001, 6622, 13523, 5917, 5924, 5926, 6621, 5999, 5918, 5923, 5997, 5916, 6000, 8055, 5209, 5205, 5919, 9084, 12113, 9083, 10902, 12111, 12275, 13978, 13983, 7360, 7358, 13984, 7359, 13986, 13987, 6025, 6040, 9036, 6039, 6471, 6031, 13988, 6507, 6506, 6024, 6385, 10590, 10594, 10589, 10597, 13989, 9692, 6578, 6577, 5279, 5267, 8056, 6421, 13990, 6422, 13991, 5994, 5936, 6456, 6795, 1485, 6462, 13992, 5942, 10383, 6461, 6460, 10769, 13993, 10459, 7871, 13995, 11405, 10458, 7870, 13994, 5998, 12601, 13996, 12115, 10466, 10467, 13997, 5889]
 
-// Module 13930 (native)
+// Module 13929 (native)
 import useNavigation from "useNavigation" /* 1485 */;
 import useToken from "useToken" /* 4531 */;
 import SemanticColorContext from "SemanticColorContext" /* 4532 */;
@@ -126,49 +126,49 @@ import Tabs_Tabs from "Tabs/Tabs" /* 12111 */;
 import SegmentedControlPages from "SegmentedControlPages" /* 12113 */;
 import GuildIconPile from "GuildIconPile" /* 12115 */;
 import TabsGradientDefault from "TabsGradient" /* 12275 */;
-import AvatarPile from "AvatarPile" /* 12583 */;
-import RowGroup from "RowGroup" /* 13524 */;
-import BackdropConstants from "BackdropConstants" /* 13931 */;
-import Menu from "Menu" /* 13932 */;
-import MenuGroup from "MenuGroup" /* 13933 */;
-import MenuItem from "MenuItem" /* 13934 */;
-import MenuPopout from "MenuPopout" /* 13935 */;
-import AILoader from "AILoader" /* 13936 */;
-import AIShimmer from "AIShimmer" /* 13940 */;
-import ActionSheetPresenter from "ActionSheetPresenter" /* 13945 */;
-import MessagesTabLottie from "MessagesTabLottie" /* 13946 */;
-import ServerTabLottie from "ServerTabLottie" /* 13948 */;
-import YouTabLottie from "YouTabLottie" /* 13950 */;
-import NotificationsTabLottie from "NotificationsTabLottie" /* 13952 */;
-import MicrophoneLottie from "MicrophoneLottie" /* 13954 */;
-import NitroGem1Lottie from "NitroGem1Lottie" /* 13956 */;
-import NitroGem2Lottie from "NitroGem2Lottie" /* 13958 */;
-import NitroGem3Lottie from "NitroGem3Lottie" /* 13960 */;
-import NitroGem6Lottie from "NitroGem6Lottie" /* 13962 */;
-import NitroGem9Lottie from "NitroGem9Lottie" /* 13964 */;
-import NitroGem12Lottie from "NitroGem12Lottie" /* 13966 */;
-import NitroGem15Lottie from "NitroGem15Lottie" /* 13968 */;
-import NitroGem18Lottie from "NitroGem18Lottie" /* 13970 */;
-import NitroGem24Lottie from "NitroGem24Lottie" /* 13972 */;
-import MessageRequestLottie from "MessageRequestLottie" /* 13974 */;
-import ToggleButton from "ToggleButton" /* 13976 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 13977 */;
-import ToggleIconButton from "ToggleIconButton" /* 13978 */;
-import TagGroup from "TagGroup" /* 13979 */;
-import ContextMenuItem from "ContextMenuItem" /* 13984 */;
-import ContextMenuContainer from "ContextMenuContainer" /* 13985 */;
-import useManaTextMigrationHighlightRestartNotice from "useManaTextMigrationHighlightRestartNotice" /* 13987 */;
-import Toast_Toast from "Toast/Toast" /* 13988 */;
-import GhostInput from "GhostInput" /* 13989 */;
-import CoachmarkConstants from "CoachmarkConstants" /* 13990 */;
-import useAccessibilityNativeStackFocusTracking from "useAccessibilityNativeStackFocusTracking" /* 13991 */;
-import createAccessibleNativeStackNavigator from "createAccessibleNativeStackNavigator" /* 13992 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 13993 */;
-import StepModal from "StepModal" /* 13994 */;
-import ModalStepIndicator from "ModalStepIndicator" /* 13995 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 13996 */;
-import AvatarDuoPile from "AvatarDuoPile" /* 13997 */;
-import Slider from "Slider" /* 13998 */;
+import AvatarPile from "AvatarPile" /* 12601 */;
+import RowGroup from "RowGroup" /* 13523 */;
+import BackdropConstants from "BackdropConstants" /* 13930 */;
+import Menu from "Menu" /* 13931 */;
+import MenuGroup from "MenuGroup" /* 13932 */;
+import MenuItem from "MenuItem" /* 13933 */;
+import MenuPopout from "MenuPopout" /* 13934 */;
+import AILoader from "AILoader" /* 13935 */;
+import AIShimmer from "AIShimmer" /* 13939 */;
+import ActionSheetPresenter from "ActionSheetPresenter" /* 13944 */;
+import MessagesTabLottie from "MessagesTabLottie" /* 13945 */;
+import ServerTabLottie from "ServerTabLottie" /* 13947 */;
+import YouTabLottie from "YouTabLottie" /* 13949 */;
+import NotificationsTabLottie from "NotificationsTabLottie" /* 13951 */;
+import MicrophoneLottie from "MicrophoneLottie" /* 13953 */;
+import NitroGem1Lottie from "NitroGem1Lottie" /* 13955 */;
+import NitroGem2Lottie from "NitroGem2Lottie" /* 13957 */;
+import NitroGem3Lottie from "NitroGem3Lottie" /* 13959 */;
+import NitroGem6Lottie from "NitroGem6Lottie" /* 13961 */;
+import NitroGem9Lottie from "NitroGem9Lottie" /* 13963 */;
+import NitroGem12Lottie from "NitroGem12Lottie" /* 13965 */;
+import NitroGem15Lottie from "NitroGem15Lottie" /* 13967 */;
+import NitroGem18Lottie from "NitroGem18Lottie" /* 13969 */;
+import NitroGem24Lottie from "NitroGem24Lottie" /* 13971 */;
+import MessageRequestLottie from "MessageRequestLottie" /* 13973 */;
+import ToggleButton from "ToggleButton" /* 13975 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 13976 */;
+import ToggleIconButton from "ToggleIconButton" /* 13977 */;
+import TagGroup from "TagGroup" /* 13978 */;
+import ContextMenuItem from "ContextMenuItem" /* 13983 */;
+import ContextMenuContainer from "ContextMenuContainer" /* 13984 */;
+import useManaTextMigrationHighlightRestartNotice from "useManaTextMigrationHighlightRestartNotice" /* 13986 */;
+import Toast_Toast from "Toast/Toast" /* 13987 */;
+import GhostInput from "GhostInput" /* 13988 */;
+import CoachmarkConstants from "CoachmarkConstants" /* 13989 */;
+import useAccessibilityNativeStackFocusTracking from "useAccessibilityNativeStackFocusTracking" /* 13990 */;
+import createAccessibleNativeStackNavigator from "createAccessibleNativeStackNavigator" /* 13991 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 13992 */;
+import StepModal from "StepModal" /* 13993 */;
+import ModalStepIndicator from "ModalStepIndicator" /* 13994 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 13995 */;
+import AvatarDuoPile from "AvatarDuoPile" /* 13996 */;
+import Slider from "Slider" /* 13997 */;
 import size from "module_2" /* 2 */;
 
 const AnimatedEnterExitItemDefault = AnimatedEnterExitItem;

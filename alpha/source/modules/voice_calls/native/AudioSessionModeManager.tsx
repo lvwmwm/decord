@@ -1,10 +1,10 @@
-// Module ID: 17095
-// Function ID: 17096
+// Module ID: 17099
+// Function ID: 17100
 // Name: AudioSessionModeManager
-// Dependencies: [17, 2044, 5733, 4858, 502, 2045, 1993, 2099, 4855, 1980, 1074, 1364, 17096, 6539, 2]
+// Dependencies: [17, 2044, 5733, 4858, 502, 2045, 1993, 2099, 4855, 1980, 1074, 1364, 17100, 6539, 2]
 
-// Module 17095 (AudioSessionModeManager)
-import VoicePermissionManager from "VoicePermissionManager" /* 17096 */;
+// Module 17099 (AudioSessionModeManager)
+import VoicePermissionManager from "VoicePermissionManager" /* 17100 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 5733 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;

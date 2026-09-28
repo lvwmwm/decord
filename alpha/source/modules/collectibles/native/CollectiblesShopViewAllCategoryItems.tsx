@@ -1,9 +1,9 @@
-// Module ID: 15464
-// Function ID: 15465
+// Module ID: 15462
+// Function ID: 15463
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [19, 17, 1076, 1074, 21, 4836, 576, 10544, 6583, 6603, 1613, 14604, 4566, 5280, 1241, 7009, 8229, 10282, 15465, 15466, 15445, 1115, 2]
+// Dependencies: [19, 17, 1076, 1074, 21, 4836, 576, 10544, 6583, 6603, 1613, 14604, 4566, 5280, 1241, 7009, 8229, 10282, 15463, 15464, 15443, 1115, 2]
 
-// Module 15464 (CollectiblesShopViewAllCategoryItems)
+// Module 15462 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import spring from "spring" /* 5280 */;

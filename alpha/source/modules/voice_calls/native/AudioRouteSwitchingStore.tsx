@@ -1,9 +1,9 @@
-// Module ID: 16941
-// Function ID: 16942
+// Module ID: 16945
+// Function ID: 16946
 // Name: AudioRouteSwitchingStore
 // Dependencies: [17, 2045, 4859, 9098, 9099, 504, 573, 2]
 
-// Module 16941 (AudioRouteSwitchingStore)
+// Module 16945 (AudioRouteSwitchingStore)
 import _mod17 from "module_17" /* 17 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

@@ -1,13 +1,13 @@
-// Module ID: 12852
-// Function ID: 12853
+// Module ID: 12851
+// Function ID: 12852
 // Name: ForumChannelHeader
-// Dependencies: [19, 17, 7289, 21, 4836, 12853, 12835, 12854, 2]
+// Dependencies: [19, 17, 7289, 21, 4836, 12852, 12834, 12853, 2]
 
-// Module 12852 (ForumChannelHeader)
-import GuildChannelHeaderDefault from "GuildChannelHeader" /* 12854 */;
+// Module 12851 (ForumChannelHeader)
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 12853 */;
 import noop from "module_19" /* 19 */;
 
-const ForumChannelSearch = tmp2(12835);
+const ForumChannelSearch = tmp2(12834);
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;

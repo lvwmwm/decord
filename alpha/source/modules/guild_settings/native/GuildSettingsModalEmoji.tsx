@@ -1,22 +1,22 @@
-// Module ID: 17358
-// Function ID: 17359
+// Module ID: 17362
+// Function ID: 17363
 // Name: GuildSettingsModalEmoji
-// Dependencies: [32, 19, 17, 2067, 17359, 21, 12, 9797, 4836, 576, 1115, 5776, 4728, 504, 8952, 4832, 17361, 17365, 1177, 17366, 5889, 6461, 1485, 5936, 2]
+// Dependencies: [32, 19, 17, 2067, 17363, 21, 12, 9797, 4836, 576, 1115, 5776, 4728, 504, 8952, 4832, 17365, 17369, 1177, 17370, 5889, 6461, 1485, 5936, 2]
 // Exports: computeSectionItem, default
 
-// Module 17358 (GuildSettingsModalEmoji)
+// Module 17362 (GuildSettingsModalEmoji)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5776 */;
-import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 17361 */;
-import HeaderRow from "HeaderRow" /* 17365 */;
-import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 17366 */;
+import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 17365 */;
+import HeaderRow from "HeaderRow" /* 17369 */;
+import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 17370 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17359 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17363 */;
 import apply_mod from "module_12" /* 12 */;
 
 const require = globalThis.__r;

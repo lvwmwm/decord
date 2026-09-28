@@ -1,9 +1,9 @@
-// Module ID: 13365
-// Function ID: 13366
+// Module ID: 13364
+// Function ID: 13365
 // Name: VoiceDuration
 // Dependencies: [4865, 4907, 2]
 
-// Module 13365 (VoiceDuration)
+// Module 13364 (VoiceDuration)
 import TimeUtils from "TimeUtils" /* 4865 */;
 import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4907 */;
 import size from "module_2" /* 2 */;

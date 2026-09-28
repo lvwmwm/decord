@@ -1,10 +1,10 @@
-// Module ID: 16889
-// Function ID: 16890
+// Module ID: 16893
+// Function ID: 16894
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 4825, 1182, 16881, 6572, 1479, 504, 4685, 2026, 6756, 2]
+// Dependencies: [5, 19, 4825, 1182, 16885, 6572, 1479, 504, 4685, 2026, 6756, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 16889 (SoundboardHooks)
+// Module 16893 (SoundboardHooks)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 const require = fn;
-const SoundboardStyleConstants = fn(16881);
+const SoundboardStyleConstants = fn(16885);
 ({ SOUNDS_PER_ROW: closure_7, SOUND_ROW_PADDING: closure_8 } = SoundboardStyleConstants);
 const ACTION_SHEET_MAX_WIDTH = fn(6572).ACTION_SHEET_MAX_WIDTH;
 const size = fn(2);

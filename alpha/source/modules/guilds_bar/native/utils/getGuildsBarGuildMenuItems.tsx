@@ -1,15 +1,15 @@
-// Module ID: 15924
-// Function ID: 15925
+// Module ID: 15922
+// Function ID: 15923
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 2067, 5017, 1074, 9605, 6502, 1115, 13506, 1981, 9067, 6540, 6798, 13453, 11866, 4800, 9600, 11867, 6535, 2]
+// Dependencies: [5, 2067, 5017, 1074, 9605, 6502, 1115, 13505, 1981, 9067, 6540, 6798, 13452, 11866, 4800, 9600, 11867, 6535, 2]
 // Exports: default
 
-// Module 15924 (getGuildsBarGuildMenuItems)
+// Module 15922 (getGuildsBarGuildMenuItems)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 13453 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 13452 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;

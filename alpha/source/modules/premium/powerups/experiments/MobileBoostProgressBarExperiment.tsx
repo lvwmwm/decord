@@ -1,10 +1,10 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 15789
+// Function ID: 15790
 // Name: MobileBoostProgressBarExperiment
 // Dependencies: [1435, 2]
 // Exports: getMobileBoostProgressBarEnabled, useMobileBoostProgressBarEnabled
 
-// Module 15791 (MobileBoostProgressBarExperiment)
+// Module 15789 (MobileBoostProgressBarExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

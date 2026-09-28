@@ -1,14 +1,14 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 16185
+// Function ID: 16186
 // Name: UnavailableNotice
-// Dependencies: [19, 17, 21, 4836, 576, 5899, 15877, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 5899, 15875, 4832, 2]
 // Exports: default
 
-// Module 16189 (UnavailableNotice)
+// Module 16185 (UnavailableNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import FastImageDefault from "FastImage" /* 5899 */;
-import _modDef15877 from "module_15877" /* 15877 */;
+import _modDef15875 from "module_15875" /* 15875 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -36,7 +36,7 @@ export default function UnavailableNotice(brightTitle) {
   ({ container: arr[0], unavailableContainer: arr[1] } = tmp);
   obj.style = items;
   const obj2 = { style: tmp.unavailableInfo, children: null };
-  const obj3 = { source: _modDef15877 };
+  const obj3 = { source: _modDef15875 };
   const items1 = [React4(FastImageDefault, obj3), , ];
   const items2 = [tmp.joinCtaTitle, ];
   if (brightTitle) {

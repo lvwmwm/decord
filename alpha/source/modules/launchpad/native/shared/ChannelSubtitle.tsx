@@ -1,13 +1,13 @@
-// Module ID: 16809
-// Function ID: 16810
+// Module ID: 16813
+// Function ID: 16814
 // Name: ChannelSubtitle
-// Dependencies: [19, 9577, 21, 16475, 4832, 15860, 9575, 2]
+// Dependencies: [19, 9577, 21, 16479, 4832, 15858, 9575, 2]
 // Exports: renderChannelSubtitle
 
-// Module 16809 (ChannelSubtitle)
+// Module 16813 (ChannelSubtitle)
 import Text_Text from "Text/Text" /* 4832 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 15860 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16475 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 15858 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16479 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

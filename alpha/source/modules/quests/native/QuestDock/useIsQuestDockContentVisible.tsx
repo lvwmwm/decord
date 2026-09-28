@@ -1,12 +1,12 @@
-// Module ID: 14739
-// Function ID: 14740
+// Module ID: 14737
+// Function ID: 14738
 // Name: useIsQuestDockContentVisible
-// Dependencies: [19, 14622, 5756, 14713, 504, 2]
+// Dependencies: [19, 14622, 5756, 14711, 504, 2]
 // Exports: default
 
-// Module 14739 (useIsQuestDockContentVisible)
+// Module 14737 (useIsQuestDockContentVisible)
 import initialize from "initialize" /* 504 */;
-import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 14713 */;
+import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 14711 */;
 import noop from "module_19" /* 19 */;
 import QuestDockStore from "QuestDockStore" /* 14622 */;
 

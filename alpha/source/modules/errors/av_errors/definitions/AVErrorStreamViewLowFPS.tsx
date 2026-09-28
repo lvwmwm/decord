@@ -1,9 +1,9 @@
-// Module ID: 17660
-// Function ID: 17661
+// Module ID: 17664
+// Function ID: 17665
 // Name: AVErrorStreamViewLowFPS
-// Dependencies: [4852, 4858, 502, 4875, 1074, 17661, 4888, 8896, 8875, 17658, 2]
+// Dependencies: [4852, 4858, 502, 4875, 1074, 17665, 4888, 8896, 8875, 17662, 2]
 
-// Module 17660 (AVErrorStreamViewLowFPS)
+// Module 17664 (AVErrorStreamViewLowFPS)
 import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;

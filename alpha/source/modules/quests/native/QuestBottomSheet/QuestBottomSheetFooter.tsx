@@ -1,7 +1,7 @@
 // Module ID: 14653
 // Function ID: 14654
 // Name: QuestBottomSheetFooter
-// Dependencies: [32, 19, 17, 4825, 1372, 7116, 6572, 21, 576, 4836, 5759, 10681, 10694, 10699, 10508, 504, 4531, 6972, 10678, 14654, 5281, 10736, 10719, 14620, 10750, 14649, 14651, 7363, 1115, 5940, 10749, 10711, 14689, 7153, 7142, 7152, 5763, 7141, 1613, 1479, 4566, 4837, 5286, 2]
+// Dependencies: [32, 19, 17, 4825, 1372, 7116, 6572, 21, 576, 4836, 5759, 10681, 10694, 10699, 10508, 504, 4531, 6972, 10678, 14654, 5281, 10736, 10719, 14620, 10750, 14649, 14651, 7363, 1115, 5940, 10749, 10711, 14506, 7153, 7142, 7152, 5763, 7141, 1613, 1479, 4566, 4837, 5286, 2]
 // Exports: default
 
 // Module 14653 (QuestBottomSheetFooter)
@@ -18,8 +18,8 @@ import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 107
 import QuestPlatformUtils from "QuestPlatformUtils" /* 10719 */;
 import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 10736 */;
 import AnalyticsHooks from "AnalyticsHooks" /* 10749 */;
+import RefreshIcon from "RefreshIcon" /* 14506 */;
 import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 14654 */;
-import RefreshIcon from "RefreshIcon" /* 14689 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;

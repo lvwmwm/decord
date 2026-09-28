@@ -1,7 +1,7 @@
 // Module ID: 5056
 // Function ID: 5057
 // Name: MessageStore
-// Dependencies: [32, 5, 2101, 5057, 2112, 502, 2045, 5583, 4467, 2108, 2067, 4469, 4479, 2099, 4655, 1372, 1074, 3, 11, 5584, 5589, 2074, 5587, 5058, 1385, 12, 7020, 5083, 4481, 7253, 13307, 504, 11246, 1979, 573, 2]
+// Dependencies: [32, 5, 2101, 5057, 2112, 502, 2045, 5583, 4467, 2108, 2067, 4469, 4479, 2099, 4655, 1372, 1074, 3, 11, 5584, 5589, 2074, 5587, 5058, 1385, 12, 7020, 5083, 4481, 7253, 13306, 504, 11246, 1979, 573, 2]
 
 // Module 5056 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -19,7 +19,7 @@ import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7020 */;
 import MessageQueue from "MessageQueue" /* 7253 */;
 import canEditMessageDefault from "canEditMessage" /* 11246 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 13307 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 13306 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 2101 */;
@@ -977,9 +977,9 @@ const messageStore = new MessageStore(DispatcherDefault, {
       if (orCreate === removeManyResult) {
         return false;
       } else {
-        let tmp8 = removeManyResult;
+        let tmp3 = removeManyResult;
         if (null != removeManyResult.revealedMessageId) {
-          tmp8 = removeManyResult;
+          tmp3 = removeManyResult;
           if (tmpResult.some(ids, (arg0) => mutation.revealedMessageId === arg0)) {
             let id = removeManyResult.getAfter(removeManyResult.revealedMessageId);
             if (null == id) {
@@ -992,7 +992,7 @@ const messageStore = new MessageStore(DispatcherDefault, {
           }
           tmpResult = tmp(12);
         }
-        tmp(5584).commit(tmp8);
+        tmp(5584).commit(tmp3);
         const item1 = ids.forEach((item) => {
           set.delete(item);
         });

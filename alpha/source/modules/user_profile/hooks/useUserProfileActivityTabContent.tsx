@@ -1,13 +1,13 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 12651
+// Function ID: 12652
 // Name: useUserProfileActivityTabContent
-// Dependencies: [19, 8254, 4876, 5591, 4855, 7035, 1074, 3, 12634, 12596, 12598, 7789, 504, 2]
+// Dependencies: [19, 8254, 4876, 5591, 4855, 7035, 1074, 3, 12652, 12614, 12616, 7789, 504, 2]
 // Exports: default
 
-// Module 12633 (useUserProfileActivityTabContent)
+// Module 12651 (useUserProfileActivityTabContent)
 import LoggerDefault from "Logger" /* 3 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 7789 */;
-import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 12634 */;
+import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 12652 */;
 import noop from "module_19" /* 19 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8254 */;
 import PresenceStore from "PresenceStore" /* 4876 */;

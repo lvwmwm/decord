@@ -1,13 +1,13 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16526
+// Function ID: 16527
 // Name: useSearchMessagesLoadingState
-// Dependencies: [6699, 11822, 7303, 16458, 504, 11823, 2]
+// Dependencies: [6699, 11822, 7303, 16462, 504, 11823, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 16522 (useSearchMessagesLoadingState)
+// Module 16526 (useSearchMessagesLoadingState)
 import initialize from "initialize" /* 504 */;
 import SearchUtils from "SearchUtils" /* 11823 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 16458 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 16462 */;
 import SearchMessageStore from "SearchMessageStore" /* 6699 */;
 import SearchQueryStore from "SearchQueryStore" /* 11822 */;
 

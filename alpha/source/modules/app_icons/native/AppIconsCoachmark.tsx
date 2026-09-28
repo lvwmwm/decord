@@ -1,16 +1,16 @@
-// Module ID: 16744
-// Function ID: 16745
+// Module ID: 16748
+// Function ID: 16749
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1372, 2042, 21, 4836, 576, 504, 4488, 4800, 6571, 16745, 1177, 9419, 4832, 1115, 5281, 12996, 2]
+// Dependencies: [19, 17, 1372, 2042, 21, 4836, 576, 504, 4488, 4800, 6571, 16749, 1177, 9419, 4832, 1115, 5281, 12995, 2]
 // Exports: default
 
-// Module 16744 (AppIconsCoachmark)
+// Module 16748 (AppIconsCoachmark)
 import nativeDefault from "native" /* 576 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import _modDef9419 from "module_9419" /* 9419 */;
-import AppIconUtils from "AppIconUtils" /* 12996 */;
-import _modDef16745 from "module_16745" /* 16745 */;
+import AppIconUtils from "AppIconUtils" /* 12995 */;
+import _modDef16749 from "module_16749" /* 16749 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -50,9 +50,9 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   const obj4 = { style: tmp.info, children: null };
   const isPremiumResult = PremiumUtilsDefault.isPremium(stateFromStores);
-  const items2 = [closure_8(closure_4, { source: _modDef16745, style: tmp.image }), , ];
+  const items2 = [closure_8(closure_4, { source: _modDef16749, style: tmp.image }), , ];
   const obj6 = { style: tmp.titleContainer, children: null };
-  const obj5 = { source: _modDef16745, style: tmp.image };
+  const obj5 = { source: _modDef16749, style: tmp.image };
   const items3 = [closure_8(markAsDismissed(1177).Icon, { source: _modDef9419, size: markAsDismissed(1177).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
   const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1115).intl;

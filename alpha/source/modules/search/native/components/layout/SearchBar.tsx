@@ -1,9 +1,9 @@
-// Module ID: 16438
-// Function ID: 16439
+// Module ID: 16442
+// Function ID: 16443
 // Name: layout/SearchBar
-// Dependencies: [19, 17, 2045, 2067, 4479, 1372, 11822, 7303, 7302, 1074, 21, 4836, 1115, 4989, 504, 16435, 5288, 11821, 11844, 4541, 11841, 11824, 9036, 16439, 2]
+// Dependencies: [19, 17, 2045, 2067, 4479, 1372, 11822, 7303, 7302, 1074, 21, 4836, 1115, 4989, 504, 16439, 5288, 11821, 11844, 4541, 11841, 11824, 9036, 16443, 2]
 
-// Module 16438 (layout/SearchBar)
+// Module 16442 (layout/SearchBar)
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
 import useChannelName from "useChannelName" /* 4989 */;

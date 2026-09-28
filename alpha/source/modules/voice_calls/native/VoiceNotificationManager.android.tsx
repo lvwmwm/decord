@@ -1,9 +1,9 @@
-// Module ID: 14015
-// Function ID: 14016
+// Module ID: 14014
+// Function ID: 14015
 // Name: VoiceNotificationManager
 // Dependencies: [32, 17, 2044, 5063, 4858, 2045, 1993, 4859, 4479, 1372, 1074, 576, 7177, 7175, 9500, 10349, 4989, 1115, 1983, 2]
 
-// Module 14015 (VoiceNotificationManager)
+// Module 14014 (VoiceNotificationManager)
 import nativeDefault from "native" /* 576 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 7175 */;
 import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 9500 */;

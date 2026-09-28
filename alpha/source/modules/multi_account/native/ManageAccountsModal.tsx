@@ -1,9 +1,9 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16012
+// Function ID: 16013
 // Name: ManageAccountsModal
-// Dependencies: [32, 5, 19, 17, 502, 4679, 1372, 11906, 11907, 16017, 1074, 21, 7339, 4836, 576, 504, 1177, 5204, 1115, 11910, 5435, 14861, 15577, 4566, 4837, 7720, 1241, 6544, 16018, 15578, 11916, 16019, 5927, 8053, 10774, 6421, 7288, 10386, 15602, 6010, 6361, 15601, 2]
+// Dependencies: [32, 5, 19, 17, 502, 4679, 1372, 11906, 11907, 16013, 1074, 21, 7339, 4836, 576, 504, 1177, 5204, 1115, 11910, 5435, 14859, 15575, 4566, 4837, 7720, 1241, 6544, 16014, 15576, 11916, 16015, 5927, 8053, 10774, 6421, 7288, 10386, 15600, 6010, 6361, 15599, 2]
 
-// Module 16016 (ManageAccountsModal)
+// Module 16012 (ManageAccountsModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -122,7 +122,7 @@ function RemoveMultiAccountUserButton(user) {
       return applyArgumentsResult;
     };
     let obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    obj3.children = closure_18(tmp(14861).CircleMinusIcon, obj4);
+    obj3.children = closure_18(tmp(14859).CircleMinusIcon, obj4);
     return closure_18(tmp(5435).PressableOpacity, obj3);
   }
   let obj2 = user(504);
@@ -267,7 +267,7 @@ const View = fn(17).View;
 const MultiAccountTokenStatus = fn(11906).MultiAccountTokenStatus;
 let Constants = fn(11907);
 ({ MANAGE_EDIT_TRANSITION_DURATION: closure_12, MAX_ACCOUNTS: map1, MultiAccountSwitchLocation: closure_14 } = Constants);
-const ManageAccountsScreens = fn(16017).ManageAccountsScreens;
+const ManageAccountsScreens = fn(16013).ManageAccountsScreens;
 Constants = fn(1074);
 ({ AnalyticEvents: closure_16, AuthStates: closure_17 } = Constants);
 const jsxProd = fn(21);
@@ -354,7 +354,7 @@ export default noop.memo(function ManageAccountsModal(initialRouteName) {
         return obj;
       },
       children() {
-        return closure_1_18(isEditing(15602), {
+        return closure_1_18(isEditing(15600), {
           handleLogin(login, password, undelete) {
             isEditing(6010).login({ login, password, undelete });
           },
@@ -379,7 +379,7 @@ export default noop.memo(function ManageAccountsModal(initialRouteName) {
         return { headerShown: false };
       },
       children() {
-        return closure_1_18(isEditing(15601), { isMultiAccount: true });
+        return closure_1_18(isEditing(15599), { isMultiAccount: true });
       }
     })
   ];

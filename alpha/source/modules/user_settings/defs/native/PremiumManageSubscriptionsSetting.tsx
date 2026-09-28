@@ -1,7 +1,7 @@
 // Module ID: 14523
 // Function ID: 14524
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1074, 6837, 10977, 4488, 12937, 11006, 1115, 14524, 14522, 2]
+// Dependencies: [19, 1074, 6837, 10977, 4488, 12936, 11006, 1115, 14524, 14522, 2]
 
 // Module 14523 (PremiumManageSubscriptionsSetting)
 import util from "util" /* 1115 */;

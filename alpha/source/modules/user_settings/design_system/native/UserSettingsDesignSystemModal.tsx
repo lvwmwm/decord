@@ -1,10 +1,10 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15399
+// Function ID: 15400
 // Name: UserSettingsDesignSystemModal
-// Dependencies: [32, 19, 17, 21, 4836, 576, 6421, 5936, 5039, 6795, 1115, 6024, 4525, 10769, 13994, 7870, 7871, 4832, 11405, 13996, 10459, 10458, 5999, 6621, 5281, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 6421, 5936, 5039, 6795, 1115, 6024, 4525, 10769, 13993, 7870, 7871, 4832, 11405, 13995, 10459, 10458, 5999, 6621, 5281, 2]
 // Exports: default
 
-// Module 15401 (UserSettingsDesignSystemModal)
+// Module 15399 (UserSettingsDesignSystemModal)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
@@ -14,7 +14,7 @@ import Navigator from "Navigator" /* 6421 */;
 import ModalScreen from "ModalScreen" /* 7870 */;
 import ModalContent from "ModalContent" /* 7871 */;
 import Modal from "Modal" /* 10769 */;
-import StepModal from "StepModal" /* 13994 */;
+import StepModal from "StepModal" /* 13993 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -263,7 +263,7 @@ function DemoScreen(arg0) {
     let tmp8Result = null != disclaimer;
     if (tmp8Result) {
       const obj5 = { children: disclaimer };
-      tmp8Result = tmp8(tmp3(13996).ModalDisclaimer, obj5);
+      tmp8Result = tmp8(tmp3(13995).ModalDisclaimer, obj5);
     }
     const items2 = [tmp8Result, , ];
     let tmp8Result3 = null != action;

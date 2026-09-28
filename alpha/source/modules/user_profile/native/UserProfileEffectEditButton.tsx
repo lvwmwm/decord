@@ -1,10 +1,10 @@
-// Module ID: 14184
-// Function ID: 14185
+// Module ID: 14183
+// Function ID: 14184
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 6629, 8261, 1085, 21, 4836, 576, 7611, 10508, 4800, 14185, 1981, 1115, 14176, 5889, 5899, 10477, 8264, 1177, 12746, 2]
+// Dependencies: [19, 17, 6629, 8261, 1085, 21, 4836, 576, 7611, 10508, 4800, 14184, 1981, 1115, 14175, 5889, 5899, 10477, 8264, 1177, 12745, 2]
 // Exports: default
 
-// Module 14184 (UserProfileEffectEditButton)
+// Module 14183 (UserProfileEffectEditButton)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
@@ -66,7 +66,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
   const items = [userProfileEffect, guildId, user, isTryItOut];
   let name;
   const callback = userProfileEffect.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14185, dependencyMap.paths), "Profile Effect", { user, currentProfileEffect: userProfileEffect, guildId, isTryItOut });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14184, dependencyMap.paths), "Profile Effect", { user, currentProfileEffect: userProfileEffect, guildId, isTryItOut });
   }, items);
   if (product != null) {
     name = product.name;

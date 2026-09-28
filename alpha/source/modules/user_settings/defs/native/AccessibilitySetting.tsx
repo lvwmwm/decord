@@ -1,9 +1,9 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14873
+// Function ID: 14874
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1074, 2042, 21, 2029, 6806, 1177, 1115, 11006, 14876, 14878, 2]
+// Dependencies: [32, 19, 1074, 2042, 21, 2029, 6806, 1177, 1115, 11006, 14874, 14876, 2]
 
-// Module 14875 (AccessibilitySetting)
+// Module 14873 (AccessibilitySetting)
 import util from "util" /* 1115 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6806 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -20,7 +20,7 @@ const route = SettingBuilders.createRoute({
     return intl.string(util.t.G0neg7);
   },
   parent: null,
-  IconComponent: fn(14876).AccessibilityIcon,
+  IconComponent: fn(14874).AccessibilityIcon,
   useTrailing() {
     [tmp4, r10012] = useSelectedDismissibleContent.useSelectedDismissibleContent(items);
     let tmp5 = null;

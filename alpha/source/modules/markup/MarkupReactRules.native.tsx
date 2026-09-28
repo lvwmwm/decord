@@ -1,7 +1,7 @@
 // Module ID: 4824
 // Function ID: 4825
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 4825, 2045, 2102, 2067, 1074, 2052, 1085, 21, 4831, 4832, 4836, 576, 4847, 4990, 4693, 5039, 7624, 5203, 1115, 6610, 4527, 5896, 1177, 1366, 7818, 4525, 11109, 11079, 7542, 504, 4683, 7403, 4800, 11082, 1981, 11, 2021, 5899, 11060, 13386, 10782, 5302, 9586, 13387, 13389, 4775, 5304, 1364, 5335, 13391, 9588, 2]
+// Dependencies: [19, 17, 4825, 2045, 2102, 2067, 1074, 2052, 1085, 21, 4831, 4832, 4836, 576, 4847, 4990, 4693, 5039, 7624, 5203, 1115, 6610, 4527, 5896, 1177, 1366, 7818, 4525, 11109, 11079, 7542, 504, 4683, 7403, 4800, 11082, 1981, 11, 2021, 5899, 11060, 13385, 10782, 5302, 9586, 13386, 13388, 4775, 5304, 1364, 5335, 13390, 9588, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 4824 (MarkupReactRules)
@@ -490,7 +490,7 @@ function MarkupAttachmentLink(state) {
     str2 = "text-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: null };
-  const obj2 = { themedColor: node(576).colors.MENTION_FOREGROUND, source: node(13386), size: null };
+  const obj2 = { themedColor: node(576).colors.MENTION_FOREGROUND, source: node(13385), size: null };
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {
     let SMALL = tmp3(1177).Icon.Sizes.EXTRA_SMALL_10;
@@ -768,7 +768,7 @@ export default function createRules(styles) {
         closure_0 = channelId;
         let obj = MarkupRulesUtils;
         if (obj.isStaticRouteIconType(channelId.channelId)) {
-          let SignPostIcon = tmp(13387).SignPostIcon;
+          let SignPostIcon = tmp(13386).SignPostIcon;
           channelId = channelId.channelId;
           if (constants.GUILD_HOME !== channelId) {
             if (tmp4.SERVER_GUIDE !== channelId) {
@@ -779,7 +779,7 @@ export default function createRules(styles) {
                   }
                 }
               }
-              SignPostIcon = tmp(13389).ChannelListMagnifyingGlassIcon;
+              SignPostIcon = tmp(13388).ChannelListMagnifyingGlassIcon;
             }
             obj2 = { accessibilityRole: "button", style: obj.staticRouteLink, color: null, onPress: null, children: null };
             textColor = undefined;
@@ -808,7 +808,7 @@ export default function createRules(styles) {
             obj2.children = items;
             return value2(MarkupText, obj2, textColor.key);
           }
-          SignPostIcon = tmp(13387).SignPostIcon;
+          SignPostIcon = tmp(13386).SignPostIcon;
         } else {
           return null;
         }
@@ -953,7 +953,7 @@ export default function createRules(styles) {
     },
     [closure_0(closure_2[43]).AST_KEY.GAME_MENTION]: {
       react(node, arg1, state) {
-        return closure_1_15(obj2(13391), { node, state }, state.key);
+        return closure_1_15(obj2(13390), { node, state }, state.key);
       }
     },
     [closure_0(closure_2[43]).AST_KEY.TIMESTAMP]: {
@@ -1164,4 +1164,4 @@ export const plainSpoilerRenderer = function plainSpoilerRenderer(content) {
   }
   return str;
 };
-export const createFetchingGameMentionRule = fn(13391).createFetchingGameMentionRule;
+export const createFetchingGameMentionRule = fn(13390).createFetchingGameMentionRule;

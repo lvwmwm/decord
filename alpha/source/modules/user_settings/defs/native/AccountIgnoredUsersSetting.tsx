@@ -1,9 +1,9 @@
-// Module ID: 14342
-// Function ID: 14343
+// Module ID: 14341
+// Function ID: 14342
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4479, 7417, 1074, 504, 1115, 11006, 6387, 14343, 2]
+// Dependencies: [4479, 7417, 1074, 504, 1115, 11006, 6387, 14342, 2]
 
-// Module 14342 (AccountIgnoredUsersSetting)
+// Module 14341 (AccountIgnoredUsersSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;

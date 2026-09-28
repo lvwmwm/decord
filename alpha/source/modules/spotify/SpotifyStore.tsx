@@ -1,7 +1,7 @@
 // Module ID: 5592
 // Function ID: 5593
 // Name: SpotifyStore
-// Dependencies: [2000, 502, 5593, 5722, 4876, 5731, 4855, 7788, 1074, 5595, 1091, 3, 2040, 573, 559, 11251, 12, 1241, 558, 13172, 8807, 1370, 504, 7595, 2]
+// Dependencies: [2000, 502, 5593, 5722, 4876, 5731, 4855, 7788, 1074, 5595, 1091, 3, 2040, 573, 559, 11251, 12, 1241, 558, 13171, 8807, 1370, 504, 7595, 2]
 
 // Module 5592 (SpotifyStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -15,7 +15,7 @@ import Timers from "Timers" /* 2040 */;
 import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7595 */;
 import useIsSpeaking from "useIsSpeaking" /* 8807 */;
 import SpotifyActionCreators from "SpotifyActionCreators" /* 11251 */;
-import stopSyncingUserActivityDefault from "stopSyncingUserActivity" /* 13172 */;
+import stopSyncingUserActivityDefault from "stopSyncingUserActivity" /* 13171 */;
 import RunningGameStore from "RunningGameStore" /* 2000 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;

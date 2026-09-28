@@ -1,9 +1,9 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15420
+// Function ID: 15421
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 4835, 1182, 1372, 6962, 1076, 1074, 2042, 21, 4836, 6603, 12998, 15423, 504, 5910, 1255, 10198, 15424, 1364, 6973, 8667, 7623, 8238, 4685, 6583, 1485, 8313, 4501, 15426, 4654, 2029, 4488, 15427, 1241, 7009, 7632, 15428, 15429, 15431, 15456, 1231, 8229, 10282, 15459, 15460, 15434, 15461, 5180, 2]
+// Dependencies: [32, 19, 17, 4835, 1182, 1372, 6962, 1076, 1074, 2042, 21, 4836, 6603, 12997, 15421, 504, 5910, 1255, 10198, 15422, 1364, 6973, 8667, 7623, 8238, 4685, 6583, 1485, 8313, 4501, 15424, 4654, 2029, 4488, 15425, 1241, 7009, 7632, 15426, 15427, 15429, 15454, 1231, 8229, 10282, 15457, 15458, 15432, 15459, 5180, 2]
 
-// Module 15422 (CollectiblesShopV2)
+// Module 15420 (CollectiblesShopV2)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
@@ -12,10 +12,10 @@ import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7009 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8313 */;
 import NativePaymentHooksDefault from "NativePaymentHooks" /* 8667 */;
-import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 15427 */;
-import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 15428 */;
-import ShopCategory from "ShopCategory" /* 15429 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15431 */;
+import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 15425 */;
+import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 15426 */;
+import ShopCategory from "ShopCategory" /* 15427 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15429 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 4835 */;
@@ -382,7 +382,7 @@ function CollectiblesShopInternal(analyticsSource) {
       const obj2 = { isDarkTheme: stateFromStores, dismiss, buttonVariant: null };
       let GET_NITRO = constants;
       if (constants == null) {
-        GET_NITRO = tmp18(15427).NitroUpsellBannerButtonVariant.GET_NITRO;
+        GET_NITRO = tmp18(15425).NitroUpsellBannerButtonVariant.GET_NITRO;
       }
       obj2.buttonVariant = GET_NITRO;
       let tmp17Result = closure_2_17(ShopNitroUpsellBanner.ShopNitroUpsellBanner, obj2);

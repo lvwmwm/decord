@@ -1,10 +1,10 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15466
+// Function ID: 15467
 // Name: useSecureFramesVerifiedUsers
 // Dependencies: [9147, 504, 2]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 15468 (useSecureFramesVerifiedUsers)
+// Module 15466 (useSecureFramesVerifiedUsers)
 import initialize from "initialize" /* 504 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 9147 */;
 

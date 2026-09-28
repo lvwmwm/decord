@@ -1,18 +1,18 @@
-// Module ID: 17016
-// Function ID: 17017
+// Module ID: 17020
+// Function ID: 17021
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 8844, 2045, 2067, 1993, 4469, 4861, 21, 11754, 17004, 504, 7139, 12838, 5205, 12840, 1115, 17017, 9097, 8863, 17005, 12858, 4622, 9569, 12602, 2]
+// Dependencies: [19, 17, 8844, 2045, 2067, 1993, 4469, 4861, 21, 11754, 17008, 504, 7139, 12837, 5205, 12839, 1115, 17021, 9097, 8863, 17009, 12857, 4622, 9569, 12620, 2]
 // Exports: default
 
-// Module 17016 (VoicePanelVideoButton)
+// Module 17020 (VoicePanelVideoButton)
 import util from "util" /* 1115 */;
 import CameraRive from "CameraRive" /* 4622 */;
 import useAlertStore from "useAlertStore" /* 5205 */;
 import StreamPermissionUtils from "StreamPermissionUtils" /* 7139 */;
 import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 8863 */;
 import CallsUtils from "CallsUtils" /* 9097 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12840 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17017 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12839 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17021 */;
 import noop from "module_19" /* 19 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 8844 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -33,7 +33,7 @@ function VideoButtonRive(arg0) {
   if (isVideoEnabled) {
     let VideoSlashIcon = tmp3(9569).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(12602).VideoSlashIcon;
+    VideoSlashIcon = tmp3(12620).VideoSlashIcon;
   }
   obj2.fallback = <VideoSlashIcon color={color} />;
   obj.children = jsx(CameraRive.CameraRive, { dataBinding: { fill: color, on: isVideoEnabled }, defaultViewModelInstance: null, fallback: null });

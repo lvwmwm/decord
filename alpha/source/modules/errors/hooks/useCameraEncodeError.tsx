@@ -1,10 +1,10 @@
-// Module ID: 16957
-// Function ID: 16958
+// Module ID: 16961
+// Function ID: 16962
 // Name: useCameraEncodeError
 // Dependencies: [502, 8874, 504, 8875, 2]
 // Exports: default
 
-// Module 16957 (useCameraEncodeError)
+// Module 16961 (useCameraEncodeError)
 import AVError from "AVError" /* 8875 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AVErrorStore from "AVErrorStore" /* 8874 */;

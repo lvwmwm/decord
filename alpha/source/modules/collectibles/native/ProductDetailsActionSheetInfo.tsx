@@ -1,18 +1,18 @@
-// Module ID: 12717
-// Function ID: 12718
+// Module ID: 12716
+// Function ID: 12717
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 4836, 576, 12718, 4832, 6974, 8303, 1115, 12719, 1974, 2]
+// Dependencies: [17, 21, 4836, 576, 12717, 4832, 6974, 8303, 1115, 12718, 1974, 2]
 // Exports: default
 
-// Module 12717 (ProductDetailsActionSheetInfo)
+// Module 12716 (ProductDetailsActionSheetInfo)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
 import useProductPurchaseState from "useProductPurchaseState" /* 8303 */;
-import useProductDescription from "useProductDescription" /* 12718 */;
-import InlinePriceTagDefault from "InlinePriceTag" /* 12719 */;
+import useProductDescription from "useProductDescription" /* 12717 */;
+import InlinePriceTagDefault from "InlinePriceTag" /* 12718 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;

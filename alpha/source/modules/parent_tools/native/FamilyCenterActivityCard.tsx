@@ -1,10 +1,10 @@
-// Module ID: 14426
-// Function ID: 14427
+// Module ID: 14425
+// Function ID: 14426
 // Name: FamilyCenterActivityCard
-// Dependencies: [19, 17, 6958, 1074, 21, 4836, 576, 8106, 8105, 7012, 11398, 1115, 2487, 1177, 14427, 4832, 9203, 5039, 14428, 1981, 12285, 14429, 14430, 11395, 4800, 4527, 4678, 8729, 1241, 9396, 14431, 14432, 14433, 14436, 14443, 2]
+// Dependencies: [19, 17, 6958, 1074, 21, 4836, 576, 8106, 8105, 7012, 11398, 1115, 2487, 1177, 14426, 4832, 9203, 5039, 14427, 1981, 12285, 14428, 14429, 11395, 4800, 4527, 4678, 8729, 1241, 9396, 14430, 14431, 14432, 14435, 14442, 2]
 // Exports: default
 
-// Module 14426 (FamilyCenterActivityCard)
+// Module 14425 (FamilyCenterActivityCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -18,12 +18,12 @@ import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8106 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9203 */;
 import useAgeSpecificText from "useAgeSpecificText" /* 11398 */;
 import _modDef12285 from "module_12285" /* 12285 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14429 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 14430 */;
-import FamilyCenterActivityTotalDefault from "FamilyCenterActivityTotal" /* 14432 */;
-import FamilyCenterTopActivityDefault from "FamilyCenterTopActivity" /* 14433 */;
-import FamilyCenterActivitySectionDefault from "FamilyCenterActivitySection" /* 14436 */;
-import FamilyCenterSettingsControlsDefault from "FamilyCenterSettingsControls" /* 14443 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14428 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 14429 */;
+import FamilyCenterActivityTotalDefault from "FamilyCenterActivityTotal" /* 14431 */;
+import FamilyCenterTopActivityDefault from "FamilyCenterTopActivity" /* 14432 */;
+import FamilyCenterActivitySectionDefault from "FamilyCenterActivitySection" /* 14435 */;
+import FamilyCenterSettingsControlsDefault from "FamilyCenterSettingsControls" /* 14442 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ function FamilyCenterActivityCardPrefaceText() {
   const obj6 = { style: tmp.container, children: null };
   let tmp12 = null;
   if (!tmp4) {
-    const obj7 = { color: tmp.icon.color, source: tmp2(14427), style: tmp.icon };
+    const obj7 = { color: tmp.icon.color, source: tmp2(14426), style: tmp.icon };
     tmp12 = React6(tmp5(1177).Icon, obj7);
   }
   const items = [tmp12, , ];

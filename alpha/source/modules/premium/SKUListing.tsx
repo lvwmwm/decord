@@ -1,9 +1,9 @@
-// Module ID: 13529
-// Function ID: 13530
+// Module ID: 13528
+// Function ID: 13529
 // Name: SKUListing
 // Dependencies: [2]
 
-// Module 13529 (SKUListing)
+// Module 13528 (SKUListing)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/SKUListing.tsx");

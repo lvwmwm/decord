@@ -1,9 +1,9 @@
-// Module ID: 16028
-// Function ID: 16029
+// Module ID: 16024
+// Function ID: 16025
 // Name: YouBarAvatar
 // Dependencies: [5, 32, 19, 17, 4825, 5591, 1372, 14627, 1074, 21, 4836, 576, 504, 1177, 4540, 4566, 7661, 8276, 5280, 4531, 8275, 7602, 4801, 6800, 1981, 6073, 2]
 
-// Module 16028 (YouBarAvatar)
+// Module 16024 (YouBarAvatar)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import native2 from "native" /* 4540 */;
@@ -172,7 +172,7 @@ function YouBarAvatarLarge(transitionState) {
     obj6.style = size2;
     obj5.children = closure_22(sharedValue1, obj6);
     const items6 = [closure_22(tmp23(tmp3[17]), obj5), , , ];
-    const obj7 = { user: stateFromStores, guildId: "Array", size, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "heading-sm/bold" };
+    const obj7 = { user: stateFromStores, guildId: "Array", size, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "GUILD_SETTINGS_CANCEL_CHANGES" };
     if (OFFLINE === StatusTypes.UNKNOWN) {
       OFFLINE = StatusTypes.OFFLINE;
     }

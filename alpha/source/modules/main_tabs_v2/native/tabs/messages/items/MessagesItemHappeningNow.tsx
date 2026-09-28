@@ -1,20 +1,20 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15690
+// Function ID: 15691
 // Name: MessagesItemHappeningNow
-// Dependencies: [19, 17, 14843, 21, 11669, 576, 4836, 4531, 8277, 15693, 2]
+// Dependencies: [19, 17, 14841, 21, 11669, 576, 4836, 4531, 8277, 15691, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 15692 (MessagesItemHappeningNow)
+// Module 15690 (MessagesItemHappeningNow)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import CutoutBackgroundContext from "CutoutBackgroundContext" /* 8277 */;
 import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11669 */;
-import HappeningNowDefault from "HappeningNow" /* 15693 */;
+import HappeningNowDefault from "HappeningNow" /* 15691 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const HappeningNowConstants = fn(14843);
+const HappeningNowConstants = fn(14841);
 ({ HAPPENING_NOW_CARD_HEIGHT: closure_4, HappeningNowItem } = HappeningNowConstants);
 const jsx = fn(21).jsx;
 const items = [, , , , , , ];

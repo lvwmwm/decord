@@ -1,16 +1,16 @@
-// Module ID: 14860
-// Function ID: 14861
+// Module ID: 14858
+// Function ID: 14859
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 14812, 1084, 7417, 21, 1248, 14861, 10774, 1115, 11006, 1364, 2]
+// Dependencies: [19, 14810, 1084, 7417, 21, 1248, 14859, 10774, 1115, 11006, 1364, 2]
 
-// Module 14860 (AndroidFontScaleSetting)
+// Module 14858 (AndroidFontScaleSetting)
 import util from "util" /* 1115 */;
 import CirclePlusIcon from "CirclePlusIcon" /* 10774 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 14861 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 14859 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useFontScaleStore = fn(14812).useFontScaleStore;
+const useFontScaleStore = fn(14810).useFontScaleStore;
 const FontScales = fn(1084).FontScales;
 const jsx = fn(21).jsx;
 const SettingBuilders = fn(11006);

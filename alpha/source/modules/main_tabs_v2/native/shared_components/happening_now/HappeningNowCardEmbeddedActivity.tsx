@@ -1,10 +1,10 @@
-// Module ID: 15720
-// Function ID: 15721
+// Module ID: 15718
+// Function ID: 15719
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1372, 14843, 1074, 21, 4836, 576, 563, 15721, 6589, 1241, 6603, 12443, 1981, 15693, 4566, 8230, 1249, 15704, 14844, 5374, 5899, 15717, 2]
+// Dependencies: [32, 19, 17, 1372, 14841, 1074, 21, 4836, 576, 563, 15719, 6589, 1241, 6603, 12443, 1981, 15691, 4566, 8230, 1249, 15702, 14842, 5374, 5899, 15715, 2]
 // Exports: default
 
-// Module 15720 (HappeningNowCardEmbeddedActivity)
+// Module 15718 (HappeningNowCardEmbeddedActivity)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -16,7 +16,7 @@ import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const HappeningNowConstants = fn(14843);
+const HappeningNowConstants = fn(14841);
 ({ HAPPENING_NOW_CONTENT_HEIGHT, HappeningNowCardTrackingType: closure_7 } = HappeningNowConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);

@@ -1,10 +1,10 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12718
+// Function ID: 12719
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 6658, 1076, 1074, 21, 4836, 576, 4832, 1974, 6973, 6974, 8298, 1115, 672, 4531, 4800, 12720, 1981, 6603, 5293, 1364, 8122, 6630, 7623, 4488, 12723, 8334, 12724, 8313, 12725, 504, 8326, 8327, 2]
+// Dependencies: [19, 17, 6658, 1076, 1074, 21, 4836, 576, 4832, 1974, 6973, 6974, 8298, 1115, 672, 4531, 4800, 12719, 1981, 6603, 5293, 1364, 8122, 6630, 7623, 4488, 12722, 8334, 12723, 8313, 12724, 504, 8326, 8327, 2]
 // Exports: default
 
-// Module 12719 (InlinePriceTag)
+// Module 12718 (InlinePriceTag)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import util from "util" /* 1115 */;
@@ -23,9 +23,9 @@ import useCurrentUser from "useCurrentUser" /* 7623 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8313 */;
 import useProductDisableState from "useProductDisableState" /* 8334 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 12723 */;
-import MobileNitroUpsellInShopPdpExperimentDefault from "MobileNitroUpsellInShopPdpExperiment" /* 12724 */;
-import useVirtualCurrencyData from "useVirtualCurrencyData" /* 12725 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 12722 */;
+import MobileNitroUpsellInShopPdpExperimentDefault from "MobileNitroUpsellInShopPdpExperiment" /* 12723 */;
+import useVirtualCurrencyData from "useVirtualCurrencyData" /* 12724 */;
 import noop from "module_19" /* 19 */;
 import IAPStore from "IAPStore" /* 6658 */;
 
@@ -136,7 +136,7 @@ function ExpressiveNitroUpsell(arg0) {
       }
       if (closure_1_2) {
         const obj = ActionSheetActionCreatorsDefault;
-        const tmp9 = asyncRequireImpl(12720, dependencyMap.paths);
+        const tmp9 = asyncRequireImpl(12719, dependencyMap.paths);
         const obj2 = { analyticsLocations: null, title: null, description: null };
         const items = [AnalyticsLocationDefault.COLLECTIBLES_SHOP_DETAILS_MODAL];
         obj2.analyticsLocations = items;

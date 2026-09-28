@@ -1,16 +1,16 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 15079
+// Function ID: 15080
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1115, 4836, 576, 8625, 12, 4548, 5917, 15078, 6001, 2]
+// Dependencies: [32, 19, 21, 1115, 4836, 576, 8625, 12, 4548, 5917, 15076, 6001, 2]
 // Exports: default
 
-// Module 15081 (AppIconRow)
+// Module 15079 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
 import AppIconTypes from "AppIconTypes" /* 8625 */;
-import AppIconDefault from "AppIcon" /* 15078 */;
+import AppIconDefault from "AppIcon" /* 15076 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

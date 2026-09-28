@@ -1,11 +1,11 @@
-// Module ID: 14398
-// Function ID: 14399
+// Module ID: 14397
+// Function ID: 14398
 // Name: RequestDataScreen
-// Dependencies: [19, 17, 21, 4836, 576, 14399, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 14398, 2]
 
-// Module 14398 (RequestDataScreen)
+// Module 14397 (RequestDataScreen)
 import nativeDefault from "native" /* 576 */;
-import RequestDataContentDefault from "RequestDataContent" /* 14399 */;
+import RequestDataContentDefault from "RequestDataContent" /* 14398 */;
 import noop from "module_19" /* 19 */;
 
 get_ActivityIndicator = fn(17);

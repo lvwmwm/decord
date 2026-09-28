@@ -1,9 +1,9 @@
-// Module ID: 13303
-// Function ID: 13304
+// Module ID: 13302
+// Function ID: 13303
 // Name: HubLinkNoticeStore
 // Dependencies: [6635, 2067, 1074, 504, 573, 2]
 
-// Module 13303 (HubLinkNoticeStore)
+// Module 13302 (HubLinkNoticeStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HotspotStore from "hotspot/HotspotStore" /* 6635 */;

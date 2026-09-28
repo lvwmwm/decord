@@ -1,10 +1,10 @@
-// Module ID: 15493
-// Function ID: 15494
+// Module ID: 15491
+// Function ID: 15492
 // Name: useAuthorizedSlayerApplications
 // Dependencies: [19, 6528, 504, 11025, 6591, 2]
 // Exports: default
 
-// Module 15493 (useAuthorizedSlayerApplications)
+// Module 15491 (useAuthorizedSlayerApplications)
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6591 */;
 import noop from "module_19" /* 19 */;
 import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6528 */;

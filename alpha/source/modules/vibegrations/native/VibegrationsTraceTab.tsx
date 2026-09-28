@@ -1,20 +1,20 @@
-// Module ID: 16411
-// Function ID: 16412
+// Module ID: 16415
+// Function ID: 16416
 // Name: VibegrationsTraceTab
-// Dependencies: [32, 19, 17, 8495, 21, 4836, 576, 16412, 16414, 1115, 3715, 16413, 5919, 4832, 1613, 504, 16415, 16416, 4800, 16417, 7650, 10794, 16409, 8179, 6471, 16244, 4781, 2]
+// Dependencies: [32, 19, 17, 8495, 21, 4836, 576, 16416, 16418, 1115, 3715, 16417, 5919, 4832, 1613, 504, 16419, 16420, 4800, 16421, 7650, 10794, 16413, 8179, 6471, 16240, 4781, 2]
 // Exports: default
 
-// Module 16411 (VibegrationsTraceTab)
+// Module 16415 (VibegrationsTraceTab)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import FileManagerUtils from "FileManagerUtils" /* 7650 */;
-import VibegrationsTraceFormat from "VibegrationsTraceFormat" /* 16412 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 16413 */;
-import VibegrationsTraceUtils from "VibegrationsTraceUtils" /* 16414 */;
-import VibegrationsTraceDetailSheet from "VibegrationsTraceDetailSheet" /* 16417 */;
+import VibegrationsTraceFormat from "VibegrationsTraceFormat" /* 16416 */;
+import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 16417 */;
+import VibegrationsTraceUtils from "VibegrationsTraceUtils" /* 16418 */;
+import VibegrationsTraceDetailSheet from "VibegrationsTraceDetailSheet" /* 16421 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
@@ -33,9 +33,9 @@ function TraceRow(entry) {
   if ("model" === entry.kind) {
     if (null != entry.promptTokens) {
       const intl = tmp2(1115).intl;
-      const obj3 = { tokens: tmp2(16413).formatTokens(entry.promptTokens) };
+      const obj3 = { tokens: tmp2(16417).formatTokens(entry.promptTokens) };
       let formatToPlainStringResult = intl.formatToPlainString(_modDef3715["PYO+Jv"], obj3);
-      const tmp2Result = tmp2(16413);
+      const tmp2Result = tmp2(16417);
     }
     const items = [tmp.rowSlot, ];
     let rowNested = "tool" === entry.kind;
@@ -59,8 +59,8 @@ function TraceRow(entry) {
     const obj6 = { style: tmp.rowBody, children: null };
     const obj7 = { style: tmp.rowTop, children: null };
     const obj8 = { status: entry.status };
-    const items1 = [React5(tmp2(16412).TraceStatusDot, obj8), , , ];
-    const obj9 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: tmp2(16413).categoryLabel(traceCategoryResult) };
+    const items1 = [React5(tmp2(16416).TraceStatusDot, obj8), , , ];
+    const obj9 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: tmp2(16417).categoryLabel(traceCategoryResult) };
     items1[1] = React5(tmp2(4832).Text, obj9);
     const obj10 = { variant: "text-xs/semibold", color: "text-default", style: tmp.rowTitle, lineClamp: 1, children: tmp6 };
     items1[2] = React5(tmp2(4832).Text, obj10);
@@ -94,8 +94,8 @@ function TraceRow(entry) {
   }
   formatToPlainStringResult = null;
   if (null != entry.durationMs) {
-    formatToPlainStringResult = tmp2(16413).formatDuration(entry.durationMs);
-    const tmp2Result4 = tmp2(16413);
+    formatToPlainStringResult = tmp2(16417).formatDuration(entry.durationMs);
+    const tmp2Result4 = tmp2(16417);
   }
 }
 function TraceOverview(arg0) {
@@ -103,7 +103,7 @@ function TraceOverview(arg0) {
   let reduced;
   let tmp = closure_9();
   closure_1 = tmp;
-  dependencyMap = entries(16412).useTraceCategoryFillStyles();
+  dependencyMap = entries(16416).useTraceCategoryFillStyles();
   let items = [entries];
   const memo = reduced.useMemo(() => VibegrationsTraceUtils.traceCategoryTotals(entries), items);
   reduced = memo.reduce((acc, ms) => acc + ms.ms, 0);
@@ -128,7 +128,7 @@ function TraceOverview(arg0) {
   obj3.children = mapped;
   let items1 = [closure_7(View, obj3), ];
   let obj4 = { style: tmp.legend, children: null };
-  const TRACE_CATEGORIES = entries(16414).TRACE_CATEGORIES;
+  const TRACE_CATEGORIES = entries(16418).TRACE_CATEGORIES;
   obj4.children = TRACE_CATEGORIES.map((item) => {
     closure_0 = item;
     const found = memo.find((category) => category.category === closure_0);
@@ -168,9 +168,9 @@ function TraceOverview(arg0) {
     items1[3] = React5(Text_Text.Text, { variant: "text-xs/normal", color: "text-subtle", children: intl2.formatToPlainString(_modDef3715.w8vPbe, { count: num4 }) });
     let tmp6Result = null;
     if (0 !== num) {
-      const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(16413).formatDuration(num) };
+      const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(16417).formatDuration(num) };
       tmp6Result = tmp6(tmp7(4832).Text, obj7);
-      const tmp7Result = tmp7(16413);
+      const tmp7Result = tmp7(16417);
     }
     items1[4] = tmp6Result;
     obj.children = items1;
@@ -258,7 +258,7 @@ export default function VibegrationsTraceTab(projectId) {
         const intl = tmp(1115).intl;
         const obj3 = { number: index + 1 };
         obj2.label = intl.formatToPlainString(_modDef3715["Y/j+TD"], obj3);
-        obj2.started = tmp(16416).formatClockTime(turnId.startedAt);
+        obj2.started = tmp(16420).formatClockTime(turnId.startedAt);
         obj2.spanMs = turnId.spanMs;
         items.push(obj2);
         for (const item10041 of filterTraceResult) {
@@ -266,7 +266,7 @@ export default function VibegrationsTraceTab(projectId) {
           let arr3 = items.push(obj4);
           continue;
         }
-        const tmpResult = tmp(16416);
+        const tmpResult = tmp(16420);
       }
     });
     return items;
@@ -294,9 +294,9 @@ export default function VibegrationsTraceTab(projectId) {
       items[1] = tmp2;
       let tmp3 = null;
       if (null != item.spanMs) {
-        const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13(16413).formatDuration(item.spanMs) };
+        const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13(16417).formatDuration(item.spanMs) };
         tmp3 = React5(tmp13(4832).Text, obj5);
-        const tmp13Result = tmp13(16413);
+        const tmp13Result = tmp13(16417);
       }
       items[2] = tmp3;
       obj3.children = items;

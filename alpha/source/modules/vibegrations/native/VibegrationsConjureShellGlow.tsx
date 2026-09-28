@@ -1,10 +1,10 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16394
+// Function ID: 16395
 // Name: VibegrationsConjureShellGlow
-// Dependencies: [32, 19, 17, 4825, 1182, 21, 1364, 576, 672, 4836, 504, 4686, 4566, 4837, 5293, 16390, 5976, 2]
+// Dependencies: [32, 19, 17, 4825, 1182, 21, 1364, 576, 672, 4836, 504, 4686, 4566, 4837, 5293, 16395, 5976, 2]
 // Exports: default
 
-// Module 16389 (VibegrationsConjureShellGlow)
+// Module 16394 (VibegrationsConjureShellGlow)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;

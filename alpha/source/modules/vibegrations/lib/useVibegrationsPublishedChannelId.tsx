@@ -1,10 +1,10 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16275
+// Function ID: 16276
 // Name: useVibegrationsPublishedChannelId
 // Dependencies: [4467, 504, 5370, 2]
 // Exports: default
 
-// Module 16279 (useVibegrationsPublishedChannelId)
+// Module 16275 (useVibegrationsPublishedChannelId)
 import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 

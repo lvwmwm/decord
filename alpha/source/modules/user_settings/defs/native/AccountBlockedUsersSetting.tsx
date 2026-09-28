@@ -1,9 +1,9 @@
-// Module ID: 14335
-// Function ID: 14336
+// Module ID: 14334
+// Function ID: 14335
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4479, 7417, 1074, 504, 1115, 11006, 7371, 14336, 2]
+// Dependencies: [4479, 7417, 1074, 504, 1115, 11006, 7371, 14335, 2]
 
-// Module 14335 (AccountBlockedUsersSetting)
+// Module 14334 (AccountBlockedUsersSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;

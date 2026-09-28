@@ -1,10 +1,10 @@
-// Module ID: 15795
-// Function ID: 15796
+// Module ID: 15793
+// Function ID: 15794
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 4655, 4722, 2042, 21, 3, 4836, 576, 15796, 4763, 504, 4800, 1115, 6571, 15797, 4832, 5997, 6000, 1177, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 4655, 4722, 2042, 21, 3, 4836, 576, 15794, 4763, 504, 4800, 1115, 6571, 15795, 4832, 5997, 6000, 1177, 5281, 2]
 // Exports: default
 
-// Module 15795 (GuildThemeNuxActionSheet)
+// Module 15793 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
@@ -49,8 +49,8 @@ export default function GuildThemeNuxActionSheet(guildId) {
   let stateFromStores;
   let callback1;
   const tmp = closure_14();
-  [tmp5, c2] = noop.useState(guildId(15796).getInitialGuildThemeNuxSelection);
-  const tmp4 = _slicedToArray(noop.useState(guildId(15796).getInitialGuildThemeNuxSelection), 2);
+  [tmp5, c2] = noop.useState(guildId(15794).getInitialGuildThemeNuxSelection);
+  const tmp4 = _slicedToArray(noop.useState(guildId(15794).getInitialGuildThemeNuxSelection), 2);
   [tmp7, c3] = noop.useState(null);
   const tmp6 = _slicedToArray(noop.useState(null), 2);
   [tmp9, c4] = noop.useState(false);
@@ -185,7 +185,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   obj3.dismissAccessibilityLabel = intl2.string(guildId(1115).t.cpT0Cq);
   obj3.onDismiss = callback3;
   obj3.contentStyles = tmp.container;
-  const items7 = [closure_10(markAsDismissed(15797), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  const items7 = [closure_10(markAsDismissed(15795), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   const obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl3 = tmp2(1115).intl;
   obj4.children = intl3.string(guildId(1115).t.Q9zFy9);

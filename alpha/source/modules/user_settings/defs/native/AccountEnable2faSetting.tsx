@@ -1,13 +1,13 @@
-// Module ID: 14315
-// Function ID: 14316
+// Module ID: 14314
+// Function ID: 14315
 // Name: AccountEnable2faSetting
-// Dependencies: [1372, 7417, 14243, 14316, 5203, 1115, 11006, 2]
+// Dependencies: [1372, 7417, 14242, 14315, 5203, 1115, 11006, 2]
 
-// Module 14315 (AccountEnable2faSetting)
+// Module 14314 (AccountEnable2faSetting)
 import util from "util" /* 1115 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14243 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14316 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14242 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14315 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

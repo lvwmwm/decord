@@ -1,17 +1,17 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 15919
+// Function ID: 15920
 // Name: GuildsBar
-// Dependencies: [19, 21, 4836, 1364, 8886, 15922, 15930, 15814, 11027, 6073, 5901, 6493, 15999, 9701, 2]
+// Dependencies: [19, 21, 4836, 1364, 8886, 15920, 15928, 15812, 11027, 6073, 5901, 6493, 15997, 9701, 2]
 
-// Module 15921 (GuildsBar)
+// Module 15919 (GuildsBar)
 import NativeViewDefault from "NativeView" /* 5901 */;
 import FastListDefault from "FastList" /* 6493 */;
 import FavoritesGuildIntroPopoverDefault from "FavoritesGuildIntroPopover" /* 9701 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11027 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 15814 */;
-import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 15922 */;
-import useGuildsBarPropsDefault from "useGuildsBarProps" /* 15930 */;
-import GuildsBarDragPreviewDefault from "GuildsBarDragPreview" /* 15999 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 15812 */;
+import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 15920 */;
+import useGuildsBarPropsDefault from "useGuildsBarProps" /* 15928 */;
+import GuildsBarDragPreviewDefault from "GuildsBarDragPreview" /* 15997 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

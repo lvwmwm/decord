@@ -1,10 +1,10 @@
-// Module ID: 13037
-// Function ID: 13038
+// Module ID: 13036
+// Function ID: 13037
 // Name: PremiumManagePlan
-// Dependencies: [5, 32, 19, 17, 5915, 4489, 1372, 4490, 4493, 4494, 6814, 1980, 6658, 1074, 4815, 1374, 21, 3, 4836, 576, 1485, 5435, 5940, 4832, 1115, 6583, 12929, 6603, 504, 4540, 4685, 1094, 5174, 5910, 10126, 6824, 1241, 12926, 12933, 4488, 38, 6655, 13038, 13039, 12903, 12913, 7511, 5281, 12892, 12932, 5405, 8664, 12938, 8048, 2111, 5919, 5293, 1177, 7495, 1613, 13000, 6813, 5298, 6675, 7509, 13002, 12965, 2062, 5268, 6411, 6416, 12934, 13016, 2]
+// Dependencies: [5, 32, 19, 17, 5915, 4489, 1372, 4490, 4493, 4494, 6814, 1980, 6658, 1074, 4815, 1374, 21, 3, 4836, 576, 1485, 5435, 5940, 4832, 1115, 6583, 12928, 6603, 504, 4540, 4685, 1094, 5174, 5910, 10126, 6824, 1241, 12925, 12932, 4488, 38, 6655, 13037, 13038, 12902, 12912, 7511, 5281, 12891, 12931, 5405, 8664, 12937, 8048, 2111, 5919, 5293, 1177, 7495, 1613, 12999, 6813, 5298, 6675, 7509, 13001, 12964, 2062, 5268, 6411, 6416, 12933, 13015, 2]
 // Exports: default
 
-// Module 13037 (PremiumManagePlan)
+// Module 13036 (PremiumManagePlan)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
@@ -27,11 +27,11 @@ import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6813 *
 import PremiumManagementUtils from "PremiumManagementUtils" /* 6824 */;
 import _modDef7495 from "module_7495" /* 7495 */;
 import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 8664 */;
-import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 12892 */;
-import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 12934 */;
-import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 12965 */;
-import useFPDurationLeftDefault from "useFPDurationLeft" /* 13002 */;
-import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 13016 */;
+import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 12891 */;
+import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 12933 */;
+import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 12964 */;
+import useFPDurationLeftDefault from "useFPDurationLeft" /* 13001 */;
+import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 13015 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -624,8 +624,8 @@ export default function PremiumManagePlan() {
   const tmp = closure_32();
   const rect = useSafeAreaInsetsDefault();
   const top = rect.top;
-  const youBarSettingsOutsideSafeAreaTop = navigation(13000).useYouBarSettingsOutsideSafeAreaTop();
-  let obj = navigation(13000);
+  const youBarSettingsOutsideSafeAreaTop = navigation(12999).useYouBarSettingsOutsideSafeAreaTop();
+  let obj = navigation(12999);
   navigation = navigation(1485).useNavigation();
   let items = [navigation];
   const layoutEffect = noop.useLayoutEffect(() => {
@@ -665,7 +665,7 @@ export default function PremiumManagePlan() {
   const obj6 = navigation(504);
   let isInReverseTrial = navigation(7509).useIsInReverseTrial();
   const obj8 = navigation(7509);
-  const tmp15Result = useFPDurationLeftDefault(tmp12.endsAt, navigation(13002).CountDownMessageTypes.SHORT_TIME);
+  const tmp15Result = useFPDurationLeftDefault(tmp12.endsAt, navigation(13001).CountDownMessageTypes.SHORT_TIME);
   const unactivatedFractionalPremiumDurationString = navigation(4488).getUnactivatedFractionalPremiumDurationString(tmp12);
   if (null !== tmp10) {
     if (!tmp10.isPurchasedExternally) {
@@ -775,9 +775,9 @@ export default function PremiumManagePlan() {
         },
       subscription: tmp10
     };
-    const items10 = [tmp29(tmp2(12892), obj17), ];
+    const items10 = [tmp29(tmp2(12891), obj17), ];
     const obj18 = { style: tmp.billingInfo, subscription: tmp10 };
-    items10[1] = tmp29(tmp2(12932), obj18);
+    items10[1] = tmp29(tmp2(12931), obj18);
     obj16.children = items10;
     tmp27Result = tmp27(tmp28, obj16);
   }

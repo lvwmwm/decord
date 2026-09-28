@@ -1,10 +1,10 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 14806
+// Function ID: 14807
 // Name: AppearanceSetting
-// Dependencies: [4653, 1185, 1074, 4767, 504, 1228, 7299, 1115, 2717, 11006, 14809, 14811, 2]
+// Dependencies: [4653, 1185, 1074, 4767, 504, 1228, 7299, 1115, 2717, 11006, 14807, 14809, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 14808 (AppearanceSetting)
+// Module 14806 (AppearanceSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
@@ -50,7 +50,7 @@ const route = SettingBuilders.createRoute({
     return intl.string(util.t["iHH+ky"]);
   },
   parent: null,
-  IconComponent: fn(14809).PaintPaletteIcon,
+  IconComponent: fn(14807).PaintPaletteIcon,
   useTrailing: useAppearanceSettingTrailing,
   screen: {
     route: fn(1074).UserSettingsSections.APPEARANCE,

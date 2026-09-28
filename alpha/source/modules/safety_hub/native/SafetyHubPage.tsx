@@ -1,10 +1,10 @@
-// Module ID: 14301
-// Function ID: 14302
+// Module ID: 14300
+// Function ID: 14301
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 7881, 7868, 1074, 21, 6010, 11362, 8047, 1177, 5281, 1115, 504, 3103, 4832, 14302, 1380, 14303, 4836, 576, 14304, 11389, 11361, 14298, 5298, 11360, 1241, 5179, 5184, 4800, 14305, 1981, 14306, 14308, 2]
+// Dependencies: [19, 17, 7881, 7868, 1074, 21, 6010, 11362, 8047, 1177, 5281, 1115, 504, 3103, 4832, 14301, 1380, 14302, 4836, 576, 14303, 11389, 11361, 14297, 5298, 11360, 1241, 5179, 5184, 4800, 14304, 1981, 14305, 14307, 2]
 // Exports: default
 
-// Module 14301 (SafetyHubPage)
+// Module 14300 (SafetyHubPage)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -21,8 +21,8 @@ import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /
 import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8047 */;
 import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11360 */;
 import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11362 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14302 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14303 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14301 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14302 */;
 import noop from "module_19" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 7881 */;
 
@@ -204,7 +204,7 @@ export default function SafetyHubPage(visible) {
   const effect = noop.useEffect(() => {
     if (visible) {
       if (null != safetyHubFetchError) {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14305, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14304, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     ActionSheetActionCreatorsDefault.hideActionSheet("SafetyHubErrorActionSheet");

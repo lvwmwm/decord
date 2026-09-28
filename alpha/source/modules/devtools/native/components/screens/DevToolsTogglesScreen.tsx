@@ -1,10 +1,10 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15308
+// Function ID: 15309
 // Name: DevToolsTogglesScreen
-// Dependencies: [32, 19, 17, 5939, 4835, 21, 5829, 4836, 576, 5917, 4528, 6622, 504, 5999, 15294, 6402, 13987, 5279, 15311, 6471, 2]
+// Dependencies: [32, 19, 17, 5939, 4835, 21, 5829, 4836, 576, 5917, 4528, 6622, 504, 5999, 15292, 6402, 13986, 5279, 15309, 6471, 2]
 // Exports: default
 
-// Module 15310 (DevToolsTogglesScreen)
+// Module 15308 (DevToolsTogglesScreen)
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import fuzzysearchDefault from "fuzzysearch" /* 5829 */;
@@ -90,8 +90,8 @@ export default function DevToolsTogglesScreen() {
   let tmp = closure_12();
   const tmp3 = _slicedToArray(noop.useState(""), 2);
   const query = tmp3[0];
-  const manaTextMigrationHighlightRestartNotice = query(13987).useManaTextMigrationHighlightRestartNotice();
-  let obj = query(13987);
+  const manaTextMigrationHighlightRestartNotice = query(13986).useManaTextMigrationHighlightRestartNotice();
+  let obj = query(13986);
   const tmp5 = query;
   const items = [DesignTogglesStore];
   const items1 = [query];
@@ -122,9 +122,9 @@ export default function DevToolsTogglesScreen() {
       label: "Clear All",
       variant: "danger",
       onPress() {
-        first(15311).clearAll();
-        const obj = first(15311);
-        first(15294).clearAll();
+        first(15309).clearAll();
+        const obj = first(15309);
+        first(15292).clearAll();
       },
       arrow: true
     }),
@@ -135,9 +135,9 @@ export default function DevToolsTogglesScreen() {
     label: "Clear All",
     variant: "danger",
     onPress() {
-      first(15311).clearAll();
-      const obj = first(15311);
-      first(15294).clearAll();
+      first(15309).clearAll();
+      const obj = first(15309);
+      first(15292).clearAll();
     },
     arrow: true
   };
@@ -158,7 +158,7 @@ export default function DevToolsTogglesScreen() {
             description: tmp3,
             value: tmp2,
             onValueChange(arg0) {
-              return first(15311).toggle(query, arg0);
+              return first(15309).toggle(query, arg0);
             }
           }, tmp);
         })

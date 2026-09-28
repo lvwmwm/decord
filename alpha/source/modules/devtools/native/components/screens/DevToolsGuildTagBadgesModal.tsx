@@ -1,12 +1,12 @@
-// Module ID: 15307
-// Function ID: 15308
+// Module ID: 15305
+// Function ID: 15306
 // Name: DevToolsGuildTagBadgesModal
-// Dependencies: [19, 21, 7339, 6421, 7288, 10386, 15308, 2]
+// Dependencies: [19, 21, 7339, 6421, 7288, 10386, 15306, 2]
 
-// Module 15307 (DevToolsGuildTagBadgesModal)
+// Module 15305 (DevToolsGuildTagBadgesModal)
 import HeaderShared from "HeaderShared" /* 7288 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10386 */;
-import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 15308 */;
+import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 15306 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

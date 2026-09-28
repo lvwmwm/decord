@@ -1,10 +1,10 @@
-// Module ID: 14724
-// Function ID: 14725
+// Module ID: 14722
+// Function ID: 14723
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 5756, 14624, 21, 4836, 14625, 14725, 4566, 6494, 2]
+// Dependencies: [19, 17, 5756, 14624, 21, 4836, 14625, 14723, 4566, 6494, 2]
 
-// Module 14724 (QuestDockBlurredHeaderPlaceholder)
-import thumbHashToRGBA from "thumbHashToRGBA" /* 14725 */;
+// Module 14722 (QuestDockBlurredHeaderPlaceholder)
+import thumbHashToRGBA from "thumbHashToRGBA" /* 14723 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

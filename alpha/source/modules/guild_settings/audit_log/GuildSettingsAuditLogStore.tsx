@@ -1,12 +1,12 @@
-// Module ID: 17338
-// Function ID: 17339
+// Module ID: 17342
+// Function ID: 17343
 // Name: GuildSettingsAuditLogStore
-// Dependencies: [17339, 2049, 2103, 2108, 2102, 2067, 1074, 1086, 12, 504, 573, 2]
+// Dependencies: [17343, 2049, 2103, 2108, 2102, 2067, 1074, 1086, 12, 504, 573, 2]
 
-// Module 17338 (GuildSettingsAuditLogStore)
+// Module 17342 (GuildSettingsAuditLogStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AuditLogRecord from "AuditLogRecord" /* 17339 */;
+import AuditLogRecord from "AuditLogRecord" /* 17343 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -14,7 +14,7 @@ import BigFlagUtils from "BigFlagUtils" /* 1086 */;
 
 const require = globalThis.__r;
 
-const AuditLogChange = fn(17339).AuditLogChange;
+const AuditLogChange = fn(17343).AuditLogChange;
 let closure_4 = fn(2049).isGuildSelectableChannelType;
 const hasAnyPermission = fn(2103).hasAnyPermission;
 const Constants = fn(1074);

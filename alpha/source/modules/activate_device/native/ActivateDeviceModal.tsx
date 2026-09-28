@@ -1,10 +1,10 @@
-// Module ID: 13419
-// Function ID: 13420
+// Module ID: 13418
+// Function ID: 13419
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 13418, 6795, 6413, 1115, 13420, 6421, 2]
+// Dependencies: [19, 21, 13417, 6795, 6413, 1115, 13419, 6421, 2]
 // Exports: default
 
-// Module 13419 (ActivateDeviceModal)
+// Module 13418 (ActivateDeviceModal)
 import _modDef6413 from "module_6413" /* 6413 */;
 import noop from "module_19" /* 19 */;
 
@@ -38,7 +38,7 @@ export default function ActivateDeviceModal(userCode) {
           return null;
         },
         render() {
-          return jsx(userCode(13420).ActivateDevice, { onClose, prefilledUserCode });
+          return jsx(userCode(13419).ActivateDevice, { onClose, prefilledUserCode });
         }
       }
     };

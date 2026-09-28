@@ -1,7 +1,7 @@
 // Module ID: 2044
 // Function ID: 2045
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 2045, 2099, 1372, 2005, 8502, 1074, 8808, 8809, 4458, 8503, 13532, 1110, 8827, 573, 8803, 8713, 1364, 1979, 6943, 504, 2]
+// Dependencies: [32, 502, 2045, 2099, 1372, 2005, 8502, 1074, 8808, 8809, 4458, 8503, 13531, 1110, 8827, 573, 8803, 8713, 1364, 1979, 6943, 504, 2]
 
 // Module 2044 (EmbeddedActivitiesStore)
 import initializeDefault from "initialize" /* 504 */;
@@ -269,7 +269,7 @@ function updateEmbeddedActivities(content_classification) {
       obj6.delete("" + application_id + ":" + tmp59);
     }
     obj6 = map4;
-    const someResult1 = mapped.some((item) => application_id(13532).isActivityParticipantCurrentUserCurrentSession(item));
+    const someResult1 = mapped.some((item) => application_id(13531).isActivityParticipantCurrentUserCurrentSession(item));
   }
 }
 const ActivityPanelConstants = fn(8502);

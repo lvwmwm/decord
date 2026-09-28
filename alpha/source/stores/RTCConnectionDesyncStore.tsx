@@ -1,9 +1,9 @@
-// Module ID: 13300
-// Function ID: 13301
+// Module ID: 13299
+// Function ID: 13300
 // Name: RTCConnectionDesyncStore
 // Dependencies: [4856, 2045, 4859, 1372, 4855, 4860, 1074, 4857, 2018, 4988, 7661, 4891, 504, 573, 2]
 
-// Module 13300 (RTCConnectionDesyncStore)
+// Module 13299 (RTCConnectionDesyncStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import CachedEntriesMapDefault from "CachedEntriesMap" /* 2018 */;

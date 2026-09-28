@@ -1,8 +1,8 @@
-// Module ID: 16114
-// Function ID: 16115
+// Module ID: 16110
+// Function ID: 16111
 // Dependencies: [2]
 
-// Module 16114
+// Module 16110
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/icymi/bg-fade-3x.png.js");

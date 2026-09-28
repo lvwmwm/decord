@@ -1,10 +1,10 @@
-// Module ID: 17227
-// Function ID: 17228
+// Module ID: 17231
+// Function ID: 17232
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 6957, 6958, 1074, 2042, 21, 2029, 6959, 4693, 6800, 5042, 4836, 576, 1613, 1115, 2487, 1241, 573, 2031, 4800, 5039, 17228, 1981, 6571, 5279, 17229, 4832, 5281, 2]
+// Dependencies: [19, 17, 6957, 6958, 1074, 2042, 21, 2029, 6959, 4693, 6800, 5042, 4836, 576, 1613, 1115, 2487, 1241, 573, 2031, 4800, 5039, 17232, 1981, 6571, 5279, 17233, 4832, 5281, 2]
 // Exports: default
 
-// Module 17227 (ParentalConsentWarningModal)
+// Module 17231 (ParentalConsentWarningModal)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -99,7 +99,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       tmp2(5042).enqueue(() => daysRemaining(callback[10]).openUserSettings({ screen: constants3.FAMILY_CENTER }));
       const tmp2Result3 = tmp2(5042);
     } else {
-      tmp2(5039).pushLazy(asyncRequireImpl(17228, dependencyMap.paths));
+      tmp2(5039).pushLazy(asyncRequireImpl(17232, dependencyMap.paths));
       const tmp2Result4 = tmp2(5039);
     }
   }, items2);

@@ -1,7 +1,7 @@
 // Module ID: 5589
 // Function ID: 5590
 // Name: GatewayConnectionStore
-// Dependencies: [5, 1220, 502, 5590, 2045, 1993, 4859, 4886, 2099, 5591, 4875, 1074, 1084, 13173, 13222, 3, 510, 6756, 5723, 1364, 13211, 12, 4888, 13190, 504, 573, 2]
+// Dependencies: [5, 1220, 502, 5590, 2045, 1993, 4859, 4886, 2099, 5591, 4875, 1074, 1084, 13172, 13221, 3, 510, 6756, 5723, 1364, 13210, 12, 4888, 13189, 504, 573, 2]
 
 // Module 5589 (GatewayConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -9,10 +9,10 @@ import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GatewaySocketSingleton from "GatewaySocketSingleton" /* 13173 */;
-import ConnectionStateDefault from "ConnectionState" /* 13190 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13211 */;
-import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 13222 */;
+import GatewaySocketSingleton from "GatewaySocketSingleton" /* 13172 */;
+import ConnectionStateDefault from "ConnectionState" /* 13189 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13210 */;
+import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 13221 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -175,7 +175,7 @@ function handleLocalPresenceChange() {
 const Constants = fn(1074);
 ({ RTCConnectionStates: closure_15, AppStates: closure_16 } = Constants);
 const UserSettingsTypes = fn(1084).UserSettingsTypes;
-fn(13173).socket.dispatcher.getDispatchHandler = dispatchSocketMessageDefault;
+fn(13172).socket.dispatcher.getDispatchHandler = dispatchSocketMessageDefault;
 let closure_19 = new LoggerDefault("ConnectionStore");
 let closure_20 = 0;
 let c21 = null;
@@ -234,9 +234,9 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
     const socket2 = GatewaySocketSingleton.socket;
     let connectResult = socket2.isSessionEstablished();
     if (connectResult) {
-      const socket3 = tmp(13173).socket;
+      const socket3 = tmp(13172).socket;
       socket3.close();
-      const socket4 = tmp(13173).socket;
+      const socket4 = tmp(13172).socket;
       connectResult = socket4.connect();
     }
     return connectResult;
@@ -309,13 +309,13 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
     }
     if (isIOSResult) {
       if (null == guildId.channelId) {
-        const socket3 = tmp(13173).socket;
+        const socket3 = tmp(13172).socket;
         socket3.close(true);
       } else {
-        const socket = tmp(13173).socket;
+        const socket = tmp(13172).socket;
         if (socket.isClosed()) {
           PauseGatewaySocketAll.setIsPaused(false);
-          const socket2 = tmp(13173).socket;
+          const socket2 = tmp(13172).socket;
           socket2.connect();
         }
       }
@@ -342,7 +342,7 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
           if (userId.guildId !== require("GatewaySocketSingleton").localVoiceState.guildId) {
             return acc;
           } else {
-            const localVoiceState = tmp(13173).localVoiceState;
+            const localVoiceState = tmp(13172).localVoiceState;
             localVoiceState.setState({ guildId: null, channelId: null });
           }
           tmp = _require;
@@ -498,9 +498,9 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
         const allActiveStreamKeys1 = StreamRTCConnectionStore.getAllActiveStreamKeys();
         const found = allActiveStreamKeys1.filter((item) => item !== closure_0);
         const item = found.forEach((item) => {
-          const socket = closure_0(13173).socket;
+          const socket = closure_0(13172).socket;
           if (socket.isSessionEstablished()) {
-            const socket2 = closure_0(13173).socket;
+            const socket2 = closure_0(13172).socket;
             socket2.streamDelete(item);
           }
         });
@@ -513,10 +513,10 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
   STREAM_STOP: function handleStreamStop(streamKey) {
     const socket = GatewaySocketSingleton.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = tmp(13173).socket;
+      const socket2 = tmp(13172).socket;
       socket2.streamDelete(streamKey.streamKey);
     }
-    const localVoiceState = tmp(13173).localVoiceState;
+    const localVoiceState = tmp(13172).localVoiceState;
     localVoiceState.update();
     return false;
   },

@@ -1,9 +1,9 @@
-// Module ID: 17251
-// Function ID: 17252
+// Module ID: 17255
+// Function ID: 17256
 // Name: SettingTreeCacheLifecycleManager
-// Dependencies: [6539, 14253, 2]
+// Dependencies: [6539, 14252, 2]
 
-// Module 17251 (SettingTreeCacheLifecycleManager)
+// Module 17255 (SettingTreeCacheLifecycleManager)
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 const prototype = function SettingTreeManagerLifecycleManager() {

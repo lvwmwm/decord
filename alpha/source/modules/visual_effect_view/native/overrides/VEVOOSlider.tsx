@@ -1,9 +1,9 @@
-// Module ID: 15554
-// Function ID: 15555
+// Module ID: 15552
+// Function ID: 15553
 // Name: VEVOOSlider
 // Dependencies: [19, 21, 4836, 1364, 576, 7726, 2]
 
-// Module 15554 (VEVOOSlider)
+// Module 15552 (VEVOOSlider)
 import nativeDefault from "native" /* 576 */;
 import _modDef7726 from "module_7726" /* 7726 */;
 import noop from "module_19" /* 19 */;

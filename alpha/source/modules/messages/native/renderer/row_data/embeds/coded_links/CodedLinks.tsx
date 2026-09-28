@@ -1,10 +1,10 @@
-// Module ID: 12780
-// Function ID: 12781
+// Module ID: 12779
+// Function ID: 12780
 // Name: CodedLinks
-// Dependencies: [32, 4470, 2067, 1372, 7103, 11420, 4821, 12781, 12782, 12792, 12794, 12787, 12796, 12789, 11015, 11285, 11026, 11024, 12797, 1370, 2]
+// Dependencies: [32, 4470, 2067, 1372, 7103, 11420, 4821, 12780, 12781, 12791, 12793, 12786, 12795, 12788, 11015, 11285, 11026, 11024, 12796, 1370, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 12780 (CodedLinks)
+// Module 12779 (CodedLinks)
 import ApplicationCodedLink from "ApplicationCodedLink" /* 7103 */;
 import _slicedToArray from "module_32" /* 32 */;
 import LurkingStore from "LurkingStore" /* 4470 */;
@@ -44,7 +44,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                   const type2 = applicationCodedLinkData.type;
                   if (tmp(4821).CodedLinkType.ACTIVITY_BOOKMARK === type2) {
                     const obj3 = { theme: tmp32, embedUrl: url, message: tmp31, app, params: applicationCodedLinkData.params };
-                    return tmp(12781).createActivityMessageEmbed(obj3);
+                    return tmp(12780).createActivityMessageEmbed(obj3);
                   } else {
                     if (tmp(4821).CodedLinkType.APP_DIRECTORY_PROFILE !== type2) {
                       if (tmp(4821).CodedLinkType.APP_OAUTH2_LINK !== type2) {
@@ -64,11 +64,11 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
             tmpResult = tmp(7103);
           }
         } else if (tmp(4821).CodedLinkType.INVITE === type) {
-          return tmp(12782).createInviteEmbed(message, code, theme);
+          return tmp(12781).createInviteEmbed(message, code, theme);
         } else if (tmp(4821).CodedLinkType.TEMPLATE === type) {
-          return tmp(12792).createGuildTemplateEmbed(code, theme);
+          return tmp(12791).createGuildTemplateEmbed(code, theme);
         } else if (tmp(4821).CodedLinkType.BUILD_OVERRIDE === type) {
-          return tmp(12794).createBuildOverrideEmbed(code, theme);
+          return tmp(12793).createBuildOverrideEmbed(code, theme);
         } else if (tmp(4821).CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
           currentUser = UserStore.getCurrentUser();
           let isStaffResult;
@@ -92,17 +92,17 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
           }
           let buildOverrideEmbed = null;
           if (isStaffResult) {
-            buildOverrideEmbed = tmp(12794).createBuildOverrideEmbed(code, theme);
-            const tmpResult25 = tmp(12794);
+            buildOverrideEmbed = tmp(12793).createBuildOverrideEmbed(code, theme);
+            const tmpResult25 = tmp(12793);
           }
           return buildOverrideEmbed;
         } else if (tmp(4821).CodedLinkType.EVENT === type) {
-          return tmp(12787).createGuildScheduledEventLinkEmbed(code, theme);
+          return tmp(12786).createGuildScheduledEventLinkEmbed(code, theme);
         } else if (tmp(4821).CodedLinkType.CHANNEL_LINK === type) {
-          return tmp(12796).createVoiceChannelLinkEmbed(code, theme);
+          return tmp(12795).createVoiceChannelLinkEmbed(code, theme);
         } else if (tmp(4821).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
           const obj5 = { theme, inviteCode: code };
-          return tmp(12789).createEmbeddedActivityInviteEmbed(obj5);
+          return tmp(12788).createEmbeddedActivityInviteEmbed(obj5);
         } else if (tmp(4821).CodedLinkType.EXPERIMENT === type) {
           let experimentEmbed = null;
           if (tmpResult29.canSeeExperimentEmbeds()) {
@@ -117,7 +117,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                 if (tmp(4821).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
                   if (tmp(4821).CodedLinkType.QUESTS_EMBED === type) {
                     const obj6 = { theme, questId: code, currentUser };
-                    return tmp(12797).createQuestsEmbed(obj6);
+                    return tmp(12796).createQuestsEmbed(obj6);
                   } else {
                     if (tmp(4821).CodedLinkType.COLLECTIBLES_SHOP !== type) {
                       if (tmp(4821).CodedLinkType.GAME_PROFILE !== type) {

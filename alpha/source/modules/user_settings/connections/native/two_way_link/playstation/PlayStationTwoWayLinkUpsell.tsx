@@ -1,17 +1,17 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14504
+// Function ID: 14505
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 1074, 21, 4836, 2111, 14503, 1115, 5899, 14506, 2029, 8560, 2]
+// Dependencies: [19, 1074, 21, 4836, 2111, 14502, 1115, 5899, 14505, 2029, 8560, 2]
 // Exports: PlayStationTwoWayLinkUpsell
 
-// Module 14505 (PlayStationTwoWayLinkUpsell)
+// Module 14504 (PlayStationTwoWayLinkUpsell)
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 8560 */;
-import OneWayToTwoWayLinkUpsell from "OneWayToTwoWayLinkUpsell" /* 14503 */;
-import _modDef14506 from "module_14506" /* 14506 */;
+import OneWayToTwoWayLinkUpsell from "OneWayToTwoWayLinkUpsell" /* 14502 */;
+import _modDef14505 from "module_14505" /* 14505 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,7 +32,7 @@ export const PlayStationTwoWayLinkUpsell = function PlayStationTwoWayLinkUpsell(
   const intl2 = util.intl;
   obj2.body = intl2.format(util.t.lTZBit, { help_article: articleURL });
   const obj3 = { style: tmp.upsellImage, source: null, resizeMode: "contain" };
-  obj3.source = _modDef14506;
+  obj3.source = _modDef14505;
   obj2.img = jsx(FastImageDefault, { style: tmp.upsellImage, source: null, resizeMode: "contain" });
   obj2.newIndicatorDismissibleContent = dismissible_content.DismissibleContent.PS_ONE_WAY_RECONNECT;
   obj2.onPress = function onPress() {

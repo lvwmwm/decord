@@ -1,9 +1,9 @@
-// Module ID: 17131
-// Function ID: 17132
+// Module ID: 17135
+// Function ID: 17136
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 1993, 4859, 4854, 4855, 4853, 8545, 4861, 3, 38, 9104, 9469, 6539, 2040, 9243, 1370, 5203, 1115, 17132, 9246, 2]
+// Dependencies: [5, 502, 1993, 4859, 4854, 4855, 4853, 8545, 4861, 3, 38, 9104, 9469, 6539, 2040, 9243, 1370, 5203, 1115, 17136, 9246, 2]
 
-// Module 17131 (GameConsoleManager)
+// Module 17135 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import util from "util" /* 1115 */;
@@ -11,7 +11,7 @@ import GlobalUtils from "GlobalUtils" /* 1370 */;
 import Timers from "Timers" /* 2040 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
 import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9243 */;
-import _modDef17132 from "module_17132" /* 17132 */;
+import _modDef17136 from "module_17136" /* 17136 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
@@ -261,7 +261,7 @@ const prototype = function GameConsoleManager() {
             obj.name = intl2.string(util.t["UQMV/E"]);
             device = obj;
           }
-          const tmp8Result = _modDef17132(device, result, error);
+          const tmp8Result = _modDef17136(device, result, error);
           if (null != tmp8Result) {
             const obj2 = { title: null, body: null, errorCodeMessage: null, reconnectPlatformType: null };
             ({ title: obj3.title, body: obj3.body, errorCodeMessage: obj3.errorCodeMessage } = tmp8Result);

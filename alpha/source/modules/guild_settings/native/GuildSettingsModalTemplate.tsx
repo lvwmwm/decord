@@ -1,10 +1,10 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 17451
+// Function ID: 17452
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 4836, 576, 17448, 8053, 4832, 1115, 6460, 1485, 5209, 11270, 4735, 5936, 6795, 5279, 6024, 6506, 5281, 6461, 5919, 4792, 6034, 17449, 6610, 4527, 6025, 8370, 4779, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4836, 576, 17452, 8053, 4832, 1115, 6460, 1485, 5209, 11270, 4735, 5936, 6795, 5279, 6024, 6506, 5281, 6461, 5919, 4792, 6034, 17453, 6610, 4527, 6025, 8370, 4779, 2]
 // Exports: default
 
-// Module 17447 (GuildSettingsModalTemplate)
+// Module 17451 (GuildSettingsModalTemplate)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
@@ -19,7 +19,7 @@ import ClipboardUtils from "ClipboardUtils" /* 6610 */;
 import HeaderActionButton from "HeaderActionButton" /* 6795 */;
 import native from "native" /* 8370 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 11270 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 17448 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 17452 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -471,7 +471,7 @@ let closure_14 = noop.memo(function TemplateControls(arg0) {
   };
   const tmp = _slicedToArray(noop.useState(false), 2);
   _slicedToArray = tmp[1];
-  const tmp3 = guildTemplate(17449)(guildTemplate.code);
+  const tmp3 = guildTemplate(17453)(guildTemplate.code);
   noop = tmp3;
   let obj = { spacing: guildTemplate(576).space.PX_12, children: null };
   let obj2 = { label: null, children: null };

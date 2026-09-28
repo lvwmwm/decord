@@ -1,10 +1,10 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13521
+// Function ID: 13522
 // Name: GuildProgressBar
 // Dependencies: [19, 17, 21, 4836, 11967, 576, 4566, 4837, 4840, 2]
 // Exports: default
 
-// Module 13522 (GuildProgressBar)
+// Module 13521 (GuildProgressBar)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4837 */;
 import timingPresets from "timingPresets" /* 4840 */;

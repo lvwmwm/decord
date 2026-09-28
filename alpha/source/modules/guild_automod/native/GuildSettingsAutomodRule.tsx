@@ -1,22 +1,22 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17322
+// Function ID: 17323
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 17302, 17304, 11341, 21, 4836, 576, 1485, 16651, 2021, 17305, 5209, 1115, 5936, 6795, 8053, 5279, 4832, 6024, 6621, 17319, 17330, 17333, 5999, 5917, 11346, 4527, 4735, 6610, 6461, 2]
+// Dependencies: [5, 32, 19, 17306, 17308, 11341, 21, 4836, 576, 1485, 16655, 2021, 17309, 5209, 1115, 5936, 6795, 8053, 5279, 4832, 6024, 6621, 17323, 17334, 17337, 5999, 5917, 11346, 4527, 4735, 6610, 6461, 2]
 // Exports: default
 
-// Module 17318 (GuildSettingsAutomodRule)
+// Module 17322 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 576 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17305 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17309 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useAutomodRulesList = fn(17302).useAutomodRulesList;
-const GuildSettingsAutomodRuleStore = fn(17304);
+const useAutomodRulesList = fn(17306).useAutomodRulesList;
+const GuildSettingsAutomodRuleStore = fn(17308);
 ({ useAutomodEditingRuleActions: closure_7, useAutomodEditingRuleState: closure_8 } = GuildSettingsAutomodRuleStore);
 const MAX_RULE_NAME_LENGTH = fn(11341).MAX_RULE_NAME_LENGTH;
 const jsxProd = fn(21);

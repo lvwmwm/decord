@@ -1,10 +1,10 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 16254
+// Function ID: 16255
 // Name: VibegrationsRemix
-// Dependencies: [5, 12624, 8496, 3715, 1115, 2]
+// Dependencies: [5, 12642, 8496, 3715, 1115, 2]
 // Exports: remixVibegrationsProjectInto
 
-// Module 16258 (VibegrationsRemix)
+// Module 16254 (VibegrationsRemix)
 import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8496 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -136,7 +136,7 @@ let closure_9 = async function _remixVibegrationsProjectInto(arg0, guild_id) {
     }
   })();
 };
-const VibegrationsConnectionStore = fn(12624);
+const VibegrationsConnectionStore = fn(12642);
 ({ VibegrationsRemixError: closure_4, ensureConnection: hasOwnProperty, remixProjectWorkspace: metroRequire, sendUserMessage: closure_7 } = VibegrationsConnectionStore);
 let c8 = " (Remix)";
 const size = fn(2);

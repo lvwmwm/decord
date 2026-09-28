@@ -1,10 +1,10 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 17563
+// Function ID: 17564
 // Name: GuildSettingsRoleSubscriptionTiers
-// Dependencies: [32, 19, 17, 9049, 2067, 4462, 14752, 1074, 1374, 21, 4836, 576, 4800, 17560, 1981, 1115, 6655, 14778, 4832, 9203, 563, 14774, 5899, 9713, 1613, 13443, 1485, 14760, 17548, 13438, 14759, 12, 5936, 17562, 17563, 38, 9271, 17597, 17558, 2]
+// Dependencies: [32, 19, 17, 9049, 2067, 4462, 14750, 1074, 1374, 21, 4836, 576, 4800, 17564, 1981, 1115, 6655, 14776, 4832, 9203, 563, 14772, 5899, 9713, 1613, 13442, 1485, 14758, 17552, 13437, 14757, 12, 5936, 17566, 17567, 38, 9271, 17601, 17562, 2]
 // Exports: default
 
-// Module 17559 (GuildSettingsRoleSubscriptionTiers)
+// Module 17563 (GuildSettingsRoleSubscriptionTiers)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -13,8 +13,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800
 import Text_Text from "Text/Text" /* 4832 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9203 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14774 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17558 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14772 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17562 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
@@ -102,7 +102,7 @@ function EditListingButton(editStateId) {
     const obj5 = {
       onPress: editStateId.onPress,
       onLongPress() {
-          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17560, dependencyMap.paths), "TierArchiveOrDelete", { editStateId, guildId, groupListingId });
+          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17564, dependencyMap.paths), "TierArchiveOrDelete", { editStateId, guildId, groupListingId });
         },
       children: null
     };
@@ -146,17 +146,17 @@ function EditListingButton(editStateId) {
     const intl = tmp2(1115).intl;
     const obj13 = { price: tmp2(6655).formatPrice(first, first2.currency), interval: null };
     const tmp2Result = tmp2(6655);
-    obj13.interval = tmp2(14778).formatPlanInterval(first2);
+    obj13.interval = tmp2(14776).formatPlanInterval(first2);
     let formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t.CgmBaG, obj13);
-    const tmp2Result4 = tmp2(14778);
+    const tmp2Result4 = tmp2(14776);
   } else {
     const intl2 = tmp2(1115).intl;
     const obj14 = { price: tmp2(6655).formatPrice(first, constants.USD), interval: null };
     const tmp2Result5 = tmp2(6655);
     const obj15 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
-    obj14.interval = tmp2(14778).formatPlanInterval(obj15);
+    obj14.interval = tmp2(14776).formatPlanInterval(obj15);
     formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.CgmBaG, obj14);
-    const tmp2Result6 = tmp2(14778);
+    const tmp2Result6 = tmp2(14776);
   }
 }
 function GuildSettingsRoleSubscriptionsTiersInner(guildId) {
@@ -220,8 +220,8 @@ function GuildSettingsRoleSubscriptionsTiersInner(guildId) {
         id = first.id;
       }
       obj.groupListingId = id;
-      const result = tmp(17562).pushTierTemplateSelectionScene(navigation, obj);
-      const tmpResult = tmp(17562);
+      const result = tmp(17566).pushTierTemplateSelectionScene(navigation, obj);
+      const tmpResult = tmp(17566);
     } else {
       const obj2 = { guildId, groupListingId: null, onAfterTierCreation: null };
       let id1;
@@ -232,8 +232,8 @@ function GuildSettingsRoleSubscriptionsTiersInner(guildId) {
       obj2.onAfterTierCreation = function onAfterTierCreation() {
         navigation.navigate(constants.ROLE_SUBSCRIPTIONS_TIERS);
       };
-      const result1 = tmp(17563).openTierCreationModal(obj2);
-      const tmpResult2 = tmp(17563);
+      const result1 = tmp(17567).openTierCreationModal(obj2);
+      const tmpResult2 = tmp(17567);
     }
   }, items1);
   const obj6 = guildEligibleForTierTemplates(first[21]);
@@ -262,7 +262,7 @@ function GuildSettingsRoleSubscriptionsTiersInner(guildId) {
             if (first != null) {
               id = first.id;
             }
-            guildEligibleForTierTemplates(17562).pushTierEditScene(navigation, {
+            guildEligibleForTierTemplates(17566).pushTierEditScene(navigation, {
               groupListingId: id,
               initialEditStateId,
               onBeforeDispatchNewListing(id) {
@@ -316,7 +316,7 @@ function GuildSettingsRoleSubscriptionsTiersInner(guildId) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const MAX_SUBSCRIPTION_TIERS = fn(14752).MAX_SUBSCRIPTION_TIERS;
+const MAX_SUBSCRIPTION_TIERS = fn(14750).MAX_SUBSCRIPTION_TIERS;
 const Constants = fn(1074);
 ({ CurrencyCodes: map1, GuildSettingsSections: closure_14, GuildSettingsSubsections: closure_15 } = Constants);
 const SubscriptionIntervalTypes = fn(1374).SubscriptionIntervalTypes;

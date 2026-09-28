@@ -1,13 +1,13 @@
-// Module ID: 15060
-// Function ID: 15061
+// Module ID: 15058
+// Function ID: 15059
 // Name: ProfileUpdatesNotificationSetting
-// Dependencies: [7417, 11006, 1115, 2021, 15061, 2]
+// Dependencies: [7417, 11006, 1115, 2021, 15059, 2]
 
-// Module 15060 (ProfileUpdatesNotificationSetting)
+// Module 15058 (ProfileUpdatesNotificationSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
-import ProfileUpdatesNotificationUtils from "ProfileUpdatesNotificationUtils" /* 15061 */;
+import ProfileUpdatesNotificationUtils from "ProfileUpdatesNotificationUtils" /* 15059 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

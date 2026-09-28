@@ -1,12 +1,12 @@
-// Module ID: 16510
-// Function ID: 16511
+// Module ID: 16514
+// Function ID: 16515
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 576, 4836, 16509, 13114, 10615, 1115, 3877, 2]
+// Dependencies: [19, 17, 21, 576, 4836, 16513, 13113, 10615, 1115, 3877, 2]
 
-// Module 16510 (SmartSearchExpandButton)
+// Module 16514 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 576 */;
 import _modDef3877 from "module_3877" /* 3877 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 16509 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 16513 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,7 +32,7 @@ export default noop.memo((isExpanded) => {
   isExpanded = isExpanded.isExpanded;
   const tmp3 = closure_9(useSearchHostSurface.useSearchHostSurfaceColor());
   if (isExpanded) {
-    let ChevronSmallDownIcon = tmp(13114).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp(13113).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp(10615).ChevronSmallDownIcon;
   }

@@ -1,10 +1,10 @@
-// Module ID: 15842
-// Function ID: 15843
+// Module ID: 15840
+// Function ID: 15841
 // Name: GuildActionRows
-// Dependencies: [19, 17, 6952, 4851, 9577, 6518, 5018, 21, 4836, 576, 6753, 4654, 2029, 563, 6948, 5039, 11044, 1981, 11868, 11774, 1115, 13389, 2]
+// Dependencies: [19, 17, 6952, 4851, 9577, 6518, 5018, 21, 4836, 576, 6753, 4654, 2029, 563, 6948, 5039, 11044, 1981, 11868, 11774, 1115, 13388, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 15842 (GuildActionRows)
+// Module 15840 (GuildActionRows)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
@@ -82,7 +82,7 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   }
   obj5.name = jsx(guild(11868).BaseChannelName, { name: string2Result, mode: SELECTED });
   const tmp2Result = tmp2(11868);
-  obj5.icon = jsx(guild(11868).BaseChannelIcon, { mode: SELECTED, IconComponent: guild(13389).ChannelListMagnifyingGlassIcon });
+  obj5.icon = jsx(guild(11868).BaseChannelIcon, { mode: SELECTED, IconComponent: guild(13388).ChannelListMagnifyingGlassIcon });
   obj5.channelInfo = tmp11;
   return <tmp2Result onPress={callback} style={tmp.container} accessible accessibilityLabel={null} accessibilityState={null} mode={null} name={null} icon={null} channelInfo={null} />;
 };

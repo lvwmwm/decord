@@ -1,10 +1,10 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16130
+// Function ID: 16131
 // Name: ICYMIShared
-// Dependencies: [19, 17, 6724, 2045, 2108, 4469, 1372, 1074, 21, 7796, 9217, 5401, 8176, 16061, 6531, 6665, 6459, 6876, 4763, 16095, 1364, 576, 1177, 8276, 5896, 5288, 5435, 4832, 7055, 16135, 7365, 504, 4988, 7799, 7624, 5408, 7798, 6729, 9076, 1115, 16096, 4767, 4531, 4683, 4566, 4837, 4849, 5385, 6630, 4823, 2]
+// Dependencies: [19, 17, 6724, 2045, 2108, 4469, 1372, 1074, 21, 7796, 9217, 5401, 8176, 16057, 6531, 6665, 6459, 6876, 4763, 16091, 1364, 576, 1177, 8276, 5896, 5288, 5435, 4832, 7055, 16131, 7365, 504, 4988, 7799, 7624, 5408, 7798, 6729, 9076, 1115, 16092, 4767, 4531, 4683, 4566, 4837, 4849, 5385, 6630, 4823, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 16134 (ICYMIShared)
+// Module 16130 (ICYMIShared)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -21,7 +21,7 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 76
 import ICYMIUtils from "ICYMIUtils" /* 7798 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7799 */;
 import ClipView from "ClipView" /* 8276 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 16135 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 16131 */;
 import noop from "module_19" /* 19 */;
 import ThreadMessageStore from "ThreadMessageStore" /* 6724 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -152,7 +152,7 @@ const Constants = fn(1074);
 ({ AnalyticsObjects: c10, AnalyticsObjectTypes: closure_11, AnalyticsPages: closure_12, DEFAULT_ROLE_COLOR_HEX: map1, MAX_MESSAGES_FOR_JUMP: closure_14, MessageFlags: closure_15, Permissions: closure_16, Routes: closure_17 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_18, jsxs: closure_19, Fragment: closure_20 } = jsxProd);
-const createICYMIStyles = fn(16095);
+const createICYMIStyles = fn(16091);
 createICYMIStyles.createICYMIStyles((paddingBottom) => {
   let num = 0;
   if (obj.isAndroid()) {

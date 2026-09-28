@@ -1,9 +1,9 @@
-// Module ID: 13379
-// Function ID: 13380
+// Module ID: 13378
+// Function ID: 13379
 // Name: WindowStore
 // Dependencies: [38, 504, 5867, 573, 1241, 1981, 2]
 
-// Module 13379 (WindowStore)
+// Module 13378 (WindowStore)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

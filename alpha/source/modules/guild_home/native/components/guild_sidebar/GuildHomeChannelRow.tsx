@@ -1,10 +1,10 @@
-// Module ID: 15841
-// Function ID: 15842
+// Module ID: 15839
+// Function ID: 15840
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1074, 2052, 9577, 21, 4836, 576, 1101, 11868, 1115, 13387, 2]
+// Dependencies: [19, 1074, 2052, 9577, 21, 4836, 576, 1101, 11868, 1115, 13386, 2]
 // Exports: default
 
-// Module 15841 (GuildHomeChannelRow)
+// Module 15839 (GuildHomeChannelRow)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import BaseChannelItemDefault from "BaseChannelItem" /* 11868 */;
@@ -46,6 +46,6 @@ export default function GuildHomeChannelRow(selected) {
   obj2.name = intl2.string(tmp5(1115).t.VbpLyU);
   obj2.mode = DEFAULT;
   obj.name = jsx(tmp5(11868).BaseChannelName, { name: null, mode: null });
-  obj.icon = jsx(tmp5(11868).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(13387).SignPostIcon });
+  obj.icon = jsx(tmp5(11868).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(13386).SignPostIcon });
   return <tmp7 onPress={callback} style={closure_7().container} accessible accessibilityLabel={null} accessibilityState={null} mode={null} name={null} icon={null} />;
 };

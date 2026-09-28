@@ -1,13 +1,13 @@
-// Module ID: 16051
-// Function ID: 16052
+// Module ID: 16047
+// Function ID: 16048
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1074, 2042, 11903, 21, 4836, 576, 1241, 9613, 4832, 1115, 5281, 11904, 5435, 5992, 15035, 6806, 2029, 2]
+// Dependencies: [32, 19, 17, 1074, 2042, 11903, 21, 4836, 576, 1241, 9613, 4832, 1115, 5281, 11904, 5435, 5992, 15033, 6806, 2029, 2]
 // Exports: default
 
-// Module 16051 (NotificationCenterPermissionNudge)
+// Module 16047 (NotificationCenterPermissionNudge)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15035 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15033 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;

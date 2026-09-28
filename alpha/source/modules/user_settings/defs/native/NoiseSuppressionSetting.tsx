@@ -1,9 +1,9 @@
-// Module ID: 14803
-// Function ID: 14804
+// Module ID: 14801
+// Function ID: 14802
 // Name: NoiseSuppressionSetting
 // Dependencies: [1993, 7417, 504, 9449, 11006, 1115, 2]
 
-// Module 14803 (NoiseSuppressionSetting)
+// Module 14801 (NoiseSuppressionSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9449 */;

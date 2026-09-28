@@ -1,9 +1,9 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16231
+// Function ID: 16232
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 2045, 6572, 6629, 21, 4836, 576, 7687, 7676, 7673, 7684, 7624, 16233, 7692, 7702, 10573, 12616, 12689, 504, 12130, 4657, 5281, 5385, 1115, 4658, 12456, 4832, 6034, 4512, 11, 4792, 5745, 7363, 4783, 4785, 1613, 16236, 2]
+// Dependencies: [19, 17, 2045, 6572, 6629, 21, 4836, 576, 7687, 7676, 7673, 7684, 7624, 16229, 7692, 7702, 10573, 12634, 12688, 504, 12130, 4657, 5281, 5385, 1115, 4658, 12456, 4832, 6034, 4512, 11, 4792, 5745, 7363, 4783, 4785, 1613, 16232, 2]
 
-// Module 16235 (JoinRequestActionSheetContent)
+// Module 16231 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -11,7 +11,7 @@ import DateUtils from "DateUtils" /* 4512 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16233 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16229 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -103,9 +103,9 @@ let closure_12 = noop.memo((user) => {
     obj7.containerStyle = items3;
     const obj9 = { style: tmp3.primaryInfo, children: null };
     const obj10 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
-    const items4 = [closure_8(tmp6(12616).PrimaryInfo, obj10), ];
+    const items4 = [closure_8(tmp6(12634).PrimaryInfo, obj10), ];
     const obj11 = { user };
-    items4[1] = closure_8(tmp(12689), obj11);
+    items4[1] = closure_8(tmp(12688), obj11);
     obj9.children = items4;
     obj7.children = closure_9(View, obj9);
     items2[1] = closure_8(tmp(10573), obj7);
@@ -434,7 +434,7 @@ export default noop.memo(function JoinRequestActionSheetContent(displayProfile) 
   obj6.children = mapped;
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
-  items1[4] = closure_8(memo(16236), { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId });
+  items1[4] = closure_8(memo(16232), { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId });
   obj.children = items1;
   return closure_9(View, obj);
 });

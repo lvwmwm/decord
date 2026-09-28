@@ -1,13 +1,13 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 16827
+// Function ID: 16828
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2045, 1372, 4857, 21, 4836, 576, 8877, 4787, 4832, 1115, 504, 8902, 1177, 8881, 4531, 16824, 8892, 16825, 8886, 2]
+// Dependencies: [32, 19, 17, 2045, 1372, 4857, 21, 4836, 576, 8877, 4787, 4832, 1115, 504, 8902, 1177, 8881, 4531, 16828, 8892, 16829, 8886, 2]
 
-// Module 16823 (ExternalPipViewVideo)
+// Module 16827 (ExternalPipViewVideo)
 import nativeDefault from "native" /* 576 */;
 import ExternalPipDefault from "ExternalPip" /* 8886 */;
-import VideoActionCreators from "VideoActionCreators" /* 16824 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 16825 */;
+import VideoActionCreators from "VideoActionCreators" /* 16828 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 16829 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

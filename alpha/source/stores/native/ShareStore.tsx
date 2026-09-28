@@ -1,9 +1,9 @@
-// Module ID: 13888
-// Function ID: 13889
+// Module ID: 13887
+// Function ID: 13888
 // Name: ShareStore
 // Dependencies: [502, 2045, 2067, 2099, 4655, 1372, 1074, 1370, 7810, 1249, 1241, 504, 573, 2]
 
-// Module 13888 (ShareStore)
+// Module 13887 (ShareStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;

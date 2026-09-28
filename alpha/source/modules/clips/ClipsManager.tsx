@@ -1,9 +1,9 @@
-// Module ID: 17628
-// Function ID: 17629
+// Module ID: 17632
+// Function ID: 17633
 // Name: clips/ClipsManager
-// Dependencies: [5, 4881, 502, 1993, 4859, 4875, 1999, 5444, 1074, 4878, 6539, 13220, 4891, 4888, 1241, 2021, 573, 13221, 4450, 1364, 13219, 2]
+// Dependencies: [5, 4881, 502, 1993, 4859, 4875, 1999, 5444, 1074, 4878, 6539, 13219, 4891, 4888, 1241, 2021, 573, 13220, 4450, 1364, 13218, 2]
 
-// Module 17628 (clips/ClipsManager)
+// Module 17632 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -11,9 +11,9 @@ import UserSettings from "UserSettings" /* 2021 */;
 import DiscordNativeDefault from "DiscordNative" /* 4450 */;
 import StreamKeyUtilsAll from "StreamKeyUtils" /* 4888 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
-import isClipsEnabled from "isClipsEnabled" /* 13219 */;
-import ClipsExperiment from "ClipsExperiment" /* 13220 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13221 */;
+import isClipsEnabled from "isClipsEnabled" /* 13218 */;
+import ClipsExperiment from "ClipsExperiment" /* 13219 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 13220 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;

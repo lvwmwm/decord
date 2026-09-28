@@ -1,9 +1,9 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15029
+// Function ID: 15030
 // Name: ClearWebBrowserDataSetting
 // Dependencies: [5, 7417, 5209, 1115, 4797, 4528, 11006, 1364, 1094, 2]
 
-// Module 15031 (ClearWebBrowserDataSetting)
+// Module 15029 (ClearWebBrowserDataSetting)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import BrowserManager from "BrowserManager" /* 4797 */;

@@ -1,9 +1,9 @@
-// Module ID: 14872
-// Function ID: 14873
+// Module ID: 14870
+// Function ID: 14871
 // Name: GameMentionsAutocompleteSetting
 // Dependencies: [7417, 11006, 1115, 2021, 2]
 
-// Module 14872 (GameMentionsAutocompleteSetting)
+// Module 14870 (GameMentionsAutocompleteSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;

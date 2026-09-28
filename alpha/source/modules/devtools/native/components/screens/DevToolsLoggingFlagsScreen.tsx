@@ -1,10 +1,10 @@
-// Module ID: 15143
-// Function ID: 15144
+// Module ID: 15141
+// Function ID: 15142
 // Name: DevToolsLoggingFlagsScreen
 // Dependencies: [17, 1346, 21, 4836, 576, 504, 5999, 6621, 1347, 2]
 // Exports: default
 
-// Module 15143 (DevToolsLoggingFlagsScreen)
+// Module 15141 (DevToolsLoggingFlagsScreen)
 import _mod17 from "module_17" /* 17 */;
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;

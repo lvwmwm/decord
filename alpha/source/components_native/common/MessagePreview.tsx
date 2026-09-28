@@ -1,10 +1,10 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16640
+// Function ID: 16641
 // Name: MessagePreview
-// Dependencies: [19, 7808, 1074, 21, 504, 1115, 16456, 12826, 2]
+// Dependencies: [19, 7808, 1074, 21, 504, 1115, 16460, 12825, 2]
 // Exports: default
 
-// Module 16636 (MessagePreview)
+// Module 16640 (MessagePreview)
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
 import MessagePreviewStore from "MessagePreviewStore" /* 7808 */;
@@ -34,5 +34,5 @@ export default function MessagePreview(channelId) {
   const effect = noop.useEffect(() => () => {
     jumpTargetId(closure_1_2[6]).clearMessages();
   }, []);
-  return jsx(onBeforeJumpToMessage(12826).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation });
+  return jsx(onBeforeJumpToMessage(12825).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation });
 };

@@ -1,9 +1,9 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15089
+// Function ID: 15090
 // Name: UploadDebugLogsSetting
 // Dependencies: [5, 17, 1074, 21, 560, 1248, 1364, 9648, 4528, 4787, 1115, 11006, 2]
 
-// Module 15091 (UploadDebugLogsSetting)
+// Module 15089 (UploadDebugLogsSetting)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import DebugUploadManager from "DebugUploadManager" /* 9648 */;

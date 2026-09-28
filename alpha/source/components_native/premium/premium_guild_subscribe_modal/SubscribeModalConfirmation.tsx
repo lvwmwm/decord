@@ -1,10 +1,10 @@
-// Module ID: 13149
-// Function ID: 13150
+// Module ID: 13148
+// Function ID: 13149
 // Name: SubscribeModalConfirmation
-// Dependencies: [5, 19, 17, 12058, 2067, 4729, 4494, 1074, 6852, 4724, 21, 4836, 4683, 576, 504, 4728, 5909, 4832, 1115, 13150, 13151, 5281, 13160, 5293, 1094, 1241, 13115, 38, 4732, 5204, 13164, 1981, 2]
+// Dependencies: [5, 19, 17, 12058, 2067, 4729, 4494, 1074, 6852, 4724, 21, 4836, 4683, 576, 504, 4728, 5909, 4832, 1115, 13149, 13150, 5281, 13159, 5293, 1094, 1241, 13114, 38, 4732, 5204, 13163, 1981, 2]
 // Exports: default
 
-// Module 13149 (SubscribeModalConfirmation)
+// Module 13148 (SubscribeModalConfirmation)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -13,8 +13,8 @@ import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import _modDef5909 from "module_5909" /* 5909 */;
-import _modDef13150 from "module_13150" /* 13150 */;
-import PremiumGuildPreviewDefault from "PremiumGuildPreview" /* 13151 */;
+import _modDef13149 from "module_13149" /* 13149 */;
+import PremiumGuildPreviewDefault from "PremiumGuildPreview" /* 13150 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12058 */;
@@ -54,7 +54,7 @@ function SubscribeConfirmation(arg0) {
   ({ guild, isModifyingSubscription } = arg0);
   const tmp = closure_22();
   const obj = { children: null };
-  const items = [closure_1_19(timestampProducer, { style: tmp.subscribeImage, source: _modDef13150 }), , , , , ];
+  const items = [closure_1_19(timestampProducer, { style: tmp.subscribeImage, source: _modDef13149 }), , , , , ];
   const obj3 = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.yTlZV0);
@@ -86,8 +86,8 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = closure_22();
-  const guildSubscriptionRemovalSource = prop(13160).useGuildSubscriptionRemovalSource();
-  const obj = prop(13160);
+  const guildSubscriptionRemovalSource = prop(13159).useGuildSubscriptionRemovalSource();
+  const obj = prop(13159);
   const items = [GuildStore];
   const stateFromStores = prop(504).useStateFromStores(items, () => {
     const found = prop.find((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription);
@@ -122,7 +122,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj10.children = intl3.format(tmp2(1115).t["5zQYEz"], { guildCount: 1 });
     const items2 = [closure_19(tmp2(4832).Text, obj10), , , ];
     const obj11 = { style: tmp.guildPreview, guild: stateFromStores };
-    items2[1] = closure_19(onPremiumGuildSubscribe(13151), obj11);
+    items2[1] = closure_19(onPremiumGuildSubscribe(13150), obj11);
     const obj12 = { style: tmp.previewHeader, variant: "eyebrow", color: "text-default", children: null };
     const intl4 = tmp2(1115).intl;
     const obj13 = { slotCount: prop.length };
@@ -136,7 +136,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj14.end = tmp2(1094).HorizontalGradient.END;
     obj14.colors = Gradients.PREMIUM_GUILD;
     const obj15 = { guild };
-    obj14.children = closure_19(onPremiumGuildSubscribe(13151), obj15);
+    obj14.children = closure_19(onPremiumGuildSubscribe(13150), obj15);
     items2[3] = closure_19(onPremiumGuildSubscribe(5293), obj14);
     obj9.children = items2;
     items1[3] = closure_20(closure_7, obj9);

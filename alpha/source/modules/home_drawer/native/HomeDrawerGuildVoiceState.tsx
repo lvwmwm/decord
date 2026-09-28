@@ -1,17 +1,17 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 15956
+// Function ID: 15957
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4467, 4479, 5017, 4860, 1074, 21, 4836, 576, 12583, 1177, 4832, 1115, 9522, 5899, 5293, 15957, 504, 12, 13255, 2]
+// Dependencies: [19, 17, 4467, 4479, 5017, 4860, 1074, 21, 4836, 576, 12601, 1177, 4832, 1115, 9522, 5899, 5293, 15955, 504, 12, 13254, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 15958 (HomeDrawerGuildVoiceState)
+// Module 15956 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9522 */;
-import AvatarPile from "AvatarPile" /* 12583 */;
+import AvatarPile from "AvatarPile" /* 12601 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;

@@ -1,9 +1,9 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 12862
+// Function ID: 12863
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 4469, 1074, 21, 4836, 576, 5919, 6028, 4832, 1115, 7363, 4791, 11204, 11211, 5039, 1241, 7285, 4421, 12864, 504, 12865, 12868, 11697, 11698, 2]
+// Dependencies: [5, 19, 17, 4469, 1074, 21, 4836, 576, 5919, 6028, 4832, 1115, 7363, 4791, 11204, 11211, 5039, 1241, 7285, 4421, 12863, 504, 12864, 12867, 11697, 11698, 2]
 
-// Module 12863 (ForLaterMessageCard)
+// Module 12862 (ForLaterMessageCard)
 import nativeDefault from "native" /* 576 */;
 import _modDef4791 from "module_4791" /* 4791 */;
 import SavedMessageHelpers from "SavedMessageHelpers" /* 11204 */;
@@ -221,12 +221,12 @@ export default noop.memo(function ForLaterMessageCard(savedMessage) {
         return tmp2;
       })) {
         let obj3 = { savedMessage, jumpToMessage: callback, throttledNow };
-        const tmp8 = closure_10(savedMessageChannel(12865), obj3);
+        const tmp8 = closure_10(savedMessageChannel(12864), obj3);
         let obj4 = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: callback, children: null };
         let tmp6Result = null;
         if (null != savedMessage.saveData.dueAt) {
           let obj5 = { savedMessage, throttledNow, actions: tmp8 };
-          tmp6Result = tmp6(tmp2(12868).ForLaterCardReminderHeader, obj5);
+          tmp6Result = tmp6(tmp2(12867).ForLaterCardReminderHeader, obj5);
         }
         const items2 = [tmp6Result, , , ];
         let obj6 = { channel: savedMessageChannel, actions: null };

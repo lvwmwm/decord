@@ -1,10 +1,10 @@
-// Module ID: 13407
-// Function ID: 13408
+// Module ID: 13406
+// Function ID: 13407
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1372, 1074, 1229, 21, 4836, 576, 1613, 1479, 1365, 1241, 5039, 4692, 1101, 5205, 5209, 6028, 1115, 5209, 6010, 5437, 4652, 13408, 4832, 6361, 2]
+// Dependencies: [5, 19, 17, 502, 1372, 1074, 1229, 21, 4836, 576, 1613, 1479, 1365, 1241, 5039, 4692, 1101, 5205, 5209, 6028, 1115, 5209, 6010, 5437, 4652, 13407, 4832, 6361, 2]
 // Exports: default
 
-// Module 13407 (OneTimeLoginModal)
+// Module 13406 (OneTimeLoginModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -172,7 +172,7 @@ export default function OneTimeLoginModal(token) {
   const items6 = [closure_13(ThemedGradientDefault, obj2), ];
   let obj4 = { style: tmp.container, children: null };
   let obj5 = { style: tmp.centerContent, children: null };
-  const items7 = [closure_13(callback3, { source: token(13408), style: tmp.logo }), ];
+  const items7 = [closure_13(callback3, { source: token(13407), style: tmp.logo }), ];
   const obj7 = { style: tmp.loadingContainer, children: null };
   const items8 = [closure_13(callback2, {}), ];
   const obj8 = { variant: "text-lg/semibold", children: null };

@@ -1,10 +1,10 @@
-// Module ID: 15388
-// Function ID: 15389
+// Module ID: 15386
+// Function ID: 15387
 // Name: UserSettingsDesignSystemToast
 // Dependencies: [19, 17, 21, 4836, 2]
 // Exports: default
 
-// Module 15388 (UserSettingsDesignSystemToast)
+// Module 15386 (UserSettingsDesignSystemToast)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

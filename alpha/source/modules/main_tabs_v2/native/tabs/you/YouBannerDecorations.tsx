@@ -1,10 +1,10 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 16604
+// Function ID: 16605
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 1372, 2042, 1374, 21, 1365, 576, 4836, 13097, 6869, 4654, 2029, 504, 7631, 7673, 7684, 4685, 672, 4488, 16601, 10682, 16602, 16603, 10678, 5759, 16604, 14531, 1115, 16605, 16607, 8122, 6798, 5293, 2]
+// Dependencies: [19, 17, 1372, 2042, 1374, 21, 1365, 576, 4836, 13096, 6869, 4654, 2029, 504, 7631, 7673, 7684, 4685, 672, 4488, 16605, 10682, 16606, 16607, 10678, 5759, 16608, 14531, 1115, 16609, 16611, 8122, 6798, 5293, 2]
 // Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
-// Module 16600 (YouBannerDecorations)
+// Module 16604 (YouBannerDecorations)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
@@ -13,8 +13,8 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 465
 import QuestTypes from "QuestTypes" /* 5759 */;
 import useTrialOffer from "useTrialOffer" /* 6869 */;
 import QuestUtils from "QuestUtils" /* 10678 */;
-import PromotionsHooks from "PromotionsHooks" /* 13097 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 16603 */;
+import PromotionsHooks from "PromotionsHooks" /* 13096 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 16607 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

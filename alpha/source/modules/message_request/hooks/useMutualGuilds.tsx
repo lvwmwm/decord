@@ -1,10 +1,10 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16703
+// Function ID: 16704
 // Name: useMutualGuilds
 // Dependencies: [19, 7035, 1372, 504, 573, 7632, 2]
 // Exports: useMutualGuildsForMessageRequests
 
-// Module 16699 (useMutualGuilds)
+// Module 16703 (useMutualGuilds)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;

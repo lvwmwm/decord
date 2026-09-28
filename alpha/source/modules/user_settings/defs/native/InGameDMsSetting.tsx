@@ -1,9 +1,9 @@
-// Module ID: 15508
-// Function ID: 15509
+// Module ID: 15506
+// Function ID: 15507
 // Name: InGameDMsSetting
 // Dependencies: [19, 7417, 2021, 1186, 1115, 11006, 2]
 
-// Module 15508 (InGameDMsSetting)
+// Module 15506 (InGameDMsSetting)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2021 */;

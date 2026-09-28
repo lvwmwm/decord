@@ -1,9 +1,9 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15939
+// Function ID: 15940
 // Name: InvitesDisabledBadge
 // Dependencies: [19, 17, 21, 4836, 576, 1177, 12239, 2]
 
-// Module 15941 (InvitesDisabledBadge)
+// Module 15939 (InvitesDisabledBadge)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import _modDef12239 from "module_12239" /* 12239 */;

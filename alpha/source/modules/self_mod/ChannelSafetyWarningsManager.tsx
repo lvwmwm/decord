@@ -1,9 +1,9 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17114
+// Function ID: 17115
 // Name: ChannelSafetyWarningsManager
-// Dependencies: [2045, 2099, 10431, 10941, 17111, 6539, 2]
+// Dependencies: [2045, 2099, 10431, 10941, 17115, 6539, 2]
 
-// Module 17110 (ChannelSafetyWarningsManager)
+// Module 17114 (ChannelSafetyWarningsManager)
 import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10431 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
@@ -27,9 +27,9 @@ function handleChannelSelect(channelId) {
               ({ id: obj5.warningId, type: obj5.warningType } = inappropriateConversationTakeoverForChannel);
               obj.senderId = channel.getRecipientId();
               obj.channelId = channelId;
-              tmp4(17111).showTakeoverModal(obj);
+              tmp4(17115).showTakeoverModal(obj);
               flag3 = true;
-              const tmp4Result4 = tmp4(17111);
+              const tmp4Result4 = tmp4(17115);
             }
             return flag3;
           }
@@ -66,9 +66,9 @@ function handleChannelUpdates(channels) {
             ({ id: obj4.warningId, type: obj4.warningType } = inappropriateConversationTakeoverForChannel);
             obj2.senderId = found.getRecipientId();
             obj2.channelId = found.id;
-            tmp(17111).showTakeoverModal(obj2);
+            tmp(17115).showTakeoverModal(obj2);
             flag3 = true;
-            const tmpResult4 = tmp(17111);
+            const tmpResult4 = tmp(17115);
           }
           return flag3;
         }

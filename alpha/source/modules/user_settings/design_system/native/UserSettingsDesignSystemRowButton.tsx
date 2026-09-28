@@ -1,10 +1,10 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15368
+// Function ID: 15369
 // Name: UserSettingsDesignSystemRowButton
 // Dependencies: [19, 17, 21, 8053, 5279, 576, 4832, 8055, 6799, 2]
 // Exports: default
 
-// Module 15370 (UserSettingsDesignSystemRowButton)
+// Module 15368 (UserSettingsDesignSystemRowButton)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;

@@ -1,15 +1,15 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16482
+// Function ID: 16483
 // Name: renderChannelContent
-// Dependencies: [19, 17, 9577, 5018, 21, 4836, 1364, 16475, 5373, 16479, 4832, 5409, 8048, 15752, 2]
+// Dependencies: [19, 17, 9577, 5018, 21, 4836, 1364, 16479, 5373, 16483, 4832, 5409, 8048, 15750, 2]
 // Exports: default
 
-// Module 16478 (renderChannelContent)
+// Module 16482 (renderChannelContent)
 import Text_Text from "Text/Text" /* 4832 */;
 import LockIcon from "LockIcon" /* 5409 */;
 import WarningIcon from "WarningIcon" /* 8048 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16475 */;
-import ChannelTitleDefault from "ChannelTitle" /* 16479 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16479 */;
+import ChannelTitleDefault from "ChannelTitle" /* 16483 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -90,7 +90,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(15752), obj12);
+      isSubscriptionGated = tmp9(tmp2(15750), obj12);
     }
     items3[2] = isSubscriptionGated;
     obj8.children = items3;

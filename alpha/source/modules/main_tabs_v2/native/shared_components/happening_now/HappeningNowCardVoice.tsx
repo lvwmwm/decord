@@ -1,10 +1,10 @@
-// Module ID: 15721
-// Function ID: 15722
+// Module ID: 15719
+// Function ID: 15720
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 7072, 1372, 4855, 14843, 1074, 21, 4836, 1241, 12443, 1981, 15704, 14844, 5415, 12595, 15714, 7516, 504, 12, 1370, 4988, 1115, 2]
+// Dependencies: [19, 17, 7072, 1372, 4855, 14841, 1074, 21, 4836, 1241, 12443, 1981, 15702, 14842, 5415, 12613, 15712, 7516, 504, 12, 1370, 4988, 1115, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 15721 (HappeningNowCardVoice)
+// Module 15719 (HappeningNowCardVoice)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -38,7 +38,7 @@ function formatVoiceActivityTitle(stateFromStoresArray, guildId) {
   }
 }
 const View = fn(17).View;
-let closure_8 = fn(14843).HappeningNowCardTrackingType;
+let closure_8 = fn(14841).HappeningNowCardTrackingType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);

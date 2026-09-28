@@ -1,10 +1,10 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 13448
+// Function ID: 13449
 // Name: ShareAttachments
 // Dependencies: [19, 17, 21, 4566, 5293, 1177, 4836, 576, 4837, 4683, 1115, 9657, 5450, 2]
 // Exports: default
 
-// Module 13449 (ShareAttachments)
+// Module 13448 (ShareAttachments)
 import nativeDefault from "native" /* 576 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import timing from "timing" /* 4837 */;

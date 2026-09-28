@@ -1,10 +1,10 @@
-// Module ID: 17431
-// Function ID: 17432
+// Module ID: 17435
+// Function ID: 17436
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 1241, 4800, 4527, 6570, 1115, 6618, 17409, 5203, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 1241, 4800, 4527, 6570, 1115, 6618, 17413, 5203, 2]
 // Exports: default
 
-// Module 17431 (RolePermissionTemplatesActionSheet)
+// Module 17435 (RolePermissionTemplatesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
 import ActionSheet from "ActionSheet" /* 6618 */;
-import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 17409 */;
+import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 17413 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

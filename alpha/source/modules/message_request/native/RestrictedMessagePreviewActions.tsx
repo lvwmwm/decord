@@ -1,10 +1,10 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16720
+// Function ID: 16721
 // Name: RestrictedMessagePreviewActions
 // Dependencies: [19, 17, 4479, 1074, 10926, 21, 4836, 576, 12089, 504, 9195, 10330, 12117, 4678, 4800, 10927, 1981, 8089, 4849, 5281, 1115, 4832, 2]
 // Exports: default
 
-// Module 16716 (RestrictedMessagePreviewActions)
+// Module 16720 (RestrictedMessagePreviewActions)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;

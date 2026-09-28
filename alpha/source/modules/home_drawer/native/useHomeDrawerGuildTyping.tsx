@@ -1,10 +1,10 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 15957
+// Function ID: 15958
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [4471, 2049, 2045, 11447, 558, 15956, 15957, 504, 11, 2]
+// Dependencies: [4471, 2049, 2045, 11447, 558, 15954, 15955, 504, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 15959 (useHomeDrawerGuildTyping)
+// Module 15957 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;

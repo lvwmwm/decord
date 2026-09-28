@@ -1,13 +1,13 @@
-// Module ID: 13026
-// Function ID: 13027
+// Module ID: 13025
+// Function ID: 13026
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [4494, 4502, 1115, 3199, 1380, 7493, 13027, 504, 2]
+// Dependencies: [4494, 4502, 1115, 3199, 1380, 7493, 13026, 504, 2]
 // Exports: default
 
-// Module 13026 (usePremiumGroupFeaturesTableCardText)
+// Module 13025 (usePremiumGroupFeaturesTableCardText)
 import initialize from "initialize" /* 504 */;
 import user from "user" /* 1380 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13027 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13026 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 
 require = fn;

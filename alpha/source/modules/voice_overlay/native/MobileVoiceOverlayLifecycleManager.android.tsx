@@ -1,16 +1,16 @@
-// Module ID: 14090
-// Function ID: 14091
+// Module ID: 14089
+// Function ID: 14090
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [2045, 4467, 2067, 1993, 4469, 4859, 4479, 5731, 1372, 4855, 9435, 1074, 14091, 14092, 14093, 14094, 6413, 13332, 14095, 14096, 8083, 1115, 14097, 9447, 7175, 4989, 5754, 1241, 5016, 1983, 2]
+// Dependencies: [2045, 4467, 2067, 1993, 4469, 4859, 4479, 5731, 1372, 4855, 9435, 1074, 14090, 14091, 14092, 14093, 6413, 13331, 14094, 14095, 8083, 1115, 14096, 9447, 7175, 4989, 5754, 1241, 5016, 1983, 2]
 
-// Module 14090 (MobileVoiceOverlayLifecycleManager)
+// Module 14089 (MobileVoiceOverlayLifecycleManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useChannelName from "useChannelName" /* 4989 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5754 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 7175 */;
 import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 9447 */;
-import NativeMobileVoiceOverlayModuleDefault from "NativeMobileVoiceOverlayModule" /* 14097 */;
+import NativeMobileVoiceOverlayModuleDefault from "NativeMobileVoiceOverlayModule" /* 14096 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
@@ -27,14 +27,14 @@ require = fn;
 const GUILD_VOCAL_CHANNELS_KEY = fn(4467).GUILD_VOCAL_CHANNELS_KEY;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_14, Permissions: closure_15 } = Constants);
+fn(14090);
 fn(14091);
 fn(14092);
 fn(14093);
-fn(14094);
 fn(6413);
-fn(13332);
+fn(13331);
+fn(14094);
 fn(14095);
-fn(14096);
 const registerAsset = fn(8083);
 let items = [VoiceStateStore, RTCConnectionStore, MediaEngineStore];
 const constants3 = { DISABLED: 0, [0]: "DISABLED", NOT_SHOWING: 1, [1]: "NOT_SHOWING", WAITING_FOR_SERVICE: 2, [2]: "WAITING_FOR_SERVICE", SHOWING: 3, [3]: "SHOWING" };

@@ -1,9 +1,9 @@
-// Module ID: 15986
-// Function ID: 15987
+// Module ID: 15984
+// Function ID: 15985
 // Name: GuildsBarGeoRestrictedBadge
 // Dependencies: [19, 17, 21, 4836, 576, 5753, 5899, 11746, 2]
 
-// Module 15986 (GuildsBarGeoRestrictedBadge)
+// Module 15984 (GuildsBarGeoRestrictedBadge)
 import nativeDefault from "native" /* 576 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import _modDef11746 from "module_11746" /* 11746 */;

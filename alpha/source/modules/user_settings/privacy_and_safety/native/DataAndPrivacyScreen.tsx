@@ -1,10 +1,10 @@
-// Module ID: 15484
-// Function ID: 15485
+// Module ID: 15482
+// Function ID: 15483
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6012, 7417, 1074, 21, 1115, 2111, 9163, 1485, 14392, 14395, 11006, 14350, 14248, 2]
+// Dependencies: [19, 6012, 7417, 1074, 21, 1115, 2111, 9163, 1485, 14391, 14394, 11006, 14349, 14247, 2]
 // Exports: default
 
-// Module 15484 (DataAndPrivacyScreen)
+// Module 15482 (DataAndPrivacyScreen)
 import util from "util" /* 1115 */;
 import SecureFramesUtils from "SecureFramesUtils" /* 9163 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
@@ -86,10 +86,10 @@ export default function DataAndPrivacySettings() {
   items1.push(obj19);
   const effect = noop.useEffect(() => {
     if (!fetchedConsents.fetchedConsents) {
-      const consents = stackNavigation(14392).fetchConsents();
-      const obj = stackNavigation(14392);
+      const consents = stackNavigation(14391).fetchConsents();
+      const obj = stackNavigation(14391);
     }
-    const harvestStatus = stackNavigation(14395).fetchHarvestStatus();
+    const harvestStatus = stackNavigation(14394).fetchHarvestStatus();
   }, []);
   const items8 = [stackNavigation, items1];
   const obj20 = { children: null };
@@ -133,8 +133,8 @@ export default function DataAndPrivacySettings() {
       return stackNavigation.navigate(constants2.CONTENT_AND_SOCIAL);
     }
   };
-  obj21.screen = stackNavigation(14350).SettingsScreen.DATA_AND_PRIVACY;
-  const items9 = [closure_8(items1(14350), obj21), closure_8(items1(14248), { node: memo })];
+  obj21.screen = stackNavigation(14349).SettingsScreen.DATA_AND_PRIVACY;
+  const items9 = [closure_8(items1(14349), obj21), closure_8(items1(14247), { node: memo })];
   obj20.children = items9;
   return closure_10(closure_9, obj20);
 };

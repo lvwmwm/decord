@@ -1,9 +1,9 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14037
+// Function ID: 14038
 // Name: invites
-// Dependencies: [5, 2044, 2045, 4739, 1074, 1085, 14039, 7787, 8771, 8786, 14043, 1095, 8782, 2]
+// Dependencies: [5, 2044, 2045, 4739, 1074, 1085, 14038, 7787, 8771, 8786, 14042, 1095, 8782, 2]
 
-// Module 14038 (invites)
+// Module 14037 (invites)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -13,7 +13,7 @@ const InstantInviteSources = fn(1074).InstantInviteSources;
 const Constants = fn(1085);
 ({ RPCCommands, RPCErrors: metroRequire } = Constants);
 let obj = {};
-const CONTEXT_MENU_ICON_NAMES = fn(14039);
+const CONTEXT_MENU_ICON_NAMES = fn(14038);
 let obj3 = { scope: null, handler: null };
 let obj4 = {};
 const items = [fn(7787).OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE, fn(7787).OAuth2Scopes.ACTIVITIES_INVITES_WRITE];
@@ -89,8 +89,8 @@ obj3.handler = function handler(arg0) {
                   const obj13 = { value: tmp3(8782).sendEmbeddedActivityInviteUser(obj11), done: false };
                   return obj13;
                 }
-                channel = tmp3(14043).validateOpenInviteDialog(tmp68).channel;
-                const obj5 = tmp3(14043);
+                channel = tmp3(14042).validateOpenInviteDialog(tmp68).channel;
+                const obj5 = tmp3(14042);
               }
             }
           }

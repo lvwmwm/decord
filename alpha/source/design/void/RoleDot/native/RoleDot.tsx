@@ -1,10 +1,10 @@
-// Module ID: 13666
-// Function ID: 13667
+// Module ID: 13665
+// Function ID: 13666
 // Name: RoleDot
 // Dependencies: [19, 17, 21, 4836, 576, 1364, 5288, 5310, 5293, 1370, 2]
 // Exports: RoleDot
 
-// Module 13666 (RoleDot)
+// Module 13665 (RoleDot)
 import nativeDefault from "native" /* 576 */;
 import useFontScale from "useFontScale" /* 5288 */;
 import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5310 */;

@@ -1,16 +1,16 @@
-// Module ID: 14185
-// Function ID: 14186
+// Module ID: 14184
+// Function ID: 14185
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 6977, 6968, 1074, 21, 4836, 576, 7631, 7615, 6583, 6603, 1241, 7616, 7612, 7609, 6571, 4832, 1115, 7617, 10198, 504, 14186, 7611, 7632, 14187, 12748, 12749, 7618, 10571, 5293, 2]
+// Dependencies: [32, 19, 17, 6977, 6968, 1074, 21, 4836, 576, 7631, 7615, 6583, 6603, 1241, 7616, 7612, 7609, 6571, 4832, 1115, 7617, 10198, 504, 14185, 7611, 7632, 14186, 12747, 12748, 7618, 10571, 5293, 2]
 // Exports: default
 
-// Module 14185 (EditProfileEffectActionSheet)
+// Module 14184 (EditProfileEffectActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import useShopProductItems from "useShopProductItems" /* 7616 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 14187 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 14186 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;

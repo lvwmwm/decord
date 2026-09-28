@@ -1,10 +1,10 @@
-// Module ID: 16275
-// Function ID: 16276
+// Module ID: 16271
+// Function ID: 16272
 // Name: useUserApplicationWidgetData
 // Dependencies: [32, 19, 5063, 8487, 7035, 8490, 8489, 504, 6589, 8488, 7632, 7047, 2]
 // Exports: default
 
-// Module 16275 (useUserApplicationWidgetData)
+// Module 16271 (useUserApplicationWidgetData)
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;
 import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 8488 */;
 import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 8489 */;

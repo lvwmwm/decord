@@ -1,10 +1,10 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16696
+// Function ID: 16697
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 17, 21, 7339, 4836, 576, 6421, 6895, 1613, 7288, 1115, 10386, 16693, 16712, 16713, 2]
+// Dependencies: [19, 17, 21, 7339, 4836, 576, 6421, 6895, 1613, 7288, 1115, 10386, 16697, 16716, 16717, 2]
 // Exports: default
 
-// Module 16692 (MessageRequestsNavigator)
+// Module 16696 (MessageRequestsNavigator)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import HeaderShared from "HeaderShared" /* 7288 */;
@@ -62,7 +62,7 @@ export default function MessageRequestsNavigator() {
   let merged = Object.assign(getNavigationModalPresentationDefault());
   obj4.options = obj5;
   obj4.getComponent = function getComponent() {
-    return closure_0(16693).default;
+    return closure_0(16697).default;
   };
   const items1 = [closure_5(Screen, obj4), , ];
   const obj6 = { name: "spam", options: null, getComponent: null };
@@ -72,7 +72,7 @@ export default function MessageRequestsNavigator() {
   let merged1 = Object.assign(getNavigationModalPresentationDefault());
   obj6.options = obj7;
   obj6.getComponent = function getComponent() {
-    return closure_0(16712).default;
+    return closure_0(16716).default;
   };
   items1[1] = closure_5(closure_7.Screen, obj6);
   const obj8 = { name: "preview", options: null, getComponent: null };
@@ -82,7 +82,7 @@ export default function MessageRequestsNavigator() {
   const merged2 = Object.assign(getNavigationModalPresentationDefault());
   obj8.options = obj9;
   obj8.getComponent = function getComponent() {
-    return closure_0(16713).default;
+    return closure_0(16717).default;
   };
   items1[2] = closure_5(closure_7.Screen, obj8);
   obj3.children = items1;

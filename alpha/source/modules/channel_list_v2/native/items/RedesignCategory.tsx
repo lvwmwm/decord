@@ -1,10 +1,10 @@
-// Module ID: 15740
-// Function ID: 15741
+// Module ID: 15738
+// Function ID: 15739
 // Name: RedesignCategory
-// Dependencies: [19, 17, 6951, 6538, 5017, 9577, 21, 4836, 1364, 576, 4832, 12269, 5435, 10615, 11053, 10374, 504, 4989, 10438, 15741, 15742, 6534, 1115, 6616, 11054, 6034, 2]
+// Dependencies: [19, 17, 6951, 6538, 5017, 9577, 21, 4836, 1364, 576, 4832, 12269, 5435, 10615, 11053, 10374, 504, 4989, 10438, 15739, 15740, 6534, 1115, 6616, 11054, 6034, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 15740 (RedesignCategory)
+// Module 15738 (RedesignCategory)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -15,8 +15,8 @@ import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6616 */
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
 import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 10438 */;
 import CategoryCollapseActionCreators from "CategoryCollapseActionCreators" /* 11053 */;
-import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 15741 */;
-import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 15742 */;
+import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 15739 */;
+import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 15740 */;
 import noop from "module_19" /* 19 */;
 import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 6951 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 6538 */;

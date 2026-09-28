@@ -1,9 +1,9 @@
-// Module ID: 16553
-// Function ID: 16554
+// Module ID: 16557
+// Function ID: 16558
 // Name: ChannelNameHeader
 // Dependencies: [19, 17, 2045, 2067, 4469, 4876, 1372, 1074, 21, 4836, 576, 504, 1177, 4989, 1485, 4847, 5435, 4832, 1115, 4981, 3651, 10371, 5335, 10357, 6583, 7624, 2]
 
-// Module 16553 (ChannelNameHeader)
+// Module 16557 (ChannelNameHeader)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import _modDef3651 from "module_3651" /* 3651 */;

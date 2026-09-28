@@ -1,17 +1,17 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 14903
+// Function ID: 14904
 // Name: TypingIndicatorSetting
-// Dependencies: [1074, 14284, 2029, 11006, 1115, 3717, 14906, 11449, 14908, 14957, 2]
+// Dependencies: [1074, 14283, 2029, 11006, 1115, 3717, 14904, 11449, 14906, 14955, 2]
 
-// Module 14905 (TypingIndicatorSetting)
+// Module 14903 (TypingIndicatorSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import _modDef3717 from "module_3717" /* 3717 */;
 import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11449 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 14906 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 14957 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14284 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 14904 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 14955 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14283 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

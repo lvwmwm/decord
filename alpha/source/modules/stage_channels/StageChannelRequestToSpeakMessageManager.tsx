@@ -1,9 +1,9 @@
-// Module ID: 17253
-// Function ID: 17254
+// Module ID: 17257
+// Function ID: 17258
 // Name: StageChannelRequestToSpeakMessageManager
-// Dependencies: [502, 2045, 5056, 4469, 2099, 1372, 1074, 6539, 2053, 17254, 1090, 6876, 2]
+// Dependencies: [502, 2045, 5056, 4469, 2099, 1372, 1074, 6539, 2053, 17258, 1090, 6876, 2]
 
-// Module 17253 (StageChannelRequestToSpeakMessageManager)
+// Module 17257 (StageChannelRequestToSpeakMessageManager)
 import MessageTypes from "MessageTypes" /* 1090 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -35,8 +35,8 @@ StageChannelRequestToSpeakMessageManager.prototype["handleVoiceStateUpdates"] = 
               if (null != requestToSpeakTimestamp) {
                 user = user.getUser(userId);
                 if (null != user) {
-                  const result = tmp11(17254).sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp);
-                  const tmp11Result = tmp11(17254);
+                  const result = tmp11(17258).sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp);
+                  const tmp11Result = tmp11(17258);
                 }
               } else {
                 messages = messages.getMessages(channelId);

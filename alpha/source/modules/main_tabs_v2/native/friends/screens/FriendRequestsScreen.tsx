@@ -1,16 +1,16 @@
-// Module ID: 16592
-// Function ID: 16593
+// Module ID: 16596
+// Function ID: 16597
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 7053, 4479, 1372, 10320, 1074, 10333, 21, 4836, 576, 16593, 1981, 5205, 563, 7054, 2021, 16055, 7055, 11, 6583, 6603, 1241, 12619, 6589, 16594, 1331, 7624, 1115, 1485, 5999, 5917, 4832, 9083, 5437, 9084, 5435, 10457, 14645, 10326, 2]
+// Dependencies: [32, 19, 17, 7053, 4479, 1372, 10320, 1074, 10333, 21, 4836, 576, 16597, 1981, 5205, 563, 7054, 2021, 16051, 7055, 11, 6583, 6603, 1241, 12637, 6589, 16598, 1331, 7624, 1115, 1485, 5999, 5917, 4832, 9083, 5437, 9084, 5435, 10457, 14645, 10326, 2]
 // Exports: default
 
-// Module 16592 (FriendRequestsScreen)
+// Module 16596 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import useAlertStore from "useAlertStore" /* 5205 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16055 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 16594 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16051 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 16598 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7053 */;
@@ -88,9 +88,9 @@ export default function FriendRequestsScreen() {
   first = tmp9[0];
   dependencyMap = tmp11;
   let obj2 = analyticsLocations(563);
-  gameRelationshipsByType = analyticsLocations(12619).useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj3 = analyticsLocations(12619);
-  gameRelationshipsByType1 = analyticsLocations(12619).useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
+  gameRelationshipsByType = analyticsLocations(12637).useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
+  let obj3 = analyticsLocations(12637);
+  gameRelationshipsByType1 = analyticsLocations(12637).useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   const items3 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
     const set = new Set();
@@ -109,7 +109,7 @@ export default function FriendRequestsScreen() {
   pendingOutgoingIds = memo1.pendingOutgoingIds;
   spamIds = memo1.spamIds;
   const ignoredUserIds = memo1.ignoredUserIds;
-  let obj4 = analyticsLocations(12619);
+  let obj4 = analyticsLocations(12637);
   const items5 = [ignoredUserIds];
   const items6 = [ignoredUserIds, gameRelationshipsByType, gameRelationshipsByType1, pendingIncomingIds, pendingOutgoingIds, spamIds];
   const stateFromStores = analyticsLocations(563).useStateFromStores(items5, () => {

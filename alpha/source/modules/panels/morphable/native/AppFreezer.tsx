@@ -1,10 +1,10 @@
-// Module ID: 16165
-// Function ID: 16166
+// Module ID: 16161
+// Function ID: 16162
 // Name: AppFreezer
 // Dependencies: [19, 7738, 21, 5901, 5234, 2]
 // Exports: default
 
-// Module 16165 (AppFreezer)
+// Module 16161 (AppFreezer)
 import Suspender from "Suspender" /* 5234 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
 import noop from "module_19" /* 19 */;

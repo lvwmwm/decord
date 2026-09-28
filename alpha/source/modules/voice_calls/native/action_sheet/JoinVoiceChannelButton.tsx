@@ -1,10 +1,10 @@
-// Module ID: 13328
-// Function ID: 13329
+// Module ID: 13327
+// Function ID: 13328
 // Name: JoinVoiceChannelButton
 // Dependencies: [19, 17, 4469, 1074, 21, 4836, 9394, 504, 1115, 1876, 5723, 5281, 2]
 // Exports: default
 
-// Module 13328 (JoinVoiceChannelButton)
+// Module 13327 (JoinVoiceChannelButton)
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9394 */;

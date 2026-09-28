@@ -1,9 +1,9 @@
-// Module ID: 16856
-// Function ID: 16857
+// Module ID: 16860
+// Function ID: 16861
 // Name: LeaveActivityButton
 // Dependencies: [19, 8502, 21, 5281, 9370, 1115, 8765, 2]
 
-// Module 16856 (LeaveActivityButton)
+// Module 16860 (LeaveActivityButton)
 import util from "util" /* 1115 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8765 */;

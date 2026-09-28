@@ -1,12 +1,12 @@
-// Module ID: 15356
-// Function ID: 15357
+// Module ID: 15354
+// Function ID: 15355
 // Name: DesignSystemsSetting
-// Dependencies: [1074, 11006, 14809, 15357, 15172, 2]
+// Dependencies: [1074, 11006, 14807, 15355, 15170, 2]
 
-// Module 15356 (DesignSystemsSetting)
+// Module 15354 (DesignSystemsSetting)
 import Constants from "Constants" /* 1074 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 14809 */;
-import useDesignSystemsSettingPredicate from "useDesignSystemsSettingPredicate" /* 15357 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 14807 */;
+import useDesignSystemsSettingPredicate from "useDesignSystemsSettingPredicate" /* 15355 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

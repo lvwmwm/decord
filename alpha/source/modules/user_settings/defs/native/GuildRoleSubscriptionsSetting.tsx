@@ -1,15 +1,15 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14749
+// Function ID: 14750
 // Name: GuildRoleSubscriptionsSetting
-// Dependencies: [7417, 1074, 14752, 14753, 11006, 1115, 14754, 14756, 2]
+// Dependencies: [7417, 1074, 14750, 14751, 11006, 1115, 14752, 14754, 2]
 
-// Module 14751 (GuildRoleSubscriptionsSetting)
+// Module 14749 (GuildRoleSubscriptionsSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14752 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 14753 */;
-import TicketIcon from "TicketIcon" /* 14754 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14750 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 14751 */;
+import TicketIcon from "TicketIcon" /* 14752 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

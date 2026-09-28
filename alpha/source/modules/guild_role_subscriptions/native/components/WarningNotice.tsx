@@ -1,10 +1,10 @@
-// Module ID: 17507
-// Function ID: 17508
+// Module ID: 17511
+// Function ID: 17512
 // Name: WarningNotice
 // Dependencies: [19, 17, 21, 4836, 576, 5899, 5909, 4832, 5281, 2]
 // Exports: default
 
-// Module 17507 (WarningNotice)
+// Module 17511 (WarningNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;

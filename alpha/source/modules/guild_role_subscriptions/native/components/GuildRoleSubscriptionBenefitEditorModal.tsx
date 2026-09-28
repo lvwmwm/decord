@@ -1,22 +1,22 @@
-// Module ID: 17577
-// Function ID: 17578
+// Module ID: 17581
+// Function ID: 17582
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4479, 1372, 17576, 14752, 1074, 21, 4836, 576, 5836, 13443, 5435, 4790, 1177, 1115, 1613, 17578, 4989, 8053, 17580, 9271, 17581, 2]
+// Dependencies: [5, 32, 19, 17, 4479, 1372, 17580, 14750, 1074, 21, 4836, 576, 5836, 13442, 5435, 4790, 1177, 1115, 1613, 17582, 4989, 8053, 17584, 9271, 17585, 2]
 
-// Module 17577 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 17581 (GuildRoleSubscriptionBenefitEditorModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import TrashIcon from "TrashIcon" /* 4790 */;
 import useChannelName from "useChannelName" /* 4989 */;
 import Pressables from "Pressables" /* 5435 */;
-import FormStylesDefault from "FormStyles" /* 13443 */;
+import FormStylesDefault from "FormStyles" /* 13442 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 17576 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 17580 */;
 import TextStyles from "TextStyles" /* 5836 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ function DeleteButton(onDelete) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const GuildRoleSubscriptionsConstants = fn(14752);
+const GuildRoleSubscriptionsConstants = fn(14750);
 ({ GuildRoleSubscriptionBenefitTypes: c10, MAX_SUBSCRIPTION_BENEFIT_DESCRIPTION_LENGTH: closure_11, MAX_SUBSCRIPTION_BENEFIT_NAME_LENGTH: closure_12 } = GuildRoleSubscriptionsConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
@@ -145,7 +145,7 @@ export default noop.forwardRef((benefitType) => {
     return arg1;
   };
   const tmp = closure_15();
-  const tmp4 = value(13443)();
+  const tmp4 = value(13442)();
   [value] = GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState();
   dependencyMap = tmp6;
   [first1, _slicedToArray] = GuildRoleSubscriptionBenefitEditorModalStateStore.useEmojiIdState();
@@ -204,7 +204,7 @@ export default noop.forwardRef((benefitType) => {
               closure_2(useChannelName.computeChannelName(id, UserStore, RelationshipStore));
             }
       };
-      let tmp25 = closure_13(tmp2(17578), obj);
+      let tmp25 = closure_13(tmp2(17582), obj);
       let tmp26 = closure_13;
     } else {
       let obj2 = { style: tmp4.textInput, showTopContainer: false, multiline: false, maxLength: maxLength2, value, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null };
@@ -232,7 +232,7 @@ export default noop.forwardRef((benefitType) => {
         },
       listingId: benefitType.listingId
     };
-    const items = [tmp26(tmp2(17580), obj4), ];
+    const items = [tmp26(tmp2(17584), obj4), ];
     let obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
     const items1 = [tmp.scrollContainer, ];
     const obj6 = { paddingBottom: value(1613)().bottom + 32 + 16 };
@@ -252,7 +252,7 @@ export default noop.forwardRef((benefitType) => {
       closure_4(emojiId.emojiId);
       closure_6(emojiId.emojiName);
     };
-    items2[3] = tmp26(tmp2(17581), obj9);
+    items2[3] = tmp26(tmp2(17585), obj9);
     const obj11 = { style: tmp4.header, children: null };
     const tmp28 = first2;
     const tmp29 = closure_6;

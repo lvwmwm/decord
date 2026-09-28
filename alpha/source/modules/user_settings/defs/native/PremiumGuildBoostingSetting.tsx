@@ -1,7 +1,7 @@
 // Module ID: 14528
 // Function ID: 14529
 // Name: PremiumGuildBoostingSetting
-// Dependencies: [1074, 11006, 1115, 8678, 13040, 2]
+// Dependencies: [1074, 11006, 1115, 8678, 13039, 2]
 
 // Module 14528 (PremiumGuildBoostingSetting)
 import Constants from "Constants" /* 1074 */;

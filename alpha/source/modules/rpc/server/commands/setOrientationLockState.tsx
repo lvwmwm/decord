@@ -1,9 +1,9 @@
-// Module ID: 14056
-// Function ID: 14057
+// Module ID: 14055
+// Function ID: 14056
 // Name: setOrientationLockState
 // Dependencies: [8499, 4739, 2005, 1085, 8773, 8770, 573, 2]
 
-// Module 14056 (setOrientationLockState)
+// Module 14055 (setOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import RPCErrorDefault from "RPCError" /* 8770 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8773 */;

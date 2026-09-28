@@ -1,13 +1,13 @@
-// Module ID: 15069
-// Function ID: 15070
+// Module ID: 15067
+// Function ID: 15068
 // Name: ScreenDowntimeReminderSetting
-// Dependencies: [9541, 7417, 14448, 8105, 11006, 1115, 504, 15070, 2]
+// Dependencies: [9541, 7417, 14447, 8105, 11006, 1115, 504, 15068, 2]
 
-// Module 15069 (ScreenDowntimeReminderSetting)
+// Module 15067 (ScreenDowntimeReminderSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 14448 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 15070 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 14447 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 15068 */;
 import NotificationSettingsStore from "NotificationSettingsStore" /* 9541 */;
 
 require = fn;

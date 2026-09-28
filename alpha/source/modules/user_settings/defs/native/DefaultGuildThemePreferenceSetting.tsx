@@ -1,9 +1,9 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 14857
+// Function ID: 14858
 // Name: DefaultGuildThemePreferenceSetting
 // Dependencies: [19, 7417, 2021, 1115, 1186, 11006, 4760, 2]
 
-// Module 14859 (DefaultGuildThemePreferenceSetting)
+// Module 14857 (DefaultGuildThemePreferenceSetting)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2021 */;

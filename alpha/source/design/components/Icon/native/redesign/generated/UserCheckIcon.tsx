@@ -1,10 +1,10 @@
-// Module ID: 12617
-// Function ID: 12618
+// Module ID: 12635
+// Function ID: 12636
 // Name: UserCheckIcon
 // Dependencies: [19, 21, 576, 4530, 7518, 2]
 // Exports: UserCheckIcon
 
-// Module 12617 (UserCheckIcon)
+// Module 12635 (UserCheckIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
 import _mod7518 from "module_7518" /* 7518 */;

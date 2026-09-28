@@ -1,10 +1,10 @@
-// Module ID: 13637
-// Function ID: 13638
+// Module ID: 13636
+// Function ID: 13637
 // Name: NewTag
 // Dependencies: [19, 17, 1074, 21, 4836, 576, 5293, 4832, 1115, 2]
 // Exports: default
 
-// Module 13637 (NewTag)
+// Module 13636 (NewTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;

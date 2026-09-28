@@ -1,9 +1,9 @@
-// Module ID: 15553
-// Function ID: 15554
+// Module ID: 15551
+// Function ID: 15552
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5270, 21, 4836, 8053, 6622, 15554, 2]
+// Dependencies: [32, 19, 5270, 21, 4836, 8053, 6622, 15552, 2]
 
-// Module 15553 (VEVOOPropBlurAmount)
+// Module 15551 (VEVOOPropBlurAmount)
 import FormSwitch from "FormSwitch" /* 6622 */;
 import Form from "Form" /* 8053 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -72,7 +72,7 @@ export default noop.memo(function VEVOOPropBlurAmount() {
     }
   };
   const ref = noop.useRef(first);
-  obj.subLabel = jsx(first(15554), { disabled: !tmp3, disabledOpacity: !tmp3, initialValue: noop.useRef(first), onValueChange });
+  obj.subLabel = jsx(first(15552), { disabled: !tmp3, disabledOpacity: !tmp3, initialValue: noop.useRef(first), onValueChange });
   return jsx(Form.FormRow, {
     label: "Blur Amount " + str,
     leadingStyle: tmp.enabledSwitchStyle,

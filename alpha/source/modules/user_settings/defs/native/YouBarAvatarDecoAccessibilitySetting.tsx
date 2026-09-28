@@ -1,12 +1,12 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 14958
+// Function ID: 14959
 // Name: YouBarAvatarDecoAccessibilitySetting
-// Dependencies: [4825, 7417, 11006, 1115, 504, 13999, 2]
+// Dependencies: [4825, 7417, 11006, 1115, 504, 13998, 2]
 
-// Module 14960 (YouBarAvatarDecoAccessibilitySetting)
+// Module 14958 (YouBarAvatarDecoAccessibilitySetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13999 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;

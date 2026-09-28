@@ -1,10 +1,10 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14703
+// Function ID: 14704
 // Name: QuestEmbedPreview
-// Dependencies: [19, 4480, 1372, 1074, 21, 7374, 504, 4821, 10699, 14704, 1115, 8112, 2]
+// Dependencies: [19, 4480, 1372, 1074, 21, 7374, 504, 4821, 10699, 14702, 1115, 8112, 2]
 // Exports: QuestEmbedPreview
 
-// Module 14705 (QuestEmbedPreview)
+// Module 14703 (QuestEmbedPreview)
 import CodedLink from "CodedLink" /* 4821 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 10699 */;
 import noop from "module_19" /* 19 */;
@@ -56,8 +56,8 @@ export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
     obj2.title = intl.string(tmp2(1115).t["habP/M"]);
     let obj3 = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
     obj2.children = jsx(stateFromStores(8112), { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" });
-    tmp6 = jsx(stateFromStores(14704), { title: null, children: null });
-    const tmp9 = stateFromStores(14704);
+    tmp6 = jsx(stateFromStores(14702), { title: null, children: null });
+    const tmp9 = stateFromStores(14702);
   }
   return tmp6;
 };

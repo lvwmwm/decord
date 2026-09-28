@@ -1,10 +1,10 @@
-// Module ID: 12732
-// Function ID: 12733
+// Module ID: 12731
+// Function ID: 12732
 // Name: OrbBadgeCollectedModal
 // Dependencies: [19, 17, 4825, 21, 4836, 576, 5936, 5039, 8315, 10553, 504, 5899, 10760, 7755, 10761, 6544, 8306, 4832, 1115, 5281, 7612, 8313, 6421, 2]
 // Exports: default
 
-// Module 12732 (OrbBadgeCollectedModal)
+// Module 12731 (OrbBadgeCollectedModal)
 import nativeDefault from "native" /* 576 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;

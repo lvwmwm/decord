@@ -1,13 +1,13 @@
-// Module ID: 13257
-// Function ID: 13258
+// Module ID: 13256
+// Function ID: 13257
 // Name: LocalAppDetectionStore
-// Dependencies: [32, 6012, 1074, 504, 573, 13258, 13259, 2]
+// Dependencies: [32, 6012, 1074, 504, 573, 13257, 13258, 2]
 
-// Module 13257 (LocalAppDetectionStore)
+// Module 13256 (LocalAppDetectionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 13258 */;
-import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 13259 */;
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 13257 */;
+import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 13258 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ConsentStore from "ConsentStore" /* 6012 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 16993
+// Function ID: 16994
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 4852, 11755, 11758, 11753, 1074, 21, 4836, 576, 1610, 16990, 8370, 11754, 4566, 16914, 4531, 6073, 16991, 11759, 11762, 4801, 5266, 11515, 8853, 16992, 16873, 16993, 4540, 16997, 16999, 5898, 17002, 5280, 6494, 16857, 16889, 1248, 17026, 1110, 1613, 1479, 10456, 16998, 11585, 17027, 16918, 17001, 17028, 2]
+// Dependencies: [32, 19, 17, 4852, 11755, 11758, 11753, 1074, 21, 4836, 576, 1610, 16994, 8370, 11754, 4566, 16918, 4531, 6073, 16995, 11759, 11762, 4801, 5266, 11515, 8853, 16996, 16877, 16997, 4540, 17001, 17003, 5898, 17006, 5280, 6494, 16861, 16893, 1248, 17030, 1110, 1613, 1479, 10456, 17002, 11585, 17031, 16922, 17005, 17032, 2]
 
-// Module 16989 (VoicePanelControls)
+// Module 16993 (VoicePanelControls)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import native from "native" /* 4540 */;
@@ -15,13 +15,13 @@ import native2 from "native" /* 8370 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11759 */;
 import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 11762 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 16873 */;
-import useControlsLockDefault from "useControlsLock" /* 16914 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 16990 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 16991 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 16993 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 16997 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 16999 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 16877 */;
+import useControlsLockDefault from "useControlsLock" /* 16918 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 16994 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 16995 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 16997 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 17001 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17003 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
@@ -705,15 +705,15 @@ export default noop.memo(function VoicePanelControls(gestureState) {
             const result2 = gestureState.set(size);
             const tmpResult5 = tmp(11762);
           } else if (tmp25.DRAWER === currentControlsMode) {
-            const drawerSpec = tmp(16992).getDrawerSpec(tmp4, safeArea.top);
+            const drawerSpec = tmp(16996).getDrawerSpec(tmp4, safeArea.top);
             ({ minHeight, maxHeight } = drawerSpec);
             if (gestureState.get().height <= controlsHeightValue) {
               minHeight = maxHeight;
             } else if (null != currentControlsMode) {
-              const tmpResult7 = tmp(16992);
+              const tmpResult7 = tmp(16996);
             }
             const size1 = { x: 0, y: 0, width: null, height: null, drawerMode: true, hidden: false };
-            const tmpResult6 = tmp(16992);
+            const tmpResult6 = tmp(16996);
             size1.width = tmp(11762).getControlsDrawerOpenWidth(windowWidth, safeArea.left, safeArea.right);
             size1.height = minHeight;
             const result3 = obj15.set(size1);

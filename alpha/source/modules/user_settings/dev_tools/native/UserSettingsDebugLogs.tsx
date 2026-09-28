@@ -1,16 +1,16 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15117
+// Function ID: 15118
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 6040, 1613, 4528, 510, 7, 4832, 6471, 14536, 1115, 15120, 4800, 15121, 8179, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 6040, 1613, 4528, 510, 7, 4832, 6471, 14536, 1115, 15118, 4800, 15119, 8179, 2]
 // Exports: default
 
-// Module 15119 (UserSettingsDebugLogs)
+// Module 15117 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 15120 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 15118 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

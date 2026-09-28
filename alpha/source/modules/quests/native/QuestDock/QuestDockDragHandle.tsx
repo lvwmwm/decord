@@ -1,9 +1,9 @@
-// Module ID: 14719
-// Function ID: 14720
+// Module ID: 14717
+// Function ID: 14718
 // Name: QuestDockDragHandle
 // Dependencies: [19, 17, 5756, 14624, 21, 4836, 14625, 14626, 4566, 5280, 6494, 14623, 6575, 1115, 2]
 
-// Module 14719 (QuestDockDragHandle)
+// Module 14717 (QuestDockDragHandle)
 import spring from "spring" /* 5280 */;
 import noop from "module_19" /* 19 */;
 

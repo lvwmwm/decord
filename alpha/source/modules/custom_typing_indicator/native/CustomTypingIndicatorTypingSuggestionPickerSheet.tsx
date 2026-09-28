@@ -1,10 +1,10 @@
-// Module ID: 14909
-// Function ID: 14910
+// Module ID: 14907
+// Function ID: 14908
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
 // Dependencies: [32, 19, 21, 4836, 576, 6618, 6570, 1115, 3717, 5997, 11453, 6000, 2]
 // Exports: default
 
-// Module 14909 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 14907 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import nativeDefault from "native" /* 576 */;
 import _modDef3717 from "module_3717" /* 3717 */;
 import _slicedToArray from "module_32" /* 32 */;

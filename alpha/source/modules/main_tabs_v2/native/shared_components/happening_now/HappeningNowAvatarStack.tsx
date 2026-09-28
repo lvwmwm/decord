@@ -1,10 +1,10 @@
-// Module ID: 15717
-// Function ID: 15718
+// Module ID: 15715
+// Function ID: 15716
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2112, 12585, 21, 4836, 576, 1177, 4566, 563, 5280, 8276, 4832, 1882, 15718, 2]
+// Dependencies: [32, 19, 17, 2112, 12603, 21, 4836, 576, 1177, 4566, 563, 5280, 8276, 4832, 1882, 15716, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 15717 (HappeningNowAvatarStack)
+// Module 15715 (HappeningNowAvatarStack)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const CHANNEL_SPRING_CONFIG = fn(12585).CHANNEL_SPRING_CONFIG;
+const CHANNEL_SPRING_CONFIG = fn(12603).CHANNEL_SPRING_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let SPRING_CONFIG = { damping: 17, stiffness: 320, mass: 0.5 };

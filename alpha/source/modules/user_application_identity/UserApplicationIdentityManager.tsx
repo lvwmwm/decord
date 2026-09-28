@@ -1,9 +1,9 @@
-// Module ID: 17711
-// Function ID: 17712
+// Module ID: 17715
+// Function ID: 17716
 // Name: UserApplicationIdentityManager
 // Dependencies: [8488, 6539, 2]
 
-// Module 17711 (UserApplicationIdentityManager)
+// Module 17715 (UserApplicationIdentityManager)
 import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 8488 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 

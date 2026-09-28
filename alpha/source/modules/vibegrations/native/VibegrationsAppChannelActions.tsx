@@ -1,15 +1,15 @@
-// Module ID: 12827
-// Function ID: 12828
+// Module ID: 12826
+// Function ID: 12827
 // Name: VibegrationsAppChannelActions
-// Dependencies: [19, 17, 12828, 21, 4836, 504, 12829, 12830, 1115, 3715, 12831, 9640, 12450, 5370, 5374, 5385, 12832, 2]
+// Dependencies: [19, 17, 12827, 21, 4836, 504, 12828, 12829, 1115, 3715, 12830, 9640, 12450, 5370, 5374, 5385, 12831, 2]
 // Exports: default
 
-// Module 12827 (VibegrationsAppChannelActions)
+// Module 12826 (VibegrationsAppChannelActions)
 import VibegrationsUtils from "VibegrationsUtils" /* 5370 */;
 import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 12450 */;
-import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 12832 */;
+import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 12831 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 12828 */;
+import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 12827 */;
 
 require = fn;
 const View = fn(17).View;
@@ -27,8 +27,8 @@ export default function VibegrationsAppChannelActions(channel) {
   const items1 = [channel.id];
   const stateFromStores = channel(504).useStateFromStores(items, () => VibegrationsAppChannelsStore.isChatOpen(channel.id), items1);
   const obj = channel(504);
-  ({ mentionCount, badge } = stateFromStores(12829)(channel.id));
-  stateFromStores(12830)(channel, stateFromStores);
+  ({ mentionCount, badge } = stateFromStores(12828)(channel.id));
+  stateFromStores(12829)(channel, stateFromStores);
   let tmp8 = null;
   if (!stateFromStores) {
     tmp8 = badge;
@@ -58,14 +58,14 @@ export default function VibegrationsAppChannelActions(channel) {
     };
     const intl3 = tmp2(1115).intl;
     obj4.accessibilityLabel = intl3.string(tmp5(3715).xKexN1);
-    tmp14 = closure_5(tmp5(12831), obj4);
-    const tmp5Result3 = tmp5(12831);
+    tmp14 = closure_5(tmp5(12830), obj4);
+    const tmp5Result3 = tmp5(12830);
   }
   const items3 = [tmp14, ];
   const tmp12 = closure_6;
   const tmp13 = View;
   const tmp17 = closure_5;
-  const tmp6 = stateFromStores(12829)(channel.id);
+  const tmp6 = stateFromStores(12828)(channel.id);
   if (stateFromStores) {
     let ChatIcon = tmp2(5374).AppsIcon;
   } else {
@@ -89,7 +89,7 @@ export default function VibegrationsAppChannelActions(channel) {
     StringResult = String(mentionCount);
   }
   obj5.buttonText = StringResult;
-  items3[1] = tmp17(stateFromStores(12831), obj5);
+  items3[1] = tmp17(stateFromStores(12830), obj5);
   obj3.children = items3;
   return tmp12(tmp13, obj3);
 };

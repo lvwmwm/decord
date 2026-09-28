@@ -1,10 +1,10 @@
-// Module ID: 13535
-// Function ID: 13536
+// Module ID: 13534
+// Function ID: 13535
 // Name: WideBannerDismissibleContentVersion
 // Dependencies: [7005, 1076, 6992, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 13535 (WideBannerDismissibleContentVersion)
+// Module 13534 (WideBannerDismissibleContentVersion)
 import ShopBlockType from "ShopBlockType" /* 6992 */;
 import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7005 */;
 

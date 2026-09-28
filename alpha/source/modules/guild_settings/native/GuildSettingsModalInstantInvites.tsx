@@ -1,10 +1,10 @@
-// Module ID: 17444
-// Function ID: 17445
+// Module ID: 17448
+// Function ID: 17449
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 9540, 7828, 2045, 2067, 9049, 1074, 21, 4836, 1115, 2111, 5916, 4832, 5923, 5909, 11860, 504, 12, 7460, 7458, 4800, 11307, 1981, 4528, 10393, 6460, 1177, 17445, 6461, 2]
+// Dependencies: [32, 19, 17, 9540, 7828, 2045, 2067, 9049, 1074, 21, 4836, 1115, 2111, 5916, 4832, 5923, 5909, 11860, 504, 12, 7460, 7458, 4800, 11307, 1981, 4528, 10393, 6460, 1177, 17449, 6461, 2]
 // Exports: default
 
-// Module 17444 (GuildSettingsModalInstantInvites)
+// Module 17448 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;

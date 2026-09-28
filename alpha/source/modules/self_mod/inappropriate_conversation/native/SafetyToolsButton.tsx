@@ -1,10 +1,10 @@
-// Module ID: 12857
-// Function ID: 12858
+// Module ID: 12856
+// Function ID: 12857
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 4836, 576, 10938, 10940, 1115, 10912, 5298, 10913, 10935, 10590, 12831, 8704, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 10938, 10940, 1115, 10912, 5298, 10913, 10935, 10590, 12830, 8704, 2]
 // Exports: SafetyToolsButton
 
-// Module 12857 (SafetyToolsButton)
+// Module 12856 (SafetyToolsButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import SafetyWarningUtils from "SafetyWarningUtils" /* 10912 */;

@@ -1,9 +1,9 @@
-// Module ID: 15365
-// Function ID: 15366
+// Module ID: 15363
+// Function ID: 15364
 // Name: DesignSystemsLegacyButtonSetting
-// Dependencies: [7417, 1074, 11006, 15366, 2]
+// Dependencies: [7417, 1074, 11006, 15364, 2]
 
-// Module 15365 (DesignSystemsLegacyButtonSetting)
+// Module 15363 (DesignSystemsLegacyButtonSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

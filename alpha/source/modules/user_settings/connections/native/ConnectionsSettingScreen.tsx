@@ -1,16 +1,16 @@
-// Module ID: 14493
-// Function ID: 14494
+// Module ID: 14492
+// Function ID: 14493
 // Name: ConnectionsSettingScreen
-// Dependencies: [19, 21, 4800, 14494, 1981, 1485, 6415, 7288, 1115, 14495, 2]
+// Dependencies: [19, 21, 4800, 14493, 1981, 1485, 6415, 7288, 1115, 14494, 2]
 
-// Module 14493 (ConnectionsSettingScreen)
+// Module 14492 (ConnectionsSettingScreen)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function onPress() {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14494, dependencyMap.paths), "AddConnection");
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14493, dependencyMap.paths), "AddConnection");
 }
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -38,5 +38,5 @@ export default noop.memo(function ConnectionsSettingScreen() {
       }
     });
   }, items);
-  return jsx(tmp(14495).UserSettingsConnections, { selectedPlatformType });
+  return jsx(tmp(14494).UserSettingsConnections, { selectedPlatformType });
 });

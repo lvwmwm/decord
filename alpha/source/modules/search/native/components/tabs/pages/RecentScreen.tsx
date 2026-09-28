@@ -1,9 +1,9 @@
-// Module ID: 16452
-// Function ID: 16453
+// Module ID: 16456
+// Function ID: 16457
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6699, 11850, 16453, 11822, 7303, 11836, 1074, 21, 5435, 11844, 1115, 4832, 10322, 16454, 4849, 11841, 11823, 504, 1486, 16457, 11821, 14363, 7859, 7861, 16458, 16459, 16462, 2]
+// Dependencies: [32, 5, 19, 6699, 11850, 16457, 11822, 7303, 11836, 1074, 21, 5435, 11844, 1115, 4832, 10322, 16458, 4849, 11841, 11823, 504, 1486, 16461, 11821, 14362, 7859, 7861, 16462, 16463, 16466, 2]
 
-// Module 16452 (RecentScreen)
+// Module 16456 (RecentScreen)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Pressables from "Pressables" /* 5435 */;
@@ -18,7 +18,7 @@ import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6699 */;
 import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11850 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 16453 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 16457 */;
 import SearchQueryStore from "SearchQueryStore" /* 11822 */;
 
 require = fn;

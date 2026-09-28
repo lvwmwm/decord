@@ -1,10 +1,10 @@
-// Module ID: 14773
-// Function ID: 14774
+// Module ID: 14771
+// Function ID: 14772
 // Name: UserSettingsGuildRoleSubscriptionsCancel
-// Dependencies: [5, 32, 19, 17, 4494, 21, 4836, 576, 14774, 4421, 1115, 5896, 1177, 4832, 14764, 5899, 14782, 6583, 6603, 8667, 5204, 5174, 4527, 4510, 5281, 6400, 14770, 14759, 14783, 14784, 504, 2]
+// Dependencies: [5, 32, 19, 17, 4494, 21, 4836, 576, 14772, 4421, 1115, 5896, 1177, 4832, 14762, 5899, 14780, 6583, 6603, 8667, 5204, 5174, 4527, 4510, 5281, 6400, 14768, 14757, 14781, 14782, 504, 2]
 // Exports: default
 
-// Module 14773 (UserSettingsGuildRoleSubscriptionsCancel)
+// Module 14771 (UserSettingsGuildRoleSubscriptionsCancel)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -13,18 +13,18 @@ import Text_Text from "Text/Text" /* 4832 */;
 import GuildIconDefault from "GuildIcon" /* 5896 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6400 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14759 */;
-import FormSeparatorDefault from "FormSeparator" /* 14764 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 14770 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14774 */;
-import _modDef14782 from "module_14782" /* 14782 */;
-import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 14784 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14757 */;
+import FormSeparatorDefault from "FormSeparator" /* 14762 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 14768 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14772 */;
+import _modDef14780 from "module_14780" /* 14780 */;
+import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 14782 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 
-const FastAssetImageDefault = tmp5(14783);
+const FastAssetImageDefault = tmp5(14781);
 require = fn;
 function WhatYouLose(subscription) {
   ({ listingId, guild } = subscription);
@@ -61,7 +61,7 @@ function WhatYouLose(subscription) {
   const obj13 = { source: null, style: null };
   const formatToPlainStringResult = intl2.formatToPlainString(util.t.OVlNGT, { numEmojis: _slicedToArray(obj.useTierEmojiIds(listingId, guild.id), 1)[0].size, numChannels: _slicedToArray(obj2.useChannelBenefits(listingId), 1)[0].length, numIntangibles: _slicedToArray(obj3.useIntangibleBenefits(listingId), 1)[0].length });
   const obj10 = { variant: "text-sm/medium", color: "interactive-text-default", children: guild.name };
-  obj13.source = _modDef14782;
+  obj13.source = _modDef14780;
   obj13.style = tmp.cactus;
   items2[6] = closure_1_10(FastImageDefault, obj13);
   obj7.children = items2;

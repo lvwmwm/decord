@@ -1,10 +1,10 @@
-// Module ID: 15578
-// Function ID: 15579
+// Module ID: 15576
+// Function ID: 15577
 // Name: AccountSwitcherListItem
 // Dependencies: [19, 17, 1386, 4679, 1372, 11906, 21, 4836, 504, 4792, 576, 4787, 4832, 1115, 5435, 4548, 1177, 4678, 2]
 // Exports: default
 
-// Module 15578 (AccountSwitcherListItem)
+// Module 15576 (AccountSwitcherListItem)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;

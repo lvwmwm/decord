@@ -1,10 +1,10 @@
-// Module ID: 16916
-// Function ID: 16917
+// Module ID: 16920
+// Function ID: 16921
 // Name: useControlsHoverGesture
 // Dependencies: [19, 11755, 11753, 11754, 4566, 6073, 2]
 // Exports: default
 
-// Module 16916 (useControlsHoverGesture)
+// Module 16920 (useControlsHoverGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
 import noop from "module_19" /* 19 */;

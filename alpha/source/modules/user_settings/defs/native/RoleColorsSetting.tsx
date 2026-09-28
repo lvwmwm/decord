@@ -1,13 +1,13 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 14878
+// Function ID: 14879
 // Name: RoleColorsSetting
-// Dependencies: [19, 4825, 7417, 504, 13999, 1115, 11006, 2]
+// Dependencies: [19, 4825, 7417, 504, 13998, 1115, 11006, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 14880 (RoleColorsSetting)
+// Module 14878 (RoleColorsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13999 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

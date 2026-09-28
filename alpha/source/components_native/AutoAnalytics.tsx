@@ -1,18 +1,18 @@
-// Module ID: 16559
-// Function ID: 16560
+// Module ID: 16563
+// Function ID: 16564
 // Name: AutoAnalytics
-// Dependencies: [19, 4852, 5589, 6946, 2050, 2045, 2108, 2067, 1993, 4885, 4859, 2099, 4655, 5591, 5017, 1372, 1074, 2052, 21, 5016, 7194, 16560, 16561, 2070, 16562, 1241, 1370, 16563, 504, 16564, 16565, 2]
+// Dependencies: [19, 4852, 5589, 6946, 2050, 2045, 2108, 2067, 1993, 4885, 4859, 2099, 4655, 5591, 5017, 1372, 1074, 2052, 21, 5016, 7194, 16564, 16565, 2070, 16566, 1241, 1370, 16567, 504, 16568, 16569, 2]
 // Exports: default
 
-// Module 16559 (AutoAnalytics)
+// Module 16563 (AutoAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5016 */;
 import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7194 */;
-import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 16560 */;
-import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 16561 */;
-import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 16563 */;
+import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 16564 */;
+import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 16565 */;
+import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 16567 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
@@ -76,7 +76,7 @@ prototype["componentDidMount"] = function componentDidMount() {
     trackGuildViewedClickstreamDefault(obj9);
     const tmp14 = importDefault;
     if (obj8.isFavoritesGuildId(selectedGuildId)) {
-      tmp14(16562)();
+      tmp14(16566)();
     }
     obj8 = FavoritesUtils;
   }
@@ -234,7 +234,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
       trackGuildViewedClickstreamDefault(obj20);
       const tmp68 = importDefault;
       if (obj21.isFavoritesGuildId(selectedGuildId)) {
-        tmp68(16562)();
+        tmp68(16566)();
       }
       obj21 = FavoritesUtils;
     }

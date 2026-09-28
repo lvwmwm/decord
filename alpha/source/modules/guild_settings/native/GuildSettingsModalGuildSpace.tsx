@@ -1,10 +1,10 @@
-// Module ID: 17615
-// Function ID: 17616
+// Module ID: 17619
+// Function ID: 17620
 // Name: GuildSettingsModalGuildSpace
 // Dependencies: [19, 4469, 9049, 1074, 21, 4836, 576, 504, 1385, 9048, 8053, 5279, 5999, 1115, 6621, 2419, 6461, 2]
 // Exports: default
 
-// Module 17615 (GuildSettingsModalGuildSpace)
+// Module 17619 (GuildSettingsModalGuildSpace)
 import nativeDefault from "native" /* 576 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import _modDef2419 from "module_2419" /* 2419 */;

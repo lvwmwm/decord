@@ -1,10 +1,10 @@
-// Module ID: 13118
-// Function ID: 13119
+// Module ID: 13117
+// Function ID: 13118
 // Name: useMarketablePowerupPerks
 // Dependencies: [19, 4723, 4724, 4727, 504, 12072, 4761, 2]
 // Exports: default
 
-// Module 13118 (useMarketablePowerupPerks)
+// Module 13117 (useMarketablePowerupPerks)
 import Powerups from "Powerups" /* 4727 */;
 import noop from "module_19" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4723 */;

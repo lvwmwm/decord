@@ -1,7 +1,7 @@
 // Module ID: 7300
 // Function ID: 7301
 // Name: ChannelActions
-// Dependencies: [19, 17, 5819, 2049, 2045, 4855, 7301, 1074, 7302, 21, 4836, 7305, 576, 7307, 5415, 7309, 7310, 7328, 504, 6687, 7329, 7330, 6690, 5370, 12827, 5043, 1115, 12833, 6472, 11783, 7324, 1364, 4701, 11782, 11841, 11004, 1110, 4693, 11151, 5387, 10426, 12834, 12831, 5046, 12835, 12837, 2]
+// Dependencies: [19, 17, 5819, 2049, 2045, 4855, 7301, 1074, 7302, 21, 4836, 7305, 576, 7307, 5415, 7309, 7310, 7328, 504, 6687, 7329, 7330, 6690, 5370, 12826, 5043, 1115, 12832, 6472, 11783, 7324, 1364, 4701, 11782, 11841, 11004, 1110, 4693, 11151, 5387, 10426, 12833, 12830, 5046, 12834, 12836, 2]
 // Exports: default
 
 // Module 7300 (ChannelActions)
@@ -16,9 +16,9 @@ import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10426 */;
 import useSearchContext from "useSearchContext" /* 11782 */;
 import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 11783 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
-import IconActionButtonDefault from "IconActionButton" /* 12831 */;
-import ConversationCoachmark from "ConversationCoachmark" /* 12834 */;
-import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 12837 */;
+import IconActionButtonDefault from "IconActionButton" /* 12830 */;
+import ConversationCoachmark from "ConversationCoachmark" /* 12833 */;
+import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 12836 */;
 import noop from "module_19" /* 19 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 5819 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -389,7 +389,7 @@ export default function ChannelActions(channelId) {
   const obj3 = { style: containerStyle, children: null };
   if (obj2.useHasForumSearchQuery(channelId)) {
     const obj4 = { channelId };
-    let tmp4Result = tmp4(tmp(12835).ForumChannelCloseSearchButton, obj4);
+    let tmp4Result = tmp4(tmp(12834).ForumChannelCloseSearchButton, obj4);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {

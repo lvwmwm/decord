@@ -1,14 +1,14 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 16930
+// Function ID: 16931
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 4852, 21, 4566, 8370, 4836, 576, 16927, 16925, 9132, 5901, 11754, 504, 4837, 2]
+// Dependencies: [19, 4852, 21, 4566, 8370, 4836, 576, 16931, 16929, 9132, 5901, 11754, 504, 4837, 2]
 
-// Module 16926 (VoicePanelHeaderUserState)
+// Module 16930 (VoicePanelHeaderUserState)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4837 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
-import useStableParticipant from "useStableParticipant" /* 16925 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 16927 */;
+import useStableParticipant from "useStableParticipant" /* 16929 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 16931 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
@@ -41,7 +41,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       obj2.children = jsx(tmp11(9132).VideoIcon, { style: tmp.floatingIcon, state: null });
       let arr = items.push(jsx(tmp11(8370).BackgroundBlurView, { blurTheme: "dark", style: tmp.floatingIconWrapper, children: null }, "video"));
     }
-    if (tmp9.type === tmp11(16927).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(16931).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
@@ -102,7 +102,7 @@ export default noop.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
     }
     return id;
   });
-  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(16925)(stateFromStores, channelId, guildId), guildId);
+  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(16929)(stateFromStores, channelId, guildId), guildId);
   isHeaderHidden(4566);
   const fn = function h() {
     let num = 0;

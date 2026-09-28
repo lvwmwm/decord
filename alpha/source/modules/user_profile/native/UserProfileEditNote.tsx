@@ -1,10 +1,10 @@
-// Module ID: 12612
-// Function ID: 12613
+// Module ID: 12630
+// Function ID: 12631
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 1485, 12608, 5936, 10384, 4701, 7288, 1115, 12613, 4832, 6506, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 1485, 12626, 5936, 10384, 4701, 7288, 1115, 12631, 4832, 6506, 2]
 // Exports: default
 
-// Module 12612 (UserProfileEditNote)
+// Module 12630 (UserProfileEditNote)
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 13107
-// Function ID: 13108
+// Module ID: 13106
+// Function ID: 13107
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 6852, 1374, 21, 4836, 576, 5293, 1094, 4488, 13108, 13109, 7511, 8688, 10179, 10180, 5919, 2]
+// Dependencies: [19, 17, 6852, 1374, 21, 4836, 576, 5293, 1094, 4488, 13107, 13108, 7511, 8688, 10179, 10180, 5919, 2]
 // Exports: default
 
-// Module 13107 (PremiumTierCard)
+// Module 13106 (PremiumTierCard)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
@@ -44,9 +44,9 @@ export default function _default(premiumType) {
   }
   obj2.style = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp5Result = tmp5(13108);
+    let tmp5Result = tmp5(13107);
   } else if (tmp10.TIER_1 === premiumType) {
-    tmp5Result = tmp5(13109);
+    tmp5Result = tmp5(13108);
   } else if (tmp10.TIER_2 === premiumType) {
     tmp5Result = tmp5(7511);
   }

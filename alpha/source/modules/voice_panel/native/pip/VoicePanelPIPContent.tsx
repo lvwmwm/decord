@@ -1,9 +1,9 @@
-// Module ID: 16985
-// Function ID: 16986
+// Module ID: 16989
+// Function ID: 16990
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 2044, 4852, 8844, 4858, 502, 2045, 1372, 11755, 16909, 1074, 2005, 4857, 21, 4836, 576, 4566, 5293, 11754, 16901, 8893, 1110, 4540, 16912, 5901, 16908, 563, 1479, 8915, 8289, 7697, 8881, 8899, 1177, 8905, 11757, 6494, 16824, 8886, 8877, 2]
+// Dependencies: [32, 19, 17, 2044, 4852, 8844, 4858, 502, 2045, 1372, 11755, 16913, 1074, 2005, 4857, 21, 4836, 576, 4566, 5293, 11754, 16905, 8893, 1110, 4540, 16916, 5901, 16912, 563, 1479, 8915, 8289, 7697, 8881, 8899, 1177, 8905, 11757, 6494, 16828, 8886, 8877, 2]
 
-// Module 16985 (VoicePanelPIPContent)
+// Module 16989 (VoicePanelPIPContent)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import useWindowDimensions from "useWindowDimensions" /* 1479 */;
@@ -17,9 +17,9 @@ import ExternalPipDefault from "ExternalPip" /* 8886 */;
 import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 8893 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 11757 */;
-import VideoActionCreators from "VideoActionCreators" /* 16824 */;
-import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 16901 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 16908 */;
+import VideoActionCreators from "VideoActionCreators" /* 16828 */;
+import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 16905 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 16912 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
@@ -533,7 +533,7 @@ function Stream(participantId) {
   c5 = undefined;
   let callback2;
   let tmp = closure_24();
-  const mode = participantId(16912).usePIPState().mode;
+  const mode = participantId(16916).usePIPState().mode;
   closure_129_0 = transitionState;
   closure_129_1 = transitionCleanUp;
   const items = [transitionState, transitionCleanUp];
@@ -571,7 +571,7 @@ function Stream(participantId) {
   let tmp5 = transitionState === participantId(4540).TransitionStates.YEETED ? tmp.onTop : tmp.onBottom;
   const context = obj2.useContext(mode(11754));
   ({ channelId: c2, layoutManager } = context);
-  let obj = participantId(16912);
+  let obj = participantId(16916);
   const items1 = [callback2];
   const stateFromStoresObject = participantId(563).useStateFromStoresObject(items1, () => {
     const participant = ChannelRTCStore.getParticipant(c2, participantId);
@@ -725,7 +725,7 @@ function areParticipantsEqual(arg0, arg1) {
 get_ActivityIndicator = fn(17);
 ({ PixelRatio: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
 const VoicePanelModes = fn(11755).VoicePanelModes;
-const VoicePanelPIPModes = fn(16909).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(16913).VoicePanelPIPModes;
 let Constants = fn(1074);
 ({ ApplicationStreamStates: closure_16, ComponentActions: closure_17 } = Constants);
 Constants = fn(2005);

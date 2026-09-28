@@ -1,10 +1,10 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 12582
+// Function ID: 12583
 // Name: Badges
-// Dependencies: [19, 17, 2112, 21, 576, 4836, 12562, 7592, 4832, 504, 8535, 11100, 12565, 1115, 12567, 12569, 9217, 9640, 8173, 1091, 2]
+// Dependencies: [19, 17, 2112, 21, 576, 4836, 12580, 7592, 4832, 504, 8535, 11100, 12583, 1115, 12585, 12587, 9217, 9640, 8173, 1091, 2]
 // Exports: BadgesContainer, CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 12564 (Badges)
+// Module 12582 (Badges)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import DurationsDefault from "Durations" /* 1091 */;
@@ -119,7 +119,7 @@ export const MarathonBadge = function MarathonBadge(entry) {
 export const NewGameBadge = function NewGameBadge(entry) {
   let tmp3 = null;
   if (obj.isEntryNew(entry.entry)) {
-    const obj2 = { Icon: tmp(12565).NewUserIcon, text: null, iconColor: null };
+    const obj2 = { Icon: tmp(12583).NewUserIcon, text: null, iconColor: null };
     const intl = tmp(1115).intl;
     obj2.text = intl.string(tmp(1115).t.keY6mW);
     obj2.iconColor = nativeDefault.colors.STATUS_POSITIVE;
@@ -134,7 +134,7 @@ export const StreakBadge = function StreakBadge(entry) {
   if (null != streakCount) {
     tmp4 = null;
     if (streakCount >= 2) {
-      const obj2 = { Icon: tmp(12567).FlashIcon, text: null, iconColor: null, accessibilityLabel: null };
+      const obj2 = { Icon: tmp(12585).FlashIcon, text: null, iconColor: null, accessibilityLabel: null };
       const intl = tmp(1115).intl;
       const obj3 = { days: streakCount };
       obj2.text = intl.formatToPlainString(tmp(1115).t["Klie/P"], obj3);
@@ -153,7 +153,7 @@ export const TrendingBadge = function TrendingBadge(entry) {
   let tmp4 = null;
   if (null != trendingType) {
     tmp4 = null;
-    if (trendingType !== tmp(12569).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+    if (trendingType !== tmp(12587).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
       const obj2 = { Icon: tmp(9217).FireIcon, text: null, iconColor: null };
       const intl = tmp(1115).intl;
       obj2.text = intl.string(tmp(1115).t.TsWCdW);

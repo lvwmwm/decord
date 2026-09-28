@@ -1,10 +1,10 @@
-// Module ID: 17501
-// Function ID: 17502
+// Module ID: 17505
+// Function ID: 17506
 // Name: ArrowLargeDownIcon
 // Dependencies: [19, 21, 576, 4530, 11751, 2]
 // Exports: ArrowLargeDownIcon
 
-// Module 17501 (ArrowLargeDownIcon)
+// Module 17505 (ArrowLargeDownIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
 import _mod11751 from "module_11751" /* 11751 */;

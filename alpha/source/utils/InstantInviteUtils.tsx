@@ -511,10 +511,10 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
   if (minutes === type) {
     const intl4 = util.intl;
     if (tmp2) {
-      let stringResult = intl4.string(tmp12(1115).t["/WbTXD"]);
+      let stringResult = intl4.string(tmp13(1115).t["/WbTXD"]);
     } else {
       const obj2 = { numUses: parsed };
-      stringResult = intl4.formatToPlainString(tmp12(1115).t.eDRWJK, obj2);
+      stringResult = intl4.formatToPlainString(tmp13(1115).t.eDRWJK, obj2);
     }
     return stringResult;
   } else if (hours === type) {
@@ -544,10 +544,10 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
   } else if (never === type) {
     const intl = util.intl;
     if (tmp2) {
-      let stringResult1 = intl.string(tmp3(1115).t.QrHBnC);
+      let stringResult1 = intl.string(tmp4(1115).t.QrHBnC);
     } else {
       obj = { numUses: parsed };
-      stringResult1 = intl.formatToPlainString(tmp3(1115).t.yJnTxI, obj);
+      stringResult1 = intl.formatToPlainString(tmp4(1115).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {

@@ -1,9 +1,9 @@
-// Module ID: 16034
-// Function ID: 16035
+// Module ID: 16030
+// Function ID: 16031
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11155, 14627, 21, 4836, 576, 16035, 4566, 5280, 7275, 504, 4801, 7284, 7285, 1115, 9067, 16033, 7363, 1177, 4693, 2]
+// Dependencies: [19, 17, 11155, 14627, 21, 4836, 576, 16031, 4566, 5280, 7275, 504, 4801, 7284, 7285, 1115, 9067, 16029, 7363, 1177, 4693, 2]
 
-// Module 16034 (YouBarNotificationsButton)
+// Module 16030 (YouBarNotificationsButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HapticUtils from "HapticUtils" /* 4801 */;

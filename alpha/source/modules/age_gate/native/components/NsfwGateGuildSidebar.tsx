@@ -1,10 +1,10 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 15915
+// Function ID: 15916
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 2108, 2067, 1372, 9233, 1074, 21, 4836, 576, 504, 1241, 8597, 15769, 1177, 5836, 15918, 1115, 2111, 2]
+// Dependencies: [19, 17, 2108, 2067, 1372, 9233, 1074, 21, 4836, 576, 504, 1241, 8597, 15767, 1177, 5836, 15916, 1115, 2111, 2]
 // Exports: default
 
-// Module 15917 (NsfwGateGuildSidebar)
+// Module 15915 (NsfwGateGuildSidebar)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 8597 */;

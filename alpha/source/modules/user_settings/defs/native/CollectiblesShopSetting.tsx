@@ -1,9 +1,9 @@
-// Module ID: 15419
-// Function ID: 15420
+// Module ID: 15417
+// Function ID: 15418
 // Name: CollectiblesShopSetting
-// Dependencies: [1074, 11006, 1115, 11620, 15420, 6961, 6603, 2]
+// Dependencies: [1074, 11006, 1115, 11620, 15418, 6961, 6603, 2]
 
-// Module 15419 (CollectiblesShopSetting)
+// Module 15417 (CollectiblesShopSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;

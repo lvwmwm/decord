@@ -1,17 +1,17 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 15831
+// Function ID: 15832
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 9578, 2111, 1981, 4525, 5435, 15834, 4832, 1115, 1177, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 9578, 2111, 1981, 4525, 5435, 15832, 4832, 1115, 1177, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15833 (GuildMFAWarning)
+// Module 15831 (GuildMFAWarning)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Pressables from "Pressables" /* 5435 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
-import _modDef15834 from "module_15834" /* 15834 */;
+import _modDef15832 from "module_15832" /* 15832 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -94,7 +94,7 @@ const result = size.fileFinishedImporting("modules/guild_sidebar/native/GuildMFA
 export default function GuildMFAWarning() {
   const tmp = closure_8();
   const obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress, children: null };
-  const items = [timestampProducer(Image, { style: tmp.MFAWarningIcon, source: _modDef15834 }), ];
+  const items = [timestampProducer(Image, { style: tmp.MFAWarningIcon, source: _modDef15832 }), ];
   const obj3 = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl = util.intl;
   const items1 = [intl.string(util.t.ZIf8Ag), ];

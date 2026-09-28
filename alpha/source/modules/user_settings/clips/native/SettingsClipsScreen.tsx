@@ -1,12 +1,12 @@
 // Module ID: 14511
 // Function ID: 14512
 // Name: SettingsClipsScreen
-// Dependencies: [19, 7417, 21, 11006, 14248, 2]
+// Dependencies: [19, 7417, 21, 11006, 14247, 2]
 // Exports: default
 
 // Module 14511 (SettingsClipsScreen)
 import SettingBuilders from "SettingBuilders" /* 11006 */;
-import SettingLayoutDefault from "SettingLayout" /* 14248 */;
+import SettingLayoutDefault from "SettingLayout" /* 14247 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

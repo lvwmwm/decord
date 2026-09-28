@@ -1,7 +1,7 @@
 // Module ID: 16305
 // Function ID: 16306
 // Name: VibegrationsConnectToolSheet
-// Dependencies: [5, 32, 19, 17, 12624, 21, 4836, 576, 6610, 4527, 5209, 1115, 3715, 6618, 6570, 4832, 5919, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 12642, 21, 4836, 576, 6610, 4527, 5209, 1115, 3715, 6618, 6570, 4832, 5919, 5281, 2]
 // Exports: default
 
 // Module 16305 (VibegrationsConnectToolSheet)
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const fetchProjectMcpConnection = fn(12624).fetchProjectMcpConnection;
+const fetchProjectMcpConnection = fn(12642).fetchProjectMcpConnection;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4836);

@@ -1,10 +1,10 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16591
+// Function ID: 16592
 // Name: AddFriendsContactSyncEmptyState
 // Dependencies: [19, 17, 21, 4836, 576, 12190, 4832, 1115, 12177, 5281, 12173, 2]
 // Exports: default
 
-// Module 16587 (AddFriendsContactSyncEmptyState)
+// Module 16591 (AddFriendsContactSyncEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;

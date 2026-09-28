@@ -1,14 +1,14 @@
-// Module ID: 15079
-// Function ID: 15080
+// Module ID: 15077
+// Function ID: 15078
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 19, 17, 1372, 1074, 8624, 21, 4836, 504, 12996, 1970, 6583, 8625, 8614, 8053, 15080, 9425, 8695, 8663, 1115, 2]
+// Dependencies: [5, 19, 17, 1372, 1074, 8624, 21, 4836, 504, 12995, 1970, 6583, 8625, 8614, 8053, 15078, 9425, 8695, 8663, 1115, 2]
 
-// Module 15079 (UserSettingsAppIcons)
+// Module 15077 (UserSettingsAppIcons)
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8663 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
 import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9425 */;
-import AppIconRowsDefault from "AppIconRows" /* 15080 */;
+import AppIconRowsDefault from "AppIconRows" /* 15078 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -69,7 +69,7 @@ export default noop.memo(() => {
                   }
                   dependencyMap = 1;
                   v3 = 1;
-                  const obj8 = { value: stateFromStores(12996).setAppIcon(id, premiumType), done: false };
+                  const obj8 = { value: stateFromStores(12995).setAppIcon(id, premiumType), done: false };
                   return obj8;
                 }
               } else {
@@ -79,7 +79,7 @@ export default noop.memo(() => {
                 }
                 dependencyMap = 2;
                 v3 = 1;
-                const obj9 = { value: stateFromStores(12996).setAppIcon(stateFromStores(8625).FreemiumAppIconIds.DEFAULT, premiumType1), done: false };
+                const obj9 = { value: stateFromStores(12995).setAppIcon(stateFromStores(8625).FreemiumAppIconIds.DEFAULT, premiumType1), done: false };
                 return obj9;
               }
             }
@@ -114,8 +114,8 @@ export default noop.memo(() => {
   const items = [currentUser];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj = stateFromStores(504);
-  importDefault = stateFromStores(12996).useCurrentAppIcon();
-  let obj2 = stateFromStores(12996);
+  importDefault = stateFromStores(12995).useCurrentAppIcon();
+  let obj2 = stateFromStores(12995);
   const isPremiumResult = stateFromStores(1970).isPremium(stateFromStores);
   dependencyMap = isPremiumResult;
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;

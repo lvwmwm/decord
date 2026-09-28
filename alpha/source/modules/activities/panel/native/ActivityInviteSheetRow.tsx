@@ -1,9 +1,9 @@
-// Module ID: 16849
-// Function ID: 16850
+// Module ID: 16853
+// Function ID: 16854
 // Name: ActivityInviteSheetRow
 // Dependencies: [19, 17, 2045, 2067, 1372, 7155, 21, 4836, 576, 504, 4989, 9277, 5435, 1177, 9094, 4678, 1115, 1397, 2011, 4832, 5917, 9351, 2]
 
-// Module 16849 (ActivityInviteSheetRow)
+// Module 16853 (ActivityInviteSheetRow)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

@@ -1,9 +1,9 @@
-// Module ID: 15670
-// Function ID: 15671
+// Module ID: 15668
+// Function ID: 15669
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 4851, 5018, 21, 4836, 576, 1177, 7372, 6388, 9603, 10417, 4538, 4767, 504, 14866, 4421, 7822, 15671, 11, 4989, 15672, 4531, 10357, 10358, 4832, 9205, 8741, 9568, 7304, 10335, 1115, 15674, 2]
+// Dependencies: [19, 17, 4851, 5018, 21, 4836, 576, 1177, 7372, 6388, 9603, 10417, 4538, 4767, 504, 14864, 4421, 7822, 15669, 11, 4989, 15670, 4531, 10357, 10358, 4832, 9205, 8741, 9568, 7304, 10335, 1115, 15672, 2]
 
-// Module 15670 (MessagesItemChannelContent)
+// Module 15668 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
@@ -13,8 +13,8 @@ import _modDef6388 from "module_6388" /* 6388 */;
 import _modDef7372 from "module_7372" /* 7372 */;
 import _modDef9603 from "module_9603" /* 9603 */;
 import _modDef10417 from "module_10417" /* 10417 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 14866 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 15672 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 14864 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 15670 */;
 import noop from "module_19" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 
@@ -135,7 +135,7 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
     tmp12 = !tmp3(7822)(channel.id);
   }
   const tmpResult = channel(504);
-  const tmpResult3 = channel(15671);
+  const tmpResult3 = channel(15669);
   let id = stateFromStores;
   if (stateFromStores == null) {
     id = channel.id;
@@ -274,7 +274,7 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
     let tmp20Result8 = null;
     if (waveShouldShow) {
       const obj22 = { wavePressed: tmp17.wavePressed, hasNameplate };
-      tmp20Result8 = tmp20(tmp3(15674), obj22);
+      tmp20Result8 = tmp20(tmp3(15672), obj22);
     }
     const obj23 = { children: null };
     items9[1] = tmp20Result8;

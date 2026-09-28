@@ -1,7 +1,7 @@
 // Module ID: 14529
 // Function ID: 14530
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1074, 21, 6837, 10977, 13097, 1177, 11006, 1115, 10496, 4501, 13096, 2]
+// Dependencies: [19, 1074, 21, 6837, 10977, 13096, 1177, 11006, 1115, 10496, 4501, 13095, 2]
 
 // Module 14529 (PremiumGiftingSetting)
 import util from "util" /* 1115 */;
@@ -9,7 +9,7 @@ import native from "native" /* 1177 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 4501 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6837 */;
 import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10977 */;
-import PromotionsHooks from "PromotionsHooks" /* 13097 */;
+import PromotionsHooks from "PromotionsHooks" /* 13096 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,9 +1,9 @@
-// Module ID: 16921
-// Function ID: 16922
+// Module ID: 16925
+// Function ID: 16926
 // Name: VoicePanelHeader
-// Dependencies: [32, 19, 17, 4852, 4750, 9354, 502, 2045, 1993, 4479, 5731, 1372, 11755, 11758, 11753, 4857, 1085, 21, 4836, 576, 4566, 5280, 6494, 5268, 5901, 11754, 9493, 504, 9356, 16855, 1115, 9365, 9367, 9368, 5266, 16857, 16922, 4989, 4531, 11759, 4837, 16923, 16876, 16924, 5942, 16925, 9104, 9183, 9144, 4540, 16173, 16926, 10616, 16928, 9238, 1095, 16939, 9491, 16948, 16949, 2]
+// Dependencies: [32, 19, 17, 4852, 4750, 9354, 502, 2045, 1993, 4479, 5731, 1372, 11755, 11758, 11753, 4857, 1085, 21, 4836, 576, 4566, 5280, 6494, 5268, 5901, 11754, 9493, 504, 9356, 16859, 1115, 9365, 9367, 9368, 5266, 16861, 16926, 4989, 4531, 11759, 4837, 16927, 16880, 16928, 5942, 16929, 9104, 9183, 9144, 4540, 16169, 16930, 10616, 16932, 9238, 1095, 16943, 9491, 16952, 16953, 2]
 
-// Module 16921 (VoicePanelHeader)
+// Module 16925 (VoicePanelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
@@ -12,7 +12,7 @@ import useChannelName from "useChannelName" /* 4989 */;
 import StageMusicActionCreators from "StageMusicActionCreators" /* 9368 */;
 import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 9493 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11759 */;
-import useStableParticipant from "useStableParticipant" /* 16925 */;
+import useStableParticipant from "useStableParticipant" /* 16929 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
@@ -56,8 +56,8 @@ function MusicMuteButton(channelId) {
               return StageMusicActionCreators.updateStageMusicMuted(!stateFromStores);
             }
       };
-      closure_23(tmp(16855), obj3);
-      const tmpResult = tmp(16855);
+      closure_23(tmp(16859), obj3);
+      const tmpResult = tmp(16859);
     }
   }
   return tmp6;
@@ -516,7 +516,7 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
           }
           obj2 = MediaEngineStore;
         }
-        tmp10Result = tmp10(16925);
+        tmp10Result = tmp10(16929);
       }
       obj3 = useStableParticipant;
     }

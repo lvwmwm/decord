@@ -1,10 +1,10 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13454
+// Function ID: 13455
 // Name: useMessageRequestPrivacyOption
 // Dependencies: [19, 21, 2021, 6416, 6620, 1115, 11938, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 13455 (useMessageRequestPrivacyOption)
+// Module 13454 (useMessageRequestPrivacyOption)
 import UserSettings from "UserSettings" /* 2021 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
 import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 11938 */;

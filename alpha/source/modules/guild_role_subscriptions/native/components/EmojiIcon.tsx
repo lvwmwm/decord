@@ -1,14 +1,14 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 14785
+// Function ID: 14786
 // Name: EmojiIcon
-// Dependencies: [19, 21, 14788, 5899, 9762, 6551, 1397, 2]
+// Dependencies: [19, 21, 14786, 5899, 9762, 6551, 1397, 2]
 // Exports: default
 
-// Module 14787 (EmojiIcon)
+// Module 14785 (EmojiIcon)
 import FastImageDefault from "FastImage" /* 5899 */;
 import EmojiDefault from "Emoji" /* 6551 */;
 import _modDef9762 from "module_9762" /* 9762 */;
-import useEmojiByIdOrName from "useEmojiByIdOrName" /* 14788 */;
+import useEmojiByIdOrName from "useEmojiByIdOrName" /* 14786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

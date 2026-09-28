@@ -1,13 +1,13 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15752
+// Function ID: 15753
 // Name: VoiceChannelUserLimit
-// Dependencies: [19, 17, 21, 4836, 576, 1177, 13336, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1177, 13335, 4832, 2]
 
-// Module 15754 (VoiceChannelUserLimit)
+// Module 15752 (VoiceChannelUserLimit)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import _modDef13336 from "module_13336" /* 13336 */;
+import _modDef13335 from "module_13335" /* 13335 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -37,7 +37,7 @@ export default noop.memo(function VoiceChannelUserLimit(videoLimit) {
   const obj2 = { style: rect.left, children: null };
   let tmp3 = null;
   if (videoLimit.videoLimit) {
-    const obj3 = { source: _modDef13336, size: native.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
+    const obj3 = { source: _modDef13335, size: native.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
     tmp3 = React4(native.Icon, obj3);
   }
   const items = [tmp3, ];

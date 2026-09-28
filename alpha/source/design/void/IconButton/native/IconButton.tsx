@@ -1,9 +1,9 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13006
+// Function ID: 13007
 // Name: IconButton/IconButton
 // Dependencies: [19, 21, 4836, 576, 5753, 5435, 1177, 2]
 
-// Module 13007 (IconButton/IconButton)
+// Module 13006 (IconButton/IconButton)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 15847
-// Function ID: 15848
+// Module ID: 15845
+// Function ID: 15846
 // Name: HubSideBarProgressOverview
-// Dependencies: [19, 9286, 21, 12166, 1115, 11967, 13521, 4800, 12170, 1981, 2]
+// Dependencies: [19, 9286, 21, 12166, 1115, 11967, 13520, 4800, 12170, 1981, 2]
 // Exports: default
 
-// Module 15847 (HubSideBarProgressOverview)
+// Module 15845 (HubSideBarProgressOverview)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import noop from "module_19" /* 19 */;
@@ -47,7 +47,7 @@ export default function HubSidebarProgressOverview(guild) {
       subtitle: formatToPlainStringResult,
       percentComplete: bound
     };
-    return jsx(tmp(13521).GuildProgressOverviewView, {
+    return jsx(tmp(13520).GuildProgressOverviewView, {
       onPress() {
           ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12170, dependencyMap.paths), React3, { guild, analyticsSource: "Channels Sidebar" });
         },

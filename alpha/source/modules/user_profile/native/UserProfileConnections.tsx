@@ -1,10 +1,10 @@
-// Module ID: 12653
-// Function ID: 12654
+// Module ID: 12671
+// Function ID: 12672
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2112, 4679, 6629, 1074, 5720, 21, 1177, 4836, 576, 11070, 4531, 4685, 11075, 11076, 7635, 5719, 5595, 1397, 7818, 5016, 4525, 4801, 6610, 4527, 1115, 4832, 5917, 4530, 8037, 4540, 504, 12654, 6628, 5999, 12657, 2]
+// Dependencies: [19, 17, 2112, 4679, 6629, 1074, 5720, 21, 1177, 4836, 576, 11070, 4531, 4685, 11075, 11076, 7635, 5719, 5595, 1397, 7818, 5016, 4525, 4801, 6610, 4527, 1115, 4832, 5917, 4530, 8037, 4540, 504, 12672, 6628, 5999, 12675, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 12653 (UserProfileConnections)
+// Module 12671 (UserProfileConnections)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native2 from "native" /* 1177 */;
@@ -18,7 +18,7 @@ import ClipboardUtils from "ClipboardUtils" /* 6610 */;
 import UserProfileCardDefault from "UserProfileCard" /* 6628 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7818 */;
 import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11070 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12657 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12675 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import StreamerModeStore from "StreamerModeStore" /* 4679 */;
@@ -398,7 +398,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   const stateFromStores = userId(504).useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
   const obj3 = userId(504);
   const tmp5 = theme;
-  ({ connections, appIdentities } = theme(12654)(userId));
+  ({ connections, appIdentities } = theme(12672)(userId));
   if (!stateFromStores) {
     const items2 = [];
     HermesBuiltin.arraySpread(appIdentities.map((application) => {

@@ -1,10 +1,10 @@
-// Module ID: 15840
-// Function ID: 15841
+// Module ID: 15838
+// Function ID: 15839
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 2052, 21, 4836, 576, 6618, 6570, 1177, 12295, 1115, 8053, 15733, 10418, 2]
+// Dependencies: [19, 17, 2052, 21, 4836, 576, 6618, 6570, 1177, 12295, 1115, 8053, 15731, 10418, 2]
 // Exports: default
 
-// Module 15840 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 15838 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -13,7 +13,7 @@ import ActionSheet from "ActionSheet" /* 6618 */;
 import Form from "Form" /* 8053 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10418 */;
 import _modDef12295 from "module_12295" /* 12295 */;
-import _modDef15733 from "module_15733" /* 15733 */;
+import _modDef15731 from "module_15731" /* 15731 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -42,7 +42,7 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
   const items = [closure_5(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2), ];
   const obj5 = { leading: null, label: null, onPress: null };
   const obj4 = { disableColor: true, source: _modDef12295 };
-  obj5.leading = closure_5(native.Icon, { source: _modDef15733 });
+  obj5.leading = closure_5(native.Icon, { source: _modDef15731 });
   const obj7 = { text: null };
   const intl2 = util.intl;
   obj7.text = intl2.string(util.t.WqhZss);

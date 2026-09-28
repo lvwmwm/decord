@@ -1,10 +1,10 @@
-// Module ID: 14452
-// Function ID: 14453
+// Module ID: 14451
+// Function ID: 14452
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 6958, 21, 4836, 576, 8106, 8105, 11398, 1115, 2487, 4832, 14453, 14455, 5435, 5039, 14458, 1981, 1177, 14460, 2]
+// Dependencies: [19, 17, 6958, 21, 4836, 576, 8106, 8105, 11398, 1115, 2487, 4832, 14452, 14454, 5435, 5039, 14457, 1981, 1177, 14459, 2]
 // Exports: default
 
-// Module 14452 (FamilyCenterAcceptedLinks)
+// Module 14451 (FamilyCenterAcceptedLinks)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import _modDef2487 from "module_2487" /* 2487 */;
@@ -13,8 +13,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import useUserLinks from "useUserLinks" /* 8105 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8106 */;
 import useAgeSpecificText from "useAgeSpecificText" /* 11398 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 14455 */;
-import _modDef14460 from "module_14460" /* 14460 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 14454 */;
+import _modDef14459 from "module_14459" /* 14459 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,10 +32,10 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
     const obj3 = { name: str1 };
     obj.accessibilityLabel = intl.formatToPlainString(_modDef2487.T7DUoU, obj3);
     obj.onPress = function onPress() {
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14458, dependencyMap.paths), { otherUser: str });
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14457, dependencyMap.paths), { otherUser: str });
     };
     obj.style = tmp.actionButton;
-    const obj4 = { size: str(1177).Icon.Sizes.SMALL, disableColor: true, source: _modDef14460 };
+    const obj4 = { size: str(1177).Icon.Sizes.SMALL, disableColor: true, source: _modDef14459 };
     obj.children = closure_6(str(1177).Icon, obj4);
     obj2.actions = closure_6(str(5435).PressableOpacity, obj);
     tmp4Result = tmp4(FamilyCenterLinkRowDefault, obj2);
@@ -75,9 +75,9 @@ export default function FamilyCenterAcceptedLinks() {
     const obj7 = { text: null };
     const intl3 = tmp5(1115).intl;
     obj7.text = intl3.string(tmp2(2487).C4ScLD);
-    obj6.children = tmp10(tmp2(14453), obj7);
+    obj6.children = tmp10(tmp2(14452), obj7);
     let mapped = tmp10(tmp9, obj6);
-    const tmp2Result = tmp2(14453);
+    const tmp2Result = tmp2(14452);
   } else {
     mapped = activeLinkUsers.map((otherUser) => closure_1_6(FamilyCenterAcceptedLinkRow, { otherUser }, "accepted-" + otherUser.id));
   }

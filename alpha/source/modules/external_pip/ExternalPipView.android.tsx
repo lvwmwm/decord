@@ -1,12 +1,12 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16824
+// Function ID: 16825
 // Name: ExternalPipView
-// Dependencies: [32, 19, 7738, 21, 16821, 8886, 16823, 2]
+// Dependencies: [32, 19, 7738, 21, 16825, 8886, 16827, 2]
 // Exports: default
 
-// Module 16820 (ExternalPipView)
+// Module 16824 (ExternalPipView)
 import ExternalPipDefault from "ExternalPip" /* 8886 */;
-import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 16823 */;
+import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 16827 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AppFreezeStore from "AppFreezeStore" /* 7738 */;

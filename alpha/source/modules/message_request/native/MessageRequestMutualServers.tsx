@@ -1,10 +1,10 @@
-// Module ID: 16698
-// Function ID: 16699
+// Module ID: 16702
+// Function ID: 16703
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4836, 5896, 16699, 1115, 12115, 4832, 5435, 2]
+// Dependencies: [19, 17, 21, 4836, 5896, 16703, 1115, 12115, 4832, 5435, 2]
 // Exports: default
 
-// Module 16698 (MessageRequestMutualServers)
+// Module 16702 (MessageRequestMutualServers)
 import GuildIconDefault from "GuildIcon" /* 5896 */;
 import noop from "module_19" /* 19 */;
 
@@ -29,7 +29,7 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  const mutualGuildsForMessageRequests = iconSize(16699).useMutualGuildsForMessageRequests(userId);
+  const mutualGuildsForMessageRequests = iconSize(16703).useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
     const intl2 = tmp4(1115).intl;

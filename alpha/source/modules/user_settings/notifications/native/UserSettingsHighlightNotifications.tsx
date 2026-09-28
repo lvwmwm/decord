@@ -1,10 +1,10 @@
-// Module ID: 15075
-// Function ID: 15076
+// Module ID: 15073
+// Function ID: 15074
 // Name: UserSettingsHighlightNotifications
 // Dependencies: [19, 2067, 5750, 5017, 1074, 21, 6540, 6535, 504, 5896, 6621, 8053, 2]
 // Exports: default
 
-// Module 15075 (UserSettingsHighlightNotifications)
+// Module 15073 (UserSettingsHighlightNotifications)
 import GuildIconDefault from "GuildIcon" /* 5896 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6535 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6540 */;

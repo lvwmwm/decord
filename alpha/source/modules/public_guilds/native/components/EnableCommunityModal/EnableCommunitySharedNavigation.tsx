@@ -1,10 +1,10 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 17468
+// Function ID: 17469
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9049, 1074, 21, 4836, 504, 1485, 5266, 5275, 573, 17462, 6460, 6544, 5281, 1115, 2]
+// Dependencies: [19, 17, 9049, 1074, 21, 4836, 504, 1485, 5266, 5275, 573, 17466, 6460, 6544, 5281, 1115, 2]
 // Exports: EnableCommunityModalScreen
 
-// Module 17464 (EnableCommunitySharedNavigation)
+// Module 17468 (EnableCommunitySharedNavigation)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;

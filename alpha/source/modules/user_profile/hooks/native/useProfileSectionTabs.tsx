@@ -1,10 +1,10 @@
-// Module ID: 12643
-// Function ID: 12644
+// Module ID: 12661
+// Function ID: 12662
 // Name: useProfileSectionTabs
 // Dependencies: [32, 19, 7628, 2]
 // Exports: useProfileSectionTabs, useProfileTabIndices
 
-// Module 12643 (useProfileSectionTabs)
+// Module 12661 (useProfileSectionTabs)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

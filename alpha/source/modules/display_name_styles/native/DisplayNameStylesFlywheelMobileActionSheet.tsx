@@ -1,10 +1,10 @@
-// Module ID: 16754
-// Function ID: 16755
+// Module ID: 16758
+// Function ID: 16759
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1372, 1074, 2042, 21, 4550, 4685, 4767, 6400, 504, 4488, 1115, 2877, 6800, 6459, 4654, 2029, 6571, 6544, 6575, 16755, 1364, 5899, 16757, 8271, 4832, 5281, 4836, 576, 2]
+// Dependencies: [19, 17, 1372, 1074, 2042, 21, 4550, 4685, 4767, 6400, 504, 4488, 1115, 2877, 6800, 6459, 4654, 2029, 6571, 6544, 6575, 16759, 1364, 5899, 16761, 8271, 4832, 5281, 4836, 576, 2]
 // Exports: default
 
-// Module 16754 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 16758 (DisplayNameStylesFlywheelMobileActionSheet)
 import nativeDefault from "native" /* 576 */;
 import openUserSettings from "openUserSettings" /* 6800 */;
 import noop from "module_19" /* 19 */;
@@ -95,7 +95,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   const obj9 = { style: tmp6.imageContainer, children: null };
   let tmp15Result = enabled;
   if (enabled) {
-    tmp15Result = tmp15(tmp2(16755).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+    tmp15Result = tmp15(tmp2(16759).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   }
   const items5 = [tmp15Result, ];
   if (enabled) {
@@ -142,14 +142,14 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   } else {
     if (tmp2Result.isIOS()) {
       const obj16 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
-      const obj17 = { uri: tmp4(16757) };
+      const obj17 = { uri: tmp4(16761) };
       obj16.source = obj17;
       obj16.style = tmp6.image;
       obj16.enableAnimation = !enabled;
       let tmp15Result2 = tmp15(tmp4(5899), obj16);
       const tmp4Result = tmp4(5899);
     } else {
-      const obj18 = { url: tmp4(16757), style: tmp6.image, autoplay: true };
+      const obj18 = { url: tmp4(16761), style: tmp6.image, autoplay: true };
       tmp15Result2 = tmp15(tmp2(8271).APNGPlayer, obj18);
     }
     tmp2Result = tmp2(1364);

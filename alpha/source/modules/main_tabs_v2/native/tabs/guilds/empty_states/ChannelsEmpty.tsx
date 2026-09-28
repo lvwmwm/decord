@@ -1,14 +1,14 @@
-// Module ID: 15888
-// Function ID: 15889
+// Module ID: 15886
+// Function ID: 15887
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4469, 1074, 21, 4836, 4832, 576, 563, 9048, 9015, 14629, 8055, 1177, 15889, 1115, 15890, 5282, 2]
+// Dependencies: [19, 17, 4469, 1074, 21, 4836, 4832, 576, 563, 9048, 9015, 14629, 8055, 1177, 15887, 1115, 15888, 5282, 2]
 
-// Module 15888 (ChannelsEmpty)
+// Module 15886 (ChannelsEmpty)
 import nativeDefault from "native" /* 576 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9015 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
-import _modDef15889 from "module_15889" /* 15889 */;
-import _modDef15890 from "module_15890" /* 15890 */;
+import _modDef15887 from "module_15887" /* 15887 */;
+import _modDef15888 from "module_15888" /* 15888 */;
 import noop from "module_19" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 
@@ -59,7 +59,7 @@ export default noop.memo(function ChannelsEmpty(guild) {
   if (canCustomizeGuild) {
     const obj5 = { style: tmp.personalizeButtonWrapper, children: null };
     const obj6 = { icon: null, label: null, onPress: null };
-    const obj7 = { source: _modDef15889, disableColor: true };
+    const obj7 = { source: _modDef15887, disableColor: true };
     obj6.icon = closure_8(tmp2(1177).Icon, obj7);
     const intl = tmp2(1115).intl;
     obj6.label = intl.string(tmp2(1115).t["Yhi9/N"]);
@@ -70,7 +70,7 @@ export default noop.memo(function ChannelsEmpty(guild) {
   const items5 = [canCustomizeGuild, ];
   const obj8 = { style: tmp.content, children: null };
   const obj4 = { paddingBottom: guild(14629).useYouBarTotalHeight(16) };
-  const items6 = [closure_8(closure_5, { source: _modDef15890 }), , , ];
+  const items6 = [closure_8(closure_5, { source: _modDef15888 }), , , ];
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: null, children: null };
   const items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);

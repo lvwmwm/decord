@@ -1,10 +1,10 @@
-// Module ID: 17601
-// Function ID: 17602
+// Module ID: 17605
+// Function ID: 17606
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
 // Dependencies: [19, 17, 2042, 21, 4836, 576, 1613, 6571, 6045, 4832, 1115, 1177, 5282, 2]
 // Exports: default
 
-// Module 17601 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 17605 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import noop from "module_19" /* 19 */;

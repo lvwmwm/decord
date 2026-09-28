@@ -1,10 +1,10 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 12704
+// Function ID: 12705
 // Name: useCollectibleProfileOverrides
 // Dependencies: [19, 6967, 6968, 6969, 7616, 1974, 2]
 // Exports: useCollectibleProfileOverrides
 
-// Module 12705 (useCollectibleProfileOverrides)
+// Module 12704 (useCollectibleProfileOverrides)
 import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
 import useShopProductItems from "useShopProductItems" /* 7616 */;
 import noop from "module_19" /* 19 */;

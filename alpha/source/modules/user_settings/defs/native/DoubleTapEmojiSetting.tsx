@@ -1,9 +1,9 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 15507
+// Function ID: 15508
 // Name: DoubleTapEmojiSetting
 // Dependencies: [5, 19, 7417, 1074, 1375, 21, 4836, 576, 2021, 7410, 1397, 6551, 10583, 1241, 6603, 10586, 11006, 1115, 2]
 
-// Module 15509 (DoubleTapEmojiSetting)
+// Module 15507 (DoubleTapEmojiSetting)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;

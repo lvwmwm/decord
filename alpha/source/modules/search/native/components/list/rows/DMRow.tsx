@@ -1,9 +1,9 @@
-// Module ID: 16463
-// Function ID: 16464
+// Module ID: 16467
+// Function ID: 16468
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4825, 4876, 4479, 1074, 21, 4836, 576, 4832, 4678, 10335, 504, 8741, 1177, 9034, 13042, 16464, 2]
+// Dependencies: [5, 32, 19, 17, 4825, 4876, 4479, 1074, 21, 4836, 576, 4832, 4678, 10335, 504, 8741, 1177, 9034, 13041, 16468, 2]
 
-// Module 16463 (DMRow)
+// Module 16467 (DMRow)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import UserUtils from "UserUtils" /* 4678 */;
@@ -11,7 +11,7 @@ import Text_Text from "Text/Text" /* 4832 */;
 import BotTagDefault from "BotTag" /* 8741 */;
 import _modDef9034 from "module_9034" /* 9034 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10335 */;
-import _modDef13042 from "module_13042" /* 13042 */;
+import _modDef13041 from "module_13041" /* 13041 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -174,7 +174,7 @@ export default noop.memo(function DMRow(user) {
       let tmp4Result3 = null != premiumSince;
       if (tmp4Result3) {
         const obj6 = { style: tmp3.tag, children: null };
-        const obj7 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef13042, disableColor: true };
+        const obj7 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef13041, disableColor: true };
         obj6.children = tmp4(tmp5(1177).Icon, obj7);
         tmp4Result3 = tmp4(tmp2, obj6);
       }

@@ -1,17 +1,17 @@
-// Module ID: 15851
-// Function ID: 15852
+// Module ID: 15849
+// Function ID: 15850
 // Name: GuildPowerupsChannelRow
-// Dependencies: [19, 17, 9577, 21, 11991, 6028, 576, 1177, 4836, 15806, 15646, 6578, 11987, 12006, 11868, 11975, 6603, 6577, 1115, 2519, 15852, 11774, 2]
+// Dependencies: [19, 17, 9577, 21, 11991, 6028, 576, 1177, 4836, 15804, 15644, 6578, 11987, 12006, 11868, 11975, 6603, 6577, 1115, 2519, 15850, 11774, 2]
 // Exports: default
 
-// Module 15851 (GuildPowerupsChannelRow)
+// Module 15849 (GuildPowerupsChannelRow)
 import nativeDefault from "native" /* 576 */;
 import LayerContext from "LayerContext" /* 6578 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 11975 */;
 import GuildPowerupsNotification from "GuildPowerupsNotification" /* 11991 */;
-import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 15646 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 15806 */;
+import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 15644 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 15804 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -117,7 +117,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   obj5.mode = DEFAULT;
   obj4.name = closure_5(tmp14(11868).BaseChannelName, obj5);
   const tmp3Result = dismissNewBadgeIfShown(11868);
-  obj4.icon = closure_5(tmp14(11868).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp14(15852).BoostTier2Icon });
+  obj4.icon = closure_5(tmp14(11868).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp14(15850).BoostTier2Icon });
   if (tmp6Result.showNewBadgeOnRow) {
     let tmp16Result = tmp16(tmp14(11774).NewBadge, {});
   } else {

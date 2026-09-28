@@ -1,7 +1,7 @@
 // Module ID: 5724
 // Function ID: 5725
 // Name: SelectedChannelActionCreatorsAdditional
-// Dependencies: [2045, 2067, 5725, 4469, 2099, 4655, 1372, 4855, 5726, 4981, 5727, 4527, 5728, 5729, 4800, 5742, 1981, 13171, 1255, 573, 2]
+// Dependencies: [2045, 2067, 5725, 4469, 2099, 4655, 1372, 4855, 5726, 4981, 5727, 4527, 5728, 5729, 4800, 5742, 1981, 13170, 1255, 573, 2]
 // Exports: getChannelSelectionOrigin, selectVoiceChannelAdditional
 
 // Module 5724 (SelectedChannelActionCreatorsAdditional)

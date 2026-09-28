@@ -1,10 +1,10 @@
-// Module ID: 16098
-// Function ID: 16099
+// Module ID: 16094
+// Function ID: 16095
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 7339, 4836, 576, 6421, 7288, 1115, 10386, 16099, 16100, 2]
+// Dependencies: [19, 21, 7339, 4836, 576, 6421, 7288, 1115, 10386, 16095, 16096, 2]
 // Exports: default
 
-// Module 16098 (ICYMICustomScoresModal)
+// Module 16094 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
@@ -52,7 +52,7 @@ export default function ICYMICustomScoresModal() {
         return obj;
       },
       getComponent() {
-        return closure_0(16099).default;
+        return closure_0(16095).default;
       }
     }),
     closure_3(closure_5.Screen, {
@@ -62,7 +62,7 @@ export default function ICYMICustomScoresModal() {
         return obj;
       },
       getComponent() {
-        return closure_0(16100).default;
+        return closure_0(16096).default;
       }
     })
   ];

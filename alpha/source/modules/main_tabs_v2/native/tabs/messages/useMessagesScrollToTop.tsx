@@ -1,10 +1,10 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15681
+// Function ID: 15682
 // Name: useMessagesScrollToTop
 // Dependencies: [19, 4825, 4692, 10788, 1486, 2]
 // Exports: default
 
-// Module 15683 (useMessagesScrollToTop)
+// Module 15681 (useMessagesScrollToTop)
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

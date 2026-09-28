@@ -1,9 +1,9 @@
-// Module ID: 15666
-// Function ID: 15667
+// Module ID: 15664
+// Function ID: 15665
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 4876, 4851, 4479, 2099, 5017, 1372, 1074, 21, 4836, 576, 504, 15667, 7662, 1364, 4849, 4847, 10374, 5435, 9060, 8281, 15668, 7304, 8277, 15669, 7705, 15670, 2]
+// Dependencies: [19, 17, 4876, 4851, 4479, 2099, 5017, 1372, 1074, 21, 4836, 576, 504, 15665, 7662, 1364, 4849, 4847, 10374, 5435, 9060, 8281, 15666, 7304, 8277, 15667, 7705, 15668, 2]
 
-// Module 15666 (MessagesItemChannelBase)
+// Module 15664 (MessagesItemChannelBase)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;

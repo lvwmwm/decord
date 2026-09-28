@@ -1,10 +1,10 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12872
+// Function ID: 12873
 // Name: ForLaterNitroUpsellBar
 // Dependencies: [19, 1374, 7272, 21, 6583, 11206, 11703, 4488, 1115, 2]
 // Exports: default
 
-// Module 12873 (ForLaterNitroUpsellBar)
+// Module 12872 (ForLaterNitroUpsellBar)
 import openForLaterLimitUpsellDefault from "openForLaterLimitUpsell" /* 11206 */;
 import noop from "module_19" /* 19 */;
 

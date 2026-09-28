@@ -1,10 +1,10 @@
-// Module ID: 13309
-// Function ID: 13310
+// Module ID: 13308
+// Function ID: 13309
 // Name: getTinyBroncoWarningDescriptions
 // Dependencies: [9231, 1115, 9235, 3071, 2]
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
-// Module 13309 (getTinyBroncoWarningDescriptions)
+// Module 13308 (getTinyBroncoWarningDescriptions)
 import util from "util" /* 1115 */;
 import _modDef3071 from "module_3071" /* 3071 */;
 import TinyBroncoConstants from "TinyBroncoConstants" /* 9231 */;

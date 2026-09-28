@@ -1,9 +1,9 @@
-// Module ID: 15724
-// Function ID: 15725
+// Module ID: 15722
+// Function ID: 15723
 // Name: HappeningNowCardUser
-// Dependencies: [19, 17, 4876, 1372, 14843, 1074, 21, 1177, 4836, 6583, 504, 1241, 7624, 1981, 4678, 9060, 14844, 7705, 2]
+// Dependencies: [19, 17, 4876, 1372, 14841, 1074, 21, 1177, 4836, 6583, 504, 1241, 7624, 1981, 4678, 9060, 14842, 7705, 2]
 
-// Module 15724 (HappeningNowCardUser)
+// Module 15722 (HappeningNowCardUser)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_7 = fn(14843).HappeningNowCardTrackingType;
+let closure_7 = fn(14841).HappeningNowCardTrackingType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;
 const LARGE = fn(1177).AvatarSizes.LARGE;

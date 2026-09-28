@@ -1,10 +1,10 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 15110
+// Function ID: 15111
 // Name: CopyClientInfoSetting
 // Dependencies: [10969, 21, 1363, 4800, 11267, 6610, 4527, 6618, 6570, 1115, 6620, 4779, 4812, 11006, 5850, 2021, 2]
 // Exports: getClientInfoString
 
-// Module 15112 (CopyClientInfoSetting)
+// Module 15110 (CopyClientInfoSetting)
 import util from "util" /* 1115 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
 import CopyIcon from "CopyIcon" /* 4779 */;

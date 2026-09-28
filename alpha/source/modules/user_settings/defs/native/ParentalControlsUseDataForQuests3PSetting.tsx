@@ -1,12 +1,12 @@
-// Module ID: 15525
-// Function ID: 15526
+// Module ID: 15523
+// Function ID: 15524
 // Name: ParentalControlsUseDataForQuests3PSetting
-// Dependencies: [6957, 7417, 8107, 14355, 11006, 1115, 2]
+// Dependencies: [6957, 7417, 8107, 14354, 11006, 1115, 2]
 
-// Module 15525 (ParentalControlsUseDataForQuests3PSetting)
+// Module 15523 (ParentalControlsUseDataForQuests3PSetting)
 import util from "util" /* 1115 */;
 import useSelectedTeen from "useSelectedTeen" /* 8107 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14355 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14354 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
 
 require = fn;

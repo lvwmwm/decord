@@ -1,9 +1,9 @@
-// Module ID: 17197
-// Function ID: 17198
+// Module ID: 17201
+// Function ID: 17202
 // Name: NewUserManager
-// Dependencies: [5, 6362, 5593, 1372, 5871, 12202, 1074, 12233, 17198, 12173, 12201, 1094, 9275, 573, 6539, 12180, 12262, 2]
+// Dependencies: [5, 6362, 5593, 1372, 5871, 12202, 1074, 12233, 17202, 12173, 12201, 1094, 9275, 573, 6539, 12180, 12262, 2]
 
-// Module 17197 (NewUserManager)
+// Module 17201 (NewUserManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import NUFActionCreators from "NUFActionCreators" /* 12201 */;
@@ -29,7 +29,7 @@ let obj2 = {
     }
     return null == avatar;
   },
-  transitionToStep: fn(17198).openAddAvatarModal
+  transitionToStep: fn(17202).openAddAvatarModal
 };
 const items = [obj2, , , , , ];
 let obj3 = {

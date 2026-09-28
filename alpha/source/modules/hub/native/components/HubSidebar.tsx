@@ -1,10 +1,10 @@
-// Module ID: 15845
-// Function ID: 15846
+// Module ID: 15843
+// Function ID: 15844
 // Name: HubSidebar
-// Dependencies: [19, 17, 4467, 2099, 1074, 9577, 21, 4836, 576, 11868, 1177, 504, 15846, 15847, 15151, 1115, 4847, 12269, 11791, 4769, 9275, 2]
+// Dependencies: [19, 17, 4467, 2099, 1074, 9577, 21, 4836, 576, 11868, 1177, 504, 15844, 15845, 15149, 1115, 4847, 12269, 11791, 4769, 9275, 2]
 // Exports: default
 
-// Module 15845 (HubSidebar)
+// Module 15843 (HubSidebar)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9275 */;
@@ -68,7 +68,7 @@ export default function HubSidebar(guild) {
     }
     return tmp2;
   });
-  guild(15846);
+  guild(15844);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -77,8 +77,8 @@ export default function HubSidebar(guild) {
     }
     const obj4 = { style: row, children: null };
     const obj5 = { guild };
-    const items4 = [closure_7(stateFromStores(15847), obj5), , , ];
-    const obj6 = { active: stateFromStores1, IconComponent: tmp(15151).CompassIcon, label: null, handleItemClick: null, unreadCount: null };
+    const items4 = [closure_7(stateFromStores(15845), obj5), , , ];
+    const obj6 = { active: stateFromStores1, IconComponent: tmp(15149).CompassIcon, label: null, handleItemClick: null, unreadCount: null };
     const intl = tmp(1115).intl;
     obj6.label = intl.string(tmp(1115).t.K50GHd);
     obj6.handleItemClick = function handleItemClick() {

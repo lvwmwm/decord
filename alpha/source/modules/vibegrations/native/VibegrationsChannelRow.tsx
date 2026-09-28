@@ -1,10 +1,10 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15848
+// Function ID: 15849
 // Name: VibegrationsChannelRow
 // Dependencies: [19, 1074, 2052, 9577, 21, 4836, 576, 1101, 11868, 1115, 3715, 9611, 2]
 // Exports: default
 
-// Module 15850 (VibegrationsChannelRow)
+// Module 15848 (VibegrationsChannelRow)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import _modDef3715 from "module_3715" /* 3715 */;

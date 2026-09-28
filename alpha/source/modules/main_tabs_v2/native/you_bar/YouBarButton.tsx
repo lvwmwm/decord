@@ -1,9 +1,9 @@
-// Module ID: 16033
-// Function ID: 16034
+// Module ID: 16029
+// Function ID: 16030
 // Name: YouBarButton
 // Dependencies: [19, 17, 14627, 21, 4836, 576, 8276, 7294, 7363, 2]
 
-// Module 16033 (YouBarButton)
+// Module 16029 (YouBarButton)
 import nativeDefault from "native" /* 576 */;
 import IconButton from "IconButton" /* 7363 */;
 import ClipView from "ClipView" /* 8276 */;
@@ -88,7 +88,7 @@ class YouBarButtonIcon {
     items2[0] = memo;
     items2[1] = hasBadge;
     memo1 = obj2.useMemo(() => {
-      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "children", bottom: "current", padding: "justifyContent", minWidth: "raw" };
+      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "children", bottom: "current", padding: "justifyContent", minWidth: "methodobject" };
       return rect;
     }, items1);
     obj6 = { style: { position: "relative", height: tmp, width: tmp }, children: null };

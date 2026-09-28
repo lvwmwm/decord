@@ -1,10 +1,10 @@
-// Module ID: 13078
-// Function ID: 13079
+// Module ID: 13077
+// Function ID: 13078
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 2067, 5750, 1074, 21, 4836, 576, 4767, 504, 4743, 9203, 6760, 6411, 5896, 4832, 9872, 1115, 13047, 2]
+// Dependencies: [19, 17, 2067, 5750, 1074, 21, 4836, 576, 4767, 504, 4743, 9203, 6760, 6411, 5896, 4832, 9872, 1115, 13046, 2]
 // Exports: default
 
-// Module 13078 (GuildBoostingGuildList)
+// Module 13077 (GuildBoostingGuildList)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4743 */;
@@ -59,7 +59,7 @@ function GuildBoostingGuildListItem(guildId) {
     obj4.children = items2;
     items1[1] = closure_9(closure_3, obj4);
     const obj10 = { guild: stateFromStores, theme: tmp4 };
-    items1[2] = closure_8(tmp2(13047), obj10);
+    items1[2] = closure_8(tmp2(13046), obj10);
     obj2.children = items1;
     tmp9 = closure_9(tmp2Result, obj2);
     const tmp2Result2 = tmp2(5896);

@@ -1,18 +1,18 @@
-// Module ID: 15033
-// Function ID: 15034
+// Module ID: 15031
+// Function ID: 15032
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 15034, 7417, 21, 4836, 576, 6401, 11904, 15035, 15036, 4832, 1115, 5919, 6028, 11006, 15037, 15038, 14248, 2]
+// Dependencies: [19, 17, 15032, 7417, 21, 4836, 576, 6401, 11904, 15033, 15034, 4832, 1115, 5919, 6028, 11006, 15035, 15036, 14247, 2]
 
-// Module 15033 (SettingsNotificationScreen)
+// Module 15031 (SettingsNotificationScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6401 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11904 */;
-import SettingLayoutDefault from "SettingLayout" /* 14248 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15035 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15036 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15037 */;
+import SettingLayoutDefault from "SettingLayout" /* 14247 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15033 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15034 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15035 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -57,7 +57,7 @@ function SystemNotificationsSubLabel() {
   return React6(React7, { children });
 }
 const View = fn(17).View;
-let closure_5 = fn(15034).initializeAndroidNotificationSettingsStore;
+let closure_5 = fn(15032).initializeAndroidNotificationSettingsStore;
 const MobileUserSettings = fn(7417).MobileUserSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);

@@ -1,10 +1,10 @@
-// Module ID: 16847
-// Function ID: 16848
+// Module ID: 16851
+// Function ID: 16852
 // Name: ActivityInviteSheet
-// Dependencies: [32, 19, 17, 9349, 9288, 1074, 7155, 1085, 21, 4836, 576, 9284, 6583, 6603, 4800, 7624, 9277, 11010, 504, 9302, 6571, 6570, 1115, 1177, 9304, 6471, 16848, 2]
+// Dependencies: [32, 19, 17, 9349, 9288, 1074, 7155, 1085, 21, 4836, 576, 9284, 6583, 6603, 4800, 7624, 9277, 11010, 504, 9302, 6571, 6570, 1115, 1177, 9304, 6471, 16852, 2]
 // Exports: default
 
-// Module 16847 (ActivityInviteSheet)
+// Module 16851 (ActivityInviteSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
@@ -180,7 +180,7 @@ export default function ActivityInviteSheet(activity) {
       let tmp17Result2 = tmp17(tmp11(1177).EmptyState, obj9);
     } else {
       const obj10 = { data: stateFromStores, error: tmp6, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp17Result2 = tmp17(tmp2(16848), obj10);
+      tmp17Result2 = tmp17(tmp2(16852), obj10);
     }
     const obj11 = { children: null };
     items4[1] = tmp17Result2;

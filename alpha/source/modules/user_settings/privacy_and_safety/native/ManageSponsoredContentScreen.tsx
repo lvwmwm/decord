@@ -1,10 +1,10 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15479
+// Function ID: 15480
 // Name: ManageSponsoredContentScreen
 // Dependencies: [19, 17, 1074, 21, 1186, 2157, 2021, 6621, 1115, 4836, 576, 5999, 2111, 2]
 // Exports: default
 
-// Module 15481 (ManageSponsoredContentScreen)
+// Module 15479 (ManageSponsoredContentScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;

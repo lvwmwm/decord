@@ -1,15 +1,15 @@
-// Module ID: 17386
-// Function ID: 17387
+// Module ID: 17390
+// Function ID: 17391
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7386, 21, 576, 4836, 17387, 11975, 5279, 4832, 1115, 17388, 17389, 13461, 6630, 2]
+// Dependencies: [19, 17, 7386, 21, 576, 4836, 17391, 11975, 5279, 4832, 1115, 17392, 17393, 13460, 6630, 2]
 // Exports: default
 
-// Module 17386 (GuildSettingsServerTagBadgeGrid)
+// Module 17390 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 576 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 11975 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 17387 */;
-import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 17388 */;
-import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 17389 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 17391 */;
+import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 17392 */;
+import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 17393 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -56,7 +56,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
         children: null
       };
       size = { badge: badge.kind, width: GuildTagBadgeSize.SIZE_32, height: GuildTagBadgeSize.SIZE_32 };
-      obj.children = closure_1_7(guildId(13461).GuildBadge, size);
+      obj.children = closure_1_7(guildId(13460).GuildBadge, size);
       return closure_1_7(GuildSettingsServerTagPickerCellDefault, obj, badge.kind);
     })
   });
@@ -71,7 +71,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     const substr = lockedBadges.slice(0, 10);
     obj5.children = substr.map((badge) => {
       size = { badge: badge.kind, width: 21, height: 21 };
-      return closure_1_7(guildId(13461).GuildBadge, size, badge.kind);
+      return closure_1_7(guildId(13460).GuildBadge, size, badge.kind);
     });
     const items2 = [tmp8(closure_5, obj5), , ];
     const obj6 = { variant: "text-md/medium", color: "text-subtle", style: tmp.upsellText, children: null };

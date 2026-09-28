@@ -1,12 +1,12 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14489
+// Function ID: 14490
 // Name: ConnectionsSetting
-// Dependencies: [1074, 11006, 1115, 14491, 14493, 2]
+// Dependencies: [1074, 11006, 1115, 14490, 14492, 2]
 
-// Module 14490 (ConnectionsSetting)
+// Module 14489 (ConnectionsSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14491 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14490 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

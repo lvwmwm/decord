@@ -1,10 +1,10 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15608
+// Function ID: 15609
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6011, 21, 4836, 4548, 15611, 1115, 5929, 4832, 2]
+// Dependencies: [19, 17, 6011, 21, 4836, 4548, 15609, 1115, 5929, 4832, 2]
 // Exports: default
 
-// Module 15610 (PromotionalEmailCheckBox)
+// Module 15608 (PromotionalEmailCheckBox)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

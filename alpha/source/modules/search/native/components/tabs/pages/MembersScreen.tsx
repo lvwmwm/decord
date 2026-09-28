@@ -1,9 +1,9 @@
-// Module ID: 16513
-// Function ID: 16514
+// Module ID: 16517
+// Function ID: 16518
 // Name: MembersScreen
-// Dependencies: [19, 17, 6697, 2045, 2108, 2067, 2099, 1372, 11851, 11822, 7303, 7302, 1074, 21, 4836, 576, 563, 6583, 11823, 16458, 4474, 1876, 11841, 7624, 1115, 4541, 16514, 16512, 16450, 11083, 16462, 16515, 6603, 11087, 11668, 16517, 2]
+// Dependencies: [19, 17, 6697, 2045, 2108, 2067, 2099, 1372, 11851, 11822, 7303, 7302, 1074, 21, 4836, 576, 563, 6583, 11823, 16462, 4474, 1876, 11841, 7624, 1115, 4541, 16518, 16516, 16454, 11083, 16466, 16519, 6603, 11087, 11668, 16521, 2]
 
-// Module 16513 (MembersScreen)
+// Module 16517 (MembersScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1876 */;
@@ -58,9 +58,9 @@ function SearchableMembersScreen(searchContext) {
   const items3 = [stateFromStores5];
   stateFromStores2 = searchContext(563).useStateFromStores(items3, () => stateFromStores5.getChannelId());
   const tmp4Result = searchContext(563);
-  fullscreenPlaceholderCount = searchContext(16458).useFullscreenPlaceholderCount({ placeholderHeight, numColumns: 1 });
+  fullscreenPlaceholderCount = searchContext(16462).useFullscreenPlaceholderCount({ placeholderHeight, numColumns: 1 });
   let obj4 = { placeholderHeight, numColumns: 1 };
-  const tmp4Result8 = searchContext(16458);
+  const tmp4Result8 = searchContext(16462);
   const items4 = [callback];
   stateFromStores3 = searchContext(563).useStateFromStores(items4, () => {
     const guild = GuildStore.getGuild(guildId);
@@ -197,12 +197,12 @@ function SearchableMembersScreen(searchContext) {
     return items;
   }, items13);
   const tmp4Result12 = searchContext(563);
-  const contentContainerStyles = searchContext(16514).useContentContainerStyles();
-  const tmp4Result13 = searchContext(16514);
-  const messageTabCountsErrorText = searchContext(16512).useMessageTabCountsErrorText({ searchContext });
+  const contentContainerStyles = searchContext(16518).useContentContainerStyles();
+  const tmp4Result13 = searchContext(16518);
+  const messageTabCountsErrorText = searchContext(16516).useMessageTabCountsErrorText({ searchContext });
   if (null != messageTabCountsErrorText) {
     const obj5 = { text: messageTabCountsErrorText };
-    let tmp25 = jsx(tmp2(16450), { text: messageTabCountsErrorText });
+    let tmp25 = jsx(tmp2(16454), { text: messageTabCountsErrorText });
   } else {
     if (stateFromStores5) {
       if (null != stateFromStores4) {
@@ -211,7 +211,7 @@ function SearchableMembersScreen(searchContext) {
       }
     }
     const obj7 = { contentContainerStyle: contentContainerStyles.membersContentContainer, data: memo };
-    tmp25 = jsx(tmp2(16462), { contentContainerStyle: contentContainerStyles.membersContentContainer, data: memo });
+    tmp25 = jsx(tmp2(16466), { contentContainerStyle: contentContainerStyles.membersContentContainer, data: memo });
   }
   return tmp25;
 }
@@ -238,8 +238,8 @@ function ThreadMembersScreen(searchContext) {
   if (!stateFromStores) {
     if (obj2.useStateFromStores(items1, () => SearchQueryStore.isInitialSearchQuery(searchContext) && !SearchQueryStore.isTagsEmpty(searchContext), items2)) {
       const obj3 = { channelId, guildId, onUserPress: tmp(1876).dismissGlobalKeyboard, disableStickySections: true };
-      let tmp7 = jsx(channelId(16515), { channelId, guildId, onUserPress: tmp(1876).dismissGlobalKeyboard, disableStickySections: true });
-      const tmp6 = channelId(16515);
+      let tmp7 = jsx(channelId(16519), { channelId, guildId, onUserPress: tmp(1876).dismissGlobalKeyboard, disableStickySections: true });
+      const tmp6 = channelId(16519);
     }
     return tmp7;
   }
@@ -319,7 +319,7 @@ export default noop.memo(function MembersScreen(searchContext) {
     let tmp21Result = null;
     if (stateFromStores) {
       const obj7 = { location: "GroupDMDetailsMembers", memberCount: stateFromStores1, recipientLimit: tmp11, wrapperStyle: tmp.promoBanner };
-      tmp21Result = tmp21(tmp2(16517), obj7);
+      tmp21Result = tmp21(tmp2(16521), obj7);
     }
     obj6.listHeaderContent = tmp21Result;
     obj4.children = jsx(tmp2(11668), { channelId: searchContext.channelId, disableStickySections: true, listStyleOverride: tmp.userList, onUserPress: tmp7(1876).dismissGlobalKeyboard, listHeaderContent: null });

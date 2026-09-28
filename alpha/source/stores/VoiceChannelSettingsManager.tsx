@@ -1,15 +1,15 @@
-// Module ID: 17269
-// Function ID: 17270
+// Module ID: 17273
+// Function ID: 17274
 // Name: VoiceChannelSettingsManager
-// Dependencies: [502, 13542, 2045, 2099, 13543, 1074, 573, 6539, 2]
+// Dependencies: [502, 13541, 2045, 2099, 13542, 1074, 573, 6539, 2]
 
-// Module 17269 (VoiceChannelSettingsManager)
+// Module 17273 (VoiceChannelSettingsManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BitRateStore from "BitRateStore" /* 13542 */;
+import BitRateStore from "BitRateStore" /* 13541 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import VideoQualityModeStore from "VideoQualityModeStore" /* 13543 */;
+import VideoQualityModeStore from "VideoQualityModeStore" /* 13542 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 function updateVoiceSettings() {

@@ -1,9 +1,9 @@
-// Module ID: 16025
-// Function ID: 16026
+// Module ID: 16021
+// Function ID: 16022
 // Name: YouBarNameplate
-// Dependencies: [19, 4825, 14627, 21, 4531, 576, 14715, 504, 4566, 5280, 8281, 2]
+// Dependencies: [19, 4825, 14627, 21, 4531, 576, 14713, 504, 4566, 5280, 8281, 2]
 
-// Module 16025 (YouBarNameplate)
+// Module 16021 (YouBarNameplate)
 import spring from "spring" /* 5280 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -21,7 +21,7 @@ export default noop.memo(function YouBarNameplate(isQuestRendered) {
   let token;
   ({ nameplate, barWidth } = isQuestRendered);
   token = isQuestRendered(4531).useToken(token(576).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(14715)(token);
+  const tmp4 = token(14713)(token);
   dependencyMap = tmp4;
   let obj = isQuestRendered(4531);
   const tmp2 = token;

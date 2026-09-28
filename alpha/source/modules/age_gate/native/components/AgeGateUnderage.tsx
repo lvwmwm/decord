@@ -1,10 +1,10 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15611
+// Function ID: 15612
 // Name: AgeGateUnderage
 // Dependencies: [19, 17, 1074, 21, 4836, 576, 6363, 1485, 5936, 5942, 1115, 6394, 6397, 7872, 6393, 4832, 2111, 5281, 2]
 // Exports: default
 
-// Module 15613 (AgeGateUnderage)
+// Module 15611 (AgeGateUnderage)
 import nativeDefault from "native" /* 576 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import noop from "module_19" /* 19 */;

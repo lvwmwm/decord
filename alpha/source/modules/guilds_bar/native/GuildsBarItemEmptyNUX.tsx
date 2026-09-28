@@ -1,9 +1,9 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 15987
+// Function ID: 15988
 // Name: GuildsBarItemEmptyNUX
-// Dependencies: [19, 17, 4655, 15920, 1074, 10549, 21, 4836, 576, 6760, 4531, 504, 4566, 5280, 15657, 15933, 1115, 15990, 15932, 5901, 15944, 4832, 2]
+// Dependencies: [19, 17, 4655, 15918, 1074, 10549, 21, 4836, 576, 6760, 4531, 504, 4566, 5280, 15655, 15931, 1115, 15988, 15930, 5901, 15942, 4832, 2]
 
-// Module 15989 (GuildsBarItemEmptyNUX)
+// Module 15987 (GuildsBarItemEmptyNUX)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5280 */;
 import transitionToGuild from "transitionToGuild" /* 6760 */;
@@ -16,7 +16,7 @@ function handlePress() {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const GuildsBarConstants = fn(15920);
+const GuildsBarConstants = fn(15918);
 ({ GUILD_ITEM_HIT_SLOP: closure_8, useGuildWrapperSize: closure_9 } = GuildsBarConstants);
 const EMPTY_NUX_SERVER = fn(1074).EMPTY_NUX_SERVER;
 const MODE_CHANGE_PHYSICS = fn(10549).MODE_CHANGE_PHYSICS;

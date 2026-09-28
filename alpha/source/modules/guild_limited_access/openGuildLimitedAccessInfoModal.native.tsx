@@ -1,10 +1,10 @@
-// Module ID: 13376
-// Function ID: 13377
+// Module ID: 13375
+// Function ID: 13376
 // Name: openGuildLimitedAccessInfoModal
-// Dependencies: [19, 17, 21, 4701, 5204, 13377, 1981, 2]
+// Dependencies: [19, 17, 21, 4701, 5204, 13376, 1981, 2]
 // Exports: default
 
-// Module 13376 (openGuildLimitedAccessInfoModal)
+// Module 13375 (openGuildLimitedAccessInfoModal)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
 import noop from "module_19" /* 19 */;
@@ -27,7 +27,7 @@ export default function openGuildLimitedAccessInfoModal(arg0) {
   let obj = require("ChatInputUtils");
   actions_AlertActionCreatorsDefault.openLazy({
     importer() {
-      return asyncRequireImpl(13377, dependencyMap.paths).then((result) => {
+      return asyncRequireImpl(13376, dependencyMap.paths).then((result) => {
         closure_0 = result.default;
         return (arg0) => {
           const obj = {};

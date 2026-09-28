@@ -1,11 +1,11 @@
-// Module ID: 14248
-// Function ID: 14249
+// Module ID: 14247
+// Function ID: 14248
 // Name: SettingLayout
-// Dependencies: [19, 11007, 21, 14249, 14262, 2]
+// Dependencies: [19, 11007, 21, 14248, 14261, 2]
 
-// Module 14248 (SettingLayout)
-import SettingListRenderer from "SettingListRenderer" /* 14249 */;
-import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14262 */;
+// Module 14247 (SettingLayout)
+import SettingListRenderer from "SettingListRenderer" /* 14248 */;
+import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14261 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

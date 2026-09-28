@@ -1,14 +1,14 @@
 // Module ID: 14514
 // Function ID: 14515
 // Name: FriendRequestsMutualFriendsSetting
-// Dependencies: [19, 7417, 1074, 14354, 2021, 6416, 1385, 11006, 1115, 2]
+// Dependencies: [19, 7417, 1074, 14353, 2021, 6416, 1385, 11006, 1115, 2]
 
 // Module 14514 (FriendRequestsMutualFriendsSetting)
 import util from "util" /* 1115 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14354 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

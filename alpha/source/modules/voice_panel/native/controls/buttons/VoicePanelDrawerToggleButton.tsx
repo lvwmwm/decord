@@ -1,15 +1,15 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17029
+// Function ID: 17030
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4836, 576, 17004, 16990, 17005, 5901, 10615, 13114, 2]
+// Dependencies: [19, 21, 4836, 576, 17008, 16994, 17009, 5901, 10615, 13113, 2]
 // Exports: default
 
-// Module 17025 (VoicePanelDrawerToggleButton)
+// Module 17029 (VoicePanelDrawerToggleButton)
 import nativeDefault from "native" /* 576 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 16990 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17004 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17005 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 16994 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17008 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17009 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ export default function VoicePanelDrawerToggleButton(arg0) {
   if (isDrawerOpen) {
     let ChevronSmallUpIcon = tmp2(10615).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(13114).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(13113).ChevronSmallUpIcon;
   }
   obj3.children = React3(ChevronSmallUpIcon, { color: voicePanelButtonStyles.iconFill.color });
   items1[1] = React3(NativeViewDefault, obj3);

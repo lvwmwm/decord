@@ -1,14 +1,14 @@
-// Module ID: 13982
-// Function ID: 13983
+// Module ID: 13981
+// Function ID: 13982
 // Name: Tag
-// Dependencies: [19, 17, 21, 4836, 13980, 576, 13983, 4832, 2]
+// Dependencies: [19, 17, 21, 4836, 13979, 576, 13982, 4832, 2]
 // Exports: Tag
 
-// Module 13982 (Tag)
+// Module 13981 (Tag)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import TagGroupTypes from "TagGroupTypes" /* 13980 */;
-import TagGraphic from "TagGraphic" /* 13983 */;
+import TagGroupTypes from "TagGroupTypes" /* 13979 */;
+import TagGraphic from "TagGraphic" /* 13982 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16521
+// Function ID: 16522
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 4825, 11088, 21, 576, 4836, 1613, 16273, 4531, 4566, 672, 5280, 5293, 504, 11089, 11086, 11093, 16518, 5281, 1115, 7495, 4832, 2]
+// Dependencies: [32, 19, 17, 4825, 11088, 21, 576, 4836, 1613, 16269, 4531, 4566, 672, 5280, 5293, 504, 11089, 11086, 11093, 16522, 5281, 1115, 7495, 4832, 2]
 // Exports: default
 
-// Module 16517 (GroupDMNitroUpsellBanner)
+// Module 16521 (GroupDMNitroUpsellBanner)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
@@ -16,7 +16,7 @@ import _modDef7495 from "module_7495" /* 7495 */;
 import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11086 */;
 import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11089 */;
 import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11093 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 16518 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 16522 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;

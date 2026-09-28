@@ -1,10 +1,10 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 14954
+// Function ID: 14955
 // Name: FloatingApplyButton
 // Dependencies: [19, 4825, 1609, 21, 504, 1613, 4566, 576, 5280, 4801, 5281, 2]
 // Exports: default
 
-// Module 14956 (FloatingApplyButton)
+// Module 14954 (FloatingApplyButton)
 import nativeDefault from "native" /* 576 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import spring from "spring" /* 5280 */;

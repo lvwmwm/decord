@@ -1,9 +1,9 @@
-// Module ID: 14053
-// Function ID: 14054
+// Module ID: 14052
+// Function ID: 14053
 // Name: providers
 // Dependencies: [5, 5593, 4739, 1074, 2005, 1085, 8773, 8775, 5595, 8770, 573, 1110, 8528, 5718, 2]
 
-// Module 14053 (providers)
+// Module 14052 (providers)
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8773 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
@@ -47,7 +47,7 @@ obj2 = {
       throw tmp4Result1;
     } else if (provider !== constants.AMAZON_MUSIC) {
       let obj5 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
-      const tmp22 = new tmp4(tmp[9])(obj5, "Command not available for this application");
+      let tmp22 = new tmp4(tmp[9])(obj5, "Command not available for this application");
       throw tmp22;
     } else if (set.has(validateApplicationResult)) {
       _require = asyncGeneratorStep(async (arg0, value) => {
@@ -165,15 +165,15 @@ obj2 = {
                 }
               }
               const obj10 = { errorCode: OAUTH2_ERROR.OAUTH2_ERROR };
-              const tmp20 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
-              throw tmp20;
+              const tmp22 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
+              throw tmp22;
             }
             c7 = 3;
-          } catch (tmp45) {
-            closure_4 = tmp45;
+          } catch (tmp47) {
+            closure_4 = tmp47;
             if (tmp4 === c5) {
               c7 = tmp2;
-              throw tmp45;
+              throw tmp47;
             } else {
               c6 = tmp;
             }

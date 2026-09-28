@@ -1,7 +1,7 @@
 // Module ID: 14516
 // Function ID: 14517
 // Name: ScanQrCodeSetting
-// Dependencies: [5, 5045, 12, 1610, 5451, 5039, 13413, 1981, 11006, 1115, 14419, 2]
+// Dependencies: [5, 5045, 12, 1610, 5451, 5039, 13412, 1981, 11006, 1115, 14418, 2]
 
 // Module 14516 (ScanQrCodeSetting)
 import util from "util" /* 1115 */;
@@ -87,7 +87,7 @@ const pressable = SettingBuilders.createPressable({
     return intl.string(util.t.RC0kJz);
   },
   parent: null,
-  IconComponent: fn(14419).QrCodeIcon,
+  IconComponent: fn(14418).QrCodeIcon,
   onPress: apply.debounce(asyncGeneratorStep(async (arg0, value) => {
     if (c3 === 2) {
       c3 = 3;

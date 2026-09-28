@@ -1,10 +1,10 @@
-// Module ID: 12783
-// Function ID: 12784
+// Module ID: 12782
+// Function ID: 12783
 // Name: invite/GuildInvite
-// Dependencies: [17, 2063, 4858, 2045, 2108, 2067, 4817, 4479, 1372, 10851, 1074, 7155, 7387, 1115, 7378, 576, 4678, 4685, 11286, 11287, 2059, 2111, 7388, 12239, 12238, 10853, 10852, 12784, 1385, 7840, 1397, 1880, 5335, 8203, 4989, 2]
+// Dependencies: [17, 2063, 4858, 2045, 2108, 2067, 4817, 4479, 1372, 10851, 1074, 7155, 7387, 1115, 7378, 576, 4678, 4685, 11286, 11287, 2059, 2111, 7388, 12239, 12238, 10853, 10852, 12783, 1385, 7840, 1397, 1880, 5335, 8203, 4989, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 12783 (invite/GuildInvite)
+// Module 12782 (invite/GuildInvite)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -19,7 +19,7 @@ import CodedLinksConstants from "CodedLinksConstants" /* 10851 */;
 import GuestUtilsDefault from "GuestUtils" /* 10853 */;
 import InviteErrorUtils from "InviteErrorUtils" /* 12238 */;
 import _modDef12239 from "module_12239" /* 12239 */;
-import getHeaderTextForInvite from "getHeaderTextForInvite" /* 12784 */;
+import getHeaderTextForInvite from "getHeaderTextForInvite" /* 12783 */;
 import GuildRecord from "GuildRecord" /* 2063 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

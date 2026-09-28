@@ -1,10 +1,10 @@
-// Module ID: 15455
-// Function ID: 15456
+// Module ID: 15453
+// Function ID: 15454
 // Name: ShelfBlock
-// Dependencies: [19, 17, 6962, 1076, 1074, 21, 4836, 576, 1485, 8229, 15434, 6583, 6603, 504, 15436, 14604, 6961, 8226, 4832, 5281, 1115, 6577, 8179, 2]
+// Dependencies: [19, 17, 6962, 1076, 1074, 21, 4836, 576, 1485, 8229, 15432, 6583, 6603, 504, 15434, 14604, 6961, 8226, 4832, 5281, 1115, 6577, 8179, 2]
 // Exports: default
 
-// Module 15455 (ShelfBlock)
+// Module 15453 (ShelfBlock)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;

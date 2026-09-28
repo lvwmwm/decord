@@ -1,10 +1,10 @@
-// Module ID: 12681
-// Function ID: 12682
+// Module ID: 12556
+// Function ID: 12557
 // Name: ShopThisLookActionSheet
-// Dependencies: [19, 17, 7664, 6572, 6629, 21, 4836, 576, 8235, 4528, 1115, 8339, 504, 12682, 6973, 12684, 10499, 8300, 7660, 12660, 6583, 6603, 4800, 6961, 10613, 4832, 2]
+// Dependencies: [19, 17, 7664, 6572, 6629, 21, 4836, 576, 8235, 4528, 1115, 8339, 504, 12557, 6973, 12559, 10499, 8300, 7660, 12560, 6583, 6603, 4800, 6961, 10613, 4832, 2]
 // Exports: default
 
-// Module 12681 (ShopThisLookActionSheet)
+// Module 12556 (ShopThisLookActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
@@ -12,8 +12,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6973 */;
-import ShopThisLookUtils from "ShopThisLookUtils" /* 12682 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12684 */;
+import ShopThisLookUtils from "ShopThisLookUtils" /* 12557 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12559 */;
 import noop from "module_19" /* 19 */;
 import StorefrontProductStore from "StorefrontProductStore" /* 7664 */;
 
@@ -162,8 +162,8 @@ export default function ShopThisLookActionSheet(arg0) {
   const equippedCollectibleSkuIds = require("useMaybeFetchEquippedCollectibleProducts").useEquippedCollectibleSkuIds(userId, guildId);
   let obj = require("useMaybeFetchEquippedCollectibleProducts");
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12660)({ maxWidth: ACTION_SHEET_MAX_WIDTH }));
-  const tmp2 = analyticsLocations(12660)({ maxWidth: ACTION_SHEET_MAX_WIDTH });
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12560)({ maxWidth: ACTION_SHEET_MAX_WIDTH }));
+  const tmp2 = analyticsLocations(12560)({ maxWidth: ACTION_SHEET_MAX_WIDTH });
   analyticsLocations = analyticsLocations(6583)(analyticsLocations(6603).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = noop.useCallback((initialProductSkuId) => {

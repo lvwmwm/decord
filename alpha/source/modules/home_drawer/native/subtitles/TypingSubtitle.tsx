@@ -1,12 +1,12 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 15962
+// Function ID: 15963
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 15963, 5335, 5394, 4832, 2]
+// Dependencies: [19, 17, 21, 15961, 5335, 5394, 4832, 2]
 // Exports: default
 
-// Module 15964 (TypingSubtitle)
+// Module 15962 (TypingSubtitle)
 import Text_Text from "Text/Text" /* 4832 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 15963 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 15961 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

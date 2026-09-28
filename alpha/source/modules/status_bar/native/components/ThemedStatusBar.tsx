@@ -1,10 +1,10 @@
-// Module ID: 14137
-// Function ID: 14138
+// Module ID: 14136
+// Function ID: 14137
 // Name: ThemedStatusBar
 // Dependencies: [19, 1182, 502, 21, 504, 4692, 4685, 8960, 8839, 2]
 // Exports: default
 
-// Module 14137 (ThemedStatusBar)
+// Module 14136 (ThemedStatusBar)
 import initialize from "initialize" /* 504 */;
 import shared from "shared" /* 4685 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;

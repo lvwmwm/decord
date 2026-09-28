@@ -1,10 +1,10 @@
-// Module ID: 14098
-// Function ID: 14099
+// Module ID: 14097
+// Function ID: 14098
 // Name: MediaPlayerManager
-// Dependencies: [17, 2044, 5044, 2045, 5056, 4469, 1980, 1074, 8502, 14099, 1085, 3, 560, 1248, 1983, 4693, 573, 1364, 558, 6876, 9549, 2]
+// Dependencies: [17, 2044, 5044, 2045, 5056, 4469, 1980, 1074, 8502, 14098, 1085, 3, 560, 1248, 1983, 4693, 573, 1364, 558, 6876, 9549, 2]
 // Exports: isPlaybackComplete
 
-// Module 14098 (MediaPlayerManager)
+// Module 14097 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 import MessageStore from "MessageStore" /* 5056 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14099 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14098 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
 import size from "module_2" /* 2 */;

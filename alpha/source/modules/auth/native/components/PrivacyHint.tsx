@@ -1,14 +1,14 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 15607
+// Function ID: 15608
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6011, 15572, 1074, 21, 4836, 4832, 1115, 4548, 5929, 8053, 15610, 2]
+// Dependencies: [19, 17, 6011, 15570, 1074, 21, 4836, 4832, 1115, 4548, 5929, 8053, 15608, 2]
 // Exports: default
 
-// Module 15609 (PrivacyHint)
+// Module 15607 (PrivacyHint)
 import util from "util" /* 1115 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15610 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15608 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,7 +50,7 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
 get_ActivityIndicator = fn(17);
 ({ View: c3, Pressable: closure_4 } = get_ActivityIndicator);
 const usePromoEmailConsentStore = fn(6011).usePromoEmailConsentStore;
-const useRegistrationUIStore = fn(15572).useRegistrationUIStore;
+const useRegistrationUIStore = fn(15570).useRegistrationUIStore;
 const MarketingURLs = fn(1074).MarketingURLs;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

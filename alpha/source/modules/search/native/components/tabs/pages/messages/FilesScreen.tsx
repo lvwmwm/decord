@@ -1,11 +1,11 @@
-// Module ID: 16528
-// Function ID: 16529
+// Module ID: 16532
+// Function ID: 16533
 // Name: FilesScreen
-// Dependencies: [19, 7303, 21, 16514, 16521, 16529, 16454, 16523, 16522, 11821, 16527, 16461, 2]
+// Dependencies: [19, 7303, 21, 16518, 16525, 16533, 16458, 16527, 16526, 11821, 16531, 16465, 2]
 
-// Module 16528 (FilesScreen)
+// Module 16532 (FilesScreen)
 import SearchPlatformUtils from "SearchPlatformUtils" /* 11821 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 16523 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 16527 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

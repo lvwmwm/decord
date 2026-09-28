@@ -1,10 +1,10 @@
-// Module ID: 15866
-// Function ID: 15867
+// Module ID: 15864
+// Function ID: 15865
 // Name: ChannelItemEmbeddedActivities
 // Dependencies: [19, 17, 21, 4836, 576, 6593, 4832, 2]
 // Exports: default
 
-// Module 15866 (ChannelItemEmbeddedActivities)
+// Module 15864 (ChannelItemEmbeddedActivities)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import GameIcon from "GameIcon" /* 6593 */;

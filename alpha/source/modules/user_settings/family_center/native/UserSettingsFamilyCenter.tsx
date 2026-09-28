@@ -1,10 +1,10 @@
-// Module ID: 14406
-// Function ID: 14407
+// Module ID: 14405
+// Function ID: 14406
 // Name: UserSettingsFamilyCenter
-// Dependencies: [32, 19, 17, 6957, 1372, 1074, 1099, 6958, 21, 5279, 4836, 576, 6583, 6603, 8105, 14407, 14408, 8107, 563, 9083, 1115, 2487, 14409, 14449, 6959, 1241, 5179, 5184, 5298, 6632, 9084, 12113, 2]
+// Dependencies: [32, 19, 17, 6957, 1372, 1074, 1099, 6958, 21, 5279, 4836, 576, 6583, 6603, 8105, 14406, 14407, 8107, 563, 9083, 1115, 2487, 14408, 14448, 6959, 1241, 5179, 5184, 5298, 6632, 9084, 12113, 2]
 // Exports: default
 
-// Module 14406 (UserSettingsFamilyCenter)
+// Module 14405 (UserSettingsFamilyCenter)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5179 */;
@@ -25,8 +25,8 @@ function FamilyCenter() {
   const tmp = closure_18();
   const tmp3 = isLoading(6583);
   const acceptedRequestsCount = familyCenterInitialized(8105).useAcceptedRequestsCount();
-  const tmp6 = isLoading(14407)();
-  const selectedTab = isLoading(14408)().selectedTab;
+  const tmp6 = isLoading(14406)();
+  const selectedTab = isLoading(14407)().selectedTab;
   let obj = familyCenterInitialized(8105);
   const selectedTeenId = familyCenterInitialized(8107).useSelectedTeenId();
   let obj2 = familyCenterInitialized(8107);
@@ -47,13 +47,13 @@ function FamilyCenter() {
   const intl = familyCenterInitialized(1115).intl;
   obj6.label = intl.string(isLoading(2487).bdBmqy);
   obj6.id = FamilyCenterSubPages.ACTIVITY;
-  obj6.page = closure_14(isLoading(14409), {});
+  obj6.page = closure_14(isLoading(14408), {});
   const items1 = [obj6, ];
   const obj7 = { label: null, id: null, page: null };
   const intl2 = familyCenterInitialized(1115).intl;
   obj7.label = intl2.string(isLoading(2487)["gVWG+6"]);
   obj7.id = FamilyCenterSubPages.REQUESTS;
-  obj7.page = closure_14(isLoading(14449), {});
+  obj7.page = closure_14(isLoading(14448), {});
   items1[1] = obj7;
   obj5.items = items1;
   obj5.onPageChange = function onPageChange(arg0) {

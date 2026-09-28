@@ -1,10 +1,10 @@
-// Module ID: 15844
-// Function ID: 15845
+// Module ID: 15842
+// Function ID: 15843
 // Name: NewMemberActionsProgress
 // Dependencies: [19, 17, 2108, 5023, 5024, 2052, 4455, 21, 4836, 576, 5293, 563, 1385, 5435, 1101, 4832, 1115, 1177, 9396, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 15844 (NewMemberActionsProgress)
+// Module 15842 (NewMemberActionsProgress)
 import nativeDefault from "native" /* 576 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import noop from "module_19" /* 19 */;

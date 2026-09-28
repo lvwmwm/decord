@@ -1,9 +1,9 @@
-// Module ID: 15675
-// Function ID: 15676
+// Module ID: 15673
+// Function ID: 15674
 // Name: MessagesItemPlaceholder
 // Dependencies: [19, 21, 9284, 2]
 
-// Module 15675 (MessagesItemPlaceholder)
+// Module 15673 (MessagesItemPlaceholder)
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9284 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 15891
-// Function ID: 15892
+// Module ID: 15889
+// Function ID: 15890
 // Name: useGuildActionRows
-// Dependencies: [32, 5023, 6954, 1074, 11861, 6682, 6668, 6680, 6647, 6643, 563, 5370, 6644, 11771, 6683, 6645, 12009, 15791, 15856, 6685, 4747, 15892, 6806, 2029, 2]
+// Dependencies: [32, 5023, 6954, 1074, 11861, 6682, 6668, 6680, 6647, 6643, 563, 5370, 6644, 11771, 6683, 6645, 12009, 15789, 15854, 6685, 4747, 15890, 6806, 2029, 2]
 // Exports: default
 
-// Module 15891 (useGuildActionRows)
+// Module 15889 (useGuildActionRows)
 import useIsNewMemberDefault from "useIsNewMember" /* 6644 */;
 import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 11861 */;
 import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12009 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 15856 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 15854 */;
 import _slicedToArray from "module_32" /* 32 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
 

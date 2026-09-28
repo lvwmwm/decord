@@ -1,11 +1,11 @@
-// Module ID: 12844
-// Function ID: 12845
+// Module ID: 12843
+// Function ID: 12844
 // Name: PrivateChannelHeader
-// Dependencies: [19, 17, 2045, 4876, 4479, 1372, 1074, 21, 1177, 4836, 576, 504, 12841, 4989, 1115, 10335, 12845, 12846, 12848, 4678, 12851, 2]
+// Dependencies: [19, 17, 2045, 4876, 4479, 1372, 1074, 21, 1177, 4836, 576, 504, 12840, 4989, 1115, 10335, 12844, 12845, 12847, 4678, 12850, 2]
 
-// Module 12844 (PrivateChannelHeader)
+// Module 12843 (PrivateChannelHeader)
 import nativeDefault from "native" /* 576 */;
-import ChannelHeader from "ChannelHeader" /* 12841 */;
+import ChannelHeader from "ChannelHeader" /* 12840 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import PresenceStore from "PresenceStore" /* 4876 */;

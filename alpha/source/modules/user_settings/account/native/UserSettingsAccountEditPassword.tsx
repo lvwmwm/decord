@@ -1,10 +1,10 @@
-// Module ID: 14312
-// Function ID: 14313
+// Module ID: 14311
+// Function ID: 14312
 // Name: UserSettingsAccountEditPassword
-// Dependencies: [19, 17, 2036, 6801, 1372, 1074, 21, 4836, 576, 4540, 6405, 6412, 12, 1241, 6411, 6419, 14313, 4832, 1115, 5279, 6024, 5281, 6415, 504, 38, 1485, 2]
+// Dependencies: [19, 17, 2036, 6801, 1372, 1074, 21, 4836, 576, 4540, 6405, 6412, 12, 1241, 6411, 6419, 14312, 4832, 1115, 5279, 6024, 5281, 6415, 504, 38, 1485, 2]
 // Exports: default
 
-// Module 14312 (UserSettingsAccountEditPassword)
+// Module 14311 (UserSettingsAccountEditPassword)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
@@ -18,7 +18,7 @@ import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreat
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
 import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 6412 */;
 import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
-import _modDef14313 from "module_14313" /* 14313 */;
+import _modDef14312 from "module_14312" /* 14312 */;
 import noop from "module_19" /* 19 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2036 */;
 import UserSettingsAccountStore from "UserSettingsAccountStore" /* 6801 */;
@@ -33,7 +33,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: c10, LoginRequiredActions: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const state = { newPassword: "channel", password: 17065025 };
+const state = { newPassword: "channel", password: 17082177 };
 const createStyles = fn(4836);
 let obj2 = { onePass: { width: 20, height: 20 }, unverifiedWrapper: { overflow: "hidden", borderRadius: nativeDefault.radii.xs, marginVertical: 16 }, container: { padding: 16 }, header: { marginBottom: 20 }, requiredActionsSubtitle: { textAlign: "center", marginTop: 8 }, requiredActionsTitle: { flex: 1, textAlign: "center" }, image: { marginTop: 12, marginBottom: 16, alignSelf: "center" } };
 let closure_15 = createStyles.createLegacyClassComponentStyles(obj2);
@@ -152,7 +152,7 @@ prototype["render"] = function render() {
   let tmp4Result = showForcedPasswordUpdate;
   if (showForcedPasswordUpdate) {
     const obj3 = { style: tmp.header, children: null };
-    const obj4 = { source: _modDef14313, style: tmp.image };
+    const obj4 = { source: _modDef14312, style: tmp.image };
     const items1 = [tmp2(React4, obj4), , ];
     const obj5 = { style: tmp.requiredActionsTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     const intl = util.intl;

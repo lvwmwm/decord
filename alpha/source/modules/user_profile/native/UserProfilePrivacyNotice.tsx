@@ -1,10 +1,10 @@
-// Module ID: 12648
-// Function ID: 12649
+// Module ID: 12666
+// Function ID: 12667
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1074, 2042, 21, 4836, 576, 1186, 1115, 12649, 8104, 2021, 2029, 6806, 4832, 6800, 4787, 5435, 5992, 2]
+// Dependencies: [32, 19, 17, 1074, 2042, 21, 4836, 576, 1186, 1115, 12667, 8104, 2021, 2029, 6806, 4832, 6800, 4787, 5435, 5992, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 12648 (UserProfilePrivacyNotice)
+// Module 12666 (UserProfilePrivacyNotice)
 import nativeDefault from "native" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2021 */;
@@ -12,7 +12,7 @@ import dismissible_content from "dismissible_content" /* 2029 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6806 */;
 import useUserIsTeen from "useUserIsTeen" /* 8104 */;
-import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 12649 */;
+import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 12667 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

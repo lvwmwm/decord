@@ -1,10 +1,10 @@
-// Module ID: 15642
-// Function ID: 15643
+// Module ID: 15640
+// Function ID: 15641
 // Name: getScreenAnalyticsName
 // Dependencies: [2045, 7084, 2052, 4693, 4692, 2]
 // Exports: default, getChannelScreenName
 
-// Module 15642 (getScreenAnalyticsName)
+// Module 15640 (getScreenAnalyticsName)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

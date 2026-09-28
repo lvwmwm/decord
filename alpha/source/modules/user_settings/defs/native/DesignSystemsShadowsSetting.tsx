@@ -1,9 +1,9 @@
-// Module ID: 15378
-// Function ID: 15379
+// Module ID: 15376
+// Function ID: 15377
 // Name: DesignSystemsShadowsSetting
-// Dependencies: [7417, 1074, 11006, 15376, 2]
+// Dependencies: [7417, 1074, 11006, 15374, 2]
 
-// Module 15378 (DesignSystemsShadowsSetting)
+// Module 15376 (DesignSystemsShadowsSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

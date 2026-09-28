@@ -1,10 +1,10 @@
-// Module ID: 15435
-// Function ID: 15436
+// Module ID: 15433
+// Function ID: 15434
 // Name: useTrackProductCardImpression
 // Dependencies: [19, 6962, 1074, 8229, 504, 7623, 4488, 6974, 1241, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 15435 (useTrackProductCardImpression)
+// Module 15433 (useTrackProductCardImpression)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
 import noop from "module_19" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 17456
-// Function ID: 17457
+// Module ID: 17460
+// Function ID: 17461
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 2045, 4467, 4469, 4479, 1372, 9049, 16120, 1074, 21, 4836, 576, 4531, 1485, 504, 9048, 1115, 6795, 5936, 4989, 4800, 8729, 1981, 8053, 5279, 5999, 5917, 2]
+// Dependencies: [19, 2045, 4467, 4469, 4479, 1372, 9049, 16116, 1074, 21, 4836, 576, 4531, 1485, 504, 9048, 1115, 6795, 5936, 4989, 4800, 8729, 1981, 8053, 5279, 5999, 5917, 2]
 // Exports: default
 
-// Module 17456 (GuildSettingsModalCommunity)
+// Module 17460 (GuildSettingsModalCommunity)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -21,7 +21,7 @@ import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
 
 require = fn;
 let closure_6 = fn(4467).GUILD_SELECTABLE_CHANNELS_KEY;
-const calculateLocaleOptions = fn(16120).calculateLocaleOptions;
+const calculateLocaleOptions = fn(16116).calculateLocaleOptions;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_12, GuildFeatures: map1, GuildSettingsSections: closure_14, Permissions: closure_15 } = Constants);
 const jsxProd = fn(21);

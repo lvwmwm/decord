@@ -1,10 +1,10 @@
-// Module ID: 16190
-// Function ID: 16191
+// Module ID: 16186
+// Function ID: 16187
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1182, 2045, 2067, 1074, 21, 4836, 576, 4832, 1115, 1177, 9396, 6400, 14757, 14759, 14760, 563, 16191, 4989, 16193, 16194, 16195, 5335, 5899, 5896, 16196, 9807, 16198, 16199, 4525, 16200, 2]
+// Dependencies: [19, 17, 1182, 2045, 2067, 1074, 21, 4836, 576, 4832, 1115, 1177, 9396, 6400, 14755, 14757, 14758, 563, 16187, 4989, 16189, 16190, 16191, 5335, 5899, 5896, 16192, 9807, 16194, 16195, 4525, 16196, 2]
 // Exports: default
 
-// Module 16190 (GuildRoleSubscriptionPurchasePage)
+// Module 16186 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -12,7 +12,7 @@ import LinkingDefault from "Linking" /* 4525 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
 import _modDef9396 from "module_9396" /* 9396 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16200 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16196 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

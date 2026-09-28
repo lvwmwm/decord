@@ -1,16 +1,16 @@
-// Module ID: 14147
-// Function ID: 14148
+// Module ID: 14146
+// Function ID: 14147
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 7637, 9227, 6629, 1074, 1084, 10658, 21, 6410, 14148, 4488, 6583, 6603, 14149, 4800, 14150, 1981, 7612, 7609, 7611, 1115, 7687, 14161, 7607, 6043, 6402, 576, 10608, 14162, 10198, 11350, 7631, 8819, 11449, 7614, 7688, 10653, 504, 7642, 12640, 7673, 7684, 14165, 4832, 4540, 10573, 14166, 10574, 10614, 14171, 14172, 14177, 14181, 14183, 14184, 14188, 14192, 14197, 14198, 14201, 14202, 2]
+// Dependencies: [19, 17, 7637, 9227, 6629, 1074, 1084, 10658, 21, 6410, 14147, 4488, 6583, 6603, 14148, 4800, 14149, 1981, 7612, 7609, 7611, 1115, 7687, 14160, 7607, 6043, 6402, 576, 10608, 14161, 10198, 11350, 7631, 8819, 11449, 7614, 7688, 10653, 504, 7642, 12658, 7673, 7684, 14164, 4832, 4540, 10573, 14165, 10574, 10614, 14170, 14171, 14176, 14180, 14182, 14183, 14187, 14191, 14196, 14197, 14200, 14201, 2]
 // Exports: default
 
-// Module 14147 (UserProfileEditForm)
+// Module 14146 (UserProfileEditForm)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7611 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7642 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 12640 */;
-import _modDef14148 from "module_14148" /* 14148 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 12658 */;
+import _modDef14147 from "module_14147" /* 14147 */;
 import noop from "module_19" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
 import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9227 */;
@@ -50,7 +50,7 @@ function EditUserProfileBanner(user) {
       fn = (banner) => user(isTryItOut[19]).setPendingChanges({ banner });
     }
     obj2.onBannerChange = fn;
-    const tmp3 = asyncRequireImpl(14150, dependencyMap.paths);
+    const tmp3 = asyncRequireImpl(14149, dependencyMap.paths);
     const tmp4 = isTryItOut;
     let banner;
     if (displayProfile != null) {
@@ -75,7 +75,7 @@ let closure_11 = fn(1084).ProfileCustomizationScrollPositions;
 const constants = fn(10658).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: fn(6410).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14148, staticImageUri: _modDef14148, description: "", originalAsset: "channelId" };
+let obj = { assetOrigin: fn(6410).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14147, staticImageUri: _modDef14147, description: "", originalAsset: "add" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 

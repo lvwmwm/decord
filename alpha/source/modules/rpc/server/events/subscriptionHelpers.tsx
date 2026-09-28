@@ -1,14 +1,14 @@
-// Module ID: 14066
-// Function ID: 14067
+// Module ID: 14065
+// Function ID: 14066
 // Name: subscriptionHelpers
-// Dependencies: [2044, 8499, 7116, 4739, 1074, 2005, 8500, 8781, 5438, 14026, 7137, 2]
+// Dependencies: [2044, 8499, 7116, 4739, 1074, 2005, 8500, 8781, 5438, 14025, 7137, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 14066 (subscriptionHelpers)
+// Module 14065 (subscriptionHelpers)
 import useIsScreenLandscape from "useIsScreenLandscape" /* 5438 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
 import useThermalState from "useThermalState" /* 8781 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14026 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14025 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import FramesStore from "FramesStore" /* 8499 */;
 import QuestStore from "QuestStore" /* 7116 */;

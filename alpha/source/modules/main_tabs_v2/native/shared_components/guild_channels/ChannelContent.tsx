@@ -1,16 +1,16 @@
-// Module ID: 16472
-// Function ID: 16473
+// Module ID: 16476
+// Function ID: 16477
 // Name: ChannelContent
-// Dependencies: [19, 17, 9577, 5018, 21, 4836, 1364, 9580, 5373, 16473, 5409, 8048, 15752, 4832, 2]
+// Dependencies: [19, 17, 9577, 5018, 21, 4836, 1364, 9580, 5373, 16477, 5409, 8048, 15750, 4832, 2]
 // Exports: renderChannelContent
 
-// Module 16472 (ChannelContent)
+// Module 16476 (ChannelContent)
 import isRoleRequiredDefault from "isRoleRequired" /* 5373 */;
 import ChannelListLayout from "ChannelListLayout" /* 9580 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 16473 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 16477 */;
 import noop from "module_19" /* 19 */;
 
-const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(15752);
+const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(15750);
 require = fn;
 function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);

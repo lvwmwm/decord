@@ -1,10 +1,10 @@
-// Module ID: 14304
-// Function ID: 14305
+// Module ID: 14303
+// Function ID: 14304
 // Name: useSafetyHubLoading
 // Dependencies: [7881, 504, 2]
 // Exports: default
 
-// Module 14304 (useSafetyHubLoading)
+// Module 14303 (useSafetyHubLoading)
 import initialize from "initialize" /* 504 */;
 import SafetyHubStore from "SafetyHubStore" /* 7881 */;
 

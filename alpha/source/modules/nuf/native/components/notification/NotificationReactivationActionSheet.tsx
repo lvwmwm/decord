@@ -1,15 +1,15 @@
-// Module ID: 17222
-// Function ID: 17223
+// Module ID: 17226
+// Function ID: 17227
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 11903, 1074, 21, 4836, 576, 1241, 11904, 4800, 6571, 17223, 4832, 1115, 5745, 5281, 2]
+// Dependencies: [19, 17, 11903, 1074, 21, 4836, 576, 1241, 11904, 4800, 6571, 17227, 4832, 1115, 5745, 5281, 2]
 // Exports: default
 
-// Module 17222 (NotificationReactivationActionSheet)
+// Module 17226 (NotificationReactivationActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11904 */;
-import _modDef17223 from "module_17223" /* 17223 */;
+import _modDef17227 from "module_17227" /* 17227 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -49,7 +49,7 @@ export default function NotificationReactivationActionSheet(location) {
   }, items1);
   let obj = { children: null };
   let obj2 = { style: tmp.container, children: null };
-  const items2 = [closure_8(closure_5, { style: tmp.image, source: _modDef17223, resizeMode: "contain" }), , , ];
+  const items2 = [closure_8(closure_5, { style: tmp.image, source: _modDef17227, resizeMode: "contain" }), , , ];
   const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: null };
   const intl = _location(1115).intl;
   obj4.children = intl.string(_location(1115).t.a4bgO0);

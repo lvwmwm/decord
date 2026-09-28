@@ -1,10 +1,10 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12571
+// Function ID: 12572
 // Name: AddOrOpenAppButton
 // Dependencies: [5, 32, 19, 8591, 1074, 1484, 21, 11627, 8506, 4800, 6610, 11614, 4527, 1366, 8037, 8332, 1115, 5281, 576, 6584, 4849, 4701, 1611, 1241, 2]
 // Exports: default
 
-// Module 12553 (AddOrOpenAppButton)
+// Module 12571 (AddOrOpenAppButton)
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;

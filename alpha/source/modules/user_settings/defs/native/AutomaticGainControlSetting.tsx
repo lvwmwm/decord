@@ -1,9 +1,9 @@
-// Module ID: 14806
-// Function ID: 14807
+// Module ID: 14804
+// Function ID: 14805
 // Name: AutomaticGainControlSetting
 // Dependencies: [1993, 7417, 504, 1115, 11006, 9449, 2]
 
-// Module 14806 (AutomaticGainControlSetting)
+// Module 14804 (AutomaticGainControlSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;

@@ -1,10 +1,10 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14165
+// Function ID: 14166
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 4825, 21, 4836, 6583, 6603, 4488, 7604, 7614, 14167, 4800, 14168, 1981, 14169, 14169, 7602, 7611, 504, 4566, 4837, 7703, 5435, 1115, 14170, 1177, 2]
+// Dependencies: [19, 4825, 21, 4836, 6583, 6603, 4488, 7604, 7614, 14166, 4800, 14167, 1981, 14168, 14168, 7602, 7611, 504, 4566, 4837, 7703, 5435, 1115, 14169, 1177, 2]
 // Exports: default
 
-// Module 14166 (EditUserProfileAvatar)
+// Module 14165 (EditUserProfileAvatar)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
@@ -90,7 +90,7 @@ export default function EditUserProfileAvatar(user) {
       showRemoveAvatar: null
     };
     let obj = ActionSheetActionCreatorsDefault;
-    const tmp = asyncRequireImpl(14168, dependencyMap.paths);
+    const tmp = asyncRequireImpl(14167, dependencyMap.paths);
     obj2.showRemoveAvatar = ProfileCustomizationUtils.showRemoveAvatar(pendingAvatar, user.avatar);
     obj.openLazy(tmp, "Change Avatar", obj2);
   }, items);

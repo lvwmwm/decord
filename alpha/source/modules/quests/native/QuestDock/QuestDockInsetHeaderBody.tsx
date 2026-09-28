@@ -1,18 +1,18 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14729
+// Function ID: 14730
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 14624, 21, 576, 4836, 10746, 10745, 14621, 1613, 14695, 14692, 4832, 5281, 1177, 2]
+// Dependencies: [19, 17, 14624, 21, 576, 4836, 10746, 10745, 14621, 1613, 14693, 14690, 4832, 5281, 1177, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 14731 (QuestDockInsetHeaderBody)
+// Module 14729 (QuestDockInsetHeaderBody)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import QuestRewardTileDefault from "QuestRewardTile" /* 10745 */;
 import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 10746 */;
 import QuestDockHooks from "QuestDockHooks" /* 14621 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 14692 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 14695 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 14690 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 14693 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

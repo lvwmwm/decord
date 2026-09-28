@@ -1,14 +1,14 @@
-// Module ID: 16799
-// Function ID: 16800
+// Module ID: 16803
+// Function ID: 16804
 // Name: CutoutImage
-// Dependencies: [32, 19, 17, 21, 1255, 7909, 12587, 2]
+// Dependencies: [32, 19, 17, 21, 1255, 7909, 12605, 2]
 
-// Module 16799 (CutoutImage)
+// Module 16803 (CutoutImage)
 import v1 from "v1" /* 1255 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const getReactNativeSVGImageSourceDefault = tmp13(12587);
+const getReactNativeSVGImageSourceDefault = tmp13(12605);
 require = fn;
 const Image = fn(17).Image;
 const jsxProd = fn(21);

@@ -1,9 +1,9 @@
-// Module ID: 14850
-// Function ID: 14851
+// Module ID: 14848
+// Function ID: 14849
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
 // Dependencies: [19, 17, 4825, 1074, 21, 4566, 5293, 5280, 5284, 4836, 576, 6583, 6603, 8695, 8663, 5281, 1115, 1177, 504, 9424, 2]
 
-// Module 14850 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 14848 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5280 */;

@@ -1,10 +1,10 @@
-// Module ID: 15088
-// Function ID: 15089
+// Module ID: 15086
+// Function ID: 15087
 // Name: LabFeatureActions
 // Dependencies: [7801, 573, 2]
 // Exports: toggleLabFeature
 
-// Module 15088 (LabFeatureActions)
+// Module 15086 (LabFeatureActions)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import LabFeatureStore from "LabFeatureStore" /* 7801 */;
 

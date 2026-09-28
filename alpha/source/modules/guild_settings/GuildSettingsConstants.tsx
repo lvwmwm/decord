@@ -1,10 +1,10 @@
-// Module ID: 17401
-// Function ID: 17402
+// Module ID: 17405
+// Function ID: 17406
 // Name: GuildSettingsConstants
 // Dependencies: [1115, 2]
 // Exports: getSettingsErrorMessage
 
-// Module 17401 (GuildSettingsConstants)
+// Module 17405 (GuildSettingsConstants)
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 

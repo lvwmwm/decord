@@ -1,9 +1,9 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17225
+// Function ID: 17226
 // Name: NotificationPermissionManager
-// Dependencies: [5, 17, 4471, 502, 2045, 5017, 11902, 11903, 1074, 5045, 4800, 17222, 1981, 1249, 4421, 11905, 9545, 1241, 1364, 6539, 15035, 1094, 2]
+// Dependencies: [5, 17, 4471, 502, 2045, 5017, 11902, 11903, 1074, 5045, 4800, 17226, 1981, 1249, 4421, 11905, 9545, 1241, 1364, 6539, 15033, 1094, 2]
 
-// Module 17221 (NotificationPermissionManager)
+// Module 17225 (NotificationPermissionManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import _modDef4421 from "module_4421" /* 4421 */;
@@ -92,7 +92,7 @@ function showPrompt(arg0, arg1, arg2) {
     obj3.impressionName = discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT;
     obj3.impressionProperties = { action_location: location };
     obj3.location = location;
-    obj2.openLazy(asyncRequireImpl(17222, dependencyMap.paths), closure_2_11, obj3);
+    obj2.openLazy(asyncRequireImpl(17226, dependencyMap.paths), closure_2_11, obj3);
   }, arg2);
 }
 function _logNotificationPermissionStatus() {

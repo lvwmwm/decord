@@ -1,13 +1,13 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16428
+// Function ID: 16429
 // Name: VibegrationsChannelChatToasts
-// Dependencies: [19, 17, 21, 4836, 576, 1115, 4678, 5919, 1177, 4832, 16425, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1115, 4678, 5919, 1177, 4832, 16429, 2]
 // Exports: default
 
-// Module 16424 (VibegrationsChannelChatToasts)
+// Module 16428 (VibegrationsChannelChatToasts)
 import nativeDefault from "native" /* 576 */;
 import UserUtils from "UserUtils" /* 4678 */;
-import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 16425 */;
+import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 16429 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

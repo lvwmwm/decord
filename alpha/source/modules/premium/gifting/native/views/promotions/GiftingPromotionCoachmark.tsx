@@ -1,10 +1,10 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16750
+// Function ID: 16751
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 4825, 10128, 1074, 2042, 21, 4836, 576, 1364, 504, 10218, 10202, 16747, 7720, 4800, 6583, 6603, 10124, 6571, 8271, 5899, 4832, 5281, 10496, 1115, 2]
+// Dependencies: [19, 17, 4825, 10128, 1074, 2042, 21, 4836, 576, 1364, 504, 10218, 10202, 16751, 7720, 4800, 6583, 6603, 10124, 6571, 8271, 5899, 4832, 5281, 10496, 1115, 2]
 // Exports: default
 
-// Module 16746 (GiftingPromotionCoachmark)
+// Module 16750 (GiftingPromotionCoachmark)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
@@ -73,7 +73,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
-  const str = markAsDismissed(16747).useTickingFormattedLimitedOfferTimeLeft(endDate);
+  const str = markAsDismissed(16751).useTickingFormattedLimitedOfferTimeLeft(endDate);
   importDefault = tmp9;
   const tmp11 = usePreviousDefault(null != stateFromStores1);
   dependencyMap = tmp11;
@@ -96,7 +96,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
     }
   }, items2);
-  const tmp2Result3 = markAsDismissed(16747);
+  const tmp2Result3 = markAsDismissed(16751);
   analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items3 = [analyticsLocations, markAsDismissed];
   let tmp18Result = null;

@@ -1,9 +1,9 @@
-// Module ID: 14871
-// Function ID: 14872
+// Module ID: 14869
+// Function ID: 14870
 // Name: ExactSearchResultCountsSetting
 // Dependencies: [7417, 1115, 11006, 2021, 2]
 
-// Module 14871 (ExactSearchResultCountsSetting)
+// Module 14869 (ExactSearchResultCountsSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;

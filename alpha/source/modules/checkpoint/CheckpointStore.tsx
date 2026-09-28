@@ -1,9 +1,9 @@
-// Module ID: 15248
-// Function ID: 15249
+// Module ID: 15246
+// Function ID: 15247
 // Name: CheckpointStore
 // Dependencies: [504, 573, 2]
 
-// Module 15248 (CheckpointStore)
+// Module 15246 (CheckpointStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

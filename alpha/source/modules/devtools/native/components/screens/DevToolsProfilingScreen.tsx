@@ -1,15 +1,15 @@
-// Module ID: 15218
-// Function ID: 15219
+// Module ID: 15216
+// Function ID: 15217
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 9654, 5279, 5999, 5917, 4832, 15219, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 576, 9654, 5279, 5999, 5917, 4832, 15217, 2]
 // Exports: default
 
-// Module 15218 (DevToolsProfilingScreen)
+// Module 15216 (DevToolsProfilingScreen)
 import nativeDefault from "native" /* 576 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
 import TableRowGroup from "TableRowGroup" /* 5999 */;
 import ComponentProfiler from "ComponentProfiler" /* 9654 */;
-import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 15219 */;
+import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 15217 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

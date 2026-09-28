@@ -1,10 +1,10 @@
-// Module ID: 15839
-// Function ID: 15840
+// Module ID: 15837
+// Function ID: 15838
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [19, 1074, 2052, 9577, 21, 4836, 576, 1101, 4800, 15840, 1981, 11868, 1115, 12295, 2]
+// Dependencies: [19, 1074, 2052, 9577, 21, 4836, 576, 1101, 4800, 15838, 1981, 11868, 1115, 12295, 2]
 // Exports: default
 
-// Module 15839 (GuildRoleSubscriptionsRow)
+// Module 15837 (GuildRoleSubscriptionsRow)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -33,7 +33,7 @@ export default function GuildRoleSubscriptionsRow(selected) {
     router_utils.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
   }, items);
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15840, dependencyMap.paths), c1, {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15838, dependencyMap.paths), c1, {
       guildId: id,
       onClose() {
         c1(dependencyMap[8]).hideActionSheet(closure_1_1);

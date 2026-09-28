@@ -1,9 +1,9 @@
-// Module ID: 15026
-// Function ID: 15027
+// Module ID: 15024
+// Function ID: 15025
 // Name: SwipeRightToLeftSetting
-// Dependencies: [7417, 1074, 2021, 1186, 1115, 11006, 15027, 2]
+// Dependencies: [7417, 1074, 2021, 1186, 1115, 11006, 15025, 2]
 
-// Module 15026 (SwipeRightToLeftSetting)
+// Module 15024 (SwipeRightToLeftSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;

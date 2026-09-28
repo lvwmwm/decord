@@ -1,16 +1,16 @@
-// Module ID: 15750
-// Function ID: 15751
+// Module ID: 15748
+// Function ID: 15749
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 4876, 4479, 1372, 1074, 2052, 5018, 21, 4836, 576, 5753, 11868, 1397, 5899, 15751, 5389, 5335, 504, 1177, 5314, 15752, 4989, 1101, 2]
+// Dependencies: [109, 19, 17, 4876, 4479, 1372, 1074, 2052, 5018, 21, 4836, 576, 5753, 11868, 1397, 5899, 15749, 5389, 5335, 504, 1177, 5314, 15750, 4989, 1101, 2]
 
-// Module 15750 (ChannelItem)
+// Module 15748 (ChannelItem)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
 import BookCheckIcon2 from "BookCheckIcon" /* 5389 */;
 import BaseChannelItem from "BaseChannelItem" /* 11868 */;
-import _modDef15751 from "module_15751" /* 15751 */;
+import _modDef15749 from "module_15749" /* 15749 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4876 */;
@@ -68,7 +68,7 @@ function ChannelIcon(arg0) {
       tmp5 = importDefault;
     }
     if (tmp2) {
-      let tmp12 = _modDef15751;
+      let tmp12 = _modDef15749;
       let BookCheckIcon = BookCheckIcon2.BookCheckIcon;
       let tmp9 = require;
     } else {

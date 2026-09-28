@@ -1,7 +1,7 @@
 // Module ID: 14518
 // Function ID: 14519
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4494, 1374, 6852, 21, 4836, 576, 4546, 4685, 4767, 4832, 8230, 1249, 10203, 1177, 14519, 6867, 7504, 4488, 4654, 2029, 504, 6806, 7500, 7499, 12960, 1115, 5293, 1094, 1364, 2]
+// Dependencies: [32, 19, 17, 4494, 1374, 6852, 21, 4836, 576, 4546, 4685, 4767, 4832, 8230, 1249, 10203, 1177, 14519, 6867, 7504, 4488, 4654, 2029, 504, 6806, 7500, 7499, 12959, 1115, 5293, 1094, 1364, 2]
 // Exports: default
 
 // Module 14518 (PremiumTabBadge)
@@ -137,7 +137,7 @@ export default function PremiumTabBadge() {
       const tmpResult11 = tmp(7500);
       const isReferralProgramEntrypointBadgeAcknowledged = tmp(7499).useIsReferralProgramEntrypointBadgeAcknowledged();
       const tmpResult12 = tmp(7499);
-      const promotionMarketingComponent = tmp(12960).usePromotionMarketingComponent(tmp(10203).MarketingComponentType.PREMIUM_TAB);
+      const promotionMarketingComponent = tmp(12959).usePromotionMarketingComponent(tmp(10203).MarketingComponentType.PREMIUM_TAB);
       const tmpResult14 = tmp(6806);
       let prop = null;
       if (null != promotionMarketingComponent) {
@@ -153,7 +153,7 @@ export default function PremiumTabBadge() {
       if (str2 == null) {
         str2 = "";
       }
-      const tmpResult13 = tmp(12960);
+      const tmpResult13 = tmp(12959);
       if (null != promotionMarketingComponent) {
         if ("premiumTab" === promotionMarketingComponent.properties.properties.oneofKind) {
           const obj4 = { acked: tmp27 !== tmp(2029).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, badgeCopy: promotionMarketingComponent.properties.properties.premiumTab.badgeLabel, ackedBadgeCopy: promotionMarketingComponent.properties.properties.premiumTab.acknowledgedBadgeLabel, componentId: null, promotionId: null };

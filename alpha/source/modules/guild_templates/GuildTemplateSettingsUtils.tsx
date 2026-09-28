@@ -1,10 +1,10 @@
-// Module ID: 17448
-// Function ID: 17449
+// Module ID: 17452
+// Function ID: 17453
 // Name: GuildTemplateSettingsUtils
 // Dependencies: [5, 32, 19, 2045, 4469, 6877, 1074, 504, 6742, 4735, 2]
 // Exports: isGuildTemplateNameValid, useCanViewAllChannels, useGuildTemplate
 
-// Module 17448 (GuildTemplateSettingsUtils)
+// Module 17452 (GuildTemplateSettingsUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

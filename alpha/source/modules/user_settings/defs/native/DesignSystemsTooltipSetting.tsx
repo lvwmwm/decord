@@ -1,9 +1,9 @@
-// Module ID: 15391
-// Function ID: 15392
+// Module ID: 15389
+// Function ID: 15390
 // Name: DesignSystemsTooltipSetting
-// Dependencies: [7417, 1074, 11006, 15392, 2]
+// Dependencies: [7417, 1074, 11006, 15390, 2]
 
-// Module 15391 (DesignSystemsTooltipSetting)
+// Module 15389 (DesignSystemsTooltipSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

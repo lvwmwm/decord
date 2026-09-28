@@ -1,13 +1,13 @@
-// Module ID: 15015
-// Function ID: 15016
+// Module ID: 15013
+// Function ID: 15014
 // Name: VideoUploadQualitySetting
-// Dependencies: [1184, 7417, 504, 15014, 2021, 1115, 11006, 2]
+// Dependencies: [1184, 7417, 504, 15012, 2021, 1115, 11006, 2]
 
-// Module 15015 (VideoUploadQualitySetting)
+// Module 15013 (VideoUploadQualitySetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import UserSettingsText from "UserSettingsText" /* 15014 */;
+import UserSettingsText from "UserSettingsText" /* 15012 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 
 require = fn;

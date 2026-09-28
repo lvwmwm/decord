@@ -1,12 +1,12 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16609
+// Function ID: 16610
 // Name: CollectiblesShopEntryButton
-// Dependencies: [32, 19, 7004, 2042, 21, 6806, 2029, 16604, 11620, 1115, 16606, 563, 13533, 6985, 10088, 2]
+// Dependencies: [32, 19, 7004, 2042, 21, 6806, 2029, 16608, 11620, 1115, 16610, 563, 13532, 6985, 10088, 2]
 // Exports: default
 
-// Module 16605 (CollectiblesShopEntryButton)
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 16604 */;
-import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 16606 */;
+// Module 16609 (CollectiblesShopEntryButton)
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 16608 */;
+import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 16610 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7004 */;
@@ -46,7 +46,7 @@ export default function CollectiblesShopEntryButton(navigateToShop) {
   navigateToShop = navigateToShop.navigateToShop;
   const shopButtonRef = navigateToShop.shopButtonRef;
   const items = [CollectiblesMarketingsStore];
-  const stateFromStores = navigateToShop(563).useStateFromStores(items, () => marketingBySurface.getMarketingBySurface(navigateToShop(13533).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON));
+  const stateFromStores = navigateToShop(563).useStateFromStores(items, () => marketingBySurface.getMarketingBySurface(navigateToShop(13532).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON));
   let tmp4 = null != stateFromStores;
   if (tmp4) {
     tmp4 = "dismissibleContent" in stateFromStores;
@@ -75,7 +75,7 @@ export default function CollectiblesShopEntryButton(navigateToShop) {
         }
       };
       obj.showRedDot = null != visibleContent;
-      return closure_1_6(shopButtonRef(16604), obj);
+      return closure_1_6(shopButtonRef(16608), obj);
     }
     if (tmp4) {
       let type1;

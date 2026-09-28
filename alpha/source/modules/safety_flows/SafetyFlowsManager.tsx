@@ -1,10 +1,10 @@
-// Module ID: 17686
-// Function ID: 17687
+// Module ID: 17690
+// Function ID: 17691
 // Name: SafetyFlowsManager
-// Dependencies: [17687, 6539, 2]
+// Dependencies: [17691, 6539, 2]
 
-// Module 17686 (SafetyFlowsManager)
-import openSafetyFlow from "openSafetyFlow" /* 17687 */;
+// Module 17690 (SafetyFlowsManager)
+import openSafetyFlow from "openSafetyFlow" /* 17691 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;

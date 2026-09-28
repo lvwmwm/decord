@@ -1,10 +1,10 @@
-// Module ID: 14910
-// Function ID: 14911
+// Module ID: 14908
+// Function ID: 14909
 // Name: CustomTypingIndicatorAnimationPickerSheet
 // Dependencies: [32, 19, 17, 21, 4836, 576, 5919, 4832, 1380, 1115, 3717, 6618, 11463, 5279, 2]
 // Exports: default
 
-// Module 14910 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 14908 (CustomTypingIndicatorAnimationPickerSheet)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;

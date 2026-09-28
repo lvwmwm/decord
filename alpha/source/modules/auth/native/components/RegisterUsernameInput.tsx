@@ -1,13 +1,13 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 15595
+// Function ID: 15596
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 15572, 21, 4836, 4566, 14265, 5279, 6028, 576, 4832, 1115, 13993, 6024, 1364, 2]
+// Dependencies: [109, 32, 19, 15570, 21, 4836, 4566, 14264, 5279, 6028, 576, 4832, 1115, 13992, 6024, 1364, 2]
 // Exports: RegisterUsernameInput
 
-// Module 15597 (RegisterUsernameInput)
+// Module 15595 (RegisterUsernameInput)
 import nativeDefault from "native" /* 576 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 13993 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14265 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 13992 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14264 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -38,7 +38,7 @@ function UsernameStatusMessage(arg0) {
       if (usernameStatus != null) {
         type1 = usernameStatus.type;
       }
-      if (type1 === tmp3(14265).NameValidationState.AVAILABLE) {
+      if (type1 === tmp3(14264).NameValidationState.AVAILABLE) {
         const obj5 = {};
         const merged2 = Object.assign(obj2);
         const merged3 = Object.assign(obj3);
@@ -67,7 +67,7 @@ function UsernameStatusMessage(arg0) {
   return tmp6;
 }
 let closure_3 = ["username"];
-const RegistrationUIStore = fn(15572);
+const RegistrationUIStore = fn(15570);
 ({ setRegistrationErrors: closure_7, useRegistrationUIStore: closure_8 } = RegistrationUIStore);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
@@ -143,7 +143,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     type = usernameStatus.type;
   }
   let str2;
-  if (type === tmp14(14265).NameValidationState.ERROR) {
+  if (type === tmp14(14264).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: null };

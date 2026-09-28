@@ -1,9 +1,9 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 15991
+// Function ID: 15992
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 7050, 4655, 5750, 15920, 14627, 21, 4836, 6493, 1613, 14620, 14629, 551, 558, 504, 4566, 15994, 2]
+// Dependencies: [32, 19, 17, 7050, 4655, 5750, 15918, 14627, 21, 4836, 6493, 1613, 14620, 14629, 551, 558, 504, 4566, 15992, 2]
 
-// Module 15993 (GuildsBarUnreadBars)
+// Module 15991 (GuildsBarUnreadBars)
 import initialize from "initialize" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
@@ -223,7 +223,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
 }
 const View = fn(17).View;
 const GuildsNodeType = fn(5750).GuildsNodeType;
-const GuildsBarConstants = fn(15920);
+const GuildsBarConstants = fn(15918);
 ({ FastListRenderSections: c10, useGuildWrapperSize: closure_11, GUILD_LIST_WIDTH } = GuildsBarConstants);
 const YouBarConstants = fn(14627);
 ({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: map1 } = YouBarConstants);

@@ -1,9 +1,9 @@
-// Module ID: 16059
-// Function ID: 16060
+// Module ID: 16055
+// Function ID: 16056
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 4825, 5063, 2045, 2067, 1372, 16053, 1074, 6013, 21, 4836, 4832, 576, 5301, 16058, 1115, 1385, 7486, 7180, 10815, 9883, 8079, 504, 7313, 1177, 12125, 16060, 1485, 4813, 13396, 7054, 1241, 12761, 16061, 11118, 4528, 11141, 1981, 4800, 16063, 4790, 16055, 6615, 16064, 16065, 11, 5435, 16066, 7055, 12692, 1486, 2021, 7304, 16076, 16077, 16078, 16079, 16080, 16086, 675, 16087, 16088, 1370, 16057, 8179, 16089, 2]
+// Dependencies: [5, 32, 19, 17, 4825, 5063, 2045, 2067, 1372, 16049, 1074, 6013, 21, 4836, 4832, 576, 5301, 16054, 1115, 1385, 7486, 7180, 10815, 9883, 8079, 504, 7313, 1177, 12125, 16056, 1485, 4813, 13395, 7054, 1241, 12760, 16057, 11118, 4528, 11141, 1981, 4800, 16059, 4790, 16051, 6615, 16060, 16061, 11, 5435, 16062, 7055, 12691, 1486, 2021, 7304, 16072, 16073, 16074, 16075, 16076, 16082, 675, 16083, 16084, 1370, 16053, 8179, 16085, 2]
 
-// Module 16059 (ForYouItems)
+// Module 16055 (ForYouItems)
 import nativeDefault from "native" /* 576 */;
 import _mod675 from "module_675" /* 675 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -14,17 +14,17 @@ import Text_Text from "Text/Text" /* 4832 */;
 import CustomMarkupAll from "CustomMarkup" /* 5301 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7054 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12125 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 13396 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16057 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 16058 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 16076 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 16077 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 16078 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 16079 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 16080 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 16086 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 16087 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 16088 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 13395 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16053 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 16054 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 16072 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 16073 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 16074 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 16075 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 16076 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 16082 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 16083 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 16084 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -33,7 +33,7 @@ import ApplicationStore from "ApplicationStore" /* 5063 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1372 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16053 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16049 */;
 
 require = fn;
 function ForYouFooter(loading) {
@@ -486,7 +486,7 @@ let closure_35 = noop.memo((item) => {
       obj3.icon = tmp6(tmp3[42]);
       obj3.IconComponent = tmp2(tmp3[43]).TrashIcon;
       item = navigation(function*() {
-        yield tmp3(16055).deleteNotificationCenterItem(tmp3);
+        yield tmp3(16051).deleteNotificationCenterItem(tmp3);
         if (1 === tmp7) {
           c3 = 0;
           const obj7 = { key: "REMOVE_NOTIFICATION_ERROR", content: null };

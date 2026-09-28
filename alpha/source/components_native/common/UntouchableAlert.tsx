@@ -1,9 +1,9 @@
-// Module ID: 14792
-// Function ID: 14793
+// Module ID: 14790
+// Function ID: 14791
 // Name: UntouchableAlert
 // Dependencies: [19, 17, 21, 4836, 4540, 5889, 2]
 
-// Module 14792 (UntouchableAlert)
+// Module 14790 (UntouchableAlert)
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5889 */;
 import noop from "module_19" /* 19 */;
 

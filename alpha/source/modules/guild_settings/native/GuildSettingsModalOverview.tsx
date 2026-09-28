@@ -1,10 +1,10 @@
-// Module ID: 17296
-// Function ID: 17297
+// Module ID: 17300
+// Function ID: 17301
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 2063, 2045, 4467, 4754, 4469, 4479, 1372, 9049, 1074, 21, 4836, 576, 1115, 4540, 4527, 5936, 6795, 9048, 10871, 1385, 6615, 5204, 5300, 6024, 4989, 5999, 5917, 7434, 17115, 6646, 6621, 5997, 6000, 15791, 2111, 17297, 1397, 10889, 1177, 6506, 5861, 8053, 5279, 6461, 1485, 504, 2]
+// Dependencies: [19, 2063, 2045, 4467, 4754, 4469, 4479, 1372, 9049, 1074, 21, 4836, 576, 1115, 4540, 4527, 5936, 6795, 9048, 10871, 1385, 6615, 5204, 5300, 6024, 4989, 5999, 5917, 7434, 17119, 6646, 6621, 5997, 6000, 15789, 2111, 17301, 1397, 10889, 1177, 6506, 5861, 8053, 5279, 6461, 1485, 504, 2]
 // Exports: default
 
-// Module 17296 (GuildSettingsModalOverview)
+// Module 17300 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
@@ -28,7 +28,7 @@ import Form from "Form" /* 8053 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
 import openChannelPickerDefault from "openChannelPicker" /* 10871 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10889 */;
-import AssetChooserDefault from "AssetChooser" /* 17297 */;
+import AssetChooserDefault from "AssetChooser" /* 17301 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
@@ -368,12 +368,12 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
     const tmpResult14 = tmp(1385);
   }
   const tmpResult = tmp(7434);
-  let result1 = tmp(17115).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
+  let result1 = tmp(17119).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
   if (!result1) {
     result1 = tmp(1385).hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_VOICE_SESSION_NOTIFICATIONS);
     const tmpResult16 = tmp(1385);
   }
-  const tmpResult15 = tmp(17115);
+  const tmpResult15 = tmp(17119);
   let guildSpaceExperimentEnabled = tmp(6646).getGuildSpaceExperimentEnabled(guild.id, "GuildSettingsModalOverview");
   const obj2 = { title: null, description: null, hasIcons: false, children: null };
   const intl2 = tmp(1115).intl;

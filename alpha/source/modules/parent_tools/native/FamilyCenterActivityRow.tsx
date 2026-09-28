@@ -1,15 +1,15 @@
-// Module ID: 14437
-// Function ID: 14438
+// Module ID: 14436
+// Function ID: 14437
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1372, 6957, 6958, 1074, 21, 4836, 576, 1177, 38, 563, 11, 4832, 4678, 7012, 5896, 5902, 1115, 2487, 14438, 14441, 14442, 2]
+// Dependencies: [19, 17, 1372, 6957, 6958, 1074, 21, 4836, 576, 1177, 38, 563, 11, 4832, 4678, 7012, 5896, 5902, 1115, 2487, 14437, 14440, 14441, 2]
 // Exports: default
 
-// Module 14437 (FamilyCenterActivityRow)
+// Module 14436 (FamilyCenterActivityRow)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 7012 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 14438 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 14442 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 14437 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 14441 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
@@ -164,7 +164,7 @@ export default function FamilyCenterActivityRow(action) {
       if (null == giftInfo) {
         return null;
       } else {
-        const giftRowDisplayInfo = tmp(14441).getGiftRowDisplayInfo(giftInfo);
+        const giftRowDisplayInfo = tmp(14440).getGiftRowDisplayInfo(giftInfo);
         ({ skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt } = giftRowDisplayInfo);
         const obj3 = { skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt };
         return React6(FamilyCenterActivityGiftRowDefault, obj3);

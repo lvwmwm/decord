@@ -1,12 +1,12 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 14839
+// Function ID: 14840
 // Name: SettingsAppearanceActivityCardsItem
-// Dependencies: [19, 21, 8179, 576, 14842, 2]
+// Dependencies: [19, 21, 8179, 576, 14840, 2]
 // Exports: default
 
-// Module 14841 (SettingsAppearanceActivityCardsItem)
+// Module 14839 (SettingsAppearanceActivityCardsItem)
 import nativeDefault from "native" /* 576 */;
-import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 14842 */;
+import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 14840 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

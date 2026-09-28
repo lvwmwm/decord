@@ -1,15 +1,15 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14023
+// Function ID: 14024
 // Name: validateEmbeddedAppFrame
-// Dependencies: [8499, 14025, 4739, 1074, 8500, 8501, 8775, 8321, 8770, 2]
+// Dependencies: [8499, 14024, 4739, 1074, 8500, 8501, 8775, 8321, 8770, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14024 (validateEmbeddedAppFrame)
+// Module 14023 (validateEmbeddedAppFrame)
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
 import RPCErrorDefault from "RPCError" /* 8770 */;
 import RPCHelpers from "RPCHelpers" /* 8775 */;
 import FramesStore from "FramesStore" /* 8499 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14025 */;
+import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14024 */;
 
 require = fn;
 function validateEmbeddedAppFrame(transport) {

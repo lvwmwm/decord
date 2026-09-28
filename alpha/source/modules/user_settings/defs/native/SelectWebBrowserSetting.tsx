@@ -1,10 +1,10 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15027
+// Function ID: 15028
 // Name: SelectWebBrowserSetting
 // Dependencies: [7417, 4797, 1115, 1094, 1364, 11006, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 15029 (SelectWebBrowserSetting)
+// Module 15027 (SelectWebBrowserSetting)
 import util from "util" /* 1115 */;
 import BrowserManager from "BrowserManager" /* 4797 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;

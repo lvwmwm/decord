@@ -1,16 +1,16 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 16907
+// Function ID: 16908
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [11755, 11753, 11756, 4566, 16273, 16831, 4531, 576, 8853, 16729, 16832, 11759, 10896, 2]
+// Dependencies: [11755, 11753, 11756, 4566, 16269, 16835, 4531, 576, 8853, 16733, 16836, 11759, 10896, 2]
 // Exports: default
 
-// Module 16903 (usePIPAvoidanceSpecs)
+// Module 16907 (usePIPAvoidanceSpecs)
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10896 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11756 */;
-import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 16729 */;
-import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 16832 */;
+import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 16733 */;
+import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 16836 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;

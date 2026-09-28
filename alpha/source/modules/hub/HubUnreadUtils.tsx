@@ -1,10 +1,10 @@
-// Module ID: 15846
-// Function ID: 15847
+// Module ID: 15844
+// Function ID: 15845
 // Name: HubUnreadUtils
 // Dependencies: [11795, 4851, 504, 11, 11787, 2]
 // Exports: useHubUnreadCount
 
-// Module 15846 (HubUnreadUtils)
+// Module 15844 (HubUnreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GuildDirectoryUtils from "GuildDirectoryUtils" /* 11787 */;
 import GuildDirectoryStore from "GuildDirectoryStore" /* 11795 */;

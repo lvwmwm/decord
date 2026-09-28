@@ -1,17 +1,17 @@
-// Module ID: 17694
-// Function ID: 17695
+// Module ID: 17698
+// Function ID: 17699
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1372, 17688, 17690, 5039, 17689, 4528, 8810, 1115, 2781, 1485, 17693, 2]
+// Dependencies: [5, 19, 1372, 17692, 17694, 5039, 17693, 4528, 8810, 1115, 2781, 1485, 17697, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 17694 (SafetyFlowsUtils)
+// Module 17698 (SafetyFlowsUtils)
 import util from "util" /* 1115 */;
 import _modDef2781 from "module_2781" /* 2781 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import _modDef8810 from "module_8810" /* 8810 */;
-import types from "types" /* 17688 */;
-import constants from "constants" /* 17689 */;
+import types from "types" /* 17692 */;
+import constants from "constants" /* 17693 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -51,7 +51,7 @@ function navigateToScreenForTask(arr, task_type) {
     let tmp5 = null;
     if (null != tmp16) {
       let tmp = tmp16;
-      if (task_type === tmp14(17688).TaskType.EMAIL_VERIFICATION) {
+      if (task_type === tmp14(17692).TaskType.EMAIL_VERIFICATION) {
         const currentUser = UserStore.getCurrentUser();
         let email;
         if (currentUser != null) {
@@ -59,7 +59,7 @@ function navigateToScreenForTask(arr, task_type) {
         }
         tmp = tmp16;
         if (null != email) {
-          const items = [tmp14(17688).SafetyFlowScreens.VERIFY_EMAIL];
+          const items = [tmp14(17692).SafetyFlowScreens.VERIFY_EMAIL];
           tmp = items;
         }
       }
@@ -68,7 +68,7 @@ function navigateToScreenForTask(arr, task_type) {
     if (null != tmp5) {
       arr.push(tmp5[0]);
     } else {
-      arr.push(tmp14(17688).SafetyFlowScreens.UPDATE_APP);
+      arr.push(tmp14(17692).SafetyFlowScreens.UPDATE_APP);
     }
   }
 }
@@ -80,7 +80,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
   let tmp4 = null;
   if (null != tmp3) {
     let tmp5 = tmp3;
-    if (task_type === tmp(17688).TaskType.EMAIL_VERIFICATION) {
+    if (task_type === tmp(17692).TaskType.EMAIL_VERIFICATION) {
       const currentUser = UserStore.getCurrentUser();
       let email;
       if (currentUser != null) {
@@ -88,7 +88,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp3;
       if (null != email) {
-        const items = [tmp(17688).SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [tmp(17692).SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }

@@ -1,9 +1,9 @@
-// Module ID: 17088
-// Function ID: 17089
+// Module ID: 17092
+// Function ID: 17093
 // Name: AgeVerificationManager
 // Dependencies: [2045, 5056, 2099, 1372, 1074, 7847, 3, 1096, 5048, 8047, 6876, 6722, 6539, 1979, 5735, 5736, 5584, 2]
 
-// Module 17088 (AgeVerificationManager)
+// Module 17092 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
 import Server from "Server" /* 1979 */;

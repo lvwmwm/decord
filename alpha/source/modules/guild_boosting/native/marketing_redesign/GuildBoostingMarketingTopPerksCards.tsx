@@ -1,17 +1,17 @@
-// Module ID: 13143
-// Function ID: 13144
+// Module ID: 13142
+// Function ID: 13143
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 4825, 21, 4836, 576, 1115, 13144, 5841, 13145, 13146, 4832, 12060, 2]
+// Dependencies: [19, 17, 4825, 21, 4836, 576, 1115, 13143, 5841, 13144, 13145, 4832, 12060, 2]
 // Exports: default
 
-// Module 13143 (GuildBoostingMarketingTopPerksCards)
+// Module 13142 (GuildBoostingMarketingTopPerksCards)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import LottieAnimationViewDefault from "LottieAnimationView" /* 5841 */;
-import _modDef13144 from "module_13144" /* 13144 */;
-import _mod13145 from "module_13145" /* 13145 */;
-import _modDef13146 from "module_13146" /* 13146 */;
+import _modDef13143 from "module_13143" /* 13143 */;
+import _mod13144 from "module_13144" /* 13144 */;
+import _modDef13145 from "module_13145" /* 13145 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
@@ -41,7 +41,7 @@ let items = [
       return intl.string(util.t.HTvLGu);
     },
     getGraphic(style) {
-      return timestampProducer(React3, { style, source: _modDef13144 });
+      return timestampProducer(React3, { style, source: _modDef13143 });
     }
   },
   {
@@ -54,7 +54,7 @@ let items = [
       return intl.string(util.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod13145, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod13144, autoPlay: !AccessibilityStore.useReducedMotion, style };
       return timestampProducer(LottieAnimationViewDefault, obj);
     }
   },
@@ -68,7 +68,7 @@ let items = [
       return intl.string(util.t.yCjoUC);
     },
     getGraphic(style) {
-      return timestampProducer(React3, { style, source: _modDef13146 });
+      return timestampProducer(React3, { style, source: _modDef13145 });
     }
   }
 ];

@@ -1,11 +1,11 @@
-// Module ID: 17320
-// Function ID: 17321
+// Module ID: 17324
+// Function ID: 17325
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 11341, 21, 4836, 9559, 1115, 5999, 4832, 5917, 6031, 17305, 5916, 2]
+// Dependencies: [32, 19, 17, 11341, 21, 4836, 9559, 1115, 5999, 4832, 5917, 6031, 17309, 5916, 2]
 // Exports: default
 
-// Module 17320 (MentionSpamTriggerFields)
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17305 */;
+// Module 17324 (MentionSpamTriggerFields)
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17309 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

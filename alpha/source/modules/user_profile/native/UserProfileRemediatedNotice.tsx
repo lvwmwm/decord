@@ -1,10 +1,10 @@
-// Module ID: 12695
-// Function ID: 12696
+// Module ID: 12694
+// Function ID: 12695
 // Name: UserProfileRemediatedNotice
 // Dependencies: [19, 17, 4479, 1074, 21, 4836, 576, 7687, 563, 4832, 1115, 9195, 2]
 // Exports: default
 
-// Module 12695 (UserProfileRemediatedNotice)
+// Module 12694 (UserProfileRemediatedNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;

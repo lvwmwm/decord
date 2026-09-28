@@ -1,10 +1,10 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16605
+// Function ID: 16606
 // Name: useHasNewAdContent
 // Dependencies: [32, 14609, 7116, 5756, 1091, 10709, 504, 7112, 5763, 6806, 2029, 2]
 // Exports: default
 
-// Module 16601 (useHasNewAdContent)
+// Module 16605 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1091 */;
 import AdCreativeType from "AdCreativeType" /* 5763 */;
 import _slicedToArray from "module_32" /* 32 */;

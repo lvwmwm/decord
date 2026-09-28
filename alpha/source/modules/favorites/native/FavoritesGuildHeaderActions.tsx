@@ -1,13 +1,13 @@
-// Module ID: 15784
-// Function ID: 15785
+// Module ID: 15782
+// Function ID: 15783
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 15785, 7363, 5993, 11681, 15786, 2]
+// Dependencies: [19, 21, 15783, 7363, 5993, 11681, 15784, 2]
 // Exports: FavoritesGuildHeaderActionButton
 
-// Module 15784 (FavoritesGuildHeaderActions)
+// Module 15782 (FavoritesGuildHeaderActions)
 import IconButton from "IconButton" /* 7363 */;
-import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 15785 */;
-import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 15786 */;
+import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 15783 */;
+import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 15784 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

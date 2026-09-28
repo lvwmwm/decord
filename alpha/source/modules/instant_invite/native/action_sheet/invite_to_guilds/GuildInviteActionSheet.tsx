@@ -1,10 +1,10 @@
-// Module ID: 12674
-// Function ID: 12675
+// Module ID: 12547
+// Function ID: 12548
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 4836, 576, 1177, 1115, 12675, 12676, 12672, 4832, 6402, 10613, 12677, 6570, 6571, 6471, 9277, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 1177, 1115, 12548, 12549, 12545, 4832, 6402, 10613, 12550, 6570, 6571, 6471, 9277, 2]
 // Exports: default
 
-// Module 12674 (GuildInviteActionSheet)
+// Module 12547 (GuildInviteActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -13,9 +13,9 @@ import SearchField from "SearchField" /* 6471 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9277 */;
-import _modDef12675 from "module_12675" /* 12675 */;
-import _modDef12676 from "module_12676" /* 12676 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 12677 */;
+import _modDef12548 from "module_12548" /* 12548 */;
+import _modDef12549 from "module_12549" /* 12549 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 12550 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -26,8 +26,8 @@ function EmptyGuildList() {
   obj.title = intl.string(util.t["2bfiLk"]);
   const intl2 = util.intl;
   obj.body = intl2.string(util.t.V6nAfF);
-  obj.darkSource = _modDef12675;
-  obj.lightSource = _modDef12676;
+  obj.darkSource = _modDef12548;
+  obj.lightSource = _modDef12549;
   return timestampProducer(native.ThemedEmptyState, obj);
 }
 function GuildList(recipientId) {
@@ -35,8 +35,8 @@ function GuildList(recipientId) {
   const source = recipientId.source;
   _slicedToArray = undefined;
   dependencyMap = closure_8();
-  let obj = recipientId(12672);
-  [arr, arr2] = recipientId(12672).useServerInviteRows(recipientId, recipientId.query);
+  let obj = recipientId(12545);
+  [arr, arr2] = recipientId(12545).useServerInviteRows(recipientId, recipientId.query);
   if (0 === arr.length) {
     if (0 === arr2.length) {
       let items = [];

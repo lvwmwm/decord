@@ -1,10 +1,10 @@
-// Module ID: 17649
-// Function ID: 17650
+// Module ID: 17653
+// Function ID: 17654
 // Name: BasicGuildActionCreators
 // Dependencies: [5, 2067, 7397, 1074, 573, 1271, 2]
 // Exports: fetchBasicGuild
 
-// Module 17649 (BasicGuildActionCreators)
+// Module 17653 (BasicGuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

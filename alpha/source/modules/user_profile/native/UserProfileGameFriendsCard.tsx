@@ -1,10 +1,10 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 12670
+// Function ID: 12671
 // Name: UserProfileGameFriendsCard
 // Dependencies: [19, 21, 4836, 6589, 1115, 12125, 6628, 4832, 2]
 // Exports: default
 
-// Module 12652 (UserProfileGameFriendsCard)
+// Module 12670 (UserProfileGameFriendsCard)
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6589 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12125 */;
 import noop from "module_19" /* 19 */;

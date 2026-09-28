@@ -1,10 +1,10 @@
-// Module ID: 17614
-// Function ID: 17615
+// Module ID: 17618
+// Function ID: 17619
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 5915, 4825, 2067, 9049, 4829, 1085, 21, 4836, 576, 1115, 14816, 10862, 14818, 1485, 504, 9048, 5936, 6795, 4800, 15929, 1981, 9083, 4566, 5917, 14155, 1092, 4832, 9084, 4512, 6685, 672, 1177, 14831, 2]
+// Dependencies: [32, 19, 17, 5915, 4825, 2067, 9049, 4829, 1085, 21, 4836, 576, 1115, 14814, 10862, 14816, 1485, 504, 9048, 5936, 6795, 4800, 15927, 1981, 9083, 4566, 5917, 14154, 1092, 4832, 9084, 4512, 6685, 672, 1177, 14829, 2]
 // Exports: default
 
-// Module 17614 (GuildSettingsModalOfficialMessages)
+// Module 17618 (GuildSettingsModalOfficialMessages)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import util from "util" /* 1115 */;
@@ -15,7 +15,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800
 import Text_Text from "Text/Text" /* 4832 */;
 import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6685 */;
 import HeaderActionButton from "HeaderActionButton" /* 6795 */;
-import _modDef14831 from "module_14831" /* 14831 */;
+import _modDef14829 from "module_14829" /* 14829 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -50,7 +50,7 @@ function MessagePreview(theme) {
   const items1 = [tmp.chatContainerInner, { backgroundColor: _modDef672(selectedColor).alpha(closure_1_10).hex() }];
   obj4.style = items1;
   const hexResult1 = _modDef672(selectedColor).alpha(closure_1_10).hex();
-  const items2 = [closure_1_12(native.Avatar, { source: _modDef14831 }), ];
+  const items2 = [closure_1_12(native.Avatar, { source: _modDef14829 }), ];
   const obj6 = { style: tmp.chatContent, children: null };
   const obj7 = { style: tmp.chatHeader, children: null };
   const obj8 = { animated: true, style: animatedStyles.textStrong, variant: "text-md/semibold", lineClamp: 1, children: null };
@@ -187,7 +187,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
     obj2.onSelect = function onSelect(officialMessageColor) {
       navigation(submitting[18]).updateGuild({ officialMessageColor });
     };
-    obj.openLazy(asyncRequireImpl(15929, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequireImpl(15927, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items5);
   const tmp8 = hasChanges(officialMessageColor.useState(0), 2);
   [tmp15, c7] = hasChanges(officialMessageColor.useState(0), 2);

@@ -1,10 +1,10 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 16677
+// Function ID: 16678
 // Name: ChannelSettingsEditForumTag
 // Dependencies: [32, 19, 17, 5771, 2045, 1375, 21, 4836, 576, 1485, 504, 4832, 1115, 7324, 6795, 5279, 5999, 5917, 5435, 10583, 6551, 1397, 8219, 1177, 6034, 6621, 5204, 2]
 // Exports: default
 
-// Module 16673 (ChannelSettingsEditForumTag)
+// Module 16677 (ChannelSettingsEditForumTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
@@ -218,7 +218,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "__initData" });
+      setOptions({ headerRight: "r" });
     }
   }, items5);
   const obj5 = { style: tmp.container, children: null };

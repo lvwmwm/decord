@@ -1,17 +1,17 @@
-// Module ID: 16248
-// Function ID: 16249
+// Module ID: 16244
+// Function ID: 16245
 // Name: VibegrationsEffortPicker
-// Dependencies: [32, 19, 17, 21, 1115, 3715, 16249, 5279, 576, 5997, 5371, 6000, 5999, 5917, 16250, 6621, 6618, 6570, 2]
+// Dependencies: [32, 19, 17, 21, 1115, 3715, 16245, 5279, 576, 5997, 5371, 6000, 5999, 5917, 16246, 6621, 6618, 6570, 2]
 // Exports: VibegrationsEffortPickerSheet
 
-// Module 16248 (VibegrationsEffortPicker)
+// Module 16244 (VibegrationsEffortPicker)
 import util from "util" /* 1115 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import TableRadioRow from "TableRadioRow" /* 6000 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
 import ActionSheet from "ActionSheet" /* 6618 */;
-import VibegrationsEffortTiers from "VibegrationsEffortTiers" /* 16249 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16250 */;
+import VibegrationsEffortTiers from "VibegrationsEffortTiers" /* 16245 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16246 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,30 +19,28 @@ require = fn;
 class VibegrationsEffortPicker {
   constructor(arg0) {
     settings = global.settings;
-    tiers = global.tiers;
-    choices = global.choices;
-    disabled = global.disabled;
+    ({ tiers, choices, disabled } = global);
     ({ onChange, hideTitle } = global);
     if (hideTitle === undefined) {
       hideTitle = false;
     }
-    closure_5 = undefined;
-    tmp = disabled(onChange.useState(false), 2);
-    [tmp2, closure_5] = tmp;
+    closure_3 = undefined;
+    tmp = closure_3(closure_4.useState(false), 2);
+    [tmp2, closure_3] = tmp;
     tmp4 = settings;
-    tmp5 = choices;
-    callback = onChange.useCallback(() => _undefined((arg0) => !arg0), []);
-    intl = settings(choices[4]).intl;
-    tmp6 = tiers;
-    stringResult = intl.string(tiers(choices[5]).GDs9Vq);
-    intl2 = settings(choices[4]).intl;
-    stringResult1 = intl2.string(tiers(choices[5])["9FRudW"]);
-    intl3 = settings(choices[4]).intl;
-    stringResult2 = intl3.string(tiers(choices[5])["4AsQHS"]);
-    obj = settings(choices[6]);
+    tmp5 = onChange;
+    callback = closure_4.useCallback(() => _undefined((arg0) => !arg0), []);
+    intl = settings(onChange[4]).intl;
+    tmp6 = disabled;
+    stringResult = intl.string(disabled(onChange[5]).GDs9Vq);
+    intl2 = settings(onChange[4]).intl;
+    stringResult1 = intl2.string(disabled(onChange[5])["9FRudW"]);
+    intl3 = settings(onChange[4]).intl;
+    stringResult2 = intl3.string(disabled(onChange[5])["4AsQHS"]);
+    obj = settings(onChange[6]);
     result = obj.vibegrationsTierModel(settings, tiers, settings.tier);
     tmp11 = jsxs;
-    obj1 = { direction: "vertical", spacing: tiers(choices[8]).space.PX_16, children: null };
+    obj1 = { direction: "vertical", spacing: disabled(onChange[8]).space.PX_16, children: null };
     tmp12 = jsx;
     obj12 = {
       hasIcons: false,
@@ -50,7 +48,7 @@ class VibegrationsEffortPicker {
       onChange(tier2) {
             if (tier2 !== settings.tier) {
               const vibegrationsWithTierResult = VibegrationsEffortTiers.vibegrationsWithTier(tmp, tier2);
-              noop(VibegrationsEffortTiers.vibegrationsNormalizeFast(vibegrationsWithTierResult, tiers, choices.main));
+              dependencyMap(VibegrationsEffortTiers.vibegrationsNormalizeFast(vibegrationsWithTierResult));
             }
           },
       title: null,
@@ -72,7 +70,7 @@ class VibegrationsEffortPicker {
       return timestampProducer(TableRadioRow.TableRadioRow, obj, value);
     });
     items = [, , ];
-    items[0] = tmp12(settings(choices[9]).TableRadioGroup, obj12);
+    items[0] = tmp12(settings(onChange[9]).TableRadioGroup, obj12);
     obj13 = { hasIcons: false, children: null };
     obj14 = { label: null, arrow: null, accessibilityState: null, onPress: null };
     intl4 = tmp4(tmp5[4]).intl;
@@ -91,7 +89,7 @@ class VibegrationsEffortPicker {
         obj15.value = result;
         obj15.onChange = function onChange(arg0) {
           const result = VibegrationsEffortTiers.vibegrationsPickTierModel(settings, settings.tier, arg0);
-          noop(VibegrationsEffortTiers.vibegrationsNormalizeFast(result, tiers, choices.main));
+          dependencyMap(VibegrationsEffortTiers.vibegrationsNormalizeFast(result));
         };
         obj15.title = stringResult1;
         obj15.accessibilityLabel = stringResult1;
@@ -121,7 +119,7 @@ class VibegrationsEffortPicker {
         const obj = {};
         const merged = Object.assign(settings);
         obj.thinking = thinking;
-        noop(VibegrationsEffortTiers.vibegrationsNormalizeFast(obj, tiers, choices.main));
+        dependencyMap(VibegrationsEffortTiers.vibegrationsNormalizeFast(obj));
       };
       obj16.title = stringResult2;
       obj16.accessibilityLabel = stringResult2;
@@ -150,7 +148,7 @@ class VibegrationsEffortPicker {
           const obj = {};
           const merged = Object.assign(settings);
           obj.fast = fast;
-          noop(VibegrationsEffortTiers.vibegrationsNormalizeFast(obj, tiers, choices.main));
+          dependencyMap(VibegrationsEffortTiers.vibegrationsNormalizeFast(obj));
         };
         obj17.children = tmp12(tmp4(tmp5[15]).TableSwitchRow, obj18);
         tmp12Result1 = tmp12(tmp4(tmp5[12]).TableRowGroup, obj17);
@@ -162,7 +160,7 @@ class VibegrationsEffortPicker {
     }
     items[2] = tmp11Result;
     obj1.children = items;
-    return tmp11(settings(choices[7]).Stack, obj1);
+    return tmp11(settings(onChange[7]).Stack, obj1);
   }
 }
 const View = fn(17).View;

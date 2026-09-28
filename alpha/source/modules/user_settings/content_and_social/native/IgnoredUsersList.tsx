@@ -1,10 +1,10 @@
-// Module ID: 14343
-// Function ID: 14344
+// Module ID: 14342
+// Function ID: 14343
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4479, 21, 4836, 576, 6583, 6603, 1177, 14337, 1115, 6544, 4832, 5999, 14344, 504, 2]
+// Dependencies: [19, 17, 4479, 21, 4836, 576, 6583, 6603, 1177, 14336, 1115, 6544, 4832, 5999, 14343, 504, 2]
 // Exports: default
 
-// Module 14343 (IgnoredUsersList)
+// Module 14342 (IgnoredUsersList)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 4832 */;
 import TableRowGroup from "TableRowGroup" /* 5999 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6583 */;
-import Blocked from "Blocked" /* 14337 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 14344 */;
+import Blocked from "Blocked" /* 14336 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 14343 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 

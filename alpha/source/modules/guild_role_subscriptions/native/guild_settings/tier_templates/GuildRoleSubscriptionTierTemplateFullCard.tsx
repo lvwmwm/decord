@@ -1,17 +1,17 @@
-// Module ID: 17608
-// Function ID: 17609
+// Module ID: 17612
+// Function ID: 17613
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 4836, 576, 1177, 15752, 4832, 14784, 6400, 1613, 6571, 17609, 6045, 1115, 17610, 9807, 17611, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1177, 15750, 4832, 14782, 6400, 1613, 6571, 17613, 6045, 1115, 17614, 9807, 17615, 2]
 // Exports: default
 
-// Module 17608 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 17612 (GuildRoleSubscriptionTierTemplateFullCard)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 14784 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 15752 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 17611 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 14782 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 15750 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 17615 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

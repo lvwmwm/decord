@@ -1,10 +1,10 @@
-// Module ID: 15223
-// Function ID: 15224
+// Module ID: 15221
+// Function ID: 15222
 // Name: DevToolsBountyQaScreen
 // Dependencies: [5, 32, 19, 17, 7113, 21, 4836, 576, 4528, 1613, 504, 5759, 7114, 10744, 10683, 4832, 5997, 6000, 5999, 5917, 14638, 14636, 6389, 5763, 2]
 // Exports: default
 
-// Module 15223 (DevToolsBountyQaScreen)
+// Module 15221 (DevToolsBountyQaScreen)
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import AdCreativeType from "AdCreativeType" /* 5763 */;

@@ -1,9 +1,9 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15377
+// Function ID: 15378
 // Name: DesignSystemSegmentedControlSetting
-// Dependencies: [7417, 1074, 11006, 15380, 2]
+// Dependencies: [7417, 1074, 11006, 15378, 2]
 
-// Module 15379 (DesignSystemSegmentedControlSetting)
+// Module 15377 (DesignSystemSegmentedControlSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

@@ -1,14 +1,14 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 12626
+// Function ID: 12627
 // Name: useNote
-// Dependencies: [5, 19, 12609, 1074, 504, 573, 1271, 2]
+// Dependencies: [5, 19, 12627, 1074, 504, 573, 1271, 2]
 // Exports: default
 
-// Module 12608 (useNote)
+// Module 12626 (useNote)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import NoteStore from "NoteStore" /* 12609 */;
+import NoteStore from "NoteStore" /* 12627 */;
 
 const require = globalThis.__r;
 

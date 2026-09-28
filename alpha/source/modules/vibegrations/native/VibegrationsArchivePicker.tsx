@@ -1,10 +1,10 @@
-// Module ID: 16246
-// Function ID: 16247
+// Module ID: 16242
+// Function ID: 16243
 // Name: VibegrationsArchivePicker
-// Dependencies: [5, 12624, 10793, 5371, 1115, 3715, 2]
+// Dependencies: [5, 12642, 10793, 5371, 1115, 3715, 2]
 // Exports: describeVibegrationsArchiveRejection, pickVibegrationsArchive, sendVibegrationsArchiveImport
 
-// Module 16246 (VibegrationsArchivePicker)
+// Module 16242 (VibegrationsArchivePicker)
 import _modDef3715 from "module_3715" /* 3715 */;
 import FilePickerUtils from "FilePickerUtils" /* 10793 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
@@ -95,7 +95,7 @@ let closure_9 = async function _sendVibegrationsArchiveImport(arg0, value) {
     }
   }
 };
-const VibegrationsConnectionStore = fn(12624);
+const VibegrationsConnectionStore = fn(12642);
 ({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty, uploadAttachmentBytes: metroRequire } = VibegrationsConnectionStore);
 let closure_7 = ["zip", "tar", "gz", "tgz", "rar"];
 const size = fn(2);

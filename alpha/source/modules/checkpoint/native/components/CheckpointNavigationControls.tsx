@@ -1,15 +1,15 @@
-// Module ID: 15279
-// Function ID: 15280
+// Module ID: 15277
+// Function ID: 15278
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 5061, 1074, 21, 4836, 576, 1613, 15280, 7722, 1115, 15264, 3037, 4525, 2111, 5940, 15281, 15282, 2]
+// Dependencies: [17, 5061, 1074, 21, 4836, 576, 1613, 15278, 7722, 1115, 15262, 3037, 4525, 2111, 5940, 15279, 15280, 2]
 // Exports: default
 
-// Module 15279 (CheckpointNavigationControls)
+// Module 15277 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import CheckpointConstants from "CheckpointConstants" /* 5061 */;
-import CheckpointTextDefault from "CheckpointText" /* 15264 */;
+import CheckpointTextDefault from "CheckpointText" /* 15262 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4836 */;
@@ -49,9 +49,9 @@ export default function CheckpointNavigationControls(onNext) {
     const intl3 = require("util").intl;
     obj2.label = intl3.string(require("util").t.I0v0Qv);
     obj2.onPress = onNext;
-    const items2 = [closure_7(tmp2(15280), obj2), ];
+    const items2 = [closure_7(tmp2(15278), obj2), ];
     const obj3 = { variant: "text-sm/medium", children: null };
-    const tmp2Result = tmp2(15280);
+    const tmp2Result = tmp2(15278);
     const intl4 = require("util").intl;
     const obj4 = {
       learnMoreHook(children, arg1) {
@@ -68,10 +68,10 @@ export default function CheckpointNavigationControls(onNext) {
         }
     };
     obj3.children = intl4.format(tmp2(3037).hcNhyq, obj4);
-    items2[1] = closure_7(tmp2(15264), obj3);
+    items2[1] = closure_7(tmp2(15262), obj3);
     obj.children = items2;
     let tmp11 = obj;
-    const tmp2Result3 = tmp2(15264);
+    const tmp2Result3 = tmp2(15262);
   } else {
     items1[1] = tmp.routeControls;
     obj.style = items1;
@@ -91,10 +91,10 @@ export default function CheckpointNavigationControls(onNext) {
     obj7.accessibilityLabel = intl2.string(isTerminal ? t.i4jeWR : t.PDTjLN);
     const obj8 = { color: CHECKPOINT_PRIMARY };
     obj7.children = closure_7(require("ArrowLargeRightIcon").ArrowLargeRightIcon, obj8);
-    items3[1] = closure_7(tmp2(15281), obj7);
+    items3[1] = closure_7(tmp2(15279), obj7);
     obj.children = items3;
     tmp11 = obj;
-    const tmp2Result4 = tmp2(15281);
+    const tmp2Result4 = tmp2(15279);
   }
   return closure_8(closure_4, tmp11);
 };

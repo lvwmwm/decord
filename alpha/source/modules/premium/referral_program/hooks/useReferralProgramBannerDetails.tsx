@@ -1,10 +1,10 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 12976
+// Function ID: 12977
 // Name: useReferralProgramBannerDetails
 // Dependencies: [19, 1372, 6872, 504, 7626, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 12977 (useReferralProgramBannerDetails)
+// Module 12976 (useReferralProgramBannerDetails)
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import ReferralTrialStore from "ReferralTrialStore" /* 6872 */;

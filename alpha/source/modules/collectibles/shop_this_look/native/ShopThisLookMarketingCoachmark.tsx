@@ -1,13 +1,13 @@
-// Module ID: 12686
-// Function ID: 12687
+// Module ID: 12564
+// Function ID: 12565
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 2042, 6629, 21, 4836, 12687, 12684, 1115, 10589, 2]
+// Dependencies: [19, 17, 2042, 6629, 21, 4836, 12565, 12559, 1115, 10589, 2]
 // Exports: default
 
-// Module 12686 (ShopThisLookMarketingCoachmark)
+// Module 12564 (ShopThisLookMarketingCoachmark)
 import util from "util" /* 1115 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12684 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 12687 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12559 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 12565 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

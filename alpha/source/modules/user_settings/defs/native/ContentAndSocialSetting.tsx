@@ -1,9 +1,9 @@
-// Module ID: 15485
-// Function ID: 15486
+// Module ID: 15483
+// Function ID: 15484
 // Name: ContentAndSocialSetting
-// Dependencies: [1074, 11006, 1115, 4529, 15486, 2]
+// Dependencies: [1074, 11006, 1115, 4529, 15484, 2]
 
-// Module 15485 (ContentAndSocialSetting)
+// Module 15483 (ContentAndSocialSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import FriendsIcon from "FriendsIcon" /* 4529 */;

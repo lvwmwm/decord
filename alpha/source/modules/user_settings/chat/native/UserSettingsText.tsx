@@ -1,10 +1,10 @@
-// Module ID: 15014
-// Function ID: 15015
+// Module ID: 15012
+// Function ID: 15013
 // Name: UserSettingsText
 // Dependencies: [19, 17, 1372, 4494, 1183, 1184, 1074, 21, 4836, 576, 1241, 2021, 8659, 4531, 504, 4488, 1485, 6411, 1177, 9860, 4832, 1115, 8053, 5279, 5999, 6621, 5997, 6000, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15014 (UserSettingsText)
+// Module 15012 (UserSettingsText)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2021 */;

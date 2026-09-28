@@ -1,19 +1,19 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 16626
+// Function ID: 16627
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 13267, 1074, 6852, 1374, 21, 1091, 4836, 576, 16623, 1241, 1115, 4421, 563, 6867, 6859, 16621, 2111, 4832, 4488, 5435, 1177, 8122, 5293, 6628, 2]
+// Dependencies: [19, 17, 13266, 1074, 6852, 1374, 21, 1091, 4836, 576, 16627, 1241, 1115, 4421, 563, 6867, 6859, 16625, 2111, 4832, 4488, 5435, 1177, 8122, 5293, 6628, 2]
 // Exports: default
 
-// Module 16622 (YouExpiringTrialOfferCard)
+// Module 16626 (YouExpiringTrialOfferCard)
 import nativeDefault from "native" /* 576 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import _modDef4421 from "module_4421" /* 4421 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import useCountdownDefault from "useCountdown" /* 6859 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 16623 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 16627 */;
 import noop from "module_19" /* 19 */;
-import NoticeStore from "NoticeStore" /* 13267 */;
+import NoticeStore from "NoticeStore" /* 13266 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -53,7 +53,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const time = useCountdownDefault(num, closure_15);
-  shouldShowExpiringTrialOfferCard = navigateToPremium(16621).useShouldShowExpiringTrialOfferCard();
+  shouldShowExpiringTrialOfferCard = navigateToPremium(16625).useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
     let tmp = shouldShowExpiringTrialOfferCard;
@@ -171,5 +171,5 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   } else {
     return null;
   }
-  const tmp4Result = navigateToPremium(16621);
+  const tmp4Result = navigateToPremium(16625);
 };

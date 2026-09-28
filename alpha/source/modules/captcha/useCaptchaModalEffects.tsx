@@ -1,10 +1,10 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17066
+// Function ID: 17067
 // Name: useCaptchaModalEffects
 // Dependencies: [19, 1074, 5298, 5177, 1241, 2]
 // Exports: default
 
-// Module 17062 (useCaptchaModalEffects)
+// Module 17066 (useCaptchaModalEffects)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 

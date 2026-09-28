@@ -1,10 +1,10 @@
-// Module ID: 12819
-// Function ID: 12820
+// Module ID: 12818
+// Function ID: 12819
 // Name: SafetyPolicyNoticeEmbed
 // Dependencies: [17, 1074, 7868, 4421, 1115, 7388, 8049, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12819 (SafetyPolicyNoticeEmbed)
+// Module 12818 (SafetyPolicyNoticeEmbed)
 import _mod17 from "module_17" /* 17 */;
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;

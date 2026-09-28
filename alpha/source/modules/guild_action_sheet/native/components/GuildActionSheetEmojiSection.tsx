@@ -1,10 +1,10 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 13522
+// Function ID: 13523
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 5771, 1182, 1372, 1074, 21, 4836, 576, 504, 1479, 4531, 4488, 6583, 6603, 4800, 8614, 4685, 13524, 1115, 5435, 1177, 9775, 4801, 4802, 4527, 5899, 6552, 6553, 1397, 2]
+// Dependencies: [32, 19, 17, 5771, 1182, 1372, 1074, 21, 4836, 576, 504, 1479, 4531, 4488, 6583, 6603, 4800, 8614, 4685, 13523, 1115, 5435, 1177, 9775, 4801, 4802, 4527, 5899, 6552, 6553, 1397, 2]
 // Exports: default
 
-// Module 13523 (GuildActionSheetEmojiSection)
+// Module 13522 (GuildActionSheetEmojiSection)
 import nativeDefault from "native" /* 576 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4488 */;
 import ToastUtils from "ToastUtils" /* 4527 */;

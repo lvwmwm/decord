@@ -1,9 +1,9 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 14111
+// Function ID: 14112
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4480, 502, 2045, 5056, 1074, 14113, 3, 1091, 510, 4421, 4512, 7171, 6876, 573, 11247, 11171, 1981, 1983, 5584, 9398, 2]
+// Dependencies: [5, 32, 4480, 502, 2045, 5056, 1074, 14112, 3, 1091, 510, 4421, 4512, 7171, 6876, 573, 11247, 11171, 1981, 1983, 5584, 9398, 2]
 
-// Module 14112 (LocalMessageCacheManager)
+// Module 14111 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -243,7 +243,7 @@ let closure_25 = async function _rehydrateFailedMessages(arg0, value) {
   }
 };
 const MessageStates = fn(1074).MessageStates;
-const MutexUtils = fn(14113);
+const MutexUtils = fn(14112);
 let closure_10 = MutexUtils.createLock();
 let closure_11 = new LoggerDefault("LocalMessageCacheManager");
 const LocalMessageCacheManagerMessageCacheKey = "LocalMessageCacheManagerMessageCacheKey";

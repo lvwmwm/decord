@@ -1,9 +1,9 @@
-// Module ID: 17151
-// Function ID: 17152
+// Module ID: 17155
+// Function ID: 17156
 // Name: IAPManager
 // Dependencies: [6539, 2]
 
-// Module 17151 (IAPManager)
+// Module 17155 (IAPManager)
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 const prototype = function IAPManager() {

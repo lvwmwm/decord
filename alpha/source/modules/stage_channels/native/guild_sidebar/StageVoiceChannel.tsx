@@ -1,9 +1,9 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15869
+// Function ID: 15870
 // Name: StageVoiceChannel
-// Dependencies: [19, 17, 6947, 4469, 4851, 5017, 4860, 2050, 1074, 9577, 21, 1115, 4836, 576, 504, 5729, 15872, 5743, 5737, 5364, 5881, 1876, 5043, 10374, 4989, 8833, 15750, 15861, 15755, 2]
+// Dependencies: [19, 17, 6947, 4469, 4851, 5017, 4860, 2050, 1074, 9577, 21, 1115, 4836, 576, 504, 5729, 15870, 5743, 5737, 5364, 5881, 1876, 5043, 10374, 4989, 8833, 15748, 15859, 15753, 2]
 
-// Module 15871 (StageVoiceChannel)
+// Module 15869 (StageVoiceChannel)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
@@ -12,8 +12,8 @@ import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 536
 import StageMediaHooks from "StageMediaHooks" /* 5729 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5881 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
-import ChannelItemDefault from "ChannelItem" /* 15750 */;
-import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 15872 */;
+import ChannelItemDefault from "ChannelItem" /* 15748 */;
+import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 15870 */;
 import noop from "module_19" /* 19 */;
 import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 6947 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
@@ -114,12 +114,12 @@ export default noop.memo((channel) => {
     }
     obj5.enableConnectedUserLimit = hasMedia;
     obj5.voiceStates = voiceStates;
-    obj3.channelInfo = tmp12(tmp5(15861), obj5);
+    obj3.channelInfo = tmp12(tmp5(15859), obj5);
     let tmp12Result = arr3.length > 0;
     if (tmp12Result) {
       const obj6 = { style: tmp.voiceStates, children: null };
       const obj7 = { channel, collapsed, voiceStates: arr3, audienceCount: stageParticipantsCount };
-      obj6.children = tmp12(tmp5(15755), obj7);
+      obj6.children = tmp12(tmp5(15753), obj7);
       tmp12Result = tmp12(View, obj6);
     }
     obj3.children = tmp12Result;

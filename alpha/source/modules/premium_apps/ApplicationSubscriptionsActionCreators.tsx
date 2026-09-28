@@ -1,10 +1,10 @@
-// Module ID: 14058
-// Function ID: 14059
+// Module ID: 14057
+// Function ID: 14058
 // Name: ApplicationSubscriptionsActionCreators
 // Dependencies: [5, 1074, 573, 8794, 6675, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 14058 (ApplicationSubscriptionsActionCreators)
+// Module 14057 (ApplicationSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 8794 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

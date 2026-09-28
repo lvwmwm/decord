@@ -1,10 +1,10 @@
-// Module ID: 12851
-// Function ID: 12852
+// Module ID: 12850
+// Function ID: 12851
 // Name: GroupDMNitroCapCoachmark
 // Dependencies: [32, 19, 17, 11088, 2042, 21, 4836, 11086, 11093, 11089, 6806, 2029, 1115, 1177, 9491, 8122, 576, 11085, 10589, 2]
 // Exports: default
 
-// Module 12851 (GroupDMNitroCapCoachmark)
+// Module 12850 (GroupDMNitroCapCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 8122 */;

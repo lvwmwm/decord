@@ -1,10 +1,10 @@
-// Module ID: 13635
-// Function ID: 13636
+// Module ID: 13634
+// Function ID: 13635
 // Name: HelpMessage
 // Dependencies: [19, 17, 21, 4836, 576, 1092, 6028, 4787, 6034, 4792, 4832, 2]
 // Exports: default
 
-// Module 13635 (HelpMessage)
+// Module 13634 (HelpMessage)
 import nativeDefault from "native" /* 576 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;

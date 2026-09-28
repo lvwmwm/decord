@@ -1,10 +1,10 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 16767
+// Function ID: 16768
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 17, 4825, 1074, 21, 504, 15451, 1364, 8272, 15452, 5899, 5281, 1115, 12512, 576, 4800, 4525, 2111, 9691, 3263, 2]
+// Dependencies: [19, 17, 4825, 1074, 21, 504, 15449, 1364, 8272, 15450, 5899, 5281, 1115, 12512, 576, 4800, 4525, 2111, 9691, 3263, 2]
 // Exports: default
 
-// Module 16763 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 16767 (IncentivizedAccountLinkConfirmationBottomSheet)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import PromoSheet from "PromoSheet" /* 9691 */;
 import WindowLaunchIcon from "WindowLaunchIcon" /* 12512 */;
-import _modDef15451 from "module_15451" /* 15451 */;
+import _modDef15449 from "module_15449" /* 15449 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
@@ -29,7 +29,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   const items = [AccessibilityStore];
   if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
     let obj2 = { source: null, style: null };
-    const obj3 = { uri: _modDef15451 };
+    const obj3 = { uri: _modDef15449 };
     obj2.source = obj3;
     const size = { width: v150, height: v150 };
     obj2.style = size;
@@ -38,7 +38,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
     let tmp9 = jsx;
   } else {
     if (tmpResult.isAndroid()) {
-      const obj4 = { url: tmp4(15452), style: null };
+      const obj4 = { url: tmp4(15450), style: null };
       const size1 = { width: v150, height: v150 };
       obj4.style = size1;
       tmp3Result = tmp3(tmp4(8272), obj4);
@@ -47,7 +47,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
       const tmp4Result = tmp4(8272);
     } else {
       const obj5 = { source: null, resizeMode: "contain", style: null };
-      const obj6 = { uri: tmp4(15452) };
+      const obj6 = { uri: tmp4(15450) };
       obj5.source = obj6;
       const size2 = { width: v150, height: v150 };
       obj5.style = size2;

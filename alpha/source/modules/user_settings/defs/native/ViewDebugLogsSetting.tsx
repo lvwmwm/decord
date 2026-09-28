@@ -1,9 +1,9 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15114
+// Function ID: 15115
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 4800, 6620, 5039, 10385, 6618, 6570, 1115, 15117, 15119, 4795, 15122, 1364, 10424, 15123, 11006, 13389, 2021, 2]
+// Dependencies: [19, 17, 21, 4800, 6620, 5039, 10385, 6618, 6570, 1115, 15115, 15117, 4795, 15120, 1364, 10424, 15121, 11006, 13388, 2021, 2]
 
-// Module 15116 (ViewDebugLogsSetting)
+// Module 15114 (ViewDebugLogsSetting)
 import _mod17 from "module_17" /* 17 */;
 import _mod19 from "module_19" /* 19 */;
 import util from "util" /* 1115 */;
@@ -15,11 +15,11 @@ import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
 import ActionSheet from "ActionSheet" /* 6618 */;
 import ActionSheetRow from "ActionSheetRow" /* 6620 */;
 import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10385 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13389 */;
-import WrenchIcon from "WrenchIcon" /* 15117 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15119 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15122 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15123 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13388 */;
+import WrenchIcon from "WrenchIcon" /* 15115 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15117 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15120 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15121 */;
 import jsxProd from "jsxProd" /* 21 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;

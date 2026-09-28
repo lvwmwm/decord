@@ -1,10 +1,10 @@
-// Module ID: 15097
-// Function ID: 15098
+// Module ID: 15095
+// Function ID: 15096
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1074, 2098, 21, 4836, 576, 4540, 1241, 7707, 15098, 5899, 7755, 1115, 5435, 9203, 9859, 1177, 7537, 1479, 7538, 1486, 5936, 4421, 7539, 4832, 5039, 6421, 2]
+// Dependencies: [19, 17, 1074, 2098, 21, 4836, 576, 4540, 1241, 7707, 15096, 5899, 7755, 1115, 5435, 9203, 9859, 1177, 7537, 1479, 7538, 1486, 5936, 4421, 7539, 4832, 5039, 6421, 2]
 // Exports: default
 
-// Module 15097 (ChangeLogModal)
+// Module 15095 (ChangeLogModal)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
@@ -13,7 +13,7 @@ import Navigator from "Navigator" /* 6421 */;
 import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 7537 */;
 import openMediaModal from "openMediaModal" /* 7707 */;
 import common_VideoDefault from "common/Video" /* 7755 */;
-import _modDef15098 from "module_15098" /* 15098 */;
+import _modDef15096 from "module_15096" /* 15096 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -275,7 +275,7 @@ prototype["renderVideo"] = function renderVideo() {
             },
         useLocalHTML: true
       };
-      const items = [closure_7(_modDef15098, obj4), ];
+      const items = [closure_7(_modDef15096, obj4), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj5 = { style: tmp.videoOverlay, source: null };

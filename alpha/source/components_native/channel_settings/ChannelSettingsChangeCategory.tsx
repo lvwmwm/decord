@@ -1,10 +1,10 @@
-// Module ID: 16671
-// Function ID: 16672
+// Module ID: 16675
+// Function ID: 16676
 // Name: ChannelSettingsChangeCategory
 // Dependencies: [32, 718, 19, 2045, 6532, 2067, 4469, 4479, 1372, 1074, 21, 4836, 576, 4540, 6533, 11909, 4474, 5832, 5203, 1115, 4989, 5917, 5999, 8053, 5279, 4832, 504, 1485, 11105, 38, 2]
 // Exports: default
 
-// Module 16671 (ChannelSettingsChangeCategory)
+// Module 16675 (ChannelSettingsChangeCategory)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;

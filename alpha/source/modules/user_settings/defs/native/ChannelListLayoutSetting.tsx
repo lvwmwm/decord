@@ -1,10 +1,10 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15084
+// Function ID: 15085
 // Name: ChannelListLayoutSetting
 // Dependencies: [7417, 2021, 1115, 7304, 11006, 2]
 // Exports: useChannelListLayoutPredicate
 
-// Module 15086 (ChannelListLayoutSetting)
+// Module 15084 (ChannelListLayoutSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7304 */;

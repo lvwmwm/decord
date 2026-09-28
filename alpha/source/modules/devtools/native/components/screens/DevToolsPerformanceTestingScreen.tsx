@@ -1,12 +1,12 @@
-// Module ID: 15330
-// Function ID: 15331
+// Module ID: 15328
+// Function ID: 15329
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [19, 17, 21, 4836, 576, 1485, 1613, 5999, 15136, 5917, 14140, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1485, 1613, 5999, 15134, 5917, 14139, 2]
 
-// Module 15330 (DevToolsPerformanceTestingScreen)
+// Module 15328 (DevToolsPerformanceTestingScreen)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14140 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14139 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

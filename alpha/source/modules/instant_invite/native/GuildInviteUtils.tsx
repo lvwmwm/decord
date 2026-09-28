@@ -1,10 +1,10 @@
-// Module ID: 12672
-// Function ID: 12673
+// Module ID: 12545
+// Function ID: 12546
 // Name: GuildInviteUtils
-// Dependencies: [5, 19, 4467, 4754, 2108, 2067, 4469, 5750, 1372, 12673, 7155, 1074, 1241, 4800, 12674, 1981, 5829, 504, 4541, 1115, 7826, 9277, 9350, 2]
+// Dependencies: [5, 19, 4467, 4754, 2108, 2067, 4469, 5750, 1372, 12546, 7155, 1074, 1241, 4800, 12547, 1981, 5829, 504, 4541, 1115, 7826, 9277, 9350, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 12672 (GuildInviteUtils)
+// Module 12545 (GuildInviteUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
@@ -113,7 +113,7 @@ let closure_16 = async function _sendGuildInvite(arg0, value) {
     }
   }
 };
-const setSendState = fn(12673).setSendState;
+const setSendState = fn(12546).setSendState;
 const InviteSendStates = fn(7155).InviteSendStates;
 const Constants = fn(1074);
 ({ Permissions: closure_14, AnalyticEvents: closure_15 } = Constants);
@@ -124,7 +124,7 @@ export const showGuildInviteActionSheet = function showGuildInviteActionSheet(id
   AnalyticsUtilsDefault.track(constants2.OPEN_POPOUT, { type: "Invite to Guilds", source: newestAnalyticsLocation });
   const obj2 = { type: "Invite to Guilds", source: newestAnalyticsLocation };
   const obj3 = ActionSheetActionCreatorsDefault;
-  obj3.openLazy(asyncRequireImpl(12674, dependencyMap.paths), "invite-to-guilds-" + id, { recipientId: id, source: newestAnalyticsLocation });
+  obj3.openLazy(asyncRequireImpl(12547, dependencyMap.paths), "invite-to-guilds-" + id, { recipientId: id, source: newestAnalyticsLocation });
 };
 export const useServerInviteRows = function useServerInviteRows(id, query) {
   _require = id;

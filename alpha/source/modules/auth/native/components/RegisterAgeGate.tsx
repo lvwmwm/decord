@@ -1,13 +1,13 @@
-// Module ID: 15607
-// Function ID: 15608
+// Module ID: 15605
+// Function ID: 15606
 // Name: RegisterAgeGate
-// Dependencies: [32, 19, 17, 6012, 15572, 15573, 1074, 21, 4836, 576, 4421, 15608, 4540, 1485, 15569, 504, 6376, 15588, 15571, 38, 6391, 1115, 6025, 8370, 15609, 5281, 6360, 8997, 4685, 2]
+// Dependencies: [32, 19, 17, 6012, 15570, 15571, 1074, 21, 4836, 576, 4421, 15606, 4540, 1485, 15567, 504, 6376, 15586, 15569, 38, 6391, 1115, 6025, 8370, 15607, 5281, 6360, 8997, 4685, 2]
 // Exports: default
 
-// Module 15607 (RegisterAgeGate)
+// Module 15605 (RegisterAgeGate)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15571 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15569 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ConsentStore from "ConsentStore" /* 6012 */;
@@ -17,9 +17,9 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const RegistrationUIStore = fn(15572);
+const RegistrationUIStore = fn(15570);
 ({ updateRegistrationOptions: closure_7, useRegistrationUIStore: closure_8 } = RegistrationUIStore);
-const RegistrationConstants = fn(15573);
+const RegistrationConstants = fn(15571);
 ({ RegisterTransitionSteps: closure_9, RegistrationTransitionActionTypes: c10 } = RegistrationConstants);
 const AuthStates = fn(1074).AuthStates;
 const jsxProd = fn(21);

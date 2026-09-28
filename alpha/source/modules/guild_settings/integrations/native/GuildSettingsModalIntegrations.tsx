@@ -1,10 +1,10 @@
-// Module ID: 17357
-// Function ID: 17358
+// Module ID: 17361
+// Function ID: 17362
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 17, 4469, 9049, 1074, 21, 4836, 576, 4531, 1485, 504, 4767, 17290, 8053, 5279, 5999, 5917, 1115, 16549, 16657, 14689, 5595, 1397, 4685, 6461, 2]
+// Dependencies: [19, 17, 4469, 9049, 1074, 21, 4836, 576, 4531, 1485, 504, 4767, 17294, 8053, 5279, 5999, 5917, 1115, 16553, 16661, 14506, 5595, 1397, 4685, 6461, 2]
 // Exports: default
 
-// Module 17357 (GuildSettingsModalIntegrations)
+// Module 17361 (GuildSettingsModalIntegrations)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

@@ -1,9 +1,9 @@
-// Module ID: 13350
-// Function ID: 13351
+// Module ID: 13349
+// Function ID: 13350
 // Name: RTCMediaSinkWantsManager
 // Dependencies: [32, 502, 1074, 4861, 1091, 5172, 1364, 4894, 4905, 2040, 8885, 11, 12, 558, 4891, 2]
 
-// Module 13350 (RTCMediaSinkWantsManager)
+// Module 13349 (RTCMediaSinkWantsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;

@@ -1,10 +1,10 @@
-// Module ID: 17598
-// Function ID: 17599
+// Module ID: 17602
+// Function ID: 17603
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4462, 17553, 14752, 1074, 2042, 21, 4836, 576, 1485, 17565, 17561, 6671, 9271, 4832, 5281, 1177, 17599, 6544, 17593, 17591, 17568, 14759, 17548, 11705, 17600, 1115, 14774, 4527, 5936, 6795, 9083, 2029, 17601, 1981, 10088, 10089, 9084, 2]
+// Dependencies: [32, 19, 17, 4462, 17557, 14750, 1074, 2042, 21, 4836, 576, 1485, 17569, 17565, 6671, 9271, 4832, 5281, 1177, 17603, 6544, 17597, 17595, 17572, 14757, 17552, 11705, 17604, 1115, 14772, 4527, 5936, 6795, 9083, 2029, 17605, 1981, 10088, 10089, 9084, 2]
 // Exports: default
 
-// Module 17598 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 17602 (GuildSettingsRoleSubscriptionTierEdit)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useNavigation from "useNavigation" /* 1485 */;
@@ -17,19 +17,19 @@ import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestriction
 import FormHeaderDefault from "FormHeader" /* 9271 */;
 import DismissibleActionSheet from "DismissibleActionSheet" /* 10089 */;
 import ErrorBlockDefault from "ErrorBlock" /* 11705 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14759 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17548 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17561 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 17565 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 17568 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 17591 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 17593 */;
-import _modDef17599 from "module_17599" /* 17599 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 17600 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14757 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17552 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17565 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 17569 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 17572 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 17595 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 17597 */;
+import _modDef17603 from "module_17603" /* 17603 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 17604 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4462 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17553 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 17557 */;
 
 const util = Spacer(1115);
 require = fn;
@@ -50,7 +50,7 @@ function ArchiveOrDeleteTierSection() {
   const tmp5 = value2;
   const tmp6 = __initData;
   const tmp8 = timestampProducer;
-  obj7.icon = closure_1_14(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef17599 });
+  obj7.icon = closure_1_14(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef17603 });
   obj7.onPress = handleArchiveOrDelete;
   let tmp9 = !allowSelfRemoveMonetization;
   if (allowSelfRemoveMonetization) {
@@ -94,7 +94,7 @@ function TabContent(selectedTab) {
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
 const FetchState = fn(4462).FetchState;
-const GuildRoleSubscriptionsTierScenes = fn(14752).GuildRoleSubscriptionsTierScenes;
+const GuildRoleSubscriptionsTierScenes = fn(14750).GuildRoleSubscriptionsTierScenes;
 const GuildSettingsSections = fn(1074).GuildSettingsSections;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);

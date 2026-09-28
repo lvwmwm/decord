@@ -1,10 +1,10 @@
-// Module ID: 12685
-// Function ID: 12686
+// Module ID: 12561
+// Function ID: 12562
 // Name: AddFriendNicknameModal
 // Dependencies: [5, 32, 19, 17, 4479, 1372, 21, 4836, 576, 10388, 504, 1115, 5039, 9195, 5890, 5300, 4832, 6031, 4678, 2]
 // Exports: default
 
-// Module 12685 (AddFriendNicknameModal)
+// Module 12561 (AddFriendNicknameModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;

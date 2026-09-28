@@ -1,12 +1,12 @@
-// Module ID: 17237
-// Function ID: 17238
+// Module ID: 17241
+// Function ID: 17242
 // Name: ProximitySensorManager
-// Dependencies: [17, 2044, 4858, 4859, 9098, 1364, 17238, 9099, 6539, 2]
+// Dependencies: [17, 2044, 4858, 4859, 9098, 1364, 17242, 9099, 6539, 2]
 
-// Module 17237 (ProximitySensorManager)
+// Module 17241 (ProximitySensorManager)
 import PlatformUtils2 from "PlatformUtils" /* 1364 */;
 import VoiceCallTypes from "VoiceCallTypes" /* 9099 */;
-import NativeProximitySensorManagerModuleDefault from "NativeProximitySensorManagerModule" /* 17238 */;
+import NativeProximitySensorManagerModuleDefault from "NativeProximitySensorManagerModule" /* 17242 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4859 */;

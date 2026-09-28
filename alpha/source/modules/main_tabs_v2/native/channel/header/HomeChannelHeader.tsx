@@ -1,9 +1,9 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12842
+// Function ID: 12843
 // Name: HomeChannelHeader
 // Dependencies: [19, 17, 21, 4836, 576, 1177, 12293, 4832, 1115, 2]
 
-// Module 12843 (HomeChannelHeader)
+// Module 12842 (HomeChannelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;

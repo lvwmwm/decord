@@ -1,10 +1,10 @@
-// Module ID: 15456
-// Function ID: 15457
+// Module ID: 15454
+// Function ID: 15455
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1372, 1076, 1074, 5756, 7628, 21, 4836, 576, 11620, 4832, 1115, 504, 8316, 10682, 6961, 6603, 6554, 4800, 10564, 1981, 1241, 10678, 5759, 5039, 7624, 10553, 7363, 8236, 7358, 15457, 1485, 2]
+// Dependencies: [19, 17, 1372, 1076, 1074, 5756, 7628, 21, 4836, 576, 11620, 4832, 1115, 504, 8316, 10682, 6961, 6603, 6554, 4800, 10564, 1981, 1241, 10678, 5759, 5039, 7624, 10553, 7363, 8236, 7358, 15455, 1485, 2]
 // Exports: default
 
-// Module 15456 (useCollectiblesShopHeader)
+// Module 15454 (useCollectiblesShopHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;

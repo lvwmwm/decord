@@ -1,9 +1,9 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17422
+// Function ID: 17423
 // Name: GuildSettingsRoleItem
 // Dependencies: [5, 19, 17, 1074, 21, 4836, 576, 4832, 5310, 6607, 5204, 1115, 11068, 5832, 5300, 7363, 4790, 6626, 6624, 5293, 1370, 1092, 9033, 5917, 5403, 1177, 9762, 5409, 2]
 
-// Module 17418 (GuildSettingsRoleItem)
+// Module 17422 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 576 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 5832 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

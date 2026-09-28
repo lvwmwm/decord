@@ -1,10 +1,10 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 15994
+// Function ID: 15995
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 4656, 5751, 504, 9225, 15997, 5853, 5752, 1115, 2]
+// Dependencies: [19, 4656, 5751, 504, 9225, 15995, 5853, 5752, 1115, 2]
 // Exports: default
 
-// Module 15996 (useGuildsBarCreatePendingFolderNode)
+// Module 15994 (useGuildsBarCreatePendingFolderNode)
 import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5853 */;
 import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 9225 */;
 import noop from "module_19" /* 19 */;
@@ -29,7 +29,7 @@ export default function useGuildsBarCreatePendingFolderNode() {
     }
   }, items2);
   if (arr2.length > 0) {
-    const obj3 = { folderId: tmp2(15997).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: null, expanded: null, guildIds: null };
+    const obj3 = { folderId: tmp2(15995).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: null, expanded: null, guildIds: null };
     const intl = tmp2(1115).intl;
     obj3.folderName = intl.string(tmp2(1115).t["scsU+l"]);
     obj3.expanded = stateFromStores1;

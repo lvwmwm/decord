@@ -1,10 +1,10 @@
-// Module ID: 12738
-// Function ID: 12739
+// Module ID: 12737
+// Function ID: 12738
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1074, 1085, 21, 8666, 8303, 10475, 1364, 4501, 10282, 10269, 4800, 7621, 12739, 2]
+// Dependencies: [19, 1074, 1085, 21, 8666, 8303, 10475, 1364, 4501, 10282, 10269, 4800, 7621, 12738, 2]
 // Exports: default
 
-// Module 12738 (HeadlessCollectiblesPurchaseFlow)
+// Module 12737 (HeadlessCollectiblesPurchaseFlow)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7621 */;
@@ -12,7 +12,7 @@ import useProductPurchaseState from "useProductPurchaseState" /* 8303 */;
 import ACOMExperiments from "ACOMExperiments" /* 8666 */;
 import NativePaymentContext from "NativePaymentContext" /* 10282 */;
 import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 10475 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 12739 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 12738 */;
 import noop from "module_19" /* 19 */;
 
 const NativeCheckoutStoreProviderDefault = tmp3(10269);

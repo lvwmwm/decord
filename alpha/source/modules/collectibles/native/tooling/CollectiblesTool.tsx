@@ -1,10 +1,10 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15319
+// Function ID: 15320
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10163, 1372, 6962, 6977, 7648, 1074, 1374, 21, 4836, 576, 8226, 4832, 5282, 10976, 563, 10198, 15322, 1177, 10542, 2]
+// Dependencies: [32, 19, 17, 10163, 1372, 6962, 6977, 7648, 1074, 1374, 21, 4836, 576, 8226, 4832, 5282, 10976, 563, 10198, 15320, 1177, 10542, 2]
 // Exports: default
 
-// Module 15321 (CollectiblesTool)
+// Module 15319 (CollectiblesTool)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import BaseTextButton from "BaseTextButton" /* 5282 */;

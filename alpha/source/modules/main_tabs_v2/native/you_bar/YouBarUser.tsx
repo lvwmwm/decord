@@ -1,9 +1,9 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16022
+// Function ID: 16023
 // Name: YouBarUser
-// Dependencies: [19, 17, 1372, 14627, 21, 4836, 576, 504, 4566, 5280, 4678, 16027, 16028, 16029, 2]
+// Dependencies: [19, 17, 1372, 14627, 21, 4836, 576, 504, 4566, 5280, 4678, 16023, 16024, 16025, 2]
 
-// Module 16026 (YouBarUser)
+// Module 16022 (YouBarUser)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5280 */;
 import noop from "module_19" /* 19 */;
@@ -58,12 +58,12 @@ export default noop.memo(function YouBarUser(isQuestRendered) {
     if (null != name) {
       let obj3 = { style: tmp.youButton, children: null };
       const obj5 = { isLargeAvatar: tmp5, onPress: isQuestRendered.onAvatarPress };
-      const items2 = [closure_9(tmp9(16028), obj5), ];
+      const items2 = [closure_9(tmp9(16024), obj5), ];
       const obj6 = { style: null, children: null };
       const items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       obj6.style = items3;
       const obj7 = { userId: stateFromStores.id, username: name };
-      obj6.children = closure_9(tmp9(16029), obj7);
+      obj6.children = closure_9(tmp9(16025), obj7);
       items2[1] = closure_9(tmp9(4566).View, obj6);
       obj3.children = items2;
     }
@@ -72,7 +72,7 @@ export default noop.memo(function YouBarUser(isQuestRendered) {
   const obj8 = { style: null, children: null };
   const items4 = [tmp.youButton];
   obj8.style = items4;
-  const items5 = [closure_9(sharedValue(16027), { isLarge: !isQuestRendered }), ];
+  const items5 = [closure_9(sharedValue(16023), { isLarge: !isQuestRendered }), ];
   const obj9 = { style: null, children: closure_9(View, { style: tmp.placeholder }) };
   const items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj9.style = items6;

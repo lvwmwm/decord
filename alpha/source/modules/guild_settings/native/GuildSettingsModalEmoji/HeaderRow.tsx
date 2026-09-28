@@ -1,17 +1,17 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17369
+// Function ID: 17370
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 17359, 1074, 1375, 21, 4836, 576, 8952, 9797, 1241, 1115, 1255, 5450, 5281, 4832, 504, 2]
+// Dependencies: [5, 32, 19, 17, 17363, 1074, 1375, 21, 4836, 576, 8952, 9797, 1241, 1115, 1255, 5450, 5281, 4832, 504, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 17365 (HeaderRow)
+// Module 17369 (HeaderRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17359 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 17363 */;
 
 require = fn;
 function HeaderRow(guild) {

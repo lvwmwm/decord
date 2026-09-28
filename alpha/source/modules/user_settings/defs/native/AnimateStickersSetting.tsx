@@ -1,9 +1,9 @@
-// Module ID: 14970
-// Function ID: 14971
+// Module ID: 14968
+// Function ID: 14969
 // Name: AnimateStickersSetting
 // Dependencies: [19, 7417, 2024, 2021, 1115, 11006, 2]
 
-// Module 14970 (AnimateStickersSetting)
+// Module 14968 (AnimateStickersSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import noop from "module_19" /* 19 */;

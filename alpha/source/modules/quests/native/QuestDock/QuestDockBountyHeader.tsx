@@ -1,9 +1,9 @@
-// Module ID: 14742
-// Function ID: 14743
+// Module ID: 14740
+// Function ID: 14741
 // Name: QuestDockBountyHeader
-// Dependencies: [19, 17, 5756, 14624, 21, 576, 4836, 14631, 14625, 4566, 5280, 7715, 14736, 1364, 14735, 14621, 14642, 5759, 7141, 14723, 14743, 6494, 5899, 4832, 5435, 1115, 2]
+// Dependencies: [19, 17, 5756, 14624, 21, 576, 4836, 14631, 14625, 4566, 5280, 7715, 14734, 1364, 14733, 14621, 14642, 5759, 7141, 14721, 14741, 6494, 5899, 4832, 5435, 1115, 2]
 
-// Module 14742 (QuestDockBountyHeader)
+// Module 14740 (QuestDockBountyHeader)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5280 */;
 import QuestTypes from "QuestTypes" /* 5759 */;

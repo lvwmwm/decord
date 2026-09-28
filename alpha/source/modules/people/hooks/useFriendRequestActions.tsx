@@ -1,10 +1,10 @@
-// Module ID: 12691
-// Function ID: 12692
+// Module ID: 12690
+// Function ID: 12691
 // Name: useFriendRequestActions
 // Dependencies: [19, 10330, 2]
 // Exports: useFriendRequestActions
 
-// Module 12691 (useFriendRequestActions)
+// Module 12690 (useFriendRequestActions)
 import PeopleUtilsDefault from "PeopleUtils" /* 10330 */;
 import noop from "module_19" /* 19 */;
 

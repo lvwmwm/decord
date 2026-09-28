@@ -1,10 +1,10 @@
-// Module ID: 12960
-// Function ID: 12961
+// Module ID: 12959
+// Function ID: 12960
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 6870, 10128, 12961, 504, 10160, 2]
+// Dependencies: [32, 19, 6870, 10128, 12960, 504, 10160, 2]
 // Exports: usePromotionMarketingComponent
 
-// Module 12960 (usePromotionMarketingComponent)
+// Module 12959 (usePromotionMarketingComponent)
 import constants from "constants" /* 10160 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

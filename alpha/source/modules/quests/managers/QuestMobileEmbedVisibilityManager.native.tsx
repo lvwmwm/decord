@@ -1,9 +1,9 @@
-// Module ID: 17639
-// Function ID: 17640
+// Module ID: 17643
+// Function ID: 17644
 // Name: QuestMobileEmbedVisibilityManager
 // Dependencies: [32, 4521, 4852, 7301, 5044, 2049, 2045, 2099, 11040, 1980, 7116, 7146, 1074, 7122, 6539, 1439, 4821, 5759, 5763, 10712, 9549, 4692, 1094, 1095, 5205, 7141, 4693, 2]
 
-// Module 17639 (QuestMobileEmbedVisibilityManager)
+// Module 17643 (QuestMobileEmbedVisibilityManager)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
 import privDefault from "priv" /* 1439 */;

@@ -1,13 +1,13 @@
-// Module ID: 15056
-// Function ID: 15057
+// Module ID: 15054
+// Function ID: 15055
 // Name: FriendOnlineNotificationSetting
-// Dependencies: [7417, 11006, 1115, 2021, 15057, 2]
+// Dependencies: [7417, 11006, 1115, 2021, 15055, 2]
 
-// Module 15056 (FriendOnlineNotificationSetting)
+// Module 15054 (FriendOnlineNotificationSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
-import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15057 */;
+import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15055 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

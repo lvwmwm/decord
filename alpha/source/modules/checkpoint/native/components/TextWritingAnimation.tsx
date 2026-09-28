@@ -1,10 +1,10 @@
-// Module ID: 15263
-// Function ID: 15264
+// Module ID: 15261
+// Function ID: 15262
 // Name: TextWritingAnimation
-// Dependencies: [32, 19, 17, 4825, 21, 4836, 504, 15264, 2]
+// Dependencies: [32, 19, 17, 4825, 21, 4836, 504, 15262, 2]
 // Exports: default
 
-// Module 15263 (TextWritingAnimation)
+// Module 15261 (TextWritingAnimation)
 import _slicedToArray from "module_32" /* 32 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

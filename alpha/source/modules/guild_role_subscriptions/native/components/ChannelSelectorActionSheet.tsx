@@ -1,17 +1,17 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 17583
+// Function ID: 17584
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 2045, 6532, 4469, 1074, 5018, 21, 4836, 576, 5836, 4989, 4800, 15750, 5899, 17516, 504, 6618, 4832, 1115, 6471, 5435, 5039, 9010, 1981, 9013, 9015, 1177, 13148, 6045, 2]
+// Dependencies: [32, 19, 17, 2045, 6532, 4469, 1074, 5018, 21, 4836, 576, 5836, 4989, 4800, 15748, 5899, 17520, 504, 6618, 4832, 1115, 6471, 5435, 5039, 9010, 1981, 9013, 9015, 1177, 13147, 6045, 2]
 // Exports: default
 
-// Module 17579 (ChannelSelectorActionSheet)
+// Module 17583 (ChannelSelectorActionSheet)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import useCreateChannelSubmit from "useCreateChannelSubmit" /* 9013 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9015 */;
-import _modDef13148 from "module_13148" /* 13148 */;
+import _modDef13147 from "module_13147" /* 13147 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -32,9 +32,9 @@ function ChannelRow(channel) {
     onChannelSelected(channel);
   }, items);
   const obj = { style: tmp.channelRow, onPress: callback, accessible: true, accessibilityLabel: tmp4, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
-  const children = [closure_11(onChannelSelected(15750), obj), ];
+  const children = [closure_11(onChannelSelected(15748), obj), ];
   if (selected) {
-    const obj2 = { style: tmp.selectedIcon, source: tmp2(17516) };
+    const obj2 = { style: tmp.selectedIcon, source: tmp2(17520) };
     selected = tmp8(tmp2(5899), obj2);
     const tmp2Result = tmp2(5899);
   }
@@ -153,7 +153,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     if (tmp.createChannelLabel.color != null) {
       str1 = str.toString();
     }
-    const obj7 = { color: str1, source: _modDef13148 };
+    const obj7 = { color: str1, source: _modDef13147 };
     const items3 = [tmp8(tmp5(1177).Icon, obj7), ];
     const obj8 = { style: tmp.createChannelLabel, variant: "text-md/medium", color: "text-link", children: null };
     const intl3 = tmp5(1115).intl;

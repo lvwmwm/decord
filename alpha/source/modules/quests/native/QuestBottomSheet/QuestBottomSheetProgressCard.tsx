@@ -1,10 +1,10 @@
-// Module ID: 14691
-// Function ID: 14692
+// Module ID: 14689
+// Function ID: 14690
 // Name: QuestBottomSheetProgressCard
-// Dependencies: [19, 17, 1372, 21, 4836, 576, 10681, 10719, 504, 10694, 7135, 1115, 4832, 5764, 5919, 14662, 10689, 14654, 10678, 14649, 5435, 7755, 5293, 5899, 14692, 7722, 2]
+// Dependencies: [19, 17, 1372, 21, 4836, 576, 10681, 10719, 504, 10694, 7135, 1115, 4832, 5764, 5919, 14662, 10689, 14654, 10678, 14649, 5435, 7755, 5293, 5899, 14690, 7722, 2]
 // Exports: QuestBottomSheetProgressCardInGameTask, QuestBottomSheetProgressCardPlayStreamTask, QuestBottomSheetProgressCardWatchTask
 
-// Module 14691 (QuestBottomSheetProgressCard)
+// Module 14689 (QuestBottomSheetProgressCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
@@ -15,7 +15,7 @@ import hooks_QuestHooks from "hooks/QuestHooks" /* 10681 */;
 import AssetUtils from "AssetUtils" /* 10689 */;
 import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 14649 */;
 import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 14662 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 14692 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 14690 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

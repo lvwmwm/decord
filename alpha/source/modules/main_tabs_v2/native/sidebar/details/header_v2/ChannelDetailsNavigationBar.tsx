@@ -1,9 +1,9 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 16555
+// Function ID: 16556
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4470, 4471, 2045, 5017, 7301, 10377, 1074, 7302, 21, 4836, 11859, 576, 4531, 504, 1485, 7363, 1115, 9614, 7391, 11782, 11841, 5046, 6473, 10374, 8085, 6799, 16552, 4540, 4566, 4837, 16436, 4840, 11107, 5435, 5940, 2]
+// Dependencies: [19, 17, 4470, 4471, 2045, 5017, 7301, 10377, 1074, 7302, 21, 4836, 11859, 576, 4531, 504, 1485, 7363, 1115, 9614, 7391, 11782, 11841, 5046, 6473, 10374, 8085, 6799, 16556, 4540, 4566, 4837, 16440, 4840, 11107, 5435, 5940, 2]
 
-// Module 16551 (ChannelDetailsNavigationBar)
+// Module 16555 (ChannelDetailsNavigationBar)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;
@@ -268,7 +268,7 @@ let closure_24 = noop.forwardRef((cleanUp, ref) => {
   fn.__workletHash = 1270940013897;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = { style: null, children: closure_15(cleanUp(16436), { ref, channelId: channel.id, guildId: channel.guild_id, showBackButton: true }) };
+  let obj3 = { style: null, children: closure_15(cleanUp(16440), { ref, channelId: channel.id, guildId: channel.guild_id, showBackButton: true }) };
   const items = [tmp.searchHeader, animatedStyle];
   obj3.style = items;
   return closure_15(cleanUp(4566).View, obj3);

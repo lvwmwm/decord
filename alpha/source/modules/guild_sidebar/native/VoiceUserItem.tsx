@@ -1,10 +1,10 @@
-// Module ID: 15757
-// Function ID: 15758
+// Module ID: 15755
+// Function ID: 15756
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1074, 21, 1177, 9578, 4836, 576, 9580, 9190, 9191, 9193, 1241, 1397, 15758, 9138, 9140, 9134, 9136, 9569, 5340, 9258, 9204, 2]
+// Dependencies: [19, 17, 1074, 21, 1177, 9578, 4836, 576, 9580, 9190, 9191, 9193, 1241, 1397, 15756, 9138, 9140, 9134, 9136, 9569, 5340, 9258, 9204, 2]
 // Exports: getVoiceUserHeight
 
-// Module 15757 (VoiceUserItem)
+// Module 15755 (VoiceUserItem)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;

@@ -1,13 +1,13 @@
-// Module ID: 14865
-// Function ID: 14866
+// Module ID: 14863
+// Function ID: 14864
 // Name: DmsMessagePreviewsSetting
-// Dependencies: [19, 7417, 14866, 2021, 1115, 7304, 11006, 2]
+// Dependencies: [19, 7417, 14864, 2021, 1115, 7304, 11006, 2]
 
-// Module 14865 (DmsMessagePreviewsSetting)
+// Module 14863 (DmsMessagePreviewsSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7304 */;
-import useMessagePreviews from "useMessagePreviews" /* 14866 */;
+import useMessagePreviews from "useMessagePreviews" /* 14864 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,9 +1,9 @@
-// Module ID: 12616
-// Function ID: 12617
+// Module ID: 12634
+// Function ID: 12635
 // Name: UserProfileContent
-// Dependencies: [32, 19, 17, 7637, 8239, 2067, 4479, 1372, 7605, 7035, 7628, 6629, 1074, 6572, 2042, 21, 7687, 504, 4800, 10611, 1981, 10578, 10574, 7635, 6583, 9195, 4678, 7363, 12617, 1115, 12117, 12618, 4771, 7688, 4988, 6610, 4527, 10614, 9226, 12552, 5281, 9713, 576, 8761, 12620, 12621, 8127, 12632, 7676, 7689, 1613, 12619, 12638, 12639, 6729, 10612, 7614, 10653, 7642, 12640, 7673, 7684, 8238, 12641, 12458, 12459, 12622, 12642, 12643, 12644, 12645, 12646, 12124, 12647, 12554, 12652, 10777, 6606, 12604, 12653, 12607, 12658, 12664, 9083, 7702, 7690, 12670, 4566, 12671, 12689, 12690, 12695, 12696, 6577, 12111, 12113, 12701, 2]
+// Dependencies: [32, 19, 17, 7637, 8239, 2067, 4479, 1372, 7605, 7035, 7628, 6629, 1074, 6572, 2042, 21, 7687, 504, 4800, 10611, 1981, 10578, 10574, 7635, 6583, 9195, 4678, 7363, 12635, 1115, 12117, 12636, 4771, 7688, 4988, 6610, 4527, 10614, 9226, 12570, 5281, 9713, 576, 8761, 12638, 12639, 8127, 12650, 7676, 7689, 1613, 12637, 12656, 12657, 6729, 10612, 7614, 10653, 7642, 12658, 7673, 7684, 8238, 12659, 12458, 12459, 12640, 12660, 12661, 12662, 12663, 12664, 12124, 12665, 12572, 12670, 10777, 6606, 12622, 12671, 12625, 12676, 12681, 9083, 7702, 7690, 12687, 4566, 12544, 12688, 12689, 12694, 12695, 6577, 12111, 12113, 12700, 2]
 
-// Module 12616 (UserProfileContent)
+// Module 12634 (UserProfileContent)
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
@@ -17,15 +17,15 @@ import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 91
 import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10777 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12117 */;
 import ProvisionalAccountExplainer from "ProvisionalAccountExplainer" /* 12124 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 12554 */;
-import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 12632 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 12640 */;
-import UserProfilePrivateInfoBannerDefault from "UserProfilePrivateInfoBanner" /* 12646 */;
-import UserProfileDismissibleUpsellsDefault from "UserProfileDismissibleUpsells" /* 12647 */;
-import UserProfileConnections from "UserProfileConnections" /* 12653 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12658 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12664 */;
-import UserProfileIncomingFriendRequestDefault from "UserProfileIncomingFriendRequest" /* 12690 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 12572 */;
+import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 12650 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 12658 */;
+import UserProfilePrivateInfoBannerDefault from "UserProfilePrivateInfoBanner" /* 12664 */;
+import UserProfileDismissibleUpsellsDefault from "UserProfileDismissibleUpsells" /* 12665 */;
+import UserProfileConnections from "UserProfileConnections" /* 12671 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12676 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12681 */;
+import UserProfileIncomingFriendRequestDefault from "UserProfileIncomingFriendRequest" /* 12689 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7637 */;
@@ -121,7 +121,7 @@ function RemoveGameFriendIconButton(user) {
   const channelId = user.channelId;
   const items = [channelId, guildId, user];
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12618, dependencyMap.paths), "UserProfileGameFriendActionSheet", { user, guildId, channelId }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12636, dependencyMap.paths), "UserProfileGameFriendActionSheet", { user, guildId, channelId }, "stack");
   }, items);
   const obj = { size: "sm", variant: "secondary-overlay", icon: closure_20(user(channelId[32]).UserPlatformIcon, { size: "sm", color: "white" }), accessibilityLabel: null, onPress: null };
   const intl = user(channelId[29]).intl;
@@ -218,7 +218,7 @@ function EditSection(guildId) {
   const obj3 = { style: tmp3.primaryButtons, maxWidth: ACTION_SHEET_MAX_WIDTH, primaryButton: null, secondaryButton: null };
   const obj2 = guildId(504);
   const obj4 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
-  const tmp7 = trackUserProfileAction(12552);
+  const tmp7 = trackUserProfileAction(12570);
   obj4.icon = closure_20(guildId(9713).PencilIcon, { size: "sm", color: trackUserProfileAction(576).colors.WHITE });
   if (null != stateFromStores) {
     const intl2 = tmp4(1115).intl;
@@ -261,11 +261,11 @@ function UserProfileWidgetsBoardContainer(isCurrentUser) {
   const obj = { style: tmp3.profileContent, children: null };
   let tmp6 = isCurrentUser;
   if (isCurrentUser) {
-    tmp6 = closure_1_20(tmp(12620), {});
+    tmp6 = closure_1_20(tmp(12638), {});
   }
   const items1 = [tmp6, , ];
   if (isCurrentUser) {
-    isCurrentUser = closure_1_20(tmp(12621), {});
+    isCurrentUser = closure_1_20(tmp(12639), {});
   }
   items1[1] = isCurrentUser;
   items1[2] = closure_1_20(UserProfileWidgetsBoardDefault, { userId, isVisible, cardStyle: items });
@@ -554,7 +554,7 @@ export default noop.memo(function UserProfileContent(user) {
         let tmp18Result = userProfileGameFriendApplicationIds.length > 0;
         if (tmp18Result) {
           const obj7 = { userId: tmp.id, applicationIds: tmp22 };
-          tmp18Result = tmp18(tmp19(12652), obj7);
+          tmp18Result = tmp18(tmp19(12670), obj7);
         }
         items2[4] = tmp18Result;
         const obj9 = { userId: tmp.id, displayProfile, pendingBio: null };
@@ -579,7 +579,7 @@ export default noop.memo(function UserProfileContent(user) {
           const obj11 = { user: tmp, currentUser: tmp35, guildId: null, channelId: null, showUserProfile: null };
           ({ guild_id: obj8.guildId, id: obj8.channelId } = tmp28);
           obj11.showUserProfile = showUserProfileActionSheet;
-          tmp18Result5 = tmp18(tmp19(12604), obj11);
+          tmp18Result5 = tmp18(tmp19(12622), obj11);
         }
         items2[7] = tmp18Result5;
         const obj12 = { userId: tmp.id };
@@ -589,7 +589,7 @@ export default noop.memo(function UserProfileContent(user) {
         let tmp18Result6 = !tmp25;
         if (!isPreviewingChanges) {
           const obj25 = { userId: tmp.id, onBack: showUserProfileActionSheet };
-          tmp18Result6 = tmp18(tmp19(12607), obj25);
+          tmp18Result6 = tmp18(tmp19(12625), obj25);
         }
         items2[10] = tmp18Result6;
         obj3.children = items2;

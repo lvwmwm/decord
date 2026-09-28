@@ -1,10 +1,10 @@
-// Module ID: 15647
-// Function ID: 15648
+// Module ID: 15645
+// Function ID: 15646
 // Name: YouBarStackNavigator
-// Dependencies: [19, 17, 2099, 4655, 10549, 21, 7339, 15648, 16042, 16092, 504, 16166, 7800, 6421, 6577, 2]
+// Dependencies: [19, 17, 2099, 4655, 10549, 21, 7339, 15646, 16038, 16088, 504, 16162, 7800, 6421, 6577, 2]
 
-// Module 15647 (YouBarStackNavigator)
-import notifications_Notifications from "notifications/Notifications" /* 16042 */;
+// Module 15645 (YouBarStackNavigator)
+import notifications_Notifications from "notifications/Notifications" /* 16038 */;
 import noop from "module_19" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;

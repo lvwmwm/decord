@@ -1,10 +1,10 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12877
+// Function ID: 12878
 // Name: useCheckoutPlanPriceString
 // Dependencies: [19, 6844, 1364, 6829, 2]
 // Exports: useCheckoutPlan, useCheckoutPlanDiscountPrices, useCheckoutPlanPriceString
 
-// Module 12878 (useCheckoutPlanPriceString)
+// Module 12877 (useCheckoutPlanPriceString)
 import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6829 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 15722
-// Function ID: 15723
+// Module ID: 15720
+// Function ID: 15721
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2112, 1372, 14843, 1074, 21, 4836, 576, 1177, 8276, 504, 6729, 8946, 9071, 1241, 9080, 1397, 9070, 14844, 5403, 4832, 1882, 1115, 2]
+// Dependencies: [19, 17, 2112, 1372, 14841, 1074, 21, 4836, 576, 1177, 8276, 504, 6729, 8946, 9071, 1241, 9080, 1397, 9070, 14842, 5403, 4832, 1882, 1115, 2]
 
-// Module 15722 (HappeningNowCardEvent)
+// Module 15720 (HappeningNowCardEvent)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9080 */;
@@ -14,7 +14,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const HappeningNowConstants = fn(14843);
+const HappeningNowConstants = fn(14841);
 const HAPPENING_NOW_CONTENT_HEIGHT = HappeningNowConstants.HAPPENING_NOW_CONTENT_HEIGHT;
 ({ HappeningNowCardTrackingType: closure_9, HAPPENING_NOW_CARD_HEIGHT: c10, HAPPENING_NOW_EVENT_BANNER_WIDTH } = HappeningNowConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;

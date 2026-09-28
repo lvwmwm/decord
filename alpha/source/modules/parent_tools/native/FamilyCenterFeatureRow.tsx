@@ -1,10 +1,10 @@
-// Module ID: 14422
-// Function ID: 14423
+// Module ID: 14421
+// Function ID: 14422
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 4836, 576, 11398, 1115, 2487, 14423, 14424, 11865, 6389, 9316, 14419, 5279, 4832, 5999, 5917, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 11398, 1115, 2487, 14422, 14423, 11865, 6389, 9316, 14418, 5279, 4832, 5999, 5917, 2]
 // Exports: default
 
-// Module 14422 (FamilyCenterFeatureRow)
+// Module 14421 (FamilyCenterFeatureRow)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
@@ -16,9 +16,9 @@ import EyeIcon from "EyeIcon" /* 6389 */;
 import _modDef9316 from "module_9316" /* 9316 */;
 import useAgeSpecificText from "useAgeSpecificText" /* 11398 */;
 import _modDef11865 from "module_11865" /* 11865 */;
-import QrCodeIcon from "QrCodeIcon" /* 14419 */;
-import _modDef14423 from "module_14423" /* 14423 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 14424 */;
+import QrCodeIcon from "QrCodeIcon" /* 14418 */;
+import _modDef14422 from "module_14422" /* 14422 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 14423 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -48,7 +48,7 @@ export default function FamilyCenterFeatureRows() {
   const intl6 = util.intl;
   const obj4 = { icon: null, IconComponent: null, header: null, description: null };
   const ageSpecificText2 = obj3.useAgeSpecificText(intl5.string(_modDef2487["+pi4Yt"]), intl6.string(_modDef2487["1xPTwE"]));
-  obj4.icon = _modDef14423;
+  obj4.icon = _modDef14422;
   obj4.IconComponent = ChatCheckIcon.ChatCheckIcon;
   const intl7 = util.intl;
   obj4.header = intl7.string(_modDef2487["001l3m"]);

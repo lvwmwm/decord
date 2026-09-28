@@ -1,20 +1,20 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 13517
+// Function ID: 13518
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 4836, 576, 1613, 7615, 6571, 6045, 1364, 13513, 13519, 13456, 13520, 13523, 6575, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 1613, 7615, 6571, 6045, 1364, 13512, 13518, 13455, 13519, 13522, 6575, 2]
 
-// Module 13518 (GuildActionSheet)
+// Module 13517 (GuildActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import BottomSheetModal from "BottomSheetModal" /* 6045 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6571 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6575 */;
 import useBottomSheetRef from "useBottomSheetRef" /* 7615 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 13456 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 13513 */;
-import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 13519 */;
-import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 13520 */;
-import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 13523 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 13455 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 13512 */;
+import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 13518 */;
+import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 13519 */;
+import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 13522 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

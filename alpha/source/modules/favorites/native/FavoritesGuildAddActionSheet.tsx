@@ -1,13 +1,13 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 15784
+// Function ID: 15785
 // Name: FavoritesGuildAddActionSheet
-// Dependencies: [19, 21, 4800, 15787, 9685, 9688, 10439, 6618, 6570, 1115, 6620, 3361, 12269, 15788, 2]
+// Dependencies: [19, 21, 4800, 15785, 9685, 9688, 10439, 6618, 6570, 1115, 6620, 3361, 12269, 15786, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15786 (FavoritesGuildAddActionSheet)
+// Module 15784 (FavoritesGuildAddActionSheet)
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
 import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 10439 */;
-import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 15787 */;
+import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 15785 */;
 import noop from "module_19" /* 19 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;

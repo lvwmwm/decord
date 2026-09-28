@@ -1,10 +1,10 @@
-// Module ID: 15755
-// Function ID: 15756
+// Module ID: 15753
+// Function ID: 15754
 // Name: VoiceUsers
-// Dependencies: [19, 17, 2108, 21, 4836, 576, 9580, 7298, 504, 15756, 9578, 1115, 12026, 4832, 9190, 15760, 6729, 15763, 2]
+// Dependencies: [19, 17, 2108, 21, 4836, 576, 9580, 7298, 504, 15754, 9578, 1115, 12026, 4832, 9190, 15758, 6729, 15761, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 15755 (VoiceUsers)
+// Module 15753 (VoiceUsers)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
@@ -89,7 +89,7 @@ let closure_12 = noop.memo((voiceState) => {
   obj5.sessionId = voiceState2.sessionId;
   obj5.channel = channel;
   obj5.isGuest = isGuest;
-  obj2.children = closure_6(tmp(15756), obj5, user.id);
+  obj2.children = closure_6(tmp(15754), obj5, user.id);
   return closure_6(tmp6, obj2);
 });
 const size = fn(2);

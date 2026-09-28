@@ -1,14 +1,14 @@
-// Module ID: 15714
-// Function ID: 15715
+// Module ID: 15712
+// Function ID: 15713
 // Name: HappeningNowCardActivitySubtitle
-// Dependencies: [19, 17, 2045, 1074, 21, 4836, 504, 4989, 14844, 9060, 1115, 7705, 10350, 2]
+// Dependencies: [19, 17, 2045, 1074, 21, 4836, 504, 4989, 14842, 9060, 1115, 7705, 10350, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 15714 (HappeningNowCardActivitySubtitle)
+// Module 15712 (HappeningNowCardActivitySubtitle)
 import util from "util" /* 1115 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
 import isStreamingDefault from "isStreaming" /* 7705 */;
-import HappeningNowCard from "HappeningNowCard" /* 14844 */;
+import HappeningNowCard from "HappeningNowCard" /* 14842 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -34,7 +34,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
     const obj3 = { channel: stateFromStores };
     tmp8 = getChannelA11yLabelDefault(obj3);
   }
-  obj2.children = jsx(voiceState(14844).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: useChannelNameDefault(stateFromStores) });
+  obj2.children = jsx(voiceState(14842).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: useChannelNameDefault(stateFromStores) });
   return <View style={tmp.cardDetails}>{null}</View>;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {

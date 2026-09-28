@@ -1,13 +1,13 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15861
+// Function ID: 15862
 // Name: ChannelBadge
-// Dependencies: [19, 17, 2112, 21, 4836, 563, 15864, 11779, 4832, 1882, 2]
+// Dependencies: [19, 17, 2112, 21, 4836, 563, 15862, 11779, 4832, 1882, 2]
 // Exports: default
 
-// Module 15863 (ChannelBadge)
+// Module 15861 (ChannelBadge)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import NewBadgeDefault from "NewBadge" /* 11779 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 15864 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 15862 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 

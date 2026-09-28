@@ -1,10 +1,10 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 16628
+// Function ID: 16629
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7072, 4479, 1372, 1074, 21, 1177, 4836, 504, 12619, 9303, 12, 1370, 5917, 4832, 1115, 2]
+// Dependencies: [32, 19, 17, 7072, 4479, 1372, 1074, 21, 1177, 4836, 504, 12637, 9303, 12, 1370, 5917, 4832, 1115, 2]
 // Exports: default
 
-// Module 16624 (UserProfileYourFriendsCard)
+// Module 16628 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import _slicedToArray from "module_32" /* 32 */;

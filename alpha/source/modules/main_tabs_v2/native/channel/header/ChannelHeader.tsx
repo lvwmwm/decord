@@ -1,14 +1,14 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 12840
+// Function ID: 12841
 // Name: ChannelHeader
-// Dependencies: [19, 2045, 1074, 2052, 21, 1364, 4701, 11004, 1110, 4693, 563, 5046, 12842, 12843, 12844, 12852, 1115, 12854, 2]
+// Dependencies: [19, 2045, 1074, 2052, 21, 1364, 4701, 11004, 1110, 4693, 563, 5046, 12841, 12842, 12843, 12851, 1115, 12853, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 12841 (ChannelHeader)
+// Module 12840 (ChannelHeader)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 12842 */;
-import HomeChannelHeaderDefault from "HomeChannelHeader" /* 12843 */;
-import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 12844 */;
+import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 12841 */;
+import HomeChannelHeaderDefault from "HomeChannelHeader" /* 12842 */;
+import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 12843 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -75,8 +75,8 @@ export default function ChannelHeader(channelId) {
           stringResult = intl.string(tmp(1115).t["L9fR+P"]);
         }
         obj4.searchPlaceholder = stringResult;
-        tmp8Result = tmp8(tmp9(12852), obj4);
-        const tmp9Result = tmp9(12852);
+        tmp8Result = tmp8(tmp9(12851), obj4);
+        const tmp9Result = tmp9(12851);
       } else {
         const obj5 = { channelId, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, showCreateThread: null };
         let guild_id1;
@@ -89,8 +89,8 @@ export default function ChannelHeader(channelId) {
         obj5.isNavigationScreen = isNavigationScreen;
         obj5.screenIndex = screenIndex;
         obj5.showCreateThread = flag2;
-        tmp8Result = tmp8(tmp9(12854), obj5);
-        const tmp9Result2 = tmp9(12854);
+        tmp8Result = tmp8(tmp9(12853), obj5);
+        const tmp9Result2 = tmp9(12853);
       }
     }
   }

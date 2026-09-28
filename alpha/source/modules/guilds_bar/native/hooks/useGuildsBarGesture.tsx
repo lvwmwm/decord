@@ -1,10 +1,10 @@
-// Module ID: 15922
-// Function ID: 15923
+// Module ID: 15920
+// Function ID: 15921
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 2067, 5750, 15923, 15920, 4566, 551, 4801, 4685, 12, 1231, 1115, 6493, 15657, 4531, 576, 4452, 10456, 1248, 5832, 8659, 7359, 1364, 1613, 5266, 15924, 15925, 7359, 14628, 6073, 2]
+// Dependencies: [5, 19, 17, 2067, 5750, 15921, 15918, 4566, 551, 4801, 4685, 12, 1231, 1115, 6493, 15655, 4531, 576, 4452, 10456, 1248, 5832, 8659, 7359, 1364, 1613, 5266, 15922, 15923, 7359, 14628, 6073, 2]
 // Exports: default
 
-// Module 15922 (useGuildsBarGesture)
+// Module 15920 (useGuildsBarGesture)
 import util from "util" /* 1115 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
@@ -19,7 +19,7 @@ import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 15923 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 15921 */;
 import debounce from "debounce" /* 551 */;
 
 const require = globalThis.__r;
@@ -280,7 +280,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
 }
 const Dimensions = fn(17).Dimensions;
 const GuildsNodeType = fn(5750).GuildsNodeType;
-const GuildsBarConstants = fn(15920);
+const GuildsBarConstants = fn(15918);
 ({ FastListRenderSections: c10, useGuildWrapperSize: closure_11 } = GuildsBarConstants);
 let c12 = 160;
 let c13 = 16.666666666666668;

@@ -1,15 +1,15 @@
-// Module ID: 14089
-// Function ID: 14090
+// Module ID: 14088
+// Function ID: 14089
 // Name: RPCServer
-// Dependencies: [5, 4739, 1074, 12, 8776, 8770, 14065, 1241, 38, 12448, 1091, 2]
+// Dependencies: [5, 4739, 1074, 12, 8776, 8770, 14064, 1241, 38, 12448, 1091, 2]
 
-// Module 14089 (RPCServer)
+// Module 14088 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import RPCErrorDefault from "RPCError" /* 8770 */;
 import transformUserDefault from "transformUser" /* 8776 */;
 import RpcCommandInterception from "RpcCommandInterception" /* 12448 */;
-import validateScopeDefault from "validateScope" /* 14065 */;
+import validateScopeDefault from "validateScope" /* 14064 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

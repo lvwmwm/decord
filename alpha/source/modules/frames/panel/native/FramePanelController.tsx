@@ -1,12 +1,12 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16864
+// Function ID: 16865
 // Name: FramePanelController
-// Dependencies: [19, 5063, 8499, 8500, 8502, 21, 504, 8760, 16827, 16861, 2]
+// Dependencies: [19, 5063, 8499, 8500, 8502, 21, 504, 8760, 16831, 16865, 2]
 // Exports: default
 
-// Module 16860 (FramePanelController)
+// Module 16864 (FramePanelController)
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 8760 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 16861 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 16865 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 import FramesStore from "FramesStore" /* 8499 */;
@@ -57,5 +57,5 @@ export default function FramePanelController(children) {
     }
   }, items1);
   let obj = mainFrameId(504);
-  return jsx(mainFrameId(16827).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
+  return jsx(mainFrameId(16831).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
 };

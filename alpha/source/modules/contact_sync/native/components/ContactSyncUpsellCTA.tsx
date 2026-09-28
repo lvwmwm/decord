@@ -1,13 +1,13 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13402
+// Function ID: 13403
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 12176, 1074, 21, 4836, 576, 8053, 1241, 12173, 6615, 1115, 13404, 2]
+// Dependencies: [19, 12176, 1074, 21, 4836, 576, 8053, 1241, 12173, 6615, 1115, 13403, 2]
 
-// Module 13403 (ContactSyncUpsellCTA)
+// Module 13402 (ContactSyncUpsellCTA)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12173 */;
-import _modDef13404 from "module_13404" /* 13404 */;
+import _modDef13403 from "module_13403" /* 13403 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -52,7 +52,7 @@ export default noop.memo(function ContactSyncUpsellCTA(location) {
       const result = location(6615).showSimpleActionSheet(obj2);
     },
     style: null,
-    iconSource: _modDef13404,
+    iconSource: _modDef13403,
     title: null,
     subtitle: null
   };
@@ -90,7 +90,7 @@ export default noop.memo(function ContactSyncUpsellCTA(location) {
       const result = location(6615).showSimpleActionSheet(obj2);
     },
     style: null,
-    iconSource: _modDef13404,
+    iconSource: _modDef13403,
     title: null,
     subtitle: null
   });

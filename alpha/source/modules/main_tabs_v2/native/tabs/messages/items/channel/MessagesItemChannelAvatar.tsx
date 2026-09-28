@@ -1,9 +1,9 @@
-// Module ID: 15669
-// Function ID: 15670
+// Module ID: 15667
+// Function ID: 15668
 // Name: MessagesItemChannelAvatar
 // Dependencies: [19, 4825, 502, 4876, 11447, 1372, 9577, 21, 4836, 576, 1177, 504, 10371, 2]
 
-// Module 15669 (MessagesItemChannelAvatar)
+// Module 15667 (MessagesItemChannelAvatar)
 import nativeDefault from "native" /* 576 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10371 */;
 import noop from "module_19" /* 19 */;
@@ -108,7 +108,7 @@ export default noop.memo(function MessagesItemChannelAvatar(channel) {
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: "009399942588b8344d40cad62cdde902", style: "en-GB.messages.009399942588b8344d40cad62cdde902.compiled.messages", size: "jsona", animate: "active", typing: "md", autoStatusCutout: null };
+      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "channel", autoStatusCutout: 17082177 };
       let tmp12 = null;
       if (!stateFromStores2.isSystemUser()) {
         tmp12 = status;
@@ -119,7 +119,7 @@ export default noop.memo(function MessagesItemChannelAvatar(channel) {
       obj7.size = REFRESH_MEDIUM_32;
       obj7.animate = stateFromStores1;
       obj7.typing = stateFromStores;
-      tmp11Result = jsx(tmp3(1177).Avatar, { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: "009399942588b8344d40cad62cdde902", style: "en-GB.messages.009399942588b8344d40cad62cdde902.compiled.messages", size: "jsona", animate: "active", typing: "md", autoStatusCutout: null });
+      tmp11Result = jsx(tmp3(1177).Avatar, { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "channel", autoStatusCutout: 17082177 });
     }
   }
   return tmp11Result;

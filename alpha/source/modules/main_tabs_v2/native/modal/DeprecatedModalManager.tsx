@@ -1,18 +1,18 @@
-// Module ID: 17271
-// Function ID: 17272
+// Module ID: 17275
+// Function ID: 17276
 // Name: DeprecatedModalManager
-// Dependencies: [9049, 502, 9276, 17272, 2037, 1074, 4693, 4692, 5041, 6007, 17273, 17274, 17282, 6539, 17283, 17616, 17618, 2]
+// Dependencies: [9049, 502, 9276, 17276, 2037, 1074, 4693, 4692, 5041, 6007, 17277, 17278, 17286, 6539, 17287, 17620, 17622, 2]
 
-// Module 17271 (DeprecatedModalManager)
+// Module 17275 (DeprecatedModalManager)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4692 */;
 import RootNavigationRef from "RootNavigationRef" /* 4693 */;
 import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 5041 */;
 import VerificationUtilsDefault from "VerificationUtils" /* 6007 */;
-import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 17273 */;
+import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 17277 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9049 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import CreateInviteModalStore from "CreateInviteModalStore" /* 9276 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 17272 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 17276 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 

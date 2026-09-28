@@ -1,9 +1,9 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 16523
+// Function ID: 16524
 // Name: ChannelsScreen
-// Dependencies: [19, 4860, 11850, 11822, 7303, 7302, 21, 11823, 504, 15872, 16454, 1115, 4541, 16458, 11841, 16512, 16450, 16462, 2]
+// Dependencies: [19, 4860, 11850, 11822, 7303, 7302, 21, 11823, 504, 15870, 16458, 1115, 4541, 16462, 11841, 16516, 16454, 16466, 2]
 
-// Module 16519 (ChannelsScreen)
+// Module 16523 (ChannelsScreen)
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;

@@ -1,7 +1,7 @@
 // Module ID: 5046
 // Function ID: 5047
 // Name: AgeGateUtils
-// Dependencies: [2063, 2045, 5047, 2067, 1372, 1099, 1074, 1115, 11, 5048, 5735, 5736, 13309, 504, 7861, 2111, 6632, 6747, 2]
+// Dependencies: [2063, 2045, 5047, 2067, 1372, 1099, 1074, 1115, 11, 5048, 5735, 5736, 13308, 504, 7861, 2111, 6632, 6747, 2]
 // Exports: guildNeedsAgeGate, isChannelAgeVerificationGated, isChannelOrGuildNSFW, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForAgeGate, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userCannotSeeNSFWContent, userNeedsAgeGate
 
 // Module 5046 (AgeGateUtils)
@@ -220,8 +220,8 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
       str = "";
     }
     if (tmp3Result) {
-      let tinyBroncoWarningDescriptions = tmp(13309).getTinyBroncoWarningDescriptions(tmp3Result, str);
-      const tmpResult2 = tmp(13309);
+      let tinyBroncoWarningDescriptions = tmp(13308).getTinyBroncoWarningDescriptions(tmp3Result, str);
+      const tmpResult2 = tmp(13308);
     } else {
       tinyBroncoWarningDescriptions = null;
     }
@@ -337,8 +337,8 @@ export const useAgeGateVerifyContent = function useAgeGateVerifyContent(source) 
   if (tmpResult3.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
     tinyBroncoWarningDescriptions = null;
     if (tmp7) {
-      tinyBroncoWarningDescriptions = tmp(13309).getTinyBroncoWarningDescriptions(true, "");
-      const tmpResult4 = tmp(13309);
+      tinyBroncoWarningDescriptions = tmp(13308).getTinyBroncoWarningDescriptions(true, "");
+      const tmpResult4 = tmp(13308);
     }
   }
   if (source !== AgeGateSource.JOIN_LARGE_GUILD_UNDERAGE) {

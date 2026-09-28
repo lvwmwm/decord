@@ -1,11 +1,11 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17199
+// Function ID: 17200
 // Name: NativeOnDemandResourceManager
-// Dependencies: [1993, 1980, 1074, 6539, 17196, 9104, 2]
+// Dependencies: [1993, 1980, 1074, 6539, 17200, 9104, 2]
 
-// Module 17195 (NativeOnDemandResourceManager)
+// Module 17199 (NativeOnDemandResourceManager)
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import NativeOnDemandResourceModuleDefault from "NativeOnDemandResourceModule" /* 17196 */;
+import NativeOnDemandResourceModuleDefault from "NativeOnDemandResourceModule" /* 17200 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;

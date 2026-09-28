@@ -1,14 +1,14 @@
-// Module ID: 14043
-// Function ID: 14044
+// Module ID: 14042
+// Function ID: 14043
 // Name: validateOpenInviteDialog
-// Dependencies: [8499, 2045, 2067, 4469, 4739, 1074, 8500, 8770, 8501, 14030, 9064, 2]
+// Dependencies: [8499, 2045, 2067, 4469, 4739, 1074, 8500, 8770, 8501, 14029, 9064, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 14043 (validateOpenInviteDialog)
+// Module 14042 (validateOpenInviteDialog)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8501 */;
 import RPCErrorDefault from "RPCError" /* 8770 */;
 import canViewInviteModal from "canViewInviteModal" /* 9064 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14030 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14029 */;
 import FramesStore from "FramesStore" /* 8499 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -33,7 +33,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
       const surface = tmp46.surface;
       const type = surface.type;
       if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
-        const obj3 = { frame: tmp46, channel: "Array", guild: "isArray" };
+        const obj3 = { frame: tmp46, channel: "Array", guild: "text" };
         return obj3;
       } else {
         if (tmp23(8501).EmbeddedSurfaceType.APP_CHANNEL !== type) {

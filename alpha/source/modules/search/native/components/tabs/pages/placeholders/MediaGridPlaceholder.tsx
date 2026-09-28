@@ -1,18 +1,18 @@
-// Module ID: 16459
-// Function ID: 16460
+// Module ID: 16463
+// Function ID: 16464
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 7303, 21, 4836, 576, 16458, 4566, 16460, 12, 4832, 1115, 11821, 16461, 2]
+// Dependencies: [19, 17, 7303, 21, 4836, 576, 16462, 4566, 16464, 12, 4832, 1115, 11821, 16465, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 16459 (MediaGridPlaceholder)
+// Module 16463 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 11821 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 16458 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 16460 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 16462 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 16464 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

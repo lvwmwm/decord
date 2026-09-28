@@ -1,11 +1,11 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 15597
+// Function ID: 15598
 // Name: components/VerifyPhone
-// Dependencies: [5, 32, 19, 15572, 15573, 1074, 21, 15569, 15588, 5298, 6466, 1115, 6500, 15600, 6501, 2]
+// Dependencies: [5, 32, 19, 15570, 15571, 1074, 21, 15567, 15586, 5298, 6466, 1115, 6500, 15598, 6501, 2]
 // Exports: default
 
-// Module 15599 (components/VerifyPhone)
-import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 15600 */;
+// Module 15597 (components/VerifyPhone)
+import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 15598 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -13,8 +13,8 @@ import noop from "module_19" /* 19 */;
 const require = globalThis.__r;
 
 const require = fn;
-let closure_6 = fn(15572).doesRegistrationHaveIdentityType;
-const RegistrationConstants = fn(15573);
+let closure_6 = fn(15570).doesRegistrationHaveIdentityType;
+const RegistrationConstants = fn(15571);
 ({ authStateToRegisterTransitionStep: closure_7, RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: closure_9 } = RegistrationConstants);
 const Links = fn(1074).Links;
 const jsx = fn(21).jsx;
@@ -37,7 +37,7 @@ export default function VerifyPhone(phone) {
   closure_7 = noop.useRef(false);
   const context = noop.useContext(require("Auth").TrackRegistrationContext);
   const tmp4 = _slicedToArray(noop.useState(false), 2);
-  onPhoneTokenReceived(15588)(closure_7(sourceState));
+  onPhoneTokenReceived(15586)(closure_7(sourceState));
   const items = [context];
   const effect = noop.useEffect(() => {
     if (_undefined()) {
@@ -173,7 +173,7 @@ export default function VerifyPhone(phone) {
     return tmp2;
   }, items3);
   let obj = { title, description, error: tmp3, onCodeEntered, codeType: null, footer: null, disabled: null, loading: null, disableKeyboardAvoidingView: true };
-  const tmp7 = onPhoneTokenReceived(15588);
+  const tmp7 = onPhoneTokenReceived(15586);
   obj.codeType = require("CodeField").CodeType.NUMERIC;
   obj.footer = memo;
   obj.disabled = tmp5;

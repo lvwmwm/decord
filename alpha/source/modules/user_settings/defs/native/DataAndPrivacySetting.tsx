@@ -1,12 +1,12 @@
-// Module ID: 15483
-// Function ID: 15484
+// Module ID: 15481
+// Function ID: 15482
 // Name: DataAndPrivacySetting
-// Dependencies: [19, 1074, 14392, 14395, 11006, 1115, 9238, 15484, 2]
+// Dependencies: [19, 1074, 14391, 14394, 11006, 1115, 9238, 15482, 2]
 
-// Module 15483 (DataAndPrivacySetting)
+// Module 15481 (DataAndPrivacySetting)
 import util from "util" /* 1115 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 14392 */;
-import RequestYourDataSetting from "RequestYourDataSetting" /* 14395 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 14391 */;
+import RequestYourDataSetting from "RequestYourDataSetting" /* 14394 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

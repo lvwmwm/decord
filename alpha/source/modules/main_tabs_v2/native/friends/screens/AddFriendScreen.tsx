@@ -1,10 +1,10 @@
-// Module ID: 16580
-// Function ID: 16581
+// Module ID: 16584
+// Function ID: 16585
 // Name: AddFriendScreen
-// Dependencies: [32, 19, 17, 1372, 1074, 12175, 21, 4836, 576, 12177, 4678, 1241, 1115, 7809, 7288, 1364, 5437, 4832, 13401, 13403, 2]
+// Dependencies: [32, 19, 17, 1372, 1074, 12175, 21, 4836, 576, 12177, 4678, 1241, 1115, 7809, 7288, 1364, 5437, 4832, 13400, 13402, 2]
 // Exports: default
 
-// Module 16580 (AddFriendScreen)
+// Module 16584 (AddFriendScreen)
 import nativeDefault from "native" /* 576 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12177 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -81,7 +81,7 @@ export default function AddFriendScreen(navigation) {
   const intl2 = navigation(1115).intl;
   obj5.children = intl2.string(navigation(1115).t["Rn/sLl"]);
   items2[1] = closure_10(navigation(4832).Text, obj5);
-  items2[2] = closure_10(contactSyncAccount(13401), { style: tmp.input, autoFocusInput: false, sourcePage: navigation.route.params.sourcePage });
+  items2[2] = closure_10(contactSyncAccount(13400), { style: tmp.input, autoFocusInput: false, sourcePage: navigation.route.params.sourcePage });
   const obj7 = { style: tmp.otherOptionsContainer, children: null };
   const obj8 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
   const intl3 = navigation(1115).intl;
@@ -90,7 +90,7 @@ export default function AddFriendScreen(navigation) {
   let tmp10Result = null;
   if (tmp5) {
     const obj9 = { style: tmp.rowContainer, location: "Add Friend Modal" };
-    tmp10Result = closure_10(contactSyncAccount(13403), obj9);
+    tmp10Result = closure_10(contactSyncAccount(13402), obj9);
   }
   const obj10 = { children: null };
   items3[1] = tmp10Result;

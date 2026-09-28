@@ -1,9 +1,9 @@
-// Module ID: 14017
-// Function ID: 14018
+// Module ID: 14016
+// Function ID: 14017
 // Name: PreloadedUserSettingsMigrations
 // Dependencies: [2045, 1074, 1186, 2028, 6634, 510, 1222, 504, 1217, 2029, 6941, 2]
 
-// Module 14017 (PreloadedUserSettingsMigrations)
+// Module 14016 (PreloadedUserSettingsMigrations)
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
@@ -677,6 +677,38 @@ let items = [
         flag = true;
       }
       return flag;
+    },
+    cleanup() {
+
+    }
+  },
+  {
+    version: 22,
+    run(textAndImages) {
+      const Storage = Storage4.Storage;
+      value = Storage.get("UnsyncedUserSettingsStore");
+      let prop;
+      if (value != null) {
+        const _state = value._state;
+        if (_state != null) {
+          prop = _state.displayCompactAvatars;
+        }
+      }
+      let tmp5 = true === prop;
+      if (tmp5) {
+        if (textAndImages.textAndImages == null) {
+          const TextAndImagesSettings = tmp(1186).TextAndImagesSettings;
+          textAndImages.textAndImages = TextAndImagesSettings.create();
+        }
+        let flag = null == textAndImages.textAndImages.displayCompactAvatars;
+        if (flag) {
+          const BoolValue = tmp(1217).BoolValue;
+          textAndImages.textAndImages.displayCompactAvatars = BoolValue.create({ value: true });
+          flag = true;
+        }
+        tmp5 = flag;
+      }
+      return tmp5;
     },
     cleanup() {
 

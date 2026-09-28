@@ -1,10 +1,10 @@
-// Module ID: 15432
-// Function ID: 15433
+// Module ID: 15430
+// Function ID: 15431
 // Name: ShopBlockItem
-// Dependencies: [19, 17, 6962, 21, 4836, 576, 504, 6992, 8229, 15433, 15446, 15448, 15455, 2]
+// Dependencies: [19, 17, 6962, 21, 4836, 576, 504, 6992, 8229, 15431, 15444, 15446, 15453, 2]
 // Exports: default
 
-// Module 15432 (ShopBlockItem)
+// Module 15430 (ShopBlockItem)
 import nativeDefault from "native" /* 576 */;
 import ShopBlockType from "ShopBlockType" /* 6992 */;
 import noop from "module_19" /* 19 */;

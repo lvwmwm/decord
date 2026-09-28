@@ -1,9 +1,9 @@
-// Module ID: 14005
-// Function ID: 14006
+// Module ID: 14004
+// Function ID: 14005
 // Name: NotificationTokenManager
-// Dependencies: [17, 1235, 11906, 13174, 502, 14006, 1074, 1983, 573, 8746, 14009, 14010, 1231, 1115, 2813, 1364, 14011, 1241, 11905, 2]
+// Dependencies: [17, 1235, 11906, 13173, 502, 14005, 1074, 1983, 573, 8746, 14008, 14009, 1231, 1115, 2813, 1364, 14010, 1241, 11905, 2]
 
-// Module 14005 (NotificationTokenManager)
+// Module 14004 (NotificationTokenManager)
 import _mod17 from "module_17" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
@@ -13,13 +13,13 @@ import PlatformUtils from "PlatformUtils" /* 1364 */;
 import _modDef2813 from "module_2813" /* 2813 */;
 import PushNotificationDefault from "PushNotification" /* 8746 */;
 import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 11905 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14006 */;
-import NotifSettingsExperiments from "NotifSettingsExperiments" /* 14009 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 14010 */;
-import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 14011 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14005 */;
+import NotifSettingsExperiments from "NotifSettingsExperiments" /* 14008 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 14009 */;
+import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 14010 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 import MultiAccountStore from "MultiAccountStore" /* 11906 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13174 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13173 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import LifecycleManager from "LifecycleManager" /* 1983 */;
 import size from "module_2" /* 2 */;

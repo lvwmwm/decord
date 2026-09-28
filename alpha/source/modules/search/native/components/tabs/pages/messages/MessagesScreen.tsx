@@ -1,11 +1,11 @@
-// Module ID: 16537
-// Function ID: 16538
+// Module ID: 16541
+// Function ID: 16542
 // Name: MessagesScreen
-// Dependencies: [19, 11822, 7303, 21, 16521, 504, 16454, 16523, 16500, 16522, 16538, 16527, 16514, 16461, 2]
+// Dependencies: [19, 11822, 7303, 21, 16525, 504, 16458, 16527, 16504, 16526, 16542, 16531, 16518, 16465, 2]
 
-// Module 16537 (MessagesScreen)
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16500 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 16523 */;
+// Module 16541 (MessagesScreen)
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16504 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 16527 */;
 import noop from "module_19" /* 19 */;
 import SearchQueryStore from "SearchQueryStore" /* 11822 */;
 

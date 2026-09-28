@@ -1,10 +1,10 @@
-// Module ID: 17723
-// Function ID: 17724
+// Module ID: 17727
+// Function ID: 17728
 // Name: receiveNotification
-// Dependencies: [5, 5870, 6946, 502, 2045, 1372, 6013, 1074, 4878, 2051, 11907, 3, 4528, 1115, 10823, 4693, 1110, 7841, 4847, 6760, 9080, 4692, 16057, 7054, 7624, 6603, 4849, 9194, 1241, 5016, 1364, 12443, 11, 16055, 6895, 10, 6896, 5589, 13174, 11910, 504, 12298, 9398, 4813, 1094, 11122, 7799, 7796, 573, 5039, 1101, 5038, 13396, 2]
+// Dependencies: [5, 5870, 6946, 502, 2045, 1372, 6013, 1074, 4878, 2051, 11907, 3, 4528, 1115, 10823, 4693, 1110, 7841, 4847, 6760, 9080, 4692, 16053, 7054, 7624, 6603, 4849, 9194, 1241, 5016, 1364, 12443, 11, 16051, 6895, 10, 6896, 5589, 13173, 11910, 504, 12298, 9398, 4813, 1094, 11122, 7799, 7796, 573, 5039, 1101, 5038, 13395, 2]
 // Exports: default
 
-// Module 17723 (receiveNotification)
+// Module 17727 (receiveNotification)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import initializeDefault from "initialize" /* 504 */;
@@ -1093,7 +1093,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               let tmp19Result7 = tmp19(4813);
               let tmp19Result3Result = tmp19Result7(data.deeplink);
-              let tmp19Result8 = tmp19(13396);
+              let tmp19Result8 = tmp19(13395);
               let obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -1322,7 +1322,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -1551,7 +1551,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -1780,7 +1780,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -2009,7 +2009,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -2238,7 +2238,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -2467,7 +2467,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -2696,7 +2696,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -2925,7 +2925,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -3154,7 +3154,7 @@ function receiveNotification_(data) {
             if ("" !== data.deeplink) {
               tmp19Result7 = tmp19(4813);
               tmp19Result3Result = tmp19Result7(data.deeplink);
-              tmp19Result8 = tmp19(13396);
+              tmp19Result8 = tmp19(13395);
               obj17 = { payload: tmp19Result3Result.payload, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj17);
             }
@@ -3192,7 +3192,7 @@ export default function receiveNotification(getData, arg1) {
         if (data.receiving_user_id !== obj.getId()) {
           tmp7(6896);
           tmp7(5589);
-          tmp7(13174);
+          tmp7(13173);
           let receiving_user_id = data.receiving_user_id;
           receiving_user_id = tmp7(11910).switchAccount(receiving_user_id, false, arg1 ? tmp5.PUSH_NOTIFICATION_INITIAL : tmp5.PUSH_NOTIFICATION);
           receiving_user_id.then(() => {

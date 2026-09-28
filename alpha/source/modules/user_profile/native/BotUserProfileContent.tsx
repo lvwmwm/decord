@@ -1,7 +1,7 @@
 // Module ID: 12543
 // Function ID: 12544
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1372, 6629, 6572, 21, 7687, 7676, 7689, 1613, 7635, 504, 4988, 4678, 6729, 7688, 10612, 7673, 7684, 6610, 4527, 7690, 4566, 12544, 7702, 10574, 4800, 10611, 1981, 10614, 1115, 12549, 12552, 8721, 12553, 5281, 5385, 576, 5039, 4849, 12554, 10777, 6606, 12604, 12607, 2]
+// Dependencies: [19, 17, 1372, 6629, 6572, 21, 7687, 7676, 7689, 1613, 7635, 504, 4988, 4678, 6729, 7688, 10612, 7673, 7684, 6610, 4527, 7690, 4566, 12544, 7702, 10574, 4800, 10611, 1981, 10614, 1115, 12567, 12570, 8721, 12571, 5281, 5385, 576, 5039, 4849, 12572, 10777, 6606, 12622, 12625, 2]
 
 // Module 12543 (BotUserProfileContent)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -86,7 +86,7 @@ export default noop.memo(function BotUserProfileContent(user) {
       const obj5 = { style: null, children: null };
       const items3 = [tmp3.bannerButtons, bannerAnimatedStyle];
       obj5.style = items3;
-      const obj6 = { user, application, channel };
+      const obj6 = { user, currentUser: stateFromStores, application, displayProfile, channel };
       obj5.children = closure_9(tmp(tmp2[23]), obj6);
       items2[1] = closure_9(tmp(tmp2[22]).View, obj5);
       const obj7 = { style: contentAnimatedStyle, children: null };

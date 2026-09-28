@@ -1,9 +1,9 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 17145
+// Function ID: 17146
 // Name: MemberVerificationApplicationManager
 // Dependencies: [4655, 4656, 6539, 5204, 4658, 5839, 5853, 2]
 
-// Module 17141 (MemberVerificationApplicationManager)
+// Module 17145 (MemberVerificationApplicationManager)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
 import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5839 */;

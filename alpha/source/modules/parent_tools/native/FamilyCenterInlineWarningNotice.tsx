@@ -1,10 +1,10 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 14410
+// Function ID: 14411
 // Name: FamilyCenterInlineWarningNotice
 // Dependencies: [19, 17, 21, 4836, 576, 8048, 4832, 2]
 // Exports: default
 
-// Module 14411 (FamilyCenterInlineWarningNotice)
+// Module 14410 (FamilyCenterInlineWarningNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import WarningIcon from "WarningIcon" /* 8048 */;

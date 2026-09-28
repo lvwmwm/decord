@@ -1,10 +1,10 @@
-// Module ID: 14892
-// Function ID: 14893
+// Module ID: 14890
+// Function ID: 14891
 // Name: DisplayNameStylesSheetHeader
 // Dependencies: [19, 17, 21, 4836, 576, 6570, 2]
 // Exports: default
 
-// Module 14892 (DisplayNameStylesSheetHeader)
+// Module 14890 (DisplayNameStylesSheetHeader)
 import nativeDefault from "native" /* 576 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
 import noop from "module_19" /* 19 */;

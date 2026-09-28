@@ -1,13 +1,13 @@
-// Module ID: 15133
-// Function ID: 15134
+// Module ID: 15131
+// Function ID: 15132
 // Name: StaffBadgeIcon
-// Dependencies: [19, 21, 576, 4530, 15134, 2]
+// Dependencies: [19, 21, 576, 4530, 15132, 2]
 // Exports: StaffBadgeIcon
 
-// Module 15133 (StaffBadgeIcon)
+// Module 15131 (StaffBadgeIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod15134 from "module_15134" /* 15134 */;
+import _mod15132 from "module_15132" /* 15132 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const StaffBadgeIcon = function StaffBadgeIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15134, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15132, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

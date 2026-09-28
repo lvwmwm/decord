@@ -1,10 +1,10 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16060
+// Function ID: 16061
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 2045, 1372, 1074, 21, 4836, 1110, 4566, 4837, 5279, 5281, 1115, 4832, 563, 7418, 15679, 4813, 13396, 10330, 7054, 4849, 9195, 4528, 11164, 1241, 2]
+// Dependencies: [5, 19, 17, 2045, 1372, 1074, 21, 4836, 1110, 4566, 4837, 5279, 5281, 1115, 4832, 563, 7418, 15677, 4813, 13395, 10330, 7054, 4849, 9195, 4528, 11164, 1241, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 16064 (ForYouItemActionButtons)
+// Module 16060 (ForYouItemActionButtons)
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
@@ -15,8 +15,8 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7054 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10330 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 13396 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15679 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 13395 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15677 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -363,7 +363,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(ot
   const callback4 = noop.useCallback(() => {
     const dMChannel = ChannelActionCreatorsDefault.getDMChannel(id);
     dMChannel.then((channelId) => {
-      closure_1(13396)({ payload: closure_1(4813)("https://discord.com/channels/@me/" + channelId).payload, safe: true, navigationReplace: false });
+      closure_1(13395)({ payload: closure_1(4813)("https://discord.com/channels/@me/" + channelId).payload, safe: true, navigationReplace: false });
       let obj;
       let tmp3;
       if (null != channelId) {

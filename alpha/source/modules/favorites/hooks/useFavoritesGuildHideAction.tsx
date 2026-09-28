@@ -1,10 +1,10 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 15770
+// Function ID: 15771
 // Name: useFavoritesGuildHideAction
 // Dependencies: [19, 4655, 1074, 9685, 9684, 2070, 1101, 1115, 3361, 2]
 // Exports: default
 
-// Module 15772 (useFavoritesGuildHideAction)
+// Module 15770 (useFavoritesGuildHideAction)
 import router_utils from "router_utils" /* 1101 */;
 import _modDef3361 from "module_3361" /* 3361 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 9684 */;

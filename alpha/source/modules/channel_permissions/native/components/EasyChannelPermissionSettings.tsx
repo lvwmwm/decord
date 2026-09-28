@@ -1,10 +1,10 @@
-// Module ID: 16639
-// Function ID: 16640
+// Module ID: 16643
+// Function ID: 16644
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 16640, 2045, 2108, 2102, 2067, 4469, 4479, 1372, 7849, 1074, 21, 4836, 576, 1485, 11105, 504, 9016, 9017, 9018, 1115, 4989, 5203, 9032, 4474, 5279, 5999, 6621, 1177, 5917, 10774, 11103, 5942, 5016, 9083, 9084, 16641, 16643, 2]
+// Dependencies: [32, 5, 19, 17, 16644, 2045, 2108, 2102, 2067, 4469, 4479, 1372, 7849, 1074, 21, 4836, 576, 1485, 11105, 504, 9016, 9017, 9018, 1115, 4989, 5203, 9032, 4474, 5279, 5999, 6621, 1177, 5917, 10774, 11103, 5942, 5016, 9083, 9084, 16645, 16647, 2]
 // Exports: default
 
-// Module 16639 (EasyChannelPermissionSettings)
+// Module 16643 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 576 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
@@ -15,7 +15,7 @@ import channel_permissions_ChannelPermissionsUtils from "channel_permissions/Cha
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 16640 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 16644 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2108 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
@@ -235,7 +235,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "__initData" });
+    navigation.setOptions({ headerRight: "r" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

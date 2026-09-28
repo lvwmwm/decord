@@ -1,10 +1,10 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16533
+// Function ID: 16534
 // Name: useFileOrLinkImageDimensions
 // Dependencies: [19, 7303, 2]
 // Exports: useFileOrLinkImageDimensions
 
-// Module 16529 (useFileOrLinkImageDimensions)
+// Module 16533 (useFileOrLinkImageDimensions)
 import noop from "module_19" /* 19 */;
 
 const SearchConstants = fn(7303);

@@ -1,10 +1,10 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 13047
+// Function ID: 13048
 // Name: Tier048Px
-// Dependencies: [19, 17, 21, 7679, 13049, 13050, 13051, 4685, 2]
+// Dependencies: [19, 17, 21, 7679, 13048, 13049, 13050, 4685, 2]
 // Exports: Tier048Px, getTier048PxSource, useTier048PxSource
 
-// Module 13048 (Tier048Px)
+// Module 13047 (Tier048Px)
 import shared from "shared" /* 4685 */;
 import _mod7679 from "module_7679" /* 7679 */;
 import noop from "module_19" /* 19 */;
@@ -20,13 +20,13 @@ const result = size.fileFinishedImporting("design/components/Illustration/native
 export const getTier048PxSource = function getTier048PxSource(theme) {
   return _mod7679.getIllustrationSource(theme, {
     dark() {
-      return require("module_13049");
+      return require("module_13048");
     },
     darker() {
-      return require("module_13050");
+      return require("module_13049");
     },
     light() {
-      return require("module_13051");
+      return require("module_13050");
     }
   });
 };
@@ -34,13 +34,13 @@ export const useTier048PxSource = function useTier048PxSource() {
   const obj = shared;
   return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13049");
+      return require("module_13048");
     },
     darker() {
-      return require("module_13050");
+      return require("module_13049");
     },
     light() {
-      return require("module_13051");
+      return require("module_13050");
     }
   });
 };
@@ -49,13 +49,13 @@ export const Tier048Px = function Tier048Px(arg0) {
   const obj4 = {};
   const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13049");
+      return require("module_13048");
     },
     darker() {
-      return require("module_13050");
+      return require("module_13049");
     },
     light() {
-      return require("module_13051");
+      return require("module_13050");
     }
   });
   const merged = Object.assign(arg0);

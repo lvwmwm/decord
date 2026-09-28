@@ -1,12 +1,12 @@
-// Module ID: 15524
-// Function ID: 15525
+// Module ID: 15522
+// Function ID: 15523
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [6957, 7417, 14355, 1115, 2487, 11006, 2]
+// Dependencies: [6957, 7417, 14354, 1115, 2487, 11006, 2]
 
-// Module 15524 (ParentalControlsUseDataForQuestsSetting)
+// Module 15522 (ParentalControlsUseDataForQuestsSetting)
 import util from "util" /* 1115 */;
 import _modDef2487 from "module_2487" /* 2487 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14355 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14354 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
 
 require = fn;

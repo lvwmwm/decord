@@ -1,13 +1,13 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15742
+// Function ID: 15743
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 2048, 21, 4989, 10438, 2021, 6618, 6570, 6620, 10413, 1115, 6798, 15745, 10092, 6610, 4527, 504, 2]
+// Dependencies: [19, 2048, 21, 4989, 10438, 2021, 6618, 6570, 6620, 10413, 1115, 6798, 15743, 10092, 6610, 4527, 504, 2]
 // Exports: default
 
-// Module 15744 (FavoritesGuildCategoryActionSheet)
+// Module 15742 (FavoritesGuildCategoryActionSheet)
 import ToastUtils from "ToastUtils" /* 4527 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
-import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 15745 */;
+import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 15743 */;
 import noop from "module_19" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 13641
-// Function ID: 13642
+// Module ID: 13640
+// Function ID: 13641
 // Name: ThemedIcon
 // Dependencies: [19, 21, 4531, 5283, 2]
 // Exports: default
 
-// Module 13641 (ThemedIcon)
+// Module 13640 (ThemedIcon)
 import useToken from "useToken" /* 4531 */;
 import IconDefault from "Icon" /* 5283 */;
 import noop from "module_19" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 15687
-// Function ID: 15688
+// Module ID: 15685
+// Function ID: 15686
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 4836, 10456, 7299, 5437, 15657, 4566, 2]
+// Dependencies: [17, 21, 4836, 10456, 7299, 5437, 15655, 4566, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 15687 (ScreenAlignedThemedGradient)
+// Module 15685 (ScreenAlignedThemedGradient)
 import jsxProd from "jsxProd" /* 21 */;
 import ThemedGradientDefault from "ThemedGradient" /* 5437 */;
 import useActiveTheme from "useActiveTheme" /* 7299 */;

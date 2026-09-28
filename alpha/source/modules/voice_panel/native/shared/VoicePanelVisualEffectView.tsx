@@ -1,9 +1,9 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 17005
+// Function ID: 17006
 // Name: VoicePanelVisualEffectView
 // Dependencies: [19, 17, 21, 4836, 576, 4531, 8370, 2]
 
-// Module 17001 (VoicePanelVisualEffectView)
+// Module 17005 (VoicePanelVisualEffectView)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import noop from "module_19" /* 19 */;

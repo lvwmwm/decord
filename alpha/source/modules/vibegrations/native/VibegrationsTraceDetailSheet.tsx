@@ -1,16 +1,16 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16421
+// Function ID: 16422
 // Name: VibegrationsTraceDetailSheet
-// Dependencies: [19, 17, 8495, 21, 4836, 576, 4832, 1115, 3715, 16413, 16412, 1613, 504, 16414, 16418, 16419, 16416, 6618, 6570, 6045, 2]
+// Dependencies: [19, 17, 8495, 21, 4836, 576, 4832, 1115, 3715, 16417, 16416, 1613, 504, 16418, 16422, 16423, 16420, 6618, 6570, 6045, 2]
 // Exports: default
 
-// Module 16417 (VibegrationsTraceDetailSheet)
+// Module 16421 (VibegrationsTraceDetailSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 16413 */;
+import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 16417 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
 
@@ -144,13 +144,13 @@ export default function VibegrationsTraceDetailSheet(projectId) {
   ({ entryId, initialEntry } = projectId);
   const tmp = closure_8();
   const tmp2 = projectId;
-  const traceCategoryTextStyles = projectId(16412).useTraceCategoryTextStyles();
-  let obj = projectId(16412);
+  const traceCategoryTextStyles = projectId(16416).useTraceCategoryTextStyles();
+  let obj = projectId(16416);
   const items = [VibegrationsProjectStore];
   const items1 = [projectId];
   const stateFromStoresArray = projectId(504).useStateFromStoresArray(items, () => VibegrationsProjectStore.getTrace(projectId), items1);
   const obj2 = projectId(504);
-  let findTraceEntryResult = projectId(16414).findTraceEntry(stateFromStoresArray, entryId);
+  let findTraceEntryResult = projectId(16418).findTraceEntry(stateFromStoresArray, entryId);
   if (findTraceEntryResult == null) {
     findTraceEntryResult = initialEntry;
   }
@@ -160,44 +160,44 @@ export default function VibegrationsTraceDetailSheet(projectId) {
     if (parentId == null) {
       parentId = null;
     }
-    findTraceEntryResult1 = tmp2(16414).findTraceEntry(stateFromStoresArray, parentId);
-    const tmp2Result = tmp2(16414);
+    findTraceEntryResult1 = tmp2(16418).findTraceEntry(stateFromStoresArray, parentId);
+    const tmp2Result = tmp2(16418);
   }
-  const obj3 = projectId(16414);
-  const length = tmp2(16414).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
-  const tmp2Result13 = tmp2(16414);
-  const traceDetailSectionsResult = tmp2(16418).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
+  const obj3 = projectId(16418);
+  const length = tmp2(16418).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
+  const tmp2Result13 = tmp2(16418);
+  const traceDetailSectionsResult = tmp2(16422).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
   const obj4 = { childCount: length, hasParent: null != findTraceEntryResult1 };
-  const tmp2Result14 = tmp2(16418);
+  const tmp2Result14 = tmp2(16422);
   let detailId;
   if ("tool" === findTraceEntryResult.kind) {
     detailId = findTraceEntryResult.detailId;
   }
-  const vibegrationsTraceDetail = tmp2(16419).useVibegrationsTraceDetail(projectId, detailId);
+  const vibegrationsTraceDetail = tmp2(16423).useVibegrationsTraceDetail(projectId, detailId);
   const tmp12 = "model" === findTraceEntryResult.kind ? findTraceEntryResult.model : findTraceEntryResult.tool;
-  const tmp2Result15 = tmp2(16419);
-  const formatClockTimeResult = tmp2(16416).formatClockTime(findTraceEntryResult.startedAt, "millis");
-  const tmp2Result16 = tmp2(16416);
-  const traceCategoryResult = tmp2(16414).traceCategory(findTraceEntryResult);
-  const tmp2Result17 = tmp2(16414);
-  const traceRichStatusLabelResult = tmp2(16413).traceRichStatusLabel(vibegrationsTraceDetail);
+  const tmp2Result15 = tmp2(16423);
+  const formatClockTimeResult = tmp2(16420).formatClockTime(findTraceEntryResult.startedAt, "millis");
+  const tmp2Result16 = tmp2(16420);
+  const traceCategoryResult = tmp2(16418).traceCategory(findTraceEntryResult);
+  const tmp2Result17 = tmp2(16418);
+  const traceRichStatusLabelResult = tmp2(16417).traceRichStatusLabel(vibegrationsTraceDetail);
   const obj5 = { scrollable: true, header: closure_5(tmp2(6570).BottomSheetTitleHeader, { title: tmp12 }), children: null };
   const obj6 = { contentContainerStyle: { paddingBottom: useSafeAreaInsetsDefault().bottom }, children: null };
   const obj7 = { style: tmp.content, children: null };
   const obj8 = { style: tmp.head, children: null };
-  const items2 = [closure_5(tmp2(16412).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
+  const items2 = [closure_5(tmp2(16416).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
   const obj10 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: null };
   const obj9 = { status: findTraceEntryResult.status };
-  const tmp2Result18 = tmp2(16413);
-  obj10.children = tmp2(16413).categoryLabel(traceCategoryResult);
+  const tmp2Result18 = tmp2(16417);
+  obj10.children = tmp2(16417).categoryLabel(traceCategoryResult);
   items2[1] = closure_5(tmp2(4832).Text, obj10);
   const obj11 = { variant: "text-xs/normal", color: "text-muted", style: tmp.headTitle, children: null };
   if (null == findTraceEntryResult.durationMs) {
     let intl = tmp2(1115).intl;
     let stringResult = intl.string(tmp5(3715).HpKDyl);
   } else {
-    stringResult = tmp2(16413).formatDuration(findTraceEntryResult.durationMs);
-    const tmp2Result20 = tmp2(16413);
+    stringResult = tmp2(16417).formatDuration(findTraceEntryResult.durationMs);
+    const tmp2Result20 = tmp2(16417);
   }
   obj11.children = stringResult;
   items2[2] = closure_5(tmp2(4832).Text, obj11);
@@ -318,10 +318,10 @@ export default function VibegrationsTraceDetailSheet(projectId) {
         const intl5 = tmp2(1115).intl;
         obj23.label = intl5.string(tmp5(3715).Ran4BY);
         const intl6 = tmp2(1115).intl;
-        const obj24 = { tokens: tmp2(16413).formatTokens(findTraceEntryResult.promptTokens) };
+        const obj24 = { tokens: tmp2(16417).formatTokens(findTraceEntryResult.promptTokens) };
         obj23.value = intl6.formatToPlainString(tmp5(3715)["PYO+Jv"], obj24);
         tmp16Result23 = tmp16(Row, obj23);
-        const tmp2Result21 = tmp2(16413);
+        const tmp2Result21 = tmp2(16417);
       }
       const items6 = [tmp16Result23, , , , , , ];
       let tmp16Result24 = null;
@@ -330,25 +330,25 @@ export default function VibegrationsTraceDetailSheet(projectId) {
         const intl7 = tmp2(1115).intl;
         obj25.label = intl7.string(tmp5(3715).vPIcyv);
         const intl8 = tmp2(1115).intl;
-        const obj26 = { system: tmp2(16413).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
-        const tmp2Result22 = tmp2(16413);
+        const obj26 = { system: tmp2(16417).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
+        const tmp2Result22 = tmp2(16417);
         const tmp37 = Row;
         let num2 = findTraceEntryResult.toolsTokens;
         if (num2 == null) {
           num2 = 0;
         }
-        obj26.tools = tmp2(16413).formatTokens(num2);
+        obj26.tools = tmp2(16417).formatTokens(num2);
         let num3 = findTraceEntryResult.tools;
         if (num3 == null) {
           num3 = 0;
         }
         obj26.toolCount = num3;
-        const tmp2Result23 = tmp2(16413);
+        const tmp2Result23 = tmp2(16417);
         let num4 = findTraceEntryResult.messagesTokens;
         if (num4 == null) {
           num4 = 0;
         }
-        obj26.messages = tmp2(16413).formatTokens(num4);
+        obj26.messages = tmp2(16417).formatTokens(num4);
         let num5 = findTraceEntryResult.messages;
         if (num5 == null) {
           num5 = 0;
@@ -356,7 +356,7 @@ export default function VibegrationsTraceDetailSheet(projectId) {
         obj26.messageCount = num5;
         obj25.value = intl8.formatToPlainString(tmp5(3715).Qy2iTq, obj26);
         tmp16Result24 = tmp16(tmp37, obj25);
-        const tmp2Result24 = tmp2(16413);
+        const tmp2Result24 = tmp2(16417);
       }
       items6[1] = tmp16Result24;
       let tmp16Result25 = null;

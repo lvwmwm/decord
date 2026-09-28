@@ -1,14 +1,14 @@
-// Module ID: 14958
-// Function ID: 14959
+// Module ID: 14956
+// Function ID: 14957
 // Name: DisplayNameStylesAccessibilitySetting
-// Dependencies: [4825, 7417, 504, 13999, 11006, 1115, 2877, 2]
+// Dependencies: [4825, 7417, 504, 13998, 11006, 1115, 2877, 2]
 // Exports: onValueChange, useValue
 
-// Module 14958 (DisplayNameStylesAccessibilitySetting)
+// Module 14956 (DisplayNameStylesAccessibilitySetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import _modDef2877 from "module_2877" /* 2877 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13999 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;

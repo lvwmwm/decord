@@ -1,14 +1,14 @@
-// Module ID: 17143
-// Function ID: 17144
+// Module ID: 17147
+// Function ID: 17148
 // Name: HolidayEventsManager
-// Dependencies: [1235, 9358, 9359, 6539, 17144, 17148, 17149, 17150, 9360, 2]
+// Dependencies: [1235, 9358, 9359, 6539, 17148, 17152, 17153, 17154, 9360, 2]
 
-// Module 17143 (HolidayEventsManager)
+// Module 17147 (HolidayEventsManager)
 import getSoundsForPackDefault from "getSoundsForPack" /* 9360 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17144 */;
-import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 17148 */;
-import SoundpackActions from "SoundpackActions" /* 17149 */;
-import setIncomingRingtone from "setIncomingRingtone" /* 17150 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17148 */;
+import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 17152 */;
+import SoundpackActions from "SoundpackActions" /* 17153 */;
+import setIncomingRingtone from "setIncomingRingtone" /* 17154 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 import SoundpackStore from "SoundpackStore" /* 9358 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
@@ -42,16 +42,16 @@ prototype["updateSoundpack"] = function updateSoundpack() {
   let isEligibleResult = HolidayEventsUtilsDefault.isEligible();
   if (isEligibleResult) {
     if (isEligibleResult) {
-      isEligibleResult = null != tmp3(17144).soundpack;
+      isEligibleResult = null != tmp3(17148).soundpack;
     }
     if (isEligibleResult) {
       isEligibleResult = name !== lastSoundpackExperimentId;
     }
     if (isEligibleResult) {
-      isEligibleResult = soundpack !== tmp3(17144).soundpack;
+      isEligibleResult = soundpack !== tmp3(17148).soundpack;
     }
     if (isEligibleResult) {
-      SoundpackActions.setSoundpack(tmp3(17144).soundpack, name);
+      SoundpackActions.setSoundpack(tmp3(17148).soundpack, name);
     }
   } else {
     SoundpackActions.setSoundpack(Soundpacks.CLASSIC, null);

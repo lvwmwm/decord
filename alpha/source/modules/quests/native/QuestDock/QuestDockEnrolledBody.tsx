@@ -1,9 +1,9 @@
-// Module ID: 14729
-// Function ID: 14730
+// Module ID: 14727
+// Function ID: 14728
 // Name: QuestDockEnrolledBody
 // Dependencies: [5, 19, 17, 7116, 14622, 5756, 14624, 21, 4836, 576, 14628, 14625, 7715, 14620, 14655, 5759, 14652, 14651, 14653, 14631, 1613, 7137, 2]
 
-// Module 14729 (QuestDockEnrolledBody)
+// Module 14727 (QuestDockEnrolledBody)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import QuestTypes from "QuestTypes" /* 5759 */;

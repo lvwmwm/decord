@@ -1,10 +1,10 @@
-// Module ID: 15906
-// Function ID: 15907
+// Module ID: 15904
+// Function ID: 15905
 // Name: GameCommunityMultiGuildUpsellCard
 // Dependencies: [5, 32, 19, 17, 4825, 4470, 2067, 1074, 21, 4836, 576, 504, 1397, 1432, 1479, 1241, 5832, 6760, 6759, 1115, 8276, 8202, 1177, 4832, 5281, 7358, 7363, 7365, 2]
 // Exports: default
 
-// Module 15906 (GameCommunityMultiGuildUpsellCard)
+// Module 15904 (GameCommunityMultiGuildUpsellCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;

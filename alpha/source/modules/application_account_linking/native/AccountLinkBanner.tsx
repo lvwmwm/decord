@@ -1,10 +1,10 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15826
+// Function ID: 15827
 // Name: AccountLinkBanner
 // Dependencies: [19, 17, 1372, 2042, 21, 576, 6593, 9578, 5286, 4836, 563, 6583, 6603, 5919, 5435, 5992, 1177, 4832, 1115, 5281, 8197, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 15828 (AccountLinkBanner)
+// Module 15826 (AccountLinkBanner)
 import nativeDefault from "native" /* 576 */;
 import ButtonConstants from "ButtonConstants" /* 5286 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;

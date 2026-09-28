@@ -1,9 +1,9 @@
-// Module ID: 16439
-// Function ID: 16440
+// Module ID: 16443
+// Function ID: 16444
 // Name: SearchBarActivityIcon
 // Dependencies: [19, 17, 6699, 11822, 7303, 21, 4836, 576, 563, 11823, 4566, 4837, 6472, 1364, 2]
 
-// Module 16439 (SearchBarActivityIcon)
+// Module 16443 (SearchBarActivityIcon)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import timing from "timing" /* 4837 */;

@@ -1,10 +1,10 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 16914
+// Function ID: 16915
 // Name: useExternalPipAspectRatioUpdater
 // Dependencies: [19, 8886, 2]
 // Exports: default
 
-// Module 16910 (useExternalPipAspectRatioUpdater)
+// Module 16914 (useExternalPipAspectRatioUpdater)
 import ExternalPipDefault from "ExternalPip" /* 8886 */;
 import noop from "module_19" /* 19 */;
 

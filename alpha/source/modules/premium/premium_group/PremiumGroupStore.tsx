@@ -1,12 +1,12 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13028
+// Function ID: 13029
 // Name: PremiumGroupStore
-// Dependencies: [4494, 4502, 1074, 573, 13030, 504, 2]
+// Dependencies: [4494, 4502, 1074, 573, 13029, 504, 2]
 
-// Module 13029 (PremiumGroupStore)
+// Module 13028 (PremiumGroupStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PremiumGroupActionCreators from "PremiumGroupActionCreators" /* 13030 */;
+import PremiumGroupActionCreators from "PremiumGroupActionCreators" /* 13029 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
 
 require = fn;

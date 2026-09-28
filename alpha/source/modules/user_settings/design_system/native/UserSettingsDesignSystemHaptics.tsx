@@ -1,10 +1,10 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15410
+// Function ID: 15411
 // Name: UserSettingsDesignSystemHaptics
 // Dependencies: [19, 17, 21, 4836, 5281, 4801, 4802, 5279, 5919, 4832, 4803, 2]
 // Exports: default
 
-// Module 15412 (UserSettingsDesignSystemHaptics)
+// Module 15410 (UserSettingsDesignSystemHaptics)
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
 import Patterns from "Patterns" /* 4803 */;

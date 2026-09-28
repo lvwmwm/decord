@@ -1,10 +1,10 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17344
+// Function ID: 17345
 // Name: AuditLogUtils
-// Dependencies: [5771, 6521, 5023, 2050, 5814, 17339, 2045, 2102, 4479, 1372, 17338, 1074, 2052, 11341, 6522, 2051, 3, 4865, 1115, 7840, 11, 17341, 1086, 1385, 4989, 1979, 4678, 14, 1092, 9277, 17305, 4512, 4421, 2]
+// Dependencies: [5771, 6521, 5023, 2050, 5814, 17343, 2045, 2102, 4479, 1372, 17342, 1074, 2052, 11341, 6522, 2051, 3, 4865, 1115, 7840, 11, 17345, 1086, 1385, 4989, 1979, 4678, 14, 1092, 9277, 17309, 4512, 4421, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 17340 (AuditLogUtils)
+// Module 17344 (AuditLogUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import IntegerDefault from "Integer" /* 14 */;
@@ -18,8 +18,8 @@ import UserUtilsDefault from "UserUtils" /* 4678 */;
 import TimeUtils from "TimeUtils" /* 4865 */;
 import useChannelName from "useChannelName" /* 4989 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9277 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17305 */;
-import GuildFeedItemTypes from "GuildFeedItemTypes" /* 17341 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17309 */;
+import GuildFeedItemTypes from "GuildFeedItemTypes" /* 17345 */;
 import EmojiStore from "EmojiStore" /* 5771 */;
 import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6521 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5023 */;
@@ -29,7 +29,7 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildRoleStore from "GuildRoleStore" /* 2102 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17338 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17342 */;
 
 require = fn;
 function getPermissionChanges(oldValue, newValue) {
@@ -258,7 +258,7 @@ function transformAvailableForumTagChange(newValue) {
   }
   return newValue;
 }
-const AuditLogChange = fn(17339).AuditLogChange;
+const AuditLogChange = fn(17343).AuditLogChange;
 const Constants = fn(1074);
 ({ AuditLogActions: closure_15, AuditLogChangeKeys } = Constants);
 const AuditLogTargetTypes = Constants.AuditLogTargetTypes;
@@ -1617,7 +1617,7 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             if (GuildFeedItemTypes.GuildFeedItemTypes.MESSAGE === newValue) {
               return tmp198(1115).t["PyEa+J"];
-            } else if (tmp198(17341).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (tmp198(17345).GuildFeedItemTypes.FORUM_POST === newValue) {
               return tmp198(1115).t.hCuAb1;
             } else {
               return tmp198(1115).t["UZ+U3A"];

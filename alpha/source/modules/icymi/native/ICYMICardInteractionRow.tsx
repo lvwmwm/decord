@@ -1,10 +1,10 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16138
+// Function ID: 16139
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 6724, 2045, 5725, 4469, 1074, 1375, 21, 4481, 7183, 4836, 576, 1364, 4683, 504, 4849, 6876, 10583, 5435, 1115, 8219, 4832, 10829, 1092, 1397, 10822, 10353, 10858, 11185, 11234, 16134, 5385, 7182, 7413, 11156, 7799, 11176, 11164, 4531, 5293, 672, 6630, 2]
+// Dependencies: [32, 19, 17, 6724, 2045, 5725, 4469, 1074, 1375, 21, 4481, 7183, 4836, 576, 1364, 4683, 504, 4849, 6876, 10583, 5435, 1115, 8219, 4832, 10829, 1092, 1397, 10822, 10353, 10858, 11185, 11234, 16130, 5385, 7182, 7413, 11156, 7799, 11176, 11164, 4531, 5293, 672, 6630, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 16142 (ICYMICardInteractionRow)
+// Module 16138 (ICYMICardInteractionRow)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -23,7 +23,7 @@ import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11164 */;
 import ForwardModalUtils from "ForwardModalUtils" /* 11176 */;
 import ForwardingIconDefault from "ForwardingIcon" /* 11185 */;
 import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11234 */;
-import ICYMIShared from "ICYMIShared" /* 16134 */;
+import ICYMIShared from "ICYMIShared" /* 16130 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ThreadMessageStore from "ThreadMessageStore" /* 6724 */;

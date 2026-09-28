@@ -1,10 +1,10 @@
-// Module ID: 13506
-// Function ID: 13507
+// Module ID: 13505
+// Function ID: 13506
 // Name: markGuildsAsRead
 // Dependencies: [6521, 5818, 2045, 4467, 4851, 1074, 5018, 12, 11, 1241, 6531, 2]
 // Exports: default
 
-// Module 13506 (markGuildsAsRead)
+// Module 13505 (markGuildsAsRead)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;

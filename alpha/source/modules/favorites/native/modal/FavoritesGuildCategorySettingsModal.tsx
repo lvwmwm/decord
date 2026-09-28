@@ -1,10 +1,10 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 15744
+// Function ID: 15745
 // Name: FavoritesGuildCategorySettingsModal
 // Dependencies: [32, 19, 17, 2048, 2058, 21, 4836, 576, 1485, 504, 2070, 9684, 7288, 1115, 5203, 1177, 5279, 6024, 5999, 5917, 4790, 10383, 10385, 2]
 // Exports: default
 
-// Module 15746 (FavoritesGuildCategorySettingsModal)
+// Module 15744 (FavoritesGuildCategorySettingsModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;

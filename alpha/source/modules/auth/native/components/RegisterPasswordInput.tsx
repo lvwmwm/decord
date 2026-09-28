@@ -1,13 +1,13 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 15596
+// Function ID: 15597
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 6362, 15572, 21, 4836, 576, 4566, 15595, 1115, 4832, 13993, 6376, 504, 5053, 6024, 4536, 6387, 6389, 2]
+// Dependencies: [109, 32, 19, 6362, 15570, 21, 4836, 576, 4566, 15593, 1115, 4832, 13992, 6376, 504, 5053, 6024, 4536, 6387, 6389, 2]
 
-// Module 15598 (RegisterPasswordInput)
+// Module 15596 (RegisterPasswordInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import usePasswordScore from "usePasswordScore" /* 15595 */;
+import usePasswordScore from "usePasswordScore" /* 15593 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -28,13 +28,13 @@ function PasswordStrength(passwordScore) {
             const intl2 = tmp9(1115).intl;
             let str = intl2.string(tmp9(1115).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(15595).PasswordScore.MEDIUM) {
+          } else if (passwordScore === tmp9(15593).PasswordScore.MEDIUM) {
             const intl = tmp9(1115).intl;
             str = intl.string(tmp9(1115).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(15595).PasswordScore.STRONG) {
+            if (passwordScore === tmp9(15593).PasswordScore.STRONG) {
               const intl4 = tmp9(1115).intl;
               str = intl4.string(tmp9(1115).t.Xraqqc);
               strong = tmp.strong;
@@ -58,7 +58,7 @@ function PasswordStrength(passwordScore) {
   return null;
 }
 let closure_3 = ["password"];
-const RegistrationUIStore = fn(15572);
+const RegistrationUIStore = fn(15570);
 ({ setRegistrationErrors: closure_8, useRegistrationUIStore: closure_9 } = RegistrationUIStore);
 const jsxProd = fn(21);
 ({ jsxs: c10, jsx: closure_11, Fragment: closure_12 } = jsxProd);

@@ -1,10 +1,10 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15359
+// Function ID: 15360
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1074, 1229, 21, 15362, 5281, 15363, 7363, 6799, 9345, 13976, 7391, 13978, 9614, 13977, 9141, 4836, 576, 1485, 4800, 15364, 1981, 5279, 4832, 10115, 9335, 9341, 9343, 9342, 9340, 9339, 5745, 4540, 1092, 5293, 5919, 5437, 8377, 2]
+// Dependencies: [32, 19, 17, 1074, 1229, 21, 15360, 5281, 15361, 7363, 6799, 9345, 13975, 7391, 13977, 9614, 13976, 9141, 4836, 576, 1485, 4800, 15362, 1981, 5279, 4832, 10115, 9335, 9341, 9343, 9342, 9340, 9339, 5745, 4540, 1092, 5293, 5919, 5437, 8377, 2]
 // Exports: default
 
-// Module 15361 (UserSettingsDesignSystemButton)
+// Module 15359 (UserSettingsDesignSystemButton)
 import nativeDefault from "native" /* 576 */;
 import components_Button_Button from "components/Button/Button" /* 5281 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
@@ -21,11 +21,11 @@ import _modDef9343 from "module_9343" /* 9343 */;
 import ImageButton from "ImageButton" /* 9345 */;
 import _modDef9614 from "module_9614" /* 9614 */;
 import _modDef10115 from "module_10115" /* 10115 */;
-import ToggleButton from "ToggleButton" /* 13976 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 13977 */;
-import ToggleIconButton from "ToggleIconButton" /* 13978 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 15362 */;
-import _modDef15363 from "module_15363" /* 15363 */;
+import ToggleButton from "ToggleButton" /* 13975 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 13976 */;
+import ToggleIconButton from "ToggleIconButton" /* 13977 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 15360 */;
+import _modDef15361 from "module_15361" /* 15361 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -75,7 +75,7 @@ function ExampleButton(arg0) {
   obj.size = buttonSize;
   let tmpResult;
   if (showIcon) {
-    tmpResult = _modDef15363;
+    tmpResult = _modDef15361;
   }
   obj.icon = tmpResult;
   obj.iconPosition = iconPosition;

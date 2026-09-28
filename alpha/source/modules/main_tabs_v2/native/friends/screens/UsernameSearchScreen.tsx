@@ -1,10 +1,10 @@
-// Module ID: 16588
-// Function ID: 16589
+// Module ID: 16592
+// Function ID: 16593
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 1241, 6402, 5266, 7297, 1364, 5890, 5437, 13401, 1115, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 1241, 6402, 5266, 7297, 1364, 5890, 5437, 13400, 1115, 2]
 // Exports: default
 
-// Module 16588 (UsernameSearchScreen)
+// Module 16592 (UsernameSearchScreen)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
@@ -82,7 +82,7 @@ export default function UsernameSearchScreen(navigation) {
   obj7.headerText = intl.string(navigation(1115).t.YEOwDM);
   obj7.headerTextStyle = tmp.headerText;
   obj7.ref = ref;
-  obj5.children = closure_8(ref(13401), obj7);
+  obj5.children = closure_8(ref(13400), obj7);
   items2[1] = closure_8(closure_4, obj5);
   obj4.children = items2;
   obj3.children = closure_9(tmp3Result, obj4);

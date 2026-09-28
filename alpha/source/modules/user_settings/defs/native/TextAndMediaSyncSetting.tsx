@@ -1,9 +1,9 @@
-// Module ID: 15024
-// Function ID: 15025
+// Module ID: 15022
+// Function ID: 15023
 // Name: TextAndMediaSyncSetting
 // Dependencies: [1183, 7417, 504, 11006, 1115, 8659, 2]
 
-// Module 15024 (TextAndMediaSyncSetting)
+// Module 15022 (TextAndMediaSyncSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8659 */;

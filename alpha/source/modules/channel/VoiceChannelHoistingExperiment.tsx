@@ -1,10 +1,10 @@
-// Module ID: 17114
-// Function ID: 17115
+// Module ID: 17118
+// Function ID: 17119
 // Name: VoiceChannelHoistingExperiment
 // Dependencies: [4751, 4748, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 17114 (VoiceChannelHoistingExperiment)
+// Module 17118 (VoiceChannelHoistingExperiment)
 import ExperimentConstants from "ExperimentConstants" /* 4751 */;
 import createExperiment from "module_4748" /* 4748 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 14802
-// Function ID: 14803
+// Module ID: 14800
+// Function ID: 14801
 // Name: NoiseSuppressionKrispSetting
 // Dependencies: [1993, 7417, 9449, 9450, 1115, 504, 11006, 2]
 
-// Module 14802 (NoiseSuppressionKrispSetting)
+// Module 14800 (NoiseSuppressionKrispSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9449 */;

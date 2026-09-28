@@ -1,17 +1,17 @@
-// Module ID: 17049
-// Function ID: 17050
+// Module ID: 17053
+// Function ID: 17054
 // Name: executeRunnable
-// Dependencies: [5, 17050, 3, 13211, 7176, 15, 9, 10, 504, 2]
+// Dependencies: [5, 17054, 3, 13210, 7176, 15, 9, 10, 504, 2]
 // Exports: default
 
-// Module 17049 (executeRunnable)
+// Module 17053 (executeRunnable)
 import LoggerDefault from "Logger" /* 3 */;
 import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7176 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13211 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13210 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
-const NativeAppStartup = fn(17050);
+const NativeAppStartup = fn(17054);
 ({ init: hasOwnProperty, applicationReady: metroRequire } = NativeAppStartup);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_startup/native/executeRunnable.tsx");

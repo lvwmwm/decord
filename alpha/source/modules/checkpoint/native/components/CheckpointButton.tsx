@@ -1,13 +1,13 @@
-// Module ID: 15280
-// Function ID: 15281
+// Module ID: 15278
+// Function ID: 15279
 // Name: CheckpointButton
-// Dependencies: [5061, 21, 4836, 15281, 576, 15264, 2]
+// Dependencies: [5061, 21, 4836, 15279, 576, 15262, 2]
 // Exports: default
 
-// Module 15280 (CheckpointButton)
+// Module 15278 (CheckpointButton)
 import nativeDefault from "native" /* 576 */;
-import CheckpointTextDefault from "CheckpointText" /* 15264 */;
-import CheckpointPressable from "CheckpointPressable" /* 15281 */;
+import CheckpointTextDefault from "CheckpointText" /* 15262 */;
+import CheckpointPressable from "CheckpointPressable" /* 15279 */;
 import CheckpointConstants from "CheckpointConstants" /* 5061 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4836 */;

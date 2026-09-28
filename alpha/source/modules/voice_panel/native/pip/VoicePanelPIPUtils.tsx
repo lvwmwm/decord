@@ -1,13 +1,13 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 16912
+// Function ID: 16913
 // Name: VoicePanelPIPUtils
-// Dependencies: [4852, 4858, 502, 11755, 16909, 4857, 11756, 8899, 13532, 576, 2]
+// Dependencies: [4852, 4858, 502, 11755, 16913, 4857, 11756, 8899, 13531, 576, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, getClampedPIPPosition, getPIPMode, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius
 
-// Module 16908 (VoicePanelPIPUtils)
+// Module 16912 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 576 */;
 import participantHasVideo from "participantHasVideo" /* 8899 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 13532 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 13531 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -16,7 +16,7 @@ require = fn;
 const VoicePanelConstants = fn(11755);
 const SECONDARY_PIP_TOP_MARGIN = VoicePanelConstants.SECONDARY_PIP_TOP_MARGIN;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
-const VoicePanelPIPConstants = fn(16909);
+const VoicePanelPIPConstants = fn(16913);
 ({ VoicePanelPIPModes: closure_7, PIPReferenceDimensions } = VoicePanelPIPConstants);
 const SquarePIPReferenceDimensions = VoicePanelPIPConstants.SquarePIPReferenceDimensions;
 const SquareActivityPIPReferenceDimensions = VoicePanelPIPConstants.SquareActivityPIPReferenceDimensions;

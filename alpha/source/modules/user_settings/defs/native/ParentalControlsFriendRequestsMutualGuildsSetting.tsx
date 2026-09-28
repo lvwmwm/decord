@@ -1,13 +1,13 @@
-// Module ID: 15517
-// Function ID: 15518
+// Module ID: 15515
+// Function ID: 15516
 // Name: ParentalControlsFriendRequestsMutualGuildsSetting
-// Dependencies: [19, 6957, 7417, 1074, 8107, 14355, 6416, 1385, 11006, 1115, 2]
+// Dependencies: [19, 6957, 7417, 1074, 8107, 14354, 6416, 1385, 11006, 1115, 2]
 
-// Module 15517 (ParentalControlsFriendRequestsMutualGuildsSetting)
+// Module 15515 (ParentalControlsFriendRequestsMutualGuildsSetting)
 import util from "util" /* 1115 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14355 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14354 */;
 import noop from "module_19" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
 
@@ -22,7 +22,7 @@ const toggle = SettingBuilders.createToggle({
   parent: fn(7417).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsMutualGuildsSettingValue() {
     const selectedTeenId = controlledSetting(8107).useSelectedTeenId();
-    const ParentalControlledFriendSourceFlags = controlledSetting(14355).ParentalControlledFriendSourceFlags;
+    const ParentalControlledFriendSourceFlags = controlledSetting(14354).ParentalControlledFriendSourceFlags;
     controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return noop.useMemo(() => UserSettingsUtils.computeFlags(controlledSetting), items).mutualGuilds;

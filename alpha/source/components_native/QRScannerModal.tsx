@@ -1,10 +1,10 @@
-// Module ID: 13413
-// Function ID: 13414
+// Module ID: 13412
+// Function ID: 13413
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1074, 6958, 21, 1364, 13414, 576, 6459, 1613, 1366, 13394, 5039, 13409, 1981, 6800, 11392, 4525, 5204, 1115, 9203, 6510, 1177, 2]
+// Dependencies: [32, 19, 17, 1074, 6958, 21, 1364, 13413, 576, 6459, 1613, 1366, 13393, 5039, 13408, 1981, 6800, 11392, 4525, 5204, 1115, 9203, 6510, 1177, 2]
 // Exports: default
 
-// Module 13413 (QRScannerModal)
+// Module 13412 (QRScannerModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import URLUtilsDefault from "URLUtils" /* 1366 */;
@@ -13,8 +13,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
 import _modDef6510 from "module_6510" /* 6510 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9203 */;
-import QRLoginUtils from "QRLoginUtils" /* 13394 */;
-import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 13414 */;
+import QRLoginUtils from "QRLoginUtils" /* 13393 */;
+import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 13413 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -87,7 +87,7 @@ export default function QRScannerModal(showHelp) {
             tmp21(5039).pop();
             const tmp21Result = tmp21(5039);
             obj2 = { remoteAuthFingerprint: result };
-            tmp21(5039).pushLazy(tmp3(1981)(13409, tmp22.paths), obj2);
+            tmp21(5039).pushLazy(tmp3(1981)(13408, tmp22.paths), obj2);
           } else {
             let match;
             if (str != null) {

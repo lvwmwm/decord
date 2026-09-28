@@ -1,9 +1,9 @@
-// Module ID: 16555
-// Function ID: 16556
+// Module ID: 16559
+// Function ID: 16560
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1372, 10377, 1074, 21, 1364, 4836, 16556, 4566, 5280, 4823, 5435, 4832, 5293, 504, 4678, 4981, 2]
+// Dependencies: [32, 19, 17, 1372, 10377, 1074, 21, 1364, 4836, 16560, 4566, 5280, 4823, 5435, 4832, 5293, 504, 4678, 4981, 2]
 
-// Module 16555 (ChannelDetailsTopic)
+// Module 16559 (ChannelDetailsTopic)
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 4823 */;
 import ChannelUtils from "ChannelUtils" /* 4981 */;

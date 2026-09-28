@@ -1,10 +1,10 @@
-// Module ID: 12582
-// Function ID: 12583
+// Module ID: 12600
+// Function ID: 12601
 // Name: UserProfileActivityVoiceChannelUsers
 // Dependencies: [19, 4876, 21, 7661, 504, 5917, 4988, 1177, 10613, 1115, 2]
 // Exports: default
 
-// Module 12582 (UserProfileActivityVoiceChannelUsers)
+// Module 12600 (UserProfileActivityVoiceChannelUsers)
 import util from "util" /* 1115 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;
 import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10613 */;

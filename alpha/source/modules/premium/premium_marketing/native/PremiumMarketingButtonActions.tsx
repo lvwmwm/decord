@@ -1,13 +1,13 @@
-// Module ID: 12967
-// Function ID: 12968
+// Module ID: 12966
+// Function ID: 12967
 // Name: PremiumMarketingButtonActions
-// Dependencies: [10128, 1374, 1074, 10135, 12968, 6842, 6661, 12969, 6800, 2]
+// Dependencies: [10128, 1374, 1074, 10135, 12967, 6842, 6661, 12968, 6800, 2]
 // Exports: getButtonActionHandler
 
-// Module 12967 (PremiumMarketingButtonActions)
+// Module 12966 (PremiumMarketingButtonActions)
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6842 */;
 import cta_button from "cta_button" /* 10135 */;
-import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 12968 */;
+import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 12967 */;
 import PromotionsStore from "PromotionsStore" /* 10128 */;
 
 const require = globalThis.__r;
@@ -67,8 +67,8 @@ export const getButtonActionHandler = function getButtonActionHandler(arg0) {
             isSuccess = length.length > 0;
           }
           if (isSuccess) {
-            const result = tmp3(12969).showMarketingMomentRewardScreen(length[0]);
-            const tmp3Result = tmp3(12969);
+            const result = tmp3(12968).showMarketingMomentRewardScreen(length[0]);
+            const tmp3Result = tmp3(12968);
           }
         }
       };

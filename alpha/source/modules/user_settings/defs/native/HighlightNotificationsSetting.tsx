@@ -1,10 +1,10 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15072
+// Function ID: 15073
 // Name: HighlightNotificationsSetting
-// Dependencies: [2067, 7417, 1074, 504, 11006, 1115, 15075, 2]
+// Dependencies: [2067, 7417, 1074, 504, 11006, 1115, 15073, 2]
 // Exports: useHighlightNotifications
 
-// Module 15074 (HighlightNotificationsSetting)
+// Module 15072 (HighlightNotificationsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import GuildStore from "GuildStore" /* 2067 */;

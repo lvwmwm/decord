@@ -1,10 +1,10 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16458
+// Function ID: 16459
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7014, 2045, 11822, 7303, 16455, 7302, 1074, 2052, 11821, 11844, 1366, 4527, 1115, 7818, 4525, 1485, 16431, 16456, 11849, 7333, 7351, 1110, 6747, 7707, 4849, 4847, 5043, 1981, 5046, 12488, 5314, 5364, 5881, 1101, 11841, 2]
+// Dependencies: [5, 19, 7014, 2045, 11822, 7303, 16459, 7302, 1074, 2052, 11821, 11844, 1366, 4527, 1115, 7818, 4525, 1485, 16435, 16460, 11849, 7333, 7351, 1110, 6747, 7707, 4849, 4847, 5043, 1981, 5046, 12488, 5314, 5364, 5881, 1101, 11841, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 16454 (useOnPressSearchItem)
+// Module 16458 (useOnPressSearchItem)
 import util from "util" /* 1115 */;
 import URLUtilsDefault from "URLUtils" /* 1366 */;
 import LinkingDefault from "Linking" /* 4525 */;
@@ -99,7 +99,7 @@ let closure_20 = async function _handleVoiceOrStageChannelConnectPress(arg0, val
 };
 const SearchConstants = fn(7303);
 ({ SearchMediaTypes: closure_8, SearchHistoryItemTypes: closure_9, SearchQueryTagTypes: c10 } = SearchConstants);
-const SearchNavigatorScreens = fn(16455).SearchNavigatorScreens;
+const SearchNavigatorScreens = fn(16459).SearchNavigatorScreens;
 const SearchFilterAddLocations = fn(7302).SearchFilterAddLocations;
 const Constants = fn(1074);
 ({ Routes: map1, ComponentActions: closure_14, ME: closure_15, SearchTypes: closure_16 } = Constants);

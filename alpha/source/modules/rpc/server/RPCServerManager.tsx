@@ -1,9 +1,9 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14019
+// Function ID: 14020
 // Name: RPCServerManager
-// Dependencies: [32, 8499, 7116, 2045, 2108, 2067, 1993, 4876, 4859, 4479, 2099, 1372, 4855, 4739, 1074, 2005, 8500, 4861, 1364, 573, 1241, 14021, 504, 1370, 8775, 8781, 14026, 8776, 7137, 2]
+// Dependencies: [32, 8499, 7116, 2045, 2108, 2067, 1993, 4876, 4859, 4479, 2099, 1372, 4855, 4739, 1074, 2005, 8500, 4861, 1364, 573, 1241, 14020, 504, 1370, 8775, 8781, 14025, 8776, 7137, 2]
 
-// Module 14020 (RPCServerManager)
+// Module 14019 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -12,8 +12,8 @@ import QuestTaskUtils from "QuestTaskUtils" /* 7137 */;
 import RPCHelpers from "RPCHelpers" /* 8775 */;
 import transformUserDefault from "transformUser" /* 8776 */;
 import useThermalState from "useThermalState" /* 8781 */;
-import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14021 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14026 */;
+import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14020 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14025 */;
 import _slicedToArray from "module_32" /* 32 */;
 import FramesStore from "FramesStore" /* 8499 */;
 import QuestStore from "QuestStore" /* 7116 */;

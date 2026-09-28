@@ -1,10 +1,10 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 15951
+// Function ID: 15952
 // Name: FavoritesGuildCoachmarkGraphic
 // Dependencies: [17, 21, 4836, 576, 9694, 1177, 2]
 // Exports: default
 
-// Module 15953 (FavoritesGuildCoachmarkGraphic)
+// Module 15951 (FavoritesGuildCoachmarkGraphic)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;

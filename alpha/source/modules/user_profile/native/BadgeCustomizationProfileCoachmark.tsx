@@ -1,10 +1,10 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 16624
+// Function ID: 16625
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [32, 19, 1372, 2042, 576, 1479, 1613, 16600, 504, 4488, 4550, 1115, 4559, 10589, 2]
+// Dependencies: [32, 19, 1372, 2042, 576, 1479, 1613, 16604, 504, 4488, 4550, 1115, 4559, 10589, 2]
 // Exports: default
 
-// Module 16620 (BadgeCustomizationProfileCoachmark)
+// Module 16624 (BadgeCustomizationProfileCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 4559 */;
@@ -56,7 +56,7 @@ export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
       str = "top";
     }
     str2 = str;
-    tmpResult = tmp(16600);
+    tmpResult = tmp(16604);
   }
   const items2 = [stateFromStores, visible, str2, markAsDismissed, onTryItOut, reducedMotion.enabled];
   const memo = obj2.useMemo(() => {

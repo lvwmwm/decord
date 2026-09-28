@@ -1,10 +1,10 @@
-// Module ID: 15934
-// Function ID: 15935
+// Module ID: 15932
+// Function ID: 15933
 // Name: useHomeDrawerToggleAccessibilityAction
 // Dependencies: [19, 1115, 4692, 4541, 2]
 // Exports: default
 
-// Module 15934 (useHomeDrawerToggleAccessibilityAction)
+// Module 15932 (useHomeDrawerToggleAccessibilityAction)
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
 

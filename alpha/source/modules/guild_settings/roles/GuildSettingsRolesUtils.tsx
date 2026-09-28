@@ -1,10 +1,10 @@
-// Module ID: 17410
-// Function ID: 17411
+// Module ID: 17414
+// Function ID: 17415
 // Name: GuildSettingsRolesUtils
-// Dependencies: [19, 2108, 1372, 17401, 1074, 504, 4678, 6550, 5831, 1241, 5829, 1370, 2]
+// Dependencies: [19, 2108, 1372, 17405, 1074, 504, 4678, 6550, 5831, 1241, 5829, 1370, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildMembers, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 17410 (GuildSettingsRolesUtils)
+// Module 17414 (GuildSettingsRolesUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
@@ -18,7 +18,7 @@ import UserStore from "UserStore" /* 1372 */;
 const require = globalThis.__r;
 
 require = fn;
-const constants = fn(17401).GuildSettingsRoleEditSections;
+const constants = fn(17405).GuildSettingsRoleEditSections;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesUtils.tsx");

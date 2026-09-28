@@ -1,12 +1,12 @@
-// Module ID: 17330
-// Function ID: 17331
+// Module ID: 17334
+// Function ID: 17335
 // Name: RuleActionRows
-// Dependencies: [19, 2045, 4467, 11341, 21, 4836, 576, 17307, 10871, 1115, 4800, 17331, 1981, 17332, 17310, 5917, 5279, 4832, 5929, 17306, 5999, 2]
+// Dependencies: [19, 2045, 4467, 11341, 21, 4836, 576, 17311, 10871, 1115, 4800, 17335, 1981, 17336, 17314, 5917, 5279, 4832, 5929, 17310, 5999, 2]
 // Exports: default
 
-// Module 17330 (RuleActionRows)
+// Module 17334 (RuleActionRows)
 import nativeDefault from "native" /* 576 */;
-import getActionInfo from "getActionInfo" /* 17310 */;
+import getActionInfo from "getActionInfo" /* 17314 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -66,7 +66,7 @@ const result = size.fileFinishedImporting("modules/guild_automod/native/componen
 export default function RuleActionRows(rule) {
   rule = rule.rule;
   const onChangeRule = rule.onChangeRule;
-  const availableActionTypes = rule(17306).getAvailableActionTypes(rule.triggerType);
+  const availableActionTypes = rule(17310).getAvailableActionTypes(rule.triggerType);
   let tmp3 = null;
   if (0 !== availableActionTypes.length) {
     let obj2 = { title: null, hasIcons: true, children: null };

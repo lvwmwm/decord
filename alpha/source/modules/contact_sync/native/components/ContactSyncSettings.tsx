@@ -1,10 +1,10 @@
-// Module ID: 14381
-// Function ID: 14382
+// Module ID: 14380
+// Function ID: 14381
 // Name: ContactSyncSettings
-// Dependencies: [5, 19, 1372, 12176, 1074, 21, 12177, 4528, 1115, 5909, 12181, 1241, 12173, 504, 2021, 1385, 8053, 5039, 14382, 1981, 2]
+// Dependencies: [5, 19, 1372, 12176, 1074, 21, 12177, 4528, 1115, 5909, 12181, 1241, 12173, 504, 2021, 1385, 8053, 5039, 14381, 1981, 2]
 // Exports: default, handleSyncContacts
 
-// Module 14381 (ContactSyncSettings)
+// Module 14380 (ContactSyncSettings)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12173 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12177 */;

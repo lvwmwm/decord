@@ -1,16 +1,16 @@
-// Module ID: 16486
-// Function ID: 16487
+// Module ID: 16490
+// Function ID: 16491
 // Name: MessageRow
-// Dependencies: [19, 17, 4825, 2048, 2045, 2067, 5017, 1074, 21, 4836, 576, 504, 5335, 4989, 1177, 4832, 9603, 9853, 8741, 4678, 7626, 16487, 12866, 16488, 5083, 7403, 6747, 16464, 1115, 9568, 7304, 2]
+// Dependencies: [19, 17, 4825, 2048, 2045, 2067, 5017, 1074, 21, 4836, 576, 504, 5335, 4989, 1177, 4832, 9603, 9853, 8741, 4678, 7626, 16491, 12865, 16492, 5083, 7403, 6747, 16468, 1115, 9568, 7304, 2]
 
-// Module 16486 (MessageRow)
+// Module 16490 (MessageRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
 import useMessageAuthorDefault from "useMessageAuthor" /* 5083 */;
-import SearchListRow from "SearchListRow" /* 16464 */;
+import SearchListRow from "SearchListRow" /* 16468 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
@@ -18,7 +18,7 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 
-const PollBadgeDefault = tmp5(16488);
+const PollBadgeDefault = tmp5(16492);
 require = fn;
 function GuildChannelMessageRowHeader(channel) {
   channel = channel.channel;
@@ -80,7 +80,7 @@ function PrivateChannelMessageRowLabel(message) {
       const item = recipients.forEach((item) => message(closure_1_2[20]).getUser(item));
     }
   }, items1);
-  const searchMessageTimestamp = message(16487).useSearchMessageTimestamp(message, channel);
+  const searchMessageTimestamp = message(16491).useSearchMessageTimestamp(message, channel);
   const obj2 = { style: tmp.labelContainer, children: null };
   const obj3 = { style: tmp.authorRow, children: null };
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
@@ -102,13 +102,13 @@ function PrivateChannelMessageRowLabel(message) {
   let tmp9Result = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj7 = { size: "xs", style: tmp.suppressNotificationsIcon };
-    tmp9Result = tmp9(tmp4(12866).BellZIcon, obj7);
+    tmp9Result = tmp9(tmp4(12865).BellZIcon, obj7);
   }
   items3[2] = tmp9Result;
   let tmp9Result2 = null;
   if (message.isPoll()) {
     const obj8 = { style: tmp.pollBadge };
-    tmp9Result2 = tmp9(channel(16488), obj8);
+    tmp9Result2 = tmp9(channel(16492), obj8);
   }
   items3[3] = tmp9Result2;
   obj2.children = items3;
@@ -128,7 +128,7 @@ function GuildChannelMessageRowLabel(arg0) {
     const tmp2Result3 = tmp2(7403);
     const isRoleStyleAndRoleColorsEligibleForERC = tmp2Result3.useIsRoleStyleAndRoleColorsEligibleForERC(channel.guild_id, message.author.id, stateFromStores, processColorStringsArray);
     const tmp2Result = tmp2(7403);
-    const searchMessageTimestamp = tmp2(16487).useSearchMessageTimestamp(message, channel);
+    const searchMessageTimestamp = tmp2(16491).useSearchMessageTimestamp(message, channel);
     const obj3 = { style: tmp.labelContainer, children: null };
     const obj4 = { style: tmp.authorRow, children: null };
     let tmp18 = "dot" === stateFromStores;
@@ -156,7 +156,7 @@ function GuildChannelMessageRowLabel(arg0) {
     let tmp21Result = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj8 = { size: "xs", style: tmp.suppressNotificationsIcon };
-      tmp21Result = tmp21(tmp2(12866).BellZIcon, obj8);
+      tmp21Result = tmp21(tmp2(12865).BellZIcon, obj8);
     }
     items2[2] = tmp21Result;
     let tmp21Result2 = null;

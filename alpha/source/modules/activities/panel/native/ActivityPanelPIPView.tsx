@@ -1,18 +1,18 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 16841
+// Function ID: 16842
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 4825, 8939, 2045, 2044, 2005, 8502, 16838, 1074, 11756, 21, 1177, 4836, 576, 1613, 504, 1479, 16833, 10896, 4566, 16839, 4540, 4837, 5280, 16840, 16841, 1115, 6073, 4458, 16835, 8915, 2]
+// Dependencies: [19, 17, 4825, 8939, 2045, 2044, 2005, 8502, 16842, 1074, 11756, 21, 1177, 4836, 576, 1613, 504, 1479, 16837, 10896, 4566, 16843, 4540, 4837, 5280, 16844, 16845, 1115, 6073, 4458, 16839, 8915, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 16837 (ActivityPanelPIPView)
+// Module 16841 (ActivityPanelPIPView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 8915 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10896 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 16835 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 16839 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 16839 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 16843 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 8939 */;
@@ -259,7 +259,7 @@ const ActivityLayoutMode = fn(2005).ActivityLayoutMode;
 const ActivityPanelConstants = fn(8502);
 let ACTIVITY_PIP_SIZE = ActivityPanelConstants.ACTIVITY_PIP_SIZE;
 ({ ActivityPanelModes: closure_11, ACTIVITY_LAYOUT_PHYSICS_GESTURE: closure_12, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: map1, LANDSCAPE_IFRAME_HORIZONTAL_MARGIN: closure_14 } = ActivityPanelConstants);
-let closure_15 = fn(16838).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
+let closure_15 = fn(16842).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
 const ThemeTypes = fn(1074).ThemeTypes;
 const PIP_WINDOW_OFFSET = fn(11756).PIP_WINDOW_OFFSET;
 const jsx = fn(21).jsx;

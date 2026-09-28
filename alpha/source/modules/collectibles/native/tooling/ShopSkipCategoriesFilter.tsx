@@ -1,10 +1,10 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15320
+// Function ID: 15321
 // Name: ShopSkipCategoriesFilter
 // Dependencies: [19, 17, 6962, 21, 4836, 576, 504, 5279, 4832, 6961, 2]
 // Exports: ShopSkipCategoriesFilter
 
-// Module 15322 (ShopSkipCategoriesFilter)
+// Module 15320 (ShopSkipCategoriesFilter)
 import nativeDefault from "native" /* 576 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
 import noop from "module_19" /* 19 */;

@@ -1,14 +1,14 @@
-// Module ID: 15354
-// Function ID: 15355
+// Module ID: 15352
+// Function ID: 15353
 // Name: BuildOverrideActiveSetting
-// Dependencies: [10969, 21, 14140, 504, 11267, 14379, 15348, 11006, 14689, 2]
+// Dependencies: [10969, 21, 14139, 504, 11267, 14378, 15346, 11006, 14506, 2]
 
-// Module 15354 (BuildOverrideActiveSetting)
+// Module 15352 (BuildOverrideActiveSetting)
 import initialize from "initialize" /* 504 */;
 import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11267 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14140 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14379 */;
-import DevToolsContent from "DevToolsContent" /* 15348 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14139 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14378 */;
+import DevToolsContent from "DevToolsContent" /* 15346 */;
 import BuildOverrideStore from "BuildOverrideStore" /* 10969 */;
 
 require = fn;
@@ -19,7 +19,7 @@ const pressable = SettingBuilders.createPressable({
     return "Build Override Active";
   },
   parent: null,
-  IconComponent: fn(14689).RefreshIcon,
+  IconComponent: fn(14506).RefreshIcon,
   useDescription: function useBuildOverrideActiveDescription() {
     const items = [BuildOverrideStore];
     const stateFromStores = initialize.useStateFromStores(items, () => {

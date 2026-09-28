@@ -1,9 +1,9 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15016
+// Function ID: 15017
 // Name: EmbedAndLinkPreviewsSetting
 // Dependencies: [7417, 11006, 1115, 2021, 2]
 
-// Module 15018 (EmbedAndLinkPreviewsSetting)
+// Module 15016 (EmbedAndLinkPreviewsSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;

@@ -1,14 +1,14 @@
-// Module ID: 13147
-// Function ID: 13148
+// Module ID: 13146
+// Function ID: 13147
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1074, 21, 4836, 6821, 576, 1115, 2111, 4832, 5435, 1177, 13148, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4836, 6821, 576, 1115, 2111, 4832, 5435, 1177, 13147, 2]
 // Exports: default
 
-// Module 13147 (GuildBoostingMarketingFaq)
+// Module 13146 (GuildBoostingMarketingFaq)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
-import _modDef13148 from "module_13148" /* 13148 */;
+import _modDef13147 from "module_13147" /* 13147 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -178,7 +178,7 @@ export default function GuildBoostingMarketingFaq() {
         str = "interactive-text-active";
       }
       items1 = [closure_1_7(closure_0(4832).Text, { color: str, style: closure_0.question, variant: "text-md/normal", children: getQuestion.getQuestion() }), ];
-      const obj4 = { source: _modDef13148, style: null };
+      const obj4 = { source: _modDef13147, style: null };
       const items2 = [closure_0.questionIcon, ];
       let questionIconExpanded = tmp;
       if (tmp) {

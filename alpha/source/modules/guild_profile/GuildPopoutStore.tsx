@@ -1,9 +1,9 @@
-// Module ID: 13514
-// Function ID: 13515
+// Module ID: 13513
+// Function ID: 13514
 // Name: GuildPopoutStore
 // Dependencies: [502, 6759, 504, 573, 2]
 
-// Module 13514 (GuildPopoutStore)
+// Module 13513 (GuildPopoutStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 6759 */;

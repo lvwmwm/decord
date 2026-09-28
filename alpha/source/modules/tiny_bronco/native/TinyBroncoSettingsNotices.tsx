@@ -1,10 +1,10 @@
-// Module ID: 14353
-// Function ID: 14354
+// Module ID: 14352
+// Function ID: 14353
 // Name: TinyBroncoSettingsNotices
-// Dependencies: [19, 17, 1372, 9231, 7847, 21, 4836, 576, 14247, 14275, 7859, 7861, 1177, 5281, 1115, 3071, 14287, 9235, 5735, 5048, 14354, 8104, 2]
+// Dependencies: [19, 17, 1372, 9231, 7847, 21, 4836, 576, 14246, 14274, 7859, 7861, 1177, 5281, 1115, 3071, 14286, 9235, 5735, 5048, 14353, 8104, 2]
 // Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled, useMessageRequestsNoticeVariant
 
-// Module 14353 (TinyBroncoSettingsNotices)
+// Module 14352 (TinyBroncoSettingsNotices)
 import nativeDefault from "native" /* 576 */;
 import _modDef3071 from "module_3071" /* 3071 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5048 */;
@@ -12,10 +12,10 @@ import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5735 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7859 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7861 */;
 import useUserIsTeen from "useUserIsTeen" /* 8104 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14247 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14275 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14287 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14354 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14246 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14274 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14286 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

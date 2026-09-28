@@ -1,16 +1,16 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 16985
+// Function ID: 16986
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 6727, 8128, 8139, 1115, 9204, 5917, 9190, 16982, 9131, 2]
+// Dependencies: [19, 21, 6727, 8128, 8139, 1115, 9204, 5917, 9190, 16986, 9131, 2]
 
-// Module 16981 (VoicePanelGamesSection)
+// Module 16985 (VoicePanelGamesSection)
 import util from "util" /* 1115 */;
 import useGame from "useGame" /* 6727 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8128 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
 import FormComponents from "FormComponents" /* 9131 */;
 import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9190 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 16982 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 16986 */;
 import noop from "module_19" /* 19 */;
 
 const GameActivityIconDefault = tmp3(9204);

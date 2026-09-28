@@ -1,10 +1,10 @@
-// Module ID: 17377
-// Function ID: 17378
+// Module ID: 17381
+// Function ID: 17382
 // Name: guildSettingsStickerToasts
 // Dependencies: [4528, 6028, 1115, 4787, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 17377 (guildSettingsStickerToasts)
+// Module 17381 (guildSettingsStickerToasts)
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4787 */;

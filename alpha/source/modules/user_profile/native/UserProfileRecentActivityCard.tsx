@@ -1,10 +1,10 @@
-// Module ID: 12637
-// Function ID: 12638
+// Module ID: 12655
+// Function ID: 12656
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 12564, 7592, 12569, 4836, 576, 7789, 4540, 8021, 4685, 5899, 1397, 2011, 4832, 12555, 6583, 6603, 12576, 12577, 8128, 8139, 5435, 1115, 2]
+// Dependencies: [19, 17, 21, 12582, 7592, 12587, 4836, 576, 7789, 4540, 8021, 4685, 5899, 1397, 2011, 4832, 12573, 6583, 6603, 12594, 12595, 8128, 8139, 5435, 1115, 2]
 // Exports: default
 
-// Module 12637 (UserProfileRecentActivityCard)
+// Module 12655 (UserProfileRecentActivityCard)
 import nativeDefault from "native" /* 576 */;
 import StringUtils from "StringUtils" /* 2011 */;
 import FastImageDefault from "FastImage" /* 5899 */;
@@ -13,11 +13,11 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import utils from "utils" /* 7592 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 7789 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8139 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 12555 */;
-import BadgesAll from "Badges" /* 12564 */;
-import TrendingType from "TrendingType" /* 12569 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 12576 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 12577 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 12573 */;
+import BadgesAll from "Badges" /* 12582 */;
+import TrendingType from "TrendingType" /* 12587 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 12594 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 12595 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
@@ -307,7 +307,7 @@ export default function UserProfileRecentActivityCard(style) {
           const obj7 = { title: entry.extra.activity_name };
           obj8 = obj7;
         } else {
-          obj8 = { title: "__initData" };
+          obj8 = { title: "r" };
         }
         tmpResult6 = tmp(7789);
       }

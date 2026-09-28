@@ -1,10 +1,10 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 16974
+// Function ID: 16975
 // Name: ActivityShelfItem
-// Dependencies: [19, 1074, 1181, 21, 4836, 576, 4683, 11623, 11539, 5901, 16968, 1880, 8765, 6943, 8933, 8319, 5435, 4540, 16967, 11568, 1177, 16971, 16969, 4988, 12294, 4832, 11628, 1115, 2]
+// Dependencies: [19, 1074, 1181, 21, 4836, 576, 4683, 11623, 11539, 5901, 16972, 1880, 8765, 6943, 8933, 8319, 5435, 4540, 16971, 11568, 1177, 16975, 16973, 4988, 12294, 4832, 11628, 1115, 2]
 // Exports: default
 
-// Module 16970 (ActivityShelfItem)
+// Module 16974 (ActivityShelfItem)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1880 */;
@@ -20,9 +20,9 @@ import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground"
 import useActivityShelfItem from "useActivityShelfItem" /* 11539 */;
 import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 11623 */;
 import _modDef12294 from "module_12294" /* 12294 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 16967 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 16968 */;
-import useActivityUsersDefault from "useActivityUsers" /* 16969 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 16971 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 16972 */;
+import useActivityUsersDefault from "useActivityUsers" /* 16973 */;
 import noop from "module_19" /* 19 */;
 
 const useActivityShelfItemDefault = useActivityShelfItem;
@@ -168,7 +168,7 @@ export default function ActivityShelfItem(arg0) {
     tmp15Result3 = null;
     if (isTestModeForApplication) {
       const obj9 = { style: tmp.developerIconContainer, children: null };
-      const obj10 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp3(16971), color: tmp.developerIconColor.color };
+      const obj10 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp3(16975), color: tmp.developerIconColor.color };
       obj9.children = tmp15(tmp8(1177).Icon, obj10);
       tmp15Result3 = tmp15(tmp3(5901), obj9);
       const tmp3Result4 = tmp3(5901);

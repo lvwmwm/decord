@@ -1,14 +1,14 @@
-// Module ID: 14759
-// Function ID: 14760
+// Module ID: 14757
+// Function ID: 14758
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 5589, 4462, 504, 6673, 5898, 14760, 14761, 11685, 1370, 2]
+// Dependencies: [5, 32, 19, 5589, 4462, 504, 6673, 5898, 14758, 14759, 11685, 1370, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 14759 (GuildRoleSubscriptionsHooks)
+// Module 14757 (GuildRoleSubscriptionsHooks)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6673 */;
 import useRequestDefault from "useRequest" /* 11685 */;
-import subscriptionUtils from "subscriptionUtils" /* 14761 */;
+import subscriptionUtils from "subscriptionUtils" /* 14759 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

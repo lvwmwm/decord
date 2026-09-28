@@ -1,10 +1,10 @@
-// Module ID: 15332
-// Function ID: 15333
+// Module ID: 15330
+// Function ID: 15331
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1372, 1390, 21, 1391, 10364, 1115, 10360, 2877, 4836, 576, 5279, 4832, 5281, 10357, 10358, 504, 15333, 5999, 5917, 8732, 5086, 2]
+// Dependencies: [32, 19, 17, 1372, 1390, 21, 1391, 10364, 1115, 10360, 2877, 4836, 576, 5279, 4832, 5281, 10357, 10358, 504, 15331, 5999, 5917, 8732, 5086, 2]
 // Exports: default
 
-// Module 15332 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 15330 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2877 from "module_2877" /* 2877 */;

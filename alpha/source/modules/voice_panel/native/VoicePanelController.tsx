@@ -1,10 +1,10 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16873
+// Function ID: 16874
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 4825, 2044, 4852, 7738, 8939, 8844, 2045, 1993, 4859, 2099, 5044, 11755, 11753, 1074, 2005, 8502, 4857, 11756, 21, 16870, 4566, 8853, 1091, 504, 4528, 8907, 1115, 16871, 16872, 9104, 8782, 16873, 1479, 1613, 16899, 11761, 11757, 10896, 12, 1255, 1110, 1248, 8926, 11516, 5180, 1241, 7780, 8805, 16829, 4540, 16900, 5037, 5016, 4701, 6459, 16901, 16902, 4458, 16903, 16904, 16911, 16834, 16912, 11754, 4718, 2]
+// Dependencies: [32, 19, 17, 4825, 2044, 4852, 7738, 8939, 8844, 2045, 1993, 4859, 2099, 5044, 11755, 11753, 1074, 2005, 8502, 4857, 11756, 21, 16874, 4566, 8853, 1091, 504, 4528, 8907, 1115, 16875, 16876, 9104, 8782, 16877, 1479, 1613, 16903, 11761, 11757, 10896, 12, 1255, 1110, 1248, 8926, 11516, 5180, 1241, 7780, 8805, 16833, 4540, 16904, 5037, 5016, 4701, 6459, 16905, 16906, 4458, 16907, 16908, 16915, 16838, 16916, 11754, 4718, 2]
 // Exports: default
 
-// Module 16869 (VoicePanelController)
+// Module 16873 (VoicePanelController)
 import DurationsDefault from "Durations" /* 1091 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
@@ -24,12 +24,12 @@ import _modDef8907 from "module_8907" /* 8907 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10896 */;
 import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11757 */;
-import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 16829 */;
-import _modDef16871 from "module_16871" /* 16871 */;
-import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown" /* 16872 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 16873 */;
-import useIsVoicePanelParticipantFocusable from "useIsVoicePanelParticipantFocusable" /* 16900 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 16912 */;
+import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 16833 */;
+import _modDef16875 from "module_16875" /* 16875 */;
+import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown" /* 16876 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 16877 */;
+import useIsVoicePanelParticipantFocusable from "useIsVoicePanelParticipantFocusable" /* 16904 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 16916 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -1076,7 +1076,7 @@ export default function VoicePanelController(channelId) {
               tmp15 = tmp11;
             }
             if (tmp15) {
-              const obj2 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: _modDef16871, content: null, disableAnimations: true, toastDurationMs: 3000 };
+              const obj2 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: _modDef16875, content: null, disableAnimations: true, toastDurationMs: 3000 };
               const intl = util.intl;
               obj2.content = intl.string(util.t.O2IlPT);
               ToastActionCreatorsDefault.open(obj2);

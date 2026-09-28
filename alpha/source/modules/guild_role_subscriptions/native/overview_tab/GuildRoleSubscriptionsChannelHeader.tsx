@@ -1,9 +1,9 @@
-// Module ID: 12842
-// Function ID: 12843
+// Module ID: 12841
+// Function ID: 12842
 // Name: GuildRoleSubscriptionsChannelHeader
 // Dependencies: [19, 17, 21, 4836, 576, 1177, 12295, 4832, 1115, 2]
 
-// Module 12842 (GuildRoleSubscriptionsChannelHeader)
+// Module 12841 (GuildRoleSubscriptionsChannelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;

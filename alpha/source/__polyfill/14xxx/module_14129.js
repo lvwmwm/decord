@@ -1,18 +1,18 @@
 // Module ID: 14129
 // Function ID: 14130
-// Dependencies: [19, 14127]
+// Dependencies: [19, 14125]
 // Exports: default
 
 // Module 14129
-import _modDef14127 from "module_14127" /* 14127 */;
+import _modDef14125 from "module_14125" /* 14125 */;
 import noop from "module_19" /* 19 */;
 
 
-export default function useReanimatedTransitionProgress() {
-  const context = noop.useContext(_modDef14127);
+export default function useReanimatedHeaderHeight() {
+  const context = noop.useContext(_modDef14125);
   if (undefined === context) {
     const _Error = Error;
-    const error = new Error("Couldn't find values for reanimated transition progress. Are you inside a screen in Native Stack?");
+    const error = new Error("Couldn't find the header height using Reanimated. Are you inside a screen in a navigator with a header and your NavigationContainer is wrapped in ReanimatedScreenProvider?");
     throw error;
   } else {
     return context;

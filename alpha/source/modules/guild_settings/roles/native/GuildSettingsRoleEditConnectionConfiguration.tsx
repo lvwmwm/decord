@@ -1,10 +1,10 @@
-// Module ID: 17434
-// Function ID: 17435
+// Module ID: 17438
+// Function ID: 17439
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1074, 5720, 21, 4836, 576, 4767, 11058, 1177, 1397, 4685, 5917, 1115, 5435, 5992, 6621, 17435, 1364, 4832, 5595, 5999, 2]
+// Dependencies: [32, 19, 17, 1074, 5720, 21, 4836, 576, 4767, 11058, 1177, 1397, 4685, 5917, 1115, 5435, 5992, 6621, 17439, 1364, 4832, 5595, 5999, 2]
 // Exports: default
 
-// Module 17434 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 17438 (GuildSettingsRoleEditConnectionConfiguration)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -16,7 +16,7 @@ import TableRow from "TableRow" /* 5917 */;
 import XSmallIcon from "XSmallIcon" /* 5992 */;
 import TableRowGroup from "TableRowGroup" /* 5999 */;
 import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11058 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 17435 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 17439 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -178,7 +178,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  const realizedOperatorForResult = metadataField(17435).realizedOperatorFor(existingPendingConfiguration.operator);
+  const realizedOperatorForResult = metadataField(17439).realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   value = undefined;
   if (existingPendingConfiguration != null) {
@@ -186,9 +186,9 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let obj = metadataField(17435);
-  const tmpResult = metadataField(17435);
-  str1 = metadataField(17435).displayedValueFor(value, realizedOperatorForResult).toString();
+  let obj = metadataField(17439);
+  const tmpResult = metadataField(17439);
+  str1 = metadataField(17439).displayedValueFor(value, realizedOperatorForResult).toString();
   let mapped = noop;
   [value] = noop.useState(str1);
   closure_10 = tmp9;

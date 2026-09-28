@@ -1,10 +1,10 @@
-// Module ID: 13222
-// Function ID: 13223
+// Module ID: 13221
+// Function ID: 13222
 // Name: dispatchSocketMessage
-// Dependencies: [109, 2049, 4734, 1386, 2045, 2108, 1372, 4855, 4493, 4494, 1074, 3, 13191, 13173, 9, 504, 13223, 1222, 13224, 6912, 13228, 573, 1393, 12, 7201, 1967, 1389, 4457, 7285, 7182, 13304, 5174, 6675, 7626, 7642, 5192, 5060, 4997, 1966, 13305, 2]
+// Dependencies: [109, 2049, 4734, 1386, 2045, 2108, 1372, 4855, 4493, 4494, 1074, 3, 13190, 13172, 9, 504, 13222, 1222, 13223, 6912, 13227, 573, 1393, 12, 7201, 1967, 1389, 4457, 7285, 7182, 13303, 5174, 6675, 7626, 7642, 5192, 5060, 4997, 1966, 13304, 2]
 // Exports: default
 
-// Module 13222 (dispatchSocketMessage)
+// Module 13221 (dispatchSocketMessage)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import _modDef12 from "module_12" /* 12 */;
@@ -15,8 +15,8 @@ import SubscriptionPlanActionCreatorsAll from "SubscriptionPlanActionCreators" /
 import convertServerThreadMemberDefault from "convertServerThreadMember" /* 7201 */;
 import UserActionCreatorsAll from "UserActionCreators" /* 7626 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7642 */;
-import ReadyPayloadUtilsAll from "ReadyPayloadUtils" /* 13223 */;
-import splitAgeRestrictedActivitiesDefault from "splitAgeRestrictedActivities" /* 13305 */;
+import ReadyPayloadUtilsAll from "ReadyPayloadUtils" /* 13222 */;
+import splitAgeRestrictedActivitiesDefault from "splitAgeRestrictedActivities" /* 13304 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4734 */;
 import UserRecord from "UserRecord" /* 1386 */;
@@ -26,7 +26,7 @@ import UserStore from "UserStore" /* 1372 */;
 import VoiceStateStore from "VoiceStateStore" /* 4855 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4493 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;
-import ActionBatcher_mod from "ActionBatcher" /* 13191 */;
+import ActionBatcher_mod from "ActionBatcher" /* 13190 */;
 
 require = fn;
 function defineSimpleDispatch(arg0, dispatch) {
@@ -207,7 +207,7 @@ const ChannelLoader = fn(2045).ChannelLoader;
 const ActivityTypes = fn(1074).ActivityTypes;
 let closure_17 = new LoggerDefault("ConnectionStore");
 let ActionBatcher = ActionBatcher_mod;
-const importDefaultResult4 = new ActionBatcher(fn(13173).socket, (arg0, id) => {
+const importDefaultResult4 = new ActionBatcher(fn(13172).socket, (arg0, id) => {
   let tmp = arg0;
   if (arg0 == null) {
     const obj = { type: "CHANNEL_UPDATES", channels: [] };
@@ -235,7 +235,7 @@ const importDefaultResult4 = new ActionBatcher(fn(13173).socket, (arg0, id) => {
   return tmp;
 }, (arg0) => "CHANNEL_UPDATE" !== arg0);
 let ActionBatcher = ActionBatcher_mod;
-const importDefaultResult11 = new ActionBatcher(fn(13173).socket, (arg0, guildId) => {
+const importDefaultResult11 = new ActionBatcher(fn(13172).socket, (arg0, guildId) => {
   let tmp = arg0;
   if (null == arg0) {
     const obj = { type: "SOUNDBOARD_SOUNDS_RECEIVED", updates: [] };
@@ -249,7 +249,7 @@ const importDefaultResult11 = new ActionBatcher(fn(13173).socket, (arg0, guildId
   return tmp;
 }, (arg0) => "SOUNDBOARD_SOUNDS" !== arg0);
 let ActionBatcher = ActionBatcher_mod;
-const importDefaultResult21 = new ActionBatcher(fn(13173).socket, (arg0, arg1) => {
+const importDefaultResult21 = new ActionBatcher(fn(13172).socket, (arg0, arg1) => {
   let tmp = arg0;
   if (arg0 == null) {
     const obj = { type: "GUILD_MEMBERS_CHUNK_BATCH", chunks: [] };
@@ -260,7 +260,7 @@ const importDefaultResult21 = new ActionBatcher(fn(13173).socket, (arg0, arg1) =
   return tmp;
 }, (arg0) => "GUILD_MEMBERS_CHUNK" !== arg0);
 let ActionBatcher = ActionBatcher_mod;
-const importDefaultResult31 = new ActionBatcher(fn(13173).socket, (arg0, arg1) => {
+const importDefaultResult31 = new ActionBatcher(fn(13172).socket, (arg0, arg1) => {
   let tmp = arg0;
   if (null == arg0) {
     const obj = { type: "PRESENCE_UPDATES", updates: [] };
@@ -290,7 +290,7 @@ let result = definePreloadableDispatch(["INITIAL_GUILD"], (data_mode) => {
   initialGuild.measure(() => {
     const Emitter = initializeDefault.Emitter;
     Emitter.batched(() => {
-      const hydrateInitialGuildResult = ReadyPayloadUtilsAll.hydrateInitialGuild(closure_1_0, closure_0(13173).socket.identifyStartTime);
+      const hydrateInitialGuildResult = ReadyPayloadUtilsAll.hydrateInitialGuild(closure_1_0, closure_0(13172).socket.identifyStartTime);
       let obj4 = hydrateInitialGuildResult;
       if (null != currentUser.getCurrentUser()) {
         const obj2 = { type: "GUILD_CREATE", guild: hydrateInitialGuildResult };
@@ -339,8 +339,8 @@ defineSimpleDispatch(["READY_SUPPLEMENTAL"], (arg0) => {
     Emitter.batched(() => {
       const hydrateReadySupplemental = closure_1_1(9).hydrateReadySupplemental;
       const measureResult = hydrateReadySupplemental.measure(() => {
-        obj = closure_2_2(13223);
-        return obj.hydrateReadySupplementalPayload(obj, closure_2_0(13173).socket.identifyStartTime);
+        obj = closure_2_2(13222);
+        return obj.hydrateReadySupplementalPayload(obj, closure_2_0(13172).socket.identifyStartTime);
       });
       let guilds = measureResult.guilds;
       const found = guilds.filter((unavailable) => true !== unavailable.unavailable);
@@ -456,7 +456,7 @@ defineSimpleDispatch(["READY_SUPPLEMENTAL"], (arg0) => {
         obj = { error, action: obj.type };
         result = socket.resetSocketOnDispatchError(obj);
       });
-      const localVoiceState = closure_1_0(13173).localVoiceState;
+      const localVoiceState = closure_1_0(13172).localVoiceState;
       localVoiceState.update();
     });
   });
@@ -526,7 +526,7 @@ let result1 = definePreloadableDispatch(["READY"], (guilds) => {
       const Emitter = initializeDefault.Emitter;
       Emitter.batched(() => {
         const hydrateReady = closure_1_1(9).hydrateReady;
-        const measureResult = hydrateReady.measure(() => closure_2_2(13223).hydrateReadyPayloadPrioritized(obj4, user(13173).socket.identifyStartTime, closure_1));
+        const measureResult = hydrateReady.measure(() => closure_2_2(13222).hydrateReadyPayloadPrioritized(obj4, user(13172).socket.identifyStartTime, closure_1));
         const private_channels = measureResult.private_channels;
         let obj4 = private_channels.map((item) => closure_1_6(item));
         let guilds = obj4.guilds;
@@ -548,8 +548,8 @@ let result1 = definePreloadableDispatch(["READY"], (guilds) => {
         }
         let result1;
         if (null != prop) {
-          result1 = user(13224).b64ToDeclarativeSettingsProto(obj4.notification_settings.declarative_settings_proto);
-          let obj2 = user(13224);
+          result1 = user(13223).b64ToDeclarativeSettingsProto(obj4.notification_settings.declarative_settings_proto);
+          let obj2 = user(13223);
         }
         closure_1_1(6912)("AllGatewayConnectionStores", () => obj4(geoRestrictedGuilds[20]));
         const dispatchReady = tmp(9).dispatchReady;
@@ -644,9 +644,9 @@ let result1 = definePreloadableDispatch(["READY"], (guilds) => {
           });
           const dispatchResult1 = tmp(573).dispatch(obj4);
         }
-        const localPresenceState = user(13173).localPresenceState;
+        const localPresenceState = user(13172).localPresenceState;
         localPresenceState.update();
-        const localVoiceState = user(13173).localVoiceState;
+        const localVoiceState = user(13172).localVoiceState;
         localVoiceState.update();
       });
     });
@@ -669,9 +669,9 @@ defineSimpleDispatch(["EXPERIMENT_SESSION_OVERRIDE_DELETE"], (experimentName) =>
   DispatcherDefault.dispatch({ type: "APEX_EXPERIMENT_SESSION_OVERRIDE_DELETE", experimentName: experimentName.experiment_name });
 });
 defineSimpleDispatch(["RESUMED"], () => {
-  const localPresenceState = obj(13173).localPresenceState;
+  const localPresenceState = obj(13172).localPresenceState;
   localPresenceState.forceUpdate();
-  const localVoiceState = obj(13173).localVoiceState;
+  const localVoiceState = obj(13172).localVoiceState;
   localVoiceState.forceUpdate();
   obj = { type: "CONNECTION_RESUMED" };
   DispatcherDefault.dispatch(obj).catch((error) => {
@@ -2677,8 +2677,8 @@ defineSimpleDispatch(["NOTIFICATION_SETTINGS_UPDATE"], (flags) => {
   }
   let result;
   if (null != prop) {
-    result = obj2(13224).b64ToDeclarativeSettingsProto(flags.declarative_settings_proto);
-    const obj = obj2(13224);
+    result = obj2(13223).b64ToDeclarativeSettingsProto(flags.declarative_settings_proto);
+    const obj = obj2(13223);
   }
   obj2 = { type: "NOTIFICATION_SETTINGS_UPDATE", settings: { flags: flags.flags, declarativeSettings: result } };
   DispatcherDefault.dispatch(obj2).catch((error) => {

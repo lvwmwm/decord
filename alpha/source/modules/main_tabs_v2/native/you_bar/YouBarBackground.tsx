@@ -1,9 +1,9 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16020
+// Function ID: 16021
 // Name: YouBarBackground
-// Dependencies: [19, 17, 14627, 21, 4836, 576, 5976, 5293, 672, 4531, 14715, 4566, 5280, 2]
+// Dependencies: [19, 17, 14627, 21, 4836, 576, 5976, 5293, 672, 4531, 14713, 4566, 5280, 2]
 
-// Module 16024 (YouBarBackground)
+// Module 16020 (YouBarBackground)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import useToken from "useToken" /* 4531 */;
@@ -11,7 +11,7 @@ import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
 import spring from "spring" /* 5280 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import _modDef5976 from "module_5976" /* 5976 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 14715 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 14713 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

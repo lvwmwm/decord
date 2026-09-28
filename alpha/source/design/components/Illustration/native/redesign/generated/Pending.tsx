@@ -1,10 +1,10 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16710
+// Function ID: 16711
 // Name: Pending
-// Dependencies: [19, 17, 21, 7679, 16707, 16708, 16709, 4685, 2]
+// Dependencies: [19, 17, 21, 7679, 16711, 16712, 16713, 4685, 2]
 // Exports: Pending, getPendingSource, usePendingSource
 
-// Module 16706 (Pending)
+// Module 16710 (Pending)
 import shared from "shared" /* 4685 */;
 import _mod7679 from "module_7679" /* 7679 */;
 import noop from "module_19" /* 19 */;
@@ -20,13 +20,13 @@ const result = size.fileFinishedImporting("design/components/Illustration/native
 export const getPendingSource = function getPendingSource(theme) {
   return _mod7679.getIllustrationSource(theme, {
     dark() {
-      return require("module_16707");
+      return require("module_16711");
     },
     darker() {
-      return require("module_16708");
+      return require("module_16712");
     },
     light() {
-      return require("module_16709");
+      return require("module_16713");
     }
   });
 };
@@ -34,13 +34,13 @@ export const usePendingSource = function usePendingSource() {
   const obj = shared;
   return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_16707");
+      return require("module_16711");
     },
     darker() {
-      return require("module_16708");
+      return require("module_16712");
     },
     light() {
-      return require("module_16709");
+      return require("module_16713");
     }
   });
 };
@@ -49,13 +49,13 @@ export const Pending = function Pending(arg0) {
   const obj4 = {};
   const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_16707");
+      return require("module_16711");
     },
     darker() {
-      return require("module_16708");
+      return require("module_16712");
     },
     light() {
-      return require("module_16709");
+      return require("module_16713");
     }
   });
   const merged = Object.assign(arg0);

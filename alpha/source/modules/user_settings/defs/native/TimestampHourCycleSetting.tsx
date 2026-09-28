@@ -1,9 +1,9 @@
-// Module ID: 15025
-// Function ID: 15026
+// Module ID: 15023
+// Function ID: 15024
 // Name: TimestampHourCycleSetting
 // Dependencies: [19, 7417, 2021, 1115, 1186, 11006, 4515, 2]
 
-// Module 15025 (TimestampHourCycleSetting)
+// Module 15023 (TimestampHourCycleSetting)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2021 */;

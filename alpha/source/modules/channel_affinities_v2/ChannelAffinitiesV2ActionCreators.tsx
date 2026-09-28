@@ -1,14 +1,14 @@
-// Module ID: 15915
-// Function ID: 15916
+// Module ID: 15913
+// Function ID: 15914
 // Name: ChannelAffinitiesV2ActionCreators
-// Dependencies: [6012, 15913, 1074, 573, 1271, 2]
+// Dependencies: [6012, 15911, 1074, 573, 1271, 2]
 // Exports: fetchChannelAffinitiesV2
 
-// Module 15915 (ChannelAffinitiesV2ActionCreators)
+// Module 15913 (ChannelAffinitiesV2ActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import ConsentStore from "ConsentStore" /* 6012 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 15913 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 15911 */;
 
 require = fn;
 const Constants = fn(1074);

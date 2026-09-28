@@ -1,15 +1,15 @@
-// Module ID: 12583
-// Function ID: 12584
+// Module ID: 12601
+// Function ID: 12602
 // Name: AvatarPile
-// Dependencies: [19, 21, 12584, 10466, 12116, 8276, 10467, 2]
+// Dependencies: [19, 21, 12602, 10466, 12116, 8276, 10467, 2]
 // Exports: AvatarPile
 
-// Module 12583 (AvatarPile)
+// Module 12601 (AvatarPile)
 import ClipView from "ClipView" /* 8276 */;
 import Pile from "Pile" /* 10466 */;
 import PileOverflow from "PileOverflow" /* 10467 */;
 import ListUtils from "ListUtils" /* 12116 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12584 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12602 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,17 +1,17 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17127
+// Function ID: 17128
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 2067, 21, 4836, 576, 504, 17120, 17124, 6618, 10916, 4832, 1115, 5896, 5281, 6416, 2021, 4528, 8810, 4800, 13453, 2]
+// Dependencies: [19, 17, 2067, 21, 4836, 576, 504, 17124, 17128, 6618, 10916, 4832, 1115, 5896, 5281, 6416, 2021, 4528, 8810, 4800, 13452, 2]
 // Exports: default
 
-// Module 17123 (DmSettingsUpsellActionSheet)
+// Module 17127 (DmSettingsUpsellActionSheet)
 import nativeDefault from "native" /* 576 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 13453 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 17120 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 17124 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 13452 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 17124 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 17128 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 

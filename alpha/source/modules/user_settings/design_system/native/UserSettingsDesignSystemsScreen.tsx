@@ -1,12 +1,12 @@
-// Module ID: 15172
-// Function ID: 15173
+// Module ID: 15170
+// Function ID: 15171
 // Name: UserSettingsDesignSystemsScreen
-// Dependencies: [19, 7417, 21, 11006, 14248, 2]
+// Dependencies: [19, 7417, 21, 11006, 14247, 2]
 // Exports: default
 
-// Module 15172 (UserSettingsDesignSystemsScreen)
+// Module 15170 (UserSettingsDesignSystemsScreen)
 import SettingBuilders from "SettingBuilders" /* 11006 */;
-import SettingLayoutDefault from "SettingLayout" /* 14248 */;
+import SettingLayoutDefault from "SettingLayout" /* 14247 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

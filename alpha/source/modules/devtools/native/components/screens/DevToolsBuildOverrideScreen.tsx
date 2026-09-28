@@ -1,9 +1,9 @@
-// Module ID: 15138
-// Function ID: 15139
+// Module ID: 15136
+// Function ID: 15137
 // Name: DevToolsBuildOverrideScreen
-// Dependencies: [32, 19, 17, 10969, 21, 4836, 576, 8327, 15139, 6402, 504, 11267, 5279, 5999, 5917, 4779, 6610, 4527, 14689, 4790, 5997, 6000, 6024, 5281, 1370, 2]
+// Dependencies: [32, 19, 17, 10969, 21, 4836, 576, 8327, 15137, 6402, 504, 11267, 5279, 5999, 5917, 4779, 6610, 4527, 14506, 4790, 5997, 6000, 6024, 5281, 1370, 2]
 
-// Module 15138 (DevToolsBuildOverrideScreen)
+// Module 15136 (DevToolsBuildOverrideScreen)
 import nativeDefault from "native" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import ToastUtils from "ToastUtils" /* 4527 */;
@@ -26,8 +26,8 @@ let closure_9 = createStyles.createStyles(obj);
 let obj4 = { padding: nativeDefault.space.PX_16 };
 let items = [{ label: "Branch Name", value: "branch", icon: jsx(fn(8327).TagIcon, {}) }, ];
 let obj5 = { label: "Branch Name", value: "branch", icon: jsx(fn(8327).TagIcon, {}) };
-items[1] = { label: "Commit SHA", value: "id", icon: jsx(fn(15139).HashmarkIcon, {}) };
-let obj6 = { label: "Commit SHA", value: "id", icon: jsx(fn(15139).HashmarkIcon, {}) };
+items[1] = { label: "Commit SHA", value: "id", icon: jsx(fn(15137).HashmarkIcon, {}) };
+let obj6 = { label: "Commit SHA", value: "id", icon: jsx(fn(15137).HashmarkIcon, {}) };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");
 
@@ -66,7 +66,7 @@ export default noop.memo(() => {
       const result = ToastUtils.presentCopiedToClipboard();
     };
     const items1 = [tmp7(tmp3(5917).TableRow, obj4), , ];
-    const obj6 = { icon: tmp7(tmp3(14689).RefreshIcon, {}), label: "Refresh Override", onPress: tmp3(11267).refreshBuildOverride, arrow: true };
+    const obj6 = { icon: tmp7(tmp3(14506).RefreshIcon, {}), label: "Refresh Override", onPress: tmp3(11267).refreshBuildOverride, arrow: true };
     items1[1] = tmp7(tmp3(5917).TableRow, obj6);
     const obj7 = { icon: tmp7(tmp3(4790).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Override", variant: "danger", onPress: tmp3(11267).clearBuildOverride, arrow: true };
     items1[2] = tmp7(tmp3(5917).TableRow, obj7);

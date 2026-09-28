@@ -1,7 +1,7 @@
 // Module ID: 7288
 // Function ID: 7289
 // Name: HeaderShared
-// Dependencies: [19, 17, 7289, 21, 4836, 576, 4832, 4531, 5937, 5943, 7290, 1364, 7295, 1613, 1486, 7297, 5893, 558, 7300, 12841, 5435, 1177, 2]
+// Dependencies: [19, 17, 7289, 21, 4836, 576, 4832, 4531, 5937, 5943, 7290, 1364, 7295, 1613, 1486, 7297, 5893, 558, 7300, 12840, 5435, 1177, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
 // Module 7288 (HeaderShared)
@@ -14,7 +14,7 @@ import _mod5943 from "module_5943" /* 5943 */;
 import PressableNavigatorBackIcon from "PressableNavigatorBackIcon" /* 7290 */;
 import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 7295 */;
 import ChannelActionsDefault from "ChannelActions" /* 7300 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 12841 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 12840 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

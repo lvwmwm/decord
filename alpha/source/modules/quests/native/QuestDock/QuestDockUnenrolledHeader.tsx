@@ -1,16 +1,16 @@
-// Module ID: 14722
-// Function ID: 14723
+// Module ID: 14720
+// Function ID: 14721
 // Name: QuestDockUnenrolledHeader
-// Dependencies: [19, 17, 1085, 21, 4836, 14631, 14621, 14642, 5759, 7141, 4767, 4685, 14620, 14723, 4832, 1115, 5899, 14727, 14728, 14681, 2]
+// Dependencies: [19, 17, 1085, 21, 4836, 14631, 14621, 14642, 5759, 7141, 4767, 4685, 14620, 14721, 4832, 1115, 5899, 14725, 14726, 14681, 2]
 
-// Module 14722 (QuestDockUnenrolledHeader)
+// Module 14720 (QuestDockUnenrolledHeader)
 import useThemeDefault from "useTheme" /* 4767 */;
 import QuestTypes from "QuestTypes" /* 5759 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7141 */;
 import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14642 */;
 import QuestGameLogotypeDefault from "QuestGameLogotype" /* 14681 */;
-import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 14723 */;
+import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 14721 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -62,9 +62,9 @@ export default noop.memo(function QuestDockUnenrolledHeader() {
   const tmp16 = View;
   const tmp7Result = QuestDockBackgroundBlurHeaderDefault;
   if (LIGHT === tmp10.DARK) {
-    let tmp7Result4 = tmp7(14727);
+    let tmp7Result4 = tmp7(14725);
   } else {
-    tmp7Result4 = tmp7(14728);
+    tmp7Result4 = tmp7(14726);
   }
   const items1 = [closure_6(FastImageDefault, { source: tmp7Result4, resizeMode: "contain", style: tmp11.wreathImage }), closure_6(QuestGameLogotypeDefault, { assetUrl: questGameLogotypeAssetUrl, height: 36, maxWidth: 120, style: tmp11.logo })];
   obj7.children = items1;

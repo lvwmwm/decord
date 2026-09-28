@@ -1,7 +1,7 @@
 // Module ID: 5048
 // Function ID: 5049
 // Name: AgeVerificationUtils
-// Dependencies: [5, 32, 19, 5049, 5050, 502, 5056, 1372, 7904, 7860, 1074, 1099, 7847, 7861, 5736, 1979, 504, 5735, 7887, 573, 7859, 7852, 7866, 7720, 1115, 3039, 13308, 2]
+// Dependencies: [5, 32, 19, 5049, 5050, 502, 5056, 1372, 7904, 7860, 1074, 1099, 7847, 7861, 5736, 1979, 504, 5735, 7887, 573, 7859, 7852, 7866, 7720, 1115, 3039, 13307, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useInitiateAgeVerificationV2, useIsAgeVerified, useIsAssignedByDiscord, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
 // Module 5048 (AgeVerificationUtils)
@@ -15,7 +15,7 @@ import AgeGatedFeature from "AgeGatedFeature" /* 5736 */;
 import usePreviousDefault from "usePrevious" /* 7720 */;
 import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7866 */;
 import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7887 */;
-import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13308 */;
+import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13307 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

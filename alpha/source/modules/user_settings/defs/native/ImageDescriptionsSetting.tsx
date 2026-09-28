@@ -1,13 +1,13 @@
-// Module ID: 15013
-// Function ID: 15014
+// Module ID: 15011
+// Function ID: 15012
 // Name: ImageDescriptionsSetting
-// Dependencies: [1184, 7417, 2021, 15014, 11006, 1115, 2]
+// Dependencies: [1184, 7417, 2021, 15012, 11006, 1115, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 15013 (ImageDescriptionsSetting)
+// Module 15011 (ImageDescriptionsSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import UserSettingsText from "UserSettingsText" /* 15014 */;
+import UserSettingsText from "UserSettingsText" /* 15012 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 
 require = fn;

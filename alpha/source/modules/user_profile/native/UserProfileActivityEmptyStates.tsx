@@ -1,9 +1,9 @@
-// Module ID: 12636
-// Function ID: 12637
+// Module ID: 12654
+// Function ID: 12655
 // Name: UserProfileActivityEmptyStates
 // Dependencies: [32, 19, 17, 1074, 21, 1115, 4836, 576, 4832, 4988, 12, 4849, 4800, 5281, 6800, 2]
 
-// Module 12636 (UserProfileActivityEmptyStates)
+// Module 12654 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;

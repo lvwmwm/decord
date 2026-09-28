@@ -1,7 +1,7 @@
 // Module ID: 7622
 // Function ID: 7623
 // Name: ProductDetailsActionSheet
-// Dependencies: [32, 19, 17, 6962, 1076, 1074, 1085, 21, 3, 4836, 576, 5286, 4540, 4685, 1115, 6389, 1974, 7623, 7624, 7621, 6973, 8666, 6583, 6603, 12704, 12705, 8229, 8230, 1249, 1241, 504, 12706, 8293, 8295, 6974, 8297, 8298, 6045, 8300, 12707, 12717, 12726, 1177, 12727, 12738, 6571, 8339, 10198, 7678, 5281, 12741, 7619, 2]
+// Dependencies: [32, 19, 17, 6962, 1076, 1074, 1085, 21, 3, 4836, 576, 5286, 4540, 4685, 1115, 6389, 1974, 7623, 7624, 7621, 6973, 8666, 6583, 6603, 12703, 12704, 8229, 8230, 1249, 1241, 504, 12705, 8293, 8295, 6974, 8297, 8298, 6045, 8300, 12706, 12716, 12725, 1177, 12726, 12737, 6571, 8339, 10198, 7678, 5281, 12740, 7619, 2]
 // Exports: default
 
 // Module 7622 (ProductDetailsActionSheet)
@@ -140,7 +140,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
     obj5.children = closure_13(tmp(5281).Button, obj6);
     closure_13(tmp(1177).EmptyState, obj5);
   } else {
-    closure_13(initialVariantIndex(12741), {});
+    closure_13(initialVariantIndex(12740), {});
   }
 }
 function ProductDetailsActionSheetWithOrderCTX(arg0) {

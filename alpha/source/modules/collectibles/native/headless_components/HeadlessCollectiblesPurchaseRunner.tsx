@@ -1,11 +1,11 @@
-// Module ID: 12739
-// Function ID: 12740
+// Module ID: 12738
+// Function ID: 12739
 // Name: HeadlessCollectiblesPurchaseRunner
-// Dependencies: [19, 6844, 12740, 2]
+// Dependencies: [19, 6844, 12739, 2]
 // Exports: HeadlessCollectiblesPurchaseRunner
 
-// Module 12739 (HeadlessCollectiblesPurchaseRunner)
-import useHandleBuyNowDefault from "useHandleBuyNow" /* 12740 */;
+// Module 12738 (HeadlessCollectiblesPurchaseRunner)
+import useHandleBuyNowDefault from "useHandleBuyNow" /* 12739 */;
 import noop from "module_19" /* 19 */;
 
 const useNativeCheckoutStore = fn(6844).useNativeCheckoutStore;

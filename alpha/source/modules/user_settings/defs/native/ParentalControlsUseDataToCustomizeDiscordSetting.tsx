@@ -1,12 +1,12 @@
-// Module ID: 15523
-// Function ID: 15524
+// Module ID: 15521
+// Function ID: 15522
 // Name: ParentalControlsUseDataToCustomizeDiscordSetting
-// Dependencies: [6957, 7417, 1074, 14354, 6959, 11006, 1115, 2]
+// Dependencies: [6957, 7417, 1074, 14353, 6959, 11006, 1115, 2]
 
-// Module 15523 (ParentalControlsUseDataToCustomizeDiscordSetting)
+// Module 15521 (ParentalControlsUseDataToCustomizeDiscordSetting)
 import util from "util" /* 1115 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 6959 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14354 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 6957 */;
 
 require = fn;

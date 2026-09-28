@@ -1,17 +1,17 @@
-// Module ID: 17028
-// Function ID: 17029
+// Module ID: 17032
+// Function ID: 17033
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 11755, 21, 4836, 576, 5898, 5234, 11752, 11754, 4566, 11762, 5280, 8853, 17029, 17039, 2]
+// Dependencies: [32, 19, 17, 11755, 21, 4836, 576, 5898, 5234, 11752, 11754, 4566, 11762, 5280, 8853, 17033, 17043, 2]
 
-// Module 17028 (VoicePanelControlsDrawer)
+// Module 17032 (VoicePanelControlsDrawer)
 import nativeDefault from "native" /* 576 */;
 import Suspender from "Suspender" /* 5234 */;
 import spring from "spring" /* 5280 */;
 import useRefValueDefault from "useRefValue" /* 5898 */;
 import VoicePanelChatViewDefault from "VoicePanelChatView" /* 11752 */;
 import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 11762 */;
-import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 17029 */;
-import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 17039 */;
+import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 17033 */;
+import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 17043 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

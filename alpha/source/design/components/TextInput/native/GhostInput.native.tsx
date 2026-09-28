@@ -1,10 +1,10 @@
-// Module ID: 13989
-// Function ID: 13990
+// Module ID: 13988
+// Function ID: 13989
 // Name: GhostInput
 // Dependencies: [109, 19, 21, 4836, 4832, 576, 6039, 4549, 6032, 6025, 6042, 6356, 6026, 2]
 // Exports: GhostInput
 
-// Module 13989 (GhostInput)
+// Module 13988 (GhostInput)
 import nativeDefault from "native" /* 576 */;
 import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4549 */;
 import Text_Text from "Text/Text" /* 4832 */;

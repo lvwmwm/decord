@@ -1,10 +1,10 @@
-// Module ID: 15766
-// Function ID: 15767
+// Module ID: 15764
+// Function ID: 15765
 // Name: useChannelListSpecs
-// Dependencies: [19, 9577, 15767, 1479, 15654, 5288, 1613, 10456, 2]
+// Dependencies: [19, 9577, 15765, 1479, 15652, 5288, 1613, 10456, 2]
 // Exports: default
 
-// Module 15766 (useChannelListSpecs)
+// Module 15764 (useChannelListSpecs)
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,11 +15,11 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/hooks/useChannelListSpecs.tsx");
 
 export default function useChannelListSpecs(banner) {
-  redesignGuildHeaderHeight = redesignGuildHeaderHeight(15767).useRedesignGuildHeaderHeight(banner);
+  redesignGuildHeaderHeight = redesignGuildHeaderHeight(15765).useRedesignGuildHeaderHeight(banner);
   height = height(1479)({ ignoreKeyboard: true }).height;
-  const tmp2 = height(15654)();
+  const tmp2 = height(15652)();
   dependencyMap = tmp2;
-  const obj = redesignGuildHeaderHeight(15767);
+  const obj = redesignGuildHeaderHeight(15765);
   const fontScale = redesignGuildHeaderHeight(5288).useFontScale();
   closure_4 = tmp4;
   const top = height(1613)().top;

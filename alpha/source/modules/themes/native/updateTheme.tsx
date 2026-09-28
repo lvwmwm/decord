@@ -1,12 +1,12 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 16789
+// Function ID: 16790
 // Name: updateTheme
-// Dependencies: [17, 1364, 14001, 2]
+// Dependencies: [17, 1364, 14000, 2]
 // Exports: updateTheme
 
-// Module 16785 (updateTheme)
+// Module 16789 (updateTheme)
 import _mod17 from "module_17" /* 17 */;
-import NativeThemeModuleDefault from "NativeThemeModule" /* 14001 */;
+import NativeThemeModuleDefault from "NativeThemeModule" /* 14000 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;

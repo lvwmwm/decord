@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16631
+// Function ID: 16632
 // Name: ChannelSettingsOverview
-// Dependencies: [5, 19, 17, 4471, 2049, 2063, 8086, 2045, 4467, 2067, 4469, 4851, 16628, 4479, 1372, 16629, 1074, 2052, 6691, 1114, 1085, 21, 4836, 576, 504, 10416, 4540, 12, 16630, 5016, 1115, 5936, 7288, 8085, 4528, 8810, 9019, 6692, 4483, 1385, 4685, 16631, 9018, 5204, 4832, 9048, 4989, 5300, 4693, 4735, 16632, 6024, 6506, 1364, 5999, 6621, 5046, 5919, 13998, 16633, 8607, 4476, 9020, 16634, 5997, 6000, 2054, 2056, 2111, 4981, 5917, 6687, 9033, 9067, 10854, 4775, 2055, 16635, 6514, 10394, 14491, 9492, 7184, 4795, 4785, 5409, 10418, 4773, 4790, 5279, 10819, 7363, 8332, 5435, 15788, 8053, 1485, 2]
+// Dependencies: [5, 19, 17, 4471, 2049, 2063, 8086, 2045, 4467, 2067, 4469, 4851, 16632, 4479, 1372, 16633, 1074, 2052, 6691, 1114, 1085, 21, 4836, 576, 504, 10416, 4540, 12, 16634, 5016, 1115, 5936, 7288, 8085, 4528, 8810, 9019, 6692, 4483, 1385, 4685, 16635, 9018, 5204, 4832, 9048, 4989, 5300, 4693, 4735, 16636, 6024, 6506, 1364, 5999, 6621, 5046, 5919, 13997, 16637, 8607, 4476, 9020, 16638, 5997, 6000, 2054, 2056, 2111, 4981, 5917, 6687, 9033, 9067, 10854, 4775, 2055, 16639, 6514, 10394, 14490, 9492, 7184, 4795, 4785, 5409, 10418, 4773, 4790, 5279, 10819, 7363, 8332, 5435, 15786, 8053, 1485, 2]
 // Exports: default
 
-// Module 16627 (ChannelSettingsOverview)
+// Module 16631 (ChannelSettingsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -40,12 +40,12 @@ import AppChannelApplicationSelectorDefault from "AppChannelApplicationSelector"
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10418 */;
 import AvailableForumTagDefault from "AvailableForumTag" /* 10819 */;
 import threadActionSheets from "threadActionSheets" /* 10854 */;
-import Slider from "Slider" /* 13998 */;
-import RegionActionCreatorsDefault from "RegionActionCreators" /* 16630 */;
-import SecondsSliderUtils from "SecondsSliderUtils" /* 16631 */;
-import ChannelSettingsUtils from "ChannelSettingsUtils" /* 16632 */;
-import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 16633 */;
-import getCannotSwapApplicationTextDefault from "getCannotSwapApplicationText" /* 16634 */;
+import Slider from "Slider" /* 13997 */;
+import RegionActionCreatorsDefault from "RegionActionCreators" /* 16634 */;
+import SecondsSliderUtils from "SecondsSliderUtils" /* 16635 */;
+import ChannelSettingsUtils from "ChannelSettingsUtils" /* 16636 */;
+import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 16637 */;
+import getCannotSwapApplicationTextDefault from "getCannotSwapApplicationText" /* 16638 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
@@ -55,7 +55,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4467 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
-import RegionStore from "RegionStore" /* 16628 */;
+import RegionStore from "RegionStore" /* 16632 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -94,7 +94,7 @@ const View = fn(17).View;
 const ChannelRecord = fn(2049);
 ({ EDITABLE_VOICE_SETTINGS_TYPES: closure_7, isGuildTextChannelType: closure_8, THREADED_CHANNEL_TYPES: closure_9, THREAD_CHANNEL_TYPES: c10, SLOWMODE_CHANNEL_TYPES: closure_11, NSFW_CHANNEL_TYPES: closure_12, TOGGLE_ANNOUNCEMENT_CHANNEL_TYPES: map1, GUILD_WEBHOOK_CHANNEL_TYPES: closure_14 } = ChannelRecord);
 const isGuildNSFW = fn(2063).isGuildNSFW;
-let closure_25 = fn(16629).ChannelSettingsAutoFocusElement;
+let closure_25 = fn(16633).ChannelSettingsAutoFocusElement;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_26, BITRATE_DEFAULT: closure_27, BITRATE_MIN: closure_28, ChannelSettingsSections: closure_29, ChannelTypes: closure_30, ChannelTypesSets: items, GuildFeatures: closure_32, GuildSettingsSections: closure_33, HelpdeskArticles: closure_34, MAX_CHANNEL_NAME_LENGTH: closure_35, MAX_VOICE_USER_LIMIT: closure_36, MAX_STAGE_VOICE_USER_LIMIT: closure_37, Permissions: closure_38, SettingsPaneTypes: closure_39, SLOWMODE_VALUES: closure_40, VideoQualityMode: closure_41 } = Constants);
 const ChannelConstants = fn(2052);
@@ -764,7 +764,7 @@ prototype["renderAutoArchiveDuration"] = function renderAutoArchiveDuration() {
       obj.selected = autoArchiveDuration;
       obj.channel = channel;
       obj.onSelectDuration = this.handleAutoArchiveDurationChange;
-      return closure_1_47(tmp5(16633).AutoArchiveDurationOptions, obj);
+      return closure_1_47(tmp5(16637).AutoArchiveDurationOptions, obj);
     }
   }
   return null;
@@ -1058,7 +1058,7 @@ prototype["renderUserLimitSettings"] = function renderUserLimitSettings() {
       obj7.value = Math.min(channel.userLimit, tmp10);
       obj7.maximumValue = tmp10;
       obj7.onValueChange = this.handleUserLimitChange;
-      items2[1] = closure_1_47(tmp7(13998).Slider, obj7);
+      items2[1] = closure_1_47(tmp7(13997).Slider, obj7);
       obj3.children = items2;
       obj2.children = __V(tmp7(5919).Card, obj3);
       items.push(closure_1_47(tmp7(5999).TableRowGroup, obj2, "channel-user-limit"));
@@ -1243,7 +1243,7 @@ prototype["renderDefaultForumLayout"] = function renderDefaultForumLayout() {
     const obj4 = { text: stringResult };
     obj3.trailing = closure_47(self(5917).TableRow.TrailingText, obj4);
     if (channel.defaultForumLayout === GridSquareIcon(2055).ForumLayout.GRID) {
-      GridSquareIcon = GridSquareIcon(16635).GridSquareIcon;
+      GridSquareIcon = GridSquareIcon(16639).GridSquareIcon;
       obj = {};
       let tmpResult = tmp(GridSquareIcon, obj);
     } else {
@@ -1588,7 +1588,7 @@ prototype["renderCategory"] = function renderCategory() {
         tmp7 = self;
         const obj = self(4989);
       }
-      const obj2 = { icon: closure_47(tmp7(15788).FolderPlusIcon, {}), label: null, trailing: null, arrow: null, onPress: null };
+      const obj2 = { icon: closure_47(tmp7(15786).FolderPlusIcon, {}), label: null, trailing: null, arrow: null, onPress: null };
       const intl2 = tmp7(1115).intl;
       obj2.label = intl2.string(tmp7(1115).t.vHCZwr);
       const obj3 = { text: stringResult };

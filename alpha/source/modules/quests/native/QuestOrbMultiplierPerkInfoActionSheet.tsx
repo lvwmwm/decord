@@ -1,10 +1,10 @@
-// Module ID: 14698
-// Function ID: 14699
+// Module ID: 14696
+// Function ID: 14697
 // Name: QuestOrbMultiplierPerkInfoActionSheet
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 4800, 6800, 9422, 4525, 2111, 5281, 1115, 6400, 1613, 6575, 4638, 4832, 10697, 3521, 6571, 14695, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 4800, 6800, 9422, 4525, 2111, 5281, 1115, 6400, 1613, 6575, 4638, 4832, 10697, 3521, 6571, 14693, 2]
 // Exports: default
 
-// Module 14698 (QuestOrbMultiplierPerkInfoActionSheet)
+// Module 14696 (QuestOrbMultiplierPerkInfoActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2111 */;
@@ -155,6 +155,6 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   let obj3 = { visible: orbMultiplierEligibility === multiplier(10697).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10697).QuestOrbMultiplierEligibilityType.UPSELL, children: null };
   const tmp4 = orbMultiplierEligibility === multiplier(10697).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10697).QuestOrbMultiplierEligibilityType.UPSELL;
   obj3.children = closure_8(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result });
-  obj2.children = closure_8(orbMultiplierEligibility(14695), obj3);
+  obj2.children = closure_8(orbMultiplierEligibility(14693), obj3);
   return closure_8(multiplier(6571).BottomSheet, obj2);
 };

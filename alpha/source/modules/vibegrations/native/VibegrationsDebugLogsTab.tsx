@@ -1,15 +1,15 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16409
+// Function ID: 16410
 // Name: VibegrationsDebugLogsTab
-// Dependencies: [32, 19, 17, 8495, 21, 4836, 576, 16406, 10615, 6630, 4832, 16407, 1115, 3715, 5435, 5919, 1613, 504, 9083, 16408, 9084, 6471, 16409, 16410, 8179, 2]
+// Dependencies: [32, 19, 17, 8495, 21, 4836, 576, 16410, 10615, 6630, 4832, 16411, 1115, 3715, 5435, 5919, 1613, 504, 9083, 16412, 9084, 6471, 16413, 16414, 8179, 2]
 // Exports: default
 
-// Module 16405 (VibegrationsDebugLogsTab)
+// Module 16409 (VibegrationsDebugLogsTab)
 import nativeDefault from "native" /* 576 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsDebugJson from "VibegrationsDebugJson" /* 16406 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 16407 */;
-import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 16408 */;
+import VibegrationsDebugJson from "VibegrationsDebugJson" /* 16410 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 16411 */;
+import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 16412 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
@@ -52,7 +52,7 @@ let closure_11 = noop.memo((entry) => {
   }
   const obj = { style: tmp.row, children: null };
   const obj2 = { style: tmp.rowHead, children: null };
-  const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6(16407).formatClockTime(entry.ts) };
+  const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6(16411).formatClockTime(entry.ts) };
   const items1 = [closure_7(tmp6(4832).Text, obj3), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";

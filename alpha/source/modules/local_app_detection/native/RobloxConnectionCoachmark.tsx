@@ -1,10 +1,10 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16752
+// Function ID: 16753
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 5593, 1372, 13257, 1074, 2042, 21, 4836, 576, 4540, 1613, 4800, 6571, 6570, 6619, 5279, 4832, 1115, 5281, 12512, 8528, 6800, 4538, 5595, 1397, 1177, 7909, 504, 13258, 5718, 4654, 2029, 2]
+// Dependencies: [32, 19, 17, 5593, 1372, 13256, 1074, 2042, 21, 4836, 576, 4540, 1613, 4800, 6571, 6570, 6619, 5279, 4832, 1115, 5281, 12512, 8528, 6800, 4538, 5595, 1397, 1177, 7909, 504, 13257, 5718, 4654, 2029, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 16748 (RobloxConnectionCoachmark)
+// Module 16752 (RobloxConnectionCoachmark)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
@@ -23,7 +23,7 @@ import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5593 */;
 import UserStore from "UserStore" /* 1372 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13257 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13256 */;
 
 require = fn;
 function RobloxIcon(theme) {
@@ -161,7 +161,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
 export { UnionIcon };
 export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobloxConnectionCoachmark() {
   const items = [LocalAppDetectionStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(13258).DetectableAppNames.ROBLOX));
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(13257).DetectableAppNames.ROBLOX));
   const tmp2 = hasRoloxAccount(noop.useState(false), 2);
   const first = tmp2[0];
   dependencyMap = tmp2[1];

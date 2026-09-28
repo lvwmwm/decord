@@ -1,14 +1,14 @@
-// Module ID: 14194
-// Function ID: 14195
+// Module ID: 14193
+// Function ID: 14194
 // Name: EditNameplateActionSheet
-// Dependencies: [32, 19, 17, 6977, 1972, 2108, 1074, 21, 4836, 576, 7615, 6583, 6603, 1241, 7609, 7616, 6571, 4832, 1115, 7617, 10198, 504, 14195, 7611, 14196, 12748, 12749, 7618, 8280, 5293, 10790, 2]
+// Dependencies: [32, 19, 17, 6977, 1972, 2108, 1074, 21, 4836, 576, 7615, 6583, 6603, 1241, 7609, 7616, 6571, 4832, 1115, 7617, 10198, 504, 14194, 7611, 14195, 12747, 12748, 7618, 8280, 5293, 10790, 2]
 // Exports: default
 
-// Module 14194 (EditNameplateActionSheet)
+// Module 14193 (EditNameplateActionSheet)
 import nativeDefault from "native" /* 576 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7609 */;
 import useShopProductItems from "useShopProductItems" /* 7616 */;
-import EditNameplateSection from "EditNameplateSection" /* 14196 */;
+import EditNameplateSection from "EditNameplateSection" /* 14195 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6977 */;

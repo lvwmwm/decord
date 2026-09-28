@@ -1,13 +1,13 @@
-// Module ID: 14881
-// Function ID: 14882
+// Module ID: 14879
+// Function ID: 14880
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 4825, 7417, 504, 13999, 1115, 11006, 2]
+// Dependencies: [19, 4825, 7417, 504, 13998, 1115, 11006, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 14881 (OfficialMessageStyleSetting)
+// Module 14879 (OfficialMessageStyleSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13999 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 

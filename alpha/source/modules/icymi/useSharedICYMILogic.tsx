@@ -1,10 +1,10 @@
-// Module ID: 16128
-// Function ID: 16129
+// Module ID: 16124
+// Function ID: 16125
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 7783, 16094, 16129, 504, 7807, 7805, 9089, 7799, 7798, 7796, 16130, 2]
+// Dependencies: [32, 19, 7783, 16090, 16125, 504, 7807, 7805, 9089, 7799, 7798, 7796, 16126, 2]
 // Exports: useSharedICYMILogic
 
-// Module 16128 (useSharedICYMILogic)
+// Module 16124 (useSharedICYMILogic)
 import ICYMITypes from "ICYMITypes" /* 7796 */;
 import ICYMIUtils from "ICYMIUtils" /* 7798 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7799 */;
@@ -16,7 +16,7 @@ import ICYMIStore from "ICYMIStore" /* 7783 */;
 const require = globalThis.__r;
 
 require = fn;
-const SCROLL_EVENT_THROTTLE_MS = fn(16094).SCROLL_EVENT_THROTTLE_MS;
+const SCROLL_EVENT_THROTTLE_MS = fn(16090).SCROLL_EVENT_THROTTLE_MS;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/icymi/useSharedICYMILogic.tsx");
 

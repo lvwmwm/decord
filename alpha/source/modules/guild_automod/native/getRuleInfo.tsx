@@ -1,13 +1,13 @@
-// Module ID: 17312
-// Function ID: 17313
+// Module ID: 17316
+// Function ID: 17317
 // Name: getRuleInfo
-// Dependencies: [11341, 5404, 17313, 17315, 15457, 8738, 17316, 4775, 2]
+// Dependencies: [11341, 5404, 17317, 17319, 15455, 8738, 17320, 4775, 2]
 // Exports: getRuleInfo
 
-// Module 17312 (getRuleInfo)
+// Module 17316 (getRuleInfo)
 import Constants from "Constants" /* 11341 */;
-import _modDef17315 from "module_17315" /* 17315 */;
-import BaseRuleInfo from "BaseRuleInfo" /* 17316 */;
+import _modDef17319 from "module_17319" /* 17319 */;
+import BaseRuleInfo from "BaseRuleInfo" /* 17320 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
@@ -25,13 +25,13 @@ export const getRuleInfo = function getRuleInfo(triggerType, rule) {
         const obj3 = { IconComponent: tmp(5404).AtIcon };
         let tmp9 = obj3;
       } else if (tmp8.KEYWORD === triggerType) {
-        const obj4 = { IconComponent: tmp(17313).ChannelListPlusIcon };
+        const obj4 = { IconComponent: tmp(17317).ChannelListPlusIcon };
         tmp9 = obj4;
       } else {
         if (tmp8.ML_SPAM !== triggerType) {
           if (tmp8.USER_PROFILE !== triggerType) {
             if (tmp8.DEFAULT_KEYWORD_LIST === triggerType) {
-              const obj5 = { IconComponent: tmp(15457).MenuIcon };
+              const obj5 = { IconComponent: tmp(15455).MenuIcon };
               tmp9 = obj5;
             } else if (tmp8.APPLICATION === triggerType) {
               const obj6 = { IconComponent: tmp(8738).RobotIcon };
@@ -39,7 +39,7 @@ export const getRuleInfo = function getRuleInfo(triggerType, rule) {
             }
           }
         }
-        const obj7 = { source: _modDef17315 };
+        const obj7 = { source: _modDef17319 };
         tmp9 = obj7;
       }
       if (tmp9 == null) {

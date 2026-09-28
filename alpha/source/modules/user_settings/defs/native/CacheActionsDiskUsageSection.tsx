@@ -1,17 +1,17 @@
-// Module ID: 15125
-// Function ID: 15126
+// Module ID: 15123
+// Function ID: 15124
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 4836, 15126, 4541, 1115, 5279, 576, 4832, 4731, 5919, 15127, 2]
+// Dependencies: [5, 32, 19, 21, 4836, 15124, 4541, 1115, 5279, 576, 4832, 4731, 5919, 15125, 2]
 // Exports: default, useDiskUsageMeasurement
 
-// Module 15125 (CacheActionsDiskUsageSection)
+// Module 15123 (CacheActionsDiskUsageSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
 import Card from "Card" /* 5919 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15126 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15127 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15124 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15125 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

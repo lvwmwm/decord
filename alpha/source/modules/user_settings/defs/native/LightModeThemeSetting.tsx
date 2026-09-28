@@ -1,12 +1,12 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14850
+// Function ID: 14851
 // Name: LightModeThemeSetting
-// Dependencies: [1182, 1185, 7417, 1074, 504, 11006, 1115, 14853, 14854, 2]
+// Dependencies: [1182, 1185, 7417, 1074, 504, 11006, 1115, 14851, 14852, 2]
 
-// Module 14852 (LightModeThemeSetting)
+// Module 14850 (LightModeThemeSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 14853 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 14851 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;

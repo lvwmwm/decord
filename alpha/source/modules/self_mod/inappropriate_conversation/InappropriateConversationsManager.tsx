@@ -1,9 +1,9 @@
-// Module ID: 17634
-// Function ID: 17635
+// Module ID: 17638
+// Function ID: 17639
 // Name: InappropriateConversationsManager
 // Dependencies: [9357, 4960, 6539, 2]
 
-// Module 17634 (InappropriateConversationsManager)
+// Module 17638 (InappropriateConversationsManager)
 import _modDef4960 from "module_4960" /* 4960 */;
 import SoundUtils from "SoundUtils" /* 9357 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;

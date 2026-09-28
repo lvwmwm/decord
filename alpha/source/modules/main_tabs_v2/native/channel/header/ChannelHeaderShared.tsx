@@ -1,10 +1,10 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 12847
+// Function ID: 12848
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4479, 1372, 21, 4836, 576, 5435, 1364, 10357, 4832, 1177, 12849, 10371, 4531, 5335, 6401, 12850, 1115, 4989, 2]
+// Dependencies: [32, 19, 17, 4479, 1372, 21, 4836, 576, 5435, 1364, 10357, 4832, 1177, 12848, 10371, 4531, 5335, 6401, 12849, 1115, 4989, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12848 (ChannelHeaderShared)
+// Module 12847 (ChannelHeaderShared)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -17,8 +17,8 @@ import Pressables from "Pressables" /* 5435 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6401 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10357 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10371 */;
-import _modDef12849 from "module_12849" /* 12849 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12850 */;
+import _modDef12848 from "module_12848" /* 12848 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12849 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
@@ -76,7 +76,7 @@ function ChannelTitle(guildId) {
   items[1] = tmp8;
   let tmp5Result = !disableArrow;
   if (!disableArrow) {
-    const obj6 = { source: _modDef12849, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp.arrowIcon };
+    const obj6 = { source: _modDef12848, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp.arrowIcon };
     tmp5Result = tmp5(native.Icon, obj6);
   }
   items[2] = tmp5Result;

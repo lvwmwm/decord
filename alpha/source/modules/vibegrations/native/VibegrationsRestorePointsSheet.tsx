@@ -1,7 +1,7 @@
 // Module ID: 16307
 // Function ID: 16308
 // Name: VibegrationsRestorePointsSheet
-// Dependencies: [32, 19, 17, 12624, 21, 4836, 576, 4512, 4421, 1613, 16308, 5209, 1115, 3715, 9083, 4800, 8995, 1981, 4832, 5999, 7055, 5917, 6618, 6570, 6045, 9084, 6024, 5281, 2]
+// Dependencies: [32, 19, 17, 12642, 21, 4836, 576, 4512, 4421, 1613, 16308, 5209, 1115, 3715, 9083, 4800, 8995, 1981, 4832, 5999, 7055, 5917, 6618, 6570, 6045, 9084, 6024, 5281, 2]
 // Exports: default
 
 // Module 16307 (VibegrationsRestorePointsSheet)
@@ -17,7 +17,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const VibegrationsConnectionStore = fn(12624);
+const VibegrationsConnectionStore = fn(12642);
 ({ createDatabaseRestorePoint: closure_7, fetchDatabaseRestorePoints: closure_8, fetchDatabaseRestoreWindow: closure_9, restoreDatabaseToPoint: c10, restoreDatabaseToTimestamp: closure_11 } = VibegrationsConnectionStore);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);

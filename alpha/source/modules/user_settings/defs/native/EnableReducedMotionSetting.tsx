@@ -1,12 +1,12 @@
-// Module ID: 14966
-// Function ID: 14967
+// Module ID: 14964
+// Function ID: 14965
 // Name: EnableReducedMotionSetting
-// Dependencies: [4825, 7417, 504, 13999, 11006, 1115, 2]
+// Dependencies: [4825, 7417, 504, 13998, 11006, 1115, 2]
 
-// Module 14966 (EnableReducedMotionSetting)
+// Module 14964 (EnableReducedMotionSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13999 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;

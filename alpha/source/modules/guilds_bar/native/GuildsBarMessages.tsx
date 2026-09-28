@@ -1,17 +1,17 @@
-// Module ID: 15946
-// Function ID: 15947
+// Module ID: 15944
+// Function ID: 15945
 // Name: GuildsBarMessages
-// Dependencies: [19, 4655, 1074, 21, 15947, 15932, 504, 15935, 576, 1115, 15948, 5385, 2]
+// Dependencies: [19, 4655, 1074, 21, 15945, 15930, 504, 15933, 576, 1115, 15946, 5385, 2]
 
-// Module 15946 (GuildsBarMessages)
+// Module 15944 (GuildsBarMessages)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ChatIcon from "ChatIcon" /* 5385 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 15932 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 15935 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 15947 */;
-import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 15948 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 15930 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 15933 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 15945 */;
+import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 15946 */;
 import noop from "module_19" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4655 */;
 

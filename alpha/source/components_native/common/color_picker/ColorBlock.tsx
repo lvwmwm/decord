@@ -1,9 +1,9 @@
-// Module ID: 14155
-// Function ID: 14156
+// Module ID: 14154
+// Function ID: 14155
 // Name: ColorBlock
 // Dependencies: [19, 17, 21, 4836, 576, 1092, 5435, 4683, 1177, 11059, 2]
 
-// Module 14155 (ColorBlock)
+// Module 14154 (ColorBlock)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import _modDef11059 from "module_11059" /* 11059 */;

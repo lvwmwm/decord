@@ -1,14 +1,14 @@
-// Module ID: 16236
-// Function ID: 16237
+// Module ID: 16232
+// Function ID: 16233
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4836, 576, 4658, 4792, 6034, 16237, 4832, 1115, 16233, 4512, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4658, 4792, 6034, 16233, 4832, 1115, 16229, 4512, 2]
 
-// Module 16236 (JoinRequestOtherApplications)
+// Module 16232 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 576 */;
 import DateUtils from "DateUtils" /* 4512 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4658 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16233 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16229 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

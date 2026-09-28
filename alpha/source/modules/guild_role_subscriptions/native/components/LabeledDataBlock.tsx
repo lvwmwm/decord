@@ -1,10 +1,10 @@
-// Module ID: 14767
-// Function ID: 14768
+// Module ID: 14765
+// Function ID: 14766
 // Name: LabeledDataBlock
 // Dependencies: [19, 17, 1074, 21, 4836, 576, 5836, 4832, 5435, 1177, 2]
 // Exports: default
 
-// Module 14767 (LabeledDataBlock)
+// Module 14765 (LabeledDataBlock)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import noop from "module_19" /* 19 */;

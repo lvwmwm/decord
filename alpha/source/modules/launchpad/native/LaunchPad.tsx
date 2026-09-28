@@ -1,9 +1,9 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16798
+// Function ID: 16799
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 4521, 6945, 6746, 5818, 2049, 502, 2045, 7133, 7050, 2067, 13298, 4851, 5750, 5017, 4855, 1074, 21, 576, 4836, 5435, 4832, 504, 4566, 4701, 6471, 1115, 12567, 9067, 15133, 1364, 14140, 10429, 9299, 4692, 9300, 9290, 1479, 1613, 9291, 12305, 1241, 16795, 16802, 15348, 16815, 16816, 2]
+// Dependencies: [32, 19, 17, 4521, 6945, 6746, 5818, 2049, 502, 2045, 7133, 7050, 2067, 13297, 4851, 5750, 5017, 4855, 1074, 21, 576, 4836, 5435, 4832, 504, 4566, 4701, 6471, 1115, 12585, 9067, 15131, 1364, 14139, 10429, 9299, 4692, 9300, 9290, 1479, 1613, 9291, 12305, 1241, 16799, 16806, 15346, 16819, 16820, 2]
 
-// Module 16794 (LaunchPad)
+// Module 16798 (LaunchPad)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
@@ -14,7 +14,7 @@ import AutocompleterDefault from "Autocompleter" /* 9291 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9299 */;
 import hideLaunchPadDefault from "hideLaunchPad" /* 10429 */;
 import RouteManagerDefault from "RouteManager" /* 12305 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14140 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14139 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 4521 */;
@@ -26,7 +26,7 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7133 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 13298 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 13297 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;

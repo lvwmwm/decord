@@ -1,13 +1,13 @@
-// Module ID: 16274
-// Function ID: 16275
+// Module ID: 16270
+// Function ID: 16271
 // Name: useVibegrationsPreviewMode
-// Dependencies: [32, 19, 502, 504, 16275, 16276, 8473, 6584, 8783, 2]
+// Dependencies: [32, 19, 502, 504, 16271, 16272, 8473, 6584, 8783, 2]
 // Exports: useVibegrationsPreviewMode
 
-// Module 16274 (useVibegrationsPreviewMode)
+// Module 16270 (useVibegrationsPreviewMode)
 import initialize from "initialize" /* 504 */;
-import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 16275 */;
-import vibegrationsPreviewModes from "vibegrationsPreviewModes" /* 16276 */;
+import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 16271 */;
+import vibegrationsPreviewModes from "vibegrationsPreviewModes" /* 16272 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -75,18 +75,19 @@ export const useVibegrationsPreviewMode = function useVibegrationsPreviewMode(ar
     }
     const tmp8Result6 = tmp8(6584);
     const application = tmp8(6584).useApplication(applicationId);
+    ({ data: data2, isLoading } = application);
     if (!declaredActivity) {
-      declaredActivity = tmp8(8783).canLaunchFrame(tmp25);
+      declaredActivity = tmp8(8783).canLaunchFrame(data2);
       const tmp8Result8 = tmp8(8783);
     }
     const tmp8Result7 = tmp8(6584);
     const obj3 = { installScope, hasFrame: declaredActivity, hasProfileWidget: tmp18, hasBotDm: tmp21, ownerAuthorizationRevoked };
-    const result1 = tmp8(16276).previewModeAvailability(obj3);
-    const obj4 = { availability: result1, isResolving: null != applicationId && application.isLoading, activeMode: null, setMode: null, widgetApplicationId: null };
+    const result1 = tmp8(16272).previewModeAvailability(obj3);
+    const obj4 = { availability: result1, isResolving: null != applicationId && isLoading && null == data2, activeMode: null, setMode: null, widgetApplicationId: null };
     let previewMode = null;
-    if (!(null != applicationId && application.isLoading)) {
-      previewMode = tmp8(16276).resolvePreviewMode(tmp2, result1);
-      const tmp8Result10 = tmp8(16276);
+    if (!(null != applicationId && isLoading && null == data2)) {
+      previewMode = tmp8(16272).resolvePreviewMode(tmp2, result1);
+      const tmp8Result10 = tmp8(16272);
     }
     obj4.activeMode = previewMode;
     obj4.setMode = tmp3;

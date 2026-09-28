@@ -1,14 +1,14 @@
-// Module ID: 14354
-// Function ID: 14355
+// Module ID: 14353
+// Function ID: 14354
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 6960, 7847, 8107, 14355, 14358, 1186, 6719, 6416, 8105, 504, 6959, 7852, 2]
+// Dependencies: [5, 19, 6960, 7847, 8107, 14354, 14357, 1186, 6719, 6416, 8105, 504, 6959, 7852, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
-// Module 14354 (useParentalControlSettings)
+// Module 14353 (useParentalControlSettings)
 import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
 import useUserLinks from "useUserLinks" /* 8105 */;
 import useSelectedTeen from "useSelectedTeen" /* 8107 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14355 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14354 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 6960 */;
@@ -41,8 +41,8 @@ export const useParentalControlledExplicitContentSettings = function useParental
     }
     const obj3 = { explicitContentNonFriendDm: null, explicitContentFriendDm: null, explicitContentGuilds: null };
     obj2.setting = prop;
-    obj3.explicitContentNonFriendDm = tmp(14358).resolveExplicitContentSettingWithDefaultsForTeen(obj2);
-    const tmpResult = tmp(14358);
+    obj3.explicitContentNonFriendDm = tmp(14357).resolveExplicitContentSettingWithDefaultsForTeen(obj2);
+    const tmpResult = tmp(14357);
     let id2;
     if (selectedTeen != null) {
       id2 = selectedTeen.id;
@@ -53,10 +53,10 @@ export const useParentalControlledExplicitContentSettings = function useParental
       prop1 = controlledSetting.explicitContentFriendDm;
     }
     obj4.setting = prop1;
-    obj3.explicitContentFriendDm = tmp(14358).resolveExplicitContentSettingWithDefaultsForTeen(obj4);
+    obj3.explicitContentFriendDm = tmp(14357).resolveExplicitContentSettingWithDefaultsForTeen(obj4);
     obj3.explicitContentGuilds = tmp(1186).ExplicitContentRedaction.BLUR;
     tmp6 = obj3;
-    const tmpResult2 = tmp(14358);
+    const tmpResult2 = tmp(14357);
   }
   return tmp6;
 };
@@ -80,7 +80,7 @@ export const useParentalControlledGoreContentSettings = function useParentalCont
       const tmpResult4 = tmp(6719);
     }
     const obj2 = { goreContentNonFriendDm, goreContentFriendDm: null, goreContentGuilds: null };
-    tmpResult = tmp(14358);
+    tmpResult = tmp(14357);
     if (!tmpResult5.isSetAndNotDefault(goreContentFriendDm)) {
       goreContentFriendDm = tmp(6719).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
       const tmpResult6 = tmp(6719);
@@ -112,7 +112,7 @@ export const useDefaultGuildsRestricted = function useDefaultGuildsRestricted() 
 };
 export const useAllowFriendsFromMutualGuildsOnlyForTeen = function useAllowFriendsFromMutualGuildsOnlyForTeen() {
   const selectedTeen = controlledSetting(8107).useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(14355).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(14354).ParentalControlledFriendSourceFlags;
   let id;
   if (selectedTeen != null) {
     id = selectedTeen.id;

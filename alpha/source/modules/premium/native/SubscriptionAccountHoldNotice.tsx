@@ -1,10 +1,10 @@
-// Module ID: 12931
-// Function ID: 12932
+// Module ID: 12930
+// Function ID: 12931
 // Name: SubscriptionAccountHoldNotice
 // Dependencies: [19, 17, 1074, 21, 4836, 576, 1177, 12285, 4832, 1115, 4488, 5281, 2]
 // Exports: default
 
-// Module 12931 (SubscriptionAccountHoldNotice)
+// Module 12930 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 576 */;
 import PremiumUtils from "PremiumUtils" /* 4488 */;
 import _modDef12285 from "module_12285" /* 12285 */;

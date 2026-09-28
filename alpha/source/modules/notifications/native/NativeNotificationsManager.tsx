@@ -1,12 +1,12 @@
-// Module ID: 17630
-// Function ID: 17631
+// Module ID: 17634
+// Function ID: 17635
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 7050, 4851, 1074, 3, 17631, 8746, 11, 6539, 1364, 7650, 1241, 2]
+// Dependencies: [5, 17, 7050, 4851, 1074, 3, 17635, 8746, 11, 6539, 1364, 7650, 1241, 2]
 
-// Module 17630 (NativeNotificationsManager)
+// Module 17634 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import PushNotificationDefault from "PushNotification" /* 8746 */;
-import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 17631 */;
+import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 17635 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;

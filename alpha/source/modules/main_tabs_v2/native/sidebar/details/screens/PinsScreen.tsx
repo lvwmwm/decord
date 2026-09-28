@@ -1,11 +1,11 @@
-// Module ID: 16681
-// Function ID: 16682
+// Module ID: 16685
+// Function ID: 16686
 // Name: PinsScreen
-// Dependencies: [19, 17, 2045, 7303, 21, 4836, 576, 1488, 504, 11782, 16539, 2]
+// Dependencies: [19, 17, 2045, 7303, 21, 4836, 576, 1488, 504, 11782, 16543, 2]
 
-// Module 16681 (PinsScreen)
+// Module 16685 (PinsScreen)
 import nativeDefault from "native" /* 576 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 16539 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 16543 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 

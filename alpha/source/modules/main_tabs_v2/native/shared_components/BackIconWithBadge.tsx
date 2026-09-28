@@ -1,10 +1,10 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16040
+// Function ID: 16041
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7050, 21, 4836, 576, 504, 16035, 1177, 8276, 1365, 5940, 5992, 4785, 2]
+// Dependencies: [19, 17, 7050, 21, 4836, 576, 504, 16031, 1177, 8276, 1365, 5940, 5992, 4785, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 16044 (BackIconWithBadge)
+// Module 16040 (BackIconWithBadge)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import XLargeIcon from "XLargeIcon" /* 4785 */;
@@ -30,7 +30,7 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(16035)().value;
+    num2 = memo(16031)().value;
   }
   const sum = num + num2;
   _require = sum;

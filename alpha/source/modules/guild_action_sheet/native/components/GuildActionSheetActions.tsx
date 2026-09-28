@@ -1,10 +1,10 @@
-// Module ID: 13456
-// Function ID: 13457
+// Module ID: 13455
+// Function ID: 13456
 // Name: GuildActionSheetActions
-// Dependencies: [19, 17, 6952, 1220, 2063, 7050, 2102, 4851, 5017, 1372, 1074, 6518, 7386, 5018, 21, 4836, 576, 504, 6620, 1115, 10427, 6753, 4654, 2029, 6948, 4800, 5039, 11044, 1981, 11774, 4988, 6583, 6603, 9226, 1177, 9094, 13457, 1186, 2026, 9051, 13458, 7610, 9205, 4832, 2021, 6416, 6540, 9605, 6535, 13506, 9600, 13507, 8954, 5719, 9015, 8976, 11064, 13508, 5205, 38, 13455, 9558, 9557, 6955, 11050, 13509, 8089, 7460, 11307, 6609, 6610, 4527, 1397, 2]
+// Dependencies: [19, 17, 6952, 1220, 2063, 7050, 2102, 4851, 5017, 1372, 1074, 6518, 7386, 5018, 21, 4836, 576, 504, 6620, 1115, 10427, 6753, 4654, 2029, 6948, 4800, 5039, 11044, 1981, 11774, 4988, 6583, 6603, 9226, 1177, 9094, 13456, 1186, 2026, 9051, 13457, 7610, 9205, 4832, 2021, 6416, 6540, 9605, 6535, 13505, 9600, 13506, 8954, 5719, 9015, 8976, 11064, 13507, 5205, 38, 13454, 9558, 9557, 6955, 11050, 13508, 8089, 7460, 11307, 6609, 6610, 4527, 1397, 2]
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction, handleLeaveServer
 
-// Module 13456 (GuildActionSheetActions)
+// Module 13455 (GuildActionSheetActions)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
@@ -36,9 +36,9 @@ import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 9226 */;
 import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10427 */;
 import OptInOnboardingUtils from "OptInOnboardingUtils" /* 11050 */;
 import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11064 */;
-import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableForGuild" /* 13457 */;
-import markGuildsAsReadDefault from "markGuildsAsRead" /* 13506 */;
-import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 13509 */;
+import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableForGuild" /* 13456 */;
+import markGuildsAsReadDefault from "markGuildsAsRead" /* 13505 */;
+import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 13508 */;
 import noop from "module_19" /* 19 */;
 import NewChannelsStore from "NewChannelsStore" /* 6952 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
@@ -321,7 +321,7 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
 };
 export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryActions(guild) {
   guild = guild.guild;
-  let obj = guild(13507);
+  let obj = guild(13506);
   const tmp3 = useCanCreateAnEventDefault(guild.id);
   const items = [GuildRoleStore];
   const items1 = [];
@@ -390,7 +390,7 @@ export const GuildActionSheetDirectoryActions = function GuildActionSheetDirecto
   items.push(closure_21(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(closure_21(RestrictedGuildPrivacyOption, { guild }));
   const tmp4 = closure_7(guild, currentUser);
-  const messageRequestPrivacyOption = guild(13455).useMessageRequestPrivacyOption({ guild });
+  const messageRequestPrivacyOption = guild(13454).useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
   }
@@ -453,7 +453,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   items.push(closure_21(RestrictedGuildPrivacyOption, { guild }));
   const obj3 = guild(6955);
   const tmp12 = constants2;
-  const messageRequestPrivacyOption = guild(13455).useMessageRequestPrivacyOption({ guild });
+  const messageRequestPrivacyOption = guild(13454).useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
   }

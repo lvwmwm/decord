@@ -1,10 +1,10 @@
-// Module ID: 16805
-// Function ID: 16806
+// Module ID: 16809
+// Function ID: 16810
 // Name: shared/renderChannelBadge
 // Dependencies: [19, 21, 1177, 11779, 4832, 1115, 1882, 2]
 // Exports: default
 
-// Module 16805 (shared/renderChannelBadge)
+// Module 16809 (shared/renderChannelBadge)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import NumberUtils from "NumberUtils" /* 1882 */;

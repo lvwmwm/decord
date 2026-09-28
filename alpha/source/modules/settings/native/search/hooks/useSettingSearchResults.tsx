@@ -1,15 +1,15 @@
-// Module ID: 14257
-// Function ID: 14258
+// Module ID: 14256
+// Function ID: 14257
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 14250, 14142, 14253, 14143, 14258, 14252, 551, 2]
+// Dependencies: [32, 19, 14249, 14141, 14252, 14142, 14257, 14251, 551, 2]
 // Exports: useSettingSearchResults
 
-// Module 14257 (useSettingSearchResults)
+// Module 14256 (useSettingSearchResults)
 import debounceDefault from "debounce" /* 551 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14250 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 14142 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14249 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 14141 */;
 
 const require = fn;
 let closure_7 = [];
@@ -18,9 +18,9 @@ const result = size.fileFinishedImporting("modules/settings/native/search/hooks/
 
 export const useSettingSearchResults = function useSettingSearchResults() {
   const memo = memo1.useMemo(() => {
-    const tmp = closure_1(14258);
-    const obj = memo(14252);
-    return new tmp(memo(14252).getSettingSearchableTitles());
+    const tmp = closure_1(14257);
+    const obj = memo(14251);
+    return new tmp(memo(14251).getSettingSearchableTitles());
   }, []);
   const settings = _slicedToArray(memo1.useState(closure_7), 2);
   closure_1 = settings[1];
@@ -34,10 +34,10 @@ export const useSettingSearchResults = function useSettingSearchResults() {
     scoredSearchResults = scoredSearchResults.getScoredSearchResults(arg0);
     const found = scoredSearchResults.filter((setting) => {
       setting = setting.setting;
-      const isBlockedResult = closure_2_1(14253).isBlocked(setting, closure_0);
+      const isBlockedResult = closure_2_1(14252).isBlocked(setting, closure_0);
       let tmp3 = !isBlockedResult;
       if (!isBlockedResult) {
-        tmp3 = !scoredSearchResults(14143).SETTING_RENDERER_CONFIG[setting].unsearchable;
+        tmp3 = !scoredSearchResults(14142).SETTING_RENDERER_CONFIG[setting].unsearchable;
       }
       return tmp3;
     });

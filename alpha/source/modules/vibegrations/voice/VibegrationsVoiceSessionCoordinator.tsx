@@ -1,14 +1,14 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 14020
+// Function ID: 14021
 // Name: VibegrationsVoiceSessionCoordinator
-// Dependencies: [14022, 8499, 502, 1993, 4859, 1372, 4855, 1074, 4861, 8770, 13372, 1255, 9104, 14023, 14024, 2]
+// Dependencies: [14021, 8499, 502, 1993, 4859, 1372, 4855, 1074, 4861, 8770, 13371, 1255, 9104, 14022, 14023, 2]
 
-// Module 14021 (VibegrationsVoiceSessionCoordinator)
+// Module 14020 (VibegrationsVoiceSessionCoordinator)
 import RPCErrorDefault from "RPCError" /* 8770 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13372 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14024 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 14022 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13371 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14023 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 14021 */;
 import FramesStore from "FramesStore" /* 8499 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;
@@ -294,7 +294,7 @@ prototype["update"] = function update(id, id, arg2, arr) {
             if (!set.has(user_id)) {
               obj.add(user_id);
               obj2 = { userId: user_id, position: null };
-              obj2.position = obj2(14023).toListenerRelativePosition(closure_0, user_id.position);
+              obj2.position = obj2(14022).toListenerRelativePosition(closure_0, user_id.position);
               return obj2;
             }
             obj = set;

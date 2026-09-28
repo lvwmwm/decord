@@ -1,9 +1,9 @@
-// Module ID: 17200
-// Function ID: 17201
+// Module ID: 17204
+// Function ID: 17205
 // Name: AddAvatarModal
-// Dependencies: [5, 32, 19, 17, 7605, 1074, 21, 4836, 576, 5994, 5836, 1613, 504, 14151, 17201, 7614, 7694, 5450, 7609, 7611, 4832, 1115, 17210, 1177, 5281, 17198, 1249, 6795, 5936, 6421, 2]
+// Dependencies: [5, 32, 19, 17, 7605, 1074, 21, 4836, 576, 5994, 5836, 1613, 504, 14150, 17205, 7614, 7694, 5450, 7609, 7611, 4832, 1115, 17214, 1177, 5281, 17202, 1249, 6795, 5936, 6421, 2]
 
-// Module 17200 (AddAvatarModal)
+// Module 17204 (AddAvatarModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -14,7 +14,7 @@ import components_Button_Button from "components/Button/Button" /* 5281 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import Navigator from "Navigator" /* 6421 */;
 import VideoBackground from "VideoBackground" /* 7694 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17198 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17202 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -71,7 +71,7 @@ function AddAvatarScreen() {
             pendingImage = undefined;
             if (null != base64) {
               const obj11 = { imageUri: base64, description: null };
-              const obj = tmp2(14151);
+              const obj = tmp2(14150);
               obj11.description = tmp2(7614).generateAvatarDescription();
               pendingImage = obj.createPendingImage(obj11);
               const obj3 = tmp2(7614);
@@ -108,8 +108,8 @@ function AddAvatarScreen() {
   let pendingImage;
   const stateFromStores = initialize.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != selectedAvatar) {
-    let obj2 = { imageUri: tmp9(17201).DEFAULT_AVATARS[selectedAvatar], description: null };
-    const tmp9Result = tmp9(14151);
+    let obj2 = { imageUri: tmp9(17205).DEFAULT_AVATARS[selectedAvatar], description: null };
+    const tmp9Result = tmp9(14150);
     obj2.description = tmp9(7614).generateAvatarDescription();
     pendingImage = tmp9Result.createPendingImage(obj2);
     const tmp9Result3 = tmp9(7614);
@@ -142,7 +142,7 @@ function AddAvatarScreen() {
   obj5.children = items2;
   const items3 = [closure_10(View, obj5), , ];
   const memoizedImageSourceResult = VideoBackground.memoizedImageSource(imageUri);
-  items3[1] = closure_9(selectedAvatar(17210), {
+  items3[1] = closure_9(selectedAvatar(17214), {
     avatarSource: VideoBackground.memoizedImageSource(imageUri),
     showPendingAvatar: null != pendingImage,
     onSelectAvatar: function handleSelectAvatar() {
@@ -166,7 +166,7 @@ function AddAvatarScreen() {
   obj9.children = closure_9(native.LegacyText, obj10);
   items3[2] = closure_9(View, obj9);
   obj4.children = items3;
-  const items4 = [closure_10(View, obj4), closure_9(selectedAvatar(17201), { onAvatarSelect: tmp4[1], selectedAvatar }), ];
+  const items4 = [closure_10(View, obj4), closure_9(selectedAvatar(17205), { onAvatarSelect: tmp4[1], selectedAvatar }), ];
   let obj11 = { style: tmp.buttonContainer, children: null };
   let obj12 = { text: null, grow: true, onPress: null, disabled: null };
   const intl4 = tmp9(1115).intl;

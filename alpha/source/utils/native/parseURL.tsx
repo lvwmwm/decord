@@ -1,7 +1,7 @@
 // Module ID: 4813
 // Function ID: 4814
 // Name: parseURL
-// Dependencies: [32, 1074, 1076, 4814, 4815, 1473, 1930, 1368, 4816, 4821, 12501, 5089, 13394, 1366, 4990, 8516, 6826, 1610, 1364, 9173, 1241, 1254, 13395, 2]
+// Dependencies: [32, 1074, 1076, 4814, 4815, 1473, 1930, 1368, 4816, 4821, 12501, 5089, 13393, 1366, 4990, 8516, 6826, 1610, 1364, 9173, 1241, 1254, 13394, 2]
 // Exports: default
 
 // Module 4813 (parseURL)
@@ -11,7 +11,7 @@ import _modDef1930 from "module_1930" /* 1930 */;
 import findCodedLinks from "findCodedLinks" /* 4816 */;
 import LinkUtils from "LinkUtils" /* 4990 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 5089 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13395 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13394 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -177,7 +177,7 @@ export default function parseURL(arg0) {
       obj17.payload = obj18;
       return obj17;
     } else {
-      const result = tmp5(13394).findRemoteAuthFingerprint(host, pathname);
+      const result = tmp5(13393).findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
           const obj19 = { fingerprint, attemptId, installationId, payload: null };
@@ -186,7 +186,7 @@ export default function parseURL(arg0) {
           return obj19;
         }
       }
-      const tmp5Result9 = tmp5(13394);
+      const tmp5Result9 = tmp5(13393);
       if (!tmpResult6.isDiscordHostname(host)) {
         if (!tmpResult7.isDiscordProtocol(protocol)) {
           const tmpResult8 = tmp(1366);

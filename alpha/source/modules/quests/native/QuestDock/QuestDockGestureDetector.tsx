@@ -1,9 +1,9 @@
-// Module ID: 14716
-// Function ID: 14717
+// Module ID: 14714
+// Function ID: 14715
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 5756, 14624, 21, 14631, 14621, 14625, 10895, 14628, 14713, 4566, 14629, 14626, 6073, 14623, 4801, 2]
+// Dependencies: [19, 5756, 14624, 21, 14631, 14621, 14625, 10895, 14628, 14711, 4566, 14629, 14626, 6073, 14623, 4801, 2]
 
-// Module 14716 (QuestDockGestureDetector)
+// Module 14714 (QuestDockGestureDetector)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;

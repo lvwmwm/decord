@@ -1,16 +1,16 @@
-// Module ID: 14029
-// Function ID: 14030
+// Module ID: 14028
+// Function ID: 14029
 // Name: application
-// Dependencies: [5063, 4739, 1074, 8773, 8775, 14030, 8321, 8770, 8755, 1241, 1271, 8319, 2]
+// Dependencies: [5063, 4739, 1074, 8773, 8775, 14029, 8321, 8770, 8755, 1241, 1271, 8319, 2]
 
-// Module 14029 (application)
+// Module 14028 (application)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import TestModeUtils from "TestModeUtils" /* 8319 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8321 */;
 import RPCErrorDefault from "RPCError" /* 8770 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8773 */;
 import RPCHelpers from "RPCHelpers" /* 8775 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14030 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14029 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 
 require = fn;
@@ -74,8 +74,8 @@ export default {
       const id = socket.socket.application.id;
       if (null == id) {
         const obj = { errorCode: constants2.INVALID_COMMAND };
-        const tmp7 = new RPCErrorDefault(obj, "No application.");
-        throw tmp7;
+        const tmp10 = new RPCErrorDefault(obj, "No application.");
+        throw tmp10;
       } else {
         const HTTP = HTTPUtils.HTTP;
         const request = { url: hasOwnProperty.APPLICATION_TICKET(id), body: null, retries: 3, oldFormErrors: true, rejectWithError: false };

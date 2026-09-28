@@ -1,10 +1,10 @@
-// Module ID: 15837
-// Function ID: 15838
+// Module ID: 15835
+// Function ID: 15836
 // Name: SearchableDestinationListRow
 // Dependencies: [19, 21, 9290, 10444, 10328, 7074, 10370, 10373, 1370, 2]
 // Exports: default
 
-// Module 15837 (SearchableDestinationListRow)
+// Module 15835 (SearchableDestinationListRow)
 import sortByMatchScore from "sortByMatchScore" /* 9290 */;
 import formatResults from "formatResults" /* 10444 */;
 import noop from "module_19" /* 19 */;

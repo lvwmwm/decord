@@ -1,10 +1,10 @@
-// Module ID: 16714
-// Function ID: 16715
+// Module ID: 16718
+// Function ID: 16719
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2045, 5056, 1372, 21, 4836, 576, 1613, 504, 16715, 16717, 11932, 2]
+// Dependencies: [32, 19, 17, 2045, 5056, 1372, 21, 4836, 576, 1613, 504, 16719, 16721, 11932, 2]
 // Exports: default
 
-// Module 16714 (RestrictedMessageRequestPreview)
+// Module 16718 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -105,9 +105,9 @@ export default function RestrictedMessageRequestPreview(channelId) {
         }
       };
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      const items8 = [closure_10(tmp2(16715), obj6), ];
+      const items8 = [closure_10(tmp2(16719), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(tmp2(16717), obj7);
+      items8[1] = closure_10(tmp2(16721), obj7);
       obj5.children = items8;
       const items9 = [closure_11(closure_5, obj5), ];
       const obj8 = { style: null, children: null };

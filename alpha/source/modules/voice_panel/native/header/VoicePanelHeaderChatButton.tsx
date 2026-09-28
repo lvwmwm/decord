@@ -1,17 +1,17 @@
-// Module ID: 16949
-// Function ID: 16950
+// Module ID: 16953
+// Function ID: 16954
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1074, 21, 4836, 576, 1110, 16950, 5901, 16855, 5385, 1115, 2]
+// Dependencies: [19, 1074, 21, 4836, 576, 1110, 16954, 5901, 16859, 5385, 1115, 2]
 // Exports: default
 
-// Module 16949 (VoicePanelHeaderChatButton)
+// Module 16953 (VoicePanelHeaderChatButton)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
 import ChatIcon from "ChatIcon" /* 5385 */;
 import NativeViewDefault from "NativeView" /* 5901 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 16855 */;
-import useChatBadgeDefault from "useChatBadge" /* 16950 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 16859 */;
+import useChatBadgeDefault from "useChatBadge" /* 16954 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

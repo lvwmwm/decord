@@ -1,9 +1,9 @@
-// Module ID: 15789
-// Function ID: 15790
+// Module ID: 15787
+// Function ID: 15788
 // Name: LurkerServerPreviewJoinButton
 // Dependencies: [5, 32, 19, 2045, 4470, 1074, 21, 9285, 1186, 5832, 5281, 1115, 2]
 
-// Module 15789 (LurkerServerPreviewJoinButton)
+// Module 15787 (LurkerServerPreviewJoinButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

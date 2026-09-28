@@ -1,10 +1,10 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 14783
+// Function ID: 14784
 // Name: GuildRoleSubscriptionMemberPreview
 // Dependencies: [19, 17, 1372, 21, 4836, 576, 1115, 504, 4988, 1397, 6608, 5899, 4832, 1092, 1177, 6626, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 14785 (GuildRoleSubscriptionMemberPreview)
+// Module 14783 (GuildRoleSubscriptionMemberPreview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1092 */;

@@ -1,10 +1,10 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 15820
+// Function ID: 15821
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 5730, 2050, 4858, 4469, 4860, 2051, 1085, 21, 576, 1177, 4823, 9587, 7542, 9578, 1364, 5286, 4836, 4832, 12026, 9580, 1876, 5043, 7841, 4767, 7298, 5281, 4685, 4989, 504, 1115, 5335, 9076, 8983, 8993, 9080, 5743, 5737, 5729, 8943, 5411, 15821, 10374, 5919, 2]
+// Dependencies: [19, 17, 5730, 2050, 4858, 4469, 4860, 2051, 1085, 21, 576, 1177, 4823, 9587, 7542, 9578, 1364, 5286, 4836, 4832, 12026, 9580, 1876, 5043, 7841, 4767, 7298, 5281, 4685, 4989, 504, 1115, 5335, 9076, 8983, 8993, 9080, 5743, 5737, 5729, 8943, 5411, 15819, 10374, 5919, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 15822 (GuildLiveChannelNotice)
+// Module 15820 (GuildLiveChannelNotice)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
@@ -389,8 +389,8 @@ export default noop.memo((guild) => {
   let activeEventOrStageInstanceChannel;
   const tmp = closure_29();
   const tmp2 = activeEventOrStageInstanceChannel;
-  activeEventOrStageInstanceChannel = activeEventOrStageInstanceChannel(15821).useActiveEventOrStageInstanceChannel(guild.id);
-  let obj = activeEventOrStageInstanceChannel(15821);
+  activeEventOrStageInstanceChannel = activeEventOrStageInstanceChannel(15819).useActiveEventOrStageInstanceChannel(guild.id);
+  let obj = activeEventOrStageInstanceChannel(15819);
   const guildActiveEvent = activeEventOrStageInstanceChannel(8943).useGuildActiveEvent(guild.id);
   let obj2 = activeEventOrStageInstanceChannel(8943);
   const items = [StageInstanceStore];

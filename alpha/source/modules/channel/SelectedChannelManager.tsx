@@ -1,9 +1,9 @@
-// Module ID: 17249
-// Function ID: 17250
+// Module ID: 17253
+// Function ID: 17254
 // Name: SelectedChannelManager
 // Dependencies: [1993, 2099, 4655, 1074, 6539, 6760, 5723, 1101, 573, 2]
 
-// Module 17249 (SelectedChannelManager)
+// Module 17253 (SelectedChannelManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5723 */;

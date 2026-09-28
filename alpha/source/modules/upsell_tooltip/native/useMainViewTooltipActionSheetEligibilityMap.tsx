@@ -1,10 +1,10 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 16777
+// Function ID: 16778
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 16750, 10128, 1220, 2037, 1074, 1374, 1084, 504, 16774, 1610, 7504, 6867, 16775, 12960, 10203, 10202, 10208, 4654, 2029, 16776, 16779, 16748, 16760, 9189, 11449, 2]
+// Dependencies: [32, 16754, 10128, 1220, 2037, 1074, 1374, 1084, 504, 16778, 1610, 7504, 6867, 16779, 12959, 10203, 10202, 10208, 4654, 2029, 16780, 16783, 16752, 16764, 9189, 11449, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 16773 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 16777 (useMainViewTooltipActionSheetEligibilityMap)
 import initialize from "initialize" /* 504 */;
 import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6867 */;
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7504 */;
@@ -12,18 +12,18 @@ import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperi
 import MarketingComponentType from "MarketingComponentType" /* 10203 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10208 */;
 import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11449 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 12960 */;
-import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 16748 */;
-import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 16760 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 16774 */;
-import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 16779 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 12959 */;
+import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 16752 */;
+import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 16764 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 16778 */;
+import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 16783 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 16750 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 16754 */;
 import PromotionsStore from "PromotionsStore" /* 10128 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
 
-const useGiftingPromotionAssetsReadyDefault = tmp4(16776);
+const useGiftingPromotionAssetsReadyDefault = tmp4(16780);
 require = fn;
 const PlatformTypes = fn(1074).PlatformTypes;
 const PremiumConstants = fn(1374);
@@ -67,7 +67,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   const premiumDiscountOffer = usePremiumDiscountOffer.usePremiumDiscountOffer();
   const tmpResult19 = usePremiumDiscountOffer;
   const premiumTrialOffer = usePremiumTrialOffer.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16775).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(16779).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const tmpResult20 = usePremiumTrialOffer;
   const promotionMarketingComponent = usePromotionMarketingComponent.usePromotionMarketingComponent(tmp(10203).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;

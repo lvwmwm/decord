@@ -1,13 +1,22 @@
 // Module ID: 13821
 // Function ID: 13822
-// Dependencies: []
+// Dependencies: [13796]
 
 // Module 13821
+import _mod13796 from "module_13796" /* 13796 */;
 
-export default (arg0) => {
-  try {
-    return String(arg0);
-  } catch (err) {
-    return "Object";
-  }
-};
+if (_mod13796) {
+  let fn = call.bind(call);
+} else {
+  fn = () => {
+    const apply = call.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(tmp);
+    } else {
+      applyArgumentsResult = apply(tmp, arguments);
+    }
+    return applyArgumentsResult;
+  };
+}
+
+export default fn;

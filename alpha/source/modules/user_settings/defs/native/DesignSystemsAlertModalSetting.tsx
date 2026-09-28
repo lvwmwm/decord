@@ -1,9 +1,9 @@
-// Module ID: 15375
-// Function ID: 15376
+// Module ID: 15373
+// Function ID: 15374
 // Name: DesignSystemsAlertModalSetting
-// Dependencies: [7417, 1074, 11006, 15376, 2]
+// Dependencies: [7417, 1074, 11006, 15374, 2]
 
-// Module 15375 (DesignSystemsAlertModalSetting)
+// Module 15373 (DesignSystemsAlertModalSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

@@ -1,9 +1,9 @@
-// Module ID: 14718
-// Function ID: 14719
+// Module ID: 14716
+// Function ID: 14717
 // Name: QuestDockContentExpanded
 // Dependencies: [19, 17, 5756, 14624, 21, 4836, 14625, 10895, 4566, 14623, 5280, 6494, 2]
 
-// Module 14718 (QuestDockContentExpanded)
+// Module 14716 (QuestDockContentExpanded)
 import spring from "spring" /* 5280 */;
 import QuestDockUtils from "QuestDockUtils" /* 14623 */;
 import noop from "module_19" /* 19 */;

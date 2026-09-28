@@ -1,17 +1,17 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16140
+// Function ID: 16141
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1372, 21, 12564, 7592, 12569, 16095, 576, 504, 5084, 9188, 6589, 7590, 8128, 8139, 7587, 16145, 1981, 7799, 5039, 16149, 1115, 16151, 4832, 4678, 7055, 11, 672, 5435, 5899, 16152, 2]
+// Dependencies: [19, 17, 1372, 21, 12582, 7592, 12587, 16091, 576, 504, 5084, 9188, 6589, 7590, 8128, 8139, 7587, 16141, 1981, 7799, 5039, 16145, 1115, 16147, 4832, 4678, 7055, 11, 672, 5435, 5899, 16148, 2]
 // Exports: default
 
-// Module 16144 (GamingLikeEntryRow)
+// Module 16140 (GamingLikeEntryRow)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7587 */;
 import utils from "utils" /* 7592 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 7799 */;
-import BadgesAll from "Badges" /* 12564 */;
-import TrendingType from "TrendingType" /* 12569 */;
+import BadgesAll from "Badges" /* 12582 */;
+import TrendingType from "TrendingType" /* 12587 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -73,7 +73,7 @@ items[4] = {
     return true === utils.isEntryMarathon(entry);
   }
 };
-const createICYMIStyles = fn(16095);
+const createICYMIStyles = fn(16091);
 let closure_11 = createICYMIStyles.createICYMIStyles((gap) => {
   const obj = { card: null, cardInnerContainer: null, image: null, gameName: null, badges: null };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
@@ -148,7 +148,7 @@ export default function GamingLikeEntryRow(content) {
   }, items2);
   const items3 = [content];
   const callback1 = noop.useCallback(() => {
-    asyncRequireImpl(16145, dependencyMap.paths).then((GameShareModal) => {
+    asyncRequireImpl(16141, dependencyMap.paths).then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {
         author_id(openReplyActionSheet[19]).itemInteracted(content.id, "hotwheels_gaming_activity", "press_forward");

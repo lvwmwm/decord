@@ -1,9 +1,9 @@
-// Module ID: 15843
-// Function ID: 15844
+// Module ID: 15841
+// Function ID: 15842
 // Name: DirectoryChannel
-// Dependencies: [19, 2045, 4467, 9577, 5018, 21, 4836, 576, 563, 1101, 10374, 15750, 9060, 2]
+// Dependencies: [19, 2045, 4467, 9577, 5018, 21, 4836, 576, 563, 1101, 10374, 15748, 9060, 2]
 
-// Module 15843 (DirectoryChannel)
+// Module 15841 (DirectoryChannel)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
@@ -56,8 +56,8 @@ export default noop.memo((guildId) => {
     obj2.channel = stateFromStores;
     obj2.selected = selected;
     obj2.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-    tmp7 = jsx(id(15750), { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
-    const tmp10 = id(15750);
+    tmp7 = jsx(id(15748), { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
+    const tmp10 = id(15748);
   }
   return tmp7;
 });

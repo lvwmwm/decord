@@ -1,16 +1,16 @@
-// Module ID: 17584
-// Function ID: 17585
+// Module ID: 17588
+// Function ID: 17589
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 14752, 21, 4836, 14787, 1177, 9396, 4832, 4483, 14780, 4989, 5335, 1115, 2]
+// Dependencies: [19, 17, 14750, 21, 4836, 14785, 1177, 9396, 4832, 4483, 14778, 4989, 5335, 1115, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 17584 (GuildRoleSubscriptionBenefitPreview)
+// Module 17588 (GuildRoleSubscriptionBenefitPreview)
 import native from "native" /* 1177 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import _modDef9396 from "module_9396" /* 9396 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 14780 */;
-import EmojiIconDefault from "EmojiIcon" /* 14787 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 14778 */;
+import EmojiIconDefault from "EmojiIcon" /* 14785 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -101,7 +101,7 @@ function EmojiBenefitRow(benefit) {
   return timestampProducer(BaseBenefitRow, obj);
 }
 const View = fn(17).View;
-const constants = fn(14752).GuildRoleSubscriptionBenefitTypes;
+const constants = fn(14750).GuildRoleSubscriptionBenefitTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4836);

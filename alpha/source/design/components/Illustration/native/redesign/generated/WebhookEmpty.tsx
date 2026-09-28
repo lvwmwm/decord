@@ -1,10 +1,10 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16668
+// Function ID: 16669
 // Name: WebhookEmpty
-// Dependencies: [19, 17, 21, 7679, 16665, 16666, 16667, 4685, 2]
+// Dependencies: [19, 17, 21, 7679, 16669, 16670, 16671, 4685, 2]
 // Exports: WebhookEmpty, getWebhookEmptySource, useWebhookEmptySource
 
-// Module 16664 (WebhookEmpty)
+// Module 16668 (WebhookEmpty)
 import shared from "shared" /* 4685 */;
 import _mod7679 from "module_7679" /* 7679 */;
 import noop from "module_19" /* 19 */;
@@ -20,13 +20,13 @@ const result = size.fileFinishedImporting("design/components/Illustration/native
 export const getWebhookEmptySource = function getWebhookEmptySource(theme) {
   return _mod7679.getIllustrationSource(theme, {
     dark() {
-      return require("module_16665");
+      return require("module_16669");
     },
     darker() {
-      return require("module_16666");
+      return require("module_16670");
     },
     light() {
-      return require("module_16667");
+      return require("module_16671");
     }
   });
 };
@@ -34,13 +34,13 @@ export const useWebhookEmptySource = function useWebhookEmptySource() {
   const obj = shared;
   return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_16665");
+      return require("module_16669");
     },
     darker() {
-      return require("module_16666");
+      return require("module_16670");
     },
     light() {
-      return require("module_16667");
+      return require("module_16671");
     }
   });
 };
@@ -49,13 +49,13 @@ export const WebhookEmpty = function WebhookEmpty(arg0) {
   const obj4 = {};
   const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_16665");
+      return require("module_16669");
     },
     darker() {
-      return require("module_16666");
+      return require("module_16670");
     },
     light() {
-      return require("module_16667");
+      return require("module_16671");
     }
   });
   const merged = Object.assign(arg0);

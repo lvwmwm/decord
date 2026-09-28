@@ -1,9 +1,9 @@
-// Module ID: 14378
-// Function ID: 14379
+// Module ID: 14377
+// Function ID: 14378
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 7417, 21, 1243, 1248, 4452, 12177, 1325, 4528, 11006, 14379, 2]
+// Dependencies: [5, 17, 7417, 21, 1243, 1248, 4452, 12177, 1325, 4528, 11006, 14378, 2]
 
-// Module 14378 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 14377 (StaffOnlyFindYourFriendsDeletionSetting)
 import _mod4452 from "module_4452" /* 4452 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -118,7 +118,7 @@ const pressable = SettingBuilders.createPressable({
     }
     return applyArgumentsResult;
   },
-  usePredicate: fn(14379).useStaffOrDeveloperSettingPredicate,
+  usePredicate: fn(14378).useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
     if (closure_6((isLoading) => isLoading.isLoading, _mod4452.shallow)) {

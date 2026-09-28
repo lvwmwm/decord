@@ -1,10 +1,10 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 12739
+// Function ID: 12740
 // Name: useHandleBuyNow
 // Dependencies: [5, 32, 19, 1074, 3, 10480, 6961, 4800, 10542, 1610, 6735, 4503, 4528, 1115, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 12740 (useHandleBuyNow)
+// Module 12739 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;

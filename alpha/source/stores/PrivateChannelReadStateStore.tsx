@@ -1,9 +1,9 @@
-// Module ID: 13298
-// Function ID: 13299
+// Module ID: 13297
+// Function ID: 13298
 // Name: PrivateChannelReadStateStore
 // Dependencies: [2049, 2045, 4851, 2099, 6639, 2019, 504, 573, 2]
 
-// Module 13298 (PrivateChannelReadStateStore)
+// Module 13297 (PrivateChannelReadStateStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FunctionUtils from "FunctionUtils" /* 2019 */;

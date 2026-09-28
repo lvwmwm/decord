@@ -1,9 +1,9 @@
-// Module ID: 15415
-// Function ID: 15416
+// Module ID: 15413
+// Function ID: 15414
 // Name: DesignSystemAIShimmerSetting
-// Dependencies: [7417, 1074, 11006, 15416, 2]
+// Dependencies: [7417, 1074, 11006, 15414, 2]
 
-// Module 15415 (DesignSystemAIShimmerSetting)
+// Module 15413 (DesignSystemAIShimmerSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

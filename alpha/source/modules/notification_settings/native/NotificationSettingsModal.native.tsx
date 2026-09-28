@@ -1,10 +1,10 @@
-// Module ID: 17616
-// Function ID: 17617
+// Module ID: 17620
+// Function ID: 17621
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 2049, 2045, 6532, 4754, 2067, 17272, 4479, 5017, 1372, 1074, 21, 4836, 576, 4540, 5016, 4800, 9600, 1981, 6540, 6535, 9610, 9616, 9623, 5997, 1115, 6000, 5999, 6621, 4832, 1177, 4525, 2111, 9609, 5917, 9604, 5923, 12269, 4472, 5020, 5335, 4989, 8053, 5279, 9605, 1485, 504, 6533, 6461, 5936, 17617, 9599, 6421, 2]
+// Dependencies: [109, 19, 17, 2049, 2045, 6532, 4754, 2067, 17276, 4479, 5017, 1372, 1074, 21, 4836, 576, 4540, 5016, 4800, 9600, 1981, 6540, 6535, 9610, 9616, 9623, 5997, 1115, 6000, 5999, 6621, 4832, 1177, 4525, 2111, 9609, 5917, 9604, 5923, 12269, 4472, 5020, 5335, 4989, 8053, 5279, 9605, 1485, 504, 6533, 6461, 5936, 17621, 9599, 6421, 2]
 // Exports: default
 
-// Module 17616 (NotificationSettingsModal)
+// Module 17620 (NotificationSettingsModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -40,7 +40,7 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 6532 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4754 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 17272 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 17276 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -466,7 +466,7 @@ export default function NotificationSettingsModal() {
     obj4.title = intl2.string(util.t.s7vIQT);
     obj4.headerLeft = NavigatorHeader.getHeaderBackButton();
     obj4.render = function render(guildId, navigation) {
-      return closure_1_26(closure_1_1(17617), { guildId: guildId.guildId, navigation });
+      return closure_1_26(closure_1_1(17621), { guildId: guildId.guildId, navigation });
     };
     obj[constants.ADD_OVERRIDE] = obj4;
     const obj6 = { headerLeft: null, title: null, render: null };

@@ -1,10 +1,10 @@
-// Module ID: 16101
-// Function ID: 16102
+// Module ID: 16097
+// Function ID: 16098
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 2045, 2067, 7783, 21, 4836, 576, 504, 4989, 5938, 5896, 1177, 7798, 6618, 10464, 16102, 5999, 5917, 2]
+// Dependencies: [19, 17, 2045, 2067, 7783, 21, 4836, 576, 504, 4989, 5938, 5896, 1177, 7798, 6618, 10464, 16098, 5999, 5917, 2]
 // Exports: default
 
-// Module 16101 (ItemDetailsActionSheet)
+// Module 16097 (ItemDetailsActionSheet)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useChannelNameDefault from "useChannelName" /* 4989 */;
@@ -72,7 +72,7 @@ export default function ItemDetailsActionSheet(arg0) {
   let tmp16Result = result;
   if (result) {
     const obj8 = { channel: stateFromStores, guild: stateFromStores1 };
-    tmp16Result = tmp16(tmp(16102).ChannelScoreSettings, obj8);
+    tmp16Result = tmp16(tmp(16098).ChannelScoreSettings, obj8);
   }
   const items3 = [tmp16Result, , ];
   let tmp15Result = null != stateFromStores2 && null != stateFromStores1;
@@ -84,7 +84,7 @@ export default function ItemDetailsActionSheet(arg0) {
     const obj10 = { children: null };
     const items4 = [result, ];
     const obj11 = { guild: stateFromStores1 };
-    items4[1] = tmp16(tmp(16102).GuildScoreSettings, obj11);
+    items4[1] = tmp16(tmp(16098).GuildScoreSettings, obj11);
     obj10.children = items4;
     tmp15Result = tmp15(closure_8, obj10);
   }

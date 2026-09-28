@@ -1,9 +1,9 @@
-// Module ID: 15022
-// Function ID: 15023
+// Module ID: 15020
+// Function ID: 15021
 // Name: ShowSpoilersSetting
 // Dependencies: [19, 7417, 1074, 2021, 1115, 11006, 2]
 
-// Module 15022 (ShowSpoilersSetting)
+// Module 15020 (ShowSpoilersSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import noop from "module_19" /* 19 */;

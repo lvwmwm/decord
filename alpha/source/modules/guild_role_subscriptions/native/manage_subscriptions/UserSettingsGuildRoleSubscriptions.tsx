@@ -1,17 +1,17 @@
-// Module ID: 14756
-// Function ID: 14757
+// Module ID: 14754
+// Function ID: 14755
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 4836, 4832, 1115, 1177, 14757, 14758, 14759, 14762, 14763, 2]
+// Dependencies: [19, 17, 21, 4836, 4832, 1115, 1177, 14755, 14756, 14757, 14760, 14761, 2]
 // Exports: default
 
-// Module 14756 (UserSettingsGuildRoleSubscriptions)
+// Module 14754 (UserSettingsGuildRoleSubscriptions)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 14757 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 14758 */;
-import LoadingIndicatorDefault from "LoadingIndicator" /* 14762 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 14763 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 14755 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 14756 */;
+import LoadingIndicatorDefault from "LoadingIndicator" /* 14760 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 14761 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

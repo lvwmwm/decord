@@ -1,12 +1,12 @@
-// Module ID: 16539
-// Function ID: 16540
+// Module ID: 16543
+// Function ID: 16544
 // Name: messages/PinsScreen
-// Dependencies: [19, 11170, 6699, 11822, 7303, 7302, 1074, 21, 504, 16458, 11169, 16454, 11841, 16514, 16462, 16461, 16537, 2]
+// Dependencies: [19, 11170, 6699, 11822, 7303, 7302, 1074, 21, 504, 16462, 11169, 16458, 11841, 16518, 16466, 16465, 16541, 2]
 
-// Module 16539 (messages/PinsScreen)
+// Module 16543 (messages/PinsScreen)
 import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 11169 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11841 */;
-import MessagesScreenDefault from "MessagesScreen" /* 16537 */;
+import MessagesScreenDefault from "MessagesScreen" /* 16541 */;
 import noop from "module_19" /* 19 */;
 import ChannelPinsStore from "ChannelPinsStore" /* 11170 */;
 import SearchMessageStore from "SearchMessageStore" /* 6699 */;

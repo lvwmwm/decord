@@ -1,10 +1,10 @@
-// Module ID: 17159
-// Function ID: 17160
+// Module ID: 17163
+// Function ID: 17164
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 2045, 5200, 1074, 21, 4836, 4731, 5917, 15093, 1115, 5060, 4792, 9657, 7363, 5992, 7569, 38, 504, 11640, 5474, 5446, 17160, 1979, 5203, 5450, 11479, 8608, 10099, 1876, 10098, 5448, 5279, 576, 5999, 2]
+// Dependencies: [5, 19, 17, 2045, 5200, 1074, 21, 4836, 4731, 5917, 15091, 1115, 5060, 4792, 9657, 7363, 5992, 7569, 38, 504, 11640, 5474, 5446, 17164, 1979, 5203, 5450, 11479, 8608, 10099, 1876, 10098, 5448, 5279, 576, 5999, 2]
 // Exports: default
 
-// Module 17159 (FileUploadActionComponent)
+// Module 17163 (FileUploadActionComponent)
 import util from "util" /* 1115 */;
 import FileSizeUtils from "FileSizeUtils" /* 4731 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
@@ -15,7 +15,7 @@ import IconButton from "IconButton" /* 7363 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8608 */;
 import AttachmentPreview from "AttachmentPreview" /* 9657 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10098 */;
-import FileUpIcon from "FileUpIcon" /* 15093 */;
+import FileUpIcon from "FileUpIcon" /* 15091 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

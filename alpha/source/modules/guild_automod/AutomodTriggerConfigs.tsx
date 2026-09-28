@@ -1,10 +1,10 @@
-// Module ID: 17306
-// Function ID: 17307
+// Module ID: 17310
+// Function ID: 17311
 // Name: AutomodTriggerConfigs
-// Dependencies: [19, 11341, 1115, 16651, 9559, 2]
+// Dependencies: [19, 11341, 1115, 16655, 9559, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 17306 (AutomodTriggerConfigs)
+// Module 17310 (AutomodTriggerConfigs)
 import util from "util" /* 1115 */;
 import guild_automod_ExperimentUtils from "guild_automod/ExperimentUtils" /* 9559 */;
 import noop from "module_19" /* 19 */;

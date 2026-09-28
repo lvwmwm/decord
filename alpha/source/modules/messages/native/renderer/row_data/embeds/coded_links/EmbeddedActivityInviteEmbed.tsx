@@ -1,10 +1,10 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12788
+// Function ID: 12789
 // Name: EmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 2044, 7596, 5063, 502, 2045, 4817, 4479, 1372, 10851, 7155, 573, 7595, 7387, 5335, 1115, 4989, 12790, 2]
+// Dependencies: [32, 17, 2044, 7596, 5063, 502, 2045, 4817, 4479, 1372, 10851, 7155, 573, 7595, 7387, 5335, 1115, 4989, 12789, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 12789 (EmbeddedActivityInviteEmbed)
+// Module 12788 (EmbeddedActivityInviteEmbed)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5335 */;
@@ -109,8 +109,8 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           if (null != id1) {
             if (null != id2) {
               const obj6 = { channelId: id1, guildId: id2, applicationId: id };
-              let embeddedActivityParticipantAvatarUris = tmp25(12790).getEmbeddedActivityParticipantAvatarUris(obj6);
-              const tmp25Result4 = tmp25(12790);
+              let embeddedActivityParticipantAvatarUris = tmp25(12789).getEmbeddedActivityParticipantAvatarUris(obj6);
+              const tmp25Result4 = tmp25(12789);
             }
             const string2 = tmp25(1115).intl.string;
             if (0 === embeddedActivityParticipantAvatarUris.length) {

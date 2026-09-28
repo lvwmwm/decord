@@ -1,9 +1,9 @@
-// Module ID: 17714
-// Function ID: 17715
+// Module ID: 17718
+// Function ID: 17719
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 2044, 8499, 2000, 4858, 2017, 4860, 7116, 16852, 5756, 8500, 1091, 7122, 7112, 8813, 5757, 10683, 5759, 7141, 4967, 4966, 6539, 5764, 7137, 4888, 1370, 4965, 7135, 573, 2]
+// Dependencies: [5, 32, 2044, 8499, 2000, 4858, 2017, 4860, 7116, 16856, 5756, 8500, 1091, 7122, 7112, 8813, 5757, 10683, 5759, 7141, 4967, 4966, 6539, 5764, 7137, 4888, 1370, 4965, 7135, 573, 2]
 
-// Module 17714 (QuestProgressManager)
+// Module 17718 (QuestProgressManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4965 */;
@@ -25,7 +25,7 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
 import DetectableGameStore from "DetectableGameStore" /* 2017 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4860 */;
 import QuestStore from "QuestStore" /* 7116 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 16852 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 16856 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;

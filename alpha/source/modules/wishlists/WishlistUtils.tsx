@@ -1,10 +1,10 @@
-// Module ID: 12641
-// Function ID: 12642
+// Module ID: 12659
+// Function ID: 12660
 // Name: WishlistUtils
 // Dependencies: [32, 5823, 8242, 8243, 8244, 1074, 1374, 1115, 6652, 2]
 // Exports: buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12641 (WishlistUtils)
+// Module 12659 (WishlistUtils)
 import util from "util" /* 1115 */;
 import StorefrontUtils from "StorefrontUtils" /* 6652 */;
 import _slicedToArray from "module_32" /* 32 */;

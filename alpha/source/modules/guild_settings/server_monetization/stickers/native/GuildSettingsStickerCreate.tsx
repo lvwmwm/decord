@@ -1,9 +1,9 @@
-// Module ID: 17376
-// Function ID: 17377
+// Module ID: 17380
+// Function ID: 17381
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 5771, 5814, 1074, 1375, 2024, 21, 4836, 576, 6402, 10608, 5910, 4483, 5450, 17377, 9849, 5198, 4832, 1115, 4731, 2111, 5281, 5279, 5435, 9636, 17378, 10583, 6551, 1397, 8219, 6024, 6506, 2]
+// Dependencies: [5, 32, 19, 17, 5771, 5814, 1074, 1375, 2024, 21, 4836, 576, 6402, 10608, 5910, 4483, 5450, 17381, 9849, 5198, 4832, 1115, 4731, 2111, 5281, 5279, 5435, 9636, 17382, 10583, 6551, 1397, 8219, 6024, 6506, 2]
 
-// Module 17376 (GuildSettingsStickerCreate)
+// Module 17380 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 576 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4483 */;
 import useInitialValueDefault from "useInitialValue" /* 5910 */;
@@ -475,7 +475,7 @@ export default noop.forwardRef((stickerId, ref) => {
     obj18.style = tmp.stickerPreviewImage;
     tmp32Result = tmp32(c6, obj18);
   } else {
-    tmp32Result = tmp32(tmp31(17378).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(17382).StickerPlusIcon, { size: "lg" });
   }
   obj16.children = tmp32Result;
   items4[1] = onPressEmoji(stickerId(5435).PressableHighlight, obj16);

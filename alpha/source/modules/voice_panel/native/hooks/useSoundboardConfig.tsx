@@ -1,13 +1,13 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17023
+// Function ID: 17024
 // Name: useSoundboardConfig
-// Dependencies: [19, 2045, 1993, 16857, 504, 16878, 6793, 1115, 2]
+// Dependencies: [19, 2045, 1993, 16861, 504, 16882, 6793, 1115, 2]
 // Exports: default
 
-// Module 17019 (useSoundboardConfig)
+// Module 17023 (useSoundboardConfig)
 import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 6793 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 16857 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 16878 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 16861 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 16882 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;

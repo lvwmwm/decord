@@ -1,10 +1,10 @@
-// Module ID: 17218
-// Function ID: 17219
+// Module ID: 17222
+// Function ID: 17223
 // Name: RedesignDiscoverabilityLanding
 // Dependencies: [19, 17, 21, 4836, 576, 1613, 5994, 4832, 1115, 5899, 12266, 12177, 5281, 2]
 // Exports: default
 
-// Module 17218 (RedesignDiscoverabilityLanding)
+// Module 17222 (RedesignDiscoverabilityLanding)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;

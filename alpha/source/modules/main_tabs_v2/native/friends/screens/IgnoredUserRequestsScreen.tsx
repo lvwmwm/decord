@@ -1,10 +1,10 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16600
+// Function ID: 16601
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4479, 1372, 10320, 1074, 21, 6583, 6603, 504, 16594, 7624, 10326, 2]
+// Dependencies: [19, 4479, 1372, 10320, 1074, 21, 6583, 6603, 504, 16598, 7624, 10326, 2]
 // Exports: default
 
-// Module 16596 (IgnoredUserRequestsScreen)
+// Module 16600 (IgnoredUserRequestsScreen)
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;

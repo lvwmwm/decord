@@ -1,7 +1,7 @@
 // Module ID: 7338
 // Function ID: 7339
 // Name: ConversationNavigator
-// Dependencies: [32, 19, 7018, 21, 7339, 6421, 7349, 7351, 7352, 576, 7367, 12824, 4693, 7333, 2]
+// Dependencies: [32, 19, 7018, 21, 7339, 6421, 7349, 7351, 7352, 576, 7367, 12823, 4693, 7333, 2]
 // Exports: default, openConversationNavigator
 
 // Module 7338 (ConversationNavigator)
@@ -80,7 +80,7 @@ export default function ConversationNavigator(route) {
     return obj.conversationNavigatorFocusHeaderOptions(route, navigation, { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
   };
   obj4.getComponent = function getComponent() {
-    return closure_0(12824).default;
+    return closure_0(12823).default;
   };
   items[1] = closure_6(Navigator.Screen, obj4);
   obj2.children = items;

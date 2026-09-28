@@ -1,9 +1,9 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15358
+// Function ID: 15359
 // Name: DesignSystemsButtonSetting
-// Dependencies: [7417, 1074, 11006, 15361, 2]
+// Dependencies: [7417, 1074, 11006, 15359, 2]
 
-// Module 15360 (DesignSystemsButtonSetting)
+// Module 15358 (DesignSystemsButtonSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

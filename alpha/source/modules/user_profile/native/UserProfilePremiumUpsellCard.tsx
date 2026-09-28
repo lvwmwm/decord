@@ -1,10 +1,10 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14201
+// Function ID: 14202
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1074, 21, 6603, 4836, 14180, 4832, 1485, 6411, 1115, 6866, 6583, 8695, 8663, 9422, 14203, 1613, 2]
+// Dependencies: [19, 1074, 21, 6603, 4836, 14179, 4832, 1485, 6411, 1115, 6866, 6583, 8695, 8663, 9422, 14202, 1613, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 14202 (UserProfilePremiumUpsellCard)
+// Module 14201 (UserProfilePremiumUpsellCard)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
@@ -13,7 +13,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8663 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8695 */;
 import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9422 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14180 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14179 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,7 +50,7 @@ function GetNitroCard(style) {
   let obj = analyticsLocations(6866);
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items));
   const tmp5 = usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items);
-  const mobileNitroPreviewDirectCheckoutEnabled = analyticsLocations(14203).useMobileNitroPreviewDirectCheckoutEnabled();
+  const mobileNitroPreviewDirectCheckoutEnabled = analyticsLocations(14202).useMobileNitroPreviewDirectCheckoutEnabled();
   const obj3 = { style: style.style, ctaText: null, description: null, disabled: null, onPress: null };
   if (nitroTrialCtaOverride == null) {
     const intl = tmp(1115).intl;

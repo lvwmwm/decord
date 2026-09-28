@@ -1,12 +1,12 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 13982
+// Function ID: 13983
 // Name: TagGraphic
-// Dependencies: [19, 17, 21, 4836, 576, 13980, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 13979, 2]
 // Exports: TagGraphic
 
-// Module 13983 (TagGraphic)
+// Module 13982 (TagGraphic)
 import nativeDefault from "native" /* 576 */;
-import TagGroupTypes from "TagGroupTypes" /* 13980 */;
+import TagGroupTypes from "TagGroupTypes" /* 13979 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

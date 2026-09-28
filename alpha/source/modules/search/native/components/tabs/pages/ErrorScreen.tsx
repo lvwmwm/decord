@@ -1,9 +1,9 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16454
+// Function ID: 16455
 // Name: pages/ErrorScreen
 // Dependencies: [19, 17, 21, 4836, 6402, 4541, 4832, 2]
 
-// Module 16450 (pages/ErrorScreen)
+// Module 16454 (pages/ErrorScreen)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6402 */;

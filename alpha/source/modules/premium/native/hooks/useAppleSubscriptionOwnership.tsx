@@ -1,13 +1,13 @@
-// Module ID: 12926
-// Function ID: 12927
+// Module ID: 12925
+// Function ID: 12926
 // Name: useAppleSubscriptionOwnership
-// Dependencies: [32, 19, 12927, 1980, 6658, 1074, 504, 1364, 12928, 2]
+// Dependencies: [32, 19, 12926, 1980, 6658, 1074, 504, 1364, 12927, 2]
 // Exports: useAppleSubscriptionOwnership
 
-// Module 12926 (useAppleSubscriptionOwnership)
+// Module 12925 (useAppleSubscriptionOwnership)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplePurchasesStore from "ApplePurchasesStore" /* 12927 */;
+import ApplePurchasesStore from "ApplePurchasesStore" /* 12926 */;
 import AppStateStore from "AppStateStore" /* 1980 */;
 import IAPStore from "IAPStore" /* 6658 */;
 

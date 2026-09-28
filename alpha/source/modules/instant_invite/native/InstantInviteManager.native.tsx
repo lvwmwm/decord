@@ -1,9 +1,9 @@
-// Module ID: 17170
-// Function ID: 17171
+// Module ID: 17174
+// Function ID: 17175
 // Name: InstantInviteManager
 // Dependencies: [6539, 4528, 1115, 2]
 
-// Module 17170 (InstantInviteManager)
+// Module 17174 (InstantInviteManager)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 

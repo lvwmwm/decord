@@ -1,10 +1,10 @@
-// Module ID: 14323
-// Function ID: 14324
+// Module ID: 14322
+// Function ID: 14323
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 4836, 576, 6610, 14321, 14317, 6544, 1177, 1115, 4832, 5435, 2]
+// Dependencies: [32, 19, 21, 4836, 576, 6610, 14320, 14316, 6544, 1177, 1115, 4832, 5435, 2]
 // Exports: default
 
-// Module 14323 (TwoFASetupScan)
+// Module 14322 (TwoFASetupScan)
 import nativeDefault from "native" /* 576 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -29,7 +29,7 @@ export default function TwoFASetupScan(totpSecret) {
     closure_1(true);
     ClipboardUtils.copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  const twoFASetupStyles = totpSecret(14321).useTwoFASetupStyles();
+  const twoFASetupStyles = totpSecret(14320).useTwoFASetupStyles();
   const obj2 = { bottom: true, style: tmp.container, children: null };
   const obj3 = { style: null, children: null };
   const items1 = [, ];
@@ -62,5 +62,5 @@ export default function TwoFASetupScan(totpSecret) {
   items2[3] = closure_4(totpSecret(5435).PressableOpacity, obj5);
   obj2.children = items2;
   obj7.children = closure_5(totpSecret(6544).SafeAreaPaddingView, obj2);
-  return closure_4(totpSecret(14317).TwoFASetupModalScreen, obj7);
+  return closure_4(totpSecret(14316).TwoFASetupModalScreen, obj7);
 };

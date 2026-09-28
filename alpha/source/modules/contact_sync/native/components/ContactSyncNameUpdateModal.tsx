@@ -1,10 +1,10 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14381
+// Function ID: 14382
 // Name: ContactSyncNameUpdateModal
 // Dependencies: [5, 32, 19, 17, 12175, 21, 5039, 4836, 576, 5994, 12177, 12181, 4528, 1115, 5909, 12194, 5936, 6421, 2]
 // Exports: default
 
-// Module 14382 (ContactSyncNameUpdateModal)
+// Module 14381 (ContactSyncNameUpdateModal)
 import nativeDefault from "native" /* 576 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5039 */;
 import Navigator from "Navigator" /* 6421 */;

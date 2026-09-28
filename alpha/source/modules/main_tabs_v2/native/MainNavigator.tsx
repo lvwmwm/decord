@@ -1,21 +1,21 @@
-// Module ID: 15566
-// Function ID: 15567
+// Module ID: 15564
+// Function ID: 15565
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 15567, 1074, 21, 4836, 1364, 4812, 13992, 15568, 15569, 15629, 16559, 16566, 16569, 16597, 16625, 7338, 16683, 16686, 16690, 16692, 16721, 16726, 4701, 1483, 1611, 5016, 7288, 16727, 16783, 563, 8841, 4695, 6421, 5838, 11027, 16613, 16786, 16817, 8965, 16819, 10386, 2]
+// Dependencies: [32, 19, 17, 502, 15565, 1074, 21, 4836, 1364, 4812, 13991, 15566, 15567, 15627, 16563, 16570, 16573, 16601, 16629, 7338, 16687, 16690, 16694, 16696, 16725, 16730, 4701, 1483, 1611, 5016, 7288, 16731, 16787, 563, 8841, 4695, 6421, 5838, 11027, 16617, 16790, 16821, 8965, 16823, 10386, 2]
 // Exports: getChannelScreen
 
-// Module 15566 (MainNavigator)
+// Module 15564 (MainNavigator)
 import PlatformUtils2 from "PlatformUtils" /* 1364 */;
 import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 8965 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10386 */;
 import StartupProfiler from "StartupProfiler" /* 11027 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 13992 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 15568 */;
-import AutoAnalytics from "AutoAnalytics" /* 16559 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 16613 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 16786 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 16817 */;
-import AppComponents from "AppComponents" /* 16819 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 13991 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 15566 */;
+import AutoAnalytics from "AutoAnalytics" /* 16563 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 16617 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 16790 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 16821 */;
+import AppComponents from "AppComponents" /* 16823 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -70,7 +70,7 @@ function getAccountStanding() {
   return require("SuspendedUserPage").default;
 }
 const View = fn(17).View;
-let animation = fn(15567).StackNavigationAnimationSettings;
+let animation = fn(15565).StackNavigationAnimationSettings;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, DrawerSourceTypes: closure_9 } = Constants);
 const jsxProd = fn(21);

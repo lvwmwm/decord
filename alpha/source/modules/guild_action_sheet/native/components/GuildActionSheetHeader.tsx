@@ -1,18 +1,18 @@
-// Module ID: 13513
-// Function ID: 13514
+// Module ID: 13512
+// Function ID: 13513
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 13514, 2067, 6696, 1074, 21, 4836, 576, 1365, 1115, 8206, 8205, 8354, 8209, 5435, 4528, 1177, 4832, 6364, 504, 2059, 13515, 13516, 1479, 5896, 1397, 1432, 7297, 4531, 5899, 8202, 12850, 2]
+// Dependencies: [19, 17, 13513, 2067, 6696, 1074, 21, 4836, 576, 1365, 1115, 8206, 8205, 8354, 8209, 5435, 4528, 1177, 4832, 6364, 504, 2059, 13514, 13515, 1479, 5896, 1397, 1432, 7297, 4531, 5899, 8202, 12849, 2]
 // Exports: default
 
-// Module 13513 (GuildActionSheetHeader)
+// Module 13512 (GuildActionSheetHeader)
 import nativeDefault from "native" /* 576 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4528 */;
 import _modDef8206 from "module_8206" /* 8206 */;
 import _modDef8209 from "module_8209" /* 8209 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 13515 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 13514 */;
 import noop from "module_19" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 13514 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 13513 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6696 */;
 

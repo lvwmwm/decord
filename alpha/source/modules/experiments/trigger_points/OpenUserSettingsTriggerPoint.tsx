@@ -1,9 +1,9 @@
-// Module ID: 16723
-// Function ID: 16724
+// Module ID: 16727
+// Function ID: 16728
 // Name: OpenUserSettingsTriggerPoint
 // Dependencies: [4751, 10271, 2]
 
-// Module 16723 (OpenUserSettingsTriggerPoint)
+// Module 16727 (OpenUserSettingsTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 4751 */;
 import Helpers from "Helpers" /* 10271 */;
 import size from "module_2" /* 2 */;

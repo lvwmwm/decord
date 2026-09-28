@@ -1,10 +1,10 @@
-// Module ID: 12657
-// Function ID: 12658
+// Module ID: 12675
+// Function ID: 12676
 // Name: useUserProfileApplicationRoleConnections
 // Dependencies: [19, 7035, 504, 2]
 // Exports: default
 
-// Module 12657 (useUserProfileApplicationRoleConnections)
+// Module 12675 (useUserProfileApplicationRoleConnections)
 import _mod19 from "module_19" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 import size from "module_2" /* 2 */;

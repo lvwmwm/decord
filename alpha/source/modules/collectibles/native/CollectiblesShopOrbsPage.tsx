@@ -1,13 +1,13 @@
-// Module ID: 15460
-// Function ID: 15461
+// Module ID: 15458
+// Function ID: 15459
 // Name: CollectiblesShopOrbsPage
-// Dependencies: [19, 17, 6962, 1076, 21, 4836, 6583, 8229, 15426, 4800, 7621, 15432, 1177, 7678, 1115, 15459, 2]
+// Dependencies: [19, 17, 6962, 1076, 21, 4836, 6583, 8229, 15424, 4800, 7621, 15430, 1177, 7678, 1115, 15457, 2]
 // Exports: default
 
-// Module 15460 (CollectiblesShopOrbsPage)
+// Module 15458 (CollectiblesShopOrbsPage)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7621 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 15432 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 15430 */;
 import noop from "module_19" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 

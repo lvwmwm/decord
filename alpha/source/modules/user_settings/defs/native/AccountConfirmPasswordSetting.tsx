@@ -1,9 +1,9 @@
-// Module ID: 14314
-// Function ID: 14315
+// Module ID: 14313
+// Function ID: 14314
 // Name: AccountConfirmPasswordSetting
 // Dependencies: [7417, 1074, 11006, 1115, 6414, 2]
 
-// Module 14314 (AccountConfirmPasswordSetting)
+// Module 14313 (AccountConfirmPasswordSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import UserSettingsConfirmPassword from "UserSettingsConfirmPassword" /* 6414 */;

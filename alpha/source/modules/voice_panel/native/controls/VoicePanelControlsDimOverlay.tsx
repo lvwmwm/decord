@@ -1,17 +1,17 @@
-// Module ID: 17027
-// Function ID: 17028
+// Module ID: 17031
+// Function ID: 17032
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 13931, 11755, 11753, 21, 11754, 4566, 16992, 5280, 13929, 5267, 2]
+// Dependencies: [19, 13930, 11755, 11753, 21, 11754, 4566, 16996, 5280, 13928, 5267, 2]
 
-// Module 17027 (VoicePanelControlsDimOverlay)
+// Module 17031 (VoicePanelControlsDimOverlay)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import spring from "spring" /* 5280 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 13929 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 16992 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 13928 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 16996 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(13931).BACKDROP_OPAQUE_MAX_OPACITY;
+let closure_4 = fn(13930).BACKDROP_OPAQUE_MAX_OPACITY;
 const VoicePanelConstants = fn(11755);
 ({ PANEL_CONTROLS_HEIGHT_PHYSICS: hasOwnProperty, VoicePanelModes: metroRequire } = VoicePanelConstants);
 const VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;

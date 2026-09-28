@@ -1,10 +1,10 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17393
+// Function ID: 17394
 // Name: getGuildTagBadgeLabel
 // Dependencies: [7386, 1115, 1370, 2]
 // Exports: default
 
-// Module 17389 (getGuildTagBadgeLabel)
+// Module 17393 (getGuildTagBadgeLabel)
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import GuildTagConstants from "GuildTagConstants" /* 7386 */;

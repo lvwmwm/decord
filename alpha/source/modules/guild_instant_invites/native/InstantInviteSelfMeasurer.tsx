@@ -1,9 +1,9 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 16642
+// Function ID: 16643
 // Name: InstantInviteSelfMeasurer
 // Dependencies: [19, 17, 21, 4836, 10393, 2]
 
-// Module 16638 (InstantInviteSelfMeasurer)
+// Module 16642 (InstantInviteSelfMeasurer)
 import InstantInvite from "InstantInvite" /* 10393 */;
 import noop from "module_19" /* 19 */;
 

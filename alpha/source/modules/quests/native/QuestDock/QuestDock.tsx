@@ -1,9 +1,9 @@
-// Module ID: 14714
-// Function ID: 14715
+// Module ID: 14712
+// Function ID: 14713
 // Name: QuestDock
-// Dependencies: [5, 32, 109, 19, 17, 14622, 5756, 14624, 1074, 1085, 21, 4836, 576, 1364, 14631, 14621, 14625, 14628, 5266, 4566, 7715, 1613, 14629, 4531, 14715, 5280, 14623, 5284, 5263, 14716, 6494, 1115, 14717, 14718, 14719, 5267, 10681, 5759, 14720, 5179, 5184, 7141, 14713, 504, 10682, 10683, 4540, 14620, 1241, 14721, 14722, 14729, 14730, 14732, 10753, 14735, 14736, 5763, 14742, 14745, 14747, 14748, 6364, 14750, 2]
+// Dependencies: [5, 32, 109, 19, 17, 14622, 5756, 14624, 1074, 1085, 21, 4836, 576, 1364, 14631, 14621, 14625, 14628, 5266, 4566, 7715, 1613, 14629, 4531, 14713, 5280, 14623, 5284, 5263, 14714, 6494, 1115, 14715, 14716, 14717, 5267, 10681, 5759, 14718, 5179, 5184, 7141, 14711, 504, 10682, 10683, 4540, 14620, 1241, 14719, 14720, 14727, 14728, 14730, 10753, 14733, 14734, 5763, 14740, 14743, 14745, 14746, 6364, 14748, 2]
 
-// Module 14714 (QuestDock)
+// Module 14712 (QuestDock)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -22,9 +22,9 @@ import QuestActionCreators from "QuestActionCreators" /* 10683 */;
 import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10753 */;
 import QuestDockUtils from "QuestDockUtils" /* 14623 */;
 import QuestDockGestureContext from "QuestDockGestureContext" /* 14625 */;
-import QuestDockBountyHeaderDefault from "QuestDockBountyHeader" /* 14742 */;
-import QuestDockBountyBodyDefault from "QuestDockBountyBody" /* 14745 */;
-import QuestDockBountyBackgroundDefault from "QuestDockBountyBackground" /* 14747 */;
+import QuestDockBountyHeaderDefault from "QuestDockBountyHeader" /* 14740 */;
+import QuestDockBountyBodyDefault from "QuestDockBountyBody" /* 14743 */;
+import QuestDockBountyBackgroundDefault from "QuestDockBountyBackground" /* 14745 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -377,7 +377,7 @@ function QuestDockWithEntranceAnimation(arg0) {
   ({ renderModeChangeTracker: require, identifierMetricTag } = arg0);
   ({ backgroundImageUrl, iconUrl, layoutVariant: dependencyMap, theme: closure_3, backgroundColor: asyncGeneratorStep, expandedHeight: _slicedToArray, collapsedContent: _objectWithoutProperties, expandedContent: noop, backgroundContent: closure_8, withAndroidOffscreenAlphaCompositingWorkaround: closure_9 } = arg0);
   ({ renderImpressionTracker, trackAssetLoadingFailure } = arg0);
-  const context = noop.useContext(identifierMetricTag(14713));
+  const context = noop.useContext(identifierMetricTag(14711));
   const isRendered = context.isRendered;
   let items = [mode];
   mode = initialize.useStateFromStores(items, () => mode.prevRestingQuestDockMode);
@@ -712,11 +712,11 @@ function QuestDockBountyContent(bounty) {
   let obj = bounty(14621);
   const questDockAppThemedBackgroundColor = bounty(14621).useQuestDockAppThemedBackgroundColor();
   const obj2 = bounty(14621);
-  const questDockBountySmokeCollapsedPlaceholderUrl = bounty(14735).useQuestDockBountySmokeCollapsedPlaceholderUrl();
-  const obj3 = bounty(14735);
-  const isBountiesAndroidQuestBarSmokeAnimationEnabled = bounty(14736).useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
+  const questDockBountySmokeCollapsedPlaceholderUrl = bounty(14733).useQuestDockBountySmokeCollapsedPlaceholderUrl();
+  const obj3 = bounty(14733);
+  const isBountiesAndroidQuestBarSmokeAnimationEnabled = bounty(14734).useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   const obj5 = { bounty, children: null };
-  const obj4 = bounty(14736);
+  const obj4 = bounty(14734);
   obj5.children = closure_23(QuestDockWithEntranceAnimation, {
     identifierMetricTag: "ad_creative_id:" + bounty.id,
     backgroundImageUrl: questDockBountySmokeCollapsedPlaceholderUrl,

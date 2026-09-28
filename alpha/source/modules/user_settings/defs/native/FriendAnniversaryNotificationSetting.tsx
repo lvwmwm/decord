@@ -1,14 +1,14 @@
-// Module ID: 15053
-// Function ID: 15054
+// Module ID: 15051
+// Function ID: 15052
 // Name: FriendAnniversaryNotificationSetting
-// Dependencies: [7417, 11006, 1115, 2021, 15054, 7524, 2]
+// Dependencies: [7417, 11006, 1115, 2021, 15052, 7524, 2]
 
-// Module 15053 (FriendAnniversaryNotificationSetting)
+// Module 15051 (FriendAnniversaryNotificationSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 7524 */;
-import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 15054 */;
+import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 15052 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

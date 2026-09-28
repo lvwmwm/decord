@@ -1,9 +1,9 @@
-// Module ID: 17129
-// Function ID: 17130
+// Module ID: 17133
+// Function ID: 17134
 // Name: ForumManager
 // Dependencies: [2045, 2052, 6539, 6722, 2]
 
-// Module 17129 (ForumManager)
+// Module 17133 (ForumManager)
 import ForumPostDataLoader from "ForumPostDataLoader" /* 6722 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;

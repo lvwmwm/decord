@@ -1,10 +1,10 @@
-// Module ID: 12984
-// Function ID: 12985
+// Module ID: 12983
+// Function ID: 12984
 // Name: ReferralProgramShareActionSheetUtils
 // Dependencies: [4479, 10320, 2]
 // Exports: buildReferralUserRow
 
-// Module 12984 (ReferralProgramShareActionSheetUtils)
+// Module 12983 (ReferralProgramShareActionSheetUtils)
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 
 const UserRowModes = fn(10320).UserRowModes;

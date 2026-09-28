@@ -1,10 +1,10 @@
-// Module ID: 17398
-// Function ID: 17399
+// Module ID: 17402
+// Function ID: 17403
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 2063, 2067, 1372, 9049, 1074, 21, 4836, 576, 504, 9048, 4832, 1115, 5281, 14327, 6461, 2]
+// Dependencies: [19, 17, 2063, 2067, 1372, 9049, 1074, 21, 4836, 576, 504, 9048, 4832, 1115, 5281, 14326, 6461, 2]
 // Exports: default
 
-// Module 17398 (GuildSettingsModalSecurity)
+// Module 17402 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 576 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;
 import noop from "module_19" /* 19 */;
@@ -104,7 +104,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   const obj10 = { style: tmp.center, children: null };
   let obj2 = guildId(504);
   const tmp15 = closure_14;
-  const items6 = [closure_12(closure_5, { source: stateFromStores(14327), style: tmp.image, resizeMode: "contain" }), ];
+  const items6 = [closure_12(closure_5, { source: stateFromStores(14326), style: tmp.image, resizeMode: "contain" }), ];
   const obj12 = { style: tmp.infoWrapper, children: null };
   const obj13 = { variant: "text-sm/medium", color: "text-muted", children: null };
   const intl4 = tmp2(1115).intl;

@@ -1,10 +1,10 @@
-// Module ID: 15796
-// Function ID: 15797
+// Module ID: 15794
+// Function ID: 15795
 // Name: GuildThemeNuxUtils
 // Dependencies: [5, 1220, 4763, 2026, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 15796 (GuildThemeNuxUtils)
+// Module 15794 (GuildThemeNuxUtils)
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2026 */;
 import Client from "Client" /* 4763 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

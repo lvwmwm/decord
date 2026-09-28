@@ -1,10 +1,10 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15750
+// Function ID: 15751
 // Name: GuildRoleSubscriptionGatedChannelIcon
 // Dependencies: [19, 21, 1177, 9762, 2]
 // Exports: default
 
-// Module 15752 (GuildRoleSubscriptionGatedChannelIcon)
+// Module 15750 (GuildRoleSubscriptionGatedChannelIcon)
 import native from "native" /* 1177 */;
 import _modDef9762 from "module_9762" /* 9762 */;
 import noop from "module_19" /* 19 */;

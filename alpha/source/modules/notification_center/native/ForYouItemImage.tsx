@@ -1,9 +1,9 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16062
+// Function ID: 16063
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2063, 2067, 1372, 16067, 21, 4836, 576, 7054, 9336, 16068, 16069, 16070, 16071, 5899, 16072, 1177, 16073, 16074, 6583, 504, 5435, 7624, 7693, 16075, 4832, 2]
+// Dependencies: [19, 17, 2063, 2067, 1372, 16063, 21, 4836, 576, 7054, 9336, 16064, 16065, 16066, 16067, 5899, 16068, 1177, 16069, 16070, 6583, 504, 5435, 7624, 7693, 16071, 4832, 2]
 
-// Module 16066 (ForYouItemImage)
+// Module 16062 (ForYouItemImage)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Pressables from "Pressables" /* 5435 */;
@@ -15,7 +15,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 const View = fn(17).View;
 const getGuildAcronym = fn(2063).getGuildAcronym;
-const Constants = fn(16067);
+const Constants = fn(16063);
 ({ FRIEND_BACKGROUND, MESSAGE_BACKGROUND, PROFILE_BACKGROUND } = Constants);
 const jsx = fn(21).jsx;
 let createStyles = fn(4836);

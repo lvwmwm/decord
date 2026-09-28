@@ -1,9 +1,9 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 16966
+// Function ID: 16967
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 2044, 8844, 2045, 11755, 11753, 1074, 2005, 21, 4836, 576, 11754, 16273, 504, 16963, 8782, 6589, 8912, 6583, 6603, 8895, 13532, 4566, 8805, 6073, 1479, 8834, 6494, 16964, 8915, 16965, 16966, 16970, 4540, 2]
+// Dependencies: [32, 19, 2044, 8844, 2045, 11755, 11753, 1074, 2005, 21, 4836, 576, 11754, 16269, 504, 16967, 8782, 6589, 8912, 6583, 6603, 8895, 13531, 4566, 8805, 6073, 1479, 8834, 6494, 16968, 8915, 16969, 16970, 16974, 4540, 2]
 
-// Module 16962 (VoicePanelAnimatedActivityCard)
+// Module 16966 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 576 */;
 import useWindowDimensions from "useWindowDimensions" /* 1479 */;
 import native from "native" /* 4540 */;
@@ -45,7 +45,7 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
   const windowDimensions = context.windowDimensions;
   const hideControls = context.hideControls;
   const controlsSpecs = context.controlsSpecs;
-  const tmp7 = sharedVisible(16273)();
+  const tmp7 = sharedVisible(16269)();
   closure_10 = tmp7;
   let tmp = incrementActivityKey();
   const items = [windowDimensions];
@@ -64,14 +64,14 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
   if (guild_id1 == null) {
     guild_id1 = null;
   }
-  const activityShelfItemData = applicationId(16963).useActivityShelfItemData(guild_id1, applicationId);
+  const activityShelfItemData = applicationId(16967).useActivityShelfItemData(guild_id1, applicationId);
   const items2 = [guild_id];
   const effect = obj.useEffect(() => {
     const shelf = EmbeddedActivitiesActionCreators.fetchShelf({ guildId: guild_id });
   }, items2);
   const items3 = [applicationId];
   application = tmp2(tmp4(6589)(items3), 1)[0];
-  const tmp8Result = applicationId(16963);
+  const tmp8Result = applicationId(16967);
   const items4 = [layoutManager];
   const items5 = [applicationId];
   const stateFromStoresObject = applicationId(504).useStateFromStoresObject(items4, () => ({ gridOrientationLockState: EmbeddedActivitiesStore.getGridOrientationLockStateForApp(applicationId), focusedOrientationLockState: EmbeddedActivitiesStore.getOrientationLockStateForApp(applicationId) }), items5);
@@ -106,7 +106,7 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
     if (stateFromStores1 != null) {
       const participants = stateFromStores1.participants;
       if (participants != null) {
-        found = participants.find((item) => applicationId(13532).isActivityParticipantCurrentUserCurrentSession(item));
+        found = participants.find((item) => applicationId(13531).isActivityParticipantCurrentUserCurrentSession(item));
       }
     }
     tmp21 = null != found;
@@ -336,26 +336,26 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
       obj11.isActivityFocused = first1;
       const obj12 = { channel: stateFromStores, layoutMode: tmp43 };
       obj11.children = focusedOrientationLockState(tmp4(8915), obj12, tmp3[0]);
-      const items13 = [focusedOrientationLockState(tmp4(16964), obj11), ];
+      const items13 = [focusedOrientationLockState(tmp4(16968), obj11), ];
       let tmp47Result = null;
       if (stateFromStores2) {
-        tmp47Result = tmp47(tmp4(16965), {});
+        tmp47Result = tmp47(tmp4(16969), {});
       }
       items13[1] = tmp47Result;
       obj9.children = items13;
       obj8.children = tmp48(tmp4Result3, obj9);
       let tmp47Result2 = tmp47(tmp8(6073).GestureDetector, obj8);
       let tmp44 = tmp47;
-      const tmp4Result4 = tmp4(16964);
+      const tmp4Result4 = tmp4(16968);
     } else if (null == activityShelfItemData) {
       const obj13 = { activity: stateFromStores1, application };
-      tmp47Result2 = focusedOrientationLockState(tmp4(16966), obj13);
+      tmp47Result2 = focusedOrientationLockState(tmp4(16970), obj13);
       tmp44 = focusedOrientationLockState;
     } else {
       tmp44 = focusedOrientationLockState;
       const obj14 = { gesture: memo1, children: null };
       const obj15 = { context: memo, guildId: stateFromStores.guild_id, activityItem: activityShelfItemData, locationObject: analyticsContext.location, itemDimensions: tmp2Result2[0], disableBadges: true };
-      obj14.children = focusedOrientationLockState(tmp4(16970), obj15);
+      obj14.children = focusedOrientationLockState(tmp4(16974), obj15);
       tmp47Result2 = focusedOrientationLockState(tmp8(6073).GestureDetector, obj14);
     }
     const obj16 = { value: tmp4Result(tmp4(6603).ACTIVITY_TILE).analyticsLocations, children: tmp47Result2 };

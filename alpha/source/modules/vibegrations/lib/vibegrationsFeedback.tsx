@@ -1,7 +1,7 @@
 // Module ID: 16314
 // Function ID: 16315
 // Name: vibegrationsFeedback
-// Dependencies: [12625, 8495, 1074, 11121, 510, 1115, 3715, 1241, 11124, 2]
+// Dependencies: [12643, 8495, 1074, 11121, 510, 1115, 3715, 1241, 11124, 2]
 // Exports: countSettledTurns, hasShownFeedbackForProject, markFeedbackShownForProject, submitVibegrationsFeedback, trackVibegrationsFeedbackOpened, vibegrationsFeedbackSection
 
 // Module 16314 (vibegrationsFeedback)
@@ -10,11 +10,11 @@ import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import FeedbackUtils from "FeedbackUtils" /* 11124 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12625 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12643 */;
 import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8495 */;
 
 require = fn;
-const turnSettled = fn(12625).turnSettled;
+const turnSettled = fn(12643).turnSettled;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const Constants = fn(11121);
 ({ FeedbackCategory: closure_7, FeedbackOptionVariant: closure_8, FeedbackType: closure_9, VibegrationsFeedbackOption: c10 } = Constants);

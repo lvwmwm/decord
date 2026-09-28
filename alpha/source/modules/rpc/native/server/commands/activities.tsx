@@ -1,11 +1,11 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14075
+// Function ID: 14076
 // Name: commands/activities
-// Dependencies: [5, 4739, 1074, 5045, 7787, 14043, 8770, 9275, 14034, 5451, 5462, 8782, 4736, 2]
+// Dependencies: [5, 4739, 1074, 5045, 7787, 14042, 8770, 9275, 14033, 5451, 5462, 8782, 4736, 2]
 
-// Module 14076 (commands/activities)
+// Module 14075 (commands/activities)
 import RPCErrorDefault from "RPCError" /* 8770 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14043 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14042 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const instant_invite_InstantInviteUtils = tmp(9275);
@@ -79,7 +79,7 @@ obj4.handler = function handler(socket) {
               const tmp62 = new tmp2(8770)(obj4, "No application.");
               throw tmp62;
             } else {
-              const tmp91 = tmp2(14034)(tmp87);
+              const tmp91 = tmp2(14033)(tmp87);
               let id1;
               if (tmp91 != null) {
                 id1 = tmp91.id;

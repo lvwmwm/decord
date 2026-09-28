@@ -1,10 +1,10 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12793
+// Function ID: 12794
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 10969, 7155, 7387, 11267, 12795, 1363, 1115, 7378, 576, 4685, 11286, 11287, 12793, 2]
+// Dependencies: [17, 10969, 7155, 7387, 11267, 12794, 1363, 1115, 7378, 576, 4685, 11286, 11287, 12792, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 12794 (BuildOverrideEmbed)
+// Module 12793 (BuildOverrideEmbed)
 import _mod17 from "module_17" /* 17 */;
 import util from "util" /* 1115 */;
 import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
@@ -56,7 +56,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
       }
       tmp10 = id === id1;
     }
-    const tmpResult = tmp(12795);
+    const tmpResult = tmp(12794);
     const tmpResultResult = tmpResult(buildOverride.override, ["discord_ios", "discord_android"], ClientInfoUtilsAll.getConstants().Version);
     if (currentBuildOverride.state !== tmp6.Invalid) {
       if (buildOverride.state !== tmp6.Invalid) {
@@ -89,7 +89,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
               obj3.titleColor = colors.titleColor;
               obj3.subtitle = id;
               obj3.subtitleColor = colors.subtitleColor;
-              obj3.thumbnailUrl = Image.resolveAssetSource(tmp(12793)).uri;
+              obj3.thumbnailUrl = Image.resolveAssetSource(tmp(12792)).uri;
               let str2 = "primary";
               if (tmp10) {
                 str2 = "destructive";

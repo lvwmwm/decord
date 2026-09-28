@@ -1,14 +1,14 @@
-// Module ID: 15686
-// Function ID: 15687
+// Module ID: 15684
+// Function ID: 15685
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 1074, 21, 4836, 576, 15657, 1613, 14620, 15687, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 576, 15655, 1613, 14620, 15685, 2]
 // Exports: default
 
-// Module 15686 (ChannelListPanelBackdrop)
+// Module 15684 (ChannelListPanelBackdrop)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import QuestHooks from "QuestHooks" /* 14620 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15657 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15655 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

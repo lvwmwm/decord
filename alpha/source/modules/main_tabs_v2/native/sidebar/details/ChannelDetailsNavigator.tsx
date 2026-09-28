@@ -1,15 +1,15 @@
-// Module ID: 16625
-// Function ID: 16626
+// Module ID: 16629
+// Function ID: 16630
 // Name: ChannelDetailsNavigator
-// Dependencies: [19, 17, 2045, 10377, 1074, 16455, 21, 7339, 563, 6687, 10792, 7288, 1115, 12289, 1241, 8085, 16626, 6421, 5942, 4693, 1613, 16677, 1364, 16678, 16679, 7351, 7352, 16680, 16681, 16682, 16531, 2]
+// Dependencies: [19, 17, 2045, 10377, 1074, 16459, 21, 7339, 563, 6687, 10792, 7288, 1115, 12289, 1241, 8085, 16630, 6421, 5942, 4693, 1613, 16681, 1364, 16682, 16683, 7351, 7352, 16684, 16685, 16686, 16535, 2]
 
-// Module 16625 (ChannelDetailsNavigator)
+// Module 16629 (ChannelDetailsNavigator)
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HeaderShared from "HeaderShared" /* 7288 */;
 import navigateToThreadCreation from "navigateToThreadCreation" /* 10792 */;
 import _modDef12289 from "module_12289" /* 12289 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 16626 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 16630 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -43,7 +43,7 @@ function CreateThreadHeaderButton(channel) {
 const View = fn(17).View;
 const constants = fn(10377).ChannelDetailsNavigatorScreens;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const SearchNavigatorScreens = fn(16455).SearchNavigatorScreens;
+const SearchNavigatorScreens = fn(16459).SearchNavigatorScreens;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 let closure_11 = Object.freeze({});

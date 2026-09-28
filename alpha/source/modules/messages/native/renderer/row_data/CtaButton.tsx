@@ -1,10 +1,10 @@
-// Module ID: 12821
-// Function ID: 12822
+// Module ID: 12820
+// Function ID: 12821
 // Name: CtaButton
 // Dependencies: [6711, 11390, 5048, 1115, 3103, 2]
 // Exports: createCtaButtons
 
-// Module 12821 (CtaButton)
+// Module 12820 (CtaButton)
 import _modDef3103 from "module_3103" /* 3103 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5048 */;
 import CtaButtonUtils from "CtaButtonUtils" /* 11390 */;

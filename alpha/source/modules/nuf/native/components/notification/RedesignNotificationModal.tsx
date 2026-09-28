@@ -1,16 +1,16 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 15624
+// Function ID: 15625
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 11902, 11903, 1074, 21, 4836, 576, 11904, 1241, 11905, 12185, 15627, 1115, 2]
+// Dependencies: [19, 17, 11902, 11903, 1074, 21, 4836, 576, 11904, 1241, 11905, 12185, 15625, 1115, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 15626 (RedesignNotificationModal)
+// Module 15624 (RedesignNotificationModal)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11904 */;
 import PushNotificationActionCreators from "PushNotificationActionCreators" /* 11905 */;
 import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12185 */;
-import _modDef15627 from "module_15627" /* 15627 */;
+import _modDef15625 from "module_15625" /* 15625 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

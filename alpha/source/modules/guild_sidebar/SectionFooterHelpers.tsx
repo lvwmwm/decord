@@ -1,10 +1,10 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15872
+// Function ID: 15873
 // Name: SectionFooterHelpers
 // Dependencies: [6538, 4469, 6954, 1074, 6948, 2070, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 15874 (SectionFooterHelpers)
+// Module 15872 (SectionFooterHelpers)
 import ChannelListState from "ChannelListState" /* 6948 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 6538 */;
 import PermissionStore from "PermissionStore" /* 4469 */;

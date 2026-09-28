@@ -1,10 +1,10 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16562
+// Function ID: 16563
 // Name: FavoritesEmptyState
 // Dependencies: [19, 17, 21, 4836, 576, 9685, 10439, 4800, 9689, 1981, 9688, 9694, 5279, 4832, 1115, 3361, 5281, 12269, 2]
 // Exports: default
 
-// Module 16558 (FavoritesEmptyState)
+// Module 16562 (FavoritesEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3361 from "module_3361" /* 3361 */;

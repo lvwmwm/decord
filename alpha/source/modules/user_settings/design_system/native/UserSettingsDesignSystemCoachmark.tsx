@@ -1,13 +1,13 @@
-// Module ID: 15394
-// Function ID: 15395
+// Module ID: 15392
+// Function ID: 15393
 // Name: UserSettingsDesignSystemCoachmark
-// Dependencies: [32, 19, 17, 21, 4836, 15392, 15395, 10589, 5281, 5293, 5999, 6621, 5997, 6000, 6544, 6577, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 15390, 15393, 10589, 5281, 5293, 5999, 6621, 5997, 6000, 6544, 6577, 2]
 // Exports: default
 
-// Module 15394 (UserSettingsDesignSystemCoachmark)
+// Module 15392 (UserSettingsDesignSystemCoachmark)
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import LayerScope from "LayerScope" /* 6577 */;
-import _modDef15395 from "module_15395" /* 15395 */;
+import _modDef15393 from "module_15393" /* 15393 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -57,7 +57,7 @@ function Content() {
       buttonVariant: null,
       gradientColor: null
     };
-    const obj2 = { type: "image", src: { uri: _modDef15395 }, aspectRatio: first5 };
+    const obj2 = { type: "image", src: { uri: _modDef15393 }, aspectRatio: first5 };
     obj.graphic = obj2;
     obj.experimental_withBlurBackground = first1;
     let str2;

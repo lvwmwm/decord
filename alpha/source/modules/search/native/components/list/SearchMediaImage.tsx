@@ -1,10 +1,10 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16486
+// Function ID: 16487
 // Name: SearchMediaImage
 // Dependencies: [32, 19, 17, 2045, 6699, 1074, 21, 4836, 4767, 4685, 6714, 10811, 5395, 5269, 504, 7719, 1478, 11494, 1364, 1115, 8217, 9635, 1385, 6747, 7713, 8176, 9657, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 16482 (SearchMediaImage)
+// Module 16486 (SearchMediaImage)
 import ObscureMediaModels from "ObscureMediaModels" /* 6714 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 7713 */;
 import CirclePlayIcon from "CirclePlayIcon" /* 8176 */;

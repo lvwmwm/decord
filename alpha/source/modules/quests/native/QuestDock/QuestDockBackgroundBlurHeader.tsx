@@ -1,9 +1,9 @@
-// Module ID: 14723
-// Function ID: 14724
+// Module ID: 14721
+// Function ID: 14722
 // Name: QuestDockBackgroundBlurHeader
-// Dependencies: [32, 19, 17, 5756, 14624, 21, 4836, 576, 5280, 14625, 1365, 4531, 14715, 4566, 5435, 4832, 1115, 10568, 6494, 14724, 14692, 14726, 7365, 2]
+// Dependencies: [32, 19, 17, 5756, 14624, 21, 4836, 576, 5280, 14625, 1365, 4531, 14713, 4566, 5435, 4832, 1115, 10568, 6494, 14722, 14690, 14724, 7365, 2]
 
-// Module 14723 (QuestDockBackgroundBlurHeader)
+// Module 14721 (QuestDockBackgroundBlurHeader)
 import nativeDefault from "native" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import spring from "spring" /* 5280 */;
@@ -86,7 +86,7 @@ export default noop.memo(function QuestDockBackgroundBlurHeader(promotedLabelLea
   }, []);
   const tmp4 = token(noop.useState(false), 2);
   token = activeQuestDockMode(4531).useToken(questDockWrapperSpecs(576).modules.mobile.QUEST_DOCK_BORDER_RADIUS);
-  const tmp9 = questDockWrapperSpecs(14715)(token);
+  const tmp9 = questDockWrapperSpecs(14713)(token);
   noop = tmp9;
   let obj = activeQuestDockMode(4531);
   const fn = function q() {
@@ -287,7 +287,7 @@ export default noop.memo(function QuestDockBackgroundBlurHeader(promotedLabelLea
   if (tmpResult.isAndroid()) {
     if (null != blurHash) {
       const obj23 = { placeholder: blurHash, layoutAnimatedStyle: animatedStyle5, opacityAnimatedStyle: animatedStyle6, layoutAnimation: tmp27 };
-      let tmp22Result = tmp22(tmp7(14724), obj23);
+      let tmp22Result = tmp22(tmp7(14722), obj23);
     }
     const items4 = [tmp22Result, , ];
     let tmp22Result2 = children;
@@ -331,7 +331,7 @@ export default noop.memo(function QuestDockBackgroundBlurHeader(promotedLabelLea
     const tmp7Result5 = tmp7(6494);
     if (!flag) {
       const obj31 = { children: null };
-      const items11 = [tmp19Result, tmp22(tmp7(14726), {})];
+      const items11 = [tmp19Result, tmp22(tmp7(14724), {})];
       obj31.children = items11;
       tmp25Result = tmp25(closure_13, obj31);
     }
@@ -362,5 +362,5 @@ export default noop.memo(function QuestDockBackgroundBlurHeader(promotedLabelLea
     }
     return tmp25(tmp7Result, obj22);
   }
-  tmp22Result = tmp22(tmp7(14692), { layoutAnimatedStyle: animatedStyle5, opacityAnimatedStyle: animatedStyle6, layoutAnimation: tmp27 });
+  tmp22Result = tmp22(tmp7(14690), { layoutAnimatedStyle: animatedStyle5, opacityAnimatedStyle: animatedStyle6, layoutAnimation: tmp27 });
 });

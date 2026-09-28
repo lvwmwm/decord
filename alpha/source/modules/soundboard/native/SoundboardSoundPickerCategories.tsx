@@ -1,9 +1,9 @@
-// Module ID: 16898
-// Function ID: 16899
+// Module ID: 16902
+// Function ID: 16903
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 16880, 1372, 1074, 21, 4836, 576, 5328, 5896, 1115, 9853, 4795, 16896, 8173, 5435, 1177, 5409, 4801, 4802, 504, 4488, 9421, 1613, 6073, 4708, 7691, 2]
+// Dependencies: [19, 17, 16884, 1372, 1074, 21, 4836, 576, 5328, 5896, 1115, 9853, 4795, 16900, 8173, 5435, 1177, 5409, 4801, 4802, 504, 4488, 9421, 1613, 6073, 4708, 7691, 2]
 
-// Module 16898 (SoundboardSoundPickerCategories)
+// Module 16902 (SoundboardSoundPickerCategories)
 import nativeDefault from "native" /* 576 */;
 import HapticUtils from "HapticUtils" /* 4801 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4802 */;
@@ -12,7 +12,7 @@ import Pressables from "Pressables" /* 5435 */;
 import GuildIconDefault from "GuildIcon" /* 5896 */;
 import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9421 */;
 import _modDef9853 from "module_9853" /* 9853 */;
-import _modDef16896 from "module_16896" /* 16896 */;
+import _modDef16900 from "module_16900" /* 16900 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -47,13 +47,13 @@ function SoundCategoryItem(style) {
   } else if (tmp2(5328).SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl2 = tmp2(1115).intl;
     name = intl2.string(tmp2(1115).t.Rtvk9X);
-    tmp6 = _modDef16896;
+    tmp6 = _modDef16900;
     tmp7 = null;
     tmp14Result = null;
   } else if (tmp2(5328).SoundboardSoundGridSectionType.SEARCH === type) {
     const intl = tmp2(1115).intl;
     name = intl.string(tmp2(1115).t.sKt3xS);
-    tmp6 = _modDef16896;
+    tmp6 = _modDef16900;
     tmp7 = null;
     tmp14Result = null;
   } else {
@@ -107,7 +107,7 @@ function getItemLayout(arg0, index) {
 get_ActivityIndicator = fn(17);
 const StyleSheet = get_ActivityIndicator.StyleSheet;
 ({ View: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const setSearchQuery = fn(16880).setSearchQuery;
+const setSearchQuery = fn(16884).setSearchQuery;
 const Constants = fn(1074);
 ({ CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT: closure_9, NODE_SIZE, NODE_MARGIN } = Constants);
 const jsxProd = fn(21);

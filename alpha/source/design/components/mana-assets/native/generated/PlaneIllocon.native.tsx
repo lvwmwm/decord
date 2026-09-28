@@ -1,10 +1,10 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 17712
+// Function ID: 17713
 // Name: PlaneIllocon
 // Dependencies: [21, 5899, 11974, 2]
 // Exports: PlaneIllocon
 
-// Module 17708 (PlaneIllocon)
+// Module 17712 (PlaneIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import _modDef11974 from "module_11974" /* 11974 */;

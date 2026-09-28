@@ -1,10 +1,10 @@
-// Module ID: 13645
-// Function ID: 13646
+// Module ID: 13644
+// Function ID: 13645
 // Name: WarningCircle
 // Dependencies: [19, 21, 7909, 2]
 // Exports: default
 
-// Module 13645 (WarningCircle)
+// Module 13644 (WarningCircle)
 import inlineStyles from "inlineStyles" /* 7909 */;
 import noop from "module_19" /* 19 */;
 

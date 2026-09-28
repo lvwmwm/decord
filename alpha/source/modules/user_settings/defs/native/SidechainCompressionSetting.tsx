@@ -1,9 +1,9 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 14803
+// Function ID: 14804
 // Name: SidechainCompressionSetting
 // Dependencies: [1993, 7417, 4861, 504, 11006, 1115, 9104, 2]
 
-// Module 14805 (SidechainCompressionSetting)
+// Module 14803 (SidechainCompressionSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9104 */;

@@ -1,10 +1,10 @@
-// Module ID: 12868
-// Function ID: 12869
+// Module ID: 12867
+// Function ID: 12868
 // Name: ForLaterCardReminderHeader
 // Dependencies: [21, 11211, 11699, 4795, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 12868 (ForLaterCardReminderHeader)
+// Module 12867 (ForLaterCardReminderHeader)
 import jsxProd from "jsxProd" /* 21 */;
 import SavedMessageUtils from "SavedMessageUtils" /* 11211 */;
 import size from "module_2" /* 2 */;

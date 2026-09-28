@@ -1,10 +1,10 @@
-// Module ID: 12875
-// Function ID: 12876
+// Module ID: 12874
+// Function ID: 12875
 // Name: BetaTag
 // Dependencies: [19, 17, 6852, 21, 4836, 576, 5293, 1094, 4832, 1115, 2]
 // Exports: default
 
-// Module 12875 (BetaTag)
+// Module 12874 (BetaTag)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import util from "util" /* 1115 */;

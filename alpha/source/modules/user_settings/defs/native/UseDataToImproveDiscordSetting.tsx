@@ -1,16 +1,16 @@
-// Module ID: 14391
-// Function ID: 14392
+// Module ID: 14390
+// Function ID: 14391
 // Name: UseDataToImproveDiscordSetting
-// Dependencies: [6012, 7417, 1074, 14354, 5203, 1115, 5300, 14392, 14393, 504, 11006, 2]
+// Dependencies: [6012, 7417, 1074, 14353, 5203, 1115, 5300, 14391, 14392, 504, 11006, 2]
 
-// Module 14391 (UseDataToImproveDiscordSetting)
+// Module 14390 (UseDataToImproveDiscordSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5203 */;
 import common_AlertDefault from "common/Alert" /* 5300 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14354 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 14392 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 14393 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14353 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 14391 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 14392 */;
 import ConsentStore from "ConsentStore" /* 6012 */;
 
 require = fn;

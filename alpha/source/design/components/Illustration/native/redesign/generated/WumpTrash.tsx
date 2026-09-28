@@ -1,10 +1,10 @@
-// Module ID: 15603
-// Function ID: 15604
+// Module ID: 15601
+// Function ID: 15602
 // Name: WumpTrash
-// Dependencies: [19, 17, 21, 7679, 15604, 15605, 4685, 2]
+// Dependencies: [19, 17, 21, 7679, 15602, 15603, 4685, 2]
 // Exports: WumpTrash, getWumpTrashSource, useWumpTrashSource
 
-// Module 15603 (WumpTrash)
+// Module 15601 (WumpTrash)
 import shared from "shared" /* 4685 */;
 import _mod7679 from "module_7679" /* 7679 */;
 import noop from "module_19" /* 19 */;
@@ -20,10 +20,10 @@ const result = size.fileFinishedImporting("design/components/Illustration/native
 export const getWumpTrashSource = function getWumpTrashSource(theme) {
   return _mod7679.getIllustrationSource(theme, {
     dark() {
-      return require("module_15604");
+      return require("module_15602");
     },
     darker() {
-      return require("module_15605");
+      return require("module_15603");
     }
   });
 };
@@ -31,10 +31,10 @@ export const useWumpTrashSource = function useWumpTrashSource() {
   const obj = shared;
   return _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_15604");
+      return require("module_15602");
     },
     darker() {
-      return require("module_15605");
+      return require("module_15603");
     }
   });
 };
@@ -43,10 +43,10 @@ export const WumpTrash = function WumpTrash(arg0) {
   const obj4 = {};
   const illustrationSource = _mod7679.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_15604");
+      return require("module_15602");
     },
     darker() {
-      return require("module_15605");
+      return require("module_15603");
     }
   });
   const merged = Object.assign(arg0);

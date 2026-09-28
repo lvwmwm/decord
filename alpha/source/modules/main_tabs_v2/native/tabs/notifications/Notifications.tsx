@@ -1,10 +1,10 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 16038
+// Function ID: 16039
 // Name: notifications/Notifications
-// Dependencies: [19, 17, 10549, 2042, 21, 4836, 576, 4693, 6364, 7275, 16043, 6544, 5435, 1115, 16044, 4832, 16045, 7285, 16047, 6583, 6603, 6895, 5942, 6577, 16051, 16052, 11375, 4688, 1613, 15649, 5437, 4540, 2]
+// Dependencies: [19, 17, 10549, 2042, 21, 4836, 576, 4693, 6364, 7275, 16039, 6544, 5435, 1115, 16040, 4832, 16041, 7285, 16043, 6583, 6603, 6895, 5942, 6577, 16047, 16048, 11375, 4688, 1613, 15647, 5437, 4540, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 16042 (notifications/Notifications)
+// Module 16038 (notifications/Notifications)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import native from "native" /* 4540 */;
@@ -17,10 +17,10 @@ import LayerScope from "LayerScope" /* 6577 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6583 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11375 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15649 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16043 */;
-import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 16051 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 16052 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15647 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16039 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 16047 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 16048 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -168,7 +168,7 @@ let closure_12 = noop.memo(function HeaderInner(nestedInLaunchPad) {
     const intl = tmp5(1115).intl;
     obj4.accessibilityLabel = intl.string(tmp5(1115).t["13/7kX"]);
     obj4.onPress = goBack;
-    obj4.children = tmp12(tmp5(16044).LeftBackIconWithBadge, {});
+    obj4.children = tmp12(tmp5(16040).LeftBackIconWithBadge, {});
     const items1 = [tmp12(tmp5(5435).PressableOpacity, obj4), , ];
     const obj5 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     const intl2 = tmp5(1115).intl;
@@ -179,17 +179,17 @@ let closure_12 = noop.memo(function HeaderInner(nestedInLaunchPad) {
     if (isForLaterExperimentOn) {
       const obj7 = { children: null };
       const obj8 = { ref, type: tmp5(7285).SavedMessageSortTypes.BOOKMARK, onOpen: callback };
-      const items2 = [tmp12(tmp2(16045), obj8), ];
+      const items2 = [tmp12(tmp2(16041), obj8), ];
       const obj9 = { type: null, onOpen: null };
-      const tmp2Result = tmp2(16045);
+      const tmp2Result = tmp2(16041);
       obj9.type = tmp5(7285).SavedMessageSortTypes.REMINDER;
       obj9.onOpen = callback;
-      items2[1] = tmp12(tmp2(16045), obj9);
+      items2[1] = tmp12(tmp2(16041), obj9);
       obj7.children = items2;
       tmp10Result = tmp10(closure_8, obj7);
-      const tmp2Result2 = tmp2(16045);
+      const tmp2Result2 = tmp2(16041);
     }
-    const items3 = [tmp10Result, tmp12(tmp2(16047), {})];
+    const items3 = [tmp10Result, tmp12(tmp2(16043), {})];
     obj6.children = items3;
     items1[2] = tmp10(tmp11, obj6);
     obj3.children = items1;

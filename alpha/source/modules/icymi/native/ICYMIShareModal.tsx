@@ -1,10 +1,10 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16141
+// Function ID: 16142
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 2045, 5200, 5199, 1074, 10320, 4829, 21, 4836, 576, 9065, 1115, 16146, 4528, 1479, 4688, 7297, 16147, 5437, 4652, 4540, 6402, 11189, 11201, 5281, 5039, 10444, 1370, 7095, 8608, 1255, 5440, 6876, 8610, 1613, 1364, 5943, 7288, 5936, 10447, 2]
+// Dependencies: [32, 5, 19, 17, 2045, 5200, 5199, 1074, 10320, 4829, 21, 4836, 576, 9065, 1115, 16142, 4528, 1479, 4688, 7297, 16143, 5437, 4652, 4540, 6402, 11189, 11201, 5281, 5039, 10444, 1370, 7095, 8608, 1255, 5440, 6876, 8610, 1613, 1364, 5943, 7288, 5936, 10447, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 16145 (ICYMIShareModal)
+// Module 16141 (ICYMIShareModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
@@ -19,7 +19,7 @@ import ClientThemesOverrides from "ClientThemesOverrides" /* 7297 */;
 import ShareEventUtils from "ShareEventUtils" /* 9065 */;
 import useShareChatInputActions from "useShareChatInputActions" /* 11189 */;
 import ShareChatInputDefault from "ShareChatInput" /* 11201 */;
-import _modDef16147 from "module_16147" /* 16147 */;
+import _modDef16143 from "module_16143" /* 16143 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -60,7 +60,7 @@ function Screenshot(setUri) {
   const obj5 = { style: tmp.base, children: null };
   const obj6 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj7 = { dark: null, light: null };
-  const tmp6 = _modDef16147;
+  const tmp6 = _modDef16143;
   obj7.dark = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_7;
   obj7.light = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_8;
   obj6.mixAmount = obj7;
@@ -450,7 +450,7 @@ export const GameShareModal = function GameShareModal(content) {
             const obj6 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
             c5 = 2;
             c6 = 1;
-            const obj7 = { value: entry(16146).sendMessageWithEmbed(obj6), done: false };
+            const obj7 = { value: entry(16142).sendMessageWithEmbed(obj6), done: false };
             return obj7;
           }
         } else if (1 === tmp7) {

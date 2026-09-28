@@ -1,10 +1,10 @@
-// Module ID: 16615
-// Function ID: 16616
+// Module ID: 16619
+// Function ID: 16620
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 2035, 5591, 7035, 7628, 6629, 2042, 10658, 21, 16603, 16010, 1364, 7702, 7687, 12620, 12621, 8127, 12632, 7635, 9189, 10653, 16616, 11449, 2029, 6806, 12552, 5281, 9713, 576, 1115, 16617, 16620, 16612, 1486, 7631, 8819, 7688, 504, 7673, 7684, 12501, 16621, 12458, 12459, 12622, 12642, 12643, 12644, 10578, 16622, 12647, 15299, 12554, 10777, 8059, 12653, 16624, 12607, 12658, 12664, 9083, 4566, 6577, 10574, 10614, 9060, 12111, 12113, 2]
+// Dependencies: [32, 19, 17, 2035, 5591, 7035, 7628, 6629, 2042, 10658, 21, 16607, 16006, 1364, 7702, 7687, 12638, 12639, 8127, 12650, 7635, 9189, 10653, 16620, 11449, 2029, 6806, 12570, 5281, 9713, 576, 1115, 16621, 16624, 16616, 1486, 7631, 8819, 7688, 504, 7673, 7684, 12501, 16625, 12458, 12459, 12640, 12660, 12661, 12662, 10578, 16626, 12665, 15297, 12572, 10777, 8059, 12671, 16628, 12625, 12676, 12681, 9083, 4566, 6577, 10574, 10614, 9060, 12111, 12113, 2]
 // Exports: default
 
-// Module 16615 (YouScreenUserProfileContent)
+// Module 16619 (YouScreenUserProfileContent)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
@@ -13,18 +13,18 @@ import FormDividerDefault from "FormDivider" /* 8059 */;
 import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 8127 */;
 import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 10578 */;
 import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10777 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 12554 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 12607 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12620 */;
-import VibegrationsCustomWidgetAddOptionDefault from "VibegrationsCustomWidgetAddOption" /* 12621 */;
-import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 12632 */;
-import UserProfileConnections from "UserProfileConnections" /* 12653 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12658 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12664 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16010 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 16603 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 16622 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 16624 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 12572 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 12625 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12638 */;
+import VibegrationsCustomWidgetAddOptionDefault from "VibegrationsCustomWidgetAddOption" /* 12639 */;
+import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 12650 */;
+import UserProfileConnections from "UserProfileConnections" /* 12671 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12676 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12681 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16006 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 16607 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 16626 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 16628 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
@@ -283,12 +283,12 @@ export default function YouScreenUserProfileContent(user) {
     let tmp3Result = !shouldShowExpiringTrialOfferCard;
     if (!shouldShowExpiringTrialOfferCard) {
       const obj4 = { navigateToPremium, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(12647), obj4);
+      tmp3Result = tmp3(tmp4(12665), obj4);
     }
     items2[1] = tmp3Result;
     let tmp3Result2 = enabled;
     if (enabled) {
-      tmp3Result2 = tmp3(tmp4(15299), {});
+      tmp3Result2 = tmp3(tmp4(15297), {});
     }
     items2[2] = tmp3Result2;
     items2[3] = closure_2_14(UserProfileActivityDefault, { user, currentUser: user, style: items });
@@ -419,7 +419,7 @@ export default function YouScreenUserProfileContent(user) {
       const timeout = setTimeout(() => {
         setActiveProfileTabSection(initialTab === UserProfileSections.WISHLIST ? UserProfileSections.WISHLIST : UserProfileSections.MAIN);
         ref.current(num, false, true);
-        navigation.setParams({ initialTab: "__initData" });
+        navigation.setParams({ initialTab: "r" });
       }, 80);
     }
     return () => {

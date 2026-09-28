@@ -1,10 +1,10 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13078
+// Function ID: 13079
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2112, 1372, 1074, 6852, 1374, 21, 4836, 576, 4783, 1115, 1882, 504, 4488, 5293, 1094, 4832, 13080, 13081, 8694, 5281, 2]
+// Dependencies: [19, 17, 2112, 1372, 1074, 6852, 1374, 21, 4836, 576, 4783, 1115, 1882, 504, 4488, 5293, 1094, 4832, 13079, 13080, 8694, 5281, 2]
 // Exports: default
 
-// Module 13079 (PremiumSubscriptionUpsell)
+// Module 13078 (PremiumSubscriptionUpsell)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
@@ -72,9 +72,9 @@ export default function PremiumSubscriptionUpsell(arg0) {
     }
     const items3 = [tmp6Result1, , ];
     const obj10 = { style: tmp.upsellFeatures, children: null };
-    const obj11 = { style: tmp.upsellFeatureSubLogo, source: tmp5(13080) };
+    const obj11 = { style: tmp.upsellFeatureSubLogo, source: tmp5(13079) };
     const items4 = [closure_1_10(React4, obj11), , ];
-    const obj12 = { style: tmp.upsellFeatureLogoTier2, source: tmp5(13081) };
+    const obj12 = { style: tmp.upsellFeatureLogoTier2, source: tmp5(13080) };
     items4[1] = closure_1_10(React4, obj12);
     const obj13 = { style: tmp.upsellFeatureList, features: null, labelStyle: null, rowStyle: null };
     const obj15 = { IconComponent: null, label: null, color: null };

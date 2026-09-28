@@ -1,14 +1,14 @@
-// Module ID: 15049
-// Function ID: 15050
+// Module ID: 15047
+// Function ID: 15048
 // Name: AndroidNotificationSoundsSetting
-// Dependencies: [15034, 7417, 1364, 15036, 1115, 11006, 14012, 15040, 2]
+// Dependencies: [15032, 7417, 1364, 15034, 1115, 11006, 14011, 15038, 2]
 
-// Module 15049 (AndroidNotificationSoundsSetting)
+// Module 15047 (AndroidNotificationSoundsSetting)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15040 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15034 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15038 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15032 */;
 import SettingBuilders_mod from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
@@ -36,8 +36,8 @@ obj2.usePredicate = function usePredicate() {
   const isIOSResult = PlatformUtils.isIOS();
   let tmp5 = !isIOSResult;
   if (!isIOSResult) {
-    tmp5 = !tmp2(15036).hasAndroidNotificationChannels();
-    const tmp2Result = tmp2(15036);
+    tmp5 = !tmp2(15034).hasAndroidNotificationChannels();
+    const tmp2Result = tmp2(15034);
   }
   if (tmp5) {
     tmp5 = null != tmp;
@@ -57,8 +57,8 @@ obj3.usePredicate = function usePredicate() {
   const isIOSResult = PlatformUtils.isIOS();
   let isDeclarativeSettingsUIAvailable = !isIOSResult;
   if (!isIOSResult) {
-    isDeclarativeSettingsUIAvailable = !tmp2(15036).hasAndroidNotificationChannels();
-    const tmp2Result = tmp2(15036);
+    isDeclarativeSettingsUIAvailable = !tmp2(15034).hasAndroidNotificationChannels();
+    const tmp2Result = tmp2(15034);
   }
   if (isDeclarativeSettingsUIAvailable) {
     isDeclarativeSettingsUIAvailable = null != tmp;

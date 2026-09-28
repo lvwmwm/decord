@@ -1,16 +1,16 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15403
+// Function ID: 15404
 // Name: UserSettingsDesignSystemTagGroup
-// Dependencies: [19, 17, 21, 4836, 576, 4531, 5279, 4832, 5919, 13979, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4531, 5279, 4832, 5919, 13978, 2]
 // Exports: default
 
-// Module 15405 (UserSettingsDesignSystemTagGroup)
+// Module 15403 (UserSettingsDesignSystemTagGroup)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
 import Card from "Card" /* 5919 */;
-import TagGroup from "TagGroup" /* 13979 */;
+import TagGroup from "TagGroup" /* 13978 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

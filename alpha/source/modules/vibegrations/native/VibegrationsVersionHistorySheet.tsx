@@ -1,7 +1,7 @@
 // Module ID: 16306
 // Function ID: 16307
 // Name: VibegrationsVersionHistorySheet
-// Dependencies: [32, 19, 17, 12624, 21, 4836, 576, 7055, 1613, 5209, 1115, 3715, 4800, 4832, 5999, 5917, 6618, 6570, 6045, 2]
+// Dependencies: [32, 19, 17, 12642, 21, 4836, 576, 7055, 1613, 5209, 1115, 3715, 4800, 4832, 5999, 5917, 6618, 6570, 6045, 2]
 // Exports: default
 
 // Module 16306 (VibegrationsVersionHistorySheet)
@@ -13,7 +13,7 @@ import noop from "module_19" /* 19 */;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const fetchSourceHistory = fn(12624).fetchSourceHistory;
+const fetchSourceHistory = fn(12642).fetchSourceHistory;
 const jsx = fn(21).jsx;
 const VibegrationsVersionHistorySheet = "VibegrationsVersionHistorySheet";
 const createStyles = fn(4836);

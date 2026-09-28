@@ -1,7 +1,7 @@
 // Module ID: 4863
 // Function ID: 4864
 // Name: RTCConnection
-// Dependencies: [5, 4864, 4874, 9164, 9098, 502, 2045, 2067, 1993, 4859, 9498, 4886, 1372, 1074, 4883, 13347, 4861, 559, 4865, 4894, 1231, 3, 13348, 1255, 13350, 13351, 8885, 9499, 1463, 1364, 4450, 1366, 573, 1992, 1385, 4890, 14, 5732, 13352, 13353, 8881, 13354, 1241, 4830, 7085, 13355, 13357, 4488, 4974, 13358, 13359, 13360, 4891, 13361, 13362, 13364, 7167, 13365, 8875, 6894, 13366, 13367, 8758, 13369, 5203, 1115, 551, 1240, 2]
+// Dependencies: [5, 4864, 4874, 9164, 9098, 502, 2045, 2067, 1993, 4859, 9498, 4886, 1372, 1074, 4883, 13346, 4861, 559, 4865, 4894, 1231, 3, 13347, 1255, 13349, 13350, 8885, 9499, 1463, 1364, 4450, 1366, 573, 1992, 1385, 4890, 14, 5732, 13351, 13352, 8881, 13353, 1241, 4830, 7085, 13354, 13356, 4488, 4974, 13357, 13358, 13359, 4891, 13360, 13361, 13363, 7167, 13364, 8875, 6894, 13365, 13366, 8758, 13368, 5203, 1115, 551, 1240, 2]
 
 // Module 4863 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
@@ -30,15 +30,15 @@ import ThermalUtilsDefault from "ThermalUtils" /* 8758 */;
 import AVError from "AVError" /* 8875 */;
 import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 8885 */;
 import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 9499 */;
-import ServerLadderExperiment2 from "ServerLadderExperiment" /* 13358 */;
-import AV1BitrateTuningExperiment from "AV1BitrateTuningExperiment" /* 13359 */;
-import NativeMuteManagerDefault from "NativeMuteManager" /* 13361 */;
-import VoiceQuality from "VoiceQuality" /* 13362 */;
-import SystemResponsivenessDefault from "SystemResponsiveness" /* 13364 */;
-import VoiceDurationDefault from "VoiceDuration" /* 13365 */;
-import VideoQuality from "VideoQuality" /* 13366 */;
-import VideoHealthManager from "VideoHealthManager" /* 13367 */;
-import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 13369 */;
+import ServerLadderExperiment2 from "ServerLadderExperiment" /* 13357 */;
+import AV1BitrateTuningExperiment from "AV1BitrateTuningExperiment" /* 13358 */;
+import NativeMuteManagerDefault from "NativeMuteManager" /* 13360 */;
+import VoiceQuality from "VoiceQuality" /* 13361 */;
+import SystemResponsivenessDefault from "SystemResponsiveness" /* 13363 */;
+import VoiceDurationDefault from "VoiceDuration" /* 13364 */;
+import VideoQuality from "VideoQuality" /* 13365 */;
+import VideoHealthManager from "VideoHealthManager" /* 13366 */;
+import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 13368 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 4864 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4874 */;
@@ -57,7 +57,7 @@ import TypedEventEmitter from "TypedEventEmitter" /* 4894 */;
 const RTCControlSocketDefault = RTCControlSocket;
 const VoiceQualityDefault = VoiceQuality;
 
-const VideoStabilizationExperimentDefault = tmp3(13353);
+const VideoStabilizationExperimentDefault = tmp3(13352);
 require = fn;
 function getEventHistoryString() {
   const items = [];
@@ -75,7 +75,7 @@ let Constants = fn(1074);
 ({ AnalyticEvents: closure_17, ChannelTypes: closure_18, RTCConnectionStates: closure_19, RTCConnectionQuality: closure_20, BoostedGuildTiers: closure_21 } = Constants);
 const StreamSettingsConstants = fn(4883);
 ({ ApplicationStreamFPS: closure_22, ApplicationStreamResolutions: closure_23 } = StreamSettingsConstants);
-let closure_24 = fn(13347).BROWSER_SUPPORTS_UNIFIED_PLAN;
+let closure_24 = fn(13346).BROWSER_SUPPORTS_UNIFIED_PLAN;
 Constants = fn(4861);
 ({ Features: closure_25, MediaEngineContextTypes: closure_26, ConnectionStates: closure_27, Codecs: closure_28, MediaTypes: closure_29, SpeakingFlags: closure_30, DISABLED_DEVICE_ID: items } = Constants);
 let str = "ws:";
@@ -1083,7 +1083,7 @@ prototype["_chooseExperiments"] = function _chooseExperiments() {
   const obj = MediaEngineStore;
   let enabled = PlatformUtils.isWeb();
   if (enabled) {
-    const BrowserTransceiverPaddingRemovalExperiment = tmp8(13352).BrowserTransceiverPaddingRemovalExperiment;
+    const BrowserTransceiverPaddingRemovalExperiment = tmp8(13351).BrowserTransceiverPaddingRemovalExperiment;
     enabled = BrowserTransceiverPaddingRemovalExperiment.getConfig({ location: "RTCConnection" }).enabled;
   }
   if (enabled) {
@@ -1109,7 +1109,7 @@ prototype["_chooseExperiments"] = function _chooseExperiments() {
   }
   const tmp8Result5 = PlatformUtils;
   if (tmp8Result7.isLinux()) {
-    const mode2 = tmp8(13354).getLinuxGpuDecodeExperimentConfig("_chooseExperiments").mode;
+    const mode2 = tmp8(13353).getLinuxGpuDecodeExperimentConfig("_chooseExperiments").mode;
     let tmp14 = "disable_all" === mode2;
     if (!tmp14) {
       tmp14 = "disable_nvidia" === mode2 && obj.getHasNvidiaGpu();
@@ -1118,7 +1118,7 @@ prototype["_chooseExperiments"] = function _chooseExperiments() {
     if (tmp14) {
       items.push("disable_electron_decode");
     }
-    const tmp8Result8 = tmp8(13354);
+    const tmp8Result8 = tmp8(13353);
   }
   this._selectedExperiments = items;
 };
@@ -1816,7 +1816,7 @@ prototype["_connectMediaEngineWithEndpoint"] = function _connectMediaEngineWithE
     }
   }
   if (MediaEngineStore.supports(constants5.IMAGE_QUALITY_MEASUREMENT)) {
-    const SingleCpuCopyExperiment = tmp2(13360).SingleCpuCopyExperiment;
+    const SingleCpuCopyExperiment = tmp2(13359).SingleCpuCopyExperiment;
     const enabled = SingleCpuCopyExperiment.getConfig({ location: "RTCConnection" }).enabled;
     let str4 = "imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec";
     if (enabled) {
@@ -1984,16 +1984,16 @@ prototype["_connectMediaEngineWithEndpoint"] = function _connectMediaEngineWithE
     }
     if (type === constants2.GUILD_STAGE_VOICE) {
       if (!tmp._videoDecoderFallbackSuppressed) {
-        const logger = tmp.logger;
-        logger.info("Suppressing video decoder fallback: stage channel");
+        const logger2 = tmp.logger;
+        logger2.info("Suppressing video decoder fallback: stage channel");
         tmp._videoDecoderFallbackSuppressed = true;
       }
     } else {
       const found = codecs.filter((type) => "video" === type.type);
       const mapped = found.map((name) => name.name);
-      const logger2 = tmp.logger;
+      const logger = tmp.logger;
       const _HermesInternal = HermesInternal;
-      logger2.info("The originally selected video decoder is not working, fallback to the other available decoders: " + mapped.join(","));
+      logger.info("The originally selected video decoder is not working, fallback to the other available decoders: " + mapped.join(","));
       const obj = { codecs };
       socket.updateSession(obj);
     }
@@ -2221,13 +2221,13 @@ prototype["getOrCreateVideoQuality"] = function getOrCreateVideoQuality() {
       const defaultConfig = VideoHealthManager.VideoHealthManager.defaultConfig;
       ({ windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec } = defaultConfig);
       if (defaultConfig.featureEnabled) {
-        const videoHealthManager = new tmp10(13367).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
+        const videoHealthManager = new tmp10(13366).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
         self._videoHealthManager = videoHealthManager;
         if (null != self._localMediaSinkWantsManager) {
           self._localMediaSinkWantsManager.videoHealthManager = self._videoHealthManager;
         }
         const _videoQuality = self._videoQuality;
-        _videoQuality.on(tmp10(13366).VideoQualityEvent.FpsUpdate, (arg0, arg1, arg2) => {
+        _videoQuality.on(tmp10(13365).VideoQualityEvent.FpsUpdate, (arg0, arg1, arg2) => {
           const _localMediaSinkWantsManager = self._localMediaSinkWantsManager;
           let result;
           if (_localMediaSinkWantsManager != null) {

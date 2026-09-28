@@ -1,10 +1,10 @@
-// Module ID: 15800
-// Function ID: 15801
+// Module ID: 15798
+// Function ID: 15799
 // Name: guild_themes/useGuildThemeNuxTrigger
 // Dependencies: [32, 19, 2042, 4719, 6806, 2029, 2]
 // Exports: default
 
-// Module 15800 (guild_themes/useGuildThemeNuxTrigger)
+// Module 15798 (guild_themes/useGuildThemeNuxTrigger)
 import dismissible_content from "dismissible_content" /* 2029 */;
 import GuildThemeResolver from "GuildThemeResolver" /* 4719 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6806 */;

@@ -1,27 +1,21 @@
 // Module ID: 13925
 // Function ID: 13926
-// Dependencies: [17]
-// Exports: default
+// Dependencies: []
+// Exports: getHostFromUrl
 
 // Module 13925
-import get_ActivityIndicator from "module_17" /* 17 */;
 
-
-export default function getReactNativePlatformConstants() {
-  const obj = { osRelease: "", model: "", serverHost: "", uiMode: "", serial: "", forceTouch: false, interfaceIdiom: "", systemName: "" };
-  if ("android" === get_ActivityIndicator.Platform.OS) {
-    const obj5 = {};
-    const merged = Object.assign(obj);
-    ({ Release: obj3.osRelease, Model: obj3.model, ServerHost: obj3.serverHost, uiMode: obj3.uiMode, Serial: obj3.serial } = tmp.Platform.constants);
-    return obj5;
-  } else if ("ios" === tmp.Platform.OS) {
-    constants = tmp.Platform.constants;
-    const obj6 = {};
-    const merged1 = Object.assign(obj);
-    obj6.forceTouch = constants.forceTouchAvailable || false;
-    ({ interfaceIdiom: obj2.interfaceIdiom, systemName: obj2.systemName } = constants);
-    return obj6;
+export const getHostFromUrl = function getHostFromUrl(scriptURL) {
+  const match = scriptURL.match(/^(?:https?:\/\/)?(\[[^\]]+\]|[^/:\s]+)(?::\d+)?(?:[/?#]|$)/);
+  let tmp2;
+  if (match != null) {
+    tmp2 = match[1];
+  }
+  if (typeof tmp2 !== "string") {
+    const _Error = Error;
+    const error = new Error("Invalid URL - host not found");
+    throw error;
   } else {
-    return obj;
+    return tmp2;
   }
 };

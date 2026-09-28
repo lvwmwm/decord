@@ -1,10 +1,10 @@
-// Module ID: 16393
-// Function ID: 16394
+// Module ID: 16398
+// Function ID: 16399
 // Name: VibegrationsFloatingActivity
-// Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 4837, 16377, 5435, 1115, 3715, 9611, 4832, 5850, 2]
+// Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 4837, 16379, 5435, 1115, 3715, 9611, 4832, 5850, 2]
 // Exports: default
 
-// Module 16393 (VibegrationsFloatingActivity)
+// Module 16398 (VibegrationsFloatingActivity)
 import nativeDefault from "native" /* 576 */;
 import _modDef3715 from "module_3715" /* 3715 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4566 */;
@@ -68,7 +68,7 @@ export default function VibegrationsFloatingActivity(agents) {
     if (null != todos) {
       const obj4 = { style: tmp.panel, children: null };
       const obj5 = { todos, agents: agents.agents, live: todosLive, announceProgress: false };
-      obj4.children = closure_6(tmp11(16377), obj5);
+      obj4.children = closure_6(tmp11(16379), obj5);
       tmp12 = closure_6(View, obj4);
     }
   }

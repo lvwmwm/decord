@@ -1,10 +1,10 @@
-// Module ID: 13340
-// Function ID: 13341
+// Module ID: 13339
+// Function ID: 13340
 // Name: CallStateHooks
 // Dependencies: [4852, 502, 5590, 4859, 1074, 4857, 504, 8962, 2]
 // Exports: default
 
-// Module 13340 (CallStateHooks)
+// Module 13339 (CallStateHooks)
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import CallStore from "CallStore" /* 5590 */;

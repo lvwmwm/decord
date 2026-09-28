@@ -1,10 +1,10 @@
-// Module ID: 17609
-// Function ID: 17610
+// Module ID: 17613
+// Function ID: 17614
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1374, 1085, 21, 4836, 576, 5899, 1177, 4832, 1115, 6655, 14778, 5282, 2]
+// Dependencies: [19, 17, 1374, 1085, 21, 4836, 576, 5899, 1177, 4832, 1115, 6655, 14776, 5282, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 17609 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 17613 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 4832 */;
 import BaseTextButton from "BaseTextButton" /* 5282 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import PriceUtils from "PriceUtils" /* 6655 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 14778 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 14776 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

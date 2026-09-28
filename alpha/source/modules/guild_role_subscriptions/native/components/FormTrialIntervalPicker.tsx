@@ -1,14 +1,14 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 17575
+// Function ID: 17576
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 13441, 1115, 14778, 4800, 8729, 1981, 2]
+// Dependencies: [19, 21, 13440, 1115, 14776, 4800, 8729, 1981, 2]
 // Exports: default
 
-// Module 17571 (FormTrialIntervalPicker)
+// Module 17575 (FormTrialIntervalPicker)
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import FormDropdownDefault from "FormDropdown" /* 13441 */;
+import FormDropdownDefault from "FormDropdown" /* 13440 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -26,8 +26,8 @@ export default function FormTrialIntervalPicker(disabled) {
     let intl = interval(1115).intl;
     let stringResult = intl.string(interval(1115).t.WZG1BU);
   } else {
-    stringResult = interval(14778).formatPlanIntervalDuration(interval);
-    let obj = interval(14778);
+    stringResult = interval(14776).formatPlanIntervalDuration(interval);
+    let obj = interval(14776);
   }
   return jsx(FormDropdownDefault, {
     label: stringResult,

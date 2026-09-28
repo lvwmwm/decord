@@ -1,13 +1,13 @@
-// Module ID: 14914
-// Function ID: 14915
+// Module ID: 14912
+// Function ID: 14913
 // Name: EmojiColdFaceIcon
-// Dependencies: [19, 21, 576, 4530, 14915, 2]
+// Dependencies: [19, 21, 576, 4530, 14913, 2]
 // Exports: EmojiColdFaceIcon
 
-// Module 14914 (EmojiColdFaceIcon)
+// Module 14912 (EmojiColdFaceIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4530 */;
-import _mod14915 from "module_14915" /* 14915 */;
+import _mod14913 from "module_14913" /* 14913 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmojiColdFaceIcon = function EmojiColdFaceIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod14915, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod14913, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

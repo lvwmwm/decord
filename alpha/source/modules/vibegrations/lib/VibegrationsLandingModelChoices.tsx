@@ -1,12 +1,12 @@
-// Module ID: 16247
-// Function ID: 16248
+// Module ID: 16243
+// Function ID: 16244
 // Name: VibegrationsLandingModelChoices
-// Dependencies: [12627, 5371, 2]
+// Dependencies: [12645, 5371, 2]
 // Exports: landingModelChoices
 
-// Module 16247 (VibegrationsLandingModelChoices)
+// Module 16243 (VibegrationsLandingModelChoices)
 import VibegrationsTypes from "VibegrationsTypes" /* 5371 */;
-import vibegrationsLocalDev from "vibegrationsLocalDev" /* 12627 */;
+import vibegrationsLocalDev from "vibegrationsLocalDev" /* 12645 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsLandingModelChoices.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12966
-// Function ID: 12967
+// Module ID: 12965
+// Function ID: 12966
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4836, 576, 6583, 12967, 8230, 1249, 10203, 12970, 4832, 4525, 9425, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 6583, 12966, 8230, 1249, 10203, 12969, 4832, 4525, 9425, 2]
 // Exports: default
 
-// Module 12966 (MarketingPageBannerTile)
+// Module 12965 (MarketingPageBannerTile)
 import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
@@ -51,18 +51,18 @@ export default function MarketingPageBannerTile(bannerFields) {
   obj2.analyticsPage = analyticsPage;
   obj2.onPaymentSuccess = onPaymentSuccess;
   obj2.onPaymentDismiss = onPaymentDismiss;
-  const obj = helpArticleLinkProps(12967);
+  const obj = helpArticleLinkProps(12966);
   const obj3 = { type: null, name: null, properties: null };
-  const buttonActionHandler = helpArticleLinkProps(12967).getButtonActionHandler(obj2);
+  const buttonActionHandler = helpArticleLinkProps(12966).getButtonActionHandler(obj2);
   obj3.type = helpArticleLinkProps(1249).ImpressionTypes.VIEW;
   obj3.name = helpArticleLinkProps(1249).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
   const tmp2Result = useTrackImpressionDefault;
   obj3.properties = { component_type: helpArticleLinkProps(10203).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
   tmp2Result(obj3);
   const obj4 = { component_type: helpArticleLinkProps(10203).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
-  const formatStringWithCommonPremiumParams = helpArticleLinkProps(12970).useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result = helpArticleLinkProps(12970);
-  helpArticleLinkProps = helpArticleLinkProps(12970).getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
+  const formatStringWithCommonPremiumParams = helpArticleLinkProps(12969).useFormatStringWithCommonPremiumParams(bannerFields.body);
+  const tmp4Result = helpArticleLinkProps(12969);
+  helpArticleLinkProps = helpArticleLinkProps(12969).getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj5 = { style: null, children: null };
   const items = [tmp.container, style];
   obj5.style = items;

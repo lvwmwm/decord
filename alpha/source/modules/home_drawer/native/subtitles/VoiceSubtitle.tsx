@@ -1,10 +1,10 @@
-// Module ID: 15961
-// Function ID: 15962
+// Module ID: 15959
+// Function ID: 15960
 // Name: VoiceSubtitle
 // Dependencies: [19, 21, 4832, 1115, 4988, 2]
 // Exports: default
 
-// Module 15961 (VoiceSubtitle)
+// Module 15959 (VoiceSubtitle)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4988 */;

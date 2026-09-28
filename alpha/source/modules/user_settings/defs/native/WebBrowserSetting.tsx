@@ -1,13 +1,13 @@
-// Module ID: 15028
-// Function ID: 15029
+// Module ID: 15026
+// Function ID: 15027
 // Name: WebBrowserSetting
-// Dependencies: [1074, 11006, 1115, 15029, 8354, 15030, 2]
+// Dependencies: [1074, 11006, 1115, 15027, 8354, 15028, 2]
 
-// Module 15028 (WebBrowserSetting)
+// Module 15026 (WebBrowserSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import GlobeEarthIcon from "GlobeEarthIcon" /* 8354 */;
-import SelectWebBrowserSetting from "SelectWebBrowserSetting" /* 15029 */;
+import SelectWebBrowserSetting from "SelectWebBrowserSetting" /* 15027 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

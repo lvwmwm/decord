@@ -1,10 +1,10 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 12795
+// Function ID: 12796
 // Name: VoiceChannelLinkEmbed
 // Dependencies: [32, 17, 2063, 2045, 2067, 4469, 4479, 1372, 1074, 7155, 7387, 1397, 1364, 1115, 5335, 4989, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12796 (VoiceChannelLinkEmbed)
+// Module 12795 (VoiceChannelLinkEmbed)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useChannelName from "useChannelName" /* 4989 */;

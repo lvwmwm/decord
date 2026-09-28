@@ -1,10 +1,10 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13518
+// Function ID: 13519
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 2045, 4467, 2099, 1074, 21, 13507, 4743, 504, 9278, 9275, 5745, 7363, 1115, 8678, 576, 5016, 4800, 5746, 9491, 7391, 6540, 6799, 9048, 2]
+// Dependencies: [19, 2045, 4467, 2099, 1074, 21, 13506, 4743, 504, 9278, 9275, 5745, 7363, 1115, 8678, 576, 5016, 4800, 5746, 9491, 7391, 6540, 6799, 9048, 2]
 // Exports: default
 
-// Module 13519 (GuildActionSheetTabItems)
+// Module 13518 (GuildActionSheetTabItems)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
 import actions_BoostingActionCreatorsAll from "actions/BoostingActionCreators" /* 5746 */;
@@ -28,9 +28,9 @@ let result = size.fileFinishedImporting("modules/guild_action_sheet/native/compo
 export default function GuildActionSheetTabItems(guild) {
   guild = guild.guild;
   let stateFromStores;
-  let canAccessSettings = guild(13507).useGuildActionSheetPermissions(guild).canAccessSettings;
+  let canAccessSettings = guild(13506).useGuildActionSheetPermissions(guild).canAccessSettings;
   const total = stateFromStores(4743)(guild.id).total;
-  let obj = guild(13507);
+  let obj = guild(13506);
   const items = [GuildChannelStore];
   stateFromStores = guild(504).useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
   let obj2 = guild(504);

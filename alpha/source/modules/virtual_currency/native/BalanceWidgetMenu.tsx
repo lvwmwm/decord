@@ -1,10 +1,10 @@
-// Module ID: 15299
-// Function ID: 15300
+// Module ID: 15297
+// Function ID: 15298
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1074, 1076, 2042, 5756, 21, 5917, 4832, 1115, 10088, 2029, 1241, 10678, 5759, 15300, 8315, 4800, 10564, 1981, 6603, 6961, 10563, 4654, 5297, 2]
+// Dependencies: [19, 1074, 1076, 2042, 5756, 21, 5917, 4832, 1115, 10088, 2029, 1241, 10678, 5759, 15298, 8315, 4800, 10564, 1981, 6603, 6961, 10563, 4654, 5297, 2]
 // Exports: default
 
-// Module 15299 (BalanceWidgetMenu)
+// Module 15297 (BalanceWidgetMenu)
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
@@ -62,7 +62,7 @@ class OrbsOnboardingMenuDismissibleContent {
           const obj2 = QuestUtils;
           obj2.openQuestHome({ filter: constants3.VIRTUAL_CURRENCY, fromContent: QuestTypes.QuestContent.MOBILE_ORBS_ONBOARDING_DC });
         };
-        obj.trailing = closure_9(closure_1(15300), {});
+        obj.trailing = closure_9(closure_1(15298), {});
         return closure_9(closure_10, obj);
       } else {
         return null;

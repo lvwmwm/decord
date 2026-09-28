@@ -1,10 +1,10 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16547
+// Function ID: 16548
 // Name: useAutoSearchGuildChannelTab
 // Dependencies: [19, 11836, 11823, 11844, 12, 11821, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 16543 (useAutoSearchGuildChannelTab)
+// Module 16547 (useAutoSearchGuildChannelTab)
 import _mod12 from "module_12" /* 12 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11821 */;
 import SearchUtils from "SearchUtils" /* 11823 */;

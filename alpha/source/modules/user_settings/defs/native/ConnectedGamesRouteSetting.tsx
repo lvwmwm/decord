@@ -1,14 +1,14 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15503
+// Function ID: 15504
 // Name: ConnectedGamesRouteSetting
-// Dependencies: [7417, 1074, 11006, 1115, 4529, 15486, 2]
+// Dependencies: [7417, 1074, 11006, 1115, 4529, 15484, 2]
 
-// Module 15505 (ConnectedGamesRouteSetting)
+// Module 15503 (ConnectedGamesRouteSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import FriendsIcon from "FriendsIcon" /* 4529 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
-import ContentAndSocialScreen from "ContentAndSocialScreen" /* 15486 */;
+import ContentAndSocialScreen from "ContentAndSocialScreen" /* 15484 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

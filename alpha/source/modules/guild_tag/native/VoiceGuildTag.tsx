@@ -1,10 +1,10 @@
-// Module ID: 15759
-// Function ID: 15760
+// Module ID: 15757
+// Function ID: 15758
 // Name: VoiceGuildTag
 // Dependencies: [19, 17, 1372, 7386, 21, 1364, 4836, 576, 504, 7610, 9205, 4832, 2]
 // Exports: default
 
-// Module 15759 (VoiceGuildTag)
+// Module 15757 (VoiceGuildTag)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;

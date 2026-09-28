@@ -1,14 +1,14 @@
-// Module ID: 16518
-// Function ID: 16519
+// Module ID: 16522
+// Function ID: 16523
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 4836, 576, 4531, 12959, 5293, 8122, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 4531, 12958, 5293, 8122, 2]
 // Exports: default
 
-// Module 16518 (GroupDMNitroCapBanner)
+// Module 16522 (GroupDMNitroCapBanner)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 12959 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 12958 */;
 import noop from "module_19" /* 19 */;
 
 const NitroWheelIcon = tmp2(8122);

@@ -1,7 +1,7 @@
 // Module ID: 4488
 // Function ID: 4489
 // Name: PremiumUtils
-// Dependencies: [32, 19, 4489, 1372, 4490, 4491, 4493, 4494, 1074, 1374, 4502, 1085, 3, 4503, 4500, 1970, 38, 1115, 3199, 4421, 4512, 4519, 6655, 4501, 13002, 1091, 504, 10986, 5442, 4731, 13527, 1378, 1380, 8660, 2]
+// Dependencies: [32, 19, 4489, 1372, 4490, 4491, 4493, 4494, 1074, 1374, 4502, 1085, 3, 4503, 4500, 1970, 38, 1115, 3199, 4421, 4512, 4519, 6655, 4501, 13001, 1091, 504, 10986, 5442, 4731, 13526, 1378, 1380, 8660, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
 // Module 4488 (PremiumUtils)
@@ -22,8 +22,8 @@ import FileSizeUtils from "FileSizeUtils" /* 4731 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5442 */;
 import PriceUtils from "PriceUtils" /* 6655 */;
 import CheckoutError from "CheckoutError" /* 10986 */;
-import useFPDurationLeft from "useFPDurationLeft" /* 13002 */;
-import ProductCatalog from "ProductCatalog" /* 13527 */;
+import useFPDurationLeft from "useFPDurationLeft" /* 13001 */;
+import ProductCatalog from "ProductCatalog" /* 13526 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -2370,8 +2370,8 @@ const frozen = Object.freeze({
     }
     let hasPerkResult = PerksStateUtils.hasPerk(perks, tmp(1380).Perk.SHOP_DISCOUNTS);
     if (!hasPerkResult) {
-      hasPerkResult = tmp(13527).canUserUse(tmp(13527).COLLECTIBLES, currentUser);
-      const tmpResult = tmp(13527);
+      hasPerkResult = tmp(13526).canUserUse(tmp(13526).COLLECTIBLES, currentUser);
+      const tmpResult = tmp(13526);
     }
     return hasPerkResult;
   },
@@ -2382,8 +2382,8 @@ const frozen = Object.freeze({
     }
     let hasPerkResult = PerksStateUtils.hasPerk(perks, tmp(1380).Perk.MORE_QUEST_ORBS);
     if (!hasPerkResult) {
-      hasPerkResult = tmp(13527).canUserUse(tmp(13527).QUEST_ORB_MULTIPLIER, perks);
-      const tmpResult = tmp(13527);
+      hasPerkResult = tmp(13526).canUserUse(tmp(13526).QUEST_ORB_MULTIPLIER, perks);
+      const tmpResult = tmp(13526);
     }
     return hasPerkResult;
   },

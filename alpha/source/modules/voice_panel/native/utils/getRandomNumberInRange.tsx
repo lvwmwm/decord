@@ -1,10 +1,10 @@
-// Module ID: 16958
-// Function ID: 16959
+// Module ID: 16962
+// Function ID: 16963
 // Name: getRandomNumberInRange
 // Dependencies: [2]
 // Exports: default
 
-// Module 16958 (getRandomNumberInRange)
+// Module 16962 (getRandomNumberInRange)
 import size from "module_2" /* 2 */;
 
 const fn = function n(arg0, arg1) {

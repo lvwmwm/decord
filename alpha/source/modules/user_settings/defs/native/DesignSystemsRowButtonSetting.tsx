@@ -1,9 +1,9 @@
-// Module ID: 15369
-// Function ID: 15370
+// Module ID: 15367
+// Function ID: 15368
 // Name: DesignSystemsRowButtonSetting
-// Dependencies: [7417, 1074, 11006, 15370, 2]
+// Dependencies: [7417, 1074, 11006, 15368, 2]
 
-// Module 15369 (DesignSystemsRowButtonSetting)
+// Module 15367 (DesignSystemsRowButtonSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

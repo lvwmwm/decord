@@ -1,17 +1,17 @@
-// Module ID: 17044
-// Function ID: 17045
+// Module ID: 17048
+// Function ID: 17049
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 2045, 5056, 4479, 1372, 1074, 16909, 21, 4836, 576, 4531, 504, 4989, 7714, 4832, 17045, 5293, 6876, 6665, 4566, 4837, 1115, 8370, 5940, 4785, 1241, 14098, 4454, 17042, 7724, 7722, 17046, 2]
+// Dependencies: [32, 19, 17, 2045, 5056, 4479, 1372, 1074, 16913, 21, 4836, 576, 4531, 504, 4989, 7714, 4832, 17049, 5293, 6876, 6665, 4566, 4837, 1115, 8370, 5940, 4785, 1241, 14097, 4454, 17046, 7724, 7722, 17050, 2]
 // Exports: default
 
-// Module 17044 (MediaPlaybackPip)
+// Module 17048 (MediaPlaybackPip)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import timing from "timing" /* 4837 */;
 import useChannelName from "useChannelName" /* 4989 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 6665 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 6876 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14098 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14097 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -93,7 +93,7 @@ function MediaInfo(message) {
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: null };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          const items3 = [tmp13(tmp2(17045).Marquee, obj7), ];
+          const items3 = [tmp13(tmp2(17049).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: null, style: null };
           const items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           obj8.colors = items4;
@@ -189,7 +189,7 @@ get_ActivityIndicator = fn(17);
 ({ Easing: hasOwnProperty, StyleSheet, TouchableOpacity: metroRequire, View: closure_7 } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, MessageFlags: map1, Routes: closure_14 } = Constants);
-const SquarePIPReferenceDimensions = fn(16909).SquarePIPReferenceDimensions;
+const SquarePIPReferenceDimensions = fn(16913).SquarePIPReferenceDimensions;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 const createStyles = fn(4836);

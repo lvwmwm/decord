@@ -1,19 +1,19 @@
-// Module ID: 16734
-// Function ID: 16735
+// Module ID: 16738
+// Function ID: 16739
 // Name: Alerts
-// Dependencies: [19, 17, 4825, 13296, 13889, 5027, 11040, 21, 16735, 16736, 16740, 16741, 4836, 576, 4540, 5204, 5262, 5890, 504, 558, 5276, 11916, 1177, 2]
+// Dependencies: [19, 17, 4825, 13295, 13888, 5027, 11040, 21, 16739, 16740, 16744, 16745, 4836, 576, 4540, 5204, 5262, 5890, 504, 558, 5276, 11916, 1177, 2]
 
-// Module 16734 (Alerts)
+// Module 16738 (Alerts)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 576 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5204 */;
 import Dialog from "Dialog" /* 5262 */;
 import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5890 */;
-import ModalRegistryDefault from "ModalRegistry" /* 16735 */;
+import ModalRegistryDefault from "ModalRegistry" /* 16739 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 13296 */;
-import PermissionVADStore from "PermissionVADStore" /* 13889 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 13295 */;
+import PermissionVADStore from "PermissionVADStore" /* 13888 */;
 import SurveyStore from "SurveyStore" /* 5027 */;
 import AlertStore from "AlertStore" /* 11040 */;
 
@@ -151,7 +151,7 @@ AlertWrapper.prototype["render"] = function render() {
   return map1(Dialog.Dialog, obj2);
 };
 AlertWrapper.contextType = fn(4540).ThemeContext;
-let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "channel", props: "hd" });
+let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "paddingHorizontal", props: "dispatch" });
 const tmp7 = new ModalRegistryDefault(items1);
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/Alerts.tsx");
@@ -183,7 +183,7 @@ export default noop.memo(function Alerts() {
           return <openModal.component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "channel", props: "hd" };
+        return { renderAlert: "Array", renderKey: "paddingHorizontal", props: "dispatch" };
       }
     }
   });

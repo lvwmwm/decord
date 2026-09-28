@@ -1,10 +1,10 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 12681
+// Function ID: 12682
 // Name: UserProfileWishlistSuggestionsGrid
-// Dependencies: [19, 17, 4825, 8239, 7628, 6629, 1074, 1076, 21, 576, 4836, 12659, 504, 12665, 7635, 12660, 6583, 5910, 1255, 12666, 8238, 4800, 6961, 6603, 5281, 11620, 1115, 12667, 4566, 4832, 7363, 5992, 12668, 2]
+// Dependencies: [19, 17, 4825, 8239, 7628, 6629, 1074, 1076, 21, 576, 4836, 12677, 504, 12682, 7635, 12560, 6583, 5910, 1255, 12683, 8238, 4800, 6961, 6603, 5281, 11620, 1115, 12684, 4566, 4832, 7363, 5992, 12685, 2]
 // Exports: default
 
-// Module 12664 (UserProfileWishlistSuggestionsGrid)
+// Module 12681 (UserProfileWishlistSuggestionsGrid)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
@@ -12,8 +12,8 @@ import useInitialValueDefault from "useInitialValue" /* 5910 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6603 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
-import useCardGridLayoutDefault from "useCardGridLayout" /* 12660 */;
-import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 12665 */;
+import useCardGridLayoutDefault from "useCardGridLayout" /* 12560 */;
+import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 12682 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import WishlistStore from "WishlistStore" /* 8239 */;
@@ -83,7 +83,7 @@ function WishlistSuggestionsGridContents(arg0) {
   let obj2 = trackUserProfileWishlistAction(504);
   const obj3 = { minCardSize: 80, maxCardSize: 120, containerWidth, maxWidth, sidePadding: closure_8 + PX_16 + 1, gap };
   const tmp7 = useInitialValueDefault(() => trackUserProfileWishlistAction(dependencyMap[18]).v4());
-  let obj4 = trackUserProfileWishlistAction(12666);
+  let obj4 = trackUserProfileWishlistAction(12683);
   const items2 = obj4.useAddToWishlistGridItems({ userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: trackUserProfileWishlistAction(8238).WishlistFetchSource.USER_PROFILE }).items;
   const items3 = [trackUserProfileWishlistAction];
   const callback = noop.useCallback(() => {
@@ -148,7 +148,7 @@ function WishlistSuggestionsGridContents(arg0) {
     obj11.children = items4;
     const items6 = [closure_13(View, obj11), , ];
     const obj17 = { items: items2, wishlist, analyticsLocations, cardSize: useCardGridLayoutDefault(obj3).cardWidth };
-    items6[1] = closure_12(tmp6(12668), obj17);
+    items6[1] = closure_12(tmp6(12685), obj17);
     const obj18 = { style: tmp3.shopButtonContainer, children: null };
     const obj33 = { size: "md", variant: "secondary", icon: closure_12(tmp(11620).ShopIcon, { size: "sm" }), text: null, onPress: null };
     const intl2 = tmp(1115).intl;
@@ -158,7 +158,7 @@ function WishlistSuggestionsGridContents(arg0) {
     items6[2] = closure_12(View, obj18);
     obj10.children = items6;
     obj8.children = closure_13(tmp6(4566).View, obj10);
-    tmp12Result = tmp12(tmp(12667).WishlistAnalyticsProvider, obj8);
+    tmp12Result = tmp12(tmp(12684).WishlistAnalyticsProvider, obj8);
   }
   return tmp12Result;
 }

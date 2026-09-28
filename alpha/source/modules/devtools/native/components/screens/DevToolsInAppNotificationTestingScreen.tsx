@@ -1,10 +1,10 @@
-// Module ID: 15331
-// Function ID: 15332
+// Module ID: 15329
+// Function ID: 15330
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 5814, 2049, 4480, 2045, 2067, 2099, 1372, 1074, 21, 4836, 576, 4528, 8048, 9554, 9556, 5581, 11, 1613, 1177, 5999, 5917, 15141, 5924, 2]
+// Dependencies: [19, 17, 5814, 2049, 4480, 2045, 2067, 2099, 1372, 1074, 21, 4836, 576, 4528, 8048, 9554, 9556, 5581, 11, 1613, 1177, 5999, 5917, 15139, 5924, 2]
 // Exports: default
 
-// Module 15331 (DevToolsInAppNotificationTestingScreen)
+// Module 15329 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
@@ -559,7 +559,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
         return closure_1_14(closure_1_0(5917).TableRow, {
           label: label.label,
           subLabel: label.subLabel,
-          icon: closure_1_14(closure_1_0(15141).BeakerIcon, {}),
+          icon: closure_1_14(closure_1_0(15139).BeakerIcon, {}),
           onPress() {
             return closure_2_0(closure_0);
           },
@@ -579,7 +579,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
     children: items3.map((label) => closure_1_14(label(5917).TableRow, {
       label: label.label,
       subLabel: label.subLabel,
-      icon: closure_1_14(label(15141).BeakerIcon, {}),
+      icon: closure_1_14(label(15139).BeakerIcon, {}),
       onPress() {
         return label(label);
       },

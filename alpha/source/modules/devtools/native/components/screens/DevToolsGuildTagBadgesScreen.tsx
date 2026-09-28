@@ -1,13 +1,13 @@
-// Module ID: 15308
-// Function ID: 15309
+// Module ID: 15306
+// Function ID: 15307
 // Name: DevToolsGuildTagBadgesScreen
-// Dependencies: [32, 19, 17, 7386, 21, 4836, 576, 5279, 4832, 5281, 13461, 2]
+// Dependencies: [32, 19, 17, 7386, 21, 4836, 576, 5279, 4832, 5281, 13460, 2]
 // Exports: default
 
-// Module 15308 (DevToolsGuildTagBadgesScreen)
+// Module 15306 (DevToolsGuildTagBadgesScreen)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
-import badges_GuildBadge from "badges/GuildBadge" /* 13461 */;
+import badges_GuildBadge from "badges/GuildBadge" /* 13460 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

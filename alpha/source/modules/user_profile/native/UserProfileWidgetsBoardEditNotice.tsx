@@ -1,10 +1,10 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12638
+// Function ID: 12639
 // Name: UserProfileWidgetsBoardEditNotice
 // Dependencies: [19, 17, 2042, 21, 4836, 576, 7687, 10088, 2029, 4787, 4832, 1115, 5435, 5992, 2]
 // Exports: default
 
-// Module 12620 (UserProfileWidgetsBoardEditNotice)
+// Module 12638 (UserProfileWidgetsBoardEditNotice)
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;

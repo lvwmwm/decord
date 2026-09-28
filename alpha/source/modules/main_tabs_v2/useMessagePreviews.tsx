@@ -1,13 +1,13 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14864
+// Function ID: 14865
 // Name: useMessagePreviews
-// Dependencies: [1220, 4851, 2021, 504, 7309, 7304, 14867, 2]
+// Dependencies: [1220, 4851, 2021, 504, 7309, 7304, 14865, 2]
 // Exports: default, useMessagePreviewSetting
 
-// Module 14866 (useMessagePreviews)
+// Module 14864 (useMessagePreviews)
 import UserSettings from "UserSettings" /* 2021 */;
 import useIsNsfwGatedDefault from "useIsNsfwGated" /* 7309 */;
-import useLatestChannelMessageDefault from "useLatestChannelMessage" /* 14867 */;
+import useLatestChannelMessageDefault from "useLatestChannelMessage" /* 14865 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 

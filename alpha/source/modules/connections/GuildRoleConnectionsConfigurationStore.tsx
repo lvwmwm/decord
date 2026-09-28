@@ -1,9 +1,9 @@
-// Module ID: 17407
-// Function ID: 17408
+// Module ID: 17411
+// Function ID: 17412
 // Name: GuildRoleConnectionsConfigurationStore
 // Dependencies: [2067, 504, 573, 2]
 
-// Module 17407 (GuildRoleConnectionsConfigurationStore)
+// Module 17411 (GuildRoleConnectionsConfigurationStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GuildStore from "GuildStore" /* 2067 */;

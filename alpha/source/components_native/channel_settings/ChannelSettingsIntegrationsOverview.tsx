@@ -1,10 +1,10 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 16660
+// Function ID: 16661
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 2049, 2045, 1074, 21, 1485, 6589, 5999, 1115, 5917, 9023, 4836, 576, 504, 8053, 5279, 16549, 16657, 2]
+// Dependencies: [19, 2049, 2045, 1074, 21, 1485, 6589, 5999, 1115, 5917, 9023, 4836, 576, 504, 8053, 5279, 16553, 16661, 2]
 // Exports: default
 
-// Module 16656 (ChannelSettingsIntegrationsOverview)
+// Module 16660 (ChannelSettingsIntegrationsOverview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useNavigation from "useNavigation" /* 1485 */;
@@ -67,7 +67,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj6.label = intl.string(tmp(1115).t.jp25Id);
       const intl2 = tmp(1115).intl;
       obj6.subLabel = intl2.string(tmp(1115).t.mKIOkI);
-      obj6.icon = tmp6(tmp(16549).WebhookIcon, {});
+      obj6.icon = tmp6(tmp(16553).WebhookIcon, {});
       obj6.onPress = function onPress() {
         return closure_1.push(ChannelSettingsSections.WEBHOOKS);
       };
@@ -79,7 +79,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
         obj7.label = intl3.string(tmp(1115).t.OrV60r);
         const intl4 = tmp(1115).intl;
         obj7.subLabel = intl4.string(tmp(1115).t.rQREJl);
-        obj7.icon = tmp6(tmp(16657).ChannelsFollowedIcon, {});
+        obj7.icon = tmp6(tmp(16661).ChannelsFollowedIcon, {});
         obj7.onPress = function onPress() {
           return closure_1.push(ChannelSettingsSections.CHANNELS_FOLLOWED);
         };

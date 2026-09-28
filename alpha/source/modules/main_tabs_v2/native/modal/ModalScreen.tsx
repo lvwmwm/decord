@@ -1,10 +1,10 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 16694
+// Function ID: 16695
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1074, 21, 4836, 576, 5039, 8230, 1249, 6895, 1613, 16691, 1364, 16292, 2]
+// Dependencies: [109, 19, 17, 1074, 21, 4836, 576, 5039, 8230, 1249, 6895, 1613, 16695, 1364, 16292, 2]
 // Exports: default
 
-// Module 16690 (modal/ModalScreen)
+// Module 16694 (modal/ModalScreen)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 8230 */;
@@ -91,7 +91,7 @@ export default function Modal(route) {
   const items2 = [<modal.modal />, ];
   const tmp14 = closure_10;
   const tmp15 = closure_6;
-  tmp7Result = modal(16691);
+  tmp7Result = modal(16695);
   let isIOSResult = modal(1364).isIOS();
   if (isIOSResult) {
     isIOSResult = closure_9(tmp7(16292).PortalKeyboardRenderer, { portal: false });

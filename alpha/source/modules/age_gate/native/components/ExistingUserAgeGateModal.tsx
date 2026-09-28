@@ -1,10 +1,10 @@
-// Module ID: 17081
-// Function ID: 17082
+// Module ID: 17085
+// Function ID: 17086
 // Name: ExistingUserAgeGateModal
-// Dependencies: [19, 4655, 1099, 17082, 1074, 21, 1364, 4528, 17083, 1115, 6632, 5832, 5039, 1241, 1249, 5936, 17084, 17086, 17087, 15613, 9232, 5046, 5048, 6421, 2]
+// Dependencies: [19, 4655, 1099, 17086, 1074, 21, 1364, 4528, 17087, 1115, 6632, 5832, 5039, 1241, 1249, 5936, 17088, 17090, 17091, 15611, 9232, 5046, 5048, 6421, 2]
 // Exports: default
 
-// Module 17081 (ExistingUserAgeGateModal)
+// Module 17085 (ExistingUserAgeGateModal)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import NavigatorHeader from "NavigatorHeader" /* 5936 */;
 import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6632 */;
@@ -20,7 +20,7 @@ function renderHeaderTitle() {
 }
 const AgeGateConstants = fn(1099);
 ({ AgeGateAnalyticAction: hasOwnProperty, AgeGateSource: metroRequire } = AgeGateConstants);
-let closure_7 = fn(17082).ExistingUserAgeGateScreens;
+let closure_7 = fn(17086).ExistingUserAgeGateScreens;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -99,19 +99,19 @@ export default function ExistingUserAgeGateModal(source) {
               if (obj.isIOS()) {
                 let fn = () => {
                   closure_0.push(NSFWGateGuild.NSFWGateGuild);
-                  const obj2 = { key: "AGE_GATE_AGE_VERIFIED", icon: ref(17083), content: null };
+                  const obj2 = { key: "AGE_GATE_AGE_VERIFIED", icon: ref(17087), content: null };
                   const intl = closure_0(1115).intl;
                   obj2.content = intl.string(closure_0(1115).t.gUiIGZ);
                   ref(4528).open(obj2);
                 };
               }
               let obj2 = { onSuccess: fn, onClose, source: tmp };
-              return jsx(closure_1(17084), { onSuccess: fn, onClose, source: tmp });
+              return jsx(closure_1(17088), { onSuccess: fn, onClose, source: tmp });
             }
             fn = () => {
               closure_0(6632).closeAgeGateModal();
               const obj = closure_0(6632);
-              const obj3 = { key: "AGE_GATE_AGE_VERIFIED", icon: closure_1_1(17083), content: null };
+              const obj3 = { key: "AGE_GATE_AGE_VERIFIED", icon: closure_1_1(17087), content: null };
               const intl = closure_0(1115).intl;
               obj3.content = intl.string(closure_0(1115).t.gUiIGZ);
               closure_1_1(4528).open(obj3);
@@ -126,7 +126,7 @@ export default function ExistingUserAgeGateModal(source) {
             const obj = {};
             const merged = Object.assign(arg0);
             obj.source = source;
-            return jsx(closure_1(17086), {});
+            return jsx(closure_1(17090), {});
           }
       };
       obj[NSFWGateGuild.AgeGateConfirm] = obj4;
@@ -135,7 +135,7 @@ export default function ExistingUserAgeGateModal(source) {
       obj5.impressionName = discord_common_AnalyticsUtils.ImpressionNames.USER_AGE_GATE_VERIFY;
       obj5.headerTitle = renderHeaderTitle;
       obj5.render = function render() {
-        return jsx(closure_1(17087), { source });
+        return jsx(closure_1(17091), { source });
       };
       obj[NSFWGateGuild.Pawtect] = obj5;
       const obj7 = {
@@ -144,7 +144,7 @@ export default function ExistingUserAgeGateModal(source) {
         impressionProperties: { existing_user: true },
         render(arg0) {
             const merged = Object.assign(arg0);
-            return closure_1_9(ref(15613), {});
+            return closure_1_9(ref(15611), {});
           }
       };
       obj[NSFWGateGuild.Blocked] = obj7;

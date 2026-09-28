@@ -1,13 +1,13 @@
-// Module ID: 15016
-// Function ID: 15017
+// Module ID: 15014
+// Function ID: 15015
 // Name: DataSavingModeSetting
-// Dependencies: [1184, 7417, 504, 15014, 2021, 11006, 1115, 2]
+// Dependencies: [1184, 7417, 504, 15012, 2021, 11006, 1115, 2]
 
-// Module 15016 (DataSavingModeSetting)
+// Module 15014 (DataSavingModeSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
-import UserSettingsText from "UserSettingsText" /* 15014 */;
+import UserSettingsText from "UserSettingsText" /* 15012 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 
 require = fn;

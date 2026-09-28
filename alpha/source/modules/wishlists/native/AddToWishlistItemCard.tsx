@@ -1,10 +1,10 @@
-// Module ID: 12669
-// Function ID: 12670
+// Module ID: 12686
+// Function ID: 12687
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1074, 21, 4836, 576, 12667, 8234, 8301, 1241, 8245, 4528, 1115, 8235, 8231, 2]
+// Dependencies: [5, 32, 19, 17, 1074, 21, 4836, 576, 12684, 8234, 8301, 1241, 8245, 4528, 1115, 8235, 8231, 2]
 // Exports: default
 
-// Module 12669 (AddToWishlistItemCard)
+// Module 12686 (AddToWishlistItemCard)
 import nativeDefault from "native" /* 576 */;
 import SKUPreviewDefault from "SKUPreview" /* 8234 */;
 import HeartOutlineIcon from "HeartOutlineIcon" /* 8301 */;

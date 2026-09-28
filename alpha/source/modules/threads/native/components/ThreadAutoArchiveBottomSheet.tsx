@@ -1,9 +1,9 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16637
+// Function ID: 16638
 // Name: ThreadAutoArchiveBottomSheet
 // Dependencies: [19, 2052, 21, 8607, 5997, 1115, 6000, 2]
 
-// Module 16633 (ThreadAutoArchiveBottomSheet)
+// Module 16637 (ThreadAutoArchiveBottomSheet)
 import TableRadioRow from "TableRadioRow" /* 6000 */;
 import noop from "module_19" /* 19 */;
 

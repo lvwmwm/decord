@@ -1,13 +1,13 @@
-// Module ID: 14961
-// Function ID: 14962
+// Module ID: 14959
+// Function ID: 14960
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [4825, 7417, 504, 13999, 11006, 1115, 2]
+// Dependencies: [4825, 7417, 504, 13998, 11006, 1115, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 14961 (ShowLinkDecorationsSetting)
+// Module 14959 (ShowLinkDecorationsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13999 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 13998 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 
 require = fn;

@@ -1,9 +1,9 @@
-// Module ID: 15764
-// Function ID: 15765
+// Module ID: 15762
+// Function ID: 15763
 // Name: VoiceUserSummary
 // Dependencies: [19, 17, 21, 1177, 4836, 7298, 7297, 5411, 5415, 2]
 
-// Module 15764 (VoiceUserSummary)
+// Module 15762 (VoiceUserSummary)
 import native from "native" /* 1177 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7298 */;
 import noop from "module_19" /* 19 */;

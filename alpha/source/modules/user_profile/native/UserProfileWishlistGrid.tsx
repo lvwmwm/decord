@@ -1,10 +1,10 @@
-// Module ID: 12658
-// Function ID: 12659
+// Module ID: 12676
+// Function ID: 12677
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 19, 17, 6962, 10501, 8239, 8242, 8240, 1372, 5822, 7035, 7628, 1074, 1076, 1374, 21, 3, 4836, 576, 12659, 4540, 4685, 7635, 4800, 6961, 6603, 4832, 1115, 5281, 12269, 12660, 6583, 10207, 8667, 504, 12661, 7619, 12641, 12662, 4693, 4528, 11092, 4488, 6661, 5204, 10124, 1365, 10263, 6652, 10262, 7624, 4501, 10473, 6735, 4503, 7621, 12663, 1981, 4787, 7363, 9713, 10499, 2]
+// Dependencies: [5, 19, 17, 6962, 10501, 8239, 8242, 8240, 1372, 5822, 7035, 7628, 1074, 1076, 1374, 21, 3, 4836, 576, 12677, 4540, 4685, 7635, 4800, 6961, 6603, 4832, 1115, 5281, 12269, 12560, 6583, 10207, 8667, 504, 12678, 7619, 12659, 12679, 4693, 4528, 11092, 4488, 6661, 5204, 10124, 1365, 10263, 6652, 10262, 7624, 4501, 10473, 6735, 4503, 7621, 12680, 1981, 4787, 7363, 9713, 10499, 2]
 // Exports: default
 
-// Module 12658 (UserProfileWishlistGrid)
+// Module 12676 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
@@ -584,7 +584,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     }
     obj.productLines = tmp4;
     trackUserProfileWishlistAction(obj);
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12663, dependencyMap.paths), "EditWishlistActionSheet", { wishlistId, analyticsContext: context, analyticsLocations }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12680, dependencyMap.paths), "EditWishlistActionSheet", { wishlistId, analyticsContext: context, analyticsLocations }, "stack");
   }, items14);
   const callback1 = obj12.useCallback(() => {
     const obj = { action: constants.PRESS_ADD_WISHLIST_ITEM, wishlistId, productLines: null };

@@ -1,9 +1,9 @@
-// Module ID: 16952
-// Function ID: 16953
+// Module ID: 16956
+// Function ID: 16957
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 4858, 4859, 5731, 11755, 11753, 16909, 11758, 1074, 4857, 11756, 21, 4566, 4832, 5293, 1177, 4836, 576, 4978, 4888, 5901, 1115, 5281, 11754, 504, 8873, 4891, 12594, 8876, 8872, 16953, 8883, 8289, 7697, 4837, 5280, 6494, 5899, 4531, 8902, 16954, 10456, 8853, 4540, 6583, 16912, 16925, 16908, 16955, 16956, 7624, 6073, 16957, 11757, 16958, 16959, 16960, 16961, 16962, 16972, 2]
+// Dependencies: [32, 19, 17, 4858, 4859, 5731, 11755, 11753, 16913, 11758, 1074, 4857, 11756, 21, 4566, 4832, 5293, 1177, 4836, 576, 4978, 4888, 5901, 1115, 5281, 11754, 504, 8873, 4891, 12612, 8876, 8872, 16957, 8883, 8289, 7697, 4837, 5280, 6494, 5899, 4531, 8902, 16958, 10456, 8853, 4540, 6583, 16916, 16929, 16912, 16959, 16960, 7624, 6073, 16961, 11757, 16962, 16963, 16964, 16965, 16966, 16976, 2]
 
-// Module 16952 (VoicePanelCard)
+// Module 16956 (VoicePanelCard)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4540 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
@@ -14,9 +14,9 @@ import spring from "spring" /* 5280 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7624 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 16908 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 16954 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 16955 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 16912 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 16958 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 16959 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;
@@ -816,7 +816,7 @@ const StyleSheet = fn(17).StyleSheet;
 const VoicePanelConstants = fn(11755);
 ({ VoicePanelCTACard: closure_9, VoicePanelModes: c10, MODE_CHANGE_PHYSICS: closure_11, SPEAKING_PHYSICS: closure_12, VoicePanelCardItemType: map1 } = VoicePanelConstants);
 const VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(16909).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(16913).VoicePanelPIPModes;
 const EDGE_GUTTER = fn(11758).EDGE_GUTTER;
 const ApplicationStreamStates = fn(1074).ApplicationStreamStates;
 const ParticipantTypes = fn(4857).ParticipantTypes;
@@ -1095,7 +1095,7 @@ const __initData7 = { code: "function VoicePanelCardTsx9(){const{focused}=this._
 const __initData8 = { code: "function VoicePanelCardTsx10(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 const __initData9 = { code: "function VoicePanelCardTsx11(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 const __initData10 = { code: "function VoicePanelCardTsx12(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-let closure_47 = { isSelf: false, hasVideo: false, user: { id: "__initData" } };
+let closure_47 = { isSelf: false, hasVideo: false, user: { id: "r" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING, scale, sharedValue2, flag) {
   if (flag === undefined) {
     flag = false;
@@ -1360,7 +1360,6 @@ export default noop.memo(function VoicePanelCard(cleanUp) {
       tmp27 = closure_20;
     }
   }
-  const obj13 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "isArray", layout: layoutTransition, layoutPhysics: physics };
-  tmp29Result = closure_20(closure_37, obj13);
+  tmp29Result = closure_20(closure_37, { isRinging: tmp8, avatarURI: "r", avatarDecoration: "Path", layout: layoutTransition, layoutPhysics: physics });
   tmp27 = closure_20;
 });

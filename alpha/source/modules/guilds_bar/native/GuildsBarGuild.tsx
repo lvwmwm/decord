@@ -1,15 +1,15 @@
-// Module ID: 15954
-// Function ID: 15955
+// Module ID: 15952
+// Function ID: 15953
 // Name: GuildsBarGuild
-// Dependencies: [19, 2063, 5201, 7050, 2067, 4655, 5750, 15923, 15920, 1074, 21, 4836, 576, 4531, 15932, 15657, 15660, 15955, 504, 5896, 15966, 15967, 5203, 1115, 1241, 15947, 15976, 15924, 15977, 4566, 5280, 5899, 15979, 2]
+// Dependencies: [19, 2063, 5201, 7050, 2067, 4655, 5750, 15921, 15918, 1074, 21, 4836, 576, 4531, 15930, 15655, 15658, 15953, 504, 5896, 15964, 15965, 5203, 1115, 1241, 15945, 15974, 15922, 15975, 4566, 5280, 5899, 15977, 2]
 
-// Module 15954 (GuildsBarGuild)
+// Module 15952 (GuildsBarGuild)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import spring from "spring" /* 5280 */;
 import GuildIcon from "GuildIcon" /* 5896 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 15924 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 15977 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 15922 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 15975 */;
 import noop from "module_19" /* 19 */;
 import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5201 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7050 */;
@@ -20,8 +20,8 @@ import SortedGuildStore from "SortedGuildStore" /* 5750 */;
 require = fn;
 const GuildRecord = fn(2063);
 ({ getGuildIconSource: closure_4, getGuildIconURL: hasOwnProperty } = GuildRecord);
-const useItemDragState = fn(15923).useItemDragState;
-const TRANSITION_PHYSICS = fn(15920).TRANSITION_PHYSICS;
+const useItemDragState = fn(15921).useItemDragState;
+const TRANSITION_PHYSICS = fn(15918).TRANSITION_PHYSICS;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ Fragment: closure_14, jsxs: closure_15, jsx: closure_16 } = jsxProd);

@@ -1,10 +1,10 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 12674
+// Function ID: 12675
 // Name: useUserProfileConnections
 // Dependencies: [19, 7035, 6923, 504, 5595, 2]
 // Exports: default
 
-// Module 12656 (useUserProfileConnections)
+// Module 12674 (useUserProfileConnections)
 import _mod19 from "module_19" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 import size from "module_2" /* 2 */;

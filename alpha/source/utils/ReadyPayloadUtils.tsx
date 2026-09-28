@@ -1,10 +1,10 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13222
+// Function ID: 13223
 // Name: ReadyPayloadUtils
 // Dependencies: [2049, 2074, 7062, 7066, 2095, 7067, 2091, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 13223 (ReadyPayloadUtils)
+// Module 13222 (ReadyPayloadUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import ChannelRecord from "ChannelRecord" /* 2049 */;

@@ -1,9 +1,9 @@
-// Module ID: 16027
-// Function ID: 16028
+// Module ID: 16023
+// Function ID: 16024
 // Name: YouBarAvatarDefault
 // Dependencies: [19, 17, 14627, 1074, 21, 4836, 576, 4531, 1177, 8276, 8219, 2]
 
-// Module 16027 (YouBarAvatarDefault)
+// Module 16023 (YouBarAvatarDefault)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useToken from "useToken" /* 4531 */;

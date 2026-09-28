@@ -1,10 +1,10 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 17614
+// Function ID: 17615
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
 // Dependencies: [19, 17, 1372, 21, 4836, 576, 1115, 563, 4988, 5899, 4832, 1092, 1177, 6626, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 17610 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 17614 (GuildRoleSubscriptionTierTemplateRolePreview)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1092 */;

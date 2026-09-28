@@ -1,10 +1,10 @@
-// Module ID: 16168
-// Function ID: 16169
+// Module ID: 16164
+// Function ID: 16165
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 11903, 1074, 2042, 21, 4836, 576, 1241, 4800, 11904, 6571, 16169, 4832, 5745, 5281, 1115, 2]
+// Dependencies: [19, 17, 11903, 1074, 2042, 21, 4836, 576, 1241, 4800, 11904, 6571, 16165, 4832, 5745, 5281, 1115, 2]
 // Exports: default
 
-// Module 16168 (NotificationNudgeBottomSheet)
+// Module 16164 (NotificationNudgeBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;

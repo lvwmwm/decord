@@ -1,9 +1,9 @@
-// Module ID: 15730
-// Function ID: 15731
+// Module ID: 15728
+// Function ID: 15729
 // Name: MessagesItemSeparator
 // Dependencies: [19, 17, 21, 576, 4836, 2]
 
-// Module 15730 (MessagesItemSeparator)
+// Module 15728 (MessagesItemSeparator)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

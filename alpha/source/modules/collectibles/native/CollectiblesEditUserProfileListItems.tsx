@@ -1,10 +1,10 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 12744
+// Function ID: 12745
 // Name: CollectiblesEditUserProfileListItems
-// Dependencies: [19, 17, 1372, 1076, 21, 4836, 576, 5435, 4801, 4802, 1177, 12746, 4832, 1115, 6583, 6961, 4800, 12747, 8293, 504, 4488, 7618, 6974, 2]
+// Dependencies: [19, 17, 1372, 1076, 21, 4836, 576, 5435, 4801, 4802, 1177, 12745, 4832, 1115, 6583, 6961, 4800, 12746, 8293, 504, 4488, 7618, 6974, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 12745 (CollectiblesEditUserProfileListItems)
+// Module 12744 (CollectiblesEditUserProfileListItems)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -18,7 +18,7 @@ import Pressables from "Pressables" /* 5435 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6961 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 6974 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 7618 */;
-import _modDef12746 from "module_12746" /* 12746 */;
+import _modDef12745 from "module_12745" /* 12745 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -82,7 +82,7 @@ export const EditCollectiblesListItemNone = function EditCollectiblesListItemNon
   const tmp = closure_9();
   const obj = { style: tmp.optionCell };
   const merged = Object.assign(asDefault);
-  const items = [React5(native.Icon, { source: _modDef12746, size: native.IconSizes.LARGE }), ];
+  const items = [React5(native.Icon, { source: _modDef12745, size: native.IconSizes.LARGE }), ];
   const obj3 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText, children: null };
   const intl = util.intl;
   const string = intl.string;
@@ -114,7 +114,7 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
     }, items)
   };
   const merged1 = Object.assign(merged);
-  const items1 = [closure_7(analyticsSource(1177).Icon, { source: analyticsLocations(12747), size: analyticsSource(1177).IconSizes.LARGE }), , ];
+  const items1 = [closure_7(analyticsSource(1177).Icon, { source: analyticsLocations(12746), size: analyticsSource(1177).IconSizes.LARGE }), , ];
   const obj3 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: null };
   const intl = analyticsSource(1115).intl;
   obj3.children = intl.string(analyticsSource(1115).t.pWG4ze);

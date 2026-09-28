@@ -1,16 +1,16 @@
-// Module ID: 14245
-// Function ID: 14246
+// Module ID: 14244
+// Function ID: 14245
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4479, 1372, 1074, 7847, 21, 4836, 576, 14246, 1115, 6800, 504, 6419, 5933, 5917, 5281, 2]
+// Dependencies: [19, 17, 4479, 1372, 1074, 7847, 21, 4836, 576, 14245, 1115, 6800, 504, 6419, 5933, 5917, 5281, 2]
 
-// Module 14245 (SettingsAccountHeader)
+// Module 14244 (SettingsAccountHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5933 */;
 import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6419 */;
 import openUserSettings from "openUserSettings" /* 6800 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14246 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14245 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 import UserStore from "UserStore" /* 1372 */;

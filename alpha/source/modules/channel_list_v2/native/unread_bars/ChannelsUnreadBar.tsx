@@ -1,9 +1,9 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 15814
+// Function ID: 15815
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 9577, 1074, 21, 4566, 4836, 576, 1364, 7298, 5288, 9578, 5016, 14629, 5280, 5284, 5404, 15352, 15350, 4832, 1115, 2]
+// Dependencies: [32, 19, 17, 9577, 1074, 21, 4566, 4836, 576, 1364, 7298, 5288, 9578, 5016, 14629, 5280, 5284, 5404, 15350, 15348, 4832, 1115, 2]
 
-// Module 15816 (ChannelsUnreadBar)
+// Module 15814 (ChannelsUnreadBar)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;

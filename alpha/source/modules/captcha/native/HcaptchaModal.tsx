@@ -1,9 +1,9 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17071
+// Function ID: 17072
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2112, 1372, 1074, 21, 4836, 504, 1485, 1979, 1613, 1115, 5177, 5276, 5279, 576, 4832, 1364, 17066, 5435, 4785, 2]
+// Dependencies: [109, 19, 17, 2112, 1372, 1074, 21, 4836, 504, 1485, 1979, 1613, 1115, 5177, 5276, 5279, 576, 4832, 1364, 17070, 5435, 4785, 2]
 
-// Module 17067 (HcaptchaModal)
+// Module 17071 (HcaptchaModal)
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5177 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;

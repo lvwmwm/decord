@@ -1,9 +1,9 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16453
+// Function ID: 16454
 // Name: IntelligenceSearchEmptyScreen
 // Dependencies: [19, 17, 21, 4836, 576, 6402, 4541, 1115, 4832, 3877, 2]
 
-// Module 16449 (IntelligenceSearchEmptyScreen)
+// Module 16453 (IntelligenceSearchEmptyScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3877 from "module_3877" /* 3877 */;

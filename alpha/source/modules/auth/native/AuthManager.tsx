@@ -1,9 +1,9 @@
-// Module ID: 15624
-// Function ID: 15625
+// Module ID: 15622
+// Function ID: 15623
 // Name: AuthManager
-// Dependencies: [5, 17, 11902, 1074, 5045, 12202, 1983, 573, 2041, 15625, 1364, 11905, 9275, 12262, 12201, 6760, 7179, 2]
+// Dependencies: [5, 17, 11902, 1074, 5045, 12202, 1983, 573, 2041, 15623, 1364, 11905, 9275, 12262, 12201, 6760, 7179, 2]
 
-// Module 15624 (AuthManager)
+// Module 15622 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import transitionToGuild from "transitionToGuild" /* 6760 */;
 import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 7179 */;
@@ -82,8 +82,8 @@ class AuthManager extends tmp3 {
             closure_129_0();
           }
           const obj6 = { onComplete: closure_129_0 };
-          const result = applyArgumentsResult(15625).showPushNotificationPromptModal(obj6);
-          const obj = applyArgumentsResult(15625);
+          const result = applyArgumentsResult(15623).showPushNotificationPromptModal(obj6);
+          const obj = applyArgumentsResult(15623);
         } catch (tmp19) {
           DCDShortcutManager = tmp;
           throw tmp19;

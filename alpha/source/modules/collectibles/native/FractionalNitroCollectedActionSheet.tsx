@@ -1,24 +1,24 @@
-// Module ID: 12733
-// Function ID: 12734
+// Module ID: 12732
+// Function ID: 12733
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1074, 1374, 21, 4836, 576, 8307, 5899, 12734, 4767, 7007, 4685, 10188, 10189, 4832, 1115, 2111, 4525, 6571, 6851, 5435, 10568, 5281, 4800, 6575, 2]
+// Dependencies: [19, 17, 1074, 1374, 21, 4836, 576, 8307, 5899, 12733, 4767, 7007, 4685, 10188, 10189, 4832, 1115, 2111, 4525, 6571, 6851, 5435, 10568, 5281, 4800, 6575, 2]
 // Exports: default
 
-// Module 12733 (FractionalNitroCollectedActionSheet)
+// Module 12732 (FractionalNitroCollectedActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import shared from "shared" /* 4685 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import FastImageDefault from "FastImage" /* 5899 */;
 import FractionalNitroCoinIllustration from "FractionalNitroCoinIllustration" /* 8307 */;
-import _modDef12734 from "module_12734" /* 12734 */;
+import _modDef12733 from "module_12733" /* 12733 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function NitroAcquiredHeader(skuId) {
   const tmp = closure_12();
   const obj = { style: tmp.header, children: null };
-  const obj2 = { source: _modDef12734 };
+  const obj2 = { source: _modDef12733 };
   const items = [React7(FastImageDefault, obj2), ];
   const obj3 = { style: tmp.fractionNitroIcon, children: null };
   const size = { skuId: skuId.skuId, width: FractionalNitroCoinIllustration.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET, height: FractionalNitroCoinIllustration.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET };

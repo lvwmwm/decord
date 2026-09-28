@@ -1,10 +1,10 @@
-// Module ID: 17651
-// Function ID: 17652
+// Module ID: 17655
+// Function ID: 17656
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 13250, 9050, 1074, 6539, 17652, 573, 1271, 1473, 17653, 6759, 2]
+// Dependencies: [5, 13249, 9050, 1074, 6539, 17656, 573, 1271, 1473, 17657, 6759, 2]
 
-// Module 17651 (GlobalDiscoveryServersFeaturedSearchManager)
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13250 */;
+// Module 17655 (GlobalDiscoveryServersFeaturedSearchManager)
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13249 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 

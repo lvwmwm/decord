@@ -1,27 +1,27 @@
-// Module ID: 16252
-// Function ID: 16253
+// Module ID: 16248
+// Function ID: 16249
 // Name: VibegrationsTemplateWizardSheet
-// Dependencies: [5, 32, 19, 17, 2067, 4469, 12625, 12624, 21, 4836, 576, 16253, 8736, 5403, 504, 16255, 8496, 12451, 4800, 16256, 4832, 5889, 6618, 6570, 1115, 3715, 5997, 6000, 6506, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 2067, 4469, 12643, 12642, 21, 4836, 576, 16249, 8736, 5403, 504, 16251, 8496, 12451, 4800, 16252, 4832, 5889, 6618, 6570, 1115, 3715, 5997, 6000, 6506, 5281, 2]
 // Exports: default
 
-// Module 16252 (VibegrationsTemplateWizardSheet)
+// Module 16248 (VibegrationsTemplateWizardSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import TableRadioRow from "TableRadioRow" /* 6000 */;
 import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8496 */;
 import VibegrationsCreateErrors from "VibegrationsCreateErrors" /* 12451 */;
-import VibegrationsTemplateWizard from "VibegrationsTemplateWizard" /* 16255 */;
+import VibegrationsTemplateWizard from "VibegrationsTemplateWizard" /* 16251 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12625 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12643 */;
 
 require = fn;
 const View = fn(17).View;
-const VibegrationsConnectionStore = fn(12624);
+const VibegrationsConnectionStore = fn(12642);
 ({ ensureConnection: c10, sendUserMessage: closure_11, stageModelSettings: closure_12 } = VibegrationsConnectionStore);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
@@ -40,7 +40,7 @@ let obj7 = { flex: 1, gap: nativeDefault.space.PX_4 };
 obj2.actions = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 obj2.action = { flex: 1 };
 let closure_17 = createStyles.createStyles(obj2);
-let obj9 = { shield: fn(16253).ChatShieldIcon, hammer: fn(8736).HammerIcon, group: fn(5403).GroupIcon };
+let obj9 = { shield: fn(16249).ChatShieldIcon, hammer: fn(8736).HammerIcon, group: fn(5403).GroupIcon };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsTemplateWizardSheet.tsx");
 
@@ -64,7 +64,7 @@ export default function VibegrationsTemplateWizardSheet(template) {
   let tmp = ref2();
   _slicedToArray = tmp;
   let items = [first, closure_8];
-  const stateFromStores = template(504).useStateFromStores(items, () => template(16255).vibegrationsTemplateWizardGuilds(first.getGuildsArray(), "VibegrationsTemplateWizardSheet"));
+  const stateFromStores = template(504).useStateFromStores(items, () => template(16251).vibegrationsTemplateWizardGuilds(first.getGuildsArray(), "VibegrationsTemplateWizardSheet"));
   let obj = template(504);
   [tmp5, c6] = stateFromStores.useState(0);
   [first, closure_8] = stateFromStores.useState(() => {
@@ -158,13 +158,13 @@ export default function VibegrationsTemplateWizardSheet(template) {
     }
   }, items5);
   let obj4 = template(504);
-  let result = template(16255).vibegrationsWizardIntro(stateFromStores1);
-  const tmp2Result = template(16255);
-  const result1 = template(16255).vibegrationsWizardServerCopy(stateFromStores1);
-  const tmp2Result6 = template(16255);
-  const result2 = template(16255).vibegrationsWizardQuestions(stateFromStores1);
-  const tmp2Result7 = template(16255);
-  const result3 = template(16255).vibegrationsTemplateWizardSteps(result2, _slicedToArray(stateFromStores.useState(() => VibegrationsTemplateWizard.vibegrationsWizardNeedsServerStep(guildId, stateFromStores)), 1)[0]);
+  let result = template(16251).vibegrationsWizardIntro(stateFromStores1);
+  const tmp2Result = template(16251);
+  const result1 = template(16251).vibegrationsWizardServerCopy(stateFromStores1);
+  const tmp2Result6 = template(16251);
+  const result2 = template(16251).vibegrationsWizardQuestions(stateFromStores1);
+  const tmp2Result7 = template(16251);
+  const result3 = template(16251).vibegrationsTemplateWizardSteps(result2, _slicedToArray(stateFromStores.useState(() => VibegrationsTemplateWizard.vibegrationsWizardNeedsServerStep(guildId, stateFromStores)), 1)[0]);
   const tmp23 = result3[Math.min(Math, tmp5, result3.length - 1)];
   const length = result3.length;
   let tmp24;
@@ -422,8 +422,8 @@ export default function VibegrationsTemplateWizardSheet(template) {
       obj20.text = intl5.string(guildId(3715).KD2m2Y);
       let tmp50 = null == first1 || null == first;
       if (!tmp50) {
-        tmp50 = !tmp2(16255).isVibegrationsWizardComplete(result2, first2);
-        const tmp2Result9 = tmp2(16255);
+        tmp50 = !tmp2(16251).isVibegrationsWizardComplete(result2, first2);
+        const tmp2Result9 = tmp2(16251);
       }
       obj20.disabled = tmp50;
       obj20.loading = first3;
@@ -443,8 +443,8 @@ export default function VibegrationsTemplateWizardSheet(template) {
       if (!tmp40) {
         let tmp48 = typeof tmp23 === "object";
         if (typeof tmp23 === "object") {
-          tmp48 = !tmp2(16255).canLeaveVibegrationsWizardQuestion(tmp24, str);
-          const tmp2Result10 = tmp2(16255);
+          tmp48 = !tmp2(16251).canLeaveVibegrationsWizardQuestion(tmp24, str);
+          const tmp2Result10 = tmp2(16251);
         }
         tmp40 = tmp48;
       }

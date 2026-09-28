@@ -1,13 +1,13 @@
-// Module ID: 13313
-// Function ID: 13314
+// Module ID: 13312
+// Function ID: 13313
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 2042, 21, 4800, 6571, 13314, 13315, 1115, 2]
+// Dependencies: [19, 2042, 21, 4800, 6571, 13313, 13314, 1115, 2]
 // Exports: default
 
-// Module 13313 (NUFChannelsActionSheet)
+// Module 13312 (NUFChannelsActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 13314 */;
-import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13315 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 13313 */;
+import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13314 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

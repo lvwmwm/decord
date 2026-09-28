@@ -1,10 +1,10 @@
-// Module ID: 12726
-// Function ID: 12727
+// Module ID: 12725
+// Function ID: 12726
 // Name: ProductDetailsActionSheetVariants
 // Dependencies: [19, 17, 21, 4836, 576, 8303, 5435, 1115, 8331, 6554, 6973, 4832, 2]
 // Exports: default
 
-// Module 12726 (ProductDetailsActionSheetVariants)
+// Module 12725 (ProductDetailsActionSheetVariants)
 import nativeDefault from "native" /* 576 */;
 import Pressables from "Pressables" /* 5435 */;
 import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 6554 */;

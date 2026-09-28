@@ -1,14 +1,14 @@
-// Module ID: 16584
-// Function ID: 16585
+// Module ID: 16588
+// Function ID: 16589
 // Name: IncomingRequestRow
-// Dependencies: [19, 4825, 5063, 10320, 1074, 21, 4566, 563, 1115, 4678, 15679, 12125, 10328, 16083, 16585, 2]
+// Dependencies: [19, 4825, 5063, 10320, 1074, 21, 4566, 563, 1115, 4678, 15677, 12125, 10328, 16079, 16589, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 16584 (IncomingRequestRow)
+// Module 16588 (IncomingRequestRow)
 import util from "util" /* 1115 */;
 import UserUtilsDefault from "UserUtils" /* 4678 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12125 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15679 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15677 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;

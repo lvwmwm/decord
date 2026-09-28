@@ -1,10 +1,10 @@
-// Module ID: 15380
-// Function ID: 15381
+// Module ID: 15378
+// Function ID: 15379
 // Name: UserSettingsDesignSystemSegmentedControl
 // Dependencies: [32, 19, 17, 21, 4836, 576, 4832, 9083, 5279, 9084, 12113, 5281, 4541, 2]
 // Exports: default
 
-// Module 15380 (UserSettingsDesignSystemSegmentedControl)
+// Module 15378 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 576 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4541 */;
 import Text_Text from "Text/Text" /* 4832 */;

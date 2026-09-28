@@ -1,10 +1,10 @@
-// Module ID: 12647
-// Function ID: 12648
+// Module ID: 12665
+// Function ID: 12666
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1372, 7628, 6852, 2042, 21, 4836, 576, 12648, 7635, 504, 4488, 10088, 2029, 1177, 4832, 1115, 5435, 5992, 5281, 8122, 11620, 2]
+// Dependencies: [19, 17, 1372, 7628, 6852, 2042, 21, 4836, 576, 12666, 7635, 504, 4488, 10088, 2029, 1177, 4832, 1115, 5435, 5992, 5281, 8122, 11620, 2]
 // Exports: default
 
-// Module 12647 (UserProfileDismissibleUpsells)
+// Module 12665 (UserProfileDismissibleUpsells)
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import noop from "module_19" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 16528
+// Function ID: 16529
 // Name: SearchFetchPendingManager
 // Dependencies: [19, 11821, 5910, 2]
 // Exports: useSearchFetchPendingManager
 
-// Module 16524 (SearchFetchPendingManager)
+// Module 16528 (SearchFetchPendingManager)
 import useInitialValueDefault from "useInitialValue" /* 5910 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11821 */;
 import noop from "module_19" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13114
+// Function ID: 13115
 // Name: useFetchGuildBoostSlots
 // Dependencies: [5, 32, 19, 4729, 1980, 504, 1094, 6839, 4732, 2]
 // Exports: default
 
-// Module 13115 (useFetchGuildBoostSlots)
+// Module 13114 (useFetchGuildBoostSlots)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

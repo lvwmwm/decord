@@ -1,10 +1,10 @@
-// Module ID: 15956
-// Function ID: 15957
+// Module ID: 15954
+// Function ID: 15955
 // Name: isHomeDrawerChannelMuted
 // Dependencies: [4471, 2049, 5017, 504, 2]
 // Exports: useIsHomeDrawerChannelMuted
 
-// Module 15956 (isHomeDrawerChannelMuted)
+// Module 15954 (isHomeDrawerChannelMuted)
 import initialize from "initialize" /* 504 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4471 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;

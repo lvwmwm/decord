@@ -1,10 +1,10 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 15390
+// Function ID: 15391
 // Name: UserSettingsDesignSystemTooltip
 // Dependencies: [32, 19, 17, 21, 4836, 7780, 10590, 5281, 6621, 4832, 6544, 6577, 2]
 // Exports: default, useCanRotate
 
-// Module 15392 (UserSettingsDesignSystemTooltip)
+// Module 15390 (UserSettingsDesignSystemTooltip)
 import Text_Text from "Text/Text" /* 4832 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
 import LayerScope from "LayerScope" /* 6577 */;

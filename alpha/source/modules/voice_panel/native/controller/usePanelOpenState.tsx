@@ -1,10 +1,10 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16915
+// Function ID: 16916
 // Name: usePanelOpenState
 // Dependencies: [32, 19, 5044, 11755, 1074, 4566, 1110, 12305, 4660, 4673, 12298, 8761, 2]
 // Exports: default
 
-// Module 16911 (usePanelOpenState)
+// Module 16915 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import _slicedToArray from "module_32" /* 32 */;

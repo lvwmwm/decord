@@ -1,9 +1,9 @@
-// Module ID: 14745
-// Function ID: 14746
+// Module ID: 14743
+// Function ID: 14744
 // Name: QuestDockBountyBody
-// Dependencies: [19, 5756, 21, 14713, 14631, 14621, 14628, 10711, 1115, 10736, 7137, 7142, 7152, 5763, 7141, 5759, 14539, 14541, 10719, 14731, 10701, 14746, 7363, 12479, 2]
+// Dependencies: [19, 5756, 21, 14711, 14631, 14621, 14628, 10711, 1115, 10736, 7137, 7142, 7152, 5763, 7141, 5759, 14539, 14541, 10719, 14729, 10701, 14744, 7363, 12479, 2]
 
-// Module 14745 (QuestDockBountyBody)
+// Module 14743 (QuestDockBountyBody)
 import util from "util" /* 1115 */;
 import QuestTypes from "QuestTypes" /* 5759 */;
 import AdCreativeType from "AdCreativeType" /* 5763 */;

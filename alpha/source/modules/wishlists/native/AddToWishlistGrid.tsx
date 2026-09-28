@@ -1,12 +1,12 @@
-// Module ID: 12668
-// Function ID: 12669
+// Module ID: 12685
+// Function ID: 12686
 // Name: AddToWishlistGrid
-// Dependencies: [19, 17, 6629, 21, 4836, 12667, 12669, 2]
+// Dependencies: [19, 17, 6629, 21, 4836, 12684, 12686, 2]
 // Exports: default
 
-// Module 12668 (AddToWishlistGrid)
-import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 12667 */;
-import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 12669 */;
+// Module 12685 (AddToWishlistGrid)
+import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 12684 */;
+import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 12686 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

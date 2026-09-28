@@ -1,10 +1,10 @@
-// Module ID: 13668
-// Function ID: 13669
+// Module ID: 13667
+// Function ID: 13668
 // Name: NitroWheel
 // Dependencies: [19, 21, 5899, 8661, 2]
 // Exports: default
 
-// Module 13668 (NitroWheel)
+// Module 13667 (NitroWheel)
 import FastImageDefault from "FastImage" /* 5899 */;
 import _modDef8661 from "module_8661" /* 8661 */;
 import noop from "module_19" /* 19 */;

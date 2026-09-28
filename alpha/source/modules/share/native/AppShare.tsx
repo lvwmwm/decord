@@ -1,16 +1,16 @@
-// Module ID: 17748
-// Function ID: 17749
+// Module ID: 17752
+// Function ID: 17753
 // Name: AppShare
-// Dependencies: [32, 19, 17, 6880, 13888, 502, 1074, 11907, 21, 504, 6010, 1364, 13927, 11910, 6895, 1241, 5298, 14116, 13445, 1610, 7810, 6460, 16727, 16780, 5209, 2]
+// Dependencies: [32, 19, 17, 6880, 13887, 502, 1074, 11907, 21, 504, 6010, 1364, 13926, 11910, 6895, 1241, 5298, 14115, 13444, 1610, 7810, 6460, 16731, 16784, 5209, 2]
 // Exports: default
 
-// Module 17748 (AppShare)
+// Module 17752 (AppShare)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useMountEffectDefault from "useMountEffect" /* 5298 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6010 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6895 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 13927 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 13926 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -21,7 +21,7 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ BackHandler: hasOwnProperty, NativeModules: metroRequire } = get_ActivityIndicator);
 const AnalyticsTrackingStore = fn(6880);
-const ShareStore = fn(13888);
+const ShareStore = fn(13887);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let closure_9 = fn(11907).MultiAccountSwitchLocation;
 const jsxProd = fn(21);
@@ -106,7 +106,7 @@ export default function AppShare(targetUserId) {
   const obj3 = { appEntryKey: share, children: null };
   if (first) {
     const obj4 = { appEntryKey: tmp18, sharedContent: targetUserId, onClose: null };
-    const tmp14Result = tmp14(13445);
+    const tmp14Result = tmp14(13444);
     if (tmp9Result.isMetaQuest()) {
       exitApp = tmp14(7810).close;
     } else {
@@ -118,8 +118,8 @@ export default function AppShare(targetUserId) {
   } else {
     const items5 = [tmp19(tmp9(6460).SceneLoadingIndicator, {}), , , ];
     const obj5 = { appEntryKey: tmp18 };
-    items5[1] = tmp19(tmp9(16727).ActionSheetContainer, obj5);
-    items5[2] = tmp19(tmp14(16780), {});
+    items5[1] = tmp19(tmp9(16731).ActionSheetContainer, obj5);
+    items5[2] = tmp19(tmp14(16784), {});
     items5[3] = tmp19(tmp9(5209).AlertModalContainer, {});
     obj3.children = items5;
     return closure_11(tmp17, obj3);

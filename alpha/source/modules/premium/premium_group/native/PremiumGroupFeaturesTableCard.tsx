@@ -1,10 +1,10 @@
-// Module ID: 13025
-// Function ID: 13026
+// Module ID: 13024
+// Function ID: 13025
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 6852, 21, 4836, 576, 4832, 1115, 13026, 1177, 5293, 4683, 8684, 2]
+// Dependencies: [17, 6852, 21, 4836, 576, 4832, 1115, 13025, 1177, 5293, 4683, 8684, 2]
 // Exports: default
 
-// Module 13025 (PremiumGroupFeaturesTableCard)
+// Module 13024 (PremiumGroupFeaturesTableCard)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1177 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ColorConstants from "ColorConstants" /* 6852 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13026 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13025 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4836 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 17477
-// Function ID: 17478
+// Module ID: 17481
+// Function ID: 17482
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9049, 2045, 4467, 4479, 1372, 7479, 1074, 21, 4531, 576, 17466, 504, 4989, 1115, 17467, 4800, 8729, 1981, 9048, 17464, 4832, 5279, 5999, 5917, 2]
+// Dependencies: [19, 17, 9049, 2045, 4467, 4479, 1372, 7479, 1074, 21, 4531, 576, 17470, 504, 4989, 1115, 17471, 4800, 8729, 1981, 9048, 17468, 4832, 5279, 5999, 5917, 2]
 // Exports: default
 
-// Module 17477 (ChannelSetupScreen)
+// Module 17481 (ChannelSetupScreen)
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;

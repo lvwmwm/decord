@@ -1,14 +1,14 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17374
+// Function ID: 17375
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 2067, 4469, 1372, 1074, 2024, 21, 1115, 17371, 8678, 13065, 4836, 576, 1613, 504, 8952, 17373, 6460, 4728, 4832, 4731, 5281, 17374, 8053, 5279, 5999, 5917, 5409, 9636, 1177, 4988, 5924, 17380, 2]
+// Dependencies: [19, 17, 2067, 4469, 1372, 1074, 2024, 21, 1115, 17375, 8678, 13064, 4836, 576, 1613, 504, 8952, 17377, 6460, 4728, 4832, 4731, 5281, 17378, 8053, 5279, 5999, 5917, 5409, 9636, 1177, 4988, 5924, 17384, 2]
 
-// Module 17370 (GuildSettingsModalStickers)
+// Module 17374 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 576 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 4728 */;
 import TableRow from "TableRow" /* 5917 */;
 import TableRowGroup from "TableRowGroup" /* 5999 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 17374 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 17378 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
@@ -32,7 +32,7 @@ let items = [obj, , , ];
 let obj2 = { tier: BoostedGuildTiers.TIER_1, title: null, IconComponent: null };
 let intl2 = fn(1115).intl;
 obj2.title = intl2.string(fn(1115).t.nzXtaS);
-obj2.IconComponent = fn(17371).BoostGemOutlineIcon;
+obj2.IconComponent = fn(17375).BoostGemOutlineIcon;
 items[1] = obj2;
 let obj3 = { tier: BoostedGuildTiers.TIER_2, title: null, IconComponent: null };
 let intl3 = fn(1115).intl;
@@ -42,7 +42,7 @@ items[2] = obj3;
 let obj4 = { tier: BoostedGuildTiers.TIER_3, title: null, IconComponent: null };
 const intl4 = fn(1115).intl;
 obj4.title = intl4.string(fn(1115).t.BfF6ED);
-obj4.IconComponent = fn(13065).BoostTier3Icon;
+obj4.IconComponent = fn(13064).BoostTier3Icon;
 items[3] = obj4;
 const createStyles = fn(4836);
 let closure_15 = createStyles.createStyles((arg0) => {

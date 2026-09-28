@@ -1,10 +1,10 @@
-// Module ID: 17611
-// Function ID: 17612
+// Module ID: 17615
+// Function ID: 17616
 // Name: GuildRoleSubscriptionTierTemplateUtils
 // Dependencies: [1095, 5392, 5412, 5410, 5400, 5399, 5407, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 17611 (GuildRoleSubscriptionTierTemplateUtils)
+// Module 17615 (GuildRoleSubscriptionTierTemplateUtils)
 import ChannelTypes from "ChannelTypes" /* 1095 */;
 import size from "module_2" /* 2 */;
 

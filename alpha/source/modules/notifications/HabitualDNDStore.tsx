@@ -1,9 +1,9 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13265
+// Function ID: 13266
 // Name: HabitualDNDStore
 // Dependencies: [5591, 1074, 1091, 2021, 573, 504, 2]
 
-// Module 13266 (HabitualDNDStore)
+// Module 13265 (HabitualDNDStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;

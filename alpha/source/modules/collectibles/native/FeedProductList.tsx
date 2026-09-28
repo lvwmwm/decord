@@ -1,11 +1,11 @@
-// Module ID: 15443
-// Function ID: 15444
+// Module ID: 15441
+// Function ID: 15442
 // Name: FeedProductList
-// Dependencies: [19, 17, 21, 4836, 8226, 15444, 8337, 15445, 2]
+// Dependencies: [19, 17, 21, 4836, 8226, 15442, 8337, 15443, 2]
 // Exports: default
 
-// Module 15443 (FeedProductList)
-import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 15445 */;
+// Module 15441 (FeedProductList)
+import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 15443 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -13,7 +13,7 @@ function SkeletonGrid(accessibilityLabel) {
   const loadingCardsNum = accessibilityLabel.loadingCardsNum;
   num = undefined;
   const tmp = closure_5();
-  const cardLayout = num(15444).useCardLayout();
+  const cardLayout = num(15442).useCardLayout();
   ({ columns, cardWidth: num } = cardLayout);
   const items = [];
   for (let num = 0; num < loadingCardsNum; num = num + columns) {

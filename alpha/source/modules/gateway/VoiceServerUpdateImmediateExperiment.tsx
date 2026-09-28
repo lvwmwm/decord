@@ -1,10 +1,10 @@
-// Module ID: 13189
-// Function ID: 13190
+// Module ID: 13188
+// Function ID: 13189
 // Name: VoiceServerUpdateImmediateExperiment
 // Dependencies: [1435, 2]
 // Exports: isVoiceServerUpdateImmediateEnabled
 
-// Module 13189 (VoiceServerUpdateImmediateExperiment)
+// Module 13188 (VoiceServerUpdateImmediateExperiment)
 import ApexExperiment from "ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 

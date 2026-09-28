@@ -1,10 +1,10 @@
-// Module ID: 16431
-// Function ID: 16432
+// Module ID: 16435
+// Function ID: 16436
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 7301, 7289, 1074, 21, 3, 4836, 576, 5016, 15637, 4695, 4566, 5298, 4767, 6459, 4701, 11020, 1110, 15633, 7715, 15645, 12305, 4693, 4692, 5276, 1486, 16177, 15638, 15643, 15640, 6073, 16432, 16433, 16172, 5437, 6577, 16434, 2]
+// Dependencies: [32, 19, 17, 7301, 7289, 1074, 21, 3, 4836, 576, 5016, 15635, 4695, 4566, 5298, 4767, 6459, 4701, 11020, 1110, 15631, 7715, 15643, 12305, 4693, 4692, 5276, 1486, 16173, 15636, 15641, 15638, 6073, 16436, 16437, 16168, 5437, 6577, 16438, 2]
 // Exports: default
 
-// Module 16431 (SwipeForMemberListWrapper)
+// Module 16435 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 4693 */;
 import useChatLayout from "useChatLayout" /* 4695 */;
 import ChatInputUtils from "ChatInputUtils" /* 4701 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5016 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 15645 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 15643 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

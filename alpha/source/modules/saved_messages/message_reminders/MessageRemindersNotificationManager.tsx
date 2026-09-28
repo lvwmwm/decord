@@ -1,9 +1,9 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17251
+// Function ID: 17252
 // Name: MessageRemindersNotificationManager
 // Dependencies: [11155, 7275, 573, 1091, 6539, 2]
 
-// Module 17247 (MessageRemindersNotificationManager)
+// Module 17251 (MessageRemindersNotificationManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 11155 */;

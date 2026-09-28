@@ -87,7 +87,7 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
                 const tmpResult23 = tmp(4692);
               }
               if (tmp15) {
-                const obj10 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "flex" };
+                const obj10 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "a" };
                 tmp(4692).navigateToChannel(obj10);
                 const tmpResult24 = tmp(4692);
               }

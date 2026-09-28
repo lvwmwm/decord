@@ -1,9 +1,9 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15365
+// Function ID: 15366
 // Name: DesignSystemsButtonGroupSetting
-// Dependencies: [7417, 1074, 11006, 15368, 2]
+// Dependencies: [7417, 1074, 11006, 15366, 2]
 
-// Module 15367 (DesignSystemsButtonGroupSetting)
+// Module 15365 (DesignSystemsButtonGroupSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

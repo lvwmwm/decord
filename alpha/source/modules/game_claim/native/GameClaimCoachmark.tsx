@@ -1,23 +1,23 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15822
+// Function ID: 15823
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1074, 2042, 21, 576, 15825, 9578, 5286, 4836, 15826, 8384, 1115, 5919, 5435, 5992, 4832, 5281, 8037, 6735, 6739, 2]
+// Dependencies: [5, 19, 17, 1074, 2042, 21, 576, 15823, 9578, 5286, 4836, 15824, 8384, 1115, 5919, 5435, 5992, 4832, 5281, 8037, 6735, 6739, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 15824 (GameClaimCoachmark)
+// Module 15822 (GameClaimCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ButtonConstants from "ButtonConstants" /* 5286 */;
 import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 8384 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9578 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 15825 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 15826 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 15823 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 15824 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const GameClaimCardStackDefault = tmp5(15825);
+const GameClaimCardStackDefault = tmp5(15823);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);

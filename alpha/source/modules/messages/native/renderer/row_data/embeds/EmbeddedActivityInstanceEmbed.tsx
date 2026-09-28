@@ -1,10 +1,10 @@
-// Module ID: 12799
-// Function ID: 12800
+// Module ID: 12798
+// Function ID: 12799
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [2044, 5063, 502, 2045, 4876, 1372, 10851, 11421, 1115, 11422, 12790, 12800, 11423, 11424, 6584, 11614, 2]
+// Dependencies: [2044, 5063, 502, 2045, 4876, 1372, 10851, 11421, 1115, 11422, 12789, 12799, 11423, 11424, 6584, 11614, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 12799 (EmbeddedActivityInstanceEmbed)
+// Module 12798 (EmbeddedActivityInstanceEmbed)
 import ContentClassificationVisibility from "ContentClassificationVisibility" /* 11421 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
@@ -48,7 +48,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           const found = embeddedActivitiesForChannelIncludingHidden.find((applicationId) => applicationId.applicationId === id.id);
           const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
           const obj = { activity: found, applicationId: application.id, guildId: channel.guild_id, channelId: channel_id };
-          const embeddedActivityParticipantAvatarUris = tmp5(12790).getEmbeddedActivityParticipantAvatarUris(obj);
+          const embeddedActivityParticipantAvatarUris = tmp5(12789).getEmbeddedActivityParticipantAvatarUris(obj);
           id = application.id;
           value = undefined;
           if (found != null) {
@@ -65,7 +65,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             }
             stringResult = details;
           }
-          tmp5(12800);
+          tmp5(12799);
           const obj3 = { embeddedActivity: found, currentEmbeddedActivity, channel };
           if (null != found) {
             if (stringResult == null) {
@@ -92,7 +92,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             combined = null;
           }
           obj8 = PresenceStore;
-          const tmp5Result = tmp5(12790);
+          const tmp5Result = tmp5(12789);
           const playInContext = tmp5(11423).getPlayInContext(application.id, channel_id);
           let isCurrentlyInInstance = playInContext.isCurrentlyInInstance;
           let appIconSrc = null;

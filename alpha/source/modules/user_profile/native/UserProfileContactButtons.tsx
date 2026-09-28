@@ -1,10 +1,10 @@
-// Module ID: 12696
-// Function ID: 12697
+// Module ID: 12695
+// Function ID: 12696
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 4479, 1074, 21, 4836, 576, 5281, 6583, 7635, 12619, 504, 4678, 12697, 4769, 1115, 12117, 9195, 10787, 4800, 5039, 4849, 12699, 7363, 5385, 7305, 12700, 2]
+// Dependencies: [19, 17, 4479, 1074, 21, 4836, 576, 5281, 6583, 7635, 12637, 504, 4678, 12696, 4769, 1115, 12117, 9195, 10787, 4800, 5039, 4849, 12698, 7363, 5385, 7305, 12699, 2]
 // Exports: default
 
-// Module 12696 (UserProfileContactButtons)
+// Module 12695 (UserProfileContactButtons)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4849 */;
@@ -13,7 +13,7 @@ import components_Button_Button from "components/Button/Button" /* 5281 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9195 */;
 import navigateToLastChannelDefault from "navigateToLastChannel" /* 10787 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12117 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 12700 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 12699 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4479 */;
 
@@ -49,8 +49,8 @@ function FriendRequestButton(user) {
   dependencyMap = { location: newestAnalyticsLocation };
   let obj = user(7635);
   const tmp = trackUserProfileAction;
-  const gameFriendsForUser = user(12619).useGameFriendsForUser(user.id);
-  const tmp3Result = user(12619);
+  const gameFriendsForUser = user(12637).useGameFriendsForUser(user.id);
+  const tmp3Result = user(12637);
   const items = [userDisplayName];
   stateFromStores = user(504).useStateFromStores(items, () => RelationshipStore.getRelationshipType(user.id));
   const tmp3Result2 = user(504);
@@ -63,7 +63,7 @@ function FriendRequestButton(user) {
         return null;
       } else {
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
-          let UserPlusIcon = tmp3(12697).UserClockIcon;
+          let UserPlusIcon = tmp3(12696).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(4769).UserPlusIcon;
         }

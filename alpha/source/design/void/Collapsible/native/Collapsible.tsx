@@ -1,10 +1,10 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13638
+// Function ID: 13639
 // Name: Collapsible
 // Dependencies: [32, 19, 17, 21, 4836, 576, 4566, 5280, 2]
 // Exports: default
 
-// Module 13639 (Collapsible)
+// Module 13638 (Collapsible)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5280 */;
 import _slicedToArray from "module_32" /* 32 */;

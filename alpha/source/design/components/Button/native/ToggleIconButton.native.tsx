@@ -1,11 +1,11 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 13977
+// Function ID: 13978
 // Name: ToggleIconButton
-// Dependencies: [19, 21, 13977, 7364, 2]
+// Dependencies: [19, 21, 13976, 7364, 2]
 
-// Module 13978 (ToggleIconButton)
+// Module 13977 (ToggleIconButton)
 import BaseIconButton from "BaseIconButton" /* 7364 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 13977 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 13976 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

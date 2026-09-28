@@ -1,10 +1,10 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14906
+// Function ID: 14907
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4836, 576, 1380, 1115, 3717, 1485, 1486, 504, 4488, 6583, 1241, 11453, 1393, 4955, 4800, 14909, 1981, 14910, 7612, 7609, 6405, 4735, 14163, 8695, 11462, 4988, 4832, 14911, 5999, 5917, 2111, 5279, 5281, 8295, 7371, 14956, 9425, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4836, 576, 1380, 1115, 3717, 1485, 1486, 504, 4488, 6583, 1241, 11453, 1393, 4955, 4800, 14907, 1981, 14908, 7612, 7609, 6405, 4735, 14162, 8695, 11462, 4988, 4832, 14909, 5999, 5917, 2111, 5279, 5281, 8295, 7371, 14954, 9425, 2]
 // Exports: default
 
-// Module 14908 (CustomTypingIndicatorEditScreen)
+// Module 14906 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import user from "user" /* 1380 */;
@@ -109,10 +109,10 @@ export default function CustomTypingIndicatorEditScreen() {
   }, []);
   const items5 = [memo, first3];
   const callback1 = first1.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14909, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", { initialValue: first2, onChange });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14907, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", { initialValue: first2, onChange });
   }, items4);
   const callback2 = first1.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14910, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", { emojis: memo, initialAnimation: first3, onChange: onChange2 });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14908, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", { emojis: memo, initialAnimation: first3, onChange: onChange2 });
   }, items5);
   first1.useRef(null);
   const callback3 = first1.useCallback(() => {

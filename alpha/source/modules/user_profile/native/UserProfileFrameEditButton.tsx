@@ -1,10 +1,10 @@
-// Module ID: 14188
-// Function ID: 14189
+// Module ID: 14187
+// Function ID: 14188
 // Name: UserProfileFrameEditButton
-// Dependencies: [32, 19, 17, 6629, 2042, 1085, 21, 576, 4836, 6806, 2029, 7611, 10508, 1974, 4800, 14189, 1981, 1115, 14176, 5889, 8285, 1177, 12746, 2]
+// Dependencies: [32, 19, 17, 6629, 2042, 1085, 21, 576, 4836, 6806, 2029, 7611, 10508, 1974, 4800, 14188, 1981, 1115, 14175, 5889, 8285, 1177, 12745, 2]
 // Exports: default
 
-// Module 14188 (UserProfileFrameEditButton)
+// Module 14187 (UserProfileFrameEditButton)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
@@ -80,7 +80,7 @@ export default function UserProfileFrameEditButton(arg0) {
   const items1 = [userProfileFrame, guildId, user, tmp4[1]];
   let name;
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14189, dependencyMap.paths), "Profile Frame", { user, currentProfileFrame: userProfileFrame, guildId });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14188, dependencyMap.paths), "Profile Frame", { user, currentProfileFrame: userProfileFrame, guildId });
     closure_2(ContentDismissActionType.TAKE_ACTION);
   }, items1);
   if (product != null) {
@@ -113,7 +113,7 @@ export default function UserProfileFrameEditButton(arg0) {
     const intl3 = tmp2(1115).intl;
     obj6.label = intl3.string(tmp2(1115).t.GWrZOd);
     const obj7 = { showNewBadge: tmp4[0] === tmp2(2029).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE };
-    obj6.labelTrailing = tmp18(tmp2(14176).UserProfileEditFormLabelBadges, obj7);
+    obj6.labelTrailing = tmp18(tmp2(14175).UserProfileEditFormLabelBadges, obj7);
     obj6.buttonText = formatToPlainStringResult;
     const obj8 = { text: formatToPlainStringResult };
     obj6.accessibilityValue = obj8;
@@ -125,10 +125,10 @@ export default function UserProfileFrameEditButton(arg0) {
       let tmp18Result = tmp18(View, obj9);
       const tmp23 = guildId(8285);
     } else {
-      const obj11 = { source: guildId(12746), style: tmp.noneIcon };
+      const obj11 = { source: guildId(12745), style: tmp.noneIcon };
       tmp18Result = tmp18(tmp2(1177).Icon, obj11);
     }
     obj6.leading = tmp18Result;
   }
-  return jsx(user(14176).UserProfileEditFormButton, obj6);
+  return jsx(user(14175).UserProfileEditFormButton, obj6);
 };

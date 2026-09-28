@@ -1,10 +1,10 @@
-// Module ID: 14086
-// Function ID: 14087
+// Module ID: 14085
+// Function ID: 14086
 // Name: voiceSettingsEventHandlers
-// Dependencies: [14087, 8774, 2]
+// Dependencies: [14086, 8774, 2]
 
-// Module 14086 (voiceSettingsEventHandlers)
-import VoiceSettingsEventsFactory from "VoiceSettingsEventsFactory" /* 14087 */;
+// Module 14085 (voiceSettingsEventHandlers)
+import VoiceSettingsEventsFactory from "VoiceSettingsEventsFactory" /* 14086 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rpc/native/events/voiceSettingsEventHandlers.tsx");

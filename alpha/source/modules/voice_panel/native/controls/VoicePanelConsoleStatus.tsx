@@ -1,10 +1,10 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17003
+// Function ID: 17004
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 11755, 11758, 11753, 21, 4836, 576, 11754, 16993, 4566, 4540, 17000, 16998, 5280, 5901, 1177, 4832, 5435, 9243, 1115, 17001, 2]
+// Dependencies: [19, 11755, 11758, 11753, 21, 4836, 576, 11754, 16997, 4566, 4540, 17004, 17002, 5280, 5901, 1177, 4832, 5435, 9243, 1115, 17005, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 16999 (VoicePanelConsoleStatus)
+// Module 17003 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4540 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;

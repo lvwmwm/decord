@@ -1,19 +1,19 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 16946
+// Function ID: 16947
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 16940, 11753, 2042, 21, 16943, 16877, 8963, 11754, 4566, 6806, 16914, 1115, 2029, 16945, 10589, 2]
+// Dependencies: [32, 19, 16944, 11753, 2042, 21, 16947, 16881, 8963, 11754, 4566, 6806, 16918, 1115, 2029, 16949, 10589, 2]
 // Exports: default
 
-// Module 16942 (useSpeakerTooltips)
+// Module 16946 (useSpeakerTooltips)
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2029 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 16945 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 16949 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ConsoleVoiceUpsellStore = fn(16940);
+const ConsoleVoiceUpsellStore = fn(16944);
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
 let VoicePanelControlsModes = fn(11753).VoicePanelControlsModes;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;

@@ -1,9 +1,9 @@
-// Module ID: 14721
-// Function ID: 14722
+// Module ID: 14719
+// Function ID: 14720
 // Name: QuestDockEnrolledHeader
 // Dependencies: [32, 19, 17, 21, 4836, 14631, 10681, 10750, 5759, 14662, 4832, 2]
 
-// Module 14721 (QuestDockEnrolledHeader)
+// Module 14719 (QuestDockEnrolledHeader)
 import Text_Text from "Text/Text" /* 4832 */;
 import QuestTypes from "QuestTypes" /* 5759 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10681 */;

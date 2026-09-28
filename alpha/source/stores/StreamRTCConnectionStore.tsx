@@ -1,7 +1,7 @@
 // Module ID: 4875
 // Function ID: 4876
 // Name: StreamRTCConnectionStore
-// Dependencies: [2000, 502, 1993, 4876, 4859, 1074, 4878, 38, 4880, 12, 4888, 7157, 573, 4891, 1364, 504, 13346, 2]
+// Dependencies: [2000, 502, 1993, 4876, 4859, 1074, 4878, 38, 4880, 12, 4888, 7157, 573, 4891, 1364, 504, 13345, 2]
 
 // Module 4875 (StreamRTCConnectionStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -10,7 +10,7 @@ import initializeDefault from "initialize" /* 504 */;
 import StreamRTCConnectionDefault from "StreamRTCConnection" /* 4880 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4891 */;
-import canSpectateDefault from "canSpectate" /* 13346 */;
+import canSpectateDefault from "canSpectate" /* 13345 */;
 import RunningGameStore from "RunningGameStore" /* 2000 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1993 */;

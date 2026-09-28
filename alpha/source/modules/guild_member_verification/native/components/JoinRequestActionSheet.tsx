@@ -1,9 +1,9 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16230
+// Function ID: 16231
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4825, 1386, 1372, 1074, 21, 4836, 504, 7631, 7615, 4566, 7673, 4767, 6605, 4531, 576, 1092, 7675, 5855, 2097, 7632, 6571, 1177, 7678, 1115, 4540, 6045, 16235, 6575, 2]
+// Dependencies: [19, 17, 4825, 1386, 1372, 1074, 21, 4836, 504, 7631, 7615, 4566, 7673, 4767, 6605, 4531, 576, 1092, 7675, 5855, 2097, 7632, 6571, 1177, 7678, 1115, 4540, 6045, 16231, 6575, 2]
 
-// Module 16234 (JoinRequestActionSheet)
+// Module 16230 (JoinRequestActionSheet)
 import isChangelogUserDefault from "isChangelogUser" /* 2097 */;
 import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5855 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7632 */;

@@ -1,15 +1,15 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 17636
+// Function ID: 17637
 // Name: FriendOnlineTimer
-// Dependencies: [5, 5591, 17633, 1074, 1085, 1091, 1271, 1231, 573, 6539, 2021, 2]
+// Dependencies: [5, 5591, 17637, 1074, 1085, 1091, 1271, 1231, 573, 6539, 2021, 2]
 
-// Module 17632 (FriendOnlineTimer)
+// Module 17636 (FriendOnlineTimer)
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5591 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 17633 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 17637 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
 require = fn;

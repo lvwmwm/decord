@@ -1,10 +1,10 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15908
+// Function ID: 15909
 // Name: FavoritesGuildChannelList
 // Dependencies: [32, 19, 2044, 5589, 6946, 5818, 4471, 2049, 6538, 2045, 6947, 4469, 4851, 2099, 5017, 2048, 4468, 2058, 6954, 1085, 6948, 1186, 6732, 9685, 12, 1370, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 15910 (FavoritesGuildChannelList)
+// Module 15908 (FavoritesGuildChannelList)
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 6732 */;
 import ChannelListState from "ChannelListState" /* 6948 */;

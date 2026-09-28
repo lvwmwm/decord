@@ -1,9 +1,9 @@
-// Module ID: 15124
-// Function ID: 15125
+// Module ID: 15122
+// Function ID: 15123
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 5589, 21, 4800, 4528, 4787, 1115, 504, 2021, 15125, 6618, 6570, 5999, 5917, 15093, 15128, 15126, 9593, 5889, 15129, 4797, 11006, 2]
+// Dependencies: [5, 32, 19, 5589, 21, 4800, 4528, 4787, 1115, 504, 2021, 15123, 6618, 6570, 5999, 5917, 15091, 15126, 15124, 9593, 5889, 15127, 4797, 11006, 2]
 
-// Module 15124 (CacheActionsSetting)
+// Module 15122 (CacheActionsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
@@ -15,11 +15,11 @@ import TableRow from "TableRow" /* 5917 */;
 import TableRowGroup from "TableRowGroup" /* 5999 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6570 */;
 import ActionSheet from "ActionSheet" /* 6618 */;
-import FileUpIcon from "FileUpIcon" /* 15093 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15125 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15126 */;
-import CacheActionCreators from "CacheActionCreators" /* 15128 */;
-import FileWarningIcon from "FileWarningIcon" /* 15129 */;
+import FileUpIcon from "FileUpIcon" /* 15091 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15123 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15124 */;
+import CacheActionCreators from "CacheActionCreators" /* 15126 */;
+import FileWarningIcon from "FileWarningIcon" /* 15127 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
@@ -212,7 +212,7 @@ const pressable = SettingBuilders.createPressable({
     return intl.string(util.t.ZVZVwR);
   },
   parent: null,
-  IconComponent: fn(15129).FileWarningIcon,
+  IconComponent: fn(15127).FileWarningIcon,
   onPress: function handleCacheActionsPress() {
     ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: CacheActionsActionSheet }), CacheActionsActionSheet);
   },

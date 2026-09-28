@@ -1,9 +1,9 @@
-// Module ID: 14386
-// Function ID: 14387
+// Module ID: 14385
+// Function ID: 14386
 // Name: IOSConversationSuggestionsSetting
 // Dependencies: [19, 17, 7417, 1243, 1248, 4452, 1364, 3, 11006, 1115, 2]
 
-// Module 14386 (IOSConversationSuggestionsSetting)
+// Module 14385 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;

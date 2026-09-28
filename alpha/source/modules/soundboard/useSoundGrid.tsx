@@ -1,14 +1,14 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 16886
+// Function ID: 16887
 // Name: useSoundGrid
-// Dependencies: [32, 19, 2045, 2067, 4469, 2099, 1372, 5319, 5321, 1374, 5328, 4728, 16883, 504, 4488, 5324, 16884, 8952, 16885, 5298, 16886, 2]
+// Dependencies: [32, 19, 2045, 2067, 4469, 2099, 1372, 5319, 5321, 1374, 5328, 4728, 16887, 504, 4488, 5324, 16888, 8952, 16889, 5298, 16890, 2]
 // Exports: default, useSearchCategories
 
-// Module 16882 (useSoundGrid)
+// Module 16886 (useSoundGrid)
 import SoundboardTypes from "SoundboardTypes" /* 5328 */;
 import useManageResourcePermissions from "useManageResourcePermissions" /* 8952 */;
-import useSoundOrganizer from "useSoundOrganizer" /* 16883 */;
-import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 16886 */;
+import useSoundOrganizer from "useSoundOrganizer" /* 16887 */;
+import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 16890 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -321,7 +321,7 @@ export default function useSoundGrid(guild_id) {
         const obj11 = { key: tmp13(5328).SoundboardSoundGridSectionType.DEFAULTS, categoryInfo: null, items: null };
         const obj12 = { type: tmp13(5328).SoundboardSoundGridSectionType.DEFAULTS };
         obj11.categoryInfo = obj12;
-        const sortSoundsOldestToNewestCreationDate2 = tmp13(16883).sortSoundsOldestToNewestCreationDate;
+        const sortSoundsOldestToNewestCreationDate2 = tmp13(16887).sortSoundsOldestToNewestCreationDate;
         let result1 = value7;
         if (null != sortSoundsOldestToNewestCreationDate2) {
           result1 = sortSoundsOldestToNewestCreationDate2(value7);
@@ -375,7 +375,7 @@ export default function useSoundGrid(guild_id) {
         const obj14 = { key: tmp13(5328).SoundboardSoundGridSectionType.DEFAULTS, categoryInfo: null, items: null };
         const obj15 = { type: tmp13(5328).SoundboardSoundGridSectionType.DEFAULTS };
         obj14.categoryInfo = obj15;
-        const sortSoundsOldestToNewestCreationDate3 = tmp13(16883).sortSoundsOldestToNewestCreationDate;
+        const sortSoundsOldestToNewestCreationDate3 = tmp13(16887).sortSoundsOldestToNewestCreationDate;
         let result2 = value8;
         if (null != sortSoundsOldestToNewestCreationDate3) {
           result2 = sortSoundsOldestToNewestCreationDate3(value8);

@@ -1,9 +1,9 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17108
+// Function ID: 17109
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2112, 4850, 6539, 7539, 17105, 573, 11, 17107, 2]
+// Dependencies: [5, 32, 2112, 4850, 6539, 7539, 17109, 573, 11, 17111, 2]
 
-// Module 17104 (ChangelogManager)
+// Module 17108 (ChangelogManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2112 */;

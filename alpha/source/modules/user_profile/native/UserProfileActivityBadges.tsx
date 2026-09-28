@@ -1,14 +1,14 @@
-// Module ID: 12561
-// Function ID: 12562
+// Module ID: 12579
+// Function ID: 12580
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 1074, 21, 4836, 12456, 7158, 5374, 10342, 9366, 8535, 12562, 12563, 576, 12564, 7592, 5403, 4832, 11148, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 12456, 7158, 5374, 10342, 9366, 8535, 12580, 12581, 576, 12582, 7592, 5403, 4832, 11148, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 12561 (UserProfileActivityBadges)
+// Module 12579 (UserProfileActivityBadges)
 import nativeDefault from "native" /* 576 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7158 */;
 import utils from "utils" /* 7592 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12563 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12581 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -75,7 +75,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
       const obj5 = { start, end, isCountDown: flag };
       obj4.entry = obj5;
       obj4.style = tmp.bold;
-      items[1] = hasOwnProperty(tmp2(12564).ActiveTimestamp, obj4);
+      items[1] = hasOwnProperty(tmp2(12582).ActiveTimestamp, obj4);
       obj2.children = items;
       return timestampProducer(View, obj2);
     }

@@ -1,9 +1,9 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15070
+// Function ID: 15071
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [9540, 7417, 1074, 504, 1115, 11006, 15073, 2]
+// Dependencies: [9540, 7417, 1074, 504, 1115, 11006, 15071, 2]
 
-// Module 15072 (CommunityActivityAlertsSetting)
+// Module 15070 (CommunityActivityAlertsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 9540 */;

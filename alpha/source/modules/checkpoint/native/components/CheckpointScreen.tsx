@@ -1,10 +1,10 @@
-// Module ID: 15262
-// Function ID: 15263
+// Module ID: 15260
+// Function ID: 15261
 // Name: CheckpointScreen
 // Dependencies: [19, 17, 5061, 21, 576, 4836, 6402, 2]
 // Exports: default
 
-// Module 15262 (CheckpointScreen)
+// Module 15260 (CheckpointScreen)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

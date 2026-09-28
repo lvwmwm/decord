@@ -1,10 +1,10 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12612
+// Function ID: 12613
 // Name: VoicePanelStreamPreview
 // Dependencies: [19, 17, 4858, 502, 21, 4566, 5281, 4836, 576, 9522, 504, 4888, 4837, 6494, 4832, 1115, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 12594 (VoicePanelStreamPreview)
+// Module 12612 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4837 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4888 */;

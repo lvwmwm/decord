@@ -1,10 +1,10 @@
-// Module ID: 16542
-// Function ID: 16543
+// Module ID: 16546
+// Function ID: 16547
 // Name: SearchTabsGradient
 // Dependencies: [19, 21, 4531, 576, 4683, 12275, 2]
 // Exports: default
 
-// Module 16542 (SearchTabsGradient)
+// Module 16546 (SearchTabsGradient)
 import nativeDefault from "native" /* 576 */;
 import ColorUtils from "ColorUtils" /* 4683 */;
 import TabsGradientDefault from "TabsGradient" /* 12275 */;

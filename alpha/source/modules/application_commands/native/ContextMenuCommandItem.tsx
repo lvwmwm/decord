@@ -1,10 +1,10 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16692
+// Function ID: 16693
 // Name: ContextMenuCommandItem
 // Dependencies: [19, 17, 21, 4836, 576, 5917, 12, 1115, 11713, 5899, 1979, 4777, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 16688 (ContextMenuCommandItem)
+// Module 16692 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;

@@ -1,9 +1,9 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15857
+// Function ID: 15858
 // Name: TextChannel
-// Dependencies: [19, 17, 2044, 2100, 2045, 4469, 4851, 5017, 9577, 21, 4836, 576, 15751, 5389, 5335, 11868, 504, 5314, 4849, 4847, 1113, 10374, 15750, 8789, 4989, 4832, 5901, 9625, 8370, 9060, 15860, 15861, 15868, 2]
+// Dependencies: [19, 17, 2044, 2100, 2045, 4469, 4851, 5017, 9577, 21, 4836, 576, 15749, 5389, 5335, 11868, 504, 5314, 4849, 4847, 1113, 10374, 15748, 8789, 4989, 4832, 5901, 9625, 8370, 9060, 15858, 15859, 15866, 2]
 
-// Module 15859 (TextChannel)
+// Module 15857 (TextChannel)
 import nativeDefault from "native" /* 576 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1113 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;

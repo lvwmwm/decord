@@ -1,15 +1,15 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15871
+// Function ID: 15872
 // Name: DMChannel
-// Dependencies: [19, 4851, 5017, 9577, 5018, 21, 4836, 576, 10374, 4847, 504, 15667, 15750, 9060, 2]
+// Dependencies: [19, 4851, 5017, 9577, 5018, 21, 4836, 576, 10374, 4847, 504, 15665, 15748, 9060, 2]
 
-// Module 15873 (DMChannel)
+// Module 15871 (DMChannel)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4847 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9060 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10374 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 15667 */;
-import ChannelItemDefault from "ChannelItem" /* 15750 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 15665 */;
+import ChannelItemDefault from "ChannelItem" /* 15748 */;
 import noop from "module_19" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 4851 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5017 */;

@@ -1,10 +1,10 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17002
+// Function ID: 17003
 // Name: useControlsHiddenPresentation
 // Dependencies: [11755, 4540, 4566, 5280, 2]
 // Exports: default
 
-// Module 16998 (useControlsHiddenPresentation)
+// Module 17002 (useControlsHiddenPresentation)
 import spring from "spring" /* 5280 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
 import size from "module_2" /* 2 */;

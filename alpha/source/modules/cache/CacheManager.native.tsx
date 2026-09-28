@@ -1,9 +1,9 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17107
+// Function ID: 17108
 // Name: CacheManager
-// Dependencies: [5589, 6896, 3, 1091, 6539, 7067, 15128, 1364, 1094, 2]
+// Dependencies: [5589, 6896, 3, 1091, 6539, 7067, 15126, 1364, 1094, 2]
 
-// Module 17103 (CacheManager)
+// Module 17107 (CacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
@@ -13,7 +13,7 @@ import GatewayConnectionStore from "GatewayConnectionStore" /* 5589 */;
 import CacheStore from "CacheStore" /* 6896 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6539 */;
 
-const CacheActionCreators = tmp(15128);
+const CacheActionCreators = tmp(15126);
 require = fn;
 let closure_5 = new LoggerDefault("CacheStore");
 let closure_6 = 15 * DurationsDefault.Millis.MINUTE;

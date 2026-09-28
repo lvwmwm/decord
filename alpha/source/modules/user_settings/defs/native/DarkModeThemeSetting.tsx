@@ -1,12 +1,12 @@
-// Module ID: 14855
-// Function ID: 14856
+// Module ID: 14853
+// Function ID: 14854
 // Name: DarkModeThemeSetting
-// Dependencies: [1182, 1185, 7417, 1074, 504, 11006, 1115, 14853, 14856, 2]
+// Dependencies: [1182, 1185, 7417, 1074, 504, 11006, 1115, 14851, 14854, 2]
 
-// Module 14855 (DarkModeThemeSetting)
+// Module 14853 (DarkModeThemeSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 14853 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 14851 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;

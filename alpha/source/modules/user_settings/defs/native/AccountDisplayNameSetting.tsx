@@ -1,9 +1,9 @@
-// Module ID: 14271
-// Function ID: 14272
+// Module ID: 14270
+// Function ID: 14271
 // Name: AccountDisplayNameSetting
-// Dependencies: [1372, 7417, 1074, 504, 11006, 1115, 14145, 2]
+// Dependencies: [1372, 7417, 1074, 504, 11006, 1115, 14144, 2]
 
-// Module 14271 (AccountDisplayNameSetting)
+// Module 14270 (AccountDisplayNameSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import UserStore from "UserStore" /* 1372 */;

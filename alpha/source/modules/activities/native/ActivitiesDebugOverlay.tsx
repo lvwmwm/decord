@@ -1,10 +1,10 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 16969
+// Function ID: 16970
 // Name: ActivitiesDebugOverlay
 // Dependencies: [19, 17, 21, 4836, 4683, 576, 8781, 1613, 4832, 2]
 // Exports: default
 
-// Module 16965 (ActivitiesDebugOverlay)
+// Module 16969 (ActivitiesDebugOverlay)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
 import Text_Text from "Text/Text" /* 4832 */;

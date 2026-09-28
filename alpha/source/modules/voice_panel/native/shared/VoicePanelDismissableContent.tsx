@@ -1,9 +1,9 @@
-// Module ID: 16919
-// Function ID: 16920
+// Module ID: 16923
+// Function ID: 16924
 // Name: VoicePanelDismissableContent
-// Dependencies: [32, 19, 4852, 11755, 4857, 21, 16920, 1981, 11754, 4566, 2029, 10088, 10089, 2]
+// Dependencies: [32, 19, 4852, 11755, 4857, 21, 16924, 1981, 11754, 4566, 2029, 10088, 10089, 2]
 
-// Module 16919 (VoicePanelDismissableContent)
+// Module 16923 (VoicePanelDismissableContent)
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -12,7 +12,7 @@ import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 
 require = fn;
 function VoiceControlsNuxActionSheetImporter() {
-  return asyncRequireImpl(16920, dependencyMap.paths);
+  return asyncRequireImpl(16924, dependencyMap.paths);
 }
 const VoicePanelModes = fn(11755).VoicePanelModes;
 const isActivityParticipant = fn(4857).isActivityParticipant;

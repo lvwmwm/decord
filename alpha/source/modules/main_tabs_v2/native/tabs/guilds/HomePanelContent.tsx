@@ -1,22 +1,22 @@
-// Module ID: 15919
-// Function ID: 15920
+// Module ID: 15917
+// Function ID: 15918
 // Name: HomePanelContent
-// Dependencies: [19, 17, 15651, 1074, 15920, 21, 4836, 15657, 15921, 4566, 10456, 5437, 15660, 7299, 4531, 576, 1365, 5275, 16000, 2]
+// Dependencies: [19, 17, 15649, 1074, 15918, 21, 4836, 15655, 15919, 4566, 10456, 5437, 15658, 7299, 4531, 576, 1365, 5275, 15998, 2]
 
-// Module 15919 (HomePanelContent)
+// Module 15917 (HomePanelContent)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import setAccessibilityFocus from "setAccessibilityFocus" /* 5275 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10456 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15657 */;
-import GuildsBarDefault from "GuildsBar" /* 15921 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15655 */;
+import GuildsBarDefault from "GuildsBar" /* 15919 */;
 import noop from "module_19" /* 19 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 15651 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 15649 */;
 
 require = fn;
 function ContentMaskGradient(offsetX) {
   offsetX = offsetX.offsetX;
-  const guildsBarPullX = offsetX(15657).useHomeDrawerState().guildsBarPullX;
-  let obj = offsetX(15657);
+  const guildsBarPullX = offsetX(15655).useHomeDrawerState().guildsBarPullX;
+  let obj = offsetX(15655);
   const fn = function n() {
     const obj = { transform: null };
     const obj2 = { translateX: roundToNearestPixelDefault(-offsetX - guildsBarPullX.get()) };
@@ -36,16 +36,16 @@ function ContentMaskGradient(offsetX) {
 }
 function HomeDrawerPanelContent() {
   const tmp2 = closure_11();
-  const drawerOpen = ref(15660).useDrawerOpen();
-  let obj = ref(15660);
-  const doesLandOnHomeDrawer = ref(15657).useDoesLandOnHomeDrawer();
+  const drawerOpen = ref(15658).useDrawerOpen();
+  let obj = ref(15658);
+  const doesLandOnHomeDrawer = ref(15655).useDoesLandOnHomeDrawer();
   ref = isClientThemeOrCustomThemeActive.useRef(null);
-  let obj2 = ref(15657);
-  const homeDrawerState = ref(15657).useHomeDrawerState();
+  let obj2 = ref(15655);
+  const homeDrawerState = ref(15655).useHomeDrawerState();
   const panelTranslateX = homeDrawerState.panelTranslateX;
   const tmp8 = HomeDrawerStore((maxX) => maxX.maxX);
   dependencyMap = tmp8;
-  let obj3 = ref(15657);
+  let obj3 = ref(15655);
   isClientThemeOrCustomThemeActive = ref(7299).useIsClientThemeOrCustomThemeActive();
   let obj4 = ref(7299);
   const token = ref(4531).useToken(panelTranslateX(576).colors.BACKGROUND_BASE_LOWEST);
@@ -101,7 +101,7 @@ function HomeDrawerPanelContent() {
     return obj4;
   };
   const obj9 = ref(4566);
-  fn2.__closure = { interpolate: ref(4566).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: ref(15657).INITIAL_OPEN_WIDTH, Extrapolation: ref(4566).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: ref(4566).interpolateColor, maxX: tmp8, baseLowest: token, panelBg: token1 };
+  fn2.__closure = { interpolate: ref(4566).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: ref(15655).INITIAL_OPEN_WIDTH, Extrapolation: ref(4566).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: ref(4566).interpolateColor, maxX: tmp8, baseLowest: token, panelBg: token1 };
   fn2.__workletHash = 380238951470;
   fn2.__initData = __initData3;
   const animatedStyle1 = obj9.useAnimatedStyle(fn2);
@@ -111,7 +111,7 @@ function HomeDrawerPanelContent() {
   const obj12 = { ref, style: null, children: null };
   let items2 = [drawerOpen ? tmp2.guildsListContainerGestured : tmp2.guildLisetContainerDefault, homeDrawerState.guildsBarDrawerStyle];
   obj12.style = items2;
-  const items3 = [closure_9(panelTranslateX(15921), { enableHome: true }), , ];
+  const items3 = [closure_9(panelTranslateX(15919), { enableHome: true }), , ];
   const obj13 = { style: null, pointerEvents: "none", collapsable: false, children: null };
   const items4 = [tmp2.contentMask, { left: GUILD_LIST_WIDTH }, animatedStyle1];
   obj13.style = items4;
@@ -124,7 +124,7 @@ function HomeDrawerPanelContent() {
   items3[1] = closure_9(panelTranslateX(4566).View, obj13);
   let tmp16Result2 = null;
   if (doesLandOnHomeDrawer) {
-    tmp16Result2 = tmp16(tmp10(16000), {});
+    tmp16Result2 = tmp16(tmp10(15998), {});
   }
   items3[2] = tmp16Result2;
   obj12.children = items3;
@@ -134,7 +134,7 @@ function HomeDrawerPanelContent() {
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const DM_WIDTH = fn(1074).DM_WIDTH;
-const GUILD_LIST_WIDTH = fn(15920).GUILD_LIST_WIDTH;
+const GUILD_LIST_WIDTH = fn(15918).GUILD_LIST_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4836);

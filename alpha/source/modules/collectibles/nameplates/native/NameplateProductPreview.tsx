@@ -1,10 +1,10 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 12711
+// Function ID: 12712
 // Name: NameplateProductPreview
 // Dependencies: [19, 17, 4825, 21, 4836, 576, 7616, 1971, 1115, 4832, 5293, 7623, 7704, 7611, 504, 4678, 5084, 10357, 10358, 1177, 10369, 5917, 2]
 // Exports: default
 
-// Module 12712 (NameplateProductPreview)
+// Module 12711 (NameplateProductPreview)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import utils from "utils" /* 1971 */;

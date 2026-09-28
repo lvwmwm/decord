@@ -1,10 +1,10 @@
-// Module ID: 13447
-// Function ID: 13448
+// Module ID: 13446
+// Function ID: 13447
 // Name: resolveShareSendOutcome
 // Dependencies: [10444, 2]
 // Exports: getShareUploadError, pairDestinationsWithChannels, resolveShareSendOutcome, withoutSentDestinations
 
-// Module 13447 (resolveShareSendOutcome)
+// Module 13446 (resolveShareSendOutcome)
 import formatResults from "formatResults" /* 10444 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17094
+// Function ID: 17095
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1372, 8624, 1074, 3, 8625, 6539, 1364, 12996, 4488, 1241, 2]
+// Dependencies: [5, 1372, 8624, 1074, 3, 8625, 6539, 1364, 12995, 4488, 1241, 2]
 
-// Module 17090 (AppIconPremiumManager)
+// Module 17094 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

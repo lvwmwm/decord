@@ -1,9 +1,9 @@
-// Module ID: 15085
-// Function ID: 15086
+// Module ID: 15083
+// Function ID: 15084
 // Name: LaunchpadSetting
 // Dependencies: [7417, 11002, 2021, 1186, 1115, 11006, 11003, 2]
 
-// Module 15085 (LaunchpadSetting)
+// Module 15083 (LaunchpadSetting)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2021 */;

@@ -1,10 +1,10 @@
-// Module ID: 12791
-// Function ID: 12792
+// Module ID: 12790
+// Function ID: 12791
 // Name: GuildProfileInvite
 // Dependencies: [32, 2112, 10851, 1074, 7155, 7387, 5860, 4685, 576, 2059, 9211, 9209, 1397, 2012, 1880, 1115, 9224, 8203, 7156, 11, 2106, 6608, 1092, 7378, 7388, 2]
 // Exports: createGuildProfileInvite
 
-// Module 12791 (GuildProfileInvite)
+// Module 12790 (GuildProfileInvite)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 2106 */;

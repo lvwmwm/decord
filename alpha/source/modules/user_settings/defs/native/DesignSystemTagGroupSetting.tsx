@@ -1,9 +1,9 @@
-// Module ID: 15404
-// Function ID: 15405
+// Module ID: 15402
+// Function ID: 15403
 // Name: DesignSystemTagGroupSetting
-// Dependencies: [7417, 1074, 11006, 15405, 2]
+// Dependencies: [7417, 1074, 11006, 15403, 2]
 
-// Module 15404 (DesignSystemTagGroupSetting)
+// Module 15402 (DesignSystemTagGroupSetting)
 import Constants from "Constants" /* 1074 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;

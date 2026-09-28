@@ -1,10 +1,10 @@
-// Module ID: 17676
-// Function ID: 17677
+// Module ID: 17680
+// Function ID: 17681
 // Name: AVErrorAnalytics
 // Dependencies: [32, 4874, 4881, 4882, 2045, 1993, 4859, 4886, 2099, 4875, 1074, 4861, 8875, 4888, 4965, 12, 7160, 8885, 1358, 4830, 1241, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 17676 (AVErrorAnalytics)
+// Module 17680 (AVErrorAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4830 */;

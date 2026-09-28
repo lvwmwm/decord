@@ -1,10 +1,10 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17706
+// Function ID: 17707
 // Name: ParentalConsentConnectionHeader
 // Dependencies: [19, 17, 1372, 21, 4836, 5994, 576, 1613, 504, 4832, 6010, 1115, 2781, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 17702 (ParentalConsentConnectionHeader)
+// Module 17706 (ParentalConsentConnectionHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;

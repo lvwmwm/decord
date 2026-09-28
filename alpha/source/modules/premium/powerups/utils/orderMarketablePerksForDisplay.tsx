@@ -1,10 +1,10 @@
-// Module ID: 13119
-// Function ID: 13120
+// Module ID: 13118
+// Function ID: 13119
 // Name: orderMarketablePerksForDisplay
 // Dependencies: [32, 4725, 4727, 2]
 // Exports: default
 
-// Module 13119 (orderMarketablePerksForDisplay)
+// Module 13118 (orderMarketablePerksForDisplay)
 import Powerups from "Powerups" /* 4727 */;
 import _slicedToArray from "module_32" /* 32 */;
 

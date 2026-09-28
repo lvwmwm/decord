@@ -1,10 +1,10 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16439
+// Function ID: 16440
 // Name: useSearchSuggestionsGesture
 // Dependencies: [19, 4566, 11821, 6073, 2]
 // Exports: useSearchSuggestionsContext, useSearchSuggestionsGesture
 
-// Module 16435 (useSearchSuggestionsGesture)
+// Module 16439 (useSearchSuggestionsGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6073 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11821 */;

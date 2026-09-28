@@ -1,9 +1,9 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14063
+// Function ID: 14064
 // Name: subscriptions
-// Dependencies: [5, 1074, 12, 8770, 14065, 1241, 14066, 2]
+// Dependencies: [5, 1074, 12, 8770, 14064, 1241, 14065, 2]
 
-// Module 14064 (subscriptions)
+// Module 14063 (subscriptions)
 import _modDef12 from "module_12" /* 12 */;
 import RPCErrorDefault from "RPCError" /* 8770 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

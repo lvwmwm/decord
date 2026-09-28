@@ -1,10 +1,10 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 15970
+// Function ID: 15971
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 4836, 576, 4531, 5901, 1177, 9076, 9074, 5411, 8082, 8347, 15973, 9569, 15974, 5415, 15975, 5374, 5340, 15968, 2]
+// Dependencies: [19, 21, 4836, 576, 4531, 5901, 1177, 9076, 9074, 5411, 8082, 8347, 15971, 9569, 15972, 5415, 15973, 5374, 5340, 15966, 2]
 // Exports: useActivityIndicatorState
 
-// Module 15972 (GuildsBarActivityIndicator)
+// Module 15970 (GuildsBarActivityIndicator)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4531 */;
 import _modDef5340 from "module_5340" /* 5340 */;
@@ -17,10 +17,10 @@ import ScreenIcon from "ScreenIcon" /* 8347 */;
 import _modDef9074 from "module_9074" /* 9074 */;
 import CalendarIcon from "CalendarIcon" /* 9076 */;
 import VideoIcon from "VideoIcon" /* 9569 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 15968 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 15966 */;
+import _modDef15971 from "module_15971" /* 15971 */;
+import _modDef15972 from "module_15972" /* 15972 */;
 import _modDef15973 from "module_15973" /* 15973 */;
-import _modDef15974 from "module_15974" /* 15974 */;
-import _modDef15975 from "module_15975" /* 15975 */;
 import noop from "module_19" /* 19 */;
 
 const native = tmp(1177);
@@ -33,13 +33,13 @@ function getMediaIcon(activeEvent) {
     const obj3 = { icon: StageIcon.StageIcon, source: _modDef8082 };
     tmp6 = obj3;
   } else if (tmp3) {
-    const obj4 = { icon: ScreenIcon.ScreenIcon, source: _modDef15973 };
+    const obj4 = { icon: ScreenIcon.ScreenIcon, source: _modDef15971 };
     tmp6 = obj4;
   } else if (tmp2) {
-    const obj5 = { icon: VideoIcon.VideoIcon, source: _modDef15974 };
+    const obj5 = { icon: VideoIcon.VideoIcon, source: _modDef15972 };
     tmp6 = obj5;
   } else if (tmp) {
-    const obj6 = { icon: VoiceNormalIcon.VoiceNormalIcon, source: _modDef15975 };
+    const obj6 = { icon: VoiceNormalIcon.VoiceNormalIcon, source: _modDef15973 };
     tmp6 = obj6;
   } else {
     tmp6 = null;

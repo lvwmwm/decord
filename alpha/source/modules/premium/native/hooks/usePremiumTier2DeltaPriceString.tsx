@@ -1,10 +1,10 @@
-// Module ID: 13092
-// Function ID: 13093
+// Module ID: 13091
+// Function ID: 13092
 // Name: usePremiumTier2DeltaPriceString
 // Dependencies: [19, 6844, 6658, 1374, 6829, 6661, 1364, 6655, 4503, 504, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 13092 (usePremiumTier2DeltaPriceString)
+// Module 13091 (usePremiumTier2DeltaPriceString)
 import BillingUtils from "BillingUtils" /* 4503 */;
 import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6829 */;
 import noop from "module_19" /* 19 */;

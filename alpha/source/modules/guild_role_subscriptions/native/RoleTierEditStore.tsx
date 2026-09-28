@@ -1,13 +1,13 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17557
+// Function ID: 17558
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1248, 1243, 6674, 4452, 5298, 14759, 2]
+// Dependencies: [32, 5, 1248, 1243, 6674, 4452, 5298, 14757, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 17553 (RoleTierEditStore)
+// Module 17557 (RoleTierEditStore)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import _mod4452 from "module_4452" /* 4452 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14759 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14757 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

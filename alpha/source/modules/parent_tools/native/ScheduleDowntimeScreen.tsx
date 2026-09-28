@@ -1,10 +1,10 @@
-// Module ID: 14471
-// Function ID: 14472
+// Module ID: 14470
+// Function ID: 14471
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4800, 8995, 1981, 4836, 576, 1177, 5279, 4832, 1115, 2487, 1485, 6415, 9543, 563, 14472, 14473, 4790, 5999, 6621, 5917, 6544, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4800, 8995, 1981, 4836, 576, 1177, 5279, 4832, 1115, 2487, 1485, 6415, 9543, 563, 14471, 14472, 4790, 5999, 6621, 5917, 6544, 5281, 2]
 // Exports: default
 
-// Module 14471 (ScheduleDowntimeScreen)
+// Module 14470 (ScheduleDowntimeScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -530,7 +530,7 @@ export default function ScheduleDowntimeScreen() {
     obj13.trailing = closure_11(tmp2(stringResult[14]).Text, obj14);
     obj13.onPress = function handleStartTimePress() {
       const intl = util.intl;
-      const f118269 = (first1) => {
+      const f118316 = (first1) => {
         closure_1_11(first1);
         const result = (closure_0(rule[19]).timeToMinutes(first1) + 540) % 1440;
         const time = { hours: Math.floor(result / 60), minutes: result % 60 };

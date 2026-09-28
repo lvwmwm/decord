@@ -1,10 +1,10 @@
-// Module ID: 15774
-// Function ID: 15775
+// Module ID: 15772
+// Function ID: 15773
 // Name: useFavoritesGuildAutoAddedThreadsAction
 // Dependencies: [19, 1372, 2048, 9685, 504, 9684, 1115, 3361, 2]
 // Exports: default
 
-// Module 15774 (useFavoritesGuildAutoAddedThreadsAction)
+// Module 15772 (useFavoritesGuildAutoAddedThreadsAction)
 import FavoritesActionCreators from "FavoritesActionCreators" /* 9684 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;

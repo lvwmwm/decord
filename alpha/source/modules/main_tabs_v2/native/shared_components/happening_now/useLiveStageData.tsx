@@ -1,10 +1,10 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 15704
+// Function ID: 15705
 // Name: useLiveStageData
 // Dependencies: [19, 5730, 2045, 563, 5737, 12, 2]
 // Exports: useLiveStageData
 
-// Module 15706 (useLiveStageData)
+// Module 15704 (useLiveStageData)
 import _modDef12 from "module_12" /* 12 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 5737 */;
 import noop from "module_19" /* 19 */;

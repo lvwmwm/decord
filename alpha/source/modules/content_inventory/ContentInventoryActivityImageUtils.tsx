@@ -1,10 +1,10 @@
-// Module ID: 12555
-// Function ID: 12556
+// Module ID: 12573
+// Function ID: 12574
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 5063, 1074, 2005, 7789, 7595, 1115, 12556, 6727, 8817, 1397, 12558, 5595, 12559, 6589, 504, 1241, 7792, 2]
+// Dependencies: [19, 5063, 1074, 2005, 7789, 7595, 1115, 12574, 6727, 8817, 1397, 12576, 5595, 12577, 6589, 504, 1241, 7792, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 12555 (ContentInventoryActivityImageUtils)
+// Module 12573 (ContentInventoryActivityImageUtils)
 import _mod19 from "module_19" /* 19 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -15,8 +15,8 @@ import useGame from "useGame" /* 6727 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 7789 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 7792 */;
 import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 8817 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 12556 */;
-import isOnXboxDefault from "isOnXbox" /* 12558 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 12574 */;
+import isOnXboxDefault from "isOnXbox" /* 12576 */;
 import ApplicationStore from "ApplicationStore" /* 5063 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ function useComputedImagesForActivity(activity, activityApplication) {
       const tmp2Result = tmp2(5595);
     } else {
       if (null == smallImage) {
-        if (tmp2(12559)(activity)) {
+        if (tmp2(12577)(activity)) {
           const obj8 = { largeImage: null, smallImage: "a" };
           const obj9 = { src: tmp2(5595).get(constants2.PLAYSTATION).icon.lightPNG, alt: null };
           const intl3 = tmp15(1115).intl;

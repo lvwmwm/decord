@@ -1,11 +1,11 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 16994
+// Function ID: 16995
 // Name: useDrawerToggle
-// Dependencies: [19, 11753, 11754, 4566, 7715, 16991, 1115, 2]
+// Dependencies: [19, 11753, 11754, 4566, 7715, 16995, 1115, 2]
 // Exports: default
 
-// Module 16990 (useDrawerToggle)
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 16991 */;
+// Module 16994 (useDrawerToggle)
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 16995 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

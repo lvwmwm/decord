@@ -1,12 +1,12 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16808
+// Function ID: 16809
 // Name: UnreadBadge
-// Dependencies: [19, 17, 9577, 5018, 21, 4836, 16475, 5288, 7294, 2]
+// Dependencies: [19, 17, 9577, 5018, 21, 4836, 16479, 5288, 7294, 2]
 
-// Module 16804 (UnreadBadge)
+// Module 16808 (UnreadBadge)
 import useFontScale from "useFontScale" /* 5288 */;
 import Badge from "Badge" /* 7294 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16475 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16479 */;
 import noop from "module_19" /* 19 */;
 
 const BadgeDefault = Badge;

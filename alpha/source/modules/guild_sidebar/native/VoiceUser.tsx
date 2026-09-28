@@ -1,10 +1,10 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15754
+// Function ID: 15755
 // Name: VoiceUser
-// Dependencies: [19, 2044, 4858, 502, 1993, 4854, 4855, 21, 504, 15757, 2]
+// Dependencies: [19, 2044, 4858, 502, 1993, 4854, 4855, 21, 504, 15755, 2]
 // Exports: default
 
-// Module 15756 (VoiceUser)
+// Module 15754 (VoiceUser)
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;

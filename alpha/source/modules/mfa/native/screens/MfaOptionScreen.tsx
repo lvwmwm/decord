@@ -1,16 +1,16 @@
-// Module ID: 15231
-// Function ID: 15232
+// Module ID: 15229
+// Function ID: 15230
 // Name: MfaOptionScreen
-// Dependencies: [19, 17, 21, 6363, 15232, 6544, 5279, 4832, 15233, 6394, 2]
+// Dependencies: [19, 17, 21, 6363, 15230, 6544, 5279, 4832, 15231, 6394, 2]
 // Exports: default
 
-// Module 15231 (MfaOptionScreen)
+// Module 15229 (MfaOptionScreen)
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;
 import useWideAuthViewDefault from "useWideAuthView" /* 6363 */;
 import BackgroundImageDefault from "BackgroundImage" /* 6394 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6544 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 15232 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 15230 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -59,7 +59,7 @@ export default function MFAOptionScreen(arg0) {
   const items3 = [submit, ];
   if (tmp10Result5) {
     const obj8 = { props: screenProps };
-    tmp10Result5 = tmp10(tmp(15233), obj8);
+    tmp10Result5 = tmp10(tmp(15231), obj8);
   }
   items3[1] = tmp10Result5;
   obj7.children = items3;

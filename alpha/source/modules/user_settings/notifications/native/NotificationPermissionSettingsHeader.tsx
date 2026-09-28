@@ -1,10 +1,10 @@
-// Module ID: 15037
-// Function ID: 15038
+// Module ID: 15035
+// Function ID: 15036
 // Name: NotificationPermissionSettingsHeader
 // Dependencies: [19, 17, 1074, 11903, 21, 4836, 576, 11904, 1241, 5919, 9613, 4832, 1115, 5281, 2]
 // Exports: default
 
-// Module 15037 (NotificationPermissionSettingsHeader)
+// Module 15035 (NotificationPermissionSettingsHeader)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;

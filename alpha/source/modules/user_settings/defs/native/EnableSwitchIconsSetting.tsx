@@ -1,10 +1,10 @@
-// Module ID: 14962
-// Function ID: 14963
+// Module ID: 14960
+// Function ID: 14961
 // Name: EnableSwitchIconsSetting
-// Dependencies: [4825, 7417, 504, 11006, 1115, 13999, 2]
+// Dependencies: [4825, 7417, 504, 11006, 1115, 13998, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14962 (EnableSwitchIconsSetting)
+// Module 14960 (EnableSwitchIconsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import AccessibilityStore from "AccessibilityStore" /* 4825 */;
@@ -22,7 +22,7 @@ const toggle = SettingBuilders.createToggle({
   },
   parent: fn(7417).MobileUserSettings.ACCESSIBILITY,
   useValue: useEnableSwitchIconsSettingValue,
-  onValueChange: fn(13999).setSwitchIconsEnabled,
+  onValueChange: fn(13998).setSwitchIconsEnabled,
   hasIcon: true
 });
 const size = fn(2);

@@ -1,9 +1,9 @@
-// Module ID: 13638
-// Function ID: 13639
+// Module ID: 13637
+// Function ID: 13638
 // Name: RadioGroup
-// Dependencies: [19, 17, 1085, 21, 4836, 576, 4548, 6558, 13639, 2]
+// Dependencies: [19, 17, 1085, 21, 4836, 576, 4548, 6558, 13638, 2]
 
-// Module 13638 (RadioGroup)
+// Module 13637 (RadioGroup)
 import nativeDefault from "native" /* 576 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4548 */;
 import FormRowDefault from "FormRow" /* 6558 */;

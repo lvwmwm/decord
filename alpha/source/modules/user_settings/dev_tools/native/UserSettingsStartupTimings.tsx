@@ -1,10 +1,10 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15120
+// Function ID: 15121
 // Name: UserSettingsStartupTimings
 // Dependencies: [5, 32, 19, 17, 1346, 1074, 21, 4836, 576, 4832, 4699, 1613, 9653, 504, 9, 6895, 7809, 8179, 5279, 5999, 5916, 1347, 5917, 12470, 2]
 // Exports: default
 
-// Module 15122 (UserSettingsStartupTimings)
+// Module 15120 (UserSettingsStartupTimings)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import Stack_Stack from "Stack/Stack" /* 5279 */;

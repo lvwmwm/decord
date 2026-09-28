@@ -1,9 +1,9 @@
-// Module ID: 14968
-// Function ID: 14969
+// Module ID: 14966
+// Function ID: 14967
 // Name: AutoplayGifSetting
 // Dependencies: [7417, 11006, 1115, 2021, 2]
 
-// Module 14968 (AutoplayGifSetting)
+// Module 14966 (AutoplayGifSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2021 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;

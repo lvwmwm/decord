@@ -1,10 +1,10 @@
-// Module ID: 12625
-// Function ID: 12626
+// Module ID: 12643
+// Function ID: 12644
 // Name: VibegrationsChatStore
 // Dependencies: [32, 109, 6957, 9541, 2099, 4655, 5591, 8495, 1074, 2052, 1115, 3715, 8498, 2021, 9357, 504, 573, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 12625 (VibegrationsChatStore)
+// Module 12643 (VibegrationsChatStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
@@ -106,6 +106,25 @@ function newMessageFromHistory(ts) {
   if (tmp7) {
     tmp.intake = ts.intake;
   }
+  let steps = ts.steps;
+  if (steps == null) {
+    steps = [];
+  }
+  const iter = steps[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp9 = nextResult;
+    let tmp10 = "awaiting_user" === nextResult.kind;
+    if (tmp10) {
+      tmp10 = "secrets" === tmp9.action;
+    }
+    if (tmp10) {
+      let obj2 = { action: null };
+      obj2.action = tmp9.action;
+      tmp.awaitingUser = obj2;
+    }
+    continue;
+  }
   return tmp;
 }
 function patchTurn(projectId, turnId, fn) {
@@ -133,7 +152,7 @@ function patchTurn(projectId, turnId, fn) {
         while (true) {
           let tmp3 = value[diff1];
           if ("assistant" === tmp3.role) {
-            let someResult = true === tmp3.finished || true === tmp3.continued || "" !== tmp3.content || null != tmp3.proposal;
+            let someResult = true === tmp3.finished || true === tmp3.continued || "" !== tmp3.content || null != tmp3.proposal || null != tmp3.clarification || null != tmp3.intake;
             if (!someResult) {
               let steps = tmp3.steps;
               someResult = steps.some((kind) => set.has(kind.kind));
@@ -199,7 +218,7 @@ function hasOpenTurn(map) {
           if ("side_reply" !== tmp.kind) {
             let flag = flag2;
             if (!flag2) {
-              let someResult = true === tmp.finished || true === tmp.continued || "" !== tmp.content || null != tmp.proposal;
+              let someResult = true === tmp.finished || true === tmp.continued || "" !== tmp.content || null != tmp.proposal || null != tmp.clarification || null != tmp.intake;
               if (!someResult) {
                 let steps = tmp.steps;
                 someResult = steps.some((kind) => set.has(kind.kind));
@@ -211,7 +230,7 @@ function hasOpenTurn(map) {
             }
             tmp4 = flag;
             if (null != tmp.turn_id) {
-              let someResult1 = true === tmp.finished || true === tmp.continued || "" !== tmp.content || null != tmp.proposal;
+              let someResult1 = true === tmp.finished || true === tmp.continued || "" !== tmp.content || null != tmp.proposal || null != tmp.clarification || null != tmp.intake;
               if (!someResult1) {
                 let steps2 = tmp.steps;
                 someResult1 = steps2.some((kind) => set.has(kind.kind));
@@ -268,7 +287,7 @@ function recordThinkingTransition(projectId) {
       }
       let tmp7 = null != tmp4;
       if (tmp7) {
-        let someResult = "" !== tmp4.content.trim() || null != tmp4.proposal;
+        let someResult = "" !== tmp4.content.trim() || null != tmp4.proposal || null != tmp4.clarification || null != tmp4.intake;
         if (!someResult) {
           const steps = tmp4.steps;
           someResult = steps.some((kind) => {
@@ -301,6 +320,12 @@ function recordThinkingTransition(projectId) {
             }
             if (!someResult1) {
               someResult1 = null != tmp13.proposal;
+            }
+            if (!someResult1) {
+              someResult1 = null != tmp13.clarification;
+            }
+            if (!someResult1) {
+              someResult1 = null != tmp13.intake;
             }
             if (!someResult1) {
               const steps2 = tmp13.steps;
@@ -348,8 +373,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(8498).isWindowFocused();
-            const tmp68Result = tmp68(8498);
+            isWindowFocusedResult = tmp70(8498).isWindowFocused();
+            const tmp70Result = tmp70(8498);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -381,6 +406,18 @@ function recordThinkingTransition(projectId) {
               content = tmp43.content;
             } else if (null != tmp43.proposal) {
               content = tmp43.proposal.summary;
+            } else if (null != tmp43.clarification) {
+              const first = tmp43.clarification.questions[0];
+              let question;
+              if (first != null) {
+                question = first.question;
+              }
+              if (question == null) {
+                question = null;
+              }
+              content = question;
+            } else if (null != tmp43.intake) {
+              content = tmp43.intake.intro.lead;
             } else {
               let diff3 = tmp43.steps.length - 1;
               content = null;
@@ -427,32 +464,36 @@ function recordThinkingTransition(projectId) {
               obj6.title = project.name;
               obj6.body = content;
               obj6.route = CHANNELResult;
-              let tmp58;
+              let tmp60;
               if (!isSoundDisabledResult) {
-                tmp58 = bit_message1;
+                tmp60 = bit_message1;
               }
-              obj6.sound = tmp58;
+              obj6.sound = tmp60;
               const result3 = VibegrationsPlatformUtilsDefault.presentTurnNotification(obj6);
             }
           }
         }
-        tmp68 = importDefault;
+        tmp70 = importDefault;
       }
       obj5 = VibegrationsProjectStore;
     }
   }
 }
-function purgeProject(arg0) {
-  let deleteResult = map.delete(arg0);
-  map5.delete(arg0);
-  const deleteResult2 = map1.delete(arg0);
-  const deleteResult3 = map2.delete(arg0);
-  const deleteResult4 = map3.delete(arg0);
+function purgeProject(projectId) {
+  let deleteResult = map.delete(projectId);
+  const deleteResult1 = map5.delete(projectId);
+  const deleteResult2 = set2.delete(projectId);
+  const deleteResult3 = map1.delete(projectId);
+  const deleteResult4 = map2.delete(projectId);
+  const deleteResult5 = map3.delete(projectId);
   const arr = closure_22;
-  const deleteResult5 = map4.delete(arg0);
-  const index = closure_22.indexOf(arg0);
+  const deleteResult6 = map4.delete(projectId);
+  const index = closure_22.indexOf(projectId);
   if (-1 !== index) {
     arr.splice(index, 1);
+  }
+  if (!deleteResult) {
+    deleteResult = deleteResult1;
   }
   if (!deleteResult) {
     deleteResult = deleteResult2;
@@ -470,7 +511,10 @@ function purgeProject(arg0) {
     deleteResult = deleteResult6;
   }
   if (!deleteResult) {
-    deleteResult = tmp9;
+    deleteResult = deleteResult7;
+  }
+  if (!deleteResult) {
+    deleteResult = tmp10;
   }
   return deleteResult;
 }
@@ -563,6 +607,12 @@ function stoppable(role) {
       someResult = null != role.proposal;
     }
     if (!someResult) {
+      someResult = null != role.clarification;
+    }
+    if (!someResult) {
+      someResult = null != role.intake;
+    }
+    if (!someResult) {
       const steps = role.steps;
       someResult = steps.some((kind) => set.has(kind.kind));
     }
@@ -622,6 +672,9 @@ prototype["isThinking"] = function isThinking(item10008) {
 prototype["hasLoadedHistory"] = function hasLoadedHistory(projectId) {
   return map5.has(projectId);
 };
+prototype["isHistoryUnavailable"] = function isHistoryUnavailable(projectId) {
+  return set2.has(projectId);
+};
 prototype["getFinishedAt"] = function getFinishedAt(arg0) {
   let tmp = null;
   if (!hasOpenTurn(map.get(arg0))) {
@@ -669,6 +722,7 @@ prototype["isAnyThinking"] = function isAnyThinking() {
   return false;
 };
 const map5 = new Map();
+const set2 = new Set();
 const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
   LOGOUT: function handleLogout() {
     if (0 === map.size) {
@@ -677,9 +731,13 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
           if (0 === map3.size) {
             if (0 === map4.size) {
               if (0 === set1.size) {
-                if (0 === closure_22.length) {
-                  if (0 === width) {
-                    return false;
+                if (0 === map5.size) {
+                  if (0 === set2.size) {
+                    if (0 === closure_22.length) {
+                      if (0 === width) {
+                        return false;
+                      }
+                    }
                   }
                 }
               }
@@ -694,16 +752,23 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     map3.clear();
     map4.clear();
     set1.clear();
+    map5.clear();
+    set2.clear();
     closure_22.length = 0;
     width = 0;
   },
-  VIBEGRATIONS_CHAT_HISTORY_SET: function handleChatHistorySet(arg0) {
-    ({ projectId, entries, cursor } = arg0);
+  VIBEGRATIONS_CHAT_HISTORY_SET: function handleChatHistorySet(degraded) {
+    ({ projectId, entries, cursor } = degraded);
     set = undefined;
     if (cursor == null) {
       cursor = null;
     }
     const result = map5.set(projectId, cursor);
+    if (true === degraded.degraded) {
+      set2.add(projectId);
+    } else {
+      set2.delete(projectId);
+    }
     map4.delete(projectId);
     set1.delete(projectId);
     set = new Set();
@@ -964,38 +1029,17 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     value = map.get(projectId);
     let tmp = null != value;
     if (tmp) {
-      let someResult = value.some(stoppable);
+      const someResult = value.some(stoppable);
       if (someResult) {
-        const result = map.set(projectId, value.map((role) => {
-          let tmp = "assistant" === role.role;
-          if (tmp) {
-            tmp = "side_reply" !== role.kind;
-          }
-          if (tmp) {
-            let someResult = true === role.finished || true === role.continued;
-            if (!someResult) {
-              someResult = "" !== role.content;
-            }
-            if (!someResult) {
-              someResult = null != role.proposal;
-            }
-            if (!someResult) {
-              const steps = role.steps;
-              someResult = steps.some((kind) => set.has(kind.kind));
-            }
-            tmp = !someResult;
-          }
-          if (tmp) {
-            tmp = true !== role.stopRequested;
-          }
-          let tmp4 = role;
-          if (tmp) {
+        const result = map.set(projectId, value.map((item) => {
+          let tmp = item;
+          if (stoppable(item)) {
             const obj = {};
-            const merged = Object.assign(role);
+            const merged = Object.assign(item);
             obj.stopRequested = true;
-            tmp4 = obj;
+            tmp = obj;
           }
-          return tmp4;
+          return tmp;
         }));
       }
       tmp = someResult;
@@ -1107,6 +1151,12 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
             someResult = null != role.proposal;
           }
           if (!someResult) {
+            someResult = null != role.clarification;
+          }
+          if (!someResult) {
+            someResult = null != role.intake;
+          }
+          if (!someResult) {
             const steps = role.steps;
             someResult = steps.some((kind) => set.has(kind.kind));
           }
@@ -1127,6 +1177,12 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
               }
               if (!someResult) {
                 someResult = null != disposition.proposal;
+              }
+              if (!someResult) {
+                someResult = null != disposition.clarification;
+              }
+              if (!someResult) {
+                someResult = null != disposition.intake;
               }
               if (!someResult) {
                 const steps = disposition.steps;
@@ -1159,44 +1215,22 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
     }
     return !tmp6;
   },
+  VIBEGRATIONS_PROJECT_CREATE_SUCCESS: function handleProjectCreateSuccess(project) {
+    project = project.project;
+    if (map5.has(project.id)) {
+      return false;
+    } else {
+      const result = obj.set(project.id, null);
+    }
+    obj = map5;
+  },
   VIBEGRATIONS_PROJECT_DELETE_SUCCESS: function handleProjectDeleteSuccess(projectId) {
-    projectId = projectId.projectId;
-    let deleteResult = map.delete(projectId);
-    map5.delete(projectId);
-    const deleteResult2 = map1.delete(projectId);
-    const deleteResult3 = map2.delete(projectId);
-    const deleteResult4 = map3.delete(projectId);
-    const arr = closure_22;
-    const deleteResult5 = map4.delete(projectId);
-    const index = closure_22.indexOf(projectId);
-    if (-1 !== index) {
-      arr.splice(index, 1);
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult2;
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult3;
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult4;
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult5;
-    }
-    if (!deleteResult) {
-      deleteResult = deleteResult6;
-    }
-    if (!deleteResult) {
-      deleteResult = tmp9;
-    }
-    if (!deleteResult) {
+    if (!purgeProject(projectId.projectId)) {
       return false;
     }
-    deleteResult6 = set1.delete(projectId);
   },
   VIBEGRATIONS_PROJECTS_FETCH_SUCCESS: function handleProjectsFetchSuccess() {
-    const items = [...map.keys(), ...map1.keys(), ...map2.keys(), ...map3.keys()];
+    const items = [...map.keys(), ...map5.keys(), ...map1.keys(), ...map2.keys(), ...map3.keys()];
     let flag = false;
     const iter = new Set(items)[Symbol.iterator]();
     const nextResult = iter.next();
@@ -1225,6 +1259,12 @@ export const turnSettled = function turnSettled(message) {
   }
   if (!someResult) {
     someResult = null != message.proposal;
+  }
+  if (!someResult) {
+    someResult = null != message.clarification;
+  }
+  if (!someResult) {
+    someResult = null != message.intake;
   }
   if (!someResult) {
     const steps = message.steps;

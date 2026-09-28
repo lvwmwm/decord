@@ -1,11 +1,11 @@
-// Module ID: 15111
-// Function ID: 15112
+// Module ID: 15109
+// Function ID: 15110
 // Name: AppVersionSetting
-// Dependencies: [1363, 1115, 15112, 11006, 10278, 2021, 2]
+// Dependencies: [1363, 1115, 15110, 11006, 10278, 2021, 2]
 
-// Module 15111 (AppVersionSetting)
+// Module 15109 (AppVersionSetting)
 import util from "util" /* 1115 */;
-import CopyClientInfoSetting from "CopyClientInfoSetting" /* 15112 */;
+import CopyClientInfoSetting from "CopyClientInfoSetting" /* 15110 */;
 import ClientInfoUtils from "ClientInfoUtils" /* 1363 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15213
+// Function ID: 15214
 // Name: DevToolsOTATestScreen
-// Dependencies: [5, 32, 19, 17, 1085, 21, 4836, 576, 6571, 6570, 4832, 11269, 4800, 5279, 5999, 5917, 15117, 6610, 7336, 4781, 15216, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 4836, 576, 6571, 6570, 4832, 11269, 4800, 5279, 5999, 5917, 15115, 6610, 7336, 4781, 15214, 2]
 // Exports: default
 
-// Module 15215 (DevToolsOTATestScreen)
+// Module 15213 (DevToolsOTATestScreen)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4832 */;
 import ClipboardUtils from "ClipboardUtils" /* 6610 */;
@@ -184,7 +184,7 @@ export default function DevToolsOTATestScreen() {
   const tmp13 = closure_6;
   const tmp9 = _slicedToArray(noop.useState(false), 2);
   const items = [
-    closure_8(subLabel(5917).TableRow, { label: "Status", subLabel: tmp8[0], icon: closure_8(subLabel(15117).WrenchIcon, {}) }),
+    closure_8(subLabel(5917).TableRow, { label: "Status", subLabel: tmp8[0], icon: closure_8(subLabel(15115).WrenchIcon, {}) }),
     closure_8(subLabel(5917).TableRow, {
       label: "Root Path (tap to copy)",
       subLabel,
@@ -202,7 +202,7 @@ export default function DevToolsOTATestScreen() {
   if (str == null) {
     str = "Unknown";
   }
-  let obj3 = { label: "Status", subLabel: tmp8[0], icon: closure_8(subLabel(15117).WrenchIcon, {}) };
+  let obj3 = { label: "Status", subLabel: tmp8[0], icon: closure_8(subLabel(15115).WrenchIcon, {}) };
   let obj4 = {
     label: "Root Path (tap to copy)",
     subLabel,
@@ -210,7 +210,7 @@ export default function DevToolsOTATestScreen() {
       ClipboardUtils.copy(first);
     }
   };
-  const items2 = [closure_8(subLabel(5917).TableRow, { label: "Manifest Source", subLabel: str, icon: closure_8(subLabel(15117).WrenchIcon, {}) }), ];
+  const items2 = [closure_8(subLabel(5917).TableRow, { label: "Manifest Source", subLabel: str, icon: closure_8(subLabel(15115).WrenchIcon, {}) }), ];
   const obj6 = { icon: closure_8(subLabel(7336).PaperIcon, {}), label: null };
   let str2 = "{}";
   if (null != tmp5) {
@@ -225,7 +225,7 @@ export default function DevToolsOTATestScreen() {
   items2[1] = closure_8(subLabel(5917).TableRow, obj6);
   obj7.children = items2;
   items1[1] = closure_9(subLabel(5999).TableRowGroup, obj7);
-  let obj8 = { icon: closure_8(subLabel(15117).WrenchIcon, {}), label: "Is cookie set?", subLabel: null };
+  let obj8 = { icon: closure_8(subLabel(15115).WrenchIcon, {}), label: "Is cookie set?", subLabel: null };
   let str3 = "Yes";
   if (null == tmp7) {
     str3 = "No";
@@ -234,14 +234,14 @@ export default function DevToolsOTATestScreen() {
   const items3 = [closure_8(subLabel(5917).TableRow, obj8), ];
   let tmp12Result = null != tmp7;
   if (tmp12Result) {
-    const obj9 = { icon: tmp12(tmp15(15117).WrenchIcon, {}), label: null };
+    const obj9 = { icon: tmp12(tmp15(15115).WrenchIcon, {}), label: null };
     const _JSON = JSON;
     obj9.label = JSON.stringify(tmp7, null, 2);
     tmp12Result = tmp12(tmp15(5917).TableRow, obj9);
   }
   items3[1] = tmp12Result;
   items1[2] = closure_9(subLabel(5999).TableRowGroup, { title: "Build Override Cookie", hasIcons: true, children: items3 });
-  let obj5 = { label: "Manifest Source", subLabel: str, icon: closure_8(subLabel(15117).WrenchIcon, {}) };
+  let obj5 = { label: "Manifest Source", subLabel: str, icon: closure_8(subLabel(15115).WrenchIcon, {}) };
   const items4 = [closure_8(subLabel(5917).TableRow, { label: "Check for Update & Reload", icon: closure_8(subLabel(4781).DownloadIcon, {}), onPress: BundleUpdaterDefault.checkForUpdateAndReload }), ];
   let str4 = "Verify content hashes for all app files";
   if (tmp10) {
@@ -253,7 +253,7 @@ export default function DevToolsOTATestScreen() {
   items4[1] = closure_8(subLabel(5917).TableRow, {
     label: "Verify OTA Files",
     subLabel: str4,
-    icon: closure_8(subLabel(15216).ClipboardCheckIcon, {}),
+    icon: closure_8(subLabel(15214).ClipboardCheckIcon, {}),
     onPress: function verifyFiles() {
       const self = this;
       const apply = closure_6.apply;

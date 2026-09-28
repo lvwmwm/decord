@@ -1,14 +1,14 @@
-// Module ID: 16790
-// Function ID: 16791
+// Module ID: 16794
+// Function ID: 16795
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 11002, 1074, 21, 4836, 576, 12305, 1110, 4692, 16791, 7715, 1241, 16788, 4801, 5276, 5898, 4566, 16792, 5263, 1115, 5234, 16794, 2]
+// Dependencies: [32, 19, 17, 11002, 1074, 21, 4836, 576, 12305, 1110, 4692, 16795, 7715, 1241, 16792, 4801, 5276, 5898, 4566, 16796, 5263, 1115, 5234, 16798, 2]
 // Exports: default
 
-// Module 16790 (LaunchPadWrapper)
+// Module 16794 (LaunchPadWrapper)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 16788 */;
+import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 16792 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 14790
-// Function ID: 14791
+// Module ID: 14788
+// Function ID: 14789
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1372, 21, 6839, 5204, 1115, 14791, 1981, 504, 1364, 11006, 8122, 2]
+// Dependencies: [1372, 21, 6839, 5204, 1115, 14789, 1981, 504, 1364, 11006, 8122, 2]
 
-// Module 14790 (PremiumRestoreSubscriptionSetting)
+// Module 14788 (PremiumRestoreSubscriptionSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;

@@ -1,9 +1,9 @@
-// Module ID: 16508
-// Function ID: 16509
+// Module ID: 16512
+// Function ID: 16513
 // Name: SmartSearchBottomFade
-// Dependencies: [19, 1074, 21, 4836, 16509, 672, 5293, 2]
+// Dependencies: [19, 1074, 21, 4836, 16513, 672, 5293, 2]
 
-// Module 16508 (SmartSearchBottomFade)
+// Module 16512 (SmartSearchBottomFade)
 import _modDef672 from "module_672" /* 672 */;
 import LinearGradientDefault from "LinearGradient" /* 5293 */;
 import noop from "module_19" /* 19 */;
@@ -25,7 +25,7 @@ const result = size.fileFinishedImporting("modules/intelligence_layer/search/nat
 export default noop.memo((height) => {
   let searchHostSurfaceColor;
   const tmp = closure_7(height.height);
-  searchHostSurfaceColor = searchHostSurfaceColor(16509).useSearchHostSurfaceColor();
+  searchHostSurfaceColor = searchHostSurfaceColor(16513).useSearchHostSurfaceColor();
   let items = [searchHostSurfaceColor];
   const memo = noop.useMemo(() => {
     const obj = _modDef672(searchHostSurfaceColor);

@@ -1,10 +1,10 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14197
+// Function ID: 14198
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2067, 7386, 21, 4836, 576, 504, 14199, 7610, 7609, 1115, 1364, 4832, 14176, 4800, 14200, 1981, 5896, 9205, 2]
+// Dependencies: [19, 2067, 7386, 21, 4836, 576, 504, 14198, 7610, 7609, 1115, 1364, 4832, 14175, 4800, 14199, 1981, 5896, 9205, 2]
 // Exports: default
 
-// Module 14198 (UserProfilePrimaryGuildEditButton)
+// Module 14197 (UserProfilePrimaryGuildEditButton)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4800 */;
@@ -115,7 +115,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     const obj5 = { text: combined };
     obj4.accessibilityValue = obj5;
     obj4.onPress = function onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14200, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14199, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild });
     };
     let tmp23Result = null;
     if (null != stateFromStores) {

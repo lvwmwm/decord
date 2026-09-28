@@ -1,10 +1,10 @@
-// Module ID: 12679
-// Function ID: 12680
+// Module ID: 12554
+// Function ID: 12555
 // Name: useShopThisLookMarketing
 // Dependencies: [32, 7660, 6806, 2029, 2]
 // Exports: useShopThisLookMarketing
 
-// Module 12679 (useShopThisLookMarketing)
+// Module 12554 (useShopThisLookMarketing)
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6806 */;
 import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 7660 */;
 import _slicedToArray from "module_32" /* 32 */;

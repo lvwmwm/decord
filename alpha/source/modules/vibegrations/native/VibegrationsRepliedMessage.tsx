@@ -1,13 +1,13 @@
 // Module ID: 16337
 // Function ID: 16338
 // Name: VibegrationsRepliedMessage
-// Dependencies: [19, 17, 21, 16335, 4836, 576, 16338, 4678, 16242, 1115, 3715, 1177, 4832, 16342, 2]
+// Dependencies: [19, 17, 21, 16335, 4836, 576, 16338, 4678, 16238, 1115, 3715, 1177, 4832, 16342, 2]
 // Exports: default
 
 // Module 16337 (VibegrationsRepliedMessage)
 import nativeDefault from "native" /* 576 */;
 import _modDef3715 from "module_3715" /* 3715 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16242 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16238 */;
 import VibegrationsSelectedMentionDefault from "VibegrationsSelectedMention" /* 16342 */;
 import noop from "module_19" /* 19 */;
 

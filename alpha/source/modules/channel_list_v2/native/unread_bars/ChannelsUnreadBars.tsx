@@ -1,9 +1,9 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15813
+// Function ID: 15814
 // Name: ChannelsUnreadBars
-// Dependencies: [32, 19, 17, 4825, 4471, 2045, 7050, 4851, 5017, 9577, 5018, 21, 4836, 6948, 5288, 6493, 14629, 551, 558, 504, 4566, 15766, 6364, 4801, 4802, 15816, 2]
+// Dependencies: [32, 19, 17, 4825, 4471, 2045, 7050, 4851, 5017, 9577, 5018, 21, 4836, 6948, 5288, 6493, 14629, 551, 558, 504, 4566, 15764, 6364, 4801, 4802, 15814, 2]
 
-// Module 15815 (ChannelsUnreadBars)
+// Module 15813 (ChannelsUnreadBars)
 import debounceDefault from "debounce" /* 551 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4566 */;
 import HapticUtils from "HapticUtils" /* 4801 */;

@@ -1,10 +1,10 @@
-// Module ID: 15807
-// Function ID: 15808
+// Module ID: 15805
+// Function ID: 15806
 // Name: useGuildPowerupsBoostAction
 // Dependencies: [5, 19, 4729, 4724, 1074, 12034, 6583, 6839, 4732, 4728, 5746, 6823, 2]
 // Exports: default
 
-// Module 15807 (useGuildPowerupsBoostAction)
+// Module 15805 (useGuildPowerupsBoostAction)
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6583 */;
 import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12034 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

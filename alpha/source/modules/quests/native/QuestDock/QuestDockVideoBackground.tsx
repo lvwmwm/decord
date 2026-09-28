@@ -1,9 +1,9 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14731
+// Function ID: 14732
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 4825, 5756, 14624, 1074, 21, 4836, 14625, 4566, 5280, 6494, 14628, 14713, 7715, 1479, 1613, 504, 14623, 672, 14734, 1364, 10678, 5899, 7755, 5293, 2]
+// Dependencies: [32, 19, 17, 4825, 5756, 14624, 1074, 21, 4836, 14625, 4566, 5280, 6494, 14628, 14711, 7715, 1479, 1613, 504, 14623, 672, 14732, 1364, 10678, 5899, 7755, 5293, 2]
 
-// Module 14733 (QuestDockVideoBackground)
+// Module 14731 (QuestDockVideoBackground)
 import _modDef672 from "module_672" /* 672 */;
 import spring from "spring" /* 5280 */;
 import FastImageDefault from "FastImage" /* 5899 */;

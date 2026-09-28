@@ -1,12 +1,12 @@
-// Module ID: 15821
-// Function ID: 15822
+// Module ID: 15819
+// Function ID: 15820
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [2045, 8943, 15820, 2]
+// Dependencies: [2045, 8943, 15818, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 15821 (useActiveEventOrStageInstanceChannel)
+// Module 15819 (useActiveEventOrStageInstanceChannel)
 import useGuildScheduledEvents from "useGuildScheduledEvents" /* 8943 */;
-import useLiveStageChannelsDefault from "useLiveStageChannels" /* 15820 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 15818 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;

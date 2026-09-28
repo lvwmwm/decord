@@ -1,10 +1,10 @@
-// Module ID: 12750
-// Function ID: 12751
+// Module ID: 12749
+// Function ID: 12750
 // Name: AvatarGrid
 // Dependencies: [19, 17, 4825, 4876, 21, 4836, 576, 504, 1177, 7693, 2]
 // Exports: default
 
-// Module 12750 (AvatarGrid)
+// Module 12749 (AvatarGrid)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;

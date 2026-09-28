@@ -1,10 +1,10 @@
-// Module ID: 15326
-// Function ID: 15327
+// Module ID: 15324
+// Function ID: 15325
 // Name: TakeActionScreen
 // Dependencies: [5, 32, 19, 17, 4479, 1372, 10905, 21, 4836, 576, 504, 10934, 10937, 1485, 9195, 7852, 10912, 8089, 4528, 1115, 4792, 4527, 5281, 10945, 8125, 5355, 8038, 4525, 4832, 2]
 // Exports: default
 
-// Module 15326 (TakeActionScreen)
+// Module 15324 (TakeActionScreen)
 import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4525 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7852 */;

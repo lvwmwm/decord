@@ -1,9 +1,9 @@
-// Module ID: 14377
-// Function ID: 14378
+// Module ID: 14376
+// Function ID: 14377
 // Name: AndroidViewNsfwDmCommandsSetting
 // Dependencies: [7417, 8597, 5046, 8598, 5048, 1364, 7859, 7861, 2021, 11006, 1115, 2]
 
-// Module 14377 (AndroidViewNsfwDmCommandsSetting)
+// Module 14376 (AndroidViewNsfwDmCommandsSetting)
 import util from "util" /* 1115 */;
 import AgeGateUtils from "AgeGateUtils" /* 5046 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;

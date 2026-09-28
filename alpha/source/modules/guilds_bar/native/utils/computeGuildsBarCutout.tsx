@@ -1,14 +1,14 @@
-// Module ID: 15936
-// Function ID: 15937
+// Module ID: 15934
+// Function ID: 15935
 // Name: computeGuildsBarCutout
-// Dependencies: [17, 15920, 1177, 8276, 2]
+// Dependencies: [17, 15918, 1177, 8276, 2]
 // Exports: default
 
-// Module 15936 (computeGuildsBarCutout)
+// Module 15934 (computeGuildsBarCutout)
 import _mod17 from "module_17" /* 17 */;
 import native from "native" /* 1177 */;
 import ClipView from "ClipView" /* 8276 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 15920 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 15918 */;
 import size from "module_2" /* 2 */;
 
 const PixelRatio = _mod17.PixelRatio;

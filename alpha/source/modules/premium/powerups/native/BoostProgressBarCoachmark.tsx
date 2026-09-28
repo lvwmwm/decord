@@ -1,10 +1,10 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 15800
+// Function ID: 15801
 // Name: BoostProgressBarCoachmark
 // Dependencies: [19, 17, 2042, 21, 4836, 9048, 1115, 2519, 4616, 10589, 2]
 // Exports: default
 
-// Module 15802 (BoostProgressBarCoachmark)
+// Module 15800 (BoostProgressBarCoachmark)
 import util from "util" /* 1115 */;
 import _modDef2519 from "module_2519" /* 2519 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9048 */;

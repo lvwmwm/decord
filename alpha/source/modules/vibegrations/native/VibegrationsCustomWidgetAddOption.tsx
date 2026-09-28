@@ -1,15 +1,15 @@
-// Module ID: 12621
-// Function ID: 12622
+// Module ID: 12639
+// Function ID: 12640
 // Name: VibegrationsCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 4836, 576, 7687, 12622, 4800, 12623, 5435, 1115, 3715, 9611, 4832, 6630, 2]
+// Dependencies: [19, 17, 21, 4836, 576, 7687, 12640, 4800, 12641, 5435, 1115, 3715, 9611, 4832, 6630, 2]
 // Exports: default
 
-// Module 12621 (VibegrationsCustomWidgetAddOption)
+// Module 12639 (VibegrationsCustomWidgetAddOption)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4800 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7687 */;
-import VibegrationsCustomWidget from "VibegrationsCustomWidget" /* 12622 */;
-import VibegrationsCustomWidgetSheet from "VibegrationsCustomWidgetSheet" /* 12623 */;
+import VibegrationsCustomWidget from "VibegrationsCustomWidget" /* 12640 */;
+import VibegrationsCustomWidgetSheet from "VibegrationsCustomWidgetSheet" /* 12641 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

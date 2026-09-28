@@ -1,16 +1,16 @@
-// Module ID: 15433
-// Function ID: 15434
+// Module ID: 15431
+// Function ID: 15432
 // Name: HeroBlock
-// Dependencies: [19, 17, 6962, 1076, 1074, 21, 8226, 4836, 576, 8337, 15434, 1485, 8229, 504, 10682, 4767, 15435, 4531, 4683, 15436, 14604, 6583, 6603, 15438, 1241, 4685, 15440, 15441, 15442, 5293, 4832, 5281, 1115, 10678, 5761, 5435, 6630, 6577, 15443, 8179, 2]
+// Dependencies: [19, 17, 6962, 1076, 1074, 21, 8226, 4836, 576, 8337, 15432, 1485, 8229, 504, 10682, 4767, 15433, 4531, 4683, 15434, 14604, 6583, 6603, 15436, 1241, 4685, 15438, 15439, 15440, 5293, 4832, 5281, 1115, 10678, 5761, 5435, 6630, 6577, 15441, 8179, 2]
 // Exports: default
 
-// Module 15433 (HeroBlock)
+// Module 15431 (HeroBlock)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8226 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8229 */;
 import SkeletonCardDefault from "SkeletonCard" /* 8337 */;
-import FeaturedFirstCardCoachmarkAnchorDefault from "FeaturedFirstCardCoachmarkAnchor" /* 15438 */;
+import FeaturedFirstCardCoachmarkAnchorDefault from "FeaturedFirstCardCoachmarkAnchor" /* 15436 */;
 import noop from "module_19" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6962 */;
 
@@ -62,7 +62,7 @@ export default function _default(heroBlock) {
   let stateFromStores;
   closure_5 = undefined;
   closure_6 = undefined;
-  let obj = heroBlock(15434);
+  let obj = heroBlock(15432);
   dependencyMap = heroBlock(1485).useNavigation();
   let obj2 = heroBlock(1485);
   noop = heroBlock(8229).useCollectiblesAnalyticsContext();
@@ -79,14 +79,14 @@ export default function _default(heroBlock) {
   const tmpResult9 = heroBlock(10682);
   const tmp7 = preferVCPrice(4767)();
   const tmp8 = closure_14();
-  const tmpResult10 = heroBlock(15435);
+  const tmpResult10 = heroBlock(15433);
   const token = heroBlock(4531).useToken(preferVCPrice(576).colors.BACKGROUND_BASE_LOW);
   const tmpResult11 = heroBlock(4531);
   const tmpResult12 = heroBlock(4683);
   const tmpResult13 = heroBlock(4683);
   const hexToRgbaStringResult = tmpResult12.hexToRgbaString(heroBlock(4683).hexWithOpacity(token, 0));
   const token1 = heroBlock(4531).useToken(preferVCPrice(576).colors.BACKGROUND_BASE_LOWEST);
-  const tmp12 = preferVCPrice(15436)();
+  const tmp12 = preferVCPrice(15434)();
   closure_5 = tmp12;
   const items1 = [heroBlock.rankedSkuIds, tmp12];
   const memo = noop.useMemo(() => closure_5(heroBlock.rankedSkuIds), items1);
@@ -235,8 +235,8 @@ export default function _default(heroBlock) {
         const intl5 = tmp(1115).intl;
         const obj31 = { category: stateFromStores.name };
         obj30.accessibilityLabel = intl5.formatToPlainString(tmp(1115).t.FNtLb3, obj31);
-        let tmp22Result9 = tmp22(tmp6(15443), obj30);
-        const tmp6Result3 = tmp6(15443);
+        let tmp22Result9 = tmp22(tmp6(15441), obj30);
+        const tmp6Result3 = tmp6(15441);
       } else {
         if (0 === filteredAndSortedProducts.length) {
           const obj32 = { accessibilityLabel: null };
@@ -275,13 +275,13 @@ export default function _default(heroBlock) {
       items6[2] = closure_11(closure_5, obj29);
       obj6.children = items6;
       obj5.children = closure_13(closure_5, obj6);
-      obj4.children = closure_11(tmp6(15442), obj5);
+      obj4.children = closure_11(tmp6(15440), obj5);
       return closure_11(tmp(6583).AnalyticsLocationProvider, obj4);
     } else {
       if (tmpResult16.isThemeDark(tmp7)) {
-        let tmp6Result4 = tmp6(15440);
+        let tmp6Result4 = tmp6(15438);
       } else {
-        tmp6Result4 = tmp6(15441);
+        tmp6Result4 = tmp6(15439);
       }
       tmpResult16 = tmp(4685);
     }

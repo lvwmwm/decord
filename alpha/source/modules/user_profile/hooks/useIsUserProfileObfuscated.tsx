@@ -1,10 +1,10 @@
-// Module ID: 12551
-// Function ID: 12552
+// Module ID: 12569
+// Function ID: 12570
 // Name: useIsUserProfileObfuscated
 // Dependencies: [7035, 504, 2]
 // Exports: default
 
-// Module 12551 (useIsUserProfileObfuscated)
+// Module 12569 (useIsUserProfileObfuscated)
 import UserProfileStore from "UserProfileStore" /* 7035 */;
 
 const require = globalThis.__r;

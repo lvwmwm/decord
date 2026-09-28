@@ -1,10 +1,10 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 16986
+// Function ID: 16987
 // Name: useVoiceChannelGames
 // Dependencies: [19, 502, 4876, 5591, 1372, 504, 9192, 9193, 5423, 2]
 // Exports: default
 
-// Module 16982 (useVoiceChannelGames)
+// Module 16986 (useVoiceChannelGames)
 import useGameProfileObscured from "useGameProfileObscured" /* 5423 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

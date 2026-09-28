@@ -1,10 +1,10 @@
-// Module ID: 15318
-// Function ID: 15319
+// Module ID: 15316
+// Function ID: 15317
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 4825, 2045, 2099, 7568, 21, 7569, 38, 4823, 7313, 504, 2021, 7719, 15319, 11111, 11081, 2]
+// Dependencies: [32, 19, 4825, 2045, 2099, 7568, 21, 7569, 38, 4823, 7313, 504, 2021, 7719, 15317, 11111, 11081, 2]
 // Exports: default
 
-// Module 15318 (TextDisplayComponent)
+// Module 15316 (TextDisplayComponent)
 import MarkupUtilsDefault from "MarkupUtils" /* 4823 */;
 import renderMessageMarkup from "renderMessageMarkup" /* 7313 */;
 import handleMessagesTapLink from "handleMessagesTapLink" /* 11111 */;

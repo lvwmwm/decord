@@ -1,10 +1,10 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16783
+// Function ID: 16784
 // Name: useNitroFileUploadMarketingEligible
 // Dependencies: [1374, 10618, 5442, 2]
 // Exports: useNitroFileUploadAnnouncementEligible, useNitroFileUploadUpsellEligible
 
-// Module 16779 (useNitroFileUploadMarketingEligible)
+// Module 16783 (useNitroFileUploadMarketingEligible)
 import PremiumConstants from "PremiumConstants" /* 1374 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5442 */;
 import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 10618 */;

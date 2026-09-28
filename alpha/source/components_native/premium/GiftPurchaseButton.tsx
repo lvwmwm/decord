@@ -1,10 +1,10 @@
-// Module ID: 13110
-// Function ID: 13111
+// Module ID: 13109
+// Function ID: 13110
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4494, 6658, 21, 5287, 4832, 504, 6661, 10513, 6583, 10207, 5204, 1115, 4488, 10124, 5282, 13111, 2]
+// Dependencies: [5, 19, 17, 4494, 6658, 21, 5287, 4832, 504, 6661, 10513, 6583, 10207, 5204, 1115, 4488, 10124, 5282, 13110, 2]
 // Exports: default
 
-// Module 13110 (GiftPurchaseButton)
+// Module 13109 (GiftPurchaseButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4494 */;

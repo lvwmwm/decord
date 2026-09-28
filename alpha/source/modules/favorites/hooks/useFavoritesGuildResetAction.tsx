@@ -1,10 +1,10 @@
-// Module ID: 15773
-// Function ID: 15774
+// Module ID: 15771
+// Function ID: 15772
 // Name: useFavoritesGuildResetAction
 // Dependencies: [19, 4655, 1074, 2021, 9685, 2070, 1101, 9684, 1115, 3361, 2]
 // Exports: default
 
-// Module 15773 (useFavoritesGuildResetAction)
+// Module 15771 (useFavoritesGuildResetAction)
 import UserSettings from "UserSettings" /* 2021 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import _modDef3361 from "module_3361" /* 3361 */;

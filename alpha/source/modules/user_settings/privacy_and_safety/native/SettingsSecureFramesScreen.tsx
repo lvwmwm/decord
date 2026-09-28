@@ -1,10 +1,10 @@
-// Module ID: 15469
-// Function ID: 15470
+// Module ID: 15467
+// Function ID: 15468
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 15470, 4678, 7626, 6583, 7624, 5917, 1177, 1115, 5924, 4531, 1485, 15468, 4832, 8179, 9163, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 15468, 4678, 7626, 6583, 7624, 5917, 1177, 1115, 5924, 4531, 1485, 15466, 4832, 8179, 9163, 2]
 // Exports: default
 
-// Module 15469 (SettingsSecureFramesScreen)
+// Module 15467 (SettingsSecureFramesScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4832 */;

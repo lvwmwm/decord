@@ -1,9 +1,9 @@
-// Module ID: 17672
-// Function ID: 17673
+// Module ID: 17676
+// Function ID: 17677
 // Name: AVErrorVideoStreamReceiverReadyTimeout
 // Dependencies: [502, 8806, 8875, 2]
 
-// Module 17672 (AVErrorVideoStreamReceiverReadyTimeout)
+// Module 17676 (AVErrorVideoStreamReceiverReadyTimeout)
 import AVError from "AVError" /* 8875 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VideoStreamStore from "VideoStreamStore" /* 8806 */;

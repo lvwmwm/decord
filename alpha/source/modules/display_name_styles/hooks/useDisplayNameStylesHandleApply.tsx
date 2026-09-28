@@ -1,10 +1,10 @@
-// Module ID: 14885
-// Function ID: 14886
+// Module ID: 14883
+// Function ID: 14884
 // Name: useDisplayNameStylesHandleApply
 // Dependencies: [19, 1074, 1391, 7612, 7609, 1241, 1392, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 14885 (useDisplayNameStylesHandleApply)
+// Module 14883 (useDisplayNameStylesHandleApply)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
 import DisplayNameFont from "DisplayNameFont" /* 1392 */;

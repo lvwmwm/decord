@@ -1,9 +1,9 @@
-// Module ID: 17136
-// Function ID: 17137
+// Module ID: 17140
+// Function ID: 17141
 // Name: GuildPowerupsManager
-// Dependencies: [2067, 4469, 4655, 4723, 6539, 2070, 4747, 4761, 4762, 12005, 12009, 15801, 5091, 4760, 11984, 4732, 2]
+// Dependencies: [2067, 4469, 4655, 4723, 6539, 2070, 4747, 4761, 4762, 12005, 12009, 15799, 5091, 4760, 11984, 4732, 2]
 
-// Module 17136 (GuildPowerupsManager)
+// Module 17140 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4469 */;
@@ -51,7 +51,7 @@ prototype["handleSelectedGuildChange"] = function handleSelectedGuildChange() {
         }
         tmp9Result = tmp9(4747);
         if (!tmp9Result10.getHasAllocateBoostPermission(PermissionStore, guild)) {
-          let isCurrentUserEligibleForPowerupUpsells = tmp9(15801).getIsCurrentUserEligibleForPowerupUpsells();
+          let isCurrentUserEligibleForPowerupUpsells = tmp9(15799).getIsCurrentUserEligibleForPowerupUpsells();
           let isMobile = tmp9(5091).isMobile;
           if (isMobile) {
             isMobile = tmp9(4761).getServerThemeEnabled(guildId, "GuildPowerupsManager");
@@ -62,8 +62,8 @@ prototype["handleSelectedGuildChange"] = function handleSelectedGuildChange() {
             const tmp9Result13 = tmp9(4761);
           }
           if (isMobile) {
-            isMobile = tmp9(15801).getIsCurrentUserEligibleForPowerupUpsells();
-            const tmp9Result14 = tmp9(15801);
+            isMobile = tmp9(15799).getIsCurrentUserEligibleForPowerupUpsells();
+            const tmp9Result14 = tmp9(15799);
           }
           if (isMobile) {
             isMobile = tmp9(4760).getServerThemeUserEnabled("GuildPowerupsManager");
@@ -71,8 +71,8 @@ prototype["handleSelectedGuildChange"] = function handleSelectedGuildChange() {
           }
           let isMobile2 = tmp9(5091).isMobile;
           if (isMobile2) {
-            isMobile2 = tmp9(15801).getIsCurrentUserEligibleForPowerupUpsells();
-            const tmp9Result16 = tmp9(15801);
+            isMobile2 = tmp9(15799).getIsCurrentUserEligibleForPowerupUpsells();
+            const tmp9Result16 = tmp9(15799);
           }
           if (tmp9(5091).isMobile) {
             if (!isMobile) {
@@ -80,7 +80,7 @@ prototype["handleSelectedGuildChange"] = function handleSelectedGuildChange() {
             }
             isCurrentUserEligibleForPowerupUpsells = isMobile;
           }
-          const tmp9Result11 = tmp9(15801);
+          const tmp9Result11 = tmp9(15799);
         }
         if (GuildPowerupsStore.shouldFetchCatalogForGuild(guildId)) {
           const powerupCatalogForGuild = tmp9(11984).fetchPowerupCatalogForGuild(guildId);

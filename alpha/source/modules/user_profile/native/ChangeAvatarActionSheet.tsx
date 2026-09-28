@@ -1,10 +1,10 @@
-// Module ID: 14168
-// Function ID: 14169
+// Module ID: 14167
+// Function ID: 14168
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 4488, 6618, 6570, 1115, 8122, 5999, 5917, 8053, 14152, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4836, 576, 504, 4488, 6618, 6570, 1115, 8122, 5999, 5917, 8053, 14151, 2]
 // Exports: default
 
-// Module 14168 (ChangeAvatarActionSheet)
+// Module 14167 (ChangeAvatarActionSheet)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -16,7 +16,7 @@ import ActionSheet from "ActionSheet" /* 6618 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
-const UserProfileUpsellButtonDefault = tmp5(14152);
+const UserProfileUpsellButtonDefault = tmp5(14151);
 require = fn;
 const View = fn(17).View;
 const AnalyticsObjects = fn(1074).AnalyticsObjects;

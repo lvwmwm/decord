@@ -1,11 +1,11 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15612
+// Function ID: 15613
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 1074, 21, 4836, 15615, 5889, 4832, 1115, 5281, 1177, 4678, 1485, 5087, 1241, 15616, 15620, 6391, 2]
+// Dependencies: [19, 17, 1074, 21, 4836, 15613, 5889, 4832, 1115, 5281, 1177, 4678, 1485, 5087, 1241, 15614, 15618, 6391, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 15614 (CompanionRemoteAuth)
-import NativeAuthenticationModuleDefault from "NativeAuthenticationModule" /* 15620 */;
+// Module 15612 (CompanionRemoteAuth)
+import NativeAuthenticationModuleDefault from "NativeAuthenticationModule" /* 15618 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -34,13 +34,13 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   }, []);
   let obj = navigation(1485);
   let obj2 = noop;
-  const state = navigation(15616).useAuthWebsocket(callback, true).state;
+  const state = navigation(15614).useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = noop.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(15615).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(15613).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -55,14 +55,14 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     }
   }, items1);
   const obj4 = { headerText: null, children: null };
-  const obj3 = navigation(15616);
+  const obj3 = navigation(15614);
   const intl = tmp2(1115).intl;
   obj4.headerText = intl.string(navigation(1115).t["7fNJgA"]);
   const obj5 = { style: tmp.statusContainer, children: null };
   const step = state.step;
-  if (navigation(15615).RemoteAuthStep.INITIALIZING !== step) {
-    if (tmp2(15615).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (tmp2(15615).RemoteAuthStep.PENDING_TICKET === step) {
+  if (navigation(15613).RemoteAuthStep.INITIALIZING !== step) {
+    if (tmp2(15613).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (tmp2(15613).RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         const obj6 = { children: null };
         const obj7 = { style: tmp.avatar, user, size: tmp2(1177).AvatarSizes.LARGE, guildId: context };
@@ -86,7 +86,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
         obj6.children = items2;
         let tmp11Result = closure_9(closure_8, obj6);
         const tmp5Result2 = tmp5(4678);
-      } else if (tmp2(15615).RemoteAuthStep.PENDING_LOGIN === step) {
+      } else if (tmp2(15613).RemoteAuthStep.PENDING_LOGIN === step) {
         tmp11Result = tmp11(tmp2(5889).ActivityIndicator, {});
       }
     }

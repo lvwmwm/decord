@@ -1,10 +1,10 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 12791
+// Function ID: 12792
 // Name: GuildTemplateEmbed
-// Dependencies: [17, 6877, 6744, 7155, 7387, 1115, 7378, 576, 4685, 11286, 11287, 12793, 2]
+// Dependencies: [17, 6877, 6744, 7155, 7387, 1115, 7378, 576, 4685, 11286, 11287, 12792, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 12792 (GuildTemplateEmbed)
+// Module 12791 (GuildTemplateEmbed)
 import _mod17 from "module_17" /* 17 */;
 import util from "util" /* 1115 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 6744 */;
@@ -63,7 +63,7 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj10.titleColor = colors.titleColor;
     obj10.subtitle = formatToPlainStringResult;
     obj10.subtitleColor = colors.subtitleColor;
-    obj10.thumbnailUrl = Image.resolveAssetSource(tmp(12793)).uri;
+    obj10.thumbnailUrl = Image.resolveAssetSource(tmp(12792)).uri;
     ({ acceptLabelGreenColor: obj6.acceptLabelColor, acceptLabelGreenBackgroundColor: obj6.acceptLabelBackgroundColor } = colors);
     const intl6 = util.intl;
     obj10.acceptLabelText = intl6.string(util.t["a3Gl+e"]);

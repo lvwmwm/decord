@@ -1,10 +1,10 @@
-// Module ID: 12699
-// Function ID: 12700
+// Module ID: 12698
+// Function ID: 12699
 // Name: usePrivateChannelCall
 // Dependencies: [5, 19, 2045, 504, 1115, 10329, 4849, 2]
 // Exports: default
 
-// Module 12699 (usePrivateChannelCall)
+// Module 12698 (usePrivateChannelCall)
 import util from "util" /* 1115 */;
 import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10329 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

@@ -1,14 +1,14 @@
-// Module ID: 12961
-// Function ID: 12962
+// Module ID: 12960
+// Function ID: 12961
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2112, 1372, 10128, 1374, 1074, 573, 12962, 1271, 6820, 2026, 1217, 12963, 2]
+// Dependencies: [5, 2112, 1372, 10128, 1374, 1074, 573, 12961, 1271, 6820, 2026, 1217, 12962, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 12961 (PromotionsActionCreators)
+// Module 12960 (PromotionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import wrappers from "wrappers" /* 1217 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 12962 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 12961 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2112 */;
 import UserStore from "UserStore" /* 1372 */;

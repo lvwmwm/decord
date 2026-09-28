@@ -1,10 +1,10 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16904
+// Function ID: 16905
 // Name: useIsVoicePanelParticipantFocusable
 // Dependencies: [2044, 4852, 4858, 1993, 4857, 8899, 1370, 504, 2]
 // Exports: default
 
-// Module 16900 (useIsVoicePanelParticipantFocusable)
+// Module 16904 (useIsVoicePanelParticipantFocusable)
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4852 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4858 */;

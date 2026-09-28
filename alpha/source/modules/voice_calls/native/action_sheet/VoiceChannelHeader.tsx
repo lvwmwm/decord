@@ -1,9 +1,9 @@
-// Module ID: 13339
-// Function ID: 13340
+// Module ID: 13338
+// Function ID: 13339
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 2044, 2067, 4469, 1074, 21, 4836, 576, 13340, 13341, 4832, 13342, 504, 9394, 4989, 9275, 1115, 11085, 1177, 5373, 13344, 9471, 9491, 5435, 2]
+// Dependencies: [19, 17, 2044, 2067, 4469, 1074, 21, 4836, 576, 13339, 13340, 4832, 13341, 504, 9394, 4989, 9275, 1115, 11085, 1177, 5373, 13343, 9471, 9491, 5435, 2]
 
-// Module 13339 (VoiceChannelHeader)
+// Module 13338 (VoiceChannelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -14,9 +14,9 @@ import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9394 */;
 import _modDef9491 from "module_9491" /* 9491 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11085 */;
-import CallStateHooks from "CallStateHooks" /* 13340 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13341 */;
-import OngoingCallTimerDefault from "OngoingCallTimer" /* 13342 */;
+import CallStateHooks from "CallStateHooks" /* 13339 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13340 */;
+import OngoingCallTimerDefault from "OngoingCallTimer" /* 13341 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -37,7 +37,7 @@ function PrivateChannelSubtitle(channel) {
     tmp6Result = tmp6(tmp7(4832).Text, obj3);
   }
   items[1] = tmp6Result;
-  let tmp6Result2 = state === tmp7(13340).CallStates.CONNECTED;
+  let tmp6Result2 = state === tmp7(13339).CallStates.CONNECTED;
   if (tmp6Result2) {
     const obj4 = { channelId: channel.id, style: tmp.subtitle };
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);

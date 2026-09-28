@@ -1,16 +1,16 @@
-// Module ID: 14371
-// Function ID: 14372
+// Module ID: 14370
+// Function ID: 14371
 // Name: DirectMessageSafetyAlertsSetting
-// Dependencies: [7417, 11356, 10431, 10434, 11006, 1115, 10433, 14372, 2]
+// Dependencies: [7417, 11356, 10431, 10434, 11006, 1115, 10433, 14371, 2]
 
-// Module 14371 (DirectMessageSafetyAlertsSetting)
+// Module 14370 (DirectMessageSafetyAlertsSetting)
 import util from "util" /* 1115 */;
 import SettingsConstants from "SettingsConstants" /* 7417 */;
 import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10431 */;
 import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10433 */;
 import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10434 */;
 import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 11356 */;
-import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 14372 */;
+import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 14371 */;
 import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 

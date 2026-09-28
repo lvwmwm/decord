@@ -1,10 +1,10 @@
-// Module ID: 12826
-// Function ID: 12827
+// Module ID: 12825
+// Function ID: 12826
 // Name: ChatPreview
 // Dependencies: [19, 17, 4825, 4521, 2045, 1372, 7375, 21, 4836, 576, 4540, 11032, 7374, 10822, 10841, 11434, 4512, 1115, 10840, 12, 7333, 4847, 11111, 11079, 11042, 5067, 1876, 11152, 7413, 10824, 7183, 11041, 11043, 11078, 12162, 12164, 11373, 1364, 6544, 5435, 4832, 2021, 504, 1479, 6747, 5046, 2]
 // Exports: ChatPreview
 
-// Module 12826 (ChatPreview)
+// Module 12825 (ChatPreview)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -223,7 +223,7 @@ class ChatPreviewBase extends PureComponent {
         const chatManager4 = applyArgumentsResult.chatManager;
         const jumpTargetId = tmp3.jumpTargetId;
         const previousRows = chatManager4.getPreviousRows();
-        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "flexDirection", shouldInitialScroll: "Array", animated: "2026-08-badge-management", scrollPosition: "user", focusTargetId: null };
+        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "flexDirection", shouldInitialScroll: "Array", animated: 0, scrollPosition: 2, focusTargetId: 0 };
         applyArgumentsResult.scrollData = computeScrollDataDefault(obj3);
         if (!tmp7) {
           if (obj.didPositionInitialScroll) {

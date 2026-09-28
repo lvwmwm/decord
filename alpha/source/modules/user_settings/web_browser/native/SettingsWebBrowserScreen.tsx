@@ -1,11 +1,11 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15028
+// Function ID: 15029
 // Name: SettingsWebBrowserScreen
-// Dependencies: [19, 7417, 21, 11006, 14248, 2]
+// Dependencies: [19, 7417, 21, 11006, 14247, 2]
 
-// Module 15030 (SettingsWebBrowserScreen)
+// Module 15028 (SettingsWebBrowserScreen)
 import SettingBuilders from "SettingBuilders" /* 11006 */;
-import SettingLayoutDefault from "SettingLayout" /* 14248 */;
+import SettingLayoutDefault from "SettingLayout" /* 14247 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

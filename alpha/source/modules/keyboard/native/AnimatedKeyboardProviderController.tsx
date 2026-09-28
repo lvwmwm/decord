@@ -1,9 +1,9 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14135
+// Function ID: 14136
 // Name: AnimatedKeyboardProviderController
 // Dependencies: [19, 21, 4566, 1627, 2]
 
-// Module 14136 (AnimatedKeyboardProviderController)
+// Module 14135 (AnimatedKeyboardProviderController)
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1627 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4566 */;
 import noop from "module_19" /* 19 */;
