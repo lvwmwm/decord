@@ -1,65 +1,92 @@
 // Module ID: 8622
 // Function ID: 8623
-// Dependencies: [41, 42, 93, 95, 98, 19, 8590]
+// Dependencies: [8623]
 
 // Module 8622
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+const require = globalThis.__r;
 
-const FeDistantLight = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
+function flattenStyle(obj) {
+  if (null !== obj) {
+    if (typeof obj === "object") {
+      const _Array = Array;
+      if (Array.isArray(obj)) {
+        obj = {};
+        for (let num3 = 0; num3 < length; num3 = num3 + 1) {
+          let tmp3 = flattenStyle(obj[num3]);
+          if (tmp3) {
+            for (const key10019 in tmp3) {
+              obj[key10019] = tmp3[key10019];
+              continue;
+            }
+          }
+        }
+        return obj;
+      } else {
+        return obj;
+      }
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
   }
 }
-class FeDistantLight {
-  constructor() {
-    self = this;
-    tmp = c2(this, FeDistantLight);
-    tmp2 = closure_4;
-    obj = closure_4(FeDistantLight);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+
+export default function DeprecatedStyleSheetPropType(arg0) {
+  _require = require("deprecatedCreateStrictShapeTypeChecker")(arg0);
+  return (arg0, arg1, arg2, arg3) => {
+    const substr = [...arguments].slice();
+    if (arg0[arg1]) {
+      let tmp4;
+      if (null !== arg0[arg1]) {
+        if (typeof arr === "object") {
+          const _Array = Array;
+          tmp4 = arr;
+          if (Array.isArray(arr)) {
+            const obj = {};
+            let num3 = 0;
+            tmp4 = obj;
+            if (0 < arr.length) {
+              do {
+                let arr2 = arr[num3];
+                let tmp6;
+                if (null !== arr2) {
+                  if (typeof arr2 === "object") {
+                    let _Array2 = Array;
+                    tmp6 = arr2;
+                    if (Array.isArray(arr2)) {
+                      let obj2 = {};
+                      let length2 = arr2.length;
+                      let num4 = 0;
+                      tmp6 = obj2;
+                      if (0 < length2) {
+                        do {
+                          let tmp8 = flattenStyle(arr2[num4]);
+                          if (tmp8) {
+                            for (const key10029 in tmp8) {
+                              obj2[key10029] = tmp8[key10029];
+                              continue;
+                            }
+                          }
+                          num4 = num4 + 1;
+                          tmp6 = obj2;
+                        } while (num4 < length2);
+                      }
+                    }
+                  }
+                }
+                if (tmp6) {
+                  for (const key10032 in tmp6) {
+                    obj[key10032] = tmp6[key10032];
+                    continue;
+                  }
+                }
+                num3 = num3 + 1;
+                tmp4 = obj;
+              } while (num3 < length);
+            }
+          }
+        }
+      }
+      const obj3 = {};
+      obj3[arg1] = tmp4;
     }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FeDistantLight, fn(19).Component);
-const entry = {
-  key: "render",
-  value: function render() {
-    const result = FeDistantLight(8590).warnUnimplementedFilter();
-    return null;
-  }
+    return closure_0(arg1, arg2, arg3, ...substr);
+  };
 };
-const items = [entry];
-const importDefaultResultResult = _createClass(FeDistantLight, items);
-importDefaultResultResult.displayName = "FeDistantLight";
-importDefaultResultResult.defaultProps = {};
-
-export default importDefaultResultResult;

@@ -1,12 +1,12 @@
-// Module ID: 5067
-// Function ID: 5068
+// Module ID: 5229
+// Function ID: 5230
 // Name: ButtonShine
-// Dependencies: [32, 19, 21, 5062, 672, 4488, 4373, 4637, 4636, 2]
+// Dependencies: [32, 19, 21, 5224, 672, 4639, 4524, 4789, 4788, 2]
 // Exports: ButtonShine
 
-// Module 5067 (ButtonShine)
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import timing from "timing" /* 4637 */;
+// Module 5229 (ButtonShine)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import timing from "timing" /* 4789 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

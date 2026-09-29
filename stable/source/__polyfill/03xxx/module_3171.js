@@ -1,9 +1,9 @@
 // Module ID: 3171
 // Function ID: 3172
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3171
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tenure_reward", scales: [1], hash: "4ce7db81a29e051a11be32b72852c173", name: "TenureReward.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hcHBsaWNhdGlvbl93aWRnZXQ=", scales: [1], hash: "3da1619e28fe1deba72e17c35a434b01", name: "fi.messages.3da1619e28fe1deba72e17c35a434b01.compiled.messages", type: "jsona" });

@@ -1,23 +1,23 @@
-// Module ID: 15335
-// Function ID: 15336
+// Module ID: 15524
+// Function ID: 15525
 // Name: OutputVolumeSetting
-// Dependencies: [1908, 8079, 504, 11605, 1114, 9218, 10111, 2]
+// Dependencies: [1992, 8265, 504, 11754, 1115, 9943, 10278, 2]
 
-// Module 15335 (OutputVolumeSetting)
+// Module 15524 (OutputVolumeSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9218 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10111 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
+import util from "util" /* 1115 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9943 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10278 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 require = fn;
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11754);
 const volumeSlider = SettingBuilders.createVolumeSlider({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.xPHVBs);
   },
-  parent: fn(8079).MobileUserSettings.VOICE,
+  parent: fn(8265).MobileUserSettings.VOICE,
   maximum: 200,
   useValue: function useOutputVolumeSettingValue() {
     const items = [MediaEngineStore];

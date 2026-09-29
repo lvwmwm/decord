@@ -1,9 +1,9 @@
 // Module ID: 11337
 // Function ID: 11338
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11337
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/badge", width: 30, height: 30, scales: [2, 3], hash: "581374036ac67fb316291b50b3effd2f", name: "ic_badge_nitro", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 375, height: 460, scales: [1], hash: "c8d53ba30e41e7296c825f2501df590c", name: "premium_gift_plan_selection_header", type: "png" });

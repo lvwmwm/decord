@@ -1,13 +1,13 @@
-// Module ID: 15698
-// Function ID: 15699
+// Module ID: 15892
+// Function ID: 15893
 // Name: RecordPlayerIcon
-// Dependencies: [19, 21, 576, 4337, 15699, 2]
+// Dependencies: [19, 21, 576, 4488, 15893, 2]
 // Exports: RecordPlayerIcon
 
-// Module 15698 (RecordPlayerIcon)
+// Module 15892 (RecordPlayerIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod15699 from "module_15699" /* 15699 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod15893 from "module_15893" /* 15893 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const RecordPlayerIcon = function RecordPlayerIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15699, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15893, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

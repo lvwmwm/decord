@@ -1,12 +1,12 @@
-// Module ID: 12039
-// Function ID: 12040
+// Module ID: 12189
+// Function ID: 12190
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 8537, 21, 4636, 12022, 1114, 12020, 12040, 4632, 12034, 2]
+// Dependencies: [19, 17, 8723, 21, 4788, 12172, 1115, 12170, 12190, 4784, 12184, 2]
 // Exports: default
 
-// Module 12039 (AppealIngestionRequestSent)
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12034 */;
-import _modDef12040 from "module_12040" /* 12040 */;
+// Module 12189 (AppealIngestionRequestSent)
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12184 */;
+import _modDef12190 from "module_12190" /* 12190 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,11 +14,11 @@ const require = globalThis.__r;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const SafetyHubConstants = fn(8537);
+const SafetyHubConstants = fn(8723);
 ({ SafetyHubAnalyticsActions: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_9 = createStyles.createStyles({ container: { flex: 1, padding: 8 }, actionsHeader: { marginTop: 31, marginBottom: 16 }, checkboxPng: { width: 86, height: 78.33, marginLeft: -2, alignSelf: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionRequestSent.tsx");
@@ -33,13 +33,13 @@ export default function AppealIngestionRequestSent() {
   const obj2 = { children: null };
   const obj3 = { style: tmp.container, children: null };
   const stringResult1 = intl2.string(require("util").t.Qdx8AP);
-  const items = [closure_7(closure_4, { source: _modDef12040, style: tmp.checkboxPng }), closure_7(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , ];
+  const items = [closure_7(closure_4, { source: _modDef12190, style: tmp.checkboxPng }), closure_7(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , ];
   const obj5 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: null };
   const intl3 = require("util").intl;
   obj5.children = intl3.string(require("util").t["9BRc1N"]);
   items[2] = closure_7(require("Text/Text").Text, obj5);
   const obj6 = { text: null, url: null, onPress: null };
-  const obj4 = { source: _modDef12040, style: tmp.checkboxPng };
+  const obj4 = { source: _modDef12190, style: tmp.checkboxPng };
   const intl4 = require("util").intl;
   obj6.text = intl4.string(require("util").t.PxL38B);
   obj6.url = constants.COMMUNITY_GUIDELINES;

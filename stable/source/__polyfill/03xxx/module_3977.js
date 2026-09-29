@@ -1,31 +1,46 @@
 // Module ID: 3977
 // Function ID: 3978
-// Dependencies: [3973, 3726]
-// Exports: default
+// Dependencies: [3978, 3979, 3980, 3981, 3982]
 
 // Module 3977
-import module_3973_mod from "module_3973" /* 3973 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import module_3978 from "module_3978" /* 3978 */;
+import module_3979 from "module_3979" /* 3979 */;
+import dayAndTimeWithAdjective from "dayAndTimeWithAdjective" /* 3980 */;
+import date_mod from "module_3981" /* 3981 */;
+import date_mod from "module_3982" /* 3982 */;
 
-let module_3973 = module_3973_mod;
-if (!module_3973) {
-  const obj = { default: module_3973 };
+if (!module_3978) {
+  const obj = { default: module_3978 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3973;
+  tmp3 = module_3978;
 }
-module_3973 = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+if (!module_3979) {
+  const obj2 = { default: module_3979 };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = module_3979;
 }
-requiredArgs = tmp5;
+if (!dayAndTimeWithAdjective) {
+  const obj3 = { default: dayAndTimeWithAdjective };
+  let tmp7 = obj3;
+} else {
+  tmp7 = dayAndTimeWithAdjective;
+}
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
+  let tmp9 = obj4;
+} else {
+  tmp9 = date;
+}
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
 
-export default function formatDistanceToNow(arg0, arg1) {
-  requiredArgs.default(1, arguments);
-  return module_3973.default(arg0, Date.now(), arg1);
-};
+export default { code: "pl", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

@@ -1,28 +1,29 @@
-// Module ID: 17023
-// Function ID: 17024
+// Module ID: 17381
+// Function ID: 17382
 // Name: MainShared
-// Dependencies: [19, 1957, 4659, 21, 504, 9620, 4494, 9811, 17024, 14667, 1114, 17026, 14523, 2, 17027, 17028, 17029, 17030, 17038, 17039, 17071]
+// Dependencies: [19, 2041, 4811, 21, 504, 9691, 4645, 9802, 17382, 1364, 5214, 1115, 17384, 14745, 2, 17385, 17386, 17387, 17388, 17396, 17397, 17428]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 17023 (MainShared)
+// Module 17381 (MainShared)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4494 */;
-import usePipVideoOrStream from "usePipVideoOrStream" /* 9620 */;
-import VoicePanelUtils from "VoicePanelUtils" /* 9811 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 14523 */;
-import KeyCommands from "KeyCommands" /* 14667 */;
-import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 17024 */;
-import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 17027 */;
-import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 17028 */;
-import components_ActionSheetPresenterDefault from "components/ActionSheetPresenter" /* 17029 */;
-import AlertsDefault from "Alerts" /* 17030 */;
-import SoundPlayerDefault from "SoundPlayer" /* 17038 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 17039 */;
-import ToastContainerDefault from "ToastContainer" /* 17071 */;
+import util from "util" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4645 */;
+import KeyCommands from "KeyCommands" /* 5214 */;
+import usePipVideoOrStream from "usePipVideoOrStream" /* 9691 */;
+import VoicePanelUtils from "VoicePanelUtils" /* 9802 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 14745 */;
+import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 17382 */;
+import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 17385 */;
+import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 17386 */;
+import components_ActionSheetPresenterDefault from "components/ActionSheetPresenter" /* 17387 */;
+import AlertsDefault from "Alerts" /* 17388 */;
+import SoundPlayerDefault from "SoundPlayer" /* 17396 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 17397 */;
+import ToastContainerDefault from "ToastContainer" /* 17428 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -60,13 +61,15 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
 };
 export const useAppKeyCommands = function useAppKeyCommands() {
   const memo = noop.useMemo(() => {
-    const obj = { input: "k", modifierFlags: KeyCommands.KeyModifierFlags.keyModifierCommand, eventName: "keyCommandShowQuickSwitcher", discoverabilityTitle: null, onKeyCommand: null };
-    const intl = util.intl;
-    obj.discoverabilityTitle = intl.string(util.t.yYsRlD);
-    obj.onKeyCommand = function onKeyCommand() {
-      closure_1_1(dependencyMap[11])();
+    const KeyModifierFlags = KeyCommands.KeyModifierFlags;
+    const obj2 = { input: "k", modifierFlags: PlatformUtils.isAndroid() ? KeyModifierFlags.keyModifierControl : KeyModifierFlags.keyModifierCommand, eventName: "keyCommandShowQuickSwitcher", discoverabilityTitle: null, onKeyCommand: null };
+    const intl = tmp(1115).intl;
+    obj2.discoverabilityTitle = intl.string(util.t.yYsRlD);
+    obj2.onKeyCommand = function onKeyCommand() {
+      closure_1_1(dependencyMap[12])();
+      return true;
     };
-    const items = [obj];
+    const items = [obj2];
     return items;
   }, []);
   const keyCommands = KeyCommands.useKeyCommands(memo);

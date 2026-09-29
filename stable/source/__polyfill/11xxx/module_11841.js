@@ -1,9 +1,9 @@
 // Module ID: 11841
 // Function ID: 11842
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11841
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6deb5144fd1fa39d4c62b384e76c1144", name: "BookmarkIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/opt_in_channels/native/images", width: 192, height: 108, scales: [2, 3], hash: "980015ffe7387bf43c649905ee978399", name: "nux", type: "png" });

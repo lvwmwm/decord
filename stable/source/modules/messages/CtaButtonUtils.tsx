@@ -1,14 +1,14 @@
-// Module ID: 12045
-// Function ID: 12046
+// Module ID: 12195
+// Function ID: 12196
 // Name: CtaButtonUtils
-// Dependencies: [4850, 12046, 4849, 504, 2]
+// Dependencies: [5001, 12196, 5000, 504, 2]
 // Exports: getCtaButtonType, useCtaButtonType
 
-// Module 12045 (CtaButtonUtils)
+// Module 12195 (CtaButtonUtils)
 import initialize from "initialize" /* 504 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4849 */;
-import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 12046 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 4850 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5000 */;
+import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 12196 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5001 */;
 
 require = fn;
 const CtaButtonType = { MARK_AS_FALSE_POSITIVE: "mark_as_false_positive", AGE_VERIFICATION_RETRY: "age_verification_retry", CONNECT_TO_TEEN: "connect_to_teen", AGE_VERIFICATION_MANUAL_REVIEW: "age_verification_manual_review" };
@@ -27,9 +27,9 @@ export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
       if (tmpResult2.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id)) {
         CONNECT_TO_TEEN = obj.CONNECT_TO_TEEN;
       }
-      tmpResult2 = tmp(4849);
+      tmpResult2 = tmp(5000);
     }
-    tmpResult = tmp(4849);
+    tmpResult = tmp(5000);
   }
   return CONNECT_TO_TEEN;
 };

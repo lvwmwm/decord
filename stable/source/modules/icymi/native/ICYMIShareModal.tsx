@@ -1,30 +1,30 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16845
+// Function ID: 16846
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 1957, 4977, 4976, 1074, 10992, 4629, 21, 4636, 576, 9905, 1114, 16600, 4335, 1477, 4490, 7975, 16601, 5206, 4455, 4347, 7084, 11825, 11834, 5056, 4839, 11117, 1369, 7784, 9436, 1254, 5209, 7559, 9439, 1611, 1363, 5712, 7966, 5705, 11120, 2]
+// Dependencies: [32, 5, 19, 17, 2041, 5137, 5136, 1074, 11151, 4781, 21, 4788, 576, 9904, 1115, 16846, 4486, 1478, 4641, 8148, 16847, 5373, 4606, 4498, 7258, 11974, 11983, 5218, 4991, 11276, 1370, 7950, 9453, 1255, 5376, 7730, 9455, 1612, 1364, 5880, 8139, 5873, 11279, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 16599 (ICYMIShareModal)
+// Module 16845 (ICYMIShareModal)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
-import native from "native" /* 4347 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4455 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4490 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5206 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7084 */;
-import HeaderShared from "HeaderShared" /* 7966 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7975 */;
-import ShareEventUtils from "ShareEventUtils" /* 9905 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 11825 */;
-import ShareChatInputDefault from "ShareChatInput" /* 11834 */;
-import _modDef16601 from "module_16601" /* 16601 */;
+import util from "util" /* 1115 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import native from "native" /* 4498 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4606 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4641 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5373 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7258 */;
+import HeaderShared from "HeaderShared" /* 8139 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8148 */;
+import ShareEventUtils from "ShareEventUtils" /* 9904 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 11974 */;
+import ShareChatInputDefault from "ShareChatInput" /* 11983 */;
+import _modDef16847 from "module_16847" /* 16847 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 4976 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5136 */;
 
 const require = globalThis.__r;
 
@@ -60,7 +60,7 @@ function Screenshot(setUri) {
   const obj5 = { style: tmp.base, children: null };
   const obj6 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj7 = { dark: null, light: null };
-  const tmp6 = _modDef16601;
+  const tmp6 = _modDef16847;
   obj7.dark = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_7;
   obj7.light = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_8;
   obj6.mixAmount = obj7;
@@ -91,12 +91,12 @@ function GravityShareFooter(arg0) {
     onSend(first);
   }, items);
   if (count <= 1) {
-    const intl2 = tmp7(1114).intl;
-    let stringResult = intl2.string(tmp7(1114).t.TXNS7S);
+    const intl2 = tmp7(1115).intl;
+    let stringResult = intl2.string(tmp7(1115).t.TXNS7S);
   } else {
-    const intl = tmp7(1114).intl;
+    const intl = tmp7(1115).intl;
     const obj2 = { count };
-    stringResult = intl.formatToPlainString(tmp7(1114).t.jWtYUm, obj2);
+    stringResult = intl.formatToPlainString(tmp7(1115).t.jWtYUm, obj2);
   }
   const items1 = [tmp.footer, insets.bottom];
   let tmp14Result = null;
@@ -111,7 +111,7 @@ function GravityShareFooter(arg0) {
     }
     obj5.onPress = tmp17;
     obj5.loading = isSending;
-    items2[1] = map1(tmp7(5056).Button, obj5);
+    items2[1] = map1(tmp7(5218).Button, obj5);
     obj3.children = items2;
     tmp14Result = closure_1_14(View, obj3);
   }
@@ -376,13 +376,13 @@ class ICYMIShareModal {
   }
 }
 const View = fn(17).View;
-const DraftType = fn(4977).DraftType;
+const DraftType = fn(5137).DraftType;
 const AbortCodes = fn(1074).AbortCodes;
-const UserRowModes = fn(10992).UserRowModes;
-const MessageSendLocation = fn(4629).MessageSendLocation;
+const UserRowModes = fn(11151).UserRowModes;
+const MessageSendLocation = fn(4781).MessageSendLocation;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { headerLeftContainer: { paddingLeft: nativeDefault.space.PX_16 }, headerRightContainer: null, preview: null, base: null, contentContainer: null, footer: null };
 let obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj2.headerRightContainer = { paddingRight: nativeDefault.space.PX_16 };
@@ -450,7 +450,7 @@ export const GameShareModal = function GameShareModal(content) {
             const obj6 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
             c5 = 2;
             c6 = 1;
-            const obj7 = { value: entry(16600).sendMessageWithEmbed(obj6), done: false };
+            const obj7 = { value: entry(16846).sendMessageWithEmbed(obj6), done: false };
             return obj7;
           }
         } else if (1 === tmp7) {
@@ -461,9 +461,9 @@ export const GameShareModal = function GameShareModal(content) {
             tmp12 = closure_129_1.body.code === constants.CONTENT_INVENTORY_ENTRY_INVALID_PERMISSION;
           }
           closure_129_0 = tmp12;
-          const intl = entry(1114).intl;
+          const intl = entry(1115).intl;
           const string = intl.string;
-          let t = entry(1114).t;
+          let t = entry(1115).t;
           if (closure_129_0) {
             let stringResult = string(t.BC5vfD);
           } else {

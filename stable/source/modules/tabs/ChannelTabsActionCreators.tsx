@@ -1,18 +1,18 @@
-// Module ID: 11125
-// Function ID: 11126
+// Module ID: 11284
+// Function ID: 11285
 // Name: ChannelTabsActionCreators
-// Dependencies: [1957, 2011, 4458, 11126, 1074, 1964, 4837, 1100, 4647, 573, 2]
+// Dependencies: [2041, 2095, 4609, 11285, 1074, 2048, 4989, 1101, 4799, 573, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, selectChannelTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 11125 (ChannelTabsActionCreators)
+// Module 11284 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import router_utils from "router_utils" /* 1100 */;
-import transitionToChannel from "transitionToChannel" /* 4647 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4837 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 11126 */;
+import router_utils from "router_utils" /* 1101 */;
+import transitionToChannel from "transitionToChannel" /* 4799 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 11285 */;
 
 require = fn;
 function navigateToTabLocation(found) {
@@ -52,8 +52,8 @@ function openChannelTabActive(id, guildId) {
     if (SelectedChannelStore.getCurrentlySelectedChannelId() !== id) {
       const channel1 = ChannelStore.getChannel(id);
       if (tmp18) {
-        tmp15(4837).updateChatOpen(id, true);
-        const tmp15Result = tmp15(4837);
+        tmp15(4989).updateChatOpen(id, true);
+        const tmp15Result = tmp15(4989);
       }
       if (null != guildId) {
         router_utils.transitionTo(Routes.CHANNEL(guildId, id), { openChannel: true });
@@ -113,8 +113,8 @@ function navigateActiveTabHistory(arg0) {
               const channel = obj13.getChannel(channelId);
               const tmp35 = importDefault;
               if (tmp8) {
-                tmp35(4837).updateChatOpen(channelId, true);
-                const tmp35Result = tmp35(4837);
+                tmp35(4989).updateChatOpen(channelId, true);
+                const tmp35Result = tmp35(4989);
               }
               if (null != guildId) {
                 router_utils.transitionTo(Routes.CHANNEL(guildId, channelId), { openChannel: true });
@@ -136,7 +136,7 @@ function navigateActiveTabHistory(arg0) {
   }
 }
 const Routes = fn(1074).Routes;
-const isStaticChannelRoute = fn(1964).isStaticChannelRoute;
+const isStaticChannelRoute = fn(2048).isStaticChannelRoute;
 const TabHistoryNavResult = { Passthrough: "passthrough", Noop: "noop", Navigated: "navigated" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/tabs/ChannelTabsActionCreators.tsx");

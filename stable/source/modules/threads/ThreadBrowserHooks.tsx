@@ -1,27 +1,27 @@
-// Module ID: 12894
-// Function ID: 12895
+// Module ID: 13043
+// Function ID: 13044
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 12895, 1957, 4275, 4651, 5588, 7868, 4277, 1085, 7883, 504, 12, 1369, 11, 7867, 8002, 2]
+// Dependencies: [32, 19, 13044, 2041, 4427, 4803, 5756, 8040, 4429, 1085, 8055, 504, 12, 1370, 11, 8039, 8174, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 12894 (ThreadBrowserHooks)
+// Module 13043 (ThreadBrowserHooks)
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7867 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 8002 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8039 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8174 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import ReadStateStore from "ReadStateStore" /* 4651 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5588 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7868 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4277 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import ReadStateStore from "ReadStateStore" /* 4803 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5756 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8040 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_5 = fn(12895).useShouldShowResolvedFlagsForChannel;
+let closure_5 = fn(13044).useShouldShowResolvedFlagsForChannel;
 const Permissions = fn(1085).Permissions;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/threads/ThreadBrowserHooks.tsx");

@@ -1,9 +1,9 @@
 // Module ID: 8205
 // Function ID: 8206
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 8205
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "06dd03fc60ccef8d12f4f7cb6c5d239c", name: "XNeutralIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dc76a43601a93031b91e3ad463d63b85", name: "ThumbsDownIcon", type: "png" });

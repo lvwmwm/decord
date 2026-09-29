@@ -1,11 +1,11 @@
-// Module ID: 17317
-// Function ID: 17318
+// Module ID: 17675
+// Function ID: 17676
 // Name: useControlAccessoryHeight
-// Dependencies: [19, 12405, 17284, 4373, 17290, 17165, 17288, 2]
+// Dependencies: [19, 12554, 17642, 4524, 17648, 17522, 17646, 2]
 // Exports: default
 
-// Module 17317 (useControlAccessoryHeight)
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17290 */;
+// Module 17675 (useControlAccessoryHeight)
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17648 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,7 +1,9 @@
 // Module ID: 8443
 // Function ID: 8444
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 8443
+import registerAsset from "module_1121" /* 1121 */;
 
-export default { DeprecatedAccessibilityRoles: ["none", "button", "togglebutton", "link", "search", "image", "keyboardkey", "text", "adjustable", "imagebutton", "header", "summary", "alert", "checkbox", "combobox", "menu", "menubar", "menuitem", "progressbar", "radio", "radiogroup", "scrollbar", "spinbutton", "switch", "tab", "tablist", "timer", "toolbar"] };
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 16, height: 16, scales: [1, 2, 3], hash: "2b87933d8084823c9896755fb55aa5f1", name: "ic_spotify_white_16px", type: "png" });

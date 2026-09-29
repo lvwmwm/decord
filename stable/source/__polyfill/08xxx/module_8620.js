@@ -1,67 +1,44 @@
 // Module ID: 8620
 // Function ID: 8621
-// Dependencies: [41, 42, 93, 95, 98, 8590, 8613]
+// Dependencies: [8621, 8622, 8629, 4617]
 
 // Module 8620
-import _modDef8613 from "module_8613" /* 8613 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod8621 from "module_8621" /* 8621 */;
+import _mod8629 from "module_8629" /* 8629 */;
+import flattenStyle from "module_8622" /* 8622 */;
+import "module_4617";
+import emptyFunction_mod from "module_4617" /* 4617 */;
 
-const FeDiffuseLighting = arg1;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class FeDiffuseLighting {
-  constructor() {
-    self = this;
-    tmp = c2(this, FeDiffuseLighting);
-    tmp2 = closure_4;
-    obj = closure_4(FeDiffuseLighting);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FeDiffuseLighting, _modDef8613);
-const entry = {
-  key: "render",
-  value: function render() {
-    const result = FeDiffuseLighting(8590).warnUnimplementedFilter();
-    return null;
-  }
-};
-const items = [entry];
-const importDefaultResultResult = _createClass(FeDiffuseLighting, items);
-importDefaultResultResult.displayName = "FeDiffuseLighting";
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = {};
+const obj = {};
+const module_8621 = Object.assign(_mod8621);
+obj.style = flattenStyle(_mod8629);
+let emptyFunction = emptyFunction_mod;
+const obj2 = { uri: emptyFunction.string, headers: null };
+let emptyFunction = emptyFunction_mod;
+obj2.headers = emptyFunction.objectOf(emptyFunction.string);
+const items = [emptyFunction.shape(obj2), emptyFunction.number, ];
+let emptyFunction = emptyFunction_mod;
+const size = { uri: emptyFunction.string, width: emptyFunction.number, height: emptyFunction.number, headers: null };
+let emptyFunction = emptyFunction_mod;
+size.headers = emptyFunction.objectOf(emptyFunction.string);
+items[2] = emptyFunction.arrayOf(emptyFunction.shape(size));
+obj.source = emptyFunction.oneOfType(items);
+obj.blurRadius = emptyFunction.number;
+obj.defaultSource = emptyFunction.number;
+let emptyFunction = emptyFunction_mod;
+const items1 = [emptyFunction.shape({ uri: emptyFunction.string }), emptyFunction.number];
+obj.loadingIndicatorSource = emptyFunction.oneOfType(items1);
+obj.progressiveRenderingEnabled = emptyFunction.bool;
+obj.fadeDuration = emptyFunction.number;
+obj.internal_analyticTag = emptyFunction.string;
+obj.onLoadStart = emptyFunction.func;
+obj.onError = emptyFunction.func;
+obj.onLoad = emptyFunction.func;
+obj.onLoadEnd = emptyFunction.func;
+obj.testID = emptyFunction.string;
+let emptyFunction = emptyFunction_mod;
+obj.resizeMethod = emptyFunction.oneOf(["auto", "resize", "scale"]);
+let emptyFunction = emptyFunction_mod;
+obj.resizeMode = emptyFunction.oneOf(["cover", "contain", "stretch", "repeat", "center"]);
 
-export default importDefaultResultResult;
+export default obj;

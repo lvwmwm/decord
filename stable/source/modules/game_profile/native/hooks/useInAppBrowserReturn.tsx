@@ -1,14 +1,14 @@
-// Module ID: 8810
-// Function ID: 8811
+// Module ID: 8990
+// Function ID: 8991
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 8805, 1364, 4601, 8803, 8809, 2]
+// Dependencies: [19, 8985, 1365, 4752, 8983, 8989, 2]
 // Exports: default
 
-// Module 8810 (useInAppBrowserReturn)
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8803 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8809 */;
+// Module 8990 (useInAppBrowserReturn)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8983 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8989 */;
 import noop from "module_19" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8805 */;
+import GameProfileStore from "GameProfileStore" /* 8985 */;
 
 require = fn;
 const size = fn(2);

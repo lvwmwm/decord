@@ -1,9 +1,9 @@
-// Module ID: 14538
-// Function ID: 14539
+// Module ID: 14760
+// Function ID: 14761
 // Name: NativeNotifSettingsModule
 // Dependencies: [17, 2]
 
-// Module 14538 (NativeNotifSettingsModule)
+// Module 14760 (NativeNotifSettingsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 1177
-// Function ID: 1178
+// Module ID: 1178
+// Function ID: 1179
 // Name: StatusConstants
 // Dependencies: [2]
 
-// Module 1177 (StatusConstants)
+// Module 1178 (StatusConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/void/Status/native/StatusConstants.tsx");

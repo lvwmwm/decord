@@ -1,86 +1,45 @@
 // Module ID: 8624
 // Function ID: 8625
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8625, 8612, 8613]
+// Dependencies: [8625, 8626, 8627, 4617, 8617]
 
 // Module 8624
-import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef8613 from "module_8613" /* 8613 */;
-import _modDef8625 from "module_8625" /* 8625 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import colorPropType from "colorPropType" /* 8617 */;
+import _mod8625 from "module_8625" /* 8625 */;
+import merged12 from "merged1" /* 8626 */;
+import merged22 from "merged2" /* 8627 */;
+import emptyFunction_mod from "module_4617" /* 4617 */;
 
-const FeGaussianBlur = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-_possibleConstructorReturnDefault;
-const jsx = fn(21).jsx;
-class FeGaussianBlur {
-  constructor() {
-    self = this;
-    tmp = closure_3(this, FeGaussianBlur);
-    tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(FeGaussianBlur);
-    tmp3 = closure_4;
-    if (closure_7()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FeGaussianBlur, _modDef8613);
-const entry = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    };
-    const merged = Object.assign(FeGaussianBlur(8612).extractFilter(this.props));
-    const obj2 = FeGaussianBlur(8612);
-    const merged1 = Object.assign(FeGaussianBlur(8612).extractIn(this.props));
-    const obj3 = FeGaussianBlur(8612);
-    const merged2 = Object.assign(FeGaussianBlur(8612).extractFeGaussianBlur(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
-  }
-};
-const items = [entry];
-const importDefaultResultResult = _createClass(FeGaussianBlur, items);
-importDefaultResultResult.displayName = "FeGaussianBlur";
-let obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.stdDeviation = 0;
-obj.edgeMode = "none";
-importDefaultResultResult.defaultProps = obj;
+const obj = {};
+const size = Object.assign(_mod8625);
+const merged1 = Object.assign(merged12);
+const merged2 = Object.assign(merged22);
+let emptyFunction = emptyFunction_mod;
+obj.backfaceVisibility = emptyFunction.oneOf(["visible", "hidden"]);
+obj.backgroundColor = colorPropType;
+obj.borderColor = colorPropType;
+obj.borderTopColor = colorPropType;
+obj.borderRightColor = colorPropType;
+obj.borderBottomColor = colorPropType;
+obj.borderLeftColor = colorPropType;
+obj.borderStartColor = colorPropType;
+obj.borderEndColor = colorPropType;
+obj.borderRadius = emptyFunction.number;
+obj.borderTopLeftRadius = emptyFunction.number;
+obj.borderTopRightRadius = emptyFunction.number;
+obj.borderTopStartRadius = emptyFunction.number;
+obj.borderTopEndRadius = emptyFunction.number;
+obj.borderBottomLeftRadius = emptyFunction.number;
+obj.borderBottomRightRadius = emptyFunction.number;
+obj.borderBottomStartRadius = emptyFunction.number;
+obj.borderBottomEndRadius = emptyFunction.number;
+let emptyFunction = emptyFunction_mod;
+obj.borderStyle = emptyFunction.oneOf(["solid", "dotted", "dashed"]);
+obj.borderWidth = emptyFunction.number;
+obj.borderTopWidth = emptyFunction.number;
+obj.borderRightWidth = emptyFunction.number;
+obj.borderBottomWidth = emptyFunction.number;
+obj.borderLeftWidth = emptyFunction.number;
+obj.opacity = emptyFunction.number;
+obj.elevation = emptyFunction.number;
 
-export default importDefaultResultResult;
+export default obj;

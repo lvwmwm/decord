@@ -1,12 +1,12 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9443
+// Function ID: 9444
 // Name: useNSFWAllowed
-// Dependencies: [1371, 504, 2]
+// Dependencies: [1372, 504, 2]
 // Exports: useNSFWAllowed
 
-// Module 9426 (useNSFWAllowed)
+// Module 9443 (useNSFWAllowed)
 import initialize from "initialize" /* 504 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

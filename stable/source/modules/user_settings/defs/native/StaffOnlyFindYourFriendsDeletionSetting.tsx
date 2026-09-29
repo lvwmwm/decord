@@ -1,10 +1,10 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 15122
+// Function ID: 15123
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8079, 21, 1242, 1247, 4259, 12813, 1324, 4335, 11605, 14932, 2]
+// Dependencies: [5, 17, 8265, 21, 1243, 1248, 4411, 12962, 1325, 4486, 11754, 15123, 2]
 
-// Module 14931 (StaffOnlyFindYourFriendsDeletionSetting)
-import _mod4259 from "module_4259" /* 4259 */;
+// Module 15122 (StaffOnlyFindYourFriendsDeletionSetting)
+import _mod4411 from "module_4411" /* 4411 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -97,16 +97,16 @@ let closure_8 = async function _onFindYourFriendsDeletionPress(arg0, value) {
 };
 const ActivityIndicator = fn(17).ActivityIndicator;
 const jsx = fn(21).jsx;
-const identity = fn(1242);
+const identity = fn(1243);
 let closure_6 = identity.createWithEqualityFn(() => ({ isLoading: false }));
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11754);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
-  parent: fn(8079).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8265).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6((isLoading) => isLoading.isLoading, _mod4259.shallow);
+    return closure_6((isLoading) => isLoading.isLoading, _mod4411.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     const self = this;
@@ -118,10 +118,10 @@ const pressable = SettingBuilders.createPressable({
     }
     return applyArgumentsResult;
   },
-  usePredicate: fn(14932).useStaffOrDeveloperSettingPredicate,
+  usePredicate: fn(15123).useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (closure_6((isLoading) => isLoading.isLoading, _mod4259.shallow)) {
+    if (closure_6((isLoading) => isLoading.isLoading, _mod4411.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

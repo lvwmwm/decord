@@ -1,22 +1,22 @@
-// Module ID: 1385
-// Function ID: 1386
+// Module ID: 1386
+// Function ID: 1387
 // Name: UserRecord
-// Dependencies: [1386, 1074, 1373, 1387, 1388, 1392, 1393, 1377, 1394, 1395, 1086, 11, 1396, 1384, 1885, 1379, 1881, 1886, 2]
+// Dependencies: [1387, 1074, 1374, 1388, 1389, 1393, 1394, 1378, 1395, 1396, 1086, 11, 1397, 1385, 1969, 1380, 1965, 1970, 2]
 
-// Module 1385 (UserRecord)
+// Module 1386 (UserRecord)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import FlagUtils from "FlagUtils" /* 1384 */;
-import AvatarUtils from "AvatarUtils" /* 1396 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1881 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1885 */;
-import Record from "Record" /* 1386 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import AvatarUtils from "AvatarUtils" /* 1397 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1965 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+import Record from "Record" /* 1387 */;
 
 const AvatarUtilsDefault = AvatarUtils;
 
 require = fn;
 const Constants = fn(1074);
 ({ LOCAL_BOT_ID: closure_4, NON_USER_BOT_DISCRIMINATOR: hasOwnProperty, PREMIUM_TYPE_NONE: metroRequire, UserFlags: closure_7 } = Constants);
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ SKU_ID_PURCHASED_FLAGS: closure_8, PremiumTypes: closure_9, PurchasedFlags: c10 } = PremiumConstants);
 class UserRecord extends tmp2 {
   constructor(arg0) {
@@ -401,8 +401,8 @@ Object.defineProperty(prototype, "tag", {
   },
   set: undefined
 });
-prototype["hasPurchasedFlag"] = function hasPurchasedFlag(PREMIUM_TIER_2) {
-  return FlagUtils.hasFlag(this.purchasedFlags, PREMIUM_TIER_2);
+prototype["hasPurchasedFlag"] = function hasPurchasedFlag(PREMIUM_TIER_0) {
+  return FlagUtils.hasFlag(this.purchasedFlags, PREMIUM_TIER_0);
 };
 prototype["hasPremiumUsageFlag"] = function hasPremiumUsageFlag(arg0) {
   return FlagUtils.hasFlag(this.premiumUsageFlags, arg0);
@@ -509,14 +509,14 @@ prototype["isPremiumWithFractionalPremiumOnly"] = function isPremiumWithFraction
     if (premiumState != null) {
       prop = premiumState.premiumSubscriptionType;
     }
-    let tmp6 = prop === tmp(1379).PremiumSubscriptionType.NONE_UNSPECIFIED;
+    let tmp6 = prop === tmp(1380).PremiumSubscriptionType.NONE_UNSPECIFIED;
     if (!tmp6) {
       const premiumState2 = self.premiumState;
       let prop1;
       if (premiumState2 != null) {
         prop1 = premiumState2.premiumSubscriptionType;
       }
-      tmp6 = prop1 === tmp(1379).PremiumSubscriptionType.BOOST_ONLY;
+      tmp6 = prop1 === tmp(1380).PremiumSubscriptionType.BOOST_ONLY;
     }
     isPremiumResult = tmp6;
   }
@@ -526,7 +526,7 @@ prototype["isPremiumWithFractionalPremiumOnly"] = function isPremiumWithFraction
     if (premiumState3 != null) {
       premiumSource = premiumState3.premiumSource;
     }
-    isPremiumResult = premiumSource === tmp(1379).PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === tmp(1380).PremiumSource.FRACTIONAL_NITRO;
   }
   return isPremiumResult;
 };
@@ -539,10 +539,10 @@ prototype["isFractionalPremiumWithNoStandardSub"] = function isFractionalPremium
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === tmp(1379).PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === tmp(1380).PremiumSource.FRACTIONAL_NITRO;
   }
   if (isPremiumResult) {
-    isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1379).PremiumSubscriptionType.TIER_2;
+    isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1380).PremiumSubscriptionType.TIER_2;
   }
   return isPremiumResult;
 };

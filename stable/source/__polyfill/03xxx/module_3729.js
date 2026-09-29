@@ -1,32 +1,9 @@
 // Module ID: 3729
 // Function ID: 3730
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 3729
+import registerAsset from "module_1121" /* 1121 */;
 
-export default function toInteger(arg0) {
-  if (null !== arg0) {
-    if (true !== arg0) {
-      if (false !== arg0) {
-        const _Number = Number;
-        const NumberResult = Number(arg0);
-        const _isNaN = isNaN;
-        if (isNaN(NumberResult)) {
-          return NumberResult;
-        } else {
-          if (NumberResult < 0) {
-            const _Math2 = Math;
-            let rounded = Math.ceil(NumberResult);
-          } else {
-            const _Math = Math;
-            rounded = Math.floor(NumberResult);
-          }
-          return rounded;
-        }
-      }
-    }
-  }
-  return NaN;
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jdXN0b21fdHlwaW5nX2luZGljYXRvci9pbnRs", scales: [1], hash: "2af64b9bf6b84777655f121a6f69b7bb", name: "lt.messages.2af64b9bf6b84777655f121a6f69b7bb.compiled.messages", type: "jsona" });

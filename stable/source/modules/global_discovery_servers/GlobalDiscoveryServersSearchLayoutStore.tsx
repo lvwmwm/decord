@@ -1,13 +1,13 @@
-// Module ID: 13793
-// Function ID: 13794
+// Module ID: 13998
+// Function ID: 13999
 // Name: GlobalDiscoveryServersSearchLayoutStore
-// Dependencies: [13792, 13794, 504, 573, 2]
+// Dependencies: [13997, 13999, 504, 573, 2]
 
-// Module 13793 (GlobalDiscoveryServersSearchLayoutStore)
+// Module 13998 (GlobalDiscoveryServersSearchLayoutStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13794 */;
-import GlobalDiscoveryServersSearchCountsStore from "GlobalDiscoveryServersSearchCountsStore" /* 13792 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13999 */;
+import GlobalDiscoveryServersSearchCountsStore from "GlobalDiscoveryServersSearchCountsStore" /* 13997 */;
 
 function reset() {
   counts = [];

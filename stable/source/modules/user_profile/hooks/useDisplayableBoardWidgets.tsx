@@ -1,26 +1,26 @@
-// Module ID: 9161
-// Function ID: 9162
+// Module ID: 13224
+// Function ID: 13225
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7735, 7732, 7725, 9162, 9163, 2]
+// Dependencies: [19, 7901, 7898, 7891, 13225, 13226, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 9161 (useDisplayableBoardWidgets)
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7735 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 9163 */;
+// Module 13224 (useDisplayableBoardWidgets)
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7901 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 13226 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function isNonEmptyBoardWidget(games) {
   let tmp3 = games instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7732).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7898).UserProfilePersonalWidget;
     if (!tmp4) {
-      let isGameWidgetResult = tmp(7725).isGameWidget(games);
+      let isGameWidgetResult = tmp(7891).isGameWidget(games);
       if (isGameWidgetResult) {
         isGameWidgetResult = games.games.length > 0;
       }
       tmp4 = isGameWidgetResult;
-      const tmpResult = tmp(7725);
+      const tmpResult = tmp(7891);
     }
     tmp3 = tmp4;
   }
@@ -30,7 +30,7 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useDisplayableBoardWidgets.tsx");
 
 export const useDisplayableBoardWidgets = function useDisplayableBoardWidgets(id) {
-  isMobileGameCollectionExperimentEnabled = isMobileGameCollectionExperimentEnabled(9162).useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
+  isMobileGameCollectionExperimentEnabled = isMobileGameCollectionExperimentEnabled(13225).useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
   const tmp2 = useUserProfileWidgetsDefault(id);
   importDefault = tmp2;
   const items = [isMobileGameCollectionExperimentEnabled, tmp2];

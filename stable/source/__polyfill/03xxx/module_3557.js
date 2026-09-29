@@ -1,9 +1,9 @@
 // Module ID: 3557
 // Function ID: 3558
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3557
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_invite_channels", scales: [1], hash: "1f9ab1ee6385662cdd6891a4feb70a40", name: "GameInviteChannels.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "e35baf894b11d05139756061b29ea4ad", name: "fi.messages.e35baf894b11d05139756061b29ea4ad.compiled.messages", type: "jsona" });

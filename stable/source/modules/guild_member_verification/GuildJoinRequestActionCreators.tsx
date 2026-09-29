@@ -1,15 +1,15 @@
-// Module ID: 5622
-// Function ID: 5623
+// Module ID: 5790
+// Function ID: 5791
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 1961, 5623, 4459, 1074, 4461, 573, 1270, 5624, 4980, 1114, 5492, 2]
+// Dependencies: [5, 2045, 5791, 4610, 1074, 4612, 573, 1271, 5792, 5140, 1115, 5660, 2]
 
-// Module 5622 (GuildJoinRequestActionCreators)
+// Module 5790 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4461 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5624 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5792 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5623 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5791 */;
 
 require = fn;
 let closure_9 = async function _fetchGuildJoinRequests(arg0, value) {
@@ -321,12 +321,12 @@ let closure_13 = async function _updateGuildJoinRequest() {
     }
     if (body) {
       const obj2 = { title: null, body: null };
-      const intl = closure_1_0(1114).intl;
-      obj2.title = intl.string(closure_1_0(1114).t.DxJj4e);
-      const intl2 = closure_1_0(1114).intl;
-      obj2.body = intl2.string(closure_1_0(1114).t.rSAOk9);
-      closure_1_1(4980).show(obj2);
-      const obj = closure_1_1(4980);
+      const intl = closure_1_0(1115).intl;
+      obj2.title = intl.string(closure_1_0(1115).t.DxJj4e);
+      const intl2 = closure_1_0(1115).intl;
+      obj2.body = intl2.string(closure_1_0(1115).t.rSAOk9);
+      closure_1_1(5140).show(obj2);
+      const obj = closure_1_1(5140);
     }
     return Promise.reject(error);
   });
@@ -559,8 +559,8 @@ let closure_17 = async function _createOrEnterJoinRequestInterview(arg0, value) 
     }
   }
 };
-let closure_4 = fn(1961).createChannelRecordFromServer;
-const joinRequestFromServer = fn(4459).joinRequestFromServer;
+let closure_4 = fn(2045).createChannelRecordFromServer;
+const joinRequestFromServer = fn(4610).joinRequestFromServer;
 const Constants = fn(1074);
 ({ AbortCodes: closure_7, Endpoints: closure_8 } = Constants);
 const size = fn(2);

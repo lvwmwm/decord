@@ -1,10 +1,10 @@
-// Module ID: 7671
-// Function ID: 7672
+// Module ID: 7842
+// Function ID: 7843
 // Name: CollectiblesMarketingTabTooltipRecord
-// Dependencies: [7668, 2]
+// Dependencies: [7839, 2]
 
-// Module 7671 (CollectiblesMarketingTabTooltipRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7668 */;
+// Module 7842 (CollectiblesMarketingTabTooltipRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7839 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function CollectiblesMarketingTabTooltipRecord(arg0) {

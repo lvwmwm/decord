@@ -1,40 +1,29 @@
 // Module ID: 3892
 // Function ID: 3893
-// Dependencies: [3729, 3880, 3726]
+// Dependencies: []
 // Exports: default
 
 // Module 3892
-import module_3729_mod from "module_3729" /* 3729 */;
-import module_3880_mod from "module_3880" /* 3880 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+let closure_0 = { lessThanXSeconds: { one: "mindre end \u00E9t sekund", other: "mindre end {{count}} sekunder" }, xSeconds: { one: "1 sekund", other: "{{count}} sekunder" }, halfAMinute: "\u00E9t halvt minut", lessThanXMinutes: { one: "mindre end \u00E9t minut", other: "mindre end {{count}} minutter" }, xMinutes: { one: "1 minut", other: "{{count}} minutter" }, aboutXHours: { one: "cirka 1 time", other: "cirka {{count}} timer" }, xHours: { one: "1 time", other: "{{count}} timer" }, xDays: { one: "1 dag", other: "{{count}} dage" }, aboutXWeeks: { one: "cirka 1 uge", other: "cirka {{count}} uger" }, xWeeks: { one: "1 uge", other: "{{count}} uger" }, aboutXMonths: { one: "cirka 1 m\u00E5ned", other: "cirka {{count}} m\u00E5neder" }, xMonths: { one: "1 m\u00E5ned", other: "{{count}} m\u00E5neder" }, aboutXYears: { one: "cirka 1 \u00E5r", other: "cirka {{count}} \u00E5r" }, xYears: { one: "1 \u00E5r", other: "{{count}} \u00E5r" }, overXYears: { one: "over 1 \u00E5r", other: "over {{count}} \u00E5r" }, almostXYears: { one: "n\u00E6sten 1 \u00E5r", other: "n\u00E6sten {{count}} \u00E5r" } };
 
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj = { default: module_3729 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_3729;
-}
-module_3729 = tmp3;
-let module_3880 = module_3880_mod;
-if (!module_3880) {
-  const obj2 = { default: module_3880 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3880;
-}
-module_3880 = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
-} else {
-  tmp7 = requiredArgs;
-}
-requiredArgs = tmp7;
-
-export default function addSeconds(interval, arg1) {
-  requiredArgs.default(2, arguments);
-  return module_3880.default(interval, 1000 * module_3729.default(arg1));
+export default function formatDistance(arg0, arg1, addSuffix) {
+  if (typeof closure_0[arg0] === "string") {
+    let tmp6 = tmp;
+    if (null != addSuffix) {
+      tmp6 = tmp;
+      if (addSuffix.addSuffix) {
+        if (!addSuffix.comparison) {
+          let text = `${tmp} siden`;
+        }
+        text = `om ${tmp}`;
+      }
+    }
+    return tmp6;
+  } else if (1 === arg1) {
+    let one = tmp.one;
+  } else {
+    const _String = String;
+    one = tmp.other.replace("{{count}}", String(arg1));
+  }
 };
 export default exports.default;

@@ -1,15 +1,15 @@
-// Module ID: 9026
-// Function ID: 9027
+// Module ID: 9211
+// Function ID: 9212
 // Name: GameProfileReportButton
-// Dependencies: [19, 21, 4603, 8809, 4839, 9027, 1896, 9027, 5056, 1114, 2]
+// Dependencies: [19, 21, 4755, 8989, 4991, 9212, 1980, 9212, 5218, 1115, 2]
 // Exports: default
 
-// Module 9026 (GameProfileReportButton)
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8809 */;
-import GameDetectionReportModal from "GameDetectionReportModal" /* 9027 */;
+// Module 9211 (GameProfileReportButton)
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8989 */;
+import GameDetectionReportModal from "GameDetectionReportModal" /* 9212 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,11 +26,11 @@ export default function GameProfileReportButton(applicationId) {
     trackAction(GameProfileAnalyticUtils.GameProfileTrackActionActions.Feedback);
     const obj2 = ModalActionCreatorsDefault;
     const obj3 = { applicationId };
-    obj2.pushLazy(asyncRequireImpl(9027, dependencyMap.paths), obj3, GameDetectionReportModal.MODAL_KEY);
+    obj2.pushLazy(asyncRequireImpl(9212, dependencyMap.paths), obj3, GameDetectionReportModal.MODAL_KEY);
   }, items);
   let obj = { variant: "secondary", size: "md", text: null, onPress: null };
-  const intl = applicationId(1114).intl;
-  obj.text = intl.string(applicationId(1114).t.qP2cXd);
+  const intl = applicationId(1115).intl;
+  obj.text = intl.string(applicationId(1115).t.qP2cXd);
   obj.onPress = callback;
-  return jsx(applicationId(5056).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+  return jsx(applicationId(5218).Button, { variant: "secondary", size: "md", text: null, onPress: null });
 };

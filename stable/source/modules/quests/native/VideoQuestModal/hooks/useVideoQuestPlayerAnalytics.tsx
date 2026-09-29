@@ -1,18 +1,18 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15404
+// Function ID: 15405
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [19, 17, 4685, 1074, 11623, 7820, 11649, 15216, 15104, 7808, 5528, 15111, 7704, 7709, 2]
+// Dependencies: [19, 17, 4837, 1074, 11770, 7986, 11796, 15405, 15295, 7974, 5696, 15304, 5116, 5121, 2]
 // Exports: default
 
-// Module 15215 (useVideoQuestPlayerAnalytics)
-import QuestTypes from "QuestTypes" /* 5528 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 7704 */;
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7808 */;
-import AnalyticsActions from "AnalyticsActions" /* 7820 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11649 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15104 */;
+// Module 15404 (useVideoQuestPlayerAnalytics)
+import MonitoringAgentDefault from "MonitoringAgent" /* 5116 */;
+import QuestTypes from "QuestTypes" /* 5696 */;
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7974 */;
+import AnalyticsActions from "AnalyticsActions" /* 7986 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11796 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
 import noop from "module_19" /* 19 */;
-import NetworkStore from "NetworkStore" /* 4685 */;
+import NetworkStore from "NetworkStore" /* 4837 */;
 
 require = fn;
 const AppState = fn(17).AppState;
@@ -98,13 +98,13 @@ export default function useVideoQuestPlayerAnalytics(duration) {
   const items2 = [playerState, handlePlayerStateChange];
   const effect2 = questId.useEffect(() => {
     if (AdsVideoTypes.PlayerState.PLAYING === playerState) {
-      handlePlayerStateChange(tmp2(7808).VideoPlayerState.PLAYING, null);
-    } else if (tmp2(15104).PlayerState.PAUSED === tmp) {
-      handlePlayerStateChange(tmp2(7808).VideoPlayerState.PAUSED, null);
-    } else if (tmp2(15104).PlayerState.ENDED === tmp) {
-      handlePlayerStateChange(tmp2(7808).VideoPlayerState.ENDED, null);
-    } else if (tmp2(15104).PlayerState.ERRORED === tmp) {
-      handlePlayerStateChange(tmp2(7808).VideoPlayerState.PAUSED, null);
+      handlePlayerStateChange(tmp2(7974).VideoPlayerState.PLAYING, null);
+    } else if (tmp2(15295).PlayerState.PAUSED === tmp) {
+      handlePlayerStateChange(tmp2(7974).VideoPlayerState.PAUSED, null);
+    } else if (tmp2(15295).PlayerState.ENDED === tmp) {
+      handlePlayerStateChange(tmp2(7974).VideoPlayerState.ENDED, null);
+    } else if (tmp2(15295).PlayerState.ERRORED === tmp) {
+      handlePlayerStateChange(tmp2(7974).VideoPlayerState.PAUSED, null);
     }
   }, items2);
   questId.useRef(null);
@@ -269,7 +269,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
     obj.trackQuestEvent(obj2);
     obj5 = questImpression;
     if (tmpResult.isSourceError(error)) {
-      const obj6 = { name: tmp(7709).MetricEvents.QUEST_VIDEO_ERROR, tags: null };
+      const obj6 = { name: tmp(5121).MetricEvents.QUEST_VIDEO_ERROR, tags: null };
       const _HermesInternal = HermesInternal;
       const items = ["quest_id:" + tmp3, "error_type:SOURCE_ERROR"];
       obj6.tags = items;

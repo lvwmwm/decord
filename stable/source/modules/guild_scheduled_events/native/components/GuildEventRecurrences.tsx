@@ -1,7 +1,7 @@
 // Module ID: 9926
 // Function ID: 9927
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 4636, 576, 9927, 4632, 1114, 11, 9929, 5056, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 9927, 4784, 1115, 11, 9929, 5218, 2]
 // Exports: default
 
 // Module 9926 (GuildEventRecurrences)
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { marginTop: 16 }, scrollView: { marginTop: 8, marginBottom: 8, borderRadius: nativeDefault.radii.sm, maxHeight: 140 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -33,9 +33,9 @@ export default function GuildEventRecurrences(guildEventId) {
   ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: c4 } = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule));
   const obj = { style: tmp2.container, children: null };
   const obj2 = { variant: "heading-md/semibold", children: null };
-  const intl = guildEventId(1114).intl;
-  obj2.children = intl.string(guildEventId(1114).t["D/jjoa"]);
-  const items = [closure_6(guildEventId(4632).Text, obj2), , ];
+  const intl = guildEventId(1115).intl;
+  obj2.children = intl.string(guildEventId(1115).t["D/jjoa"]);
+  const items = [closure_6(guildEventId(4784).Text, obj2), , ];
   const tmp4 = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
   const tmp5 = closure_7;
   const tmp6 = c4;
@@ -53,8 +53,8 @@ export default function GuildEventRecurrences(guildEventId) {
   }
   if (canViewMoreRecurrences) {
     const obj4 = { text: null, onPress: null, size: "sm" };
-    const intl2 = tmp8(1114).intl;
-    obj4.text = intl2.string(tmp8(1114).t["8O7Hpy"]);
+    const intl2 = tmp8(1115).intl;
+    obj4.text = intl2.string(tmp8(1115).t["8O7Hpy"]);
     obj4.onPress = function onPress(stopPropagation) {
       stopPropagation.stopPropagation();
       _undefined();
@@ -63,7 +63,7 @@ export default function GuildEventRecurrences(guildEventId) {
         current.scrollToEnd();
       }
     };
-    canViewMoreRecurrences = tmp7(tmp8(5056).Button, obj4);
+    canViewMoreRecurrences = tmp7(tmp8(5218).Button, obj4);
   }
   items[2] = canViewMoreRecurrences;
   obj.children = items;

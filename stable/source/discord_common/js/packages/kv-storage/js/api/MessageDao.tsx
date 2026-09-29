@@ -1,11 +1,11 @@
-// Module ID: 2001
-// Function ID: 2002
+// Module ID: 2085
+// Function ID: 2086
 // Name: MessageDao
-// Dependencies: [1991, 1993, 2]
+// Dependencies: [2075, 2077, 2]
 
-// Module 2001 (MessageDao)
-import Table from "Table" /* 1991 */;
-import TableId from "TableId" /* 1993 */;
+// Module 2085 (MessageDao)
+import Table from "Table" /* 2075 */;
+import TableId from "TableId" /* 2077 */;
 import size from "module_2" /* 2 */;
 
 let MessageDao;

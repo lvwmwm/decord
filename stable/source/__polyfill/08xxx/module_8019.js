@@ -1,518 +1,299 @@
 // Module ID: 8019
 // Function ID: 8020
-// Dependencies: [32, 19, 17, 21, 1484, 1614, 5712, 8020, 4988, 8021, 8023, 8024, 8025, 8026]
-// Exports: NativeStackView
+// Dependencies: [8020]
 
 // Module 8019
-import Link from "Link" /* 1484 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Iterator from "Iterator" /* 8020 */;
 
-const require = globalThis.__r;
-
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Animated: hasOwnProperty, Platform, StatusBar: metroRequire, StyleSheet } = get_ActivityIndicator);
-({ useAnimatedValue: closure_8, View: closure_9 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-function SceneView(arg0) {
-  ({ descriptor, previousDescriptor, nextDescriptor } = arg0);
-  let safeAreaInsets;
-  let num6;
-  dependencyMap = undefined;
-  _slicedToArray = undefined;
-  noop = undefined;
-  set = undefined;
-  let title;
-  ({ route, navigation, options } = descriptor);
-  let str = options.presentation;
-  ({ index, focused, shouldFreeze, isPreloaded, onWillDisappear, onWillAppear, onAppear, onDisappear, onDismissed, onHeaderBackButtonClicked, onNativeDismissCancelled, onGestureCancel, onSheetDetentChanged } = arg0);
-  ({ animation, animationMatchesGesture } = options);
-  if (undefined === str) {
-    let str2 = "card";
-    if (tmp) {
-      str2 = "modal";
+class Node {
+  constructor(arg0) {
+    return;
+  }
+  get_child(arg0) {
+    self = this;
+    return global ? self.right : self.left;
+  }
+  set_child(arg0, arg1) {
+    self = this;
+    if (global) {
+      self.right = require;
+    } else {
+      self.left = require;
     }
-    str = str2;
+    return;
   }
-  const animationTypeForReplace = options.animationTypeForReplace;
-  let str3 = "push";
-  let str4 = "push";
-  ({ fullScreenGestureEnabled, animationDuration } = options);
-  if (undefined !== animationTypeForReplace) {
-    str4 = animationTypeForReplace;
+}
+class RBTree {
+  constructor(arg0) {
+    return;
   }
-  const fullScreenGestureShadowEnabled = options.fullScreenGestureShadowEnabled;
-  ({ gestureEnabled, gestureDirection } = options);
-  if (undefined === gestureDirection) {
-    let str5 = "vertical";
-    if ("card" === str) {
-      str5 = "horizontal";
-    }
-    gestureDirection = str5;
-  }
-  ({ header, headerBackButtonMenuEnabled, headerShown, headerBackground, headerTransparent, sheetAllowedDetents, gestureResponseDistance, autoHideHomeIndicator, keyboardHandlingEnabled, navigationBarColor, navigationBarTranslucent, navigationBarHidden, orientation } = options);
-  if (undefined === sheetAllowedDetents) {
-    sheetAllowedDetents = [1];
-  }
-  const sheetLargestUndimmedDetentIndex = options.sheetLargestUndimmedDetentIndex;
-  let num = -1;
-  let num2 = -1;
-  if (undefined !== sheetLargestUndimmedDetentIndex) {
-    num2 = sheetLargestUndimmedDetentIndex;
-  }
-  const sheetGrabberVisible = options.sheetGrabberVisible;
-  const sheetCornerRadius = options.sheetCornerRadius;
-  if (undefined !== sheetCornerRadius) {
-    num = sheetCornerRadius;
-  }
-  const sheetElevation = options.sheetElevation;
-  let num3 = 24;
-  if (undefined !== sheetElevation) {
-    num3 = sheetElevation;
-  }
-  const sheetExpandsWhenScrolledToEdge = options.sheetExpandsWhenScrolledToEdge;
-  const sheetInitialDetentIndex = options.sheetInitialDetentIndex;
-  let num4 = 0;
-  if (undefined !== sheetInitialDetentIndex) {
-    num4 = sheetInitialDetentIndex;
-  }
-  const sheetShouldOverflowTopInset = options.sheetShouldOverflowTopInset;
-  const sheetResizeAnimationEnabled = options.sheetResizeAnimationEnabled;
-  ({ statusBarTranslucent, scrollEdgeEffects, unstable_headerInsets } = options);
-  let gestureDirection1;
-  ({ statusBarAnimation, statusBarHidden, statusBarStyle, statusBarBackgroundColor, unstable_sheetFooter, freezeOnBlur, contentStyle } = options);
-  if (nextDescriptor != null) {
-    gestureDirection1 = nextDescriptor.options.gestureDirection;
-  }
-  if (null != gestureDirection1) {
-    gestureDirection = gestureDirection1;
-  }
-  if (0 === index) {
-    str = "card";
-  }
-  let obj = num6(1484);
-  const tmp2 = undefined === fullScreenGestureShadowEnabled || fullScreenGestureShadowEnabled;
-  const tmp3 = undefined !== sheetGrabberVisible && sheetGrabberVisible;
-  const tmp4 = undefined === sheetExpandsWhenScrolledToEdge || sheetExpandsWhenScrolledToEdge;
-  const tmp5 = undefined !== sheetShouldOverflowTopInset && sheetShouldOverflowTopInset;
-  const tmp6 = undefined === sheetResizeAnimationEnabled || sheetResizeAnimationEnabled;
-  safeAreaInsets = num6(1614).useSafeAreaInsets();
-  const context = noop.useContext(num6(5712).HeaderShownContext);
-  let num5 = noop.useContext(num6(5712).HeaderHeightContext);
-  const context1 = noop.useContext(num6(5712).HeaderBackContext);
-  const obj2 = num6(1614);
-  const frameSize = num6(5712).useFrameSize((width) => width.width > width.height);
-  num6 = 0;
-  if (!context) {
-    let top;
-    if (unstable_headerInsets != null) {
-      top = unstable_headerInsets.top;
-    }
-    num6 = 0;
-    if (false !== top) {
-      num6 = safeAreaInsets.top;
-    }
-  }
-  const obj4 = num6(5712);
-  const frameSize1 = num6(5712).useFrameSize((arg0) => 56 + num6);
-  const tmp8Result = num6(5712);
-  let num7 = 2;
-  const tmp8Result5 = num6(1484);
-  [tmp17, tmp18] = noop.useState(frameSize1);
-  dependencyMap = tmp18;
-  const tmp16 = _slicedToArray(noop.useState(frameSize1), 2);
-  const callback = obj3.useCallback(num6(8020).debounce(tmp18, 100), []);
-  let tmp21 = "usesNewAndroidHeaderHeightImplementation" in tmp8(4988).compatibilityFlags;
-  if (tmp21) {
-    tmp21 = true === tmp8(4988).compatibilityFlags.usesNewAndroidHeaderHeightImplementation;
-  }
-  _slicedToArray = 0;
-  let num8 = 0;
-  if (null == header) {
-    num8 = 0;
-    if (!tmp21) {
-      let num9 = title.currentHeight;
-      if (num9 == null) {
-        num9 = 0;
+  insert(arg0) {
+    self = this;
+    if (null === this._root) {
+      tmp25 = Node;
+      obj1 = Object.create(Node.prototype);
+      obj10 = {};
+      obj10.data = global;
+      obj10.left = null;
+      obj10.right = null;
+      flag3 = true;
+      obj10.red = true;
+      self._root = obj10;
+      self.size = self.size + 1;
+      flag = true;
+    } else {
+      tmp27 = Node;
+      obj11 = Object.create(Node.prototype);
+      obj12 = {};
+      obj12.data = undefined;
+      obj12.left = null;
+      obj12.right = null;
+      flag4 = true;
+      obj12.red = true;
+      ({ _root, _root: obj6.right } = self);
+      num3 = 0;
+      flag5 = false;
+      tmp23 = null;
+      tmp22 = obj12;
+      tmp24 = null;
+      num = 0;
+      num2 = 0;
+      flag2 = false;
+      while (true) {
+        tmp = _root;
+        obj = tmp22;
+        tmp3 = tmp24;
+        tmp4 = num;
+        tmp5 = num2;
+        tmp6 = flag2;
+        tmp2 = tmp23;
+        if (null === _root) {
+          tmp9 = Node;
+          obj13 = Object.create(Node.prototype);
+          obj14 = {};
+          obj14.data = global;
+          obj14.left = null;
+          obj14.right = null;
+          obj14.red = true;
+          set_childResult = tmp23.set_child(num2, obj14);
+          self.size = self.size + 1;
+          obj2 = obj14;
+          flag = true;
+        } else {
+          left = _root.left;
+          tmp7 = null !== left && left.red;
+          if (tmp7) {
+            right = _root.right;
+            tmp8 = null !== right && right.red;
+            tmp7 = tmp8;
+          }
+          obj2 = _root;
+          flag = flag2;
+          if (tmp7) {
+            _root.red = true;
+            _root.left.red = false;
+            _root.right.red = false;
+            obj2 = _root;
+            flag = flag2;
+          }
+        }
+        tmp12 = null !== obj2 && obj2.red;
+        if (tmp12) {
+          tmp13 = null !== tmp23 && tmp23.red;
+          if (tmp13) {
+            tmp14 = obj.right === tmp24;
+            if (obj2 === tmp23.get_child(num)) {
+              tmp15 = !num;
+              tmp16 = !tmp15;
+              get_childResult = tmp24.get_child(tmp16);
+              set_childResult1 = tmp24.set_child(tmp16, get_childResult.get_child(tmp15));
+              set_childResult2 = get_childResult.set_child(tmp15, tmp24);
+              tmp24.red = true;
+              get_childResult.red = false;
+              set_childResult3 = obj.set_child(tmp14, get_childResult);
+            } else {
+              tmp29 = !num;
+              tmp30 = !tmp29;
+              get_childResult1 = tmp24.get_child(tmp30);
+              tmp31 = !tmp30;
+              get_childResult2 = get_childResult1.get_child(tmp31);
+              set_childResult4 = get_childResult1.set_child(tmp31, get_childResult2.get_child(tmp30));
+              set_childResult5 = get_childResult2.set_child(tmp30, get_childResult1);
+              get_childResult1.red = true;
+              get_childResult2.red = false;
+              set_childResult6 = tmp24.set_child(tmp30, get_childResult2);
+              get_childResult3 = tmp24.get_child(tmp30);
+              set_childResult7 = tmp24.set_child(tmp30, get_childResult3.get_child(tmp29));
+              set_childResult8 = get_childResult3.set_child(tmp29, tmp24);
+              tmp24.red = true;
+              get_childResult3.red = false;
+              set_childResult9 = obj.set_child(tmp14, get_childResult3);
+            }
+          }
+        }
+        _comparatorResult = self._comparator(obj2.data, global);
+        if (0 === _comparatorResult) {
+          break;
+        } else {
+          tmp21 = _comparatorResult < 0;
+          if (null !== tmp24) {
+            obj = tmp24;
+          }
+          _root = obj2.get_child(tmp21);
+          tmp22 = obj;
+          tmp23 = obj2;
+          tmp24 = tmp2;
+          num = num2;
+          num2 = tmp21;
+          flag2 = flag;
+          continue;
+        }
       }
-      const sum = -num9 + num6;
-      _slicedToArray = sum;
-      num8 = sum;
+      self._root = obj12.right;
     }
+    self._root.red = false;
+    return flag;
   }
-  const tmp24 = closure_8(frameSize1);
-  noop = tmp24;
-  const items = [num8, tmp24];
-  let tmp26 = statusBarTranslucent;
-  const memo = obj3.useMemo(() => set.add(closure_4, c3), items);
-  if (typeof statusBarTranslucent !== "boolean") {
-    tmp26 = 0 !== num6;
-  }
-  set = tmp27;
-  if (previousDescriptor) {
-    title = tmp8(5712).getHeaderTitle(previousDescriptor.options, previousDescriptor.route.name);
-    const tmp8Result7 = tmp8(5712);
-  } else if (context1 != null) {
-    title = context1.title;
-  }
-  const items1 = [null != previousDescriptor || null != context1, title];
-  const memo1 = obj3.useMemo(() => {
-    if (closure_5) {
-      const obj = { href: "Array", title };
-      return obj;
-    }
-  }, items1);
-  const tmp29 = tmp8Result5.usePreventRemoveContext().preventedRoutes[route.key];
-  let preventRemove;
-  if (tmp29 != null) {
-    preventRemove = tmp29.preventRemove;
-  }
-  const tmp8Result6 = num6(8020);
-  const obj5 = {};
-  const merged = Object.assign(options);
-  obj5.route = route;
-  if (undefined !== preventRemove) {
-    headerBackButtonMenuEnabled = !preventRemove;
-  }
-  obj5.headerBackButtonMenuEnabled = headerBackButtonMenuEnabled;
-  let headerBackTitle;
-  if (undefined !== options.headerBackTitle) {
-    headerBackTitle = options.headerBackTitle;
-  }
-  obj5.headerBackTitle = headerBackTitle;
-  obj5.headerHeight = tmp17;
-  obj5.headerShown = undefined === header && headerShown;
-  obj5.headerTopInsetEnabled = tmp26;
-  obj5.headerTransparent = headerTransparent;
-  obj5.headerBack = memo1;
-  let eventResult;
-  const headerConfigProps = num6(8021).useHeaderConfigProps(obj5);
-  if (null == header) {
-    const obj6 = { nativeEvent: null };
-    const obj7 = { headerHeight: tmp24 };
-    obj6.nativeEvent = obj7;
-    const items2 = [obj6];
-    const obj8 = {
-      useNativeDriver: true,
-      listener(nativeEvent) {
-          if (nativeEvent.nativeEvent) {
-            if (typeof nativeEvent.nativeEvent === "object") {
-              if ("headerHeight" in nativeEvent.nativeEvent) {
-                if (typeof nativeEvent.nativeEvent.headerHeight === "number") {
-                  const headerHeight = nativeEvent.nativeEvent.headerHeight;
-                  if (0 !== headerHeight) {
-                    const _Math = Math;
-                    if (Math.round(headerHeight) <= 56) {
-                      _undefined(headerHeight + safeAreaInsets.top);
+  remove(arg0) {
+    self = this;
+    if (null === this._root) {
+      flag = false;
+      return false;
+    } else {
+      tmp43 = Node;
+      obj1 = Object.create(Node.prototype);
+      obj11 = {};
+      obj11.data = undefined;
+      obj11.left = null;
+      obj11.right = null;
+      flag2 = true;
+      obj11.red = true;
+      obj11.right = self._root;
+      num2 = 1;
+      flag3 = false;
+      num3 = 0;
+      num = 1;
+      tmp38 = null;
+      tmp37 = null;
+      obj8 = obj11;
+      tmp39 = null;
+      obj9 = obj11;
+      tmp40 = null;
+      if (null !== obj11.get_child(1)) {
+        do {
+          get_childResult = obj8.get_child(num);
+          _comparatorResult = self._comparator(global, get_childResult.data);
+          tmp2 = _comparatorResult > 0;
+          tmp3 = num;
+          tmp4 = tmp38;
+          tmp5 = tmp37;
+          tmp6 = obj8;
+          if (0 === _comparatorResult) {
+            tmp4 = get_childResult;
+          }
+          tmp7 = null !== get_childResult && get_childResult.red;
+          tmp8 = obj8;
+          if (!tmp7) {
+            get_childResult1 = get_childResult.get_child(tmp2);
+            tmp10 = null !== get_childResult1 && get_childResult1.red;
+            tmp8 = obj8;
+            if (!tmp10) {
+              tmp11 = !tmp2;
+              get_childResult2 = get_childResult.get_child(tmp11);
+              tmp13 = null !== get_childResult2 && get_childResult2.red;
+              get_childResult3 = get_childResult.get_child(tmp11);
+              if (tmp13) {
+                set_childResult = get_childResult.set_child(tmp11, get_childResult3.get_child(tmp2));
+                set_childResult1 = get_childResult3.set_child(tmp2, get_childResult);
+                get_childResult.red = true;
+                get_childResult3.red = false;
+                set_childResult2 = obj8.set_child(num, get_childResult3);
+                tmp8 = get_childResult3;
+              } else {
+                tmp14 = null !== get_childResult3 && get_childResult3.red;
+                tmp8 = obj8;
+                if (!tmp14) {
+                  tmp15 = !num;
+                  get_childResult4 = obj8.get_child(tmp15);
+                  tmp8 = obj8;
+                  if (null !== get_childResult4) {
+                    get_childResult5 = get_childResult4.get_child(tmp15);
+                    tmp16 = null !== get_childResult5 && get_childResult5.red;
+                    if (!tmp16) {
+                      get_childResult6 = get_childResult4.get_child(num);
+                      tmp18 = null !== get_childResult6 && get_childResult6.red;
+                      if (!tmp18) {
+                        obj8.red = false;
+                        get_childResult4.red = true;
+                        get_childResult.red = true;
+                        tmp8 = obj8;
+                      }
                     }
+                    get_childResult7 = get_childResult4.get_child(num);
+                    tmp20 = null !== get_childResult7 && get_childResult7.red;
+                    tmp21 = tmp37.right === obj8;
+                    if (tmp20) {
+                      get_childResult8 = obj8.get_child(tmp15);
+                      tmp27 = !tmp15;
+                      get_childResult9 = get_childResult8.get_child(tmp27);
+                      set_childResult3 = get_childResult8.set_child(tmp27, get_childResult9.get_child(tmp15));
+                      set_childResult4 = get_childResult9.set_child(tmp15, get_childResult8);
+                      get_childResult8.red = true;
+                      get_childResult9.red = false;
+                      set_childResult5 = obj8.set_child(tmp15, get_childResult9);
+                      get_childResult10 = obj8.get_child(tmp15);
+                      set_childResult6 = obj8.set_child(tmp15, get_childResult10.get_child(num));
+                      set_childResult7 = get_childResult10.set_child(num, obj8);
+                      obj8.red = true;
+                      get_childResult10.red = false;
+                      set_childResult8 = tmp37.set_child(tmp21, get_childResult10);
+                    } else {
+                      get_childResult11 = get_childResult4.get_child(tmp15);
+                      tmp23 = null !== get_childResult11 && get_childResult11.red;
+                      if (tmp23) {
+                        get_childResult12 = obj8.get_child(tmp15);
+                        set_childResult9 = obj8.set_child(tmp15, get_childResult12.get_child(num));
+                        set_childResult10 = get_childResult12.set_child(num, obj8);
+                        obj8.red = true;
+                        get_childResult12.red = false;
+                        set_childResult11 = tmp37.set_child(tmp21, get_childResult12);
+                      }
+                    }
+                    rect = tmp37.get_child(tmp21);
+                    rect.red = true;
+                    get_childResult.red = true;
+                    rect.left.red = false;
+                    rect.right.red = false;
+                    tmp8 = obj8;
                   }
-                  _undefined(headerHeight);
                 }
               }
             }
           }
-        }
-    };
-    eventResult = set.event(items2, obj8);
-  }
-  const obj9 = { route, navigation, children: null };
-  const obj10 = { screenId: route.key, activityState: null, style: null, "aria-hidden": null, customAnimationOnSwipe: null, fullScreenSwipeEnabled: null, fullScreenSwipeShadowEnabled: null, freezeOnBlur: null, gestureEnabled: false, homeIndicatorHidden: null, hideKeyboardOnSwipe: null, navigationBarColor: null, navigationBarTranslucent: null, navigationBarHidden: null, replaceAnimation: null, stackPresentation: null, stackAnimation: null, screenOrientation: null, sheetAllowedDetents: null, sheetLargestUndimmedDetentIndex: null, sheetGrabberVisible: null, sheetInitialDetentIndex: null, sheetCornerRadius: null, sheetElevation: null, sheetExpandsWhenScrolledToEdge: null, sheetShouldOverflowTopInset: null, sheetDefaultResizeAnimationEnabled: null, statusBarAnimation: null, statusBarHidden: null, statusBarStyle: null, statusBarColor: null, statusBarTranslucent: null, swipeDirection: null, transitionDuration: null, onWillAppear: null, onWillDisappear: null, onAppear: null, onDisappear: null, onDismissed: null, onGestureCancel: null, onSheetDetentChanged: null, gestureResponseDistance: null, nativeBackButtonDismissalEnabled: false, onHeaderBackButtonClicked: null, preventNativeDismiss: null, scrollEdgeEffects: null, onNativeDismissCancelled: null, onHeaderHeightChange: null, contentStyle: null, headerConfig: null, unstable_sheetFooter: null, shouldFreeze: null, children: null };
-  if (isPreloaded) {
-    num7 = 0;
-  }
-  obj10.activityState = num7;
-  obj10.style = StyleSheet.absoluteFill;
-  obj10["aria-hidden"] = !focused;
-  obj10.customAnimationOnSwipe = animationMatchesGesture;
-  obj10.fullScreenSwipeEnabled = fullScreenGestureEnabled;
-  obj10.fullScreenSwipeShadowEnabled = tmp2;
-  obj10.freezeOnBlur = freezeOnBlur;
-  obj10.homeIndicatorHidden = autoHideHomeIndicator;
-  obj10.hideKeyboardOnSwipe = keyboardHandlingEnabled;
-  obj10.navigationBarColor = navigationBarColor;
-  obj10.navigationBarTranslucent = navigationBarTranslucent;
-  obj10.navigationBarHidden = navigationBarHidden;
-  obj10.replaceAnimation = str4;
-  if ("card" !== str) {
-    str3 = str;
-  }
-  obj10.stackPresentation = str3;
-  obj10.stackAnimation = animation;
-  obj10.screenOrientation = orientation;
-  obj10.sheetAllowedDetents = sheetAllowedDetents;
-  obj10.sheetLargestUndimmedDetentIndex = num2;
-  obj10.sheetGrabberVisible = tmp3;
-  obj10.sheetInitialDetentIndex = num4;
-  obj10.sheetCornerRadius = num;
-  obj10.sheetElevation = num3;
-  obj10.sheetExpandsWhenScrolledToEdge = tmp4;
-  obj10.sheetShouldOverflowTopInset = tmp5;
-  obj10.sheetDefaultResizeAnimationEnabled = tmp6;
-  obj10.statusBarAnimation = statusBarAnimation;
-  obj10.statusBarHidden = statusBarHidden;
-  obj10.statusBarStyle = statusBarStyle;
-  obj10.statusBarColor = statusBarBackgroundColor;
-  obj10.statusBarTranslucent = statusBarTranslucent;
-  obj10.swipeDirection = gestureDirection;
-  obj10.transitionDuration = animationDuration;
-  obj10.onWillAppear = onWillAppear;
-  obj10.onWillDisappear = onWillDisappear;
-  obj10.onAppear = onAppear;
-  obj10.onDisappear = onDisappear;
-  obj10.onDismissed = onDismissed;
-  obj10.onGestureCancel = onGestureCancel;
-  obj10.onSheetDetentChanged = onSheetDetentChanged;
-  obj10.gestureResponseDistance = gestureResponseDistance;
-  obj10.onHeaderBackButtonClicked = onHeaderBackButtonClicked;
-  obj10.preventNativeDismiss = preventRemove;
-  let str7;
-  if (scrollEdgeEffects != null) {
-    str7 = scrollEdgeEffects.bottom;
-  }
-  if (str7 == null) {
-    str7 = "automatic";
-  }
-  const rect = { bottom: str7, top: null, left: null, right: null };
-  let str8;
-  if (scrollEdgeEffects != null) {
-    str8 = scrollEdgeEffects.top;
-  }
-  if (str8 == null) {
-    str8 = "automatic";
-  }
-  rect.top = str8;
-  let str9;
-  if (scrollEdgeEffects != null) {
-    str9 = scrollEdgeEffects.left;
-  }
-  if (str9 == null) {
-    str9 = "automatic";
-  }
-  rect.left = str9;
-  let str10;
-  if (scrollEdgeEffects != null) {
-    str10 = scrollEdgeEffects.right;
-  }
-  if (str10 == null) {
-    str10 = "automatic";
-  }
-  rect.right = str10;
-  obj10.scrollEdgeEffects = rect;
-  obj10.onNativeDismissCancelled = onNativeDismissCancelled;
-  obj10.onHeaderHeightChange = eventResult;
-  let tmp37 = "transparentModal" !== str;
-  if (tmp37) {
-    tmp37 = "containedTransparentModal" !== str;
-  }
-  if (tmp37) {
-    const obj11 = { backgroundColor: obj.useTheme().colors.background };
-    tmp37 = obj11;
-  }
-  const items3 = [tmp37, contentStyle];
-  obj10.contentStyle = items3;
-  obj10.headerConfig = headerConfigProps;
-  obj10.unstable_sheetFooter = unstable_sheetFooter;
-  obj10.shouldFreeze = shouldFreeze;
-  const obj12 = { value: memo, children: null };
-  let tmp40 = tmp17;
-  if (false === headerShown) {
-    if (num5 == null) {
-      num5 = 0;
-    }
-    tmp40 = num5;
-  }
-  const obj13 = { value: tmp40, children: null };
-  let tmp36Result = null;
-  if (null != headerBackground) {
-    const items4 = [closure_13.background, , ];
-    let translucent = null;
-    if (headerTransparent) {
-      translucent = closure_13.translucent;
-    }
-    const obj14 = { style: null, children: null };
-    items4[1] = translucent;
-    const obj15 = { height: tmp17 };
-    items4[2] = obj15;
-    obj14.style = items4;
-    obj14.children = headerBackground();
-    tmp36Result = tmp36(closure_9, obj14);
-  }
-  const items5 = [tmp36Result, , ];
-  let tmp36Result2 = null;
-  if (null != header) {
-    tmp36Result2 = null;
-    if (tmp39) {
-      const items6 = [closure_13.header, ];
-      let tmp46 = null;
-      if (headerTransparent) {
-        const items7 = [closure_13.absolute, ];
-        const obj16 = { minHeight: tmp17 };
-        items7[1] = obj16;
-        tmp46 = items7;
+          tmp37 = tmp8;
+          num = tmp2;
+          tmp38 = tmp4;
+          obj8 = get_childResult;
+          tmp39 = tmp4;
+          tmp40 = tmp8;
+          obj9 = get_childResult;
+        } while (null !== get_childResult.get_child(tmp2));
       }
-      const obj17 = { style: null, children: null };
-      items6[1] = tmp46;
-      obj17.style = items6;
-      const obj18 = {
-        onLayout(nativeEvent) {
-              const height = nativeEvent.nativeEvent.layout.height;
-              _undefined(height);
-              value.setValue(height);
-            },
-        style: { pointerEvents: "box-none" },
-        children: null
-      };
-      const obj19 = { back: memo1, options, route, navigation };
-      obj18.children = header(obj19);
-      obj17.children = tmp36(closure_9, obj18);
-      tmp36Result2 = tmp36(tmp45, obj17);
+      tmp41 = null !== tmp39;
+      if (tmp41) {
+        tmp39.data = obj9.data;
+        ({ set_child, right } = tmp40);
+        set_childResult12 = set_child(right === obj9, obj9.get_child(null === obj9.left));
+        self.size = self.size - 1;
+      }
+      self._root = obj11.right;
+      if (null !== self._root) {
+        self._root.red = false;
+      }
+      return tmp41;
     }
   }
-  items5[1] = tmp36Result2;
-  let tmp47 = context;
-  if (!context) {
-    tmp47 = tmp39;
-  }
-  const obj20 = { value: tmp47, children: null };
-  const tmp38 = closure_11;
-  const tmp8Result8 = num6(8021);
-  obj20.children = closure_10(num6(5712).HeaderBackContext.Provider, { value: memo1, children: descriptor.render() });
-  items5[2] = closure_10(num6(5712).HeaderShownContext.Provider, obj20);
-  obj13.children = items5;
-  obj12.children = tmp38(num6(5712).HeaderHeightContext.Provider, obj13);
-  obj10.children = closure_10(num6(8023).AnimatedHeaderHeightContext.Provider, obj12);
-  obj9.children = closure_10(num6(4988).ScreenStackItem, obj10);
-  return closure_10(num6(1484).NavigationProvider, obj9);
 }
-const styles = StyleSheet.create({ container: { flex: 1 }, header: { zIndex: 1 }, absolute: { position: "absolute", top: 0, start: 0, end: 0 }, translucent: { position: "absolute", top: 0, start: 0, end: 0, zIndex: 1, elevation: 1 }, background: { overflow: "hidden" } });
+RBTree.prototype = new Iterator();
 
-export const NativeStackView = function NativeStackView(state) {
-  state = state.state;
-  ({ navigation: require, descriptors } = state);
-  const describe = state.describe;
-  const setNextDismissedKey = require("module_8024").useDismissedRouteError(state).setNextDismissedKey;
-  let obj = require("module_8024");
-  const invalidPreventRemoveError = require("module_8025").useInvalidPreventRemoveError(descriptors);
-  const obj2 = require("module_8025");
-  const modalRouteKeys = require("module_8026").getModalRouteKeys(state.routes, descriptors);
-  const preloadedRoutes = state.preloadedRoutes;
-  dependencyMap = preloadedRoutes.reduce((acc, key) => {
-    let tmp = acc[key.key];
-    if (!tmp) {
-      tmp = describe(key, true);
-    }
-    acc[key.key] = tmp;
-    return acc;
-  }, {});
-  const obj4 = { children: null };
-  const obj5 = { style: closure_13.container, children: null };
-  const routes = state.routes;
-  const combined = routes.concat(state.preloadedRoutes);
-  obj5.children = combined.map((key, index) => {
-    state = key;
-    let tmp2 = descriptors[key.key];
-    if (tmp2 == null) {
-      tmp2 = dependencyMap[key.key];
-    }
-    key = undefined;
-    const diff = state.index - 1;
-    if (state.routes[index - 1] != null) {
-      key = tmp6.key;
-    }
-    let key1;
-    if (state.routes[index + 1] != null) {
-      key1 = tmp8.key;
-    }
-    let tmp10;
-    if (key) {
-      tmp10 = tmp[key];
-    }
-    let tmp11;
-    if (key1) {
-      tmp11 = tmp[key1];
-    }
-    const hasItem = closure_5.includes(key.key);
-    let flag = hasItem;
-    if (hasItem) {
-      flag = false;
-    }
-    if ("nativeFabricUIManager" in state) {
-      let tmp16 = tmp13;
-      if (!tmp13) {
-        tmp16 = tmp14;
-      }
-      if (!tmp16) {
-        tmp16 = diff === index;
-      }
-      if (!tmp16) {
-        tmp16 = flag;
-      }
-      let tmp15 = !tmp16;
-    } else {
-      tmp15 = !tmp13;
-      if (!tmp13) {
-        tmp15 = !tmp14;
-      }
-      if (tmp15) {
-        tmp15 = !flag;
-      }
-    }
-    return closure_1_10(SceneView, {
-      index,
-      focused: state.index === index,
-      shouldFreeze: tmp15,
-      descriptor: tmp2,
-      previousDescriptor: tmp10,
-      nextDescriptor: tmp11,
-      isPresentationModal: hasItem,
-      isPreloaded: undefined !== dependencyMap[key.key] && undefined === descriptors[key.key],
-      onWillDisappear() {
-        require.emit({ type: "transitionStart", data: { closing: true }, target: key.key });
-      },
-      onWillAppear() {
-        require.emit({ type: "transitionStart", data: { closing: false }, target: key.key });
-      },
-      onAppear() {
-        require.emit({ type: "transitionEnd", data: { closing: false }, target: key.key });
-      },
-      onDisappear() {
-        require.emit({ type: "transitionEnd", data: { closing: true }, target: key.key });
-      },
-      onDismissed(nativeEvent) {
-        const obj = {};
-        const StackActions = Link.StackActions;
-        const merged = Object.assign(StackActions.pop(nativeEvent.nativeEvent.dismissCount));
-        obj.source = key.key;
-        obj.target = state.key;
-        closure_2_1.dispatch(obj);
-        setNextDismissedKey(key.key);
-      },
-      onHeaderBackButtonClicked() {
-        const obj = {};
-        const StackActions = Link.StackActions;
-        const merged = Object.assign(StackActions.pop());
-        obj.source = key.key;
-        obj.target = state.key;
-        closure_2_1.dispatch(obj);
-      },
-      onNativeDismissCancelled(nativeEvent) {
-        const obj = {};
-        const StackActions = Link.StackActions;
-        const merged = Object.assign(StackActions.pop(nativeEvent.nativeEvent.dismissCount));
-        obj.source = key.key;
-        obj.target = state.key;
-        closure_2_1.dispatch(obj);
-      },
-      onGestureCancel() {
-        require.emit({ type: "gestureCancel", target: key.key });
-      },
-      onSheetDetentChanged(nativeEvent) {
-        require.emit({ type: "sheetDetentChange", target: key.key, data: { index: nativeEvent.nativeEvent.index, stable: nativeEvent.nativeEvent.isStable } });
-      }
-    }, key.key);
-  });
-  obj4.children = closure_10(require("enableScreens").ScreenStack, obj5);
-  return closure_10(require("module_5712").SafeAreaProviderCompat, obj4);
-};
+export default RBTree;

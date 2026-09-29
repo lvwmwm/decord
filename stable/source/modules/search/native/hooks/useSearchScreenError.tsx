@@ -1,21 +1,21 @@
-// Module ID: 16797
-// Function ID: 16798
+// Module ID: 17162
+// Function ID: 17163
 // Name: useSearchScreenError
-// Dependencies: [19, 7384, 12472, 7982, 504, 12473, 1114, 4335, 9755, 2]
+// Dependencies: [19, 7555, 12622, 8154, 504, 12623, 1115, 4486, 9745, 2]
 // Exports: useMessageSearchErrorScreen, useMessageTabCountsErrorText
 
-// Module 16797 (useSearchScreenError)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
-import _modDef9755 from "module_9755" /* 9755 */;
-import SearchUtils from "SearchUtils" /* 12473 */;
+// Module 17162 (useSearchScreenError)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import _modDef9745 from "module_9745" /* 9745 */;
+import SearchUtils from "SearchUtils" /* 12623 */;
 import noop from "module_19" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 7384 */;
-import SearchQueryStore from "SearchQueryStore" /* 12472 */;
+import SearchMessageStore from "SearchMessageStore" /* 7555 */;
+import SearchQueryStore from "SearchQueryStore" /* 12622 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_6 = fn(7982).SEARCH_MESSAGE_TAB_SENTINEL;
+let closure_6 = fn(8154).SEARCH_MESSAGE_TAB_SENTINEL;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
 
@@ -42,7 +42,7 @@ export const useMessageSearchErrorScreen = function useMessageSearchErrorScreen(
   let tmp5 = null != stateFromStores;
   const callback = anyErrorMessage.useCallback(() => {
     if (stateFromStores !== ref.current) {
-      const obj2 = { key: "SEARCH_ERROR_TOAST", icon: _modDef9755, content: anyErrorMessage };
+      const obj2 = { key: "SEARCH_ERROR_TOAST", icon: _modDef9745, content: anyErrorMessage };
       ToastActionCreatorsDefault.open(obj2);
       tmp2.current = tmp;
     }
@@ -70,8 +70,8 @@ export const useMessageTabCountsErrorText = function useMessageTabCountsErrorTex
         if (null != error) {
           let anyErrorMessage = error.getAnyErrorMessage();
           if (anyErrorMessage == null) {
-            const intl = tmp2(1114).intl;
-            anyErrorMessage = intl.string(tmp2(1114).t.uvDZBZ);
+            const intl = tmp2(1115).intl;
+            anyErrorMessage = intl.string(tmp2(1115).t.uvDZBZ);
           }
           tmp5 = anyErrorMessage;
         }

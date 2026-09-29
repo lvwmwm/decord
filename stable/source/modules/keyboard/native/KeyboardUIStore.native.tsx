@@ -1,24 +1,24 @@
-// Module ID: 1481
-// Function ID: 1482
+// Module ID: 1482
+// Function ID: 1483
 // Name: KeyboardUIStore
-// Dependencies: [1482, 1217, 1607, 510, 1609, 1610, 1611, 1363, 1623, 558, 1247, 1624, 560, 1625, 1873, 1874, 1612, 1480, 2]
+// Dependencies: [1483, 1218, 1608, 510, 1610, 1611, 1612, 1364, 1624, 558, 1248, 1625, 560, 1626, 1874, 1875, 1613, 1481, 2]
 // Exports: addKeyboardTypeChangedListener, addKeyboardWillOpenChangedListener, setKeyboardContext, setKeyboardType
 
-// Module 1481 (KeyboardUIStore)
+// Module 1482 (KeyboardUIStore)
 import Storage5 from "Storage" /* 510 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1217 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1480 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1482 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1607 */;
-import KeyboardTypes from "KeyboardTypes" /* 1609 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1611 */;
-import NativeSafeAreaInsetsModuleDefault from "NativeSafeAreaInsetsModule" /* 1623 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1625 */;
-import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1873 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1363 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1483 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1608 */;
+import KeyboardTypes from "KeyboardTypes" /* 1610 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1612 */;
+import NativeSafeAreaInsetsModuleDefault from "NativeSafeAreaInsetsModule" /* 1624 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1626 */;
+import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1874 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
 import module_560 from "module_560" /* 560 */;
-import SafeAreaStore from "SafeAreaStore" /* 1612 */;
+import SafeAreaStore from "SafeAreaStore" /* 1613 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,8 +51,8 @@ function computeEntryState(arg0, keyboardDuration, DEFAULT_APP_ENTRY_KEY) {
   } else {
     num3 = 0;
     if (0 !== keyboardHeight2) {
-      num3 = keyboardHeight2 - tmp2(1611).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
-      const tmp2Result7 = tmp2(1611);
+      num3 = keyboardHeight2 - tmp2(1612).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
+      const tmp2Result7 = tmp2(1612);
     }
   }
   const keyboardType = keyboardDuration.keyboardType;
@@ -84,7 +84,7 @@ function computeEntryState(arg0, keyboardDuration, DEFAULT_APP_ENTRY_KEY) {
       if (num7 == null) {
         num7 = 253;
       }
-      if (type === tmp2(1609).KeyboardTypes.SYSTEM) {
+      if (type === tmp2(1610).KeyboardTypes.SYSTEM) {
         if (0 !== num2) {
           if (tmp2Result9.getIsAnyChatInputFocused()) {
             const _Math2 = Math;
@@ -93,8 +93,8 @@ function computeEntryState(arg0, keyboardDuration, DEFAULT_APP_ENTRY_KEY) {
               const Storage4 = tmp2(510).Storage;
               const result1 = Storage4.set(tmp8, bound1);
             }
-            let diff = bound1 - tmp2(1611).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
-            const tmp2Result10 = tmp2(1611);
+            let diff = bound1 - tmp2(1612).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
+            const tmp2Result10 = tmp2(1612);
           }
           const keyboardType2 = keyboardDuration.keyboardType;
           let context;
@@ -116,14 +116,14 @@ function computeEntryState(arg0, keyboardDuration, DEFAULT_APP_ENTRY_KEY) {
                 systemKeyboardOpen = tmp.systemKeyboardOpen;
               }
             }
-            if (tmp.keyboardContexts[tmp2(undefined, 1609).KeyboardTypes.SYSTEM].keyboardWillOpen) {
+            if (tmp.keyboardContexts[tmp2(undefined, 1610).KeyboardTypes.SYSTEM].keyboardWillOpen) {
               if (null != keyboardDuration.systemKeyboardOpen) {
                 const obj3 = {};
                 const merged = Object.assign(tmp.keyboardContexts);
                 const obj4 = {};
-                const merged1 = Object.assign(tmp.keyboardContexts[tmp2(undefined, 1609).KeyboardTypes.SYSTEM]);
+                const merged1 = Object.assign(tmp.keyboardContexts[tmp2(undefined, 1610).KeyboardTypes.SYSTEM]);
                 obj4.keyboardWillOpen = false;
-                obj3[tmp2(1609).KeyboardTypes.SYSTEM] = obj4;
+                obj3[tmp2(1610).KeyboardTypes.SYSTEM] = obj4;
                 let tmp21 = obj3;
               }
               const tmp30 = discord_common_shallowEqualDefault(tmp.keyboardContexts, tmp21);
@@ -152,15 +152,15 @@ function computeEntryState(arg0, keyboardDuration, DEFAULT_APP_ENTRY_KEY) {
             } else {
               tmp21 = keyboardContexts;
             }
-            tmp2Result11 = tmp2(1363);
+            tmp2Result11 = tmp2(1364);
           }
           tmp19 = tmp17 !== context;
-          tmp2Result9 = tmp2(1610);
+          tmp2Result9 = tmp2(1611);
         }
       }
-      tmp2Result8 = tmp2(1610);
-      diff = num7 - tmp2(1611).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
-      const tmp2Result12 = tmp2(1611);
+      tmp2Result8 = tmp2(1611);
+      diff = num7 - tmp2(1612).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
+      const tmp2Result12 = tmp2(1612);
     }
   }
   tmp12 = num4;
@@ -173,15 +173,15 @@ function createInitialEntryState(main) {
     num = 253;
   }
   const obj = { customKeyboardHeight: null, customKeyboardHeightExcludingSafeAreaInsets: null, keyboardContexts: null, keyboardDuration: 0, keyboardHeight: null, keyboardHeightExcludingSafeAreaInsets: null, systemKeyboardOpen: false, keyboardType: null, keyboardTypePrevious: null };
-  const SYSTEM2 = tmp(1609).KeyboardTypes.SYSTEM;
+  const SYSTEM2 = tmp(1610).KeyboardTypes.SYSTEM;
   obj.customKeyboardHeight = num;
-  const SYSTEM3 = tmp(1609).KeyboardTypes.SYSTEM;
+  const SYSTEM3 = tmp(1610).KeyboardTypes.SYSTEM;
   const Storage2 = tmp(510).Storage;
   let num2 = Storage2.get(customKeyboardHeight, 253);
   if (num2 == null) {
     num2 = 253;
   }
-  const SYSTEM4 = tmp(1609).KeyboardTypes.SYSTEM;
+  const SYSTEM4 = tmp(1610).KeyboardTypes.SYSTEM;
   obj.customKeyboardHeightExcludingSafeAreaInsets = num2 - useSafeAreaInsets.getSafeAreaInsets(main).bottom;
   const tmpResult = useSafeAreaInsets;
   obj.keyboardContexts = { [KeyboardTypes.KeyboardTypes.SYSTEM]: { keyboardWillOpen: false }, [KeyboardTypes.KeyboardTypes.EXPRESSION]: ExpressionPickerViewType.EMOJI, [KeyboardTypes.KeyboardTypes.MEDIA]: obj3, [KeyboardTypes.KeyboardTypes.APP_LAUNCHER]: obj4 };

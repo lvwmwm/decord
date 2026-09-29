@@ -1,9 +1,31 @@
 // Module ID: 5470
 // Function ID: 5471
-// Dependencies: [1120]
+// Dependencies: [5471]
 
 // Module 5470
-import registerAsset from "module_1120" /* 1120 */;
+import findOffsets from "findOffsets" /* 5471 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "97cdba3c0b32d79e6f8d3cdafd7b4530", name: "img_account_sync_mastodon_white", type: "png" });
+export default {
+  isHeicFile(getUint32) {
+    if (getUint32) {
+      try {
+        let parseBoxResult = findOffsets.parseBox(getUint32, 0);
+        if (parseBoxResult) {
+          const items = ["heic", "heix", "hevc", "hevx", "heim", "heis", "hevm", "hevs", "mif1"];
+          parseBoxResult = -1 !== items.indexOf(parseBoxResult.majorBrand);
+        }
+        return parseBoxResult;
+      } catch (err) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  },
+  findHeicOffsets(byteLength) {
+    return findOffsets.findOffsets(byteLength);
+  }
+};

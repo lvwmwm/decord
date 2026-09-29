@@ -1,31 +1,19 @@
 // Module ID: 6907
 // Function ID: 6908
-// Dependencies: [19, 6751]
-// Exports: useBoundingClientRect
+// Dependencies: [19, 6908]
+// Exports: useBottomSheet
 
 // Module 6907
 import _mod19 from "module_19" /* 19 */;
+import _mod6908 from "module_6908" /* 6908 */;
 
-const useLayoutEffect = _mod19.useLayoutEffect;
+const useContext = _mod19.useContext;
 
-export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  if (obj.isFabricInstalled()) {
-    useLayoutEffect(() => {
-      if (closure_0) {
-        if (tmp.current) {
-          if (typeof tmp.current.unstable_getBoundingClientRect !== "function") {
-            if (typeof tmp.current.getBoundingClientRect === "function") {
-              const current2 = tmp.current;
-              closure_1(current2.getBoundingClientRect());
-            }
-          } else {
-            const current = tmp.current;
-            closure_1(current.unstable_getBoundingClientRect());
-          }
-        }
-      }
-    });
+export const useBottomSheet = () => {
+  const tmp = useContext(_mod6908.BottomSheetContext);
+  if (null === tmp) {
+    throw "'useBottomSheet' cannot be used out of the BottomSheet!";
+  } else {
+    return tmp;
   }
 };

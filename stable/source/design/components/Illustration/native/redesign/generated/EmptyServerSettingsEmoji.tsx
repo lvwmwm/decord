@@ -1,12 +1,12 @@
-// Module ID: 17684
-// Function ID: 17685
+// Module ID: 18009
+// Function ID: 18010
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 17, 21, 8349, 17685, 17686, 17687, 4488, 2]
+// Dependencies: [19, 17, 21, 8534, 18010, 18011, 18012, 4639, 2]
 // Exports: EmptyServerSettingsEmoji, getEmptyServerSettingsEmojiSource, useEmptyServerSettingsEmojiSource
 
-// Module 17684 (EmptyServerSettingsEmoji)
-import shared from "shared" /* 4488 */;
-import _mod8349 from "module_8349" /* 8349 */;
+// Module 18009 (EmptyServerSettingsEmoji)
+import shared from "shared" /* 4639 */;
+import _mod8534 from "module_8534" /* 8534 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsEmoji.tsx");
 
 export const getEmptyServerSettingsEmojiSource = function getEmptyServerSettingsEmojiSource(theme) {
-  return _mod8349.getIllustrationSource(theme, {
+  return _mod8534.getIllustrationSource(theme, {
     dark() {
-      return require("module_17685");
+      return require("module_18010");
     },
     darker() {
-      return require("module_17686");
+      return require("module_18011");
     },
     light() {
-      return require("module_17687");
+      return require("module_18012");
     }
   });
 };
 export const useEmptyServerSettingsEmojiSource = function useEmptyServerSettingsEmojiSource() {
   const obj = shared;
-  return _mod8349.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_17685");
+      return require("module_18010");
     },
     darker() {
-      return require("module_17686");
+      return require("module_18011");
     },
     light() {
-      return require("module_17687");
+      return require("module_18012");
     }
   });
 };
 export const EmptyServerSettingsEmoji = function EmptyServerSettingsEmoji(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod8349.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_17685");
+      return require("module_18010");
     },
     darker() {
-      return require("module_17686");
+      return require("module_18011");
     },
     light() {
-      return require("module_17687");
+      return require("module_18012");
     }
   });
   const merged = Object.assign(arg0);

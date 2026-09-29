@@ -1,13 +1,13 @@
-// Module ID: 5172
-// Function ID: 5173
+// Module ID: 5341
+// Function ID: 5342
 // Name: AnnouncementsWarningIcon
-// Dependencies: [19, 21, 576, 4337, 5127, 2]
+// Dependencies: [19, 21, 576, 4488, 5289, 2]
 // Exports: AnnouncementsWarningIcon
 
-// Module 5172 (AnnouncementsWarningIcon)
+// Module 5341 (AnnouncementsWarningIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod5127 from "module_5127" /* 5127 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod5289 from "module_5289" /* 5289 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const AnnouncementsWarningIcon = function AnnouncementsWarningIcon(color)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5127, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5289, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

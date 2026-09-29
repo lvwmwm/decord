@@ -1,25 +1,25 @@
-// Module ID: 9303
-// Function ID: 9304
+// Module ID: 10026
+// Function ID: 10027
 // Name: useCanRing
-// Dependencies: [502, 5359, 1957, 2021, 5494, 4275, 4676, 4285, 4655, 1074, 504, 9304, 5497, 5088, 2]
+// Dependencies: [502, 5527, 2041, 2105, 5662, 4427, 4828, 4437, 4807, 1074, 504, 10027, 5665, 5251, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 9303 (useCanRing)
-import useChannelRoleSubscriptionStatusDefault from "useChannelRoleSubscriptionStatus" /* 5088 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5497 */;
+// Module 10026 (useCanRing)
+import useChannelRoleSubscriptionStatusDefault from "useChannelRoleSubscriptionStatus" /* 5251 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5665 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5359 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5494 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import PresenceStore from "PresenceStore" /* 4676 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import VoiceStateStore from "VoiceStateStore" /* 4655 */;
+import CallStore from "CallStore" /* 5527 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5662 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import PresenceStore from "PresenceStore" /* 4828 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import VoiceStateStore from "VoiceStateStore" /* 4807 */;
 
 const require = globalThis.__r;
 
-const GuildVoiceRingingExperimentDefault = tmp4(9304);
+const GuildVoiceRingingExperimentDefault = tmp4(10027);
 const require = fn;
 function useCanRingToGuildVoiceChannel(user, useCanRing, stateFromStores) {
   _require = user;

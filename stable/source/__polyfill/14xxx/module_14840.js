@@ -1,9 +1,9 @@
 // Module ID: 14840
 // Function ID: 14841
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 14840
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/tiny_bronco", scales: [1], hash: "35c64d699c4390efa8a41f9c45023348", name: "TinyBronco.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "f6cc137da3a192935ccaaac37e4eb9a2", name: "ic_call_status_green_24px", type: "png" });

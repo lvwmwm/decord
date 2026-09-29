@@ -1,11 +1,11 @@
-// Module ID: 12063
-// Function ID: 12064
+// Module ID: 12212
+// Function ID: 12213
 // Name: jumpToReferencedMessage
-// Dependencies: [7559, 2]
+// Dependencies: [7730, 2]
 // Exports: default
 
-// Module 12063 (jumpToReferencedMessage)
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7559 */;
+// Module 12212 (jumpToReferencedMessage)
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7730 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/jumpToReferencedMessage.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 7757
-// Function ID: 7758
+// Module ID: 7923
+// Function ID: 7924
 // Name: LowDiskTrim
-// Dependencies: [7582, 1986, 2]
+// Dependencies: [7753, 2070, 2]
 
-// Module 7757 (LowDiskTrim)
-import DatabaseDaosDefault from "DatabaseDaos" /* 1986 */;
-import FileSystemStore from "FileSystemStore" /* 7582 */;
+// Module 7923 (LowDiskTrim)
+import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import FileSystemStore from "FileSystemStore" /* 7753 */;
 
 class LowDiskTrim {
   constructor() {

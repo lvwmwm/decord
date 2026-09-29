@@ -1,8 +1,8 @@
-// Module ID: 6471
-// Function ID: 6472
+// Module ID: 6643
+// Function ID: 6644
 // Dependencies: [2]
 
-// Module 6471
+// Module 6643
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PsychicIllocon-2x.png.js");

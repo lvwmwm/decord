@@ -1,9 +1,9 @@
 // Module ID: 12502
 // Function ID: 12503
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 12502
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3ee579776b13459d07461b433997e652", name: "ChevronLargeRightIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/scheduled_messages", width: 297, height: 238, scales: [1], hash: "0ad2bf31ea242663dc2fd22966e4c43e", name: "wumpus-calendar-plus", type: "png" });

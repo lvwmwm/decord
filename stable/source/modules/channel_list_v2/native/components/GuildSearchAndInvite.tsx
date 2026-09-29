@@ -1,26 +1,26 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 12580
+// Function ID: 12581
 // Name: GuildSearchAndInvite
-// Dependencies: [19, 17, 1957, 2012, 1979, 2011, 10246, 1074, 21, 4636, 576, 12431, 1896, 4982, 1483, 12432, 7065, 12433, 12471, 5691, 8202, 10160, 1114, 9916, 5056, 7155, 4373, 12503, 504, 9953, 9950, 12504, 12505, 12507, 2]
+// Dependencies: [19, 17, 2041, 2096, 2063, 2095, 10413, 1074, 21, 4788, 576, 12581, 1980, 5142, 1484, 12582, 7239, 12583, 12621, 5859, 8211, 10327, 1115, 9916, 5218, 7329, 4524, 12653, 504, 10118, 10115, 12654, 12655, 12657, 2]
 
-// Module 12430 (GuildSearchAndInvite)
+// Module 12580 (GuildSearchAndInvite)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import useAlertStore from "useAlertStore" /* 4982 */;
-import useStableCallbackDefault from "useStableCallback" /* 7065 */;
-import IconButton from "IconButton" /* 8202 */;
+import util from "util" /* 1115 */;
+import useAlertStore from "useAlertStore" /* 5142 */;
+import useStableCallbackDefault from "useStableCallback" /* 7239 */;
+import IconButton from "IconButton" /* 8211 */;
 import _modDef9916 from "module_9916" /* 9916 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9950 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9953 */;
-import _modDef10160 from "module_10160" /* 10160 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12433 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12471 */;
-import useEventsButtonPropsDefault from "useEventsButtonProps" /* 12507 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10115 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 10118 */;
+import _modDef10327 from "module_10327" /* 10327 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12583 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12621 */;
+import useEventsButtonPropsDefault from "useEventsButtonProps" /* 12657 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
 function handleInviteDisabledPress() {
@@ -72,7 +72,7 @@ function GuildSearchAndInvite(guildId) {
   const memo = onInvitePress.useMemo(() => {
     let tmp = null;
     if (canInvite) {
-      const obj = { variant: "secondary", size: "sm", icon: _modDef10160, onPress: onInvitePress, onPressDisabled: handleInviteDisabledPress, accessibilityLabel: null, disabled: null, maxFontSizeMultiplier: 2 };
+      const obj = { variant: "secondary", size: "sm", icon: _modDef10327, onPress: onInvitePress, onPressDisabled: handleInviteDisabledPress, accessibilityLabel: null, disabled: null, maxFontSizeMultiplier: 2 };
       const intl = util.intl;
       obj.accessibilityLabel = intl.string(util.t.VINpSK);
       obj.disabled = invitesDisabled;
@@ -110,12 +110,12 @@ function GuildSearchAndInvite(guildId) {
   return closure_13(onEventsPress, tmp14);
 }
 const View = fn(17).View;
-const SEARCH_BAR_MARGIN_BOTTOM = fn(10246).SEARCH_BAR_MARGIN_BOTTOM;
+const SEARCH_BAR_MARGIN_BOTTOM = fn(10413).SEARCH_BAR_MARGIN_BOTTOM;
 const Constants = fn(1074);
 ({ GuildFeatures: c10, InstantInviteSources: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_14 = createStyles.createStyles((arg0) => {
   const obj = { paddingHorizontal: nativeDefault.space.PX_16, marginBottom: SEARCH_BAR_MARGIN_BOTTOM, flexDirection: "row", gap: null };
   let num = 10;
@@ -153,8 +153,8 @@ export default noop.memo(function ConnectedGuildSearchAndInviteInner(guild) {
     const channels = GuildChannelStore.getChannels(guild.id);
     const result = instant_invite_InstantInviteUtils.handleOpenInviteActionsheet(guild, channelId, channels, constants2.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(12504).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(12504);
+  const shouldShowInvitesDisabledNotif = guild(12654).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(12654);
   const tmp5 = useEventsButtonPropsDefault(guild);
   const obj3 = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread, useEventsButton: null, useButtonComponent: null };
   if (flag2) {

@@ -1,33 +1,46 @@
 // Module ID: 4019
 // Function ID: 4020
-// Dependencies: [3725, 3726]
-// Exports: default
+// Dependencies: [4020, 4021, 4022, 4321, 4322]
 
 // Module 4019
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import module_4020 from "module_4020" /* 4020 */;
+import module_4021 from "module_4021" /* 4021 */;
+import module_4022 from "module_4022" /* 4022 */;
+import date_mod from "module_4321" /* 4321 */;
+import date_mod from "module_4322" /* 4322 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+if (!module_4020) {
+  const obj = { default: module_4020 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_4020;
 }
-_typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+if (!module_4021) {
+  const obj2 = { default: module_4021 };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = module_4021;
 }
-requiredArgs = tmp5;
+if (!module_4022) {
+  const obj3 = { default: module_4022 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_4022;
+}
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
+  let tmp9 = obj4;
+} else {
+  tmp9 = date;
+}
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
 
-export default function isAfter(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const time = defaultResult1.getTime();
-  return time > _typeof.default(arg1).getTime();
-};
+export default { code: "uk", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
 export default exports.default;

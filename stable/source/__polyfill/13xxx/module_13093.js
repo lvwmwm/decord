@@ -1,9 +1,64 @@
 // Module ID: 13093
 // Function ID: 13094
-// Dependencies: [1120]
+// Dependencies: [13080]
+// Exports: dateTimestampInSeconds, timestampInSeconds
 
 // Module 13093
-import registerAsset from "module_1120" /* 1120 */;
+import _mod13080 from "module_13080" /* 13080 */;
 
+function dateTimestampInSeconds() {
+  return Date.now() / 1000;
+}
+let timeOrigin;
+const _performance = _mod13080.GLOBAL_OBJ.performance;
+let fn = dateTimestampInSeconds;
+if (_performance) {
+  fn = dateTimestampInSeconds;
+  if (_performance.now) {
+    const _Date = Date;
+    const timestamp = Date.now();
+    timeOrigin = timestamp - _performance.now();
+    if (null != _performance.timeOrigin) {
+      timeOrigin = _performance.timeOrigin;
+    }
+    fn = () => (timeOrigin + _performance.now()) / 1000;
+  }
+}
+const _performance2 = _mod13080.GLOBAL_OBJ.performance;
+if (_performance2) {
+  if (_performance2.now) {
+    const nowResult = _performance2.now();
+    const _Date2 = Date;
+    const timestamp1 = Date.now();
+    let num2 = 3600000;
+    if (_performance2.timeOrigin) {
+      const _Math = Math;
+      num2 = Math.abs(_performance2.timeOrigin + nowResult - timestamp1);
+    }
+    let timeOrigin2 = _performance2.timing;
+    if (timeOrigin2) {
+      timeOrigin2 = _performance2.timing.navigationStart;
+    }
+    let num3 = 3600000;
+    if (typeof timeOrigin2 === "number") {
+      const _Math2 = Math;
+      num3 = Math.abs(timeOrigin2 + nowResult - timestamp1);
+    }
+    if (!tmp6) {
+      if (num3 >= 3600000) {
+        exports._browserPerformanceTimeOriginMode = "dateNow";
+      }
+    }
+    if (num2 <= num3) {
+      exports._browserPerformanceTimeOriginMode = "timeOrigin";
+      timeOrigin2 = _performance2.timeOrigin;
+    } else {
+      exports._browserPerformanceTimeOriginMode = "navigationStart";
+    }
+    tmp6 = num2 < 3600000;
+  }
+}
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "6745fd4fca483fd68a467a63f7379a27", name: "ic_volume_mute", type: "png" });
+export const _browserPerformanceTimeOriginMode = "none";
+export { dateTimestampInSeconds };
+export const timestampInSeconds = fn;

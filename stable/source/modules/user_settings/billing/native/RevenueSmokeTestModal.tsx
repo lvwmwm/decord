@@ -1,19 +1,19 @@
-// Module ID: 15789
-// Function ID: 15790
+// Module ID: 16015
+// Function ID: 16016
 // Name: RevenueSmokeTestModal
-// Dependencies: [19, 21, 8017, 7103, 10954, 7966, 11060, 15790, 2]
+// Dependencies: [19, 21, 8189, 7277, 11113, 8139, 11218, 16016, 2]
 
-// Module 15789 (RevenueSmokeTestModal)
-import HeaderShared from "HeaderShared" /* 7966 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11060 */;
-import BillingFlowsDefault from "BillingFlows" /* 15790 */;
+// Module 16015 (RevenueSmokeTestModal)
+import HeaderShared from "HeaderShared" /* 8139 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11218 */;
+import BillingFlowsDefault from "BillingFlows" /* 16016 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(8017);
+const NativeStackNavigator = fn(8189);
 let closure_4 = NativeStackNavigator.createNativeStackNavigator();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/billing/native/RevenueSmokeTestModal.tsx");

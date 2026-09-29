@@ -1,14 +1,14 @@
-// Module ID: 17952
-// Function ID: 17953
+// Module ID: 18299
+// Function ID: 18300
 // Name: AVErrorStreamViewLowFPS
-// Dependencies: [4652, 4658, 502, 4675, 1074, 17953, 4688, 9238, 9239, 17950, 2]
+// Dependencies: [4804, 4810, 502, 4827, 1074, 18300, 4840, 9739, 9718, 18297, 2]
 
-// Module 17952 (AVErrorStreamViewLowFPS)
-import StreamKeyUtils from "StreamKeyUtils" /* 4688 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
+// Module 18299 (AVErrorStreamViewLowFPS)
+import StreamKeyUtils from "StreamKeyUtils" /* 4840 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4675 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4827 */;
 
 require = fn;
 const ApplicationStreamStates = fn(1074).ApplicationStreamStates;

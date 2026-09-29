@@ -1,10 +1,10 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 18308
+// Function ID: 18309
 // Name: AVErrorScreenshareOSError
-// Dependencies: [1363, 9239, 17950, 4688, 2]
+// Dependencies: [1364, 9718, 18297, 4840, 2]
 
-// Module 17961 (AVErrorScreenshareOSError)
-import AVError from "AVError" /* 9239 */;
+// Module 18308 (AVErrorScreenshareOSError)
+import AVError from "AVError" /* 9718 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = BigInt(-3821);
@@ -22,8 +22,8 @@ export const AVErrorScreenshareOSErrorDefinition = {
           let combined = "" + str + " - your Mac may be low on disk space";
         }
         obj.errorMessage = combined;
-        const tmpResult = tmp(17950);
-        const merged = Object.assign(tmpResult.getStreamErrorContext(tmp(4688).encodeStreamKey(errorCode)));
+        const tmpResult = tmp(18297);
+        const merged = Object.assign(tmpResult.getStreamErrorContext(tmp(4840).encodeStreamKey(errorCode)));
         return obj;
       }
       combined = str.toString();

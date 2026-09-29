@@ -1,13 +1,13 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 6236
+// Function ID: 6237
 // Name: EmojiWumpThinkExample
-// Dependencies: [21, 5668, 6067, 2]
+// Dependencies: [21, 5836, 6237, 2]
 // Exports: EmojiWumpThinkExample
 
-// Module 6066 (EmojiWumpThinkExample)
+// Module 6236 (EmojiWumpThinkExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6067 from "module_6067" /* 6067 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6237 from "module_6237" /* 6237 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const EmojiWumpThinkExample = function EmojiWumpThinkExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6067 };
+  const obj2 = { uri: _modDef6237 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

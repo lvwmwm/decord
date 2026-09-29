@@ -1,22 +1,22 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16789
+// Function ID: 16790
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 4636, 576, 1176, 10781, 4632, 1114, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 1177, 10948, 4784, 1115, 2]
 // Exports: ForYouUnreadClearedState
 
-// Module 16543 (ForYouUnreadClearedState)
+// Module 16789 (ForYouUnreadClearedState)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import _modDef10781 from "module_10781" /* 10781 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import _modDef10948 from "module_10948" /* 10948 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 const obj2 = { container: { marginBottom: 4, marginHorizontal: 24, alignItems: "center", flexDirection: "row" }, imageContainer: null, icon: null, headerText: null };
 let size = { width: 48, height: 48, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_400, opacity: 0.16, borderRadius: nativeDefault.radii.xl, marginRight: 16, justifyContent: "center", alignItems: "center" };
 obj2.imageContainer = size;
@@ -29,7 +29,7 @@ const result = size.fileFinishedImporting("modules/notification_center/native/Fo
 export const ForYouUnreadClearedState = function ForYouUnreadClearedState() {
   const tmp = closure_6();
   const obj = { style: tmp.container, children: null };
-  const items = [React4(View, { style: tmp.imageContainer }), React4(native.Icon, { source: _modDef10781, style: tmp.icon, color: tmp.icon.color }), ];
+  const items = [React4(View, { style: tmp.imageContainer }), React4(native.Icon, { source: _modDef10948, style: tmp.icon, color: tmp.icon.color }), ];
   const obj4 = { children: null };
   const obj5 = { color: "mobile-text-heading-primary", variant: "text-md/semibold", style: tmp.headerText, children: null };
   const intl = util.intl;

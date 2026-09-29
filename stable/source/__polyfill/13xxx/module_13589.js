@@ -1,9 +1,0 @@
-// Module ID: 13589
-// Function ID: 13590
-// Dependencies: [1120]
-
-// Module 13589
-import registerAsset from "module_1120" /* 1120 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 351, height: 100, scales: [2, 3], hash: "4890b29f84548b0e4f661e3894e1136c", name: "img_subheader_error_mobile_v2", type: "png" });

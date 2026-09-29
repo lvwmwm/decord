@@ -1,13 +1,13 @@
-// Module ID: 10308
-// Function ID: 10309
+// Module ID: 10476
+// Function ID: 10477
 // Name: RetryIcon
-// Dependencies: [19, 21, 576, 4337, 10309, 2]
+// Dependencies: [19, 21, 576, 4488, 10477, 2]
 // Exports: RetryIcon
 
-// Module 10308 (RetryIcon)
+// Module 10476 (RetryIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod10309 from "module_10309" /* 10309 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod10477 from "module_10477" /* 10477 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const RetryIcon = function RetryIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10309, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10477, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

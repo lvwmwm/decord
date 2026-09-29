@@ -1,12 +1,9 @@
 // Module ID: 3864
 // Function ID: 3865
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 3864
-let closure_0 = { lastWeek: "'ge\u00E7en hafta' eeee 'saat' p", yesterday: "'d\u00FCn saat' p", today: "'bug\u00FCn saat' p", tomorrow: "'yar\u0131n saat' p", nextWeek: "eeee 'saat' p", other: "P" };
+import registerAsset from "module_1121" /* 1121 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "f9040a173cc210a95d223a8e427d58db", name: "sv-SE.messages.f9040a173cc210a95d223a8e427d58db.compiled.messages", type: "jsona" });

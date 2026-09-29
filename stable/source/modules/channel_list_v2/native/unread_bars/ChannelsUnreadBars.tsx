@@ -1,24 +1,24 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16523
+// Function ID: 16524
 // Name: ChannelsUnreadBars
-// Dependencies: [32, 19, 17, 4628, 4277, 1957, 7738, 4651, 4817, 10246, 4818, 21, 4636, 7631, 5063, 7175, 15181, 551, 558, 504, 4373, 16229, 7046, 4604, 4605, 16279, 2]
+// Dependencies: [32, 19, 17, 4780, 4429, 2041, 7904, 4803, 4969, 10413, 4970, 21, 4788, 7802, 5225, 7349, 15370, 551, 558, 504, 4524, 16474, 7220, 4756, 4757, 16524, 2]
 
-// Module 16278 (ChannelsUnreadBars)
+// Module 16523 (ChannelsUnreadBars)
 import debounceDefault from "debounce" /* 551 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import HapticUtils from "HapticUtils" /* 4604 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4605 */;
-import useFontScale from "useFontScale" /* 5063 */;
-import FastList from "FastList" /* 7175 */;
-import ChannelListState from "ChannelListState" /* 7631 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import HapticUtils from "HapticUtils" /* 4756 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4757 */;
+import useFontScale from "useFontScale" /* 5225 */;
+import FastList from "FastList" /* 7349 */;
+import ChannelListState from "ChannelListState" /* 7802 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4277 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7738 */;
-import ReadStateStore from "ReadStateStore" /* 4651 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4429 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7904 */;
+import ReadStateStore from "ReadStateStore" /* 4803 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 require = fn;
 function shouldSkipSection(diff1) {
@@ -128,7 +128,7 @@ function findNearestUnreadItem(fastList, guildChannels, headerHeight, youBarTota
             if (-1 === section) {
               ({ section, item } = tmp12);
             }
-            if (tmp12.type !== tmp71(7175).FastListItemTypes.ITEM) {
+            if (tmp12.type !== tmp71(7349).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else if (shouldSkipSection(tmp12.section)) {
               continue;
@@ -207,11 +207,11 @@ function findNearestUnreadItem(fastList, guildChannels, headerHeight, youBarTota
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const getScaledChannelRowHeight = fn(10246).getScaledChannelRowHeight;
-const UnreadSetting = fn(4818).UnreadSetting;
+const getScaledChannelRowHeight = fn(10413).getScaledChannelRowHeight;
+const UnreadSetting = fn(4970).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_16 = createStyles.createStyles({ wrapper: StyleSheet.absoluteFillObject });
 const constants = { MENTION: "mention", UNREAD: "unread" };
 let closure_18 = { beforeItem: null, afterItem: null };

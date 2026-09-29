@@ -1,11 +1,13 @@
 // Module ID: 4076
 // Function ID: 4077
-// Dependencies: [3725, 3726]
+// Dependencies: [3877, 4077, 4078, 3878]
 // Exports: default
 
 // Module 4076
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import endOfDay_mod from "endOfDay" /* 4077 */;
+import endOfMonth_mod from "endOfMonth" /* 4078 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -15,25 +17,36 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+let endOfDay = endOfDay_mod;
+if (!endOfDay) {
+  const obj2 = { default: endOfDay };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = endOfDay;
 }
-requiredArgs = tmp5;
+endOfDay = tmp5;
+let endOfMonth = endOfMonth_mod;
+if (!endOfMonth) {
+  const obj3 = { default: endOfMonth };
+  let tmp7 = obj3;
+} else {
+  tmp7 = endOfMonth;
+}
+endOfMonth = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
 
-export default function isSameMonth(arg0, arg1) {
-  requiredArgs.default(2, arguments);
+export default function isLastDayOfMonth(arg0) {
+  requiredArgs.default(1, arguments);
   const defaultResult1 = _typeof.default(arg0);
-  const defaultResult2 = _typeof.default(arg1);
-  const fullYear = defaultResult1.getFullYear();
-  let tmp3 = fullYear === defaultResult2.getFullYear();
-  if (tmp3) {
-    const month = defaultResult1.getMonth();
-    tmp3 = month === defaultResult2.getMonth();
-  }
-  return tmp3;
+  const time = endOfDay.default(defaultResult1).getTime();
+  const defaultResult2 = endOfDay.default(defaultResult1);
+  return time === endOfMonth.default(defaultResult1).getTime();
 };
 export default exports.default;

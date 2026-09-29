@@ -1,15 +1,15 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 9728
+// Function ID: 9729
 // Name: WindowVisibilityVideoManager
-// Dependencies: [4694, 1952, 3, 1090, 573, 9740, 9741, 2]
+// Dependencies: [4846, 2036, 3, 1091, 573, 9729, 9730, 2]
 
-// Module 9739 (WindowVisibilityVideoManager)
+// Module 9728 (WindowVisibilityVideoManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import ExternalPipDefault from "ExternalPip" /* 9740 */;
-import WindowVisibilityUtilsDefault from "WindowVisibilityUtils" /* 9741 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4694 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import ExternalPipDefault from "ExternalPip" /* 9729 */;
+import WindowVisibilityUtilsDefault from "WindowVisibilityUtils" /* 9730 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4846 */;
 
 const require = fn;
 const WindowVisibilityEvent = { WindowVisibilityChanged: "window-visibility-changed", IncomingVideoEnabledChanged: "incoming-video-enabled-changed" };

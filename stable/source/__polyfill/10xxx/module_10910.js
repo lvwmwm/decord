@@ -1,66 +1,95 @@
 // Module ID: 10910
 // Function ID: 10911
-// Dependencies: [19]
-// Exports: useAutoPlay
+// Dependencies: [41, 42, 93, 95, 98, 10728, 10897, 10755, 10735]
 
 // Module 10910
-import noop from "module_19" /* 19 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10728 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import _mod10897 from "module_10897" /* 10897 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-
-export const useAutoPlay = function useAutoPlay(autoPlay) {
-  autoPlay = autoPlay.autoPlay;
-  closure_0 = tmp;
-  const autoPlayReverse = autoPlay.autoPlayReverse;
-  closure_1 = tmp2;
-  const autoPlayInterval = autoPlay.autoPlayInterval;
-  const prev = iter.prev;
-  const next = iter.next;
-  noop.useRef();
-  noop.useRef(!(undefined !== autoPlay && autoPlay));
-  const items = [undefined !== autoPlayReverse && autoPlayReverse, autoPlayInterval, prev, next];
-  const callback = noop.useCallback(() => {
-    if (!ref2.current) {
-      if (ref.current) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(tmp.current);
-      }
-      const _setTimeout = setTimeout;
-      ref.current = setTimeout(() => {
-        if (closure_1_1) {
-          const obj2 = { onFinished };
-          prev(obj2);
-        } else {
-          const obj = { onFinished };
-          next(obj);
-        }
-      }, autoPlayInterval);
-    }
-  }, items);
-  const items1 = [undefined !== autoPlay && autoPlay];
-  const pause = noop.useCallback(() => {
-    if (closure_0) {
-      if (ref.current) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(tmp.current);
-      }
-      closure_6.current = true;
-    }
-  }, items1);
-  const items2 = [callback, undefined !== autoPlay && autoPlay];
-  const start = noop.useCallback(() => {
-    if (closure_0) {
-      closure_6.current = false;
-      callback();
-    }
-  }, items2);
-  const items3 = [pause, start, undefined !== autoPlay && autoPlay];
-  const effect = noop.useEffect(() => {
-    if (closure_0) {
-      start();
+const ITWeekdayParser = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
     } else {
-      pause();
+      callResult = call(constructResult);
     }
-    return pause;
-  }, items3);
-  return { pause, start };
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:il\\s*?)?(?:(questa|l'ultima|scorsa|prossima)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10897.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(questa|l'ultima|scorsa|prossima)\\s*settimana)?(?=\\W|$)", "i");
+class ITWeekdayParser {
+  constructor() {
+    self = this;
+    tmp = c2(this, ITWeekdayParser);
+    tmp2 = closure_4;
+    obj = closure_4(ITWeekdayParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ITWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
 };
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const formatted = arg1[2].toLowerCase();
+      let str2 = arg1[1];
+      if (!str2) {
+        str2 = arg1[3];
+      }
+      if (!str2) {
+        str2 = "";
+      }
+      const formatted1 = str2.toLowerCase();
+      let str3 = "ultima";
+      if ("ultima" != formatted1) {
+        str3 = "ultima";
+        if ("scorsa" != formatted1) {
+          str3 = "prossima";
+          if ("prossima" != formatted1) {
+            str3 = null;
+            if ("questa" == formatted1) {
+              str3 = "questa";
+            }
+          }
+        }
+      }
+      return ITWeekdayParser(10755).createParsingComponentsAtWeekday(reference.reference, ITWeekdayParser(10897).WEEKDAY_DICTIONARY[formatted], str3);
+    }
+  }
+];
+
+export default _createClass(ITWeekdayParser, items);

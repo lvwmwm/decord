@@ -1,46 +1,9 @@
 // Module ID: 3831
 // Function ID: 3832
-// Dependencies: [3832, 3833, 3834, 3835, 3836]
+// Dependencies: [1121]
 
 // Module 3831
-import module_3832 from "module_3832" /* 3832 */;
-import module_3833 from "module_3833" /* 3833 */;
-import module_3834 from "module_3834" /* 3834 */;
-import date_mod from "module_3835" /* 3835 */;
-import date_mod from "module_3836" /* 3836 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-if (!module_3832) {
-  const obj = { default: module_3832 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_3832;
-}
-if (!module_3833) {
-  const obj2 = { default: module_3833 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3833;
-}
-if (!module_3834) {
-  const obj3 = { default: module_3834 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3834;
-}
-let date = date_mod;
-if (!date) {
-  const obj4 = { default: date };
-  let tmp9 = obj4;
-} else {
-  tmp9 = date;
-}
-let date = date_mod;
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
 
-export default { code: "pt-BR", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
-export default exports.default;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "2fe43def0e56f6438ae1d2b4008d5aa0", name: "ru.messages.2fe43def0e56f6438ae1d2b4008d5aa0.compiled.messages", type: "jsona" });

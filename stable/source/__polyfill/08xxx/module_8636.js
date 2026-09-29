@@ -1,65 +1,148 @@
 // Module ID: 8636
 // Function ID: 8637
-// Dependencies: [41, 42, 93, 95, 98, 19, 8590]
+// Dependencies: [17]
 
 // Module 8636
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod17 from "module_17" /* 17 */;
 
-const FePointLight = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
+const Orientation = _mod17.NativeModules.Orientation;
+const Platform = _mod17.Platform;
+const DeviceEventEmitter = _mod17.DeviceEventEmitter;
+const dependencyMap = {};
+let c3 = 0;
+const __listener_id = "__listener_id";
+
+export default {
+  getOrientation(arg0) {
+    closure_0 = arg0;
+    const orientation = Orientation.getOrientation((arg0, arg1) => {
+      closure_0(arg0, arg1);
+    });
+  },
+  getSpecificOrientation(arg0) {
+    closure_0 = arg0;
+    const specificOrientation = Orientation.getSpecificOrientation((arg0, arg1) => {
+      closure_0(arg0, arg1);
+    });
+  },
+  ignoreAutoRotate(flag) {
+    Orientation.ignoreAutoRotate(flag);
+  },
+  lockToPortrait() {
+    Orientation.lockToPortrait();
+  },
+  lockToLandscape() {
+    Orientation.lockToLandscape();
+  },
+  lockToLandscapeRight() {
+    Orientation.lockToLandscapeRight();
+  },
+  lockToLandscapeLeft() {
+    Orientation.lockToLandscapeLeft();
+  },
+  unlockAllOrientations() {
+    const result = Orientation.unlockAllOrientations();
+  },
+  addOrientationListener(handleOrientationChange) {
+    if (handleOrientationChange.hasOwnProperty(__listener_id)) {
+      let str = handleOrientationChange[tmp];
     } else {
-      callResult = call(constructResult);
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(handleOrientationChange)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(handleOrientationChange, tmp, obj);
+      }
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class FePointLight {
-  constructor() {
-    self = this;
-    tmp = c2(this, FePointLight);
-    tmp2 = closure_4;
-    obj = closure_4(FePointLight);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    closure_2[str] = DeviceEventEmitter.addListener("orientationDidChange", (orientation) => {
+      handleOrientationChange(orientation.orientation);
+    });
+  },
+  addOrientationDegreesChangeListener(arg0) {
+    closure_0 = arg0;
+    if (arg0.hasOwnProperty(__listener_id)) {
+      let str = arg0[tmp];
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(arg0)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(arg0, tmp, obj);
+      }
     }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FePointLight, fn(19).Component);
-const entry = {
-  key: "render",
-  value: function render() {
-    const result = FePointLight(8590).warnUnimplementedFilter();
-    return null;
+    closure_2[str] = DeviceEventEmitter.addListener("orientationDegreesDidChange", (orientationDegrees) => {
+      closure_0(orientationDegrees.orientationDegrees);
+    });
+  },
+  removeOrientationListener(arg0) {
+    if (arg0.hasOwnProperty(__listener_id)) {
+      let str = arg0[tmp];
+    } else {
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(arg0)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(arg0, tmp, obj);
+      }
+    }
+    if (dependencyMap[str]) {
+      tmp6[str].remove();
+      tmp6[str] = null;
+    }
+  },
+  addSpecificOrientationListener(arg0) {
+    closure_0 = arg0;
+    if (arg0.hasOwnProperty(__listener_id)) {
+      let str = arg0[tmp];
+    } else {
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(arg0)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(arg0, tmp, obj);
+      }
+    }
+    closure_2[str] = DeviceEventEmitter.addListener("specificOrientationDidChange", (specificOrientation) => {
+      closure_0(specificOrientation.specificOrientation);
+    });
+  },
+  removeSpecificOrientationListener(arg0) {
+    if (arg0.hasOwnProperty(__listener_id)) {
+      let str = arg0[tmp];
+    } else {
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(arg0)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(arg0, tmp, obj);
+      }
+    }
+    if (dependencyMap[str]) {
+      tmp6[str].remove();
+      tmp6[str] = null;
+    }
+  },
+  getInitialOrientation() {
+    return Orientation.initialOrientation;
   }
 };
-const items = [entry];
-const importDefaultResultResult = _createClass(FePointLight, items);
-importDefaultResultResult.displayName = "FePointLight";
-importDefaultResultResult.defaultProps = {};
-
-export default importDefaultResultResult;

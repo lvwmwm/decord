@@ -1,10 +1,10 @@
-// Module ID: 1461
-// Function ID: 1462
+// Module ID: 1462
+// Function ID: 1463
 // Name: NetworkUtils
-// Dependencies: [1462, 2]
+// Dependencies: [1463, 2]
 
-// Module 1461 (NetworkUtils)
-import utils_NetworkUtils from "utils/NetworkUtils" /* 1462 */;
+// Module 1462 (NetworkUtils)
+import utils_NetworkUtils from "utils/NetworkUtils" /* 1463 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = [];
@@ -25,10 +25,10 @@ obj.awaitOnline = function awaitOnline() {
       closure_2.push(fn);
       if (!c3) {
         c3 = true;
-        tmp(1462).default.addOnlineCallback(whenOnline);
+        tmp(1463).default.addOnlineCallback(whenOnline);
       }
     }
-    _default = whenOnline(1462).default;
+    _default = whenOnline(1463).default;
     tmp = whenOnline;
   });
 };

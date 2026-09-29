@@ -1,20 +1,20 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17513
+// Function ID: 17514
 // Name: FramePanelHeader
-// Dependencies: [32, 19, 17, 9640, 9641, 21, 7271, 17135, 17137, 17141, 17142, 17157, 504, 17152, 2]
+// Dependencies: [32, 19, 17, 9345, 9346, 21, 7445, 17492, 17494, 17498, 17499, 17514, 504, 17509, 2]
 
-// Module 17156 (FramePanelHeader)
+// Module 17513 (FramePanelHeader)
 import initialize from "initialize" /* 504 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7271 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 17135 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 17137 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17141 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 17142 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17152 */;
-import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 17157 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7445 */;
+import ActivityPanelHeader from "ActivityPanelHeader" /* 17492 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 17494 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17498 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 17499 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17509 */;
+import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 17514 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9640 */;
+import FramesStore from "FramesStore" /* 9345 */;
 
 require = fn;
 function FramePanelHeaderContentInner(arg0) {
@@ -65,7 +65,7 @@ function FramePanelHeaderContentInner(arg0) {
   return React6(ActivityPanelHeader.BaseActivityPanelContent, obj3);
 }
 const View = fn(17).View;
-const asLaunched = fn(9641).asLaunched;
+const asLaunched = fn(9346).asLaunched;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_10 = noop.memo((arg0) => {

@@ -1,22 +1,22 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 17143
+// Function ID: 17144
 // Name: MediaGridItem
-// Dependencies: [19, 17, 1957, 7982, 21, 4636, 576, 504, 4373, 4637, 4640, 16779, 5688, 1176, 2]
+// Dependencies: [19, 17, 2041, 8154, 21, 4788, 576, 504, 4524, 4789, 4792, 17144, 5856, 1177, 2]
 
-// Module 16778 (MediaGridItem)
+// Module 17143 (MediaGridItem)
 import nativeDefault from "native" /* 576 */;
-import timing from "timing" /* 4637 */;
-import timingPresets from "timingPresets" /* 4640 */;
+import timing from "timing" /* 4789 */;
+import timingPresets from "timingPresets" /* 4792 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Pressable: hasOwnProperty, useWindowDimensions: metroRequire } = get_ActivityIndicator);
-const SearchMediaTypes = fn(7982).SearchMediaTypes;
+const SearchMediaTypes = fn(8154).SearchMediaTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { container: { borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BORDER_SUBTLE }, avatar: { position: "absolute", top: 8, right: 8 }, card: { padding: 0 } };
 let closure_11 = createStyles.createStyles(obj);
 let closure_12 = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };

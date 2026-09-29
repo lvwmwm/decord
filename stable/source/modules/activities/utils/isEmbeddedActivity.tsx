@@ -1,12 +1,12 @@
-// Module ID: 7841
-// Function ID: 7842
+// Module ID: 8013
+// Function ID: 8014
 // Name: isEmbeddedActivity
-// Dependencies: [1074, 7416, 2]
+// Dependencies: [1074, 7587, 2]
 // Exports: default
 
-// Module 7841 (isEmbeddedActivity)
+// Module 8013 (isEmbeddedActivity)
 import Constants from "Constants" /* 1074 */;
-import hasFlagDefault from "hasFlag" /* 7416 */;
+import hasFlagDefault from "hasFlag" /* 7587 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFlags = Constants.ActivityFlags;

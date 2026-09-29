@@ -1,17 +1,17 @@
-// Module ID: 4337
-// Function ID: 4338
+// Module ID: 4488
+// Function ID: 4489
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 4338, 2]
+// Dependencies: [19, 17, 21, 4489, 2]
 // Exports: BaseIconImage
 
-// Module 4337 (BaseIconImage)
-import useToken from "useToken" /* 4338 */;
+// Module 4488 (BaseIconImage)
+import useToken from "useToken" /* 4489 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "PX_16" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "HermesInternal", height: "Array" }, refresh_sm: { width: 18, height: 18 } };
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 

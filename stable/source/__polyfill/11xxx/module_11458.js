@@ -1,9 +1,9 @@
 // Module ID: 11458
 // Function ID: 11459
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11458
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6fcffd29ade22a0f8e9e38ff473cdae7", name: "ThemeDarkIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 58.333333333333336, height: 58.333333333333336, scales: [3], hash: "99ffc81e67285d18182e87dbce7ba5f1", name: "asset_silver_badge_small", type: "png" });

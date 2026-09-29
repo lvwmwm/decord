@@ -1,10 +1,10 @@
-// Module ID: 1970
-// Function ID: 1971
+// Module ID: 2054
+// Function ID: 2055
 // Name: FavoritesConstants
-// Dependencies: [1971, 2]
+// Dependencies: [2055, 2]
 
-// Module 1970 (FavoritesConstants)
-import GuildRecordUtils from "GuildRecordUtils" /* 1971 */;
+// Module 2054 (FavoritesConstants)
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
 import size from "module_2" /* 2 */;
 
 const obj = { id: "373", name: "Favorites", description: "The place for all your favorite channels!", joinedAt: new Date(), maxMembers: 500000 };

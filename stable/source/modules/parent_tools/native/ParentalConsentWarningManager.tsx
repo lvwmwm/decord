@@ -1,17 +1,17 @@
-// Module ID: 17576
-// Function ID: 17577
+// Module ID: 17871
+// Function ID: 17872
 // Name: ParentalConsentWarningManager
-// Dependencies: [4327, 7640, 14957, 7641, 1074, 14958, 4603, 17577, 1896, 7221, 17579, 2]
+// Dependencies: [4479, 7811, 15148, 7812, 1074, 15149, 4755, 17872, 1980, 7395, 17874, 2]
 
-// Module 17576 (ParentalConsentWarningManager)
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 14958 */;
-import ParentalConsentWarningActionCreators from "ParentalConsentWarningActionCreators" /* 17579 */;
-import ActionSheetStore from "ActionSheetStore" /* 4327 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7640 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14957 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
+// Module 17871 (ParentalConsentWarningManager)
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 15149 */;
+import ParentalConsentWarningActionCreators from "ParentalConsentWarningActionCreators" /* 17874 */;
+import ActionSheetStore from "ActionSheetStore" /* 4479 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7811 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 15148 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 require = fn;
 function maybePresentModal(daysRemaining) {
@@ -49,10 +49,10 @@ function maybePresentModal(daysRemaining) {
   }
   if (tmp5) {
     const obj = { daysRemaining };
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17577, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17872, dependencyMap.paths), "ParentalConsentWarningModal", obj);
   }
 }
-const FamilyCenterConstants = fn(7641);
+const FamilyCenterConstants = fn(7812);
 ({ UserLinkStatus: closure_7, UserLinkType: closure_8 } = FamilyCenterConstants);
 const AppStates = fn(1074).AppStates;
 const prototype = function ParentalConsentWarningManager() {

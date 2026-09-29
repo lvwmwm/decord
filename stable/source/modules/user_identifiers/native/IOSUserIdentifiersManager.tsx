@@ -1,14 +1,14 @@
-// Module ID: 17520
-// Function ID: 17521
+// Module ID: 17815
+// Function ID: 17816
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1371, 1074, 7221, 1363, 17521, 1270, 1230, 1240, 2]
+// Dependencies: [5, 17, 1372, 1074, 7395, 1364, 17816, 1271, 1231, 1241, 2]
 
-// Module 17520 (IOSUserIdentifiersManager)
-import SentryUtilsDefault from "SentryUtils" /* 1230 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+// Module 17815 (IOSUserIdentifiersManager)
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1371 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
+import UserStore from "UserStore" /* 1372 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 let require = fn;
 const NativeModules = fn(17).NativeModules;

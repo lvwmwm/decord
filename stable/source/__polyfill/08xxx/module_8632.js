@@ -1,73 +1,38 @@
 // Module ID: 8632
 // Function ID: 8633
-// Dependencies: [41, 42, 93, 95, 98, 8613]
+// Dependencies: [8622, 8633, 4617, 8619, 8617]
 
 // Module 8632
-import _modDef8613 from "module_8613" /* 8613 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import colorPropType from "colorPropType" /* 8617 */;
+import _mod8619 from "module_8619" /* 8619 */;
+import _mod8633 from "module_8633" /* 8633 */;
+import flattenStyle from "module_8622" /* 8622 */;
+import emptyFunction_mod from "module_4617" /* 4617 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let _classCallCheck = _classCallCheck_mod;
-class FeMergeNode {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    closure_0 = undefined;
-    tmp = closure_0(this, FeMergeNode);
-    items1 = [...items];
-    tmp2 = c2;
-    obj = c2(FeMergeNode);
-    tmp3 = closure_1;
-    if (closure_3()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.setNativeProps = () => {
-      const parent = props.props.parent;
-      if (parent) {
-        parent.forceUpdate();
-      }
-    };
-    return tmp3Result;
-  }
-}
-_classCallCheck = FeMergeNode;
-_inherits(FeMergeNode, _modDef8613);
-const entry = {
-  key: "render",
-  value: function render() {
-    return null;
-  }
-};
-let items = [entry];
-const importDefaultResultResult = _createClass(FeMergeNode, items);
-importDefaultResultResult.displayName = "FeMergeNode";
+const obj = { ellipsizeMode: null, numberOfLines: null, textBreakStrategy: null, onLayout: null, onPress: null, onLongPress: null, pressRetentionOffset: null, selectable: null, selectionColor: null, suppressHighlighting: null, style: null, testID: null, nativeID: null, allowFontScaling: null, maxFontSizeMultiplier: null, accessible: null, adjustsFontSizeToFit: null, minimumFontScale: null, disabled: null, dataDetectorType: null };
+const module_8633 = flattenStyle(_mod8633);
+let emptyFunction = emptyFunction_mod;
+obj.ellipsizeMode = emptyFunction.oneOf(["head", "middle", "tail", "clip"]);
+obj.numberOfLines = emptyFunction.number;
+let emptyFunction = emptyFunction_mod;
+obj.textBreakStrategy = emptyFunction.oneOf(["simple", "highQuality", "balanced"]);
+obj.onLayout = emptyFunction.func;
+obj.onPress = emptyFunction.func;
+obj.onLongPress = emptyFunction.func;
+obj.pressRetentionOffset = _mod8619;
+obj.selectable = emptyFunction.bool;
+obj.selectionColor = colorPropType;
+obj.suppressHighlighting = emptyFunction.bool;
+obj.style = module_8633;
+obj.testID = emptyFunction.string;
+obj.nativeID = emptyFunction.string;
+obj.allowFontScaling = emptyFunction.bool;
+obj.maxFontSizeMultiplier = emptyFunction.number;
+obj.accessible = emptyFunction.bool;
+obj.adjustsFontSizeToFit = emptyFunction.bool;
+obj.minimumFontScale = emptyFunction.number;
+obj.disabled = emptyFunction.bool;
+let emptyFunction = emptyFunction_mod;
+obj.dataDetectorType = emptyFunction.oneOf(["phoneNumber", "link", "email", "none", "all"]);
 
-export default importDefaultResultResult;
+export default obj;

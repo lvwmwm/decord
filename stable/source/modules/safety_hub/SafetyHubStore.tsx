@@ -1,14 +1,14 @@
-// Module ID: 8548
-// Function ID: 8549
+// Module ID: 8734
+// Function ID: 8735
 // Name: SafetyHubStore
-// Dependencies: [8537, 8538, 8549, 504, 573, 2]
+// Dependencies: [8723, 8724, 8735, 504, 573, 2]
 
-// Module 8548 (SafetyHubStore)
+// Module 8734 (SafetyHubStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SafetyHubModels from "SafetyHubModels" /* 8538 */;
-import _modDef8549 from "module_8549" /* 8549 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8537 */;
+import SafetyHubModels from "SafetyHubModels" /* 8724 */;
+import _modDef8735 from "module_8735" /* 8735 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8723 */;
 import size from "module_2" /* 2 */;
 
 function handleSafetyHubRequestAgeVerificationResetModalAction(arg0) {
@@ -150,7 +150,7 @@ const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
   },
   SAFETY_HUB_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility, expressiveModalV2Enabled, showExpressiveModalSubtitleAlt, manualReviewFallbackEnabled, manualReviewDecidedUnderage } = arg0);
-    closure_6 = _modDef8549(classifications, "id");
+    closure_6 = _modDef8735(classifications, "id");
     c9 = false;
     c10 = true;
     error = null;

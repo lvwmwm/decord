@@ -1,52 +1,95 @@
 // Module ID: 14353
 // Function ID: 14354
-// Dependencies: [14354, 14355, 14357, 1160, 14359, 14358]
-// Exports: getCanonicalLocales
+// Dependencies: [14316, 14345, 14336, 14341, 14337, 14340, 14347, 14344]
 
 // Module 14353
-import emitUnicodeLanguageId from "emitUnicodeLanguageId" /* 14354 */;
-import compareKV from "compareKV" /* 14355 */;
-import likelySubtags from "likelySubtags" /* 14358 */;
-import _mod14359 from "module_14359" /* 14359 */;
-import e_mod from "e" /* 1160 */;
-
 const require = globalThis.__r;
 
-let e = e_mod;
-e.__exportStar(emitUnicodeLanguageId, exports);
-let e = e_mod;
-e.__exportStar(_mod14359, exports);
-let e = e_mod;
-e.__exportStar(likelySubtags, exports);
 
-export const getCanonicalLocales = function getCanonicalLocales(items) {
-  if (undefined === items) {
-    items = [];
+export default (arg0, arg1, arg2, arg3) => {
+  let obj;
+  _require = arg3;
+  const tmp3 = new require("module_14316")(arg0, arg3);
+  const tmp4 = new require("module_14345")(arg1, arg3);
+  if (">" === arg2) {
+    dependencyMap = tmp(14336);
+    let tmpResult = tmp(14341);
+    const tmpResult3 = tmp(14337);
+    closure_2 = tmpResult3;
+    let str3 = ">=";
+    let str = ">";
+    let tmpResult4 = tmpResult3;
   } else {
-    let arr3 = items;
-    if (typeof items === "string") {
-      const items1 = [items];
-      arr3 = items1;
-    }
-    const items2 = [];
-    let num3 = 0;
-    items = items2;
-    if (0 < arr3.length) {
-      do {
-        let emitUnicodeLocaleIdResult = emitUnicodeLanguageId.emitUnicodeLocaleId(compareKV.CanonicalizeUnicodeLocaleId(require("module_14357").parseUnicodeLocaleId(arr3[num3])));
-        if (items2.indexOf(emitUnicodeLocaleIdResult) < 0) {
-          let arr = items2.push(emitUnicodeLocaleIdResult);
-        }
-        num3 = num3 + 1;
-        items = items2;
-      } while (num3 < arr3.length);
+    str = "<";
+    if ("<" === arg2) {
+      dependencyMap = tmp(14337);
+      tmpResult = tmp(14340);
+      tmpResult4 = tmp(14336);
+      closure_2 = tmpResult4;
+      str3 = "<=";
+    } else {
+      const _TypeError = TypeError;
+      const typeError = new TypeError("Must provide a hilo val of \"<\" or \">\"");
+      throw typeError;
     }
   }
-  return items;
+  if (require("module_14347")(tmp3, tmp4, arg3)) {
+    return false;
+  } else {
+    let num = 0;
+    let num3 = 0;
+    if (0 < tmp4.set.length) {
+      while (true) {
+        let arr = tmp4.set[num3];
+        _require = null;
+        dependencyMap = null;
+        let item = arr.forEach((semver) => {
+          let tmp = semver;
+          if (semver.semver === closure_0(semver[7]).ANY) {
+            tmp = new closure_0(semver[7])(">=0.0.0");
+          }
+          let tmp6 = closure_0;
+          if (!closure_0) {
+            tmp6 = tmp;
+          }
+          closure_0 = tmp6;
+          let tmp7 = semver;
+          if (!semver) {
+            tmp7 = tmp;
+          }
+          semver = tmp7;
+          if (dependencyMap(tmp.semver, closure_0.semver, require)) {
+            closure_0 = tmp;
+          } else if (React2(tmp.semver, semver.semver, require)) {
+            semver = tmp;
+          }
+        });
+        if (_require.operator !== str) {
+          if (_require.operator !== str3) {
+            if (!dependencyMap.operator) {
+              if (tmpResult(tmp3, dependencyMap.semver)) {
+                obj = { v: false };
+              }
+            }
+            let obj2;
+            if (dependencyMap.operator === str3) {
+              if (tmpResult4(tmp3, dependencyMap.semver)) {
+                obj2 = { v: false };
+              }
+            }
+            obj = obj2;
+          }
+          if (obj) {
+            break;
+          } else {
+            num3 = num + 1;
+            num = num3;
+          }
+        }
+        obj = { v: false };
+      }
+      return obj.v;
+    }
+    return true;
+  }
 };
-export const isStructurallyValidLanguageTag = require("module_14357").isStructurallyValidLanguageTag;
-export const isUnicodeLanguageSubtag = require("module_14357").isUnicodeLanguageSubtag;
-export const isUnicodeRegionSubtag = require("module_14357").isUnicodeRegionSubtag;
-export const isUnicodeScriptSubtag = require("module_14357").isUnicodeScriptSubtag;
-export const parseUnicodeLanguageId = require("module_14357").parseUnicodeLanguageId;
-export const parseUnicodeLocaleId = require("module_14357").parseUnicodeLocaleId;

@@ -1,15 +1,15 @@
-// Module ID: 7263
-// Function ID: 7264
+// Module ID: 7437
+// Function ID: 7438
 // Name: ConnectionCard
-// Dependencies: [19, 7204, 21, 7264, 7281, 2]
+// Dependencies: [19, 7378, 21, 7438, 7455, 2]
 // Exports: default
 
-// Module 7263 (ConnectionCard)
-import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7264 */;
-import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7281 */;
+// Module 7437 (ConnectionCard)
+import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7438 */;
+import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7455 */;
 import noop from "module_19" /* 19 */;
 
-const OnboardingConnectionType = fn(7204).OnboardingConnectionType;
+const OnboardingConnectionType = fn(7378).OnboardingConnectionType;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/ConnectionCard.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 17491
-// Function ID: 17492
+// Module ID: 17786
+// Function ID: 17787
 // Name: GuildRoomSpatialAudio
-// Dependencies: [502, 4794, 4798, 4799, 504, 4836, 2]
+// Dependencies: [502, 4946, 4950, 4951, 504, 4988, 2]
 // Exports: computeLivingRoomWorldPoints, livingRoomWorldPointToMediaEnginePoint, useGuildRoomSpatialAudio
 
-// Module 17491 (GuildRoomSpatialAudio)
+// Module 17786 (GuildRoomSpatialAudio)
 import initialize from "initialize" /* 504 */;
-import GuildRoomsExperiment from "GuildRoomsExperiment" /* 4836 */;
+import GuildRoomsExperiment from "GuildRoomsExperiment" /* 4988 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoomStore from "GuildRoomStore" /* 4794 */;
+import GuildRoomStore from "GuildRoomStore" /* 4946 */;
 
 require = fn;
-const GuildRoomConstants = fn(4798);
+const GuildRoomConstants = fn(4950);
 ({ GUILD_ROOM_BACKGROUND_CONFIG: closure_4, GUILD_ROOM_SPATIAL_AUDIO_MODE } = GuildRoomConstants);
 let c5 = false;
 let closure_6 = { x: 50, y: 50 };

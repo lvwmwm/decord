@@ -1,16 +1,16 @@
-// Module ID: 12367
-// Function ID: 12368
+// Module ID: 12516
+// Function ID: 12517
 // Name: ChatInputImageCarousel
-// Dependencies: [19, 7882, 4977, 4976, 9615, 21, 504, 10760, 2]
+// Dependencies: [19, 8054, 5137, 5136, 9686, 21, 504, 10927, 2]
 
-// Module 12367 (ChatInputImageCarousel)
+// Module 12516 (ChatInputImageCarousel)
 import noop from "module_19" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7882 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 4976 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8054 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5136 */;
 
 const require = fn;
-const DraftType = fn(4977).DraftType;
-let closure_6 = fn(9615).useChatShowingAutoComplete;
+const DraftType = fn(5137).DraftType;
+let closure_6 = fn(9686).useChatShowingAutoComplete;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputImageCarousel.tsx");
@@ -40,7 +40,7 @@ export default noop.memo(function ChatInputImageCarousel(canUpload) {
   let tmp4 = null;
   if (null != stateFromStores) {
     const obj2 = { attachments: stateFromStores, channelId };
-    tmp4 = jsx(channelId(10760), { attachments: stateFromStores, channelId });
+    tmp4 = jsx(channelId(10927), { attachments: stateFromStores, channelId });
   }
   return tmp4;
 });

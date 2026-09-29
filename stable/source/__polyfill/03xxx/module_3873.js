@@ -1,51 +1,46 @@
 // Module ID: 3873
 // Function ID: 3874
-// Dependencies: [3729, 3725, 3726]
-// Exports: default
+// Dependencies: [3874, 3875, 3876, 3883, 3884]
 
 // Module 3873
-import module_3729_mod from "module_3729" /* 3729 */;
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import module_3874 from "module_3874" /* 3874 */;
+import module_3875 from "module_3875" /* 3875 */;
+import module_3876 from "module_3876" /* 3876 */;
+import date_mod from "module_3883" /* 3883 */;
+import date_mod from "module_3884" /* 3884 */;
 
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj = { default: module_3729 };
+if (!module_3874) {
+  const obj = { default: module_3874 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3729;
+  tmp3 = module_3874;
 }
-module_3729 = tmp3;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj2 = { default: _typeof };
+if (!module_3875) {
+  const obj2 = { default: module_3875 };
   let tmp5 = obj2;
 } else {
-  tmp5 = _typeof;
+  tmp5 = module_3875;
 }
-_typeof = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
+if (!module_3876) {
+  const obj3 = { default: module_3876 };
   let tmp7 = obj3;
 } else {
-  tmp7 = requiredArgs;
+  tmp7 = module_3876;
 }
-requiredArgs = tmp7;
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
+  let tmp9 = obj4;
+} else {
+  tmp9 = date;
+}
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
 
-export default function addDays(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const defaultResult2 = module_3729.default(arg1);
-  if (isNaN(defaultResult2)) {
-    const _Date = Date;
-    const date = new Date(NaN);
-    return date;
-  } else if (defaultResult2) {
-    defaultResult1.setDate(defaultResult1.getDate() + defaultResult2);
-    return defaultResult1;
-  } else {
-    return defaultResult1;
-  }
-};
+export default { code: "bg", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
 export default exports.default;

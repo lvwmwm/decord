@@ -1,97 +1,133 @@
 // Module ID: 4412
 // Function ID: 4413
-// Dependencies: [32, 19, 4407]
-// Exports: useRiveTrigger
+// Dependencies: [32]
+// Exports: shallow
 
 // Module 4412
-import _mod4407 from "module_4407" /* 4407 */;
 import _slicedToArray from "module_32" /* 32 */;
 
-require = fn;
-const noop = fn(19);
-({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = noop);
+function isIterable(arg0) {
 
-export const useRiveTrigger = function useRiveTrigger(startAnimation, instance, arg2) {
-  closure_0 = startAnimation;
-  closure_1 = instance;
-  let obj = arg2;
-  if (arg2 == null) {
-    obj = {};
+}
+function hasIterableEntries(arg0) {
+
+}
+function compareEntries(arr, arr2) {
+  let map = arr;
+  if (!(arr instanceof Map)) {
+    const _Map = Map;
+    map = new Map(arr.entries());
   }
-  const onTrigger = obj.onTrigger;
-  let tmp = hasOwnProperty(undefined);
-  const tmp2 = hasOwnProperty(false);
-  const tmp3 = hasOwnProperty(onTrigger);
-  closure_4 = tmp3;
-  tmp3.current = onTrigger;
-  const items = [instance, startAnimation];
-  const disposableMemo = _mod4407.useDisposableMemo(() => {
-    if (closure_1) {
-      return obj.triggerProperty(closure_0);
-    }
-    obj = closure_1;
-  }, (dispose) => {
-    let disposeResult;
-    if (dispose != null) {
-      disposeResult = dispose.dispose();
-    }
-    return disposeResult;
-  }, items, tmp);
-  if (tmp.current) {
-    tmp2.current = true;
+  map1 = arr2;
+  if (!(arr2 instanceof Map)) {
+    const _Map2 = Map;
+    map1 = new Map(arr2.entries());
   }
-  const tmp5 = _slicedToArray(timestampProducer(null), 2);
-  closure_6 = tmp5[1];
-  const items1 = [startAnimation, instance];
-  React4(() => {
-    closure_6(null);
-  }, items1);
-  const items2 = [instance, disposableMemo, startAnimation];
-  React4(() => {
-    let tmp = closure_1;
-    if (closure_1) {
-      tmp = !disposableMemo;
+  if (map.size !== map1.size) {
+    return false;
+  } else {
+    const obj2 = map[Symbol.iterator]();
+    while (obj2 !== undefined) {
+      let tmp11 = _slicedToArray(tmp8, 2);
+      [tmp12, tmp14] = tmp11;
+      if (map1.has(tmp12)) {
+        let _Object = Object;
+      }
+      obj2.return();
+      let flag = false;
+      return false;
     }
-    if (tmp) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const error = new Error("Property \"" + closure_0 + "\" not found in the ViewModel instance");
-      closure_6(error);
+    return true;
+  }
+}
+
+export const shallow = function shallow(current, current2) {
+  closure_0 = current;
+  closure_1 = current2;
+  let isResult = Object.is(current, current2);
+  if (!isResult) {
+    let tmp2 = typeof current === "object";
+    if (typeof current === "object") {
+      tmp2 = null !== current;
     }
-  }, items2);
-  const items3 = [disposableMemo];
-  React4(() => {
-    if (disposableMemo) {
-      closure_0 = obj.addListener(() => {
-        const current = ref.current;
-        if (current != null) {
-          current();
+    if (tmp2) {
+      tmp2 = typeof current2 === "object";
+    }
+    if (tmp2) {
+      tmp2 = null !== current2;
+    }
+    if (tmp2) {
+      const _Object = Object;
+      const _Object2 = Object;
+      const prototypeOf = Object.getPrototypeOf(current);
+      const tmp5 = prototypeOf === Object.getPrototypeOf(current2);
+      if (!tmp5) {
+        tmp2 = tmp5;
+      } else if (typeof isIterable === "function") {
+        const _Symbol = Symbol;
+        if (!(Symbol.iterator in current)) {
+          const obj = {
+            entries() {
+                      return Object.entries(closure_0);
+                    }
+          };
+          const obj2 = {
+            entries() {
+                      return Object.entries(closure_1);
+                    }
+          };
+          compareEntries(obj, obj2);
+        } else if (typeof tmp6 === "function") {
+          const _Symbol2 = Symbol;
+        } else {
+          throw new TypeError("Trying to call a non-function");
         }
-      });
-      return () => {
-        try {
-          closure_0();
-        } catch (err) {
+        if (typeof hasIterableEntries === "function") {
+          if (!("entries" in current)) {
+            const _Symbol3 = Symbol;
+            const iter = current[Symbol.iterator]();
+            const _Symbol4 = Symbol;
+            const iter2 = current2[Symbol.iterator]();
+            const iter3 = iter.next();
+            const iter4 = iter2.next();
+            let iter5 = iter4;
+            let iter6 = iter3;
+            if (!iter3.done) {
+              let iter7 = iter4;
+              let iter8 = iter3;
+              iter5 = iter4;
+              iter6 = iter3;
+              if (!iter4.done) {
+                const _Object3 = Object;
+                let flag = false;
+                while (Object.is(iter8.value, iter7.value)) {
+                  let iter9 = iter.next();
+                  let iter10 = iter2.next();
+                  iter5 = iter10;
+                  iter6 = iter9;
+                  if (!iter9.done) {
+                    iter7 = iter10;
+                    iter8 = iter9;
+                    iter5 = iter10;
+                    iter6 = iter9;
+                  }
+                }
+              }
+            }
+            flag = iter6.done && iter5.done;
+            const tmp9 = iter6.done && iter5.done;
+          } else if (typeof tmp8 !== "function") {
+            throw new TypeError("Trying to call a non-function");
+          }
+          flag = compareEntries(current, current2);
+        } else {
+          throw new TypeError("Trying to call a non-function");
         }
-      };
-    }
-    obj = disposableMemo;
-  }, items3);
-  const obj3 = { trigger: null, error: tmp5[0] };
-  const items4 = [startAnimation];
-  obj3.trigger = React3(() => {
-    if (ref.current) {
-      const current = ref.current;
-      current.trigger();
-    } else {
-      const _console = console;
-      const _HermesInternal = HermesInternal;
-      if (ref2.current) {
-        warn(concat(tmp3, "') called after dispose. The property has been cleaned up \u2014 this is likely a stale closure from an async callback that fired after unmount."));
       } else {
-        warn(concat(tmp3, "') called but the property is not available yet. The viewModelInstance may still be loading."));
+        throw new TypeError("Trying to call a non-function");
       }
     }
-  }, items4);
-  return obj3;
+    isResult = tmp2;
+  }
+  return isResult;
 };

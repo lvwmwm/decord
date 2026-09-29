@@ -1,9 +1,9 @@
 // Module ID: 8143
 // Function ID: 8144
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 8143
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [1, 2, 3], hash: "c9a4f850f67785dd3a5d71532b973724", name: "ic_verified_icon_white_16px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 24, height: 24, scales: [2, 3, 4], hash: "abb394aed71d149627aa4dc597482f89", name: "stack-nav-back", type: "png" });

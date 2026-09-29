@@ -1,9 +1,9 @@
-// Module ID: 1238
-// Function ID: 1239
+// Module ID: 1239
+// Function ID: 1240
 // Name: ExperimentsConstants
 // Dependencies: [2]
 
-// Module 1238 (ExperimentsConstants)
+// Module 1239 (ExperimentsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ExperimentsConstants.tsx");

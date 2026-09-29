@@ -1,21 +1,21 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 18079
+// Function ID: 18080
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 11696, 5686, 1176, 4571, 7252, 1114, 7606, 1396, 4488, 4603, 9922, 7300, 9923, 6728, 7226, 5768, 2]
+// Dependencies: [32, 19, 17, 21, 11843, 5854, 1177, 4722, 7426, 1115, 7777, 1397, 4639, 4755, 9922, 7474, 9923, 6901, 7400, 5936, 2]
 // Exports: default
 
-// Module 17755 (SelectConnectionActionSheet)
-import util from "util" /* 1114 */;
-import useThemeDefault from "useTheme" /* 4571 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import TableRowGroup from "TableRowGroup" /* 5768 */;
-import BottomSheetModal from "BottomSheetModal" /* 6728 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7226 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7252 */;
-import ActionSheet from "ActionSheet" /* 7300 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7606 */;
+// Module 18079 (SelectConnectionActionSheet)
+import util from "util" /* 1115 */;
+import useThemeDefault from "useTheme" /* 4722 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import TableRowGroup from "TableRowGroup" /* 5936 */;
+import BottomSheetModal from "BottomSheetModal" /* 6901 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7400 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7426 */;
+import ActionSheet from "ActionSheet" /* 7474 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7777 */;
 import SegmentedControlState from "SegmentedControlState" /* 9922 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11696 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11843 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -31,8 +31,8 @@ function IdentityApplicationRow(arg0) {
     const bot = getOrFetchApplicationBatched.bot;
     let tmp6Result = null;
     if (null != bot) {
-      const obj2 = { user: bot, size: tmp(1176).AvatarSizes.XSMALL, guildId: "r" };
-      tmp6Result = tmp6(tmp(1176).Avatar, obj2);
+      const obj2 = { user: bot, size: tmp(1177).AvatarSizes.XSMALL, guildId: "Array" };
+      tmp6Result = tmp6(tmp(1177).Avatar, obj2);
     }
     const obj3 = { icon: tmp6Result, label: getOrFetchApplicationBatched.name, subLabel: null, onPress: null };
     let description;
@@ -41,7 +41,7 @@ function IdentityApplicationRow(arg0) {
     }
     obj3.subLabel = description;
     obj3.onPress = onPress;
-    return timestampProducer(tmp(5686).TableRow, obj3);
+    return timestampProducer(tmp(5854).TableRow, obj3);
   }
 }
 const View = fn(17).View;
@@ -102,7 +102,7 @@ export default function SelectConnectionActionSheet(arg0) {
       let tmp = null;
       if (null != application) {
         const obj = { icon: null, label: null, subLabel: null, onPress: null };
-        const obj2 = { user: application.bot, size: require("native").AvatarSizes.XSMALL, guildId: "r" };
+        const obj2 = { user: application.bot, size: require("native").AvatarSizes.XSMALL, guildId: "Array" };
         obj.icon = closure_1_6(require("native").Avatar, obj2);
         obj.label = application.name;
         let description;
@@ -145,15 +145,15 @@ export default function SelectConnectionActionSheet(arg0) {
   if (num == null) {
     num = 0;
   }
-  const intl2 = tmp3(1114).intl;
+  const intl2 = tmp3(1115).intl;
   const items = [intl2.string(util.t["3fe7U5"])];
   if (num > 0) {
-    const intl3 = tmp3(1114).intl;
-    items.push(intl3.string(tmp3(1114).t.PHjkRE));
+    const intl3 = tmp3(1115).intl;
+    items.push(intl3.string(tmp3(1115).t.PHjkRE));
   }
   if (mapped2.length > 0) {
-    const intl4 = tmp3(1114).intl;
-    items.push(intl4.string(tmp3(1114).t.y3ZnnU));
+    const intl4 = tmp3(1115).intl;
+    items.push(intl4.string(tmp3(1115).t.y3ZnnU));
   }
   const tmp3Result = ConnectionsHooks;
   const tmp3Result2 = SegmentedControlState;

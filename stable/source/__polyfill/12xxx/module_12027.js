@@ -1,9 +1,9 @@
 // Module ID: 12027
 // Function ID: 12028
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 12027
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/safety_hub/images", width: 350, height: 350, scales: [1], hash: "401f8c2bcc4aaf9b9964b431f7df8a68", name: "video_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "59c1068002b82917b518f48d03d4151e", name: "BookmarkOutlineIcon", type: "png" });

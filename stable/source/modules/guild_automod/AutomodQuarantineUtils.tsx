@@ -1,27 +1,27 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12155
+// Function ID: 12156
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 9337, 502, 2021, 1979, 4275, 4458, 1074, 4262, 1084, 563, 4281, 1114, 9338, 9339, 7485, 2]
+// Dependencies: [19, 10067, 502, 2105, 2063, 4427, 4609, 1074, 4414, 1084, 563, 4433, 1115, 10068, 10069, 7656, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 12005 (AutomodQuarantineUtils)
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4281 */;
-import openUserSettings2 from "openUserSettings" /* 7485 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9339 */;
+// Module 12155 (AutomodQuarantineUtils)
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4433 */;
+import openUserSettings2 from "openUserSettings" /* 7656 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10069 */;
 import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9337 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10067 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const Constants = fn(1074);
 ({ Permissions: closure_9, UserSettingsSections: c10 } = Constants);
-const GuildMemberFlags = fn(4262).GuildMemberFlags;
+const GuildMemberFlags = fn(4414).GuildMemberFlags;
 let closure_12 = fn(1084).ProfileCustomizationSubsection;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodQuarantineUtils.tsx");
@@ -48,7 +48,7 @@ export const useGuildAutomodProfileQuarantineErrors = function useGuildAutomodPr
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "PX_16" };
+    const obj = { nick: "HermesInternal", bio: "Array" };
     let guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {
@@ -61,23 +61,23 @@ export const useGuildAutomodProfileQuarantineErrors = function useGuildAutomodPr
         if (0 !== automodQuarantinedProfileFlags.size) {
           if (!automodQuarantinedProfileFlags.has(GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME)) {
             if (automodQuarantinedProfileFlags.has(tmp9.AUTOMOD_QUARANTINED_BIO)) {
-              const intl3 = tmp7(1114).intl;
-              const items = [intl3.string(tmp7(1114).t.dZh1vz)];
+              const intl3 = tmp7(1115).intl;
+              const items = [intl3.string(tmp7(1115).t.dZh1vz)];
               obj.bio = items;
             }
           } else {
             if (null == closure_0) {
-              const intl2 = tmp7(1114).intl;
+              const intl2 = tmp7(1115).intl;
               let str = guild.name;
               if (str == null) {
                 str = "";
               }
               const obj2 = { guildName: str };
-              guild = [intl2.formatToPlainString(tmp7(1114).t.WBUh3O, obj2)];
+              guild = [intl2.formatToPlainString(tmp7(1115).t.WBUh3O, obj2)];
               let items1 = guild;
             } else {
-              const intl = tmp7(1114).intl;
-              items1 = [intl.string(tmp7(1114).t.EPZCrM)];
+              const intl = tmp7(1115).intl;
+              items1 = [intl.string(tmp7(1115).t.EPZCrM)];
             }
             obj.nick = items1;
           }

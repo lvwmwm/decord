@@ -1,16 +1,16 @@
-// Module ID: 13914
-// Function ID: 13915
+// Module ID: 14124
+// Function ID: 14125
 // Name: useSpatialAudioControlState
-// Dependencies: [19, 1908, 4661, 13915, 504, 2]
+// Dependencies: [19, 1992, 4813, 14125, 504, 2]
 // Exports: default, isSpatialAudioBlocked, isSpatialAudioEligible
 
-// Module 13914 (useSpatialAudioControlState)
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13915 */;
+// Module 14124 (useSpatialAudioControlState)
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 14125 */;
 import noop from "module_19" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 const require = fn;
-const Constants = fn(4661);
+const Constants = fn(4813);
 ({ Features: hasOwnProperty, SpatialAudioStatus: metroRequire } = Constants);
 const SpatialAudioControlState = { HIDDEN: "HIDDEN", AVAILABLE: "AVAILABLE", BLOCKED_MONO_OUTPUT: "BLOCKED_MONO_OUTPUT", BLOCKED_INIT_FAILED: "BLOCKED_INIT_FAILED", BLOCKED_HRTF_FAILED: "BLOCKED_HRTF_FAILED" };
 const size = fn(2);

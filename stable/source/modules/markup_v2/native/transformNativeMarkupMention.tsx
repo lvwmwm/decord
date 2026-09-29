@@ -1,14 +1,15 @@
-// Module ID: 8219
-// Function ID: 8220
+// Module ID: 8402
+// Function ID: 8403
 // Name: transformNativeMarkupMention
-// Dependencies: [5108, 5079, 5077, 5087, 2]
+// Dependencies: [5270, 5241, 5239, 5250, 8403, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8219 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 5077 */;
-import MarkupRules from "MarkupRules" /* 5079 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5087 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 5108 */;
+// Module 8402 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 5239 */;
+import MarkupRules from "MarkupRules" /* 5241 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5250 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 5270 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8403 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -24,47 +25,55 @@ export const transformNativeMention = function transformNativeMention(value, all
   const type = value.type;
   if ("user" === type) {
     const str1 = value.value.toString();
-    const obj4 = { fullMatch: null, id: null, everyoneOrHere: "r" };
+    const obj5 = { fullMatch: null, id: null, everyoneOrHere: "Array" };
     const _HermesInternal2 = HermesInternal;
-    obj4.fullMatch = "<@" + str1 + ">";
-    obj4.id = str1;
-    return MarkupRules.hydrateUserMention(obj4, allowGameMentions);
+    obj5.fullMatch = "<@" + str1 + ">";
+    obj5.id = str1;
+    return MarkupRules.hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
-    return MarkupRules.hydrateUserMention({ fullMatch: "@everyone", id: "accessible", everyoneOrHere: true }, allowGameMentions);
+    return MarkupRules.hydrateUserMention({ fullMatch: "@everyone", id: "accessible", everyoneOrHere: "Array" }, allowGameMentions);
   } else if ("here" === type) {
-    return MarkupRules.hydrateUserMention({ fullMatch: "@here", id: "accessible", everyoneOrHere: true }, allowGameMentions);
+    return MarkupRules.hydrateUserMention({ fullMatch: "@here", id: "accessible", everyoneOrHere: "Array" }, allowGameMentions);
   } else if ("role" === type) {
     return MarkupRules.hydrateRoleMention(value.value.toString(), allowGameMentions);
   } else if ("game" === type) {
-    const str16 = value.value.toString();
+    const str19 = value.value.toString();
     if (allowGameMentions.allowGameMentions) {
-      let hydrateGameMentionResult = tmp21(5108).hydrateGameMention(str16, allowGameMentions);
-      const tmp21Result = tmp21(5108);
+      let hydrateGameMentionResult = tmp25(5270).hydrateGameMention(str19, allowGameMentions);
+      const tmp25Result = tmp25(5270);
     } else {
-      hydrateGameMentionResult = { type: tmp21(5077).AST_KEY.TEXT, content: null };
+      hydrateGameMentionResult = { type: tmp25(5239).AST_KEY.TEXT, content: null };
       const _HermesInternal = HermesInternal;
-      hydrateGameMentionResult.content = "<@$" + str16 + ">";
+      hydrateGameMentionResult.content = "<@$" + str19 + ">";
     }
     return hydrateGameMentionResult;
   } else if ("command" === type) {
     return MarkupRules.hydrateCommandMention(value.value.name, value.value.id.toString(), allowGameMentions);
   } else if ("channel" === type) {
-    const str17 = value.value.toString();
+    const str20 = value.value.toString();
     const guildIdFromChannelId = MarkupChannelMentionRule.getGuildIdFromChannelId(allowGameMentions.channelId);
-    const channel = MarkupChannelMentionRule.getChannel(str17, allowGameMentions.mentionChannels);
+    const channel = MarkupChannelMentionRule.getChannel(str20, allowGameMentions.mentionChannels);
     if (null == channel) {
-      const tmp4Result = tmp4(5087);
-      let handleUnknownChannelResult = tmp4Result.handleUnknownChannel(null, str17, null, guildIdFromChannelId);
+      const tmp8Result = tmp8(5250);
+      let handleUnknownChannelResult = tmp8Result.handleUnknownChannel(null, str20, null, guildIdFromChannelId);
     } else {
-      handleUnknownChannelResult = tmp4(5087).parseChannel(channel, null, guildIdFromChannelId);
-      const tmp4Result4 = tmp4(5087);
+      handleUnknownChannelResult = tmp8(5250).parseChannel(channel, null, guildIdFromChannelId);
+      const tmp8Result4 = tmp8(5250);
     }
-    const obj5 = {};
+    const obj6 = {};
     const merged = Object.assign(handleUnknownChannelResult);
-    obj5.content = PlatformMarkupRules.decorateWithIcon(handleUnknownChannelResult.content);
-    const tmp4Result5 = PlatformMarkupRules;
-    obj5.inContent = PlatformMarkupRules.decorateWithIcon(handleUnknownChannelResult.inContent);
-    return obj5;
+    obj6.content = PlatformMarkupRules.decorateWithIcon(handleUnknownChannelResult.content);
+    const tmp8Result5 = PlatformMarkupRules;
+    obj6.inContent = PlatformMarkupRules.decorateWithIcon(handleUnknownChannelResult.inContent);
+    return obj6;
+  } else if ("static" === type) {
+    let str21;
+    if ("linked_roles" === value.value.type) {
+      if (null != value.value.value) {
+        str21 = value.value.value.toString();
+      }
+    }
+    return MarkupRules.hydrateStaticRouteLink(StaticMentionRoutes.STATIC_ROUTE_ICON_TYPE[value.value.type], str21, allowGameMentions);
   } else {
     const obj = { type: MarkupTypes.AST_KEY.TEXT, content: "" };
     return obj;

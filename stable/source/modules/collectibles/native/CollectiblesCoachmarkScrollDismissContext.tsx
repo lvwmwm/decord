@@ -1,10 +1,10 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 16143
+// Function ID: 16144
 // Name: CollectiblesCoachmarkScrollDismissContext
 // Dependencies: [19, 1085, 21, 2]
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
-// Module 15910 (CollectiblesCoachmarkScrollDismissContext)
+// Module 16143 (CollectiblesCoachmarkScrollDismissContext)
 import noop from "module_19" /* 19 */;
 
 const NOOP = fn(1085).NOOP;

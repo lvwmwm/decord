@@ -1,19 +1,19 @@
-// Module ID: 8890
-// Function ID: 8891
+// Module ID: 9076
+// Function ID: 9077
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1181, 7645, 1076, 21, 4636, 576, 8891, 7656, 8892, 8295, 8895, 8896, 1114, 4335, 7265, 8954, 8956, 504, 4488, 5204, 7657, 4632, 8957, 8959, 8961, 8785, 8962, 8964, 8969, 8972, 8893, 4603, 8293, 4294, 8967, 8994, 8995, 1254, 2]
+// Dependencies: [19, 17, 1182, 7816, 1076, 21, 4788, 576, 9077, 7827, 9078, 8479, 9081, 9082, 1115, 4486, 7439, 9140, 9142, 504, 4639, 5371, 7828, 4784, 9143, 9145, 9147, 8972, 9148, 9150, 9155, 9158, 9079, 4755, 8477, 4446, 9153, 9180, 9181, 1255, 2]
 
-// Module 8890 (CollectiblesShopCardV2)
+// Module 9076 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import v1 from "v1" /* 1254 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8293 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8893 */;
+import util from "util" /* 1115 */;
+import v1 from "v1" /* 1255 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8477 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9079 */;
 import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1181 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7645 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
 
 require = fn;
 function CollectiblesShopCardInternalV2(product) {
@@ -299,7 +299,7 @@ let num = 170;
 if (PixelRatio.getFontScale() >= 1.78) {
   num = 302;
 }
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { card: null, topRowOverlay: null, badge: null, badgePill: null, badgeOverrideText: null, badgePillDarkMode: null, badgePillLightMode: null, wishlistButton: null };
 let size = { position: "relative", height: num, width: 150, display: "flex", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj.card = size;

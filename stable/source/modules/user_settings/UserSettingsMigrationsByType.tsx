@@ -1,9 +1,9 @@
-// Module ID: 1223
-// Function ID: 1224
+// Module ID: 1224
+// Function ID: 1225
 // Name: UserSettingsMigrationsByType
 // Dependencies: [1084, 2]
 
-// Module 1223 (UserSettingsMigrationsByType)
+// Module 1224 (UserSettingsMigrationsByType)
 import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
 import size from "module_2" /* 2 */;
 

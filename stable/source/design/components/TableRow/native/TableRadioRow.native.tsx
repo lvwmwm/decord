@@ -1,15 +1,15 @@
-// Module ID: 5769
-// Function ID: 5770
+// Module ID: 5937
+// Function ID: 5938
 // Name: TableRadioRow
-// Dependencies: [19, 21, 5766, 4340, 4355, 5686, 5770, 2]
+// Dependencies: [19, 21, 5934, 4491, 4506, 5854, 5938, 2]
 // Exports: TableRadioRow
 
-// Module 5769 (TableRadioRow)
-import native from "native" /* 4340 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
-import TableRow from "TableRow" /* 5686 */;
-import TableRadioGroup from "TableRadioGroup" /* 5766 */;
-import FormRadio from "FormRadio" /* 5770 */;
+// Module 5937 (TableRadioRow)
+import native from "native" /* 4491 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4506 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRadioGroup from "TableRadioGroup" /* 5934 */;
+import FormRadio from "FormRadio" /* 5938 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

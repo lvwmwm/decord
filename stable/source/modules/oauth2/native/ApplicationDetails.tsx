@@ -1,21 +1,21 @@
-// Module ID: 9560
-// Function ID: 9561
+// Module ID: 9576
+// Function ID: 9577
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 4636, 576, 9369, 9015, 9561, 11, 9367, 4579, 1114, 5176, 9371, 9563, 4599, 8457, 9565, 9532, 4632, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 9364, 9200, 9577, 11, 9362, 4730, 1115, 5345, 9366, 9579, 4750, 8642, 9581, 9548, 4784, 2]
 // Exports: default
 
-// Module 9560 (ApplicationDetails)
+// Module 9576 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ClockIcon from "ClockIcon" /* 4599 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import LockIcon from "LockIcon" /* 5176 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
-import scopes from "scopes" /* 9367 */;
-import disclosures from "disclosures" /* 9369 */;
-import Utils from "Utils" /* 9371 */;
-import ShieldIcon from "ShieldIcon" /* 9532 */;
+import util from "util" /* 1115 */;
+import ClockIcon from "ClockIcon" /* 4750 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import LockIcon from "LockIcon" /* 5345 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8642 */;
+import scopes from "scopes" /* 9362 */;
+import disclosures from "disclosures" /* 9364 */;
+import Utils from "Utils" /* 9366 */;
+import ShieldIcon from "ShieldIcon" /* 9548 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -35,7 +35,7 @@ function ApplicationDetailsEntry(children) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: null };
 let size = { width: 16, height: 16, tintColor: nativeDefault.colors.TEXT_MUTED };
 obj2.entryIcon = size;
@@ -66,10 +66,10 @@ export default function ApplicationDetails(arg0) {
   let obj3 = { style: tmp2.applicationDetails, children: null };
   let tmp15 = null;
   if (null != joined) {
-    let obj4 = { iconComponent: tmp5(4579).LinkIcon, text: null };
-    const intl = tmp5(1114).intl;
+    let obj4 = { iconComponent: tmp5(4730).LinkIcon, text: null };
+    const intl = tmp5(1115).intl;
     const obj5 = { origin: joined };
-    obj4.text = intl.format(tmp5(1114).t["5k5OKD"], obj5);
+    obj4.text = intl.format(tmp5(1115).t["5k5OKD"], obj5);
     tmp15 = React4(ApplicationDetailsEntry, obj4);
   }
   const items = [tmp15, , , , , , ];
@@ -80,24 +80,24 @@ export default function ApplicationDetails(arg0) {
   items[1] = React4(ApplicationDetailsEntry, obj6);
   let tmp18Result = null;
   if (null != connectedAccount) {
-    const obj7 = { iconComponent: tmp5(9563).HammerIcon, text: null };
-    const intl2 = tmp5(1114).intl;
-    obj7.text = intl2.string(tmp5(1114).t["8qui3M"]);
+    const obj7 = { iconComponent: tmp5(9579).HammerIcon, text: null };
+    const intl2 = tmp5(1115).intl;
+    obj7.text = intl2.string(tmp5(1115).t["8qui3M"]);
     tmp18Result = tmp18(tmp19, obj7);
   }
   items[2] = tmp18Result;
   const obj8 = { iconComponent: ClockIcon.ClockIcon, text: null };
-  const intl3 = tmp5(1114).intl;
+  const intl3 = tmp5(1115).intl;
   obj8.text = intl3.formatToPlainString(util.t["+1bjc8"], { date });
   items[3] = React4(ApplicationDetailsEntry, obj8);
   let tmp18Result2 = null;
   if (scopes.includes(OAuth2Scopes.OAuth2Scopes.BOT)) {
     tmp18Result2 = null;
     if (null != approximateGuildCount) {
-      const obj9 = { iconComponent: tmp5(9565).RobotIcon, text: null };
-      const intl4 = tmp5(1114).intl;
+      const obj9 = { iconComponent: tmp5(9581).RobotIcon, text: null };
+      const intl4 = tmp5(1115).intl;
       const obj10 = { guildCount: approximateGuildCount };
-      obj9.text = intl4.formatToPlainString(tmp5(1114).t.UHGHSP, obj10);
+      obj9.text = intl4.formatToPlainString(tmp5(1115).t.UHGHSP, obj10);
       tmp18Result2 = tmp18(tmp19, obj9);
     }
   }
@@ -109,12 +109,12 @@ export default function ApplicationDetails(arg0) {
     mapped = disclosures.map((toFixed) => {
       const textForDisclosure = disclosures.getTextForDisclosure(toFixed);
       if (disclosures.ApplicationDisclosure.IP_LOCATION === toFixed) {
-        const obj2 = { iconComponent: tmp(9015).GlobeEarthIcon };
+        const obj2 = { iconComponent: tmp(9200).GlobeEarthIcon };
         let tmp4 = obj2;
       } else {
         tmp4 = null;
-        if (tmp(9369).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
-          const obj3 = { iconComponent: tmp(9561).EmbedIcon };
+        if (tmp(9364).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+          const obj3 = { iconComponent: tmp(9577).EmbedIcon };
           tmp4 = obj3;
         }
       }

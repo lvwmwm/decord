@@ -1,16 +1,16 @@
-// Module ID: 11236
-// Function ID: 11237
+// Module ID: 11395
+// Function ID: 11396
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4373, 4357, 5055, 11237, 4632, 2]
+// Dependencies: [32, 19, 21, 4524, 4508, 5217, 11396, 4784, 2]
 
-// Module 11236 (BalanceCounter)
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4357 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import spring from "spring" /* 5055 */;
+// Module 11395 (BalanceCounter)
+import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4508 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import spring from "spring" /* 5217 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop_mod from "module_19" /* 19 */;
 
-const Text_Text = tmp(4632);
+const Text_Text = tmp(4784);
 require = fn;
 let noop = fn(19);
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: closure_7 } = noop);

@@ -1,22 +1,22 @@
-// Module ID: 11658
-// Function ID: 11659
+// Module ID: 11805
+// Function ID: 11806
 // Name: BountyActionCreators
-// Dependencies: [5, 7802, 4685, 7804, 7805, 1074, 3, 573, 5532, 11421, 7803, 4538, 7564, 7823, 1270, 5528, 7801, 2]
+// Dependencies: [5, 7968, 4837, 7970, 7971, 1074, 3, 573, 5700, 11576, 7969, 4689, 7735, 7989, 1271, 5696, 7967, 2]
 // Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchDockCreativePreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 11658 (BountyActionCreators)
+// Module 11805 (BountyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import QuestTypes from "QuestTypes" /* 5528 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7564 */;
-import QuestDataUtils from "QuestDataUtils" /* 7801 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7823 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import QuestTypes from "QuestTypes" /* 5696 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7735 */;
+import QuestDataUtils from "QuestDataUtils" /* 7967 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7989 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7802 */;
-import NetworkStore from "NetworkStore" /* 4685 */;
-import BountyStore from "BountyStore" /* 7804 */;
-import QuestStore from "QuestStore" /* 7805 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7968 */;
+import NetworkStore from "NetworkStore" /* 4837 */;
+import BountyStore from "BountyStore" /* 7970 */;
+import QuestStore from "QuestStore" /* 7971 */;
 
 require = fn;
 function fetchBountiesAndDispatch() {
@@ -105,9 +105,9 @@ let closure_12 = async function _fetchQuestHomeBounties(arg0, value) {
           c1 = 1;
           const obj4 = {
             value: fetchBountiesAndDispatch(tmp5, asyncGeneratorStep(async () => {
-                      closure_128_0 = await tmp2(7564).getSession();
-                      const orRefreshAdSession = tmp2(7823).getOrRefreshAdSession();
-                      const HTTP = tmp2(1270).HTTP;
+                      closure_128_0 = await tmp2(7735).getSession();
+                      const orRefreshAdSession = tmp2(7989).getOrRefreshAdSession();
+                      const HTTP = tmp2(1271).HTTP;
                       const request = { url: constants.QUESTS_GET_DECISIONS, query: null, rejectWithError: false, context: null };
                       const obj7 = { placement: closure_129_0, client_ad_session_id: orRefreshAdSession.uuid, client_heartbeat_session_id: null, num_decisions_requested: 5 };
                       if (closure_128_0 != null) {
@@ -584,12 +584,12 @@ let closure_16 = async function _dismissAdContent(arg0, value) {
               const obj5 = { type: "AD_CONTENT_DISMISS_BEGIN", adCreativeType, adCreativeId };
               DispatcherDefault.dispatch(obj5);
               c5 = 1;
-              const adMetadataSealed = tmp55(7801).getAdMetadataSealed(tmp54, adCreativeId);
-              const tmp55Result = tmp55(7801);
-              const adTrafficMetadataSealed = tmp55(7801).getAdTrafficMetadataSealed(tmp54, undefined, adCreativeId);
-              const tmp55Result3 = tmp55(7801);
-              const questPlacementFromQuestContent = tmp55(7801).getQuestPlacementFromQuestContent(tmp54);
-              const HTTP = tmp55(1270).HTTP;
+              const adMetadataSealed = tmp55(7967).getAdMetadataSealed(tmp54, adCreativeId);
+              const tmp55Result = tmp55(7967);
+              const adTrafficMetadataSealed = tmp55(7967).getAdTrafficMetadataSealed(tmp54, undefined, adCreativeId);
+              const tmp55Result3 = tmp55(7967);
+              const questPlacementFromQuestContent = tmp55(7967).getQuestPlacementFromQuestContent(tmp54);
+              const HTTP = tmp55(1271).HTTP;
               const request = { url: Endpoints.QUESTS_CREATIVES_DISMISS(adCreativeId), body: null, rejectWithError: false };
               let tmp42 = null;
               if (null != adMetadataSealed) {

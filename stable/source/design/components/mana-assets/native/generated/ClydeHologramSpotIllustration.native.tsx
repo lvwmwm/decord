@@ -1,13 +1,13 @@
-// Module ID: 5960
-// Function ID: 5961
+// Module ID: 6130
+// Function ID: 6131
 // Name: ClydeHologramSpotIllustration
-// Dependencies: [21, 5668, 5961, 2]
+// Dependencies: [21, 5836, 6131, 2]
 // Exports: ClydeHologramSpotIllustration
 
-// Module 5960 (ClydeHologramSpotIllustration)
+// Module 6130 (ClydeHologramSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef5961 from "module_5961" /* 5961 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6131 from "module_6131" /* 6131 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ClydeHologramSpotIllustration = function ClydeHologramSpotIllustrat
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5961 };
+  const obj2 = { uri: _modDef6131 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

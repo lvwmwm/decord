@@ -1,9 +1,9 @@
 // Module ID: 13462
 // Function ID: 13463
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13462
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 155.5, height: 16, scales: [2, 3], hash: "cda787d6a3bd0c9bbee693bc4f7f0975", name: "img_logo_nitro_classic_horizontal", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3d5f9f8f212b24a0f18f5afb706f5f80", name: "UserClockIcon", type: "png" });

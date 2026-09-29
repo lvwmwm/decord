@@ -1,16 +1,16 @@
-// Module ID: 16255
-// Function ID: 16256
+// Module ID: 16500
+// Function ID: 16501
 // Name: useShouldShowGuildThemeMemberCoachmark
-// Dependencies: [4526, 12646, 4565, 4564, 16256, 4545, 2]
+// Dependencies: [4677, 12796, 4716, 4715, 16501, 4696, 2]
 // Exports: default
 
-// Module 16255 (useShouldShowGuildThemeMemberCoachmark)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4526 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4545 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4564 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 4565 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12646 */;
-import useIsGuildThemePerkEnabledDefault from "useIsGuildThemePerkEnabled" /* 16256 */;
+// Module 16500 (useShouldShowGuildThemeMemberCoachmark)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4677 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4696 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4715 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 4716 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12796 */;
+import useIsGuildThemePerkEnabledDefault from "useIsGuildThemePerkEnabled" /* 16501 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = GuildPowerupsConstants.GUILD_THEME_POWERUP_BOOST_PRICE;
@@ -20,23 +20,27 @@ export default function useShouldShowGuildThemeMemberCoachmark(guildId) {
   const tmp = useHasAllocateBoostPermissionDefault(guildId);
   let serverThemeEnabled = ServerThemeExperiment.useServerThemeEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
   const serverThemeUserEnabled = ServerThemeUserExperiment.useServerThemeUserEnabled("useShouldShowGuildThemeMemberCoachmark");
-  const tmp4 = useIsGuildThemePerkEnabledDefault(guildId);
+  const serverThemeRollbackEnabled = ServerThemeExperiment.useServerThemeRollbackEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
+  const tmp5 = useIsGuildThemePerkEnabledDefault(guildId);
   const isLoading = useGuildPowerupsBoostCountDefault(guildId).isLoading;
-  let tmp7 = !isLoading;
+  let tmp8 = !isLoading;
   if (!isLoading) {
     if (serverThemeEnabled) {
       serverThemeEnabled = serverThemeUserEnabled;
     }
     if (serverThemeEnabled) {
-      serverThemeEnabled = tmp6 < closure_3;
+      serverThemeEnabled = !serverThemeRollbackEnabled;
     }
     if (serverThemeEnabled) {
-      serverThemeEnabled = !tmp4;
+      serverThemeEnabled = tmp7 < closure_3;
+    }
+    if (serverThemeEnabled) {
+      serverThemeEnabled = !tmp5;
     }
     if (serverThemeEnabled) {
       serverThemeEnabled = false === tmp;
     }
-    tmp7 = serverThemeEnabled;
+    tmp8 = serverThemeEnabled;
   }
-  return tmp7;
+  return tmp8;
 };

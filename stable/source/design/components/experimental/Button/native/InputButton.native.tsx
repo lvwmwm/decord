@@ -1,21 +1,21 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 9220
+// Function ID: 9221
 // Name: InputButton
-// Dependencies: [109, 19, 17, 21, 4636, 576, 5061, 6722, 5057, 2]
+// Dependencies: [109, 19, 17, 21, 4788, 576, 5223, 6895, 5219, 2]
 
-// Module 9035 (InputButton)
+// Module 9220 (InputButton)
 import nativeDefault from "native" /* 576 */;
-import BaseTextButton from "BaseTextButton" /* 5057 */;
-import ButtonConstants from "ButtonConstants" /* 5061 */;
-import InputFieldContainer from "InputFieldContainer" /* 6722 */;
+import BaseTextButton from "BaseTextButton" /* 5219 */;
+import ButtonConstants from "ButtonConstants" /* 5223 */;
+import InputFieldContainer from "InputFieldContainer" /* 6895 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_2 = ["size", "isRound", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
+let closure_2 = ["size", "round", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
 const Text = fn(17).Text;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 const obj = { buttonText: { flexGrow: 1, flexShrink: 1, width: "100%" }, buttonTextPlaceholder: { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT }, buttonTextValue: null };
 let obj3 = { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.buttonTextValue = { color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT };
@@ -30,7 +30,7 @@ export const InputButton = noop.forwardRef((size, ref) => {
   if (undefined !== size) {
     str = size;
   }
-  const isRound = size.isRound;
+  const round = size.round;
   ({ text, value, icon, iconPosition } = size);
   let str2 = "start";
   if (undefined !== iconPosition) {
@@ -41,7 +41,7 @@ export const InputButton = noop.forwardRef((size, ref) => {
     maxFontSizeMultiplier = ButtonConstants.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmp4 = _objectWithoutProperties(size, closure_2);
-  const obj2 = { size: str, isRound: undefined !== isRound && isRound, hasLeadingIcon: "start" === str2 };
+  const obj2 = { size: str, round: undefined !== round && round, hasLeadingIcon: "start" === str2 };
   const inputStyles = InputFieldContainer.useInputStyles(obj2);
   const tmp9 = closure_6();
   if (null != icon) {

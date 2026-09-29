@@ -1,27 +1,27 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 16126
+// Function ID: 16127
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1371, 1074, 1373, 21, 4636, 576, 7265, 7285, 504, 10864, 8276, 8304, 7657, 15423, 15424, 8284, 1388, 1240, 14676, 2]
+// Dependencies: [19, 17, 1372, 1074, 1374, 21, 4788, 576, 7439, 7459, 504, 11031, 8460, 8488, 7828, 15612, 15613, 8468, 1389, 1241, 14896, 2]
 // Exports: default
 
-// Module 15896 (ProfileCustomizationTryItOutSettingScreen)
+// Module 16126 (ProfileCustomizationTryItOutSettingScreen)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1388 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7657 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8284 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8304 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1389 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7828 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8468 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8488 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, AnalyticsPages: closure_8 } = Constants);
-const PremiumUpsellTypes = fn(1373).PremiumUpsellTypes;
+const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: null, activityIndicator: null };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj2.container = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };

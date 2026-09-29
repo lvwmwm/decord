@@ -1,14 +1,14 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 12483
+// Function ID: 12484
 // Name: PollDurationActionSheet
-// Dependencies: [19, 21, 12333, 4348, 4603, 5766, 1114, 5769, 7300, 2]
+// Dependencies: [19, 21, 12482, 4499, 4755, 5934, 1115, 5937, 7474, 2]
 // Exports: default
 
-// Module 12334 (PollDurationActionSheet)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4348 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import ActionSheet from "ActionSheet" /* 7300 */;
-import usePollDurationOptionsDefault from "usePollDurationOptions" /* 12333 */;
+// Module 12483 (PollDurationActionSheet)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4499 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import ActionSheet from "ActionSheet" /* 7474 */;
+import usePollDurationOptionsDefault from "usePollDurationOptions" /* 12482 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,8 +24,8 @@ function PollDurationRadioGroup(onChange) {
     ActionSheetActionCreatorsDefault.hideActionSheet();
   }, items);
   const obj = { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null };
-  const intl = onChange(1114).intl;
-  obj.title = intl.string(onChange(1114).t["0ZStp9"]);
+  const intl = onChange(1115).intl;
+  obj.title = intl.string(onChange(1115).t["0ZStp9"]);
   obj.onChange = callback;
   obj.defaultValue = onChange.selectedDuration;
   const entries = Object.entries(tmp);
@@ -33,7 +33,7 @@ function PollDurationRadioGroup(onChange) {
     [tmp, tmp2] = item;
     return jsx(onChange(dependencyMap[7]).TableRadioRow, { value: parseInt(tmp), label: tmp2 }, tmp);
   });
-  return jsx(onChange(5766).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
+  return jsx(onChange(5934).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
 }
 const jsx = fn(21).jsx;
 const size = fn(2);

@@ -1,55 +1,28 @@
 // Module ID: 4370
 // Function ID: 4371
-// Dependencies: [4371, 4380, 4381, 4382, 4383, 4384, 4385, 4376, 4386, 4387, 4388, 4389]
+// Dependencies: []
 
 // Module 4370
-import installWorkletsSupport_mod from "installWorkletsSupport" /* 4371 */;
-
-const require = globalThis.__r;
-
-let installWorkletsSupport = installWorkletsSupport_mod;
-installWorkletsSupport = installWorkletsSupport.installWorkletsSupport();
-for (const key10017 in require("module_4380")) {
-  arg5[key10017] = require("module_4380")[key10017];
-  continue;
+if (Intl.ListFormat) {
+  const _Intl = Intl;
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
+    const _Intl2 = Intl;
+    const obj2 = { data: null, locale: "sv" };
+    const obj3 = { conjunction: null, disjunction: null, unit: null };
+    const obj4 = { long: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" } };
+    obj3.conjunction = obj4;
+    const obj5 = { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, short: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" } };
+    obj3.disjunction = obj5;
+    const obj6 = { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
+    obj3.unit = obj6;
+    obj2.data = obj3;
+    ListFormat.__addLocaleData(obj2);
+  }
 }
-for (const key10021 in require("module_4381")) {
-  arg5[key10021] = require("module_4381")[key10021];
-  continue;
+let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
+if (!prop) {
+  prop = [];
 }
-for (const key10025 in require("module_4382")) {
-  arg5[key10025] = require("module_4382")[key10025];
-  continue;
-}
-for (const key10029 in require("module_4383")) {
-  arg5[key10029] = require("module_4383")[key10029];
-  continue;
-}
-for (const key10033 in require("module_4384")) {
-  arg5[key10033] = require("module_4384")[key10033];
-  continue;
-}
-for (const key10037 in require("module_4385")) {
-  arg5[key10037] = require("module_4385")[key10037];
-  continue;
-}
-for (const key10041 in require("module_4376")) {
-  arg5[key10041] = require("module_4376")[key10041];
-  continue;
-}
-for (const key10045 in require("module_4386")) {
-  arg5[key10045] = require("module_4386")[key10045];
-  continue;
-}
-for (const key10049 in require("module_4387")) {
-  arg5[key10049] = require("module_4387")[key10049];
-  continue;
-}
-for (const key10053 in require("module_4388")) {
-  arg5[key10053] = require("module_4388")[key10053];
-  continue;
-}
-for (const key10057 in require("module_4389")) {
-  arg5[key10057] = require("module_4389")[key10057];
-  continue;
-}
+globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
+const obj = { data: { conjunction: { long: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, short: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "sv" };
+prop.push(obj);

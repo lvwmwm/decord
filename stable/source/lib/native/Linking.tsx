@@ -1,11 +1,11 @@
-// Module ID: 4331
-// Function ID: 4332
+// Module ID: 4483
+// Function ID: 4484
 // Name: Linking
-// Dependencies: [17, 4326, 2]
+// Dependencies: [17, 4478, 2]
 
-// Module 4331 (Linking)
+// Module 4483 (Linking)
 import _mod17 from "module_17" /* 17 */;
-import handleURL from "handleURL" /* 4326 */;
+import handleURL from "handleURL" /* 4478 */;
 import size from "module_2" /* 2 */;
 
 const Linking = _mod17.Linking;

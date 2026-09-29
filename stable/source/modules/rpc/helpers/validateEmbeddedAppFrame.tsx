@@ -1,15 +1,15 @@
-// Module ID: 14551
-// Function ID: 14552
+// Module ID: 14773
+// Function ID: 14774
 // Name: validateEmbeddedAppFrame
-// Dependencies: [9640, 14552, 4541, 1074, 9641, 9689, 8981, 9684, 2]
+// Dependencies: [9345, 14774, 4692, 1074, 9346, 9618, 9167, 9613, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14551 (validateEmbeddedAppFrame)
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8981 */;
-import RPCErrorDefault from "RPCError" /* 9684 */;
-import RPCHelpers from "RPCHelpers" /* 9689 */;
-import FramesStore from "FramesStore" /* 9640 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14552 */;
+// Module 14773 (validateEmbeddedAppFrame)
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9167 */;
+import RPCErrorDefault from "RPCError" /* 9613 */;
+import RPCHelpers from "RPCHelpers" /* 9618 */;
+import FramesStore from "FramesStore" /* 9345 */;
+import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14774 */;
 
 require = fn;
 function validateEmbeddedAppFrame(transport) {
@@ -29,7 +29,7 @@ function validateEmbeddedAppFrame(transport) {
           if (tmp12.VOICE_CHANNEL !== type) {
             if (tmp12.MAIN === type) {
               if (tmp35.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
-                let obj5 = { channelId: "Array", guildId: "PX_16" };
+                let obj5 = { channelId: "HermesInternal", guildId: "Array" };
               } else {
                 obj5 = null;
               }
@@ -60,10 +60,10 @@ function validateEmbeddedAppFrame(transport) {
   }
   obj3 = ApplicationFlagUtils;
 }
-const TransportTypes = fn(4541).TransportTypes;
+const TransportTypes = fn(4692).TransportTypes;
 const Constants = fn(1074);
 ({ ApplicationFlags: metroRequire, RPCErrors: closure_7 } = Constants);
-const FramesConstants = fn(9641);
+const FramesConstants = fn(9346);
 ({ asLaunched: closure_8, EmbeddedSurfaceType: closure_9 } = FramesConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateEmbeddedAppFrame.tsx");

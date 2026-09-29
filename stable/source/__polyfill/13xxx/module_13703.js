@@ -1,9 +1,9 @@
 // Module ID: 13703
 // Function ID: 13704
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13703
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/light", width: 24, height: 23, scales: [2, 3], hash: "28792e38fe66a9bcb0dec80f42dff8d4", name: "tier_2_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "67d5ffa8705bc838eb19bd17c2eff4ab", name: "custom_sounds", type: "png" });

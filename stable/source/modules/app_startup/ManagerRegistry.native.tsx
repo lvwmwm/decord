@@ -1,10 +1,10 @@
-// Module ID: 17414
-// Function ID: 17415
+// Module ID: 17723
+// Function ID: 17724
 // Name: ManagerRegistry
-// Dependencies: [17415, 17418, 17426, 17427, 17428, 11634, 17429, 17430, 17433, 17434, 17436, 10343, 17437, 17438, 17439, 17443, 17444, 17445, 17447, 12596, 12814, 17452, 17453, 17454, 17455, 17460, 17461, 7710, 17462, 17464, 17481, 10398, 7875, 9698, 17482, 17483, 17485, 17487, 17488, 17489, 17490, 9911, 17492, 17493, 17494, 17495, 17503, 17504, 17520, 15661, 17522, 17523, 17525, 17527, 17529, 17530, 10071, 17539, 15405, 17540, 17541, 17545, 17547, 17561, 17571, 13856, 17574, 17576, 17581, 17582, 17584, 17585, 17587, 17588, 17591, 17593, 17595, 17596, 17597, 17598, 17599, 13823, 17600, 17601, 10031, 17603, 17606, 17607, 17609, 17610, 17614, 7219, 9969, 17615, 17616, 17617, 8366, 17618, 17431, 17619, 17620, 17917, 17918, 17919, 17921, 17922, 17924, 17926, 17927, 17929, 17931, 17932, 17933, 17937, 17938, 17939, 17940, 14750, 17942, 17943, 17946, 17947, 17969, 17973, 17974, 17977, 17978, 18002, 18003, 17412, 18004, 18005, 18006, 18007, 2]
+// Dependencies: [17724, 17727, 17735, 17736, 17737, 17738, 11781, 17741, 17742, 17745, 17746, 17748, 10511, 17749, 17750, 17751, 17755, 17756, 17757, 17759, 12746, 12963, 17764, 17765, 17766, 17767, 17772, 17773, 7876, 17774, 17004, 17776, 10566, 8047, 9594, 17777, 17778, 17780, 17782, 17783, 17784, 17785, 9911, 17787, 17788, 17789, 17790, 17798, 17799, 17815, 15851, 17817, 17818, 17821, 17822, 17824, 17825, 10238, 17834, 15594, 17835, 17836, 17840, 17842, 17856, 17866, 14065, 17869, 17871, 17876, 17877, 17879, 17880, 17882, 17883, 17886, 17888, 17890, 17891, 17892, 17893, 17894, 14031, 17895, 17896, 10196, 17898, 17901, 17902, 17904, 17905, 17909, 7393, 10134, 17910, 17911, 8551, 17912, 17743, 17913, 17914, 18264, 18265, 18266, 18268, 18269, 18271, 18273, 18274, 18276, 18278, 18279, 18280, 18284, 18285, 18286, 18287, 14969, 18289, 18290, 18293, 18294, 18316, 18320, 18321, 18324, 18325, 18349, 18350, 17721, 18351, 18352, 18353, 18354, 2]
 
-// Module 17414 (ManagerRegistry)
-import ManagerRegistryShared from "ManagerRegistryShared" /* 18007 */;
+// Module 17723 (ManagerRegistry)
+import ManagerRegistryShared from "ManagerRegistryShared" /* 18354 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,6 +42,12 @@ const obj = {
       return require("AppIconPremiumManager").default;
     },
     neverLoadBeforeConnectionOpen: true
+  },
+  AutomodRemovedContentManager: {
+    actions: ["AUTO_MODERATION_CONTENT_DELETED"],
+    inlineRequire() {
+      return require("AutomodRemovedContentManager").default;
+    }
   },
   AppStoreOverlayTelemetryManager: {
     actions: ["APP_STATE_UPDATE"],
@@ -628,13 +634,6 @@ const obj = {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire() {
       return require("UserOfferManager").default;
-    },
-    neverLoadBeforeConnectionOpen: true
-  },
-  MobileGameCommunitiesManager: {
-    actions: ["POST_CONNECTION_OPEN", "LOCAL_APP_DETECTION_COMPLETE"],
-    inlineRequire() {
-      return require("MobileGameCommunitiesManager").default;
     },
     neverLoadBeforeConnectionOpen: true
   },

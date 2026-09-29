@@ -1,9 +1,9 @@
-// Module ID: 4850
-// Function ID: 4851
+// Module ID: 5001
+// Function ID: 5002
 // Name: FamilyCenterPendingConnectionStore
 // Dependencies: [504, 573, 2]
 
-// Module 4850 (FamilyCenterPendingConnectionStore)
+// Module 5001 (FamilyCenterPendingConnectionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

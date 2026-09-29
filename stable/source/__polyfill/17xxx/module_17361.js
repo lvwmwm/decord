@@ -1,44 +1,9 @@
 // Module ID: 17361
 // Function ID: 17362
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 17361
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "es",
-  pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
-    }
-    return str2;
-  }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-419", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-AR", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-BO", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-CL", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-CO", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-CR", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-CU", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-DO", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-EA", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-EC", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-GQ", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-GT", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-HN", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-IC", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-MX", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-NI", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PA", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PE", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PH", parentLocale: "es" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PR", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-PY", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-SV", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-US", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-UY", parentLocale: "es-419" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "es-VE", parentLocale: "es-419" });
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 414.5, height: 200, scales: [2, 3], hash: "98918a2680690cf1174a4749a18c1a4a", name: "pending_dark", type: "png" });

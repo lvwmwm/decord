@@ -1,9 +1,9 @@
 // Module ID: 13888
 // Function ID: 13889
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13888
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "76ffb1082b31aab78c81ab7517722ab5", name: "ic_volume_locked", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_boosting/native/images", width: 23, height: 45, scales: [2, 3], hash: "05cd5f5720d5fb81034c2d2412372f33", name: "sparkle_star_elongated", type: "png" });

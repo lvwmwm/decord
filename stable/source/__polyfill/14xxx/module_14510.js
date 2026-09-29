@@ -4,27 +4,22 @@
 // Exports: default
 
 // Module 14510
+const weakMap = new WeakMap();
 
-export default () => (arg0) => {
-  closure_0 = arg0;
-  return {
-    features: {
-      apiResponse(request, response, tmp4Result) {
-        let status = response;
-        if (response) {
-          status = response.status;
-        }
-        if (status) {
-          status = typeof response.status === "number";
-        }
-        if (status) {
-          status = response.status >= 200;
-        }
-        if (status) {
-          status = response.status <= 299;
-        }
-        closure_0.send("api.response", { request, response, duration: tmp4Result }, !status);
-      }
-    }
-  };
+export default function getInternalSlots(arg0, arg1) {
+  let items = arg1;
+  if (undefined === arg1) {
+    items = [];
+  }
+  value = weakMap.get(arg0);
+  if (!value) {
+    const _Object = Object;
+    const obj2 = Object.create(null, items.reduce((acc, item) => {
+      acc[item] = { enumerable: false, writable: true, configurable: true };
+      return acc;
+    }, {}));
+    const result = weakMap.set(arg0, obj2);
+    value = obj2;
+  }
+  return value;
 };

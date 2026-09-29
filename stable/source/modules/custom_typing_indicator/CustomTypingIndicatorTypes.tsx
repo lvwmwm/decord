@@ -1,11 +1,11 @@
-// Module ID: 1392
-// Function ID: 1393
+// Module ID: 1393
+// Function ID: 1394
 // Name: CustomTypingIndicatorTypes
-// Dependencies: [1379, 2]
+// Dependencies: [1380, 2]
 // Exports: getEffectiveCustomTypingIndicatorAnimation, hasCustomTypingIndicatorEmojis, isValidCustomTypingIndicatorEmojiSelection, parseServerTypingIndicatorStyle, serializeTypingIndicatorStyle
 
-// Module 1392 (CustomTypingIndicatorTypes)
-import user from "user" /* 1379 */;
+// Module 1393 (CustomTypingIndicatorTypes)
+import user from "user" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorTypes.tsx");

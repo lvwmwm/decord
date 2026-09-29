@@ -1,19 +1,19 @@
-// Module ID: 8282
-// Function ID: 8283
+// Module ID: 8466
+// Function ID: 8467
 // Name: GuildTagUtils
-// Dependencies: [2021, 1979, 1371, 8048, 1074, 504, 4281, 2]
+// Dependencies: [2105, 2063, 1372, 8234, 1074, 504, 4433, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 8282 (GuildTagUtils)
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4281 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 8466 (GuildTagUtils)
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4433 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GuildTagConstants = fn(8048);
+const GuildTagConstants = fn(8234);
 ({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: hasOwnProperty, GuildTagBadgeSize: metroRequire } = GuildTagConstants);
 const GuildFeatures = fn(1074).GuildFeatures;
 const size = fn(2);

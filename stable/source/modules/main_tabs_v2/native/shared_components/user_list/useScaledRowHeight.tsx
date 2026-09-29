@@ -1,13 +1,13 @@
-// Module ID: 7152
-// Function ID: 7153
+// Module ID: 7326
+// Function ID: 7327
 // Name: useScaledRowHeight
-// Dependencies: [5063, 4338, 576, 2]
+// Dependencies: [5225, 4489, 576, 2]
 // Exports: default, useScaledRowHeightData
 
-// Module 7152 (useScaledRowHeight)
+// Module 7326 (useScaledRowHeight)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4338 */;
-import useFontScale from "useFontScale" /* 5063 */;
+import useToken from "useToken" /* 4489 */;
+import useFontScale from "useFontScale" /* 5225 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx");

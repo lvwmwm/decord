@@ -1,13 +1,13 @@
-// Module ID: 6544
-// Function ID: 6545
+// Module ID: 6716
+// Function ID: 6717
 // Name: ServerIconUnderboxExample
-// Dependencies: [21, 5668, 6545, 2]
+// Dependencies: [21, 5836, 6717, 2]
 // Exports: ServerIconUnderboxExample
 
-// Module 6544 (ServerIconUnderboxExample)
+// Module 6716 (ServerIconUnderboxExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6545 from "module_6545" /* 6545 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6717 from "module_6717" /* 6717 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ServerIconUnderboxExample = function ServerIconUnderboxExample(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6545 };
+  const obj2 = { uri: _modDef6717 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

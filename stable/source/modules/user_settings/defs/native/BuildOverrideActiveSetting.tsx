@@ -1,25 +1,25 @@
-// Module ID: 15840
-// Function ID: 15841
+// Module ID: 16066
+// Function ID: 16067
 // Name: BuildOverrideActiveSetting
-// Dependencies: [11562, 21, 14669, 504, 11923, 14932, 15834, 11605, 15239, 2]
+// Dependencies: [11717, 21, 14889, 504, 12072, 15123, 16060, 11754, 15428, 2]
 
-// Module 15840 (BuildOverrideActiveSetting)
+// Module 16066 (BuildOverrideActiveSetting)
 import initialize from "initialize" /* 504 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11923 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14669 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14932 */;
-import DevToolsContent from "DevToolsContent" /* 15834 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11562 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12072 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14889 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15123 */;
+import DevToolsContent from "DevToolsContent" /* 16060 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11717 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11754);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "Build Override Active";
   },
   parent: null,
-  IconComponent: fn(15239).RefreshIcon,
+  IconComponent: fn(15428).RefreshIcon,
   useDescription: function useBuildOverrideActiveDescription() {
     const items = [BuildOverrideStore];
     const stateFromStores = initialize.useStateFromStores(items, () => {

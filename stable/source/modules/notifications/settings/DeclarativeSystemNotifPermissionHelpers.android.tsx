@@ -1,16 +1,16 @@
-// Module ID: 16013
-// Function ID: 16014
+// Module ID: 16250
+// Function ID: 16251
 // Name: DeclarativeSystemNotifPermissionHelpers
-// Dependencies: [17, 14533, 14538, 4615, 1362, 5229, 2]
+// Dependencies: [17, 14755, 14760, 4767, 1363, 5396, 2]
 // Exports: openSystemNotifSettings, refreshSystemNotifPermissions
 
-// Module 16013 (DeclarativeSystemNotifPermissionHelpers)
+// Module 16250 (DeclarativeSystemNotifPermissionHelpers)
 import _mod17 from "module_17" /* 17 */;
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1362 */;
-import DeviceUtils from "DeviceUtils" /* 4615 */;
-import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5229 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14533 */;
-import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 14538 */;
+import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
+import DeviceUtils from "DeviceUtils" /* 4767 */;
+import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5396 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14755 */;
+import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 14760 */;
 import size from "module_2" /* 2 */;
 
 function refreshSystemNotifPermissions() {

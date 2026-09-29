@@ -1,12 +1,12 @@
-// Module ID: 8553
-// Function ID: 8554
+// Module ID: 8739
+// Function ID: 8740
 // Name: ManualReviewFallbackGate
-// Dependencies: [5, 8554, 8536, 8555, 573, 8556, 2]
+// Dependencies: [5, 8740, 8722, 8741, 573, 8742, 2]
 // Exports: shouldShowManualReviewFallback
 
-// Module 8553 (ManualReviewFallbackGate)
-import SafetyHubUtils from "SafetyHubUtils" /* 8536 */;
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8555 */;
+// Module 8739 (ManualReviewFallbackGate)
+import SafetyHubUtils from "SafetyHubUtils" /* 8722 */;
+import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8741 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -38,24 +38,24 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
                 throw value;
               } else if (arg0 === 2) {
                 c4 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
+                const obj4 = { value, done: true };
+                return obj4;
               } else {
                 closure_1 = tmp3;
                 closure_0 = tmp7;
                 closure_128_0 = undefined;
                 c2 = 1;
                 const result = SafetyHubUtils.isCurrentUserSuspended();
-                const obj14 = AgeVerificationMethodsV2;
+                const obj13 = AgeVerificationMethodsV2;
                 if (result) {
                   c3 = 3;
                   c4 = 1;
-                  const obj5 = { value: obj14.fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
-                  return obj5;
+                  const obj6 = { value: obj13.fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
+                  return obj6;
                 } else {
                   c3 = 2;
                   c4 = 1;
-                  const obj7 = { value: obj14.fetchAgeVerificationMethodsV2(), done: false };
+                  const obj7 = { value: obj13.fetchAgeVerificationMethodsV2(), done: false };
                   return obj7;
                 }
               }
@@ -74,43 +74,44 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
                   const obj8 = { value, done: true };
                   return obj8;
                 }
-              } else if (3 === tmp7) {
-                if (arg0 === 1) {
+              } else {
+                if (3 === tmp7) {
+                  if (arg0 === 1) {
+                    c4 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c2 = 0;
+                    c4 = 3;
+                    const obj9 = { value, done: true };
+                    return obj9;
+                  }
+                } else if (arg0 === 1) {
                   c4 = 3;
                   throw value;
-                } else if (arg0 === 2) {
+                } else if (arg0 !== 2) {
                   c2 = 0;
                   c4 = 3;
-                  const obj9 = { value, done: true };
-                  return obj9;
                 }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
                 c2 = 0;
                 c4 = 3;
-                const obj10 = { value, done: true };
-                return obj10;
-              } else {
-                c2 = 0;
-                c4 = 3;
-                const obj = { value: 0 === value.length, done: true };
+                const obj = { value, done: true };
                 return obj;
               }
               closure_128_0 = value;
-              const obj11 = { type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: closure_128_0.methods, footerMessage: closure_128_0.footerMessage, outageBannerMessage: closure_128_0.outageBannerMessage };
-              closure_129_1(closure_129_2[4]).dispatch(obj11);
-              const obj4 = closure_129_1(closure_129_2[4]);
-              c3 = 4;
-              c4 = 1;
-              const obj12 = { value: closure_129_0(closure_129_2[5]).getAvailableMethodsV2(closure_128_0.methods), done: false };
-              return obj12;
+              const obj10 = { type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: closure_128_0.methods, footerMessage: closure_128_0.footerMessage, outageBannerMessage: closure_128_0.outageBannerMessage };
+              closure_129_1(closure_129_2[4]).dispatch(obj10);
+              if (null == closure_128_0.outageBannerMessage) {
+                c3 = 4;
+                c4 = 1;
+                const obj11 = { value: closure_129_0(closure_129_2[5]).getAvailableMethodsV2(closure_128_0.methods), done: false };
+                return obj11;
+              }
+              const obj3 = closure_129_1(closure_129_2[4]);
             }
-          } catch (tmp19) {
+          } catch (tmp23) {
             if (tmp4 === c2) {
               c4 = tmp2;
-              throw tmp19;
+              throw tmp23;
             } else {
               c3 = tmp;
             }
@@ -141,24 +142,24 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
                 throw value;
               } else if (arg0 === 2) {
                 c4 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
+                const obj4 = { value, done: true };
+                return obj4;
               } else {
                 closure_1 = tmp3;
                 closure_0 = tmp7;
                 closure_128_0 = undefined;
                 c2 = 1;
                 const result = SafetyHubUtils.isCurrentUserSuspended();
-                const obj14 = AgeVerificationMethodsV2;
+                const obj13 = AgeVerificationMethodsV2;
                 if (result) {
                   c3 = 3;
                   c4 = 1;
-                  const obj5 = { value: obj14.fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
-                  return obj5;
+                  const obj6 = { value: obj13.fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
+                  return obj6;
                 } else {
                   c3 = 2;
                   c4 = 1;
-                  const obj7 = { value: obj14.fetchAgeVerificationMethodsV2(), done: false };
+                  const obj7 = { value: obj13.fetchAgeVerificationMethodsV2(), done: false };
                   return obj7;
                 }
               }
@@ -177,43 +178,44 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
                   const obj8 = { value, done: true };
                   return obj8;
                 }
-              } else if (3 === tmp7) {
-                if (arg0 === 1) {
+              } else {
+                if (3 === tmp7) {
+                  if (arg0 === 1) {
+                    c4 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c2 = 0;
+                    c4 = 3;
+                    const obj9 = { value, done: true };
+                    return obj9;
+                  }
+                } else if (arg0 === 1) {
                   c4 = 3;
                   throw value;
-                } else if (arg0 === 2) {
+                } else if (arg0 !== 2) {
                   c2 = 0;
                   c4 = 3;
-                  const obj9 = { value, done: true };
-                  return obj9;
                 }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
                 c2 = 0;
                 c4 = 3;
-                const obj10 = { value, done: true };
-                return obj10;
-              } else {
-                c2 = 0;
-                c4 = 3;
-                const obj = { value: 0 === value.length, done: true };
+                const obj = { value, done: true };
                 return obj;
               }
               closure_128_0 = value;
-              const obj11 = { type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: closure_128_0.methods, footerMessage: closure_128_0.footerMessage, outageBannerMessage: closure_128_0.outageBannerMessage };
-              closure_129_1(closure_129_2[4]).dispatch(obj11);
-              const obj4 = closure_129_1(closure_129_2[4]);
-              c3 = 4;
-              c4 = 1;
-              const obj12 = { value: closure_129_0(closure_129_2[5]).getAvailableMethodsV2(closure_128_0.methods), done: false };
-              return obj12;
+              const obj10 = { type: "AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS", methods: closure_128_0.methods, footerMessage: closure_128_0.footerMessage, outageBannerMessage: closure_128_0.outageBannerMessage };
+              closure_129_1(closure_129_2[4]).dispatch(obj10);
+              if (null == closure_128_0.outageBannerMessage) {
+                c3 = 4;
+                c4 = 1;
+                const obj11 = { value: closure_129_0(closure_129_2[5]).getAvailableMethodsV2(closure_128_0.methods), done: false };
+                return obj11;
+              }
+              const obj3 = closure_129_1(closure_129_2[4]);
             }
-          } catch (tmp19) {
+          } catch (tmp23) {
             if (tmp4 === c2) {
               c4 = tmp2;
-              throw tmp19;
+              throw tmp23;
             } else {
               c3 = tmp;
             }

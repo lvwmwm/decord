@@ -1,13 +1,13 @@
-// Module ID: 12276
-// Function ID: 12277
+// Module ID: 12425
+// Function ID: 12426
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [1918, 4275, 1085, 504, 9712, 12190, 9676, 9540, 1363, 1114, 2]
+// Dependencies: [2002, 4427, 1085, 504, 9643, 12339, 9632, 9556, 1364, 1115, 2]
 // Exports: default
 
-// Module 12276 (useIsPrimaryEntryPointDisabled)
-import getPlatformDefault from "getPlatform" /* 9540 */;
-import ApplicationRecord from "ApplicationRecord" /* 1918 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+// Module 12425 (useIsPrimaryEntryPointDisabled)
+import getPlatformDefault from "getPlatform" /* 9556 */;
+import ApplicationRecord from "ApplicationRecord" /* 2002 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = fn;
 const Permissions = fn(1085).Permissions;
@@ -27,10 +27,10 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   if (channel != null) {
     id = channel.id;
   }
-  const embeddedActivityLaunchability = channel(9712).useEmbeddedActivityLaunchability(id);
+  const embeddedActivityLaunchability = channel(9643).useEmbeddedActivityLaunchability(id);
   let flag = false;
-  if (channel(12190).ActivityAction.LEAVE !== activityAction) {
-    if (tmp2(12190).ActivityAction.START === activityAction) {
+  if (channel(12339).ActivityAction.LEAVE !== activityAction) {
+    if (tmp2(12339).ActivityAction.START === activityAction) {
       flag = false;
       if (null != channel) {
         let isGuildVoiceResult;
@@ -39,7 +39,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         }
         if (isGuildVoiceResult) {
           flag = false;
-          if (embeddedActivityLaunchability !== tmp2(9712).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+          if (embeddedActivityLaunchability !== tmp2(9643).EmbeddedActivityLaunchability.CAN_LAUNCH) {
             flag = true;
           }
         } else {
@@ -47,12 +47,12 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
           }
-          tmp2Result = tmp2(9676);
+          tmp2Result = tmp2(9632);
         }
       }
     } else {
       flag = false;
-      if (tmp2(12190).ActivityAction.JOIN === activityAction) {
+      if (tmp2(12339).ActivityAction.JOIN === activityAction) {
         let isGuildVoiceResult1;
         if (channel != null) {
           isGuildVoiceResult1 = channel.isGuildVoice();
@@ -64,22 +64,22 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
           if (!tmp2Result3.isActivitiesInTextEnabled(channel)) {
             flag = true;
           }
-          tmp2Result3 = tmp2(9676);
+          tmp2Result3 = tmp2(9632);
         }
       }
     }
   }
   let disabled = flag;
   let reason;
-  if (activityAction !== channel(12190).ActivityAction.LEAVE) {
+  if (activityAction !== channel(12339).ActivityAction.LEAVE) {
     const tmp10 = application instanceof ApplicationRecord ? application.embeddedActivityConfig : application.embedded_activity_config;
     getPlatformDefault;
-    tmp2(1363);
+    tmp2(1364);
     if (null != tmp10) {
       const supported_platforms = tmp10.supported_platforms;
       if (!supported_platforms.includes(tmp14)) {
-        const intl = tmp2(1114).intl;
-        reason = intl.string(tmp2(1114).t.z2YTgJ);
+        const intl = tmp2(1115).intl;
+        reason = intl.string(tmp2(1115).t.z2YTgJ);
         disabled = false;
       }
     }
@@ -89,8 +89,8 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
     }
     disabled = flag;
     if (isThreadResult) {
-      const intl2 = tmp2(1114).intl;
-      reason = intl2.string(tmp2(1114).t.ddSR3v);
+      const intl2 = tmp2(1115).intl;
+      reason = intl2.string(tmp2(1115).t.ddSR3v);
       disabled = true;
     }
   }
@@ -99,8 +99,8 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
     tmp16 = null == reason;
   }
   if (tmp16) {
-    const intl3 = tmp2(1114).intl;
-    reason = intl3.string(tmp2(1114).t.f41E1g);
+    const intl3 = tmp2(1115).intl;
+    reason = intl3.string(tmp2(1115).t.f41E1g);
   }
   return { disabled, reason };
 };

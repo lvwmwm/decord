@@ -1,24 +1,24 @@
-// Module ID: 13711
-// Function ID: 13712
+// Module ID: 13915
+// Function ID: 13916
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 1979, 7535, 21, 4636, 576, 13712, 13713, 504, 4571, 5075, 1114, 4981, 5515, 5068, 1093, 4488, 13714, 13715, 4632, 2]
+// Dependencies: [32, 19, 17, 2063, 7706, 21, 4788, 576, 13916, 13917, 504, 4722, 5237, 1115, 5141, 5683, 5230, 1094, 4639, 13918, 13919, 4784, 2]
 // Exports: default
 
-// Module 13711 (SubscribeModalSuccessAlert)
+// Module 13915 (SubscribeModalSuccessAlert)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import util from "util" /* 1114 */;
-import useThemeDefault from "useTheme" /* 4571 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import LinearGradientDefault from "LinearGradient" /* 5068 */;
-import common_AlertDefault from "common/Alert" /* 5075 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5515 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13712 */;
-import _mod13713 from "module_13713" /* 13713 */;
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+import util from "util" /* 1115 */;
+import useThemeDefault from "useTheme" /* 4722 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5683 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13916 */;
+import _mod13917 from "module_13917" /* 13917 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 class PremiumPaymentGuildAnimation {
@@ -33,10 +33,10 @@ class PremiumPaymentGuildAnimation {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
-const Gradients = fn(7535).Gradients;
+const Gradients = fn(7706).Gradients;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { wrapper: { paddingHorizontal: 24, paddingBottom: 16, paddingTop: 4, alignItems: "stretch" }, animation: { width: "auto", height: 112, alignSelf: "center" }, text: { lineHeight: 18, textAlign: "center" }, activated: { padding: 2, borderRadius: nativeDefault.radii.xs, marginTop: 8 }, activatedBackground: null, activatedImage: null, successInfo: null };
 let obj3 = { padding: 2, borderRadius: nativeDefault.radii.xs, marginTop: 8 };
 obj2.activatedBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
@@ -73,11 +73,11 @@ export default function SubscribeModalSuccessAlert(arg0) {
   dependencyMap = tmp7[1];
   const obj2 = { style: tmp.wrapper, confirmText: null, onConfirm: null, children: null };
   const tmp9 = useThemeDefault();
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1115).intl;
   obj2.confirmText = intl.string(util.t.YKxJCI);
   obj2.onConfirm = function onConfirm() {
-    closure_1(4981).close();
-    const obj = closure_1(4981);
+    closure_1(5141).close();
+    const obj = closure_1(5141);
     actions_BoostingActionCreators.closeApplyBoostModal();
   };
   const items1 = [
@@ -115,9 +115,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const tmp14 = LinearGradientDefault;
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(13714);
+    let tmp8Result = tmp8(13918);
   } else {
-    tmp8Result = tmp8(13715);
+    tmp8Result = tmp8(13919);
   }
   obj6.source = tmp8Result;
   obj5.children = closure_9(tmp15, obj6);
@@ -125,9 +125,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const items2 = [closure_9(tmp14, obj4), ];
   const obj7 = { style: tmp.successInfo, children: null };
   const obj8 = { style: tmp.text, variant: "text-sm/medium", children: null };
-  const intl2 = tmp2(1114).intl;
+  const intl2 = tmp2(1115).intl;
   const string = intl2.string;
-  const t = tmp2(1114).t;
+  const t = tmp2(1115).t;
   if (someResult) {
     let stringResult = string(t.RMmWY3);
   } else {
@@ -137,7 +137,7 @@ export default function SubscribeModalSuccessAlert(arg0) {
   obj8.children = stringResult;
   const items3 = [closure_9(Text_Text.Text, obj8), ];
   const obj10 = { style: tmp.text, variant: "text-sm/medium", children: null };
-  const intl3 = tmp2(1114).intl;
+  const intl3 = tmp2(1115).intl;
   obj10.children = intl3.format(util.t.r0IGsP, { guildName: stateFromStores.name, guildSubscriptionQuantity: num });
   items3[1] = closure_9(Text_Text.Text, obj10);
   obj7.children = items3;

@@ -1,52 +1,40 @@
 // Module ID: 4043
 // Function ID: 4044
-// Dependencies: [3729, 3725, 3965, 3726]
+// Dependencies: [3881, 4026, 3878]
 // Exports: default
 
 // Module 4043
-import module_3729_mod from "module_3729" /* 3729 */;
-import _typeof_mod from "module_3725" /* 3725 */;
-import module_3965_mod from "module_3965" /* 3965 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import module_3881_mod from "module_3881" /* 3881 */;
+import module_4026_mod from "module_4026" /* 4026 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj = { default: module_3729 };
+let module_3881 = module_3881_mod;
+if (!module_3881) {
+  const obj = { default: module_3881 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3729;
+  tmp3 = module_3881;
 }
-module_3729 = tmp3;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj2 = { default: _typeof };
+module_3881 = tmp3;
+let module_4026 = module_4026_mod;
+if (!module_4026) {
+  const obj2 = { default: module_4026 };
   let tmp5 = obj2;
 } else {
-  tmp5 = _typeof;
+  tmp5 = module_4026;
 }
-_typeof = tmp5;
-let module_3965 = module_3965_mod;
-if (!module_3965) {
-  const obj3 = { default: module_3965 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3965;
-}
-module_3965 = tmp7;
+module_4026 = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
-  let tmp9 = obj4;
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
 } else {
-  tmp9 = requiredArgs;
+  tmp7 = requiredArgs;
 }
-requiredArgs = tmp9;
+requiredArgs = tmp7;
 
-export default function setUTCWeek(arg0, arg1, arg2) {
+export default function addQuarters(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const diff = module_3965.default(defaultResult1, arg2) - module_3729.default(arg1);
-  defaultResult1.setUTCDate(defaultResult1.getUTCDate() - 7 * diff);
-  return defaultResult1;
+  return module_4026.default(arg0, 3 * module_3881.default(arg1));
 };
 export default exports.default;

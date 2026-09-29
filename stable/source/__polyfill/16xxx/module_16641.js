@@ -1,9 +1,0 @@
-// Module ID: 16641
-// Function ID: 16642
-// Dependencies: [1120]
-
-// Module 16641
-import registerAsset from "module_1120" /* 1120 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 84.5, height: 90.5, scales: [2, 3], hash: "89e957c2ca19c43cdc74008a47a75acc", name: "money_birb_placeholder_light", type: "png" });

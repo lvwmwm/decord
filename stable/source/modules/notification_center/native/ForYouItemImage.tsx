@@ -1,24 +1,24 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16768
+// Function ID: 16769
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 1975, 1979, 1371, 16523, 21, 4636, 576, 7742, 10011, 16524, 16525, 16526, 16527, 5668, 16528, 1176, 16529, 16530, 7265, 504, 5204, 8296, 8363, 16531, 4632, 2]
+// Dependencies: [19, 17, 2059, 2063, 1372, 16769, 21, 4788, 576, 7908, 10176, 16770, 16771, 16772, 16773, 5836, 16774, 1177, 16775, 16776, 7439, 504, 5371, 8480, 8548, 16777, 4784, 2]
 
-// Module 16522 (ForYouItemImage)
+// Module 16768 (ForYouItemImage)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import Pressables from "Pressables" /* 5204 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8363 */;
+import native from "native" /* 1177 */;
+import Pressables from "Pressables" /* 5371 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8548 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const getGuildAcronym = fn(1975).getGuildAcronym;
-const Constants = fn(16523);
+const getGuildAcronym = fn(2059).getGuildAcronym;
+const Constants = fn(16769);
 ({ FRIEND_BACKGROUND, MESSAGE_BACKGROUND, PROFILE_BACKGROUND } = Constants);
 const jsx = fn(21).jsx;
-let createStyles = fn(4636);
+let createStyles = fn(4788);
 let closure_9 = createStyles.createStyles((arg0) => {
   let num = 48;
   if (arg0) {
@@ -37,7 +37,7 @@ let closure_9 = createStyles.createStyles((arg0) => {
   obj.guildFallbackImage = size1;
   return obj;
 });
-createStyles = fn(4636);
+createStyles = fn(4788);
 let obj = { fallbackImage: { color: nativeDefault.colors.WHITE }, fallbackImageV2: null, brandBackground: null, profileBackground: null, friendBackground: null, messageBackground: null, guildGridBackground: null };
 let obj4 = { color: nativeDefault.colors.WHITE };
 obj.fallbackImageV2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };

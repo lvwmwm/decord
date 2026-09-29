@@ -1,29 +1,29 @@
-// Module ID: 17909
-// Function ID: 17910
+// Module ID: 18256
+// Function ID: 18257
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 1961, 7214, 4285, 1371, 1074, 21, 4636, 576, 504, 7084, 7215, 4789, 5598, 1114, 4348, 7152, 5686, 5692, 5109, 10999, 7153, 1176, 8348, 7158, 2]
+// Dependencies: [32, 19, 17, 2045, 7388, 4437, 1372, 1074, 21, 4788, 576, 504, 7258, 7389, 4941, 5766, 1115, 4499, 7326, 5854, 5860, 5271, 11158, 7327, 1177, 8533, 7332, 2]
 
-// Module 17909 (NotificationSettingChannelOverrides)
+// Module 18256 (NotificationSettingChannelOverrides)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4348 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7215 */;
+import util from "util" /* 1115 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4499 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7389 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7214 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7388 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const isGuildReadableType = fn(1961).isGuildReadableType;
+const isGuildReadableType = fn(2045).isGuildReadableType;
 const Constants = fn(1074);
 ({ ChannelTypes: c10, NotificationSettingsSections: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { container: { marginHorizontal: nativeDefault.space.PX_8, flex: 1 }, searchContainer: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_8, flex: 1 };
 obj.searchContainer = { paddingVertical: nativeDefault.space.PX_16 };

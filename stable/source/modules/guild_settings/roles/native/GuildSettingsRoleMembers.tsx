@@ -1,25 +1,25 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 18075
+// Function ID: 18076
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7231, 1074, 21, 4636, 576, 4335, 5678, 1114, 17729, 7414, 504, 4980, 9192, 1176, 1240, 4603, 17730, 1896, 11077, 8202, 6717, 7153, 4591, 4632, 5686, 11341, 2]
+// Dependencies: [32, 19, 17, 7405, 1074, 21, 4788, 576, 4486, 5846, 1115, 18053, 7585, 504, 5140, 9887, 1177, 1241, 4755, 18054, 1980, 11236, 8211, 6890, 7327, 4742, 4784, 5854, 11499, 2]
 // Exports: default
 
-// Module 17751 (GuildSettingsRoleMembers)
+// Module 18075 (GuildSettingsRoleMembers)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import _modDef5678 from "module_5678" /* 5678 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9192 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import _modDef5846 from "module_5846" /* 5846 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9887 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7231 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7405 */;
 
 require = fn;
 function onMembersLoadFail() {
-  const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: _modDef5678, content: null };
+  const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: _modDef5846, content: null };
   const intl = util.intl;
   obj2.content = intl.string(util.t.fEptJP);
   ToastActionCreatorsDefault.open(obj2);
@@ -28,7 +28,7 @@ const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 }, containerSearchBar: null, missingMembers: null, missingMembersText: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
 obj2.containerSearchBar = { paddingBottom: nativeDefault.space.PX_12 };
@@ -85,10 +85,10 @@ export default function GuildSettingsRoleMembers(guild) {
         const items = [role.id];
         GuildSettingsActionCreatorsDefault.updateMemberRoles(guild.id, name.id, found, [], items).catch(() => {
           const obj2 = { key: "ERROR_OCCURRED_TRY_AGAIN", content: null, icon: null };
-          const intl = name(1114).intl;
-          obj2.content = intl.string(name(1114).t.fEptJP);
-          obj2.icon = found(5678);
-          found(4335).open(obj2);
+          const intl = name(1115).intl;
+          obj2.content = intl.string(name(1115).t.fEptJP);
+          obj2.icon = found(5846);
+          found(4486).open(obj2);
         });
       };
       obj2.confirmColor = guild(locked[16]).ButtonColors.RED;
@@ -101,7 +101,7 @@ export default function GuildSettingsRoleMembers(guild) {
   const callback1 = found.useCallback(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Add Role Members", location_page: "Role Settings", location_section: "Members" });
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequireImpl(17730, dependencyMap.paths), "role-add-members-" + guild.id + "-" + role.id, { guild, role });
+    obj2.openLazy(asyncRequireImpl(18054, dependencyMap.paths), "role-add-members-" + guild.id + "-" + role.id, { guild, role });
   }, items3);
   closure_6 = found.useCallback((item) => {
     item = item.item;

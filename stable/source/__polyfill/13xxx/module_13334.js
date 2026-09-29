@@ -1,9 +1,9 @@
 // Module ID: 13334
 // Function ID: 13335
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13334
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/seasonal", width: 144, height: 150, scales: [1], hash: "9326b8f858addb08d8cfb2f4710ba77a", name: "coffee_idle", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ad50b5e2cb199dc282a7ce82f2fb5245", name: "FlashIcon", type: "png" });

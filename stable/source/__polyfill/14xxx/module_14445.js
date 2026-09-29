@@ -1,15 +1,9 @@
 // Module ID: 14445
 // Function ID: 14446
-// Dependencies: [14393, 14412, 14402]
+// Dependencies: [1121]
 
 // Module 14445
-import _mod14393 from "module_14393" /* 14393 */;
-import _mod14402 from "module_14402" /* 14402 */;
-import all from "module_14412" /* 14412 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-let closure_0 = _mod14393(Function.toString);
-if (!all(_mod14402.inspectSource)) {
-  _mod14402.inspectSource = (arg0) => closure_0(arg0);
-}
 
-export default _mod14402.inspectSource;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "99f159454017c9a8930c299b70fe8f24", name: "MessagesTab", type: "lottie" });

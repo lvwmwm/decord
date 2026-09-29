@@ -1,23 +1,23 @@
-// Module ID: 15870
-// Function ID: 15871
+// Module ID: 16096
+// Function ID: 16097
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [19, 17, 21, 12906, 7197, 8070, 11390, 4600, 15871, 15872, 11697, 4636, 576, 12, 8789, 5056, 5688, 4632, 2]
+// Dependencies: [19, 17, 21, 13055, 7371, 8256, 11548, 4751, 16097, 16098, 11844, 4788, 576, 12, 8206, 5218, 5856, 4784, 2]
 // Exports: default
 
-// Module 15870 (UserSettingsDesignSystemContextMenu)
+// Module 16096 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import _modDef4600 from "module_4600" /* 4600 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import Card from "Card" /* 5688 */;
-import _modDef7197 from "module_7197" /* 7197 */;
-import _modDef8070 from "module_8070" /* 8070 */;
-import _modDef11390 from "module_11390" /* 11390 */;
-import _modDef11697 from "module_11697" /* 11697 */;
-import _modDef12906 from "module_12906" /* 12906 */;
-import _modDef15871 from "module_15871" /* 15871 */;
-import _modDef15872 from "module_15872" /* 15872 */;
+import _modDef4751 from "module_4751" /* 4751 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import Card from "Card" /* 5856 */;
+import _modDef7371 from "module_7371" /* 7371 */;
+import _modDef8256 from "module_8256" /* 8256 */;
+import _modDef11548 from "module_11548" /* 11548 */;
+import _modDef11844 from "module_11844" /* 11844 */;
+import _modDef13055 from "module_13055" /* 13055 */;
+import _modDef16097 from "module_16097" /* 16097 */;
+import _modDef16098 from "module_16098" /* 16098 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -52,7 +52,7 @@ function DemoContextMenu(align) {
         const obj2 = text(num[13]);
         const obj3 = { length };
         return Array.from({ length }).map((item, index) => {
-          const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "_status", action: "accessibleDismissStyle" };
+          const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: false, action: false };
           let str = "default";
           if (index === closure_0 - 1) {
             str = "destructive";
@@ -72,7 +72,7 @@ function DemoContextMenu(align) {
       const _Array2 = Array;
       const obj4 = { length: num };
       mapped = Array.from(obj4).map((item, index) => {
-        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "_status", action: "accessibleDismissStyle" };
+        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: false, action: false };
         let str = "default";
         if (index === closure_0 - 1) {
           str = "destructive";
@@ -107,9 +107,9 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let items = [_modDef12906, _modDef7197, _modDef8070, _modDef11390, _modDef4600, _modDef15871, _modDef15872, _modDef11697];
+let items = [_modDef13055, _modDef7371, _modDef8256, _modDef11548, _modDef4751, _modDef16097, _modDef16098, _modDef11844];
 let closure_8 = ["Launch Probe!", "Activate Laser", "Teleport Widget", "Engage Hyperdrive", "Deploy Robots", "Initiate Time Warp", "Beam Up Snacks", "Hack Database", "Trigger Cosmic Boom", "Unleash Space Vortex", "Activate Cloaking Device"];
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { flexDirection: "column", gap: 12, padding: 16 }, card: { gap: 12 }, divider: { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 12 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);

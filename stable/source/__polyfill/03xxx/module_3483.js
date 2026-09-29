@@ -1,9 +1,9 @@
 // Module ID: 3483
 // Function ID: 3484
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3483
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "4b9cbce1a505aa6c82ae572407bdef60", name: "ru.messages.4b9cbce1a505aa6c82ae572407bdef60.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/youtube_3pp", scales: [1], hash: "24e961112c85314c8e91574fc1ed12f4", name: "Youtube3PP.compiled.messages", type: "jsona" });

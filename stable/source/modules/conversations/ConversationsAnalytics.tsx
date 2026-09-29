@@ -1,11 +1,11 @@
-// Module ID: 8013
-// Function ID: 8014
+// Module ID: 8185
+// Function ID: 8186
 // Name: ConversationsAnalytics
-// Dependencies: [1957, 1074, 1240, 2]
+// Dependencies: [2041, 1074, 1241, 2]
 
-// Module 8013 (ConversationsAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+// Module 8185 (ConversationsAnalytics)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);

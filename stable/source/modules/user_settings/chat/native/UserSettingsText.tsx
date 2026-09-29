@@ -1,31 +1,31 @@
-// Module ID: 15549
-// Function ID: 15550
+// Module ID: 15739
+// Function ID: 15740
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1371, 4300, 1182, 1183, 1074, 21, 4636, 576, 1240, 1935, 9488, 4338, 504, 4294, 1483, 7093, 1176, 10527, 4632, 1114, 8716, 5054, 5768, 7303, 5766, 5769, 2]
+// Dependencies: [19, 17, 1372, 4452, 1183, 1184, 1074, 21, 4788, 576, 1241, 2019, 9504, 4489, 504, 4446, 1484, 7267, 1177, 10693, 4784, 1115, 8903, 5216, 5936, 7477, 5934, 5937, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15549 (UserSettingsText)
+// Module 15739 (UserSettingsText)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7093 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9488 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7267 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9504 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1182 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1183 */;
+import UserStore from "UserStore" /* 1372 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VideoQualitySettings = fn(1183).VideoQualitySettings;
+const VideoQualitySettings = fn(1184).VideoQualitySettings;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AnalyticsSections: c10, UserSettingsSections: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { flex: { flex: 1 }, nitroUpsell: { flexDirection: "row", alignItems: "center" }, nitroIcon: null };
 let size = { width: 16, height: 16, tintColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 obj2.nitroIcon = size;

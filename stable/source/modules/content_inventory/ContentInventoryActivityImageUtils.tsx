@@ -1,23 +1,23 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13321
+// Function ID: 13322
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 4864, 1074, 1920, 8459, 8256, 1114, 13134, 7412, 11024, 1396, 13136, 5364, 13137, 7271, 504, 1240, 8462, 2]
+// Dependencies: [19, 5015, 1074, 2004, 8644, 8440, 1115, 13322, 7583, 9660, 1397, 13324, 5532, 13325, 7445, 504, 1241, 8647, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 13133 (ContentInventoryActivityImageUtils)
+// Module 13321 (ContentInventoryActivityImageUtils)
 import _mod19 from "module_19" /* 19 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import Constants2 from "Constants" /* 1920 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7271 */;
-import useGame from "useGame" /* 7412 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8459 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8462 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 11024 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 13134 */;
-import isOnXboxDefault from "isOnXbox" /* 13136 */;
-import ApplicationStore from "ApplicationStore" /* 4864 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import Constants2 from "Constants" /* 2004 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7445 */;
+import useGame from "useGame" /* 7583 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8644 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8647 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 9660 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 13322 */;
+import isOnXboxDefault from "isOnXbox" /* 13324 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ function useComputedImagesForActivity(activity, activityApplication) {
     let obj11 = obj2;
   } else {
     if (obj17.isStageActivity(activity)) {
-      const result = tmp15(11024).unpackStageChannelParty(activity);
+      const result = tmp15(9660).unpackStageChannelParty(activity);
       let guildIconURL;
       if (null != result) {
         const obj3 = { id: result.guildId, icon: null, size: null };
@@ -50,25 +50,25 @@ function useComputedImagesForActivity(activity, activityApplication) {
       }
       const obj5 = { largeImage: tmp14, smallImage: "Array" };
       obj11 = obj5;
-      const tmp15Result = tmp15(11024);
+      const tmp15Result = tmp15(9660);
     } else if (isOnXboxDefault(activity)) {
       const obj6 = { largeImage: null, smallImage: "Array" };
-      const obj7 = { src: tmp2(5364).get(constants2.XBOX).icon.customPNG, alt: null };
-      const intl4 = tmp15(1114).intl;
-      obj7.alt = intl4.string(tmp15(1114).t.Nfvo72);
+      const obj7 = { src: tmp2(5532).get(constants2.XBOX).icon.customPNG, alt: null };
+      const intl4 = tmp15(1115).intl;
+      obj7.alt = intl4.string(tmp15(1115).t.Nfvo72);
       obj6.largeImage = obj7;
       obj11 = obj6;
-      const tmp2Result = tmp2(5364);
+      const tmp2Result = tmp2(5532);
     } else {
       if (null == smallImage) {
-        if (tmp2(13137)(activity)) {
+        if (tmp2(13325)(activity)) {
           const obj8 = { largeImage: null, smallImage: "Array" };
-          const obj9 = { src: tmp2(5364).get(constants2.PLAYSTATION).icon.lightPNG, alt: null };
-          const intl3 = tmp15(1114).intl;
-          obj9.alt = intl3.string(tmp15(1114).t.fFl4jo);
+          const obj9 = { src: tmp2(5532).get(constants2.PLAYSTATION).icon.lightPNG, alt: null };
+          const intl3 = tmp15(1115).intl;
+          obj9.alt = intl3.string(tmp15(1115).t.fFl4jo);
           obj8.largeImage = obj9;
           obj11 = obj8;
-          const tmp2Result2 = tmp2(5364);
+          const tmp2Result2 = tmp2(5532);
         }
       }
       let iconURL;
@@ -88,12 +88,12 @@ function useComputedImagesForActivity(activity, activityApplication) {
       } else {
         const obj = { src: iconURL, alt: null };
         if (null == name) {
-          const intl2 = tmp15(1114).intl;
-          let stringResult = intl2.string(tmp15(1114).t["2B/phM"]);
+          const intl2 = tmp15(1115).intl;
+          let stringResult = intl2.string(tmp15(1115).t["2B/phM"]);
         } else {
-          const intl = tmp15(1114).intl;
+          const intl = tmp15(1115).intl;
           const obj13 = { applicationName: name };
-          stringResult = intl.formatToPlainString(tmp15(1114).t.tiKyYg, obj13);
+          stringResult = intl.formatToPlainString(tmp15(1115).t.tiKyYg, obj13);
         }
         obj.alt = stringResult;
       }
@@ -191,7 +191,7 @@ function useRichImageForActivity(activity, activityApplication) {
     const application_id = activity.application_id;
   }
   if (null == activity) {
-    return { largeImage: "Array", smallImage: "PX_16" };
+    return { largeImage: "HermesInternal", smallImage: "Array" };
   } else {
     let large_image;
     if (activity != null) {
@@ -205,7 +205,7 @@ function useRichImageForActivity(activity, activityApplication) {
       const obj = { src: null, text: null, url: null };
       const items = [, ];
       ({ LARGE: arr[0], LARGE: arr[1] } = ImageSizes);
-      obj.src = tmp(8256).getAssetImage(activity.application_id, large_image, items);
+      obj.src = tmp(8440).getAssetImage(activity.application_id, large_image, items);
       const assets2 = activity.assets;
       let trimmed;
       if (assets2 != null) {
@@ -221,7 +221,7 @@ function useRichImageForActivity(activity, activityApplication) {
       }
       obj.url = large_url;
       tmp6 = obj;
-      const tmpResult = tmp(8256);
+      const tmpResult = tmp(8440);
     }
     let tmp11;
     if (!isCrunchyrollActivityDefault(activity)) {
@@ -239,7 +239,7 @@ function useRichImageForActivity(activity, activityApplication) {
       const obj2 = { src: null, text: null, url: null };
       const items1 = [, ];
       ({ LARGE: arr2[0], LARGE: arr2[1] } = ImageSizes);
-      obj2.src = tmp(8256).getAssetImage(activity.application_id, tmp11, items1);
+      obj2.src = tmp(8440).getAssetImage(activity.application_id, tmp11, items1);
       const assets5 = activity.assets;
       let trimmed1;
       if (assets5 != null) {
@@ -255,7 +255,7 @@ function useRichImageForActivity(activity, activityApplication) {
       }
       obj2.url = small_url;
       tmp13 = obj2;
-      const tmpResult2 = tmp(8256);
+      const tmpResult2 = tmp(8440);
     }
     if (tmp6 == null) {
       let obj5 = activityApplication;
@@ -272,13 +272,13 @@ function useRichImageForActivity(activity, activityApplication) {
       if (null != iconURL) {
         const obj3 = { src: iconURL, alt: null };
         if (null == name) {
-          const intl2 = tmp(1114).intl;
-          prop = tmp(1114).t["2B/phM"];
+          const intl2 = tmp(1115).intl;
+          prop = tmp(1115).t["2B/phM"];
           let stringResult = intl2.string(prop);
         } else {
-          const intl = tmp(1114).intl;
+          const intl = tmp(1115).intl;
           const obj4 = { applicationName: name };
-          stringResult = intl.formatToPlainString(tmp(1114).t.tiKyYg, obj4);
+          stringResult = intl.formatToPlainString(tmp(1115).t.tiKyYg, obj4);
         }
         obj3.alt = stringResult;
       }
@@ -374,15 +374,15 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
   }
   tmp5Result = ContentInventoryTypes;
   if (tmp5Result4.isWatchedMediaEntry(entry)) {
-    const obj10 = { src: tmp5(8256).getAssetImage(entry.extra.application_id, entry.extra.media_assets_large_image, ImageSizes.LARGE), alt: entry.extra.media_title };
+    const obj10 = { src: tmp5(8440).getAssetImage(entry.extra.application_id, entry.extra.media_assets_large_image, ImageSizes.LARGE), alt: entry.extra.media_title };
     tmp7 = obj10;
-    const tmp5Result5 = tmp5(8256);
+    const tmp5Result5 = tmp5(8440);
   } else {
     if (tmp5Result6.isTopArtistEntry(entry)) {
       const obj11 = { src: entry.extra.media.image_url };
       tmp7 = obj11;
     }
-    tmp5Result6 = tmp5(8459);
+    tmp5Result6 = tmp5(8644);
   }
 };
 export const useImageForActivity = function useImageForActivity(activity, application, user_profile_activity_native) {

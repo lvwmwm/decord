@@ -1,22 +1,22 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13628
+// Function ID: 13629
 // Name: ForLaterIntro
-// Dependencies: [17, 7254, 21, 4636, 576, 7963, 13427, 13428, 4632, 1114, 13429, 11840, 4599, 7312, 2]
+// Dependencies: [17, 7428, 21, 4788, 576, 8136, 13629, 13630, 4784, 1115, 13631, 11989, 4750, 7486, 2]
 // Exports: default
 
-// Module 13426 (ForLaterIntro)
+// Module 13628 (ForLaterIntro)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ClockIcon from "ClockIcon" /* 4599 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 7254 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7312 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7963 */;
-import BookmarkIcon from "BookmarkIcon" /* 11840 */;
-import _modDef13429 from "module_13429" /* 13429 */;
+import util from "util" /* 1115 */;
+import ClockIcon from "ClockIcon" /* 4750 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7428 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7486 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 8136 */;
+import BookmarkIcon from "BookmarkIcon" /* 11989 */;
+import _modDef13631 from "module_13631" /* 13631 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4636 */;
+import createStyles from "createStyles" /* 4788 */;
 import size_mod from "module_2" /* 2 */;
 
 function IntroDemo(isReminder) {
@@ -24,7 +24,7 @@ function IntroDemo(isReminder) {
   const tmp = closure_8();
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const obj2 = { style: tmp.messages, children: null };
-  const obj3 = { source: { uri: _modDef13429 }, style: tmp.avatar };
+  const obj3 = { source: { uri: _modDef13631 }, style: tmp.avatar };
   const items = [timestampProducer(React3, obj3), ];
   const obj5 = { style: tmp.messageLines, children: null };
   const obj6 = { variant: "text-sm/semibold", color: "text-default", children: null };
@@ -123,19 +123,19 @@ export default function ForLaterIntro(type) {
   const tmp4 = type.type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   const obj2 = { style: tmp.container, children: null };
-  const items = [timestampProducer(React3, { source: importDefault(tmp4 ? 13427 : 13428), style: tmp.upsellImage }), , ];
+  const items = [timestampProducer(React3, { source: importDefault(tmp4 ? 13629 : 13630), style: tmp.upsellImage }), , ];
   const obj4 = { style: tmp.textContainer, children: null };
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
-  const intl = tmp2(1114).intl;
-  const t = tmp2(1114).t;
+  const intl = tmp2(1115).intl;
+  const t = tmp2(1115).t;
   obj5.children = intl.string(tmp4 ? t["5Iw19e"] : t["93WOd1"]);
   const items1 = [timestampProducer(Text_Text.Heading, obj5), ];
   const obj6 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: null };
-  const intl2 = tmp2(1114).intl;
-  const t2 = tmp2(1114).t;
-  const intl3 = tmp2(1114).intl;
-  const t3 = tmp2(1114).t;
-  const obj3 = { source: importDefault(tmp4 ? 13427 : 13428), style: tmp.upsellImage };
+  const intl2 = tmp2(1115).intl;
+  const t2 = tmp2(1115).t;
+  const intl3 = tmp2(1115).intl;
+  const t3 = tmp2(1115).t;
+  const obj3 = { source: importDefault(tmp4 ? 13629 : 13630), style: tmp.upsellImage };
   const tmp10 = tmp4 ? t2.YI4UjI : t2["5TSj/g"];
   const tmp6 = React4;
   obj6.children = intl2.format(tmp10, { itemName: intl3.string(tmp4 ? t3.mJ3P0N : t3.tpxJto) });

@@ -1,22 +1,22 @@
-// Module ID: 10096
-// Function ID: 10097
+// Module ID: 10263
+// Function ID: 10264
 // Name: usePremiumFeatureUpsellGetNitro
-// Dependencies: [32, 19, 4300, 7553, 1373, 1074, 7265, 7525, 4960, 8167, 4334, 1114, 4502, 2]
+// Dependencies: [32, 19, 4452, 7724, 1374, 1074, 7439, 7696, 5111, 8353, 4485, 1115, 4654, 2]
 // Exports: default
 
-// Module 10096 (usePremiumFeatureUpsellGetNitro)
-import ChatInputUtils from "ChatInputUtils" /* 4502 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 4960 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7265 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7525 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 8167 */;
+// Module 10263 (usePremiumFeatureUpsellGetNitro)
+import ChatInputUtils from "ChatInputUtils" /* 4654 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5111 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7439 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7696 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 8353 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
-import UserOfferStore from "UserOfferStore" /* 7553 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
+import UserOfferStore from "UserOfferStore" /* 7724 */;
 
 require = fn;
-const PremiumTypes = fn(1373).PremiumTypes;
+const PremiumTypes = fn(1374).PremiumTypes;
 const AnalyticsObjectTypes = fn(1074).AnalyticsObjectTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/roadblocks/native/hooks/usePremiumFeatureUpsellGetNitro.tsx");
@@ -81,15 +81,15 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, page, arg3) 
           ref.current = ref.current + 1;
           onPress();
         }).catch(() => {
-          const intl = closure_1_0(1114).intl;
-          page(4334).presentFailedToast(intl.string(closure_1_0(1114).t.R0RpRX));
+          const intl = closure_1_0(1115).intl;
+          page(4485).presentFailedToast(intl.string(closure_1_0(1115).t.R0RpRX));
         }).finally(() => closure_1_4(false));
         const catchPromise = Promise.all(items).then(() => {
           ref.current = ref.current + 1;
           onPress();
         }).catch(() => {
-          const intl = closure_1_0(1114).intl;
-          page(4334).presentFailedToast(intl.string(closure_1_0(1114).t.R0RpRX));
+          const intl = closure_1_0(1115).intl;
+          page(4485).presentFailedToast(intl.string(closure_1_0(1115).t.R0RpRX));
         });
       }
     }

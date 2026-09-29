@@ -1,14 +1,14 @@
-// Module ID: 5225
-// Function ID: 5226
+// Module ID: 5392
+// Function ID: 5393
 // Name: NativePermissionStore
-// Dependencies: [4846, 1074, 504, 573, 1240, 2]
+// Dependencies: [4997, 1074, 504, 573, 1241, 2]
 
-// Module 5225 (NativePermissionStore)
+// Module 5392 (NativePermissionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 4846 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 4997 */;
 import size from "module_2" /* 2 */;
 
 const NativePermissionStates = NativePermissionConstants.NativePermissionStates;

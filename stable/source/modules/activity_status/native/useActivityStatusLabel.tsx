@@ -1,23 +1,23 @@
-// Module ID: 13402
-// Function ID: 13403
+// Module ID: 13604
+// Function ID: 13605
 // Name: useActivityStatusLabel
-// Dependencies: [4658, 1957, 4275, 4676, 4285, 4655, 1074, 504, 11012, 11010, 11011, 11018, 1114, 11020, 11025, 2]
+// Dependencies: [4810, 2041, 4427, 4828, 4437, 4807, 1074, 504, 11171, 11169, 11170, 11177, 1115, 11179, 11183, 2]
 // Exports: default
 
-// Module 13402 (useActivityStatusLabel)
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11010 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 11011 */;
-import isGameActivityDefault from "isGameActivity" /* 11018 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 11020 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import PresenceStore from "PresenceStore" /* 4676 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import VoiceStateStore from "VoiceStateStore" /* 4655 */;
+// Module 13604 (useActivityStatusLabel)
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11169 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 11170 */;
+import isGameActivityDefault from "isGameActivity" /* 11177 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 11179 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
+import PresenceStore from "PresenceStore" /* 4828 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import VoiceStateStore from "VoiceStateStore" /* 4807 */;
 
-const util = v0wJXSh(1114);
-const VoiceActivityStatus = v0wJXSh(11025);
+const util = v0wJXSh(1115);
+const VoiceActivityStatus = v0wJXSh(11183);
 require = fn;
 const ActivityTypes = fn(1074).ActivityTypes;
 const size = fn(2);

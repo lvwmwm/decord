@@ -1,13 +1,13 @@
-// Module ID: 6048
-// Function ID: 6049
+// Module ID: 6218
+// Function ID: 6219
 // Name: EmojiDuckSweatExample
-// Dependencies: [21, 5668, 6049, 2]
+// Dependencies: [21, 5836, 6219, 2]
 // Exports: EmojiDuckSweatExample
 
-// Module 6048 (EmojiDuckSweatExample)
+// Module 6218 (EmojiDuckSweatExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6049 from "module_6049" /* 6049 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6219 from "module_6219" /* 6219 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const EmojiDuckSweatExample = function EmojiDuckSweatExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6049 };
+  const obj2 = { uri: _modDef6219 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

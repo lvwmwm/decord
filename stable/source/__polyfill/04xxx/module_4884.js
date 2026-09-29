@@ -1,35 +1,17 @@
 // Module ID: 4884
 // Function ID: 4885
-// Dependencies: [4885]
+// Dependencies: [539, 540, 4885]
 
 // Module 4884
-import _mod4885 from "module_4885" /* 4885 */;
+import _process from "_process" /* 539 */;
+import baseUnary from "baseUnary" /* 540 */;
+import baseIsSet from "baseIsSet" /* 4885 */;
 
+const tmp = _process && _process.isSet;
+if (tmp) {
+  let _module = baseUnary(tmp);
+} else {
+  _module = baseIsSet;
+}
 
-export default function Type(num) {
-  let str = "Null";
-  if (null !== num) {
-    let str2 = "Undefined";
-    if (undefined !== num) {
-      let str3 = "Object";
-      if (!_mod4885(num)) {
-        let str4 = "Number";
-        if (typeof num !== "number") {
-          let str5 = "Boolean";
-          if (typeof num !== "boolean") {
-            let str6;
-            if (typeof num === "string") {
-              str6 = "String";
-            }
-            str5 = str6;
-          }
-          str4 = str5;
-        }
-        str3 = str4;
-      }
-      str2 = str3;
-    }
-    str = str2;
-  }
-  return str;
-};
+export default _module;

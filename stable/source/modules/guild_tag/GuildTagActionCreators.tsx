@@ -1,13 +1,13 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14213
+// Function ID: 14214
 // Name: GuildTagActionCreators
-// Dependencies: [5, 1371, 1074, 1270, 573, 2]
+// Dependencies: [5, 1372, 1074, 1271, 573, 2]
 // Exports: adoptGuildIdentity
 
-// Module 14002 (GuildTagActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+// Module 14213 (GuildTagActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 let closure_6 = async function _adoptGuildIdentity(identity_guild_id, identity_enabled) {

@@ -1,9 +1,9 @@
 // Module ID: 8750
 // Function ID: 8751
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 8750
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "aa9c26c29990ba7a6584e51ab5c56efa", name: "debug", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "48354bca4647923912a0392de88da6fa", name: "IdCardIcon", type: "png" });

@@ -1,13 +1,13 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11808
+// Function ID: 11809
 // Name: useDrawerWidth
-// Dependencies: [1074, 4499, 4497, 2]
+// Dependencies: [1074, 4650, 4648, 2]
 // Exports: getDrawerWidth, useDrawerWidth
 
-// Module 11661 (useDrawerWidth)
+// Module 11808 (useDrawerWidth)
 import Constants from "Constants" /* 1074 */;
-import useChatLayout from "useChatLayout" /* 4497 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4499 */;
+import useChatLayout from "useChatLayout" /* 4648 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4650 */;
 import size from "module_2" /* 2 */;
 
 const useBaseAppContainerDimensionsDefault = useBaseAppContainerDimensions;

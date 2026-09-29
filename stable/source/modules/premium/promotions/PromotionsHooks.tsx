@@ -1,16 +1,16 @@
-// Module ID: 13553
-// Function ID: 13554
+// Module ID: 13848
+// Function ID: 13849
 // Name: PromotionsHooks
-// Dependencies: [19, 1371, 10794, 1373, 504, 13511, 4294, 573, 13509, 2]
-// Exports: useBogoPromotion, useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
+// Dependencies: [19, 1372, 10961, 1374, 504, 13719, 4446, 573, 13717, 2]
+// Exports: useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
-// Module 13553 (PromotionsHooks)
+// Module 13848 (PromotionsHooks)
 import initialize from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PromotionUtils from "PromotionUtils" /* 13511 */;
+import PromotionUtils from "PromotionUtils" /* 13719 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
-import PromotionsStore from "PromotionsStore" /* 10794 */;
+import UserStore from "UserStore" /* 1372 */;
+import PromotionsStore from "PromotionsStore" /* 10961 */;
 
 const require = globalThis.__r;
 
@@ -45,7 +45,7 @@ function useEligibleActiveOutboundPromotions(arg0) {
       if (tmp) {
         let result1 = PromotionUtils.shouldShowOutboundPromotionOnPlatform(id);
         if (result1) {
-          const result = tmp2(13511).isDedicatedSurfacePromotion(id);
+          const result = tmp2(13719).isDedicatedSurfacePromotion(id);
           flag = !result;
           if (!result) {
             flag = true;
@@ -56,7 +56,7 @@ function useEligibleActiveOutboundPromotions(arg0) {
             obj3 = set;
           }
           result1 = flag;
-          const tmp2Result = tmp2(13511);
+          const tmp2Result = tmp2(13719);
         }
         tmp = result1;
         tmp2 = require;
@@ -65,7 +65,7 @@ function useEligibleActiveOutboundPromotions(arg0) {
     });
   }, items3);
 }
-const PremiumTypes = fn(1373).PremiumTypes;
+const PremiumTypes = fn(1374).PremiumTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/promotions/PromotionsHooks.tsx");
 
@@ -169,12 +169,6 @@ export const useUnseenOutboundPromotions = function useUnseenOutboundPromotions(
   }, items1);
   return memo.filter((item) => stateFromStores(dependencyMap[5]).shouldShowOutboundPromotionOnPlatform(item));
 };
-export const useBogoPromotion = function useBogoPromotion() {
-  const obj = { promotion: null };
-  const items = [PromotionsStore];
-  obj.promotion = initialize.useStateFromStores(items, () => bogoPromotion.bogoPromotion);
-  return obj;
-};
 export const useIsInPromotion = function useIsInPromotion(arg0) {
   _require = arg0;
   const items = [PromotionsStore];
@@ -185,5 +179,5 @@ export const useHasActiveBogoPromotion = function useHasActiveBogoPromotion() {
     const result = require("PromotionsActionCreators").maybeFetchActivePromotions();
   }, []);
   const items = [PromotionsStore];
-  return initialize.useStateFromStores(items, () => null != activeBogoRewardPromotion.getActiveBogoRewardPromotion());
+  return initialize.useStateFromStores(items, () => PromotionsStore.hasActiveBogoRewardPromotion());
 };

@@ -1,13 +1,13 @@
-// Module ID: 6284
-// Function ID: 6285
+// Module ID: 6454
+// Function ID: 6455
 // Name: HandheldSpotIllustration
-// Dependencies: [21, 5668, 6285, 2]
+// Dependencies: [21, 5836, 6455, 2]
 // Exports: HandheldSpotIllustration
 
-// Module 6284 (HandheldSpotIllustration)
+// Module 6454 (HandheldSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6285 from "module_6285" /* 6285 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6455 from "module_6455" /* 6455 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const HandheldSpotIllustration = function HandheldSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6285 };
+  const obj2 = { uri: _modDef6455 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

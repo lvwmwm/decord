@@ -1,15 +1,15 @@
 // Module ID: 9919
 // Function ID: 9920
 // Name: guild_scheduled_events/GuildScheduledEventModalActionCreators
-// Dependencies: [5, 1963, 9829, 4603, 9920, 1896, 9795, 9935, 2]
+// Dependencies: [5, 2047, 9816, 4755, 9920, 1980, 9785, 9935, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
 // Module 9919 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const ScheduleUtils = tmp2(9795);
+const ScheduleUtils = tmp2(9785);
 require = fn;
 function openGuildEventDetails(arg0) {
   ({ event, recurrenceId } = arg0);
@@ -81,8 +81,8 @@ let closure_7 = async function _transitionToEventDetailsFromInvite(arg0, value) 
     }
   }
 };
-let closure_4 = fn(1963).EXPLICIT_END_EVENT_SHEET_KEY;
-let closure_5 = fn(9829).GUILD_EVENT_INFO_ACTION_SHEET_KEY;
+let closure_4 = fn(2047).EXPLICIT_END_EVENT_SHEET_KEY;
+let closure_5 = fn(9816).GUILD_EVENT_INFO_ACTION_SHEET_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx");
 

@@ -1,9 +1,9 @@
 // Module ID: 14876
 // Function ID: 14877
-// Dependencies: [1120]
+// Dependencies: [19]
 
 // Module 14876
-import registerAsset from "module_1120" /* 1120 */;
+import noop from "module_19" /* 19 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 92, height: 92, scales: [2], hash: "f7554503ce3d782dd42ebcfb917a0839", name: "googleauth-logo", type: "png" });
+export default noop.createContext(undefined);

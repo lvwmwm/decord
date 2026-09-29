@@ -1,13 +1,13 @@
-// Module ID: 6434
-// Function ID: 6435
+// Module ID: 6606
+// Function ID: 6607
 // Name: OrbNitroCardSpotIllustration
-// Dependencies: [21, 5668, 6435, 2]
+// Dependencies: [21, 5836, 6607, 2]
 // Exports: OrbNitroCardSpotIllustration
 
-// Module 6434 (OrbNitroCardSpotIllustration)
+// Module 6606 (OrbNitroCardSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6435 from "module_6435" /* 6435 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6607 from "module_6607" /* 6607 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const OrbNitroCardSpotIllustration = function OrbNitroCardSpotIllustratio
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6435 };
+  const obj2 = { uri: _modDef6607 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

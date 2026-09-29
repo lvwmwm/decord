@@ -1,10 +1,11 @@
 // Module ID: 6915
 // Function ID: 6916
-// Dependencies: [17]
+// Dependencies: [19]
 
 // Module 6915
-import _mod17 from "module_17" /* 17 */;
+import _mod19 from "module_19" /* 19 */;
 
-const StyleSheet = _mod17.StyleSheet;
+const context = _mod19.createContext(null);
 
-export const styles = StyleSheet.create({ container: { flexDirection: "column-reverse", position: "absolute", top: 0, left: 0, right: 0 } });
+export const BottomSheetModalInternalContext = context;
+export const BottomSheetModalInternalProvider = context.Provider;

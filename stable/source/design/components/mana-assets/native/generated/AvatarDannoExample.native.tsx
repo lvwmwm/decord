@@ -1,13 +1,13 @@
-// Module ID: 5858
-// Function ID: 5859
+// Module ID: 6028
+// Function ID: 6029
 // Name: AvatarDannoExample
-// Dependencies: [21, 5668, 5859, 2]
+// Dependencies: [21, 5836, 6029, 2]
 // Exports: AvatarDannoExample
 
-// Module 5858 (AvatarDannoExample)
+// Module 6028 (AvatarDannoExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef5859 from "module_5859" /* 5859 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6029 from "module_6029" /* 6029 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AvatarDannoExample = function AvatarDannoExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5859 };
+  const obj2 = { uri: _modDef6029 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,9 +1,15 @@
 // Module ID: 1288
 // Function ID: 1289
-// Dependencies: [1289]
+// Dependencies: []
 
 // Module 1288
-import _mod1289 from "module_1289" /* 1289 */;
+let getPrototypeOf = typeof Reflect !== "undefined";
+if (typeof Reflect !== "undefined") {
+  const _Reflect = Reflect;
+  getPrototypeOf = Reflect.getPrototypeOf;
+}
+if (!getPrototypeOf) {
+  getPrototypeOf = null;
+}
 
-
-export default _mod1289.getPrototypeOf || null;
+export default getPrototypeOf;

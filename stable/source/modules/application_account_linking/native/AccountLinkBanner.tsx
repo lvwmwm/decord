@@ -1,15 +1,15 @@
-// Module ID: 16291
-// Function ID: 16292
+// Module ID: 16536
+// Function ID: 16537
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1371, 1954, 21, 576, 7275, 10247, 5061, 4636, 563, 7265, 7285, 5688, 5204, 5761, 1176, 4632, 1114, 5056, 8861, 2]
+// Dependencies: [19, 17, 1372, 2038, 21, 576, 7449, 10414, 5223, 4788, 563, 7439, 7459, 5856, 5371, 5929, 1177, 4784, 1115, 5218, 9047, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 16291 (AccountLinkBanner)
+// Module 16536 (AccountLinkBanner)
 import nativeDefault from "native" /* 576 */;
-import ButtonConstants from "ButtonConstants" /* 5061 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10247 */;
+import ButtonConstants from "ButtonConstants" /* 5223 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10414 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function AccountLinkLargeBanner(arg0) {
@@ -50,7 +50,7 @@ function AccountLinkLargeBanner(arg0) {
     items3[2] = closure_6(View, obj9);
     obj6.children = items3;
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: tmp2(tmp3[16]).AvatarSizes.LARGE_48, guildId: "r" };
+    const obj10 = { user: stateFromStores, size: tmp2(tmp3[16]).AvatarSizes.LARGE_48, guildId: "Array" };
     items2[2] = closure_6(tmp2(tmp3[16]).Avatar, obj10);
     obj4.children = items2;
     items1[1] = closure_7(View, obj4);
@@ -80,7 +80,7 @@ function AccountLinkLargeBanner(arg0) {
   return tmp8;
 }
 const View = fn(17).View;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;
@@ -88,12 +88,12 @@ const PX_82 = nativeDefault.space.PX_8;
 const PX_12 = nativeDefault.space.PX_12;
 const PX_16 = nativeDefault.space.PX_16;
 const PX_4 = nativeDefault.space.PX_4;
-const NORMAL = fn(7275).GameIconSizes.NORMAL;
-let closure_14 = fn(7275).GameIconImageSize[NORMAL];
+const NORMAL = fn(7449).GameIconSizes.NORMAL;
+let closure_14 = fn(7449).GameIconImageSize[NORMAL];
 let c15 = "heading-md/bold";
 let c16 = "text-sm/medium";
 const PX_162 = nativeDefault.space.PX_16;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { card: { padding: PX_12 }, closeButton: null, imagesContainer: null, ellipsisContainer: null, ellipsisDot: null, title: null, body: null, ctaContainer: null };
 let size = { position: "absolute", top: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12, width: 24, height: 24, alignItems: "center", justifyContent: "center", zIndex: 1 };
 obj.closeButton = size;

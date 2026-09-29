@@ -1,15 +1,15 @@
-// Module ID: 6014
-// Function ID: 6015
+// Module ID: 6184
+// Function ID: 6185
 // Name: DiscordSupergraphicLogo
-// Dependencies: [17, 21, 576, 4338, 6015, 2]
+// Dependencies: [17, 21, 576, 4489, 6185, 2]
 // Exports: DiscordSupergraphicLogo
 
-// Module 6014 (DiscordSupergraphicLogo)
+// Module 6184 (DiscordSupergraphicLogo)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4338 */;
-import _modDef6015 from "module_6015" /* 6015 */;
+import useToken from "useToken" /* 4489 */;
+import _modDef6185 from "module_6185" /* 6185 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -46,7 +46,7 @@ export const DiscordSupergraphicLogo = function DiscordSupergraphicLogo(color) {
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "string";
   }
   const obj4 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj4.source = { uri: _modDef6015 };
+  obj4.source = { uri: _modDef6185 };
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size, tmp6];
   obj4.style = items;

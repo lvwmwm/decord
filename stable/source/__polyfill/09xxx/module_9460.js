@@ -1,9 +1,9 @@
 // Module ID: 9460
 // Function ID: 9461
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 9460
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/BrandInvertedIcon", width: 60, height: 60, scales: [2, 3], hash: "d3530007d60b5d4f6a3d08cddf26f42c", name: "BrandInvertedIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 120, height: 80, scales: [2, 3], hash: "e92f31ca34ceaeec68c2321f683014ca", name: "img_nitro_global_emoji", type: "png" });

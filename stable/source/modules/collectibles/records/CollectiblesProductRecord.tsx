@@ -1,16 +1,16 @@
-// Module ID: 7647
-// Function ID: 7648
+// Module ID: 7818
+// Function ID: 7819
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7648, 7649, 7654, 1076, 1074, 5594, 1889, 2]
+// Dependencies: [32, 7819, 7820, 7825, 1076, 1074, 5762, 1973, 2]
 
-// Module 7647 (CollectiblesProductRecord)
-import getPricesFromServerDefault from "getPricesFromServer" /* 5594 */;
+// Module 7818 (CollectiblesProductRecord)
+import getPricesFromServerDefault from "getPricesFromServer" /* 5762 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7648 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7654 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7819 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7825 */;
 
 const require = fn;
-const CollectiblesItemRecord = fn(7649);
+const CollectiblesItemRecord = fn(7820);
 ({ createCollectiblesItemsFromServerResponse: hasOwnProperty, transformSKUToCollectiblesItem: metroRequire } = CollectiblesItemRecord);
 let closure_7 = fn(1076).REWARD_CATEGORY_AND_REWARD_SKU_IDS;
 const Constants = fn(1074);
@@ -177,7 +177,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
               }
               ({ items, item } = obj);
               first = _slicedToArray(tenantMetadata.selectedOptions, 1)[0];
-              const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: "w", items: "SUMMARIES_ENABLED_BY_USER", categorySkuId: "FileUpIcon", isCategoryReward: "woman_swimming_medium_skin_tone", prices: "REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE", previewAssets: "isArray", googleSkuIds: "isArray", eligibleOffers: "MODERATE_STAGE_CHANNEL_PERMISSIONS", variants: "activeViewType", bundledProducts: "sgL8sI", isFirstParty: "e" };
+              const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: "accessible", items: "TypeError", categorySkuId: "Array", isCategoryReward: "isArray", prices: "padding", previewAssets: "exports", googleSkuIds: "y", eligibleOffers: "r", variants: "isArray", bundledProducts: "w", isFirstParty: "ix" };
               let str;
               if (first != null) {
                 str = first.optionValue;

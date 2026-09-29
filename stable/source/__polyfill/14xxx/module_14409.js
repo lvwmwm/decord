@@ -1,13 +1,9 @@
 // Module ID: 14409
 // Function ID: 14410
-// Dependencies: [14393, 14410]
+// Dependencies: [1121]
 
 // Module 14409
-import _mod14393 from "module_14393" /* 14393 */;
-import _mod14410 from "module_14410" /* 14410 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-let closure_2 = _mod14393({}.hasOwnProperty);
 
-export default Object.hasOwn || (function hasOwn(arg0, arg1) {
-  return closure_2(_mod14410(arg0), arg1);
-});
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "b452f17f7046013be582dffe125561c0", name: "StatusIdle", type: "png" });

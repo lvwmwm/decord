@@ -1,13 +1,13 @@
-// Module ID: 13118
-// Function ID: 13119
+// Module ID: 13306
+// Function ID: 13307
 // Name: useEntranceAnimation
-// Dependencies: [32, 19, 1176, 560, 1247, 4637, 4373, 2]
+// Dependencies: [32, 19, 1177, 560, 1248, 4789, 4524, 2]
 // Exports: useEntranceAnimation
 
-// Module 13118 (useEntranceAnimation)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1247 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import timing from "timing" /* 4637 */;
+// Module 13306 (useEntranceAnimation)
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import timing from "timing" /* 4789 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ function setUseEntranceAnimationState(arg0) {
   _require = arg0;
   require("ReactBatchUpdates").batchUpdates(() => obj4.setState(closure_0));
 }
-let obj = { duration: 300, easing: fn(1176).STANDARD_EASING };
+let obj = { duration: 300, easing: fn(1177).STANDARD_EASING };
 const module_560 = fn(560);
 let obj4 = module_560.create(() => ({ isComplete: false }));
 let closure_7 = { code: "function useEntranceAnimationTsx1(){const{runOnJS,setUseEntranceAnimationState}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});}" };
@@ -49,9 +49,9 @@ export const useEntranceAnimation = function useEntranceAnimation(entranceAnimat
       ReactBatchUpdates.batchUpdates(() => state.setState({ isComplete: false }));
       const obj3 = timing;
       const fn = function t() {
-        closure_0(4373).runOnJS(setUseEntranceAnimationState)({ isComplete: true });
-        obj = closure_0(4373);
-        closure_0(4373).runOnJS(incrementLoads)();
+        closure_0(4524).runOnJS(setUseEntranceAnimationState)({ isComplete: true });
+        obj = closure_0(4524);
+        closure_0(4524).runOnJS(incrementLoads)();
       };
       obj4 = { runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState, incrementLoads };
       fn.__closure = obj4;

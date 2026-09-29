@@ -1,12 +1,12 @@
 // Module ID: 9915
 // Function ID: 9916
 // Name: CalendarIcon
-// Dependencies: [19, 21, 576, 4337, 9916, 2]
+// Dependencies: [19, 21, 576, 4488, 9916, 2]
 // Exports: CalendarIcon
 
 // Module 9915 (CalendarIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
 import _mod9916 from "module_9916" /* 9916 */;
 import noop from "module_19" /* 19 */;
 

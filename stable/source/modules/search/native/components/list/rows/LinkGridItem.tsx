@@ -1,24 +1,24 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 17153
+// Function ID: 17154
 // Name: LinkGridItem
-// Dependencies: [32, 19, 17, 1957, 7384, 7982, 21, 4636, 504, 1114, 7992, 16789, 4632, 5152, 12471, 4579, 11747, 16781, 5204, 16779, 38, 8488, 2]
+// Dependencies: [32, 19, 17, 2041, 7555, 8154, 21, 4788, 504, 1115, 8164, 17154, 4784, 5321, 12621, 4730, 11894, 17146, 5371, 17144, 38, 8673, 2]
 
-// Module 16788 (LinkGridItem)
+// Module 17153 (LinkGridItem)
 import _modDef38 from "module_38" /* 38 */;
-import util from "util" /* 1114 */;
-import LinkIcon from "LinkIcon" /* 4579 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import ChatIcon from "ChatIcon" /* 5152 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 7992 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8488 */;
-import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 11747 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12471 */;
-import SearchMediaImage from "SearchMediaImage" /* 16779 */;
-import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 16789 */;
+import util from "util" /* 1115 */;
+import LinkIcon from "LinkIcon" /* 4730 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import ChatIcon from "ChatIcon" /* 5321 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8164 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8673 */;
+import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 11894 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12621 */;
+import SearchMediaImage from "SearchMediaImage" /* 17144 */;
+import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 17154 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import SearchMessageStore from "SearchMessageStore" /* 7384 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SearchMessageStore from "SearchMessageStore" /* 7555 */;
 
 require = fn;
 function getLinkNodeAtIndex(content, diff, fn) {
@@ -4833,11 +4833,11 @@ function LinkEmbedGridItem(containerStyle) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, useWindowDimensions: metroRequire } = get_ActivityIndicator);
-const SearchConstants = fn(7982);
+const SearchConstants = fn(8154);
 ({ FILE_OR_LINK_IMAGE_BUFFER: closure_9, SearchLinkTypes: c10 } = SearchConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_13 = createStyles.createStyles({ iconContainer: { alignItems: "center", justifyContent: "center" }, tapToSee: { fontStyle: "italic" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/LinkGridItem.tsx");

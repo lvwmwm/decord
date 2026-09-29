@@ -1,9 +1,9 @@
 // Module ID: 14410
 // Function ID: 14411
-// Dependencies: [14396]
+// Dependencies: [1121]
 
 // Module 14410
-import _mod14396 from "module_14396" /* 14396 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0) => Object(_mod14396(arg0));
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "89ef758cad16b0f89bf10bf57ab078db", name: "StatusDND", type: "png" });

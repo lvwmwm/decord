@@ -1,50 +1,46 @@
 // Module ID: 3989
 // Function ID: 3990
-// Dependencies: [3725, 3944, 3887, 3726]
-// Exports: default
+// Dependencies: [3990, 3991, 3992, 3993, 3994]
 
 // Module 3989
-import _typeof_mod from "module_3725" /* 3725 */;
-import startOfYear_mod from "startOfYear" /* 3944 */;
-import differenceInCalendarDays_mod from "differenceInCalendarDays" /* 3887 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import module_3990 from "module_3990" /* 3990 */;
+import module_3991 from "module_3991" /* 3991 */;
+import module_3992 from "module_3992" /* 3992 */;
+import date_mod from "module_3993" /* 3993 */;
+import date_mod from "module_3994" /* 3994 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+if (!module_3990) {
+  const obj = { default: module_3990 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_3990;
 }
-_typeof = tmp3;
-let startOfYear = startOfYear_mod;
-if (!startOfYear) {
-  const obj2 = { default: startOfYear };
+if (!module_3991) {
+  const obj2 = { default: module_3991 };
   let tmp5 = obj2;
 } else {
-  tmp5 = startOfYear;
+  tmp5 = module_3991;
 }
-startOfYear = tmp5;
-let differenceInCalendarDays = differenceInCalendarDays_mod;
-if (!differenceInCalendarDays) {
-  const obj3 = { default: differenceInCalendarDays };
+if (!module_3992) {
+  const obj3 = { default: module_3992 };
   let tmp7 = obj3;
 } else {
-  tmp7 = differenceInCalendarDays;
+  tmp7 = module_3992;
 }
-differenceInCalendarDays = tmp7;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
   let tmp9 = obj4;
 } else {
-  tmp9 = requiredArgs;
+  tmp9 = date;
 }
-requiredArgs = tmp9;
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
 
-export default function getDayOfYear(arg0) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  return differenceInCalendarDays.default(defaultResult1, startOfYear.default(defaultResult1)) + 1;
-};
+export default { code: "ro", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
 export default exports.default;

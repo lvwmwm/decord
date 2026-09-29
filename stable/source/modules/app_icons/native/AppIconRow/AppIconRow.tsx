@@ -1,16 +1,16 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15806
+// Function ID: 15807
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1114, 4636, 576, 9454, 12, 4355, 5686, 15611, 5770, 2]
+// Dependencies: [32, 19, 21, 1115, 4788, 576, 9470, 12, 4506, 5854, 15803, 5938, 2]
 // Exports: default
 
-// Module 15614 (AppIconRow)
+// Module 15806 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
-import AppIconTypes from "AppIconTypes" /* 9454 */;
-import AppIconDefault from "AppIcon" /* 15611 */;
+import util from "util" /* 1115 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4506 */;
+import AppIconTypes from "AppIconTypes" /* 9470 */;
+import AppIconDefault from "AppIcon" /* 15803 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -40,7 +40,7 @@ const items = [
     return intl.string(util.t.RnMLvl);
   }
 ];
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { icon: { borderRadius: nativeDefault.radii.md } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -84,9 +84,9 @@ export default function AppIconRow(arg0) {
         let tmp10Result2 = null;
       }
       obj2.trailing = tmp10Result2;
-      tmp10Result = tmp10(tmp3(5686).TableRow, obj2, id);
+      tmp10Result = tmp10(tmp3(5854).TableRow, obj2, id);
     }
     const obj4 = { selected: tmp7 };
-    tmp10Result2 = tmp10(tmp3(5770).FormRadio, obj4);
+    tmp10Result2 = tmp10(tmp3(5938).FormRadio, obj4);
   }
 };

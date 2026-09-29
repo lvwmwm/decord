@@ -1,9 +1,9 @@
 // Module ID: 13877
 // Function ID: 13878
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13877
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "d8c1977b6a087b3b59e64fe8d7b24249", name: "ic_mic_muted_light_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/simple", width: 32, height: 32, scales: [2, 3], hash: "d9ada236b866307c8985fc87fdd51c88", name: "tier_2_32px", type: "png" });

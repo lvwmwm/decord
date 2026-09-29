@@ -1,9 +1,9 @@
 // Module ID: 3515
 // Function ID: 3516
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3515
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb252ZXJzYXRpb25z", scales: [1], hash: "aea66019c9fd86604d415d50e4c532a4", name: "ru.messages.aea66019c9fd86604d415d50e4c532a4.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/partner_perks/xbox/partner_pass", scales: [1], hash: "5d043a239e74f1fd73cda189aff4d907", name: "XboxPartnerPass.compiled.messages", type: "jsona" });

@@ -1,9 +1,21 @@
 // Module ID: 14623
 // Function ID: 14624
-// Dependencies: [1120]
+// Dependencies: [14624]
 
 // Module 14623
-import registerAsset from "module_1120" /* 1120 */;
+import _mod14624 from "module_14624" /* 14624 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "4d2adea177cc0cf5fd8e4a93e093db12", name: "mic", type: "png" });
+export default (arg0, arg1) => {
+  let tmp3 = _mod14624[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    if (!arg1) {
+      obj = {};
+    }
+    _mod14624[arg0] = obj;
+    tmp3 = obj;
+    const tmpResult = _mod14624;
+  }
+  return tmp3;
+};

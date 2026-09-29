@@ -1,13 +1,13 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12261
+// Function ID: 12262
 // Name: useTypingText
-// Dependencies: [32, 1371, 504, 4788, 1114, 2]
+// Dependencies: [32, 1372, 504, 4940, 1115, 2]
 // Exports: default
 
-// Module 12112 (useTypingText)
-import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
+// Module 12261 (useTypingText)
+import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 const size = fn(2);

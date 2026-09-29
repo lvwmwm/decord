@@ -1,24 +1,9 @@
 // Module ID: 4731
 // Function ID: 4732
-// Dependencies: [523]
+// Dependencies: [1121]
 
 // Module 4731
-import _mod523 from "module_523" /* 523 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-let prototype;
-if (_mod523) {
-  prototype = _mod523.prototype;
-}
-let valueOf;
-if (prototype) {
-  valueOf = prototype.valueOf;
-}
 
-export default function cloneSymbol(arg0) {
-  if (valueOf) {
-    const call = tmp.call;
-    Object(typeof call === "unknown" ? tmp() : call(arg0));
-  } else {
-    return {};
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1c7fa64f17165fe6aaad3178602df81d", name: "LinkIcon", type: "png" });

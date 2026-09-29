@@ -1,9 +1,9 @@
 // Module ID: 3619
 // Function ID: 3620
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3619
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jdXN0b21fdHlwaW5nX2luZGljYXRvci9pbnRs", scales: [1], hash: "ece1ce0bb2734cd5ed1cdedbd3d69acf", name: "uk.messages.ece1ce0bb2734cd5ed1cdedbd3d69acf.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb252ZXJzYXRpb25z", scales: [1], hash: "c82f8c33dd4a762952017910e7c762ba", name: "es-419.messages.c82f8c33dd4a762952017910e7c762ba.compiled.messages", type: "jsona" });

@@ -1,21 +1,10 @@
 // Module ID: 7136
 // Function ID: 7137
-// Dependencies: [19, 7130]
-// Exports: useCardAnimation
+// Dependencies: []
 
 // Module 7136
-import CardAnimationContext from "CardAnimationContext" /* 7130 */;
-import noop from "module_19" /* 19 */;
 
-require = arg1;
-
-export const useCardAnimation = function useCardAnimation() {
-  const context = noop.useContext(CardAnimationContext.CardAnimationContext);
-  if (undefined === context) {
-    const _Error = Error;
-    const error = new Error("Couldn't find values for card animation. Are you inside a screen in Stack?");
-    throw error;
-  } else {
-    return context;
-  }
+export default function _nonIterableRest() {
+  const typeError = new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+  throw typeError;
 };

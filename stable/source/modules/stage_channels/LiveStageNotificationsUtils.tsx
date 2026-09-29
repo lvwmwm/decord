@@ -1,12 +1,12 @@
-// Module ID: 9944
-// Function ID: 9945
+// Module ID: 10109
+// Function ID: 10110
 // Name: LiveStageNotificationsUtils
-// Dependencies: [4556, 4275, 1085, 504, 2]
+// Dependencies: [4707, 4427, 1085, 504, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 9944 (LiveStageNotificationsUtils)
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4556 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+// Module 10109 (LiveStageNotificationsUtils)
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 

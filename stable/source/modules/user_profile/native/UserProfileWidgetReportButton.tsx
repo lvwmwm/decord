@@ -1,16 +1,16 @@
-// Module ID: 8786
-// Function ID: 8787
+// Module ID: 8973
+// Function ID: 8974
 // Name: UserProfileWidgetReportButton
-// Dependencies: [19, 17, 21, 1114, 8787, 8752, 8789, 8795, 576, 2]
+// Dependencies: [19, 17, 21, 1115, 8974, 8976, 8206, 8213, 576, 2]
 // Exports: default
 
-// Module 8786 (UserProfileWidgetReportButton)
+// Module 8973 (UserProfileWidgetReportButton)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ReportModals from "ReportModals" /* 8752 */;
-import FlagIcon from "FlagIcon" /* 8787 */;
-import ContextMenu from "ContextMenu" /* 8789 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8795 */;
+import util from "util" /* 1115 */;
+import ContextMenu from "ContextMenu" /* 8206 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8213 */;
+import FlagIcon from "FlagIcon" /* 8974 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8976 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,7 +27,7 @@ export default function UserProfileWidgetReportButton(arg0) {
   obj.label = intl.string(util.t.D4GvHE);
   obj.IconComponent = FlagIcon.FlagIcon;
   obj.action = function action() {
-    return ReportModals.showReportModalForWidget(closure_1_0, importDefault);
+    return showReportModalForUserWidget.showReportModalForUserWidget(closure_1_0, importDefault);
   };
   const items = [obj];
   return jsx(ContextMenu.ContextMenu, {

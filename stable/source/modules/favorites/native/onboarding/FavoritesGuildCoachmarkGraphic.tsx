@@ -1,16 +1,16 @@
-// Module ID: 16412
-// Function ID: 16413
+// Module ID: 16657
+// Function ID: 16658
 // Name: FavoritesGuildCoachmarkGraphic
-// Dependencies: [17, 21, 4636, 576, 5773, 1176, 2]
+// Dependencies: [17, 21, 4788, 576, 5941, 1177, 2]
 // Exports: default
 
-// Module 16412 (FavoritesGuildCoachmarkGraphic)
+// Module 16657 (FavoritesGuildCoachmarkGraphic)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import native2 from "native" /* 5773 */;
+import native from "native" /* 1177 */;
+import native2 from "native" /* 5941 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4636 */;
+import createStyles from "createStyles" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

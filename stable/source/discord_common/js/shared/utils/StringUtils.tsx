@@ -1,12 +1,12 @@
-// Module ID: 1926
-// Function ID: 1927
+// Module ID: 2010
+// Function ID: 2011
 // Name: utils/StringUtils
-// Dependencies: [1927, 2, 1928]
+// Dependencies: [2011, 2, 2012]
 // Exports: getAcronym, truncateText, upperCaseFirstChar
 
-// Module 1926 (utils/StringUtils)
-import _mod1927 from "module_1927" /* 1927 */;
-import DOMUtils from "DOMUtils" /* 1928 */;
+// Module 2010 (utils/StringUtils)
+import _mod2011 from "module_2011" /* 2011 */;
+import DOMUtils from "DOMUtils" /* 2012 */;
 import size from "module_2" /* 2 */;
 
 const re2 = /[\u0300-\u036f]/g;
@@ -23,7 +23,7 @@ if (null == String.prototype.normalize) {
   let fullNormalize = (arg0) => arg0;
 } else {
   fullNormalize = function fullNormalize(str) {
-    closure_0 = _mod1927;
+    closure_0 = _mod2011;
     dependencyMap = "";
     const items = [...str.normalize("NFD")];
     const item = items.forEach((item) => {

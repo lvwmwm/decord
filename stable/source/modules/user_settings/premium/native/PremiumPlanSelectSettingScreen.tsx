@@ -1,12 +1,12 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15271
+// Function ID: 15272
 // Name: PremiumPlanSelectSettingScreen
-// Dependencies: [19, 21, 7097, 13632, 2]
+// Dependencies: [19, 21, 7271, 13835, 2]
 // Exports: default
 
-// Module 15080 (PremiumPlanSelectSettingScreen)
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7097 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13632 */;
+// Module 15271 (PremiumPlanSelectSettingScreen)
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7271 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13835 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,14 +1,14 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 12077
+// Function ID: 12078
 // Name: useTrackCreateGuildViewed
-// Dependencies: [19, 7429, 1074, 1240, 2]
+// Dependencies: [19, 7600, 1074, 1241, 2]
 // Exports: default
 
-// Module 11928 (useTrackCreateGuildViewed)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+// Module 12077 (useTrackCreateGuildViewed)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 
-const GuildTemplateStates = fn(7429).GuildTemplateStates;
+const GuildTemplateStates = fn(7600).GuildTemplateStates;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_templates/useTrackCreateGuildViewed.tsx");

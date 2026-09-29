@@ -1,170 +1,44 @@
 // Module ID: 8633
 // Function ID: 8634
-// Dependencies: [41, 42, 93, 95, 98, 8590, 8613]
+// Dependencies: [8624, 8617, 4617]
 
 // Module 8633
-import _modDef8613 from "module_8613" /* 8613 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import colorPropType from "colorPropType" /* 8617 */;
+import _mod8624 from "module_8624" /* 8624 */;
+import emptyFunction_mod from "module_4617" /* 4617 */;
+import "module_4617";
 
-let FeFuncA = arg1;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class FeComponentTransferFunction {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    tmp = c2(this, FeFuncA);
-    items1 = [...items];
-    tmp2 = closure_4;
-    obj = closure_4(FeFuncA);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.channel = "UNKNOWN";
-    return tmp3Result;
-  }
-}
-FeFuncA = FeComponentTransferFunction;
-_inherits(FeComponentTransferFunction, _modDef8613);
-const entry = {
-  key: "render",
-  value: function render() {
-    const result = FeFuncA(8590).warnUnimplementedFilter();
-    return null;
-  }
-};
-let items = [entry];
-const importDefaultResultResult = _createClass(FeComponentTransferFunction, items);
-importDefaultResultResult.defaultProps = { type: "identity", tableValues: [], slope: 1, intercept: 0, amplitude: 1, exponent: 1, offset: 0 };
-class FeFuncR {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    tmp = c2(this, FeFuncA);
-    items1 = [...items];
-    tmp2 = closure_4;
-    obj = closure_4(FeFuncA);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.channel = "R";
-    return tmp3Result;
-  }
-}
-FeFuncA = FeFuncR;
-_inherits(FeFuncR, importDefaultResultResult);
-const importDefaultResultResult1 = _createClass(FeFuncR);
-importDefaultResultResult1.displayName = "FeFuncR";
-class FeFuncG {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    tmp = c2(this, FeFuncA);
-    items1 = [...items];
-    tmp2 = closure_4;
-    obj = closure_4(FeFuncA);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.channel = "G";
-    return tmp3Result;
-  }
-}
-FeFuncA = FeFuncG;
-_inherits(FeFuncG, importDefaultResultResult);
-const importDefaultResultResult2 = _createClass(FeFuncG);
-importDefaultResultResult2.displayName = "FeFuncG";
-class FeFuncB {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    tmp = c2(this, FeFuncA);
-    items1 = [...items];
-    tmp2 = closure_4;
-    obj = closure_4(FeFuncA);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.channel = "B";
-    return tmp3Result;
-  }
-}
-FeFuncA = FeFuncB;
-_inherits(FeFuncB, importDefaultResultResult);
-const importDefaultResultResult3 = _createClass(FeFuncB);
-importDefaultResultResult3.displayName = "FeFuncB";
-class FeFuncA {
-  constructor() {
-    self = this;
-    items = [...arguments];
-    tmp = c2(this, FeFuncA);
-    items1 = [...items];
-    tmp2 = closure_4;
-    obj = closure_4(FeFuncA);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.channel = "A";
-    return tmp3Result;
-  }
-}
-_inherits(FeFuncA, importDefaultResultResult);
-const importDefaultResultResult4 = _createClass(FeFuncA);
-importDefaultResultResult4.displayName = "FeFuncA";
+const obj = {};
+const module_8624 = Object.assign(_mod8624);
+obj.color = colorPropType;
+obj.fontFamily = emptyFunction.string;
+obj.fontSize = emptyFunction.number;
+let emptyFunction = emptyFunction_mod;
+obj.fontStyle = emptyFunction.oneOf(["normal", "italic"]);
+let emptyFunction = emptyFunction_mod;
+obj.fontWeight = emptyFunction.oneOf(["normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900"]);
+let emptyFunction = emptyFunction_mod;
+obj.fontVariant = emptyFunction.arrayOf(emptyFunction.oneOf(["small-caps", "oldstyle-nums", "lining-nums", "tabular-nums", "proportional-nums"]));
+let emptyFunction = emptyFunction_mod;
+const size = { width: emptyFunction.number, height: emptyFunction.number };
+obj.textShadowOffset = emptyFunction.shape(size);
+obj.textShadowRadius = emptyFunction.number;
+obj.textShadowColor = colorPropType;
+obj.letterSpacing = emptyFunction.number;
+obj.lineHeight = emptyFunction.number;
+let emptyFunction = emptyFunction_mod;
+obj.textAlign = emptyFunction.oneOf(["auto", "left", "right", "center", "justify"]);
+let emptyFunction = emptyFunction_mod;
+obj.textAlignVertical = emptyFunction.oneOf(["auto", "top", "bottom", "center"]);
+obj.includeFontPadding = emptyFunction.bool;
+let emptyFunction = emptyFunction_mod;
+obj.textDecorationLine = emptyFunction.oneOf(["none", "underline", "line-through", "underline line-through"]);
+let emptyFunction = emptyFunction_mod;
+obj.textDecorationStyle = emptyFunction.oneOf(["solid", "double", "dotted", "dashed"]);
+obj.textDecorationColor = colorPropType;
+let emptyFunction = emptyFunction_mod;
+obj.textTransform = emptyFunction.oneOf(["none", "capitalize", "uppercase", "lowercase"]);
+let emptyFunction = emptyFunction_mod;
+obj.writingDirection = emptyFunction.oneOf(["auto", "ltr", "rtl"]);
 
-export default importDefaultResultResult;
-export const FeFuncR = importDefaultResultResult1;
-export const FeFuncG = importDefaultResultResult2;
-export const FeFuncB = importDefaultResultResult3;
-export const FeFuncA = importDefaultResultResult4;
+export default obj;

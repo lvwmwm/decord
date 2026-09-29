@@ -1,11 +1,11 @@
-// Module ID: 5547
-// Function ID: 5548
+// Module ID: 5715
+// Function ID: 5716
 // Name: dedupeEmojisByNameOrId
-// Dependencies: [4289, 2]
+// Dependencies: [4441, 2]
 // Exports: default
 
-// Module 5547 (dedupeEmojisByNameOrId)
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
+// Module 5715 (dedupeEmojisByNameOrId)
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4441 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/emojis/utils/dedupeEmojisByNameOrId.tsx");

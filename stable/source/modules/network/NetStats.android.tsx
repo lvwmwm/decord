@@ -1,20 +1,20 @@
-// Module ID: 7562
-// Function ID: 7563
+// Module ID: 7733
+// Function ID: 7734
 // Name: NetStats
-// Dependencies: [5, 17, 5358, 7563, 1979, 1074, 3, 1463, 1462, 7577, 1090, 510, 573, 4501, 7564, 7578, 9, 2]
+// Dependencies: [5, 17, 5526, 7734, 2063, 1074, 3, 1464, 1463, 7748, 1091, 510, 573, 4652, 7735, 7749, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 7562 (NetStats)
+// Module 7733 (NetStats)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import configure from "configure" /* 1463 */;
-import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4501 */;
-import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 7577 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import configure from "configure" /* 1464 */;
+import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4652 */;
+import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 7748 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5358 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7563 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import NetworkUtils_mod from "utils/NetworkUtils" /* 1462 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5526 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7734 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import NetworkUtils_mod from "utils/NetworkUtils" /* 1463 */;
 import Dispatcher_mod from "Dispatcher" /* 573 */;
 
 require = fn;
@@ -57,7 +57,7 @@ let closure_9 = new LoggerDefault("NetStats");
 let closure_10 = { signalStrengthLevel: null, isNetworkRoaming: false, cellularReceiveBytes: 0, cellularSendBytes: 0, totalReceiveBytes: 0, totalSendBytes: 0, uidReceiveBytes: 0, uidSendBytes: 0, socketBytesReceived: 0, otaBytesReceived: 0, otaNumRequests: 0, xhrBytesReceived: 0, xhrNumRequests: 0, frescoBytesReceived: 0, frescoNumRequests: 0, downloadBytesReceived: 0, downloadNumRequests: 0, mediaPlayerBytesReceived: 0 };
 let c11 = null;
 const tmp3 = new LoggerDefault("NetStats");
-let global = { type: fn(1463).NetInfoStateType.unknown, effectiveSpeed: null, serviceProvider: null };
+let global = { type: fn(1464).NetInfoStateType.unknown, effectiveSpeed: null, serviceProvider: null };
 global = null;
 let closure_14 = "active" === AppState.currentState;
 let closure_15 = 0;

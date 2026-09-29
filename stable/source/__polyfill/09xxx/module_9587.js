@@ -1,9 +1,9 @@
 // Module ID: 9587
 // Function ID: 9588
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 9587
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_console/images", width: 32, height: 32, scales: [2, 3], hash: "238a115f1ad03e07bad0181bb5c110d4", name: "ic_playstation_device_ps5_32px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d6a8eeb03988caf260d6fea57b710519", name: "ArrowSmallLeftIcon", type: "png" });

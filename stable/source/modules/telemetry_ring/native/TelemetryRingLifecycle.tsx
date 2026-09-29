@@ -1,16 +1,16 @@
-// Module ID: 1233
-// Function ID: 1234
+// Module ID: 1234
+// Function ID: 1235
 // Name: telemetry_ring/TelemetryRingLifecycle
-// Dependencies: [1234, 1371, 1895, 1074, 1898, 1899, 1357, 573, 1903, 2]
+// Dependencies: [1235, 1372, 1979, 1074, 1982, 1983, 1358, 573, 1987, 2]
 
-// Module 1233 (telemetry_ring/TelemetryRingLifecycle)
+// Module 1234 (telemetry_ring/TelemetryRingLifecycle)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1357 */;
-import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1899 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
-import UserStore from "UserStore" /* 1371 */;
-import AppStateStore from "AppStateStore" /* 1895 */;
-import LifecycleManager from "LifecycleManager" /* 1898 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
+import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1983 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+import UserStore from "UserStore" /* 1372 */;
+import AppStateStore from "AppStateStore" /* 1979 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 const AppStates = fn(1074).AppStates;
 class TelemetryRingLifecycleImpl extends tmp2 {
@@ -23,9 +23,9 @@ class TelemetryRingLifecycleImpl extends tmp2 {
       const result = applyArgumentsResult._updateZoomedInExport();
     };
     applyArgumentsResult._handleLogout = function _handleLogout() {
-      applyArgumentsResult(1903).clear();
-      const obj = applyArgumentsResult(1903);
-      applyArgumentsResult(1899).reset();
+      applyArgumentsResult(1987).clear();
+      const obj = applyArgumentsResult(1987);
+      applyArgumentsResult(1983).reset();
     };
     return applyArgumentsResult;
   }
@@ -39,11 +39,11 @@ prototype["_updateZoomedInExport"] = function _updateZoomedInExport() {
   }
   const result = ProcessUtilsDefault.setShouldCollectHermesInstrumentedStats(shouldRunResult);
   if (state === AppStates.ACTIVE) {
-    tmp6(1899).start();
-    const tmp6Result = tmp6(1899);
+    tmp6(1983).start();
+    const tmp6Result = tmp6(1983);
   } else {
-    tmp6(1899).stop();
-    const tmp6Result2 = tmp6(1899);
+    tmp6(1983).stop();
+    const tmp6Result2 = tmp6(1983);
   }
 };
 prototype["_initialize"] = function _initialize() {
@@ -58,9 +58,9 @@ prototype["_initialize"] = function _initialize() {
       ApexExperimentStore.removeChangeListener(self._handleEligibilityChange);
     };
     const obj = self(573);
-    self(1899).initialize();
+    self(1983).initialize();
     const result = self._updateZoomedInExport();
-    const obj2 = self(1899);
+    const obj2 = self(1983);
   }
 };
 prototype["_terminate"] = function _terminate() {

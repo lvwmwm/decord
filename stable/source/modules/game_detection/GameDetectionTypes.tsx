@@ -1,12 +1,12 @@
-// Module ID: 1934
-// Function ID: 1935
+// Module ID: 2018
+// Function ID: 2019
 // Name: GameDetectionTypes
-// Dependencies: [1386, 1918, 2]
+// Dependencies: [1387, 2002, 2]
 
-// Module 1934 (GameDetectionTypes)
-import Record from "Record" /* 1386 */;
+// Module 2018 (GameDetectionTypes)
+import Record from "Record" /* 1387 */;
 
-const createExecutable = fn(1918).createExecutable;
+const createExecutable = fn(2002).createExecutable;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_detection/GameDetectionTypes.tsx");
 class DetectableGameRecord extends tmp2 {

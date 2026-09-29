@@ -1,13 +1,13 @@
-// Module ID: 10232
-// Function ID: 10233
+// Module ID: 10399
+// Function ID: 10400
 // Name: InAppMessageSoundsStore
-// Dependencies: [510, 1242, 4259, 2]
+// Dependencies: [510, 1243, 4411, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10232 (InAppMessageSoundsStore)
+// Module 10399 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
-import _mod4259 from "module_4259" /* 4259 */;
-import identity from "module_1242" /* 1242 */;
+import _mod4411 from "module_4411" /* 4411 */;
+import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
@@ -30,5 +30,5 @@ export const setInAppMessageSoundsEnabled = function setInAppMessageSoundsEnable
   closure_3.setState({ isEnabled });
 };
 export const useInAppMessageSoundsEnabled = function useInAppMessageSoundsEnabled() {
-  return closure_3((isEnabled) => isEnabled.isEnabled, _mod4259.shallow);
+  return closure_3((isEnabled) => isEnabled.isEnabled, _mod4411.shallow);
 };

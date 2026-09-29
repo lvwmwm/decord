@@ -1,9 +1,9 @@
 // Module ID: 16642
 // Function ID: 16643
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 16642
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 84.5, height: 90.5, scales: [2, 3], hash: "e0ca5aec7f428c808429bc2700a4d1c2", name: "money_birb_placeholder_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/community", width: 16, height: 16, scales: [1, 2, 3], hash: "d5f86d80f0a1d11d99b6b752d01d2cf8", name: "ic-application-rejected", type: "png" });

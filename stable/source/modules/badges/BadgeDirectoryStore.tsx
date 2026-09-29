@@ -1,18 +1,18 @@
-// Module ID: 8309
-// Function ID: 8310
+// Module ID: 8493
+// Function ID: 8494
 // Name: BadgeDirectoryStore
-// Dependencies: [1371, 1090, 1437, 8310, 559, 8314, 504, 573, 2]
+// Dependencies: [1372, 1091, 1438, 8494, 559, 8498, 504, 573, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8309 (BadgeDirectoryStore)
+// Module 8493 (BadgeDirectoryStore)
 import initializeDefault from "initialize" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import privDefault from "priv" /* 1437 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8310 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8314 */;
-import UserStore from "UserStore" /* 1371 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import privDefault from "priv" /* 1438 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8494 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8498 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const HOUR = DurationsDefault.Millis.HOUR;

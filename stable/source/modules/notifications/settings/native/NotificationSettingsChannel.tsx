@@ -1,18 +1,18 @@
-// Module ID: 10276
-// Function ID: 10277
+// Module ID: 10442
+// Function ID: 10443
 // Name: NotificationSettingsChannel
-// Dependencies: [19, 17, 4817, 21, 4636, 576, 10277, 1114, 4789, 1483, 5705, 7222, 7217, 504, 8716, 10279, 10280, 10284, 10291, 10297, 5056, 2]
+// Dependencies: [19, 17, 4969, 21, 4788, 576, 10443, 1115, 4941, 1484, 5873, 7396, 7391, 504, 8903, 10445, 10446, 10452, 10459, 10465, 5218, 2]
 // Exports: default
 
-// Module 10276 (NotificationSettingsChannel)
+// Module 10442 (NotificationSettingsChannel)
 import nativeDefault from "native" /* 576 */;
-import useChannelNameDefault from "useChannelName" /* 4789 */;
-import NavigatorHeader from "NavigatorHeader" /* 5705 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7217 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7222 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10277 */;
+import useChannelNameDefault from "useChannelName" /* 4941 */;
+import NavigatorHeader from "NavigatorHeader" /* 5873 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7391 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10443 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 const require = globalThis.__r;
 
@@ -20,7 +20,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { screenContainer: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -60,19 +60,19 @@ export default function NotificationSettingsChannel(channel) {
   let muted = stateFromStoresObject.muted;
   if (muted) {
     const obj5 = { style: { marginBottom: 16 }, title: null, subtitle: null, onPressUnmute: null };
-    const intl2 = tmp(1114).intl;
-    obj5.title = intl2.string(tmp(1114).t["6MCxAy"]);
-    obj5.subtitle = tmp(10279).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
+    const intl2 = tmp(1115).intl;
+    obj5.title = intl2.string(tmp(1115).t["6MCxAy"]);
+    obj5.subtitle = tmp(10445).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
     obj5.onPressUnmute = callback1;
-    muted = closure_6(tmp(10279).NotificationSettingsMuteBanner, obj5);
-    const tmpResult = tmp(10279);
+    muted = closure_6(tmp(10445).NotificationSettingsMuteBanner, obj5);
+    const tmpResult = tmp(10445);
   }
   const items3 = [muted, closure_6(require("NotificationSettingsPresets").NotificationSettingsChannelPresets, { channel: channel.channel }), closure_6(require("NotificationSettingsMessageNotification").NotificationSettingsChannelMessageNotification, { style: { marginTop: 24 }, channel: channel.channel }), closure_6(require("NotificationSettingsMessageUnread").NotificationSettingsChannelMessageUnread, { style: { marginTop: 24 }, channel: channel.channel }), , ];
   channel = channel.channel;
   let isForumLikeChannelResult = channel.isForumLikeChannel();
   if (isForumLikeChannelResult) {
     const obj9 = { style: { marginTop: 24 }, channel: channel.channel };
-    isForumLikeChannelResult = tmp11(tmp(10297).NotificationSettingsChannelPost, obj9);
+    isForumLikeChannelResult = tmp11(tmp(10465).NotificationSettingsChannelPost, obj9);
   }
   items3[4] = isForumLikeChannelResult;
   const inherited = channelPresetInheritance.inherited;
@@ -80,9 +80,9 @@ export default function NotificationSettingsChannel(channel) {
   if (!inherited) {
     const obj10 = { style: { marginTop: 24 }, children: null };
     const obj11 = { variant: "secondary", onPress: callback, text: null };
-    const intl3 = tmp(1114).intl;
-    obj11.text = intl3.string(tmp(1114).t["3PBFN6"]);
-    obj10.children = tmp11(tmp(5056).Button, obj11);
+    const intl3 = tmp(1115).intl;
+    obj11.text = intl3.string(tmp(1115).t["3PBFN6"]);
+    obj10.children = tmp11(tmp(5218).Button, obj11);
     tmp11Result = tmp11(View, obj10);
   }
   items3[5] = tmp11Result;

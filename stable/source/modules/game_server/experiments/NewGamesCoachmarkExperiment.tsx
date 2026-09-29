@@ -1,11 +1,11 @@
-// Module ID: 12641
-// Function ID: 12642
+// Module ID: 12791
+// Function ID: 12792
 // Name: NewGamesCoachmarkExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: useIsNewGamesCoachmarkEnabled
 
-// Module 12641 (NewGamesCoachmarkExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 12791 (NewGamesCoachmarkExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-new-games-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: null };

@@ -1,14 +1,14 @@
-// Module ID: 16141
-// Function ID: 16142
+// Module ID: 16386
+// Function ID: 16387
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 1957, 1074, 4629, 11002, 4649, 4334, 1114, 12398, 7559, 9171, 2]
+// Dependencies: [5, 2041, 1074, 4781, 11161, 4801, 4485, 1115, 12547, 7730, 10035, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 16141 (AddFriendsScreenUtils)
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9171 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11002 */;
+// Module 16386 (AddFriendsScreenUtils)
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10035 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11161 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = fn;
 let closure_7 = async function _sendWave(arg0, value) {
@@ -143,7 +143,7 @@ let closure_7 = async function _sendWave(arg0, value) {
   }
 };
 const AnalyticsSections = fn(1074).AnalyticsSections;
-const MessageSendLocation = fn(4629).MessageSendLocation;
+const MessageSendLocation = fn(4781).MessageSendLocation;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/AddFriendsScreenUtils.tsx");
 

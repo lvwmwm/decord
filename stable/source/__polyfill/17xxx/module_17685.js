@@ -1,9 +1,9 @@
 // Module ID: 17685
 // Function ID: 17686
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 17685
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 181, height: 141, scales: [2, 3], hash: "ed03b4a3566d0ff2258e5577eb7c05bd", name: "empty_server_settings_emoji_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "2b649615a70a14244330a855517175bb", name: "report", type: "png" });

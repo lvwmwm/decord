@@ -1,12 +1,12 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 11216
+// Function ID: 11217
 // Name: maybeShowDiscardChangesAlert
-// Dependencies: [4981, 1114, 2]
+// Dependencies: [5141, 1115, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 11058 (maybeShowDiscardChangesAlert)
-import util from "util" /* 1114 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4981 */;
+// Module 11216 (maybeShowDiscardChangesAlert)
+import util from "util" /* 1115 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
     if (onHasEdits != null) {
       onHasEdits();
     }
-    const obj2 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null };
+    const obj2 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, isDismissable: false };
     const intl = util.intl;
     obj2.title = intl.string(util.t.pvRCSu);
     const intl2 = util.intl;
@@ -36,8 +36,8 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
     obj2.onCancel = function onCancel() {
       onConfirm(dependencyMap[0]).close();
     };
-    let showResult = onConfirm(4981).show(obj2);
-    const obj = onConfirm(4981);
+    let showResult = onConfirm(5141).show(obj2);
+    const obj = onConfirm(5141);
   } else {
     showResult = onConfirm();
   }
@@ -45,7 +45,7 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
 };
 export const showDiscardChangesAlert = function showDiscardChangesAlert(arg0) {
   ({ onConfirm, onCancel } = arg0);
-  const obj2 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null };
+  const obj2 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, isDismissable: false };
   const intl = util.intl;
   obj2.title = intl.string(util.t.pvRCSu);
   const intl2 = util.intl;

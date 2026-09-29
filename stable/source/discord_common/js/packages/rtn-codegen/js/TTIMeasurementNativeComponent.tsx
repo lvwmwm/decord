@@ -1,9 +1,9 @@
-// Module ID: 12032
-// Function ID: 12033
+// Module ID: 12182
+// Function ID: 12183
 // Name: TTIMeasurementNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 12032 (TTIMeasurementNativeComponent)
+// Module 12182 (TTIMeasurementNativeComponent)
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

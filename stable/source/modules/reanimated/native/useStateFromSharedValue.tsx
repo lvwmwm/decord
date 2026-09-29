@@ -1,11 +1,11 @@
-// Module ID: 8385
-// Function ID: 8386
+// Module ID: 8570
+// Function ID: 8571
 // Name: useStateFromSharedValue
-// Dependencies: [32, 19, 1247, 4373, 2]
+// Dependencies: [32, 19, 1248, 4524, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 8385 (useStateFromSharedValue)
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+// Module 8570 (useStateFromSharedValue)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -32,7 +32,7 @@ export default function useStateFromSharedValue(arg0) {
         listeners: set,
         valueListener(arg0) {
             closure_0 = arg0;
-            set(1247).batchUpdates(() => {
+            set(1248).batchUpdates(() => {
               for (const item10005 of set) {
                 let item10005Result = item10005(closure_0);
                 continue;
@@ -52,7 +52,7 @@ export default function useStateFromSharedValue(arg0) {
       const result = map.set(tmp, value);
       let fn = function n(arg0, arg1, addListener) {
         closure_0 = arg1;
-        addListener.addListener(arg0, (arg0) => set(4373).runOnJS(closure_0)(arg0));
+        addListener.addListener(arg0, (arg0) => set(4524).runOnJS(closure_0)(arg0));
       };
       const obj4 = { runOnJS: activeIndex(callback[3]).runOnJS };
       fn.__closure = obj4;
@@ -99,7 +99,7 @@ export const useDerivedStateFromSharedValue = function useDerivedStateFromShared
         listeners: set,
         valueListener(arg0) {
             closure_0 = arg0;
-            set(1247).batchUpdates(() => {
+            set(1248).batchUpdates(() => {
               for (const item10005 of set) {
                 let item10005Result = item10005(closure_0);
                 continue;
@@ -119,7 +119,7 @@ export const useDerivedStateFromSharedValue = function useDerivedStateFromShared
       const result = map.set(tmp, value);
       let fn = function n(arg0, arg1, addListener) {
         closure_0 = arg1;
-        addListener.addListener(arg0, (arg0) => set(4373).runOnJS(closure_0)(arg0));
+        addListener.addListener(arg0, (arg0) => set(4524).runOnJS(closure_0)(arg0));
       };
       const obj4 = { runOnJS: activeIndex(callback[3]).runOnJS };
       fn.__closure = obj4;

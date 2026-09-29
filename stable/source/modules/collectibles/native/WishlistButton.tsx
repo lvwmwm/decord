@@ -1,23 +1,23 @@
-// Module ID: 8964
-// Function ID: 8965
+// Module ID: 9150
+// Function ID: 9151
 // Name: WishlistButton
-// Dependencies: [5, 32, 19, 17, 502, 1371, 1076, 1085, 21, 4373, 5061, 4636, 576, 4347, 6721, 4488, 4357, 4335, 1114, 4637, 5055, 5059, 8965, 8900, 504, 8896, 8956, 8967, 8895, 2]
+// Dependencies: [5, 32, 19, 17, 502, 1372, 1076, 1085, 21, 4524, 5223, 4788, 576, 4498, 6894, 4639, 4508, 4486, 1115, 4789, 5217, 5221, 9151, 9086, 504, 9082, 9142, 9153, 9081, 2]
 // Exports: default
 
-// Module 8964 (WishlistButton)
+// Module 9150 (WishlistButton)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
-import native from "native" /* 4347 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import spring from "spring" /* 5055 */;
-import springPresets from "springPresets" /* 5059 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8895 */;
+import util from "util" /* 1115 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4486 */;
+import native from "native" /* 4498 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import spring from "spring" /* 5217 */;
+import springPresets from "springPresets" /* 5221 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 9081 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 class WishlistButtonBase {
@@ -390,11 +390,11 @@ const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 let obj = { duration: 400, easing: null };
-const Easing = fn(4373).Easing;
+const Easing = fn(4524).Easing;
 obj.easing = Easing.bezier(0.67, 0, 0.26, 1);
-let obj2 = { sm: fn(5061).SMALL_BUTTON_HEIGHT, md: fn(5061).MEDIUM_BUTTON_HEIGHT };
+let obj2 = { sm: fn(5223).SMALL_BUTTON_HEIGHT, md: fn(5223).MEDIUM_BUTTON_HEIGHT };
 let value = { sm: "sm", md: "md" };
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_17 = createStyles.createStyles((arg0) => {
   obj = { button: null, light: null, lightPressed: null, dark: null, darkPressed: null, midnight: null, disabled: null, iconContainer: null, animationFill: null };
   const size = { width: obj2[arg0], height: obj2[arg0], display: "flex", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT };

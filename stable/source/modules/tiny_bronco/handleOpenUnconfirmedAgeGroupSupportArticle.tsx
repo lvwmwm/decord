@@ -1,19 +1,28 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 15031
+// Function ID: 15032
 // Name: handleOpenUnconfirmedAgeGroupSupportArticle
-// Dependencies: [14770, 8529, 2024, 2]
+// Dependencies: [14015, 10071, 8714, 2108, 2]
 // Exports: handleOpenUnconfirmedAgeGroupSupportArticle
 
-// Module 14841 (handleOpenUnconfirmedAgeGroupSupportArticle)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8529 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 14770 */;
-import size from "module_2" /* 2 */;
+// Module 15031 (handleOpenUnconfirmedAgeGroupSupportArticle)
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8714 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 14015 */;
 
-const TINY_BRONCO_ARTICLE_ID = TinyBroncoConstants.TINY_BRONCO_ARTICLE_ID;
+const TinyBroncoConstants = fn(10071);
+({ TINY_BRONCO_AGE_GROUP_SUPPORT_ARTICLE_IDS_BY_COUNTRY: c3, TINY_BRONCO_DEFAULT_ARTICLE_ID: closure_4 } = TinyBroncoConstants);
+const size = fn(2);
 const result = size.fileFinishedImporting("modules/tiny_bronco/handleOpenUnconfirmedAgeGroupSupportArticle.tsx");
 
 export const handleOpenUnconfirmedAgeGroupSupportArticle = function handleOpenUnconfirmedAgeGroupSupportArticle() {
+  const countryCode = LocationMetadataStore.getCountryCode();
+  let tmp2;
+  if (null != countryCode) {
+    tmp2 = React3[countryCode.alpha2];
+  }
   const obj = AgeVerificationActionCreatorsDefault;
-  obj.openUrl(HelpdeskUtilsDefault.getArticleURL(TINY_BRONCO_ARTICLE_ID));
+  if (tmp2 == null) {
+    tmp2 = React4;
+  }
+  obj.openUrl(HelpdeskUtilsDefault.getArticleURL(tmp2));
 };

@@ -1,19 +1,19 @@
-// Module ID: 7370
-// Function ID: 7371
+// Module ID: 7541
+// Function ID: 7542
 // Name: GuildOfficialMessageUtils
-// Dependencies: [1979, 4275, 4629, 1074, 1091, 672, 4486, 4488, 7371, 504, 7372, 7373, 2]
+// Dependencies: [2063, 4427, 4781, 1074, 1092, 672, 4637, 4639, 7542, 504, 7543, 7544, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
 
-// Module 7370 (GuildOfficialMessageUtils)
+// Module 7541 (GuildOfficialMessageUtils)
 import _modDef672 from "module_672" /* 672 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
-import ColorUtils from "ColorUtils" /* 4486 */;
-import shared from "shared" /* 4488 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7371 */;
-import ThreadHooks from "ThreadHooks" /* 7372 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7373 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
+import ColorUtils from "ColorUtils" /* 4637 */;
+import shared from "shared" /* 4639 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7542 */;
+import ThreadHooks from "ThreadHooks" /* 7543 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7544 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 
@@ -49,7 +49,7 @@ function useCanManageGuildOfficialMessages(arg0, arg1, location) {
   }
   return enabled;
 }
-let closure_5 = fn(4629).GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
+let closure_5 = fn(4781).GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
 const Constants = fn(1074);
 ({ ChannelTypes: metroRequire, GuildFeatures: closure_7, MessageFlags: closure_8, Permissions: closure_9 } = Constants);
 const size = fn(2);

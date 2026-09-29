@@ -1,13 +1,13 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 14488
+// Function ID: 14489
 // Name: AvatarDuoPile
-// Dependencies: [19, 21, 11138, 12752, 8940, 12, 13162, 2]
+// Dependencies: [19, 21, 11298, 12901, 9126, 12, 13350, 2]
 // Exports: AvatarDuoPile
 
-// Module 14266 (AvatarDuoPile)
-import ClipView from "ClipView" /* 8940 */;
-import Pile from "Pile" /* 11138 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13162 */;
+// Module 14488 (AvatarDuoPile)
+import ClipView from "ClipView" /* 9126 */;
+import Pile from "Pile" /* 11298 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13350 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,14 +21,14 @@ export const AvatarDuoPile = function AvatarDuoPile(size) {
   if ("aria-label" in merged) {
     let prop = merged["aria-label"];
   } else {
-    prop = tmp3(12752).getListSummaryLabel(merged.names);
-    const tmp3Result = tmp3(12752);
+    prop = tmp3(12901).getListSummaryLabel(merged.names);
+    const tmp3Result = tmp3(12901);
   }
   const obj = { "aria-label": prop, shape: ClipView.CutoutShape.Circle, size: null, gap: 4, depthX: 0.5, depthY: 0.5, children: null };
   if (tmp3Result2.isArray(size)) {
     let mapped = size.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
   } else {
-    mapped = tmp3(13162).AVATAR_SIZE_MAP[size];
+    mapped = tmp3(13350).AVATAR_SIZE_MAP[size];
   }
   obj.size = mapped;
   obj.children = size.children;

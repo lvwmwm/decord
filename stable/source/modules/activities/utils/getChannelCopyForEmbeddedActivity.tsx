@@ -1,11 +1,11 @@
-// Module ID: 11022
-// Function ID: 11023
+// Module ID: 11181
+// Function ID: 11182
 // Name: getChannelCopyForEmbeddedActivity
-// Dependencies: [1114, 2]
+// Dependencies: [1115, 2]
 // Exports: default
 
-// Module 11022 (getChannelCopyForEmbeddedActivity)
-import util from "util" /* 1114 */;
+// Module 11181 (getChannelCopyForEmbeddedActivity)
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getChannelCopyForEmbeddedActivity.tsx");

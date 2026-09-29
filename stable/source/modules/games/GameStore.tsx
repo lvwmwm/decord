@@ -1,13 +1,13 @@
-// Module ID: 1916
-// Function ID: 1917
+// Module ID: 2000
+// Function ID: 2001
 // Name: GameStore
-// Dependencies: [1917, 504, 1365, 573, 2]
+// Dependencies: [2001, 504, 1366, 573, 2]
 
-// Module 1916 (GameStore)
+// Module 2000 (GameStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import URLUtilsDefault from "URLUtils" /* 1365 */;
-import GameRecord from "GameRecord" /* 1917 */;
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import GameRecord from "GameRecord" /* 2001 */;
 
 function createGamesFromMessage(referenced_message) {
   closure_0 = false;
@@ -293,6 +293,58 @@ const gameStore = new GameStore(DispatcherDefault, {
     });
   },
   SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
+  INTELLIGENCE_SEARCH_FETCH_SUCCESS: function handleIntelligenceSearchFetchSuccess(messages) {
+    messages = messages.messages;
+    return messages.reduce((acc, mention_games) => {
+      closure_0 = false;
+      mention_games = mention_games.mention_games;
+      if (mention_games != null) {
+        const item = mention_games.forEach((game_flags) => {
+          if (tmp) {
+            if (!map.has(game_flags.id)) {
+              const tmp8 = new closure_2_2(game_flags);
+              const result = map.set(game_flags.id, tmp8);
+              c0 = true;
+              set2.delete(game_flags.id);
+              set.delete(game_flags.id);
+            }
+          }
+        });
+      }
+      if (null != mention_games.referenced_message) {
+        const referenced_message = mention_games.referenced_message;
+        closure_129_0 = false;
+        const mention_games1 = referenced_message.mention_games;
+        if (mention_games1 != null) {
+          const item1 = mention_games1.forEach((game_flags) => {
+            if (tmp) {
+              if (!map.has(game_flags.id)) {
+                const tmp8 = new closure_2_2(game_flags);
+                const result = map.set(game_flags.id, tmp8);
+                c0 = true;
+                set2.delete(game_flags.id);
+                set.delete(game_flags.id);
+              }
+            }
+          });
+        }
+        if (null != referenced_message.referenced_message) {
+          closure_129_0 = closure_7(referenced_message.referenced_message) || closure_129_0;
+          const tmp4 = closure_7(referenced_message.referenced_message) || closure_129_0;
+        }
+        let tmp5 = closure_129_0;
+        if (!closure_129_0) {
+          tmp5 = closure_0;
+        }
+        closure_0 = tmp5;
+      }
+      let tmp6 = closure_0;
+      if (!closure_0) {
+        tmp6 = acc;
+      }
+      return tmp6;
+    }, false);
+  },
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,
   LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,

@@ -1,13 +1,13 @@
-// Module ID: 6234
-// Function ID: 6235
+// Module ID: 6404
+// Function ID: 6405
 // Name: GiftCardFan3dIllustration
-// Dependencies: [21, 5668, 6235, 2]
+// Dependencies: [21, 5836, 6405, 2]
 // Exports: GiftCardFan3dIllustration
 
-// Module 6234 (GiftCardFan3dIllustration)
+// Module 6404 (GiftCardFan3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6235 from "module_6235" /* 6235 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6405 from "module_6405" /* 6405 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GiftCardFan3dIllustration = function GiftCardFan3dIllustration(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6235 };
+  const obj2 = { uri: _modDef6405 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

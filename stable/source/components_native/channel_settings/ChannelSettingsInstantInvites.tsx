@@ -1,31 +1,31 @@
-// Module ID: 16934
-// Function ID: 16935
+// Module ID: 17291
+// Function ID: 17292
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 8749, 1957, 1074, 21, 4636, 576, 1611, 504, 8748, 11067, 1176, 11084, 11085, 1114, 7142, 16935, 7158, 2]
+// Dependencies: [32, 19, 17, 8936, 2041, 1074, 21, 4788, 576, 1612, 504, 8935, 11225, 1177, 11243, 11244, 1115, 7316, 17292, 7332, 2]
 // Exports: default
 
-// Module 16934 (ChannelSettingsInstantInvites)
+// Module 17291 (ChannelSettingsInstantInvites)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import InstantInvite from "InstantInvite" /* 11067 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import InstantInvite from "InstantInvite" /* 11225 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8749 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8936 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = globalThis.__r;
 const InstantInviteDefault = InstantInvite;
 
-const FastestListDefault = tmp2(7158);
-const _modDef11084 = tmp2(11084);
-const _modDef11085 = tmp2(11085);
-const InstantInviteSelfMeasurerDefault = tmp2(16935);
+const FastestListDefault = tmp2(7332);
+const _modDef11243 = tmp2(11243);
+const _modDef11244 = tmp2(11244);
+const InstantInviteSelfMeasurerDefault = tmp2(17292);
 require = fn;
 const View = fn(17).View;
 const ChannelSettingsSections = fn(1074).ChannelSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 }, gap: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj2.gap = { height: nativeDefault.space.PX_16 };
@@ -109,12 +109,12 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }, items7);
   if (!loading) {
     if (0 === memo1.length) {
-      const obj5 = { lightSource: _modDef11084, darkSource: _modDef11085, title: null, body: null };
-      const intl = tmpResult(1114).intl;
-      obj5.title = intl.string(tmpResult(1114).t["+nLJkZ"]);
-      const intl2 = tmpResult(1114).intl;
-      obj5.body = intl2.string(tmpResult(1114).t.F53CAc);
-      return closure_9(tmpResult(1176).EmptyState, obj5);
+      const obj5 = { lightSource: _modDef11243, darkSource: _modDef11244, title: null, body: null };
+      const intl = tmpResult(1115).intl;
+      obj5.title = intl.string(tmpResult(1115).t["+nLJkZ"]);
+      const intl2 = tmpResult(1115).intl;
+      obj5.body = intl2.string(tmpResult(1115).t.F53CAc);
+      return closure_9(tmpResult(1177).EmptyState, obj5);
     }
   }
   if (!loading) {
@@ -127,7 +127,7 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }
   const obj8 = { style: tmp.content, children: null };
   tmp = closure_9;
-  const items8 = [closure_9(tmpResult(7142).SceneLoadingIndicator, {}), ];
+  const items8 = [closure_9(tmpResult(7316).SceneLoadingIndicator, {}), ];
   tmpResult = null;
   if (memo1.length > 0) {
     tmp2 = InstantInviteSelfMeasurerDefault;

@@ -1,11 +1,11 @@
-// Module ID: 1483
-// Function ID: 1484
+// Module ID: 1484
+// Function ID: 1485
 // Name: useNavigation
-// Dependencies: [1484, 2]
+// Dependencies: [1485, 2]
 // Exports: useNativeStackNavigation, useNavigation, useStackNavigation, useTabNavigation
 
-// Module 1483 (useNavigation)
-import Link from "Link" /* 1484 */;
+// Module 1484 (useNavigation)
+import Link from "Link" /* 1485 */;
 import size from "module_2" /* 2 */;
 
 function useNavigation() {

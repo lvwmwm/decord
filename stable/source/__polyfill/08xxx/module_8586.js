@@ -1,12 +1,22 @@
 // Module ID: 8586
 // Function ID: 8587
-// Dependencies: [26, 65]
+// Dependencies: [17]
 
 // Module 8586
-import _mod26 from "module_26" /* 26 */;
-import module_65 from "module_65" /* 65 */;
+import get_ActivityIndicator from "module_17" /* 17 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGSvgViewAndroid", validAttributes: { bbWidth: true, bbHeight: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true, color: _mod26.colorAttribute, pointerEvents: true, hasTVPreferredFocus: true, borderBottomColor: _mod26.colorAttribute, nextFocusDown: true, borderRightColor: _mod26.colorAttribute, nextFocusRight: true, borderLeftColor: _mod26.colorAttribute, borderColor: _mod26.colorAttribute, removeClippedSubviews: true, nextFocusForward: true, nextFocusUp: true, accessible: true, borderStartColor: _mod26.colorAttribute, borderEndColor: _mod26.colorAttribute, focusable: true, nativeBackgroundAndroid: true, nativeForegroundAndroid: true, backfaceVisibility: true, borderStyle: true, needsOffscreenAlphaCompositing: true, hitSlop: true, borderTopColor: _mod26.colorAttribute, nextFocusLeft: true, borderBlockColor: _mod26.colorAttribute, borderBlockEndColor: _mod26.colorAttribute, borderBlockStartColor: _mod26.colorAttribute, borderRadius: true, borderTopLeftRadius: true, borderTopRightRadius: true, borderBottomRightRadius: true, borderBottomLeftRadius: true, borderTopStartRadius: true, borderTopEndRadius: true, borderBottomStartRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderEndStartRadius: true, borderStartEndRadius: true, borderStartStartRadius: true } };
+const StyleSheet = get_ActivityIndicator.StyleSheet;
+const obj = { stepNumber: { marginTop: 20, alignItems: "center", position: "absolute" }, sliderMainContainer: { zIndex: 1, width: "100%" }, defaultSlideriOS: { height: 40 }, defaultSlider: {}, stepsIndicator: null, trackMarkContainer: null, thumbImageContainer: null, thumbImage: null, stepIndicatorElement: null, defaultIndicatorMarked: null, defaultIndicatorIdle: null };
+let num = 0;
+if ("ios" === get_ActivityIndicator.Platform.OS) {
+  num = 10;
+}
+obj.stepsIndicator = { flex: 1, flexDirection: "row", justifyContent: "space-between", top: num, zIndex: 2 };
+obj.trackMarkContainer = { alignItems: "center", alignContent: "center", alignSelf: "center", justifyContent: "center", position: "absolute", zIndex: 3 };
+obj.thumbImageContainer = { position: "absolute", zIndex: 3, justifyContent: "center", alignItems: "center", alignContent: "center" };
+obj.thumbImage = { alignContent: "center", alignItems: "center", position: "absolute" };
+obj.stepIndicatorElement = { alignItems: "center", alignContent: "center" };
+obj.defaultIndicatorMarked = { height: 20, width: 5, backgroundColor: "#CCCCCC" };
+obj.defaultIndicatorIdle = { height: 10, width: 2, backgroundColor: "#C0C0C0" };
 
-export default module_65.get("RNSVGSvgViewAndroid", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const styles = StyleSheet.create(obj);

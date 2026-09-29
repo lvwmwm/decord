@@ -1,22 +1,22 @@
-// Module ID: 12429
-// Function ID: 12430
+// Module ID: 12579
+// Function ID: 12580
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4636, 1363, 576, 4488, 7976, 4571, 4632, 1114, 2]
+// Dependencies: [19, 17, 21, 4788, 1364, 576, 4639, 8149, 4722, 4784, 1115, 2]
 // Exports: default
 
-// Module 12429 (NewBadge)
+// Module 12579 (NewBadge)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import useThemeDefault from "useTheme" /* 4571 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7976 */;
+import util from "util" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import useThemeDefault from "useTheme" /* 4722 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8149 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
   let num = 0;
   if (obj.isIOS()) {
@@ -50,7 +50,7 @@ export default function NewBadge() {
     str = "text-brand";
   }
   obj2.color = str;
-  const intl = tmp7(1114).intl;
+  const intl = tmp7(1115).intl;
   obj2.children = intl.string(util.t.y2b7CA);
   obj.children = jsx(Text_Text.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
   return <View style={tmp4.base}>{null}</View>;

@@ -1,87 +1,9 @@
 // Module ID: 5272
 // Function ID: 5273
-// Dependencies: [5266, 5267]
-// Exports: isAVIF, isBMP, isBPG, isCR2, isEXR, isGIF, isHEIC, isICO, isJPEG, isPBM, isPGM, isPNG, isPPM, isPSD, isWEBP
+// Dependencies: [1121]
 
 // Module 5272
-import _mod5266 from "module_5266" /* 5266 */;
-import _mod5267 from "module_5267" /* 5267 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const isAVIF = function isAVIF(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "avif") && _mod5266.isAvifStringIncluded(fileChunk);
-};
-export const isBMP = function isBMP(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "bmp");
-};
-export const isBPG = function isBPG(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "bpg");
-};
-export const isCR2 = function isCR2(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "cr2");
-};
-export const isEXR = function isEXR(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "exr");
-};
-export const isGIF = function isGIF(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "gif");
-};
-export const isHEIC = function isHEIC(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "avif") && _mod5266.isHeicSignatureIncluded(fileChunk);
-};
-export const isICO = function isICO(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ico");
-};
-export const isJPEG = function isJPEG(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "jpeg");
-};
-export const isPBM = function isPBM(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "pbm");
-};
-export const isPGM = function isPGM(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "pgm");
-};
-export const isPNG = function isPNG(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "png");
-};
-export const isPPM = function isPPM(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ppm");
-};
-export const isPSD = function isPSD(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "psd");
-};
-export const isWEBP = function isWEBP(fileChunk) {
-  fileChunk = _mod5266.getFileChunk(fileChunk);
-  const FileTypes = _mod5267.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "webp");
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e06e2e681624b5a052b477a4af8dc512", name: "ThreadLockIcon", type: "png" });

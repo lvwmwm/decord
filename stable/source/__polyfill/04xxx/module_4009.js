@@ -1,125 +1,16 @@
 // Module ID: 4009
 // Function ID: 4010
-// Dependencies: [3987, 3988, 3941, 3726, 3729, 3730]
-// Exports: default
+// Dependencies: [2114]
 
 // Module 4009
-import _mod3730 from "module_3730" /* 3730 */;
-import module_3987_mod from "module_3987" /* 3987 */;
-import module_3988_mod from "module_3988" /* 3988 */;
-import startOfMonth_mod from "startOfMonth" /* 3941 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
-import module_3729_mod from "module_3729" /* 3729 */;
+import module_2114 from "module_2114" /* 2114 */;
 
-let module_3987 = module_3987_mod;
-if (!module_3987) {
-  const obj = { default: module_3987 };
-  let tmp3 = obj;
+if (!module_2114) {
+  const obj2 = { default: module_2114 };
+  let obj = obj2;
 } else {
-  tmp3 = module_3987;
+  obj = module_2114;
 }
-module_3987 = tmp3;
-let module_3988 = module_3988_mod;
-if (!module_3988) {
-  const obj2 = { default: module_3988 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3988;
-}
-module_3988 = tmp5;
-let startOfMonth = startOfMonth_mod;
-if (!startOfMonth) {
-  const obj3 = { default: startOfMonth };
-  let tmp7 = obj3;
-} else {
-  tmp7 = startOfMonth;
-}
-startOfMonth = tmp7;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
-  let tmp9 = obj4;
-} else {
-  tmp9 = requiredArgs;
-}
-requiredArgs = tmp9;
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj5 = { default: module_3729 };
-  let tmp11 = obj5;
-} else {
-  tmp11 = module_3729;
-}
-module_3729 = tmp11;
 
-export default function getWeekOfMonth(arg0, weekStartsOn) {
-  requiredArgs.default(1, arguments);
-  const defaultOptions = _mod3730.getDefaultOptions();
-  weekStartsOn = undefined;
-  if (null != weekStartsOn) {
-    weekStartsOn = weekStartsOn.weekStartsOn;
-  }
-  if (null === weekStartsOn) {
-    let weekStartsOn1;
-    if (null != weekStartsOn) {
-      locale = weekStartsOn.locale;
-      if (null !== locale) {
-        if (undefined !== locale) {
-          const options = locale.options;
-          if (null !== options) {
-            if (undefined !== options) {
-              weekStartsOn1 = options.weekStartsOn;
-            }
-          }
-        }
-      }
-    }
-    weekStartsOn = weekStartsOn1;
-  }
-  if (null === weekStartsOn) {
-    weekStartsOn = defaultOptions.weekStartsOn;
-  }
-  if (null === weekStartsOn) {
-    const locale2 = defaultOptions.locale;
-    let weekStartsOn2;
-    if (null !== locale2) {
-      if (undefined !== locale2) {
-        const options2 = locale2.options;
-        if (null !== options2) {
-          if (undefined !== options2) {
-            weekStartsOn2 = options2.weekStartsOn;
-          }
-        }
-      }
-    }
-    weekStartsOn = weekStartsOn2;
-  }
-  let num = 0;
-  if (null !== weekStartsOn) {
-    num = 0;
-    if (undefined !== weekStartsOn) {
-      num = weekStartsOn;
-    }
-  }
-  const defaultResult1 = module_3729.default(num);
-  if (defaultResult1 >= 0) {
-    if (defaultResult1 <= 6) {
-      const defaultResult2 = module_3987.default(arg0);
-      const _isNaN = isNaN;
-      if (isNaN(defaultResult2)) {
-        return NaN;
-      } else {
-        const diff = defaultResult1 - module_3988.default(startOfMonth.default(arg0));
-        let sum = diff;
-        if (diff <= 0) {
-          sum = diff + 7;
-        }
-        const _Math = Math;
-        return Math.ceil((defaultResult2 - sum) / 7) + 1;
-      }
-    }
-  }
-  const rangeError = new RangeError("weekStartsOn must be between 0 and 6 inclusively");
-  throw rangeError;
-};
+export default { date: obj.default({ formats: { full: "\u0E27\u0E31\u0E19EEEE\u0E17\u0E35\u0E48 do MMMM y", long: "do MMMM y", medium: "d MMM y", short: "dd/MM/yyyy" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "H:mm:ss \u0E19. zzzz", long: "H:mm:ss \u0E19. z", medium: "H:mm:ss \u0E19.", short: "H:mm \u0E19." }, defaultWidth: "medium" }), dateTime: obj.default({ formats: { full: "{{date}} '\u0E40\u0E27\u0E25\u0E32' {{time}}", long: "{{date}} '\u0E40\u0E27\u0E25\u0E32' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
 export default exports.default;

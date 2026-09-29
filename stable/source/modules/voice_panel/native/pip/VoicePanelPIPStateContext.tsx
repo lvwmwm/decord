@@ -1,14 +1,17 @@
-// Module ID: 17203
-// Function ID: 17204
+// Module ID: 17561
+// Function ID: 17562
 // Name: VoicePanelPIPStateContext
-// Dependencies: [19, 2]
+// Dependencies: [19, 7351, 2]
 // Exports: usePIPState
 
-// Module 17203 (VoicePanelPIPStateContext)
+// Module 17561 (VoicePanelPIPStateContext)
 import noop from "module_19" /* 19 */;
 
-const context = noop.createContext({ id: "sa", mode: "isArray", width: false, height: "Typing Indicator: always show the chat typing indicator as if you were typing", containerHeight: null, showSecondaryPIP: "\u{1F5C4}\uFE0F" });
-const size = fn(2);
+let size = { id: "sa", mode: "isArray", width: false, height: null, containerHeight: "transparent", showSecondaryPIP: null, scale: null };
+const ReanimatedHelperTypes = fn(7351);
+size.scale = ReanimatedHelperTypes.createFakeSharedValue(1);
+const context = noop.createContext(size);
+size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPStateContext.tsx");
 
 export const VoicePanelPIPStateContext = context;

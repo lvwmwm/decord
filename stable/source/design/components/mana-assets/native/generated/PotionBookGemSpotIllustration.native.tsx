@@ -1,13 +1,13 @@
-// Module ID: 6452
-// Function ID: 6453
+// Module ID: 6624
+// Function ID: 6625
 // Name: PotionBookGemSpotIllustration
-// Dependencies: [21, 5668, 6453, 2]
+// Dependencies: [21, 5836, 6625, 2]
 // Exports: PotionBookGemSpotIllustration
 
-// Module 6452 (PotionBookGemSpotIllustration)
+// Module 6624 (PotionBookGemSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6453 from "module_6453" /* 6453 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6625 from "module_6625" /* 6625 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const PotionBookGemSpotIllustration = function PotionBookGemSpotIllustrat
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6453 };
+  const obj2 = { uri: _modDef6625 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

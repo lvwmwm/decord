@@ -1,9 +1,9 @@
-// Module ID: 1436
-// Function ID: 1437
+// Module ID: 1437
+// Function ID: 1438
 // Name: apex/ApexTypes
-// Dependencies: [2, 1237]
+// Dependencies: [2, 1238]
 
-// Module 1436 (apex/ApexTypes)
+// Module 1437 (apex/ApexTypes)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

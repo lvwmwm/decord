@@ -1,13 +1,13 @@
-// Module ID: 6478
-// Function ID: 6479
+// Module ID: 6650
+// Function ID: 6651
 // Name: QrSuccessSpotIllustration
-// Dependencies: [21, 5668, 6479, 2]
+// Dependencies: [21, 5836, 6651, 2]
 // Exports: QrSuccessSpotIllustration
 
-// Module 6478 (QrSuccessSpotIllustration)
+// Module 6650 (QrSuccessSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6479 from "module_6479" /* 6479 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6651 from "module_6651" /* 6651 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const QrSuccessSpotIllustration = function QrSuccessSpotIllustration(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6479 };
+  const obj2 = { uri: _modDef6651 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

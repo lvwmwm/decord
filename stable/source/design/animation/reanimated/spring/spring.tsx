@@ -1,13 +1,13 @@
-// Module ID: 5055
-// Function ID: 5056
+// Module ID: 5217
+// Function ID: 5218
 // Name: spring
-// Dependencies: [4638, 4639, 4373, 2]
+// Dependencies: [4790, 4791, 4524, 2]
 // Exports: withSpring
 
-// Module 5055 (spring)
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 4638 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4639 */;
+// Module 5217 (spring)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 4790 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4791 */;
 import size from "module_2" /* 2 */;
 
 const CONFIG_NEVER_ANIMATE = ReanimatedConstants.CONFIG_NEVER_ANIMATE;
@@ -26,7 +26,7 @@ function withSpring(targetHeight, SUBTLE_SPRING, fn, fn2) {
       }
       const obj2 = {};
       const merged = Object.assign(obj);
-      obj2.reduceMotion = tmp(4373).ReduceMotion.Never;
+      obj2.reduceMotion = tmp(4524).ReduceMotion.Never;
       tmp7 = obj2;
     }
     let tmp5 = tmp7;

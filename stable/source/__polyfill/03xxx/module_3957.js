@@ -1,290 +1,47 @@
 // Module ID: 3957
 // Function ID: 3958
-// Dependencies: [3907, 3958, 3725, 3959, 3970, 3888, 3729, 3726, 3971, 3730, 3972]
-// Exports: default
+// Dependencies: [2117]
 
 // Module 3957
-import throwProtectedError from "throwProtectedError" /* 3972 */;
-import module_3907_mod from "module_3907" /* 3907 */;
-import subMilliseconds_mod from "subMilliseconds" /* 3958 */;
-import _typeof_mod from "module_3725" /* 3725 */;
-import G from "G" /* 3959 */;
-import dateLongFormatter_mod from "dateLongFormatter" /* 3970 */;
-import module_3888_mod from "module_3888" /* 3888 */;
-import module_3729_mod from "module_3729" /* 3729 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
-import code_mod from "module_3971" /* 3971 */;
+import module_2117 from "module_2117" /* 2117 */;
 
-const require = globalThis.__r;
-
-let module_3907 = module_3907_mod;
-if (!module_3907) {
-  const obj = { default: module_3907 };
-  let tmp3 = obj;
+if (!module_2117) {
+  const obj2 = { default: module_2117 };
+  let obj = obj2;
 } else {
-  tmp3 = module_3907;
+  obj = module_2117;
 }
-module_3907 = tmp3;
-let subMilliseconds = subMilliseconds_mod;
-if (!subMilliseconds) {
-  let obj2 = { default: subMilliseconds };
-  let tmp5 = obj2;
-} else {
-  tmp5 = subMilliseconds;
-}
-subMilliseconds = tmp5;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj3 = { default: _typeof };
-  let tmp7 = obj3;
-} else {
-  tmp7 = _typeof;
-}
-_typeof = tmp7;
-if (!G) {
-  const obj4 = { default: G };
-  let tmp9 = obj4;
-} else {
-  tmp9 = G;
-}
-let closure_5 = tmp9;
-let dateLongFormatter = dateLongFormatter_mod;
-if (!dateLongFormatter) {
-  const obj5 = { default: dateLongFormatter };
-  let tmp11 = obj5;
-} else {
-  tmp11 = dateLongFormatter;
-}
-dateLongFormatter = tmp11;
-let module_3888 = module_3888_mod;
-if (!module_3888) {
-  const obj6 = { default: module_3888 };
-  let tmp13 = obj6;
-} else {
-  tmp13 = module_3888;
-}
-module_3888 = tmp13;
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj7 = { default: module_3729 };
-  let tmp15 = obj7;
-} else {
-  tmp15 = module_3729;
-}
-module_3729 = tmp15;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj8 = { default: requiredArgs };
-  let tmp17 = obj8;
-} else {
-  tmp17 = requiredArgs;
-}
-requiredArgs = tmp17;
-let code = code_mod;
-if (!code) {
-  const obj9 = { default: code };
-  let tmp19 = obj9;
-} else {
-  tmp19 = code;
-}
-code = tmp19;
-const re11 = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g;
-const re12 = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g;
-const re13 = /^'([^]*?)'?$/;
-const re14 = /''/g;
-const re15 = /[a-zA-Z]/;
-
-export default function format(arg0, arg1, locale) {
-  _require = arg0;
-  dependencyMap = arg1;
-  module_3907 = locale;
-  requiredArgs.default(2, arguments);
-  const defaultOptions = require("module_3730").getDefaultOptions();
-  let locale1;
-  if (null != locale) {
-    locale1 = locale.locale;
-  }
-  if (null === locale1) {
-    locale1 = defaultOptions.locale;
-  }
-  if (null === locale1) {
-    locale1 = code.default;
-  }
-  let prop;
-  if (null != locale) {
-    prop = locale.firstWeekContainsDate;
-  }
-  if (null === prop) {
-    let prop1;
-    if (null != locale) {
-      locale = locale.locale;
-      if (null !== locale) {
-        if (undefined !== locale) {
-          const options = locale.options;
-          if (null !== options) {
-            if (undefined !== options) {
-              prop1 = options.firstWeekContainsDate;
-            }
-          }
+const date = {
+  ordinalNumber(arg0, unit) {
+    const NumberResult = Number(arg0);
+    unit = undefined;
+    if (null != unit) {
+      unit = unit.unit;
+    }
+    const StringResult = String(unit);
+    if ("minute" !== StringResult) {
+      if ("second" !== StringResult) {
+        if ("date" === StringResult) {
+          return NumberResult + "\uC77C";
+        } else {
+          return NumberResult + "\uBC88\uC9F8";
         }
       }
     }
-    prop = prop1;
-  }
-  if (null === prop) {
-    prop = defaultOptions.firstWeekContainsDate;
-  }
-  if (null === prop) {
-    const locale2 = defaultOptions.locale;
-    let prop2;
-    if (null !== locale2) {
-      if (undefined !== locale2) {
-        const options2 = locale2.options;
-        if (null !== options2) {
-          if (undefined !== options2) {
-            prop2 = options2.firstWeekContainsDate;
-          }
-        }
-      }
+    return String(NumberResult);
+  },
+  era: obj.default({ values: { narrow: ["BC", "AD"], abbreviated: ["BC", "AD"], wide: ["\uAE30\uC6D0\uC804", "\uC11C\uAE30"] }, defaultWidth: "wide" }),
+  quarter: obj.default({
+    values: { narrow: ["1", "2", "3", "4"], abbreviated: ["Q1", "Q2", "Q3", "Q4"], wide: ["1\uBD84\uAE30", "2\uBD84\uAE30", "3\uBD84\uAE30", "4\uBD84\uAE30"] },
+    defaultWidth: "wide",
+    argumentCallback(arg0) {
+      return arg0 - 1;
     }
-    prop = prop2;
-  }
-  let num = 1;
-  if (null !== prop) {
-    num = 1;
-    if (undefined !== prop) {
-      num = prop;
-    }
-  }
-  const defaultResult1 = module_3729.default(num);
-  if (defaultResult1 >= 1) {
-    if (defaultResult1 <= 7) {
-      let weekStartsOn;
-      if (null != locale) {
-        weekStartsOn = locale.weekStartsOn;
-      }
-      if (null === weekStartsOn) {
-        let weekStartsOn1;
-        if (null != locale) {
-          const locale3 = locale.locale;
-          if (null !== locale3) {
-            if (undefined !== locale3) {
-              const options3 = locale3.options;
-              if (null !== options3) {
-                if (undefined !== options3) {
-                  weekStartsOn1 = options3.weekStartsOn;
-                }
-              }
-            }
-          }
-        }
-        weekStartsOn = weekStartsOn1;
-      }
-      if (null === weekStartsOn) {
-        weekStartsOn = defaultOptions.weekStartsOn;
-      }
-      if (null === weekStartsOn) {
-        const locale4 = defaultOptions.locale;
-        let weekStartsOn2;
-        if (null !== locale4) {
-          if (undefined !== locale4) {
-            const options4 = locale4.options;
-            if (null !== options4) {
-              if (undefined !== options4) {
-                weekStartsOn2 = options4.weekStartsOn;
-              }
-            }
-          }
-        }
-        weekStartsOn = weekStartsOn2;
-      }
-      let num4 = 0;
-      if (null !== weekStartsOn) {
-        num4 = 0;
-        if (undefined !== weekStartsOn) {
-          num4 = weekStartsOn;
-        }
-      }
-      const defaultResult2 = module_3729.default(num4);
-      if (defaultResult2 >= 0) {
-        if (defaultResult2 <= 6) {
-          if (locale1.localize) {
-            if (locale1.formatLong) {
-              const defaultResult3 = _typeof.default(arg0);
-              if (module_3907.default(defaultResult3)) {
-                _typeof = locale1.default(defaultResult3, module_3888.default(defaultResult3));
-                const obj2 = { firstWeekContainsDate: defaultResult1, weekStartsOn: defaultResult2, locale: locale1, _originalDate: defaultResult3 };
-                let match = str.match(closure_12);
-                const mapped = match.map((item) => {
-                  const first = item[0];
-                  if ("p" === first) {
-                    let tmp2 = dateLongFormatter.default[first](item, locale1.formatLong);
-                  } else {
-                    tmp2 = item;
-                  }
-                  return tmp2;
-                });
-                const match1 = mapped.join("").match(closure_11);
-                const mapped1 = match1.map((item) => {
-                  let str = item;
-                  if ("''" === item) {
-                    return "'";
-                  } else if ("'" === str[0]) {
-                    const match = str.match(re13);
-                    if (match) {
-                      str = match[1].replace(re14, "'");
-                    }
-                    return str;
-                  } else if (obj2.default[str6]) {
-                    let tmp9 = null != closure_2 && tmp7.useAdditionalWeekYearTokens;
-                    if (!tmp9) {
-                      tmp9 = !throwProtectedError.isProtectedWeekYearToken(str);
-                    }
-                    if (!tmp9) {
-                      const _String = String;
-                      throwProtectedError.throwProtectedError(str, closure_1, String(closure_0));
-                    }
-                    let tmp18 = null != tmp7 && tmp7.useAdditionalDayOfYearTokens;
-                    if (!tmp18) {
-                      tmp18 = !throwProtectedError.isProtectedDayOfYearToken(str);
-                    }
-                    if (!tmp18) {
-                      const _String2 = String;
-                      throwProtectedError.throwProtectedError(str, closure_1, String(closure_0));
-                    }
-                    return tmp35(closure_4, str, locale1.localize, obj2);
-                  } else if (str6.match(re15)) {
-                    const _RangeError = RangeError;
-                    const rangeError = new RangeError("Format string contains an unescaped latin alphabet character `" + str6 + "`");
-                    throw rangeError;
-                  } else {
-                    return str;
-                  }
-                });
-                return mapped1.join("");
-              } else {
-                const _RangeError4 = RangeError;
-                let rangeError = new RangeError("Invalid time value");
-                throw rangeError;
-              }
-            } else {
-              const _RangeError3 = RangeError;
-              const rangeError1 = new RangeError("locale must contain formatLong property");
-              throw rangeError1;
-            }
-          } else {
-            const _RangeError2 = RangeError;
-            const rangeError2 = new RangeError("locale must contain localize property");
-            throw rangeError2;
-          }
-        }
-      }
-      let _RangeError = RangeError;
-      const rangeError3 = new RangeError("weekStartsOn must be between 0 and 6 inclusively");
-      throw rangeError3;
-    }
-  }
-  const rangeError4 = new RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  throw rangeError4;
+  }),
+  month: obj.default({ values: { narrow: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], abbreviated: ["1\uC6D4", "2\uC6D4", "3\uC6D4", "4\uC6D4", "5\uC6D4", "6\uC6D4", "7\uC6D4", "8\uC6D4", "9\uC6D4", "10\uC6D4", "11\uC6D4", "12\uC6D4"], wide: ["1\uC6D4", "2\uC6D4", "3\uC6D4", "4\uC6D4", "5\uC6D4", "6\uC6D4", "7\uC6D4", "8\uC6D4", "9\uC6D4", "10\uC6D4", "11\uC6D4", "12\uC6D4"] }, defaultWidth: "wide" }),
+  day: obj.default({ values: { narrow: ["\uC77C", "\uC6D4", "\uD654", "\uC218", "\uBAA9", "\uAE08", "\uD1A0"], short: ["\uC77C", "\uC6D4", "\uD654", "\uC218", "\uBAA9", "\uAE08", "\uD1A0"], abbreviated: ["\uC77C", "\uC6D4", "\uD654", "\uC218", "\uBAA9", "\uAE08", "\uD1A0"], wide: ["\uC77C\uC694\uC77C", "\uC6D4\uC694\uC77C", "\uD654\uC694\uC77C", "\uC218\uC694\uC77C", "\uBAA9\uC694\uC77C", "\uAE08\uC694\uC77C", "\uD1A0\uC694\uC77C"] }, defaultWidth: "wide" }),
+  dayPeriod: obj.default({ values: { narrow: { am: "\uC624\uC804", pm: "\uC624\uD6C4", midnight: "\uC790\uC815", noon: "\uC815\uC624", morning: "\uC544\uCE68", afternoon: "\uC624\uD6C4", evening: "\uC800\uB141", night: "\uBC24" }, abbreviated: { am: "\uC624\uC804", pm: "\uC624\uD6C4", midnight: "\uC790\uC815", noon: "\uC815\uC624", morning: "\uC544\uCE68", afternoon: "\uC624\uD6C4", evening: "\uC800\uB141", night: "\uBC24" }, wide: { am: "\uC624\uC804", pm: "\uC624\uD6C4", midnight: "\uC790\uC815", noon: "\uC815\uC624", morning: "\uC544\uCE68", afternoon: "\uC624\uD6C4", evening: "\uC800\uB141", night: "\uBC24" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "\uC624\uC804", pm: "\uC624\uD6C4", midnight: "\uC790\uC815", noon: "\uC815\uC624", morning: "\uC544\uCE68", afternoon: "\uC624\uD6C4", evening: "\uC800\uB141", night: "\uBC24" }, abbreviated: { am: "\uC624\uC804", pm: "\uC624\uD6C4", midnight: "\uC790\uC815", noon: "\uC815\uC624", morning: "\uC544\uCE68", afternoon: "\uC624\uD6C4", evening: "\uC800\uB141", night: "\uBC24" }, wide: { am: "\uC624\uC804", pm: "\uC624\uD6C4", midnight: "\uC790\uC815", noon: "\uC815\uC624", morning: "\uC544\uCE68", afternoon: "\uC624\uD6C4", evening: "\uC800\uB141", night: "\uBC24" } }, defaultFormattingWidth: "wide" })
 };
+
+export default date;
 export default exports.default;

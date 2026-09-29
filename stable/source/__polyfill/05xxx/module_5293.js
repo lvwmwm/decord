@@ -1,22 +1,9 @@
 // Module ID: 5293
 // Function ID: 5294
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 5293
-class MetadataMissingError {
-  constructor(arg0) {
-    obj = { name: "MetadataMissingError" };
-    str = arg0;
-    if (!arg0) {
-      str = "No Exif data";
-    }
-    obj.message = str;
-    error = new Error();
-    obj.stack = error.stack;
-    return;
-  }
-}
-let error = new Error();
-MetadataMissingError.prototype = error;
+import registerAsset from "module_1121" /* 1121 */;
 
-export default { MetadataMissingError };
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "321fcdfdc6f79caac89fae29f0991750", name: "ForumWarningIcon", type: "png" });

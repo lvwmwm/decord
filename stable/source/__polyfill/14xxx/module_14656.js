@@ -1,20 +1,16 @@
 // Module ID: 14656
 // Function ID: 14657
-// Dependencies: [19, 14654]
-// Exports: default
+// Dependencies: [14657]
 
 // Module 14656
-import _modDef14654 from "module_14654" /* 14654 */;
-import noop from "module_19" /* 19 */;
+import _mod14657 from "module_14657" /* 14657 */;
 
 
-export default function useReanimatedTransitionProgress() {
-  const context = noop.useContext(_modDef14654);
-  if (undefined === context) {
-    const _Error = Error;
-    const error = new Error("Couldn't find values for reanimated transition progress. Are you inside a screen in Native Stack?");
-    throw error;
-  } else {
-    return context;
+export default (arg0) => {
+  const tmp = _mod14657(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
   }
+  return num;
 };

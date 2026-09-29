@@ -1,17 +1,17 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 12921
+// Function ID: 12922
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4628, 1176, 504, 4373, 4637, 4640, 2]
+// Dependencies: [4780, 1177, 504, 4524, 4789, 4792, 2]
 // Exports: default
 
-// Module 12772 (useChatPlaceholderAnimatedStyles)
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import timing from "timing" /* 4637 */;
-import timingPresets from "timingPresets" /* 4640 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+// Module 12921 (useChatPlaceholderAnimatedStyles)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import timing from "timing" /* 4789 */;
+import timingPresets from "timingPresets" /* 4792 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
 require = fn;
-let TIMING_CONFIG = { duration: 1300, easing: fn(1176).STANDARD_EASING };
+let TIMING_CONFIG = { duration: 1300, easing: fn(1177).STANDARD_EASING };
 const __initData = { code: "function useChatPlaceholderAnimatedStylesTsx1(){const{visible,animated,useReducedMotion,withRepeat,withSequence,withTiming,timingNone,TIMING_CONFIG}=this.__closure;if(!visible){return{opacity:0};}else if(!animated||useReducedMotion){return{opacity:0.7};}return{opacity:withRepeat(withSequence(withTiming(0.3,timingNone),withTiming(0.7,TIMING_CONFIG),withTiming(0.3,TIMING_CONFIG)),-1)};}" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/native/placeholder/useChatPlaceholderAnimatedStyles.tsx");

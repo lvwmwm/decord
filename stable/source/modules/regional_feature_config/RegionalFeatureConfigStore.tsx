@@ -1,13 +1,13 @@
-// Module ID: 4851
-// Function ID: 4852
+// Module ID: 5002
+// Function ID: 5003
 // Name: RegionalFeatureConfigStore
-// Dependencies: [4852, 4856, 504, 573, 2]
+// Dependencies: [5003, 5007, 504, 573, 2]
 
-// Module 4851 (RegionalFeatureConfigStore)
+// Module 5002 (RegionalFeatureConfigStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import RegionalFeatureConfigModels from "RegionalFeatureConfigModels" /* 4856 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 4852 */;
+import RegionalFeatureConfigModels from "RegionalFeatureConfigModels" /* 5007 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 ({ getDefaultCountryCode: c2, getCountryCodeByAlpha2: c3 } = CountryCodeUtils);

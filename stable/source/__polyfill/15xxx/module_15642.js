@@ -1,11 +1,9 @@
 // Module ID: 15642
 // Function ID: 15643
-// Dependencies: [8416]
+// Dependencies: [1121]
 
 // Module 15642
-const require = globalThis.__r;
+import registerAsset from "module_1121" /* 1121 */;
 
-const require = arg1;
-const dependencyMap = arg6;
 
-export const WebView = require("WebView").WebView;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e323f4aa14afd6838a1b0bdf3903e8c5", name: "EmojiCowboyHatFaceIcon", type: "png" });

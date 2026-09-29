@@ -1,11 +1,11 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 17307
+// Function ID: 17308
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 576, 4636, 4280, 1114, 8033, 8922, 16951, 4355, 2]
+// Dependencies: [19, 17, 21, 576, 4788, 4432, 1115, 8219, 9108, 17308, 4506, 2]
 
-// Module 16950 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 17307 (ChannelSettingsPermissionsOverrideCheckbox)
 import nativeDefault from "native" /* 576 */;
-import PermissionUtils from "PermissionUtils" /* 4280 */;
+import PermissionUtils from "PermissionUtils" /* 4432 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,9 +40,9 @@ function OverrideOption(type) {
     }
     let iconWrapper = styles;
     if (PermissionUtils.DENY !== type) {
-      if (tmp3(4280).ALLOW === tmp2) {
+      if (tmp3(4432).ALLOW === tmp2) {
         let tmp5 = items ? iconWrapper.allowSelected : iconWrapper.allowActive;
-      } else if (tmp3(4280).PASSTHROUGH === tmp2) {
+      } else if (tmp3(4432).PASSTHROUGH === tmp2) {
         tmp5 = items ? iconWrapper.passthroughSelected : iconWrapper.passthroughActive;
       }
       items = [tmp5, ];
@@ -80,7 +80,7 @@ get_ActivityIndicator = fn(17);
 const jsx = fn(21).jsx;
 const PX_4 = nativeDefault.space.PX_4;
 const md = nativeDefault.radii.md;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { ternaryCheckBox: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" }, iconWrapper: { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" }, icon: null, denyActive: null, denySelected: null, allowActive: null, allowSelected: null, passthroughSelected: null, passthroughActive: null, disabled: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" };
 obj.icon = { marginHorizontal: nativeDefault.space.PX_8 };
@@ -98,7 +98,7 @@ const obj9 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELE
 obj.passthroughActive = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.disabled = { opacity: 0.3 };
 let closure_6 = createStyles.createStyles(obj);
-let items = [fn(4280).DENY, fn(4280).PASSTHROUGH, fn(4280).ALLOW];
+let items = [fn(4432).DENY, fn(4432).PASSTHROUGH, fn(4432).ALLOW];
 const obj10 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsPermissionsOverrideCheckbox.tsx");

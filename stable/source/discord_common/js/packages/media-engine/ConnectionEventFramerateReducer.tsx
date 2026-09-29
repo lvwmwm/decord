@@ -1,11 +1,11 @@
-// Module ID: 4706
-// Function ID: 4707
+// Module ID: 4858
+// Function ID: 4859
 // Name: ConnectionEventFramerateReducer
-// Dependencies: [4661, 4, 4691, 2]
+// Dependencies: [4813, 4, 4843, 2]
 
-// Module 4706 (ConnectionEventFramerateReducer)
+// Module 4858 (ConnectionEventFramerateReducer)
 import logger_Logger from "logger/Logger" /* 4 */;
-import Constants from "Constants" /* 4661 */;
+import Constants from "Constants" /* 4813 */;
 import size from "module_2" /* 2 */;
 
 ({ SpeakingFlags: c2, VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: c3 } = Constants);

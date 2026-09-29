@@ -1,11 +1,11 @@
-// Module ID: 1607
-// Function ID: 1608
+// Module ID: 1608
+// Function ID: 1609
 // Name: MediaKeyboardConstants
-// Dependencies: [1608, 576, 2]
+// Dependencies: [1609, 576, 2]
 
-// Module 1607 (MediaKeyboardConstants)
+// Module 1608 (MediaKeyboardConstants)
 import nativeDefault from "native" /* 576 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1608 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
 import size from "module_2" /* 2 */;
 
 if (MetaQuestUtils.isMetaQuest()) {

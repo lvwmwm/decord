@@ -1,12 +1,9 @@
 // Module ID: 3816
 // Function ID: 3817
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 3816
-let closure_0 = { lastWeek: "'afgelopen' eeee 'om' p", yesterday: "'gisteren om' p", today: "'vandaag om' p", tomorrow: "'morgen om' p", nextWeek: "eeee 'om' p", other: "P" };
+import registerAsset from "module_1121" /* 1121 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "3a1fc764047b6ec361f956e365e61df9", name: "es-ES.messages.3a1fc764047b6ec361f956e365e61df9.compiled.messages", type: "jsona" });

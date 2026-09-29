@@ -1,16 +1,16 @@
-// Module ID: 16096
-// Function ID: 16097
+// Module ID: 16333
+// Function ID: 16334
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 12542, 12543, 1074, 21, 4636, 576, 12544, 1240, 12545, 12821, 16097, 1114, 2]
+// Dependencies: [19, 17, 12692, 12693, 1074, 21, 4788, 576, 12694, 1241, 12695, 12970, 16334, 1115, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 16096 (RedesignNotificationModal)
+// Module 16333 (RedesignNotificationModal)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12544 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12545 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12821 */;
-import _modDef16097 from "module_16097" /* 16097 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12694 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12695 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12970 */;
+import _modDef16334 from "module_16334" /* 16334 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -54,12 +54,12 @@ class RedesignNotificationModal {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const PermissionStateType = fn(12542).PermissionStateType;
-const NotificationPermissionConstants = fn(12543);
+const PermissionStateType = fn(12692).PermissionStateType;
+const NotificationPermissionConstants = fn(12693);
 ({ EventActionLocation: closure_7, EventActionType: closure_8 } = NotificationPermissionConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: -nativeDefault.space.PX_48 }, notificationHeaderImage: { position: "absolute", alignSelf: "center", zIndex: 2, top: -140, height: 156, width: 150 } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);

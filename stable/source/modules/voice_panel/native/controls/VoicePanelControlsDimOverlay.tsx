@@ -1,20 +1,20 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17676
+// Function ID: 17677
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 14216, 12406, 12404, 21, 12405, 4373, 17283, 5055, 14525, 5044, 2]
+// Dependencies: [19, 14429, 12555, 12553, 21, 12554, 4524, 17641, 5217, 14747, 5204, 2]
 
-// Module 17318 (VoicePanelControlsDimOverlay)
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import spring from "spring" /* 5055 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14525 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17283 */;
+// Module 17676 (VoicePanelControlsDimOverlay)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import spring from "spring" /* 5217 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14747 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17641 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(14216).BACKDROP_OPAQUE_MAX_OPACITY;
-const VoicePanelConstants = fn(12406);
+let closure_4 = fn(14429).BACKDROP_OPAQUE_MAX_OPACITY;
+const VoicePanelConstants = fn(12555);
 ({ PANEL_CONTROLS_HEIGHT_PHYSICS: hasOwnProperty, VoicePanelModes: metroRequire } = VoicePanelConstants);
-const VoicePanelControlsModes = fn(12404).VoicePanelControlsModes;
+const VoicePanelControlsModes = fn(12553).VoicePanelControlsModes;
 const jsx = fn(21).jsx;
 const __initData = { code: "function VoicePanelControlsDimOverlayTsx1(){const{windowDimensions,getDrawerSpec,safeArea,controlsSpecs,VoicePanelControlsModes,mode,VoicePanelModes,interpolate,wrapperSpecs,BACKDROP_OPAQUE_MAX_OPACITY}=this.__closure;const{height:height}=windowDimensions.get();const{minHeight:minHeight,maxHeight:maxHeight}=getDrawerSpec(height,safeArea.get().top);if(controlsSpecs.get().mode!==VoicePanelControlsModes.DRAWER||mode.get()!==VoicePanelModes.PANEL){return 0;}return interpolate(wrapperSpecs.get().height,[minHeight,maxHeight],[0,BACKDROP_OPAQUE_MAX_OPACITY],'clamp');}" };
 const __initData2 = { code: "function VoicePanelControlsDimOverlayTsx2(){const{overlayOpacity}=this.__closure;return overlayOpacity.get()>=0.35;}" };

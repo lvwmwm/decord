@@ -1,9 +1,9 @@
 // Module ID: 8938
 // Function ID: 8939
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 8938
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 132, height: 132, scales: [1], hash: "e32a360d37f718d45e03d9f2fe827035", name: "avatar_placeholder", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "fe638ed5adb730b6284af1a6c528af46", name: "ic_report_message", type: "png" });

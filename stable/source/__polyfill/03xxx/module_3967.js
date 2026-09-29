@@ -1,125 +1,16 @@
 // Module ID: 3967
 // Function ID: 3968
-// Dependencies: [3725, 3726, 3728, 3729, 3730]
-// Exports: default
+// Dependencies: [2114]
 
 // Module 3967
-import _mod3730 from "module_3730" /* 3730 */;
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
-import startOfUTCWeek_mod from "startOfUTCWeek" /* 3728 */;
-import module_3729_mod from "module_3729" /* 3729 */;
+import module_2114 from "module_2114" /* 2114 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
-  let tmp3 = obj;
+if (!module_2114) {
+  const obj2 = { default: module_2114 };
+  let obj = obj2;
 } else {
-  tmp3 = _typeof;
+  obj = module_2114;
 }
-_typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
-  let tmp5 = obj2;
-} else {
-  tmp5 = requiredArgs;
-}
-requiredArgs = tmp5;
-let startOfUTCWeek = startOfUTCWeek_mod;
-if (!startOfUTCWeek) {
-  const obj3 = { default: startOfUTCWeek };
-  let tmp7 = obj3;
-} else {
-  tmp7 = startOfUTCWeek;
-}
-startOfUTCWeek = tmp7;
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj4 = { default: module_3729 };
-  let tmp9 = obj4;
-} else {
-  tmp9 = module_3729;
-}
-module_3729 = tmp9;
 
-export default function getUTCWeekYear(arg0, firstWeekContainsDate) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const uTCFullYear = defaultResult1.getUTCFullYear();
-  const defaultOptions = _mod3730.getDefaultOptions();
-  let prop;
-  if (null != firstWeekContainsDate) {
-    prop = firstWeekContainsDate.firstWeekContainsDate;
-  }
-  if (null === prop) {
-    let prop1;
-    if (null != firstWeekContainsDate) {
-      locale = firstWeekContainsDate.locale;
-      if (null !== locale) {
-        if (undefined !== locale) {
-          const options = locale.options;
-          if (null !== options) {
-            if (undefined !== options) {
-              prop1 = options.firstWeekContainsDate;
-            }
-          }
-        }
-      }
-    }
-    prop = prop1;
-  }
-  if (null === prop) {
-    prop = defaultOptions.firstWeekContainsDate;
-  }
-  if (null === prop) {
-    const locale2 = defaultOptions.locale;
-    let prop2;
-    if (null !== locale2) {
-      if (undefined !== locale2) {
-        const options2 = locale2.options;
-        if (null !== options2) {
-          if (undefined !== options2) {
-            prop2 = options2.firstWeekContainsDate;
-          }
-        }
-      }
-    }
-    prop = prop2;
-  }
-  let num = 1;
-  if (null !== prop) {
-    num = 1;
-    if (undefined !== prop) {
-      num = prop;
-    }
-  }
-  const defaultResult2 = module_3729.default(num);
-  if (defaultResult2 >= 1) {
-    if (defaultResult2 <= 7) {
-      const _Date = Date;
-      const date = new Date(0);
-      date.setUTCFullYear(uTCFullYear + 1, 0, defaultResult2);
-      date.setUTCHours(0, 0, 0, 0);
-      const _Date2 = Date;
-      const date1 = new Date(0);
-      date1.setUTCFullYear(uTCFullYear, 0, defaultResult2);
-      date1.setUTCHours(0, 0, 0, 0);
-      const defaultResult3 = startOfUTCWeek.default(date, firstWeekContainsDate);
-      const time = defaultResult1.getTime();
-      if (time >= defaultResult3.getTime()) {
-        let sum = uTCFullYear + 1;
-      } else {
-        const time1 = defaultResult1.getTime();
-        sum = uTCFullYear;
-        if (time1 < defaultResult4.getTime()) {
-          sum = uTCFullYear - 1;
-        }
-      }
-      return sum;
-    }
-  }
-  const rangeError = new RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  throw rangeError;
-};
+export default { date: obj.default({ formats: { full: "EEEE d MMMM y", long: "d MMMM y", medium: "d MMM y", short: "dd-MM-y" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "HH:mm:ss zzzz", long: "HH:mm:ss z", medium: "HH:mm:ss", short: "HH:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'om' {{time}}", long: "{{date}} 'om' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
 export default exports.default;

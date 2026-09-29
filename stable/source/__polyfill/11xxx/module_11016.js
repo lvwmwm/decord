@@ -1,9 +1,9 @@
 // Module ID: 11016
 // Function ID: 11017
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11016
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "70ec4d21f0658b5914c9170f9e0a91d6", name: "TvIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 179.5, height: 70, scales: [2, 3], hash: "894749452230f66f12adff4cbc7b37d2", name: "img_logo_nitro_classic", type: "png" });

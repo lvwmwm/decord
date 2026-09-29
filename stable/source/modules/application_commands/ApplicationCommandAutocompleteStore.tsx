@@ -1,14 +1,14 @@
-// Module ID: 7881
-// Function ID: 7882
+// Module ID: 8053
+// Function ID: 8054
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [7882, 1074, 1363, 1894, 4816, 504, 573, 2]
+// Dependencies: [8054, 1074, 1364, 1978, 4968, 504, 573, 2]
 
-// Module 7881 (ApplicationCommandAutocompleteStore)
+// Module 8053 (ApplicationCommandAutocompleteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import Server from "Server" /* 1894 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7882 */;
+import Server from "Server" /* 1978 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8054 */;
 
 require = fn;
 function handleInit() {
@@ -49,7 +49,7 @@ const AnalyticEvents = fn(1074).AnalyticEvents;
 let map = new Map();
 let map1 = new Map();
 let map2 = new Map();
-const PlatformUtils = fn(1363);
+const PlatformUtils = fn(1364);
 let closure_7 = PlatformUtils.isDesktop();
 const Store = initializeDefault.Store;
 class ApplicationCommandAutocompleteStore extends Store {

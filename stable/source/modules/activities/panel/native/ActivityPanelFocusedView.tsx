@@ -1,20 +1,20 @@
-// Module ID: 17134
-// Function ID: 17135
+// Module ID: 17491
+// Function ID: 17492
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4628, 1957, 1956, 1920, 9635, 17129, 1074, 12406, 21, 4636, 576, 1611, 504, 1477, 17124, 16803, 4373, 4347, 4637, 5055, 5040, 4265, 17126, 17135, 9634, 9765, 2]
+// Dependencies: [19, 17, 4780, 2041, 2040, 2004, 9347, 17486, 1074, 12555, 21, 4788, 576, 1612, 504, 1478, 17481, 17168, 4524, 4498, 4789, 5217, 5200, 4417, 17483, 17492, 9625, 9755, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 17134 (ActivityPanelFocusedView)
+// Module 17491 (ActivityPanelFocusedView)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4347 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import spring from "spring" /* 5055 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9765 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17126 */;
+import native from "native" /* 4498 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import spring from "spring" /* 5217 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9755 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17483 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 
 require = fn;
 class BaseActivityPanelFocusedView {
@@ -101,7 +101,7 @@ class BaseActivityPanelFocusedView {
       }
       let num6 = 1;
       if (stateFromStores) {
-        const tmp9Result = tmp9(4637);
+        const tmp9Result = tmp9(4789);
         let str2 = "animate-always";
         if (obj.get()) {
           str2 = "animate-always";
@@ -127,7 +127,7 @@ class BaseActivityPanelFocusedView {
         size.borderTopEndRadius = num;
         return size;
       } else {
-        const tmp9Result2 = tmp9(5055);
+        const tmp9Result2 = tmp9(5217);
         if (!wrapperOffset.get().gestureActive) {
           let tmp21 = React7;
           tmp9Result2.withSpring(height, tmp21, "animate-always", transitionComplete);
@@ -224,17 +224,17 @@ class BaseActivityPanelFocusedView {
     return tmp13(transitionState(closure_2[19]).ThemeContextProvider, obj13);
   }
 }
-const ActivityLayoutMode = fn(1920).ActivityLayoutMode;
-const ActivityPanelConstants = fn(9635);
+const ActivityLayoutMode = fn(2004).ActivityLayoutMode;
+const ActivityPanelConstants = fn(9347);
 ({ ACTIVITY_LAYOUT_PHYSICS_GESTURE: closure_8, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: closure_9, ActivityPanelModes: c10 } = ActivityPanelConstants);
-const ActivityPanelNativeConstants = fn(17129);
+const ActivityPanelNativeConstants = fn(17486);
 ({ DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG: closure_11, DEFAULT_PORTRAIT_LETTERBOX_CONFIG: closure_12, DEFAULT_LANDSCAPE_PILLERBOX_CONFIG: map1 } = ActivityPanelNativeConstants);
 const ThemeTypes = fn(1074).ThemeTypes;
-const IS_IOS = fn(12406).IS_IOS;
+const IS_IOS = fn(12555).IS_IOS;
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
 const collapsedCategories = { duration: 300 };
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { wrapper: { position: "absolute", flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, shade: null };
 let obj4 = {};
 const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
@@ -304,7 +304,7 @@ export default noop.memo((transitionState) => {
 });
 export const useBaseActivityPanelFocusedView = function useBaseActivityPanelFocusedView(context) {
   let isWindowLandscape;
-  const tmp = isWindowLandscape(1611)();
+  const tmp = isWindowLandscape(1612)();
   closure_0 = tmp;
   const wrapperDimensions = noop.useContext(context.context).wrapperDimensions;
   const isLandscape = wrapperDimensions.isLandscape;

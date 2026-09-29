@@ -1,22 +1,22 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 17253
+// Function ID: 17254
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 11222, 21, 4636, 576, 1611, 16111, 1477, 4497, 16897, 1364, 2]
+// Dependencies: [19, 17, 11381, 21, 4788, 576, 1612, 16356, 1478, 4648, 17254, 1365, 2]
 
-// Module 16896 (YouScreenContainer)
+// Module 17253 (YouScreenContainer)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16111 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16356 */;
 import noop from "module_19" /* 19 */;
 
-const useWindowDimensionsDefault = tmp(1477);
-const useChatLayoutDefault = tmp(4497);
-const YouScreenDefault = tmp(16897);
+const useWindowDimensionsDefault = tmp(1478);
+const useChatLayoutDefault = tmp(4648);
+const YouScreenDefault = tmp(17254);
 require = fn;
 const View = fn(17).View;
-const RootNavigatorScreen = fn(11222).RootNavigatorScreen;
+const RootNavigatorScreen = fn(11381).RootNavigatorScreen;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 const obj = { container: { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl }, androidContainer: null, wrapper: null };
 let obj3 = { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl };
 obj.androidContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
@@ -51,7 +51,7 @@ export default noop.memo(function YouScreenContainer(route) {
     const obj3 = { style: null, children: null };
     items[1] = tmp7;
     obj3.style = items;
-    tmp3Result = tmp3(1364);
+    tmp3Result = tmp3(1365);
     if (tmp3Result2.isAndroid()) {
       const obj4 = { style: null, children: null };
       items1 = [, ];
@@ -70,7 +70,7 @@ export default noop.memo(function YouScreenContainer(route) {
     }
     obj3.children = tmp5Result3;
     tmp5(View, obj3);
-    tmp3Result2 = tmp3(1364);
+    tmp3Result2 = tmp3(1365);
   } else {
     const obj8 = { initialTab };
     return tmp5(YouScreenDefault, obj8);

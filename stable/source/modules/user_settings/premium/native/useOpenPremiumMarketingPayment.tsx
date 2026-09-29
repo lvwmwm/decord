@@ -1,19 +1,19 @@
-// Module ID: 13584
-// Function ID: 13585
+// Module ID: 13787
+// Function ID: 13788
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 1074, 1373, 7265, 7550, 7549, 7525, 1114, 4294, 2]
+// Dependencies: [19, 1074, 1374, 7439, 7721, 7720, 7696, 1115, 4446, 2]
 // Exports: default
 
-// Module 13584 (useOpenPremiumMarketingPayment)
-import util from "util" /* 1114 */;
-import PremiumUtils from "PremiumUtils" /* 4294 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7525 */;
+// Module 13787 (useOpenPremiumMarketingPayment)
+import util from "util" /* 1115 */;
+import PremiumUtils from "PremiumUtils" /* 4446 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7696 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AnalyticsPages, AnalyticsSections, AnalyticsObjectTypes } = Constants);
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ SubscriptionIntervalTypes: closure_4, PremiumTypes: hasOwnProperty } = PremiumConstants);
 let closure_6 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
 const size = fn(2);

@@ -1,26 +1,26 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9709
+// Function ID: 9710
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 1956, 4652, 502, 1908, 2011, 5500, 9616, 9597, 4657, 21, 4636, 1176, 576, 9719, 12, 9605, 9720, 504, 4837, 9721, 9724, 9734, 9752, 9753, 9761, 9665, 9783, 4338, 8249, 9755, 9623, 9619, 9622, 1477, 1363, 8450, 2]
+// Dependencies: [32, 19, 17, 2040, 4804, 502, 1992, 2095, 5668, 9687, 9672, 4809, 21, 4788, 1177, 576, 9710, 12, 9681, 9711, 504, 4989, 9712, 9715, 9723, 9742, 9743, 9751, 9671, 9773, 4489, 8433, 9745, 9694, 9690, 9693, 1478, 1364, 8635, 2]
 
-// Module 9718 (PictureInPictureVideo)
+// Module 9709 (PictureInPictureVideo)
 import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4837 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9619 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 9622 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 9623 */;
-import transitionToActivityDefault from "transitionToActivity" /* 9665 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4989 */;
+import transitionToActivityDefault from "transitionToActivity" /* 9671 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9690 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 9693 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 9694 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SpeakingStore from "SpeakingStore" /* 5500 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9616 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SpeakingStore from "SpeakingStore" /* 5668 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9687 */;
 
 require = fn;
 function areParticipantsEqual(arg0, arg1) {
@@ -30,15 +30,15 @@ function areParticipantsEqual(arg0, arg1) {
 }
 get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ChannelCallStore = fn(9597);
+const ChannelCallStore = fn(9672);
 ({ togglePipFocus: map1, useIsVoiceChatFocused: closure_14 } = ChannelCallStore);
-const ParticipantTypes = fn(4657).ParticipantTypes;
+const ParticipantTypes = fn(4809).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { elevationShadow: null, background: null, backgroundPipFab: null, pip: null, pipFab: null, avatarContainer: null, activityPipContainer: null, thermalAlertIconContainer: null, thermalAlertIcon: null };
-const native = fn(1176);
-obj.elevationShadow = native.generateBoxShadowStyle(fn(1176).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+const native = fn(1177);
+obj.elevationShadow = native.generateBoxShadowStyle(fn(1177).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
 obj.background = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 let obj3 = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj.backgroundPipFab = { backgroundColor: nativeDefault.colors.BLACK, borderRadius: nativeDefault.radii.lg };

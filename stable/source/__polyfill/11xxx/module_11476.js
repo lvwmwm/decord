@@ -1,9 +1,9 @@
 // Module ID: 11476
 // Function ID: 11477
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11476
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following/dark", width: 280, height: 120, scales: [2, 3], hash: "902d26debf9cf5ba93edffb3d1cb9422", name: "channel_following_success_3", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 99.66666666666667, height: 66.66666666666667, scales: [3], hash: "0fef0a9d83d27dc691bf77b0bdae0680", name: "asset_opal_badge_small", type: "png" });

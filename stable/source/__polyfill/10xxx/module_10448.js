@@ -1,9 +1,9 @@
 // Module ID: 10448
 // Function ID: 10449
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10448
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 120, height: 96, scales: [2, 3], hash: "f9c127df442a3e2592e404fc380b1a52", name: "img_search_empty_darker", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "bbba3abb9f8c7848e1476bd19131aa3a", name: "MagicWandIcon", type: "png" });

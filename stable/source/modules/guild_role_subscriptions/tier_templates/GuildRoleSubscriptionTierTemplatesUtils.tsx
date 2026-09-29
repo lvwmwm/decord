@@ -1,19 +1,19 @@
-// Module ID: 15317
-// Function ID: 15318
+// Module ID: 15506
+// Function ID: 15507
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 1957, 4269, 15312, 15318, 1074, 1964, 4879, 563, 1384, 573, 9866, 7363, 13981, 2]
+// Dependencies: [5, 19, 2041, 4421, 15501, 15507, 1074, 2048, 5030, 563, 1385, 573, 9853, 7534, 14191, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 15317 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 15506 (GuildRoleSubscriptionTierTemplatesUtils)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FlagUtilsAll from "FlagUtils" /* 1384 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7363 */;
-import GuildRoleSubscriptionsExperimentUtils from "GuildRoleSubscriptionsExperimentUtils" /* 13981 */;
+import FlagUtilsAll from "FlagUtils" /* 1385 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7534 */;
+import GuildRoleSubscriptionsExperimentUtils from "GuildRoleSubscriptionsExperimentUtils" /* 14191 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4269 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15318 */;
-import allSettled_mod from "allSettled" /* 4879 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4421 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15507 */;
+import allSettled_mod from "allSettled" /* 5030 */;
 
 const require = globalThis.__r;
 
@@ -141,9 +141,9 @@ let closure_14 = async function _createChannelsFromTemplateTierBenefits(arg0, va
   }
 };
 const useMemo = fn(19).useMemo;
-const useEditStateStore = fn(15312).useEditStateStore;
+const useEditStateStore = fn(15501).useEditStateStore;
 const GuildFeatures = fn(1074).GuildFeatures;
-const ChannelFlags = fn(1964).ChannelFlags;
+const ChannelFlags = fn(2048).ChannelFlags;
 let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
 let closure_12 = {};

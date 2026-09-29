@@ -1,14 +1,14 @@
-// Module ID: 15593
-// Function ID: 15594
+// Module ID: 15785
+// Function ID: 15786
 // Name: ProfileUpdatesNotificationSetting
-// Dependencies: [8079, 11605, 1114, 1935, 15594, 2]
+// Dependencies: [8265, 11754, 1115, 2019, 15786, 2]
 
-// Module 15593 (ProfileUpdatesNotificationSetting)
-import util from "util" /* 1114 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import SettingsConstants from "SettingsConstants" /* 8079 */;
-import ProfileUpdatesNotificationUtils from "ProfileUpdatesNotificationUtils" /* 15594 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+// Module 15785 (ProfileUpdatesNotificationSetting)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import SettingsConstants from "SettingsConstants" /* 8265 */;
+import ProfileUpdatesNotificationUtils from "ProfileUpdatesNotificationUtils" /* 15786 */;
+import SettingBuilders from "SettingBuilders" /* 11754 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

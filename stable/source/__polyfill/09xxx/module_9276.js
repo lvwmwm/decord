@@ -1,216 +1,206 @@
 // Module ID: 9276
 // Function ID: 9277
-// Dependencies: [41, 42, 93, 95, 98, 9270, 9271]
-// Exports: Chi, Maj
+// Dependencies: [9249]
 
 // Module 9276
-import _asyncLoop from "_asyncLoop" /* 9270 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod9249 from "module_9249" /* 9249 */;
 
-const HashMD = require;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
+const self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (self2) {
+  let __setModuleDefault = self;
+  if (self) {
+    __setModuleDefault = self.__setModuleDefault;
+  }
+  if (__setModuleDefault) {
+    let fn = self;
+    if (self) {
+      fn = self.__importStar;
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
+    if (!fn) {
+      fn = (__esModule) => {
+        if (__esModule) {
+          if (__esModule.__esModule) {
+            return __esModule;
+          }
+        }
+        const obj = {};
+        if (null != __esModule) {
+          for (const key10009 in arg0) {
+            let tmp9 = "default" !== key10009;
+            if (!tmp9) {
+              if (!tmp9) {
+                continue;
+              } else {
+                let tmp6 = self2(obj, arg0, key10009);
+                continue;
+              }
+              continue;
+            } else {
+              let _Object = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              let call = hasOwnProperty.call;
+              if (typeof call === "unknown") {
+                let hasOwnPropertyResult = hasOwnProperty(key10009);
+              } else {
+                hasOwnPropertyResult = call(arg0, key10009);
+              }
+            }
+          }
+        }
+        __setModuleDefault(obj, __esModule);
+        return obj;
+      };
+    }
+    const _Object3 = Object;
+    exports.default = function default_1() {
+      if (typeof error === "function") {
+        const obj = { localeError: null };
+        const obj2 = { string: { unit: "caratteri", verb: "avere" }, file: { unit: "byte", verb: "avere" }, array: { unit: "elementi", verb: "avere" }, set: { unit: "elementi", verb: "avere" } };
+        closure_1 = { regex: "input", email: "indirizzo email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e ora ISO", date: "data ISO", time: "ora ISO", duration: "durata ISO", ipv4: "indirizzo IPv4", ipv6: "indirizzo IPv6", cidrv4: "intervallo IPv4", cidrv6: "intervallo IPv6", base64: "stringa codificata in base64", base64url: "URL codificata in base64", json_string: "stringa JSON", e164: "numero E.164", jwt: "JWT", template_literal: "input" };
+        closure_2 = { nan: "NaN", number: "numero", array: "vettore" };
+        obj.localeError = (code) => {
+          switch (code.code) {
+            case "invalid_type":
+              let expected = closure_2[code.expected];
+              if (expected == null) {
+                expected = code.expected;
+              }
+              const parsedTypeResult = closure_2.parsedType(code.input);
+              let tmp50 = closure_2[parsedTypeResult];
+              if (tmp50 == null) {
+                tmp50 = parsedTypeResult;
+              }
+              if (obj.test(code.expected)) {
+                const _HermesInternal17 = HermesInternal;
+                let combined = "Input non valido: atteso instanceof " + code.expected + ", ricevuto " + tmp50;
+              } else {
+                const _HermesInternal16 = HermesInternal;
+                combined = "Input non valido: atteso " + expected + ", ricevuto " + tmp50;
+              }
+              return combined;
+            case "invalid_value":
+              if (1 === code.values.length) {
+                const _HermesInternal15 = HermesInternal;
+                let combined1 = "Input non valido: atteso " + closure_2.stringifyPrimitive(code.values[0]);
+              } else {
+                const _HermesInternal14 = HermesInternal;
+                combined1 = "Opzione non valida: atteso uno tra " + closure_2.joinValues(code.values, "|");
+              }
+              return combined1;
+            case "too_big":
+              let str27 = "<";
+              if (code.inclusive) {
+                str27 = "<=";
+              }
+              let tmp29 = obj2[code.origin];
+              if (tmp29 == null) {
+                tmp29 = null;
+              }
+              let str28 = code.origin;
+              if (tmp29) {
+                if (str28 == null) {
+                  str28 = "valore";
+                }
+                const str1 = code.maximum.toString();
+                let str34 = tmp29.unit;
+                if (str34 == null) {
+                  str34 = "elementi";
+                }
+                const _HermesInternal13 = HermesInternal;
+                let combined2 = "Troppo grande: " + str28 + " deve avere " + str27 + str1 + " " + str34;
+              } else {
+                let str29 = str28;
+                if (str28 == null) {
+                  str29 = "valore";
+                }
+                const _HermesInternal12 = HermesInternal;
+                combined2 = "Troppo grande: " + str29 + " deve essere " + str27 + code.maximum.toString();
+              }
+              return combined2;
+            case "too_small":
+              let str21 = ">";
+              if (code.inclusive) {
+                str21 = ">=";
+              }
+              let tmp17 = obj2[code.origin];
+              if (tmp17 == null) {
+                tmp17 = null;
+              }
+              ({ origin, minimum } = code);
+              const str48 = minimum.toString();
+              if (tmp17) {
+                const _HermesInternal11 = HermesInternal;
+                let combined3 = "Troppo piccolo: " + origin + " deve avere " + str21 + str48 + " " + tmp17.unit;
+              } else {
+                const _HermesInternal10 = HermesInternal;
+                combined3 = "Troppo piccolo: " + origin + " deve essere " + str21 + str48;
+              }
+              return combined3;
+            case "invalid_format":
+              if ("starts_with" === code.format) {
+                const _HermesInternal9 = HermesInternal;
+                let combined4 = "Stringa non valida: deve iniziare con \"" + code.prefix + "\"";
+              } else if ("ends_with" === code.format) {
+                const _HermesInternal8 = HermesInternal;
+                combined4 = "Stringa non valida: deve terminare con \"" + code.suffix + "\"";
+              } else if ("includes" === code.format) {
+                const _HermesInternal7 = HermesInternal;
+                combined4 = "Stringa non valida: deve includere \"" + code.includes + "\"";
+              } else if ("regex" === code.format) {
+                const _HermesInternal6 = HermesInternal;
+                combined4 = "Stringa non valida: deve corrispondere al pattern " + code.pattern;
+              } else {
+                let format = closure_1[code.format];
+                if (format == null) {
+                  format = code.format;
+                }
+                const _HermesInternal5 = HermesInternal;
+                combined4 = "Invalid " + format;
+              }
+              return combined4;
+            case "not_multiple_of":
+              const _HermesInternal4 = HermesInternal;
+              return "Numero non valido: deve essere un multiplo di " + code.divisor;
+            case "unrecognized_keys":
+              let str4 = "e";
+              if (code.keys.length > 1) {
+                str4 = "i";
+              }
+              let str5 = "a";
+              if (code.keys.length > 1) {
+                str5 = "e";
+              }
+              const _HermesInternal3 = HermesInternal;
+              return "Chiav" + str4 + " non riconosciut" + str5 + ": " + closure_2.joinValues(code.keys, ", ");
+            case "invalid_key":
+              const _HermesInternal2 = HermesInternal;
+              return "Chiave non valida in " + code.origin;
+            case "invalid_union":
+              return "Input non valido";
+            case "invalid_element":
+              const _HermesInternal = HermesInternal;
+              return "Valore non valido in " + code.origin;
+            default:
+              return "Input non valido";
+          }
+        };
+        return obj;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
     };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class HashMD {
-  constructor(arg0, arg1, arg2, arg3) {
-    self = this;
-    tmp = c2(this, HashMD);
-    tmp2 = closure_4;
-    obj = closure_4(HashMD);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.blockLen = global;
-    tmp3Result.outputLen = require;
-    tmp3Result.padOffset = importDefault;
-    tmp3Result.isLE = importAll;
-    tmp3Result.finished = false;
-    tmp3Result.length = 0;
-    tmp3Result.pos = 0;
-    tmp3Result.destroyed = false;
-    uint8Array = new Uint8Array(global);
-    tmp3Result.buffer = uint8Array;
-    tmp3Result.view = closure_0(closure_1[5]).createView(tmp3Result.buffer);
-    return tmp3Result;
-  }
-}
-_inherits(HashMD, _asyncLoop.Hash);
-const entry = {
-  key: "update",
-  value: function update(B) {
-    let tmp8;
-    const self = this;
-    HashMD(9271).exists(this);
-    ({ buffer, blockLen, view } = this);
-    const toBytesResult = HashMD(9270).toBytes(B);
-    let num = 0;
-    if (0 < toBytesResult.length) {
-      do {
-        let _Math = Math;
-        let bound = Math.min(blockLen - self.pos, length - num);
-        if (bound !== blockLen) {
-          let result = buffer.set(toBytesResult.subarray(num, num + bound), self.pos);
-          self.pos = self.pos + bound;
-          let sum = num + bound;
-          tmp8 = sum;
-          if (self.pos === blockLen) {
-            let processResult = self.process(view, 0);
-            self.pos = 0;
-            tmp8 = sum;
-          }
-        } else {
-          let tmp7 = num;
-          tmp8 = num;
-          if (blockLen <= length - num) {
-            do {
-              let processResult1 = self.process(tmp6, tmp7);
-              let sum1 = tmp7 + blockLen;
-              tmp7 = sum1;
-              tmp8 = sum1;
-              diff = length - sum1;
-            } while (blockLen <= diff);
-          }
-        }
-        num = tmp8;
-      } while (tmp8 < length);
-    }
-    self.length = self.length + toBytesResult.length;
-    self.roundClean();
-    return self;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "digestInto",
-    value: function digestInto(content) {
-      const self = this;
-      HashMD(9271).exists(this);
-      HashMD(9271).output(content, this);
-      this.finished = true;
-      ({ buffer, view, blockLen, isLE } = this);
-      let num = tmp3 + 1;
-      buffer[+this.pos] = 128;
-      const buffer2 = this.buffer;
-      buffer2.subarray(num).fill(0);
-      if (this.padOffset > blockLen - num) {
-        self.process(view, 0);
-        num = 0;
-      }
-      if (num < blockLen) {
-        do {
-          buffer[num] = 0;
-          num = num + 1;
-        } while (num < blockLen);
-      }
-      const diff = blockLen - 8;
-      const BigIntResult = BigInt(8 * self.length);
-      if (typeof view.setBigUint64 === "function") {
-        view.setBigUint64(diff, BigIntResult, isLE);
-      } else {
-        const _BigInt = BigInt;
-        const _BigInt2 = BigInt;
-        const BigIntResult2 = BigInt(4294967295);
-        const _Number = Number;
-        const _Number2 = Number;
-        const BigIntResult1 = BigInt(32);
-        let num2 = 0;
-        const NumberResult = Number(BigIntResult >> BigInt(32) & BigIntResult2);
-        if (isLE) {
-          num2 = 4;
-        }
-        let num3 = 4;
-        if (isLE) {
-          num3 = 0;
-        }
-        view.setUint32(diff + num2, NumberResult, isLE);
-        view.setUint32(diff + num3, Number(BigIntResult & BigIntResult2), isLE);
-        const NumberResult1 = Number(BigIntResult & BigIntResult2);
-      }
-      self.process(view, 0);
-      const view1 = HashMD(9270).createView(content);
-      const outputLen = self.outputLen;
-      if (outputLen % 4) {
-        const _Error2 = Error;
-        const error = new Error("_sha2: outputLen should be aligned to 32bit");
-        throw error;
-      } else {
-        const result = outputLen / 4;
-        value = self.get();
-        if (result > value.length) {
-          const _Error = Error;
-          const error1 = new Error("_sha2: outputLen bigger than state");
-          throw error1;
-        } else {
-          let num5 = 0;
-          if (0 < result) {
-            do {
-              let setUint32Result2 = view1.setUint32(4 * num5, value[num5], isLE);
-              num5 = num5 + 1;
-            } while (num5 < result);
-          }
-        }
-      }
-      const subarrayResult = buffer2.subarray(num);
-    }
-  },
-  {
-    key: "digest",
-    value: function digest() {
-      ({ buffer, outputLen } = this);
-      this.digestInto(buffer);
-      const substr = buffer.slice(0, outputLen);
-      this.destroy();
-      return substr;
-    }
-  },
-  {
-    key: "_cloneInto",
-    value: function _cloneInto(arg0) {
-      const self = this;
-      let constructor = arg0;
-      if (!arg0) {
-        constructor = new self.constructor();
-      }
-      const items = [...self.get()];
-      constructor.set.apply(items);
-      constructor.length = self.length;
-      ({ pos: tmp.pos, finished: tmp.finished, destroyed: tmp.destroyed } = self);
-      if (self.length % self.blockLen) {
-        const buffer = constructor.buffer;
-        const result = buffer.set(tmp5);
-      }
-      return constructor;
-    }
-  }
-];
+    let closure_2 = fn(_mod9249);
+    function error() {
 
-export const Chi = (arg0, arg1, arg2) => arg0 & arg1 ^ ~arg0 & arg2;
-export const Maj = (arg0, arg1, arg2) => arg0 & arg1 ^ arg0 & arg2 ^ arg1 & arg2;
-export const HashMD = _createClass(HashMD, items);
+    }
+    module.exports = exports.default;
+  } else {
+    const _Object2 = Object;
+  }
+} else {
+  let _Object = Object;
+}

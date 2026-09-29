@@ -1,13 +1,13 @@
-// Module ID: 15747
-// Function ID: 15748
+// Module ID: 15941
+// Function ID: 15942
 // Name: ClipboardCheckIcon
-// Dependencies: [19, 21, 576, 4337, 15748, 2]
+// Dependencies: [19, 21, 576, 4488, 15942, 2]
 // Exports: ClipboardCheckIcon
 
-// Module 15747 (ClipboardCheckIcon)
+// Module 15941 (ClipboardCheckIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod15748 from "module_15748" /* 15748 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod15942 from "module_15942" /* 15942 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ClipboardCheckIcon = function ClipboardCheckIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15748, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15942, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

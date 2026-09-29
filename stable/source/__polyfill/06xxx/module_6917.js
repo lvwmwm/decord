@@ -1,31 +1,83 @@
 // Module ID: 6917
 // Function ID: 6918
-// Dependencies: [19, 17, 21, 6918, 6919]
+// Dependencies: [19, 1637, 6902, 6918]
+// Exports: useScrollable
 
 // Module 6917
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import _mod6918 from "module_6918" /* 6918 */;
-import noop_mod from "module_19" /* 19 */;
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6918 */;
+import noop from "module_19" /* 19 */;
 
-let noop = noop_mod;
-const useMemo = noop.useMemo;
-let noop = noop_mod;
-const StyleSheet = _mod17.StyleSheet;
-const jsx = jsxProd.jsx;
-const memoResult = noop.memo((arg0) => {
-  ({ backgroundComponent, backgroundStyle } = arg0);
-  let items = [backgroundStyle];
-  ({ animatedIndex, animatedPosition } = arg0);
-  const style = useMemo(() => {
-    const items = [_mod6918.styles.container, backgroundStyle];
-    return StyleSheet.flatten(items);
-  }, items);
-  if (backgroundComponent == null) {
-    backgroundComponent = backgroundStyle(6919).BottomSheetBackground;
-  }
-  return <backgroundComponent pointerEvents="none" animatedIndex={animatedIndex} animatedPosition={animatedPosition} style={style} />;
-});
-memoResult.displayName = "BottomSheetBackgroundContainer";
+const require = globalThis.__r;
 
-export const BottomSheetBackgroundContainer = memoResult;
+({ useCallback: c2, useRef: c3 } = noop);
+
+export const useScrollable = () => {
+  const tmp = closure_3(null);
+  _require = tmp;
+  dependencyMap = closure_3(null);
+  const sharedValue = require("cancelAnimation").useSharedValue(require("value2").SCROLLABLE_TYPE.UNDETERMINED);
+  const obj = require("cancelAnimation");
+  const sharedValue1 = require("cancelAnimation").useSharedValue(0);
+  const obj2 = require("cancelAnimation");
+  const sharedValue2 = require("cancelAnimation").useSharedValue(require("value2").SCROLLABLE_STATE.UNDETERMINED);
+  const obj3 = require("cancelAnimation");
+  const sharedValue3 = require("cancelAnimation").useSharedValue(false);
+  const obj4 = require("cancelAnimation");
+  const tmp6 = closure_2((id) => {
+    const current = ref.current;
+    id = undefined;
+    if (current != null) {
+      id = current.id;
+    }
+    if (id == null) {
+      id = null;
+    }
+    if (id !== id.id) {
+      if (tmp.current) {
+        closure_1.current = tmp.current;
+      }
+      tmp.current = id;
+    }
+  }, []);
+  return {
+    scrollableRef: tmp,
+    animatedScrollableType: sharedValue,
+    animatedScrollableContentOffsetY: sharedValue1,
+    animatedScrollableOverrideState: sharedValue2,
+    isScrollableRefreshable: sharedValue3,
+    setScrollableRef: closure_2((id) => {
+      const current = ref.current;
+      id = undefined;
+      if (current != null) {
+        id = current.id;
+      }
+      if (id == null) {
+        id = null;
+      }
+      if (id !== id.id) {
+        if (tmp.current) {
+          closure_1.current = tmp.current;
+        }
+        tmp.current = id;
+      }
+    }, []),
+    removeScrollableRef: closure_2((current) => {
+      try {
+        const findNodeHandleResult = normalizeSnapPoint.findNodeHandle(current.current);
+        current = ref.current;
+        let id;
+        if (current != null) {
+          id = current.id;
+        }
+        if (id == null) {
+          id = null;
+        }
+        if (findNodeHandleResult === id) {
+          ref.current = ref2.current;
+        }
+      } catch (err) {
+        return tmp;
+      }
+    }, [])
+  };
+};

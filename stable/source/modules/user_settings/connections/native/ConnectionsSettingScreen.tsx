@@ -1,26 +1,26 @@
-// Module ID: 15046
-// Function ID: 15047
+// Module ID: 15237
+// Function ID: 15238
 // Name: ConnectionsSettingScreen
-// Dependencies: [19, 21, 4603, 15047, 1896, 1483, 7097, 7966, 1114, 15048, 2]
+// Dependencies: [19, 21, 4755, 15238, 1980, 1484, 7271, 8139, 1115, 15239, 2]
 
-// Module 15046 (ConnectionsSettingScreen)
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+// Module 15237 (ConnectionsSettingScreen)
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function onPress() {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15047, dependencyMap.paths), "AddConnection");
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15238, dependencyMap.paths), "AddConnection");
 }
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 
 export default noop.memo(function ConnectionsSettingScreen() {
-  stackNavigation = stackNavigation(1483).useStackNavigation();
-  let obj = stackNavigation(1483);
+  stackNavigation = stackNavigation(1484).useStackNavigation();
+  let obj = stackNavigation(1484);
   const tmp = stackNavigation;
-  const params = stackNavigation(7097).useSettingNavigationRoute().params;
+  const params = stackNavigation(7271).useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (params != null) {
     selectedPlatformType = params.selectedPlatformType;
@@ -32,11 +32,11 @@ export default noop.memo(function ConnectionsSettingScreen() {
         const obj = {};
         const merged = Object.assign(arg0);
         obj.onPress = onPress;
-        const intl = stackNavigation(1114).intl;
-        obj.label = intl.string(stackNavigation(1114).t.OYkgVk);
-        return closure_1_4(stackNavigation(7966).HeaderTextButton, obj);
+        const intl = stackNavigation(1115).intl;
+        obj.label = intl.string(stackNavigation(1115).t.OYkgVk);
+        return closure_1_4(stackNavigation(8139).HeaderTextButton, obj);
       }
     });
   }, items);
-  return jsx(tmp(15048).UserSettingsConnections, { selectedPlatformType });
+  return jsx(tmp(15239).UserSettingsConnections, { selectedPlatformType });
 });

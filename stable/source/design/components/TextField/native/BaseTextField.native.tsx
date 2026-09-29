@@ -1,13 +1,14 @@
-// Module ID: 6724
-// Function ID: 6725
+// Module ID: 6897
+// Function ID: 6898
 // Name: BaseTextField
-// Dependencies: [19, 21, 1363, 6722, 4344, 6725, 4343, 2]
+// Dependencies: [19, 21, 1364, 6895, 4495, 6898, 7212, 4494, 2]
 
-// Module 6724 (BaseTextField)
-import mergeProps from "mergeProps" /* 4343 */;
-import useFocus from "useFocus" /* 4344 */;
-import InputFieldContainer from "InputFieldContainer" /* 6722 */;
-import NativeTextInput from "NativeTextInput" /* 6725 */;
+// Module 6897 (BaseTextField)
+import mergeProps from "mergeProps" /* 4494 */;
+import useFocus from "useFocus" /* 4495 */;
+import InputFieldContainer from "InputFieldContainer" /* 6895 */;
+import NativeTextInput from "NativeTextInput" /* 6898 */;
+import propsForNativeTextInput from "propsForNativeTextInput" /* 7212 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,8 +18,8 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/TextField/native/BaseTextField.native.tsx");
 
 export const BaseTextField = noop.forwardRef((size, ref2) => {
-  const inputStyles = InputFieldContainer.useInputStyles({ size: size.size, isRound: size.isRound, hasLeadingIcon: null != size.leadingIcon });
-  const obj2 = { size: size.size, isRound: size.isRound, hasLeadingIcon: null != size.leadingIcon };
+  const inputStyles = InputFieldContainer.useInputStyles({ size: size.size, round: size.round, hasLeadingIcon: null != size.leadingIcon });
+  const obj2 = { size: size.size, round: size.round, hasLeadingIcon: null != size.leadingIcon };
   const focus = useFocus.useFocus();
   ({ focusProps, isFocused } = focus);
   const ref = noop.useRef(null);
@@ -36,17 +37,17 @@ export const BaseTextField = noop.forwardRef((size, ref2) => {
       str = autoComplete;
     }
     const obj5 = { autoComplete: str, secureTextEntry: null, keyboardType: null };
-    tmpResult = tmp(1363);
-    const tmpResult5 = tmp(1363);
-    obj5.secureTextEntry = tmp(1363).isAndroid() || secureTextEntry;
-    const tmp7 = tmp(1363).isAndroid() || secureTextEntry;
+    tmpResult = tmp(1364);
+    const tmpResult6 = tmp(1364);
+    obj5.secureTextEntry = tmp(1364).isAndroid() || secureTextEntry;
+    const tmp7 = tmp(1364).isAndroid() || secureTextEntry;
     let str2 = "visible-password";
-    if (!tmpResult6.isAndroid()) {
+    if (!tmpResult7.isAndroid()) {
       str2 = keyboardType;
     }
     obj5.keyboardType = str2;
     tmp6 = obj5;
-    tmpResult6 = tmp(1363);
+    tmpResult7 = tmp(1364);
   }
   const onChangeText = size.onChangeText;
   const items = [onChangeText];
@@ -74,7 +75,8 @@ export const BaseTextField = noop.forwardRef((size, ref2) => {
   const merged1 = Object.assign(tmp6);
   const tmp11 = React3;
   const tmp9 = React4;
-  const merged2 = Object.assign(mergeProps.mergeProps(size, focusProps));
+  const tmpResult8 = propsForNativeTextInput;
+  const merged2 = Object.assign(tmpResult8.propsForNativeTextInput(mergeProps.mergeProps(size, focusProps)));
   let replaced = str3;
   if (null != size.value) {
     replaced = str3.replace(/\r\n?|\n/g, " ");
@@ -86,7 +88,7 @@ export const BaseTextField = noop.forwardRef((size, ref2) => {
   }
   obj7.defaultValue = replaced1;
   obj7.onChangeText = callback;
-  const tmpResult7 = mergeProps;
+  const tmpResult9 = mergeProps;
   obj7.ref = mergeProps.mergeRefs(ref, ref2);
   const items2 = [, , ];
   ({ padding: arr3[0], text: arr3[1] } = inputStyles);

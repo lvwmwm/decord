@@ -1,9 +1,9 @@
 // Module ID: 13683
 // Function ID: 13684
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13683
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_boosting/native/images", width: 18, height: 15, scales: [2, 3], hash: "dc018ce302b0357451a31422d7180d84", name: "sparkle_star_pointed", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180, height: 101.5, scales: [2, 3], hash: "e7c47aa4983bcda8af147e4a2811c93e", name: "img_what_you_lose_boost", type: "png" });

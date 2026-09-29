@@ -1,29 +1,29 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 16279
+// Function ID: 16280
 // Name: RegistrationStepsUtils
-// Dependencies: [5, 19, 14796, 6695, 16043, 16044, 1074, 21, 1248, 16045, 16051, 16052, 16064, 16065, 16071, 7043, 16073, 16074, 7151, 7148, 16078, 16079, 16083, 16084, 1484, 1925, 16054, 4537, 7049, 16091, 2]
+// Dependencies: [5, 19, 15012, 6867, 16280, 16281, 1074, 21, 1249, 16282, 16288, 16289, 16301, 16302, 16308, 7217, 16310, 16311, 7325, 7322, 16315, 16316, 16320, 16321, 1485, 2009, 16291, 4688, 7223, 16328, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
-// Module 16042 (RegistrationStepsUtils)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import Link from "Link" /* 1484 */;
-import LoginDefault from "Login" /* 7043 */;
-import WelcomeDefault from "Welcome" /* 16045 */;
-import RegistrationUtils from "RegistrationUtils" /* 16051 */;
-import RegisterIdentity from "RegisterIdentity" /* 16052 */;
-import auth_register from "auth/register" /* 16054 */;
-import RegisterDisplayNameDefault from "RegisterDisplayName" /* 16064 */;
-import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 16065 */;
-import components_VerifyPhoneDefault from "components/VerifyPhone" /* 16071 */;
-import components_MFADefault from "components/MFA" /* 16073 */;
-import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 16074 */;
-import ExternalLinkDefault from "ExternalLink" /* 16078 */;
-import RegisterAgeGateDefault from "RegisterAgeGate" /* 16079 */;
-import AgeGateUnderageDefault from "AgeGateUnderage" /* 16083 */;
-import CompanionRemoteAuth from "CompanionRemoteAuth" /* 16084 */;
+// Module 16279 (RegistrationStepsUtils)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import Link from "Link" /* 1485 */;
+import LoginDefault from "Login" /* 7217 */;
+import WelcomeDefault from "Welcome" /* 16282 */;
+import RegistrationUtils from "RegistrationUtils" /* 16288 */;
+import RegisterIdentity from "RegisterIdentity" /* 16289 */;
+import auth_register from "auth/register" /* 16291 */;
+import RegisterDisplayNameDefault from "RegisterDisplayName" /* 16301 */;
+import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 16302 */;
+import components_VerifyPhoneDefault from "components/VerifyPhone" /* 16308 */;
+import components_MFADefault from "components/MFA" /* 16310 */;
+import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 16311 */;
+import ExternalLinkDefault from "ExternalLink" /* 16315 */;
+import RegisterAgeGateDefault from "RegisterAgeGate" /* 16316 */;
+import AgeGateUnderageDefault from "AgeGateUnderage" /* 16320 */;
+import CompanionRemoteAuth from "CompanionRemoteAuth" /* 16321 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14796 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 15012 */;
 
 require = fn;
 function headerTitle() {
@@ -152,10 +152,10 @@ let closure_21 = async function _handleRegistrationSubmit(arg0, arg1) {
   }
   return arg1;
 };
-const usePromoEmailConsentStore = fn(6695).usePromoEmailConsentStore;
-const RegistrationUIStore = fn(16043);
+const usePromoEmailConsentStore = fn(6867).usePromoEmailConsentStore;
+const RegistrationUIStore = fn(16280);
 ({ setRegistrationErrors: metroRequire, setSubmitting: closure_7, useRegistrationUIStore: closure_8, clearRegistrationErrorMessage: closure_9 } = RegistrationUIStore);
-const RegistrationConstants = fn(16044);
+const RegistrationConstants = fn(16281);
 ({ authStateToRegisterTransitionStep: c10, RegisterTransitionSteps: closure_11, RegistrationSteps: closure_12, RegistrationTransitionActionTypes: map1 } = RegistrationConstants);
 const AuthStates = fn(1074).AuthStates;
 const jsx = fn(21).jsx;
@@ -309,7 +309,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     render(arg0, arg1) {
       closure_0 = arg1;
-      return closure_15(closure_1(7151), {
+      return closure_15(closure_1(7325), {
         onClose() {
           return closure_0.pop();
         },

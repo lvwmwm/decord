@@ -1,13 +1,13 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15611
+// Function ID: 15612
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 1074, 1390, 8284, 8281, 1240, 1391, 2]
+// Dependencies: [19, 1074, 1391, 8468, 8465, 1241, 1392, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15422 (useDisplayNameStylesHandleApply)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1390 */;
-import DisplayNameFont from "DisplayNameFont" /* 1391 */;
+// Module 15611 (useDisplayNameStylesHandleApply)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
+import DisplayNameFont from "DisplayNameFont" /* 1392 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,12 +40,12 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
       }
       const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
       if (isTryItOut) {
-        const result = tmp2(8284).setTryItOutDisplayNameStyles(obj);
-        const tmp2Result = tmp2(8284);
+        const result = tmp2(8468).setTryItOutDisplayNameStyles(obj);
+        const tmp2Result = tmp2(8468);
       } else {
         const obj2 = { guildId, displayNameStyles: obj };
-        tmp2(8281).setPendingChanges(obj2);
-        const tmp2Result2 = tmp2(8281);
+        tmp2(8465).setPendingChanges(obj2);
+        const tmp2Result2 = tmp2(8465);
       }
       const obj3 = { font_name: DisplayNameFont.DisplayNameFont[selectedFontId], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
       AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED, obj3);

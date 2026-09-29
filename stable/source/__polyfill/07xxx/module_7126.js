@@ -1,103 +1,54 @@
 // Module ID: 7126
 // Function ID: 7127
-// Dependencies: [19, 17]
-// Exports: useKeyboardManager
+// Dependencies: [7127, 7128, 7129, 7188, 7189, 7190, 7191, 7195, 7196, 7149, 7197, 7198, 7193, 7192, 7199, 7150, 7200]
 
 // Module 7126
-import noop from "module_19" /* 19 */;
+import ErrorMessages from "ErrorMessages" /* 7128 */;
+import FlashList from "FlashList" /* 7129 */;
+import _mod7149 from "module_7149" /* 7149 */;
+import _mod7150 from "module_7150" /* 7150 */;
+import _mod7188 from "module_7188" /* 7188 */;
+import RenderTargetOptions from "RenderTargetOptions" /* 7189 */;
+import _modDef7190 from "module_7190" /* 7190 */;
+import _mod7191 from "module_7191" /* 7191 */;
+import Cancellable from "Cancellable" /* 7192 */;
+import JSFPSMonitor from "JSFPSMonitor" /* 7193 */;
+import _mod7195 from "module_7195" /* 7195 */;
+import runScrollBenchmark from "runScrollBenchmark" /* 7196 */;
+import _mod7197 from "module_7197" /* 7197 */;
+import _mod7198 from "module_7198" /* 7198 */;
+import _modDef7199 from "module_7199" /* 7199 */;
+import LayoutCommitObserver from "LayoutCommitObserver" /* 7200 */;
+import get_ActivityIndicator from "module_7127" /* 7127 */;
 
-get_ActivityIndicator = fn(17);
-({ Keyboard: closure_1, TextInput: c2 } = get_ActivityIndicator);
-
-export const useKeyboardManager = function useKeyboardManager(enabled) {
-  enabled = enabled.enabled;
-  const focused = enabled.focused;
-  enabled.useRef(undefined);
-  enabled.useRef(0);
-  enabled.useRef(undefined);
-  closure_5 = enabled.useRef(enabled);
-  const callback = enabled.useCallback(() => {
-    if (undefined !== ref3.current) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(tmp.current);
-      tmp.current = undefined;
-    }
-  }, []);
-  const items = [callback];
-  const items1 = [callback];
-  const onPageChangeStart = enabled.useCallback(() => {
-    if (closure_5.current) {
-      callback();
-      State = State.State;
-      const result = State.currentlyFocusedInput();
-      if (result != null) {
-        result.blur();
-      }
-      closure_2.current = result;
-      const _Date = Date;
-      closure_3.current = Date.now();
-    }
-  }, items);
-  const onPageChangeCancel = enabled.useCallback(() => {
-    if (closure_5.current) {
-      callback();
-      const current = ref.current;
-      if (current) {
-        const _Date = Date;
-        if (Date.now() - ref2.current < 100) {
-          const _setTimeout = setTimeout;
-          closure_4.current = setTimeout(() => {
-            if (current != null) {
-              current.focus();
-            }
-            closure_2.current = undefined;
-          }, 100);
-        } else {
-          if (current != null) {
-            current.focus();
-          }
-          tmp3.current = undefined;
-        }
-      }
-    }
-  }, items1);
-  const items2 = [callback, onPageChangeCancel];
-  const items3 = [focused];
-  const onPageChangeConfirm = enabled.useCallback((active) => {
-    active = active.active;
-    if (closure_5.current) {
-      if (active.closing) {
-        callback();
-        if (tmp) {
-          if (active) {
-            active = ref;
-            const current = ref.current;
-            if (current != null) {
-              active = current.blur();
-            }
-          }
-        } else {
-          framebus.dismiss();
-        }
-        ref.current = undefined;
-      } else {
-        onPageChangeCancel();
-      }
-    }
-  }, items2);
-  const layoutEffect = enabled.useLayoutEffect(() => {
-    let current = closure_5.current;
-    if (current) {
-      current = !focused;
-    }
-    if (current) {
-      framebus.dismiss();
-    }
-  }, items3);
-  const layoutEffect1 = enabled.useLayoutEffect(() => {
-    closure_5.current = enabled;
-  });
-  const items4 = [callback];
-  const effect = enabled.useEffect(() => () => callback(), items4);
-  return { onPageChangeStart, onPageChangeConfirm, onPageChangeCancel };
-};
+if (get_ActivityIndicator.isNewArch()) {
+  exports.FlashList = FlashList.FlashList;
+  exports.FlashListRef = _mod7188.FlashListRef;
+  exports.FlashListProps = RenderTargetOptions.FlashListProps;
+  exports.ListRenderItem = RenderTargetOptions.ListRenderItem;
+  exports.ListRenderItemInfo = RenderTargetOptions.ListRenderItemInfo;
+  exports.RenderTarget = RenderTargetOptions.RenderTarget;
+  exports.RenderTargetOptions = RenderTargetOptions.RenderTargetOptions;
+  exports.AnimatedFlashList = _modDef7190;
+  exports.useBenchmark = _mod7191.useBenchmark;
+  exports.BenchmarkParams = _mod7191.BenchmarkParams;
+  exports.BenchmarkResult = _mod7191.BenchmarkResult;
+  exports.useDataMultiplier = _mod7195.useDataMultiplier;
+  exports.useFlatListBenchmark = runScrollBenchmark.useFlatListBenchmark;
+  exports.FlatListBenchmarkParams = runScrollBenchmark.FlatListBenchmarkParams;
+  exports.useLayoutState = _mod7149.useLayoutState;
+  exports.useRecyclingState = _mod7197.useRecyclingState;
+  exports.useMappingHelper = _mod7198.useMappingHelper;
+  exports.JSFPSMonitor = JSFPSMonitor.JSFPSMonitor;
+  exports.JSFPSResult = JSFPSMonitor.JSFPSResult;
+  exports.autoScroll = Cancellable.autoScroll;
+  exports.Cancellable = Cancellable.Cancellable;
+  exports.ViewToken = _modDef7199;
+  exports.useFlashListContext = _mod7150.useFlashListContext;
+  exports.LayoutCommitObserver = LayoutCommitObserver.LayoutCommitObserver;
+  exports.LayoutCommitObserverProps = LayoutCommitObserver.LayoutCommitObserverProps;
+} else {
+  const _Error = Error;
+  const error = new Error(ErrorMessages.ErrorMessages.flashListV2OnlySupportsNewArchitecture);
+  throw error;
+}

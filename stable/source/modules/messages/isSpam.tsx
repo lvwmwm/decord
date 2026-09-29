@@ -1,12 +1,12 @@
-// Module ID: 7610
-// Function ID: 7611
+// Module ID: 7781
+// Function ID: 7782
 // Name: isSpam
-// Dependencies: [1371, 1074, 7611, 2]
+// Dependencies: [1372, 1074, 7782, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 7610 (isSpam)
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7611 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 7781 (isSpam)
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7782 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const Constants = fn(1074);

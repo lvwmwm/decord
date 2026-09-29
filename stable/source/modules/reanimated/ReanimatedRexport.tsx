@@ -1,12 +1,12 @@
-// Module ID: 4373
-// Function ID: 4374
+// Module ID: 4524
+// Function ID: 4525
 // Name: ReanimatedRexport
-// Dependencies: [1364, 1636, 4374, 2]
+// Dependencies: [1365, 1637, 4525, 2]
 
-// Module 4373 (ReanimatedRexport)
-import cancelAnimationDefault from "cancelAnimation" /* 1636 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4374 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1364 */;
+// Module 4524 (ReanimatedRexport)
+import cancelAnimationDefault from "cancelAnimation" /* 1637 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4525 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,23 +1,23 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 16060
+// Function ID: 16061
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 11562, 4552, 1234, 21, 4636, 576, 504, 11923, 15835, 4632, 5204, 4604, 15836, 15838, 1483, 1611, 5768, 5686, 4335, 14669, 2]
+// Dependencies: [32, 19, 17, 11717, 4703, 1235, 21, 4788, 576, 504, 12072, 16061, 4784, 5371, 4756, 16062, 16064, 1484, 1612, 5936, 5854, 4486, 14889, 2]
 
-// Module 15834 (DevToolsContent)
+// Module 16060 (DevToolsContent)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import HapticUtils from "HapticUtils" /* 4604 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Pressables from "Pressables" /* 5204 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14669 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 15835 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 15836 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 15838 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import HapticUtils from "HapticUtils" /* 4756 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Pressables from "Pressables" /* 5371 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14889 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16061 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 16062 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 16064 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11562 */;
-import ExperimentStore from "ExperimentStore" /* 4552 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11717 */;
+import ExperimentStore from "ExperimentStore" /* 4703 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 const require = globalThis.__r;
 const useSortedDevToolsScreensDefault = useSortedDevToolsScreens;
@@ -72,7 +72,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { devToolsContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 }, sortingIcons: null, button: null, disabledButton: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 };
 obj.sortingIcons = { flexDirection: "row", gap: nativeDefault.space.PX_8 };

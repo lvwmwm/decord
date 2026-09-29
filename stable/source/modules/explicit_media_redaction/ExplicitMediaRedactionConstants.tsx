@@ -1,10 +1,10 @@
-// Module ID: 7703
-// Function ID: 7704
+// Module ID: 7875
+// Function ID: 7876
 // Name: ExplicitMediaRedactionConstants
-// Dependencies: [1095, 2]
+// Dependencies: [1096, 2]
 
-// Module 7703 (ExplicitMediaRedactionConstants)
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1095 */;
+// Module 7875 (ExplicitMediaRedactionConstants)
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 const items = [MessageEmbedTypes.MessageEmbedTypes.IMAGE, MessageEmbedTypes.MessageEmbedTypes.VIDEO, MessageEmbedTypes.MessageEmbedTypes.GIFV];

@@ -1,15 +1,15 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 15079
+// Function ID: 15080
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4285, 8079, 1074, 504, 1114, 11605, 8033, 14890, 2]
+// Dependencies: [4437, 8265, 1074, 504, 1115, 11754, 8219, 15080, 2]
 
-// Module 14889 (AccountBlockedUsersSetting)
+// Module 15079 (AccountBlockedUsersSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
+import util from "util" /* 1115 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
 require = fn;
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11754);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
@@ -21,8 +21,8 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.format(util.t["r91W/h"], { numberOfBlockedUsers });
   },
-  IconComponent: fn(8033).DenyIcon,
-  parent: fn(8079).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  IconComponent: fn(8219).DenyIcon,
+  parent: fn(8265).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: {
     route: fn(1074).UserSettingsSections.BLOCKED_USERS_V2,
     getComponent() {

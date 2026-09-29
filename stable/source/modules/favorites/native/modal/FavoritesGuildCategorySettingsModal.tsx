@@ -1,18 +1,18 @@
-// Module ID: 16209
-// Function ID: 16210
+// Module ID: 16454
+// Function ID: 16455
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 1960, 1970, 21, 4636, 576, 1483, 504, 1982, 10352, 7966, 1114, 4980, 1176, 5054, 6707, 5768, 5686, 4594, 11057, 11059, 2]
+// Dependencies: [32, 19, 17, 2044, 2054, 21, 4788, 576, 1484, 504, 2066, 10520, 8139, 1115, 5140, 1177, 5216, 6880, 5936, 5854, 4745, 11215, 11217, 2]
 // Exports: default
 
-// Module 16209 (FavoritesGuildCategorySettingsModal)
+// Module 16454 (FavoritesGuildCategorySettingsModal)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10352 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10520 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 1960 */;
+import FavoriteStore from "FavoriteStore" /* 2044 */;
 
 require = fn;
 function FavoritesGuildCategorySettings(categoryId) {
@@ -101,7 +101,7 @@ function FavoritesGuildCategorySettings(categoryId) {
     AlertActionCreatorsDefault.show(obj2);
   }, items7);
   const obj7 = { spacing: onGoBack(navigation[7]).space.PX_24, children: null };
-  const obj8 = { label: null, placeholder: null, value: null, onChange: null, maxLength: null, isClearable: true };
+  const obj8 = { label: null, placeholder: null, value: null, onChange: null, maxLength: null, clearable: true };
   let intl = tmp2(tmp3[13]).intl;
   obj8.label = intl.string(categoryId(navigation[13]).t.OCAkGP);
   let intl2 = tmp2(tmp3[13]).intl;
@@ -122,10 +122,10 @@ function FavoritesGuildCategorySettings(categoryId) {
   return ref(c5, obj6);
 }
 const ScrollView = fn(17).ScrollView;
-let maxLength = fn(1970).MAX_FAVORITE_CATEGORY_NAME_LENGTH;
+let maxLength = fn(2054).MAX_FAVORITE_CATEGORY_NAME_LENGTH;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, content: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.content = { padding: nativeDefault.space.PX_16 };
@@ -136,12 +136,12 @@ let result = size.fileFinishedImporting("modules/favorites/native/modal/Favorite
 export default function FavoritesGuildCategorySettingsModal(categoryId) {
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(11057)().onGoBack;
+  onGoBack = onGoBack(11215)().onGoBack;
   const obj = { screenKey: "favoritesGuildCategorySettings", title: null, render: null };
-  const intl = categoryId(1114).intl;
-  obj.title = intl.string(categoryId(1114).t["/uELTj"]);
+  const intl = categoryId(1115).intl;
+  obj.title = intl.string(categoryId(1115).t["/uELTj"]);
   obj.render = function render() {
     return React6(FavoritesGuildCategorySettings, { categoryId, onGoBack });
   };
-  return closure_8(onGoBack(11059), obj);
+  return closure_8(onGoBack(11217), obj);
 };

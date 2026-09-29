@@ -1,15 +1,15 @@
-// Module ID: 4459
-// Function ID: 4460
+// Module ID: 4610
+// Function ID: 4611
 // Name: UserGuildJoinRequestStore
-// Dependencies: [1371, 4460, 504, 1971, 573, 2]
+// Dependencies: [1372, 4611, 504, 2055, 573, 2]
 // Exports: joinRequestFromServer
 
-// Module 4459 (UserGuildJoinRequestStore)
+// Module 4610 (UserGuildJoinRequestStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 1971 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4460 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4611 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function handleGatewayJoinRequestUpdate(arg0) {

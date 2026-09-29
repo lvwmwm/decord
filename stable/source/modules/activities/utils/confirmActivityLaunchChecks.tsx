@@ -1,13 +1,13 @@
-// Module ID: 9669
-// Function ID: 9670
+// Module ID: 9635
+// Function ID: 9636
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 1957, 1956, 1074, 9667, 9655, 573, 4537, 4265, 9670, 9644, 9671, 8981, 9673, 2]
+// Dependencies: [5, 2041, 2040, 1074, 9636, 9629, 573, 4688, 4417, 9638, 9607, 9639, 9167, 9641, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 9669 (confirmActivityLaunchChecks)
+// Module 9635 (confirmActivityLaunchChecks)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 
 const require = fn;
 function getOrFetchApplicationForLaunch() {
@@ -174,13 +174,13 @@ let closure_9 = async function _confirmActivityChange(arg0, value) {
               if (value != null) {
                 _location = value.location;
               }
-              channel = channel.getChannel(closure_1_0(4265).getEmbeddedActivityLocationChannelId(_location));
+              channel = channel.getChannel(closure_1_0(4417).getEmbeddedActivityLocationChannelId(_location));
               if (null != value) {
                 if (null != channel) {
                   if (dependencyMap != null) {
                     dependencyMap();
                   }
-                  shouldClosePopout(9670)(tmp, channel, () => {
+                  shouldClosePopout(9638)(tmp, channel, () => {
                     value(c2[10])().leaveActivity({ location: value.location, applicationId: closure_2_0.id, shouldClosePopout });
                     closure_0(true);
                   }, () => closure_0(false));

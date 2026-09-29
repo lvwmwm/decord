@@ -1,23 +1,23 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 12998
+// Function ID: 12999
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 2021, 1979, 4620, 1074, 4262, 21, 4636, 576, 1483, 504, 5705, 1384, 7198, 1896, 7837, 9828, 7418, 8496, 10423, 12850, 7226, 4347, 2]
+// Dependencies: [5, 19, 2105, 2063, 4772, 1074, 4414, 21, 4788, 576, 1484, 504, 5873, 1385, 7372, 1980, 8009, 9815, 7589, 8681, 10070, 12999, 7400, 4498, 2]
 // Exports: default
 
-// Module 12849 (AcceptInviteContainer)
+// Module 12998 (AcceptInviteContainer)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5705 */;
+import NavigatorHeader from "NavigatorHeader" /* 5873 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import InviteStore from "InviteStore" /* 4620 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import InviteStore from "InviteStore" /* 4772 */;
 
 require = fn;
 const ThemeTypes = fn(1074).ThemeTypes;
-const GuildMemberFlags = fn(4262).GuildMemberFlags;
+const GuildMemberFlags = fn(4414).GuildMemberFlags;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { flex: { flex: 1 }, paddingContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -177,10 +177,10 @@ export default function AcceptInviteContainer(code) {
   }), items2);
   const items3 = [stateFromStoresObject, callback, onPressClose, inviteInstanceId, code];
   const callback1 = navigation.useCallback(isRegistration(function*(arg0, value) {
-    if (inviteInstanceId === 2) {
-      inviteInstanceId = 3;
+    if (v3 === 2) {
+      v3 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -191,28 +191,27 @@ export default function AcceptInviteContainer(code) {
       }
     } else {
       try {
-        inviteInstanceId = 2;
-        if (0 === v1) {
+        v3 = 2;
+        if (0 === c1) {
           if (arg0 === 1) {
-            inviteInstanceId = 3;
+            v3 = 3;
             throw value;
           } else if (arg0 === 2) {
-            inviteInstanceId = 3;
+            v3 = 3;
             let obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_128_0 = undefined;
-            closure_128_1 = function transitionToInviteChannel() {
+            function transitionToInviteChannel() {
               const self = this;
-              const apply = closure_2.apply;
+              const apply = closure_3.apply;
               if (typeof apply === "unknown") {
                 let applyArgumentsResult = HermesBuiltin.applyArguments(self);
               } else {
                 applyArgumentsResult = apply(self, arguments);
               }
               return applyArgumentsResult;
-            };
-            closure_128_2 = function _transitionToInviteChannel() {
+            }
+            closure_3 = function _transitionToInviteChannel() {
               const self = this;
               const tmp = isRegistration(function*(arg0, value) {
                 if (c6 === 2) {
@@ -268,13 +267,13 @@ export default function AcceptInviteContainer(code) {
                                 c4 = 1;
                                 c5 = 2;
                                 c6 = 1;
-                                const obj7 = { value: v1(tmp12[18]).performRoleSubscriptionUpsellRedirect(id), done: false };
+                                const obj7 = { value: invite(tmp12[18]).performRoleSubscriptionUpsellRedirect(id), done: false };
                                 return obj7;
                               }
                             }
                             tmp11Result2 = tmp11(tmp12[16]);
                           }
-                          obj2 = closure_2_0(closure_2_2[16]);
+                          obj2 = v3(transitionToInviteChannel[16]);
                         } else {
                           closure_1();
                         }
@@ -313,7 +312,7 @@ export default function AcceptInviteContainer(code) {
                   }
                 }
               });
-              closure_2 = tmp;
+              closure_3 = tmp;
               const apply = tmp.apply;
               if (typeof apply === "unknown") {
                 let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -322,55 +321,76 @@ export default function AcceptInviteContainer(code) {
               }
               return applyArgumentsResult;
             };
-            const invite = stateFromStoresObject.invite;
-            closure_128_0 = invite;
-            if (obj10.handleNSFWGuildInvite(invite)) {
-              inviteInstanceId = 3;
-              const obj4 = { value: onPressClose(), done: true };
-              return obj4;
-            } else {
-              if (!stateFromStoresObject.isGuildMember) {
-                if (null != invite) {
-                  let obj5 = { inviteKey: code, context: null, callback: null };
-                  if (null != inviteInstanceId) {
-                    let obj6 = { invite_instance_id: tmp26 };
-                    let obj7 = obj6;
-                  } else {
-                    obj7 = {};
-                  }
-                  const obj8 = { location: "Accept Invite Page" };
-                  const merged = Object.assign(obj7);
-                  obj5.context = obj8;
-                  obj5.callback = function callback(arg0) {
-                    v1(arg0);
-                  };
-                  obj5 = v1(tmp23[19]).acceptInvite(obj5);
-                  const obj11 = v1(tmp23[19]);
-                }
+            function join() {
+              const self = this;
+              const apply = closure_4.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
               }
-              v1 = 1;
-              inviteInstanceId = 1;
-              const obj9 = { value: callback(), done: false };
-              return obj9;
+              return applyArgumentsResult;
             }
-            obj10 = tmp2(inviteInstanceId[20]);
-            tmp23 = inviteInstanceId;
+            closure_4 = function _join() {
+              const self = this;
+              const tmp = isRegistration(function*() {
+                const inviteKey = tmp4;
+                if (!v3) {
+                  if (null != invite) {
+                    let obj4 = { inviteKey, context: null, callback: null };
+                    if (null != c2) {
+                      let obj6 = { invite_instance_id: tmp24 };
+                    } else {
+                      obj6 = {};
+                    }
+                    const merged = Object.assign(obj6);
+                    obj4.context = { location: "Accept Invite Page" };
+                    obj4.callback = function callback(arg0) {
+                      closure_1_2(arg0);
+                    };
+                    obj4 = invite(transitionToInviteChannel[19]).acceptInvite(obj4);
+                    invite(transitionToInviteChannel[19]);
+                  }
+                }
+                yield closure_1_6();
+                if (arg0 !== 2) {
+                  closure_128_2(closure_128_1);
+                  c2 = 3;
+                }
+                return arg1;
+              });
+              closure_4 = tmp;
+              const apply = tmp.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            };
+            ({ isGuildMember: c0, invite } = stateFromStoresObject);
+            let obj4 = { onConfirm: join, onCancel: onPressClose };
+            if (!obj5.handleNSFWGuildInvite(invite, obj4)) {
+              c1 = 1;
+              v3 = 1;
+              let obj6 = { value: join(), done: false };
+              return obj6;
+            }
+            obj5 = v3(inviteInstanceId[20]);
           }
         } else if (arg0 === 1) {
-          inviteInstanceId = 3;
+          v3 = 3;
           throw value;
-        } else {
-          if (arg0 !== 2) {
-            closure_128_1(closure_128_0);
-            inviteInstanceId = 3;
-          }
-          inviteInstanceId = 3;
+        } else if (arg0 === 2) {
+          v3 = 3;
           let obj = { value, done: true };
           return obj;
         }
-      } catch (tmp16) {
-        inviteInstanceId = tmp;
-        throw tmp16;
+        v3 = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp5) {
+        v3 = tmp;
+        throw tmp5;
       }
     }
   }), items3);

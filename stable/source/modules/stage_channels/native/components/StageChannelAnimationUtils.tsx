@@ -1,12 +1,12 @@
-// Module ID: 10171
-// Function ID: 10172
+// Module ID: 10338
+// Function ID: 10339
 // Name: StageChannelAnimationUtils
-// Dependencies: [4373, 9808, 9806, 1611, 4637, 2]
+// Dependencies: [4524, 9798, 9796, 1612, 4789, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 10171 (StageChannelAnimationUtils)
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import timing from "timing" /* 4637 */;
+// Module 10338 (StageChannelAnimationUtils)
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import timing from "timing" /* 4789 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 8170
-// Function ID: 8171
+// Module ID: 8356
+// Function ID: 8357
 // Name: ReverseTrialUtils
-// Dependencies: [1371, 504, 2]
+// Dependencies: [1372, 504, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 8170 (ReverseTrialUtils)
+// Module 8356 (ReverseTrialUtils)
 import initialize from "initialize" /* 504 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

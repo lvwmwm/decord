@@ -1,15 +1,15 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10266
+// Function ID: 10267
 // Name: NitroUpsellButton
-// Dependencies: [19, 4628, 21, 504, 5056, 8785, 576, 2]
+// Dependencies: [19, 4780, 21, 504, 5218, 8972, 576, 2]
 
-// Module 10099 (NitroUpsellButton)
+// Module 10266 (NitroUpsellButton)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8785 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8972 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
 require = fn;
 const jsx = fn(21).jsx;

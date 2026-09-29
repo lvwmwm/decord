@@ -1,31 +1,12 @@
 // Module ID: 4004
 // Function ID: 4005
-// Dependencies: [3725, 3726]
+// Dependencies: []
 // Exports: default
 
 // Module 4004
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+let closure_0 = { lastWeek: "'i' EEEE's kl.' p", yesterday: "'ig\u00E5r kl.' p", today: "'idag kl.' p", tomorrow: "'imorgon kl.' p", nextWeek: "EEEE 'kl.' p", other: "P" };
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
-  let tmp3 = obj;
-} else {
-  tmp3 = _typeof;
-}
-_typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
-  let tmp5 = obj2;
-} else {
-  tmp5 = requiredArgs;
-}
-requiredArgs = tmp5;
-
-export default function getTime(arg0) {
-  requiredArgs.default(1, arguments);
-  return _typeof.default(arg0).getTime();
+export default function formatRelative(arg0, arg1, arg2, arg3) {
+  return closure_0[arg0];
 };
 export default exports.default;

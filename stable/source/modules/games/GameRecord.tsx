@@ -1,18 +1,19 @@
-// Module ID: 1917
-// Function ID: 1918
+// Module ID: 2001
+// Function ID: 2002
 // Name: GameRecord
-// Dependencies: [1386, 1918, 1894, 1924, 1396, 1369, 2]
+// Dependencies: [1387, 2002, 1978, 2008, 1397, 1370, 2]
 
-// Module 1917 (GameRecord)
-import AvatarUtils from "AvatarUtils" /* 1396 */;
-import Server from "Server" /* 1894 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 1924 */;
-import Record from "Record" /* 1386 */;
-import ApplicationRecord from "ApplicationRecord" /* 1918 */;
+// Module 2001 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import AvatarUtils from "AvatarUtils" /* 1397 */;
+import Server from "Server" /* 1978 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2008 */;
+import Record from "Record" /* 1387 */;
+import ApplicationRecord from "ApplicationRecord" /* 2002 */;
 
 require = fn;
-const createExecutable = fn(1918).createExecutable;
-const size = fn(2);
+const createExecutable = fn(2002).createExecutable;
+let size = fn(2);
 const result = size.fileFinishedImporting("modules/games/GameRecord.tsx");
 class GameRecord extends tmp2 {
   constructor(arg0) {
@@ -158,8 +159,12 @@ prototype["getCoverURL"] = function getCoverURL(size) {
   }
   return getGameMediaRefURLDefault(this.id, cover, { keepAspectRatio: true, format: str, size });
 };
-prototype["getArtworkURLs"] = function getArtworkURLs() {
+prototype["getArtworkURLs"] = function getArtworkURLs(size) {
   const self = this;
+  let str = null;
+  if (str(self[4]).SUPPORTS_WEBP) {
+    str = "webp";
+  }
   const media = this.media;
   let artwork;
   if (media != null) {
@@ -168,8 +173,37 @@ prototype["getArtworkURLs"] = function getArtworkURLs() {
   if (artwork == null) {
     artwork = [];
   }
-  const mapped = artwork.map((item) => getGameMediaRefURLDefault(self.id, item, { keepAspectRatio: true }));
-  return mapped.filter(self(1369).isNotNullish);
+  const mapped = artwork.map((item) => getGameMediaRefURLDefault(self.id, item, { size, format: str, keepAspectRatio: true }));
+  return mapped.filter(str(self[5]).isNotNullish);
+};
+prototype["getScreenshotURL"] = function getScreenshotURL(index, size) {
+  const screenshotUrls = this.screenshotUrls;
+  let tmp;
+  if (screenshotUrls != null) {
+    tmp = screenshotUrls[index];
+  }
+  let tmp7Result = null;
+  if (null != tmp) {
+    const obj = { type: "url", value: tmp };
+    const obj2 = { size, format: null, keepAspectRatio: true };
+    let str = null;
+    if (AvatarUtils.SUPPORTS_WEBP) {
+      str = "webp";
+    }
+    obj2.format = str;
+    tmp7Result = getGameMediaRefURLDefault(this.id, obj, obj2);
+  }
+  return tmp7Result;
+};
+prototype["getScreenshotURLs"] = function getScreenshotURLs(arg0) {
+  const self = this;
+  closure_0 = arg0;
+  let screenshotUrls = this.screenshotUrls;
+  if (screenshotUrls == null) {
+    screenshotUrls = [];
+  }
+  const mapped = screenshotUrls.map((item, index) => self.getScreenshotURL(index, closure_0));
+  return mapped.filter(GlobalUtils.isNotNullish);
 };
 prototype["getCompanyByRole"] = function getCompanyByRole(DEVELOPER) {
   closure_0 = DEVELOPER;

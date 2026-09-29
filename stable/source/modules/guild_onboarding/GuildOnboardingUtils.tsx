@@ -1,21 +1,21 @@
-// Module ID: 7209
-// Function ID: 7210
+// Module ID: 7383
+// Function ID: 7384
 // Name: GuildOnboardingUtils
-// Dependencies: [1957, 5362, 2012, 1979, 4275, 7204, 1074, 4262, 504, 1384, 5143, 7205, 4280, 1369, 558, 1925, 7210, 2]
+// Dependencies: [2041, 5530, 2096, 2063, 4427, 7378, 1074, 4414, 504, 1385, 5309, 7379, 4432, 1370, 558, 2009, 7384, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 7209 (GuildOnboardingUtils)
+// Module 7383 (GuildOnboardingUtils)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import FlagUtilsAll from "FlagUtils" /* 1384 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5143 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 7205 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5362 */;
-import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import FlagUtilsAll from "FlagUtils" /* 1385 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5309 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 7379 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5530 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4427 */;
 
 const require = globalThis.__r;
 
@@ -82,11 +82,11 @@ function areStatesEqual(arg0, arg1) {
   }
   return tmp;
 }
-let closure_7 = fn(2012).GUILD_SELECTABLE_CHANNELS_KEY;
-const OnboardingConnectionType = fn(7204).OnboardingConnectionType;
+let closure_7 = fn(2096).GUILD_SELECTABLE_CHANNELS_KEY;
+const OnboardingConnectionType = fn(7378).OnboardingConnectionType;
 const Constants = fn(1074);
 ({ GuildFeatures: closure_11, Permissions: closure_12 } = Constants);
-const GuildMemberFlags = fn(4262).GuildMemberFlags;
+const GuildMemberFlags = fn(4414).GuildMemberFlags;
 let date = new Date(1682488800000);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/GuildOnboardingUtils.tsx");

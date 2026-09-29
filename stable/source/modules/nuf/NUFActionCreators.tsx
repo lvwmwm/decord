@@ -1,10 +1,10 @@
-// Module ID: 12879
-// Function ID: 12880
+// Module ID: 13028
+// Function ID: 13029
 // Name: nuf/NUFActionCreators
 // Dependencies: [573, 2]
 // Exports: setNewUser, setNewUserFlowCompleted
 
-// Module 12879 (nuf/NUFActionCreators)
+// Module 13028 (nuf/NUFActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

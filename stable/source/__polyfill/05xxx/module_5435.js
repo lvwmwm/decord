@@ -1,9 +1,51 @@
 // Module ID: 5435
 // Function ID: 5436
-// Dependencies: [1120]
+// Dependencies: [5436, 5448, 5456]
 
 // Module 5435
-import registerAsset from "module_1120" /* 1120 */;
+import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 5436 */;
+import _mod5448 from "module_5448" /* 5448 */;
+import _mod5456 from "module_5456" /* 5456 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "269225999db4429a7f3e74da6725c7b9", name: "img_account_sync_playstation_white", type: "png" });
+const self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (self2) {
+  let fn = self;
+  if (self) {
+    fn = self.__exportStar;
+  }
+  if (!fn) {
+    fn = (obj, exports) => {
+      for (const key10007 in arg0) {
+        let tmp6 = "default" === key10007;
+        if (tmp6) {
+          if (tmp6) {
+            continue;
+          } else {
+            let tmp4 = self2(arg1, arg0, key10007);
+            continue;
+          }
+          continue;
+        } else {
+          let _Object = Object;
+          hasOwnProperty = Object.prototype.hasOwnProperty;
+          let call = hasOwnProperty.call;
+          if (typeof call === "unknown") {
+            let hasOwnPropertyResult = hasOwnProperty(key10007);
+          } else {
+            hasOwnPropertyResult = call(arg1, key10007);
+          }
+        }
+      }
+    };
+  }
+  const _Object2 = Object;
+  fn(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
+  fn(_mod5448, exports);
+  fn(_mod5456, exports);
+} else {
+  let _Object = Object;
+}

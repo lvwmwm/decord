@@ -1,9 +1,9 @@
 // Module ID: 16097
 // Function ID: 16098
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 16097
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf/native/components/notification", width: 150.5, height: 156, scales: [2, 3], hash: "af47f5760d10cc835b5537c36ba26c7a", name: "redesign_notification_illustration", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "74d1abdb8a51df8677242205d5859ee7", name: "GridSquareIcon", type: "png" });

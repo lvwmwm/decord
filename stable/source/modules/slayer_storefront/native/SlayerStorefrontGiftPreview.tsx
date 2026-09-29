@@ -1,14 +1,14 @@
-// Module ID: 11584
-// Function ID: 11585
+// Module ID: 11739
+// Function ID: 11740
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 4636, 8952, 4632, 1114, 9589, 3460, 2]
+// Dependencies: [19, 17, 21, 4788, 9138, 4784, 1115, 10094, 3580, 2]
 // Exports: default
 
-// Module 11584 (SlayerStorefrontGiftPreview)
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8952 */;
-import InfoBox from "InfoBox" /* 9589 */;
+// Module 11739 (SlayerStorefrontGiftPreview)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9138 */;
+import InfoBox from "InfoBox" /* 10094 */;
 import noop from "module_19" /* 19 */;
 
 const InfoBoxDefault = InfoBox;
@@ -26,7 +26,7 @@ function WarningBox(application) {
     const obj = { look: InfoBox.InfoBoxLooks.WARNING, style: tmp.warningBox, children: null };
     const intl = util.intl;
     if (mobileAccountLinkingDisabled) {
-      BMMo2K = name(3460).BMMo2K;
+      BMMo2K = name(3580).BMMo2K;
       tmp2 = application == tmp2;
       name = undefined;
       if (!tmp2) {
@@ -43,10 +43,10 @@ function WarningBox(application) {
         name1 = application.name;
       }
       obj3.applicationName = name1;
-      obj.children = intl.formatToPlainString(tmp6(1114).t["EgCl+Q"], obj3);
+      obj.children = intl.formatToPlainString(tmp6(1115).t["EgCl+Q"], obj3);
       tmp7 = obj;
     } else {
-      obj.children = intl.format(tmp6(1114).t["3T0cpx"], {});
+      obj.children = intl.format(tmp6(1115).t["3T0cpx"], {});
       tmp7 = obj;
     }
     React4(InfoBoxDefault, tmp7);
@@ -55,7 +55,7 @@ function WarningBox(application) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");

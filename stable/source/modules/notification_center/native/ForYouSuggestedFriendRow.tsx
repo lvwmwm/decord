@@ -1,19 +1,19 @@
-// Module ID: 16536
-// Function ID: 16537
+// Module ID: 16782
+// Function ID: 16783
 // Name: ForYouSuggestedFriendRow
-// Dependencies: [19, 17, 4628, 4285, 1074, 21, 4636, 10249, 576, 1363, 7265, 5063, 563, 8296, 1896, 4481, 16140, 1114, 4373, 16537, 5204, 16538, 1176, 4632, 16539, 16540, 1240, 2]
+// Dependencies: [19, 17, 4780, 4437, 1074, 21, 4788, 10416, 576, 1364, 7439, 5225, 563, 8480, 1980, 4632, 16385, 1115, 4524, 16783, 5371, 16784, 1177, 4784, 16785, 16786, 1241, 2]
 // Exports: default
 
-// Module 16536 (ForYouSuggestedFriendRow)
+// Module 16782 (ForYouSuggestedFriendRow)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7265 */;
-import ChannelListLayout from "ChannelListLayout" /* 10249 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import UserUtilsDefault from "UserUtils" /* 4632 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7439 */;
+import ChannelListLayout from "ChannelListLayout" /* 10416 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
 require = fn;
 const View = fn(17).View;
@@ -21,7 +21,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, RelationshipTypes: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_12 = createStyles.createStyles((layout) => {
   const layoutStyles = ChannelListLayout.getLayoutStyles(layout);
   const sizeStyle = ChannelListLayout.makeSizeStyle(layoutStyles.icon.wrapper.size);
@@ -53,14 +53,14 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
   }
   let sharedValue;
   let stateFromStores;
-  const messagesTabLayout = suggestedFriend(10249).useMessagesTabLayout(panelVariant);
+  const messagesTabLayout = suggestedFriend(10416).useMessagesTabLayout(panelVariant);
   const tmp4 = closure_12(messagesTabLayout);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  const obj = suggestedFriend(10249);
-  const layoutStyles = suggestedFriend(10249).getLayoutStyles(messagesTabLayout);
-  const obj2 = suggestedFriend(10249);
-  const fontScale = suggestedFriend(5063).useFontScale();
-  const obj3 = suggestedFriend(5063);
+  const obj = suggestedFriend(10416);
+  const layoutStyles = suggestedFriend(10416).getLayoutStyles(messagesTabLayout);
+  const obj2 = suggestedFriend(10416);
+  const fontScale = suggestedFriend(5225).useFontScale();
+  const obj3 = suggestedFriend(5225);
   const items = [stateFromStores];
   const stateFromStoresObject = suggestedFriend(563).useStateFromStoresObject(items, () => stateFromStores.useReducedMotion);
   const items1 = [suggestedFriend, analyticsLocations];
@@ -68,7 +68,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
     if (suggestedFriend.friendSuggestionName.length > 0) {
       let friendSuggestionName = suggestedFriend.friendSuggestionName;
     }
-    const suggestedContactNameForSuggestion = tmp(16140).getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
+    const suggestedContactNameForSuggestion = tmp(16385).getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
     let str2 = "";
     if (null != suggestedContactNameForSuggestion) {
       const _HermesInternal = HermesInternal;
@@ -76,12 +76,12 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
     }
     if (null != suggestedFriend.mutualFriendsCount) {
       if (suggestedFriend.mutualFriendsCount > 0) {
-        const intl = tmp(1114).intl;
+        const intl = tmp(1115).intl;
         const obj6 = { count: suggestedFriend.mutualFriendsCount };
-        let formatToPlainStringResult = intl.formatToPlainString(tmp(1114).t.z7y34b, obj6);
+        let formatToPlainStringResult = intl.formatToPlainString(tmp(1115).t.z7y34b, obj6);
       }
-      sharedValue = tmp(4373).useSharedValue(false);
-      const tmpResult8 = tmp(4373);
+      sharedValue = tmp(4524).useSharedValue(false);
+      const tmpResult8 = tmp(4524);
       const items2 = [RelationshipStore];
       stateFromStores = tmp(563).useStateFromStores(items2, () => RelationshipStore.getRelationshipType(suggestedFriend.user.id) === constants2.PENDING_OUTGOING);
       const items3 = [sharedValue, stateFromStores];
@@ -96,16 +96,16 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       const obj8 = { borderRadius: layoutStyles.container.borderRadius };
       items4[1] = obj8;
       obj7.style = items4;
-      const tmpResult10 = tmp(16537);
+      const tmpResult10 = tmp(16783);
       const obj9 = { style: tmp4.avatar, children: null };
       const obj10 = { user: suggestedFriend.user, guildId: "r", size: layoutStyles.icon.avatarSize, animate: !stateFromStoresObject };
-      obj9.children = closure_9(tmp(1176).Avatar, obj10);
+      obj9.children = closure_9(tmp(1177).Avatar, obj10);
       const items5 = [closure_9(sharedValue, obj9), , ];
       const obj11 = { style: tmp4.textContainer, children: null };
       const obj12 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-default", style: tmp4.nameText, children: friendSuggestionName };
-      const items6 = [closure_9(tmp(4632).Text, obj12), ];
+      const items6 = [closure_9(tmp(4784).Text, obj12), ];
       const tmp20 = closure_11;
-      const tmpResult11 = tmp(16538);
+      const tmpResult11 = tmp(16784);
       let num3 = 0;
       if (tmpResult12.isAndroid()) {
         num3 = -2;
@@ -113,7 +113,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       const obj13 = { style: null, children: null };
       const obj14 = { marginTop: num3 };
       obj13.style = obj14;
-      tmpResult12 = tmp(1363);
+      tmpResult12 = tmp(1364);
       let num4 = 0;
       if (tmpResult13.isAndroid()) {
         num4 = 2;
@@ -121,15 +121,15 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       const obj15 = { lineHeight: layoutStyles.messagePreview.height + num4, textVariant: layoutStyles.messagePreview.text.variant, actioned: sharedValue, maxFontSizeMultiplier: 1.75, label: null, actionStatus: null, animate: null };
       const _HermesInternal2 = HermesInternal;
       obj15.label = "" + formatToPlainStringResult + str2;
-      const intl2 = tmp(1114).intl;
-      obj15.actionStatus = intl2.string(tmp(1114).t.Kzyxm9);
+      const intl2 = tmp(1115).intl;
+      obj15.actionStatus = intl2.string(tmp(1115).t.Kzyxm9);
       obj15.animate = !stateFromStoresObject;
-      obj13.children = closure_9(tmp(16539).ActionStatusSubLabel, obj15);
+      obj13.children = closure_9(tmp(16785).ActionStatusSubLabel, obj15);
       items6[1] = closure_9(sharedValue, obj13);
       obj11.children = items6;
       items5[1] = closure_10(sharedValue, obj11);
       const obj16 = { user: suggestedFriend.user, added: sharedValue, size: null, onAddSuggestion: null, onFinishAnimation: null, animate: null };
-      tmpResult13 = tmp(1363);
+      tmpResult13 = tmp(1364);
       let str4 = "sm";
       if (tmpResult14.isLayoutCozy(messagesTabLayout)) {
         str4 = "md";
@@ -144,16 +144,16 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
         dependencyMap(suggestedFriend);
       };
       obj16.animate = !stateFromStoresObject;
-      items5[2] = closure_9(tmp(16540).ContactSuggestionActions, obj16);
+      items5[2] = closure_9(tmp(16786).ContactSuggestionActions, obj16);
       obj17.children = items5;
       const obj18 = { layout: messagesTabLayout, fontScale, panelVariant };
       obj7.children = tmpResult11.renderChannelWrapper(closure_10(tmp20, obj17), obj18);
       const obj19 = { layout: messagesTabLayout, panelVariant };
-      return tmpResult10.renderChannelPressableWrapper(closure_9(tmp(5204).PressableHighlight, obj7), obj19);
+      return tmpResult10.renderChannelPressableWrapper(closure_9(tmp(5371).PressableHighlight, obj7), obj19);
     }
-    const tmpResult = tmp(16140);
-    formatToPlainStringResult = tmp5(4481).getName(suggestedFriend.user);
-    const tmp5Result = tmp5(4481);
+    const tmpResult = tmp(16385);
+    formatToPlainStringResult = tmp5(4632).getName(suggestedFriend.user);
+    const tmp5Result = tmp5(4632);
   }
   const obj4 = suggestedFriend(563);
   obj5 = analyticsLocations;

@@ -1,114 +1,200 @@
 // Module ID: 4379
 // Function ID: 4380
-// Dependencies: [42, 41, 93, 95, 98, 158, 17]
+// Dependencies: [4380]
 
 // Module 4379
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import _mod4380 from "module_4380" /* 4380 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let _classCallCheck = _classCallCheck_mod;
-get_ActivityIndicator = fn(17);
-({ NativeModules: c3, Platform } = get_ActivityIndicator);
-class ModuleNotFoundError {
-  constructor(arg0) {
-    self = this;
-    tmp = ModuleNotFoundError;
-    tmp2 = closure_0(this, ModuleNotFoundError);
-    NativeUnimoduleProxy = closure_3.NativeUnimoduleProxy;
-    ExponentConstants = undefined;
-    if (NativeUnimoduleProxy != null) {
-      modulesConstants = NativeUnimoduleProxy.modulesConstants;
-      if (modulesConstants != null) {
-        ExponentConstants = modulesConstants.ExponentConstants;
-      }
-    }
-    str = "react-native";
-    if (null != ExponentConstants) {
-      str2 = "expo";
-      if ("expo" === ExponentConstants.appOwnership) {
-        str2 = "expo-go";
-      }
-      str = str2;
-    }
-    if ("expo-go" === str) {
-      items = ["NitroModules are not supported in Expo Go! Use EAS (`expo prebuild`) or eject to a bare workflow instead."];
-      tmp12 = c2;
-      obj3 = c2(tmp);
-      tmp13 = closure_1;
-      tmp14 = closure_4;
-      if (closure_4()) {
-        tmp16 = globalThis;
-        _Reflect2 = Reflect;
-        constructResult = Reflect.construct(obj3, items, tmp12(self).constructor);
-      } else {
-        constructResult = obj3.apply(self, items);
-      }
-      return tmp13(tmp13(self, constructResult));
-    } else {
-      items1 = [];
-      str7 = "Make sure react-native-nitro-modules/NitroModules is correctly autolinked (run `npx react-native config` to verify)";
-      arr1 = items1.push("Make sure react-native-nitro-modules/NitroModules is correctly autolinked (run `npx react-native config` to verify)");
-      str8 = "Make sure you enabled the new architecture (TurboModules) and CodeGen properly generated the \"NativeNitroModules\"/NitroModules specs. See https://github.com/reactwg/react-native-new-architecture/blob/main/docs/enable-apps.md";
-      arr4 = items1.push("Make sure you enabled the new architecture (TurboModules) and CodeGen properly generated the \"NativeNitroModules\"/NitroModules specs. See https://github.com/reactwg/react-native-new-architecture/blob/main/docs/enable-apps.md");
-      str9 = "Make sure you are using react-native 0.75.0 or higher.";
-      arr5 = items1.push("Make sure you are using react-native 0.75.0 or higher.");
-      str10 = "Make sure you rebuilt the app.";
-      arr6 = items1.push("Make sure you rebuilt the app.");
-      str11 = "expo";
-      if ("expo" === str) {
-        str3 = "Make sure you ran `expo prebuild`.";
-        arr7 = items1.push("Make sure you ran `expo prebuild`.");
-      }
-      tmp5 = global;
-      str4 = "Make sure gradle is synced.";
-      arr8 = items1.push("Make sure gradle is synced.");
-      str5 = "\n* ";
-      str6 = "Failed to get NitroModules: The native \"NitroModules\" Turbo/Native-Module could not be found.\n* ";
-      items2 = [, ];
-      items2[0] = `Failed to get NitroModules: The native "NitroModules" Turbo/Native-Module could not be found.
-* ${arr3.join("\n* ")}`;
-      obj = { cause: null };
-      obj.cause = global;
-      items2[1] = obj;
-      tmp7 = c2;
-      obj2 = c2(tmp);
-      tmp9 = closure_4;
-      tmp8 = closure_1;
-      if (closure_4()) {
-        tmp11 = globalThis;
-        _Reflect = Reflect;
-        constructResult1 = Reflect.construct(obj2, items2, tmp7(self).constructor);
-      } else {
-        constructResult1 = obj2.apply(self, items2);
-      }
-      return tmp8(self, constructResult1);
+if (typeof exports === "object") {
+  if (undefined !== module) {
+    if (typeof require === "function") {
+      const _module = _mod4380;
+      const obj2 = { months: null, monthsShort: null, weekdays: null, weekdaysShort: null, weekdaysMin: null, longDateFormat: null, calendar: null, relativeTime: null, dayOfMonthOrdinalParse: null, ordinal: null, week: null };
+      const split = "\u044F\u043D\u0443\u0430\u0440\u0438_\u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438_\u043C\u0430\u0440\u0442_\u0430\u043F\u0440\u0438\u043B_\u043C\u0430\u0439_\u044E\u043D\u0438_\u044E\u043B\u0438_\u0430\u0432\u0433\u0443\u0441\u0442_\u0441\u0435\u043F\u0442\u0435\u043C\u0432\u0440\u0438_\u043E\u043A\u0442\u043E\u043C\u0432\u0440\u0438_\u043D\u043E\u0435\u043C\u0432\u0440\u0438_\u0434\u0435\u043A\u0435\u043C\u0432\u0440\u0438".split;
+      obj2.months = "\u044F\u043D\u0443\u0430\u0440\u0438_\u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438_\u043C\u0430\u0440\u0442_\u0430\u043F\u0440\u0438\u043B_\u043C\u0430\u0439_\u044E\u043D\u0438_\u044E\u043B\u0438_\u0430\u0432\u0433\u0443\u0441\u0442_\u0441\u0435\u043F\u0442\u0435\u043C\u0432\u0440\u0438_\u043E\u043A\u0442\u043E\u043C\u0432\u0440\u0438_\u043D\u043E\u0435\u043C\u0432\u0440\u0438_\u0434\u0435\u043A\u0435\u043C\u0432\u0440\u0438".split("_");
+      const split2 = "\u044F\u043D\u0443_\u0444\u0435\u0432_\u043C\u0430\u0440_\u0430\u043F\u0440_\u043C\u0430\u0439_\u044E\u043D\u0438_\u044E\u043B\u0438_\u0430\u0432\u0433_\u0441\u0435\u043F_\u043E\u043A\u0442_\u043D\u043E\u0435_\u0434\u0435\u043A".split;
+      obj2.monthsShort = "\u044F\u043D\u0443_\u0444\u0435\u0432_\u043C\u0430\u0440_\u0430\u043F\u0440_\u043C\u0430\u0439_\u044E\u043D\u0438_\u044E\u043B\u0438_\u0430\u0432\u0433_\u0441\u0435\u043F_\u043E\u043A\u0442_\u043D\u043E\u0435_\u0434\u0435\u043A".split("_");
+      const split3 = "\u043D\u0435\u0434\u0435\u043B\u044F_\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u043D\u0438\u043A_\u0432\u0442\u043E\u0440\u043D\u0438\u043A_\u0441\u0440\u044F\u0434\u0430_\u0447\u0435\u0442\u0432\u044A\u0440\u0442\u044A\u043A_\u043F\u0435\u0442\u044A\u043A_\u0441\u044A\u0431\u043E\u0442\u0430".split;
+      obj2.weekdays = "\u043D\u0435\u0434\u0435\u043B\u044F_\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u043D\u0438\u043A_\u0432\u0442\u043E\u0440\u043D\u0438\u043A_\u0441\u0440\u044F\u0434\u0430_\u0447\u0435\u0442\u0432\u044A\u0440\u0442\u044A\u043A_\u043F\u0435\u0442\u044A\u043A_\u0441\u044A\u0431\u043E\u0442\u0430".split("_");
+      const split4 = "\u043D\u0435\u0434_\u043F\u043E\u043D_\u0432\u0442\u043E_\u0441\u0440\u044F_\u0447\u0435\u0442_\u043F\u0435\u0442_\u0441\u044A\u0431".split;
+      obj2.weekdaysShort = "\u043D\u0435\u0434_\u043F\u043E\u043D_\u0432\u0442\u043E_\u0441\u0440\u044F_\u0447\u0435\u0442_\u043F\u0435\u0442_\u0441\u044A\u0431".split("_");
+      const split5 = "\u043D\u0434_\u043F\u043D_\u0432\u0442_\u0441\u0440_\u0447\u0442_\u043F\u0442_\u0441\u0431".split;
+      obj2.weekdaysMin = "\u043D\u0434_\u043F\u043D_\u0432\u0442_\u0441\u0440_\u0447\u0442_\u043F\u0442_\u0441\u0431".split("_");
+      obj2.longDateFormat = { LT: "H:mm", LTS: "H:mm:ss", L: "D.MM.YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY H:mm", LLLL: "dddd, D MMMM YYYY H:mm" };
+      const obj3 = {
+        sameDay: "[\u0414\u043D\u0435\u0441 \u0432] LT",
+        nextDay: "[\u0423\u0442\u0440\u0435 \u0432] LT",
+        nextWeek: "dddd [\u0432] LT",
+        lastDay: "[\u0412\u0447\u0435\u0440\u0430 \u0432] LT",
+        lastWeek() {
+                const dayResult = this.day();
+                if (0 !== dayResult) {
+                  if (3 !== dayResult) {
+                    if (6 !== dayResult) {
+                      return "[\u041C\u0438\u043D\u0430\u043B\u0438\u044F] dddd [\u0432] LT";
+                    }
+                  }
+                }
+                return "[\u041C\u0438\u043D\u0430\u043B\u0430\u0442\u0430] dddd [\u0432] LT";
+              },
+        sameElse: "L"
+      };
+      obj2.calendar = obj3;
+      obj2.relativeTime = { future: "\u0441\u043B\u0435\u0434 %s", past: "\u043F\u0440\u0435\u0434\u0438 %s", s: "\u043D\u044F\u043A\u043E\u043B\u043A\u043E \u0441\u0435\u043A\u0443\u043D\u0434\u0438", ss: "%d \u0441\u0435\u043A\u0443\u043D\u0434\u0438", m: "\u043C\u0438\u043D\u0443\u0442\u0430", mm: "%d \u043C\u0438\u043D\u0443\u0442\u0438", h: "\u0447\u0430\u0441", hh: "%d \u0447\u0430\u0441\u0430", d: "\u0434\u0435\u043D", dd: "%d \u0434\u0435\u043D\u0430", w: "\u0441\u0435\u0434\u043C\u0438\u0446\u0430", ww: "%d \u0441\u0435\u0434\u043C\u0438\u0446\u0438", M: "\u043C\u0435\u0441\u0435\u0446", MM: "%d \u043C\u0435\u0441\u0435\u0446\u0430", y: "\u0433\u043E\u0434\u0438\u043D\u0430", yy: "%d \u0433\u043E\u0434\u0438\u043D\u0438" };
+      obj2.dayOfMonthOrdinalParse = /\d{1,2}-(ев|ен|ти|ви|ри|ми)/;
+      obj2.ordinal = function ordinal(arg0) {
+        const result = arg0 % 10;
+        const result1 = arg0 % 100;
+        if (0 === arg0) {
+          let text = `${arg0}-ев`;
+        } else if (0 === result1) {
+          text = `${arg0}-ен`;
+        } else {
+          if (10 < result1) {
+            if (result1 < 20) {
+              text = `${arg0}-ти`;
+            }
+          }
+          if (1 === result) {
+            text = `${arg0}-ви`;
+          } else if (2 === result) {
+            text = `${arg0}-ри`;
+          } else {
+            if (7 !== result) {
+              if (8 !== result) {
+                text = `${arg0}-ти`;
+              }
+            }
+            text = `${arg0}-ми`;
+          }
+        }
+        return text;
+      };
+      obj2.week = { dow: 1, doy: 7 };
+      _module.defineLocale("bg", obj2);
     }
   }
 }
-_classCallCheck = ModuleNotFoundError;
-_inherits(ModuleNotFoundError, _wrapNativeSuper(Error));
-
-export const ModuleNotFoundError = _createClass(ModuleNotFoundError);
+if (typeof globalThis.define === "function") {
+  if (globalThis.define.amd) {
+    globalThis.define(["../moment"], function t(defineLocale) {
+      const obj = {
+        months: "\u044F\u043D\u0443\u0430\u0440\u0438_\u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438_\u043C\u0430\u0440\u0442_\u0430\u043F\u0440\u0438\u043B_\u043C\u0430\u0439_\u044E\u043D\u0438_\u044E\u043B\u0438_\u0430\u0432\u0433\u0443\u0441\u0442_\u0441\u0435\u043F\u0442\u0435\u043C\u0432\u0440\u0438_\u043E\u043A\u0442\u043E\u043C\u0432\u0440\u0438_\u043D\u043E\u0435\u043C\u0432\u0440\u0438_\u0434\u0435\u043A\u0435\u043C\u0432\u0440\u0438".split("_"),
+        monthsShort: "\u044F\u043D\u0443_\u0444\u0435\u0432_\u043C\u0430\u0440_\u0430\u043F\u0440_\u043C\u0430\u0439_\u044E\u043D\u0438_\u044E\u043B\u0438_\u0430\u0432\u0433_\u0441\u0435\u043F_\u043E\u043A\u0442_\u043D\u043E\u0435_\u0434\u0435\u043A".split("_"),
+        weekdays: "\u043D\u0435\u0434\u0435\u043B\u044F_\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u043D\u0438\u043A_\u0432\u0442\u043E\u0440\u043D\u0438\u043A_\u0441\u0440\u044F\u0434\u0430_\u0447\u0435\u0442\u0432\u044A\u0440\u0442\u044A\u043A_\u043F\u0435\u0442\u044A\u043A_\u0441\u044A\u0431\u043E\u0442\u0430".split("_"),
+        weekdaysShort: "\u043D\u0435\u0434_\u043F\u043E\u043D_\u0432\u0442\u043E_\u0441\u0440\u044F_\u0447\u0435\u0442_\u043F\u0435\u0442_\u0441\u044A\u0431".split("_"),
+        weekdaysMin: "\u043D\u0434_\u043F\u043D_\u0432\u0442_\u0441\u0440_\u0447\u0442_\u043F\u0442_\u0441\u0431".split("_"),
+        longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "D.MM.YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY H:mm", LLLL: "dddd, D MMMM YYYY H:mm" },
+        calendar: {
+          sameDay: "[\u0414\u043D\u0435\u0441 \u0432] LT",
+          nextDay: "[\u0423\u0442\u0440\u0435 \u0432] LT",
+          nextWeek: "dddd [\u0432] LT",
+          lastDay: "[\u0412\u0447\u0435\u0440\u0430 \u0432] LT",
+          lastWeek() {
+            const dayResult = this.day();
+            if (0 !== dayResult) {
+              if (3 !== dayResult) {
+                if (6 !== dayResult) {
+                  return "[\u041C\u0438\u043D\u0430\u043B\u0438\u044F] dddd [\u0432] LT";
+                }
+              }
+            }
+            return "[\u041C\u0438\u043D\u0430\u043B\u0430\u0442\u0430] dddd [\u0432] LT";
+          },
+          sameElse: "L"
+        },
+        relativeTime: { future: "\u0441\u043B\u0435\u0434 %s", past: "\u043F\u0440\u0435\u0434\u0438 %s", s: "\u043D\u044F\u043A\u043E\u043B\u043A\u043E \u0441\u0435\u043A\u0443\u043D\u0434\u0438", ss: "%d \u0441\u0435\u043A\u0443\u043D\u0434\u0438", m: "\u043C\u0438\u043D\u0443\u0442\u0430", mm: "%d \u043C\u0438\u043D\u0443\u0442\u0438", h: "\u0447\u0430\u0441", hh: "%d \u0447\u0430\u0441\u0430", d: "\u0434\u0435\u043D", dd: "%d \u0434\u0435\u043D\u0430", w: "\u0441\u0435\u0434\u043C\u0438\u0446\u0430", ww: "%d \u0441\u0435\u0434\u043C\u0438\u0446\u0438", M: "\u043C\u0435\u0441\u0435\u0446", MM: "%d \u043C\u0435\u0441\u0435\u0446\u0430", y: "\u0433\u043E\u0434\u0438\u043D\u0430", yy: "%d \u0433\u043E\u0434\u0438\u043D\u0438" },
+        dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
+        ordinal(arg0) {
+          const result = arg0 % 10;
+          const result1 = arg0 % 100;
+          if (0 === arg0) {
+            let text = `${arg0}-ев`;
+          } else if (0 === result1) {
+            text = `${arg0}-ен`;
+          } else {
+            if (10 < result1) {
+              if (result1 < 20) {
+                text = `${arg0}-ти`;
+              }
+            }
+            if (1 === result) {
+              text = `${arg0}-ви`;
+            } else if (2 === result) {
+              text = `${arg0}-ри`;
+            } else {
+              if (7 !== result) {
+                if (8 !== result) {
+                  text = `${arg0}-ти`;
+                }
+              }
+              text = `${arg0}-ми`;
+            }
+          }
+          return text;
+        },
+        week: { dow: 1, doy: 7 }
+      };
+      return defineLocale.defineLocale("bg", obj);
+    });
+  }
+}
+const moment = this.moment;
+let obj = {
+  months: "\u044F\u043D\u0443\u0430\u0440\u0438_\u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438_\u043C\u0430\u0440\u0442_\u0430\u043F\u0440\u0438\u043B_\u043C\u0430\u0439_\u044E\u043D\u0438_\u044E\u043B\u0438_\u0430\u0432\u0433\u0443\u0441\u0442_\u0441\u0435\u043F\u0442\u0435\u043C\u0432\u0440\u0438_\u043E\u043A\u0442\u043E\u043C\u0432\u0440\u0438_\u043D\u043E\u0435\u043C\u0432\u0440\u0438_\u0434\u0435\u043A\u0435\u043C\u0432\u0440\u0438".split("_"),
+  monthsShort: "\u044F\u043D\u0443_\u0444\u0435\u0432_\u043C\u0430\u0440_\u0430\u043F\u0440_\u043C\u0430\u0439_\u044E\u043D\u0438_\u044E\u043B\u0438_\u0430\u0432\u0433_\u0441\u0435\u043F_\u043E\u043A\u0442_\u043D\u043E\u0435_\u0434\u0435\u043A".split("_"),
+  weekdays: "\u043D\u0435\u0434\u0435\u043B\u044F_\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u043D\u0438\u043A_\u0432\u0442\u043E\u0440\u043D\u0438\u043A_\u0441\u0440\u044F\u0434\u0430_\u0447\u0435\u0442\u0432\u044A\u0440\u0442\u044A\u043A_\u043F\u0435\u0442\u044A\u043A_\u0441\u044A\u0431\u043E\u0442\u0430".split("_"),
+  weekdaysShort: "\u043D\u0435\u0434_\u043F\u043E\u043D_\u0432\u0442\u043E_\u0441\u0440\u044F_\u0447\u0435\u0442_\u043F\u0435\u0442_\u0441\u044A\u0431".split("_"),
+  weekdaysMin: "\u043D\u0434_\u043F\u043D_\u0432\u0442_\u0441\u0440_\u0447\u0442_\u043F\u0442_\u0441\u0431".split("_"),
+  longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "D.MM.YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY H:mm", LLLL: "dddd, D MMMM YYYY H:mm" },
+  calendar: {
+    sameDay: "[\u0414\u043D\u0435\u0441 \u0432] LT",
+    nextDay: "[\u0423\u0442\u0440\u0435 \u0432] LT",
+    nextWeek: "dddd [\u0432] LT",
+    lastDay: "[\u0412\u0447\u0435\u0440\u0430 \u0432] LT",
+    lastWeek() {
+      const dayResult = this.day();
+      if (0 !== dayResult) {
+        if (3 !== dayResult) {
+          if (6 !== dayResult) {
+            return "[\u041C\u0438\u043D\u0430\u043B\u0438\u044F] dddd [\u0432] LT";
+          }
+        }
+      }
+      return "[\u041C\u0438\u043D\u0430\u043B\u0430\u0442\u0430] dddd [\u0432] LT";
+    },
+    sameElse: "L"
+  },
+  relativeTime: { future: "\u0441\u043B\u0435\u0434 %s", past: "\u043F\u0440\u0435\u0434\u0438 %s", s: "\u043D\u044F\u043A\u043E\u043B\u043A\u043E \u0441\u0435\u043A\u0443\u043D\u0434\u0438", ss: "%d \u0441\u0435\u043A\u0443\u043D\u0434\u0438", m: "\u043C\u0438\u043D\u0443\u0442\u0430", mm: "%d \u043C\u0438\u043D\u0443\u0442\u0438", h: "\u0447\u0430\u0441", hh: "%d \u0447\u0430\u0441\u0430", d: "\u0434\u0435\u043D", dd: "%d \u0434\u0435\u043D\u0430", w: "\u0441\u0435\u0434\u043C\u0438\u0446\u0430", ww: "%d \u0441\u0435\u0434\u043C\u0438\u0446\u0438", M: "\u043C\u0435\u0441\u0435\u0446", MM: "%d \u043C\u0435\u0441\u0435\u0446\u0430", y: "\u0433\u043E\u0434\u0438\u043D\u0430", yy: "%d \u0433\u043E\u0434\u0438\u043D\u0438" },
+  dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
+  ordinal(arg0) {
+    const result = arg0 % 10;
+    const result1 = arg0 % 100;
+    if (0 === arg0) {
+      let text = `${arg0}-ев`;
+    } else if (0 === result1) {
+      text = `${arg0}-ен`;
+    } else {
+      if (10 < result1) {
+        if (result1 < 20) {
+          text = `${arg0}-ти`;
+        }
+      }
+      if (1 === result) {
+        text = `${arg0}-ви`;
+      } else if (2 === result) {
+        text = `${arg0}-ри`;
+      } else {
+        if (7 !== result) {
+          if (8 !== result) {
+            text = `${arg0}-ти`;
+          }
+        }
+        text = `${arg0}-ми`;
+      }
+    }
+    return text;
+  },
+  week: { dow: 1, doy: 7 }
+};
+moment.defineLocale("bg", obj);

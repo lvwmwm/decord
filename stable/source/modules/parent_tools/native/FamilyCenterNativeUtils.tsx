@@ -1,18 +1,18 @@
-// Module ID: 12047
-// Function ID: 12048
+// Module ID: 12197
+// Function ID: 12198
 // Name: FamilyCenterNativeUtils
-// Dependencies: [4850, 7641, 1074, 1240, 7642, 4839, 12048, 1896, 2]
+// Dependencies: [5001, 7812, 1074, 1241, 7813, 4991, 12198, 1980, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 12047 (FamilyCenterNativeUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7642 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 4850 */;
+// Module 12197 (FamilyCenterNativeUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7813 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5001 */;
 
 require = fn;
-const FamilyCenterConstants = fn(7641);
+const FamilyCenterConstants = fn(7812);
 ({ FAMILY_CENTER_LINK_REQUEST_REGEX: closure_4, FamilyCenterAction: hasOwnProperty } = FamilyCenterConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let c7 = "family-center-request-modal";
@@ -29,7 +29,7 @@ export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeSca
     AnalyticsUtilsDefault.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj2);
     FamilyCenterActionCreatorsDefault.setPendingConnection(match[1], match[2]);
     const obj5 = { userId: match[1], linkCode: match[2] };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12048, dependencyMap.paths), obj5, c7);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12198, dependencyMap.paths), obj5, c7);
   }
 };
 export const resumeFamilyCenterConnection = function resumeFamilyCenterConnection() {
@@ -38,7 +38,7 @@ export const resumeFamilyCenterConnection = function resumeFamilyCenterConnectio
   if (flag) {
     ModalActionCreatorsDefault.popWithKey(c7);
     ({ teenId: obj3.userId, linkCode: obj3.linkCode } = pendingConnection);
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12048, dependencyMap.paths), { userId: null, linkCode: null }, c7);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12198, dependencyMap.paths), { userId: null, linkCode: null }, c7);
     flag = true;
     const obj4 = { userId: null, linkCode: null };
   }

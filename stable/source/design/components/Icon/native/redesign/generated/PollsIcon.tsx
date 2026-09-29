@@ -1,13 +1,13 @@
-// Module ID: 10767
-// Function ID: 10768
+// Module ID: 10934
+// Function ID: 10935
 // Name: PollsIcon
-// Dependencies: [19, 21, 576, 4337, 10768, 2]
+// Dependencies: [19, 21, 576, 4488, 10935, 2]
 // Exports: PollsIcon
 
-// Module 10767 (PollsIcon)
+// Module 10934 (PollsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod10768 from "module_10768" /* 10768 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod10935 from "module_10935" /* 10935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PollsIcon = function PollsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10768, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10935, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

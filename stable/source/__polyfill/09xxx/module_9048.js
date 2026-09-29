@@ -1,9 +1,9 @@
 // Module ID: 9048
 // Function ID: 9049
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 9048
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dc76a43601a93031b91e3ad463d63b85", name: "ThumbsDownIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e8a96141e48bf46350215d4dadeaaebc", name: "ExperimentalGameControllerLinkIcon", type: "png" });

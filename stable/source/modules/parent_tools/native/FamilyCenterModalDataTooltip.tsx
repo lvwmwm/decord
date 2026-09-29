@@ -1,17 +1,17 @@
-// Module ID: 14981
-// Function ID: 14982
+// Module ID: 15172
+// Function ID: 15173
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 7641, 21, 5152, 12054, 4336, 13676, 5154, 12056, 4599, 11168, 4636, 576, 4632, 12053, 1114, 2396, 8769, 7695, 8539, 8540, 12060, 5056, 4839, 5705, 12062, 2]
+// Dependencies: [19, 17, 7812, 21, 5321, 12204, 4487, 13880, 5323, 12206, 4750, 11328, 4788, 576, 4784, 12203, 1115, 2482, 8956, 7866, 8725, 8726, 12210, 5218, 4991, 5873, 11494, 2]
 // Exports: default
 
-// Module 14981 (FamilyCenterModalDataTooltip)
+// Module 15172 (FamilyCenterModalDataTooltip)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import _modDef2396 from "module_2396" /* 2396 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8769 */;
-import Modal from "Modal" /* 12062 */;
+import util from "util" /* 1115 */;
+import _modDef2482 from "module_2482" /* 2482 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4991 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8956 */;
+import Modal from "Modal" /* 11494 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -35,9 +35,9 @@ function FamilyCenterModalDataTooltipScreen() {
   const intl = require("util").intl;
   obj = require("useAgeSpecificText");
   const intl2 = require("util").intl;
-  const ageSpecificText = obj.useAgeSpecificText(intl.string(_modDef2396.n6LOrh), intl2.string(_modDef2396.JNLpDZ));
+  const ageSpecificText = obj.useAgeSpecificText(intl.string(_modDef2482.n6LOrh), intl2.string(_modDef2482.JNLpDZ));
   _require = useIsInAdultAgeGroupDefault();
-  const stringResult = intl.string(_modDef2396.n6LOrh);
+  const stringResult = intl.string(_modDef2482.n6LOrh);
   const sortedActivityTypeConfigs = require("FamilyCenterUtils").getSortedActivityTypeConfigs();
   const obj3 = { children: null };
   const obj4 = { children: null };
@@ -66,9 +66,9 @@ function FamilyCenterModalDataTooltipScreen() {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let obj = { [USER_INTERACTION]: fn(5152).ChatIcon, [USER_CALLED]: fn(12054).PhoneIcon, [USER_ADD]: fn(4336).FriendsIcon, [GUILD_ADD]: fn(13676).ServerGridIcon, [GUILD_INTERACTION]: fn(5154).ThreadIcon, [PURCHASES]: fn(12056).CreditCardIcon, [TOTAL_VOICE_MINUTES]: fn(4599).ClockIcon, [GIFTS]: fn(11168).GiftIcon };
-({ USER_INTERACTION, USER_CALLED, USER_ADD, GUILD_ADD, GUILD_INTERACTION, PURCHASES, TOTAL_VOICE_MINUTES, GIFTS } = fn(7641).TeenActionDisplayType);
-let createStyles = fn(4636);
+let obj = { [USER_INTERACTION]: fn(5321).ChatIcon, [USER_CALLED]: fn(12204).PhoneIcon, [USER_ADD]: fn(4487).FriendsIcon, [GUILD_ADD]: fn(13880).ServerGridIcon, [GUILD_INTERACTION]: fn(5323).ThreadIcon, [PURCHASES]: fn(12206).CreditCardIcon, [TOTAL_VOICE_MINUTES]: fn(4750).ClockIcon, [GIFTS]: fn(11328).GiftIcon };
+({ USER_INTERACTION, USER_CALLED, USER_ADD, GUILD_ADD, GUILD_INTERACTION, PURCHASES, TOTAL_VOICE_MINUTES, GIFTS } = fn(7812).TeenActionDisplayType);
+let createStyles = fn(4788);
 let obj3 = { row: { display: "flex", flexDirection: "row", width: "100%", alignItems: "center", marginBottom: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm }, content: { flexShrink: 1 }, iconContainer: null, header: null, icon: null };
 let size = { display: "flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round, flexShrink: 0, marginRight: nativeDefault.space.PX_12 };
 obj3.iconContainer = size;
@@ -77,7 +77,7 @@ obj3.header = { marginBottom: nativeDefault.space.PX_4 };
 let obj5 = { marginBottom: nativeDefault.space.PX_4 };
 obj3.icon = { tintColor: nativeDefault.colors.TEXT_BRAND };
 let closure_8 = createStyles.createStyles(obj3);
-createStyles = fn(4636);
+createStyles = fn(4788);
 let obj7 = { container: null, groupHeader: null };
 const obj6 = { tintColor: nativeDefault.colors.TEXT_BRAND };
 obj7.container = { display: "flex", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, width: "100%" };

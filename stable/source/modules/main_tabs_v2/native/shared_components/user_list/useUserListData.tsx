@@ -1,26 +1,26 @@
-// Module ID: 10994
-// Function ID: 10995
+// Module ID: 11153
+// Function ID: 11154
 // Name: useUserListData
-// Dependencies: [109, 32, 19, 7764, 7760, 7761, 1385, 4285, 1371, 1074, 4271, 7759, 9969, 573, 7763, 5600, 12, 1114, 9978, 2]
+// Dependencies: [109, 32, 19, 7930, 7926, 7927, 1386, 4437, 1372, 1074, 4423, 7925, 10134, 573, 7929, 5768, 12, 1115, 10143, 2]
 // Exports: default
 
-// Module 10994 (useUserListData)
+// Module 11153 (useUserListData)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1114 */;
-import GuildUtilsDefault from "GuildUtils" /* 5600 */;
-import UserSearchItemsDefault from "UserSearchItems" /* 7759 */;
-import UserSearchUtils from "UserSearchUtils" /* 7763 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9969 */;
+import util from "util" /* 1115 */;
+import GuildUtilsDefault from "GuildUtils" /* 5768 */;
+import UserSearchItemsDefault from "UserSearchItems" /* 7925 */;
+import UserSearchUtils from "UserSearchUtils" /* 7929 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 10134 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7764 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7760 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7761 */;
-import UserRecord from "UserRecord" /* 1385 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7930 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7926 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7927 */;
+import UserRecord from "UserRecord" /* 1386 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function _toPropertyKey(obj) {
@@ -183,7 +183,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   obj2.items = valueResult2;
   const items10 = [obj2, , , , , , , ];
   const obj3 = { title: null, items: null };
-  const intl2 = tmp6(1114).intl;
+  const intl2 = tmp6(1115).intl;
   obj3.title = intl2.formatToPlainString(util.t.zsVtft, { pendingRequestNumber: items1.length });
   if (!withFriendRequests) {
     items1 = [];
@@ -203,7 +203,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   }
   items10[4] = { title: null, items: items4 };
   const obj6 = { title: null, items: null };
-  const intl3 = tmp6(1114).intl;
+  const intl3 = tmp6(1115).intl;
   obj6.title = intl3.formatToPlainString(util.t["DYMZ/p"], { count: items5.length });
   if (!withFriendSuggestions) {
     items5 = [];
@@ -211,7 +211,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   obj6.items = items5;
   items10[5] = obj6;
   const obj8 = { title: null, items: null };
-  const intl4 = tmp6(1114).intl;
+  const intl4 = tmp6(1115).intl;
   obj8.title = intl4.string(util.t.TdEu5X);
   if (!withFriends) {
     items6 = [];
@@ -219,7 +219,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   obj8.items = items6;
   items10[6] = obj8;
   const obj9 = { title: null, items: null };
-  const intl5 = tmp6(1114).intl;
+  const intl5 = tmp6(1115).intl;
   obj9.title = intl5.string(util.t.y29JXs);
   if (!withGuildMembers) {
     found = [];

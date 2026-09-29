@@ -1,9 +1,0 @@
-// Module ID: 13601
-// Function ID: 13602
-// Dependencies: [1120]
-
-// Module 13601
-import registerAsset from "module_1120" /* 1120 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/colored", width: 48, height: 48, scales: [2, 3], hash: "434b4bb837ba9a9866eda02df308d953", name: "tier_0_48px_light", type: "png" });

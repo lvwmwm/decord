@@ -1,9 +1,25 @@
 // Module ID: 13953
 // Function ID: 13954
-// Dependencies: [1120]
+// Dependencies: [13945]
 
 // Module 13953
-import registerAsset from "module_1120" /* 1120 */;
+import _mod13945 from "module_13945" /* 13945 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/oauth2", width: 375, height: 812, scales: [2, 3], hash: "9f0466452ea774e0a27ad50f4f806303", name: "background", type: "png" });
+let c2 = true;
+let c3 = true;
+try {
+  const _String = String;
+  fromCharCode.apply(null, [0]);
+  try {
+    const _String2 = String;
+    const _Uint8Array = Uint8Array;
+    const uint8Array = new Uint8Array(1);
+    fromCharCode2.apply(null, uint8Array);
+    const buf8 = new _mod13945.Buf8(256);
+    require = 252;
+  } catch (err) {
+    c3 = false;
+  }
+} catch (err) {
+  c2 = false;
+}

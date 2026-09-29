@@ -1,13 +1,13 @@
-// Module ID: 16951
-// Function ID: 16952
+// Module ID: 17308
+// Function ID: 17309
 // Name: SlashIcon
-// Dependencies: [19, 21, 576, 4337, 16952, 2]
+// Dependencies: [19, 21, 576, 4488, 17309, 2]
 // Exports: SlashIcon
 
-// Module 16951 (SlashIcon)
+// Module 17308 (SlashIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod16952 from "module_16952" /* 16952 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod17309 from "module_17309" /* 17309 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SlashIcon = function SlashIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16952, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod17309, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

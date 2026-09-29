@@ -1,12 +1,12 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 12792
+// Function ID: 12793
 // Name: GameServerPricingExperiment
-// Dependencies: [4550, 4549, 2]
+// Dependencies: [4701, 4700, 2]
 // Exports: useIsGameServerPricingEnabled
 
-// Module 12642 (GameServerPricingExperiment)
-import GameServerExperiment from "GameServerExperiment" /* 4549 */;
-import createExperiment from "module_4550" /* 4550 */;
+// Module 12792 (GameServerPricingExperiment)
+import GameServerExperiment from "GameServerExperiment" /* 4700 */;
+import createExperiment from "module_4701" /* 4701 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2026-03_game_server_pricing", label: "Game Server Pricing", defaultConfig: { enabled: false }, treatments: null };

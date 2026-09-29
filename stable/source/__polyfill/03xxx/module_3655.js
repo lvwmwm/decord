@@ -1,9 +1,9 @@
 // Module ID: 3655
 // Function ID: 3656
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3655
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/connected_devices", scales: [1], hash: "d3e335e2c62a36a49957029c2e4a670d", name: "DeviceDetected.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX2ludml0ZV9jaGFubmVscw==", scales: [1], hash: "0ed673e0c5569fcc3f1a7fe332b325e3", name: "fi.messages.0ed673e0c5569fcc3f1a7fe332b325e3.compiled.messages", type: "jsona" });

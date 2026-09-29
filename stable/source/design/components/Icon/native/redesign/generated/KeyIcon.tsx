@@ -1,13 +1,13 @@
-// Module ID: 7059
-// Function ID: 7060
+// Module ID: 7233
+// Function ID: 7234
 // Name: KeyIcon
-// Dependencies: [19, 21, 576, 4337, 7060, 2]
+// Dependencies: [19, 21, 576, 4488, 7234, 2]
 // Exports: KeyIcon
 
-// Module 7059 (KeyIcon)
+// Module 7233 (KeyIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod7060 from "module_7060" /* 7060 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod7234 from "module_7234" /* 7234 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const KeyIcon = function KeyIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod7060, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod7234, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

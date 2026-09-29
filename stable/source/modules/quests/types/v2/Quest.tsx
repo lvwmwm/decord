@@ -1,15 +1,15 @@
-// Module ID: 7813
-// Function ID: 7814
+// Module ID: 7979
+// Function ID: 7980
 // Name: Quest
-// Dependencies: [7814, 7818, 7819, 2]
+// Dependencies: [7980, 7984, 7985, 2]
 // Exports: questCosponsorMetadataFromServer, questFromServerV2
 
-// Module 7813 (Quest)
-import Task from "Task" /* 7814 */;
-import Reward from "Reward" /* 7818 */;
+// Module 7979 (Quest)
+import Task from "Task" /* 7980 */;
+import Reward from "Reward" /* 7984 */;
 import size from "module_2" /* 2 */;
 
-const CTA = tmp(7819);
+const CTA = tmp(7985);
 const result = size.fileFinishedImporting("modules/quests/types/v2/Quest.tsx");
 
 export const questFromServerV2 = function questFromServerV2(id) {

@@ -1,9 +1,9 @@
-// Module ID: 1973
-// Function ID: 1974
+// Module ID: 2057
+// Function ID: 2058
 // Name: js_shim/PlainRecord
 // Dependencies: [2]
 
-// Module 1973 (js_shim/PlainRecord)
+// Module 2057 (js_shim/PlainRecord)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/libdiscore/js_shim/js/PlainRecord.tsx");

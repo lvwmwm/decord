@@ -1,40 +1,20 @@
 // Module ID: 7296
 // Function ID: 7297
-// Dependencies: [17]
-// Exports: addListener, removeAllListeners
+// Dependencies: [7297]
+// Exports: getDistanceForDirection
 
 // Module 7296
-import get_ActivityIndicator from "module_17" /* 17 */;
+import _mod7297 from "module_7297" /* 7297 */;
 
-const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
-const enforcing = TurboModuleRegistry.getEnforcing("RNCClipboard");
-const RNCClipboard_TEXT_CHANGED = "RNCClipboard_TEXT_CHANGED";
-const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(enforcing);
-const listenerCount = nativeEventEmitter.listenerCount;
-let fn = listenerCount;
-if (listenerCount) {
-  const listenerCount2 = nativeEventEmitter.listenerCount;
-  fn = listenerCount2.bind(nativeEventEmitter);
-} else {
-  fn = (arg0) => nativeEventEmitter.listeners(arg0).length;
-}
+require = arg1;
+const dependencyMap = arg6;
 
-export default enforcing;
-export const addListener = (arg0) => {
-  if (0 === fn(RNCClipboard_TEXT_CHANGED)) {
-    enforcing.setListener();
-  }
-  const addListenerResult = nativeEventEmitter.addListener(RNCClipboard_TEXT_CHANGED, arg0);
-  addListenerResult._remove = addListenerResult.remove;
-  addListenerResult.remove = function() {
-    this._remove();
-    if (0 === fn(RNCClipboard_TEXT_CHANGED)) {
-      enforcing.removeListener();
+export const getDistanceForDirection = function getDistanceForDirection(layout, gestureDirection, arg2) {
+  const invertedMultiplier = _mod7297.getInvertedMultiplier(gestureDirection, arg2);
+  if ("vertical" !== gestureDirection) {
+    if ("vertical-inverted" !== gestureDirection) {
+      return layout.width * invertedMultiplier;
     }
-  };
-  return addListenerResult;
-};
-export const removeAllListeners = () => {
-  nativeEventEmitter.removeAllListeners(RNCClipboard_TEXT_CHANGED);
-  enforcing.removeListener();
+  }
+  return layout.height * invertedMultiplier;
 };

@@ -1,20 +1,9 @@
 // Module ID: 14408
 // Function ID: 14409
-// Dependencies: [14393]
+// Dependencies: [1121]
 
 // Module 14408
-import _mod14393 from "module_14393" /* 14393 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-let c0 = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod14393(1.toString);
 
-export default (arg0) => {
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
-  }
-  const sum = c0 + 1;
-  c0 = sum;
-  return `Symbol(${str}` + ")_" + closure_2(sum + closure_1, 36);
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 8, height: 12, scales: [2, 3], hash: "62f99171df821200253910f3b9f2a1f7", name: "StatusMobileOnline", type: "png" });

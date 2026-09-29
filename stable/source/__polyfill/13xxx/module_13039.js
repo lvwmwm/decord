@@ -1,36 +1,9 @@
 // Module ID: 13039
 // Function ID: 13040
-// Dependencies: []
-// Exports: flatten
+// Dependencies: [1121]
 
 // Module 13039
+import registerAsset from "module_1121" /* 1121 */;
 
-export const flatten = function flatten(arr) {
-  const items = [];
-  const item = arr.forEach((arr) => {
-    if (Array.isArray(arr)) {
-      let item = arr.forEach((arr) => {
-        if (Array.isArray(arr)) {
-          let item = arr.forEach((arr) => {
-            if (Array.isArray(arr)) {
-              let item = arr.forEach((arr) => {
-                if (Array.isArray(arr)) {
-                  let item = arr.forEach(() => { ... });
-                } else {
-                  closure_1_0.push(arr);
-                }
-              });
-            } else {
-              closure_1_0.push(arr);
-            }
-          });
-        } else {
-          closure_1_0.push(arr);
-        }
-      });
-    } else {
-      closure_1_0.push(arr);
-    }
-  });
-  return items;
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/directory_channels/native/images", width: 32, height: 32, scales: [2, 3], hash: "cf9fbd33b5f8251873e494b446828ceb", name: "invite", type: "png" });

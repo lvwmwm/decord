@@ -1,9 +1,9 @@
 // Module ID: 2593
 // Function ID: 2594
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2593
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/activity_privacy", scales: [1], hash: "bcb0732d3823935c103944c15853e88c", name: "ActivityPrivacy.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2ZpbGVfdXBsb2Fk", scales: [1], hash: "3e275855665d549992073cf2516dbfc8", name: "hi.messages.3e275855665d549992073cf2516dbfc8.compiled.messages", type: "jsona" });

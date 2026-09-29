@@ -1,12 +1,12 @@
-// Module ID: 1924
-// Function ID: 1925
+// Module ID: 2008
+// Function ID: 2009
 // Name: getGameMediaRefURL
-// Dependencies: [1925, 1396, 1929, 2]
+// Dependencies: [2009, 1397, 2013, 2]
 // Exports: default
 
-// Module 1924 (getGameMediaRefURL)
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 1929 */;
+// Module 2008 (getGameMediaRefURL)
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2013 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 7039
-// Function ID: 7040
+// Module ID: 7213
+// Function ID: 7214
 // Name: FreeFormLabel
-// Dependencies: [19, 21, 4632, 2]
+// Dependencies: [19, 21, 4784, 2]
 // Exports: default
 
-// Module 7039 (FreeFormLabel)
-import Text_Text from "Text/Text" /* 4632 */;
+// Module 7213 (FreeFormLabel)
+import Text_Text from "Text/Text" /* 4784 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

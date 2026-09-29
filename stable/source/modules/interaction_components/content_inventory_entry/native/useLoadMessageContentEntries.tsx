@@ -1,17 +1,17 @@
-// Module ID: 11663
-// Function ID: 11664
+// Module ID: 11810
+// Function ID: 11811
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 4864, 1920, 9157, 8298, 7266, 8249, 38, 8256, 1894, 8246, 7405, 2]
+// Dependencies: [32, 5, 19, 5015, 2004, 9338, 8482, 7440, 8433, 38, 8440, 1978, 8430, 7576, 2]
 // Exports: default
 
-// Module 11663 (useLoadMessageContentEntries)
+// Module 11810 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1894 */;
-import useAvatarColor from "useAvatarColor" /* 8249 */;
+import Server from "Server" /* 1978 */;
+import useAvatarColor from "useAvatarColor" /* 8433 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4864 */;
+import ApplicationStore from "ApplicationStore" /* 5015 */;
 
 const require = globalThis.__r;
 
@@ -675,7 +675,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8246);
+      let tmp3Result = tmp3(8430);
       let obj = { component: null, message: null };
       let obj2 = { contentInventoryEntry: null };
       obj2.contentInventoryEntry = tmp2.contentInventoryEntry;
@@ -691,10 +691,10 @@ function isMessageRenderable(message) {
   }
   return true;
 }
-const ImageSizes = fn(1920).ImageSizes;
-const promiseDeduper = new fn(9157).PromiseDeduper();
-const promiseDeduper3 = new fn(9157).PromiseDeduper();
-const promiseDeduper4 = new fn(9157).PromiseDeduper();
+const ImageSizes = fn(2004).ImageSizes;
+const promiseDeduper = new fn(9338).PromiseDeduper();
+const promiseDeduper3 = new fn(9338).PromiseDeduper();
+const promiseDeduper4 = new fn(9338).PromiseDeduper();
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/interaction_components/content_inventory_entry/native/useLoadMessageContentEntries.tsx");
 

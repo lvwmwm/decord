@@ -1,19 +1,19 @@
-// Module ID: 8752
-// Function ID: 8753
+// Module ID: 8939
+// Function ID: 8940
 // Name: ReportModals
-// Dependencies: [5, 1962, 4286, 1385, 1074, 8753, 8754, 8756, 1971, 4816, 2]
+// Dependencies: [5, 2046, 4438, 1386, 1074, 8940, 8941, 8943, 2055, 4968, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8752 (ReportModals)
-import GuildRecordUtils from "GuildRecordUtils" /* 1971 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
-import MenuTypes from "MenuTypes" /* 8753 */;
-import showReportModal from "showReportModal" /* 8754 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8756 */;
+// Module 8939 (ReportModals)
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
+import MenuTypes from "MenuTypes" /* 8940 */;
+import showReportModal from "showReportModal" /* 8941 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8943 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StageInstanceStore from "StageInstanceStore" /* 1962 */;
-import MessageRecord from "MessageRecord" /* 4286 */;
-import UserRecord from "UserRecord" /* 1385 */;
+import StageInstanceStore from "StageInstanceStore" /* 2046 */;
+import MessageRecord from "MessageRecord" /* 4438 */;
+import UserRecord from "UserRecord" /* 1386 */;
 
 require = fn;
 let closure_8 = async function _submitHamReportForFirstDM(record, arg1) {
@@ -210,7 +210,7 @@ export const showUnauthenticatedReportModalForTida = function showUnauthenticate
 export const showUnauthenticatedReportModalForMessage = function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   const tmp = new MessageRecord({});
   const obj = AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "Array", channel_id: "PX_16" });
+  const merged = Object.assign({ message_id: "HermesInternal", channel_id: "Array" });
   obj.trackWithMetadata(AnalyticEvents.IAR_MODAL_OPEN, { report_type: MenuTypes.UnauthenticatedReportNames.MESSAGE });
   const obj2 = { report_type: MenuTypes.UnauthenticatedReportNames.MESSAGE };
   const obj3 = showReportModal;

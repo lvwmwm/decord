@@ -1,11 +1,14 @@
 // Module ID: 8607
 // Function ID: 8608
-// Dependencies: [65]
+// Dependencies: [8608]
+// Exports: default
 
 // Module 8607
-import module_65 from "module_65" /* 65 */;
+import _modDef8608 from "module_8608" /* 8608 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGDefs", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true } };
+importDefault = arg2;
+const dependencyMap = arg6;
 
-export default module_65.get("RNSVGDefs", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function getWebViewProxy(FRAME_WEB_VIEW_KEY) {
+  return new _modDef8608(FRAME_WEB_VIEW_KEY);
+};

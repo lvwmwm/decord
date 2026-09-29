@@ -1,0 +1,9 @@
+// Module ID: 12286
+// Function ID: 12287
+// Dependencies: [1121]
+
+// Module 12286
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/chat_sidebar", width: 24, height: 24, scales: [2, 3], hash: "589ea89ec85b91078a06c4317f368a2d", name: "ic_pins", type: "png" });

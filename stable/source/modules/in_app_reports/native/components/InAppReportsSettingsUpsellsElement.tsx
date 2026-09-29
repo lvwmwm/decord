@@ -1,20 +1,20 @@
-// Module ID: 9204
-// Function ID: 9205
+// Module ID: 13241
+// Function ID: 13242
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 1957, 1074, 21, 4636, 576, 5073, 8756, 9180, 7483, 504, 8763, 5768, 1114, 4632, 7485, 4816, 2]
+// Dependencies: [32, 19, 17, 2041, 1074, 21, 4788, 576, 5235, 8943, 13234, 7654, 504, 8950, 5936, 1115, 4784, 7656, 4968, 2]
 // Exports: default
 
-// Module 9204 (InAppReportsSettingsUpsellsElement)
+// Module 13241 (InAppReportsSettingsUpsellsElement)
 import nativeDefault from "native" /* 576 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
-import useMountEffectDefault from "useMountEffect" /* 5073 */;
-import SettingsIcon from "SettingsIcon" /* 7483 */;
-import openUserSettings from "openUserSettings" /* 7485 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8756 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 9180 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4968 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import SettingsIcon from "SettingsIcon" /* 7654 */;
+import openUserSettings from "openUserSettings" /* 7656 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8943 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13234 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 function SettingsUpsellsTableRow(arg0) {
@@ -44,7 +44,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, settingsContainer: null, goToSettingsText: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.settingsContainer = { width: "100%", marginBottom: nativeDefault.space.PX_8 };

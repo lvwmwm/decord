@@ -1,0 +1,9 @@
+// Module ID: 11470
+// Function ID: 11471
+// Dependencies: [1121]
+
+// Module 11470
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 78, height: 63.666666666666664, scales: [3], hash: "f5c4d9fde9a55ad09e91263f9bebf46a", name: "asset_emerald_badge_small", type: "png" });

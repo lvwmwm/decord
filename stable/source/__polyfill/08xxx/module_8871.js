@@ -1,9 +1,12 @@
 // Module ID: 8871
 // Function ID: 8872
-// Dependencies: [1120]
+// Dependencies: [26, 65]
 
 // Module 8871
-import registerAsset from "module_1120" /* 1120 */;
+import _mod26 from "module_26" /* 26 */;
+import module_65 from "module_65" /* 65 */;
 
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGSvgView", validAttributes: { bbWidth: true, bbHeight: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true, color: _mod26.colorAttribute, pointerEvents: true, hitSlop: true } };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "2d4d5e1376e3dc7d0fa68688da698fba", name: "ic_community_guild_badge_light_24px", type: "png" });
+export default module_65.get("RNSVGSvgView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

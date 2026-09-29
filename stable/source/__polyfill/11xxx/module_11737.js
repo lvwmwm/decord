@@ -1,9 +1,9 @@
 // Module ID: 11737
 // Function ID: 11738
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11737
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 275, height: 150, scales: [1, 2, 3], hash: "bbcef4a2b8c5f48f13fd62c2f6250775", name: "img_group_dm_illustration", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 380, height: 242, scales: [1], hash: "20a937ca7af234a5d3bd2269cf0e9463", name: "confetti", type: "png" });

@@ -1,9 +1,11 @@
 // Module ID: 8828
 // Function ID: 8829
-// Dependencies: [1120]
+// Dependencies: [65]
 
 // Module 8828
-import registerAsset from "module_1120" /* 1120 */;
+import module_65 from "module_65" /* 65 */;
 
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGFilter", validAttributes: { name: true, x: true, y: true, height: true, width: true, filterUnits: true, primitiveUnits: true } };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "eaee56f86ca7905c61b8b9a3d1c990d4", name: "MinecraftNeutralIcon-primary", type: "png" });
+export default module_65.get("RNSVGFilter", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

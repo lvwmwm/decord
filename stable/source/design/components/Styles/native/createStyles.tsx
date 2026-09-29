@@ -1,21 +1,21 @@
-// Module ID: 4636
-// Function ID: 4637
+// Module ID: 4788
+// Function ID: 4789
 // Name: createStyles
-// Dependencies: [32, 17, 4628, 4456, 4347, 1363, 576, 4339, 4373, 4637, 4640, 4568, 2]
+// Dependencies: [32, 17, 4780, 4607, 4498, 1364, 576, 4490, 4524, 4789, 4792, 4719, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow, useLegacyClassComponentStyles
 
-// Module 4636 (createStyles)
+// Module 4788 (createStyles)
 import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import SemanticColorContext from "SemanticColorContext" /* 4339 */;
-import native from "native" /* 4347 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 4568 */;
-import timing from "timing" /* 4637 */;
-import timingPresets from "timingPresets" /* 4640 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import SemanticColorContext from "SemanticColorContext" /* 4490 */;
+import native from "native" /* 4498 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 4719 */;
+import timing from "timing" /* 4789 */;
+import timingPresets from "timingPresets" /* 4792 */;
 import _slicedToArray from "module_32" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4456 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4607 */;
 
 require = fn;
 function createCacheKey() {
@@ -265,7 +265,7 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
     }
     if (null == customBackgroundGradient) {
       const obj2 = {};
-      const merged = Object.assign(tmp2(4347).FALLBACK_THEME_CONTEXT_VALUE);
+      const merged = Object.assign(tmp2(4498).FALLBACK_THEME_CONTEXT_VALUE);
       obj2.flags = 0;
       obj2.saturation = AccessibilityStore.saturation;
       obj2.theme = theme;
@@ -313,12 +313,12 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
       }
     } else {
       if ("light" === customBackgroundGradient.theme) {
-        let MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp2(4347).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
+        let MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp2(4498).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
       } else {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp2(4347).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp2(4498).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
       }
-      tmp2(4347).setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
-      const tmp2Result = tmp2(4347);
+      tmp2(4498).setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
+      const tmp2Result = tmp2(4498);
     }
   };
 };

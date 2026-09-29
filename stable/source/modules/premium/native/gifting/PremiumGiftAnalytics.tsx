@@ -1,15 +1,15 @@
-// Module ID: 11358
-// Function ID: 11359
+// Module ID: 11516
+// Function ID: 11517
 // Name: PremiumGiftAnalytics
-// Dependencies: [19, 1074, 10828, 10792, 1363, 1240, 1114, 10940, 2]
+// Dependencies: [19, 1074, 10995, 10959, 1364, 1241, 1115, 11101, 2]
 // Exports: default
 
-// Module 11358 (PremiumGiftAnalytics)
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10792 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10940 */;
+// Module 11516 (PremiumGiftAnalytics)
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10959 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 11101 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

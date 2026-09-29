@@ -1,9 +1,24 @@
 // Module ID: 5476
 // Function ID: 5477
-// Dependencies: [1120]
+// Dependencies: [5462]
 
 // Module 5476
-import registerAsset from "module_1120" /* 1120 */;
+import _mod5462 from "module_5462" /* 5462 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let c2 = 6;
+let closure_3 = ["GIF87a", "GIF89a"];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "e827a9aa91787067eeb0248dd9424f71", name: "img_domain_light", type: "png" });
+export default {
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      hasItem = closure_3.includes(_mod5462.getStringFromDataView(dataView, 0, c2));
+    }
+    return hasItem;
+  },
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
+  }
+};

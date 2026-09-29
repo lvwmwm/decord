@@ -1,11 +1,11 @@
-// Module ID: 4348
-// Function ID: 4349
+// Module ID: 4499
+// Function ID: 4500
 // Name: AccessibilityAnnouncer
-// Dependencies: [17, 4349, 2]
+// Dependencies: [17, 4500, 2]
 
-// Module 4348 (AccessibilityAnnouncer)
+// Module 4499 (AccessibilityAnnouncer)
 import _mod17 from "module_17" /* 17 */;
-import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4349 */;
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4500 */;
 import size from "module_2" /* 2 */;
 
 const AccessibilityInfo = _mod17.AccessibilityInfo;

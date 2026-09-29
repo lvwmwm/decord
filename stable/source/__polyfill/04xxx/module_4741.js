@@ -1,19 +1,9 @@
 // Module ID: 4741
 // Function ID: 4742
-// Dependencies: [669, 549, 4742]
+// Dependencies: [1121]
 
 // Module 4741
-import identity from "identity" /* 549 */;
-import _mod669 from "module_669" /* 669 */;
-import constant from "constant" /* 4742 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-if (_mod669) {
-  let fn = (arg0, arg1) => {
-    const obj = { configurable: true, enumerable: false, value: constant(arg1), writable: true };
-    return _mod669(arg0, "toString", obj);
-  };
-} else {
-  fn = identity;
-}
 
-export default fn;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4588b9ce3776c8bf8c8aad48652638ac", name: "XLargeIcon", type: "png" });

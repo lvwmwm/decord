@@ -1,13 +1,13 @@
-// Module ID: 5852
-// Function ID: 5853
+// Module ID: 6022
+// Function ID: 6023
 // Name: AvatarCamExample
-// Dependencies: [21, 5668, 5853, 2]
+// Dependencies: [21, 5836, 6023, 2]
 // Exports: AvatarCamExample
 
-// Module 5852 (AvatarCamExample)
+// Module 6022 (AvatarCamExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef5853 from "module_5853" /* 5853 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6023 from "module_6023" /* 6023 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AvatarCamExample = function AvatarCamExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5853 };
+  const obj2 = { uri: _modDef6023 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

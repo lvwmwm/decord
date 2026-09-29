@@ -1,36 +1,36 @@
-// Module ID: 10828
-// Function ID: 10829
+// Module ID: 10995
+// Function ID: 10996
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8309, 10794, 10829, 1371, 1074, 7341, 1373, 1085, 21, 3, 7531, 7532, 4309, 10830, 1114, 10831, 4294, 7343, 10832, 504, 10862, 10872, 8314, 8301, 4981, 1240, 7285, 10873, 573, 1363, 10792, 2]
+// Dependencies: [5, 32, 19, 8493, 10961, 10996, 1372, 1074, 7515, 1374, 1085, 21, 3, 7702, 7703, 4461, 10997, 1115, 10998, 4446, 7517, 10999, 504, 11029, 11036, 8498, 8485, 5141, 1241, 7459, 11037, 573, 1364, 10959, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 10828 (NativeGiftContext)
+// Module 10995 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import BillingUtils from "BillingUtils" /* 4309 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4981 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
-import ContextUtilsDefault from "ContextUtils" /* 7531 */;
-import BadgeId from "BadgeId" /* 8301 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8314 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10792 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10873 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import BillingUtils from "BillingUtils" /* 4461 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5141 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7459 */;
+import ContextUtilsDefault from "ContextUtils" /* 7702 */;
+import BadgeId from "BadgeId" /* 8485 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8498 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10959 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11037 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8309 */;
-import PromotionsStore from "PromotionsStore" /* 10794 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10829 */;
-import UserStore from "UserStore" /* 1371 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8493 */;
+import PromotionsStore from "PromotionsStore" /* 10961 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10996 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-fn(7341).GPlayBillingResult;
-const PremiumConstants = fn(1373);
+fn(7515).GPlayBillingResult;
+const PremiumConstants = fn(1374);
 ({ PremiumTypes: closure_12, SubscriptionIntervalTypes: map1, SubscriptionPlanInfo: closure_14 } = PremiumConstants);
 const PaymentGateways = fn(1085).PaymentGateways;
 const jsx = fn(21).jsx;
@@ -274,7 +274,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     closure_130_10 = tmp5;
     closure_130_11 = tmp9;
     closure_130_12 = tmp26;
-    let obj6 = { orderId: "a", planId: 1157628778, planSelection: 204655, giftInfo: 200280 };
+    let obj6 = { orderId: "a", planId: true, planSelection: true, giftInfo: true };
     let obj7 = { premiumType, planInterval: first1 };
     obj6.planSelection = obj7;
     closure_130_13 = obj.useRef(obj6);

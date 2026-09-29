@@ -1,26 +1,26 @@
-// Module ID: 11283
-// Function ID: 11284
+// Module ID: 11441
+// Function ID: 11442
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 1954, 21, 4636, 576, 4457, 7253, 1176, 4632, 5056, 4603, 2]
+// Dependencies: [19, 17, 2038, 21, 4788, 576, 4608, 7427, 1177, 4784, 5218, 4755, 2]
 // Exports: default
 
-// Module 11283 (PremiumUpsellTooltipActionSheet)
+// Module 11441 (PremiumUpsellTooltipActionSheet)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4457 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7253 */;
+import native from "native" /* 1177 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4608 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { justifyContent: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, img: null, header: null, title: null, description: null, nitroWheel: null, buttonContainer: null };
 let size = { alignSelf: "center", width: 231, height: 231, borderRadius: nativeDefault.radii.sm, marginBottom: 16 };
 obj2.img = size;
@@ -118,7 +118,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
         },
       size: "lg"
     };
-    tmp2Result2 = tmp2(tmp3(5056).Button, obj10);
+    tmp2Result2 = tmp2(tmp3(5218).Button, obj10);
   }
   items4[1] = tmp2Result2;
   obj8.children = items4;

@@ -1,64 +1,37 @@
 // Module ID: 4142
 // Function ID: 4143
-// Dependencies: [3726, 3730]
+// Dependencies: [3877, 3878]
 // Exports: default
 
 // Module 4142
-import _mod3730 from "module_3730" /* 3730 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  let obj = { default: requiredArgs };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = requiredArgs;
+  tmp3 = _typeof;
 }
-requiredArgs = tmp3;
+_typeof = tmp3;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
+} else {
+  tmp5 = requiredArgs;
+}
+requiredArgs = tmp5;
 
-export default function setDefaultOptions(obj) {
+export default function getDaysInMonth(arg0) {
   requiredArgs.default(1, arguments);
-  obj = {};
-  const defaultOptions = _mod3730.getDefaultOptions();
-  for (const key10017 in defaultOptions) {
-    let _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    let call = hasOwnProperty.call;
-    if (typeof call === "unknown") {
-      let hasOwnPropertyResult = hasOwnProperty(key10017);
-    } else {
-      hasOwnPropertyResult = call(defaultOptions, key10017);
-    }
-    if (!hasOwnPropertyResult) {
-      continue;
-    } else {
-      obj[key10017] = defaultOptions[key10017];
-      continue;
-    }
-    continue;
-  }
-  for (const key10023 in arg0) {
-    let _Object2 = Object;
-    let call2 = hasOwnProperty2.call;
-    if (typeof call2 === "unknown") {
-      let hasOwnProperty2Result = hasOwnProperty2(key10023);
-    } else {
-      hasOwnProperty2Result = call2(arg0, key10023);
-    }
-    if (!hasOwnProperty2Result) {
-      continue;
-    } else {
-      if (undefined === arg0[key10023]) {
-        delete tmp[tmp2];
-        continue;
-      } else {
-        obj[key10023] = arg0[key10023];
-        continue;
-      }
-      continue;
-    }
-    continue;
-  }
-  _mod3730.setDefaultOptions(obj);
+  const defaultResult1 = _typeof.default(arg0);
+  const fullYear = defaultResult1.getFullYear();
+  const month = defaultResult1.getMonth();
+  const date = new Date(0);
+  date.setFullYear(fullYear, month + 1, 0);
+  date.setHours(0, 0, 0, 0);
+  return date.getDate();
 };
 export default exports.default;

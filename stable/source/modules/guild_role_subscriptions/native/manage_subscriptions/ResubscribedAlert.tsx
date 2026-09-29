@@ -1,16 +1,16 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15491
+// Function ID: 15492
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4636, 576, 5075, 1114, 15303, 1176, 4632, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 5237, 1115, 15492, 1177, 4784, 2]
 // Exports: default
 
-// Module 15302 (ResubscribedAlert)
+// Module 15491 (ResubscribedAlert)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import common_AlertDefault from "common/Alert" /* 5075 */;
-import _modDef15303 from "module_15303" /* 15303 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import _modDef15492 from "module_15492" /* 15492 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, body: { alignItems: "center", textAlign: "center" }, centerText: { textAlign: "center" }, headerImage: { width: 87, height: 87 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -33,7 +33,7 @@ export default function ResubscribedAlert(onClose) {
   obj.style = tmp.container;
   const obj2 = { style: tmp.body, children: null };
   const tmp2 = common_AlertDefault;
-  const items = [hasOwnProperty(React4, { source: _modDef15303, style: tmp.headerImage }), hasOwnProperty(native.Spacer, { size: 27 }), , , ];
+  const items = [hasOwnProperty(React4, { source: _modDef15492, style: tmp.headerImage }), hasOwnProperty(native.Spacer, { size: 27 }), , , ];
   const obj4 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
   const intl2 = util.intl;
   obj4.children = intl2.string(util.t.oPV2cy);

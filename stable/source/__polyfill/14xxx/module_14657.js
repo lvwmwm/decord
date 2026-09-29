@@ -1,20 +1,18 @@
 // Module ID: 14657
 // Function ID: 14658
-// Dependencies: [19, 14653]
-// Exports: default
+// Dependencies: [14658]
 
 // Module 14657
-import _modDef14653 from "module_14653" /* 14653 */;
-import noop from "module_19" /* 19 */;
+import _mod14658 from "module_14658" /* 14658 */;
 
 
-export default function useReanimatedHeaderHeight() {
-  const context = noop.useContext(_modDef14653);
-  if (undefined === context) {
-    const _Error = Error;
-    const error = new Error("Couldn't find the header height using Reanimated. Are you inside a screen in a navigator with a header and your NavigationContainer is wrapped in ReanimatedScreenProvider?");
-    throw error;
-  } else {
-    return context;
+export default (arg0) => {
+  let num = 0;
+  {
+    num = 0;
+    if (0 !== tmp) {
+      num = _mod14658(tmp);
+    }
   }
+  return num;
 };

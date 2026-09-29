@@ -1,16 +1,16 @@
-// Module ID: 8880
-// Function ID: 8881
+// Module ID: 9066
+// Function ID: 9067
 // Name: useFormattedExpirationLabel
-// Dependencies: [4228, 1114, 2]
+// Dependencies: [4380, 1115, 2]
 // Exports: default
 
-// Module 8880 (useFormattedExpirationLabel)
-import util from "util" /* 1114 */;
-import _modDef4228 from "module_4228" /* 4228 */;
+// Module 9066 (useFormattedExpirationLabel)
+import util from "util" /* 1115 */;
+import _modDef4380 from "module_4380" /* 4380 */;
 import size from "module_2" /* 2 */;
 
 function formatExpirationLabel(expiry) {
-  const tmp2 = _modDef4228();
+  const tmp2 = _modDef4380();
   if (expiry > tmp2) {
     const diffResult = expiry.diff(tmp2, "days");
     if (diffResult > 1) {

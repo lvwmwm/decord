@@ -1,14 +1,14 @@
-// Module ID: 9848
-// Function ID: 9849
+// Module ID: 9835
+// Function ID: 9836
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [21, 4636, 5204, 4632, 2]
+// Dependencies: [21, 4788, 5371, 4784, 2]
 // Exports: ActionSheetHeaderPressableText
 
-// Module 9848 (ActionSheetHeaderPressableText)
+// Module 9835 (ActionSheetHeaderPressableText)
 import jsxProd from "jsxProd" /* 21 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Pressables from "Pressables" /* 5204 */;
-import createStyles from "createStyles" /* 4636 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import Pressables from "Pressables" /* 5371 */;
+import createStyles from "createStyles" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;

@@ -1,21 +1,21 @@
-// Module ID: 10988
-// Function ID: 10989
+// Module ID: 11147
+// Function ID: 11148
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4636, 576, 1176, 4632, 4481, 2]
+// Dependencies: [19, 17, 21, 4788, 576, 1177, 4784, 4632, 2]
 // Exports: default
 
-// Module 10988 (LockedRecipientField)
+// Module 11147 (LockedRecipientField)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import Text_Text from "Text/Text" /* 4632 */;
+import native from "native" /* 1177 */;
+import UserUtilsDefault from "UserUtils" /* 4632 */;
+import Text_Text from "Text/Text" /* 4784 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 }, avatar: null };
 let obj3 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 };
 obj2.avatar = { marginEnd: nativeDefault.space.PX_8 };
@@ -27,9 +27,10 @@ export default function LockedRecipientField(user) {
   user = user.user;
   const tmp = closure_6();
   const obj = { style: tmp.container, children: null };
+  const items = [React4(native.Avatar, { style: tmp.avatar, user, guildId: "Array", size: native.AvatarSizes.NORMAL }), ];
+  const obj3 = { variant: "text-md/semibold", children: null };
   const obj2 = { style: tmp.avatar, user, guildId: "Array", size: native.AvatarSizes.NORMAL };
-  const items = [React4(native.Avatar, obj2), ];
-  const obj3 = { variant: "text-md/semibold", children: UserUtilsDefault.getName(user) };
+  obj3.children = UserUtilsDefault.getName(user);
   items[1] = React4(Text_Text.Text, obj3);
   obj.children = items;
   return hasOwnProperty(View, obj);

@@ -1,9 +1,9 @@
 // Module ID: 10181
 // Function ID: 10182
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10181
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 20, height: 20, scales: [1, 2, 3], hash: "d3638c1d3e13cd543d354bc72debe331", name: "ic_block", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "19a79c674ca352a1b9c59552160bbdc6", name: "telegram", type: "png" });

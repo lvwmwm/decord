@@ -1,26 +1,26 @@
-// Module ID: 9167
-// Function ID: 9168
+// Module ID: 13230
+// Function ID: 13231
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4628, 21, 4636, 576, 7082, 504, 4486, 4632, 1114, 5665, 1971, 2]
+// Dependencies: [19, 17, 4780, 21, 4788, 576, 7256, 504, 4637, 4784, 1115, 5833, 2055, 2]
 // Exports: default
 
-// Module 9167 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 13230 (InAppReportsGuildDiscoveryPreviewElement)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 1971 */;
-import ColorUtils from "ColorUtils" /* 4486 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import GuildIconDefault from "GuildIcon" /* 5665 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7082 */;
+import util from "util" /* 1115 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import ColorUtils from "ColorUtils" /* 4637 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import GuildIconDefault from "GuildIcon" /* 5833 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7256 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { textTransform: "uppercase", lineHeight: 16, marginBottom: 8 }, itemContainer: null, guildInfo: null, guildName: null, guildIcon: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.itemContainer = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };

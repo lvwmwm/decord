@@ -1,25 +1,25 @@
-// Module ID: 10478
-// Function ID: 10479
+// Module ID: 10644
+// Function ID: 10645
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 5544, 21, 8842, 10364, 4599, 8883, 10479, 10481, 9352, 10483, 10485, 8900, 8787, 8785, 2]
+// Dependencies: [19, 5712, 21, 9023, 10532, 4750, 9069, 10645, 10647, 9380, 10649, 10651, 9086, 8974, 8972, 2]
 
-// Module 10478 (EmojiPickerCategoryIcon)
-import ClockIcon from "ClockIcon" /* 4599 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8785 */;
-import FlagIcon from "FlagIcon" /* 8787 */;
-import TrophyIcon from "TrophyIcon" /* 8842 */;
-import ReactionIcon from "ReactionIcon" /* 8883 */;
-import HeartIcon from "HeartIcon" /* 8900 */;
-import GameControllerIcon from "GameControllerIcon" /* 9352 */;
-import StarIcon from "StarIcon" /* 10364 */;
-import NatureIcon from "NatureIcon" /* 10479 */;
-import FoodIcon from "FoodIcon" /* 10481 */;
-import BicycleIcon from "BicycleIcon" /* 10483 */;
-import ObjectIcon from "ObjectIcon" /* 10485 */;
+// Module 10644 (EmojiPickerCategoryIcon)
+import ClockIcon from "ClockIcon" /* 4750 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8972 */;
+import FlagIcon from "FlagIcon" /* 8974 */;
+import TrophyIcon from "TrophyIcon" /* 9023 */;
+import ReactionIcon from "ReactionIcon" /* 9069 */;
+import HeartIcon from "HeartIcon" /* 9086 */;
+import GameControllerIcon from "GameControllerIcon" /* 9380 */;
+import StarIcon from "StarIcon" /* 10532 */;
+import NatureIcon from "NatureIcon" /* 10645 */;
+import FoodIcon from "FoodIcon" /* 10647 */;
+import BicycleIcon from "BicycleIcon" /* 10649 */;
+import ObjectIcon from "ObjectIcon" /* 10651 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const EmojiCategories = fn(5544).EmojiCategories;
+const EmojiCategories = fn(5712).EmojiCategories;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoryIcon.tsx");

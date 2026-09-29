@@ -1,9 +1,9 @@
 // Module ID: 13547
 // Function ID: 13548
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13547
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 375, height: 199.5, scales: [2, 3], hash: "84a21c838928df371966fa4ffd9053d1", name: "nitro_home_banner", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "dcfca3dda846f0acd5adc9867fb467b3", name: "ic_group_dm", type: "png" });

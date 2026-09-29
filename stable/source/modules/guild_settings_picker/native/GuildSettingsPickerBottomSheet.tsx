@@ -1,20 +1,20 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 14187
+// Function ID: 14188
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 4636, 13978, 7253, 7252, 4632, 1176, 13982, 4603, 5056, 38, 9192, 2]
+// Dependencies: [19, 17, 21, 4788, 14188, 7427, 7426, 4784, 1177, 14192, 4755, 5218, 38, 9887, 2]
 
-// Module 13977 (GuildSettingsPickerBottomSheet)
+// Module 14187 (GuildSettingsPickerBottomSheet)
 import _modDef38 from "module_38" /* 38 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9192 */;
-import GuildPickerDefault from "GuildPicker" /* 13982 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9887 */;
+import GuildPickerDefault from "GuildPicker" /* 14192 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 const timestampProducer = createStyles.createStyles({ content: { paddingHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings_picker/native/GuildSettingsPickerBottomSheet.tsx");

@@ -1,12 +1,13 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 18264
+// Function ID: 18265
 // Name: VoicePanelManager
-// Dependencies: [4659, 4844, 7221, 2]
+// Dependencies: [2041, 4811, 4996, 7395, 2]
 
-// Module 17917 (VoicePanelManager)
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import VoicePanelStore from "VoicePanelStore" /* 4844 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
+// Module 18264 (VoicePanelManager)
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import VoicePanelStore from "VoicePanelStore" /* 4996 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7395 */;
 
 const prototype = function VoicePanelManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -15,9 +16,18 @@ const prototype = function VoicePanelManager() {
       const channelId = RTCConnectionStore.getChannelId();
       if (null != channelId) {
         const state = VoicePanelStore.getState();
-        const channels = state.channels;
-        if (!channels.has(channelId)) {
-          state.openChannel(channelId);
+        const channel = ChannelStore.getChannel(channelId);
+        let isGuildStageVoiceResult;
+        if (channel != null) {
+          isGuildStageVoiceResult = channel.isGuildStageVoice();
+        }
+        if (isGuildStageVoiceResult) {
+          state.closeChannel(channelId);
+        } else {
+          const channels = state.channels;
+          if (!channels.has(channelId)) {
+            state.openChannel(channelId);
+          }
         }
       }
     },
@@ -25,9 +35,18 @@ const prototype = function VoicePanelManager() {
       const channelId = RTCConnectionStore.getChannelId();
       if (null != channelId) {
         const state = VoicePanelStore.getState();
-        const channels = state.channels;
-        if (!channels.has(channelId)) {
-          state.openChannel(channelId);
+        const channel = ChannelStore.getChannel(channelId);
+        let isGuildStageVoiceResult;
+        if (channel != null) {
+          isGuildStageVoiceResult = channel.isGuildStageVoice();
+        }
+        if (isGuildStageVoiceResult) {
+          state.closeChannel(channelId);
+        } else {
+          const channels = state.channels;
+          if (!channels.has(channelId)) {
+            state.openChannel(channelId);
+          }
         }
       }
     }

@@ -1,16 +1,16 @@
-// Module ID: 16846
-// Function ID: 16847
+// Module ID: 17211
+// Function ID: 17212
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1371, 11051, 1074, 21, 1363, 4636, 16847, 4373, 5055, 4626, 5204, 4632, 5068, 504, 4481, 4781, 2]
+// Dependencies: [32, 19, 17, 1372, 11209, 1074, 21, 1364, 4788, 17212, 4524, 5217, 4778, 5371, 4784, 5230, 504, 4632, 4933, 2]
 
-// Module 16846 (ChannelDetailsTopic)
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4626 */;
-import ChannelUtils from "ChannelUtils" /* 4781 */;
-import spring from "spring" /* 5055 */;
+// Module 17211 (ChannelDetailsTopic)
+import UserUtilsDefault from "UserUtils" /* 4632 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4778 */;
+import ChannelUtils from "ChannelUtils" /* 4933 */;
+import spring from "spring" /* 5217 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function GuildChannelDetailsTopic(channel) {
@@ -187,7 +187,7 @@ function PrivateChannelDetailsTopic(channel) {
     const obj3 = { textAlign: channel.textAlign };
     obj2.style = obj3;
     obj2.children = stateFromStores;
-    tmp4 = closure_11(channel(4632).Text, obj2);
+    tmp4 = closure_11(channel(4784).Text, obj2);
   }
   return tmp4;
 }
@@ -201,19 +201,19 @@ function GroupDMChannelDetailsTopic(channel) {
     const obj3 = { textAlign: channel.textAlign };
     obj2.style = obj3;
     obj2.children = stateFromStores;
-    tmp4 = closure_11(channel(4632).Text, obj2);
+    tmp4 = closure_11(channel(4784).Text, obj2);
   }
   return tmp4;
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const ChannelDetailsConstants = fn(11051);
+const ChannelDetailsConstants = fn(11209);
 ({ CHANNEL_TOPIC_LINE_CLAMP: closure_8, SPRING_CHANNEL_DETAILS: closure_9 } = ChannelDetailsConstants);
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const PlatformUtils = fn(1363);
-const createStyles = fn(4636);
+const PlatformUtils = fn(1364);
+const createStyles = fn(4788);
 let closure_15 = createStyles.createStyles({ hidden: { flex: 1, flexGrow: 1, position: "absolute", opacity: 0 }, topic: { overflow: "hidden" }, gradient: { flex: 1, flexGrow: 1 }, expanded: { textAlign: "center" }, topicText: { paddingVertical: 5 } });
 const EMPTY_STYLE = {};
 const constants = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };

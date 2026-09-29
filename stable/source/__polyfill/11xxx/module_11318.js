@@ -1,9 +1,9 @@
 // Module ID: 11318
 // Function ID: 11319
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11318
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 99.66666666666667, height: 66.66666666666667, scales: [3], hash: "0fef0a9d83d27dc691bf77b0bdae0680", name: "asset_opal_badge_small", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 216, height: 115, scales: [1], hash: "ac18ecef6a4188530e3bbe95eefb7a2b", name: "gift_chest", type: "png" });

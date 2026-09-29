@@ -1,21 +1,21 @@
-// Module ID: 11638
-// Function ID: 11639
+// Module ID: 11785
+// Function ID: 11786
 // Name: AppStoreOverlayBottomSheet
-// Dependencies: [32, 19, 21, 4636, 1477, 8287, 5073, 7820, 4325, 11635, 11639, 7253, 7257, 6728, 2]
+// Dependencies: [32, 19, 21, 4788, 1478, 8471, 5235, 7986, 4477, 11782, 11786, 7427, 7431, 6901, 2]
 // Exports: default
 
-// Module 11638 (AppStoreOverlayBottomSheet)
-import openURLDefault from "openURL" /* 4325 */;
-import AnalyticsActions from "AnalyticsActions" /* 7820 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 11635 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 11639 */;
+// Module 11785 (AppStoreOverlayBottomSheet)
+import openURLDefault from "openURL" /* 4477 */;
+import AnalyticsActions from "AnalyticsActions" /* 7986 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 11782 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 11786 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_7 = createStyles.createStyles({ headerBar: { zIndex: 1 }, bodyContainer: { flex: 1, minHeight: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayBottomSheet.tsx");

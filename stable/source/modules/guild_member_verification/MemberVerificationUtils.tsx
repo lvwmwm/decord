@@ -1,13 +1,13 @@
-// Module ID: 5139
-// Function ID: 5140
+// Module ID: 5301
+// Function ID: 5302
 // Name: MemberVerificationUtils
-// Dependencies: [5140, 1074, 4461, 1369, 2]
+// Dependencies: [5302, 1074, 4612, 1370, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 5139 (MemberVerificationUtils)
+// Module 5301 (MemberVerificationUtils)
 import Constants from "Constants" /* 1074 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4461 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 5140 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4612 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 5302 */;
 import size from "module_2" /* 2 */;
 
 ({ AUTOMATIC_APPROVAL_FORM_FIELDS: c2, MANUAL_APPROVAL_FORM_FIELDS: c3 } = MemberVerificationConstants);
@@ -21,13 +21,13 @@ export const isValidFormResponse = function isValidFormResponse(required) {
       return false;
     } else {
       if (MemberVerificationTypes.VerificationFormFieldTypes.TERMS !== field_type) {
-        if (tmp4(4461).VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (tmp4(4461).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (tmp4(4461).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (tmp4(4461).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+        if (tmp4(4612).VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (tmp4(4612).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (tmp4(4612).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (tmp4(4612).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return typeof response === "number";
               } else {
-                return tmp4(1369).assertNever(field_type);
+                return tmp4(1370).assertNever(field_type);
               }
             }
           }

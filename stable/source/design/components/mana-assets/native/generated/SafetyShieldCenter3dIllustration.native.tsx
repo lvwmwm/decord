@@ -1,13 +1,13 @@
-// Module ID: 6500
-// Function ID: 6501
+// Module ID: 6672
+// Function ID: 6673
 // Name: SafetyShieldCenter3dIllustration
-// Dependencies: [21, 5668, 6501, 2]
+// Dependencies: [21, 5836, 6673, 2]
 // Exports: SafetyShieldCenter3dIllustration
 
-// Module 6500 (SafetyShieldCenter3dIllustration)
+// Module 6672 (SafetyShieldCenter3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6501 from "module_6501" /* 6501 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6673 from "module_6673" /* 6673 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const SafetyShieldCenter3dIllustration = function SafetyShieldCenter3dIll
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6501 };
+  const obj2 = { uri: _modDef6673 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

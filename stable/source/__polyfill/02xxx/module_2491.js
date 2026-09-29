@@ -1,9 +1,9 @@
 // Module ID: 2491
 // Function ID: 2492
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2491
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "c91aaf2e607c53b6c817fc29b41e11bb", name: "PremiumGifting.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "8367b663321da2a7c858d5d23cfa41f5", name: "fi.messages.8367b663321da2a7c858d5d23cfa41f5.compiled.messages", type: "jsona" });

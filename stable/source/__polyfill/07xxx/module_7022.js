@@ -1,27 +1,22 @@
 // Module ID: 7022
 // Function ID: 7023
-// Dependencies: []
-// Exports: useDataMultiplier
+// Dependencies: [6997, 7012, 6988]
+// Exports: useManualGesture
 
 // Module 7022
+import ComposedGestureName from "ComposedGestureName" /* 6988 */;
+import DEFAULT_PROPS_TRANSFORMER from "DEFAULT_PROPS_TRANSFORMER" /* 6997 */;
+import _mod7012 from "module_7012" /* 7012 */;
 
-export const useDataMultiplier = function useDataMultiplier(arg0, arg1) {
-  const array = new Array(arg1);
-  let flag = false;
-  if (typeof arg0[0] === "object") {
-    flag = true;
+require = arg1;
+const dependencyMap = arg6;
+let closure_2 = {};
+
+export const useManualGesture = function useManualGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_2;
   }
-  for (let num = 0; num < arg1; num = num + 1) {
-    let tmp3 = arg0[num % tmp];
-    if (flag) {
-      let obj = {};
-      let merged = Object.assign(tmp3);
-      let tmp5 = obj;
-    } else {
-      tmp5 = tmp3;
-    }
-    array[num] = tmp5;
-  }
-  const items = [array];
-  return items;
+  const clonedAndRemappedConfig = DEFAULT_PROPS_TRANSFORMER.useClonedAndRemappedConfig(tmp);
+  return _mod7012.useGesture(ComposedGestureName.SingleGestureName.Manual, clonedAndRemappedConfig);
 };

@@ -1,13 +1,13 @@
-// Module ID: 6682
-// Function ID: 6683
+// Module ID: 6854
+// Function ID: 6855
 // Name: WorldIllocon
-// Dependencies: [21, 5668, 6683, 2]
+// Dependencies: [21, 5836, 6855, 2]
 // Exports: WorldIllocon
 
-// Module 6682 (WorldIllocon)
+// Module 6854 (WorldIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6683 from "module_6683" /* 6683 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6855 from "module_6855" /* 6855 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const WorldIllocon = function WorldIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6683 };
+  const obj2 = { uri: _modDef6855 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

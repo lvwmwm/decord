@@ -1,17 +1,17 @@
-// Module ID: 18041
-// Function ID: 18042
+// Module ID: 18387
+// Function ID: 18388
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 17342, 1074, 3, 1230, 7859, 15, 9, 13756, 1240, 1248, 17463, 1952, 2]
+// Dependencies: [5, 17, 502, 17699, 1074, 3, 1231, 8031, 15, 9, 13960, 1241, 1249, 17775, 2036, 2]
 // Exports: default
 
-// Module 18041 (executeHeadlessTask)
+// Module 18387 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
-import SentryUtilsDefault from "SentryUtils" /* 1230 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7859 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13756 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8031 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13960 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -372,7 +372,7 @@ let closure_10 = async function _executeHeadlessTask(name, arg1, arg2) {
   })();
 };
 const AppState = fn(17).AppState;
-const NativeAppStartup = fn(17342);
+const NativeAppStartup = fn(17699);
 ({ initHeadlessTask: closure_7, applicationReady: closure_8 } = NativeAppStartup);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);

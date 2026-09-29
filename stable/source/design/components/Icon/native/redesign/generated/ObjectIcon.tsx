@@ -1,13 +1,13 @@
-// Module ID: 10485
-// Function ID: 10486
+// Module ID: 10651
+// Function ID: 10652
 // Name: ObjectIcon
-// Dependencies: [19, 21, 576, 4337, 10486, 2]
+// Dependencies: [19, 21, 576, 4488, 10652, 2]
 // Exports: ObjectIcon
 
-// Module 10485 (ObjectIcon)
+// Module 10651 (ObjectIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod10486 from "module_10486" /* 10486 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod10652 from "module_10652" /* 10652 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ObjectIcon = function ObjectIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10486, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10652, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

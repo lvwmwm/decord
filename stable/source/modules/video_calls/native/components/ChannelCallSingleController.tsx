@@ -1,19 +1,19 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10318
+// Function ID: 10319
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4658, 502, 1074, 4657, 21, 1240, 4816, 504, 10152, 10154, 10155, 2]
+// Dependencies: [19, 4810, 502, 1074, 4809, 21, 1241, 4968, 504, 10319, 10321, 10322, 2]
 // Exports: ChannelCallSingleController
 
-// Module 10151 (ChannelCallSingleController)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
+// Module 10318 (ChannelCallSingleController)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4968 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ParticipantTypes = fn(4657).ParticipantTypes;
+const ParticipantTypes = fn(4809).ParticipantTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallSingleController.tsx");
@@ -36,13 +36,13 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
       return null;
     } else {
       let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10152 : 10154);
+      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10319 : 10321);
       let obj2 = { participant: selectedParticipant, channel };
       <tmp18 participant={selectedParticipant} channel={channel} />;
     }
   } else if (tmp5.USER === type) {
     let obj = { participant: selectedParticipant, channel };
-    return jsx(channel(10155), { participant: selectedParticipant, channel });
+    return jsx(channel(10322), { participant: selectedParticipant, channel });
   } else if (tmp5.HIDDEN_STREAM === type) {
     return null;
   } else if (tmp5.ACTIVITY === type) {

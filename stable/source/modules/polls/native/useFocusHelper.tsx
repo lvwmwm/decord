@@ -1,10 +1,10 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12490
+// Function ID: 12491
 // Name: useFocusHelper
-// Dependencies: [19, 38, 5679, 2]
+// Dependencies: [19, 38, 5847, 2]
 // Exports: default
 
-// Module 12341 (useFocusHelper)
+// Module 12490 (useFocusHelper)
 import _modDef38 from "module_38" /* 38 */;
 import noop from "module_19" /* 19 */;
 

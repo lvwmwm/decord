@@ -1,9 +1,9 @@
 // Module ID: 11473
 // Function ID: 11474
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11473
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following/light", width: 280, height: 120, scales: [2, 3], hash: "634e3e2f609abec6ee1af702b841050e", name: "channel_following_success_3", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 93.33333333333333, height: 65, scales: [3], hash: "c4946770ab3c50ce3672b0e2087496ae", name: "asset_ruby_badge_small", type: "png" });

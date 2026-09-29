@@ -1,9 +1,9 @@
 // Module ID: 9379
 // Function ID: 9380
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 9379
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/oauth2", width: 92, height: 92, scales: [2, 3], hash: "118e914321321b15506a73d46c214571", name: "failure-header", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "80139ae0e2b501617462c705b80c97d5", name: "ScreenStreamIcon", type: "png" });

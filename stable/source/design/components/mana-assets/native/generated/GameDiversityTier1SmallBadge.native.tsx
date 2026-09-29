@@ -1,13 +1,13 @@
-// Module ID: 6156
-// Function ID: 6157
+// Module ID: 6326
+// Function ID: 6327
 // Name: GameDiversityTier1SmallBadge
-// Dependencies: [21, 5668, 6157, 2]
+// Dependencies: [21, 5836, 6327, 2]
 // Exports: GameDiversityTier1SmallBadge
 
-// Module 6156 (GameDiversityTier1SmallBadge)
+// Module 6326 (GameDiversityTier1SmallBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6157 from "module_6157" /* 6157 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6327 from "module_6327" /* 6327 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GameDiversityTier1SmallBadge = function GameDiversityTier1SmallBadg
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6157 };
+  const obj2 = { uri: _modDef6327 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

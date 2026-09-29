@@ -1,22 +1,22 @@
-// Module ID: 14914
-// Function ID: 14915
+// Module ID: 15098
+// Function ID: 15099
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 7643, 8517, 8770, 14915, 14918, 1185, 7404, 7098, 8768, 504, 7642, 8522, 2]
+// Dependencies: [5, 19, 7814, 8702, 8957, 15099, 15102, 1186, 7575, 7272, 8955, 504, 7813, 8707, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
-// Module 14914 (useParentalControlSettings)
-import UserSettingsUtils from "UserSettingsUtils" /* 7098 */;
-import useUserLinks from "useUserLinks" /* 8768 */;
-import useSelectedTeen from "useSelectedTeen" /* 8770 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14915 */;
+// Module 15098 (useParentalControlSettings)
+import UserSettingsUtils from "UserSettingsUtils" /* 7272 */;
+import useUserLinks from "useUserLinks" /* 8955 */;
+import useSelectedTeen from "useSelectedTeen" /* 8957 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15099 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7643 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7814 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SafetyToastType = fn(8517).SafetyToastType;
+const SafetyToastType = fn(8702).SafetyToastType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useParentalControlSettings.tsx");
 
@@ -41,8 +41,8 @@ export const useParentalControlledExplicitContentSettings = function useParental
     }
     const obj3 = { explicitContentNonFriendDm: null, explicitContentFriendDm: null, explicitContentGuilds: null };
     obj2.setting = prop;
-    obj3.explicitContentNonFriendDm = tmp(14918).resolveExplicitContentSettingWithDefaultsForTeen(obj2);
-    const tmpResult = tmp(14918);
+    obj3.explicitContentNonFriendDm = tmp(15102).resolveExplicitContentSettingWithDefaultsForTeen(obj2);
+    const tmpResult = tmp(15102);
     let id2;
     if (selectedTeen != null) {
       id2 = selectedTeen.id;
@@ -53,10 +53,10 @@ export const useParentalControlledExplicitContentSettings = function useParental
       prop1 = controlledSetting.explicitContentFriendDm;
     }
     obj4.setting = prop1;
-    obj3.explicitContentFriendDm = tmp(14918).resolveExplicitContentSettingWithDefaultsForTeen(obj4);
-    obj3.explicitContentGuilds = tmp(1185).ExplicitContentRedaction.BLUR;
+    obj3.explicitContentFriendDm = tmp(15102).resolveExplicitContentSettingWithDefaultsForTeen(obj4);
+    obj3.explicitContentGuilds = tmp(1186).ExplicitContentRedaction.BLUR;
     tmp6 = obj3;
-    const tmpResult2 = tmp(14918);
+    const tmpResult2 = tmp(15102);
   }
   return tmp6;
 };
@@ -76,17 +76,17 @@ export const useParentalControlledGoreContentSettings = function useParentalCont
     }
     ({ goreContentNonFriendDm, goreContentFriendDm } = controlledSetting);
     if (!tmpResult.isSetAndNotDefault(goreContentNonFriendDm)) {
-      goreContentNonFriendDm = tmp(7404).resolveGoreSettingWithDefaultsForTeen({ isDm: true });
-      const tmpResult4 = tmp(7404);
+      goreContentNonFriendDm = tmp(7575).resolveGoreSettingWithDefaultsForTeen({ isDm: true });
+      const tmpResult4 = tmp(7575);
     }
     const obj2 = { goreContentNonFriendDm, goreContentFriendDm: null, goreContentGuilds: null };
-    tmpResult = tmp(14918);
+    tmpResult = tmp(15102);
     if (!tmpResult5.isSetAndNotDefault(goreContentFriendDm)) {
-      goreContentFriendDm = tmp(7404).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
-      const tmpResult6 = tmp(7404);
+      goreContentFriendDm = tmp(7575).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
+      const tmpResult6 = tmp(7575);
     }
     obj2.goreContentFriendDm = goreContentFriendDm;
-    obj2.goreContentGuilds = tmp(1185).ExplicitContentRedaction.BLUR;
+    obj2.goreContentGuilds = tmp(1186).ExplicitContentRedaction.BLUR;
     return obj2;
   }
 };
@@ -111,8 +111,8 @@ export const useDefaultGuildsRestricted = function useDefaultGuildsRestricted() 
   return controlledSetting1;
 };
 export const useAllowFriendsFromMutualGuildsOnlyForTeen = function useAllowFriendsFromMutualGuildsOnlyForTeen() {
-  const selectedTeen = controlledSetting(8770).useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(14915).ParentalControlledFriendSourceFlags;
+  const selectedTeen = controlledSetting(8957).useSelectedTeen();
+  const ParentalControlledFriendSourceFlags = controlledSetting(15099).ParentalControlledFriendSourceFlags;
   let id;
   if (selectedTeen != null) {
     id = selectedTeen.id;
@@ -172,16 +172,16 @@ export const useParentalControlledConsent = function useParentalControlledConsen
               items2 = [closure_0];
             }
             c4 = 1;
-            tmp3(7642).updateTeenConsents(tmp28, items1, items2);
+            tmp3(7813).updateTeenConsents(tmp28, items1, items2);
             c2 = 2;
             c5 = 1;
-            const obj3 = tmp3(7642);
+            const obj3 = tmp3(7813);
           }
         } else {
           if (1 === tmp7) {
             c4 = 0;
-            tmp3(8522).showFailedToast(constants.GENERIC_ERROR);
-            const obj2 = tmp3(8522);
+            tmp3(8707).showFailedToast(constants.GENERIC_ERROR);
+            const obj2 = tmp3(8707);
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;

@@ -1,9 +1,14 @@
 // Module ID: 7072
 // Function ID: 7073
-// Dependencies: [1120]
+// Dependencies: []
+// Exports: clamp
 
 // Module 7072
-import registerAsset from "module_1120" /* 1120 */;
+const fn = function n(arg0, arg1, arg2) {
+  return Math.min(Math.max(arg1, arg0), arg2);
+};
+fn.__closure = {};
+fn.__workletHash = 4405247003092;
+fn.__initData = { code: "function pnpm_clampTs1(value,lowerBound,upperBound){return Math.min(Math.max(lowerBound,value),upperBound);}" };
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1b06201c0ce237bba30c4db64f994263", name: "EyeIcon", type: "png" });
+export const clamp = fn;

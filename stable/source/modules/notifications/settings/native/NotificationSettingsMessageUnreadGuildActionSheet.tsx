@@ -1,22 +1,22 @@
-// Module ID: 10294
-// Function ID: 10295
+// Module ID: 10462
+// Function ID: 10463
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [19, 4817, 1074, 4818, 1084, 21, 10283, 10295, 1114, 7222, 10278, 7217, 2]
+// Dependencies: [19, 4969, 1074, 4970, 1084, 21, 10451, 10463, 1115, 7396, 10444, 7391, 2]
 // Exports: default
 
-// Module 10294 (NotificationSettingsMessageUnreadGuildActionSheet)
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7222 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10278 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 10295 */;
+// Module 10462 (NotificationSettingsMessageUnreadGuildActionSheet)
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7396 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10444 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 10463 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4969 */;
 
 const require = globalThis.__r;
 
-const NotificationSettingsUtils = tmp3(7217);
+const NotificationSettingsUtils = tmp3(7391);
 require = fn;
 const UserNotificationSettings = fn(1074).UserNotificationSettings;
-const UnreadSetting = fn(4818).UnreadSetting;
+const UnreadSetting = fn(4970).UnreadSetting;
 let closure_6 = fn(1084).GuildNotificationSettingsFlags;
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -30,8 +30,8 @@ export default function NotificationSettingsMessageUnreadGuildActionSheet(guildI
   let obj = require("notificationSettingsGuildFlagUtils");
   const tmp4 = jsx;
   if (notification === UserNotificationSettings.ALL_MESSAGES) {
-    const intl = tmp(1114).intl;
-    stringResult = intl.string(tmp(1114).t.eP8yWU);
+    const intl = tmp(1115).intl;
+    stringResult = intl.string(tmp(1115).t.eP8yWU);
   }
   return tmp4(NotificationSettingsMessageUnreadActionSheetDefault, {
     disabledMentionOnlyWithReason: stringResult,

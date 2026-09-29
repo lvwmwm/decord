@@ -1,21 +1,21 @@
-// Module ID: 15934
-// Function ID: 15935
+// Module ID: 16169
+// Function ID: 16170
 // Name: CollectiblesShopOrbsPage
-// Dependencies: [19, 17, 7645, 1076, 21, 4636, 7265, 8893, 15904, 4603, 8293, 15908, 1176, 8348, 1114, 15933, 2]
+// Dependencies: [19, 17, 7816, 1076, 21, 4788, 7439, 9079, 16134, 4755, 8477, 16141, 1177, 8533, 1115, 16168, 2]
 // Exports: default
 
-// Module 15934 (CollectiblesShopOrbsPage)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8293 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 15908 */;
+// Module 16169 (CollectiblesShopOrbsPage)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8477 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 16141 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7645 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7816 */;
 
 require = fn;
 const View = fn(17).View;
 let closure_6 = fn(1076).CollectiblesMobileShopScreen;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_8 = createStyles.createStyles({ container: { display: "flex", flex: 1 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopOrbsPage.tsx");

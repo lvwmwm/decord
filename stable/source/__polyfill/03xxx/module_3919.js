@@ -1,31 +1,16 @@
 // Module ID: 3919
 // Function ID: 3920
-// Dependencies: []
-// Exports: getRoundingMethod
+// Dependencies: [2114]
 
 // Module 3919
-const obj = {
-  ceil: Math.ceil,
-  round: Math.round,
-  floor: Math.floor,
-  trunc(endImportTime) {
-    if (endImportTime < 0) {
-      const _Math2 = Math;
-      let rounded = Math.ceil(endImportTime);
-    } else {
-      const _Math = Math;
-      rounded = Math.floor(endImportTime);
-    }
-    return rounded;
-  }
-};
-const trunc = "trunc";
+import module_2114 from "module_2114" /* 2114 */;
 
-export const getRoundingMethod = function getRoundingMethod(roundingMethod) {
-  if (roundingMethod) {
-    let tmp3 = tmp[roundingMethod];
-  } else {
-    tmp3 = tmp[trunc];
-  }
-  return tmp3;
-};
+if (!module_2114) {
+  const obj2 = { default: module_2114 };
+  let obj = obj2;
+} else {
+  obj = module_2114;
+}
+
+export default { date: obj.default({ formats: { full: "eeee d. MMMM y", long: "d. MMMM y", medium: "d. MMM y", short: "d.M.y" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "HH.mm.ss zzzz", long: "HH.mm.ss z", medium: "HH.mm.ss", short: "HH.mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'klo' {{time}}", long: "{{date}} 'klo' {{time}}", medium: "{{date}} {{time}}", short: "{{date}} {{time}}" }, defaultWidth: "full" }) };
+export default exports.default;

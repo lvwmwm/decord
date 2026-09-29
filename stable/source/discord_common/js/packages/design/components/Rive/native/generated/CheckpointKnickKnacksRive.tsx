@@ -1,11 +1,11 @@
-// Module ID: 4437
-// Function ID: 4438
+// Module ID: 4588
+// Function ID: 4589
 // Name: CheckpointKnickKnacksRive
-// Dependencies: [109, 19, 21, 4367, 4438, 4422, 2]
+// Dependencies: [109, 19, 21, 4518, 4589, 4573, 2]
 
-// Module 4437 (CheckpointKnickKnacksRive)
-import BaseRive from "BaseRive" /* 4367 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4422 */;
+// Module 4588 (CheckpointKnickKnacksRive)
+import BaseRive from "BaseRive" /* 4518 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4573 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

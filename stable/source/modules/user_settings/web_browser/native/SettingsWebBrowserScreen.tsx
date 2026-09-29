@@ -1,15 +1,15 @@
-// Module ID: 15564
-// Function ID: 15565
+// Module ID: 15755
+// Function ID: 15756
 // Name: SettingsWebBrowserScreen
-// Dependencies: [19, 8079, 21, 11605, 14776, 2]
+// Dependencies: [19, 8265, 21, 11754, 14992, 2]
 
-// Module 15564 (SettingsWebBrowserScreen)
-import SettingBuilders from "SettingBuilders" /* 11605 */;
-import SettingLayoutDefault from "SettingLayout" /* 14776 */;
+// Module 15755 (SettingsWebBrowserScreen)
+import SettingBuilders from "SettingBuilders" /* 11754 */;
+import SettingLayoutDefault from "SettingLayout" /* 14992 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const MobileUserSettings = fn(8079).MobileUserSettings;
+const MobileUserSettings = fn(8265).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/web_browser/native/SettingsWebBrowserScreen.tsx");
@@ -20,7 +20,11 @@ export default noop.memo(function SettingsWebBrowserScreen() {
     const obj3 = { settings: null };
     const items = [constants.SELECT_WEB_BROWSER];
     obj3.settings = items;
-    const items1 = [obj3];
+    const items1 = [obj3, ];
+    const obj4 = { settings: null };
+    const items2 = [constants.CLEAR_WEB_BROWSER_DATA];
+    obj4.settings = items2;
+    items1[1] = obj4;
     obj2.sections = items1;
     return SettingBuilders.createList(obj2);
   }, []);

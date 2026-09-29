@@ -1,9 +1,9 @@
 // Module ID: 18022
 // Function ID: 18023
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 18022
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "04c46d63a9ed0af066e3c9c84ab9d498", name: "ArrowLargeRightIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6d9d454b0d30ca95b55c7977c96de9cb", name: "StickerPlusIcon", type: "png" });

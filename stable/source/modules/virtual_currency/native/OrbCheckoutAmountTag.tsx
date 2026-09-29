@@ -1,16 +1,16 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11310
+// Function ID: 11311
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 4636, 576, 8962, 4632, 1114, 2]
+// Dependencies: [17, 21, 4788, 576, 9148, 4784, 1115, 2]
 // Exports: default
 
-// Module 11150 (OrbCheckoutAmountTag)
+// Module 11310 (OrbCheckoutAmountTag)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import OrbsIcon from "OrbsIcon" /* 8962 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import OrbsIcon from "OrbsIcon" /* 9148 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4636 */;
+import createStyles from "createStyles" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;
@@ -25,12 +25,12 @@ export default function OrbCheckoutAmountTag(orbAmount) {
   const obj = { style: tmp.orbAmountTag, children: null };
   const items = [React3(OrbsIcon.OrbsIcon, { size: "custom", color: "icon-strong", style: tmp.orbsIcon }), ];
   if (null == orbAmount) {
-    const intl2 = tmp5(1114).intl;
-    let stringResult = intl2.string(tmp5(1114).t.pfChQr);
+    const intl2 = tmp5(1115).intl;
+    let stringResult = intl2.string(tmp5(1115).t.pfChQr);
   } else {
-    const intl = tmp5(1114).intl;
+    const intl = tmp5(1115).intl;
     const obj3 = { orbAmount };
-    stringResult = intl.formatToPlainString(tmp5(1114).t.W4DfeF, obj3);
+    stringResult = intl.formatToPlainString(tmp5(1115).t.W4DfeF, obj3);
   }
   const obj4 = { variant: "text-md/semibold", accessibilityLabel: stringResult, children: null };
   let str = "--";

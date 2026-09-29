@@ -1,66 +1,28 @@
 // Module ID: 4352
 // Function ID: 4353
-// Dependencies: [19, 4351]
-// Exports: create, useStore
+// Dependencies: []
 
 // Module 4352
-import noop from "module_19" /* 19 */;
-
-function identity(arg0) {
-  return arg0;
+if (Intl.ListFormat) {
+  const _Intl = Intl;
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
+    const _Intl2 = Intl;
+    const obj2 = { data: null, locale: "el" };
+    const obj3 = { conjunction: null, disjunction: null, unit: null };
+    const obj4 = { long: { end: "{0} \u03BA\u03B1\u03B9 {1}", middle: "{0}, {1}", pair: "{0} \u03BA\u03B1\u03B9 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u03BA\u03B1\u03B9 {1}", middle: "{0}, {1}", pair: "{0} \u03BA\u03B1\u03B9 {1}", start: "{0}, {1}" } };
+    obj3.conjunction = obj4;
+    const obj5 = { long: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" }, short: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" } };
+    obj3.disjunction = obj5;
+    const obj6 = { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
+    obj3.unit = obj6;
+    obj2.data = obj3;
+    ListFormat.__addLocaleData(obj2);
+  }
 }
-function createImpl(arg0) {
-  store = store(4351).createStore(arg0);
-  function useBoundStore(arg0) {
-    let tmp = arg0;
-    closure_0 = store;
-    if (arg0 === undefined) {
-      tmp = identity;
-    }
-    closure_1 = tmp;
-    const syncExternalStore = noop.useSyncExternalStore(store.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
-    const debugValue = noop.useDebugValue(syncExternalStore);
-    return syncExternalStore;
-  }
-  const merged = Object.assign(useBoundStore, store);
-  return useBoundStore;
+let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
+if (!prop) {
+  prop = [];
 }
-
-export const create = (arg0) => {
-  if (arg0) {
-    if (typeof tmp === "function") {
-      store = store(4351).createStore(arg0);
-      function useBoundStore(arg0) {
-        let tmp = arg0;
-        closure_0 = store;
-        if (arg0 === undefined) {
-          tmp = identity;
-        }
-        closure_1 = tmp;
-        const syncExternalStore = noop.useSyncExternalStore(store.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
-        const debugValue = noop.useDebugValue(syncExternalStore);
-        return syncExternalStore;
-      }
-      const _Object = Object;
-      const merged = Object.assign(useBoundStore, store);
-      let tmp2 = useBoundStore;
-      const obj = store(4351);
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    tmp2 = tmp;
-  }
-  return tmp2;
-};
-export const useStore = function useStore(subscribe) {
-  closure_0 = subscribe;
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = identity;
-  }
-  closure_1 = tmp;
-  const syncExternalStore = noop.useSyncExternalStore(subscribe.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
-  const debugValue = noop.useDebugValue(syncExternalStore);
-  return syncExternalStore;
-};
+globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
+const obj = { data: { conjunction: { long: { end: "{0} \u03BA\u03B1\u03B9 {1}", middle: "{0}, {1}", pair: "{0} \u03BA\u03B1\u03B9 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u03BA\u03B1\u03B9 {1}", middle: "{0}, {1}", pair: "{0} \u03BA\u03B1\u03B9 {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" }, short: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "el" };
+prop.push(obj);

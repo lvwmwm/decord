@@ -1,9 +1,9 @@
 // Module ID: 8255
 // Function ID: 8256
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 8255
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f675dc68337355a0cf14fc6856097557", name: "GameControllerIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24.5, height: 24, scales: [2, 3], hash: "bbaa1714f228607ce548d318f0e28f01", name: "ic_swipe_reply_24px", type: "png" });

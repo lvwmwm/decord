@@ -1,18 +1,18 @@
-// Module ID: 5062
-// Function ID: 5063
+// Module ID: 5224
+// Function ID: 5225
 // Name: ButtonHooks
-// Dependencies: [19, 4636, 4347, 576, 4488, 4338, 4373, 5055, 5059, 5061, 5063, 5058, 4632, 1363, 2]
+// Dependencies: [19, 4788, 4498, 576, 4639, 4489, 4524, 5217, 5221, 5223, 5225, 5220, 4784, 1364, 2]
 // Exports: useButtonPillStyles, useButtonPressAnimationProps, useButtonScaleStyles, useButtonTextColorStyles, useForegroundColor, useGradientPillStyles, useIconSizeStyles, useIconTintStyles, useProfileThemedButtonStyles
 
-// Module 5062 (ButtonHooks)
+// Module 5224 (ButtonHooks)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4338 */;
-import native from "native" /* 4347 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import shared from "shared" /* 4488 */;
-import spring from "spring" /* 5055 */;
-import Icon from "Icon" /* 5058 */;
-import springPresets from "springPresets" /* 5059 */;
+import useToken from "useToken" /* 4489 */;
+import native from "native" /* 4498 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import shared from "shared" /* 4639 */;
+import spring from "spring" /* 5217 */;
+import Icon from "Icon" /* 5220 */;
+import springPresets from "springPresets" /* 5221 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -135,11 +135,11 @@ function getButtonColorTokens(variant) {
   }
 }
 let c4 = "rgba(0,0,0,0.001)";
-let createStyles = fn(4636);
+let createStyles = fn(4788);
 const backgroundInactive = createStyles.experimental_createToken(() => "#161CBB");
-createStyles = fn(4636);
+createStyles = fn(4788);
 const backgroundPressed = createStyles.experimental_createToken(() => "#1318A0");
-createStyles = fn(4636);
+createStyles = fn(4788);
 const styleProperties = createStyles.createStyleProperties(getButtonColorTokens);
 const __initData = { code: "function ButtonHooksNativeTsx1(){const{interpolateColor,pressed,inactiveColor,pressedColor}=this.__closure;return{tintColor:interpolateColor(pressed.get(),[0,1],[inactiveColor,pressedColor])};}" };
 const __initData2 = { code: "function ButtonHooksNativeTsx2(){const{themedStyles,colors,interpolateColor,pressed}=this.__closure;var _themedStyles$backgro,_themedStyles,_themedStyles$borderC,_themedStyles2;const backgroundColor=(_themedStyles$backgro=(_themedStyles=themedStyles)===null||_themedStyles===void 0?void 0:_themedStyles.backgroundColor)!==null&&_themedStyles$backgro!==void 0?_themedStyles$backgro:[colors.backgroundInactive,colors.backgroundPressed];const borderColor=(_themedStyles$borderC=(_themedStyles2=themedStyles)===null||_themedStyles2===void 0?void 0:_themedStyles2.borderColor)!==null&&_themedStyles$borderC!==void 0?_themedStyles$borderC:[colors.borderInactive,colors.borderPressed];return{backgroundColor:interpolateColor(pressed.get(),[0,1],backgroundColor),borderColor:interpolateColor(pressed.get(),[0,1],borderColor)};}" };
@@ -186,7 +186,7 @@ export const useProfileThemedButtonStyles = function useProfileThemedButtonStyle
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj9 = { backgroundColor: null, borderColor: null, color: "r" };
+      const obj9 = { backgroundColor: null, borderColor: null, color: "Array" };
       items2[1] = setColorOpacity3Result;
       obj9.backgroundColor = items2;
       const items3 = [c4, c4];
@@ -207,7 +207,7 @@ export const useProfileThemedButtonStyles = function useProfileThemedButtonStyle
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj11 = { backgroundColor: null, borderColor: null, color: "r" };
+      const obj11 = { backgroundColor: null, borderColor: null, color: "Array" };
       items4[1] = darkenColorResult1;
       obj11.backgroundColor = items4;
       const items5 = [c4, c4];
@@ -260,7 +260,7 @@ export const useButtonTextColorStyles = function useButtonTextColorStyles(active
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj9 = { backgroundColor: null, borderColor: null, color: "r" };
+      const obj9 = { backgroundColor: null, borderColor: null, color: "Array" };
       items2[1] = setColorOpacity3Result;
       obj9.backgroundColor = items2;
       const items3 = [c4, c4];
@@ -281,7 +281,7 @@ export const useButtonTextColorStyles = function useButtonTextColorStyles(active
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj11 = { backgroundColor: null, borderColor: null, color: "r" };
+      const obj11 = { backgroundColor: null, borderColor: null, color: "Array" };
       items4[1] = darkenColorResult1;
       obj11.backgroundColor = items4;
       const items5 = [c4, c4];
@@ -343,7 +343,7 @@ export const useIconTintStyles = function useIconTintStyles(variant, sharedValue
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj9 = { backgroundColor: null, borderColor: null, color: "r" };
+      const obj9 = { backgroundColor: null, borderColor: null, color: "Array" };
       items2[1] = setColorOpacity3Result;
       obj9.backgroundColor = items2;
       const items3 = [c4, c4];
@@ -364,7 +364,7 @@ export const useIconTintStyles = function useIconTintStyles(variant, sharedValue
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj11 = { backgroundColor: null, borderColor: null, color: "r" };
+      const obj11 = { backgroundColor: null, borderColor: null, color: "Array" };
       items4[1] = darkenColorResult1;
       obj11.backgroundColor = items4;
       const items5 = [c4, c4];
@@ -443,7 +443,7 @@ export const useButtonPillStyles = function useButtonPillStyles(variant, pressed
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj9 = { backgroundColor: null, borderColor: null, color: "r" };
+      const obj9 = { backgroundColor: null, borderColor: null, color: "Array" };
       items2[1] = setColorOpacity3Result;
       obj9.backgroundColor = items2;
       const items3 = [c4, c4];
@@ -464,7 +464,7 @@ export const useButtonPillStyles = function useButtonPillStyles(variant, pressed
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj11 = { backgroundColor: null, borderColor: null, color: "r" };
+      const obj11 = { backgroundColor: null, borderColor: null, color: "Array" };
       items4[1] = darkenColorResult1;
       obj11.backgroundColor = items4;
       const items5 = [c4, c4];
@@ -601,22 +601,22 @@ export const useIconSizeStyles = (arg0) => {
   return fontScale.useMemo(() => {
     Icon;
     if ("sm" === closure_0) {
-      let iconSize = tmp(5058).getIconSize(tmp(5061).SMALL_BUTTON_ICON_SIZE);
-      const tmpResult = tmp(5058);
+      let iconSize = tmp(5220).getIconSize(tmp(5223).SMALL_BUTTON_ICON_SIZE);
+      const tmpResult = tmp(5220);
     } else {
       iconSize = tmp4;
       if ("lg" === tmp5) {
-        iconSize = tmp(5058).getIconSize(tmp(5061).LARGE_BUTTON_ICON_SIZE);
-        const tmpResult4 = tmp(5058);
+        iconSize = tmp(5220).getIconSize(tmp(5223).LARGE_BUTTON_ICON_SIZE);
+        const tmpResult4 = tmp(5220);
       }
     }
     let width = iconSize;
     if (flag) {
       width = iconSize;
       if (fontScale > 1) {
-        const tmpResult5 = tmp(5061);
-        const tmp13 = tmp(4632).TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, tmp5)];
-        const tmp9 = tmp(1363).isAndroid() ? tmp13.fontSize : tmp13.lineHeight;
+        const tmpResult5 = tmp(5223);
+        const tmp13 = tmp(4784).TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, tmp5)];
+        const tmp9 = tmp(1364).isAndroid() ? tmp13.fontSize : tmp13.lineHeight;
         width = iconSize;
         if (null != iconSize) {
           width = iconSize;
@@ -626,7 +626,7 @@ export const useIconSizeStyles = (arg0) => {
             width = Math.max(iconSize, tmp9 * Math.min(tmp8, BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER));
           }
         }
-        const tmpResult6 = tmp(1363);
+        const tmpResult6 = tmp(1364);
       }
     }
     return { width, height: width };

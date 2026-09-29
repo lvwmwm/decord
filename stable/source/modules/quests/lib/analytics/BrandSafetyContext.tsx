@@ -1,18 +1,18 @@
-// Module ID: 11331
-// Function ID: 11332
+// Module ID: 8000
+// Function ID: 8001
 // Name: BrandSafetyContext
-// Dependencies: [11332, 1957, 1979, 4285, 4458, 1371, 11333, 7801, 1396, 4789, 2]
+// Dependencies: [8001, 2041, 2063, 4437, 4609, 1372, 8002, 7967, 1397, 4941, 2]
 // Exports: getBrandSafetyContext
 
-// Module 11331 (BrandSafetyContext)
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 11333 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 11332 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 8000 (BrandSafetyContext)
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 8002 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 8001 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4609 */;
+import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

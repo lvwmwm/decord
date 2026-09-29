@@ -1,23 +1,23 @@
-// Module ID: 15968
-// Function ID: 15969
+// Module ID: 16205
+// Function ID: 16206
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [1979, 15962, 8079, 11606, 14914, 15969, 1935, 4980, 1114, 5075, 7098, 15970, 11605, 2]
+// Dependencies: [2063, 16197, 8265, 11755, 15098, 16200, 2019, 5140, 1115, 5237, 7272, 16206, 11754, 2]
 
-// Module 15968 (SafetyGuildSettingDirectMessages)
-import util from "util" /* 1114 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import common_AlertDefault from "common/Alert" /* 5075 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14914 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15969 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15970 */;
-import GuildStore from "GuildStore" /* 1979 */;
+// Module 16205 (SafetyGuildSettingDirectMessages)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5140 */;
+import common_AlertDefault from "common/Alert" /* 5237 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15098 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16200 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 16206 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
-const UserSettingsSafetySelectedGuildStore = fn(15962);
+const UserSettingsSafetySelectedGuildStore = fn(16197);
 ({ getSelectedGuildId: closure_4, useUserSafetySettingsSelectedGuildStore: hasOwnProperty } = UserSettingsSafetySelectedGuildStore);
-let closure_6 = fn(11606).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
-const SettingBuilders = fn(11605);
+let closure_6 = fn(11755).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const allowFriendsFromMutualGuildsOnly = useAllowFriendsFromMutualGuildsOnly.useAllowFriendsFromMutualGuildsOnly();
@@ -34,9 +34,9 @@ const toggle = SettingBuilders.createToggle({
   useDescription() {
     const allowFriendsFromMutualGuildsOnly = useAllowFriendsFromMutualGuildsOnly.useAllowFriendsFromMutualGuildsOnly();
     if (hasOwnProperty().selectedGuildId === closure_6) {
-      const intl2 = tmp(1114).intl;
+      const intl2 = tmp(1115).intl;
       const string2 = intl2.string;
-      let XXGmuB = tmp(1114).t;
+      let XXGmuB = tmp(1115).t;
       if (allowFriendsFromMutualGuildsOnly) {
         XXGmuB = XXGmuB.XXGmuB;
         let string2Result = string2(XXGmuB);
@@ -44,9 +44,9 @@ const toggle = SettingBuilders.createToggle({
         string2Result = string2(XXGmuB.wbYDfT);
       }
     } else {
-      const intl = tmp(1114).intl;
+      const intl = tmp(1115).intl;
       const string = intl.string;
-      const t = tmp(1114).t;
+      const t = tmp(1115).t;
       if (allowFriendsFromMutualGuildsOnly) {
         let stringResult = string(t.F9WY3f);
       } else {
@@ -55,7 +55,7 @@ const toggle = SettingBuilders.createToggle({
       return stringResult;
     }
   },
-  parent: fn(8079).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8265).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
     const selectedGuildId = hasOwnProperty().selectedGuildId;
     const RestrictedGuildIds = UserSettings.RestrictedGuildIds;
@@ -70,7 +70,7 @@ const toggle = SettingBuilders.createToggle({
     const tmp = closure_4();
     if (tmp === closure_6) {
       _require = !arg0;
-      const obj2 = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null, onCancel: null };
+      const obj2 = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null, onCancel: null, isDismissable: false };
       const intl = require("util").intl;
       obj2.title = intl.string(require("util").t.Hq4ApA);
       const intl2 = require("util").intl;

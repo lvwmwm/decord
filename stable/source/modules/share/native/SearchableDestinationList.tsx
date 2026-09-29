@@ -1,15 +1,15 @@
-// Module ID: 11120
-// Function ID: 11121
+// Module ID: 11279
+// Function ID: 11280
 // Name: SearchableDestinationList
-// Dependencies: [32, 19, 17, 1074, 10992, 21, 4636, 576, 11121, 7141, 11117, 9965, 7763, 1369, 7152, 10247, 11129, 10998, 11130, 1114, 5206, 7153, 2]
+// Dependencies: [32, 19, 17, 1074, 11151, 21, 4788, 576, 11280, 7315, 11276, 10130, 7929, 1370, 7326, 10414, 11288, 11157, 11289, 1115, 5373, 7327, 2]
 // Exports: default
 
-// Module 11120 (SearchableDestinationList)
+// Module 11279 (SearchableDestinationList)
 import nativeDefault from "native" /* 576 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7141 */;
-import sortByMatchScore from "sortByMatchScore" /* 9965 */;
-import formatResults from "formatResults" /* 11117 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11129 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7315 */;
+import sortByMatchScore from "sortByMatchScore" /* 10130 */;
+import formatResults from "formatResults" /* 11276 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11288 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,10 +17,10 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Keyboard: metroRequire } = get_ActivityIndicator);
 const NOOP = fn(1074).NOOP;
-const UserRowModes = fn(10992).UserRowModes;
+const UserRowModes = fn(11151).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, noResults: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.noResults = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -187,8 +187,8 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   const callback5 = obj.useCallback((arg0, arg1) => {
     ({ type, record } = results[arg1]);
     if (type !== sortByMatchScore.AutocompleterResultTypes.HEADER) {
-      const tmp2Result = tmp2(11117);
-      const destinationKeyResult = tmp2Result.destinationKey(tmp2(11117).getDestinationIdFromResult(tmp));
+      const tmp2Result = tmp2(11276);
+      const destinationKeyResult = tmp2Result.destinationKey(tmp2(11276).getDestinationIdFromResult(tmp));
       let tmp6;
       if (getRowIsUnavailable != null) {
         tmp6 = getRowIsUnavailable(record);
@@ -232,16 +232,16 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         tmp16 = obj2;
       }
       const merged = Object.assign(tmp16);
-      if (tmp2(9965).AutocompleterResultTypes.USER === type) {
+      if (tmp2(10130).AutocompleterResultTypes.USER === type) {
         const element = { type: "user", props: null };
         const obj3 = {};
         const merged1 = Object.assign(obj);
         obj3.user = record;
-        obj3.type = tmp2(7763).getRelationshipType(record.id);
+        obj3.type = tmp2(7929).getRelationshipType(record.id);
         obj3.onPress = callback3;
         element.props = obj3;
         return element;
-      } else if (tmp2(9965).AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (tmp2(10130).AutocompleterResultTypes.GROUP_DM === type) {
         const element1 = { type: "gdm", props: null };
         const obj4 = {};
         const merged2 = Object.assign(obj);
@@ -250,9 +250,9 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         element1.props = obj4;
         return element1;
       } else {
-        if (tmp2(9965).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (tmp2(9965).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
-            return tmp2(1369).assertNever(type);
+        if (tmp2(10130).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (tmp2(10130).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+            return tmp2(1370).assertNever(type);
           }
         }
         const element2 = { type: "channel", props: null };
@@ -263,7 +263,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         element2.props = obj5;
         return element2;
       }
-      const tmp2Result4 = tmp2(11117);
+      const tmp2Result4 = tmp2(11276);
     }
     arr = results;
   }, items8);

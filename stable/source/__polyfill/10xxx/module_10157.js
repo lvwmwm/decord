@@ -1,9 +1,9 @@
 // Module ID: 10157
 // Function ID: 10158
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10157
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 20, height: 20, scales: [1, 2, 3], hash: "e0680d70864324adcf08b4b59ecd7a41", name: "ic_minimize", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a9bda86a153eecbc9eb21d6f5b6433f7", name: "QrCodeIcon", type: "png" });

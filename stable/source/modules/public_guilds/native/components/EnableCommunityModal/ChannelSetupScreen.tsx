@@ -1,25 +1,25 @@
-// Module ID: 17793
-// Function ID: 17794
+// Module ID: 18117
+// Function ID: 18118
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9193, 1957, 2012, 4285, 1371, 8140, 1074, 21, 4338, 576, 17782, 504, 4789, 1114, 17783, 4603, 9556, 1896, 9192, 17780, 4632, 5054, 5768, 5686, 2]
+// Dependencies: [19, 17, 9888, 2041, 2096, 4437, 1372, 8326, 1074, 21, 4489, 576, 18106, 504, 4941, 1115, 18107, 4755, 9572, 1980, 9887, 18104, 4784, 5216, 5936, 5854, 2]
 // Exports: default
 
-// Module 17793 (ChannelSetupScreen)
-import util from "util" /* 1114 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+// Module 18117 (ChannelSetupScreen)
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9193 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9888 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-let closure_9 = fn(2012).GUILD_SELECTABLE_CHANNELS_KEY;
-const CREATE_NEW_CHANNEL_VALUE = fn(8140).CREATE_NEW_CHANNEL_VALUE;
+let closure_9 = fn(2096).GUILD_SELECTABLE_CHANNELS_KEY;
+const CREATE_NEW_CHANNEL_VALUE = fn(8326).CREATE_NEW_CHANNEL_VALUE;
 const ChannelTypes = fn(1074).ChannelTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
@@ -97,10 +97,10 @@ export default function ChannelSetupScreen() {
     obj2.title = intl.string(util.t.Yr6nGx);
     obj2.items = callback();
     obj2.onItemSelect = function onItemSelect(rulesChannelId) {
-      rulesChannel(9192).updateGuild({ rulesChannelId });
-      const obj = rulesChannel(9192);
+      rulesChannel(9887).updateGuild({ rulesChannelId });
+      const obj = rulesChannel(9887);
       const obj2 = { rulesChannelId };
-      rulesChannel(4603).hideActionSheet();
+      rulesChannel(4755).hideActionSheet();
     };
     let id;
     if (rulesChannel != null) {
@@ -110,7 +110,7 @@ export default function ChannelSetupScreen() {
       id = CREATE_NEW_CHANNEL_VALUE;
     }
     obj2.selectedItem = id;
-    obj.openLazy(asyncRequireImpl(9556, dependencyMap.paths), "SelectRulesChannel", obj2);
+    obj.openLazy(asyncRequireImpl(9572, dependencyMap.paths), "SelectRulesChannel", obj2);
   }, items3);
   const callback2 = obj.useCallback(() => {
     let obj2 = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
@@ -119,10 +119,10 @@ export default function ChannelSetupScreen() {
     obj2.title = intl.string(util.t.VqhxxN);
     obj2.items = callback();
     obj2.onItemSelect = function onItemSelect(publicUpdatesChannelId) {
-      rulesChannel(9192).updateGuild({ publicUpdatesChannelId });
-      const obj = rulesChannel(9192);
+      rulesChannel(9887).updateGuild({ publicUpdatesChannelId });
+      const obj = rulesChannel(9887);
       const obj2 = { publicUpdatesChannelId };
-      rulesChannel(4603).hideActionSheet();
+      rulesChannel(4755).hideActionSheet();
     };
     let id;
     if (publicUpdatesChannel != null) {
@@ -132,7 +132,7 @@ export default function ChannelSetupScreen() {
       id = CREATE_NEW_CHANNEL_VALUE;
     }
     obj2.selectedItem = id;
-    obj.openLazy(asyncRequireImpl(9556, dependencyMap.paths), "SelectUpdatesChannel", obj2);
+    obj.openLazy(asyncRequireImpl(9572, dependencyMap.paths), "SelectUpdatesChannel", obj2);
   }, items4);
   const obj6 = { headerRef: ref, disableNextStep: false, currentStep: guild(publicUpdatesChannel[21]).EnableCommunityModalSteps.STEP_2, children: null };
   const obj7 = { style: enableCommunitySharedStyles.content, children: null };

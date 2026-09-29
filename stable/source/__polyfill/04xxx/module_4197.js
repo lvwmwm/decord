@@ -1,28 +1,52 @@
 // Module ID: 4197
 // Function ID: 4198
-// Dependencies: []
+// Dependencies: [3881, 3877, 4113, 3878]
+// Exports: default
 
 // Module 4197
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: null, locale: "cs" };
-    const obj3 = { conjunction: null, disjunction: null, unit: null };
-    const obj4 = { long: { end: "{0} a\u00A0{1}", middle: "{0}, {1}", pair: "{0} a\u00A0{1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} a\u00A0{1}", middle: "{0}, {1}", pair: "{0} a\u00A0{1}", start: "{0}, {1}" } };
-    obj3.conjunction = obj4;
-    const obj5 = { long: { end: "{0} nebo {1}", middle: "{0}, {1}", pair: "{0} nebo {1}", start: "{0}, {1}" }, narrow: { end: "{0} nebo {1}", middle: "{0}, {1}", pair: "{0} nebo {1}", start: "{0}, {1}" }, short: { end: "{0} nebo {1}", middle: "{0}, {1}", pair: "{0} nebo {1}", start: "{0}, {1}" } };
-    obj3.disjunction = obj5;
-    const obj6 = { long: { end: "{0} a\u00A0{1}", middle: "{0}, {1}", pair: "{0} a\u00A0{1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} a\u00A0{1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
-    obj3.unit = obj6;
-    obj2.data = obj3;
-    ListFormat.__addLocaleData(obj2);
-  }
+import module_3881_mod from "module_3881" /* 3881 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import module_4113_mod from "module_4113" /* 4113 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
+
+let module_3881 = module_3881_mod;
+if (!module_3881) {
+  const obj = { default: module_3881 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_3881;
 }
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-if (!prop) {
-  prop = [];
+module_3881 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
 }
-globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: { conjunction: { long: { end: "{0} a\u00A0{1}", middle: "{0}, {1}", pair: "{0} a\u00A0{1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} a\u00A0{1}", middle: "{0}, {1}", pair: "{0} a\u00A0{1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} nebo {1}", middle: "{0}, {1}", pair: "{0} nebo {1}", start: "{0}, {1}" }, narrow: { end: "{0} nebo {1}", middle: "{0}, {1}", pair: "{0} nebo {1}", start: "{0}, {1}" }, short: { end: "{0} nebo {1}", middle: "{0}, {1}", pair: "{0} nebo {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} a\u00A0{1}", middle: "{0}, {1}", pair: "{0} a\u00A0{1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} a\u00A0{1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "cs" };
-prop.push(obj);
+_typeof = tmp5;
+let module_4113 = module_4113_mod;
+if (!module_4113) {
+  const obj3 = { default: module_4113 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_4113;
+}
+module_4113 = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
+
+export default function setUTCISOWeek(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const diff = module_4113.default(defaultResult1) - module_3881.default(arg1);
+  defaultResult1.setUTCDate(defaultResult1.getUTCDate() - 7 * diff);
+  return defaultResult1;
+};
+export default exports.default;

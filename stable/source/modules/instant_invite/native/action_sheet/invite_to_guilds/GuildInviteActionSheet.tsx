@@ -1,21 +1,21 @@
-// Module ID: 13241
-// Function ID: 13242
+// Module ID: 13440
+// Function ID: 13441
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 4636, 576, 1176, 1114, 13242, 13243, 13239, 4632, 7084, 11289, 13244, 7252, 7253, 7153, 9952, 2]
+// Dependencies: [32, 19, 17, 21, 4788, 576, 1177, 1115, 13441, 13442, 13438, 4784, 7258, 11447, 13443, 7426, 7427, 7327, 10117, 2]
 // Exports: default
 
-// Module 13241 (GuildInviteActionSheet)
+// Module 13440 (GuildInviteActionSheet)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import SearchField from "SearchField" /* 7153 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7252 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7253 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9952 */;
-import _modDef13242 from "module_13242" /* 13242 */;
-import _modDef13243 from "module_13243" /* 13243 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 13244 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import SearchField from "SearchField" /* 7327 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7426 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7427 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10117 */;
+import _modDef13441 from "module_13441" /* 13441 */;
+import _modDef13442 from "module_13442" /* 13442 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 13443 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -26,8 +26,8 @@ function EmptyGuildList() {
   obj.title = intl.string(util.t["2bfiLk"]);
   const intl2 = util.intl;
   obj.body = intl2.string(util.t.V6nAfF);
-  obj.darkSource = _modDef13242;
-  obj.lightSource = _modDef13243;
+  obj.darkSource = _modDef13441;
+  obj.lightSource = _modDef13442;
   return timestampProducer(native.ThemedEmptyState, obj);
 }
 function GuildList(recipientId) {
@@ -35,8 +35,8 @@ function GuildList(recipientId) {
   const source = recipientId.source;
   _slicedToArray = undefined;
   dependencyMap = closure_8();
-  let obj = recipientId(13239);
-  [arr, arr2] = recipientId(13239).useServerInviteRows(recipientId, recipientId.query);
+  let obj = recipientId(13438);
+  [arr, arr2] = recipientId(13438).useServerInviteRows(recipientId, recipientId.query);
   if (0 === arr.length) {
     if (0 === arr2.length) {
       let items = [];
@@ -62,7 +62,7 @@ function GuildList(recipientId) {
     if (tmp5) {
       num = 24;
     }
-    const obj3 = { paddingTop: num, paddingBottom: source(7084)().insets.bottom + source(576).space.PX_16 };
+    const obj3 = { paddingTop: num, paddingBottom: source(7258)().insets.bottom + source(576).space.PX_16 };
     obj2.contentContainerStyle = obj3;
     obj2.sections = items;
     obj2.renderSectionHeader = function renderSectionHeader(section) {
@@ -82,23 +82,23 @@ function GuildList(recipientId) {
       return guild.guild.id;
     };
     obj2.ListEmptyComponent = EmptyGuildList;
-    return closure_6(tmp(11289).UserProfileStackedActionSheetSectionList, obj2);
+    return closure_6(tmp(11447).UserProfileStackedActionSheetSectionList, obj2);
   }
   const obj4 = { title: null, data: null };
-  const intl = tmp(1114).intl;
-  obj4.title = intl.string(recipientId(1114).t["u+Ithu"]);
+  const intl = tmp(1115).intl;
+  obj4.title = intl.string(recipientId(1115).t["u+Ithu"]);
   obj4.data = arr;
   items = [obj4, ];
   const obj5 = { title: null, data: null };
-  const intl2 = tmp(1114).intl;
-  obj5.title = intl2.string(recipientId(1114).t["c5T+X/"]);
+  const intl2 = tmp(1115).intl;
+  obj5.title = intl2.string(recipientId(1115).t["c5T+X/"]);
   obj5.data = arr2;
   items[1] = obj5;
 }
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16 }, searchbarWrapper: null, sectionTitle: null, emptyStateContainer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.searchbarWrapper = { rowGap: 8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };

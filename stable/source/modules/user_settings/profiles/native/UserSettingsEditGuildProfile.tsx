@@ -1,24 +1,24 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14952
+// Function ID: 14953
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8277, 1371, 21, 4636, 576, 7265, 7285, 504, 14734, 9339, 8304, 14736, 5686, 5665, 11058, 4603, 14738, 1896, 14739, 2]
+// Dependencies: [19, 17, 8461, 1372, 21, 4788, 576, 7439, 7459, 504, 14953, 10069, 8488, 14955, 5854, 5833, 11216, 4755, 14957, 1980, 14958, 2]
 // Exports: default
 
-// Module 14733 (UserSettingsEditGuildProfile)
+// Module 14952 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 576 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8304 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9339 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 11058 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8488 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10069 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 11216 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8277 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8461 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { guildSelector: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.none, borderTopWidth: StyleSheet.hairlineWidth, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);

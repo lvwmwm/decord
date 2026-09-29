@@ -1,9 +1,9 @@
-// Module ID: 11954
-// Function ID: 11955
+// Module ID: 12103
+// Function ID: 12104
 // Name: GuildRoleConnectionEligibilityStore
 // Dependencies: [504, 573, 2]
 
-// Module 11954 (GuildRoleConnectionEligibilityStore)
+// Module 12103 (GuildRoleConnectionEligibilityStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

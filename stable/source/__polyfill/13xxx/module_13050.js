@@ -1,29 +1,9 @@
 // Module ID: 13050
 // Function ID: 13051
-// Dependencies: [12931]
-// Exports: vercelWaitUntil
+// Dependencies: [1121]
 
 // Module 13050
-import _mod12931 from "module_12931" /* 12931 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const vercelWaitUntil = function vercelWaitUntil(arg0) {
-  const obj = _mod12931.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
-  if (obj) {
-    if (obj.get) {
-      if (obj.get()) {
-        let obj1 = obj.get();
-      }
-      let waitUntil = obj1;
-      if (obj1) {
-        waitUntil = obj1.waitUntil;
-      }
-      if (waitUntil) {
-        obj1.waitUntil(arg0);
-      }
-    }
-  }
-  obj1 = {};
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/forums/native/images", width: 120, height: 80, scales: [2, 3], hash: "78be237a71ac693684ba99bcd912e5ac", name: "img_forum_empty_state_dark", type: "png" });

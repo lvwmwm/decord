@@ -1,18 +1,18 @@
-// Module ID: 9885
-// Function ID: 9886
+// Module ID: 9875
+// Function ID: 9876
 // Name: TagListInput
-// Dependencies: [32, 19, 17, 21, 4636, 576, 4632, 4373, 5055, 5059, 5745, 5068, 6716, 5063, 6723, 6725, 4344, 6727, 5679, 6728, 9886, 9887, 1114, 9888, 4348, 6722, 7154, 2]
+// Dependencies: [32, 19, 17, 21, 4788, 576, 4784, 4524, 5217, 5221, 5913, 5230, 6889, 5225, 6896, 6898, 4495, 6900, 5847, 6901, 9876, 9877, 1115, 9878, 4499, 6895, 7328, 2]
 
-// Module 9885 (TagListInput)
+// Module 9875 (TagListInput)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4348 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4373 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import spring from "spring" /* 5055 */;
-import springPresets from "springPresets" /* 5059 */;
-import LinearGradientDefault from "LinearGradient" /* 5068 */;
-import _modDef5745 from "module_5745" /* 5745 */;
+import util from "util" /* 1115 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4499 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4524 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import spring from "spring" /* 5217 */;
+import springPresets from "springPresets" /* 5221 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import _modDef5913 from "module_5913" /* 5913 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let createStyles = fn(4636);
+let createStyles = fn(4788);
 let closure_10 = createStyles.createStyles(() => {
   const obj = { placeholder: { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT }, iconContainer: null, iconLeft: null, scrollViewContent: null, horizontalScrollViewContent: null, inputInner: null, horizontalInputInner: null, searchInput: null, horizontalSearchInput: null };
   const obj2 = { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
@@ -45,7 +45,7 @@ let closure_10 = createStyles.createStyles(() => {
 let closure_11 = { x: 0, y: 0.5 };
 let closure_12 = { x: 1, y: 0.5 };
 let closure_13 = ["transparent", "black"];
-createStyles = fn(4636);
+createStyles = fn(4788);
 let closure_14 = createStyles.createStyles(() => {
   const obj = { fill: { flex: 1 }, mask: null, leadingFade: null, leadingCover: null, maskRemainder: null };
   const obj2 = {};
@@ -197,7 +197,7 @@ export default noop.memo(function TagListInput(accessibilityHint) {
   let items1 = [first, onChangeText];
   const memo = ref.useMemo(() => {
     const obj = {
-      clearProps: { isClearable: true },
+      clearProps: { clearable: true },
       clearState: {
         hasValue: ref,
         clear() {
@@ -264,6 +264,13 @@ export default noop.memo(function TagListInput(accessibilityHint) {
       }
       if (tmp12) {
         callback("", true);
+      }
+      if (0 === ref1.current.length) {
+        const current3 = ref.current;
+        if (current3 != null) {
+          current3.setSelection(0, 0);
+        }
+        closure_7.current = { start: 0, end: 0 };
       }
     }
     ref4.current = onChangeText;
@@ -356,7 +363,7 @@ export default noop.memo(function TagListInput(accessibilityHint) {
       obj2.children = items2;
       obj.maskElement = React7(hasOwnProperty, obj2);
       obj.children = children;
-      tmp = React6(_modDef5745, obj);
+      tmp = React6(_modDef5913, obj);
     }
     return tmp;
   }, items5);
@@ -552,7 +559,7 @@ export default noop.memo(function TagListInput(accessibilityHint) {
   obj13.style = items11;
   let obj6 = { withSpring: onChangeText(ref1[8]).withSpring, scrolled: sharedValue, springStandard: onChangeText(ref1[9]).springStandard };
   const obj9 = { maxHeight: 3 * result1 };
-  const obj14 = { size: "sm", isDisabled: disabled, isFocused, children: null };
+  const obj14 = { size: "sm", disabled, isFocused, children: null };
   if (null == icon) {
     const obj15 = { style: tmp.iconLeft, size: "xs", color: "interactive-text-default" };
     icon = tmp42(tmp2(tmp3[26]).MagnifyingGlassIcon, obj15);

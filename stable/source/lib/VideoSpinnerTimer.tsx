@@ -1,17 +1,17 @@
-// Module ID: 9737
-// Function ID: 9738
+// Module ID: 9726
+// Function ID: 9727
 // Name: VideoSpinnerTimer
-// Dependencies: [502, 1957, 4685, 4659, 4655, 1074, 3, 4665, 1240, 2]
+// Dependencies: [502, 2041, 4837, 4811, 4807, 1074, 3, 4817, 1241, 2]
 
-// Module 9737 (VideoSpinnerTimer)
+// Module 9726 (VideoSpinnerTimer)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import TimeUtils from "TimeUtils" /* 4665 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import TimeUtils from "TimeUtils" /* 4817 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import NetworkStore from "NetworkStore" /* 4685 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import VoiceStateStore from "VoiceStateStore" /* 4655 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import NetworkStore from "NetworkStore" /* 4837 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import VoiceStateStore from "VoiceStateStore" /* 4807 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

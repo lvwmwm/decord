@@ -1,19 +1,19 @@
-// Module ID: 9332
-// Function ID: 9333
+// Module ID: 10062
+// Function ID: 10063
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 9319, 4571, 4338, 576, 5068, 8711, 4632, 1114, 5204, 2]
+// Dependencies: [19, 17, 21, 10049, 4722, 4489, 576, 5230, 8898, 4784, 1115, 5371, 2]
 // Exports: default
 
-// Module 9332 (GuildProfileLoadingError)
+// Module 10062 (GuildProfileLoadingError)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import useToken from "useToken" /* 4338 */;
-import useThemeDefault from "useTheme" /* 4571 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import LinearGradientDefault from "LinearGradient" /* 5068 */;
-import Pressables from "Pressables" /* 5204 */;
-import WarningIcon from "WarningIcon" /* 8711 */;
-import GuildProfileView from "GuildProfileView" /* 9319 */;
+import util from "util" /* 1115 */;
+import useToken from "useToken" /* 4489 */;
+import useThemeDefault from "useTheme" /* 4722 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import Pressables from "Pressables" /* 5371 */;
+import WarningIcon from "WarningIcon" /* 8898 */;
+import GuildProfileView from "GuildProfileView" /* 10049 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,83 +1,35 @@
 // Module ID: 3898
 // Function ID: 3899
-// Dependencies: [3725, 3726]
+// Dependencies: []
 // Exports: default
 
 // Module 3898
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+const obj = { lessThanXSeconds: { standalone: { one: "weniger als 1 Sekunde", other: "weniger als {{count}} Sekunden" }, withPreposition: { one: "weniger als 1 Sekunde", other: "weniger als {{count}} Sekunden" } }, xSeconds: { standalone: { one: "1 Sekunde", other: "{{count}} Sekunden" }, withPreposition: { one: "1 Sekunde", other: "{{count}} Sekunden" } }, halfAMinute: { standalone: "halbe Minute", withPreposition: "halben Minute" }, lessThanXMinutes: { standalone: { one: "weniger als 1 Minute", other: "weniger als {{count}} Minuten" }, withPreposition: { one: "weniger als 1 Minute", other: "weniger als {{count}} Minuten" } }, xMinutes: { standalone: { one: "1 Minute", other: "{{count}} Minuten" }, withPreposition: { one: "1 Minute", other: "{{count}} Minuten" } }, aboutXHours: { standalone: { one: "etwa 1 Stunde", other: "etwa {{count}} Stunden" }, withPreposition: { one: "etwa 1 Stunde", other: "etwa {{count}} Stunden" } }, xHours: { standalone: { one: "1 Stunde", other: "{{count}} Stunden" }, withPreposition: { one: "1 Stunde", other: "{{count}} Stunden" } }, xDays: { standalone: { one: "1 Tag", other: "{{count}} Tage" }, withPreposition: { one: "1 Tag", other: "{{count}} Tagen" } }, aboutXWeeks: { standalone: { one: "etwa 1 Woche", other: "etwa {{count}} Wochen" }, withPreposition: { one: "etwa 1 Woche", other: "etwa {{count}} Wochen" } }, xWeeks: { standalone: { one: "1 Woche", other: "{{count}} Wochen" }, withPreposition: { one: "1 Woche", other: "{{count}} Wochen" } }, aboutXMonths: { standalone: { one: "etwa 1 Monat", other: "etwa {{count}} Monate" }, withPreposition: { one: "etwa 1 Monat", other: "etwa {{count}} Monaten" } }, xMonths: { standalone: { one: "1 Monat", other: "{{count}} Monate" }, withPreposition: { one: "1 Monat", other: "{{count}} Monaten" } }, aboutXYears: { standalone: { one: "etwa 1 Jahr", other: "etwa {{count}} Jahre" }, withPreposition: { one: "etwa 1 Jahr", other: "etwa {{count}} Jahren" } }, xYears: { standalone: { one: "1 Jahr", other: "{{count}} Jahre" }, withPreposition: { one: "1 Jahr", other: "{{count}} Jahren" } }, overXYears: { standalone: { one: "mehr als 1 Jahr", other: "mehr als {{count}} Jahre" }, withPreposition: { one: "mehr als 1 Jahr", other: "mehr als {{count}} Jahren" } }, almostXYears: { standalone: { one: "fast 1 Jahr", other: "fast {{count}} Jahre" }, withPreposition: { one: "fast 1 Jahr", other: "fast {{count}} Jahren" } } };
 
-function _typeof(arg0) {
-  if (typeof Symbol === "function") {
-    let _Symbol = Symbol;
-    if (typeof Symbol.iterator === "symbol") {
-      _typeof = function _typeof(arg0) {
-        return typeof arg0;
-      };
+export default function formatDistance(arg0, arg1, addSuffix) {
+  if (null != addSuffix) {
+    if (addSuffix.addSuffix) {
+      let standalone = obj[arg0].withPreposition;
     }
-    return _typeof(arg0);
-  }
-  _typeof = function _typeof(arg0) {
-    if (arg0) {
-      const _Symbol = Symbol;
-      if (typeof Symbol === "function") {
-        const _Symbol3 = Symbol;
-        if (arg0.constructor === Symbol) {
-          const _Symbol2 = Symbol;
-          let str = "symbol";
+    if (typeof standalone === "string") {
+      let tmp5 = standalone;
+      if (null != addSuffix) {
+        tmp5 = standalone;
+        if (addSuffix.addSuffix) {
+          if (!addSuffix.comparison) {
+            let text = `vor ${standalone}`;
+          }
+          text = `in ${standalone}`;
         }
-        return str;
       }
+      return tmp5;
+    } else if (1 === arg1) {
+      let one = standalone.one;
+    } else {
+      const _String = String;
+      one = standalone.other.replace("{{count}}", String(arg1));
     }
-    str = typeof arg0;
-  };
-}
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
-  let tmp3 = obj;
-} else {
-  tmp3 = _typeof;
-}
-_typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
-  let tmp5 = obj2;
-} else {
-  tmp5 = requiredArgs;
-}
-requiredArgs = tmp5;
-
-export default function min(arg0) {
-  requiredArgs.default(1, arguments);
-  if (!arg0) {
-    if ("object" === _typeof(arg0)) {
-      if (null !== arg0) {
-        const _Array = Array;
-        const call = slice.call;
-        let arr = typeof call === "unknown" ? slice() : call(arg0);
-      }
-    }
-    const _Date = Date;
-    const date = new Date(NaN);
-    return date;
-  } else {
-    arr = arg0;
   }
-  const item = arr.forEach((item) => {
-    defaultResult = _typeof.default(item);
-    let isNaNResult = undefined === defaultResult || defaultResult > defaultResult;
-    if (!isNaNResult) {
-      const _isNaN = isNaN;
-      isNaNResult = isNaN(defaultResult.getDate());
-    }
-  });
-  let date1 = _typeof;
-  if (!_typeof) {
-    const _Date2 = Date;
-    date1 = new Date(NaN);
-  }
-  return date1;
+  standalone = obj[arg0].standalone;
 };
 export default exports.default;

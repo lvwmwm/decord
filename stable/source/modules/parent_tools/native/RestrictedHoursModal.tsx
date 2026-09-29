@@ -1,22 +1,22 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17717
+// Function ID: 17718
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1371, 21, 4636, 576, 5658, 1611, 17409, 504, 4373, 4637, 1114, 2396, 8539, 17410, 4347, 4632, 7103, 17411, 6694, 17407, 5053, 12062, 2]
+// Dependencies: [32, 19, 17, 1372, 21, 4788, 576, 5826, 1612, 17718, 504, 4524, 4789, 1115, 2482, 8725, 17719, 4498, 4784, 7277, 17720, 6866, 17716, 5213, 11494, 2]
 // Exports: default
 
-// Module 17408 (RestrictedHoursModal)
+// Module 17717 (RestrictedHoursModal)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import timing from "timing" /* 4637 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5053 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5658 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6694 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17407 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17411 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4524 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import timing from "timing" /* 4789 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5213 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5826 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6866 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17716 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17720 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -160,7 +160,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let c9 = "rgb(0, 3, 40)";
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_24 }, backgroundFill: null, assetLayers: null, sunbeamGradient: null, riveContainer: null, content: null, description: null, footer: null, logoutBlockingLayer: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

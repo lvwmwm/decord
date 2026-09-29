@@ -1,17 +1,17 @@
-// Module ID: 15425
-// Function ID: 15426
+// Module ID: 15614
+// Function ID: 15615
 // Name: useDisplayNameStylesNewItems
-// Dependencies: [19, 15426, 1389, 504, 15427, 2]
+// Dependencies: [19, 15615, 1390, 504, 15616, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 15425 (useDisplayNameStylesNewItems)
+// Module 15614 (useDisplayNameStylesNewItems)
 import noop from "module_19" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15426 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15615 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const DisplayNameStylesConstants = fn(1389);
+const DisplayNameStylesConstants = fn(1390);
 ({ FLYWHEEL_EFFECTS: closure_4, FLYWHEEL_FONTS: hasOwnProperty } = DisplayNameStylesConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesNewItems.tsx");

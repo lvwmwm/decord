@@ -1,45 +1,9 @@
 // Module ID: 8439
 // Function ID: 8440
-// Dependencies: [8440, 8441, 8442, 4466, 8432]
+// Dependencies: [1121]
 
 // Module 8439
-import colorPropType from "colorPropType" /* 8432 */;
-import _mod8440 from "module_8440" /* 8440 */;
-import merged12 from "merged1" /* 8441 */;
-import merged22 from "merged2" /* 8442 */;
-import emptyFunction_mod from "module_4466" /* 4466 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const obj = {};
-const size = Object.assign(_mod8440);
-const merged1 = Object.assign(merged12);
-const merged2 = Object.assign(merged22);
-let emptyFunction = emptyFunction_mod;
-obj.backfaceVisibility = emptyFunction.oneOf(["visible", "hidden"]);
-obj.backgroundColor = colorPropType;
-obj.borderColor = colorPropType;
-obj.borderTopColor = colorPropType;
-obj.borderRightColor = colorPropType;
-obj.borderBottomColor = colorPropType;
-obj.borderLeftColor = colorPropType;
-obj.borderStartColor = colorPropType;
-obj.borderEndColor = colorPropType;
-obj.borderRadius = emptyFunction.number;
-obj.borderTopLeftRadius = emptyFunction.number;
-obj.borderTopRightRadius = emptyFunction.number;
-obj.borderTopStartRadius = emptyFunction.number;
-obj.borderTopEndRadius = emptyFunction.number;
-obj.borderBottomLeftRadius = emptyFunction.number;
-obj.borderBottomRightRadius = emptyFunction.number;
-obj.borderBottomStartRadius = emptyFunction.number;
-obj.borderBottomEndRadius = emptyFunction.number;
-let emptyFunction = emptyFunction_mod;
-obj.borderStyle = emptyFunction.oneOf(["solid", "dotted", "dashed"]);
-obj.borderWidth = emptyFunction.number;
-obj.borderTopWidth = emptyFunction.number;
-obj.borderRightWidth = emptyFunction.number;
-obj.borderBottomWidth = emptyFunction.number;
-obj.borderLeftWidth = emptyFunction.number;
-obj.opacity = emptyFunction.number;
-obj.elevation = emptyFunction.number;
 
-export default obj;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f675dc68337355a0cf14fc6856097557", name: "GameControllerIcon", type: "png" });

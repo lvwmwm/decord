@@ -1,9 +1,9 @@
-// Module ID: 1358
-// Function ID: 1359
+// Module ID: 1359
+// Function ID: 1360
 // Name: ProcessUtilsBase
 // Dependencies: [2]
 
-// Module 1358 (ProcessUtilsBase)
+// Module 1359 (ProcessUtilsBase)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/ProcessUtilsBase.tsx");

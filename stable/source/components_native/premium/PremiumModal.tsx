@@ -1,14 +1,14 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 7686
+// Function ID: 7687
 // Name: PremiumModal
-// Dependencies: [19, 1074, 21, 1114, 5705, 7516, 13587, 13590, 13632, 13644, 7265, 7103, 2]
+// Dependencies: [19, 1074, 21, 1115, 5873, 7687, 13790, 13793, 13835, 13847, 7439, 7277, 2]
 // Exports: default
 
-// Module 7515 (PremiumModal)
-import NavigatorHeader from "NavigatorHeader" /* 5705 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7516 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13632 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13644 */;
+// Module 7686 (PremiumModal)
+import NavigatorHeader from "NavigatorHeader" /* 5873 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7687 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13835 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13847 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

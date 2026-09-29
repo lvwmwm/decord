@@ -1,9 +1,9 @@
 // Module ID: 7234
 // Function ID: 7235
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 7234
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 30, height: 30, scales: [2, 3], hash: "3fda792f0f90666acb261765593ba984", name: "ic_loading_emoji_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e37bbde49f12a4469b46214e14dfde4a", name: "KeyIcon", type: "png" });

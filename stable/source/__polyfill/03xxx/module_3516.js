@@ -1,9 +1,0 @@
-// Module ID: 3516
-// Function ID: 3517
-// Dependencies: [1120]
-
-// Module 3516
-import registerAsset from "module_1120" /* 1120 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb252ZXJzYXRpb25z", scales: [1], hash: "41993545eff571eb7b66a231cc1b92d6", name: "sv-SE.messages.41993545eff571eb7b66a231cc1b92d6.compiled.messages", type: "jsona" });

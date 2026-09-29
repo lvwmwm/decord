@@ -1,9 +1,9 @@
 // Module ID: 3623
 // Function ID: 3624
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3623
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/custom_typing_indicator/intl", scales: [1], hash: "aa1a2f6cb8e40414f994299cdc8ed2c6", name: "CustomTypingIndicator.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb252ZXJzYXRpb25z", scales: [1], hash: "125564cd1776f586476df5218584653c", name: "hi.messages.125564cd1776f586476df5218584653c.compiled.messages", type: "jsona" });

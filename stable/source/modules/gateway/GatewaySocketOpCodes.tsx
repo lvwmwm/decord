@@ -1,12 +1,12 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13928
+// Function ID: 13929
 // Name: GatewaySocketOpCodes
-// Dependencies: [4686, 568, 1906, 11, 2]
+// Dependencies: [4838, 568, 1990, 11, 2]
 
-// Module 13724 (GatewaySocketOpCodes)
+// Module 13928 (GatewaySocketOpCodes)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 1906 */;
-import RTCRegionStore from "RTCRegionStore" /* 4686 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 1990 */;
+import RTCRegionStore from "RTCRegionStore" /* 4838 */;
 
 require = fn;
 const EventEmitter = fn(568).EventEmitter;
@@ -164,4 +164,4 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/gateway/GatewaySocketOpCodes.tsx");
 
 export default GatewaySocketOpCodes;
-export const Opcode = fn(1906).Opcode;
+export const Opcode = fn(1990).Opcode;

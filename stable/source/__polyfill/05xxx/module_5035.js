@@ -1,13 +1,35 @@
 // Module ID: 5035
 // Function ID: 5036
-// Dependencies: [17, 65]
+// Dependencies: [5036]
 
 // Module 5035
-import _mod17 from "module_17" /* 17 */;
-import module_65 from "module_65" /* 65 */;
+import _mod5036 from "module_5036" /* 5036 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenFooter", validAttributes: {} };
 
-export default module_65.get("RNSScreenFooter", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function Type(num) {
+  let str = "Null";
+  if (null !== num) {
+    let str2 = "Undefined";
+    if (undefined !== num) {
+      let str3 = "Object";
+      if (!_mod5036(num)) {
+        let str4 = "Number";
+        if (typeof num !== "number") {
+          let str5 = "Boolean";
+          if (typeof num !== "boolean") {
+            let str6;
+            if (typeof num === "string") {
+              str6 = "String";
+            }
+            str5 = str6;
+          }
+          str4 = str5;
+        }
+        str3 = str4;
+      }
+      str2 = str3;
+    }
+    str = str2;
+  }
+  return str;
+};

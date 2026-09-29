@@ -1,9 +1,9 @@
 // Module ID: 13680
 // Function ID: 13681
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13680
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b0762f0f9ef3f22f62e92b1be981b656", name: "ChevronLargeUpIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180, height: 108, scales: [2, 3], hash: "fdbdffcc03357c67352ab2f9dff83bf6", name: "img_what_you_lose_profile_tier1_light", type: "png" });

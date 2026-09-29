@@ -1,9 +1,9 @@
 // Module ID: 10093
 // Function ID: 10094
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10093
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "31757ea45ee4fb60779fd700caf7d93e", name: "ic_nitro_wheel_gradient_purple", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_console/images", width: 126, height: 118, scales: [2, 3], hash: "02b1067b85b45dd047c8c944ed8c1d6e", name: "devices_not_found", type: "png" });

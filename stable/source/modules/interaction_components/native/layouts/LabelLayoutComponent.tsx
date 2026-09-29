@@ -1,13 +1,13 @@
-// Module ID: 17510
-// Function ID: 17511
+// Module ID: 17805
+// Function ID: 17806
 // Name: LabelLayoutComponent
-// Dependencies: [19, 17, 21, 8229, 1894, 6708, 2]
+// Dependencies: [19, 17, 21, 8413, 1978, 6881, 2]
 // Exports: default
 
-// Module 17510 (LabelLayoutComponent)
-import Server from "Server" /* 1894 */;
-import Input from "Input" /* 6708 */;
-import ComponentStateContext from "ComponentStateContext" /* 8229 */;
+// Module 17805 (LabelLayoutComponent)
+import Server from "Server" /* 1978 */;
+import Input from "Input" /* 6881 */;
+import ComponentStateContext from "ComponentStateContext" /* 8413 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

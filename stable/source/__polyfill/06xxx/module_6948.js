@@ -1,13 +1,9 @@
 // Module ID: 6948
 // Function ID: 6949
-// Dependencies: [19, 17, 1636, 6941, 6729]
+// Dependencies: [19]
 
 // Module 6948
-import cancelAnimation from "cancelAnimation" /* 1636 */;
+import noop from "module_19" /* 19 */;
 
-const animatedComponent = cancelAnimation.createAnimatedComponent(fn(17).SectionList);
-const module_6941 = fn(6941);
-const memoResult = fn(19).memo(module_6941.createBottomSheetScrollableComponent(fn(6729).SCROLLABLE_TYPE.SECTIONLIST, animatedComponent));
-memoResult.displayName = "BottomSheetSectionList";
 
-export default memoResult;
+export default noop.createContext(false);

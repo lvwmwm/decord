@@ -1,18 +1,18 @@
-// Module ID: 12799
-// Function ID: 12800
+// Module ID: 12948
+// Function ID: 12949
 // Name: GatedContent
-// Dependencies: [19, 21, 4636, 576, 8531, 5054, 4632, 5514, 5056, 2]
+// Dependencies: [19, 21, 4788, 576, 8716, 5218, 5216, 4784, 5682, 2]
 // Exports: default
 
-// Module 12799 (GatedContent)
+// Module 12948 (GatedContent)
 import nativeDefault from "native" /* 576 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8531 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8716 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, padding: 20, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, textAlign: "center" }, title: { textAlign: "center" }, description: { textAlign: "center" }, buttonGroup: { width: "100%", maxWidth: 400 } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -46,29 +46,30 @@ export default function GatedContent(onAgree) {
       onDisagree();
     }
   }, items1);
-  const callback1 = modalType.useCallback(() => {
-    const result = AgeVerificationAnalyticsUtils.trackNsfwSpaceWarningModalClicked(AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalCta.NSFW_CHANNEL_AGREE_CTA, modalType, channelId, guildId);
-    if (onAgree != null) {
-      onAgree();
+  let tmp5 = null;
+  if (null != agreement) {
+    tmp5 = null;
+    if (null != onAgree) {
+      const obj = { variant: agreementButtonVariant, onPress: tmp4, text: agreement };
+      tmp5 = channelId(onAgree(onDisagree[5]).Button, obj, "agree");
     }
-  }, items2);
-  const obj = { spacing: 16, style: tmp.container, children: null };
-  const obj2 = { align: "center", children: null };
-  const items3 = [channelId(onAgree(onDisagree[6]).Text, { variant: "heading-xxl/bold", maxFontSizeMultiplier: 2, style: tmp.title, children: title }), subtitle, channelId(onAgree(onDisagree[6]).Text, { color: "text-muted", variant: "text-md/medium", style: tmp.description, maxFontSizeMultiplier: 2, children: description })];
-  obj2.children = items3;
-  const items4 = [guildId(onAgree(onDisagree[5]).Stack, obj2), ];
-  const obj5 = { style: tmp.buttonGroup, children: null };
-  let tmp8Result = null != agreement;
-  if (tmp8Result) {
-    tmp8Result = null != onAgree;
   }
-  if (tmp8Result) {
-    const obj6 = { variant: agreementButtonVariant, onPress: callback1, text: agreement };
-    tmp8Result = tmp8(tmp6(tmp7[8]).Button, obj6);
+  const tmp10 = channelId(onAgree(onDisagree[5]).Button, { variant: disagreementButtonVariant, text: disagreement, onPress: callback }, "disagree");
+  const obj2 = { spacing: 16, style: tmp.container, children: null };
+  const obj3 = { align: "center", children: null };
+  const items3 = [channelId(onAgree(onDisagree[7]).Text, { variant: "heading-xxl/bold", maxFontSizeMultiplier: 2, style: tmp.title, children: title }), subtitle, channelId(onAgree(onDisagree[7]).Text, { color: "text-muted", variant: "text-md/medium", style: tmp.description, maxFontSizeMultiplier: 2, children: description })];
+  obj3.children = items3;
+  const items4 = [guildId(onAgree(onDisagree[6]).Stack, obj3), ];
+  const obj6 = { style: tmp.buttonGroup, children: null };
+  if ("primary" === disagreementButtonVariant) {
+    if ("primary" !== agreementButtonVariant) {
+      const items5 = [tmp10, tmp5];
+      let items6 = items5;
+    }
+    obj6.children = items6;
+    items4[1] = channelId(tmp12, obj6);
+    obj2.children = items4;
+    return guildId(onAgree(onDisagree[6]).Stack, obj2);
   }
-  const items5 = [tmp8Result, channelId(onAgree(onDisagree[8]).Button, { variant: disagreementButtonVariant, text: disagreement, onPress: callback })];
-  obj5.children = items5;
-  items4[1] = guildId(onAgree(onDisagree[7]).ButtonGroup, obj5);
-  obj.children = items4;
-  return guildId(onAgree(onDisagree[5]).Stack, obj);
+  items6 = [tmp5, tmp10];
 };

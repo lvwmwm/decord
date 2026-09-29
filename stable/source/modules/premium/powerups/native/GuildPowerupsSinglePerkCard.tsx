@@ -1,16 +1,16 @@
-// Module ID: 12703
-// Function ID: 12704
+// Module ID: 12853
+// Function ID: 12854
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [19, 21, 12653, 12632, 12629, 12652, 12700, 12704, 2]
+// Dependencies: [19, 21, 12803, 12783, 12779, 12802, 12850, 12854, 2]
 // Exports: default
 
-// Module 12703 (GuildPowerupsSinglePerkCard)
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12629 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12632 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12652 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12653 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12700 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12704 */;
+// Module 12853 (GuildPowerupsSinglePerkCard)
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12779 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12783 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12802 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12803 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12850 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12854 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

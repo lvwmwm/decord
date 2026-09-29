@@ -1,9 +1,9 @@
 // Module ID: 13618
 // Function ID: 13619
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13618
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 24, height: 24, scales: [2, 3], hash: "6ce9cfa41f5b080fb1f9fac04190337a", name: "emoji", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6fb23e8fddb36af1d7c8748104537e96", name: "VideoDenyIcon", type: "png" });

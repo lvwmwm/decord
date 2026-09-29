@@ -1,13 +1,13 @@
-// Module ID: 15465
-// Function ID: 15466
+// Module ID: 15655
+// Function ID: 15656
 // Name: EmojiMoneyMouthFaceIcon
-// Dependencies: [19, 21, 576, 4337, 15466, 2]
+// Dependencies: [19, 21, 576, 4488, 15656, 2]
 // Exports: EmojiMoneyMouthFaceIcon
 
-// Module 15465 (EmojiMoneyMouthFaceIcon)
+// Module 15655 (EmojiMoneyMouthFaceIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod15466 from "module_15466" /* 15466 */;
+import BaseIconImage from "BaseIconImage" /* 4488 */;
+import _mod15656 from "module_15656" /* 15656 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmojiMoneyMouthFaceIcon = function EmojiMoneyMouthFaceIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15466, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15656, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

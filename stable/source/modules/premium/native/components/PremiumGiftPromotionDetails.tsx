@@ -1,18 +1,18 @@
-// Module ID: 10886
-// Function ID: 10887
+// Module ID: 11050
+// Function ID: 11051
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [32, 19, 17, 4628, 21, 576, 4636, 4632, 504, 8935, 1364, 10887, 5668, 1889, 8898, 2]
+// Dependencies: [32, 19, 17, 4780, 21, 576, 4788, 4784, 504, 9121, 1365, 11051, 5836, 1973, 9084, 2]
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
-// Module 10886 (PremiumGiftPromotionDetails)
+// Module 11050 (PremiumGiftPromotionDetails)
 import nativeDefault from "native" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1364 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import SKUPreview from "SKUPreview" /* 8898 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import SKUPreview from "SKUPreview" /* 9084 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
 require = fn;
 function PremiumGiftPromotionDetailsBase(arg0) {
@@ -95,26 +95,28 @@ function AnimatedImage(arg0) {
   const tmp10 = stateFromStores(aPNGPlayerControls[11]);
   if (tmpResult.isAndroid()) {
     if (!stateFromStores) {
-      const obj3 = { ref, url: imageUrl, autoplay: false, style };
-      let tmp13 = closure_7(tmp(tmp2[9]).APNGPlayer, obj3);
+      const obj3 = { style, children: null };
+      const obj4 = { ref, url: imageUrl, autoplay: false, style: { width: "100%", height: "100%" } };
+      obj3.children = closure_7(tmp(tmp2[9]).APNGPlayer, obj4);
+      let tmp14 = closure_7(View, obj3);
     }
-    return tmp13;
+    return tmp14;
   }
-  tmp13 = closure_7(tmp9(tmp2[12]), { style, resizeMode: "contain", source: { uri: imageUrl } });
+  tmp14 = closure_7(tmp9(tmp2[12]), { style, resizeMode: "contain", source: { uri: imageUrl } });
 }
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const PX_40 = nativeDefault.space.PX_40;
-let createStyles = fn(4636);
+let createStyles = fn(4788);
 let closure_10 = createStyles.createStyles(() => {
   const obj = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, image: null, textContainer: null };
-  const size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs };
+  const size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
   obj.image = size;
   obj.textContainer = { flex: 1 };
   return obj;
 });
-createStyles = fn(4636);
+createStyles = fn(4788);
 let obj3 = { preview: null };
 let size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, border: { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 }, overflow: "hidden" };
 obj3.preview = size;
@@ -164,7 +166,7 @@ export const PremiumGiftPromotionCollectibleRewardDetails = function PremiumGift
       let rounded = Math.floor(1.2 * tmp10);
     } else {
       rounded = tmp10;
-      if (memo.item.type === tmp8(1889).CollectiblesItemType.AVATAR_DECORATION) {
+      if (memo.item.type === tmp8(1973).CollectiblesItemType.AVATAR_DECORATION) {
         const _Math = Math;
         rounded = Math.floor(1.5 * tmp10);
       }

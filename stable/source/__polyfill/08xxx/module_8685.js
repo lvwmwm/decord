@@ -1,12 +1,15 @@
 // Module ID: 8685
 // Function ID: 8686
-// Dependencies: [26, 65]
+// Dependencies: []
 
 // Module 8685
-import _mod26 from "module_26" /* 26 */;
-import module_65 from "module_65" /* 65 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGSvgView", validAttributes: { bbWidth: true, bbHeight: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true, color: _mod26.colorAttribute, pointerEvents: true, hitSlop: true } };
-
-export default module_65.get("RNSVGSvgView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function head(arg0) {
+  let first;
+  if (arg0) {
+    if (arg0.length) {
+      first = arg0[0];
+    }
+  }
+  return first;
+};

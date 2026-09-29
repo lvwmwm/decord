@@ -1,17 +1,17 @@
-// Module ID: 8165
-// Function ID: 8166
+// Module ID: 8351
+// Function ID: 8352
 // Name: usePremiumDiscountOffer
-// Dependencies: [7340, 1373, 8166, 7343, 563, 2]
+// Dependencies: [7514, 1374, 8352, 7517, 563, 2]
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
 
-// Module 8165 (usePremiumDiscountOffer)
+// Module 8351 (usePremiumDiscountOffer)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ProductIds from "ProductIds" /* 7343 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8166 */;
-import IAPStore from "IAPStore" /* 7340 */;
+import ProductIds from "ProductIds" /* 7517 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8352 */;
+import IAPStore from "IAPStore" /* 7514 */;
 
 require = fn;
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_4, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: hasOwnProperty } = PremiumConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.android.tsx");

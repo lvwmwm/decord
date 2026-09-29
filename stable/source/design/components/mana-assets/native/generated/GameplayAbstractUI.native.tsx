@@ -1,13 +1,13 @@
-// Module ID: 6196
-// Function ID: 6197
+// Module ID: 6366
+// Function ID: 6367
 // Name: GameplayAbstractUI
-// Dependencies: [21, 5668, 6197, 2]
+// Dependencies: [21, 5836, 6367, 2]
 // Exports: GameplayAbstractUI
 
-// Module 6196 (GameplayAbstractUI)
+// Module 6366 (GameplayAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6197 from "module_6197" /* 6197 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6367 from "module_6367" /* 6367 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GameplayAbstractUI = function GameplayAbstractUI(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6197 };
+  const obj2 = { uri: _modDef6367 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

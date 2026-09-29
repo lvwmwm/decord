@@ -1,12 +1,9 @@
 // Module ID: 14143
 // Function ID: 14144
-// Dependencies: [14132]
+// Dependencies: [1121]
 
 // Module 14143
-import _mod14132 from "module_14132" /* 14132 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const obj = new _mod14132(arg0, arg2);
-  return obj.intersects(new _mod14132(arg1, arg2), arg2);
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b3429e38ab32663de7a271eafbda6e13", name: "ChannelListMagnifyingGlassIcon", type: "png" });

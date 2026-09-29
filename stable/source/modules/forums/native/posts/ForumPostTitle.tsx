@@ -1,17 +1,17 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12298
+// Function ID: 12299
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 4636, 1364, 4632, 2]
+// Dependencies: [19, 21, 4788, 1365, 4784, 2]
 // Exports: default
 
-// Module 12149 (ForumPostTitle)
-import Text_Text from "Text/Text" /* 4632 */;
+// Module 12298 (ForumPostTitle)
+import Text_Text from "Text/Text" /* 4784 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
-const PlatformUtils = fn(1364);
+const createStyles = fn(4788);
+const PlatformUtils = fn(1365);
 let obj3 = null;
 if (PlatformUtils.isIOS()) {
   obj3 = { lineHeight: 22 };

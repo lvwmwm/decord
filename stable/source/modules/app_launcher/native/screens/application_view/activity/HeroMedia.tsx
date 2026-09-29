@@ -1,22 +1,22 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 12366
+// Function ID: 12367
 // Name: HeroMedia
-// Dependencies: [19, 4628, 1482, 21, 4636, 11353, 9782, 504, 7271, 12191, 8425, 1114, 2]
+// Dependencies: [19, 4780, 1483, 21, 4788, 11511, 9772, 504, 7445, 12340, 8610, 1115, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 12217 (HeroMedia)
+// Module 12366 (HeroMedia)
 import initialize from "initialize" /* 504 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7271 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9782 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11353 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7445 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9772 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11511 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4780 */;
 
-const getPreviewVideoAssetUrlDefault = tmp6(12191);
+const getPreviewVideoAssetUrlDefault = tmp6(12340);
 require = fn;
-const DEFAULT_CONTENT_PADDING = fn(1482).DEFAULT_CONTENT_PADDING;
+const DEFAULT_CONTENT_PADDING = fn(1483).DEFAULT_CONTENT_PADDING;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/activity/HeroMedia.tsx");
@@ -65,7 +65,7 @@ export default function HeroMedia(arg0) {
         size.height = rounded;
         size.width = contentWidth2;
         size.poster = tmp7.url;
-        const intl = tmp2(1114).intl;
+        const intl = tmp2(1115).intl;
         let str3;
         if (getOrFetchApplication != null) {
           str3 = getOrFetchApplication.name;
@@ -74,7 +74,7 @@ export default function HeroMedia(arg0) {
           str3 = "";
         }
         const obj3 = { applicationName: str3 };
-        size.accessibilityLabel = intl.formatToPlainString(tmp2(1114).t["Af+EQD"], obj3);
+        size.accessibilityLabel = intl.formatToPlainString(tmp2(1115).t["Af+EQD"], obj3);
         const items1 = [tmp.mediaBackground, , ];
         const obj4 = { maxHeight: rounded };
         items1[1] = obj4;

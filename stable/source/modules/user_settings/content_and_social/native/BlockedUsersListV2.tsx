@@ -1,22 +1,22 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 15080
+// Function ID: 15081
 // Name: BlockedUsersListV2
-// Dependencies: [19, 17, 4285, 21, 4636, 576, 7265, 7285, 1176, 14891, 1114, 7226, 4632, 5768, 14895, 504, 2]
+// Dependencies: [19, 17, 4437, 21, 4788, 576, 7439, 7459, 1177, 15081, 1115, 7400, 4784, 5936, 15085, 504, 2]
 // Exports: default
 
-// Module 14890 (BlockedUsersListV2)
+// Module 15080 (BlockedUsersListV2)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import TableRowGroup from "TableRowGroup" /* 5768 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7226 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7265 */;
-import Blocked from "Blocked" /* 14891 */;
-import BlockedUserRowV2Default from "BlockedUserRowV2" /* 14895 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import TableRowGroup from "TableRowGroup" /* 5936 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7400 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7439 */;
+import Blocked from "Blocked" /* 15081 */;
+import BlockedUserRowV2Default from "BlockedUserRowV2" /* 15085 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
+import RelationshipStore from "RelationshipStore" /* 4437 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
@@ -52,7 +52,7 @@ function BlockedUsersList(userIds) {
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { list: { flex: 1, paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 }, sectionLabelStyle: null };
 let obj3 = { flex: 1, paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.sectionLabelStyle = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };

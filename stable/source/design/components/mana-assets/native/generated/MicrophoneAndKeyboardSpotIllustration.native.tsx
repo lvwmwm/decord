@@ -1,13 +1,13 @@
-// Module ID: 6338
-// Function ID: 6339
+// Module ID: 6510
+// Function ID: 6511
 // Name: MicrophoneAndKeyboardSpotIllustration
-// Dependencies: [21, 5668, 6339, 2]
+// Dependencies: [21, 5836, 6511, 2]
 // Exports: MicrophoneAndKeyboardSpotIllustration
 
-// Module 6338 (MicrophoneAndKeyboardSpotIllustration)
+// Module 6510 (MicrophoneAndKeyboardSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6339 from "module_6339" /* 6339 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6511 from "module_6511" /* 6511 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const MicrophoneAndKeyboardSpotIllustration = function MicrophoneAndKeybo
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6339 };
+  const obj2 = { uri: _modDef6511 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

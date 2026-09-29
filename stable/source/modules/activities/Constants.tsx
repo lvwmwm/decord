@@ -1,12 +1,12 @@
-// Module ID: 1920
-// Function ID: 1921
+// Module ID: 2004
+// Function ID: 2005
 // Name: Constants
-// Dependencies: [1074, 1894, 2]
+// Dependencies: [1074, 1978, 2]
 // Exports: getAppIntentScheme
 
-// Module 1920 (Constants)
+// Module 2004 (Constants)
 import Constants from "Constants" /* 1074 */;
-import Server from "Server" /* 1894 */;
+import Server from "Server" /* 1978 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
@@ -103,7 +103,6 @@ export function getAppIntentScheme(arg0) {
 }
 export const PRIVATE_APPS_HELP_ARTICLE = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
 export const DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY = "disallowed_navigation_error_close_activity";
-export const ACTIVITY_PORTRAIT_ASPECT_RATIO = 0.5625;
-export const ACTIVITY_LANDSCAPE_ASPECT_RATIO = 1.7777777777777777;
+export const ACTIVITY_LOCKED_ASPECT_RATIO = 0.5625;
 export const ActivityPopoutWindowLayouts = { NORMAL: "normal", FULL_SCREEN: "full-screen" };
 export const INVITE_EXPIRATION_MS = 21600000;

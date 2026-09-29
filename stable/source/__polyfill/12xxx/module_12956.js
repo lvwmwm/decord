@@ -1,24 +1,9 @@
 // Module ID: 12956
 // Function ID: 12957
-// Dependencies: [12931, 12951]
-// Exports: getDefaultCurrentScope, getDefaultIsolationScope
+// Dependencies: [1121]
 
 // Module 12956
-import _mod12931 from "module_12931" /* 12931 */;
-import ScopeClass from "ScopeClass" /* 12951 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const getDefaultCurrentScope = function getDefaultCurrentScope() {
-  return _mod12931.getGlobalSingleton("defaultCurrentScope", () => {
-    const scope = new ScopeClass.Scope();
-    return scope;
-  });
-};
-export const getDefaultIsolationScope = function getDefaultIsolationScope() {
-  return _mod12931.getGlobalSingleton("defaultIsolationScope", () => {
-    const scope = new ScopeClass.Scope();
-    return scope;
-  });
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/empty_channel", width: 48, height: 48, scales: [2, 3], hash: "8d7c88bf2a3c70b7581717d42e9c4ec1", name: "send_message_32px", type: "png" });

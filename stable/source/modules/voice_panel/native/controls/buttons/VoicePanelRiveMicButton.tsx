@@ -1,11 +1,11 @@
-// Module ID: 10133
-// Function ID: 10134
+// Module ID: 10300
+// Function ID: 10301
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 4347, 9256, 10134, 2]
+// Dependencies: [19, 17, 21, 4498, 9979, 10301, 2]
 // Exports: VoicePanelRiveMicButton
 
-// Module 10133 (VoicePanelRiveMicButton)
-import native from "native" /* 4347 */;
+// Module 10300 (VoicePanelRiveMicButton)
+import native from "native" /* 4498 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,9 +24,9 @@ export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
   }
   obj2.defaultViewModelInstance = str;
   if (muted) {
-    let MicrophoneIcon = tmp3(9256).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(9979).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(10134).MicrophoneIcon;
+    MicrophoneIcon = tmp3(10301).MicrophoneIcon;
   }
   obj2.fallback = <MicrophoneIcon color={color} />;
   obj.children = jsx(native.MicrophoneRive, { dataBinding: { fill: color, on: !muted }, defaultViewModelInstance: null, fallback: null });

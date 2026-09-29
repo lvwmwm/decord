@@ -1,99 +1,180 @@
 // Module ID: 10891
 // Function ID: 10892
-// Dependencies: [19, 10892]
-// Exports: useInitProps
+// Dependencies: [41, 42, 93, 95, 98, 10752, 10734, 10884]
 
 // Module 10891
-import SINGLE_ITEM from "SINGLE_ITEM" /* 10892 */;
-import noop from "module_19" /* 19 */;
+import now from "now" /* 10752 */;
+import _mod10884 from "module_10884" /* 10884 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-require = arg1;
-
-export const useInitProps = function useInitProps(defaultIndex) {
-  defaultIndex = defaultIndex.defaultIndex;
-  let num = 0;
-  if (undefined !== defaultIndex) {
-    num = defaultIndex;
-  }
-  let data = defaultIndex.data;
-  if (undefined === data) {
-    data = [];
-  }
-  const loop = tmp;
-  const autoPlayInterval = defaultIndex.autoPlayInterval;
-  let num2 = 1000;
-  if (undefined !== autoPlayInterval) {
-    num2 = autoPlayInterval;
-  }
-  const scrollAnimationDuration = defaultIndex.scrollAnimationDuration;
-  let num3 = 500;
-  if (undefined !== scrollAnimationDuration) {
-    num3 = scrollAnimationDuration;
-  }
-  let style = defaultIndex.style;
-  if (undefined === style) {
-    style = {};
-  }
-  const autoFillData = defaultIndex.autoFillData;
-  noop = tmp2;
-  const enabled = defaultIndex.enabled;
-  const pagingEnabled = defaultIndex.pagingEnabled;
-  const overscrollEnabled = defaultIndex.overscrollEnabled;
-  let snapEnabled = defaultIndex.snapEnabled;
-  if (undefined === snapEnabled) {
-    let flag = defaultIndex.enableSnap;
-    if (flag == null) {
-      flag = true;
+let self = this;
+const UKCasualTimeParser = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-    snapEnabled = flag;
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  ({ width, height } = defaultIndex);
-  if (!width) {
-    width = 0;
+}
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (self2) {
+  let __setModuleDefault = self;
+  if (self) {
+    __setModuleDefault = self.__setModuleDefault;
   }
-  const rounded = Math.round(width);
-  if (!height) {
-    height = 0;
-  }
-  const rounded1 = Math.round(height);
-  const items = [data, undefined === loop || loop, undefined === autoFillData || autoFillData];
-  const bound = Math.max(num2, 0);
-  const memo = noop.useMemo(() => SINGLE_ITEM.computedFillDataWithAutoFillData({ loop, autoFillData, data, dataLength: data.length }), items);
-  let tmp10 = "vertical-stack" !== defaultIndex.mode;
-  if (tmp10) {
-    tmp10 = "horizontal-stack" !== defaultIndex.mode;
-  }
-  if (!tmp10) {
-    if (!defaultIndex.modeConfig) {
-      defaultIndex.modeConfig = {};
+  if (__setModuleDefault) {
+    let fn = self;
+    if (self) {
+      fn = self.__importStar;
     }
-    const modeConfig = defaultIndex.modeConfig;
-    let showLength;
-    if (modeConfig != null) {
-      showLength = modeConfig.showLength;
+    if (!fn) {
+      fn = function c(arg0) {
+        fn = Object.getOwnPropertyNames;
+        if (!fn) {
+          fn = (obj) => {
+            const items = [];
+            for (const key10005 in arg0) {
+              let _Object = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              let call = hasOwnProperty.call;
+              if (typeof call === "unknown") {
+                let hasOwnPropertyResult = hasOwnProperty(key10005);
+              } else {
+                hasOwnPropertyResult = call(arg0, key10005);
+              }
+              if (!hasOwnPropertyResult) {
+                continue;
+              } else {
+                items[items.length] = key10005;
+                continue;
+              }
+              continue;
+            }
+            return items;
+          };
+        }
+        return fn(arg0);
+      };
+      fn = (__esModule) => {
+        if (__esModule) {
+          if (__esModule.__esModule) {
+            return __esModule;
+          }
+        }
+        const obj = {};
+        if (null != __esModule) {
+          const arr = fn(__esModule);
+          for (let num = 0; num < arr.length; num = num + 1) {
+            if ("default" !== arr[num]) {
+              let tmp4 = self2(obj, __esModule, arr[num]);
+            }
+          }
+        }
+        __setModuleDefault(obj, __esModule);
+        return obj;
+      };
     }
-    if (showLength == null) {
-      showLength = length - 1;
+    const _Object3 = Object;
+    let closure_9 = fn(now);
+    class UKCasualTimeParser {
+      constructor() {
+        self = this;
+        tmp = c2(this, UKCasualTimeParser);
+        tmp2 = closure_4;
+        obj = closure_4(UKCasualTimeParser);
+        tmp3 = closure_3;
+        if (hasOwnProperty()) {
+          tmp7 = globalThis;
+          _Reflect = Reflect;
+          tmp8 = arguments;
+          constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+        } else {
+          tmp4 = arguments;
+          tmp5 = arguments;
+          constructResult = obj(...arguments);
+        }
+        return tmp3(self, constructResult);
+      }
     }
-    defaultIndex.modeConfig.showLength = showLength;
+    _inherits(UKCasualTimeParser, _mod10884.AbstractParserWithLeftRightBoundaryChecking);
+    const entry = {
+      key: "innerPatternString",
+      value: function innerPatternString(arg0) {
+            return "(\u0437\u0430\u0440\u0430\u0437|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E\\s*\u0432\u0435\u0447\u043E\u0440\u0430|\u043C\u0438\u043D\u0443\u043B\u043E\u0457\\s*\u043D\u043E\u0447\u0456|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0457\\s*\u043D\u043E\u0447\u0456|\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456\\s*\u0432\u043D\u043E\u0447\u0456|\u0446\u0456\u0454\u0457\\s*\u043D\u043E\u0447\u0456|\u0446\u044C\u043E\u0433\u043E \u0440\u0430\u043D\u043A\u0443|\u0432\u0440\u0430\u043D\u0446\u0456|\u0440\u0430\u043D\u043A\u0443|\u0437\u0440\u0430\u043D\u043A\u0443|\u043E\u043F\u0456\u0432\u0434\u043D\u0456|\u0432\u0432\u0435\u0447\u0435\u0440\u0456|\u0432\u0435\u0447\u043E\u0440\u0430|\u043E\u043F\u0456\u0432\u043D\u043E\u0447\u0456|\u0432\u043D\u043E\u0447\u0456)";
+          }
+    };
+    let items = [entry, ];
+    const entry1 = {
+      key: "innerExtract",
+      value: function innerExtract(refDate, arg1) {
+            refDate = refDate.refDate;
+            const str2 = arg1[0].toLowerCase();
+            let parsingComponents = refDate.createParsingComponents();
+            if ("\u0437\u0430\u0440\u0430\u0437" === str2) {
+              return closure_9.now(refDate.reference);
+            } else {
+              if ("\u0432\u0432\u0435\u0447\u0435\u0440\u0456" !== str2) {
+                if ("\u0432\u0435\u0447\u043E\u0440\u0430" !== str2) {
+                  if (!str2.endsWith("\u0432\u0440\u0430\u043D\u0446\u0456")) {
+                    if (!str2.endsWith("\u0440\u0430\u043D\u043A\u0443")) {
+                      if (!str2.endsWith("\u0437\u0440\u0430\u043D\u043A\u0443")) {
+                        if (str2.endsWith("\u043E\u043F\u0456\u0432\u0434\u043D\u0456")) {
+                          return closure_9.noon(refDate.reference);
+                        } else if (str2.match(/минулої\s*ночі/)) {
+                          return closure_9.lastNight(refDate.reference);
+                        } else if (str2.match(/минулого\s*вечора/)) {
+                          return closure_9.yesterdayEvening(refDate.reference);
+                        } else {
+                          if (str2.match(/наступної\s*ночі/)) {
+                            let num2 = 2;
+                            if (refDate.getHours() < 22) {
+                              num2 = 1;
+                            }
+                            const _Date = Date;
+                            const date = new Date(refDate.getTime());
+                            date.setDate(date.getDate() + num2);
+                            UKCasualTimeParser(10734).assignSimilarDate(parsingComponents, date);
+                            parsingComponents.imply("hour", 1);
+                          }
+                          if (!str2.match(/цієї\s*ночі/)) {
+                            return parsingComponents;
+                          }
+                          parsingComponents = closure_9.midnight(refDate.reference);
+                        }
+                      }
+                    }
+                  }
+                  return closure_9.morning(refDate.reference);
+                }
+              }
+              return closure_9.evening(refDate.reference);
+            }
+          }
+    };
+    items[1] = entry1;
+    exports.default = _createClass(UKCasualTimeParser, items);
+  } else {
+    const _Object2 = Object;
   }
-  const obj = {};
-  const merged = Object.assign(defaultIndex);
-  obj.defaultIndex = num;
-  obj.autoFillData = undefined === autoFillData || autoFillData;
-  obj.data = memo;
-  obj.dataLength = memo.length;
-  obj.rawData = data;
-  obj.rawDataLength = data.length;
-  obj.loop = undefined === loop || loop;
-  obj.enabled = undefined === enabled || enabled;
-  obj.autoPlayInterval = bound;
-  obj.scrollAnimationDuration = num3;
-  obj.style = style;
-  obj.pagingEnabled = undefined === pagingEnabled || pagingEnabled;
-  obj.snapEnabled = snapEnabled;
-  obj.overscrollEnabled = undefined === overscrollEnabled || overscrollEnabled;
-  obj.width = rounded;
-  obj.height = rounded1;
-  return obj;
-};
+} else {
+  let _Object = Object;
+}

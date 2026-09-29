@@ -1,13 +1,13 @@
-// Module ID: 6366
-// Function ID: 6367
+// Module ID: 6538
+// Function ID: 6539
 // Name: NitroEmeraldBadgeLargeBadge
-// Dependencies: [21, 5668, 6367, 2]
+// Dependencies: [21, 5836, 6539, 2]
 // Exports: NitroEmeraldBadgeLargeBadge
 
-// Module 6366 (NitroEmeraldBadgeLargeBadge)
+// Module 6538 (NitroEmeraldBadgeLargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6367 from "module_6367" /* 6367 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6539 from "module_6539" /* 6539 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const NitroEmeraldBadgeLargeBadge = function NitroEmeraldBadgeLargeBadge(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6367 };
+  const obj2 = { uri: _modDef6539 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

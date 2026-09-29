@@ -1,14 +1,37 @@
 // Module ID: 4049
 // Function ID: 4050
-// Dependencies: [3725, 3726, 3729, 3730]
+// Dependencies: [3877, 3878]
 // Exports: default
 
 // Module 4049
-import _mod3730 from "module_3730" /* 3730 */;
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
-import module_3729_mod from "module_3729" /* 3729 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import requiredArgs_mod from "requiredArgs" /* 3878 */;
 
+function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      _typeof = function _typeof(arg0) {
+        return typeof arg0;
+      };
+    }
+    return _typeof(arg0);
+  }
+  _typeof = function _typeof(arg0) {
+    if (arg0) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          let str = "symbol";
+        }
+        return str;
+      }
+    }
+    str = typeof arg0;
+  };
+}
 let _typeof = _typeof_mod;
 if (!_typeof) {
   const obj = { default: _typeof };
@@ -25,80 +48,37 @@ if (!requiredArgs) {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj3 = { default: module_3729 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3729;
-}
-module_3729 = tmp7;
 
-export default function setUTCDay(arg0, arg1, weekStartsOn) {
-  requiredArgs.default(2, arguments);
-  const defaultOptions = _mod3730.getDefaultOptions();
-  weekStartsOn = undefined;
-  if (null != weekStartsOn) {
-    weekStartsOn = weekStartsOn.weekStartsOn;
-  }
-  if (null === weekStartsOn) {
-    let weekStartsOn1;
-    if (null != weekStartsOn) {
-      locale = weekStartsOn.locale;
-      if (null !== locale) {
-        if (undefined !== locale) {
-          const options = locale.options;
-          if (null !== options) {
-            if (undefined !== options) {
-              weekStartsOn1 = options.weekStartsOn;
-            }
-          }
-        }
+export default function max(arg0) {
+  requiredArgs.default(1, arguments);
+  if (!arg0) {
+    if ("object" === _typeof(arg0)) {
+      if (null !== arg0) {
+        const _Array = Array;
+        const call = slice.call;
+        let arr = typeof call === "unknown" ? slice() : call(arg0);
       }
     }
-    weekStartsOn = weekStartsOn1;
+    const _Date = Date;
+    const date = new Date(NaN);
+    return date;
+  } else {
+    arr = arg0;
   }
-  if (null === weekStartsOn) {
-    weekStartsOn = defaultOptions.weekStartsOn;
-  }
-  if (null === weekStartsOn) {
-    const locale2 = defaultOptions.locale;
-    let weekStartsOn2;
-    if (null !== locale2) {
-      if (undefined !== locale2) {
-        const options2 = locale2.options;
-        if (null !== options2) {
-          if (undefined !== options2) {
-            weekStartsOn2 = options2.weekStartsOn;
-          }
-        }
-      }
+  const item = arr.forEach((item) => {
+    defaultResult = _typeof.default(item);
+    let isNaNResult = undefined === defaultResult || defaultResult < defaultResult;
+    if (!isNaNResult) {
+      const _isNaN = isNaN;
+      const _Number = Number;
+      isNaNResult = isNaN(Number(defaultResult));
     }
-    weekStartsOn = weekStartsOn2;
+  });
+  let date1 = _typeof;
+  if (!_typeof) {
+    const _Date2 = Date;
+    date1 = new Date(NaN);
   }
-  let num = 0;
-  if (null !== weekStartsOn) {
-    num = 0;
-    if (undefined !== weekStartsOn) {
-      num = weekStartsOn;
-    }
-  }
-  const defaultResult1 = module_3729.default(num);
-  if (defaultResult1 >= 0) {
-    if (defaultResult1 <= 6) {
-      const defaultResult2 = _typeof.default(arg0);
-      const defaultResult3 = module_3729.default(arg1);
-      let num4 = 0;
-      const uTCDay = defaultResult2.getUTCDay();
-      if ((defaultResult3 % 7 + 7) % 7 < defaultResult1) {
-        num4 = 7;
-      }
-      const diff = num4 + defaultResult3 - uTCDay;
-      defaultResult2.setUTCDate(defaultResult2.getUTCDate() + diff);
-      return defaultResult2;
-    }
-  }
-  const rangeError = new RangeError("weekStartsOn must be between 0 and 6 inclusively");
-  throw rangeError;
+  return date1;
 };
 export default exports.default;

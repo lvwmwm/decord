@@ -1,20 +1,20 @@
-// Module ID: 13627
-// Function ID: 13628
+// Module ID: 13830
+// Function ID: 13831
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2025, 1371, 4299, 4300, 7340, 1074, 1373, 21, 4636, 504, 4294, 13488, 573, 7522, 7343, 4632, 1363, 7338, 7337, 1114, 1880, 2]
+// Dependencies: [32, 19, 17, 2109, 1372, 4451, 4452, 7514, 1074, 1374, 21, 4788, 504, 4446, 13696, 573, 7693, 7517, 4784, 1364, 7512, 7511, 1115, 1881, 2]
 // Exports: default
 
-// Module 13627 (PremiumSubscriptionPricingUpsell)
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13488 */;
+// Module 13830 (PremiumSubscriptionPricingUpsell)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13696 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2025 */;
-import UserStore from "UserStore" /* 1371 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4299 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
-import IAPStore from "IAPStore" /* 7340 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
+import UserStore from "UserStore" /* 1372 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4451 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
+import IAPStore from "IAPStore" /* 7514 */;
 
 require = fn;
 function PricingSubheadingCopy() {
@@ -197,11 +197,11 @@ function PricingSubheadingCopy() {
 }
 const View = fn(17).View;
 const CurrencyCodes = fn(1074).CurrencyCodes;
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ SubscriptionPlans: closure_12, SubscriptionPlanInfo: map1, PremiumTypes: closure_14, SubscriptionIntervalTypes: closure_15, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_16, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_17 } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_21 = createStyles.createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("components_native/premium/PremiumSubscriptionPricingUpsell.tsx");

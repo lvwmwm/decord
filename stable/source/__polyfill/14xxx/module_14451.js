@@ -1,12 +1,9 @@
 // Module ID: 14451
 // Function ID: 14452
-// Dependencies: [14430, 14429]
+// Dependencies: [1121]
 
 // Module 14451
-import _mod14429 from "module_14429" /* 14429 */;
-import _mod14430 from "module_14430" /* 14430 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default Object.keys || (function keys(arg0) {
-  return _mod14430(arg0, _mod14429);
-});
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "76c09ebc2fd9700ae36ec8729cee1e9d", name: "NotificationsTab", type: "lottie" });

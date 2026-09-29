@@ -1,13 +1,31 @@
 // Module ID: 5033
 // Function ID: 5034
-// Dependencies: [17, 65]
+// Dependencies: [5031, 1455, 1281, 5034, 5037, 5040, 5107]
 
 // Module 5033
-import _mod17 from "module_17" /* 17 */;
-import module_65 from "module_65" /* 65 */;
+import _mod1281 from "module_1281" /* 1281 */;
+import requirePromise from "requirePromise" /* 5031 */;
+import callBind_mod from "callBind" /* 1455 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSSafeAreaView", validAttributes: { edges: true, insetType: true } };
+requirePromise();
+let callBind = callBind_mod;
+let closure_2 = callBind(_mod1281("%Promise.all%"));
+let callBind = callBind_mod;
+let closure_3 = callBind(_mod1281("%Promise.reject%"));
 
-export default module_65.get("RNSSafeAreaView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function allSettled(arg0) {
+  const self = this;
+  if ("Object" !== self(5034)(this)) {
+    const _TypeError = TypeError;
+    const typeError = new TypeError("`this` value must be an object");
+    throw typeError;
+  } else {
+    return closure_2(this, tmp(5040)(tmp(5037)(arg0), (arg0) => {
+      try {
+        return promise.then((value) => ({ status: "fulfilled", value }), (reason) => ({ status: "rejected", reason }));
+      } catch (tmp3) {
+        return closure_3(tmp, tmp3);
+      }
+    }));
+  }
+};

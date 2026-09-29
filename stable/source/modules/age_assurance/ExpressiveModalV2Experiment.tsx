@@ -1,16 +1,16 @@
-// Module ID: 8547
-// Function ID: 8548
+// Module ID: 8733
+// Function ID: 8734
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [8548, 1433, 8536, 504, 2]
+// Dependencies: [8734, 1434, 8722, 504, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 8547 (ExpressiveModalV2Experiment)
+// Module 8733 (ExpressiveModalV2Experiment)
 import initialize from "initialize" /* 504 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8536 */;
-import SafetyHubStore from "SafetyHubStore" /* 8548 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8722 */;
+import SafetyHubStore from "SafetyHubStore" /* 8734 */;
 
 require = fn;
-const ApexExperiment = fn(1433);
+const ApexExperiment = fn(1434);
 let obj2 = { kind: "user", name: "2026-07-expressive-modal-v2", defaultConfig: { enabled: false }, variations: null };
 const obj3 = { 1: null, 2: { enabled: true } };
 obj3[2] = { enabled: true };

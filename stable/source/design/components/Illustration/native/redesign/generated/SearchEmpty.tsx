@@ -1,12 +1,12 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10612
+// Function ID: 10613
 // Name: SearchEmpty
-// Dependencies: [19, 17, 21, 8349, 10447, 10448, 10449, 4488, 2]
+// Dependencies: [19, 17, 21, 8534, 10613, 10614, 10615, 4639, 2]
 // Exports: SearchEmpty, getSearchEmptySource, useSearchEmptySource
 
-// Module 10446 (SearchEmpty)
-import shared from "shared" /* 4488 */;
-import _mod8349 from "module_8349" /* 8349 */;
+// Module 10612 (SearchEmpty)
+import shared from "shared" /* 4639 */;
+import _mod8534 from "module_8534" /* 8534 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/SearchEmpty.tsx");
 
 export const getSearchEmptySource = function getSearchEmptySource(theme) {
-  return _mod8349.getIllustrationSource(theme, {
+  return _mod8534.getIllustrationSource(theme, {
     dark() {
-      return require("module_10447");
+      return require("module_10613");
     },
     darker() {
-      return require("module_10448");
+      return require("module_10614");
     },
     light() {
-      return require("module_10449");
+      return require("module_10615");
     }
   });
 };
 export const useSearchEmptySource = function useSearchEmptySource() {
   const obj = shared;
-  return _mod8349.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_10447");
+      return require("module_10613");
     },
     darker() {
-      return require("module_10448");
+      return require("module_10614");
     },
     light() {
-      return require("module_10449");
+      return require("module_10615");
     }
   });
 };
 export const SearchEmpty = function SearchEmpty(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod8349.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod8534.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_10447");
+      return require("module_10613");
     },
     darker() {
-      return require("module_10448");
+      return require("module_10614");
     },
     light() {
-      return require("module_10449");
+      return require("module_10615");
     }
   });
   const merged = Object.assign(arg0);

@@ -1,22 +1,22 @@
-// Module ID: 14734
-// Function ID: 14735
+// Module ID: 14953
+// Function ID: 14954
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8277, 7723, 1979, 5519, 1371, 1074, 504, 12005, 1952, 573, 9339, 14735, 11224, 7091, 14693, 8284, 4537, 1114, 2]
+// Dependencies: [109, 5, 19, 8461, 7889, 2063, 5687, 1372, 1074, 504, 12155, 2036, 573, 10069, 14954, 11383, 7265, 14912, 8468, 4688, 1115, 2]
 // Exports: default
 
-// Module 14734 (useGuildProfileEditForm)
+// Module 14953 (useGuildProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8277 */;
-import UserProfileStore from "UserProfileStore" /* 7723 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import SortedGuildStore from "SortedGuildStore" /* 5519 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8461 */;
+import UserProfileStore from "UserProfileStore" /* 7889 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SortedGuildStore from "SortedGuildStore" /* 5687 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 let closure_3 = ["bannerOriginalMd5"];
-const IGNORE_GUILD_IDS = fn(8277).IGNORE_GUILD_IDS;
+const IGNORE_GUILD_IDS = fn(8461).IGNORE_GUILD_IDS;
 const FormStates = fn(1074).FormStates;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/profiles/native/useGuildProfileEditForm.tsx");
@@ -68,7 +68,7 @@ export default function useGuildProfileEditForm() {
   const merged1 = Object.assign(stateFromStoresObject.errors);
   const memo = pendingThemeColors.useMemo(() => {
     const delayedCall = new stateFromStores(pendingNickname[11]).DelayedCall(200, () => {
-      pendingAvatar(573).wait(stateFromStores(9339).resetAllPending);
+      pendingAvatar(573).wait(stateFromStores(10069).resetAllPending);
     });
     return delayedCall;
   }, []);

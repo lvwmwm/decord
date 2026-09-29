@@ -1,19 +1,19 @@
-// Module ID: 17640
-// Function ID: 17641
+// Module ID: 17934
+// Function ID: 17935
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 1975, 1371, 1074, 21, 504, 5768, 1114, 5686, 17641, 17642, 17643, 17644, 7363, 2]
+// Dependencies: [19, 2059, 1372, 1074, 21, 504, 5936, 1115, 5854, 17935, 17936, 17937, 17938, 7534, 2]
 // Exports: default
 
-// Module 17640 (GuildSettingsRoleSubscriptionsSection)
+// Module 17934 (GuildSettingsRoleSubscriptionsSection)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import TableRow from "TableRow" /* 5686 */;
-import TableRowGroup from "TableRowGroup" /* 5768 */;
-import _modDef17641 from "module_17641" /* 17641 */;
-import _modDef17642 from "module_17642" /* 17642 */;
-import _modDef17644 from "module_17644" /* 17644 */;
+import util from "util" /* 1115 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5936 */;
+import _modDef17935 from "module_17935" /* 17935 */;
+import _modDef17936 from "module_17936" /* 17936 */;
+import _modDef17938 from "module_17938" /* 17938 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function HasCreatedListingsSection(arg0) {
@@ -27,7 +27,7 @@ function HasCreatedListingsSection(arg0) {
   const intl2 = util.intl;
   obj3.label = intl2.string(util.t["/CfKoD"]);
   const tmp4 = closure_8;
-  obj3.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17641 });
+  obj3.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17935 });
   obj3.onPress = function onPress() {
     return importDefault(constants2.ROLE_SUBSCRIPTIONS_BASIC);
   };
@@ -35,29 +35,29 @@ function HasCreatedListingsSection(arg0) {
   const obj5 = { label: null, arrow: true, icon: null, onPress: null };
   const intl3 = util.intl;
   obj5.label = intl3.string(util.t.pXbGYc);
-  const obj4 = { source: _modDef17641 };
-  obj5.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17642 });
+  const obj4 = { source: _modDef17935 };
+  obj5.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17936 });
   obj5.onPress = function onPress() {
     return importDefault(constants2.ROLE_SUBSCRIPTIONS_TIERS);
   };
   items1[1] = closure_7(TableRow.TableRow, obj5, "guild-role-subscriptions-tiers");
   if (stateFromStores) {
     const obj7 = { label: null, arrow: true, icon: null, onPress: null };
-    const intl4 = tmp(1114).intl;
-    obj7.label = intl4.string(tmp(1114).t.p2Rsdl);
-    const obj8 = { source: tmp6(17643) };
-    obj7.icon = tmp5(tmp(5686).TableRow.Icon, obj8);
+    const intl4 = tmp(1115).intl;
+    obj7.label = intl4.string(tmp(1115).t.p2Rsdl);
+    const obj8 = { source: tmp6(17937) };
+    obj7.icon = tmp5(tmp(5854).TableRow.Icon, obj8);
     obj7.onPress = function onPress() {
       return importDefault(constants2.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
     };
-    stateFromStores = tmp5(tmp(5686).TableRow, obj7, "guild-role-subscriptions-payments");
+    stateFromStores = tmp5(tmp(5854).TableRow, obj7, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
   const obj9 = { label: null, arrow: true, icon: null, onPress: null };
-  const intl5 = tmp(1114).intl;
+  const intl5 = tmp(1115).intl;
   obj9.label = intl5.string(util.t.C5Dbwn);
-  const obj6 = { source: _modDef17642 };
-  obj9.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17644 });
+  const obj6 = { source: _modDef17936 };
+  obj9.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17938 });
   obj9.onPress = function onPress() {
     return importDefault(constants2.ROLE_SUBSCRIPTIONS_EMOJIS);
   };
@@ -65,7 +65,7 @@ function HasCreatedListingsSection(arg0) {
   obj2.children = items1;
   return tmp4(TableRowGroup.TableRowGroup, obj2);
 }
-const isGuildOwner = fn(1975).isGuildOwner;
+const isGuildOwner = fn(2059).isGuildOwner;
 const Constants = fn(1074);
 ({ GuildFeatures: hasOwnProperty, GuildSettingsSections: metroRequire } = Constants);
 const jsxProd = fn(21);

@@ -1,9 +1,9 @@
 // Module ID: 9980
 // Function ID: 9981
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 9980
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 251, height: 147, scales: [2, 3], hash: "7e87039ca280115f9b6a52cb6bc7dc5e", name: "img_app_crash_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9c9eaf9e089e1e9ddafb13abb59b28d7", name: "MicrophoneSlashIcon", type: "png" });

@@ -1,10 +1,10 @@
-// Module ID: 1091
-// Function ID: 1092
+// Module ID: 1092
+// Function ID: 1093
 // Name: utils/ColorUtils
 // Dependencies: [672, 2]
 // Exports: getContrast, getDarkness, getLuminance, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgbArray, int2rgba, isValidHex, rgb2int
 
-// Module 1091 (utils/ColorUtils)
+// Module 1092 (utils/ColorUtils)
 import _modDef672 from "module_672" /* 672 */;
 import size from "module_2" /* 2 */;
 

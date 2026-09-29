@@ -1,9 +1,9 @@
 // Module ID: 10273
 // Function ID: 10274
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10273
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/chat_sidebar", width: 24, height: 24, scales: [2, 3], hash: "735f759c8548e858d5ddb5e988a22d5f", name: "ic_notif_off", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "4782ad45462ec62f2912f2f8f1ed8388", name: "ic_leave_24px", type: "png" });

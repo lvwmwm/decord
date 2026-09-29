@@ -1,13 +1,13 @@
-// Module ID: 5986
-// Function ID: 5987
+// Module ID: 6156
+// Function ID: 6157
 // Name: D20SpotIllustration
-// Dependencies: [21, 5668, 5987, 2]
+// Dependencies: [21, 5836, 6157, 2]
 // Exports: D20SpotIllustration
 
-// Module 5986 (D20SpotIllustration)
+// Module 6156 (D20SpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef5987 from "module_5987" /* 5987 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6157 from "module_6157" /* 6157 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const D20SpotIllustration = function D20SpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5987 };
+  const obj2 = { uri: _modDef6157 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

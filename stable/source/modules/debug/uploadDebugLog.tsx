@@ -1,12 +1,12 @@
-// Module ID: 10324
-// Function ID: 10325
+// Module ID: 10492
+// Function ID: 10493
 // Name: uploadDebugLog
-// Dependencies: [1074, 1270, 2]
+// Dependencies: [1074, 1271, 2]
 // Exports: default
 
-// Module 10324 (uploadDebugLog)
+// Module 10492 (uploadDebugLog)
 import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

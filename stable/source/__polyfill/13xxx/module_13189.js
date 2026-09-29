@@ -1,9 +1,23 @@
 // Module ID: 13189
 // Function ID: 13190
-// Dependencies: [1120]
+// Dependencies: []
+// Exports: getBreadcrumbLogLevelFromHttpStatusCode
 
 // Module 13189
-import registerAsset from "module_1120" /* 1120 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "275bd5b71554351f2696bfdcf78e312a", name: "PaperPlusIcon", type: "png" });
+export const getBreadcrumbLogLevelFromHttpStatusCode = function getBreadcrumbLogLevelFromHttpStatusCode(arg0) {
+  let tmp;
+  if (undefined !== arg0) {
+    if (arg0 < 400) {
+      let str2;
+      if (arg0 >= 500) {
+        str2 = "error";
+      }
+      let str = str2;
+    } else {
+      str = "warning";
+    }
+    tmp = str;
+  }
+  return tmp;
+};

@@ -4,4 +4,4 @@
 
 // Module 1300
 
-export default RangeError;
+export default EvalError;

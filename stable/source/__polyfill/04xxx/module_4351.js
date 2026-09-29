@@ -1,101 +1,28 @@
 // Module ID: 4351
 // Function ID: 4352
 // Dependencies: []
-// Exports: createStore
 
 // Module 4351
-function createStoreImpl(fn) {
-  const set = new Set();
-  function setState(fn, arg1) {
-    let tmp = fn;
-    if (typeof fn === "function") {
-      tmp = fn(merged);
-    }
-    if (!Object.is(tmp, merged)) {
-      let tmp2 = arg1;
-      if (null == arg1) {
-        let tmp5 = typeof tmp !== "object";
-        if (typeof tmp === "object") {
-          tmp5 = null === tmp;
-        }
-        tmp2 = tmp5;
-      }
-      merged = tmp;
-      if (!tmp2) {
-        const _Object = Object;
-        merged = Object.assign({}, merged, tmp);
-      }
-      const item = set.forEach((fn) => fn(closure_0, merged));
-    }
+if (Intl.ListFormat) {
+  const _Intl = Intl;
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
+    const _Intl2 = Intl;
+    const obj2 = { data: null, locale: "de" };
+    const obj3 = { conjunction: null, disjunction: null, unit: null };
+    const obj4 = { long: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" }, narrow: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" }, short: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" } };
+    obj3.conjunction = obj4;
+    const obj5 = { long: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" }, narrow: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" }, short: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" } };
+    obj3.disjunction = obj5;
+    const obj6 = { long: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
+    obj3.unit = obj6;
+    obj2.data = obj3;
+    ListFormat.__addLocaleData(obj2);
   }
-  function getState() {
-    return closure_0;
-  }
-  const store = {
-    setState,
-    getState,
-    getInitialState() {
-      return closure_2;
-    },
-    subscribe(arg0) {
-      closure_0 = arg0;
-      set.add(arg0);
-      return () => set.delete(closure_0);
-    }
-  };
-  const tmp2 = fn(setState, getState, store);
-  closure_0 = tmp2;
-  closure_2 = tmp2;
-  return store;
 }
-
-export const createStore = (fn) => {
-  if (fn) {
-    const _Set = Set;
-    const set = new Set();
-    function setState(fn, arg1) {
-      let tmp = fn;
-      if (typeof fn === "function") {
-        tmp = fn(merged);
-      }
-      if (!Object.is(tmp, merged)) {
-        let tmp2 = arg1;
-        if (null == arg1) {
-          let tmp5 = typeof tmp !== "object";
-          if (typeof tmp === "object") {
-            tmp5 = null === tmp;
-          }
-          tmp2 = tmp5;
-        }
-        merged = tmp;
-        if (!tmp2) {
-          const _Object = Object;
-          merged = Object.assign({}, merged, tmp);
-        }
-        const item = set.forEach((fn) => fn(closure_0, merged));
-      }
-    }
-    function getState() {
-      return closure_0;
-    }
-    const store = {
-      setState,
-      getState,
-      getInitialState() {
-          return closure_2;
-        },
-      subscribe(arg0) {
-          closure_0 = arg0;
-          set.add(arg0);
-          return () => set.delete(closure_0);
-        }
-    };
-    const tmp7 = fn(setState, getState, store);
-    closure_0 = tmp7;
-    closure_2 = tmp7;
-    let tmp = store;
-  } else {
-    tmp = createStoreImpl;
-  }
-  return tmp;
-};
+let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
+if (!prop) {
+  prop = [];
+}
+globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
+const obj = { data: { conjunction: { long: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" }, narrow: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" }, short: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0} und {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" }, narrow: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" }, short: { end: "{0} oder {1}", middle: "{0}, {1}", pair: "{0} oder {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} und {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "de" };
+prop.push(obj);

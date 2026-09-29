@@ -1,191 +1,202 @@
 // Module ID: 9275
 // Function ID: 9276
-// Dependencies: [41, 42, 93, 95, 98, 9270, 9276]
+// Dependencies: [9249]
 
 // Module 9275
-import _asyncLoop from "_asyncLoop" /* 9270 */;
-import _mod9276 from "module_9276" /* 9276 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod9249 from "module_9249" /* 9249 */;
 
-let SHA224 = require;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
+const self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (self2) {
+  let __setModuleDefault = self;
+  if (self) {
+    __setModuleDefault = self.__setModuleDefault;
+  }
+  if (__setModuleDefault) {
+    let fn = self;
+    if (self) {
+      fn = self.__importStar;
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
+    if (!fn) {
+      fn = (__esModule) => {
+        if (__esModule) {
+          if (__esModule.__esModule) {
+            return __esModule;
+          }
+        }
+        const obj = {};
+        if (null != __esModule) {
+          for (const key10009 in arg0) {
+            let tmp9 = "default" !== key10009;
+            if (!tmp9) {
+              if (!tmp9) {
+                continue;
+              } else {
+                let tmp6 = self2(obj, arg0, key10009);
+                continue;
+              }
+              continue;
+            } else {
+              let _Object = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              let call = hasOwnProperty.call;
+              if (typeof call === "unknown") {
+                let hasOwnPropertyResult = hasOwnProperty(key10009);
+              } else {
+                hasOwnPropertyResult = call(arg0, key10009);
+              }
+            }
+          }
+        }
+        __setModuleDefault(obj, __esModule);
+        return obj;
+      };
+    }
+    const _Object3 = Object;
+    exports.default = function default_1() {
+      if (typeof error === "function") {
+        const obj = { localeError: null };
+        const obj2 = { string: { unit: "stafi", verb: "a\u00F0 hafa" }, file: { unit: "b\u00E6ti", verb: "a\u00F0 hafa" }, array: { unit: "hluti", verb: "a\u00F0 hafa" }, set: { unit: "hluti", verb: "a\u00F0 hafa" } };
+        closure_1 = { regex: "gildi", email: "netfang", url: "vefsl\u00F3\u00F0", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dagsetning og t\u00EDmi", date: "ISO dagsetning", time: "ISO t\u00EDmi", duration: "ISO t\u00EDmalengd", ipv4: "IPv4 address", ipv6: "IPv6 address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded strengur", base64url: "base64url-encoded strengur", json_string: "JSON strengur", e164: "E.164 t\u00F6lugildi", jwt: "JWT", template_literal: "gildi" };
+        closure_2 = { nan: "NaN", number: "n\u00FAmer", array: "fylki" };
+        obj.localeError = (code) => {
+          switch (code.code) {
+            case "invalid_type":
+              let expected = closure_2[code.expected];
+              if (expected == null) {
+                expected = code.expected;
+              }
+              const parsedTypeResult = closure_2.parsedType(code.input);
+              let tmp48 = closure_2[parsedTypeResult];
+              if (tmp48 == null) {
+                tmp48 = parsedTypeResult;
+              }
+              if (obj.test(code.expected)) {
+                const _HermesInternal17 = HermesInternal;
+                let combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp48 + " \u00FEar sem \u00E1 a\u00F0 vera instanceof " + code.expected;
+              } else {
+                const _HermesInternal16 = HermesInternal;
+                combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp48 + " \u00FEar sem \u00E1 a\u00F0 vera " + expected;
+              }
+              return combined;
+            case "invalid_value":
+              if (1 === code.values.length) {
+                const _HermesInternal15 = HermesInternal;
+                let combined1 = "Rangt gildi: gert r\u00E1\u00F0 fyrir " + closure_2.stringifyPrimitive(code.values[0]);
+              } else {
+                const _HermesInternal14 = HermesInternal;
+                combined1 = "\u00D3gilt val: m\u00E1 vera eitt af eftirfarandi " + closure_2.joinValues(code.values, "|");
+              }
+              return combined1;
+            case "too_big":
+              let str24 = "<";
+              if (code.inclusive) {
+                str24 = "<=";
+              }
+              let tmp27 = obj2[code.origin];
+              if (tmp27 == null) {
+                tmp27 = null;
+              }
+              let str25 = code.origin;
+              if (tmp27) {
+                if (str25 == null) {
+                  str25 = "gildi";
+                }
+                const str1 = code.maximum.toString();
+                let str31 = tmp27.unit;
+                if (str31 == null) {
+                  str31 = "hluti";
+                }
+                const _HermesInternal13 = HermesInternal;
+                let combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + str25 + " hafi " + str24 + str1 + " " + str31;
+              } else {
+                let str26 = str25;
+                if (str25 == null) {
+                  str26 = "gildi";
+                }
+                const _HermesInternal12 = HermesInternal;
+                combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + str26 + " s\u00E9 " + str24 + code.maximum.toString();
+              }
+              return combined2;
+            case "too_small":
+              let str18 = ">";
+              if (code.inclusive) {
+                str18 = ">=";
+              }
+              let tmp15 = obj2[code.origin];
+              if (tmp15 == null) {
+                tmp15 = null;
+              }
+              ({ origin, minimum } = code);
+              const str45 = minimum.toString();
+              if (tmp15) {
+                const _HermesInternal11 = HermesInternal;
+                let combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " hafi " + str18 + str45 + " " + tmp15.unit;
+              } else {
+                const _HermesInternal10 = HermesInternal;
+                combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " s\u00E9 " + str18 + str45;
+              }
+              return combined3;
+            case "invalid_format":
+              if ("starts_with" === code.format) {
+                const _HermesInternal9 = HermesInternal;
+                let combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 byrja \u00E1 \"" + code.prefix + "\"";
+              } else if ("ends_with" === code.format) {
+                const _HermesInternal8 = HermesInternal;
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 enda \u00E1 \"" + code.suffix + "\"";
+              } else if ("includes" === code.format) {
+                const _HermesInternal7 = HermesInternal;
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 innihalda \"" + code.includes + "\"";
+              } else if ("regex" === code.format) {
+                const _HermesInternal6 = HermesInternal;
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 fylgja mynstri " + code.pattern;
+              } else {
+                let format = closure_1[code.format];
+                if (format == null) {
+                  format = code.format;
+                }
+                const _HermesInternal5 = HermesInternal;
+                combined4 = "Rangt " + format;
+              }
+              return combined4;
+            case "not_multiple_of":
+              const _HermesInternal4 = HermesInternal;
+              return "R\u00F6ng tala: ver\u00F0ur a\u00F0 vera margfeldi af " + code.divisor;
+            case "unrecognized_keys":
+              let str3 = "ur lykill";
+              if (code.keys.length > 1) {
+                str3 = "ir lyklar";
+              }
+              const _HermesInternal3 = HermesInternal;
+              return "\u00D3\u00FEekkt " + str3 + ": " + closure_2.joinValues(code.keys, ", ");
+            case "invalid_key":
+              const _HermesInternal2 = HermesInternal;
+              return "Rangur lykill \u00ED " + code.origin;
+            case "invalid_union":
+              return "Rangt gildi";
+            case "invalid_element":
+              const _HermesInternal = HermesInternal;
+              return "Rangt gildi \u00ED " + code.origin;
+            default:
+              return "Rangt gildi";
+          }
+        };
+        return obj;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
     };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const uint32Array = new Uint32Array([1116352408, 1899447441, 3049323471, 3921009573, 961987163, 1508970993, 2453635748, 2870763221, 3624381080, 310598401, 607225278, 1426881987, 1925078388, 2162078206, 2614888103, 3248222580, 3835390401, 4022224774, 264347078, 604807628, 770255983, 1249150122, 1555081692, 1996064986, 2554220882, 2821834349, 2952996808, 3210313671, 3336571891, 3584528711, 113926993, 338241895, 666307205, 773529912, 1294757372, 1396182291, 1695183700, 1986661051, 2177026350, 2456956037, 2730485921, 2820302411, 3259730800, 3345764771, 3516065817, 3600352804, 4094571909, 275423344, 430227734, 506948616, 659060556, 883997877, 958139571, 1322822218, 1537002063, 1747873779, 1955562222, 2024104815, 2227730452, 2361852424, 2428436474, 2756734187, 3204031479, 3329325298]);
-const uint32Array1 = new Uint32Array([1779033703, 3144134277, 1013904242, 2773480762, 1359893119, 2600822924, 528734635, 1541459225]);
-const uint32Array2 = new Uint32Array(64);
-class SHA256 {
-  constructor() {
-    self = this;
-    tmp = c2(this, SHA224);
-    items = [64, 32, 8];
-    items[3] = false;
-    tmp2 = closure_4;
-    obj = closure_4(SHA224);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.A = closure_7[0] | 0;
-    tmp3Result.B = closure_7[1] | 0;
-    tmp3Result.C = closure_7[2] | 0;
-    tmp3Result.D = closure_7[3] | 0;
-    tmp3Result.E = closure_7[4] | 0;
-    tmp3Result.F = closure_7[5] | 0;
-    tmp3Result.G = closure_7[6] | 0;
-    tmp3Result.H = closure_7[7] | 0;
-    return tmp3Result;
-  }
-}
-SHA224 = SHA256;
-_inherits(SHA256, _mod9276.HashMD);
-const entry = {
-  key: "get",
-  value: function get() {
-    const items = [, , , , , , , ];
-    ({ A: arr[0], B: arr[1], C: arr[2], D: arr[3], E: arr[4], F: arr[5], G: arr[6], H: arr[7] } = this);
-    return items;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "set",
-    value: function set(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
+    let closure_2 = fn(_mod9249);
+    function error() {
 
     }
-  },
-  {
-    key: "process",
-    value: function process(getUint32, sum) {
-      let num2;
-      let tmp22;
-      let tmp23;
-      let tmp24;
-      let tmp25;
-      let tmp26;
-      let tmp27;
-      let tmp28;
-      let tmp29;
-      let num = 0;
-      do {
-        uint32Array2[num] = getUint32.getUint32(sum, false);
-        num = num + 1;
-        sum = sum + 4;
-        num2 = 16;
-      } while (num < 16);
-      do {
-        let tmp4 = uint32Array2[num2 - 15];
-        let tmp5 = uint32Array2[num2 - 2];
-        let rotrResult = SHA224(9270).rotr(tmp4, 7);
-        let tmp9 = rotrResult ^ SHA224(9270).rotr(tmp4, 18) ^ tmp4 >>> 3;
-        let rotrResult1 = SHA224(9270).rotr(tmp5, 17);
-        uint32Array2[num2] = (rotrResult1 ^ SHA224(9270).rotr(tmp5, 19) ^ tmp5 >>> 10) + uint32Array2[num2 - 7] + tmp9 + uint32Array2[num2 - 16] | 0;
-        num2 = num2 + 1;
-      } while (num2 < 64);
-      const self = this;
-      ({ A, B, C, D, E, F, G, H } = this);
-      let num3 = 0;
-      do {
-        let rotrResult2 = SHA224(9270).rotr(E, 6);
-        let tmp14 = rotrResult2 ^ SHA224(9270).rotr(E, 11);
-        let sum1 = H + (tmp14 ^ SHA224(9270).rotr(E, 25));
-        let tmp18 = sum1 + SHA224(9276).Chi(E, F, G) + uint32Array[num3] + uint32Array2[num3] | 0;
-        let rotrResult3 = SHA224(9270).rotr(A, 2);
-        let tmp20 = rotrResult3 ^ SHA224(9270).rotr(A, 13);
-        let tmp21 = tmp20 ^ SHA224(9270).rotr(A, 22);
-        tmp22 = D + tmp18 | 0;
-        tmp23 = tmp18 + (tmp21 + SHA224(9276).Maj(A, B, C) | 0) | 0;
-        num3 = num3 + 1;
-        H = G;
-        tmp24 = G;
-        G = F;
-        tmp25 = F;
-        F = E;
-        tmp26 = E;
-        E = tmp22;
-        D = C;
-        tmp27 = C;
-        C = B;
-        tmp28 = B;
-        B = A;
-        tmp29 = A;
-        A = tmp23;
-      } while (num3 < 64);
-      const result = self.set(tmp23 + self.A | 0, tmp29 + self.B | 0, tmp28 + self.C | 0, tmp27 + self.D | 0, tmp22 + self.E | 0, tmp26 + self.F | 0, tmp25 + self.G | 0, tmp24 + self.H | 0);
-    }
-  },
-  {
-    key: "roundClean",
-    value: function roundClean() {
-      uint32Array2.fill(0);
-    }
-  },
-  {
-    key: "destroy",
-    value: function destroy() {
-      const result = this.set(0, 0, 0, 0, 0, 0, 0, 0);
-      const buffer = this.buffer;
-      buffer.fill(0);
-    }
+    module.exports = exports.default;
+  } else {
+    const _Object2 = Object;
   }
-];
-const _moduleResult = _createClass(SHA256, items);
-class SHA224 {
-  constructor() {
-    self = this;
-    tmp = c2(this, SHA224);
-    tmp2 = closure_4;
-    obj = closure_4(SHA224);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.A = -1056596264;
-    tmp3Result.B = 914150663;
-    tmp3Result.C = 812702999;
-    tmp3Result.D = -150054599;
-    tmp3Result.E = -4191439;
-    tmp3Result.F = 1750603025;
-    tmp3Result.G = 1694076839;
-    tmp3Result.H = -1090891868;
-    tmp3Result.outputLen = 28;
-    return tmp3Result;
-  }
+} else {
+  let _Object = Object;
 }
-_inherits(SHA224, _moduleResult);
-let closure_10 = _createClass(SHA224);
-
-export const SHA256 = _moduleResult;
-export const sha256 = _asyncLoop.wrapConstructor(() => new _moduleResult());
-export const sha224 = _asyncLoop.wrapConstructor(() => new closure_10());

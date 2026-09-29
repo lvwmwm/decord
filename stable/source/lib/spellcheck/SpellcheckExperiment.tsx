@@ -1,11 +1,11 @@
-// Module ID: 5644
-// Function ID: 5645
+// Module ID: 5812
+// Function ID: 5813
 // Name: SpellcheckExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: isElectronMultilangSpellcheckEnabled
 
-// Module 5644 (SpellcheckExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 5812 (SpellcheckExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-05-electron-multilang-spellcheck", defaultConfig: { enableElectronMultilangSpellcheck: false }, variations: null };

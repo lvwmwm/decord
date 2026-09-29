@@ -1,0 +1,32 @@
+// Module ID: 15975
+// Function ID: 15976
+// Name: CheckpointBackground
+// Dependencies: [17, 5013, 1074, 21, 4788, 5230, 15976, 2]
+// Exports: default
+
+// Module 15975 (CheckpointBackground)
+import _mod17 from "module_17" /* 17 */;
+import Constants from "Constants" /* 1074 */;
+import CheckpointConstants from "CheckpointConstants" /* 5013 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import _modDef15976 from "module_15976" /* 15976 */;
+import jsxProd from "jsxProd" /* 21 */;
+import createStyles from "createStyles" /* 4788 */;
+import size from "module_2" /* 2 */;
+
+const Image = _mod17.Image;
+const colors = CheckpointConstants.CHECKPOINT_BACKGROUND_GRADIENT;
+const VerticalGradient = Constants.VerticalGradient;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
+let closure_8 = createStyles.createStyles({ background: { position: "absolute", width: "100%", height: "100%" } });
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointBackground.tsx");
+
+export default function CheckpointBackground() {
+  const tmp = closure_8();
+  const obj = { children: null };
+  const items = [hasOwnProperty(LinearGradientDefault, { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background }), ];
+  const obj3 = { source: { uri: _modDef15976 }, style: tmp.background, resizeMode: "cover" };
+  items[1] = hasOwnProperty(Image, obj3);
+  obj.children = items;
+  return React5(timestampProducer, obj);
+};

@@ -1,21 +1,21 @@
-// Module ID: 14738
-// Function ID: 14739
+// Module ID: 14957
+// Function ID: 14958
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 1979, 5519, 21, 4636, 4868, 1114, 4603, 11956, 5665, 4788, 1176, 4632, 5523, 2]
+// Dependencies: [32, 19, 17, 2063, 5687, 21, 4788, 5019, 1115, 4755, 12105, 5833, 4940, 1177, 4784, 5691, 2]
 // Exports: default
 
-// Module 14738 (GuildSelectComponentActionSheet)
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 4868 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11956 */;
+// Module 14957 (GuildSelectComponentActionSheet)
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4755 */;
+import Text_Text from "Text/Text" /* 4784 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4940 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5019 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12105 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import SortedGuildStore from "SortedGuildStore" /* 5519 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SortedGuildStore from "SortedGuildStore" /* 5687 */;
 
 const require = globalThis.__r;
 
@@ -23,7 +23,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_10 = createStyles.createStyles({ guildIdentity: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/interaction_components/native/components/GuildSelectComponentActionSheet.tsx");
@@ -50,7 +50,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
   function submitSelection() {
     return require("ActionSheetActionCreators").hideActionSheet();
   }
-  const intl = tmp4(1114).intl;
+  const intl = tmp4(1115).intl;
   obj3.placeholder = intl.string(util.t["ZImm/x"]);
   callback = obj.useCallback((query) => {
     if (0 === query.length) {
@@ -60,7 +60,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
       let reduced = flattenedGuildIds.reduce((arr, item) => {
         guild = guild.getGuild(item);
         if (null != guild) {
-          const obj = { type: closure_1_0(4868).SelectOptionType.GUILD, value: null, label: null, guild: null };
+          const obj = { type: closure_1_0(5019).SelectOptionType.GUILD, value: null, label: null, guild: null };
           ({ id: obj.value, name: obj.label } = guild);
           obj.guild = guild;
           arr.push(obj);
@@ -72,7 +72,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
       let obj = require("AutocompleteUtils");
       reduced = require("AutocompleteUtils").queryGuilds(obj2).map((record) => {
         record = record.record;
-        return { type: closure_1_0(4868).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+        return { type: closure_1_0(5019).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
       });
       const queryGuildsResult = require("AutocompleteUtils").queryGuilds(obj2);
     }

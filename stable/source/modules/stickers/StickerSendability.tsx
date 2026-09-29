@@ -1,34 +1,34 @@
-// Module ID: 7440
-// Function ID: 7441
+// Module ID: 7611
+// Function ID: 7612
 // Name: StickerSendability
-// Dependencies: [2021, 5585, 1074, 4294, 4975, 4280, 2]
+// Dependencies: [2105, 5753, 1074, 4446, 5135, 4432, 2]
 // Exports: isSendableSticker
 
-// Module 7440 (StickerSendability)
-import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
-import StickersUtils from "StickersUtils" /* 4975 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import StickersPackStore from "StickersPackStore" /* 5585 */;
+// Module 7611 (StickerSendability)
+import PermissionUtilsAll from "PermissionUtils" /* 4432 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4446 */;
+import StickersUtils from "StickersUtils" /* 5135 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import StickersPackStore from "StickersPackStore" /* 5753 */;
 
 require = fn;
-function getStickerSendability(stickerById, currentUser, channel) {
+function getStickerSendability(item10030, currentUser, channel) {
   if (null == currentUser) {
     return obj.NONSENDABLE;
   } else {
     const result = PremiumUtilsDefault.canUseCustomStickersEverywhere(currentUser);
-    if (obj5.isStandardSticker(stickerById)) {
-      if (null == StickersPackStore.getStickerPack(stickerById.pack_id)) {
+    if (obj5.isStandardSticker(item10030)) {
+      if (null == StickersPackStore.getStickerPack(item10030.pack_id)) {
         let SENDABLE2 = obj.NONSENDABLE;
       } else {
         SENDABLE2 = obj.SENDABLE;
       }
     } else {
-      if (tmp22Result.isGuildSticker(stickerById)) {
+      if (tmp22Result.isGuildSticker(item10030)) {
         if (null != channel) {
-          if (null == GuildMemberStore.getSelfMember(stickerById.guild_id)) {
+          if (null == GuildMemberStore.getSelfMember(item10030.guild_id)) {
             let SENDABLE_WITH_BOOSTED_GUILD = obj.NONSENDABLE;
-          } else if (stickerById.available) {
+          } else if (item10030.available) {
             if (null != channel.guild_id) {
               if ("" !== channel.guild_id) {
                 const SENDABLE = obj.SENDABLE;

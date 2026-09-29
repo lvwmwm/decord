@@ -1,9 +1,9 @@
 // Module ID: 11464
 // Function ID: 11465
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11464
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following", width: 400, height: 96, scales: [1, 2, 3], hash: "6d4af89335f89fb4d2742f6a0658e9cc", name: "channel-following-backdrop-dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 61, height: 61, scales: [3], hash: "a162bb51b9ed292f4f10e545ed35e2e3", name: "asset_platinum_badge_small", type: "png" });

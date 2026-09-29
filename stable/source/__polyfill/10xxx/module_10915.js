@@ -1,103 +1,89 @@
 // Module ID: 10915
 // Function ID: 10916
-// Dependencies: [19, 1636]
-// Exports: useVisibleRanges
+// Dependencies: [41, 42, 93, 95, 98, 10728, 10916, 10755, 10735]
 
 // Module 10915
-import _mod19 from "module_19" /* 19 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10728 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10735 */;
+import _mod10916 from "module_10916" /* 10916 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const useRef = _mod19.useRef;
-let closure_3 = { code: "function pnpm_useVisibleRangesTsx1(){const{windowSize,translation,viewSize,total,loop,isArraysEqual,cachedRanges}=this.__closure;var _cachedRanges$current,_cachedRanges$current2,_cachedRanges$current3,_cachedRanges$current4;const positiveCount=Math.round(windowSize/2);const negativeCount=windowSize-positiveCount;let currentIndex=Math.round(-translation.value/viewSize);currentIndex=currentIndex<0?currentIndex%total+total:currentIndex;let newRanges;if(!loop){newRanges={negativeRange:[0+currentIndex-(windowSize-1),0+currentIndex],positiveRange:[0+currentIndex,currentIndex+(windowSize-1)]};}else{const negativeRange=[(currentIndex-negativeCount+total)%total,(currentIndex-1+total)%total];const positiveRange=[(currentIndex+total)%total,(currentIndex+positiveCount+total)%total];if(negativeRange[0]<total&&negativeRange[0]>negativeRange[1]){negativeRange[1]=total-1;positiveRange[0]=0;}if(positiveRange[0]>positiveRange[1]){negativeRange[1]=total-1;positiveRange[0]=0;}newRanges={negativeRange:negativeRange,positiveRange:positiveRange};}if(isArraysEqual((_cachedRanges$current=(_cachedRanges$current2=cachedRanges.current)===null||_cachedRanges$current2===void 0?void 0:_cachedRanges$current2.negativeRange)!==null&&_cachedRanges$current!==void 0?_cachedRanges$current:[],newRanges.negativeRange)&&isArraysEqual((_cachedRanges$current3=(_cachedRanges$current4=cachedRanges.current)===null||_cachedRanges$current4===void 0?void 0:_cachedRanges$current4.positiveRange)!==null&&_cachedRanges$current3!==void 0?_cachedRanges$current3:[],newRanges.positiveRange))return cachedRanges.current;cachedRanges.current=newRanges;return cachedRanges.current;}" };
-function isArraysEqual(arr, arg1) {
-  closure_0 = arg1;
-  return arr.length === arg1.length && arr.every((item, index) => item === positiveRange1[index]);
+const SVWeekdayParser = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
 }
-isArraysEqual.__closure = {};
-isArraysEqual.__workletHash = 6222082561981;
-isArraysEqual.__initData = { code: "function isArraysEqual_Pnpm_useVisibleRangesTsx2(a,b){if(a.length!==b.length)return false;return a.every(function(value,index){return value===b[index];});}" };
-
-export const useVisibleRanges = function useVisibleRanges(total) {
-  total = total.total;
-  let num = 0;
-  if (undefined !== total) {
-    num = total;
-  }
-  const viewSize = total.viewSize;
-  const translation = total.translation;
-  ({ windowSize, loop } = total);
-  if (windowSize == null) {
-    windowSize = num;
-  }
-  const tmp = translation(null);
-  const fn = function s() {
-    const rounded = Math.round(windowSize / 2);
-    const diff = windowSize - rounded;
-    const rounded1 = Math.round(-translation.value / viewSize);
-    let sum = rounded1;
-    if (rounded1 < 0) {
-      sum = rounded1 % num + num;
-    }
-    if (loop) {
-      const items = [(sum - diff + num) % num, (sum - 1 + num) % num];
-      const items1 = [(sum + num) % num, (sum + rounded + num) % num];
-      if (tmp8) {
-        items[1] = tmp7 - 1;
-        items1[0] = 0;
-      }
-      if (items1[0] > items1[1]) {
-        items[1] = tmp7 - 1;
-        items1[0] = 0;
-      }
-      const obj2 = { negativeRange: items, positiveRange: items1 };
-      let obj = obj2;
-      tmp8 = items[0] < num && items[0] > items[1];
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:p\u00E5\\s*?)?(?:(f\u00F6rra|senaste|n\u00E4sta|kommande)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10916.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(f\u00F6rra|senaste|n\u00E4sta|kommande)\\s*vecka)?(?=\\W|$)", "i");
+class SVWeekdayParser {
+  constructor() {
+    self = this;
+    tmp = c2(this, SVWeekdayParser);
+    tmp2 = closure_4;
+    obj = closure_4(SVWeekdayParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      obj = { negativeRange: null, positiveRange: null };
-      const items2 = [sum - (tmp - 1), sum];
-      obj.negativeRange = items2;
-      const items3 = [sum, sum + (tmp - 1)];
-      obj.positiveRange = items3;
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    const current = ref.current;
-    let negativeRange;
-    if (current != null) {
-      negativeRange = current.negativeRange;
-    }
-    if (negativeRange == null) {
-      negativeRange = [];
-    }
-    const negativeRange1 = obj.negativeRange;
-    if (typeof isArraysEqual === "function") {
-      let positiveRange1 = negativeRange1;
-      let tmp11 = negativeRange.length === negativeRange1.length && negativeRange.every((item, index) => item === positiveRange1[index]);
-      if (tmp11) {
-        const current2 = tmp10.current;
-        let positiveRange;
-        if (current2 != null) {
-          positiveRange = current2.positiveRange;
-        }
-        if (positiveRange == null) {
-          positiveRange = [];
-        }
-        positiveRange1 = obj.positiveRange;
-        if (typeof tmp9 === "function") {
-          tmp11 = positiveRange.length === positiveRange1.length && positiveRange.every((item, index) => item === positiveRange1[index]);
-          const tmp12 = positiveRange.length === positiveRange1.length && positiveRange.every((item, index) => item === positiveRange1[index]);
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      }
-      if (!tmp11) {
-        tmp10.current = obj;
-      }
-      return tmp10.current;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  };
-  fn.__closure = { windowSize, translation, viewSize, total: num, loop, isArraysEqual: windowSize, cachedRanges: tmp };
-  fn.__workletHash = 627759706032;
-  fn.__initData = loop;
-  let items = [loop, num, windowSize, translation];
-  return num(viewSize[1]).useDerivedValue(fn, items);
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(SVWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
 };
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const formatted = arg1[2].toLowerCase();
+      let str2 = arg1[1];
+      if (!str2) {
+        str2 = arg1[3];
+      }
+      if (!str2) {
+        str2 = "";
+      }
+      const str3 = str2.toLowerCase();
+      let str4 = "last";
+      if (!str3.match(/förra|senaste/)) {
+        str4 = null;
+        if (str3.match(/nästa|kommande/)) {
+          str4 = "next";
+        }
+      }
+      return SVWeekdayParser(10755).createParsingComponentsAtWeekday(reference.reference, SVWeekdayParser(10916).WEEKDAY_DICTIONARY[formatted], str4);
+    }
+  }
+];
+
+export default _createClass(SVWeekdayParser, items);

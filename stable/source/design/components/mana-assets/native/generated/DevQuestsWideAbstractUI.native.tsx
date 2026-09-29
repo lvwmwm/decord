@@ -1,13 +1,13 @@
-// Module ID: 5998
-// Function ID: 5999
+// Module ID: 6168
+// Function ID: 6169
 // Name: DevQuestsWideAbstractUI
-// Dependencies: [21, 5668, 5999, 2]
+// Dependencies: [21, 5836, 6169, 2]
 // Exports: DevQuestsWideAbstractUI
 
-// Module 5998 (DevQuestsWideAbstractUI)
+// Module 6168 (DevQuestsWideAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef5999 from "module_5999" /* 5999 */;
+import FastImageDefault from "FastImage" /* 5836 */;
+import _modDef6169 from "module_6169" /* 6169 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const DevQuestsWideAbstractUI = function DevQuestsWideAbstractUI(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5999 };
+  const obj2 = { uri: _modDef6169 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

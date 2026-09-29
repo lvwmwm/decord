@@ -1,29 +1,29 @@
-// Module ID: 11834
-// Function ID: 11835
+// Module ID: 11983
+// Function ID: 11984
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1074, 21, 4636, 576, 1363, 9433, 8724, 1114, 5204, 8883, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4788, 576, 1364, 9450, 8911, 1115, 5371, 9069, 2]
 // Exports: default
 
-// Module 11834 (ShareChatInput)
+// Module 11983 (ShareChatInput)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Pressables from "Pressables" /* 5204 */;
-import ReactionIcon from "ReactionIcon" /* 8883 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9433 */;
+import util from "util" /* 1115 */;
+import Pressables from "Pressables" /* 5371 */;
+import ReactionIcon from "ReactionIcon" /* 9069 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9450 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const FormInputDefault = tmp2(8724);
+const FormInputDefault = tmp2(8911);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: { flex: 1, flexDirection: "row", backgroundColor: nativeDefault.colors.SHARE_CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, paddingHorizontal: nativeDefault.space.PX_12 }, chatInput: null, chatText: null, inputPlaceholder: null, emojiButton: null, focused: null };
 let obj3 = { flex: 1, flexDirection: "row", backgroundColor: nativeDefault.colors.SHARE_CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, paddingHorizontal: nativeDefault.space.PX_12 };
 obj2.chatInput = { flex: 1, paddingVertical: 0, paddingHorizontal: nativeDefault.space.PX_4, maxHeight: 80 };
 const obj5 = { fontSize: 16, lineHeight: 20, fontFamily: fn(1074).Fonts.PRIMARY_NORMAL, color: nativeDefault.colors.TEXT_STRONG, paddingTop: null, paddingBottom: null };
-const PlatformUtils = fn(1363);
+const PlatformUtils = fn(1364);
 let num = 2;
 if (PlatformUtils.isAndroid()) {
   num = 0;

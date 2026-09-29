@@ -1,9 +1,9 @@
-// Module ID: 17143
-// Function ID: 17144
+// Module ID: 17500
+// Function ID: 17501
 // Name: UnenrolledActivityQuestStore
 // Dependencies: [11, 504, 573, 2]
 
-// Module 17143 (UnenrolledActivityQuestStore)
+// Module 17500 (UnenrolledActivityQuestStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

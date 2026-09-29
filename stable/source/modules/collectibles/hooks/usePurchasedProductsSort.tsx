@@ -1,12 +1,12 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 15348
+// Function ID: 15349
 // Name: usePurchasedProductsSort
-// Dependencies: [19, 7660, 1889, 7656, 563, 2]
+// Dependencies: [19, 7831, 1973, 7827, 563, 2]
 // Exports: usePurchasedProductsSort
 
-// Module 15159 (usePurchasedProductsSort)
+// Module 15348 (usePurchasedProductsSort)
 import _mod19 from "module_19" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7660 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7831 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

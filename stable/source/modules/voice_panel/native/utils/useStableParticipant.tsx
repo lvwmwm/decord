@@ -1,18 +1,18 @@
-// Module ID: 17215
-// Function ID: 17216
+// Module ID: 17573
+// Function ID: 17574
 // Name: useStableParticipant
-// Dependencies: [4652, 502, 1908, 1371, 4657, 558, 504, 4788, 8333, 9752, 2]
+// Dependencies: [4804, 502, 1992, 1372, 4809, 558, 504, 4940, 8517, 9742, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 17215 (useStableParticipant)
+// Module 17573 (useStableParticipant)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import NicknameUtils from "NicknameUtils" /* 4788 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8333 */;
-import participantHasVideoDefault from "participantHasVideo" /* 9752 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
+import NicknameUtils from "NicknameUtils" /* 4940 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8517 */;
+import participantHasVideoDefault from "participantHasVideo" /* 9742 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4804 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import UserStore from "UserStore" /* 1371 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -28,7 +28,7 @@ function areStableParticipantsEqual(arg0, arg1) {
   }
   return tmp;
 }
-const ParticipantTypes = fn(4657).ParticipantTypes;
+const ParticipantTypes = fn(4809).ParticipantTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/utils/useStableParticipant.tsx");
 
@@ -44,7 +44,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
       if (null == participant) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
-          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "flex", ringing: null, hasVideo: 0.959, isSelf: 0.987 };
+          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "flex", ringing: null, hasVideo: 0, isSelf: 1 };
           const id = AuthenticationStore.getId();
           obj3.userNick = NicknameUtils.getName(closure_2, tmp3, user);
           obj3.userAvatarDecoration = useAvatarDecoration.getAvatarDecoration(user, closure_2);

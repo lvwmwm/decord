@@ -1,125 +1,33 @@
 // Module ID: 4008
 // Function ID: 4009
-// Dependencies: [3884, 3725, 3729, 3726, 3730]
+// Dependencies: []
 // Exports: default
 
 // Module 4008
-import _mod3730 from "module_3730" /* 3730 */;
-import startOfWeek_mod from "startOfWeek" /* 3884 */;
-import _typeof_mod from "module_3725" /* 3725 */;
-import module_3729_mod from "module_3729" /* 3729 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+let closure_0 = { lessThanXSeconds: { one: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 1 \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35", other: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 {{count}} \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35" }, xSeconds: { one: "1 \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35", other: "{{count}} \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35" }, halfAMinute: "\u0E04\u0E23\u0E36\u0E48\u0E07\u0E19\u0E32\u0E17\u0E35", lessThanXMinutes: { one: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 1 \u0E19\u0E32\u0E17\u0E35", other: "\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E27\u0E48\u0E32 {{count}} \u0E19\u0E32\u0E17\u0E35" }, xMinutes: { one: "1 \u0E19\u0E32\u0E17\u0E35", other: "{{count}} \u0E19\u0E32\u0E17\u0E35" }, aboutXHours: { one: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 1 \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07", other: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 {{count}} \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07" }, xHours: { one: "1 \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07", other: "{{count}} \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07" }, xDays: { one: "1 \u0E27\u0E31\u0E19", other: "{{count}} \u0E27\u0E31\u0E19" }, aboutXWeeks: { one: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 1 \u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C", other: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 {{count}} \u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C" }, xWeeks: { one: "1 \u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C", other: "{{count}} \u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C" }, aboutXMonths: { one: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 1 \u0E40\u0E14\u0E37\u0E2D\u0E19", other: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 {{count}} \u0E40\u0E14\u0E37\u0E2D\u0E19" }, xMonths: { one: "1 \u0E40\u0E14\u0E37\u0E2D\u0E19", other: "{{count}} \u0E40\u0E14\u0E37\u0E2D\u0E19" }, aboutXYears: { one: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 1 \u0E1B\u0E35", other: "\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13 {{count}} \u0E1B\u0E35" }, xYears: { one: "1 \u0E1B\u0E35", other: "{{count}} \u0E1B\u0E35" }, overXYears: { one: "\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32 1 \u0E1B\u0E35", other: "\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32 {{count}} \u0E1B\u0E35" }, almostXYears: { one: "\u0E40\u0E01\u0E37\u0E2D\u0E1A 1 \u0E1B\u0E35", other: "\u0E40\u0E01\u0E37\u0E2D\u0E1A {{count}} \u0E1B\u0E35" } };
 
-let startOfWeek = startOfWeek_mod;
-if (!startOfWeek) {
-  const obj = { default: startOfWeek };
-  let tmp3 = obj;
-} else {
-  tmp3 = startOfWeek;
-}
-startOfWeek = tmp3;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj2 = { default: _typeof };
-  let tmp5 = obj2;
-} else {
-  tmp5 = _typeof;
-}
-_typeof = tmp5;
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj3 = { default: module_3729 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3729;
-}
-module_3729 = tmp7;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
-  let tmp9 = obj4;
-} else {
-  tmp9 = requiredArgs;
-}
-requiredArgs = tmp9;
-
-export default function getWeekYear(arg0, firstWeekContainsDate) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const fullYear = defaultResult1.getFullYear();
-  const defaultOptions = _mod3730.getDefaultOptions();
-  let prop;
-  if (null != firstWeekContainsDate) {
-    prop = firstWeekContainsDate.firstWeekContainsDate;
-  }
-  if (null === prop) {
-    let prop1;
-    if (null != firstWeekContainsDate) {
-      locale = firstWeekContainsDate.locale;
-      if (null !== locale) {
-        if (undefined !== locale) {
-          const options = locale.options;
-          if (null !== options) {
-            if (undefined !== options) {
-              prop1 = options.firstWeekContainsDate;
-            }
-          }
+export default function formatDistance(arg0, arg1, addSuffix) {
+  if (typeof closure_0[arg0] === "string") {
+    let tmp6 = tmp;
+    if (null != addSuffix) {
+      tmp6 = tmp;
+      if (addSuffix.addSuffix) {
+        if (!addSuffix.comparison) {
+          const text = `${tmp}ที่ผ่านมา`;
+        }
+        if ("halfAMinute" === arg0) {
+          let text1 = `ใน${tmp}`;
+        } else {
+          text1 = `ใน ${tmp}`;
         }
       }
     }
-    prop = prop1;
+    return tmp6;
+  } else if (1 === arg1) {
+    let one = tmp.one;
+  } else {
+    const _String = String;
+    one = tmp.other.replace("{{count}}", String(arg1));
   }
-  if (null === prop) {
-    prop = defaultOptions.firstWeekContainsDate;
-  }
-  if (null === prop) {
-    const locale2 = defaultOptions.locale;
-    let prop2;
-    if (null !== locale2) {
-      if (undefined !== locale2) {
-        const options2 = locale2.options;
-        if (null !== options2) {
-          if (undefined !== options2) {
-            prop2 = options2.firstWeekContainsDate;
-          }
-        }
-      }
-    }
-    prop = prop2;
-  }
-  let num = 1;
-  if (null !== prop) {
-    num = 1;
-    if (undefined !== prop) {
-      num = prop;
-    }
-  }
-  const defaultResult2 = module_3729.default(num);
-  if (defaultResult2 >= 1) {
-    if (defaultResult2 <= 7) {
-      const _Date = Date;
-      const date = new Date(0);
-      date.setFullYear(fullYear + 1, 0, defaultResult2);
-      date.setHours(0, 0, 0, 0);
-      const _Date2 = Date;
-      const date1 = new Date(0);
-      date1.setFullYear(fullYear, 0, defaultResult2);
-      date1.setHours(0, 0, 0, 0);
-      const defaultResult3 = startOfWeek.default(date, firstWeekContainsDate);
-      const time = defaultResult1.getTime();
-      if (time >= defaultResult3.getTime()) {
-        let sum = fullYear + 1;
-      } else {
-        const time1 = defaultResult1.getTime();
-        sum = fullYear;
-        if (time1 < defaultResult4.getTime()) {
-          sum = fullYear - 1;
-        }
-      }
-      return sum;
-    }
-  }
-  const rangeError = new RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  throw rangeError;
 };
 export default exports.default;

@@ -1,16 +1,16 @@
 // Module ID: 5070
 // Function ID: 5071
-// Dependencies: [5071]
+// Dependencies: [1307]
 
 // Module 5070
-import _modDef5071 from "module_5071" /* 5071 */;
+import _mod1307 from "module_1307" /* 1307 */;
 
-const require = globalThis.__r;
 
-for (const key10016 in require("module_5071")) {
-  arg5[key10016] = require("module_5071")[key10016];
-  continue;
-}
-
-export default _modDef5071;
-export const LinearGradient = _modDef5071;
+export default function mod(arg0, arg1) {
+  const result = arg0 % arg1;
+  let sum = result;
+  if (result < 0) {
+    sum = result + arg1;
+  }
+  return _mod1307(sum);
+};

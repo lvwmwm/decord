@@ -1,17 +1,17 @@
 // Module ID: 7135
 // Function ID: 7136
 // Dependencies: []
-// Exports: findLastIndex
 
 // Module 7135
 
-export const findLastIndex = function findLastIndex(arg0, fn) {
-  let diff = arg0.length - 1;
-  if (0 <= diff) {
-    while (!fn(arg0[diff])) {
-      diff = diff - 1;
-    }
-    return diff;
+export default function _arrayLikeToArray(arg0, arg1) {
+  let length = arg1;
+  if (tmp) {
+    length = arg0.length;
   }
-  return -1;
+  const ArrayResult = Array(length);
+  for (let num = 0; num < length; num = num + 1) {
+    ArrayResult[num] = arg0[num];
+  }
+  return ArrayResult;
 };

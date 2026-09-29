@@ -1,33 +1,29 @@
 // Module ID: 3906
 // Function ID: 3907
-// Dependencies: [3889, 3726]
+// Dependencies: []
 // Exports: default
 
 // Module 3906
-import startOfDay_mod from "startOfDay" /* 3889 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+let closure_0 = {
+  lastWeek(getUTCDay) {
+    let str = "'\u03C4\u03B7\u03BD \u03C0\u03C1\u03BF\u03B7\u03B3\u03BF\u03CD\u03BC\u03B5\u03BD\u03B7' eeee '\u03C3\u03C4\u03B9\u03C2' p";
+    if (6 === getUTCDay.getUTCDay()) {
+      str = "'\u03C4\u03BF \u03C0\u03C1\u03BF\u03B7\u03B3\u03BF\u03CD\u03BC\u03B5\u03BD\u03BF' eeee '\u03C3\u03C4\u03B9\u03C2' p";
+    }
+    return str;
+  },
+  yesterday: "'\u03C7\u03B8\u03B5\u03C2 \u03C3\u03C4\u03B9\u03C2' p",
+  today: "'\u03C3\u03AE\u03BC\u03B5\u03C1\u03B1 \u03C3\u03C4\u03B9\u03C2' p",
+  tomorrow: "'\u03B1\u03CD\u03C1\u03B9\u03BF \u03C3\u03C4\u03B9\u03C2' p",
+  nextWeek: "eeee '\u03C3\u03C4\u03B9\u03C2' p",
+  other: "P"
+};
 
-let startOfDay = startOfDay_mod;
-if (!startOfDay) {
-  const obj = { default: startOfDay };
-  let tmp3 = obj;
-} else {
-  tmp3 = startOfDay;
-}
-startOfDay = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
-  let tmp5 = obj2;
-} else {
-  tmp5 = requiredArgs;
-}
-requiredArgs = tmp5;
-
-export default function isSameDay(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfDay.default(arg0);
-  const time = defaultResult1.getTime();
-  return time === startOfDay.default(arg1).getTime();
+export default function formatRelative(arg0, arg1) {
+  let tmpResult = tmp;
+  if (typeof closure_0[arg0] === "function") {
+    tmpResult = tmp(arg1);
+  }
+  return tmpResult;
 };
 export default exports.default;

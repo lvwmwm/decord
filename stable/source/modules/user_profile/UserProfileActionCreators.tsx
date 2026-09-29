@@ -1,22 +1,22 @@
-// Module ID: 8284
-// Function ID: 8285
+// Module ID: 8468
+// Function ID: 8469
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1371, 1074, 1373, 1109, 4488, 1114, 1240, 8285, 7784, 573, 7088, 1270, 5250, 4537, 2]
+// Dependencies: [5, 1372, 1074, 1374, 1110, 4639, 1115, 1241, 8469, 7950, 573, 7262, 1271, 5418, 4688, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8284 (UserProfileActionCreators)
+// Module 8468 (UserProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import shared from "shared" /* 4488 */;
-import InlineUploaderDefault from "InlineUploader" /* 5250 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7088 */;
-import MessageParserDefault from "MessageParser" /* 7784 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8285 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import shared from "shared" /* 4639 */;
+import InlineUploaderDefault from "InlineUploader" /* 5418 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7262 */;
+import MessageParserDefault from "MessageParser" /* 7950 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8469 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 let closure_11 = async function _saveProfileChanges(arg0, value) {
@@ -143,7 +143,7 @@ let closure_11 = async function _saveProfileChanges(arg0, value) {
 };
 const Constants = fn(1074);
 ({ ComponentActions: hasOwnProperty, AnalyticEvents: metroRequire, Endpoints: closure_7, ME: closure_8 } = Constants);
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ AnalyticsPremiumFeatureTiers: closure_9, AnalyticsPremiumFeatureNames: c10 } = PremiumConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileActionCreators.tsx");

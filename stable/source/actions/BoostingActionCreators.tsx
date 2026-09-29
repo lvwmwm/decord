@@ -1,16 +1,16 @@
-// Module ID: 4534
-// Function ID: 4535
+// Module ID: 4685
+// Function ID: 4686
 // Name: BoostingActionCreators
-// Dependencies: [5, 4535, 4536, 4300, 1074, 1270, 573, 4537, 2]
+// Dependencies: [5, 4686, 4687, 4452, 1074, 1271, 573, 4688, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 4534 (BoostingActionCreators)
+// Module 4685 (BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 4535 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4536 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 4686 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4687 */;
+import SubscriptionStore from "SubscriptionStore" /* 4452 */;
 
 require = fn;
 let closure_8 = async function _fetchAppliedGuildBoostsForGuild(arg0, value) {

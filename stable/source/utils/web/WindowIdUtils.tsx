@@ -1,10 +1,10 @@
-// Module ID: 5636
-// Function ID: 5637
+// Module ID: 5804
+// Function ID: 5805
 // Name: WindowIdUtils
 // Dependencies: [12, 2]
 // Exports: getMainWindowId, getWindowId, setupWindowId
 
-// Module 5636 (WindowIdUtils)
+// Module 5804 (WindowIdUtils)
 import _mod12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

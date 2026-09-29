@@ -1,9 +1,9 @@
-// Module ID: 17413
-// Function ID: 17414
+// Module ID: 17722
+// Function ID: 17723
 // Name: logThirdPartyImportsDone
 // Dependencies: [3, 2]
 
-// Module 17413 (logThirdPartyImportsDone)
+// Module 17722 (logThirdPartyImportsDone)
 import LoggerDefault from "Logger" /* 3 */;
 
 new LoggerDefault("app").log("Finished loading third party imports");

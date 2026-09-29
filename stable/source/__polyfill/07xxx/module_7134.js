@@ -1,31 +1,37 @@
 // Module ID: 7134
 // Function ID: 7135
-// Dependencies: []
-// Exports: getModalRouteKeys
+// Dependencies: [7135]
 
 // Module 7134
+import _mod7135 from "module_7135" /* 7135 */;
 
-export const getModalRouteKeys = (arr, arg1) => {
-  closure_0 = arg1;
-  return arr.reduce((arr, key) => {
-    let options;
-    if (closure_0[key.key] != null) {
-      options = tmp.options;
+
+export default function _unsupportedIterableToArray(str, arg1) {
+  if (str) {
+    if (typeof str === "string") {
+      return _mod7135(str, arg1);
+    } else {
+      const toString = {}.toString;
+      const call = toString.call;
+      const substr = typeof call === "unknown" ? toString() : call(str).slice(8, -1);
+      let name = substr;
+      if (tmp3) {
+        name = str.constructor.name;
+      }
+      if ("Map" !== name) {
+        if ("Set" !== name) {
+          if ("Arguments" === name) {
+            let arr2 = _mod7135(str, arg1);
+          } else {
+            const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+          }
+        }
+        return arr2;
+      }
+      const _Array = Array;
+      arr2 = Array.from(str);
+      const arr = typeof call === "unknown" ? toString() : call(str);
+      tmp3 = "Object" === substr && str.constructor;
     }
-    if (options == null) {
-      options = {};
-    }
-    const presentation = options.presentation;
-    let tmp2 = arr.length && !presentation;
-    if (!tmp2) {
-      tmp2 = "modal" === presentation;
-    }
-    if (!tmp2) {
-      tmp2 = "transparentModal" === presentation;
-    }
-    if (tmp2) {
-      arr.push(key.key);
-    }
-    return arr;
-  }, []);
+  }
 };

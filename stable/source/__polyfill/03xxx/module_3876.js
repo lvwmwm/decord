@@ -1,11 +1,11 @@
 // Module ID: 3876
 // Function ID: 3877
-// Dependencies: [3725, 3726]
+// Dependencies: [3877, 3879]
 // Exports: default
 
 // Module 3876
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import _typeof_mod from "module_3877" /* 3877 */;
+import module_3879_mod from "module_3879" /* 3879 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -15,22 +15,73 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+let module_3879 = module_3879_mod;
+if (!module_3879) {
+  const obj2 = { default: module_3879 };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = module_3879;
 }
-requiredArgs = tmp5;
+module_3879 = tmp5;
+const dependencyMap = ["\u043D\u0435\u0434\u0435\u043B\u044F", "\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u043D\u0438\u043A", "\u0432\u0442\u043E\u0440\u043D\u0438\u043A", "\u0441\u0440\u044F\u0434\u0430", "\u0447\u0435\u0442\u0432\u044A\u0440\u0442\u044A\u043A", "\u043F\u0435\u0442\u044A\u043A", "\u0441\u044A\u0431\u043E\u0442\u0430"];
+let closure_3 = {
+  lastWeek: function lastWeekFormatToken(arg0, arg1, arg2) {
+    const defaultResult = _typeof.default(arg0);
+    const uTCDay = defaultResult.getUTCDay();
+    let text = dependencyMap[uTCDay];
+    if (module_3879.default(defaultResult, arg1, arg2)) {
+      if (2 === uTCDay) {
+        text = `'във ${tmp2}`;
+        let text1 = `'във ${tmp2} в' p`;
+      } else {
+        text1 = `${"'\u0432 " + `'във ${tmp2}`} в' p`;
+      }
+    } else {
+      if (0 !== uTCDay) {
+        if (3 !== uTCDay) {
+          if (6 !== uTCDay) {
+            let text2 = `${"'\u043C\u0438\u043D\u0430\u043B\u0438\u044F " + tmp2} в' p`;
+          }
+          return text2;
+        }
+      }
+      text2 = `${"'\u043C\u0438\u043D\u0430\u043B\u0430\u0442\u0430 " + tmp2} в' p`;
+    }
+  },
+  yesterday: "'\u0432\u0447\u0435\u0440\u0430 \u0432' p",
+  today: "'\u0434\u043D\u0435\u0441 \u0432' p",
+  tomorrow: "'\u0443\u0442\u0440\u0435 \u0432' p",
+  nextWeek: function nextWeekFormatToken(arg0, arg1, arg2) {
+    const defaultResult = _typeof.default(arg0);
+    const uTCDay = defaultResult.getUTCDay();
+    let text = dependencyMap[uTCDay];
+    if (module_3879.default(defaultResult, arg1, arg2)) {
+      if (2 === uTCDay) {
+        text = `'във ${tmp2}`;
+        let text1 = `'във ${tmp2} в' p`;
+      } else {
+        text1 = `${"'\u0432 " + `'във ${tmp2}`} в' p`;
+      }
+    } else {
+      if (0 !== uTCDay) {
+        if (3 !== uTCDay) {
+          if (6 !== uTCDay) {
+            let text2 = `${"'\u0441\u043B\u0435\u0434\u0432\u0430\u0449\u0438\u044F " + tmp2} в' p`;
+          }
+          return text2;
+        }
+      }
+      text2 = `${"'\u0441\u043B\u0435\u0434\u0432\u0430\u0449\u0430\u0442\u0430 " + tmp2} в' p`;
+    }
+  },
+  other: "P"
+};
 
-export default function isWeekend(arg0) {
-  requiredArgs.default(1, arguments);
-  const day = _typeof.default(arg0).getDay();
-  let tmp3 = 0 === day;
-  if (!tmp3) {
-    tmp3 = 6 === day;
+export default function formatRelative(arg0, arg1, arg2, arg3) {
+  let tmpResult = tmp;
+  if (typeof closure_3[arg0] === "function") {
+    tmpResult = tmp(arg1, arg2, arg3);
   }
-  return tmp3;
+  return tmpResult;
 };
 export default exports.default;

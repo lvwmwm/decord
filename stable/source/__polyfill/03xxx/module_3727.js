@@ -1,33 +1,9 @@
 // Module ID: 3727
 // Function ID: 3728
-// Dependencies: [3726, 3728]
-// Exports: default
+// Dependencies: [1121]
 
 // Module 3727
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
-import startOfUTCWeek_mod from "startOfUTCWeek" /* 3728 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj = { default: requiredArgs };
-  let tmp3 = obj;
-} else {
-  tmp3 = requiredArgs;
-}
-requiredArgs = tmp3;
-let startOfUTCWeek = startOfUTCWeek_mod;
-if (!startOfUTCWeek) {
-  const obj2 = { default: startOfUTCWeek };
-  let tmp5 = obj2;
-} else {
-  tmp5 = startOfUTCWeek;
-}
-startOfUTCWeek = tmp5;
 
-export default function isSameUTCWeek(arg0, arg1, arg2) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfUTCWeek.default(arg0, arg2);
-  const time = defaultResult1.getTime();
-  return time === startOfUTCWeek.default(arg1, arg2).getTime();
-};
-export default exports.default;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jdXN0b21fdHlwaW5nX2luZGljYXRvci9pbnRs", scales: [1], hash: "9ff4aa2557537b69d1962365a45fc8d5", name: "ja.messages.9ff4aa2557537b69d1962365a45fc8d5.compiled.messages", type: "jsona" });

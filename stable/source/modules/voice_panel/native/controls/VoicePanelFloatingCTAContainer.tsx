@@ -1,22 +1,22 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 17646
+// Function ID: 17647
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 1957, 12406, 12409, 1085, 21, 12320, 576, 4636, 5054, 8718, 4347, 12405, 17169, 7492, 563, 17165, 17289, 4373, 12412, 11129, 5055, 7176, 10754, 2]
+// Dependencies: [32, 19, 2041, 12555, 12558, 1085, 21, 12469, 576, 4788, 5216, 8905, 4498, 12554, 17526, 7663, 563, 17522, 17647, 4524, 12562, 11288, 5217, 7350, 10921, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 17288 (VoicePanelFloatingCTAContainer)
+// Module 17646 (VoicePanelFloatingCTAContainer)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4347 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import spring from "spring" /* 5055 */;
-import RowButton from "RowButton" /* 8718 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11129 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12320 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12412 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17165 */;
+import native from "native" /* 4498 */;
+import Stack_Stack from "Stack/Stack" /* 5216 */;
+import spring from "spring" /* 5217 */;
+import RowButton from "RowButton" /* 8905 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11288 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12469 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12562 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17522 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 function FloatingCTA(trailing) {
@@ -119,11 +119,11 @@ class VoicePanelFloatingCTAContainer {
     return tmp12(tmp13, obj9);
   }
 }
-const UI_SHOW_HIDE_PHYSICS = fn(12406).UI_SHOW_HIDE_PHYSICS;
-let CALL_TILE_GUTTER = fn(12409).CALL_TILE_GUTTER;
+const UI_SHOW_HIDE_PHYSICS = fn(12555).UI_SHOW_HIDE_PHYSICS;
+let CALL_TILE_GUTTER = fn(12558).CALL_TILE_GUTTER;
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj2 = { container: null };
 const rect = { zIndex: 1, position: "absolute", bottom: 0, left: "50%", overflow: "hidden", alignItems: "center", borderRadius: nativeDefault.radii.lg };
 obj2.container = rect;

@@ -1,12 +1,12 @@
-// Module ID: 16282
-// Function ID: 16283
+// Module ID: 16527
+// Function ID: 16528
 // Name: LiveChannelNoticesStore
-// Dependencies: [1963, 504, 573, 2]
+// Dependencies: [2047, 504, 573, 2]
 
-// Module 16282 (LiveChannelNoticesStore)
+// Module 16527 (LiveChannelNoticesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 1963 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2047 */;
 import size from "module_2" /* 2 */;
 
 const GuildScheduledEventStatus = GuildScheduledEventsConstants.GuildScheduledEventStatus;

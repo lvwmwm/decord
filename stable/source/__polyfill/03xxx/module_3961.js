@@ -1,53 +1,16 @@
 // Module ID: 3961
 // Function ID: 3962
-// Dependencies: [3725, 3962, 3963, 3726]
-// Exports: default
+// Dependencies: [2114]
 
 // Module 3961
-import _typeof_mod from "module_3725" /* 3725 */;
-import startOfUTCISOWeek_mod from "startOfUTCISOWeek" /* 3962 */;
-import startOfUTCISOWeekYear_mod from "startOfUTCISOWeekYear" /* 3963 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import module_2114 from "module_2114" /* 2114 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
-  let tmp3 = obj;
+if (!module_2114) {
+  const obj2 = { default: module_2114 };
+  let obj = obj2;
 } else {
-  tmp3 = _typeof;
+  obj = module_2114;
 }
-_typeof = tmp3;
-let startOfUTCISOWeek = startOfUTCISOWeek_mod;
-if (!startOfUTCISOWeek) {
-  const obj2 = { default: startOfUTCISOWeek };
-  let tmp5 = obj2;
-} else {
-  tmp5 = startOfUTCISOWeek;
-}
-startOfUTCISOWeek = tmp5;
-let startOfUTCISOWeekYear = startOfUTCISOWeekYear_mod;
-if (!startOfUTCISOWeekYear) {
-  const obj3 = { default: startOfUTCISOWeekYear };
-  let tmp7 = obj3;
-} else {
-  tmp7 = startOfUTCISOWeekYear;
-}
-startOfUTCISOWeekYear = tmp7;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
-  let tmp9 = obj4;
-} else {
-  tmp9 = requiredArgs;
-}
-requiredArgs = tmp9;
-let c4 = 604800000;
 
-export default function getUTCISOWeek(arg0) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const time = startOfUTCISOWeek.default(defaultResult1).getTime();
-  const defaultResult2 = startOfUTCISOWeek.default(defaultResult1);
-  return Math.round((time - startOfUTCISOWeekYear.default(defaultResult1).getTime()) / c4) + 1;
-};
+export default { date: obj.default({ formats: { full: "y 'm'. MMMM d 'd'., EEEE", long: "y 'm'. MMMM d 'd'.", medium: "y-MM-dd", short: "y-MM-dd" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "HH:mm:ss zzzz", long: "HH:mm:ss z", medium: "HH:mm:ss", short: "HH:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} {{time}}", long: "{{date}} {{time}}", medium: "{{date}} {{time}}", short: "{{date}} {{time}}" }, defaultWidth: "full" }) };
 export default exports.default;

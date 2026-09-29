@@ -1,19 +1,19 @@
-// Module ID: 17893
-// Function ID: 17894
+// Module ID: 18240
+// Function ID: 18241
 // Name: ActionableNotice
-// Dependencies: [19, 17, 21, 4636, 4632, 5056, 2]
+// Dependencies: [19, 17, 21, 4788, 4784, 5218, 2]
 // Exports: default
 
-// Module 17893 (ActionableNotice)
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
+// Module 18240 (ActionableNotice)
+import Text_Text from "Text/Text" /* 4784 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_5 = createStyles.createStyles({ container: { flexDirection: "row", paddingVertical: 12, alignItems: "center" }, message: { marginEnd: 27, flex: 3 }, actionButton: { flexGrow: 0, alignSelf: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/ActionableNotice.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 4775
-// Function ID: 4776
+// Module ID: 4927
+// Function ID: 4928
 // Name: FrontierTuningExperiment
-// Dependencies: [4683, 1434, 2]
+// Dependencies: [4835, 1435, 2]
 
-// Module 4775 (FrontierTuningExperiment)
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4683 */;
-import ApexExperiment from "apex/ApexExperiment" /* 1434 */;
+// Module 4927 (FrontierTuningExperiment)
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4835 */;
+import ApexExperiment from "apex/ApexExperiment" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 const obj = { maxBitrate: null, maxResolution: null, maxFPS: null, maskReportedQuality: false };

@@ -1,25 +1,25 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10333
+// Function ID: 10334
 // Name: RTCDebugOverlay
-// Dependencies: [19, 17, 1957, 1979, 4659, 10167, 4675, 1371, 4661, 21, 4636, 4486, 576, 1176, 504, 4789, 10169, 10168, 573, 7226, 5056, 1114, 2]
+// Dependencies: [19, 17, 2041, 2063, 4811, 10334, 4827, 1372, 4813, 21, 4788, 4637, 576, 1177, 504, 4941, 10336, 10335, 573, 7400, 5218, 1115, 2]
 // Exports: default
 
-// Module 10166 (RTCDebugOverlay)
+// Module 10333 (RTCDebugOverlay)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7226 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10168 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 10169 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import components_Button_Button from "components/Button/Button" /* 5218 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7400 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10335 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 10336 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import RTCDebugStore from "RTCDebugStore" /* 10167 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4675 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4811 */;
+import RTCDebugStore from "RTCDebugStore" /* 10334 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4827 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function Text(arg0) {
@@ -100,11 +100,11 @@ function RTCDebugGeneral() {
   }
   const obj5 = { title: "general", children: null };
   const obj6 = { obj: null };
-  const tmp4 = channelId(4789)(stateFromStores1);
+  const tmp4 = channelId(4941)(stateFromStores1);
   const tmp6 = Section;
   const tmp7 = ObjectKV;
   obj4.name = name;
-  obj6.obj = { guild: obj4, channel: { id: channelId, name: channelId(4789)(stateFromStores1) } };
+  obj6.obj = { guild: obj4, channel: { id: channelId, name: channelId(4941)(stateFromStores1) } };
   obj5.children = closure_14(tmp7, obj6);
   return closure_14(tmp6, obj5);
 }
@@ -145,17 +145,17 @@ function RTCDebugContext(context) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet } = get_ActivityIndicator);
-const MediaEngineContextTypes = fn(4661).MediaEngineContextTypes;
+const MediaEngineContextTypes = fn(4813).MediaEngineContextTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
 function asString(arg0) {
 
 }
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let obj = { container: null, scroller: null, indent: null, row: null, text: null, buttonClose: null };
 let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-const ColorUtils = fn(4486);
+const ColorUtils = fn(4637);
 obj3.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.7);
 obj.container = obj3;
 obj.scroller = { flex: 1, margin: 8 };
@@ -215,7 +215,7 @@ export default function RTCDebugOverlay(arg0) {
   const tmp = closure_18();
   const effect = noop.useEffect(() => {
     RTCDebugActionCreatorsAll.open();
-    return () => closure_1_1(573).wait(closure_1_2(10168).close);
+    return () => closure_1_1(573).wait(closure_1_2(10335).close);
   }, []);
   const rect = { top: true, left: true, right: true, bottom: true, style: null, children: null };
   const items = [tmp.container, style];

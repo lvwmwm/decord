@@ -1,27 +1,27 @@
-// Module ID: 15394
-// Function ID: 15395
+// Module ID: 15583
+// Function ID: 15584
 // Name: SyncThemeSetting
-// Dependencies: [4456, 1182, 1181, 1219, 8079, 1074, 504, 1114, 15395, 9488, 11605, 2]
+// Dependencies: [4607, 1183, 1182, 1220, 8265, 1074, 504, 1115, 15584, 9504, 11754, 2]
 
-// Module 15394 (SyncThemeSetting)
+// Module 15583 (SyncThemeSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9488 */;
-import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 15395 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4456 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1182 */;
-import ThemeStore from "ThemeStore" /* 1181 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import util from "util" /* 1115 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9504 */;
+import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 15584 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4607 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11754);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["3340dY"]);
   },
-  parent: fn(8079).MobileUserSettings.APPEARANCE,
+  parent: fn(8265).MobileUserSettings.APPEARANCE,
   useIsDisabled: function useSyncThemeDisabled() {
     const items = [ThemeStore];
     return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());

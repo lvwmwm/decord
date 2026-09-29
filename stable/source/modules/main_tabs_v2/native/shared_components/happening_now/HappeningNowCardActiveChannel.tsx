@@ -1,29 +1,29 @@
-// Module ID: 16186
-// Function ID: 16187
+// Module ID: 16431
+// Function ID: 16432
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 13795, 1957, 12098, 1371, 15380, 1074, 21, 4636, 504, 11, 1369, 12, 16185, 1240, 1100, 4789, 1114, 5109, 15381, 16179, 2]
+// Dependencies: [19, 17, 14000, 2041, 12247, 1372, 15569, 1074, 21, 4788, 504, 11, 1370, 12, 16430, 1241, 1101, 4941, 1115, 5271, 15570, 16424, 2]
 
-// Module 16186 (HappeningNowCardActiveChannel)
+// Module 16431 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import router_utils from "router_utils" /* 1100 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
+import router_utils from "router_utils" /* 1101 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;
-import ActiveChannelsStore from "ActiveChannelsStore" /* 13795 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import TypingStore from "TypingStore" /* 12098 */;
-import UserStore from "UserStore" /* 1371 */;
+import ActiveChannelsStore from "ActiveChannelsStore" /* 14000 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import TypingStore from "TypingStore" /* 12247 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const MAX_STORED_MESSAGES = fn(13795).MAX_STORED_MESSAGES;
-let closure_10 = fn(15380).HappeningNowCardTrackingType;
+const MAX_STORED_MESSAGES = fn(14000).MAX_STORED_MESSAGES;
+let closure_10 = fn(15569).HappeningNowCardTrackingType;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Routes: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4788);
 let closure_15 = createStyles.createStyles({ content: { flexShrink: 1, marginLeft: 4, gap: 2 }, avatarsWrapper: { marginBottom: 2 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActiveChannel.tsx");

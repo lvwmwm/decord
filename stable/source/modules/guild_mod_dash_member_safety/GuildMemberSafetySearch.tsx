@@ -1,14 +1,14 @@
-// Module ID: 7622
-// Function ID: 7623
+// Module ID: 7793
+// Function ID: 7794
 // Name: GuildMemberSafetySearch
-// Dependencies: [32, 7623, 4755, 11, 4263, 4281, 2]
+// Dependencies: [32, 7794, 4907, 11, 4415, 4433, 2]
 // Exports: getDefaultSearchState
 
-// Module 7622 (GuildMemberSafetySearch)
+// Module 7793 (GuildMemberSafetySearch)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4263 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4281 */;
-import _modDef4755 from "module_4755" /* 4755 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4415 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4433 */;
+import _modDef4907 from "module_4907" /* 4907 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -54,7 +54,7 @@ prototype["updateSearchState"] = function updateSearchState(arg0) {
   const merged = Object.assign(this._searchState);
   const merged1 = Object.assign(arg0);
   this._searchState = {};
-  this.hasDefaultQuery = _modDef4755(this._searchState, closure_4);
+  this.hasDefaultQuery = _modDef4907(this._searchState, closure_4);
   return true;
 };
 prototype["resetSearchState"] = function resetSearchState() {

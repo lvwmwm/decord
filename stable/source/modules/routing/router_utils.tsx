@@ -1,15 +1,15 @@
-// Module ID: 1100
-// Function ID: 1101
+// Module ID: 1101
+// Function ID: 1102
 // Name: router_utils
-// Dependencies: [1074, 3, 1101, 1109, 1112, 2]
+// Dependencies: [1074, 3, 1102, 1110, 1113, 2]
 // Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
 
-// Module 1100 (router_utils)
+// Module 1101 (router_utils)
 import LoggerDefault from "Logger" /* 3 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import RoutingSources from "RoutingSources" /* 1112 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import RoutingSources from "RoutingSources" /* 1113 */;
 import Constants from "Constants" /* 1074 */;
-import _extends_mod from "module_1101" /* 1101 */;
+import _extends_mod from "module_1102" /* 1102 */;
 import size from "module_2" /* 2 */;
 
 function transitionTo(CHANNELResult, guildScheduledEvent2) {

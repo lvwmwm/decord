@@ -1,52 +1,28 @@
 // Module ID: 4377
 // Function ID: 4378
-// Dependencies: [17, 4378, 4379]
-// Exports: isRuntimeAlive
+// Dependencies: []
 
 // Module 4377
-import _mod17 from "module_17" /* 17 */;
-import _mod4378 from "module_4378" /* 4378 */;
-import _mod4379 from "module_4379" /* 4379 */;
-
-function getInstalledNitro() {
-  return global.NitroModulesProxy;
-}
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
-const installedNitro = getInstalledNitro();
-if (null != installedNitro) {
-  let installedNitro1 = installedNitro;
-  if (installedNitro.version !== _mod4378.version) {
-    const _Error2 = Error;
-    const version = installedNitro.version;
-    const _HermesInternal2 = HermesInternal;
-    const error = new Error("Nitro was installed twice: once with native version " + version + " and once with JS version " + _mod4378.version + ". This usually means react-native-nitro-modules exists multiple times in node_modules (e.g. in monorepos or double-linked setups).");
-    throw error;
-  }
-} else {
-  try {
-    const enforcing = TurboModuleRegistry.getEnforcing("NitroModules");
-    const installResult = enforcing.install();
-    if (null != installResult) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const error1 = new Error("Failed to install Nitro: " + installResult);
-      throw error1;
-    } else {
-      installedNitro1 = getInstalledNitro();
-      if (null == installedNitro1) {
-        const _Error3 = Error;
-        const error2 = new Error("NitroModules was installed, but `global.NitroModulesProxy` was null!");
-        const moduleNotFoundError = new _mod4379.ModuleNotFoundError(error2);
-        throw moduleNotFoundError;
-      }
-    }
-  } catch (tmp13) {
-    const moduleNotFoundError1 = new tmp3(tmp[2]).ModuleNotFoundError(tmp13);
-    throw moduleNotFoundError1;
+if (Intl.ListFormat) {
+  const _Intl = Intl;
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
+    const _Intl2 = Intl;
+    const obj2 = { data: null, locale: "hi" };
+    const obj3 = { conjunction: null, disjunction: null, unit: null };
+    const obj4 = { long: { end: "{0}, \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" } };
+    obj3.conjunction = obj4;
+    const obj5 = { long: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" }, short: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" } };
+    obj3.disjunction = obj5;
+    const obj6 = { long: { end: "{0}, \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0}, {1}", pair: "{0} {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
+    obj3.unit = obj6;
+    obj2.data = obj3;
+    ListFormat.__addLocaleData(obj2);
   }
 }
-
-export const NitroModules = installedNitro1;
-export const isRuntimeAlive = function isRuntimeAlive() {
-  return null != globalThis.__nitroJsiCache && null != globalThis.__nitroDispatcher;
-};
+let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
+if (!prop) {
+  prop = [];
+}
+globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
+const obj = { data: { conjunction: { long: { end: "{0}, \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" }, short: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0}, {1}", pair: "{0} {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "hi" };
+prop.push(obj);

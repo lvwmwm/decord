@@ -1,9 +1,9 @@
 // Module ID: 11698
 // Function ID: 11699
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11698
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "ea3c9abdbf7b4bdacb76018f8790d9b4", name: "ic_caret_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d36bc1b1c0c4b7686eb847b7455190cc", name: "EducationIcon", type: "png" });

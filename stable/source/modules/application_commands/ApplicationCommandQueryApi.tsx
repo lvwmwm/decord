@@ -1,20 +1,20 @@
-// Module ID: 9546
-// Function ID: 9547
+// Module ID: 9562
+// Function ID: 9563
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 1979, 9419, 5080, 1074, 7624, 9427, 504, 9429, 1369, 1894, 9424, 9535, 7626, 2]
+// Dependencies: [32, 19, 2063, 9436, 5242, 1074, 7795, 9444, 504, 9446, 1370, 1978, 9441, 9551, 7797, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 9546 (ApplicationCommandQueryApi)
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7624 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7626 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9427 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9429 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 9535 */;
+// Module 9562 (ApplicationCommandQueryApi)
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7795 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7797 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9444 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9446 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 9551 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9419 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9436 */;
 
 const require = globalThis.__r;
 const CommandPermissionUtilsAll = CommandPermissionUtils;
@@ -58,20 +58,20 @@ function findCommandInSection(found, commandId) {
     }
   }
 }
-let ApplicationCommandIndexStore = fn(9419);
+let ApplicationCommandIndexStore = fn(9436);
 ({ useContextIndexState: metroRequire, useDiscoveryState: closure_7, useQueryState: closure_8, useUserIndexState: closure_9 } = ApplicationCommandIndexStore);
 let ApplicationCommandIndexStore = ApplicationCommandIndexStore_mod;
-const BuiltInSectionId = fn(5080).BuiltInSectionId;
+const BuiltInSectionId = fn(5242).BuiltInSectionId;
 const NOOP = fn(1074).NOOP;
-let items = [fn(1894).ApplicationCommandType.CHAT];
-let section = { id: "placeholder-section", type: fn(7626).ApplicationCommandSectionType.APPLICATION, name: "" };
+let items = [fn(1978).ApplicationCommandType.CHAT];
+let section = { id: "placeholder-section", type: fn(7797).ApplicationCommandSectionType.APPLICATION, name: "" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandQueryApi.tsx");
 
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "getCurrentUser", command: "call", section: "skuId" };
+    return { application: "Array", command: "call", section: "space" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -118,7 +118,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "getCurrentUser", command: "call", section: "skuId" };
+    return { application: "Array", command: "call", section: "space" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -426,7 +426,7 @@ export const useCommand = function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "Array", application: "PX_16" };
+    return { command: "HermesInternal", application: "Array" };
   }, items);
 };
 export const useCommandsForApplication = function useCommandsForApplication(arg0, arg1, arg2) {

@@ -1,9 +1,9 @@
 // Module ID: 2780
 // Function ID: 2781
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2780
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ub3RpZmljYXRpb25zX2luYm94", scales: [1], hash: "afd09ceab3155219c88a712254c192da", name: "tr.messages.afd09ceab3155219c88a712254c192da.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "3309808918c14f84da7e53864a925166", name: "de.messages.3309808918c14f84da7e53864a925166.compiled.messages", type: "jsona" });

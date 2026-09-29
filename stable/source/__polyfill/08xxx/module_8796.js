@@ -1,9 +1,85 @@
 // Module ID: 8796
 // Function ID: 8797
-// Dependencies: [1120]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8797, 8798, 8799]
 
 // Module 8796
-import registerAsset from "module_1120" /* 1120 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef8797 from "module_8797" /* 8797 */;
+import _modDef8799 from "module_8799" /* 8799 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
+const FeBlend = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+_possibleConstructorReturnDefault;
+const jsx = fn(21).jsx;
+class FeBlend {
+  constructor() {
+    self = this;
+    tmp = closure_3(this, FeBlend);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(FeBlend);
+    tmp3 = closure_4;
+    if (closure_7()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(FeBlend, _modDef8799);
+const entry = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const merged = Object.assign(FeBlend(8798).extractFilter(this.props));
+    const obj2 = FeBlend(8798);
+    const merged1 = Object.assign(FeBlend(8798).extractIn(this.props));
+    const obj3 = FeBlend(8798);
+    const merged2 = Object.assign(FeBlend(8798).extractFeBlend(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
+  }
+};
+const items = [entry];
+const importDefaultResultResult = _createClass(FeBlend, items);
+importDefaultResultResult.displayName = "FeBlend";
+let obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.mode = "normal";
+importDefaultResultResult.defaultProps = obj;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3badf2b48a53beb45ce4acb0a2b90dbd", name: "MoreHorizontalIcon", type: "png" });
+export default importDefaultResultResult;
